@@ -4,7 +4,7 @@ County and zip level CSV datasets.
 
 [Starter Samples](samples/) 
 
-[Product Sectors - Community Model Builder - Report Prototype](samples/dataset) 
+[Product Sectors - Community Model Builder - Report Prototype](https://modelearth.github.io/community/samples/dataset) 
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->
 
 [Exports - Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/#hs=2203) 
