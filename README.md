@@ -21,6 +21,6 @@ County and zip level CSV datasets.
 
 <br>
 
-GitHub Pages: [statedata.github.io/community](https://statedata.github.io/community)  
+GitHub Pages: [modelearth.github.io/community](https://modelearth.github.io/community)  
 
 
