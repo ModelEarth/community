@@ -1,7 +1,7 @@
 # Map Samples
 
 
-## [Map Points (hubs)](../../maps/hubs/#us.ga_to_bs)
+## [Map Points (hubs)](../../hubs/#us.ga_to_bs)
 ## [State Counties (counties)](counties/counties.html)  
 ## [Zip Boundaries (zip)](../../zip/leaflet/)
 ## [Map Layers (aside)](aside)
