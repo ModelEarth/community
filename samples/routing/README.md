@@ -1,3 +1,3 @@
 # Leaflet Routing Map
 
-[Routing Map Sample](https://statedata.github.io/community/samples/routing/)
+[Routing Map Sample](https://modelearth.github.io/community/samples/routing/)

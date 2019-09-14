@@ -10,5 +10,5 @@ Stand-alone examples of formatting and displaying community data.
 ## [5. Counties and Zipcodes (maps)](maps) 
 
 <br>
-[View as website](https://statedata.github.io/community/samples/)
+[View as website](https://modelearth.github.io/community/samples/)
   
