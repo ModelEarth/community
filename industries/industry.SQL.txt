@@ -1,0 +1,160 @@
+
+--- NOT USED, use sqlite/industries.SQL.txt instead.
+
+-- To run: sqlite3 industry.db < industry.SQL.txt > industry.OUT.txt
+-- Replace "2016" and the 2-digit year "16" in ./zbp[year]detail.txt
+-- Unzip year source file. Too big to check into GitHub unzipped.
+
+-- Setup
+.headers on
+.separator ','
+
+DROP TABLE IF EXISTS industries;
+DROP TABLE IF EXISTS naics;
+drop table if exists zipcodes;
+drop view if exists combine_zipcode;
+drop view if exists naics_title;
+
+--DROP VIEW IF EXISTS xyz;
+
+-- ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** --
+
+-- (a.i) Create tables
+
+CREATE table industries
+(
+	zip int,
+	naics varchar(255),
+	est int,
+	n1_4 varchar(255),
+	n5_9 varchar(255),
+	n10_19 varchar(255),
+	n20_49 varchar(255),
+	n50_99 varchar(255),
+	n100_249 varchar(255),
+	n250_499 varchar(255),
+	n500_999 varchar(255),
+	n1000 varchar(255)
+);
+
+
+CREATE table zipcodes
+(
+	 GEOID int,
+	 ALAND	int,
+	 AWATER int,
+	 ALAND_SQMI	int,
+	 AWATER_SQMI int,
+	 INTPTLAT int,
+	 INTPTLONG int  
+);
+
+
+CREATE table naics (
+	is_naics varchar(10),
+	naics varchar(255),
+	naics_title varchar(255),
+	is_isic varchar(10),
+	isic int,
+	isic_title varchar(255),
+	notes varchar(1000)
+);
+
+--import csv to naics table
+.mode csv
+.import ./naics/2017_NAICS_to_ISIC_4.csv naics
+
+-- Display table info
+.print '# Create tables and .import ./zbp[year]detail.txt industries'
+.print '#Create tables and import ./naics/2017_Naics_to_ISIC_4.csv to naics'
+.tables
+.print '~~~~~'
+
+-- Originates from 
+.import ./naics/year/2016/zbp16detail.txt industries
+
+-- This is tab deliminited.
+.mode csv
+.import ../zipcodes/2018_Gaz_zcta_national.csv zipcodes
+
+.headers off
+SELECT COUNT(*) as totalRows FROM industries;
+.headers on
+.print '~~~~~'
+
+CREATE INDEX zip_index ON industries (zip);
+CREATE INDEX naics_index ON naics (naics);
+create index GEOID_index on zipcodes(GEOID);
+
+SELECT COUNT(*) as georgiaRows FROM industries WHERE zip >= 30000 AND zip < 31000;
+
+.print '~~~~~'
+
+SELECT COUNT(*) georgiaZipCount FROM industries WHERE zip >= 13000 AND zip < 14000 AND naics = '------';
+
+.print '~~~~~'
+
+SELECT SUM(est) georgiaCompanyCount FROM industries 
+WHERE zip >= 30000 AND zip < 31000 AND naics = '------';
+
+.print '~~~~~'
+
+SELECT zip, SUM(est) companiesInZip FROM industries 
+WHERE zip >= 30000 AND zip < 31000 AND naics = '------' 
+GROUP BY est 
+ORDER BY SUM(est) DESC;
+
+.print '~~~~~'
+
+-- top NAICS
+
+SELECT count(*) count, naics FROM industries 
+WHERE zip >= 30000 AND zip < 31000 AND naics != '------' 
+GROUP BY naics 
+ORDER BY count(*) DESC
+LIMIT 50;
+
+.print '~~~~~'
+--combine naics from industry to naics title from naics
+Create view naics_title 
+as 
+select industries.*,naics.naics_title
+from industries 
+inner join  naics 
+on industries.naics=naics.naics 
+ ;
+
+--convert to csv
+.mode csv
+.output naics_title.csv
+select * from naics_title ;
+.output stdout
+
+--combine zipcode
+
+Create view combine_zipcode
+as 
+select industries.*, zipcodes.INTPTLAT, zipcodes.INTPTLONG
+from industries 
+inner join zipcodes  
+on industries.zip=zipcodes.GEOID
+WHERE  industries.naics = '------'  ;
+
+
+--convert to csv
+.mode csv
+.output combine_zipcode.csv
+select * from combine_zipcode;
+.output stdout
+
+
+--Any NAICS containing the word Automotive
+.mode csv
+.output Automotive.csv
+select * from naics_title where naics_title like "%Automotive%";
+.output stdout
+--- Any NAICS containing the word Fishing
+.mode csv
+.output Fishing.csv
+select * from naics_title where naics_title like "%Fishing";
+.output stdout

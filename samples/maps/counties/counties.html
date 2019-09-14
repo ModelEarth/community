@@ -1,0 +1,202 @@
+<html>
+    <head>
+      <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+      <style>
+        body {
+          margin: 0px;
+        }
+        .map {
+          width:100%;
+          height: 100%;
+          }
+        .info {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .info h4 {
+            margin: 0 0 5px;
+            color: #777;
+        }
+      </style>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+
+    </head>
+	<body>
+
+    <!--
+    BEA Arts Data
+    https://nasaa-arts.org/nasaa_research/creative-economy-state-profiles/
+    -->
+
+<select class="select-state"><option value="United States">United States</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select>
+
+    <!--
+     Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
+     -->
+    <div class="map" id="mapcon"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
+
+    <script type="text/javascript">
+
+    var neighbors;
+    var topodata = {};
+    var geojson;
+    //var co = d3.scaleOrdinal(d3.schemeCategory20b); // Stopped working when switching from v4 to v5.
+    var co = d3.scaleOrdinal();
+
+		window.onload = function () {
+        var neighbors
+
+        function style(feat, i){
+            var i = feat.indie;
+            var coco = co(feat.color = d3.max(neighbors[i], function(n) {
+              return topodata.features[n].color; }) + 1 | 0);
+
+              return {fillColor: coco,
+                      fillOpacity: .3,
+                      weight: .3}
+         }
+
+        var req = new XMLHttpRequest();
+
+                
+            // Topo data source
+            //https://github.com/deldersveld/topojson/tree/master/countries/us-states
+            var url = 'topo/GA-13-georgia-counties.json'
+
+                req.open('GET', url, true);
+                req.onreadystatechange = handler;
+                req.send();
+
+            var topoob = {};
+            topodata = {};
+            function handler(){
+
+            if(req.readyState === XMLHttpRequest.DONE){
+
+              //// USA
+              //var lat = 38.3;
+              //var lon = -96.5;
+              //var zoom = 5;
+
+              // Georgia
+              var lat = 32.16;
+              var lon = -82.90;
+              var zoom = 7;
+
+              var layer = "terrain";
+
+              var map = new L.Map('mapcon',
+                                {
+                                scrollWheelZoom:false,
+                                center: new L.LatLng(lat,lon),
+                                zoom: zoom
+                                });
+
+			   	    var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+					              maxZoom: 18,
+					              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+				                  });
+
+              map.addLayer( OpenStreetMap_BlackAndWhite)//new L.StamenTileLayer(layer));
+				      // try and catch json parsing of the responseText
+              //try {
+                    topoob = JSON.parse(req.responseText)
+
+                    // Originated in community/map/leaflet/zips-sm.html
+                    // zips_us_topo.json
+                    // {"type":"Topology","objects":{"data":{"type":"GeometryCollection","geometries":[{"type":"Polygon
+
+                    // {"type":"Topology","transform":{"scale":[0.00176728378633945,0.0012459509163533049],"translate":
+
+                    //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
+
+                    //neighbors = topojson.neighbors(topoob.objects.data.geometries);
+                    neighbors = topojson.neighbors(topoob.arcs); // .properties
+
+                    // ADD geometries  see https://observablehq.com/@d3/choropleth
+                    //topodata = topojson.feature(topoob, topoob.objects.data)
+
+                    //topodata = topojson.feature(topoob, topoob.transform)
+                    topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
+
+                    //topodata.features = topodata.features.map(function(fm,i){
+                    topodata.features = topodata.features.map(function(fm,i){
+                        var ret = fm;
+                        ret.indie = i;
+                        return ret
+                      });
+                    geojson = L.geoJson(topodata, {style:style, onEachFeature: onEachFeature})
+								.addTo(map);
+                    console.log('neigh', neighbors)
+                 //}
+                //catch(e){
+                //  geojson = {};
+                //   console.log(e)
+                //}
+                console.log(topodata)
+
+				function highlightFeature(e){
+					var layer = e.target;
+					layer.setStyle({
+						weight: 5,
+					    color: '#665',
+						dashArray: '',
+						fillOpacity: .7})
+					   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                          layer.bringToFront();
+                         }
+					info.update(layer.feature.properties);
+				}
+
+				function resetHighlight(e){
+					geojson.resetStyle(e.target);
+					info.update();
+				}
+
+				function zoomToFeature(e) {
+    				map.fitBounds(e.target.getBounds());
+				}
+
+				function onEachFeature(feature, layer){
+					layer.on({
+								mouseover: highlightFeature,
+								mouseout: resetHighlight, click: zoomToFeature})
+				}
+
+
+        var info = L.control();
+        info.onAdd = function(map) {
+            this._div = L.DomUtil.create('div', 'info');
+            this.update();
+            return this._div;
+        }
+
+        info.update = function(props){
+            // National
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
+            
+            this._div.innerHTML = "<h4>County</h4>" + (props ? props.NAME : "Hover over map")
+            
+
+            // TO fix if using state - id is not defined
+            // Also, other state files may need to have primary node renamed to "data"
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
+        }
+
+        info.addTo(map);
+
+
+
+      }
+   }
+   }
+  </script>
+	</body>
+</html>

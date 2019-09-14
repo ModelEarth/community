@@ -1,0 +1,247 @@
+-- To run: sqlite3 income.db < income.SQL.txt > income.OUT.txt
+
+-- Setup
+.headers on
+.separator ','
+
+drop table if exists income;
+drop table if exists zipcodes;
+drop table if exists zipcw;
+drop view if exists combine_zipcode;
+
+
+-- ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** --
+
+-- (a.i) Create tables
+
+-- Resides in income and income/nonprofits
+CREATE table income
+(
+	id int,
+	zcta int,
+	geography varchar(255), 
+	housecount int,
+	E varchar(255),
+	familycount int,
+	G varchar(255),
+	marriedcount int,
+	I varchar(255),
+	nonfamilycount int,
+	K varchar(255),
+	House0to10K int,
+	M varchar(255),
+	Families0to10K varchar(255),
+	O varchar(255),
+	P varchar(255),
+	Q varchar(255),
+	R varchar(255),
+	S varchar(255),
+	House10to15K int,
+	U varchar(255),
+	V varchar(255),
+	W varchar(255),
+	X varchar(255),
+	Y varchar(255),
+	Z varchar(255),
+
+	AA varchar(255),
+	House15to25K int,
+	AC varchar(255),
+	AD varchar(255),
+	AE varchar(255),
+	AF varchar(255),
+	AG varchar(255),
+	AH varchar(255),
+	AI varchar(255),
+	House25to35K int,
+	AK varchar(255),
+	AL varchar(255),
+	AM varchar(255),
+	AN varchar(255),
+	AO varchar(255),
+	AP varchar(255),
+	AQ varchar(255),
+	House35to50K int,
+	'AS' varchar(255),
+	AT varchar(255),
+	AU varchar(255),
+	AV varchar(255),
+	AW varchar(255),
+	AX varchar(255),
+	AY varchar(255),
+	House50to75K int,
+
+	BA varchar(255),
+	BB varchar(255),
+	BC varchar(255),
+	BD varchar(255),
+	BE varchar(255),
+	BF varchar(255),
+	BG varchar(255),
+	House75to100K int,
+	BI varchar(255),
+	BJ varchar(255),
+	BK varchar(255),
+	BL varchar(255),
+	BM varchar(255),
+	BN varchar(255),
+	BO varchar(255),
+	House100to150K int,
+	BQ varchar(255),
+	BR varchar(255),
+	BS varchar(255),
+	BT varchar(255),
+	BU varchar(255),
+	BV varchar(255),
+	BW varchar(255),
+	House150to200K int,
+	BY varchar(255),
+	BZ varchar(255),
+
+	CA varchar(255),
+	CB varchar(255),
+	CC varchar(255),
+	CD varchar(255),
+	CE varchar(255),
+	CF varchar(255),
+	House200Kup int,
+	CH varchar(255),
+	CI varchar(255),
+	CJ varchar(255),
+	CK varchar(255),
+	CL varchar(255),
+	CM varchar(255),
+	HouseMedianIncome varchar(255),
+	CO varchar(255),
+	FamilyMedianIncome varchar(255),
+	CQ varchar(255),
+	MarriedMedianIncome varchar(255),
+	CS varchar(255),
+	NonfamilyMedianIncome varchar(255),
+	CU varchar(255),
+	HouseMeanIncome varchar(255),
+	CW varchar(255),
+	FamilyMeanIncome varchar(255),
+	CY varchar(255),
+	CZ varchar(255),
+
+	DA varchar(255),
+	NonfamilyMeanIncome varchar(255), -- Might omit zips on south side of Atlanta
+	DC varchar(255),
+	DD varchar(255),
+	DE varchar(255),
+	DF varchar(255),
+	DG varchar(255),
+	DH varchar(255),
+	DI varchar(255),
+	DJ varchar(255),
+	DK varchar(255),
+	DL varchar(255),
+	DM varchar(255),
+	DN varchar(255),
+	DO varchar(255),
+	DP varchar(255),
+	DQ varchar(255),
+	DR varchar(255),
+	DS varchar(255),
+	DT varchar(255),
+	DU varchar(255),
+	DV varchar(255),
+	DW varchar(255),
+	DX varchar(255),
+	DY varchar(255),
+	DZ varchar(255)
+);
+-- zip get populated with int parsed from the ZCTA5 "geography" column.
+
+CREATE table zipcodes
+(
+	 GEOID int,
+	 ALAND	int,
+	 AWATER int,
+	 ALAND_SQMI	int,
+	 AWATER_SQMI int,
+	 latitude int,
+	 longitude int  
+);
+-- Zip crosswalk to relate zcta census blocks
+CREATE table zipcw
+(
+	 zip int,
+	 PO_NAME varchar(255),
+	 STATE varchar(255),
+	 ZIP_TYPE varchar(255),
+	 zcta int,
+	 zip_join_type varchar(255)
+);
+
+--import csv to income table
+.mode csv
+--.import nonprofits/organizations_earning_tickets-organizations-567efe97ca2d-2019-02-08-17-17-23.csv income
+
+-- Removed first row in csv file, pasted at the bottom of this script.
+
+.import aff_download/ACS_17_5YR_S1901_with_ann.csv income
+
+
+
+-- Display table info
+.tables
+.print '~~~~~'
+
+-- This is tab deliminited.
+.mode csv
+.import ../../zipcodes/2018_Gaz_zcta_national.csv zipcodes
+
+.headers off
+SELECT COUNT(*) as totalRows FROM income;
+.headers on
+.print '~~~~~'
+
+
+UPDATE income SET zcta = CAST(substr(geography,7,5) as decimal);
+
+
+--CREATE INDEX zip_index on income (zip);
+create index GEOID_index on zipcodes(GEOID); -- The zip code
+
+
+
+--combine zipcode
+-- Additional income columns, omitted to reduce file size
+-- income.HouseMeanIncome, income.House25to35K, income.House35to50K, income.House50to75K, income.House75to100K, income.House100to150K, income.House150to200K, income.House200Kup
+
+Create view combine_zipcode
+as 
+select income.housecount intensity, zipcodes.latitude, zipcodes.longitude,
+income.HouseMedianIncome, income.House0to10K, income.House10to15K, income.House15to25K
+
+from income 
+left join zipcw
+ on income.zcta=zipcw.zcta
+left join zipcodes  
+ on zipcw.zip=zipcodes.GEOID
+
+--and income.housecount < 1200
+and income.FamilyMeanIncome < 25000 -- 7155 results, but why just north side of Atlanta?
+--and income.Families0to10K > 30 -- 9354 results
+--and income.zip >= 30000 and income.zip < 31000
+;
+
+-- Prior to adding zipcw crosswalk: 33120 results
+
+--convert to csv
+.mode csv
+.output income_out.csv
+select * from combine_zipcode;
+.output stdout
+
+
+DROP TABLE IF EXISTS income;
+
+/*
+Removed from first row:
+GEO.id,GEO.id2,GEO.display-label,HC01_EST_VC01,HC01_MOE_VC01,HC02_EST_VC01,HC02_MOE_VC01,HC03_EST_VC01,HC03_MOE_VC01,HC04_EST_VC01,HC04_MOE_VC01,HC01_EST_VC02,HC01_MOE_VC02,HC02_EST_VC02,HC02_MOE_VC02,HC03_EST_VC02,HC03_MOE_VC02,HC04_EST_VC02,HC04_MOE_VC02,HC01_EST_VC03,HC01_MOE_VC03,HC02_EST_VC03,HC02_MOE_VC03,HC03_EST_VC03,HC03_MOE_VC03,HC04_EST_VC03,HC04_MOE_VC03,HC01_EST_VC04,HC01_MOE_VC04,HC02_EST_VC04,HC02_MOE_VC04,HC03_EST_VC04,HC03_MOE_VC04,HC04_EST_VC04,HC04_MOE_VC04,HC01_EST_VC05,HC01_MOE_VC05,HC02_EST_VC05,HC02_MOE_VC05,HC03_EST_VC05,HC03_MOE_VC05,HC04_EST_VC05,HC04_MOE_VC05,HC01_EST_VC06,HC01_MOE_VC06,HC02_EST_VC06,HC02_MOE_VC06,HC03_EST_VC06,HC03_MOE_VC06,HC04_EST_VC06,HC04_MOE_VC06,HC01_EST_VC07,HC01_MOE_VC07,HC02_EST_VC07,HC02_MOE_VC07,HC03_EST_VC07,HC03_MOE_VC07,HC04_EST_VC07,HC04_MOE_VC07,HC01_EST_VC08,HC01_MOE_VC08,HC02_EST_VC08,HC02_MOE_VC08,HC03_EST_VC08,HC03_MOE_VC08,HC04_EST_VC08,HC04_MOE_VC08,HC01_EST_VC09,HC01_MOE_VC09,HC02_EST_VC09,HC02_MOE_VC09,HC03_EST_VC09,HC03_MOE_VC09,HC04_EST_VC09,HC04_MOE_VC09,HC01_EST_VC10,HC01_MOE_VC10,HC02_EST_VC10,HC02_MOE_VC10,HC03_EST_VC10,HC03_MOE_VC10,HC04_EST_VC10,HC04_MOE_VC10,HC01_EST_VC11,HC01_MOE_VC11,HC02_EST_VC11,HC02_MOE_VC11,HC03_EST_VC11,HC03_MOE_VC11,HC04_EST_VC11,HC04_MOE_VC11,HC01_EST_VC13,HC01_MOE_VC13,HC02_EST_VC13,HC02_MOE_VC13,HC03_EST_VC13,HC03_MOE_VC13,HC04_EST_VC13,HC04_MOE_VC13,HC01_EST_VC15,HC01_MOE_VC15,HC02_EST_VC15,HC02_MOE_VC15,HC03_EST_VC15,HC03_MOE_VC15,HC04_EST_VC15,HC04_MOE_VC15,HC01_EST_VC18,HC01_MOE_VC18,HC02_EST_VC18,HC02_MOE_VC18,HC03_EST_VC18,HC03_MOE_VC18,HC04_EST_VC18,HC04_MOE_VC18,HC01_EST_VC19,HC01_MOE_VC19,HC02_EST_VC19,HC02_MOE_VC19,HC03_EST_VC19,HC03_MOE_VC19,HC04_EST_VC19,HC04_MOE_VC19,HC01_EST_VC20,HC01_MOE_VC20,HC02_EST_VC20,HC02_MOE_VC20,HC03_EST_VC20,HC03_MOE_VC20,HC04_EST_VC20,HC04_MOE_VC20
+*/
+
+

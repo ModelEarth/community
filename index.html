@@ -1,0 +1,100 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Community Modeling Data</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="js/jquery/zepto.min.js"></script>
+  <script type="text/javascript" src="js/d3/d3.v5.min.js"></script>
+  <script type="text/javascript" src="js/showdown.min.js"></script>
+  <script type="text/javascript" src="js/display.js"></script>
+  <link rel="stylesheet" href="css/display.css" />
+</head>
+
+<body style="font-family: Lato, sans-serif;">
+
+
+<style>
+.gobutton {
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 14px 12px 15px 12px;
+    min-height: 38px;
+    color: #fff;
+    box-sizing: border-box;
+    background: #555;
+    height: 48px;
+    text-decoration: none;
+}
+.resultsHolder {
+    background: rgba(33,33,33,0.95);
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    line-height: 26px;
+}
+.txtbox {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    width: 100%;
+    max-width: 190px;
+    padding: 0 20px;
+    height: 48px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #777;
+    border: solid 1px #b7b7b7;
+    border-radius: 5px;
+    margin-right: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+</style>
+
+<div style="padding:40px; clear:both; overflow: auto;">
+  <div id="readmeDiv"></div>
+</div>
+
+<div style="float:left; padding:40px; padding-top:0px; clear:both;">
+
+      <div id="greatestNeedsHolder" class="resultsHolder" style="margin-right:30px; ">
+        <div style="margin-bottom:10px;padding-top:0px">
+
+          <div style="margin-bottom:8px">Employment projections...</div>
+
+          <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
+          <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
+          <div style="clear:both"></div>
+        </div>
+      </div>
+
+
+  <script>
+    $('#zip').on("keypress", function(e) {
+      if (e.keyCode == 13) { // Enter hit
+        goZip();
+      }
+    });
+    function goZip() {
+      zip = $('#zip').val();
+      if (zip.length == 5) {
+        window.location='../../community/zip/#zip=' + zip;
+      } else {
+        alert('Please enter a 5 digit zip.');
+      }
+    }
+  </script>
+
+
+</div>
+
+
+</body>
+</html>
