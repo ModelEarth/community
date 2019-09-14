@@ -1,0 +1,331 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Dataset</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="../../js/d3/d3.v5.min.js"></script>
+  <script type="text/javascript" src="../../js/showdown.min.js"></script>
+  <link rel="stylesheet" href="../../css/display.css" />
+  <script type="text/javascript" src="../../js/jquery/zepto.min.js"></script>
+  
+
+<!--
+
+  InnerHtml error
+
+  https://smmtool.app.cloud.gov/api/GAUSEEIO/matrix/U
+  https://smmtool.app.cloud.gov/api/GAUSEEIO/matrix/D
+
+  Gatsby with Firebase
+  https://www.google.com/search?ei=9gJnXerUHsSHggfp9IhQ&q=gatsby+firebase&oq=Gatsby+fire&gs_l=psy-ab.1.0.0j0i20i263j0l6j0i20i263j0.10976.12439..15522...1.2..0.72.327.5......0....1..gws-wiz.......0i71j0i131i20i263j0i22i30.V01miZzoUSQ
+
+
+https://gta.georgia.gov/about-gta/technology-innovation-showcase
+-->
+
+  <style>
+    .hideMobile {display:block;}
+    .showMobile {display:none;}
+    @media (max-width: 800px) {
+      .hideMobile {display:none;}
+      .showMobile {display:block;}
+    }
+    .hideMidsize {display:block;}
+    .showMidsize {display:none;}
+    @media (max-width: 1200px) {
+      .hideMidsize {display:none;}
+      .showMidsize {display:block;}
+    }
+
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+    }
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+    td, th { 
+      padding: 6px; 
+      text-align: left; 
+    }
+
+    /* Wide screen width */
+    .rotateHeader {
+      margin-right:200px; /* Allows for angle to exceed columns on left. */
+      display: block;
+    }
+    th.rotate {
+      heightX: 320px;
+      height: 240px;
+
+      white-space: nowrap;
+      vertical-align: bottom;
+      text-align: left; 
+      padding: 2px;
+      padding-top:10px;
+    }
+    th.rotate > div {
+      transform: 
+        translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+        rotate(315deg); /* 45 is really 360 - 45 */
+      width: 22px;
+      padding: 4px;
+      padding-top: 5px;
+    }
+    th.rotate > div > span {
+      padding: 5px 10px;
+      font-weight: 200;
+      font-size: 13px;
+      display:block;
+      widthX:414px;
+      width:230px;
+      border-bottomX: 1px solid #dfdfdf;
+    }
+    th.rotate > div > span:hover {
+      background: #eee;
+      cursor: pointer;
+    }
+    .impactTitle {
+        padding-top: 34px;
+    }
+    .th_title {
+        width: 50px;
+    }
+    .th_title > div {
+      float:right; /* Allows for space bewteen sections */
+    }
+    .th_title > div > span, .th_title > div > span:hover {
+      border-bottomX: 1px solid #777 !important;
+      border-top: 1px solid #333;
+      background: #ddd !important;
+      margin-bottomX: 4px;
+      cursor: default;
+    }
+    th.rotate > div > span > span {
+        display:none; /* Hide extra after the title */
+    }
+
+    /* Standard Screen Width */
+    @media (max-width: 1399px) {
+      .rotateHeader {
+        margin-right:0px;
+      }
+      th.rotate {
+        height: 220px;
+      }
+      th.rotate > div {
+        transform: 
+          translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+          rotate(270deg); /* 45 is really 360 - 45 */
+        width: 20px;
+        padding: 0px;
+      }
+      th.rotate > div > span {
+        padding: 5px 10px;
+        font-size: 12px;
+        width: 200px;
+        margin-bottom: 2px;
+      }
+      .th_title {
+          width: 30px;
+      }
+      .th_title > div > span {
+        
+        font-size: 14px !important;
+        background: #eee;
+      }
+      .th_title > div > span, .th_title > div > span:hover {
+        margin-bottomX: 0px;
+      }
+    }
+
+
+    /* Not used */
+    #dataList > table > tbody > tr > td:first-child {
+      width:300px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .heatCell {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    iframe {
+      display: block;       /* iframes are inline by default */
+      border: none;         /* Reset default border */
+      min-height: 85vh;        /* Viewport-relative units */
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body style="font-family: Lato, sans-serif;">
+
+
+
+
+<div style="margin:40px; clear:both;">
+  
+  <div class="showApps" style="float:left; margin:2px 5px 0px 0px; color:#333">
+    <i class="material-icons" style="font-size: 28px; color:#222">&#xE5C3;</i>
+  </div>
+
+  <h2 style="float:left; margin-top:0px; padding-top:0px; color:#222">Community Model Builder</h2>
+  <hr style="clear:both">
+
+  
+  <div style="vertical-align: bottom; padding-right:0px">
+
+    <table class="rotateHeader" style="display: inline;">
+      <tr id="dataHeader">
+      <th class="hidemobile">
+        <div style="font-weight:200">
+          <div id="readmeDiv" style="float:left"></div>
+        </div>
+      </th>
+      <th class="rotate th_title"><div><span><b>Adverse Impact Potential</b></span></div></th>
+      <th class="rotate"><div><span>Acid Rain (ACID)</span></div></th>
+      <th class="rotate"><div><span>Freshwater Ecotoxicity (ETOX)<span> - Chemicals and Natural Materials</span></span></div></th>
+      
+      <th class="rotate"><div><span>Water Eutrophication (EUTR)<span> - Excess Nutrients, Oxygen Depletion</span></span></div></th>
+      <th class="rotate"><div><span>Global Climate Change (GCC)</span></div></th>
+
+      <!-- Human Health - Respiratory Effects -->
+      <th class="rotate"><div><span>Human Respiratory Effects (HRSP)</span></div></th>
+      <th class="rotate"><div><span>Toxic to Humans (HTOX)<span> - Both Cancer and Noncancer</span></span></div></th>
+      
+      <th class="rotate"><div><span>Ozone Depletion (OZON)</span></div></th>
+      <th class="rotate"><div><span>Smog Formation (SMOG)</span></div></th>
+      
+      <th class="rotate th_title"><div><span><b>Resource Use</b></span></div></th>
+      
+      <th class="rotate"><div><span>Energy Use (ENRG)</span></div></th>
+      <th class="rotate"><div><span>Land Use (LAND)</span></div></th>
+      <th class="rotate"><div><span>Minerals and Metals (MINE)</span></div></th>
+      <th class="rotate"><div><span>Water Use (WATR)</span></div></th>
+
+      <th class="rotate th_title"><div><span><b>Waste Generated</b></span></div></th>
+      <th class="rotate"><div><span>Food Waste (FOOD)</span></div></th>
+      <th class="rotate"><div><span>Hazardous Waste (HAZW)</span></div></th>
+      <th class="rotate"><div><span>Muncipal Solid Waste (MSW)</span></div></th>
+
+      <th class="rotate th_title"><div><span><b>Economic and Social</b></span></div></th>
+      <th class="rotate"><div><span>Jobs (JOBS)</span></div></th>
+      <th class="rotate"><div><span>Value Added (VADD)</span></div></th>
+    </tr>
+    
+  </table>
+
+  </div>
+
+  <div style="clear:both; border-top:1px solid #ccc;">
+  </div>
+  <br>
+  
+
+  <div id="resizable">
+    <div id="markupAsHtml" style="margin-left:40px; margin-right:40px;"></div>
+    <div id="resizer"></div>
+  </div>
+
+  <div id="mainarea">
+    <!-- graphs/marvel/index.html  alexander-huth.jpg lab/brain/img/12-Figure4-1.png -->
+    <iframe src="/dscape/lab/brain/img/waveforms_blue.png" class="iframe" name="mainframe" id="mainframe" style="min-height:500px;max-height:600px"></iframe><br>
+    <div style="position:absolute; bottom:0px; display:none">
+      <!--
+      Embedded content. Scroll within iFrame above.
+      -->
+      <a href="/dscape/graphs/marvel/" id="iframeInTab" target="_blank">Expand</a>
+      <br><br>
+
+      <!--
+       or <a href="" class="opentab">view in new tab</a>.
+        -->
+    </div>
+  </div>
+
+
+  2007 BEA Data
+</div>
+
+<script>
+  var dataSet = [];
+  function loadHtmlTable(applyFilter) {
+    d3.text("USEEIOv1_1_FinalDemand.csv").then(function(data) {
+        dataSet = d3.csvParseRows(data);
+        console.log("loadHtmlTable - dataSet row count: " + dataSet.length);
+        //console.log(dataSet);
+        displayResults();
+    });   
+  }
+  loadHtmlTable(true); // New list
+
+  function numberWithCommas(x) {
+      //return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+      if (!isNaN(x)) { // Is number
+          return Math.round(x/1000000);
+      } else {
+        return x;
+      }
+  }
+  function displayResults() {
+    var rowcount = 0;
+    var dataRow = ""; // "<table>"
+    //dataRow += "<tr><th>BEA Code</th><th>US Consumption</th><th>US Production</th><th>Trade Balance</th></tr>";
+    for(var i = 0; i < dataSet.length; i++) {
+      rowcount++;
+      var diff = numberWithCommas(dataSet[i][4] - dataSet[i][3]);
+      if (rowcount > 1) {
+          if (dataSet[i][3]) {
+          dataRow += "<tr><td class='hideMobile'><div style='float:left;min-width:21px;padding-top:2px'><input name='sector' type='checkbox' value=''></div><div style='overflow:auto'>" + dataSet[i][0] + " - " + dataSet[i][1] + "</div></td>";
+          //dataRow += "<div><b>Location:</b> " + dataSet[i][2] + "</div>";
+          
+            //dataRow += "<td>" + numberWithCommas(dataSet[i][3]) + "</td><td>" + numberWithCommas(dataSet[i][4]) + "</td><td>" + diff + "</td>";
+          
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell'></td>";
+
+          dataRow += "</tr>";
+        } else {
+            dataRow += "<tr><td colspan='30'><br><b>" + dataSet[i][0] + "</b></td></tr>";
+        }
+      }
+    };
+    //dataRow += "</table>";
+    if (rowcount > 0) {
+      //$("#dataList").append(dataRow);
+
+      //$( "h2" ).insertAfter( $("#dataHeader") );
+      $(dataRow).insertAfter($("#dataHeader"));
+    }
+  }
+</script>
+
+<script type="text/javascript" src="../../js/display.js"></script>
+<link rel="stylesheet" href="../../css/material_icons.css" />
+</body>
+</html>

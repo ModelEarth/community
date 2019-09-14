@@ -1,0 +1,359 @@
+/* Changes originate in statedata/community/css/community.css */
+
+h1 {
+  font-weight: 200;
+  font-size: 28pt;
+  margin-block-start: 0em;
+}
+h3 {
+  margin-top: 20px;
+}
+body {
+  margin:0px;
+  padding:0px;
+  background: #fff;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+}
+.regularText {
+    font-size: 14px;
+  }
+iframe {
+  display: block;       /* iframes are inline by default */
+  backgroundX: #000;
+  border: none;         /* Reset default border */
+  /* min-height: 94vh; */   /* Viewport-relative units - made disqus too tall. */
+  width: 100%;
+}
+#ds_header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  width:100%;
+  height:70px;
+  overflow: visible;
+}
+#backPage {
+  float:left;
+  width:40px;
+  height:70px;
+  box-sizing: border-box;
+  margin:0;
+  padding:10px 8px 8px 6px;
+}
+.headerRect {
+  height:70px;
+  width: 25%;
+  max-width: 25%;
+  border-left: 1px solid #ccc;
+  border-right: 0px solid #ccc;
+  border-bottom: 0px solid #ccc;
+  border-top: 0px solid #fff;
+  position:relative;
+  float: left;
+  paddingX: 20px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  box-sizing: border-box;
+  z-index: 999;
+  overflow:visible;
+}
+.headerRectNarrow {
+  width: 23%;
+}
+.headerRectHeight {
+  
+
+}
+.headerRectInterior {
+  position: absolute;
+  left:0px;
+  right:0px;
+  height:70px;
+  z-index: 9999;
+  width:100%;
+  padding:20px;
+  padding-right:10px;
+  box-sizing: border-box;
+  background:#fff;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+.headerRectInterior b {
+  font-weight: 1000;
+}
+.headerRectExpand {
+  height: auto;
+  min-width: 300px; /* for narrow browser */
+  overflow: visible;
+  border: 1px solid #fff;
+  background:#ddd;
+}
+.headerRectExpand > .arrowdown {
+  border-top: 6px solid #777;
+}
+.headerRectInterior:hover {
+  background-color: #eee;
+}
+.arrowdown {
+  width: 0; 
+  height: 0; 
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000;
+  margin:4px;
+  float: right;
+  pointer-events: auto; /* prevent click-through */
+}
+.arrowback {
+  width: 0; 
+  height: 0; 
+  border-top: 18px solid transparent;
+  border-bottom:18px solid transparent;
+  border-right: 18px solid #ccc;
+  margin:4px;
+  pointer-events: auto; /* prevent click-through */
+}
+
+#resizable {
+  position: relative;
+  width: 25%;
+  background: #fff;
+  float:left;
+  overflow:hidden;
+  border-right: 1px solid #ddd;
+}
+.resizableNarrow {
+  width: 25.7% !important;
+}
+#resizer {
+  position: absolute;
+  width: 6px;
+  top: 30px;
+  bottom: 30px;
+  right: -3px;
+  background: orange;
+  background: #ddd;
+  background: #fff;
+  opacity: .5;
+  cursor: ew-resize;
+}
+#mainarea {
+  overflow: hidden;
+  min-heightX: 100vh; 
+  margin: 50px;
+  margin: 0px;
+  position: relative;
+}
+#mainarea iframe {
+  background: #efefef;
+}
+.sideBySide {
+  float:left;
+  padding-right:50px;
+  padding-bottom:30px;
+}
+
+#ds_topbar {
+  background-color: #4c4542;
+}
+#ds_footer {
+  height: 22px;
+  overflow: auto;
+  background-color: #4c4542;
+  position:fixed;
+  bottom:0px;left:0px;right:0px;
+  z-index:10000;
+  padding:6px 0 0 18px;
+}
+#ds_footer a {
+  margin-right: 20px;
+  text-decoration:none;
+  color:#fff;
+}
+
+#ds_command {
+  position:absolute;
+  top:70%;
+  left:50px;
+  max-height:200px;
+  padding: 8px 8px 8px 8px;
+  color:#fff;
+  background: rgba(0,0,0,0.9);
+  border-radiusX: 18px 0px 5px 5px;
+}
+#ds_command textarea {
+  
+  color:#fff;
+  background: rgba(0,0,0,0);
+  min-width: 350px;
+  min-height: 150;
+  overflow:scroll;
+  border:0px;
+}
+#ds_chat {
+  position:fixed;
+  bottom:25px;
+  right:0px;
+  padding: 8px 16px 8px 8px;
+  
+  background: white;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 4px 0px 5px 5px;
+}
+#ds_chat_top {
+  padding-right:10px;
+  overflow: auto;
+}
+#ds_chat_title {
+  float:left;
+  padding:10px 8px 8px 0px;
+  color:#333;
+  font: 22px/15px Trebuchet MS, Arial, sans-serif;
+  margin-bottom:4px;
+}
+#ds_chat_inner {
+  display:none;
+  font-size: 16px;
+  max-width: 300px
+}
+#closeChat {
+  display: none;
+  position:absolute;
+  top:4px;
+  right:7px;
+  color:#999;
+  font-size:16px;
+  cursor: pointer;
+}
+.numberCircle {
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  /*border: 2px solid #666;*/
+  color:#fff;
+  background:#333;
+  margin-right:8px;
+}
+.numberCircleMd {
+  width: 22px;
+  line-height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #666;
+  color:#fff;
+  background:#333;
+  margin-right:7px;
+}
+.numberCircleLg {
+  width: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #666;
+  color:#fff;
+  background:#333;
+  margin-right:7px;
+}
+.openDiv {
+  position:absolute;
+  top:4px;
+  left:6px;
+  font-size:30px;
+  color:#fff;
+  cursor: pointer;
+  display:none;
+  font-weight: 100;
+}
+.closeDiv, .closeIndicatorsDiv, .closeClusterBucketsDiv {
+  position:absolute;
+  top:4px;
+  right:6px;
+  font-size:18px;
+  color:#999;
+  cursor: pointer;
+}
+.closeDiv:hover {
+  color:#ccc;
+}
+.expandDiv {
+  position:absolute;
+  top:4px;
+  right:12px;
+  font-size:26px;
+  color:#fff;
+  cursor: pointer;
+  z-index: 99999;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+/* json to html display */
+.titlecell {
+  border-top: 1px solid #ddd;
+  margin-top:5px;
+  float:left;
+  clear:both;
+  min-width: 200px;
+}
+.rightcell {
+  border-top: 1px solid #ddd;
+  margin-top:5px;
+  overflow: auto;
+}
+.rightlogo {
+  width:100%;
+  max-width:300px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.hidden {
+  displayX:none;
+}
+.level1 {
+  color: #fff;
+  background: #777;
+  font-size: 11pt;
+  padding:6px;
+  margin-top:14px; /* margin-bottom breaks alignment of clear:both on titlecell div */
+  cursor: pointer;
+}
+.bucketDesc {
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .headerRect {
+    display:none;
+
+    width:100%;
+    max-width:100%;
+    border-bottom: 1px solid #ccc;
+  }
+  #clusterBucketsHolder {
+    position: relative;
+    max-height: none;
+    right:0; top:0;
+  }
+
+  #ds_header, .expandDiv {
+    display:none;
+  }
+  #resizable {
+    display:none;
+
+    width:100%;
+    height:300px;
+    float:none;
+    overflow: scroll;
+  }
+  #introDiv, #introDivHolder {
+    max-width: 100% !important;
+  }
+
+}
