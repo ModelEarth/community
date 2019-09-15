@@ -43,7 +43,7 @@
     aside, pre { display: none; }
     div#allLegends { position: relative; }
     div.legend { position: relative; width: 200px; float: left; }
-    #list { overflow:auto; margin:30px; padding-left:50px;}
+    #hublist { overflow:auto; margin:30px; padding-left:50px;}
 
     .headerLogo {
       height:40px;
@@ -139,10 +139,10 @@ KI,48.143640,11.603463,Hans
     <div id="map" style="clear:both"></div>
     <div id="allLegends"></div>
 
-    <a name="locations"></a>
+    <a name="list"></a>
     <br><br><br><br>
 
-    <div id="list" style="float:left; max-width:320px"></div>
+    <div id="hublist" style="float:left; max-width:320px"></div>
 
     
     <div style="overflow:auto; max-width:500px; min-width: 300px; margin:0 30px; margin-bottom:30px">
@@ -222,7 +222,7 @@ KI,48.143640,11.603463,Hans
         .sectionMargin {
           margin-left: 30px;
         }
-        #list {
+        #hublist {
           padding-left: 0px;
         }
       }
@@ -255,7 +255,7 @@ KI,48.143640,11.603463,Hans
   <div style="height:50px;width:100%;position:fixed;bottom:0;z-index:9999;">
     <div style="padding-right:30px;float:right">
       <a href="#map" class="footerButton">Map</a>
-      <a href="#locations" class="footerButton">Hubs</a>
+      <a href="#list" class="footerButton">List</a>
       <a href="#items" class="footerButton">Items</a>
     </div>
   </div>
@@ -600,7 +600,7 @@ KI,48.143640,11.603463,Hans
           }
            output += "<br></div><div style='clear:both'></div>";
 
-          $("#list").append(output);
+          $("#hublist").append(output);
         });
       }
 
