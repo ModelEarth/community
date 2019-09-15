@@ -63,7 +63,9 @@
 </head>
 <body>
 
-<div style="height:80px;background:#fff;z-index:1;width:100%;position:fixed;overflow:hidden;z-index:90000">
+<a name="map"></a>
+
+<div style="height:80px;background:#fff;width:100%;position:fixed;overflow:hidden;z-index:90000">
   
   <div style="float:left"><a href="/"><img class="headerLogo" src="img/planet.live.png" /></a></div>
 
@@ -137,10 +139,15 @@ KI,48.143640,11.603463,Hans
     <div id="map" style="clear:both"></div>
     <div id="allLegends"></div>
 
+    <a name="list"></a>
+
     <div id="list" style="float:left; max-width:320px"></div>
 
+    
     <div style="overflow:auto; max-width:500px; min-width: 300px; margin:0 30px; margin-bottom:30px">
+      <a name="items"></a>
       <br>
+      <br><br><br>
       <h2>Bahamas Relief Donations</h2>
       
       <b>Isabel Rivera-Collazo writes:</b> Based on our experience in Puerto Rico, avoid donating items that will produce more refuse or that support dependency: don't donate water, anything that needs batteries or anything that needs gas.<br><br>
@@ -215,6 +222,23 @@ KI,48.143640,11.603463,Hans
           margin-left: 30px;
         }
       }
+
+
+      .footerButton {
+        font-size: 10pt;
+        padding: 4px 6px 4px 6px;
+        border-radius: 4px;
+        min-height: 32px;
+        height: 32px;
+        background-color: #fff;
+        color: #777;
+        border: 3px solid #ccc;
+        text-decoration: none !important;
+      }
+      .footerButton:hover {
+        color:#fff;
+        background: #777;
+      }
     </style>
 
     
@@ -223,6 +247,14 @@ KI,48.143640,11.603463,Hans
     <div style="text-align: center">
       <img src="img/Sustainable-Donations.jpg" style="width:100%; max-width:800px" />
     </div>
+
+  <div style="height:50px;width:100%;position:fixed;bottom:0;z-index:9999;">
+    <div style="padding-right:30px;float:right">
+      <a href="#items" class="footerButton">Items</a>
+      <a href="#list" class="footerButton">Hubs</a>
+      <a href="#map" class="footerButton">Map</a>
+    </div>
+  </div>
 
     <div style="clear:both; margin-top: 20px; padding:30px; background: #eee">
     <a href="https://GitHub.com/modelearth/community/tree/master/hubs" target="_blank">Edit on GitHub</a>
