@@ -139,7 +139,8 @@ KI,48.143640,11.603463,Hans
     <div id="map" style="clear:both"></div>
     <div id="allLegends"></div>
 
-    <a name="list"></a>
+    <a name="locations"></a>
+    <br><br><br><br>
 
     <div id="list" style="float:left; max-width:320px"></div>
 
@@ -221,18 +222,21 @@ KI,48.143640,11.603463,Hans
         .sectionMargin {
           margin-left: 30px;
         }
+        #list {
+          padding-left: 0px;
+        }
       }
 
 
       .footerButton {
         font-size: 10pt;
-        padding: 4px 6px 4px 6px;
-        border-radius: 4px;
+        padding: 4px 8px 4px 8px;
+        border-radius: 8px;
         min-height: 32px;
         height: 32px;
         background-color: #fff;
         color: #777;
-        border: 3px solid #ccc;
+        border: 3px solid #aaa;
         text-decoration: none !important;
       }
       .footerButton:hover {
@@ -250,9 +254,9 @@ KI,48.143640,11.603463,Hans
 
   <div style="height:50px;width:100%;position:fixed;bottom:0;z-index:9999;">
     <div style="padding-right:30px;float:right">
-      <a href="#items" class="footerButton">Items</a>
-      <a href="#list" class="footerButton">Hubs</a>
       <a href="#map" class="footerButton">Map</a>
+      <a href="#locations" class="footerButton">Hubs</a>
+      <a href="#items" class="footerButton">Items</a>
     </div>
   </div>
 
