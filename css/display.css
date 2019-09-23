@@ -1,5 +1,6 @@
 .hideMobile, .hideMobileWide {display:block;}
 .showMobile, .showMobileWide {display:none;}
+.showOnGithub {display:none;}
 
 @media (max-width: 600px) {
   .hideMobile {display:none;}
