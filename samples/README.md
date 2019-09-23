@@ -10,6 +10,6 @@ Stand-alone examples of formatting and displaying community data.
 ## [5. Counties and Zipcodes (maps)](maps) 
 
 <br>
-<div class="showOnGithub">
+<div class="showGit">
 <a href="https://modelearth.github.io/community/samples/">View as website</a>
 </div>
