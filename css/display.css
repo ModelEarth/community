@@ -1,0 +1,122 @@
+.hideMobile, .hideMobileWide {display:block;}
+.showMobile, .showMobileWide {display:none;}
+
+@media (max-width: 600px) {
+  .hideMobile {display:none;}
+  .showMobile {display:block;}
+}
+@media (max-width: 900px) {
+  .hideMobileWide {display:none;}
+  .showMobileWide {display:block;}
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #555;
+  box-sizing: border-box;
+}
+html a {
+  color:inherit;
+}
+
+/* HEADER */
+.headerLogo {
+  height:30px;
+  margin:5px 10px 4px 1px
+}
+.showMenu:hover {
+  cursor: pointer;
+}
+#menuHolder {
+  height:100%;
+  position:fixed;
+  right:0px;
+
+  margin-leftX:-10px;
+  overflow: auto;
+  background: #fff;
+
+  width:250px;
+  margin-right:-250px;
+  -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    box-sizing: border-box;
+    z-index: 9999;
+}
+#menuTop {
+  margin-left:20px;
+}
+#menuNav {
+  margin-top:20px;
+}
+#menuNav a {
+  display: block;
+  padding-left: 40px !important;
+  padding-top: 15px !important;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+#menuNav a:hover {
+  background-color: #ddd;
+}
+@media (max-width: 1199px) {
+  #menuNav a {
+    font-size:18px;
+    font-weight: 500;
+    color: #fff;
+  }
+  #menuNav a:hover {
+    background-color: #000;
+  }
+}
+
+@media (max-width: 600px) {
+  #menuNav a {
+    font-size:20px;
+  }
+}
+#menuHolder a {
+  padding: 10px;
+  text-decoration: none;
+}
+.hideMenu {
+    floatX:right;
+    margin-top:15px;
+    margin-right:-20px;
+    cursor:pointer;
+    color: #AEAEAE;
+    border: 2px solid #AEAEAE;
+    border-radius: 30px;
+    backgroundX: #605F61;
+    font-size: 32px;
+    font-weight: 100;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+    width:17px;
+    position: relative;
+}
+.hideMenu:hover {
+  color:#fff;
+  border-color: #fff;
+}
+.hideMenu:after {
+  position: absolute;
+    top: 10px;
+    left: 2px;
+    align-content: center; /* no effect, delete */
+    content: "×";
+}
+/* @media handheld { */
+@media only screen and (max-width: 479px) { /* Since Lato font not available on Android */
+  .hideMenu:after {
+      top: 12px;
+      left: 4px;
+  }
+}
+/* END HEADER */
