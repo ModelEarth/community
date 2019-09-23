@@ -23,6 +23,17 @@ html a {
   text-decoration:none;
 }
 
+
+/* FOR MARKDOWN */
+h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+h2 a:visited {
+  color: #0366d6;
+}
+
+
 /* HEADER */
 .headerLogo {
   height:30px;
