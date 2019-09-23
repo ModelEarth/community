@@ -13,3 +13,13 @@ Stand-alone examples of formatting and displaying community data.
 <div class="showGit">
 <a href="https://modelearth.github.io/community/samples/">View as website</a>
 </div>
+
+<style>
+	h2 {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 10px;
+	}
+	h2 a:visited {
+		color: #0366d6;
+	}
+</style>

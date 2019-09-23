@@ -19,7 +19,8 @@ body, html {
   box-sizing: border-box;
 }
 html a {
-  color:inherit;
+  colorX:inherit;
+  text-decoration:none;
 }
 
 /* HEADER */
