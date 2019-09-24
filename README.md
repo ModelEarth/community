@@ -7,7 +7,7 @@ County and zip level datasets for [2020 EPA Civic Hackathon](https://model.georg
 [Product Sectors - Community Model Builder - Report Prototype](https://modelearth.github.io/community/samples/dataset) 
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->
 
-[Exports - Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/#hs=2203) 
+[Exports - Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
 
 [Farm Fresh - Federal USDA location data merged for Aglanta](farmfresh/ga) 
 
