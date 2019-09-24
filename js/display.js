@@ -33,6 +33,10 @@ $(document).ready(function(){
 	      $(this).attr("src", climbpath + $(this).attr('src'));
 	    })
 
+ 		// To do: fetch the existing background-image.
+ 		var imageUrl = climbpath + "img/logo/georgia-icon-on-gray.png";
+ 		$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
+
  		$('.showMenu').click(function () {
 			//$(".showMenu").hide();
 			$(".navLinks").hide();
