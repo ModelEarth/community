@@ -2,9 +2,7 @@
 
 Data prep for [Sustainable Georgia Civic Hackathons - Spring and Fall 2020](https://model.georgia.org).  
 
-View [starter samples](samples/).  
-
-Primary skillsets: Javascript and Python.  
+[Starter Samples](samples/)  
 
 ### Summary
 
@@ -37,15 +35,17 @@ Primary skillsets: Javascript and Python.
 
 11. Update [NAICS Industry Data](industries) data.
 
-12. Add cascading categories to [Goods & Services Report](samples/dataset).  
+12. Add cascading categories to [Goods & Services Report](samples/dataset). Cross-relate NAICS industries and HS Codes.  
+ 
 
-13. Cross-related to NAICS industries and HS Codes.
-
-<br>
 
 <!--[Census Data by Zipcode](https://github.com/statedata/community)  -->
 
 <hr>
+<br>
+ 
+
+ 
 
 [Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
 
