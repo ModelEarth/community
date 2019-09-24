@@ -1,4 +1,4 @@
-# Community farmfresh/ga
+# Farm Fresh Georgia
 
 Data used in [Atlanta fresh produce map](https://data.georgia.org/#fresh) created with Mario Cambardella, Atlanta's Urban Agriculture Director.  
 
