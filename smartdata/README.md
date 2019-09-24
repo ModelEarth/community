@@ -1,2 +1,2 @@
-# Smart Data Projects
+# About Projects
 
