@@ -57,8 +57,7 @@ $(document).ready(function(){
 
 
             	if (!$(event.target).parents("#menuHolder").length) {
-            		event.preventDefault();
-            		//event.stopPropagation();
+            		//event.preventDefault(); // Using requires double click
             	}
         	}
 		});
