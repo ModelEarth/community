@@ -13,17 +13,19 @@ Data prep for [Sustainable Georgia Civic Hackathons - Spring and Fall 2020](http
 
 3. Use Gatsby with a free alternative to Forestry.io to edit content on GitHub.  
 
-4. Display highlighted communities on Leaflet map.  Create driving tour routes.
+4. Highlight Georgia Smart communities on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
 
-5. Add index values from USEEIO data to 
+5. Move [Georgia Recycing data](https://data.georgia.org/#processors) to Leaflet map layers.
+
+6. Add heatmap colors from USEEIO data to 
 [Goods & Services Report](https://modelearth.github.io/community/samples/dataset)
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
 
-6. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
+7. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
 
-7. Display [Farm Fresh - Federal USDA location data merged for Aglanta](farmfresh/ga) location on Leaflet map.  
+8. Display [Farm Fresh - Federal USDA location data merged for Aglanta](farmfresh/ga) location on Leaflet map.  
 
-8. Update [NAICS Industry Data](industries) data
+9. Update [NAICS Industry Data](industries) data
 
 <!--[Census Data by Zipcode](https://github.com/statedata/community)  -->
 
