@@ -1,4 +1,6 @@
-# Sustainable Material Management
+# Goods & Services
+
+### Sustainable Material Management
 
 <span class='hideMidsize'>
 Here's a sample of loading data from a [CSV](USEEIOv1_1_FinalDemand.csv) file and adding calculations. 
@@ -13,8 +15,8 @@ Source:
 https://stategov.github.io/us/bea/USEEIOv1.1_FinalDemand.csv
 -->
 
-### Bureau of Economic Analysis (BEA) - <span style='white-space:nowrap'>Industry Sectors</span>
-[Report prototype under development]  
+#### Bureau of Economic Analysis (BEA) - <span style='white-space:nowrap'>Industry Sectors</span>
+[Report sample under development]  
 
 <!--in Millions-->
 

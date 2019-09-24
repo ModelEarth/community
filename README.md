@@ -1,6 +1,6 @@
-# Community Modeling Data
+# Community Model Builder
 
-County and zip level CSV datasets.  
+County and zip level datasets for [2020 EPA Civic Hackathon](https://model.georgia.org).  
 
 [Starter Samples](samples/) 
 
@@ -13,14 +13,12 @@ County and zip level CSV datasets.
 
 [Industries - NAICS](industries) 
 
-[Census Data by Zipcode](https://github.com/statedata/community)  
+<!--[Census Data by Zipcode](https://github.com/statedata/community)  -->
 
 [Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
 
 [Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
 
-<br>
-
-GitHub Pages: [modelearth.github.io/community](https://modelearth.github.io/community)  
+[Collaborate on GitHub](https://github.com/modelearth/community)  
 
 
