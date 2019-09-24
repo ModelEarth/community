@@ -16,7 +16,7 @@ https://stategov.github.io/us/bea/USEEIOv1.1_FinalDemand.csv
 -->
 
 #### Bureau of Economic Analysis (BEA) - <span style='white-space:nowrap'>Industry Sectors</span>
-[Report sample under development]  
+Report sample under development - [Demand Data](USEEIOv1_1_FinalDemand.csv) | [USEEIO Data](USEEIO.csv)
 
 <!--in Millions-->
 
