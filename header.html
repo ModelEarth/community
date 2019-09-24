@@ -9,7 +9,7 @@
 Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 */
 #logoholder {
-  background:url(../../img/logo/georgia-icon-on-gray.png) no-repeat;
+  background:url(img/logo/georgia-icon-on-gray.png) no-repeat;
   background-size: 100% 100%;
   float:left; 
   height:60px; width:60px;
@@ -18,7 +18,15 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
   background:#eee
 	*/
 }
-
+#homeMenu {
+	display: none;
+	border: 1px solid #ccc;
+}
+#homeMenu div {
+	height: 40px;
+	background-color: #fff;
+	padding:20px;
+}
 </style>
 
 <div id="menuHolder" style="background:#333; display:none">
@@ -42,12 +50,12 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 	</div>
 </div>
 
-<div style="height:60px;background:#fff;z-index:1;width:100%;position:fixed;overflow:hidden;z-index:1000; border-bottom:1px solid #ddd;">
+<div style="height:60px;background:#fff;z-index:1;width:100%;position:fixed;overflow:visible;z-index:1000; border-bottom:1px solid #ddd;">
 	
 	<div style="">
 		<a href="" id="logoholder" class="showApps">
 			
-			<img style="height:22px; display:none;" src="img/logo/earth-globe.png">
+			
 			<i style="display:none;" class="material-icons" style="font-size: 24px; color:#777">&#xE5C3;</i>
 				
 		</a>
@@ -72,7 +80,14 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 		</div>
 	</div>
 	
-
+	<div id="homeMenu" style="position:absolute">
+		<div>Georgia Communities</div>
+		<div>United States</div>
+		<div>
+			<div style="float:left"><img style="height:22px;" src="img/logo/earth-globe.png"></div>
+			<div style="float:left">Countries</div>
+		</div>
+	</div>
 
 	<div style="overflow:auto; border-left:0px solid #ccc; height:44px; margin:10px 10px 0 10px; padding-left:16px; font-size:13px">
 
