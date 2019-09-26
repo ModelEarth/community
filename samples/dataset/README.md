@@ -17,10 +17,9 @@ https://stategov.github.io/us/bea/USEEIOv1.1_FinalDemand.csv
 
 #### Bureau of Economic Analysis (BEA) - <span style='white-space:nowrap'>Industry Sectors</span>
 Report sample under development  
-[Demand Data](USEEIOv1_1_FinalDemand.csv) - Totals are currently not displayed.    
-<span style='white-space: nowrap;'>[USEEIO Data](USEEIO.csv)</span> - Copied from 
-<a href="http://model.georgia.org/smm-tool-suite/">textarea at bottom of Georgia</a>.  
-Set display to 400.  To do: Add column names for indexes.   
+[Demand Data](USEEIOv1_1_FinalDemand.csv) - Totals are currently not displayed.  
+<span style='white-space: nowrap;'>[USEEIO Data](USEEIO.csv)</span> - Needs column names for indexes.  
+<!-- http://model.georgia.org/smm-tool-suite/ -->
 
 <!--in Millions-->
 
