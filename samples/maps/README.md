@@ -3,7 +3,7 @@
 ## [Smart Data Projects (smartdata)](../../smartdata)
 <!--## [Map Points (hubs)](../../hubs/#route=us.ga_to_bs)-->
 ## [State Counties (counties)](counties/counties.html)  
-## [Zip Boundaries (zip)](../../zip/leaflet/)
+## [Industry Mix (zip)](../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)
 ## [Map Layers (aside)](aside)
 ## [US Zipcode Data (uszipcode)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - Python
 

@@ -45,23 +45,28 @@ function compute_stat(data, columns) {
             var t = s[col+"_stats"].mean;
             var min = temp[col][0];
             var max = temp[col][1];
+            var colName = '';
+            if (typeof col != 'undefined') {
+                colName = col.replace('Jobs','');
+            }
+            
             if(min <= t && t <= min+((max-min)/3)){
                 if(!s.desc){
-                    s.desc = "<span class='bucketDesc'>Low " + col + "</span>";
-                }else{
-                    s.desc += ", <span class='bucketDesc'>Low " + col + "</span>";
+                    s.desc = "<span class='bucketDesc'>Low " + colName + "</span>";
+                } else {
+                    s.desc += ", <span class='bucketDesc'>Low " + colName + "</span>";
                 }
             }else if(min+((max-min)/3) < t && t  <= min+((max-min)*2/3)){
                 if(!s.desc){
-                    s.desc = "<span class='bucketDesc'>Medium " + col + "</span>";
-                }else{
-                    s.desc += ", <span class='bucketDesc'>Medium " + col + "</span>";
+                    s.desc = "<span class='bucketDesc'>Medium " + colName + "</span>";
+                } else {
+                    s.desc += ", <span class='bucketDesc'>Medium " + colName + "</span>";
                 }
             }else if(min+((max-min)*2/3) < t && t  <= max){
                 if(!s.desc){
-                    s.desc = "<span class='bucketDesc'>High " + col + "</span>";
-                }else{
-                    s.desc += ", <span class='bucketDesc'>High " + col + "</span>";
+                    s.desc = "<span class='bucketDesc'>High " + colName + "</span>";
+                } else {
+                    s.desc += ", <span class='bucketDesc'>High " + colName + "</span>";
                 }
             }
         });
