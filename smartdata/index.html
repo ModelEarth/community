@@ -132,7 +132,7 @@ KI,48.143640,11.603463,Hans
     
   <div id="hublist" style="float:left; max-width:320px">
     <h1>Smart & Mobile</h1>
-    Opportunities for Waze integration:<br><br>
+    <!--Opportunities for Waze integration:<br><br>-->
   </div>
 
     
@@ -377,7 +377,7 @@ KI,48.143640,11.603463,Hans
               //scaleType: "scaleQuantile",
               scaleType: "scaleOrdinal",
             }
-            dp.name = "Drop-off Hubs"; // Must match "map.addLayer(overlays" below.
+            dp.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
             dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
             dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
             dp.group = L.layerGroup();
@@ -406,7 +406,7 @@ KI,48.143640,11.603463,Hans
             //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
             //map.removeLayer(overlays["myDataset"]); // Remove from map
 
-            map.addLayer(overlays["Drop-off Hubs"]);
+            map.addLayer(overlays["Smart Data Projects"]);
         })
         .catch(function(error){ 
              alert("Data loading error: " + error)
@@ -422,7 +422,7 @@ KI,48.143640,11.603463,Hans
       var map = L.map('map', {
         center: mapCenter,
         scrollWheelZoom: false,
-        zoom: 10,
+        zoom: 7,
         layers: [grayscale]
       });
       // layers: [grayscale, dataParameters[0].group]
