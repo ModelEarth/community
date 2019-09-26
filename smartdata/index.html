@@ -505,7 +505,10 @@ KI,48.143640,11.603463,Hans
               radius: 500 // was 50
           }).addTo(dp.group);
 
-          var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>Hours: " + element.schedule + "<br>";
+          var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
+            if (element.schedule) {
+              output += "Hours: " + element.schedule + "<br>";
+            }
           if (element[dp.latColumn]) {
               output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
           }
@@ -562,7 +565,10 @@ KI,48.143640,11.603463,Hans
         circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group);
 
 
-          var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>Hours: " + element.schedule + "<br>";
+          var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
+          if (element.schedule) {
+            output += "Hours: " + element.schedule + "<br>";
+          }
           if (element[dp.latColumn]) {
               output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
           }
@@ -584,8 +590,9 @@ KI,48.143640,11.603463,Hans
           if (element.phone || element.phone_afterhours) {
            output += element.phone + " " + element.phone_afterhours + "<br>";
           }
+          if (element.schedule) {
            output += "Hours: " + element.schedule + "<br>";
-
+          }
            if (element[dp.latColumn]) {
               output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
           }
