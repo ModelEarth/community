@@ -7,6 +7,12 @@
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script type="text/javascript" src="../../js/d3/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../js/showdown.min.js"></script>
+<script type="text/javascript" src="../../js/jquery/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/display.js"></script>
+<link rel="stylesheet" href="../../css/display.css" />
+
 <!--
 TO DO:
 Update the following .js includes to local links.  
@@ -14,26 +20,25 @@ Legend on right needs to end with last letter in route. This issue also occurs w
 To control route, add waypoints that don't appear as map points.
 -->
 
-
 <!-- Might be able to remove some of these lines.  At least copy files locally.  -->
- <script src="https://www.liedman.net/leaflet-routing-machine/public/lib/highlight.pack.js"></script>
+<script src="https://www.liedman.net/leaflet-routing-machine/public/lib/highlight.pack.js"></script>
 
-    <!-- CSS -->
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.css">
-    <!--[if lt IE 9]>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.css">
-    <![endif]-->
-    <link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/normalize.css">
-    <link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/skeleton.css">
-    <link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/lib/prism.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
-    <link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/site.css" />
-    <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
-    <script src="https://unpkg.com/leaflet.icon.glyph@0.2.0/Leaflet.Icon.Glyph.js"></script>
-    <script src="https://www.liedman.net/leaflet-routing-machine/lib/Control.Geocoder.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<!-- CSS -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.css">
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.css">
+<![endif]-->
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/normalize.css">
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/skeleton.css">
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/lib/prism.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/site.css" />
+<script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+<script src="https://unpkg.com/leaflet.icon.glyph@0.2.0/Leaflet.Icon.Glyph.js"></script>
+<script src="https://www.liedman.net/leaflet-routing-machine/lib/Control.Geocoder.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
 
 
@@ -89,7 +94,11 @@ crossorigin=""></script>
 	</style>
   
 </head>
+
 <body>
+<div id="header"></div>
+<div style="height:60px"></div>
+
 	<!-- https://github.com/perliedman/leaflet-routing-machine -->
 	<div id="map"></div><br>
 	<style>
@@ -192,6 +201,8 @@ L.Routing.errorControl(control).addTo(map);
 &nbsp; IMPORTANT: SET YOUR OWN MAPBOX KEY PRIOR TO PUBLISHING IN A PRODUCTION SITE.
 -->
 
+<div id="readmeDiv"></div>
 
+<link rel="stylesheet" href="../../css/material_icons.css" />
 </body>
 </html>

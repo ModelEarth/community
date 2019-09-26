@@ -5,7 +5,13 @@
       <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
       <meta name="robots" content="noindex, nofollow">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+
       <style>
+        /* Temporary */
+        .info {
+            display: none;
+        }
+
         html, body {margin:0;padding:0;height:100%;}
         body { position:relative; }
         #map {
@@ -94,26 +100,30 @@
   crossorigin=""></script>
 -->
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
 
-    <script src="https://d3js.org/d3.v5.js"></script>
-    <script src="https://unpkg.com/topojson-client@3"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+<script src="https://d3js.org/d3.v5.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
 
-    <script type="text/javascript" src="DBSCAN/DBSCAN.js"></script>
-    <script type="text/javascript" src="DBSCAN/compute_stat.js"></script>
-    <script type="text/javascript" src="../../js/jquery/zepto.min.js"></script>
-    <script type="text/javascript" src="../../js/common.js"></script>
-    <!--
+<script type="text/javascript" src="DBSCAN/DBSCAN.js"></script>
+<script type="text/javascript" src="DBSCAN/compute_stat.js"></script>
+<script type="text/javascript" src="../../js/jquery/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/display.js"></script>
+<link rel="stylesheet" href="../../css/display.css" />
+<script type="text/javascript" src="../../js/common.js"></script>
+<!--
 
-        https://datascape.github.io/community/map/zcta/states/Georgia.topo.json
-    -->
-    <link rel="stylesheet" href="../../css/community.css" />
-    
+    https://datascape.github.io/community/map/zcta/states/Georgia.topo.json
+-->
+<link rel="stylesheet" href="../../css/community.css" />
 
-    </head>
-	<body>
+
+</head>
+<body>
+<div id="header"></div>
+<div style="height:60px"></div>
 
     <script>
     $(document).ready(function () {
@@ -959,5 +969,6 @@ d3.csv('../../../state/leaflet/postcode_data.csv', function(d) {
 
 </script>
 
+<link rel="stylesheet" href="../../css/material_icons.css" />
 </body>
 </html>
