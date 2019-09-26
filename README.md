@@ -8,7 +8,7 @@ Data prep for [Sustainable Georgia Communities Challenge - Spring and Fall 2020]
 
 1. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
 
-2. Detailed report for each community listing environmental impact of production choices.  
+2. Detailed [Goods & Services Report](samples/dataset) for each community listing environmental impact of production choices.  
 
 ### Projects
 
