@@ -17,8 +17,8 @@ https://stategov.github.io/us/bea/USEEIOv1.1_FinalDemand.csv
 
 #### Bureau of Economic Analysis (BEA) - <span style='white-space:nowrap'>Industry Sectors</span>
 Report sample under development  
-[Demand Data](USEEIOv1_1_FinalDemand.csv) - Totals are currently not displayed.  
-<span style='white-space: nowrap;'>[USEEIO Data](USEEIO.csv)</span> - Needs column names for indexes.  
+[Demand Data](USEEIOv1_1_FinalDemand.csv) - Toggle will be added to show IO total.  
+<span style='white-space: nowrap;'>[USEEIO Data](USEEIO.csv)</span> - Column names will be added for indexes.  
 <!-- http://model.georgia.org/smm-tool-suite/ -->
 
 <!--in Millions-->
