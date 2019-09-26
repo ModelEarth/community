@@ -27,7 +27,9 @@ $(document).ready(function(){
 
  		//climbpath = ""
  		$("#header a[href]").each(function() {
-	      $(this).attr("href", climbpath + $(this).attr('href'));
+ 			if(!$(this).attr("href").toLowerCase().indexOf("http") >= 0){
+	      		$(this).attr("href", climbpath + $(this).attr('href'));
+	  		}
 	    })
  		$("#header img[src]").each(function() {
 	      $(this).attr("src", climbpath + $(this).attr('src'));
