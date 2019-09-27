@@ -19,7 +19,7 @@ Prep for the EPA's sustainable community model building events in 2020. [Learn m
 
 1. Development using output from the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Static CSV files will be generated.  
 
-2. Detailed [Goods & Services Report](samples/dataset) for each community listing environmental impact of production choices.  Pull samples from [EPA API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
+2. Detailed [Goods & Services Report](samples/dataset) for each community listing environmental impact of production choices.   
 
 3. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
 
