@@ -1,8 +1,5 @@
 # Community Model Builder
 
-
-
-
 Prep for the EPA's sustainable community model building events in 2020. [Learn more](https://model.georgia.org/competition/).  
 
 [Starter Samples](samples/)  
@@ -17,7 +14,7 @@ Prep for the EPA's sustainable community model building events in 2020. [Learn m
 
 ### Summary
 
-1. Development using output from the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Static CSV files will be generated.  
+1. Development using output from the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Static CSV files will be generated for demand vectors (Food System and Full System). 
 
 2. Detailed [Goods & Services Report](samples/dataset) for each community listing environmental impact of production choices.   
 
@@ -25,9 +22,9 @@ Prep for the EPA's sustainable community model building events in 2020. [Learn m
 
 ### Projects
 
-1. Activate Firebase hosting  
+1. Activate Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832).  
 
-2. Add D3.js heatmap colors from USEEIO data to [Goods & Services Report](samples/dataset)
+2. Add D3.js heatmap colors from USEEIO data to [Goods & Services Report](samples/dataset).
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
 
 3. Move [Georgia Recycling data](https://data.georgia.org/#processors) to Leaflet map layers.
