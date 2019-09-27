@@ -1,41 +1,50 @@
 # Community Model Builder
 
-Data prep for [Sustainable Georgia Communities Challenge - Spring and Fall 2020](https://model.georgia.org).  
+Data prep for:     
+[<b>Spring 2020</b> - Georgia's Sustainable Communities App Design Competition](https://model.georgia.org/competition)  
+[<b>Fall 2020</b> - Code for America Sustainable Communities Hackathon](https://www.codeforamerica.org/) - not yet formalized  
+
+<!--- EPA and Code for America--> 
+
 
 [Starter Samples](samples/)  
 
 ### Summary
 
-1. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
+1. Development using output from the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Static CSV files will be generated.  
 
-2. Detailed [Goods & Services Report](samples/dataset) for each community listing environmental impact of production choices.  
+2. Detailed [Goods & Services Report](samples/dataset) for each community listing environmental impact of production choices.  Pull samples from [EPA API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
+
+3. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
 
 ### Projects
 
-1. Add D3.js heatmap colors from USEEIO data to [Goods & Services Report](samples/dataset)
+1. Activate Firebase hosting  
+
+2. Add D3.js heatmap colors from USEEIO data to [Goods & Services Report](samples/dataset)
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
 
-2. Move [Georgia Recycling data](https://data.georgia.org/#processors) to Leaflet map layers.
+3. Move [Georgia Recycling data](https://data.georgia.org/#processors) to Leaflet map layers.
 
-3. Use Python to generate a CSV file with employment and industries for each zip code using [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html).
+4. Use Python to generate a CSV file with employment and industries for each zip code using [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html).
 
-4. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
+5. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
 
-5. Use Gatsby with a free alternative to Forestry.io to edit content on GitHub.  
+6. Use Gatsby (with a free alternative to Forestry.io) to edit content on GitHub.  
 
-6. Highlight <a href="smartdata">Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
+7. Highlight <a href="smartdata">Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
 
-7. Include [windy.com](windy.com) layer using their [API for Leaflet](https://github.com/windycom/API).
+8. Include [windy.com](windy.com) layer using their [API for Leaflet](https://github.com/windycom/API).
 
-8. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
+9. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
 
-9. Display [Farm Fresh - Federal USDA location data merged for Aglanta](farmfresh/ga) location on Leaflet map.  
+10. Display [Farm Fresh - Federal USDA location data merged for Aglanta](farmfresh/ga) location on Leaflet map.  
 
-10. Update [NAICS Industry Data](industries) data.
+11. Update [NAICS Industry Data](industries) data.
 
-11. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
+12. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
 
-12. Cross-relate BEA Codes, NAICS industries and HS Codes.  
+13. Cross-relate BEA Codes, NAICS industries (and HS Codes).  
  
 <!--
 	12. Include elected officials for districts, zip codes or counties.
@@ -46,7 +55,57 @@ Data prep for [Sustainable Georgia Communities Challenge - Spring and Fall 2020]
 <hr>
 <br>
  
+# About Model
 
+BEA data is provided in 12, 71 and 400 sectors (industries).  
+71 sector data is provided annually.  
+
+The "Use Table" relates rows of goods and services to industries.  
+
+Clone, open Anaconda > Jupyter Notebook > Go to:
+
+ http://localhost:8889/tree/Data/USEEIO_API/examples
+
+Use with key in header
+https://api.edap-cluster.com/useeio/api
+
+Change to
+https://smmtool.app.cloud.gov/api/
+
+Note, these names will change by end of year USEEIO and GAUSEEIO.
+
+# #5 - Top 10 inputs to produce soy bean commodity.
+
+Sum of inputs = intermediate consumption
+
+Anything less than $1 is the wages, tax and profit.
+
+A matrix does not include wages (compensation), taxes nor gross opperating surplus (profits) 
+= Value Added (is the sum of these 3)
+
+B matrix = emission per dollar
+Total industry (emmission) / output 
+
+
+D and U matrix are the results
+
+#13 #See the demand vectors available for the model in their JSON format
+
+Get Demands.  Then at bottom we pass this json object back to the calculate query.
+
+
+
+Scale population to size of community (they have same rate of consumation as average person)
+
+
+
+
+This will not be done during the event
+1. Use GO to compile
+
+
+
+https://github.com/usepa/useeio_api
  
 
 [Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
