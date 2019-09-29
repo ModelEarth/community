@@ -3,6 +3,11 @@
 Prep for the EPA's sustainable community model building events in 2020. [Learn more](https://model.georgia.org/competition/).  
 
 [Starter Samples](samples/)  
+
+[Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
+
+[Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
+
 <br>
 
 ### Schedule  
@@ -61,9 +66,13 @@ Prep for the EPA's sustainable community model building events in 2020. [Learn m
 # About Model
 
 BEA data is provided in 12, 71 and 400 sectors (industries).  
-71 sector data is provided annually.  
+71 sector data is provided annually, 400 sector data is provided every 5 years.  
+
+[https://github.com/usepa/useeio_api](https://github.com/usepa/useeio_api)  
 
 The "Use Table" relates rows of goods and services to industries.  
+
+#### Setup Steps
 
 Clone, open Anaconda > Jupyter Notebook > Go to:
 
@@ -75,9 +84,13 @@ https://api.edap-cluster.com/useeio/api
 Change to
 https://smmtool.app.cloud.gov/api/
 
-Note, these names will change by end of year USEEIO and GAUSEEIO.
+Note, the API names USEEIO and GAUSEEIO will change by the end 2019.
 
-# #5 - Top 10 inputs to produce soy bean commodity.
+#From Python Examples
+
+[Example Jupyter notebook](https://github.com/usepa/useeio_api/wiki/Use-the-API)  
+
+5) Top 10 inputs to produce soy bean commodity.
 
 Sum of inputs = intermediate consumption
 
@@ -92,7 +105,7 @@ Total industry (emmission) / output
 
 D and U matrix are the results
 
-#13 #See the demand vectors available for the model in their JSON format
+13) See the demand vectors available for the model in their JSON format
 
 Get Demands.  Then at bottom we pass this json object back to the calculate query.
 
@@ -103,17 +116,14 @@ Scale population to size of community (they have same rate of consumation as ave
 
 
 
-This will not be done during the event
-1. Use GO to compile
+# Deeper Dive (Beyond the model building event)
+
+Use GO to compile API
 
 
-
-https://github.com/usepa/useeio_api
  
+---
 
-[Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
-
-[Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
 
 
 
