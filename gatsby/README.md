@@ -1,6 +1,6 @@
 # Gatsby Newsroom
 
-Implementation notes  
+Implementation notes.<!-- Michael https://github.com/mdb1710 -->
 
 ## Initial Setup
 
