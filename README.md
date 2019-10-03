@@ -38,7 +38,9 @@ Prep for the EPA's sustainable community model building events in 2020. [Learn m
 
 5. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
 
-6. Use Gatsby (with a free alternative to Forestry.io) to edit content on GitHub.  
+6. Use Gatsby (with a free alternative to Forestry.io) to edit content on GitHub. 
+Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> for GraphQL. Faster dev than 
+point-to-point nature of REST endpoints.  
 
 7. Highlight <a href="smartdata">Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
 
@@ -124,6 +126,9 @@ Use GO to compile API
  
 ---
 
-
+<!--
+There is growing trend across industry to trace the entire supply chain. 
+Responsible sourcing allows manufacturers to...
+-->
 
 
