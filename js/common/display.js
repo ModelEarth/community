@@ -12,6 +12,18 @@ function loadMarkupPage(pagePath, divID, target) {
 
 
 $(document).ready(function(){
+
+	if(location.host.indexOf('localhost') < 0) {
+		// Inject style rule
+		  var div = $("<div />", {
+		    html: '&shy;<style>.localonly{display:none}#mapPanel{display:none}</style>'
+		  }).appendTo("body");
+	} else {
+		var div = $("<div />", {
+		    html: '&shy;<style>.localonly{display:block !important}#mapPanel{display:none;}</style>'
+		  }).appendTo("body");
+	}
+
 	// Get the levels below root
  	var foldercount = (location.pathname.split('/').length - 1) - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0);
  	foldercount = foldercount - 1;
