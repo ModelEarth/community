@@ -1,4 +1,4 @@
-// Updates originate in community/js/common.js
+// Updates originate in community/js/common/common.js
 
 function loadParams(paramStr,hashStr) {
   // Priority: 1st hash, 2nd url search
@@ -28,26 +28,11 @@ function loadParams(paramStr,hashStr) {
 var param = loadParams(location.search,location.hash);
 
 function loadMarkupPage(pagePath, divID, target) {
-    d3.text(pagePath, function(data) {
-      var converter = new showdown.Converter({tables:true}),
-      html = converter.makeHtml(data);
-      document.getElementById(divID).innerHTML = html;
-
-      // TO DO: Send _blank through other means or maintain a dataset of links
-        var elems = document.getElementById(divID).getElementsByTagName('a');
-        for (var i = 0; i < elems.length; i++) {
-          // <!--target seems to be encrypted
-          if (elems[i].text.includes("Concept") || elems[i].text.includes("American") || elems[i].text.includes("Additional") 
-            || elems[i].text.includes("Google") || elems[i].text.includes("GitHub") || elems[i].text.includes("Brain") || elems[i].text.includes("Three.js") 
-            || elems[i].text.includes("3D Scatter") || elems[i].text.includes("GPU.js") || elems[i].text.includes("11 JavaScript") 
-            || elems[i].text.includes("Importance") || elems[i].text.includes("Poster") ) {
-            //alert('here')
-            //elems[i].setAttribute('target', "_blank");
-          } else {
-            //elems[i].setAttribute('target', target);
-          }
-        }
-    });
+  d3.text(pagePath).then(function(data) {
+    var converter = new showdown.Converter({tables:true}),
+    html = converter.makeHtml(data);
+    document.getElementById(divID).innerHTML = html;
+  });
 }
 function consoleLog(text,value) {
 
