@@ -1,21 +1,29 @@
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Starter Samples</title>
-  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript" src="../../js/d3/d3.v5.min.js"></script>
-  <script type="text/javascript" src="../../js/common/showdown.min.js"></script>
-  <script type="text/javascript" src="../../js/common/display.js"></script>
-  <link rel="stylesheet" href="../../css/display.css" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Starter Samples</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../../js/d3/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../js/common/showdown.min.js"></script>
+<script type="text/javascript" src="../../js/jquery/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/common/navigation.js"></script>
+<link rel="stylesheet" href="../../css/display.css" />
 </head>
 
 <body style="font-family: Lato, sans-serif;">
+<div id="header"></div>
+<div style="height:60px"></div>
 
 <div style="padding:40px; clear:both; overflow: auto;">
   <div id="readmeDiv"></div>
 </div>
 
+<script>
+  loadMarkupPage("README.md", "readmeDiv", "_parent");
+</script>
+<link rel="stylesheet" href="../../css/material_icons.css" />
 </body>
 </html>

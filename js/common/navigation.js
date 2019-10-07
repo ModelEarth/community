@@ -1,13 +1,15 @@
 // Call from end of page. Every browser then waits for doc ready, without using JQuery.
-loadMarkupPage("README.md", "readmeDiv", "_parent");
+//loadMarkupPage("README.md", "readmeDiv", "_parent");
 
-function loadMarkupPage(pagePath, divID, target) {
-  d3.text(pagePath).then(function(data) {
-    var converter = new showdown.Converter({tables:true}),
-    html = converter.makeHtml(data);
-    document.getElementById(divID).innerHTML = html;
-  });
-}
+
+// Resides in common.js
+//function loadMarkupPage(pagePath, divID, target) {
+//  d3.text(pagePath).then(function(data) {
+//    var converter = new showdown.Converter({tables:true}),
+//    html = converter.makeHtml(data);
+//    document.getElementById(divID).innerHTML = html;
+//  });
+//}
 
 
 
@@ -25,8 +27,8 @@ $(document).ready(function(){
 	}
 
 	// Get the levels below root
- 	var foldercount = (location.pathname.split('/').length - 1) - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0);
- 	foldercount = foldercount - 1;
+ 	var foldercount = (location.pathname.split('/').length - 1); // - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0) // Removed because ending with slash or filename does not effect levels. Increased -1 to -2.
+ 	foldercount = foldercount - 2;
  	var climbcount = foldercount;
  	if(location.host.indexOf('localhost') >= 0) {
  		climbcount = foldercount - 0;
