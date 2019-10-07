@@ -1,3 +1,4 @@
-Final demand in $ for each of the goods and services for the US in 2007, and the sector codes and names are already separated.
+# County Map
 
-From Wes 
+Regions from Carto county_regions table. Reduced from 310K to 3K by removing the_geom polygon colum.
+Using topojson instead. 
