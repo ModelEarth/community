@@ -97,11 +97,13 @@ var promises = [
   // CSV file contains: name,county_num,economic_region,wia_region
   //d3.csv("topo/GA_county_regions.csv", function(d) { 
 
+  // TODO: Add topo/GA-13-georgia-counties.json topo load as a promise also, so both load simultaneous.
+
   d3.csv("topo/GA_county_regions.csv").then(function(d) {
 
     // Similar to aside
     dp = {
-      numColumns: ["name","county_num","economic_region","wia_region"],
+      numColumns: ["county_num","economic_region","wia_region"], // Omit "name" since not number.
       valueColumn: "economic_region",
       //valueColumn: "wia_region",
       //scaleType: "scaleQuantile",
@@ -235,8 +237,16 @@ function ready([us]) {
               }
 
               
+              dp.data.forEach(function(datarow) { // For all the county rows
 
-              map.addLayer(OpenStreetMap_BlackAndWhite)
+                console.log("name: " + datarow.name);
+                console.log("economic_region: " + datarow.economic_region);
+              })
+
+              //map.addLayer(OpenStreetMap_BlackAndWhite)
+
+
+
               // try and catch json parsing of the responseText
               //try {
                     topoob = JSON.parse(req.responseText)
@@ -266,8 +276,8 @@ function ready([us]) {
                         ret.indie = i;
                         return ret
                       });
-                    geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature})
-                .addTo(map);
+                    geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature}).addTo(map);
+
                     console.log('neigh', neighbors)
                  //}
                 //catch(e){
