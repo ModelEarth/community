@@ -85,7 +85,9 @@ var geojson;
 
 var co = d3.scaleOrdinal(d3.schemeCategory10); // More muted blue
 
+var dataParameters = []; 
 var dp = {};
+var layerControl = false;
 
 // Similar to maps/poverty
 // Get colors for map regions
@@ -97,11 +99,6 @@ var promises = [
 
   d3.csv("topo/GA_county_regions.csv").then(function(d) {
 
-    // Should name or county_num be related?
-    region.set(d.county_num, +d.economic_region); /* Including + converts to number */
-
-    console.log("region: " + region)
-
     // Similar to aside
     dp = {
       numColumns: ["name","county_num","economic_region","wia_region"],
@@ -112,9 +109,16 @@ var promises = [
     }
     dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
     dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+    dp.group = L.layerGroup();
+    dataParameters.push(dp);
 
     console.log("dp.data: " + dp.data)
     addLegend(dp.scale, dp.scaleType, dp.name);
+
+    // Similar to maps/pverty
+    // Should name or county_num be related?
+    region.set(dp.county_num, +dp.economic_region); /* Including + converts to number */
+    console.log("region: " + region);
 
   })
 
@@ -122,8 +126,13 @@ var promises = [
 Promise.all(promises).then(ready)
 
 function ready([us]) {
-  //alert("the region: " + region.get(100))
 
+
+
+  console.log("the region: " + region.get(114))
+
+  console.log("region object: ");
+  console.dir(region);
 
   /// moved here from window.onload below
         var neighbors
@@ -138,6 +147,8 @@ function ready([us]) {
             }) + 1 | 0);
 
 
+            //d.Region = region.get(feat.properties.COUNTYFP);
+
             // STATEFP":"13","COUNTYFP":
 
             console.log("feat: " + feat.indie); // 0 to 158
@@ -145,6 +156,9 @@ function ready([us]) {
             console.log("feat.properties.COUNTYFP " + feat.properties.COUNTYFP);
 
             console.log("region: " + region.get(feat.properties.COUNTYFP))
+            //console.log("region: " + region.get(feat.indie))
+
+            //console.log("region2: " + dp.economic_region.get(feat.properties.COUNTYFP))
 
             var coco = co(feat.color = region.get(feat.properties.COUNTYFP));
             //var coco = co(feat.indie);
@@ -184,12 +198,34 @@ function ready([us]) {
 
               var layer = "terrain";
 
+              var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                  '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                  'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                  mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+
+              var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+                  satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
+                  streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+
               var map = new L.Map('mapcon',
               {
-                  scrollWheelZoom:false,
+                  scrollWheelZoom: true,
                   center: new L.LatLng(lat,lon),
-                  zoom: zoom
+                  zoom: zoom,
+                  layers: [grayscale, dataParameters[0].group]
               });
+              var baseLayers = {
+                "Grayscale": grayscale,
+                "Streets": streets,
+                "Satellite": satellite
+              };
+              var overlays = {};
+              dataParameters.forEach(function(ele) {
+                overlays[ele.name] = ele.group;
+              })
+              if(layerControl === false) {
+                layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+              }
 
               var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
                   maxZoom: 18,
