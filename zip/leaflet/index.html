@@ -492,7 +492,7 @@
 
                         geojson = L.geoJson(cluster_data, {style:style, onEachFeature: onEachFeature}).addTo(map);
                         
-                        clusterBuckets();
+                        clusterBuckets(); // Stats under colored bar for each cluster
 
 
                         // FETCH MAP POINTS
@@ -587,7 +587,7 @@
 
                          // Activate and set colors from clusters
                          loadPlaces();
-                    });
+                    }); // end d3.csv load of zipcode census data
                     console.log('neigh', neighbors);
 
                 // LH commented out try-catch to watch for point errors. When do we need this?
