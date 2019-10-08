@@ -6,9 +6,15 @@
   body {
     margin: 0px;
   }
+  .mapHolder {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
   .map {
     width:100%;
-    height: 100%;
+    heightX: 100%;
+    flex: 1 1 auto;
     }
   .info {
       padding: 6px 8px;
@@ -21,6 +27,15 @@
   .info h4 {
       margin: 0 0 5px;
       color: #777;
+  }
+  #allLegends {
+    position: absolute;
+    bottom:30px;
+    left:15px;
+    z-index:999999;
+    background-color: #fff;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
   }
 </style>
 
@@ -43,304 +58,318 @@ TO DO: Move leaflet and topo .js files locallly.
 
 <body>
 <div id="header"></div>
+
+<!--
+BEA Arts Data
+https://nasaa-arts.org/nasaa_research/creative-economy-state-profiles/
+-->
+
+<!--
+ Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
+ -->
+<div class="mapHolder">
 <div style="height:60px"></div>
+<div class="map" id="mapcon"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
+</div>
 
-    <!--
-    BEA Arts Data
-    https://nasaa-arts.org/nasaa_research/creative-economy-state-profiles/
-    -->
+<div id="allLegends"></div>
 
-    <!--
-     Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
-     -->
-    <div class="map" id="mapcon"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
-    <div id="allLegends"></div>
+<script type="text/javascript">
 
-    <script type="text/javascript">
+var neighbors;
+var topodata = {};
+var geojson;
+//var co = d3.scaleOrdinal(d3.schemeCategory20b); // Stopped working when switching from v4 to v5.
 
-    var neighbors;
-    var topodata = {};
-    var geojson;
-    //var co = d3.scaleOrdinal(d3.schemeCategory20b); // Stopped working when switching from v4 to v5.
-    
-    //var co = d3.scaleOrdinal(); // Nice blue, but no rainbow
+//var co = d3.scaleOrdinal(); // Nice blue, but no rainbow
 
-    var co = d3.scaleOrdinal(d3.schemeCategory10); // More muted blue
+var co = d3.scaleOrdinal(d3.schemeCategory10); // More muted blue
 
-    var dp = {};
+var dp = {};
 
-    // Similar to maps/poverty
-    // Get colors for map regions
-    var region = d3.map();
-    var promises = [
+// Similar to maps/poverty
+// Get colors for map regions
+var region = d3.map();
+var promises = [
 
-      // CSV file contains: name,county_num,economic_region,wia_region
-      //d3.csv("topo/GA_county_regions.csv", function(d) { 
+  // CSV file contains: name,county_num,economic_region,wia_region
+  //d3.csv("topo/GA_county_regions.csv", function(d) { 
 
-      d3.csv("topo/GA_county_regions.csv").then(function(d) {
+  d3.csv("topo/GA_county_regions.csv").then(function(d) {
 
-        // Should name or county_num be related?
-        region.set(d.county_num, +d.economic_region); /* Including + converts to number */
+    // Should name or county_num be related?
+    region.set(d.county_num, +d.economic_region); /* Including + converts to number */
 
-        console.log("region: " + region)
+    console.log("region: " + region)
 
-        // Similar to aside
-        dp = {
-          numColumns: ["name","county_num","economic_region","wia_region"],
-          valueColumn: "economic_region",
-          //valueColumn: "wia_region",
-          //scaleType: "scaleQuantile",
-          scaleType: "scaleOrdinal",
-        }
-        dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
-        dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-
-        console.log("dp.data: " + dp.data)
-        addLegend(dp.scale, dp.scaleType, dp.name);
-
-      })
-
-    ]
-    Promise.all(promises).then(ready)
-
-    function ready([us]) {
-      //alert("the region: " + region.get(100))
-
-
-      /// moved here from window.onload below
-            var neighbors
-
-            function applyStyle(feat, i){
-                var i = feat.indie;
-
-                var coco1 = co(feat.color = d3.max(neighbors[i], function(n) {
-                  console.log("n: " + n)
-                  console.log(topodata.features[n])
-                  return topodata.features[n].color; 
-                }) + 1 | 0);
-
-
-                // STATEFP":"13","COUNTYFP":
-
-                console.log("feat: " + feat.indie); // 0 to 158
-
-                console.log("feat.properties.COUNTYFP " + feat.properties.COUNTYFP);
-
-                console.log("region: " + region.get(feat.properties.COUNTYFP))
-
-                var coco = co(feat.color = region.get(feat.properties.COUNTYFP));
-                //var coco = co(feat.indie);
-
-                return {
-                    fillColor: coco,
-                    fillOpacity: .3,
-                    weight: .3
-                }
-             }
-
-            var req = new XMLHttpRequest();
-                // Topo data source
-                //https://github.com/deldersveld/topojson/tree/master/countries/us-states
-                var url = 'topo/GA-13-georgia-counties.json'
-
-                    req.open('GET', url, true);
-                    req.onreadystatechange = handler;
-                    req.send();
-
-                var topoob = {};
-                topodata = {};
-                function handler(){
-
-                if(req.readyState === XMLHttpRequest.DONE){
-
-                  //// USA
-                  //var lat = 38.3;
-                  //var lon = -96.5;
-                  //var zoom = 5;
-
-                  // Georgia
-                  var lat = 32.16;
-                  var lon = -82.90;
-                  var zoom = 7;
-
-                  var layer = "terrain";
-
-                  var map = new L.Map('mapcon',
-                  {
-                      scrollWheelZoom:false,
-                      center: new L.LatLng(lat,lon),
-                      zoom: zoom
-                  });
-
-                  var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-                      maxZoom: 18,
-                      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                  });
-
-                  map.addLayer( OpenStreetMap_BlackAndWhite)//new L.StamenTileLayer(layer));
-                  // try and catch json parsing of the responseText
-                  //try {
-                        topoob = JSON.parse(req.responseText)
-
-                        // Originated in community/map/leaflet/zips-sm.html
-                        // zips_us_topo.json
-                        // {"type":"Topology","objects":{"data":{"type":"GeometryCollection","geometries":[{"type":"Polygon
-
-                        // {"type":"Topology","transform":{"scale":[0.00176728378633945,0.0012459509163533049],"translate":
-
-                        //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
-
-                        //neighbors = topojson.neighbors(topoob.objects.data.geometries);
-                        neighbors = topojson.neighbors(topoob.arcs); // .properties
-
-                        // ADD geometries  see https://observablehq.com/@d3/choropleth
-                        //topodata = topojson.feature(topoob, topoob.objects.data)
-
-                        //topodata = topojson.feature(topoob, topoob.transform)
-                        topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
-
-                        //topodata.features = topodata.features.map(function(fm,i){
-                        topodata.features = topodata.features.map(function(fm,i){
-                            var ret = fm;
-                            //console.log("fm: " + fm.COUNTYFP);
-                            console.log("fm: " + fm.properties.countyfp);
-                            ret.indie = i;
-                            return ret
-                          });
-                        geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature})
-                    .addTo(map);
-                        console.log('neigh', neighbors)
-                     //}
-                    //catch(e){
-                    //  geojson = {};
-                    //   console.log(e)
-                    //}
-                    console.log(topodata)
-
-            /* Rollover effect */
-            function highlightFeature(e){
-              var layer = e.target;
-              layer.setStyle({
-                weight: 3,
-                  color: '#665',
-                dashArray: '',
-                fillOpacity: .7})
-                 if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-                              layer.bringToFront();
-                             }
-              // Send text to side box
-              info.update(layer.feature.properties);
-            }
-
-            function resetHighlight(e){
-              geojson.resetStyle(e.target);
-              info.update();
-            }
-
-            function zoomToFeature(e) {
-                map.fitBounds(e.target.getBounds());
-            }
-
-            function onEachFeature(feature, layer){
-              layer.on({
-                    mouseover: highlightFeature,
-                    mouseout: resetHighlight, 
-                    click: zoomToFeature
-              })
-            }
-
-
-            var info = L.control();
-            info.onAdd = function(map) {
-                this._div = L.DomUtil.create('div', 'info');
-                this.update();
-                return this._div;
-            }
-
-            info.update = function(props){
-                // National
-                //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
-                
-                this._div.innerHTML = "<h4>County</h4>" + (props ? props.NAME + "<br>" : "Hover over map<br>") + (props ? props.COUNTYFP : "")
-                
-
-                // TO fix if using state - id is not defined
-                // Also, other state files may need to have primary node renamed to "data"
-                //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
-            }
-
-            info.addTo(map);
-
-
-
-          }
-       }
-
-      /// end moved
-
+    // Similar to aside
+    dp = {
+      numColumns: ["name","county_num","economic_region","wia_region"],
+      valueColumn: "economic_region",
+      //valueColumn: "wia_region",
+      //scaleType: "scaleQuantile",
+      scaleType: "scaleOrdinal",
     }
+    dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
+    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+
+    console.log("dp.data: " + dp.data)
+    addLegend(dp.scale, dp.scaleType, dp.name);
+
+  })
+
+]
+Promise.all(promises).then(ready)
+
+function ready([us]) {
+  //alert("the region: " + region.get(100))
+
+
+  /// moved here from window.onload below
+        var neighbors
+
+        function applyStyle(feat, i){
+            var i = feat.indie;
+
+            var coco1 = co(feat.color = d3.max(neighbors[i], function(n) {
+              console.log("n: " + n)
+              console.log(topodata.features[n])
+              return topodata.features[n].color; 
+            }) + 1 | 0);
+
+
+            // STATEFP":"13","COUNTYFP":
+
+            console.log("feat: " + feat.indie); // 0 to 158
+
+            console.log("feat.properties.COUNTYFP " + feat.properties.COUNTYFP);
+
+            console.log("region: " + region.get(feat.properties.COUNTYFP))
+
+            var coco = co(feat.color = region.get(feat.properties.COUNTYFP));
+            //var coco = co(feat.indie);
+
+            return {
+                fillColor: coco,
+                fillOpacity: .3,
+                weight: .3
+            }
+         }
+
+        var req = new XMLHttpRequest();
+            // Topo data source
+            //https://github.com/deldersveld/topojson/tree/master/countries/us-states
+            var url = 'topo/GA-13-georgia-counties.json'
+
+                req.open('GET', url, true);
+                req.onreadystatechange = handler;
+                req.send();
+
+            var topoob = {};
+            topodata = {};
+            function handler(){
+
+            if(req.readyState === XMLHttpRequest.DONE){
+
+              //// USA
+              //var lat = 38.3;
+              //var lon = -96.5;
+              //var zoom = 5;
+
+              // Georgia
+              var lat = 32.7;
+              var lonX = -82.90;
+              var lon = -81.8;
+              var zoom = 7;
+
+              var layer = "terrain";
+
+              var map = new L.Map('mapcon',
+              {
+                  scrollWheelZoom:false,
+                  center: new L.LatLng(lat,lon),
+                  zoom: zoom
+              });
+
+              var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                  maxZoom: 18,
+                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+              });
+
+              map.addLayer( OpenStreetMap_BlackAndWhite)//new L.StamenTileLayer(layer));
+              // try and catch json parsing of the responseText
+              //try {
+                    topoob = JSON.parse(req.responseText)
+
+                    // Originated in community/map/leaflet/zips-sm.html
+                    // zips_us_topo.json
+                    // {"type":"Topology","objects":{"data":{"type":"GeometryCollection","geometries":[{"type":"Polygon
+
+                    // {"type":"Topology","transform":{"scale":[0.00176728378633945,0.0012459509163533049],"translate":
+
+                    //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
+
+                    //neighbors = topojson.neighbors(topoob.objects.data.geometries);
+                    neighbors = topojson.neighbors(topoob.arcs); // .properties
+
+                    // ADD geometries  see https://observablehq.com/@d3/choropleth
+                    //topodata = topojson.feature(topoob, topoob.objects.data)
+
+                    //topodata = topojson.feature(topoob, topoob.transform)
+                    topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
+
+                    //topodata.features = topodata.features.map(function(fm,i){
+                    topodata.features = topodata.features.map(function(fm,i){
+                        var ret = fm;
+                        //console.log("fm: " + fm.COUNTYFP);
+                        console.log("fm: " + fm.properties.countyfp);
+                        ret.indie = i;
+                        return ret
+                      });
+                    geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature})
+                .addTo(map);
+                    console.log('neigh', neighbors)
+                 //}
+                //catch(e){
+                //  geojson = {};
+                //   console.log(e)
+                //}
+                console.log(topodata)
+
+        /* Rollover effect */
+        function highlightFeature(e){
+          var layer = e.target;
+          layer.setStyle({
+            weight: 3,
+              color: '#665',
+            dashArray: '',
+            fillOpacity: .7})
+             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                          layer.bringToFront();
+                         }
+          // Send text to side box
+          info.update(layer.feature.properties);
+        }
+
+        function resetHighlight(e){
+          geojson.resetStyle(e.target);
+          info.update();
+        }
+
+        function zoomToFeature(e) {
+            map.fitBounds(e.target.getBounds());
+        }
+
+        function onEachFeature(feature, layer){
+          layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight, 
+                click: zoomToFeature
+          })
+        }
+
+
+        var info = L.control();
+        info.onAdd = function(map) {
+            this._div = L.DomUtil.create('div', 'info');
+            this.update();
+            return this._div;
+        }
+
+        info.update = function(props){
+            // National
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
+            
+            this._div.innerHTML = "<h4>County</h4>" + (props ? props.NAME + "<br>" : "Hover over map<br>") + (props ? props.COUNTYFP : "")
+            
+
+            // TO fix if using state - id is not defined
+            // Also, other state files may need to have primary node renamed to "data"
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
+        }
+
+        info.addTo(map);
 
 
 
-
-		window.onload = function () {
-
-      // Moved to function ready so regions are availble.
-
-      // TO DO: Try moving tile loading portion back here for fast initial display.
-        
+      }
    }
 
-  /////////////////////////////////////////
-  // helper functions
-  /////////////////////////////////////////
-  function addLegend(scale, scaleType, title) {
-    var svg = d3.select("#allLegends")
-      .append("div")
-        .attr("class", "legend "  + title)
-      .append("svg")
-        .style("width", 200)
-        .style("height", 300);
+  /// end moved
 
-    svg.append("g")
-        .attr("class", "legend")
-        .attr("transform", "translate(20,20)");
+}
 
-    var legend = d3.legendColor()
-      .labelFormat(d3.format(".2f"))
-      .title(title);
-  
-    if (scaleType === "scaleThreshold") {
-      legend = legend.labels(d3.legendHelpers.thresholdLabels);
-    }
 
-    legend.scale(scale);  
 
-    svg.select("g.legend")
-      .call(legend);
-  }
 
-  function readCsvData(_data, columnsNum, valueCol) {
-    //console.log(_data);
+window.onload = function () {
+
+  // Moved to function ready so regions are availble.
+
+  // TO DO: Try moving tile loading portion back here for fast initial display.
     
-    if (typeof columnsNum !== "undefined") {
-      _data.forEach( function (row) {
-        //row = removeWhiteSpaces(row);
-        convertToNumber(row, columnsNum);
-      });
-    }
-    console.log(_data);
-    return _data;
+}
+
+/////////////////////////////////////////
+// helper functions
+/////////////////////////////////////////
+function addLegend(scale, scaleType, title) {
+  var svg = d3.select("#allLegends")
+    .append("div")
+      .attr("class", "legend "  + title)
+    .append("svg")
+      .attr("id", "legendSVG1")
+      //.style("width", 120)
+      //.style("height", 270);
+      //.style("overflow","visible");
+
+  svg.append("g") // Inner div
+      .attr("id", "legend1")
+      .attr("class", "legend")
+      .attr("transform", "translate(20,20)");
+
+  var legend = d3.legendColor()
+    .labelFormat(d3.format(".2f"))
+    .title(title);
+
+  if (scaleType === "scaleThreshold") {
+    legend = legend.labels(d3.legendHelpers.thresholdLabels);
   }
-  function convertToNumber(d, _columnsNum) {
-    for (var perm in d) {
-      if (_columnsNum.indexOf(perm) > -1)
-        if (Object.prototype.hasOwnProperty.call(d, perm)) {
-          d[perm] = +d[perm];
-        }
-      }  
-    return d;
-  } 
+
+  legend.scale(scale);  
+
+  svg.select("g.legend")
+    .call(legend);
+
+  var legendSVG = document.getElementById("legendSVG1");
+  var gElement = document.getElementById("legend1");
+  var bbox = gElement.getBBox();
+  //gAllLegends.style("height", gElement.height);
+  legendSVG.setAttribute("height", bbox.height + 32);
+  legendSVG.setAttribute("width", bbox.width + 40);
+}
+
+function readCsvData(_data, columnsNum, valueCol) {
+  //console.log(_data);
+  
+  if (typeof columnsNum !== "undefined") {
+    _data.forEach( function (row) {
+      //row = removeWhiteSpaces(row);
+      convertToNumber(row, columnsNum);
+    });
+  }
+  console.log(_data);
+  return _data;
+}
+function convertToNumber(d, _columnsNum) {
+  for (var perm in d) {
+    if (_columnsNum.indexOf(perm) > -1)
+      if (Object.prototype.hasOwnProperty.call(d, perm)) {
+        d[perm] = +d[perm];
+      }
+    }  
+  return d;
+} 
 
 // see also: http://d3indepth.com/scales/
 function getScale(data, scaleType, valueCol) {
