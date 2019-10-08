@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<title>Counties</title>
 <style>
   body {
     margin: 0px;
@@ -31,13 +32,15 @@ TO DO: Move leaflet and topo .js files locallly.
 <script src="../../../js/d3/d3.v5.min.js"></script>
 <script src="https://unpkg.com/topojson-client@3"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+
 <script type="text/javascript" src="../../../js/common/showdown.min.js"></script>
 <script type="text/javascript" src="../../../js/jquery/zepto.min.js"></script>
 <script type="text/javascript" src="../../../js/common/navigation.js"></script>
 <script type="text/javascript" src="../../../js/common/common.js"></script>
 <link rel="stylesheet" href="../../../css/display.css" />
-
 </head>
+
 <body>
 <div id="header"></div>
 <div style="height:60px"></div>
@@ -51,6 +54,7 @@ TO DO: Move leaflet and topo .js files locallly.
      Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
      -->
     <div class="map" id="mapcon"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
+    <div id="allLegends"></div>
 
     <script type="text/javascript">
 
@@ -63,6 +67,7 @@ TO DO: Move leaflet and topo .js files locallly.
 
     var co = d3.scaleOrdinal(d3.schemeCategory10); // More muted blue
 
+    var dp = {};
 
     // Similar to maps/poverty
     // Get colors for map regions
@@ -70,25 +75,47 @@ TO DO: Move leaflet and topo .js files locallly.
     var promises = [
 
       // CSV file contains: name,county_num,economic_region,wia_region
-      d3.csv("topo/GA_county_regions.csv", function(d) { 
+      //d3.csv("topo/GA_county_regions.csv", function(d) { 
+
+      d3.csv("topo/GA_county_regions.csv").then(function(d) {
+
         // Should name or county_num be related?
-        region.set(d.name, +d.economic_region); /* Prepending + converts to number */
+        region.set(d.county_num, +d.economic_region); /* Including + converts to number */
+
+        console.log("region: " + region)
+
+        // Similar to aside
+        dp = {
+          numColumns: ["name","county_num","economic_region","wia_region"],
+          valueColumn: "economic_region",
+          //valueColumn: "wia_region",
+          //scaleType: "scaleQuantile",
+          scaleType: "scaleOrdinal",
+        }
+        dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
+        dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+
+        console.log("dp.data: " + dp.data)
+        addLegend(dp.scale, dp.scaleType, dp.name);
+
       })
 
     ]
     Promise.all(promises).then(ready)
 
     function ready([us]) {
-      //alert(region["Chattahoochee"])
+      //alert("the region: " + region.get(100))
 
 
-      /// moved here from window.onload
+      /// moved here from window.onload below
             var neighbors
 
-            function style(feat, i){
+            function applyStyle(feat, i){
                 var i = feat.indie;
 
                 var coco1 = co(feat.color = d3.max(neighbors[i], function(n) {
+                  console.log("n: " + n)
+                  console.log(topodata.features[n])
                   return topodata.features[n].color; 
                 }) + 1 | 0);
 
@@ -97,10 +124,12 @@ TO DO: Move leaflet and topo .js files locallly.
 
                 console.log("feat: " + feat.indie); // 0 to 158
 
-                //console.log("feat.COUNTYFP " + feat.COUNTYFP);
+                console.log("feat.properties.COUNTYFP " + feat.properties.COUNTYFP);
 
-                //var coco = co(feat.color = region.get(feat.indie));
-                var coco = co(feat.indie);
+                console.log("region: " + region.get(feat.properties.COUNTYFP))
+
+                var coco = co(feat.color = region.get(feat.properties.COUNTYFP));
+                //var coco = co(feat.indie);
 
                 return {
                     fillColor: coco,
@@ -174,10 +203,11 @@ TO DO: Move leaflet and topo .js files locallly.
                         topodata.features = topodata.features.map(function(fm,i){
                             var ret = fm;
                             //console.log("fm: " + fm.COUNTYFP);
+                            console.log("fm: " + fm.properties.countyfp);
                             ret.indie = i;
                             return ret
                           });
-                        geojson = L.geoJson(topodata, {style:style, onEachFeature: onEachFeature})
+                        geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature})
                     .addTo(map);
                         console.log('neigh', neighbors)
                      //}
@@ -260,6 +290,84 @@ TO DO: Move leaflet and topo .js files locallly.
       // TO DO: Try moving tile loading portion back here for fast initial display.
         
    }
+
+  /////////////////////////////////////////
+  // helper functions
+  /////////////////////////////////////////
+  function addLegend(scale, scaleType, title) {
+    var svg = d3.select("#allLegends")
+      .append("div")
+        .attr("class", "legend "  + title)
+      .append("svg")
+        .style("width", 200)
+        .style("height", 300);
+
+    svg.append("g")
+        .attr("class", "legend")
+        .attr("transform", "translate(20,20)");
+
+    var legend = d3.legendColor()
+      .labelFormat(d3.format(".2f"))
+      .title(title);
+  
+    if (scaleType === "scaleThreshold") {
+      legend = legend.labels(d3.legendHelpers.thresholdLabels);
+    }
+
+    legend.scale(scale);  
+
+    svg.select("g.legend")
+      .call(legend);
+  }
+
+  function readCsvData(_data, columnsNum, valueCol) {
+    //console.log(_data);
+    
+    if (typeof columnsNum !== "undefined") {
+      _data.forEach( function (row) {
+        //row = removeWhiteSpaces(row);
+        convertToNumber(row, columnsNum);
+      });
+    }
+    console.log(_data);
+    return _data;
+  }
+  function convertToNumber(d, _columnsNum) {
+    for (var perm in d) {
+      if (_columnsNum.indexOf(perm) > -1)
+        if (Object.prototype.hasOwnProperty.call(d, perm)) {
+          d[perm] = +d[perm];
+        }
+      }  
+    return d;
+  } 
+
+// see also: http://d3indepth.com/scales/
+function getScale(data, scaleType, valueCol) {
+  var scale;
+  if (scaleType === "scaleThreshold") {
+    var min = d3.min(data, function(d) { return d[valueCol]; });
+    var max = d3.max(data, function(d) { return d[valueCol]; });
+    var d = (max-min)/7;
+    scale = d3.scaleThreshold()
+      .domain([min+1*d,min+2*d,min+3*d,min+4*d,min+5*d,min+6*d])
+      .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+  } else if (scaleType === "scaleQuantize") {
+    scale = d3.scaleQuantize()
+      .domain(d3.extent(data, function(d) { return d[valueCol]; }))
+      .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+  } else if (scaleType === "scaleQuantile") {
+    scale = d3.scaleQuantile()
+      .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
+      .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);            
+  } else if (scaleType === "scaleOrdinal") {
+    scale = d3.scaleOrdinal()
+      //.domain(data.map(function(d) { return d[valueCol]; }))
+      .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
+      .range(d3.schemePaired);
+  }
+  return scale;
+}
 
 
   </script>
