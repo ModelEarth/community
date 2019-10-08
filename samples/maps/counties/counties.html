@@ -139,16 +139,18 @@ function ready([us]) {
 
   /// moved here from window.onload below
         var neighbors
+        var cluster_data = [];
 
         function applyStyle(feat, i){
             var i = feat.indie;
 
+            /*
             var coco1 = co(feat.color = d3.max(neighbors[i], function(n) {
               console.log("n: " + n)
               console.log(topodata.features[n])
               return topodata.features[n].color; 
             }) + 1 | 0);
-
+            */
 
             //d.Region = region.get(feat.properties.COUNTYFP);
 
@@ -237,15 +239,7 @@ function ready([us]) {
               }
 
               
-              dp.data.forEach(function(datarow) { // For all the county rows
-
-                console.log("name: " + datarow.name);
-                console.log("economic_region: " + datarow.economic_region);
-              })
-
               //map.addLayer(OpenStreetMap_BlackAndWhite)
-
-
 
               // try and catch json parsing of the responseText
               //try {
@@ -259,7 +253,8 @@ function ready([us]) {
 
                     //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
 
-                    //neighbors = topojson.neighbors(topoob.objects.data.geometries);
+                    // Was used by applyStyle
+                    ////neighbors = topojson.neighbors(topoob.objects.data.geometries);
                     neighbors = topojson.neighbors(topoob.arcs); // .properties
 
                     // ADD geometries  see https://observablehq.com/@d3/choropleth
@@ -268,7 +263,9 @@ function ready([us]) {
                     //topodata = topojson.feature(topoob, topoob.transform)
                     topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
 
+                    // IS THIS BEING USED?
                     //topodata.features = topodata.features.map(function(fm,i){
+                    /*
                     topodata.features = topodata.features.map(function(fm,i){
                         var ret = fm;
                         //console.log("fm: " + fm.COUNTYFP);
@@ -276,9 +273,47 @@ function ready([us]) {
                         ret.indie = i;
                         return ret
                       });
+                    */
+
+                    var limitToState = true; //
+                    dp.data.forEach(function(datarow) { // For each county row containing the region
+                      //console.log("name: " + datarow.name);
+                      //console.log("economic_region: " + datarow.economic_region);
+                      console.log("county_num:: " + datarow.county_num);
+                      
+
+                      var data_by_zipcodeXXX = d3.nest()
+                                  .key(function(d){return d.economic_region;})
+                                  .entries(datarow);
+
+                      var data_by_zipcode = datarow.county_num;
+
+                      if (limitToState) {
+                          topodata.features.forEach(function(d) {
+
+                              //var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                              //var topoID = data_by_zipcode.find(x=>x.key === d.countyfp.replace(/^0+/, ''));
+                              var topoID = d.properties.COUNTYFP;
+                              //console.log("topoID " + topoID);
+                              if (topoID) {
+                                if(datarow.county_num == topoID.replace(/^0+/, '')) {
+                                  //cluster_data.push(datarow); // Topo shape data now has region cateegory
+                                  
+                                  //topodata.features.properties['REGION'] = datarow.economic_region;
+                                }
+                              }
+
+                          });
+                      } else { // Process entire country. Avoiding since too slow.
+
+                      }
+                    })
+
+                    console.log('topodata: ', topodata)
+
                     geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature}).addTo(map);
 
-                    console.log('neigh', neighbors)
+                    //console.log('neigh', neighbors)
                  //}
                 //catch(e){
                 //  geojson = {};

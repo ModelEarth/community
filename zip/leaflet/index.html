@@ -373,10 +373,10 @@
                         var limitToState = true;
                         if (limitToState) {
                             topodata.features.forEach(function(d) {
-                                var search_zip = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
-                                if(search_zip) {
+                                var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                                if(topoID) {
                                     columns.forEach(function(c){
-                                        d[c] = parseFloat(search_zip.values[0][c]);
+                                        d[c] = parseFloat(topoID.values[0][c]);
                                     });
                                     cluster_data.push(d); // Topo shape data now has census attributes added, including zcta
                                 }
@@ -388,10 +388,10 @@
                             zcta_data.forEach(function(d) { // All zips, not just topo shapes of state
 
                                 // Change this, it matches itself
-                                var search_zip = data_by_zipcode.find(x=>x.key === d.zcta.replace(/^0+/, ''));
-                                if(search_zip) {
+                                var topoID = data_by_zipcode.find(x=>x.key === d.zcta.replace(/^0+/, ''));
+                                if(topoID) {
                                     columns.forEach(function(c) {
-                                        d[c] = parseFloat(search_zip.values[0][c]);
+                                        d[c] = parseFloat(topoID.values[0][c]);
                                     });
                                     cluster_data.push(d);
                                 }
@@ -443,7 +443,7 @@
 
                             // 0.01 and 400
                             // Browser debugger: Paused at this line "before potential out-of-memory crash."
-                            // var search_zip = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                            // var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
                             dbscanner = jDBSCAN()
                             .eps(0.01)
                             .minPts(400)
@@ -514,8 +514,8 @@
 
                             places = [];
                             d.forEach(function(d2){
-                                var search_zip = temp.find(x=>x.key === d2.zip);
-                                if(search_zip) {
+                                var topoID = temp.find(x=>x.key === d2.zip);
+                                if(topoID) {
                                     places.push(d2);
                                     //places.cluster = d2.cluster;
                                     places.color = d2.color;
@@ -535,11 +535,11 @@
                                 //console.log("place_data:");
                                 //console.log(place_data);
 
-                                var search_zip = temp.find(x=>x.key === place_data.zip.replace(/^0+/, ''));
-                                if(search_zip) {
-                                    console.log("found zip: " + search_zip); // Not all zips will have a match
+                                var topoID = temp.find(x=>x.key === place_data.zip.replace(/^0+/, ''));
+                                if(topoID) {
+                                    console.log("found zip: " + topoID); // Not all zips will have a match
                                     columns.forEach(function(c){
-                                        place_data[c] = parseFloat(search_zip.values[0][c]);
+                                        place_data[c] = parseFloat(topoID.values[0][c]);
                                     });
 
                                     // Places within the current state:
@@ -576,8 +576,8 @@
                                 places = [];
 
                                 supported_places.forEach(function(d){
-                                    var search_zip = temp.find(x=>x.key === d.zip);
-                                    if(search_zip) {
+                                    var topoID = temp.find(x=>x.key === d.zip);
+                                    if(topoID) {
                                         places.push(d);
                                     }
                                 });
