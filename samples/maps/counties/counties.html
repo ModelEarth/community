@@ -107,6 +107,7 @@ var promises = [
       //scaleType: "scaleQuantile",
       scaleType: "scaleOrdinal",
     }
+    dp.name = "Layer 1";
     dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
     dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
     dp.group = L.layerGroup();
@@ -175,9 +176,9 @@ function ready([us]) {
             //https://github.com/deldersveld/topojson/tree/master/countries/us-states
             var url = 'topo/GA-13-georgia-counties.json'
 
-                req.open('GET', url, true);
-                req.onreadystatechange = handler;
-                req.send();
+            req.open('GET', url, true);
+            req.onreadystatechange = handler;
+            req.send();
 
             var topoob = {};
             topodata = {};
@@ -196,7 +197,7 @@ function ready([us]) {
               var lon = -81.8;
               var zoom = 7;
 
-              var layer = "terrain";
+              //var layer = "terrain";
 
               var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
                   '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -207,6 +208,11 @@ function ready([us]) {
                   satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
                   streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
 
+              var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                  maxZoom: 18,
+                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+              });
+
               var map = new L.Map('mapcon',
               {
                   scrollWheelZoom: true,
@@ -215,9 +221,10 @@ function ready([us]) {
                   layers: [grayscale, dataParameters[0].group]
               });
               var baseLayers = {
-                "Grayscale": grayscale,
-                "Streets": streets,
-                "Satellite": satellite
+                "Open Street Map": OpenStreetMap_BlackAndWhite,
+                "Grayscale Mapbox": grayscale,
+                "Streets Mapbox": streets,
+                "Satellite Mapbox": satellite
               };
               var overlays = {};
               dataParameters.forEach(function(ele) {
@@ -227,12 +234,9 @@ function ready([us]) {
                 layerControl = L.control.layers(baseLayers, overlays).addTo(map);
               }
 
-              var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-                  maxZoom: 18,
-                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-              });
+              
 
-              map.addLayer( OpenStreetMap_BlackAndWhite)//new L.StamenTileLayer(layer));
+              map.addLayer(OpenStreetMap_BlackAndWhite)
               // try and catch json parsing of the responseText
               //try {
                     topoob = JSON.parse(req.responseText)
@@ -433,9 +437,8 @@ function getScale(data, scaleType, valueCol) {
   }
   return scale;
 }
+</script>
 
-
-  </script>
 <link rel="stylesheet" href="../../../css/material_icons.css" />
 </body>
 </html>
