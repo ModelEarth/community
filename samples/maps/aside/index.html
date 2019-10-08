@@ -119,7 +119,7 @@ KI,48.143640,11.603463,Hans
       dp = {
         selector: "aside.myDataset",
         delimiter: ",",
-        numColumns: ["lat","lon","index","address"],
+        numColumns: ["lat","lon","index","address"], // Wait, address is not a number. Is this okay?
         valueColumn: "index",
         scaleType: "scaleThreshold",
       }
@@ -217,7 +217,7 @@ KI,48.143640,11.603463,Hans
             //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
             //map.removeLayer(overlays["myDataset"]); // Remove from map
 
-            map.addLayer(overlays["From CSV"]);
+            map.addLayer(overlays[dp.name]);
         })
         .catch(function(error){ 
              alert("Data loading error: " + error)
