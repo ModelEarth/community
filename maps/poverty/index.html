@@ -245,7 +245,7 @@ var promises = [
 
     // County shapes
     svg.append("g")
-        .attr("class", "counties")
+      .attr("class", "counties")
       .selectAll("path")
       .data(topojson.feature(us, us.objects.counties).features)
       .enter().append("path")
