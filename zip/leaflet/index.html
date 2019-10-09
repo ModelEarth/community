@@ -362,18 +362,18 @@
 
                     //var cluster_data = []; // Loren moved to top
 
-                    //d3.csv("../../data/" + dataset).then(function (zcta_data) { // For each row in census data
+                    //d3.csv("../../data/" + dataset).then(function (detail_data) { // For each row in census data
 
                     // From community/data/2016/2016_zcta_sm.csv
-                    d3.csv("../zcta/2016_zcta_sm.csv").then(function (zcta_data) { // For each row in census data
-                        var data_by_zipcode = d3.nest()
+                    d3.csv("../zcta/2016_zcta_sm.csv").then(function (detail_data) { // For each row in census data
+                        var data_by_id = d3.nest() // id is a zipcode
                             .key(function(d){return d.zcta;})
-                            .entries(zcta_data);
+                            .entries(detail_data);
 
                         var limitToState = true;
                         if (limitToState) {
                             topodata.features.forEach(function(d) {
-                                var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                                var topoID = data_by_id.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
                                 if(topoID) {
                                     columns.forEach(function(c){
                                         d[c] = parseFloat(topoID.values[0][c]);
@@ -385,10 +385,10 @@
                             // Processes 31,911 zipcodes. Then exceeds maximum call stack size.
                             // The following could be used to avoid max error:
                             // https://www.hhutzler.de/blog/avoid-maximum-call-stack-size-exceeded-in-javascript/
-                            zcta_data.forEach(function(d) { // All zips, not just topo shapes of state
+                            detail_data.forEach(function(d) { // All zips, not just topo shapes of state
 
                                 // Change this, it matches itself
-                                var topoID = data_by_zipcode.find(x=>x.key === d.zcta.replace(/^0+/, ''));
+                                var topoID = data_by_id.find(x=>x.key === d.zcta.replace(/^0+/, ''));
                                 if(topoID) {
                                     columns.forEach(function(c) {
                                         d[c] = parseFloat(topoID.values[0][c]);
@@ -443,7 +443,7 @@
 
                             // 0.01 and 400
                             // Browser debugger: Paused at this line "before potential out-of-memory crash."
-                            // var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                            // var topoID = data_by_id.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
                             dbscanner = jDBSCAN()
                             .eps(0.01)
                             .minPts(400)
