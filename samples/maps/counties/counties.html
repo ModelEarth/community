@@ -78,7 +78,7 @@ https://nasaa-arts.org/nasaa_research/creative-economy-state-profiles/
 
 var neighbors;
 var topodata = {};
-var geojson;
+var geojsonLayer;
 //var co = d3.scaleOrdinal(d3.schemeCategory20b); // Stopped working when switching from v4 to v5.
 
 //var co = d3.scaleOrdinal(); // Nice blue, but no rainbow
@@ -114,6 +114,7 @@ var promises = [
     dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn); // Used by addLegend
     dp.group = L.layerGroup(); // Places dp.name in default Leaflet layer menu
     dataParameters.push(dp);
+    //overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer // Applied below instead.
 
     console.log("dp.data: " + dp.data)
     addLegend(dp.scale, dp.scaleType, dp.name);
@@ -195,8 +196,6 @@ function ready([us]) {
 
         if(req.readyState === XMLHttpRequest.DONE) {
 
-
-          
           //map.addLayer(OpenStreetMap_BlackAndWhite)
 
           // try and catch json parsing of the responseText
@@ -270,7 +269,7 @@ function ready([us]) {
 
                 console.log('topodata: ', topodata)
 
-                geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature}); // Called within addTo(map)
+                geojsonLayer = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature}); // Called within addTo(map)
 
                 //console.log('neigh', neighbors)
              //}
@@ -278,7 +277,9 @@ function ready([us]) {
             //  geojson = {};
             //   console.log(e)
             //}
-            console.log(topodata)
+
+
+            //console.log(topodata)
 
 
 
@@ -323,22 +324,25 @@ function ready([us]) {
             "Streets Mapbox": streets,
             "Satellite Mapbox": satellite
           };
-          //geojson.name = "test geojson"
           var overlays = {
-            "geojson": geojson
+            "Counties": geojsonLayer
           };
 
 
           dataParameters.forEach(function(ele) {
-            //overlays[ele.name] = ele.group;
+            //overlays[ele.name] = ele.group; // Allows for use of dp.name with removeLayer and addLayer
             //console.log("Layer added: " + ele.name);
           })
           if(layerControl === false) {
+            // Add the layers control to the map
             layerControl = L.control.layers(baseLayers, overlays).addTo(map);
           }
 
+          // Make a layer active. 
+          geojsonLayer.addTo(map);
 
-
+          // To add additional layers:
+          //layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
 
 
             /* Rollover effect */
@@ -357,7 +361,7 @@ function ready([us]) {
             }
 
             function resetHighlight(e){
-              geojson.resetStyle(e.target);
+              geojsonLayer.resetStyle(e.target);
               info.update();
             }
 
