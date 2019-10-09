@@ -2,6 +2,10 @@
 <head>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 <title>Counties</title>
+
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
   body {
     margin: 0px;
@@ -75,7 +79,8 @@ https://nasaa-arts.org/nasaa_research/creative-economy-state-profiles/
 <div id="allLegends"></div>
 
 <script type="text/javascript">
-
+console.time("Processing time: ");
+                        
 var neighbors;
 var topodata = {};
 var geojsonLayer;
@@ -88,6 +93,8 @@ var co = d3.scaleOrdinal(d3.schemeCategory10); // More muted blue
 var dataParameters = []; 
 var dp = {};
 var layerControl = false;
+
+var cluster_data = {};
 
 // Incoming domain, outgoing range. 
 // More about scales: https://www.d3indepth.com/scales/
@@ -105,7 +112,7 @@ var promises = [
 
   // TODO: Add topo/GA-13-georgia-counties.json topo load as a promise also, so both load simultaneous.
 
-  d3.csv("topo/GA_county_regions.csv").then(function(d) {
+  d3.csv("topo/GA_county_regions.csv").then(function(detail_data) {
 
     // Similar to aside
     dp = {
@@ -116,7 +123,7 @@ var promises = [
       scaleType: "scaleOrdinal",
     }
     dp.name = "Regions"; // For top of legend. Differs from name column.
-    dp.data = readCsvData(d, dp.numColumns, dp.valueColumn); // This automatically includes all columns, even those not listed in numColumns.
+    dp.data = readCsvData(detail_data, dp.numColumns, dp.valueColumn); // This automatically includes all columns, even those not listed in numColumns.
     dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn); // Used by addLegend. Returns a domain and range
     console.log("dp.scale");
     console.log(dp.scale);
@@ -148,6 +155,9 @@ function ready([us]) {
     console.log("region1 outpu: " + region1.get(114))
     console.dir(region1);
 
+
+    
+
   /// moved here from window.onload below
         var neighbors
         var cluster_data = [];
@@ -165,8 +175,8 @@ function ready([us]) {
             })
             return {
                 weight: 1,
-                //opacity: 1,
-                color: 'white',
+                opacity: .5,
+                color: fillColor, // '#ccc', // 'white'
                 //dashArray: '3',
                 fillOpacity: 0.7,
                 fillColor: fillColor
@@ -254,6 +264,8 @@ function ready([us]) {
                 //topodata = topojson.feature(topoob, topoob.transform)
                 topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
 
+                mergeInDetailData(topodata, dp.data);
+
                 // IS THIS BEING USED?
                 //topodata.features = topodata.features.map(function(fm,i){
                 /*
@@ -266,40 +278,14 @@ function ready([us]) {
                   });
                 */
 
-                var limitToState = true; //
-                dp.data.forEach(function(datarow) { // For each county row from the region lookup table
+                //dp.data.forEach(function(datarow) { // For each county row from the region lookup table
                   
                   // All these work:
                   //console.log("name:: " + datarow.name);
                   //console.log("county_num:: " + datarow.county_num);
                   //console.log("economic_region:: " + datarow.economic_region);
 
-                  var data_by_zipcodeXXX = d3.nest()
-                              .key(function(d){return d.economic_region;})
-                              .entries(datarow);
-
-                  var data_by_zipcode = datarow.county_num;
-
-                  if (limitToState) {
-                      topodata.features.forEach(function(d) {
-
-                          //var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
-                          //var topoID = data_by_zipcode.find(x=>x.key === d.countyfp.replace(/^0+/, ''));
-                          var topoID = d.properties.COUNTYFP;
-                          //console.log("topoID " + topoID);
-                          if (topoID) {
-                            if(datarow.county_num == topoID.replace(/^0+/, '')) {
-                              //cluster_data.push(datarow); // Topo shape data now has region cateegory
-                              
-                              //topodata.features.properties['REGION'] = datarow.economic_region;
-                            }
-                          }
-
-                      });
-                  } else { // Process entire country. Avoiding since too slow.
-
-                  }
-                })
+                //})
 
                 console.log('topodata: ', topodata)
 
@@ -435,6 +421,9 @@ function ready([us]) {
 
 
       }
+
+
+
    } // end ready
 
   /// end moved
@@ -450,6 +439,24 @@ window.onload = function () {
 
   // TO DO: Try moving tile loading portion back here for fast initial display.
     
+}
+
+function mergeInDetailData(topodata,detail_data) {
+  var data_by_id = d3.nest() // where id is a zipcode or countyID
+    .key(function(d){return d.zcta;})
+    .entries(detail_data);
+
+  topodata.features.forEach(function(d) {
+        // d.properties.zip becomes d.properties.COUNTYFP
+        var topoID = data_by_id.find(x=>x.key === d.properties.COUNTYFP.replace(/^0+/, ''));
+        if(topoID) {
+            columns.forEach(function(c){
+                d[c] = parseFloat(topoID.values[0][c]);
+            });
+            cluster_data.push(d); // Topo shape data now has census attributes added, including zcta
+        }
+  });
+  return cluster_data;
 }
 
 /////////////////////////////////////////
@@ -537,6 +544,8 @@ function getScale(data, scaleType, valueCol) {
   }
   return scale;
 }
+
+console.timeEnd("Processing time: ");
 </script>
 
 <link rel="stylesheet" href="../../../css/material_icons.css" />
