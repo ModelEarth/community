@@ -249,7 +249,7 @@ var promises = [
       .selectAll("path")
       .data(topojson.feature(us, us.objects.counties).features)
       .enter().append("path")
-        .attr("fill", function(d) { 
+        .attr("fill", function(d) {
 
           // Set first to display others
           //d.Poverty = unemployment.get(d.id);
