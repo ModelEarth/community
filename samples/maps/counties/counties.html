@@ -109,27 +109,27 @@ var promises = [
       //scaleType: "scaleQuantile",
       scaleType: "scaleOrdinal",
     }
-    dp.name = "Layer 1";
-    dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
-    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-    dp.group = L.layerGroup();
+    dp.name = "Layer 1111";
+    dp.data = readCsvData(d, dp.numColumns, dp.valueColumn); // This automatically includes all columns, even the "name" column.
+    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn); // Used by addLegend
+    dp.group = L.layerGroup(); // Places dp.name in default Leaflet layer menu
     dataParameters.push(dp);
 
     console.log("dp.data: " + dp.data)
     addLegend(dp.scale, dp.scaleType, dp.name);
 
-    // Similar to maps/pverty
+    // Similar to maps/poverty
     // Should name or county_num be related?
     region.set(dp.county_num, +dp.economic_region); /* Including + converts to number */
-    console.log("region: " + region);
-
+    console.log("region test: " + region);
+    //alert("1")
+    console.dir(region);
   })
 
 ]
 Promise.all(promises).then(ready)
 
 function ready([us]) {
-
 
 
   console.log("the region: " + region.get(114))
@@ -156,16 +156,20 @@ function ready([us]) {
 
             // STATEFP":"13","COUNTYFP":
 
-            console.log("feat: " + feat.indie); // 0 to 158
+            //console.log("feat: " + feat.indie); // 0 to 158
 
-            console.log("feat.properties.COUNTYFP " + feat.properties.COUNTYFP);
 
-            console.log("region: " + region.get(feat.properties.COUNTYFP))
-            //console.log("region: " + region.get(feat.indie))
+            //console.log("feat.properties.COUNTYFP " + +feat.properties.COUNTYFP); // Works, including + removes 00 zeros.
 
-            //console.log("region2: " + dp.economic_region.get(feat.properties.COUNTYFP))
+            //console.log("region: " + region.get(+feat.properties.COUNTYFP)); // Doesn't work
 
+            //console.log("region: " + region.get(feat.indie)) // NaN
+
+            //console.log("region2: " + dp.economic_region.get(feat.properties.COUNTYFP)) // Cannot read property 'get' of undefined.
+
+            // applyStyle is called for each topojson row
             var coco = co(feat.color = region.get(feat.properties.COUNTYFP));
+            //var coco = co(feat.color = region.get(114));
             //var coco = co(feat.indie);
 
             return {
@@ -176,209 +180,224 @@ function ready([us]) {
          }
 
         var req = new XMLHttpRequest();
-            // Topo data source
-            //https://github.com/deldersveld/topojson/tree/master/countries/us-states
-            var url = 'topo/GA-13-georgia-counties.json'
 
-            req.open('GET', url, true);
-            req.onreadystatechange = handler;
-            req.send();
+        // Topo data source
+        //https://github.com/deldersveld/topojson/tree/master/countries/us-states
+        var url = 'topo/GA-13-georgia-counties.json'
 
-            var topoob = {};
-            topodata = {};
-            function handler(){
+        req.open('GET', url, true);
+        req.onreadystatechange = handler;
+        req.send();
 
-            if(req.readyState === XMLHttpRequest.DONE){
+        var topoob = {};
+        topodata = {};
+        function handler(){
 
-              //// USA
-              //var lat = 38.3;
-              //var lon = -96.5;
-              //var zoom = 5;
+        if(req.readyState === XMLHttpRequest.DONE) {
 
-              // Georgia
-              var lat = 32.7;
-              var lonX = -82.90;
-              var lon = -81.8;
-              var zoom = 7;
 
-              //var layer = "terrain";
+          
+          //map.addLayer(OpenStreetMap_BlackAndWhite)
 
-              var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                  '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                  'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                  mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+          // try and catch json parsing of the responseText
+          //try {
+                topoob = JSON.parse(req.responseText)
 
-              var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-                  satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
-                  streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+                // Originated in community/map/leaflet/zips-sm.html
+                // zips_us_topo.json
+                // {"type":"Topology","objects":{"data":{"type":"GeometryCollection","geometries":[{"type":"Polygon
 
-              var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-                  maxZoom: 18,
-                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-              });
+                // {"type":"Topology","transform":{"scale":[0.00176728378633945,0.0012459509163533049],"translate":
 
-              var map = new L.Map('mapcon',
-              {
-                  scrollWheelZoom: true,
-                  center: new L.LatLng(lat,lon),
-                  zoom: zoom,
-                  layers: [grayscale, dataParameters[0].group]
-              });
-              var baseLayers = {
-                "Open Street Map": OpenStreetMap_BlackAndWhite,
-                "Grayscale Mapbox": grayscale,
-                "Streets Mapbox": streets,
-                "Satellite Mapbox": satellite
-              };
-              var overlays = {};
-              dataParameters.forEach(function(ele) {
-                overlays[ele.name] = ele.group;
-              })
-              if(layerControl === false) {
-                layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-              }
+                //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
 
-              
-              //map.addLayer(OpenStreetMap_BlackAndWhite)
+                // Was used by applyStyle
+                ////neighbors = topojson.neighbors(topoob.objects.data.geometries);
+                neighbors = topojson.neighbors(topoob.arcs); // .properties
 
-              // try and catch json parsing of the responseText
-              //try {
-                    topoob = JSON.parse(req.responseText)
+                // ADD geometries  see https://observablehq.com/@d3/choropleth
+                //topodata = topojson.feature(topoob, topoob.objects.data)
 
-                    // Originated in community/map/leaflet/zips-sm.html
-                    // zips_us_topo.json
-                    // {"type":"Topology","objects":{"data":{"type":"GeometryCollection","geometries":[{"type":"Polygon
+                //topodata = topojson.feature(topoob, topoob.transform)
+                topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
 
-                    // {"type":"Topology","transform":{"scale":[0.00176728378633945,0.0012459509163533049],"translate":
+                // IS THIS BEING USED?
+                //topodata.features = topodata.features.map(function(fm,i){
+                /*
+                topodata.features = topodata.features.map(function(fm,i){
+                    var ret = fm;
+                    //console.log("fm: " + fm.COUNTYFP);
+                    console.log("fm: " + fm.properties.countyfp);
+                    ret.indie = i;
+                    return ret
+                  });
+                */
 
-                    //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
+                var limitToState = true; //
+                dp.data.forEach(function(datarow) { // For each county row containing the region
+                  
+                  // All these work:
+                  //console.log("name:: " + datarow.name);
+                  //console.log("county_num:: " + datarow.county_num);
+                  //console.log("economic_region:: " + datarow.economic_region);
 
-                    // Was used by applyStyle
-                    ////neighbors = topojson.neighbors(topoob.objects.data.geometries);
-                    neighbors = topojson.neighbors(topoob.arcs); // .properties
+                  var data_by_zipcodeXXX = d3.nest()
+                              .key(function(d){return d.economic_region;})
+                              .entries(datarow);
 
-                    // ADD geometries  see https://observablehq.com/@d3/choropleth
-                    //topodata = topojson.feature(topoob, topoob.objects.data)
+                  var data_by_zipcode = datarow.county_num;
 
-                    //topodata = topojson.feature(topoob, topoob.transform)
-                    topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
+                  if (limitToState) {
+                      topodata.features.forEach(function(d) {
 
-                    // IS THIS BEING USED?
-                    //topodata.features = topodata.features.map(function(fm,i){
-                    /*
-                    topodata.features = topodata.features.map(function(fm,i){
-                        var ret = fm;
-                        //console.log("fm: " + fm.COUNTYFP);
-                        console.log("fm: " + fm.properties.countyfp);
-                        ret.indie = i;
-                        return ret
+                          //var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                          //var topoID = data_by_zipcode.find(x=>x.key === d.countyfp.replace(/^0+/, ''));
+                          var topoID = d.properties.COUNTYFP;
+                          //console.log("topoID " + topoID);
+                          if (topoID) {
+                            if(datarow.county_num == topoID.replace(/^0+/, '')) {
+                              //cluster_data.push(datarow); // Topo shape data now has region cateegory
+                              
+                              //topodata.features.properties['REGION'] = datarow.economic_region;
+                            }
+                          }
+
                       });
-                    */
+                  } else { // Process entire country. Avoiding since too slow.
 
-                    var limitToState = true; //
-                    dp.data.forEach(function(datarow) { // For each county row containing the region
-                      //console.log("name: " + datarow.name);
-                      //console.log("economic_region: " + datarow.economic_region);
-                      console.log("county_num:: " + datarow.county_num);
-                      
+                  }
+                })
 
-                      var data_by_zipcodeXXX = d3.nest()
-                                  .key(function(d){return d.economic_region;})
-                                  .entries(datarow);
+                console.log('topodata: ', topodata)
 
-                      var data_by_zipcode = datarow.county_num;
+                geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature}); // Called within addTo(map)
 
-                      if (limitToState) {
-                          topodata.features.forEach(function(d) {
+                //console.log('neigh', neighbors)
+             //}
+            //catch(e){
+            //  geojson = {};
+            //   console.log(e)
+            //}
+            console.log(topodata)
 
-                              //var topoID = data_by_zipcode.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
-                              //var topoID = data_by_zipcode.find(x=>x.key === d.countyfp.replace(/^0+/, ''));
-                              var topoID = d.properties.COUNTYFP;
-                              //console.log("topoID " + topoID);
-                              if (topoID) {
-                                if(datarow.county_num == topoID.replace(/^0+/, '')) {
-                                  //cluster_data.push(datarow); // Topo shape data now has region cateegory
-                                  
-                                  //topodata.features.properties['REGION'] = datarow.economic_region;
-                                }
-                              }
 
-                          });
-                      } else { // Process entire country. Avoiding since too slow.
 
-                      }
-                    })
 
-                    console.log('topodata: ', topodata)
+          //// USA
+          //var lat = 38.3;
+          //var lon = -96.5;
+          //var zoom = 5;
 
-                    geojson = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature}).addTo(map);
+          // Georgia
+          var lat = 32.7;
+          var lonX = -82.90;
+          var lon = -81.8;
+          var zoom = 7;
 
-                    //console.log('neigh', neighbors)
-                 //}
-                //catch(e){
-                //  geojson = {};
-                //   console.log(e)
-                //}
-                console.log(topodata)
+          //var layer = "terrain";
 
-        /* Rollover effect */
-        function highlightFeature(e){
-          var layer = e.target;
-          layer.setStyle({
-            weight: 3,
-              color: '#665',
-            dashArray: '',
-            fillOpacity: .7})
-             if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-                          layer.bringToFront();
-                         }
-          // Send text to side box
-          info.update(layer.feature.properties);
-        }
+          var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+              '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+              'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+              mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
 
-        function resetHighlight(e){
-          geojson.resetStyle(e.target);
-          info.update();
-        }
+          var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+              satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
+              streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
 
-        function zoomToFeature(e) {
-            map.fitBounds(e.target.getBounds());
-        }
+          var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+              maxZoom: 18,
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          });
 
-        function onEachFeature(feature, layer){
-          layer.on({
-                mouseover: highlightFeature,
-                mouseout: resetHighlight, 
-                click: zoomToFeature
+          var map = new L.Map('mapcon',
+          {
+              scrollWheelZoom: true,
+              center: new L.LatLng(lat,lon),
+              zoom: zoom,
+              layers: [grayscale, dataParameters[0].group]
+          });
+          var baseLayers = {
+            "Open Street Map": OpenStreetMap_BlackAndWhite,
+            "Grayscale Mapbox": grayscale,
+            "Streets Mapbox": streets,
+            "Satellite Mapbox": satellite
+          };
+          //geojson.name = "test geojson"
+          var overlays = {
+            "geojson": geojson
+          };
+
+
+          dataParameters.forEach(function(ele) {
+            //overlays[ele.name] = ele.group;
+            //console.log("Layer added: " + ele.name);
           })
-        }
+          if(layerControl === false) {
+            layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+          }
 
 
-        var info = L.control();
-        info.onAdd = function(map) {
-            this._div = L.DomUtil.create('div', 'info');
-            this.update();
-            return this._div;
-        }
 
-        info.update = function(props){
-            // National
-            //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
-            
-            this._div.innerHTML = "<h4>County</h4>" + (props ? props.NAME + "<br>" : "Hover over map<br>") + (props ? props.COUNTYFP : "")
-            
 
-            // TO fix if using state - id is not defined
-            // Also, other state files may need to have primary node renamed to "data"
-            //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
-        }
 
-        info.addTo(map);
+            /* Rollover effect */
+            function highlightFeature(e){
+              var layer = e.target;
+              layer.setStyle({
+                weight: 3,
+                  color: '#665',
+                dashArray: '',
+                fillOpacity: .7})
+                 if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                              layer.bringToFront();
+                             }
+              // Send text to side box
+              info.update(layer.feature.properties);
+            }
 
+            function resetHighlight(e){
+              geojson.resetStyle(e.target);
+              info.update();
+            }
+
+            function zoomToFeature(e) {
+                map.fitBounds(e.target.getBounds());
+            }
+
+            function onEachFeature(feature, layer){
+              layer.on({
+                    mouseover: highlightFeature,
+                    mouseout: resetHighlight, 
+                    click: zoomToFeature
+              })
+            }
+
+
+            var info = L.control();
+            info.onAdd = function(map) {
+                this._div = L.DomUtil.create('div', 'info');
+                this.update();
+                return this._div;
+            }
+
+            info.update = function(props){
+                // National
+                //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
+                
+                this._div.innerHTML = "<h4>County</h4>" + (props ? props.NAME + "<br>" : "Hover over map<br>") + (props ? props.COUNTYFP : "")
+                
+
+                // TO fix if using state - id is not defined
+                // Also, other state files may need to have primary node renamed to "data"
+                //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
+            }
+
+            info.addTo(map);
 
 
       }
-   }
+   } // end ready
 
   /// end moved
 
