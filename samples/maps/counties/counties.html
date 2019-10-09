@@ -89,9 +89,15 @@ var dataParameters = [];
 var dp = {};
 var layerControl = false;
 
+// Incoming domain, outgoing range. 
+// More about scales: https://www.d3indepth.com/scales/
+var color = d3.scaleOrdinal() // scaleLinear, scaleThreshold()
+    .domain([1,12]) // .domain(d3.range(0, 3))
+    .range(d3.schemePaired); // d3.schemeBlues[9]
+
 // Similar to maps/poverty
 // Get colors for map regions
-var region = d3.map();
+var region1 = d3.map();
 var promises = [
 
   // CSV file contains: name,county_num,economic_region,wia_region
@@ -109,9 +115,11 @@ var promises = [
       //scaleType: "scaleQuantile",
       scaleType: "scaleOrdinal",
     }
-    dp.name = "Layer 1111";
-    dp.data = readCsvData(d, dp.numColumns, dp.valueColumn); // This automatically includes all columns, even the "name" column.
-    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn); // Used by addLegend
+    dp.name = "Regions"; // For top of legend. Differs from name column.
+    dp.data = readCsvData(d, dp.numColumns, dp.valueColumn); // This automatically includes all columns, even those not listed in numColumns.
+    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn); // Used by addLegend. Returns a domain and range
+    console.log("dp.scale");
+    console.log(dp.scale);
     dp.group = L.layerGroup(); // Places dp.name in default Leaflet layer menu
     dataParameters.push(dp);
     //overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer // Applied below instead.
@@ -119,12 +127,16 @@ var promises = [
     console.log("dp.data: " + dp.data)
     addLegend(dp.scale, dp.scaleType, dp.name);
 
+    // Region Output NOT WORKING
     // Similar to maps/poverty
     // Should name or county_num be related?
-    region.set(dp.county_num, +dp.economic_region); /* Including + converts to number */
-    console.log("region test: " + region);
-    //alert("1")
-    console.dir(region);
+    //region1.set(dp.county_num, +dp.economic_region); /* Including + converts to number */
+    
+  }),
+
+  d3.csv("topo/GA_county_regions.csv", function(d) { 
+    region1.set(dp.county_num, +dp.economic_region); 
+
   })
 
 ]
@@ -132,17 +144,37 @@ Promise.all(promises).then(ready)
 
 function ready([us]) {
 
-
-  console.log("the region: " + region.get(114))
-
-  console.log("region object: ");
-  console.dir(region);
+    console.log("region1 test: " + region1);
+    console.log("region1 outpu: " + region1.get(114))
+    console.dir(region1);
 
   /// moved here from window.onload below
         var neighbors
         var cluster_data = [];
 
-        function applyStyle(feat, i){
+        function style(feature) {
+            // Called for each topojson row
+            console.log("feature.properties.COUNTYFP: " + feature.properties.COUNTYFP);
+            var fillColor = '#ff0000';
+            
+            // Hack - because region1 did not work like in did in maps/poverty
+            dp.data.forEach(function(datarow) { // For each county row from the region lookup table
+              if (datarow.county_num == feature.properties.COUNTYFP) {
+                fillColor = color(datarow.economic_region);
+              }
+            })
+            return {
+                weight: 1,
+                //opacity: 1,
+                color: 'white',
+                //dashArray: '3',
+                fillOpacity: 0.7,
+                fillColor: fillColor
+            };
+            
+        }
+
+        function styleX(feat, i){
             var i = feat.indie;
 
             /*
@@ -153,24 +185,26 @@ function ready([us]) {
             }) + 1 | 0);
             */
 
-            //d.Region = region.get(feat.properties.COUNTYFP);
+            //d.Region = region1.get(feat.properties.COUNTYFP);
 
             // STATEFP":"13","COUNTYFP":
 
             //console.log("feat: " + feat.indie); // 0 to 158
 
 
-            //console.log("feat.properties.COUNTYFP " + +feat.properties.COUNTYFP); // Works, including + removes 00 zeros.
+            console.log("feat.properties.COUNTYFP " + +feat.properties.COUNTYFP); // Works, including + removes 00 zeros.
 
-            //console.log("region: " + region.get(+feat.properties.COUNTYFP)); // Doesn't work
+            //console.log("region: " + region1.get(+feat.properties.COUNTYFP)); // Doesn't work
 
-            //console.log("region: " + region.get(feat.indie)) // NaN
+            //console.log("region: " + region1.get(feat.indie)) // NaN
 
-            //console.log("region2: " + dp.economic_region.get(feat.properties.COUNTYFP)) // Cannot read property 'get' of undefined.
+            //console.log("region2: " + dp.economic_region1.get(feat.properties.COUNTYFP)) // Cannot read property 'get' of undefined.
+
+            // TO DO: Use feat.properties.COUNTYFP to fetch the datarow.economic_region
 
             // applyStyle is called for each topojson row
-            var coco = co(feat.color = region.get(feat.properties.COUNTYFP));
-            //var coco = co(feat.color = region.get(114));
+            var coco = co(feat.color = region1.get(+feat.properties.COUNTYFP));
+            //var coco = co(feat.color = region1.get(114));
             //var coco = co(feat.indie);
 
             return {
@@ -233,7 +267,7 @@ function ready([us]) {
                 */
 
                 var limitToState = true; //
-                dp.data.forEach(function(datarow) { // For each county row containing the region
+                dp.data.forEach(function(datarow) { // For each county row from the region lookup table
                   
                   // All these work:
                   //console.log("name:: " + datarow.name);
@@ -269,7 +303,7 @@ function ready([us]) {
 
                 console.log('topodata: ', topodata)
 
-                geojsonLayer = L.geoJson(topodata, {style:applyStyle, onEachFeature: onEachFeature}); // Called within addTo(map)
+                geojsonLayer = L.geoJson(topodata, {style:style, onEachFeature: onEachFeature}); // Called within addTo(map)
 
                 //console.log('neigh', neighbors)
              //}
@@ -316,7 +350,7 @@ function ready([us]) {
               scrollWheelZoom: true,
               center: new L.LatLng(lat,lon),
               zoom: zoom,
-              layers: [grayscale, dataParameters[0].group]
+              layers: [OpenStreetMap_BlackAndWhite, dataParameters[0].group] // Indicates default layer
           });
           var baseLayers = {
             "Open Street Map": OpenStreetMap_BlackAndWhite,
@@ -353,9 +387,9 @@ function ready([us]) {
                   color: '#665',
                 dashArray: '',
                 fillOpacity: .7})
-                 if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-                              layer.bringToFront();
-                             }
+                if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                  layer.bringToFront();
+                }
               // Send text to side box
               info.update(layer.feature.properties);
             }
@@ -449,17 +483,15 @@ function addLegend(scale, scaleType, title) {
   svg.select("g.legend")
     .call(legend);
 
+  // Fit legend SCG box height and width to it's internal content.
   var legendSVG = document.getElementById("legendSVG1");
   var gElement = document.getElementById("legend1");
   var bbox = gElement.getBBox();
-  //gAllLegends.style("height", gElement.height);
   legendSVG.setAttribute("height", bbox.height + 32);
   legendSVG.setAttribute("width", bbox.width + 40);
 }
 
 function readCsvData(_data, columnsNum, valueCol) {
-  //console.log(_data);
-  
   if (typeof columnsNum !== "undefined") {
     _data.forEach( function (row) {
       //row = removeWhiteSpaces(row);
@@ -479,8 +511,8 @@ function convertToNumber(d, _columnsNum) {
   return d;
 } 
 
-// see also: http://d3indepth.com/scales/
 function getScale(data, scaleType, valueCol) {
+  // Also see: http://d3indepth.com/scales/
   var scale;
   if (scaleType === "scaleThreshold") {
     var min = d3.min(data, function(d) { return d[valueCol]; });
