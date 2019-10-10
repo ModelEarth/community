@@ -1,6 +1,6 @@
 # Community Model Builder
 
-Prep for the EPA's sustainable community model building events in 2020. [Learn more](https://model.georgia.org/competition/).  
+Prep for the EPA's sustainable community model building events in 2020. [Learn more](https://model.georgia.org/communities/).  
 
 [Starter Samples](samples/)  
 
@@ -12,7 +12,7 @@ Prep for the EPA's sustainable community model building events in 2020. [Learn m
 
 ### Schedule  
 
-[<b>Spring 2020</b> - Georgia's Sustainable Communities App Design Competition](https://model.georgia.org/competition) - register your interest  
+[<b>Spring 2020</b> - Georgia's Sustainable Communities App Design Competition](https://model.georgia.org/communities) - register your interest  
 
 [<b>Fall 2020</b> - Code for America Sustainable Communities Hackathon](https://www.codeforamerica.org/) - not yet formalized  
 <br>
