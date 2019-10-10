@@ -77,6 +77,12 @@ crossorigin=""></script>
         color: #777;
         text-decoration: underline;
     }
+    @media (max-width: 800px) {
+      .padding-left {
+        padding-left:0px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -150,20 +156,19 @@ KI,48.143640,11.603463,Hans
     <br><br>
 
     
+    <div style="clear:both"></div>
 
-    
     <div class="padding-left" style="overflow:auto; min-width: 300px; margin:0 30px; margin-bottom:30px">
       <a name="items"></a>
 
-
-      <div id="readmeDiv"></div>
+      <div id="readmeDiv"></div><br>
 
       
 
+      <div id="detaillist"></div>
+
       <!--
-
       <a href="https://waze.com/carpool" target="waze_carpool">Waze Carpool</a><br><br>
-
       -->
       
 
@@ -605,11 +610,39 @@ KI,48.143640,11.603463,Hans
            output += "Hours: " + element.schedule + "<br>";
           }
            if (element[dp.latColumn]) {
-              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
+              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
           }
            output += "<br></div><div style='clear:both'></div>";
 
           $("#hublist").append(output);
+
+          // Detail List with Descriptions
+          output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+          output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
+
+          output += element.description + "<br><br>";
+
+          /*
+          output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
+          if (element.phone || element.phone_afterhours) {
+           output += element.phone + " " + element.phone_afterhours + "<br>";
+          }
+          if (element.schedule) {
+           output += "Hours: " + element.schedule + "<br>";
+          }
+           if (element[dp.latColumn]) {
+              output += " - <a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
+          }
+          */
+
+          if (element.website) {
+            output += "Learn More - <a href='" + element.website + "'>" + element.website + "</a><br>";
+          }
+          output += "<br><br></div><div style='clear:both'></div>";
+
+          $("#detaillist").append(output);
+
+
         });
       }
 
