@@ -131,4 +131,5 @@ There is growing trend across industry to trace the entire supply chain.
 Responsible sourcing allows manufacturers to...
 -->
 
+More about [Life Cyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)
 
