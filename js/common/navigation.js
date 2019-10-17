@@ -50,8 +50,11 @@ $(document).ready(function(){
 	    })
 
  		// To do: fetch the existing background-image.
- 		var imageUrl = climbpath + "img/logo/georgia-icon-on-gray.png";
+ 		//var imageUrl = climbpath + "img/logo/georgia-icon-on-gray.png";
+ 		var imageUrl = climbpath + "img/logo/earth-globe.png";
  		$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
+ 		$('#logoholder').css('background-size', '70% 70%');
+ 		$('#logoholder').css('background-position', 'center');
 
  		$('.showMenu').click(function () {
 			//$(".showMenu").hide();
