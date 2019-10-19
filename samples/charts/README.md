@@ -7,10 +7,12 @@ Three leading web chart tools:
 
 [High Charts](https://www.highcharts.com/demo)
 
-[D3.js](https://github.com/d3/d3/wiki/Gallery)
+[D3.js](https://github.com/d3/d3/wiki/Gallery)  
+<br>
 
+#### Learn More
 
-## Deep Dive
+[D3 Scale Functions](https://www.d3indepth.com/scales/) - From a domain to a range  
 
-[D3 overview](https://davidwalsh.name/learning-d3) - SVGs for beginners
+[D3 Overview](https://davidwalsh.name/learning-d3) - SVGs for beginners
   
