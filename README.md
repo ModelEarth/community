@@ -1,6 +1,6 @@
 <h1 class="h1-home">Community Model Builder</h1>
 
-Prep for the EPA's sustainable community model building events in 2020. [Learn more](https://model.georgia.org/communities/).  
+Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a>.  
 
 [Starter Samples](samples/) and the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API)  
 
