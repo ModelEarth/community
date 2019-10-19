@@ -1,14 +1,9 @@
-# Community Model Builder
+<h1 class="h1-home">Community Model Builder</h1>
 
 Prep for the EPA's sustainable community model building events in 2020. [Learn more](https://model.georgia.org/communities/).  
 
-[Starter Samples](samples/)  
+[Starter Samples](samples/) and the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API)  
 
-[Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
-
-[Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
-
-<br>
 
 ### Schedule  
 
@@ -42,7 +37,7 @@ Prep for the EPA's sustainable community model building events in 2020. [Learn m
 Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the  
 point-to-point nature of REST endpoints.  
 
-7. Highlight <a href="smartdata">Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
+7. Highlight <a href="smartdata">Smart & Mobile Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
 
 8. Include [windy.com](windy.com) layer using their [API for Leaflet](https://github.com/windycom/API).
 
@@ -62,10 +57,9 @@ point-to-point nature of REST endpoints.
 
 <!--[Census Data by Zipcode](https://github.com/statedata/community)  -->
 
-<hr>
 <br>
  
-# About Model
+## About Model
 
 BEA data is provided in 12, 71 and 400 sectors (industries).  
 71 sector data is provided annually, 400 sector data is provided every 5 years.  
@@ -74,7 +68,7 @@ BEA data is provided in 12, 71 and 400 sectors (industries).
 
 The "Use Table" relates rows of goods and services to industries.  
 
-#### Setup Steps
+### Setup Steps
 
 Clone, open Anaconda > Jupyter Notebook > Go to:
 
@@ -88,7 +82,7 @@ https://smmtool.app.cloud.gov/api/
 
 Note, the API names USEEIO and GAUSEEIO will change by the end 2019.
 
-#From Python Examples
+### Python Examples
 
 [Example Jupyter notebook](https://github.com/usepa/useeio_api/wiki/Use-the-API)  
 
@@ -97,6 +91,8 @@ Note, the API names USEEIO and GAUSEEIO will change by the end 2019.
 Sum of inputs = intermediate consumption
 
 Anything less than $1 is the wages, tax and profit.
+
+<a href="https://github.com/USEPA/USEEIO_API">Overview of the matrix</a>  
 
 A matrix does not include wages (compensation), taxes nor gross opperating surplus (profits) 
 = Value Added (is the sum of these 3)
@@ -115,21 +111,26 @@ Get Demands.  Then at bottom we pass this json object back to the calculate quer
 
 Scale population to size of community (they have same rate of consumation as average person)
 
+<br>
 
 
+## Deeper Dive (beyond the scope of app building events)
 
-# Deeper Dive (Beyond the model building event)
-
-Use GO to compile API
+Using <a href="https://github.com/USEPA/USEEIO_API/tree/master/python">Python</a> and <a href="https://github.com/USEPA/USEEIO_API/tree/master/go">GO</a> to extend and compile the USEEIO API.
 
 
- 
----
+<br>
+
+## Related Material
 
 <!--
 There is growing trend across industry to trace the entire supply chain. 
 Responsible sourcing allows manufacturers to...
 -->
 
-More about [Life Cyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)
+[Leyla Acaroglu on Life Cyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)  
+
+[Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
+
+[Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
 
