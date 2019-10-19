@@ -5,19 +5,6 @@
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- For Facebook -->
-<meta property="og:title" content="Community Hubs for Hurricane Relief Donations" />
-<meta property="og:type" content="article" />
-<meta property="og:image" content="https://planet.live/community/hubs/img/Portable-Solar-Charger.jpg" />
-<meta property="og:url" content="https://planet.live/community/hubs/" />
-<meta property="og:description" content="Locations in Georgia for donating disaster relief supplies." />
-
-<!-- For Twitter -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Community Hubs for Hurricane Relief Donations" />
-<meta name="twitter:description" content="Locations in Georgia for donating disaster relief supplies." />
-<meta name="twitter:image" content="https://modelearth.github.io/community/hubs/img/Portable-Solar-Charger.jpg" />
-
 <!--
   Angshuman Guin
   Senior Research Engineer
@@ -59,9 +46,8 @@ crossorigin=""></script>
     aside, pre { display: none; }
     div#allLegends { position: relative; }
     div.legend { position: relative; width: 200px; float: left; }
-    #hublist { overflow:auto; margin:30px;}
     .padding-left {
-      padding-left:50px;
+      padding-left:70px;
     }
     .headerLogo {
       height:40px;
@@ -82,7 +68,24 @@ crossorigin=""></script>
         padding-left:0px;
       }
     }
-
+    .my-div-icon {
+      width: 24px !important;
+      height: 20px !important;
+      background-color: red;
+      position:relative;
+    }
+    .my-div-icon:after {
+      position: absolute;
+      /* content: " (" attr(href) ")"; */
+      content: "1";
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
   </style>
 </head>
 <body>
@@ -138,21 +141,67 @@ KI,48.157630,11.648014,Sepp
 KI,48.141579,11.604729,Schorsch
 KI,48.143640,11.603463,Hans
 -->
+  
+  <br><br>
+  <div style="position:relative;">
 
-    
-  <div id="hublist" class="padding-left" style="float:left; max-width:320px">
-    <h1 style="margin-bottom:0px">Smart & Mobile</h1>
+    <style>
+      #floatingButtons {
+        display:none;
+        height:50px;
+        right: 30px;
+        position:fixed;
+        bottom:0;
+        z-index:9999;
+      }
 
-    <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Data Driven Decision Making</h3>
-    <!--Opportunities for Waze integration:<br><br>-->
+      #mapHolder {
+        width: 40%;
+        float: right;
+        border: 1px solid #999;
+        margin-right: 30px;
+      }
+
+      @media (max-width: 800px) {
+        #mapHolder {
+          width: auto;
+          margin-left: 30px;
+          margin-bottom: 30px;
+          float: none;
+        }
+        #hublist {
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+
+        #floatingButtons {
+          display:block;
+        }
+      }
+    </style>
+
+    <div id="mapHolder">
+      <div id="map"></div>
+    </div>
+
+    <div id="hublist" class="padding-left" style="overflow: auto; padding-right:40px">
+      <a name="list"></a>
+      <h1 style="margin-bottom:0px">Smart & Mobile</h1>
+
+      <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Data Driven Decision Making</h3>
+      <!--Opportunities for Waze integration:<br><br>-->
+
+      <div id="detaillist"></div>
+      <div id="narrowlist" style="display:none"></div>
+    </div>
+
+    <div id="allLegends"></div>
   </div>
 
+
     
 
-    <div id="map" style="overflow:auto"></div>
-    <div id="allLegends"></div>
-
-    <a name="list"></a>
+    
     <br><br>
 
     
@@ -165,7 +214,7 @@ KI,48.143640,11.603463,Hans
 
       
 
-      <div id="detaillist"></div>
+      
 
       <!--
       <a href="https://waze.com/carpool" target="waze_carpool">Waze Carpool</a><br><br>
@@ -179,7 +228,7 @@ KI,48.143640,11.603463,Hans
 
     
     <div class="sectionMargin" style="max-width: 1200px">
-      <div id="disqus_thread"></div>
+      
       <script>
           /**
            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
@@ -251,11 +300,13 @@ KI,48.143640,11.603463,Hans
 
 
 
-  <div style="height:50px;width:100%;position:fixed;bottom:0;z-index:9999;">
+  <div id="floatingButtons">
     <div style="padding-right:30px;float:right">
       <a href="#top" class="footerButton">Map</a>
       <a href="#list" class="footerButton">List</a>
+      <!--
       <a href="#items" class="footerButton">Items</a>
+      -->
     </div>
   </div>
 
@@ -270,7 +321,7 @@ KI,48.143640,11.603463,Hans
       <a href="https://waze.com/carpool" target="waze_carpool">Waze Carpool</a> - Find carpool riders and drivers near you.<br><br>
 
     </div>
-  
+
 
     <script>
       // Set your own Mapbox access token below.
@@ -433,7 +484,8 @@ KI,48.143640,11.603463,Hans
 
       /////////// MAP SETTINGS ///////////
       
-      var mapCenter = [33.863516,-84.368775]; // [latitude, longitude]
+      // 33.863516,-84.368775
+      var mapCenter = [32.90,-83.35]; // [latitude, longitude]
 
       var map = L.map('map', {
         center: mapCenter,
@@ -458,7 +510,7 @@ KI,48.143640,11.603463,Hans
       }
 
 
-        /* Sample of single icon - place in addIcons function
+        // Sample of single icon - place in addIcons function
         // Create a semi-transparent bus icon
         var busIcon = L.IconMaterial.icon({
           icon: 'local_shipping',            // Name of Material icon
@@ -469,8 +521,11 @@ KI,48.143640,11.603463,Hans
         })
         
         // Attach the icon to the marker and add to the map
-        L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
-        */
+        //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
+        
+        // Set .my-div-icon styles in CSS
+        //var myIcon = L.divIcon({className: 'my-div-icon'});
+        //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
 
 
       /////////////////////////////////////////
@@ -614,13 +669,13 @@ KI,48.143640,11.603463,Hans
           }
            output += "<br></div><div style='clear:both'></div>";
 
-          $("#hublist").append(output);
+          $("#narrowlist").append(output);
 
           // Detail List with Descriptions
           output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
           output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
 
-          output += element.description + "<br><br>";
+          output += element.description + "<br>";
 
           /*
           output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
@@ -636,9 +691,10 @@ KI,48.143640,11.603463,Hans
           */
 
           if (element.website) {
-            output += "Learn More - <a href='" + element.website + "'>" + element.website + "</a><br>";
+            // Learn More:
+            output += "<a href='" + element.website + "' style='display:block;margin-top:5px'>" + element.website.replace("https://","").replace("http://","").replace("www.","") + "</a><br>";
           }
-          output += "<br><br></div><div style='clear:both'></div>";
+          output += "</div><div style='clear:both'></div>";
 
           $("#detaillist").append(output);
 
