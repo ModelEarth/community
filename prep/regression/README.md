@@ -29,7 +29,7 @@ tsclean.py creates combo_zcta_sm.csv from files in ../../community/data/[year]/[
 
 Then use tsclean.py to:
 
-A. Send the projected years to community/data/[year]/[year]_zcta_sm_projected.csv
+A. Send the projected years to community/data/[year]/[year]_zcta_sm_projected.csv  
 B. Create combo_zcta_sm_projection.csv  
 
 
@@ -39,5 +39,7 @@ Run:
 python mergezip.py ../zipcodes/zcta/zip_to_zcta_2018.csv ../../../community-usa/data/zip/ data/combo_zcta_sm.csv
 </pre>
 
-Generates files for each zipcode. Saves to community-usa/data/zip/0/0/0/0/0/[zip]. 
+Generates files for each zipcode.  
+Save to an external repo due to the size:  
+community-usa/data/zip/0/0/0/0/0/[zip]. 
 
