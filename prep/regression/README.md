@@ -16,10 +16,11 @@ python mergezip.py ../zipcodes/zcta/zip_to_zcta_2018.csv ../../../community-usa/
 DON'T DO THIS
 
 3. Using tsclean.py
+
+<pre>
 # To create projection, change DATA_COMBO_PATH from combo_zcta_sm.csv to combo_zcta_sm_projection.csv
 # And change last=2016 to last=2021 in two locations (the furthest in data/raw)
-
-
+</pre>
 
 OLD:  
 tsclean.py creates combo_zcta_sm.csv from files in raw folder, up to last=2016.  
