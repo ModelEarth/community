@@ -1,10 +1,13 @@
 # Regression Prep  
 
+The regression script uses prior years to project forward employment levels. Linear projects seem conservative. Alternative methods could be explored.  
+
+
 1. Populate files ../../community/data using steps in ../all/README.md  
 
 2. Run: python regressor.py  
 
-    regressor.py runs tsclean.py, It generated projected years in data/raw, but doesn't output to a combo file.
+    regressor.py runs tsclean.py.  It generates projected years in data/raw, but doesn't output to a combo file.  
 
 
 3. Send files with past and future years to zip folders:
