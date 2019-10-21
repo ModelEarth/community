@@ -2,7 +2,6 @@
 
 <b>Industry Employment Levels</b><br>
 
-
 The most recent script resides in prep/industries/source
 
 To run:  
@@ -11,7 +10,7 @@ First change the year in industry.SQL.txt
 
 ### Data Sources
 
-Companies per industry within each zipcode - Available annually at the end April  
+Companies per industry within each zipcode. Normally these are available annually at the end April, but the [ 2019 release will be in November](https://www.census.gov/programs-surveys/cbp/news-updates/updates/dec-2018.html) due to the delay of 2017 Economic Census.  
 
 [Start here](https://www.census.gov/programs-surveys/cbp/data/datasets.html) 
 Choose "County Business Patterns [Year]" then "Complete ZIP Code Industry Data File"  
