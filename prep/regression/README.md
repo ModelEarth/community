@@ -36,7 +36,9 @@ B. Create combo_zcta_sm_projection.csv
 
 3. Run:  
 
+<pre>
 python mergezip.py ../zipcodes/zcta/zip_to_zcta_2018.csv ../../../community-usa/data/zip/ data/combo_zcta_sm.csv
+</pre>
 
 Generates files for each zipcode. Saves to community-usa/data/zip/0/0/0/0/0/[zip]. 
 
