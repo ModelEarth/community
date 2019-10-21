@@ -4,18 +4,17 @@
 
 2. Run: python regressor.py  
 
-regressor.py runs tsclean.py, It generated projected years in data/raw, but doesn't output to a combo file.
+    regressor.py runs tsclean.py, It generated projected years in data/raw, but doesn't output to a combo file.
 
 
 3. Send files with past and future years to zip folders:
 
-python mergezip.py ../zipcodes/zcta/zip_to_zcta_2018.csv ../../../community-usa/data/zip/ data/combo_zcta_sm.csv   to get data to 2020
+    python mergezip.py ../zipcodes/zcta/zip_to_zcta_2018.csv ../../../community-usa/data/zip/ data/combo_zcta_sm.csv   to get data to 2020
 
 
+    DON'T DO THIS
 
-DON'T DO THIS
-
-3. Using tsclean.py
+    Using tsclean.py
 
 <pre>
 # To create projection, change DATA_COMBO_PATH from combo_zcta_sm.csv to combo_zcta_sm_projection.csv
@@ -34,7 +33,7 @@ A. Send the projected years to community/data/[year]/[year]_zcta_sm_projected.cs
 B. Create combo_zcta_sm_projection.csv  
 
 
-3. Run:  
+Run:  
 
 <pre>
 python mergezip.py ../zipcodes/zcta/zip_to_zcta_2018.csv ../../../community-usa/data/zip/ data/combo_zcta_sm.csv
