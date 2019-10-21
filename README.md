@@ -24,7 +24,7 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 1. Expand on Python and SQLite pages to pre-processing data as CSV files for display in D3 charts. 
 Data includes: [industries](industries), [income by zcta](prep/all)<!--[projections](prep/regression/)-->  
 
-2. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [GitHub](https://github.com/MacHu-GWU/uszipcode-project).  
+2. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 3. Add D3.js heatmap from USEEIO data to [Goods & Services Report](samples/dataset).
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
