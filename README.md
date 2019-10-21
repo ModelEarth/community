@@ -2,8 +2,7 @@
 
 Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a>.  
 
-[Starter Samples](samples/) and the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API)  
-
+[Starter Samples](samples/) for the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API) and the [World Input-Output Database](http://www.wiod.org).  
 
 ### Schedule  
 
@@ -14,32 +13,32 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 
 ### Summary
 
-1. Development using output from the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Static CSV files will be generated for demand vectors (Food System and Full System). 
+1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), static CSV files will be generated for demand vectors (Food System and Full System). 
 
 2. Detailed [Goods & Services Report](samples/dataset) for each community listing environmental impact of production choices.   
 
 3. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
 
-### Projects
+### Project Ideas
 
-1. Activate Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).  
+1. Expand on Python and SQLite pages to pre-processing data as CSV files for display in D3 charts. 
+Data includes: [industries](industries), [income by zcta](prep/all), [projections](prep/regression/)  
 
-2. Add D3.js heatmap colors from USEEIO data to [Goods & Services Report](samples/dataset).
+2. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html).
+
+3. Add D3.js heatmap from USEEIO data to [Goods & Services Report](samples/dataset).
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
 
-3. Move [Georgia Recycling data](https://data.georgia.org/#processors) to Leaflet map layers.
-
-4. Use Python to generate a CSV file with employment and industries for each zip code using [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html).
+4. Analyse [Georgia Recycling data](https://data.georgia.org/#processors) in Leaflet map layers.
 
 5. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
 
-6. Use Gatsby (with a free alternative to Forestry.io) to edit content on GitHub. 
-Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the  
-point-to-point nature of REST endpoints.  
+6. Use a [JAMstack Editor](https://headlesscms.org/)  to edit content on GitHub. 
+Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
 
 7. Highlight <a href="smartdata">Smart & Mobile Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
 
-8. Include [windy.com](windy.com) layer using their [API for Leaflet](https://github.com/windycom/API).
+8. Include [windy.com](windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
 9. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
 
@@ -50,7 +49,9 @@ point-to-point nature of REST endpoints.
 12. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
 
 13. Cross-relate BEA Codes, NAICS industries (and HS Codes).  
- 
+
+14. Activate Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).  
+
 <!--
 	12. Include elected officials for districts, zip codes or counties.
 -->
