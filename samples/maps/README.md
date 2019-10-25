@@ -1,6 +1,6 @@
 # Map Samples
 
-## [Smart Data Projects (smartdata)](../../smartdata)
+## [Smart Data Projects (map)](../../map)
 <!--## [Map Points (hubs)](../../hubs/#route=us.ga_to_bs)-->
 ## [Counties (counties)](counties/counties.html)
 ## [Industry Mix (zip)](../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)
