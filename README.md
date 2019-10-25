@@ -6,9 +6,9 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 
 ### Schedule  
 
-[<b>Spring 2020</b> - Georgia's Sustainable Communities App Design Competition](https://model.georgia.org/communities) - register your interest  
+[<b>Spring 2020</b> - Georgia's Sustainable Communities App Input Sessions](https://model.georgia.org/communities) 
 
-[<b>Fall 2020</b> - Code for America Sustainable Communities Hackathon](https://www.codeforamerica.org/) - not yet formalized  
+[<b>Fall 2020</b> - Code for America Sustainable Communities Hackathon](https://www.codeforamerica.org/) 
 <br>
 
 ### Summary
@@ -36,7 +36,7 @@ Data includes: [industries](industries), [income by zcta](prep/all)<!--[projecti
 6. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
 
-7. Highlight <a href="smartdata">Smart & Mobile Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
+7. Highlight <a href="map">Smart & Mobile Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
 
 8. Include [windy.com](windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
