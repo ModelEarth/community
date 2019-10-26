@@ -62,7 +62,7 @@ Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQ
  
 ## About Model
 
-BEA data is provided in 12, 71 and 400 sectors (industries).  
+BEA data is provided in 12, 71 and 400 industry sectors.  
 71 sector data is provided annually, 400 sector data is provided every 5 years.  
 
 [https://github.com/usepa/useeio_api](https://github.com/usepa/useeio_api)  

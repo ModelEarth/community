@@ -142,10 +142,7 @@ KI,48.141579,11.604729,Schorsch
 KI,48.143640,11.603463,Hans
 -->
   
-  <br><br>
-  <div style="position:relative;">
-
-    <style>
+  <style>
       #floatingButtons {
         display:none;
         height:50px;
@@ -155,20 +152,75 @@ KI,48.143640,11.603463,Hans
         z-index:9999;
       }
 
+      #flexwrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      #hublist {
+        overflow: auto;
+        width:60%;
+        padding-right:40px
+      }
       #mapHolder {
         width: 40%;
-        float: right;
+        /* Show box for testing scroll */
+        /* border: 1px solid #ccc; */
+
+        position: relative;
+      }
+      #mapHolderFixed {
+        position: fixed;
+        width: 40%;
+        padding-rightX: 30px; /* since fix is relative to page */
+        box-sizing: border-box;
+      }
+      #mapHolderInner {
+        widthX:100%;
+        margin-right: 80px;
         border: 1px solid #999;
-        margin-right: 30px;
+      }
+      #maptop {
+        z-index: 9999999;
+      }
+      #map {
+        height: 500px;
+        rightX: 0;
+        widthX: 100%;
+        box-sizing: border-box;
       }
 
+
       @media (max-width: 800px) {
+        
+        
+        #flexwrapper {
+          display: block;
+        }
+        #hublist {
+          width:auto;
+          
+        }
+        .padding-left {
+          padding-left: 30px;
+        }
         #mapHolder {
           width: auto;
+          height:400px;
+          margin-top: 70px;
           margin-left: 30px;
           margin-bottom: 30px;
-          float: none;
         }
+        #mapHolderFixed {
+          position: relative;
+          width: auto;
+        }
+        #mapHolderInner {
+          height:400px;
+          margin-right: 30px;
+          border: 0px solid #fff;
+        }
+
         #hublist {
           margin-left: 30px;
           margin-right: 30px;
@@ -180,11 +232,10 @@ KI,48.143640,11.603463,Hans
       }
     </style>
 
-    <div id="mapHolder">
-      <div id="map"></div>
-    </div>
+  <br><br>
+  <div id="flexwrapper">
 
-    <div id="hublist" class="padding-left" style="overflow: auto; padding-right:40px">
+    <div id="hublist" class="padding-left">
       <a name="list"></a>
       <h1 style="margin-bottom:0px">Smart & Mobile</h1>
 
@@ -194,6 +245,17 @@ KI,48.143640,11.603463,Hans
       <div id="detaillist"></div>
       <div id="narrowlist" style="display:none"></div>
     </div>
+
+    <a name="gomap"></a>
+    <div id="mapHolder">
+      <div id="mapHolderFixed">
+        <div id="mapHolderInner">
+          <!--div id="maptop">maptop</div-->
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+
 
     <div id="allLegends"></div>
   </div>
@@ -302,7 +364,7 @@ KI,48.143640,11.603463,Hans
 
   <div id="floatingButtons">
     <div style="padding-right:30px;float:right">
-      <a href="#top" class="footerButton">Map</a>
+      <a href="#gomap" class="footerButton">Map</a>
       <a href="#list" class="footerButton">List</a>
       <!--
       <a href="#items" class="footerButton">Items</a>
