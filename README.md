@@ -135,3 +135,7 @@ Responsible sourcing allows manufacturers to...
 
 [Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
 
+[Knoema Infographics](https://knoema.com/infographics)  
+[Data Coverage Matrix](https://knoema.com/atlas/matrix) - A global example to aim for locally.
+
+
