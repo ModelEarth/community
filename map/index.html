@@ -6,6 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--
+  // stickybits
+  // Also see: https://dollarshaveclub.github.io/stickybits/
+  // But will probably look at embed.js to detect when button of section reaches bottom of map.
+
   Angshuman Guin
   Senior Research Engineer
   Transportation Systems Engineering
@@ -159,11 +163,11 @@ KI,48.143640,11.603463,Hans
       }
       #hublist {
         overflow: auto;
-        width:60%;
+        width:54%;
         padding-right:40px
       }
       #mapHolder {
-        width: 40%;
+        width: 46%;
         /* Show box for testing scroll */
         /* border: 1px solid #ccc; */
 
@@ -171,7 +175,7 @@ KI,48.143640,11.603463,Hans
       }
       #mapHolderFixed {
         position: fixed;
-        width: 40%;
+        width: 46%;
         padding-rightX: 30px; /* since fix is relative to page */
         box-sizing: border-box;
       }
@@ -181,7 +185,12 @@ KI,48.143640,11.603463,Hans
         border: 1px solid #999;
       }
       #maptop {
-        z-index: 9999999;
+        height: 30px;
+        border-bottomX: 1px solid #999;
+        background-color: #fafafa;
+        position: relative;
+        color: #555;
+        font-size: 16px;
       }
       #map {
         height: 500px;
@@ -250,8 +259,27 @@ KI,48.143640,11.603463,Hans
     <div id="mapHolder">
       <div id="mapHolderFixed">
         <div id="mapHolderInner">
-          <!--div id="maptop">maptop</div-->
-          <div id="map"></div>
+          <div id="maptop">
+            <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
+              Connected Communities
+            </div>
+            <div style="position:absolute; right:0;">
+              <div class="expandToFullscreen" style="border:0px; padding: 2px; cursor: pointer">
+                  <i class="material-icons" style="font-size:24px;">&#xE5D0;</i>
+              </div>
+              <div class="reduceFromFullscreen" style="display:none; border:0px; padding: 2px">
+                  <i class="material-icons" style="font-size:23px;">fullscreen_exit</i>
+              </div>
+            </div>
+            
+
+          </div>
+
+          <div style="clear:both">  
+            <div id="map"></div>
+          </div>
+
+          
         </div>
       </div>
     </div>
@@ -274,59 +302,11 @@ KI,48.143640,11.603463,Hans
 
       <div id="readmeDiv"></div><br>
 
-      
+      <!--div id="disqus_thread"></div-->
 
-      
-
-      <!--
-      <a href="https://waze.com/carpool" target="waze_carpool">Waze Carpool</a><br><br>
-      -->
-      
-
-      <!--
-        https://www.amazon.com/biodegradable-diapers/s?k=biodegradable+diapers
-      -->
     </div>
 
     
-    <div class="sectionMargin" style="max-width: 1200px">
-      
-      <script>
-          /**
-           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-           *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-           *  PLATFORM OR CMS.
-           *  
-           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-           *  https://disqus.com/admin/universalcode/#configuration-variables
-           */
-          /*
-          var disqus_config = function () {
-              // Replace PAGE_URL with your page's canonical URL variable
-              this.page.url = PAGE_URL;  
-              
-              // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              this.page.identifier = PAGE_IDENTIFIER; 
-          };
-          */
-          
-          (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-              var d = document, s = d.createElement('script');
-              
-              // IMPORTANT: Replace locally with your forum shortname!
-              s.src = 'https://locally.disqus.com/embed.js';
-              
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-          })();
-      </script>
-      <noscript>
-          Please enable JavaScript to view the 
-          <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-              comments powered by Disqus.
-          </a>
-      </noscript>
-    </div>
     <style>
       .sectionMargin {
         margin:0 50px 0 90px;
@@ -357,8 +337,6 @@ KI,48.143640,11.603463,Hans
         background: #777;
       }
     </style>
-
-    
 
 
 
@@ -702,8 +680,14 @@ KI,48.143640,11.603463,Hans
           if (element.schedule) {
             output += "Hours: " + element.schedule + "<br>";
           }
+          if (element.website) {
+            output += "<a href='" + element.website + "' target='_blank'>Website</a>";
+          }
+          if (element.website && element[dp.latColumn]) {
+            output += " | ";
+          }
           if (element[dp.latColumn]) {
-              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
+              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
           }
           circle.bindPopup(output);
             // "<br>Latitude: " + element[dp.latColumn] + 
@@ -726,8 +710,14 @@ KI,48.143640,11.603463,Hans
           if (element.schedule) {
            output += "Hours: " + element.schedule + "<br>";
           }
-           if (element[dp.latColumn]) {
-              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
+          if (element.website) {
+            output += "<a href='" + element.website + "' target='_blank'>Website</a><br>";
+          }
+          if (element.website && element[dp.latColumn]) {
+            output += " | ";
+          }
+          if (element[dp.latColumn]) {
+              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
           }
            output += "<br></div><div style='clear:both'></div>";
 
@@ -829,6 +819,44 @@ KI,48.143640,11.603463,Hans
 	  function removeWhiteSpaces (str) {
 		  return str.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
 	  }
+
+    $(document).ready(function () {
+        $('.expandToFullscreen, .reduceFromFullscreen').click(function(event) {
+            toggleFullScreen();  
+        });
+    });
+    function toggleFullScreen() {
+      if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+       (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+        // Only if video is not visible. Otherwise become black.
+        $('.moduleBackground').css({'z-index':'0'});   
+        $('.expandFullScreen span').text("Shrink");
+        // To do: Change icon to &#xE5D1;
+        if (document.documentElement.requestFullScreen) {  
+          document.documentElement.requestFullScreen();  
+        } else if (document.documentElement.mozRequestFullScreen) {  
+          document.documentElement.mozRequestFullScreen();  
+        } else if (document.documentElement.webkitRequestFullScreen) {  
+          document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+        }
+        $('.expandToFullscreen').hide();
+        $('.reduceFromFullscreen').show(); 
+      } else {
+        
+        $('.moduleBackground').css({'z-index':'-1'}); // Allows video to overlap.
+        $('.expandFullScreen span').text("Expand");
+        if (document.cancelFullScreen) {  
+          document.cancelFullScreen();  
+        } else if (document.mozCancelFullScreen) {  
+          document.mozCancelFullScreen();  
+        } else if (document.webkitCancelFullScreen) {  
+          document.webkitCancelFullScreen();  
+        }
+        $('.reduceFromFullscreen').hide();
+        $('.expandToFullscreen').show();
+      }
+    }
+
     </script>
 
     <script>
