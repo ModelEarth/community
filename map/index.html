@@ -27,8 +27,10 @@ crossorigin=""/>
 integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
 crossorigin=""></script>
 
-<script src="https://d3js.org/d3.v5.js"></script>
+<script src="../js/d3/d3.v5.min.js"></script>
+<!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+-->
 
 <script type="text/javascript" src="../js/common/showdown.min.js"></script>
 <script type="text/javascript" src="../js/jquery/zepto.min.js"></script>
@@ -149,10 +151,11 @@ KI,48.143640,11.603463,Hans
   <style>
       #floatingButtons {
         display:none;
-        height:50px;
-        right: 30px;
+        height:40px;
+        width:100%;
         position:fixed;
         bottom:0;
+        background-color:#777;
         z-index:9999;
       }
 
@@ -173,13 +176,13 @@ KI,48.143640,11.603463,Hans
 
         position: relative;
       }
-      #mapHolderFixed {
+      .mapHolderFixed {
         position: fixed;
         width: 46%;
         padding-rightX: 30px; /* since fix is relative to page */
-        box-sizing: border-box;
+        box-sizingX: border-box;
       }
-      #mapHolderInner {
+      .mapHolderInner {
         widthX:100%;
         margin-right: 80px;
         border: 1px solid #999;
@@ -198,7 +201,14 @@ KI,48.143640,11.603463,Hans
         widthX: 100%;
         box-sizing: border-box;
       }
-
+      .unstuck {
+        position: absolute;
+        bottom:80px;
+        width:100%;
+      }
+      .unstuck > .mapHolderInner {
+        margin-right: 30px;
+      }
 
       @media (max-width: 800px) {
         
@@ -215,19 +225,18 @@ KI,48.143640,11.603463,Hans
         }
         #mapHolder {
           width: auto;
-          height:400px;
           margin-top: 70px;
           margin-left: 30px;
           margin-bottom: 30px;
         }
-        #mapHolderFixed {
+        .mapHolderFixed {
           position: relative;
           width: auto;
         }
-        #mapHolderInner {
-          height:400px;
+        .mapHolderInner {
+          heightX:400px;
           margin-right: 30px;
-          border: 0px solid #fff;
+          borderX: 0px solid #fff;
         }
 
         #hublist {
@@ -245,7 +254,7 @@ KI,48.143640,11.603463,Hans
   <div id="flexwrapper">
 
     <div id="hublist" class="padding-left">
-      <a name="list"></a>
+      
       <h1 style="margin-bottom:0px">Smart & Mobile</h1>
 
       <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Data Driven Decision Making</h3>
@@ -257,8 +266,8 @@ KI,48.143640,11.603463,Hans
 
     <a name="gomap"></a>
     <div id="mapHolder">
-      <div id="mapHolderFixed">
-        <div id="mapHolderInner">
+      <div class="mapHolderFixed">
+        <div class="mapHolderInner">
           <div id="maptop">
             <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
               Connected Communities
@@ -267,7 +276,7 @@ KI,48.143640,11.603463,Hans
               <div class="expandToFullscreen" style="border:0px; padding: 2px; cursor: pointer">
                   <i class="material-icons" style="font-size:24px;">&#xE5D0;</i>
               </div>
-              <div class="reduceFromFullscreen" style="display:none; border:0px; padding: 2px">
+              <div class="reduceFromFullscreen" style="display:none; border:0px; padding: 2px; cursor: pointer">
                   <i class="material-icons" style="font-size:23px;">fullscreen_exit</i>
               </div>
             </div>
@@ -297,12 +306,19 @@ KI,48.143640,11.603463,Hans
     
     <div style="clear:both"></div>
 
-    <div class="padding-left" style="overflow:auto; min-width: 300px; margin:0 30px; margin-bottom:30px">
+    <div class="padding-left" style="overflow:auto; min-width: 300px; max-width:1000px; margin:0 30px; margin-bottom:30px">
       <a name="items"></a>
 
       <div id="readmeDiv"></div><br>
 
-      <!--div id="disqus_thread"></div-->
+      <div style="max-width:760px;">
+        Does your community have a connected technology project to add?  
+        To add a listing, update the <a href="https://github.com/modelearth/community/blob/master/map/map.csv">map.csv text</a> 
+        It's easiest to save to a local .csv file, then edit with Libre Office or Excel before pasting back into GitHub. 
+        Or you can fork the <a href="https://github.com/modelearth/community">GitHub Repo</a>, edit locally and commit your update using <a href="https://desktop.github.com/">GitHub Desktop</a>.<br><br><br>
+      </div>
+
+      <div id="disqus_thread"></div>
 
     </div>
 
@@ -322,28 +338,32 @@ KI,48.143640,11.603463,Hans
 
 
       .footerButton {
-        font-size: 10pt;
+        font-size: 12pt;
         padding: 4px 8px 4px 8px;
-        border-radius: 8px;
-        min-height: 32px;
-        height: 32px;
-        background-color: #fff;
-        color: #777;
-        border: 3px solid #aaa;
+        margin:5px;
+        border-radius: 14px;
+        min-height: 20px;
+        height: 20px;
+        background-color: #348ec0;
+        color: #fff;
         text-decoration: none !important;
+        text-align: center;
+        min-width: 80px;
+        displayX: block;
+        float:left;
       }
       .footerButton:hover {
         color:#fff;
-        background: #777;
+        background: blue;
       }
     </style>
 
 
 
   <div id="floatingButtons">
-    <div style="padding-right:30px;float:right">
+    <div style="padding-right:10px;float:right">
       <a href="#gomap" class="footerButton">Map</a>
-      <a href="#list" class="footerButton">List</a>
+      <a href="#top" class="footerButton">List</a>
       <!--
       <a href="#items" class="footerButton">Items</a>
       -->
@@ -351,7 +371,7 @@ KI,48.143640,11.603463,Hans
   </div>
 
   
-    <div style="clear:both; margin-top: 20px; padding:30px; background: #eee; z-index: 2000">
+    <div id="footerBox" style="clear:both; margin-top: 20px; padding:30px; background: #eee; z-index: 2000">
       <!-- gets overlapped
       <a href="https://GitHub.com/modelearth/community/tree/master/map" target="_blank">Edit on GitHub</a>
       -->
@@ -359,505 +379,540 @@ KI,48.143640,11.603463,Hans
       <h2>Share a Ride</h2>
 
       <a href="https://waze.com/carpool" target="waze_carpool">Waze Carpool</a> - Find carpool riders and drivers near you.<br><br>
+      <br><br>
 
     </div>
 
 
-    <script>
-      // Set your own Mapbox access token below.
-      // Restrict which domains your token is loaded through.
-      // https://blog.mapbox.com/url-restrictions-for-access-tokens-5f7f7eb90092
+<script>
+  // Set your own Mapbox access token below.
+  // Restrict which domains your token is loaded through.
+  // https://blog.mapbox.com/url-restrictions-for-access-tokens-5f7f7eb90092
 
-      var mbAttrX = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-          mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
-      var mbAttr = '',
-          mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+  var mbAttrX = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+  var mbAttr = '',
+      mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
 
-      var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-          satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
-          streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+  var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+      satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
+      streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
 
-      //var layerGroups = {};
-      var dataParameters = []; 
-      var dp = {};
-      var layerControl = false;
+  //var layerGroups = {};
+  var dataParameters = []; 
+  var dp = {};
+  var layerControl = false;
 
-      //////////////////////////////////////////////////////////////////
-      // Usage:
-      //
-      // data: csv file with 
-      //  lon, lat for position
-      //  one numerical or categorical attribute to be visualized
-      //  + (optional) one attribute calles "address" to be shown in tooltip
-      // 
-      // 1. set class of aside element above to match the name of the data
-      // 2. insert data into aside element
-      // 3. specify the following dp (data parameters) 
-      // 4. initialize map center with [lat, lon]
-      // 5. Load Layers Asynchronously
-      //
-      // options for scales:
-      // "scaleThreshold", "scaleOrdinal", "scaleOrdinal" or "scaleQuantile"
-      //////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
+  // Usage:
+  //
+  // data: csv file with 
+  //  lon, lat for position
+  //  one numerical or categorical attribute to be visualized
+  //  + (optional) one attribute calles "address" to be shown in tooltip
+  // 
+  // 1. set class of aside element above to match the name of the data
+  // 2. insert data into aside element
+  // 3. specify the following dp (data parameters) 
+  // 4. initialize map center with [lat, lon]
+  // 5. Load Layers Asynchronously
+  //
+  // options for scales:
+  // "scaleThreshold", "scaleOrdinal", "scaleOrdinal" or "scaleQuantile"
+  //////////////////////////////////////////////////////////////////
 
-      /////////// LOAD FROM HTML ///////////
+  /////////// LOAD FROM HTML ///////////
 
-      // ------> for more html datasets, copy FROM here
-      // dataset 1
-      
-      dp = {
-        selector: "aside.myDataset",
-        delimiter: ",",
-        numColumns: ["lat","lon","index","address"],
-        valueColumn: "index",
-        scaleType: "scaleThreshold",
-      }
-      dp.name = dp.selector.split(".").pop(); // name: myDataset
-      // specify end
-      dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-      dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-      dp.group = L.layerGroup();
-      //dataParameters.push(dp); // Adds to layer menu - Uncomment to reactivate
-      //addCircles(dp);
-      //addLegend(dp.scale, dp.scaleType, dp.name);
-      
-      // ------> for more html datasets, copy TO here
+  // ------> for more html datasets, copy FROM here
+  // dataset 1
+  
+  dp = {
+    selector: "aside.myDataset",
+    delimiter: ",",
+    numColumns: ["lat","lon","index","address"],
+    valueColumn: "index",
+    scaleType: "scaleThreshold",
+  }
+  dp.name = dp.selector.split(".").pop(); // name: myDataset
+  // specify end
+  dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+  dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+  dp.group = L.layerGroup();
+  //dataParameters.push(dp); // Adds to layer menu - Uncomment to reactivate
+  //addCircles(dp);
+  //addLegend(dp.scale, dp.scaleType, dp.name);
+  
+  // ------> for more html datasets, copy TO here
 
-      // dataset 2 - Example of scaled with color-code for 7 ranges
-      /*
-      dp = {
-        selector: "aside.d2",
-        delimiter: ",",
-        numColumns: ["lat","lon","value"],
-        valueColumn: "value",
-        scaleType: "scaleQuantize",
-      }
-      dp.name = dp.selector.split(".").pop(); // name: d2
-      dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-      dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-      dp.group = L.layerGroup();
-      dataParameters.push(dp);
-      addCircles(dp);
-      addLegend(dp.scale, dp.scaleType, dp.name);
-      */
+  // dataset 2 - Example of scaled with color-code for 7 ranges
+  /*
+  dp = {
+    selector: "aside.d2",
+    delimiter: ",",
+    numColumns: ["lat","lon","value"],
+    valueColumn: "value",
+    scaleType: "scaleQuantize",
+  }
+  dp.name = dp.selector.split(".").pop(); // name: d2
+  dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+  dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+  dp.group = L.layerGroup();
+  dataParameters.push(dp);
+  addCircles(dp);
+  addLegend(dp.scale, dp.scaleType, dp.name);
+  */
 
-      // 3. dataset 3
-      dp = {
-        selector: "aside.Intermodal_Ports",
-        delimiter: ",",
-        numColumns: ["lat","lon"],
-        valueColumn: "value",
-        scaleType: "scaleOrdinal",
-        //scaleType: "scaleQuantile",
-      }
-      //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
-      dp.name = "Intermodal Ports"
-      dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-      dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-      dp.group = L.layerGroup();
-      dataParameters.push(dp);
-      addCircles(dp);
-      // Reactivate once colors differ
-      //addLegend(dp.scale, dp.scaleType, dp.name);
-
-
-
-      function loadFromCSV() {
-        // 5. Load Layers Asynchronously
-        //var dataset = "../community/map/zip/basic/places.csv";
-
-        // Change below
-        // latColumn: "lat",
-        //      lonColumn: "lon",
-        //var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
-
-        var dataset = "map.csv";
-
-        d3.csv(dataset).then(function(d) {
-            dp = {
-              numColumns: ["zip","lat","lon"],
-              valueColumn: "name",
-              latColumn: "lat",
-              lonColumn: "lon",
-              //scaleType: "scaleQuantile",
-              scaleType: "scaleOrdinal",
-            }
-            dp.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
-            dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
-            dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-            dp.group = L.layerGroup();
-            dataParameters.push(dp);
-            overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
-
-            if(layerControl === false) {
-              layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-            }
-            layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
-            //addCircles(dp);
-            addIcons(dp);
-            //addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
-
-            showList(dp);
-
-            // All layers reside in this object:
-            console.log("dataParameters:");
-            console.log(dataParameters);
-
-            // Remove from control and background.
-            //layerControl.removeLayer(grayscale);
-            //map.removeLayer(grayscale);
-
-            
-            //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
-            //map.removeLayer(overlays["myDataset"]); // Remove from map
-
-            map.addLayer(overlays["Smart Data Projects"]);
-        })
-        .catch(function(error){ 
-             alert("Data loading error: " + error)
-        })
-      }
-      loadFromCSV();
+  // 3. dataset 3
+  dp = {
+    selector: "aside.Intermodal_Ports",
+    delimiter: ",",
+    numColumns: ["lat","lon"],
+    valueColumn: "value",
+    scaleType: "scaleOrdinal",
+    //scaleType: "scaleQuantile",
+  }
+  //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
+  dp.name = "Intermodal Ports"
+  dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+  dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+  dp.group = L.layerGroup();
+  dataParameters.push(dp);
+  addCircles(dp);
+  // Reactivate once colors differ
+  //addLegend(dp.scale, dp.scaleType, dp.name);
 
 
-      /////////// MAP SETTINGS ///////////
-      
-      // 33.863516,-84.368775
-      var mapCenter = [32.90,-83.35]; // [latitude, longitude]
 
-      var map = L.map('map', {
-        center: mapCenter,
-        scrollWheelZoom: true,
-        zoom: 7,
-        layers: [grayscale]
-      });
-      // layers: [grayscale, dataParameters[0].group]
+  function loadFromCSV() {
+    // 5. Load Layers Asynchronously
+    //var dataset = "../community/map/zip/basic/places.csv";
 
-      var baseLayers = {
-        "Grayscale": grayscale,
-        "Streets": streets,
-        "Satellite": satellite
-      };
+    // Change below
+    // latColumn: "lat",
+    //      lonColumn: "lon",
+    //var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
 
-      var overlays = {};
-      dataParameters.forEach(function(ele) {
-        overlays[ele.name] = ele.group; // Add to layer menu
-      })
-      if(layerControl === false) {
-        layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-      }
+    var dataset = "map.csv";
 
+    d3.csv(dataset).then(function(d) {
+        dp = {
+          numColumns: ["zip","lat","lon"],
+          valueColumn: "name",
+          latColumn: "lat",
+          lonColumn: "lon",
+          //scaleType: "scaleQuantile",
+          scaleType: "scaleOrdinal",
+        }
+        dp.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
+        dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
+        dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+        dp.group = L.layerGroup();
+        dataParameters.push(dp);
+        overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
 
-        // Sample of single icon - place in addIcons function
-        // Create a semi-transparent bus icon
-        var busIcon = L.IconMaterial.icon({
-          icon: 'local_shipping',            // Name of Material icon
-          iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
-          markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
-          outlineColor: 'rgba(255,0,0,0.5)',            // Marker outline color
-          outlineWidth: 1,                   // Marker outline width 
-        })
+        if(layerControl === false) {
+          layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+        }
+        layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
+        //addCircles(dp);
+        addIcons(dp);
+        //addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
+
+        showList(dp);
+
+        // All layers reside in this object:
+        console.log("dataParameters:");
+        console.log(dataParameters);
+
+        // Remove from control and background.
+        //layerControl.removeLayer(grayscale);
+        //map.removeLayer(grayscale);
+
         
-        // Attach the icon to the marker and add to the map
-        //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
-        
-        // Set .my-div-icon styles in CSS
-        //var myIcon = L.divIcon({className: 'my-div-icon'});
-        //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
+        //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
+        //map.removeLayer(overlays["myDataset"]); // Remove from map
+
+        map.addLayer(overlays["Smart Data Projects"]);
+    })
+    .catch(function(error){ 
+         alert("Data loading error: " + error)
+    })
+  }
+  loadFromCSV();
 
 
-      /////////////////////////////////////////
-      // helper functions
-      /////////////////////////////////////////
-      function addLegend(scale, scaleType, title) {
-        var svg = d3.select("#allLegends")
-          .append("div")
-            .attr("class", "legend "  + title)
-          .append("svg")
-            .style("width", 200);
-            // .styleX("height", 300)
+  /////////// MAP SETTINGS ///////////
+  
+  // 33.863516,-84.368775
+  var mapCenter = [32.90,-83.35]; // [latitude, longitude]
 
-        svg.append("g")
-            .attr("class", "legend")
-            .attr("transform", "translate(20,20)");
+  var map = L.map('map', {
+    center: mapCenter,
+    scrollWheelZoom: true,
+    zoom: 7,
+    layers: [grayscale]
+  });
+  // layers: [grayscale, dataParameters[0].group]
 
-        var legend = d3.legendColor()
-          .labelFormat(d3.format(".2f"))
-          .title(title);
-      
-        if (scaleType === "scaleThreshold") {
-          legend = legend.labels(d3.legendHelpers.thresholdLabels);
-        }
+  var baseLayers = {
+    "Grayscale": grayscale,
+    "Streets": streets,
+    "Satellite": satellite
+  };
 
-        legend.scale(scale);  
-
-        svg.select("g.legend")
-          .call(legend);
-      }
-      
-      function addCircles(dp) {
-        var circle;
-        var colorScale = dp.scale;
-        dp.data.forEach(function(element) {
-          // How to make element always lowercase?
-          console.log("element " + element)
-          if (typeof dp.latColumn == "undefined") {
-            dp.latColumn = "lat";
-          }
-          if (typeof dp.lonColumn == "undefined") {
-            dp.lonColumn = "lon";
-          }
-          circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
-              color: colorScale(element[dp.valueColumn]),
-              fillColor: colorScale(element[dp.valueColumn]),
-              fillOpacity: 1,
-              radius: 500 // was 50
-          }).addTo(dp.group);
-
-          var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
-            if (element.schedule) {
-              output += "Hours: " + element.schedule + "<br>";
-            }
-          if (element[dp.latColumn]) {
-              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
-          }
-          circle.bindPopup(output);
-            // "<br>Latitude: " + element[dp.latColumn] + 
-
-          //alert(output);
-        });
-      }
+  var overlays = {};
+  dataParameters.forEach(function(ele) {
+    overlays[ele.name] = ele.group; // Add to layer menu
+  })
+  if(layerControl === false) {
+    layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+  }
 
 
-      function hex2rgb(hex) {
-        // long version
-        r = hex.match(/^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i);
-        if (r) {
-          return r.slice(1,4).map(function(x) { return parseInt(x, 16); });
-        }
-        // short version
-        r = hex.match(/^#([0-9a-f])([0-9a-f])([0-9a-f])$/i);
-        if (r) {
-          return r.slice(1,4).map(function(x) { return 0x11 * parseInt(x, 16); });
-        }
-        return null;
-      }
-
-      //alert(hex2rgb("#0033ff")); // a pretty blue;
-
-      function addIcons(dp) {
-        var circle;
-        var iconColor, iconColorRGB;
-        var colorScale = dp.scale;
-        dp.data.forEach(function(element) {
-          iconColor = colorScale(element[dp.valueColumn]);
-          // How to make element always lowercase?
-          console.log("element " + element + " iconColor: " + iconColor)
-          if (typeof dp.latColumn == "undefined") {
-            dp.latColumn = "lat";
-          }
-          if (typeof dp.lonColumn == "undefined") {
-            dp.lonColumn = "lon";
-          }
-          iconColorRGB = hex2rgb(iconColor);
-
-        var busIcon = L.IconMaterial.icon({
-          icon: 'star',            // Name of Material icon
-          iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
-          markerColor: 'rgba(' + iconColorRGB + ',0.7)',  // Marker fill color
-          outlineColor: 'rgba(' + iconColorRGB + ',0.7)',            // Marker outline color
-          outlineWidth: 1,                   // Marker outline width 
-        })
-        
-        // Attach the icon to the marker and add to the map
-        //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
-        circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group);
+    // Sample of single icon - place in addIcons function
+    // Create a semi-transparent bus icon
+    var busIcon = L.IconMaterial.icon({
+      icon: 'local_shipping',            // Name of Material icon
+      iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
+      markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
+      outlineColor: 'rgba(255,0,0,0.5)',            // Marker outline color
+      outlineWidth: 1,                   // Marker outline width 
+    })
+    
+    // Attach the icon to the marker and add to the map
+    //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
+    
+    // Set .my-div-icon styles in CSS
+    //var myIcon = L.divIcon({className: 'my-div-icon'});
+    //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
 
 
-          var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
-          if (element.schedule) {
-            output += "Hours: " + element.schedule + "<br>";
-          }
-          if (element.website) {
-            output += "<a href='" + element.website + "' target='_blank'>Website</a>";
-          }
-          if (element.website && element[dp.latColumn]) {
-            output += " | ";
-          }
-          if (element[dp.latColumn]) {
-              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
-          }
-          circle.bindPopup(output);
-            // "<br>Latitude: " + element[dp.latColumn] + 
+  /////////////////////////////////////////
+  // helper functions
+  /////////////////////////////////////////
+  function addLegend(scale, scaleType, title) {
+    var svg = d3.select("#allLegends")
+      .append("div")
+        .attr("class", "legend "  + title)
+      .append("svg")
+        .style("width", 200);
+        // .styleX("height", 300)
 
-          //alert(output);
-        });
-      }
+    svg.append("g")
+        .attr("class", "legend")
+        .attr("transform", "translate(20,20)");
 
-      function showList(dp) {
-
-        var colorScale = dp.scale;
-        dp.data.forEach(function(element) {
-
-
-          var output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
-          output += "<b style='font-size:16px;color:#333'>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>";
-          if (element.phone || element.phone_afterhours) {
-           output += element.phone + " " + element.phone_afterhours + "<br>";
-          }
-          if (element.schedule) {
-           output += "Hours: " + element.schedule + "<br>";
-          }
-          if (element.website) {
-            output += "<a href='" + element.website + "' target='_blank'>Website</a><br>";
-          }
-          if (element.website && element[dp.latColumn]) {
-            output += " | ";
-          }
-          if (element[dp.latColumn]) {
-              output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
-          }
-           output += "<br></div><div style='clear:both'></div>";
-
-          $("#narrowlist").append(output);
-
-          // Detail List with Descriptions
-          output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
-          output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
-
-          output += element.description + "<br>";
-
-          /*
-          output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
-          if (element.phone || element.phone_afterhours) {
-           output += element.phone + " " + element.phone_afterhours + "<br>";
-          }
-          if (element.schedule) {
-           output += "Hours: " + element.schedule + "<br>";
-          }
-           if (element[dp.latColumn]) {
-              output += " - <a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
-          }
-          */
-
-          if (element.website) {
-            // Learn More:
-            output += "<a href='" + element.website + "' style='display:block;margin-top:5px' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","") + "</a><br>";
-          }
-          output += "</div><div style='clear:both'></div>";
-
-          $("#detaillist").append(output);
-
-
-        });
-      }
-
-      // see also: http://d3indepth.com/scales/
-      function getScale(data, scaleType, valueCol) {
-        var scale;
-        if (scaleType === "scaleThreshold") {
-          var min = d3.min(data, function(d) { return d[valueCol]; });
-          var max = d3.max(data, function(d) { return d[valueCol]; });
-          var d = (max-min)/7;
-          scale = d3.scaleThreshold()
-            .domain([min+1*d,min+2*d,min+3*d,min+4*d,min+5*d,min+6*d])
-            .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
-        } else if (scaleType === "scaleQuantize") {
-          scale = d3.scaleQuantize()
-            .domain(d3.extent(data, function(d) { return d[valueCol]; }))
-            .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
-        } else if (scaleType === "scaleQuantile") {
-          scale = d3.scaleQuantile()
-            .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
-            .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);            
-        } else if (scaleType === "scaleOrdinal") {
-          scale = d3.scaleOrdinal()
-            .domain(data.map(function(d) { return d[valueCol]; }))
-            .range(d3.schemePaired);
-        }
-        return scale;
-      }
-
-      function readData(selector, delimiter, columnsNum, valueCol) {
-        var psv = d3.dsvFormat(delimiter);
-        var initialData = psv.parse(removeWhiteSpaces(d3.select(selector).text())); 
-        _data = initialData.filter(function(e) { return e[valueCol].length !== 0; });
-        console.log("Skipped: " + (initialData.length - _data.length) + " rows.");
-        
-        if (typeof columnsNum !== "undefined") {
-          _data.forEach( function (row) {
-            convertToNumber(row, columnsNum);
-          });
-        }
-        //console.log(_data);
-        return _data;
-      }
-      function readCsvData(_data, columnsNum, valueCol) {
-        //console.log(_data);
-        
-        if (typeof columnsNum !== "undefined") {
-          _data.forEach( function (row) {
-            //row = removeWhiteSpaces(row);
-            convertToNumber(row, columnsNum);
-          });
-        }
-        console.log(_data);
-        return _data;
-      }
-      function convertToNumber(d, _columnsNum) {
-        for (var perm in d) {
-          if (_columnsNum.indexOf(perm) > -1)
-            if (Object.prototype.hasOwnProperty.call(d, perm)) {
-              d[perm] = +d[perm];
-            }
-          }  
-        return d;
-      } 
-	  
-	  function removeWhiteSpaces (str) {
-		  return str.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
-	  }
-
-    $(document).ready(function () {
-        $('.expandToFullscreen, .reduceFromFullscreen').click(function(event) {
-            toggleFullScreen();  
-        });
-    });
-    function toggleFullScreen() {
-      if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
-       (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-        // Only if video is not visible. Otherwise become black.
-        $('.moduleBackground').css({'z-index':'0'});   
-        $('.expandFullScreen span').text("Shrink");
-        // To do: Change icon to &#xE5D1;
-        if (document.documentElement.requestFullScreen) {  
-          document.documentElement.requestFullScreen();  
-        } else if (document.documentElement.mozRequestFullScreen) {  
-          document.documentElement.mozRequestFullScreen();  
-        } else if (document.documentElement.webkitRequestFullScreen) {  
-          document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
-        }
-        $('.expandToFullscreen').hide();
-        $('.reduceFromFullscreen').show(); 
-      } else {
-        
-        $('.moduleBackground').css({'z-index':'-1'}); // Allows video to overlap.
-        $('.expandFullScreen span').text("Expand");
-        if (document.cancelFullScreen) {  
-          document.cancelFullScreen();  
-        } else if (document.mozCancelFullScreen) {  
-          document.mozCancelFullScreen();  
-        } else if (document.webkitCancelFullScreen) {  
-          document.webkitCancelFullScreen();  
-        }
-        $('.reduceFromFullscreen').hide();
-        $('.expandToFullscreen').show();
-      }
+    var legend = d3.legendColor()
+      .labelFormat(d3.format(".2f"))
+      .title(title);
+  
+    if (scaleType === "scaleThreshold") {
+      legend = legend.labels(d3.legendHelpers.thresholdLabels);
     }
 
-    </script>
+    legend.scale(scale);  
+
+    svg.select("g.legend")
+      .call(legend);
+  }
+  
+  function addCircles(dp) {
+    var circle;
+    var colorScale = dp.scale;
+    dp.data.forEach(function(element) {
+      // How to make element always lowercase?
+      console.log("element " + element)
+      if (typeof dp.latColumn == "undefined") {
+        dp.latColumn = "lat";
+      }
+      if (typeof dp.lonColumn == "undefined") {
+        dp.lonColumn = "lon";
+      }
+      circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
+          color: colorScale(element[dp.valueColumn]),
+          fillColor: colorScale(element[dp.valueColumn]),
+          fillOpacity: 1,
+          radius: 500 // was 50
+      }).addTo(dp.group);
+
+      var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
+        if (element.schedule) {
+          output += "Hours: " + element.schedule + "<br>";
+        }
+      if (element[dp.latColumn]) {
+          output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
+      }
+      circle.bindPopup(output);
+        // "<br>Latitude: " + element[dp.latColumn] + 
+
+      //alert(output);
+    });
+  }
+
+
+  function hex2rgb(hex) {
+    // long version
+    r = hex.match(/^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i);
+    if (r) {
+      return r.slice(1,4).map(function(x) { return parseInt(x, 16); });
+    }
+    // short version
+    r = hex.match(/^#([0-9a-f])([0-9a-f])([0-9a-f])$/i);
+    if (r) {
+      return r.slice(1,4).map(function(x) { return 0x11 * parseInt(x, 16); });
+    }
+    return null;
+  }
+
+  //alert(hex2rgb("#0033ff")); // a pretty blue;
+
+  function addIcons(dp) {
+    var circle;
+    var iconColor, iconColorRGB;
+    var colorScale = dp.scale;
+    dp.data.forEach(function(element) {
+      iconColor = colorScale(element[dp.valueColumn]);
+      // How to make element always lowercase?
+      console.log("element " + element + " iconColor: " + iconColor)
+      if (typeof dp.latColumn == "undefined") {
+        dp.latColumn = "lat";
+      }
+      if (typeof dp.lonColumn == "undefined") {
+        dp.lonColumn = "lon";
+      }
+      iconColorRGB = hex2rgb(iconColor);
+
+    var busIcon = L.IconMaterial.icon({
+      icon: 'star',            // Name of Material icon
+      iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
+      markerColor: 'rgba(' + iconColorRGB + ',0.7)',  // Marker fill color
+      outlineColor: 'rgba(' + iconColorRGB + ',0.7)',            // Marker outline color
+      outlineWidth: 1,                   // Marker outline width 
+    })
+    
+    // Attach the icon to the marker and add to the map
+    //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
+    circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group);
+
+
+      var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
+      if (element.schedule) {
+        output += "Hours: " + element.schedule + "<br>";
+      }
+      if (element.website) {
+        output += "<a href='" + element.website + "' target='_blank'>Website</a>";
+      }
+      if (element.website && element[dp.latColumn]) {
+        output += " | ";
+      }
+      if (element[dp.latColumn]) {
+          output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
+      }
+      circle.bindPopup(output);
+        // "<br>Latitude: " + element[dp.latColumn] + 
+
+      //alert(output);
+    });
+  }
+
+  function showList(dp) {
+
+    var colorScale = dp.scale;
+    dp.data.forEach(function(element) {
+
+
+      var output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+      output += "<b style='font-size:16px;color:#333'>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>";
+      if (element.phone || element.phone_afterhours) {
+       output += element.phone + " " + element.phone_afterhours + "<br>";
+      }
+      if (element.schedule) {
+       output += "Hours: " + element.schedule + "<br>";
+      }
+      if (element.website) {
+        output += "<a href='" + element.website + "' target='_blank'>Website</a><br>";
+      }
+      if (element.website && element[dp.latColumn]) {
+        output += " | ";
+      }
+      if (element[dp.latColumn]) {
+          output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
+      }
+       output += "<br></div><div style='clear:both'></div>";
+
+      $("#narrowlist").append(output);
+
+      // Detail List with Descriptions
+      output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+      output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
+
+      output += element.description + "<br>";
+
+      /*
+      output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
+      if (element.phone || element.phone_afterhours) {
+       output += element.phone + " " + element.phone_afterhours + "<br>";
+      }
+      if (element.schedule) {
+       output += "Hours: " + element.schedule + "<br>";
+      }
+       if (element[dp.latColumn]) {
+          output += " - <a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
+      }
+      */
+
+      if (element.website) {
+        // Learn More:
+        output += "<a href='" + element.website + "' style='display:block;margin-top:5px' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","") + "</a><br>";
+      }
+      output += "</div><div style='clear:both'></div>";
+
+      $("#detaillist").append(output);
+
+
+    });
+  }
+
+  // see also: http://d3indepth.com/scales/
+  function getScale(data, scaleType, valueCol) {
+    var scale;
+    if (scaleType === "scaleThreshold") {
+      var min = d3.min(data, function(d) { return d[valueCol]; });
+      var max = d3.max(data, function(d) { return d[valueCol]; });
+      var d = (max-min)/7;
+      scale = d3.scaleThreshold()
+        .domain([min+1*d,min+2*d,min+3*d,min+4*d,min+5*d,min+6*d])
+        .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+    } else if (scaleType === "scaleQuantize") {
+      scale = d3.scaleQuantize()
+        .domain(d3.extent(data, function(d) { return d[valueCol]; }))
+        .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+    } else if (scaleType === "scaleQuantile") {
+      scale = d3.scaleQuantile()
+        .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
+        .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);            
+    } else if (scaleType === "scaleOrdinal") {
+      scale = d3.scaleOrdinal()
+        .domain(data.map(function(d) { return d[valueCol]; }))
+        .range(d3.schemePaired);
+    }
+    return scale;
+  }
+
+  function readData(selector, delimiter, columnsNum, valueCol) {
+    var psv = d3.dsvFormat(delimiter);
+    var initialData = psv.parse(removeWhiteSpaces(d3.select(selector).text())); 
+    _data = initialData.filter(function(e) { return e[valueCol].length !== 0; });
+    console.log("Skipped: " + (initialData.length - _data.length) + " rows.");
+    
+    if (typeof columnsNum !== "undefined") {
+      _data.forEach( function (row) {
+        convertToNumber(row, columnsNum);
+      });
+    }
+    //console.log(_data);
+    return _data;
+  }
+  function readCsvData(_data, columnsNum, valueCol) {
+    //console.log(_data);
+    
+    if (typeof columnsNum !== "undefined") {
+      _data.forEach( function (row) {
+        //row = removeWhiteSpaces(row);
+        convertToNumber(row, columnsNum);
+      });
+    }
+    console.log(_data);
+    return _data;
+  }
+  function convertToNumber(d, _columnsNum) {
+    for (var perm in d) {
+      if (_columnsNum.indexOf(perm) > -1)
+        if (Object.prototype.hasOwnProperty.call(d, perm)) {
+          d[perm] = +d[perm];
+        }
+      }  
+    return d;
+  } 
+
+function removeWhiteSpaces (str) {
+  return str.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
+}
+
+$(document).ready(function () {
+    $('.expandToFullscreen, .reduceFromFullscreen').click(function(event) {
+        toggleFullScreen();  
+    });
+});
+function toggleFullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    // Only if video is not visible. Otherwise become black.
+    $('.moduleBackground').css({'z-index':'0'});   
+    $('.expandFullScreen span').text("Shrink");
+    // To do: Change icon to &#xE5D1;
+    if (document.documentElement.requestFullScreen) {  
+      document.documentElement.requestFullScreen();  
+    } else if (document.documentElement.mozRequestFullScreen) {  
+      document.documentElement.mozRequestFullScreen();  
+    } else if (document.documentElement.webkitRequestFullScreen) {  
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+    }
+    $('.expandToFullscreen').hide();
+    $('.reduceFromFullscreen').show(); 
+  } else {
+    
+    $('.moduleBackground').css({'z-index':'-1'}); // Allows video to overlap.
+    $('.expandFullScreen span').text("Expand");
+    if (document.cancelFullScreen) {  
+      document.cancelFullScreen();  
+    } else if (document.mozCancelFullScreen) {  
+      document.mozCancelFullScreen();  
+    } else if (document.webkitCancelFullScreen) {  
+      document.webkitCancelFullScreen();  
+    }
+    $('.reduceFromFullscreen').hide();
+    $('.expandToFullscreen').show();
+  }
+}
+
+var mapStuck = true;
+$(window).scroll(function(){
+  
+  function elementScrolled(elem) // scrolled into view
+  {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+  }
+  function bottomReached(elem) // bottom scrolled into view
+  {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    //var elemTop = $(elem).offset().top;
+    var elemBottom = $(elem).offset().top + $(elem).height() - docViewBottom;
+    //console.log('offset: ' + $(elem).offset().top + ' height:' + $(elem).height() + ' docViewBottom:' + docViewBottom + ' elemBottom: ' + elemBottom);
+    return (elemBottom < 0);
+  }
+
+  // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
+  if(bottomReached('#hublist')) {
+
+    if (mapStuck==true) { // Only unstick when crossing thresehold to minimize interaction with DOM.
+      console.log('bottom Visible');
+      $('.mapHolderFixed').addClass('unstuck');
+      mapStuck = false;
+    }
+  } else {
+    $('.mapHolderFixed').removeClass('unstuck');
+    mapStuck = true;
+  }
+});
+
+</script>
 
     <script>
   loadMarkupPage("README.md", "readmeDiv", "_parent");
