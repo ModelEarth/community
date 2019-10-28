@@ -19,30 +19,31 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 
 3. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
 
-### Project Ideas
+### Project Areas
 
-1. Expand on Python and SQLite pages to pre-processing data as CSV files for display in D3 charts. 
+1. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
+
+2. Expand on Python and SQLite pages to pre-processing data as CSV files for display in D3 charts. 
 Data includes: [industries](industries), [income by zcta](prep/all)<!--[projections](prep/regression/)-->  
 
-2. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
-3. Add D3.js heatmap from USEEIO data to [Goods & Services Report](samples/dataset).
+3. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
 
-4. Analyse [Georgia Recycling data](https://data.georgia.org/#processors) in Leaflet map layers.
+4. Display [Georgia Recycling data](https://data.georgia.org/#processors) in Leaflet map layers.
 
 5. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
 
 6. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
-Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
+Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
-7. Highlight <a href="map">Smart & Mobile Communities</a> on Leaflet map.  Create Georgia <a href="samples/routing/">driving tour routes</a>.
+7. Highlight <a href="map">Smart & Mobile Communities</a> on Leaflet map.  Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 
 8. Include [windy.com](windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
 9. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
 
-10. Display [Farm Fresh - Federal USDA location data merged for Aglanta](farmfresh/ga) location on Leaflet map.  
+10. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
 
 11. Update [NAICS Industry Data](industries) data.
 
