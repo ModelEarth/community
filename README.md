@@ -1,6 +1,6 @@
 <h1 class="h1-home">Community Model Builder</h1>
 
-Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a>.  
+Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a> and join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a>.  
 
 [Starter Samples](samples/) for the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API) and the [World Input-Output Database](http://www.wiod.org).  
 
