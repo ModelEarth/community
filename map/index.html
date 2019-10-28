@@ -891,8 +891,9 @@ $(window).scroll(function(){
   {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
+    var hangover = 150; // Extend into the next section, so map remains visible.
     //var elemTop = $(elem).offset().top;
-    var elemBottom = $(elem).offset().top + $(elem).height() - docViewBottom;
+    var elemBottom = $(elem).offset().top + $(elem).height() + hangover - docViewBottom;
     //console.log('offset: ' + $(elem).offset().top + ' height:' + $(elem).height() + ' docViewBottom:' + docViewBottom + ' elemBottom: ' + elemBottom);
     return (elemBottom < 0);
   }
