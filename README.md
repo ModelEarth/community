@@ -2,7 +2,7 @@
 
 Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a> and join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a>.  
 
-[Starter Samples](samples/) and [Datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API)<!-- and the [World Input-Output Database](http://www.wiod.org).-->.  
+[Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
 ### Schedule  
 
@@ -61,68 +61,6 @@ Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQ
 
 <br>
  
-## About Model
-
-BEA data is provided in 12, 71 and 400 industry sectors.  
-71 sector data is provided annually, 400 sector data is provided every 5 years.  
-
-[https://github.com/usepa/useeio_api](https://github.com/usepa/useeio_api)  
-
-The "Use Table" relates rows of goods and services to industries.  
-
-### Setup Steps
-
-Clone, open Anaconda > Jupyter Notebook > Go to:
-
- http://localhost:8889/tree/Data/USEEIO_API/examples
-
-Use with key in header
-https://api.edap-cluster.com/useeio/api
-
-Change to
-https://smmtool.app.cloud.gov/api/
-
-Note, the API names USEEIO and GAUSEEIO will change by the end 2019.
-
-### Python Examples
-
-[Example Jupyter notebook](https://github.com/usepa/useeio_api/wiki/Use-the-API)  
-
-5) Top 10 inputs to produce soy bean commodity.
-
-Sum of inputs = intermediate consumption
-
-Anything less than $1 is the wages, tax and profit.
-
-<a href="https://github.com/USEPA/USEEIO_API">Overview of the matrix</a>  
-
-A matrix does not include wages (compensation), taxes nor gross opperating surplus (profits) 
-= Value Added (is the sum of these 3)
-
-B matrix = emission per dollar
-Total industry (emmission) / output 
-
-
-D and U matrix are the results
-
-13) See the demand vectors available for the model in their JSON format
-
-Get Demands.  Then at bottom we pass this json object back to the calculate query.
-
-
-
-Scale population to size of community (they have same rate of consumation as average person)
-
-<br>
-
-
-## Deeper Dive (beyond the scope of app building events)
-
-Using <a href="https://github.com/USEPA/USEEIO_API/tree/master/python">Python</a> and <a href="https://github.com/USEPA/USEEIO_API/tree/master/go">GO</a> to extend and compile the USEEIO API.
-
-
-<br>
-
 ## Related Material
 
 <!--
@@ -136,7 +74,9 @@ Responsible sourcing allows manufacturers to...
 
 [Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
 
-[Knoema Infographics](https://knoema.com/infographics) 
-[Data Coverage Matrix](https://knoema.com/atlas/matrix) - A global example to aim for locally.
+[Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global examples to provide locally.  
+
+[World Input-Output Database (WOID)](http://www.wiod.org/otherdb) - [Org for Economic
+Co-operation and Development (OECD)](http://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm)  
 
 
