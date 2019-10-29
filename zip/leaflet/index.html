@@ -1,98 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Industry Mix</title>
-      <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
-      <meta name="robots" content="noindex, nofollow">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Industry Mix</title>
+<link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <style>
-        /* Temporary */
-        .info {
-            display: none;
-        }
+<style>
+/* Temporary */
+.info {
+    display: none;
+}
 
-        html, body {margin:0;padding:0;height:100%;}
-        body { position:relative; }
-        .mapHolder {
-            display: flex;
-            flex-flow: column;
-            height: 100%;
-        }
-        #map {
-          width: 100%;
-          height: 100%;
-        }
-        #allLegends {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            padding-bottom: 20px;
-            background: #fff;
-            z-index: 99999;
-        }
-        .legend {
-            position: relative;
-            widthX: 180px;
-            float: left;
-            z-index: 999999;
-        }
-        .info {
-            padding: 6px 8px;
-            font: 14px/16px Arial, Helvetica, sans-serif;
-            background: white;
-            background: rgba(255,255,255,0.8);
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 5px;
-        }
-        .info h4 {
-            margin: 0 0 5px;
-            color: #777;
-        }
-        #clusterBucketsFooterHolder {
-            position: absolute;
-            top:90px;
-            right:40px;
-            border:1px solid #aaa;
-            heightX:85%;
-            max-height:85%;
-            min-width: 340px;
-            z-index: 400;/* since .leaflet-pane z-index is 400 */
-            overflow: hidden;
-        }
-        #clusterBucketsHolder {
-            /* 100 100 did not work */
-            max-height:94vh;  /* 94% Viewport-relative units */
-            overflow: scroll;
-        }
-        #clusterBuckets {
-            padding: 20px;
-            min-width: 120px;
-            max-width: 300px;
-            background: rgba(255,255,255,0.95);
+html, body {margin:0;padding:0;height:100%;}
+body { position:relative; }
+.mapHolder {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+#allLegends {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+    z-index: 99999;
+}
+.legend {
+    position: relative;
+    widthX: 180px;
+    float: left;
+    z-index: 999999;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+#clusterBucketsFooterHolder {
+    position: absolute;
+    top:90px;
+    right:40px;
+    border:1px solid #aaa;
+    heightX:85%;
+    max-height:85%;
+    min-width: 340px;
+    z-index: 400;/* since .leaflet-pane z-index is 400 */
+    overflow: hidden;
+}
+#clusterBucketsHolder {
+    /* 100 100 did not work */
+    max-height:94vh;  /* 94% Viewport-relative units */
+    overflow: scroll;
+}
+#clusterBuckets {
+    padding: 20px;
+    min-width: 120px;
+    max-width: 300px;
+    background: rgba(255,255,255,0.95);
 
-        }
-        .leaflet-top.leaflet-right {
-            displayXXX:none !important; /* temp */
-        }
-        .leaflet-top.leaflet-left {
-            top: 32px;
-        }
-        #clusterStep3 {
-            position: absolute;
-            bottom:0;left:0;right:0;
-            margin-top:10px;
-            padding:6px 0px 6px 15px;
-            background: #fff;
-            border-top: 1px solid #ccc;
-            z-index: 99999;
-        }
+}
+.leaflet-top.leaflet-right {
+    displayXXX:none !important; /* temp */
+}
+.leaflet-top.leaflet-left {
+    top: 32px;
+}
+#clusterStep3 {
+    position: absolute;
+    bottom:0;left:0;right:0;
+    margin-top:10px;
+    padding:6px 0px 6px 15px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    z-index: 99999;
+}
 
-      </style>
-      <!--
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-        -->
+</style>
+<!--
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+-->
 <!--
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
