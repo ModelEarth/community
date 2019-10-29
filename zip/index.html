@@ -1,44 +1,44 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-    <meta charset='UTF-8'>
-    <meta name="robots" content="noindex, nofollow">
-    <title>Community Forecasting by Zipcode</title>
-    <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script type="text/javascript" src="https://datascape.github.io/community/js/d3/d3.v3.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Community Forecasting by Zipcode</title>
+<link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 
-    <style>
-        body {
-            padding: 50px;
-        }
-        .highcharts-title {
-            font-size: 18pt !important;
-        }
-    </style>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="https://datascape.github.io/community/js/d3/d3.v3.js"></script>
 
-    <!--
-    <script type="text/javascript" src="//d3js.org/d3.v5.min.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    -->
-    
-    <script type="text/javascript" src="../js/jquery/zepto.min.js"></script>
-    <script type="text/javascript" src="../js/common/common.js"></script>
-    <link rel="stylesheet" href="../css/community.css"/>
+<style>
+    body {
+        padding: 50px;
+    }
+    .highcharts-title {
+        font-size: 18pt !important;
+    }
+</style>
 
-    <script type="text/javascript">
-        var zip = param["zip"] || "30318";
-        var zippath = zip.split('').join('/') + '/' + zip;
-        $(document).ready(function () {
-            $('.ziptext').text(zip);
-            $('.DiffBotLink').attr("href",'../resources/diffbot/#zip=' + zip);
-            $('.CorrelationLink').attr("href",'correlation.html#zip=' + zip);
-        });
-    </script>
+<!--
+<script type="text/javascript" src="//d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+-->
+
+<script type="text/javascript" src="../js/jquery/zepto.min.js"></script>
+<script type="text/javascript" src="../js/common/common.js"></script>
+<link rel="stylesheet" href="../css/community.css"/>
+
+<script type="text/javascript">
+    var zip = param["zip"] || "30318";
+    var zippath = zip.split('').join('/') + '/' + zip;
+    $(document).ready(function () {
+        $('.ziptext').text(zip);
+        $('.DiffBotLink').attr("href",'../resources/diffbot/#zip=' + zip);
+        $('.CorrelationLink').attr("href",'correlation.html#zip=' + zip);
+    });
+</script>
 
 </head>
 <body>
