@@ -1,4 +1,4 @@
-/* Changes originate in statedata/community/css/community.css */
+/* Changes originate in modelearth/community/css/community.css */
 
 h1 {
   font-weight: 200;
@@ -13,7 +13,7 @@ h3 {
 body {
   margin:0px;
   padding:0px;
-  background: #fff;
+  background-color: #fafafa;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
 }
@@ -26,6 +26,18 @@ iframe {
   /* min-height: 94vh; */   /* Viewport-relative units - made disqus too tall. */
   width: 100%;
 }
+
+/* material design */
+.card {
+    background: #fff;
+    min-height: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+
 #ds_header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
