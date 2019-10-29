@@ -115,32 +115,41 @@ h2 a:visited {
   text-decoration: none;
 }
 .hideMenu {
-    floatX:right;
-    margin-top:15px;
-    margin-right:-20px;
-    cursor:pointer;
-    color: #AEAEAE;
-    border: 2px solid #AEAEAE;
-    border-radius: 30px;
-    backgroundX: #605F61;
-    font-size: 32px;
-    font-weight: 100;
-    display: inline-block;
-    line-height: 0px;
-    padding: 11px 3px;
-    width:17px;
-    position: relative;
+  margin-top:15px;
+  margin-right:-20px;
+  cursor:pointer;
+  border: 2px solid #AEAEAE;
+  border-radius: 30px;
+  font-size: 32px;
+  font-weight: 100;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  width:17px;
+  position: relative;
 }
 .hideMenu:hover {
   color:#fff;
   border-color: #fff;
 }
+.hideMenuInner {
+  position:absolute;
+  line-height:0px;
+  top:-1px;
+  left:0;
+  color:#999;
+  display: none;
+}
+.hideMenuInner:hover {
+  color:#fff;
+}
 .hideMenu:after {
   position: absolute;
-    top: 10px;
-    left: 2px;
-    align-content: center; /* no effect, delete */
-    content: "×";
+  top: 10px;
+  left: 2px;
+  color:#aaa;
+  align-content: center; /* no effect, delete */
+  content: "×";
 }
 /* @media handheld { */
 @media only screen and (max-width: 479px) { /* Since Lato font not available on Android */
