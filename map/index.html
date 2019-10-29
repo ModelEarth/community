@@ -149,6 +149,10 @@ KI,48.143640,11.603463,Hans
 -->
   
   <style>
+      .leaflet-popup {
+        bottom: 17px !important; 
+        /* Need to move map down more when popup is near top.  Default is -7px. */
+      }
       #floatingButtons {
         display:none;
         height:40px;
@@ -180,17 +184,15 @@ KI,48.143640,11.603463,Hans
         position: fixed;
         width: 46%;
         padding-rightX: 30px; /* since fix is relative to page */
-        box-sizingX: border-box;
       }
       .mapHolderInner {
         widthX:100%;
         margin-right: 80px;
-        border: 1px solid #999;
       }
       #maptop {
         height: 30px;
         border-bottomX: 1px solid #999;
-        background-color: #fafafa;
+        background-color: #fff;
         position: relative;
         color: #555;
         font-size: 16px;
@@ -267,21 +269,11 @@ KI,48.143640,11.603463,Hans
     <a name="gomap"></a>
     <div id="mapHolder">
       <div class="mapHolderFixed">
-        <div class="mapHolderInner">
+        <div class="mapHolderInner card">
           <div id="maptop">
             <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
               Connected Communities
             </div>
-            <div style="position:absolute; right:0;">
-              <div class="expandToFullscreen" style="border:0px; padding: 2px; cursor: pointer">
-                  <i class="material-icons" style="font-size:24px;">&#xE5D0;</i>
-              </div>
-              <div class="reduceFromFullscreen" style="display:none; border:0px; padding: 2px; cursor: pointer">
-                  <i class="material-icons" style="font-size:23px;">fullscreen_exit</i>
-              </div>
-            </div>
-            
-
           </div>
 
           <div style="clear:both">  
@@ -341,6 +333,7 @@ KI,48.143640,11.603463,Hans
         padding: 4px 8px 4px 8px;
         margin:5px;
         border-radius: 14px;
+        border-radius: 4px;
         min-height: 20px;
         height: 20px;
         background-color: #348ec0;
@@ -840,42 +833,8 @@ function removeWhiteSpaces (str) {
   return str.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
 }
 
-$(document).ready(function () {
-    $('.expandToFullscreen, .reduceFromFullscreen').click(function(event) {
-        toggleFullScreen();  
-    });
-});
-function toggleFullScreen() {
-  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
-   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-    // Only if video is not visible. Otherwise become black.
-    $('.moduleBackground').css({'z-index':'0'});   
-    $('.expandFullScreen span').text("Shrink");
-    // To do: Change icon to &#xE5D1;
-    if (document.documentElement.requestFullScreen) {  
-      document.documentElement.requestFullScreen();  
-    } else if (document.documentElement.mozRequestFullScreen) {  
-      document.documentElement.mozRequestFullScreen();  
-    } else if (document.documentElement.webkitRequestFullScreen) {  
-      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
-    }
-    $('.expandToFullscreen').hide();
-    $('.reduceFromFullscreen').show(); 
-  } else {
-    
-    $('.moduleBackground').css({'z-index':'-1'}); // Allows video to overlap.
-    $('.expandFullScreen span').text("Expand");
-    if (document.cancelFullScreen) {  
-      document.cancelFullScreen();  
-    } else if (document.mozCancelFullScreen) {  
-      document.mozCancelFullScreen();  
-    } else if (document.webkitCancelFullScreen) {  
-      document.webkitCancelFullScreen();  
-    }
-    $('.reduceFromFullscreen').hide();
-    $('.expandToFullscreen').show();
-  }
-}
+
+
 
 var mapStuck = true;
 $(window).scroll(function(){

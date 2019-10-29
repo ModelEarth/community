@@ -13,7 +13,7 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
   background-size: 100% 100%;
   float:left; 
   height:60px; width:57px;
-  border-right: 1px solid #ccc;
+  border-rightX: 1px solid #ccc;
   /*
   background:#eee
 	*/
@@ -27,12 +27,29 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 	background-color: #fff;
 	padding:20px;
 }
+.headerbar {
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+}
 </style>
 
 <div id="menuHolder" style="background:#333; display:none">
+
+	<!-- stopped working when moving from page to header. -->
+	<div style="float:right;">
+	      <div class="expandToFullscreen" style="border:0px; padding: 10px; cursor: pointer">
+	          <i class="material-icons" style="font-size:34px;">&#xE5D0;</i>
+	      </div>
+	      <div class="reduceFromFullscreen" style="display:none; border:0px; padding: 10px; cursor: pointer">
+	          <i class="material-icons" style="font-size:33px;">fullscreen_exit</i>
+	      </div>
+    </div>
+
 	<div id="menuTop">
 		<div class="hideMenu"></div>
 	</div>
+
+	
+
 	<div id="menuNav">
 
 		<!-- Side Nav -->
@@ -57,7 +74,7 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 	</div>
 </div>
 
-<div style="height:60px;background:#fff;width:100%;position:fixed;overflow:visible;z-index:1001; border-bottom:1px solid #ddd;">
+<div class="headerbar" style="height:60px;background:#fff;width:100%;position:fixed;overflow:visible;z-index:1001; border-bottom:0px solid #ddd;">
 	
 	<div style="">
 		<a href="" id="logoholder" class="showApps">
@@ -94,11 +111,11 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 			<a href=""><img class="headerLogo" src="img/logo/modelgeorgia.png" /></a>
 			-->
 		</div>
-		<div style="float:left; padding:15px 0 0 20px; font-size: 22px; height:45px;">
+		<div style="float:left; padding:17px 0 0 0px; font-size: 22px; height:45px; margin-left:-13px">
 			<a href="map" class="logolink" style="line-height:32px">
 
-				<span style="color:#777">georgia</span>
-				<div style="padding-top:8px; float:right">
+				<span style="color:#777">Georgia</span>
+				<div style="display:none; padding-top:8px; float:right">
 					<div class="arrowdown"></div>
 				</div>
 			</a>
@@ -117,9 +134,14 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 	<div style="overflow:auto; border-left:0px solid #ccc; height:44px; margin:10px 10px 0 10px; padding-left:16px; font-size:13px">
 
 		<div class="showMenu" style="float:right; font-size:24px; color:#999; margin:7px 0 0 4px">
-			<i class="material-icons" style="font-size: 30px; color:#999; padding-right: 8px">&#xE5C3;</i>
+			<div style="font-size: 28px; color:#999; padding-right: 12px; margin-top:-5px">
+			☰
+			</div>
+			<!--
+			<i class="material-icons" style="font-size: 30px; color:#999; padding-right: 8px">menu</i>
+			-->
 
-			<!--☰-->
+			<!--9up &#xE5C3;  menu ☰-->
 		</div>
 
 		<!-- Top Nav -->
@@ -132,6 +154,44 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 
 
 <script>
+
+$(document).ready(function () {
+	$('.expandToFullscreen, .reduceFromFullscreen').click(function(event) {
+    	toggleFullScreen();  
+    });
+});
+
+function toggleFullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    // Only if video is not visible. Otherwise become black.
+    $('.moduleBackground').css({'z-index':'0'});   
+    $('.expandFullScreen span').text("Shrink");
+    // To do: Change icon to &#xE5D1;
+    if (document.documentElement.requestFullScreen) {  
+      document.documentElement.requestFullScreen();  
+    } else if (document.documentElement.mozRequestFullScreen) {  
+      document.documentElement.mozRequestFullScreen();  
+    } else if (document.documentElement.webkitRequestFullScreen) {  
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+    }
+    $('.expandToFullscreen').hide();
+    $('.reduceFromFullscreen').show(); 
+  } else {
+    
+    $('.moduleBackground').css({'z-index':'-1'}); // Allows video to overlap.
+    $('.expandFullScreen span').text("Expand");
+    if (document.cancelFullScreen) {  
+      document.cancelFullScreen();  
+    } else if (document.mozCancelFullScreen) {  
+      document.mozCancelFullScreen();  
+    } else if (document.webkitCancelFullScreen) {  
+      document.webkitCancelFullScreen();  
+    }
+    $('.reduceFromFullscreen').hide();
+    $('.expandToFullscreen').show();
+  }
+}
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
