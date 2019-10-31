@@ -136,7 +136,7 @@ Savannah,32.10035,-81.169963,NS,1 Charlie Gay Drive,Savannah,GA,31408
 Cordele Intermodal Center,31.966779,-83.755101,Heart GA,2902 East 13th Ave.,Cordele,GA,31010
 Port of Savannah Ocean Terminal,32.093702,-81.111692,"Ro/Ro, Breakbulk",55 N Lathrop Ave,Savannah,GA,31415
 Port of Brunswick,31.125887,-81.541194,"Ro/Ro, Agri-Bulk",157 Penniman Cir,Brunswick,GA,31523
-Port of Savannah,32.125311,-81.151331,Container,2 Main St,Savannah,GA,31407
+Port of Savannah,32.125,-81.151,Container,2 Main St,Savannah,GA,31407
 Port of Brunswick Mayor's Point Terminal,31.143373,-81.494753,Breakbulk,1100 Bay Street,Brunswick,GA,31520
 Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Columbus,GA,31901
 Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817
@@ -434,7 +434,7 @@ KI,48.143640,11.603463,Hans
   dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
   dp.group = L.layerGroup();
   //dataParameters.push(dp); // Adds to layer menu - Uncomment to reactivate
-  //addCircles(dp);
+  //addIcons(dp);
   //addLegend(dp.scale, dp.scaleType, dp.name);
   
   // ------> for more html datasets, copy TO here
@@ -453,11 +453,11 @@ KI,48.143640,11.603463,Hans
   dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
   dp.group = L.layerGroup();
   dataParameters.push(dp);
-  addCircles(dp);
+  addIcons(dp);
   addLegend(dp.scale, dp.scaleType, dp.name);
   */
 
-  // 3. dataset 3
+  // INTERMODAL PORTS
   dp = {
     selector: "aside.Intermodal_Ports",
     delimiter: ",",
@@ -469,10 +469,15 @@ KI,48.143640,11.603463,Hans
   //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
   dp.name = "Intermodal Ports"
   dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+  dp.color = '#555'; // Alternative to scale
   dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+
   dp.group = L.layerGroup();
+  //dp.iconName = 'device_hub';
+  dp.iconName = 'language';
   dataParameters.push(dp);
-  addCircles(dp);
+  addIcons(dp);
+  //addIcons(dp);
   // Reactivate once colors differ
   //addLegend(dp.scale, dp.scaleType, dp.name);
 
@@ -502,6 +507,7 @@ KI,48.143640,11.603463,Hans
         dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
         dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
         dp.group = L.layerGroup();
+        dp.iconName = 'star';
         dataParameters.push(dp);
         overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
 
@@ -509,7 +515,6 @@ KI,48.143640,11.603463,Hans
           layerControl = L.control.layers(baseLayers, overlays).addTo(map);
         }
         layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
-        //addCircles(dp);
         addIcons(dp);
         //addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
 
@@ -611,40 +616,6 @@ KI,48.143640,11.603463,Hans
       .call(legend);
   }
   
-  function addCircles(dp) {
-    var circle;
-    var colorScale = dp.scale;
-    dp.data.forEach(function(element) {
-      // How to make element always lowercase?
-      console.log("element " + element)
-      if (typeof dp.latColumn == "undefined") {
-        dp.latColumn = "lat";
-      }
-      if (typeof dp.lonColumn == "undefined") {
-        dp.lonColumn = "lon";
-      }
-      circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
-          color: colorScale(element[dp.valueColumn]),
-          fillColor: colorScale(element[dp.valueColumn]),
-          fillOpacity: 1,
-          radius: 500 // was 50
-      }).addTo(dp.group);
-
-      var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
-        if (element.schedule) {
-          output += "Hours: " + element.schedule + "<br>";
-        }
-      if (element[dp.latColumn]) {
-          output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze  Directions</a><br>";
-      }
-      circle.bindPopup(output);
-        // "<br>Latitude: " + element[dp.latColumn] + 
-
-      //alert(output);
-    });
-  }
-
-
   function hex2rgb(hex) {
     // long version
     r = hex.match(/^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i);
@@ -663,10 +634,13 @@ KI,48.143640,11.603463,Hans
 
   function addIcons(dp) {
     var circle;
-    var iconColor, iconColorRGB;
+    var iconColor, iconColorRGB, iconName;
     var colorScale = dp.scale;
     dp.data.forEach(function(element) {
       iconColor = colorScale(element[dp.valueColumn]);
+      if (dp.color) { 
+        iconColor = dp.color;
+      }
       // How to make element always lowercase?
       console.log("element " + element + " iconColor: " + iconColor)
       if (typeof dp.latColumn == "undefined") {
@@ -676,21 +650,25 @@ KI,48.143640,11.603463,Hans
         dp.lonColumn = "lon";
       }
       iconColorRGB = hex2rgb(iconColor);
-
-    var busIcon = L.IconMaterial.icon({
-      icon: 'star',            // Name of Material icon
-      iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
-      markerColor: 'rgba(' + iconColorRGB + ',0.7)',  // Marker fill color
-      outlineColor: 'rgba(' + iconColorRGB + ',0.7)',            // Marker outline color
-      outlineWidth: 1,                   // Marker outline width 
-    })
+      iconName = dp.iconName;
+      var busIcon = L.IconMaterial.icon({
+        icon: iconName,            // Name of Material icon
+        iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
+        markerColor: 'rgba(' + iconColorRGB + ',0.7)',  // Marker fill color
+        outlineColor: 'rgba(' + iconColorRGB + ',0.7)',            // Marker outline color
+        outlineWidth: 1,                   // Marker outline width 
+      })
     
-    // Attach the icon to the marker and add to the map
-    //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
-    circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group);
+      // Attach the icon to the marker and add to the map
+      //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
+      circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group);
 
 
-      var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>" + element.phone + " " + element.phone_afterhours + "<br>";
+      var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>";
+      if (element.phone || element.phone_afterhours) {
+        output += element.phone + " " + element.phone_afterhours + "<br>";
+      }
+
       if (element.schedule) {
         output += "Hours: " + element.schedule + "<br>";
       }
