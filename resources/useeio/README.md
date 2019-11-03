@@ -1,4 +1,3 @@
-
 ## About Model
 
 BEA data is provided in 12, 71 and 400 industry sectors.  
