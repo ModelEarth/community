@@ -20,6 +20,7 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 
 3. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
 
+
 ### Project Areas
 
 1. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
@@ -27,11 +28,10 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 2. Expand on Python and SQLite pages to pre-processing data as CSV files for display in D3 charts. 
 Data includes: [industries](industries), [income by zcta](prep/all)<!--[projections](prep/regression/)-->  
 
-
 3. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
 
-4. Display [Georgia Recycling data](https://data.georgia.org/#processors) in Leaflet map layers.
+4. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
 
 5. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
 
@@ -74,7 +74,7 @@ Responsible sourcing allows manufacturers to...
 [Recycling and Resource Recovery as a Tool for Regional Economic Development](https://www.epa.gov/smm/sustainable-materials-management-smm-web-academy-webinar-recycling-and-resource-recovery-tool) - Webinar: Nov 20, 2019, 1PM  
 
 [OECD - Organization for Economic
-Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France  
+Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France, Nice!  
 
 <!-- GEOD - Global Economic Open Database  -->
 
