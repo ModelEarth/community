@@ -10,14 +10,16 @@
 </style>
 
 <div id="boldlinks">
-	
+
 <a href="https://www.google.com/search?q=Recycling+near+me" target="_blank">Recycling Centers Near Me - Google</a>
 
 <!--
 RecycleSearch.com doesn't work in iFrame. Returns New York.
+Also lacks CHARM.  Far from comprehensive.
 -->
+<!--
 <a href="https://recyclesearch.com" target="_blank">Recycling Centers - RecycleSearch.com</a>
-
+-->
 <a href="https://data.georgia.org/#processors" target="_blank">Recycling Processors (B2B)</a>
 
 <a href="https://data.georgia.org/#transfer" target="_blank">Recycling Transfer Stations (B2B)</a>
