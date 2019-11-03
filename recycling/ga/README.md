@@ -10,24 +10,26 @@
 </style>
 
 <div id="boldlinks">
+	
 <a href="https://www.google.com/search?q=Recycling+near+me" target="_blank">Recycling Centers Near Me - Google</a>
 
-<a href="https://recyclesearch.com" target="_blank">Recycling Centers - RecycleSearch.com</a>
-</div>
 <!--
-Doesn't work in iFrame. Returns New York.
+RecycleSearch.com doesn't work in iFrame. Returns New York.
 -->
+<a href="https://recyclesearch.com" target="_blank">Recycling Centers - RecycleSearch.com</a>
 
+<a href="https://data.georgia.org/#processors" target="_blank">Recycling Processors (B2B)</a>
 
-### [Recycling Processors (B2B)](https://data.georgia.org/#processors)  
+<a href="https://data.georgia.org/#transfer" target="_blank">Recycling Transfer Stations (B2B)</a>
 
-### [Recycling Transfer Stations (B2B)](https://data.georgia.org/#transfer)   
+<a href="https://data.georgia.org/#recyclers" target="_blank">Companies that Recycle during Manufacturing</a>
 
-### [Companies that Recycle during Manufacturing](https://data.georgia.org/#recyclers)  
+<a href="https://data.georgia.org/#inert_waste_landfills" target="_blank">Inert Waste Landfills</a>
 
-### [Inert Waste Landfills](https://data.georgia.org/#inert_waste_landfills)  
+<a href="https://data.georgia.org/#landfills" target="_blank">Landfills</a>
 
-### [Landfills](https://data.georgia.org/#landfills)  
+</div>
+ 
 
 <br><hr><br>
 CSV data above was copied into this GitHub Repo from CartoDB on Sept 25, 2019.  
