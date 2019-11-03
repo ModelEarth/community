@@ -1,21 +1,23 @@
 # Georgia Recycling
 
 <style>
-#boldlinks {
+#boldlinks a {
 	font-size: 1.17em;
     font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
 }
 </style>
 
 <div id="boldlinks">
-<a href="https://www.google.com/search?q=Recycling+near+me" target="_blank">Recycling Centers Near Me - Google</a>  
+<a href="https://www.google.com/search?q=Recycling+near+me" target="_blank">Recycling Centers Near Me - Google</a>
 
+<a href="https://recyclesearch.com" target="_blank">Recycling Centers - RecycleSearch.com</a>
 </div>
-
 <!--
 Doesn't work in iFrame. Returns New York.
 -->
-### [Recycling Centers - recyclesearch.com](https://recyclesearch.com) 
+
 
 ### [Recycling Processors (B2B)](https://data.georgia.org/#processors)  
 
