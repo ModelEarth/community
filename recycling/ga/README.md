@@ -11,24 +11,24 @@
 
 <div id="boldlinks">
 
-<a href="https://www.google.com/search?q=Recycling+near+me" target="_blank">Recycling Centers Near Me - Google</a>
+<a href="https://www.google.com/search?q=Recycling+near+me" target="_parent">Recycling Centers Near Me - Google</a>
 
 <!--
 RecycleSearch.com doesn't work in iFrame. Returns New York.
 Also lacks CHARM.  Far from comprehensive.
 -->
 <!--
-<a href="https://recyclesearch.com" target="_blank">Recycling Centers - RecycleSearch.com</a>
+<a href="https://recyclesearch.com" target="_parent">Recycling Centers - RecycleSearch.com</a>
 -->
-<a href="https://data.georgia.org/#processors" target="_blank">Recycling Processors (B2B)</a>
+<a href="https://data.georgia.org/#processors" target="_parent">Recycling Processors (B2B)</a>
 
-<a href="https://data.georgia.org/#transfer" target="_blank">Recycling Transfer Stations (B2B)</a>
+<a href="https://data.georgia.org/#transfer" target="_parent">Recycling Transfer Stations (B2B)</a>
 
-<a href="https://data.georgia.org/#recyclers" target="_blank">Companies that Recycle during Manufacturing</a>
+<a href="https://data.georgia.org/#recyclers" target="_parent">Companies that Recycle during Manufacturing</a>
 
-<a href="https://data.georgia.org/#inert_waste_landfills" target="_blank">Inert Waste Landfills</a>
+<a href="https://data.georgia.org/#inert_waste_landfills" target="_parent">Inert Waste Landfills</a>
 
-<a href="https://data.georgia.org/#landfills" target="_blank">Landfills</a>
+<a href="https://data.georgia.org/#landfills" target="_parent">Landfills</a>
 
 </div>
  
