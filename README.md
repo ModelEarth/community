@@ -1,6 +1,7 @@
 <h1 class="h1-home">Community Model Builder</h1>
 
-Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a> and join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a>.  
+Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a> and join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a>.
+
 
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
@@ -68,6 +69,12 @@ There is growing trend across industry to trace the entire supply chain.
 Responsible sourcing allows manufacturers to...
 -->
 
+
+[OECD - Organization for Economic
+Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm)  
+
+<!-- GEOD - Global Economic Open Database  -->
+
 [Leyla Acaroglu on Life Cyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)  
 
 [Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
@@ -76,7 +83,28 @@ Responsible sourcing allows manufacturers to...
 
 [Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global examples to provide locally.  
 
-[World Input-Output Database (WOID)](http://www.wiod.org/otherdb) - [Org for Economic
-Co-operation and Development (OECD)](http://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm)  
+[World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
+<br>
+
+## Team Projects
+
+<a href="https://poloclub.github.io/#cse6242">Georgia Tech Data and Visual Analytics teams</a> will have an opportunity to expand on model visualization using machine learning.  
+
+
+
+<!-- Re-connect with Polo in early January. Provide: 
+
+1) Description of problem (e.g., high level problems, opportunities for ML, vis, the combination, etc.)
+
+2) Description of data (how students will access them, how large, etc.)
+
+3) Ways to communicate with you over the course of project (e.g., use a Slack group, each project team in a separate private Slack channel)  
+
+https://poloclub.github.io/cse6242-2019fall-campus/project.html
+-->
+
+
+
+
 
 
