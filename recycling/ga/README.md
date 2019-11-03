@@ -1,8 +1,19 @@
 # Georgia Recycling
 
-### [Recycling Centers Near Me - Google](https://www.google.com/search?q=Recycling+near+me)  
+<style>
+#boldlinks {
+	font-size: 1.17em;
+    font-weight: bold;
+}
+</style>
+
+<div id="boldlinks">
+<a href="https://www.google.com/search?q=Recycling+near+me" target="_blank">Recycling Centers Near Me - Google</a>  
+
+</div>
+
 <!--
-Doesn't work in iFrame
+Doesn't work in iFrame. Returns New York.
 -->
 ### [Recycling Centers - recyclesearch.com](https://recyclesearch.com) 
 
