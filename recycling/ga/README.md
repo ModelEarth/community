@@ -37,4 +37,4 @@ Also lacks CHARM.  Far from comprehensive.
 CSV data above was copied into this GitHub Repo from CartoDB on Sept 25, 2019.  
 (Data was updated by epd.georgia.gov in 2016.  Landfills_2017.csv was updated in 2017.)  
 
-<a href="https://github.com/modelearth/community/tree/master/recycling/ga">Click to submit updates</a> - Choose a CSV file, then click the pencil icon to fork this repo.  
+<a href="https://github.com/modelearth/community/tree/master/recycling/ga" target="_parent">Click to submit updates</a> - Choose a CSV file, then click the pencil icon to fork this repo.  
