@@ -69,19 +69,18 @@ There is growing trend across industry to trace the entire supply chain.
 Responsible sourcing allows manufacturers to...
 -->
 
+[Sustainable Material Management](https://www.epa.gov/smm) - US EPA  
+
+[Recycling and Resource Recovery as a Tool for Regional Economic Development](https://www.epa.gov/smm/sustainable-materials-management-smm-web-academy-webinar-recycling-and-resource-recovery-tool) - Webinar: Nov 20, 2019, 1PM  
 
 [OECD - Organization for Economic
-Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm)  
+Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France  
 
 <!-- GEOD - Global Economic Open Database  -->
 
-[Leyla Acaroglu on Life Cyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)  
+[Leyla Acaroglu on Life Cyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)   
 
-[Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
-
-[Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
-
-[Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global examples to provide locally.  
+[Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global models which could be reproduced locally.  
 
 [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
 <br>

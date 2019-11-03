@@ -10,6 +10,13 @@ Stand-alone examples of formatting and displaying community data.
 ## [5. Counties and Zipcodes (maps)](maps) 
 
 <br>
+### Related Resources
+
+[Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
+
+[Content Management Systems for JAMstack Sites](https://headlesscms.org/) 
+
+<br>
 <div class="showGit">
 <a href="https://modelearth.github.io/community/samples/">View as website</a>
 </div>
