@@ -16,8 +16,6 @@
 <!--
 TO DO:
 Update the following .js includes to local links.  
-Legend on right needs to end with last letter in route. This issue also occurs with letter.html page.
-To control route, add waypoints that don't appear as map points.
 -->
 
 <!-- Might be able to remove some of these lines.  At least copy files locally.  -->
@@ -198,10 +196,12 @@ L.Routing.errorControl(control).addTo(map);
 &nbsp; IMPORTANT: SET YOUR OWN MAPBOX KEY PRIOR TO PUBLISHING IN A PRODUCTION SITE.
 -->
 
-<div id="readmeDiv"></div>
+<div class="content">
+	<div id="introDiv"></div>
+</div>
 
 <script>
-  loadMarkupPage("README.md", "readmeDiv", "_parent");
+  loadMarkupPage("intro.md", "introDiv", "_parent");
 </script>
 <link rel="stylesheet" href="../../css/material_icons.css" />
 </body>
