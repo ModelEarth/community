@@ -556,10 +556,18 @@ KI,48.143640,11.603463,Hans
   var map = L.map('map', {
     center: mapCenter,
     scrollWheelZoom: true,
-    zoom: 7,
-    layers: [grayscale]
+    zoom: 7
   });
+  
+  // Add above to include overlays WITHOUT showing in legend:
+  // layers: [dataParameters[0].group]
+
+  // If added both baseLayers and overlays WITHOUT showing in legend:
   // layers: [grayscale, dataParameters[0].group]
+
+  // Avoid layers: [grayscale] above 
+  // - two sets of tiles would be loaded when upper baseLayer is changed using radio buttons.
+  
 
   var baseLayers = {
     "Grayscale": grayscale,
@@ -573,6 +581,7 @@ KI,48.143640,11.603463,Hans
   })
   if(layerControl === false) {
     layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+    baseLayers["Grayscale"].addTo(map); // Set the initial baselayer.
   }
 
 
@@ -659,10 +668,10 @@ KI,48.143640,11.603463,Hans
       iconColorRGB = hex2rgb(iconColor);
       iconName = dp.iconName;
       var busIcon = L.IconMaterial.icon({
-        icon: iconName,            // Name of Material icon
-        iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
+        icon: iconName,            // Name of Material icon - star
+        iconColor: '#fff',         // Material icon color (could be rgba, hex, html name...)
         markerColor: 'rgba(' + iconColorRGB + ',0.7)',  // Marker fill color
-        outlineColor: 'rgba(' + iconColorRGB + ',0.7)',            // Marker outline color
+        outlineColor: 'rgba(' + iconColorRGB + ',0.7)', // Marker outline color
         outlineWidth: 1,                   // Marker outline width 
       })
     
