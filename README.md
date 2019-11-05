@@ -38,7 +38,8 @@ Data includes: [industries](industries), [income by zcta](prep/all)<!--[projecti
 6. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 Or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
-7. Highlight <a href="map">Smart & Mobile Communities</a> on Leaflet map.  Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
+7. Highlight <a href="map">Smart & Mobile Communities</a> on Leaflet map. 
+Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 
 8. Include [windy.com](windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
