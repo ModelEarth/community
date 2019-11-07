@@ -501,7 +501,7 @@ KI,48.143640,11.603463,Hans
 
     var dataset = "map.csv";
 
-    d3.csv(dataset).then(function(d) {
+    d3.csv(dataset).then(function(data) {
         dp = {
           numColumns: ["zip","lat","lon"],
           valueColumn: "name",
@@ -511,7 +511,7 @@ KI,48.143640,11.603463,Hans
           scaleType: "scaleOrdinal",
         }
         dp.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
-        dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
+        dp.data = readCsvData(data, dp.numColumns, dp.valueColumn);
         dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
         dp.group = L.layerGroup();
         dp.iconName = 'star';
@@ -762,7 +762,7 @@ KI,48.143640,11.603463,Hans
     });
   }
 
-  // see also: http://d3indepth.com/scales/
+  // Scales: http://d3indepth.com/scales/
   function getScale(data, scaleType, valueCol) {
     var scale;
     if (scaleType === "scaleThreshold") {
@@ -805,6 +805,9 @@ KI,48.143640,11.603463,Hans
   function readCsvData(_data, columnsNum, valueCol) {
     //console.log(_data);
     
+    // 'for of' loop is more efficient than forEach. 
+    // Also works on objects. You can call it like this 'for let d of Object.entries(data){ }'
+
     if (typeof columnsNum !== "undefined") {
       _data.forEach( function (row) {
         //row = removeWhiteSpaces(row);
