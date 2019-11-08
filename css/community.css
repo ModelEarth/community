@@ -28,7 +28,7 @@ code {
   display: block;
   unicode-bidi: embed;
   font-family: monospace;
-  white-space: pre;
+  white-space: pre-wrap;
 }
 codeX:first-line {
     line-height: 0px;
