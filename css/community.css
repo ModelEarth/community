@@ -7,6 +7,9 @@ h1 {
 .h1-home {
   font-size: 28pt;
 }
+h2 {
+  margin-top: 30px;
+}
 h3 {
   margin-top: 20px;
 }
@@ -17,6 +20,20 @@ body {
   font-size: 12px;
   font-family: 'Lato', sans-serif;
 }
+code {
+  background-color: #eee;
+  padding:15px;
+  border-left: 4px solid #137AD1;
+  margin-bottom: 22px;
+  display: block;
+  unicode-bidi: embed;
+  font-family: monospace;
+  white-space: pre;
+}
+codeX:first-line {
+    line-height: 0px;
+}
+
 .regularText {
     font-size: 14px;
   }
@@ -36,7 +53,6 @@ iframe {
     border-radius: 4px;
     margin-bottom: 30px;
 }
-
 
 #ds_header {
   background-color: #fff;
