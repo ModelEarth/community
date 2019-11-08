@@ -60,6 +60,7 @@ $(document).ready(function(){
 	 		$('#headerLocTitle').html("Georgia");
 	 	} else {
 	 		imageUrl = climbpath + "img/logo/favicon.png"; // model earth
+	 		$('#logospace').css('margin-top','3px');
 	 		$('#logoholder').addClass('logoholder-modelearth');
 	 		$('#headerLocTitle').html("model<span style='color:#bbb;margin-left:1px'>earth</span>");
 	 	}
