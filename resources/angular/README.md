@@ -21,12 +21,17 @@ cd avatar1
 ng serve
 </code>
 
+Choose: Would you like to add Angular routing? y  
+Which stylesheet format would you like to use? SCSS  
+
 Open [http://localhost:4200/](http://localhost:4200/)  
 
 To serve at another port:  ng serve --port 8080  
 Also: --host 0.0.0.0 
 
-Create a library within your project:  
+At this point you'll need to open a new termininal window since the initial one is dedicated to serving the site.  
+
+**Create a library within your project:**  
 
 <code>ng generate library officemap  
 ng build officemap --watch  
