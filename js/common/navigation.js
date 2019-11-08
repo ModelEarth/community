@@ -49,15 +49,26 @@ $(document).ready(function(){
 	      $(this).attr("src", climbpath + $(this).attr('src'));
 	    })
 
+ 		// Set here so path works at all levels.
+
  		// To do: fetch the existing background-image.
- 		var imageUrl = climbpath + "img/logo/georgia-icon-on-gray.png"; // georgia-icon-on-gray.png
+ 		var imageUrl;
+ 		if(location.host.indexOf('georgia') >= 0) {
+	 		imageUrl = climbpath + "img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
+	 		$('#logoholder').addClass('logoholder-state');
+	 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
+	 		$('#headerLocTitle').html("Georgia");
+	 	} else {
+	 		imageUrl = climbpath + "img/logo/favicon.png"; // model earth
+	 		$('#logoholder').addClass('logoholder-modelearth');
+	 		$('#headerLocTitle').html("model<span style='color:#bbb;margin-left:1px'>earth</span>");
+	 	}
 
- 		imageUrl = climbpath + "img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
-
- 		//var imageUrl = climbpath + "img/logo/earth-globe.png";
  		$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
- 		$('#logoholder').css('background-size', '70% 70%');
- 		$('#logoholder').css('width', '80px');
+		$('#logoholder').css('background-repeat', 'no-repeat');
+
+ 		//$('#logoholder').css('background-size', '70% 70%');
+
  		$('#logoholder').css('margin-left', '20px');
 
  		//$('#logoholder').css('background-size', '70% 70%');

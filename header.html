@@ -9,14 +9,38 @@
 Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 */
 #logoholder {
-  background:url(img/logo/georgia-icon-on-gray.png) no-repeat;
   background-size: 100% 100%;
   float:left; 
-  height:60px; width:57px;
-  border-rightX: 1px solid #ccc;
-  /*
-  background:#eee
-	*/
+}
+
+.logoholder-state {
+	background:url(img/logo/georgia-icon-on-gray.png) no-repeat;
+	margin-top: 5px;
+	height:50px;
+  	width:70px;
+}
+.logoholder-modelearth {
+	background-image:url(../../img/logo/favicon.png) no-repeat;
+	margin-top: 15px;
+	margin-right: 24px;
+	height:25px; 
+	width:25px;
+}
+#headerLocTitleHolder {
+	float:left;
+	padding:10px 0 0 0px;
+	font-size: 22px;
+	height:45px; 
+	margin-left:-16px;
+	
+}
+.headerLocTitleHolder-state {
+	margin-top: 7px;
+}
+#headerLocTitle {
+	font-size: 24px;
+	color: #777;
+	letter-spacing: 2px;
 }
 #homeMenu {
 	display: none;
@@ -83,7 +107,7 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 			<i style="display:none;" class="material-icons" style="font-size: 24px; color:#777">&#xE5C3;</i>
 				
 		</a>
-		<div style="display:none; float:left; padding:15px 20px 0 20px">
+		<div style="display:none; float:left; padding:8px 20px 0 20px">
 
 			
 			<div style="font-size: 22px">
@@ -111,10 +135,10 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 			<a href=""><img class="headerLogo" src="img/logo/modelgeorgia.png" /></a>
 			-->
 		</div>
-		<div style="float:left; padding:17px 0 0 0px; font-size: 22px; height:45px; margin-left:-13px">
+		<div id="headerLocTitleHolder">
 			<a href="map" class="logolink" style="line-height:32px">
 
-				<span style="color:#777">Georgia</span>
+				<span id="headerLocTitle"></span>
 				<div style="display:none; padding-top:8px; float:right">
 					<div class="arrowdown"></div>
 				</div>
@@ -154,13 +178,6 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 
 
 <script>
-
-$(document).ready(function () {
-	$('.expandToFullscreen, .reduceFromFullscreen').click(function(event) {
-    	toggleFullScreen();  
-    });
-});
-
 function toggleFullScreen() {
   if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
    (!document.mozFullScreen && !document.webkitIsFullScreen)) {
