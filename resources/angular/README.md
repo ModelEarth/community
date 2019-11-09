@@ -1,6 +1,6 @@
 # Angular  
 
-The following steps are being documented to deploy the officemap sample as an npm library.  
+The following steps are being documented to deploy the @modelearth/officemap sample as an npm library.  
 
 First confirm that you have Angular available.  
 
@@ -10,9 +10,15 @@ If the command above returns "command not found", update npm and node. Mac users
 
 <code>npm install -g @angular/cli</code>  
 
-## Angular Module 
+The following steps were prepared using Angular 8. 
+Check for changes in the [Angular Update Guide](https://update.angular.io/)  
 
+
+## Angular Module 
+<!--
 [Angular 6 - Create a module that can be installed with NPM](https://www.competa.com/blog/angular-6-create-a-module-that-can-be-installed-with-npm/)  
+-->
+[Creating Libraries](https://angular.io/guide/creating-libraries)
 
 Create a new project:  
 
@@ -33,10 +39,11 @@ At this point you'll need to open a new termininal window since the initial one 
 
 **Create a library within your project:**  
 
+"modelearth" is the npm username. The unique name avoids conflicts with other npm repos.    
 
-<code>ng generate library officemap  
-ng build officemap --watch  
-</code>
+<code>ng generate library @modelearth/officemap</code>
+
+--watch is included for faster incremental (partial) builds which emit amended files.  
 
 Note: Your app can not use your library before you build it.
 <!--
@@ -48,27 +55,50 @@ If upgrading, since already the default.
 }</code>
 -->
 
+<code>ng build @modelearth/officemap --watch
+ng test @modelearth/officemap
+ng lint @modelearth/officemap
+</code>
 
-Add to projects/officemap/src/lib/officemap.module.ts  
+The Angular test uses Karma with Jasmine.  (Cypress is used for the Hero app test below.)
+
+The public API for your library is maintained in the public-api.ts file in your library folder.  
+
+
+While working on a published library, you can use npm link to avoid reinstalling the library on every build.  
+
+<!-- ng build did not completing with this on work computer...  -->
+
+<!--
+Skip next 2. May not apply to Angular 8: Add to projects/@modelearth/officemap/src/lib/@modelearth/officemap.module.ts  
 (Need to confirm adding these next two lines are needed.)
-<!-- ng build is not completing with this on work computer...  -->
-
-<code>import { OfficemapModule } from 'officemap';</code>
+<code>import { @modelearth/officemapModule } from '@modelearth/officemap';</code>
 
 And in the imports array in the same .ts file:  
+<code>imports: [@modelearth/officemapModule]</code>
+-->
 
-<code>imports: [OfficemapModule]</code>
 
+<!--
+--prod flag Not used anymore for library builds since Ahead-of-Time (AOT) compiler is automatically applied.
+https://angular.io/guide/aot-compiler
 
 Build for production:  
 
-<code>ng build officemap --prod</code>
+<code>ng build @modelearth/officemap --prod</code>
+-->
+
+
 
 Publish to npm:  
 
-<code>cd dist/avatar1  
-npm publish
+<code>cd dist/modelearth/officemap 
+npm login
+npm publish --access=public
 </code>
+
+
+After a few minutes, your package will appear in your list of packages: [https://www.npmjs.com/~modelearth](https://www.npmjs.com/~modelearth)  
 
 
 ## Heros App
