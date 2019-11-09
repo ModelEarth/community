@@ -1,6 +1,7 @@
 # Angular  
 
-The following steps are being documented to deploy the @modelearth/officemap sample as an npm library.  
+The following documents how to deploy an npm library using Angular.  
+You can replace "modelearth" with your unique npm username. 
 
 First confirm that you have Angular available.  
 
@@ -11,7 +12,7 @@ If the command above returns "command not found", update npm and node. Mac users
 <code>npm install -g @angular/cli</code>  
 
 The following steps were prepared using Angular 8. 
-Check for changes in the [Angular Update Guide](https://update.angular.io/)  
+Check for version changes in the [Angular Update Guide](https://update.angular.io/)  
 
 
 ## Angular Module 
@@ -38,8 +39,7 @@ Also: --host 0.0.0.0
 At this point you'll need to open a new termininal window since the initial one is dedicated to serving the site.  
 
 **Create a library within your project:**  
-
-"modelearth" is the npm username. The unique name avoids conflicts with other npm repos.    
+   
 
 <code>ng generate library @modelearth/officemap</code>
 
