@@ -50,7 +50,7 @@ If upgrading, since already the default.
 
 
 Add to projects/officemap/src/lib/officemap.module.ts  
-(Need to confirm adding these next two lines is needed.)
+(Need to confirm adding these next two lines are needed.)
 <!-- ng build is not completing with this on work computer...  -->
 
 <code>import { OfficemapModule } from 'officemap';</code>
@@ -94,7 +94,7 @@ Ran npm update again since this error remained: Browserslist: caniuse-lite is ou
 <code>npm run quick</code>
 
 You'll need to close your existing server if it's running on port 4200.  
-Neither of these commands worked for assigning to a different port:  
+Neither of these commands work for assigning to a different port:  
 npm run quick -p 4227  
 ng serve --port 4227 (Frontend loads, but not json backend.)  
 
