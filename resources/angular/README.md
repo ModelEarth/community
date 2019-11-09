@@ -38,7 +38,7 @@ At this point you'll need to open a new termininal window since the initial one 
 ng build officemap --watch  
 </code>
 
-Your app can never use your library before it is built.  
+Note: Your app can not use your library before you build it.
 <!--
 If upgrading, since already the default.
 	Add the following in your tsconfig.lib.json for the --watch command.
@@ -48,9 +48,10 @@ If upgrading, since already the default.
 }</code>
 -->
 
-Not sure if this is correct.  
-<!-- ng build is not completing with this on work computer...  -->
+
 Add to projects/officemap/src/lib/officemap.module.ts  
+(Need to confirm adding these next two lines is needed.)
+<!-- ng build is not completing with this on work computer...  -->
 
 <code>import { OfficemapModule } from 'officemap';</code>
 
@@ -68,3 +69,36 @@ Publish to npm:
 <code>cd dist/avatar1  
 npm publish
 </code>
+
+
+## Heros App
+
+We'll be adding a map to John Papa's Angular Hero app, which provides an opportunity to compare Angular with Vue and React, and includes Cypress for testing.  
+
+[heroes-angular](https://github.com/johnpapa/heroes-angular)
+
+<code>npm install</code>
+
+After npm update, followed instructions to update and fix.  
+<!--Might not be necessary, note error next time.-->
+Next time, check if reloading pages retains user edit prior to updating.  
+
+<code>npm update
+npm audit fix</code>
+
+<!--
+No effect:
+Ran npm update again since this error remained: Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+-->
+
+<code>npm run quick</code>
+
+Neither of these worked for assigning to an open port, so closed existing server to open 4200:  
+npm run quick -p 4227  
+ng serve --port 4227 (Frontend loads, but not json backend.)  
+
+
+
+<code>npm run cypress</code>
+
+Same as running: node_modules/.bin/cypress open  
