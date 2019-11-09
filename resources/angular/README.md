@@ -93,11 +93,12 @@ Ran npm update again since this error remained: Browserslist: caniuse-lite is ou
 
 <code>npm run quick</code>
 
-Neither of these worked for assigning to an open port, so closed existing server to open 4200:  
+You'll need to close your existing server if it's running on port 4200.  
+Neither of these commands worked for assigning to a different port:  
 npm run quick -p 4227  
 ng serve --port 4227 (Frontend loads, but not json backend.)  
 
-
+Open Cypress to run tests:  
 
 <code>npm run cypress</code>
 
