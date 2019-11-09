@@ -33,11 +33,23 @@ At this point you'll need to open a new termininal window since the initial one 
 
 **Create a library within your project:**  
 
+
 <code>ng generate library officemap  
 ng build officemap --watch  
 </code>
 
-<!--Not sure if this is correct.  ng build is not completing.  -->
+Your app can never use your library before it is built.  
+<!--
+If upgrading, since already the default.
+	Add the following in your tsconfig.lib.json for the --watch command.
+
+<code>"angularCompilerOptions": {
+    "enableResourceInlining": true,
+}</code>
+-->
+
+Not sure if this is correct.  
+<!-- ng build is not completing with this on work computer...  -->
 Add to projects/officemap/src/lib/officemap.module.ts  
 
 <code>import { OfficemapModule } from 'officemap';</code>
