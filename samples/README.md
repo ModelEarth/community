@@ -14,7 +14,9 @@ Stand-alone examples of formatting and displaying community data.
 
 [Using GitHub as a Data Lake](https://dzone.com/articles/using-github-as-a-data-lake)  
 
-[Content Management Systems for JAMstack Sites](https://headlesscms.org/) 
+[Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
+
+VueJS: [Gridsome](https://gridsome.org/) and [Element Table](https://element.bootstrap-table.com/examples/)    
 
 <br>
 <div class="showGit">
