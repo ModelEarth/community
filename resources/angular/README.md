@@ -19,7 +19,7 @@ Check for version changes in the [Angular Update Guide](https://update.angular.i
 <!--
 [Angular 6 - Create a module that can be installed with NPM](https://www.competa.com/blog/angular-6-create-a-module-that-can-be-installed-with-npm/)  
 -->
-[Creating Libraries](https://angular.io/guide/creating-libraries)
+Based on [Angular.io Creating Libraries](https://angular.io/guide/creating-libraries)
 
 Create a new project:  
 
