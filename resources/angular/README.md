@@ -109,9 +109,18 @@ We'll be adding a map to John Papa's Angular Hero app, which provides an opportu
 
 <code>npm install</code>
 
-After npm update, followed instructions to update and fix.  
-<!--Might not be necessary, note error next time.-->
-Next time, check if reloading pages retains user edit prior to updating.  
+Launch the app on port 4200:  
+
+```
+npm run quick
+```
+
+You'll need to close your existing server if it's running on port 4200.  
+Neither of these commands assigned to a different port:  
+npm run quick -p 4227  
+ng serve --port 4227 (Frontend loads, but not json backend.)  
+
+The next two commands may be needed if your edits disappear after hitting refresh.     
 
 <code>npm update
 npm audit fix</code>
@@ -120,13 +129,6 @@ npm audit fix</code>
 No effect:
 Ran npm update again since this error remained: Browserslist: caniuse-lite is outdated. Please run next command `npm update`
 -->
-
-<code>npm run quick</code>
-
-You'll need to close your existing server if it's running on port 4200.  
-Neither of these commands work for assigning to a different port:  
-npm run quick -p 4227  
-ng serve --port 4227 (Frontend loads, but not json backend.)  
 
 Open Cypress to run tests:  
 
