@@ -135,3 +135,8 @@ Open Cypress to run tests:
 <code>npm run cypress</code>
 
 Same as running: node_modules/.bin/cypress open  
+
+
+## HERE Location Data
+
+Next we'll [Render and Interact with HERE Location Data using Leaflet and Angular](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular)
