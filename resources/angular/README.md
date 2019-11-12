@@ -40,7 +40,7 @@ At this point you'll need to open a new termininal window since the initial one 
 
 **Create a library within your project:**  
    
-You can replace "modelearth" with your unique npm username.  
+You can replace "modelearth" with your unique [npm](https://www.npmjs.com/) username.  
 
 <code>ng generate library @modelearth/officemap</code>
 
@@ -142,11 +142,15 @@ Same as running: node_modules/.bin/cypress open
 
 Next we'll [Render and Interact with HERE Location Data using Leaflet and Angular](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular)  
 
-Create a new Angular project.  
+Create a new Angular project.  Since this is a simple project, we won’t have a router. CSS can also be selected.
 
 ```
 ng new leaflet-project
+ng update
+ng update rxjs
 ```
+Check if running the above before making changes avoids this response:  
+Repository is not clean.  Please commit or stash any changes before updating.
 
 Add a component.  See link above for additional html.  
 
@@ -163,6 +167,53 @@ We initialize Leaflet within the public ngAfterViewInit, and include the map til
 
 When the dropMarker method is executed, we make a request to the HERE Geocoder API which passes in an address as our searchtext.  
 
+Since we don't have a router, everything will be rendered inside the project’s src/app/app.component.html file.  Add the following:
 
+```
+<here-map #map appId="APP-ID-HERE" appCode="APP-CODE-HERE"></here-map>
+```
+
+In the HERE Developer section, choose your Freemium project. Under the REST & XYZ HUB API/CLI click "Generate App ID and App Code".
+
+Note, it's only a coincidence that we called the attribute #map.
+
+```
+ng serve --port 4202
+```
+
+
+https://angular.io/styleguide#style-09-01  
+
+
+Add below: { read: true, static: false }  and in here-map.component.ts  
+(VS Code will guide you through, including )
+Issue: https://github.com/angular/angular-cli/issues/14553  
+
+For Response error, see comment:  
+const location = result['Response']['View'][0]['Result'][0]['Location']['DisplayPosition'];  
+
+```
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { HereMapComponent } from './here-map/here-map.component';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+
+    @ViewChild('map',{ read: true, static: false })
+    public mapElement: HereMapComponent;
+
+    public ngOnInit() { }
+
+    public ngAfterViewInit() {
+        this.mapElement.dropMarker('tracy, ca');
+        this.mapElement.dropMarker('lathrop, ca');
+    }
+
+}
+```
 
 
