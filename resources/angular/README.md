@@ -159,6 +159,10 @@ here-map.component.html includes a #map attribute as our reference so we can acc
 
 In here-map.component.ts, we set ViewChild to reference our #map attribute from the HTML.  
 
+We initialize Leaflet within the public ngAfterViewInit, and include the map tile API via this.srcTiles.  
+
+When the dropMarker method is executed, we make a request to the HERE Geocoder API which passes in an address as our searchtext.  
+
 
 
 
