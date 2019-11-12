@@ -1,7 +1,7 @@
 # Angular  
 
 The following documents how to deploy an npm library using Angular.  
-In Progress: combining a member list view with the HERE Location API.  
+In Progress: combining a member list view with the HERE Geocoder API for marker positioning by address.  
 
 First, confirm you have Angular CLI installed on your local machine.  
 
@@ -90,7 +90,6 @@ Build for production:
 -->
 
 
-
 Publish to npm:  
 
 <code>cd dist/modelearth/officemap 
@@ -100,6 +99,8 @@ npm publish --access=public
 
 
 After a few minutes, your package will appear in your list of packages: [https://www.npmjs.com/~modelearth](https://www.npmjs.com/~modelearth)  
+
+Also see: [The way the industry publishes packages](https://zellwk.com/blog/publish-to-npm/) for automation with GitHub.  
 
 
 ## Heros App
@@ -140,7 +141,7 @@ Same as running: node_modules/.bin/cypress open
 
 ## HERE Location Data
 
-Next we'll [Render and Interact with HERE Location Data using Leaflet and Angular](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular)  
+Next we'll render a Leaflet map with Angular and display map markers using the HERE Geocoder API.  
 
 Create a new Angular project.  Since this is a simple project, we won’t have a router. CSS can also be selected.
 
@@ -149,17 +150,57 @@ ng new leaflet-project
 ng update
 ng update rxjs
 ```
-Running "ng update rxjs" before making changes below avoids this response:  
+Running "ng update rxjs" before making changes below avoids this response if running later:  
 Repository is not clean.  Please commit or stash any changes before updating.
 
-Add a component.  See link above for additional html.  
+
+Set your src/index.html file as:  
+
+```
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LeafletProject</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css">
+    </head>
+    <body>
+        <app-root></app-root>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    </body>
+</html>
+```
+
+Add a component. 
 
 ```
 ng g component here-map
 ```
 
-here-map.component.html includes a #map attribute as our reference so we can access the DOM element from our TypeScript code.
+Add the following #map attribute to *here-map.component.html* as our reference to the DOM from our TypeScript code.
 
+```
+<div #map [style.height]="height" style="width: 100%;"></div>
+```
+
+[Add script from HERE](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular) 
+
+
+Issue: https://github.com/angular/angular-cli/issues/14553  
+
+Change line 16:
+
+```
+@ViewChild("map")
+```
+To
+
+```
+@ViewChild('map',{ read: true, static: false })
+```
 
 In here-map.component.ts, we set ViewChild to reference our #map attribute from the HTML.  
 
@@ -167,15 +208,31 @@ We initialize Leaflet within the public ngAfterViewInit, and include the map til
 
 When the dropMarker method is executed, we make a request to the HERE Geocoder API which passes in an address as our searchtext.  
 
-Since we don't have a router, everything will be rendered inside the project’s src/app/app.component.html file.  Add the following:
+
+
+
+Change:
+
+```
+let location = result.Response.View[0].Result[0].Location.DisplayPosition;
+```          
+
+To: 
+
+```
+const location = result['Response']['View'][0]['Result'][0]['Location']['DisplayPosition']; 
+```
+
+In the HERE Developer section, choose your Freemium project. Under the REST & XYZ HUB API/CLI click "Generate App ID and App Code".  
+
+Since we don't have a router, everything will be rendered inside the project’s src/app/app.component.html file.  Add the following to the top:  
 
 ```
 <here-map #map appId="APP-ID-HERE" appCode="APP-CODE-HERE"></here-map>
 ```
 
-In the HERE Developer section, choose your Freemium project. Under the REST & XYZ HUB API/CLI click "Generate App ID and App Code".
-
 Note, it's only a coincidence that we called the attribute #map.
+
 
 ```
 ng serve --port 4202
@@ -186,11 +243,8 @@ https://angular.io/styleguide#style-09-01
 
 
 Add below: { read: true, static: false }  and in here-map.component.ts  
-(VS Code will guide you through, including )
-Issue: https://github.com/angular/angular-cli/issues/14553  
-
-For Response error, see comment:  
-const location = result['Response']['View'][0]['Result'][0]['Location']['DisplayPosition'];  
+  
+ 
 
 ```
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
