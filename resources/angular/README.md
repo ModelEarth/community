@@ -149,7 +149,7 @@ ng new leaflet-project
 ng update
 ng update rxjs
 ```
-Check if running the above before making changes avoids this response:  
+Running "ng update rxjs" before making changes below avoids this response:  
 Repository is not clean.  Please commit or stash any changes before updating.
 
 Add a component.  See link above for additional html.  
