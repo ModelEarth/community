@@ -140,4 +140,25 @@ Same as running: node_modules/.bin/cypress open
 
 ## HERE Location Data
 
-Next we'll [Render and Interact with HERE Location Data using Leaflet and Angular](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular)
+Next we'll [Render and Interact with HERE Location Data using Leaflet and Angular](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular)  
+
+Create a new Angular project.  
+
+```
+ng new leaflet-project
+```
+
+Add a component.  See link above for additional html.  
+
+```
+ng g component here-map
+```
+
+here-map.component.html includes a #map attribute as our reference so we can access the DOM element from our TypeScript code.
+
+
+In here-map.component.ts, we set ViewChild to reference our #map attribute from the HTML.  
+
+
+
+
