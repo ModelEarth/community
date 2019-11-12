@@ -186,7 +186,7 @@ Add the following #map attribute to *here-map.component.html* as our reference t
 <div #map [style.height]="height" style="width: 100%;"></div>
 ```
 
-[Add script from HERE](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular) 
+Follow the steps [from HERE](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular) and add the following corrections:   
 
 
 Issue: https://github.com/angular/angular-cli/issues/14553  
@@ -231,8 +231,8 @@ Since we don't have a router, everything will be rendered inside the project’s
 <here-map #map appId="APP-ID-HERE" appCode="APP-CODE-HERE"></here-map>
 ```
 
-Note, it's only a coincidence that we called the attribute #map.
-
+Note, it's only a coincidence that we called the attribute #map.  
+Open in a new port if you are already using default 4200 port.  
 
 ```
 ng serve --port 4202
@@ -243,8 +243,7 @@ https://angular.io/styleguide#style-09-01
 
 
 Add below: { read: true, static: false }  and in here-map.component.ts  
-  
- 
+
 
 ```
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
