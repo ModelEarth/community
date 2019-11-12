@@ -1,9 +1,9 @@
 # Angular  
 
 The following documents how to deploy an npm library using Angular.  
-You can replace "modelearth" with your unique npm username. 
+In Progress: combining a member list view with the HERE Location API.  
 
-First confirm that you have Angular available.  
+First, confirm you have Angular CLI installed on your local machine.  
 
 <code>ng --version</code>
 
@@ -40,6 +40,7 @@ At this point you'll need to open a new termininal window since the initial one 
 
 **Create a library within your project:**  
    
+You can replace "modelearth" with your unique npm username.  
 
 <code>ng generate library @modelearth/officemap</code>
 
