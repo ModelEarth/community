@@ -215,7 +215,7 @@ Change:
 
 ```
 let location = result.Response.View[0].Result[0].Location.DisplayPosition;
-```          
+```
 
 To: 
 
