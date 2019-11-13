@@ -188,7 +188,7 @@ Add the following #map attribute to *here-map.component.html* as our reference t
 
 Follow the steps [from HERE](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular) and add the following corrections:   
 
-BUG: AG version 8 requires changing app.component.ts line 16 to build, then change back to view points in brower.
+Angular 8 requires changing app.component.ts line 16 to build, then change back to view map points in brower.
 
 Issue: https://github.com/angular/angular-cli/issues/14553  
 
