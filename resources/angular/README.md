@@ -139,7 +139,7 @@ Open Cypress to run tests:
 Same as running: node_modules/.bin/cypress open  
 
 
-## HERE Location Data
+## HERE Address Geocoding
 
 Next we'll render a Leaflet map with Angular and display map markers using the HERE Geocoder API.  
 
@@ -227,17 +227,23 @@ const location = result['Response']['View'][0]['Result'][0]['Location']['Display
 
 In the HERE Developer section, choose your Freemium project. Under the REST & XYZ HUB API/CLI click "Generate App ID and App Code".  
 
-Since we don't have a router, everything will be rendered inside the project’s src/app/app.component.html file.  Add the following to the top:  
+Add the following to the top of src/app/app.component.html.
+
+<!--
+	Since we didn't include a router, everything will be rendered inside the project’s file. 
+	Note, calling the attribute #map here is just a coincidence. 
+-->
+
 
 ```
 <here-map #map appId="APP-ID-HERE" appCode="APP-CODE-HERE"></here-map>
 ```
+ 
+Open the geocoder map in a new port if you are already using default 4200 port.  
 
-Note, it's only a coincidence that we called the attribute #map.  
-Open in a new port if you are already using default 4200 port.  
 
 ```
-ng serve --port 4202
+ng serve --port 4201
 ```
 
 <!--
