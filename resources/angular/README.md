@@ -188,6 +188,7 @@ Add the following #map attribute to *here-map.component.html* as our reference t
 
 Follow the steps [from HERE](https://developer.here.com/blog/render-and-interact-with-here-location-data-using-leaflet-and-angular) and add the following corrections:   
 
+BUG: AG version 8 requires changing app.component.ts line 16 to build, then change back to view points in brower.
 
 Issue: https://github.com/angular/angular-cli/issues/14553  
 
@@ -202,15 +203,15 @@ To
 @ViewChild('map',{ read: true, static: false })
 ```
 
+
 In here-map.component.ts, we set ViewChild to reference our #map attribute from the HTML.  
 
 We initialize Leaflet within the public ngAfterViewInit, and include the map tile API via this.srcTiles.  
 
 When the dropMarker method is executed, we make a request to the HERE Geocoder API which passes in an address as our searchtext.  
 
-
-
-
+<!--
+Wasn't needed
 Change:
 
 ```
@@ -222,6 +223,7 @@ To:
 ```
 const location = result['Response']['View'][0]['Result'][0]['Location']['DisplayPosition']; 
 ```
+-->
 
 In the HERE Developer section, choose your Freemium project. Under the REST & XYZ HUB API/CLI click "Generate App ID and App Code".  
 
@@ -238,7 +240,7 @@ Open in a new port if you are already using default 4200 port.
 ng serve --port 4202
 ```
 
-
+<!--
 https://angular.io/styleguide#style-09-01  
 
 
@@ -268,5 +270,5 @@ export class AppComponent implements OnInit {
 
 }
 ```
-
+-->
 
