@@ -13,11 +13,11 @@ Install Gridsome, a static site generator.
 npm install --global @gridsome/cli
 ```
 
-Create a folder called "io" to store your local website:  
+Create a folder called "website" to store your local website:  
 
 ```
-gridsome create io https://github.com/u12206050/gridsome-firebase-starter.git
-cd io
+gridsome create website https://github.com/u12206050/gridsome-firebase-starter.git
+cd website
 npm install
 npm audit fix
 ```
