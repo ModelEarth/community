@@ -140,7 +140,7 @@ style-resources-loader         1.2.1   1.3.2   1.3.2  website
 }
 ```
 
-Running "npm update" returns us to 3 outdated packages, but "addCollection is not a function" (bug 2) returns at /Users/East/Data/website/node_modules/gridsome-source-firestore/index.js:100:32
+Running "npm update" returns us to 3 outdated packages, but "addCollection is not a function" (bug 2) returns at /website/node_modules/gridsome-source-firestore/index.js:100:32
 
 ```
 Package      Current  Wanted  Latest  Location
