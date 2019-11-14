@@ -19,7 +19,7 @@ The "Use Table" relates rows of goods and services to industries.
 
 Clone the useeio_api repo.  
 
-Open [Anaconda](https://www.anaconda.com/distribution/) > Jupyter Notebook  
+Open [Anaconda](https://www.anaconda.com/distribution/) and launch a Jupyter Notebook.  
 
 Your browser will open to a local port, such as http://localhost:8888/tree
 
