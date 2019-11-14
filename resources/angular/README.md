@@ -109,7 +109,9 @@ We'll be adding a map to John Papa's Angular Hero app, which provides an opportu
 
 [heroes-angular](https://github.com/johnpapa/heroes-angular)
 
-<code>npm install</code>
+```
+npm install
+```
 
 Launch the app on port 4200:  
 
