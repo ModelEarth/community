@@ -14,7 +14,7 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 
 ### Summary
 
-1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), static CSV files will be generated for demand vectors (Food System and Full System). 
+1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), static CSV files will be [generated](resources/useeio) for demand vectors (Food System and Full System). 
 
 2. Detailed [Goods & Services Report](samples/dataset) with heatmap providing environmental impact of production choices.   
 
