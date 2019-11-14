@@ -20,7 +20,7 @@ https://stategov.github.io/us/bea/USEEIOv1.1_FinalDemand.csv
 -->
 
 #### Bureau of Economic Analysis (BEA) - <span style='white-space:nowrap'>Industry Sectors</span> 
-[Demand Data](USEEIOv1_1_FinalDemand.csv) - Toggle will be added to show IO total.  
+[Demand Data](USEEIOv1_1_FinalDemand.csv) - Toggle will be added to show Input-Output total dollar values.  
 <span style='white-space: nowrap;'>[USEEIO Data](USEEIO.csv)</span> - Column names will be added for indexes. <span style="white-space:nowrap"><a href="https://smmtool.app.cloud.gov/api/USEEIO/sectors">Source: EPA sectors API</a></span>  
 <!-- http://model.georgia.org/smm-tool-suite/ -->
 
