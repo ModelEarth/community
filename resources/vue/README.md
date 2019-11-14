@@ -1,5 +1,6 @@
 # Vue  
 
+<!-- https://modelearth.github.io/community/resources/vue/ -->
 
 [Gridsome + Firebase: Starter for your next static yet dynamic site](https://medium.com/day4/gridsome-firebase-starter-for-your-next-static-yet-dynamic-site-a0676bb5b8ba)  
 
@@ -28,9 +29,14 @@ Copy the .env.example file and rename to .env.development (Mac)
 cp .env.example .env.development
 ```
 
-Update the .env.development with your firebase credentials.
+Update the .env.development with your Firebase credentials.
+Get from: Settings > General > Your Apps > CDN (radio button)
 <!-- See docs /firebase/login -->
 
+Start a local dev server at http://localhost:8080  
+```
+gridsome develop
+```
 
 BUG 1. - Error: Cannot find module './firebase-adminsdk-credentials.json'  
 When running gridsome develop.  
@@ -53,7 +59,8 @@ BUG 2. - TypeError: addCollection is not a function
 fixed by running "npm install" and "npm audit fix" above.  
 
 
-BUG 3. - Unresolved:  
+
+BUG 3. - Unresolved, Dist folder is not generated.  
 
 at Function.Module._load (internal/modules/cjs/loader.js:724:14)
 (node:17810) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)  
@@ -70,14 +77,6 @@ npm install firebase-admin --save
 -->
 
 
-
-
-
-
-Start a local dev server at http://localhost:8080  
-```
-gridsome develop
-```
 
 npm install -g firebase-tools
 
