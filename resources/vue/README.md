@@ -76,7 +76,80 @@ npm install firebase-admin --save
 ```
 -->
 
+What command(s) to run to update?
 
+```
+npm outdated
+
+Package                      Current  Wanted  Latest  Location
+bundlesize                    0.17.2  0.17.2  0.18.0  website
+gridsome                       0.6.8   0.6.9  0.7.10  website
+gridsome-plugin-tailwindcss   2.2.19  2.2.27  2.2.27  website
+gridsome-source-firestore      1.0.1   1.1.1   1.1.1  website
+node-sass                     4.12.0  4.13.0  4.13.0  website
+sass-loader                    7.3.1   7.3.1   8.0.0  website
+style-resources-loader         1.2.1   1.3.2   1.3.2  website
+
+
+
+{
+  "name": "website",
+  "private": true,
+  "keywords": [
+    "firestore",
+    "gridsome",
+    "gridsome-starter"
+  ],
+  "license": "MIT",
+  "author": "Gerard Lamusse",
+  "scripts": {
+    "build": "gridsome build && bundlesize",
+    "deploy": "gridsome build && mv dist ../public && firebase deploy --only hosting",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "start": "gridsome develop",
+    "test": "bundlesize"
+  },
+  "dependencies": {
+    "gridsome": "^0.6.0",
+    "gridsome-source-firestore": "^1.0.1",
+    "vue-gtm": "^2.2.0",
+    "vue-lazy-hydration": "^1.0.0-beta.9"
+  },
+  "devDependencies": {
+    "bundlesize": "^0.17.2",
+    "gridsome-plugin-tailwindcss": "^2.2.19",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.3.1",
+    "style-resources-loader": "^1.2.1"
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/assets/js/component--*.js",
+      "maxSize": "10 kB"
+    },
+    {
+      "path": "./dist/assets/js/app.*.js",
+      "maxSize": "80 kB"
+    },
+    {
+      "path": "./dist/assets/js/page-query.*.js",
+      "maxSize": "10 kB"
+    }
+  ]
+}
+```
+
+Running "npm update" returns us to 3 outdated packages, but "addCollection is not a function" (bug 2) returns at /Users/East/Data/website/node_modules/gridsome-source-firestore/index.js:100:32
+
+```
+Package      Current  Wanted  Latest  Location
+bundlesize    0.17.2  0.17.2  0.18.0  website
+gridsome       0.6.9   0.6.9  0.7.10  website
+sass-loader    7.3.1   7.3.1   8.0.0  website
+```
+
+------
 
 npm install -g firebase-tools
 
