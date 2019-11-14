@@ -5,7 +5,12 @@
 [Gridsome + Firebase: Starter for your next static yet dynamic site](https://medium.com/day4/gridsome-firebase-starter-for-your-next-static-yet-dynamic-site-a0676bb5b8ba)  
 
 [Gridsome Firebase Starter - GitHub](https://github.com/u12206050/gridsome-firebase-starter)
-<!-- Also potentially usefull https://blog.logrocket.com/vue-firebase-authentication/ -->
+<!-- Also potentially useful https://blog.logrocket.com/vue-firebase-authentication/ -->
+
+<!--
+Posted issue for Bug3 below.
+https://github.com/u12206050/gridsome-firebase-starter/issues/6
+-->
 
 Install Gridsome, a static site generator.
 
