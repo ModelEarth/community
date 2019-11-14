@@ -1,4 +1,6 @@
-## About Model
+# About USEEIO
+
+US Environmentally-Extended Input-Output (USEEIO)  
 
 BEA data is provided in 12, 71 and 400 industry sectors.  
 71 sector data is provided annually, 400 sector data is provided every 5 years.  
@@ -7,7 +9,7 @@ BEA data is provided in 12, 71 and 400 industry sectors.
 
 The "Use Table" relates rows of goods and services to industries.  
 
-### Setup Steps
+## Setup Steps
 
 Clone, open Anaconda > Jupyter Notebook > Go to:
 
@@ -21,7 +23,7 @@ https://smmtool.app.cloud.gov/api/
 
 Note, the API names USEEIO and GAUSEEIO will change by the end 2019.
 
-### Python Examples
+## Python Examples
 
 [Example Jupyter notebook](https://github.com/usepa/useeio_api/wiki/Use-the-API)  
 
