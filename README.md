@@ -101,6 +101,10 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 3) Ways to communicate with you over the course of project (e.g., use a Slack group, each project team in a separate private Slack channel)  
 
 https://poloclub.github.io/cse6242-2019fall-campus/project.html
+
+
+Create a Sankey chart with a return flow:
+https://www.sciencedirect.com/science/article/pii/S0921344917301167
 -->
 
 

@@ -131,15 +131,21 @@ npm audit fix</code>
 
 <!--
 No effect:
-Ran npm update again since this error remained: Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+Ran npm update again since this error remained: 
+Browserslist: caniuse-lite is outdated. Please run next command `npm update`
 -->
 
 Open Cypress to run tests:  
 
 <code>npm run cypress</code>
-
 Same as running: node_modules/.bin/cypress open  
 
+
+Add Papa Parse library [documentation](https://alberthaff.dk/projects/ngx-papaparse/docs/v3)
+
+```
+npm install ngx-papaparse@3 --save
+```
 
 ## HERE Address Geocoding
 
