@@ -278,5 +278,13 @@ export class AppComponent implements OnInit {
 
 }
 ```
+
+User editing and Ivy!
+https://github.com/only2dhir/angular8-demo
+
+Nice Social Login, Display list from an API, Theme toggle
+https://github.com/igniteui/crypto-portfolio-app
+https://www.freecodecamp.org/news/firebase-angular-application-with-auth-and-realtime-database-ae37fef5859d/
+
 -->
 

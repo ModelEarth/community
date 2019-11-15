@@ -6,7 +6,7 @@ The following documents how to use an [Anaconda Jupyter Notebook](https://www.an
 Samples include exporting to a CSV file from the [US Environmentally-Extended Input-Output (USEEIO)](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332) API.  
 
 Bureau of Economic Analysis (BEA) data is organized in 12, 71 and 400 industry sectors.  
-71 sector data is provided annually. 400 sector data is provided every 5 years.  
+Data for 71 sectors is provided annually. Data for 400 sectors is provided every 5 years.  
  
 <!--
 <mark>The "Use Table" relates rows of goods and services to industries.</mark>  
