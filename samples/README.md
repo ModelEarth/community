@@ -17,8 +17,12 @@ Stand-alone examples of formatting and displaying community data.
 
 [Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
 
-VueJS: [Gridsome](https://gridsome.org/) and [Element Table](https://element.bootstrap-table.com/examples/)    
+VueJS: [Frappe/ERPNext](https://frappe.io/frappejs/docs/client/index.md) and 
+[Gridsome](https://gridsome.org/).&nbsp; React: [Gatsby](https://www.gatsbyjs.org/)    
 
+<!--
+	[Element Table](https://element.bootstrap-table.com/examples/) 
+-->
 <br>
 <div class="showGit">
 <a href="https://modelearth.github.io/community/samples/">View as website</a>

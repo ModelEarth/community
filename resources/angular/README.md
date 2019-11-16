@@ -255,7 +255,10 @@ ng serve --open --port $(ruby -e 'require "socket"; puts Addrinfo.tcp("", 0).bin
 ```
 
 
-[Check back regarding npm install errors](https://github.com/SinghDigamber/angularfirebase-authentication/issues/4)
+[Check back regarding npm install errors](https://github.com/SinghDigamber/angularfirebase-authentication/issues/4)  
+
+
+These [Real World Frontends](https://github.com/gothinkster/realworld) all use the same CRUD syntax to interact with multiple backends.
 
 <!--
 https://angular.io/styleguide#style-09-01  
