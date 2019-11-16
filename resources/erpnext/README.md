@@ -10,3 +10,10 @@ https://github.com/frappe/frappe
 
 
 [Install on Mac](https://github.com/frappe/frappe/wiki/The-Hitchhiker's-Guide-to-Installing-Frappe-on-Mac-OS-X)
+
+<!--
+	Also an alternative Docker setup
+	https://discuss.erpnext.com/t/erpnext-docker-image-as-an-alternative-to-official-erpnext-docker-repo/43125
+-->
+
+[Basic Coding Guide for Frappe - By a Farmer](https://medium.com/frapp%C3%A9-thoughts/basic-guide-to-coding-on-frappe-7bf230195426)
