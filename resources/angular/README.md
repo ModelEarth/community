@@ -21,11 +21,11 @@ Check for version changes in the [Angular Update Guide](https://update.angular.i
 -->
 Based on [Angular.io Creating Libraries](https://angular.io/guide/creating-libraries)
 
-Create a new project:  
+Create a new project, and open in an available port:<!-- something like 58674, then increments upward each time. -->  
 
 <code>ng new avatar1
 cd avatar1
-ng serve
+ng serve --open --port $(ruby -e 'require "socket"; puts Addrinfo.tcp("", 0).bind {|s| s.local_address.ip_port }')
 </code>
 
 Choose: Would you like to add Angular routing? y  
@@ -247,12 +247,15 @@ Add the following to the top of src/app/app.component.html.
 <here-map #map appId="APP-ID-HERE" appCode="APP-CODE-HERE"></here-map>
 ```
  
-Open the geocoder map in a new port if you are already using default 4200 port.  
+Open the geocoder map in a new port.  
 
 
 ```
-ng serve --port 4201
+ng serve --open --port $(ruby -e 'require "socket"; puts Addrinfo.tcp("", 0).bind {|s| s.local_address.ip_port }')
 ```
+
+
+[Check back regarding npm install errors](https://github.com/SinghDigamber/angularfirebase-authentication/issues/4)
 
 <!--
 https://angular.io/styleguide#style-09-01  
@@ -288,7 +291,7 @@ export class AppComponent implements OnInit {
 User editing and Ivy!
 https://github.com/only2dhir/angular8-demo
 
-Nice Social Login, Display list from an API, Theme toggle
+Nice Social Login, Display list from an API, theme toggle. Avoiding since a commercial system without elegance.
 https://github.com/igniteui/crypto-portfolio-app
 https://www.freecodecamp.org/news/firebase-angular-application-with-auth-and-realtime-database-ae37fef5859d/
 
