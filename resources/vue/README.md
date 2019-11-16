@@ -2,12 +2,15 @@
 
 <!-- https://modelearth.github.io/community/resources/vue/ -->
 
-Try this: [Build a Vue App with Firebase Authentication and Database](https://blog.bitsrc.io/build-a-vue-app-with-firebase-authentication-and-database-e7d6816f79af)
+Try this next: [Build a Vue App with Firebase Authentication and Database](https://blog.bitsrc.io/build-a-vue-app-with-firebase-authentication-and-database-e7d6816f79af)
 
-[VuePress](https://vuepress.vuejs.org/), [Nuxt](https://nuxtjs.org/).  
+Static site generation: [VuePress](https://vuepress.vuejs.org/) and [Nuxt](https://nuxtjs.org/).  
 
-Errors occured with this Gridsome starter:  
-[Posted issue for Bug3 below.](https://github.com/u12206050/gridsome-firebase-starter/issues/6)  
+---
+
+###Errors occured with this Gridsome Firebase starter:  
+
+[Posted issue for Bug3 below.](https://github.com/u12206050/gridsome-firebase-starter/issues/6) - Check if fixed.  
 
 [Gridsome + Firebase: Starter for your next static yet dynamic site](https://medium.com/day4/gridsome-firebase-starter-for-your-next-static-yet-dynamic-site-a0676bb5b8ba)  
 
