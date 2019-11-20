@@ -207,12 +207,22 @@ KI,48.143640,11.603463,Hans
 
         position: relative;
       }
+
+      .mapHolderBottom {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+      }
       .mapHolderFixed {
         position: fixed;
+        top: 80px;
+        bottom: auto;
         width: 46%;
+        width: 440px;
         padding-rightX: 30px; /* since fix is relative to page */
       }
-      .mapHolderInner {
+      
+      .mapHolderCard {
         widthX:100%;
         margin-right: 80px;
       }
@@ -230,12 +240,8 @@ KI,48.143640,11.603463,Hans
         widthX: 100%;
         box-sizing: border-box;
       }
-      .unstuck {
-        position: absolute;
-        bottom:80px;
-        width:100%;
-      }
-      .unstuck > .mapHolderInner {
+      
+      .mapHolderFixed > .mapHolderCard {
         margin-right: 30px;
       }
 
@@ -281,11 +287,11 @@ KI,48.143640,11.603463,Hans
           margin-left: 30px;
           margin-bottom: 30px;
         }
-        .mapHolderFixed {
+        .mapHolderInner {
           position: relative;
           width: auto;
         }
-        .mapHolderInner {
+        .mapHolderCard {
           heightX:400px;
           margin-right: 30px;
           borderX: 0px solid #fff;
@@ -338,10 +344,15 @@ KI,48.143640,11.603463,Hans
 
       We've assembled the following as starting points for participants in our 2020 sustainable community events.
 
-      <!--
-        build material flow models that 
-      -->
+      <h2>What?</h2>
+      Visual tools for exploring material flow to help communities make informed decisions.
 
+      <h2>How?</h2>
+      By combining local, regional and national datasets with the US EPA's Environmentally-Extended Input-Output API.
+
+      <h2>Why?</h2>
+      Turn waste streams into revenue streams and lower the costs of material input.
+     
   </div>
 
 
@@ -359,8 +370,8 @@ KI,48.143640,11.603463,Hans
 
       <a name="gomap"></a>
       <div id="mapHolder">
-        <div class="mapHolderFixed">
-          <div class="mapHolderInner card">
+        <div class="mapHolderInner">
+          <div class="mapHolderCard card">
             <div id="maptop">
               <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
                 Connected Communities
@@ -996,7 +1007,7 @@ function removeWhiteSpaces (str) {
 
 
 
-var mapStuck = true;
+var mapFixed = false;
 $(window).scroll(function(){
   
   function elementScrolled(elem) // scrolled into view
@@ -1014,20 +1025,42 @@ $(window).scroll(function(){
     //var elemTop = $(elem).offset().top;
     var elemBottom = $(elem).offset().top + $(elem).height() + hangover - docViewBottom;
     //console.log('offset: ' + $(elem).offset().top + ' height:' + $(elem).height() + ' docViewBottom:' + docViewBottom + ' elemBottom: ' + elemBottom);
+    console.log('topReached elemBottom: ' + elemBottom);
     return (elemBottom < 0);
+  }
+  function topReached(elem) // top scrolled out view
+  {
+    var docViewTop = $(window).scrollTop();
+    //var docViewBottom = docViewTop + $(window).height();
+    var pretop = 80; // Extend into the next section, so map remains visible.
+    //var elemTop = $(elem).offset().top;
+    var elemTop = $(elem).offset().top - docViewTop - pretop;
+    //console.log('offset: ' + $(elem).offset().top + ' height:' + $(elem).height() + ' docViewBottom:' + docViewBottom + ' elemBottom: ' + elemBottom);
+    console.log('topReached elemTop: ' + elemTop);
+    return (elemTop < 0);
   }
 
   // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
-  if(bottomReached('#hublist')) {
-
-    if (mapStuck==true) { // Only unstick when crossing thresehold to minimize interaction with DOM.
-      console.log('bottom Visible');
-      $('.mapHolderFixed').addClass('unstuck');
-      mapStuck = false;
+  if (bottomReached('#hublist')) {
+    if (mapFixed==true) { // Only unstick when crossing thresehold to minimize interaction with DOM.
+      //console.log('bottom Visible');
+      $('.mapHolderInner').removeClass('mapHolderFixed');
+      $('.mapHolderInner').addClass('mapHolderBottom');
+      // Needs to be at bottom of dev
+      mapFixed = false;
     }
+  } else if(topReached('#hublist')) {
+    if (mapFixed==false) {
+      $('.mapHolderInner').addClass('mapHolderFixed');
+      $('.mapHolderInner').removeClass('mapHolderBottom');
+      //alert("fixed position")
+      mapFixed = true;
+    }
+  } else if(!topReached('#hublist') && mapFixed == true) { // Not top reached (scrolling down)
+    $('.mapHolderInner').removeClass('mapHolderFixed');
+    mapFixed = false;
   } else {
-    $('.mapHolderFixed').removeClass('unstuck');
-    mapStuck = true;
+    
   }
 });
 

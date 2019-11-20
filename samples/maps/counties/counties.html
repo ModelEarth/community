@@ -348,7 +348,7 @@ function ready([us]) {
 
           var map = new L.Map('mapcon',
           {
-              scrollWheelZoom: true,
+              scrollWheelZoom: false,
               center: new L.LatLng(lat,lon),
               zoom: zoom,
               layers: [OpenStreetMap_BlackAndWhite, dataParameters[0].group] // Indicates default layer
