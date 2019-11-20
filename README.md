@@ -84,6 +84,15 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 [Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global models which could be reproduced locally.  
 
 [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
+
+<!--
+USCSD Materials Marketplace
+https://usbcsd.org/materials
+
+Southern Regional Science Association
+http://www.srsa.org/
+-->
+
 <br>
 
 ## Team Projects
