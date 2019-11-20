@@ -364,6 +364,13 @@ KI,48.143640,11.603463,Hans
           padding-right: 20px;
           box-sizing: border-box;
         }
+        @media (max-width: 700px) {
+          .three div {
+            width:100%;
+            float:none;
+            padding-right:40px;
+          }
+        }
       </style>
 
       <div class='three' style='overflow:auto;'>
@@ -374,7 +381,7 @@ KI,48.143640,11.603463,Hans
         </div>
         <div>
           <h2>Why?</h2>
-          To reap the economic, social and environmental benefits of turning waste streams into revenue streams with lower costs for material input.
+          To reap the economic, social and environmental benefits of turning waste streams into revenue streams with lower costs for material input during production.
         </div>
         <div>
           <h2>How?</h2>
@@ -483,6 +490,10 @@ KI,48.143640,11.603463,Hans
     <h1 style="margin-bottom:0px">Recycling Processors (B2B)</h1>
 
     <iframe class="block-map-directory cf" id="map_directory" src="https://data.georgia.org/site/widget.html#processors" style="width:100%;height:500px"></iframe>
+  
+    <div style="margin-top:18px">
+      <a href="https://data.georgia.org/#recycling">Additional Datasets</a> - Landfills, Inert Waste, Transfer Stations
+    </div>
   </div>
 
 
@@ -536,7 +547,18 @@ KI,48.143640,11.603463,Hans
 
 
 <a name="partners"></a>
-<div id="footerBox" style="clear:both; padding:30px; padding-left:80px;  background: #eee; z-index: 2000; overflow: auto">
+<style>
+  #footerBox {
+    padding:30px; 
+    padding-left:80px;
+  }
+  @media (max-width: 700px) {
+    #footerBox {
+      padding-left:40px; 
+    }
+  }
+</style>
+<div id="footerBox" style="clear:both; background: #eee; z-index: 2000; overflow: auto">
 
   <div style="float:left; margin-right:40px">
     <h2>Partners</h2>
