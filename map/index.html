@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smart & Mobile</title>
+<title>Product Lifecycle Marketplace Modeling</title>
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon-usa-ga.png" />
 
 <!--
@@ -102,6 +102,7 @@ crossorigin=""></script>
     }
     .litePanel {
       background-color: #fff;
+      overflow:auto;
     }
     .padding {
       padding: 40px;
@@ -283,7 +284,7 @@ KI,48.143640,11.603463,Hans
         }
         #mapHolder {
           width: auto;
-          margin-top: 170px;
+          margin-top: 70px;
           margin-left: 30px;
           margin-bottom: 30px;
         }
@@ -315,8 +316,10 @@ KI,48.143640,11.603463,Hans
 <div id="sidecolumn">
   <div id="sidecolumnContent">
 
-    <a href="#top">National</a><br>
+    <a href="#top">Intro</a><br>
+    <a href="#national">National</a><br>
     <a href="#state">State</a><br>
+    <a href="#modeling">Modeling</a><br>
     <a href="#regional">Regional</a><br>
     <a href="#local">Local</a><br>
     <a href="#places">Places</a><br>
@@ -330,9 +333,10 @@ KI,48.143640,11.603463,Hans
 
 <div id="fullcolumn">
 
-  <div class="litePanel contentTop padding">
+  <div class="content contentTop padding">
 
-      <h1 style="margin-bottom:0px" class="h1-home">Lifecycle Marketplace</h1>
+      <h1 style="margin-bottom:0px" class="h1-home">Product Lifecycle Modeling</h1>
+      <!-- Marketplace -->
 
       <!--
       We're integrating visulization tools and distributed datasets 
@@ -348,10 +352,16 @@ KI,48.143640,11.603463,Hans
       -->
 
       <style>
+        .three {
+          margin-left: -20px;
+          margin-right: -30px;
+
+        }
         .three div {
           width:33%;
           float:left;
-          padding-right: 25px;
+          padding-left: 20px;
+          padding-right: 20px;
           box-sizing: border-box;
         }
       </style>
@@ -359,7 +369,8 @@ KI,48.143640,11.603463,Hans
       <div class='three' style='overflow:auto;'>
         <div>
           <h2>What?</h2>
-          Visual tools for exploring material flow data to create models for community planning and education.
+          Visual tools and maps for exploring input-output flow to create models for 
+          community planning, B2B networking and environmental education.
         </div>
         <div>
           <h2>Why?</h2>
@@ -367,13 +378,13 @@ KI,48.143640,11.603463,Hans
         </div>
         <div>
           <h2>How?</h2>
-          By combining local and regional datasets with the US EPA's Environmentally-Extended Input-Output API.
+          By combining local, regional and national datasets with new module development funded by the 
+          US EPA's Environmentally-Extended Input-Output API.
         </div>
-        
       </div>
 
       <div>
-          <h2>Where and When?</h2>
+          <h2>When and Where?</h2>
           Georgia communities are participating in our initial design session in May of 2020. 
           During the Summer of 2020, community interns will create modules using local data. 
           We'll launch new tools during a Lifecycle Hackathon in the Fall of 2020. 
@@ -382,7 +393,24 @@ KI,48.143640,11.603463,Hans
 
   </div>
 
+  <a name="national"></a>
+  <div class="litePanel contentTop padding">
+    <div class="content" style="font-size: 18px">
+      <a href="https://www.epa.gov/smm/epa-sustainable-materials-management-program-strategic-plan-fiscal-years-2017-2022"><img src="../img/overview/smmstratplan.jpg" style="width:100%; max-width:200px; float:right; margin-left:30px"></a>
 
+      <h2>EPA's four primary SMM program objectives</h2>
+
+      <ol>
+      <li>Decrease the disposal rate, which includes source reduction, reuse, recycling and prevention;</li>
+      <li>Reduce the environmental impacts of materials across their life cycle;</li>
+      <li>Increase socio-economic benefits; and </li>
+      <li>Increase the capacity of state and local governments, communities and key stakeholders to adopt and implement SMM policies, practices and incentives.</li>
+      </ol>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+
+  <a name="state"></a>
   <div id="flexwrapper">
         <div id="hublist" class="padding-left">
           
@@ -424,14 +452,16 @@ KI,48.143640,11.603463,Hans
   <div id="disqus_thread"></div>
 
 
-  <a name="state"></a>
+  <a name="modeling"></a>
 
   <div class="litePanel contentTop padding">
-    <h1>State Level Input-Output Modeling</h1>
+    <div class="content">
+      <h1>State Level Input-Output Modeling</h1>
 
-    <a href="../samples/dataset/">module example</a>
+      <a href="../samples/dataset/">module example</a>
 
-    <img src="../img/overview/heatmap.png" style="width:100%">
+      <img src="../img/overview/heatmap.png" style="width:100%">
+    </div>
   </div>
 
 
@@ -506,7 +536,7 @@ KI,48.143640,11.603463,Hans
 
 
 <a name="partners"></a>
-<div id="footerBox" style="clear:both; padding:30px; background: #eee; z-index: 2000; overflow: auto">
+<div id="footerBox" style="clear:both; padding:30px; padding-left:80px;  background: #eee; z-index: 2000; overflow: auto">
 
   <div style="float:left; margin-right:40px">
     <h2>Partners</h2>
@@ -573,7 +603,7 @@ KI,48.143640,11.603463,Hans
   <div id="floatingButtons">
     <div style="padding-right:10px;float:right">
       <a href="#gomap" class="footerButton">Map</a>
-      <a href="#top" class="footerButton">List</a>
+      <a href="#top" class="footerButton">Intro</a>
       <!--
       <a href="#items" class="footerButton">Items</a>
       -->
@@ -755,7 +785,7 @@ KI,48.143640,11.603463,Hans
 
   var map = L.map('map', {
     center: mapCenter,
-    scrollWheelZoom: true,
+    scrollWheelZoom: false,
     zoom: 7
   });
   
@@ -1048,7 +1078,7 @@ $(window).scroll(function(){
   {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
-    var hangover = 150; // Extend into the next section, so map remains visible.
+    var hangover = 10; // Extend into the next section, so map remains visible.
     //var elemTop = $(elem).offset().top;
     var elemBottom = $(elem).offset().top + $(elem).height() + hangover - docViewBottom;
     //console.log('offset: ' + $(elem).offset().top + ' height:' + $(elem).height() + ' docViewBottom:' + docViewBottom + ' elemBottom: ' + elemBottom);
