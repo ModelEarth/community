@@ -100,6 +100,12 @@ crossorigin=""></script>
       left: 0;
       right: 0;
     }
+    .litePanel {
+      background-color: #fff;
+    }
+    .padding {
+      padding: 40px;
+    }
   </style>
 </head>
 <body>
@@ -157,6 +163,17 @@ KI,48.143640,11.603463,Hans
 -->
   
   <style>
+      .content {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding-left: 40px;
+          padding-right: 40px;
+          font-size: 15px;
+          line-height: 1.5;
+      }
+      .contentTop {
+          padding-top: 60px;
+      }
       .leaflet-popup {
         bottom: 17px !important; 
         /* Need to move map down more when popup is near top.  Default is -7px. */
@@ -170,7 +187,9 @@ KI,48.143640,11.603463,Hans
         background-color:#777;
         z-index:9999;
       }
-
+      #flexwrapper {
+        padding-top: 40px;
+      }
       #flexwrapper {
         display: flex;
         justify-content: space-between;
@@ -220,11 +239,34 @@ KI,48.143640,11.603463,Hans
         margin-right: 30px;
       }
 
+      #sidecolumn {
+        float: left;
+        width: 150px;
+      }
+      #sidecolumnContent {
+        padding: 20px;
+        position: fixed;
+        line-height: 30px;
+      }
+      #fullcolumn {
+        overflow: auto;
+        border-left: 1px solid #ddd;
+      }
+
       @media (max-width: 800px) {
-        
-        
+        .content {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .padding {
+          padding: 20px;
+        }
+        #sidecolumn {
+          display: none;
+        }
         #flexwrapper {
           display: block;
+          box-sizing: border-box;
         }
         #hublist {
           width:auto;
@@ -260,66 +302,192 @@ KI,48.143640,11.603463,Hans
       }
     </style>
 
-  <br><br>
-  <div id="flexwrapper">
-
-    <div id="hublist" class="padding-left">
-      
-      <h1 style="margin-bottom:0px">Smart & Mobile</h1>
-
-      <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Data Driven Decision Making</h3>
-      <!--Opportunities for Waze integration:<br><br>-->
-
-      <div id="detaillist"></div>
-      <div id="narrowlist" style="display:none"></div>
-    </div>
-
-    <a name="gomap"></a>
-    <div id="mapHolder">
-      <div class="mapHolderFixed">
-        <div class="mapHolderInner card">
-          <div id="maptop">
-            <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
-              Connected Communities
-            </div>
-          </div>
-
-          <div style="clear:both">  
-            <div id="map"></div>
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
+  
 
 
-    <div id="allLegends"></div>
+
+<div id="sidecolumn">
+  <div id="sidecolumnContent">
+
+    <a href="#top">National</a><br>
+    <a href="#state">State</a><br>
+    <a href="#regional">Regional</a><br>
+    <a href="#local">Local</a><br>
+    <a href="#places">Places</a><br>
+    <a href="#charts">Charts</a><br>
+    <a href="#projects">Projects</a><br>
+    <a href="#partners">Partners</a><br>
+
+  </div>
+  &nbsp;
+</div>
+
+<div id="fullcolumn">
+
+  <div class="litePanel contentTop padding">
+
+      <h1 style="margin-bottom:0px" class="h1-home">Product Lifecycle Marketplace</h1>
+
+
+      Help us build decentralized tools and datasets for  
+      communities, builders and manufacturers to improve efficiency 
+      and reduce environmental impacts using  
+      <a href="https://www.epa.gov/smm">sustainable material management</a>.
+
+      <!--
+        build material flow models that 
+      -->
+
   </div>
 
 
-    
+  <div id="flexwrapper">
+        <div id="hublist" class="padding-left">
+          
+          <h1 style="margin-bottom:0px">Smart & Mobile</h1>
 
-    
-    <br><br>
+          <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Data Driven Decision Making</h3>
+          <!--Opportunities for Waze integration:<br><br>-->
 
-    
-    <div style="clear:both"></div>
+          <div id="detaillist"></div>
+          <div id="narrowlist" style="display:none"></div>
+        </div>
 
-    <div class="padding-left" style="overflow:auto; min-width: 300px; max-width:1000px; margin:0 30px; margin-bottom:30px">
-      <a name="items"></a>
+      <a name="gomap"></a>
+      <div id="mapHolder">
+        <div class="mapHolderFixed">
+          <div class="mapHolderInner card">
+            <div id="maptop">
+              <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
+                Connected Communities
+              </div>
+            </div>
+
+            <div style="clear:both">  
+              <div id="map"></div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="content padding">
+      To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
+      Copy using a text editor and click the pencil icon <a href="https://github.com/modelearth/community/blob/master/map/map.csv">here</a> to paste into GitHub for review. 
+      <span style="white-space: nowrap;">Or you can fork</span> the <a href="https://github.com/modelearth/community">GitHub Repo</a> and commit using <a href="https://desktop.github.com/">GitHub Desktop</a>.<br><br><br>
+  </div>
+
+  <div id="disqus_thread"></div>
+
+
+  <a name="state"></a>
+
+  <div class="litePanel contentTop padding">
+    <h1>State Level Input-Output Modeling</h1>
+
+    <a href="../samples/dataset/">module example</a>
+
+    <img src="../img/overview/heatmap.png" style="width:100%">
+  </div>
+
+
+
+  <div style="clear:both"></div>
+  <a name="regional"></a>
+
+  <div class="content contentTop padding">
 
       <div id="readmeDiv"></div><br>
 
-      <div style="max-width:760px;">
-        To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
-        Copy using a text editor and click the pencil icon <a href="https://github.com/modelearth/community/blob/master/map/map.csv">here</a> to paste into GitHub for review. 
-        <span style="white-space: nowrap;">Or you can fork</span> the <a href="https://github.com/modelearth/community">GitHub Repo</a> and commit using <a href="https://desktop.github.com/">GitHub Desktop</a>.<br><br><br>
-      </div>
+      <iframe class="block-map-directory cf" id="map_directory" src="../samples/maps/counties/counties.html" style="width:100%;height:500px"></iframe>
+  
+  </div>
 
-      <div id="disqus_thread"></div>
+  
+  <a name="local"></a>
+  <div class="content padding">
+    <h1 style="margin-bottom:0px">Recycling Processors (B2B)</h1>
+
+    <iframe class="block-map-directory cf" id="map_directory" src="https://data.georgia.org/site/widget.html#processors" style="width:100%;height:500px"></iframe>
+  </div>
+
+
+  <a name="places"></a>
+  <div class="litePanel contentTop padding">
+    <div class="content">
+      <img src="../img/overview/places-us.gif" style="width:100%; max-width:300px; float:right">
+      <h1>All The Places API</h1>
+
+      Data will be harvested from existing websites and databases using the techniques developed for 
+      <a href="https://github.com/alltheplaces/alltheplaces">All The Places</a>. 
+      Over 450 spiders and scrapers pull data nightly from sites that post their 
+      locations online. Material input-output requests can be shared using CSV files or HTML.<br><br>
+
+      <b>Example:</b> Your construction contract has a requirement to use 50% reclaimed lumber. 
+      A local film project will be dismanteling a set. Add a link documenting how much lumber you need and when you need it.  Groups like 
+      the Lifecycle Building Center retrieve lumber after film productions and can 
+      watch for taredown dates that fit your schedule.
+      <br><br>
+    </div>
+  </div>
+
+  <a name="charts"></a>
+  <div class="contentTop padding">
+    <div class="content">
+
+      <h1>Sankey Chart of Material Flow</h1>
+
+      <img src="../img/overview/flow.png" style="width:100%">
+
+      <!--
+      Source:
+      https://www.kenflerlage.com/2018/04/sankey-template.html
+      -->
 
     </div>
+  </div>
+
+  <a name="projects"></a>
+  <div class="litePanel">
+    <div class="content contentTop padding">
+      <div id="projectsDiv"></div>
+    </div>
+  </div>
+
+</div><!-- /#fullcolumn -->
+
+
+<div id="allLegends"></div>
+  
+
+
+<a name="partners"></a>
+<div id="footerBox" style="clear:both; padding:30px; background: #eee; z-index: 2000; overflow: auto">
+
+  <div style="float:left; margin-right:40px">
+    <h2>Partners</h2>
+
+    <img src="../img/logo/epa.png" style="width:100px; float:left; margin-right: 20px">
+    <img src="../img/logo/georgia.png" style="width:120px; float:left; margin-top: -4px">
+  </div>
+
+  <div style="float:left">
+    <h2>Get Involved</h2>
+
+    <a href="https://model.georgia.org/communities/">Register</a> to to participate in our 2020 events and internships.<br><br>
+
+    <a href="https://GitHub.com/modelearth/community/">Edit on GitHub</a> - Contribute to our code and datasets.<br><br>
+
+    <a href="https://waze.com/carpool" target="waze_carpool">Waze Carpool</a> - Find carpool riders and drivers near you.<br><br>
+    <br><br>
+  </div>
+
+</div>
+
+    
+
 
     
     <style>
@@ -371,17 +539,7 @@ KI,48.143640,11.603463,Hans
   </div>
 
   
-    <div id="footerBox" style="clear:both; margin-top: 20px; padding:30px; background: #eee; z-index: 2000">
-      <!-- gets overlapped
-      <a href="https://GitHub.com/modelearth/community/tree/master/map" target="_blank">Edit on GitHub</a>
-      -->
 
-      <h2>Share a Ride</h2>
-
-      <a href="https://waze.com/carpool" target="waze_carpool">Waze Carpool</a> - Find carpool riders and drivers near you.<br><br>
-      <br><br>
-
-    </div>
 
 
 <script>
@@ -871,8 +1029,9 @@ $(window).scroll(function(){
 
 </script>
 
-    <script>
+<script>
   loadMarkupPage("README.md", "readmeDiv", "_parent");
+  loadMarkupPage("../README.md", "projectsDiv", "_parent");
 </script>
 <link rel="stylesheet" href="../css/material_icons.css" />
   </body>

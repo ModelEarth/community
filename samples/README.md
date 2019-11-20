@@ -29,6 +29,10 @@ VueJS: [Frappe/ERPNext](https://frappe.io/frappejs/docs/client/index.md),
 
 [StackBlitz.com](https://stackblitz.com/) - Like Code VS in a browser. React TS, Angular, Svelte, Javascript - Nice UI!  
 
+[AWS 10-Minutue Tutorials](https://aws.amazon.com/getting-started/tutorials/?awsf.getting-started-content=use-case-tmt%23websites-apps) - [Serverless with Cloud9](https://aws.amazon.com/getting-started/tutorials/build-serverless-app-codestar-cloud9/?trk=gs_card) - Collaborative integrated development environment (IDE)  
+
+[Build a Vue App with Google Firebase Authentication and Firestore Database](https://blog.bitsrc.io/build-a-vue-app-with-firebase-authentication-and-database-e7d6816f79af)  
+
 <br>
 <div class="showGit">
 <a href="https://modelearth.github.io/community/samples/">View as website</a>
