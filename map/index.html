@@ -259,7 +259,9 @@ KI,48.143640,11.603463,Hans
         overflow: auto;
         border-left: 1px solid #ddd;
       }
-
+      #sidecolumnContent a {
+        display:block;
+      }
       @media (max-width: 800px) {
         .content {
           padding-left: 20px;
@@ -316,16 +318,17 @@ KI,48.143640,11.603463,Hans
 <div id="sidecolumn">
   <div id="sidecolumnContent">
 
-    <a href="#top">Intro</a><br>
-    <a href="#national">National</a><br>
-    <a href="#state">State</a><br>
-    <a href="#modeling">Modeling</a><br>
-    <a href="#regional">Regional</a><br>
-    <a href="#local">Local</a><br>
-    <a href="#places">Places</a><br>
-    <a href="#charts">Charts</a><br>
-    <a href="#projects">Projects</a><br>
-    <a href="#partners">Partners</a><br>
+    <a href="#top">Intro</a>
+    <a href="#national">National</a>
+    <a href="#sectors" style="display:none">Sectors</a>
+    <a href="#state">State</a>
+    <a href="#modeling">Modeling</a>
+    <a href="#regional">Regional</a>
+    <a href="#local">Local</a>
+    <a href="#places">Places</a>
+    <a href="#charts">Charts</a>
+    <a href="#projects">Projects</a>
+    <a href="#partners">Partners</a>
 
   </div>
   &nbsp;
@@ -392,7 +395,7 @@ KI,48.143640,11.603463,Hans
 
       <div>
           <h2>When and Where?</h2>
-          Georgia communities are participating in our initial design session in May of 2020. 
+          Georgia communities are participating in our design session in May of 2020. 
           During the Summer of 2020, community interns will create modules using local data. 
           We'll launch new tools during a Lifecycle Hackathon in the Fall of 2020. 
           <a href="https://model.georgia.org/communities">Learn More</a>.
@@ -417,9 +420,13 @@ KI,48.143640,11.603463,Hans
   </div>
   <div style="clear:both"></div>
 
-  <a name="state"></a><br><br>
+  <section id="sectors" style="display:none">
+    <h2>Sectors</h2>
+  </section>
+
+  <section id="state"><br><br>
   <div id="flexwrapper">
-      
+
         <div id="hublist" class="padding-left">
           
           <h1 style="margin-bottom:0px">Smart & Mobile</h1>
@@ -450,6 +457,7 @@ KI,48.143640,11.603463,Hans
         </div>
       </div>
   </div>
+   </section>
 
   <div class="content padding">
       To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
@@ -1086,6 +1094,16 @@ function removeWhiteSpaces (str) {
 
 
 
+$('#sidecolumnContent a').click(function(event) {
+    setTimeout(function(){ 
+
+      var y = $(window).scrollTop();  //your current y position on the page
+      $(window).scrollTop(y-50);
+
+    }, 10);
+});
+
+
 
 var mapFixed = false;
 $(window).scroll(function(){
@@ -1139,8 +1157,6 @@ $(window).scroll(function(){
   } else if(!topReached('#hublist') && mapFixed == true) { // Not top reached (scrolling down)
     $('.mapHolderInner').removeClass('mapHolderFixed');
     mapFixed = false;
-  } else {
-    
   }
 });
 
