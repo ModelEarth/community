@@ -102,7 +102,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
     .th_title > div > span, .th_title > div > span:hover {
       border-bottomX: 1px solid #777 !important;
       border-top: 1px solid #333;
-      background: #ddd !important;
+      backgroundXXXX: #ddd !important;
       margin-bottomX: 4px;
       cursor: default;
     }
@@ -145,7 +145,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       .th_title > div > span {
         
         font-size: 14px !important;
-        background: #eee;
+        backgroundXXX: #eee;
       }
       .th_title > div > span, .th_title > div > span:hover {
         margin-bottomX: 0px;
@@ -165,9 +165,15 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       border-rightX: 1px solid #ccc;
     }
     .noborder {
-      border-left: 0px solid #ccc;
+      border-left: 0px solid #333;
       border-right: 0px solid #ccc;
       border: 0px;
+    }
+    .noborder span {
+      margin: 0px;
+      margin-left: 6px;
+      border-left: 1px solid #ddd;
+      height: 2px;
     }
     iframe {
       display: block;       /* iframes are inline by default */
@@ -275,7 +281,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
 
             //dataRow += "<td>" + numberWithCommas(dataSet[i][3]) + "</td><td>" + numberWithCommas(dataSet[i][4]) + "</td><td>" + diff + "</td>";
           
-            dataRow += "<td class='heatCell noborder'></td>";
+            dataRow += "<td class='heatCell noborder'><span></span></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
