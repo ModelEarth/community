@@ -2,4 +2,4 @@
 
 Source: 2007 USEEIO v1.1, Wesley Ingwersen.
 
-Also: [Industries](industries)
+Also: [industries](../industries)
