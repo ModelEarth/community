@@ -68,10 +68,10 @@ body { position:relative; }
 }
 #clusterBuckets {
     padding: 20px;
+    padding-top: 3px;
     min-width: 120px;
     max-width: 300px;
     background: rgba(255,255,255,0.95);
-
 }
 .leaflet-top.leaflet-right {
     displayXXX:none !important; /* temp */
@@ -150,6 +150,8 @@ body { position:relative; }
 
     
 
+   
+
     <!--
      Topojson on a Leaflet Map
      Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
@@ -162,9 +164,41 @@ body { position:relative; }
     </div>
 
     <div id="clusterBucketsFooterHolder" style="min-height: 95px;">
-        <div class="closeClusterBucketsDiv" style="right:25px;top:3px">&#9447;</div>
+        <div class="closeClusterBucketsDiv" style="top:3px">&#9447;</div>
+
+        <style>
+            #categoryHolder {
+                font-size:16px;
+                padding: 15px;
+                background-color: #fff;
+                border-bottom: 1px solid #ccc;
+            }
+        </style>
+
+         
+
         <div id="clusterBucketsHolder">
-            <div id="clusterBuckets">G E N E R A T I N G &nbsp; C L U S T E R S</div>
+
+            <div id="categoryHolder" style="overflow: auto">
+
+                <div style="float:left; width:50%">
+                    <a href="#columns=JobsAgriculture:100">Agriculture</a><br>
+                    <a href="#columns=JobsEntertainment:100">Entertainment</a><br>
+                    <a href="#columns=JobsConstruction:100">Construction</a><br>
+                    <a href="#columns=JobsHealthcare:100">Healthcare</a><br>
+                    <a href="#columns=JobsManufacturing:100">Manufacturing</a><br>
+                </div>
+
+                <div style="float:left; width:50%">
+                    <a href="#columns=JobsProfessional:100">Professional</a><br>
+                    <a href="#columns=JobsRealestate:100">Real Estate</a><br>
+                    <a href="#columns=JobsTrade:100">Trade</a><br>
+                    <a href="#columns=JobsTotal:100">Jobs Total</a><br>
+                    <a href="#show=points" style="localonly" target="_blank">Poverty</a>
+                </div>
+            </div>
+
+            <div id="clusterBuckets" style="clear:both">G E N E R A T I N G &nbsp; C L U S T E R S</div>
         </div>
         <div id="clusterStep3">
           <div class="showOutput">
@@ -224,11 +258,7 @@ body { position:relative; }
             $(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
                 param = loadParams(location.search,location.hash); // Refresh param values when user changes URL after #.
                 if (param["columns"]) {
-                    //alert("map remove and call loadDatasets")
-                    try {
-                        map.remove(); // Temp, refresh map layer instead. Needed for sliders, but error with checkboxes.
-                    } catch(e){
-                    }
+                    map.removeLayer(geojsonLayer); // Remove the prior topo layer
                     loadDatasets(param["columns"]);
                 }
                 if (param["dataset"]) {
@@ -238,7 +268,7 @@ body { position:relative; }
 
     var neighbors;
     var topodata = {};
-    var geojson;
+    var geojsonLayer;
 
     var cluster_data = [];
     var cluster_color;
@@ -254,10 +284,7 @@ body { position:relative; }
     };
 
     function loadDatasets(columnsParam) { // Called whenever hash refreshes
-        //alert('loadDatasets')
-        if (map) {
-            //map.remove(); // Temp, refresh map layer instead
-        }
+        console.log('loadDatasets');
         var dataset = "2016/2016_zcta_sm.csv";
         var topo = "Georgia";
 
@@ -269,7 +296,7 @@ body { position:relative; }
         var xWeight;
         var yWeight;
         var zWeight;
-        
+        cluster_data = []; // Clear previous
 
         if (typeof columnsParam !== 'undefined' && columnsParam.length) {
             // TO DO: Replace this with a loop to allow for more columns
@@ -491,110 +518,109 @@ body { position:relative; }
                                 weight: .3}
                         }
 
-                        geojson = L.geoJson(cluster_data, {style:style, onEachFeature: onEachFeature}).addTo(map);
+                        //map.removeLayer(geojsonLayer); // Remove the prior topo layer
+
+                        geojsonLayer = L.geoJson(cluster_data, {style:style, onEachFeature: onEachFeature}).addTo(map);
                         
                         clusterBuckets(); // Stats under colored bar for each cluster
 
 
                         // FETCH MAP POINTS
-                        d3.csv("https://datascape.github.io/community/map/zip/basic/places.csv").then(function(d) {
-                          // with v5, data is whole data set
-                          points = d;
+                        if (param["show"] == "points") {
+                            d3.csv("https://datascape.github.io/community/map/zip/basic/places.csv").then(function(d) {
+                              // with v5, data is whole data set
+                              points = d;
 
-                          
-                          
-                          
-
-                            // DELETE
-                            /*
-                            var temp = d3.nest()
-                            .key(function(d){
-                                return d.properties.zip;
-                            })
-                            .entries(cluster_data);
-
-                            places = [];
-                            d.forEach(function(d2){
-                                var topoID = temp.find(x=>x.key === d2.zip);
-                                if(topoID) {
-                                    places.push(d2);
-                                    //places.cluster = d2.cluster;
-                                    places.color = d2.color;
-                                    console.log('places push d2.color: ' + d2.color);
-
-                                    console.log("places:");
-                                    console.log(places);
-                                }
-                            });
-                            */
-                            
-                            var temp = d3.nest()
-                                    .key(function(d){return d.id;}) // id is the zip
-                                    .entries(cluster_data); // TODO: Change this to entire country.
-
-                            d.forEach(function(place_data) {
-                                //console.log("place_data:");
-                                //console.log(place_data);
-
-                                var topoID = temp.find(x=>x.key === place_data.zip.replace(/^0+/, ''));
-                                if(topoID) {
-                                    console.log("found zip: " + topoID); // Not all zips will have a match
-                                    columns.forEach(function(c){
-                                        place_data[c] = parseFloat(topoID.values[0][c]);
-                                    });
-
-                                    // Places within the current state:
-                                    place_data_with_clusterID.push(place_data); // Not yet: Topo shapes and census attributes added, including zcta.
-                                }
-                            });
-
-                            place_data_with_clusterID.forEach(function (d, i) {
-                                // Needs work, not all 
-                                // Should d value reside in the following line?
-                                place_data_with_clusterID[i].cluster = cluster_data[i].cluster;
-                            });
-
-                            // Number is lower than 6,000 when cluster is only one state.
-                            console.log("place_data_with_clusterID:");
-                            console.log(place_data_with_clusterID);
-
-
-                          draw();
-                          map.on('viewreset moveend', draw);
-                        })
-                        .catch(function(error){
-                         // handle error   
-                         alert("error: " + error)
-                        })
-
-                        /*
-                        DELETE
-                        d3.csv("../zip/basic/places.csv").then(function(supported_places,error) {
+                        
+                                // DELETE
+                                /*
                                 var temp = d3.nest()
-                                    .key(function(d){return d.properties.zip;})
-                                    .entries(cluster_data);
+                                .key(function(d){
+                                    return d.properties.zip;
+                                })
+                                .entries(cluster_data);
 
                                 places = [];
-
-                                supported_places.forEach(function(d){
-                                    var topoID = temp.find(x=>x.key === d.zip);
+                                d.forEach(function(d2){
+                                    var topoID = temp.find(x=>x.key === d2.zip);
                                     if(topoID) {
-                                        places.push(d);
+                                        places.push(d2);
+                                        //places.cluster = d2.cluster;
+                                        places.color = d2.color;
+                                        console.log('places push d2.color: ' + d2.color);
+
+                                        console.log("places:");
+                                        console.log(places);
                                     }
                                 });
-                                console.log(places);
-                         })
-                         */
+                                */
+                                
+                                var temp = d3.nest()
+                                        .key(function(d){return d.id;}) // id is the zip
+                                        .entries(cluster_data); // TODO: Change this to entire country.
 
-                         // Activate and set colors from clusters
-                         loadPlaces();
+                                d.forEach(function(place_data) {
+                                    //console.log("place_data:");
+                                    //console.log(place_data);
+
+                                    var topoID = temp.find(x=>x.key === place_data.zip.replace(/^0+/, ''));
+                                    if(topoID) {
+                                        console.log("found zip: " + topoID); // Not all zips will have a match
+                                        columns.forEach(function(c){
+                                            place_data[c] = parseFloat(topoID.values[0][c]);
+                                        });
+
+                                        // Places within the current state:
+                                        place_data_with_clusterID.push(place_data); // Not yet: Topo shapes and census attributes added, including zcta.
+                                    }
+                                });
+
+                                place_data_with_clusterID.forEach(function (d, i) {
+                                    // Needs work, not all 
+                                    // Should d value reside in the following line?
+                                    place_data_with_clusterID[i].cluster = cluster_data[i].cluster;
+                                });
+
+                                // Number is lower than 6,000 when cluster is only one state.
+                                console.log("place_data_with_clusterID:");
+                                console.log(place_data_with_clusterID);
+
+
+                              draw();
+                              map.on('viewreset moveend', draw);
+                            })
+                            .catch(function(error){
+                             // handle error   
+                             alert("error: " + error)
+                            })
+
+                            /*
+                            DELETE
+                            d3.csv("../zip/basic/places.csv").then(function(supported_places,error) {
+                                    var temp = d3.nest()
+                                        .key(function(d){return d.properties.zip;})
+                                        .entries(cluster_data);
+
+                                    places = [];
+
+                                    supported_places.forEach(function(d){
+                                        var topoID = temp.find(x=>x.key === d.zip);
+                                        if(topoID) {
+                                            places.push(d);
+                                        }
+                                    });
+                                    console.log(places);
+                             })
+                             */
+                        }
+                         
                     }); // end d3.csv load of zipcode census data
                     console.log('neigh', neighbors);
 
                 // LH commented out try-catch to watch for point errors. When do we need this?
                 //}
                 //catch(e){
-                //  geojson = {};
+                //  geojsonLayer = {};
                 //  console.log(e)
                 //}
                 console.log(topodata);
@@ -613,7 +639,7 @@ body { position:relative; }
                 }
 
                 function resetHighlight(e){
-                    geojson.resetStyle(e.target);
+                    geojsonLayer.resetStyle(e.target);
                     info.update();
                 }
 
@@ -808,31 +834,7 @@ var dp = {}; // Try without
 var layerControl = false;
 var overlays = {};
 
-// see also: http://d3indepth.com/scales/
-function getScale(data, scaleType, valueCol) {
-    var scale;
-    if (scaleType === "scaleThreshold") {
-      var min = d3.min(data, function(d) { return d[valueCol]; });
-      var max = d3.max(data, function(d) { return d[valueCol]; });
-      var d = (max-min)/7;
-      scale = d3.scaleThreshold()
-        .domain([min+1*d,min+2*d,min+3*d,min+4*d,min+5*d,min+6*d])
-        .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
-    } else if (scaleType === "scaleQuantize") {
-      scale = d3.scaleQuantize()
-        .domain(d3.extent(data, function(d) { return d[valueCol]; }))
-        .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
-    } else if (scaleType === "scaleQuantile") {
-      scale = d3.scaleQuantile()
-        .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
-        .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);            
-    } else if (scaleType === "scaleOrdinal") {
-      scale = d3.scaleOrdinal()
-        .domain(data.map(function(d) { return d[valueCol]; }))
-        .range(d3.schemePaired);
-    }
-    return scale;
-}
+
 function readCsvData(_data, columnsNum, valueCol) {
     //console.log(_data);
     
@@ -854,98 +856,7 @@ function convertToNumber(d, _columnsNum) {
       }  
     return d;
 }
-function loadPlaces() {
-    var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
-    d3.csv(dataset).then(function(d) {
-          dp = {
-            numColumns: ["id","place","city","region","zip","type","verification_type","verification_number","sum_of_tickets_earned","count_of_projects_earning_tickets","years_tickets_earned","lat","lon","HouseMedianIncome","HouseMeanIncome","IncomeUnder25K"],
-            valueColumn: "IncomeUnder25K",
-            latColumn: "lat",
-            lonColumn: "lon",
-            scaleType: "scaleQuantile",
-            //scaleType: "scaleOrdinal",
-          }
-          dp.name = "Places (CSV)"; 
-          dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
-          dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-          dp.group = L.layerGroup();
-          dataParameters.push(dp);
 
-          // Not needed since init ocurs here. Would cause dup radiobutton in overlay menu.
-          //overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
-
-          if(layerControl === false) {
-            // Adds layer menu
-            layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-          } else {
-            map.addLayer(overlays["Places (CSV)"]);
-          }
-          layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
-          addCircles(dp);
-          addLegend(dp.scale, dp.scaleType, dp.name);
-
-          // All layers reside in this object:
-          console.log("dataParameters:");
-          console.log(dataParameters);
-
-          // Remove from control and background.
-          //layerControl.removeLayer(grayscale);
-          //map.removeLayer(grayscale);
-
-          
-          //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
-          //map.removeLayer(overlays["myDataset"]); // Remove from map
-
-          
-    })
-    //.catch(function(error){ 
-    //   alert("Data loading error: " + error)
-    //})
-}
-function addLegend(scale, scaleType, title) {
-    var svg = d3.select("#allLegends")
-      .append("div")
-        .attr("class", "legend "  + title)
-      .append("svg")
-        .style("width", 180)
-        .style("heightX", 300);
-
-    svg.append("g")
-        .attr("class", "legend")
-        .attr("transform", "translate(20,20)");
-
-    var legend = d3.legendColor()
-      .labelFormat(d3.format(".2f"))
-      .title(title);
-  
-    if (scaleType === "scaleThreshold") {
-      legend = legend.labels(d3.legendHelpers.thresholdLabels);
-    }
-
-    legend.scale(scale);  
-
-    svg.select("g.legend")
-      .call(legend);
-}
-function addCircles(dp) {
-    var circle;
-    var colorScale = dp.scale;
-    dp.data.forEach(function(element) {
-      if (typeof dp.latColumn == "undefined") {
-        dp.latColumn = "lat";
-      }
-      if (typeof dp.lonColumn == "undefined") {
-        dp.lonColumn = "lon";
-      }
-      circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
-          color: colorScale(element[dp.valueColumn]),
-          fillColor: colorScale(element[dp.valueColumn]),
-          fillOpacity: 1,
-          radius: 5000 // was 50
-      }).addTo(dp.group);
-      circle.bindPopup("ID: " + element[dp.valueColumn] + "<br>Latitude: " + element[dp.latColumn] + "<br>Address: " + element.address);
-    });
-}
 
 /* works
 d3.csv("../zip/basic/places.csv").then(function(d) {
