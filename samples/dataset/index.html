@@ -46,11 +46,11 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       width: 100%; 
       border-collapse: collapse; 
     }
-    tr {
+    trX {
       border-bottom: 1px solid #ccc;
     }
     td, th { 
-      padding: 6px; 
+      
       text-align: left; 
     }
 
@@ -110,10 +110,18 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
         display:none; /* Hide extra after the title */
     }
 
+    /* Wide Screen Width */
+    @media (min-width: 1400px) {
+      .rotateHeaderHolder {
+        margin-right:80px;
+      }
+    }
     /* Standard Screen Width */
     @media (max-width: 1399px) {
+      
       .rotateHeader {
-        margin-right:0px;
+        display:inline;
+        overflow: auto;
       }
       th.rotate {
         height: 220px;
@@ -151,11 +159,16 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       overflow: hidden;
       white-space: nowrap;
     }
-    .heatCell {
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-    }
 
+    .heatCell {
+      border: 1px solid #ccc;
+      border-rightX: 1px solid #ccc;
+    }
+    .noborder {
+      border-left: 0px solid #ccc;
+      border-right: 0px solid #ccc;
+      border: 0px;
+    }
     iframe {
       display: block;       /* iframes are inline by default */
       border: none;         /* Reset default border */
@@ -177,15 +190,16 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
 
 <div style="margin:40px; margin-top:0px; clear:both;">
 
-  <div style="vertical-align: bottom; padding-right:0px">
+  <div class="rotateHeaderHolder" style="vertical-align: bottom;">
 
-    <table class="rotateHeader" style="display: inline;">
+    <table class="rotateHeader">
       <tr id="dataHeader">
-      <th class="hidemobile">
+      <th>
         <div style="font-weight:200">
           <div id="readmeDiv" style="float:left"></div>
         </div>
       </th>
+      <th></th>
       <th class="rotate th_title"><div><span><b>Adverse Impact Potential</b></span></div></th>
       <th class="rotate"><div><span>Acid Rain (ACID)</span></div></th>
       <th class="rotate"><div><span>Freshwater Ecotoxicity (ETOX)<span> - Chemicals and Natural Materials</span></span></div></th>
@@ -254,11 +268,14 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       var diff = numberWithCommas(dataSet[i][4] - dataSet[i][3]);
       if (rowcount > 1) {
           if (dataSet[i][3]) {
-          dataRow += "<tr><td class='hideMobile'><div style='float:left;min-width:21px;padding-top:2px'><input name='sector' type='checkbox' value=''></div><div style='overflow:auto'>" + dataSet[i][0] + " - " + dataSet[i][1] + "</div></td>";
-          //dataRow += "<div><b>Location:</b> " + dataSet[i][2] + "</div>";
+          dataRow += "<tr><td class='hideMobile'><div style='float:left;min-width:21px;padding-top:2px'><input name='sector' type='checkbox' value=''></div><div style='overflow:auto; height:20px;'>" + dataSet[i][0] + " - " + dataSet[i][1] + "</div></td>";
+            //dataRow += "<div><b>Location:</b> " + dataSet[i][2] + "</div>";
           
+            dataRow += "<td style='borderX:1px solid blue'>0.2%</td>";
+
             //dataRow += "<td>" + numberWithCommas(dataSet[i][3]) + "</td><td>" + numberWithCommas(dataSet[i][4]) + "</td><td>" + diff + "</td>";
           
+            dataRow += "<td class='heatCell noborder'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
@@ -267,23 +284,22 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell noborder'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell noborder'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
-            dataRow += "<td class='heatCell'></td>";
-            dataRow += "<td class='heatCell'></td>";
-            dataRow += "<td class='heatCell'></td>";
-            dataRow += "<td class='heatCell'></td>";
+            dataRow += "<td class='heatCell noborder'></td>";
             dataRow += "<td class='heatCell'></td>";
             dataRow += "<td class='heatCell'></td>";
 
           dataRow += "</tr>";
         } else {
-            dataRow += "<tr><td colspan='30'><br><b>" + dataSet[i][0] + "</b></td></tr>";
+            dataRow += "<tr><td colspan='32'><div style='background-color:#ddd; padding:4px'><b style='font-size:12px'>" + dataSet[i][0] + "</b></div></td></tr>";
         }
       }
     };
