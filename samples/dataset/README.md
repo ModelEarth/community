@@ -4,7 +4,7 @@
 	Final demand in $ for each of the goods and services for the US in 2007, 
 	and the sector codes and names are already separated. - From Wes
 -->
-### Sustainable Material Management
+### Sustainable Materials Management
 
 <span class='hideMidsize'>
 Generated from a [FinalDemand.csv](USEEIOv1_1_FinalDemand.csv).<br>
