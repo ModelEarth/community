@@ -45,6 +45,8 @@ $(document).ready(function(){
 	      		$(this).attr("href", climbpath + $(this).attr('href'));
 	  		}
 	    })
+	    
+	    
  		$("#header img[src]").each(function() {
 	      $(this).attr("src", climbpath + $(this).attr('src'));
 	    })
