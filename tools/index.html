@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Product Lifecycle Marketplace Modeling</title>
+<title>Product Lifecycle Modeling</title>
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon-usa-ga.png" />
 
 <!--
@@ -251,7 +251,7 @@ KI,48.143640,11.603463,Hans
         width: 150px;
       }
       #sidecolumnContent {
-        padding: 20px;
+        padding: 24px;
         position: fixed;
         line-height: 30px;
       }
@@ -261,6 +261,12 @@ KI,48.143640,11.603463,Hans
       }
       #sidecolumnContent a {
         display:block;
+        width: 100%;
+      }
+      #sidecolumnContent a.active {
+        border-left: 4px solid blue;
+        margin-left:-24px;
+        padding-left:20px;
       }
       @media (max-width: 800px) {
         .content {
@@ -316,10 +322,10 @@ KI,48.143640,11.603463,Hans
 
 
 <div id="sidecolumn">
-  <div id="sidecolumnContent">
+  <div id="sidecolumnContent" style="z-index:0">
 
     <b style="font-size: 12px">ABOUT</b><br>
-    <a href="#overview">Overview</a>
+    <a href="#overview" class="active">Overview</a>
     <a href="#objectives">Objectives</a>
     <a href="#sectors" style="display:none">Sectors</a>
     <a href="#data">Data Driven</a>
@@ -343,7 +349,7 @@ KI,48.143640,11.603463,Hans
 
   <div class="content contentTop padding">
 
-      <h1 style="margin-bottom:0px" class="h1-home">Product Lifecycle Marketplace Modeling</h1>
+      <h1 style="margin-bottom:0px" class="h1-home">Product Lifecycle Modeling</h1>
       <!-- Marketplace -->
 
       <!--
@@ -351,7 +357,7 @@ KI,48.143640,11.603463,Hans
       -->
       Tools for  
       communities, builders and manufacturers to increase efficiency 
-      and improve the environment using  
+      while protecting the environment using  
       <a href="https://www.epa.gov/smm" style="white-space:nowrap">sustainable material management</a>.<br>
 
       <!--
@@ -384,7 +390,7 @@ KI,48.143640,11.603463,Hans
       <div class='three' style='overflow:auto;'>
         <div>
           <h2>What?</h2>
-          Data visualization tools and maps for exploring input-output flow to create models for 
+          Data visualization tools and maps for exploring state input-output flow to create models for 
           community planning, B2B networking and environmental education.
         </div>
         <div>
@@ -394,8 +400,8 @@ KI,48.143640,11.603463,Hans
         </div>
         <div>
           <h2>How?</h2>
-          By combining local, regional and national datasets with new module development funded by the 
-          US EPA's Environmentally-Extended Input-Output API.
+          By combining local, regional and national datasets with new module development integrated with the 
+          US EPA's Environmentally-Extended Input-Output (USEEIO) API.
         </div>
       </div>
 
@@ -437,7 +443,7 @@ KI,48.143640,11.603463,Hans
         <div id="hublist" class="padding-left">
 
           <h1 style="font-size: 28px">Data Driven Decision Making</h1>
-          <h1 style="font-size: 18px; margin-bottom:0px; font-weight: bold">Smart & Sustainable Movement of Goods & Services</h1>
+          <h1 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of Goods & Services</h1>
           <br><br>
 
           <!--
