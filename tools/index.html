@@ -257,6 +257,7 @@ KI,48.143640,11.603463,Hans
         padding: 24px;
         position: fixed;
         line-height: 30px;
+        width: 124px;
       }
       #fullcolumn {
         overflow: auto;
@@ -267,8 +268,8 @@ KI,48.143640,11.603463,Hans
         width: 100%;
       }
       #sidecolumnContent a.active {
-        border-left: 4px solid blue;
-        margin-left:-24px;
+        border-right: 4px solid #999;
+        margin-left:-20px;
         padding-left:20px;
       }
       @media (max-width: 800px) {
@@ -1163,7 +1164,6 @@ var lastId,
  });
 
 // Bind click handler to menu items
-// so we can get a fancy scroll animation
 menuItems.click(function(e){
   /*
   var href = $(this).attr("href");
