@@ -41,7 +41,9 @@ crossorigin=""></script>
 -->
 
 <script type="text/javascript" src="../js/common/showdown.min.js"></script>
-<script type="text/javascript" src="../js/jquery/zepto.min.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
+
+<!--script type="text/javascript" src="../js/jquery/zepto.min.js"></script--><!-- stop().animate() are needed -->
 
 <link rel="stylesheet" href="../css/community.css" />
 
@@ -56,6 +58,7 @@ crossorigin=""></script>
 
   <style>
     body { font-size: 14px; }
+    h1 { font-size: 28px; }
     #map { height: 600px; }
     aside, pre { display: none; }
     div#allLegends { position: relative; }
@@ -110,7 +113,7 @@ crossorigin=""></script>
   </style>
 </head>
 <body>
-<a name="overview"></a>
+
 <div id="header"></div>
 <div style="height:60px"></div>
 
@@ -325,9 +328,8 @@ KI,48.143640,11.603463,Hans
   <div id="sidecolumnContent" style="z-index:0">
 
     <b style="font-size: 12px">ABOUT</b><br>
-    <a href="#overview" class="active">Overview</a>
+    <a href="#intro" class="active">Intro</a>
     <a href="#objectives">Objectives</a>
-    <a href="#sectors" style="display:none">Sectors</a>
     <a href="#data">Data Driven</a>
     <a href="#modeling">IO Modeling</a>
     <a href="#charts">Material Flow</a>
@@ -347,7 +349,7 @@ KI,48.143640,11.603463,Hans
 
 <div id="fullcolumn">
 
-  <div class="content contentTop padding">
+  <section id="intro" class="content contentTop padding">
 
       <h1 style="margin-bottom:0px" class="h1-home">Product Lifecycle Modeling</h1>
       <!-- Marketplace -->
@@ -390,7 +392,7 @@ KI,48.143640,11.603463,Hans
       <div class='three' style='overflow:auto;'>
         <div>
           <h2>What?</h2>
-          Data visualization tools and maps for exploring state input-output flow to create models for 
+          Data visualization tools and maps for exploring state, regional and local input-output flow to create models for 
           community planning, B2B networking and environmental education.
         </div>
         <div>
@@ -413,7 +415,7 @@ KI,48.143640,11.603463,Hans
           <a href="https://model.georgia.org/communities" target="_blank">Learn More and Register</a>.
       </div>
 
-  </div>
+  </section>
 
   
   <section id="objectives" class="litePanel contentTop padding">
@@ -432,10 +434,6 @@ KI,48.143640,11.603463,Hans
     </div>
   </section>
   <div style="clear:both"></div>
-
-  <section id="sectors" style="display:none">
-    <h2>Sectors</h2>
-  </section>
 
   <section id="data"><br><br>
   <div id="flexwrapper">
@@ -478,6 +476,7 @@ KI,48.143640,11.603463,Hans
           </div>
         </div>
       </div>
+      <div id="allLegends"></div>
   </div>
    </section>
 
@@ -490,9 +489,7 @@ KI,48.143640,11.603463,Hans
   <div id="disqus_thread"></div>
 
 
-  <a name="modeling"></a>
-
-  <div class="litePanel contentTop padding">
+  <section id="modeling" class="litePanel contentTop padding">
     <div class="content">
       <h1>Statewide Input-Output Modeling</h1>
 
@@ -500,11 +497,10 @@ KI,48.143640,11.603463,Hans
 
       <img src="../img/overview/heatmap.png" style="width:100%">
     </div>
-  </div>
+  </section>
 
 
-  <a name="charts"></a>
-  <div class="contentTop padding">
+  <section id="charts" class="contentTop padding">
     <div class="content">
 
       <h1>Sankey Chart of Material Flow</h1>
@@ -517,34 +513,33 @@ KI,48.143640,11.603463,Hans
       -->
 
     </div>
-  </div>
+  </section>
 
   <div style="clear:both"></div>
-  <a name="regional"></a>
 
-  <div class="content contentTop padding">
-
+  <section id="regional" class="contentTop padding">
+    <div class="content">
       <div id="readmeDiv"></div><br>
 
       <iframe class="block-map-directory cf" id="map_directory" src="../samples/maps/counties/counties.html" style="width:100%;height:500px"></iframe>
-  
-  </div>
-
-  
-  <a name="local"></a>
-  <div class="content padding">
-    <h1 style="margin-bottom:0px">Recycling Processors (B2B)</h1>
-
-    <iframe class="block-map-directory cf" id="map_directory" src="https://data.georgia.org/site/widget.html#processors" style="width:100%;height:500px"></iframe>
-  
-    <div style="margin-top:18px">
-      <a href="https://data.georgia.org/#recycling">Additional Datasets</a> - Landfills, Inert Waste, Transfer Stations
     </div>
-  </div>
+  </section>
 
 
-  <a name="places"></a>
-  <div class="litePanel contentTop padding">
+  <section id="local" class="padding">
+    <div class="content">
+      <h1 style="margin-bottom:0px">Recycling Processors (B2B)</h1>
+
+      <iframe class="block-map-directory cf" id="map_directory" src="https://data.georgia.org/site/widget.html#processors" style="width:100%;height:500px"></iframe>
+    
+      <div style="margin-top:18px">
+        <a href="https://data.georgia.org/#recycling">Additional Datasets</a> - Landfills, Inert Waste, Transfer Stations
+      </div>
+    </div>
+  </section>
+
+
+  <section id="places" class="litePanel contentTop padding">
     <div class="content">
       <img src="../img/overview/places-us.gif" style="width:100%; max-width:300px; float:right">
       <h1>All The Places API</h1>
@@ -552,26 +547,25 @@ KI,48.143640,11.603463,Hans
       Data will be harvested from existing websites and databases using the techniques developed for 
       <a href="https://github.com/alltheplaces/alltheplaces">All The Places</a>. 
       Over 450 spiders and scrapers pull data nightly from sites that post their 
-      locations online. Material input-output requests can be shared using CSV files or HTML.<br><br>
+      locations online. Material input-output requests can be shared using CSV files, HTML posts and API feeds.<br><br>
 
       <b>Example:</b> Your construction contract has a requirement to use 50% reclaimed lumber. 
       Add a link documenting how much lumber you need and when you need it.  Groups like 
-      the Lifecycle Building Center retrieve lumber after film productions and can 
+      the <a href="https://www.lifecyclebuildingcenter.org/">Lifecycle Building Center</a> retrieve lumber after film productions and can 
       watch for taredown dates that fit your schedule.
       <br><br>
     </div>
-  </div>
+  </section>
 
 
-  <a name="projects"></a>
-  <div class="litePanel">
-    <div class="content contentTop padding">
+  <section id="projects" class="litePanel contentTop padding">
+    <div class="content">
       <div id="projectsDiv" class="rootdoc"></div>
     </div>
-  </div>
+  </section>
 
 
-  <a name="partners"></a>
+  
   <style>
     #footerBox {
       padding-top:20px;
@@ -583,9 +577,9 @@ KI,48.143640,11.603463,Hans
       }
     }
   </style>
-  <div id="footerBox" style="clear:both; background: #eee; z-index: 2000; overflow: auto">
+  <div id="footerBox" class="padding" style="clear:both; background: #eee; z-index: 2000; overflow: auto">
     <div class="content">
-      <div style="float:left; margin-right:40px">
+      <div id="partners" style="float:left; margin-right:40px">
         <h2>Partners</h2>
 
         <img src="../img/logo/epa.png" style="width:100px; float:left; margin-right: 20px">
@@ -607,14 +601,6 @@ KI,48.143640,11.603463,Hans
 
 </div><!-- /#fullcolumn -->
 
-
-<div id="allLegends"></div>
-  
-
-
-
-
-    
 
 
     
@@ -1123,16 +1109,13 @@ $('#sidecolumnContent a').click(function(event) {
     setTimeout(function(){ 
 
       var y = $(window).scrollTop();  //your current y position on the page
-      $(window).scrollTop(y-50);
+      $(window).scrollTop(y-50); // Adjust for fixed header.
 
     }, 10);
 });
 
 
 
-var mapFixed = false;
-$(window).scroll(function(){
-  
   function elementScrolled(elem) // scrolled into view
   {
     var docViewTop = $(window).scrollTop();
@@ -1148,7 +1131,7 @@ $(window).scroll(function(){
     //var elemTop = $(elem).offset().top;
     var elemBottom = $(elem).offset().top + $(elem).height() + hangover - docViewBottom;
     //console.log('offset: ' + $(elem).offset().top + ' height:' + $(elem).height() + ' docViewBottom:' + docViewBottom + ' elemBottom: ' + elemBottom);
-    console.log('topReached elemBottom: ' + elemBottom);
+    //console.log('bottomReached elemBottom: ' + elemBottom);
     return (elemBottom < 0);
   }
   function topReached(elem) // top scrolled out view
@@ -1159,9 +1142,43 @@ $(window).scroll(function(){
     //var elemTop = $(elem).offset().top;
     var elemTop = $(elem).offset().top - docViewTop - pretop;
     //console.log('offset: ' + $(elem).offset().top + ' height:' + $(elem).height() + ' docViewBottom:' + docViewBottom + ' elemBottom: ' + elemBottom);
-    console.log('topReached elemTop: ' + elemTop);
+    //console.log('topReached elemTop: ' + elemTop);
     return (elemTop < 0);
   }
+
+
+
+// Cache selectors
+var lastId,
+ topMenu = $("#sidecolumnContent"),
+ //alert($("#sidecolumnContent").height());
+ //topMenuHeight = topMenu.height()+1,
+ topMenuHeight = topMenu.outerHeight()+1,
+ // All list items
+ menuItems = topMenu.find("a"),
+ // Anchors corresponding to menu items
+ scrollItems = menuItems.map(function(){
+   var item = $($(this).attr("href"));
+    if (item.length) { return item; }
+ });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  /*
+  var href = $(this).attr("href");
+  console.log('Clicked ' + href);
+  var offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({
+      scrollTop: offsetTop
+  }, 850);
+  e.preventDefault();
+  */
+});
+
+
+var mapFixed = false;
+$(window).scroll(function() {
 
   // This is where we use the function to detect if ".box2" is scrolled into view, and when it is add the class ".animated" to the <p> child element
   if (bottomReached('#hublist')) {
@@ -1183,6 +1200,32 @@ $(window).scroll(function(){
     $('.mapHolderInner').removeClass('mapHolderFixed');
     mapFixed = false;
   }
+
+
+  // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+      console.log("CURRENT ID: " + id);
+      lastId = id;
+      // Set/remove active class
+
+      menuItems.removeClass("active");
+      menuItems.filter("[href='#"+id+"']").addClass("active");
+      menuItems
+         .parent().removeClass("active")
+         .end().filter("[href='#"+id+"']").parent().addClass("active");
+   }
+   // 
 });
 
 </script>

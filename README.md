@@ -70,7 +70,7 @@ There is growing trend across industry to trace the entire supply chain.
 Responsible sourcing allows manufacturers to...
 -->
 
-[Sustainable Material Management](https://www.epa.gov/smm) - US EPA  
+[Sustainable Materials Management](https://www.epa.gov/smm) - US EPA  
 
 [Recycling and Resource Recovery as a Tool for Regional Economic Development](https://www.epa.gov/smm/sustainable-materials-management-smm-web-academy-webinar-recycling-and-resource-recovery-tool) - Webinar: Nov 20, 2019, 1PM  
 
@@ -86,7 +86,7 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
 
 <!--
-USCSD Materials Marketplace
+USCSD Materials Marketplace - Seems to be members only. Wes has a contact that worked on it.
 https://usbcsd.org/materials
 
 Southern Regional Science Association
