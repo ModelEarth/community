@@ -1185,9 +1185,11 @@ $(window).scroll(function() {
     $('.headerbar').hide();
     revealHeader = true; // For next manual scroll
   } else if ($(window).scrollTop() > previousScrollTop) { // Scrolling Up
-    $('.headerbar').hide();
+    if ($(window).scrollTop() > previousScrollTop + 20) { // Scrolling Up fast
+      $('.headerbar').hide();
+    }
   } else { // Scrolling Down
-    if (previousScrollTop + 0 < $(window).scrollTop()) { // Reveal if scrolling down fast
+    if ($(window).scrollTop() < (previousScrollTop - 20)) { // Reveal if scrolling down fast
       $('.headerbar').show();
     }
   }
