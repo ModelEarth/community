@@ -358,8 +358,7 @@ KI,48.143640,11.603463,Hans
       <!--
       We're integrating visulization tools and distributed datasets 
       -->
-      Tools for  
-      communities, builders and manufacturers to increase efficiency 
+      Tools for communities, builders and manufacturers to increase efficiency 
       while protecting the environment using  
       <a href="https://www.epa.gov/smm" style="white-space:nowrap">Sustainable Materials Management</a>.<br>
 
@@ -393,8 +392,9 @@ KI,48.143640,11.603463,Hans
       <div class='three' style='overflow:auto;'>
         <div>
           <h2>What?</h2>
-          Data visualization tools and maps for exploring state, regional and local input-output flow to create models for 
+          Data visualization of material input-output flow for  
           community planning, B2B networking and environmental education.
+          Models and maps for state, regional and local projects. 
         </div>
         <div>
           <h2>Why?</h2>
@@ -518,7 +518,7 @@ KI,48.143640,11.603463,Hans
 
   <div style="clear:both"></div>
 
-  <section id="regional" class="contentTop padding">
+  <section id="regional" class="litePanel contentTop padding">
     <div class="content">
       <div id="readmeDiv"></div><br>
 
@@ -1148,13 +1148,9 @@ $('#sidecolumnContent a').click(function(event) {
   }
 
 
-
 // Cache selectors
 var lastId,
  topMenu = $("#sidecolumnContent"),
- //alert($("#sidecolumnContent").height());
- //topMenuHeight = topMenu.height()+1,
- topMenuHeight = topMenu.outerHeight()+1,
  // All list items
  menuItems = topMenu.find("a"),
  // Anchors corresponding to menu items
@@ -1162,6 +1158,7 @@ var lastId,
    var item = $($(this).attr("href"));
     if (item.length) { return item; }
  });
+ var topMenuHeight = 150;
 
 // Bind click handler to menu items
 menuItems.click(function(e){
@@ -1225,7 +1222,7 @@ $(window).scroll(function() {
          .parent().removeClass("active")
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }
-   // 
+   
 });
 
 </script>
@@ -1248,6 +1245,7 @@ $(window).scroll(function() {
         climbpath += "../";
       }
 
+      // Make links relative to the current directory.
       $(".rootdoc a[href]").each(function() {
         if($(this).attr("href").toLowerCase().indexOf("http") < 0) {
             $(this).attr("href", climbpath + $(this).attr('href'));

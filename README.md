@@ -75,7 +75,7 @@ Responsible sourcing allows manufacturers to...
 [Recycling and Resource Recovery as a Tool for Regional Economic Development](https://www.epa.gov/smm/sustainable-materials-management-smm-web-academy-webinar-recycling-and-resource-recovery-tool) - Webinar: Nov 20, 2019, 1PM  
 
 [OECD - Organization for Economic
-Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France, Nice!  
+Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France  
 
 <!-- GEOD - Global Economic Open Database  -->
 
