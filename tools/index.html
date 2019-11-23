@@ -336,7 +336,7 @@ KI,48.143640,11.603463,Hans
     <a href="#modeling">IO Modeling</a>
     <a href="#charts">Material Flow</a>
     <a href="#regional">Multi-County</a>
-    <a href="#local">Processor Maps</a>
+    <a href="#local">Recycling Maps</a>
     <a href="#places">All the Places</a>
     <br>
 
@@ -416,9 +416,9 @@ KI,48.143640,11.603463,Hans
 
       <div>
           <h2>Upcoming Events and Internships</h2>
-          <b>When/Where:</b> In May of 2020, Georgia communities will participate in the Lifecycle App Design Challenge. 
+          <b>When/Where:</b> In May of 2020, Georgia communities will participate in the Lifecycle App Design Challenge to set development priorities. 
           During the Summer of 2020, college interns will create modules using local and regional data. 
-          In the Fall of 2020, we'll expand on new tools during the Sustainable Communities Hackathon. 
+          In the Fall of 2020, we'll expand on the new tools during the Sustainable Communities Hackathon. 
           <a href="https://model.georgia.org/communities" target="_blank" style="white-space: nowrap">Learn More and Register</a>.
       </div>
 
@@ -500,7 +500,9 @@ KI,48.143640,11.603463,Hans
     <div class="content">
       <h1>Statewide Input-Output Modeling</h1>
 
-      <a href="../samples/dataset/">module example</a>
+      Screenshot from EPA Georgia interface.  
+      <a href="../samples/dataset/">Module example</a> which could pull from USEEIO API.<br><br>
+
 
       <img src="../img/overview/heatmap.png" style="width:100%">
     </div>
@@ -540,7 +542,7 @@ KI,48.143640,11.603463,Hans
       <iframe class="block-map-directory cf" id="map_directory" src="https://data.georgia.org/site/widget.html#processors" style="width:100%;height:500px"></iframe>
     
       <div class="content" style="margin-top:18px">
-        <a href="https://data.georgia.org/#recycling">Additional Datasets</a> - Landfills, Inert Waste, Transfer Stations
+        <a href="https://data.georgia.org/#recycling">Additional Maps</a> - Landfills, Inert Waste, Transfer Stations
       </div>
     
   </section>
@@ -596,7 +598,7 @@ KI,48.143640,11.603463,Hans
       <div style="float:left">
         <h2>Get Involved</h2>
 
-        <a href="https://model.georgia.org/communities/">Register</a> to to participate in our 2020 events and internships.<br><br>
+        <a href="https://model.georgia.org/communities/">Register</a> to participate in our 2020 events and internships.<br><br>
 
         <a href="https://GitHub.com/modelearth/community/">Edit on GitHub</a> - Contribute to our code and datasets.<br><br>
 
@@ -1177,9 +1179,24 @@ menuItems.click(function(e){
   */
 });
 
-
+function currentSideID() {
+  // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   return id;
+   //console.log('id ' + id);
+}
 var mapFixed = false;
 var previousScrollTop = $(window).scrollTop();
+var bottomSection = "partners";
 $(window).scroll(function() {
   if (revealHeader == false) {
     $('.headerbar').hide();
@@ -1217,20 +1234,14 @@ $(window).scroll(function() {
     mapFixed = false;
   }
 
+   var id = currentSideID();
 
-  // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   
-   if (lastID !== id) { // Highlight side navigation
+   if($(window).scrollTop() + $(window).height() == $(document).height()) { // At bottom
+      //console.log('at bottom');
+      menuItems.removeClass("active");
+      menuItems.filter("[href='#"+bottomSection+"']").addClass("active");
+      lastID = bottomSection;
+   } else if (lastID !== id) { // Highlight side navigation
       //console.log("CURRENT ID: " + id);
       lastID = id;
       menuItems.removeClass("active");
@@ -1240,6 +1251,10 @@ $(window).scroll(function() {
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }
    
+  if (id == "intro") {
+    $('.headerbar').show();
+  }
+
 });
 
 </script>

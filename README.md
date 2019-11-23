@@ -7,7 +7,7 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 
 ### Schedule  
 
-[<b>Spring 2020</b> - Georgia's Sustainable Communities App Input Sessions](https://model.georgia.org/communities) 
+[<b>Spring 2020</b> - Georgia's Product Lifecycle App Design Challenge](https://model.georgia.org/communities) 
 
 [<b>Fall 2020</b> - Code for America Sustainable Communities Hackathon](https://www.codeforamerica.org/) 
 <br>
@@ -71,9 +71,9 @@ Responsible sourcing allows manufacturers to...
 -->
 
 [Sustainable Materials Management](https://www.epa.gov/smm) - US EPA  
-
+<!--
 [Recycling and Resource Recovery as a Tool for Regional Economic Development](https://www.epa.gov/smm/sustainable-materials-management-smm-web-academy-webinar-recycling-and-resource-recovery-tool) - Webinar: Nov 20, 2019, 1PM  
-
+-->
 [OECD - Organization for Economic
 Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France  
 
@@ -97,7 +97,7 @@ http://www.srsa.org/
 
 ## Team Projects
 
-<a href="https://poloclub.github.io/#cse6242">Georgia Tech Data and Visual Analytics teams</a> will have an opportunity to expand on model visualization using machine learning.  
+<a href="https://poloclub.github.io/#cse6242">Georgia Tech Data and Visual Analytics teams</a> will have an opportunity to expand on models using machine learning.  
 
 
 
