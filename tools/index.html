@@ -58,7 +58,12 @@ crossorigin=""></script>
 
   <style>
     body { font-size: 14px; }
-    h1 { font-size: 34px; }
+    h1 {
+      font-size: 34px; 
+      font-family: "Cooper Light",Georgia,Times,"Times New Roman",serif;
+      font-weight: 200;
+      -webkit-font-smoothing:antialiased;
+    }
     h2 { font-size: 18px; }
     #map { height: 600px; }
     aside, pre { display: none; }
@@ -390,34 +395,49 @@ KI,48.143640,11.603463,Hans
             padding-right:40px;
           }
         }
+
+        .svg-i-right-arrow  {
+            cursor: pointer;
+            width: 2.75rem;
+            height: 2.75rem;
+            border-radius: 2.75rem;
+            position: relative;
+            display: block;
+        }
+        .svg-i-right-arrow i {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9I…0xMi4xNTEtOS44NDktMjItMjEuOTk5LTIyIiBmaWxsPSIjNzA3MDcwIi8+PC9nPjwvc3ZnPg==);
+            background-position: 0 0;
+            width: 1.4375rem;
+            height: 1.4375rem;
+        }
       </style>
 
       <div class='three' style='overflow:auto;'>
         <div>
           <!-- What? -->
           <h2>Input-Output Modeling</h2>
-          <b>What:</b> Financial and environmental impact data on over 400 industry sectors 
-          for community planning, B2B networking and environmental education. 
+          <b>What</b> – Explore spending and environmental impacts from over 400 industry sectors 
+          for community planning, business development and environmental education. 
 
         </div>
         <div>
           <!-- Why? -->
           <h2>Material Reuse/Recycling</h2>
-          <b>Why:</b> To reap the economic, social and environmental benefits of turning waste streams into revenue streams 
+          <b>Why</b> – To reap the economic, social and environmental benefits of turning waste streams into revenue streams 
           that lower the cost of material input during production.
         </div>
         <div>
           <!-- How -->
           <h2>Decentralized Market Data</h2>
-          <b>How:</b> By combining local, regional and national data feeds with new module development using the 
+          <b>How</b> – By combining local, regional and national data feeds with new modules developed using the 
           US EPA's Environmentally-Extended <span style='white-space: nowrap;'>Input-Output</span> API.
         </div>
       </div>
 
       <div>
           <h2>Upcoming Events and Internships</h2>
-          <b>When/Where:</b> In May of 2020, Georgia communities will participate in the Lifecycle App Design Challenge to set development priorities. 
-          During the Summer of 2020, college interns will create modules using local and regional data. 
+          In May of 2020, Georgia communities will participate in our Lifecycle App Design Challenge to set development priorities. 
+          During the Summer of 2020, college students will receive paid internships to create modules with local and regional data. 
           In the Fall of 2020, we'll expand on the new tools during the Sustainable Communities Hackathon. 
           <a href="https://model.georgia.org/communities" target="_blank" style="white-space: nowrap">Learn More and Register</a>.
       </div>
@@ -448,7 +468,7 @@ KI,48.143640,11.603463,Hans
         <div id="hublist" class="padding-left">
 
           <h1>Data Driven Decision Making</h1>
-          <h1 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of Goods & Services</h1>
+          <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of Goods & Services</h2>
           <br><br>
 
           <!--
@@ -567,7 +587,7 @@ KI,48.143640,11.603463,Hans
   </section>
 
 
-  <section id="projects" class="litePanel contentTop padding">
+  <section id="projects" class="contentTop padding">
     <div class="content">
       <div id="projectsDiv" class="rootdoc"></div>
     </div>
@@ -1168,15 +1188,21 @@ var topMenuHeight = 150;
 
 // Bind click handler to menu items
 menuItems.click(function(e){
-  /*
   var href = $(this).attr("href");
+  /*
   console.log('Clicked ' + href);
   var offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({
-      scrollTop: offsetTop
-  }, 850);
-  e.preventDefault();
   */
+  if (href == "#intro") {
+    $('html,body').scrollTop(0);
+    /*
+    var offsetTop = 0;
+    $('html, body').stop().animate({
+        scrollTop: offsetTop
+    }, 850);
+    */
+    e.preventDefault();
+  }
 });
 
 function currentSideID() {
@@ -1253,6 +1279,7 @@ $(window).scroll(function() {
    
   if (id == "intro") {
     $('.headerbar').show();
+
   }
 
 });
