@@ -325,6 +325,13 @@ KI,48.143640,11.603463,Hans
           display:block;
         }
       }
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 24px; 
+        }
+        .fullMobile {
+          max-width:100% !important;
+        }
     </style>
 
   
@@ -395,21 +402,6 @@ KI,48.143640,11.603463,Hans
             padding-right:40px;
           }
         }
-
-        .svg-i-right-arrow  {
-            cursor: pointer;
-            width: 2.75rem;
-            height: 2.75rem;
-            border-radius: 2.75rem;
-            position: relative;
-            display: block;
-        }
-        .svg-i-right-arrow i {
-            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9I…0xMi4xNTEtOS44NDktMjItMjEuOTk5LTIyIiBmaWxsPSIjNzA3MDcwIi8+PC9nPjwvc3ZnPg==);
-            background-position: 0 0;
-            width: 1.4375rem;
-            height: 1.4375rem;
-        }
       </style>
 
       <div class='three' style='overflow:auto;'>
@@ -448,7 +440,7 @@ KI,48.143640,11.603463,Hans
   <section id="objectives" class="litePanel contentTop padding">
     <div class="content" style="font-size: 18px">
       <a href="https://www.epa.gov/smm/epa-sustainable-materials-management-program-strategic-plan-fiscal-years-2017-2022">
-        <img src="../img/overview/smmstratplan.jpg" style="width:100%; max-width:200px; float:right; margin-left:30px"></a>
+        <img src="../img/overview/smmstratplan.jpg" style="width:100%; max-width:200px; float:right; margin-left:30px" class="fullMobile"></a>
 
       <h1>Sustainable Materials Management Objectives</h1>
       <!-- US EPA's four primary SMM program objectives -->
@@ -560,7 +552,7 @@ KI,48.143640,11.603463,Hans
         <h1 style="margin-bottom:0px">Recycling Processors (B2B)</h1>
         <a href="https://data.georgia.org/#recycling">Additional Maps</a> - Landfills, Inert Waste, Transfer Stations
       </div><br><br>
-      
+
       <iframe class="block-map-directory cf" id="map_directory" src="https://data.georgia.org/site/widget.html#processors" style="width:100%;height:500px"></iframe>
   </section>
 
@@ -669,9 +661,11 @@ KI,48.143640,11.603463,Hans
 
 
   <div id="floatingButtons">
-    <div style="padding-right:10px;float:right">
+    <div style="padding-right:10px;float:left">
+      <a href="#intro" class="footerButton">Intro</a>
+      <a href="#objectives" class="footerButton">Objectives</a>
       <a href="#gomap" class="footerButton">Map</a>
-      <a href="#top" class="footerButton">Intro</a>
+      <a href="#projects" class="footerButton">Starters</a>
       <!--
       <a href="#items" class="footerButton">Items</a>
       -->
