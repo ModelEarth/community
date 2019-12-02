@@ -3,16 +3,16 @@
 
 ###Publish your Inventory and Wishlist
 
-List your items in a spreadsheet to include in published lists for reuse/recycling.  
-The CSV file format below matches the Google Merchant Center standard.  
+List your items in a spreadsheet to display in online lists for reuse/recycling.  
 We'll generate an embeddable list that you can also display in your own website.  
 
-Use the following format: [inventory\_org1.csv](inventory_org1.csv) and [wishlist\_org1.csv](wishlist_org1.csv)  
-Replace "org1" with the short name of your organization. Use underscores for spaces.  
+Use the following format: [entity1\_inventory.csv](entity1_inventory.csv) and [entity1\_wishlist.csv](entity1_wishlist.csv)  
+Replace "entity1" with your handle - a short lowercase name describing yourself or your organization. Use underscores for spaces.  
 
 [Send links](add) to your inventory and wishlist files. 
 If you don't have an existing server, we'll help you post for free using GitHub.  
 
+The CSV file format matches the Google Merchant Center standard.  
 
 
 <hr>
@@ -29,17 +29,40 @@ Participants may also publish their inventory data in the Google Merchant Center
 
 <hr>
 
-###Our additions to Google's spreadsheet format
+###Spreadsheet columns
 
-Additional inventory columns added:  
+- id  
+- title  
+- description  
+- google product category  
+- product type  
+- link  
+- image link  
+- condition  
+- availability  
+- price  
+- sale price  
+- sale price effective date  
+- gtin  
+- brand  
+- mpn  
+- item group id  
+- gender  
+- age group  
+- color  
+- size  
+- shipping  
+- shipping weight  
 
-- quantity inventory (integer)
-- quantity forsale (integer)
-- quantity free (integer)
+Additional inventory columns:  
+
+- forsale (integer) - quantity  
+- free (integer) - quantity  
+- inventory total (integer) - for internal tracking
 - latitude (integer)
 - longitude (integer)
 
-Additional wishlist columns added:  
+Additional wishlist columns:  
 
 - need date (date)  
 - until date (date)
@@ -47,9 +70,13 @@ Additional wishlist columns added:
 - latitude (integer)  
 - longitude (integer)  
 
+Omitted from wishlist: price, sale price, sale price effective, sale price effective date.  
+<br>
+
+[Post your Item List](add)
 
 <!--
-Omitted from wishlist: price, sale price, sale price effective, sale price effective date
+
 
 <hr>
 
