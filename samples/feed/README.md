@@ -3,13 +3,15 @@
 
 ###Publish your Inventory and Wishlist
 
-Post your items in a spreadsheet and [contact us](https://www.cognitoforms.com/Eon12/DataFeeds) to activate in the recycling/reuse marketplace.  
-The CSV file format matches the Google Merchant Center standard.  
+List your items in a spreadsheet to include in published lists for reuse/recycling.  
+The CSV file format below matches the Google Merchant Center standard.  
+We'll generate an embeddable list that you can also display in your own website.  
 
-Here's the format to use when posting your files: [inventory\_org1.csv](inventory_org1.csv) and [wishlist\_org1.csv](wishlist_org1.csv)  
+Use the following format: [inventory\_org1.csv](inventory_org1.csv) and [wishlist\_org1.csv](wishlist_org1.csv)  
 Replace "org1" with the short name of your organization. Use underscores for spaces.  
 
-[Send links](https://www.cognitoforms.com/Eon12/DataFeeds) to your inventory and wishlist files. We'll help you post for free using GitHub if you don't have an existing server.  
+[Send links](add) to your inventory and wishlist files. 
+If you don't have an existing server, we'll help you post for free using GitHub.  
 
 
 
@@ -17,7 +19,7 @@ Replace "org1" with the short name of your organization. Use underscores for spa
 
 ###Google Merchant Center
 
-Participants may also publish their inventory data to the Google Merchant Center.   
+Participants may also publish their inventory data in the Google Merchant Center.   
 
 [Create a Google Merchant Center account](https://www.google.com/retail/solutions/merchant-center/)  
 
@@ -45,9 +47,10 @@ Additional wishlist columns added:
 - latitude (integer)  
 - longitude (integer)  
 
-Omitted from wishlist: price, sale price, sale price effective, sale price effective date
 
 <!--
+Omitted from wishlist: price, sale price, sale price effective, sale price effective date
+
 <hr>
 
 ###Bonsai Data Storage
