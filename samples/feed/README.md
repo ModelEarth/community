@@ -1,13 +1,15 @@
 
 #Data Format
 
-###Publish your Material Inventory and Wishlist
+###Publish your Inventory and Wishlist
 
-Post your items in a spreadsheet and contact us to include in the recycling/reuse marketplace.
+Post your items in a spreadsheet and [contact us](https://www.cognitoforms.com/Eon12/DataFeeds) to activate in the recycling/reuse marketplace.  
+The CSV file format matches the Google Merchant Center standard.  
 
-Here's the format to use when posting your files: [inventory\_org1](inventory_org1.csv) and [wishlist\_org1](wishlist_org1.csv)  
+Here's the format to use when posting your files: [inventory\_org1.csv](inventory_org1.csv) and [wishlist\_org1.csv](wishlist_org1.csv)  
+Replace "org1" with the short name of your organization. Use underscores for spaces.  
 
-This CSV format matches the Google Merchant Center.  
+[Send links](https://www.cognitoforms.com/Eon12/DataFeeds) to your inventory and wishlist files. We'll help you post for free using GitHub if you don't have an existing server.  
 
 
 
@@ -25,29 +27,31 @@ Participants may also publish their inventory data to the Google Merchant Center
 
 <hr>
 
-###Our Modifications to Google's Initial Format
+###Our additions to Google's spreadsheet format
 
-Added to the inventory columns:  
+Additional inventory columns added:  
 
-- quantity_inventory (integer)
-- quantity_forsale (integer)
-- quantity_free (integer)
+- quantity inventory (integer)
+- quantity forsale (integer)
+- quantity free (integer)
 - latitude (integer)
 - longitude (integer)
 
-Added to the wishlist columns:  
+Additional wishlist columns added:  
 
 - need date (date)  
 - until date (date)
-- limit (integer - maximum offer)
+- limit (integer) - maximum offer  
 - latitude (integer)  
 - longitude (integer)  
 
-Removed when creating wishlist: price, sale price, sale price effective, sale price effective date
+Omitted from wishlist: price, sale price, sale price effective, sale price effective date
 
+<!--
 <hr>
 
 ###Bonsai Data Storage
 
 [The Bonsai approach](https://github.com/BONSAMURAIS/bonsai/wiki/Data-Storage) with 
 [RDF and JSON-LD](https://www.w3.org/2013/dwbp/wiki/RDF_AND_JSON-LD_UseCases) could be researched, but without a content management system interface, it may be too complex for small merchants to use.  
+-->
