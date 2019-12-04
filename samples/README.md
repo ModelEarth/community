@@ -20,8 +20,7 @@ Stand-alone examples of formatting and displaying community data.
 VueJS: [Frappe/ERPNext](https://frappe.io/frappejs/docs/client/index.md), 
 [VuePress](https://vuepress.vuejs.org/), 
 [Gridsome](https://gridsome.org/), 
-[Nuxt](https://nuxtjs.org/),
-.&nbsp; React: [Gatsby](https://www.gatsbyjs.org/)    
+[Nuxt](https://nuxtjs.org/).&nbsp; React: [Netlify Gatsby Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms), [Gatsby](https://www.gatsbyjs.org/)    
 
 <!--
 	[Element Table](https://element.bootstrap-table.com/examples/) 
