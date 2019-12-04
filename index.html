@@ -64,9 +64,19 @@
     text-overflow: ellipsis;
     float: left;
 }
+@media (max-width: 800px) {
+    .rightcolumn {
+        display:none;
+    }
+}
 </style>
 
-<div class="content">
+<div id="rightcolumn" style="float:right; max-width: 400px;">
+    <a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/EPA"></a> 
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="content" style="overflow:auto">
 
 <div style="padding:30px 0px 40px 0px; clear:both; overflow: auto;">
   <div id="readmeDiv"></div>
