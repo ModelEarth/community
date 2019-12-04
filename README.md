@@ -5,6 +5,9 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
+
+[Include your data](samples/feed) - Post your available materials inventory and publish wishlists to share your needs.
+
 ### Schedule  
 
 [<b>Spring 2020</b> - Georgia's Product Lifecycle App Design Challenge](https://model.georgia.org/communities) 
