@@ -1,4 +1,4 @@
-# Regional Data Sharing
+# Regional Data Exchange
 
 <!--
 Learn more at [Georgia Smart Communities Challenge](http://smartcities.ipat.gatech.edu/georgia-smart) and participate 

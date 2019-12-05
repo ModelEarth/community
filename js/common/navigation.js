@@ -151,7 +151,6 @@ $(document).ready(function(){
 			    $('html,body').scrollTop(0);
 
 			    // BUGBUG - still need to set URL since this is needed to override default position:
-			    // BUGBUG - Avoid when not on tools page.
 			    e.preventDefault();
 			}
 		  }
@@ -184,7 +183,7 @@ $(document).ready(function(){
 		$(window).scroll(function() {
 			var id = currentSideID();
 			console.log("id: " + id + " lastID: " + lastID);
-		   if($(window).scrollTop() + $(window).height() == $(document).height()) { // At bottom
+		   if($('#' + bottomSection).length > 0 && $(window).scrollTop() + $(window).height() == $(document).height()) { // If bottomSection exists and at bottom
 		      console.log('at bottom');
 		      menuItems.removeClass("active");
 		      menuItems.filter("[href*='#"+bottomSection+"']").addClass("active");
