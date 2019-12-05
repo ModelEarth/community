@@ -84,7 +84,7 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 
 <!-- GEOD - Global Economic Open Database  -->
 
-[Leyla Acaroglu on Lifecyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)   
+[Leyla Acaroglu on Life Cyle Assessment](https://medium.com/disruptive-design/a-guide-to-life-cycle-thinking-b762ab49bce3)   
 
 [Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global models which could be reproduced locally.  
 
