@@ -16,10 +16,13 @@ h3 {
 body {
   margin:0px;
   padding:0px;
-  background-colorX: #fafafa;
+  background-color: #fafafa;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing:antialiased;
+}
+#fullcolumn {
+    background-color: #fff;
 }
 code {
   background-color: #eee;
