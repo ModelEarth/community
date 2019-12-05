@@ -1,0 +1,88 @@
+<style>
+body {
+    background-color: rgb(250, 250, 250);
+}
+#sidecolumn {
+    float: left;
+    width: 150px;
+    height:100%;
+}
+#sidecolumnContent {
+    padding: 24px;
+    position: fixed;
+    line-height: 30px;
+    width: 124px;
+    font-size: 14px;
+}  
+#sidecolumnContent a {
+    display:block;
+    width: 100%;
+}
+#sidecolumnContent a.active {
+    border-right: 4px solid #999;
+    margin-left:-20px;
+    padding-left:20px;
+}
+#fullcolumn {
+    background-color: #fff;
+    overflow: auto;
+    border-left: 1px solid #ddd;
+    position: relative;
+    min-height: 100%; /* For short samples page */
+    heightX:100%; /* For counties map, but breaks fixed position map on tools page. */
+}
+.content {
+    padding: 60px;
+}
+@media (max-width: 800px) {
+    .content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #sidecolumn {
+      display: none;
+    }
+}
+</style>
+
+
+<div id="sidecolumnContent" style="z-index:1"><!-- z-index:1 allows boarder highlight to overlap adjacent content area -->
+
+<b style="font-size: 12px">ABOUT</b><br>
+<!-- tools/ -->
+<!--
+<a href="#intro">Intro</a>
+<a href="#objectives">Objectives</a>
+<a href="#data">Data Driven</a>
+<a href="#modeling">IO Modeling</a>
+<a href="#charts">Material Flow</a>
+<a href="#regional">Multi-County</a>
+<a href="#value">Value-Added</a>
+<a href="#local">Recycling Maps</a>
+<a href="#places">All the Places</a>
+<br>
+
+<b style="font-size: 12px">CODE</b><br>
+
+<a href="#projects">Code Starters</a>
+<a href="#partners">Partners</a>
+-->
+
+<a href="tools/#intro">Intro</a>
+<a href="tools/#objectives">Objectives</a>
+<a href="tools/#data">Data Driven</a>
+<a href="tools/#modeling">IO Modeling</a>
+<a href="tools/#charts">Material Flow</a>
+<a href="tools/#regional">Multi-County</a>
+<a href="tools/#value">Value-Added</a>
+<a href="tools/#local">Recycling Maps</a>
+<a href="tools/#places">All the Places</a>
+<br>
+
+<b style="font-size: 12px">CODE</b><br>
+
+<a href="tools/#projects">Code Starters</a>
+<a href="tools/#partners">Partners</a>
+
+</div>
+&nbsp;

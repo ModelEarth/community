@@ -13,16 +13,29 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Lato", sans-serif;
   color: #555;
   box-sizing: border-box;
 }
 .content {
-  max-width: 1000px;
+  max-width: 1020px;
   margin:0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+  .contentX {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 60px;
+      font-size: 15px;
+      line-height: 1.5;
+  }
+.contentTop  {
+
 }
 @media (max-width: 600px) {
   .content {
@@ -54,7 +67,11 @@ h2 {
 h2 a:visited {
   color: #0366d6;
 }
-
+hr {
+  border:0px;
+  border-top:1px solid #ddd;
+  margin:35px 0 40px 0;
+}
 
 /* HEADER */
 .headerLogo {

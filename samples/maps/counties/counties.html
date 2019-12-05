@@ -35,6 +35,9 @@ data/topo/GA-13-georgia-counties.json
     heightX: 100%;
     flex: 1 1 auto;
     }
+  #fullcolumn {
+      height:100%; /* Required for pages with maps that don't have a set height */
+  }
   .info {
       padding: 6px 8px;
       font: 14px/16px Arial, Helvetica, sans-serif;
@@ -70,13 +73,15 @@ TO DO: Move leaflet and topo .js files locallly.
 
 <script type="text/javascript" src="../../../js/common/showdown.min.js"></script>
 <script type="text/javascript" src="../../../js/jquery/zepto.min.js"></script>
+<!--
+Reactivate once redundant side nav is hidden when in iFrame.
 <script type="text/javascript" src="../../../js/common/navigation.js"></script>
+-->
 <script type="text/javascript" src="../../../js/common/common.js"></script>
 <link rel="stylesheet" href="../../../css/display.css" />
 </head>
 
 <body>
-<div id="header"></div>
 
 <!--
 BEA Arts Data
@@ -87,7 +92,6 @@ https://nasaa-arts.org/nasaa_research/creative-economy-state-profiles/
  Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
  -->
 <div class="mapHolder">
-<div style="height:60px"></div>
 <div class="map" id="mapcon"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
 </div>
 
@@ -179,7 +183,7 @@ function ready([us]) {
 
         function style(feature) {
             // Called for each topojson row
-            console.log("feature.properties.COUNTYFP: " + feature.properties.COUNTYFP);
+            // console.log("feature.properties.COUNTYFP: " + feature.properties.COUNTYFP);
             var fillColor = '#ff0000';
             
             // Hack - because region1 did not work like in did in maps/poverty

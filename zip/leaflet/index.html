@@ -115,7 +115,7 @@ body { position:relative; }
 
 <script type="text/javascript" src="DBSCAN/DBSCAN.js"></script>
 <script type="text/javascript" src="DBSCAN/compute_stat.js"></script>
-<script type="text/javascript" src="../../js/jquery/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../js/common/navigation.js"></script>
 <link rel="stylesheet" href="../../css/display.css" />
 <script type="text/javascript" src="../../js/common/common.js"></script>
@@ -125,11 +125,14 @@ body { position:relative; }
 -->
 <link rel="stylesheet" href="../../css/community.css" />
 
+<style>
+#fullcolumn {
+    height:100%; /* Required for pages with maps that don't have a set height */
+}
+</style>
 
 </head>
 <body>
-<div id="header"></div>
-
 
     <script>
     $(document).ready(function () {
@@ -159,7 +162,6 @@ body { position:relative; }
     <div id="allLegends"></div>
 
     <div class="mapHolder">
-        <div style="height:60px"></div>
         <div id="map"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
     </div>
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Product Lifecycle Marketplace</title>
+<title>Lifecycle Marketplace</title>
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon-usa-ga.png" />
 
 <!--
@@ -57,7 +57,6 @@ crossorigin=""></script>
   <script src="../js/leaflet/leaflet.icon-material.js"></script>
 
   <style>
-    body { font-size: 14px; }
     h1 {
       font-size: 34px; 
       font-familyX: "Cooper Light",Georgia,Times,"Times New Roman",serif;
@@ -120,9 +119,6 @@ crossorigin=""></script>
 </head>
 <body>
 
-<div id="header"></div>
-<div style="height:60px"></div>
-
 <a name="map"></a>
 
 <!-- 1. + 2. insert aside block + data -->
@@ -171,196 +167,132 @@ KI,48.157630,11.648014,Sepp
 KI,48.141579,11.604729,Schorsch
 KI,48.143640,11.603463,Hans
 -->
+
+<style>
+  .leaflet-popup {
+    bottom: 17px !important; 
+    /* Need to move map down more when popup is near top.  Default is -7px. */
+  }
+  #floatingButtons {
+    display:none;
+    height:40px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    background-color:#777;
+    z-index:9999;
+  }
+  #flexwrapper {
+    padding-topX: 40px;
+  }
+  #flexwrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  #hublist {
+    overflow: auto;
+    width:54%;
+    padding-right:40px
+  }
+  #mapHolder {
+    width: 46%;
+    /* Show box for testing scroll */
+    /* border: 1px solid #ccc; */
+
+    position: relative;
+  }
+
+  .mapHolderBottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  .mapHolderFixed {
+    position: fixed;
+    top: 80px;
+    bottom: auto;
+    width: 46%;
+    width: 440px;
+    padding-rightX: 30px; /* since fix is relative to page */
+  }
   
-  <style>
-      .content {
-          max-width: 1020px;
-          margin: 0 auto;
-          padding: 60px;
-          font-size: 15px;
-          line-height: 1.5;
-      }
-      .leaflet-popup {
-        bottom: 17px !important; 
-        /* Need to move map down more when popup is near top.  Default is -7px. */
-      }
-      #floatingButtons {
-        display:none;
-        height:40px;
-        width:100%;
-        position:fixed;
-        bottom:0;
-        background-color:#777;
-        z-index:9999;
-      }
-      #flexwrapper {
-        padding-top: 40px;
-      }
-      #flexwrapper {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-      }
-      #hublist {
-        overflow: auto;
-        width:54%;
-        padding-right:40px
-      }
-      #mapHolder {
-        width: 46%;
-        /* Show box for testing scroll */
-        /* border: 1px solid #ccc; */
-
-        position: relative;
-      }
-
-      .mapHolderBottom {
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-      }
-      .mapHolderFixed {
-        position: fixed;
-        top: 80px;
-        bottom: auto;
-        width: 46%;
-        width: 440px;
-        padding-rightX: 30px; /* since fix is relative to page */
-      }
-      
-      #maptop {
-        height: 30px;
-        border-bottomX: 1px solid #999;
-        background-color: #fff;
-        position: relative;
-        color: #555;
-        font-size: 16px;
-      }
-      #map {
-        height: 500px;
-        rightX: 0;
-        widthX: 100%;
-        box-sizing: border-box;
-      }
-      
-      .mapHolderFixed > .mapHolderCard {
-        margin-right: 30px;
-      }
-
-      #sidecolumn {
-        float: left;
-        width: 150px;
-      }
-      #sidecolumnContent {
-        padding: 24px;
-        position: fixed;
-        line-height: 30px;
-        width: 124px;
-      }
-      #fullcolumn {
-        overflow: auto;
-        border-left: 1px solid #ddd;
-      }
-      #sidecolumnContent a {
-        display:block;
-        width: 100%;
-      }
-      #sidecolumnContent a.active {
-        border-right: 4px solid #999;
-        margin-left:-20px;
-        padding-left:20px;
-      }
-      @media (max-width: 800px) {
-        .content {
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-        .padding {
-          padding: 20px;
-        }
-        #sidecolumn {
-          display: none;
-        }
-        #flexwrapper {
-          display: block;
-          box-sizing: border-box;
-        }
-        #hublist {
-          width:auto;
-          
-        }
-        .padding-left {
-          padding-left: 30px;
-        }
-        #mapHolder {
-          width: auto;
-          margin-top: 70px;
-          margin-left: 30px;
-          margin-bottom: 30px;
-        }
-        .mapHolderInner {
-          position: relative;
-          width: auto;
-        }
-        .mapHolderCard {
-          heightX:400px;
-          margin-right: 30px;
-          borderX: 0px solid #fff;
-        }
-
-        #hublist {
-          margin-left: 30px;
-          margin-right: 30px;
-        }
-
-        #floatingButtons {
-          display:block;
-        }
-      }
-      @media (max-width: 500px) {
-        h1 {
-          font-size: 30px; 
-          font-weight: 400;
-        }
-        .fullMobile {
-          max-width:100% !important;
-        }
-      }
-    </style>
-
+  #maptop {
+    height: 30px;
+    border-bottomX: 1px solid #999;
+    background-color: #fff;
+    position: relative;
+    color: #555;
+    font-size: 16px;
+  }
+  #map {
+    height: 500px;
+    rightX: 0;
+    widthX: 100%;
+    box-sizing: border-box;
+  }
   
+  .mapHolderFixed > .mapHolderCard {
+    margin-right: 30px;
+  }
+
+  @media (max-width: 800px) {
+
+    .padding {
+      padding: 20px;
+    }
+    #flexwrapper {
+      display: block;
+      box-sizing: border-box;
+    }
+    #hublist {
+      width:auto;
+      
+    }
+    .padding-left {
+      padding-left: 30px;
+    }
+    #mapHolder {
+      width: auto;
+      margin-top: 70px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+    .mapHolderInner {
+      position: relative;
+      width: auto;
+    }
+    .mapHolderCard {
+      heightX:400px;
+      margin-right: 30px;
+      borderX: 0px solid #fff;
+    }
+
+    #hublist {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    #floatingButtons {
+      display:block;
+    }
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 30px; 
+      font-weight: 400;
+    }
+    .fullMobile {
+      max-width:100% !important;
+    }
+  }
+</style>
 
 
 
-<div id="sidecolumn">
-  <div id="sidecolumnContent" style="z-index:0">
+  <section id="intro" class="content" style="padding-top:40px">
 
-    <b style="font-size: 12px">ABOUT</b><br>
-    <a href="#intro" class="active">Intro</a>
-    <a href="#objectives">Objectives</a>
-    <a href="#data">Data Driven</a>
-    <a href="#modeling">IO Modeling</a>
-    <a href="#charts">Material Flow</a>
-    <a href="#regional">Multi-County</a>
-    <a href="#value">Value-Added</a>
-    <a href="#local">Recycling Maps</a>
-    <a href="#places">All the Places</a>
-    <br>
-
-    <b style="font-size: 12px">CODE</b><br>
-
-    <a href="#projects">Code Starters</a>
-    <a href="#partners">Partners</a>
-
-  </div>
-  &nbsp;
-</div>
-
-<div id="fullcolumn">
-
-  <section id="intro" class="content contentTop padding">
-
-      <h1 style="margin-bottom:0px" class="h1-home">Product Lifecycle Marketplace</h1>
+      <h1 style="margin-bottom:0px" class="h1-home">Lifecycle Marketplace</h1>
       <!-- Marketplace -->
 
       <!--
@@ -403,14 +335,14 @@ KI,48.143640,11.603463,Hans
         <div>
           <!-- What? -->
           <h2>Input-Output Modeling</h2>
-          <b>What</b> – Tools for analyzing economic and environmental impact data from over 400&nbsp;industry sectors 
+          <b>What</b> – Tools for analyzing economic and environmental impacts in over 400&nbsp;industry sectors 
           for community planning, business development and environmental education. 
 
         </div>
         <div>
           <!-- Why? -->
           <h2>Material Reuse/Recycling</h2>
-          <b>Why</b> – To foster informed decisions while&nbsp;creating connections that reap the benefits of turning waste streams into revenue streams 
+          <b>Why</b> – To foster informed decisions while&nbsp;creating connections that turn waste streams into revenue streams 
           while lowering the cost of material input during production.
         </div>
         <div>
@@ -459,7 +391,16 @@ KI,48.143640,11.603463,Hans
         <div id="hublist">
 
           <h1>Data Driven Decision&nbsp;Making</h1>
-          <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of Goods & Services</h2>
+
+          
+
+          <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of <span style="white-space: nowrap">Goods & Services</span></h2>
+          
+          <!--
+          <a href="../samples/feed" class="button">Add your data feeds</a>
+          -->
+
+          <input type="button" onclick="location.href='../samples/feed';" value="Add your data feeds" />
           <br><br>
 
           <!--
@@ -559,7 +500,10 @@ KI,48.143640,11.603463,Hans
 
       Scientists have created a low-cost renewable fuel for homes in winter, charcoal for summer barbecues, active carbon for water filters and treating poison, and carbon nanotubes for cancer treatment and drug delivery.
       <br><br>
-
+      <!--
+        Brewery dataset 2015
+        https://github.com/gboeing/beer-locations/blob/master/data-analysis/visualization/datasets/locations-final-cleaned.csv
+      -->
       <a href="https://www.sciencedaily.com/releases/2019/10/191025170815.htm">Capturing Carbon from Air using Carbon Nanotubes</a><br>
       October 25, 2019 - A significantly less energy-intensive way to capture carbon from air at virtually any concentration level.
     </div>
@@ -579,11 +523,15 @@ KI,48.143640,11.603463,Hans
 
   <section id="places" class="contentTop padding">
     <div class="content">
-      <img src="../img/overview/places-us.gif" style="width:100%; max-width:300px; float:right">
+
       <h1>All The Places API</h1>
 
+      <div style="padding:20px;background-color:#fff; float:right; margin:0 0 40px 30px;">
+        <img src="../img/overview/places-us.gif" style="width:100%; max-width:300px;">
+      </div>
+
       Data will be harvested from existing websites and databases using the techniques developed for 
-      <a href="https://github.com/alltheplaces/alltheplaces">All The Places</a>. 
+      <a href="https://github.com/alltheplaces/alltheplaces" style="white-space: nowrap;">All The Places</a>. 
       Over 450 spiders and scrapers pull data nightly from sites that post their 
       locations online. Material input-output requests can be shared using CSV files, HTML posts and API feeds.<br><br>
 
@@ -640,7 +588,6 @@ KI,48.143640,11.603463,Hans
     </div>
   </div>
 
-</div><!-- /#fullcolumn -->
 
 
 
@@ -1188,55 +1135,23 @@ function topReached(elem) { // top scrolled out view
   return (elemTop < 0);
 }
 
-// HIGHLIGHT SIDE NAVIGATION ON SCROLL
-var lastID;
-var topMenu = $("#sidecolumnContent");
- // All list items
-var menuItems = topMenu.find("a");
+
  // Anchors corresponding to menu items
+
+/*
 var scrollItems = menuItems.map(function(){
    var item = $($(this).attr("href"));
     if (item.length) { return item; }
 });
 var topMenuHeight = 150;
+*/
 
-// Bind click handler to menu items
-menuItems.click(function(e){
-  var href = $(this).attr("href");
-  /*
-  console.log('Clicked ' + href);
-  var offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  */
-  if (href == "#intro") {
-    $('html,body').scrollTop(0);
-    /*
-    var offsetTop = 0;
-    $('html, body').stop().animate({
-        scrollTop: offsetTop
-    }, 850);
-    */
-    e.preventDefault();
-  }
-});
 
-function currentSideID() {
-  // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   return id;
-   //console.log('id ' + id);
-}
+
+
 var mapFixed = false;
 var previousScrollTop = $(window).scrollTop();
-var bottomSection = "partners";
+
 $(window).scroll(function() {
   if (revealHeader == false) {
     $('.headerbar').hide();
@@ -1274,27 +1189,7 @@ $(window).scroll(function() {
     mapFixed = false;
   }
 
-   var id = currentSideID();
-
-   if($(window).scrollTop() + $(window).height() == $(document).height()) { // At bottom
-      //console.log('at bottom');
-      menuItems.removeClass("active");
-      menuItems.filter("[href='#"+bottomSection+"']").addClass("active");
-      lastID = bottomSection;
-   } else if (lastID !== id) { // Highlight side navigation
-      //console.log("CURRENT ID: " + id);
-      lastID = id;
-      menuItems.removeClass("active");
-      menuItems.filter("[href='#"+id+"']").addClass("active");
-      menuItems
-         .parent().removeClass("active")
-         .end().filter("[href='#"+id+"']").parent().addClass("active");
-   }
    
-  if (id == "intro") {
-    $('.headerbar').show();
-
-  }
 
 });
 

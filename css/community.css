@@ -16,7 +16,7 @@ h3 {
 body {
   margin:0px;
   padding:0px;
-  background-color: #fafafa;
+  background-colorX: #fafafa;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing:antialiased;
@@ -31,8 +31,9 @@ code {
   font-family: monospace;
   white-space: pre-wrap;
 }
-codeX:first-line {
-    line-height: 0px;
+button {
+    paddingX: 10px;
+    line-heightX: 24px;
 }
 
 .regularText {
