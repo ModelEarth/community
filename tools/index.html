@@ -281,21 +281,17 @@ KI,48.143640,11.603463,Hans
   }
 
   #fullcolumn {
-      background-colorX: rgb(250, 250, 250);
+      background-color: rgb(250, 250, 250);
   }
-  .litePanelX {
+  .litePanel {
       background-color: #fff;
       overflow:auto;
-  }
-  /* every other section */
-  #fullcolumn:nth-child(odd) {
-    background-color: #fff;
   }
 </style>
 
 
-
-  <section id="intro">
+<div id="allsections">
+  <section id="intro" class="litePanel">
     <div class="content" style="padding-top:50px">
       <h1 style="margin-bottom:0px" class="h1-home">Lifecycle Marketplace</h1>
       <!-- Marketplace -->
@@ -370,7 +366,7 @@ KI,48.143640,11.603463,Hans
   </section>
 
   
-  <section id="objectives" class="litePanel">
+  <section id="objectives">
     <div class="content" style="font-size: 18px">
 
       <a href="https://www.epa.gov/smm/epa-sustainable-materials-management-program-strategic-plan-fiscal-years-2017-2022">
@@ -390,9 +386,9 @@ KI,48.143640,11.603463,Hans
   <div style="clear:both"></div>
 
 
-  <section id="data">
-  <div class="content" id="flexwrapper">
-
+  <section id="data" class="litePanel">
+    <div class="content">
+      <div id="flexwrapper">
         <div id="hublist">
 
           <h1>Data Driven Decision&nbsp;Making</h1>
@@ -441,14 +437,15 @@ KI,48.143640,11.603463,Hans
         </div>
       </div>
       <div id="allLegends"></div>
-  </div>
-  <hr>
-  To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
+  </div><!-- flexwrapper -->
+
+    <hr>
+    To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
       Copy using a text editor and click the pencil icon <a href="https://github.com/modelearth/community/blob/master/map/map.csv">here</a> to paste into GitHub for review. 
       <span style="white-space: nowrap;">Or you can fork</span> the <a href="https://github.com/modelearth/community">GitHub Repo</a> and commit using <a href="https://desktop.github.com/">GitHub Desktop</a>.
-  
+  </div>  
 
-   </section>
+  </section>
 
   
       
@@ -456,7 +453,7 @@ KI,48.143640,11.603463,Hans
   <div id="disqus_thread"></div>
 
 
-  <section id="modeling" class="litePanel contentTop padding">
+  <section id="modeling">
     <div class="content">
       <h1>Statewide Input-Output Modeling</h1>
 
@@ -469,7 +466,7 @@ KI,48.143640,11.603463,Hans
   </section>
 
 
-  <section id="charts" class="contentTop padding">
+  <section id="charts" class="litePanel contentTop padding">
     <div class="content">
 
       <h1>Sankey Chart of Material Flow</h1>
@@ -486,7 +483,7 @@ KI,48.143640,11.603463,Hans
 
   <div style="clear:both"></div>
 
-  <section id="regional" class="litePanel contentTop padding">
+  <section id="regional">
     <div class="content">
       <div id="readmeDiv"></div><br>
 
@@ -494,7 +491,7 @@ KI,48.143640,11.603463,Hans
     </div>
   </section>
 
-  <section id="value" class="contentTop padding">
+  <section id="value" class="litePanel">
     <div class="content">
       <div id="readmeDiv"></div><br>
 
@@ -516,7 +513,7 @@ KI,48.143640,11.603463,Hans
 
 
 
-  <section id="local" class="litePanel">
+  <section id="local">
     <div class="content">
       <div>
         <h1 style="margin-bottom:0px">Recycling Processors (B2B)</h1>
@@ -528,12 +525,12 @@ KI,48.143640,11.603463,Hans
   </section>
 
 
-  <section id="places" class="contentTop padding">
+  <section id="places" class="litePanel">
     <div class="content">
 
       <h1>All The Places API</h1>
 
-      <div style="padding:20px;background-color:#fff; float:right; margin:0 0 40px 30px;">
+      <div style="padding:20px;background-color:#fff; float:right; margin:0 0 0px 30px;">
         <img src="../img/overview/places-us.gif" style="width:100%; max-width:300px;">
       </div>
 
@@ -554,12 +551,13 @@ KI,48.143640,11.603463,Hans
   </section>
 
 
-  <section id="projects" class="litePanel contentTop padding">
+  <section id="projects">
     <div class="content">
       <div id="projectsDiv" class="rootdoc"></div>
     </div>
   </section>
 
+</div><!-- /allsections -->
 
   
   <style>
