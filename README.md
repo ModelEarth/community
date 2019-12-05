@@ -1,6 +1,8 @@
 <h1 class="h1-home">Community Model&nbsp;Building</h1>
 
-Prep for the EPA's sustainable community model building events in 2020. <a href="https://model.georgia.org/communities/">Learn more</a> and join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> Dec 9th.
+Prep for the EPA's sustainable community model building events in 2020.  
+
+<a href="https://model.georgia.org/communities/">Learn more</a> and join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> Dec 9th.
 
 
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
