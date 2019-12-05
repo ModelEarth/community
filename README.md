@@ -56,7 +56,7 @@ Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 
 13. Cross-relate BEA Codes, NAICS industries (and HS Codes).  
 
-14. Activate Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).  
+14. Activate Netlify Identity or Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).  
 
 <!--
 	12. Include elected officials for districts, zip codes or counties.
