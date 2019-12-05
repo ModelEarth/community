@@ -281,18 +281,22 @@ KI,48.143640,11.603463,Hans
   }
 
   #fullcolumn {
-      background-color: rgb(250, 250, 250);
-    }
-    .litePanel {
+      background-colorX: rgb(250, 250, 250);
+  }
+  .litePanelX {
       background-color: #fff;
       overflow:auto;
-    }
+  }
+  /* every other section */
+  #fullcolumn:nth-child(odd) {
+    background-color: #fff;
+  }
 </style>
 
 
 
-  <section id="intro" class="content" style="padding-top:40px">
-
+  <section id="intro">
+    <div class="content" style="padding-top:50px">
       <h1 style="margin-bottom:0px" class="h1-home">Lifecycle Marketplace</h1>
       <!-- Marketplace -->
 
@@ -362,18 +366,18 @@ KI,48.143640,11.603463,Hans
           <a href="https://model.georgia.org/communities" target="_blank" style="white-space: nowrap">Learn More and Register</a>.
       </div>
 
+    </div>
   </section>
 
   
   <section id="objectives" class="litePanel">
     <div class="content" style="font-size: 18px">
 
-       <h1>Sustainable Materials Management Objectives</h1>
-      <!-- US EPA's four primary SMM program objectives -->
-
       <a href="https://www.epa.gov/smm/epa-sustainable-materials-management-program-strategic-plan-fiscal-years-2017-2022">
-        <img src="../img/overview/smmstratplan.jpg" style="width:100%; max-width:200px; float:right; margin:0 0 30px 30px" class="fullMobile"></a>
+        <img src="../img/overview/smmstratplan.jpg" style="width:100%; max-width:180px; float:right; margin:0 0 30px 40px" class="fullMobile"></a>
 
+      <h1>Sustainable Materials Management Objectives</h1>
+      <!-- US EPA's four primary SMM program objectives -->
      
       <ol>
       <li>Decrease the disposal rate, which includes source reduction, reuse, recycling and prevention;</li>
@@ -386,8 +390,8 @@ KI,48.143640,11.603463,Hans
   <div style="clear:both"></div>
 
 
-  <section id="data" class="content">
-  <div id="flexwrapper">
+  <section id="data">
+  <div class="content" id="flexwrapper">
 
         <div id="hublist">
 
@@ -635,7 +639,7 @@ KI,48.143640,11.603463,Hans
 
   <div id="floatingButtons" style="text-align: center">
     <div style="padding-right:10px; display: inline-block;">
-      <a href="#intro" class="footerButton">Intro</a>
+      <a href="#" class="footerButton">Intro</a>
       <a href="#objectives" class="footerButton">Objectives</a>
       <a href="#gomap" class="footerButton">Map</a>
       <a href="#projects" class="footerButton">Starters</a>
