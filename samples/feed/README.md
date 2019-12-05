@@ -1,25 +1,35 @@
+#Data Feed Format
 
-#Data Format
+###Publish your Available Inventory and Materials Wishlist
 
-###Publish your Inventory and Wishlist
+[Send Us Links](add) to include your inventory and wishlist files in the Lifecycle Marketplace.  
+If you don't have an existing server to host your files, we'll help you post your listings for free using GitHub.  
 
-List your items in a spreadsheet to display in online lists for reuse/recycling.  
-We'll generate an embeddable list that you can also display in your own website.  
+Post as CSV files using the following Google Merchant Center standard:  
+[entity1\_inventory.csv](entity1_inventory.csv) and [entity1\_wishlist.csv](entity1_wishlist.csv)  
 
-Use the following format: [entity1\_inventory.csv](entity1_inventory.csv) and [entity1\_wishlist.csv](entity1_wishlist.csv)  
-Replace "entity1" with your handle - a short lowercase name describing yourself or your organization. Use underscores for spaces.  
+Replace "entity1" with a short lowercase name (handle) for yourself or your organization.  
+Use underscores instead of spaces.  
 
-[Send links](add) to your inventory and wishlist files. 
-If you don't have an existing server, we'll help you post for free using GitHub.  
+We'll generate embeddable lists that you can also display in your own website.  
 
-The CSV file format matches the Google Merchant Center standard.  
+<b>Examples of items to list:</b>  
+Rocks, slate, bricks  
+Byproducts of farming  
+Byproducts of food and beer production  
+Glass, plastic, metals  
+Infinitely recyclable [PDK plastic](https://www.packagingdigest.com/sustainable-packaging/new-plastic-for-food-packaging-is-infinitely-recyclable-2019-07-25)   
+Used furniture  
+Used lumber  
+Cloth and <a href="https://www.thisoldhouse.com/ideas/how-to-recycle-your-old-carpet">carpet</a>  
+ 
 
 
 <hr>
 
 ###Google Merchant Center
 
-Participants may also publish their inventory data in the Google Merchant Center.   
+You may also publish your inventory data in the Google Merchant Center.   
 
 [Create a Google Merchant Center account](https://www.google.com/retail/solutions/merchant-center/)  
 
@@ -73,7 +83,7 @@ Additional wishlist columns:
 Omitted from wishlist: price, sale price, sale price effective, sale price effective date.  
 <br>
 
-[Post your Item List](add)
+[Post your Item List(s)](add)
 
 <!--
 

@@ -11,8 +11,6 @@
 //  });
 //}
 
-
-
 $(document).ready(function(){
 
 	if(location.host.indexOf('localhost') < 0) {
@@ -37,16 +35,18 @@ $(document).ready(function(){
  	for (var i = 0; i < climbcount; i++) {
  		climbpath += "../";
  	}
+
+ 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
+ 	$("body").prepend( "<div id='header'></div>\r<div id='sidecolumn'></div>" );
+	
  	$("#header").load( climbpath + "header.html", function( response, status, xhr ) {
 
- 		//climbpath = ""
+ 		// Make paths relative to current page
  		$("#header a[href]").each(function() {
  			if($(this).attr("href").toLowerCase().indexOf("http") < 0){
 	      		$(this).attr("href", climbpath + $(this).attr('href'));
 	  		}
 	    })
-	    
-	    
  		$("#header img[src]").each(function() {
 	      $(this).attr("src", climbpath + $(this).attr('src'));
 	    })
@@ -102,5 +102,123 @@ $(document).ready(function(){
         	}
 		});
 	});
+	$("#sidecolumn").load( climbpath + "nav.html", function( response, status, xhr ) {
+		// Make paths relative to current page
+		
+ 		$("#sidecolumn a[href]").each(function() {
+ 			if($(this).attr("href").toLowerCase().indexOf("http") < 0){
+	      		$(this).attr("href", climbpath + $(this).attr('href'));
+	  		}
+	    })
+ 		$("#sidecolumn img[src]").each(function() {
+	      $(this).attr("src", climbpath + $(this).attr('src'));
+	    })
+		
+
+ 		// ALL SIDE COLUMN ITEMS
+ 		var topMenu = $("#sidecolumnContent");
+		var menuItems = topMenu.find("a");
+		var scrollItems = menuItems.map(function(){ // Only include "a" tag elements that have an href.
+
+			// Get the section using the names of hash tags (since id's start with #). Example: #intro, #objectives
+			if ($(this).attr("href").includes('#')) {
+				var sectionID = '#' + $(this).attr("href").split('#')[1].split('&')[0]; // Assumes first hash param does not use an equals sign.
+			
+				console.log('Get hash: ' + sectionID);
+
+			    var item = $(sectionID); //   .replace(/\//g, "").replace(/../g, "")    Use of replaces fixes error due to slash in path.
+			    if (item.length) {
+			    	return item;
+			    }
+			}
+		});
+		console.log("scrollItems: ");
+		console.log(scrollItems);
+		var bottomSection = "partners";
+
+ 		// BIND CLICK HANDLER TO MENU ITEMS
+		menuItems.click(function(e){
+		  var href = $(this).attr("href");
+		  /*
+		  console.log('Clicked ' + href);
+		  var offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+		  */
+		  if (href.includes("#intro")) { 
+
+		  	// If current page contains a section called intro
+		  	if($('#intro').length > 0) {
+			  	//alert("intro click")
+			    $('html,body').scrollTop(0);
+
+			    // BUGBUG - still need to set URL since this is needed to override default position:
+			    // BUGBUG - Avoid when not on tools page.
+			    e.preventDefault();
+			}
+		  }
+		});
+
+		// HIGHLIGHT SIDE NAVIGATION ON SCROLL
+		function currentSideID() {
+			var topMenuHeight = 150;
+		  	// Get container scroll position
+			var fromTop = $(this).scrollTop()+topMenuHeight;
+			console.log('fromTop ' + fromTop);
+			// Get id of current scroll item
+			var cur = scrollItems.map(function(){
+		   		console.log('offset().top ' + $(this).offset().top)
+		     	if ($(this).offset().top < fromTop) {
+		     		console.log('offset().top < fromTop ' + $(this).offset().top + ' < ' + fromTop);
+		     		console.log($(this).id);
+		       		return this;
+		       	}
+			});
+			// Get the id of the current element
+			console.log("cur.length " + cur.length)
+			cur = cur[cur.length-1];
+			var id = cur && cur.length ? cur[0].id : "";
+			console.log('currentSideID id: ' + id);
+			return id;
+		}
+		var lastID;
+		
+		$(window).scroll(function() {
+			var id = currentSideID();
+			console.log("id: " + id + " lastID: " + lastID);
+		   if($(window).scrollTop() + $(window).height() == $(document).height()) { // At bottom
+		      console.log('at bottom');
+		      menuItems.removeClass("active");
+		      menuItems.filter("[href*='#"+bottomSection+"']").addClass("active");
+		      lastID = bottomSection;
+		   } else if (lastID !== id) { // Highlight side navigation
+		      console.log("CURRENT ID: " + id);
+		      lastID = id;
+		      menuItems.removeClass("active");
+		      if (currentSection.length) {
+		      	menuItems.filter("[href*='#"+id+"']").addClass("active"); // *= means contains
+		  	  }
+		      /*
+		      menuItems
+		         .parent().removeClass("active")
+		         .end().filter("[href*='#"+id+"']").parent().addClass("active");
+		       */
+		   } else {
+		   		console.log("Scrolling, no action");
+		   }
+		   
+		  if (id == "intro") {
+		  	//console.log("headerbar show");
+		    $('.headerbar').show();
+		  }
+		});
+
+		// Initial page load
+		var currentSection = currentSideID();
+		if (currentSection.length) {
+			menuItems.filter("[href*='#"+currentSection+"']").addClass("active");
+		}
+	});
+
+	
 });
+
 

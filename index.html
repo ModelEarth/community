@@ -7,7 +7,7 @@
 <link rel="icon" type="image/x-icon" href="img/logo/favicon.png" />
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="js/jquery/zepto.min.js"></script>
+<script type="text/javascript" src="js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="js/d3/d3.v5.min.js"></script>
 <script type="text/javascript" src="js/common/showdown.min.js"></script>
 <script type="text/javascript" src="js/common/common.js"></script>
@@ -16,12 +16,14 @@
 <link rel="stylesheet" href="css/display.css" />
 </head>
 
+<!--
+    12-digit FIPS Code - state, county, tract, block group
+    https://www.policymap.com/2012/08/tips-on-fips-a-quick-guide-to-geographic-place-codes-part-iii/
+-->
 <body style="font-family: Lato, sans-serif;">
 <script>
   loadMarkupPage("README.md", "readmeDiv", "_parent");
 </script>
-<div id="header"></div>
-<div style="height:60px"></div>
 
 <style>
 .gobutton {
@@ -64,7 +66,7 @@
     text-overflow: ellipsis;
     float: left;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     #rightcolumn {
         display:none;
     }
@@ -78,44 +80,42 @@
 
 <div class="content" style="overflow:auto">
 
-<div style="padding:30px 0px 40px 0px; clear:both; overflow: auto;">
-  <div id="readmeDiv"></div>
-</div>
-
-<div class="localonly" style="float:left; padding-top:0px; clear:both; display:none">
-
-    <div id="greatestNeedsHolder" class="resultsHolder" style="margin-right:30px; ">
-      <div style="margin-bottom:10px;padding-top:0px">
-
-        <div style="margin-bottom:8px">Employment projections...</div>
-
-        <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
-        <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
-        <div style="clear:both"></div>
-      </div>
+    <div style="clear:both; overflow: auto;">
+      <div id="readmeDiv"></div>
     </div>
-    <br><br>
 
-  <script>
-    $('#zip').on("keypress", function(e) {
-      if (e.keyCode == 13) { // Enter hit
-        goZip();
-      }
-    });
-    function goZip() {
-      zip = $('#zip').val();
-      if (zip.length == 5) {
-        window.location='../../community/zip/#zip=' + zip;
-      } else {
-        alert('Please enter a 5 digit zip.');
-      }
-    }
-  </script>
+    <div class="localonly" style="float:left; padding-top:0px; clear:both; display:none">
+
+        <div id="greatestNeedsHolder" class="resultsHolder" style="margin-right:30px; ">
+          <div style="margin-bottom:10px;padding-top:0px">
+
+            <div style="margin-bottom:8px">Employment projections...</div>
+
+            <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
+            <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
+            <div style="clear:both"></div>
+          </div>
+        </div>
+        <br><br>
+
+      <script>
+        $('#zip').on("keypress", function(e) {
+          if (e.keyCode == 13) { // Enter hit
+            goZip();
+          }
+        });
+        function goZip() {
+          zip = $('#zip').val();
+          if (zip.length == 5) {
+            window.location='../../community/zip/#zip=' + zip;
+          } else {
+            alert('Please enter a 5 digit zip.');
+          }
+        }
+      </script>
 
 
-
-
-</div>
+    </div>
 
 <div id="disqus_thread"></div>
 </div>

@@ -6,7 +6,7 @@ Prep for the EPA's sustainable community model building events in 2020. <a href=
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
 
-[Include your data](samples/feed) - Post your available materials inventory and publish wishlists to share your needs.
+[Include your data](samples/feed) - Publish your material inventory and maintain a wishlist to share your needs.
 
 ### Schedule  
 
@@ -87,6 +87,9 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 [Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global models which could be reproduced locally.  
 
 [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
+
+[EXIOBASE database](https://simapro.com/products/exiobase-database/) 
+
 
 <!--
 USCSD Materials Marketplace - Seems to be members only. Wes has a contact that worked on it.
