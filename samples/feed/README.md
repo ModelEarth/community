@@ -41,10 +41,10 @@ You may also publish your inventory data in the Google Merchant Center.
 
 ###Spreadsheet columns
 
-- id  
+- id - your internal tracking identifier  
 - title  
 - description  
-- google product category  
+- google product category - [lookup](https://www.google.com/basepages/producttype/taxonomy.en-US.txt)  
 - product type  
 - link  
 - image link  
