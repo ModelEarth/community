@@ -182,6 +182,13 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       min-height: 85vh;        /* Viewport-relative units */
       width: 100%;
     }
+    .oneline {
+      overflowX:auto;
+      heightX:20px;
+
+      margin-left: 62px;
+      text-indent: -62px;
+    }
   </style>
 
 <script>
@@ -274,7 +281,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       var diff = numberWithCommas(dataSet[i][4] - dataSet[i][3]);
       if (rowcount > 1) {
           if (dataSet[i][3]) {
-          dataRow += "<tr><td class='hideMobile'><div style='float:left;min-width:21px;padding-top:2px'><input name='sector' type='checkbox' value=''></div><div style='overflow:auto; height:20px;'>" + dataSet[i][0] + " - " + dataSet[i][1] + "</div></td>";
+          dataRow += "<tr><td class='hideMobile'><div style='float:left;min-width:21px;padding-top:2px'><input name='sector' type='checkbox' value=''></div><div class='oneline'>" + dataSet[i][0] + " - " + dataSet[i][1] + "</div></td>";
             //dataRow += "<div><b>Location:</b> " + dataSet[i][2] + "</div>";
           
             dataRow += "<td style='borderX:1px solid blue'>0.2%</td>";
