@@ -23,14 +23,14 @@ Prep for the EPA's sustainable community model building events in 2020.
 
 2. Detailed [Goods & Services Report](samples/dataset) with heatmap providing environmental impact of production choices.   
 
-3. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
+3. [Maps of products and industries](samples/maps) - Regional hubs, industries by zipcode.  
 
 
 ### @ Code for Atlanta on Monday, Dec 9th  
 
-1. GitHub Pages with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats) - Create a GeorgiaRepo that pulls in multiple subdirectories: community, smm-tool-suite, reps  
+1. GitHub Pages with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats) - Create a GeorgiaRepo that pulls in multiple sub-directories: community, smm-tool-suite, reps  
 
-2. Charts using CSV files exported from EPA API.    
+2. Charts using csv files exported from EPA API.    
 
 
 ### Project Areas
