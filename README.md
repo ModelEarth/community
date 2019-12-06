@@ -26,6 +26,13 @@ Prep for the EPA's sustainable community model building events in 2020.
 3. [Maps of products and industries](samples/maps), distribution hubs and lists of items (recycling) collected at each hub.  
 
 
+### @ Code for Atlanta on Monday, Dec 9th  
+
+1. GitHub Pages with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats) - Create a GeorgiaRepo that pulls in multiple subdirectories: community, smm-tool-suite, reps  
+
+2. Charts using CSV files exported from EPA API.    
+
+
 ### Project Areas
 
 1. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
