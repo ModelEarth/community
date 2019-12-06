@@ -30,8 +30,12 @@ Prep for the EPA's sustainable community model building events in 2020.
 
 1. GitHub Pages with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats) - Create a GeorgiaRepo that pulls in multiple sub-directories: community, smm-tool-suite, reps  
 
-2. Charts using csv files exported from EPA API.    
+2. Charts using csv files exported from EPA API.  
 
+3. [Place a round image](https://github.com/ilyankou/Leaflet.IconMaterial/issues/3) over a [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) map point, which allows for color assignment. [Test](/community/hubs).
+<!--
+	https://www.wrld3d.com/wrld.js/latest/docs/leaflet/L.DivIcon/
+-->
 
 ### Project Areas
 
