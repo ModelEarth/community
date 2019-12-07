@@ -207,6 +207,9 @@ $(document).ready(function(){
 		  if (id == "intro") {
 		  	//console.log("headerbar show");
 		    $('.headerbar').show();
+		    // For when entering from a #intro link from another page.
+		    // Would be better to disable browser jump to #intro elsewhere.
+		    //$('html,body').scrollTop(0); 
 		  }
 		});
 
