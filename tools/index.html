@@ -1208,7 +1208,8 @@ $(window).scroll(function() {
   loadMarkupPage("README.md", "readmeDiv", "_parent");
   loadMarkupPage("../README.md", "projectsDiv", "_parent");
 
-  
+
+
   setTimeout(function(){ 
       // Get the levels below root
       var foldercount = (location.pathname.split('/').length - 1); // - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0) // Removed because ending with slash or filename does not effect levels. Increased -1 to -2.
