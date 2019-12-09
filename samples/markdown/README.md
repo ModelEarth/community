@@ -4,7 +4,18 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
 1. Install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to view and develop pages offline using localhost on your computer. (Note the folder indicated as your local site root.)
 
-2. Clone the "<a href='https://github.com/statedata/community'>statedata/community</a>" repo to your local computer.  (Fork if you plan to collaborate on updates.)
+ If you are using the Brave Browser, set a folder for your localhost](https://medium.com/@jmatix/using-chrome-as-a-local-web-server-af04baffd581). Chrome may need to remain open for Brave to access localhost via Web Server for Chrome. 
+
+ This above may fail, in which case launch a Python server.  
+ Change to your custom path after -d, or launch in your web folder.  
+
+ <code>python3 -m http.server 8887 -d /Users/East/Data</code>
+
+<!-- If running python cgi
+python3 -m http.server --cgi
+-->
+
+2. Clone the "<a href='https://github.com/modelearth/community'>community</a>" repo to your local computer.  (Fork if you plan to collaborate on updates.)
 
 3. When cloning the repo, place the "community" folder inside the folder where "Web Server for Chrome" points.  
 
