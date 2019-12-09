@@ -412,7 +412,8 @@ KI,48.143640,11.603463,Hans
       //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
       dp.name = "Intermodal Ports"
       dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-      dp.color = '#555'; // Alternative to scale
+      dp.color = '#0033ff'; // Alternative to scale
+      //alert(hex2rgb("#0033ff")); // a pretty blue;
       dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
       dp.group = L.layerGroup();
       dp.iconName = 'language';

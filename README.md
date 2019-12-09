@@ -1,8 +1,27 @@
 <h1 class="h1-home">Community Model&nbsp;Building</h1>
 
-Prep for the EPA's sustainable community model building events in 2020.  
+Prep for the EPA's sustainable community model building events in 2020.  Slack #epa   
 
-<a href="https://model.georgia.org/communities/">Learn more</a> and join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> Dec 9th.
+
+### Code for Atlanta - Monday, Dec 9th  
+
+<b>1. Teams</b>: Brainstorm project ideas - [Review maps and charts](tools/), [Review inventory exchange](tools/#places)   
+
+<b>2. GitHub</b>: Experiment with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats)  
+  Is it possible to pull just the [community](https://github.com/datascape/community) "tools" folder into [model.georgia](https://github.com/datascape/model.georgia) repo?   
+
+<b>3. Leaflet</b>: [Place a round image](https://github.com/ilyankou/Leaflet.IconMaterial/issues/3) over a [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) map point, which allows for color assignment. [Test here](/community/hubs).  
+
+<!--
+	https://www.wrld3d.com/wrld.js/latest/docs/leaflet/L.DivIcon/
+-->
+
+<b>4. D3.js</b>: [Create charts](samples/dataset/) using [new csv file](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [which Wes exported from API](resources/useeio/) with this [Python](python/produceUSEEIOimpactcsv.py).  
+
+
+---
+
+<a href="https://model.georgia.org/communities/">Learn more</a> and join our project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a>  
 
 
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
@@ -25,17 +44,6 @@ Prep for the EPA's sustainable community model building events in 2020.
 
 3. [Maps of products and industries](samples/maps) - Regional hubs, industries by zipcode.  
 
-
-### @ Code for Atlanta on Monday, Dec 9th  
-
-1. GitHub Pages with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats) - Create a GeorgiaRepo that pulls in multiple sub-directories: community, smm-tool-suite, reps  
-
-2. Charts using csv files exported from EPA API.  
-
-3. [Place a round image](https://github.com/ilyankou/Leaflet.IconMaterial/issues/3) over a [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) map point, which allows for color assignment. [Test](/community/hubs).
-<!--
-	https://www.wrld3d.com/wrld.js/latest/docs/leaflet/L.DivIcon/
--->
 
 ### Project Areas
 
