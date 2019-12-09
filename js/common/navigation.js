@@ -160,29 +160,32 @@ $(document).ready(function(){
 		function currentSideID() {
 			var topMenuHeight = 150;
 		  	// Get container scroll position
-			var fromTop = $(this).scrollTop()+topMenuHeight;
-			console.log('fromTop ' + fromTop);
+			var fromTop = $(this).scrollTop()+topMenuHeight; // this is the window
+			//console.log('fromTop ' + fromTop);
 			// Get id of current scroll item
-			var cur = scrollItems.map(function(){
+			var cur = scrollItems.map(function(){ // this is the sections
 		   		//console.log('offset().top ' + $(this).offset().top)
 		     	if ($(this).offset().top < fromTop) {
 		     		//console.log('offset().top < fromTop ' + $(this).offset().top + ' < ' + fromTop);
-		     		//console.log($(this).id);
-		       		return this;
+		     		return this;
 		       	}
 			});
-			// Get the id of the current element
-			console.log("cur.length " + cur.length)
+			if (cur.length == 0) {
+				// At top, above top of intro section
+				// To Do: Get the top most section
+				return "intro";
+			}
+			// Get the id of the last item fetched from scrollItems
 			cur = cur[cur.length-1];
 			var id = cur && cur.length ? cur[0].id : "";
-			console.log('currentSideID id: ' + id);
+			//console.log('currentSideID id: ' + id);
 			return id;
 		}
 		var lastID;
 		
 		$(window).scroll(function() {
 			var id = currentSideID();
-			console.log("id: " + id + " lastID: " + lastID);
+			//console.log("id: " + id + " lastID: " + lastID);
 		   if($('#' + bottomSection).length > 0 && $(window).scrollTop() + $(window).height() == $(document).height()) { // If bottomSection exists and at bottom
 		      //console.log('at bottom');
 		      menuItems.removeClass("active");
@@ -194,6 +197,8 @@ $(document).ready(function(){
 		      menuItems.removeClass("active");
 		      if (currentSection.length) {
 		      	if (id.length == 0) {
+		      		// Page without sections
+		      	} else if (id == "intro") {
 		      		// To do: Change to highlight the uppermost section.
 		      		menuItems.filter("[href='..\/tools\/#']").addClass("active");
 		      	} else {
@@ -220,15 +225,15 @@ $(document).ready(function(){
 
 		// Initial page load
 		var currentSection = currentSideID();
-		//if (currentSection.length) {
-			if (currentSection.length == 0) {
+		if (currentSection.length) {
+			if (currentSection == "intro") {
 		      	// To do: Change to highlight the uppermost section.
 		      	menuItems.filter("[href='..\/tools\/#']").addClass("active");
-		      	//lastID = "intro";
+		      	lastID = "intro";
 		    } else {
 				menuItems.filter("[href*='#"+currentSection+"']").addClass("active");
 			}
-		//}
+		}
 	});
 
 	
