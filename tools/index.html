@@ -68,7 +68,16 @@ crossorigin=""></script>
       height: 600px;
       width: 100%;
     }
-
+    #mapTitle {
+      position: absolute;
+      background-color:rgba(33,33,33,0.5);
+      color:#fff;
+      bottom:0;
+      left:0;
+      padding:10px 30px 10px 30px;
+      font-size: 18px;
+      z-index: 100000;
+    }
     #map2 {
       height: 500px;
       rightX: 0;
@@ -389,7 +398,10 @@ KI,48.143640,11.603463,Hans
       </ol>
     </div>
 
-    <div id="map"></div>
+    <div style="position:relative;">
+      <div id="map"></div>
+      <div id="mapTitle">Intermodal Ports</div>
+    </div>
   </section>
   <div style="clear:both"></div>
 
@@ -766,7 +778,7 @@ dp = {
 //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
 dp.name = "Intermodal Ports"
 dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-dp.color = '#555'; // Alternative to scale
+dp.color = '#0033ff'; // Alternative to scale
 dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
 
 dp.group = L.layerGroup();
@@ -841,7 +853,7 @@ function loadFromCSV(dataset) {
   })
 }
 loadFromCSV("map.csv");
-
+//loadFromCSV("breweries.csv");
 
 /////////// MAP SETTINGS ///////////
 
@@ -952,7 +964,6 @@ function hex2rgb(hex) {
   return null;
 }
 
-//alert(hex2rgb("#0033ff")); // a pretty blue;
 
 function addIcons(dp) {
   var circle,circle2;
