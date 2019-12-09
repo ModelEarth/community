@@ -124,7 +124,7 @@ $(document).ready(function(){
 			if ($(this).attr("href").includes('#')) {
 				var sectionID = '#' + $(this).attr("href").split('#')[1].split('&')[0]; // Assumes first hash param does not use an equals sign.
 			
-				console.log('Get hash: ' + sectionID);
+				//console.log('Get hash: ' + sectionID);
 
 			    var item = $(sectionID); //   .replace(/\//g, "").replace(/../g, "")    Use of replaces fixes error due to slash in path.
 			    if (item.length) {
@@ -164,10 +164,10 @@ $(document).ready(function(){
 			console.log('fromTop ' + fromTop);
 			// Get id of current scroll item
 			var cur = scrollItems.map(function(){
-		   		console.log('offset().top ' + $(this).offset().top)
+		   		//console.log('offset().top ' + $(this).offset().top)
 		     	if ($(this).offset().top < fromTop) {
-		     		console.log('offset().top < fromTop ' + $(this).offset().top + ' < ' + fromTop);
-		     		console.log($(this).id);
+		     		//console.log('offset().top < fromTop ' + $(this).offset().top + ' < ' + fromTop);
+		     		//console.log($(this).id);
 		       		return this;
 		       	}
 			});
@@ -184,16 +184,21 @@ $(document).ready(function(){
 			var id = currentSideID();
 			console.log("id: " + id + " lastID: " + lastID);
 		   if($('#' + bottomSection).length > 0 && $(window).scrollTop() + $(window).height() == $(document).height()) { // If bottomSection exists and at bottom
-		      console.log('at bottom');
+		      //console.log('at bottom');
 		      menuItems.removeClass("active");
 		      menuItems.filter("[href*='#"+bottomSection+"']").addClass("active");
 		      lastID = bottomSection;
 		   } else if (lastID !== id) { // Highlight side navigation
-		      console.log("CURRENT ID: " + id);
+		      //console.log("CURRENT ID: " + id);
 		      lastID = id;
 		      menuItems.removeClass("active");
 		      if (currentSection.length) {
-		      	menuItems.filter("[href*='#"+id+"']").addClass("active"); // *= means contains
+		      	if (id.length == 0) {
+		      		// To do: Change to highlight the uppermost section.
+		      		menuItems.filter("[href='..\/tools\/#']").addClass("active");
+		      	} else {
+		      		menuItems.filter("[href*='#"+id+"']").addClass("active"); // *= means contains
+		      	}
 		  	  }
 		      /*
 		      menuItems
@@ -201,7 +206,7 @@ $(document).ready(function(){
 		         .end().filter("[href*='#"+id+"']").parent().addClass("active");
 		       */
 		   } else {
-		   		console.log("Scrolling, no action");
+		   		//console.log("Scrolling, no action");
 		   }
 		   
 		  if (id == "intro") {
@@ -215,9 +220,15 @@ $(document).ready(function(){
 
 		// Initial page load
 		var currentSection = currentSideID();
-		if (currentSection.length) {
-			menuItems.filter("[href*='#"+currentSection+"']").addClass("active");
-		}
+		//if (currentSection.length) {
+			if (currentSection.length == 0) {
+		      	// To do: Change to highlight the uppermost section.
+		      	menuItems.filter("[href='..\/tools\/#']").addClass("active");
+		      	//lastID = "intro";
+		    } else {
+				menuItems.filter("[href*='#"+currentSection+"']").addClass("active");
+			}
+		//}
 	});
 
 	
