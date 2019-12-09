@@ -89,7 +89,7 @@ file_name = 'useeio_sectors_final_perspective.csv'
 result2_df.to_csv(file_name, sep=',', encoding='utf-8')  
 ```
 
-Enhancements which could be made to the export above.  
+Enhancements have been made to the export above.  [View new script](../../python/produceUSEEIOimpactcsv.py).
 
 1. Add column header called "section" to first column. 
 2. Reduce indicator values to 2 decimal points.
