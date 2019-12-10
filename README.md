@@ -3,7 +3,7 @@
 Prep for the EPA's sustainable community model building events in 2020.  Slack #epa   
 
 
-### Code for Atlanta - Monday, Dec 9th  
+### Code for Atlanta Projects  
 
 <b>1. Teams</b>: Brainstorm project ideas - [Review maps and charts](tools/), [Review inventory exchange](tools/#places)   
 
