@@ -1,9 +1,11 @@
 <h1 class="h1-home">Community Model&nbsp;Building</h1>
 
-Prep for the EPA's sustainable community model building events in 2020.  Slack #epa   
+Prep for the EPA's sustainable community model building events in 2020.   
 
-
+<!--
 ### Code for Atlanta Projects  
+
+Slack #epa
 
 <b>1. Teams</b>: Brainstorm project ideas - [Review maps and charts](tools/), [Review inventory exchange](tools/#places)   
 
@@ -12,16 +14,14 @@ Prep for the EPA's sustainable community model building events in 2020.  Slack #
 
 <b>3. Leaflet</b>: [Place a round image](https://github.com/ilyankou/Leaflet.IconMaterial/issues/3) over a [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) map point, which allows for color assignment. [Test here](/community/hubs).  
 
+<b>4. D3.js</b>: [Create charts](samples/dataset/) using [new csv file](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [which Wes exported from API](resources/useeio/) with this [Python](python/produceUSEEIOimpactcsv.py).  
+-->
+
+
 <!--
 	https://www.wrld3d.com/wrld.js/latest/docs/leaflet/L.DivIcon/
 -->
-
-<b>4. D3.js</b>: [Create charts](samples/dataset/) using [new csv file](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [which Wes exported from API](resources/useeio/) with this [Python](python/produceUSEEIOimpactcsv.py).  
-
-
----
-
-<a href="https://model.georgia.org/communities/">Learn more</a> and join our project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a>  
+ 
 
 
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
@@ -35,6 +35,8 @@ Prep for the EPA's sustainable community model building events in 2020.  Slack #
 
 [<b>Fall 2020</b> - Code for America Sustainable Communities Hackathon](https://www.codeforamerica.org/) 
 <br>
+
+<a href="https://model.georgia.org/communities/">Learn more</a> and join our project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> 
 
 ### Summary
 
