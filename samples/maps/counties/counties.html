@@ -51,6 +51,7 @@ data/topo/GA-13-georgia-counties.json
       color: #777;
   }
   #allLegends {
+    display:none; /* TEMP */
     position: absolute;
     bottom:30px;
     left:15px;
@@ -58,6 +59,11 @@ data/topo/GA-13-georgia-counties.json
     background-color: #fff;
     border: 2px solid rgba(0,0,0,0.2);
     border-radius: 4px;
+  }
+  .info.leaflet-control {
+    min-width: 150px;
+    displayX: none;
+    bottom: 0 !important;
   }
 </style>
 
@@ -118,7 +124,7 @@ var cluster_data = {};
 // Incoming domain, outgoing range. 
 // More about scales: https://www.d3indepth.com/scales/
 var color = d3.scaleOrdinal() // scaleLinear, scaleThreshold()
-    .domain([1,12]) // .domain(d3.range(0, 3))
+    .domain([1,13]) // .domain(d3.range(0, 3))
     .range(d3.schemePaired); // d3.schemeBlues[9]
 
 // Similar to maps/poverty
@@ -126,7 +132,7 @@ var color = d3.scaleOrdinal() // scaleLinear, scaleThreshold()
 var region1 = d3.map();
 var promises = [
 
-  // CSV file contains: name,county_num,economic_region,wia_region
+  // CSV file contains: name,county_num,economic_region,io_region
   //d3.csv("topo/GA_county_regions.csv", function(d) { 
 
   // TODO: Add topo/GA-13-georgia-counties.json topo load as a promise also, so both load simultaneous.
@@ -135,9 +141,8 @@ var promises = [
 
     // Similar to aside
     dp = {
-      numColumns: ["county_num","economic_region","wia_region"], // Omit "name" since not number.
-      valueColumn: "economic_region",
-      //valueColumn: "wia_region",
+      numColumns: ["county_num","economic_region","wia_region","io_region"], // Omit "name" since not number.
+      valueColumn: "io_region",
       //scaleType: "scaleQuantile",
       scaleType: "scaleOrdinal",
     }
@@ -161,7 +166,7 @@ var promises = [
   }),
 
   d3.csv("topo/GA_county_regions.csv", function(d) { 
-    region1.set(dp.county_num, +dp.economic_region); 
+    region1.set(dp.county_num, +dp.io_region); 
 
   })
 
@@ -189,7 +194,7 @@ function ready([us]) {
             // Hack - because region1 did not work like in did in maps/poverty
             dp.data.forEach(function(datarow) { // For each county row from the region lookup table
               if (datarow.county_num == feature.properties.COUNTYFP) {
-                fillColor = color(datarow.economic_region);
+                fillColor = color(datarow.io_region);
               }
             })
             return {
@@ -355,7 +360,7 @@ function ready([us]) {
               scrollWheelZoom: false,
               center: new L.LatLng(lat,lon),
               zoom: zoom,
-              layers: [OpenStreetMap_BlackAndWhite, dataParameters[0].group] // Indicates default layer
+              layers: [streets, dataParameters[0].group] // Indicates default layer
           });
           var baseLayers = {
             "Open Street Map": OpenStreetMap_BlackAndWhite,
@@ -425,13 +430,20 @@ function ready([us]) {
             }
 
             info.update = function(props){
+                if (props) {
+                  $(".info.leaflet-control").show();
+                } else {
+                  $(".info.leaflet-control").hide();
+                }
                 // National
                 //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
                 
-                this._div.innerHTML = "<h4>County</h4>" + (props ? props.NAME + "<br>" : "Hover over map<br>") + (props ? props.COUNTYFP : "")
+                this._div.innerHTML = "" 
+                + (props ? "<h4>" + props.NAME + " County</h4>" : "Hover over map<br>") 
+                + (props ? "FIPS 13" + props.COUNTYFP : "")
                 
 
-                // TO fix if using state - id is not defined
+                // To fix if using state - id is not defined
                 // Also, other state files may need to have primary node renamed to "data"
                 //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
             }
