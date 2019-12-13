@@ -1,4 +1,3 @@
-
 // sample from: https://bl.ocks.org/mbostock/ca9a0bb7ba204d12974bca90acc507c0
 var energyjson = {"nodes":[
 {"name":"Agricultural 'waste'"},
