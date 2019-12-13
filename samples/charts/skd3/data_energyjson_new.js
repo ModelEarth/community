@@ -45,7 +45,7 @@ var new_dataJson = {"nodes":[
 {"name":"Solar Thermal"},
 {"name":"Solar"},
 {"name":"Tidal"},
-{"name":"UK land based bioenergy"},
+{"name":"Land based bioenergy"},
 {"name":"Wave"},
 {"name":"Wind"}],
 "links":[

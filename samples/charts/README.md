@@ -30,5 +30,3 @@ https://www.researchgate.net/figure/A-more-complex-Sankey-diagram-1-The-structur
 [Vega Lite](https://vega.github.io/vega-lite/)
 
 [High Charts](https://www.highcharts.com/demo)
-
- 

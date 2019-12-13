@@ -45,7 +45,7 @@ var energyjson = {"nodes":[
 {"name":"Solar Thermal"},
 {"name":"Solar"},
 {"name":"Tidal"},
-{"name":"UK land based bioenergy"},
+{"name":"UK Land based bioenergy"},
 {"name":"Wave"},
 {"name":"Wind"}],
 "links":[
