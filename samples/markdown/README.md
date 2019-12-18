@@ -2,18 +2,15 @@
 
 Steps for creating a static site using Markdown and GitHub Pages with free hosting.  
 
-1. Install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to view and develop pages offline using localhost on your computer. (Note the folder indicated as your local site root.)
+1. View pages on localhost by running in your web root:  
 
- If you are using the Brave Browser, set a folder for your localhost](https://medium.com/@jmatix/using-chrome-as-a-local-web-server-af04baffd581). Chrome may need to remain open for Brave to access localhost via Web Server for Chrome. 
+ <code>python -m http.server</code>
 
- This above may fail, in which case launch a Python server.  
- Change to your custom path after -d, or launch in your web folder.  
+ Or specify a path (change to your custom path):
 
  <code>python3 -m http.server 8887 -d /Users/East/Data</code>
 
-<!-- If running python cgi
-python3 -m http.server --cgi
--->
+ Alternatively, you can install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to view and develop pages offline using https://localhost:8777 on your computer. Web Server for Chrome also allows you to [load a custom domain](https://medium.com/@jmatix/using-chrome-as-a-local-web-server-af04baffd581). (This did not work as a Brave browser extension on Mac as of Dec 2019, but you can add as a Chrome extension, then utilize from Brave.)
 
 2. Clone the "<a href='https://github.com/modelearth/community'>community</a>" repo to your local computer.  (Fork if you plan to collaborate on updates.)
 
