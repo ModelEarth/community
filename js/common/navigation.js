@@ -13,17 +13,6 @@
 
 $(document).ready(function(){
 
-	if(location.host.indexOf('localhost') < 0) {
-		// Inject style rule
-		  var div = $("<div />", {
-		    html: '<style>.localonly{display:none}#mapPanel{display:none}</style>'
-		  }).appendTo("body");
-	} else {
-		var div = $("<div />", {
-		    html: '<style>.localonly{display:block !important}#mapPanel{display:none;}</style>'
-		  }).appendTo("body");
-	}
-
 	// Get the levels below root
  	var foldercount = (location.pathname.split('/').length - 1); // - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0) // Removed because ending with slash or filename does not effect levels. Increased -1 to -2.
  	foldercount = foldercount - 2;
