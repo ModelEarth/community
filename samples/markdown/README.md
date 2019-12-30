@@ -22,6 +22,12 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
 <br>
 
+### Mac Users
+Ignore .DS_Store forever (these pesky files are used to set icon sizes in your local file manager)  
+
+<code>git config --global core.excludesfile ~/.gitignore  
+echo .DS_Store >> ~/.gitignore</code>  
+
 ### Additional Resources
 
 Examples of editing using markdown language [Markdown to HTML (Dillinger)](https://dillinger.io/)  
