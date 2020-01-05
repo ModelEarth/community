@@ -1,14 +1,14 @@
-.hideMobile, .hideMobileWide {display:block;}
+.hideMobile, .hideMobileWide {display:inline-block;}
 .showMobile, .showMobileWide {display:none;}
 .showGit {display:none;}
 
 @media (max-width: 600px) {
   .hideMobile {display:none;}
-  .showMobile {display:block;}
+  .showMobile {display:inline-block;}
 }
 @media (max-width: 900px) {
   .hideMobileWide {display:none;}
-  .showMobileWide {display:block;}
+  .showMobileWide {display:inline-block;}
 }
 body, html {
   height: 100%;
@@ -184,7 +184,7 @@ hr {
 }
 /* END HEADER */
 
-/* DAARK */
+/* DARK */
 /*
 .headerbar {
   background-color: #333 !important;
