@@ -1,4 +1,4 @@
-# Overview
+# Complete ZIP Code Industry Detail Files 
 
 <b>Industry Employment Levels</b><br>
 
@@ -10,7 +10,7 @@ First change the year in industry.SQL.txt
 
 ### Data Sources
 
-Due to the delay of 2017 Economic Census, the 2017 zip data will be available in December of 2019.  
+Due to the delay of 2017 Economic Census, the 2017 zip data became available in December of 2019. (The above script has not yet been updated and run for the 2017 data.)  
 <!--
 Companies per industry within each zipcode. Normally these are available annually at the end April, but the [ 2019 release will be in November and December](https://www.census.gov/programs-surveys/cbp/news-updates/updates/dec-2018.html) due to the delay of 2017 Economic Census.  
 -->
@@ -37,7 +37,7 @@ Also not used...
 [International Data Base (IDB)](https://www.census.gov/programs-surveys/international-programs/about/idb.html)
 [World Health Scatterplot](http://bl.ocks.org/msbarry/9911363)
 
-
+Example of data format:  
 "zip","naics","est","n1_4","n5_9","n10_19","n20_49","n50_99","n100_249","n250_499","n500_999","n1000"  
 "00501","------",2,1,0,0,1,0,0,0,0,0  
 "00501","81----",2,1,0,0,1,0,0,0,0,0  

@@ -57,7 +57,7 @@ $(document).ready(function(){
       }).appendTo("body");
   } else {
     var div = $("<div />", {
-        html: '<style>.local{display:block !important}#mapPanel{display:none;}</style>'
+        html: '<style>.local{display:inline-block !important}#mapPanel{display:none;}</style>'
       }).appendTo("body");
   }
 });
