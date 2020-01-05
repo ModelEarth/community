@@ -8,7 +8,7 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
  Or specify a path (change to your custom path):
 
- <code>python3 -m http.server 8887 -d /Users/East/Data</code>
+ <code>python3 -m http.server 8887 -d /Sites</code>
 
  Alternatively, you can install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to view and develop pages offline using https://localhost:8777 on your computer. Web Server for Chrome also allows you to [load a custom domain](https://medium.com/@jmatix/using-chrome-as-a-local-web-server-af04baffd581). (Web Server for Chrome does not work as a Brave browser extension on Mac (as of December 2019), but you can add as a Chrome extension, then utilize from within Brave.)
 
@@ -25,7 +25,8 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 ### Mac Users
 Ignore .DS_Store forever (these pesky files are used to set icon sizes in your local file manager)  
 You can toggle seeing hidden files using Command+Shift+Dot.  
-
+<!-- Avoid .DS_Store file creation over network connections (article from 2011, confirm this still occurs)
+	https://support.apple.com/en-us/HT1629 -->
 <code>git config --global core.excludesfile ~/.gitignore  
 echo .DS_Store >> ~/.gitignore</code>  
 
