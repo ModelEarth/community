@@ -49,7 +49,7 @@ Slack #epa
 
 ### Project Areas
 
-1. Generate CSV files with employment and industries using Census data and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
+1. Generate CSV files with employment and industries using [Census data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 2. Expand on Python and SQLite pages to pre-processing data as CSV files for display in D3 charts. 
 Data includes: [industries](industries), [income by zcta](prep/all)<!--[projections](prep/regression/)-->  
@@ -70,17 +70,15 @@ Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 8. Include [windy.com](windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
 9. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
-
 10. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
 
-11. Update [NAICS Industry Data](industries) data.
+11. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
 
-12. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
+12. Cross-relate NAICS industries and HS Codes.  
 
-13. Cross-relate BEA Codes, NAICS industries (and HS Codes).  
-
-14. Activate Netlify Identity or Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).  
-
+<!--
+13. Activate Netlify Identity or Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).  
+-->
 
 <br>
  
