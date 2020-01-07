@@ -12,9 +12,9 @@ Work with the USEPA, the GA Dept of Economic Development, and GA communities on 
 
 [More Info](http://model.georgia.org)
 
-Job Description 1: [Community Material Flow Tracking and Analysis](#Community-Material-Flow-Tracking-and-Analysis)
+Job Description 1: [Community Material Flow Tracking and Analysis](#community-material-flow)
 
-Job Description 2: [New Technology Scenario Analysis](#New-Technology-Scenario-Analysis)
+Job Description 2: [New Technology Scenario Analysis](#scenario-analysis)
 
 Supported by: [GDIT](https://www.gdit.com/)
 
@@ -25,7 +25,7 @@ Loren Heyns, Programmer Analyst, Georgia Department of Economic Development
 
 ### Georgia Tech Research Partner:
 TBD
-<a name="Community-Material-Flow-Tracking-and-Analysis"></a><br><br><br>
+<a name="community-material-flow"></a><br><br><br>
 ## Community Material Flow Tracking and Analysis
 
 ### Description
@@ -58,7 +58,7 @@ Strong interest in sustainability and economic development
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
 
-<a name="New-Technology-Scenario-Analysis"></a><br><br><br>
+<a name="scenario-analysis"></a><br><br><br>
 ## New Technology Scenario Analysis
 
 ### Description
