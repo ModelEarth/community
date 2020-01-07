@@ -1,8 +1,8 @@
-*note: to be added to [2020 SCC Internship Job Descriptions](http://smartcities.gatech.edu/2020-scc-internship-job-descriptions)*
+[SCC Internship Job Descriptions](http://smartcities.gatech.edu/2020-scc-internship-job-descriptions)
 
-# Summer 2020 Georgia Interns
+# Summer of 2020 
 
-## Overview
+## Georgia Programming / Data Science Internships
 
 ### Community Sustainability Tools with US EPA and the Georgia Department of Economic Development
 Work with the USEPA, the GA Dept of Economic Development, and GA communities on an exciting [project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
@@ -10,23 +10,27 @@ Work with the USEPA, the GA Dept of Economic Development, and GA communities on 
  web applications that use an EPA life cycle model of the economy (USEEIO) along with Georgia community data
   to assess community sustainability and economic development.
 
-[More Info](http://model.georgia.org)
+[More Info: model.georgia.org](http://model.georgia.org)  
+<br>
 
-Job Description 1: [Community Material Flow Tracking and Analysis](#community-material-flow)
+<b>Job Description 1:</b> [Community Material Flow Tracking and Analysis](#community-material-flow)
 
-Job Description 2: [New Technology Scenario Analysis](#scenario-analysis)
+<b>Job Description 2:</b> [New Technology Scenario Analysis](#scenario-analysis)
 
-Supported by: [GDIT](https://www.gdit.com/)
+Supported by: [GDIT](https://www.gdit.com/)  
+<br>
 
 ### Research Mentors:
 Dr. Wesley Ingwersen, US Environmental Protection Agency, Office of Research and Development
 
-Loren Heyns, Programmer Analyst, Georgia Department of Economic Development
+Loren Heyns, Programmer Analyst, Georgia Department of Economic Development  
+<br>
 
 ### Georgia Tech Research Partner:
 TBD
-<a name="community-material-flow"></a><br><br><br>
-## Community Material Flow Tracking and Analysis
+
+<a name="community-material-flow"></a><br><br>
+## 1: Community Material Flow Tracking and Analysis
 
 ### Description
 The candidate will develop Python code to translate community and industry material flow data,
@@ -58,8 +62,8 @@ Strong interest in sustainability and economic development
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
 
-<a name="scenario-analysis"></a><br><br><br>
-## New Technology Scenario Analysis
+<a name="scenario-analysis"></a><br><br>
+## 2: New Technology Scenario Analysis
 
 ### Description
 Communities are interested in evaluating the costs and benefits of new technologies and investments on their sustainability.
