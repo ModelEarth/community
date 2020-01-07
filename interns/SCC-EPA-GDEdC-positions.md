@@ -25,7 +25,7 @@ Loren Heyns, Programmer Analyst, Georgia Department of Economic Development
 
 ### Georgia Tech Research Partner:
 TBD
-
+<a name="Community-Material-Flow-Tracking-and-Analysis"></a><br><br><br>
 ## Community Material Flow Tracking and Analysis
 
 ### Description
@@ -58,7 +58,7 @@ Strong interest in sustainability and economic development
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
 
-
+<a name="New-Technology-Scenario-Analysis"></a><br><br><br>
 ## New Technology Scenario Analysis
 
 ### Description
