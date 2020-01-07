@@ -1,6 +1,6 @@
-#Data Feed Format
+#Publish Your Data - Post Items and Find Reused Products
 
-###Publish your Available Inventory and Materials Wishlist
+###Share your Inventory of Used Items and your Materials Wishlist
 
 [Send Us Links](add) to include your reuse inventory and wishlist in the Life Cycle Marketplace.  
 If you don't have an existing server to host your files, we'll help you post your listings for free using GitHub.  
