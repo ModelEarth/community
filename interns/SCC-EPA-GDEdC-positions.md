@@ -26,7 +26,7 @@ TBD
 
 ## Description
 The candidate will develop Python code to translate community and industry material flow data,
- including on generation, transfer, recycling/reprocessing, and reuse to relate them to EPA's USEEIO model.   
+ -- including on generation, transfer, recycling/reprocessing, and reuse -- to relate them to EPA's USEEIO model.   
 
 The work will require close technical collaboration with the research mentors, the USEEIO modeling team
  and other interns.
@@ -44,8 +44,11 @@ Learn about material life cycles
 
 ## Top Desired Skills
 Python with data science and API libraries (pandas, requests)
+
 Github
+
 Team code development in a git-environment
+
 Strong interest in sustainability and economic development
 
 ## Deliverables
@@ -56,7 +59,7 @@ Python code and documentation to capture community material generation, transfer
 
 ## Description
 Communities are interested in evaluating the costs and benefits of new technologies and investments on their sustainability.
-To evaluate this with the US EPA's model, the new technologies need to be modeled as a change in the monetary production
+To evaluate this with the EPA's USEEIO model, the new technologies need to be modeled as a change in the monetary production
 recipe (the purchases made by an industry) as well as in their direct resource use and emissions. The candidate will help
 translate new technologies models into this format using the useeior modeling framework to enable scenario analysis.
 
@@ -73,8 +76,11 @@ Learn USEPA's useeior modeling framework
 
 ## Top Desired Skills
 R language
+
 Github
+
 Team code development in a git-environment
+
 Strong interest in sustainability and economic development
 
 ## Deliverables
