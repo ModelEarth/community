@@ -5,9 +5,8 @@
 ## Paid Programming and Data Science Opportunities
 
 ### Develop Sustainability Tools with US EPA and the Georgia Department of Economic Development
-Summer work with the US EPA, the Georgia Dept of Economic Development (GDEcD), and Georgia communities on an [regional model building project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
-(see 'Community-driven Application Development Using USEEIO Models') to build tools to support open-source community
- web applications that use an EPA life cycle model of the economy (USEEIO) along with Georgia community data
+Summer work with the US EPA, the Georgia Dept of Economic Development (GDEcD), and Georgia communities on a [model building project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
+(see 'Community-driven Application Development Using USEEIO Models') to develop open-source community web applications that use an EPA life cycle model of the economy (USEEIO) along with Georgia community data
   to assess community sustainability and economic development.
 
 More Info and registration at [model.georgia.org](http://model.georgia.org)  
