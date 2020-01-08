@@ -1,16 +1,16 @@
 [SCC Internship Job Descriptions](http://smartcities.gatech.edu/2020-scc-internship-job-descriptions)
 
-# Summer of 2020 
+# Summer 2020 Georgia Interns
 
-## Georgia Programming / Data Science Internships
+## Paid Programming and Data Science Opportunities
 
-### Community Sustainability Tools with US EPA and the Georgia Department of Economic Development
-Work with the USEPA, the GA Dept of Economic Development, and GA communities on an exciting [project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
+### Develop Sustainability Tools with US EPA and the Georgia Department of Economic Development
+Summer work with the US EPA, the Georgia Dept of Economic Development (GDEcD), and Georgia communities on an [regional model building project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
 (see 'Community-driven Application Development Using USEEIO Models') to build tools to support open-source community
  web applications that use an EPA life cycle model of the economy (USEEIO) along with Georgia community data
   to assess community sustainability and economic development.
 
-[More Info: model.georgia.org](http://model.georgia.org)  
+More Info and registration at [model.georgia.org](http://model.georgia.org)  
 <br>
 
 <b>Job Description 1:</b> [Community Material Flow Tracking and Analysis](#community-material-flow)
@@ -30,7 +30,7 @@ Loren Heyns, Programmer Analyst, Georgia Department of Economic Development
 TBD
 
 <a name="community-material-flow"></a><br><br>
-## 1: Community Material Flow Tracking and Analysis
+<b>Job Description 1</b><h2 style='margin-top:0px;padding-top:0px'>Community Material Flow Tracking and Analysis</h2>
 
 ### Description
 The candidate will develop Python code to translate community and industry material flow data,
@@ -62,8 +62,11 @@ Strong interest in sustainability and economic development
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
 
+
+
 <a name="scenario-analysis"></a><br><br>
-## 2: New Technology Scenario Analysis
+<b>Job Description 2</b>
+<h2 style='margin-top:0px;padding-top:0px'>New Technology Scenario Analysis</h2>
 
 ### Description
 Communities are interested in evaluating the costs and benefits of new technologies and investments on their sustainability.
