@@ -1,4 +1,3 @@
-
 # Evaluating economic and environmental effects of local material flow changes with a regionalized version of USEEIO
 
 ## Authors
@@ -28,19 +27,17 @@ through the creation of web applications that specifically address community con
 along with local data in the background to support the evaluation.
 
 One strong interest in a Georgia community is related to innovative recovery or alternative use of
-available materials. This interest aligns well that of the EPA's Sustainable Materials Management program,
-which currently uses USEEIO alongside other data sources related to waste material generation and management.
-This project team will be working with stakeholders in a public-private partnership of 6 Southeast Georgia counties
+available materials. This project team will be working with stakeholders in a public-private partnership of 6 Southeast Georgia counties
 to collect material generation data and new technological improvements involving increased
 material efficiency to evaluate the consequences using the GA version of USEEIO.
 
-The proposed method for consideration involves the linkages of these material data with the regionalized IO model,
+The proposed method for consideration involves creating linkages between these material data and the regionalized IO model,
 which requires knowledge of:
-1. what industries or final uses are generating the materials,
-2. how are the materials currently used, disposed or handled,
-3. what are possible uses of the material to substitute for current industry material requirements,
-4. what are other technological and environmental changes related to material use and substitution
-5. what are the market consequences of scaling up material cycling changes
+1. industries or final uses are generating the materials,
+2. how the materials currently used, disposed or handled,
+3. possible uses of the material to substitute for current industry material or energy requirements,
+4. other technological and environmental changes related to material use and substitution,
+5. the market consequences of scaling up material cycling changes
 
 The method also requires a sufficient characterization of the material streams in quality and quality,
 for which national standards are still lacking.
