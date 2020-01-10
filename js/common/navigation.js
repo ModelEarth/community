@@ -106,6 +106,8 @@ $(document).ready(function(){
 
  		// ALL SIDE COLUMN ITEMS
  		var topMenu = $("#sidecolumnContent");
+ 		//console.log("topMenu:");
+ 		//console.log(topMenu);
 		var menuItems = topMenu.find("a");
 		var scrollItems = menuItems.map(function(){ // Only include "a" tag elements that have an href.
 
@@ -121,8 +123,6 @@ $(document).ready(function(){
 			    }
 			}
 		});
-		console.log("scrollItems: ");
-		console.log(scrollItems);
 		var bottomSection = "partners";
 
  		// BIND CLICK HANDLER TO MENU ITEMS
@@ -152,7 +152,8 @@ $(document).ready(function(){
 			var fromTop = $(this).scrollTop()+topMenuHeight; // this is the window
 			//console.log('fromTop ' + fromTop);
 			// Get id of current scroll item
-			var cur = scrollItems.map(function(){ // this is the sections
+			var cur = scrollItems.map(function(){
+				// scrollItems is the sections fron nav.html, but just return the current one.
 		   		//console.log('offset().top ' + $(this).offset().top)
 		     	if ($(this).offset().top < fromTop) {
 		     		//console.log('offset().top < fromTop ' + $(this).offset().top + ' < ' + fromTop);
@@ -162,7 +163,8 @@ $(document).ready(function(){
 			if (cur.length == 0) {
 				// At top, above top of intro section
 				// To Do: Get the top most section
-				return "intro";
+				// allsections
+				return $("#allsections section:first").attr("id"); // "intro" when on tools page,
 			}
 			// Get the id of the last item fetched from scrollItems
 			cur = cur[cur.length-1];
@@ -220,7 +222,7 @@ $(document).ready(function(){
 		      	menuItems.filter("[href='..\/tools\/#']").addClass("active");
 		      	lastID = "intro";
 		    } else {
-				menuItems.filter("[href*='#"+currentSection+"']").addClass("active");
+		    	menuItems.filter("[href*='#"+currentSection+"']").addClass("active");
 			}
 		}
 	});

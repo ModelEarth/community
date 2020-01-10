@@ -8,6 +8,13 @@
 
 <script type="text/javascript" src="../js/d3/d3.v5.min.js"></script>
 <script type="text/javascript" src="../js/common/showdown.min.js"></script>
+
+<!-- Needed for highlight to work because of: navigation.js var scrollItems = menuItems.map
+Might try removing use of .map
+-->
+<script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
+
+
 <script type="text/javascript" src="../js/jquery/zepto.min.js"></script>
 <script type="text/javascript" src="../js/common/common.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
@@ -17,10 +24,14 @@
 
 <body style="font-family: Lato, sans-serif;">
 
-<div class="content">
-	<div style="clear:both; overflow: auto;">
-	  <div id="readmeDiv"></div>
-	</div>
+<div id="allsections">
+	<section id="internships">
+		<div class="content">
+			<div style="clear:both; overflow: auto;">
+			  <div id="readmeDiv"></div>
+			</div>
+		</div>
+	</section>
 </div>
 
 <script>
