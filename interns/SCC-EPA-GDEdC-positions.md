@@ -1,8 +1,8 @@
 [SCC Internship Job Descriptions](http://smartcities.gatech.edu/2020-scc-internship-job-descriptions)
 
-# Georgia Summer of 2020 
+# Georgia 2020 
 
-## Paid Programming and Data Science Internships
+## Paid Summer Internships in Programming and Data Science
 
 ### Develop Sustainability Tools with US EPA and the Georgia Department of Economic Development
 Summer work with the US EPA, the Georgia Dept of Economic Development (GDEcD), and Georgia communities on a [model building project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
