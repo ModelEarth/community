@@ -12,3 +12,9 @@
 
 [Another PWA Starter Kit - Material Web Components]
 (https://github.com/polymer/pwa-starter-kit)
+
+[Making Progressive Web Apps (PWAs) with React]
+(https://alligator.io/react/react-progressive-web-apps/)  
+
+
+Might be able to integrate with [Plot.ly Dash](https://plot.ly/dash/) - React for Python and R models  
