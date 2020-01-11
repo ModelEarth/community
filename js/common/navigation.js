@@ -223,6 +223,8 @@ $(document).ready(function(){
 		      	lastID = "intro";
 		    } else {
 		    	menuItems.filter("[href*='#"+currentSection+"']").addClass("active");
+		    	// To do: If not found, try using folder name from link when no #
+		    	//menuItems.filter("[href*='interns/']").addClass("active");
 			}
 		}
 	});
