@@ -183,6 +183,11 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 <div style="height:60px"></div>
 
 <script>
+$(document).ready(function () {
+    $('.expandToFullscreen, .reduceFromFullscreen').click(function(event) {
+    	toggleFullScreen();  
+    });
+});
 function toggleFullScreen() {
   if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
    (!document.mozFullScreen && !document.webkitIsFullScreen)) {
