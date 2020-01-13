@@ -4,10 +4,10 @@
 
 ## Paid Summer Internships - Programming and Data Science
 
-### Develop Sustainability Tools with US Environmental Protection Agency and the Georgia Department of Economic Development
-Developing sustainability tools with the US EPA, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
-as part of [model building project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
-(see 'Community-driven Application Development Using USEEIO Models') to develop open-source community web applications that
+### Develop Sustainability Tools with the US Environmental Protection Agency and the Georgia Department of Economic Development
+Develop sustainability tools with the US EPA, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
+as part of [project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
+(see 'Community-driven Application Development Using USEEIO Models') to build open-source community web applications that
 use an EPA life cycle model of the economy ([USEEIO](https://www.google.com/search?q=USEEIO)) along with Georgia community data
  to assess community sustainability and economic development.
  
@@ -33,8 +33,9 @@ Loren Heyns, Programmer Analyst, Georgia Department of Economic Development
 <b>Job Description 1</b><h2 style='margin-top:0px;padding-top:0px'>Community Material Flow Tracking and Analysis</h2>
 
 ### Description
-The candidate will develop Python code to translate community and industry material flow data,
- -- including on generation, transfer, recycling/reprocessing, and reuse -- to relate them to EPA's USEEIO model.   
+The candidate will develop Python code to translate community and industry material flow data
+ -- including on generation, transfer, recycling/reprocessing, and reuse -- to relate them to EPA's USEEIO model to enable 
+ sustainability analysis of alternative material uses.   
 
 The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team
  and other community-based interns.
@@ -61,7 +62,6 @@ Strong interest in sustainability and economic development
 
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
-
 
 <a name="scenario-analysis"></a><br><br>
 <b>Job Description 2</b>
