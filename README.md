@@ -3,6 +3,8 @@
 Prep for the EPA's sustainable community model building events in 2020.   
 
 <!--
+Supply chain "License to Operate" with the support of the community.
+
 ### Code for Atlanta Projects  
 
 Slack #epa
@@ -55,7 +57,6 @@ Slack #epa
 Data includes: [industries](industries), [income by zcta](prep/all)<!--[projections](prep/regression/)-->  
 
 3. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).
-<!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->  
 
 4. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
 
