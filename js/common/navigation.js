@@ -216,7 +216,7 @@ $(document).ready(function(){
 
 		// Initial page load
 		var currentSection = currentSideID();
-		if (currentSection.length) {
+		if (currentSection && currentSection.length) {
 			if (currentSection == "intro") {
 		      	// To do: Change to highlight the uppermost section.
 		      	menuItems.filter("[href='..\/tools\/#']").addClass("active");
