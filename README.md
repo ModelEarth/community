@@ -68,7 +68,7 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 7. Highlight <a href="map">Smart & Mobile Communities</a> on Leaflet map. 
 Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 
-8. Include [windy.com](windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
+8. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
 9. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
 10. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
@@ -78,7 +78,9 @@ Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 12. Cross-relate NAICS industries and HS Codes.  
 
 <!--
-13. Activate Netlify Identity or Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).  
+13. Activate Netlify Identity or Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).
+
+14. [Climate Change Action Plans](https://www.c2es.org/document/climate-action-plans/) - Incorporate how other states support information exchanges.  
 -->
 
 <br>
