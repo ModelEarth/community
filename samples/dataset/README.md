@@ -1,15 +1,10 @@
-# Goods & Services
-
-<!--
-	Final demand in $ for each of the goods and services for the US in 2007, 
-	and the sector codes and names are already separated. - From Wes
--->
-### Sustainable Materials Management
+---
+# About sample
 
 <span class='hideMidsize'>
-Generated from a [FinalDemand.csv](USEEIOv1_1_FinalDemand.csv).<br>
+Generated from [FinalDemand.csv](USEEIOv1_1_FinalDemand.csv).<br>
 Bold main categories from the [BEA industry-code-guide.pdf](https://www.bea.gov/sites/default/files/2018-04/2017-industry-code-guide.pdf)<br>
-Base for adding heatmap colored rectangles.  
+To Do: Add colored rectangles to heatmap using D3js scale.  
 </span>
 <!-- [Products - Bureau of Economic Analysis (BEA)](bea)  -->
 <!--
@@ -20,11 +15,15 @@ https://stategov.github.io/us/bea/USEEIOv1.1_FinalDemand.csv
 -->
 
 #### Bureau of Economic Analysis (BEA) - <span style='white-space:nowrap'>Industry Sectors</span> 
-[Demand Data](USEEIOv1_1_FinalDemand.csv) - Toggle will be added to show Input-Output total dollar values.  
+[Demand Data](USEEIOv1_1_FinalDemand.csv) - Toggle could be added to show Input-Output total dollar values.  
 <span style='white-space: nowrap;'>[USEEIO Data](USEEIO.csv)</span> - Column names will be added for indexes. <span style="white-space:nowrap"><a href="https://smmtool.app.cloud.gov/api/USEEIO/sectors">Source: EPA sectors API</a></span>  
 <!-- http://model.georgia.org/smm-tool-suite/ -->
 
 <!--in Millions-->
+
+Final demand in $ for each of the goods and services for the US in 2007, and the sector codes and names are already separated. 
+<!-- Wes -->
+
 
 
 <div class="showGit">
