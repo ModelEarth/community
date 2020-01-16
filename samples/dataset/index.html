@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Goods & Services</title>
+<title>Goods & Services - Sample Starter Chart for Heatmap</title>
 <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -202,9 +202,6 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
 
 <body style="font-family: Lato, sans-serif;">
 
-
-
-
 <div style="margin:40px; margin-top:0px; clear:both;">
 
   <div class="rotateHeaderHolder" style="vertical-align: bottom;">
@@ -213,7 +210,9 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       <tr id="dataHeader">
       <th colspan="3">
         <div style="font-weight:200">
-          <div id="readmeDiv" style="float:left"></div>
+          <h1>Goods & Services</h1>
+          <h3>Sustainable Materials Management</h3>
+          <a href="#notes">About sample</a>
         </div>
       </th>
       <th class="rotate th_title"><div><span><b>Impact Potential</b></span></div></th>
@@ -286,7 +285,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
           dataRow += "<tr><td style='min-width:21px;'><input name='sector' type='checkbox' value=''></td><td><div oneline'>" + dataSet[i][0] + " - " + dataSet[i][1] + "</div></td>";
             //dataRow += "<div><b>Location:</b> " + dataSet[i][2] + "</div>";
           
-            dataRow += "<td class='hideMobile'>0.2%</td>";
+            dataRow += "<td class='hideMobile'><!--0.2%--></td>";
 
             //dataRow += "<td>" + numberWithCommas(dataSet[i][3]) + "</td><td>" + numberWithCommas(dataSet[i][4]) + "</td><td>" + diff + "</td>";
           
@@ -314,7 +313,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
 
           dataRow += "</tr>";
         } else {
-            dataRow += "<tr><td colspan='32'><div style='background-color:#ddd; padding:4px'><b style='font-size:12px'>" + dataSet[i][0] + "</b></div></td></tr>";
+            dataRow += "<tr><td colspan='32'><div style='background-color:#ddd; padding:8px 8px 8px 10px; margin:12px 0 10px 0'><b style='font-size:14px'>" + dataSet[i][0] + "</b></div></td></tr>";
         }
       }
     };
@@ -327,6 +326,8 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
     }
   }
 </script>
+<a name="notes"></a>
+<div id="readmeDiv" style="float:left; margin:0 30px 30px 30px; display: block !important"></div>
 
 <link rel="stylesheet" href="../../css/material_icons.css" />
 </body>
