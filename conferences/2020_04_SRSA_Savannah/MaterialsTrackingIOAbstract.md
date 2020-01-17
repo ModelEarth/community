@@ -38,6 +38,7 @@ which requires knowledge of:
 4. estimates of export of the new material or new products,
 5. other technological and environmental changes related to material use and substitution, and 
 6. the market consequences of scaling up material cycling changes.
+
 The method also requires a sufficient characterization of the material streams in quantity and quality,
 for which national standards are still lacking. This methodology will be presented using an example material of interest 
 to the SE Georgia partners. 
