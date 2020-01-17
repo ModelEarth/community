@@ -43,3 +43,4 @@ We propose the creation of a model in the form of a multi-regional waste input-o
 an extended form of the IO model, that retains attributes and thus functionality of an USEEIO model.
 This methodology will be presented using an example material of interest 
 to the SE Georgia partners. 
+
