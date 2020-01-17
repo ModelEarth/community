@@ -5,7 +5,7 @@ Wesley Ingwersen, US Environmental Protection Agency, Office of Research and Dev
 
 Loren Heyns, Georgia Department of Economic Development
 
-Valerie Thomas, Georgia Institute of Technology
+Valerie M. Thomas, Georgia Institute of Technology
 
 Christa Court, University of Florida
 
@@ -18,8 +18,7 @@ with the production and consumption of goods and services in the United States.
 It tracks ~400 commodities and >2000 resources, emissions, and waste types to characterize 20+ environmental and economic indicators.
 USEEIO is widely used in industry, the non-profit sector, in government and academia for applications such as footprinting
 and sector-based environmental assessment. EPA is also developing regionalized versions of USEEIO
-as a two region state-of-interest and rest-of-US form, and has developed a preliminary model
-for the state of Georgia.
+and has developed a model for the state of Georgia.
 
 The EPA, GA Department of Economic Development, and Georgia Tech are now working with interested Georgia communities
 on using the model to evaluate the potential economic and environment consequences of new development directions
@@ -27,28 +26,19 @@ through the creation of web applications that specifically address community con
 along with local data in the background to support the evaluation.
 
 One strong interest in a Georgia community is related to innovative recovery or alternative use of
-available materials. This project team will be working with stakeholders in a public-private partnership of 6 Southeast Georgia counties
-to collect material generation data and new technological improvements involving increased
-material efficiency to evaluate the consequences using the GA version of USEEIO.
+available materials. This project team will be working with stakeholders in Southeast Georgia 
+to collect data on material generation and new technological improvements involving increased
+material efficiency to evaluate their consequences using the GA version of USEEIO.
 
 The proposed method for consideration involves creating linkages between these material data and the regionalized IO model,
 which requires knowledge of:
-1. industries or final uses are generating the materials,
-2. how the materials currently used, disposed or handled,
+1. local industries or final uses that are generating the materials,
+2. how the materials are currently used, disposed of, or handled and in what region,
 3. possible uses of the material to substitute for current industry material or energy requirements,
-4. other technological and environmental changes related to material use and substitution,
-5. the market consequences of scaling up material cycling changes
+4. estimates of export of the new material or new products,
+5. other technological and environmental changes related to material use and substitution, and 
+6. the market consequences of scaling up material cycling changes.
 
-The method also requires a sufficient characterization of the material streams in quality and quality,
-for which national standards are still lacking.
-
-
-
-
-
-
-
-
-
-
-
+The method also requires a sufficient characterization of the material streams in quantity and quality,
+for which national standards are still lacking. This methodology will be presented using an example material of interest 
+to the SE Georgia partners. 
