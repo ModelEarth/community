@@ -39,6 +39,7 @@ which requires knowledge of:
 5. other technological and environmental changes related to material use and substitution, and 
 6. the market consequences of scaling up material cycling changes.
 
-The method also requires a sufficient characterization of the material streams in quantity and quality,
-for which national standards are still lacking. This methodology will be presented using an example material of interest 
+We propose the creation of a model in the form of a multi-regional waste input-output (WIO) model, 
+an extended form of the IO model, that retains attributes and thus functionality of an USEEIO model.
+This methodology will be presented using an example material of interest 
 to the SE Georgia partners. 
