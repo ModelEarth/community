@@ -63,6 +63,9 @@ Strong interest in sustainability and economic development
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
 
+<a href="http://smartcities.gatech.edu/gscc-application" target="blank">Apply for Summer Internship</a> 
+
+
 <a name="scenario-analysis"></a><br><br>
 <b>Job Description 2</b>
 <h2 style='margin-top:0px;padding-top:0px'>New Technology Scenario Analysis</h2>
@@ -100,4 +103,6 @@ Team code development in a git-environment
 Strong interest in sustainability and economic development
 
 ### Deliverables
-R code and documentation to model new technologies in USEEIO
+R code and documentation to model new technologies in USEEIO  
+
+<a href="http://smartcities.gatech.edu/gscc-application" target="blank">Apply for Summer Internship</a>
