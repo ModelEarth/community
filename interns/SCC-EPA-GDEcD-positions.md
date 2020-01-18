@@ -2,31 +2,29 @@
 
 # Georgia 2020 
 
-## Paid Summer Internships - Programming and Data Science
+## Summer Internships - Programming and Data Science
 
-### Develop Sustainability Tools with the US Environmental Protection Agency and the Georgia Department of Economic Development
-Develop sustainability tools with the US EPA, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
-as part of [project](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
+Paid opportunity to develop sustainability tools with the US Environmental Protection Agency, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
+as part of the [Regional Sustainability and Environmental Sciences Research Program](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
 (see 'Community-driven Application Development Using USEEIO Models') to build open-source community web applications that
-use an EPA life cycle model of the economy ([USEEIO](https://www.google.com/search?q=USEEIO)) along with Georgia community data
- to assess community sustainability and economic development.
- 
-<br>
+use an EPA life cycle model of the economy ([USEEIO](https://www.google.com/search?q=USEEIO)) along with Georgia community data to assess community sustainability and economic development.<br>
 
-<b>Job Description 1:</b> [Community Material Flow Tracking and Analysis](#community-material-flow)
 
-<b>Job Description 2:</b> [New Technology Scenario Analysis](#scenario-analysis)
+#### Positions
 
-Supported by: [GDIT](https://www.gdit.com/)  
-<br>
+Job Description 1: [Community Material Flow Tracking and Analysis](#community-material-flow)
 
-### Research Mentors:
+Job Description 2: [New Technology Scenario Analysis](#scenario-analysis)
+
+Supported by: [General Dynamics Information Technology (GDIT)](https://www.gdit.com/)  
+
+
+#### Research Mentors
 Dr. Wesley Ingwersen, Principle Investigator at US Environmental Protection Agency, Office of Research and Development
 
 Loren Heyns, Programmer Analyst, Georgia Department of Economic Development  
-<br>
 
-### Georgia Tech Research Partner:
+#### Georgia Tech Research Partner
 [Dr. Valerie Thomas](https://www.isye.gatech.edu/users/valerie-thomas), Georgia Tech Professor, School of Industrial and Systems Engineering
 
 <a name="community-material-flow"></a><br><br>
