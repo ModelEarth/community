@@ -63,8 +63,8 @@ Strong interest in sustainability and economic development
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
 
-Apply for Summer Internships: <a href="http://smartcities.gatech.edu/gscc-application" target="blank">Georgia Tech Students</a> | 
-<a href="https://model.georgia.org">Other Georgia Universities</a>  
+Apply for Summer Internships: <a href="http://smartcities.gatech.edu/gscc-application" target="gatechapp">Georgia Tech Students</a> | 
+<a href="https://model.georgia.org" target="gaother">Other Georgia Universities</a>  
 
 
 <a name="scenario-analysis"></a><br><br>
@@ -106,5 +106,5 @@ Strong interest in sustainability and economic development
 ### Deliverables
 R code and documentation to model new technologies in USEEIO  
 
-Apply for Summer Internships: <a href="http://smartcities.gatech.edu/gscc-application" target="blank">Georgia Tech Students</a> | 
-<a href="https://model.georgia.org">Other Georgia Universities</a>  
+Apply for Summer Internships: <a href="http://smartcities.gatech.edu/gscc-application" target="gatechapp">Georgia Tech Students</a> | 
+<a href="https://model.georgia.org" target="gaother">Other Georgia Universities</a>  
