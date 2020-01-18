@@ -4,7 +4,7 @@
 
 ## Summer Internships - Programming and Data Science
 
-Paid opportunity to develop sustainability tools with the US Environmental Protection Agency, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
+Paid opportunities to develop sustainability tools with the US Environmental Protection Agency, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
 as part of the [Regional Sustainability and Environmental Sciences Research Program](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
 (see 'Community-driven Application Development Using USEEIO Models') to build open-source community web applications that
 use an EPA life cycle model of the economy ([USEEIO](https://www.google.com/search?q=USEEIO)) along with Georgia community data to assess community sustainability and economic development.<br>
