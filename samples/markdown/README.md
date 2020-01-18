@@ -6,7 +6,7 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
  <code>python -m http.server</code>
 
- Or specify a path (change to your custom path):
+ Or specify a path (change /Sites to your custom path):
 
  <code>python3 -m http.server 8887 -d /Sites</code>
 
