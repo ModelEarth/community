@@ -42,19 +42,21 @@ Slack #epa
 
 ### Summary
 
-1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), static CSV files will be generated <!--[generated](resources/useeio)--> for demand vectors (Food System and Full System). 
+1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), CSV files will be generated <!--[generated](resources/useeio)--> for demand vectors (Food System and Full System). 
 
 2. Detailed [Goods & Services Report](samples/dataset) with heatmap providing environmental impact of production choices.   
 
 3. [Maps of products and industries](samples/maps) - Regional hubs, industries by zipcode.  
 
+4. Visualizations of material flow and regional input-output.  
+
 
 ### Project Areas
 
-1. Generate CSV files with employment and industries using [Census data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
+1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
-2. Expand on Python and SQLite pages to pre-processing data as CSV files for display in D3 charts. 
-Data includes: [industries](industries), [income by zcta](prep/all)<!--[projections](prep/regression/)-->  
+2. Expand on Python and SQLite pages to pre-processing data for display in D3 charts. 
+Data includes [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
 3. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).
 
@@ -65,7 +67,7 @@ Data includes: [industries](industries), [income by zcta](prep/all)<!--[projecti
 6. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
-7. Highlight <a href="map">Smart & Mobile Communities</a> on Leaflet map. 
+7. Highlight <a href="../community/tools/#data">Smart & Mobile Communities</a> on Leaflet map. 
 Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 
 8. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
@@ -107,7 +109,7 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 
 [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
 
-[EXIOBASE database](https://simapro.com/products/exiobase-database/) 
+[EXIOBASE database](https://simapro.com/products/exiobase-database/) / [ImPlan Impact Analysis](https://implanhelp.zendesk.com/hc/en-us/articles/360039284273-Environmental-Data) 
 
 
 <!--
@@ -122,7 +124,7 @@ http://www.srsa.org/
 
 ## Team Projects
 
-<a href="https://poloclub.github.io/#cse6242">Georgia Tech Data and Visual Analytics teams</a> will have an opportunity to expand on models using machine learning.  
+<a href="https://poloclub.github.io/#cse6242">Georgia Tech project teams</a> will have an opportunity to contribute new data visualizations.  
 
 
 
