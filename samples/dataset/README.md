@@ -1,4 +1,4 @@
-# About sample
+# About Sample
 
 Generated from [FinalDemand.csv](USEEIOv1_1_FinalDemand.csv).<br>
 Bold main categories from the [BEA industry-code-guide.pdf](https://www.bea.gov/sites/default/files/2018-04/2017-industry-code-guide.pdf)  

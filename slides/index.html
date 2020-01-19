@@ -13,12 +13,41 @@
 <!--
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 -->
-<link rel="stylesheet" href="../css/display.css" />
 
 <link rel="stylesheet" href="css/reveal.css">
 <link rel="stylesheet" href="css/theme/night.css">
 
 <style>
+.pageTopPadding {
+  padding-top:50px
+}
+
+
+/* Adjust our custom css */
+.pageTopPadding {
+  padding-top:0px
+}
+
+.content {
+
+}
+.slidesX {
+  transform: none !important;
+  top: auto !important;
+  bottom: auto !important;
+  border: 0px solid blue;
+  overflow: auto !important;
+}
+.slides {
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+}
+
+/* Adjust .reveal css */
+body {
+  overflow: hidden !important; /* Hide browser scrollbars */
+}
 .reveal {
 	font-size: 20px;
 }
@@ -29,17 +58,27 @@
 	font-size: 24px;
 	margin-top: 14px;
 }
+.reveal h3 {
+  margin-top: 30px;
+}
 section {
-  margin-bottom: 60px;
+  margin-bottomX: 60px;
 }
 
+
+
 .scrollable-slide {
-    height: 800px;
+    height:95%; /* Allow bottom to be visible */
+    bottom: 0px;
     overflow-y: auto !important;
 }
+
+/* display: none; */ /* TEMP */ 
+
+/*
 ::-webkit-scrollbar {
-    width: 6px;
-    display: none; /* TEMP */
+    width: 10px;
+    
 }
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -50,7 +89,7 @@ section {
 ::-webkit-scrollbar-corner {
   background-color: #333;
 }
-
+*/
 </style>
 
 
@@ -190,8 +229,8 @@ crossorigin=""></script>
 <div class="reveal">
 
 <div id="allsections" class="slides">				
-  <section id="intro" class="litePanel" style="overflow: auto">
-    <div class="content" style="padding-top:50px">
+  <section id="intro" classX="litePanel" class="scrollable-slide">
+    <div class="content pageTopPadding">
       <h1 style="margin-bottom:0px" class="h1-home">Is your Community Up to the&nbsp;Challenge?</h1>
       <!-- Marketplace -->
 
@@ -264,6 +303,23 @@ crossorigin=""></script>
           <a href="https://sustainability.aboutamazon.com/carbon-footprint">Overview</a> / 
           <a href="https://d39w7f4ix9f5s9.cloudfront.net/a4/ad/b9eca67e4578b35e8f995c8b4f9c/amazon-carbon-methodology-september-2019.pdf">Details</a>
           
+          <br>
+          Test 1<br>
+          Test 2<br>
+          Test 3<br>
+          Test 4<br>
+          Test 5<br>
+          Test 6<br>
+          Test 7<br>
+          Test 8<br>
+          Test 9 - Last visible<br>
+          Test 10<br>
+          Test 11<br>
+
+          Test 12<br>
+          Test 13<br>
+          Test 14<br>
+         
       </div>
 
     </div>
@@ -475,7 +531,9 @@ crossorigin=""></script>
       
       <a href="https://www.lignotech.com/About-us/About-LignoTech-Florida">LignoTech Florida - Owned by Rayonier Advanced Materials (45%) and Borregaard (55%)</a><br>
 
+      <!--
       "The 110 million USD investment represents a production capacity of 100,000 metric tonnes lignin measured as dry substance. In a planned second phase, the capacity can later be expanded by 50,000 tonnes."
+      -->
       </section>
 
 
@@ -495,7 +553,7 @@ crossorigin=""></script>
       <!--In Georgia, most soils are naturally low in organic matter.-->
      
         Adding organic matter to soil reduces surface runoff and erosion, improves the capacity to hold water and nutrients while increasing yields (<a href="https://extension.uga.edu/publications/detail.html?number=SB27&title=Beneficial%20Reuse%20of%20Municipal%20Biosolids%20in%20Agriculture">UGA</a>). 
-         Urban sewage is easier to treat because it doesn't contain heavy metals from industrial activities that typically occur in rural areas. 
+         Urban sewage is easier to treat because it doesn't contain heavy metals from industrial activities that occur more often in rural areas. 
 
       <a href="https://extension.umd.edu/sites/extension.umd.edu/files/_docs/programs/woodland-steward/Ch17Kays.pdf">Deep-row biosolid applications</a> 
       allows for forest products at sites near treatment plants in urban areas. 
@@ -515,12 +573,42 @@ crossorigin=""></script>
 
       </section>
 
+      <section>
+        <h2 id="hydrogen">Hydrogen</h2>
+
+        <a href="https://www.sciencedaily.com/releases/2019/11/191111180111.htm">New catalyst efficiently produces hydrogen from seawater</a><br>
+        Nov 11, 2019 - Potential for large-scale hydrogen production, desalination using inexpensive non-noble metal nitrides. Avoids generating ions that settle on the catalyst and render it inactive.<br><br>
+
+        <a href="https://www.sciencedaily.com/releases/2019/05/190501114611.htm">Harnessing sunlight to pull hydrogen from wastewater</a><br>
+        May 1, 2019 - Uses a silicon interface aided by bacteria (that generate electrical current when consuming organic matter) to split water and isolate hydrogen gas.<br><br>
+
+        <a href="https://spectrum.ieee.org/energywise/green-tech/fuel-cells/solar-panel-prototype-splits-water-to-produce-hydrogen">Solar panel splits water to produce hydrogen</a><br>
+        Converts 250 liters of hydrogen gas per day using sunlight and moisture in the air. Hydrogen is stored in an underground pressure vessel.
+        <br><br>
+
+        <a href="https://www.ccjdigital.com/hydrogen-as-fuel-of-the-future-takes-center-stage-in-atlanta/">Hydrogen takes center stage in Atlanta as fuel of the future</a><br>
+        In just two years, “a small band of believers has turned into a large band of implementers” - Bosch VP.
+        Companies with 10 or more trucks can now justify having their own hydrogen refueling stations.<br><br>
+
+        <!--
+        https://www.americanprocess.com/
+        Low cost cellulosic sugars from non-food based biomass.
+        Cellulosic sugars technology demonstration plant in Thomaston, GA.
+        -->
+      </section>
+
       <!--
       <section>
         <h2 id="biofuels">Biofuels</h2>
-
         <a href="https://www.eia.gov/energyexplained/biofuels/ethanol-and-the-environment.php">Ethanol and the environment</a><br>
         "The U.S. government is supporting efforts to produce ethanol with methods that use less energy than conventional fermentation and that use cellulosic biomass, which requires less cultivation, fertilizer, and pesticides than corn or sugar cane. Cellulosic ethanol feedstock includes native prairie grasses, fast-growing trees, sawdust, and even waste paper."
+      </section>
+      -->
+      
+      <!--
+      <section style="display:none">
+        <a href=""></a><br>
+        "1 billion dry tons of biomass produced annually in a sustainable manner is estimated to be sufficient to displace 30% of the present US petroleum consumption.""
       </section>
       -->
 
