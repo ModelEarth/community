@@ -227,10 +227,19 @@ KI,48.143640,11.603463,Hans
     top: 80px;
     bottom: auto;
     width: 46%;
-    width: 440px;
+    width: 480px;
     padding-rightX: 30px; /* since fix is relative to page */
   }
-  
+  @media (max-width: 1300px) {
+    .mapHolderFixed {
+      width: 450px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .mapHolderFixed {
+      width: 380px;
+    }
+  }
   #maptop {
     height: 30px;
     border-bottomX: 1px solid #999;
@@ -344,7 +353,7 @@ KI,48.143640,11.603463,Hans
         <div>
           <!-- What? -->
           <h2>Input-Output Modeling</h2>
-          <b>What</b> – Tools for analyzing economic and environmental impacts in over 400&nbsp;industry sectors 
+          <b>What</b> – Tools for analyzing economic and environmental impacts in close to 400&nbsp;industry sectors 
           for community planning, business development and environmental education. 
 
         </div>
@@ -493,6 +502,7 @@ KI,48.143640,11.603463,Hans
           border:1px solid #ccc;
           font-size: 15px;
           background: #fff;
+          vertical-align: top;
         }
         .impacttable th {
           padding: 5px 20px 5px 20px;
@@ -530,9 +540,7 @@ KI,48.143640,11.603463,Hans
         Land Use (LAND)<br>
         Minerals and Metals (MINE)<br>
         Water Use (WATR)<br><br>
-        </div>
-
-        <div style="float:left;">
+        
         <b>Waste Generated</b><br>
         Food Waste (FOOD)<br>
         Hazardous Waste (HAZW)<br>
@@ -548,7 +556,19 @@ KI,48.143640,11.603463,Hans
         <div>
         <b>Economic & Social</b><br>
         Jobs (JOBS)<br>
-        Value Added (VADD)<br>
+        Value Added (VADD)<br><br>
+
+        <b>Living Community</b><br>
+
+        Place<br>
+        Water<br>
+        Energy<br>
+        Health+Happiness<br>
+        Materials<br>
+        Equity<br>
+        Beauty<br>
+        <a href="https://living-future.org/lcc/" target='_blank'>Learn More</a><br>
+        <br>
         </div>
 
       </td>
