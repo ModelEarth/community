@@ -268,7 +268,11 @@ addEventListener("load", function(){
 
 
 
-/*  placed before loadMarkupPage */
+/*  placed before loadMarkupPage 
+
+Configuration
+https://github.com/hakimel/reveal.js#markdown
+*/
 /*
 <script src="js/reveal.js"></script>
 <script>

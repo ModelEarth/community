@@ -80,6 +80,9 @@ Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 12. Cross-relate NAICS industries and HS Codes.  
 
 <!--
+National Renewable Energy Laboratory (NREL) - alternative fuel stations 
+	https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/all/#ev-network-id-record-fields
+
 13. Activate Netlify Identity or Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).
 
 14. [Climate Change Action Plans](https://www.c2es.org/document/climate-action-plans/) - Incorporate how other states support information exchanges.  
