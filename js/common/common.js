@@ -1,5 +1,7 @@
 // Updates originate in community/js/common/common.js
 
+// To do: dynamically add target _parent to external link when in an iFrame, and no existing target
+
 function loadParams(paramStr,hashStr) {
   // Priority: 1st hash, 2nd url search
     var request = {};
