@@ -256,3 +256,44 @@ addEventListener("load", function(){
     }
   }, false);
 });
+
+
+
+
+/*
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/night.css">
+
+*/
+
+
+
+/*  placed before loadMarkupPage */
+/*
+<script src="js/reveal.js"></script>
+<script>
+  Reveal.initialize();
+
+  // For long slides
+  function resetSlideScrolling(slide) {
+      slide.classList.remove('scrollable-slide');
+  }
+
+  function handleSlideScrolling(slide) {
+      if (slide.scrollHeight >= 800) {
+          slide.classList.add('scrollable-slide');
+      }
+  }
+  Reveal.addEventListener('ready', function (event) {
+      handleSlideScrolling(event.currentSlide);
+  });
+
+  Reveal.addEventListener('slidechanged', function (event) {
+      if (event.previousSlide) {
+          resetSlideScrolling(event.previousSlide);
+      }
+      handleSlideScrolling(event.currentSlide);
+  });
+
+</script>
+*/
