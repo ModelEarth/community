@@ -26,7 +26,7 @@ Slack #epa
  
 
 
-[Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO) API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
+[Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO)&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
 
 [Include your data](samples/feed) - Publish your material inventory and maintain a wishlist to share your needs.
@@ -42,20 +42,20 @@ Slack #epa
 
 ### Summary
 
-1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), CSV files will be generated <!--[generated](resources/useeio)--> for demand vectors (Food System and Full System). 
+1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), CSV files will be [generated](resources/useeio) for demand vectors (Food System and Full System). 
 
 2. Detailed [Goods & Services Report](samples/dataset) with heatmap providing environmental impact of production choices.   
 
 3. [Maps of products and industries](samples/maps) - Regional hubs, industries by zipcode.  
 
-4. Visualizations of material flow and regional input-output.  
+4. [Visualizations](samples/charts/) of material flow and regional input-output.  
 
 
 ### Project Areas
 
 1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
-2. Expand on Python and SQLite pages to pre-processing data for display in D3 charts. 
+2. Python and SQLite script to pre-process data for D3 charts. 
 Data includes [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
 3. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).

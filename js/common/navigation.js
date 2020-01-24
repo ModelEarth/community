@@ -37,7 +37,9 @@ $(document).ready(function(){
 	  		}
 	    })
  		$("#header img[src]").each(function() {
-	      $(this).attr("src", climbpath + $(this).attr('src'));
+ 		  if($(this).attr("src").toLowerCase().indexOf("http") < 0){
+	      	$(this).attr("src", climbpath + $(this).attr('src'));
+	  	  }
 	    })
 
  		// Set here so path works at all levels.
