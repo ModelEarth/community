@@ -99,9 +99,12 @@ file_name = 'useeio_sectors_final_perspective.csv'
 result2_df.to_csv(file_name, sep=',', encoding='utf-8')  
 ```
 
-Enhancements have been made to the export above.  [View new script](../../python/produceUSEEIOimpactcsv.py).
+Enhancements have been made to the export above.  [View new script](../../python/produceUSEEIOimpactcsv.py) and [resulting CSV file](../../samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
 
-1. Add column header called "section" to first column. 
+
+Additional updates requested:  
+
+1. Add "section" column header to first column.
 2. Reduce indicator values to 2 decimal points.
 3. Replace slash with dash at start of section title to separate ID from title.
 4. Use ID to add a "main\_category\_id" column. Use a 2 digit number to keep CSV file small.
