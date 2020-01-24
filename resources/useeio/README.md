@@ -63,8 +63,16 @@ A matrix does not include wages (compensation), taxes nor gross opperating surpl
 B matrix = emission per dollar
 Total industry (emmission) / output 
 
-
 D and U matrix are the results
+
+<div style="display:none" class="local">
+<a href="../../img/overview/useeio-methodology.png"><img src="../../img/overview/useeio-methodology.png" style="width:100%;max-width:800px"></a><br>
+<h3>USEEIO Methology</h3>
+Source: <a href="https://www.energy.gov/sites/prod/files/2019/04/f61/Integrated%20life%20cycle%20sustainability%20analysis%20%28ILCSA%29_NL0027593.pdf">DOE Bioenergy Technologies Office (BETO) - 2019 Project Peer Review</a>
+<!--
+https://www.energy.gov/eere/bioenergy/2019-project-peer-review
+-->
+</div>
 
 ---
 
