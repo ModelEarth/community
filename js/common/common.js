@@ -49,13 +49,14 @@ function loadMarkupPage(pagePath, divID, target) {
     document.getElementById(divID).innerHTML = html;
 
     // To do: apply to html parameter above rather than DOM.
-    $("#" + divID + " a[href]").each(function() {
+    if (pagePath.indexOf('../') >= 0) { // If .md file is not in the current directory
+      $("#" + divID + " a[href]").each(function() {
 
-      if($(this).attr("href").toLowerCase().indexOf("http") < 0){
-          $(this).attr("href", climbpath + $(this).attr('href'));
-      }
-    })
-
+        if($(this).attr("href").toLowerCase().indexOf("http") < 0){
+            $(this).attr("href", climbpath + $(this).attr('href'));
+        }
+      })
+    }
   });
 }
 function consoleLog(text,value) {
