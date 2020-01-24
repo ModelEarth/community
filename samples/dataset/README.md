@@ -19,7 +19,8 @@ https://stategov.github.io/us/bea/USEEIOv1.1_FinalDemand.csv
 
 <!--in Millions-->
 
-Final demand in $ for each of the goods and services for the US in 2007, and the sector codes and names are already separated. 
+Final demand is in US dollars for each of the goods and services for the US in 2007.
+<!-- , and the sector codes and names are already separated. --> 
 <!-- Wes -->
 
 
