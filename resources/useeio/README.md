@@ -97,7 +97,7 @@ file_name = 'useeio_sectors_final_perspective.csv'
 result2_df.to_csv(file_name, sep=',', encoding='utf-8')  
 ```
 
-Enhancements have been made to the export above.  [View new script](../../python/produceUSEEIOimpactcsv.py) and [resulting CSV file](../../samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
+Enhancements have been made to the export above.  [View new script](../../python/produceUSEEIOimpactcsv.txt) and [resulting CSV file](../../samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
 
 
 Additional updates requested:  
