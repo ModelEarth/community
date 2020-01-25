@@ -29,7 +29,7 @@ function loadParams(paramStr,hashStr) {
 }
 var param = loadParams(location.search,location.hash);
 
-function loadMarkupPage(pagePath, divID, target) {
+function loadMarkdown(pagePath, divID, target) {
 
   // Get the levels below root
   let foldercount = (location.pathname.split('/').length - 1); // - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0) // Removed because ending with slash or filename does not effect levels. Increased -1 to -2.
@@ -293,7 +293,7 @@ addEventListener("load", function(){
 
 
 
-/*  placed before loadMarkupPage 
+/*  placed before loadMarkdown 
 
 Configuration
 https://github.com/hakimel/reveal.js#markdown
