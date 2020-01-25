@@ -44,7 +44,7 @@ Slack #epa
 
 1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), CSV files will be [generated](resources/useeio) for demand vectors (Food System and Full System). 
 
-2. Detailed [Goods & Services Report](samples/dataset) with heatmap providing environmental impact of production choices.   
+2. Detailed [Goods & Services Report](samples/dataset) with economic value and environmental impact of production choices.   
 
 3. [Maps of products and industries](samples/maps) - Regional hubs, industries by zipcode.  
 
