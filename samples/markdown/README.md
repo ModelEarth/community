@@ -14,21 +14,25 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
 2. Clone the "<a href='https://github.com/modelearth/community'>community</a>" repo to your local computer.  (Fork if you plan to collaborate on updates.)
 
-3. When cloning the repo, place the "community" folder inside the folder where "Web Server for Chrome" points.  
+3. Place the "community" folder inside the folder where your local web server points.  
 
 4. Open the folder at [http://localhost:8887/community/](http://localhost:8887/community/)  
 
-5. Edit the main README.md page to customize your intro.  
+5. Copy the "starter" folder inside community and give it the name of your community or module.
+
+6. Edit the starter README.md page to customize your intro.  
 
 <br>
 
 ### Mac Users
-Ignore .DS_Store forever (these pesky files are used to set icon sizes in your local file manager)  
-You can toggle seeing hidden files using Command+Shift+Dot.  
+You'll want to avoid commiting your local .DS_Store files to GitHub. Run the following to have GitHub ignore .DS_Store files forever. The .DS_Store files will continue to set icon sizes in your local file manager.   
+ 
 <!-- Avoid .DS_Store file creation over network connections (article from 2011, confirm this still occurs)
 	https://support.apple.com/en-us/HT1629 -->
 <code>git config --global core.excludesfile ~/.gitignore  
 echo .DS_Store >> ~/.gitignore</code>  
+
+You can toggle seeing hidden files using Command+Shift+Dot. 
 
 ### Additional Resources
 
