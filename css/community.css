@@ -634,3 +634,16 @@ body {
   background-color: rgba(35, 35, 35, 1);
 }
 */
+
+
+@media print {
+  #header {
+    display: none;
+  }
+  #sidecolumn {
+    display: none;
+  }
+  #fullcolumn {
+    border-left: 0px !important;
+  }
+}
