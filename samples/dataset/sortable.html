@@ -86,7 +86,9 @@ tr{
     th.rotate > div > span > span {
         display:none; /* Hide extra after the title */
     }
-
+    td > div {
+    	min-width: 18px;
+    }
     /* Wide Screen Width */
     @media (min-width: 1400px) {
       .rotateHeaderHolder {
@@ -130,40 +132,6 @@ tr{
     }
 
 
-    /* Not used */
-    #dataList > table > tbody > tr > td:first-child {
-      width:300px;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .heat {
-      border: 1px solid #ccc;
-      border-rightX: 1px solid #ccc;
-      height:20px;
-      width:20px;
-    }
-    .noborderXXX {
-      border-left: 1px solid #777 !important;
-      border: 0px;
-    }
-    .noborder spanXXX {
-      margin: 0px;
-      margin-left: 6px;
-      border-left: 1px solid #ddd;
-      height: 2px;
-    }
-    iframe {
-      display: block;       /* iframes are inline by default */
-      border: none;         /* Reset default border */
-      min-height: 85vh;        /* Viewport-relative units */
-      width: 100%;
-    }
-    .oneline {
-      overflow:auto;
-      height:20px;
-
-    }
   </style>
   
 
@@ -308,22 +276,56 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			.enter()
 			.append("td")
 			.append("div")
-			.style("background-color", function(d,i) {
+			.style("border-left-color", function(d,i) { // Was background-color
 				// for the last elements in the row, we color the background:
 				if (i >= 2) {
 					return colorScale(d);
 				}
 			})
+			
+			// temp
+			.style("border-left-style", function(d,i) {
+				// for the last elements in the row, we add a left border
+				if (i >= 2) {
+					return "solid";
+				}
+			})
+			.style("border-left-width", function(d,i) {
+				// for the last elements in the row, we add a left border
+				if (i >= 2) {
+					return "12px";
+				}
+			})
+			.style("padding-left", function(d,i) {
+				// for the last elements in the row, we add a left border
+				if (i >= 2) {
+					return "4px";
+				}
+			})
+			.style("max-width", function(d,i) {
+				// for the last elements in the row, we add a left border
+				if (i >= 2) {
+					return "0px";
+				}
+			})
+			.style("overflow", function(d,i) {
+				// for the last elements in the row, we add a left border
+				if (i >= 2) {
+					return "hidden";
+				}
+			})
+
 			.text(function(d,i) {
 				if (i >= 2) {
-					return "";
+					return d;
 				} else {
 					return d;
 				}
-			});
+			})
+			;
 
-// jquery sorting applied to it - could be done with d3 and events.
-$("table").stupidtable();
+		// jquery sorting applied to it - could be done with d3 and events.
+		$("table").stupidtable();
 
 	});
 
