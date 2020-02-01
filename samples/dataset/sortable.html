@@ -5,6 +5,7 @@
 <title>US Goods & Services - Impact</title>
 <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
 
+<link rel="stylesheet" href="../../css/community.css" />
 
 <style>
 body  {
@@ -17,16 +18,21 @@ body  {
     border-collapse: collapse;
 }
 #th,tr,td{
-    padding: 15px;
+    paddingX: 15px;
 }
 th {
-    background-color: steelblue;
-    color: white;
+    background-color: #ddd;
     padding: 15px;
     cursor:pointer;
+    vertical-align: bottom;
 }
 tr{
-   background-color:#E6F5FF ;
+   background-colorX:#E6F5FF ;
+
+}
+td {
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
 }
 </style>
 
@@ -40,6 +46,7 @@ tr{
     th.rotate {
       heightX: 320px;
       height: 240px;
+      height: 130px;
 
       white-space: nowrap;
       vertical-align: bottom;
@@ -86,9 +93,29 @@ tr{
     th.rotate > div > span > span {
         display:none; /* Hide extra after the title */
     }
+    td {
+    	padding:10px;
+    }
     td > div {
     	min-width: 18px;
     }
+
+    td:first-child {
+    	min-width: 500px;
+    }
+    td:first-child > div {
+    	max-height: 20px;
+    	overflow: hidden;
+    }
+    td:nth-child(n+3) > div {
+    	border-left-style: solid;
+    	border-left-width: 14px;
+    	padding-left: 6px;
+	}
+    td:nth-child(n+3) > div > div {
+	    visibilityX: hidden;
+	}
+
     /* Wide Screen Width */
     @media (min-width: 1400px) {
       .rotateHeaderHolder {
@@ -148,7 +175,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 <h1>US Goods and Services</h1>
 <p>
-	Sortable CSV Data -
+	Click columns to sort. CSV Data: 
 	USEEIOv1.2_result_2007_impacts_final.csv
 </p>
 
@@ -190,7 +217,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			d.difference =  d.US_2007_Demand_$;
 
 		 // Add an array to the empty array with the values of each:
-	 	 myArray.push([d.Sectors, d.ACID, d.CCDD, d.CMSW, d.CRHW, d.ENRG, d.ETOX, d.EUTR, d.GHG, d.HAPS, d.HCAN, d.HNCN, d.HRSP, d.HTOX, d.JOBS, d.LAND, d.METL, d.MNRL, d.NNRG, d.OZON, d.PEST, d.RNRG, d.SMOG, d.VADD, d.WATR, d.difference]);
+	 	 myArray.push([d.Sectors, d.difference, d.ACID, d.CCDD, d.CMSW, d.CRHW, d.ENRG, d.ETOX, d.EUTR, d.GHG, d.HAPS, d.HCAN, d.HNCN, d.HRSP, d.HTOX, d.JOBS, d.LAND, d.METL, d.MNRL, d.NNRG, d.OZON, d.PEST, d.RNRG, d.SMOG, d.VADD, d.WATR]);
 
  		// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
 	 	 allDifferences.push(d.difference);
@@ -284,37 +311,10 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			})
 			
 			// temp
-			.style("border-left-style", function(d,i) {
-				// for the last elements in the row, we add a left border
-				if (i >= 2) {
-					return "solid";
-				}
-			})
-			.style("border-left-width", function(d,i) {
-				// for the last elements in the row, we add a left border
-				if (i >= 2) {
-					return "12px";
-				}
-			})
-			.style("padding-left", function(d,i) {
-				// for the last elements in the row, we add a left border
-				if (i >= 2) {
-					return "4px";
-				}
-			})
-			.style("max-width", function(d,i) {
-				// for the last elements in the row, we add a left border
-				if (i >= 2) {
-					return "0px";
-				}
-			})
-			.style("overflow", function(d,i) {
-				// for the last elements in the row, we add a left border
-				if (i >= 2) {
-					return "hidden";
-				}
-			})
+			
+			
 
+			.append("div") // Second div within td
 			.text(function(d,i) {
 				if (i >= 2) {
 					return d;
