@@ -14,6 +14,7 @@ h1 {
 }
 #table {
 	margin:20px;
+	margin-right:45px;
     border-collapse: collapse;
 }
 #th,tr,td{
@@ -30,151 +31,154 @@ td {
 	border-bottom: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 }
-</style>
-
-<style>
-    /* Wide screen width */
-    .rotateHeader {
-      margin-right:200px; /* Allows for angle to exceed columns on left. */
-      display: block;
-    }
-    th.rotate {
-      heightX: 320px;
-      height: 240px;
-      height: 118px;
-
-      white-space: nowrap;
-      vertical-align: bottom;
-      text-align: left; 
-      padding: 2px;
-      padding-top:10px;
-    }
-    th.rotate > div {
-      transform: 
-        translate(0px, 0px) /* 25px, 51px - To shift right and up. */
-        rotate(315deg); /* 45 is really 360 - 45 */
-      width: 22px;
-      padding: 4px;
-      padding-top: 5px;
-    }
-    th.rotate > div > span {
-      padding: 5px 10px;
-      font-weight: 400;
-      font-size: 13.5px;
-      display:block;
-      width:130px;
-      border-bottomX: 1px solid #dfdfdf;
-    }
-    th.rotate > div > span:hover {
-      background: #eee;
-      cursor: pointer;
-    }
-    .impactTitle {
-        padding-top: 34px;
-    }
-    .th_title {
-        width: 50px;
-    }
-    .th_title > div {
-      float:right; /* Allows for space bewteen sections */
-    }
-    .th_title > div > span, .th_title > div > span:hover {
-      border-bottomX: 1px solid #777 !important;
-      border-top: 1px solid #333;
-      backgroundXXXX: #ddd !important;
-      margin-bottomX: 4px;
-      cursor: default;
-    }
-    th.rotate > div > span > span {
-        display:none; /* Hide extra after the title */
-    }
-    td {
-    	padding:10px;
-    }
 
 
-    td:first-child {
-    	min-width: 400px;
-    }
-    td:first-child > div {
-    	max-height: 20px;
-    	overflow: hidden;
-    }
-    td:nth-child(n+3) > div {
-    	border-left-style: solid;
-    	border-left-width: 14px;
-    	padding-left: 6px;
+/* Wide screen width */
+.rotateHeader {
+  display: block;
+  
+}
+th {
+	text-align: left; 
+}
+th.rotate {
+  heightX: 320px;
+  height: 240px;
+  height: 118px;
+
+  white-space: nowrap;
+  vertical-align: bottom;
+  text-align: left; 
+  padding: 0px;
+}
+th.rotate > div {
+  transform: 
+    translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+    rotate(315deg); /* 45 is really 360 - 45 */
+  width: 22px;
+  padding: 4px;
+  padding-top: 5px;
+}
+th.rotate > div > span {
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 13.5px;
+  display:block;
+  width:130px;
+  border-bottomX: 1px solid #dfdfdf;
+}
+th.rotate > div > span:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.impactTitle {
+    padding-top: 34px;
+}
+.th_title {
+    width: 50px;
+}
+.th_title > div {
+  float:right; /* Allows for space bewteen sections */
+}
+.th_title > div > span, .th_title > div > span:hover {
+  border-bottomX: 1px solid #777 !important;
+  border-top: 1px solid #333;
+  backgroundXXXX: #ddd !important;
+  margin-bottomX: 4px;
+  cursor: default;
+}
+th.rotate > div > span > span {
+    display:none; /* Hide extra after the title */
+}
+td {
+	padding:10px;
+}
 
 
-    	padding-leftX: 0px;
-	    max-width:0px;
-	}
-    td:nth-child(n+3) > div > div {
-	    visibility: hidden;
-	}
+td:nth-child(n+3) {
+    padding: 2px;
+}
+td:first-child {
+	min-width: 200px;
+}
+td:first-child > div {
+	max-height: 20px;
+	overflow: hidden;
+}
+td:nth-child(n+3) > div {
+	border-left-style: solid;
+	border-left-width: 18px;
+	padding-left: 0px;
+    max-width:0px;
+}
 
-	#headerFixed {
-		position: fixed;
-		top:0;
-		left:0;
-		right:0;
-		width:100%;
-		background-color: #fff;
-		z-index: 1;
-		box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
-	}
-	#fixedFooter {
-		position: fixed;
-		bottom:0;
-		background-color: #333;
-		color:#fff;
-		left:0;
-		right:0;
-		width:100%;
-		padding:8px;
-	}
-	
-    /* Wide Screen Width */
-    @media (min-width: 1400px) {
-      .rotateHeaderHolder {
-        margin-right:80px;
-      }
-    }
-    /* Standard Screen Width */
-    @media (max-width: 1399px) {
-      
-      .rotateHeader {
-        display:inline;
-        overflow: auto;
-      }
-      th.rotate {
-        height: 220px;
-      }
-      th.rotate > div {
-        transform: 
-          translate(0px, 0px) /* 25px, 51px - To shift right and up. */
-          rotate(270deg); /* 45 is really 360 - 45 */
-        width: 15px;
-        padding: 0px;
-      }
-      th.rotate > div > span {
-        padding: 5px 10px;
-        font-size: 12px;
-        width: 200px;
-        margin-bottom: 2px;
-      }
-      .th_title {
-          width: 30px;
-      }
-      .th_title > div > span {
-        
-        font-size: 14px !important;
-        backgroundXXX: #eee;
-      }
-      .th_title > div > span, .th_title > div > span:hover {
-        margin-bottomX: 0px;
-      }
-    }
+td:nth-child(n+3) > div > div {
+    visibility: hidden;
+}
+
+#headerFixed {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	width:100%;
+	background-color: #fff;
+	z-index: 1;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+}
+#fixedFooter {
+	position: fixed;
+	bottom:0;
+	background-color: #333;
+	color:#fff;
+	left:0;
+	right:0;
+	width:100%;
+	padding:8px;
+}
+
+/* Wide Screen Width */
+@media (min-width: 1400px) {
+  .rotateHeaderHolder {
+    margin-rightX:80px;
+  }
+}
+/* Standard Screen Width */
+@media (max-width: 1399px) {
+  #table {
+  	margin-right:25px;
+  }
+  .rotate {
+  	margin-right:20px;
+  }
+  .rotateHeader {
+    overflowX: auto;
+  }
+  th.rotate {
+    height: 160px;
+  }
+  th.rotate > div {
+    transform: 
+      translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+      rotate(270deg); /* 45 is really 360 - 45 */
+    width: 15px;
+    padding: 0px;
+  }
+  th.rotate > div > span {
+    padding: 5px 10px;
+  }
+  .th_title {
+      width: 30px;
+  }
+  .th_title > div > span {
+    
+    font-size: 14px !important;
+    backgroundXXX: #eee;
+  }
+  .th_title > div > span, .th_title > div > span:hover {
+    margin-bottomX: 0px;
+  }
+}
 
 #logoholder {
 	height: 50px;
@@ -213,7 +217,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 	<div style="margin: 8px">
 		Southeast Georgia<br>
-		<h1 style="line-height: 1;">Goods and Services</h1>
+		<h1 style="line-height: 1; white-space: nowrap;">Goods and Services</h1>
 	</div>
 </div>
 <div style="height:60px">
@@ -379,44 +383,19 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	    // access properties using this keyword
 	    if ( this.checked ) {
 	        // if checked ...
-	        changeIt();
+	        $("th.rotate > div > span").css("font-weight","600");
+	        $("td:nth-child(n+3) > div > div").css("visibility","visible");
+	        $("td:nth-child(n+3) > div > div").css("overflow","none");
+	        $("td:nth-child(n+3) > div").css("max-width","none");
+	        $("td:nth-child(n+3) > div").css("padding-left","5px");
 	    } else {
-	        // if not checked ...
+	        $("th.rotate > div > span").css("font-weight","400");
+	        $("td:nth-child(n+3) > div > div").css("visibility","hidden");
+	        $("td:nth-child(n+3) > div > div").css("overflow","auto");
+	        $("td:nth-child(n+3) > div").css("max-width","0px");
+	        $("td:nth-child(n+3) > div").css("padding-left","0px");
 	    }
 	};
-	function changeIt() {
-		if (!document.styleSheets) return;
-		var theRules = new Array();
-		if (document.styleSheets[1].td) {
-			alert('what');
-			theRules = document.styleSheets[1].td
-		} else if (document.styleSheets[1].rules) {
-			theRules = document.styleSheets[1].rules
-		}
-		else {
-			return;
-		}
-		//theRules[theRules.length-1].style.backgroundColor = '#EEF0F5';
-		theRules[theRules.length-1].style.visibility = 'visible';
-	}
-
-	$(document).ready(function(){
-	  if(location.host.indexOf('localhost') < 0) {
-	  	alert('okay')
-	    // Inject style rule
-	      var div = $("<div />", {
-	        html: '<style>.local{display:none}#mapPanel{display:none}</style>'
-	      }).appendTo("body");
-	  } else {
-	    var div = $("<div />", {
-	        html: '<style>td:nth-child(n+3) > div > div {visibility:visible;overflow:none}</style>'
-	      }).appendTo("body");
-
-	    div = $("<div />", {
-	        html: '<style>td:nth-child(n+3) > div {max-width:none}</style>'
-	      }).appendTo("body");
-	  }
-	});
 
 </script>
 
