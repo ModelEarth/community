@@ -619,6 +619,7 @@ iframe {
 }
 /* END HEADER */
 
+
 /* DARK */
 /*
 .headerbar {
@@ -635,6 +636,14 @@ body {
 }
 */
 
+/* OVERHEAD DISPLAY */
+body {
+  color: #111 !important;
+}
+h1 {
+  font-weight: 300 !important;
+  color: #000;
+}
 
 @media print {
   #header {
