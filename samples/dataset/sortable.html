@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>US Goods & Services - Impact</title>
+<title>Goods & Services - Impact</title>
 <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
 
 <link rel="stylesheet" href="../../css/community.css" />
 
 <style>
-body  {
-  margin:20px;
-} 
+h1 {
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+}
 #table {
+	margin:20px;
     border-collapse: collapse;
 }
 #th,tr,td{
@@ -39,7 +41,7 @@ td {
     th.rotate {
       heightX: 320px;
       height: 240px;
-      height: 100px;
+      height: 118px;
 
       white-space: nowrap;
       vertical-align: bottom;
@@ -60,7 +62,7 @@ td {
       font-weight: 400;
       font-size: 13.5px;
       display:block;
-      width:230px;
+      width:130px;
       border-bottomX: 1px solid #dfdfdf;
     }
     th.rotate > div > span:hover {
@@ -104,13 +106,34 @@ td {
     	padding-left: 6px;
 
 
-    	padding-left: 0px;
+    	padding-leftX: 0px;
 	    max-width:0px;
 	}
     td:nth-child(n+3) > div > div {
 	    visibility: hidden;
 	}
 
+	#headerFixed {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		width:100%;
+		background-color: #fff;
+		z-index: 1;
+		box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+	}
+	#fixedFooter {
+		position: fixed;
+		bottom:0;
+		background-color: #333;
+		color:#fff;
+		left:0;
+		right:0;
+		width:100%;
+		padding:8px;
+	}
+	
     /* Wide Screen Width */
     @media (min-width: 1400px) {
       .rotateHeaderHolder {
@@ -153,8 +176,20 @@ td {
       }
     }
 
-
-  </style>
+#logoholder {
+	height: 50px;
+	width: 70px;
+    background-size: 100% 100%;
+    float: left;
+}
+<style>
+.logoholder-state {
+    background: url(img/logo/georgia-icon-on-gray.png) no-repeat;
+    margin-top: 5px;
+    height: 50px;
+    width: 70px;
+}
+</style>
   
 
 </head>
@@ -168,11 +203,26 @@ To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
 
-<h1>US Goods and Services</h1>
-<p>
+<div id="headerFixed">
+	<div style="float:right; margin:20px">
+		<input id="showValues" type="checkbox"> Show values
+	</div>
+	<div style="float:left; margin-top:8px; width:90px; height: 50px;">
+		<a href="../../" id="logoholder" class="showApps logoholder-state" style="background-image: url('../../img/logo/georgia-icon-rect.png'); background-repeat: no-repeat; margin-left: 20px; background-position: center center;">&nbsp;</a>
+	</div>
+
+	<div style="margin: 8px">
+		Southeast Georgia<br>
+		<h1 style="line-height: 1;">Goods and Services</h1>
+	</div>
+</div>
+<div style="height:60px">
+</div>
+
+<div id="fixedFooter">
 	Click columns to sort. CSV Data: 
 	USEEIOv1.2_result_2007_impacts_final.csv
-</p>
+</div>
 
 <div id="table" class="rotateHeader"></div>
 
@@ -323,6 +373,49 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		// jquery sorting applied to it - could be done with d3 and events.
 		$("table").stupidtable();
 
+	});
+
+	document.getElementById('showValues').onclick = function() {
+	    // access properties using this keyword
+	    if ( this.checked ) {
+	        // if checked ...
+	        changeIt();
+	    } else {
+	        // if not checked ...
+	    }
+	};
+	function changeIt() {
+		if (!document.styleSheets) return;
+		var theRules = new Array();
+		if (document.styleSheets[1].td) {
+			alert('what');
+			theRules = document.styleSheets[1].td
+		} else if (document.styleSheets[1].rules) {
+			theRules = document.styleSheets[1].rules
+		}
+		else {
+			return;
+		}
+		//theRules[theRules.length-1].style.backgroundColor = '#EEF0F5';
+		theRules[theRules.length-1].style.visibility = 'visible';
+	}
+
+	$(document).ready(function(){
+	  if(location.host.indexOf('localhost') < 0) {
+	  	alert('okay')
+	    // Inject style rule
+	      var div = $("<div />", {
+	        html: '<style>.local{display:none}#mapPanel{display:none}</style>'
+	      }).appendTo("body");
+	  } else {
+	    var div = $("<div />", {
+	        html: '<style>td:nth-child(n+3) > div > div {visibility:visible;overflow:none}</style>'
+	      }).appendTo("body");
+
+	    div = $("<div />", {
+	        html: '<style>td:nth-child(n+3) > div {max-width:none}</style>'
+	      }).appendTo("body");
+	  }
 	});
 
 </script>
