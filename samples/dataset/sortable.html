@@ -9,9 +9,6 @@
 
 <style>
 body  {
-  font-family: Arial, sans-serif;
-  font-size: 1em;
-  color: steelblue;
   margin:20px;
 } 
 #table {
@@ -21,15 +18,12 @@ body  {
     paddingX: 15px;
 }
 th {
-    background-color: #ddd;
-    padding: 15px;
+    padding: 5px;
     cursor:pointer;
     vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
 }
-tr{
-   background-colorX:#E6F5FF ;
 
-}
 td {
 	border-bottom: 1px solid #ddd;
 	border-right: 1px solid #ddd;
@@ -37,7 +31,6 @@ td {
 </style>
 
 <style>
-
     /* Wide screen width */
     .rotateHeader {
       margin-right:200px; /* Allows for angle to exceed columns on left. */
@@ -46,7 +39,7 @@ td {
     th.rotate {
       heightX: 320px;
       height: 240px;
-      height: 130px;
+      height: 100px;
 
       white-space: nowrap;
       vertical-align: bottom;
@@ -96,12 +89,10 @@ td {
     td {
     	padding:10px;
     }
-    td > div {
-    	min-width: 18px;
-    }
+
 
     td:first-child {
-    	min-width: 500px;
+    	min-width: 400px;
     }
     td:first-child > div {
     	max-height: 20px;
@@ -111,9 +102,13 @@ td {
     	border-left-style: solid;
     	border-left-width: 14px;
     	padding-left: 6px;
+
+
+    	padding-left: 0px;
+	    max-width:0px;
 	}
     td:nth-child(n+3) > div > div {
-	    visibilityX: hidden;
+	    visibility: hidden;
 	}
 
     /* Wide Screen Width */
@@ -136,7 +131,7 @@ td {
         transform: 
           translate(0px, 0px) /* 25px, 51px - To shift right and up. */
           rotate(270deg); /* 45 is really 360 - 45 */
-        width: 20px;
+        width: 15px;
         padding: 0px;
       }
       th.rotate > div > span {
@@ -179,7 +174,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	USEEIOv1.2_result_2007_impacts_final.csv
 </p>
 
-<div id="table"></div>
+<div id="table" class="rotateHeader"></div>
 
 </body>
 
@@ -239,7 +234,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		// Food Waste (FOOD)
 
 		var headerObjs = [
-			{ class: "", column: "Sectors", label: "Sectors", sort_type: "string" },
+			{ class: "", column: "Sectors", label: "489 Industry Sectors", sort_type: "string" },
 			{ column: "US_2007_Demand_$", label: "US Demand $ (2007)", sort_type: "int" },
 			{ class: "rotate", column: "ACID", label: "Acid Rain", sort_type: "int" },
 			{ class: "rotate", column: "CCDD", label: "CCDD", sort_type: "int" },
@@ -276,6 +271,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			.attr("data-sort", function (d) { return d.sort_type; })
 			.attr("class", function (d) { return d.class; })
 			.append("div")
+			.append("span")
   			.text(function(d) { return d.label; });
 
 		var tablebody = table.append("tbody");
