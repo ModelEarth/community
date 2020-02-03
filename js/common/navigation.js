@@ -26,7 +26,7 @@ $(document).ready(function(){
  	}
 
  	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
- 	$("body").prepend( "<div id='header'></div>\r<div id='sidecolumn'></div>" );
+ 	$("body").prepend( "<div id='header' class='hideprint'></div>\r<div id='sidecolumn' class='hideprint'></div>" );
 	
  	$("#header").load( climbpath + "header.html", function( response, status, xhr ) {
 
