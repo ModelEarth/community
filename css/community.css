@@ -655,4 +655,7 @@ h1 {
   #fullcolumn {
     border-left: 0px !important;
   }
+  .hideprint {
+    display:none;
+  }
 }
