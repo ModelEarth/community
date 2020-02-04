@@ -35,7 +35,7 @@ Slack #epa
 
 [<b>Spring 2020</b> - Georgia's Life Cycle App Ideas Challenge](https://model.georgia.org/)  
 
-[<b>Fall 2020</b> - Code for America Sustainable Communities Net Zero Hackathon](https://www.codeforamerica.org/) 
+[<b>Fall 2020</b> - Code for America Sustainable Communities Hackathon](https://www.codeforamerica.org/) 
 <br>
 
 <a href="https://model.georgia.org/communities/">Learn more</a> and join our project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> 
