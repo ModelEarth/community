@@ -46,7 +46,7 @@ $(document).ready(function(){
 
  		// To do: fetch the existing background-image.
  		var imageUrl;
- 		if(location.host.indexOf('georgia') >= 0) {
+ 		if(location.host.indexOf('georgia') >= 0 || location.host.indexOf('localhost') >= 0) {
 	 		imageUrl = climbpath + "img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
 	 		$('#logoholder').addClass('logoholder-state');
 	 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
