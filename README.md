@@ -9,7 +9,7 @@ Supply chain "License to Operate" with the support of the community.
 
 Slack #epa
 
-<b>1. Teams</b>: Brainstorm project ideas - [Review maps and charts](tools/), [Review inventory exchange](tools/#places)   
+<b>1. Teams</b>: Brainstorm Projects - [Review maps and charts](tools/), [Review inventory exchange](tools/#places)   
 
 <b>2. GitHub</b>: Experiment with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats)  
   Is it possible to pull just the [community](https://github.com/datascape/community) "tools" folder into [model.georgia](https://github.com/datascape/model.georgia) repo?   
