@@ -53,6 +53,8 @@ Slack #epa
 
 ### Project Areas
 
+1. Setup a local clone of [Census Reporter](https://censusreporter.org/profiles/04000US13-georgia/) from their Django [Python Github Repo](https://github.com/censusreporter/censusreporter)
+
 1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 1. Python and SQLite script to pre-process data for D3 charts. 
@@ -83,6 +85,9 @@ Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 1. Cross-relate NAICS industries and HS Codes.  
 
 <!--
+International postal codes
+https://pypi.org/project/zipcodes/
+
 National Renewable Energy Laboratory (NREL) - alternative fuel stations 
 	https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/all/#ev-network-id-record-fields
 
