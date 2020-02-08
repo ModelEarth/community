@@ -55,29 +55,32 @@ Slack #epa
 
 1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
-2. Python and SQLite script to pre-process data for D3 charts. 
+1. Python and SQLite script to pre-process data for D3 charts. 
 Data includes [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
-3. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).
+1. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).
 
-4. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
+1. [Progressive Web Apps](resources/pwa) - use the PWA Starter to add an index.htmml page to the pwa folder.
 
-5. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
+1. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
 
-6. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
+1. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
+
+1. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
-7. Highlight <a href="../community/tools/#data">Smart & Mobile Communities</a> on Leaflet map. 
+1. Highlight <a href="../community/tools/#data">Smart & Mobile Communities</a> on Leaflet map. 
 Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
 
-8. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
+1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
-9. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
-10. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
+1. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
 
-11. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
+1. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
 
-12. Cross-relate NAICS industries and HS Codes.  
+1. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
+
+1. Cross-relate NAICS industries and HS Codes.  
 
 <!--
 National Renewable Energy Laboratory (NREL) - alternative fuel stations 
