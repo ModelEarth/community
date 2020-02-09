@@ -51,7 +51,7 @@ Slack #epa
 4. [Visualizations](samples/charts/) of material flow and regional input-output.  
 
 
-### Project Areas
+### Dev Areas
 
 1. Setup a local clone of [Census Reporter](https://censusreporter.org/profiles/04000US13-georgia/) from their Django [Python Github Repo](https://github.com/censusreporter/censusreporter)
 
