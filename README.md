@@ -53,7 +53,7 @@ Slack #epa
 
 ### Dev Areas
 
-1. Setup a local clone of [Census Reporter](https://censusreporter.org/profiles/04000US13-georgia/) from their Django [Python Github Repo](https://github.com/censusreporter/censusreporter)
+1. Setup a local clone of [Census Reporter](https://censusreporter.org/profiles/04000US13-georgia/) from their Django [Python Github Repo](https://github.com/censusreporter/censusreporter) - [Notes](resources/censusreporter)
 
 1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 

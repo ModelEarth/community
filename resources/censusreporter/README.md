@@ -1,13 +1,17 @@
+# Census Reporter
 
+## Enable Virtual Environment (Mac)
 
-# Enable Virtual Environment (Mac)
+Attempting to follow [Census Reporter Github setup steps](https://github.com/censusreporter/censusreporter).  
 
-You may need to add (edit) a .zshrc file to load settings in a .bash_profile
-https://superuser.com/questions/886132/where-is-the-zshrc-file-on-mac
+### Not yet successful at running add2virtualenv
 
-Steps for installing pip on Mac. (Pip is the Python package installer.)
+You may need to add (edit) a .zshrc file to load settings in a .bash_profile  
+[https://superuser.com/questions/886132/where-is-the-zshrc-file-on-mac](https://superuser.com/questions/886132/where-is-the-zshrc-file-on-mac)  
 
-https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+Steps for installing pip on Mac. (Pip is the Python peackage installer.)
+
+[https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)  
 
 Use the system pip to bootstrap a user installation of pip:
 
@@ -20,8 +24,8 @@ Use the system pip to bootstrap a user installation of pip:
 > python3 -m pip install add2virtualenv
 
 
-censusreporter instructions assume you're using virtualenv and virtualenvwrapper 
-https://github.com/censusreporter/censusreporter
+censusreporter instructions assume you're using virtualenv and virtualenvwrapper  
+[https://github.com/censusreporter/censusreporter](https://github.com/censusreporter/censusreporter)  
 
 Might skip on new mac: virtualenv
 venv (for Python 3) and virtualenv (for Python 2)
@@ -44,7 +48,7 @@ sudo pip3 install virtualenv
 sudo pip3 install virtualenvwrapper
 
 Source with more:
-https://stackoverflow.com/questions/13855463/bash-mkvirtualenv-command-not-found
+[https://stackoverflow.com/questions/13855463/bash-mkvirtualenv-command-not-found](https://stackoverflow.com/questions/13855463/bash-mkvirtualenv-command-not-found)  
 
 
 These don't seem to work with Python3
@@ -73,6 +77,7 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 > pip install --upgrade pip
 
 
+## Not yet figured out...
 
 add2virtualenv is part of virtualenvwrapper. 
 virtualenvwrapper.sh resides at env/bin
