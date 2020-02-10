@@ -11,7 +11,7 @@
 //  });
 //}
 
-var imageUrl;
+var imageUrl, imageUrlSide;
 $(document).ready(function(){
 
 	// Get the levels below root
@@ -59,7 +59,8 @@ $(document).ready(function(){
 	 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
 	 	}
 
- 		$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
+	 	imageUrlSide = climbpath + "img/logo/georgia-icon-rect.png"; // Until modelEarth logo is sized correctly
+ 		$('#logoholder').css('background-image', 'url(' + imageUrlSide + ')');
 		$('#logoholder').css('background-repeat', 'no-repeat');
 
  		//$('#logoholder').css('background-size', '70% 70%');
