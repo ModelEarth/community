@@ -11,6 +11,7 @@
 //  });
 //}
 
+var imageUrl;
 $(document).ready(function(){
 
 	// Get the levels below root
@@ -45,7 +46,7 @@ $(document).ready(function(){
  		// Set here so path works at all levels.
 
  		// To do: fetch the existing background-image.
- 		var imageUrl;
+ 		
  		if(location.host.indexOf('georgia') >= 0 || location.host.indexOf('localhost') >= 0) {
 	 		imageUrl = climbpath + "img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
 	 		$('#logoholder').addClass('logoholder-state');
@@ -67,6 +68,8 @@ $(document).ready(function(){
 
  		//$('#logoholder').css('background-size', '70% 70%');
  		$('#logoholder').css('background-position', 'center');
+
+ 		
 
  		$('.showMenu').click(function () {
 			//$(".showMenu").hide();
@@ -94,6 +97,10 @@ $(document).ready(function(){
 		});
 	});
 	$("#sidecolumn").load( climbpath + "nav.html", function( response, status, xhr ) {
+
+		$('#logoholderside').css('background-image', 'url(' + imageUrl + ')');
+		$('#logoholderside').css('background-repeat', 'no-repeat');
+
 		// Make paths relative to current page
 		
  		$("#sidecolumn a[href]").each(function() {
