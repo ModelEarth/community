@@ -60,7 +60,7 @@ $(document).ready(function(){
 	 	}
 
 	 	imageUrlSide = climbpath + "img/logo/georgia-icon-rect.png"; // Until modelEarth logo is sized correctly
- 		$('#logoholder').css('background-image', 'url(' + imageUrlSide + ')');
+ 		$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
 		$('#logoholder').css('background-repeat', 'no-repeat');
 
  		//$('#logoholder').css('background-size', '70% 70%');
@@ -99,7 +99,7 @@ $(document).ready(function(){
 	});
 	$("#sidecolumn").load( climbpath + "nav.html", function( response, status, xhr ) {
 
-		$('#logoholderside').css('background-image', 'url(' + imageUrl + ')');
+		$('#logoholderside').css('background-image', 'url(' + imageUrlSide + ')');
 		$('#logoholderside').css('background-repeat', 'no-repeat');
 
 		// Make paths relative to current page
