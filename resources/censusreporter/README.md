@@ -1,22 +1,45 @@
 
-Steps for installing pip on Mac.
+
+# Enable Virtual Environment (Mac)
+
+You may need to add (edit) a .zshrc file to load settings in a .bash_profile
+https://superuser.com/questions/886132/where-is-the-zshrc-file-on-mac
+
+Steps for installing pip on Mac. (Pip is the Python package installer.)
 
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 
 Use the system pip to bootstrap a user installation of pip:
 
-python3 -m pip install --user --upgrade pip
+> python3 -m pip install --user --upgrade pip
 
-Skip on new mac: virtualenv
+> python3 -m pip install --user virtualenvwrapper
+
+> python3 -m venv env
+
+> python3 -m pip install add2virtualenv
+
+
+censusreporter instructions assume you're using virtualenv and virtualenvwrapper 
+https://github.com/censusreporter/censusreporter
+
+Might Skip on new mac: virtualenv
 venv (for Python 3) and virtualenv (for Python 2)
 
-SKIP THESE if you are using Python3:
+Might SKIP THESE if you are using Python3:
 >> mkvirtualenv census --no-site-packages
 >> workon census
 
 
-If you are planning to use python 3 install the related python 3 versions
+If you are planning to use python 3 install the related python 3 versions.
+(But since 2020 macs run Python 2.7, maybe only install in your virtual environ - if that is possible)
 
+Ran "python3 -m pip install --user virtualenvwrapper"
+pip install virtualenvwrapper
+
+
+
+Ran these but don't again. Still could not access add2virtualenv:
 sudo pip3 install virtualenv
 sudo pip3 install virtualenvwrapper
 
@@ -24,7 +47,12 @@ Source with more:
 https://stackoverflow.com/questions/13855463/bash-mkvirtualenv-command-not-found
 
 
-Or you can instead use the following (but you'll need virtualenvwrapper later):
+These don't seem to work with Python3
+>> mkvirtualenv census --no-site-packages
+>> workon census
+
+
+Instead try the following (but you'll need virtualenvwrapper later):
 
 > python3 -m venv env
 
@@ -38,12 +66,29 @@ Then activate
 
 > pip install -r requirements.txt
 
+
+The following no longer occured since "python3 -m pip install --user --upgrade pip" was run first above.
 You are using pip version 19.0.3, however version 20.0.2 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
-
 > pip install --upgrade pip
 
+
+
+add2virtualenv is part of virtualenvwrapper. 
+virtualenvwrapper.sh resides at env/bin
+
+
 > pip install add2virtualenv
+
+Resulted in:
+ERROR: Could not find a version that satisfies the requirement add2virtualenv (from versions: none)
+ERROR: No matching distribution found for add2virtualenv
+
+
+Guessing from the following:https://vicpimakers.ca/links/python-links/setting-up-python-projects-with-virtual-environments/
+Added to .bash_profile
+source /usr/local/bin/virtualenvwrapper.sh
+
 
 > add2virtualenv ./censusreporter
 
