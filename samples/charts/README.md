@@ -3,34 +3,49 @@
 [D3.js](https://github.com/d3/d3/wiki/Gallery)  
 
 
-#### Sankey
+### Sankey Charts
 
-[Hybrid Sankey diagrams with return flows (Very cool)](https://www.researchgate.net/figure/A-more-complex-Sankey-diagram-1-The-structure-of-the-diagram-can-be-simplified-by_fig2_317156053)
 
-[D3.js Material Flow Sample](../../tools/#charts) - [Fast Forestry Chart](../../projects/#forestry)  
-
+[D3.js Material Flow Sample](../../tools/#charts) - [Inflow-Outflow Sample](../../projects/#forestry)  
 [D3.js Sankey Diagram](https://observablehq.com/@dralla666/d3-sankey-diagram) - 
-[In Repo](d3-sankey-diagram/) 
+[In Repo](d3-sankey-diagram/)  
 
-[D3.js Sankey Diagram - Interactive](skd3)  
+[Hybrid Sankey diagrams with return flows (Nice to duplicate)](https://www.researchgate.net/figure/A-more-complex-Sankey-diagram-1-The-structure-of-the-diagram-can-be-simplified-by_fig2_317156053)
 
-[D3.js Sankey Diagram - Flow-o-matic, easy list editing](https://observablehq.com/@mbostock/flow-o-matic)
+[D3.js Sankey Diagram - Interactive (Energy)](skd3)  
+
+<!--[D3.js Sankey Diagram - Flow-o-matic, easy list editing](https://observablehq.com/@mbostock/flow-o-matic)  -->
+
+[e!Sankey (Also very nice, but too pricy)](https://www.ifu.com/en/e-sankey/)  
+
+### D3 Heatmap
+
+[Sortable USEEIO](../../samples/dataset/sortable.html) - [Others](../../samples/dataset/)  
+
+
+### ThreeJS Force Graph
+
+[3D Force Graph (click-to-focus)](https://vasturiano.github.io/3d-force-graph/example/click-to-focus/) - 
+[Settings on GitHub](https://github.com/vasturiano/3d-force-graph)
+
+
+### D3 Flow Mapper
+
+[US Migration Flow Mapper](http://usmigrationflowmapper.com) - [Journal Article (tandfonline.com)](https://www.tandfonline.com/doi/pdf/10.1080/17445647.2017.1313788)  
+
+[MigrationFlowMapper GitHub](https://github.com/stephdan/MigrationFlowMapper-US)  
+
+[Oregon State Cartography (temporarily unavailable)](http://www.cartography.oregonstate.edu/cartography.html)  
+
 <br>
 
+### More about D3
 
-
-
-
-[e!Sankey (Also very nice, but too pricy)](https://www.ifu.com/en/e-sankey/)
-
-#### Learn More
-
-[D3 Scale Functions](https://www.d3indepth.com/scales/) - From a domain to a range - USEEIO Heatmap [sortable](../../samples/dataset/sortable.html) - [others](../../samples/dataset/)    
+[D3 Scale Functions](https://www.d3indepth.com/scales/) - From a domain to a range    
 
 [D3 Overview](https://davidwalsh.name/learning-d3) - SVGs for beginners
 
-
-#### Additional
+### Additional Chart Tools
 
 [Vega Lite](https://vega.github.io/vega-lite/)
 

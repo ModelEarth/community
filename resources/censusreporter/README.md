@@ -23,7 +23,7 @@ Use the system pip to bootstrap a user installation of pip:
 censusreporter instructions assume you're using virtualenv and virtualenvwrapper 
 https://github.com/censusreporter/censusreporter
 
-Might Skip on new mac: virtualenv
+Might skip on new mac: virtualenv
 venv (for Python 3) and virtualenv (for Python 2)
 
 Might SKIP THESE if you are using Python3:
