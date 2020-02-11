@@ -1,7 +1,11 @@
 # Census Reporter (Wazimap Setup)
 
-## 1. Install or Upgrade pipx
+Based on the [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)  
 
+## 1. Install or Upgrade pipx for virtualenv with Python 3
+
+[Installation via pipx](https://virtualenv.readthedocs.io/en/latest/installation.html) - If you already have a Python 3.5+ interpreter the best is to use pipx to install virtualenv into an isolated environment. This has the added benefit that later you’ll be able to upgrade virtualenv without affecting other parts of the system.  
+  
 Source: [pipx project](https://pipxproject.github.io/pipx/installation/)
 
 	python3 -m pip install --user pipx
