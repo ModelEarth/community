@@ -1,4 +1,4 @@
-# Census Reporter (Wazimap Setup)
+# Wazimap Census Reporter (Wazimap Setup)
 
 Based on the [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)  
 
@@ -183,3 +183,25 @@ Gives you:
 ## 3. Install Django and wazimap (a fork of Census Reporter)
 
 [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)
+
+
+	pip install 'django<1.10'
+
+Returned:
+
+	WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+	Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+	To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+	Defaulting to user installation because normal site-packages is not writeable
+	Collecting django<1.10
+	  Downloading Django-1.9.13-py2.py3-none-any.whl (6.6 MB)
+	     |████████████████████████████████| 6.6 MB 4.9 MB/s 
+	Installing collected packages: django
+	  Attempting uninstall: django
+	    Found existing installation: Django 1.11.27
+	    Uninstalling Django-1.11.27:
+	      Successfully uninstalled Django-1.11.27
+	  WARNING: The script django-admin is installed in '/Users/helix/Library/Python/3.7/bin' which is not on PATH.
+	  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+	Successfully installed django-1.9.13
+
