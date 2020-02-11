@@ -2,10 +2,10 @@
 
 Based on the [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)  
 
-## 1. Install or Upgrade pipx for virtualenv with Python 3
+## 1. Install or upgrade pipx for virtualenv with Python 3
 
 [Installation via pipx](https://virtualenv.readthedocs.io/en/latest/installation.html) - If you already have a Python 3.5+ interpreter the best is to use pipx to install virtualenv into an isolated environment. This has the added benefit that later you’ll be able to upgrade virtualenv without affecting other parts of the system.  
-  
+
 Source: [pipx project](https://pipxproject.github.io/pipx/installation/)
 
 	python3 -m pip install --user pipx
@@ -90,12 +90,27 @@ Same error above with "exec":
 	python3 -m exec "$(register-python-argcomplete pipx)"
 
 
-**My note:**
-This may also describe how to add the path...  
-https://stackoverflow.com/questions/3402168/permanently-add-a-directory-to-pythonpath  
 
 <br>
-STUCK HERE, NOT MOVING FORWARD YET
+<mark>STUCK HERE trying to execute register-python-argcomplete</mark>
+
+Tried installing [argcomplete](https://pypi.org/project/argcomplete/)
+
+	python3 -m pip install argcomplete
+	python3 -m activate-global-python-argcomplete
+
+Receiving from first line:
+
+	WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+	Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+	To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+
+Second line returns error:
+
+	zsh: command not found: activate-global-python-argcomplete
+
+<mark>Does a path need to be added to the .zshrc or .bash_profile file?</mark>
+
 
 ## 2. Install 
 
