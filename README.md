@@ -53,7 +53,7 @@ Slack #epa
 
 ### Dev Areas
 
-1. Use our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/04000US13-georgia/) maintained by [OpenUp](https://openup.org.za/) - formerly Code for South Africa.<!--[Notes](resources/censusreporter)-->  
+1. Use our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) maintained by [OpenUp](https://openup.org.za/) - formerly Code for South Africa.<!--[Notes](resources/censusreporter)-->  
 
 1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
