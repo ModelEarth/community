@@ -137,6 +137,10 @@ h3 {
 .darkPanel {
     background-color: #ddd;
 }
+mark {
+  padding:4px 8px 4px 8px;
+  background-color: #ffc;
+}
 code {
   background-color: #eee;
   padding:15px;
