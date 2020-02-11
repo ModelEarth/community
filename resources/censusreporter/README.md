@@ -180,7 +180,18 @@ Gives you:
 	  --unzip-setuptools    DEPRECATED.  Retained only for backward compatibility.
 	                        This option has no effect.
 
-## 3. Install Django and wazimap (a fork of Census Reporter)
+## 3. Create a new virtualenv called yourenv in a folder:
+
+	python3 -m virtualenv yourenv -p python2.7
+
+Activate the new virtualenv:
+
+	source ~/Documents/mytest/yourenv/bin/activate
+	<!--
+	python3 -m source bin/activate
+	-->
+
+## 4. Install Django and wazimap (a fork of Census Reporter)
 
 [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)
 
@@ -204,4 +215,99 @@ Returned:
 	  WARNING: The script django-admin is installed in '/Users/helix/Library/Python/3.7/bin' which is not on PATH.
 	  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 	Successfully installed django-1.9.13
+
+
+
+virtualenv yourenv -p python3.6
+
+Yuck...
+
+	source ~/Documents/mytest/yourenv/bin/activate
+
+(for bash)
+[myenv]
+
+pip install wazimap resulted in:
+	Could not find a version that satisfies the requirement Django==2.2.6
+
+Run:
+	pip list
+
+Run: 
+	pip install --upgrade django
+
+This could be helpful:
+Installing and using virtualenv with Python 3
+[virtualenv-using-Python-3](https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-Python-s-virtualenv-using-Python-3)
+
+---
+
+Or simply try this (which will install Python 3.7.3 or latest):
+
+	python3 -m venv env
+
+This will create a subfolder called "env"
+
+Exclude your virtual environment directory from your version control system by adding "env" to .gitignore
+
+Then activate:
+
+	source env/bin/activate
+
+Upgrade pip to 20.0.2+ since lower 19.0.3 was default:
+
+	pip install --upgrade pip
+
+Installs Django 3.0.3
+
+	pip install django
+
+Bombing due to pg_config executable not found (for PostgreSQL)
+
+	pip install wazimap
+
+Did not help:
+
+	pip install psycopg2-binary
+
+Still bombing, same error. Probably need to install PostgreSQL.
+
+	Collecting psycopg2>=2.7.7
+	  Using cached psycopg2-2.8.4.tar.gz (377 kB)
+	    ERROR: Command errored out with exit status 1:
+	     command: /Users/helix/Documents/mytest2/env/bin/python3 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/setup.py'"'"'; __file__='"'"'/private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/pip-egg-info
+	         cwd: /private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/
+	    Complete output (23 lines):
+	    running egg_info
+	    creating /private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/pip-egg-info/psycopg2.egg-info
+	    writing /private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/pip-egg-info/psycopg2.egg-info/PKG-INFO
+	    writing dependency_links to /private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/pip-egg-info/psycopg2.egg-info/dependency_links.txt
+	    writing top-level names to /private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/pip-egg-info/psycopg2.egg-info/top_level.txt
+	    writing manifest file '/private/var/folders/3m/rk27x_md7r14rv8rp44gm0900000gn/T/pip-install-ha24o1pr/psycopg2/pip-egg-info/psycopg2.egg-info/SOURCES.txt'
+	    
+	    Error: pg_config executable not found.
+	    
+	    pg_config is required to build psycopg2 from source.  Please add the directory
+	    containing pg_config to the $PATH or specify the full executable path with the
+	    option:
+	    
+	        python setup.py build_ext --pg-config /path/to/pg_config build ...
+	    
+	    or with the pg_config option in 'setup.cfg'.
+	    
+	    If you prefer to avoid building psycopg2 from source, please install the PyPI
+	    'psycopg2-binary' package instead.
+	    
+	    For further information please check the 'doc/src/install.rst' file (also at
+	    <http://initd.org/psycopg/docs/install.html>).
+	    
+	    ----------------------------------------
+	ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+
+
+Older version. You'll need to be in a cloned folder for this to work.
+Might not need this if using "pip install wazimap" above.
+
+	pip install -r requirements.txt
+
 
