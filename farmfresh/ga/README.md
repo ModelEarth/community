@@ -10,6 +10,12 @@ Download with a command. 8791 rows for US.
 
 curl -o farmersmarket.csv https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx
 
+
+Here's a link for "On Farm Markets." The parameter is not correct.
+https://search.ams.usda.gov/onfarmmarkets/ExcelExport.aspx?State=Georgia
+Also tried gs_State. We can filter after downloading.  Source:
+https://www.ams.usda.gov/local-food-directories/onfarm
+
 ----
 
 Data/farmfresh.csx is a backup made Aug 9, 2019 from the [Google Sheet Aglanta-Data - Combined](https://docs.google.com/spreadsheets/d/1GptBaQgTj1eHvy2xDbZLMSL9_T1f0JRSRPXvCCiP29c/edit#gid=2091880345) which was merged from Fed data in 2018.  
