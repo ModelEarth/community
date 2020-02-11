@@ -2,6 +2,8 @@
 
 Based on the [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)  
 
+Skip first 4 steps and go to **Alternative: python3 -m venv env** below.  
+
 ## 1. Install or upgrade pipx for virtualenv with Python 3
 
 [Installation via pipx](https://virtualenv.readthedocs.io/en/latest/installation.html) - If you already have a Python 3.5+ interpreter the best is to use pipx to install virtualenv into an isolated environment. This has the added benefit that later you’ll be able to upgrade virtualenv without affecting other parts of the system.  
@@ -195,6 +197,7 @@ Activate the new virtualenv:
 
 [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)
 
+<mark>Later causes "pip install wazimap" to result in: Could not find a version that satisfies the requirement Django==2.2.6</mark>
 
 	pip install 'django<1.10'
 
@@ -242,6 +245,8 @@ Installing and using virtualenv with Python 3
 
 ---
 
+# Alternative: python3 -m venv env
+
 Or simply try this (which will install Python 3.7.3 or latest):
 
 	python3 -m venv env
@@ -261,6 +266,9 @@ Upgrade pip to 20.0.2+ since lower 19.0.3 was default:
 Installs Django 3.0.3
 
 	pip install django
+	django-admin startproject wazimap_ex
+	cd wazimap_ex
+	rm wazimap_ex/urls.py wazimap_ex/wsgi.py
 
 Bombing due to pg_config executable not found (for PostgreSQL)
 
