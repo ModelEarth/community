@@ -51,37 +51,36 @@ Slack #epa
 
 ### Dev Areas
 
-1. [Data visualizations](samples/dataset/) using [csv file](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [exported from USEEIO API](resources/useeio/) with this [Python](resources/useeio/python/produceUSEEIOimpactcsv.py). 
+1. [Data visualizations](samples/dataset/) displayed from [static csv files](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [exported from the USEEIO API](resources/useeio/) with [Python scripts](resources/useeio/python/produceUSEEIOimpactcsv.py). 
 
 1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
-1. Preprocess using [programmable uszipcode database ](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
+1. Preprocess data using the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
 1. Add D3 heatmap colors by row to USEEIO data on [Goods & Services Report](samples/dataset) - [sortable version](samples/dataset/sortable.html).
 
+1. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
+
+1. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
+
 1. Use [PWA Starter](resources/pwa) to add an index.htmml page and thumbnails to the pwa folder.
 
 1. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
 
-1. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).
+1. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/) below [Census Reporter map](https://censusreporter.org/profiles/86000US30313-30313/).
 
 1. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
-1. Highlight <a href="../community/tools/#data">Smart & Mobile Communities</a> on Leaflet map. 
-Update Smart Georgia <a href="samples/routing/">driving tour routes</a>.
+1. Highlight <a href="../community/tools/#data">Smart & Sustainable Communities</a> on Leaflet map. 
+Document Georgia Technology <a href="samples/routing/">driving tour routes</a>.
 
 1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
-1. Cross-relate industries to [Exports via Harmonized System (HS Codes)](https://georgiadata.github.io/display/products/) 
+1. Cross-relate Goods & Services NAICS industries with Harmonized System (HS Codes) for [International Trade](https://georgiadata.github.io/display/products/) 
 
-1. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
-
-1. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
-
-1. Cross-relate NAICS industries and HS Codes.  
 
 <!--
 International postal codes
