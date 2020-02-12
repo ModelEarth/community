@@ -1,23 +1,24 @@
-# Biosolid Fertilizer for Forestry
+# Forests Fertilized with Biosolids
 
-Sewage Sludge (called biosolid) is an excellent fertilizer for forests and other bioproducts grown independent of the food chain.    
+Biosolid waste (aka sewage sludge) is an excellent fertilizer for forests and other bioproducts grown independent of the food chain.  
 
-We're seeking creative ways to encourage restaurants and grocery stores to stop selling food fertilized with biomass (sewage sludge). Let's get everyone to think before they rinse chemicals and medicine down the drain.  
+Some restaurants and grocery stores sell food fertilized with municiple biosolids. 
 
 "Sludge contains pharmaceuticals, hormones, pathogens, <!--bacteria, viruses, protozoa and parasitic worms, as well as--> heavy metals like lead, cadmium, arsenic or mercury. It often includes PCBs, PFAS (forever chemicals), dioxins, BPAs and dozens of other harmful substances ranging from flame retardants to hospital waste. In 2019, about 60% of sewage sludge produced by treatment facilities will be spread on farmland and gardens, as well as schoolyards and lawns." [source](https://www.theguardian.com/environment/2019/oct/05/biosolids-toxic-chemicals-pollution)
 
+Let's get everyone to think before they rinse chemicals and medicine down the drain.  
+
 <!--According to the EPA, "About 50% of all biosolids are being recycled to land. These biosolids are used on less than one percent of the nation's agricultural land." [source](https://www.epa.gov/biosolids/frequent-questions-about-biosolids) --><!-- 8) What percentage of biosolids are recycled and how many farms use biosolids? -->
 
-## The Good Guys
+## Keeping Biosolids out of the Food Chain
 
-Kudos to these companies strictly prohibit the application of sewage sludge and biosolids as fertilizers:  Del Monte, H.J. Heinz, Dole, Whole Foods. Switzerland and the Netherlands.
+Kudos to these companies that strictly prohibit the application of sewage sludge and biosolids as fertilizers:  
 
-Sewage sludge is not allowed on “certified organic” USDA Certified Organic farms.  
+Del Monte, H.J. Heinz, Dole, Whole Foods. Switzerland and the Netherlands.
 
+Sewage sludge is not allowed on USDA Certified Organic farms.  
 
-## Shame
-
-The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.
+Buyer Beware: The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.
 
 
 
