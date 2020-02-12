@@ -319,3 +319,4 @@ Might not need this if using "pip install wazimap" above.
 	pip install -r requirements.txt
 
 
+[Wazimap Census Reporter]( https://github.com/modelearth/wazimap) is maintained by [OpenUp](https://openup.org.za/), formerly Code for South Africa. 
