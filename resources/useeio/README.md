@@ -98,7 +98,7 @@ file_name = 'useeio_sectors_final_perspective.csv'
 result2_df.to_csv(file_name, sep=',', encoding='utf-8')  
 ```
 
-Enhancements have been made to the export above.  [View new script](../../python/produceUSEEIOimpactcsv.txt) and [resulting CSV file](../../samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
+Enhancements have been made to the export above.  [View new script](python/produceUSEEIOimpactcsv.txt) and [resulting CSV file](../../samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
 
 
 Additional updates requested:  
@@ -117,7 +117,7 @@ See [Goods and Services example](../../samples/dataset/) which loads a formatted
 <!--
 ## Deeper Dive
 
-Using <a href="https://github.com/USEPA/USEEIO_API/tree/master/python">Python</a> and <a href="https://github.com/USEPA/USEEIO_API/tree/master/go">GO</a> to extend and compile the USEEIO API.
+Using <a href="python">Python</a> and <a href="https://github.com/USEPA/USEEIO_API/tree/master/go">GO</a> to extend and compile the USEEIO API.
 
 <br>
 -->

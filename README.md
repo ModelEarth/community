@@ -14,9 +14,7 @@ Slack #epa
 <b>2. GitHub</b>: Experiment with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats)  
   Is it possible to pull just the [community](https://github.com/datascape/community) "tools" folder into [model.georgia](https://github.com/datascape/model.georgia) repo?   
 
-<b>3. Leaflet</b>: [Place a round image](https://github.com/ilyankou/Leaflet.IconMaterial/issues/3) over a [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) map point, which allows for color assignment. [Test here](/community/hubs).  
-
-<b>4. D3.js</b>: [Create charts](samples/dataset/) using [new csv file](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [which Wes exported from API](resources/useeio/) with this [Python](python/produceUSEEIOimpactcsv.py).  
+<b>3. Leaflet</b>: [Place a round image](https://github.com/ilyankou/Leaflet.IconMaterial/issues/3) over a [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) map point, which allows for color assignment. [Test here](/community/hubs).   
 -->
 
 
@@ -53,7 +51,9 @@ Slack #epa
 
 ### Dev Areas
 
-1. Use our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) maintained by [OpenUp](https://openup.org.za/) - formerly Code for South Africa. [Install Notes](resources/censusreporter)  
+1. [Data visualizations](samples/dataset/) using [csv file](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [exported from USEEIO API](resources/useeio/) with this [Python](resources/useeio/python/produceUSEEIOimpactcsv.py). 
+
+1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
 1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
