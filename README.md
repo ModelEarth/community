@@ -55,18 +55,17 @@ Slack #epa
 
 1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
-1. Update CSV files on employment and industries using [Census industry data](industries) and [uszipcode](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [github](https://github.com/MacHu-GWU/uszipcode-project).  
+1. Preprocess using [programmable uszipcode database ](https://uszipcode.readthedocs.io/01-Tutorial/index.html) [github](https://github.com/MacHu-GWU/uszipcode-project).  
 
-1. Python and SQLite script to pre-process data for D3 charts. 
-Data includes [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
+1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
-1. Add D3 heatmap colors to USEEIO data on [Goods & Services Report](samples/dataset).
+1. Add D3 heatmap colors by row to USEEIO data on [Goods & Services Report](samples/dataset) - [sortable version](samples/dataset/sortable.html).
 
-1. [Progressive Web Apps](resources/pwa) - use the PWA Starter to add an index.htmml page to the pwa folder.
+1. Use [PWA Starter](resources/pwa) to add an index.htmml page and thumbnails to the pwa folder.
 
 1. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
 
-1. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).  
+1. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/).
 
 1. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
