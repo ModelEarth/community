@@ -1,14 +1,12 @@
-# Restaurants - Sewage Sludge
+# Biosolid Fertilizer for Forestry
 
-We're seeking creative ways to encourage restaurants and grocery stores to stop selling food fertilized with sewage sludge. Let's get everyone to think before they rinse chemicals and medicine down the drain.  
+Sewage Sludge (called biosolid) is an excellent fertilizer for forests and other bioproducts grown independent of the food chain.    
 
-## Biosolid Fertilizer
-
-Sewage Sludge (called biosolid) is an excellent fertilizer for forests, not foods.  
+We're seeking creative ways to encourage restaurants and grocery stores to stop selling food fertilized with biomass (sewage sludge). Let's get everyone to think before they rinse chemicals and medicine down the drain.  
 
 "Sludge contains pharmaceuticals, hormones, pathogens, <!--bacteria, viruses, protozoa and parasitic worms, as well as--> heavy metals like lead, cadmium, arsenic or mercury. It often includes PCBs, PFAS (forever chemicals), dioxins, BPAs and dozens of other harmful substances ranging from flame retardants to hospital waste. In 2019, about 60% of sewage sludge produced by treatment facilities will be spread on farmland and gardens, as well as schoolyards and lawns." [source](https://www.theguardian.com/environment/2019/oct/05/biosolids-toxic-chemicals-pollution)
 
-According to the EPA, "About 50% of all biosolids are being recycled to land. These biosolids are used on less than one percent of the nation's agricultural land." [source](https://www.epa.gov/biosolids/frequent-questions-about-biosolids) <!-- 8) What percentage of biosolids are recycled and how many farms use biosolids? -->
+<!--According to the EPA, "About 50% of all biosolids are being recycled to land. These biosolids are used on less than one percent of the nation's agricultural land." [source](https://www.epa.gov/biosolids/frequent-questions-about-biosolids) --><!-- 8) What percentage of biosolids are recycled and how many farms use biosolids? -->
 
 ## The Good Guys
 
