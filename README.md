@@ -55,7 +55,7 @@ Slack #epa
 
 1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
-1. Preprocess using [programmable uszipcode database ](https://uszipcode.readthedocs.io/01-Tutorial/index.html) [github](https://github.com/MacHu-GWU/uszipcode-project).  
+1. Preprocess using [programmable uszipcode database ](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
@@ -134,7 +134,8 @@ http://www.srsa.org/
 
 ## Team Projects
 
-<a href="https://poloclub.github.io/#cse6242">Georgia Tech project teams</a> will have an opportunity to contribute new data visualizations.  
+<a href="https://poloclub.github.io/#cse6242">Georgia Tech Data and Visual Analytics</a>  
+Data science students are contributing new data visualizations during Spring 2020 coursework.  
 
 
 
