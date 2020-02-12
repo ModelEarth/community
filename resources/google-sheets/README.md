@@ -1,7 +1,10 @@
 
 ## Crowdsourcing with Google Sheets
 
-[Crowdsource Editor with Google Sheets](https://github.com/modelearth/crowdsource) - Under development   
+[Crowdsource Editor with Google Sheets](https://github.com/modelearth/crowdsource) - Under development  
+
+These [Real World Frontends](https://github.com/gothinkster/realworld) all use the same CRUD syntax to interact with multiple backends.
+ 
 
 ## Google Sheets - RUST and Python
 
