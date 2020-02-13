@@ -316,3 +316,13 @@ Installing and using virtualenv with Python 3
 [virtualenv-using-Python-3](https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-Python-s-virtualenv-using-Python-3)
 
 ---
+
+Older version. You'll need to be in a cloned folder for this to work.
+Might not need this if using "pip install wazimap" above.
+
+	pip install -r requirements.txt
+
+Learn more about creating a requirements.txt file:
+
+https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command
+
