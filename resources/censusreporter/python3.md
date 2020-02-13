@@ -85,10 +85,15 @@ Source: [pipx project](https://pipxproject.github.io/pipx/installation/)
 	python3 -m pip install --user pipx
 	python3 -m pipx ensurepath
 
+Or try with python3 as your default
+
+	python -m pip install --user pipx
+	python -m pipx ensurepath
+
 Or upgrade
 
 	python3 -m pip install -U pipx
-
+	
 
 NOTES:
 
@@ -153,6 +158,11 @@ Still occurred after restarting Mac.
 Tried:
 
 	python3 -m eval "$(register-python-argcomplete pipx)"
+
+Try (from Nathan Dwarshuis):
+	autoload -U bashcompinit && bashcompinit
+	eval "$(register-python-argcomplete pipx)"
+
 
 Returned:
 
