@@ -1,8 +1,8 @@
 
 # Python3 and Django
 
-[Recommended Python3 Configuration for Mac](python3.html)  
-Install a user copy of Python3 using bash, and change the default from Python2 to Python3.   
+[First, make Python3 default for Mac](python3.html) - includes <b>virtualenv</b> attempts.    
+- Install a user copy of Python3 using bash, then change the default from Python2 to Python3.   
 
 
 ## Wazimap Census Reporter (Setup)
