@@ -73,6 +73,8 @@ You'll need to have PostgreSQL installed first above.
 
 Results with successfully installed Django-2.2.6
 
+See [Step 6](https://wazimap.readthedocs.io/en/latest/started.html) about how to change your settings.py file.
+
 
 When you're done with the virtual environment
 
