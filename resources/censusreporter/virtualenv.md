@@ -1,60 +1,17 @@
-## To get virtualenv working
-
-Install python3 using brew so it resides in /usr/local/bin/python3
-
-Then uninstall and reinstall virtualenv
-
-
-Did this even though python3 was already installed.
-https://dev.to/irfnhm/how-to-set-python3-as-a-default-python-version-on-mac-4jjf
-
-	brew install python
-
-Places it here: /usr/local/bin/python3
-
-	Python has been installed as
-	  /usr/local/bin/python3
-
-	Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
-	`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
-	  /usr/local/opt/python/libexec/bin
-
-	You can install Python packages with
-	  pip3 install <package>
-	They will install into the site-package directory
-	  /usr/local/lib/python3.7/site-packages
-
-	See: https://docs.brew.sh/Homebrew-and-Python
-
-
-Ran the following ()
-	ln -s -f /usr/local/bin/python3.7 /usr/local/bin/python
-
-
-Edit again your .bashrc (or .zshrc) and add these lines:
-
-	export WORKON_HOME=~/.virtualenvs
-	[ -f /usr/local/bin/virtualenvwrapper.sh ] && source /usr/local/bin/virtualenvwrapper.sh
-
-This will configure the default location where to store your virtual environments and will run a command every time you open a new terminal, to make sure virtualenvwrapper can work correctly. Source: https://www.andreagrandi.it/2018/12/19/installing-python-and-virtualenv-on-osx/
-
-Unistalled and reinstalled virtualenv
-https://stackoverflow.com/questions/38951927/how-do-i-fix-virtualenv-install
-
-	sudo pip uninstall virtualenv
-
-Reinstalled:
-
-	sudo pip install virtualenv
-
+# virtualenv
 
 ## Fire up a virtual environment
+
+[run venv](./) or virtualenv:
+
+If you encounter issues initially running virtualenv, see [virtualenv troubleshooting](virtualenv-troubleshooting.html).
 
 	cd ~/Documents
 	mkdir mytest4
 	cd mytest4
 
-Create a new virtualenv - had to run the first line twice to generate usr/local/bin folder.  (Why not just bin?):
+Create a new virtualenv  
+<!-- had to run the first line twice to generate usr/local/bin folder.  (Why not just bin?)-->
 
 	virtualenv yourenv -p python3.7
 	source yourenv/usr/local/bin/activate
@@ -72,15 +29,31 @@ Might need to add back (removed tab if adding back)
 
 
 
-# Ignore the Rest
-
-Have not reviewed if this is still needed
-
 ## 1. Install or upgrade pipx for virtualenv with Python 3
 
 [Installation via pipx](https://virtualenv.readthedocs.io/en/latest/installation.html) - If you already have a Python 3.5+ interpreter the best is to use pipx to install virtualenv into an isolated environment. This has the added benefit that later you’ll be able to upgrade virtualenv without affecting other parts of the system.  
 
-Source: [pipx project](https://pipxproject.github.io/pipx/installation/)
+Source: [pipx install](https://pypi.org/project/pipx/)
+
+	brew install pipx
+	pipx ensurepath
+
+Returns
+
+	The directory `/Users/helix/.local/bin` is already in PATH. If you are sure you want to proceed, try again with the '--force' flag.
+
+	Otherwise pipx is ready to go! ✨ 🌟 ✨
+
+Which is the same path already defined in .zprofile
+
+	# Created by `userpath` on 2020-02-11 15:35:16
+	export PATH="$PATH:/Users/helix/.local/bin"
+
+Upgrade pipx with brew update && brew upgrade pipx.
+
+
+<!-- Without using Brew (this did not work, even with python instead of python3)
+	[pipx project](https://pipxproject.github.io/pipx/installation/)
 
 	python3 -m pip install --user pipx
 	python3 -m pipx ensurepath
@@ -94,8 +67,7 @@ Or upgrade
 
 	python3 -m pip install -U pipx
 	
-
-NOTES:
+	NOTES:
 
 Occurred first time, but not when running twice in a row:
 
@@ -115,6 +87,11 @@ Running "pipx completions" returned:
 Instead ran:
 
 	python3 -m pipx completions
+-->
+
+Shell completions are available by following the instructions printed with this command
+
+	pipx completions
 
 Received:
 
@@ -143,7 +120,8 @@ Received:
 	    register-python-argcomplete --shell fish pipx | .
 
 
-**My notes:**
+<!-- evan works now! 
+**Old notes:**
 
 This step:
 
@@ -194,7 +172,7 @@ Second line returns error:
 	zsh: command not found: activate-global-python-argcomplete
 
 <mark>Does a path need to be added to the .zshrc or .bash_profile file?</mark>
-
+-->
 
 ## 2. Install virtualenv
 
@@ -203,7 +181,8 @@ https://virtualenv.readthedocs.io/en/latest/installation.html
 	pipx install virtualenv
 	virtualenv --help
 
-Like this instead:
+<!--
+Previously:
 
 	python3 -m pipx install virtualenv
 
@@ -217,8 +196,10 @@ Success!
 	helix@dwilson-pc ~ % 
 
 Show help for virtualenv:
+python3 -m virtualenv --help
+-->
 
-	python3 -m virtualenv --help
+	python virtualenv --help
 
 Gives you:
 
@@ -266,7 +247,16 @@ Gives you:
 
 ## 3. Create a new virtualenv called yourenv in a folder:
 
+When your machine has Python3 as default, you can [run venv](./).  
+https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+
+	python -m venv env
+
+	<!--
 	python3 -m virtualenv yourenv -p python2.7
+	-->
+
+	python -m virtualenv yourenv -p python2.7
 
 Activate the new virtualenv:
 
