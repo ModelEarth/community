@@ -89,8 +89,7 @@ Other stuff
 
 	python -m venv -h
 
-More here:
-https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command
+More here: [Venv command (pythonise.com)](https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command)
 
 
 [Wazimap Census Reporter]( https://github.com/modelearth/wazimap) is maintained by [OpenUp](https://openup.org.za/), formerly Code for South Africa. 
