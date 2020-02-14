@@ -5,7 +5,7 @@
 - Install a user copy of Python3 using bash, then change your default from Python2 to Python3.   
 
 
-You may want to use [virtualenv](virtualenv.html) - Might be needed with Python 2 virtual environment.    
+You may want to use [virtualenv](virtualenv.html) - option for use with Python 2 virtual environment.     
 
 ## Wazimap Census Reporter (Setup)
 
