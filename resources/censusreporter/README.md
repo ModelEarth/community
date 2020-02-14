@@ -1,9 +1,11 @@
 
-# Python3 and Django
+# Venv and Django with Postgres
 
-[First, make Python3 default for Mac](python3.html) - includes <b>virtualenv</b> attempts.    
-- Install a user copy of Python3 using bash, then change the default from Python2 to Python3.   
+[First, make Python3 default for Mac](virtualenv-troubleshooting.html)     
+- Install a user copy of Python3 using bash, then change your default from Python2 to Python3.   
 
+
+You may want to use [virtualenv](virtualenv.html) - Might be needed with Python 2 virtual environment.    
 
 ## Wazimap Census Reporter (Setup)
 
@@ -14,14 +16,16 @@ Install postgres before you enter a virtual environment
 
 	brew install postgres
 
-If it needs to be launched...
+Optional, if you need postgresql to be launched on login:
 
 	To have launchd start postgresql now and restart at login:
 	  brew services start postgresql
 	Or, if you don't want/need a background service you can just run:
 	  pg_ctl -D /usr/local/var/postgres start
 
-## Using venv (Alternative to virtualenv)
+## Using venv
+
+Also: Additional notes on [virtualenv]()
 
 This will install Python 3.7.3 (or latest) and create a subfolder called "env"  
 If your default is still python 2, then type python3 here instead.  
@@ -31,7 +35,7 @@ If your default is still python 2, then type python3 here instead.
 
 Or if your are already in the folder where you're creating your environment...
 
-	python3 -m venv env1
+	python -m venv env1
 
 Exclude your virtual environment directory from your version control system by adding "env" to .gitignore
 
