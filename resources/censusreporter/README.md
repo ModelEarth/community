@@ -25,11 +25,9 @@ Optional, if you need postgresql to be launched on login:
 
 ## Using venv
 
-Also: Additional notes on [virtualenv]()
-
-This will install Python 3.7.3 (or latest) and create a subfolder called "env"  
-If your default is still python 2, then type python3 here instead.  
+This will install Python 3.7.3 (or latest) and create a subfolder called "env"   
 --prompt is optional for showing a name before your terminal prompt.  
+If your default is still python 2, then start commands with python3.  
 
 	python -m venv ~/Documents/env1 --prompt MYTEST
 
@@ -85,7 +83,7 @@ When you're done with the virtual environment
 	deactivate
 
 
-Other stuff
+To see the full range of options, run the following command:  
 
 	python -m venv -h
 
