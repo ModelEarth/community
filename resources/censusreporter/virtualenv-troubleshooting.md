@@ -52,4 +52,6 @@ Reinstalled:
 	sudo pip install virtualenv
 
 
+If troubles persist, try using this [.zshrc file](https://github.com/ndwarshuis/dotfiles/tree/master/.config/zsh). Start a new terminal session after changing the file. Post an issue to let us know if the different .zshrc file resolves the problem.  
+
 [run venv](./) or [virtualenv](virtualenv.html)
