@@ -24,16 +24,13 @@ Landfill disposal and out-of-state shipping (5% to 27%)
 
 ## Keeping Biosolids out of the Food Chain
 
-Kudos to these companies that strictly prohibit the application of sewage sludge and biosolids as fertilizers:  
+Kudos to these companies that strictly prohibit the application of sewage sludge as fertilizers:  
 
 Del Monte, H.J. Heinz, Dole, Whole Foods. Switzerland and the Netherlands.
 
 Sewage sludge is not allowed on USDA Certified Organic farms.  
 
-Buyer Beware: The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.
-
-
-
+Buyer Beware: The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.  
 
 
 
