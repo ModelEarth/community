@@ -2,7 +2,10 @@
 
 Biosolid waste (aka sewage sludge) is an excellent fertilizer for forests and other bioproducts grown independent of the food chain.  
 
-Some restaurants and grocery stores sell food fertilized with municiple biosolids. 
+[Application of Composted Pulp and Paper Mill Sludge to a Young Pine Plantation (2000)](https://www.researchgate.net/publication/250107324_Application_of_Composted_Pulp_and_Paper_Mill_Sludge_to_a_Young_Pine_Plantation)  
+"One year after application of compost, the percentage increase in stem diameter was 40 to 66% greater than that achieved in untreated plots, with better growth at the highest compost application rate."
+
+Some restaurants and grocery stores sell food fertilized with municipal biosolids. 
 
 "Sludge contains pharmaceuticals, hormones, pathogens, <!--bacteria, viruses, protozoa and parasitic worms, as well as--> heavy metals like lead, cadmium, arsenic or mercury. It often includes PCBs, PFAS (forever chemicals), dioxins, BPAs and dozens of other harmful substances ranging from flame retardants to hospital waste. In 2019, about 60% of sewage sludge produced by treatment facilities will be spread on farmland and gardens, as well as schoolyards and lawns." [source](https://www.theguardian.com/environment/2019/oct/05/biosolids-toxic-chemicals-pollution)
 
