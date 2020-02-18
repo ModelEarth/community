@@ -8,7 +8,19 @@ Some restaurants and grocery stores sell food fertilized with municiple biosolid
 
 Let's get everyone to think before they rinse chemicals and medicine down the drain.  
 
-<!--According to the EPA, "About 50% of all biosolids are being recycled to land. These biosolids are used on less than one percent of the nation's agricultural land." [source](https://www.epa.gov/biosolids/frequent-questions-about-biosolids) --><!-- 8) What percentage of biosolids are recycled and how many farms use biosolids? -->
+According to the EPA, "About 50% of all biosolids are being recycled to land. These biosolids are used on less than one percent of the nation's agricultural land." [source](https://www.epa.gov/biosolids/frequent-questions-about-biosolids)  
+
+
+<!-- 8) What percentage of biosolids are recycled and how many farms use biosolids? -->
+
+Based on [stats for Maryland](https://extension.umd.edu/sites/extension.umd.edu/files/_docs/programs/woodland-steward/Ch17Kays.pdf), municipal sewage (biosolids) were applied as follows in 1995:  
+
+Agricultural land (59%)  
+Distributed and marketed (21%)  
+Incinerated (10%)  
+Marginal land applications (5%)  
+Landfill disposal and out-of-state shipping (5% to 27%)  
+
 
 ## Keeping Biosolids out of the Food Chain
 
