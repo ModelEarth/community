@@ -31,13 +31,14 @@ If your default is still python 2, then start commands with python3.
 
 	python -m venv ~/Documents/env1 --prompt MYTEST
 
-Or if your are already in the folder where you're creating your environment...
+Or if your are already in the folder where you're creating your environment...  
+(Default directory on a mac is Users/[username].)  
 
 	python -m venv env1
 
-Exclude your virtual environment directory from your version control system by adding "env" to .gitignore
+Exclude your virtual environment directory from your version control system by adding "env1" to .gitignore
 
-Then activate. Your commands will then start with (env):
+Then activate. Your commands will then start with (env1):
 
 	source ~/Documents/env1/bin/activate
 
@@ -77,6 +78,49 @@ Results with successfully installed Django-2.2.6
 
 See [Step 6](https://wazimap.readthedocs.io/en/latest/started.html) about how to change your settings.py file.
 
+Step 7 - If "createuser -P wazimap" results in error, restart postgresql in another terminal:  
+
+	brew services restart postgresql
+
+
+<!-- superuser helix p: helix1 -->
+
+You may want to [install DBeaver](https://dbeaver.io/download/) SQL Database tools.  
+
+On Mac, first  install the latest version of Java:  
+
+	brew cask install adoptopenjdk --no-quarantine
+	brew cask install dbeaver-community
+
+<!--
+	If unable to open DBeaver app, try
+	brew cask install adoptopenjdk --no-quarantine
+
+	Source:
+	https://github.com/AdoptOpenJDK/homebrew-openjdk/issues/267
+-->
+
+DBeaver shortcuts
+
+	Run SQL script: Alt+X
+	Run only part of a SQL script: Ctrl+Enter
+	You can turn on/off the right panels: F7
+
+	You can generate SQL statements (SELECT/INSERT/UPDATE/DELETE) based on selected rows. To generate SQL, right-click the selected rows, then click Generate SQL and select one of the SQL commands you see.
+
+
+## django
+
+Trying to get site to appear at: http://localhost:8000/admin
+https://docs.djangoproject.com/en/3.0/intro/tutorial01/
+
+	django-admin startproject mysite
+	cd mysite
+	python manage.py runserver
+
+Stop dejango site
+
+	Ctrl-C
 
 When you're done with the virtual environment
 
