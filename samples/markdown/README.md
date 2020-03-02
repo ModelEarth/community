@@ -4,7 +4,7 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
 1. View pages on localhost by running in your web root:  
 
- <code>python -m http.server</code>
+ <code>python -m http.server 8887</code>
 
  Or specify a path (change /Sites to your custom path):
 
