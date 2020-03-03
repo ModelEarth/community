@@ -120,15 +120,25 @@ hr {
   margin:35px 0 40px 0;
 }
 
-
-
 h2 {
   margin-top: 30px;
 }
 h3 {
   margin-top: 20px;
 }
-
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px; 
+    font-weight: 400;
+  }
+}
+@media (max-width: 700px) {
+  .fullMobile {
+    width:100% !important;
+    max-width:100% !important;
+    margin-left:0px !important;
+  }
+}
 
 .litePanel {
     background-color: #fff;
