@@ -1,6 +1,11 @@
 
 # Venv and Django with Postgres
 
+GOAL: Since Wazimap provides a Python 3 fork of Census Reporter, we're using it to modernize Census Reporter. 
+Wazimap is used in Africa and India.  
+
+### Mac Users
+
 [First, make Python3 default for Mac](virtualenv-troubleshooting.html)     
 - Install a user copy of Python3 using bash, then change your default from Python2 to Python3.   
 
