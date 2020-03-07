@@ -31,7 +31,7 @@ Slack #epa
 
 ### Schedule  
 
-[<b>Summer 2020</b> - Georgia's Life Cycle App Ideas Challenge](https://model.georgia.org/)  
+[<b>Summer 2020</b> - Georgia's Life Cycle App Ideas Challenge](projects/)  
 
 [<b>Fall 2020</b> - Georgia Innovates Sustainable Communities Hackathon - Sept 12 & 13](https://model.georgia.org/communities/) 
 <br>
