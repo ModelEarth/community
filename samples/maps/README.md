@@ -1,6 +1,6 @@
 # Map Samples
 
-## [Smart Data Projects (map)](../../tools/#data)
+## [Smart Data Projects (hubs)](../../map/hubs/)
 <!--## [Map Points (hubs)](../../hubs/#route=us.ga_to_bs)-->
 ## [Regions & Counties (counties)](counties/counties.html)
 ## [US Income (income)](../../map/income)

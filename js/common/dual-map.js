@@ -164,7 +164,7 @@ function loadFromCSV(dataset) {
        alert("Data loading error: " + error)
   })
 }
-loadFromCSV("../tools/map.csv");
+loadFromCSV("/community/tools/map.csv");
 //loadFromCSV("breweries.csv");
 
 /////////// MAP SETTINGS ///////////
