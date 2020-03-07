@@ -1,14 +1,5 @@
 # Georgia Recycling
 
-<style>
-#boldlinks a {
-	font-size: 1.17em;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 20px;
-}
-</style>
-
 <div id="boldlinks">
 
 <a href="https://www.google.com/search?q=Recycling+near+me" target="_parent">Recycling Centers Near Me - Google</a>
