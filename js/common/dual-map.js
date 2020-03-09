@@ -121,15 +121,17 @@ function loadFromCSV(whichmap,dataset) {
       //dp.group2 = L.layerGroup();
       dp.iconName = 'star';
       dataParameters.push(dp);
-      overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+      overlays2[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
       //overlays2[dp.name] = dp.group2;
 
+      // Still causes jump
+      //overlays2["Intermodal Ports 2"] = overlays["Intermodal Ports"];
 
       //if(layerControl === false) {
       //  layerControl = L.control.layers(baseLayers, overlays).addTo(map);
       //}
       if(layerControl2 === false) {
-        layerControl2 = L.control.layers(baseLayers, overlays).addTo(map); // Push multple layers
+        layerControl2 = L.control.layers(baseLayers, overlays2).addTo(map); // Push multple layers
       } else {
         layerControl2.addOverlay(dp.group, dp.name); // Appends to existing layers
       }
@@ -156,7 +158,8 @@ function loadFromCSV(whichmap,dataset) {
       //map.removeLayer(overlays["myDataset"]); // Remove from map
 
       //map.addLayer(overlays["Intermodal Ports"]);
-      map.addLayer(overlays[dp.name]);
+
+      map.addLayer(overlays2[dp.name]);
       return map;
   })
   .catch(function(error){ 
@@ -191,7 +194,7 @@ var baseLayers2 = {
 };
 
 var overlays = {};
-//var overlays2 = {};
+var overlays2 = {};
 dataParameters.forEach(function(ele) {
   overlays[ele.name] = ele.group; // Add to layer menu
   //overlays2[ele.name] = ele.group; // Add to layer menu
@@ -210,6 +213,10 @@ function populateMap(whichMap, dp) {
     }).addTo(map);
 
     overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+
+    // Adds checkbox, but unselects other map on page
+    //overlays2[dp.name] = dp.group;
+
 
     /*
     if(layerControl === false) {
@@ -256,6 +263,7 @@ function populateMap(whichMap, dp) {
 
     
     map.addLayer(overlays[dp.name]);
+
     return map;
 }
 
