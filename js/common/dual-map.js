@@ -4,14 +4,19 @@
 
 var mbAttrX = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
     '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
 var mbAttr = '',
     mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
 
 var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
     satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
     streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+
+// Duplicate for map independence
+var grayscale2 = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+    satellite2 = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
+    streets2 = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+
 
 //var layerGroups = {};
 var dataParameters = []; 
@@ -78,33 +83,18 @@ addIcons(dp);
 addLegend(dp.scale, dp.scaleType, dp.name);
 */
 
-// INTERMODAL PORTS
-dp = {
-  selector: "aside.Intermodal_Ports",
-  delimiter: ",",
-  numColumns: ["lat","lon"],
-  valueColumn: "value",
-  scaleType: "scaleOrdinal",
-  //scaleType: "scaleQuantile",
-}
-//dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
-dp.name = "Intermodal Ports"
-dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-dp.color = '#0033ff'; // Alternative to scale
-dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
 
-dp.group = L.layerGroup();
-dp.group2 = L.layerGroup();
-//dp.iconName = 'device_hub';
-dp.iconName = 'language';
-dataParameters.push(dp);
-addIcons(dp);
-//addIcons(dp);
-// Reactivate once colors differ
-//addLegend(dp.scale, dp.scaleType, dp.name);
+// INTERMODAL PORTS - was here
 
 
-function loadFromCSV(dataset) {
+function loadFromCSV(whichmap,dataset) {
+
+  var map = L.map(whichmap, {
+    center: mapCenter,
+    scrollWheelZoom: false,
+    zoom: 7
+  });
+
   // 5. Load Layers Asynchronously
   //var dataset = "../community/map/zip/basic/places.csv";
 
@@ -114,6 +104,7 @@ function loadFromCSV(dataset) {
   //var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
 
   d3.csv(dataset).then(function(data) {
+    
       dp = {
         numColumns: ["zip","lat","lon"],
         valueColumn: "name",
@@ -123,23 +114,30 @@ function loadFromCSV(dataset) {
         scaleType: "scaleOrdinal",
       }
       dp.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
+      //dp.name2 = "Intermodal Ports";
       dp.data = readCsvData(data, dp.numColumns, dp.valueColumn);
       dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
       dp.group = L.layerGroup();
-      dp.group2 = L.layerGroup();
+      //dp.group2 = L.layerGroup();
       dp.iconName = 'star';
       dataParameters.push(dp);
       overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
-      overlays2[dp.name] = dp.group2;
+      //overlays2[dp.name] = dp.group2;
 
-      if(layerControl === false) {
-        layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-      }
+
+      //if(layerControl === false) {
+      //  layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+      //}
       if(layerControl2 === false) {
-        layerControl2 = L.control.layers(baseLayers, overlays2).addTo(map2);
+        layerControl2 = L.control.layers(baseLayers, overlays).addTo(map); // Push multple layers
+      } else {
+        layerControl2.addOverlay(dp.group, dp.name); // Appends to existing layers
       }
-      layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
-      layerControl2.addOverlay(dp.group2, dp.name); // Appends to existing layers
+
+      //if(layerControl2 === false) {
+        baseLayers["Grayscale"].addTo(map); // Set the initial baselayer.
+      //}
+
       addIcons(dp);
       //addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
 
@@ -157,32 +155,19 @@ function loadFromCSV(dataset) {
       //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
       //map.removeLayer(overlays["myDataset"]); // Remove from map
 
-      map.addLayer(overlays["Intermodal Ports"]);
-      map2.addLayer(overlays2["Smart Data Projects"]);
+      //map.addLayer(overlays["Intermodal Ports"]);
+      map.addLayer(overlays[dp.name]);
+      return map;
   })
   .catch(function(error){ 
        alert("Data loading error: " + error)
   })
 }
-loadFromCSV("/community/tools/map.csv");
-//loadFromCSV("breweries.csv");
 
 /////////// MAP SETTINGS ///////////
 
 // 33.863516,-84.368775
 var mapCenter = [32.90,-83.35]; // [latitude, longitude]
-
-
-var map = L.map('map', {
-  center: mapCenter,
-  scrollWheelZoom: false,
-  zoom: 7
-});
-var map2 = L.map('map2', {
-  center: mapCenter,
-  scrollWheelZoom: false,
-  zoom: 7
-});
 
 // Add above to include overlays WITHOUT showing in legend:
 // layers: [dataParameters[0].group]
@@ -193,44 +178,91 @@ var map2 = L.map('map2', {
 // Avoid layers: [grayscale] above 
 // - two sets of tiles would be loaded when upper baseLayer is changed using radio buttons.
 
-
+// Two sets prevents one map from changing the other
 var baseLayers = {
   "Grayscale": grayscale,
   "Streets": streets,
   "Satellite": satellite
 };
+var baseLayers2 = {
+  "Grayscale": grayscale2,
+  "Streets": streets2,
+  "Satellite": satellite2
+};
 
 var overlays = {};
-var overlays2 = {};
+//var overlays2 = {};
 dataParameters.forEach(function(ele) {
   overlays[ele.name] = ele.group; // Add to layer menu
-  overlays2[ele.name] = ele.group; // Add to layer menu
+  //overlays2[ele.name] = ele.group; // Add to layer menu
 })
-if(layerControl === false) {
-  baseLayers["Streets"].addTo(map); // Set the initial baselayer.
-}
-if(layerControl2 === false) {
-  baseLayers["Grayscale"].addTo(map2); // Set the initial baselayer.
-}
-layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-layerControl2 = L.control.layers(baseLayers, overlays2).addTo(map2);
 
-  // Sample of single icon - place in addIcons function
-  // Create a semi-transparent bus icon
-  var busIcon = L.IconMaterial.icon({
-    icon: 'local_shipping',            // Name of Material icon
-    iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
-    markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
-    outlineColor: 'rgba(255,0,0,0.5)',            // Marker outline color
-    outlineWidth: 1,                   // Marker outline width 
-  })
-  
-  // Attach the icon to the marker and add to the map
-  //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
-  
-  // Set .my-div-icon styles in CSS
-  //var myIcon = L.divIcon({className: 'my-div-icon'});
-  //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
+function populateMap(whichMap, dp) {
+
+    var map = L.map(whichMap, {
+      center: mapCenter,
+      scrollWheelZoom: false,
+      zoom: 7,
+      zoomControl: false
+    });
+    L.control.zoom({
+        position: 'bottomright'
+    }).addTo(map);
+
+    overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+
+    /*
+    if(layerControl === false) {
+      baseLayers["Streets"].addTo(map); // Set the initial baselayer.
+
+      //layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+
+    }
+    */
+
+    if(layerControl === false) {
+      layerControl = L.control.layers(baseLayers2, overlays).addTo(map); // Push multple layers
+    } else {
+      layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
+    }
+    baseLayers2["Satellite"].addTo(map);
+
+
+      //layerControl2.addOverlay(dp.group, dp.name); // Appends to existing layers
+      //L.control.layers(baseLayers, overlays).addTo(map);
+
+
+
+    
+    //layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+    //layerControl2 = L.control.layers(baseLayers, overlays2).addTo(map2);
+
+      // Sample of single icon - place in addIcons function
+      // Create a semi-transparent bus icon
+      var busIcon = L.IconMaterial.icon({
+        icon: 'local_shipping',            // Name of Material icon
+        iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
+        markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
+        outlineColor: 'rgba(255,0,0,0.5)',            // Marker outline color
+        outlineWidth: 1,                   // Marker outline width 
+      })
+      
+      // Attach the icon to the marker and add to the map
+      //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
+      
+      // Set .my-div-icon styles in CSS
+      //var myIcon = L.divIcon({className: 'my-div-icon'});
+      //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
+
+    
+    map.addLayer(overlays[dp.name]);
+    return map;
+}
+
+
+
+
+
 
 
 /////////////////////////////////////////
@@ -307,7 +339,7 @@ function addIcons(dp) {
     // Attach the icon to the marker and add to the map
     //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
     circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group);
-    circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group2);
+    //circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group2);
 
     var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>";
     if (element.phone || element.phone_afterhours) {
@@ -327,7 +359,7 @@ function addIcons(dp) {
         output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
     }
     circle.bindPopup(output);
-    circle2.bindPopup(output);
+    //circle2.bindPopup(output);
   });
 }
 
@@ -553,7 +585,4 @@ $(window).scroll(function() {
     $('.mapHolderInner').removeClass('mapHolderFixed');
     mapFixed = false;
   }
-
-   
-
 });
