@@ -5,6 +5,9 @@
 
 ### Sankey Charts
 
+[4 Interactive Sankey diagrams made in Python with Plotly.js](https://medium.com/plotly/4-interactive-sankey-diagram-made-in-python-3057b9ee8616)
+
+[sankey-diagrams.com](http://www.sankey-diagrams.com/)  
 
 [D3.js Material Flow Sample](../../tools/#charts) - [Inflow-Outflow Sample](../../projects/#forestry)  
 [D3.js Sankey Diagram](https://observablehq.com/@dralla666/d3-sankey-diagram) - 
