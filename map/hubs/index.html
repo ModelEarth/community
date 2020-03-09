@@ -14,6 +14,9 @@
 <!--
 Activate to include site navigation
 <script type="text/javascript" src="../../js/common/navigation.js"></script>
+
+How to support multiple Leaflet maps on the same page? (lodash, not currently using this approach.)
+https://groups.google.com/forum/#!topic/leaflet-js/5HBcdTgCuVA
 -->
 
 
@@ -199,8 +202,12 @@ A six county coalition focused on the production of sustainable fuels and chemic
     addLegend(dp.scale, dp.scaleType, dp.name);
     var map1 = populateMap('map', dp);
 
+    // Test
+    //var mapX = loadFromCSV('map', "/community/tools/map.csv");
+
     // DATA-DRIVEN
     var map2 = loadFromCSV('map2', "/community/tools/map.csv");
+    //var map2 = populateMap('map2', dp);
   </script>
 </body>
 

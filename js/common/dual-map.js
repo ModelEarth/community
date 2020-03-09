@@ -17,12 +17,9 @@ var grayscale2 = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
     satellite2 = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
     streets2 = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
 
-
-//var layerGroups = {};
 var dataParameters = []; 
 var dp = {};
-var layerControl = false;
-var layerControl2 = false;
+var layerControl = {}; // Object containing one control for each map on page.
 
 //////////////////////////////////////////////////////////////////
 // Usage:
@@ -86,14 +83,26 @@ addLegend(dp.scale, dp.scaleType, dp.name);
 
 // INTERMODAL PORTS - was here
 
+// Recall existing map https://github.com/Leaflet/Leaflet/issues/6298
+// https://plnkr.co/edit/iCgbRjW4aymAjoVoicZQ?p=preview&preview
+L.Map.addInitHook(function () {
+  // Store a reference of the Leaflet map object on the map container,
+  // so that it could be retrieved from DOM selection.
+  // https://leafletjs.com/reference-1.3.4.html#map-getcontainer
+  this.getContainer()._leaflet_map = this;
+});
 
 function loadFromCSV(whichmap,dataset) {
 
-  var map = L.map(whichmap, {
-    center: mapCenter,
-    scrollWheelZoom: false,
-    zoom: 7
-  });
+  let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
+  var container = L.DomUtil.get(map);
+  if(container == null) { // Initialize map
+    map = L.map(whichmap, {
+      center: mapCenter,
+      scrollWheelZoom: false,
+      zoom: 7
+    });
+  }
 
   // 5. Load Layers Asynchronously
   //var dataset = "../community/map/zip/basic/places.csv";
@@ -127,16 +136,16 @@ function loadFromCSV(whichmap,dataset) {
       // Still causes jump
       //overlays2["Intermodal Ports 2"] = overlays["Intermodal Ports"];
 
-      //if(layerControl === false) {
-      //  layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+      //if(layerControl[whichmap] == undefined) {
+      //  layerControl[whichmap] = L.control.layers(baseLayers, overlays).addTo(map);
       //}
-      if(layerControl2 === false) {
-        layerControl2 = L.control.layers(baseLayers, overlays2).addTo(map); // Push multple layers
+      if(layerControl[whichmap] == undefined) {
+        layerControl[whichmap] = L.control.layers(baseLayers, overlays2).addTo(map); // Push multple layers
       } else {
-        layerControl2.addOverlay(dp.group, dp.name); // Appends to existing layers
+        layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
       }
 
-      //if(layerControl2 === false) {
+      //if(layerControl[whichmap] == undefined) {
         baseLayers["Grayscale"].addTo(map); // Set the initial baselayer.
       //}
 
@@ -150,11 +159,11 @@ function loadFromCSV(whichmap,dataset) {
       console.log(dataParameters);
 
       // Remove from control and background.
-      //layerControl.removeLayer(grayscale);
+      //layerControl[whichmap].removeLayer(grayscale);
       //map.removeLayer(grayscale);
 
       
-      //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
+      //layerControl[whichmap].removeLayer(overlays["myDataset"]); // Remove from control 
       //map.removeLayer(overlays["myDataset"]); // Remove from map
 
       //map.addLayer(overlays["Intermodal Ports"]);
@@ -200,9 +209,9 @@ dataParameters.forEach(function(ele) {
   //overlays2[ele.name] = ele.group; // Add to layer menu
 })
 
-function populateMap(whichMap, dp) {
+function populateMap(whichmap, dp) {
 
-    var map = L.map(whichMap, {
+    var map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
       zoom: 7,
@@ -219,30 +228,21 @@ function populateMap(whichMap, dp) {
 
 
     /*
-    if(layerControl === false) {
+    if(layerControl[whichmap] == undefined) {
       baseLayers["Streets"].addTo(map); // Set the initial baselayer.
 
-      //layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+      //layerControl[whichmap] = L.control.layers(baseLayers, overlays).addTo(map);
 
     }
     */
 
-    if(layerControl === false) {
-      layerControl = L.control.layers(baseLayers2, overlays).addTo(map); // Push multple layers
+    if(layerControl[whichmap] == undefined) {
+      layerControl[whichmap] = L.control.layers(baseLayers2, overlays).addTo(map); // Push multple layers
     } else {
-      layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
+      layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
     }
     baseLayers2["Satellite"].addTo(map);
 
-
-      //layerControl2.addOverlay(dp.group, dp.name); // Appends to existing layers
-      //L.control.layers(baseLayers, overlays).addTo(map);
-
-
-
-    
-    //layerControl = L.control.layers(baseLayers, overlays).addTo(map);
-    //layerControl2 = L.control.layers(baseLayers, overlays2).addTo(map2);
 
       // Sample of single icon - place in addIcons function
       // Create a semi-transparent bus icon
