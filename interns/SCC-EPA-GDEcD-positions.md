@@ -4,6 +4,9 @@
 
 ## Summer Internships - Programming and Data Science
 
+We've filled several intern positions at Georgia Tech and would like to hear from PhD students working at other Georgia  universities who are interested in helping to develop the USEEIO model.  R-Language and Python experience required. 
+
+
 Paid opportunities to develop sustainability tools with the US Environmental Protection Agency, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
 as part of the [Regional Sustainability and Environmental Sciences Research Program](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
 (see 'Community-driven Application Development Using USEEIO Models') to build open-source community web applications that
@@ -15,6 +18,8 @@ use an EPA life cycle model of the economy ([USEEIO](https://www.google.com/sear
 Job Description 1: [Community Material Flow Tracking and Analysis](#community-material-flow)
 
 Job Description 2: [New Technology Scenario Analysis](#scenario-analysis)
+
+Job Description 3: [Machine Learning and Data Visualization](#machine-learning)
 
 Supported by: [General Dynamics Information Technology (GDIT)](https://www.gdit.com/)  
 
@@ -35,8 +40,7 @@ The candidate will develop Python code to translate community and industry mater
  -- including on generation, transfer, recycling/reprocessing, and reuse -- to relate them to EPA's USEEIO model to enable 
  sustainability analysis of alternative material uses.   
 
-The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team
- and other community-based interns.
+The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team and other community-based interns.
 
 The candidate will be expected to play a leading role in the September community application
  development event @GA Tech to leverage this tool to serve community applications.
@@ -61,8 +65,6 @@ Strong interest in sustainability and economic development
 ### Deliverables
 Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
 
-Apply for Summer Internships: <a href="http://smartcities.gatech.edu/gscc-application" target="gatechapp">Georgia Tech Students</a> | 
-<a href="https://model.georgia.org" target="gaother">Other Georgia Universities</a>  
 
 
 <a name="scenario-analysis"></a><br><br>
@@ -104,5 +106,37 @@ Strong interest in sustainability and economic development
 ### Deliverables
 R code and documentation to model new technologies in USEEIO  
 
-Apply for Summer Internships: <a href="http://smartcities.gatech.edu/gscc-application" target="gatechapp">Georgia Tech Students</a> | 
-<a href="https://model.georgia.org" target="gaother">Other Georgia Universities</a>  
+<a name="machine-learning"></a><br><br>
+<b>Job Description 3</b><h2 style='margin-top:0px;padding-top:0px'>Machine Learning and Data Visualization</h2>
+
+### Description
+The candidate will develop Python code to apply machine learning to industry data and environmental impact indicators
+in EPA's USEEIO model to enable sustainability analysis -- including material generation, transfer, recycling/reprocessing, and reuse.
+
+The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team and other community-based interns.
+
+The candidate will be expected to play a leading role in the September community application
+ development event @GA Tech to leverage this tool to serve community applications.
+
+The candidate will be exposed to the latest in sustainable materials management modeling, make contacts at
+federal, state agencies, GA Tech, in industry, and become part of a dynamic modeling and research team.
+
+### Learning Goals
+Learn essentials of environmentally-extended input-output modeling
+
+Learn about material life cycles
+
+### Top Desired Skills
+Python with data science and API libraries (pandas, requests)
+
+Github
+
+Team code development in a git-environment
+
+Strong interest in sustainability and economic development
+
+### Deliverables
+Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
+
+<!--<a href="http://smartcities.gatech.edu/gscc-application" target="gatechapp">Georgia Tech Students</a> | -->
+<a href="https://model.georgia.org" target="gaother">Apply for Summer Internship</a>  
