@@ -36,6 +36,16 @@ crossorigin=""></script>
 
 <body>
 
+<style>
+  #allLegends {
+    color:#fff !important; 
+  }
+  #allLegends > .label {
+    color:#fff !important; 
+  }
+</style>
+
+
 <!-- remove these 2 -->
 <aside class="myDataset">
 group,lat,lon,index,address
@@ -80,7 +90,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
     <div style="position:relative;">
       <div id="map"></div>
-      <div id="mapTitle">Intermodal Ports</div>
+      <div id="legendHolder">
+        <div id="allLegends"></div>
+      </div>
     </div>
   </section>
   <div style="clear:both"></div>
@@ -144,7 +156,7 @@ A six county coalition focused on the production of sustainable fuels and chemic
           </div>
         </div>
       </div>
-      <div id="allLegends"></div>
+      
   </div><!-- flexwrapper -->
 
     <!--
@@ -157,8 +169,39 @@ A six county coalition focused on the production of sustainable fuels and chemic
 
   </section>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
   <script type="text/javascript" src="../../js/common/dual-map.js"></script>
+  <script>
+    // INTERMODAL PORTS
+    dp = {
+      selector: "aside.Intermodal_Ports",
+      delimiter: ",",
+      numColumns: ["lat","lon"],
+      valueColumn: "value",
+      scaleType: "scaleOrdinal",
+      //scaleType: "scaleQuantile",
+      //scaleType: "scaleThreshold",
+    }
+    //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
+    dp.name = "Intermodal Ports"
+    dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+    //dp.color = '#0033ff'; // Alternative to scale
+    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
 
+    dp.group = L.layerGroup();
+    //dp.group2 = L.layerGroup();
+    //dp.iconName = 'device_hub';
+    dp.iconName = 'language';
+    dataParameters.push(dp);
+    addIcons(dp);
+
+    // Reactivate once colors differ
+    addLegend(dp.scale, dp.scaleType, dp.name);
+    var map1 = populateMap('map', dp);
+
+    // DATA-DRIVEN
+    var map2 = loadFromCSV('map2', "/community/tools/map.csv");
+  </script>
 </body>
 
 </html>

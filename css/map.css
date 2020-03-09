@@ -4,15 +4,21 @@
     height: 600px;
     width: 100%;
   }
-  #mapTitle {
+  #legendHolder {
     position: absolute;
     background-color:rgba(33,33,33,0.5);
-    color:#fff;
+    background-color:rgba(255,255,255,0.85);
+    color:#fff !important;
     bottom:0;
     left:0;
-    padding:10px 30px 10px 30px;
-    font-size: 18px;
+    paddingX:10px 30px 10px 30px;
+    font-size: 14px;
     z-index: 1000;
+    height:230px;
+  }
+  #allLegends div svg {
+    overflow: visible;
+    
   }
   #map2 {
     height: 500px;
@@ -22,9 +28,9 @@
   }
 
   aside, pre { display: none; }
-  div#allLegends { position: relative; }
+  /*
   div.legend { position: relative; width: 200px; float: left; }
-
+  */
 
 
   .leaflet-popup {
