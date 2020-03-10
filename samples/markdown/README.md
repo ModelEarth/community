@@ -12,16 +12,17 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
  Alternatively, you can install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to view and develop pages offline using https://localhost:8777 on your computer. Web Server for Chrome also allows you to [load a custom domain](https://medium.com/@jmatix/using-chrome-as-a-local-web-server-af04baffd581). Web Server for Chrome does not work as a Brave browser extension on Mac (as of December 2019), but you can add as a Chrome extension, then utilize from within Brave.
 
-2. Clone the "<a href='https://github.com/modelearth/community'>community</a>" repo to your local computer.  (Fork if you plan to collaborate on updates.)
+1. Clone the "<a href='https://github.com/modelearth/community'>community</a>" repo to your local computer.  (Fork if you plan to collaborate on updates.)  
+<a href="https://desktop.github.com/">GitHub Desktop</a> is an easy way to deploy your changes.
 
-3. Place the "community" folder inside the folder where your local web server points.  
+1. Place the "community" folder inside the folder where your local web server points.  
 
-4. Open the folder at [http://localhost:8887/community/](http://localhost:8887/community/)  
+1. Open the folder at [http://localhost:8887/community/](http://localhost:8887/community/)  
 
-5. Copy the "starter" folder inside community and give it the name of your community or module.
-
-6. Edit the starter README.md page to customize your intro.  
-
+1. Edit the starter README.md page to customize your intro.  
+<!--
+1. Copy the "starter" folder inside community and give it the name of your community or module.
+-->
 <br>
 
 ### Mac Users
