@@ -18,7 +18,7 @@ Job Description 1: [Community Material Flow Tracking and Analysis](#community-ma
 
 Job Description 2: [New Technology Scenario Analysis](#scenario-analysis)
 
-Job Description 3: [Machine Learning and Data Visualization](#machine-learning)
+Job Description 3: [Data Visualization and Machine Learning](#machine-learning)
 
 Supported by: [General Dynamics Information Technology (GDIT)](https://www.gdit.com/)  
 
@@ -106,11 +106,10 @@ Strong interest in sustainability and economic development
 R code and documentation to model new technologies in USEEIO  
 
 <a name="machine-learning"></a><br><br>
-<b>Job Description 3</b><h2 style='margin-top:0px;padding-top:0px'>Machine Learning and Data Visualization</h2>
+<b>Job Description 3</b><h2 style='margin-top:0px;padding-top:0px'>Data Visualization and Machine Learning</h2>
 
 ### Description
-The candidate will develop Python code to apply machine learning to industry data and environmental impact indicators
-in EPA's USEEIO model to enable sustainability analysis -- including material generation, transfer, recycling/reprocessing, and reuse.
+The candidate will develop D3 javascript to create web compatible visualizations of material flows and economic model for the USEEIO model.  The candidate will also use Python code to apply machine learning to material flows and other environmental and economic data from the local regions to be used in the GA version of the USEEIO model.
 
 The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team and other community-based interns.
 
@@ -121,21 +120,19 @@ The candidate will be exposed to the latest in sustainable materials management 
 federal, state agencies, GA Tech, in industry, and become part of a dynamic modeling and research team.
 
 ### Learning Goals
-Learn essentials of environmentally-extended input-output modeling
-
+Learn to visualize economic and material flow data
 Learn about material life cycles
 
 ### Top Desired Skills
+D3
 Python with data science and API libraries (pandas, requests)
-
 Github
-
 Team code development in a git-environment
-
 Strong interest in sustainability and economic development
 
 ### Deliverables
-Python code and documentation to capture community material generation, transfer, recycling and reuse data and link it to USEEIO
+D3 code for visualizations of material flows and USEEIO model data
+Python code and documentation to apply machine learning algorithms to material flow and other environmental data
 
 <!--<a href="http://smartcities.gatech.edu/gscc-application" target="gatechapp">Georgia Tech Students</a> | -->
 <a href="https://model.georgia.org" target="gaother">Apply for Summer Internship</a>  
