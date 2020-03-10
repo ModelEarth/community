@@ -1,25 +1,52 @@
-// Set your own Mapbox access token below.
-// Restrict which domains your token is loaded through.
-// https://blog.mapbox.com/url-restrictions-for-access-tokens-5f7f7eb90092
-
-var mbAttrX = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-var mbAttr = '',
-    mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
-
-var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-    satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
-    streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
-
-// Duplicate for map independence
-var grayscale2 = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-    satellite2 = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
-    streets2 = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
-
 var dataParameters = []; 
 var dp = {};
 var layerControl = {}; // Object containing one control for each map on page.
+
+  // Set your own Mapbox access token below.
+  // Restrict which domains your token is loaded through.
+  // https://blog.mapbox.com/url-restrictions-for-access-tokens-5f7f7eb90092
+var mbAttr = '<a href="https://www.mapbox.com/">Mapbox</a>',
+    mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+
+
+// Note: light_nolabels does not work on https. Remove if so. Was positron_light_nolabels.
+var basemaps = {
+  'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+  'Satellite' : L.tileLayer(mbUrl, {maxZoom: 25, id: 'mapbox.satellite', attribution: mbAttr}),
+  'Streets' : L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
+  'OpenStreetMap' : L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+  }),
+  'Rail' : L.tileLayer('http://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
+      minZoom: 2, maxZoom: 19, tileSize: 256, attribution: '<a href="http://www.openrailwaymap.org/">OpenRailwayMap</a>'
+  }),
+}
+var basemaps2 = {
+  'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+  'Satellite' : L.tileLayer(mbUrl, {maxZoom: 25, id: 'mapbox.satellite', attribution: mbAttr}),
+  'Streets' : L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
+  'OpenStreetMap' : L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+  }),
+  'Rail' : L.tileLayer('http://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
+      minZoom: 2, maxZoom: 19, tileSize: 256, attribution: '<a href="http://www.openrailwaymap.org/">OpenRailwayMap</a>'
+  })
+}
+
+/*
+  'Positron' : L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+    attributionX: 'positron_lite_rainbow'
+  }),
+  'Litegreen' : L.tileLayer('//{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+      attribution: 'Tiles <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a>'
+  }),
+  'EsriSatellite' : L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP'
+  }),
+  'Dark' : L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
+      attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+  }),
+*/
 
 //////////////////////////////////////////////////////////////////
 // Usage:
@@ -140,13 +167,14 @@ function loadFromCSV(whichmap,dataset) {
       //  layerControl[whichmap] = L.control.layers(baseLayers, overlays).addTo(map);
       //}
       if(layerControl[whichmap] == undefined) {
-        layerControl[whichmap] = L.control.layers(baseLayers, overlays2).addTo(map); // Push multple layers
+        layerControl[whichmap] = L.control.layers(basemaps2, overlays2).addTo(map); // Push multple layers
+        basemaps2["Grayscale"].addTo(map); // Set the initial baselayer.
       } else {
         layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
       }
 
       //if(layerControl[whichmap] == undefined) {
-        baseLayers["Grayscale"].addTo(map); // Set the initial baselayer.
+        
       //}
 
       addIcons(dp);
@@ -191,16 +219,7 @@ var mapCenter = [32.90,-83.35]; // [latitude, longitude]
 // - two sets of tiles would be loaded when upper baseLayer is changed using radio buttons.
 
 // Two sets prevents one map from changing the other
-var baseLayers = {
-  "Grayscale": grayscale,
-  "Streets": streets,
-  "Satellite": satellite
-};
-var baseLayers2 = {
-  "Grayscale": grayscale2,
-  "Streets": streets2,
-  "Satellite": satellite2
-};
+
 
 var overlays = {};
 var overlays2 = {};
@@ -237,11 +256,12 @@ function populateMap(whichmap, dp) {
     */
 
     if(layerControl[whichmap] == undefined) {
-      layerControl[whichmap] = L.control.layers(baseLayers2, overlays).addTo(map); // Push multple layers
+      layerControl[whichmap] = L.control.layers(basemaps, overlays).addTo(map); // Push multple layers
+      basemaps["Satellite"].addTo(map);
     } else {
       layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
     }
-    baseLayers2["Satellite"].addTo(map);
+    
 
 
       // Sample of single icon - place in addIcons function
@@ -428,6 +448,7 @@ function showList(dp) {
 
   });
 }
+//Hey, if any of my friends and relatives don't suvive this virus thing, just know I love you as you breath your final breaths. 
 
 // Scales: http://d3indepth.com/scales/
 function getScale(data, scaleType, valueCol) {
