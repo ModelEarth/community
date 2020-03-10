@@ -32,7 +32,8 @@ Sewage sludge is not allowed on USDA Certified Organic farms.
 
 Buyer Beware: The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.  
 
-
+[Innovations at Georgia tech - Using campus wastewater to grow vegetables](https://ce.gatech.edu/news/pilot-project-will-use-campus-wastewater-grow-vegetables)  
+"The proposed anaerobic membrane biological treatment process will transfer organic contaminants into biogas and remove pathogens such as E. coli to ensure food safety, but the nutrients (nitrogen, phosphorus and potassium, for example) will remain. By using a smart membrane or nanomaterials to extract trace contaminants like endocrine disruptors, heavy metals and pharmaceuticals, the nutrients that are left can be pumped through a vertical hydroponic system to grow produce without adding fertilizer. The project will monitor water and produce quality and measure contamination from chemicals and microbes continuously."
 
 
 
