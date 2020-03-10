@@ -109,7 +109,7 @@ R code and documentation to model new technologies in USEEIO
 <b>Job Description 3</b><h2 style='margin-top:0px;padding-top:0px'>Data Visualization and Machine Learning</h2>
 
 ### Description
-The candidate will develop D3 javascript to create web compatible visualizations of material flows and economic model for the USEEIO model.  The candidate will also use Python code to apply machine learning to material flows and other environmental and economic data from the local regions to be used in the GA version of the USEEIO model.
+The candidate will develop D3 javascript to create visualizations of material flows and related economic and environmental data used in the GA version of the USEEIO model.  The candidate will also use Python code to apply machine learning algorithms to material flows and other environmental and economic data from the local regions to be used in the GA version of the USEEIO model.
 
 The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team and other community-based interns.
 
@@ -132,7 +132,7 @@ Team code development in a git-environment
 Strong interest in sustainability and economic development
 
 ### Deliverables
-D3 code for visualizations of material flows and USEEIO model data
+D3 code for visualizations of material flows and USEEIO model data that can be used in the community web application
 Python code and documentation to apply machine learning algorithms to material flow and other environmental data
 
 <!--<a href="http://smartcities.gatech.edu/gscc-application" target="gatechapp">Georgia Tech Students</a> | -->
