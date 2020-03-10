@@ -664,10 +664,18 @@ A six county coalition focused on the production of sustainable fuels and chemic
     // Reactivate once colors differ
     addLegend(dp.scale, dp.scaleType, dp.name);
     var map1 = populateMap('map', dp);
-    basemaps["Rail"].addTo(map1);
-    
+    //basemaps["Rail"].addTo(map1);
+    layerControl['map'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+
     // DATA-DRIVEN
-    var map2 = loadFromCSV('map2', "/community/tools/map.csv");
+    var map2 = L.map('map2', {
+      center: mapCenter,
+      scrollWheelZoom: false,
+      zoom: 7
+    });
+    loadFromCSV('map2', "/community/tools/map.csv");
+    //layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+
 </script>
 
 <script>

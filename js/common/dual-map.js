@@ -17,9 +17,6 @@ var basemaps = {
   'OpenStreetMap' : L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
   }),
-  'Rail' : L.tileLayer('http://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
-      minZoom: 2, maxZoom: 19, tileSize: 256, attribution: '<a href="http://www.openrailwaymap.org/">OpenRailwayMap</a>'
-  }),
 }
 var basemaps2 = {
   'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
@@ -28,11 +25,12 @@ var basemaps2 = {
   'OpenStreetMap' : L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
   }),
+}
+var baselayers = {
   'Rail' : L.tileLayer('http://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
       minZoom: 2, maxZoom: 19, tileSize: 256, attribution: '<a href="http://www.openrailwaymap.org/">OpenRailwayMap</a>'
-  })
+  }),
 }
-
 /*
   'Positron' : L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
     attributionX: 'positron_lite_rainbow'
@@ -156,7 +154,7 @@ function loadFromCSV(whichmap,dataset) {
       dp.group = L.layerGroup();
       //dp.group2 = L.layerGroup();
       dp.iconName = 'star';
-      dataParameters.push(dp);
+      //dataParameters.push(dp);
       overlays2[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
       //overlays2[dp.name] = dp.group2;
 
@@ -258,7 +256,7 @@ function populateMap(whichmap, dp) {
     if(layerControl[whichmap] == undefined) {
       layerControl[whichmap] = L.control.layers(basemaps, overlays).addTo(map); // Push multple layers
       //basemaps["Satellite"].addTo(map);
-      basemaps["Satellite"].addTo(map);
+      basemaps["Streets"].addTo(map);
     } else {
       layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
     }
