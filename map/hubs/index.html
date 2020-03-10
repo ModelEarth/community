@@ -8,7 +8,6 @@
 
 <link rel="stylesheet" href="../../css/community.css" />
 
-<script type="text/javascript" src="../../js/common/showdown.min.js"></script>
 <script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../js/common/common.js"></script>
 <!--
@@ -201,14 +200,28 @@ A six county coalition focused on the production of sustainable fuels and chemic
     // Reactivate once colors differ
     addLegend(dp.scale, dp.scaleType, dp.name);
     var map1 = populateMap('map', dp);
-    basemaps["Rail"].addTo(map1);
+    //basemaps["Rail"].addTo(map1);
+
+    layerControl['map'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
 
     // Test
     //var mapX = loadFromCSV('map', "/community/tools/map.csv");
 
     // DATA-DRIVEN
-    var map2 = loadFromCSV('map2', "/community/tools/map.csv");
+    //var map2 = loadFromCSV('map2', "/community/tools/map.csv");
     //var map2 = populateMap('map2', dp);
+
+    loadFromCSV('map2', "/community/tools/map.csv", function(results) {
+        // This function gets called by the geocode function on success
+        //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+
+        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+    });
+
+
+      
+
+
   </script>
 </body>
 
