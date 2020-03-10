@@ -121,6 +121,7 @@ federal, state agencies, GA Tech, in industry, and become part of a dynamic mode
 
 ### Learning Goals
 Learn to visualize economic and material flow data
+
 Learn about material life cycles
 
 ### Top Desired Skills
