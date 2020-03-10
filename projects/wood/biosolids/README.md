@@ -21,12 +21,12 @@ Landfill disposal and out-of-state shipping (5% to 27%)
 Del Monte, H.J. Heinz, Dole, Whole Foods. Switzerland and the Netherlands.  
 Sewage sludge is not allowed on USDA Certified Organic farms.  
 
-<b>Buyer Beware:</b> The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.   
+<b>Gardener Beware:</b> The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.   
 
-## Treatment Innovations
+## Water Treatment Innovations
 
 [Controlled Environment Agriculture (CEA)](../../agriculture) -  Using smart membranes and nanomaterials to extract contaminants from wastewater.  
-
+<br>
 <a href="../img/fast-growth.jpg"><img src="../img/fast-growth.jpg" style="width:100%; max-width:900px;" class="fullMobile"></a>
 
 [Fast Growth Forestry - for Superwood, Nanowood and Transparent Wood](../../#forestry)
