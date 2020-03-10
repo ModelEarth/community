@@ -2,13 +2,9 @@
 
 Biosolid waste (aka sewage sludge) is an excellent fertilizer for forests and other bioproducts grown independent of the food chain.  
 
-Some restaurants and grocery stores sell food fertilized with municipal biosolids. 
+Some restaurants and grocery stores sell food fertilized with municipal biosolid sludge. "Sludge contains pharmaceuticals, hormones, pathogens, <!--bacteria, viruses, protozoa and parasitic worms, as well as--> heavy metals like lead, cadmium, arsenic or mercury. It often includes PCBs, PFAS (forever chemicals), dioxins, BPAs and dozens of other harmful substances ranging from flame retardants to hospital waste. In 2019, about 60% of sewage sludge produced by treatment facilities will be spread on farmland and gardens, as well as schoolyards and lawns." [source](https://www.theguardian.com/environment/2019/oct/05/biosolids-toxic-chemicals-pollution)
 
-"Sludge contains pharmaceuticals, hormones, pathogens, <!--bacteria, viruses, protozoa and parasitic worms, as well as--> heavy metals like lead, cadmium, arsenic or mercury. It often includes PCBs, PFAS (forever chemicals), dioxins, BPAs and dozens of other harmful substances ranging from flame retardants to hospital waste. In 2019, about 60% of sewage sludge produced by treatment facilities will be spread on farmland and gardens, as well as schoolyards and lawns." [source](https://www.theguardian.com/environment/2019/oct/05/biosolids-toxic-chemicals-pollution)
-
-Let's get everyone to think before they rinse chemicals and medicine down the drain.  
-
-According to the EPA, "About 50% of all biosolids are being recycled to land. These biosolids are used on less than one percent of the nation's agricultural land." [source](https://www.epa.gov/biosolids/frequent-questions-about-biosolids)  
+Let's get everyone to think before they rinse chemicals and medicine down the drain. According to the EPA, "About 50% of all biosolids are being recycled to land. These biosolids are used on less than one percent of the nation's agricultural land." [source](https://www.epa.gov/biosolids/frequent-questions-about-biosolids)  
 
 
 <!-- 8) What percentage of biosolids are recycled and how many farms use biosolids? -->
@@ -21,19 +17,19 @@ Incinerated (10%)
 Marginal land applications (5%)  
 Landfill disposal and out-of-state shipping (5% to 27%)  
 
-
-## Keeping Biosolids out of the Food Chain
-
-Kudos to these companies that strictly prohibit the application of sewage sludge as fertilizers:  
-
-Del Monte, H.J. Heinz, Dole, Whole Foods. Switzerland and the Netherlands.
-
+<b>Kudos to these companies that strictly prohibit the application of sewage sludge as fertilizers:</b>  
+Del Monte, H.J. Heinz, Dole, Whole Foods. Switzerland and the Netherlands.  
 Sewage sludge is not allowed on USDA Certified Organic farms.  
 
-Buyer Beware: The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.  
+<b>Buyer Beware:</b> The wastewater industry promotes biosolids as “green” and sells it as organic fertilizer in stores like Walmart and Lowe’s.   
 
-[Innovations at Georgia tech - Using campus wastewater to grow vegetables](https://ce.gatech.edu/news/pilot-project-will-use-campus-wastewater-grow-vegetables)  
-"The proposed anaerobic membrane biological treatment process will transfer organic contaminants into biogas and remove pathogens such as E. coli to ensure food safety, but the nutrients (nitrogen, phosphorus and potassium, for example) will remain. By using a smart membrane or nanomaterials to extract trace contaminants like endocrine disruptors, heavy metals and pharmaceuticals, the nutrients that are left can be pumped through a vertical hydroponic system to grow produce without adding fertilizer. The project will monitor water and produce quality and measure contamination from chemicals and microbes continuously."
+## Treatment Innovations
+
+[Controlled Environment Agriculture (CEA)](../../agriculture) -  Using smart membranes and nanomaterials to extract contaminants from wastewater.  
+
+<a href="../img/fast-growth.jpg"><img src="../img/fast-growth.jpg" style="width:100%; max-width:900px;" class="fullMobile"></a>
+
+[Fast Growth Forestry - for Superwood, Nanowood and Transparent Wood](../../#forestry)
 
 
 
