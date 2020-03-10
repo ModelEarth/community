@@ -233,7 +233,7 @@ function populateMap(whichmap, dp) {
     var map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
-      zoom: 7,
+      zoom: 6,
       zoomControl: false
     });
     L.control.zoom({
@@ -257,6 +257,7 @@ function populateMap(whichmap, dp) {
 
     if(layerControl[whichmap] == undefined) {
       layerControl[whichmap] = L.control.layers(basemaps, overlays).addTo(map); // Push multple layers
+      //basemaps["Satellite"].addTo(map);
       basemaps["Satellite"].addTo(map);
     } else {
       layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
