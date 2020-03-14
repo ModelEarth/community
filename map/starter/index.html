@@ -18,22 +18,22 @@ How to support multiple Leaflet maps on the same page? (lodash, not currently us
 https://groups.google.com/forum/#!topic/leaflet-js/5HBcdTgCuVA
 -->
 
-
+<!--
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
 integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
 crossorigin=""/>
+-->
+<link rel="stylesheet" href="../../css/leaflet/leaflet.css" />
  <!-- Resides AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
-integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
-crossorigin=""></script>
+<script src="../../js/leaflet/leaflet.js"></script>
 
 <script src="../../js/d3/d3.v5.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="../../css/leaflet/leaflet.icon-material.css" rel="stylesheet">
 <script src="../../js/leaflet/leaflet.icon-material.js"></script>
-
+<script src="../../js/d3/d3-legend.js"></script>
+<script type="text/javascript" src="../../js/common/dual-map.js"></script>
 <link rel="stylesheet" href="../../css/map.css" />
-
 </head>
 
 <body>
@@ -46,28 +46,6 @@ crossorigin=""></script>
     color:#fff !important; 
   }
 </style>
-
-
-<!-- remove these 2 -->
-<aside class="myDataset">
-group,lat,lon,index,address
-BK,48.157630,11.648014,1800,lothringer
-BK,48.141579,11.604729,100,sdakjh
-BK,48.143640,11.603463,1800,dsfasfslk 3.
-BK,48.157630,11.648014,1800,loithringer
-BK,48.141579,11.604729,100,sdakjh
-BK,48.143640,11.603463,1800,dsfasfslk 3.
-BK,48.143827,11.602895,500, sadkfjalsfj
-BK,48.143640,11.603463,,dsfasfslk 3.
-BK,48.143827,11.602895,, sadkfjalsfj
-BK,48.144099,11.602444,120, hansenstrasse 4A
-</aside>
-<aside class="d2">
-group,lat,lon,value
-KK,48.157630,11.648014,30
-KK,48.141579,11.604729,1800
-KK,48.143640,11.603463,200
-</aside>
 
 <aside class="Intermodal_Ports">
 group,lat,lon,value,address,city,state,zip
@@ -99,78 +77,55 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
   </section>
   <div style="clear:both"></div>
 
-
+<!-- Start HTML -->
   <section id="data" class="litePanel">
     <div class="content">
       <div id="flexwrapper">
         <div id="hublist">
 
           <h1>Data Driven Decision&nbsp;Making</h1>
-
+          <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of <span style="white-space: nowrap">Goods & Services</span></h2><br>
           
+            <!--
+            <input type="button" onclick="location.href='../../samples/feed';" 
+            value="Add your data feeds" style="margin-top:20px; padding:10px" />
+            <br><br>
+            -->
 
-          <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of <span style="white-space: nowrap">Goods & Services</span></h2>
-          
-          <!--
-          <input type="button" onclick="location.href='../../samples/feed';" 
-          value="Add your data feeds" style="margin-top:20px; padding:10px" />
-          <br><br>
-          -->
-          
-          <!--
-          <h1 style="margin-bottom:0px">Sustainable Movement of Goods & Services</h1>
-          -->
-          <!-- Smart & Mobile -->
-
-          <!--
-          <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Smart Georgia - Data Driven Decision Making</h3>
-          -->
-          <!--Opportunities for Waze integration:<br><br>-->
-
-
-          <!--
-Southeast Georgia - Bioproducts and Energy Innovation
-
-A six county coalition focused on the production of sustainable fuels and chemicals from biomass, including plastics from plants, hydrogen infrastructure development, carbon capture, and transformative forestry and hydrology. Members of Appling, Bacon, Glynn, Jeff Davis, Pierce and Wayne counties are collaborating with the Georgia Centers of Innovation to implement analysis using the US EPA's Environmentally Enabled Input-Output model under the guidance of Dr. Wesley Ingwersen of the EPA, and Dr. Valerie Thomas of the Georgia Institute of Technology​​ schools of Industrial/Systems Engineering and Public Policy.
-
-          -->
           <div id="detaillist"></div>
           <div id="narrowlist" style="display:none"></div>
         </div>
 
-      <a name="gomap"></a>
-      <div id="mapHolder">
-        <div class="mapHolderInner">
-          <div class="mapHolderCard card">
-            <div id="maptop">
-              <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
-                Connected Communities
+        <a name="gomap"></a>
+        <div id="mapHolder">
+          <div class="mapHolderInner">
+            <div class="mapHolderCard card">
+              <div id="maptop">
+                <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
+                  Connected Communities
+                </div>
               </div>
-            </div>
 
-            <div style="clear:both">  
-              <div id="map2"></div>
-            </div>
+              <div style="clear:both">  
+                <div id="map2"></div>
+              </div>
 
-            
+            </div>
           </div>
         </div>
-      </div>
       
-  </div><!-- flexwrapper -->
+      </div><!-- flexwrapper -->
+    </div>  
+
+  </section>
+<!-- End HTML -->
 
     <!--
-    <hr>
     To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
       Copy using a text editor and click the pencil icon <a href="https://github.com/modelearth/community/blob/master/map/map.csv">here</a> to paste into GitHub for review. 
       <span style="white-space: nowrap;">Or you can fork</span> the <a href="https://github.com/modelearth/community">GitHub Repo</a> and commit using <a href="https://desktop.github.com/">GitHub Desktop</a>.
     -->
-  </div>  
 
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
-  <script type="text/javascript" src="../../js/common/dual-map.js"></script>
   <script>
     // INTERMODAL PORTS
     dp = {
@@ -215,11 +170,6 @@ A six county coalition focused on the production of sustainable fuels and chemic
 
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
     });
-
-
-      
-
-
   </script>
 </body>
 

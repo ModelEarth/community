@@ -66,46 +66,6 @@ var baselayers = {
 
 /////////// LOAD FROM HTML ///////////
 
-// ------> for more html datasets, copy FROM here
-// dataset 1
-
-dp = {
-  selector: "aside.myDataset",
-  delimiter: ",",
-  numColumns: ["lat","lon","index","address"],
-  valueColumn: "index",
-  scaleType: "scaleThreshold",
-}
-dp.name = dp.selector.split(".").pop(); // name: myDataset
-// specify end
-dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-dp.group = L.layerGroup();
-//dataParameters.push(dp); // Adds to layer menu - Uncomment to reactivate
-//addIcons(dp);
-//addLegend(dp.scale, dp.scaleType, dp.name);
-
-// ------> for more html datasets, copy TO here
-
-// dataset 2 - Example of scaled with color-code for 7 ranges
-/*
-dp = {
-  selector: "aside.d2",
-  delimiter: ",",
-  numColumns: ["lat","lon","value"],
-  valueColumn: "value",
-  scaleType: "scaleQuantize",
-}
-dp.name = dp.selector.split(".").pop(); // name: d2
-dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
-dp.group = L.layerGroup();
-dataParameters.push(dp);
-addIcons(dp);
-addLegend(dp.scale, dp.scaleType, dp.name);
-*/
-
-
 // INTERMODAL PORTS - was here
 
 // Recall existing map https://github.com/Leaflet/Leaflet/issues/6298
@@ -614,3 +574,4 @@ $(window).scroll(function() {
     mapFixed = false;
   }
 });
+console.log('hello from dual map')
