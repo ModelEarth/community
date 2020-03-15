@@ -105,11 +105,16 @@ function jsLoaded() {
 	let scriptCount = 0;
 	loadScript(root + 'js/common/common.js',scriptCount++);
 
-	// Resides AFTER css/leaflet/leaflet.css -->
-	loadScript(root + 'js/leaflet/leaflet.js',scriptCount++);
+	//alert(scriptCount);
+}
+function leafletLoaded() {
+	let root = "../../";
+	let scriptCount = 0;
+	
 	loadScript(root + 'js/leaflet/leaflet.icon-material.js',scriptCount++);
-	loadScript(root + 'js/common/dual-map.js',scriptCount++);
-
+	loadScript(root + 'js/common/dual-map.js', function(results) {
+		dualmapLoaded();
+	});
 	//alert(scriptCount);
 }
 function d3Loaded() {
@@ -124,15 +129,37 @@ function lazyLoadFiles() {
 	let root = "../../";
 	
 	includeCSS(root + 'css/community.css',root);
-	loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-		jsLoaded();
-	});
-	loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
-		d3Loaded();
-	});
+	includeCSS(root + 'css/leaflet/leaflet.css',root);
+	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
+	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
+	includeCSS(root + 'css/map.css',root);
+
+	setTimeout(function(){ 
+		loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+			jsLoaded();
+		});
+		// Resides AFTER css/leaflet/leaflet.css
+		loadScript(root + 'js/leaflet/leaflet.js', function(results) {
+			leafletLoaded();
+		});
+		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
+			d3Loaded();
+		});
+	}, 1000);
 }
-var L;
+//var L;
+
 lazyLoadFiles();
+
+function dualmapLoaded() {
+	loadFromCSV('map2', "/community/tools/map.csv", function(results) {
+        // This function gets called by the geocode function on success
+        //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+
+        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+    });
+}
+
 
 /*
 loadFromCSV('map2', "/community/tools/map.csv", function(results) {
