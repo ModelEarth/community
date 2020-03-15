@@ -77,7 +77,7 @@ L.Map.addInitHook(function () {
   this.getContainer()._leaflet_map = this;
 });
 
-function loadFromCSV(whichmap,dataset) {
+function loadFromCSV(whichmap,dataset,callback) {
 
   let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
   var container = L.DomUtil.get(map);
@@ -155,6 +155,7 @@ function loadFromCSV(whichmap,dataset) {
       //map.addLayer(overlays["Intermodal Ports"]);
 
       map.addLayer(overlays2[dp.name]);
+      callback();
       return map;
   })
   .catch(function(error){ 

@@ -158,7 +158,6 @@ function dualmapLoaded() {
 	loadFromCSV('map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
-alert('d')
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
     });
 }
