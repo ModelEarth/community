@@ -7,8 +7,9 @@
 */
 
 var strVar="";
-strVar += "<section id=\"data\" class=\"litePanel\">";
-strVar += "    <div class=\"content\">";
+strVar += "<!-- Start HTML -->";
+strVar += "  <section id=\"data\" class=\"litePanel\">";
+strVar += "    <div class=\"content displayOnload\" style=\"display:none\">";
 strVar += "      <div id=\"flexwrapper\">";
 strVar += "        <div id=\"hublist\">";
 strVar += "";
@@ -47,6 +48,8 @@ strVar += "      <\/div><!-- flexwrapper -->";
 strVar += "    <\/div>  ";
 strVar += "";
 strVar += "  <\/section>";
+strVar += "<!-- End HTML -->";
+
 
 document.write(strVar);
 
@@ -75,11 +78,15 @@ function loadScript(url, callback)
 		consoleLog("loadScript script already available: " + url);
 	}
 }
-function includeCSS(url,root) {
-    var urlID = url.replace(root,"").replace("https://","").replace(/\//g,"-").replace(/\./g,"-");
-    if (urlID.indexOf('?') > 0) {
+function getUrlID(url,root) {
+	let urlID = url.replace(root,"").replace("https://","").replace(/\//g,"-").replace(/\./g,"-");
+	if (urlID.indexOf('?') > 0) {
         urlID = urlID.substring(0,urlID.indexOf('?')); // Remove parameter so ?v=1 is not included in id.
     }
+    return urlID;
+}
+function includeCSS(url,root) {
+    let urlID = getUrlID(url,root);
     if (!document.getElementById(urlID)) { // Prevents multiple loads.
         var link  = document.createElement('link');
         link.id   = urlID;
@@ -100,15 +107,13 @@ function includeCSS(url,root) {
         head.appendChild(link); // Since site-narrow.css comes after site.css
     }
 }
-function jsLoaded() {
-	let root = "../../";
+function jsLoaded(root) {
 	let scriptCount = 0;
 	loadScript(root + 'js/common/common.js',scriptCount++);
 
 	//alert(scriptCount);
 }
-function leafletLoaded() {
-	let root = "../../";
+function leafletLoaded(root) {
 	let scriptCount = 0;
 	
 	loadScript(root + 'js/leaflet/leaflet.icon-material.js',scriptCount++);
@@ -117,8 +122,7 @@ function leafletLoaded() {
 	});
 	//alert(scriptCount);
 }
-function d3Loaded() {
-	let root = "../../";
+function d3Loaded(root) {
 	let scriptCount = 0;
 
 	loadScript(root + 'js/d3/d3-legend.js',scriptCount++);
@@ -126,26 +130,25 @@ function d3Loaded() {
 	//alert(scriptCount);
 }
 function lazyLoadFiles() {
-	let root = "../../";
-	
+	let root = location.protocol + '//' + location.host + '/community/';
 	includeCSS(root + 'css/community.css',root);
 	includeCSS(root + 'css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
 	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
 	includeCSS(root + 'css/map.css',root);
 
-	setTimeout(function(){ 
+	//setTimeout(function(){ 
 		loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-			jsLoaded();
+			jsLoaded(root);
 		});
 		// Resides AFTER css/leaflet/leaflet.css
 		loadScript(root + 'js/leaflet/leaflet.js', function(results) {
-			leafletLoaded();
+			leafletLoaded(root);
 		});
 		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
-			d3Loaded();
+			d3Loaded(root);
 		});
-	}, 1000);
+	//}, 1000);
 }
 //var L;
 
@@ -155,7 +158,7 @@ function dualmapLoaded() {
 	loadFromCSV('map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
-
+alert('d')
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
     });
 }
