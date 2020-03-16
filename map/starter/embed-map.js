@@ -201,13 +201,16 @@ function lazyLoadFiles() {
 			jsLoaded(root);
 		});
 
+		// Required by leafletLoaded that follows
+		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
+			d3Loaded(root);
+		});
+
 		// Resides AFTER css/leaflet/leaflet.css
 		loadScript(root + 'js/leaflet/leaflet.js', function(results) {
 			leafletLoaded(root);
 		});
-		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
-			d3Loaded(root);
-		});
+		
 	//}, 1000);
 }
 //var L;
