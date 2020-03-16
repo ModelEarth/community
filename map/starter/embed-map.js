@@ -8,7 +8,7 @@
 
 var strVar="";
 strVar += "<!-- Start HTML -->";
-strVar += "  <section id=\"data\" class=\"litePanel\">";
+strVar += "  <section id=\"data\" style=\"overflow:auto\">";
 strVar += "    <div class=\"content displayOnload\" style=\"display:none\">";
 strVar += "      <div id=\"flexwrapper\">";
 strVar += "        <div id=\"hublist\">";
@@ -213,6 +213,9 @@ function lazyLoadFiles() {
 lazyLoadFiles();
 
 function dualmapLoaded() {
+	let root = "https://model.georgia.org/community/";
+	//alert(root + "tools/map.csv");
+	//loadFromCSV('map2', root + "tools/map.csv", function(results) {
 	loadFromCSV('map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
