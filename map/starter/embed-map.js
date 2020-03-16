@@ -78,6 +78,53 @@ function loadScript(url, callback)
 		consoleLog("loadScript script already available: " + url);
 	}
 }
+function flagScriptAsLoaded(url,callback) {
+	document.getElementById(url).loaded = '1';
+	alert ('Loaded: ' + url);
+	return 1;
+}
+function loadScript2(url, requires, callback)
+{
+	if (requires) {
+		let pendingRequirements = 0;
+		requires.forEach(function(entry) {
+		    
+		    if (document.getElementById(entry)) {
+		    	// requirementSatisfied
+		    } else {
+		    	pendingRequirements++;
+		    	//alert(entry);
+				loadScript2(entry);
+			}
+		});
+		if (pendingRequirements > 0) {
+			//alert('Call again. ' + pendingRequirements + ' pending Requirements');
+			loadScript2(url, requires)
+			return;
+		}
+	}
+
+	if (!document.getElementById(url)) { // Prevents multiple loads.
+		var script = document.createElement('script');
+	    script.type = 'text/javascript';
+	    script.src = url;
+		script.id = url; // Used to prevent multiple loads.
+	    
+        //$(document).ready(function () { // Only needed if appending to body
+           var head = document.getElementsByTagName('head')[0];
+	       head.appendChild(script);
+        //});
+
+        // Then bind the event to the callback function. Two events for cross browser compatibility.
+        // BUGBUG - Calls twice.
+	    script.onreadystatechange = flagScriptAsLoaded(script.id,callback);
+	    script.onload = flagScriptAsLoaded(script.id,callback);
+
+        consoleLog("loadScript loaded: " + url);
+	} else {
+		consoleLog("loadScript script already available: " + url);
+	}
+}
 function getUrlID(url,root) {
 	let urlID = url.replace(root,"").replace("https://","").replace(/\//g,"-").replace(/\./g,"-");
 	if (urlID.indexOf('?') > 0) {
@@ -111,6 +158,10 @@ function jsLoaded(root) {
 	let scriptCount = 0;
 	loadScript(root + 'js/common/common.js',scriptCount++);
 
+	if (location.host.indexOf('localhost') >= 0) {
+		loadScript(root + 'js/common/navigation.js',scriptCount++);
+	}
+
 	//alert(scriptCount);
 }
 function leafletLoaded(root) {
@@ -137,10 +188,14 @@ function lazyLoadFiles() {
 	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
 	includeCSS(root + 'css/map.css',root);
 
-	//setTimeout(function(){ 
-		loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-			jsLoaded(root);
-		});
+	//setTimeout(function(){
+		let requires = [root + 'js/jquery/jquery-1.12.4.min.js','test'];
+		loadScript2(root + 'js/common/common.js',requires);
+
+		//loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+		//	jsLoaded(root);
+		//});
+
 		// Resides AFTER css/leaflet/leaflet.css
 		loadScript(root + 'js/leaflet/leaflet.js', function(results) {
 			leafletLoaded(root);
