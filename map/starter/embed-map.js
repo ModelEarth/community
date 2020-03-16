@@ -182,7 +182,7 @@ function d3Loaded(root) {
 }
 function lazyLoadFiles() {
 	let root = location.protocol + '//' + location.host + '/community/';
-	root = "https://model.georgia.org/community/map/starter/";
+	root = "https://model.georgia.org/community/";
 	includeCSS(root + 'css/community.css',root);
 	includeCSS(root + 'css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
