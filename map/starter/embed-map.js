@@ -51,6 +51,11 @@ strVar += "  <\/section>";
 strVar += "<!-- End HTML -->";
 
 
+strVar += "<style>";
+strVar += "#mapHolder {display:none !important}";
+strVar += "#hublist{width:100% !important}";
+strVar += "  <\/style>";
+
 document.write(strVar);
 
 function consoleLog(text)
