@@ -154,9 +154,7 @@ function loadFromCSV(whichmap,dataset,callback) {
 
       //map.addLayer(overlays["Intermodal Ports"]);
 
-      //setTimeout(function(){ // Temp
-        map.addLayer(overlays2[dp.name]);
-      //}, 2000);
+      map.addLayer(overlays2[dp.name]);
       callback(map); // Sends to function(results).  map might not be needed as paramter
       //return map;
   })
@@ -328,8 +326,11 @@ function addIcons(dp) {
   
     // Attach the icon to the marker and add to the map
     //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
-    //circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
-    circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
+    if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
+      circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
+    } else {
+      circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
+    }
 
     var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>";
     if (element.phone || element.phone_afterhours) {
