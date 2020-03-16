@@ -80,7 +80,7 @@ function loadScript(url, callback)
 }
 function flagScriptAsLoaded(url,callback) {
 	document.getElementById(url).loaded = '1';
-	alert ('Loaded: ' + url);
+	//alert ('Loaded: ' + url);
 	return 1;
 }
 function loadScript2(url, requires, callback)
@@ -189,12 +189,14 @@ function lazyLoadFiles() {
 	includeCSS(root + 'css/map.css',root);
 
 	//setTimeout(function(){
-		let requires = [root + 'js/jquery/jquery-1.12.4.min.js','test'];
-		loadScript2(root + 'js/common/common.js',requires);
+		
+		// To activate
+		//let requires = [root + 'js/jquery/jquery-1.12.4.min.js','test'];
+		//loadScript2(root + 'js/common/common.js',requires);
 
-		//loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-		//	jsLoaded(root);
-		//});
+		loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+			jsLoaded(root);
+		});
 
 		// Resides AFTER css/leaflet/leaflet.css
 		loadScript(root + 'js/leaflet/leaflet.js', function(results) {
