@@ -213,10 +213,11 @@ function lazyLoadFiles() {
 lazyLoadFiles();
 
 function dualmapLoaded() {
-	let root = "https://model.georgia.org/community/";
+	let root = "https://modelearth.github.io/community/";
+	//root = "https://model.earth/community/"; // CORS would need to be adjusted on server
 	//alert(root + "tools/map.csv");
-	//loadFromCSV('map2', root + "tools/map.csv", function(results) {
-	loadFromCSV('map2', "/community/tools/map.csv", function(results) {
+	loadFromCSV('map2', root + "tools/map.csv", function(results) {
+	//loadFromCSV('map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
