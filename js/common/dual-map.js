@@ -155,7 +155,7 @@ function loadFromCSV(whichmap,dataset,callback) {
       //map.addLayer(overlays["Intermodal Ports"]);
 
       map.addLayer(overlays2[dp.name]);
-      callback();
+      //callback();
       return map;
   })
   .catch(function(error){ 
