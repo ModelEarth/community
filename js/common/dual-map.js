@@ -154,7 +154,9 @@ function loadFromCSV(whichmap,dataset,callback) {
 
       //map.addLayer(overlays["Intermodal Ports"]);
 
-      map.addLayer(overlays2[dp.name]);
+      setTimeout(function(){ // Temp
+        map.addLayer(overlays2[dp.name]);
+      }, 2000);
       callback(map); // Sends to function(results).  map might not be needed as paramter
       //return map;
   })

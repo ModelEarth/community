@@ -52,8 +52,8 @@ strVar += "<!-- End HTML -->";
 
 
 strVar += "<style>";
-strVar += "#mapHolder {display:none !important}";
-strVar += "#hublist{width:100% !important}";
+//strVar += "#mapHolder {display:none !important}";
+//strVar += "#hublist{width:100% !important}";
 strVar += "  <\/style>";
 
 document.write(strVar);
@@ -196,7 +196,7 @@ function lazyLoadFiles() {
 	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
 	includeCSS(root + 'css/map.css',root);
 
-	//setTimeout(function(){
+	
 		
 		// To activate
 		//let requires = [root + 'js/jquery/jquery-1.12.4.min.js','test'];
@@ -215,8 +215,8 @@ function lazyLoadFiles() {
 		loadScript(root + 'js/leaflet/leaflet.js', function(results) {
 			leafletLoaded(root);
 		});
+			
 		
-	//}, 1000);
 }
 //var L;
 
