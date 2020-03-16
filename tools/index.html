@@ -673,8 +673,9 @@ A six county coalition focused on the production of sustainable fuels and chemic
       scrollWheelZoom: false,
       zoom: 7
     });
-    loadFromCSV('map2', "/community/tools/map.csv");
-    //layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+    loadFromCSV('map2', "/community/tools/map.csv",function(results) {
+        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+    });
 
 </script>
 
