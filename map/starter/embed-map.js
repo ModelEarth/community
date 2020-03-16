@@ -182,7 +182,9 @@ function d3Loaded(root) {
 }
 function lazyLoadFiles() {
 	let root = location.protocol + '//' + location.host + '/community/';
-	root = "https://model.georgia.org/community/";
+	if (location.host.indexOf('localhost') < 0) {
+		root = "https://model.georgia.org/community/";
+	}
 	includeCSS(root + 'css/community.css',root);
 	includeCSS(root + 'css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
@@ -217,10 +219,12 @@ function dualmapLoaded() {
 	//root = "https://model.earth/community/"; // CORS would need to be adjusted on server
 	//alert(root + "tools/map.csv");
 	loadFromCSV('map2', root + "tools/map.csv", function(results) {
+		//alert("back");
 	//loadFromCSV('map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
-        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+           
     });
 }
 
