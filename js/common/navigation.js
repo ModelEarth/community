@@ -196,7 +196,7 @@ $(document).ready(function(){
 		      menuItems.removeClass("active");
 		      menuItems.filter("[href*='#"+bottomSection+"']").addClass("active");
 		      lastID = bottomSection;
-		   } else if (lastID !== id) { // Highlight side navigation
+		   } else if (id && lastID !== id) { // Highlight side navigation
 		      //console.log("CURRENT ID: " + id);
 		      lastID = id;
 		      menuItems.removeClass("active");

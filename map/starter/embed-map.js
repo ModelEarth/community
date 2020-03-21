@@ -20,21 +20,21 @@ strVar += "    height:400px;";
 strVar += "  }";
 strVar += "<\/style>";
 strVar += "<aside class=\"Intermodal_Ports\" style=\"display:none\">";
-strVar += "group,lat,lon,value,address,city,state,zip";
-strVar += "Inman Rail Yard,33.795735,-84.439278,NS,1600 Marietta Rd NW,Atlanta,GA,30318";
-strVar += "Savannah Yard,32.069578,-81.142174,CSX,3000 Tremont Ave,Savannah,GA,31405";
-strVar += "James D. Mason ICTF,32.123934,-81.150914,NS,3 North Main St,Garden City,GA,31408";
-strVar += "Fairburn Industry Yard,33.554907,-84.595026,CSX,6700 McLarin Rd,Fairburn,GA,30213";
-strVar += "Whitaker Rail Yard,33.80944,-84.655451,NS,6000 Westside Rd,Austell,GA,30106";
-strVar += "Chatham ICTF,32.125311,-81.151331,CSX,2 Main St,Garden City,GA,31408";
-strVar += "Savannah,32.10035,-81.169963,NS,1 Charlie Gay Drive,Savannah,GA,31408";
-strVar += "Cordele Intermodal Center,31.966779,-83.755101,Heart GA,2902 East 13th Ave.,Cordele,GA,31010";
-strVar += "Port of Savannah Ocean Terminal,32.093702,-81.111692,\"Ro\/Ro, Breakbulk\",55 N Lathrop Ave,Savannah,GA,31415";
-strVar += "Port of Brunswick,31.125887,-81.541194,\"Ro\/Ro, Agri-Bulk\",157 Penniman Cir,Brunswick,GA,31523";
-strVar += "Port of Savannah,32.125,-81.151,Container,2 Main St,Savannah,GA,31407";
-strVar += "Port of Brunswick Mayor's Point Terminal,31.143373,-81.494753,Breakbulk,1100 Bay Street,Brunswick,GA,31520";
-strVar += "Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Columbus,GA,31901";
-strVar += "Port of Bainbridge,30.902867,-84.606259,Liquid\/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817";
+strVar += "group,lat,lon,value,address,city,state,zip\r";
+strVar += "Inman Rail Yard,33.795735,-84.439278,NS,1600 Marietta Rd NW,Atlanta,GA,30318\r";
+strVar += "Savannah Yard,32.069578,-81.142174,CSX,3000 Tremont Ave,Savannah,GA,31405\r";
+strVar += "James D. Mason ICTF,32.123934,-81.150914,NS,3 North Main St,Garden City,GA,31408\r";
+strVar += "Fairburn Industry Yard,33.554907,-84.595026,CSX,6700 McLarin Rd,Fairburn,GA,30213\r";
+strVar += "Whitaker Rail Yard,33.80944,-84.655451,NS,6000 Westside Rd,Austell,GA,30106\r";
+strVar += "Chatham ICTF,32.125311,-81.151331,CSX,2 Main St,Garden City,GA,31408\r";
+strVar += "Savannah,32.10035,-81.169963,NS,1 Charlie Gay Drive,Savannah,GA,31408\r";
+strVar += "Cordele Intermodal Center,31.966779,-83.755101,Heart GA,2902 East 13th Ave.,Cordele,GA,31010\r";
+strVar += "Port of Savannah Ocean Terminal,32.093702,-81.111692,\"Ro\/Ro, Breakbulk\",55 N Lathrop Ave,Savannah,GA,31415\r";
+strVar += "Port of Brunswick,31.125887,-81.541194,\"Ro\/Ro, Agri-Bulk\",157 Penniman Cir,Brunswick,GA,31523\r";
+strVar += "Port of Savannah,32.125,-81.151,Container,2 Main St,Savannah,GA,31407\r";
+strVar += "Port of Brunswick Mayor's Point Terminal,31.143373,-81.494753,Breakbulk,1100 Bay Street,Brunswick,GA,31520\r";
+strVar += "Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Columbus,GA,31901\r";
+strVar += "Port of Bainbridge,30.902867,-84.606259,Liquid\/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817\r";
 strVar += "<\/aside>";
 strVar += "<div class=\"displayOnload\" style=\"display:none;position:relative;\">";
 strVar += "  <div id=\"map1\" style=\"display:none\"><\/div>";
@@ -46,6 +46,12 @@ strVar += "<\/section>";
 strVar += "<div style=\"clear:both\"><\/div>";
 strVar += "<!-- END Top Map -->";
 
+////document.body.prepend(strVar); // This displayed as HTML tags
+//let div = document.createElement("div");
+//div.innerHTML = strVar;
+//document.body.append(div);
+
+//strVar = "";
 
 strVar += "<!-- Start HTML -->";
 strVar += "  <section id=\"data\" style=\"overflow:auto\">";
@@ -203,9 +209,9 @@ function jsLoaded(root) {
 function leafletLoaded(root) {	
 	loadScript(root + 'js/leaflet/leaflet.icon-material.js');
 	loadScript(root + 'js/common/dual-map.js', function(results) {
-		//loadScript(root + 'js/common/common.js', function(results) { // For param in URL of embedded widget call.
-			dualmapLoaded(param);
-		//});
+		
+		dualmapLoaded(param);
+		
 	});
 }
 function d3Loaded(root) {
@@ -268,12 +274,12 @@ function dualmapLoaded(param) {
 	    //dp.iconName = 'device_hub';
 	    dp.iconName = 'language';
 	    //dataParameters.push(dp);
-	    addIcons(dp);
-
-	    // Reactivate once colors differ
-	    //addLegend(dp.scale, dp.scaleType, dp.name);
+	    
 	    var map1 = populateMap('map1', dp);
-	    //basemaps["Rail"].addTo(map1);
+	    addIcons(dp);
+	    loadScript(root + 'js/d3/d3-legend.js', function(results){
+	    	addLegend(dp.scale, dp.scaleType, dp.name);
+	    });
 
 	    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
 	}
