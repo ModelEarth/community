@@ -6,6 +6,7 @@
 // Final version resides in embed-map.js
 */
 
+// Add \r to end of aside rows manually.
 var strVar="";
 strVar += "<!-- Top Map -->";
 strVar += "<style>";
@@ -158,7 +159,7 @@ var param = {};
 param = loadParam(location.search,location.hash);
 window.onhashchange = function() { // Refresh params values when user changes URL hash after #.
 	params = loadParams(location.search,location.hash);	
-	alert(params.data);  
+	//alert(params.data);  
 }
 // Loads params with priority given to:
 // 1. Hash values on URL.
