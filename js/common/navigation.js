@@ -200,7 +200,7 @@ $(document).ready(function(){
 		      //console.log("CURRENT ID: " + id);
 		      lastID = id;
 		      menuItems.removeClass("active");
-		      if (currentSection.length) {
+		      if (currentSection && currentSection.length) {
 		      	if (id.length == 0) {
 		      		// Page without sections
 		      	} else if (id == "intro") {
