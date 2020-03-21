@@ -133,7 +133,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 
 <div class="displayOnload" style="display:none;position:relative;">
-  <div id="map"></div>
+  <div id="map1"></div>
   <div id="legendHolder">
     <div id="allLegends"></div>
   </div>
@@ -285,7 +285,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="mapHolder">
       <div class="mapHolderInner">
         <div class="mapHolderCard card">
-          <div id="maptop">
+          <div id="sidemapbar">
             <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
               Six County Region
             </div>
@@ -314,9 +314,9 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 <script>
 
-loadFromCSV('map', "/community/tools/map.csv", function(results) {
+loadFromCSV('map1', "/community/tools/map.csv", function(results) {
     // This function gets called by the geocode function on success
-    layerControl['map'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
 });
 
 

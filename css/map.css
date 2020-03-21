@@ -1,6 +1,6 @@
 /* /tools and /map/hubs */ 
 
-  #map {
+  #map1 {
     height: 600px;
     width: 100%;
   }
@@ -91,7 +91,7 @@
       width: 380px;
     }
   }
-  #maptop {
+  #sidemapbar {
     height: 30px;
     border-bottomX: 1px solid #999;
     background-color: #fff;

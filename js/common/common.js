@@ -2,32 +2,54 @@
 
 // To do: dynamically add target _parent to external link when in an iFrame, and no existing target
 
-function loadParams(paramStr,hashStr) {
-  // Priority: 1st hash, 2nd url search
-    var request = {};
-    var pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
-    for (var i = 0; i < pairs.length; i++) {
-        if(!pairs[i])
-            continue;
-        var pair = pairs[i].split('=');
-        request[decodeURIComponent(pair[0]).toLowerCase()] = decodeURIComponent(pair[1]);
-     }
-     // Next we override with the Hash for older browser that cannot update the URL from script.
-     // And for embedding where URL variables may not be usable.
-    var hashPairs = hashStr.substring(hashStr.indexOf('#') + 1).split('&');
-    for (var i = 0; i < hashPairs.length; i++) {
-        if(!hashPairs[i])
-            continue;
-        if (i==0 && hashPairs[i].indexOf("=") == -1) {
-          request[""] = hashPairs[i];  // Allows for initial # param without =.
-          continue;
-        }
-        var hashPair = hashPairs[i].split('=');
-        request[decodeURIComponent(hashPair[0]).toLowerCase()] = decodeURIComponent(hashPair[1]);
-     }
-     return request;
-}
+
+// DO NOT USE - SET params (plural) IN SCRIPT THE USES common.js. TO REMOVE after identifying which script uses:
 var param = loadParams(location.search,location.hash);
+
+
+
+// Loads params with priority given to:
+// 1. Hash values on URL.
+// 2. Parameters on URL.
+// 3. Parameters on javascript include file.
+function loadParams(paramStr,hashStr) {
+  let scripts = document.getElementsByTagName('script');
+  let myScript = scripts[ scripts.length - 1 ];
+  //let params = getParams(myScript.src); // Object
+
+  let params = {};
+  let includepairs = myScript.src.substring(myScript.src.indexOf('?') + 1).split('&');
+  for (let i = 0; i < includepairs.length; i++) {
+    let pair = includepairs[i].split('=');
+    params[pair[0].toLowerCase()] = decodeURIComponent(pair[1]);
+  }
+
+  let pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
+  for (let i = 0; i < pairs.length; i++) {
+      if(!pairs[i])
+          continue;
+      let pair = pairs[i].split('=');
+      params[decodeURIComponent(pair[0]).toLowerCase()] = decodeURIComponent(pair[1]);
+   }
+
+  let hashPairs = hashStr.substring(hashStr.indexOf('#') + 1).split('&');
+  for (let i = 0; i < hashPairs.length; i++) {
+      if(!hashPairs[i])
+          continue;
+      if (i==0 && hashPairs[i].indexOf("=") == -1) {
+        params[""] = hashPairs[i];  // Allows for initial # params without =.
+        continue;
+      }
+      let hashPair = hashPairs[i].split('=');
+      params[decodeURIComponent(hashPair[0]).toLowerCase()] = decodeURIComponent(hashPair[1]);
+   }
+   return params;
+}
+
+// Serialize a key/value object.
+//var params = { width:1680, height:1050 };
+//var str = jQuery.param( params );
+//alert( str ); // Returns:  width=1680&height=1050
 
 function loadMarkdown(pagePath, divID, target) {
 

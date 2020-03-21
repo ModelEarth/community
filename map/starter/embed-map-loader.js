@@ -1,5 +1,7 @@
 
 /*
+// This experiment didn't work because "loaded" attribute was not added to script until function exited.
+
 // EMBED MAP
 // Generate the script below by pasting index.html into:
 // http://www.accessify.com/tools-and-wizards/developer-tools/html-javascript-convertor/
@@ -30,7 +32,7 @@ strVar += "        <a name=\"gomap\"><\/a>";
 strVar += "        <div id=\"mapHolder\">";
 strVar += "          <div class=\"mapHolderInner\">";
 strVar += "            <div class=\"mapHolderCard card\">";
-strVar += "              <div id=\"maptop\">";
+strVar += "              <div id=\"sidemapbar\">";
 strVar += "                <div style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
 strVar += "                  Connected Communities";
 strVar += "                <\/div>";
