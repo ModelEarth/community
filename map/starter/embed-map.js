@@ -15,11 +15,11 @@ strVar += "  }";
 strVar += "  #allLegends > .label {";
 strVar += "    color:#fff !important; ";
 strVar += "  }";
-strVar += "  #map {";
+strVar += "  #map1 {";
 strVar += "    height:400px;";
 strVar += "  }";
 strVar += "<\/style>";
-strVar += "<aside class=\"Intermodal_Ports\">";
+strVar += "<aside class=\"Intermodal_Ports\" style=\"display:none\">";
 strVar += "group,lat,lon,value,address,city,state,zip";
 strVar += "Inman Rail Yard,33.795735,-84.439278,NS,1600 Marietta Rd NW,Atlanta,GA,30318";
 strVar += "Savannah Yard,32.069578,-81.142174,CSX,3000 Tremont Ave,Savannah,GA,31405";
@@ -37,7 +37,7 @@ strVar += "Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Co
 strVar += "Port of Bainbridge,30.902867,-84.606259,Liquid\/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817";
 strVar += "<\/aside>";
 strVar += "<div class=\"displayOnload\" style=\"display:none;position:relative;\">";
-strVar += "  <div id=\"map\"><\/div>";
+strVar += "  <div id=\"map1\" style=\"display:none\"><\/div>";
 strVar += "  <div id=\"legendHolder\">";
 strVar += "    <div id=\"allLegends\"><\/div>";
 strVar += "  <\/div>";
@@ -70,7 +70,7 @@ strVar += "        <a name=\"gomap\"><\/a>";
 strVar += "        <div id=\"mapHolder\">";
 strVar += "          <div class=\"mapHolderInner\">";
 strVar += "            <div class=\"mapHolderCard card\">";
-strVar += "              <div id=\"maptop\">";
+strVar += "              <div id=\"sidemapbar\">";
 strVar += "                <div style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
 strVar += "                  Connected Communities";
 strVar += "                <\/div>";
@@ -98,12 +98,7 @@ strVar += "  <\/style>";
 
 document.write(strVar);
 
-function consoleLog(text)
-{
-    console.log(text);
-    //alert(text);
-    //consoleMash = consoleMash + '\r' + text;
-}
+// COMMON
 function loadScript(url, callback)
 {
 	if (!document.getElementById(url)) { // Prevents multiple loads.
@@ -111,63 +106,17 @@ function loadScript(url, callback)
 	    script.type = 'text/javascript';
 	    script.src = url;
 		script.id = url; // Prevents multiple loads.
-	    // Then bind the event to the callback function. Two events for cross browser compatibility.
+	    // Bind the event to the callback function. Two events for cross browser compatibility.
 	    script.onreadystatechange = callback;
 	    script.onload = callback;
-        //$(document).ready(function () { // Only needed if appending to body
-            var head = document.getElementsByTagName('head')[0];
-	       head.appendChild(script);
-        //});
-        consoleLog("loadScript loaded: " + url);
-	} else {
-		consoleLog("loadScript script already available: " + url);
-	}
-}
-function flagScriptAsLoaded(url,callback) {
-	document.getElementById(url).loaded = '1';
-	//alert ('Loaded: ' + url);
-	return 1;
-}
-function loadScript2(url, requires, callback)
-{
-	if (requires) {
-		let pendingRequirements = 0;
-		requires.forEach(function(entry) {
-		    
-		    if (document.getElementById(entry)) {
-		    	// requirementSatisfied
-		    } else {
-		    	pendingRequirements++;
-		    	//alert(entry);
-				loadScript2(entry);
-			}
-		});
-		if (pendingRequirements > 0) {
-			//alert('Call again. ' + pendingRequirements + ' pending Requirements');
-			loadScript2(url, requires)
-			return;
-		}
-	}
-
-	if (!document.getElementById(url)) { // Prevents multiple loads.
-		var script = document.createElement('script');
-	    script.type = 'text/javascript';
-	    script.src = url;
-		script.id = url; // Used to prevent multiple loads.
-	    
         //$(document).ready(function () { // Only needed if appending to body
            var head = document.getElementsByTagName('head')[0];
 	       head.appendChild(script);
         //});
-
-        // Then bind the event to the callback function. Two events for cross browser compatibility.
-        // BUGBUG - Calls twice.
-	    script.onreadystatechange = flagScriptAsLoaded(script.id,callback);
-	    script.onload = flagScriptAsLoaded(script.id,callback);
-
-        consoleLog("loadScript loaded: " + url);
+        console.log("loadScript loaded: " + url);
 	} else {
-		consoleLog("loadScript script already available: " + url);
+		console.log("loadScript script already available: " + url);
+		callback();
 	}
 }
 function getUrlID(url,root) {
@@ -199,31 +148,68 @@ function includeCSS(url,root) {
         head.appendChild(link); // Since site-narrow.css comes after site.css
     }
 }
-function jsLoaded(root) {
-	let scriptCount = 0;
-	loadScript(root + 'js/common/common.js',scriptCount++);
-
-	if (location.host.indexOf('localhost') >= 0) {
-		loadScript(root + 'js/common/navigation.js',scriptCount++);
-	}
-
-	//alert(scriptCount);
+var param = {};
+param = loadParam(location.search,location.hash);
+window.onhashchange = function() { // Refresh params values when user changes URL hash after #.
+	params = loadParams(location.search,location.hash);	
+	alert(params.data);  
 }
-function leafletLoaded(root) {
-	let scriptCount = 0;
-	
-	loadScript(root + 'js/leaflet/leaflet.icon-material.js',scriptCount++);
+// Loads params with priority given to:
+// 1. Hash values on URL.
+// 2. Parameters on URL.
+// 3. Parameters on javascript include file.
+function loadParam(paramStr,hashStr) {
+  let scripts = document.getElementsByTagName('script');
+  let myScript = scripts[ scripts.length - 1 ];
+  //let params = getParams(myScript.src); // Object
+
+  let params = {};
+  let includepairs = myScript.src.substring(myScript.src.indexOf('?') + 1).split('&');
+  for (let i = 0; i < includepairs.length; i++) {
+    let pair = includepairs[i].split('=');
+    params[pair[0].toLowerCase()] = decodeURIComponent(pair[1]);
+  }
+
+  let pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
+  for (let i = 0; i < pairs.length; i++) {
+      if(!pairs[i])
+          continue;
+      let pair = pairs[i].split('=');
+      params[decodeURIComponent(pair[0]).toLowerCase()] = decodeURIComponent(pair[1]);
+   }
+
+  let hashPairs = hashStr.substring(hashStr.indexOf('#') + 1).split('&');
+  for (let i = 0; i < hashPairs.length; i++) {
+      if(!hashPairs[i])
+          continue;
+      if (i==0 && hashPairs[i].indexOf("=") == -1) {
+        params[""] = hashPairs[i];  // Allows for initial # params without =.
+        continue;
+      }
+      let hashPair = hashPairs[i].split('=');
+      params[decodeURIComponent(hashPair[0]).toLowerCase()] = decodeURIComponent(hashPair[1]);
+   }
+   return params;
+}
+// END COMMON
+
+// UNIQUE TO PAGE
+function jsLoaded(root) {	
+	//loadScript(root + 'js/common/common.js');
+	if (location.host.indexOf('localhost') >= 0) {
+		loadScript(root + 'js/common/navigation.js');
+	}
+}
+function leafletLoaded(root) {	
+	loadScript(root + 'js/leaflet/leaflet.icon-material.js');
 	loadScript(root + 'js/common/dual-map.js', function(results) {
-		dualmapLoaded();
+		//loadScript(root + 'js/common/common.js', function(results) { // For param in URL of embedded widget call.
+			dualmapLoaded(param);
+		//});
 	});
-	//alert(scriptCount);
 }
 function d3Loaded(root) {
-	let scriptCount = 0;
-
-	loadScript(root + 'js/d3/d3-legend.js',scriptCount++);
-
-	//alert(scriptCount);
+	loadScript(root + 'js/d3/d3-legend.js');
 }
 function lazyLoadFiles() {
 	let root = location.protocol + '//' + location.host + '/community/';
@@ -236,39 +222,31 @@ function lazyLoadFiles() {
 	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
 	includeCSS(root + 'css/map.css',root);
 
-	
-		
-		// To activate
-		//let requires = [root + 'js/jquery/jquery-1.12.4.min.js','test'];
-		//loadScript2(root + 'js/common/common.js',requires);
+	loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+		jsLoaded(root);
+	});
 
-		loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-			jsLoaded(root);
-		});
+	// Required by leafletLoaded that follows
+	loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
+		d3Loaded(root);
+	});
 
-		// Required by leafletLoaded that follows
-		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
-			d3Loaded(root);
-		});
-
-		// Resides AFTER css/leaflet/leaflet.css
-		loadScript(root + 'js/leaflet/leaflet.js', function(results) {
-			leafletLoaded(root);
-		});
-			
-		
+	// Resides AFTER css/leaflet/leaflet.css
+	loadScript(root + 'js/leaflet/leaflet.js', function(results) {
+		leafletLoaded(root);
+	});
 }
 //var L;
 
 lazyLoadFiles();
 
-function dualmapLoaded() {
+function dualmapLoaded(param) {
 	let root = "https://modelearth.github.io/community/";
 	//root = "https://model.earth/community/"; // CORS would need to be adjusted on server
 	//alert(root + "tools/map.csv");
 
-	if (1==1) {
-
+	if (param.data != "smart") {
+		document.getElementById("map1").style.display = "block";
 		// INTERMODAL PORTS
 	    dp = {
 	      selector: "aside.Intermodal_Ports",
@@ -294,12 +272,10 @@ function dualmapLoaded() {
 
 	    // Reactivate once colors differ
 	    //addLegend(dp.scale, dp.scaleType, dp.name);
-	    var map1 = populateMap('map', dp);
+	    var map1 = populateMap('map1', dp);
 	    //basemaps["Rail"].addTo(map1);
 
-	    layerControl['map'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-
-
+	    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
 	}
 
 	loadFromCSV('map2', root + "tools/map.csv", function(results) {

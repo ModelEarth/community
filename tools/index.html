@@ -270,7 +270,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     </div>
 
     <div style="position:relative;">
-      <div id="map"></div>
+      <div id="map1"></div>
       <div id="legendHolder">
         <div id="allLegends"></div>
       </div>
@@ -323,7 +323,7 @@ A six county coalition focused on the production of sustainable fuels and chemic
       <div id="mapHolder">
         <div class="mapHolderInner">
           <div class="mapHolderCard card">
-            <div id="maptop">
+            <div id="sidemapbar">
               <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
                 Connected Communities
               </div>
@@ -663,9 +663,9 @@ A six county coalition focused on the production of sustainable fuels and chemic
 
     // Reactivate once colors differ
     addLegend(dp.scale, dp.scaleType, dp.name);
-    var map1 = populateMap('map', dp);
+    var map1 = populateMap('map1', dp);
     //basemaps["Rail"].addTo(map1);
-    layerControl['map'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
 
     // DATA-DRIVEN
     var map2 = L.map('map2', {
