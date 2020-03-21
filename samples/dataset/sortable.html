@@ -246,40 +246,34 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	d3.csv("USEEIOv1.2_result_2007_impacts_final.csv", function(error, myData) {
 
 		if (error) {
-			console.log("Had an error loading file.");
+			console.log("Error loading file. " + error);
 		}
 
-		// We'll be using simpler data as values, not objects.
+		// Data as values, not objects.
 		var myArray = [];
 
-		// this is a new variable, to make it easier to do a color scale.
-		// alternately, you could extract these values with a map function.
+		// Add a new variable, to make it easier to do a color scale.
+		// Alternately, you could extract these values with a map function.
 		var allDifferences = [];
 
-		myData.forEach(function(d, i){
-
-			// now we add another data object value, a calculated value.
-//                    a.Monthlyviews, b.Monthlyvisits
-			
-			//d.difference = d.Monthlyviews - d.Monthlyvisits;
+		myData.forEach(function(d, i) {
 
 			d.difference =  d.US_2007_Demand_$;
 
-		 // Add an array to the empty array with the values of each:
-	 	 myArray.push([d.Sectors, d.difference, d.ACID, d.CCDD, d.CMSW, d.CRHW, d.ENRG, d.ETOX, d.EUTR, d.GHG, d.HAPS, d.HCAN, d.HNCN, d.HRSP, d.HTOX, d.JOBS, d.LAND, d.METL, d.MNRL, d.NNRG, d.OZON, d.PEST, d.RNRG, d.SMOG, d.VADD, d.WATR]);
+		 	// Add an array to the empty array with the values of each:
+	 	 	myArray.push([d.Sectors, d.difference, d.ACID, d.CCDD, d.CMSW, d.CRHW, d.ENRG, d.ETOX, d.EUTR, d.GHG, d.HAPS, d.HCAN, d.HNCN, d.HRSP, d.HTOX, d.JOBS, d.LAND, d.METL, d.MNRL, d.NNRG, d.OZON, d.PEST, d.RNRG, d.SMOG, d.VADD, d.WATR]);
 
- 		// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
-	 	 allDifferences.push(d.difference);
+ 			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
+	 	 	allDifferences.push(d.difference);
 
 		});
-
-		console.log(allDifferences);
+		//console.log(allDifferences);
 
 		var table = d3.select("#table").append("table");
 
 		var header = table.append("thead").append("tr");
 
-		// Made some objects to construct the header in code:
+		// Objects to construct the header in code:
 		// The sort_type is for the Jquery sorting function.
 
 		// Minerals and Metals (MINE)
@@ -339,12 +333,12 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 		// We built the rows using the nested array - now each row has its own array.
 
-		// let's talk about the scale - start at 0 or at lowest number?
+		// The scale - start at 0 or at lowest number
 		console.log('Extent is ', d3.extent(allDifferences));
 
-			var colorScale = d3.scale.linear()
-				.domain(d3.extent(allDifferences))
-				.range(["#FFC0CB","#C71585"]);
+		var colorScale = d3.scale.linear()
+			.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
+			.range(["#bcdbf7","#c00"]);
 
 		cells = rows.selectAll("td")
 			// each row has data associated; we get it and enter it for the cells.
@@ -356,30 +350,48 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			.append("div")
 			.style("border-left-color", function(d,i) { // Was background-color
 				// for the last elements in the row, we color the background:
-				if (i >= 2) {
+				if (i >= 2) { // All the columns with colored boxes
 					return colorScale(d);
 				}
 			})
-			
-			// temp
-			
-			
-
-			.append("div") // Second div within td
-			.text(function(d,i) {
-				if (i >= 2) {
-					return d;
+	
+			.append("div")
+			//.text(function(d,i) { // All columns have a div with a value from CSV data
+			//		return d;
+			//})
+			.html(function(d,i) {
+				if (i == 0) {
+					return "<input type='checkbox' id='" + d.split('-')[0] + "' class='sector' onclick='sectorClick(this)'/><span>" + d + "</span>";
 				} else {
 					return d;
 				}
-			})
+			})			
 			;
 
 		// jquery sorting applied to it - could be done with d3 and events.
 		$("table").stupidtable();
 
+		// INIT
+		// Set checkboxes based on param (which may be a hash, query or include parameter)
+		updateSector(param.sector);
 	});
-
+	function updateSector(sector) {
+		$(".sector").prop('checked', false);
+		if (sector) {
+			let sectors = sector.split(",");
+            for(var i = 0 ; i < sectors.length ; i++) {
+                $("#" + sectors[i]).prop('checked', true);
+            }
+        }
+	}
+	function resetForm() {
+		updateSector(param.sector);
+	}
+	function sectorClick(which) {
+		//console.log(which.id);
+		hash.sector = $('.sector:checked').map(function() {return this.id;}).get().join(','); 
+		updateHash();
+	}
 	document.getElementById('showValues').onclick = function() {
 	    // access properties using this keyword
 	    if ( this.checked ) {
@@ -397,7 +409,85 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	        $("td:nth-child(n+3) > div").css("padding-left","0px");
 	    }
 	};
+	function getHash() {
+    	return (function (a) {
+        if (a == "") return {};
+        var b = {};
+        for (var i = 0; i < a.length; ++i) {
+            var p = a[i].split('=');
+            if (p.length != 2) continue;
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+	    })(window.location.hash.substr(1).split('&'));
+	}
+	
+	function updateHash() {
+		// Remove blank attributes
+        for (var i in hash) {
+          if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
+            delete hash[i];
+          }
+        }
 
+        var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+
+        // Update if hash has occurred
+        if (window.location.hash != hashString) {
+        	let searchTitle = 'page ' + hashString;
+            let queryString = '#' + hashString;
+
+            //console.log("Update hash to: " + window.location.pathname + queryString);
+            window.history.pushState("", searchTitle, window.location.pathname + queryString);
+        }
+    }
+
+// COMMON
+var param = {};
+var hash = getHash(); // Include all existing
+param = loadParam(location.search,location.hash);
+window.onhashchange = function() {
+	param = loadParam(location.search,location.hash);
+	resetForm();
+}
+// Loads params with priority given to:
+// 1. Hash values on URL.
+// 2. Parameters on URL.
+// 3. Parameters on javascript include file.
+function loadParam(paramStr,hashStr) {
+  let scripts = document.getElementsByTagName('script');
+  let myScript = scripts[ scripts.length - 1 ];
+  //let params = getParams(myScript.src); // Object
+
+  let params = {};
+  let includepairs = myScript.src.substring(myScript.src.indexOf('?') + 1).split('&');
+  for (let i = 0; i < includepairs.length; i++) {
+    let pair = includepairs[i].split('=');
+    params[pair[0].toLowerCase()] = decodeURIComponent(pair[1]);
+  }
+
+  let pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
+  for (let i = 0; i < pairs.length; i++) {
+      if(!pairs[i])
+          continue;
+      let pair = pairs[i].split('=');
+      params[decodeURIComponent(pair[0]).toLowerCase()] = decodeURIComponent(pair[1]);
+   }
+
+  let hashPairs = hashStr.substring(hashStr.indexOf('#') + 1).split('&');
+  for (let i = 0; i < hashPairs.length; i++) {
+      if(!hashPairs[i])
+          continue;
+      if (i==0 && hashPairs[i].indexOf("=") == -1) {
+        params[""] = hashPairs[i];  // Allows for initial # params without =.
+        continue;
+      }
+      let hashPair = hashPairs[i].split('=');
+      params[decodeURIComponent(hashPair[0]).toLowerCase()] = decodeURIComponent(hashPair[1]);
+   }
+   return params;
+}
+// END COMMON
 </script>
 
 </html>
