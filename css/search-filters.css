@@ -1,0 +1,104 @@
+
+#selectProduct {
+    cursor: pointer;
+    background-color: #fff;
+}
+.selectMenu {
+    font-size: 14px;
+    height: 34px;
+    margin-right: 6px;
+    min-height: 34px;
+}
+
+.fieldSelector {
+	display: none;
+}
+.filterField {
+	margin-right: 6px;
+	float: left;
+}
+.textInput {
+	font-size: 16px;
+	box-sizing: border-box;
+	height: 34px;
+	min-height: 34px;
+}
+.filterClick {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #d9d9de;
+    line-heightX: 22px;
+    padding: 0px 9px 0px 10px;
+    min-height: 32px !important;
+    vertical-align: baseline;
+    background-color: #fff;
+    color: #121a0d;
+    text-shadow: none;
+    float: left;
+}
+.filterSelected {
+    font-size: 13pt;
+    line-height: 13pt;
+    white-space: nowrap;
+    padding-top:9px;
+}
+.detailbutton {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 9px 10px 0px 10px;
+    
+    color: #555;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 6px;
+    min-height: 34px;
+}
+#goSearch {
+    padding-top:8px;
+}
+.filterLabel {
+    padding-bottom: 4px;
+}
+.filterBubble {
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-property: width;
+    -moz-transition-property: width;
+    -o-transition-property: width;
+    transition-property: width;
+    display: block;
+    -webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    border: 1px solid #d0d5cb;
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    padding: 15px;
+    vertical-align: baseline;
+}
+.si-wrapper div {
+    position: absolute;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0;
+    width: 18px;
+    margin: 0;
+    border: 0;
+    padding: 3px;
+    background: none;
+    /* font: 0/0 a; */
+}
+.si-btn {
+    display: block;
+    background-color: #fff;
+}
+
