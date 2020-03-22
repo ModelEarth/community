@@ -7,9 +7,12 @@
 <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
 
 <link rel="stylesheet" href="../../css/community.css" />
+<link rel="stylesheet" href="../../css/search-filters.css" />
+<link rel="stylesheet" href="../../css/display.css" />
 
 <script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/common/search-filters.js"></script>
 <!-- Activate to include site navigation-->
 <script type="text/javascript" src="../../js/common/navigation.js"></script>
 <link rel="stylesheet" href="../../css/leaflet/leaflet.css" />
@@ -28,8 +31,8 @@
 <body>
 
 <style>
-#map {
-	height: 250px;
+#map1 {
+	height: 280px;
 }
 #sidecolumnContent {
 	position: relative !important;
@@ -51,10 +54,9 @@
   margin-bottom: 18px;
   overflow: auto;
 }
-.topboxes span {
+.outcomesbox span {
   float:right;
   padding-right:20px;
-  font-weight: bold;
 }
 .leftWidget {
   float:left;
@@ -149,7 +151,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     
   </div>
 </td>
-<td style="align:center">
+<td style="width:100%">
 
 
 <section id="industries" style="overflow:auto">
@@ -164,6 +166,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         <b>Location & Weight:</b> Country, State, County, Zip<br>
         <b>BEA Sector & Intensity:</b> Industry ID : Percent<br>
         <b>Census & Level:</b> Population, Education, etc.<br>
+        <b>Product HS Codes</b>
       </div>
       <div style="float:left">
         <b>Perspective:</b> Supply Chain, Point of Consumption<br>
@@ -177,9 +180,345 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4
         https://datascape.github.io/community/#columns=population:31;education:50
       -->
+      <!-- Common Filters -->
+      <div class="pagePanel" style="margin-bottom:12px">
+
+  <div style="float:left">
+    <div class="filterField keywordField">
+      <!-- Search Companies -->
+      <div class="filterLabel filterLabelMain">Search</div>
+      <!--
+      <div style="position:absolute; right:8px; top:10px; z-index:1">
+        <i id="showAdvancedXXX" class="material-icons" style="font-size:24px;cursor:pointer">&#xE409;</i>
+        
+      </div>
+      -->
+
+      <div class="si-wrapper" style="float:left;position:relative">
+        <!-- speech input -->
+        <!-- was a button -->
+        <div class="si-btn">
+              <span class="si-holder" style="font-size: 20px">&#127897;</span>
+          </div>
+          <!-- maxlength="400"  -->
+          <input id="keywordsTB" autocomplete="off" 
+          style="width:100%;max-width:400px;padding-right:27px;" class="filterClick mobileWide textInput si-input" type="text" value="" onblurXX="SearchFormTextCheck(this, 0)" onfocusXX="SearchFormTextCheck(this, 1)" placeholderX="Search" onkeyup="return SearchEnter(event);" onkeypressX="return SearchEnter(event);" />
+        </div>
 
     </div>
-    <div class="leftWidget">
+
+
+    <div style="clear:both"></div>
+
+
+    <div class="keywordBubble">
+      <div class="fieldSelector filterBubbleHolder" style="margin-top:0px">
+          <div class="uparrow uparrow-grey" style="left: 34px;"></div>
+                <div class="uparrow uparrow-white" style="left: 34px;"></div>
+
+                <div class="filterBubble">
+
+            <div id="findWhat">
+              <div id="hideAdvanced" style="float:right;cursor:pointer">&#10005;</div>
+
+              <div style="display:none;float:left;margin-right:20px">
+                <input type="checkbox" name="findLocation" id="findLocation" value="findLocation" checked><label for="findLocation" class="filterCheckboxTitle">Search Listings</label><br>
+                <input type="checkbox" name="findNews" id="findNews" value="findNews" checked><label for="findNews" class="filterCheckboxTitle">Search Newsroom</label><br>
+              </div>
+              <div style="float:left;" id="findLocationWith">
+                          <div>
+                            <input type="checkbox" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="findAddress" id="findAddress" value="1" checked><label for="findAddress" class="filterCheckboxTitle"> In Website URL</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="findDetails" id="findDetails" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Industry</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="findProduct" id="findProduct" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Product Description</label>
+                          </div>
+                          <div style="display:none">
+                            <input type="checkbox" name="findNews" id="findNews" value="1"><label for="findNews" class="filterCheckboxTitle"> In Newsroom</label>
+                          </div>
+                          <div style="display:none">
+                            <input type="checkbox" name="findContent" id="findContent" value="1"><label for="findContent" class="filterCheckboxTitle"> In Georgia.org</label>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                
+      </div>
+    </div>
+  </div>
+
+  <!-- LOCATION SEARCH - currently inactive - copy script from site/js/embed.js -->
+  <div class="searchElementsPosition" style="float:left;"></div>
+
+  <div style="float:left;">
+      
+      <div class="searchElements" style="float:left; displayX:none">
+
+        <div class="filterField">
+            <div class="filterLabel filterLabelMain">Where</div>
+
+            <div class="filterClick" id="filterClickLocation" style="position:relative; float:left;">
+
+              <div style="position:absolute; right:5px; top:5px;">
+                <i id="showLocations" class="material-icons" style="font-size:24px;cursor:pointer">&#xE409;</i>
+                <i id="hideLocations"  class="material-icons" style="font-size:24px;cursor:pointer;display:none">&#xE313;</i>
+              </div>
+              <div class="filterSelected" data-selectedXXXREMOVE="all" style="padding-right:28px">Entire State:</div>
+            
+
+              <!-- Stores location options -->
+              <select style="display:none;" name="locationDD" id="locationDD">
+                <option value="all" style="display:none">All</option>
+                  <option value="state" selected="selected">Entire State</option>
+                  <option value="current">Nearby</option>
+                  <option value="custom">Lat/Lon</option>
+                  <option value="city">Search by City</option>
+                  <option value="zip">Search by Zip</option>
+                  <option value="counties">Search by County</option>
+              </select>
+              <div class="filterBubbleHolder" style="display:none;margin-left:-14px">
+                  <div class="uparrow uparrow-grey" style="left: 34px;"></div>
+                  <div class="uparrow uparrow-white" style="left: 34px;"></div>
+
+                  <div class="filterBubble">
+                      <ul class="filterUL" style="margin-top:0px">
+                        <li data-id="all" style="display:none"><a href="#">All</a></li>
+                          <li data-id="state" class="selected" style="white-space:nowrap"><a href="#">Entire State</a></li>
+                          <li data-id="city"><a href="#">Cities</a></li>
+                          <li data-id="counties"><a href="#">Counties</a></li>
+                          <li data-id="zip" style="white-space:nowrap"><a href="#">Zip Code</a></li>
+                          
+                          <li data-id="custom" class="hideFilter"><a href="#">Lat/Lon</a></li>
+                          <li data-id="current" class="hideFilter"><a href="#">Nearby</a></li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+
+      <!-- Secondary Location Filters -->
+      
+    <div style="float:left;display:none" class="currentCities">
+
+        <div class="filterField">
+            <div class="filterLabel filterLabelMain">Cities</div>
+
+            <div class="cityText"></div>
+
+        </div>
+
+      </div>
+
+      <div style="float:left;display:none" class="currentCounties">
+
+        <div class="filterField">
+            <div class="filterLabel filterLabelMain"></div>
+
+            <div class="filterClick" style="position:relative; float:left;">
+              County Holder
+            </div>
+        </div>
+
+      </div>
+
+      <div id="coordFields" style="display:none;float:left;min-height:40px;">
+          <div style="float:left; margin-right: 6px">
+            <div class="filterLabel filterLabelMain">Latitude</div>
+              <input id="lat" class="filterClick mobileWide textInput" placeholder="Latitude" type="text" style="width: 120px; margin-top: 0px" />
+          </div>
+          <div style="float:left; margin-right: 6px">
+            <div class="filterLabel filterLabelMain">Longitude</div>
+              <input id="lon" class="filterClick mobileWide textInput" placeholder="Longitude" type="text" style="width: 120px; margin-top: 0px" />
+          </div>
+      </div>
+
+       <div id="zipFields" style="display:none; float:left">
+      
+          <div style="float:left; margin-right:6px; min-height:50px">
+            <div class="filterLabel filterLabelMain">Zip</div>
+              <input id="zip" class="filterClick mobileWide textInput" type="text" placeholder="Enter Zip" style="width: 132px; margin-top: 0px" title="Enter zip code" />
+          </div>
+          <div id="distanceInZip" style="float: left;"></div>
+          
+          <div class="confirmationButtons" style="display:none;float:left; margin-top: 5px">
+              <a id="doneZip" class="button orangeButton" href="#">apply</a>
+              
+          </div>
+          
+      </div>
+
+      <div id="currentButtons" style="float:left;">
+          <div id="doneLatLng" href="#"></div>
+      </div>
+
+      <div id="distanceInNear" style="float: left;"></div>
+
+      <div id="distanceField" class="filterField" style="display:none; float:left; min-height:50px">
+      
+        <div class="filterLabel filterLabelMain">Distance</div>
+
+          <select class="distance triggerSearch">
+              <option value="">Distance...</option>
+              <option value="1">1 Mile</option>
+              <option value="2">2 Miles</option>
+              <option value="3">3 Miles</option>
+              <option value="5">5 Miles</option>
+              <option value="10">10 Miles</option>
+              <option value="15">15 Miles</option>
+              <option value="20">20 Miles</option>
+              <option value="25">25 Miles</option>
+              <option value="30" selected="selected">30 Miles</option>
+              <option value="40">40 Miles</option>
+              <option value="50">50 Miles</option>
+              <option value="60">60 Miles</option>
+              <option value="75">75 Miles</option>
+              <option value="100">100 Miles</option>
+              <option value="150">150 Miles</option>
+              <option value="200">200 Miles</option>
+              <option value="300">300 Miles</option>
+              <option value="400">400 Miles</option>
+              <option value="500">500 Miles</option>
+          </select>
+      </div>
+    <!-- /Secondary Location Filters -->
+      
+
+    <!-- WHERE -->
+          <div class="adminTools" style="display:none;width:330px;float:left">
+          
+          <div class="filterField" style="float:none;margin-right:0px">
+            <div class="hideWhere" style="float:right;"><i class="material-icons">&#xE5CD;</i></div>
+
+                    <div class="filterLabel filterLabelMain">WHERE Filter</div>
+
+                <textarea class="whereFilter filterClick mobileWide textInput" value="" style="width:100%;max-width:300px;" rows="3"></textarea>
+          </div>
+
+            </div>
+
+    <!-- /WHERE -->
+
+
+  </div>
+  <!-- /LOCATION SEARCH -->
+
+  <div id="productCodesHolder" class="filterField localonly">
+    <div class="filterLabel filterLabelMain">Product Categories</div>
+
+    <!--
+    <select id="selectProduct" class="selectMenu" style="float:left">
+        <option value="1">HS Code(s)</option>
+    </select>
+    -->
+    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
+  </div>
+
+  <div class="searchField" style="float:left">
+      &nbsp;<br>
+    <div>
+      <!-- Submit Button -->
+        <div style="float:left; position:relative; margin-right:5px;">
+        
+        <div class="filterLabel filterLabelMain"></div>
+
+        <!-- basicSearch goSearch searchHeight -->
+        <div id="goSearch" class="detailbutton" href="#" style="float:left;"><span style="font-size:14pt;padding-left:2px">&#128269;</span></div>
+
+        <!-- showAll showAllResults searchHeight -->
+        <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
+          
+        <div id="catListHolderShow" class='detailbutton lowerButton' style="float:left;margin-left:8px">Industries . . .</div>
+          </div>
+          <!-- /Submit Button -->
+
+      </div>
+
+  </div><!-- /searchField -->
+
+</div>
+      <!-- End Common Filters -->
+
+
+<!-- HS Codes -->
+<div id="topPanel" style="position: relative; overflow:auto; display:none">
+
+  <div id="hideTopPanel" style="position:absolute;right:5px;top:8px;color:#333;cursor:pointer;padding-right:10px">&#10005;</div>
+
+  <!--
+  Enter a code or keywords.<br><br>
+  -->
+  
+
+  <div style="clear:both"></div>
+
+  <div style="displayX:none">
+    <!-- 
+      Products for Export
+      add arrow to show this
+      Populate a dropdown 
+
+      <div class="catHeader">
+        <b>Products</b>
+      </div>
+    -->
+    
+    <div id="hsCatList">
+      <div range="01-05" text="">Animals & Animal Products</div>
+      <div range="06-15" text="">Vegetable Products</div>
+      <div range="16-24" text="">Foodstuffs</div>
+      <div range="25-27" text="">Mineral Products</div>
+      <div range="28-38" text="">Chemicals & Allied Industries</div>
+      <div range="39-40" text="">Plastics / Rubber</div>
+      <div range="41-43" text="">Raw Hides, Skins, Leather & Furs</div>
+      <div range="44-49" text="">Wood & Wood Products</div>
+      <div range="50-63" text="">Textiles</div>
+      <div range="64-67" text="">Footwear / Headgear</div>
+      <div range="68-71" text="">Stone / Glass</div>
+      <div range="72-83" text="">Metals</div>
+      <div range="84-85" text="">Machinery / Electrical</div>
+      <div range="86-89" text="">Transportation</div>
+      <div range="90-92" text="">Cameras, Instruments, Clocks</div>
+      <div range="93-93" text="">Arms and Ammunition</div>
+      <div range="94-94" text="">Furniture and Bedding</div>
+      <div range="95-95" text="">Toys and Games</div>
+      <div range="96-96" text="">Miscellaneous Manufacturing</div>
+      <div range="97-97" text="">Art and Antiques</div>
+    </div>
+  </div>
+
+  <div style="clear:both;"></div>
+
+  <div id='subcatHeaderHolder'>
+    <b><div id='allProductCats' class='backArrow'>&#60;&nbsp;</div> <span id='subcatHeader'>Harmonized System (HS) Product Categories</span></b>
+  </div>
+
+  <a name="listtop"></a>
+
+  
+  <div id="productSubcats" class="menu" style="padding-top:14px">
+  </div>
+
+  <div id="topPanelFooter">Show more</div>
+</div>
+<!-- END HS Codes -->
+
+
+    </div>
+
+
+
+    <div class="leftWidget eWidget">
       <div class="widgetbar">ENVIRONMENTAL INPUT</div>
       <div class="topboxes" style="min-height: 120px">
         <div style="font-size: 18px">Set your goals</div>
@@ -192,13 +531,13 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
       </div>
     </div>
-    <div style="overflow: auto;">
+    <div style="overflow: auto;" class="eWidget">
      
         <div class="widgetbar">
           <div style="float:left">POSITIVE OUTCOMES</div>
           <div style="float:right; padding-right:10px"><span style='color:#555'>YOUR SCORE:</span> 500</div>
         </div>
-        <div class="topboxes" style="min-height: 120px">
+        <div class="topboxes outcomesbox" style="min-height: 120px">
 
           <div style="float:left;width:260px; margin-right:10px">
             <div>1. Value-Added <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
@@ -220,7 +559,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     </div>
     <div style="clear:both"></div>
 
-    <div class="leftWidget" style="margin-bottom:22px">
+    <div class="leftWidget eWidget" style="margin-bottom:22px">
       <div class="widgetbar" style="padding-left:5px">
         <a href="../../samples/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
         AGRICULTURE, FORESTRY, FISHING AND HUNTING</div>
@@ -252,8 +591,13 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       </div>
     </div>
 
-    <div style="overflow: auto;">
-        <div class="widgetbar">ADVERSE IMPACTS</div>
+    <div style="overflow: auto;" class="eWidget">
+        <div class="widgetbar">
+          ADVERSE IMPACTS
+          <div style="float:right; font-weight:400; padding-right:10px">
+          Supply Chain - Full System - Production
+          </div>
+        </div>
       
         <div class="column50"><img src="img/impacts1.gif" style="width:100%; padding-right:40px" /></div>
         <div class="column50mid">&nbsp;</div>
@@ -264,8 +608,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 </section>
 
 <!-- Start HTML -->
-<section id="data" style="overflow:auto">
-<div class="content displayOnload" style="display:none">
+<section id="data" style="overflow:auto" class="eWidget">
+<div class="content displayOnload" style="display:none; padding-bottom:10px">
   <div id="flexwrapper">
     <div id="hublist">
 
@@ -304,6 +648,71 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 </section>
 <!-- End HTML -->
+
+<section id="directory" class="litePanel">
+  <div class="content">
+    <h2 style="margin-top:0px">Exporter Directory</h2>
+    <div id="dataListTop" class='exporter' style="overflow:auto;margin-bottom:8px">
+
+      <div style='float:left'>
+        Select up to 10 companies when requesting contact info.
+      </div>
+
+      <div id="rightButtons" style="float:right;">
+        <div id="showMap" class="detailbutton" style="display:none; float:left;margin-right:10px">Map</div>
+        <div id="toggleList" class="detailbutton localonly" style="float:left;margin-right:10px">Toggle</div>
+          <div id="requestInfo" class='orangeButton detailbutton lowerButton' style="float:left;">Request Contact Info</div>
+      </div>
+
+    </div>
+    <div id="resultsHeader">
+    </div>
+    <div id="dataList"></div>
+
+    <!-- For D3 Embedded CSV Sheet -->
+    <div style="overflow:hidden;position:relative">
+      <div id="dataGrid">
+        <div class="eTable" id="d3div"></div>
+      </div>
+    </div>
+    <style>
+        .eTable table {
+            border-collapse: collapse;
+            border: 2px black solid;
+            font: 12px sans-serif;
+            min-height: 10px;
+        }
+        .eTable td {
+            border: 1px black solid;
+            padding: 5px;
+            white-space: nowrap;
+        }
+        .eTable {
+          margin-bottom:30px;
+          overflow: auto;
+        }
+        .eTable > table > tr:first-child {
+          background-color: #eee;
+        }
+    </style>
+    <!-- End D3 Embedded CSV Sheet -->
+
+  </div>
+
+  <div style="display:none">
+    <div id="itemMenu" class="filterBubble">
+      <div>View Details</div>
+      <div>Supply Chain</div>
+      <div>Industry Map</div>
+      <div>Add to Contacts</div>
+      <div>Submit Updates</div>
+      <hr>
+      <div id='showLocalNews'>Local News</div>
+    </div>
+  </div>
+
+</section>
+
 </td></tr></table>
 
 <!--
@@ -311,6 +720,8 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
   Copy using a text editor and click the pencil icon <a href="https://github.com/modelearth/community/blob/master/map/map.csv">here</a> to paste into GitHub for review. 
   <span style="white-space: nowrap;">Or you can fork</span> the <a href="https://github.com/modelearth/community">GitHub Repo</a> and commit using <a href="https://desktop.github.com/">GitHub Desktop</a>.
 -->
+
+
 
 <script>
 

@@ -125,6 +125,7 @@ function loadScript(url, callback)
 		console.log("loadScript script already available: " + url);
 		callback();
 	}
+	// Nested calls are described here: https://books.google.com/books?id=ZOtVCgAAQBAJ&pg=PA6&lpg=PA6
 }
 function getUrlID(url,root) {
 	let urlID = url.replace(root,"").replace("https://","").replace(/\//g,"-").replace(/\./g,"-");
