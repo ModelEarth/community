@@ -80,7 +80,9 @@
     border-radius: 6px;
     border: 1px solid #d0d5cb;
     position: absolute;
-    z-index: 10;
+    z-index: 1000;
+    font-size: 15px;
+    line-height: 1.5;
     background: #fff;
     padding: 15px;
     vertical-align: baseline;
