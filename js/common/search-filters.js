@@ -128,6 +128,8 @@ $(document).ready(function () {
     
 
     $("#filterClickLocation").click(function(event) {
+    	console.log("show location filters");
+
 		//$('.hideMetaMenuClick').trigger("click"); // Otherwise covers location popup. Problem: hides hideLayers/hideLocationsMenu.
 		if ($("#showLocations").is(':visible')) {
             //hideFieldSelector();
@@ -137,7 +139,8 @@ $(document).ready(function () {
             $("#showLocations").show();
 			$("#hideLocations").hide();
 		}
-		$("#filterClickLocation .filterBubbleHolder").toggle();
+		$("#keywordFields").hide();
+		$("#filterLocations").show();
 
 		//$("#filterClickCategory .filterBubbleHolder").hide();
 		
@@ -194,10 +197,11 @@ $(document).ready(function () {
 
 
 	$("#keywordsTB").click(function() {
-		if ($(".fieldSelector").is(':visible')) {
-			$(".fieldSelector").hide();
+		if ($("#keywordFields").is(':visible')) {
+			$("#keywordFields").hide();
 		} else {
-			$(".fieldSelector").show();
+			$("#filterLocations").hide();
+			$("#keywordFields").show();
 		}
 	    event.stopPropagation();
 	

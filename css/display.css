@@ -265,3 +265,60 @@ iframe {
 	    width: 100%;
 	}
 }
+
+
+/* Determine which are needed. Copy to display repo. Used by location menu */
+
+.filterArrow {
+	position:absolute;
+	right:0px;
+	padding:6px 7px 0 0;
+}
+
+.filterUL {
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1; /* Switch these 3 back to 2 after activating https for nearby geolocation lookup. */
+	list-style: none;
+	padding-left: 0;
+	font-size: 12pt;
+	margin-bottom: 0px !important;
+}
+.filterUL li.selected a {
+	color: #000;
+	/* font-weight: bold; */ /* Loads too slow when bold. Also too bold in community */
+}
+.filterUL li {
+	padding: 8px;
+	margin-left: -6px;
+}
+.filterUL li:hover {
+	background-color: #f6f6f6;
+	border-radius: 5px;
+    cursor: pointer;
+}
+.filterUL li a {
+	color: #888;
+	text-decoration: none;
+}
+.filterUL li a:hover {
+    text-decoration: none;
+}
+.uparrow {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: absolute;
+	top: 5px;
+	margin-left: -10px;
+}
+.uparrow-grey {
+	border-bottom: 10px solid #aaa;
+	z-index: 9998;
+}
+.uparrow-white {
+	border-bottom: 10px solid #fff;
+	margin-top: 1px;
+	z-index: 9999;
+}
