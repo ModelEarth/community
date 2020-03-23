@@ -1,6 +1,6 @@
 ## Description
 
-Scrapes and merges the USDA's lists of [farmer's markets](https://github.com/alltheplaces/alltheplaces) and [on-farm markets](https://github.com/alltheplaces/alltheplaces). The results are saved into CSV and JSON files.
+Scrapes and merges the USDA's lists of [farmer's markets](https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx) and [on-farm markets](https://search.ams.usda.gov/onfarmmarkets/ExcelExport.aspx). The results are saved into CSV and JSON files.
 
 ## Dependencies
 
@@ -12,3 +12,21 @@ Scrapes and merges the USDA's lists of [farmer's markets](https://github.com/all
 - `yarn install` : Install dependencies.
 - `make all`: Scrape, process, and merge.
 - The results are placed into the folder `out/merged/`.
+
+
+Had to run in the virtual folder before `yarn install`  
+
+brew reinstall yarn
+
+Question: How do we add yarn.lock to .gitignore?
+"yarn.lock" is not omitting the file.  
+
+
+This can probably be deleted:  
+
+- `virtualenv .env`
+- `source .env/bin/activate` : Activate python3 virtual environment.
+- `pip install --upgrade pip`
+
+
+ 
