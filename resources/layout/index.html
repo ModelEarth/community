@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="../../css/search-filters.css" />
 <link rel="stylesheet" href="../../css/display.css" />
 
+
 <script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../js/common/common.js"></script>
 <script type="text/javascript" src="../../js/common/search-filters.js"></script>
@@ -56,7 +57,8 @@
 }
 .outcomesbox span {
   float:right;
-  padding-right:20px;
+  padding-rightX:20px;
+  font-weight: bold; /* the number 50 */
 }
 .leftWidget {
   float:left;
@@ -73,7 +75,7 @@
   }
 }
 .column50 {
-  width:270px;
+  width:250px;
   float:left;
 }
 .column50mid {
@@ -176,13 +178,27 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       </div>
       <div style="clear:both"></div>
 
-      <!--
-        Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4
-        https://datascape.github.io/community/#columns=population:31;education:50
-      -->
-      <!-- Common Filters -->
-      <div class="pagePanel" style="margin-bottom:12px">
+  <!--
+    Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4
+    https://datascape.github.io/community/#columns=population:31;education:50
+  -->
+  <!-- Common Filters -->
+  <div class="pagePanel" style="margin-bottom:12px;">
 
+
+  <div id="productCodesHolder" class="filterField localonly">
+    <div class="filterLabel filterLabelMain">Categories</div>
+
+    <!--
+    <select id="selectProduct" class="selectMenu" style="float:left">
+        <option value="1">HS Code(s)</option>
+    </select>
+    -->
+    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
+  </div>
+
+
+  <!-- KEYWORD SEARCH -->
   <div style="float:left">
     <div class="filterField keywordField">
       <!-- Search Companies -->
@@ -203,7 +219,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           <!-- maxlength="400"  -->
           <input id="keywordsTB" autocomplete="off" 
           style="width:100%;max-width:400px;padding-right:27px;" class="filterClick mobileWide textInput si-input" type="text" value="" onblurXX="SearchFormTextCheck(this, 0)" onfocusXX="SearchFormTextCheck(this, 1)" placeholderX="Search" onkeyup="return SearchEnter(event);" onkeypressX="return SearchEnter(event);" />
-        </div>
+      </div>
 
     </div>
 
@@ -212,57 +228,57 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 
     <div class="keywordBubble">
-      <div class="fieldSelector filterBubbleHolder" style="margin-top:0px">
-          <div class="uparrow uparrow-grey" style="left: 34px;"></div>
-                <div class="uparrow uparrow-white" style="left: 34px;"></div>
+      <div id="keywordFields" class="fieldSelector filterBubbleHolder" style="margin-top:0px">
+            <div class="uparrow uparrow-grey" style="left: 34px;"></div>
+            <div class="uparrow uparrow-white" style="left: 34px;">
+            </div>
 
-                <div class="filterBubble">
+            <div class="filterBubble">
 
-            <div id="findWhat">
-              <div id="hideAdvanced" style="float:right;cursor:pointer">&#10005;</div>
+              <div id="findWhat">
+                <div id="hideAdvanced" style="float:right;cursor:pointer">&#10005;</div>
 
-              <div style="display:none;float:left;margin-right:20px">
-                <input type="checkbox" name="findLocation" id="findLocation" value="findLocation" checked><label for="findLocation" class="filterCheckboxTitle">Search Listings</label><br>
-                <input type="checkbox" name="findNews" id="findNews" value="findNews" checked><label for="findNews" class="filterCheckboxTitle">Search Newsroom</label><br>
-              </div>
-              <div style="float:left;" id="findLocationWith">
-                          <div>
-                            <input type="checkbox" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
-                          </div>
-                          <div>
-                            <input type="checkbox" name="findAddress" id="findAddress" value="1" checked><label for="findAddress" class="filterCheckboxTitle"> In Website URL</label>
-                          </div>
-                          <div>
-                            <input type="checkbox" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
-                          </div>
-                          <div>
-                            <input type="checkbox" name="findDetails" id="findDetails" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Industry</label>
-                          </div>
-                          <div>
-                            <input type="checkbox" name="findProduct" id="findProduct" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Product Description</label>
-                          </div>
-                          <div style="display:none">
-                            <input type="checkbox" name="findNews" id="findNews" value="1"><label for="findNews" class="filterCheckboxTitle"> In Newsroom</label>
-                          </div>
-                          <div style="display:none">
-                            <input type="checkbox" name="findContent" id="findContent" value="1"><label for="findContent" class="filterCheckboxTitle"> In Georgia.org</label>
-                          </div>
-                      </div>
+                <div style="display:none;float:left;margin-right:20px">
+                  <input type="checkbox" name="findLocation" id="findLocation" value="findLocation" checked><label for="findLocation" class="filterCheckboxTitle">Search Listings</label><br>
+                  <input type="checkbox" name="findNews" id="findNews" value="findNews" checked><label for="findNews" class="filterCheckboxTitle">Search Newsroom</label><br>
+                </div>
+                <div style="float:left;" id="findLocationWith">
+                    <div>
+                      <input type="checkbox" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="findAddress" id="findAddress" value="1" checked><label for="findAddress" class="filterCheckboxTitle"> In Website URL</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="findDetails" id="findDetails" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Industry</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" name="findProduct" id="findProduct" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Product Description</label>
+                    </div>
+                    <div style="display:none">
+                      <input type="checkbox" name="findNews" id="findNews" value="1"><label for="findNews" class="filterCheckboxTitle"> In Newsroom</label>
+                    </div>
+                    <div style="display:none">
+                      <input type="checkbox" name="findContent" id="findContent" value="1"><label for="findContent" class="filterCheckboxTitle"> In Georgia.org</label>
                     </div>
                 </div>
+              </div>
+            </div>
                 
       </div>
     </div>
   </div>
+  <!-- END KEYWORD SEARCH -->
+
 
   <!-- LOCATION SEARCH - currently inactive - copy script from site/js/embed.js -->
-  <div class="searchElementsPosition" style="float:left;"></div>
-
   <div style="float:left;">
-      
-      <div class="searchElements" style="float:left; displayX:none">
 
-        <div class="filterField">
+
+        <div class="filterField searchElements" style="overflow: visible;">
             <div class="filterLabel filterLabelMain">Where</div>
 
             <div class="filterClick" id="filterClickLocation" style="position:relative; float:left;">
@@ -271,40 +287,47 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
                 <i id="showLocations" class="material-icons" style="font-size:24px;cursor:pointer">&#xE409;</i>
                 <i id="hideLocations"  class="material-icons" style="font-size:24px;cursor:pointer;display:none">&#xE313;</i>
               </div>
-              <div class="filterSelected" data-selectedXXXREMOVE="all" style="padding-right:28px">Entire State:</div>
-            
+              <div class="filterSelected" style="padding-right:28px">Entire State</div>
+        </div>
 
-              <!-- Stores location options -->
+
+        <div class="keywordBubble">
+            <div id="filterLocations" class="fieldSelector filterBubbleHolder">
+
+              <!-- Stores location options. Not displayed. -->
               <select style="display:none;" name="locationDD" id="locationDD">
                 <option value="all" style="display:none">All</option>
-                  <option value="state" selected="selected">Entire State</option>
+                  <option value="state" selected="selected">Entire State1</option>
                   <option value="current">Nearby</option>
                   <option value="custom">Lat/Lon</option>
                   <option value="city">Search by City</option>
                   <option value="zip">Search by Zip</option>
                   <option value="counties">Search by County</option>
               </select>
-              <div class="filterBubbleHolder" style="display:none;margin-left:-14px">
-                  <div class="uparrow uparrow-grey" style="left: 34px;"></div>
-                  <div class="uparrow uparrow-white" style="left: 34px;"></div>
+            
+                <div class="uparrow uparrow-grey" style="left: 34px;">
+                </div>
 
-                  <div class="filterBubble">
-                      <ul class="filterUL" style="margin-top:0px">
-                        <li data-id="all" style="display:none"><a href="#">All</a></li>
-                          <li data-id="state" class="selected" style="white-space:nowrap"><a href="#">Entire State</a></li>
-                          <li data-id="city"><a href="#">Cities</a></li>
-                          <li data-id="counties"><a href="#">Counties</a></li>
-                          <li data-id="zip" style="white-space:nowrap"><a href="#">Zip Code</a></li>
-                          
-                          <li data-id="custom" class="hideFilter"><a href="#">Lat/Lon</a></li>
-                          <li data-id="current" class="hideFilter"><a href="#">Nearby</a></li>
-                      </ul>
-                  </div>
-              </div>
+                <div class="uparrow uparrow-white" style="left: 34px;">
+                </div>
+
+                <div class="filterBubble">
+                    <ul class="filterUL" style="margin-top:0px">
+                      <li data-id="all" style="display:none"><a href="#">All</a></li>
+                        <li data-id="state" class="selected" style="white-space:nowrap"><a href="#">Entire State</a></li>
+                        <li data-id="city"><a href="#">Cities</a></li>
+                        <li data-id="counties"><a href="#">Counties</a></li>
+                        <li data-id="zip" style="white-space:nowrap"><a href="#">Zip Code</a></li>
+                        
+                        <li data-id="custom" class="hideFilter"><a href="#">Lat/Lon</a></li>
+                        <li data-id="current" class="hideFilter"><a href="#">Nearby</a></li>
+                    </ul>
+                </div>
+
             </div>
+          </div>
         </div>
-
-      </div>
+        
 
 
       <!-- Secondary Location Filters -->
@@ -334,11 +357,13 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
       <div id="coordFields" style="display:none;float:left;min-height:40px;">
           <div style="float:left; margin-right: 6px">
-            <div class="filterLabel filterLabelMain">Latitude</div>
+            <div class="filterLabel filterLabelMain">Latitude
+            </div>
               <input id="lat" class="filterClick mobileWide textInput" placeholder="Latitude" type="text" style="width: 120px; margin-top: 0px" />
           </div>
           <div style="float:left; margin-right: 6px">
-            <div class="filterLabel filterLabelMain">Longitude</div>
+            <div class="filterLabel filterLabelMain">Longitude
+            </div>
               <input id="lon" class="filterClick mobileWide textInput" placeholder="Longitude" type="text" style="width: 120px; margin-top: 0px" />
           </div>
       </div>
@@ -346,9 +371,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
        <div id="zipFields" style="display:none; float:left">
       
           <div style="float:left; margin-right:6px; min-height:50px">
-            <div class="filterLabel filterLabelMain">Zip</div>
+            <div class="filterLabel filterLabelMain">Zip
+            </div>
               <input id="zip" class="filterClick mobileWide textInput" type="text" placeholder="Enter Zip" style="width: 132px; margin-top: 0px" title="Enter zip code" />
           </div>
+
           <div id="distanceInZip" style="float: left;"></div>
           
           <div class="confirmationButtons" style="display:none;float:left; margin-top: 5px">
@@ -362,7 +389,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           <div id="doneLatLng" href="#"></div>
       </div>
 
-      <div id="distanceInNear" style="float: left;"></div>
+      <div id="distanceInNear" style="float: left;">
+        
+      </div>
 
       <div id="distanceField" class="filterField" style="display:none; float:left; min-height:50px">
       
@@ -413,16 +442,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
   </div>
   <!-- /LOCATION SEARCH -->
 
-  <div id="productCodesHolder" class="filterField localonly">
-    <div class="filterLabel filterLabelMain">Product Categories</div>
 
-    <!--
-    <select id="selectProduct" class="selectMenu" style="float:left">
-        <option value="1">HS Code(s)</option>
-    </select>
-    -->
-    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
-  </div>
 
   <div class="searchField" style="float:left">
       &nbsp;<br>
@@ -446,9 +466,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
   </div><!-- /searchField -->
 
-</div>
-      <!-- End Common Filters -->
 
+<!-- End Common Filters -->
+<div style="clear:both"></div>
 
 <!-- HS Codes -->
 <div id="topPanel" style="position: relative; overflow:auto; display:none">
@@ -539,7 +559,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         </div>
         <div class="topboxes outcomesbox" style="min-height: 120px">
 
-          <div style="float:left;width:260px; margin-right:10px">
+          <div style="float:left;width:230px; margin-right:30px">
             <div>1. Value-Added <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
             <div>2. Quality Jobs <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
             <div>3. Clean Air <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
@@ -547,7 +567,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
             <div>5. Clean Energy <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
             
           </div>
-          <div style="float:left;width:260px">
+          <div style="float:left;width:250px">
             <div>6. Local Suppliers <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
             <div>7. Green Materials <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
             <div>8. Inclusive Design <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
@@ -599,9 +619,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           </div>
         </div>
       
-        <div class="column50"><img src="img/impacts1.gif" style="width:100%; padding-right:40px" /></div>
-        <div class="column50mid">&nbsp;</div>
-        <div class="column50"><img src="img/impacts2.gif" style="width:100%; padding-right:40px" /></div>
+        <div class="column50" style="float:left"><img src="img/impacts1.gif" style="width:100%; padding-right:40px" /></div>
+        <div class="column50mid" style="float:left">&nbsp;</div>
+        <div class="column50" style="float:left"><img src="img/impacts2.gif" style="width:100%; padding-right:40px" /></div>
       
     </div>
   </div>
