@@ -256,7 +256,7 @@ function dualmapLoaded(param) {
 	if (param.data != "smart") {
 		document.getElementById("map1").style.display = "block";
 		// INTERMODAL PORTS
-	    dp = {
+	    let dp1 = {
 	      selector: "aside.Intermodal_Ports",
 	      delimiter: ",",
 	      numColumns: ["lat","lon"],
@@ -265,28 +265,35 @@ function dualmapLoaded(param) {
 	      //scaleType: "scaleQuantile",
 	      //scaleType: "scaleThreshold",
 	    }
-	    //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
-	    dp.name = "Intermodal Ports"
-	    dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-	    //dp.color = '#0033ff'; // Alternative to scale
-	    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+	    //dp1.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
+	    dp1.name = "Intermodal Ports"
+	    dp1.data = readData(dp1.selector, dp1.delimiter, dp1.numColumns, dp1.valueColumn);
+	    //dp1.color = '#0033ff'; // Alternative to scale
+	    dp1.scale = getScale(dp1.data, dp1.scaleType, dp1.valueColumn);
 
-	    dp.group = L.layerGroup();
-	    //dp.group2 = L.layerGroup();
-	    //dp.iconName = 'device_hub';
-	    dp.iconName = 'language';
-	    //dataParameters.push(dp);
+	    dp1.group = L.layerGroup();
+	    //dp1.group2 = L.layerGroup();
+	    //dp1.iconName = 'device_hub';
+	    dp1.iconName = 'language';
+	    //dataParameters.push(dp1);
 	    
-	    var map1 = populateMap('map1', dp);
-	    addIcons(dp);
-	    loadScript(root + 'js/d3/d3-legend.js', function(results){
-	    	addLegend(dp.scale, dp.scaleType, dp.name);
-	    });
+	    populateMap('map1', dp1, function(results) {
+		    addIcons(dp1);
+		    loadScript(root + 'js/d3/d3-legend.js', function(results){
+		    	addLegend(dp1.scale, dp1.scaleType, dp1.name);
+		    });
 
-	    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+		    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+	    });
 	}
 
-	loadFromCSV('map2', root + "tools/map.csv", function(results) {
+	// MAP 2
+	let dp2 = {
+      dataset: root + "tools/map.csv",
+      latitude: 31.6074,
+      longitude: -81.8854
+    }
+	loadFromCSV('map2', dp2, function(results) {
 		//alert("back");
 	//loadFromCSV('map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success

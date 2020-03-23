@@ -77,7 +77,27 @@ L.Map.addInitHook(function () {
   this.getContainer()._leaflet_map = this;
 });
 
-function loadFromCSV(whichmap,dataset,callback) {
+function mix(source, target) { // Combine two objects
+   for(var key in source) {
+     if (source.hasOwnProperty(key)) {
+        target[key] = source[key];
+     }
+   }
+   return target;
+}
+function loadFromCSV(whichmap,dp,callback) {
+
+  let defaults = {};
+  defaults.zoom = 7;
+  defaults.numColumns = ["zip","lat","lon"];
+  defaults.valueColumn = "name";
+  defaults.latColumn = "lat";
+  defaults.lonColumn = "lon";
+  //defaults.scaleType = "scaleQuantile";
+  defaults.scaleType = "scaleOrdinal";
+  defaults.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
+
+  dp = mix(dp,defaults); // Gives priority to dp
 
   let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
   var container = L.DomUtil.get(map);
@@ -85,7 +105,7 @@ function loadFromCSV(whichmap,dataset,callback) {
     map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
-      zoom: 7
+      zoom: dp.zoom
     });
   }
 
@@ -97,18 +117,9 @@ function loadFromCSV(whichmap,dataset,callback) {
   //      lonColumn: "lon",
   //var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
 
-  d3.csv(dataset).then(function(data) {
-    
-      dp = {
-        numColumns: ["zip","lat","lon"],
-        valueColumn: "name",
-        latColumn: "lat",
-        lonColumn: "lon",
-        //scaleType: "scaleQuantile",
-        scaleType: "scaleOrdinal",
-      }
-      dp.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
-      //dp.name2 = "Intermodal Ports";
+  // We are currently assuming dp.dataset is a CSV file.
+  d3.csv(dp.dataset).then(function(data) {
+      
       dp.data = readCsvData(data, dp.numColumns, dp.valueColumn);
       dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
       dp.group = L.layerGroup();
@@ -155,7 +166,7 @@ function loadFromCSV(whichmap,dataset,callback) {
       //map.addLayer(overlays["Intermodal Ports"]);
 
       map.addLayer(overlays2[dp.name]);
-      callback(map); // Sends to function(results).  map might not be needed as paramter
+      callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
       //return map;
   })
   .catch(function(error){ 
@@ -187,12 +198,20 @@ dataParameters.forEach(function(ele) {
   //overlays2[ele.name] = ele.group; // Add to layer menu
 })
 
-function populateMap(whichmap, dp) {
+function populateMap(whichmap, dp, callback) {
+
+    let defaults = {};
+    defaults.zoom = 7;
+    if (dp.latitude && dp.longitude) {
+      mapCenter = [dp.latitude,dp.longitude]; 
+    }
+
+    dp = mix(dp,defaults); // Gives priority to dp
 
     var map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
-      zoom: 6,
+      zoom: dp.zoom,
       zoomControl: false
     });
     L.control.zoom({
@@ -244,7 +263,8 @@ function populateMap(whichmap, dp) {
     
     map.addLayer(overlays[dp.name]);
 
-    return map;
+    callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
+    //return map;
 }
 
 

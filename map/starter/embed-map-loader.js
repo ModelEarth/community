@@ -346,7 +346,12 @@ function dualmapLoaded() {
 	let root = "https://modelearth.github.io/community/";
 	//root = "https://model.earth/community/"; // CORS would need to be adjusted on server
 	//alert(root + "tools/map.csv");
-	loadFromCSV('map2', root + "tools/map.csv", function(results) {
+	let dp1 = {
+	  dataset: root + "tools/map.csv",
+	  latitude: 31.6074,
+	  longitude: -81.8854
+	}
+	loadFromCSV('map2', dp1, function(results) {
 		//alert("back");
 	//loadFromCSV('map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success

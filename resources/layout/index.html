@@ -503,7 +503,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 </aside>
 
 
-<div class="displayOnload" style="display:none;position:relative;">
+<div class="displayOnload" style="display:none;position:relative">
   <div id="map1"></div>
   <div id="legendHolder">
     <div id="allLegends"></div>
@@ -515,16 +515,16 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 <table>
   <tr>
-    <td style="vertical-align:top;border-right:#ddd 1px solid;">
+    <td style="vertical-align:top;border-right:#ddd 1px solid">
   <div id='sidecolumn' class='hideprint'>
     
   </div>
 </td>
-<td style="width:100%">
+<td style="width:100%; vertical-align:top">
 
 <!-- INDUSTRIES -->
 <section id="industries" style="overflow:auto; padding-bottom:0px">
-  <div class="content" style="padding-top:30px; padding-bottom:0px;">
+  <div class="content" style="padding-top:30px; padding-bottom:0px">
 
     
     <h1 style='margin:0 0 4px 0'>Southeast Georgia&nbsp;Coalition</h1>
@@ -779,14 +779,20 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 <script>
 
-loadFromCSV('map1', "/community/tools/map.csv", function(results) {
-    // This function gets called by the geocode function on success
+// MAP 1
+let dp1 = {
+  dataset: "/community/tools/map.csv",
+  latitude: 31.6074,
+  longitude: -81.8854
+}
+dp1.zoom = 7;
+loadFromCSV('map1', dp1, function(results) { // Called on success
     layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
 });
 
 
-// INTERMODAL PORTS
-dp = {
+// MAP 2 - INTERMODAL PORTS
+let dp2 = {
   selector: "aside.Intermodal_Ports",
   delimiter: ",",
   numColumns: ["lat","lon"],
@@ -795,33 +801,44 @@ dp = {
   //scaleType: "scaleQuantile",
   //scaleType: "scaleThreshold",
 }
-//dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
-dp.name = "Intermodal Ports"
-dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
-//dp.color = '#0033ff'; // Alternative to scale
-dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+//dp2.name = dp2.selector.split(".").pop(); // name: Intermodal_Ports
+dp2.name = "Intermodal Ports";
 
-dp.group = L.layerGroup();
-//dp.group2 = L.layerGroup();
-//dp.iconName = 'device_hub';
-dp.iconName = 'language';
-//dataParameters.push(dp);
-addIcons(dp);
+dp2.latitude = 31.6074;
+dp2.longitude = -81.8854;
+
+// Bruswick GA - Jesup was not centering
+dp2.latitude = 31.1500;
+dp2.longitude =  -81.4915;
+
+dp2.zoom = 8;
+dp2.data = readData(dp2.selector, dp2.delimiter, dp2.numColumns, dp2.valueColumn);
+//dp2.color = '#0033ff'; // Alternative to scale
+dp2.scale = getScale(dp2.data, dp2.scaleType, dp2.valueColumn);
+
+dp2.group = L.layerGroup();
+//dp2.group2 = L.layerGroup();
+//dp2.iconName = 'device_hub';
+dp2.iconName = 'language';
+
+
+//dataParameters.push(dp2);
+addIcons(dp2);
 
 // Legend needs to reside below map on left, or in side popup
-//addLegend(dp.scale, dp.scaleType, dp.name);
+//addLegend(dp2.scale, dp2.scaleType, dp2.name);
 
-var map2 = populateMap('map2', dp);
-//basemaps["Rail"].addTo(map1);
+populateMap('map2', dp2, function(results) { // Called on success
 
-layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
 
-// Test
-//var mapX = loadFromCSV('map', "/community/tools/map.csv");
+  // Add another layer to existing map
+  dp2 = {}
+  dp2.dataset = "/community/tools/map.csv";
+  loadFromCSV('map2', dp2, function(results) {} );
 
-// DATA-DRIVEN
-//var map2 = loadFromCSV('map2', "/community/tools/map.csv");
-//var map2 = populateMap('map2', dp);
+  // Add Railroad layer
+  layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+});
 
 
 </script>
