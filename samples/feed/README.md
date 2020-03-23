@@ -72,6 +72,14 @@ Additional inventory columns:
 - latitude (integer)
 - longitude (integer)
 
+Optional:  
+
+- address
+- city
+- state
+- zip
+- phone
+
 Additional wishlist columns:  
 
 - need date (date)  
