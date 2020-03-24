@@ -283,40 +283,41 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div class="content">
       <div id="flexwrapper">
         <div id="hublist">
+          <div id="hublist-padding">
+            <h1>Data Driven Decision&nbsp;Making</h1>
 
-          <h1>Data Driven Decision&nbsp;Making</h1>
+            
 
-          
+            <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of <span style="white-space: nowrap">Goods & Services</span></h2>
+            
+            <!--
+            <a href="../samples/feed" class="button">Add your data feeds</a>
+            -->
 
-          <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of <span style="white-space: nowrap">Goods & Services</span></h2>
-          
-          <!--
-          <a href="../samples/feed" class="button">Add your data feeds</a>
-          -->
+            <input type="button" onclick="location.href='../samples/feed';" 
+            value="Add your data feeds" style="margin-top:20px; padding:10px" />
+            <br><br>
 
-          <input type="button" onclick="location.href='../samples/feed';" 
-          value="Add your data feeds" style="margin-top:20px; padding:10px" />
-          <br><br>
+            <!--
+            <h1 style="margin-bottom:0px">Sustainable Movement of Goods & Services</h1>
+            -->
+            <!-- Smart & Mobile -->
 
-          <!--
-          <h1 style="margin-bottom:0px">Sustainable Movement of Goods & Services</h1>
-          -->
-          <!-- Smart & Mobile -->
-
-          <!--
-          <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Smart Georgia - Data Driven Decision Making</h3>
-          -->
-          <!--Opportunities for Waze integration:<br><br>-->
+            <!--
+            <h3 style="margin-top:0px; margin-bottom:20px; font-size: 1.24em;">Smart Georgia - Data Driven Decision Making</h3>
+            -->
+            <!--Opportunities for Waze integration:<br><br>-->
 
 
-          <!--
-Southeast Georgia - Bioproducts and Energy Innovation
+            <!--
+  Southeast Georgia - Bioproducts and Energy Innovation
 
-A six county coalition focused on the production of sustainable fuels and chemicals from biomass, including plastics from plants, hydrogen infrastructure development, carbon capture, and transformative forestry and hydrology. Members of Appling, Bacon, Glynn, Jeff Davis, Pierce and Wayne counties are collaborating with the Georgia Centers of Innovation to implement analysis using the US EPA's Environmentally Enabled Input-Output model under the guidance of Dr. Wesley Ingwersen of the EPA, and Dr. Valerie Thomas of the Georgia Institute of Technology​​ schools of Industrial/Systems Engineering and Public Policy.
+  A six county coalition focused on the production of sustainable fuels and chemicals from biomass, including plastics from plants, hydrogen infrastructure development, carbon capture, and transformative forestry and hydrology. Members of Appling, Bacon, Glynn, Jeff Davis, Pierce and Wayne counties are collaborating with the Georgia Centers of Innovation to implement analysis using the US EPA's Environmentally Enabled Input-Output model under the guidance of Dr. Wesley Ingwersen of the EPA, and Dr. Valerie Thomas of the Georgia Institute of Technology​​ schools of Industrial/Systems Engineering and Public Policy.
 
-          -->
-          <div id="detaillist"></div>
-          <div id="narrowlist" style="display:none"></div>
+            -->
+            <div id="detaillist"></div>
+            <div id="narrowlist" style="display:none"></div>
+          </div>
         </div>
 
       <a name="gomap"></a>
@@ -672,11 +673,13 @@ A six county coalition focused on the production of sustainable fuels and chemic
       scrollWheelZoom: false,
       zoom: 7
     });
-    let dp2 = {
-      dataset: "/community/tools/map.csv",
-      latitude: 31.6074,
-      longitude: -81.8854
-    }
+
+    let dp2 = {};
+    dp2.dataset = "/community/tools/map.csv";
+    dp2.latitude = 31.6074;
+    dp2.longitude = -81.8854;
+    dp2.dataTitle = "Smart Data Projects";
+    dp2.listLocation = false;
     loadFromCSV('map2', dp2, function(results) {
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
     });
