@@ -110,7 +110,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         </div>
       
         <div id="hublist">
-          <div style="padding-right:30px">
+          <div id="hublist-padding">
             <h1>Data Driven Decision&nbsp;Making</h1>
             <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Smart & Sustainable Movement of <span style="white-space: nowrap">Goods & Services</span></h2><br>
             
@@ -176,6 +176,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
     dp2.dataset = "/community/farmfresh/scraper/out/raw/farmersmarkets-ga.csv";
     dp2.dataTitle = "Farm Fresh Produce";
+    dp2.titleColumn = "marketname";
     dp2.nameColumn = "marketname";
     dp2.addressColumn = "street";
     dp2.valueColumn = "Prepared";
