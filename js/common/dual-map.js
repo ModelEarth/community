@@ -439,7 +439,9 @@ function showList(dp) {
     // DETAILS LIST
     output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
     
-    if (element.title) {
+    if (element[dp.titleColumn]) {
+      output += "<b style='font-size:16px;color:#333'>" + element[dp.titleColumn] + "</b><br>";
+    } else if (element.title) {
       output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
     } else {
       output += "<b style='font-size:16px;color:#333'>" + element.name + "</b><br>";
