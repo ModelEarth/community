@@ -666,17 +666,18 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div class="content litePanel displayOnload" style="display:none; padding-bottom:10px">
   <div id="flexwrapper">
     <div id="hublist">
+      <div id="hublist-padding">
+        
+        <h2 style="font-size: 18px; margin:0px; font-weight: 600">Community Map Widget</h2><br>
+        
+          The map to the right will highlight local counties and <a href="../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
+          Lists will include <a href="../../farmfresh/ga/">farm fresh produce</a> and <a href="../../tools/#places">all&nbsp;the&nbsp;places</a>.
 
-      
-      <h2 style="font-size: 18px; margin:0px; font-weight: 600">Community Map Widget</h2><br>
-      
-        The map to the right will highlight local counties and <a href="../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
-        Lists will include <a href="../../farmfresh/ga/">farm fresh produce</a> and <a href="../../tools/#places">all&nbsp;the&nbsp;places</a>.
+        <h2 style="margin-top:10px"></h2>
 
-      <h2 style="margin-top:10px"></h2>
-
-      <div id="detaillist"></div>
-      <div id="narrowlist" style="display:none"></div>
+        <div id="detaillist"></div>
+        <div id="narrowlist" style="display:none"></div>
+      </div>
     </div>
 
     <a name="gomap"></a>
@@ -803,10 +804,10 @@ let dp2 = {
 }
 //dp2.name = dp2.selector.split(".").pop(); // name: Intermodal_Ports
 dp2.name = "Intermodal Ports";
+dp2.listLocation = false;
 
 dp2.latitude = 31.6074;
 dp2.longitude = -81.8854;
-
 // Bruswick GA - Jesup was not centering
 dp2.latitude = 31.1500;
 dp2.longitude =  -81.4915;
