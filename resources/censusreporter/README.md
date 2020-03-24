@@ -4,6 +4,8 @@
 GOAL: Since Wazimap provides a Python 3 fork of Census Reporter, we're using it to modernize Census Reporter. 
 Wazimap is used in Africa and India.  
 
+Beforehand, contact CensusReporter.org to see if they will upgrade to our Python 3.0 version with environmentally-enabled IO widgets added.  
+
 ### Mac Users
 
 [First, make Python3 default for Mac](virtualenv-troubleshooting.html)     

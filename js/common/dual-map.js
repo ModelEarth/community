@@ -90,12 +90,13 @@ function loadFromCSV(whichmap,dp,callback) {
   let defaults = {};
   defaults.zoom = 7;
   defaults.numColumns = ["zip","lat","lon"];
-  defaults.valueColumn = "name";
+  defaults.nameColumn = "name";
+  defaults.valueColumn = "name"; // For color coding
   defaults.latColumn = "lat";
   defaults.lonColumn = "lon";
   //defaults.scaleType = "scaleQuantile";
   defaults.scaleType = "scaleOrdinal";
-  defaults.name = "Smart Data Projects"; // Must match "map.addLayer(overlays" below.
+  defaults.dataTitle = "Data Projects"; // Must match "map.addLayer(overlays" below.
 
   dp = mix(dp,defaults); // Gives priority to dp
 
@@ -121,6 +122,11 @@ function loadFromCSV(whichmap,dp,callback) {
   d3.csv(dp.dataset).then(function(data) {
       
       dp.data = readCsvData(data, dp.numColumns, dp.valueColumn);
+
+      // Make element key always lowercase
+
+      dp.data_lowercase_key
+
       dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
       dp.group = L.layerGroup();
       //dp.group2 = L.layerGroup();
@@ -166,6 +172,7 @@ function loadFromCSV(whichmap,dp,callback) {
       //map.addLayer(overlays["Intermodal Ports"]);
 
       map.addLayer(overlays2[dp.name]);
+      $("#widgetTitle").text(dp.name);
       callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
       //return map;
   })
@@ -322,12 +329,22 @@ function addIcons(dp) {
   var iconColor, iconColorRGB, iconName;
   var colorScale = dp.scale;
   dp.data.forEach(function(element) {
+    
+    // Add a lowercase instance of each column name
+    var key, keys = Object.keys(element);
+    var n = keys.length;
+    //var element={};
+    while (n--) {
+      key = keys[n];
+      element[key.toLowerCase()] = element[key];
+    }
+
     iconColor = colorScale(element[dp.valueColumn]);
     if (dp.color) { 
       iconColor = dp.color;
     }
-    // How to make element always lowercase?
-    console.log("element " + element + " iconColor: " + iconColor)
+
+    console.log("element state " + element.state + " iconColor: " + iconColor)
     if (typeof dp.latColumn == "undefined") {
       dp.latColumn = "lat";
     }
@@ -343,7 +360,7 @@ function addIcons(dp) {
       outlineColor: 'rgba(' + iconColorRGB + ',0.7)', // Marker outline color
       outlineWidth: 1,                   // Marker outline width 
     })
-  
+
     // Attach the icon to the marker and add to the map
     //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
     if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
@@ -352,22 +369,37 @@ function addIcons(dp) {
       circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
     }
 
-    var output = "<b>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>";
+    // MAP POPUP
+    var output = "<b>" + element[dp.nameColumn] + "</b><br>";
+    if (element[dp.addressColumn]) { output +=  element[dp.addressColumn] + "<br>"; }
+    if (element.city || element.state || element.zip) { 
+      if (element.city) {
+        output += element.city + ", ";
+      }
+      output += element.state + " " + element.zip + "<br>";
+    }
     if (element.phone || element.phone_afterhours) {
       output += element.phone + " " + element.phone_afterhours + "<br>";
     }
-
+    if (element[dp.valueColumn]) {
+      if (dp.valueColumnTitle) {
+        output += dp.valueColumnTitle + ": " + element[dp.valueColumn] + "<br>";
+      } else if (element[dp.valueColumn] != element.name) {
+        output += element[dp.valueColumn] + "<br>";
+      }
+    }
     if (element.schedule) {
       output += "Hours: " + element.schedule + "<br>";
     }
     if (element.website) {
       output += "<a href='" + element.website + "' target='_blank'>Website</a>";
     }
-    if (element.website && element[dp.latColumn]) {
-      output += " | ";
-    }
+    
     if (element[dp.latColumn]) {
-        output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
+      if (element.website) {
+        output += " | ";
+      }
+      output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
     }
     circle.bindPopup(output);
     //circle2.bindPopup(output);
@@ -377,54 +409,112 @@ function addIcons(dp) {
 function showList(dp) {
 
   var colorScale = dp.scale;
-  dp.data.forEach(function(element) {
+  dp.data.forEach(function(elementRaw) {
 
-
-    var output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
-    output += "<b style='font-size:16px;color:#333'>" + element[dp.valueColumn] + "</b><br>" + element.address + "<br>" + element.city + " " + element.state + " " + element.zip + "<br>";
-    if (element.phone || element.phone_afterhours) {
-     output += element.phone + " " + element.phone_afterhours + "<br>";
+    var key, keys = Object.keys(elementRaw);
+    var n = keys.length;
+    var element={};
+    while (n--) {
+      key = keys[n];
+      element[key.toLowerCase()] = elementRaw[key];
     }
-    if (element.schedule) {
-     output += "Hours: " + element.schedule + "<br>";
-    }
-    if (element.website) {
-      output += "<a href='" + element.website + "' target='_blank'>Website</a><br>";
-    }
-    if (element.website && element[dp.latColumn]) {
-      output += " | ";
-    }
-    if (element[dp.latColumn]) {
-        output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
-    }
-     output += "<br></div><div style='clear:both'></div>";
 
-    $("#narrowlist").append(output);
+    /*
+    // Make dp lowercase and add element.
+    var key, keys = Object.keys(dp);
+    var n = keys.length;
+    var element={};
+    while (n--) {
+      key = keys[n];
+      if (key != "data") { // Skip dp.data
+        element[key.toLowerCase()] = dp[key];
+        dp[key.toLowerCase()] = dp[key].toLowerCase; // Creates some dups, but fastest that way. Lowercase values then match below
+      }
+    }
+    */
 
-    // Detail List with Descriptions
-    output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
-    output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
+    var element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
+    
 
-    output += element.description + "<br>";
+    // DETAILS LIST
+    output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+    
+    if (element.title) {
+      output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
+    } else {
+      output += "<b style='font-size:16px;color:#333'>" + element.name + "</b><br>";
+    }
 
+    if (element[dp.description]) {
+      output += element[dp.description] + "<br>";
+    } else if (element.description) {
+      output += element.description + "<br>";
+    }
     /*
     output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
     if (element.phone || element.phone_afterhours) {
      output += element.phone + " " + element.phone_afterhours + "<br>";
     }
-    if (element.schedule) {
-     output += "Hours: " + element.schedule + "<br>";
-    }
-     if (element[dp.latColumn]) {
-        output += " - <a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
-    }
+    
+     
     */
 
-    if (element.website) {
-      // Learn More:
-      output += "<a href='" + element.website + "' style='display:block;margin-top:5px' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","") + "</a><br>";
+    
+    if (element.phone || element.phone_afterhours) {
+      output += element.phone + " " + element.phone_afterhours + "<br>";
     }
-    output += "</div><div style='clear:both'></div>";
+    if (element[dp.valueColumn]) {
+      if (dp.valueColumnTitle) {
+        output += dp.valueColumnTitle + ": " + element[dp.valueColumn] + "<br>";
+      } else if (element[dp.valueColumn] != element.name) {
+        output += element[dp.valueColumn] + "<br>";
+      }
+    }
+    if (element.schedule) {
+      output += "Hours: " + element.schedule + "<br>";
+    }
+
+    //alert(dp.listLocation)
+    if (dp.listLocation != false) {
+      if (element[dp.addressColumn]) { output +=  element[dp.addressColumn] + "<br>"; }
+      if (element.city || element.state || element.zip) { 
+        if (element.city) {
+          output += element.city + ", ";
+        }
+        output += element.state + " " + element.zip + "<br>";
+      }
+      if (element[dp.latColumn]) {
+          output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
+      }
+    }
+
+    if (element.facebook) {
+      if (element[dp.latColumn] && dp.listLocation != false) {
+        output += " | ";
+      }
+      output += "<a href='" + element.facebook + "' target='_blank'>Facebook</a>";
+    }
+    if (element.twitter) {
+      if (element[dp.latColumn] || element.facebook) {
+        output += " | ";
+      }
+      output += "<a href='" + element.twitter + "' target='_blank'>Twitter</a>";
+    }
+    if ((element[dp.latColumn] && dp.listLocation != false) || element.facebook || element.twitter) {
+      output += "<br>";
+    }
+    if (element.website) {
+      output += "<a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>";
+    }
+    
+    if (element.phone || element.phone_afterhours) {
+      output += element.phone + " " + element.phone_afterhours + "<br>";
+    }
+
+    if (element.county) {
+      output += element.county + " County<br>";
+    }
+    output += "</div><div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
 
     $("#detaillist").append(output);
 

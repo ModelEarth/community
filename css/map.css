@@ -56,8 +56,10 @@
   }
   #hublist {
     overflow: auto;
-    width:54%;
-    padding-right:40px
+    width:56%;
+  }
+  #hublist-padding {
+    padding-right:30px;
   }
   #mapHolder {
     width: 46%;
@@ -66,6 +68,7 @@
     /* border: 1px solid #ccc; */
 
     position: relative;
+    float:right;
   }
 
   .mapHolderBottom {
@@ -122,6 +125,7 @@
       padding-left: 30px;
     }
     #mapHolder {
+      float: none;
       width: auto;
       margin-top: 70px;
       margin-left: 30px;
