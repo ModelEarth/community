@@ -53,8 +53,6 @@ Slack #epa
 
 1. [Data visualizations](samples/dataset/) displayed from [static csv files](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [exported from the USEEIO API](resources/useeio/) with [Python scripts](resources/useeio/python/produceUSEEIOimpactcsv.py). 
 
-1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
-
 1. Preprocess data using the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
@@ -82,6 +80,8 @@ Document Georgia Technology <a href="samples/routing/">driving tour routes</a>.
 1. Cross-relate Goods & Services NAICS industries with Harmonized System (HS Codes) for [International Trade](https://georgiadata.github.io/display/products/)
 
 1. [Jobs and Economic Development Impact (JEDI) models](https://www.nrel.gov/analysis/jedi/models.html) - convert from Excel to an interactive Web Page
+
+1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
 
 <!--
