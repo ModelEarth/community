@@ -407,7 +407,7 @@ function addIcons(dp) {
 }
 
 function showList(dp) {
-
+  var iconColor, iconColorRGB, iconName;
   var colorScale = dp.scale;
   dp.data.forEach(function(elementRaw) {
 
@@ -416,8 +416,18 @@ function showList(dp) {
     var element={};
     while (n--) {
       key = keys[n];
+      //element[key] = elementRaw[key]; // Also keep uppercase for element["Prepared"]
       element[key.toLowerCase()] = elementRaw[key];
     }
+
+    iconColor = colorScale(element[dp.valueColumn]);
+    if (dp.color) { 
+      iconColor = dp.color;
+    }
+    //iconColorRGB = hex2rgb(iconColor);
+
+    //console.log("element state2 " + element.state + " iconColor: " + iconColor)
+
 
     /*
     // Make dp lowercase and add element.
@@ -436,8 +446,13 @@ function showList(dp) {
     var element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
     
 
+    // TO INVESTIGATE - elementRaw (not element) has to be used here for color scale.
+
     // DETAILS LIST
-    output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;;background:" + colorScale(element[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+    // colorScale(element[dp.valueColumn])
+    //console.log("iconColor test here: " + iconColor)
+    //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
+    output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
     
     if (element[dp.titleColumn]) {
       output += "<b style='font-size:16px;color:#333'>" + element[dp.titleColumn] + "</b><br>";
