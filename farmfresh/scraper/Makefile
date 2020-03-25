@@ -3,7 +3,8 @@ RAW=$(OUT)/raw
 JSON=$(OUT)/json
 CANONICAL=$(OUT)/canonical
 MERGED=$(OUT)/merged
-STATES=$(OUT)/../states
+STATES=$(OUT)/states
+FINAL=../scraped/usa
 
 clean:
 	rm -rf $(OUT)
@@ -11,9 +12,9 @@ clean:
 	mkdir -p $(JSON)
 	mkdir -p $(CANONICAL)
 	mkdir -p $(MERGED)
-	mkdir -p $(STATES)
+	mkdir -p $(FINAL)
 
-all: clean farmersmarkets onfarmmarkets merge split-by-state
+all: clean farmersmarkets onfarmmarkets merge split-by-state finalize
 
 farmersmarkets:
 	curl -o $(RAW)/farmersmarkets.csv https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx
@@ -33,3 +34,7 @@ merge:
 
 split-by-state:
 	INPUT=$(MERGED)/merged.json OUTPUT=$(STATES) ./split-by-state.sh
+
+finalize:
+	cp -R $(STATES) $(FINAL)/states
+	cp -R $(MERGED) $(FINAL)/merged
