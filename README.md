@@ -3,18 +3,24 @@
 <h2 style="margin-top:0px">Widget for Local Curbside Pickup and Delivery</h2>
 
 
-Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets. Our embeddable map widget works with csv data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and delivery.  
+Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets. Our embeddable map widget works with csv data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and&nbsp;delivery.  
 
-Automate:
 
-1. Copy the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.
+1. [Map for Embedding](map/starter/) - [Embed version](map/starter/embed.html) - Add marker clusters for 5,000+ records
 
-1. Activate Google Sheet editing using a custom form.
 
-1. [Google Sheet](https://docs.google.com/spreadsheets/d/1glMpFXTg8GJ-Jvsox4IK0-qQMEgBE53m_l2cIYG8OUg/edit?usp=sharing) - Copy of MapsForUs template for geocoding and json pull setup.
+1. For our Google Sheets, we'll use the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
-<br><br>
 
+1. [Here's Our Google Sheet](https://docs.google.com/spreadsheets/d/1glMpFXTg8GJ-Jvsox4IK0-qQMEgBE53m_l2cIYG8OUg/edit?usp=sharing) - The MapsForUs template also us to geocode - Can it occur automatically?
+
+
+1. Our local MapsforUS [HTML Map file](map/mapsforus/sample.html) - Change the Google ID to load our Google Sheet.  
+
+<br>
+
+<hr>
+<br>
 
 <h1 class="h1-home">Community Model&nbsp;Building</h1>
 
