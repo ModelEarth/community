@@ -3,7 +3,7 @@ RAW=$(OUT)/raw
 JSON=$(OUT)/json
 CANONICAL=$(OUT)/canonical
 MERGED=$(OUT)/merged
-STATES=$(OUT)/states
+STATES=$(OUT)/../states
 
 clean:
 	rm -rf $(OUT)
