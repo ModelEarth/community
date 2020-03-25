@@ -1,3 +1,21 @@
+
+<h1 class="h1-home">Local, Fresh and Safe</h1>
+<h2 style="margin-top:0px">Widget for Local Curbside Pickup and Delivery</h2>
+
+
+Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets. Our embeddable map widget works with csv data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and delivery.  
+
+Automate:
+
+1. Copy the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.
+
+1. Activate Google Sheet editing using a custom form.
+
+1. [Google Sheet](https://docs.google.com/spreadsheets/d/1glMpFXTg8GJ-Jvsox4IK0-qQMEgBE53m_l2cIYG8OUg/edit?usp=sharing) - Copy of MapsForUs template for geocoding and json pull setup.
+
+<br><br>
+
+
 <h1 class="h1-home">Community Model&nbsp;Building</h1>
 
 Prep for the EPA's sustainable community model building events in 2020.   
