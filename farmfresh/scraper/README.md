@@ -1,4 +1,4 @@
-## Description
+## USDA Farm Fresh Screen Scraper
 
 Scrapes and merges the USDA's lists of [farmer's markets](https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx) and [on-farm markets](https://search.ams.usda.gov/onfarmmarkets/ExcelExport.aspx). The results are saved into CSV and JSON files.
 
@@ -18,6 +18,7 @@ Please ensure that you have installed all the above dependencies.
 Had to run in the virtual folder before `yarn install`
 
 brew reinstall yarn
+brew install jq
 
 Question: How do we add yarn.lock to .gitignore?
 "yarn.lock" is not omitting the file.
