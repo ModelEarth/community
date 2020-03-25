@@ -3,6 +3,7 @@ RAW=$(OUT)/raw
 JSON=$(OUT)/json
 CANONICAL=$(OUT)/canonical
 MERGED=$(OUT)/merged
+STATES=$(OUT)/states
 
 clean:
 	rm -rf $(OUT)
@@ -10,8 +11,9 @@ clean:
 	mkdir -p $(JSON)
 	mkdir -p $(CANONICAL)
 	mkdir -p $(MERGED)
+	mkdir -p $(STATES)
 
-all: clean farmersmarkets onfarmmarkets merge
+all: clean farmersmarkets onfarmmarkets merge split-by-state
 
 farmersmarkets:
 	curl -o $(RAW)/farmersmarkets.csv https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx
@@ -28,3 +30,6 @@ merge:
 	python canonicalize.py $(JSON)/farmersmarkets.json > $(CANONICAL)/farmersmarkets.json
 	jq -s '[.[][]]' $(CANONICAL)/onfarmmarkets.json $(CANONICAL)/farmersmarkets.json > $(MERGED)/merged.json
 	jq -r '(map(keys) | add | unique) as $$cols | map(. as $$row | $$cols | map($$row[.])) as $$rows | $$cols, $$rows[] | @csv' $(MERGED)/merged.json > $(MERGED)/merged.csv
+
+split-by-state:
+	INPUT=$(MERGED)/merged.json OUTPUT=$(STATES) ./split-by-state.sh
