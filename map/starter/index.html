@@ -163,19 +163,27 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 
     // MAP 2
-    let dp2 = {
-      dataset: "/community/tools/map.csv",
-      latitude: 31.6074,
-      longitude: -81.8854
-    }
+    let dp2 = {};
+
+    
+    dp2.dataset = "/community/tools/map.csv";
+    dp2.latitude = 31.6074;
+    dp2.longitude = -81.8854;
+
+    // Atlanta
+    dp2.latitude = 33.7490;
+    dp2.longitude = -84.3880;
+    dp2.zoom = 9;
 
     //dp2.dataset = "/community/farmfresh/scraper/out/raw/farmersmarkets-ga.csv";
     dp2.dataset = "/community/map/starter/farmersmarkets-ga.csv";
+    //dp2.dataset = "/community/farmfresh/usa/georgia/markets.csv";
     dp2.dataTitle = "Farm Fresh Produce";
     dp2.titleColumn = "marketname";
     dp2.nameColumn = "marketname";
     dp2.addressColumn = "street";
     dp2.valueColumn = "Prepared";
+    //dp2.valueColumn = "type";
     dp2.valueColumnTitle = "Prepared Food";
     dp2.latColumn = "y";
     dp2.lonColumn = "x";
@@ -185,6 +193,35 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+    });
+    
+
+    // Fulton County 5631 restaurants
+    dp2 = {};
+    dp2.dataset = "/community/tools/map.csv";
+    dp2.latitude = 33.7956;
+    dp2.longitude = -84.2279;
+
+    // Atlanta
+    dp2.latitude = 33.7490;
+    dp2.longitude = -84.3880;
+    dp2.zoom = 9;
+
+    dp2.titleColumn = "restaurant";
+    dp2.nameColumn = "restaurant";
+
+    dp2.valueColumn = "score";
+    dp2.scale = "scaleThreshold";
+
+    dp2.latColumn = "latitude";
+    dp2.lonColumn = "longitude";
+
+    dp2.dataset = "/community/farmfresh/usa/georgia/fulton_county_restaurants_toy.csv"; // Just use 50
+    dp2.dataTitle = "Restaurant Scores";
+    dp2.titleColumn = "restaurant";
+
+    loadFromCSV('map2', dp2, function(results) {
+
     });
   </script>
 </body>

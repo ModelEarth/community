@@ -184,7 +184,8 @@ function loadFromCSV(whichmap,dp,callback) {
 /////////// MAP SETTINGS ///////////
 
 // 33.863516,-84.368775
-var mapCenter = [32.90,-83.35]; // [latitude, longitude]
+//var mapCenter = [32.90,-83.35]; // [latitude, longitude]
+var mapCenter = [33.7490,-84.3880]; // [latitude, longitude]
 
 // Add above to include overlays WITHOUT showing in legend:
 // layers: [dataParameters[0].group]
@@ -409,132 +410,134 @@ function addIcons(dp) {
 function showList(dp) {
   var iconColor, iconColorRGB, iconName;
   var colorScale = dp.scale;
+  let count = 0;
   dp.data.forEach(function(elementRaw) {
-
-    var key, keys = Object.keys(elementRaw);
-    var n = keys.length;
-    var element={};
-    while (n--) {
-      key = keys[n];
-      //element[key] = elementRaw[key]; // Also keep uppercase for element["Prepared"]
-      element[key.toLowerCase()] = elementRaw[key];
-    }
-
-    iconColor = colorScale(element[dp.valueColumn]);
-    if (dp.color) { 
-      iconColor = dp.color;
-    }
-    //iconColorRGB = hex2rgb(iconColor);
-
-    //console.log("element state2 " + element.state + " iconColor: " + iconColor)
-
-
-    /*
-    // Make dp lowercase and add element.
-    var key, keys = Object.keys(dp);
-    var n = keys.length;
-    var element={};
-    while (n--) {
-      key = keys[n];
-      if (key != "data") { // Skip dp.data
-        element[key.toLowerCase()] = dp[key];
-        dp[key.toLowerCase()] = dp[key].toLowerCase; // Creates some dups, but fastest that way. Lowercase values then match below
+    count++;
+    if (count <= 500) {
+      var key, keys = Object.keys(elementRaw);
+      var n = keys.length;
+      var element={};
+      while (n--) {
+        key = keys[n];
+        //element[key] = elementRaw[key]; // Also keep uppercase for element["Prepared"]
+        element[key.toLowerCase()] = elementRaw[key];
       }
-    }
-    */
 
-    var element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
-    
-
-    // TO INVESTIGATE - elementRaw (not element) has to be used here for color scale.
-
-    // DETAILS LIST
-    // colorScale(element[dp.valueColumn])
-    //console.log("iconColor test here: " + iconColor)
-    //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-    output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
-    
-    if (element[dp.titleColumn]) {
-      output += "<b style='font-size:16px;color:#333'>" + element[dp.titleColumn] + "</b><br>";
-    } else if (element.title) {
-      output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
-    } else {
-      output += "<b style='font-size:16px;color:#333'>" + element.name + "</b><br>";
-    }
-
-    if (element[dp.description]) {
-      output += element[dp.description] + "<br>";
-    } else if (element.description) {
-      output += element.description + "<br>";
-    }
-    /*
-    output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
-    if (element.phone || element.phone_afterhours) {
-     output += element.phone + " " + element.phone_afterhours + "<br>";
-    }
-    
-     
-    */
-
-    
-    if (element.phone || element.phone_afterhours) {
-      output += element.phone + " " + element.phone_afterhours + "<br>";
-    }
-    if (element[dp.valueColumn]) {
-      if (dp.valueColumnTitle) {
-        output += dp.valueColumnTitle + ": " + element[dp.valueColumn] + "<br>";
-      } else if (element[dp.valueColumn] != element.name) {
-        output += element[dp.valueColumn] + "<br>";
+      iconColor = colorScale(element[dp.valueColumn]);
+      if (dp.color) { 
+        iconColor = dp.color;
       }
-    }
-    if (element.schedule) {
-      output += "Hours: " + element.schedule + "<br>";
-    }
+      //iconColorRGB = hex2rgb(iconColor);
 
-    //alert(dp.listLocation)
-    if (dp.listLocation != false) {
-      if (element[dp.addressColumn]) { output +=  element[dp.addressColumn] + "<br>"; }
-      if (element.city || element.state || element.zip) { 
-        if (element.city) {
-          output += element.city + ", ";
+      //console.log("element state2 " + element.state + " iconColor: " + iconColor)
+
+
+      /*
+      // Make dp lowercase and add element.
+      var key, keys = Object.keys(dp);
+      var n = keys.length;
+      var element={};
+      while (n--) {
+        key = keys[n];
+        if (key != "data") { // Skip dp.data
+          element[key.toLowerCase()] = dp[key];
+          dp[key.toLowerCase()] = dp[key].toLowerCase; // Creates some dups, but fastest that way. Lowercase values then match below
         }
-        output += element.state + " " + element.zip + "<br>";
       }
-      if (element[dp.latColumn]) {
-          output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
+      */
+
+      var element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
+      
+
+      // TO INVESTIGATE - elementRaw (not element) has to be used here for color scale.
+
+      // DETAILS LIST
+      // colorScale(element[dp.valueColumn])
+      //console.log("iconColor test here: " + iconColor)
+      //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
+      output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+      
+      if (element[dp.titleColumn]) {
+        output += "<b style='font-size:16px;color:#333'>" + element[dp.titleColumn] + "</b><br>";
+      } else if (element.title) {
+        output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
+      } else {
+        output += "<b style='font-size:16px;color:#333'>" + element.name + "</b><br>";
       }
-    }
 
-    if (element.facebook) {
-      if (element[dp.latColumn] && dp.listLocation != false) {
-        output += " | ";
+      if (element[dp.description]) {
+        output += element[dp.description] + "<br>";
+      } else if (element.description) {
+        output += element.description + "<br>";
       }
-      output += "<a href='" + element.facebook + "' target='_blank'>Facebook</a>";
-    }
-    if (element.twitter) {
-      if (element[dp.latColumn] || element.facebook) {
-        output += " | ";
+      /*
+      output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
+      if (element.phone || element.phone_afterhours) {
+       output += element.phone + " " + element.phone_afterhours + "<br>";
       }
-      output += "<a href='" + element.twitter + "' target='_blank'>Twitter</a>";
-    }
-    if ((element[dp.latColumn] && dp.listLocation != false) || element.facebook || element.twitter) {
-      output += "<br>";
-    }
-    if (element.website) {
-      output += "<a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>";
-    }
-    
-    if (element.phone || element.phone_afterhours) {
-      output += element.phone + " " + element.phone_afterhours + "<br>";
-    }
+      
+       
+      */
 
-    if (element.county) {
-      output += element.county + " County<br>";
+      
+      if (element.phone || element.phone_afterhours) {
+        output += element.phone + " " + element.phone_afterhours + "<br>";
+      }
+      if (element[dp.valueColumn]) {
+        if (dp.valueColumnTitle) {
+          output += dp.valueColumnTitle + ": " + element[dp.valueColumn] + "<br>";
+        } else if (element[dp.valueColumn] != element.name) {
+          output += element[dp.valueColumn] + "<br>";
+        }
+      }
+      if (element.schedule) {
+        output += "Hours: " + element.schedule + "<br>";
+      }
+
+      //alert(dp.listLocation)
+      if (dp.listLocation != false) {
+        if (element[dp.addressColumn]) { output +=  element[dp.addressColumn] + "<br>"; }
+        if (element.city || element.state || element.zip) { 
+          if (element.city) {
+            output += element.city + ", ";
+          }
+          output += element.state + " " + element.zip + "<br>";
+        }
+        if (element[dp.latColumn]) {
+            output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
+        }
+      }
+
+      if (element.facebook) {
+        if (element[dp.latColumn] && dp.listLocation != false) {
+          output += " | ";
+        }
+        output += "<a href='" + element.facebook + "' target='_blank'>Facebook</a>";
+      }
+      if (element.twitter) {
+        if (element[dp.latColumn] || element.facebook) {
+          output += " | ";
+        }
+        output += "<a href='" + element.twitter + "' target='_blank'>Twitter</a>";
+      }
+      if ((element[dp.latColumn] && dp.listLocation != false) || element.facebook || element.twitter) {
+        output += "<br>";
+      }
+      if (element.website) {
+        output += "<a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>";
+      }
+      
+      if (element.phone || element.phone_afterhours) {
+        output += element.phone + " " + element.phone_afterhours + "<br>";
+      }
+
+      if (element.county) {
+        output += element.county + " County<br>";
+      }
+      output += "</div><div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
+
+      $("#detaillist").append(output);
     }
-    output += "</div><div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
-
-    $("#detaillist").append(output);
-
 
   });
 }
