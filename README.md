@@ -2,12 +2,12 @@
 <h1 class="h1-home">Local, Fresh and Safe</h1>
 <h2 style="margin-top:0px">Widget for Local Curbside Pickup and Delivery</h2>
 
-<h3>Creating a CRUD Based Spreadsheet Editor for Crowdsourcing Emergency Supplies and Curbside Pickup</h3>
+<h3>Creating a CRUD Based Spreadsheet Editor for Crowdsourcing Emergency Supplies and Curbside Pickup Map</h3>
 
 Join us in the: [Global Covid-19-Hackathon](https://www.businessinsider.com/coronavirus-covid-19-hackathon-facebook-microsoft-twitter-work-together-2020-3) - Thursday, March 26 to March 30, 2020  - 
 [Details](https://covid-global-hackathon.devpost.com/)  
 
-States need ways to manage supply offers, inventory and prices using online spreadsheets. Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets.  
+Government need ways to transparently manage supply offers, inventory and prices using online spreadsheets. Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets.  
 
 Our embeddable map widget works with csv data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and&nbsp;delivery.  We'll be tapping existing processes for sharing hours of operation between Facebook, Google and other sites, including [All The Places](https://www.alltheplaces.xyz/).
 
