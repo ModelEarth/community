@@ -5,12 +5,12 @@
 <h3>Creating a CRUD Based Spreadsheet Editor for Locating Emergency Supplies and Farm Fresh Produce</h3>
 <!-- Local, Fresh and Safe -->
 
-Join us in the: [Global Covid-19-Hackathon](https://www.businessinsider.com/coronavirus-covid-19-hackathon-facebook-microsoft-twitter-work-together-2020-3) - Thursday, March 26 to March 30, 2020  - 
+Join us in the: [Covid-19 Global Hackathon](https://www.businessinsider.com/coronavirus-covid-19-hackathon-facebook-microsoft-twitter-work-together-2020-3) - Thursday, March 26 to March 30, 2020  - 
 [Details](https://covid-global-hackathon.devpost.com/)  
 
 Local governments need ways to transparently manage supply offers, inventory and prices using online spreadsheets. Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets.  
 
-Our embeddable map widget works with csv data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and&nbsp;delivery.  We'll be tapping existing processes for sharing hours of operation between Facebook, Google and other sites, including [All The Places](https://www.alltheplaces.xyz/).
+Our embeddable map widget works with CSV data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and&nbsp;delivery.  We'll be tapping existing processes for sharing hours of operation between Facebook, Google and other sites, including [All The Places](https://www.alltheplaces.xyz/).
 
 For our Google Sheet backend, we're using the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
@@ -24,7 +24,13 @@ For our Google Sheet backend, we're using the Code for Atlanta [Maps for US](htt
 5. Include social login via Facebook, Microsoft, Twitter, Google accounts and others.  
 <br>
 
-Contact Loren at [DreamStudio.com](http://dreamstudio.com) if you are contributing, or contact us through our [community](https://github.com/modelearth/community) GitHub repo.
+<b>Get Started</b>
+
+[Steps for viewing this repo locally](samples/markdown/)   
+
+[Crowdsouce Editor Setup](editor) - Under development
+
+Contact Loren at [DreamStudio.com](http://dreamstudio.com) if you are contributing, or contact us through our [GitHub Community repo](https://github.com/modelearth/community).
 <br>
 
 <hr>
