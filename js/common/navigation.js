@@ -33,7 +33,7 @@ $(document).ready(function(){
  	}
  	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
 	
- 	$("#header").load( climbpath + "header.html", function( response, status, xhr ) {
+ 	$("#header").load( climbpath + "../community/header.html", function( response, status, xhr ) {
 
  		// Make paths relative to current page
  		$("#header a[href]").each(function() {
@@ -52,7 +52,7 @@ $(document).ready(function(){
  		// To do: fetch the existing background-image.
  		
  		if(location.host.indexOf('georgia') >= 0 || location.host.indexOf('localhost') >= 0) {
-	 		imageUrl = climbpath + "img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
+	 		imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
 	 		$('#logoholder').addClass('logoholder-state');
 	 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
 	 		$('#headerLocTitle').html("Georgia");
@@ -63,7 +63,7 @@ $(document).ready(function(){
 	 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
 	 	}
 
-	 	imageUrlSide = climbpath + "img/logo/georgia-icon-rect.png"; // Until modelEarth logo is sized correctly
+	 	imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png"; // Until modelEarth logo is sized correctly
  		$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
 		$('#logoholder').css('background-repeat', 'no-repeat');
 
@@ -101,7 +101,7 @@ $(document).ready(function(){
         	}
 		});
 	});
-	$("#sidecolumn").load( climbpath + "nav.html", function( response, status, xhr ) {
+	$("#sidecolumn").load( climbpath + "../community/nav.html", function( response, status, xhr ) {
 
 		$('#logoholderside').css('background-image', 'url(' + imageUrlSide + ')');
 		$('#logoholderside').css('background-repeat', 'no-repeat');
