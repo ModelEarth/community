@@ -4,8 +4,9 @@
 2. Create a Project
 3. Follow below screenshot to get your Auth IDs.  
 
-<a href="img/google-setup.png"><img src="img/google-setup.png" style="width:100%; max-width:1000px">
+<a href="img/google-setup.png"><img src="img/google-setup.png" style="width:100%; max-width:1000px"></a>
 
+4. Make note of your GOOGLE\_CLIENT\_ID and GOOGLE\_CLIENT\_SECRET.  
 
 
 
