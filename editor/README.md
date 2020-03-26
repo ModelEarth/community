@@ -10,12 +10,13 @@
 
 
 1. Install Python3.7.
-1. From root directory run below commands.
+1. From root directory run these commands:
 ```
 python3 -m venv env
 pip install -r requirements.txt
 ```
 1. Update client_id and client_secrete from google app in `app.py`.
+1. Update the GOOGLE_SHEET_URL
 1. Run/Server python app.
 ```
 cd app
