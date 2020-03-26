@@ -2,21 +2,25 @@
 <h1 class="h1-home">Local, Fresh and Safe</h1>
 <h2 style="margin-top:0px">Widget for Local Curbside Pickup and Delivery</h2>
 
+<h3>Creating a CRUD Based Spreadsheet Editor for Crowdsourcing Emergency Supplies and Curbside Pickup</h3>
 
-Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets. Our embeddable map widget works with csv data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and&nbsp;delivery.  
+States need ways to manage supply bidding. Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets.  
 
+Our embeddable map widget works with csv data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow farmers to promote that they are open for curbside pickup and&nbsp;delivery.  Tap existing processes for sharing hours of operation between Facebook, Google and other sites, including [All The Places](https://www.alltheplaces.xyz/).
 
-1. [Map for Embedding](map/starter/) - [Embed version](map/starter/embed.html) - Add marker clusters for 5,000+ records
+For our Google Sheet backend, we're using the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
-
-1. For our Google Sheets, we'll use the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
-
-
-1. [Here's Our Copy of the Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml) (public link) - The MapsForUs template allows us to geocode - Can geocoding occur automatically?
-
+1. [Here's Our Copy of the Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml) (public link) - What are the steps to  updated the Sheet to geocode automatically?  
 
 1. Our local MapsforUS [HTML Map file](map/mapsforus/sample.html) - Try changing the Google ID to load our Google Sheet.  
 
+1. [Map for Embedding](map/starter/) - [Embed version](map/starter/embed.html)<br>- Add D3 circles when map points exceed 1,000.<br>- Add Leaflet marker clusters when map points exceed 2,000 records.
+4. Trigger lower map to zoom to the location of the map point clicked on upper map.  
+
+5. Include social login via Facebook, Google, Twitter accounts and others.  
+<br>
+
+Contact Loren at [DreamStudio.com](http://dreamstudio.com) if you are contributing, or contact us through our [community](https://github.com/modelearth/community) GitHub repo.
 <br>
 
 <hr>
@@ -24,7 +28,7 @@ Local farmers and restaurants need ways to promote their curbside pickup and del
 
 <h1 class="h1-home">Community Model&nbsp;Building</h1>
 
-Prep for the EPA's sustainable community model building events in 2020.   
+Prep for the EPA's sustainable community model building virtual events in 2020.   
 
 <!--
 Supply chain "License to Operate" with the support of the community.
