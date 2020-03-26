@@ -12,10 +12,10 @@ Local farmers and restaurants need ways to promote their curbside pickup and del
 1. For our Google Sheets, we'll use the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
 
-1. [Here's Our Google Sheet](https://docs.google.com/spreadsheets/d/1glMpFXTg8GJ-Jvsox4IK0-qQMEgBE53m_l2cIYG8OUg/edit?usp=sharing) - The MapsForUs template also us to geocode - Can it occur automatically?
+1. [Here's Our Copy of the Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml) (public link) - The MapsForUs template allows us to geocode - Can geocoding occur automatically?
 
 
-1. Our local MapsforUS [HTML Map file](map/mapsforus/sample.html) - Change the Google ID to load our Google Sheet.  
+1. Our local MapsforUS [HTML Map file](map/mapsforus/sample.html) - Try changing the Google ID to load our Google Sheet.  
 
 <br>
 
