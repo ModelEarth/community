@@ -36,5 +36,5 @@ split-by-state:
 	INPUT=$(MERGED)/merged.json OUTPUT=$(STATES) ./split-by-state.sh
 
 finalize:
-	cp -R $(STATES) $(FINAL)/states
-	cp -R $(MERGED) $(FINAL)/merged
+	cp -R $(STATES) $(FINAL)
+	cp -R $(MERGED) $(FINAL)
