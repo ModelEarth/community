@@ -14,7 +14,8 @@ Our embeddable map widget works with CSV data hosted on GitHub (including merged
 
 For our Google Sheet backend, we're using the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
-1. Here's our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml) - public link. See Slack for editable link.
+1. Here's our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml), a public link. 
+Editable link is in our Slack #epa group.
 
 1. Our local [MapsforUS HTML Map](map/mapsforus/sample.html) - Uses the Google ID of the Google Sheet above. 
 
