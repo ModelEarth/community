@@ -1,10 +1,12 @@
 # MapsForUs - Updates
 
+We're working on updates for [Maps For Us](https://mapsfor.us/) - a map display process for Google Sheets.    
+
 ###Automatically geocode addresses - Contributed by Mark Noonan, Code for Atlanta
 
 It works by having a separate sheet for form submissions and doing the work there then copying the line into the main Points sheet. There's a separate Errors sheet where rows are added if there was a problem with the geocoding process for manual cleanup.  
 
-MapsForUs feeds the calendar at https://www.folkmusic.com/shows.html - site admins add shows with a Google Form and manually update the spreadsheet if things need to be changed after that.
+MapsForUs feeds the calendar at [folkmusic.com](https://www.folkmusic.com/shows.html). Site admins add shows with a Google Form and manually update the spreadsheet if things need to be changed after that.
 
 ```
 function geocodeAndMove() {
