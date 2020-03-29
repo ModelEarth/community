@@ -42,7 +42,7 @@ The candidate will develop Python code to translate community and industry mater
 The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team and other community-based interns.
 
 The candidate will be expected to play a leading role in the September community application
- development event @GA Tech to leverage this tool to serve community applications.
+ development virtual event @GA Tech to leverage this tool to serve community applications.
 
 The candidate will be exposed to the latest in sustainable materials management modeling, make contacts at
 federal, state agencies, GA Tech, in industry, and become part of a dynamic modeling and research team.
@@ -80,7 +80,7 @@ The work will require close technical collaboration with the research mentors an
  and other community-based interns.
 
 The candidate will be expected to play a leading role in the September community application
- development event @GA Tech to leverage this tool to serve community applications.
+ development virtual event @GA Tech to leverage this tool to serve community applications.
 
 The candidate will be exposed to the latest in sustainable materials management modeling, make contacts at
 federal, state agencies, GA Tech, in industry, and become part of a dynamic modeling and research team.
@@ -114,7 +114,7 @@ The candidate will develop D3 javascript to create visualizations of material fl
 The work will require close technical collaboration with the research mentors and GA Tech research partner, the USEEIO modeling team and other community-based interns.
 
 The candidate will be expected to play a leading role in the September community application
- development event @GA Tech to leverage this tool to serve community applications.
+ development virtual event @GA Tech to leverage this tool to serve community applications.
 
 The candidate will be exposed to the latest in sustainable materials management modeling, make contacts at
 federal, state agencies, GA Tech, in industry, and become part of a dynamic modeling and research team.

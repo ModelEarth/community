@@ -2,12 +2,6 @@
 
 We're using Python in [scraper](../scraper) to pull and merge locations from the national USDA dataset.  
 
-Data used in [Atlanta fresh produce map](https://data.georgia.org/#fresh) created with Mario Cambardella, Atlanta's Urban Agriculture Director.  
-
-[National USDA map of farmer's markets](https://www.ams.usda.gov/local-food-directories/farmersmarkets) 
-| [Google Map for full data download](https://search.ams.usda.gov/farmersmarkets/googleMapFull.aspx) 
-
-
 Download with a command. 8791 rows for US.
 
 curl -o farmersmarket.csv https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx

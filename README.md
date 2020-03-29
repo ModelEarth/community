@@ -5,7 +5,7 @@
 <h3>Creating a CRUD Based Spreadsheet Editor for Locating Emergency Supplies and Farm Fresh Produce</h3>
 <!-- Local, Fresh and Safe -->
 
-Join us in the: [Covid-19 Global Hackathon](https://www.businessinsider.com/coronavirus-covid-19-hackathon-facebook-microsoft-twitter-work-together-2020-3) - Thursday, March 26 to March 30, 2020  - 
+Join us in the: [Covid-19 Global Hackathon](https://www.businessinsider.com/coronavirus-covid-19-hackathon-facebook-microsoft-twitter-work-together-2020-3) - Thursday, March 26 to Monday, March 30, 2020  - 
 [Details](https://covid-global-hackathon.devpost.com/)  
 
 Local governments need ways to transparently manage supply offers, inventory and prices using online spreadsheets. Local farmers and restaurants need ways to promote their curbside pickup and delivery services as Covid19 closes local Farmer's Markets.  
@@ -14,21 +14,24 @@ Our embeddable map widget works with CSV data hosted on GitHub (including merged
 
 For our Google Sheet backend, we're using the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
-1. [Here's Our Copy of the Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml) (public link) - What are the steps to  updated the sheet to geocode automatically?  
+1. Here's our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml) - public link
 
-1. Our local MapsforUS [HTML Map file](map/mapsforus/sample.html) - Try changing the Google ID to load our Google Sheet.  
+1. Our local [MapsforUS HTML Map](map/mapsforus/sample.html) - Uses the Google ID of the Google Sheet above. 
 
-1. [Map for Embedding](map/starter/) - [Embed version](map/starter/embed.html)<br>- Add D3 circles when map points exceed 1,000.<br>- Add Leaflet marker clusters when map points exceed 2,000 records.
-4. Trigger lower map to zoom to the location of the map point clicked on upper map.  
+1. [Modifications to MapsForUs](map/mapsforus) we are currently working on - including automatic geocoding.  
 
-5. Include social login via Facebook, Microsoft, Twitter, Google accounts and others.  
+1. [Map for Embedding](map/starter/) - [Embed version](map/starter/embed.html)<br>- Add D3 circles when map points exceed 1,000.<br>- Add Leaflet marker clusters when map points exceed 2,000 records.<br>-Trigger lower map to zoom to the location of the map point clicked on upper map.  
+
+1. [Include login via Google account](../crowdsource) and other social logins (Facebook, Microsoft, Twitter, LinkedIn).  
 <br>
 
 <b>Get Started</b>
 
 [Steps for viewing this repo locally](samples/markdown/)   
 
-[Crowdsouce Editor Setup](editor) - Under development
+[Generate Farm Fresh CSV files](farmfresh) for any US state  
+
+[Crowdsouce Editor Setup](../crowdsource) - Under development
 
 Contact Loren at [DreamStudio.com](http://dreamstudio.com) if you are contributing, or contact us through our [GitHub Community repo](https://github.com/modelearth/community).
 <br>

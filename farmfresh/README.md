@@ -1,8 +1,16 @@
 # Farm Fresh Data
 
-[Atlanta, Georgia - National USDA](ga)  
+We're using Python in [scraper](scraper) to pull and merge locations from the national USDA dataset.  
 
-[All The Places](https://github.com/alltheplaces/alltheplaces)  
+Data is displayed in the [following map](../map/starter).  
+
+Here are [Georgia Data Specifics](ga)
+
+### About USDA Source
+
+[National USDA map of farmer's markets](https://www.ams.usda.gov/local-food-directories/farmersmarkets)  
+[Google Map for full data download](https://search.ams.usda.gov/farmersmarkets/googleMapFull.aspx) 
+
 
 
 
