@@ -663,7 +663,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       //scaleType: "scaleThreshold",
     }
     //dp1.name = dp1.selector.split(".").pop(); // name: Intermodal_Ports
-    dp1.name = "Intermodal Ports"
+    dp1.name = "Intermodal Ports";
+    dp1.markerType = "google";
     dp1.data = readData(dp1.selector, dp1.delimiter, dp1.numColumns, dp1.valueColumn);
     //dp1.color = '#0033ff'; // Alternative to scale
     dp1.scale = getScale(dp1.data, dp1.scaleType, dp1.valueColumn);
@@ -674,24 +675,20 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     dp1.iconName = 'language';
     dataParameters.push(dp1);
     
-    populateMap('map1', dp1, function(results) {} );
-    addIcons(dp1);
-    addLegend(dp1.scale, dp1.scaleType, dp1.name);
-    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-
-
-    // MAP 2
-    var map2 = L.map('map2', {
-      center: mapCenter,
-      scrollWheelZoom: false,
-      zoom: 7
+    var map1 = populateMap('map1', dp1, function(map) {
+      addLegend(dp1.scale, dp1.scaleType, dp1.name);
+      layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
     });
 
+    // MAP 2
     let dp2 = {};
+    // Georgia
+    dp2.latitude = 32.9;
+    dp2.longitude = -83.4;
+    dp2.zoom = 7;
     dp2.dataset = "/community/tools/map.csv";
-    dp2.latitude = 31.6074;
-    dp2.longitude = -81.8854;
     dp2.dataTitle = "Smart Data Projects";
+    dp2.markerType = "google";
     dp2.listLocation = false;
     loadFromCSV('map2', dp2, function(results) {
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers

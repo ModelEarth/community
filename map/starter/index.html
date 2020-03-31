@@ -166,20 +166,16 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     var map1 = populateMap('map1', dp1, function(map) {
       addLegend(dp1.scale, dp1.scaleType, dp1.name);
       layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-    } );
+    });
     
 
     // MAP 2
     let dp2 = {};
 
     dp2.dataset = "/community/tools/map.csv";
-    dp2.latitude = 31.6074;
-    dp2.longitude = -81.8854;
-
     // Georgia
     dp2.latitude = 32.9;
     dp2.longitude = -83.4;
-
     dp2.zoom = 7;
 
     //dp2.dataset = "/community/farmfresh/scraper/out/raw/farmersmarkets-ga.csv";
