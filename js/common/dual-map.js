@@ -177,8 +177,9 @@ function loadFromCSV(whichmap,dp,callback) {
       
 
       // All layers reside in this object:
-      console.log("dataParameters:");
-      console.log(dataParameters);
+      //console.log("dataParameters:");
+      //console.log(dataParameters);
+
 
       // Remove from control and background.
       //layerControl[whichmap].removeLayer(grayscale);
@@ -254,6 +255,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
       zoom: dp.zoom,
       zoomControl: false
     });
+
     map.setView(mapCenter,dp.zoom);
 
     L.control.zoom({
@@ -628,6 +630,7 @@ function showList(dp) {
     }
 
     if (foundMatch > 0) {
+      dataMatchCount++;
     //if (count <= 500) {
       var key, keys = Object.keys(elementRaw);
       var n = keys.length;
@@ -661,8 +664,13 @@ function showList(dp) {
       }
       */
 
-      var element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
-      
+      element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
+      let name = element.name;
+      if (element[dp.nameColumn]) {
+        name = element[dp.nameColumn];
+      } else if (element.title) {
+        name = element.title;
+      }
 
       // TO INVESTIGATE - elementRaw (not element) has to be used here for color scale.
 
@@ -670,16 +678,13 @@ function showList(dp) {
       // colorScale(element[dp.valueColumn])
       //console.log("iconColor test here: " + iconColor)
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-      output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+      output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
+
+      //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
+                
+      output += "<div style='overflow:auto'>";
       
-      
-      if (element[dp.nameColumn]) {
-        output += "<b style='font-size:16px;color:#333'>" + element[dp.nameColumn] + "</b><br>";
-      } else if (element.title) {
-        output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
-      } else {
-        output += "<b style='font-size:16px;color:#333'>" + element.name + "</b><br>";
-      }
+      output += "<b style='font-size:16px;color:#333'>" + name + "</b><br>";
 
       console.log(dp.description)
       if (element[dp.description]) {
@@ -758,6 +763,25 @@ function showList(dp) {
     
 
   });
+
+  if (dataMatchCount > 0) {
+      //alert("show") // was twice BUGBUG
+      //  (dataSet.length - 1) 
+      if (dataMatchCount == count) {
+        $("#dataList").html("All " + dataMatchCount + " records. Select a category to filter your results.<br><br>");
+      } else {
+        $("#dataList").html(dataMatchCount + " matching service providers within " + count + " records.<br><br>");
+      }
+      $("#resultsPanel").show();
+      $("#dataList").show();
+  } else {
+      $("#dataList").html("No match found in " + count + " records.<br><br>");
+          
+    var noMatch = "<div>No match found in " + (dataSet.length - 1) + " records. <a href='#' onclick='clickClearButton();return false;'>Clear filters</a>.</div>"
+    $("#nomatchText").html(noMatch);
+    $("#nomatchPanel").show();
+  }
+
 }
 
 // Scales: http://d3indepth.com/scales/
