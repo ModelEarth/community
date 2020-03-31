@@ -748,6 +748,8 @@ $(window).scroll(function() {
   } else { // Scrolling Down
     if ($(window).scrollTop() < (previousScrollTop - 20)) { // Reveal if scrolling down fast
       $('.headerbar').show();
+    } else if ($(window).scrollTop() == 0) { // At top
+      $('.headerbar').show();
     }
   }
   previousScrollTop = $(window).scrollTop();
