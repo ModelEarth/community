@@ -552,7 +552,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       <div text="">Face Shields</div>
       <div text="">Gloves</div>
       <div text="">Hair Covers</div>
-      <div text="">Hand sanitizer</div>
+      <div text="">Hand Sanitizer</div>
       <div text="">Hospital Beds</div>
       <div text="">Masks</div>
       <div text="">Negative Pressure Machines</div>
@@ -730,18 +730,35 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         <br><br>
 
           <div>
-            The following organizations have responded to Georgia's call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
-            using the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please&nbsp;contact&nbsp;us.<br><br>
+            The following companies have responded to Georgia's call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
+            using the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a> to assist <a href="https://gema.georgia.gov/">GEMA</a>. To make a correction or update, please&nbsp;contact&nbsp;us.<br><br>
           </div>
-          <hr style="margin-bottom:20px">
+          
 
           <div style="display:none;" class="mock-up">
           The map to the right will highlight local counties and <a href="../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
           Lists will include <a href="../farmfresh/ga/">farm fresh produce</a> and <a href="../tools/#places">all&nbsp;the&nbsp;places</a>.
           </div>
 
-        <div id="detaillist"></div>
-        <div id="narrowlist" style="display:none"></div>
+          <div id="dataList"></div>
+          <div id="detaillist"></div>
+          <div id="narrowlist" style="display:none"></div>
+
+          <div id="dataListTop" class='exporter localonly' style="display:none;overflow:auto;margin-bottom:8px">
+
+            <div style='float:left'>
+              Select up to 10 companies when requesting contact info.
+            </div>
+
+            <div id="rightButtons" style="float:right;">
+              <div id="showMap" class="detailbutton" style="display:none; float:left;margin-right:10px">Map</div>
+              <div id="toggleList" class="detailbutton localonly" style="float:left;margin-right:10px">Toggle</div>
+                <div id="requestInfo" class='orangeButton detailbutton lowerButton' style="float:left;">Request Contact Info</div>
+            </div>
+
+          </div>
+
+        
       </div>
     </div>
 
@@ -771,23 +788,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 <section id="directory" class="mock-up" style="display:none;">
   <div class="content">
-    <h2 style="margin-top:0px">Exporter Directory</h2>
-    <div id="dataListTop" class='exporter' style="overflow:auto;margin-bottom:8px">
-
-      <div style='float:left'>
-        Select up to 10 companies when requesting contact info.
-      </div>
-
-      <div id="rightButtons" style="float:right;">
-        <div id="showMap" class="detailbutton" style="display:none; float:left;margin-right:10px">Map</div>
-        <div id="toggleList" class="detailbutton localonly" style="float:left;margin-right:10px">Toggle</div>
-          <div id="requestInfo" class='orangeButton detailbutton lowerButton' style="float:left;">Request Contact Info</div>
-      </div>
-
-    </div>
+    <h2 style="margin-top:0px">Old Directory - Remove</h2>
+    
     <div id="resultsHeader">
     </div>
-    <div id="dataList"></div>
+    
 
     <!-- For D3 Embedded CSV Sheet -->
     <div style="overflow:hidden;position:relative">

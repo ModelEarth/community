@@ -461,8 +461,9 @@ function SearchFormTextCheck(t, dirn) {
           	$("#clearButton").click();
         }
 		function displayResults() {
-			console.log("displayResults2");
-
+			console.log("displayResults disabled");
+			return;
+			
 			$("#resultsPanel").hide();
 			$("#eTable_alert").hide();
 			$("#nomatchPanel").hide();
@@ -581,7 +582,7 @@ function SearchFormTextCheck(t, dirn) {
 					foundMatch++;
 				}
 
-	          	if (i > 0) { // BUGBUG Skip the header row
+	          	if (i > 0 && i < 3) { // BUGBUG Skip the header row
 	          		//if (entry[0] > (startRange*100) && entry[0] < (endRange*100+99)) {
 
 	          		if (foundMatch > 0) { // keyword match.  Not product match.
@@ -665,18 +666,6 @@ function SearchFormTextCheck(t, dirn) {
 
 			
 
-	        if (dataMatchCount > 0) {
-	        	//alert("show") // was twice BUGBUG
-	        	$("#dataList").append(dataMatchCount + " results displayed from " + (dataSet.length - 1) + " records.<br><br>");
-          		$("#resultsPanel").show();
-          		$("#dataList").show();
-          	} else {
-          		// href='javascript:;' onclick='return false;'
-          		
-				var noMatch = "<div>No match found in " + (dataSet.length - 1) + " records. <a href='#' onclick='clickClearButton();return false;'>Clear filters</a>.</div>"
-				$("#nomatchText").html(noMatch);
-				$("#nomatchPanel").show();
-			}
 
 			console.log("productMatchFound: " + productMatchFound);
 
