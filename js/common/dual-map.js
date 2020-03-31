@@ -92,8 +92,8 @@ function loadFromCSV(whichmap,dp,callback) {
   defaults.numColumns = ["zip","lat","lon"];
   defaults.nameColumn = "name";
   defaults.valueColumn = "name"; // For color coding
-  defaults.latColumn = "lat";
-  defaults.lonColumn = "lon";
+  defaults.latColumn = "latitude";
+  defaults.lonColumn = "longitude";
   //defaults.scaleType = "scaleQuantile";
   defaults.scaleType = "scaleOrdinal";
   defaults.dataTitle = "Data Projects"; // Must match "map.addLayer(overlays" below.
@@ -108,11 +108,24 @@ function loadFromCSV(whichmap,dp,callback) {
   }
 
   if(container == null) { // Initialize map
+
+    
     map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
       zoom: dp.zoom
     });
+    
+    /*
+    // setView does not seem to be needed
+    map = L.map(whichmap,{
+      center: mapCenter,
+      scrollWheelZoom: false,
+      zoom: dp.zoom,
+      zoomControl: false
+    });
+    map.setView(mapCenter,dp.zoom);
+    */
   }
 
   // 5. Load Layers Asynchronously
@@ -123,11 +136,12 @@ function loadFromCSV(whichmap,dp,callback) {
   //      lonColumn: "lon",
   //var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
 
-  // We are currently assuming dp.dataset is a CSV file.
+  // We are currently loading dp.dataset from a CSV file.
+  // Later we will check if the filename ends with .csv
+
   d3.csv(dp.dataset).then(function(data) {
       
       dp.data = readCsvData(data, dp.numColumns, dp.valueColumn);
-
       // Make element key always lowercase
 
       dp.data_lowercase_key
@@ -150,7 +164,7 @@ function loadFromCSV(whichmap,dp,callback) {
         layerControl[whichmap] = L.control.layers(basemaps2, overlays2).addTo(map); // Push multple layers
         basemaps2["Grayscale"].addTo(map); // Set the initial baselayer.
       } else {
-        layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
+        layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
 
       //if(layerControl[whichmap] == undefined) {
@@ -182,12 +196,19 @@ function loadFromCSV(whichmap,dp,callback) {
         showList(dp);
       }
       
-      callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
-      //return map;
+      //callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
   })
-  .catch(function(error){ 
-       alert("Data loading error: " + error)
-  })
+  //.catch(function(error){ 
+  //     alert("Data loading error: " + error)
+  //})
+
+  // map.whenReady(function(){ // Runs too soon, causing Cannot read property 'addOverlay' of undefined
+  // Neigher seems to require SetView()
+  map.on('load',function(){
+    alert("loaded")
+    callback(map)
+  });
+
 }
 
 /////////// MAP SETTINGS ///////////
@@ -215,7 +236,7 @@ dataParameters.forEach(function(ele) {
   //overlays2[ele.name] = ele.group; // Add to layer menu
 })
 
-function populateMap(whichmap, dp, callback) {
+function populateMap(whichmap, dp, callback) { // From JSON within page
     var circle;
     let defaults = {};
     defaults.zoom = 7;
@@ -233,8 +254,6 @@ function populateMap(whichmap, dp, callback) {
       zoom: dp.zoom,
       zoomControl: false
     });
-
-    
     map.setView(mapCenter,dp.zoom);
 
     L.control.zoom({
@@ -264,19 +283,15 @@ function populateMap(whichmap, dp, callback) {
       layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
     }
     
+    // Attach the icon to the marker and add to the map
+    //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
+    
+    // Set .my-div-icon styles in CSS
+    //var myIcon = L.divIcon({className: 'my-div-icon'});
+    //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
 
-
-
-      
-      // Attach the icon to the marker and add to the map
-      //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
-      
-      // Set .my-div-icon styles in CSS
-      //var myIcon = L.divIcon({className: 'my-div-icon'});
-      //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
-
-      addIcons(dp, map);
-      map.addLayer(overlays[dp.name]);
+    addIcons(dp, map);
+    map.addLayer(overlays[dp.name]);
     
     // Both work
     map.on('load',function(){
@@ -296,10 +311,6 @@ function populateMap(whichmap, dp, callback) {
     //map.whenReady(callback(map)); //  event handler before you load the map with SetView()
     
 }
-
-
-
-
 
 
 
@@ -345,7 +356,6 @@ function hex2rgb(hex) {
   }
   return null;
 }
-
 function markerRadius(radiusValue,map) {
   //return 100;
   // Standard radiusValue = 1
@@ -365,7 +375,7 @@ function markerRadius(radiusValue,map) {
   if (mapZoom >= 20) { smallerWhenClose = .1};
   let radiusOut = (radiusValue * 1000) / mapZoom * smallerWhenClose;
 
-  console.log("mapZoom:" + mapZoom + " radiusValu:" + radiusValue + " radiusOut:" + radiusOut);
+  //console.log("mapZoom:" + mapZoom + " radiusValu:" + radiusValue + " radiusOut:" + radiusOut);
   return radiusOut;
 }
 function addIcons(dp,map) {
@@ -482,9 +492,133 @@ function showList(dp) {
   var iconColor, iconColorRGB, iconName;
   var colorScale = dp.scale;
   let count = 0;
+
+  var productMatchFound = 0;
+  var dataMatchCount = 0;
+      // Keyword Search
+  var keyword = $("#keywordsTB").val().toLowerCase();
+  var products = $("#keywordsTB").val().replace(";",",");
+
+  // For each product ID - Still to implement, copied for search-filters.js
+  var productcodes = $("#productCodes").val().replace(";",",");
+  var products_array = products.split2(/\s*,\s*/);
+  var productcode_array = productcodes.split2(/\s*,\s*/); // Removes space when splitting on comma
+
   dp.data.forEach(function(elementRaw) {
     count++;
-    if (count <= 500) {
+    foundMatch = 0;
+    if (keyword == "all items") { // Use a div argument instead
+        keyword == ""; products = "";
+        $("#keywordsTB").text(""); // Not working
+        foundMatch++;
+    } else if (keyword.length > 0 || products_array.length > 0 || productcode_array.length > 0) {
+
+          //$("#dataList").html("");
+          if (keyword.length > 0) {
+
+            //console.log("Search for " + keyword);
+
+            if (elementRaw[dp.valueColumn].toLowerCase().indexOf(keyword) >= 0) {
+              console.log("foundMatch keywords");
+              foundMatch++;
+            }
+
+            if ($("#findKeywords").is(":checked") > 0 && elementRaw[dp.description].toLowerCase().indexOf(keyword) >= 0) {
+              console.log("foundMatch keywords");
+              foundMatch++;
+            }
+
+            /*
+            //if ($(dataSet[i][0].length > 0)) {
+              if ($("#findCompany").is(":checked") > 0 && dataSet[i][0].toString().toLowerCase().indexOf(keyword) >= 0) {
+                console.log("foundMatch A");
+                foundMatch++;
+              }
+            //}
+            if ($("#findWebsite").is(":checked") > 0 && dataSet[i][1].toString().toLowerCase().indexOf(keyword) >= 0) {
+              console.log("foundMatch B");
+              foundMatch++;
+            }
+            if ($("#findDetails").is(":checked") > 0 && dataSet[i][2].toString().toLowerCase().indexOf(keyword) >= 0) {
+              console.log("foundMatch C");
+              foundMatch++;
+            }
+            if ($("#findProduct").is(":checked") > 0 && dataSet[i][3].toString().toLowerCase().indexOf(keyword) >= 0) {
+              console.log("foundMatch D");
+              foundMatch++;
+            }
+            if ($("#findProduct").is(":checked") > 0 && dataSet[i][4].toString().toLowerCase().indexOf(keyword) >= 0) { // Description
+              console.log("foundMatch E");
+              foundMatch++;
+            }
+            */
+
+          }
+
+          if (1==2) { // Not yet tested here
+            for(var p = 0; p < products_array.length; p++) {
+              if (products_array[p].length > 0) {
+                //if (isInt(products_array[p])) { // Int
+                  // Column 0
+
+
+                  //console.log("Does " + codesArray[j] + " start with " + productcode_array[p]);
+                  if (dataSet[i][0].toString().toLowerCase().startsWith(products_array[p])) { // If columns values start with search values.
+
+                    productMatchFound++;
+                    //console.log("productMatchFound " + productMatchFound);
+
+                    console.log("foundMatch: " + dataSet[i][0] + " startsWith: " + products_array[p]);
+                    //foundMatch++;
+                    //$(this).show();
+                  }
+                
+                //} else {
+                //  console.log("Not int")
+                //  productMatchFound++;
+                //}
+              }
+            }
+          }
+
+          if (1==2) { // Not yet tested here
+            console.log("Check if listing's product HS codes match.");
+            for(var pc = 0; pc < productcode_array.length; pc++) { 
+              if (productcode_array[pc].length > 0) {
+                if (isInt(productcode_array[pc])) { // Int
+                  //var codesArray = $(this.childNodes[3]).text().replace(";",",").split(/\s*,\s*/);
+                  var codesArray = dataSet[i][5].toString().replace(";",",").split2(/\s*,\s*/);
+                  for(var j = 0; j < codesArray.length; j++) {
+                    if (isInt(codesArray[j])) {
+                      if (codesArray[j].startsWith(productcode_array[pc])) { // If columns values start with search values.
+                        console.log("codesArray " + j + " " + codesArray[j] + " starts with " + productcode_array[pc]);
+                      
+                        console.log("foundMatch D");
+                        productMatchFound++; // Might not be needed here
+                        foundMatch++;
+                        //$(this).show();
+                      }
+                    }
+                  }
+                } else {
+                  console.log("productcode not int")
+                  // TO DO: Match the product description instead.
+
+                    //productMatchFound++;
+
+                }
+              }
+            }
+          }
+
+    } else {
+      // Automatically find match since there are no filters
+      //console.log("foundMatch E");
+      foundMatch++;
+    }
+
+    if (foundMatch > 0) {
+    //if (count <= 500) {
       var key, keys = Object.keys(elementRaw);
       var n = keys.length;
       var element={};
@@ -526,16 +660,18 @@ function showList(dp) {
       // colorScale(element[dp.valueColumn])
       //console.log("iconColor test here: " + iconColor)
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-      output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
+      output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div><div style='overflow:auto'>"
       
-      if (element[dp.titleColumn]) {
-        output += "<b style='font-size:16px;color:#333'>" + element[dp.titleColumn] + "</b><br>";
+      
+      if (element[dp.nameColumn]) {
+        output += "<b style='font-size:16px;color:#333'>" + element[dp.nameColumn] + "</b><br>";
       } else if (element.title) {
         output += "<b style='font-size:16px;color:#333'>" + element.title + "</b><br>";
       } else {
         output += "<b style='font-size:16px;color:#333'>" + element.name + "</b><br>";
       }
 
+      console.log(dp.description)
       if (element[dp.description]) {
         output += element[dp.description] + "<br>";
       } else if (element.description) {
@@ -609,10 +745,10 @@ function showList(dp) {
 
       $("#detaillist").append(output);
     }
+    
 
   });
 }
-//Hey, if any of my friends and relatives don't suvive this virus thing, just know I love you as you breath your final breaths. 
 
 // Scales: http://d3indepth.com/scales/
 function getScale(data, scaleType, valueCol) {
@@ -737,8 +873,6 @@ var topMenuHeight = 150;
 */
 
 
-
-
 var mapFixed = false;
 var previousScrollTop = $(window).scrollTop();
 
@@ -781,4 +915,4 @@ $(window).scroll(function() {
     mapFixed = false;
   }
 });
-console.log('hello from dual map')
+console.log('hello from dual map');
