@@ -3,37 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Layout MockUp</title>
-<link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
+<title>Georgia Business Community Response</title>
+<link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 
-<link rel="stylesheet" href="../../css/community.css" />
-<link rel="stylesheet" href="../../css/search-filters.css" />
-<link rel="stylesheet" href="../../css/display.css" />
+<link rel="stylesheet" href="../css/community.css" />
+<link rel="stylesheet" href="../css/search-filters.css" />
+<link rel="stylesheet" href="../css/display.css" />
 
 
-<script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="../../js/common/common.js"></script>
-<script type="text/javascript" src="../../js/common/search-filters.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/common/common.js"></script>
+<script type="text/javascript" src="../js/common/search-filters.js"></script>
 <!-- Activate to include site navigation-->
-<script type="text/javascript" src="../../js/common/navigation.js"></script>
-<link rel="stylesheet" href="../../css/leaflet/leaflet.css" />
+<script type="text/javascript" src="../js/common/navigation.js"></script>
+<link rel="stylesheet" href="../css/leaflet/leaflet.css" />
  <!-- Resides AFTER Leaflet's CSS -->
-<script src="../../js/leaflet/leaflet.js"></script>
+<script src="../js/leaflet/leaflet.js"></script>
 
-<script src="../../js/d3/d3.v5.min.js"></script>
+<script src="../js/d3/d3.v5.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="../../css/leaflet/leaflet.icon-material.css" rel="stylesheet">
-<script src="../../js/leaflet/leaflet.icon-material.js"></script>
-<script src="../../js/d3/d3-legend.js"></script>
-<script type="text/javascript" src="../../js/common/dual-map.js"></script>
-<link rel="stylesheet" href="../../css/map.css" />
+<link href="../css/leaflet/leaflet.icon-material.css" rel="stylesheet">
+<script src="../js/leaflet/leaflet.icon-material.js"></script>
+<script src="../js/d3/d3-legend.js"></script>
+<script type="text/javascript" src="../js/common/dual-map.js"></script>
+<link rel="stylesheet" href="../css/map.css" />
+
+<!-- For Facebook -->
+<meta property="og:title" content="Georgia Department of Economic Development" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="/themes/custom/mmg8_cog/georgia_link_share.png" />
+<meta property="og:url" content="https://georgia.org/" />
+<meta property="og:description" content="Georgia News and Press Releases" />
+
+<!-- For Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Georgia Department of Economic Development" />
+<meta name="twitter:description" content="Georgia News and Press Releases" />
+<meta name="twitter:image" content="/themes/custom/mmg8_cog/georgia_link_share.png" />
+
 </head>
 
 <body>
 
 <style>
+.mock-upX {
+  display: block !important;
+}
+#mapHolder {
+  display: none;
+}
+#hublist {
+  width:100%;
+}
+
+
 #map1 {
 	height: 280px;
+  height: 600px;
 }
 .content {
   max-width: 3000px !important;
@@ -131,7 +157,7 @@
   <div class="pagePanel" style="margin:0 0 12px 24px;">
 
 
-  <div id="productCodesHolder" class="filterField localonly">
+  <div id="productCodesHolder" style="display:none;" class="filterField localonly">
     <div class="filterLabel filterLabelMain">Categories</div>
 
     <!--
@@ -158,7 +184,7 @@
       <div class="si-wrapper" style="float:left;position:relative">
         <!-- speech input -->
         <!-- was a button -->
-        <div class="si-btn">
+          <div style="display:none" class="si-btn mock-up">
               <span class="si-holder" style="font-size: 20px">&#127897;</span>
           </div>
           <!-- maxlength="400"  -->
@@ -192,7 +218,7 @@
                       <input type="checkbox" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
                     </div>
                     <div>
-                      <input type="checkbox" name="findAddress" id="findAddress" value="1" checked><label for="findAddress" class="filterCheckboxTitle"> In Website URL</label>
+                      <input type="checkbox" name="findWebsite" id="findWebsite" value="1" checked><label for="findWebsite" class="filterCheckboxTitle"> In Website URL</label>
                     </div>
                     <div>
                       <input type="checkbox" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
@@ -223,7 +249,7 @@
   <div style="float:left;">
 
 
-        <div class="filterField searchElements" style="overflow: visible;">
+        <div style="overflow: visible;display:none" class="filterField searchElements mock-up">
             <div class="filterLabel filterLabelMain">Where</div>
 
             <div class="filterClick" id="filterClickLocation" style="position:relative; float:left;">
@@ -514,20 +540,44 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 
 <table>
-  <tr>
-    <td style="vertical-align:top;border-right:#ddd 1px solid">
-  <div id='sidecolumn' class='hideprint'>
-    
+<tr>
+<td style="vertical-align:top;border-right:#ddd 1px solid">
+  <div id='sidecolumn' class='hideprint' style="display: none">
+  </div>
+
+  <div style="margin:20px 10px 20px 17px;min-width:195px; line-height: 1.5em;">
+  <div class="catList" id="industryCatList">
+      <div text="">All Items</div>
+      <div text="">Air Purifying Machines</div>
+      <div text="">Face Shields</div>
+      <div text="">Gloves</div>
+      <div text="">Hair Covers</div>
+      <div text="">Hand sanitizer</div>
+      <div text="">Hospital Beds</div>
+      <div text="">Masks</div>
+      <div text="">Negative Pressure Machines</div>
+      <div text="">No-Touch Thermometers</div>
+      <div text="">Regular Thermometers</div>
+      <div text="">Safety Goggles</div>
+      <div text="">Sanitation Units</div>
+      <div text="">Sanitizing Spray</div>
+      <div text="">Sanitizing Wipes</div>
+      <div text="">Shoe Covers</div>
+      <div text="">Surgical Gowns</div>
+      <div text="">Surgical Masks</div>
+      <div text="">Tyvek Suits</div>
+      <div text="">Ventilators</div>
+    </div>
   </div>
 </td>
 <td style="width:100%; vertical-align:top">
 
 <!-- INDUSTRIES -->
-<section id="industries" style="overflow:auto; padding-bottom:0px">
+<section id="industries" style="display:none; overflow:auto; padding-bottom:0px" class="mock-up">
   <div class="content" style="padding-top:30px; padding-bottom:0px">
 
     
-    <h1 style='margin:0 0 4px 0'>Southeast Georgia&nbsp;Coalition</h1>
+    <h1 style='margin:0 0 4px 0'>Covid Response</h1>
 
     <!-- TOP WIDGETS -->
     <div>
@@ -592,7 +642,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
       <div class="leftWidget eWidget" style="margin-bottom:22px">
         <div class="widgetbar" style="padding-left:5px">
-          <a href="../../samples/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
+          <a href="../samples/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
           AGRICULTURE, FORESTRY, FISHING AND HUNTING
         </div>
         
@@ -617,8 +667,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           </div>
 
           <div style="font-size: 12px; background:#eee; border-bottom:1px solid #ddd; display:inline; padding:0 4px 0 4px">
-            <a href="../../samples/dataset/">Main categories</a> | 
-            <a href="../../samples/dataset/">Show all 382 sectors</a>
+            <a href="../samples/dataset/">Main categories</a> | 
+            <a href="../samples/dataset/">Show all 382 sectors</a>
 
             <span style="float:right; color:#777">Balanced &nbsp;</span>
 
@@ -664,17 +714,31 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 <!-- Start HTML -->
 <section id="data" class="eWidget" style="overflow:auto">
-<div class="content litePanel displayOnload" style="display:none; padding-bottom:10px">
+<div class="content litePanel displayOnload" style="display:none; padding-top:35px; padding-bottom:10px">
   <div id="flexwrapper">
     <div id="hublist">
       <div id="hublist-padding">
         
-        <h2 style="font-size: 18px; margin:0px; font-weight: 600">Community Map Widget</h2><br>
-        
-          The map to the right will highlight local counties and <a href="../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
-          Lists will include <a href="../../farmfresh/ga/">farm fresh produce</a> and <a href="../../tools/#places">all&nbsp;the&nbsp;places</a>.
+        <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
 
-        <h2 style="margin-top:10px"></h2>
+        <div style="width:15px;height:15px;margin-right:6px;margin-top:3px;background:#a6cee3;float:left"></div>
+        <div style="margin-right:16px;float:left">MANUFACTURERS</div>
+        <div style="width:15px;height:15px;margin-right:6px;margin-top:3px;background:#1f78b4;float:left"></div>
+        <div style="margin-right:16px;float:left">DISTRIBUTORS</div>
+        <div style="width:15px;height:15px;margin-right:6px;margin-top:3px;background:#b2df8a;float:left"></div>
+        <div style="margin-right:16px;float:left">BOTH</div>
+        <br><br>
+
+          <div>
+            The following organizations have responded to Georgia's call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
+            using the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please&nbsp;contact&nbsp;us.<br><br>
+          </div>
+          <hr style="margin-bottom:20px">
+
+          <div style="display:none;" class="mock-up">
+          The map to the right will highlight local counties and <a href="../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
+          Lists will include <a href="../farmfresh/ga/">farm fresh produce</a> and <a href="../tools/#places">all&nbsp;the&nbsp;places</a>.
+          </div>
 
         <div id="detaillist"></div>
         <div id="narrowlist" style="display:none"></div>
@@ -705,7 +769,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 </section>
 <!-- End HTML -->
 
-<section id="directory">
+<section id="directory" class="mock-up" style="display:none;">
   <div class="content">
     <h2 style="margin-top:0px">Exporter Directory</h2>
     <div id="dataListTop" class='exporter' style="overflow:auto;margin-bottom:8px">
@@ -781,70 +845,90 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 <script>
 
+// Southeast Georgia&nbsp;Coalition
+
+
 // MAP 1
-let dp1 = {}
-dp1.dataset = "/community/tools/map.csv";
-dp1.latitude = 31.6074;
-dp1.longitude = -81.8854;
+var map1;
+function loadMap1() { // Also called by search-filters.js
+  let dp1 = {}
+  dp1.dataset = "../../smartdata/resources/suppliers/Manufacturers-and-Distributors.csv";
 
-dp1.name = "Suppliers";
-dp1.zoom = 7;
-dp1.markerType = "google";
+  // Might use when height it 280px
+  dp1.latitude = 31.6074;
+  dp1.longitude = -81.8854;
 
-loadFromCSV('map1', dp1, function(results) { // Called on success
-    layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
-});
+  // Georgia
+  dp1.latitude = 32.9;
+  dp1.longitude = -83.4;
+  dp1.zoom = 7;
 
+  dp1.dataTitle = "Manufacturers and Distributors";
+  dp1.nameColumn = "name";
+  dp1.valueColumn = "type";
+  dp1.valueColumnLabel = "Type";
+  dp1.markerType = "circle";
+  dp1.description = "comments";
+  dp1.listLocation = false; // Hides Wazw direction link in list, remains in popup.
+
+  $("#detaillist").text(""); // Clear prior results
+  map1 = loadFromCSV('map1', dp1, function(results) { // Called on success
+      layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+  });
+}
+loadMap1();
 
 // MAP 2 - INTERMODAL PORTS
-let dp2 = {
-  selector: "aside.Intermodal_Ports",
-  delimiter: ",",
-  numColumns: ["lat","lon"],
-  valueColumn: "value",
-  scaleType: "scaleOrdinal",
-  //scaleType: "scaleQuantile",
-  //scaleType: "scaleThreshold",
+if (1==2) {
+    let dp2 = {
+      selector: "aside.Intermodal_Ports",
+      delimiter: ",",
+      numColumns: ["lat","lon"],
+      valueColumn: "value",
+      scaleType: "scaleOrdinal",
+      //scaleType: "scaleQuantile",
+      //scaleType: "scaleThreshold",
+    }
+    //dp2.name = dp2.selector.split(".").pop(); // name: Intermodal_Ports
+    dp2.name = "Intermodal Ports";
+    dp2.listLocation = false;
+
+    dp2.latitude = 31.6074;
+    dp2.longitude = -81.8854;
+    // Bruswick GA - Jesup was not centering
+    dp2.latitude = 31.1500;
+    dp2.longitude =  -81.4915;
+
+    dp2.zoom = 8;
+    dp2.markerType = "google";
+    dp2.data = readData(dp2.selector, dp2.delimiter, dp2.numColumns, dp2.valueColumn);
+    //dp2.color = '#0033ff'; // Alternative to scale
+    dp2.scale = getScale(dp2.data, dp2.scaleType, dp2.valueColumn);
+
+    dp2.group = L.layerGroup();
+    //dp2.group2 = L.layerGroup();
+    //dp2.iconName = 'device_hub';
+    dp2.iconName = "language";
+    dp2.nameColumn = "group";
+    
+
+    //dataParameters.push(dp2);
+
+    // Legend needs to reside below map on left, or in side popup
+    //addLegend(dp2.scale, dp2.scaleType, dp2.name);
+
+    populateMap('map2', dp2, function(map) { // Called on success
+
+      // Add another layer to existing map
+      dp2 = {}
+      dp2.name = "Communities";
+      dp2.dataset = "/community/tools/map.csv";
+      loadFromCSV('map2', dp2, function(results) {
+        // Add Railroad layer
+        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+      });
+    });
 }
-//dp2.name = dp2.selector.split(".").pop(); // name: Intermodal_Ports
-dp2.name = "Intermodal Ports";
-dp2.listLocation = false;
-
-dp2.latitude = 31.6074;
-dp2.longitude = -81.8854;
-// Bruswick GA - Jesup was not centering
-dp2.latitude = 31.1500;
-dp2.longitude =  -81.4915;
-
-dp2.zoom = 8;
-dp2.markerType = "google";
-dp2.data = readData(dp2.selector, dp2.delimiter, dp2.numColumns, dp2.valueColumn);
-//dp2.color = '#0033ff'; // Alternative to scale
-dp2.scale = getScale(dp2.data, dp2.scaleType, dp2.valueColumn);
-
-dp2.group = L.layerGroup();
-//dp2.group2 = L.layerGroup();
-//dp2.iconName = 'device_hub';
-dp2.iconName = 'language';
-dp2.nameColumn = "group";
-
-//dataParameters.push(dp2);
-
-// Legend needs to reside below map on left, or in side popup
-//addLegend(dp2.scale, dp2.scaleType, dp2.name);
-
-populateMap('map2', dp2, function(map) { // Called on success
-
-  // Add another layer to existing map
-  dp2 = {}
-  dp2.name = "Communities";
-  dp2.dataset = "/community/tools/map.csv";
-  loadFromCSV('map2', dp2, function(results) {
-    // Add Railroad layer
-    layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-  });
-});
-
 
 </script>
 </body>
