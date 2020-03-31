@@ -496,13 +496,23 @@ function showList(dp) {
   var productMatchFound = 0;
   var dataMatchCount = 0;
       // Keyword Search
-  var keyword = $("#keywordsTB").val().toLowerCase();
-  var products = $("#keywordsTB").val().replace(";",",");
-
-  // For each product ID - Still to implement, copied for search-filters.js
-  var productcodes = $("#productCodes").val().replace(";",",");
-  var products_array = products.split2(/\s*,\s*/);
-  var productcode_array = productcodes.split2(/\s*,\s*/); // Removes space when splitting on comma
+  var keyword = "";
+  var products = "";
+  var productcodes = "";
+  var products_array = [];
+  var productcode_array = [];
+  if ($("#keywordsTB").val()) {
+    keyword = $("#keywordsTB").val().toLowerCase();
+  }
+  if ($("#keywordsTB").val()) {
+    products = $("#keywordsTB").val().replace(";",",");
+    products_array = products.split2(/\s*,\s*/);
+  }
+  if ($("#productCodes").val()) {
+    // For each product ID - Still to implement, copied for search-filters.js
+    productcodes = $("#productCodes").val().replace(";",",");
+    productcode_array = productcodes.split2(/\s*,\s*/); // Removes space when splitting on comma
+  }
 
   dp.data.forEach(function(elementRaw) {
     count++;
