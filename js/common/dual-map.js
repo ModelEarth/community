@@ -266,15 +266,7 @@ function populateMap(whichmap, dp, callback) {
     
 
 
-      // Sample of single icon - place in addIcons function
-      // Create a semi-transparent bus icon
-      var busIcon = L.IconMaterial.icon({
-        icon: 'local_shipping',            // Name of Material icon
-        iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
-        markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
-        outlineColor: 'rgba(255,0,0,0.5)',            // Marker outline color
-        outlineWidth: 1,                   // Marker outline width 
-      })
+
       
       // Attach the icon to the marker and add to the map
       //L.marker([33.74,-84.38], {icon: busIcon}).addTo(map)
@@ -283,11 +275,24 @@ function populateMap(whichmap, dp, callback) {
       //var myIcon = L.divIcon({className: 'my-div-icon'});
       //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
 
-    addIcons(dp, map);
-    map.addLayer(overlays[dp.name]);
+      addIcons(dp, map);
+      map.addLayer(overlays[dp.name]);
     
     // Both work
-    map.on('load',callback(map)); //  event handler before you load the map
+    map.on('load',function(){
+
+      // Sample of single icon - place in addIcons function
+      // Create a semi-transparent bus icon
+      var busIcon = L.IconMaterial.icon({
+        icon: 'local_shipping',            // Name of Material icon
+        iconColor: '#fff',              // Material icon color (could be rgba, hex, html name...)
+        markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
+        outlineColor: 'rgba(255,0,0,0.5)',            // Marker outline color
+        outlineWidth: 1,                   // Marker outline width 
+      });
+
+      callback(map)
+    }); //  event handler before you load the map
     //map.whenReady(callback(map)); //  event handler before you load the map with SetView()
     
 }

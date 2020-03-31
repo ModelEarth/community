@@ -288,6 +288,7 @@ function dualmapLoaded(param) {
 	    //dp1.iconName = 'device_hub';
 	    dp1.iconName = 'language';
 	    //dataParameters.push(dp1);
+	    dp1.nameColumn = "group";
 	    
 	    populateMap('map1', dp1, function(results) {
 		    loadScript(root + 'js/d3/d3-legend.js', function(results){
