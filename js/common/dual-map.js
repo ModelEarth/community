@@ -746,7 +746,9 @@ function showList(dp) {
         output += "<br>";
       }
       if (element.website) {
-        output += "<a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>";
+        if (element.website.length <= 50) {
+          output += "<a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>";
+        }
       }
       
       if (element.phone || element.phone_afterhours) {
@@ -769,6 +771,8 @@ function showList(dp) {
       //  (dataSet.length - 1) 
       if (dataMatchCount == count) {
         $("#dataList").html("All " + dataMatchCount + " records. Select a category to filter your results.<br><br>");
+      } else if (count==1) {
+        $("#dataList").html(dataMatchCount + " matching service provider within " + count + " records.<br><br>");
       } else {
         $("#dataList").html(dataMatchCount + " matching service providers within " + count + " records.<br><br>");
       }

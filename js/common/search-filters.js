@@ -31,12 +31,14 @@ $(document).ready(function () {
 	$("#productCodes").css('width','200px');
 
 	$('#catListHolderShow').click(function () {
-		if ($('#catListHolder').css('display') == 'none') {
+		if ($('#tableSide').css('display') == 'none') {
 			$('#catListHolder').show();
-			$('#catListHolderShow').text('Hide Industries');
+			$('#catListHolderShow').text('Hide Categories');
+			$('#tableSide').removeClass('hideCatsMobile');
 		} else {
 			$('#catListHolder').hide();
-			$('#catListHolderShow').text('Industries . . .');
+			$('#catListHolderShow').text('Show Categories');
+			$('#tableSide').addClass('hideCatsMobile');
 		}
     });
 
@@ -194,7 +196,7 @@ $(document).ready(function () {
 	    	// In case user has resized from mobile to full and industry list is not available.
 	    	// Coule be moved to a screen width watcher.
 			$('#catListHolderShow').show();
-			$('#catListHolderShow').text('Industries . . .');
+			$('#catListHolderShow').text('Show Categories');
 		}
 		$(".eWidget").hide();
 		loadMap1();
@@ -463,7 +465,7 @@ function SearchFormTextCheck(t, dirn) {
 		function displayResults() {
 			console.log("displayResults disabled");
 			return;
-			
+
 			$("#resultsPanel").hide();
 			$("#eTable_alert").hide();
 			$("#nomatchPanel").hide();
