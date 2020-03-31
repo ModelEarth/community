@@ -221,6 +221,8 @@ function populateMap(whichmap, dp, callback) {
     defaults.zoom = 7;
     if (dp.latitude && dp.longitude) {
       mapCenter = [dp.latitude,dp.longitude]; 
+    } else {
+      mapCenter = [33.74,-84.38];
     }
 
     dp = mix(dp,defaults); // Gives priority to dp
@@ -233,7 +235,7 @@ function populateMap(whichmap, dp, callback) {
     });
 
     
-    map.setView([dp.latitude,dp.longitude],dp.zoom);
+    map.setView(mapCenter,dp.zoom);
 
     L.control.zoom({
         position: 'bottomright'
