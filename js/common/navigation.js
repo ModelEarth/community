@@ -52,11 +52,13 @@ $(document).ready(function(){
  		// To do: fetch the existing background-image.
  		
  		if(location.host.indexOf('georgia') >= 0 || location.host.indexOf('localhost') >= 0) {
+ 			$(".siteTitleShort").text("Model Georgia");
 	 		imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
 	 		$('#logoholder').addClass('logoholder-state');
 	 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
 	 		$('#headerLocTitle').html("Georgia");
 	 	} else {
+	 		$(".siteTitleShort").text("Model Earth");
 	 		imageUrl = climbpath + "img/logo/favicon.png"; // model earth
 	 		$('#logospace').css('margin-top','2px');
 	 		$('#logoholder').addClass('logoholder-modelearth');

@@ -1,12 +1,12 @@
 
 <h1 class="h1-home">Crowdsourced Spreadsheet Editor</h1>
-<h2 style="margin-top:0px">Embeddable Widget for CSV Files and Google Sheets</h2>
+<h2 style="margin-top:0px">Embeddable Map Widget for CSV Files and Google Sheets</h2>
 
-We're creating an embeddable map widget for CSV data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow supplier to promote when they are open for curbside pickup and&nbsp;delivery.  We'll be tapping existing processes for sharing hours of operation between Facebook, Google and other sites, including [All The Places](https://www.alltheplaces.xyz/).
+We're creating an embeddable map widget for CSV data hosted on GitHub (including merged USDA onfarm locations) and Google Sheets to allow supplier to promote when they are open for curbside pickup and&nbsp;delivery. Please contribute your programming skills to our <a href="https://github.com/modelearth/community">community repo</a>.  We'll be tapping existing processes for sharing hours of operation between Facebook, Google and other sites, including [All&nbsp;The&nbsp;Places](https://www.alltheplaces.xyz/).
 
 For our Google Sheet backend, we're using the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
-1. Here's our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml), a public link. 
+1. Here's our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml). 
 Editable link is in our Slack #epa group.
 
 1. Our local [MapsforUS HTML Map](map/mapsforus/sample.html) - Uses the Google ID of the Google Sheet above. 

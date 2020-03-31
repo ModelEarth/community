@@ -49,7 +49,13 @@ $(document).ready(function () {
 		$('#industryCatList > div').css('border', 'solid 1px #fff');
         $(this).css('border', 'solid 1px #aaa');
         $(this).css('border-right', 'solid 5px #aaf');
-        displayResults();
+
+        //displayResults(); // This can be removed after transitioning away from list at bottom
+        
+
+        // Use instead
+        loadMap1();
+
 	    hideNonListPanels();
         event.stopPropagation();
     });
@@ -191,7 +197,8 @@ $(document).ready(function () {
 			$('#catListHolderShow').text('Industries . . .');
 		}
 		$(".eWidget").hide();
-    	displayResults();
+		loadMap1();
+    	//displayResults();
 	    event.stopPropagation();
    	});
 
@@ -454,7 +461,7 @@ function SearchFormTextCheck(t, dirn) {
           	$("#clearButton").click();
         }
 		function displayResults() {
-			console.log("displayResults");
+			console.log("displayResults2");
 
 			$("#resultsPanel").hide();
 			$("#eTable_alert").hide();
@@ -485,7 +492,7 @@ function SearchFormTextCheck(t, dirn) {
 					//$("#dataList").html("");
 					if (keyword.length > 0) {
 
-						console.log("Search for " + keyword);
+						//console.log("Search for " + keyword);
 
 						if ($("#findKeywords").is(":checked") > 0 && dataSet[i][5].toString().toLowerCase().indexOf(keyword) >= 0) {
 							console.log("foundMatch keywords");
@@ -498,7 +505,7 @@ function SearchFormTextCheck(t, dirn) {
 								foundMatch++;
 							}
 						//}
-						if ($("#findAddress").is(":checked") > 0 && dataSet[i][1].toString().toLowerCase().indexOf(keyword) >= 0) {
+						if ($("#findWebsite").is(":checked") > 0 && dataSet[i][1].toString().toLowerCase().indexOf(keyword) >= 0) {
 							console.log("foundMatch B");
 							foundMatch++;
 						}
