@@ -102,6 +102,18 @@
     float: none;
     margin-right:0px;
   }
+  .hideCatsMobile {
+    display:none;
+  }
+}
+.showCats {
+  display:block;
+}
+@media (max-width: 800px) {
+  .showCats {
+    width:100%;
+    max-width: 100%;
+  }
 }
 .column50 {
   width:250px;
@@ -429,7 +441,7 @@
         <!-- showAll showAllResults searchHeight -->
         <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
           
-        <div id="catListHolderShow" class='detailbutton lowerButton' style="float:left;margin-left:8px">Industries . . .</div>
+        <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">Show Categories</div>
           </div>
           <!-- /Submit Button -->
 
@@ -539,9 +551,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="clear:both"></div>
 
 
-<table>
+<table style="width:100%;max-width:8000px">
 <tr>
-<td style="vertical-align:top;border-right:#ddd 1px solid">
+<td id="tableSide" class="hideCatsMobile" style="vertical-align:top;border-right:#ddd 1px solid">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
 
