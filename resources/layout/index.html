@@ -782,12 +782,15 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 <script>
 
 // MAP 1
-let dp1 = {
-  dataset: "/community/tools/map.csv",
-  latitude: 31.6074,
-  longitude: -81.8854
-}
+let dp1 = {}
+dp1.dataset = "/community/tools/map.csv";
+dp1.latitude = 31.6074;
+dp1.longitude = -81.8854;
+
+dp1.name = "Suppliers";
 dp1.zoom = 7;
+dp1.markerType = "google";
+
 loadFromCSV('map1', dp1, function(results) { // Called on success
     layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
 });
@@ -814,6 +817,7 @@ dp2.latitude = 31.1500;
 dp2.longitude =  -81.4915;
 
 dp2.zoom = 8;
+dp2.markerType = "google";
 dp2.data = readData(dp2.selector, dp2.delimiter, dp2.numColumns, dp2.valueColumn);
 //dp2.color = '#0033ff'; // Alternative to scale
 dp2.scale = getScale(dp2.data, dp2.scaleType, dp2.valueColumn);
@@ -825,21 +829,20 @@ dp2.iconName = 'language';
 
 
 //dataParameters.push(dp2);
-addIcons(dp2);
 
 // Legend needs to reside below map on left, or in side popup
 //addLegend(dp2.scale, dp2.scaleType, dp2.name);
 
-populateMap('map2', dp2, function(results) { // Called on success
-
+populateMap('map2', dp2, function(map) { // Called on success
 
   // Add another layer to existing map
   dp2 = {}
+  dp2.name = "Communities";
   dp2.dataset = "/community/tools/map.csv";
-  loadFromCSV('map2', dp2, function(results) {} );
-
-  // Add Railroad layer
-  layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+  loadFromCSV('map2', dp2, function(results) {
+    // Add Railroad layer
+    layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+  });
 });
 
 
