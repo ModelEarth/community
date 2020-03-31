@@ -274,9 +274,14 @@ function dualmapLoaded(param) {
 	    }
 	    //dp1.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
 	    dp1.name = "Intermodal Ports"
+	    dp1.markerType = "google";
 	    dp1.data = readData(dp1.selector, dp1.delimiter, dp1.numColumns, dp1.valueColumn);
 	    //dp1.color = '#0033ff'; // Alternative to scale
 	    dp1.scale = getScale(dp1.data, dp1.scaleType, dp1.valueColumn);
+
+	    // Atlanta
+    	dp1.latitude = 33.7490;
+    	dp1.longitude = -84.3880;
 
 	    dp1.group = L.layerGroup();
 	    //dp1.group2 = L.layerGroup();
@@ -285,7 +290,6 @@ function dualmapLoaded(param) {
 	    //dataParameters.push(dp1);
 	    
 	    populateMap('map1', dp1, function(results) {
-		    addIcons(dp1);
 		    loadScript(root + 'js/d3/d3-legend.js', function(results){
 		    	addLegend(dp1.scale, dp1.scaleType, dp1.name);
 		    });
@@ -296,10 +300,13 @@ function dualmapLoaded(param) {
 
 	// MAP 2
 	let dp2 = {
-      dataset: root + "tools/map.csv",
-      latitude: 31.6074,
-      longitude: -81.8854
+      dataset: root + "tools/map.csv"
     }
+    // Georgia
+    dp2.latitude = 32.9;
+    dp2.longitude = -83.4;
+    
+    dp2.markerType = "google";
 	loadFromCSV('map2', dp2, function(results) {
 		//alert("back");
 	//loadFromCSV('map2', "/community/tools/map.csv", function(results) {

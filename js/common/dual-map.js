@@ -102,6 +102,11 @@ function loadFromCSV(whichmap,dp,callback) {
 
   let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
   var container = L.DomUtil.get(map);
+
+  if (dp.latitude && dp.longitude) {
+      mapCenter = [dp.latitude,dp.longitude]; 
+  }
+
   if(container == null) { // Initialize map
     map = L.map(whichmap, {
       center: mapCenter,
@@ -152,10 +157,10 @@ function loadFromCSV(whichmap,dp,callback) {
         
       //}
 
-      addIcons(dp);
+      addIcons(dp,map);
       //addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
 
-      showList(dp);
+      
 
       // All layers reside in this object:
       console.log("dataParameters:");
@@ -171,8 +176,12 @@ function loadFromCSV(whichmap,dp,callback) {
 
       //map.addLayer(overlays["Intermodal Ports"]);
 
-      map.addLayer(overlays2[dp.name]);
-      $("#widgetTitle").text(dp.name);
+      if (dp.showLayer != false) {
+        $("#widgetTitle").text(dp.name);
+        map.addLayer(overlays2[dp.name]);
+        showList(dp);
+      }
+      
       callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
       //return map;
   })
@@ -207,7 +216,7 @@ dataParameters.forEach(function(ele) {
 })
 
 function populateMap(whichmap, dp, callback) {
-
+    var circle;
     let defaults = {};
     defaults.zoom = 7;
     if (dp.latitude && dp.longitude) {
@@ -216,12 +225,16 @@ function populateMap(whichmap, dp, callback) {
 
     dp = mix(dp,defaults); // Gives priority to dp
 
-    var map = L.map(whichmap, {
+    var map = L.map(whichmap,{
       center: mapCenter,
       scrollWheelZoom: false,
       zoom: dp.zoom,
       zoomControl: false
     });
+
+    
+    map.setView([dp.latitude,dp.longitude],dp.zoom);
+
     L.control.zoom({
         position: 'bottomright'
     }).addTo(map);
@@ -268,11 +281,13 @@ function populateMap(whichmap, dp, callback) {
       //var myIcon = L.divIcon({className: 'my-div-icon'});
       //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
 
-    
+    addIcons(dp, map);
     map.addLayer(overlays[dp.name]);
-
-    callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
-    //return map;
+    
+    // Both work
+    map.on('load',callback(map)); //  event handler before you load the map
+    //map.whenReady(callback(map)); //  event handler before you load the map with SetView()
+    
 }
 
 
@@ -324,8 +339,29 @@ function hex2rgb(hex) {
   return null;
 }
 
+function markerRadius(radiusValue,map) {
+  //return 100;
+  // Standard radiusValue = 1
+  let mapZoom = map.getZoom();
+  let smallerWhenClose = 30;
+  if (mapZoom >= 5) { smallerWhenClose = 20};
+  if (mapZoom >= 8) { smallerWhenClose = 15};
+  if (mapZoom >= 9) { smallerWhenClose = 10};
+  if (mapZoom >= 10) { smallerWhenClose = 4};
+  if (mapZoom >= 11) { smallerWhenClose = 1.8};
+  if (mapZoom >= 12) { smallerWhenClose = 1.4};
+  if (mapZoom >= 13) { smallerWhenClose = 1};
+  if (mapZoom >= 14) { smallerWhenClose = .8};
+  if (mapZoom >= 15) { smallerWhenClose = .4};
+  if (mapZoom >= 17) { smallerWhenClose = .3};
+  if (mapZoom >= 18) { smallerWhenClose = .2};
+  if (mapZoom >= 20) { smallerWhenClose = .1};
+  let radiusOut = (radiusValue * 1000) / mapZoom * smallerWhenClose;
 
-function addIcons(dp) {
+  console.log("mapZoom:" + mapZoom + " radiusValu:" + radiusValue + " radiusOut:" + radiusOut);
+  return radiusOut;
+}
+function addIcons(dp,map) {
   var circle,circle2;
   var iconColor, iconColorRGB, iconName;
   var colorScale = dp.scale;
@@ -345,7 +381,7 @@ function addIcons(dp) {
       iconColor = dp.color;
     }
 
-    console.log("element state " + element.state + " iconColor: " + iconColor)
+    //console.log("element state " + element.state + " iconColor: " + iconColor)
     if (typeof dp.latColumn == "undefined") {
       dp.latColumn = "lat";
     }
@@ -364,10 +400,20 @@ function addIcons(dp) {
 
     // Attach the icon to the marker and add to the map
     //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
-    if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
-      circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
+
+    if (dp.markerType == "google") {
+        if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
+          circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
+        } else {
+          circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
+        }
     } else {
-      circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
+      circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
+                color: colorScale(element[dp.valueColumn]),
+                fillColor: colorScale(element[dp.valueColumn]),
+                fillOpacity: 1,
+                radius: markerRadius(1,map) // was 50.  Aiming for 1 to 10
+            }).addTo(dp.group);
     }
 
     // MAP POPUP
@@ -404,7 +450,25 @@ function addIcons(dp) {
     }
     circle.bindPopup(output);
     //circle2.bindPopup(output);
+
+    /*
+    map.on('zoomend', function() {
+      console.log('zoomend',map.getZoom())
+      circle.setRadius(markerRadius(1,map));
+    });
+    */
+
   });
+  
+  map.on('zoomend', function() { // zoomend
+    //alert('zoomed')
+    //L.layerGroup().eachLayer(function (marker) {
+    dp.group.eachLayer(function (marker) { // This hits every point individually. A CSS change might be less script processing intensive
+      //console.log('zoom ' + map.getZoom());
+      marker.setRadius(markerRadius(1,map));
+    });
+  });
+  
 }
 
 function showList(dp) {
