@@ -910,11 +910,10 @@ $(document).ready(function () {
       $('#industryCatList > div').css('border', 'solid 1px #fff');
           $(this).css('border', 'solid 1px #aaa');
           $(this).css('border-right', 'solid 5px #aaf');
-
           $("#catsMobile").hide();
           $('#catListHolderShow').text('Show Categories');
           $('html,body').animate({
-              scrollTop: $("#hublist").offset().top - 150
+              scrollTop: $("#hublist").offset().top - 250
           });
           //displayResults(); // This can be removed after transitioning away from list at bottom
           // Use instead
@@ -947,7 +946,7 @@ function loadMap1() { // Also called by search-filters.js
   dp1.nameColumn = "name";
   dp1.valueColumn = "type";
   dp1.valueColumnLabel = "Type";
-  dp1.markerType = "circle";
+  dp1.markerType = "google";
   dp1.description = "comments";
   dp1.listLocation = false; // Hides Wazw direction link in list, remains in popup.
 
