@@ -72,18 +72,6 @@
 #logoholderside {
 	display:none;
 }
-
-/* no effect */
-#detaillist {
-  width:100%;
-  max-width: 100%;
-  overflow-wrap: break-word;
-}
-#detaillist div {
-  overflow-wrap: break-word;
-}
-
-
 #allLegends {
 	color:#fff !important; 
 }
@@ -98,6 +86,11 @@
   overflow: auto;
   background: #fff;
 }
+
+#detaillist {
+  overflow-wrap: break-word;
+}
+
 .legendLink {
     float:left;
 }
@@ -110,7 +103,7 @@
 }
 @media (max-width: 800px) {
   .legendLink {
-    float:none;
+    float:auto;
   }
 }
 .outcomesbox span {
@@ -129,6 +122,10 @@
   line-height: 26px;
 }
 
+#industries {
+    float:right; display:none;
+    padding-bottom:0px; max-width:400px;
+}
 @media (max-width: 800px) {
   .leftWidget {
     width:100%;
@@ -137,6 +134,9 @@
   }
   .hideCatsMobile {
     display:none;
+  }
+  #industries {
+    float:auto;
   }
 }
 .showCats {
@@ -589,13 +589,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="clear:both"></div>
 
 
-<table style="width:100%;max-width:8000px">
-<tr>
-<td id="tableSide" style="vertical-align:top;border-right:#ddd 1px solid" class="hideMobile">
+<div id="tableSide" style="float:left;vertical-align:top;" class="hideMobile">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
 
-  <div style="margin:20px 10px 20px 17px;min-width:195px; line-height: 1.5em;">
+  <div style="margin:20px 10px 20px 17px; min-width:195px; line-height: 1.5em;">
   <div class="catList" id="industryCatList">
       <div text="">All Items</div>
       <div text="">Air Purifying Machines</div>
@@ -619,20 +617,20 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       <div text="">Ventilators</div>
     </div>
   </div>
-</td>
-<td style="width:100%; vertical-align:top">
+</div>
+<div style="vertical-align:top;">
 
 
 <!-- move after left column -->
 <!-- INDUSTRIES -->
-<section id="industries" style="float:right; display:none; padding-bottom:0px; max-width:400px" class="mock-up">
+<section id="industries" class="mock-up">
   <div style="padding-top:30px; padding-bottom:0px">
 
     <!-- TOP WIDGETS -->
     <div>
 
       <div style="margin-bottom:14px">
-        <b style="font-size:16px">Mock-Up</b> - Page is not yet interactive.        
+        <b style="font-size:16px">Mock-Up</b> - Side charts are not yet interactive.        
       </div>
 
       <div style="display:none; float:left; margin-right:30px">
@@ -700,7 +698,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         
         <div class="topboxes">
           <div style="position: relative">
-              <img src="img/sectors.gif" style="width:400px;margin-right:80px" />
+              <img src="img/sectors.gif" style="width:100%;max-width:400px;margin-right:80px" />
               <div style="position: absolute; right:0; top:8px; background: rgb(250,250,250); padding-left:6px">
                 <img src="img/plus-minus.gif" class="plus-minus"><br>
                 <img src="img/plus-minus.gif" class="plus-minus"><br>
@@ -898,7 +896,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 </section>
 
-</td></tr></table>
+</div>
 
 <!--
 To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
