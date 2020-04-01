@@ -4,7 +4,7 @@
 .showMobile, .showMobileWide {display:none;}
 .showGit {display:none;}
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .hideMobile {display:none;}
   .showMobile {display:inline-block;}
 }

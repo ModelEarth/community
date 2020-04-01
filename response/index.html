@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="../css/search-filters.css" />
 <link rel="stylesheet" href="../css/display.css" />
 
-
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../js/common/common.js"></script>
 <script type="text/javascript" src="../js/common/search-filters.js"></script>
@@ -61,6 +60,9 @@
 	height: 280px;
   height: 600px;
 }
+.showMobile { /* For delayed css load */
+  displayX:none;
+}
 .content {
   max-width: 3000px !important;
 }
@@ -84,6 +86,21 @@
   overflow: auto;
   background: #fff;
 }
+.legendLink {
+    float:left;
+}
+.legendLinkRect {
+  width:15px;
+  height:15px;
+  margin-right:5px;
+  margin-top:3px;
+  float:left;
+}
+@media (max-width: 800px) {
+  .legendLink {
+    float:none;
+  }
+}
 .outcomesbox span {
   float:right;
   padding-rightX:20px;
@@ -91,11 +108,15 @@
 }
 .leftWidget {
   float:left;
-  width:420px;
+  max-width:420px;
   margin-right:30px;
 }
-.leftWidget {
+
+#catListClone div {
+  font-size: 18px;
+  line-height: 26px;
 }
+
 @media (max-width: 800px) {
   .leftWidget {
     width:100%;
@@ -441,7 +462,7 @@
         <!-- showAll showAllResults searchHeight -->
         <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
           
-        <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">Show Categories</div>
+        <div id="catListHolderShow" class='detailbutton' style="color:#fff; background:#0071e3; float:left;margin-left:8px">Show Categories</div>
           </div>
           <!-- /Submit Button -->
 
@@ -451,6 +472,11 @@
 
 
 <div style="clear:both"></div>
+
+  <div id="catsMobile" style="display:none; padding-top:15px; width:100%">
+    <div id="catListClone" class="showMobile" style="width:100%">
+    </div>
+  </div>
 
 <!-- HS Codes -->
 <div id="topPanel" style="display:none; position: relative; overflow:auto; margin-top:14px">
@@ -553,7 +579,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 <table style="width:100%;max-width:8000px">
 <tr>
-<td id="tableSide" class="hideCatsMobile" style="vertical-align:top;border-right:#ddd 1px solid">
+<td id="tableSide" style="vertical-align:top;border-right:#ddd 1px solid" class="hideMobile">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
 
@@ -584,12 +610,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 </td>
 <td style="width:100%; vertical-align:top">
 
-<!-- INDUSTRIES -->
-<section id="industries" style="display:none; overflow:auto; padding-bottom:0px" class="mock-up">
-  <div class="content" style="padding-top:30px; padding-bottom:0px">
 
-    
-    <h1 style='margin:0 0 4px 0'>Covid Response</h1>
+<!-- move after left column -->
+<!-- INDUSTRIES -->
+<section id="industries" style="float:right; display:none; padding-bottom:0px; max-width:400px" class="mock-up">
+  <div style="padding-top:30px; padding-bottom:0px">
 
     <!-- TOP WIDGETS -->
     <div>
@@ -610,28 +635,18 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       <div style="clear:both"></div>
 
 
-      <div class="leftWidget eWidget">
-        <div class="widgetbar">ENVIRONMENTAL INPUT</div>
-        <div class="topboxes" style="min-height: 120px">
-          <div style="font-size: 18px">Set your goals</div>
-          <br>
-
-          <b>Adjust Industry Levels</b>
-          to reflect new technology initiatives 
-          to generate new revenue streams, create jobs and 
-          increase your community's positive outcomes.
-
-        </div>
-      </div>
-      <div style="overflow: auto;" class="eWidget">
+      
+      <div style="overflow: auto;" class="leftWidget eWidget">
        
+          <!-- POSITIVE OUTCOMES -->
           <div class="widgetbar">
-            <div style="float:left">POSITIVE OUTCOMES</div>
+            <div style="float:left">OUTCOME</div>
             <div style="float:right; padding-right:10px"><span style='color:#555'>YOUR SCORE:</span> 500</div>
           </div>
           <div class="topboxes outcomesbox" style="min-height: 120px">
 
-            <div style="float:left;width:230px; margin-right:30px">
+            <!-- was width:230px; -->
+            <div style="float:left;width:250px; margin-right:30px">
               <div>1. Value-Added <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
               <div>2. Quality Jobs <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
               <div>3. Clean Air <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
@@ -651,8 +666,21 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       </div>
       <div style="clear:both"></div>
 
+      <div class="leftWidget eWidget">
+        <div class="widgetbar">ENVIRONMENTAL INPUT</div>
+        <div class="topboxes" style="min-heightX: 120px">
+          <div style="font-size: 18px">Set your goals</div>
+          <br>
 
-      <div class="leftWidget eWidget" style="margin-bottom:22px">
+          <b>Adjust Industry Levels</b>
+          to reflect new technology initiatives 
+          to generate new revenue streams, create jobs and 
+          increase your community's positive outcomes.
+
+        </div>
+      </div>
+
+      <div class="leftWidget eWidget">
         <div class="widgetbar" style="padding-left:5px">
           <a href="../samples/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
           AGRICULTURE, FORESTRY, FISHING AND HUNTING
@@ -690,7 +718,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       </div>
 
 
-      <div style="overflow: auto;" class="eWidget">
+      <div style="overflow: auto;" class="leftWidget eWidget">
           <div class="widgetbar">
             ADVERSE IMPACTS
             <div style="float:right; font-weight:400; padding-right:10px">
@@ -733,21 +761,29 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         
         <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
 
-        <div style="width:15px;height:15px;margin-right:6px;margin-top:3px;background:#a6cee3;float:left"></div>
-        <div style="margin-right:16px;float:left">MANUFACTURERS</div>
-        <div style="width:15px;height:15px;margin-right:6px;margin-top:3px;background:#1f78b4;float:left"></div>
-        <div style="margin-right:16px;float:left">DISTRIBUTORS</div>
-        <div style="width:15px;height:15px;margin-right:6px;margin-top:3px;background:#b2df8a;float:left"></div>
-        <div style="margin-right:16px;float:left">BOTH</div>
-        <br><br>
+        <div id="legendLingsHolder" style="display:block;margin-bottom: 20px">
+          <div class="legendLink">
+            <div class="legendLinkRect" style="background:#a6cee3;"></div>
+            <div style="margin-right:16px;float:left">MANUFACTURERS</div>
+          </div>
+          <div class="legendLink">
+            <div class="legendLinkRect" style="background:#1f78b4;"></div>
+            <div style="margin-right:16px;float:left">DISTRIBUTORS</div>
+          </div>
+          <div class="legendLink">
+            <div class="legendLinkRect" style="background:#b2df8a;"></div>
+            <div style="margin-right:16px;float:left">BOTH</div>
+          </div>
+          <div style="clear:both"></div>
+        </div>
 
           <div>
             The following companies have responded to Georgia's call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
-            using the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a> to assist <a href="https://gema.georgia.gov/">GEMA</a>. To make a correction or update, please&nbsp;contact&nbsp;us.<br><br>
+            to assist <a href="https://gema.georgia.gov/">GEMA</a> via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please&nbsp;contact&nbsp;us.<br><br>
           </div>
           
 
-          <div style="display:none;" class="mock-up">
+          <div style="display:none;" class="mock-upRemoved">
           The map to the right will highlight local counties and <a href="../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
           Lists will include <a href="../farmfresh/ga/">farm fresh produce</a> and <a href="../tools/#places">all&nbsp;the&nbsp;places</a>.
           </div>
@@ -861,6 +897,33 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 
 <script>
+
+$(document).ready(function () {
+    $('#catListClone').html($('#industryCatList').clone());
+
+      $('.catList > div').click(function () {
+      var catTitle = $(this).text();
+      $('#keywordsTB').val(catTitle);
+      //$('#findLocationWith input[type=checkbox]').prop("checked", true);
+      $('#findDetails').prop("checked", true);
+      
+      $('#industryCatList > div').css('border', 'solid 1px #fff');
+          $(this).css('border', 'solid 1px #aaa');
+          $(this).css('border-right', 'solid 5px #aaf');
+
+          $("#catsMobile").hide();
+          $('#catListHolderShow').text('Show Categories');
+          $('html,body').animate({
+              scrollTop: $("#hublist").offset().top - 150
+          });
+          //displayResults(); // This can be removed after transitioning away from list at bottom
+          // Use instead
+          loadMap1();
+          hideNonListPanels();
+          event.stopPropagation();
+      });
+});
+
 
 // Southeast Georgia&nbsp;Coalition
 
