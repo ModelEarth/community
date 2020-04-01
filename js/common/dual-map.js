@@ -448,8 +448,8 @@ function addIcons(dp,map) {
       output += element.phone + " " + element.phone_afterhours + "<br>";
     }
     if (element[dp.valueColumn]) {
-      if (dp.valueColumnTitle) {
-        output += dp.valueColumnTitle + ": " + element[dp.valueColumn] + "<br>";
+      if (dp.valueColumnLabel) {
+        output += dp.valueColumnLabel + ": " + element[dp.valueColumn] + "<br>";
       } else if (element[dp.valueColumn] != element.name) {
         output += element[dp.valueColumn] + "<br>";
       }
@@ -678,19 +678,21 @@ function showList(dp) {
       // colorScale(element[dp.valueColumn])
       //console.log("iconColor test here: " + iconColor)
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-      output = "<div style='width:15px;height:15px;margin-right:8px;margin-top:3px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
+      output = "<div style='width:15px;height:15px;margin-right:6px;margin-top:6px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
 
       //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
                 
       //output += "<div style='overflow:auto'>";
       
-      output += "<b style='font-size:16px;color:#333'>" + name + "</b><br>";
-
-      console.log(dp.description)
+      output += "<b style='font-size:18px; font-weight:600; color:#333'>" + name + "</b><br>";
+      
       if (element[dp.description]) {
         output += element[dp.description] + "<br>";
       } else if (element.description) {
         output += element.description + "<br>";
+      }
+      if (element.items) {
+        output += "<b>Items:</b> " + element.items + "<br>";
       }
       /*
       output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
@@ -706,14 +708,14 @@ function showList(dp) {
         output += element.phone + " " + element.phone_afterhours + "<br>";
       }
       if (element[dp.valueColumn]) {
-        if (dp.valueColumnTitle) {
-          output += dp.valueColumnTitle + ": " + element[dp.valueColumn] + "<br>";
+        if (dp.valueColumnLabel) {
+          output += "<b>" + dp.valueColumnLabel + ":</b> " + element[dp.valueColumn] + "<br>";
         } else if (element[dp.valueColumn] != element.name) {
           output += element[dp.valueColumn] + "<br>";
         }
       }
       if (element.schedule) {
-        output += "Hours: " + element.schedule + "<br>";
+        output += "<b>Hours:</b> " + element.schedule + "<br>";
       }
 
       //alert(dp.listLocation)
@@ -745,11 +747,7 @@ function showList(dp) {
       if ((element[dp.latColumn] && dp.listLocation != false) || element.facebook || element.twitter) {
         output += "<br>";
       }
-      if (element.website) {
-        if (element.website.length <= 50) {
-          output += "<a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>";
-        }
-      }
+
       
       if (element.phone || element.phone_afterhours) {
         output += element.phone + " " + element.phone_afterhours + "<br>";
@@ -758,7 +756,19 @@ function showList(dp) {
       if (element.county) {
         output += element.county + " County<br>";
       }
+
+      if (element.website) {
+        if (element.website.length <= 50) {
+          output += "<b>Website:</b> <a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>";
+        } else {
+          // To Do: Display domain only
+          output += "<b>Website:</b> <a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a><br>"; 
+        }
+      }
+
       output += "<div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
+
+      
 
       $("#detaillist").append(output);
     }
@@ -770,16 +780,16 @@ function showList(dp) {
       //alert("show") // was twice BUGBUG
       //  (dataSet.length - 1) 
       if (dataMatchCount == count) {
-        $("#dataList").html("All " + dataMatchCount + " records. Select a category to filter your results.<br><br>");
+        $("#dataList").html(dataMatchCount + " records. Select a category to filter your results.<br>");
       } else if (count==1) {
-        $("#dataList").html(dataMatchCount + " matching service provider within " + count + " records.<br><br>");
+        $("#dataList").html(dataMatchCount + " matching service provider within " + count + " records.<br>");
       } else {
-        $("#dataList").html(dataMatchCount + " matching service providers within " + count + " records.<br><br>");
+        $("#dataList").html(dataMatchCount + " matching service providers within " + count + " records.<br>");
       }
       $("#resultsPanel").show();
       $("#dataList").show();
   } else {
-      $("#dataList").html("No match found in " + count + " records.<br><br>");
+      $("#dataList").html("No match found in " + count + " records.<br>");
           
     var noMatch = "<div>No match found in " + (dataSet.length - 1) + " records. <a href='#' onclick='clickClearButton();return false;'>Clear filters</a>.</div>"
     $("#nomatchText").html(noMatch);
