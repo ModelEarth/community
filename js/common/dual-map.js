@@ -678,19 +678,20 @@ function showList(dp) {
       // colorScale(element[dp.valueColumn])
       //console.log("iconColor test here: " + iconColor)
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-      output = "<div style='width:15px;height:15px;margin-right:6px;margin-top:6px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
+      output = "<div style='padding-bottom:6px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
 
       //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
                 
       //output += "<div style='overflow:auto'>";
       
-      output += "<b style='font-size:18px; font-weight:600; color:#333'>" + name + "</b><br>";
+      output += "<b style='font-size:20px; font-weight:400; color:#333;'>" + name + "</b></div>";
       
       if (element[dp.description]) {
-        output += element[dp.description] + "<br>";
+        output += "<div style='padding-bottom:12px'>" + element[dp.description] + "</div>";
       } else if (element.description) {
-        output += element.description + "<br>";
+        output += "<div style='padding-bottom:12px'>" + element.description + "</div>";
       }
+
       if (element.items) {
         output += "<b>Items:</b> " + element.items + "<br>";
       }
