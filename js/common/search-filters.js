@@ -31,36 +31,18 @@ $(document).ready(function () {
 	$("#productCodes").css('width','200px');
 
 	$('#catListHolderShow').click(function () {
-		if ($('#tableSide').css('display') == 'none') {
-			$('#catListHolder').show();
+		if ($('#catsMobile').css('display') == 'none') {
+			$('#catsMobile').show();
 			$('#catListHolderShow').text('Hide Categories');
 			$('#tableSide').removeClass('hideCatsMobile');
 		} else {
-			$('#catListHolder').hide();
+			$('#catsMobile').hide();
 			$('#catListHolderShow').text('Show Categories');
 			$('#tableSide').addClass('hideCatsMobile');
 		}
     });
 
-	$('#industryCatList > div').click(function () {
-		var catTitle = $(this).text();
-		$('#keywordsTB').val(catTitle);
-		//$('#findLocationWith input[type=checkbox]').prop("checked", true);
-		$('#findDetails').prop("checked", true);
-		
-		$('#industryCatList > div').css('border', 'solid 1px #fff');
-        $(this).css('border', 'solid 1px #aaa');
-        $(this).css('border-right', 'solid 5px #aaf');
-
-        //displayResults(); // This can be removed after transitioning away from list at bottom
-        
-
-        // Use instead
-        loadMap1();
-
-	    hideNonListPanels();
-        event.stopPropagation();
-    });
+	
 	$('#hsCatList > div').click(function () {
 		//consoleLog('.menuRectLink click ' + $(this).attr("data-section").toLowerCase());
         $('#hsCatList > div').css('border', 'solid 1px #fff');

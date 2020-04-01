@@ -18,7 +18,7 @@ Editable link is in our Slack #epa group.
 1. [Include login via Google account](../crowdsource) and other social logins (Facebook, Microsoft, Twitter, LinkedIn).  
 <br>
 
-<b>Get Started</b>
+<b>Getting Started</b>
 
 [Steps for viewing this repo locally](samples/markdown/)   
 
