@@ -78,10 +78,11 @@ body {
 .content li {
     margin-left: -10px;
   }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .content {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 30px;
   }
   .content li {
     margin-left: -20px;
