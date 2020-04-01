@@ -682,7 +682,7 @@ function showList(dp) {
 
       //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
                 
-      output += "<div style='overflow:auto'>";
+      //output += "<div style='overflow:auto'>";
       
       output += "<b style='font-size:16px;color:#333'>" + name + "</b><br>";
 
@@ -758,7 +758,7 @@ function showList(dp) {
       if (element.county) {
         output += element.county + " County<br>";
       }
-      output += "</div><div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
+      output += "<div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
 
       $("#detaillist").append(output);
     }
