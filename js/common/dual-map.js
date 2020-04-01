@@ -678,19 +678,23 @@ function showList(dp) {
       // colorScale(element[dp.valueColumn])
       //console.log("iconColor test here: " + iconColor)
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-      output = "<div style='padding-bottom:6px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
+      output = "<div style='padding-bottom:4px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
 
       //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
                 
       //output += "<div style='overflow:auto'>";
       
       output += "<b style='font-size:20px; font-weight:400; color:#333;'>" + name + "</b></div>";
-      
       if (element[dp.description]) {
-        output += "<div style='padding-bottom:12px'>" + element[dp.description] + "</div>";
+        output += "<div style='padding-bottom:8px'>" + element[dp.description] + "</div>";
       } else if (element.description) {
-        output += "<div style='padding-bottom:12px'>" + element.description + "</div>";
+        output += "<div style='padding-bottom:8px'>" + element.description + "</div>";
       }
+
+      // Lower
+      output += "<div style='font-size:0.95em;line-height:1.5em'>";
+
+      
 
       if (element.items) {
         output += "<b>Items:</b> " + element.items + "<br>";
@@ -767,6 +771,7 @@ function showList(dp) {
         }
       }
 
+      output += "</div>"; // End Lower
       output += "<div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
 
       
