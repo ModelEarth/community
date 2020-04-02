@@ -46,9 +46,7 @@
 <body>
 
 <style>
-.mock-upX {
-  display: block !important;
-}
+
 #mapHolder {
   display: none;
 }
@@ -205,7 +203,7 @@ b {
   <div class="pagePanel" style="margin:0 0 12px 24px;">
 
 
-  <div id="productCodesHolder" style="display:none;" class="filterField localonly">
+  <div id="productCodesHolder" style="display:none;" class="filterField local">
     <div class="filterLabel filterLabelMain">Categories</div>
 
     <!--
@@ -913,28 +911,35 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 <script>
 
 $(document).ready(function () {
-    $('#catListClone').html($('#industryCatList').clone());
 
-      $('.catList > div').click(function () {
-      var catTitle = $(this).text();
-      $('#keywordsTB').val(catTitle);
-      //$('#findLocationWith input[type=checkbox]').prop("checked", true);
-      $('#findDetails').prop("checked", true);
-      
-      $('#industryCatList > div').css('border', 'solid 1px #fff');
-          $(this).css('border', 'solid 1px #aaa');
-          $(this).css('border-right', 'solid 5px #aaf');
-          $("#catsMobile").hide();
-          $('#catListHolderShow').text('Show Categories');
-          $('html,body').animate({
-              scrollTop: $("#hublist").offset().top - 250
-          });
-          //displayResults(); // This can be removed after transitioning away from list at bottom
-          // Use instead
-          loadMap1();
-          hideNonListPanels();
-          event.stopPropagation();
-      });
+  if (param["show"] == "mockup") {
+    var div = $("<div />", {
+        html: '<style>.mock-up{display: block !important;}</style>'
+      }).appendTo("body");
+  }
+
+  $('#catListClone').html($('#industryCatList').clone());
+
+    $('.catList > div').click(function () {
+    var catTitle = $(this).text();
+    $('#keywordsTB').val(catTitle);
+    //$('#findLocationWith input[type=checkbox]').prop("checked", true);
+    $('#findDetails').prop("checked", true);
+    
+    $('#industryCatList > div').css('border', 'solid 1px #fff');
+        $(this).css('border', 'solid 1px #aaa');
+        $(this).css('border-right', 'solid 5px #aaf');
+        $("#catsMobile").hide();
+        $('#catListHolderShow').text('Show Categories');
+        $('html,body').animate({
+            scrollTop: $("#hublist").offset().top - 250
+        });
+        //displayResults(); // This can be removed after transitioning away from list at bottom
+        // Use instead
+        loadMap1();
+        hideNonListPanels();
+        event.stopPropagation();
+    });
 });
 
 
