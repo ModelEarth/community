@@ -51,7 +51,7 @@ $(document).ready(function(){
 
  		// To do: fetch the existing background-image.
  		
- 		if(location.host.indexOf('georgia') >= 0 || location.host.indexOf('localhost') >= 0) {
+ 		if(1==1 && (location.host.indexOf('georgia') >= 0 || location.host.indexOf('localhost') >= 0)) {
  			$(".siteTitleShort").text("Model Georgia");
 	 		imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
 	 		$('#logoholder').addClass('logoholder-state');
@@ -59,10 +59,11 @@ $(document).ready(function(){
 	 		$('#headerLocTitle').html("Georgia");
 	 	} else {
 	 		$(".siteTitleShort").text("Model Earth");
-	 		imageUrl = climbpath + "img/logo/favicon.png"; // model earth
+	 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
 	 		$('#logospace').css('margin-top','2px');
 	 		$('#logoholder').addClass('logoholder-modelearth');
-	 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
+	 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
+	 		//$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
 	 	}
 
 	 	imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png"; // Until modelEarth logo is sized correctly
@@ -176,7 +177,7 @@ $(document).ready(function(){
 		     		return this;
 		       	}
 			});
-			if (cur.length == 0) {
+			if (cur.length == 0 && $("#allsections").length) {
 				// At top, above top of intro section
 				// To Do: Get the top most section
 				// allsections
