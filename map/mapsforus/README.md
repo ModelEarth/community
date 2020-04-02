@@ -56,41 +56,102 @@ function geocodeAndMove() {
 }
 ```
 
-### GeocodeMe Code.gs script used in active sheet
+### Avoid re-geocoding
 
 ```
+// Choose ForMap as the active tab before running
+// Also includes address formatting. Updated to omit existing lat/lon values
+// https://www.guguweb.com/2020/01/24/geocode-addresses-with-google-sheets-and-google-geocoding-api/
+
 function myFunction() {
   var sheet = SpreadsheetApp.getActiveSheet();
- 
+   
   var range = sheet.getDataRange();
   var cells = range.getValues();
- 
+   
   var latitudes = [];
   var longitudes = [];
-  var formatted_addresses = [];
- 
+   
   for (var i = 0; i < cells.length; i++) {
-    // BUGBUG - use column name instead
-    if(cells[i][35] != '') { // 35 is currently the "formatted" address cell.
+  
+    // UPDATE IF NEW COLUMNS WERE ADDED TO YOUR SHEET
+    
+    if (i <= 678 && !cells[i][13]) { // Only populate blank cells
+      var address = cells[i][2] + ', ' + cells[i][3] + ', ' + cells[i][4] + ' ' + cells[i][5];
+      var geocoder = Maps.newGeocoder().geocode(address); // Exception: Invalid argument: location (line 20, file "Code")
+      var res = geocoder.results[0];
+   
+      var lat = lng = 0;
+      if (res) {
+        lat = res.geometry.location.lat;
+        lng = res.geometry.location.lng;
+      }
+    } else { // UPDATE ALSO - These copy the existing cell content into the array
+      var lat = cells[i][12];
+      var lng = cells[i][13];
+    }
+    latitudes.push([lat]);
+    longitudes.push([lng]);
+  }
+  
+  // UPDATE THESE IF NEW COLUMNS WERE ADDED TO YOUR SHEET
+
+  sheet.getRange('M1')
+  .offset(0, 0, latitudes.length)
+  .setValues(latitudes);
+
+  sheet.getRange('N1')
+  .offset(0, 0, longitudes.length)
+  .setValues(longitudes);
+}
+```
+
+<!--
+// For longer sheet
+// Also includes address formatting. Updated to omit existing lat/lon values
+// https://www.guguweb.com/2020/01/24/geocode-addresses-with-google-sheets-and-google-geocoding-api/
+
+function myFunction() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+   
+  var range = sheet.getDataRange();
+  var cells = range.getValues();
+   
+  var latitudes = [];
+  var longitudes = [];
+   
+  for (var i = 0; i < cells.length; i++) {
+  
+    // UPDATE IF NEW COLUMNS WERE ADDED TO YOUR SHEET
+    
+    if (!cells[i][34]) { // Only populated blank cells
       var address = cells[i][2] + ' ' + cells[i][4] + ' ' + cells[i][5] + ' ' + cells[i][6];
       var geocoder = Maps.newGeocoder().geocode(address);
       var res = geocoder.results[0];
    
       var lat = lng = 0;
-      var formatted_address = '';
       if (res) {
         lat = res.geometry.location.lat;
         lng = res.geometry.location.lng;
-        formatted_address = res.formatted_address;
       }
-      // BUGBUG
-      cells[i][33] = lat;
-      cells[i][34] = lng;
-      cells[i][35] = formatted_address;
+    } else { // Copy the existing cell content into the array
+      var lat = cells[i][33];
+      var lng = cells[i][34];
     }
+    latitudes.push([lat]);
+    longitudes.push([lng]);
   }
-}
-```
+  
+  // UPDATE THESE IF NEW COLUMNS WERE ADDED TO YOUR SHEET
 
+  sheet.getRange('AH1')
+  .offset(0, 0, latitudes.length)
+  .setValues(latitudes);
+
+  sheet.getRange('AI1')
+  .offset(0, 0, longitudes.length)
+  .setValues(longitudes);
+}
+-->
 <hr>
 [Dev Areas](../../)
