@@ -475,7 +475,7 @@ b {
         <!-- showAll showAllResults searchHeight -->
         <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
           
-          <div style="display:none" class="c19">
+          <div style="display:none" class="suppliers">
             <div id="catListHolderShow" class='detailbutton' style="color:#fff; background:#0071e3; float:left;margin-left:8px">Show Categories
             </div>
           </div>
@@ -594,7 +594,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="clear:both"></div>
 
 
-<div id="tableSide" style="float:left;vertical-align:top;display:none" class="hideMobile c19">
+<div id="tableSide" style="float:left;vertical-align:top;display:none" class="hideMobile suppliers">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
 
@@ -774,7 +774,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="hublist">
       <div id="hublist-padding">
         
-          <div style="display:none" class="c19">
+          <div style="display:none" class="suppliers">
             <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
 
             <div id="legendLingsHolder" style="display:block;margin-bottom: 20px">
@@ -922,9 +922,9 @@ $(document).ready(function () {
         html: '<style>.mock-up{display: block !important;}</style>'
       }).appendTo("body");
   }
-  if (param["show"] == "mockup" || param["show"] == "c19") {
+  if (param["show"] == "mockup" || param["show"] == "suppliers") {
     var div = $("<div />", {
-        html: '<style>.c19{display: block !important;}</style>'
+        html: '<style>.suppliers{display: block !important;}</style>'
       }).appendTo("body");
   }
 
@@ -960,7 +960,7 @@ $(document).ready(function () {
 var map1;
 function loadMap1() { // Also called by search-filters.js
   let dp1 = {}
-  if (param["show"] == "c19") {
+  if (param["show"] == "suppliers") {
     dp1.dataset = "../../smartdata/resources/suppliers/Manufacturers-and-Distributors.csv";
     dp1.dataTitle = "Manufacturers and Distributors";
     dp1.valueColumn = "type";
