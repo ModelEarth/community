@@ -383,19 +383,6 @@ $(document).ready(function () {
 	  window.history.pushState("", searchTitle, pathname + queryString);
 	  refreshMain();
 	}
-
-	$(document).ready(function () {
-		if(location.host.indexOf('localhost') < 0) {
-			// Inject style rule
-			  var div = $("<div />", {
-			    html: '&shy;<style>.localonly{display:none}#mapPanel{display:none}</style>'
-			  }).appendTo("body");
-		} else {
-			var div = $("<div />", {
-			    html: '&shy;<style>.localonly{display:block !important}#mapPanel{display:none;}</style>'
-			  }).appendTo("body");
-		}
-	});
 	loadHtmlTable(true);
 
 	$(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.

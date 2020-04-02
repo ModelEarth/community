@@ -3,6 +3,12 @@
 .hideMobile, .hideMobileWide {display:inline-block;}
 .showMobile, .showMobileWide {display:none;}
 .showGit {display:none;}
+.local {display:none;}
+.localonly {
+  display:none;
+  padding:20px;
+  background-color: rgba(220, 220, 220, 0.3);
+ }
 
 @media (max-width: 800px) {
   .hideMobile {display:none;}
