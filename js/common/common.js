@@ -100,11 +100,11 @@ $(document).ready(function() {
   if(location.host.indexOf('localhost') < 0) {
     // Inject style rule
       var div = $("<div />", {
-        html: '<style>.localonly{display:none}</style>'
+        html: '<style>.local{display:none}.localonly{display:none}</style>'
       }).appendTo("body");
   } else {
     var div = $("<div />", {
-        html: '<style>.localonly{display:block !important}</style>'
+        html: '<style>.local{display:inline-block !important}.localonly{display:block !important}</style>'
       }).appendTo("body");
   }
 });
