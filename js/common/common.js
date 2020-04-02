@@ -96,15 +96,15 @@ function consoleLog(text,value) {
 
   console.log(text, value);
 }
-$(document).ready(function(){
+$(document).ready(function() {
   if(location.host.indexOf('localhost') < 0) {
     // Inject style rule
       var div = $("<div />", {
-        html: '<style>.local{display:none}#mapPanel{display:none}</style>'
+        html: '<style>.localonly{display:none}</style>'
       }).appendTo("body");
   } else {
     var div = $("<div />", {
-        html: '<style>.local{display:inline-block !important}#mapPanel{display:none;}</style>'
+        html: '<style>.localonly{display:block !important}</style>'
       }).appendTo("body");
   }
 });
