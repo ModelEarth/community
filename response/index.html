@@ -805,6 +805,64 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           Lists will include <a href="../farmfresh/ga/">farm fresh produce</a> and <a href="../tools/#places">all&nbsp;the&nbsp;places</a>.
           </div>
 
+
+
+          <section id="directory" class="mock-up" style="display:none;">
+            
+              <h2 style="margin-top:0px">Mock-up</h2>
+              Farm fresh data is provided as a sample pulled from the USDA website. 
+              If you need info related to a GEMA supplier, please contact the Georgia Centers of Innovation.
+              <br><br>
+
+              <div id="resultsHeader">
+              </div>
+              
+
+              <!-- For D3 Embedded CSV Sheet -->
+              <div style="overflow:hidden;position:relative">
+                <div id="dataGrid">
+                  <div class="eTable" id="d3div"></div>
+                </div>
+              </div>
+              <style>
+                  .eTable table {
+                      border-collapse: collapse;
+                      border: 2px black solid;
+                      font: 12px sans-serif;
+                      min-height: 10px;
+                  }
+                  .eTable td {
+                      border: 1px black solid;
+                      padding: 5px;
+                      white-space: nowrap;
+                  }
+                  .eTable {
+                    margin-bottom:30px;
+                    overflow: auto;
+                  }
+                  .eTable > table > tr:first-child {
+                    background-color: #eee;
+                  }
+              </style>
+              <!-- End D3 Embedded CSV Sheet -->
+
+            
+
+            <div style="display:none">
+              <div id="itemMenu" class="filterBubble">
+                <div>View Details</div>
+                <div>Supply Chain</div>
+                <div>Industry Map</div>
+                <div>Add to Contacts</div>
+                <div>Submit Updates</div>
+                <hr>
+                <div id='showLocalNews'>Local News</div>
+              </div>
+            </div>
+
+          </section>
+
+
           <div id="dataList"></div>
           <hr style="margin-bottom:16px">
           <div id="detaillist"></div>
@@ -852,58 +910,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 </section>
 <!-- End HTML -->
 
-<section id="directory" class="mock-up" style="display:none;">
-  <div class="content">
-    <h2 style="margin-top:0px">Mock-up</h2>
-    Farm fresh data is provided as a sample pulled from the USDA website.<br>
-    If you need access to GEMA supplier data, please contact the Georgia Centers of Innovation.
-    <div id="resultsHeader">
-    </div>
-    
 
-    <!-- For D3 Embedded CSV Sheet -->
-    <div style="overflow:hidden;position:relative">
-      <div id="dataGrid">
-        <div class="eTable" id="d3div"></div>
-      </div>
-    </div>
-    <style>
-        .eTable table {
-            border-collapse: collapse;
-            border: 2px black solid;
-            font: 12px sans-serif;
-            min-height: 10px;
-        }
-        .eTable td {
-            border: 1px black solid;
-            padding: 5px;
-            white-space: nowrap;
-        }
-        .eTable {
-          margin-bottom:30px;
-          overflow: auto;
-        }
-        .eTable > table > tr:first-child {
-          background-color: #eee;
-        }
-    </style>
-    <!-- End D3 Embedded CSV Sheet -->
-
-  </div>
-
-  <div style="display:none">
-    <div id="itemMenu" class="filterBubble">
-      <div>View Details</div>
-      <div>Supply Chain</div>
-      <div>Industry Map</div>
-      <div>Add to Contacts</div>
-      <div>Submit Updates</div>
-      <hr>
-      <div id='showLocalNews'>Local News</div>
-    </div>
-  </div>
-
-</section>
 
 </div>
 
