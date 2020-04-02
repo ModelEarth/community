@@ -3,10 +3,9 @@
 // To do: dynamically add target _parent to external link when in an iFrame, and no existing target
 
 
-// DO NOT USE - SET params (plural) IN SCRIPT THE USES common.js. TO REMOVE after identifying which script uses:
+// USE params (plural) to isolate within functions when creating embedable widgets.
+// USE param for any html page using common.js.
 var param = loadParams(location.search,location.hash);
-
-
 
 // Loads params with priority given to:
 // 1. Hash values on URL.
