@@ -64,3 +64,25 @@ Example of data format:
 "01001","2373//",1,1,0,0,0,0,0,0,0,0  
 "01001","23731/",1,1,0,0,0,0,0,0,0,0  
 "01001","237310",1,1,0,0,0,0,0,0,0,0  
+
+
+
+A good resource to make use of later. This is not by gdp by sector, just total per county, but still this can help us reconciling Census CBP data with the BEA IO data
+
+﻿
+# BEA GDP by county
+
+https://www.bea.gov/system/files/2019-12/One_Page_Methodology_v6.pdf
+
+https://apps.bea.gov/scb/2020/03-march/0320-county-level-gdp.htm Detailed methodology
+
+https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas Main page
+
+ 
+
+ 
+
+This county-level data may be of interest as well.
+
+https://www.bea.gov/data/income-saving/personal-income-county-metro-and-other-areas
+
