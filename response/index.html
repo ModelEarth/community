@@ -770,29 +770,30 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="hublist">
       <div id="hublist-padding">
         
-        <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
+          <div style="display:none" class="c19">
+            <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
 
-        <div id="legendLingsHolder" style="display:block;margin-bottom: 20px">
-          <div class="legendLink">
-            <div class="legendLinkRect" style="background:#1f78b4;"></div>
-            <div style="margin-right:16px;float:left">MANUFACTURERS</div>
-          </div>
-          <div class="legendLink">
-            <div class="legendLinkRect" style="background:#b2df8a;"></div>
-            <div style="margin-right:16px;float:left">DISTRIBUTORS</div>
-          </div>
-          <div class="legendLink">
-            <div class="legendLinkRect" style="background:#a6cee3;"></div>
-            <div style="margin-right:16px;float:left">BOTH</div>
-          </div>
-          <div style="clear:both"></div>
-        </div>
+            <div id="legendLingsHolder" style="display:block;margin-bottom: 20px">
+              <div class="legendLink">
+                <div class="legendLinkRect" style="background:#1f78b4;"></div>
+                <div style="margin-right:16px;float:left">MANUFACTURERS</div>
+              </div>
+              <div class="legendLink">
+                <div class="legendLinkRect" style="background:#b2df8a;"></div>
+                <div style="margin-right:16px;float:left">DISTRIBUTORS</div>
+              </div>
+              <div class="legendLink">
+                <div class="legendLinkRect" style="background:#a6cee3;"></div>
+                <div style="margin-right:16px;float:left">BOTH</div>
+              </div>
+              <div style="clear:both"></div>
+            </div>
 
-          <div>
-            Georgia businesses are responding to the call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
-            to assist <a href="https://gema.georgia.gov/">GEMA</a> via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please&nbsp;contact&nbsp;us.<br><br>
+            <div>
+              Georgia businesses are responding to the call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
+              to assist <a href="https://gema.georgia.gov/">GEMA</a> via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please&nbsp;contact&nbsp;us.<br><br>
+            </div>
           </div>
-          
 
           <div style="display:none;" class="mock-upRemoved">
           The map to the right will highlight local counties and <a href="../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
@@ -915,6 +916,11 @@ $(document).ready(function () {
   if (param["show"] == "mockup") {
     var div = $("<div />", {
         html: '<style>.mock-up{display: block !important;}</style>'
+      }).appendTo("body");
+  }
+  if (param["show"] == "mockup" || param["show"] == "c19") {
+    var div = $("<div />", {
+        html: '<style>.c19{display: block !important;}</style>'
       }).appendTo("body");
   }
 
