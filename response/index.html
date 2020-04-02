@@ -670,7 +670,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
               
             </div>
             <div style="float:left;width:250px">
-              <div>6. Local Suppliers <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+              <div>6. Local suppliers <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
               <div>7. Green Materials <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
               <div>8. Inclusive Design <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
               <div>9. Improves Health <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
@@ -961,8 +961,9 @@ $(document).ready(function () {
 var map1;
 function loadMap1() { // Also called by search-filters.js
   let dp1 = {}
-  if (1==2 && param["show"] == "suppliers") {
-    dp1.dataset = "/internal/resources/suppliers/Manufacturers-and-Distributors.csv";
+  if (param["show"] == "suppliers" && param["domain"] == "localhost:8887") {
+    dp1.dataset = "/market-support/resources/suppliers/georgia-responders.csv";
+
     dp1.dataTitle = "Manufacturers and Distributors";
     dp1.valueColumn = "type";
     dp1.valueColumnLabel = "Type";
