@@ -424,6 +424,7 @@ function addIcons(dp,map) {
         if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
           circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
         } else {
+          // If this line returns an error, try setting dp1.latColumn and dp1.latColumn to the names of your latitude and longitude columns.
           circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
         }
     } else {
