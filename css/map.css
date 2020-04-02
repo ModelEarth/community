@@ -58,9 +58,6 @@
     overflow: auto;
     width:56%;
   }
-  #hublist-padding {
-    padding-rightX:30px;
-  }
   #mapHolder {
     width: 44%;
     z-index: 10; /* to exceed right column in external site */
