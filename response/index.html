@@ -475,9 +475,13 @@ b {
         <!-- showAll showAllResults searchHeight -->
         <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
           
-        <div id="catListHolderShow" class='detailbutton' style="color:#fff; background:#0071e3; float:left;margin-left:8px">Show Categories</div>
+          <div style="display:none" class="c19">
+            <div id="catListHolderShow" class='detailbutton' style="color:#fff; background:#0071e3; float:left;margin-left:8px">Show Categories
+            </div>
           </div>
-          <!-- /Submit Button -->
+
+        </div>
+        <!-- /Submit Button -->
 
       </div>
 
@@ -590,7 +594,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="clear:both"></div>
 
 
-<div id="tableSide" style="float:left;vertical-align:top;" class="hideMobile">
+<div id="tableSide" style="float:left;vertical-align:top;display:none" class="hideMobile c19">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
 
@@ -956,8 +960,29 @@ $(document).ready(function () {
 var map1;
 function loadMap1() { // Also called by search-filters.js
   let dp1 = {}
-  dp1.dataset = "../../smartdata/resources/suppliers/Manufacturers-and-Distributors.csv";
-
+  if (param["show"] == "c19") {
+    dp1.dataset = "../../smartdata/resources/suppliers/Manufacturers-and-Distributors.csv";
+    dp1.dataTitle = "Manufacturers and Distributors";
+    dp1.valueColumn = "type";
+    dp1.valueColumnLabel = "Type";
+    dp1.markerType = "google";
+    dp1.description = "comments";
+    dp1.nameColumn = "name";
+  } else {
+    dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
+    dp1.name = "Farm Fresh Produce";
+    dp1.dataTitle = "Farm Fresh Produce";
+    dp1.markerType = "google";
+    dp1.titleColumn = "marketname";
+    dp1.nameColumn = "marketname";
+    dp1.addressColumn = "street";
+    dp1.valueColumn = "Prepared";
+    //dp1.valueColumn = "type";
+    dp1.valueColumnLabel = "Prepared Food";
+    dp1.latColumn = "y";
+    dp1.lonColumn = "x";
+    dp1.stateColumn = "state";
+  }
   // Might use when height it 280px
   dp1.latitude = 31.6074;
   dp1.longitude = -81.8854;
@@ -967,12 +992,7 @@ function loadMap1() { // Also called by search-filters.js
   dp1.longitude = -83.4;
   dp1.zoom = 7;
 
-  dp1.dataTitle = "Manufacturers and Distributors";
-  dp1.nameColumn = "name";
-  dp1.valueColumn = "type";
-  dp1.valueColumnLabel = "Type";
-  dp1.markerType = "google";
-  dp1.description = "comments";
+  
   dp1.listLocation = false; // Hides Wazw direction link in list, remains in popup.
 
   $("#detaillist").text(""); // Clear prior results
