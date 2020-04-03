@@ -107,7 +107,7 @@ function loadFromCSV(whichmap,dp,callback) {
       mapCenter = [dp.latitude,dp.longitude]; 
   }
 
-  if(container == null) { // Initialize map
+  if (container == null) { // Initialize map
 
     
     map = L.map(whichmap, {
@@ -161,17 +161,17 @@ function loadFromCSV(whichmap,dp,callback) {
       // Still causes jump
       //overlays2["Intermodal Ports 2"] = overlays["Intermodal Ports"];
 
-      //if(layerControl[whichmap] == undefined) {
+      //if (layerControl[whichmap] == undefined) {
       //  layerControl[whichmap] = L.control.layers(baseLayers, overlays).addTo(map);
       //}
-      if(layerControl[whichmap] == undefined) {
+      if (layerControl[whichmap] == undefined) {
         layerControl[whichmap] = L.control.layers(basemaps2, overlays2).addTo(map); // Push multple layers
         basemaps2["Grayscale"].addTo(map); // Set the initial baselayer.
       } else {
         layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
 
-      //if(layerControl[whichmap] == undefined) {
+      //if (layerControl[whichmap] == undefined) {
         
       //}
 
@@ -281,7 +281,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
 
 
     /*
-    if(layerControl[whichmap] == undefined) {
+    if (layerControl[whichmap] == undefined) {
       baseLayers["Streets"].addTo(map); // Set the initial baselayer.
 
       //layerControl[whichmap] = L.control.layers(baseLayers, overlays).addTo(map);
@@ -289,7 +289,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
     }
     */
 
-    if(layerControl[whichmap] == undefined) {
+    if (layerControl[whichmap] == undefined) {
       layerControl[whichmap] = L.control.layers(basemaps, overlays).addTo(map); // Push multple layers
       //basemaps["Satellite"].addTo(map);
       basemaps["Streets"].addTo(map);
@@ -970,7 +970,7 @@ $(window).scroll(function() {
       // Needs to be at bottom of dev
       mapFixed = false;
     }
-  } else if(topReached('#hublist')) {
+  } else if (topReached('#hublist')) {
     if (mapFixed==false) {
       $('.mapHolderInner').addClass('mapHolderFixed');
       $('.mapHolderInner').removeClass('mapHolderBottom');
