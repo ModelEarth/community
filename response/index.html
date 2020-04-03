@@ -1113,8 +1113,9 @@ function loadMap1() { // Also called by search-filters.js
           map1.invalidateSize(); // Force Leaflet map to reload
       });
            
-
-      layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+      //if (!layerControl['map1'].hasLayer(overlays2["Railroads"])){
+        layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+      //} 
   });
 }
 loadMap1();

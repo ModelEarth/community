@@ -155,8 +155,27 @@ function loadFromCSV(whichmap,dp,callback) {
       //dp.group2 = L.layerGroup();
       dp.iconName = 'star';
       //dataParameters.push(dp);
-      overlays2[dp.dataTitle] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+
+      //remove the layer from the map
+       if (map.hasLayer(overlays2[dp.dataTitle])){
+          //alert("found")
+          overlays2[dp.dataTitle].remove();  // Works, but checkbox remains
+
+       }
+
+      overlays2[dp.dataTitle] = dp.group; // Allows for use of dp.dataTitle with removeLayer and addLayer
       //overlays2[dp.dataTitle] = dp.group2;
+
+      if (layerControl[whichmap] != undefined) {
+        // Remove existing instance of layer
+        //layerControl[whichmap].removeLayer(overlays[dp.dataTitle]); // Remove from control 
+        //map.removeLayer(overlays[dp.dataTitle]); // Remove from map
+      }
+
+      if (layerControl[whichmap] != undefined && dp.group) {
+          //layerControl[whichmap].removeLayer(dp.group);
+      }
+
 
       // Still causes jump
       //overlays2["Intermodal Ports 2"] = overlays["Intermodal Ports"];
@@ -168,6 +187,7 @@ function loadFromCSV(whichmap,dp,callback) {
         layerControl[whichmap] = L.control.layers(basemaps2, overlays2).addTo(map); // Push multple layers
         basemaps2["Grayscale"].addTo(map); // Set the initial baselayer.
       } else {
+
         layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
 
@@ -175,7 +195,7 @@ function loadFromCSV(whichmap,dp,callback) {
         
       //}
 
-      addIcons(dp,map);
+      
       //addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
 
       
@@ -190,15 +210,16 @@ function loadFromCSV(whichmap,dp,callback) {
       //map.removeLayer(grayscale);
 
       
-      //layerControl[whichmap].removeLayer(overlays["myDataset"]); // Remove from control 
-      //map.removeLayer(overlays["myDataset"]); // Remove from map
+      
 
       //map.addLayer(overlays["Intermodal Ports"]);
 
       if (dp.showLayer != false) {
         $("#widgetTitle").text(dp.dataTitle);
+        dp = showList(dp); // Reduces list based on filters
+        addIcons(dp,map);
         map.addLayer(overlays2[dp.dataTitle]);
-        showList(dp);
+        
       }
       
       //callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
@@ -534,6 +555,7 @@ function showList(dp) {
     productcode_array = productcodes.split2(/\s*,\s*/); // Removes space when splitting on comma
   }
 
+  var data_out = []; // An array of objects
   dp.data.forEach(function(elementRaw) {
     count++;
     foundMatch = 0;
@@ -650,6 +672,8 @@ function showList(dp) {
     if (foundMatch > 0) {
       dataMatchCount++;
     //if (count <= 500) {
+
+      data_out.push(elementRaw);
       var key, keys = Object.keys(elementRaw);
       var n = keys.length;
       var element={};
@@ -809,7 +833,7 @@ function showList(dp) {
     
 
   });
-
+  
   if (dataMatchCount > 0) {
       //alert("show") // was twice BUGBUG
       //  (dataSet.length - 1) 
@@ -830,6 +854,8 @@ function showList(dp) {
     $("#nomatchPanel").show();
   }
 
+  dp.data = data_out;
+  return dp;
 }
 
 // Scales: http://d3indepth.com/scales/
