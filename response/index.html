@@ -620,6 +620,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       <div text="">Surgical Masks</div>
       <div text="">Tyvek Suits</div>
       <div text="">Ventilators</div>
+      <div text="">Warehouse</div>
     </div>
   </div>
 </div>
@@ -1070,6 +1071,7 @@ function loadMap1() { // Also called by search-filters.js
     dp1.nameColumn = "title";
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
+    dp1.listLocation = false;
   } else {
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     dp1.name = "Farm Fresh Produce";

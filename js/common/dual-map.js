@@ -462,9 +462,9 @@ function addIcons(dp,map) {
     }
     if (element[dp.valueColumn]) {
       if (dp.valueColumnLabel) {
-        output += dp.valueColumnLabel + ": " + element[dp.valueColumn] + "<br>";
+        output += "<b>" + dp.valueColumnLabel + ":</b> " + element[dp.valueColumn].replace(/,/g,", ") + "<br>";
       } else if (element[dp.valueColumn] != element.name) {
-        output += element[dp.valueColumn] + "<br>";
+        output += element[dp.valueColumn].replace(/,/g,", ") + "<br>";
       }
     }
     if (element.schedule) {
@@ -474,12 +474,17 @@ function addIcons(dp,map) {
       output += "<a href='" + element.website + "' target='_blank'>Website</a>";
     }
     
-    if (element[dp.latColumn]) {
-      if (element.website) {
-        output += " | ";
+    if (dp.listLocation != false) {
+      if (element[dp.latColumn]) {
+        if (element.website) {
+          output += " | ";
+        }
+        output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
       }
-      output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
     }
+    if (element.items) {
+        output += "<b>Items:</b> " + element.items + "<br>";
+      }
     circle.bindPopup(output);
     //circle2.bindPopup(output);
 
