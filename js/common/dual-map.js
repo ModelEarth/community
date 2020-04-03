@@ -116,17 +116,21 @@ function loadFromCSV(whichmap,dp,callback) {
       zoom: dp.zoom
     });
     
+    
+    // setView does not seem to have an effect triggering map.on below
     /*
-    // setView does not seem to be needed
     map = L.map(whichmap,{
       center: mapCenter,
       scrollWheelZoom: false,
       zoom: dp.zoom,
       zoomControl: false
     });
+    // Placing map.whenReady or map.on('load') here did not resolve
     map.setView(mapCenter,dp.zoom);
     */
   }
+
+
 
   // 5. Load Layers Asynchronously
   //var dataset = "../community/map/zip/basic/places.csv";
@@ -151,8 +155,8 @@ function loadFromCSV(whichmap,dp,callback) {
       //dp.group2 = L.layerGroup();
       dp.iconName = 'star';
       //dataParameters.push(dp);
-      overlays2[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
-      //overlays2[dp.name] = dp.group2;
+      overlays2[dp.dataTitle] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+      //overlays2[dp.dataTitle] = dp.group2;
 
       // Still causes jump
       //overlays2["Intermodal Ports 2"] = overlays["Intermodal Ports"];
@@ -192,23 +196,31 @@ function loadFromCSV(whichmap,dp,callback) {
       //map.addLayer(overlays["Intermodal Ports"]);
 
       if (dp.showLayer != false) {
-        $("#widgetTitle").text(dp.name);
-        map.addLayer(overlays2[dp.name]);
+        $("#widgetTitle").text(dp.dataTitle);
+        map.addLayer(overlays2[dp.dataTitle]);
         showList(dp);
       }
       
       //callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
+
+
+      // Runs too soon, unless placed within d3.csv.
+      // Otherwise causes: Cannot read property 'addOverlay' of undefined
+
+      //map.whenReady(function(){ 
+      //map.on('load',function(){ // Never runs
+        //alert("loaded")
+        callback(map)
+      //});
+
+      // Neigher map.whenReady or map.on('load') seems to require SetView()
+
   })
   //.catch(function(error){ 
   //     alert("Data loading error: " + error)
   //})
 
-  // map.whenReady(function(){ // Runs too soon, causing Cannot read property 'addOverlay' of undefined
-  // Neigher seems to require SetView()
-  map.on('load',function(){
-    alert("loaded")
-    callback(map)
-  });
+
 
 }
 
@@ -262,10 +274,10 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
         position: 'bottomright'
     }).addTo(map);
 
-    overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+    overlays[dp.dataTitle] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
 
     // Adds checkbox, but unselects other map on page
-    //overlays2[dp.name] = dp.group;
+    //overlays2[dp.dataTitle] = dp.group;
 
 
     /*
@@ -282,7 +294,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
       //basemaps["Satellite"].addTo(map);
       basemaps["Streets"].addTo(map);
     } else {
-      layerControl[whichmap].addOverlay(dp.group, dp.name); // Appends to existing layers
+      layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
     }
     
     // Attach the icon to the marker and add to the map
@@ -293,7 +305,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
     //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
 
     addIcons(dp, map);
-    map.addLayer(overlays[dp.name]);
+    map.addLayer(overlays[dp.dataTitle]);
     
     // Both work
     map.on('load',function(){
