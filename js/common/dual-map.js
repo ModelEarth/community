@@ -548,7 +548,7 @@ function showList(dp) {
               foundMatch++;
             }
 
-            if ($("#findKeywords").is(":checked") > 0 && elementRaw[dp.description].toLowerCase().indexOf(keyword) >= 0) {
+            if ($("#findKeywords").is(":checked") > 0 && elementRaw[dp.keywords].toLowerCase().indexOf(keyword) >= 0) {
               console.log("foundMatch keywords");
               foundMatch++;
             }
@@ -708,12 +708,28 @@ function showList(dp) {
       output += "<div style='font-size:0.95em;line-height:1.5em'>";
 
       
-
+      if (element[dp.valueColumn]) {
+        if (dp.valueColumnLabel) {
+          output += "<b>" + dp.valueColumnLabel + ":</b> " + element[dp.valueColumn] + "<br>";
+        } else if (element[dp.valueColumn] != element.name) {
+          output += element[dp.valueColumn] + "<br>";
+        }
+      }
       if (element.items) {
         output += "<b>Items:</b> " + element.items + "<br>";
       }
+      
+      //output += element.address + ", ";
+
+      if (element.city) {
+        output += "<b>Location:</b> " + element.city + ", " + element.state;
+        if (element.zip) {
+          output += " " + element.zip + "<br>";
+        } else {
+          output += "<br>";
+        }
+      }
       /*
-      output += "<b>" + element.name + "</b> " + element.address + ", " + element.city + " " + element.state + " " + element.zip + " ";
       if (element.phone || element.phone_afterhours) {
        output += element.phone + " " + element.phone_afterhours + "<br>";
       }
@@ -725,13 +741,7 @@ function showList(dp) {
       if (element.phone || element.phone_afterhours) {
         output += element.phone + " " + element.phone_afterhours + "<br>";
       }
-      if (element[dp.valueColumn]) {
-        if (dp.valueColumnLabel) {
-          output += "<b>" + dp.valueColumnLabel + ":</b> " + element[dp.valueColumn] + "<br>";
-        } else if (element[dp.valueColumn] != element.name) {
-          output += element[dp.valueColumn] + "<br>";
-        }
-      }
+      
       if (element.schedule) {
         output += "<b>Hours:</b> " + element.schedule + "<br>";
       }
