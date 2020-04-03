@@ -63,9 +63,14 @@
   var map = L.map('map', {
     attributionControl: false
   }).setView([33.76,-84.365], 7);
-</script>
-<script type="text/javascript" src="https://assets.mapsfor.us/constants.js"></script>
-<script type="text/javascript">
+
+  // One less external file
+  var constants = {
+    googleDocID: '1I1bHQTUNCPHD6AuyNQfYV6g0qqJI8OjF9UHP9MW4XYg',
+    informationSheetName: 'Information',
+    pointsSheetName: 'Points'
+  };
+
   // in here, get the ID from the URL
   function getUrlVars() {
     var vars = {};
@@ -80,9 +85,7 @@
   if (mapID) {
     constants.googleDocID = mapID;
   } else {
-    // TODO: if there wasn't one, change the constant to a default map
-    //constants.googleDocID = '1I1bHQTUNCPHD6AuyNQfYV6g0qqJI8OjF9UHP9MW4XYg';
-
+    // Optionally override the googleDocID set in constants above
     constants.googleDocID = '1glMpFXTg8GJ-Jvsox4IK0-qQMEgBE53m_l2cIYG8OUg'; // Georgia Supplies
   }
 </script>
