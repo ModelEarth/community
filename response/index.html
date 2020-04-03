@@ -774,6 +774,135 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="hublist">
       <div id="hublist-padding">
         
+
+        <style>
+          .pagebuttonHolder {
+            float:right;
+            margin-right:10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+          }
+          .pagebutton {
+            background:#4586F6;
+            background: #bbb;
+            margin-left: 8px;
+            color:#fff;
+            border-radius: 5px;
+            padding: 0px 8px 0 10px;
+            min-height: 34px;
+            vertical-align: middle;
+            cursor: pointer;
+            /* text-transform: uppercase; */
+            font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, calibri, arial, sans-serif;
+            font-size: 15.5px;
+            font-weight: 400;
+            line-height: 1;
+          }
+          .pagebutton:hover {
+            background-color:#7a7a7a;
+          }
+          .listOptions {
+            display:none;
+            position:absolute;
+            left:auto;
+            right: 0;
+            top: 44px;
+            width: 164px;
+          }
+        </style>
+
+          <div class="pagebuttonHolder">
+          <div class="local sendfeedback pagebutton" href="#" style="float:left; display:none;color#bbb">
+            <div style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+            Feedback
+            </div>
+          </div>
+          <div class="local downloadbutton showDownload pagebutton" href="#" style="float:left; display:none">
+            <div style="float:left">
+              <i class="material-icons" style="font-size:19pt;padding-top:4px">&#xE2C4;</i>
+            </div>
+            <div class="downloadtext" style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+            Download
+            </div>
+          </div>
+          <div class="local addlisting-button pagebutton greenButton" href="#" style="float:left; display:none">
+            
+            <div class="hideMobile" style="displayX:none;margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+            Add Listing
+            </div>
+            <div class="showMobile" style="display:none;"><i class="material-icons" style="font-size:19pt;padding-top:4px">&#xE145;</i></div>
+
+          </div>
+          <div class="local partnertools pagebutton" href="#" style="float:left; display:none">
+            <div style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+            Partner Tools
+            </div>
+          </div>
+
+          <!-- Down arrow -->
+          <div class="local catchClick hideEmbed" style="position:relative;float:left;overflow:visible;">
+
+            <div class="toggleListOptions pagebutton" style="padding:2px"><i class="material-icons toggleArrow" style="font-weight:900; font-size: 32px; padding:0px; margin:0px">&#xE5C5;</i>
+            </div>
+
+            <div class="listOptions filterBubble">
+
+              <div class="hideEmbed" style="display:none">
+
+                <div class="reduceHeader menuItem" style="display:none"><i class="material-icons" style="margin-top:-5px;">&#xE3C4;</i>Narrow Header</div>
+
+                <!-- Google Icons - search for "crop" -->
+                <div class="revealImage menuItem" style="display:none"><i class="material-icons" style="margin-top:-5px;">&#xE3C4;</i>Full Header Image</div>
+
+                <div class="hideInfo hideInfoLink menuItem"><i class="material-icons" style="margin-top:-5px">&#xE88E;</i>Hide Bar</div>
+
+                <div class="showInfo showInfoLink menuItem" style="display:none"><i class="material-icons" style="margin-top:-10px">&#xE88E;</i>Show Info</div>
+
+              </div>
+
+              
+              <div class="showImage menuItem" style="display:none"><i class="material-icons">slideshow</i>Slideshow</div>
+
+                <div class="hideMobile">
+                <div class="local menuItem refreshMap" style="display:none">
+                  <i class="material-icons" style="font-weight:900; margin-top:-5px">&#xE5D5;</i> Refresh Map
+                </div>
+              </div>
+
+              <!--
+              <div class="menuItem hideList" style="display:none">
+                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE5CD;</i> Hide List
+              </div>
+
+              <div class="menuItem showList">
+                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE8EF;</i> Show List
+              </div>
+              -->
+
+              <div class="menuItem hideMap" style="display:none">
+                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE55B;</i> Hide Map
+              </div>
+              <div class="menuItem showMap" style="display:none">
+                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE55B;</i> Show Map
+              </div>
+
+              <div class="menuItem showThumbnails layerContentHide" style="display:none">
+                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE8F0;</i> Modules
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="showInfo showInfoButton1 pagebutton" style="float: left; padding: 3px 3px 3px 4px; color:#fff; display:none;"><i class="material-icons" style="font-size:28px;">&#xE88F;</i>
+          </div>
+
+        </div>
+
+
+
+
+
           <div style="display:none" class="suppliers">
             <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
 
@@ -924,49 +1053,8 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 <script>
 
-$(document).ready(function () {
-
-  if (param["show"] == "mockup") {
-    var div = $("<div />", {
-        html: '<style>.mock-up{display: block !important;}</style>'
-      }).appendTo("body");
-  }
-  if (param["show"] == "mockup" || param["show"] == "suppliers") {
-    var div = $("<div />", {
-        html: '<style>.suppliers{display: block !important;}</style>'
-      }).appendTo("body");
-  }
-
-  $('#catListClone').html($('#industryCatList').clone());
-
-    $('.catList > div').click(function () {
-    var catTitle = $(this).text();
-    $('#keywordsTB').val(catTitle);
-    //$('#findLocationWith input[type=checkbox]').prop("checked", true);
-    $('#findDetails').prop("checked", true);
-    
-    $('#industryCatList > div').css('border', 'solid 1px #fff');
-        $(this).css('border', 'solid 1px #aaa');
-        $(this).css('border-right', 'solid 5px #aaf');
-        $("#catsMobile").hide();
-        $('#catListHolderShow').text('Show Categories');
-        $('html,body').animate({
-            scrollTop: $("#hublist").offset().top - 250
-        });
-        //displayResults(); // This can be removed after transitioning away from list at bottom
-        // Use instead
-        loadMap1();
-        hideNonListPanels();
-        event.stopPropagation();
-    });
-});
-
-
-// Southeast Georgia&nbsp;Coalition
-
-
 // MAP 1
-var map1;
+var map1 = {};
 function loadMap1() { // Also called by search-filters.js
   let dp1 = {}
   if (param["show"] == "suppliers" && param["domain"] == "localhost:8887") {
@@ -1006,7 +1094,20 @@ function loadMap1() { // Also called by search-filters.js
   dp1.listLocation = false; // Hides Wazw direction link in list, remains in popup.
 
   $("#detaillist").text(""); // Clear prior results
-  map1 = loadFromCSV('map1', dp1, function(results) { // Called on success
+  map1 = loadFromCSV('map1', dp1, function(map1) { // Called on success
+
+
+      // Might not need to be within function
+      $('.refreshMap').click(function(event) {
+          
+          $("#map1").show();
+          //displayMap(layerName,siteObject);
+          console.log(".refreshMap ");
+          
+          map1.invalidateSize(); // Force Leaflet map to reload
+      });
+           
+
       layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
   });
 }
@@ -1063,6 +1164,60 @@ if (1==2) {
       });
     });
 }
+
+$(document).ready(function () {
+
+  if (param["show"] == "mockup") {
+    var div = $("<div />", {
+        html: '<style>.mock-up{display: block !important;}</style>'
+      }).appendTo("body");
+  }
+  if (param["show"] == "mockup" || param["show"] == "suppliers") {
+    var div = $("<div />", {
+        html: '<style>.suppliers{display: block !important;}</style>'
+      }).appendTo("body");
+  }
+
+  $('#catListClone').html($('#industryCatList').clone());
+
+  $('.catList > div').click(function () {
+    var catTitle = $(this).text();
+    $('#keywordsTB').val(catTitle);
+    //$('#findLocationWith input[type=checkbox]').prop("checked", true);
+    $('#findDetails').prop("checked", true);
+    
+    $('#industryCatList > div').css('border', 'solid 1px #fff');
+    $(this).css('border', 'solid 1px #aaa');
+    $(this).css('border-right', 'solid 5px #aaf');
+    $("#catsMobile").hide();
+    $('#catListHolderShow').text('Show Categories');
+    $('html,body').animate({
+        scrollTop: $("#hublist").offset().top - 250
+    });
+    //displayResults(); // This can be removed after transitioning away from list at bottom
+    // Use instead
+    loadMap1();
+    hideNonListPanels();
+    event.stopPropagation();
+  });
+
+  $('.toggleListOptions').click(function(event) {
+      if ($('.toggleListOptions').hasClass("expand")) {
+          $('.toggleListOptions').removeClass("expand");
+          $('.listOptions').hide();
+      } else {
+          $('.toggleListOptions').addClass("expand");
+          if ($(".listPanel").is(':visible')) {
+              $('.listOptions .hideList').show();
+          } else {
+              $('.listOptions .hideList').hide();
+          }
+          $('.listOptions').show();
+      }
+      event.stopPropagation();
+  });
+
+});
 
 </script>
 </body>
