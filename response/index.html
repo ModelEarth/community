@@ -903,7 +903,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         <div style="display:none" class="suppliers">
           <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
 
-          <div id="legendLingsHolder" style="display:block;margin-bottom: 20px">
+          <div id="legendLingsHolder" class="localonly" style="display:none;margin-bottom: 20px">
             <div class="legendLink">
               <div class="legendLinkRect" style="background:#1f78b4;"></div>
               <div style="margin-right:16px;float:left">MANUFACTURERS</div>
@@ -922,7 +922,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           <div>
             Georgia businesses are responding to the call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
             to assist <a href="https://gema.georgia.gov/">GEMA</a> via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please 
-            <a href="https://www.georgia.org/covid19response" style="white-space: nowrap;">submit a new entry</a>.<br><br>
+            <a href="https://www.georgia.org/covid19response" style="white-space: nowrap;">submit a new entry</a>.
+            Locations have been randomized by a couple miles to prevent reverse address lookups.
+            <br><br>
           </div>
         </div>
 
@@ -935,10 +937,12 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
           <section id="directory" class="mock-up" style="display:none;">
             
+              <!--
               <h2 style="margin-top:0px">Mock-up</h2>
               Farm fresh data is provided as a sample dataset pulled from the USDA website. 
               If you need info related to a GEMA supplier, please contact the Georgia Centers of Innovation.
               <br><br>
+              -->
 
               <div id="resultsHeader">
               </div>
@@ -1054,16 +1058,18 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 var map1 = {};
 function loadMap1() { // Also called by search-filters.js
   let dp1 = {}
-  if (param["show"] == "suppliers" && param["domain"] == "localhost:8887") {
+  if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
-    dp1.dataset = "http://" + param["domain"] + "/market-support/resources/suppliers/georgia-responders.csv";
+    dp1.dataset = "/smartdata/resources/suppliers/GEMA-Manufacturers-and-Distributors-Randomized.csv";
 
     dp1.dataTitle = "Manufacturers and Distributors";
     dp1.valueColumn = "type";
     dp1.valueColumnLabel = "Type";
     dp1.markerType = "google";
-    dp1.description = "comments";
-    dp1.nameColumn = "name";
+    dp1.description = "items";
+    dp1.nameColumn = "Title";
+    dp1.latColumn = "lat_rand";
+    dp1.lonColumn = "lon_rand";
   } else {
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     dp1.name = "Farm Fresh Produce";
@@ -1195,7 +1201,7 @@ $(document).ready(function () {
     //displayResults(); // This can be removed after transitioning away from list at bottom
     // Use instead
     loadMap1();
-    hideNonListPanels();
+    //hideNonListPanels();
     event.stopPropagation();
   });
 
