@@ -273,7 +273,7 @@ function dualmapLoaded(param) {
 	      //scaleType: "scaleThreshold",
 	    }
 	    //dp1.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
-	    dp1.name = "Intermodal Ports"
+	    dp1.dataTitle = "Intermodal Ports"
 	    dp1.markerType = "google";
 	    dp1.data = readData(dp1.selector, dp1.delimiter, dp1.numColumns, dp1.valueColumn);
 	    //dp1.color = '#0033ff'; // Alternative to scale
