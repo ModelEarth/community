@@ -570,12 +570,33 @@ function showList(dp) {
 
             //console.log("Search for " + keyword);
 
-            if (elementRaw[dp.valueColumn].toLowerCase().indexOf(keyword) >= 0) {
-              console.log("foundMatch keywords");
-              foundMatch++;
+            
+            if (typeof dp.search != "undefined") { // An object containing interface labels and names of columns to search.
+              for (const [key, value] of Object.entries(dp.search)) {
+                //console.log(key, value);
+                if (elementRaw[value]) {
+                  if (elementRaw[value].toString().toLowerCase().indexOf(keyword) >= 0) {
+                    //console.log("foundMatch for " + value);
+                    foundMatch++;
+                  }
+                } else {
+                  console.log("Search column not found" + value);
+                }
+              }
+            } else { // dp.search is not defined, so try titlecolumn
+              //console.log("no dp.search, try: " + elementRaw[dp.titleColumn]);
+              if (elementRaw[dp.titleColumn] && elementRaw[dp.titleColumn].toLowerCase().indexOf(keyword) >= 0) {
+                console.log("foundMatch in title");
+                foundMatch++;
+              }
+              if (elementRaw[dp.valueColumn] && elementRaw[dp.valueColumn].toLowerCase().indexOf(keyword) >= 0) {
+                console.log("foundMatch in value");
+                foundMatch++;
+              }
             }
 
-            if ($("#findKeywords").is(":checked") > 0 && elementRaw[dp.keywords].toLowerCase().indexOf(keyword) >= 0) {
+            // TO REMOVE
+            if ($("#findKeywords").is(":checked") > 0 && elementRaw[dp.keywords] && elementRaw[dp.keywords].toLowerCase().indexOf(keyword) >= 0) {
               console.log("foundMatch keywords");
               foundMatch++;
             }

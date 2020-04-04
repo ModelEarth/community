@@ -1054,7 +1054,7 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 
 <script>
-
+//'use strict'; // Addd for dp1.search https://stackoverflow.com/questions/34913675/how-to-iterate-keys-values-in-javascript
 // MAP 1
 var map1 = {};
 function loadMap1() { // Also called by search-filters.js
@@ -1068,6 +1068,7 @@ function loadMap1() { // Also called by search-filters.js
     dp1.valueColumnLabel = "Type";
     dp1.markerType = "google";
     dp1.keywords = "items";
+    dp1.search = {"In Items": "items", "In Business Type": "type", "In City Name": "city", "In Zip" : "zip"};
     dp1.nameColumn = "title";
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
@@ -1077,8 +1078,10 @@ function loadMap1() { // Also called by search-filters.js
     dp1.name = "Farm Fresh Produce";
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";
+    dp1.search = {"In Market Name": "MarketName"};
     dp1.titleColumn = "marketname";
     dp1.nameColumn = "marketname";
+    dp1.searchFields = "marketname";
     dp1.addressColumn = "street";
     dp1.valueColumn = "Prepared";
     //dp1.valueColumn = "type";
