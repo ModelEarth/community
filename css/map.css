@@ -10,11 +10,13 @@
     background-color:rgba(255,255,255,0.85);
     color:#fff !important;
     bottom:0;
-    left:0;
+    right:0;
     paddingX:10px 30px 10px 30px;
     font-size: 14px;
     z-index: 1000;
-    height:230px;
+    heightX:230px;
+    z-index: 500; /* allows credits to cover bottom */
+    overflow: scroll;
   }
   #allLegends div svg {
     overflow: visible;
