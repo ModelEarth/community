@@ -237,7 +237,7 @@ function loadFromCSV(whichmap,dp,callback) {
       //map.whenReady(function(){ 
       //map.on('load',function(){ // Never runs
         //alert("loaded")
-        callback(map)
+        callback(dp)
       //});
 
       // Neigher map.whenReady or map.on('load') seems to require SetView()
