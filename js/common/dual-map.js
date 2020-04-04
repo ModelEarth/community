@@ -163,6 +163,12 @@ function loadFromCSV(whichmap,dp,callback) {
 
        }
 
+       if (overlays2[dp.dataTitle]) {
+          // Prevents dups of layer from appearing - each dup shows a data subset when filter is being applied.
+          //controlLayers.removeLayer(overlays2[dp.dataTitle]);
+          layerControl[whichmap].removeLayer(overlays2[dp.dataTitle]);
+       }
+
       overlays2[dp.dataTitle] = dp.group; // Allows for use of dp.dataTitle with removeLayer and addLayer
       //overlays2[dp.dataTitle] = dp.group2;
 
