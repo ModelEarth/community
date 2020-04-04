@@ -237,9 +237,9 @@ $(document).ready(function () {
    	}
    	$("#clearButton").click(function() {
    		clearFields();
-   		$("#introText").show();
-   		history.pushState("", document.title, window.location.pathname);
-   		loadHtmlTable(true); // New list
+   		//history.pushState("", document.title, window.location.pathname);
+   		//loadHtmlTable(true); // New list
+   		loadMap1();
    		event.stopPropagation();
    	});
    	$("#botGo").click(function() {
