@@ -1109,11 +1109,7 @@ function loadMap1() { // Also called by search-filters.js
 
   $("#detaillist").text(""); // Clear prior results
   map1 = loadFromCSV('map1', dp1, function(dp) { // Called on success
-           
-      if (overlays2["Railroads"]) { // dp.dataTitle]
-          // Prevents dups of layer from appearing
-          //layerControl['map1'].removeLayer("Railroads");
-       }
+      
       if (!overlays2["Railroads"]) {
         overlays2["Railroads"] = dp.group; // Allows us to check if layer already added. Setting to db.group not currently user.
         layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
