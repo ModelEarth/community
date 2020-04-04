@@ -176,11 +176,13 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     // MAP 2
     let dp2 = {};
 
+    
     dp2.dataset = "/community/tools/map.csv";
     // Georgia
     dp2.latitude = 32.9;
     dp2.longitude = -83.4;
     dp2.zoom = 7;
+    //dp2.showLayer = false;
 
     //dp2.dataset = "/community/farmfresh/scraper/out/raw/farmersmarkets-ga.csv";
     dp2.dataset = "/community/map/starter/farmersmarkets-ga.csv";
@@ -207,8 +209,10 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     // Fulton County 5631 restaurants
     dp2 = {};
     dp2.dataset = "/community/tools/map.csv";
-    
-    dp2.showLayer = false;
+    dp2.latitude = 32.9;
+    dp2.longitude = -83.4;
+
+    //dp2.showLayer = false;
     dp2.name = "Fulton County Restaurants";
     dp2.titleColumn = "restaurant";
     dp2.nameColumn = "restaurant";

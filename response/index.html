@@ -1056,7 +1056,10 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 
 <script>
-//'use strict'; // Addd for dp1.search https://stackoverflow.com/questions/34913675/how-to-iterate-keys-values-in-javascript
+// Omit 'use strict' when creating an embed because it could brake other's code.
+'use strict'; // Optional, make sure we are declaring variable.
+
+
 // MAP 1
 var map1 = {};
 function loadMap1() { // Also called by search-filters.js
@@ -1105,22 +1108,18 @@ function loadMap1() { // Also called by search-filters.js
   dp1.listLocation = false; // Hides Wazw direction link in list, remains in popup.
 
   $("#detaillist").text(""); // Clear prior results
-  map1 = loadFromCSV('map1', dp1, function(map1) { // Called on success
-
-
-      // Might not need to be within function
-      $('.refreshMap').click(function(event) {
-          
-          $("#map1").show();
-          //displayMap(layerName,siteObject);
-          console.log(".refreshMap ");
-          
-          map1.invalidateSize(); // Force Leaflet map to reload
-      });
+  map1 = loadFromCSV('map1', dp1, function(dp) { // Called on success
            
+      if (overlays2["Railroads"]) { // dp.dataTitle]
+          // Prevents dups of layer from appearing
+          layerControl['map1'].removeLayer("Railroads");
+       }
+
       //if (!layerControl['map1'].hasLayer(overlays2["Railroads"])){
+      if (!overlays2["Railroads"]) {
+        overlays2["Railroads"] = dp.group; // Allows us to check if layer already added. Setting to db.group not currently user.
         layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-      //} 
+      } 
   });
 }
 loadMap1();
@@ -1229,6 +1228,15 @@ $(document).ready(function () {
       event.stopPropagation();
   });
 
+  // If this does not work, may need to call when map1 is initially loaded, but only once.
+  $('.refreshMap').click(function(event) {
+      alert('.refreshMap')
+      $("#map1").show();
+      //displayMap(layerName,siteObject);
+      console.log(".refreshMap ");
+      
+      map1.invalidateSize(); // Force Leaflet map to reload
+  });
 });
 
 </script>
