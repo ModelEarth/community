@@ -1080,7 +1080,7 @@ function loadMap1() { // Also called by search-filters.js
     dp1.listLocation = false;
   } else {
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
-    dp1.name = "Farm Fresh Produce";
+    dp1.name = "Farm Fresh Prepared Food";
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";
     dp1.search = {"In Market Name": "MarketName"};
@@ -1112,10 +1112,8 @@ function loadMap1() { // Also called by search-filters.js
            
       if (overlays2["Railroads"]) { // dp.dataTitle]
           // Prevents dups of layer from appearing
-          layerControl['map1'].removeLayer("Railroads");
+          //layerControl['map1'].removeLayer("Railroads");
        }
-
-      //if (!layerControl['map1'].hasLayer(overlays2["Railroads"])){
       if (!overlays2["Railroads"]) {
         overlays2["Railroads"] = dp.group; // Allows us to check if layer already added. Setting to db.group not currently user.
         layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
