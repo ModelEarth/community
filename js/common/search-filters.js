@@ -180,7 +180,7 @@ $(document).ready(function () {
 			$('#catListHolderShow').show();
 			$('#catListHolderShow').text('Show Categories');
 		}
-		$(".eWidget").hide();
+		//$(".eWidget").hide();
 		loadMap1();
     	//displayResults();
 	    event.stopPropagation();
