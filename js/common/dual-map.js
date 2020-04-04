@@ -196,29 +196,15 @@ function loadFromCSV(whichmap,dp,callback) {
 
         layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
-
-      //if (layerControl[whichmap] == undefined) {
-        
-      //}
-
       
-      //addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
 
-      
+      addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
+
+  
 
       // All layers reside in this object:
       //console.log("dataParameters:");
       //console.log(dataParameters);
-
-
-      // Remove from control and background.
-      //layerControl[whichmap].removeLayer(grayscale);
-      //map.removeLayer(grayscale);
-
-      
-      
-
-      //map.addLayer(overlays["Intermodal Ports"]);
 
       if (dp.showLayer != false) {
         $("#widgetTitle").text(dp.dataTitle);
@@ -359,6 +345,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
 // helper functions
 /////////////////////////////////////////
 function addLegend(scale, scaleType, title) {
+  $("#allLegends").text(""); // Clear prior results
   var svg = d3.select("#allLegends")
     .append("div")
       .attr("class", "legend "  + title)
@@ -382,6 +369,10 @@ function addLegend(scale, scaleType, title) {
 
   svg.select("g.legend")
     .call(legend);
+
+  //alert($(".legendCells .cell").length)
+  $("#legendHolder").height(80 + $(".legendCells .cell").length * 19);
+
 }
 
 function hex2rgb(hex) {
