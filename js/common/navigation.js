@@ -81,7 +81,6 @@ $(document).ready(function(){
 
  		$('.showMenu').click(function () {
 			//$(".showMenu").hide();
-			$(".navLinks").hide();
 			$("#menuHolder").show();
 			$("#menuHolder").css('margin-right','0px')
 			//$("#itemMenu").appendTo($(this).parent().parent());
