@@ -462,30 +462,34 @@ b {
 
   <div class="searchField" style="float:left">
       &nbsp;<br>
-    <div>
+    
       <!-- Submit Button -->
         <div style="float:left; position:relative; margin-right:5px;">
         
-        <div class="filterLabel filterLabelMain"></div>
+          <div class="filterLabel filterLabelMain"></div>
 
-        <!-- basicSearch goSearch searchHeight -->
-        <div id="goSearch" class="detailbutton" href="#" style="float:left;"><span style="font-size:14pt;padding-left:2px">&#128269;</span></div>
+          <!-- basicSearch goSearch searchHeight -->
+          <div id="goSearch" class="detailbutton" href="#" style="float:left;"><span style="font-size:14pt;padding-left:2px">&#128269;</span></div>
 
-        <!-- showAll showAllResults searchHeight -->
-        <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
-          
-          <div style="display:none" class="suppliers">
-            <div id="catListHolderShow" class='detailbutton' style="color:#fff; background:#0071e3; float:left;margin-left:8px">Show Categories
-            </div>
-          </div>
+          <!-- showAll showAllResults searchHeight -->
+          <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
+            
+            
 
         </div>
         <!-- /Submit Button -->
 
-      </div>
+        
+
 
   </div><!-- /searchField -->
 
+<div style="display:none; float:left" class="suppliers">
+  <div class="filterLabel filterLabelMain">&nbsp;</div>
+  <div id="catListHolderShow" class='detailbutton' style="color:#fff; background:#0071e3; float:left;margin-left:8px">
+      Show Categories
+  </div>
+</div>
 
 <div style="clear:both"></div>
 
@@ -1203,7 +1207,7 @@ $(document).ready(function () {
     //$('html,body').animate({
     //    scrollTop: $("#hublist").offset().top - 250
     //});
-    
+
     //displayResults(); // This can be removed after transitioning away from list at bottom
     // Use instead
     loadMap1();
