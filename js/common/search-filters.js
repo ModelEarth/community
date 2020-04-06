@@ -374,8 +374,11 @@ $(document).ready(function () {
 
 	  var pathname = window.location.pathname;
 	  var queryString = "";
-	  if (hsHash) {
-	    queryString = "#hs=" + hsHash;
+	  if (window.location.search) { // Existing, for parameters that are retained as hash changes.
+	    queryString += window.location.search; // Contains question mark (?)
+	  }
+	  if (hsHash) { // Remove the hash here if adding to other 
+	    queryString += "#hs=" + hsHash;
 	  }
 	  $("#productCodes").val(hsHash);
 	  $("#productCodes").width("200px");
