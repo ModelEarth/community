@@ -44,6 +44,70 @@ function loadParams(paramStr,hashStr) {
    }
    return params;
 }
+function mix(incoming, target) { // Combine two objects, priority to incoming. Delete blanks indicated by incoming.
+   for(var key in incoming) {
+     if (incoming.hasOwnProperty(key)) {
+        if (incoming[key] === null || incoming[key] === undefined || incoming[key] === '') {
+          delete target[key];
+        } else {
+          target[key] = incoming[key];
+        }
+     }
+   }
+   return target;
+}
+function getHash() {
+      return (function (a) {
+        if (a == "") return {};
+        var b = {};
+        for (var i = 0; i < a.length; ++i) {
+            var p = a[i].split('=');
+            if (p.length != 2) continue;
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+      })(window.location.hash.substr(1).split('&'));
+  }
+function updateHash(addToHash) {
+
+    let hash = getHash(); // Include all existing
+    hash = mix(addToHash,hash); // Gives priority to addToHash
+
+    // Reside in mix. DELETE
+        //for (var i in hash) { // Remove blank attributes
+        //  if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
+        //    delete hash[i];
+        //  }
+        //}
+
+        var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+
+        // findCompany
+
+    
+
+    var pathname = window.location.pathname;
+    var queryString = "";
+    if (window.location.search) { // Existing, for parameters that are retained as hash changes.
+      queryString += window.location.search; // Contains question mark (?)
+    }
+
+    //var hsHash = '';
+    //hsHash = $('[name="hs"]:checked').map(function() {return this.value;}).get().join(',');
+    //if (hsHash) { // Remove the hash here if adding to other 
+    //  queryString += "#hs=" + hsHash;
+    //}
+    //$("#productCodes").val(hsHash);
+    //$("#productCodes").width("200px");
+
+    if (hashString) { // Remove the hash here if adding to other 
+      queryString += "#" + hashString;
+    }
+    
+    let searchTitle = 'Page ' + hashString;
+    window.history.pushState("", searchTitle, pathname + queryString);
+    //refreshMain();
+}
 
 // Serialize a key/value object.
 //var params = { width:1680, height:1050 };

@@ -198,12 +198,14 @@ b {
 
 
   <!-- FILTERS -->
+  
+
   <!--
     Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4
     https://datascape.github.io/community/#columns=population:31;education:50
   -->
   <div class="pagePanel" style="margin:0 0 12px 24px;">
-
+    <div id="activeLayer" style="display: none"></div>
 
   <div id="productCodesHolder" style="display:none;" class="mock-up filterField local">
     <div class="filterLabel filterLabelMain">Categories</div>
@@ -261,27 +263,38 @@ b {
                   <input type="checkbox" name="findLocation" id="findLocation" value="findLocation" checked><label for="findLocation" class="filterCheckboxTitle">Search Listings</label><br>
                   <input type="checkbox" name="findNews" id="findNews" value="findNews" checked><label for="findNews" class="filterCheckboxTitle">Search Newsroom</label><br>
                 </div>
-                <div style="float:left;" id="findLocationWith">
+                <div style="float:left;" id="search_col_checkboxes">
+
                     <div>
-                      <input type="checkbox" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
+                      <input type="checkbox" class="search_col" name="in" id="type" checked>
+                      <label for="type" class="filterCheckboxTitle"> In Type</label>
                     </div>
                     <div>
-                      <input type="checkbox" name="findWebsite" id="findWebsite" value="1" checked><label for="findWebsite" class="filterCheckboxTitle"> In Website URL</label>
+                      <input type="checkbox" class="search_col" name="in" id="title" checked>
+                      <label for="title" class="filterCheckboxTitle"> In Title</label>
+                    </div>
+
+
+                    <div>
+                      <input type="checkbox" class="search_col" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
                     </div>
                     <div>
-                      <input type="checkbox" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
+                      <input type="checkbox" class="search_col" name="findWebsite" id="findWebsite" value="1" checked><label for="findWebsite" class="filterCheckboxTitle"> In Website URL</label>
                     </div>
                     <div>
-                      <input type="checkbox" name="findDetails" id="findDetails" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Industry</label>
+                      <input type="checkbox" class="search_col" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
                     </div>
                     <div>
-                      <input type="checkbox" name="findProduct" id="findProduct" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Product Description</label>
+                      <input type="checkbox" class="search_col" name="findDetails" id="findDetails" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Industry</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" class="search_col" name="findProduct" id="findProduct" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Product Description</label>
                     </div>
                     <div style="display:none">
-                      <input type="checkbox" name="findNews" id="findNews" value="1"><label for="findNews" class="filterCheckboxTitle"> In Newsroom</label>
+                      <input type="checkbox" class="search_col" name="findNews" id="findNews" value="1"><label for="findNews" class="filterCheckboxTitle"> In Newsroom</label>
                     </div>
                     <div style="display:none">
-                      <input type="checkbox" name="findContent" id="findContent" value="1"><label for="findContent" class="filterCheckboxTitle"> In Georgia.org</label>
+                      <input type="checkbox" class="search_col" name="findContent" id="findContent" value="1"><label for="findContent" class="filterCheckboxTitle"> In Georgia.org</label>
                     </div>
                 </div>
               </div>
@@ -576,11 +589,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="allLegends"></div>
   </div>
 </div>
-</section>
+
 <div style="clear:both"></div>
 
 
-<div id="tableSide" style="float:left;vertical-align:top;display:none" class="hideMobile suppliers">
+<div id="tableSide" style="float:left;display:none" class="hideMobile suppliers">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
 
@@ -610,7 +623,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     </div>
   </div>
 </div>
-<div style="vertical-align:top;">
+
+<div style="overflow:auto;">
 
 
 <!-- move after left column -->
@@ -922,7 +936,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 
 
-          <section id="directory" class="mock-up" style="display:none;">
+          <sectionX id="directory" class="mock-up" style="display:none;">
             
               <!--
               <h2 style="margin-top:0px">Mock-up</h2>
@@ -977,7 +991,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
               </div>
             </div>
 
-          </section>
+          </sectionX>
 
 
           <div id="dataList"></div>
@@ -1047,17 +1061,17 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 // MAP 1
 var map1 = {};
 function loadMap1() { // Also called by search-filters.js
+  console.log('loadMap1')
   let dp1 = {}
   if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
-    dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     dp1.dataset = "/smartdata/resources/suppliers/GEMA-Manufacturers-and-Distributors-Randomized.csv";
 
     dp1.dataTitle = "Manufacturers and Distributors";
     dp1.valueColumn = "type";
     dp1.valueColumnLabel = "Type";
     dp1.markerType = "google";
-    dp1.keywords = "items";
-    dp1.search = {"In Items": "items", "In Business Type": "type", "In City Name": "city", "In Zip" : "zip"};
+    //dp1.keywords = "items";
+    dp1.search = {"In Items": "items", "In Business Type": "type", "In City Name": "city", "In State Name": "state", "In Postal Code" : "zip"};
     dp1.nameColumn = "title";
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
@@ -1089,7 +1103,7 @@ function loadMap1() { // Also called by search-filters.js
   dp1.zoom = 7;
 
   
-  dp1.listLocation = false; // Hides Wazw direction link in list, remains in popup.
+  dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
 
   $("#detaillist").text(""); // Clear prior results
   map1 = loadFromCSV('map1', dp1, function(dp) { // Called on success
@@ -1100,7 +1114,14 @@ function loadMap1() { // Also called by search-filters.js
       } 
   });
 }
+// http://localhost:8887/community/response/?show=suppliers#q=rin&cols=items,city,state,zip
+populateFieldsFromHash();
 loadMap1();
+window.onhashchange = function() {
+  //param = loadParam(location.search,location.hash);
+  console.log("user changed hash")
+  loadMap1();
+}
 
 // MAP 2 - INTERMODAL PORTS
 if (1==2) {
@@ -1172,7 +1193,6 @@ $(document).ready(function () {
   $('.catList > div').click(function () {
     var catTitle = $(this).text();
     $('#keywordsTB').val(catTitle);
-    //$('#findLocationWith input[type=checkbox]').prop("checked", true);
     $('#findDetails').prop("checked", true);
     
     $('#industryCatList > div').css('border', 'solid 1px #fff');
@@ -1180,9 +1200,10 @@ $(document).ready(function () {
     $(this).css('border-right', 'solid 5px #aaf');
     $("#catsMobile").hide();
     $('#catListHolderShow').text('Show Categories');
-    $('html,body').animate({
-        scrollTop: $("#hublist").offset().top - 250
-    });
+    //$('html,body').animate({
+    //    scrollTop: $("#hublist").offset().top - 250
+    //});
+    
     //displayResults(); // This can be removed after transitioning away from list at bottom
     // Use instead
     loadMap1();

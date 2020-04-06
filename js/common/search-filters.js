@@ -1,4 +1,5 @@
 function populateFieldsFromHash() {
+	$("#keywordsTB").val(param["q"]);
 	$("#productCodes").val(param["hs"]);
 }
 var param = loadParams(location.search,location.hash);
@@ -155,13 +156,7 @@ $(document).ready(function () {
     	$('#topPanel').hide();
     	$('#itemMenu').hide();
 	});
-	// 
-	$('#findLocationWith input[type=checkbox]').change(function() {
-		//$(".fieldSelector").hide();
-	    $('#topPanel').hide();
-	    displayResults();
-	    event.stopPropagation();
-	});
+	
 	function hideNonListPanels() {
 		$(".fieldSelector").hide(); // Avoid since this occurs when typing text in search field.
     	$('#topPanel').hide();
@@ -180,9 +175,9 @@ $(document).ready(function () {
 			$('#catListHolderShow').show();
 			$('#catListHolderShow').text('Show Categories');
 		}
-		//$(".eWidget").hide();
+		let searchQuery = $('#keywordsTB').val();
+		updateHash({"q":searchQuery});
 		loadMap1();
-    	//displayResults();
 	    event.stopPropagation();
    	});
 
@@ -356,7 +351,8 @@ $(document).ready(function () {
 		
 		$('#productSubcats > div').click(function () {
 	    	$(this).find('input[type=checkbox]').prop("checked", !$(this).find('input[type=checkbox]').prop("checked")); // toggle
-	    	updateHash();
+	    	let hsCodes = $('#productSubcats input:checked').map(function() {return this.value;}).get().join(','); // Note use of value instead of id.
+	    	updateHash({"hs":hsCodes});
 	        event.stopPropagation();
 	    });
 
@@ -367,25 +363,6 @@ $(document).ready(function () {
 	    //});
 	}
 	
-	function updateHash() {
-	  var hsHash = '';
-	  
-	  hsHash = $('[name="hs"]:checked').map(function() {return this.value;}).get().join(',');
-
-	  var pathname = window.location.pathname;
-	  var queryString = "";
-	  if (window.location.search) { // Existing, for parameters that are retained as hash changes.
-	    queryString += window.location.search; // Contains question mark (?)
-	  }
-	  if (hsHash) { // Remove the hash here if adding to other 
-	    queryString += "#hs=" + hsHash;
-	  }
-	  $("#productCodes").val(hsHash);
-	  $("#productCodes").width("200px");
-	  var searchTitle = hsHash; // TODO: Use titles instead
-	  window.history.pushState("", searchTitle, pathname + queryString);
-	  refreshMain();
-	}
 	loadHtmlTable(true);
 
 	$(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
@@ -397,7 +374,8 @@ $(document).ready(function () {
 		refreshMain();
 	});
 	function refreshMain() { // refresh search results
-		loadHtmlTable(true);
+		console.log("refreshMain deactivated");
+		//loadHtmlTable(true);
 	}
 
 });
@@ -435,8 +413,10 @@ function SearchFormTextCheck(t, dirn) {
           	$("#clearButton").click();
         }
 		function displayResults() {
-			console.log("displayResults disabled");
+			console.log("displayResults disabled - use showList in Dual-Map.js instead");
 			return;
+
+			// NOT USED - See Dual-Map instead
 
 			$("#resultsPanel").hide();
 			$("#eTable_alert").hide();
@@ -703,7 +683,7 @@ function SearchFormTextCheck(t, dirn) {
 	          	       	
 	          }
 	          //displayResults();
-	          displayGrid(applyFilter);
+	          //displayGrid(applyFilter);
 	        }); 	
 		}
 		function displayListX() {
