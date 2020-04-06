@@ -437,8 +437,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
         	let searchTitle = 'page ' + hashString;
             let queryString = '#' + hashString;
 
-            //console.log("Update hash to: " + window.location.pathname + queryString);
-            window.history.pushState("", searchTitle, window.location.pathname + queryString);
+            //console.log("Update URL to: " + window.location.pathname + window.location.search + queryString);
+            window.history.pushState("", searchTitle, window.location.pathname + window.location.search + queryString);
         }
     }
 
