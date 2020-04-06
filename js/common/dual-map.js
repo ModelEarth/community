@@ -77,14 +77,6 @@ L.Map.addInitHook(function () {
   this.getContainer()._leaflet_map = this;
 });
 
-function mix(source, target) { // Combine two objects
-   for(var key in source) {
-     if (source.hasOwnProperty(key)) {
-        target[key] = source[key];
-     }
-   }
-   return target;
-}
 function loadFromCSV(whichmap,dp,callback) {
 
   let defaults = {};
@@ -144,7 +136,8 @@ function loadFromCSV(whichmap,dp,callback) {
   // Later we will check if the filename ends with .csv
 
   d3.csv(dp.dataset).then(function(data) {
-      
+      //console.log("To do: store data in browser to avoid repeat loading from CSV.");
+
       dp.data = readCsvData(data, dp.numColumns, dp.valueColumn);
       // Make element key always lowercase
 
@@ -206,6 +199,7 @@ function loadFromCSV(whichmap,dp,callback) {
       //console.log("dataParameters:");
       //console.log(dataParameters);
 
+      
       if (dp.showLayer != false) {
         $("#widgetTitle").text(dp.dataTitle);
         dp = showList(dp); // Reduces list based on filters
@@ -213,7 +207,8 @@ function loadFromCSV(whichmap,dp,callback) {
         map.addLayer(overlays2[dp.dataTitle]);
         
       }
-      
+      $("#activeLayer").text(dp.dataTitle); // Resides after showList
+
       //callback(map); // Sends to function(results).  "var map =" can be omitted when calling this function
 
 
@@ -539,6 +534,26 @@ function showList(dp) {
   var productcodes = "";
   var products_array = [];
   var productcode_array = [];
+
+  // Add checkboxes
+  if (dp.search && $("#activeLayer").text() != dp.dataTitle) { // Only set when active layer changes, otherwise selection overwritten on change.
+    let checkCols = "";
+    $.each(dp.search, function( key, value ) {
+      checkCols += '<div><input type="checkbox" class="search_col" name="in" id="' + value + '" checked><label for="' + value + '" class="filterCheckboxTitle"> ' + key + '</label></div>';
+    });
+    $("#search_col_checkboxes").html(checkCols);
+  }
+
+  // Alt: #search_col_checkboxes input
+  $('.search_col[type=checkbox]').change(function() {
+      //$('#topPanel').hide();
+      let cols = $('.search_col:checked').map(function() {return this.id;}).get().join(','); 
+      //alert(cols)
+      updateHash({"cols":cols});
+      loadMap1();
+      event.stopPropagation();
+  });
+
   if ($("#keywordsTB").val()) {
     keyword = $("#keywordsTB").val().toLowerCase();
   }
@@ -551,6 +566,10 @@ function showList(dp) {
     productcodes = $("#productCodes").val().replace(";",",");
     productcode_array = productcodes.split2(/\s*,\s*/); // Removes space when splitting on comma
   }
+
+  let search_col = [];
+  search_col = $('.search_col:checked').map(function() {return this.id;});
+  //let search_columns_object = {}; // For count of each
 
   var data_out = []; // An array of objects
   dp.data.forEach(function(elementRaw) {
@@ -569,17 +588,38 @@ function showList(dp) {
 
             
             if (typeof dp.search != "undefined") { // An object containing interface labels and names of columns to search.
-              for (const [key, value] of Object.entries(dp.search)) {
-                //console.log(key, value);
+              //var search_col = {};
+
+              
+              $.each(search_col, function( key, value ) { // Works for arrays and objects. key is the index value for arrays.
+                //search_columns_object[key] = 0;
                 if (elementRaw[value]) {
                   if (elementRaw[value].toString().toLowerCase().indexOf(keyword) >= 0) {
-                    //console.log("foundMatch for " + value);
+                    //console.log("FoundMatch for " + value);
+
+                    // Write this tighter
+                    /*
+                    if (search_columns_object[key]) {
+                     search_columns_object[key] = search_columns_object[key]+1;
+                     search_col[key].count = search_col[key].count+1;
+                    } else {
+                      search_columns_object[key] = 1;
+                      search_columns_object[key]["value"] = value;
+
+                      search_col[key].count = 1;
+                      search_col[key].value = value;
+                    }
+                    */
+
                     foundMatch++;
                   }
                 } else {
-                  console.log("Search column not found" + value);
+                  //console.log("Search column not found: " + value);
                 }
-              }
+
+              });
+
+              
             } else { // dp.search is not defined, so try titlecolumn
               //console.log("no dp.search, try: " + elementRaw[dp.titleColumn]);
               if (elementRaw[dp.titleColumn] && elementRaw[dp.titleColumn].toLowerCase().indexOf(keyword) >= 0) {
@@ -590,13 +630,16 @@ function showList(dp) {
                 console.log("foundMatch in value");
                 foundMatch++;
               }
+
+              // MIGHT REMOVE
+              if ($("#findKeywords").is(":checked") > 0 && elementRaw[dp.keywords] && elementRaw[dp.keywords].toLowerCase().indexOf(keyword) >= 0) {
+                console.log("SWITCH TO SEACH OBJECT - foundMatch keywords");
+                foundMatch++;
+              }
+
             }
 
-            // TO REMOVE
-            if ($("#findKeywords").is(":checked") > 0 && elementRaw[dp.keywords] && elementRaw[dp.keywords].toLowerCase().indexOf(keyword) >= 0) {
-              console.log("foundMatch keywords");
-              foundMatch++;
-            }
+            
 
             /*
             //if ($(dataSet[i][0].length > 0)) {
@@ -864,6 +907,9 @@ function showList(dp) {
       }
       $("#resultsPanel").show();
       $("#dataList").show();
+
+      //console.log(search_col);
+      //alert(search_columns_object[2].value)
   } else {
       $("#dataList").html("No match found in " + count + " records.<br>");
           
@@ -928,7 +974,7 @@ function readCsvData(_data, columnsNum, valueCol) {
       convertToNumber(row, columnsNum);
     });
   }
-  console.log(_data);
+  //console.log(_data); // Careful, this can overwhelm browser
   return _data;
 }
 function convertToNumber(d, _columnsNum) {
