@@ -1197,7 +1197,7 @@ $(document).ready(function () {
   $('.catList > div').click(function () {
     var catTitle = $(this).text();
     $('#keywordsTB').val(catTitle);
-    $('#findDetails').prop("checked", true);
+    $('#items').prop("checked", true); // Add front to parameter name.
     
     $('#industryCatList > div').css('border', 'solid 1px #fff');
     $(this).css('border', 'solid 1px #aaa');
