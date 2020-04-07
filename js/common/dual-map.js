@@ -542,18 +542,23 @@ function showList(dp) {
       checkCols += '<div><input type="checkbox" class="search_col" name="in" id="' + value + '" checked><label for="' + value + '" class="filterCheckboxTitle"> ' + key + '</label></div>';
     });
     $("#search_col_checkboxes").html(checkCols);
+
+    // BUGBUG - When toggling the activeLayer is added, this will need to be cleared to prevent multiple calls to loadMap1
+     
+    $('.search_col[type=checkbox]').change(function() {
+        //$('#topPanel').hide();
+        let cols = $('.search_col:checked').map(function() {return this.id;}).get().join(','); 
+        //alert(cols)
+        updateHash({"cols":cols});
+        loadMap1();
+        event.stopPropagation();
+    });
+
   }
 
-  // Alt: #search_col_checkboxes input
-  $('.search_col[type=checkbox]').change(function() {
-      //$('#topPanel').hide();
-      let cols = $('.search_col:checked').map(function() {return this.id;}).get().join(','); 
-      //alert(cols)
-      updateHash({"cols":cols});
-      loadMap1();
-      event.stopPropagation();
-  });
 
+
+  var allItemsPhrase = "all items";
   if ($("#keywordsTB").val()) {
     keyword = $("#keywordsTB").val().toLowerCase();
   }
@@ -571,11 +576,15 @@ function showList(dp) {
   search_col = $('.search_col:checked').map(function() {return this.id;});
   //let search_columns_object = {}; // For count of each
 
+  if (search_col.length == 0 && keyword && keyword != allItemsPhrase) {
+    $("#keywordFields").show();
+    alert("Please check at least one column to search.")
+  }
   var data_out = []; // An array of objects
   dp.data.forEach(function(elementRaw) {
     count++;
     foundMatch = 0;
-    if (keyword == "all items") { // Use a div argument instead
+    if (keyword == allItemsPhrase) { // Use a div argument instead
         keyword == ""; products = "";
         $("#keywordsTB").text(""); // Not working
         foundMatch++;
@@ -590,7 +599,6 @@ function showList(dp) {
             if (typeof dp.search != "undefined") { // An object containing interface labels and names of columns to search.
               //var search_col = {};
 
-              
               $.each(search_col, function( key, value ) { // Works for arrays and objects. key is the index value for arrays.
                 //search_columns_object[key] = 0;
                 if (elementRaw[value]) {
@@ -613,8 +621,6 @@ function showList(dp) {
 
                     foundMatch++;
                   }
-                } else {
-                  //console.log("Search column not found: " + value);
                 }
 
               });
