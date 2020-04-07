@@ -4,6 +4,29 @@
     height: 600px;
     width: 100%;
   }
+  
+  #map1 .leaflet-left {
+    left:auto;
+    right:12px;
+    top:55px;
+  }
+  .leaflet-touch .leaflet-bar {
+     border:none;
+  }
+  .leaflet-touch .leaflet-bar a {
+    width:42px !important;
+    height:37px !important;
+    font-size: 24px !important;
+    border-radius: 6px !important;
+  }
+  .leaflet-control-zoom-in {
+    margin-bottom:6px;
+    border:#bbb 2px solid !important;
+  }
+  .leaflet-control-zoom-out {
+    border:#bbb 2px solid !important;
+  }
+
   #legendHolder {
     position: absolute;
     background-color:rgba(33,33,33,0.5);
