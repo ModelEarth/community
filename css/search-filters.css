@@ -80,7 +80,7 @@
     border-radius: 6px;
     border: 1px solid #d0d5cb;
     position: absolute;
-    z-index: 1000;
+    z-index: 1001; /* to cover map zoom */
     font-size: 15px;
     line-height: 1.5;
     background: #fff;

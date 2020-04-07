@@ -279,7 +279,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
     map.setView(mapCenter,dp.zoom);
 
     L.control.zoom({
-        position: 'bottomright'
+        position: 'topright'
     }).addTo(map);
 
     overlays[dp.dataTitle] = dp.group; // Allows for use of dp.name with removeLayer and addLayer

@@ -5,26 +5,24 @@
     width: 100%;
   }
   
-  #map1 .leaflet-left {
-    left:auto;
-    right:12px;
-    top:55px;
-  }
   .leaflet-touch .leaflet-bar {
      border:none;
   }
   .leaflet-touch .leaflet-bar a {
-    width:42px !important;
-    height:37px !important;
-    font-size: 24px !important;
+    width:38px !important;
+    height:38px !important;
+    font-size: 26px !important;
+    color: #333;
     border-radius: 6px !important;
   }
   .leaflet-control-zoom-in {
     margin-bottom:6px;
     border:#bbb 2px solid !important;
+    line-height: 34px !important;
   }
   .leaflet-control-zoom-out {
     border:#bbb 2px solid !important;
+    line-height: 36px !important;
   }
 
   #legendHolder {
