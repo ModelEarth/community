@@ -114,6 +114,13 @@ b {
   padding-rightX:20px;
   font-weight: bold; /* the number 50 */
 }
+.outcomesbox div {
+  width: 100%;
+  border-top: 1px solid #fff;
+}
+.outcomesbox div div {
+  white-space: nowrap;
+}
 .leftWidget {
   float:left;
   max-width:420px;
@@ -126,8 +133,11 @@ b {
 }
 
 #industries {
-    float:right; display:none;
-    padding-bottom:0px; max-width:400px;
+    float:right;
+    display:none;
+    padding-left:20px;
+    padding-bottom:0px;
+    max-width:400px;
 }
 @media (max-width: 800px) {
   .leftWidget {
@@ -343,17 +353,30 @@ b {
                 <div class="uparrow uparrow-white" style="left: 34px;">
                 </div>
 
-                <div class="filterBubble">
-                    <ul class="filterUL" style="margin-top:0px">
+                <div class="filterBubble" style="pointer-events: auto;"><!-- Catch click through -->
+                    <input id="l" autocomplete="off" style="width:100%;max-width:400px;padding-right:27px;margin-bottom:10px" class="filterClick mobileWide textInput si-input" type="text" value="" onkeyup="return SearchEnter(event);" />
+
+                    <ul class="filterUL" style="margin-top:0px;clear:both;min-width:120px;float:left">
                       <li data-id="all" style="display:none"><a href="#">All</a></li>
+                        <li data-id="country:us"><a href="#">USA</a></li>
+                        <!--
                         <li data-id="state" class="selected" style="white-space:nowrap"><a href="#">Entire State</a></li>
+                        -->
+                        <li data-id="state:ga" class="selected" style="white-space:nowrap"><a href="#">Georgia</a></li>
+                        
+                        
                         <li data-id="city"><a href="#">Cities</a></li>
                         <li data-id="counties"><a href="#">Counties</a></li>
                         <li data-id="zip" style="white-space:nowrap"><a href="#">Zip Code</a></li>
                         
                         <li data-id="custom" class="hideFilter"><a href="#">Lat/Lon</a></li>
                         <li data-id="current" class="hideFilter"><a href="#">Nearby</a></li>
+                        
                     </ul>
+                    <div style="float:left; border:1px solid #ccc;padding:20px;max-width:120px">
+                        <b>Mock-Up</b><br>
+                        Lists to select countries, states/provinces, counties, cities and postal/zip codes will be displayed here.
+                    </div>
                 </div>
 
             </div>
@@ -631,6 +654,137 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="overflow:auto;">
 
 
+<!-- buttons -->
+  <style>
+          .pagebuttonHolder {
+            padding: 4px;
+            overflow: auto;
+            background-color:#eee;
+            width:100%;
+          }
+          .pagebutton {
+            background:#4586F6;
+            background: #bbb;
+            margin-right: 8px;
+            color:#fff;
+            border-radius: 5px;
+            padding: 0px 8px 0 10px;
+            min-height: 34px;
+            vertical-align: middle;
+            cursor: pointer;
+            /* text-transform: uppercase; */
+            font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, calibri, arial, sans-serif;
+            font-size: 15.5px;
+            font-weight: 400;
+            line-height: 1;
+          }
+          .pagebutton:hover {
+            background-color:#7a7a7a;
+          }
+          .listOptions {
+            display:none;
+            position:absolute;
+            left:auto;
+            right: 0;
+            top: 44px;
+            width: 164px;
+          }
+        </style>
+
+        <div class="local pagebuttonHolder" style="display:none;overflow: visible;">
+
+          <div style="float:right">
+            <div class="sendfeedback pagebutton" href="#" style="float:left;">
+              <div style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+              Feedback
+              </div>
+            </div>
+            <div class="local downloadbutton showDownload pagebutton" href="#" style="float:left; display:none">
+              <div style="float:left">
+                <i class="material-icons" style="font-size:19pt;padding-top:4px">&#xE2C4;</i>
+              </div>
+              <div class="downloadtext" style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+              Download
+              </div>
+            </div>
+            <div class="local addlisting-button pagebutton greenButton" href="#" style="float:left; display:none">
+              
+              <div class="hideMobile" style="displayX:none;margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+              Add Listing
+              </div>
+              <div class="showMobile" style="display:none;"><i class="material-icons" style="font-size:19pt;padding-top:4px">&#xE145;</i></div>
+
+            </div>
+            <div class="local partnertools pagebutton" href="#" style="float:left; display:none">
+              <div style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+              Partner Tools
+              </div>
+            </div>
+
+            <!-- Down arrow -->
+            <div class="local catchClick hideEmbed" style="position:relative;float:left;overflow:visible;">
+
+              <div class="toggleListOptions pagebutton" style="padding:2px"><i class="material-icons toggleArrow" style="font-weight:900; font-size: 32px; padding:0px; margin:0px">&#xE5C5;</i>
+              </div>
+
+              <div class="listOptions filterBubble">
+
+                <div class="hideEmbed" style="display:none">
+
+                  <div class="reduceHeader menuItem" style="display:none"><i class="material-icons" style="margin-top:-5px;">&#xE3C4;</i>Narrow Header</div>
+
+                  <!-- Google Icons - search for "crop" -->
+                  <div class="revealImage menuItem" style="display:none"><i class="material-icons" style="margin-top:-5px;">&#xE3C4;</i>Full Header Image</div>
+
+                  <div class="hideInfo hideInfoLink menuItem"><i class="material-icons" style="margin-top:-5px">&#xE88E;</i>Hide Bar</div>
+
+                  <div class="showInfo showInfoLink menuItem" style="display:none"><i class="material-icons" style="margin-top:-10px">&#xE88E;</i>Show Info</div>
+
+                </div>
+
+                
+                <div class="showImage menuItem" style="display:none"><i class="material-icons">slideshow</i>Slideshow</div>
+
+                  <div class="hideMobile">
+                  <div class="local menuItem refreshMap" style="display:none">
+                    <i class="material-icons" style="font-weight:900; margin-top:-5px">&#xE5D5;</i> Refresh Map
+                  </div>
+                </div>
+
+                <!--
+                <div class="menuItem hideList" style="display:none">
+                  <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE5CD;</i> Hide List
+                </div>
+
+                <div class="menuItem showList">
+                  <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE8EF;</i> Show List
+                </div>
+                -->
+
+                <div class="menuItem hideMap" style="display:none">
+                  <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE55B;</i> Hide Map
+                </div>
+                <div class="menuItem showMap" style="display:none">
+                  <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE55B;</i> Show Map
+                </div>
+
+                <div class="menuItem showThumbnails layerContentHide" style="display:none">
+                  <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE8F0;</i> Modules
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showInfo showInfoButton1 pagebutton" style="float: left; padding: 3px 3px 3px 4px; color:#fff; display:none;"><i class="material-icons" style="font-size:28px;">&#xE88F;</i>
+            </div>
+          </div>
+
+        </div>
+        <div style="clear:both">
+        </div>
+  <!-- /buttons -->
+
 <!-- move after left column -->
 <!-- INDUSTRIES -->
 <section id="industries" class="mock-up">
@@ -640,7 +794,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div>
 
       <div style="margin-bottom:14px">
-        <b style="font-size:16px">Mock-Up</b> - Side charts are not yet interactive.        
+        <b style="font-size:16px">Mock-Up</b> - <a href="../../io/charts" target="eeio-charts">Embeddable EEIO charts</a> under development.        
       </div>
 
       <div style="display:none; float:left; margin-right:30px">
@@ -775,135 +929,17 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <!-- Start HTML -->
 <section id="data" class="eWidget" style="overflow:auto">
 <div class="content litePanel displayOnload" style="display:none; padding-top:35px; padding-bottom:10px">
+
+
+
+
+
   <div id="flexwrapper">
     <div id="hublist">
       <div id="hublist-padding">
         
 
-        <style>
-          .pagebuttonHolder {
-            margin-right:10px;
-            margin-bottom: 18px;
-            overflow: auto;
-          }
-          .pagebutton {
-            background:#4586F6;
-            background: #bbb;
-            margin-right: 8px;
-            color:#fff;
-            border-radius: 5px;
-            padding: 0px 8px 0 10px;
-            min-height: 34px;
-            vertical-align: middle;
-            cursor: pointer;
-            /* text-transform: uppercase; */
-            font-family: 'Open Sans', 'Helvetica Neue', HelveticaNeue, calibri, arial, sans-serif;
-            font-size: 15.5px;
-            font-weight: 400;
-            line-height: 1;
-          }
-          .pagebutton:hover {
-            background-color:#7a7a7a;
-          }
-          .listOptions {
-            display:none;
-            position:absolute;
-            left:auto;
-            right: 0;
-            top: 44px;
-            width: 164px;
-          }
-        </style>
-
-        <div class="pagebuttonHolder">
-          <div class="local sendfeedback pagebutton" href="#" style="float:left; display:none;color#bbb">
-            <div style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
-            Feedback
-            </div>
-          </div>
-          <div class="local downloadbutton showDownload pagebutton" href="#" style="float:left; display:none">
-            <div style="float:left">
-              <i class="material-icons" style="font-size:19pt;padding-top:4px">&#xE2C4;</i>
-            </div>
-            <div class="downloadtext" style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
-            Download
-            </div>
-          </div>
-          <div class="local addlisting-button pagebutton greenButton" href="#" style="float:left; display:none">
-            
-            <div class="hideMobile" style="displayX:none;margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
-            Add Listing
-            </div>
-            <div class="showMobile" style="display:none;"><i class="material-icons" style="font-size:19pt;padding-top:4px">&#xE145;</i></div>
-
-          </div>
-          <div class="local partnertools pagebutton" href="#" style="float:left; display:none">
-            <div style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
-            Partner Tools
-            </div>
-          </div>
-
-          <!-- Down arrow -->
-          <div class="local catchClick hideEmbed" style="position:relative;float:left;overflow:visible;">
-
-            <div class="toggleListOptions pagebutton" style="padding:2px"><i class="material-icons toggleArrow" style="font-weight:900; font-size: 32px; padding:0px; margin:0px">&#xE5C5;</i>
-            </div>
-
-            <div class="listOptions filterBubble">
-
-              <div class="hideEmbed" style="display:none">
-
-                <div class="reduceHeader menuItem" style="display:none"><i class="material-icons" style="margin-top:-5px;">&#xE3C4;</i>Narrow Header</div>
-
-                <!-- Google Icons - search for "crop" -->
-                <div class="revealImage menuItem" style="display:none"><i class="material-icons" style="margin-top:-5px;">&#xE3C4;</i>Full Header Image</div>
-
-                <div class="hideInfo hideInfoLink menuItem"><i class="material-icons" style="margin-top:-5px">&#xE88E;</i>Hide Bar</div>
-
-                <div class="showInfo showInfoLink menuItem" style="display:none"><i class="material-icons" style="margin-top:-10px">&#xE88E;</i>Show Info</div>
-
-              </div>
-
-              
-              <div class="showImage menuItem" style="display:none"><i class="material-icons">slideshow</i>Slideshow</div>
-
-                <div class="hideMobile">
-                <div class="local menuItem refreshMap" style="display:none">
-                  <i class="material-icons" style="font-weight:900; margin-top:-5px">&#xE5D5;</i> Refresh Map
-                </div>
-              </div>
-
-              <!--
-              <div class="menuItem hideList" style="display:none">
-                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE5CD;</i> Hide List
-              </div>
-
-              <div class="menuItem showList">
-                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE8EF;</i> Show List
-              </div>
-              -->
-
-              <div class="menuItem hideMap" style="display:none">
-                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE55B;</i> Hide Map
-              </div>
-              <div class="menuItem showMap" style="display:none">
-                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE55B;</i> Show Map
-              </div>
-
-              <div class="menuItem showThumbnails layerContentHide" style="display:none">
-                <i class="material-icons" style="font-size:28px;margin-top:-5px;">&#xE8F0;</i> Modules
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="showInfo showInfoButton1 pagebutton" style="float: left; padding: 3px 3px 3px 4px; color:#fff; display:none;"><i class="material-icons" style="font-size:28px;">&#xE88F;</i>
-          </div>
-
-        </div>
-        <div style="clear:both">
-        </div>
+        
 
         <div style="display:none" class="suppliers">
           <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>

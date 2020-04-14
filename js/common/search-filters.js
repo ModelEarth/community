@@ -139,7 +139,23 @@ $(document).ready(function () {
         // 
 		event.stopPropagation();
 	});
+	$(".filterUL li").click(function(e) {
+		$(".filterBubbleHolder").hide();
+		e.preventDefault();
+		$(".filterUL li").removeClass("selected");
+		$(this).addClass("selected");
+		//$(".filterSelected").html($(this).text() + '<i class="entypo-down-open" style="font-size:13pt"></i>');
+		$("#filterClickLocation .filterSelected").html($(this).text()).data('selected', $(this).data('id'));
+		$("#locationDD option[value='" + $(this).data('id') + "']").prop("selected", true).trigger("change");
+		
+		$("#locationStatus").hide();
+		alert($(this).data('id'));
+        consoleLog("Call locationFilterChange from .filterUL li click: " + $(this).data('id'));
+		//locationFilterChange("locationFilterChange: " + $(this).data('id'));
+		updateHash({"loc":$(this).data('id')});
 
+		e.stopPropagation(); // Prevents click on containing #filterClickLocation.
+	 });
 
     $('#topPanelFooter').click(function () {
     	$('#productSubcats').css("max-height","none");
@@ -381,6 +397,219 @@ $(document).ready(function () {
 });
 
 
+function locationFilterChange(selectedValue) {
+
+    //alert("locationFilterChange " + selectedValue);
+    consoleLog("locationFilterChange: " + selectedValue);
+
+    showSearchClick(); // Display filters
+    hideLocationFilters();
+
+    //$(".hideLocationsMenu").trigger("click");
+    $('.countyTitleText').text(""); // Used by cities and counties
+    removeCityFilter();
+    $('.countyList').hide();
+
+    hideLocationsMenu();
+    $(".listHolder").hide();
+
+    //hideCounties();
+    $("#cityFields").hide();
+    $(".keywordField").show(); // Since hidden by zip search
+
+    //filterULSelect(selectedValue); // When from hash
+
+    //$(".filterUL li").removeClass("selected");
+        //$(this).addClass("selected");
+
+        //$("#filterClickLocation .filterSelected").html($(this).text()).data('selected', $(this).data('id'));
+
+    
+
+    if (selectedValue == 'all' || selectedValue == 'state') { // its entire state
+        // Reached by clicking "Entire State"
+        if(useCookies) {
+            //Cookies.set('searchParams', { 'useCurrent': null, 'locationDD': 'all' });
+            Cookies.set('searchParams', { 'useCurrent': null, 'locationDD': 'all' });
+        }
+        //activateEntireState();
+        $("#zip").val('');
+        $('.goSearch').trigger("click");
+    }
+
+    if (selectedValue == 'current') { // its My Current location, set cookie useCurrent=1
+        $("#distanceField").show();
+        activateMyLocation(true);
+        if(useCookies) {
+            Cookies.set('searchParams', { 'useCurrent': '1', 'centerlat': $(".mylat").val(), 'centerlon': $(".mylon").val(), 'locationDD': selectedValue });
+        }
+        //geoSelected();
+    }
+
+    if (selectedValue == 'custom') { // its other location, set cookie useCurrent=0
+        $("#coordFields").show();
+        $("#distanceField").show();
+        //$('#latLonFields').show();
+        if(useCookies) {
+            Cookies.set('searchParams', { 'useCurrent': '0', 'centerlat': $("#lat").val(), 'centerlon': $("#lon").val(), 'locationDD': selectedValue });
+        }
+        //geoSelected();
+    }
+
+    if (selectedValue == 'zip') {
+        $("#distanceField").show();
+        $("#zipFields").show();
+        $("#zip").focus();
+
+        if(useCookies) {
+            var cookieParam = Cookies.set('searchParams');
+            if (typeof (cookieParam) != 'undefined' && typeof (cookieParam.zip) != 'undefined') {
+                $("#zip").val(cookieParam.zip);
+            }
+            Cookies.set('searchParams', { 'useCurrent': '0', 'centerlat': $("#lat").val(), 'centerlon': $("#lon").val(), 'locationDD': 'zip' });
+        }
+    }
+    if (selectedValue == 'counties') {
+        //alert('showCounties');
+        // BUGBUG - Needed when not initial load. Initial load also causes carto map error from county mini-map.
+        //showCounties();
+
+    }
+    if (selectedValue == 'city') {
+        $("#distanceField").show();
+        $("#cityFields").show();
+        //$(".detailsPanel").hide();
+        //$(".listPanelInner").hide();
+        //$(".listPanelSideBkgd").hide(); // Alphabet
+        $(".cityList").show();
+        $(".listPanelRows").show();
+        
+        populateCityList(function(results) { // Returns asynchronous results. Waits for city cvs to load.
+            if (results) {
+                // Reached when changing location dropdown, if cityList not yet loaded.
+            }
+            else {
+                consoleLog('No cities results found');
+            }
+        });
+
+        $(".listHolder").show();
+
+        if(useCookies) {
+            //var cookieParam = Cookies.set('searchParams');
+            var cookieParam = Cookies.get('searchParams');
+            if (cookieParam && typeof (cookieParam.city) != 'undefined') {
+                consoleLog(cookieParam.city);
+                $("#cities").val(cookieParam.city.split(','))
+            }
+            //alert("City lat: " + $("#lat").val());
+            //Cookies.set('searchParams', { 'useCurrent': '0', 'centerlat': $("#lat").val(), 'centerlon': $("#lon").val(), 'locationDD': 'city' });
+           Cookies.set('searchParams', { 'useCurrent': '0', 'centerlat': $("#lat").val(), 'centerlon': $("#lon").val(), 'locationDD': 'city' });
+        }
+    }
+}
+function showSearchClick() {
+    //if () {
+        //$('.').trigger("click");
+        //return;
+    //}
+    
+    //$(".moduleBackgroundImage").addClass("moduleBackgroundImageDarken"); // Not needed since filters are not over image.
+    //$(".siteHeaderImage").addClass("siteHeaderImageDarken"); // Not needed since filters are not over image.
+
+    //$('.topButtons').show(); // Avoid showing bar when no layer.
+    $(".layerContent").show(); // For main page, over video.
+
+    //$(".showFilters").hide(); // Avoid hiding because title jumps.
+    //$(".hideFilters").show();
+
+    // Coming soon - Select if searching Georgia.org or Georgia.gov
+    //$(".searchModuleIconLinks").show();
+    $(".hideWhenFilters").hide();
+
+    $(".filterPanelHolder").show();
+    //$(".filterPanelWidget").show();
+    $("#filterPanel").show(); // Don't use "normal", causes overflow:hidden.
+    $(".searchHeader").show();
+    $("#panelHolder").show();
+    //$(".hideSearch").show();
+    //$(".showSearchClick").hide();
+
+    $(".showFiltersClick").hide();
+    $(".hideFiltersClick").show();
+
+    // Would remove active from Overview Map
+    $(".horizontalButtons .layoutTab").removeClass("active");
+    $(".showFiltersButton").addClass("active");
+
+    $(".hideSearch").show();
+    //$(".hideFilters").show(); // X not needed since magnifying glass remains visible now.
+    //$("#hideSearch").show();
+    if ($(".settingsPanel").is(':visible')) {
+        hideSettings();
+    }
+    if ($("#menuHolder").is(':visible')) {
+        $('.hideMetaMenu').trigger("click");
+    }
+    //updateOffsets();
+
+    // Hide because map is displayed, causing overlap.
+    // Could be adjusted to reside left of search filters.
+    //$(".quickMenu").hide();
+}
+function hideLocationFilters() {
+    $("#distanceField").hide();
+    //$(".currentCities").hide(); // Avoid hiding when clicking addCity
+    $("#zipFields").hide();
+}
+function removeCityFilter() {
+    $('.cityTitleText').text("");
+    $('.currentCities').hide();
+    //$('.hideMainMenu').trigger("click");
+    $(".cityCB").prop('checked', false);
+    // Also need to update URL.
+}
+function hideLocationsMenu() {
+    $('.listHolder').hide();
+}
+function populateCityList(callback) {
+    $(".menuPanel").hide(); // Also called from showCounties
+    $(".countyList").hide();
+
+    if ($('.cityList').length > 0) { // Already populated
+        return;
+    }
+    var file = root + "menu/data/cities.csv";
+    $.get(file, function(data) {
+        var cityList;
+        var lines = data.split('\n');
+
+        var n = $('<div class="sideSelectList cityList"></div>');      
+        //n.append('<label for="county-' + r[columnName] + '" class="countyLabel"><input type="checkbox" class="countyCB" name="countyCB" id="county-' + r[columnName] + '" value="' + r[columnName] + '" economic_region="' + r["economic_region"] + '" wia_region="' + r["wia_region"] + '">' + r[columnName] + ' County</label>');
+        //$('.countyList').append(n);
+
+        $.each(lines, function (lineNo, line) {
+            var items = line.split(',');
+            //cityList +=  + "," + items[2] + "<br>";
+            if (lineNo > 0 && items[1]) {
+                n.append('<label for="city-' + items[1].toLowerCase() + '"><input type="checkbox" class="cityCB" name="cityCB" id="city-' + items[1].toLowerCase() + '" value="' + items[1].toLowerCase() + '" data-latitude="' + items[2] + '" data-longitude="' + items[3] + '">' + items[1] + '</label><br>');
+            }
+        });
+        $(".listHolder").append(n);
+        //$(".listPanelRows").prepend(n);
+        
+
+        // We avoid showing .listHolder here because sometime list is populated without displaying.
+        $('.cityList :checkbox').change(function () {
+            //alert('city list triggers goSearch');
+            $('#goSearch').trigger("click");
+        });
+        $('.cityText').click(function(event) {
+            locationFilterChange("city");          
+        });
+        callback('done');
+    });
+}
 
 
 // UPPER ("extra" in display)
