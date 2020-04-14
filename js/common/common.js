@@ -1,7 +1,5 @@
 // Updates originate in community/js/common/common.js
-
 // To do: dynamically add target _parent to external link when in an iFrame, and no existing target
-
 
 // USE params (plural) to isolate within functions when creating embedable widgets.
 // USE param for any html page using common.js.
