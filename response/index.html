@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../css/community.css" />
 <link rel="stylesheet" href="../css/search-filters.css" />
 <link rel="stylesheet" href="../css/display.css" />
+<link rel="stylesheet" href="../css/hexagons.css">
 
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../js/common/common.js"></script>
@@ -590,6 +591,31 @@ b {
 
 
 
+<!-- HEX -->
+  <div id="honeycombPanelHolder">
+    <div id="honeycombPanel" style="display:none">
+
+      <a name="sections"></a>
+
+      <!-- temp, lazy load -->
+      <!--
+      <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+      -->
+
+      
+        <div class="bigThumbMenu widthColumns"></div>
+      
+
+      <div id="honeyMenuHolder" style="display:none">
+        <div id="honeycombMenu"></div>
+      </div>
+
+        <br><br>
+        
+    </div>
+  </div>
+  <!-- /HEX -->
+
 
 <aside class="Intermodal_Ports">
 group,lat,lon,value,address,city,state,zip
@@ -788,7 +814,54 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <!-- move after left column -->
 <!-- INDUSTRIES -->
 <section id="industries" class="mock-up">
-  <div style="padding-top:30px; padding-bottom:0px">
+  <div style="padding-top:20px; padding-bottom:0px">
+
+
+    <!-- YOLO -->
+    <link rel="stylesheet" href="../resources/google-yolo-inline/styles.css" />
+
+    <div class="yolo-body">
+      <!--h1 class="sign-up__title">Sign Up for Localhost</h1 -->
+      <iframe id="google-iframe" class="sign-up__google" src="../resources/google-yolo-inline/google-yolo-iframe.html"></iframe>
+      <!-- CUSTOM hide
+      <p class="sign-up__divider">or</p>
+      <div class="sign-up__field">Email</div>
+      <div class="sign-up__field">Password</div>
+      <div class="sign-up__button"></div>
+      -->
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener('message', (event) => {
+        const iframeElt = document.getElementById('google-iframe');
+
+        switch(event.data.type) {
+          case 'verifyPing':
+            // This part handles the initial handshake by the Google Yolo iframe.
+            // It is sent by OpenYOLO https://github.com/openid/OpenYOLO-Web/blob/dc841704619d7801da0b860c91953ff730fca07f/ts/protocol/post_messages.ts#L27
+            event.source.postMessage({
+              type: 'verifyAck',
+              data: event.data.data
+            }, '*');
+            break;
+          case 'credential':
+            // The user selected a credential.
+            console.log('Received credential!', event.data.credential);
+            break;
+          case 'error':
+            // An error happened.
+            console.log('Error:', event.data.error);
+            break;
+          case 'height':
+            // Update the parent <iframe> height to match GoogleYolo <iframe> height
+            iframeElt.style.height = event.data.height + 'px';
+            break;
+          default:
+            // Do nothing.
+        }
+      });
+    </script>
+    <!-- /YOLO -->
 
     <!-- TOP WIDGETS -->
     <div>
@@ -1278,6 +1351,203 @@ $(document).ready(function () {
   });
 });
 
+
+// HEX
+function access(minlevel,alevel) {
+    var level = 0;
+    if (alevel) { level = parseInt(alevel) }
+    if (minlevel >= level) {
+        //consoleLog("TRUE minlevel " + minlevel + " level " + level);
+        return true;
+    } else {
+        //consoleLog("FALSE minlevel " + minlevel + " level " + level);
+        return false;
+    }
+}
+function removeFrontFolder(path) {
+    return("../.." + path);
+}
+function displayHexagonMenu(layerName,siteObject) {
+  var currentAccess = 0;
+  consoleLog("Display HEXAGON MENU");
+
+  $("#honeycombMenu").html(""); // Clear prior
+  $("#honeycombPanel").show();
+  var thelayers = siteObject.items;
+  //console.log(thelayers);
+  var sectionMenu = "";
+  var categoryMenu = "";
+  //var iconMenu = "";
+  var layer;
+  for(layer in thelayers) {
+
+        var menuaccess = 10; // no one
+        menuaccess = 0; //Temp
+        try { // For IE error. Might not be necessary.
+            if (typeof(siteObject.items[layer].menuaccess) === "undefined") {
+                menuaccess = 0;
+            } else {
+                menuaccess = siteObject.items[layer].menuaccess;
+            }
+        } catch(e) {
+            consoleLog("displayLayerCheckboxes: no menuaccess");
+        }
+        if (access(currentAccess,menuaccess)) {
+            if (siteObject.items[layer].menulevel == "1") {
+            //var layerTitleAndArrow = (thelayers[layer].navtitle ? thelayers[layer].navtitle : thelayers[layer].title);
+            var layerTitleAndArrow = thelayers[layer].section;
+                var icon = (thelayers[layer].icon ? thelayers[layer].icon : '<i class="material-icons">&#xE880;</i>');
+             if (thelayers[layer].item != "main" && thelayers[layer].section != "Admin" && thelayers[layer].title != "") {
+                // <h1 class='honeyTitle'>" + thelayers[layer].provider + "</h1>
+                sectionMenu += "<li class='hex'><a class='hexIn hash-changer' href='#" + thelayers[layer].item + "'><img src='" + removeFrontFolder(thelayers[layer].image) + "' alt='' /> <p class='honeySubtitle'>" + layerTitleAndArrow + "</p></a></li>";
+                }
+            }
+        }
+  }
+  $("#honeycombMenu").append("<ul id='hexGrid'>" + sectionMenu + "</ul>");
+  $("#honeycombPanelHolder").show();
+  //$("#iconMenu").append(iconMenu);
+    $("#honeyMenuHolder").show();
+}
+function displayBigThumbnails(layerName,siteObject) {
+    var currentAccess = 0;
+    $(".bigThumbMenu").html("");
+
+    $("#honeycombPanelHolder").show(); // Might have to alter when this occurs.
+    $("#honeycombPanel").show();
+    var thelayers = siteObject.items;
+    var sectionMenu = "";
+    var categoryMenu = "";
+    var iconMenu = "";
+    var bigThumbSection = layerName;
+    var layer;
+    for(layer in thelayers) {
+
+        var menuaccess = 10; // no one
+        try { // For IE error. Might not be necessary.
+            if (typeof(siteObject.items[layer].menuaccess) === "undefined") {
+                menuaccess = 0;
+            } else {
+                menuaccess = siteObject.items[layer].menuaccess;
+            }
+        } catch(e) {
+            consoleLog("displayLayerCheckboxes: no menuaccess");
+        }
+        
+        var directlink = getDirectLink(thelayers[layer].directlink, thelayers[layer].rootfolder, thelayers[layer].item);
+
+        if (bigThumbSection == "main") {
+            if (thelayers[layer].menulevel == "1") {
+                if (access(currentAccess,menuaccess)) {
+                    //if (siteObject.items[layer].section == bigThumbSection && siteObject.items[layer].showthumb != '0' && bigThumbSection.replace(" ","-").toLowerCase() != thelayers[layer].item) {
+                    
+                        var thumbTitle = ( thelayers[layer].thumbtitle ? thelayers[layer].thumbtitle : (thelayers[layer].section ? thelayers[layer].section : thelayers[layer].primarytitle));
+                        var thumbTitleSecondary = (thelayers[layer].thumbTitleSecondary ? thelayers[layer].thumbTitleSecondary : '&nbsp;');
+
+                        var icon = (thelayers[layer].icon ? thelayers[layer].icon : '<i class="material-icons">&#xE880;</i>');
+                           if (thelayers[layer].item != "main" && thelayers[layer].section != "Admin" && thelayers[layer].title != "") {
+                                // <h1 class='honeyTitle'>" + thelayers[layer].provider + "</h1>
+                                //var thumbTitle = thelayers[layer].title;
+                                var bkgdUrl = thelayers[layer].image;
+                                if (thelayers[layer].bigthumb) {
+                                    bkgdUrl = thelayers[layer].bigthumb;
+                                }
+                                bkgdUrl = removeFrontFolder(bkgdUrl);
+
+                                
+                                if (thelayers[layer].directlink) {
+                                    //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
+                                }
+                                if (menuaccess==0) { // Quick hack until user-0 displays for currentAccess 1. In progress...
+                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='displayX:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+                                } else {
+                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='display:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+                                }
+                            }
+                    //}
+                }
+            }
+        } else {
+            if (access(currentAccess,menuaccess)) {
+                if (siteObject.items[layer].section == bigThumbSection && siteObject.items[layer].showthumb != '0' && bigThumbSection.replace(" ","-").toLowerCase() != thelayers[layer].item) {
+                    var thumbTitle = (thelayers[layer].navtitle ? thelayers[layer].navtitle : thelayers[layer].title);
+                    var thumbTitleSecondary = (thelayers[layer].thumbTitleSecondary ? thelayers[layer].thumbTitleSecondary : '&nbsp;');
+
+                    var icon = (thelayers[layer].icon ? thelayers[layer].icon : '<i class="material-icons">&#xE880;</i>');
+                    if (!siteObject.items[layer].bigThumbSection) { // Omit the section parent
+                       if (thelayers[layer].item != "main" && thelayers[layer].section != "Admin" && thelayers[layer].title != "") {
+                            // <h1 class='honeyTitle'>" + thelayers[layer].provider + "</h1>
+                            //var thumbTitle = thelayers[layer].title;
+                            var bkgdUrl = thelayers[layer].image;
+                            if (thelayers[layer].bigthumb) {
+                                bkgdUrl = thelayers[layer].bigthumb;
+                            }
+                            bkgdUrl = removeFrontFolder(bkgdUrl);
+
+                            //var hrefLink = "";
+                            if (thelayers[layer].directlink) {
+                                //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
+                            }
+                            sectionMenu += "<li class='widthPercent user-" + menuaccess + "'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //alert(sectionMenu);
+    $(".bigThumbMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
+    //$("#honeycombMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
+    
+    $("#iconMenu").append(iconMenu);
+    $("#honeyMenuHolder").show();
+
+    $(".thumbModule").append($("#honeycombPanelHolder")); // For GDX
+}
+function getDirectLink(directlink,rootfolder,layer) {
+    if (directlink) {
+        directlink = removeFrontFolder(directlink);
+    } else if (rootfolder) {
+        if (rootfolder.indexOf('/site/docs/') < 0) {
+            rootfolder = "/site/docs/" + rootfolder;
+        }
+        directlink = removeFrontFolder(rootfolder + "#" + layer);
+    } else {
+        directlink = removeFrontFolder("/site/docs/#" + layer);
+    }
+    return(directlink);
+}
+function initSiteObject(layerName) {
+
+    var layerJson = "menu.json";
+
+    var siteObject = (function() {
+        var json = null;
+        $.ajax({
+            'type': 'GET',
+            'async': true,
+            'global': false,
+            'url': layerJson,
+            'jsonpCallback': 'callback',
+            'dataType': "jsonp",
+            'success': function (siteObject) {
+                consoleLog("json loaded within initSiteObject. location.hash: " + location.hash);
+                
+                // siteObjectFunctions(siteObject); // could add to keep simple here
+          
+                //displayBigThumbnails("main",siteObject);
+                //displayHexagonMenu("",siteObject);
+            },
+          error: function (req, status, err) {
+              consoleLog('Error fetching siteObject json: ', status, err);
+          }
+        });
+    })(); // end siteObject
+} // end initSiteObject
+
+initSiteObject("");
+
 </script>
+
 </body>
 </html>
