@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+/* CUSTOM change from body to .yolo-body */
+.yolo-body {
+  padding-right:20px;
+}
+.yolo-bodyX {
+  display: none;
+  margin: 0;
+  background-color: #F1F4F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+/* CUSTOM not used */
+.sign-up {
+  background-color: #FFF;
+  border-radius: 4px;
+  border: 1px solid #DADFE2;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 400px;
+  padding: 20px;
+  padding-bottom: 0px; /* CUSTOM */
+}
+
+@media screen and (max-width: 405px) {
+  .sign-up {
+    min-width: unset;
+    flex: 1 0 0;
+    padding: 10px;
+  }
+}
+
+.sign-up__google {
+  border: none;
+  margin: 5px 0;
+  width: 100%;
+}
+
+/* Styles for the page, you can ignore the rest */
+
+.sign-up__title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #969EA2;
+  margin: 0 0 10px;
+}
+
+.sign-up__divider {
+  color: #969EA2;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.sign-up__divider::before,
+.sign-up__divider::after {
+  content: '';
+  height: 1px;
+  flex: 1 0 0;
+  background-color: #DADFE2;
+}
+
+.sign-up__divider::before {
+  margin-right: 20px;
+}
+
+.sign-up__divider::after {
+  margin-left: 20px;
+}
+
+.sign-up__field {
+  height: 45px;
+  border-radius: 4px;
+  border: 2px solid #DADFE2;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #969EA2;
+  padding: 13px;
+}
+
+.sign-up__button {
+  height: 45px;
+  border-radius: 4px;
+  border: none;
+  background-color: #DADFE2;
+  margin: 5px 0;
+}
