@@ -2,7 +2,7 @@
 <h1 class="h1-home">Crowdsourced Spreadsheet Editor</h1>
 <h2 style="margin-top:0px">Embeddable Map Widget for CSV Files and Google Sheets</h2>
 
-We're creating an embeddable map widget for CSV data hosted on GitHub and Google Sheets to allow suppliers to promote when they are open for curbside pickup and&nbsp;delivery. We'll be tapping existing processes for sharing hours of operation between Facebook, Google and other sites, including [All&nbsp;The&nbsp;Places](https://www.alltheplaces.xyz/).
+We're creating an embeddable map widget for CSV data hosted on GitHub and Google Sheets to allow suppliers to promote when they are open for curbside pickup and&nbsp;delivery. We'll be tapping existing processes for sharing hours of operation, including [All&nbsp;The&nbsp;Places](https://www.alltheplaces.xyz/).
 
 For our Google Sheet backend, we're using the Code for Atlanta [Maps for US](https://mapsfor.us/) starter template.  
 
