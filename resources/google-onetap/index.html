@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Google One Tap Sample</title>
+<link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
+
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/common/navigation.js"></script>
+<link rel="stylesheet" href="../../css/community.css" />
+
+
+<!--
+    data-login_uri post causes:
+    405 - HTTP verb used to access this page is not allowed.
+-->
+<style>
+button {
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    letter-spacing: .25px;
+    padding-left:10px;
+    padding-right:10px;
+    min-width: 100px;
+    color: #fff;
+    border: 1px solid #f47d22;
+    background-color: #f47d22;
+}
+button:hover {
+    border: 1px solid #f36736 !important;
+    background-color: #f36736 !important;
+}
+</style>
+</head>
+
+<body>
+<div id="header" style="display:none"></div>
+<div style="height:60px"></div>
+
+<div class="content" style="padding-top: 0px">
+
+<script src="https://accounts.google.com/gsi/client"></script>
+
+<div id="g_id_onload"
+     data-client_id="573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"
+     data-auto_select="true"
+     data-login_uriXX="https://model.georgia.org"
+
+     data-your_own_param_1_to_login="any_value"
+     data-your_own_param_2_to_login="any_value2">
+</div>
+
+<button class="greenbutton g_id_signout">Sign Out</button>
+
+</div>
+
+</body>
