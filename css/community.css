@@ -45,7 +45,7 @@
 }
 
 * {
-  box-sizing: border-box;
+  box-sizingX: border-box;
 }
 html,body { /* both are needed for map height in iframe */
   height: 100%;
