@@ -158,16 +158,18 @@ switch(event.data.type) {
 
 // ONE TAP
 function handleCredentialResponse(notification) {
-    alert("handleCredentialResponse");
-
+    console.log("notification.credential():");
+    console.log(notification.credential);
+    //alert("handleCredentialResponse");
+    // Also  select_by: "auto"
     // How do we get the credential here?
 
     const clientId = "573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"; // Also below
     const config =  {
       response_type: 'permission',
       scope: 'CALENDAR_SCOPE',
-      client_id: clientId,
-      login_hint: credential.id,
+      client_id: notification.clientId,
+      login_hint: notification.credential,
       promt: 'none',
     }
     gapi.auth2.authorize(config, function(response) {
