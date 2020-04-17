@@ -197,6 +197,7 @@ function handleCredentialResponse(notification) {
     })
     */
 
+    document.getElementById('content').innerHTML = ""; // Clear existing
     listMajors();
     makeApiCall();
 }
@@ -327,8 +328,9 @@ function continueWithNextIdp(notification) {
           //}
           listMajors();
 
-
-          //makeApiCall();
+          // BUGBUG - This will cause an error if the user has not already authorized gsample Output
+          // and they then approve One-Tap
+          // makeApiCall();
         } else {
           authorizeButton.style.display = 'block';
           signoutButton.style.display = 'none';
