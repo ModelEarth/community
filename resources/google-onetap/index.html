@@ -69,20 +69,29 @@ Here's an <a href="../google-yolo">older example of One-Tap</a> that uses an iFr
 to position within page.
 <br><br>
 
-The Google One-Tap popup does not appear when you click refresh. 
-This may be how Google intends it to work.
+You'll need to be logged into the Google gmail account in another browser window 
+for the One-Tap popup to appear on this page.<br>
+
+If you click X in the popup, you'll need to clear your cookies and log into your gmail account again.
 <br><br>
 
-TO DO: Activate "Sign In" button to restore when hidden, or have it use regular Google sign in process.
+TO DO: Assign the "credential" object in the handleCredentialResponse function.<br><br>
+
+TO DO: Activate "Sign In" button when One-Tap is hidden because user is not logged into their gmail account.<br> 
+Then use the <a href="../../../crowdsource/gsample">authorize button process from this sample</a>.
 <br><br>
 
+TO DO: Hide the "Sign Out" button if they are not signed in.<br><br>
 
+The sign out button works if you have already been auto-logged in.<br><br>
+<button class="orangebutton g_id_signout">Sign Out</button>
+<br><br>
 
-Not yet activated:<br><br>
+Not yet activated (have this display the One-Tap popup if user is logged into Gmail:<br><br>
 
 <button class="g_id_signin" style="margin-right:5px">Sign In</button>
 
-<button class="orangebutton g_id_signout">Sign Out</button>
+
 
 
 <!-- Google API Client 
@@ -149,10 +158,31 @@ switch(event.data.type) {
 // ONE TAP
 function handleCredentialResponse(notification) {
     alert("handleCredentialResponse");
+
+    // How do we get the credential here?
+
+    const clientId = "573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"; // Also below
+    const config =  {
+      response_type: 'permission',
+      scope: 'CALENDAR_SCOPE',
+      client_id: clientId,
+      login_hint: credential.id,
+      promt: 'none',
+    }
+    gapi.auth2.authorize(config, function(response) {
+      // No need to `setToken`, it's done for you by auth2.
+      let calConfig = {discoveryDocs} // only of google calendar
+      window.gapi.client.init(calConfig).then(function() {
+        // then execute a calendar call:
+        window.gapi.client.calendar.events.list({'calendarId': 'primary'})
+      })
+    })
+
 }
 function continueWithNextIdp(notification) {
+
   if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-      console.log("Try Next provider if One Tap is not displayed or skipped.")
+      console.log("Try Next provider if One Tap is not displayed or skipped. You may need to log into your Google account.")
       alert("Not displayed reason: " + notification.getNotDisplayedReason());
   }
 }
