@@ -555,7 +555,7 @@ function showList(dp) {
   var products_array = [];
   var productcode_array = [];
 
-  $(".listTitle").append(dp.listTitle);
+  $(".listTitle").html(dp.listTitle);
 
   // Add checkboxes
   if (dp.search && $("#activeLayer").text() != dp.dataTitle) { // Only set when active layer changes, otherwise selection overwritten on change.
