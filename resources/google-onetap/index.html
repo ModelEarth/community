@@ -172,6 +172,7 @@ function handleCredentialResponse(notification) {
       login_hint: notification.credential,
       promt: 'none',
     }
+    /*
     gapi.auth2.authorize(config, function(response) {
       // No need to `setToken`, it's done for you by auth2.
       let calConfig = {DISCOVERY_DOCS} // only of google calendar
@@ -180,7 +181,7 @@ function handleCredentialResponse(notification) {
         //window.gapi.client.calendar.events.list({'calendarId': 'primary'})
       })
     })
-
+    */
 }
 function continueWithNextIdp(notification) {
 
@@ -213,7 +214,7 @@ function continueWithNextIdp(notification) {
 
 <h2>Copied from gsample</h2>
 
-
+<a href="../../../crowdsource/gsample">View gsample</a>
 
 Source: <a href="https://developers.google.com/sheets/api/quickstart/js">https://developers.google.com/sheets/api/quickstart/js</a><br><br>
 
@@ -245,7 +246,8 @@ Source: <a href="https://developers.google.com/sheets/api/quickstart/js">https:/
       var API_KEY = 'AIzaSyBMKgvChZs_lMzw65sRAJGDHSl-T3J0uvY'; // Browser Key
 
       // Array of API discovery doc URLs for APIs used by the quickstart
-      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4","https://people.googleapis.com/$discovery/rest?version=v1","https://www.googleapis.com/calendar/v3/users/me/calendarList"];
+      // ,"https://www.googleapis.com/calendar/v3/users/me/calendarList"
+      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4","https://people.googleapis.com/$discovery/rest?version=v1"];
 
       // Authorization scopes required by the API; multiple scopes can be
       // included, separated by spaces.
@@ -260,18 +262,151 @@ Source: <a href="https://developers.google.com/sheets/api/quickstart/js">https:/
        */
       function handleClientLoad() {
         gapi.load('client:auth2', initClient);
+        //gapi.load('client:auth2', initClientWorks);
       }
 
       /**
        *  Initializes the API client library and sets up sign-in state
        *  listeners.
        */
-      function initClient() {
+      function initClientWorks() {
         gapi.client.init({DISCOVERY_DOCS})
       }
 
-      function updateSigninStatus(isSignedIn) {
+      function initClient() {
+        gapi.client.init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: DISCOVERY_DOCS,
+          scope: SCOPES
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
 
+          // Listen for changes to current user.
+          //gapi.auth2.currentUser.listen(userChanged);
+
+          // Handle the initial sign-in state.
+          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+          authorizeButton.onclick = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+      }
+
+      var userChanged = function (user) {
+        console.log('User now: ', user);
+        googleUser = user;
+        updateGoogleUser();
+        document.getElementById('curr-user-cell').innerText =
+          JSON.stringify(user, undefined, 2);
+      };
+
+      /**
+       *  Called when the signed in status changes, to update the UI
+       *  appropriately. After a sign-in, the API is called.
+       */
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'block';
+
+          //if (auth2.isSignedIn.get()) {
+          /*
+            var profile = auth2.currentUser.get().getBasicProfile();
+            console.log('ID: ' + profile.getId());
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail());
+          */
+          //}
+          listMajors();
+          makeApiCall();
+        } else {
+          authorizeButton.style.display = 'block';
+          signoutButton.style.display = 'none';
+        }
+      }
+
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick(event) {
+        gapi.auth2.getAuthInstance().signIn();
+      }
+
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick(event) {
+        gapi.auth2.getAuthInstance().signOut();
+      }
+
+      /**
+       * Append a pre element to the body containing the given message
+       * as its text node. Used to display the results of the API call.
+       *
+       * @param {string} message Text to be placed in pre element.
+       */
+      function appendPre(message) {
+        var pre = document.getElementById('content');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
+
+      /**
+       * Print the names and majors of students in a sample spreadsheet:
+       * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+
+        Copy of above
+        https://docs.google.com/spreadsheets/d/1N8nVvIXhVeiWuxOph8Xrd-3gJTvTf2PX1n0-AAwAtpQ/edit?usp=sharing
+
+        mapsforus
+        1JDD36dOvy5TWsmfg0g4r8x9MMyuidRgpJAdDFD9HiTQ
+       * 
+       */
+      function listMajors() {
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1N8nVvIXhVeiWuxOph8Xrd-3gJTvTf2PX1n0-AAwAtpQ',
+          range: 'Class Data!A2:E',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            appendPre('Name, Major:');
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              // Print columns A and E, which correspond to indices 0 and 4.
+              appendPre(row[0] + ', ' + row[4]);
+            }
+          } else {
+            appendPre('No data found.');
+          }
+        }, function(response) {
+          appendPre('Error: ' + response.result.error.message);
+        });
+      }
+
+      // Load the API and make an API call.  Display the results on the screen.
+      function makeApiCall() {
+        gapi.client.people.people.get({
+          'resourceName': 'people/me',
+          'requestMask.includeField': 'person.names,person.photos'
+        }).then(function(resp) {
+          var p = document.createElement('p');
+          var name = resp.result.names[0].givenName;
+          var photo = 
+
+          p.appendChild(document.createTextNode('Hello, '+name+'!'));
+
+          var DOM_img = document.createElement("img");
+          DOM_img.src = resp.result.photos[0].url;
+          p.appendChild(DOM_img);
+          
+          document.getElementById('content').appendChild(p);
+        });
       }
 
     </script>
