@@ -53,9 +53,22 @@ button:hover {
 
 We're working toward allowing users to edit existing rows in a Google Sheet using REST/CRUD.<br><br>
 
-Try integrating One-Tap with our <a href="../../../crowdsource/gsample/">Google API Client sample</a> using the following 
+Try integrating <a href="https://developers.google.com/identity/one-tap/web/guides/handle-credential-responses-js-functions" target="ontap-docs">One-Tap</a> in the current page with our <a href="../../../crowdsource/gsample/">Google API Client sample</a> using the following 
 <a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a>.
 <br><br>
+
+Here's an <a href="../google-yolo">older example of One-Tap</a> that uses an iFrame to position within page.
+<br><br>
+
+Don't click the "X" in One-Tap popup. It won't appear again if you do.  (You'll need to clear cookies.) 
+<br><br>
+
+We need a "Sign In" button to restore when hidden.
+<br><br>
+
+<button class="greenbutton g_id_signout">Sign Out</button>
+
+
 
 <!-- Google API Client 
 <script defer src="https://smartlock.google.com/client"></script>
@@ -119,14 +132,17 @@ switch(event.data.type) {
 
 
 // ONE TAP
-  function continueWithNextIdp(notification) {
-      if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-          console.log("Try Next provider if One Tap is not displayed or skipped.")
-          alert("Not displayed reason: " + notification.getNotDisplayedReason());
-      }
+function handleCredentialResponse(notification) {
+    alert("handleCredentialResponse");
+}
+function continueWithNextIdp(notification) {
+  if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
+      console.log("Try Next provider if One Tap is not displayed or skipped.")
+      alert("Not displayed reason: " + notification.getNotDisplayedReason());
   }
-    // Set either the data-login_uri attribute or the data-callback attribute. 
-    // data-login_uri requires server page accepting posts.
+}
+// Set either the data-login_uri attribute or the data-callback attribute. 
+// data-login_uri requires server page accepting posts.
 </script>
 
 <div id="g_id_onload"
@@ -136,23 +152,11 @@ switch(event.data.type) {
      data-context="use"
      data-your_own_param_1_to_login="any_value"
      data-your_own_param_2_to_login="any_value2"
-     
+     data-callback="handleCredentialResponse"
      data-moment_callback="continueWithNextIdp"
-
      >
 </div>
 
-Here's an <a href="../google-yolo">older example of One-Tap</a> that uses an iFrame to position within page.
-<br><br>
-
-Don't click the "X" in One-Tap popup. It won't appear again if you do.  (You'll need to clear cookies.) 
-<br><br>
-
-We need a "Sign In" button to restore when hidden.
-<br><br>
-
-<button class="greenbutton g_id_signout">Sign Out</button>
 
 </div>
-
 </body>
