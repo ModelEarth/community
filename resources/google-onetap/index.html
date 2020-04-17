@@ -176,8 +176,8 @@ function handleCredentialResponse(notification) {
       // No need to `setToken`, it's done for you by auth2.
       let calConfig = {DISCOVERY_DOCS} // only of google calendar
       window.gapi.client.init(calConfig).then(function() {
-        // then execute a calendar call:
-        window.gapi.client.calendar.events.list({'calendarId': 'primary'})
+        // then execute a calendar call:  causes error  Cannot read property 'events' of undefined
+        //window.gapi.client.calendar.events.list({'calendarId': 'primary'})
       })
     })
 
@@ -249,6 +249,7 @@ Source: <a href="https://developers.google.com/sheets/api/quickstart/js">https:/
 
       // Authorization scopes required by the API; multiple scopes can be
       // included, separated by spaces.
+      // Additional calendar scopes here: https://developers.google.com/calendar/auth could add  https://www.googleapis.com/auth/calendar.readonly
       var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
       var authorizeButton = document.getElementById('authorize_button');
