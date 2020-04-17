@@ -33,10 +33,18 @@ button {
     padding-right:10px;
     min-width: 100px;
     color: #fff;
+    border: 1px solid #7dcc22;
+    background-color: #7dcc22;
+}
+button:hover {
+    border: 1px solid #67cc36 !important;
+    background-color: #67cc36 !important;
+}
+.orangebutton {
     border: 1px solid #f47d22;
     background-color: #f47d22;
 }
-button:hover {
+.orangebutton:hover {
     border: 1px solid #f36736 !important;
     background-color: #f36736 !important;
 }
@@ -57,17 +65,24 @@ Try integrating <a href="https://developers.google.com/identity/one-tap/web/guid
 <a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a>.
 <br><br>
 
-Here's an <a href="../google-yolo">older example of One-Tap</a> that uses an iFrame to position within page.
+Here's an <a href="../google-yolo">older example of One-Tap</a> that uses an iFrame 
+to position within page.
 <br><br>
 
-Don't click the "X" in One-Tap popup. It won't appear again if you do.  (You'll need to clear cookies.) 
+The Google One-Tap popup does not appear when you click refresh. 
+This may be how Google intends it to work.
 <br><br>
 
-We need a "Sign In" button to restore when hidden.
+TO DO: Activate "Sign In" button to restore when hidden, or have it use regular Google sign in process.
 <br><br>
 
-<button class="greenbutton g_id_signout">Sign Out</button>
 
+
+Not yet activated:<br><br>
+
+<button class="g_id_signin" style="margin-right:5px">Sign In</button>
+
+<button class="orangebutton g_id_signout">Sign Out</button>
 
 
 <!-- Google API Client 
