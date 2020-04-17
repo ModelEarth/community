@@ -122,7 +122,7 @@ switch(event.data.type) {
   function continueWithNextIdp(notification) {
       if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
           console.log("Try Next provider if One Tap is not displayed or skipped.")
-          alert(notification.getNotDisplayedReason());
+          alert("Not displayed reason: " + notification.getNotDisplayedReason());
       }
   }
     // Set either the data-login_uri attribute or the data-callback attribute. 
