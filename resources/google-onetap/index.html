@@ -5,8 +5,14 @@
 <title>Google One Tap Sample</title>
 <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-<script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 
+<script>
+if (window.location.protocol != 'https:' && location.host.indexOf('localhost') < 0) {
+    location.href = location.href.replace("http://", "https://");
+}
+</script>
+
+<script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../js/common/common.js"></script>
 <script type="text/javascript" src="../../js/common/navigation.js"></script>
 <link rel="stylesheet" href="../../css/community.css" />
@@ -43,16 +49,107 @@ button:hover {
 
 <div class="content" style="padding-top: 0px">
 
+<h1>Combine Google API Client for Javascript with One-Tap</h1>
+
+We're working toward allowing users to edit existing rows in a Google Sheet using REST/CRUD.<br><br>
+
+Try integrating One-Tap with our <a href="../../../crowdsource/gsample/">Google API Client sample</a> using the following 
+<a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a>.
+<br><br>
+
+<!-- Google API Client 
+<script defer src="https://smartlock.google.com/client"></script>
+-->
+
 <script src="https://accounts.google.com/gsi/client"></script>
+<script>
+
+// How do we get credential.id for the following?
+/*
+const clientId = "573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"; // Also below
+const config =  {
+  response_type: 'permission',
+  scope: 'CALENDAR_SCOPE',
+  client_id: clientId,
+  login_hint: credential.id,
+  promt: 'none',
+}
+gapi.auth2.authorize(config, function(response) {
+  // No need to `setToken`, it's done for you by auth2.
+  let calConfig = {discoveryDocs} // only of google calendar
+  window.gapi.client.init(calConfig).then(function() {
+    // then execute a calendar call:
+    window.gapi.client.calendar.events.list({'calendarId': 'primary'})
+  })
+})
+*/
+
+
+
+// From Yolo - not yet working - delete unless second iFrame is added.
+window.addEventListener('message', (event) => {
+console.log('addEventListener message');
+const iframeElt = document.getElementById('google-iframe');
+
+switch(event.data.type) {
+  case 'verifyPing':
+    // This part handles the initial handshake by the Google Yolo iframe.
+    // It is sent by OpenYOLO https://github.com/openid/OpenYOLO-Web/blob/dc841704619d7801da0b860c91953ff730fca07f/ts/protocol/post_messages.ts#L27
+    event.source.postMessage({
+      type: 'verifyAck',
+      data: event.data.data
+    }, '*');
+    break;
+  case 'credential':
+    // The user selected a credential.
+    console.log('Received credential!', event.data.credential);
+    break;
+  case 'error':
+    // An error happened.
+    console.log('Error:', event.data.error);
+    break;
+  case 'height':
+    // Update the parent <iframe> height to match GoogleYolo <iframe> height
+    iframeElt.style.height = event.data.height + 'px';
+    break;
+  default:
+    // Do nothing.
+}
+});
+
+
+// ONE TAP
+  function continueWithNextIdp(notification) {
+      if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
+          console.log("Try Next provider if One Tap is not displayed or skipped.")
+          alert(notification.getNotDisplayedReason());
+      }
+  }
+    // Set either the data-login_uri attribute or the data-callback attribute. 
+    // data-login_uri requires server page accepting posts.
+</script>
 
 <div id="g_id_onload"
      data-client_id="573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"
      data-auto_select="true"
-     data-login_uriXX="https://model.georgia.org"
-
+     
+     data-context="use"
      data-your_own_param_1_to_login="any_value"
-     data-your_own_param_2_to_login="any_value2">
+     data-your_own_param_2_to_login="any_value2"
+     
+     data-moment_callback="continueWithNextIdp"
+
+     >
 </div>
+
+Here's an <a href="../google-yolo">older example of One-Tap</a> that uses an iFrame to position within page.
+<br><br>
+
+Don't click the "X" in One-Tap popup. It won't appear again if you do.  (You'll need to clear cookies.) 
+<br><br>
+
+We need a "Sign In" button to restore when hidden.
+<br><br>
 
 <button class="greenbutton g_id_signout">Sign Out</button>
 
