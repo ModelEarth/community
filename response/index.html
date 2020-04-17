@@ -1180,6 +1180,15 @@ var map1 = {};
 function loadMap1() { // Also called by search-filters.js
   console.log('loadMap1')
   let dp1 = {}
+  // Might use when height it 280px
+  dp1.latitude = 31.6074;
+  dp1.longitude = -81.8854;
+
+  // Georgia
+  dp1.latitude = 32.9;
+  dp1.longitude = -83.4;
+  dp1.zoom = 7;
+  dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
   if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
     dp1.dataset = "/smartdata/resources/suppliers/GEMA-Manufacturers-and-Distributors-Randomized.csv";
 
@@ -1193,14 +1202,14 @@ function loadMap1() { // Also called by search-filters.js
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
     dp1.listLocation = false;
-  } else {
+  } else if (param["show"] == "farmfresh") {
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     dp1.name = "Farm Fresh Prepared Food";
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";
     dp1.search = {"In Market Name": "MarketName"};
-    dp1.titleColumn = "marketname";
     dp1.nameColumn = "marketname";
+    dp1.titleColumn = "marketname";
     dp1.searchFields = "marketname";
     dp1.addressColumn = "street";
     dp1.valueColumn = "Prepared";
@@ -1209,18 +1218,25 @@ function loadMap1() { // Also called by search-filters.js
     dp1.latColumn = "y";
     dp1.lonColumn = "x";
     dp1.stateColumn = "state";
+  } else {
+    // Atlanta
+    dp1.latitude = 33.76;
+    dp1.longitude = -84.3880;
+    dp1.zoom = 14;
+
+    // CURBSIDE PICKUP
+    dp1.dataset = "/community/places/usa/ga/restaurants/atlanta-coastapp.csv";
+    dp1.dataTitle = "Curbside Pickup";
+    // https://coastapp.com/takeoutcovid/atl/
+    dp1.markerType = "google";
+    dp1.search = {"In Restaurant Name": "Name", "In Description": "Description", "In City Name": "City", "In Address" : "Address"};
+    dp1.nameColumn = "Name";
+    dp1.titleColumn = "Description";
+    dp1.addressColumn = "Address";
+    dp1.valueColumnLabel = "Delivery";
+    dp1.valueColumn = "Delivery";
+    dp1.listLocation = true;
   }
-  // Might use when height it 280px
-  dp1.latitude = 31.6074;
-  dp1.longitude = -81.8854;
-
-  // Georgia
-  dp1.latitude = 32.9;
-  dp1.longitude = -83.4;
-  dp1.zoom = 7;
-
-  
-  dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
 
   $("#detaillist").text(""); // Clear prior results
   map1 = loadFromCSV('map1', dp1, function(dp) { // Called on success
