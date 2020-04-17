@@ -1007,19 +1007,14 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <section id="data" class="eWidget" style="overflow:auto">
 <div class="content litePanel displayOnload" style="display:none; padding-top:35px; padding-bottom:10px">
 
-
-
-
-
   <div id="flexwrapper">
     <div id="hublist">
       <div id="hublist-padding">
         
-
-        
+        <h2 class="listTitle" style="font-size: 24px; margin:0px; font-weight: 600"></h2><br>
 
         <div style="display:none" class="suppliers">
-          <h2 style="font-size: 24px; margin:0px; font-weight: 600">Georgia COVID-19 Response</h2><br>
+          
 
           <div id="legendLingsHolder" class="localonly" style="display:none;margin-bottom: 20px">
             <div class="legendLink">
@@ -1190,6 +1185,8 @@ function loadMap1() { // Also called by search-filters.js
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
   if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
+    dp1.listTitle = "Georgia COVID-19 Response";
+    dp1.listInfo = "Select a category to filter your results.";
     dp1.dataset = "/smartdata/resources/suppliers/GEMA-Manufacturers-and-Distributors-Randomized.csv";
 
     dp1.dataTitle = "Manufacturers and Distributors";
@@ -1203,8 +1200,9 @@ function loadMap1() { // Also called by search-filters.js
     dp1.lonColumn = "lon_rand";
     dp1.listLocation = false;
   } else if (param["show"] == "farmfresh") {
+    dp1.listTitle = "Farm Fresh Prepared Food";
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
-    dp1.name = "Farm Fresh Prepared Food";
+    dp1.name = "Local Farms"; // To remove
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";
     dp1.search = {"In Market Name": "MarketName"};
@@ -1225,14 +1223,17 @@ function loadMap1() { // Also called by search-filters.js
     dp1.zoom = 14;
 
     // CURBSIDE PICKUP
+    dp1.listTitle = "Atlanta Restaurants Providing Takeout and Delivery";
+    dp1.listInfo = "Data provided by coastapp.com. <a href='https://coastapp.com/takeoutcovid/atl/' target='_blank'>Make Updates</a>";
     dp1.dataset = "/community/places/usa/ga/restaurants/atlanta-coastapp.csv";
     dp1.dataTitle = "Curbside Pickup";
-    // https://coastapp.com/takeoutcovid/atl/
+    // 
     dp1.markerType = "google";
     dp1.search = {"In Restaurant Name": "Name", "In Description": "Description", "In City Name": "City", "In Address" : "Address"};
     dp1.nameColumn = "Name";
     dp1.titleColumn = "Description";
-    dp1.addressColumn = "Address";
+    //dp1.addressColumn = "Address";
+    //dp1.website = "Link";
     dp1.valueColumnLabel = "Delivery";
     dp1.valueColumn = "Delivery";
     dp1.listLocation = true;

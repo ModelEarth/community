@@ -463,15 +463,35 @@ function addIcons(dp,map) {
 
     // MAP POPUP
     var output = "<b>" + element[dp.nameColumn] + "</b><br>";
-    if (element[dp.addressColumn]) { output +=  element[dp.addressColumn] + "<br>"; }
-    if (element.city || element.state || element.zip) { 
-      if (element.city) {
-        output += element.city + ", ";
+    if (element[dp.addressColumn]) {
+      output +=  element[dp.addressColumn] + "<br>";
+    } else if (element.address || element.city || element.state || element.zip) { 
+      if (element.address) {
+        output += element.address + "<br>";
       }
-      output += element.state + " " + element.zip + "<br>";
+      if (element.city) {
+        output += element.city;
+      }
+      if (element.state || element.zip) {
+        output += ", ";
+      }
+      if (element.state) {
+        output += element.state + " ";
+      }
+      if (element.zip) {
+        output += element.zip;
+      }
+      output += "<br>";
     }
+
     if (element.phone || element.phone_afterhours) {
-      output += element.phone + " " + element.phone_afterhours + "<br>";
+      if (element.phone) {
+        output += element.phone + " ";
+      }
+      if (element.phone_afterhours) {
+       output += element.phone_afterhours;
+      }
+      output += "<br>";
     }
     if (element[dp.valueColumn]) {
       if (dp.valueColumnLabel) {
@@ -534,6 +554,8 @@ function showList(dp) {
   var productcodes = "";
   var products_array = [];
   var productcode_array = [];
+
+  $(".listTitle").append(dp.listTitle);
 
   // Add checkboxes
   if (dp.search && $("#activeLayer").text() != dp.dataTitle) { // Only set when active layer changes, otherwise selection overwritten on change.
@@ -815,42 +837,46 @@ function showList(dp) {
         output += "<b>Items:</b> " + element.items + "<br>";
       }
       
-      //output += element.address + ", ";
-
-      if (element.city) {
-        output += "<b>Location:</b> " + element.city + ", " + element.state;
+      if (element[dp.addressColumn]) { 
+          output +=  element[dp.addressColumn] + "<br>"; 
+      } else if (element.address || element.city || element.state || element.zip) { 
+        output += "<b>Location:</b> ";
+        if (element.address) {
+          output += element.address + "<br>";
+        }
+        if (element.city) {
+          output += element.city;
+        }
+        if (element.state || element.zip) {
+          output += ", ";
+        }
+        if (element.state) {
+          output += element.state + " ";
+        }
         if (element.zip) {
-          output += " " + element.zip + "<br>";
-        } else {
+          output += element.zip;
+        }
+        if (element.city || element.state || element.zip) {
           output += "<br>";
         }
       }
-      /*
-      if (element.phone || element.phone_afterhours) {
-       output += element.phone + " " + element.phone_afterhours + "<br>";
-      }
-      
-       
-      */
 
-      
       if (element.phone || element.phone_afterhours) {
-        output += element.phone + " " + element.phone_afterhours + "<br>";
+        if (element.phone) {
+          output += element.phone + " ";
+        }
+        if (element.phone_afterhours) {
+         output += element.phone_afterhours;
+        }
+        output += "<br>";
       }
-      
       if (element.schedule) {
         output += "<b>Hours:</b> " + element.schedule + "<br>";
       }
 
       //alert(dp.listLocation)
       if (dp.listLocation != false) {
-        if (element[dp.addressColumn]) { output +=  element[dp.addressColumn] + "<br>"; }
-        if (element.city || element.state || element.zip) { 
-          if (element.city) {
-            output += element.city + ", ";
-          }
-          output += element.state + " " + element.zip + "<br>";
-        }
+        
         if (element[dp.latColumn]) {
             output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a>";
         }
@@ -872,11 +898,6 @@ function showList(dp) {
         output += "<br>";
       }
 
-      
-      if (element.phone || element.phone_afterhours) {
-        output += element.phone + " " + element.phone_afterhours + "<br>";
-      }
-
       if (element.county) {
         output += element.county + " County<br>";
       }
@@ -893,8 +914,6 @@ function showList(dp) {
       output += "</div>"; // End Lower
       output += "<div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
 
-      
-
       $("#detaillist").append(output);
     }
     
@@ -905,11 +924,11 @@ function showList(dp) {
       //alert("show") // was twice BUGBUG
       //  (dataSet.length - 1) 
       if (dataMatchCount == count) {
-        $("#dataList").html(dataMatchCount + " records. Select a category to filter your results.<br>");
+        $("#dataList").html(dataMatchCount + " records. " + dp.listInfo + "<br>");
       } else if (count==1) {
-        $("#dataList").html(dataMatchCount + " matching service provider within " + count + " records.<br>");
+        $("#dataList").html(dataMatchCount + " matching within " + count + " records. " + dp.listInfo + "<br>");
       } else {
-        $("#dataList").html(dataMatchCount + " matching service providers within " + count + " records.<br>");
+        $("#dataList").html(dataMatchCount + " matching within " + count + " records. " + dp.listInfo + "<br>");
       }
       $("#resultsPanel").show();
       $("#dataList").show();
