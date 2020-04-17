@@ -174,7 +174,7 @@ function handleCredentialResponse(notification) {
     }
     gapi.auth2.authorize(config, function(response) {
       // No need to `setToken`, it's done for you by auth2.
-      let calConfig = {discoveryDocs} // only of google calendar
+      let calConfig = {DISCOVERY_DOCS} // only of google calendar
       window.gapi.client.init(calConfig).then(function() {
         // then execute a calendar call:
         window.gapi.client.calendar.events.list({'calendarId': 'primary'})
@@ -207,4 +207,79 @@ function continueWithNextIdp(notification) {
 
 
 </div>
+
+
+
+
+<h2>Copied from gsample</h2>
+
+
+
+Source: <a href="https://developers.google.com/sheets/api/quickstart/js">https://developers.google.com/sheets/api/quickstart/js</a><br><br>
+
+    Google Sheet: <a href="https://docs.google.com/spreadsheets/d/1JDD36dOvy5TWsmfg0g4r8x9MMyuidRgpJAdDFD9HiTQ/edit?usp=sharing">Google Sheet Recycling-mapsfor.us</a>
+    <br><br>
+
+    Valid domains:<br>
+    https://model.earth/crowdsource/gsample/<br>
+    https://model.georgia.org/crowdsource/gsample/<br>
+    http://localhost:8887/crowdsource/gsample/<br><br>
+
+    Note, the "apiKey: API_KEY," line is optional.<br><br>
+
+    Enable People API
+    https://console.developers.google.com/apis/api/people.googleapis.com/overview
+    <hr>
+
+    <p>Google Sheets API Quickstart</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+    <script type="text/javascript">
+      // Client ID and API key from the Developer Console
+      var CLIENT_ID = '573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyBMKgvChZs_lMzw65sRAJGDHSl-T3J0uvY'; // Browser Key
+
+      // Array of API discovery doc URLs for APIs used by the quickstart
+      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4","https://people.googleapis.com/$discovery/rest?version=v1","https://www.googleapis.com/calendar/v3/users/me/calendarList"];
+
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
+
+      var authorizeButton = document.getElementById('authorize_button');
+      var signoutButton = document.getElementById('signout_button');
+
+      /**
+       *  On load, called to load the auth2 library and API client library.
+       */
+      function handleClientLoad() {
+        gapi.load('client:auth2', initClient);
+      }
+
+      /**
+       *  Initializes the API client library and sets up sign-in state
+       *  listeners.
+       */
+      function initClient() {
+        gapi.client.init({DISCOVERY_DOCS})
+      }
+
+      function updateSigninStatus(isSignedIn) {
+
+      }
+
+    </script>
+
+<!-- For gapi -->
+<script async defer src="https://apis.google.com/js/api.js"
+  onload="this.onload=function(){};handleClientLoad()"
+  onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+
 </body>
+</html>
