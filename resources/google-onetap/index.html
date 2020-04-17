@@ -55,11 +55,21 @@ button:hover {
 <div id="header" style="display:none"></div>
 <div style="height:60px"></div>
 
+<div style="float:left; border:1px solid #ccc; padding:20px; margin-right:20px; max-width:150px">
+    <p><b>gsample Output</b> - After authorizong, loads user name and image before One-Tap when hitting reload.</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+</div>
+
 <div class="content" style="padding-top: 0px">
 
 <h1>Combine Google API Client for Javascript with One-Tap</h1>
 
-We're working toward allowing users to edit existing rows in a Google Sheet using REST/CRUD.<br><br>
+We're working toward allowing users to edit existing rows in a Google Sheet using REST/CRUD with a single-page-app.<br><br>
 
 Try integrating <a href="https://developers.google.com/identity/one-tap/web/guides/handle-credential-responses-js-functions" target="ontap-docs">One-Tap</a> in the current page with our <a href="../../../crowdsource/gsample/">Google API Client sample</a> using the following 
 <a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a>.
@@ -212,33 +222,18 @@ function continueWithNextIdp(notification) {
 
 
 
-<h2>Copied from gsample</h2>
+<h2 style="clear:both; padding-top:20px">Copied from gsample</h2>
 
 <a href="../../../crowdsource/gsample">View gsample</a>
-
-Source: <a href="https://developers.google.com/sheets/api/quickstart/js">https://developers.google.com/sheets/api/quickstart/js</a><br><br>
-
-    Google Sheet: <a href="https://docs.google.com/spreadsheets/d/1JDD36dOvy5TWsmfg0g4r8x9MMyuidRgpJAdDFD9HiTQ/edit?usp=sharing">Google Sheet Recycling-mapsfor.us</a>
-    <br><br>
-
+<br><br>
     Valid domains:<br>
     https://model.earth/crowdsource/gsample/<br>
     https://model.georgia.org/crowdsource/gsample/<br>
     http://localhost:8887/crowdsource/gsample/<br><br>
 
-    Note, the "apiKey: API_KEY," line is optional.<br><br>
-
-    Enable People API
-    https://console.developers.google.com/apis/api/people.googleapis.com/overview
     <hr>
 
-    <p>Google Sheets API Quickstart</p>
-
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize_button" style="display: none;">Authorize</button>
-    <button id="signout_button" style="display: none;">Sign Out</button>
-
-    <pre id="content" style="white-space: pre-wrap;"></pre>
+    
 
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
