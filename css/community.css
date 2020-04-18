@@ -45,7 +45,7 @@
 }
 
 * {
-  box-sizingX: border-box;
+  box-sizing: border-box;
 }
 html,body { /* both are needed for map height in iframe */
   height: 100%;
@@ -72,7 +72,7 @@ body {
   display:block !important; /* hidden until css loaded */
 }
 .content {
-  max-width: 1020px;
+  max-width: 1140px;
   margin:0 auto;
   padding-top: 20px;
   padding-leftX: 60px;
@@ -609,7 +609,7 @@ iframe {
   display: inline-block;
   line-height: 0px;
   padding: 11px 3px;
-  width:17px;
+  width: 27px;
   position: relative;
 }
 .hideMenu:hover {
@@ -619,12 +619,12 @@ iframe {
 .hideMenuInner {
   position:absolute;
   line-height:0px;
-  top:1px;
-  left:3px;
-  color:#999;
+  top:2px;
+  left:4px;
+  color:#555;
   display: none;
 
-  font-size: 22px;
+  font-size: 20px;
   display: inline-block;
 
   line-height: 1;
