@@ -60,7 +60,7 @@ button:hover {
 
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize_button" style="display: none;">Authorize</button>
-    <button id="signout_button" style="display: none;">Sign Out</button>
+    <button id="signout_button" class="orangebutton" style="display: none;">Sign Out</button>
 
     <pre id="content" style="white-space: pre-wrap;"></pre>
 </div>
@@ -69,15 +69,17 @@ button:hover {
 
 <h1>Combine Google API Client for Javascript with One-Tap</h1>
 
-We're working toward allowing users to edit existing rows in a Google Sheet using REST/CRUD with a single-page-app.<br><br>
-
-Try integrating <a href="https://developers.google.com/identity/one-tap/web/guides/handle-credential-responses-js-functions" target="ontap-docs">One-Tap</a> in the current page with our <a href="../../../crowdsource/gsample/">Google API Client sample</a> using the following 
-<a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a>.
+<a href="https://developers.google.com/identity/one-tap/web/guides/handle-credential-responses-js-functions" target="ontap-docs">One-Tap</a> is included in the current page with a <a href="../../../crowdsource/gsample/">Google API Client sample</a>. 
+ This 
+<a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a> post describes some of the timing issues.
 <br><br>
 
-Here's an <a href="../google-yolo">older example of One-Tap</a> that uses an iFrame 
+Here's an <a href="../google-yolo">older example of One-Tap</a> by Zapier that uses an iFrame 
 to position within page.
 <br><br>
+
+We're working toward allowing users to edit existing rows in a Google Sheet using REST/CRUD with a single-page-app.<br><br>
+
 
 You'll need to be logged into the Google gmail account in another browser window 
 for the One-Tap popup to appear on this page.<br>
@@ -91,18 +93,22 @@ This could have additional insight:
 <a href="https://codelabs.developers.google.com/codelabs/credential-management-api/index.html?index=..%2F..index#3">Store credential on registration</a><br><br>
 -->
 
-TO DO: Display user name and image following auto-login by One Tap.<br>
-Currently user name and image only appear 
+TO DO: <br>
+Currently the user name and image only appear 
 if the user has authorized via gsample (displayed to the left).<br>
-Hit reload after authorizing to see user name and image to left.<br><br>
+Hit reload after authorizing to see user name and image to left.
+Try to display the user name and image following auto-login by One Tap. (This may not be possible since one provides auth and the other client apporoval.)
+<br><br>
 
-TO DO: Hide the "Sign Out" button if they are not signed in.<br><br>
+TO DO: Hide the "Sign Out" button if the user is not signed in via One-Tap.<br><br>
 
 The sign out button works if you have already been auto-logged in.<br><br>
 <button class="orangebutton g_id_signout">Sign Out</button>
 <br><br>
 
-Not yet activated (have this display the One-Tap popup if user is logged into Gmail:<br><br>
+TO DO: The "Sign In" button below is not yet activated.
+Have this display the One-Tap popup after the user has clicked the X in the One-Tap popup.  
+The message "suppressed_by_user" is triggered in an alert within this page after clicking the X. You can clear recent cookies to restore the One-Tap popup.<br><br>
 
 <button class="g_id_signin" style="margin-right:5px">Sign In</button>
 
