@@ -83,7 +83,7 @@ We're working toward allowing users to edit existing rows in a Google Sheet usin
 You'll need to be logged into the Google gmail account in another browser window 
 for the One-Tap popup to appear on this page.<br>
 
-If you click X in the popup, you'll need to clear your cookies and log into your gmail account again.
+If you click X in the popup, you'll need to clear your cookies and log into your gmail account again for the popup to appear.
 <br><br>
 
 <!--
@@ -92,25 +92,28 @@ This could have additional insight:
 <a href="https://codelabs.developers.google.com/codelabs/credential-management-api/index.html?index=..%2F..index#3">Store credential on registration</a><br><br>
 -->
 
-TO DO: <br>
-Currently the user name and image only appear 
-if the user has authorized via Quickstart (displayed to the left).<br>
-Hit reload after authorizing to see user name and image to left.
-Try to display the user name and image following auto-login by One Tap. (This may not be possible since one provides auth and the other client apporoval.)
-<br><br>
-
-TO DO: Uncomment the second makeApiCall() function so the user name and image appears when the user has clicked the "Authorize" button without 
-using One-Tap. Modify the script to prevent error. 
+1. TO DO: Uncomment the second makeApiCall() function so the user name and image appears when the user has clicked the "Authorize" button without 
+using One-Tap. Modify the script to prevent the error. 
 See <a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a> post describing the timing issue.
 <br><br>
 
-TO DO: Hide the "Sign Out" button below if the user is not signed in via One-Tap.<br><br>
+2. TO DO: Currently the user name and image only appear 
+if the user has authorized via Quickstart (displayed to the left).<br>
+Hit reload after authorizing to see user name and image appear on the left.
+Try to display the user name and image following auto-login only by One-Tap, without authoizing on the left. 
+Use the notification.clientId returned by One-Tap.
+<!--(This may not be possible since One-Tap provides auth and the other client apporoval.)-->
+<br><br>
+
+
+
+3. TO DO: Hide the "Sign Out" button below if the user is not signed in via One-Tap.<br><br>
 
 The sign out button works if you have already been auto-logged in.<br><br>
 <button class="orangebutton g_id_signout">Sign Out</button>
 <br><br>
 
-TO DO: The "Sign In" button below is not yet activated.
+4. TO DO: The "Sign In" button below is not yet activated.
 Have this display the One-Tap popup after the user has clicked the X in the One-Tap popup.  
 The message "suppressed_by_user" is triggered in an alert within this page after clicking the X and hitting reload. 
 You can clear recent cookies to restore the One-Tap popup. Log back in to GMail after clearing recent cookies.<br><br>
