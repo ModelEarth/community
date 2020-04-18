@@ -99,7 +99,12 @@ Hit reload after authorizing to see user name and image to left.
 Try to display the user name and image following auto-login by One Tap. (This may not be possible since one provides auth and the other client apporoval.)
 <br><br>
 
-TO DO: Hide the "Sign Out" button if the user is not signed in via One-Tap.<br><br>
+TO DO: Uncomment the second makeApiCall() function so the user name and image appears when the user has clicked the "Authorize" button without 
+using One-Tap. Modify the script to prevent error. See <a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a> post describes some of the timing issues. 
+for timing issues.
+<br><br>
+
+TO DO: Hide the "Sign Out" button below if the user is not signed in via One-Tap.<br><br>
 
 The sign out button works if you have already been auto-logged in.<br><br>
 <button class="orangebutton g_id_signout">Sign Out</button>
@@ -107,7 +112,8 @@ The sign out button works if you have already been auto-logged in.<br><br>
 
 TO DO: The "Sign In" button below is not yet activated.
 Have this display the One-Tap popup after the user has clicked the X in the One-Tap popup.  
-The message "suppressed_by_user" is triggered in an alert within this page after clicking the X and hitting reload. You can clear recent cookies to restore the One-Tap popup.<br><br>
+The message "suppressed_by_user" is triggered in an alert within this page after clicking the X and hitting reload. 
+You can clear recent cookies to restore the One-Tap popup. Log back in to GMail after clearing recent cookies.<br><br>
 
 <button class="g_id_signin" style="margin-right:5px">Sign In</button>
 
@@ -210,7 +216,7 @@ function continueWithNextIdp(notification) {
 
   if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
       console.log("Try Next provider if One Tap is not displayed or skipped. You may need to log into your Google account.")
-      alert("Not displayed reason: " + notification.getNotDisplayedReason());
+      console.log("Not displayed reason: " + notification.getNotDisplayedReason());
   }
 }
 // Set either the data-login_uri attribute or the data-callback attribute. 
