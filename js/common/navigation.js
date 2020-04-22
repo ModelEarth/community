@@ -161,11 +161,25 @@ $(document).ready(function(){
 		  }
 		});
 
+		// Alternative to flaky $(this).scrollTop()+topMenuHeight; // this is the window
+		function getScrollTop(){
+		    if(typeof pageYOffset!= 'undefined'){
+		        //most browsers except IE before #9
+		        return pageYOffset;
+		    }
+		    else{
+		        var B= document.body; //IE 'quirks'
+		        var D= document.documentElement; //IE with doctype
+		        D= (D.clientHeight)? D: B;
+		        return D.scrollTop;
+		    }
+		}
+
 		// HIGHLIGHT SIDE NAVIGATION ON SCROLL
 		function currentSideID() {
 			var topMenuHeight = 150;
-		  	// Get container scroll position
-			var fromTop = $(this).scrollTop()+topMenuHeight; // this is the window
+			// Get container scroll position
+			var fromTop = getScrollTop()+topMenuHeight; // this is the window
 			//console.log('fromTop ' + fromTop);
 			// Get id of current scroll item
 			var cur = scrollItems.map(function(){
