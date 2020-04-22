@@ -161,9 +161,10 @@ $(document).ready(function(){
 		  }
 		});
 
+		/*
 		// Alternative to flaky $(this).scrollTop()+topMenuHeight; // this is the window
 		function getScrollTop(){
-		    if(typeof pageYOffset!= 'undefined'){
+		    if(typeof pageYOffset != 'undefined'){
 		        //most browsers except IE before #9
 		        return pageYOffset;
 		    }
@@ -174,12 +175,14 @@ $(document).ready(function(){
 		        return D.scrollTop;
 		    }
 		}
-
+		*/
+		
 		// HIGHLIGHT SIDE NAVIGATION ON SCROLL
 		function currentSideID() {
 			var topMenuHeight = 150;
+			var scrollTop = pageYOffset || (document.documentElement.clientHeight ? document.documentElement.scrollTop : document.body.scrollTop) || 0;
 			// Get container scroll position
-			var fromTop = getScrollTop()+topMenuHeight; // this is the window
+			var fromTop = scrollTop+topMenuHeight; // this is the window
 			//console.log('fromTop ' + fromTop);
 			// Get id of current scroll item
 			var cur = scrollItems.map(function(){
