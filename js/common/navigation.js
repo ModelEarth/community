@@ -176,11 +176,11 @@ $(document).ready(function(){
 		    }
 		}
 		*/
-		
+
 		// HIGHLIGHT SIDE NAVIGATION ON SCROLL
 		function currentSideID() {
+			var scrollTop = window.pageYOffset || (document.documentElement.clientHeight ? document.documentElement.scrollTop : document.body.scrollTop) || 0;
 			var topMenuHeight = 150;
-			var scrollTop = pageYOffset || (document.documentElement.clientHeight ? document.documentElement.scrollTop : document.body.scrollTop) || 0;
 			// Get container scroll position
 			var fromTop = scrollTop+topMenuHeight; // this is the window
 			//console.log('fromTop ' + fromTop);
