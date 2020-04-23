@@ -112,36 +112,6 @@ function updateHash(addToHash) {
 //var str = jQuery.param( params );
 //alert( str ); // Returns:  width=1680&height=1050
 
-function loadMarkdown(pagePath, divID, target) {
-
-  // Get the levels below root
-  let foldercount = (location.pathname.split('/').length - 1); // - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0) // Removed because ending with slash or filename does not effect levels. Increased -1 to -2.
-  foldercount = foldercount - 2;
-  let climbcount = foldercount;
-  if(location.host.indexOf('localhost') >= 0) {
-    climbcount = foldercount - 0;
-  }
-  let climbpath = "";
-  for (let i = 0; i < climbcount; i++) {
-    climbpath += "../";
-  }
-  d3.text(pagePath).then(function(data) {
-    var converter = new showdown.Converter({tables:true}),
-    html = converter.makeHtml(data);
-    
-    document.getElementById(divID).innerHTML = html;
-
-    // To do: apply to html parameter above rather than DOM.
-    if (pagePath.indexOf('../') >= 0) { // If .md file is not in the current directory
-      $("#" + divID + " a[href]").each(function() {
-
-        if($(this).attr("href").toLowerCase().indexOf("http") < 0){
-            $(this).attr("href", climbpath + $(this).attr('href'));
-        }
-      })
-    }
-  });
-}
 function consoleLog(text,value) {
 
   $("#ds_command").show();
