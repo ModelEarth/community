@@ -1211,8 +1211,8 @@ function loadMap1() { // Also called by search-filters.js
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
     dp1.listLocation = false;
-  } else if (param["show"] == "farmfresh") {
-    dp1.listTitle = "Farm Fresh Prepared Food";
+  } else if (param["show"] == "produce") {
+    dp1.listTitle = "USDA Farm Produce";
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     dp1.name = "Local Farms"; // To remove
     dp1.dataTitle = "Farm Fresh Produce";
@@ -1228,6 +1228,8 @@ function loadMap1() { // Also called by search-filters.js
     dp1.latColumn = "y";
     dp1.lonColumn = "x";
     dp1.stateColumn = "state";
+
+    dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery</span>";
   } else {
     // Atlanta
     dp1.latitude = 33.76;
@@ -1323,7 +1325,7 @@ if (1==2) {
 
 $(document).ready(function () {
 
-  if (param["show"] == "mockup") {
+  if (param["show"] == "mockup" || param["mockup"]) {
     var div = $("<div />", {
         html: '<style>.mock-up{display: block !important;}</style>'
       }).appendTo("body");
