@@ -29,7 +29,7 @@ The new <a href="../io/charts/sector_list_with_impact_chart.html#sectors=312120,
 
 1. Display the mid-size indicator name on charts. - DONE
 2. Use only half the page for the text and horizontal bars. - DONE
-3. Display a score (0 to 100) on each bar.
+3. Display a relative score (0 to 100) by each bar.
 4. Use the same impact bar chart with the following:
 
 - Statewide Impact (includes Heatmap)
