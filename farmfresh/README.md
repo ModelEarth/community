@@ -1,6 +1,6 @@
 # Farm Fresh Data
 
-We're using Python in [scraper](scraper) to pull and merge locations from the national USDA dataset.  
+We're using a Python [scraper](scraper) to pull and merge locations from the national USDA dataset.  
 
 Data is displayed in the [following map](../map/starter).  
 
