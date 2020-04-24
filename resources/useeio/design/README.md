@@ -17,29 +17,17 @@ Provide directions for how data is pre-processed so volunteers can jump into upd
 Provide a timeline slider for each chart to hit prior APIs to easily compare 5, 10, 15 and 20 years prior. (We currently have 2007 and 2012 data.)
 
 
-## Heatmap
-
-Display sectors within subcategories and full names.  Example:
-
-[Sample dataset](https://model.earth/community/samples/dataset)  
-[Sortable Heatmap](https://model.earth/community/samples/dataset/sortable.html)  
-
-Display all the industries rather than just 10 to 50 at a time.  
-
-To display: Waste generation is during operation of industry, not post-consumer waste.  
-
-
-## Impact Bar Chart
+## Impact Bar Charts
 
 Multiple charts can be presented as one stack of indictors with bars to the right.
-Michael's new bar chart widget could be the basis for this.  
+The new <a href="../io/charts">bar chart widget</a> could be the basis for this.  
 
 1. Display the full indicator name on the left
 2. Use only half the page for the text and horizontal bars.
 3. Display a score (0 to 100) on each bar.
 4. Use the same condensed indicator bar chart for all of the following:
 
-- [Statewide Impact](samples/dataset/?design=smm2)<!-- Heatmap-->
+- Statewide Impact (Heatmap)
 - Environmental Profiles
 - Supply Chain / Operations
 - By Location
@@ -58,18 +46,42 @@ Include a series of direct links into filtered content.
 
 ## Operations vs Suppliers
 
-Place "Download" and "Print" icons in a top menu.  
 
 Would it be more intitive to have the Operations on the left side?  
+
+Place "Feedback", Download" and "Print" icons in a top menu.  
+
+
+## Bubble Chart
+
+[Resource Intensities Example](https://public.tableau.com/profile/john.sherwood#!/vizhome/USEEIOAnalysis/Dashboard1)
+
+Could be combined with interactive X and Y axis.  
+[Example with Linear Regression line](https://bl.ocks.org/mph006/e225e45e044dcf89c222)  
+
+Example of reading from [CSV rather than JSON](https://model.earth/tw-charts/regression/index.html) - [.js](https://model.earth/tw-charts/regression/js/regression.js)  
+
+
+## Heatmap
+
+Display sectors within subcategories and full names.  Example:
+
+[Sample dataset](https://model.earth/community/samples/dataset)  
+[Sortable heatmap](https://model.earth/community/samples/dataset/sortable.html)  
+
+Display all the industries rather than just 10 to 50 at a time.  
+
+To display: Waste generation is during operation of industry, not post-consumer waste.  
 
 
 ## Comparison of Change over Time
 
-As a quick initial time comparison, load the 2007 chart next to the 2012 chart.  
-
-A slider could be used to compare change in 5 year steps. A means to set a range could be provided.  
+For an initial time comparison, 2007 charts could be loaded next to 2012 charts.  
 
 <!--
+Show feedback button, etc.
+
+
 To follow up on:
 
 Embeddable version:
@@ -83,6 +95,7 @@ Checkboxes can not be clicked on "Compare Perspectives" page.
 
 Rename "Analysis Settings" to "More filters"
 
+A slider could be used to compare change in 5 year steps. A means to set a range could be provided. 
 
 Provide a means to project the most recent 5-year period before full data is available.  
 
