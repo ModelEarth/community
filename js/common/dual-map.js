@@ -91,7 +91,9 @@ function loadFromCSV(whichmap,dp,callback) {
   defaults.dataTitle = "Data Projects"; // Must match "map.addLayer(overlays" below.
 
   dp = mix(dp,defaults); // Gives priority to dp
-
+  if (dp.addLink) {
+    console.log("Add Link: " + dp.addLink)
+  }
   let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
   var container = L.DomUtil.get(map);
 
