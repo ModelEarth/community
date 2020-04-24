@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interface Design Ideas - Sustainable Community Web Challenge</title>
+<title>Community Map Resources - Sustainable Material Management</title>
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 
 <link rel="stylesheet" href="../css/community.css" />
@@ -56,6 +56,16 @@
 }
 #hublist {
   width:100%;
+}
+
+.editButton {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.editButton:hover {
+  background-color: #efefef;
 }
 
 b {
@@ -126,6 +136,7 @@ b {
 .leftWidget {
   float:left;
   max-width:420px;
+  max-width:500px;
   margin-right:30px;
 }
 
@@ -139,7 +150,7 @@ b {
     display:none;
     padding-left:20px;
     padding-bottom:0px;
-    max-width:400px;
+    max-width:520px;
 }
 @media (max-width: 800px) {
   .leftWidget {
@@ -150,8 +161,9 @@ b {
   .hideCatsMobile {
     display:none;
   }
+
   #industries {
-    float:auto;
+    float:none;
   }
 }
 .showCats {
@@ -268,7 +280,7 @@ b {
 
             <div class="filterBubble">
 
-              <div id="findWhat">
+              <div id="findWhat" style="min-width: 176px">
                 <div id="hideAdvanced" style="float:right;cursor:pointer">&#10005;</div>
 
                 <div style="display:none;float:left;margin-right:20px">
@@ -546,6 +558,8 @@ b {
       </div>
     -->
     
+    <b>Mock-Up</b> - HS categories are not yet cross-related to NAICS categories.<br>
+
     <div id="hsCatList">
       <div range="01-05" text="">Animals & Animal Products</div>
       <div range="06-15" text="">Vegetable Products</div>
@@ -617,15 +631,17 @@ b {
   </div>
   <!-- /HEX -->
 
-
-
-
-<div id="readmeDiv" class="content" style="display:none; margin-top:0px"></div><br>
+  <div id="readmeHolder" class="content" style="display:none; margin-top:0px; margin-bottom:0px">
+    <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
+    <div id="readmeDiv"></div>
+  </div>
 
 <script>
-  if (param["design"])
+  if (param["design"]) {
+    document.getElementById("readmeHolder").style.display = "block";
+    document.getElementById("readmeEdit").style.display = "block";
     loadMarkdown("../resources/USEEIO/design/README.md", "readmeDiv", "_parent");
-  //loadMarkdown("../README.md", "projectsDiv", "_parent");
+  }
 </script>
 
 
@@ -730,10 +746,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           }
         </style>
 
-        <div class="local mock-up pagebuttonHolder" style="display:none;overflow: visible;">
+        <div class="local mock-up" style="display:none;overflow: visible;">
 
+          <div class="pagebuttonHolder" style="min-height:45px; overflow: visible;">
           <div style="float:right">
-            <div class="sendfeedback pagebutton" href="#" style="float:left;">
+            <div class="sendfeedback pagebutton" href="https://www.cognitoforms.com/Community22/Feedback" style="float:left;">
               <div style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
               Feedback
               </div>
@@ -817,6 +834,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
             <div class="showInfo showInfoButton1 pagebutton" style="float: left; padding: 3px 3px 3px 4px; color:#fff; display:none;"><i class="material-icons" style="font-size:28px;">&#xE88F;</i>
             </div>
+          </div>
           </div>
 
         </div>
@@ -937,8 +955,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           <br>
 
           <b>Adjust Industry Levels</b>
-          to reflect new technology initiatives 
-          to generate new revenue streams, create jobs and 
+          to reflect technology initiatives 
+          that generate new revenue streams, create jobs and 
           increase your community's positive outcomes.
 
         </div>
@@ -1197,7 +1215,7 @@ function loadMap1() { // Also called by search-filters.js
   dp1.longitude = -83.4;
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
-  if (param["show"] == "suppliers" || param["show"] == "mockup" || param["design"]) { // "http://" + param["domain"]
+  if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listInfo = "Select a category to filter your results.";
     dp1.dataset = "/smartdata/resources/suppliers/GEMA-Manufacturers-and-Distributors-Randomized.csv";
@@ -1212,7 +1230,8 @@ function loadMap1() { // Also called by search-filters.js
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
     dp1.listLocation = false;
-  } else if (param["show"] == "produce") {
+    dp1.addLink = "https://www.georgia.org/covid19response";
+  } else if (param["show"] == "produce" || param["design"]) {
     dp1.listTitle = "USDA Farm Produce";
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     dp1.name = "Local Farms"; // To remove
@@ -1230,7 +1249,7 @@ function loadMap1() { // Also called by search-filters.js
     dp1.lonColumn = "x";
     dp1.stateColumn = "state";
 
-    dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery</span>";
+    dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
   } else {
     // Atlanta
     dp1.latitude = 33.76;
@@ -1331,7 +1350,7 @@ $(document).ready(function () {
         html: '<style>.mock-up{display: block !important;}</style>'
       }).appendTo("body");
   }
-  if (param["show"] == "mockup" || param["show"] == "suppliers" || param["design"]) {
+  if (param["show"] == "mockup" || param["show"] == "suppliers") {
     var div = $("<div />", {
         html: '<style>.suppliers{display: block !important;}</style>'
       }).appendTo("body");
@@ -1378,7 +1397,7 @@ $(document).ready(function () {
 
   // If this does not work, may need to call when map1 is initially loaded, but only once.
   $('.refreshMap').click(function(event) {
-      alert('.refreshMap')
+
       $("#map1").show();
       //displayMap(layerName,siteObject);
       console.log(".refreshMap ");
@@ -1387,6 +1406,14 @@ $(document).ready(function () {
   });
 });
 
+
+$('.sendfeedback').click(function(event) {
+  window.location = "https://www.cognitoforms.com/Community22/Feedback";
+  event.stopPropagation();
+});
+$('.pagebutton').click(function(event) {
+  alert("Not yet implemented.");
+});
 
 // HEX
 function access(minlevel,alevel) {
