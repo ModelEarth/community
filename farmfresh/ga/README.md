@@ -1,6 +1,6 @@
 # Farm Fresh Georgia
 
-We're using Python in [scraper](../scraper) to pull and merge locations from the national USDA dataset.  
+We're using a Python [scraper](../scraper) to pull and merge locations from the national USDA dataset.  
 
 Download with a command. 8791 rows for US.
 
