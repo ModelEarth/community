@@ -204,7 +204,7 @@ function loadFromCSV(whichmap,dp,callback) {
       
       if (dp.showLayer != false) {
         $("#widgetTitle").text(dp.dataTitle);
-        dp = showList(dp); // Reduces list based on filters
+        dp = showList(dp,map); // Reduces list based on filters
         addIcons(dp,map);
         map.addLayer(overlays2[dp.dataTitle]);
         
@@ -514,6 +514,7 @@ function addIcons(dp,map) {
         if (element.website) {
           output += " | ";
         }
+        output += "<a href='center=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&zoom=17'>Zoom In</a> | ";
         output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
       }
     }
@@ -537,13 +538,15 @@ function addIcons(dp,map) {
     //L.layerGroup().eachLayer(function (marker) {
     dp.group.eachLayer(function (marker) { // This hits every point individually. A CSS change might be less script processing intensive
       //console.log('zoom ' + map.getZoom());
-      marker.setRadius(markerRadius(1,map));
+      if (marker.setRadius) {
+        marker.setRadius(markerRadius(1,map));
+      }
     });
   });
   
 }
 
-function showList(dp) {
+function showList(dp,map) {
   var iconColor, iconColorRGB, iconName;
   var colorScale = dp.scale;
   let count = 0;
@@ -811,7 +814,13 @@ function showList(dp) {
       // colorScale(element[dp.valueColumn])
       //console.log("iconColor test here: " + iconColor)
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-      output = "<div class='detail'><div style='padding-bottom:4px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
+
+      if (element[dp.latColumn] && element[dp.lonColumn]) {
+        output = "<div class='detail' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>";
+      } else {
+        output = "<div class='detail'>";
+      }
+      output += "<div style='padding-bottom:4px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
 
       //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
                 
@@ -922,6 +931,22 @@ function showList(dp) {
 
   });
   
+  // BUGBUG - May need to clear first to avoid multiple calls.
+  $('.detail').mouseover(
+      function() { 
+        //popMapPoint(map,$(this).attr("latitude"),$(this).attr("longitude"));
+      }
+  );
+  $('.detail').click(
+      function() {
+        $('.detail').css("border","none");
+        $(this).css("border","4px solid #ccc");
+        popMapPoint(map,$(this).attr("latitude"),$(this).attr("longitude"));
+        $('html,body').animate({ 
+            scrollTop: $("#map1").offset().top
+        });
+      }
+  );
   if (dataMatchCount > 0) {
       //alert("show") // was twice BUGBUG
       //  (dataSet.length - 1) 
@@ -949,6 +974,10 @@ function showList(dp) {
   return dp;
 }
 
+function popMapPoint(map, latitude, longitude) {
+  let center = [latitude,longitude];
+  map.flyTo(center, 16);
+}
 // Scales: http://d3indepth.com/scales/
 function getScale(data, scaleType, valueCol) {
   var scale;
