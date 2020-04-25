@@ -91,9 +91,14 @@
     float:right;
   }
   .detail {
-    padding-bottom: 12px;
-    margin-bottom: 12px; 
+    padding-left: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px; 
     border-bottom: 1px solid #eee;
+  }
+  .detail:hover {
+    background-color: #eee;
+    cursor:pointer;
   }
 
   .mapHolderBottom {
