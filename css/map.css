@@ -90,6 +90,11 @@
     position: relative;
     float:right;
   }
+  .detail {
+    padding-bottom: 12px;
+    margin-bottom: 12px; 
+    border-bottom: 1px solid #eee;
+  }
 
   .mapHolderBottom {
     position: absolute;
@@ -98,6 +103,7 @@
   }
   .mapHolderFixed {
     position: fixed;
+    z-index: 1;
     top: 80px;
     bottom: auto;
     width: 46%;
