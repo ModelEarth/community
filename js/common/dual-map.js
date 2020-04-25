@@ -811,7 +811,7 @@ function showList(dp) {
       // colorScale(element[dp.valueColumn])
       //console.log("iconColor test here: " + iconColor)
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
-      output = "<div style='padding-bottom:4px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
+      output = "<div class='detail'><div style='padding-bottom:4px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
 
       //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
                 
@@ -914,7 +914,7 @@ function showList(dp) {
       }
 
       output += "</div>"; // End Lower
-      output += "<div style='clear:both; padding-bottom:12px; margin-bottom:12px; border-bottom:1px solid #eee'></div>";
+      output += "</div>"; // End detail
 
       $("#detaillist").append(output);
     }
