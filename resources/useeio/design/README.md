@@ -6,9 +6,9 @@
 Have a small "tips" area on the intro page with a link to the tutorial.
 Combine Tutorial and FAQ in an Overview section.  
 
-Common top filters could be used for all the charts.  Dropdown filters could act as titles for the content below them (see sample above).  
+Common filters could be used for all the charts.  Dropdown filters could act as titles for the content below them. (See sample below.)  
 
-Some filters could be chart-specific using a three-dot menu in the upper right corner of the chart.   
+A three-dot menu in the upper right corner of a chart could provide additional chart-specific filters.   
 
 A brief summary page for each location (national, states, counties and zips) could toggle into a detailed overview.  
 
