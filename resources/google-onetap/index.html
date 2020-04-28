@@ -133,7 +133,11 @@ Have this display the One-Tap popup after the user has clicked the X in the One-
 The message "suppressed_by_user" is triggered in an alert within this page after clicking the X and hitting reload. 
 You can clear recent cookies to restore the One-Tap popup. Log back in to GMail after clearing recent cookies.<br><br>
 
-<button class="g_id_signin" style="margin-right:5px">Sign In</button>
+<!--
+<button class="g_id_signin" style="margin-right:5px">Sign In 2</button> - Oddly, the content of this button gets replaced with an iFrame. This was not occuring initially. The button has never worked.<br><br>
+-->
+
+<button style="margin-right:5px">Sign In</button>
 
 
 
@@ -251,9 +255,9 @@ function continueWithNextIdp(notification) {
 <a href="../../../crowdsource/gsample">View Quickstart</a>
 <br><br>
     Valid domains:<br>
-    https://model.earth/crowdsource/gsample/<br>
-    https://model.georgia.org/crowdsource/gsample/<br>
-    http://localhost:8887/crowdsource/gsample/<br><br>
+    https://model.earth/community/resources/google-onetap/<br>
+    https://model.georgia.org/community/resources/google-onetap/<br>
+    http://localhost:8887/community/resources/google-onetap/<br><br>
 
     <hr>
 
@@ -261,6 +265,8 @@ function continueWithNextIdp(notification) {
 
     <script type="text/javascript">
       // Client ID and API key from the Developer Console
+      // https://developers.google.com/identity/one-tap/web/guides/get-google-api-clientid
+      // Using Safari Browser for Georgia maps Georgia Directory account.
       var CLIENT_ID = '573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyBMKgvChZs_lMzw65sRAJGDHSl-T3J0uvY'; // Browser Key
 
