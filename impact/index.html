@@ -235,16 +235,27 @@ b {
 </style>
 
 
+<!-- INTRO -->
+<div id="readmeHolder" class="content" style="display:none; margin-top:0px; margin-bottom:0px">
+  <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
+  <div id="readmeDiv"></div>
+</div>
+<script>
+  if (param["design"]) {
+    document.getElementById("readmeHolder").style.display = "block";
+    document.getElementById("readmeEdit").style.display = "block";
+    loadMarkdown("../resources/USEEIO/design/README.md", "readmeDiv", "_parent");
+  }
+</script>
+<!-- /INTRO -->
 
 
   <!-- FILTERS -->
-  
-
   <!--
     Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4
     https://datascape.github.io/community/#columns=population:31;education:50
   -->
-  <div class="pagePanel" style="margin:0 0 12px 24px;">
+  <div class="filterPanel">
     <div id="activeLayer" style="display: none"></div>
 
   <div id="productCodesHolder" style="display:none;" class="mock-up filterField local">
@@ -621,39 +632,24 @@ b {
 <!-- END FILTERS -->
 
 
-
 <!-- HEX -->
-  <div id="honeycombPanelHolder">
-    <div id="honeycombPanel" style="display:none">
+<div id="honeycombPanelHolder">
+  <div id="honeycombPanel" style="display:none">
 
-      <a name="sections"></a>
-      
-        <div class="bigThumbMenu widthColumns"></div>
-      
+    <a name="sections"></a>
+    
+      <div class="bigThumbMenu widthColumns"></div>
+    
 
-      <div id="honeyMenuHolder" style="display:none">
-        <div id="honeycombMenu"></div>
-      </div>
-
-        <br><br>
-        
+    <div id="honeyMenuHolder" style="display:none">
+      <div id="honeycombMenu"></div>
     </div>
+
+      <br><br>
+      
   </div>
-  <!-- /HEX -->
-
-  <div id="readmeHolder" class="content" style="display:none; margin-top:0px; margin-bottom:0px">
-    <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
-    <div id="readmeDiv"></div>
-  </div>
-
-<script>
-  if (param["design"]) {
-    document.getElementById("readmeHolder").style.display = "block";
-    document.getElementById("readmeEdit").style.display = "block";
-    loadMarkdown("../resources/USEEIO/design/README.md", "readmeDiv", "_parent");
-  }
-</script>
-
+</div>
+<!-- /HEX -->
 
 
 <aside class="Intermodal_Ports">

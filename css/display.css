@@ -44,14 +44,15 @@ body {
 	padding: 20px;
 	margin-bottom: 20px;
 }
+.filterPanel {
+	overflow: auto;
+	padding: 20px 0 12px 24px;
+	border-top: 1px solid #ddd;
+}
 #mapPanel {
 	padding: 0px;
 }
 
-.pagePanel {
-	padding-top:20px;
-	overflow:auto;
-}
 #topPanel {
 	position: relative;
 	padding-bottom: 20px;

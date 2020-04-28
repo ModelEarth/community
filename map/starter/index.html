@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../../css/community.css" />
 
 <script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../js/common/showdown.min.js"></script>
 <script type="text/javascript" src="../../js/common/common.js"></script>
 <!--
 Activate to include site navigation
@@ -37,6 +38,19 @@ crossorigin=""/>
 </head>
 
 <body>
+
+<!-- INTRO -->
+<div id="readmeHolder" class="content" style="display:none; margin-top:0px; margin-bottom:0px">
+  <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
+  <div id="readmeDiv"></div>
+</div>
+<script>
+  document.getElementById("readmeHolder").style.display = "block";
+  document.getElementById("readmeEdit").style.display = "block";
+  loadMarkdown("README.md", "readmeDiv", "_parent");
+</script>
+<!-- /INTRO -->
+
 
  <section id="objectives">
 
@@ -82,6 +96,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 </section>
 <div style="clear:both"></div>
 <!-- END Top Map -->
+
+
+
 
 <!-- Start HTML -->
   <a name="gomap"></a>
