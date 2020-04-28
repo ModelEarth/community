@@ -41,7 +41,7 @@ crossorigin=""/>
 
 <!-- INTRO -->
 <div id="readmeHolder" class="content" style="display:none; margin-top:0px; margin-bottom:0px">
-  <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
+  <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/map/starter'>Edit</a></div>
   <div id="readmeDiv"></div>
 </div>
 <script>
@@ -56,6 +56,9 @@ crossorigin=""/>
 
 <!-- Top Map -->
 <style>
+  #mapHolder {
+    display:none; /* temp */
+  }
   #allLegends {
     color:#fff !important; 
   }
@@ -88,7 +91,7 @@ Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Columbus,GA,3
 Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817
 </aside>
 <div class="displayOnload" style="display:none;position:relative;">
-  <div id="map1" style="display:none"></div>
+  <div id="map1"></div>
   <div id="legendHolder">
     <div id="allLegends"></div>
   </div>
@@ -154,6 +157,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
   <script>
     // MAP 1 - INTERMODAL PORTS
+    /*
     document.getElementById("map1").style.display = "block"; 
     let dp1 = {
       selector: "aside.Intermodal_Ports",
@@ -188,7 +192,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       addLegend(dp1.scale, dp1.scaleType, dp1.name);
       layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
     });
-    
+    */
 
     // MAP 2
     let dp2 = {};
@@ -205,25 +209,27 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     dp2.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     //dp2.dataset = "/community/farmfresh/usa/georgia/markets.csv";
     dp2.dataTitle = "Farm Fresh Produce";
-    dp2.markerType = "circle";
+    //dp2.markerType = "circle";
+    dp2.markerType = "google";
     dp2.titleColumn = "marketname";
     dp2.nameColumn = "marketname";
     dp2.addressColumn = "street";
     dp2.valueColumn = "Prepared";
     //dp2.valueColumn = "type";
     dp2.valueColumnLabel = "Prepared Food";
-    dp2.latColumn = "y";
-    dp2.lonColumn = "x";
+    //dp2.latColumn = "y";
+    //dp2.lonColumn = "x";
     dp2.stateColumn = "state";
 
-    loadFromCSV('map2', dp2, function(results) {
+    loadFromCSV('map1', dp2, function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
-        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
+        layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
     });
     
 
     // Fulton County 5631 restaurants
+    /*
     dp2 = {};
     dp2.dataset = "/community/tools/map.csv";
     dp2.latitude = 32.9;
@@ -248,6 +254,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     loadFromCSV('map2', dp2, function(results) {
 
     });
+    */
   </script>
 </body>
 
