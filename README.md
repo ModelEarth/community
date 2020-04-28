@@ -26,9 +26,20 @@ Slack #epa
 
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO)&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
-Help us build a [Crowdsource Editing Tool](../crowdsource) using Google Sheets.  
-<br>
+### Today at Code for Atlanta
 
+
+1. Help us build a [Crowdsource Editing Tool](../crowdsource) using Google Sheets.  
+
+2. Point our [Python-to-Google](farmfresh/curbside/) screenscraper at [UGA Extension Fresh Produce Data](https://extension.uga.edu/ag-products-connection.html). We'll embed [our map, including USDA data](map/starter) in their site.  Here's their [Twitter Post](https://twitter.com/UGAExtension/status/1253429395785543681?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Agdecd&ref_url=https%3A%2F%2Fgeorgiadata.github.io%2Fsmartdata%2F).  
+
+3. Data Entry: Coastapp.com provided us with these [Curbside Delivery listings](http://localhost:8887/community/impact/?show=restaurants).
+Check that the restaurants from this [eatery.com list](https://atlanta.eater.com/2020/3/13/21178168/atlanta-restaurants-offering-curbside-pick-up-food-delivery) are all in the Coastapp map. If not, call to confirm they still provide curbside pickup, then add to [coastapp.com](https://coastapp.com/takeoutcovid/atl/).  
+
+
+---
+
+### Upcoming
 
 <a href="https://model.georgia.org/communities/" style="font-size:18px">2020 Sustainable Commuities Web Challenge</a>  
 
@@ -37,7 +48,7 @@ $10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatla
 For the Web Challenge, we recommend building your tools within the [Community Repo](https://github.com/modelearth/community) to share common interfaces and filters.  
 
 
-### Summary
+### Overview
 
 1. Using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), CSV files will be [generated](resources/useeio) for demand vectors (Food System and Full System). 
 
