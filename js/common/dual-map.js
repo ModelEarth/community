@@ -89,7 +89,9 @@ function loadFromCSV(whichmap,dp,callback) {
   //defaults.scaleType = "scaleQuantile";
   defaults.scaleType = "scaleOrdinal";
   defaults.dataTitle = "Data Projects"; // Must match "map.addLayer(overlays" below.
-
+  if (dp.latitude && dp.longitude) {
+      mapCenter = [dp.latitude,dp.longitude]; 
+  }
   dp = mix(dp,defaults); // Gives priority to dp
   if (dp.addLink) {
     console.log("Add Link: " + dp.addLink)
@@ -97,9 +99,7 @@ function loadFromCSV(whichmap,dp,callback) {
   let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
   var container = L.DomUtil.get(map);
 
-  if (dp.latitude && dp.longitude) {
-      mapCenter = [dp.latitude,dp.longitude]; 
-  }
+  
 
   if (container == null) { // Initialize map
 
@@ -207,6 +207,7 @@ function loadFromCSV(whichmap,dp,callback) {
         dp = showList(dp,map); // Reduces list based on filters
         addIcons(dp,map);
         map.addLayer(overlays2[dp.dataTitle]);
+        
         
       }
       $("#activeLayer").text(dp.dataTitle); // Resides after showList
@@ -434,6 +435,7 @@ function addIcons(dp,map) {
     if (typeof dp.lonColumn == "undefined") {
       dp.lonColumn = "lon";
     }
+
     iconColorRGB = hex2rgb(iconColor);
     iconName = dp.iconName;
     var busIcon = L.IconMaterial.icon({
@@ -514,7 +516,8 @@ function addIcons(dp,map) {
         if (element.website) {
           output += " | ";
         }
-        output += "<a href='center=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&zoom=17'>Zoom In</a> | ";
+        console.log("latitude2: " + dp.latColumn + " " + element.latitude);
+        //output += "<div class='detail' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>Zoom In</div> | ";
         output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
       }
     }
@@ -544,6 +547,21 @@ function addIcons(dp,map) {
     });
   });
   
+  $('.detail').click(
+    function() {
+      if (param["show"] == "suppliers" || param["show"] == "mockup") {
+        alert('Map locations are approximate since supplier data use is reserved for use by hospitals and emergency workers.');
+      }
+      $('.detail').css("border","none");
+      console.log("detail click");
+      $(this).css("border","4px solid #ccc");
+      popMapPoint(map,$(this).attr("latitude"),$(this).attr("longitude"));
+      $('html,body').animate({ 
+          scrollTop: $("#map1").offset().top
+      });
+    }
+  );
+
 }
 
 function showList(dp,map) {
@@ -795,12 +813,15 @@ function showList(dp,map) {
         key = keys[n];
         if (key != "data") { // Skip dp.data
           element[key.toLowerCase()] = dp[key];
+          // BUGBUG, did I accidentally leave off second () here:
           dp[key.toLowerCase()] = dp[key].toLowerCase; // Creates some dups, but fastest that way. Lowercase values then match below
         }
       }
       */
 
-      element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
+      // Bug, this overwrote element.latitude and element.longitude
+      //element = mix(dp,element); // Adds existing column names, giving priority to dp assignments made within calling page.
+      
       let name = element.name;
       if (element[dp.nameColumn]) {
         name = element[dp.nameColumn];
@@ -893,7 +914,7 @@ function showList(dp,map) {
         }
       }
 
-      if (element.facebook) {
+      if (element.facebook && element.facebook.toLowerCase().indexOf('facebook.com') >= 0) {
         if (element[dp.latColumn] && dp.listLocation != false) {
           output += " | ";
         }
@@ -937,16 +958,7 @@ function showList(dp,map) {
         //popMapPoint(map,$(this).attr("latitude"),$(this).attr("longitude"));
       }
   );
-  $('.detail').click(
-      function() {
-        $('.detail').css("border","none");
-        $(this).css("border","4px solid #ccc");
-        popMapPoint(map,$(this).attr("latitude"),$(this).attr("longitude"));
-        $('html,body').animate({ 
-            scrollTop: $("#map1").offset().top
-        });
-      }
-  );
+
   if (dataMatchCount > 0) {
       //alert("show") // was twice BUGBUG
       //  (dataSet.length - 1) 
