@@ -2,6 +2,9 @@
 
 We're working on updates for [Maps For Us](https://mapsfor.us/) - a map display process for Google Sheets.    
 
+Add to our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml). 
+Editable link is in our Slack #epa group.
+
 ###Automatically geocode addresses - Contributed by Mark Noonan, Code for Atlanta
 
 It works by having a separate sheet for form submissions and doing the work there then copying the line into the main Points sheet. There's a separate Errors sheet where rows are added if there was a problem with the geocoding process for manual cleanup.  
