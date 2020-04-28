@@ -36,6 +36,7 @@ Slack #epa
 3. Data Entry: Coastapp.com provided us with these [Curbside Delivery listings](http://localhost:8887/community/impact/?show=restaurants).
 Check that the restaurants from this [eatery.com list](https://atlanta.eater.com/2020/3/13/21178168/atlanta-restaurants-offering-curbside-pick-up-food-delivery) are all in the Coastapp map. If not, call to confirm they still provide curbside pickup, then add to [coastapp.com](https://coastapp.com/takeoutcovid/atl/).  
 
+4. [Add auto-geocode to MapsForUs](map/mapsforus/) - Example from Mark Noonan, Code for Atlanta.
 
 ---
 
