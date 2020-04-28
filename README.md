@@ -34,7 +34,7 @@ Slack #epa
 2. Point our [Python-to-Google](farmfresh/curbside/) screenscraper at [UGA Extension Fresh Produce Data](https://extension.uga.edu/ag-products-connection.html). We'll embed [our map, including USDA data](map/starter) in their site.  Here's their [Twitter Post](https://twitter.com/UGAExtension/status/1253429395785543681?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Agdecd&ref_url=https%3A%2F%2Fgeorgiadata.github.io%2Fsmartdata%2F).  
 
 3. Data Entry: Coastapp.com provided us with these [Curbside Delivery listings](http://localhost:8887/community/impact/?show=restaurants).
-Check that the restaurants from this [eatery.com list](https://atlanta.eater.com/2020/3/13/21178168/atlanta-restaurants-offering-curbside-pick-up-food-delivery) are all in the Coastapp map. If not, call to confirm they still provide curbside pickup, then add to [coastapp.com](https://coastapp.com/takeoutcovid/atl/).  
+Check that the restaurants from this [eatery.com list](https://atlanta.eater.com/2020/3/13/21178168/atlanta-restaurants-offering-curbside-pick-up-food-delivery) (which we pulled into [Google - Points1 tab](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml#)) are all in the Coastapp map. If not, call to confirm each missing restaurant still provides curbside pickup, then add to [coastapp.com](https://coastapp.com/takeoutcovid/atl/).  
 
 4. [Add auto-geocode to MapsForUs](map/mapsforus/) - Example from Mark Noonan, Code for Atlanta.
 
