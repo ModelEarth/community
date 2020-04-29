@@ -217,8 +217,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     dp2.valueColumn = "Prepared";
     //dp2.valueColumn = "type";
     dp2.valueColumnLabel = "Prepared Food";
-    //dp2.latColumn = "y";
-    //dp2.lonColumn = "x";
+    dp2.latColumn = "y";
+    dp2.lonColumn = "x";
     dp2.stateColumn = "state";
 
     loadFromCSV('map1', dp2, function(results) {
