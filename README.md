@@ -29,7 +29,7 @@ Slack #epa
 ### Today at Code for Atlanta
 
 
-1. Help us build a [Crowdsource Editing Tool](../crowdsource) using Google Sheets.  
+1. Help us build a [Crowdsource Editing Tool](https://model.earth/crowdsource/) using Google Sheets.  
 
 2. Point our [Python-to-Google](farmfresh/curbside/) screenscraper at [UGA Extension Fresh Produce Data](https://extension.uga.edu/ag-products-connection.html). We'll embed [our map, including USDA data](map/starter) in their site.  Here's their [Twitter Post](https://twitter.com/UGAExtension/status/1253429395785543681?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Agdecd&ref_url=https%3A%2F%2Fgeorgiadata.github.io%2Fsmartdata%2F).  
 
