@@ -26,7 +26,7 @@ Slack #epa
 
 [Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO)&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
-### Today at Code for Atlanta
+### Projects at Code for Atlanta
 
 
 1. Help us build a [Crowdsource Editing Tool](https://model.earth/crowdsource/) using Google Sheets.  
@@ -46,7 +46,13 @@ Check that the restaurants from this [eatery.com list](https://atlanta.eater.com
 
 $10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 
-For the Web Challenge, we recommend building your tools within the [Community Repo](https://github.com/modelearth/community) to share common interfaces and filters.  
+For the Web Challenge, we recommend both creating jquery-based pages without build scripts in our [Community Repo](https://github.com/modelearth/community), and collaborating in repos that use build scripts for specific frameworks, including:  
+
+* A Vue app with Google Sheets and .Net Umbraco (collaborating with Chapel Hill's [nccovidsupport.org](https://nccovidsupport.org/) - [GitHub](https://github.com/code-for-chapel-hill/NC-COVID-Support))  
+* A Javascript App working directly with Michael Srocka's widget repos (our summer intern project) - Some React  
+* An Ionic Mobile App (compatible with TeachX food assistance resources)  
+* A NodeJS app (with logistics including Marta-JS)  
+* A Django update to Census Reporter using Python 3  
 
 
 ### Overview
