@@ -579,7 +579,7 @@ function addIcons(dp,map,map2) {
   $('.showItemMenu').click(function () {
     $("#itemMenu").show();
 
-    $("#itemMenu").appendTo($(this).parent());
+    $("#itemMenu").prependTo($(this).parent());
 
     event.stopPropagation();
     //$("#map").show();
