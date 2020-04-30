@@ -221,7 +221,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     dp2.lonColumn = "x";
     dp2.stateColumn = "state";
 
-    loadFromCSV('map1', dp2, function(results) {
+    loadFromCSV('map1','map2', dp2, function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
         layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers      
