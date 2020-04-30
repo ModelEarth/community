@@ -135,7 +135,12 @@
     color: #555;
     font-size: 16px;
   }
-  
+  #sidemapMessage {
+    color: #fff;
+    background-color: #777;
+    padding: 10px;
+    font-size: 12px;
+  }
   
   .mapHolderFixed > .mapHolderCard {
     margin-right: 30px;
