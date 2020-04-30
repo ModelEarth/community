@@ -82,6 +82,7 @@
     width:56%;
   }
   #mapHolder {
+    padding: 20px;
     width: 44%;
     z-index: 10; /* to exceed right column in external site */
     /* Show box for testing scroll */
@@ -91,6 +92,7 @@
     float:right;
   }
   .detail {
+    position: relative;
     padding-left: 4px;
     padding-top: 12px;
     padding-bottom: 12px; 
@@ -159,8 +161,8 @@
       float: none;
       width: auto;
       margin-top: 70px;
-      margin-left: 30px;
       margin-bottom: 30px;
+      padding: 0px;
     }
     .mapHolderInner {
       position: relative;

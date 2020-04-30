@@ -832,15 +832,7 @@ function SearchFormTextCheck(t, dirn) {
 					}
 	          	}
 	        }
-        	$('.showItemMenu').click(function () {
-				$("#itemMenu").show();
-
-				$("#itemMenu").appendTo($(this).parent().parent());
-
-				event.stopPropagation();
-				//$("#map").show();
-				// $(this).css('border', 'solid 1px #aaa');
-			});
+        	
 			$('#showLocalNews').click(function () {
 				mainframe.location='https://georgiadata.github.io/explorer/news/'
 				// mainframe.location='map/leaflet/#columns=' + columns;

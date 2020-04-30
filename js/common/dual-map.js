@@ -10,7 +10,7 @@ var mbAttr = '<a href="https://www.mapbox.com/">Mapbox</a>',
 
 
 // Note: light_nolabels does not work on https. Remove if so. Was positron_light_nolabels.
-var basemaps = {
+var basemaps1 = {
   'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
   'Satellite' : L.tileLayer(mbUrl, {maxZoom: 25, id: 'mapbox.satellite', attribution: mbAttr}),
   'Streets' : L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
@@ -77,7 +77,7 @@ L.Map.addInitHook(function () {
   this.getContainer()._leaflet_map = this;
 });
 
-function loadFromCSV(whichmap,dp,callback) {
+function loadFromCSV(whichmap,whichmap2,dp,callback) {
 
   let defaults = {};
   defaults.zoom = 7;
@@ -98,12 +98,7 @@ function loadFromCSV(whichmap,dp,callback) {
   }
   let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
   var container = L.DomUtil.get(map);
-
-  
-
   if (container == null) { // Initialize map
-
-    
     map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
@@ -123,8 +118,20 @@ function loadFromCSV(whichmap,dp,callback) {
     map.setView(mapCenter,dp.zoom);
     */
   }
+  let map2 = {};
+  if (whichmap2) {
+    map2 = document.querySelector('#' + whichmap2)._leaflet_map; // Recall existing map
+    var container2 = L.DomUtil.get(map2);
+    if (container2 == null) { // Initialize map
+      map2 = L.map(whichmap2, {
+        center: mapCenter,
+        scrollWheelZoom: false,
+        zoom: dp.zoom
+      });
+    }
 
-
+    
+  }
 
   // 5. Load Layers Asynchronously
   //var dataset = "../community/map/zip/basic/places.csv";
@@ -185,13 +192,19 @@ function loadFromCSV(whichmap,dp,callback) {
       //  layerControl[whichmap] = L.control.layers(baseLayers, overlays).addTo(map);
       //}
       if (layerControl[whichmap] == undefined) {
-        layerControl[whichmap] = L.control.layers(basemaps2, overlays2).addTo(map); // Push multple layers
-        basemaps2["Grayscale"].addTo(map); // Set the initial baselayer.
+        layerControl[whichmap] = L.control.layers(basemaps1, overlays1).addTo(map); // Push multple layers
+        basemaps1["Grayscale"].addTo(map); // Set the initial baselayer.
       } else {
-
         layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
       
+      // Side map
+      if (layerControl[whichmap2] == undefined) {
+        layerControl[whichmap2] = L.control.layers(basemaps2, overlays2).addTo(map2); // Push multple layers
+        basemaps2["Grayscale"].addTo(map2); // Set the initial baselayer.
+      } else {
+        layerControl[whichmap2].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
+      }
 
       addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
 
@@ -205,7 +218,7 @@ function loadFromCSV(whichmap,dp,callback) {
       if (dp.showLayer != false) {
         $("#widgetTitle").text(dp.dataTitle);
         dp = showList(dp,map); // Reduces list based on filters
-        addIcons(dp,map);
+        addIcons(dp,map,map2);
         map.addLayer(overlays2[dp.dataTitle]);
         
         
@@ -226,6 +239,7 @@ function loadFromCSV(whichmap,dp,callback) {
 
       // Neigher map.whenReady or map.on('load') seems to require SetView()
 
+      $(".mapHolderInner").hide(); // Hide after size is available for tiles.
   })
   //.catch(function(error){ 
   //     alert("Data loading error: " + error)
@@ -253,10 +267,10 @@ var mapCenter = [33.7490,-84.3880]; // [latitude, longitude]
 // Two sets prevents one map from changing the other
 
 
-var overlays = {};
+var overlays1 = {};
 var overlays2 = {};
 dataParameters.forEach(function(ele) {
-  overlays[ele.name] = ele.group; // Add to layer menu
+  overlays1[ele.name] = ele.group; // Add to layer menu
   //overlays2[ele.name] = ele.group; // Add to layer menu
 })
 
@@ -285,7 +299,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
         position: 'topright'
     }).addTo(map);
 
-    overlays[dp.dataTitle] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+    overlays1[dp.dataTitle] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
 
     // Adds checkbox, but unselects other map on page
     //overlays2[dp.dataTitle] = dp.group;
@@ -301,9 +315,9 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
     */
 
     if (layerControl[whichmap] == undefined) {
-      layerControl[whichmap] = L.control.layers(basemaps, overlays).addTo(map); // Push multple layers
-      //basemaps["Satellite"].addTo(map);
-      basemaps["Streets"].addTo(map);
+      layerControl[whichmap] = L.control.layers(basemaps1, overlays1).addTo(map); // Push multple layers
+      //basemaps1["Satellite"].addTo(map);
+      basemaps1["Streets"].addTo(map);
     } else {
       layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
     }
@@ -316,7 +330,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
     //L.marker([32.90,-83.83], {icon: myIcon}).addTo(map);
 
     addIcons(dp, map);
-    map.addLayer(overlays[dp.dataTitle]);
+    map.addLayer(overlays1[dp.dataTitle]);
     
     // Both work
     map.on('load',function(){
@@ -408,7 +422,7 @@ function markerRadius(radiusValue,map) {
   //console.log("mapZoom:" + mapZoom + " radiusValu:" + radiusValue + " radiusOut:" + radiusOut);
   return radiusOut;
 }
-function addIcons(dp,map) {
+function addIcons(dp,map,map2) {
   var circle,circle2;
   var iconColor, iconColorRGB, iconName;
   var colorScale = dp.scale;
@@ -516,7 +530,7 @@ function addIcons(dp,map) {
         if (element.website) {
           output += " | ";
         }
-        console.log("latitude2: " + dp.latColumn + " " + element.latitude);
+        //console.log("latitude2: " + dp.latColumn + " " + element.latitude);
         //output += "<div class='detail' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>Zoom In</div> | ";
         output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
       }
@@ -554,13 +568,25 @@ function addIcons(dp,map) {
       }
       $('.detail').css("border","none");
       console.log("detail click");
+      $('#sidemapName').text($(this).attr("name"));
       $(this).css("border","4px solid #ccc");
-      popMapPoint(map,$(this).attr("latitude"),$(this).attr("longitude"));
-      $('html,body').animate({ 
-          scrollTop: $("#map1").offset().top
-      });
+      $(".mapHolderInner").show(); // map2
+      popMapPoint(map2,$(this).attr("latitude"),$(this).attr("longitude"));
+      //$('html,body').animate({ 
+      //    scrollTop: $("#map1").offset().top
+      //});
     }
   );
+  $('.showItemMenu').click(function () {
+    $("#itemMenu").show();
+
+    $("#itemMenu").appendTo($(this).parent());
+
+    event.stopPropagation();
+    //$("#map").show();
+    // $(this).css('border', 'solid 1px #aaa');
+  });
+
 
 }
 
@@ -837,13 +863,15 @@ function showList(dp,map) {
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
 
       if (element[dp.latColumn] && element[dp.lonColumn]) {
-        output = "<div class='detail' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>";
+        output = "<div class='detail' name='" + name + "' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>";
       } else {
         output = "<div class='detail'>";
       }
+
+      output += "<div class='showItemMenu local mock-up' style='display:none;float:right'>&mldr;</div>"; 
       output += "<div style='padding-bottom:4px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
 
-      //output += "<div style='position:relative'><div class='localonlyX' style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div><div class='showItemMenu' style='float:right'>&mldr;</div> " + name + "</div>";
+      //output += "<div style='position:relative'><div style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div>" + name + "</div>";
                 
       //output += "<div style='overflow:auto'>";
       
