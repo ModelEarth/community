@@ -351,9 +351,9 @@ function dualmapLoaded() {
 	  latitude: 31.6074,
 	  longitude: -81.8854
 	}
-	loadFromCSV('map2', dp1, function(results) {
+	loadFromCSV('map1', 'map2', dp1, function(results) {
 		//alert("back");
-	//loadFromCSV('map2', "/community/tools/map.csv", function(results) {
+	//loadFromCSV('map1', 'map2', "/community/tools/map.csv", function(results) {
         // This function gets called by the geocode function on success
         //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
         layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
@@ -363,7 +363,7 @@ function dualmapLoaded() {
 
 
 /*
-loadFromCSV('map2', "/community/tools/map.csv", function(results) {
+loadFromCSV('map1', 'map2', "/community/tools/map.csv", function(results) {
     // This function gets called by the geocode function on success
     //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
 
