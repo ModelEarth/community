@@ -9,7 +9,11 @@ Here are [Georgia Data Specifics](ga)
 ### About USDA Source
 
 [National USDA map of farmer's markets](https://www.ams.usda.gov/local-food-directories/farmersmarkets)  
-[Google Map for full data download](https://search.ams.usda.gov/farmersmarkets/googleMapFull.aspx) 
+[Google Map for full data download](https://search.ams.usda.gov/farmersmarkets/googleMapFull.aspx)  
+
+### Georgia Produce (UGA Extension)
+
+[The UGA Extension Local Produce Directory](https://extension.uga.edu/ag-products-connection.html) lists farms that are keeping regular hours, providing curbside pickup, home delivery or e-commerce sales during the COVID-19 pandemic.
 
 
 
