@@ -56,9 +56,6 @@ crossorigin=""/>
 
 <!-- Top Map -->
 <style>
-  #mapHolder {
-    display:none; /* temp */
-  }
   #allLegends {
     color:#fff !important; 
   }
@@ -109,20 +106,17 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div class="content displayOnload" style="display:none">
       <div id="flexwrapperX">
         
+        <a name="gomap"></a>
         <div id="mapHolder">
           <div class="mapHolderInner">
-            <div class="mapHolderCard card">
+            <div id="sidemapCard" class="mapHolderCard card">
               <div id="sidemapbar">
-                <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
-                  
-                  <div id="widgetTitle">Connected Communities</div>
+                <div id="sidemapName" style="position:absolute; left:0; padding:4px 4px 4px 10px">
                 </div>
               </div>
-
               <div style="clear:both">  
                 <div id="map2"></div>
               </div>
-
             </div>
           </div>
         </div>
