@@ -770,9 +770,10 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
               Download
               </div>
             </div>
-            <div class="local addlisting-button pagebutton greenButton" href="#" style="float:left; display:none">
+
+            <div class="local addlisting pagebutton greenButton" href="#" style="float:left; display:none">
               
-              <div class="hideMobile" style="displayX:none;margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
+              <div class="hideMobile" style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
               Add Listing
               </div>
               <div class="showMobile" style="display:none;"><i class="material-icons" style="font-size:19pt;padding-top:4px">&#xE145;</i></div>
@@ -1216,6 +1217,8 @@ function loadMap1() { // Also called by search-filters.js
     dp1.lonColumn = "x";
     dp1.stateColumn = "state";
 
+    dp1.addlisting = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
+
     dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
   } else {
     // Atlanta
@@ -1324,6 +1327,10 @@ $(document).ready(function () {
       }).appendTo("body");
   }
 
+  if (param["show"] == "produce") {
+    $('.addlisting').show();
+  }
+
   $('#catListClone').html($('#industryCatList').clone());
 
   $('.catList > div').click(function () {
@@ -1377,6 +1384,10 @@ $(document).ready(function () {
 
 $('.sendfeedback').click(function(event) {
   window.location = "https://www.cognitoforms.com/Community22/Feedback";
+  event.stopPropagation();
+});
+$('.addlisting').click(function(event) {
+  window.location = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
   event.stopPropagation();
 });
 $('.pagebutton').click(function(event) {
