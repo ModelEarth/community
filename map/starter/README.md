@@ -24,6 +24,7 @@ Editable link is in our Slack #epa group.
 
 1. [Modifications to MapsForUs](../mapsforus) we are currently working on - including automatic geocoding.  
 
+1. [Georgia-Grown Local Product Locator - UGA Extension](https://extension.uga.edu/ag-products-connection.html) - Georgia producers who are keeping regular hours, providing curbside pickup, home delivery or e-commerce sales during the COVID-19 pandemic.
 <!--
 1. [Embed version](embed.html)<br>- Add D3 circles when map points exceed 1,000.<br>- Add Leaflet marker clusters when map points exceed 2,000 records.<br>-Trigger lower map to zoom to the location of the map point clicked on upper map.  
 -->
