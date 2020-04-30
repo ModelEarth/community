@@ -154,7 +154,7 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
 
       dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
       dp.group = L.layerGroup();
-      //dp.group2 = L.layerGroup();
+      dp.group2 = L.layerGroup();
       dp.iconName = 'star';
       //dataParameters.push(dp);
 
@@ -201,7 +201,7 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
       // Side map
       if (layerControl[whichmap2] == undefined) {
         layerControl[whichmap2] = L.control.layers(basemaps2, overlays2).addTo(map2); // Push multple layers
-        basemaps2["Grayscale"].addTo(map2); // Set the initial baselayer.
+        basemaps2["OpenStreetMap"].addTo(map2); // Set the initial baselayer.
       } else {
         layerControl[whichmap2].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
@@ -239,7 +239,7 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
 
       // Neigher map.whenReady or map.on('load') seems to require SetView()
 
-      $(".mapHolderInner").hide(); // Hide after size is available for tiles.
+      $("#sidemapCard").hide(); // Hide after size is available for tiles.
   })
   //.catch(function(error){ 
   //     alert("Data loading error: " + error)
@@ -563,15 +563,14 @@ function addIcons(dp,map,map2) {
   
   $('.detail').click(
     function() {
-      if (param["show"] == "suppliers" || param["show"] == "mockup") {
-        alert('Map locations are approximate since supplier data use is reserved for use by hospitals and emergency workers.');
-      }
       $('.detail').css("border","none");
       console.log("detail click");
       $('#sidemapName').text($(this).attr("name"));
-      $(this).css("border","4px solid #ccc");
-      $(".mapHolderInner").show(); // map2
-      popMapPoint(map2,$(this).attr("latitude"),$(this).attr("longitude"));
+      $(this).css("border","2px solid #ccc");
+      $(this).css("padding","15px");
+
+      $("#sidemapCard").show(); // map2
+      popMapPoint(dp, map2, $(this).attr("latitude"), $(this).attr("longitude"));
       //$('html,body').animate({ 
       //    scrollTop: $("#map1").offset().top
       //});
@@ -591,7 +590,7 @@ function addIcons(dp,map,map2) {
 }
 
 function showList(dp,map) {
-  var iconColor, iconColorRGB, iconName;
+  var iconColor, iconColorRGB;
   var colorScale = dp.scale;
   let count = 0;
 
@@ -983,7 +982,7 @@ function showList(dp,map) {
   // BUGBUG - May need to clear first to avoid multiple calls.
   $('.detail').mouseover(
       function() { 
-        //popMapPoint(map,$(this).attr("latitude"),$(this).attr("longitude"));
+        //popMapPoint(dp, map, $(this).attr("latitude"), $(this).attr("longitude"));
       }
   );
 
@@ -1014,9 +1013,57 @@ function showList(dp,map) {
   return dp;
 }
 
-function popMapPoint(map, latitude, longitude) {
+function popMapPoint(dp, map, latitude, longitude) {
   let center = [latitude,longitude];
-  map.flyTo(center, 16);
+  map.flyTo(center, 15); // 19 in lake
+
+  // Add a single map point
+  var iconColor, iconColorRGB, iconName;
+  var colorScale = dp.scale;
+
+  iconColor = "#440";
+  if (dp.color) {
+    iconColor = dp.color;
+  }
+  iconColorRGB = hex2rgb(iconColor);
+  iconName = dp.iconName;
+  var busIcon = L.IconMaterial.icon({
+    icon: iconName,            // Name of Material icon - star
+    iconColor: '#fff',         // Material icon color (could be rgba, hex, html name...)
+    markerColor: 'rgba(' + iconColorRGB + ',0.7)',  // Marker fill color
+    outlineColor: 'rgba(' + iconColorRGB + ',0.7)', // Marker outline color
+    outlineWidth: 1,                   // Marker outline width 
+  })
+
+  //dp.group2.clearLayers();
+
+  // Attach the icon to the marker and add to the map
+  //dp.group2 = 
+  L.marker([latitude,longitude], {icon: busIcon}).addTo(map)
+
+
+
+  //var markerGroup = L.layerGroup().addTo(map);
+  //L.marker([latitude,longitude]).addTo(markerGroup);
+
+  // Didn't work here
+  /*
+  if (dp.markerType == "google") {
+      if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
+        circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
+      } else {
+        // If this line returns an error, try setting dp1.latColumn and dp1.latColumn to the names of your latitude and longitude columns.
+        circle = L.marker([latitude,longitude], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
+      }
+  } else {
+    circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
+              color: colorScale(element[dp.valueColumn]),
+              fillColor: colorScale(element[dp.valueColumn]),
+              fillOpacity: 1,
+              radius: markerRadius(1,map) // was 50.  Aiming for 1 to 10
+          }).addTo(dp.group);
+  }
+  */
 }
 // Scales: http://d3indepth.com/scales/
 function getScale(data, scaleType, valueCol) {
@@ -1161,6 +1208,9 @@ $(window).scroll(function() {
   }
   previousScrollTop = $(window).scrollTop();
 
+  lockSidemap(mapFixed);
+});
+function lockSidemap() {
   // Detect when #hublist is scrolled into view and add class mapHolderFixed.
   // Include mapHolderBottom when at bottom.
   if (bottomReached('#hublist')) {
@@ -1182,5 +1232,5 @@ $(window).scroll(function() {
     $('.mapHolderInner').removeClass('mapHolderFixed');
     mapFixed = false;
   }
-});
+}
 console.log('hello from dual map');

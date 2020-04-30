@@ -58,11 +58,12 @@
 }
 #mapHolder {
   background-color: rgb(250, 250, 250);
-  
 }
-
+.mapHolderInner {
+  overflow: scroll;
+  height: 900px;
+}
 #hublist {
-  max-heightX: 900px;
   margin-right: 20px;
 }
 #hublist-paddingX {
@@ -979,10 +980,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <a name="gomap"></a>
     <div id="mapHolder">
       <div class="mapHolderInner">
-        <div class="mapHolderCard card">
+        <div id="sidemapCard" class="mapHolderCard card">
           <div id="sidemapbar">
             <div id="sidemapName" style="position:absolute; left:0; padding:4px 4px 4px 10px">
-              Six County Region
             </div>
           </div>
 
@@ -990,150 +990,158 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
             <div id="map2"></div>
           </div>
 
+          <div id="sidemapMessage" class="suppliers" style="display:none">
+            Map locations are approximate since supplier data is 
+            primarily for hospitals and <span style="white-space: nowrap">emergency workers.</span>
+          </div>
+
         </div>
+
+
+        <!-- INDUSTRIES -->
+        <div class="mock-up" style="display:none; padding-top:20px; padding-bottom:0px">
+
+          <!-- TOP WIDGETS -->
+          <div>
+
+            <div style="margin-bottom:14px">
+              <b style="font-size:16px">Mock-Up</b> - <a href="../../io/charts" target="eeio-charts">Embeddable EEIO charts</a> under development.        
+            </div>
+
+            <div style="display:none; float:left; margin-right:30px">
+              Changing filters will update the URL hash value, which will trigger updates to independent widgets.
+
+              <b>Location & Weight:</b> Country, State, County, Zip<br>
+              <b>BEA Sector & Intensity:</b> Industry ID : Percent<br>
+              <b>Census & Level:</b> Population, Education, etc.<br>
+              <b>Product HS Codes</b>
+            </div>
+            
+            <div style="clear:both"></div>
+
+
+            
+            <div style="overflow: auto;" class="leftWidget eWidget">
+             
+                <!-- POSITIVE OUTCOMES -->
+                <div class="widgetbar">
+                  <div style="float:left">OUTCOME</div>
+                  <div style="float:right; padding-right:10px"><span style='color:#555'>YOUR SCORE:</span> 500</div>
+                </div>
+                <div class="topboxes outcomesbox" style="min-height: 120px">
+
+                  <!-- was width:230px; -->
+                  <div style="float:left;width:250px; margin-right:30px">
+                    <div>1. Value-Added <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>2. Quality Jobs <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>3. Clean Air <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>4. Clean Water <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>5. Clean Energy <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    
+                  </div>
+                  <div style="float:left;width:250px">
+                    <div>6. Local Suppliers <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>7. Green Materials <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>8. Inclusive Design <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>9. Improves Health <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>10. Creates Beauty <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                  </div>
+                </div>
+              
+            </div>
+            <div style="clear:both"></div>
+
+            <div class="leftWidget eWidget">
+              <div class="widgetbar">ENVIRONMENTAL INPUT</div>
+              <div class="topboxes" style="min-heightX: 120px">
+                <div style="font-size: 18px">Set your goals</div>
+                <br>
+
+                <b>Adjust Industry Levels</b>
+                to reflect technology initiatives 
+                that generate new revenue streams, create jobs and 
+                increase your community's positive outcomes.
+
+              </div>
+            </div>
+
+            <div class="leftWidget eWidget">
+              <div class="widgetbar" style="padding-left:5px">
+                <a href="../samples/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
+                AGRICULTURE, FORESTRY, FISHING AND HUNTING
+              </div>
+              
+              <div class="topboxes">
+                <div style="position: relative">
+                    <img src="img/sectors.gif" style="width:100%;max-width:400px;margin-right:80px" />
+                    <div style="position: absolute; right:0; top:8px; background: rgb(250,250,250); padding-left:6px">
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus"><br>
+                      <img src="img/plus-minus.gif" class="plus-minus">
+                    </div>
+                </div>
+
+                <div style="font-size: 12px; background:#eee; border-bottom:1px solid #ddd; display:inline; padding:0 4px 0 4px">
+                  <a href="../samples/dataset/">Main categories</a> | 
+                  <a href="../samples/dataset/">Show all 382 sectors</a>
+
+                  <span style="float:right; color:#777">Balanced &nbsp;</span>
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div style="overflow: auto;" class="leftWidget eWidget">
+                <div class="widgetbar">
+                  ADVERSE IMPACTS
+                  <div style="float:right; font-weight:400; padding-right:10px">
+                  Supply Chain - Full System - Production
+                  </div>
+                </div>
+                <div style="clear:both">
+                </div>
+                <div class="topboxes">
+                  <div style="border-bottom: 1px solid #eee; padding-bottom:8px; margin-bottom:8px">
+                    <b>Perspective:</b> Supply Chain, Point of Consumption<br>
+                    <b>System:</b> Full System, Food System<br>
+                    <b>Type:</b> Consumption, Production<br>
+                    <b>Indicator & Weight:</b> Impact, Resources, Waste, Chem, Econ<br>
+                  </div>
+
+                  <div class="column50" style="float:left"><img src="img/impacts1.gif" style="width:100%; padding-right:40px" />
+                  </div>
+                  <div class="column50mid" style="float:left">&nbsp;
+                  </div>
+                  <div class="column50" style="float:left"><img src="img/impacts2.gif" style="width:100%; padding-right:40px" />
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- END TOP WIDGETS -->
+
+        </div>
+        <!-- /INDUSTRIES -->
+
       </div>
 
       <!-- Below Map -->
 
-      <!-- INDUSTRIES -->
-      <div class="mock-up" style="display:none; padding-top:20px; padding-bottom:0px">
+      
 
-        <!-- TOP WIDGETS -->
-        <div>
-
-          <div style="margin-bottom:14px">
-            <b style="font-size:16px">Mock-Up</b> - <a href="../../io/charts" target="eeio-charts">Embeddable EEIO charts</a> under development.        
-          </div>
-
-          <div style="display:none; float:left; margin-right:30px">
-            Changing filters will update the URL hash value, which will trigger updates to independent widgets.
-
-            <b>Location & Weight:</b> Country, State, County, Zip<br>
-            <b>BEA Sector & Intensity:</b> Industry ID : Percent<br>
-            <b>Census & Level:</b> Population, Education, etc.<br>
-            <b>Product HS Codes</b>
-          </div>
-          
-          <div style="clear:both"></div>
-
-
-          
-          <div style="overflow: auto;" class="leftWidget eWidget">
-           
-              <!-- POSITIVE OUTCOMES -->
-              <div class="widgetbar">
-                <div style="float:left">OUTCOME</div>
-                <div style="float:right; padding-right:10px"><span style='color:#555'>YOUR SCORE:</span> 500</div>
-              </div>
-              <div class="topboxes outcomesbox" style="min-height: 120px">
-
-                <!-- was width:230px; -->
-                <div style="float:left;width:250px; margin-right:30px">
-                  <div>1. Value-Added <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>2. Quality Jobs <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>3. Clean Air <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>4. Clean Water <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>5. Clean Energy <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  
-                </div>
-                <div style="float:left;width:250px">
-                  <div>6. Local Suppliers <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>7. Green Materials <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>8. Inclusive Design <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>9. Improves Health <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                  <div>10. Creates Beauty <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                </div>
-              </div>
-            
-          </div>
-          <div style="clear:both"></div>
-
-          <div class="leftWidget eWidget">
-            <div class="widgetbar">ENVIRONMENTAL INPUT</div>
-            <div class="topboxes" style="min-heightX: 120px">
-              <div style="font-size: 18px">Set your goals</div>
-              <br>
-
-              <b>Adjust Industry Levels</b>
-              to reflect technology initiatives 
-              that generate new revenue streams, create jobs and 
-              increase your community's positive outcomes.
-
-            </div>
-          </div>
-
-          <div class="leftWidget eWidget">
-            <div class="widgetbar" style="padding-left:5px">
-              <a href="../samples/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
-              AGRICULTURE, FORESTRY, FISHING AND HUNTING
-            </div>
-            
-            <div class="topboxes">
-              <div style="position: relative">
-                  <img src="img/sectors.gif" style="width:100%;max-width:400px;margin-right:80px" />
-                  <div style="position: absolute; right:0; top:8px; background: rgb(250,250,250); padding-left:6px">
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus"><br>
-                    <img src="img/plus-minus.gif" class="plus-minus">
-                  </div>
-              </div>
-
-              <div style="font-size: 12px; background:#eee; border-bottom:1px solid #ddd; display:inline; padding:0 4px 0 4px">
-                <a href="../samples/dataset/">Main categories</a> | 
-                <a href="../samples/dataset/">Show all 382 sectors</a>
-
-                <span style="float:right; color:#777">Balanced &nbsp;</span>
-
-              </div>
-
-            </div>
-          </div>
-
-
-          <div style="overflow: auto;" class="leftWidget eWidget">
-              <div class="widgetbar">
-                ADVERSE IMPACTS
-                <div style="float:right; font-weight:400; padding-right:10px">
-                Supply Chain - Full System - Production
-                </div>
-              </div>
-              <div style="clear:both">
-              </div>
-              <div class="topboxes">
-                <div style="border-bottom: 1px solid #eee; padding-bottom:8px; margin-bottom:8px">
-                  <b>Perspective:</b> Supply Chain, Point of Consumption<br>
-                  <b>System:</b> Full System, Food System<br>
-                  <b>Type:</b> Consumption, Production<br>
-                  <b>Indicator & Weight:</b> Impact, Resources, Waste, Chem, Econ<br>
-                </div>
-
-                <div class="column50" style="float:left"><img src="img/impacts1.gif" style="width:100%; padding-right:40px" />
-                </div>
-                <div class="column50mid" style="float:left">&nbsp;
-                </div>
-                <div class="column50" style="float:left"><img src="img/impacts2.gif" style="width:100%; padding-right:40px" />
-                </div>
-            </div>
-
-          </div>
-
-        </div>
-        <!-- END TOP WIDGETS -->
-
-      </div>
-      <!-- /INDUSTRIES -->
-
-      <!-- /Below Map -->
 
     </div>
   
