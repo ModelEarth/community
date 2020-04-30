@@ -77,8 +77,6 @@ crossorigin=""></script>
   <script src="../js/leaflet/leaflet.icon-material.js"></script>
 
   <style>
-    #mapHolder{display:none;} /* temp */
-
     h2 { font-size: 18px; }
 
     .padding-left {
@@ -253,7 +251,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           <a href="https://www.georgia.org/newsroom/press-releases/gov-kemp-calls-georgia-businesses-aid-critical-health-care-needs"> Manufacturers and distributors supplying the fight against COVID-19</a> - Georgia businesses are helping the state provide, produce, distribute, or store critical health care items needed to fight the spread of COVID-19.
           - <a href="https://www.georgia.org/covid19response">Online Supplier Registration Form</a>
           <br><br>
-          
+
           Amazon is using USEEIO to reduce their carbon footprint to net zero by 2040. - 
           <a href="https://sustainability.aboutamazon.com/carbon-footprint" target="_blank">Overview</a> / 
           <a href="https://d39w7f4ix9f5s9.cloudfront.net/a4/ad/b9eca67e4578b35e8f995c8b4f9c/amazon-carbon-methodology-september-2019.pdf" target="_blank">Details</a><br>
@@ -348,18 +346,14 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       <a name="gomap"></a>
       <div id="mapHolder">
         <div class="mapHolderInner">
-          <div class="mapHolderCard card">
+          <div id="sidemapCard" class="mapHolderCard card">
             <div id="sidemapbar">
-              <div style="position:absolute; left:0; padding:4px 4px 4px 10px">
-                Connected Communities
+              <div id="sidemapName" style="position:absolute; left:0; padding:4px 4px 4px 10px">
               </div>
             </div>
-
             <div style="clear:both">  
               <div id="map2"></div>
             </div>
-
-            
           </div>
         </div>
       </div>
