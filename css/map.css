@@ -113,9 +113,7 @@
     z-index: 1;
     top: 80px;
     bottom: auto;
-    width: 46%;
-    width: 480px;
-    padding-rightX: 30px; /* since fix is relative to page */
+    widthX: 480px; /* Reset in dual-map.js */
   }
   @media (max-width: 1300px) {
     .mapHolderFixed {
@@ -140,10 +138,6 @@
     background-color: #777;
     padding: 10px;
     font-size: 12px;
-  }
-  
-  .mapHolderFixed > .mapHolderCard {
-    margin-right: 30px;
   }
 
   @media (max-width: 800px) {
