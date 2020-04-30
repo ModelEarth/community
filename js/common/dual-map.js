@@ -1223,7 +1223,10 @@ function lockSidemap() {
     }
   } else if (topReached('#hublist')) {
     if (mapFixed==false) {
+      let mapHolderInner = $('.mapHolderInner').width();
+      //alert(mapHolderInner)
       $('.mapHolderInner').addClass('mapHolderFixed');
+      $(".mapHolderInner").css("width",mapHolderInner);
       $('.mapHolderInner').removeClass('mapHolderBottom');
       //alert("fixed position")
       mapFixed = true;
