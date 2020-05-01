@@ -862,7 +862,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="hublist" style="padding-top:20px">
       <div id="hublist-padding">
         
-        <h2 class="listTitle" style="font-size: 24px; margin:0px; font-weight: 600; border-bottom:0px"></h2><br>
+        <h1 class="listTitle" style="font-size: 32px; margin:0px; font-weight: 600; border-bottom:0px"></h1><br>
 
         <div style="display:none" class="suppliers">
           
@@ -940,19 +940,6 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
               </style>
               <!-- End D3 Embedded CSV Sheet -->
 
-            
-
-            <div style="display:none">
-              <div id="itemMenu" class="filterBubble">
-                <div>View On Map</div>
-                <div>Supplier Impact</div>
-                <div>Production Impact</div>
-                <div>Add to Collections</div>
-                <hr>
-                <div id='showLocalNews'>Submit Updates</div>
-              </div>
-            </div>
-
           </sectionX>
 
 
@@ -993,7 +980,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           </div>
 
           <div id="sidemapMessage" class="suppliers" style="display:none">
-            Map locations are approximate since supplier data is 
+            <b>Randomized</b> - Map locations are approximate since supplier data is 
             primarily for hospitals and <span style="white-space: nowrap">emergency workers.</span>
           </div>
 
@@ -1339,9 +1326,11 @@ $(document).ready(function () {
     $('#keywordsTB').val(catTitle);
     $('#items').prop("checked", true); // Add front to parameter name.
     
-    $('#industryCatList > div').css('border', 'solid 1px #fff');
-    $(this).css('border', 'solid 1px #aaa');
-    $(this).css('border-right', 'solid 5px #aaf');
+    //$('#industryCatList > div').css('border', 'solid 1px #fff');
+    $('#industryCatList > div').removeClass('catListSelected');
+    //$(this).css('border', 'solid 1px #aaa');
+    //$(this).css('border-left', 'solid 5px #aaf');
+    $(this).addClass('catListSelected');
     $("#catsMobile").hide();
     $('#catListHolderShow').text('Show Categories');
     //$('html,body').animate({

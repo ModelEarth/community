@@ -867,7 +867,7 @@ function showList(dp,map) {
         output = "<div class='detail'>";
       }
 
-      output += "<div class='showItemMenu local mock-up' style='display:none;float:right'>&mldr;</div>"; 
+      output += "<div class='showItemMenu' style='float:right'>&mldr;</div>"; 
       output += "<div style='padding-bottom:4px'><div style='width:15px;height:15px;margin-right:6px;margin-top:8px;background:" + colorScale(elementRaw[dp.valueColumn]) + ";float:left'></div>";
 
       //output += "<div style='position:relative'><div style='float:left;min-width:28px;margin-top:2px'><input name='contact' type='checkbox' value='" + name + "'></div><div style='overflow:auto'><div>" + name + "</div>";
@@ -986,6 +986,18 @@ function showList(dp,map) {
       }
   );
 
+  var imenu = "<div style='display:none'>";
+  imenu += "<div id='itemMenu' class='filterBubble'>";
+  imenu += "<div>View On Map</div>";
+  imenu += "<div class='localonly mock-up' style='display:none'>Supplier Impact</div>";
+  imenu += "<div class='localonly mock-up' style='display:none'>Production Impact</div>";
+  imenu += "<div class='localonly mock-up' style='display:none'>Add to Collections</div>";
+  imenu += "<hr class='localonly mock-up' style='display:none;padding:0px !important'>";
+  imenu += "<div class='localonly mock-up' style='display:none' id='showLocalNews'>Submit Updates</div>";
+  imenu += "</div>";
+  imenu += "</div>";
+  $("body").append(imenu);
+
   if (dataMatchCount > 0) {
       //alert("show") // was twice BUGBUG
       //  (dataSet.length - 1) 
@@ -1008,6 +1020,10 @@ function showList(dp,map) {
     $("#nomatchText").html(noMatch);
     $("#nomatchPanel").show();
   }
+
+  $(document).click(function(event) { // Hide open menus
+      $('#itemMenu').hide();
+  });
 
   dp.data = data_out;
   return dp;
