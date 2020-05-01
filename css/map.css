@@ -102,6 +102,28 @@
     background-color: #fcfcfc;
     cursor:pointer;
   }
+  #itemMenu {
+    border:1px solid #ccc;
+    padding: 5px 0 5px 0;
+    z-index: 10;
+    background: #fff;
+    position: absolute;
+    top:0px;
+    right:0px;
+  }
+  #itemMenu > div {
+    padding: 6px 30px 6px 30px;
+  }
+  #itemMenu > div:hover {
+    background: #eee;
+  }
+  .showItemMenu {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .showItemMenu:hover {
+    cursor: pointer;
+  }
 
   .mapHolderBottom {
     position: absolute;
@@ -127,6 +149,7 @@
   }
   #sidemapbar {
     background-color: #ddd;
+    background-color: #fff;
     position: relative;
     color: #555;
     font-size: 16px;
@@ -134,8 +157,7 @@
     text-transform: uppercase;
   }
   #sidemapMessage {
-    color: #fff;
-    background-color: #777;
+
     padding: 10px;
     font-size: 12px;
   }

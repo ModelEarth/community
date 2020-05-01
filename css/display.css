@@ -180,25 +180,10 @@ body {
 	position: relative;
 	max-widthX: 400px;
 }
-#itemMenu {
-	border:1px solid #ccc;
-	padding: 5px 0 5px 0;
-	z-index: 10;
-	background: #fff;
-	position: absolute;
-	top:0px;
-	right:0px;
-}
-#itemMenu > div {
-	padding: 6px 30px 6px 30px;
-}
-#itemMenu > div:hover {
-	background: #eee;
-}
-.showItemMenu {
-	font-size: 24px;
-	cursor: pointer;
-}
+#catListSelected() {
+	border: solid 1px #aaa;
+    border-left: solid 5px #aaf;
+} 
 #mainframe {
 
 }

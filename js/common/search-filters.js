@@ -170,7 +170,6 @@ $(document).ready(function () {
     		$(".fieldSelector").hide(); // Avoid since this occurs when typing text in search field.
     	}
     	$('#topPanel').hide();
-    	$('#itemMenu').hide();
 	});
 	
 	function hideNonListPanels() {
