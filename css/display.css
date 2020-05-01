@@ -180,7 +180,7 @@ body {
 	position: relative;
 	max-widthX: 400px;
 }
-#catListSelected() {
+.catListSelected {
 	border: solid 1px #aaa;
     border-left: solid 5px #aaf;
 } 
