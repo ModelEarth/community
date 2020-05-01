@@ -50,6 +50,9 @@
 <body>
 
 <style>
+.sidemapCard {
+  displayX: none; /* Also reactivate in dual-map. */
+}
 #map2 {
   height:400px;
 }
@@ -237,14 +240,20 @@ b {
 
 
 <!-- INTRO -->
-<div id="readmeHolder" class="content" style="display:none; margin-top:0px; margin-bottom:0px">
+<div id="readmeHolder" class="content" style="display:none; margin-top:0px; padding-bottom:40px">
   <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
   <div id="readmeDiv"></div>
+  <a href="javascript:void(0)" onclick="showOverview();" id="showOverview">Show overview</a>
 </div>
+
 <script>
   if (param["design"]) {
     document.getElementById("readmeHolder").style.display = "block";
     document.getElementById("readmeEdit").style.display = "block";
+    loadMarkdown("../resources/USEEIO/design/intro.md", "readmeDiv", "_parent");
+  }
+  function showOverview() {
+    document.getElementById("showOverview").style.display = "none";
     loadMarkdown("../resources/USEEIO/design/README.md", "readmeDiv", "_parent");
   }
 </script>
@@ -988,7 +997,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 
         <!-- INDUSTRIES -->
-        <div class="mock-up" style="display:none; padding-top:20px; padding-bottom:0px">
+        <div class="mock-up" style="display:none; padding-top:20px; padding-bottom:80px">
 
           <!-- TOP WIDGETS -->
           <div>
@@ -1121,7 +1130,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
           </div>
           <!-- END TOP WIDGETS -->
-
+          &nbsp;
+          <br><br>
         </div>
         <!-- /INDUSTRIES -->
 
