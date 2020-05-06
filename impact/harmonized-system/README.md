@@ -5,13 +5,16 @@ International Harmonized System (HS) Codes reside in the [impact mockup](../../.
 
 Potential Project: Add a crosswalk from NAICS to HS.  
 
-Fork the [USEEIO widgets](https://github.com/USEPA/useeio-widgets) repo and point it at your region's EEIO files.  
+Fork the [USEEIO widgets](https://github.com/USEPA/useeio-widgets) repo and make updates to point it at your region's EEIO files.  
 
 #### International Input-Output    
+
+1. [EXIOBASE database](https://simapro.com/products/exiobase-database/) - Registration is free to download files.  
 
 1. [OECD - Organization for Economic
 Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France  
 
 1. [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
+
 
 [International Code for All members](https://codeforall.org/members) | [More Project Ideas](../../community)
