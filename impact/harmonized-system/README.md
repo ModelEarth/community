@@ -9,7 +9,7 @@ Fork the [USEEIO widgets](https://github.com/USEPA/useeio-widgets) repo and make
 
 #### International Input-Output    
 
-1. [EXIOBASE database](https://simapro.com/products/exiobase-database/) - Registration is free to download files.  
+1. [EXIOBASE database](https://simapro.com/products/exiobase-database/) - Registration is free for downloading files.  
 
 1. [OECD - Organization for Economic
 Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France  
@@ -17,4 +17,4 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 1. [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
 
 
-[International Code for All members](https://codeforall.org/members) | [More Project Ideas](../../community)
+[Code for All member countries](https://codeforall.org/members) | [More Project Ideas](../../community)
