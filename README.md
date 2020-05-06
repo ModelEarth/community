@@ -137,7 +137,7 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 
 [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
 
-[EXIOBASE database](https://simapro.com/products/exiobase-database/) - Registration is free to download files.  
+[EXIOBASE database](https://simapro.com/products/exiobase-database/) - Registration is free for downloading files  
 
 [ImPlan Impact Analysis](https://implanhelp.zendesk.com/hc/en-us/articles/360039284273-Environmental-Data) - 8 broad categories using USEEIO model data  
 
