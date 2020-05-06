@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Sustainable Community Web Challenge</title>
+<link rel="icon" type="image/x-icon" href="img/logo/favicon.png" />
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/d3/d3.v5.min.js"></script>
+<script type="text/javascript" src="../js/common/showdown.min.js"></script>
+<script type="text/javascript" src="../js/common/common.js"></script>
+<!--
+<script type="text/javascript" src="../js/common/navigation.js"></script>
+-->
+<link rel="stylesheet" href="../css/community.css" />
+</head>
+
+<!--
+    12-digit FIPS Code - state, county, tract, block group
+    https://www.policymap.com/2012/08/tips-on-fips-a-quick-guide-to-geographic-place-codes-part-iii/
+-->
+<body style="font-family: Lato, sans-serif;">
+<script>
+  loadMarkdown("https://georgiadata.github.io/smartdata/README.md", "readmeDiv", "_parent");
+
+  
+  //loadMarkdown("https://raw.githubusercontent.com/wiki/USEPA/useeio-widgets/Home.md", "readmeDiv", "_parent");
+  loadMarkdown("https://raw.githubusercontent.com/wiki/USEPA/useeio-widgets/Use.md", "useDiv", "_parent");
+  loadMarkdown("../../io/Overview.md", "georgiaDiv", "_parent");
+  loadMarkdown("../impact/harmonized-system/README.md", "ioDiv", "_parent");
+</script>
+
+<style>
+#fullcolumn {
+    background: #fafafa;
+}
+.gobutton {
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 14px 12px 15px 12px;
+    min-height: 38px;
+    color: #fff;
+    box-sizing: border-box;
+    background: #555;
+    height: 48px;
+    text-decoration: none;
+}
+.resultsHolder {
+    background: rgba(33,33,33,0.95);
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    line-height: 26px;
+}
+.txtbox {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    width: 100%;
+    max-width: 190px;
+    padding: 0 20px;
+    height: 48px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #777;
+    border: solid 1px #b7b7b7;
+    border-radius: 5px;
+    margin-right: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+@media (max-width: 1200px) {
+    #rightcolumn {
+        display:none;
+    }
+}
+
+#sidecolumnX {
+    display: none !important;
+}
+#sidecolumnContentX {
+    display: none !important;
+}
+#logoholderside {
+    display: none !important;
+}
+.leftLogo {
+    float:left;
+    margin:20px;
+    margin-right:40px;
+}
+</style>
+
+<div style="position:relative; background:#aaa"><!-- #dae8eb -->
+
+    <div class="local" style="float:right; padding:20px; clear:both; display:none">
+
+        <div id="greatestNeedsHolder" class="resultsHolder">
+          <div style="margin-bottom:10px;padding-top:0px">
+
+            <div style="margin-bottom:8px">Projections...</div>
+
+            <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
+            <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
+            <div style="clear:both"></div>
+          </div>
+        </div>
+        <br><br>
+
+      <script>
+        $('#zip').on("keypress", function(e) {
+          if (e.keyCode == 13) { // Enter hit
+            goZip();
+          }
+        });
+        function goZip() {
+          zip = $('#zip').val();
+          if (zip.length == 5) {
+            window.location='../zip/#zip=' + zip;
+          } else {
+            alert('Please enter a 5 digit zip.');
+          }
+        }
+      </script>
+    </div>
+
+    <!-- psd resides in smartdata -->
+    <div style="background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; border:0px">
+        <div style="max-width:1400px"><img src="../img/overview/banner-1.png"><img src="../img/overview/banner-2.png" class="hidemobile" ></div>
+    </div>
+</div>
+
+<div style="clear:both"></div>
+
+<div id="sidecolumn"></div>
+
+
+
+<div id="rightcolumn" style="float:right; max-width: 400px; padding-left:20px; padding-right:10px;background-color: #fff">
+    <a class="twitter-timeline" data-tweet-limit="5" href="https://twitter.com/EPA"></a> 
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="content" style="overflow:auto; padding-right:20px">
+
+    <div style="margin-bottom:20px">
+    </div>
+
+    <div style="clear:both; overflow: auto;">
+
+        <div class="leftLogo">
+            <img src="../img/logo/epa.png" style="width:100%; max-width:200px">
+        </div>
+        <div style="overflow:auto">
+            <div id="readmeDiv"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div style="clear:both; overflow: auto;">
+
+        <div class="leftLogo">
+            <img src="../img/logo/code-for-all.png" style="width:100%; max-width:200px">
+        </div>
+        <div style="overflow:auto">
+            <div id="ioDiv"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div style="clear:both; overflow: auto;">
+
+        <div class="leftLogo">
+            <img src="../img/logo/github.png" style="width:100%; max-width:200px">
+        </div>
+        <div style="overflow:auto">
+            <div id="useDiv"></div>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div style="clear:both; overflow: auto;">
+
+        <div class="leftLogo">
+            <img src="../img/logo/georgia.png" style="width:100%; max-width:200px">
+        </div>
+        <div style="overflow:auto">
+            <div id="georgiaDiv"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
