@@ -12,7 +12,10 @@ Form a virtual team with your organization or join an existing team for our 2020
 
 <h3>$10,000 in Challenge Awards</h3>
 
-Multiple awards are being funded by the US EPA. You are welcome to participate from any location in the world.  
+Multiple awards are being funded by the US EPA.  
+You are welcome to participate from any location in the world.  
+
+<a href="https://www.cognitoforms.com/USEPA1/YourInterests">Register to participate</a>  
 
 <b>August and September - Team Formation, Selecting Topics, Collaboration Begins</b>  
 
@@ -22,15 +25,12 @@ Multiple awards are being funded by the US EPA. You are welcome to participate f
 
 <b>Saturday, October 24 - 11 AM to Noon - Final Round, Integrations - Zoom and Slack Video</b> 
 
-<b>Sunday, October 25 - 2 PM to 4 PM - Zoom Presentations and Awards</b>   
+<b>Sunday, October 25 - 2 PM to 4 PM - Zoom Presentations and Awards</b>  
 
-<a href="https://www.cognitoforms.com/USEPA1/YourInterests">Register to participate</a>  
-<br>
-
-The Sept 12 Code for America Day of Civic Coding will focus on integration with COVID-19 projects. During the Sept 12th Zoom call, we'll present info about the Sustainable Communities Web Challenge. Some teams may opt to start building upon the EPA's industry input-output models and maps at that time.  
+The Code for America Day of Civic Coding on Sept 12 will focus on integration with COVID-19 projects. During the Sept 12th Zoom call, we'll present info about the Sustainable Communities Web Challenge. Some teams may opt to start building upon the EPA's industry input-output models and maps at that time.  
 
 
-<b>The US Environmentailly-Enable Input-Output Model integrations have the potential to reveal...</b>
+<b>Project participants will explore</b>
 1. Goods and services each community produces (by county and zip)  
 2. The environmental impact of each community's top industries  
 3. Opportunities to conserve and reinvest under the impacts of Covid19
@@ -48,4 +48,4 @@ Visit <a target="_parent" href="https://model.earth/community/">model.earth/comm
 
 ---
 <a href="https://www.cognitoforms.com/USEPA1/YourInterests">Register to participate</a> | 
-<a href="https://model.georgia.org/" target="_parent">Opportunities for Georgia communities</a>
+<a href="https://model.georgia.org/" target="_parent">Opportunities for Georgia Communities</a>
