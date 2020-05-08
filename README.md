@@ -2,6 +2,7 @@
 
 Prep for the EPA's sustainable community model building virtual events in 2020.   
 
+Check out our [Input-Output Starter Widgets](../eeio/charts/).  
 <!--
 Supply chain "License to Operate" with the support of the community.
 
