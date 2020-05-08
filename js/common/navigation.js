@@ -51,23 +51,26 @@ $(document).ready(function(){
 
  		// To do: fetch the existing background-image.
  		
- 		if(1==1 && (location.host.indexOf('georgia') >= 0 || location.host.indexOf('localhost') >= 0)) {
+ 		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
  			$(".siteTitleShort").text("Model Georgia");
 	 		imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
-	 		$('#logoholder').addClass('logoholder-state');
+	 		imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png";
+ 			$('#logoholder').addClass('logoholder-state');
 	 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
 	 		$('#headerLocTitle').html("Georgia");
 	 	} else {
 	 		$(".siteTitleShort").text("Model Earth");
 	 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
-	 		$('#logospace').css('margin-top','2px');
+	 		imageUrlSide = climbpath + "../community/img/logo/favicon.png";
+	 		$('#logoholderside').css('width', '24px');
+	 		$('#logoholderside').css('height', '24px');
+ 			$('#logospace').css('margin-top','2px');
 	 		$('#logoholder').addClass('logoholder-modelearth');
 	 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
 	 		//$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
 	 	}
 
-	 	imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png"; // Until modelEarth logo is sized correctly
- 		$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
+	 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
 		$('#logoholder').css('background-repeat', 'no-repeat');
 
  		//$('#logoholder').css('background-size', '70% 70%');
@@ -107,7 +110,13 @@ $(document).ready(function(){
 
 		$('#logoholderside').css('background-image', 'url(' + imageUrlSide + ')');
 		$('#logoholderside').css('background-repeat', 'no-repeat');
+		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
 
+	 	} else {
+	 		$('#logoholderside').css('margin-top', '-67px');
+	 		$('#logoholderside').css('width', '25px');
+	 		$('#logoholderside').css('height', '25px');
+	 	}
 		// Make paths relative to current page
 		
  		$("#sidecolumn a[href]").each(function() {
