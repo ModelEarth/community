@@ -12,7 +12,7 @@ Form a virtual team with your organization or join an existing team for our 2020
 
 <h3>$10,000 in Challenge Awards</h3>
 
-Multiple awards are being funded by the US EPA. You are welcome to participate from any location in the world!  
+Multiple awards are being funded by the US EPA. You are welcome to participate from any location in the world.  
 
 <b>August and September - Team Formation, Selecting Topics, Collaboration Begins</b>  
 
