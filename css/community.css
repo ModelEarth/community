@@ -187,7 +187,7 @@ mark {
 code {
   background-color: #eee;
 }
-.js {
+.js, pre code {
   background-color: #eee;
   padding:15px;
   border-left: 4px solid #137AD1;
