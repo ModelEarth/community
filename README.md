@@ -2,7 +2,7 @@
 
 Prep for the EPA's sustainable community model building virtual events in 2020.   
 
-Check out our [Input-Output Starter Widgets](../eeio/charts/).  
+Check out the [Input-Output Starter Widgets](https://modelearth.github.io/eeio/charts/) being developed.  
 <!--
 Supply chain "License to Operate" with the support of the community.
 
