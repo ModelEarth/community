@@ -2,8 +2,12 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-We're looking for communities, companies and coders to participate in implementing innovative sustainability apps. We'll be using the new environmentally-extended input-output model called 
-<a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. We're combining state-level economic data, community resources and planning input from local communities to customize new apps to meet community needs. Check out the [Input-Output Starter Widgets](https://modelearth.github.io/eeio/charts/) being developed.  
+We're looking for communities, companies and coders to participate in implementing innovative sustainability apps created in partnership with the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
+<!--
+We'll be using the new environmentally-extended input-output model called 
+<a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
+-->
+We're combining national and state-level economic data, community resource data and planning input from local communities to customize new environmental indicator models to meet community needs. Check out the [Input-Output Starter Widgets](https://modelearth.github.io/eeio/charts/) being developed.  
 
 
 <h3>Join our Code for America Web Challenge - August to October 25, 2020</h3> 
