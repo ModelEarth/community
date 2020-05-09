@@ -2,12 +2,13 @@
 
 Stand-alone examples of formatting and displaying community data.  
 
-## [1. Create a page (markdown)](markdown)  
-## [2. Display your data (dataset)](dataset)
-## [3. Customize data from API (useeio)](../resources/useeio)  
-## [4. Visualize your data (charts)](charts)  
-## [5. Show locations (routing)](routing)  
-## [6. Counties and Zipcodes (maps)](maps) 
+## [1. Input-Output Widgets (eeio)](../../eeio/charts)  
+## [2. Create a page (markdown)](markdown)  
+## [3. Display your data (dataset)](dataset)
+## [4. Customize data from API (useeio)](../resources/useeio)  
+## [5. Visualize your data (charts)](charts)  
+## [6. Show locations (routing)](routing)  
+## [7. Counties and Zipcodes (maps)](maps) 
 
 <br>
 ### Related Resources

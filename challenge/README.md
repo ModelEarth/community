@@ -19,7 +19,7 @@ Form a virtual team with your organization or join an existing team for our 2020
 Multiple awards are being funded by the US EPA.  
 You are welcome to participate from any location in the world.  
 
-<a href="https://www.cognitoforms.com/USEPA1/YourInterests">Register to participate</a>  
+<a href="registration/">Register to participate</a>  
 
 <b>August and September - Team Formation</b>  
 
@@ -42,7 +42,7 @@ The Code for America Day of Civic Coding on Sept 12 will focus on integration wi
 4. How new technologies can change a community's impact  
 5. Ways communities are using and reusing materials to fuel net zero initiatives  
 
-<a href="https://www.cognitoforms.com/USEPA1/YourInterests">Share your ideas</a> 
+<a href="/registration/">Share your ideas</a> 
 for ways communities can use data and planning to be more resilient as they work toward becoming net zero. <!-- One to three page idea-sheets will be judged in May of 2020. Your input -->Your idea-sheets will help shape our Sustainable Community projects.   
 
 <!--
@@ -52,5 +52,5 @@ A panel of judges will use Slack video to deliberate while using a Google Form f
 Visit <a target="_parent" href="https://model.earth/community/">model.earth/community</a> for more details.  
 
 ---
-<a href="https://www.cognitoforms.com/USEPA1/YourInterests">Register to participate</a> | 
+<a href="registration/">Register to participate</a> | 
 <a href="https://model.georgia.org/" target="_parent">Opportunities for Georgia Communities</a>

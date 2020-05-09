@@ -2,7 +2,6 @@
 
 Prep for the EPA's sustainable community model building virtual events in 2020.   
 
-Check out the [Input-Output Starter Widgets](https://modelearth.github.io/eeio/charts/) being developed.  
 <!--
 Supply chain "License to Operate" with the support of the community.
 
@@ -43,7 +42,7 @@ Check that the restaurants from this [eatery.com list](https://atlanta.eater.com
 
 ### Upcoming
 
-<a href="https://model.georgia.org/communities/" style="font-size:18px">2020 Sustainable Commuities Web Challenge</a>  
+<a href="challenge" style="font-size:18px">2020 Sustainable Commuities Web Challenge</a>  
 
 $10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 

@@ -12,7 +12,7 @@ var param = loadParams(location.search,location.hash);
 function loadParams(paramStr,hashStr) {
   let scripts = document.getElementsByTagName('script');
   let myScript = scripts[ scripts.length - 1 ];
-  //let params = getParams(myScript.src); // Object
+  //alert(myScript.src)
 
   let params = {};
   let includepairs = myScript.src.substring(myScript.src.indexOf('?') + 1).split('&');

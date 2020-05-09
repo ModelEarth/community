@@ -106,6 +106,9 @@ $(document).ready(function(){
         	}
 		});
 	});
+
+ 	// SIDE NAV WITH HIGHLIGHT ON SCROLL
+	if (param["sidecolumn"]) {
 	$("#sidecolumn").load( climbpath + "../community/nav.html", function( response, status, xhr ) {
 
 		$('#logoholderside').css('background-image', 'url(' + imageUrlSide + ')');
@@ -270,7 +273,8 @@ $(document).ready(function(){
 			}
 		}
 	});
-
+	}
+	// END SIDE NAV WITH HIGHLIGHT ON SCROLL
 	
 });
 
