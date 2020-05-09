@@ -58,6 +58,7 @@ $(document).ready(function(){
  			$('#logoholder').addClass('logoholder-state');
 	 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
 	 		$('#headerLocTitle').html("Georgia");
+	 		$('.georgia').show(); // For nav menu
 	 	} else {
 	 		$(".siteTitleShort").text("Model Earth");
 	 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
