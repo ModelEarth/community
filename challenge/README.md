@@ -7,7 +7,7 @@ We're looking for communities, companies and coders to participate in implementi
 We'll be using the new environmentally-extended input-output model called 
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
 -->
-We're combining national and state-level economic data, community resource data and planning input from local communities to customize new environmental indicator models to meet community needs. Check out the [Input-Output Starter Widgets](https://modelearth.github.io/eeio/charts/) being developed.  
+We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet community needs. Check out the [Input-Output Starter Widgets](https://modelearth.github.io/eeio/charts/) being developed.  
 
 
 <h3>Join our Code for America Web Challenge - August to October 25, 2020</h3> 
@@ -21,7 +21,7 @@ You are welcome to participate from any location in the world.
 
 <a href="https://www.cognitoforms.com/USEPA1/YourInterests">Register to participate</a>  
 
-<b>August and September - Team Formation, Selecting Topics, Collaboration Begins</b>  
+<b>August and September - Team Formation</b>  
 
 <b>Saturday, September 12 - Code for America Day of Civic Coding</b>   
 
@@ -31,7 +31,8 @@ You are welcome to participate from any location in the world.
 
 <b>Sunday, October 25 - 2 PM to 4 PM - Zoom Presentations and Awards</b>  
 
-The Code for America Day of Civic Coding on Sept 12 will focus on integration with COVID-19 projects. During the Sept 12th Zoom call, we'll present info about the Sustainable Communities Web Challenge. Some teams may opt to start building upon the EPA's industry input-output models and maps at that time.  
+The Code for America Day of Civic Coding on Sept 12 will focus on integration with <span style="white-space: nowrap;"><a href="https://discourse.codeforamerica.org/t/index-of-covid-19-projects-in-the-network/715">COVID-19 project frameworks</a>.</span> 
+<!--During the Sept 12th Zoom call, we'll present info about the Sustainable Communities Web Challenge. Some teams may opt to start building upon the EPA's industry input-output models and maps at that time.  -->
 
 
 <b>Project participants will explore</b>
