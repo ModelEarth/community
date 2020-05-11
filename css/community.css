@@ -97,15 +97,16 @@ body {
   font-size: 15px;
   line-height: 1.5;
 }
+.contentpadding {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+}
 .content li {
-    margin-left: -10px;
-  }
-@media (max-width: 800px) {
-  .content {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-  }
+  margin-left: -10px;
+}
+
+@media (max-width: 1200px) {
   .content li {
     margin-left: -20px;
   }
@@ -157,14 +158,28 @@ h3 {
     font-weight: 400;
   }
 }
-.rightside {
+.rightside, .floatright {
   float:right;
   max-width:400px;
   margin-left:30px;
   margin-bottom:30px;
   font-size: 18px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1120px) {
+  .rightside {
+    max-width:auto;
+    margin-left:0px;
+    margin-bottom:30px;
+    float:none;
+  }
+}
+@media (max-width: 600px) {
+  .floatright {
+    max-width:auto;
+    margin-left:0px;
+    margin-bottom:30px;
+    float:none;
+  }
   .fullMobile {
     float:none;
     width:100% !important;
