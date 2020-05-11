@@ -2,7 +2,7 @@
 
 Stand-alone examples of formatting and displaying community data.  
 
-## [1. Input-Output Widgets (eeio)](../../eeio/charts)  
+## [1. Input-Output Widgets (eeio)](https://modelearth.github.io/eeio/charts)  
 ## [2. Create a page (markdown)](markdown)  
 ## [3. Display your data (dataset)](dataset)
 ## [4. Customize data from API (useeio)](../resources/useeio)  
