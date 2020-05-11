@@ -34,6 +34,24 @@
 </script>
 
 <style>
+.pagecard {
+    clear:both;
+    overflow: auto;
+
+    background: #fff;
+    min-height: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+@media (max-width: 1200px) {
+    .pagecard {
+        padding:40px;
+        margin-right:20px;
+    }
+}
 #fullcolumn {
     background: #fafafa;
 }
@@ -100,6 +118,7 @@
     .leftLogo {
         float:none;
         margin-right:20px;
+        max-width: 150px;
     }
 }
 </style>
@@ -162,7 +181,7 @@
     <div style="margin-bottom:20px">
     </div>
 
-    <div style="clear:both; overflow: auto;">
+    <div class="pagecard">
 
         <div class="leftLogo">
             <img src="../img/logo/epa.png" style="width:100%; max-width:200px">
@@ -173,9 +192,7 @@
         </div>
     </div>
 
-    <hr>
-
-    <div style="clear:both; overflow: auto;">
+    <div class="pagecard">
 
         <div class="leftLogo">
             <img src="../img/logo/github.png" style="width:100%; max-width:200px">
@@ -185,9 +202,7 @@
         </div>
     </div>
 
-    <hr>
-
-    <div style="clear:both; overflow: auto;">
+    <div class="pagecard">
 
         <div class="leftLogo">
             <a href="https://codeforall.org/members" target="_blank"><img src="../img/logo/code-for-all.png" style="width:100%; max-width:200px"></a>
@@ -196,10 +211,8 @@
             <div id="ioDiv"></div>
         </div>
     </div>
-
-    <hr>
     
-    <div style="clear:both; overflow: auto;">
+    <div class="pagecard">
 
         <div class="leftLogo">
             <img src="../img/logo/georgia.png" style="width:100%; max-width:200px">
