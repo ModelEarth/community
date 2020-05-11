@@ -1184,8 +1184,10 @@ function loadMap1() { // Also called by search-filters.js
   if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listInfo = "Select a category to filter your results.";
-    dp1.dataset = "/smartdata/resources/suppliers/GEMA-Manufacturers-and-Distributors-Randomized.csv";
-
+    dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers.csv";
+    if (param["include"] == "previous") {
+      dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers_pre.csv";
+    }
     dp1.dataTitle = "Manufacturers and Distributors";
     dp1.valueColumn = "type";
     dp1.valueColumnLabel = "Type";
