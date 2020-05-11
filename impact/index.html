@@ -1185,7 +1185,7 @@ function loadMap1() { // Also called by search-filters.js
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listInfo = "Select a category to filter your results.";
     dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers.csv";
-    if (param["approved"] == "true") {
+    if (param["initial"] == "response") {
       dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers_pre.csv";
     }
     dp1.dataTitle = "Manufacturers and Distributors";
