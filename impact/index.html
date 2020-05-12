@@ -245,6 +245,9 @@ b {
 
 
 <!-- INTRO -->
+
+<div id="introDiv" class="content contentpadding"></div>
+
 <div id="readmeHolder" class="content contentpadding" style="display:none; margin-top:0px; padding-bottom:40px">
   <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
   <div id="readmeDiv"></div>
@@ -252,6 +255,11 @@ b {
 </div>
 
 <script>
+  if (param["intro"] || param["show"] == "farmfresh") {
+    //document.getElementById("readmeHolder").style.display = "block";
+    //document.getElementById("readmeEdit").style.display = "block";
+    loadMarkdown("../farmfresh/README.md", "introDiv", "_parent");
+  }
   if (param["design"]) {
     document.getElementById("readmeHolder").style.display = "block";
     document.getElementById("readmeEdit").style.display = "block";
@@ -259,6 +267,7 @@ b {
   }
   function showOverview() {
     document.getElementById("showOverview").style.display = "none";
+    $("#readmeDiv").html("");
     loadMarkdown("../resources/USEEIO/design/README.md", "readmeDiv", "_parent");
   }
 </script>
@@ -605,8 +614,6 @@ b {
     
     <b>Mock-Up</b> - HS categories are not yet cross-related to NAICS categories.<br><br>
 
-    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
-
     <div id="hsCatList">
       <div range="01-05" text="">Animals & Animal Products</div>
       <div range="06-15" text="">Vegetable Products</div>
@@ -639,9 +646,13 @@ b {
 
     <a name="listtop"></a>
 
-    
     <div id="productSubcats" class="menu" style="padding-top:14px">
     </div>
+    <div style="clear:both;"></div>
+
+    <br>
+    HS Codes<br>
+    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
 
     <div id="topPanelFooter">Show more</div>
   </div>

@@ -132,7 +132,7 @@ $(document).ready(function () {
         	});
 
     	} else {
-    		$('#topPanel').hide();
+    		//$('#topPanel').hide();
     		$('#mainCats > div').each(function(index) {
     			if ($(this).attr("range")) {
 	        		$(this).html($(this).attr("text"));
