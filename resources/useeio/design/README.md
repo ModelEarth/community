@@ -16,8 +16,7 @@ The "National / Organizational" toggle could reside in the "Where" top filter, a
 
 Links for 8 to 12 common organization types could reside on the location intro page.  
 
-URLs could change with each click so the current view can be copied and shared. 
-Michael Srocka is adding #hash values that change with the <a href="../io/charts" style="white-space: nowrap;">filters and chart widgets</a>.  
+URLs could change with each click so the current view can be copied and shared.   
 
 Links could be included to related GitHub pages from each chart, data set, filter set and readme file.  
 
@@ -28,7 +27,7 @@ Users could be provided with a means to add their own datasets with storage in t
 
 ## Impact Bar Charts
 
-The new <a href="../io/charts/sector_list_with_impact_chart.html#sectors=312120,31151A,312110,312130">impact chart widget</a> is driven by hash values to allow for the separation of modules that interact with other widgets on the same page. Possible bar chart updates include: 
+The <a href="https://modelearth.github.io/eeio/charts">chart widgets</a> are driven by hash values to allow for the separation of modules that interact with other widgets on the same page. Possible bar chart updates include: 
 
 1. Display the mid-size indicator name on charts. - DONE
 2. Use only half the page for the text and horizontal bars. - DONE
