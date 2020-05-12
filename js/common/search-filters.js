@@ -262,9 +262,9 @@ $(document).ready(function () {
    	function clearFields() {
    		$(".eWidget").show();
    		hideNonListPanels();
-   		$('#industryCatList > div').css('border', 'solid 1px #fff');
+   		//$('#industryCatList > div').css('border', 'solid 1px #fff');
+   		$('#industryCatList > div').removeClass('catListSelected');
    		$("#keywordsTB").val("");
-   		//$("#products").val("");
    		$("#catSearch").val("");
    		$("#productCodes").val("");
    		$("#productCatTitle").html("");
