@@ -206,8 +206,9 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
         layerControl[whichmap2].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
 
-      addLegend(dp.scale, dp.scaleType, dp.name); // Reactivate
-
+      if (dp.showLegend != false) {
+        addLegend(dp.scale, dp.scaleType, dp.name);
+      }
   
 
       // All layers reside in this object:
