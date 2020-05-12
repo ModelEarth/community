@@ -1080,6 +1080,14 @@ function popMapPoint(dp, map, latitude, longitude) {
           }).addTo(dp.group);
   }
   */
+  if (param["initial"] == "response") {
+    if (dp.public == "Yes") {
+      $(".suppliers_pre_message").hide();
+    } else {
+      //alert(dp.public)
+      $(".suppliers_pre_message").show();
+    }
+  }
 }
 // Scales: http://d3indepth.com/scales/
 function getScale(data, scaleType, valueCol) {

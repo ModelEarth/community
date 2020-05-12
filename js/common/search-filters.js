@@ -38,7 +38,7 @@ $(document).ready(function () {
 			$('#tableSide').removeClass('hideCatsMobile');
 		} else {
 			$('#catsMobile').hide();
-			$('#catListHolderShow').text('Show Categories');
+			$('#catListHolderShow').text('Product Categories');
 			$('#tableSide').addClass('hideCatsMobile');
 		}
     });
@@ -188,7 +188,7 @@ $(document).ready(function () {
 	    	// In case user has resized from mobile to full and industry list is not available.
 	    	// Coule be moved to a screen width watcher.
 			$('#catListHolderShow').show();
-			$('#catListHolderShow').text('Show Categories');
+			$('#catListHolderShow').text('Product Categories');
 		}
 		let searchQuery = $('#keywordsTB').val();
 		updateHash({"q":searchQuery});

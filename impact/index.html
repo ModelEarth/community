@@ -163,6 +163,7 @@ b {
 #catListClone div {
   font-size: 18px;
   line-height: 26px;
+  border-bottom: 1px solid #ccc;
 }
 
 #industries {
@@ -235,6 +236,10 @@ b {
 }
 .plus-minus:hover {
   opacity: 1;
+}
+#tableSide {
+  float:left;
+  displayX:none;
 }
 </style>
 
@@ -560,15 +565,15 @@ b {
 
 <div style="display:none; float:left" class="suppliers">
   <div class="filterLabel filterLabelMain">&nbsp;</div>
-  <div id="catListHolderShow" class='detailbutton' style="color:#fff; background:#0071e3; float:left;margin-left:8px">
-      Show Categories
+  <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">
+      Product Categories
   </div>
 </div>
 
 <div style="clear:both"></div>
 
-  <div id="catsMobile" style="display:none; padding-top:15px; width:100%">
-    <div id="catListClone" class="showMobile" style="width:100%">
+  <div id="catsMobile" class="card" style="display:none; margin-top:15px; margin-right:20px;">
+    <div id="catListClone" class="showMobileX" style="width:100%">
     </div>
   </div>
 
@@ -691,12 +696,12 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="clear:both"></div>
 
 
-<div id="tableSide" style="float:left;display:none" class="hideMobile suppliers">
+<div id="tableSide" class="hideMobile">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
 
-  <div style="margin:20px 10px 20px 17px; min-width:195px; line-height: 1.5em;">
-  <div class="catList" id="industryCatList">
+  <div style="display:none;margin:20px 10px 20px 17px; min-width:195px; line-height: 1.5em;" class="suppliers">
+    <div class="catList" id="industryCatList">
       <div text="">All Items</div>
       <div text="">Air Purifying Machines</div>
       <div text="">Face Shields</div>
@@ -895,9 +900,10 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           <div>
             Georgia businesses are responding to the call for manufacturing, distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
             to assist <a href="https://gema.georgia.gov/">GEMA</a> via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please 
-            <a href="https://www.georgia.org/covid19response" style="white-space: nowrap;">submit a new entry</a> or use the "feedback" button above.
+            <a href="https://www.georgia.org/covid19response" style="white-space: nowrap;">submit a new entry</a> 
+            or use the "feedback" button above.
 
-            <span style="display:none" class="suppliers_pre">
+            <span style="display:none" class="suppliers_pre_message">
             Some of the locations are randomized by a couple miles since they were posted prior to our public listing registration.
             </span>
 
@@ -992,11 +998,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
             <div id="map2"></div>
           </div>
 
-          <div id="sidemapMessage" class="suppliers_pre" style="display:none">
+          <div id="sidemapMessage" class="suppliers_pre_message" style="display:none">
             <b>Randomized</b> - Map locations are approximate since initial supplier data was 
-            primarily for hospitals and <span style="white-space: nowrap">emergency workers. 
+            primarily for hospitals and <span style="white-space: nowrap">emergency workers.</span> 
             If you are the original poster of this listing, send us feedback using the button above if you'd 
-            like your company contact info listed publically.</span>
+            like your company contact info listed publically.
           </div>
 
         </div>
@@ -1350,7 +1356,7 @@ $(document).ready(function () {
     //$(this).css('border-left', 'solid 5px #aaf');
     $(this).addClass('catListSelected');
     $("#catsMobile").hide();
-    $('#catListHolderShow').text('Show Categories');
+    $('#catListHolderShow').text('Product Categories');
     //$('html,body').animate({
     //    scrollTop: $("#hublist").offset().top - 250
     //});
