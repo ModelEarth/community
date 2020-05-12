@@ -26,87 +26,89 @@ $(document).ready(function(){
  		climbpath += "../";
  	}
 
- 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
- 	if(document.getElementById("sidecolumn") == null)
-	{
- 		$("body").prepend( "<div id='sidecolumn' class='hideprint'></div>\r" );
- 	}
- 	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
-	
- 	$("#header").load( climbpath + "../community/header.html", function( response, status, xhr ) {
-
- 		// Make paths relative to current page
- 		$("#header a[href]").each(function() {
- 			if($(this).attr("href").toLowerCase().indexOf("http") < 0){
-	      		$(this).attr("href", climbpath + $(this).attr('href'));
-	  		}
-	    })
- 		$("#header img[src]").each(function() {
- 		  if($(this).attr("src").toLowerCase().indexOf("http") < 0){
-	      	$(this).attr("src", climbpath + $(this).attr('src'));
-	  	  }
-	    })
-
- 		// Set here so path works at all levels.
-
- 		// To do: fetch the existing background-image.
- 		
- 		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
- 			$(".siteTitleShort").text("Model Georgia");
-	 		imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
-	 		imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png";
- 			$('#logoholder').addClass('logoholder-state');
-	 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
-	 		$('#headerLocTitle').html("Georgia");
-	 		$('.georgia').show(); // For nav menu
-	 	} else {
-	 		$(".siteTitleShort").text("Model Earth");
-	 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
-	 		imageUrlSide = climbpath + "../community/img/logo/favicon.png";
-	 		$('#logoholderside').css('width', '24px');
-	 		$('#logoholderside').css('height', '24px');
- 			$('#logospace').css('margin-top','2px');
-	 		$('#logoholder').addClass('logoholder-modelearth');
-	 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
-	 		//$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
+ 	if (param["showheader"] != "false") {
+	 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
+	 	if(document.getElementById("sidecolumn") == null)
+		{
+	 		$("body").prepend( "<div id='sidecolumn' class='hideprint'></div>\r" );
 	 	}
+	 	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
+		
+	 	$("#header").load( climbpath + "../community/header.html", function( response, status, xhr ) {
 
-	 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
-		$('#logoholder').css('background-repeat', 'no-repeat');
+	 		// Make paths relative to current page
+	 		$("#header a[href]").each(function() {
+	 			if($(this).attr("href").toLowerCase().indexOf("http") < 0){
+		      		$(this).attr("href", climbpath + $(this).attr('href'));
+		  		}
+		    })
+	 		$("#header img[src]").each(function() {
+	 		  if($(this).attr("src").toLowerCase().indexOf("http") < 0){
+		      	$(this).attr("src", climbpath + $(this).attr('src'));
+		  	  }
+		    })
 
- 		//$('#logoholder').css('background-size', '70% 70%');
+	 		// Set here so path works at all levels.
 
- 		$('#logoholder').css('margin-left', '20px');
+	 		// To do: fetch the existing background-image.
+	 		
+	 		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
+	 			$(".siteTitleShort").text("Model Georgia");
+		 		imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
+		 		imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png";
+	 			$('#logoholder').addClass('logoholder-state');
+		 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
+		 		$('#headerLocTitle').html("Georgia");
+		 		$('.georgia').show(); // For nav menu
+		 	} else {
+		 		$(".siteTitleShort").text("Model Earth");
+		 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
+		 		imageUrlSide = climbpath + "../community/img/logo/favicon.png";
+		 		$('#logoholderside').css('width', '24px');
+		 		$('#logoholderside').css('height', '24px');
+	 			$('#logospace').css('margin-top','2px');
+		 		$('#logoholder').addClass('logoholder-modelearth');
+		 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
+		 		//$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
+		 	}
 
- 		//$('#logoholder').css('background-size', '70% 70%');
- 		$('#logoholder').css('background-position', 'center');
+		 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
+			$('#logoholder').css('background-repeat', 'no-repeat');
 
- 		
+	 		//$('#logoholder').css('background-size', '70% 70%');
 
- 		$('.showMenu').click(function () {
-			//$(".showMenu").hide();
-			$("#menuHolder").show();
-			$("#menuHolder").css('margin-right','0px')
-			//$("#itemMenu").appendTo($(this).parent().parent());
-			event.stopPropagation();
+	 		$('#logoholder').css('margin-left', '20px');
+
+	 		//$('#logoholder').css('background-size', '70% 70%');
+	 		$('#logoholder').css('background-position', 'center');
+
+	 		
+
+	 		$('.showMenu').click(function () {
+				//$(".showMenu").hide();
+				$("#menuHolder").show();
+				$("#menuHolder").css('margin-right','0px')
+				//$("#itemMenu").appendTo($(this).parent().parent());
+				event.stopPropagation();
+			});
+			$('.hideMenu').click(function () {
+				$("#menuHolder").show();
+				$("#menuHolder").css('margin-right','-250px');
+				//$("#itemMenu").appendTo($(this).parent().parent());
+				event.stopPropagation();
+			});
+			$(document).click(function(event) { // Hide open menus
+				if($("#menuHolder").css('display') !== 'none') {
+	            	$("#menuHolder").hide(); // Since menu motion may freeze when going to another page.
+
+
+	            	if (!$(event.target).parents("#menuHolder").length) {
+	            		//event.preventDefault(); // Using requires double click
+	            	}
+	        	}
+			});
 		});
-		$('.hideMenu').click(function () {
-			$("#menuHolder").show();
-			$("#menuHolder").css('margin-right','-250px');
-			//$("#itemMenu").appendTo($(this).parent().parent());
-			event.stopPropagation();
-		});
-		$(document).click(function(event) { // Hide open menus
-			if($("#menuHolder").css('display') !== 'none') {
-            	$("#menuHolder").hide(); // Since menu motion may freeze when going to another page.
-
-
-            	if (!$(event.target).parents("#menuHolder").length) {
-            		//event.preventDefault(); // Using requires double click
-            	}
-        	}
-		});
-	});
+	}
 
  	// SIDE NAV WITH HIGHLIGHT ON SCROLL
 	if (param["sidecolumn"]) {
