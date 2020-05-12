@@ -54,7 +54,10 @@ body {
 }
 
 #topPanel {
-	position: relative;
+	positionX: absolute;
+	clear:both;
+	z-index: 200;
+	margin-top: 10px;
 	padding-bottom: 20px;
 }
 #topPanelFooter {
