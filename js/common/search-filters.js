@@ -93,7 +93,32 @@ $(document).ready(function () {
     $('#mainCats > div').each(function(index) { // Initial load
     	$(this).attr("text", $(this).text());
     });
+    $('#catSearch').click(function () {
+		if ($('#topPanel').css('display') === 'none') {
+			$('#productSubcats').css("max-height","300px");
+			$('#topPanelFooter').show();
+        	$('#topPanel').show();
+        	$('#introText').hide();
+        	$('#mainCats > div').each(function(index) {
+	        	if ($(this).attr("range")) {
+	        		$(this).html($(this).attr("text") + ' (' + $(this).attr("range") + ')');
+	        	}
+        	});
+
+    	} else {
+    		$('#topPanel').hide();
+    		$('#mainCats > div').each(function(index) {
+    			if ($(this).attr("range")) {
+	        		$(this).html($(this).attr("text"));
+	        	}
+        	});
+    	}
+       	$(".fieldSelector").hide();
+       	event.stopPropagation();
+    });
+
 	$('#productCodes').click(function () {
+		// Needds to be changed after replacing/moving with #catSearch above.
 		if ($('#topPanel').css('display') === 'none') {
 			$('#productSubcats').css("max-height","300px");
 			$('#topPanelFooter').show();
@@ -239,6 +264,7 @@ $(document).ready(function () {
    		$('#industryCatList > div').css('border', 'solid 1px #fff');
    		$("#keywordsTB").val("");
    		$("#products").val("");
+   		$("#catSearch").val("");
    		$("#productCodes").val("");
    		$("#productCatTitle").html("");
    		$("#eTable_alert").hide();
@@ -306,16 +332,15 @@ $(document).ready(function () {
    	});
 
 	function productList(startRange, endRange, text) {
+		// Displays Harmonized System (HS) subcategories
+		// To Do: Lazyload file when initially requested - when #catSearch is clicked.
 
-		if ($("#productCodes").val() == "") {
-			//return;
-		}
 		$("#productSubcats").html("");
 		$("#productCatTitle").html("");
 		console.log("productList " + startRange + ' to ' + endRange + " " + text);
 		$("#subcatHeader").html(text);
 
-		//alert("pcodes " + $("#productCodes").val())
+		console.log("pcodes: " + $("#productCodes").val())
 		var productcodes = $("#productCodes").val().replace(";",",");
 		var productcode_array = productcodes.split(/\s*,\s*/); // Removes space when splitting on comma
 		//alert("productcode_array " + productcode_array[0].length);
@@ -339,7 +364,7 @@ $(document).ready(function () {
 								$("#productCatTitle").append(entry[0] + " - " + entry[1] + "<br>");
 								checkProductBox = true;
 								// To activate on list of HS types is displayed.
-								$("#productCodesHolder").removeClass("localonly");
+								$("#catSearchHolder").removeClass("localonly");
 							} else {
 								//console.log("Not Found");
 							}

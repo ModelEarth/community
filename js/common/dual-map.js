@@ -1,4 +1,4 @@
-var dataParameters = []; 
+var dataParameters = [];
 var dp = {};
 var layerControl = {}; // Object containing one control for each map on page.
 

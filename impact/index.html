@@ -273,7 +273,7 @@ b {
   <div class="filterPanel">
     <div id="activeLayer" style="display: none"></div>
 
-  <div id="productCodesHolder" style="display:none;" class="mock-up filterField local suppliers">
+  <div id="catSearchHolder" style="display:none;" class="mock-up filterField local suppliers">
     <div class="filterLabel filterLabelMain">Goods & Services</div>
 
     <!--
@@ -281,7 +281,7 @@ b {
         <option value="1">HS Code(s)</option>
     </select>
     -->
-    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
+    <input id="catSearch" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 200px; margin-top: 0px;" onkeyup="return SearchCategories(event);" />
   </div>
 
 
@@ -605,6 +605,8 @@ b {
     
     <b>Mock-Up</b> - HS categories are not yet cross-related to NAICS categories.<br><br>
 
+    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
+
     <div id="hsCatList">
       <div range="01-05" text="">Animals & Animal Products</div>
       <div range="06-15" text="">Vegetable Products</div>
@@ -905,7 +907,10 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
             Georgia businesses are responding to the call for manufacturing, 
             distribution and storage of medical supplies and Personal Protective Equipment (PPE) 
-            to assist <a href="https://gema.georgia.gov/">GEMA</a> via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a correction or update, please 
+            <!--
+            to assist <a href="https://gema.georgia.gov/">GEMA</a> 
+            -->
+            via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a listing correction or update, please 
             <a href="https://www.georgia.org/covid19response" style="white-space: nowrap;">submit a new entry</a> 
             or use the "feedback" button above. <a href="https://www.georgia.org/covid19suppliers">View PDF and learm more</a>.
 
@@ -1013,6 +1018,9 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
         </div>
 
+        <div id="disclaimerText" class="suppliers" style="display:none;margin-right:20px;font-size: 12px;">
+          <b>Disclaimer:</b>  The Georgia Department of Economic Development (GDEcD) is collecting information from Georgia companies that indicate they are producing essential medical supplies in response to the COVID-19 pandemic. GDEcD is sharing these companies’ information with Georgia’s units of local government and other potential in-state buyers of these essential medical supplies merely as a courtesy. The following product information and addresses were submitted by private companies to GDEcD, and this list does not constitute an endorsement of any particular company or product by the State or by GDEcD.  GDEcD does not make any representations or warranties as to the accuracy of this information, or as to the quality or quantity of the products offered by these companies. Buyers use this information at their own risk.  Buyers are encouraged to contact the companies directly, for product specifications, delivery options, and other information required for executing a purchase.  Buyers are cautioned to make their own determinations regarding supplier responsibility, including but not limited to assessing whether the supplier has appropriate financial, organization and operational capacity, appropriate legal authority to do business in Georgia, a satisfactory record of integrity, and an acceptable performance record on past contracts.
+        </div>
 
         <!-- INDUSTRIES -->
         <div class="mock-up" style="display:none; padding-top:20px; padding-bottom:80px">
@@ -1361,7 +1369,8 @@ $(document).ready(function () {
 
   $('.catList > div').click(function () {
     var catTitle = $(this).text();
-    $('#keywordsTB').val(catTitle);
+    $('#keywordsTB').val(catTitle); // Temp
+    $('#catSearch').val(catTitle);
     $('#items').prop("checked", true); // Add front to parameter name.
     
     $('#industryCatList > div').removeClass('catListSelected');
