@@ -680,7 +680,7 @@ function showList(dp,map) {
     } else 
     */
 
-    if (keyword.length > 0 || products_array.length > 0 || productcode_array.length > 0) {
+    //if (keyword.length > 0 || products_array.length > 0 || productcode_array.length > 0) {
 
           if (products_array.length > 0) {
             for(var p = 0; p < products_array.length; p++) { // A list from #catSearch field
@@ -697,7 +697,11 @@ function showList(dp,map) {
                   }
               }
             }
-          } else if (keyword.length > 0) {
+          } else {
+            productMatchFound = 1; // Matches all products
+          }
+
+          if (keyword.length > 0) {
 
             //console.log("Search for " + keyword);
 
@@ -778,9 +782,11 @@ function showList(dp,map) {
             }
             */
 
+          } else {
+            foundMatch++; // No keyword filter
           }
 
-          else if (1==2) { // Not yet tested here
+          if (1==2) { // Not yet tested here
             console.log("Check if listing's product HS codes match.");
             for(var pc = 0; pc < productcode_array.length; pc++) { 
               if (productcode_array[pc].length > 0) {
@@ -810,15 +816,15 @@ function showList(dp,map) {
             }
           }
 
-    } else {
-      // Automatically find match since there are no filters
-      //console.log("foundMatch - since no filters");
-      foundMatch++;
-    }
+    //} else {
+    //  // Automatically find match since there are no filters
+    //  //console.log("foundMatch - since no filters");
+    //  foundMatch++;
+    //}
 
     //console.log("foundMatch: " + foundMatch + ", productMatchFound: " + productMatchFound);
 
-    if (foundMatch > 0 || productMatchFound > 0) {
+    if (foundMatch > 0 && productMatchFound > 0) {
       dataMatchCount++;
     //if (count <= 500) {
 
