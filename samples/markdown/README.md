@@ -21,8 +21,9 @@ Steps for creating a static site using Markdown and GitHub Pages with free hosti
 
 1. Update pages - Edit text in the README.md files which are pulled into index.html pages.  
 
-1. [Set up crowdsourced editing](../../../crowdsource/editor) of data for lists and maps.
 <!--
+1. [Set up crowdsourced editing](../../../crowdsource/editor) of data for lists and maps.
+
 1. Copy the "starter" folder inside community and give it the name of your community or module.
 -->
 <br>
