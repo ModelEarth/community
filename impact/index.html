@@ -329,38 +329,38 @@ b {
                   <input type="checkbox" name="findLocation" id="findLocation" value="findLocation" checked><label for="findLocation" class="filterCheckboxTitle">Search Listings</label><br>
                   <input type="checkbox" name="findNews" id="findNews" value="findNews" checked><label for="findNews" class="filterCheckboxTitle">Search Newsroom</label><br>
                 </div>
-                <div style="float:left;" id="search_col_checkboxes">
+                <div style="float:left;" id="selected_col_checkboxes">
 
                     <div>
-                      <input type="checkbox" class="search_col" name="in" id="type" checked>
+                      <input type="checkbox" class="selected_col" name="in" id="type" checked>
                       <label for="type" class="filterCheckboxTitle"> In Type</label>
                     </div>
                     <div>
-                      <input type="checkbox" class="search_col" name="in" id="title" checked>
+                      <input type="checkbox" class="selected_col" name="in" id="title" checked>
                       <label for="title" class="filterCheckboxTitle"> In Title</label>
                     </div>
 
 
                     <div>
-                      <input type="checkbox" class="search_col" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
+                      <input type="checkbox" class="selected_col" name="findCompany" id="findCompany" value="1" checked><label for="findCompany" class="filterCheckboxTitle"> In Company Name</label>
                     </div>
                     <div>
-                      <input type="checkbox" class="search_col" name="findWebsite" id="findWebsite" value="1" checked><label for="findWebsite" class="filterCheckboxTitle"> In Website URL</label>
+                      <input type="checkbox" class="selected_col" name="findWebsite" id="findWebsite" value="1" checked><label for="findWebsite" class="filterCheckboxTitle"> In Website URL</label>
                     </div>
                     <div>
-                      <input type="checkbox" class="search_col" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
+                      <input type="checkbox" class="selected_col" name="findKeywords" id="findKeywords" value="1" checked><label for="findKeywords" class="filterCheckboxTitle"> In Keywords</label>
                     </div>
                     <div>
-                      <input type="checkbox" class="search_col" name="findDetails" id="findDetails" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Industry</label>
+                      <input type="checkbox" class="selected_col" name="findDetails" id="findDetails" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Industry</label>
                     </div>
                     <div>
-                      <input type="checkbox" class="search_col" name="findProduct" id="findProduct" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Product Description</label>
+                      <input type="checkbox" class="selected_col" name="findProduct" id="findProduct" value="1" checked><label for="findDetails" class="filterCheckboxTitle"> In Product Description</label>
                     </div>
                     <div style="display:none">
-                      <input type="checkbox" class="search_col" name="findNews" id="findNews" value="1"><label for="findNews" class="filterCheckboxTitle"> In Newsroom</label>
+                      <input type="checkbox" class="selected_col" name="findNews" id="findNews" value="1"><label for="findNews" class="filterCheckboxTitle"> In Newsroom</label>
                     </div>
                     <div style="display:none">
-                      <input type="checkbox" class="search_col" name="findContent" id="findContent" value="1"><label for="findContent" class="filterCheckboxTitle"> In Georgia.org</label>
+                      <input type="checkbox" class="selected_col" name="findContent" id="findContent" value="1"><label for="findContent" class="filterCheckboxTitle"> In Georgia.org</label>
                     </div>
                 </div>
               </div>
@@ -728,7 +728,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       <div>Surgical Masks</div>
       <div>Tyvek Suits</div>
       <div>Ventilators</div>
-      <div>Warehouse</div>
+      <div class="suppliers_pre" style="display:none">Warehouse</div>
     </div>
   </div>
 </div>
@@ -1208,13 +1208,17 @@ function loadMap1() { // Also called by search-filters.js
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
   if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
+
     dp1.listTitle = "Georgia COVID-19 Response";
+    dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
+
     dp1.listInfo = "Select a category to filter your results.";
     dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers.csv";
     if (param["initial"] == "response") {
       dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers_pre.csv";
     }
     dp1.dataTitle = "Manufacturers and Distributors";
+    dp1.itemsColumn = "items";
     dp1.valueColumn = "type";
     dp1.valueColumnLabel = "Type";
     dp1.markerType = "google";
@@ -1232,7 +1236,7 @@ function loadMap1() { // Also called by search-filters.js
     }
 
     dp1.listLocation = false;
-    dp1.addLink = "https://www.georgia.org/covid19response";
+    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
   } else if (param["show"] == "produce" || param["design"]) {
     dp1.listTitle = "USDA Farm Produce";
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
@@ -1369,7 +1373,7 @@ $(document).ready(function () {
 
   $('.catList > div').click(function () {
     var catTitle = $(this).text();
-    $('#keywordsTB').val(catTitle); // Temp
+    //$('#keywordsTB').val(catTitle); // Temp
     $('#catSearch').val(catTitle);
     $('#items').prop("checked", true); // Add front to parameter name.
     
@@ -1386,8 +1390,7 @@ $(document).ready(function () {
     //    scrollTop: $("#hublist").offset().top - 250
     //});
 
-    //displayResults(); // This can be removed after transitioning away from list at bottom
-    // Use instead
+    console.log("catList clicked, call loadMap1 which calls loadFromCSV > showList in dual-map.js");
     loadMap1();
     //hideNonListPanels();
     event.stopPropagation();

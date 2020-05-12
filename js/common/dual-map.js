@@ -94,7 +94,7 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
   }
   dp = mix(dp,defaults); // Gives priority to dp
   if (dp.addLink) {
-    console.log("Add Link: " + dp.addLink)
+    //console.log("Add Link: " + dp.addLink)
   }
   let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
   var container = L.DomUtil.get(map);
@@ -617,15 +617,15 @@ function showList(dp,map) {
   if (dp.search && $("#activeLayer").text() != dp.dataTitle) { // Only set when active layer changes, otherwise selection overwritten on change.
     let checkCols = "";
     $.each(dp.search, function( key, value ) {
-      checkCols += '<div><input type="checkbox" class="search_col" name="in" id="' + value + '" checked><label for="' + value + '" class="filterCheckboxTitle"> ' + key + '</label></div>';
+      checkCols += '<div><input type="checkbox" class="selected_col" name="in" id="' + value + '" checked><label for="' + value + '" class="filterCheckboxTitle"> ' + key + '</label></div>';
     });
-    $("#search_col_checkboxes").html(checkCols);
+    $("#selected_col_checkboxes").html(checkCols);
 
     // BUGBUG - When toggling the activeLayer is added, this will need to be cleared to prevent multiple calls to loadMap1
      
-    $('.search_col[type=checkbox]').change(function() {
+    $('.selected_col[type=checkbox]').change(function() {
         //$('#topPanel').hide();
-        let cols = $('.search_col:checked').map(function() {return this.id;}).get().join(','); 
+        let cols = $('.selected_col:checked').map(function() {return this.id;}).get().join(','); 
         //alert(cols)
         updateHash({"cols":cols});
         loadMap1();
@@ -640,9 +640,9 @@ function showList(dp,map) {
   if ($("#keywordsTB").val()) {
     keyword = $("#keywordsTB").val().toLowerCase();
   }
-  if ($("#keywordsTB").val()) {
-    products = $("#keywordsTB").val().replace(";",",");
-    products_array = products.split2(/\s*,\s*/);
+  if ($("#catSearch").val()) {
+    products = $("#catSearch").val().replace(" AND ",";").toLowerCase().replace(allItemsPhrase,"");
+    products_array = products.split2(/\s*;\s*/);
   }
   if ($("#productCodes").val()) {
     // For each product ID - Still to implement, copied for search-filters.js
@@ -650,50 +650,78 @@ function showList(dp,map) {
     productcode_array = productcodes.split2(/\s*,\s*/); // Removes space when splitting on comma
   }
 
-  let search_col = [];
-  search_col = $('.search_col:checked').map(function() {return this.id;});
-  //let search_columns_object = {}; // For count of each
+  let selected_col = [];
+  selected_col = $('.selected_col:checked').map(function() {return this.id;});
+  //let selected_columns_object = {}; // For count of each
 
-  if (search_col.length == 0 && keyword && keyword != allItemsPhrase) {
+  if (selected_col.length == 0 && keyword && keyword != allItemsPhrase && products_array.length == 0) {
     $("#keywordFields").show();
     alert("Please check at least one column to search.")
   }
   var data_out = []; // An array of objects
+
+
   dp.data.forEach(function(elementRaw) {
     count++;
     foundMatch = 0;
+    productMatchFound = 0;
+    /*
     if (keyword == allItemsPhrase) { // Use a div argument instead
         keyword == ""; products = "";
         $("#keywordsTB").text(""); // Not working
         foundMatch++;
-    } else if (keyword.length > 0 || products_array.length > 0 || productcode_array.length > 0) {
+    } else 
+    */
+    
+    /*
+    if (products == allItemsPhrase) {
+        console.log("products == allItemsPhrase")
+        productMatchFound++;
+    } else 
+    */
 
-          //$("#dataList").html("");
-          if (keyword.length > 0) {
+    if (keyword.length > 0 || products_array.length > 0 || productcode_array.length > 0) {
+
+          if (products_array.length > 0) {
+            for(var p = 0; p < products_array.length; p++) { // A list from #catSearch field
+              if (products_array[p].length > 0) {
+
+                  if (elementRaw[dp.itemsColumn] && elementRaw[dp.itemsColumn].toLowerCase().indexOf(products_array[p].toLowerCase()) >= 0) {
+
+                    productMatchFound++;
+
+                    //console.log("foundMatch: " + elementRaw[dp.itemsColumn] + " contains: " + products_array[p]);
+                    
+                  } else {
+                    //console.log("No Match: " + elementRaw[dp.itemsColumn] + " does not contain: " + products_array[p]);
+                  }
+              }
+            }
+          } else if (keyword.length > 0) {
 
             //console.log("Search for " + keyword);
 
             
             if (typeof dp.search != "undefined") { // An object containing interface labels and names of columns to search.
-              //var search_col = {};
+              //var selected_col = {};
 
-              $.each(search_col, function( key, value ) { // Works for arrays and objects. key is the index value for arrays.
-                //search_columns_object[key] = 0;
+              $.each(selected_col, function( key, value ) { // Works for arrays and objects. key is the index value for arrays.
+                //selected_columns_object[key] = 0;
                 if (elementRaw[value]) {
                   if (elementRaw[value].toString().toLowerCase().indexOf(keyword) >= 0) {
                     //console.log("FoundMatch for " + value);
 
                     // Write this tighter
                     /*
-                    if (search_columns_object[key]) {
-                     search_columns_object[key] = search_columns_object[key]+1;
-                     search_col[key].count = search_col[key].count+1;
+                    if (selected_columns_object[key]) {
+                     selected_columns_object[key] = selected_columns_object[key]+1;
+                     selected_col[key].count = selected_col[key].count+1;
                     } else {
-                      search_columns_object[key] = 1;
-                      search_columns_object[key]["value"] = value;
+                      selected_columns_object[key] = 1;
+                      selected_columns_object[key]["value"] = value;
 
-                      search_col[key].count = 1;
-                      search_col[key].value = value;
+                      selected_col[key].count = 1;
+                      selected_col[key].value = value;
                     }
                     */
 
@@ -752,33 +780,7 @@ function showList(dp,map) {
 
           }
 
-          if (1==2) { // Not yet tested here
-            for(var p = 0; p < products_array.length; p++) {
-              if (products_array[p].length > 0) {
-                //if (isInt(products_array[p])) { // Int
-                  // Column 0
-
-
-                  //console.log("Does " + codesArray[j] + " start with " + productcode_array[p]);
-                  if (dataSet[i][0].toString().toLowerCase().startsWith(products_array[p])) { // If columns values start with search values.
-
-                    productMatchFound++;
-                    //console.log("productMatchFound " + productMatchFound);
-
-                    console.log("foundMatch: " + dataSet[i][0] + " startsWith: " + products_array[p]);
-                    //foundMatch++;
-                    //$(this).show();
-                  }
-                
-                //} else {
-                //  console.log("Not int")
-                //  productMatchFound++;
-                //}
-              }
-            }
-          }
-
-          if (1==2) { // Not yet tested here
+          else if (1==2) { // Not yet tested here
             console.log("Check if listing's product HS codes match.");
             for(var pc = 0; pc < productcode_array.length; pc++) { 
               if (productcode_array[pc].length > 0) {
@@ -810,11 +812,13 @@ function showList(dp,map) {
 
     } else {
       // Automatically find match since there are no filters
-      //console.log("foundMatch E");
+      //console.log("foundMatch - since no filters");
       foundMatch++;
     }
 
-    if (foundMatch > 0) {
+    //console.log("foundMatch: " + foundMatch + ", productMatchFound: " + productMatchFound);
+
+    if (foundMatch > 0 || productMatchFound > 0) {
       dataMatchCount++;
     //if (count <= 500) {
 
@@ -1019,8 +1023,8 @@ function showList(dp,map) {
       $("#resultsPanel").show();
       $("#dataList").show();
 
-      //console.log(search_col);
-      //alert(search_columns_object[2].value)
+      //console.log(selected_col);
+      //alert(selected_columns_object[2].value)
   } else {
       $("#dataList").html("No match found in " + count + " records.<br>");
           
