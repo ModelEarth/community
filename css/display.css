@@ -181,8 +181,9 @@ body {
 	max-widthX: 400px;
 }
 .catListSelected {
-	border: solid 1px #aaa;
-    border-left: solid 5px #aaf;
+	border: solid 1px #aaa !important;
+	background-color: #fff;
+    border-left: solid 5px #aaf !important;
 } 
 #mainframe {
 
@@ -218,7 +219,11 @@ iframe {
 	padding-bottom: 20px;
 }
 #catListHolderShow {
-	display: none;
+	color:#fff;
+	background:#357bcb; 
+}
+#catListHolderShow:hover {
+	background: #0071e3;
 }
 @media (max-width: 800px) {
 	#mainCats {
