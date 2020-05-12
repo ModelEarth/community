@@ -258,9 +258,9 @@ b {
   if (param["intro"] || param["show"] == "farmfresh") {
     //document.getElementById("readmeHolder").style.display = "block";
     //document.getElementById("readmeEdit").style.display = "block";
-    loadMarkdown("../farmfresh/README.md", "introDiv", "_parent");
+    loadMarkdown("../map/starter/README.md", "introDiv", "_parent");
   }
-  if (param["design"]) {
+  if (param["design"] && param["show"] != "farmfresh") {
     document.getElementById("readmeHolder").style.display = "block";
     document.getElementById("readmeEdit").style.display = "block";
     loadMarkdown("../resources/USEEIO/design/intro.md", "readmeDiv", "_parent");

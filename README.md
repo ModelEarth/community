@@ -30,9 +30,9 @@ Slack #epa
 
 ### Tonight
 
-We need assistance finding and pre-processing lat/lon centers for zip codes, cities and counties - for all states (and countries).  
+We need assistance pre-processing lat/lon centers for zip codes, cities and counties - for all states (and countries).  
 
-We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=farmfresh&design=1) which are also used for [Covid-19 supplier maps](impact/?show=suppliers).
+We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=farmfresh&design=1) which are also used for Covid-19 supply maps.
 
 ### Fall 2020
 
