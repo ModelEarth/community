@@ -1213,6 +1213,14 @@ function loadMap1() { // Also called by search-filters.js
     dp1.nameColumn = "title";
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
+
+    if (param["initial"] != "response") {
+      dp1.nameColumn = "company";
+      dp1.latColumn = "latitude";
+      dp1.lonColumn = "longitude";
+      dp1.showLegend = false;
+    }
+    
     dp1.listLocation = false;
     dp1.addLink = "https://www.georgia.org/covid19response";
   } else if (param["show"] == "produce" || param["design"]) {
