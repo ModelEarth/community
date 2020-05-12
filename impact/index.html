@@ -706,27 +706,27 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
   <div style="display:none;margin:20px 10px 20px 17px; min-width:195px; line-height: 1.5em;" class="suppliers">
     <div class="catList" id="industryCatList">
-      <div text="">All Items</div>
-      <div text="">Air Purifying Machines</div>
-      <div text="">Face Shields</div>
-      <div text="">Gloves</div>
-      <div text="">Hair Covers</div>
-      <div text="">Hand Sanitizer</div>
-      <div text="">Hospital Beds</div>
-      <div text="">Masks</div>
-      <div text="">Negative Pressure Machines</div>
-      <div text="">No-Touch Thermometers</div>
-      <div text="">Regular Thermometers</div>
-      <div text="">Safety Goggles</div>
-      <div text="">Sanitation Units</div>
-      <div text="">Sanitizing Spray</div>
-      <div text="">Sanitizing Wipes</div>
-      <div text="">Shoe Covers</div>
-      <div text="">Surgical Gowns</div>
-      <div text="">Surgical Masks</div>
-      <div text="">Tyvek Suits</div>
-      <div text="">Ventilators</div>
-      <div text="">Warehouse</div>
+      <div>All Items</div>
+      <div>Air Purifying Machines</div>
+      <div>Face Shields</div>
+      <div>Gloves</div>
+      <div>Hair Covers</div>
+      <div>Hand Sanitizer</div>
+      <div>Hospital Beds</div>
+      <div>Masks</div>
+      <div>Negative Pressure Machines</div>
+      <div>No-Touch Thermometers</div>
+      <div>Regular Thermometers</div>
+      <div>Safety Goggles</div>
+      <div>Sanitation Units</div>
+      <div>Sanitizing Spray</div>
+      <div>Sanitizing Wipes</div>
+      <div>Shoe Covers</div>
+      <div>Surgical Gowns</div>
+      <div>Surgical Masks</div>
+      <div>Tyvek Suits</div>
+      <div>Ventilators</div>
+      <div>Warehouse</div>
     </div>
   </div>
 </div>
@@ -1354,12 +1354,13 @@ $(document).ready(function () {
     $('#keywordsTB').val(catTitle);
     $('#items').prop("checked", true); // Add front to parameter name.
     
-    //$('#industryCatList > div').css('border', 'solid 1px #fff');
     $('#industryCatList > div').removeClass('catListSelected');
-    //$(this).css('border', 'solid 1px #aaa');
-    //$(this).css('border-left', 'solid 5px #aaf');
-    $(this).addClass('catListSelected');
-    //$("#catsMobile").hide();
+    
+    var catString = $(this).text();
+    $('.catList > div').filter(function(){
+        return $(this).text() === catString
+    }).addClass('catListSelected');
+
     $("#topPanel").hide();
     $('#catListHolderShow').text('Product Categories');
     //$('html,body').animate({

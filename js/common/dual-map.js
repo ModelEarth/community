@@ -521,10 +521,17 @@ function addIcons(dp,map,map2) {
     if (element.schedule) {
       output += "Hours: " + element.schedule + "<br>";
     }
-    if (element.website) {
-      output += "<a href='" + element.website + "' target='_blank'>Website</a>";
+    if (element.items) {
+      output += "<b>Items:</b> " + element.items + "<br>";
     }
-    
+    if (element.website) {
+      if (element.website.length <= 50) {
+        output += "<b>Website:</b> <a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a>";
+      } else {
+        // To Do: Display domain only
+        output += "<b>Website:</b> <a href='" + element.website + "' target='_blank'>" + element.website.replace("https://","").replace("http://","").replace("www.","").replace(/\/$/, "") + "</a>"; 
+      }
+    }
     if (dp.listLocation != false) {
       if (element[dp.latColumn]) {
         if (element.website) {
@@ -534,10 +541,10 @@ function addIcons(dp,map,map2) {
         //output += "<div class='detail' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>Zoom In</div> | ";
         output += "<a href='https://www.waze.com/ul?ll=" + element[dp.latColumn] + "%2C" + element[dp.lonColumn] + "&navigate=yes&zoom=17'>Waze Directions</a><br>";
       }
+    } else if (element.website) {
+      output += "<br>";
     }
-    if (element.items) {
-        output += "<b>Items:</b> " + element.items + "<br>";
-      }
+    
     circle.bindPopup(output);
     //circle2.bindPopup(output);
 
