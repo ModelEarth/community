@@ -37,7 +37,8 @@ $10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatla
 
 ### Overview
 
-1. A collection of [EEIO widgets](https://modelearth.github.io/eeio/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API), CSV files will be [generated](resources/useeio) for demand vectors (Food System and Full System). 
+1. A collection of [EEIO widgets](https://modelearth.github.io/eeio/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Charts are loaded from JSON files [generated](resources/useeio) 
+for Goods & Services demand vectors (Food System and Full System). 
 
 2. Detailed [Goods & Services Report](samples/dataset) with economic value and environmental impact of production choices.   
 
