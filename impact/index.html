@@ -273,8 +273,8 @@ b {
   <div class="filterPanel">
     <div id="activeLayer" style="display: none"></div>
 
-  <div id="productCodesHolder" style="display:none;" class="mock-up filterField local">
-    <div class="filterLabel filterLabelMain">Categories</div>
+  <div id="productCodesHolder" style="display:none;" class="mock-up filterField local suppliers">
+    <div class="filterLabel filterLabelMain">Goods & Services</div>
 
     <!--
     <select id="selectProduct" class="selectMenu" style="float:left">
@@ -563,22 +563,12 @@ b {
 
   </div><!-- /searchField -->
 
-<div style="display:none; float:left" class="suppliers">
-  <div class="filterLabel filterLabelMain">&nbsp;</div>
-  <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">
-      Product Categories
-  </div>
-</div>
 
-<div style="clear:both"></div>
 
-  <div id="catsMobile" class="card" style="display:none; margin-top:15px; margin-right:20px;">
-    <div id="catListClone" class="showMobileX" style="width:100%">
-    </div>
-  </div>
+  
 
-<!-- HS Codes -->
-<div id="topPanel" style="display:none; position: relative; overflow:auto; margin-top:14px">
+<!-- CATEGORIES -->
+<div id="topPanel" class="card" style="display:none; overflow:auto; margin-top:24px">
 
   <div id="hideTopPanel" style="position:absolute;right:5px;top:8px;color:#333;font-size:18px;cursor:pointer;padding-right:10px">&#10005;</div>
 
@@ -586,10 +576,23 @@ b {
   Enter a code or keywords.<br><br>
   -->
   
+  <div style="display:none; float:left" class="suppliersXX">
+    <div class="filterLabel filterLabelMain">&nbsp;</div>
+    <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">
+        Goods & Services
+    </div>
+  </div>
+
 
   <div style="clear:both"></div>
 
-  <div style="displayX:none">
+
+  <div id="catsMobile" class="suppliers" style="display:none; margin:15px 20px 20px 0;">
+    <div id="catListClone" class="showMobileX" style="width:100%">
+    </div>
+  </div>
+
+  <div class="local" style="display:none">
     <!-- 
       Products for Export
       add arrow to show this
@@ -624,23 +627,24 @@ b {
       <div range="96-96" text="">Miscellaneous Manufacturing</div>
       <div range="97-97" text="">Art and Antiques</div>
     </div>
+    
+
+    <div style="clear:both;"></div>
+
+    <div id='subcatHeaderHolder'>
+      <b><div id='allProductCats' class='backArrow'>&#60;&nbsp;</div> <span id='subcatHeader'>Harmonized System (HS) Product Categories</span></b>
+    </div>
+
+    <a name="listtop"></a>
+
+    
+    <div id="productSubcats" class="menu" style="padding-top:14px">
+    </div>
+
+    <div id="topPanelFooter">Show more</div>
   </div>
-
-  <div style="clear:both;"></div>
-
-  <div id='subcatHeaderHolder'>
-    <b><div id='allProductCats' class='backArrow'>&#60;&nbsp;</div> <span id='subcatHeader'>Harmonized System (HS) Product Categories</span></b>
-  </div>
-
-  <a name="listtop"></a>
-
-  
-  <div id="productSubcats" class="menu" style="padding-top:14px">
-  </div>
-
-  <div id="topPanelFooter">Show more</div>
 </div>
-<!-- END HS Codes -->
+<!-- END CATEGORIES -->
 
 
 </div>
@@ -1355,7 +1359,8 @@ $(document).ready(function () {
     //$(this).css('border', 'solid 1px #aaa');
     //$(this).css('border-left', 'solid 5px #aaf');
     $(this).addClass('catListSelected');
-    $("#catsMobile").hide();
+    //$("#catsMobile").hide();
+    $("#topPanel").hide();
     $('#catListHolderShow').text('Product Categories');
     //$('html,body').animate({
     //    scrollTop: $("#hublist").offset().top - 250
