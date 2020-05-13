@@ -1302,6 +1302,15 @@ function loadMap1() { // Also called by search-filters.js
         layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
       } 
   });
+
+  // Return to top for mobile users on search.
+  if (document.body.clientWidth <= 500) {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 }
 // http://localhost:8887/community/response/?show=suppliers#q=rin&cols=items,city,state,zip
 populateFieldsFromHash();
