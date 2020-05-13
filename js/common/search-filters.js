@@ -259,6 +259,11 @@ $(document).ready(function () {
 	    $("#mapButton").show();
 	    event.stopPropagation();
    	});
+   	$("#hideSidemap").click(function() {
+	    $("#sidemapCard").hide();
+	    $("#detaillist > .detail").css("border","none");
+   	});
+
    	function clearFields() {
    		$(".eWidget").show();
    		hideNonListPanels();
