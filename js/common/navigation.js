@@ -108,6 +108,8 @@ $(document).ready(function(){
 	        	}
 			});
 		});
+	} else {
+		$(".filterPanel").addClass("filterPanel_fixed");
 	}
 
  	// SIDE NAV WITH HIGHLIGHT ON SCROLL
