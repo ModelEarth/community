@@ -87,12 +87,24 @@ body {
 }
 
 #topPanel {
-	positionX: absolute;
+	overflow:auto;
 	clear:both;
 	z-index: 200;
-	margin-top: 10px;
+	margin-top: 24px;
 	padding-bottom: 20px;
 }
+@media (max-width: 800px) {
+	#topPanel {
+		margin-top: 0px;
+		position: absolute;
+		top:0px;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		z-index: 99999;
+	}
+}
+
 #topPanelFooter {
 	background: #eee;
 	position: absolute;
