@@ -59,6 +59,15 @@
     margin-right: 6px;
     min-height: 34px;
 }
+#keywordsTB {
+    width:100%;
+    max-width:400px;
+}
+@media (max-width: 500px) {
+    #keywordsTB {
+        max-width:130px;
+    }
+}
 #goSearch {
     padding-top:8px;
 }
