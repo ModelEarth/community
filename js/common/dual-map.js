@@ -102,7 +102,9 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
     map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
-      zoom: dp.zoom
+      zoom: dp.zoom,
+      dragging: !L.Browser.mobile, 
+      tap: !L.Browser.mobile
     });
     
     
@@ -126,7 +128,9 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
       map2 = L.map(whichmap2, {
         center: mapCenter,
         scrollWheelZoom: false,
-        zoom: dp.zoom
+        zoom: dp.zoom,
+        dragging: !L.Browser.mobile, 
+        tap: !L.Browser.mobile
       });
     }
 
@@ -291,7 +295,9 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
       center: mapCenter,
       scrollWheelZoom: false,
       zoom: dp.zoom,
-      zoomControl: false
+      zoomControl: false,
+      dragging: !L.Browser.mobile, 
+      tap: !L.Browser.mobile
     });
 
     map.setView(mapCenter,dp.zoom);
