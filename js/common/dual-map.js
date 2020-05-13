@@ -636,7 +636,7 @@ function showList(dp,map) {
 
 
 
-  var allItemsPhrase = "all items";
+  var allItemsPhrase = "any items";
   if ($("#keywordsTB").val()) {
     keyword = $("#keywordsTB").val().toLowerCase();
   }
