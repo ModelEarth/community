@@ -293,7 +293,14 @@ b {
         <option value="1">HS Code(s)</option>
     </select>
     -->
-    <input id="catSearch" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 200px; margin-top: 0px;" onkeyup="return SearchCategories(event);" />
+
+    <!--
+    onkeyup="return SearchCategories(event);"
+
+
+    readonly - prevents keyboard covering choices on mobile
+    -->
+    <input readonly id="catSearch" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 200px; margin-top: 0px;" />
   </div>
 
 
@@ -580,7 +587,7 @@ b {
   
 
 <!-- CATEGORIES -->
-<div id="topPanel" class="card" style="display:none; overflow:auto; margin-top:24px">
+<div id="topPanel" class="card" style="display:none;">
 
   <div id="hideTopPanel" class="close-X" style="position:absolute;right:5px;top:8px;padding-right:10px">&#10005;</div>
 
