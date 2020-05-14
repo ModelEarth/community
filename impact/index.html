@@ -174,6 +174,22 @@ b {
   line-height: 26px;
   border-bottom: 1px solid #ccc;
 }
+#catListClone div div {
+  float:left;
+  width:33.33%;
+  overflow: hidden;
+  border-right: 1px solid #ccc;
+}
+@media (max-width: 800px) {
+  #catListClone div div {
+    width:50%;
+  }
+}
+@media (max-width: 500px) {
+  #catListClone div div {
+    width:100%;
+  }
+}
 
 #industries {
     float:right;
@@ -619,6 +635,7 @@ b {
     <div id="catListClone" class="showMobileX" style="width:100%">
     </div>
   </div>
+  <div style="clear:both"></div>
 
   <div class="local" style="display:none">
     <!-- 
