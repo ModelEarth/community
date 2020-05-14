@@ -259,6 +259,11 @@ $(document).ready(function () {
 	    $("#mapButton").show();
 	    event.stopPropagation();
    	});
+
+   	
+   	$(".showLocMenu").click(function() {
+	    $(".locMenu").show();
+   	});
    	$("#hideSidemap").click(function() {
 	    $("#sidemapCard").hide();
 	    $("#detaillist > .detail").css("border","none");

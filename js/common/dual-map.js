@@ -602,7 +602,10 @@ function addIcons(dp,map,map2) {
     //$("#map").show();
     // $(this).css('border', 'solid 1px #aaa');
   });
-
+  $('.showLocMenu').click(function () {
+    $(".locMenu").show();
+    //event.stopPropagation();
+  });
 
 }
 
@@ -645,7 +648,7 @@ function showList(dp,map) {
 
 
 
-  var allItemsPhrase = "any item";
+  var allItemsPhrase = "all categories";
   if ($("#keywordsTB").val()) {
     keyword = $("#keywordsTB").val().toLowerCase();
   }
@@ -1014,7 +1017,7 @@ function showList(dp,map) {
   );
 
   var imenu = "<div style='display:none'>";
-  imenu += "<div id='itemMenu' class='filterBubble'>";
+  imenu += "<div id='itemMenu' class='popMenu filterBubble'>";
   imenu += "<div>View On Map</div>";
   imenu += "<div class='localonly mock-up' style='display:none'>Supplier Impact</div>";
   imenu += "<div class='localonly mock-up' style='display:none'>Production Impact</div>";
@@ -1024,6 +1027,14 @@ function showList(dp,map) {
   imenu += "</div>";
   imenu += "</div>";
   $("body").append(imenu);
+
+  var locmenu = "<div class='showLocMenu' style='float:right;font-size: 24px;cursor: pointer;'>…</div>";
+  locmenu += "<div class='locMenu popMenu filterBubble' style='float:right;display:none'>";
+  locmenu += "<div class='filterBubble'>";
+  locmenu += "<div id='hideSidemap' class='close-X' style='position:absolute;right:0px;top:8px;padding-right:10px;color:#999'>&#10005; Close Map</div>";
+  locmenu += "</div>";
+  locmenu += "</div>";
+  //$("#sidemapbar").prepend(locmenu);
 
   if (dataMatchCount > 0) {
       //alert("show") // was twice BUGBUG
@@ -1050,6 +1061,7 @@ function showList(dp,map) {
 
   $(document).click(function(event) { // Hide open menus
       $('#itemMenu').hide();
+      $('#locMenu').hide();
   });
 
   dp.data = data_out;
