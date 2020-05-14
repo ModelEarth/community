@@ -12,7 +12,7 @@ We're combining national and state-level economic data, community resources and 
 
 <h3>Join our Code for America Web Challenge - August to October 25, 2020</h3> 
 
-Form a virtual team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a>. 
+Form a team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a>. 
 
 <h3>$10,000 in Challenge Awards</h3>
 
