@@ -1198,6 +1198,15 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 </div>
 
+<div id="fixedFooter">
+  <div>
+    <div class="go_listings">Listings</div>
+    <div class="go_map">State Map</div>
+    <div class="go_local">Local Map</div>
+    <div class="go_info">Info</div>
+  </div>
+</div>
+
 <!--
 To add and update listings, download the <a href="map.csv">map.csv</a> file and edit within a spreadsheet.  
   Copy using a text editor and click the pencil icon <a href="https://github.com/modelearth/community/blob/master/map/map.csv">here</a> to paste into GitHub for review. 
@@ -1462,6 +1471,13 @@ $('.addlisting').click(function(event) {
 });
 $('.pagebutton').click(function(event) {
   console.log("Not yet implemented.");
+});
+$('.go_map').click(function(event) {
+  window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
 });
 
 // HEX

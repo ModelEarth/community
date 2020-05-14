@@ -84,6 +84,43 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+#headerFixed {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+}
+#fixedFooter {
+  position: fixed;
+  bottom:0;
+  background-color: #999;
+  color:#fff;
+  left:0;
+  right:0;
+  width:100%;
+  z-index: 9999999;
+  text-align: center;
+}
+#fixedFooter > div {
+  display: inline-block;
+}
+#fixedFooter > div > div {
+  float:left;
+  padding-left:20px;
+  padding-right:20px;
+  font-weight:400;
+  font-size:16px;
+  line-height:38px;
+  height:38px;
+  cursor: pointer;
+}
+#fixedFooter > div > div:hover {
+  background-color: #333;
+}
 
 .displayOnload {
   display:block !important; /* hidden until css loaded */
@@ -362,25 +399,7 @@ iframe {
   padding-right:50px;
   padding-bottom:30px;
 }
-#ds_topbar {
-  background-color: #4c4542;
-}
-#ds_footer {
-  height: 22px;
-  overflow: auto;
-  background-color: #4c4542;
-  position:fixed;
-  bottom:0px;left:0px;right:0px;
-  z-index:10000;
-  padding:6px 0 0 18px;
-}
-#ds_footer a {
-  margin-right: 20px;
-  text-decoration:none;
-  color:#fff;
-}
-
-#ds_command {
+#log_display {
   position:absolute;
   top:70%;
   left:50px;
@@ -390,7 +409,7 @@ iframe {
   background: rgba(0,0,0,0.9);
   border-radiusX: 18px 0px 5px 5px;
 }
-#ds_command textarea {
+#log_display textarea {
   
   color:#fff;
   background: rgba(0,0,0,0);
@@ -398,33 +417,6 @@ iframe {
   min-height: 150;
   overflow:scroll;
   border:0px;
-}
-#ds_chat {
-  position:fixed;
-  bottom:25px;
-  right:0px;
-  padding: 8px 16px 8px 8px;
-  
-  background: white;
-  background: rgba(255,255,255,0.95);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 4px 0px 5px 5px;
-}
-#ds_chat_top {
-  padding-right:10px;
-  overflow: auto;
-}
-#ds_chat_title {
-  float:left;
-  padding:10px 8px 8px 0px;
-  color:#333;
-  font: 22px/15px Trebuchet MS, Arial, sans-serif;
-  margin-bottom:4px;
-}
-#ds_chat_inner {
-  display:none;
-  font-size: 16px;
-  max-width: 300px
 }
 #closeChat {
   display: none;
