@@ -132,9 +132,18 @@ b {
   margin-top:3px;
   float:left;
 }
+.listTitle {
+  font-size: 32px;
+  margin:0px;
+  font-weight: 600;
+  border-bottom:0px
+}
 @media (max-width: 800px) {
   .legendLink {
     float:auto;
+  }
+  .listTitle {
+    font-size: 26px;
   }
 }
 .outcomesbox span {
@@ -754,7 +763,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
   </div>
 </div>
 
-<div style="overflow:auto;">
+<div id="list_main" style="overflow:auto;">
 
 
 <!-- buttons -->
@@ -903,7 +912,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="hublist" style="padding-top:20px">
       <div id="hublist-padding">
         
-        <h1 class="listTitle" style="font-size: 32px; margin:0px; font-weight: 600; border-bottom:0px"></h1><br>
+        <h1 class="listTitle"></h1><br>
 
         <div style="display:none" class="suppliers">
           
@@ -1198,12 +1207,12 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 </div>
 
-<div id="fixedFooter">
+<div id="fixedFooter" class="showMobile">
   <div>
-    <div class="go_listings">Listings</div>
+    <div class="go_list">Listings</div>
     <div class="go_map">State Map</div>
-    <div class="go_local">Local Map</div>
-    <div class="go_info">Info</div>
+    <div class="go_local" style="display:none">Local Map</div>
+    <div class="go_info" style="display:none">Info</div>
   </div>
 </div>
 
@@ -1323,8 +1332,7 @@ function loadMap1() { // Also called by search-filters.js
   if (document.body.clientWidth <= 500) {
     window.scrollTo({
       top: 0,
-      left: 0,
-      behavior: 'smooth'
+      left: 0
     });
   }
 }
@@ -1475,9 +1483,21 @@ $('.pagebutton').click(function(event) {
 $('.go_map').click(function(event) {
   window.scrollTo({
       top: 0,
-      left: 0,
-      behavior: 'smooth'
+      left: 0
     });
+});
+$('.go_list').click(function(event) {
+  window.scrollTo({
+      top: $('#list_main').offset().top - 95,
+      left: 0
+    });
+});
+$('.go_local').click(function(event) {
+  window.scrollTo({
+      top: $('#mapHolder').offset().top - 95,
+      left: 0
+    });
+  $("#sidemapCard").show(); // map2
 });
 
 // HEX
