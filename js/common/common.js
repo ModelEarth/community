@@ -114,14 +114,14 @@ function updateHash(addToHash) {
 
 function consoleLog(text,value) {
 
-  $("#ds_command").show();
+  $("#log_display").show();
   if (value) {
-    $("#ds_command textarea").append(text + " " + value + "\n");
+    $("#log_display textarea").append(text + " " + value + "\n");
   } else {
-    $("#ds_command textarea").append(text + "\n");
+    $("#log_display textarea").append(text + "\n");
   }
 
-  var dsconsole = $("#ds_command textarea");
+  var dsconsole = $("#log_display textarea");
     if(dsconsole.length)
        dsconsole.scrollTop(dsconsole[0].scrollHeight - dsconsole.height() - 17); // Adjusts for bottom alignment
 
@@ -330,7 +330,7 @@ addEventListener("load", function(){
     //consoleLog('click ' + Date.now())
     var anchor = getParentAnchor(e.target);
     if(anchor !== null) {
-      $('#ds_command').hide();
+      $('#log_display').hide();
     }
   }, false);
 });
