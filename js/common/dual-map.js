@@ -243,8 +243,9 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
       //});
 
       // Neigher map.whenReady or map.on('load') seems to require SetView()
-
-      $("#sidemapCard").hide(); // Hide after size is available for tiles.
+      if (document.body.clientWidth > 500) { // Since map tiles do not fully load when below list. Could use a .5 sec timeout perhaps.
+        $("#sidemapCard").hide(); // Hide after size is available for tiles.
+      }
   })
   //.catch(function(error){ 
   //     alert("Data loading error: " + error)
@@ -588,6 +589,7 @@ function addIcons(dp,map,map2) {
       $('html,body').animate({ 
           scrollTop: $("#sidemapCard").offset().top - 140
       });
+      $(".go_local").show();
     }
   );
   $('.showItemMenu').click(function () {
