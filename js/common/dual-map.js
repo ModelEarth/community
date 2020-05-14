@@ -586,8 +586,9 @@ function addIcons(dp,map,map2) {
 
       $("#sidemapCard").show(); // map2
       popMapPoint(dp, map2, $(this).attr("latitude"), $(this).attr("longitude"));
-      $('html,body').animate({ 
-          scrollTop: $("#sidemapCard").offset().top - 140
+      window.scrollTo({
+        top: $("#sidemapCard").offset().top - 140,
+        left: 0
       });
       $(".go_local").show();
     }
