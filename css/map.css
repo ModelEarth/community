@@ -102,7 +102,7 @@
     background-color: #fcfcfc;
     cursor:pointer;
   }
-  #itemMenu {
+  .popMenu {
     border:1px solid #ccc;
     padding: 5px 0 5px 0;
     z-index: 10;
@@ -110,6 +110,9 @@
     position: absolute;
     top:0px;
     right:0px;
+  }
+  #itemMenu {
+    
   }
   #itemMenu > div {
     padding: 6px 30px 6px 30px;

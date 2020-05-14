@@ -28,7 +28,7 @@ Slack #epa
 
 ---
 
-### Tonight
+### Volunteer Projects
 
 We need assistance pre-processing lat/lon centers for zip codes, cities and counties - for all states (and countries).  
 
