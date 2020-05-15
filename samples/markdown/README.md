@@ -59,7 +59,7 @@ Advanced: Pre-process with [Gatsby](https://www.gatsbyjs.org/) which delivers st
 
 ### How to update a forked GitHub repo in the browser
 
-On your forked repo: Click Compare > switching the base > Create pull request > Give the pull request a title > Create pull request (again) > Merge pull request (scroll down) > Confirm merge.  
+On your forked repo: Click Compare > switching the base (if you have not switched already) > Create pull request > Give the pull request a title > Create pull request (again) > Merge pull request (scroll down) > Confirm merge.  
 
 [Images of steps](https://stackoverflow.com/questions/20984802/how-can-i-keep-my-fork-in-sync-without-adding-a-separate-remote/21131381#21131381)
 
