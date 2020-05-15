@@ -5,6 +5,21 @@ We're working on updates for [Maps For Us](https://mapsfor.us/) - a map display 
 Add to our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml). 
 Editable link is in our Slack #epa group.
 
+---
+
+###Manually Geocode Google Sheet
+
+Select the content of three adjacent columns: address, latitude and longitude.  
+
+Choose "Tools > Script Editor > Select Function > addressToPosition" and click the run button.  
+
+If you don't yet have the addressToPosition, copy it from the MapsforUS template above.  
+
+The geocoding maximum execution time allows for about 180 rows to be coded each time. Select the remaining batch and run again until you hit your max for the day, which might be 2,000.  
+<br>
+
+---
+
 ###Automatically geocode addresses - Contributed by Mark Noonan, Code for Atlanta
 
 It works by having a separate sheet for form submissions and doing the work there then copying the line into the main Points sheet. There's a separate Errors sheet where rows are added if there was a problem with the geocoding process for manual cleanup.  

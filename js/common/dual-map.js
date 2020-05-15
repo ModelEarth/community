@@ -102,7 +102,9 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
     map = L.map(whichmap, {
       center: mapCenter,
       scrollWheelZoom: false,
-      zoom: dp.zoom
+      zoom: dp.zoom,
+      dragging: !L.Browser.mobile, 
+      tap: !L.Browser.mobile
     });
     
     
@@ -126,7 +128,9 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
       map2 = L.map(whichmap2, {
         center: mapCenter,
         scrollWheelZoom: false,
-        zoom: dp.zoom
+        zoom: dp.zoom,
+        dragging: !L.Browser.mobile, 
+        tap: !L.Browser.mobile
       });
     }
 
@@ -239,8 +243,9 @@ function loadFromCSV(whichmap,whichmap2,dp,callback) {
       //});
 
       // Neigher map.whenReady or map.on('load') seems to require SetView()
-
-      $("#sidemapCard").hide(); // Hide after size is available for tiles.
+      if (document.body.clientWidth > 500) { // Since map tiles do not fully load when below list. Could use a .5 sec timeout perhaps.
+        $("#sidemapCard").hide(); // Hide after size is available for tiles.
+      }
   })
   //.catch(function(error){ 
   //     alert("Data loading error: " + error)
@@ -291,7 +296,9 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
       center: mapCenter,
       scrollWheelZoom: false,
       zoom: dp.zoom,
-      zoomControl: false
+      zoomControl: false,
+      dragging: !L.Browser.mobile, 
+      tap: !L.Browser.mobile
     });
 
     map.setView(mapCenter,dp.zoom);
@@ -579,9 +586,11 @@ function addIcons(dp,map,map2) {
 
       $("#sidemapCard").show(); // map2
       popMapPoint(dp, map2, $(this).attr("latitude"), $(this).attr("longitude"));
-      //$('html,body').animate({ 
-      //    scrollTop: $("#map1").offset().top
-      //});
+      window.scrollTo({
+        top: $("#sidemapCard").offset().top - 140,
+        left: 0
+      });
+      $(".go_local").show();
     }
   );
   $('.showItemMenu').click(function () {
@@ -593,7 +602,10 @@ function addIcons(dp,map,map2) {
     //$("#map").show();
     // $(this).css('border', 'solid 1px #aaa');
   });
-
+  $('.showLocMenu').click(function () {
+    $(".locMenu").show();
+    //event.stopPropagation();
+  });
 
 }
 
@@ -636,7 +648,7 @@ function showList(dp,map) {
 
 
 
-  var allItemsPhrase = "all items";
+  var allItemsPhrase = "all categories";
   if ($("#keywordsTB").val()) {
     keyword = $("#keywordsTB").val().toLowerCase();
   }
@@ -1005,7 +1017,7 @@ function showList(dp,map) {
   );
 
   var imenu = "<div style='display:none'>";
-  imenu += "<div id='itemMenu' class='filterBubble'>";
+  imenu += "<div id='itemMenu' class='popMenu filterBubble'>";
   imenu += "<div>View On Map</div>";
   imenu += "<div class='localonly mock-up' style='display:none'>Supplier Impact</div>";
   imenu += "<div class='localonly mock-up' style='display:none'>Production Impact</div>";
@@ -1015,6 +1027,14 @@ function showList(dp,map) {
   imenu += "</div>";
   imenu += "</div>";
   $("body").append(imenu);
+
+  var locmenu = "<div class='showLocMenu' style='float:right;font-size: 24px;cursor: pointer;'>…</div>";
+  locmenu += "<div class='locMenu popMenu filterBubble' style='float:right;display:none'>";
+  locmenu += "<div class='filterBubble'>";
+  locmenu += "<div id='hideSidemap' class='close-X' style='position:absolute;right:0px;top:8px;padding-right:10px;color:#999'>&#10005; Close Map</div>";
+  locmenu += "</div>";
+  locmenu += "</div>";
+  //$("#sidemapbar").prepend(locmenu);
 
   if (dataMatchCount > 0) {
       //alert("show") // was twice BUGBUG
@@ -1041,6 +1061,7 @@ function showList(dp,map) {
 
   $(document).click(function(event) { // Hide open menus
       $('#itemMenu').hide();
+      $('#locMenu').hide();
   });
 
   dp.data = data_out;

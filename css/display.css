@@ -47,19 +47,64 @@ body {
 .filterPanel {
 	overflow: auto;
 	padding: 20px 0 12px 24px;
-	border-top: 1px solid #ddd;
+	border-topX: 1px solid #ddd;
 }
+.filterPanel_background {
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:80px;
+	background-color: #fff;
+	z-index: -1;
+}
+.filterPanel_fixed_maptop {
+	margin-top:60px;
+}
+@media (max-width: 600px) {
+	.filterPanel_background {
+		height:140px;
+	}
+	#map1 {
+		margin-top:120px;
+	}
+}
+.filterPanel_fixed {
+	position: fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	z-index: 9999;
+	pointer-events: none;
+}
+.filterPanel>div {
+	pointer-events: auto;
+}
+
 #mapPanel {
 	padding: 0px;
 }
 
 #topPanel {
-	positionX: absolute;
+	overflow:auto;
 	clear:both;
 	z-index: 200;
-	margin-top: 10px;
+	margin-top: 24px;
 	padding-bottom: 20px;
 }
+@media (max-width: 800px) {
+	#topPanel {
+		margin-top: 0px;
+		position: absolute;
+		top:0px;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		z-index: 99999;
+	}
+}
+
 #topPanelFooter {
 	background: #eee;
 	position: absolute;
