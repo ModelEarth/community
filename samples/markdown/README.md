@@ -45,4 +45,16 @@ Examples of editing using markdown language [Markdown to HTML (Dillinger)](https
 The process of creating fast sites using static pages with APIs is referred to as [JAM Stack Development](https://jamstack.org)  
 
 Advanced: Pre-process with [Gatsby](https://www.gatsbyjs.org/) which delivers static content enfused with React. 
+
+### How to host multiple repos without using subdomain
+
+- Use CloudFlare as proxy with your domain name
+- Important: Avoid adding the 4 Google A records (these prevent adding the CNAME record)
+- Add a CNAME record in CloudFlare with @ and [github username].github.io
+- Create a public repo called [github username].github.io
+- Activate GitHub Pages and add your custom domain name.
+- Wait a couple minutes for new GitHub Pages site to become available.
+- Activate GitHub Pages for each additional repo.
+<!-- note, when setting up the prior Neighborhood folder was rename to [github username].github.io -->
+
  

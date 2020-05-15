@@ -108,6 +108,9 @@ $(document).ready(function(){
 	        	}
 			});
 		});
+	} else {
+		$(".filterPanel").addClass("filterPanel_fixed");
+		$("#map1").addClass("filterPanel_fixed_maptop");
 	}
 
  	// SIDE NAV WITH HIGHLIGHT ON SCROLL
