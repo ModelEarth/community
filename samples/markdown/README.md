@@ -42,7 +42,7 @@ You can toggle seeing hidden files using Command+Shift+Dot.
 
 Examples of editing using markdown language [Markdown to HTML (Dillinger)](https://dillinger.io/)  
 
-The process of creating fast sites using static pages with APIs is referred to as [JAM Stack Development](https://jamstack.org)  
+[JAM Stack Development](https://jamstack.org) - The process of creating fast sites using static pages with APIs. 
 
 Advanced: Pre-process with [Gatsby](https://www.gatsbyjs.org/) which delivers static content enfused with React. 
 
@@ -55,6 +55,13 @@ Advanced: Pre-process with [Gatsby](https://www.gatsbyjs.org/) which delivers st
 - Activate GitHub Pages and add your custom domain name.
 - Wait a couple minutes for new GitHub Pages site to become available.
 - Activate GitHub Pages for each additional repo.
-<!-- note, when setting up the prior Neighborhood folder was rename to [github username].github.io -->
+<!-- note, when setting up the prior neighborhood folder was renamed to [github username].github.io -->
+
+### How to update a forked GitHub repo in the browser
+
+On your forked repo: Click Compare > switching the base > Create pull request > Give the pull request a title > Create pull request (again) > Merge pull request (scroll down) > Confirm merge.  
+
+[Images of steps](https://stackoverflow.com/questions/20984802/how-can-i-keep-my-fork-in-sync-without-adding-a-separate-remote/21131381#21131381)
+
 
  

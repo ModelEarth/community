@@ -23,7 +23,7 @@ You are welcome to participate from any location in the world.
 
 <b>August and September - Team Formation</b>  
 
-<b>Saturday, September 12 - Code for America Day of Civic Coding</b>   
+<b>Monday, September 21 - <a href="https://nationaltoday.com/national-civic-day-hacking/">National Day of Civic Hacking</a></b>   
 
 <b>Saturday, October 17 - 11 AM to Noon - Virtual Progress Updates on Zoom</b>   
 

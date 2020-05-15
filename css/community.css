@@ -195,6 +195,11 @@ h3 {
     font-weight: 400;
   }
 }
+.alert {
+  color:#fff;
+  background-color: darkred;
+  padding: 10px 20px;
+}
 .rightside, .floatright {
   float:right;
   max-width:400px;
