@@ -32,6 +32,7 @@ VueJS: [Frappe/ERPNext](https://frappe.io/frappejs/docs/client/index.md),
 
 [Build a Vue App with Google Firebase Authentication and Firestore Database](https://blog.bitsrc.io/build-a-vue-app-with-firebase-authentication-and-database-e7d6816f79af)  
 
+[Flutter/Dart in HTML](https://gallery.flutter.dev/) - [Flutter](https://flutter.dev/)
 <br>
 <div class="showGit">
 <a href="https://modelearth.github.io/community/samples/">View as website</a>

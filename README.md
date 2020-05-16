@@ -52,6 +52,8 @@ for Goods & Services demand vectors (Food System and Full System).
 
 4. [Visualizations](samples/charts/) of material flow and regional input-output.  
 
+5. [Google Sheet Editor](https://neighborhood.org/editor) for local and state datasets.
+
 
 ### Dev Areas
 
