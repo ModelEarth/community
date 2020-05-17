@@ -1355,7 +1355,6 @@ function loadMap1() { // Also called by search-filters.js
   }
 }
 // http://localhost:8887/community/response/?show=suppliers#q=rin&cols=items,city,state,zip
-populateFieldsFromHash();
 loadMap1();
 window.onhashchange = function() {
   //param = loadParam(location.search,location.hash);
@@ -1453,6 +1452,8 @@ $(document).ready(function () {
     //    scrollTop: $("#hublist").offset().top - 250
     //});
 
+    catString = catString.replace(/ /g, '_');
+    updateHash({"cat":catString});
     console.log("catList clicked, call loadMap1 which calls loadFromCSV > showList in dual-map.js");
     loadMap1();
     //hideNonListPanels();
