@@ -951,12 +951,21 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
             <div style="clear:both"></div>
           </div>
 
-          <div style="display:none">
+          <div id="suppliers_noiframe" style="display:none">
 
+           
+            <!--
             Georgia businesses are responding to the call for manufacturing and  
-            distribution of critical supplies via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. To make a listing correction or update, please 
+            distribution of critical supplies via the state's <a href="https://www.georgia.org/covid19response">COVID-19 Response Form</a>. 
+            -->
+
+            <a href="https://www.georgia.org/covid19suppliersmap" target="covid19suppliersmap">Learn more</a> about our supplier list and map.
+
+            <!--
+            To make a listing correction or update, please 
             <a href="https://www.georgia.org/covid19response" style="white-space: nowrap;">submit a new entry</a> 
             or use the "feedback" button above. <a href="https://www.georgia.org/covid19suppliers">View PDF and learm more</a>.
+            -->
 
             <span style="display:none" class="suppliers_pre_message">
             Some of the locations are randomized by a couple miles since they were posted prior to our public listing registration.
@@ -1485,8 +1494,19 @@ $(document).ready(function () {
       
       map1.invalidateSize(); // Force Leaflet map to reload
   });
+
+  if (!inIframe && param["show"] == "suppliers") {
+      $("#suppliers_noiframe").show();
+  }
 });
 
+function inIframe () {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
 
 $('.sendfeedback').click(function(event) {
   window.location = "../resources/input?showheader=" + param["showheader"];
