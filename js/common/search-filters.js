@@ -1,6 +1,13 @@
 function populateFieldsFromHash() {
 	$("#keywordsTB").val(param["q"]);
-	$("#catSearch").val(param["g"]);
+
+	if (param["cat"]) {
+		var catString = param["cat"].replace(/_/g, ' ');;
+		$("#catSearch").val(catString);
+	    $('.catList > div').filter(function(){
+	        return $(this).text() === catString
+	    }).addClass('catListSelected');
+	}
 	$("#productCodes").val(param["hs"]);
 }
 var param = loadParams(location.search,location.hash);
