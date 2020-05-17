@@ -1495,7 +1495,7 @@ $(document).ready(function () {
       map1.invalidateSize(); // Force Leaflet map to reload
   });
 
-  if (!inIframe && param["show"] == "suppliers") {
+  if (window.self == window.top && param["show"] == "suppliers") {
       $("#suppliers_noiframe").show();
   }
 });
