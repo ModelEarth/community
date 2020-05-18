@@ -31,9 +31,10 @@ Clone the repo if you are already a collaborator. Otherwise, fork the repo to su
 
 - <a href='https://github.com/modelearth/io'>io</a> - overview
 - <a href='https://github.com/modelearth/eeio'>eeio</a> - charts
+- <a href='https://github.com/modelearth/useeio-widgets'>useeio-widgets</a> - NodeJS build
 - <a href='https://github.com/georgiadata/smartdata'>smartdata</a> - data
 
-A 404 error will occur for private folders in which you are not a collaborator.  
+A 404 error will occur for the private smartdata folder if you are not a collaborator.  
 
 ## 4. Update markdown pages
 
