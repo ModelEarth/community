@@ -42,5 +42,5 @@ if __name__ == '__main__':
     result_df = pd.merge(result_df,demand_df)
     result_df['sector'] = result_df['sector'].apply(lambda x: str.replace(x,'/','-'))
     result_df = result_df.rename(columns={'sector':'Sectors','amount':'US_2007_Demand_$'})
-    result_df.to_csv('../samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv',index=False)
+    result_df.to_csv('../start/dataset/USEEIOv1.2_result_2007_impacts_final.csv',index=False)
 

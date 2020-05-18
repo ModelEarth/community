@@ -60,8 +60,8 @@ Example of loading from [CSV rather than JSON](https://model.earth/tw-charts/reg
 
 Display sectors within subcategories and full names.  Example:
 
-[Sample dataset](https://model.earth/community/samples/dataset)  
-[Sortable heatmap](https://model.earth/community/samples/dataset/sortable.html)  
+[Sample dataset](https://model.earth/community/start/dataset)  
+[Sortable heatmap](https://model.earth/community/start/dataset/sortable.html)  
 
 Display all the industries (under expandable parent categories) rather than just 10 to 50 at a time.  
 

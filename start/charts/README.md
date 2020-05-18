@@ -23,7 +23,7 @@ Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-
 
 ### D3 Heatmap
 
-[Sortable USEEIO](../../samples/dataset/sortable.html) - [Others](../../samples/dataset/)  
+[Sortable USEEIO](../../start/dataset/sortable.html) - [Others](../../start/dataset/)  
 
 
 ### ThreeJS Force Graph
