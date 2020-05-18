@@ -40,9 +40,9 @@ A 404 error will occur for the private smartdata folder if you are not a collabo
 
 Add notes and links in the README.md files which are pulled into index.html pages.  
 
-Industry 
-Bioeconomy Planner - BEA
-Localization - Places
+- [Bioeconomy Planner - BEA](../../bea)  
+- [Industry Impact](../../industries)  
+- [Localization - Places](../../places)  
 
 ## 5. Update dataset layouts
 
