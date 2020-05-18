@@ -1,6 +1,6 @@
 # Leaflet Routing Map
 
-[Routing Map Sample](https://modelearth.github.io/community/samples/routing/)
+[Routing Map Sample](https://modelearth.github.io/community/start/routing/)
 
 Route legend on right of map needs to end with last letter in route.  
 This issue also occurs with letter.html page.  

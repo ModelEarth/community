@@ -98,7 +98,7 @@ file_name = 'useeio_sectors_final_perspective.csv'
 result2_df.to_csv(file_name, sep=',', encoding='utf-8')  
 ```
 
-Enhancements have been made to the export above.  [View new script](python/produceUSEEIOimpactcsv.txt) and [resulting CSV file](../../samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
+Enhancements have been made to the export above.  [View new script](python/produceUSEEIOimpactcsv.txt) and [resulting CSV file](../../start/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
 
 
 Additional updates requested:  
@@ -110,7 +110,7 @@ Additional updates requested:
 5. Retain capital letters at start of words in section titles.
 6. Add Input-Output total dollar values.  
 
-See [Goods and Services example](../../samples/dataset/) which loads a formatted CSV file.
+See [Goods and Services example](../../start/dataset/) which loads a formatted CSV file.
 
 <br>
 

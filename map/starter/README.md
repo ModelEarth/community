@@ -23,7 +23,7 @@ Can it lookup a city, zip or county lat/lon?
 
 <b>Python Project - Getting Started</b>
 
-[Steps for viewing this repo locally](../../samples/markdown/)  
+[Steps for viewing this repo locally](../../start/markdown/)  
 
 Here's our script to [Generate Farm Fresh CSV files](../../farmfresh) for all US states.  
 

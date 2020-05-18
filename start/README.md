@@ -35,5 +35,5 @@ VueJS: [Frappe/ERPNext](https://frappe.io/frappejs/docs/client/index.md),
 [Flutter/Dart in HTML](https://gallery.flutter.dev/) - [Flutter](https://flutter.dev/)
 <br>
 <div class="showGit">
-<a href="https://modelearth.github.io/community/samples/">View as website</a>
+<a href="https://modelearth.github.io/community/start/">View as website</a>
 </div>

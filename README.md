@@ -24,7 +24,7 @@ Slack #epa
  
 
 
-[Starter samples](samples/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO)&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
+[Starter samples](start/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO)&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
 ---
 
@@ -46,26 +46,26 @@ $10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatla
 1. A collection of [EEIO widgets](https://modelearth.github.io/eeio/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Charts are loaded from JSON files [generated](resources/useeio) 
 for Goods & Services demand vectors (Food System and Full System). 
 
-2. Detailed [Goods & Services Report](samples/dataset) with economic value and environmental impact of production choices.   
+2. Detailed [Goods & Services Report](start/dataset) with economic value and environmental impact of production choices.   
 
-3. [Maps of products and industries](samples/maps) - Regional hubs, industries by zipcode.  
+3. [Maps of products and industries](start/maps) - Regional hubs, industries by zipcode.  
 
-4. [Visualizations](samples/charts/) of material flow and regional input-output.  
+4. [Visualizations](start/charts/) of material flow and regional input-output.  
 
 5. [Google Sheet Editor](https://neighborhood.org/editor) for local and state datasets.
 
 
 ### Dev Areas
 
-1. [Data visualizations](samples/dataset/) displayed from [static csv files](samples/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [exported from the USEEIO API](resources/useeio/) with [Python scripts](resources/useeio/python/produceUSEEIOimpactcsv.py). 
+1. [Data visualizations](start/dataset/) displayed from [static csv files](start/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [exported from the USEEIO API](resources/useeio/) with [Python scripts](resources/useeio/python/produceUSEEIOimpactcsv.py). 
 
 1. Preprocess data using the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
-1. Add D3 heatmap colors by row to USEEIO data on [Goods & Services Report](samples/dataset) - [sortable version](samples/dataset/sortable.html).
+1. Add D3 heatmap colors by row to USEEIO data on [Goods & Services Report](start/dataset) - [sortable version](start/dataset/sortable.html).
 
-1. Add cascading category toggle to [Goods & Services Report](samples/dataset). 
+1. Add cascading category toggle to [Goods & Services Report](start/dataset). 
 
 1. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
 
@@ -79,7 +79,7 @@ for Goods & Services demand vectors (Food System and Full System).
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
 1. Highlight <a href="../community/tools/#data">Smart & Sustainable Communities</a> on Leaflet map. 
-Document Georgia Technology <a href="samples/routing/">driving tour routes</a>.
+Document Georgia Technology <a href="start/routing/">driving tour routes</a>.
 
 1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
