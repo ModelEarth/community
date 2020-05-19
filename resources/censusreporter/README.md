@@ -1,10 +1,12 @@
 
-# Venv and Django with Postgres
+# CensusReporter
 
-GOAL: Since Wazimap provides a Python 3 fork of Census Reporter, we're using it to modernize Census Reporter. 
-Wazimap is used in Africa and India.  
+Project: Update [CensusReporter.org](https://CensusReporter.org) from Python 2 to 3.
+Add environmentally-enabled IO Charts to maps.
 
-Beforehand, contact CensusReporter.org to see if they will upgrade to our Python 3.0 version with environmentally-enabled IO widgets added.  
+## Venv and Django with Postgres
+
+Since the Wazimap fork provides a Python 3 version of Census Reporter, use it as a starting point for updating the US version of Census Reporter. Wazimap is used in Africa and India.    
 
 ### Mac Users
 
