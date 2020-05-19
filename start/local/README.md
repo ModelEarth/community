@@ -1,6 +1,6 @@
 # Getting Started
 
-Steps for creating a static site using Markdown and GitHub Pages with free hosting.  
+Steps for creating a static site using markdown and GitHub Pages with free hosting.  
 
 ## 1. Start a local webroot  
 
@@ -14,32 +14,36 @@ Go to the folder where you'd like your webroot to reside and run the following t
 
  Alternatively, you can install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to view and develop pages offline using https://localhost:8777 on your computer. Web Server for Chrome also allows you to [load a custom domain](https://medium.com/@jmatix/using-chrome-as-a-local-web-server-af04baffd581). Web Server for Chrome does not work as a Brave browser extension on Mac (as of December 2019), but you can add as a Chrome extension, then utilize from within Brave.
 
-## 2. Copy repo(s) to your local computer  
+## 2. Clone repo into your webroot 
 
 Go to the <a href='https://github.com/modelearth/community'>community</a> repo and click "clone or download"
 
-Choose <a href="https://desktop.github.com/">Open in Desktop</a> for an easy way to deploy your changes.  
+Choose "Open in Desktop" to use <a href="https://desktop.github.com/">GitHub Desktop</a>, an easy way to deploy your changes.  
 
-Save the file in the folder you created in step 1.  
+Save the file in the webroot folder you created in step 1.  
 
-The site should now be visible at [http://localhost:8887/community/](http://localhost:8887/community/)
+The static site should now be visible at [http://localhost:8887/community/](http://localhost:8887/community/)
 
 <!--
 Clone the repo if you are already a collaborator. Otherwise, fork the repo to submit changes.  
 -->
 
-## 3. Add additional repos inside your web root folder 
+## 3. Add additional repos inside your webroot 
 
 Repeat step 2 above for the following repos:  
 
 
-- <a href='https://github.com/modelearth/eeio'>eeio</a> - Embeddable charts
+- <a href='https://github.com/modelearth/io'>io</a> - Embeddable charts
 - <a href='https://github.com/modelearth/useeio-widgets'>useeio-widgets</a> - NodeJS build for charts  
 
 
-The charts should now be visible at [http://localhost:8887/io/charts/useeio](../../../io/charts/useeio)  
+The static IO charts should now be visible at [http://localhost:8887/io/charts/useeio](../../../io/charts/useeio)  
 
-[Steps for building the charts](../../../io/charts/)
+[Steps for building the charts using NodeJS](../../../io/charts/)
+
+## 4. Deploy your updates
+
+Deploy your updates using GitHub. If you are not a project collaborator, GitHub Desktop will prompt you to create a project fork on GitHub. After doing so, place a pull request when your updates are ready for review.  
 
 <!--
 - <a href='https://github.com/modelearth/io'>io</a> - overview
@@ -72,7 +76,7 @@ Use a Google Sheet or CSV file to [prototype a list or chart](../dataset) and up
 <br>
 
 ### Mac Users
-To avoid commiting your local .DS_Store files to GitHub, you may need to run the following to ignore .DS_Store files during commits forever. The .DS_Store files will continue to set icon sizes in your local file manager.   
+To avoid commiting your local .DS\_Store files to GitHub, you may need to run the following to ignore .DS\_Store files during commits forever. The .DS\_Store files will continue to set icon sizes in your local file manager.   
  
 <!-- Avoid .DS_Store file creation over network connections (article from 2011, confirm this still occurs)
 	https://support.apple.com/en-us/HT1629 -->
