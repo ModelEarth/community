@@ -128,7 +128,7 @@ function consoleLog(text,value) {
   console.log(text, value);
 }
 $(document).ready(function() {
-  if(location.host.indexOf('localhost') < 0) {
+  if(location.host.indexOf('localhost') < 0 || param["view"] != "local") {
     // Inject style rule
       var div = $("<div />", {
         html: '<style>.local{display:none}.localonly{display:none}</style>'
