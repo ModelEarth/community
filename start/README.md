@@ -4,7 +4,7 @@ Stand-alone examples of formatting and displaying community data.
 
 ## [1. Create a page (markdown)](markdown)  
 ## [2. Display your data (dataset)](dataset)
-## [3. Add Input-Output Widgets (eeio)](https://modelearth.github.io/eeio/charts)  
+## [3. Add Input-Output Widgets (eeio)](https://modelearth.github.io/io/charts)  
 ## [4. Customize data from API (useeio)](../resources/useeio)  
 ## [5. Visualize your data (charts)](charts)  
 ## [6. Show locations (routing)](routing)  

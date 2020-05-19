@@ -1,6 +1,6 @@
 # Chart Starters
 
-Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-widgets) which use [D3.js](https://github.com/d3/d3/wiki/Gallery) as their only dependency. [View&nbsp;examples](http://modelearth.github.io/eeio/charts/). 
+Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-widgets) which use [D3.js](https://github.com/d3/d3/wiki/Gallery) as their only dependency. [View&nbsp;examples](http://modelearth.github.io/io/charts/). 
 
 
 ### Sankey Charts

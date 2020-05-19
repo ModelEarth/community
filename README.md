@@ -36,14 +36,14 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 
 ### Fall 2020
 
-<a href="challenge" style="font-size:18px">2020 Sustainable Commuities Web Challenge</a>  
+<a href="challenge" style="font-size:18px">2020 Sustainable Communities Web Challenge</a>  
 
 $10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 
 
 ### Overview
 
-1. A collection of [EEIO widgets](https://modelearth.github.io/eeio/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Charts are loaded from JSON files [generated](resources/useeio) 
+1. A collection of [EEIO widgets](https://modelearth.github.io/io/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Charts are loaded from JSON files [generated](resources/useeio) 
 for Goods & Services demand vectors (Food System and Full System). 
 
 2. Detailed [Goods & Services Report](start/dataset) with economic value and environmental impact of production choices.   
