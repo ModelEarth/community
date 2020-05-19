@@ -19,7 +19,9 @@ Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-
 
 <!--[D3.js Sankey Diagram - Flow-o-matic, easy list editing](https://observablehq.com/@mbostock/flow-o-matic)  -->
 
-[e!Sankey (Also very nice, but too pricy)](https://www.ifu.com/en/e-sankey/)  
+[e!Sankey (Also very nice, but too pricy)](https://www.ifu.com/en/e-sankey/)
+
+[Sankey Diagram from csv file](https://stackoverflow.com/questions/20476471/getting-sankey-diagram-in-d3-from-csv-file)
 
 ### D3 Heatmap
 
