@@ -128,14 +128,14 @@ function consoleLog(text,value) {
   console.log(text, value);
 }
 $(document).ready(function() {
-  if(location.host.indexOf('localhost') < 0) {
+  if(location.host.indexOf('localhost') >= 0 || param["view"] == "local") {
+    var div = $("<div />", {
+        html: '<style>.local{display:inline-block !important}.localonly{display:block !important}</style>'
+      }).appendTo("body");
+  } else {
     // Inject style rule
       var div = $("<div />", {
         html: '<style>.local{display:none}.localonly{display:none}</style>'
-      }).appendTo("body");
-  } else {
-    var div = $("<div />", {
-        html: '<style>.local{display:inline-block !important}.localonly{display:block !important}</style>'
       }).appendTo("body");
   }
 });
