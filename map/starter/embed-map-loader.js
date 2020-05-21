@@ -19,7 +19,7 @@ strVar += "          <h1>Data Driven Decision&nbsp;Making<\/h1>";
 strVar += "          <h2 style=\"font-size: 18px; margin-bottom:0px; font-weight: 600\">Smart & Sustainable Movement of <span style=\"white-space: nowrap\">Goods & Services<\/span><\/h2><br>";
 strVar += "          ";
 strVar += "            <!--";
-strVar += "            <input type=\"button\" onclick=\"location.href='..\/..\/samples\/feed';\" ";
+strVar += "            <input type=\"button\" onclick=\"location.href='..\/..\/start\/feed';\" ";
 strVar += "            value=\"Add your data feeds\" style=\"margin-top:20px; padding:10px\" \/>";
 strVar += "            <br><br>";
 strVar += "            -->";
