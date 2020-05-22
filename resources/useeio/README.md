@@ -1,5 +1,7 @@
 # USEEIO API
 
+View [R Language](../../../io/projects) starter steps in the Bioeconomy Planner section.  
+
 ## Python Example
 
 The following documents how to use an [Anaconda Jupyter Notebook](https://www.anaconda.com/distribution/) to query the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
