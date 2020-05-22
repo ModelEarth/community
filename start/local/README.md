@@ -75,7 +75,7 @@ Use a Google Sheet or CSV file to [prototype a list or chart](../dataset) and up
 
 1. Copy the "starter" folder inside community and give it the name of your community or module.
 -->
-<br>
+
 
 ### Mac Users
 To avoid commiting your local .DS\_Store files to GitHub, you may need to run the following to ignore .DS\_Store files during commits forever. The .DS\_Store files will continue to set icon sizes in your local file manager.   
@@ -87,17 +87,12 @@ To avoid commiting your local .DS\_Store files to GitHub, you may need to run th
 
 You can toggle hidden file viewing using Command+Shift+Dot. 
 
-## Additional Resources
 
-Examples of editing using markdown language [Markdown to HTML (Dillinger)](https://dillinger.io/)  
+## 5. Activate your website
 
-[JAM Stack Development](https://jamstack.org) - The process of creating fast sites using static pages with APIs. 
+### How to host multiple repos in one site using Github Pages - without using subdomains
 
-Advanced: Pre-process with [Gatsby](https://www.gatsbyjs.org/) which delivers static content enfused with React. 
-
-### How to host multiple repos within one site on Github without using subdomains
-
-- Use CloudFlare as proxy with your domain name
+- Use CloudFlare.com as a free proxy for your domain name
 - Important: Avoid adding the 4 Google A records (these prevent adding the CNAME record)
 - Add a CNAME record in CloudFlare with @ and [github username].github.io
 - Create a public repo called [github username].github.io
@@ -106,11 +101,27 @@ Advanced: Pre-process with [Gatsby](https://www.gatsbyjs.org/) which delivers st
 - Activate GitHub Pages for each additional repo.
 <!-- note, when setting up the prior neighborhood folder was renamed to [github username].github.io -->
 
-### How to update a forked GitHub repo in the browser
+
+## 6. Update your forked repos
+
+### Occasionally merge in updates from the master (source) repo by doing a "pull request"
 
 On your forked repo: Click Compare > switching the base (if you have not switched already) > Create pull request > Give the pull request a title > Create pull request (again) > Merge pull request (scroll down) > Confirm merge.  
 
-[Images of steps](https://stackoverflow.com/questions/20984802/how-can-i-keep-my-fork-in-sync-without-adding-a-separate-remote/21131381#21131381)
+[Images of steps for updating your fork](https://stackoverflow.com/questions/20984802/how-can-i-keep-my-fork-in-sync-without-adding-a-separate-remote/21131381#21131381)
 
 
+## Additional Resources
+
+Examples of editing using markdown language [Markdown to HTML (Dillinger)](https://dillinger.io/)  
+
+Learn more about [JAM Stack Development](https://jamstack.org) - the process of creating fast sites using static pages with CSV files, JSON and APIs. 
+
+<!--
+Advanced: Pre-process with [Gatsby](https://www.gatsbyjs.org/) which delivers static content enfused with React. 
+-->
+
+
+
+<br>
  
