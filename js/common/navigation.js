@@ -26,6 +26,9 @@ $(document).ready(function(){
  		climbpath += "../";
  	}
 
+ 	if(location.host.indexOf('georgia') >= 0) { 
+ 		$("body").prepend( "<img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'><br>");
+ 	}
  	if (param["showheader"] != "false") {
 	 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
 	 	if(document.getElementById("sidecolumn") == null)
@@ -54,11 +57,16 @@ $(document).ready(function(){
 	 		
 	 		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
 	 			$(".siteTitleShort").text("Model Georgia");
-		 		imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
-		 		imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png";
-	 			$('#logoholder').addClass('logoholder-state');
-		 		$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
-		 		$('#headerLocTitle').html("Georgia");
+		 		//imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
+		 		//imageUrl = climbpath + "../io/img/logo/georgia_usa.png";
+		 		
+		 		//imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png";
+	 			//$('#logoholder').addClass('logoholder-state');
+		 		//$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
+		 		//$('#headerLocTitle').html("Georgia");
+
+
+		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa.png' style='width:140px;padding-top:4px'></a>");
 		 		$('.georgia').show(); // For nav menu
 		 	} else {
 		 		$(".siteTitleShort").text("Model Earth");
@@ -70,6 +78,7 @@ $(document).ready(function(){
 		 		$('#logoholder').addClass('logoholder-modelearth');
 		 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
 		 		//$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
+		 		$('.earth').show(); // For nav menu
 		 	}
 
 		 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
