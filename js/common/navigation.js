@@ -30,10 +30,10 @@ $(document).ready(function(){
  		climbpath += "../";
  	}
 
- 	if(location.host.indexOf('georgia') >= 0) { 
- 		$("body").prepend( "<img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'><br>");
- 	}
  	if (param["showheader"] != "false") {
+ 		if(location.host.indexOf('georgia') >= 0) { 
+	 		$("body").prepend( "<img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'><br>");
+	 	}
 	 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
 	 	if(document.getElementById("sidecolumn") == null)
 		{
