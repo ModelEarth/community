@@ -25,9 +25,6 @@
 <script>
   loadMarkdown("README.md", "readmeDiv", "_parent");
 
-  //loadMarkdown("../../io/README.md", "useDiv", "_parent");
-  loadMarkdown("https://modelearth.github.io/io/README.md", "useDiv", "_parent");
-
   //loadMarkdown("https://raw.githubusercontent.com/wiki/USEPA/useeio-widgets/Home.md", "useDiv", "_parent");
   ////loadMarkdown("https://raw.githubusercontent.com/wiki/USEPA/useeio-widgets/Use.md", "useDiv", "_parent");
 
@@ -125,7 +122,7 @@
 }
 </style>
 
-<div style="position:relative; background:#aaa"><!-- #dae8eb -->
+<div class="earth" style="display:none;position:relative; background:#aaa"><!-- #dae8eb -->
 
     <div class="local" style="float:right; padding:20px; clear:both; display:none">
 
@@ -191,16 +188,6 @@
         <div style="overflow:auto">
             <div id="showImpactWidget" class="localonly button">Explore Environmental Impacts</div>
             <div id="readmeDiv"></div>
-        </div>
-    </div>
-
-    <div class="pagecard">
-
-        <div class="leftLogo">
-            <img src="../img/logo/github.png" style="width:100%; max-width:200px">
-        </div>
-        <div style="overflow:auto">
-            <div id="useDiv"></div>
         </div>
     </div>
 
