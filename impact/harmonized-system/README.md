@@ -16,4 +16,4 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 1. [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
 
 
-[Code for All member countries](https://codeforall.org/members) | [More Project Ideas](../../)
+[Code for All countries](https://codeforall.org/members) | [More Project Ideas](../../)
