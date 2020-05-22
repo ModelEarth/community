@@ -24,7 +24,8 @@ Slack #epa
  
 
 
-[Starter samples](start/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO)&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
+[Starter samples](start/) and [datasets](https://github.com/modelearth/community) for integration with 
+[Embeddable IO Charts](../io/charts) which use static JSON files generated from the [USEEIO&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
 ---
 <!--
