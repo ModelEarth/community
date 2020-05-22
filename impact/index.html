@@ -1519,6 +1519,32 @@ function loadMap1() { // Also called by search-filters.js
     dp1.addlisting = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
 
     dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
+  } else if (param["show"] == "restaurants") {
+    // Fulton County 5631 restaurants
+    
+    dp1 = {};
+    dp1.listTitle = "Restaurant Ratings";
+    dp1.dataTitle = "Restaurant Ratings";
+    dp1.dataset = "/community/tools/map.csv";
+    dp1.latitude = 32.9;
+    dp1.longitude = -83.4;
+
+    //dp1.showLayer = false;
+    dp1.name = "Fulton County Restaurants";
+    dp1.titleColumn = "restaurant";
+    dp1.nameColumn = "restaurant";
+
+    dp1.valueColumnLabel = "Health safety score";
+    dp1.valueColumn = "score";
+    dp1.scale = "scaleThreshold";
+
+    dp1.latColumn = "latitude";
+    dp1.lonColumn = "longitude";
+
+    dp1.dataset = "/community/farmfresh/usa/georgia/fulton_county_restaurants.csv"; // Just use 50
+    dp1.dataTitle = "Restaurant Scores";
+    dp1.titleColumn = "restaurant";
+    dp1.listInfo = "Fulton County";
   } else {
     // Atlanta
     dp1.latitude = 33.76;
