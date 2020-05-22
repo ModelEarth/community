@@ -4,11 +4,10 @@ Stand-alone examples of formatting and displaying community data.
 
 ## [1. Start a local website](local)  
 ## [2. Display a dataset](dataset)
-## [3. Add industry charts (USEEIO-widgets)](https://modelearth.github.io/io/charts)  
-## [4. Display input-output data from API or JSON](../resources/useeio)  
-## [5. Visualize your data (charts)](charts)  
-## [6. Show locations (routing)](routing)  
-## [7. Counties and Zipcodes (maps)](maps) 
+## [3. Embeddable industry charts (USEEIO-widgets)](https://modelearth.github.io/io/charts)  
+## [4. Chart starter ideas](charts)  
+## [5. Maps by County and Zip Code](maps)  
+## [6. Help build the API - R Language and Python](../resources/useeio) 
 
 <br>
 ### Related Resources
