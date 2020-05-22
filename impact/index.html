@@ -720,6 +720,177 @@ b {
 </div>
 <!-- /HEX -->
 
+<!-- Settings Panel -->
+<div class="settingsPanel topMenuOffset floater" style="display:none; position:fixed">
+
+  <div class="hideSettings hideSettingsClick" style="position:absolute;right:0;padding:0 12px 12px 12px;"><i class="material-icons" style="font-size:28px">&#xE5CD;</i></div>
+
+  <div style="font-size:16pt; margin-bottom:30px">Settings</div>
+
+  <div class="hideMobile">
+    <div classX="user-6" style="displayX:none">
+      <div class="sitemodeHolder" style="display:none;">
+        <div class="setLeft">Header</div>
+            <div class="setOverflow"><div class="setRight">
+              <select class="sitemode" id="sitemode">
+                <option value="widget" selected>Section Navigation</option>
+                <option value="fullnav">Full Navigation</option>
+                </select>
+            </div></div>
+            <div class="setDiv"></div>
+        </div>
+      </div>
+    </div>
+
+  <div class="setLeft">Style</div>
+    <div class="setOverflow"><div class="setRight">
+        <select id="sitelook">
+          <option value="default" selected>Default</option>
+          <option value="light">Light Colors</option>
+          <option value="dark">Night Vision</option>
+        </select>
+    </div></div>
+    <div class="setDiv"></div>
+
+    <div class="user-10" style="display:none">
+      <div class="sitesourceHolder" style="display:none">
+      <div class="setLeft">Display</div>
+        <div class="setOverflow"><div class="setRight">
+            <select class="sitesource">
+              <option value="overview" selected>Overview</option>
+              <option value="directory">Directory</option>
+            </select>
+        </div></div>
+        <div class="setDiv"></div>
+    </div>
+  </div>
+
+    <div style="display:none">
+        <div class="setLeft">Layout</div>
+        <div class="setOverflow"><div class="setRight">
+          <select id="bts">
+            <option value="12">Overview, Directory</option>
+            <option value="21">Directory, Overview</option>
+            <option value="02">Directory Only</option>
+                <option value="01">Overview Only</option>
+            </select>
+        </div></div>
+        <div class="setDiv"></div>
+    </div>
+    
+    <div class="setLeft"><div>Basemap</div></div>
+    <div class="setOverflow">
+      <div id='selector_menu' class="setRight">
+    
+        <select id='basemapSelector' class='layerSelector sitebasemap catchClick'>
+          <option value='positron_light_nolabels'>Positron</option>
+          <option value='osm'>Open Street Map</option>
+          <option value='esri'><!--- Esri -->Satellite Map</option>
+          <!-- Zoom not appearing -->
+          <!--<option value='default'>Open Street Map 2</option>-->
+          <!-- Zoom not appearing -->
+          <!-- <option value='green'>Green Topo Map</option>-->
+          <option value='dark'>Dark Background</option>
+          <option value='firemap'>Fire Map</option>
+        </select>
+    
+    </div>
+  </div>
+  
+
+  <!--
+  <div class="setDiv"></div>
+
+  <div class="setLeft"><div>Zoom To</div></div>
+    <div class="setOverflow">
+      <div class="setRight">
+    
+        <select class='center'>
+          <option value='mylocation'>My Location</option>
+          <option value='filter'>Nearby</option>
+          <option value='state'>State</option>
+          <option value='country'>Country</option>
+          <option value='world'>World</option>
+        </select>
+    
+    </div>
+  </div>
+  <div class="setDiv"></div>
+
+  <div style="displayX:none">
+        <div class="setLeft">My Latitude</div>
+        <div class="setOverflow"><div class="setRight">
+          
+            <input class="mylat filterClick mobileWide textInput" placeholder="Latitude" type="text" style="width: 120px; margin-top: 0px" />
+
+        </div></div>
+        <div class="setDiv"></div>
+    </div>
+    <div style="displayX:none">
+        <div class="setLeft">My Longitude</div>
+        <div class="setOverflow"><div class="setRight">
+          
+            <input class="mylon filterClick mobileWide textInput" placeholder="Longitude" type="text" style="width: 120px; margin-top: 0px" />
+
+        </div></div>
+        <div class="setDiv"></div>
+    </div>
+  -->
+
+    <!-- Multilayer Checkboxes -->
+    <!--
+  <div class="setLeft"><div>Layer Checkboxes</div></div>
+    <div class="setOverflow">
+      <div class="setRight">
+      <div class="hideMultiselect settingsButton">Visible</div>
+        <div class="showMultiselect settingsButton" style="display:none; background:#ddd">Hidden</div>
+      </div>
+    </div>
+    <div class="setDiv"></div>
+  -->
+
+    <!--
+    <div class="hideHero layoutTab filterTab buttonUnderCategories" style="margin:15px 10px 0 0;display:none">Hide Hero</div>
+    <div class="showHero layoutTab filterTab buttonUnderCategories" style="margin:15px 10px 0 0;">Show Hero</div>
+
+    <div class="setDiv"></div>
+  -->
+
+  <!--
+  <div><strong>Link</strong></div>
+  <input type="text" value='https://data.georgia.org/site/' style='line-height:18pt;display:block;width:100%;font-size:12pt;color:#333;background:#fff;border:1px solid #aaa;'><br>
+  -->
+
+    <!-- Embed Directory -->
+    <!--
+    <div class="setLeft">Embed</div>
+    <div class="setOverflow">
+      <div class="setRight">
+      
+        <div class="showEmbedTag settingsButton">View Sample</div>
+
+      </div>
+    </div>
+    <div class="embedTag" style="display:none">
+      <div style="margin-bottom:4px"><a href="widget.html#aerospace&sitelook=coi">Get HTML</a> - view source</div>
+
+
+      <input type="text" value='<script src="//data.georgia.org/site/js/embed.js?site=georgia&v=0.1"></script><div id="map"></div>' 
+      style='display:none;line-height:18pt;width:100%;font-size:12pt;color:#333;background:#fff;border:1px solid #aaa;'>
+    </div>
+    -->
+
+  <br />
+
+  <div class="user-5" style="display:none">
+    <hr>Staff only - 
+    <a href="/maps/leaflet/providers/preview/" target="basemaps">View Basemaps</a> | 
+    <a href="../json/menu.json">View JSON</a><br>
+    <div class="settingAdminNotes"></div>
+  </div>
+
+</div>
+<!-- End Settings Panel -->
 
 <aside class="Intermodal_Ports">
 group,lat,lon,value,address,city,state,zip
@@ -1269,17 +1440,43 @@ function loadMap1() { // Also called by search-filters.js
   dp1.longitude = -83.4;
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
-  if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
+  if (param["show"] == "logistics") { // "http://" + param["domain"]
+
+    dp1.listTitle = "Logistics";
+
+    dp1.listInfo = "Select a category to filter your results.";
+    dp1.dataset = "https://georgiadata.github.io/smartdata/resources/suppliers/us_ga_logistics.csv";
+    
+    dp1.dataTitle = "Manufacturers and Distributors";
+    dp1.itemsColumn = "items";
+    dp1.valueColumn = "type";
+    dp1.valueColumnLabel = "Type";
+    dp1.markerType = "google";
+    //dp1.keywords = "items";
+    // "In Business Type": "type", "In State Name": "state", "In Postal Code" : "zip"
+    dp1.search = {"In Items": "items", "In Website URL": "website", "In City Name": "city", "In Zip Code" : "zip"};
+    dp1.nameColumn = "title";
+    dp1.latColumn = "lat_rand";
+    dp1.lonColumn = "lon_rand";
+
+    if (param["initial"] != "response") {
+      dp1.nameColumn = "company";
+      dp1.latColumn = "latitude";
+      dp1.lonColumn = "longitude";
+      dp1.showLegend = false;
+    }
+
+    dp1.listLocation = false;
+    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
+  } else if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
 
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
 
     dp1.listInfo = "Select a category to filter your results.";
-    dp1.dataset = "https://georgiadata.github.io/smartdata/resources/suppliers/ga_suppliers.csv";
-    //dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers.csv";
-    if (param["initial"] == "response") {
-      dp1.dataset = "/smartdata/resources/suppliers/ga_suppliers_pre.csv";
-    }
+    dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe.csv";
+    //dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe.csv";
+
     dp1.dataTitle = "Manufacturers and Distributors";
     dp1.itemsColumn = "items";
     dp1.valueColumn = "type";
