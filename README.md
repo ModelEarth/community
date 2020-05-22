@@ -37,10 +37,11 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 
 ### Fall 2020
 
-<a href="challenge" style="font-size:18px">2020 Sustainable Communities Web Challenge</a>  
+<a href="https://model.earth/community/challenge" style="font-size:18px">2020 Sustainable Communities Web Challenge</a> - $10,000 in awards!  
 
-$10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
-
+<!--
+Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
+-->
 
 ### Dev Areas
 
