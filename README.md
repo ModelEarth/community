@@ -27,12 +27,13 @@ Slack #epa
 [Starter samples](start/) and [datasets](https://github.com/modelearth/community) for integration with the [US Environmentally-Extended Input-Output (USEEIO)&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
 ---
-
+<!--
 ### Volunteer Projects
 
 We need assistance pre-processing lat/lon centers for zip codes, cities and counties - for all states (and countries).  
 
 We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=farmfresh&design=1) which are also used for Covid-19 supply maps.
+-->
 
 ### Fall 2020
 
@@ -41,7 +42,7 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 $10,000 in awards! Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 
 
-### Overview
+### Dev Areas
 
 1. A collection of [EEIO widgets](https://modelearth.github.io/io/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Charts are loaded from JSON files [generated](resources/useeio) 
 for Goods & Services demand vectors (Food System and Full System). 
@@ -54,16 +55,9 @@ for Goods & Services demand vectors (Food System and Full System).
 
 5. [Google Sheet Editor](https://neighborhood.org/editor) for local and state datasets.
 
-
-### Dev Areas
-
-1. [Data visualizations](start/dataset/) displayed from [static csv files](start/dataset/USEEIOv1.2_result_2007_impacts_final.csv) - [exported from the USEEIO API](resources/useeio/) with [Python scripts](resources/useeio/python/produceUSEEIOimpactcsv.py). 
-
-1. Preprocess data using the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
+1. Preprocess data from the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
-
-1. Add D3 heatmap colors by row to USEEIO data on [Goods & Services Report](start/dataset) - [sortable version](start/dataset/sortable.html).
 
 1. Add cascading category toggle to [Goods & Services Report](start/dataset). 
 
@@ -78,17 +72,18 @@ for Goods & Services demand vectors (Food System and Full System).
 1. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
-1. Highlight <a href="../community/tools/#data">Smart & Sustainable Communities</a> on Leaflet map. 
-Document Georgia Technology <a href="start/routing/">driving tour routes</a>.
-
-1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
-
-1. Cross-relate Goods & Services NAICS industries with Harmonized System (HS Codes) for [International Trade](https://georgiadata.github.io/display/products/)
+1. <a href="start/routing/">Leaflet route maps</a> for driving tours and deliveries.
 
 1. [Jobs and Economic Development Impact (JEDI) models](https://www.nrel.gov/analysis/jedi/models.html) - convert from Excel to an interactive Web Page
 
 1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
+<!--
+1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
+
+
+1. Cross-relate Goods & Services NAICS industries with Harmonized System (HS Codes) for [International Trade](https://georgiadata.github.io/display/products/)
+-->
 
 <!--
 International postal codes
