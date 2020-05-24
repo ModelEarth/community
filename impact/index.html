@@ -1723,14 +1723,6 @@ $(document).ready(function () {
   }
 });
 
-function inIframe () {
-    try {
-        return window.self !== window.top;
-    } catch (e) {
-        return true;
-    }
-}
-
 $('.sendfeedback').click(function(event) {
   window.location = "../resources/input?showheader=" + param["showheader"];
   event.stopPropagation();
