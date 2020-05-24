@@ -51,6 +51,12 @@ A panel of judges will use Slack video to deliberate while using a Google Form f
 
 Visit <a target="_parent" href="https://model.earth/community/">model.earth/community</a> for more details.  
 
+<!--
+Get an early start by competing in the DataBricks Hackathon
+
+https://databricks.com/blog/2020/04/22/announcing-spark-ai-summit-hackathon-for-social-good.html?utm_source=databricks&utm_medium=home&utm_campaign=undefined&utm_content=undefined&utm_offer=undefined&utm_keyword=undefined&
+-->
+
 ---
 <a href="registration/">Register to participate</a> | 
 <a href="https://model.georgia.org/" target="_parent">Opportunities for Georgia Communities</a>
