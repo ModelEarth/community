@@ -10,14 +10,11 @@ We'll be using the new environmentally-extended input-output model called
 We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet community needs. Check out the [Input-Output Starter Widgets](https://modelearth.github.io/io/charts/) being developed.  
 
 
-<h3>Join our Code for America Web Challenge - August to October 25, 2020</h3> 
+<h3>Join our Community Web Challenge - August to October 25, 2020</h3> 
 
-Form a team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a>. 
+Form a team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world! 
 
-<h3>$10,000 in Challenge Awards</h3>
-
-Multiple awards are being funded by the US EPA.  
-You are welcome to participate from any location in the world.  
+<h3>$10,000 in Challenge Awards</h3> 
 
 <a href="registration/">Register to participate</a>  
 
@@ -31,7 +28,7 @@ You are welcome to participate from any location in the world.
 
 <b>Sunday, October 25 - 2 PM to 4 PM - Zoom Presentations and Awards</b>  
 
-The Code for America Day of Civic Coding on Sept 12 will focus on integration with <span style="white-space: nowrap;"><a href="https://discourse.codeforamerica.org/t/index-of-covid-19-projects-in-the-network/715">COVID-19 project frameworks</a>.</span> 
+During the Code for America National Day of Civic Hacking on Sept 21st, teams will focus on integration with <span style="white-space: nowrap;"><a href="https://discourse.codeforamerica.org/t/index-of-covid-19-projects-in-the-network/715">COVID-19 project frameworks</a>.</span> 
 <!--During the Sept 12th Zoom call, we'll present info about the Sustainable Communities Web Challenge. Some teams may opt to start building upon the EPA's industry input-output models and maps at that time.  -->
 
 
