@@ -73,6 +73,7 @@ $(document).ready(function(){
 		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa.png' style='width:140px;padding-top:4px'></a>");
 		 		$('.georgia').show(); // For nav menu
 		 	} else if(location.host.indexOf('neighborhood') >= 0) {
+		 		$(".siteTitleShort").text("Model Building");
 		 		$('#logoholder').html("<a href='/'><img style='height: 25px;margin: 30px 10px 4px 10px;' src='" + climbpath + "../localsite/img/logo/neighborhood.png' style='width:140px;padding-top:4px'></a>");
 		 		$('.headerbar').css('height', '80px');
 		 		$('.neighborhood').show(); // Not yet implemented
