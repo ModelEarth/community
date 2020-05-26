@@ -69,7 +69,6 @@ $(document).ready(function(){
 		 		//$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
 		 		//$('#headerLocTitle').html("Georgia");
 
-
 		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa.png' style='width:140px;padding-top:4px'></a>");
 		 		$('.georgia').show(); // For nav menu
 		 	} else if(location.host.indexOf('neighborhood') >= 0) {
