@@ -310,7 +310,7 @@ b {
 
     <div id="activeLayer" style="display: none"></div>
 
-    <div style="display:none;" class="filterField mock-up suppliers">
+    <div style="display:none;" class="filterField local mock-up suppliers">
       <div id="catSearchHolder">
         <div class="filterLabel filterLabelMain">Supply Categories<!--Goods & Services--></div>
 
@@ -1498,27 +1498,7 @@ function loadMap1() { // Also called by search-filters.js
 
     dp1.listLocation = false;
     dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
-  } else if (param["show"] == "produce" || param["design"]) {
-    dp1.listTitle = "USDA Farm Produce";
-    dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
-    dp1.name = "Local Farms"; // To remove
-    dp1.dataTitle = "Farm Fresh Produce";
-    dp1.markerType = "google";
-    dp1.search = {"In Market Name": "MarketName","In County": "County","In City": "city","In Street": "street","In Zip": "zip","In Website": "Website"};
-    dp1.nameColumn = "marketname";
-    dp1.titleColumn = "marketname";
-    dp1.searchFields = "marketname";
-    dp1.addressColumn = "street";
-    dp1.valueColumn = "Prepared";
-    //dp1.valueColumn = "type";
-    dp1.valueColumnLabel = "Prepared Food";
-    dp1.latColumn = "y";
-    dp1.lonColumn = "x";
-    dp1.stateColumn = "state";
-
-    dp1.addlisting = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
-
-    dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
+  
   } else if (param["show"] == "restaurants") {
     // Fulton County 5631 restaurants
     
@@ -1545,8 +1525,8 @@ function loadMap1() { // Also called by search-filters.js
     dp1.dataTitle = "Restaurant Scores";
     dp1.titleColumn = "restaurant";
     dp1.listInfo = "Fulton County";
-  } else {
-    // Atlanta
+  } else if (param["show"] == "pickup") {
+    // Atlanta Pickup
     dp1.latitude = 33.76;
     dp1.longitude = -84.3880;
     dp1.zoom = 14;
@@ -1566,7 +1546,30 @@ function loadMap1() { // Also called by search-filters.js
     dp1.valueColumnLabel = "Delivery";
     dp1.valueColumn = "Delivery";
     dp1.listLocation = true;
+  //} else if (param["show"] == "produce" || param["design"]) {
+  } else {
+    dp1.listTitle = "USDA Farm Produce";
+    dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
+    dp1.name = "Local Farms"; // To remove
+    dp1.dataTitle = "Farm Fresh Produce";
+    dp1.markerType = "google";
+    dp1.search = {"In Market Name": "MarketName","In County": "County","In City": "city","In Street": "street","In Zip": "zip","In Website": "Website"};
+    dp1.nameColumn = "marketname";
+    dp1.titleColumn = "marketname";
+    dp1.searchFields = "marketname";
+    dp1.addressColumn = "street";
+    dp1.valueColumn = "Prepared";
+    //dp1.valueColumn = "type";
+    dp1.valueColumnLabel = "Prepared Food";
+    dp1.latColumn = "y";
+    dp1.lonColumn = "x";
+    dp1.stateColumn = "state";
+
+    dp1.addlisting = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
+
+    dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
   }
+
 
   $("#detaillist").text(""); // Clear prior results
   // map1 = 
