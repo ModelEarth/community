@@ -10,7 +10,7 @@ We'll be using the new environmentally-extended input-output model called
 We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet community needs. Check out the [Input-Output Starter Widgets](https://modelearth.github.io/io/charts/) being developed.  
 
 
-<h3>Join our Community Web Challenge - August to October 25, 2020</h3> 
+<h3>Join our Community Web Challenge - August&nbsp;to&nbsp;October&nbsp;25,&nbsp;2020</h3> 
 
 Form a team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world! 
 
