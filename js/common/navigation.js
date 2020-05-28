@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 	 		// To do: fetch the existing background-image.
 	 		
-	 		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
+	 		if(1==1 || location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
 	 			$(".siteTitleShort").text("Model Georgia");
 		 		//imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
 		 		//imageUrl = climbpath + "../io/img/logo/georgia_usa.png";
@@ -69,7 +69,7 @@ $(document).ready(function(){
 		 		//$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
 		 		//$('#headerLocTitle').html("Georgia");
 
-		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa.png' style='width:140px;padding-top:4px'></a>");
+		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa_gray.png' style='width:130px;padding-top:4px'></a>");
 		 		//$('.georgia').show(); // For nav menu
 		 		$('.georgia').css('display', 'block');
 		 	} else if(location.host.indexOf('neighborhood') >= 0) {
