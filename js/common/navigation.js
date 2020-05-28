@@ -70,13 +70,15 @@ $(document).ready(function(){
 		 		//$('#headerLocTitle').html("Georgia");
 
 		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa.png' style='width:140px;padding-top:4px'></a>");
-		 		$('.georgia').show(); // For nav menu
+		 		//$('.georgia').show(); // For nav menu
+		 		$('.georgia').css('display', 'block');
 		 	} else if(location.host.indexOf('neighborhood') >= 0) {
 		 		$(".siteTitleShort").text("Model Building");
 		 		$('#logoholder').html("<a href='/'><img style='height: 25px;margin: 30px 10px 4px 10px;' src='" + climbpath + "../localsite/img/logo/neighborhood.png' style='width:140px;padding-top:4px'></a>");
 		 		$('.headerbar').css('height', '80px');
 		 		$('.headerbarheight').css('height', '80px');
-		 		$('.neighborhood').show(); // Not yet implemented
+		 		//$('.neighborhood').show(); // Not yet implemented
+		 		$('.neighborhood').css('display', 'block'); // Not yet implemented
 		 	} else {
 		 		$(".siteTitleShort").text("Model Earth");
 		 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
@@ -87,7 +89,8 @@ $(document).ready(function(){
 		 		$('#logoholder').addClass('logoholder-modelearth');
 		 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
 		 		//$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
-		 		$('.earth').show(); // For nav menu
+		 		//$('.earth').show(); // For nav menu
+		 		$('.earth').css('display', 'block'); 
 		 	}
 
 		 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
