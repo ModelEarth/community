@@ -44,15 +44,25 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 -->
 
-Teams will collaborate broadly in five framework categories:  
+Teams will collaborate broadly using integrated services:  
+
+<b>Detached Frontends</b>
+- Vanilla JS and JQuery in the current [community repo](start)
+- [Real World](https://neighborhood.org/realworld) React / Redux  
+- [Real World](https://neighborhood.org/realworld) Vue -   
+- Other Detached Frontends (to be hosted under one domain) - Each should have an index.html entry point in root of their repo.  
+
+<b>Content Backends</b>
 - [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
 - [DJango - CensusReporter Python3](../../community/resources/censusreporter)  
 - [Ruby on Rails - Discourse used by Code for America](https://discourse.codeforamerica.org)  
-- [Real World](https://neighborhood.org/realworld) React / Redux  
-- Vanilla JS and JQuery in the current [community repo](start)
+- Other Backends  
 
-Teams will create Trust Levels authentication using a detached (headless) set-up for [Google&nbsp;Sheet&nbsp;editing](https://neighborhood.org/editor), possibly using 
-[Google Cloud with Flask](https://medium.com/@abuango/how-to-collect-form-data-from-a-jamstack-website-to-google-sheets-using-google-cloud-functions-a59546c803a5)  
+<b>Trust Level Services</b>
+- Google Cloud websockets
+- Other Auth services  
+
+Some teams will apply Trust Levels authentication to [Google&nbsp;Sheet&nbsp;row approval](https://neighborhood.org/editor) (ideally with dual-support for AirTable), possibly using [Google Cloud with Flask](https://medium.com/@abuango/how-to-collect-form-data-from-a-jamstack-website-to-google-sheets-using-google-cloud-functions-a59546c803a5)  
 
 ### Dev Areas
 
