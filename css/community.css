@@ -133,6 +133,11 @@ hr {
   background-color: darkred;
   padding: 10px 20px;
 }
+.topLinks a {
+  color: #e3ac56;
+  font-size: 16px;
+  white-space: nowrap;
+}
 #headerFixed {
   position: fixed;
   top:0;
