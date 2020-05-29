@@ -892,9 +892,9 @@ function showList(dp,map) {
       //console.log("color test here: " + colorScale(elementRaw[dp.valueColumn]))
 
       if (element[dp.latColumn] && element[dp.lonColumn]) {
-        output = "<div class='detail' name='" + name + "' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>";
+        output = "<div class='detail' name='" + name.replace(/'/g,'&#39;') + "' latitude='" + element[dp.latColumn] + "' longitude='" + element[dp.lonColumn] + "'>";
       } else {
-        output = "<div class='detail'>";
+        output = "<div class='detail' name='" + name.replace(/'/g,'&#39;') + "'>";
       }
 
       output += "<div class='showItemMenu' style='float:right'>&mldr;</div>"; 
@@ -914,7 +914,6 @@ function showList(dp,map) {
       // Lower
       output += "<div style='font-size:0.95em;line-height:1.5em'>";
 
-      
       if (element[dp.valueColumn]) {
         if (dp.valueColumnLabel) {
           output += "<b>" + dp.valueColumnLabel + ":</b> " + element[dp.valueColumn] + "<br>";
@@ -959,6 +958,7 @@ function showList(dp,map) {
         }
         output += "<br>";
       }
+
       if (element.schedule) {
         output += "<b>Hours:</b> " + element.schedule + "<br>";
       }
@@ -971,7 +971,10 @@ function showList(dp,map) {
         }
       }
 
-      if (element.facebook && element.facebook.toLowerCase().indexOf('facebook.com') >= 0) {
+      if (element.facebook) {
+        if (element.facebook.toLowerCase().indexOf('facebook.com') < 0) {
+          element.facebook = 'https://facebook.com/search/top/?q=' + element.facebook.replace(/'/g,'%27').replace(/ /g,'%20')
+        }
         if (element[dp.latColumn] && dp.listLocation != false) {
           output += " | ";
         }
