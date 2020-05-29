@@ -158,6 +158,12 @@ b {
 .outcomesbox div div {
   white-space: nowrap;
 }
+
+.sideWidget {
+  max-width: 400px;
+  margin-left:20px;
+  margin-right:20px;
+}
 .leftWidget {
   float:left;
   max-widthX:420px;
@@ -223,6 +229,7 @@ b {
 }
 .column50 {
   width:250px;
+  width:100%;
   float:left;
 }
 .column50mid {
@@ -921,9 +928,78 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="clear:both"></div>
 
 
+
+
+
+
+
 <div id="tableSide" class="hideMobile">
   <div id='sidecolumn' class='hideprint' style="display: none">
   </div>
+
+  <!-- INDUSTRIES -->
+  <div class="mock-up" style="display:none; padding-top:20px; padding-bottom:80px">
+
+
+    <div class="sideWidget eWidget">
+      <div class="widgetbar" style="font-size: 24px;font-weight:200;padding:10px;min-height:34px">LOCAL GOODS & SERVICES</div>
+      <div class="topboxes" style="min-heightX: 120px">
+
+        <!--
+        <div style="font-size: 18px">Set your goals</div>
+        <br>
+        -->
+
+        <b>Adjust Industry Levels</b>
+        to reflect technology initiatives 
+        that generate new revenue streams, create jobs and 
+        increase your community's positive outcomes.
+
+        <!--
+          Create new mixes of local goods and services.
+        -->
+      </div>
+    </div>
+
+    <div class="sideWidget eWidget">
+      <div class="widgetbar" style="padding-left:5px">
+        <a href="../start/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
+        AGRICULTURE, FORESTRY, FISHING AND HUNTING
+      </div>
+      
+      <div class="topboxes">
+        <div style="position: relative">
+            <img src="img/sectors.gif" style="width:100%;max-width:400px;margin-right:80px" />
+            <div style="position: absolute; right:0; top:8px; background: rgb(250,250,250); padding-left:6px">
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus"><br>
+              <img src="img/plus-minus.gif" class="plus-minus">
+            </div>
+        </div>
+
+        <div style="font-size: 12px; background:#eee; border-bottom:1px solid #ddd; display:inline; padding:0 4px 0 4px">
+          <a href="../start/dataset/">Main categories</a> | 
+          <a href="../start/dataset/">Show all 382 sectors</a>
+
+          <span style="float:right; color:#777">Balanced &nbsp;</span>
+
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+  <!-- /INDUSTRIES -->
 
   <div style="display:none;margin:20px 10px 20px 17px; min-width:195px; line-height: 1.5em;" class="suppliers">
     <div class="catList" id="industryCatList">
@@ -1094,6 +1170,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
 
 <!-- Start HTML -->
+
 <section id="data" style="overflow:auto">
 <div class="content contentpadding litePanel displayOnload" style="display:none; padding-top:0px; padding-bottom:10px; padding-right:0px">
 
@@ -1145,12 +1222,6 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
             <br><br>
           </div>
         </div>
-
-        <div style="display:none;" class="mock-upRemoved">
-        The map to the right will highlight local counties and <a href="../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50">zip codes</a> based on interaction with lists and charts. 
-        Lists will include <a href="../farmfresh/ga/">farm fresh produce</a> and <a href="../tools/#places">all&nbsp;the&nbsp;places</a>.
-        </div>
-
 
 
           <sectionX id="directory" class="mock-up" style="display:none;">
@@ -1247,13 +1318,16 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
         </div>
 
         <!-- INDUSTRIES -->
-        <div class="mock-up" style="display:none; padding-top:20px; padding-bottom:80px">
+        <div class="mock-up" style="display:none; padding-bottom:80px">
 
           <!-- TOP WIDGETS -->
           <div>
 
             <div style="margin-bottom:14px">
-              <b style="font-size:16px">Mock-Up</b> - <a href="https://modelearth.github.io/io/charts">Embeddable EEIO charts</a> under development.        
+              <b style="font-size:16px">About</b><br>
+              <a href="https://modelearth.github.io/io/charts">Embeddable  charts</a> - 
+              <a href="./?show=pickup&design=1">Design Ideas</a> - 
+              <a href="./?show=suppliers">C19 Logistics</a>
             </div>
 
             <div style="display:none; float:left; margin-right:30px">
@@ -1299,57 +1373,6 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
             </div>
             <div style="clear:both"></div>
 
-            <div class="leftWidget eWidget">
-              <div class="widgetbar">ENVIRONMENTAL INPUT</div>
-              <div class="topboxes" style="min-heightX: 120px">
-                <div style="font-size: 18px">Set your goals</div>
-                <br>
-
-                <b>Adjust Industry Levels</b>
-                to reflect technology initiatives 
-                that generate new revenue streams, create jobs and 
-                increase your community's positive outcomes.
-
-              </div>
-            </div>
-
-            <div class="leftWidget eWidget">
-              <div class="widgetbar" style="padding-left:5px">
-                <a href="../start/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
-                AGRICULTURE, FORESTRY, FISHING AND HUNTING
-              </div>
-              
-              <div class="topboxes">
-                <div style="position: relative">
-                    <img src="img/sectors.gif" style="width:100%;max-width:400px;margin-right:80px" />
-                    <div style="position: absolute; right:0; top:8px; background: rgb(250,250,250); padding-left:6px">
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus"><br>
-                      <img src="img/plus-minus.gif" class="plus-minus">
-                    </div>
-                </div>
-
-                <div style="font-size: 12px; background:#eee; border-bottom:1px solid #ddd; display:inline; padding:0 4px 0 4px">
-                  <a href="../start/dataset/">Main categories</a> | 
-                  <a href="../start/dataset/">Show all 382 sectors</a>
-
-                  <span style="float:right; color:#777">Balanced &nbsp;</span>
-
-                </div>
-
-              </div>
-            </div>
-
 
             <div style="overflow: auto;" class="leftWidget eWidget">
                 <div class="widgetbar">
@@ -1361,7 +1384,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
                 <div style="clear:both">
                 </div>
                 <div class="topboxes">
-                  <div style="border-bottom: 1px solid #eee; padding-bottom:8px; margin-bottom:8px">
+                  <div style="display:none; border-bottom: 1px solid #eee; padding-bottom:8px; margin-bottom:8px">
                     <b>Perspective:</b> Supply Chain, Point of Consumption<br>
                     <b>System:</b> Full System, Food System<br>
                     <b>Type:</b> Consumption, Production<br>
@@ -1469,7 +1492,7 @@ function loadMap1() { // Also called by search-filters.js
 
     dp1.listLocation = false;
     dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
-  } else if (param["show"] == "suppliers" || param["show"] == "mockup") { // "http://" + param["domain"]
+  } else if (param["show"] == "suppliers") { // "http://" + param["domain"]
 
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
@@ -1533,7 +1556,7 @@ function loadMap1() { // Also called by search-filters.js
     dp1.zoom = 14;
 
     // CURBSIDE PICKUP
-    dp1.listTitle = "Atlanta Restaurants Providing Takeout and Delivery";
+    dp1.listTitle = "Restaurants with Curbside Pickup";
     dp1.listInfo = "Data provided by coastapp.com. <a href='https://coastapp.com/takeoutcovid/atl/' target='_blank'>Make Updates</a>";
     dp1.dataset = "/community/places/usa/ga/restaurants/atlanta-coastapp.csv";
     dp1.dataTitle = "Curbside Pickup";
@@ -1548,8 +1571,8 @@ function loadMap1() { // Also called by search-filters.js
     dp1.valueColumn = "Delivery";
     dp1.listLocation = true;
   //} else if (param["show"] == "produce" || param["design"]) {
-  } else {
-    dp1.listTitle = "USDA Farm Produce";
+  } else { // || param["show"] == "mockup"
+    dp1.listTitle = "USDA Farm Produce (mockup)";
     dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
     dp1.name = "Local Farms"; // To remove
     dp1.dataTitle = "Farm Fresh Produce";
@@ -1657,7 +1680,7 @@ $(document).ready(function () {
         html: '<style>.mock-up{display: block !important;}</style>'
       }).appendTo("body");
   }
-  if (param["show"] == "mockup" || param["show"] == "suppliers") {
+  if (param["show"] == "suppliers") {
     var div = $("<div />", {
         html: '<style>.suppliers{display: block !important;}</style>'
       }).appendTo("body");
