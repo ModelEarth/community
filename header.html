@@ -45,12 +45,19 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 .headerLocTitleHolder-state {
 	margin-top: 7px;
 }
-#headerLocTitle {
+#headerSiteTitle, #headerLocTitle {
 	font-size: 24px;
 	font-family: Helvetica !important;
 	font-weight: 100;
 	color: #777;
 	letter-spacing: 2px;
+}
+#headerLocTitle {
+	float:left;
+	padding-top:1px;
+	margin-left: 3px;
+	color:#9c9c9c;
+	font-size: 22px;
 }
 #homeMenu {
 	display: none;
@@ -175,10 +182,11 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 		<div id="headerLocTitleHolder">
 			<a href="../community/tools" class="logolink" style="line-height:32px">
 
-				<span id="headerLocTitle"></span>
-				<div style="display:none; padding-top:8px; float:right">
+				<span id="headerSiteTitle"></span>
+				<div style="padding-top:8px; float:right; display:none" class="mock-up">
 					<div class="arrowdown"></div>
 				</div>
+				<span id="headerLocTitle"></span>
 			</a>
 		</div>
 	</div>
