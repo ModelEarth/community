@@ -67,7 +67,7 @@ $(document).ready(function(){
 		 		//imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png";
 	 			//$('#logoholder').addClass('logoholder-state');
 		 		//$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
-		 		//$('#headerLocTitle').html("Georgia");
+		 		
 
 		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa_gray.png' style='width:130px;padding-top:4px'></a>");
 		 		//$('.georgia').show(); // For nav menu
@@ -87,12 +87,18 @@ $(document).ready(function(){
 		 		$('#logoholderside').css('height', '24px');
 	 			$('#logospace').css('margin-top','2px');
 		 		$('#logoholder').addClass('logoholder-modelearth');
-		 		$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
+		 		$('#headerSiteTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span>");
 		 		//$('#headerLocTitle').html("<span style='float:left'>model<span style='color:#bbb;margin-left:1px'>earth</span></span><i class='material-icons' style='float:left; font-size:24px; margin:4px 2px 0px 2px; color:#bbb;'>keyboard_arrow_right</i><div style='float:left;font-size:21px; padding:0 14px 0 14px; letter-spacing: 1.5px; color:#999; border:1px solid #ccc'>Georgia,USA</div>");
 		 		//$('.earth').show(); // For nav menu
 		 		$('.earth').css('display', 'block'); 
 		 	}
-
+		 	if (param["show"] == "mockup") {
+		 		if(location.host.indexOf('georgia') >= 0) {
+		 			$('#headerLocTitle').html("Fulton County");
+		 		} else {
+			 		$('#headerLocTitle').html("<span class='arrownext' style='margin:10px 10px 0 10px'></span><span style='float:left'>Georgia </span><span class='arrownext' style='margin:10px 10px 0 10px'></span><span style='float:left'> Fulton County</span>");
+			 	}
+		 	}
 		 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
 			$('#logoholder').css('background-repeat', 'no-repeat');
 
