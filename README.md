@@ -44,7 +44,7 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 -->
 
-Teams will collaborate broadly using integrated services:  
+Teams will collaborate on integrated services using:  
 
 <b>Detached Frontends</b>
 - Vanilla JS and JQuery in the current [community repo](start)

@@ -228,6 +228,11 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
 
         </div>
       </th>
+
+      <th class="rotate th_title"><div><span><b>Economic & Social</b></span></div></th>
+      <th class="rotate"><div><span>Jobs (JOBS)</span></div></th>
+      <th class="rotate"><div><span>Value Added (VADD)</span></div></th>
+
       <th class="rotate th_title"><div><span><b>Environmental Impact</b></span></div></th>
       <th class="rotate"><div><span>Acid Rain (ACID)</span></div></th>
       <th class="rotate"><div><span>Freshwater Ecotoxicity (ETOX)<span> - Chemicals and Natural Materials</span></span></div></th>
@@ -253,9 +258,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       <th class="rotate"><div><span>Hazardous Waste (HAZW)</span></div></th>
       <th class="rotate"><div><span>Municipal Solid Waste (MSW)</span></div></th>
 
-      <th class="rotate th_title"><div><span><b>Economic & Social</b></span></div></th>
-      <th class="rotate"><div><span>Jobs (JOBS)</span></div></th>
-      <th class="rotate"><div><span>Value Added (VADD)</span></div></th>
+      
     </tr>
     
   </table>
@@ -303,6 +306,12 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
             //dataRow += "<td>" + numberWithCommas(dataSet[i][3]) + "</td><td>" + numberWithCommas(dataSet[i][4]) + "</td><td>" + diff + "</td>";
           
             dataRow += "<td class='noborder'><span></span></td>";
+
+            
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td class='noborder'></td>";
+            
             dataRow += "<td><div class='heat'></div></td>";
             dataRow += "<td><div class='heat'></div></td>";
             dataRow += "<td><div class='heat'></div></td>";
@@ -320,9 +329,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
             dataRow += "<td><div class='heat'></div></td>";
             dataRow += "<td><div class='heat'></div></td>";
             dataRow += "<td><div class='heat'></div></td>";
-            dataRow += "<td class='noborder'></td>";
-            dataRow += "<td><div class='heat'></div></td>";
-            dataRow += "<td><div class='heat'></div></td>";
+            
 
           dataRow += "</tr>";
         } else {
