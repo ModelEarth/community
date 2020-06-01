@@ -295,10 +295,10 @@ function updateChart(x,y){
     return (leastSquaresCoeff[1]<0)?
       "y="+leastSquaresCoeff[0].toFixed(4)+"x"+
           leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
-          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates storms prior to 2015</span>" 
+          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>" 
           :
       "y="+leastSquaresCoeff[0].toFixed(4)+"x"+"+"+
           leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
-          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates storms prior to 2015</span>";
+          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>";
   });
 }
