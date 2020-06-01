@@ -23,7 +23,8 @@ var xAxis = d3.axisBottom()
 var yAxis = d3.axisLeft()
     .scale(yScale)
     .tickSize(-width)
-    .tickPadding(8);
+    .tickPadding(8)
+    .tickFormat(d3.round);
 
 var svg = d3.select(parentId).append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -276,8 +277,8 @@ function updateChart(x,y){
 
   //BUGBUG invalid format: ,.-4f  AND   invalid format: ,.-2f
   // Started after v3 to v5 when node added when selecting:  d3.select("#graph-picklist-y").node().value
+  //d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
   d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
-
   //Update Regression
   line.x(function(d) { return xScale(d.xVal); })
       .y(function(d) { return yScale(d.yVal); });
