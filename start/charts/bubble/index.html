@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bubble Chart with Linear Regression</title>
+  <link rel="icon" type="image/x-icon" href="../../../img/logo/favicon.png" />
+  <meta charset="utf-8">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
+  <!-- To do: convert from D3 v3 above to these v5 .js files 
+        Use index5.html in this folder, and add regression line.
+  -->
+  <!--
+  <script type="text/javascript" src="../../../js/d3/d3.v5.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../../../js/jquery/jquery-1.12.4.min.js"></script>
+  -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body>
+    <div id="title"></div>
+    <div id="subtitle"></div>
+    <text id="equation"></text>
+    <div id="graph-wrapper">
+
+      <div id="graph-wrapper-y">
+        <text>Y-Axis</text>
+        <select id="graph-picklist-y" class="graph-picklist">
+          <!-- Important: change strings to numbers in regression.js -->
+          <option value="change_displacement_percent" selected>Change Displacement (Percent)</option>
+          <option value="change_displacement_percent_abs">Change Displacement (Percent Absolute)</option>
+          <option value="change_count_percent">Change in Twitter Posts (Percent)</option>
+
+          <option value="change_displacement_total_km">Change Displacement (Kilometers)</option>
+          <option value="change_displacement_total_degree">Change Displacement (Degrees)</option>
+          <option value="change_displacement_total_degree_abs">Change Displacement (Degrees Absolute)</option>
+
+          <option value="change_displacement_km">Change Total Step Displacement (Kilometers)</option>
+          <option value="change_displacement_km_abs">Change Total Step Displacement (Kilometers Absolute)</option>
+
+          <option value="change_displacement_degrees">Change Total Step Displacement (Degrees)</option>
+          <option value="change_displacement_degrees_abs">Change Total Step Displacement (Degrees Absolute)</option>
+          
+          <!-- Also change default load in .js at bottom -->
+          <option value="change_step_displacement_percent">Change Average Step Displacement (Percent)</option>
+          <option value="change_step_displacement_percent_abs">Change Average Step Displacement (Percent Absolute)</option>
+
+          <option value="change_step_avg_km">Change Average Step Displacement (Kilometers)</option>
+          <option value="change_step_avg_km_abs">Change Average Step Displacement (Kilometers Absolute)</option>
+
+          <option value="change_step_avg_degrees">Change Average Step Displacement (Lat/Lon Degrees)</option>
+          <option value="change_step_avg_degrees_abs">Change Average Step Displacement (Lat/Lon Degrees Absolute)</option>
+
+          <option value="change_step_count_percent">Change Average Step Count (Proportion)</option>
+
+        </select>
+      </div>
+
+      <div id="graph-wrapper-x">
+        <text>X-Axis</text>
+        <select id="graph-picklist-x" class="graph-picklist">
+          <!--option value="Rating">Average Rating</option-->
+          <option value="wind_mph" selected>Wind (MPH)</option>
+          <option value="wind_kmph">Wind (KPH)</option>
+        </select>
+      </div>
+    </div>
+    <div style="display:none;margin-left:100px;margin-top:25px">
+    * To match prior chart, set the Y-Axis to "Change Average Step Displacement (Lat/Lon Degrees Absolute)."
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/regression.js"></script>
+
+</html>

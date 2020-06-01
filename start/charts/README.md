@@ -27,6 +27,9 @@ Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-
 
 [Sortable USEEIO](../../start/dataset/sortable.html) - [Others](../../start/dataset/)  
 
+### Bubble
+
+[Bubble with Regression line](bubble/)  
 
 ### ThreeJS Force Graph
 
