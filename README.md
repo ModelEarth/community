@@ -50,13 +50,15 @@ Teams will collaborate on integrated services using:
 - Vanilla JS and JQuery in the current [community repo](start)
 - [Real World](https://neighborhood.org/realworld) React / Redux  
 - [Real World](https://neighborhood.org/realworld) Vue -   
-- Other Detached Frontends (to be hosted under one domain) - Each should have an index.html entry point in root of their repo.  
+- Other Detached Frontends (to be hosted under one domain) - Each should have an index.html entry point in the root of its repo.  
 
 <b>Content Backends</b>
 - [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
 - [DJango - CensusReporter Python3](../../community/resources/censusreporter)  
 - [Ruby on Rails - Discourse used by Code for America](https://discourse.codeforamerica.org)  
-- Other Backends  
+- Durpal and other backends  
+
+Teams should provide documentation of automated server set-up steps. Priority is on quick installs, easy transfers of data, free hosting for static content (using GitHub, Google Sheets, etc.), and free or very low-cost hosting for content API's and Websockets.  
 
 <b>Trust Level Services</b>
 - Google Cloud websockets
