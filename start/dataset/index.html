@@ -209,22 +209,56 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
         <div style="font-weight:400">
           <h1>Goods & Services (mockup)</h1>
           <h3>Sustainable Materials Management</h3>
-          <div style="display:none;margin-bottom:10px" class="localonly">
+          <div style="display:none;margin-bottom:10px" class="local">
               Place "Consumption" and "Production" toggle above heatmap.<br><br>
-
+              <!--
               Consumption excludes goods that are imported. (Double check)<br>
               Production excludes goods that are exported.<br>
               Sounds like National might include imports/exports. (Double check)<br>
+              -->
 
           </div>
 
-          <a href="https://modelearth.github.io/io/charts/">View our new embeddable US EEIO charts - Get Involved!</a><br>
-          <a href="#notes">About this sample</a> | <a href="sortable.html">Sortable values</a> | 
+          
+          <div style="clear: both;"></div>
+
+          <a href="https://modelearth.github.io/io/charts/">Embeddable US EEIO charts</a> | 
+          <a href="../../../io/charts/useeio/06_impact_heatmap.html?show=mosaic">Mosaic Heatmap</a><br>
+          <a href="#notes">About this sample</a> | 
+          <a href="sortable.html">Sortable (old)</a> | 
           <span style="display:none">
           <a href="../../../io/heatmap.html?model=GAUSEEIO">EPA Dev</a> | 
           </span>
           <a href="../../about/useeio">About&nbsp;the&nbsp;Tool</a><br>
-          
+          <br><br>
+
+          <style>
+            #sectorset-tabs {
+              border-bottom: 1px solid #ddd;
+              height:26px;
+              padding-bottom: -10px;
+            }
+            #sectorset-tabs div {
+              border:1px solid #ccc;
+              border-bottom:0px solid #ccc;
+              padding:4px 8px 4px 8px;
+              border-top-left-radius: 6px;
+              border-top-right-radius: 6px;
+              float:left;
+              margin-right:5px;
+              background-color: #ddd;
+              z-index: 2;
+            }
+            #sectorset-tabs div.active {
+              background-color: #fff;
+            }
+          </style>
+          <div id="sectorset-tabs">
+            <div>12 main categories</div>
+            <div class="active">388 industry sectors</div>
+            <div>0 selected</div>
+          </div>
+
 
         </div>
       </th>
