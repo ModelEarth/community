@@ -1,1 +1,9 @@
-img/logo/faviconX.png
+.DS_Store
+.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+env*
+dist/
+build/
