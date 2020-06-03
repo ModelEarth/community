@@ -264,7 +264,7 @@ code {
   display: block;
   unicode-bidi: embed;
   font-family: monospace;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */ /* Causes Drupal to have large empty div's at top */
 }
 
 .regularText {
