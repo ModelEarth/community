@@ -256,7 +256,7 @@ code {
   background-color: #eee;
   padding: 2px  5px;
 }
-.js, pre code {
+content .js, pre code { /* Prevents .js from impacting js class within Drupal body tag */
   background-color: #eee;
   padding:15px;
   border-left: 4px solid #137AD1;
