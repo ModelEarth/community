@@ -18,7 +18,7 @@ We might also use [Material Design Icons](https://materialdesignicons.com/) ([De
 
 <i class="showAppsX material-icons appIconX" style="font-size:32px">&#xE5C3;</i>   -->
 
-These <a href="https://www.cdc.gov/niosh/topics/coding/more.html">20 main categories</a> and the additional categories reside in our 
+These <a href="https://www.cdc.gov/niosh/topics/coding/more.html">20 main categories</a> and the additional categories reside in our
 <a href="icons.csv">icon CSV file</a><br><br>
 
 
@@ -28,62 +28,66 @@ We'll use these for large verions and backgrounds.<br>
 These reside in the "visual" column.<br><br>
 
 Agriculture, forestry, fishing, and hunting  
-<img id="AGicon" src="noun_Agriculture.svg" width = '10%' height = '10%'>  
+<img id="AGicon" src="agriculture.svg" width = '10%' height = '10%'>  
 
 Mining  
-<img id="MIicon" src="noun_Mining.svg" width = '10%' height = '10%'>  
+<img id="MIicon" src="mining.svg" width = '10%' height = '10%'>  
 
 Utilities  
-<!-- looks too much like a chemical leak 
+<!-- looks too much like a chemical leak
 <img id="UTicon" src="noun_Utility.svg" width = '10%' height = '10%'>  
 -->
 
 Construction  
-<img id="COicon" src="noun_Construction.svg" width = '10%' height = '10%'>  
+<img id="COicon" src="construction.svg" width = '10%' height = '10%'>  
 
 Manufacturing  
-<img id="MAicon" src="noun_manufacturing.svg" width = '10%' height = '10%'>  
+<img id="MAicon" src="manufacturing.svg" width = '10%' height = '10%'>  
 
 Wholesale trade  
-<img id="WHicon" src="noun_wholesale.svg" width = '10%' height = '10%'>  
+<img id="WHicon" src="wholesale.svg" width = '10%' height = '10%'>  
 
 Retail trade  
-<img id="REicon" src="noun_retail.svg" width = '10%' height = '10%'>  
+<img id="REicon" src="retail.svg" width = '10%' height = '10%'>  
 
 Transportation and warehousing  
-<img id="TRicon" src="noun_Transportation.svg" width = '10%' height = '10%'>  
+<img id="TRicon" src="transportation.svg" width = '10%' height = '10%'>  
 
 Information  
 <!-- too busy
 <img id="INicon" src="noun_Technology.svg" width = '10%' height = '10%'>  
 -->
+<img id="INicon" src="information.svg" width = '10%' height = '10%'>  
 
 Finance, insurance, real estate, rental, and leasing  
 <!-- Circle makes it too busy, arrow going wrong direction
 <img id="FIicon" src="noun_finance.svg" width = '10%' height = '10%'>  
 -->
+<img id="FIicon" src="finance.svg" width = '10%' height = '10%'>  
 
 Professional and business services  
 <!-- too busy
 <img id="PRicon" src="noun_Business services.svg" width = '10%' height = '10%'>  
 -->
+<img id="BUicon" src="business.svg" width = '10%' height = '10%'> 
 
 Educational services, health care, and social assistance  
-<img id="EDicon" src="noun_Family Care.svg" width = '10%' height = '10%'>  
+<img id="EDicon" src="healthcare.svg" width = '10%' height = '10%'>  
 
 Arts, entertainment, recreation, accommodation, and food services  
 <!-- looks dated, old dead tv
 <img id="ARicon" src="noun_entertainment.svg" width = '10%' height = '10%'>  
 -->
+<img id="ARicon" src="art.svg" width = '10%' height = '10%'>  
 
 Government  
-<img id="GOicon" src="noun_Government.svg" width = '10%' height = '10%'>  
+<img id="GOicon" src="government.svg" width = '10%' height = '10%'>  
 
 
 <h2>Font Awesome Icons</h2>
 
 Here are some [Font Awesome Icons](https://fontawesome.com/icons?d=gallery&m=free). Example with Javascript tag:  
- 
+
 We won't use these because they are too thick.  
 <!-- Font Awesome -->
  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -147,7 +151,7 @@ Not using these (yet)<br><br>
 
 <h2>Unicode Icons</h2>
 
-<a href="https://unicode-table.com/en/sets/facebook-symbols/">Unicode Icons</a> - 
+<a href="https://unicode-table.com/en/sets/facebook-symbols/">Unicode Icons</a> -
 <a href="http://www.fileformat.info/info/unicode/font/index.htm">Fonts</a>
 
 <style>
