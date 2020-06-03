@@ -27,19 +27,32 @@ These <a href="https://www.cdc.gov/niosh/topics/coding/more.html">20 main catego
 We'll use these for large verions and backgrounds.<br>
 These reside in the "visual" column.<br><br>
 
+Recycling <br>
+<img id="REicon" src="recycle.svg" width = '10%' height = '10%'> <img id="REicon" src="recycle.svg" width = '3%' height = '3%'>  
+
+Bioproducts <br>
+<img id="REicon" src="biomass.svg" width = '10%' height = '10%'>  
+
+Clean Energy <br>
+<img id="CEicon" src="greenenergy.svg" width = '10%' height = '10%'>  
+
+Local Products <br>
+<img id="LPicon" src="localproduct.svg" width = '10%' height = '10%'>  
+
 Agriculture, forestry, fishing, and hunting  
-<img id="AGicon" src="agriculture.svg" width = '10%' height = '10%'>  
+<img id="AGicon" src="agriculture.svg" width = '10%' height = '10%'> <img id="AGicon" src="agriculture.svg" width = '3%' height = '3%'>  
 
-Mining  
-<img id="MIicon" src="mining.svg" width = '10%' height = '10%'>  
+Mining, Quarrying, Oil, Gas Extraction <br>
+<img id="MIicon" src="mining.svg" width = '10%' height = '10%'>  <img id="MIicon" src="mining.svg" width = '3%' height = '3%'>
 
-Utilities  
+Utilities <br>
+<img id="UTicon" src="utilities.svg" width = '10%' height = '10%'> <span class="material-icons">electrical_services</span>    
 <!-- looks too much like a chemical leak
 <img id="UTicon" src="noun_Utility.svg" width = '10%' height = '10%'>  
 -->
 
 Construction  
-<img id="COicon" src="construction.svg" width = '10%' height = '10%'>  
+<img id="COicon" src="construction.svg" width = '10%' height = '10%'> <span class="material-icons">construction</span>  
 
 Manufacturing  
 <img id="MAicon" src="manufacturing.svg" width = '10%' height = '10%'>  
@@ -48,40 +61,40 @@ Wholesale trade
 <img id="WHicon" src="wholesale.svg" width = '10%' height = '10%'>  
 
 Retail trade  
-<img id="REicon" src="retail.svg" width = '10%' height = '10%'>  
+<img id="REicon" src="retail.svg" width = '10%' height = '10%'> <span class="material-icons">storefront</span>
 
 Transportation and warehousing  
-<img id="TRicon" src="transportation.svg" width = '10%' height = '10%'>  
+<img id="TRicon" src="transportation.svg" width = '10%' height = '10%'> <span class="material-icons">local_shipping</span>
 
 Information  
-<!-- too busy
-<img id="INicon" src="noun_Technology.svg" width = '10%' height = '10%'>  
--->
-<img id="INicon" src="information.svg" width = '10%' height = '10%'>  
+<img id="INicon" src="information.svg" width = '10%' height = '10%'> <span class="material-icons">laptop_chromebook</span>
 
-Finance, insurance, real estate, rental, and leasing  
-<!-- Circle makes it too busy, arrow going wrong direction
-<img id="FIicon" src="noun_finance.svg" width = '10%' height = '10%'>  
--->
-<img id="FIicon" src="finance.svg" width = '10%' height = '10%'>  
+Finance and Insurance <br>
+<img id="FIicon" src="finance.svg" width = '10%' height = '10%'> <span class="material-icons">monetization_on</span>
+
+Real Estate and Rental and Leasing <br>
+<img id="REicon" src="realestate.svg" width = '10%' height = '10%'> <img id="REicon" src="realestate.svg" width = '3%' height = '3%'>
 
 Professional and business services  
-<!-- too busy
-<img id="PRicon" src="noun_Business services.svg" width = '10%' height = '10%'>  
--->
-<img id="BUicon" src="business.svg" width = '10%' height = '10%'> 
+<img id="BUicon" src="business.svg" width = '10%' height = '10%'> <span class="material-icons">business_center</span>
 
-Educational services, health care, and social assistance  
-<img id="EDicon" src="healthcare.svg" width = '10%' height = '10%'>  
+Management of Companies and Enterprises <br>
+<img id="MAicon" src="management.svg" width = '10%' height = '10%'> <span class="material-icons">group</span>
 
-Arts, entertainment, recreation, accommodation, and food services  
-<!-- looks dated, old dead tv
-<img id="ARicon" src="noun_entertainment.svg" width = '10%' height = '10%'>  
--->
-<img id="ARicon" src="art.svg" width = '10%' height = '10%'>  
+Educational Services <br>
+<img id="EDicon" src="education.svg" width = '10%' height = '10%'>  <span class="material-icons">school</span>
 
-Government  
-<img id="GOicon" src="government.svg" width = '10%' height = '10%'>  
+Health Care and Social Assistance <br>
+<img id="HEicon" src="healthcare.svg" width = '10%' height = '10%'>  <span class="material-icons">local_hospital</span>
+
+Arts, entertainment, recreation <br>
+<img id="ARicon" src="art.svg" width = '10%' height = '10%'> <span class="material-icons">color_lens</span>
+
+Accommodation and Food Services <br>
+<img id="ACicon" src="food.svg" width = '10%' height = '10%'> <span class="material-icons">restaurant</span>
+
+Public Administration <br>
+<img id="GOicon" src="government.svg" width = '10%' height = '10%'>  <span class="material-icons">account_balance</span>
 
 
 <h2>Font Awesome Icons</h2>
@@ -136,6 +149,8 @@ government<br>
 
 retail<br>
 <span class="material-icons">storefront</span><br><br>
+
+
 
 Not using these (yet)<br><br>
 
