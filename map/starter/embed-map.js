@@ -155,7 +155,7 @@ function loadScript(url, callback)
 		var script = document.createElement('script');
 	    script.type = 'text/javascript';
 	    script.src = url;
-		script.id = url; // Prevents multiple loads.
+		  script.id = url; // Prevents multiple loads.
 	    // Bind the event to the callback function. Two events for cross browser compatibility.
 	    script.onreadystatechange = callback;
 	    script.onload = callback;
@@ -166,7 +166,7 @@ function loadScript(url, callback)
         console.log("loadScript loaded: " + url);
 	} else {
 		console.log("loadScript script already available: " + url);
-		callback();
+		if(callback) callback();
 	}
 	// Nested calls are described here: https://books.google.com/books?id=ZOtVCgAAQBAJ&pg=PA6&lpg=PA6
 }
@@ -267,32 +267,39 @@ function jsLoaded(root) {
 function leafletLoaded(root) {	
 	loadScript(root + 'js/leaflet/leaflet.icon-material.js');
 	loadScript(root + 'js/common/dual-map.js', function(results) {
-		
-		dualmapLoaded(param);
-		
+		loadScript(root + 'js/d3/d3-legend.js', function(results) {
+		  dualmapLoaded(param);
+		});
 	});
 }
 function d3Loaded(root) {
-	loadScript(root + 'js/d3/d3-legend.js');
+	loadScript(root + 'js/d3/d3-legend.js'); // Also resides in dual-map addLegend()
 }
 function lazyLoadFiles() {
 	let root = location.protocol + '//' + location.host + '/community/';
 	if (location.host.indexOf('localhost') < 0) {
-		root = "https://model.georgia.org/community/";
+		root = "https://modelearth.github.io/community/";
 	}
+  loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+    jsLoaded(root);
+  });
+
+  // Load early so available later. - Not doable
+  // These two scripts are flawed because they throw errors due to dependencies on other scripts.
+  loadScript(root + 'js/common/dual-map.js', function(results) {});
+  //loadScript(root + 'js/d3/d3-legend.js', function(results) {});
+
 	includeCSS(root + 'css/community.css',root);
 	includeCSS(root + 'css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
 	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
 	includeCSS(root + 'css/map.css',root);
 
-	loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-		jsLoaded(root);
-	});
+
 
 	// Required by leafletLoaded that follows
 	loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
-		d3Loaded(root);
+    d3Loaded(root);
 	});
 
 	// Resides AFTER css/leaflet/leaflet.css
@@ -305,29 +312,12 @@ function lazyLoadFiles() {
 lazyLoadFiles();
 
 function dualmapLoaded(param) {
-	let root = "https://modelearth.github.io/community/";
-	//root = "https://model.earth/community/"; // CORS would need to be adjusted on server
-	//alert(root + "tools/map.csv");
-
-	
-
-	// MAP 2
-	let dp2 = {
-      dataset: root + "tools/map.csv"
-    }
-    // Georgia
-    dp2.latitude = 32.9;
-    dp2.longitude = -83.4;
-    
-    dp2.markerType = "google";
-	loadFromCSV('map1','map2', dp2, function(results) {
-		//alert("back");
-	//loadFromCSV('map1', 'map2', "/community/tools/map.csv", function(results) {
-        // This function gets called by the geocode function on success
-        //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
-        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-           
-    });
+  loadMap1();
+  window.onhashchange = function() {
+    //param = loadParam(location.search,location.hash);
+    console.log("user changed hash")
+    loadMap1();
+  }
 }
 
 

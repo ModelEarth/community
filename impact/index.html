@@ -1446,173 +1446,31 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 
 <script>
 // Omit 'use strict' when creating an embed because it could brake other's code.
-'use strict'; // Optional, make sure we are declaring variable.
+'use strict'; // Optional, make sure we are declaring variables.
 
-
-// MAP 1
-// var map1 = {};
-function loadMap1() { // Also called by search-filters.js
-  console.log('loadMap1')
-  let dp1 = {}
-  // Might use when height it 280px
-  dp1.latitude = 31.6074;
-  dp1.longitude = -81.8854;
-
-  // Georgia
-  dp1.latitude = 32.9;
-  dp1.longitude = -83.4;
-  dp1.zoom = 7;
-  dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
-  if (param["show"] == "logistics") { // "http://" + param["domain"]
-
-    dp1.listTitle = "Logistics";
-
-    dp1.listInfo = "Select a category to filter your results.";
-    //dp1.dataset = "https://georgiadata.github.io/smartdata/resources/suppliers/us_ga_logistics.csv";
-    dp1.dataset = "../../smartdata/resources/suppliers/us_ga_logistics.csv";
-
-    dp1.dataTitle = "Manufacturers and Distributors";
-    dp1.itemsColumn = "items";
-    dp1.valueColumn = "type";
-    dp1.valueColumnLabel = "Type";
-    dp1.markerType = "google";
-    //dp1.keywords = "items";
-    // "In Business Type": "type", "In State Name": "state", "In Postal Code" : "zip"
-    dp1.search = {"In Items": "items", "In Website URL": "website", "In City Name": "city", "In Zip Code" : "zip"};
-    dp1.nameColumn = "title";
-    dp1.latColumn = "lat_rand";
-    dp1.lonColumn = "lon_rand";
-
-    if (param["initial"] != "response") {
-      dp1.nameColumn = "company";
-      dp1.latColumn = "latitude";
-      dp1.lonColumn = "longitude";
-      dp1.showLegend = false;
-    }
-
-    dp1.listLocation = false;
-    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
-  } else if (param["show"] == "suppliers") { // "http://" + param["domain"]
-
-    dp1.listTitle = "Georgia COVID-19 Response";
-    dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
-
-    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-05/ga_suppliers_list_5-28.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
-    dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe.csv";
-    //dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe.csv";
-
-    dp1.dataTitle = "Manufacturers and Distributors";
-    dp1.itemsColumn = "items";
-    dp1.valueColumn = "type";
-    dp1.valueColumnLabel = "Type";
-    dp1.markerType = "google";
-    //dp1.keywords = "items";
-    // "In Business Type": "type", "In State Name": "state", "In Postal Code" : "zip"
-    dp1.search = {"In Items": "items", "In Website URL": "website", "In City Name": "city", "In Zip Code" : "zip"};
-    dp1.nameColumn = "title";
-    dp1.latColumn = "lat_rand";
-    dp1.lonColumn = "lon_rand";
-
-    if (param["initial"] != "response") {
-      dp1.nameColumn = "company";
-      dp1.latColumn = "latitude";
-      dp1.lonColumn = "longitude";
-      dp1.showLegend = false;
-    }
-
-    dp1.listLocation = false;
-    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
-  
-  } else if (param["show"] == "restaurants") {
-    // Fulton County 5631 restaurants
-    
-    dp1 = {};
-    dp1.listTitle = "Restaurant Ratings";
-    dp1.dataTitle = "Restaurant Ratings";
-    dp1.dataset = "/community/tools/map.csv";
-    dp1.latitude = 32.9;
-    dp1.longitude = -83.4;
-
-    //dp1.showLayer = false;
-    dp1.name = "Fulton County Restaurants";
-    dp1.titleColumn = "restaurant";
-    dp1.nameColumn = "restaurant";
-
-    dp1.valueColumnLabel = "Health safety score";
-    dp1.valueColumn = "score";
-    dp1.scale = "scaleThreshold";
-
-    dp1.latColumn = "latitude";
-    dp1.lonColumn = "longitude";
-
-    dp1.dataset = "/community/farmfresh/usa/georgia/fulton_county_restaurants.csv"; // Just use 50
-    dp1.dataTitle = "Restaurant Scores";
-    dp1.titleColumn = "restaurant";
-    dp1.listInfo = "Fulton County";
-  } else if (param["show"] == "pickup") {
-    // Atlanta Pickup
-    dp1.latitude = 33.76;
-    dp1.longitude = -84.3880;
-    dp1.zoom = 14;
-
-    // CURBSIDE PICKUP
-    dp1.listTitle = "Restaurants with Curbside Pickup";
-    dp1.listInfo = "Data provided by coastapp.com. <a href='https://coastapp.com/takeoutcovid/atl/' target='_blank'>Make Updates</a>";
-    dp1.dataset = "/community/places/usa/ga/restaurants/atlanta-coastapp.csv";
-    dp1.dataTitle = "Curbside Pickup";
-    // 
-    dp1.markerType = "google";
-    dp1.search = {"In Restaurant Name": "Name", "In Description": "Description", "In City Name": "City", "In Address" : "Address"};
-    dp1.nameColumn = "Name";
-    dp1.titleColumn = "Description";
-    //dp1.addressColumn = "Address";
-    //dp1.website = "Link";
-    dp1.valueColumnLabel = "Delivery";
-    dp1.valueColumn = "Delivery";
-    dp1.listLocation = true;
-  //} else if (param["show"] == "produce" || param["design"]) {
-  } else { // || param["show"] == "mockup"
-    dp1.listTitle = "USDA Farm Produce (mockup)";
-    dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
-    dp1.name = "Local Farms"; // To remove
-    dp1.dataTitle = "Farm Fresh Produce";
-    dp1.markerType = "google";
-    dp1.search = {"In Market Name": "MarketName","In County": "County","In City": "city","In Street": "street","In Zip": "zip","In Website": "Website"};
-    dp1.nameColumn = "marketname";
-    dp1.titleColumn = "marketname";
-    dp1.searchFields = "marketname";
-    dp1.addressColumn = "street";
-    dp1.valueColumn = "Prepared";
-    //dp1.valueColumn = "type";
-    dp1.valueColumnLabel = "Prepared Food";
-    dp1.latColumn = "y";
-    dp1.lonColumn = "x";
-    dp1.stateColumn = "state";
-
-    dp1.addlisting = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
-
-    dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
+// COMMON - also resides in embed-map.js
+function loadScript(url, callback)
+{
+  if (!document.getElementById(url)) { // Prevents multiple loads.
+    var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = url;
+      script.id = url; // Prevents multiple loads.
+      // Bind the event to the callback function. Two events for cross browser compatibility.
+      script.onreadystatechange = callback;
+      script.onload = callback;
+        //$(document).ready(function () { // Only needed if appending to body
+           var head = document.getElementsByTagName('head')[0];
+         head.appendChild(script);
+        //});
+        console.log("loadScript loaded: " + url);
+  } else {
+    console.log("loadScript script already available: " + url);
+    callback();
   }
-
-
-  $("#detaillist").text(""); // Clear prior results
-  // map1 = 
-  loadFromCSV('map1','map2', dp1, function(dp) { // Called on success
-      
-      if (!overlays2["Railroads"]) {
-        overlays2["Railroads"] = dp.group; // Allows us to check if layer already added. Setting to db.group not currently user.
-        layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-      } 
-  });
-
-  // Return to top for mobile users on search.
-  if (document.body.clientWidth <= 500) {
-    window.scrollTo({
-      top: 0,
-      left: 0
-    });
-  }
+  // Nested calls are described here: https://books.google.com/books?id=ZOtVCgAAQBAJ&pg=PA6&lpg=PA6
 }
+
 
 loadMap1();
 window.onhashchange = function() {
@@ -1621,57 +1479,29 @@ window.onhashchange = function() {
   loadMap1();
 }
 
-// MAP 2 - INTERMODAL PORTS
-if (1==2) {
-    let dp2 = {
-      selector: "aside.Intermodal_Ports",
-      delimiter: ",",
-      numColumns: ["lat","lon"],
-      valueColumn: "value",
-      scaleType: "scaleOrdinal",
-      //scaleType: "scaleQuantile",
-      //scaleType: "scaleThreshold",
-    }
-    //dp2.name = dp2.selector.split(".").pop(); // name: Intermodal_Ports
-    dp2.name = "Intermodal Ports";
-    dp2.listLocation = false;
 
-    dp2.latitude = 31.6074;
-    dp2.longitude = -81.8854;
-    // Bruswick GA - Jesup was not centering
-    dp2.latitude = 31.1500;
-    dp2.longitude =  -81.4915;
+// WORK IN PROGRESS
+/*
+  $("#detaillist").text(""); // Clear prior results
+  // map1 = 
+  loadFromCSV('map1','map2', dp1, basemaps1, basemaps2, function(dp) { // Called on success
+      
+      if (!overlays2["Railroads"]) {
+        overlays2["Railroads"] = dp.group; // Allows us to check if layer already added. Setting to db.group not currently user.
+        layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+      } 
+  });
+*/
 
-    dp2.zoom = 8;
-    dp2.markerType = "google";
-    dp2.data = readData(dp2.selector, dp2.delimiter, dp2.numColumns, dp2.valueColumn);
-    //dp2.color = '#0033ff'; // Alternative to scale
-    dp2.scale = getScale(dp2.data, dp2.scaleType, dp2.valueColumn);
-
-    dp2.group = L.layerGroup();
-    //dp2.group2 = L.layerGroup();
-    //dp2.iconName = 'device_hub';
-    dp2.iconName = "language";
-    dp2.nameColumn = "group";
-    
-
-    //dataParameters.push(dp2);
-
-    // Legend needs to reside below map on left, or in side popup
-    //addLegend(dp2.scale, dp2.scaleType, dp2.name);
-
-    populateMap('map2', dp2, function(map) { // Called on success
-
-      // Add another layer to existing map
-      dp2 = {}
-      dp2.name = "Communities";
-      dp2.dataset = "/community/tools/map.csv";
-      loadFromCSV('map1', 'map2', dp2, function(results) {
-        // Add Railroad layer
-        layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
-      });
+/*
+  // Return to top for mobile users on search.
+  if (document.body.clientWidth <= 500) {
+    window.scrollTo({
+      top: 0,
+      left: 0
     });
-}
+*/
+
 
 $(document).ready(function () {
 
