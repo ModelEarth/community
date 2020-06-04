@@ -8,44 +8,6 @@ var layerControl = {}; // Object containing one control for each map on page.
 var mbAttr = '<a href="https://www.mapbox.com/">Mapbox</a>',
     mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
 
-
-// Note: light_nolabels does not work on https. Remove if so. Was positron_light_nolabels.
-var basemaps1 = {
-  'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-  'Satellite' : L.tileLayer(mbUrl, {maxZoom: 25, id: 'mapbox.satellite', attribution: mbAttr}),
-  'Streets' : L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
-  'OpenStreetMap' : L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-  }),
-}
-var basemaps2 = {
-  'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-  'Satellite' : L.tileLayer(mbUrl, {maxZoom: 25, id: 'mapbox.satellite', attribution: mbAttr}),
-  'Streets' : L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
-  'OpenStreetMap' : L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-  }),
-}
-var baselayers = {
-  'Rail' : L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
-      minZoom: 2, maxZoom: 19, tileSize: 256, attribution: '<a href="https://www.openrailwaymap.org/">OpenRailwayMap</a>'
-  }),
-}
-/*
-  'Positron' : L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-    attributionX: 'positron_lite_rainbow'
-  }),
-  'Litegreen' : L.tileLayer('//{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
-      attribution: 'Tiles <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a>'
-  }),
-  'EsriSatellite' : L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP'
-  }),
-  'Dark' : L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
-      attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-  }),
-*/
-
 //////////////////////////////////////////////////////////////////
 // Usage:
 //
@@ -68,16 +30,7 @@ var baselayers = {
 
 // INTERMODAL PORTS - was here
 
-// Recall existing map https://github.com/Leaflet/Leaflet/issues/6298
-// https://plnkr.co/edit/iCgbRjW4aymAjoVoicZQ?p=preview&preview
-L.Map.addInitHook(function () {
-  // Store a reference of the Leaflet map object on the map container,
-  // so that it could be retrieved from DOM selection.
-  // https://leafletjs.com/reference-1.3.4.html#map-getcontainer
-  this.getContainer()._leaflet_map = this;
-});
-
-function loadFromCSV(whichmap,whichmap2,dp,callback) {
+function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
 
   let defaults = {};
   defaults.zoom = 7;
@@ -365,34 +318,43 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
 // helper functions
 /////////////////////////////////////////
 function addLegend(scale, scaleType, title) {
-  $("#allLegends").text(""); // Clear prior results
-  var svg = d3.select("#allLegends")
-    .append("div")
-      .attr("class", "legend "  + title)
-    .append("svg")
-      .style("width", 200);
-      // .styleX("height", 300)
 
-  svg.append("g")
-      .attr("class", "legend")
-      .attr("transform", "translate(20,20)");
-
-  var legend = d3.legendColor()
-    .labelFormat(d3.format(".2f"))
-    .title(title);
-
-  if (scaleType === "scaleThreshold") {
-    legend = legend.labels(d3.legendHelpers.thresholdLabels);
+  let root = location.protocol + '//' + location.host + '/community/';
+  if (location.host.indexOf('localhost') < 0) {
+    root = "https://modelearth.github.io/community/";
   }
 
-  legend.scale(scale);  
+  //loadScript(root + 'js/d3/d3-legend.js', function(results) { // Bug, this was not adding to the DOM fast enoght to be available. Error: d3.legendColor is not a function
 
-  svg.select("g.legend")
-    .call(legend);
+      $("#allLegends").text(""); // Clear prior results
+      var svg = d3.select("#allLegends")
+        .append("div")
+          .attr("class", "legend "  + title)
+        .append("svg")
+          .style("width", 200);
+          // .styleX("height", 300)
 
-  //alert($(".legendCells .cell").length)
-  $("#legendHolder").height(80 + $(".legendCells .cell").length * 19);
+      svg.append("g")
+          .attr("class", "legend")
+          .attr("transform", "translate(20,20)");
 
+
+      var legend = d3.legendColor()
+        .labelFormat(d3.format(".2f"))
+        .title(title);
+
+      if (scaleType === "scaleThreshold") {
+        legend = legend.labels(d3.legendHelpers.thresholdLabels);
+      }
+
+      legend.scale(scale);  
+
+      svg.select("g.legend")
+        .call(legend);
+
+      //alert($(".legendCells .cell").length)
+      $("#legendHolder").height(80 + $(".legendCells .cell").length * 19);
+  //});
 }
 
 function hex2rgb(hex) {
@@ -609,6 +571,298 @@ function addIcons(dp,map,map2) {
 
 }
 
+
+// MAP 1
+// var map1 = {};
+function loadMap1() { // Also called by search-filters.js
+  console.log('loadMap1');
+
+
+  // Note: light_nolabels does not work on https. Remove if so. Was positron_light_nolabels.
+  var basemaps1 = {
+    'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+    'Satellite' : L.tileLayer(mbUrl, {maxZoom: 25, id: 'mapbox.satellite', attribution: mbAttr}),
+    'Streets' : L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
+    'OpenStreetMap' : L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    }),
+  }
+  var basemaps2 = {
+    'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+    'Satellite' : L.tileLayer(mbUrl, {maxZoom: 25, id: 'mapbox.satellite', attribution: mbAttr}),
+    'Streets' : L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
+    'OpenStreetMap' : L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19, attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    }),
+  }
+  var baselayers = {
+    'Rail' : L.tileLayer('https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png', {
+        minZoom: 2, maxZoom: 19, tileSize: 256, attribution: '<a href="https://www.openrailwaymap.org/">OpenRailwayMap</a>'
+    }),
+  }
+  /*
+    'Positron' : L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+      attributionX: 'positron_lite_rainbow'
+    }),
+    'Litegreen' : L.tileLayer('//{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+        attribution: 'Tiles <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a>'
+    }),
+    'EsriSatellite' : L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP'
+    }),
+    'Dark' : L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
+        attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+    }),
+  */
+
+  // This was outside of functions, but caused error because L was not available when dual-map.js loaded before leaflet.
+  // Not sure if it was working, or if it will contine to work here.
+  // Recall existing map https://github.com/Leaflet/Leaflet/issues/6298
+  // https://plnkr.co/edit/iCgbRjW4aymAjoVoicZQ?p=preview&preview
+  L.Map.addInitHook(function () {
+    // Store a reference of the Leaflet map object on the map container,
+    // so that it could be retrieved from DOM selection.
+    // https://leafletjs.com/reference-1.3.4.html#map-getcontainer
+    this.getContainer()._leaflet_map = this;
+  });
+
+
+  let dp1 = {}
+  // Might use when height it 280px
+  dp1.latitude = 31.6074;
+  dp1.longitude = -81.8854;
+
+  // Georgia
+  dp1.latitude = 32.9;
+  dp1.longitude = -83.4;
+  dp1.zoom = 7;
+  dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
+  if (1==2 && (param["show"] == "smart" || param["sample"] == "1")) { // sample=1 for 
+
+    let root = "https://modelearth.github.io/community/";
+    //root = "https://model.earth/community/"; // CORS would need to be adjusted on server
+    //alert(root + "tools/map.csv");
+
+    // MAP 2
+    let dp2 = {
+      dataset: root + "tools/map.csv"
+    }
+    // Georgia
+    dp2.latitude = 32.9;
+    dp2.longitude = -83.4;
+    
+    dp2.markerType = "google";
+     
+
+  } else if (param["show"] == "logistics") { // "http://" + param["domain"]
+
+    dp1.listTitle = "Logistics";
+
+    dp1.listInfo = "Select a category to filter your results.";
+    //dp1.dataset = "https://georgiadata.github.io/display/data/logistics/coi_with_cognito.csv";
+    dp1.dataset = "../../display/data/logistics/coi_with_cognito.csv";
+
+    dp1.dataTitle = "Manufacturers and Distributors";
+    dp1.itemsColumn = "items";
+    dp1.valueColumn = "type";
+    dp1.valueColumnLabel = "Type";
+    dp1.markerType = "google";
+    //dp1.keywords = "items";
+    // "In Business Type": "type", "In State Name": "state", "In Postal Code" : "zip"
+    dp1.search = {"In Items": "items", "In Website URL": "website", "In City Name": "city", "In Zip Code" : "zip"};
+    dp1.nameColumn = "title";
+    dp1.latColumn = "lat_rand";
+    dp1.lonColumn = "lon_rand";
+
+    if (param["initial"] != "response") {
+      dp1.nameColumn = "company";
+      dp1.latColumn = "latitude";
+      dp1.lonColumn = "longitude";
+      dp1.showLegend = false;
+    }
+
+    dp1.listLocation = false;
+    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
+  } else if (param["show"] == "suppliers") { // "http://" + param["domain"]
+
+    dp1.listTitle = "Georgia COVID-19 Response";
+    dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
+
+    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-05/ga_suppliers_list_5-28.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
+    dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe.csv";
+    //dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe.csv";
+
+    dp1.dataTitle = "Manufacturers and Distributors";
+    dp1.itemsColumn = "items";
+    dp1.valueColumn = "type";
+    dp1.valueColumnLabel = "Type";
+    dp1.markerType = "google";
+    //dp1.keywords = "items";
+    // "In Business Type": "type", "In State Name": "state", "In Postal Code" : "zip"
+    dp1.search = {"In Items": "items", "In Website URL": "website", "In City Name": "city", "In Zip Code" : "zip"};
+    dp1.nameColumn = "title";
+    dp1.latColumn = "lat_rand";
+    dp1.lonColumn = "lon_rand";
+
+    if (param["initial"] != "response") {
+      dp1.nameColumn = "company";
+      dp1.latColumn = "latitude";
+      dp1.lonColumn = "longitude";
+      dp1.showLegend = false;
+    }
+
+    dp1.listLocation = false;
+    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
+
+  } else if (param["show"] == "restaurants") {
+    // Fulton County 5631 restaurants
+    
+    dp1 = {};
+    dp1.listTitle = "Restaurant Ratings";
+    dp1.dataTitle = "Restaurant Ratings";
+    dp1.dataset = "/community/tools/map.csv";
+    dp1.latitude = 32.9;
+    dp1.longitude = -83.4;
+
+    //dp1.showLayer = false;
+    dp1.name = "Fulton County Restaurants";
+    dp1.titleColumn = "restaurant";
+    dp1.nameColumn = "restaurant";
+
+    dp1.valueColumnLabel = "Health safety score";
+    dp1.valueColumn = "score";
+    dp1.scale = "scaleThreshold";
+
+    dp1.latColumn = "latitude";
+    dp1.lonColumn = "longitude";
+
+    dp1.dataset = "/community/farmfresh/usa/georgia/fulton_county_restaurants.csv"; // Just use 50
+    dp1.dataTitle = "Restaurant Scores";
+    dp1.titleColumn = "restaurant";
+    dp1.listInfo = "Fulton County";
+  } else if (param["show"] == "pickup") {
+    // Atlanta Pickup
+    dp1.latitude = 33.76;
+    dp1.longitude = -84.3880;
+    dp1.zoom = 14;
+
+    // CURBSIDE PICKUP
+    dp1.listTitle = "Restaurants with Curbside Pickup";
+    dp1.listInfo = "Data provided by coastapp.com. <a href='https://coastapp.com/takeoutcovid/atl/' target='_blank'>Make Updates</a>";
+    dp1.dataset = "/community/places/usa/ga/restaurants/atlanta-coastapp.csv";
+    dp1.dataTitle = "Curbside Pickup";
+    // 
+    dp1.markerType = "google";
+    dp1.search = {"In Restaurant Name": "Name", "In Description": "Description", "In City Name": "City", "In Address" : "Address"};
+    dp1.nameColumn = "Name";
+    dp1.titleColumn = "Description";
+    //dp1.addressColumn = "Address";
+    //dp1.website = "Link";
+    dp1.valueColumnLabel = "Delivery";
+    dp1.valueColumn = "Delivery";
+    dp1.listLocation = true;
+  //} else if (param["show"] == "produce" || param["design"]) {
+  } else { // || param["show"] == "mockup"
+    dp1.listTitle = "USDA Farm Produce (mockup)";
+    dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
+    dp1.name = "Local Farms"; // To remove
+    dp1.dataTitle = "Farm Fresh Produce";
+    dp1.markerType = "google";
+    dp1.search = {"In Market Name": "MarketName","In County": "County","In City": "city","In Street": "street","In Zip": "zip","In Website": "Website"};
+    dp1.nameColumn = "marketname";
+    dp1.titleColumn = "marketname";
+    dp1.searchFields = "marketname";
+    dp1.addressColumn = "street";
+    dp1.valueColumn = "Prepared";
+    //dp1.valueColumn = "type";
+    dp1.valueColumnLabel = "Prepared Food";
+    dp1.latColumn = "y";
+    dp1.lonColumn = "x";
+    dp1.stateColumn = "state";
+
+    dp1.addlisting = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
+
+    dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
+  }
+
+
+  loadFromCSV('map1','map2', dp1, basemaps1, basemaps2, function(results) {
+      //alert("back");
+      //loadFromCSV('map1', 'map2', "/community/tools/map.csv", basemaps1, basemaps2, function(results) {
+      // This function gets called by the geocode function on success
+      //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+
+      // Sends to small map
+      layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+         
+  });
+
+  // MAP 2 - INTERMODAL PORTS - Includes Railroads layer
+  if (1==2) {
+      let dp2 = {
+        selector: "aside.Intermodal_Ports",
+        delimiter: ",",
+        numColumns: ["lat","lon"],
+        valueColumn: "value",
+        scaleType: "scaleOrdinal",
+        //scaleType: "scaleQuantile",
+        //scaleType: "scaleThreshold",
+      }
+      //dp2.name = dp2.selector.split(".").pop(); // name: Intermodal_Ports
+      dp2.name = "Intermodal Ports";
+      dp2.listLocation = false;
+
+      dp2.latitude = 31.6074;
+      dp2.longitude = -81.8854;
+      // Bruswick GA - Jesup was not centering
+      dp2.latitude = 31.1500;
+      dp2.longitude =  -81.4915;
+
+      dp2.zoom = 8;
+      dp2.markerType = "google";
+      dp2.data = readData(dp2.selector, dp2.delimiter, dp2.numColumns, dp2.valueColumn);
+      //dp2.color = '#0033ff'; // Alternative to scale
+      dp2.scale = getScale(dp2.data, dp2.scaleType, dp2.valueColumn);
+
+      dp2.group = L.layerGroup();
+      //dp2.group2 = L.layerGroup();
+      //dp2.iconName = 'device_hub';
+      dp2.iconName = "language";
+      dp2.nameColumn = "group";
+      
+
+      //dataParameters.push(dp2);
+
+      // Legend needs to reside below map on left, or in side popup
+      //addLegend(dp2.scale, dp2.scaleType, dp2.name);
+
+      populateMap('map2', dp2, function(map) { // Called on success
+
+        // Add another layer to existing map
+        dp2 = {}
+        dp2.name = "Communities";
+        dp2.dataset = "/community/tools/map.csv";
+        loadFromCSV('map1', 'map2', dp2, basemaps1, basemaps2, function(results) {
+          // Add Railroad layer
+          layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+        });
+      });
+  }
+
+  //$("#detaillist").text(""); // Clear prior results
+
+
+  // Return to top for mobile users on search.
+  if (document.body.clientWidth <= 500) {
+    window.scrollTo({
+      top: 0,
+      left: 0
+    });
+  }
+}
+
+
+
 function showList(dp,map) {
   var iconColor, iconColorRGB;
   var colorScale = dp.scale;
@@ -645,7 +899,6 @@ function showList(dp,map) {
     });
 
   }
-
 
 
   var allItemsPhrase = "all categories";
