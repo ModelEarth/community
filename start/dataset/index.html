@@ -292,9 +292,6 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
       <th class="rotate"><div><span>Hazardous Waste (HAZW)</span></div></th>
       <th class="rotate"><div><span>Municipal Solid Waste (MSW)</span></div></th>
 
-      <th class="rotate th_title"><div><span><b>Sector Icon</b></span></div></th>
-
-
     </tr>
 
   </table>
@@ -375,8 +372,7 @@ https://gta.georgia.gov/about-gta/technology-innovation-showcase
           dataRow += "</tr>";
           }
           else {
-            dataRow += "<tr><td colspan='24'><div style='background-color:#ddd; padding:8px 8px 8px 10px; margin:12px 0 10px 0'><b style='font-size:14px'>" + dataSet[i][0] + "</b></div></td>";
-            dataRow += "<td colspan='2'><div style='padding:8px 8px 8px 10px; margin:0px 0 10px 0'><img src='icons/noun_Agriculture.svg' width='100%' height='100%' /></div></td>";
+            dataRow += "<tr><td colspan='24'><div style='background-color:#ddd; padding:8px 8px 8px 10px; margin:12px 0 10px 0;overflow:auto'><div style='padding-right:7px;margin-bottom:-4px;float:left'><img src='../../../io/img/icon/sector/agriculture.svg' width='18px' /></div><b style='font-size:14px;'>" + dataSet[i][0] + "</b></div></td>";
             dataRow += "</tr>";
         }
       }
