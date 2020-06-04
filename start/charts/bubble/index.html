@@ -23,7 +23,7 @@
         <select id="graph-picklist-y" class="graph-picklist">
           <!-- Important: change strings to numbers in regression.js -->
           <!-- Also change default load in .js at bottom -->
-          <option value="change_displacement_percent" selected>Change Displacement (Percent)</option>
+          <!--option value="change_displacement_percent" selected>Change Displacement (Percent)</option>
           <option value="change_displacement_percent_abs">Change Displacement (Percent Absolute)</option>
           <option value="change_count_percent">Change in Twitter Posts (Percent)</option>
 
@@ -41,7 +41,7 @@
           <option value="change_step_avg_km_abs">Change Average Step Displacement (Kilometers Absolute)</option>
           <option value="change_step_avg_degrees">Change Average Step Displacement (Lat/Lon Degrees)</option>
           <option value="change_step_avg_degrees_abs">Change Average Step Displacement (Lat/Lon Degrees Absolute)</option>
-          <option value="change_step_count_percent">Change Average Step Count (Proportion)</option>
+          <option value="change_step_count_percent">Change Average Step Count (Proportion)</option-->
 
         </select>
       </div>
@@ -49,15 +49,26 @@
       <div id="graph-wrapper-x">
         <text>X-Axis</text>
         <select id="graph-picklist-x" class="graph-picklist">
-          <!--option value="Rating">Average Rating</option-->
+          <!--option value="Rating">Average Rating</option>
           <option value="wind_mph" selected>Wind (MPH)</option>
-          <option value="wind_kmph">Wind (KPH)</option>
+          <option value="wind_kmph">Wind (KPH)</option-->
+        </select>
+      </div>
+      <div id="graph-wrapper-z">
+        <text>Z-Axis</text>
+        <select id="graph-picklist-z" class="graph-picklist">
+          <!--option value="Rating">Average Rating</option>
+          <option value="wind_mph" selected>Wind (MPH)</option>
+          <option value="wind_kmph">Wind (KPH)</option-->
         </select>
       </div>
     </div>
-    <div style="margin-left:100px;margin-top:25px">
+
+      
+ 
+    <!--div style="margin-left:100px;margin-top:25px">
     * To match prior chart, set the Y-Axis to "Change Average Step Displacement (Lat/Lon Degrees Absolute)."
-    </div>
+    </div-->
   </body>
 
   <script type="text/javascript" src="js/regression.js"></script>

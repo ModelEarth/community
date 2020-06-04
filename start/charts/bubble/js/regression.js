@@ -1,3 +1,51 @@
+//getting the listof indicators and populating the x and y dropdown options
+let dropdown = $('#graph-picklist-x');
+
+dropdown.empty();
+
+//dropdown.append('<option selected="true" disabled>Select Indicator</option>');
+//dropdown.prop('selectedIndex', 1);
+
+const url = './data/indicators.json';
+
+// Populate dropdown with list of provinces
+$.getJSON(url, function (data) {
+  $.each(data, function (key, entry) {
+    dropdown.append($('<option></option>').attr('value', entry.code).text(entry.name));
+  })
+});
+//dropdown.value="ENRG";
+//dropdown.prop('selectedIndex', 10);
+let dropdown2 = $('#graph-picklist-y');
+
+dropdown2.empty();
+
+//dropdown2.append('<option selected="true" disabled>Select Indicator</option>');
+//dropdown2.prop('selectedIndex', 1);
+
+
+// Populate dropdown with list of provinces
+$.getJSON(url, function (data) {
+  $.each(data, function (key, entry) {
+    dropdown2.append($('<option></option>').attr('value', entry.code).text(entry.name));
+  })
+});
+
+let dropdown3 = $('#graph-picklist-z');
+
+dropdown3.empty();
+
+//dropdown2.append('<option selected="true" disabled>Select Indicator</option>');
+//dropdown2.prop('selectedIndex', 1);
+
+
+// Populate dropdown with list of provinces
+$.getJSON(url, function (data) {
+  $.each(data, function (key, entry) {
+    dropdown3.append($('<option></option>').attr('value', entry.code).text(entry.name));
+  })
+});
+
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
 var margin = {top: 20, right: 50, bottom: 50, left: 150};
@@ -13,6 +61,8 @@ var yScale = d3.scale.linear()
 
 var line = d3.line();
 
+var zScale = d3.scale.linear()
+    .range([2,100]);
 
 var xAxis = d3.axisBottom()
     .scale(xScale)
@@ -37,7 +87,7 @@ var svg = d3.select(parentId).append("svg")
 svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + (height) + ")")
-    .call(xAxis);
+    .call(xAxis.ticks(20));
 
 svg.append("g")
     .attr("class", "y axis")
@@ -67,8 +117,16 @@ d3.selectAll(".graph-picklist").on("change",function(){
 // 
 d3.selectAll(".graph-picklist").on("change",function(){
   updateChart(d3.select("#graph-picklist-x").node().value,
-              d3.select("#graph-picklist-y").node().value);
+              d3.select("#graph-picklist-y").node().value,
+              d3.select("#graph-picklist-z").node().value);
 });
+
+d3.selectAll(".graph-picklist2").on("change",function(){
+  updateChart2(d3.select("#graph-picklist-x").node().value,
+              d3.select("#graph-picklist-y").node().value,
+              d3.select("#graph-picklist-z").node().value);
+});
+
 
 // For rollover popup
 var div = d3.select(parentId).append("div")
@@ -76,23 +134,29 @@ var div = d3.select(parentId).append("div")
   .style("opacity", 0);
 
 
-function getDimensions(x,y){
+function getDimensions(x,y,z){
   var returnX=[];
   var returnY=[];
+  var returnZ=[];
   var returnPairs = [];
   allData.forEach(function(d){
-    var pair = {x: d[x],y: d[y],year: d["year"],city: d["city"], wind_mph: d["wind_mph"], storm: d["storm"], date: d["cityimpactday"], step_type: d["step_type"], norm_step_count: d["norm_step_count"], impact_step_count: d["impact_step_count"], impact_displacement_total_km: d["impact_displacement_total_km"], norm_displacement_total_km: d["norm_displacement_total_km"], change_displacement_total_km: d["change_displacement_total_km"], norm_count_total: d["norm_count_total"], impact_count_total: d["impact_count_total"] }; // CUSTOM, appended year for chart, the rest for popup
+    var pair = {x: d[x],y: d[y],z:d[z],industry_detail:d["industry_detail"],industry_code:d["industry_code"],ACID:d["ACID"],
+    ENRG:d["ENRG"],ETOX:d["ETOX"],EUTR:d["EUTR"],FOOD:d["FOOD"],GCC:d["GCC"],HAPS:d["HAPS"],
+    HAZW:d["HAZW"],HC:d["HC"],HNC:d["HNC"],HRSP:d["HRSP"],HTOX:d["HTOX"],JOBS:d["JOBS"],
+    LAND:d["LAND"],METL:d["METL"],MINE:d["MINE"],MSW:d["MSW"],NREN:d["NREN"],OZONE:d["OZONE"],
+    PEST:d["PEST"],REN:d["REN"],SMOG:d["SMOG"],VADD:d["VADD"],WATR:d["WATR"]}; // CUSTOM, appended year for chart, the rest for popup
     returnPairs.push(pair);
     returnX.push(d[x]);
     returnY.push(d[y]);
+    returnZ.push(d[z]);
   });
-  return {x:returnX,y:returnY,pairs:returnPairs};
+  return {x:returnX,y:returnY,z:returnZ,pairs:returnPairs};
 }
 
-function updateTitle(x,y){
+function updateTitle(x,y,z){
   //var title = d3.select("#title").text("Linear Regression:");
   //var subtitle = d3.select("#subtitle").text(x+" vs "+y);
-  var title = d3.select("#title").html(x+" <b>VS</b> "+y);
+  var title = d3.select("#title").html(x+" <b>VS</b> "+y+" <b>based on</b> "+z);
 }
 
 // returns slope, intercept and r-square of the line
@@ -145,47 +209,48 @@ function calculateLineData(leastSquares,xRange,iterations){
 var allData
 $( document ).ready(function() {
   // Was d3.csv("data/toy.csv",function(data){
-  d3.csv("data/toy.csv").then(function(data){
+    //data = d3.csvParse("data/indicators_sectors.csv", d3.autoType);
+  d3.csv("data/indicators_sectors.csv").then(function(data){
 
     data.forEach(function(d) {
-        // Change strings to numbers
-        d.year = +d.year;
 
-        // Integers required for R calculation.
-
-        // x axis
-        d.wind_mph = +d.wind_mph;
-        d.wind_kmph = +d.wind_kmph;
-
-        // y axis
-        d.change_displacement_percent = +d.change_displacement_percent;
-        d.change_displacement_percent_abs = +d.change_displacement_percent_abs;
-        d.change_count_percent = +d.change_count_percent;
-
-        d.change_displacement_total_km = +d.change_displacement_total_km;
-        d.change_displacement_total_degree = +d.change_displacement_total_degree;
-        d.change_displacement_total_degree_abs = +d.change_displacement_total_degree_abs;
-
-        d.change_displacement_km = +d.change_displacement_km;
-        d.change_displacement_km_abs = +d.change_displacement_km_abs;
-        d.change_displacement_degrees = +d.change_displacement_degrees;
-        d.change_displacement_degrees_abs = +d.change_displacement_degrees_abs;
-        d.change_step_displacement_percent = +d.change_step_displacement_percent;
-        d.change_step_displacement_percent_abs = +d.change_step_displacement_percent_abs;
-        d.change_step_avg_km = +d.change_step_avg_km;
-        d.change_step_avg_km_abs = +d.change_step_avg_km_abs;
-        d.change_step_avg_degrees = +d.change_step_avg_degrees;
-        d.change_step_avg_degrees_abs = +d.change_step_avg_degrees_abs;
-        d.change_step_count_percent = +d.change_step_count_percent;
-
+        d.ACID = +d.ACID;
         
-        //d.y = +d.WinsNoms; // y axis
+        d.ENRG= +d.ENRG;
+        d.ETOX=+d.ETOX
+        d.EUTR=+d.EUTR
+        d.FOOD=+d.FOOD
+        d.GCC=+d.GCC
+        d.HAPS=+d.HAPS
+        d.HAZW=+d.HAZW
+        d.HC=+d.HC
+        d.HNC=+d.HNC
+        d.HRSP=+d.HRSP
+        d.HTOX=+d.HTOX
+        d.JOBS=+d.JOBS
+        d.LAND=+d.LAND
+        d.METL=+d.METL
+        d.MINE=+d.MINE
+        d.MSW=+d.MSW
+        d.NREN=+d.NREN
+        d.OZONE=+d.OZONE
+        d.PEST=+d.PEST
+        d.REN=+d.REN
+        d.SMOG=+d.SMOG
+        d.VADD=+d.VADD
+        d.WATR=+d.WATR
+        //console.log(d.ENRG)
+
+
+
+
       });
+
     allData = data;
     //updateChart("Count","Rating");
     //
     // updateChart("wind_mph","change_displacement_percent","year");
-    updateChart("wind_mph","change_displacement_percent");
+    updateChart("ACID","ACID","ACID");
   });
 });
 
@@ -196,16 +261,16 @@ var ordinal = d3.scale.ordinal() // Becomes scaleOrdinal in v4
   .range(["blue","#7479BC","#BDE7AE","#ECF809","orange","magenta"]); // Not in use here, from wind/js/regression.js
 
 //function updateChart(x,y,year){
-function updateChart(x,y){
+function updateChart(x,y,z){
 
-  updateTitle(x,y);
+  updateTitle(x,y,z);
   //Fetch data
-  var records = getDimensions(x,y);
+  var records = getDimensions(x,y,z);
 
   //Reset scale
   yScale.domain(d3.extent(records.y));
   xScale.domain(d3.extent(records.x));
-
+zScale.domain(d3.extent(records.z));
   //re-assign data (or assign new data)
   var selectedCircles = d3.select("#graph-plane")
                           .selectAll(".circles")
@@ -214,9 +279,13 @@ function updateChart(x,y){
   //give a transition on the existing elements
   selectedCircles
     .transition().duration(animDuration)
-    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
-    
 
+    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
+    .attr("r",function(d){
+                      //console.log(d.ACID)
+                      //console.log(zScale(d.z)+5)
+                      return zScale(d.z)+5
+                    })
     .style("fill", function (d) { 
 
             if (d.year > 2014) {
@@ -226,6 +295,8 @@ function updateChart(x,y){
             }
 
           })
+    .style("opacity", .5)
+
 
   //Append any new elements and transition them as well
   selectedCircles.enter()
@@ -236,9 +307,9 @@ function updateChart(x,y){
                          .duration(200)
                          .style("opacity", .9);
                             // "<br/>Step distance: " + ordinalDomain[d.step_type-1] + "<br/>Norm count: " + d.norm_step_count + "<br/>Impact count: " + d.impact_step_count + 
-                            div.html("<b style='font-size:1.3em'>" + d.city + "</b><br/>Storm: " + d.storm +  " (" + d.wind_mph + " mph)<br/>Impact date: " + d.date + "<br/>Normal Travel: " + Math.round(d.norm_displacement_total_km) + " km<br/>Impact Travel: " + Math.round(d.impact_displacement_total_km) + " km<br/>Change: " + Math.round(d.change_displacement_total_km) + " km<br/>Normal Tweet Count: " + d.norm_count_total + "<br/>Impact Tweet Count: " + d.impact_count_total)
+                            //div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/>Industry Code: " + d.industry_code )
                             // + "<br/>Total change: " + d.change_displacement_degrees
-                            
+                            div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/> " +"x: "+ d.x+ "</b><br/> " +"y: "+ d.y + "</b><br/> " +"z: "+ d.z)
                          .style("left", (d3.event.pageX) + "px")
                          .style("top", (d3.event.pageY - 28) + "px");
                          
@@ -252,7 +323,11 @@ function updateChart(x,y){
                     })
 
                     .attr("class","circles")
-                    .attr("r",5)
+                    .attr("r",function(d){
+                      //console.log(d.ACID)
+                      //console.log(zScale(d.z)+5)
+                      return zScale(d.z)+5
+                    })
                     .style("fill", function (d) {
                       if (d.year > 2014) {
                         return "steelblue";
@@ -261,6 +336,8 @@ function updateChart(x,y){
                       }
 
                     })
+    .style("opacity", .5)
+
                     .transition().duration(animDuration)
                     .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
 
@@ -280,6 +357,7 @@ function updateChart(x,y){
   //d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
   d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
   //Update Regression
+  /*
   line.x(function(d) { return xScale(d.xVal); })
       .y(function(d) { return yScale(d.yVal); });
 
@@ -300,5 +378,117 @@ function updateChart(x,y){
       "y="+leastSquaresCoeff[0].toFixed(4)+"x"+"+"+
           leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
           leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>";
-  });
+  });*/
+}
+
+
+
+
+function updateChart2(x,y,z){
+
+  updateTitle(x,y,z);
+  //Fetch data
+  var records = getDimensions(x,y,z);
+
+  //re-assign data (or assign new data)
+  var selectedCircles = d3.select("#graph-plane")
+                          .selectAll(".circles")
+                          .data(records.pairs)
+
+  //give a transition on the existing elements
+  selectedCircles
+    .transition().duration(animDuration)
+    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
+    
+    .style("fill", function (d) { 
+
+            if (d.year > 2014) {
+              return "steelblue";
+            } else {
+              return "red";
+            }
+
+          })
+
+
+  //Append any new elements and transition them as well
+  selectedCircles.enter()
+                .append("circle")
+
+                    .on("mouseover", function(d) {
+                       div.transition()
+                         .duration(200)
+                         .style("opacity", .9);
+                            // "<br/>Step distance: " + ordinalDomain[d.step_type-1] + "<br/>Norm count: " + d.norm_step_count + "<br/>Impact count: " + d.impact_step_count + 
+                            div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/>d.zz " + d.z )
+                            // + "<br/>Total change: " + d.change_displacement_degrees
+                            
+                         .style("left", (d3.event.pageX) + "px")
+                         .style("top", (d3.event.pageY - 28) + "px");
+                         
+                       })
+                     .on("mouseout", function(d) {
+                        
+                       div.transition()
+                         .duration(500)
+                         .style("opacity", 0);
+                        
+                    })
+
+                    .attr("class","circles")
+                    //.attr("r",function(d){
+                      //console.log(d.ACID)
+                    //  return d.z*1000+100
+                    //})
+                    .style("fill", function (d) {
+                      if (d.year > 2014) {
+                        return "steelblue";
+                      } else {
+                        return "red";
+                      }
+
+                    })
+    //.style("opacity", 0.)
+
+                    .transition().duration(animDuration)
+                    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
+
+
+
+                ;
+
+  //Remove any dom elements which are no longer data bound
+  selectedCircles.exit().remove();
+                  
+  //Update Axes
+  d3.select(parentId).select(".x.axis").transition().duration(animDuration).call(xAxis);
+  
+
+  //BUGBUG invalid format: ,.-4f  AND   invalid format: ,.-2f
+  // Started after v3 to v5 when node added when selecting:  d3.select("#graph-picklist-y").node().value
+  //d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
+  d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
+  //Update Regression
+  /*
+  line.x(function(d) { return xScale(d.xVal); })
+      .y(function(d) { return yScale(d.yVal); });
+
+  var leastSquaresCoeff = leastSquares(records.x, records.y);
+  var lineData = calculateLineData(leastSquaresCoeff,d3.extent(records.x),200);
+
+  var trendline = d3.selectAll(".trendline")
+                        .transition().delay(1000).duration(500)
+                        .attr("d",line(lineData));
+
+                        //was toFixed(2) for all 6:
+  d3.select("#equation").html(function(){
+    return (leastSquaresCoeff[1]<0)?
+      "y="+leastSquaresCoeff[0].toFixed(4)+"x"+
+          leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
+          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>" 
+          :
+      "y="+leastSquaresCoeff[0].toFixed(4)+"x"+"+"+
+          leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
+          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>";
+  });*/
 }
