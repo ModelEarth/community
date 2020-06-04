@@ -639,19 +639,18 @@ function loadMap1() { // Also called by search-filters.js
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
   if (1==1 && (param["show"] == "smart" || param["sample"] == "1")) { // sample=1 for 
 
-    let root = "https://modelearth.github.io/community/";
+    let root = "https://modelearth.github.io/community/"; // For embedding
     //root = "https://model.earth/community/"; // CORS would need to be adjusted on server
     //alert(root + "tools/map.csv");
 
-    // MAP 2
-    let dp2 = {
-      dataset: root + "tools/map.csv"
-    }
+    dp1.dataset =  root + "tools/map.csv";
+    dp1.listInfo = "Georgia Smart - Data Driven Decision Making";
+
     // Georgia
-    dp2.latitude = 32.9;
-    dp2.longitude = -83.4;
+    dp1.latitude = 32.9;
+    dp1.longitude = -83.4;
     
-    dp2.markerType = "google";
+    dp1.markerType = "google";
      
 
   } else if (param["show"] == "logistics") { // "http://" + param["domain"]
