@@ -626,6 +626,10 @@ function loadMap1(dp) { // Also called by search-filters.js
     this.getContainer()._leaflet_map = this;
   });
 
+  let root = location.protocol + '//' + location.host + '/community/';
+  if (location.host.indexOf('localhost') < 0) {
+    root = "https://modelearth.github.io/community/";
+  }
 
   let dp1 = {}
   // Might use when height it 280px
@@ -639,9 +643,12 @@ function loadMap1(dp) { // Also called by search-filters.js
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
   if (dp) {
     dp1 = dp;
-  } else if (1==1 && (param["show"] == "smart" || param["sample"] == "1")) { // sample=1 for 
+  } else if (param["show"] == "smart" || param["data"] == "smart") { // sample=1 for 
+    dp1.listTitle = "Data Driven Decision Making";
+    dp1.listSubtitle = "Smart & Sustainable Movement of Goods & Services";
+    // Green Locations offer <span style="white-space: nowrap">prepared food<br>Please call ahead to arrange pickup or delivery</span>
 
-    let root = "https://modelearth.github.io/community/"; // For embedding
+    
     //root = "https://model.earth/community/"; // CORS would need to be adjusted on server
     //alert(root + "tools/map.csv");
 
@@ -765,7 +772,7 @@ function loadMap1(dp) { // Also called by search-filters.js
   //} else if (param["show"] == "produce" || param["design"]) {
   } else { // || param["show"] == "mockup"
     dp1.listTitle = "USDA Farm Produce (mockup)";
-    dp1.dataset = "/community/map/starter/farmersmarkets-ga.csv";
+    dp1.dataset = root + "map/starter/farmersmarkets-ga.csv";
     dp1.name = "Local Farms"; // To remove
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";
@@ -878,7 +885,8 @@ function showList(dp,map) {
   var products_array = [];
   var productcode_array = [];
 
-  $(".listTitle").html(dp.listTitle);
+  if (dp.listTitle) {$(".listTitle").html(dp.listTitle); $(".listTitle").show()};
+  if (dp.listSubtitle) {$(".listSubtitle").html(dp.listSubtitle); $(".listSubtitle").show()};
 
   // Add checkboxes
   if (dp.search && $("#activeLayer").text() != dp.dataTitle) { // Only set when active layer changes, otherwise selection overwritten on change.

@@ -306,6 +306,8 @@ b {
 <!-- /INTRO -->
 
 
+<!-- Start HTML -->
+
   <!-- FILTERS -->
   <!--
     Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4
@@ -455,11 +457,15 @@ b {
                   <option value="counties">Search by County</option>
               </select>
             
+                <!--
+                Bug: These appear when in embed-map.js
+
                 <div class="uparrow uparrow-grey" style="left: 34px;">
                 </div>
 
                 <div class="uparrow uparrow-white" style="left: 34px;">
                 </div>
+                -->
 
                 <div class="filterBubble" style="pointer-events: auto;"><!-- Catch click through -->
                     <input id="l" autocomplete="off" style="width:100%;max-width:400px;padding-right:27px;margin-bottom:10px" class="filterClick mobileWide textInput si-input" type="text" value="" onkeyup="return SearchEnter(event);" />
@@ -963,27 +969,27 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
     <div class="sideWidget eWidget">
       <div class="widgetbar" style="padding-left:5px">
-        <a href="../start/dataset/"><img src="img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
+        <a href="../start/dataset/"><img src="/community/impact/img/backarrow.gif" style="width:11.5px;float:left;margin:1px 7px 0 0"></a>
         AGRICULTURE, FORESTRY, FISHING AND HUNTING
       </div>
       
       <div class="topboxes">
         <div style="position: relative">
-            <img src="img/sectors.gif" style="width:100%;max-width:400px;margin-right:80px" />
+            <img src="/community/impact/img/sectors.gif" style="width:100%;max-width:400px;margin-right:80px" />
             <div style="position: absolute; right:0; top:8px; background: rgb(250,250,250); padding-left:6px">
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus"><br>
-              <img src="img/plus-minus.gif" class="plus-minus">
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus"><br>
+              <img src="/community/impact/img/plus-minus.gif" class="plus-minus">
             </div>
         </div>
 
@@ -1169,7 +1175,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <!-- move after left column -->
 
 
-<!-- Start HTML -->
+
 
 <section id="data" style="overflow:auto">
 <div class="content contentpadding litePanel displayOnload" style="display:none; padding-top:0px; padding-bottom:10px; padding-right:0px">
@@ -1178,7 +1184,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     <div id="hublist" style="padding-top:20px">
       <div id="hublist-padding">
         
-        <h1 class="listTitle"></h1><br>
+        <h1 class="listTitle" style="display:none"></h1>
+        <h1 class="listSubtitle" style="display:none"></h1>
 
         <div style="display:none" class="suppliers">
           
@@ -1354,19 +1361,19 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 
                   <!-- was width:230px; -->
                   <div style="float:left;width:250px; margin-right:30px">
-                    <div>1. Value-Added <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>2. Quality Jobs <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>3. Clean Air <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>4. Clean Water <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>5. Clean Energy <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>1. Value-Added <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>2. Quality Jobs <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>3. Clean Air <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>4. Clean Water <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>5. Clean Energy <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
                     
                   </div>
                   <div style="float:left;width:250px">
-                    <div>6. Local Suppliers <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>7. Green Materials <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>8. Inclusive Design <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>9. Improves Health <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
-                    <div>10. Creates Beauty <span><img src="img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>6. Local Suppliers <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>7. Green Materials <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>8. Inclusive Design <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>9. Improves Health <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
+                    <div>10. Creates Beauty <span><img src="/community/impact/img/greenbar.gif" style="width:80px;height:14px;margin-right:8px">50</span></div>
                   </div>
                 </div>
               
@@ -1391,11 +1398,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
                     <b>Indicator & Weight:</b> Impact, Resources, Waste, Chem, Econ<br>
                   </div>
 
-                  <div class="column50" style="float:left"><img src="img/impacts1.gif" style="width:100%; padding-right:40px" />
+                  <div class="column50" style="float:left"><img src="/community/impact/img/impacts1.gif" style="width:100%; padding-right:40px" />
                   </div>
                   <div class="column50mid" style="float:left">&nbsp;
                   </div>
-                  <div class="column50" style="float:left"><img src="img/impacts2.gif" style="width:100%; padding-right:40px" />
+                  <div class="column50" style="float:left"><img src="/community/impact/img/impacts2.gif" style="width:100%; padding-right:40px" />
                   </div>
               </div>
 

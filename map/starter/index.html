@@ -126,8 +126,8 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       
         <div id="hublist">
           <div id="hublist-padding">
-            <h1>USDA Farm Produce</h1>
-            <h2 style="font-size: 18px; margin-bottom:0px; font-weight: 600">Green Locations offer <span style="white-space: nowrap">prepared food<br>Please call ahead to arrange pickup or delivery</span></h2><br>
+            <h1 class="listTitle"></h1>
+            <h2 class="listSubtitle" style="font-size: 18px; margin-bottom:0px; font-weight: 600"></h2>
 
             <div id="detaillist"></div>
             <div id="narrowlist" style="display:none"></div>
@@ -188,7 +188,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     // MAP 2
     let dp2 = {};
 
-    
+    dp2.listTitle = "USDA Farm Produce (mockup)";
     dp2.dataset = "/community/tools/map.csv";
     // Georgia
     dp2.latitude = 32.9;
@@ -212,7 +212,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     dp2.lonColumn = "x";
     dp2.stateColumn = "state";
 
-    loadMap1(dp2);
+    if (param["show"]) {
+      loadMap1();
+    } else {
+      loadMap1(dp2);
+    }
     /*
     loadFromCSV('map1','map2', dp2, function(results) {
         // This function gets called by the geocode function on success
