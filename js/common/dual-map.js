@@ -688,7 +688,7 @@ function loadMap1() { // Also called by search-filters.js
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
 
-    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-05/ga_suppliers_list_5-28.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
+    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-06/ga_suppliers_list_6.4.2020.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
     dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe.csv";
     //dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe.csv";
 
