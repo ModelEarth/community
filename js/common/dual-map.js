@@ -574,7 +574,7 @@ function addIcons(dp,map,map2) {
 
 // MAP 1
 // var map1 = {};
-function loadMap1() { // Also called by search-filters.js
+function loadMap1(dp) { // Also called by search-filters.js
   console.log('loadMap1');
 
 
@@ -637,7 +637,9 @@ function loadMap1() { // Also called by search-filters.js
   dp1.longitude = -83.4;
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
-  if (1==1 && (param["show"] == "smart" || param["sample"] == "1")) { // sample=1 for 
+  if (dp) {
+    dp1 = dp;
+  } else if (1==1 && (param["show"] == "smart" || param["sample"] == "1")) { // sample=1 for 
 
     let root = "https://modelearth.github.io/community/"; // For embedding
     //root = "https://model.earth/community/"; // CORS would need to be adjusted on server
