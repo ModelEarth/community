@@ -637,7 +637,7 @@ function loadMap1() { // Also called by search-filters.js
   dp1.longitude = -83.4;
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
-  if (1==2 && (param["show"] == "smart" || param["sample"] == "1")) { // sample=1 for 
+  if (1==1 && (param["show"] == "smart" || param["sample"] == "1")) { // sample=1 for 
 
     let root = "https://modelearth.github.io/community/";
     //root = "https://model.earth/community/"; // CORS would need to be adjusted on server
