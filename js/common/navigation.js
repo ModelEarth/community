@@ -31,7 +31,7 @@ $(document).ready(function(){
  	}
 
  	if (param["showheader"] != "false") {
- 		if(location.host.indexOf('georgia') >= 0) { 
+ 		if(location.host.indexOf('model.georgia') >= 0) { 
 	 		$("body").prepend( "<img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'><br>");
 	 	}
 	 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
