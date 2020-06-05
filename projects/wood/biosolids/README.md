@@ -25,7 +25,7 @@ Sewage sludge is not allowed on USDA Certified Organic farms.
 
 ## Water Treatment Innovations
 
-[Controlled Environment Agriculture (CEA)](../../agriculture) -  Using smart membranes and nanomaterials to extract contaminants from wastewater.  
+[Controlled Environment Agriculture (CEA)](../../biotech) -  Using smart membranes and nanomaterials to extract contaminants from wastewater.  
 <br>
 <a href="../img/fast-growth.jpg"><img src="../img/fast-growth.jpg" style="width:100%; max-width:900px;" class="fullMobile"></a>
 
