@@ -10,7 +10,7 @@ function populateFieldsFromHash() {
 	}
 	$("#productCodes").val(param["hs"]);
 }
-var param = loadParams(location.search,location.hash);
+// var param = loadParams(location.search,location.hash); // This occurs in common.js
 
 
 $(document).ready(function () {
@@ -25,7 +25,7 @@ $(document).ready(function () {
 		$(".si-btn").hide();
 	}
 	catArray = [];
-	$.get('harmonized-system/hs.txt', function(data) {
+	$.get('/community/impact/harmonized-system/hs.txt', function(data) {
 		var catLines = data.split("\n");
 		
 		catLines.forEach(function(element) {
@@ -860,37 +860,39 @@ $(document).ready(function () {
   if (window.self == window.top && param["show"] == "suppliers") {
       $("#suppliers_noiframe").show();
   }
-});
 
-$('.sendfeedback').click(function(event) {
-  window.location = "/community/resources/input?showheader=" + param["showheader"];
-  event.stopPropagation();
-});
-$('.addlisting').click(function(event) {
-  window.location = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
-  event.stopPropagation();
-});
-$('.pagebutton').click(function(event) {
-  console.log("Not yet implemented.");
-});
-$('.go_map').click(function(event) {
-  window.scrollTo({
-      top: 0,
-      left: 0
-    });
-});
-$('.go_list').click(function(event) {
-  window.scrollTo({
-      top: $('#list_main').offset().top - 95,
-      left: 0
-    });
-});
-$('.go_local').click(function(event) {
-  window.scrollTo({
-      top: $('#mapHolder').offset().top - 95,
-      left: 0
-    });
-  $("#sidemapCard").show(); // map2
+
+	$('.sendfeedback').click(function(event) {
+	  window.location = "/community/resources/input?showheader=" + param["showheader"];
+	  event.stopPropagation();
+	});
+	$('.addlisting').click(function(event) {
+	  window.location = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
+	  event.stopPropagation();
+	});
+	$('.pagebutton').click(function(event) {
+	  console.log("Not yet implemented.");
+	});
+	$('.go_map').click(function(event) {
+	  window.scrollTo({
+	      top: 0,
+	      left: 0
+	    });
+	});
+	$('.go_list').click(function(event) {
+	  window.scrollTo({
+	      top: $('#list_main').offset().top - 95,
+	      left: 0
+	    });
+	});
+	$('.go_local').click(function(event) {
+	  window.scrollTo({
+	      top: $('#mapHolder').offset().top - 95,
+	      left: 0
+	    });
+	  $("#sidemapCard").show(); // map2
+	});
+
 });
 
 // HEX
@@ -1064,7 +1066,7 @@ function initSiteObject(layerName) {
     // https://github.com/codeforgreenville/leaflet-google-sheets-template
     // https://data.openupstate.org/map-layers
 
-    var layerJson = "menu.json";
+    var layerJson = "/community/impact/menu.json";
 
     var siteObject = (function() {
         var json = null;
