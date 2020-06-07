@@ -1,5 +1,7 @@
 
-var MAP_NAMESPACE = MAP_NAMESPACE || (function(){
+// Dual Map Library - A global namespace singleton
+// If dual_map library exists then use it, else define a new object.
+var dual_map = dual_map || (function(){
     var _args = {}; // private
 
     return {
@@ -9,6 +11,14 @@ var MAP_NAMESPACE = MAP_NAMESPACE || (function(){
         },
         helloWorld : function() {
             alert('Hello World! -' + _args[0]);
+        },
+        community_root : function() {
+            // or sendfeedback
+            let root = location.protocol + '//' + location.host + '/community/';
+            if (location.host.indexOf('localhost') < 0) {
+              root = "https://modelearth.github.io/community/";
+            }
+            return (root);
         }
     };
 }());
@@ -340,42 +350,34 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
 /////////////////////////////////////////
 function addLegend(scale, scaleType, title) {
 
-  let root = location.protocol + '//' + location.host + '/community/';
-  if (location.host.indexOf('localhost') < 0) {
-    root = "https://modelearth.github.io/community/";
+  $("#allLegends").text(""); // Clear prior results
+  var svg = d3.select("#allLegends")
+    .append("div")
+      .attr("class", "legend "  + title)
+    .append("svg")
+      .style("width", 200);
+      // .styleX("height", 300)
+
+  svg.append("g")
+      .attr("class", "legend")
+      .attr("transform", "translate(20,20)");
+
+
+  var legend = d3.legendColor()
+    .labelFormat(d3.format(".2f"))
+    .title(title);
+
+  if (scaleType === "scaleThreshold") {
+    legend = legend.labels(d3.legendHelpers.thresholdLabels);
   }
 
-  //loadScript(root + 'js/d3/d3-legend.js', function(results) { // Bug, this was not adding to the DOM fast enoght to be available. Error: d3.legendColor is not a function
+  legend.scale(scale);  
 
-      $("#allLegends").text(""); // Clear prior results
-      var svg = d3.select("#allLegends")
-        .append("div")
-          .attr("class", "legend "  + title)
-        .append("svg")
-          .style("width", 200);
-          // .styleX("height", 300)
+  svg.select("g.legend")
+    .call(legend);
 
-      svg.append("g")
-          .attr("class", "legend")
-          .attr("transform", "translate(20,20)");
-
-
-      var legend = d3.legendColor()
-        .labelFormat(d3.format(".2f"))
-        .title(title);
-
-      if (scaleType === "scaleThreshold") {
-        legend = legend.labels(d3.legendHelpers.thresholdLabels);
-      }
-
-      legend.scale(scale);  
-
-      svg.select("g.legend")
-        .call(legend);
-
-      //alert($(".legendCells .cell").length)
-      $("#legendHolder").height(80 + $(".legendCells .cell").length * 19);
-  //});
+  //alert($(".legendCells .cell").length)
+  $("#legendHolder").height(80 + $(".legendCells .cell").length * 19);
 }
 
 function hex2rgb(hex) {
@@ -598,7 +600,6 @@ function addIcons(dp,map,map2) {
 function loadMap1(dp) { // Also called by search-filters.js
   console.log('loadMap1');
 
-
   // Note: light_nolabels does not work on https. Remove if so. Was positron_light_nolabels.
   var basemaps1 = {
     'Grayscale' : L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
@@ -647,10 +648,7 @@ function loadMap1(dp) { // Also called by search-filters.js
     this.getContainer()._leaflet_map = this;
   });
 
-  let root = location.protocol + '//' + location.host + '/community/';
-  if (location.host.indexOf('localhost') < 0) {
-    root = "https://modelearth.github.io/community/";
-  }
+  let community_root = dual_map.community_root();
 
   let dp1 = {}
   // Might use when height it 280px
@@ -670,10 +668,10 @@ function loadMap1(dp) { // Also called by search-filters.js
     // Green Locations offer <span style="white-space: nowrap">prepared food<br>Please call ahead to arrange pickup or delivery</span>
 
     
-    //root = "https://model.earth/community/"; // CORS would need to be adjusted on server
-    //alert(root + "tools/map.csv");
+    //community_root = "https://model.earth/community/"; // CORS would need to be adjusted on server
+    //alert(community_root + "tools/map.csv");
 
-    dp1.dataset =  root + "tools/map.csv";
+    dp1.dataset =  community_root + "tools/map.csv";
     dp1.listInfo = "Georgia Smart - Data Driven Decision Making";
 
     // Georgia
@@ -793,7 +791,7 @@ function loadMap1(dp) { // Also called by search-filters.js
   //} else if (param["show"] == "produce" || param["design"]) {
   } else { // || param["show"] == "mockup"
     dp1.listTitle = "USDA Farm Produce (mockup)";
-    dp1.dataset = root + "map/starter/farmersmarkets-ga.csv";
+    dp1.dataset = community_root + "map/starter/farmersmarkets-ga.csv";
     dp1.name = "Local Farms"; // To remove
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";

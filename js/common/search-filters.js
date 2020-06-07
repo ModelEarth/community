@@ -14,6 +14,8 @@ function populateFieldsFromHash() {
 
 
 $(document).ready(function () {
+
+
 	window.scrollTo({
 	  top: 100,
 	  left: 0,
@@ -621,6 +623,7 @@ function populateCityList(callback) {
     if ($('.cityList').length > 0) { // Already populated
         return;
     }
+    alert("cityList file path not yet set");
     var file = root + "menu/data/cities.csv";
     $.get(file, function(data) {
         var cityList;
@@ -658,128 +661,129 @@ function populateCityList(callback) {
 // Some may go in search-display.js
 
 function SearchFormTextCheck(t, dirn) {
-			if (dirn == 1 && t.value == "") {
-				t.value = "";
-				$(".fieldSelector").show();
-				//console.log('boo');
+	if (dirn == 1 && t.value == "") {
+		t.value = "";
+		$(".fieldSelector").show();
+		//console.log('boo');
+	}
+	//return false;
+	event.stopPropagation();
+}
+
+function SearchEnter(event1) {
+	var kCode = String.fromCharCode(event1.keyCode);
+	//if (kCode == "\n" || kCode == "\r") {
+        $("#goSearch").click();
+	//	return false;
+	//}
+}
+function isInt(value) {
+  var x;
+  return isNaN(value) ? !1 : (x = parseFloat(value), (0 | x) === x);
+}
+String.prototype.split2 = function(separator) {
+    return this == "" ? [] : this.split(separator); // Avoid returning 1 when null.
+}
+function clickClearButton(){
+  	$("#clearButton").click();
+}
+function displayResults() {
+	console.log("displayResults disabled - use showList in Dual-Map.js instead");
+	return;
+
+	// SEE search-filters-removed.js - See if anything for HS Codes is usable
+
+	// NOT USED - See Dual-Map instead
+
+}
+function displayRow(rowArray) {
+	// NOT USED?
+	// <input name='contact' type='checkbox' value='" + rowArray[0] + "'> 
+	$("#dataList").append( "<div><div><div style='float:right'>Add</div>" + rowArray[0] + "</div><div><b class='exporter'>Export Categories: </b><span class='exporter'> " + rowArray[2] + "</span></div><div>" + rowArray[3] + "</div><div>" + rowArray[4] + "</div><div><b>Product HS Codes: </b>" + rowArray[5] + "</div></div>");
+	//<div>" + rowArray[6] + "</div><div>" + rowArray[7] + "</div>
+}
+var dataSet = [];
+function loadHtmlTable(applyFilter) {
+	//d3.text("exporters/export.csv", function(data) {
+	d3.text("https://georgiadata.github.io/display/products/exporters/export.csv").then(function(data) {
+      //dataSet = d3.csv.parseRows(data);
+      dataSet = d3.csvParseRows(data);
+      var listHeader = [];
+      console.log("loadHtmlTable - dataSet row count: " + dataSet.length);
+      
+      for(var i = 0; i < dataSet.length; i++) {
+      	/*
+      	if (i == 0) { // Header row
+      		// Possible https://www.papaparse.com/demo - Keys data by field name rather than an array.
+      		for(var j = 0; j < dataSet.length; j++) {
+				console.log(dataSet[i][j]) // Header values
+				listHeader.push(dataSet[i][j])
 			}
+      	}
+      	*/
+      	       	
+      }
+      //displayResults();
+      //displayGrid(applyFilter);
+    }); 	
+}
+function displayListX() {
+	console.log("displayList");
+	var matchCount = 0;
+
+	$("#dataList").html("");
+	for(var i = 0; i < dataSet.length; i++) {
+      	if (i > 2) {
+      		//if (entry[0] > (startRange*100) && entry[0] < (endRange*100+99)) {
+		    	matchCount++;
+		    	// <input name='contact' type='checkbox' value='" + dataSet[i][0] + "'> 
+		    	$("#dataList").append( "<div><div style='float:right'>Add<div></div>" + dataSet[i][0] + "</div><div><b class='exporter'>Export Categories: </b><span class='exporter'> " + dataSet[i][2] + "</span></div><div><b>Description: </b>" + dataSet[i][3] + "</div>");
+		    	$("#dataList").append( "<div><b>Product HS Codes: </b>" + dataSet[i][5] + "</div></div>");
+		    		//<div>" + dataSet[i][6] + "</div><div>" + dataSet[i][7] + "</div>
+			//}
+      	}
+      	if (matchCount > 0) {
+      		$("#resultsPanel").show();
+      	}
+     }
+     if (matchCount > 0) {
+  		$("#resultsPanel").show();
+  	}
+}
+function displayGrid(applyFilter) {
+	var container = d3.select("#d3div")
+      .html('').append("table") // Empty the div to clear previous before appending
+
+      .selectAll("tr")
+          .data(dataSet).enter()
+          .append("tr")
+
+      .selectAll("td")
+          .data(function(d) { return d; }).enter()
+          .append("td")
+          .text(function(d) { return d; });
+
+    if (applyFilter) {
+  		// initial load for URL hash params
+		displayResults();
+	}
+}
+function SearchProductCodes(event1) {
+	console.log("SearchProductCodes")
+	var kCode = String.fromCharCode(event1.keyCode);
+	//alert($("#productCodes").val())
+	
+	//if ($("#productCodes").val().length==0) {
+		loadHtmlTable(true);
+	//} else {
+		//if (kCode == "\n" || kCode == "\r") {
+			//alert("SearchProductCodes")
+	        
 			//return false;
-			event.stopPropagation();
-		}
-		function SearchEnter(event1) {
-			var kCode = String.fromCharCode(event1.keyCode);
-			//if (kCode == "\n" || kCode == "\r") {
-		        $("#goSearch").click();
-			//	return false;
-			//}
-		}
-		function isInt(value) {
-		  var x;
-		  return isNaN(value) ? !1 : (x = parseFloat(value), (0 | x) === x);
-		}
-		String.prototype.split2 = function(separator) {
-		    return this == "" ? [] : this.split(separator); // Avoid returning 1 when null.
-		}
-		function clickClearButton(){
-          	$("#clearButton").click();
-        }
-		function displayResults() {
-			console.log("displayResults disabled - use showList in Dual-Map.js instead");
-			return;
-
-			// SEE search-filters-removed.js - See if anything for HS Codes is usable
-
-			// NOT USED - See Dual-Map instead
-
-		}
-		function displayRow(rowArray) {
-			// NOT USED?
-			// <input name='contact' type='checkbox' value='" + rowArray[0] + "'> 
-			$("#dataList").append( "<div><div><div style='float:right'>Add</div>" + rowArray[0] + "</div><div><b class='exporter'>Export Categories: </b><span class='exporter'> " + rowArray[2] + "</span></div><div>" + rowArray[3] + "</div><div>" + rowArray[4] + "</div><div><b>Product HS Codes: </b>" + rowArray[5] + "</div></div>");
-			//<div>" + rowArray[6] + "</div><div>" + rowArray[7] + "</div>
-		}
-		var dataSet = [];
-		function loadHtmlTable(applyFilter) {
-	    	//d3.text("exporters/export.csv", function(data) {
-	    	d3.text("https://georgiadata.github.io/display/products/exporters/export.csv").then(function(data) {
-	          //dataSet = d3.csv.parseRows(data);
-	          dataSet = d3.csvParseRows(data);
-	          var listHeader = [];
-	          console.log("loadHtmlTable - dataSet row count: " + dataSet.length);
-	          
-	          for(var i = 0; i < dataSet.length; i++) {
-	          	/*
-	          	if (i == 0) { // Header row
-	          		// Possible https://www.papaparse.com/demo - Keys data by field name rather than an array.
-	          		for(var j = 0; j < dataSet.length; j++) {
-						console.log(dataSet[i][j]) // Header values
-						listHeader.push(dataSet[i][j])
-					}
-	          	}
-	          	*/
-	          	       	
-	          }
-	          //displayResults();
-	          //displayGrid(applyFilter);
-	        }); 	
-		}
-		function displayListX() {
-			console.log("displayList");
-			var matchCount = 0;
-
-			$("#dataList").html("");
-			for(var i = 0; i < dataSet.length; i++) {
-	          	if (i > 2) {
-	          		//if (entry[0] > (startRange*100) && entry[0] < (endRange*100+99)) {
-				    	matchCount++;
-				    	// <input name='contact' type='checkbox' value='" + dataSet[i][0] + "'> 
-				    	$("#dataList").append( "<div><div style='float:right'>Add<div></div>" + dataSet[i][0] + "</div><div><b class='exporter'>Export Categories: </b><span class='exporter'> " + dataSet[i][2] + "</span></div><div><b>Description: </b>" + dataSet[i][3] + "</div>");
-				    	$("#dataList").append( "<div><b>Product HS Codes: </b>" + dataSet[i][5] + "</div></div>");
-				    		//<div>" + dataSet[i][6] + "</div><div>" + dataSet[i][7] + "</div>
-					//}
-	          	}
-	          	if (matchCount > 0) {
-	          		$("#resultsPanel").show();
-	          	}
-	         }
-	         if (matchCount > 0) {
-          		$("#resultsPanel").show();
-          	}
-		}
-		function displayGrid(applyFilter) {
-			var container = d3.select("#d3div")
-	          .html('').append("table") // Empty the div to clear previous before appending
-
-	          .selectAll("tr")
-	              .data(dataSet).enter()
-	              .append("tr")
-
-	          .selectAll("td")
-	              .data(function(d) { return d; }).enter()
-	              .append("td")
-	              .text(function(d) { return d; });
-
-	        if (applyFilter) {
-	      		// initial load for URL hash params
-				displayResults();
-			}
-		}
-		function SearchProductCodes(event1) {
-			console.log("SearchProductCodes")
-			var kCode = String.fromCharCode(event1.keyCode);
-			//alert($("#productCodes").val())
-			
-			//if ($("#productCodes").val().length==0) {
-				loadHtmlTable(true);
-			//} else {
-				//if (kCode == "\n" || kCode == "\r") {
-					//alert("SearchProductCodes")
-			        
-					//return false;
-				//}
-			//}
-			event.stopPropagation();
-		}
+		//}
+	//}
+	event.stopPropagation();
+}
 
 
 
@@ -861,17 +865,13 @@ $(document).ready(function () {
       $("#suppliers_noiframe").show();
   }
 
-
 	$('.sendfeedback').click(function(event) {
-	  window.location = "/community/resources/input?showheader=" + param["showheader"];
+	  window.location = dual_map.community_root() + "resources/input?showheader=" + param["showheader"];
 	  event.stopPropagation();
 	});
 	$('.addlisting').click(function(event) {
 	  window.location = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
 	  event.stopPropagation();
-	});
-	$('.pagebutton').click(function(event) {
-	  console.log("Not yet implemented.");
 	});
 	$('.go_map').click(function(event) {
 	  window.scrollTo({
