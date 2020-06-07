@@ -9,6 +9,5 @@
 ## [Driving Tour (routing)](../routing)
 ## [Map Layers (aside)](aside)
 ## [US Zipcode Data (uszipcode)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - Python
-
-[County Preparedness Scores](https://www.statnews.com/feature/coronavirus/county-preparedness-scores/)
+## [County Preparedness Scores](https://www.statnews.com/feature/coronavirus/county-preparedness-scores/)
 
