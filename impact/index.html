@@ -676,7 +676,7 @@
   <div class="user-5" style="display:none">
     <hr>Staff only - 
     <a href="/maps/leaflet/providers/preview/" target="basemaps">View Basemaps</a> | 
-    <a href="../json/menu.json">View JSON</a><br>
+    <a href="/community/impact/json/menu.json">View JSON</a><br>
     <div class="settingAdminNotes"></div>
   </div>
 
@@ -1255,6 +1255,11 @@ function loadScript(url, callback)
   }
   // Nested calls are described here: https://books.google.com/books?id=ZOtVCgAAQBAJ&pg=PA6&lpg=PA6
 }
+
+
+dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback fform
+//dual_map.helloWorld();
+//dual_map.community_root();
 
 
 loadMap1();
