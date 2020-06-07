@@ -1,3 +1,24 @@
+
+var MAP_NAMESPACE = MAP_NAMESPACE || (function(){
+    var _args = {}; // private
+
+    return {
+        init : function(Args) {
+            _args = Args;
+            // some other initialising
+        },
+        helloWorld : function() {
+            alert('Hello World! -' + _args[0]);
+        }
+    };
+}());
+
+/*
+var str = "embed";
+var this_js_script = $('script[(new RegExp(src)).test(str)]'); // or better regexp to get the file name.
+alert(this_js_script.src);
+*/
+
 var dataParameters = [];
 var dp = {};
 var layerControl = {}; // Object containing one control for each map on page.
@@ -643,7 +664,7 @@ function loadMap1(dp) { // Also called by search-filters.js
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
   if (dp) {
     dp1 = dp;
-  } else if (param["show"] == "smart" || param["data"] == "smart") { // sample=1 for 
+  } else if (param["show"] == "smart" || param["data"] == "smart") {
     dp1.listTitle = "Data Driven Decision Making";
     dp1.listSubtitle = "Smart & Sustainable Movement of Goods & Services";
     // Green Locations offer <span style="white-space: nowrap">prepared food<br>Please call ahead to arrange pickup or delivery</span>
