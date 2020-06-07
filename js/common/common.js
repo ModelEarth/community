@@ -19,6 +19,7 @@ function loadParams(paramStr,hashStr) {
   for (let i = 0; i < includepairs.length; i++) {
     let pair = includepairs[i].split('=');
     params[pair[0].toLowerCase()] = decodeURIComponent(pair[1]);
+    console.log("param from javascript include: " + pair[0].toLowerCase() + " " + decodeURIComponent(pair[1]));
   }
 
   let pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
