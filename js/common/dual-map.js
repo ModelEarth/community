@@ -23,11 +23,6 @@ var dual_map = dual_map || (function(){
     };
 }());
 
-/*
-var str = "embed";
-var this_js_script = $('script[(new RegExp(src)).test(str)]'); // or better regexp to get the file name.
-alert(this_js_script.src);
-*/
 
 var dataParameters = [];
 var dp = {};
@@ -117,8 +112,6 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
         tap: !L.Browser.mobile
       });
     }
-
-    
   }
 
   // 5. Load Layers Asynchronously
@@ -128,6 +121,8 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
   // latColumn: "lat",
   //      lonColumn: "lon",
   //var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
+
+  // ADD DATASET TO DUAL MAPS
 
   // We are currently loading dp.dataset from a CSV file.
   // Later we will check if the filename ends with .csv
@@ -146,21 +141,27 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
       dp.iconName = 'star';
       //dataParameters.push(dp);
 
-      //remove the layer from the map
-       if (map.hasLayer(overlays2[dp.dataTitle])){
-          //alert("found")
-          overlays2[dp.dataTitle].remove();  // Works, but checkbox remains
-
+      // Remove the markers from the map for the layer
+       if (map.hasLayer(overlays1[dp.dataTitle])){
+          overlays1[dp.dataTitle].remove();
+       }
+       if (map2.hasLayer(overlays2[dp.dataTitle])){
+          overlays2[dp.dataTitle].remove();
        }
 
+       // Prevents dups of layer from appearing
+       // Each dup shows a data subset when filter is being applied.
+       if (overlays1[dp.dataTitle]) {
+          layerControl[whichmap].removeLayer(overlays1[dp.dataTitle]);
+       }
        if (overlays2[dp.dataTitle]) {
-          // Prevents dups of layer from appearing - each dup shows a data subset when filter is being applied.
+          // Not working, multiple checkboxes appear
+          layerControl[whichmap2].removeLayer(overlays2[dp.dataTitle]); // Not sure why, but 1 needs to be used instead of 2
           //controlLayers.removeLayer(overlays2[dp.dataTitle]);
-          layerControl[whichmap].removeLayer(overlays2[dp.dataTitle]);
        }
 
-      overlays2[dp.dataTitle] = dp.group; // Allows for use of dp.dataTitle with removeLayer and addLayer
-      //overlays2[dp.dataTitle] = dp.group2;
+      overlays1[dp.dataTitle] = dp.group; // Allows for use of dp.dataTitle with removeLayer and addLayer
+      overlays2[dp.dataTitle] = dp.group2;
 
       if (layerControl[whichmap] != undefined) {
         // Remove existing instance of layer
@@ -176,17 +177,14 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
       // Still causes jump
       //overlays2["Intermodal Ports 2"] = overlays["Intermodal Ports"];
 
-      //if (layerControl[whichmap] == undefined) {
-      //  layerControl[whichmap] = L.control.layers(baseLayers, overlays).addTo(map);
-      //}
+      // ADD BACKGROUND BASEMAP
       if (layerControl[whichmap] == undefined) {
         layerControl[whichmap] = L.control.layers(basemaps1, overlays1).addTo(map); // Push multple layers
         basemaps1["Grayscale"].addTo(map); // Set the initial baselayer.
       } else {
         layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
       }
-      
-      // Side map
+      // ADD BACKGROUND BASEMAP to Side Map
       if (layerControl[whichmap2] == undefined) {
         layerControl[whichmap2] = L.control.layers(basemaps2, overlays2).addTo(map2); // Push multple layers
         basemaps2["OpenStreetMap"].addTo(map2); // Set the initial baselayer.
@@ -198,19 +196,17 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
         //addLegend(dp.scale, dp.scaleType, dp.name); // To big and d3-legend.js file is not available in embed, despite 
       }
   
-
+      // ADD ICONS TO MAP
       // All layers reside in this object:
       //console.log("dataParameters:");
       //console.log(dataParameters);
 
-      
       if (dp.showLayer != false) {
         $("#widgetTitle").text(dp.dataTitle);
         dp = showList(dp,map); // Reduces list based on filters
         addIcons(dp,map,map2);
-        map.addLayer(overlays2[dp.dataTitle]);
-        
-        
+        map.addLayer(overlays1[dp.dataTitle]);
+        map2.addLayer(overlays2[dp.dataTitle]);
       }
       $("#activeLayer").text(dp.dataTitle); // Resides after showList
 
@@ -228,7 +224,7 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
 
       // Neigher map.whenReady or map.on('load') seems to require SetView()
       if (document.body.clientWidth > 500) { // Since map tiles do not fully load when below list. Could use a .5 sec timeout perhaps.
-        $("#sidemapCard").hide(); // Hide after size is available for tiles.
+        //$("#sidemapCard").hide(); // Hide after size is available for tiles. Occurs too soon.
       }
   })
   //.catch(function(error){ 
@@ -261,7 +257,7 @@ var overlays1 = {};
 var overlays2 = {};
 dataParameters.forEach(function(ele) {
   overlays1[ele.name] = ele.group; // Add to layer menu
-  //overlays2[ele.name] = ele.group; // Add to layer menu
+  overlays2[ele.name] = ele.group2; // Add to layer menu
 })
 
 function populateMap(whichmap, dp, callback) { // From JSON within page
@@ -294,7 +290,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
     overlays1[dp.dataTitle] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
 
     // Adds checkbox, but unselects other map on page
-    //overlays2[dp.dataTitle] = dp.group;
+    overlays2[dp.dataTitle] = dp.group;
 
 
     /*
@@ -457,11 +453,14 @@ function addIcons(dp,map,map2) {
     //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
 
     if (dp.markerType == "google") {
-        if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
+        if (param["show"] != "suppliers" && (location.host == 'georgia.org' || location.host == 'www.georgia.org')) {
+          // Show an old-style marker when Google Material Icon version not supported
           circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
+          circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group2);
         } else {
           // If this line returns an error, try setting dp1.latColumn and dp1.latColumn to the names of your latitude and longitude columns.
           circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
+          circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group2);
         }
     } else {
       circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
@@ -470,6 +469,12 @@ function addIcons(dp,map,map2) {
                 fillOpacity: 1,
                 radius: markerRadius(1,map) // was 50.  Aiming for 1 to 10
             }).addTo(dp.group);
+      circle2 = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
+                color: colorScale(element[dp.valueColumn]),
+                fillColor: colorScale(element[dp.valueColumn]),
+                fillOpacity: 1,
+                radius: markerRadius(1,map2) // was 50.  Aiming for 1 to 10
+            }).addTo(dp.group2);
     }
 
     // MAP POPUP
@@ -538,8 +543,9 @@ function addIcons(dp,map,map2) {
       output += "<br>";
     }
     
+    // ADD POPUP BUBBLES TO MAP POINTS
     circle.bindPopup(output);
-    //circle2.bindPopup(output);
+    circle2.bindPopup(output);
 
     /*
     map.on('zoomend', function() {
@@ -590,6 +596,9 @@ function addIcons(dp,map,map2) {
   $('.showLocMenu').click(function () {
     $(".locMenu").show();
     //event.stopPropagation();
+  });
+  $('#hideSideMap').click(function () {
+    $("#sidemapCard").hide(); // map2
   });
 
 }
@@ -660,7 +669,8 @@ function loadMap1(dp) { // Also called by search-filters.js
   dp1.longitude = -83.4;
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
-  if (dp) {
+
+  if (dp) { // Paraters set in page or layer json
     dp1 = dp;
   } else if (param["show"] == "smart" || param["data"] == "smart") {
     dp1.listTitle = "Data Driven Decision Making";
@@ -701,12 +711,10 @@ function loadMap1(dp) { // Also called by search-filters.js
     dp1.latColumn = "lat_rand";
     dp1.lonColumn = "lon_rand";
 
-    if (param["initial"] != "response") {
-      dp1.nameColumn = "company";
-      dp1.latColumn = "latitude";
-      dp1.lonColumn = "longitude";
-      dp1.showLegend = false;
-    }
+    dp1.nameColumn = "company";
+    dp1.latColumn = "latitude";
+    dp1.lonColumn = "longitude";
+    dp1.showLegend = false;
 
     dp1.listLocation = false;
     dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
@@ -812,15 +820,19 @@ function loadMap1(dp) { // Also called by search-filters.js
     dp1.listInfo = "Green locations offer <span style='white-space: nowrap'>prepared food<br>Please call ahead to arrange pickup or delivery.</span><br>You can help keep this data current. <a style='white-space: nowrap' href='../farmfresh'>Learn about data</a>";
   }
 
-
+  // Load the map using settings above
   loadFromCSV('map1','map2', dp1, basemaps1, basemaps2, function(results) {
-      //alert("back");
+      
+      // CALLED WHENEVER FILTERS CHANGE
+
       //loadFromCSV('map1', 'map2', "/community/tools/map.csv", basemaps1, basemaps2, function(results) {
       // This function gets called by the geocode function on success
       //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
 
-      // Sends to small map
-      layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+      // AVOID HERE - would create duplicate checkboxes
+      // Could check if overlay already exists
+      //layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+      //layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
          
   });
 
@@ -877,7 +889,6 @@ function loadMap1(dp) { // Also called by search-filters.js
   }
 
   //$("#detaillist").text(""); // Clear prior results
-
 
   // Return to top for mobile users on search.
   if (document.body.clientWidth <= 500) {
