@@ -1233,6 +1233,7 @@ To add and update listings, download the <a href="map.csv">map.csv</a> file and 
 // Omit 'use strict' when creating an embed because it could brake other's code.
 'use strict'; // Optional, make sure we are declaring variables.
 
+
 // COMMON - also resides in embed-map.js
 function loadScript(url, callback)
 {
@@ -1250,6 +1251,9 @@ function loadScript(url, callback)
         //});
         console.log("loadScript loaded: " + url);
   } else {
+
+
+
     console.log("loadScript script already available: " + url);
     callback();
   }

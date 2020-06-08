@@ -1,4 +1,6 @@
-
+#filterEmbedHolder {
+    display: block !important;
+}
 #selectProduct {
     cursor: pointer;
     background-color: #fff;
