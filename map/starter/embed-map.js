@@ -1371,9 +1371,7 @@ function lazyLoadFiles() {
   });
   // js/d3/d3-legend.js would throw error if called here before js/leaflet/leaflet.js
 
-
-	includeCSS(root + 'css/community.css',root);
-
+  includeCSS(root + 'css/community.css',root);
   includeCSS(root + 'css/search-filters.css',root);
   includeCSS(root + 'css/display.css',root);
   includeCSS(root + 'css/hexagons.css',root);
@@ -1400,12 +1398,13 @@ function lazyLoadFiles() {
 lazyLoadFiles();
 
 function dualmapLoaded(param) {
-  loadMap1();
-  window.onhashchange = function() {
-    //param = loadParam(location.search,location.hash);
-    console.log("user changed hash")
-    loadMap1();
-  }
+	dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
+	loadMap1();
+	window.onhashchange = function() {
+		//param = loadParam(location.search,location.hash);
+		console.log("user changed hash")
+		loadMap1();
+	}
 }
 
 
