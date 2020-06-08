@@ -1396,11 +1396,7 @@ function lazyLoadFiles() {
 				loadSearchFilters();
 	   		}, 10 );
 		}
-	}
-
-  // js/d3/d3-legend.js would throw error if called here before js/leaflet/leaflet.js
-
-  	
+	}  	
 	includeCSS(root + 'css/community.css',root);
 	includeCSS(root + 'css/search-filters.css',root);
 	includeCSS(root + 'css/display.css',root);
@@ -1422,7 +1418,6 @@ function lazyLoadFiles() {
 		leafletLoaded(root);
 	});
 }
-//var L;
 
 lazyLoadFiles();
 

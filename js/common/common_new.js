@@ -10,16 +10,25 @@ var param = loadParams(location.search,location.hash);
 // 2. Parameters on URL.
 // 3. Parameters on javascript include file.
 function loadParams(paramStr,hashStr) {
-  let scripts = document.getElementsByTagName('script');
-  let myScript = scripts[ scripts.length - 1 ];
-  //alert(myScript.src)
+  // NOTE: Hardcoded to pull params from last script, else 'embed-map.js' only
+  // Get Script - https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+  let scripts = document.getElementsByTagName('script'); 
+  let myScript = scripts[ scripts.length - 1 ]; // Last script on page, typically the current script common.js
+  //let myScript = null;
+  // Now try to find one containging embed-map
+  for (var i = 0; i < scripts.length; ++i) {
+      if(scripts[i].src && scripts[i].src.indexOf('embed-map.js') !== -1){
+        myScript = scripts[i];
+      }
+  }
+  //alert(myScript.src);
 
   let params = {};
   let includepairs = myScript.src.substring(myScript.src.indexOf('?') + 1).split('&');
   for (let i = 0; i < includepairs.length; i++) {
     let pair = includepairs[i].split('=');
     params[pair[0].toLowerCase()] = decodeURIComponent(pair[1]);
-    console.log("param from javascript include: " + pair[0].toLowerCase() + " " + decodeURIComponent(pair[1]));
+    console.log("Param from javascript include: " + pair[0].toLowerCase() + " " + decodeURIComponent(pair[1]));
   }
 
   let pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
