@@ -279,7 +279,6 @@ zScale.domain(d3.extent(records.z));
   //give a transition on the existing elements
   selectedCircles
     .transition().duration(animDuration)
-
     .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
     .attr("r",function(d){
                       //console.log(d.ACID)
@@ -296,7 +295,6 @@ zScale.domain(d3.extent(records.z));
 
           })
     .style("opacity", .5)
-
 
   //Append any new elements and transition them as well
   selectedCircles.enter()
