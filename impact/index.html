@@ -1083,6 +1083,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
           <div id="sidemapbar" class="widgetbar">
             <div id="sidemapName" style="position:absolute; left:0; padding:4px 4px 4px 10px">
             </div>
+            <div id="hideSideMap" class="close-X" style="position:absolute;right:0px;top:8px;padding-right:10px;color:#aaa">&#10005;</div>
           </div>
 
           <div style="clear:both">  
@@ -1267,6 +1268,11 @@ dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 
 
 loadMap1();
+
+// Append railroads here, somehow
+//layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+//layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
+
 window.onhashchange = function() {
   //param = loadParam(location.search,location.hash);
   console.log("user changed hash")
