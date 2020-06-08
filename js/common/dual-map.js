@@ -195,7 +195,7 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
       }
 
       if (dp.showLegend != false) {
-        addLegend(dp.scale, dp.scaleType, dp.name);
+        //addLegend(dp.scale, dp.scaleType, dp.name); // To big and d3-legend.js file is not available in embed, despite 
       }
   
 

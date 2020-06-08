@@ -104,7 +104,7 @@ strVar += "  <!--";
 strVar += "    Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4";
 strVar += "    https:\/\/datascape.github.io\/community\/#columns=population:31;education:50";
 strVar += "  -->";
-strVar += "  <div class=\"filterPanel\">";
+strVar += "  <div class=\"filterPanel\" style=\"display:none\">";
 strVar += "    <div class=\"filterPanel_background\">";
 strVar += "    <\/div>";
 strVar += "";
@@ -1224,7 +1224,8 @@ strVar += "#legendHolder {min-width: 270px;}";
 //strVar += "#hublist{width:100% !important}";
 strVar += "  <\/style>";
 
-document.write("<div style=\"display:block;position:relative\">" + strVar + "<\/div> ");
+// Hide until
+document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVar + "<\/div> ");
 
 // COMMON
 function loadScript(url, callback)
@@ -1343,18 +1344,28 @@ function jsLoaded(root) {
 	}
 }
 function leafletLoaded(root) {
-  // The d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early
-  //loadScript(root + 'js/d3/d3-legend.js', function(results) {}); // Still, we can load it a little earlier here. But why does this still cause error?
+  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early
 	loadScript(root + 'js/leaflet/leaflet.icon-material.js');
-	loadScript(root + 'js/common/dual-map.js', function(results) {
-		loadScript(root + 'js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
-		  dualmapLoaded(param);
+
+	loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
+
+			loadScript(root + 'js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
+				//loadScript(root + 'js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
+		
+				// BUG BUG - loading again.  Alternative to settimeout
+				loadScript(root + 'js/common/dual-map.js', function(results) { 
+		  			dualmapLoaded(param);
+		  		});
+		  	});
 		});
 	});
 }
 function d3Loaded(root) {
-	loadScript(root + 'js/d3/d3-legend.js'); // Also resides in dual-map addLegend()
+	// To big and d3-legend.js file is not available in embed, despite 
+	//loadScript(root + 'js/d3/d3-legend.js');
 }
+
 function lazyLoadFiles() {
 	let root = location.protocol + '//' + location.host + '/community/';
 	if (location.host.indexOf('localhost') < 0) {
@@ -1365,27 +1376,45 @@ function lazyLoadFiles() {
   });
 
   // Load early so available later
-  loadScript(root + 'js/common/dual-map.js', function(results) {});
-  loadScript(root + 'js/common/common.js', function(results) {
-    loadScript(root + 'js/common/search-filters.js', function(results) {});
+  loadScript(root + 'js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
+  	loadScript(root + 'js/common/dual-map.js', function(results) {});
   });
+  loadScript(root + 'js/common/common_new.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
+  	loadScript(root + 'js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
+    	
+  		loadSearchFilters();
+  		
+    });	
+  });
+
+	function loadSearchFilters() {
+			if (typeof customD3loaded !== 'undefined') {
+			loadScript(root + 'js/common/search-filters.js', function(results) {});
+		} else {
+			setTimeout( function() {
+	   			console.log("try loadSearchFilters again")
+				loadSearchFilters();
+	   		}, 10 );
+		}
+	}
+
   // js/d3/d3-legend.js would throw error if called here before js/leaflet/leaflet.js
 
-  includeCSS(root + 'css/community.css',root);
-  includeCSS(root + 'css/search-filters.css',root);
-  includeCSS(root + 'css/display.css',root);
-  includeCSS(root + 'css/hexagons.css',root);
+  	
+	includeCSS(root + 'css/community.css',root);
+	includeCSS(root + 'css/search-filters.css',root);
+	includeCSS(root + 'css/display.css',root);
+	includeCSS(root + 'css/hexagons.css',root);
 
 	includeCSS(root + 'css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
 	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
 	includeCSS(root + 'css/map.css',root);
-
-
+	
 
 	// Required by leafletLoaded that follows
 	loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
-    d3Loaded(root);
+    	d3Loaded(root);
 	});
 
 	// Resides AFTER css/leaflet/leaflet.css
@@ -1398,12 +1427,19 @@ function lazyLoadFiles() {
 lazyLoadFiles();
 
 function dualmapLoaded(param) {
-	dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
-	loadMap1();
-	window.onhashchange = function() {
-		//param = loadParam(location.search,location.hash);
-		console.log("user changed hash")
+	if (typeof dual_map !== 'undefined') {
+		dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 		loadMap1();
+		window.onhashchange = function() {
+			//param = loadParam(location.search,location.hash);
+			console.log("user changed hash")
+			loadMap1();
+		}
+	} else { // Wait a milisecond and try again
+		setTimeout( function() {
+   			console.log("try dualmapLoaded again")
+			dualmapLoaded(param);
+   		}, 10 );
 	}
 }
 
