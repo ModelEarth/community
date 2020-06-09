@@ -145,8 +145,8 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
        if (map.hasLayer(overlays1[dp.dataTitle])){
           overlays1[dp.dataTitle].remove();
        }
-       if (map2.hasLayer(overlays2[dp.dataTitle + "-2"])){
-          overlays2[dp.dataTitle + "-2"].remove();
+       if (map2.hasLayer(overlays2[dp.dataTitle])){
+          overlays2[dp.dataTitle].remove();
        }
 
        // Prevents dups of layer from appearing
@@ -154,15 +154,15 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
        if (overlays1[dp.dataTitle]) {
           layerControl[whichmap].removeLayer(overlays1[dp.dataTitle]);
        }
-       if (overlays2[dp.dataTitle + "-2"]) {
+       if (overlays2[dp.dataTitle]) {
           // Not working, multiple checkboxes appear
-          layerControl[whichmap2].removeLayer(overlays2[dp.dataTitle + "-2"]); // Not sure why, but 1 needs to be used instead of 2
+          layerControl[whichmap2].removeLayer(overlays2[dp.dataTitle]); // Not sure why, but 1 needs to be used instead of 2
           //controlLayers.removeLayer(overlays2[dp.dataTitle]);
        }
 
       // Allows for use of dp.dataTitle with removeLayer and addLayer
       overlays1[dp.dataTitle] = dp.group;
-      overlays2[dp.dataTitle + "-2"] = dp.group2;
+      overlays2[dp.dataTitle] = dp.group2;
 
       if (layerControl[whichmap] != undefined) {
         // Remove existing instance of layer
@@ -180,17 +180,17 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
 
       // ADD BACKGROUND BASEMAP
       if (layerControl[whichmap] == undefined) {
-        layerControl[whichmap] = L.control.layers(basemaps1, overlays1).addTo(map); // Push multple layers
+        layerControl[whichmap] = L.control.layers(basemaps1, overlays1).addTo(map); // Init layer checkboxes
         basemaps1["Grayscale"].addTo(map); // Set the initial baselayer.
       } else {
-        layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Appends to existing layers
+        layerControl[whichmap].addOverlay(dp.group, dp.dataTitle); // Add layer checkbox
       }
       // ADD BACKGROUND BASEMAP to Side Map
       if (layerControl[whichmap2] == undefined) {
-        layerControl[whichmap2] = L.control.layers(basemaps2, overlays2).addTo(map2); // Push multple layers
+        layerControl[whichmap2] = L.control.layers(basemaps2, overlays2).addTo(map2); // Init layer checkboxes
         basemaps2["OpenStreetMap"].addTo(map2); // Set the initial baselayer.
       } else {
-        layerControl[whichmap2].addOverlay(dp.group2, dp.dataTitle + "-2"); // Appends to existing layers
+        layerControl[whichmap2].addOverlay(dp.group2, dp.dataTitle); // Add layer checkbox
       }
 
       if (dp.showLegend != false) {
@@ -208,7 +208,7 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
         addIcons(dp,map,map2);
         // These do not effect the display of layer checkboxes
         map.addLayer(overlays1[dp.dataTitle]);
-        map2.addLayer(overlays2[dp.dataTitle + "-2"]);
+        map2.addLayer(overlays2[dp.dataTitle]);
       }
       $("#activeLayer").text(dp.dataTitle); // Resides after showList
 
@@ -293,7 +293,7 @@ function populateMap(whichmap, dp, callback) { // From JSON within page
 
     // Adds checkbox, but unselects other map on page
     //overlays2[dp.dataTitle] = dp.group;
-    overlays2[dp.dataTitle  + "-2"] = dp.group2; //Haven't test switch to this
+    overlays2[dp.dataTitle ] = dp.group2; //Haven't test switch to this
 
     /*
     if (layerControl[whichmap] == undefined) {
