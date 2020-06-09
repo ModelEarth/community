@@ -100,6 +100,8 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
+1. [LCA methodology to evaluate new technologies using USEEIO](https://modelearth.github.io/io/naics/add) and 
+Getting started with [RStudio and USEEIOR](https://modelearth.github.io/io/naics)
 <!--
 1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
