@@ -1339,7 +1339,7 @@ function mix(incoming, target) { // Combine two objects, priority to incoming. D
 
 // UNIQUE TO PAGE
 function jsLoaded(root) {	
-	
+	$('style').remove(); // Remove existing style tag. One from Drupal prevents material icon map points.
 	if (location.host.indexOf('localhost') >= 0) {
 		// Causing map points to shift right, maybe due to later loading.
 		//loadScript(root + '/community/js/common/navigation.js');
@@ -1402,6 +1402,7 @@ function lazyLoadFiles() {
 	includeCSS(root + '/community/css/display.css',root);
 	includeCSS(root + '/community/css/hexagons.css',root);
 
+	
 	includeCSS(root + '/community/css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
 	includeCSS(root + '/community/css/leaflet/leaflet.icon-material.css',root);
