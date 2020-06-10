@@ -27,7 +27,7 @@ $(document).ready(function () {
 		$(".si-btn").hide();
 	}
 	catArray = [];
-	$.get('/community/impact/harmonized-system/hs.txt', function(data) {
+	$.get(dual_map.community_root() + 'impact/harmonized-system/hs.txt', function(data) {
 		var catLines = data.split("\n");
 		
 		catLines.forEach(function(element) {
@@ -1066,7 +1066,7 @@ function initSiteObject(layerName) {
     // https://github.com/codeforgreenville/leaflet-google-sheets-template
     // https://data.openupstate.org/map-layers
 
-    var layerJson = "/community/impact/menu.json";
+    var layerJson = dual_map.community_root() + "impact/menu.json";
 
     var siteObject = (function() {
         var json = null;
@@ -1092,4 +1092,16 @@ function initSiteObject(layerName) {
     })(); // end siteObject
 } // end initSiteObject
 
-initSiteObject("");
+function callInitSiteObject(attempt) { // wait for dual_map
+	if (typeof dual_map !== 'undefined') {
+		initSiteObject("");
+	} else if (attempt < 100) {
+		setTimeout( function() {
+   			console.log("try search-filters initSiteObject again")
+			callInitSiteObject(attempt+1);
+   		}, 10 );
+	} else {
+		console.log("ERROR: Too many search-filters dual_map attempts.");
+	}
+}
+callInitSiteObject(1);
