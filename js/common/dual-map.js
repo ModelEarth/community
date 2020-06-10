@@ -455,7 +455,7 @@ function addIcons(dp,map,map2) {
     //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
 
     if (dp.markerType == "google") {
-        if (param["show"] != "suppliers" && (location.host == 'georgia.org' || location.host == 'www.georgia.org')) {
+        if (1==2 && param["show"] != "suppliers" && (location.host == 'georgia.org' || location.host == 'www.georgia.org')) {
           // Show an old-style marker when Google Material Icon version not supported
           circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
           circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group2);

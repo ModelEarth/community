@@ -1344,7 +1344,7 @@ function jsLoaded(root) {
 	}
 }
 function leafletLoaded(root) {
-  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early
+  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
 	loadScript(root + 'js/leaflet/leaflet.icon-material.js');
 
 	loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
@@ -1381,14 +1381,14 @@ function lazyLoadFiles() {
   });
   loadScript(root + 'js/common/common_new.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
   	loadScript(root + 'js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
-    	
-  		loadSearchFilters();
-  		
+    	loadScript(root + 'js/common/dual-map.js', function(results) { 
+  			loadSearchFilters(); // Uses dual_map library for community_root
+  		});
     });	
   });
 
 	function loadSearchFilters() {
-			if (typeof customD3loaded !== 'undefined') {
+		if (typeof customD3loaded !== 'undefined') {
 			loadScript(root + 'js/common/search-filters.js', function(results) {});
 		} else {
 			setTimeout( function() {
@@ -1424,12 +1424,16 @@ lazyLoadFiles();
 function dualmapLoaded(param) {
 	if (typeof dual_map !== 'undefined') {
 		dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
-		loadMap1();
-		window.onhashchange = function() {
-			//param = loadParam(location.search,location.hash);
-			console.log("user changed hash")
+
+		loadScript(dual_map.community_root() + 'js/common/search-filters.js', function(results) {
+
 			loadMap1();
-		}
+			window.onhashchange = function() {
+				//param = loadParam(location.search,location.hash);
+				console.log("user changed hash")
+				loadMap1();
+			}
+		});
 	} else { // Wait a milisecond and try again
 		setTimeout( function() {
    			console.log("try dualmapLoaded again")
