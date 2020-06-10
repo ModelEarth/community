@@ -1227,6 +1227,8 @@ strVar += "  <\/style>";
 // Hide until
 document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVar + "<\/div> ");
 
+
+
 // COMMON
 function loadScript(url, callback)
 {
@@ -1340,48 +1342,46 @@ function jsLoaded(root) {
 	
 	if (location.host.indexOf('localhost') >= 0) {
 		// Causing map points to shift right, maybe due to later loading.
-		//loadScript(root + 'js/common/navigation.js');
+		//loadScript(root + '/community/js/common/navigation.js');
 	}
 }
 function leafletLoaded(root) {
   // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
-	loadScript(root + 'js/leaflet/leaflet.icon-material.js');
+	loadScript(root + '/community/js/leaflet/leaflet.icon-material.js');
 
-	loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
+	loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
+		loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
 
-			loadScript(root + 'js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
-				//loadScript(root + 'js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
+			loadScript(root + '/community/js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
+				//loadScript(root + '/community/js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
 		
-				// BUG BUG - loading again.  Alternative to settimeout
-				loadScript(root + 'js/common/dual-map.js', function(results) { 
-		  			dualmapLoaded(param);
-		  		});
+		  			dualmapLoaded(param, root);
+		  		
 		  	});
 		});
 	});
 }
 function d3Loaded(root) {
 	// To big and d3-legend.js file is not available in embed, despite 
-	//loadScript(root + 'js/d3/d3-legend.js');
+	//loadScript(root + '/community/js/d3/d3-legend.js');
 }
 
 function lazyLoadFiles() {
-	let root = location.protocol + '//' + location.host + '/community/';
+	let root = location.protocol + '//' + location.host;
 	if (location.host.indexOf('localhost') < 0) {
-		root = "https://modelearth.github.io/community/";
+		root = "https://modelearth.github.io";
 	}
-  loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+  loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
     jsLoaded(root);
   });
 
   // Load early so available later
-  loadScript(root + 'js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
-  	loadScript(root + 'js/common/dual-map.js', function(results) {});
+  loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
+  	loadScript(root + '/community/js/common/dual-map.js', function(results) {});
   });
-  loadScript(root + 'js/common/common_new.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
-  	loadScript(root + 'js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
-    	loadScript(root + 'js/common/dual-map.js', function(results) { 
+  loadScript(root + '/community/js/common/common_new.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
+  	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
+    	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
   			loadSearchFilters(); // Uses dual_map library for community_root
   		});
     });	
@@ -1389,7 +1389,7 @@ function lazyLoadFiles() {
 
 	function loadSearchFilters() {
 		if (typeof customD3loaded !== 'undefined') {
-			loadScript(root + 'js/common/search-filters.js', function(results) {});
+			loadScript(root + '/community/js/common/search-filters.js', function(results) {});
 		} else {
 			setTimeout( function() {
 	   			console.log("try loadSearchFilters again")
@@ -1397,35 +1397,41 @@ function lazyLoadFiles() {
 	   		}, 10 );
 		}
 	}  	
-	includeCSS(root + 'css/community.css',root);
-	includeCSS(root + 'css/search-filters.css',root);
-	includeCSS(root + 'css/display.css',root);
-	includeCSS(root + 'css/hexagons.css',root);
+	includeCSS(root + '/community/css/community.css',root);
+	includeCSS(root + '/community/css/search-filters.css',root);
+	includeCSS(root + '/community/css/display.css',root);
+	includeCSS(root + '/community/css/hexagons.css',root);
 
-	includeCSS(root + 'css/leaflet/leaflet.css',root);
+	includeCSS(root + '/community/css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
-	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
-	includeCSS(root + 'css/map.css',root);
+	includeCSS(root + '/community/css/leaflet/leaflet.icon-material.css',root);
+	includeCSS(root + '/community/css/map.css',root);
 	
 
 	// Required by leafletLoaded that follows
-	loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
+	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
     	d3Loaded(root);
 	});
 
 	// Resides AFTER css/leaflet/leaflet.css
-	loadScript(root + 'js/leaflet/leaflet.js', function(results) {
+	loadScript(root + '/community/js/leaflet/leaflet.js', function(results) {
 		leafletLoaded(root);
 	});
 }
 
 lazyLoadFiles();
 
-function dualmapLoaded(param) {
+function dualmapLoaded(param, root) {
 	if (typeof dual_map !== 'undefined') {
 		dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 
-		loadScript(dual_map.community_root() + 'js/common/search-filters.js', function(results) {
+		$("#filterEmbedHolder img[src]").each(function() {
+			  if($(this).attr("src").toLowerCase().indexOf("http") < 0){
+		  		$(this).attr("src", root + $(this).attr('src'));
+			  }
+		})
+
+		loadScript(root + '/community/js/common/search-filters.js', function(results) {
 
 			loadMap1();
 			window.onhashchange = function() {
@@ -1437,7 +1443,7 @@ function dualmapLoaded(param) {
 	} else { // Wait a milisecond and try again
 		setTimeout( function() {
    			console.log("try dualmapLoaded again")
-			dualmapLoaded(param);
+			dualmapLoaded(param, root);
    		}, 10 );
 	}
 }
