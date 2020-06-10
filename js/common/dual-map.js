@@ -586,9 +586,14 @@ function addIcons(dp,map,map2) {
       */
 
       $('.detail').css("border","none");
+      $('.detail').css("background-color","inherit");
+      $('.detail').css("padding","12px 0 12px 4px");
+
       console.log("detail click");
       $('#sidemapName').text($(this).attr("name"));
-      $(this).css("border","2px solid #ccc");
+
+      $(this).css("border","1px solid #ccc");
+      $(this).css("background-color","rgb(250, 250, 250)");
       $(this).css("padding","15px");
 
       $("#sidemapCard").show(); // map2
