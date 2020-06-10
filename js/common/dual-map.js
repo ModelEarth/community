@@ -684,7 +684,7 @@ function loadMap1(dp) { // Also called by search-filters.js
     //alert(community_root + "tools/map.csv");
 
     dp1.dataset =  community_root + "tools/map.csv";
-    dp1.listInfo = "Georgia Smart Community Projects";
+    dp1.listInfo = "Includes Georgia Smart Community Projects";
 
     // Georgia
     dp1.latitude = 32.9;

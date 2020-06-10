@@ -6,105 +6,23 @@
 // Final version resides in embed-map.js
 */
 
-
 // Add \r to end of aside rows manually.
-/*
-var strVar="";
-strVar += "<!-- Top Map -->";
-strVar += "<style>";
-strVar += "  #allLegends {";
-strVar += "    color:#fff !important; ";
-strVar += "  }";
-strVar += "  #allLegends > .label {";
-strVar += "    color:#fff !important; ";
-strVar += "  }";
-strVar += "  #map1 {";
-strVar += "    height:600px;";
-strVar += "  }";
-strVar += "  #hublist-padding {";
-strVar += "    padding-right: 30px;";
-strVar += "  }";
-strVar += "<\/style>";
-strVar += "";
-strVar += "<div class=\"displayOnload\" style=\"display:none;position:relative;\">";
-strVar += "  <div style=\"display:block;position:relative\" id=\"map1\"><\/div>";
-strVar += "  <div id=\"legendHolder\">";
-strVar += "    <div id=\"allLegends\"><\/div>";
-strVar += "  <\/div>";
-strVar += "<\/div>";
-strVar += "<\/section>";
-strVar += "<div style=\"clear:both\"><\/div>";
-strVar += "<!-- END Top Map -->";
-*/
 
-////document.body.prepend(strVar); // This displayed as HTML tags
-//let div = document.createElement("div");
-//div.innerHTML = strVar;
-//document.body.append(div);
-//strVar = "";
-
-// Replace afer updating:
-// Data Driven Decision Making
-// Smart & Sustainable Movement of <span style=\"white-space: nowrap\">Goods &amp; Services</span>
-
-/*
-strVar += "<!-- Start HTML -->";
-strVar += "  <a name=\"gomap\"><\/a>";
-strVar += "  <section id=\"data\" style=\"overflow:auto\">";
-strVar += "    <div class=\"content displayOnload\" style=\"display:none\">";
-strVar += "      <div id=\"flexwrapperX\">";
-strVar += "        ";
-strVar += "        <div id=\"mapHolder\">";
-strVar += "          <div class=\"mapHolderInner\">";
-strVar += "            <div class=\"mapHolderCard card\">";
-strVar += "              <div id=\"sidemapbar\">";
-strVar += "                <div style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
-strVar += "                  ";
-strVar += "                  <div id=\"widgetTitle\">Connected Communities<\/div>";
-strVar += "                <\/div>";
-strVar += "              <\/div>";
-strVar += "";
-strVar += "              <div style=\"clear:both\">  ";
-strVar += "                <div id=\"map2\"><\/div>";
-strVar += "              <\/div>";
-strVar += "";
-strVar += "            <\/div>";
-strVar += "          <\/div>";
-strVar += "        <\/div>";
-strVar += "      ";
-strVar += "        <div id=\"hublist\">";
-strVar += "          <div id=\"hublist-padding\">";
-strVar += "            <h1>Data Driven Decision Making<\/h1>";
-strVar += "            <h2 style=\"font-size: 18px; margin-bottom:0px; font-weight: 600\">Smart & Sustainable Movement of <span style=\"white-space: nowrap\">Goods &amp; Services</span><\/h2><br>";
-strVar += "            ";
-strVar += "              <!--";
-strVar += "              <input type=\"button\" onclick=\"location.href='..\/..\/start\/feed';\" ";
-strVar += "              value=\"Add your data feeds\" style=\"margin-top:20px; padding:10px\" \/>";
-strVar += "              <br><br>";
-strVar += "              -->";
-strVar += "";
-strVar += "            <div id=\"detaillist\"><\/div>";
-strVar += "            <div id=\"narrowlist\" style=\"display:none\"><\/div>";
-strVar += "          <\/div>";
-strVar += "        <\/div>";
-strVar += "";
-strVar += "      <\/div><!-- flexwrapper -->";
-strVar += "    <\/div>  ";
-strVar += "";
-strVar += "  <\/section>";
-strVar += "<!-- End HTML -->";
-*/
 
 
 var strVar="";
 strVar += "<!-- Start HTML -->";
 strVar += "";
+strVar += "  <style>";
+strVar += "    svg{max-width:none;} \/* Fix for embedding material icon map points in Drupal *\/";
+strVar += "  <\/style>";
+strVar += "  ";
 strVar += "  <!-- FILTERS -->";
 strVar += "  <!--";
 strVar += "    Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4";
 strVar += "    https:\/\/datascape.github.io\/community\/#columns=population:31;education:50";
 strVar += "  -->";
-strVar += "  <div class=\"filterPanel\" style=\"display:none\">";
+strVar += "  <div class=\"filterPanel\">";
 strVar += "    <div class=\"filterPanel_background\">";
 strVar += "    <\/div>";
 strVar += "";
@@ -247,6 +165,17 @@ strVar += "                  <option value=\"city\">Search by City<\/option>";
 strVar += "                  <option value=\"zip\">Search by Zip<\/option>";
 strVar += "                  <option value=\"counties\">Search by County<\/option>";
 strVar += "              <\/select>";
+strVar += "            ";
+strVar += "                <!--";
+strVar += "                Bug: These appear when in embed-map.js";
+strVar += "";
+strVar += "                <div class=\"uparrow uparrow-grey\" style=\"left: 34px;\">";
+strVar += "                <\/div>";
+strVar += "";
+strVar += "                <div class=\"uparrow uparrow-white\" style=\"left: 34px;\">";
+strVar += "                <\/div>";
+strVar += "                -->";
+strVar += "";
 strVar += "                <div class=\"filterBubble\" style=\"pointer-events: auto;\"><!-- Catch click through -->";
 strVar += "                    <input id=\"l\" autocomplete=\"off\" style=\"width:100%;max-width:400px;padding-right:27px;margin-bottom:10px\" class=\"filterClick mobileWide textInput si-input\" type=\"text\" value=\"\" onkeyup=\"return SearchEnter(event);\" \/>";
 strVar += "";
@@ -678,7 +607,7 @@ strVar += "";
 strVar += "  <div class=\"user-5\" style=\"display:none\">";
 strVar += "    <hr>Staff only - ";
 strVar += "    <a href=\"\/maps\/leaflet\/providers\/preview\/\" target=\"basemaps\">View Basemaps<\/a> | ";
-strVar += "    <a href=\"..\/json\/menu.json\">View JSON<\/a><br>";
+strVar += "    <a href=\"\/community\/impact\/json\/menu.json\">View JSON<\/a><br>";
 strVar += "    <div class=\"settingAdminNotes\"><\/div>";
 strVar += "  <\/div>";
 strVar += "";
@@ -964,8 +893,8 @@ strVar += "  <div id=\"flexwrapper\">";
 strVar += "    <div id=\"hublist\" style=\"padding-top:20px\">";
 strVar += "      <div id=\"hublist-padding\">";
 strVar += "        ";
-strVar += "        <h1 class=\"listTitle\"><\/h2>";
-strVar += "        <h2 class=\"listSubtitle\"><\/h2>";
+strVar += "        <h1 class=\"listTitle\" style=\"display:none;margin-bottom:12px\"><\/h1>";
+strVar += "        <h2 class=\"listSubtitle\" style=\"display:none\"><\/h2>";
 strVar += "";
 strVar += "        <div style=\"display:none\" class=\"suppliers\">";
 strVar += "          ";
@@ -1085,6 +1014,7 @@ strVar += "        <div id=\"sidemapCard\" class=\"mapHolderCard card\">";
 strVar += "          <div id=\"sidemapbar\" class=\"widgetbar\">";
 strVar += "            <div id=\"sidemapName\" style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
 strVar += "            <\/div>";
+strVar += "            <div id=\"hideSideMap\" class=\"close-X\" style=\"position:absolute;right:0px;top:8px;padding-right:10px;color:#aaa\">&#10005;<\/div>";
 strVar += "          <\/div>";
 strVar += "";
 strVar += "          <div style=\"clear:both\">  ";
@@ -1212,6 +1142,8 @@ strVar += "<!-- End HTML -->";
 
 
 
+
+
 strVar += "<style>";
 strVar += "  #legendHolder {";
 strVar += "    min-width: 270px;";
@@ -1222,7 +1154,10 @@ strVar += "<style>";
 strVar += "#legendHolder {min-width: 270px;}";
 //strVar += "#mapHolder {display:none !important}";
 //strVar += "#hublist{width:100% !important}";
-strVar += "  <\/style>";
+strVar += "<\/style>";
+
+
+
 
 // Hide until
 document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVar + "<\/div> ");
