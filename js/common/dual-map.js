@@ -568,6 +568,7 @@ function addIcons(dp,map,map2) {
   map2.on('zoom', function() {
     // Hide the circles so they don't fill screen. Set small to hide.
     $(".leaflet-interactive").hide();
+    $(".l-icon-material").show();
   });
 
   $('.detail').click(
@@ -592,7 +593,7 @@ function addIcons(dp,map,map2) {
 
       $("#sidemapCard").show(); // map2
 
-      popMapPoint(dp, map2, $(this).attr("latitude"), $(this).attr("longitude"));
+      popMapPoint(dp, map2, $(this).attr("latitude"), $(this).attr("longitude"), $(this).attr("name"));
 
       window.scrollTo({
         top: $("#sidemapCard").offset().top - 140,
@@ -1405,7 +1406,7 @@ function showList(dp,map) {
   return dp;
 }
 
-function popMapPoint(dp, map, latitude, longitude) {
+function popMapPoint(dp, map, latitude, longitude, name) {
   let center = [latitude,longitude];
   map.flyTo(center, 15); // 19 in lake
 
@@ -1433,8 +1434,8 @@ function popMapPoint(dp, map, latitude, longitude) {
   //dp.group2 = 
 
   // To do: Make this point clickable. Associate popup somehow.
-  //L.marker([latitude,longitude], {icon: busIcon}).addTo(map)
-
+  circle = L.marker([latitude,longitude], {icon: busIcon}).addTo(map)
+  circle.bindPopup(name);
 
 
   //var markerGroup = L.layerGroup().addTo(map);
