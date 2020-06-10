@@ -22,6 +22,7 @@
 }
 .local {padding:0 4px 0 4px; }
 .localonly {padding:20px; }
+svg{max-width:none;} /* Fix for embedding material icon map points in Drupal */
 
 @media (max-width: 800px) {
   .hideMobile {display:none;}
