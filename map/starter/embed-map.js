@@ -923,7 +923,7 @@ strVar += "            Georgia businesses are responding to the call for manufac
 strVar += "            distribution of critical supplies via the state's <a href=\"https:\/\/www.georgia.org\/covid19response\">COVID-19 Response Form<\/a>. ";
 strVar += "            -->";
 strVar += "";
-strVar += "            <a href=\"https:\/\/www.georgia.org\/covid19suppliersmap\" target=\"covid19suppliersmap\">Learn more<\/a> about our supplier list and map.";
+//strVar += "            <a href=\"https:\/\/www.georgia.org\/covid19suppliersmap\" target=\"covid19suppliersmap\">Learn more<\/a> about our supplier list and map.";
 strVar += "";
 strVar += "            <!--";
 strVar += "            To make a listing correction or update, please ";
