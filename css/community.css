@@ -184,7 +184,6 @@ hr {
 .content {
   max-width: 1140px;
   margin:0 auto;
-  padding-top: 20px;
   padding-leftX: 60px;
   padding-rightX: 60px;
   font-size: 15px;
@@ -192,6 +191,7 @@ hr {
   position: relative;
 }
 .contentpadding {
+  padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottomX: 30px;
