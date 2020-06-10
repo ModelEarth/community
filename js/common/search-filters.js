@@ -798,7 +798,7 @@ $(document).ready(function () {
   }
   if (param["show"] == "suppliers") {
     var div = $("<div />", {
-        html: '<style>.suppliers{display: block !important;}</style>'
+        html: '<style>.suppliers{display:inline !important;}</style>'
       }).appendTo("body");
   }
 
@@ -875,13 +875,13 @@ $(document).ready(function () {
 	});
 	$('.go_map').click(function(event) {
 	  window.scrollTo({
-	      top: 0,
+	      top: $('#map1').offset().top,
 	      left: 0
 	    });
 	});
 	$('.go_list').click(function(event) {
 	  window.scrollTo({
-	      top: $('#list_main').offset().top - 95,
+	      top: $('#detaillist').offset().top,
 	      left: 0
 	    });
 	});
@@ -892,7 +892,12 @@ $(document).ready(function () {
 	    });
 	  $("#sidemapCard").show(); // map2
 	});
-
+	$('.go_search').click(function(event) {
+	  window.scrollTo({
+	      top: 0,
+	      left: 0
+	    });
+	});
 });
 
 // HEX

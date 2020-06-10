@@ -1374,22 +1374,25 @@ function showList(dp,map) {
   //$("#sidemapbar").prepend(locmenu);
 
   if (dataMatchCount > 0) {
-      //alert("show") // was twice BUGBUG
-      //  (dataSet.length - 1) 
-      if (dataMatchCount == count) {
-        $("#dataList").html(dataMatchCount + " records. " + dp.listInfo + "<br>");
-      } else if (count==1) {
-        $("#dataList").html(dataMatchCount + " matching within " + count + " records. " + dp.listInfo + "<br>");
-      } else {
-        $("#dataList").html(dataMatchCount + " matching within " + count + " records. " + dp.listInfo + "<br>");
+      let searchFor = "";
+      if ($("#catSearch").val()) {
+        searchFor = "<b>" + $("#catSearch").val() + "</b> - "; // was twice BUGBUG
       }
+      if (dataMatchCount == count) {
+        searchFor += dataMatchCount + " records. " + dp.listInfo + "<br>";
+      } else if (count==1) {
+        searchFor += dataMatchCount + " matching results within " + count + " records. " + dp.listInfo + "<br>";
+      } else {
+        searchFor += dataMatchCount + " matching results within " + count + " records. " + dp.listInfo + "<br>";
+      }
+      $("#dataList").html(searchFor);
       $("#resultsPanel").show();
       $("#dataList").show();
 
       //console.log(selected_col);
       //alert(selected_columns_object[2].value)
   } else {
-      $("#dataList").html("No match found in " + count + " records.<br>");
+      $("#dataList").html("No match found in " + count + " records. <a href='#' onclick='clickClearButton();return false;'>Clear Filters</a><br>");
           
     var noMatch = "<div>No match found in " + (dataSet.length - 1) + " records. <a href='#' onclick='clickClearButton();return false;'>Clear filters</a>.</div>"
     $("#nomatchText").html(noMatch);
