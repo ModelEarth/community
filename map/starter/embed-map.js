@@ -16,7 +16,7 @@ strVar += "";
 strVar += "  <style>";
 strVar += "    svg{max-width:none;} \/* Fix for embedding material icon map points in Drupal *\/";
 strVar += "  <\/style>";
-strVar += "  ";
+strVar += "";
 strVar += "  <!-- FILTERS -->";
 strVar += "  <!--";
 strVar += "    Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4";
@@ -923,8 +923,9 @@ strVar += "            Georgia businesses are responding to the call for manufac
 strVar += "            distribution of critical supplies via the state's <a href=\"https:\/\/www.georgia.org\/covid19response\">COVID-19 Response Form<\/a>. ";
 strVar += "            -->";
 strVar += "";
-//strVar += "            <a href=\"https:\/\/www.georgia.org\/covid19suppliersmap\" target=\"covid19suppliersmap\">Learn more<\/a> about our supplier list and map.";
-strVar += "";
+strVar += "            <span style=\"display:none\" class=\"suppliers_pre_message\">";
+strVar += "            <a href=\"https:\/\/www.georgia.org\/covid19suppliersmap\" target=\"covid19suppliersmap\">Learn more<\/a> about our supplier list and map.";
+strVar += "            <\/span>";
 strVar += "            <!--";
 strVar += "            To make a listing correction or update, please ";
 strVar += "            <a href=\"https:\/\/www.georgia.org\/covid19response\" style=\"white-space: nowrap;\">submit a new entry<\/a> ";
@@ -933,9 +934,9 @@ strVar += "            -->";
 strVar += "";
 strVar += "            <span style=\"display:none\" class=\"suppliers_pre_message\">";
 strVar += "            Some of the locations are randomized by a couple miles since they were posted prior to our public listing registration.";
-strVar += "            <\/span>";
-strVar += "";
 strVar += "            <br><br>";
+strVar += "            <\/span>";
+strVar += "            ";
 strVar += "          <\/div>";
 strVar += "        <\/div>";
 strVar += "";
@@ -1138,7 +1139,21 @@ strVar += "  <\/div><!-- flexwrapper -->";
 strVar += "<\/div>  ";
 strVar += "";
 strVar += "<\/section>";
+strVar += "<\/div>";
+strVar += "<!-- list_main \/-->";
+strVar += "";
+strVar += "<div id=\"fixedFooter\" class=\"showMobile\">";
+strVar += "  <div>";
+strVar += "    <div class=\"go_list\">Listings<\/div>";
+strVar += "    <div class=\"go_map\">State Map<\/div>";
+strVar += "    <div class=\"go_local\" style=\"display:none\">Local Map<\/div>";
+strVar += "    <div class=\"go_info\" style=\"display:none\">Info<\/div>";
+strVar += "    <div class=\"go_search\">Search<\/div>";
+strVar += "  <\/div>";
+strVar += "<\/div>";
+strVar += "";
 strVar += "<!-- End HTML -->";
+
 
 
 
