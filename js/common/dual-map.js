@@ -391,28 +391,6 @@ function hex2rgb(hex) {
   }
   return null;
 }
-function markerRadius(radiusValue,map) {
-  //return 100;
-  // Standard radiusValue = 1
-  let mapZoom = map.getZoom();
-  let smallerWhenClose = 30;
-  if (mapZoom >= 5) { smallerWhenClose = 20};
-  if (mapZoom >= 8) { smallerWhenClose = 15};
-  if (mapZoom >= 9) { smallerWhenClose = 10};
-  if (mapZoom >= 10) { smallerWhenClose = 4};
-  if (mapZoom >= 11) { smallerWhenClose = 1.8};
-  if (mapZoom >= 12) { smallerWhenClose = 1.4};
-  if (mapZoom >= 13) { smallerWhenClose = 1};
-  if (mapZoom >= 14) { smallerWhenClose = .8};
-  if (mapZoom >= 15) { smallerWhenClose = .4};
-  if (mapZoom >= 17) { smallerWhenClose = .3};
-  if (mapZoom >= 18) { smallerWhenClose = .2};
-  if (mapZoom >= 20) { smallerWhenClose = .1};
-  let radiusOut = (radiusValue * 1000) / mapZoom * smallerWhenClose;
-
-  //console.log("mapZoom:" + mapZoom + " radiusValu:" + radiusValue + " radiusOut:" + radiusOut);
-  return radiusOut;
-}
 function addIcons(dp,map,map2) {
   var circle,circle2;
   var iconColor, iconColorRGB, iconName;
@@ -462,7 +440,15 @@ function addIcons(dp,map,map2) {
         } else {
           // If this line returns an error, try setting dp1.latColumn and dp1.latColumn to the names of your latitude and longitude columns.
           circle = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group); // Works, but not in Drupal site.
-          circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group2);
+          //circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(dp.group2);
+
+          // Display a small circle on small side map2
+          circle2 = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
+                color: colorScale(element[dp.valueColumn]),
+                fillColor: colorScale(element[dp.valueColumn]),
+                fillOpacity: 1,
+                radius: markerRadius(1,map2) // was 50.  Aiming for 1 to 10
+            }).addTo(dp.group2);
         }
     } else {
       circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
@@ -557,20 +543,47 @@ function addIcons(dp,map,map2) {
     */
 
   });
-  
+
+  // Also see community-forecasting/map/leaflet/index.html for sample of svg layer that resizes with map
   map.on('zoomend', function() { // zoomend
-    //alert('zoomed')
     //L.layerGroup().eachLayer(function (marker) {
     dp.group.eachLayer(function (marker) { // This hits every point individually. A CSS change might be less script processing intensive
       //console.log('zoom ' + map.getZoom());
       if (marker.setRadius) {
+        // Only reached when circles are used instead of map points.
         marker.setRadius(markerRadius(1,map));
       }
     });
   });
-  
+  map2.on('zoomend', function() { // zoomend
+    // Resize the circle to avoid large circles on close-ups
+    dp.group2.eachLayer(function (marker) { // This hits every point individually. A CSS change might be less script processing intensive
+      //console.log('zoom ' + map.getZoom());
+      if (marker.setRadius) {
+        marker.setRadius(markerRadius(1,map2));
+      }
+    });
+    $(".leaflet-interactive").show();
+  });
+  map2.on('zoom', function() {
+    // Hide the circles so they don't fill screen. Set small to hide.
+    $(".leaflet-interactive").hide();
+  });
+
   $('.detail').click(
     function() {
+
+      // Reduce the size of all circles - to do: when zoom is going in 
+      /* No effect
+      dp.group2.eachLayer(function (marker) { // This hits every point individually. A CSS change might be less script processing intensive
+        //console.log('zoom ' + map.getZoom());
+        if (marker.setRadius) {
+          console.log("marker.setRadius" + markerRadiusSmall(1,map2));
+          marker.setRadius(markerRadiusSmall(1,map2));
+        }
+      });
+      */
+
       $('.detail').css("border","none");
       console.log("detail click");
       $('#sidemapName').text($(this).attr("name"));
@@ -578,7 +591,9 @@ function addIcons(dp,map,map2) {
       $(this).css("padding","15px");
 
       $("#sidemapCard").show(); // map2
+
       popMapPoint(dp, map2, $(this).attr("latitude"), $(this).attr("longitude"));
+
       window.scrollTo({
         top: $("#sidemapCard").offset().top - 140,
         left: 0
@@ -605,6 +620,31 @@ function addIcons(dp,map,map2) {
 
 }
 
+function markerRadiusSmall(radiusValue,map) {
+  return .00001;
+}
+function markerRadius(radiusValue,map) {
+  //return 100;
+  // Standard radiusValue = 1
+  let mapZoom = map.getZoom();
+  let smallerWhenClose = 30;
+  if (mapZoom >= 5) { smallerWhenClose = 20};
+  if (mapZoom >= 8) { smallerWhenClose = 15};
+  if (mapZoom >= 9) { smallerWhenClose = 10};
+  if (mapZoom >= 10) { smallerWhenClose = 4};
+  if (mapZoom >= 11) { smallerWhenClose = 1.8};
+  if (mapZoom >= 12) { smallerWhenClose = 1.4};
+  if (mapZoom >= 13) { smallerWhenClose = 1};
+  if (mapZoom >= 14) { smallerWhenClose = .8};
+  if (mapZoom >= 15) { smallerWhenClose = .4};
+  if (mapZoom >= 17) { smallerWhenClose = .3};
+  if (mapZoom >= 18) { smallerWhenClose = .2};
+  if (mapZoom >= 20) { smallerWhenClose = .1};
+  let radiusOut = (radiusValue * 1000) / mapZoom * smallerWhenClose;
+
+  //console.log("mapZoom:" + mapZoom + " radiusValu:" + radiusValue + " radiusOut:" + radiusOut);
+  return radiusOut;
+}
 
 // MAP 1
 // var map1 = {};
@@ -1391,7 +1431,9 @@ function popMapPoint(dp, map, latitude, longitude) {
 
   // Attach the icon to the marker and add to the map
   //dp.group2 = 
-  L.marker([latitude,longitude], {icon: busIcon}).addTo(map)
+
+  // To do: Make this point clickable. Associate popup somehow.
+  //L.marker([latitude,longitude], {icon: busIcon}).addTo(map)
 
 
 

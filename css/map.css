@@ -56,8 +56,8 @@
   */
 
 
-  .leaflet-popup {
-    bottom: 17px !important; 
+  #map1 .leaflet-popup {
+    bottom: 17px !important; /* Apply when map points used for "google" material icons */
     /* Need to move map down more when popup is near top.  Default is -7px. */
   }
   #floatingButtons {
