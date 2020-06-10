@@ -257,12 +257,6 @@ b {
 .showMobile { /* For delayed css load */
   displayX:none;
 }
-#sidecolumnContent {
-  position: relative !important;
-}
-#logoholderside {
-  display:none;
-}
 #allLegends {
   color:#fff !important; 
 }

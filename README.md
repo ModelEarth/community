@@ -49,7 +49,6 @@ Teams will collaborate on integrated services using:
 <b>Detached Frontends</b>
 - Vanilla JS and JQuery in the current [community repo](start)
 - [Real World](https://neighborhood.org/realworld) React / Redux  
-- [Real World](https://neighborhood.org/realworld) Vue -   
 - Other Detached Frontends (to be hosted under one domain) - Each should have an index.html entry point in the root of its repo.  
 
 <b>Content Backends</b>

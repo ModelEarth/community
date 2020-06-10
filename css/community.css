@@ -211,7 +211,16 @@ hr {
     padding-right: 20px;
   }
 }
-
+#sidecolumnContent {
+  positionX: relative !important;
+  position: fixed;
+}
+#logoholderside {
+  display:none;
+}
+.topLinks a {
+  white-space: nowrap;
+}
 .rightside, .floatright {
   float:right;
   max-width:400px;
