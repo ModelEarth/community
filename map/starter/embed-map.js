@@ -28,7 +28,7 @@ strVar += "    <\/div>";
 strVar += "";
 strVar += "    <div id=\"activeLayer\" style=\"display: none\"><\/div>";
 strVar += "";
-strVar += "    <div style=\"display:none;\" class=\"filterField local mock-up suppliers\">";
+strVar += "    <div style=\"display:none;\" class=\"filterField mock-up suppliers\">";
 strVar += "      <div id=\"catSearchHolder\">";
 strVar += "        <div class=\"filterLabel filterLabelMain\">Supply Categories<!--Goods & Services--><\/div>";
 strVar += "";
@@ -1143,23 +1143,12 @@ strVar += "<!-- End HTML -->";
 
 
 
-
-strVar += "<style>";
-strVar += "  #legendHolder {";
-strVar += "    min-width: 270px;";
-strVar += "  }";
-strVar += "<\/style>";
-
+// STYLE OVERRIDES
 strVar += "<style>";
 strVar += "#legendHolder {min-width: 270px;}";
-//strVar += "#mapHolder {display:none !important}";
-//strVar += "#hublist{width:100% !important}";
+strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
 strVar += "<\/style>";
-
-
-
-
-// Hide until
+// Hidden until search-filters.css loads
 document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVar + "<\/div> ");
 
 
