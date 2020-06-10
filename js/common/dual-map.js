@@ -931,8 +931,6 @@ function loadMap1(dp) { // Also called by search-filters.js
       });
   }
 
-  //$("#detaillist").text(""); // Clear prior results
-
   // Return to top for mobile users on search.
   if (document.body.clientWidth <= 500) {
     window.scrollTo({
@@ -1007,6 +1005,7 @@ function showList(dp,map) {
   }
   var data_out = []; // An array of objects
 
+  $("#detaillist").text(""); // Clear prior results
 
   dp.data.forEach(function(elementRaw) {
     count++;
