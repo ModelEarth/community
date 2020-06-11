@@ -1331,20 +1331,23 @@ function lazyLoadFiles() {
   loadScript(root + '/community/js/common/common.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
   	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
     	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
-  			loadSearchFilters(); // Uses dual_map library for community_root
+  			loadSearchFilters(1); // Uses dual_map library for community_root
   		});
     });	
   });
 
-	function loadSearchFilters() {
-		if (typeof customD3loaded !== 'undefined') {
+	function loadSearchFilters(count) {
+		if (typeof customD3loaded !== 'undefined' && typeof dual_map !== 'undefined') {
 			loadScript(root + '/community/js/common/search-filters.js', function(results) {});
-		} else {
+		} else if (count<100) { // Wait a milisecond and try again
 			setTimeout( function() {
 	   			console.log("try loadSearchFilters again")
-				loadSearchFilters();
+				loadSearchFilters(count++);
 	   		}, 10 );
+		} else {
+			console.log("ERROR: loadSearchFilters exceeded 100 attempts.");
 		}
+
 	}  	
 	includeCSS(root + '/community/css/community.css',root);
 	includeCSS(root + '/community/css/search-filters.css',root);
