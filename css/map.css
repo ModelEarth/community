@@ -257,6 +257,22 @@ b {
 .showMobile { /* For delayed css load */
   displayX:none;
 }
+label { /* override Drupal */
+    /* font-size: 18px; */
+    /* font-size: 1.8rem; */
+    font-size: inherit;
+    /* display: inline-block; */
+    display: inline;
+    /* color: #333; */
+    color: inherit;
+    /* font-family: NunitoSans-Bold,sans-serif; */
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 400;
+    /* margin: 0 0 .7rem; */
+    /* padding-right: 4px; */
+    vertical-align: top;
+}
 #allLegends {
   color:#fff !important; 
 }
