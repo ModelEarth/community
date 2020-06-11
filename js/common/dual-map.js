@@ -226,7 +226,9 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
 
       // Neigher map.whenReady or map.on('load') seems to require SetView()
       if (document.body.clientWidth > 500) { // Since map tiles do not fully load when below list. Could use a .5 sec timeout perhaps.
-        //$("#sidemapCard").hide(); // Hide after size is available for tiles. Occurs too soon.
+        setTimeout( function() {
+          $("#sidemapCard").hide(); // Hide after size is available for tiles.
+        }, 20 );
       }
   })
   //.catch(function(error){ 
@@ -574,8 +576,7 @@ function addIcons(dp,map,map2) {
   $('.detail').click(
     function() {
 
-      // Avoiding so the disclaimer below map is visible. Might display map under listing.
-      //$("#sidemapCard").show(); // map2 - show first to maximize time tiles have to see full size of map div.
+      $("#sidemapCard").show(); // map2 - show first to maximize time tiles have to see full size of map div.
 
       // Reduce the size of all circles - to do: when zoom is going in 
       /* No effect
