@@ -885,7 +885,7 @@ $(document).ready(function () {
   }
 
 	$('.sendfeedback').click(function(event) {
-	  window.location = dual_map.community_root() + "resources/input?showheader=" + param["showheader"];
+	  window.open(dual_map.absolute_root() + "resources/input/",'_blank');
 	  event.stopPropagation();
 	});
 	$('.addlisting').click(function(event) {
