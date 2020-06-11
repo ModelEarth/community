@@ -752,7 +752,7 @@ strVar += "    <\/div>";
 strVar += "  <\/div>";
 strVar += "<\/div>";
 strVar += "";
-strVar += "<div id=\"list_main\" style=\"overflow:auto;\">";
+strVar += "<div id=\"list_main\" style=\"overflow:auto;background: #fff;\">";
 strVar += "";
 strVar += "";
 strVar += "<!-- buttons -->";
