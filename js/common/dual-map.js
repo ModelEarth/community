@@ -574,7 +574,8 @@ function addIcons(dp,map,map2) {
   $('.detail').click(
     function() {
 
-      $("#sidemapCard").show(); // map2 - show first to maximize time tiles have to see full size of map div.
+      // Avoiding so the disclaimer below map is visible. Might display map under listing.
+      //$("#sidemapCard").show(); // map2 - show first to maximize time tiles have to see full size of map div.
 
       // Reduce the size of all circles - to do: when zoom is going in 
       /* No effect
