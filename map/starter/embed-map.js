@@ -17,7 +17,7 @@ strVar += "#legendHolder {min-width: 270px;}";
 strVar += ".component--custom_markup > .content {max-width:100%}"; // Drupal container
 strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
 strVar += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
-strVar += "h1 {font-size:42px;margin-top:20px}"; // Larger header for Drupal
+strVar += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
 strVar += "<\/style>";
 
 // Omit var strVar=""; here
