@@ -14,7 +14,7 @@ var strVar="";
 // STYLE OVERRIDES
 strVar += "<style>";
 strVar += "#legendHolder {min-width: 270px;}";
-strVar += ".component--custom_markup .content {max-width:100%}"; // Drupal container
+strVar += ".component--custom_markup > .content {max-width:100%}"; // Drupal container
 strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
 strVar += "<\/style>";
 
