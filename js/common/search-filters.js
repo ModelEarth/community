@@ -37,13 +37,6 @@ function populateFieldsFromHash() {
 
 $(document).ready(function () {
 
-
-	window.scrollTo({
-	  top: 100,
-	  left: 0,
-	  behavior: 'smooth'
-	});
-
 	//loadMarkupPage("intro.md", "introDiv", "_parent");
 	if (! ('webkitSpeechRecognition' in window) ) {
 		$(".si-btn").hide();
