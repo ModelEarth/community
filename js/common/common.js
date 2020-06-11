@@ -1,6 +1,8 @@
 // Updates originate in community/js/common/common.js
 // To do: dynamically add target _parent to external link when in an iFrame, and no existing target
 
+// common.js does NOT use jquery, so it can be used before jquery loads.
+
 // USE params (plural) to isolate within functions when creating embedable widgets.
 // USE param for any html page using common.js.
 var param = loadParams(location.search,location.hash);
@@ -155,18 +157,7 @@ function consoleLog(text,value) {
 
   console.log(text, value);
 }
-$(document).ready(function() {
-  if(location.host.indexOf('localhost') >= 0 || param["view"] == "local") {
-    var div = $("<div />", {
-        html: '<style>.local{display:inline-block !important}.localonly{display:block !important}</style>'
-      }).appendTo("body");
-  } else {
-    // Inject style rule
-      var div = $("<div />", {
-        html: '<style>.local{display:none}.localonly{display:none}</style>'
-      }).appendTo("body");
-  }
-});
+
 // Convert json to html
 var selected_array=[];
 var omit_array=[];

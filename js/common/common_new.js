@@ -1,3 +1,5 @@
+// NOT USED - DELETE
+
 // Updates originate in community/js/common/common.js
 // To do: dynamically add target _parent to external link when in an iFrame, and no existing target
 
