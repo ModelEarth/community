@@ -421,7 +421,7 @@ function addIcons(dp,map,map2) {
 
     iconColorRGB = hex2rgb(iconColor);
     iconName = dp.iconName;
-    var busIcon = L.IconMaterial.icon({
+    var busIcon = L.IconMaterial.icon({ /* Cannot read property 'icon' of undefined */
       icon: iconName,            // Name of Material icon - star
       iconColor: '#fff',         // Material icon color (could be rgba, hex, html name...)
       markerColor: 'rgba(' + iconColorRGB + ',0.7)',  // Marker fill color
