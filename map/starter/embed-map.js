@@ -1285,21 +1285,26 @@ function jsLoaded(root) {
 		//loadScript(root + '/community/js/common/navigation.js');
 	}
 }
-function leafletLoaded(root) {
-  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
-	loadScript(root + '/community/js/leaflet/leaflet.icon-material.js');
-
-	loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
-		loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
-
-			loadScript(root + '/community/js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
-				//loadScript(root + '/community/js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
-		
-		  			dualmapLoaded(param, root);
-		  		
-		  	});
+function leafletLoaded(root, count) {
+	if (typeof L !== 'undefined') {
+	  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
+		loadScript(root + '/community/js/leaflet/leaflet.icon-material.js');
+		loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
+			loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
+				loadScript(root + '/community/js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
+					//loadScript(root + '/community/js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
+			  		dualmapLoaded(param, root, 1);
+			  	});
+			});
 		});
-	});
+	} else if (count<100) {
+		setTimeout( function() {
+   			console.log("try leafletLoaded again");
+			leafletLoaded(root, count++);
+   		}, 10 );
+	} else {
+		console.log("ERROR: leafletLoaded exceeded 100 attempts.");
+	}
 }
 function d3Loaded(root) {
 	// To big and d3-legend.js file is not available in embed, despite 
@@ -1356,13 +1361,13 @@ function lazyLoadFiles() {
 
 	// Resides AFTER css/leaflet/leaflet.css
 	loadScript(root + '/community/js/leaflet/leaflet.js', function(results) {
-		leafletLoaded(root);
+		leafletLoaded(root,1);
 	});
 }
 
 lazyLoadFiles();
 
-function dualmapLoaded(param, root) {
+function dualmapLoaded(param, root, count) {
 	if (typeof dual_map !== 'undefined') {
 		dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 
@@ -1381,11 +1386,13 @@ function dualmapLoaded(param, root) {
 				loadMap1();
 			}
 		});
-	} else { // Wait a milisecond and try again
+	} else if (count<100) { // Wait a milisecond and try again
 		setTimeout( function() {
    			console.log("try dualmapLoaded again")
-			dualmapLoaded(param, root);
+			dualmapLoaded(param, root, count++);
    		}, 10 );
+	} else {
+		console.log("ERROR: dualmapLoaded exceeded 100 attempts.");
 	}
 }
 
