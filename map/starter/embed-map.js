@@ -9,8 +9,17 @@
 // Add \r to end of aside rows manually.
 
 
-
 var strVar="";
+
+// STYLE OVERRIDES
+strVar += "<style>";
+strVar += "#legendHolder {min-width: 270px;}";
+strVar += ".component .content {max-width:100%}"; // Drupal container
+strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
+strVar += "<\/style>";
+
+// Omit var strVar=""; here
+
 strVar += "<!-- Start HTML -->";
 strVar += "";
 strVar += "  <style>";
@@ -1156,14 +1165,6 @@ strVar += "<!-- End HTML -->";
 
 
 
-
-
-// STYLE OVERRIDES
-strVar += "<style>";
-strVar += "#legendHolder {min-width: 270px;}";
-strVar += ".component .content {max-width:100%}"; // Drupal container
-strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
-strVar += "<\/style>";
 // Hidden until search-filters.css loads
 document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVar + "<\/div> ");
 
