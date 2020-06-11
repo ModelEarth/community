@@ -1324,7 +1324,7 @@ function lazyLoadFiles() {
   loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
   	loadScript(root + '/community/js/common/dual-map.js', function(results) {});
   });
-  loadScript(root + '/community/js/common/common_new.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
+  loadScript(root + '/community/js/common/common.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
   	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
     	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
   			loadSearchFilters(); // Uses dual_map library for community_root
