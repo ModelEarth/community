@@ -8,6 +8,28 @@ function populateFieldsFromHash() {
 	        return $(this).text() === catString
 	    }).addClass('catListSelected');
 	}
+	/*
+	// This occurs in showList when checkboxes are added.
+	if (param["search"]) {
+		//$(".selected_col").prop('checked', false);
+		alert("deselect")
+		let search = param["search"].split(",");
+		for(var i = 0 ; i < search.length ; i++) {
+			if($("#" + search[i]).length) {
+				alert(search[i]);
+				//$("#" + search[i]).prop('checked', true);
+				$("#items").prop('checked', true);
+			}
+		}
+	}
+	*/
+	if (param["counties"]) {
+		let counties = param["counties"].split(",");
+		for(var i = 0 ; i < counties.length ; i++) {
+			// Not yet implemented
+			$("#county-" + counties[i]).prop('checked', true);
+		}
+	}
 	$("#productCodes").val(param["hs"]);
 }
 // var param = loadParams(location.search,location.hash); // This occurs in common.js
@@ -226,7 +248,9 @@ $(document).ready(function () {
 			$('#catListHolderShow').text('Product Categories');
 		}
 		let searchQuery = $('#keywordsTB').val();
-		updateHash({"q":searchQuery});
+		let search = $('.selected_col:checked').map(function() {return this.id;}).get().join(',');
+		// To do: set search to empty array if all search boxes are checked.
+		updateHash({"q":searchQuery,"search":search});
 		loadMap1();
 	    event.stopPropagation();
    	});
@@ -290,9 +314,11 @@ $(document).ready(function () {
    		$("#eTable_alert").hide();
    		$("#mainframe").hide();
    		$("input[name='hs']").prop('checked',false);
+   		$("input[name='in']").prop('checked',true);
    	}
    	$("#clearButton").click(function() {
    		clearFields();
+   		clearHash("cat,search,q");
    		//history.pushState("", document.title, window.location.pathname);
    		//loadHtmlTable(true); // New list
    		loadMap1();

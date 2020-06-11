@@ -88,7 +88,7 @@ function updateHash(addToHash) {
         //  }
         //}
 
-        var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+    var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
 
         // findCompany
 
@@ -116,7 +116,25 @@ function updateHash(addToHash) {
     window.history.pushState("", searchTitle, pathname + queryString);
     //refreshMain();
 }
-
+function clearHash(toClear) {
+  let hash = getHash(); // Include all existing
+  let clearArray = toClear.split(/\s*,\s*/);
+  for(var i = 0; i < clearArray.length; i++) {
+    delete hash[clearArray[i]]; 
+  }
+  var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+  var pathname = window.location.pathname;
+  var queryString = "";
+  if (window.location.search) { // Existing, for parameters that are retained as hash changes.
+    queryString += window.location.search; // Contains question mark (?)
+  }
+  let searchTitle = 'Page';
+  if (hashString) { // Remove the hash here if adding to other 
+    queryString += "#" + hashString;
+    searchTitle = 'Page ' + hashString;
+  }
+  window.history.pushState("", searchTitle, pathname + queryString);
+}
 // Serialize a key/value object.
 //var params = { width:1680, height:1050 };
 //var str = jQuery.param( params );

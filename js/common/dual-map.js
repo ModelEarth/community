@@ -107,7 +107,7 @@ function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
       map2 = L.map(whichmap2, {
         center: mapCenter,
         scrollWheelZoom: false,
-        zoom: dp.zoom,
+        zoom: 5,
         dragging: !L.Browser.mobile, 
         tap: !L.Browser.mobile
       });
@@ -646,7 +646,7 @@ function markerRadius(radiusValue,map) {
   if (mapZoom >= 17) { smallerWhenClose = .3};
   if (mapZoom >= 18) { smallerWhenClose = .2};
   if (mapZoom >= 20) { smallerWhenClose = .1};
-  let radiusOut = (radiusValue * 1000) / mapZoom * smallerWhenClose;
+  let radiusOut = (radiusValue * 2000) / mapZoom * smallerWhenClose;
 
   //console.log("mapZoom:" + mapZoom + " radiusValu:" + radiusValue + " radiusOut:" + radiusOut);
   return radiusOut;
@@ -966,9 +966,23 @@ function showList(dp,map) {
 
   // Add checkboxes
   if (dp.search && $("#activeLayer").text() != dp.dataTitle) { // Only set when active layer changes, otherwise selection overwritten on change.
+    
+    let search = [];
+    if (param["search"]) {
+      search = param["search"].split(",");
+    }
+
     let checkCols = "";
+    let checked = "";
     $.each(dp.search, function( key, value ) {
-      checkCols += '<div><input type="checkbox" class="selected_col" name="in" id="' + value + '" checked><label for="' + value + '" class="filterCheckboxTitle"> ' + key + '</label></div>';
+      checked = "";
+      if (search.length == 0) {
+        checked = "checked"; // No hash value limiting to specific columns.
+      } else if(jQuery.inArray(value, search) !== -1) {
+        checked = "checked";
+      }
+
+      checkCols += '<div><input type="checkbox" class="selected_col" name="in" id="' + value + '" ' + checked + '><label for="' + value + '" class="filterCheckboxTitle"> ' + key + '</label></div>';
     });
     $("#selected_col_checkboxes").html(checkCols);
 
@@ -976,10 +990,18 @@ function showList(dp,map) {
      
     $('.selected_col[type=checkbox]').change(function() {
         //$('#topPanel').hide();
-        let cols = $('.selected_col:checked').map(function() {return this.id;}).get().join(','); 
-        //alert(cols)
-        updateHash({"cols":cols});
-        loadMap1();
+        let search = $('.selected_col:checked').map(function() {return this.id;}).get().join(','); 
+        //alert(search)
+        /* delete
+        var hash = getHash(); 
+        if (hash["q"]) {
+          alert(hash["q"])
+        }
+        */
+        if ($("#keywordsTB").val()) {
+          updateHash({"search":search});
+          loadMap1();
+        }
         event.stopPropagation();
     });
 
