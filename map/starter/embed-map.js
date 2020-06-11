@@ -1288,7 +1288,9 @@ function jsLoaded(root) {
 	}
 }
 function leafletLoaded(root, count) {
+	console.log("From leafletLoaded typeof L: " + typeof L);
 	if (typeof L !== 'undefined') {
+		console.log(L);
 	  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
 		loadScript(root + '/community/js/leaflet/leaflet.icon-material.js');
 		loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
