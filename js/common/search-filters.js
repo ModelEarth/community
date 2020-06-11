@@ -442,7 +442,8 @@ $(document).ready(function () {
 	    //});
 	}
 	
-	loadHtmlTable(true);
+	// From Export Directory - Remove this function below
+	//loadHtmlTable(true);
 
 	$(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
 		console.log('hashchange');
