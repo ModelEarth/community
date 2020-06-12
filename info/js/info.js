@@ -1,13 +1,13 @@
 
 
 //function displayInfo(state,county,zip) {
-//	let output = state + " " + county + " " + zip;
-//	$("#info").html(output);
+//  let output = state + " " + county + " " + zip;
+//  $("#info").html(output);
 //}
 
 var promises = [
 
-    d3.tsv("data/industry_byCounty_byType_20200425.tsv"),
+    d3.tsv("data/c2.tsv"),
     d3.csv("data/industry_ID_list.csv")
  
 ]
@@ -19,37 +19,91 @@ function parseSubsetValues(entry, subsetKeys, randOffset) {
     subsets = {}
     subsetKeys.forEach(d=>{
         if (randOffset==true) {
-            subsets[d] = +entry[d] + getRndPercentError() * +entry[d]
+            subsets[d] = entry[d] + getRndPercentError() * +entry[d]
         } else {
-            subsets[d] = +entry[d]
+            subsets[d] = entry[d]
         }
     })
     return subsets
 }
 
 function ready(values) {
-	industryData = {
-	        'ActualRate': formatIndustryData(values[0]),
-	        // 'DeltaRate': formatIndustryData(values[3])
-	    }
-	industryNames = {}
+    //console.log(values[0])
+    dataObject={}
+    industryData = {
+            'ActualRate': formatIndustryData(values[0]),
+            // 'DeltaRate': formatIndustryData(values[3])
+        }
+    dataObject.industryData=industryData;  
+    industryNames = {}
     values[1].forEach(function(item){
         industryNames[+item.relevant_naics] = item.industry_detail
     })
-    //console.log(industryNames)
+    dataObject.industryNames=industryNames;
+    //console.log(industryData)
+    //countyFIPS = 4
+    /////////////////////////////////////////////////////////////////////////////////////////
+    /*let dropdown = $('#state-x');
+
+    dropdown.empty();
+
+    dropdown.append('<option selected="true" disabled>Choose State</option>');
+    dropdown.prop('selectedIndex', 0);
+    //dropdown.append('<option selected="true" disabled>Select Indicator</option>');
+    //dropdown.prop('selectedIndex', 1);
+
+    const url = './data/states.json';
+
+    // Populate dropdown with list of provinces
+    $.getJSON(url, function (data) {
+      $.each(data, function (key, entry) {
+        dropdown.append($('<option></option>').attr('value', entry.FIPS).text(entry.Name));
+        })
+    });*/
+    //$(document).ready(function(){
+    $("#state").change(drop_down_list);
+    //});
+
+    $(window).load(drop_down_list);
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+
     countyFIPS = 13121
-	//a = topRatesInFips(industryData, industryNames, String(countyFIPS), 5, "payann")
-	a = topRatesInFips(industryData, industryNames, String(countyFIPS), 5, "payann")
-	console.log(a)
+    //a = topRatesInFips(industryData, industryNames, String(countyFIPS), 5, "payann")
+    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(countyFIPS), 10, "payann")
+    console.log(a)
 }
 
+// Drop down code from: https://www.bitrepository.com/dynamic-dependant-dropdown-list-us-states-counties.html
+function drop_down_list(){
+    var state = $('#state').val();
+
+    if(state == 'AK' || state == 'DC') // Alaska and District Columbia have no counties
+    {
+    $('#county_drop_down').hide();
+    $('#no_county_drop_down').show();
+    }
+    else
+    {
+    $('#loading_county_drop_down').show(); // Show the Loading...
+    
+    $('#county_drop_down').hide(); // Hide the drop down
+    $('#no_county_drop_down').hide(); // Hide the "no counties" message (if it's the case)
+
+    $.getScript("js/states/"+ state.toLowerCase() +".js", function(){
+
+    populate(document.form.county);
+
+    $('#loading_county_drop_down').hide(); // Hide the Loading...
+    $('#county_drop_down').show(); // Show the drop down
+    });
+}
+}
 function formatIndustryData(rawData) {
     // var industryByType = d3.map()
     var industryByType = {}
 
-    subsetKeys = ['emp', 'payann', 'estab', 'ACID', 'ENRG', 'ETOX', 'EUTR', 'FOOD', 'GCC', 'HAPS', 'HAZW', 'HC',
-    'HNC', 'HRSP', 'HTOX', 'JOBS', 'LAND', 'METL', 'MINE', 'MSW', 'NREN',
-    'OZON', 'PEST', 'REN', 'SMOG', 'VADD', 'WATR']
+    subsetKeys = ['emp', 'payann', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY']
 
     for (var i = 1; i<rawData.length; i++){
 
@@ -136,3 +190,9 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value)
 }
+
+
+
+
+
+
