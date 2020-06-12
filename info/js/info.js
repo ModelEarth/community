@@ -14,7 +14,44 @@ var promises = [
 
 Promise.all(promises).then(ready)
 
+function ready(values) {
+    dataObject={}
+    industryData = {
+            'ActualRate': formatIndustryData(values[0]),
+    }
+    dataObject.industryData=industryData;  
+    industryNames = {}
+    values[1].forEach(function(item){
+        industryNames[+item.relevant_naics] = item.industry_detail
+    })
+    dataObject.industryNames=industryNames;
 
+
+    //dropdown population code
+    $("#state").change(drop_down_list);
+    $(window).load(drop_down_list);
+
+
+    //code for what happens when you choose the state and county from drop down
+    d3.selectAll(".picklist").on("change",function(){
+        d3.csv("data/county_ID_list.csv").then( function(consdata) {
+            var filteredData = consdata.filter(function(d) {
+                if(( d["abvr"] == d3.select("#state").node().value) && (d["county"]==d3.select("#county").node().value ))
+                {   a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(d["id"]), 10, "payann")
+                    console.log(a)
+                    //console.log(d["id"])
+                    return a;
+                } 
+
+            })
+        })
+    });
+
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Functions:
 function parseSubsetValues(entry, subsetKeys, randOffset) {
     subsets = {}
     subsetKeys.forEach(d=>{
@@ -27,52 +64,6 @@ function parseSubsetValues(entry, subsetKeys, randOffset) {
     return subsets
 }
 
-function ready(values) {
-    //console.log(values[0])
-    dataObject={}
-    industryData = {
-            'ActualRate': formatIndustryData(values[0]),
-            // 'DeltaRate': formatIndustryData(values[3])
-        }
-    dataObject.industryData=industryData;  
-    industryNames = {}
-    values[1].forEach(function(item){
-        industryNames[+item.relevant_naics] = item.industry_detail
-    })
-    dataObject.industryNames=industryNames;
-    //console.log(industryData)
-    //countyFIPS = 4
-
-    //dropdown code
-    $("#state").change(drop_down_list);
-
-    $(window).load(drop_down_list);
-    d3.selectAll(".picklist").on("change",function(){
-    //updateChart(d3.select("#state").node().value,
-    //          d3.select("#county").node().value,
-    //          d3.select("#graph-picklist-z").node().value);
-        d3.csv("data/county_ID_list.csv").then( function(consdata) {
-        var filteredData = consdata.filter(function(d) 
-        { 
-            //console.log(d3.select("#state").node().value)
-            if(( d["Postal Code"] == d3.select("#state").node().value) && (d["county"]==d3.select("#county").node().value ))
-            {   a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(d["id"]), 10, "payann")
-                console.log(a)
-                //console.log(d["id"])
-                return a;
-            } 
-
-        })
-
-        })
-    });
-    
-
-    //countyFIPS = 13121
-    //a = topRatesInFips(industryData, industryNames, String(countyFIPS), 5, "payann")
-    //a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(countyFIPS), 10, "payann")
-    //console.log(a)
-}
 
 // Drop down code from: https://www.bitrepository.com/dynamic-dependant-dropdown-list-us-states-counties.html
 function drop_down_list(){
@@ -85,18 +76,18 @@ function drop_down_list(){
     }
     else
     {
-    $('#loading_county_drop_down').show(); // Show the Loading...
-    
-    $('#county_drop_down').hide(); // Hide the drop down
-    $('#no_county_drop_down').hide(); // Hide the "no counties" message (if it's the case)
+        $('#loading_county_drop_down').show(); // Show the Loading...
+        
+        $('#county_drop_down').hide(); // Hide the drop down
+        $('#no_county_drop_down').hide(); // Hide the "no counties" message (if it's the case)
 
-    $.getScript("js/states/"+ state.toLowerCase() +".js", function(){
+        $.getScript("js/states/"+ state.toLowerCase() +".js", function(){
 
-    populate(document.form.county);
+            populate(document.form.county);
 
-    $('#loading_county_drop_down').hide(); // Hide the Loading...
-    $('#county_drop_down').show(); // Show the drop down
-    });
+            $('#loading_county_drop_down').hide(); // Hide the Loading...
+            $('#county_drop_down').show(); // Show the drop down
+        });
     }
 }
 
@@ -121,6 +112,7 @@ function formatIndustryData(rawData) {
     }
     return industryByType
 }
+
 
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
@@ -188,6 +180,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     return top_data_list
 }
+
 
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value)
