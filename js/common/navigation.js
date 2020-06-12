@@ -18,6 +18,19 @@ if (window.location.protocol != 'https:' && location.host.indexOf('localhost') <
 var imageUrl, imageUrlSide;
 $(document).ready(function(){
 
+	// Might move back to common.js after removing use of jquery
+	  if(location.host.indexOf('localhost') >= 0 || param["view"] == "local") {
+	    var div = $("<div />", {
+	        html: '<style>.local{display:inline-block !important}.localonly{display:block !important}</style>'
+	      }).appendTo("body");
+	  } else {
+	    // Inject style rule
+	      var div = $("<div />", {
+	        html: '<style>.local{display:none}.localonly{display:none}</style>'
+	      }).appendTo("body");
+	  }
+
+
 	// Get the levels below root
  	var foldercount = (location.pathname.split('/').length - 1); // - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0) // Removed because ending with slash or filename does not effect levels. Increased -1 to -2.
  	foldercount = foldercount - 2;

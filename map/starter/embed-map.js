@@ -6,111 +6,40 @@
 // Final version resides in embed-map.js
 */
 
-
 // Add \r to end of aside rows manually.
-/*
+
+
 var strVar="";
-strVar += "<!-- Top Map -->";
+
+// STYLE OVERRIDES
 strVar += "<style>";
-strVar += "  #allLegends {";
-strVar += "    color:#fff !important; ";
-strVar += "  }";
-strVar += "  #allLegends > .label {";
-strVar += "    color:#fff !important; ";
-strVar += "  }";
-strVar += "  #map1 {";
-strVar += "    height:600px;";
-strVar += "  }";
-strVar += "  #hublist-padding {";
-strVar += "    padding-right: 30px;";
-strVar += "  }";
+strVar += "#legendHolder {min-width: 270px;}";
+strVar += ".component--custom_markup > .content {max-width:100%}"; // Drupal container
+strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
+strVar += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
+strVar += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
 strVar += "<\/style>";
-strVar += "";
-strVar += "<div class=\"displayOnload\" style=\"display:none;position:relative;\">";
-strVar += "  <div style=\"display:block;position:relative\" id=\"map1\"><\/div>";
-strVar += "  <div id=\"legendHolder\">";
-strVar += "    <div id=\"allLegends\"><\/div>";
-strVar += "  <\/div>";
-strVar += "<\/div>";
-strVar += "<\/section>";
-strVar += "<div style=\"clear:both\"><\/div>";
-strVar += "<!-- END Top Map -->";
-*/
 
-////document.body.prepend(strVar); // This displayed as HTML tags
-//let div = document.createElement("div");
-//div.innerHTML = strVar;
-//document.body.append(div);
-//strVar = "";
+// Omit var strVar=""; here
 
-// Replace afer updating:
-// Data Driven Decision Making
-// Smart & Sustainable Movement of <span style=\"white-space: nowrap\">Goods &amp; Services</span>
-
-/*
 strVar += "<!-- Start HTML -->";
-strVar += "  <a name=\"gomap\"><\/a>";
-strVar += "  <section id=\"data\" style=\"overflow:auto\">";
-strVar += "    <div class=\"content displayOnload\" style=\"display:none\">";
-strVar += "      <div id=\"flexwrapperX\">";
-strVar += "        ";
-strVar += "        <div id=\"mapHolder\">";
-strVar += "          <div class=\"mapHolderInner\">";
-strVar += "            <div class=\"mapHolderCard card\">";
-strVar += "              <div id=\"sidemapbar\">";
-strVar += "                <div style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
-strVar += "                  ";
-strVar += "                  <div id=\"widgetTitle\">Connected Communities<\/div>";
-strVar += "                <\/div>";
-strVar += "              <\/div>";
 strVar += "";
-strVar += "              <div style=\"clear:both\">  ";
-strVar += "                <div id=\"map2\"><\/div>";
-strVar += "              <\/div>";
-strVar += "";
-strVar += "            <\/div>";
-strVar += "          <\/div>";
-strVar += "        <\/div>";
-strVar += "      ";
-strVar += "        <div id=\"hublist\">";
-strVar += "          <div id=\"hublist-padding\">";
-strVar += "            <h1>Data Driven Decision Making<\/h1>";
-strVar += "            <h2 style=\"font-size: 18px; margin-bottom:0px; font-weight: 600\">Smart & Sustainable Movement of <span style=\"white-space: nowrap\">Goods &amp; Services</span><\/h2><br>";
-strVar += "            ";
-strVar += "              <!--";
-strVar += "              <input type=\"button\" onclick=\"location.href='..\/..\/start\/feed';\" ";
-strVar += "              value=\"Add your data feeds\" style=\"margin-top:20px; padding:10px\" \/>";
-strVar += "              <br><br>";
-strVar += "              -->";
-strVar += "";
-strVar += "            <div id=\"detaillist\"><\/div>";
-strVar += "            <div id=\"narrowlist\" style=\"display:none\"><\/div>";
-strVar += "          <\/div>";
-strVar += "        <\/div>";
-strVar += "";
-strVar += "      <\/div><!-- flexwrapper -->";
-strVar += "    <\/div>  ";
-strVar += "";
-strVar += "  <\/section>";
-strVar += "<!-- End HTML -->";
-*/
-
-
-var strVar="";
-strVar += "<!-- Start HTML -->";
+strVar += "  <style>";
+strVar += "    svg{max-width:none;} \/* Fix for embedding material icon map points in Drupal *\/";
+strVar += "  <\/style>";
 strVar += "";
 strVar += "  <!-- FILTERS -->";
 strVar += "  <!--";
 strVar += "    Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4";
 strVar += "    https:\/\/datascape.github.io\/community\/#columns=population:31;education:50";
 strVar += "  -->";
-strVar += "  <div class=\"filterPanel\" style=\"display:none\">";
+strVar += "  <div class=\"filterPanel\">";
 strVar += "    <div class=\"filterPanel_background\">";
 strVar += "    <\/div>";
 strVar += "";
 strVar += "    <div id=\"activeLayer\" style=\"display: none\"><\/div>";
 strVar += "";
-strVar += "    <div style=\"display:none;\" class=\"filterField local mock-up suppliers\">";
+strVar += "    <div style=\"display:none;\" class=\"filterField mock-up suppliers\">";
 strVar += "      <div id=\"catSearchHolder\">";
 strVar += "        <div class=\"filterLabel filterLabelMain\">Supply Categories<!--Goods & Services--><\/div>";
 strVar += "";
@@ -247,6 +176,17 @@ strVar += "                  <option value=\"city\">Search by City<\/option>";
 strVar += "                  <option value=\"zip\">Search by Zip<\/option>";
 strVar += "                  <option value=\"counties\">Search by County<\/option>";
 strVar += "              <\/select>";
+strVar += "            ";
+strVar += "                <!--";
+strVar += "                Bug: These appear when in embed-map.js";
+strVar += "";
+strVar += "                <div class=\"uparrow uparrow-grey\" style=\"left: 34px;\">";
+strVar += "                <\/div>";
+strVar += "";
+strVar += "                <div class=\"uparrow uparrow-white\" style=\"left: 34px;\">";
+strVar += "                <\/div>";
+strVar += "                -->";
+strVar += "";
 strVar += "                <div class=\"filterBubble\" style=\"pointer-events: auto;\"><!-- Catch click through -->";
 strVar += "                    <input id=\"l\" autocomplete=\"off\" style=\"width:100%;max-width:400px;padding-right:27px;margin-bottom:10px\" class=\"filterClick mobileWide textInput si-input\" type=\"text\" value=\"\" onkeyup=\"return SearchEnter(event);\" \/>";
 strVar += "";
@@ -678,7 +618,7 @@ strVar += "";
 strVar += "  <div class=\"user-5\" style=\"display:none\">";
 strVar += "    <hr>Staff only - ";
 strVar += "    <a href=\"\/maps\/leaflet\/providers\/preview\/\" target=\"basemaps\">View Basemaps<\/a> | ";
-strVar += "    <a href=\"..\/json\/menu.json\">View JSON<\/a><br>";
+strVar += "    <a href=\"\/community\/impact\/json\/menu.json\">View JSON<\/a><br>";
 strVar += "    <div class=\"settingAdminNotes\"><\/div>";
 strVar += "  <\/div>";
 strVar += "";
@@ -814,7 +754,7 @@ strVar += "    <\/div>";
 strVar += "  <\/div>";
 strVar += "<\/div>";
 strVar += "";
-strVar += "<div id=\"list_main\" style=\"overflow:auto;\">";
+strVar += "<div id=\"list_main\" style=\"overflow:auto;background: #fff;\">";
 strVar += "";
 strVar += "";
 strVar += "<!-- buttons -->";
@@ -964,8 +904,8 @@ strVar += "  <div id=\"flexwrapper\">";
 strVar += "    <div id=\"hublist\" style=\"padding-top:20px\">";
 strVar += "      <div id=\"hublist-padding\">";
 strVar += "        ";
-strVar += "        <h1 class=\"listTitle\"><\/h2>";
-strVar += "        <h2 class=\"listSubtitle\"><\/h2>";
+strVar += "        <h1 class=\"listTitle\" style=\"display:none;margin-bottom:12px\"><\/h1>";
+strVar += "        <h2 class=\"listSubtitle\" style=\"display:none\"><\/h2>";
 strVar += "";
 strVar += "        <div style=\"display:none\" class=\"suppliers\">";
 strVar += "          ";
@@ -994,8 +934,9 @@ strVar += "            Georgia businesses are responding to the call for manufac
 strVar += "            distribution of critical supplies via the state's <a href=\"https:\/\/www.georgia.org\/covid19response\">COVID-19 Response Form<\/a>. ";
 strVar += "            -->";
 strVar += "";
+strVar += "            <span style=\"display:none\" class=\"suppliers_pre_message\">";
 strVar += "            <a href=\"https:\/\/www.georgia.org\/covid19suppliersmap\" target=\"covid19suppliersmap\">Learn more<\/a> about our supplier list and map.";
-strVar += "";
+strVar += "            <\/span>";
 strVar += "            <!--";
 strVar += "            To make a listing correction or update, please ";
 strVar += "            <a href=\"https:\/\/www.georgia.org\/covid19response\" style=\"white-space: nowrap;\">submit a new entry<\/a> ";
@@ -1004,9 +945,9 @@ strVar += "            -->";
 strVar += "";
 strVar += "            <span style=\"display:none\" class=\"suppliers_pre_message\">";
 strVar += "            Some of the locations are randomized by a couple miles since they were posted prior to our public listing registration.";
-strVar += "            <\/span>";
-strVar += "";
 strVar += "            <br><br>";
+strVar += "            <\/span>";
+strVar += "            ";
 strVar += "          <\/div>";
 strVar += "        <\/div>";
 strVar += "";
@@ -1085,6 +1026,7 @@ strVar += "        <div id=\"sidemapCard\" class=\"mapHolderCard card\">";
 strVar += "          <div id=\"sidemapbar\" class=\"widgetbar\">";
 strVar += "            <div id=\"sidemapName\" style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
 strVar += "            <\/div>";
+strVar += "            <div id=\"hideSideMap\" class=\"close-X\" style=\"position:absolute;right:0px;top:8px;padding-right:10px;color:#aaa\">&#10005;<\/div>";
 strVar += "          <\/div>";
 strVar += "";
 strVar += "          <div style=\"clear:both\">  ";
@@ -1208,24 +1150,27 @@ strVar += "  <\/div><!-- flexwrapper -->";
 strVar += "<\/div>  ";
 strVar += "";
 strVar += "<\/section>";
+strVar += "<\/div>";
+strVar += "<!-- list_main \/-->";
+strVar += "";
+strVar += "<div id=\"fixedFooter\" class=\"showMobile\">";
+strVar += "  <div>";
+strVar += "    <div class=\"go_list\">Listings<\/div>";
+strVar += "    <div class=\"go_map\">State Map<\/div>";
+strVar += "    <div class=\"go_local\" style=\"display:none\">Local Map<\/div>";
+strVar += "    <div class=\"go_info\" style=\"display:none\">Info<\/div>";
+strVar += "    <div class=\"go_search\">Search<\/div>";
+strVar += "  <\/div>";
+strVar += "<\/div>";
+strVar += "";
 strVar += "<!-- End HTML -->";
 
 
 
-strVar += "<style>";
-strVar += "  #legendHolder {";
-strVar += "    min-width: 270px;";
-strVar += "  }";
-strVar += "<\/style>";
-
-strVar += "<style>";
-strVar += "#legendHolder {min-width: 270px;}";
-//strVar += "#mapHolder {display:none !important}";
-//strVar += "#hublist{width:100% !important}";
-strVar += "  <\/style>";
-
-// Hide until
+// Hidden until search-filters.css loads
 document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVar + "<\/div> ");
+
+
 
 // COMMON
 function loadScript(url, callback)
@@ -1337,104 +1282,124 @@ function mix(incoming, target) { // Combine two objects, priority to incoming. D
 
 // UNIQUE TO PAGE
 function jsLoaded(root) {	
-	
 	if (location.host.indexOf('localhost') >= 0) {
 		// Causing map points to shift right, maybe due to later loading.
-		//loadScript(root + 'js/common/navigation.js');
+		//loadScript(root + '/community/js/common/navigation.js');
 	}
 }
-function leafletLoaded(root) {
-  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early
-	loadScript(root + 'js/leaflet/leaflet.icon-material.js');
-
-	loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
-		loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
-
-			loadScript(root + 'js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
-				//loadScript(root + 'js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
-		
-				// BUG BUG - loading again.  Alternative to settimeout
-				loadScript(root + 'js/common/dual-map.js', function(results) { 
-		  			dualmapLoaded(param);
-		  		});
-		  	});
+function leafletLoaded(root, count) {
+	console.log("From leafletLoaded typeof L: " + typeof L);
+	if (typeof L !== 'undefined') {
+		console.log(L);
+	  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
+		loadScript(root + '/community/js/leaflet/leaflet.icon-material.js');
+		loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
+			loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
+				loadScript(root + '/community/js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
+					//loadScript(root + '/community/js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
+			  		dualmapLoaded(param, root, 1);
+			  	});
+			});
 		});
-	});
+	} else if (count<100) {
+		setTimeout( function() {
+   			console.log("try leafletLoaded again");
+			leafletLoaded(root, count++);
+   		}, 10 );
+	} else {
+		console.log("ERROR: leafletLoaded exceeded 100 attempts.");
+	}
 }
 function d3Loaded(root) {
 	// To big and d3-legend.js file is not available in embed, despite 
-	//loadScript(root + 'js/d3/d3-legend.js');
+	//loadScript(root + '/community/js/d3/d3-legend.js');
 }
 
 function lazyLoadFiles() {
-	let root = location.protocol + '//' + location.host + '/community/';
+	let root = location.protocol + '//' + location.host;
 	if (location.host.indexOf('localhost') < 0) {
-		root = "https://modelearth.github.io/community/";
+		root = "https://modelearth.github.io";
 	}
-  loadScript(root + 'js/jquery/jquery-1.12.4.min.js', function(results) {
+  loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
     jsLoaded(root);
   });
 
   // Load early so available later
-  loadScript(root + 'js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
-  	loadScript(root + 'js/common/dual-map.js', function(results) {});
+  loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
+  	loadScript(root + '/community/js/common/dual-map.js', function(results) {});
   });
-  loadScript(root + 'js/common/common_new.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
-  	loadScript(root + 'js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
-    	
-  		loadSearchFilters();
-  		
+  loadScript(root + '/community/js/common/common.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
+  	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
+    	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
+  			loadSearchFilters(1); // Uses dual_map library for community_root
+  		});
     });	
   });
 
-	function loadSearchFilters() {
-			if (typeof customD3loaded !== 'undefined') {
-			loadScript(root + 'js/common/search-filters.js', function(results) {});
-		} else {
+	function loadSearchFilters(count) {
+		if (typeof customD3loaded !== 'undefined' && typeof dual_map !== 'undefined') {
+			loadScript(root + '/community/js/common/search-filters.js', function(results) {});
+		} else if (count<100) { // Wait a milisecond and try again
 			setTimeout( function() {
 	   			console.log("try loadSearchFilters again")
-				loadSearchFilters();
+				loadSearchFilters(count++);
 	   		}, 10 );
+		} else {
+			console.log("ERROR: loadSearchFilters exceeded 100 attempts.");
 		}
-	}  	
-	includeCSS(root + 'css/community.css',root);
-	includeCSS(root + 'css/search-filters.css',root);
-	includeCSS(root + 'css/display.css',root);
-	includeCSS(root + 'css/hexagons.css',root);
 
-	includeCSS(root + 'css/leaflet/leaflet.css',root);
+	}  	
+	includeCSS(root + '/community/css/community.css',root);
+	includeCSS(root + '/community/css/search-filters.css',root);
+	includeCSS(root + '/community/css/display.css',root);
+	includeCSS(root + '/community/css/hexagons.css',root);
+
+
+	includeCSS(root + '/community/css/leaflet/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
-	includeCSS(root + 'css/leaflet/leaflet.icon-material.css',root);
-	includeCSS(root + 'css/map.css',root);
+	includeCSS(root + '/community/css/leaflet/leaflet.icon-material.css',root);
+	includeCSS(root + '/community/css/map.css',root);
 	
 
 	// Required by leafletLoaded that follows
-	loadScript(root + 'js/d3/d3.v5.min.js', function(results) {
+	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
     	d3Loaded(root);
 	});
 
 	// Resides AFTER css/leaflet/leaflet.css
-	loadScript(root + 'js/leaflet/leaflet.js', function(results) {
-		leafletLoaded(root);
+	loadScript(root + '/community/js/leaflet/leaflet.js', function(results) {
+		leafletLoaded(root,1);
 	});
 }
 
 lazyLoadFiles();
 
-function dualmapLoaded(param) {
+function dualmapLoaded(param, root, count) {
 	if (typeof dual_map !== 'undefined') {
 		dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
-		loadMap1();
-		window.onhashchange = function() {
-			//param = loadParam(location.search,location.hash);
-			console.log("user changed hash")
+
+		$("#filterEmbedHolder img[src]").each(function() {
+			  if($(this).attr("src").toLowerCase().indexOf("http") < 0){
+		  		$(this).attr("src", root + $(this).attr('src'));
+			  }
+		})
+
+		loadScript(root + '/community/js/common/search-filters.js', function(results) {
+
 			loadMap1();
-		}
-	} else { // Wait a milisecond and try again
+			window.onhashchange = function() {
+				//param = loadParam(location.search,location.hash);
+				console.log("user changed hash")
+				loadMap1();
+			}
+		});
+	} else if (count<100) { // Wait a milisecond and try again
 		setTimeout( function() {
    			console.log("try dualmapLoaded again")
-			dualmapLoaded(param);
+			dualmapLoaded(param, root, count++);
    		}, 10 );
+	} else {
+		console.log("ERROR: dualmapLoaded exceeded 100 attempts.");
 	}
 }
 

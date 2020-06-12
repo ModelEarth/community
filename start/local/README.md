@@ -85,7 +85,10 @@ To avoid commiting your local .DS\_Store files to GitHub, you may need to run th
 	git config --global core.excludesfile ~/.gitignore  
 	echo .DS_Store >> ~/.gitignore
 
-You can toggle hidden file viewing using Command+Shift+Dot. 
+If you encounter the error "xcrun: error: invalid active developer path", [install the Xcode toolkit](https://ma.ttias.be/mac-os-xcrun-error-invalid-active-developer-path-missing-xcrun/) first.  
+
+You can toggle hidden file viewing using Command+Shift+Dot, .DS_Store will not be displayed. 
+To fix a conflict you may need delete the .DS_Store within the Github.com website.  
 
 
 ## 5. Activate your website

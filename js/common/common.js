@@ -1,6 +1,8 @@
 // Updates originate in community/js/common/common.js
 // To do: dynamically add target _parent to external link when in an iFrame, and no existing target
 
+// common.js does NOT use jquery, so it can be used before jquery loads.
+
 // USE params (plural) to isolate within functions when creating embedable widgets.
 // USE param for any html page using common.js.
 var param = loadParams(location.search,location.hash);
@@ -88,7 +90,7 @@ function updateHash(addToHash) {
         //  }
         //}
 
-        var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+    var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
 
         // findCompany
 
@@ -116,7 +118,25 @@ function updateHash(addToHash) {
     window.history.pushState("", searchTitle, pathname + queryString);
     //refreshMain();
 }
-
+function clearHash(toClear) {
+  let hash = getHash(); // Include all existing
+  let clearArray = toClear.split(/\s*,\s*/);
+  for(var i = 0; i < clearArray.length; i++) {
+    delete hash[clearArray[i]]; 
+  }
+  var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+  var pathname = window.location.pathname;
+  var queryString = "";
+  if (window.location.search) { // Existing, for parameters that are retained as hash changes.
+    queryString += window.location.search; // Contains question mark (?)
+  }
+  let searchTitle = 'Page';
+  if (hashString) { // Remove the hash here if adding to other 
+    queryString += "#" + hashString;
+    searchTitle = 'Page ' + hashString;
+  }
+  window.history.pushState("", searchTitle, pathname + queryString);
+}
 // Serialize a key/value object.
 //var params = { width:1680, height:1050 };
 //var str = jQuery.param( params );
@@ -137,18 +157,7 @@ function consoleLog(text,value) {
 
   console.log(text, value);
 }
-$(document).ready(function() {
-  if(location.host.indexOf('localhost') >= 0 || param["view"] == "local") {
-    var div = $("<div />", {
-        html: '<style>.local{display:inline-block !important}.localonly{display:block !important}</style>'
-      }).appendTo("body");
-  } else {
-    // Inject style rule
-      var div = $("<div />", {
-        html: '<style>.local{display:none}.localonly{display:none}</style>'
-      }).appendTo("body");
-  }
-});
+
 // Convert json to html
 var selected_array=[];
 var omit_array=[];

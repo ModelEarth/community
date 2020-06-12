@@ -49,7 +49,6 @@ Teams will collaborate on integrated services using:
 <b>Detached Frontends</b>
 - Vanilla JS and JQuery in the current [community repo](start)
 - [Real World](https://neighborhood.org/realworld) React / Redux  
-- [Real World](https://neighborhood.org/realworld) Vue -   
 - Other Detached Frontends (to be hosted under one domain) - Each should have an index.html entry point in the root of its repo.  
 
 <b>Content Backends</b>
@@ -100,6 +99,8 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
+1. [LCA methodology to evaluate new technologies using USEEIO](https://modelearth.github.io/io/naics/add) and 
+Getting started with [RStudio and USEEIOR](https://modelearth.github.io/io/naics)
 <!--
 1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
