@@ -23,6 +23,7 @@ GAzcta = left_join(zcta_text,zcta2, by = c('ZCTA5' = 'GEOID10')) %>%
   left_join(., county_text, by = c('COUNTY' = 'COUNTYFP10'))
 write.csv(GAzcta,'GApostalcodes.csv')
 
+
 getCentroidCSV = function(shapefile) {
   centroid = st_centroid(shapefile)
   coord = as.data.frame(st_coordinates(centroid))
