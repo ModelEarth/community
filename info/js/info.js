@@ -42,36 +42,36 @@ function ready(values) {
     dataObject.industryNames=industryNames;
     //console.log(industryData)
     //countyFIPS = 4
-    /////////////////////////////////////////////////////////////////////////////////////////
-    /*let dropdown = $('#state-x');
 
-    dropdown.empty();
-
-    dropdown.append('<option selected="true" disabled>Choose State</option>');
-    dropdown.prop('selectedIndex', 0);
-    //dropdown.append('<option selected="true" disabled>Select Indicator</option>');
-    //dropdown.prop('selectedIndex', 1);
-
-    const url = './data/states.json';
-
-    // Populate dropdown with list of provinces
-    $.getJSON(url, function (data) {
-      $.each(data, function (key, entry) {
-        dropdown.append($('<option></option>').attr('value', entry.FIPS).text(entry.Name));
-        })
-    });*/
-    //$(document).ready(function(){
+    //dropdown code
     $("#state").change(drop_down_list);
-    //});
 
     $(window).load(drop_down_list);
+    d3.selectAll(".picklist").on("change",function(){
+    //updateChart(d3.select("#state").node().value,
+    //          d3.select("#county").node().value,
+    //          d3.select("#graph-picklist-z").node().value);
+        d3.csv("data/county_ID_list.csv").then( function(consdata) {
+        var filteredData = consdata.filter(function(d) 
+        { 
+            //console.log(d3.select("#state").node().value)
+            if(( d["Postal Code"] == d3.select("#state").node().value) && (d["county"]==d3.select("#county").node().value ))
+            {   a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(d["id"]), 10, "payann")
+                console.log(a)
+                //console.log(d["id"])
+                return a;
+            } 
 
-    //////////////////////////////////////////////////////////////////////////////////////////
+        })
 
-    countyFIPS = 13121
+        })
+    });
+    
+
+    //countyFIPS = 13121
     //a = topRatesInFips(industryData, industryNames, String(countyFIPS), 5, "payann")
-    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(countyFIPS), 10, "payann")
-    console.log(a)
+    //a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(countyFIPS), 10, "payann")
+    //console.log(a)
 }
 
 // Drop down code from: https://www.bitrepository.com/dynamic-dependant-dropdown-list-us-states-counties.html
@@ -97,8 +97,10 @@ function drop_down_list(){
     $('#loading_county_drop_down').hide(); // Hide the Loading...
     $('#county_drop_down').show(); // Show the drop down
     });
+    }
 }
-}
+
+
 function formatIndustryData(rawData) {
     // var industryByType = d3.map()
     var industryByType = {}
