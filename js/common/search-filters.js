@@ -8,6 +8,28 @@ function populateFieldsFromHash() {
 	        return $(this).text() === catString
 	    }).addClass('catListSelected');
 	}
+	/*
+	// This occurs in showList when checkboxes are added.
+	if (param["search"]) {
+		//$(".selected_col").prop('checked', false);
+		alert("deselect")
+		let search = param["search"].split(",");
+		for(var i = 0 ; i < search.length ; i++) {
+			if($("#" + search[i]).length) {
+				alert(search[i]);
+				//$("#" + search[i]).prop('checked', true);
+				$("#items").prop('checked', true);
+			}
+		}
+	}
+	*/
+	if (param["counties"]) {
+		let counties = param["counties"].split(",");
+		for(var i = 0 ; i < counties.length ; i++) {
+			// Not yet implemented
+			$("#county-" + counties[i]).prop('checked', true);
+		}
+	}
 	$("#productCodes").val(param["hs"]);
 }
 // var param = loadParams(location.search,location.hash); // This occurs in common.js
@@ -15,19 +37,12 @@ function populateFieldsFromHash() {
 
 $(document).ready(function () {
 
-
-	window.scrollTo({
-	  top: 100,
-	  left: 0,
-	  behavior: 'smooth'
-	});
-
 	//loadMarkupPage("intro.md", "introDiv", "_parent");
 	if (! ('webkitSpeechRecognition' in window) ) {
 		$(".si-btn").hide();
 	}
 	catArray = [];
-	$.get('/community/impact/harmonized-system/hs.txt', function(data) {
+	$.get(dual_map.community_root() + 'impact/harmonized-system/hs.txt', function(data) {
 		var catLines = data.split("\n");
 		
 		catLines.forEach(function(element) {
@@ -226,7 +241,9 @@ $(document).ready(function () {
 			$('#catListHolderShow').text('Product Categories');
 		}
 		let searchQuery = $('#keywordsTB').val();
-		updateHash({"q":searchQuery});
+		let search = $('.selected_col:checked').map(function() {return this.id;}).get().join(',');
+		// To do: set search to empty array if all search boxes are checked.
+		updateHash({"q":searchQuery,"search":search});
 		loadMap1();
 	    event.stopPropagation();
    	});
@@ -290,9 +307,11 @@ $(document).ready(function () {
    		$("#eTable_alert").hide();
    		$("#mainframe").hide();
    		$("input[name='hs']").prop('checked',false);
+   		$("input[name='in']").prop('checked',true);
    	}
    	$("#clearButton").click(function() {
    		clearFields();
+   		clearHash("cat,search,q");
    		//history.pushState("", document.title, window.location.pathname);
    		//loadHtmlTable(true); // New list
    		loadMap1();
@@ -423,7 +442,8 @@ $(document).ready(function () {
 	    //});
 	}
 	
-	loadHtmlTable(true);
+	// From Export Directory - Remove this function below
+	//loadHtmlTable(true);
 
 	$(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
 		console.log('hashchange');
@@ -798,7 +818,7 @@ $(document).ready(function () {
   }
   if (param["show"] == "suppliers") {
     var div = $("<div />", {
-        html: '<style>.suppliers{display: block !important;}</style>'
+        html: '<style>.suppliers{display:inline !important;}</style>'
       }).appendTo("body");
   }
 
@@ -866,7 +886,7 @@ $(document).ready(function () {
   }
 
 	$('.sendfeedback').click(function(event) {
-	  window.location = dual_map.community_root() + "resources/input?showheader=" + param["showheader"];
+	  window.open(dual_map.absolute_root() + "resources/input/",'_blank');
 	  event.stopPropagation();
 	});
 	$('.addlisting').click(function(event) {
@@ -875,13 +895,13 @@ $(document).ready(function () {
 	});
 	$('.go_map').click(function(event) {
 	  window.scrollTo({
-	      top: 0,
+	      top: $('#map1').offset().top,
 	      left: 0
 	    });
 	});
 	$('.go_list').click(function(event) {
 	  window.scrollTo({
-	      top: $('#list_main').offset().top - 95,
+	      top: $('#detaillist').offset().top,
 	      left: 0
 	    });
 	});
@@ -892,7 +912,12 @@ $(document).ready(function () {
 	    });
 	  $("#sidemapCard").show(); // map2
 	});
-
+	$('.go_search').click(function(event) {
+	  window.scrollTo({
+	      top: 0,
+	      left: 0
+	    });
+	});
 });
 
 // HEX
@@ -1066,7 +1091,7 @@ function initSiteObject(layerName) {
     // https://github.com/codeforgreenville/leaflet-google-sheets-template
     // https://data.openupstate.org/map-layers
 
-    var layerJson = "/community/impact/menu.json";
+    var layerJson = dual_map.community_root() + "impact/menu.json";
 
     var siteObject = (function() {
         var json = null;
@@ -1092,4 +1117,16 @@ function initSiteObject(layerName) {
     })(); // end siteObject
 } // end initSiteObject
 
-initSiteObject("");
+function callInitSiteObject(attempt) { // wait for dual_map
+	if (typeof dual_map !== 'undefined') {
+		initSiteObject("");
+	} else if (attempt < 100) {
+		setTimeout( function() {
+   			console.log("try search-filters initSiteObject again")
+			callInitSiteObject(attempt+1);
+   		}, 10 );
+	} else {
+		console.log("ERROR: Too many search-filters dual_map attempts.");
+	}
+}
+callInitSiteObject(1);
