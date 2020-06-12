@@ -10,11 +10,18 @@ setwd("/Users/eloncha/Documents/GitHub/community/info/rstudio")
 tmap_mode('view')
 
 # read shapefile
+state = st_read('shapefile/tl_2019_us_state/tl_2019_us_state.shp') %>% filter(NAME =='Georgia')
 county = st_read('shapefile/Counties_Georgia/Counties_Georgia.shp')
-zcta = st_read
-#show a map
-tm_shape(county) + tm_polygons(col = 'totpop10')
+county_text = st_drop_geometry(county)
+county = st_transform(county, crs = 4269)
+zcta = st_read('shapefile/tl_2016_us_zcta510/tl_2016_us_zcta510.shp')
+zcta2 = st_drop_geometry(zcta)
+zcta_text = read_csv('shapefile/zcta_crosswalk') %>% filter(STATE ==13)
 
+GAzcta = left_join(zcta_text,zcta2, by = c('ZCTA5' = 'GEOID10')) %>% 
+  mutate(lat = as.numeric(as.character(INTPTLAT10)), lon = as.numeric(as.character(INTPTLON10))) %>%
+  left_join(., county_text, by = c('COUNTY' = 'COUNTYFP10'))
+write.csv(GAzcta,'GApostalcodes.csv')
 
 getCentroidCSV = function(shapefile) {
   centroid = st_centroid(shapefile)
@@ -24,6 +31,4 @@ getCentroidCSV = function(shapefile) {
   return(centroid)
 } 
 countyc = getCentroidCSV(county)
-zctac = getCentroidCSV(zcta)
 write.csv(countyc,'GAcounties.csv')
-write.csv(zctac,'GApostalcodes.csv')
