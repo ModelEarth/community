@@ -109,8 +109,10 @@ $(document).ready(function(){
 		 		if(location.host.indexOf('georgia') >= 0) {
 		 			$('#headerLocTitle').html("Fulton County");
 		 		} else {
-			 		$('#headerLocTitle').html("<span class='arrownext' style='margin:10px 10px 0 10px'></span><span style='float:left'>Georgia </span><span class='arrownext' style='margin:10px 10px 0 10px'></span><span style='float:left'> Fulton County</span>");
+			 		$('#headerLocTitle').html("<span class='arrownext' style='margin:10px 10px 0 10px'></span><span style='float:left'> Fulton County</span>");
 			 	}
+			 	// Hack, since called too early for header
+			 	$('.mock-up').css('display', 'block');
 		 	}
 		 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
 			$('#logoholder').css('background-repeat', 'no-repeat');
