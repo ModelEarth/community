@@ -53,7 +53,7 @@
 </div>
 
 <form name="form">
-<table width="317" border="0" align="center">
+<table width="317" border="0" align="left">
    <tr>
      <td width="100">State</td>
      <td width="217"><select id="state" name="state" class="picklist">
@@ -118,6 +118,23 @@
    </tr>
  </table>
  </form>
+<span id="detail_selection">
+        <text>NAICS Level</text>
+        <select id="naics" class="picklist" >
+          <option value="0" selected>Sector: 2-digit code</option>
+          <option value="2" >Subsector: 3-digit code</option>
+          <option value="3">Industry Group: 4-digit code</option>
+          <option value="4">NAICS Industry: 5-digit code</option>
+          <option value="5">National Industry: 6-digit code</option>
+        </select>
+        <text>Sort By</text>
+        <select id="sortFactor" class="picklist" >
+          <option value="payann" selected>Annual payroll</option>
+          <option value="emp" >Paid employees</option>
+          <option value="estab">Number of establishments</option>
+        </select>
+</span> 
+<p id="p1"> </p>
 <script>
 	//displayInfo(param["state"], param["county"], param["zip"])
 </script>

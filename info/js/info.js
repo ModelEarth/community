@@ -8,17 +8,32 @@
 var promises = [
 
     d3.tsv("data/c2.tsv"),
-    d3.csv("data/industry_ID_list.csv")
+    d3.csv("data/industry_ID_list.csv"),
+    d3.tsv("data/c3.tsv"),
+    d3.tsv("data/c4.tsv"),
+    d3.tsv("data/c5.tsv"),
+    d3.tsv("data/c6.tsv"),
  
 ]
 
 Promise.all(promises).then(ready)
 
 function ready(values) {
+    
     dataObject={}
     industryData = {
-            'ActualRate': formatIndustryData(values[0]),
+        'ActualRate': formatIndustryData(values[d3.select("#naics").node().value]),
     }
+    /*
+    //selecting the naics level
+    $('#naics').change(function() {
+        console.log( $(this).val());
+        industryData = {
+            'ActualRate': formatIndustryData(values[$(this).val()]),
+        }
+    })*/
+
+
     dataObject.industryData=industryData;  
     industryNames = {}
     values[1].forEach(function(item){
@@ -34,12 +49,16 @@ function ready(values) {
 
     //code for what happens when you choose the state and county from drop down
     d3.selectAll(".picklist").on("change",function(){
+        dataObject.industryData= {
+            'ActualRate': formatIndustryData(values[d3.select("#naics").node().value]),
+        }
         d3.csv("data/county_ID_list.csv").then( function(consdata) {
             var filteredData = consdata.filter(function(d) {
                 if(( d["abvr"] == d3.select("#state").node().value) && (d["county"]==d3.select("#county").node().value ))
-                {   a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(d["id"]), 10, "payann")
+                {   a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(d["id"]), 10, d3.select("#sortFactor").node().value)
                     console.log(a)
                     //console.log(d["id"])
+                    
                     return a;
                 } 
 
@@ -51,7 +70,9 @@ function ready(values) {
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Functions:
+//Functions
+
+
 function parseSubsetValues(entry, subsetKeys, randOffset) {
     subsets = {}
     subsetKeys.forEach(d=>{
@@ -113,7 +134,7 @@ function formatIndustryData(rawData) {
     return industryByType
 }
 
-
+//the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     rates_dict = {}
@@ -177,7 +198,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     // var viewOptions = getFormValues()
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
-
+    document.getElementById("p1").innerHTML =top_data_list
     return top_data_list
 }
 
