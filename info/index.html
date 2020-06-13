@@ -13,15 +13,29 @@
 <!--
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
 -->
-<link rel="stylesheet" type="text/css" href="../../useeio-widgets/build/widgets.css">
-
-<link rel="stylesheet" href="../css/community.css" />
 
 <script src="../js/d3/d3.v5.min.js"></script>
 
+<!-- PRODUCTION -->
+<link rel="stylesheet" href="../../io/charts/useeio/widgets.css">
 <script src="../../io/charts/useeio/lib/useeio_widgets.js"></script>
 
+<!-- LOCAL DEV -->
+<link rel="stylesheet" href="../../useeio-widgets/build/widgets.css">
+<script src="../../useeio-widgets/build/lib/useeio_widgets.js"></script>
+
+<!-- After USEEIO to alter css -->
+<link rel="stylesheet" href="../css/community.css" />
+
 <style>
+/* Temp overrides */
+.indicator-row {
+    height: auto;
+}
+.download-section {
+	display: none; /* Until moved to footer */
+}
+
 h1 {
 	margin-bottom: 1px;
 	padding-bottom: 1px;
@@ -197,7 +211,6 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		<input id="showValues" type="checkbox" checked> Show values
 	</div>
 	
-
 	<div style="margin: 12px 10px 10px 30px">
 		<h1 style="line-height: 1; white-space: nowrap;">Communities</h1>
 	</div>
@@ -209,24 +222,16 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
 
-<div id="output_table" class="rotateHeader"></div>
-
-<div style="margin: 25px;">
-    <div style="margin: 0 auto;">
-        <div class="impact-heatmap">
-        </div>
-        <div id="paginator">
-        </div>
-    </div>
+<div style="float:left">
+	<div id="output_table" class="rotateHeader"></div>
+	<br>
+	<div style="padding:40px">
+	5-digit NAICS are the same in Canada, Mexico and the US.<br>
+	6-digit NAICS are country-specific. 
+	</div>
 </div>
 
-<br>
-<div style="padding:40px">
-5-digit NAICS are the same in Canada, Mexico and the US. 6-digit NAICS are country-specific. 
-</div>
 
-<br><br><br>
-</body>
 
 
 
@@ -439,29 +444,46 @@ window.onhashchange = function() {
 
 // END COMMON
 
-// USEEIO WIDGET
-var config = useeio.urlConfig();
-var modelID = config.get().model || 'GAUSEEIO';
-
-var model = useeio.model({
-    endpoint: './api',
-    model: modelID,
-    asJsonFiles: true,
-});
-
-var heatmap = useeio.impactHeatmap({
-    model: model,
-    selector: '.impact-heatmap',
-});
-
-var paginator = useeio.paginator({
-    model: model,
-    selector: '#paginator',
-});
-
-config.join(heatmap);
-config.join(paginator);
-// END USEEIO WIDGET
 </script>
 
+
+<!-- GODDS & SERVICES WIDGET -->
+    
+<div style="float:left; padding-left:20px; padding-top:20px">
+	<div class="io">
+	    <div style="margin: 0 auto;">
+	        <div class="impact-heatmap">
+	        </div>
+	        <div id="paginator">
+	        </div>
+	    </div>
+	</div>
+</div>
+<script>
+
+    var config = useeio.urlConfig();
+    var modelID = config.get().model || 'GAUSEEIO';
+
+    var model = useeio.model({
+        endpoint: '/io/charts/useeio/api',
+        model: modelID,
+        asJsonFiles: true,
+    });
+
+    var heatmap = useeio.impactHeatmap({
+        model: model,
+        selector: '.impact-heatmap',
+    });
+
+    var paginator = useeio.paginator({
+        model: model,
+        selector: '#paginator',
+    });
+
+    config.join(heatmap);
+    config.join(paginator);
+
+</script>
+
+</body>
 </html>
