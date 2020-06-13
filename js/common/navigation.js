@@ -107,9 +107,9 @@ $(document).ready(function(){
 		 	}
 		 	if (param["show"] == "mockup") {
 		 		if(location.host.indexOf('georgia') >= 0) {
-		 			$('#headerLocTitle').html("Fulton County");
+		 			$('#headerLocTitle').html("Troup County");
 		 		} else {
-			 		$('#headerLocTitle').html("<span class='arrownext' style='margin:10px 10px 0 10px'></span><span style='float:left'> Fulton County</span>");
+			 		$('#headerLocTitle').html("<span class='arrownext' style='margin:10px 10px 0 10px'></span><span style='float:left'> Troup County</span>");
 			 	}
 			 	// Hack, since called too early for header
 			 	$('.mock-up').css('display', 'block');
@@ -124,8 +124,9 @@ $(document).ready(function(){
 	 		//$('#logoholder').css('background-size', '70% 70%');
 	 		$('#logoholder').css('background-position', 'center');
 
-	 		
-
+	 		$('#state_select').on('change', function() {
+			    window.location = "/community/info/?state=" + this.value + "#show=mockup";
+			});
 	 		$('.showMenu').click(function () {
 				//$(".showMenu").hide();
 				$("#menuHolder").show();
@@ -149,6 +150,7 @@ $(document).ready(function(){
 	            	}
 	        	}
 			});
+
 		});
 	} else {
 		$(".filterPanel").addClass("filterPanel_fixed");
