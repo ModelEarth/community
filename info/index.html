@@ -224,7 +224,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
 
-<div style="float:left">
+<div style="display: table;">
+<div style="display:table-cell;">
 	<div id="output_table" class="rotateHeader"></div>
 	<br>
 	<div style="padding:40px">
@@ -272,7 +273,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 		 	// Add an array to the empty array with the values of each:
 		 	// d.difference, 
-	 	 	myArray.push([d.name, d.Reg_Comm, d.totpop10, d.perMile, d.Sq_Miles]);
+		 	// , d.Sq_Miles
+	 	 	myArray.push([d.name, d.Reg_Comm, d.totpop10, d.perMile]);
 
  			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
 	 	 	allDifferences.push(d.difference);
@@ -292,7 +294,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			{ class: "", column: "Reg_Comm,", label: "Region", sort_type: "string" },
 			{ class: "", column: "Population", label: "Population", sort_type: "int" },
 			{ class: "", column: "Per Mile", label: "Per Mile", labelfull: "", sort_type: "int" },
-			{ class: "", column: "Sq Miles", label: "Sq Miles", labelfull: "", sort_type: "int" },
+			//{ class: "", column: "Sq Miles", label: "Sq Miles", labelfull: "", sort_type: "int" },
 		];
 
 		header
@@ -451,7 +453,7 @@ window.onhashchange = function() {
 
 <!-- GODDS & SERVICES WIDGET -->
     
-<div style="float:left; padding-left:20px; padding-top:20px">
+<div style="display:table-cell;padding-left:20px; padding-top:20px">
 	<div class="io">
 	    <div style="margin: 0 auto;">
 	        <div class="impact-heatmap">
@@ -461,6 +463,8 @@ window.onhashchange = function() {
 	    </div>
 	</div>
 </div>
+</div><!-- /display table -->
+
 <script>
 
     var config = useeio.urlConfig();
