@@ -9,12 +9,16 @@
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../js/common/common.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
-<link rel="stylesheet" href="../css/community.css" />
 
 <!--
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
 -->
-<script src="../../io/charts/useeio/lib/d3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../useeio-widgets/build/widgets.css">
+
+<link rel="stylesheet" href="../css/community.css" />
+
+<script src="../js/d3/d3.v5.min.js"></script>
+
 <script src="../../io/charts/useeio/lib/useeio_widgets.js"></script>
 
 <style>
@@ -202,7 +206,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 </div>
 
 <div id="fixedFooter">
-	Click columns to sort. CSV Data: data/usa/GA/GAcounties.csv
+	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
 
 <div id="output_table" class="rotateHeader"></div>
@@ -213,21 +217,18 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
         </div>
         <div id="paginator">
         </div>
-        US Demand $ (2007)
     </div>
 </div>
 
 <br>
 <div style="padding:40px">
-5 digits NAICS are country-specific. The 6th digit may differ in Canada, Mexico and the US.
+5-digit NAICS are the same in Canada, Mexico and the US. 6-digit NAICS are country-specific. 
 </div>
 
 <br><br><br>
 </body>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 <!-- load the function file you need before you call it... -->
 <script type="text/javascript" src="../start/dataset/stupidtable.js"></script>
@@ -236,9 +237,10 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 	//Load in contents of CSV file
 
-	d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
-
+	//d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
+	d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
 		if (error) {
+			alert("error")
 			console.log("Error loading file. " + error);
 		}
 
@@ -311,7 +313,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		// The scale - start at 0 or at lowest number
 		console.log('Extent is ', d3.extent(allDifferences));
 
-		var colorScale = d3.scale.linear()
+		var colorScale = d3.scaleLinear()
 			.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
 			.range(["#bcdbf7","#c00"]);
 
