@@ -47,8 +47,8 @@ h1 {
 	margin-right:45px;
     border-collapse: collapse;
 }
-#th,tr,td{
-    paddingX: 15px;
+#output_table th {
+    white-space: nowrap;
 }
 th {
     padding: 5px;
@@ -225,12 +225,14 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 </div>
 
 <div style="display: table;">
-<div style="display:table-cell;">
-	<div id="output_table" class="rotateHeader"></div>
-	<br>
-	<div style="padding:40px">
-	5-digit NAICS are the same in Canada, Mexico and the US.<br>
-	6-digit NAICS are country-specific. 
+<div style="display:table-cell; text-align: top">
+	<div style="display: block;"><!-- to prevent headers of tables from aligning -->
+		<div id="output_table" class="rotateHeader"></div>
+		<br>
+		<div style="padding:40px">
+		5-digit NAICS are the same in Canada, Mexico and the US.<br>
+		6-digit NAICS are country-specific. 
+		</div>
 	</div>
 </div>
 
@@ -455,6 +457,23 @@ window.onhashchange = function() {
     
 <div style="display:table-cell;padding-left:20px; padding-top:20px">
 	<div class="io">
+
+		<div id="detail_selection">
+			<select id="sortFactor" class="picklist">
+	          <option value="payann" selected>Top Annual Payroll</option>
+	          <option value="emp" >Top Employee Count</option>
+	          <option value="estab">Top Establishments</option>
+	        </select>
+	        <select id="naics" class="picklist">
+	          <option value="0" selected>By Sector - 2 digits</option>
+	          <option value="2">By Subsector - 3 digits</option>
+	          <option value="3">By Industry Group - 4 digits</option>
+	          <option value="4">By NAICS Industry - 5 digits</option>
+	          <option value="5">By National Industry - 6 digits</option>
+	        </select>
+		</div>
+		<br>
+	
 	    <div style="margin: 0 auto;">
 	        <div class="impact-heatmap">
 	        </div>
