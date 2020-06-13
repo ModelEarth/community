@@ -5,6 +5,12 @@
 <title>Goods & Services - Impact</title>
 <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
 
+<script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
+<script src="../../js/d3/d3.v5.min.js"></script>
+
+<!-- load the function file you need before you call it... -->
+<script type="text/javascript" src="stupidtable.js"></script>
+
 <link rel="stylesheet" href="../../css/community.css" />
 
 <style>
@@ -210,18 +216,12 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 </body>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-
-<!-- load the function file you need before you call it... -->
-<script type="text/javascript" src="stupidtable.js"></script>
-
 <script type="text/javascript">
 
 	//Load in contents of CSV file
 
-	d3.csv("USEEIOv1.2_result_2007_impacts_final.csv", function(error, myData) {
-
+	//d3.csv("USEEIOv1.2_result_2007_impacts_final.csv", function(error, myData) {
+	d3.csv("USEEIOv1.2_result_2007_impacts_final.csv").then(function(myData,error) {
 		if (error) {
 			console.log("Error loading file. " + error);
 		}
@@ -313,7 +313,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		// The scale - start at 0 or at lowest number
 		console.log('Extent is ', d3.extent(allDifferences));
 
-		var colorScale = d3.scale.linear()
+		var colorScale = d3.scaleLinear()
 			.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
 			.range(["#bcdbf7","#c00"]);
 
