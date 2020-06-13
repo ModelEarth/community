@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Community Info</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
@@ -10,12 +11,18 @@
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 <link rel="stylesheet" href="../css/community.css" />
 
+<!--
+<link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
+-->
+<script src="../../io/charts/useeio/lib/d3.min.js"></script>
+<script src="../../io/charts/useeio/lib/useeio_widgets.js"></script>
+
 <style>
 h1 {
 	margin-bottom: 1px;
 	padding-bottom: 1px;
 }
-#table {
+#output_table {
 	margin:20px;
 	margin-right:45px;
     border-collapse: collapse;
@@ -131,7 +138,7 @@ td:nth-child(n+3) > div > div {
 }
 /* Standard Screen Width */
 @media (max-width: 1399px) {
-  #table {
+  #output_table {
   	margin-right:25px;
   }
   .rotate {
@@ -198,8 +205,24 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	Click columns to sort. CSV Data: data/usa/GA/GAcounties.csv
 </div>
 
-<div id="table" class="rotateHeader"></div>
+<div id="output_table" class="rotateHeader"></div>
 
+<div style="margin: 25px;">
+    <div style="margin: 0 auto;">
+        <div class="impact-heatmap">
+        </div>
+        <div id="paginator">
+        </div>
+        US Demand $ (2007)
+    </div>
+</div>
+
+<br>
+<div style="padding:40px">
+5 digits NAICS are country-specific. The 6th digit may differ in Canada, Mexico and the US.
+</div>
+
+<br><br><br>
 </body>
 
 
@@ -232,9 +255,15 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 			// OBJECTID,STATEFP10,COUNTYFP10,GEOID10,NAME10,NAMELSAD10,totpop10,Reg_Comm,Acres,Sq_Miles,Label,lat,lon
 			d.name = d.NAME10 + " County";
+
+			d.perMile = Math.round(d.totpop10 / d.Sq_Miles).toLocaleString(); // Breaks sort
+			d.perMile = Math.round(d.totpop10 / d.Sq_Miles);
+
+			d.Sq_Miles = Number(Math.round(d.Sq_Miles).toLocaleString());
+
 		 	// Add an array to the empty array with the values of each:
 		 	// d.difference, 
-	 	 	myArray.push([d.name, d.Reg_Comm, d.totpop10, d.Acres, d.Sq_Miles]);
+	 	 	myArray.push([d.name, d.Reg_Comm, d.totpop10, d.perMile, d.Sq_Miles]);
 
  			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
 	 	 	allDifferences.push(d.difference);
@@ -242,7 +271,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		});
 		//console.log(allDifferences);
 
-		var table = d3.select("#table").append("table");
+		var table = d3.select("#output_table").append("table");
 
 		var header = table.append("thead").append("tr");
 
@@ -253,8 +282,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			{ class: "", column: "name", label: "County", sort_type: "string" },
 			{ class: "", column: "Reg_Comm,", label: "Region", sort_type: "string" },
 			{ class: "", column: "Population", label: "Population", sort_type: "int" },
-			{ class: "", column: "Acres", label: "Acres", labelfull: "", sort_type: "int" },
-			{ class: "", column: "Square Miles", label: "Square Miles", labelfull: "", sort_type: "int" },
+			{ class: "", column: "Per Mile", label: "Per Mile", labelfull: "", sort_type: "int" },
+			{ class: "", column: "Sq Miles", label: "Sq Miles", labelfull: "", sort_type: "int" },
 		];
 
 		header
@@ -307,7 +336,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			//})
 			.html(function(d,i) {
 				if (i == 0) {
-					return "<input type='checkbox' id='" + d.split('-')[0] + "' class='loc' onclick='sectorClick(this)'/><span>" + d + "</span>";
+					return "<input type='checkbox' id='" + d.split('-')[0] + "' class='loc' onclick='locClick(this)'/><span>" + d + "</span>";
 				} else {
 					return d;
 				}
@@ -319,23 +348,23 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 		// INIT
 		// Set checkboxes based on param (which may be a hash, query or include parameter)
-		updateSector(param.loc);
+		updateLoc(param.loc);
 	});
-	function updateSector(loc) {
+	function updateLoc(loc) {
 		$(".loc").prop('checked', false);
 		if (loc) {
-			let sectors = loc.split(",");
+			let sectors = loc.split(";");
             for(var i = 0 ; i < sectors.length ; i++) {
                 $("#" + sectors[i]).prop('checked', true);
             }
         }
 	}
 	function resetForm() {
-		updateSector(param.loc);
+		updateLoc(param.loc);
 	}
-	function sectorClick(which) {
+	function locClick(which) {
 		//console.log(which.id);
-		hash.loc = $('.loc:checked').map(function() {return this.id;}).get().join(','); 
+		hash.loc = $('.loc:checked').map(function() {return this.id;}).get().join(';'); 
 		updateHash();
 	}
 	document.getElementById('showValues').onclick = function() {
@@ -347,12 +376,21 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	        $("td:nth-child(n+3) > div > div").css("overflow","none");
 	        $("td:nth-child(n+3) > div").css("max-width","none");
 	        $("td:nth-child(n+3) > div").css("padding-left","5px");
+
+	        // Restore hidden columns
+	        $("th:nth-child(n+3)").css("display","table-cell");
+	        $("td:nth-child(n+3)").css("display","table-cell");
+	        
 	    } else {
 	        $("th.rotate > div > span").css("font-weight","400");
 	        $("td:nth-child(n+3) > div > div").css("visibility","hidden");
 	        $("td:nth-child(n+3) > div > div").css("overflow","auto");
 	        $("td:nth-child(n+3) > div").css("max-width","0px");
 	        $("td:nth-child(n+3) > div").css("padding-left","0px");
+
+	        // Hide entire column
+	        $("th:nth-child(n+3)").css("display","none");
+	        $("td:nth-child(n+3)").css("display","none");
 	    }
 	};
 	function getHash() {
@@ -391,49 +429,37 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 // COMMON
 var param = {};
 var hash = getHash(); // Include all existing
-param = loadParam(location.search,location.hash);
+param = loadParams(location.search,location.hash);
 window.onhashchange = function() {
-	param = loadParam(location.search,location.hash);
+	param = loadParams(location.search,location.hash);
 	resetForm();
 }
-// Loads params with priority given to:
-// 1. Hash values on URL.
-// 2. Parameters on URL.
-// 3. Parameters on javascript include file.
-function loadParam(paramStr,hashStr) {
-  let scripts = document.getElementsByTagName('script');
-  let myScript = scripts[ scripts.length - 1 ];
-  //let params = getParams(myScript.src); // Object
 
-  let params = {};
-  let includepairs = myScript.src.substring(myScript.src.indexOf('?') + 1).split('&');
-  for (let i = 0; i < includepairs.length; i++) {
-    let pair = includepairs[i].split('=');
-    params[pair[0].toLowerCase()] = decodeURIComponent(pair[1]);
-  }
-
-  let pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
-  for (let i = 0; i < pairs.length; i++) {
-      if(!pairs[i])
-          continue;
-      let pair = pairs[i].split('=');
-      params[decodeURIComponent(pair[0]).toLowerCase()] = decodeURIComponent(pair[1]);
-   }
-
-  let hashPairs = hashStr.substring(hashStr.indexOf('#') + 1).split('&');
-  for (let i = 0; i < hashPairs.length; i++) {
-      if(!hashPairs[i])
-          continue;
-      if (i==0 && hashPairs[i].indexOf("=") == -1) {
-        params[""] = hashPairs[i];  // Allows for initial # params without =.
-        continue;
-      }
-      let hashPair = hashPairs[i].split('=');
-      params[decodeURIComponent(hashPair[0]).toLowerCase()] = decodeURIComponent(hashPair[1]);
-   }
-   return params;
-}
 // END COMMON
+
+// USEEIO WIDGET
+var config = useeio.urlConfig();
+var modelID = config.get().model || 'GAUSEEIO';
+
+var model = useeio.model({
+    endpoint: './api',
+    model: modelID,
+    asJsonFiles: true,
+});
+
+var heatmap = useeio.impactHeatmap({
+    model: model,
+    selector: '.impact-heatmap',
+});
+
+var paginator = useeio.paginator({
+    model: model,
+    selector: '#paginator',
+});
+
+config.join(heatmap);
+config.join(paginator);
+// END USEEIO WIDGET
 </script>
 
 </html>
