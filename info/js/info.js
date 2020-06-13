@@ -198,7 +198,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     // var viewOptions = getFormValues()
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
-    document.getElementById("p1").innerHTML =top_data_list
+    text="<br><br>"
+    for (i = 0; i < howMany; i++) {
+    text += i + ": " +top_data_list[i]['data_id']+", "+whichVal+": "+top_data_list[i][whichVal]+", rank: "+top_data_list[i]['rank']+"<br>";
+    }
+    document.getElementById("p1").innerHTML =text
     return top_data_list
 }
 
