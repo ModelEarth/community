@@ -51,7 +51,7 @@
 
 <!-- INTRO -->
 
-<div id="introDiv" class="content contentpadding"></div>
+<div id="introDiv" style="display:none" class="content contentpadding"></div>
 
 <div id="readmeHolder" class="content contentpadding" style="display:none; margin-top:0px; padding-bottom:40px">
   <div id="readmeEdit" style='float:right' class='editButton'><a style="text-decoration: none" href='https://github.com/modelearth/community/tree/master/resources/useeio/design'>Edit</a></div>
@@ -90,29 +90,44 @@
     Sample indicator:weight hash value: #census=pop>180:25;edu:50;work:50;pov>15;ypov>10;apov>8;spov>4
     https://datascape.github.io/community/#columns=population:31;education:50
   -->
-  <div class="filterPanel">
+  <div id="headerFixed" class="filterPanel">
+    <div class="headerOffset" style="height:60px">&nbsp;</div>
+
     <div class="filterPanel_background">
     </div>
 
     <div id="activeLayer" style="display: none"></div>
 
+    <h1 class="shortTitle" style="margin-bottom:0px; padding:8px 15px 4px 0; white-space: nowrap; float:left;"></h1>
+
+    <div class="filterFields" style="padding-top:10px;float:left">
     <div style="display:none;" class="filterField mock-up suppliers">
       <div id="catSearchHolder">
-        <div class="filterLabel filterLabelMain">Supply Categories<!--Goods & Services--></div>
-
-        <!--
-        <select id="selectProduct" class="selectMenu" style="float:left">
-            <option value="1">HS Code(s)</option>
-        </select>
-        -->
-
-        <!--
-        onkeyup="return SearchCategories(event);"
+        <div class="filterLabel">
+          <div class="filterLabelMain">
+          Supply Categories<!--Goods & Services-->
+          </div>
+        </div>
 
 
-        readonly - prevents keyboard covering choices on mobile
-        -->
-        <input readonly id="catSearch" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 200px; margin-top: 0px;" />
+          <div style="position:relative; float:left;">
+
+              <div style="position:absolute; right:5px; top:5px; pointer-events:none;">
+                <i class="material-icons" style="font-size:24px;cursor:pointer;">&#xE409;</i>
+                <i class="material-icons" style="font-size:24px;cursor:pointer;display:none;">&#xE313;</i>
+              </div>
+              <!--
+              <select id="selectProduct" class="selectMenu" style="float:left">
+                  <option value="1">HS Code(s)</option>
+              </select>
+              -->
+
+              <!--
+              onkeyup="return SearchCategories(event);"
+              readonly - prevents keyboard covering choices on mobile
+              -->
+              <input readonly id="catSearch" class="filterClick mobileWide textInput" placeholder="Categories" type="text" autocomplete="off" style="width: 200px; margin-top: 0px;" />
+          </div>
       </div>
     </div>
 
@@ -120,7 +135,11 @@
   <div style="float:left">
     <div class="filterField keywordField">
       <!-- Search Companies -->
-      <div class="filterLabel filterLabelMain">Search</div>
+      <div class="filterLabel">
+          <div class="filterLabelMain">
+            Search
+          </div>
+      </div>
       <!--
       <div style="position:absolute; right:8px; top:10px; z-index:1">
         <i id="showAdvancedXXX" class="material-icons" style="font-size:24px;cursor:pointer">&#xE409;</i>
@@ -136,7 +155,11 @@
           </div>
           <!-- maxlength="400"  -->
           <input id="keywordsTB" autocomplete="off" 
-          style="padding-right:27px;" class="filterClick mobileWide textInput si-input" type="text" value="" onblurXX="SearchFormTextCheck(this, 0)" onfocusXX="SearchFormTextCheck(this, 1)" placeholderX="Search" onkeyup="return SearchEnter(event);" onkeypressX="return SearchEnter(event);" />
+          style="padding-right:27px;" 
+          class="filterClick mobileWide textInput si-input" 
+          type="text" value="" 
+          onblurXX="SearchFormTextCheck(this, 0)" onfocusXX="SearchFormTextCheck(this, 1)" 
+          placeholder="Search" onkeyup="return SearchEnter(event);" onkeypressX="return SearchEnter(event);">
       </div>
 
     </div>
@@ -176,8 +199,11 @@
 
 
         <div style="overflow: visible;display:none" class="local filterField searchElements mock-up">
-            <div class="filterLabel filterLabelMain">Where</div>
-
+            <div class="filterLabel">
+              <div class="filterLabelMain">
+                Where
+                </div>
+              </div>
             <div class="filterClick" id="filterClickLocation" style="position:relative; float:left;">
 
               <div style="position:absolute; right:5px; top:5px;">
@@ -242,14 +268,16 @@
           </div>
         </div>
         
-
-
     <!-- Secondary Location Filters -->
       
     <div style="float:left;display:none" class="currentCities">
 
         <div class="filterField">
-            <div class="filterLabel filterLabelMain">Cities</div>
+            <div class="filterLabel">
+              <div class="filterLabelMain">
+                Cities
+              </div>
+            </div>
 
             <div class="cityText"></div>
 
@@ -260,7 +288,8 @@
       <div style="float:left;display:none" class="currentCounties">
 
         <div class="filterField">
-            <div class="filterLabel filterLabelMain"></div>
+            <div class="filterLabel"><div class="filterLabelMain">
+            </div></div>
 
             <div class="filterClick" style="position:relative; float:left;">
               County Holder
@@ -271,13 +300,13 @@
 
       <div id="coordFields" style="display:none;float:left;min-height:40px;">
           <div style="float:left; margin-right: 6px">
-            <div class="filterLabel filterLabelMain">Latitude
-            </div>
-              <input id="lat" class="filterClick mobileWide textInput" placeholder="Latitude" type="text" style="width: 120px; margin-top: 0px" />
+            <div class="filterLabel"><div class="filterLabelMain">Latitude
+            </div></div>
+            <input id="lat" class="filterClick mobileWide textInput" placeholder="Latitude" type="text" style="width: 120px; margin-top: 0px" />
           </div>
           <div style="float:left; margin-right: 6px">
-            <div class="filterLabel filterLabelMain">Longitude
-            </div>
+            <div class="filterLabel"><div class="filterLabelMain">Longitude
+            </div></div>
               <input id="lon" class="filterClick mobileWide textInput" placeholder="Longitude" type="text" style="width: 120px; margin-top: 0px" />
           </div>
       </div>
@@ -285,8 +314,7 @@
        <div id="zipFields" style="display:none; float:left">
       
           <div style="float:left; margin-right:6px; min-height:50px">
-            <div class="filterLabel filterLabelMain">Zip
-            </div>
+            <div class="filterLabel"><div class="filterLabelMain">Zip</div></div>
               <input id="zip" class="filterClick mobileWide textInput" type="text" placeholder="Enter Zip" style="width: 132px; margin-top: 0px" title="Enter zip code" />
           </div>
 
@@ -309,7 +337,8 @@
 
       <div id="distanceField" class="filterField" style="display:none; float:left; min-height:50px">
       
-        <div class="filterLabel filterLabelMain">Distance</div>
+        <div class="filterLabel">
+          <div class="filterLabelMain">Distance</div></div>
 
           <select class="distance triggerSearch">
               <option value="">Distance...</option>
@@ -335,20 +364,19 @@
           </select>
       </div>
     <!-- /Secondary Location Filters -->
-
-
   </div>
   <!-- /LOCATION SEARCH -->
 
 
 
   <div class="searchField" style="float:left">
-      &nbsp;<br>
     
       <!-- Submit Button -->
         <div style="float:left; position:relative; margin-right:5px;">
         
-          <div class="filterLabel filterLabelMain"></div>
+          <div class="filterLabel">
+          <div class="filterLabelMain"></div>
+          </div>
 
           <!-- basicSearch goSearch searchHeight -->
           <div id="goSearch" class="detailbutton" href="#" style="float:left;"><span style="font-size:14pt;padding-left:2px">&#128269;</span></div>
@@ -356,8 +384,7 @@
           <!-- showAll showAllResults searchHeight -->
           <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
             
-            
-
+          
         </div>
         <!-- /Submit Button -->
 
@@ -366,7 +393,7 @@
 
   </div><!-- /searchField -->
 
-
+</div><!-- /filterFields -->
 
   
 
@@ -380,7 +407,7 @@
   -->
   
   <div style="display:none; float:left" class="suppliersXX">
-    <div class="filterLabel filterLabelMain">&nbsp;</div>
+    <div class="filterLabel"><div class="filterLabelMain">&nbsp;</div></div>
     <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">
         Goods & Services
     </div>
@@ -447,7 +474,7 @@
 
     <br>
     HS Codes<br>
-    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Lookup" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
+    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Categories" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
 
     <div id="topPanelFooter">Show more</div>
   </div>
@@ -668,6 +695,7 @@ Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Columbus,GA,3
 Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817
 </aside>
 
+<div class="headerOffset" style="height:68px">&nbsp;</div>
 
 <div class="displayOnload" style="display:none;position:relative">
   <div id="map1"></div>
@@ -797,7 +825,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
             margin-right: 8px;
             color:#fff;
             border-radius: 5px;
-            padding: 0px 8px 0 10px;
+            padding: 0px 4px 0 6px;
             min-height: 34px;
             vertical-align: middle;
             cursor: pointer;
@@ -838,6 +866,7 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
               </div>
             </div>
 
+            <!--
             <div class="local addlisting pagebutton greenButton" href="#" style="float:left; display:none">
               
               <div class="hideMobile" style="margin:10px 5px 0 3px;white-space: nowrap; float:left"> 
@@ -851,11 +880,12 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
               Partner Tools
               </div>
             </div>
+            -->
 
             <!-- Down arrow -->
             <div class="local catchClick hideEmbed" style="position:relative;float:left;overflow:visible;">
 
-              <div class="toggleListOptions pagebutton" style="padding:2px"><i class="material-icons toggleArrow" style="font-weight:900; font-size: 32px; padding:0px; margin:0px">&#xE5C5;</i>
+              <div class="toggleListOptions pagebutton"><i class="material-icons toggleArrow" style="font-weight:900; font-size: 32px; padding:0px; margin:0px">&#xE5C5;</i>
               </div>
 
               <div class="listOptions filterBubble">
@@ -1212,21 +1242,18 @@ function loadScript(url, callback)
 {
   if (!document.getElementById(url)) { // Prevents multiple loads.
     var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = url;
-      script.id = url; // Prevents multiple loads.
-      // Bind the event to the callback function. Two events for cross browser compatibility.
-      script.onreadystatechange = callback;
-      script.onload = callback;
-        //$(document).ready(function () { // Only needed if appending to body
-           var head = document.getElementsByTagName('head')[0];
-         head.appendChild(script);
-        //});
-        console.log("loadScript loaded: " + url);
+    script.type = 'text/javascript';
+    script.src = url;
+    script.id = url; // Prevents multiple loads.
+    // Bind the event to the callback function. Two events for cross browser compatibility.
+    script.onreadystatechange = callback;
+    script.onload = callback;
+    //$(document).ready(function () { // Only needed if appending to body
+    var head = document.getElementsByTagName('head')[0];
+    head.appendChild(script);
+    //});
+    console.log("loadScript loaded: " + url);
   } else {
-
-
-
     console.log("loadScript script already available: " + url);
     callback();
   }

@@ -739,8 +739,10 @@ function loadMap1(dp) { // Also called by search-filters.js
     //community_root = "https://model.earth/community/"; // CORS would need to be adjusted on server
     //alert(community_root + "tools/map.csv");
 
+    dp1.shortTitle = "Communities";
     dp1.dataset =  community_root + "tools/map.csv";
     dp1.listInfo = "Includes Georgia Smart Community Projects";
+    dp1.search = {"In Title": "title", "In Description": "description", "In Website URL": "website", "In Address": "address", "In City Name": "city", "In Zip Code" : "zip"};
 
     // Georgia
     dp1.latitude = 32.9;
@@ -971,6 +973,7 @@ function showList(dp,map) {
   var products_array = [];
   var productcode_array = [];
 
+  if (dp.shortTitle) {$(".shortTitle").html(dp.shortTitle); $(".shortTitle").show()};
   if (dp.listTitle) {$(".listTitle").html(dp.listTitle); $(".listTitle").show()};
   if (dp.listSubtitle) {$(".listSubtitle").html(dp.listSubtitle); $(".listSubtitle").show()};
 
@@ -1636,16 +1639,20 @@ var previousScrollTop = $(window).scrollTop();
 $(window).scroll(function() {
   if (revealHeader == false) {
     $('.headerbar').hide();
+    $('.headerOffset').hide();
     revealHeader = true; // For next manual scroll
   } else if ($(window).scrollTop() > previousScrollTop) { // Scrolling Up
     if ($(window).scrollTop() > previousScrollTop + 20) { // Scrolling Up fast
       $('.headerbar').hide();
+      $('.headerOffset').hide();
     }
   } else { // Scrolling Down
     if ($(window).scrollTop() < (previousScrollTop - 20)) { // Reveal if scrolling down fast
       $('.headerbar').show();
+      $('.headerOffset').show();
     } else if ($(window).scrollTop() == 0) { // At top
       $('.headerbar').show();
+      $('.headerOffset').show();
     }
   }
   previousScrollTop = $(window).scrollTop();

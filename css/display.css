@@ -46,10 +46,9 @@ body {
 }
 .filterPanel {
 	overflow: auto;
-	padding: 20px 0 12px 24px;
-	border-topX: 1px solid #ddd;
+	padding: 0 0 4px 24px;
 }
-.filterPanel_background {
+.filterPanel_backgroundXXX {
 	position: absolute;
 	top:0px;
 	left:0px;
@@ -62,7 +61,7 @@ body {
 	margin-top:60px;
 }
 @media (max-width: 600px) {
-	.filterPanel_background {
+	.filterPanel_backgroundXXX {
 		height:140px;
 	}
 }
