@@ -75,6 +75,10 @@
 }
 .filterLabel {
     padding-bottom: 4px;
+    padding-top: 4px;
+}
+.filterLabelMain {
+    display: none;
 }
 .filterBubble {
     -webkit-transition: 0.3s ease-in-out;
