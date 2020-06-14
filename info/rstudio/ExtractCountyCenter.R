@@ -32,8 +32,7 @@ for (s in stateList) {
   write_csv(state_table,path = pathName)
 } # write table for each state
 
-
-
+#### zcta, to be updated, do not run
 #### zcta, to be updated, do not run
 zcta = st_read('shapefile/tl_2016_us_zcta510/tl_2016_us_zcta510.shp')
 zcta2 = st_drop_geometry(zcta)
@@ -43,3 +42,18 @@ GAzcta = left_join(zcta_text,zcta2, by = c('ZCTA5' = 'GEOID10')) %>%
   mutate(lat = as.numeric(as.character(INTPTLAT10)), lon = as.numeric(as.character(INTPTLON10))) %>%
   left_join(., county_text, by = c('COUNTY' = 'COUNTYFP10'))
 write.csv(GAzcta,'GApostalcodes.csv')
+#### zcta, to be updated, do not run
+#### zcta, to be updated, do not run
+
+
+#### topoJSON
+countyTOPO = topojson_read('counties-10m.json') #TopoJSON to sf, compatible to Leaflet
+countytopo = rgdal::readOGR('counties-10m.json') # TopoJSON to LSPD, compatible to Leaflet
+
+# take a look
+library(leaflet)
+leaflet(countyTOPO) %>%
+  addTiles() %>%
+  addPolygons(stroke = 0.3)
+
+
