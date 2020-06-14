@@ -458,18 +458,20 @@ window.onhashchange = function() {
 <div style="display:table-cell;padding-left:20px; padding-top:20px">
 	<div class="io">
 
+		<div style="float:right; font-size:40px;color:#777">&#9881;</div>
+		<h1 style="margin-bottom:10px">Top Industries</h1>
 		<div id="detail_selection">
 			<select id="sortFactor" class="picklist">
-	          <option value="payann" selected>Top Annual Payroll</option>
-	          <option value="emp" >Top Employee Count</option>
-	          <option value="estab">Top Establishments</option>
+	          <option value="payann" selected>By annual payroll</option>
+	          <option value="emp" >By Employee Count</option>
+	          <option value="estab">By Establishments</option>
 	        </select>
 	        <select id="naics" class="picklist">
-	          <option value="0" selected>By Sector - 2 digits</option>
-	          <option value="2">By Subsector - 3 digits</option>
-	          <option value="3">By Industry Group - 4 digits</option>
-	          <option value="4">By NAICS Industry - 5 digits</option>
-	          <option value="5">By National Industry - 6 digits</option>
+	          <option value="0" selected>Sectors - 2 digits</option>
+	          <option value="2">Subsectors - 3 digits</option>
+	          <option value="3">Industry Group - 4 digits</option>
+	          <option value="4">NAICS Industry - 5 digits</option>
+	          <option value="5">National Code - 6 digits</option>
 	        </select>
 		</div>
 		<br>
@@ -479,6 +481,7 @@ window.onhashchange = function() {
 	        </div>
 	        <div id="paginator">
 	        </div>
+	        <br><br>
 	    </div>
 	</div>
 </div>
