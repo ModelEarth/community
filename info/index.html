@@ -19,7 +19,7 @@
 <!-- PRODUCTION -->
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
 <script src="../../io/charts/useeio/lib/useeio_widgets.js"></script>
-
+<script type="text/javascript" src="js/topindustries.js"></script>
 <!-- LOCAL DEV -->
 <!--
 <link rel="stylesheet" type="text/css" href="../../useeio-widgets/build/widgets.css">
@@ -462,20 +462,25 @@ window.onhashchange = function() {
 		<h1 style="margin-bottom:10px">Top Industries</h1>
 		<div id="detail_selection">
 			<select id="sortFactor" class="picklist">
-	          <option value="payann" selected>By annual payroll</option>
+	          <option value="payann" selected>By Annual payroll</option>
 	          <option value="emp" >By Employee Count</option>
 	          <option value="estab">By Establishments</option>
 	        </select>
 	        <select id="naics" class="picklist">
-	          <option value="0" selected>Sectors - 2 digits</option>
-	          <option value="2">Subsectors - 3 digits</option>
-	          <option value="3">Industry Group - 4 digits</option>
-	          <option value="4">NAICS Industry - 5 digits</option>
-	          <option value="5">National Code - 6 digits</option>
+	          <option value="2" selected>Sectors - 2 digits</option>
+	          <!--option value="2">Subsectors - 3 digits</option-->
+	          <option value="4">Industry Group - 4 digits</option>
+	          <!--option value="4">NAICS Industry - 5 digits</option-->
+	          <option value="6">National Code - 6 digits</option>
 	        </select>
 		</div>
 		<br>
-	
+
+		<div style="padding:5px">
+			<p id="p1"></p>
+		</div>
+		<br>
+
 	    <div style="margin: 0 auto;">
 	        <div class="impact-heatmap">
 	        </div>
