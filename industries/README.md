@@ -1,5 +1,8 @@
 # Complete ZIP Code Industry Detail Files 
 
+Additional data download work resides in [modelearth/industries](https://github.com/modelearth/industries), [community/info/](../info/) and [community/info/RStudio](../info/RStudio)  
+<br>
+
 <b>Industry Employment Levels</b><br>
 
 The most recent script resides in prep/industries/source
