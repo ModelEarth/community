@@ -7,13 +7,34 @@ for (package in c('sf','tmap','readr','tidyverse')) {
 }
 # working directory, make sure it is in accordance with the actual directory where shapefile is located in your local machine
 setwd("/Users/eloncha/Documents/GitHub/community/info/rstudio")
-tmap_mode('view')
+
+# read state abbreviation csv (for future table join)
+abbr = read_csv('shapefile/stats.csv')
+colnames(abbr)[2] = 'ABBR'
 
 # read shapefile
-state = st_read('shapefile/tl_2019_us_state/tl_2019_us_state.shp') %>% filter(NAME =='Georgia')
-county = st_read('shapefile/Counties_Georgia/Counties_Georgia.shp')
-county_text = st_drop_geometry(county)
-county = st_transform(county, crs = 4269)
+county = st_read('shapefile/tl_2019_us_county/tl_2019_us_county.shp') # all counties in the US   
+county_attr = st_drop_geometry(county) # attribute only
+county_attr = county_attr %>% 
+  mutate(lon = as.numeric(as.character(INTPTLON)), lat = as.numeric(as.character(INTPTLAT)), FIPS = as.numeric(as.character(STATEFP))) %>% 
+  select(1:2,4:6,18:20) %>% 
+  left_join(.,abbr, by = 'FIPS') %>% 
+  select(1:7, 9:10) # data cleaning
+
+stateList = unique(county_attr$`Postal Code`) # get state name list 
+
+setwd("/Users/eloncha/Documents/GitHub/community/info/rstudio/output")
+for (s in stateList) {
+  state_table = county_attr %>% filter(ABBR == s)
+  fileName = paste0(s, 'counties.csv')
+  dir.create(s)
+  pathName = paste0(s,paste0('/',fileName))
+  write_csv(state_table,path = pathName)
+} # write table for each state
+
+
+
+#### zcta, to be updated, do not run
 zcta = st_read('shapefile/tl_2016_us_zcta510/tl_2016_us_zcta510.shp')
 zcta2 = st_drop_geometry(zcta)
 zcta_text = read_csv('shapefile/zcta_crosswalk') %>% filter(STATE ==13)
@@ -22,14 +43,3 @@ GAzcta = left_join(zcta_text,zcta2, by = c('ZCTA5' = 'GEOID10')) %>%
   mutate(lat = as.numeric(as.character(INTPTLAT10)), lon = as.numeric(as.character(INTPTLON10))) %>%
   left_join(., county_text, by = c('COUNTY' = 'COUNTYFP10'))
 write.csv(GAzcta,'GApostalcodes.csv')
-
-
-getCentroidCSV = function(shapefile) {
-  centroid = st_centroid(shapefile)
-  coord = as.data.frame(st_coordinates(centroid))
-  colnames(coord) = c('lat','lon')
-  centroid = centroid %>% st_drop_geometry(.) %>% cbind(.,coord)
-  return(centroid)
-} 
-countyc = getCentroidCSV(county)
-write.csv(countyc,'GAcounties.csv')
