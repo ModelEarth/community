@@ -6,12 +6,12 @@
 //}
 
 var promises = [
-
-    d3.tsv("data/c2.tsv"),
     d3.csv("data/industry_ID_list.csv"),
-    d3.tsv("data/c3.tsv"),
+    d3.tsv("data/c2.tsv"),
+    
+    //d3.tsv("data/c3.tsv"),
     d3.tsv("data/c4.tsv"),
-    d3.tsv("data/c5.tsv"),
+    //d3.tsv("data/c5.tsv"),
     d3.tsv("data/c6.tsv"),
  
 ]
@@ -22,7 +22,7 @@ function ready(values) {
     
     dataObject={}
     industryData = {
-        'ActualRate': formatIndustryData(values[d3.select("#naics").node().value]),
+        'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
     }
     /*
     //selecting the naics level
@@ -36,13 +36,14 @@ function ready(values) {
 
     dataObject.industryData=industryData;  
     industryNames = {}
-    values[1].forEach(function(item){
+    values[0].forEach(function(item){
         industryNames[+item.relevant_naics] = item.industry_detail
     })
     dataObject.industryNames=industryNames;
 
 
     //dropdown population code
+    drop_down_list();
     $("#state").change(drop_down_list);
     $(window).load(drop_down_list);
 
@@ -50,7 +51,7 @@ function ready(values) {
     //code for what happens when you choose the state and county from drop down
     d3.selectAll(".picklist").on("change",function(){
         dataObject.industryData= {
-            'ActualRate': formatIndustryData(values[d3.select("#naics").node().value]),
+            'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
         }
         d3.csv("data/county_ID_list.csv").then( function(consdata) {
             var filteredData = consdata.filter(function(d) {
