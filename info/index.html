@@ -38,6 +38,13 @@
 	display: none; /* Until moved to footer */
 }
 
+#map1 {
+	height:290px !important;
+}
+#data {
+	display: none !important;
+}
+
 h1 {
 	margin-bottom: 1px;
 	padding-bottom: 1px;
@@ -207,239 +214,58 @@ To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
 
-<div id="headerFixed">
-	<div style="height:60px">&nbsp;</div>
-	<div style="float:right; margin:20px">
-		<input id="showValues" type="checkbox" checked> Show values
-	</div>
-	
-	<div style="margin: 12px 10px 10px 30px">
-		<h1 style="line-height: 1; white-space: nowrap;">Communities</h1>
-	</div>
-</div>
-<div style="height:60px">
-</div>
+
+<script type="text/javascript" src="../map/starter/embed-map.js?show=smart"></script>
 
 <div id="fixedFooter">
 	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
 
+
 <div style="display: table;">
-<div style="display:table-cell; text-align: top">
-	<div style="display: block;"><!-- to prevent headers of tables from aligning -->
-		<div id="output_table" class="rotateHeader"></div>
-		<br>
-		<div style="padding:40px">
-		5-digit NAICS are the same in Canada, Mexico and the US.<br>
-		6-digit NAICS are country-specific. 
+<div style="display:table-cell">
+	<div style="margin:20px">
+		<h1 style="float:left;padding-top:0px;margin-top:0px">Counties</h1>
+		<div style="float:right;margin:12px 30px 0 12px">
+			<input id="showValues" type="checkbox" checked> Show values
 		</div>
+	</div>
+
+	<div id="output_table" class="rotateHeader"></div>
+	<br>
+	<div style="padding:40px">
+	5-digit NAICS are the same in Canada, Mexico and the US.<br>
+	6-digit NAICS are country-specific. 
 	</div>
 </div>
 
 
-
-
-
-<!-- load the function file you need before you call it... -->
-<script type="text/javascript" src="../start/dataset/stupidtable.js"></script>
-
 <script type="text/javascript">
+// COMMON - also resides in embed-map.js
+function loadScript(url, callback)
+{
+  if (!document.getElementById(url)) { // Prevents multiple loads.
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+    script.id = url; // Prevents multiple loads.
+    // Bind the event to the callback function. Two events for cross browser compatibility.
+    script.onreadystatechange = callback;
+    script.onload = callback;
+    //$(document).ready(function () { // Only needed if appending to body
+    var head = document.getElementsByTagName('head')[0];
+    head.appendChild(script);
+    //});
+    console.log("loadScript loaded: " + url);
+  } else {
+    console.log("loadScript script already available: " + url);
+    callback();
+  }
+  // Nested calls are described here: https://books.google.com/books?id=ZOtVCgAAQBAJ&pg=PA6&lpg=PA6
+}
 
-	//Load in contents of CSV file
 
-	//d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
-	d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
-		if (error) {
-			alert("error")
-			console.log("Error loading file. " + error);
-		}
 
-		// Data as values, not objects.
-		var myArray = [];
-
-		// Add a new variable, to make it easier to do a color scale.
-		// Alternately, you could extract these values with a map function.
-		var allDifferences = [];
-
-		myData.forEach(function(d, i) {
-
-			d.difference =  d.US_2007_Demand_$;
-
-			// OBJECTID,STATEFP10,COUNTYFP10,GEOID10,NAME10,NAMELSAD10,totpop10,Reg_Comm,Acres,Sq_Miles,Label,lat,lon
-			d.name = d.NAME10 + " County";
-
-			d.perMile = Math.round(d.totpop10 / d.Sq_Miles).toLocaleString(); // Breaks sort
-			d.perMile = Math.round(d.totpop10 / d.Sq_Miles);
-
-			d.Sq_Miles = Number(Math.round(d.Sq_Miles).toLocaleString());
-
-		 	// Add an array to the empty array with the values of each:
-		 	// d.difference, 
-		 	// , d.Sq_Miles
-	 	 	myArray.push([d.name, d.Reg_Comm, d.totpop10, d.perMile]);
-
- 			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
-	 	 	allDifferences.push(d.difference);
-
-		});
-		//console.log(allDifferences);
-
-		var table = d3.select("#output_table").append("table");
-
-		var header = table.append("thead").append("tr");
-
-		// Objects to construct the header in code:
-		// The sort_type is for the Jquery sorting function.
-
-		var headerObjs = [
-			{ class: "", column: "name", label: "County", sort_type: "string" },
-			{ class: "", column: "Reg_Comm,", label: "Region", sort_type: "string" },
-			{ class: "", column: "Population", label: "Population", sort_type: "int" },
-			{ class: "", column: "Per Mile", label: "Per Mile", labelfull: "", sort_type: "int" },
-			//{ class: "", column: "Sq Miles", label: "Sq Miles", labelfull: "", sort_type: "int" },
-		];
-
-		header
-			.selectAll("th")
-			.data(headerObjs)
-			.enter()
-			.append("th")
-
-			.attr("data-sort", function (d) { return d.sort_type; })
-			.attr("class", function (d) { return d.class; })
-			.append("div")
-			.append("span")
-  			.text(function(d) { return d.label; });
-
-		var tablebody = table.append("tbody");
-
-		rows = tablebody
-			.selectAll("tr")
-			.data(myArray)
-			.enter()
-			.append("tr");
-
-		// We built the rows using the nested array - now each row has its own array.
-
-		// The scale - start at 0 or at lowest number
-		console.log('Extent is ', d3.extent(allDifferences));
-
-		var colorScale = d3.scaleLinear()
-			.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
-			.range(["#bcdbf7","#c00"]);
-
-		cells = rows.selectAll("td")
-			// each row has data associated; we get it and enter it for the cells.
-			.data(function(d) {
-				return d;
-			})
-			.enter()
-			.append("td")
-			.append("div")
-			.style("border-left-color", function(d,i) { // Was background-color
-				// for the last elements in the row, we color the background:
-				if (i >= 2) { // All the columns with colored boxes
-					return colorScale(d);
-				}
-			})
-	
-			.append("div")
-			//.text(function(d,i) { // All columns have a div with a value from CSV data
-			//		return d;
-			//})
-			.html(function(d,i) {
-				if (i == 0) {
-					return "<input type='checkbox' id='" + d.split('-')[0] + "' class='loc' onclick='locClick(this)'/><span>" + d + "</span>";
-				} else {
-					return d;
-				}
-			})			
-			;
-
-		// jquery sorting applied to it - could be done with d3 and events.
-		$("table").stupidtable();
-
-		// INIT
-		// Set checkboxes based on param (which may be a hash, query or include parameter)
-		updateLoc(param.loc);
-	});
-	function updateLoc(loc) {
-		$(".loc").prop('checked', false);
-		if (loc) {
-			let sectors = loc.split(";");
-            for(var i = 0 ; i < sectors.length ; i++) {
-                $("#" + sectors[i]).prop('checked', true);
-            }
-        }
-	}
-	function resetForm() {
-		updateLoc(param.loc);
-	}
-	function locClick(which) {
-		//console.log(which.id);
-		hash.loc = $('.loc:checked').map(function() {return this.id;}).get().join(';'); 
-		updateHash();
-	}
-	document.getElementById('showValues').onclick = function() {
-	    // access properties using this keyword
-	    if ( this.checked ) {
-	        // if checked ...
-	        $("th.rotate > div > span").css("font-weight","600");
-	        $("td:nth-child(n+3) > div > div").css("visibility","visible");
-	        $("td:nth-child(n+3) > div > div").css("overflow","none");
-	        $("td:nth-child(n+3) > div").css("max-width","none");
-	        $("td:nth-child(n+3) > div").css("padding-left","5px");
-
-	        // Restore hidden columns
-	        $("th:nth-child(n+3)").css("display","table-cell");
-	        $("td:nth-child(n+3)").css("display","table-cell");
-	        
-	    } else {
-	        $("th.rotate > div > span").css("font-weight","400");
-	        $("td:nth-child(n+3) > div > div").css("visibility","hidden");
-	        $("td:nth-child(n+3) > div > div").css("overflow","auto");
-	        $("td:nth-child(n+3) > div").css("max-width","0px");
-	        $("td:nth-child(n+3) > div").css("padding-left","0px");
-
-	        // Hide entire column
-	        $("th:nth-child(n+3)").css("display","none");
-	        $("td:nth-child(n+3)").css("display","none");
-	    }
-	};
-	function getHash() {
-    	return (function (a) {
-        if (a == "") return {};
-        var b = {};
-        for (var i = 0; i < a.length; ++i) {
-            var p = a[i].split('=');
-            if (p.length != 2) continue;
-            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
-        }
-        return b;
-	    })(window.location.hash.substr(1).split('&'));
-	}
-	
-	function updateHash() {
-		// Remove blank attributes
-        for (var i in hash) {
-          if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
-            delete hash[i];
-          }
-        }
-
-        var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
-
-        // Update if hash has occurred
-        if (window.location.hash != hashString) {
-        	let searchTitle = 'Page ' + hashString;
-            let queryString = '#' + hashString;
-
-            //console.log("Update URL to: " + window.location.pathname + window.location.search + queryString);
-            window.history.pushState("", searchTitle, window.location.pathname + window.location.search + queryString);
-        }
-    }
-
-// COMMON
 var param = {};
 var hash = getHash(); // Include all existing
 param = loadParams(location.search,location.hash);
@@ -447,9 +273,204 @@ window.onhashchange = function() {
 	param = loadParams(location.search,location.hash);
 	resetForm();
 }
-
 // END COMMON
 
+//Load in contents of CSV file
+//d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
+d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
+	if (error) {
+		alert("error")
+		console.log("Error loading file. " + error);
+	}
+
+	// Data as values, not objects.
+	var myArray = [];
+
+	// Add a new variable, to make it easier to do a color scale.
+	// Alternately, you could extract these values with a map function.
+	var allDifferences = [];
+
+	myData.forEach(function(d, i) {
+
+		d.difference =  d.US_2007_Demand_$;
+
+		// OBJECTID,STATEFP10,COUNTYFP10,GEOID10,NAME10,NAMELSAD10,totpop10,Reg_Comm,Acres,Sq_Miles,Label,lat,lon
+		d.name = d.NAME10 + " County";
+
+		d.perMile = Math.round(d.totpop10 / d.Sq_Miles).toLocaleString(); // Breaks sort
+		d.perMile = Math.round(d.totpop10 / d.Sq_Miles);
+
+		d.Sq_Miles = Number(Math.round(d.Sq_Miles).toLocaleString());
+
+	 	// Add an array to the empty array with the values of each:
+	 	// d.difference, 
+	 	// , d.Sq_Miles
+ 	 	myArray.push([d.name, d.Reg_Comm, d.totpop10, d.perMile]);
+
+			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
+ 	 	allDifferences.push(d.difference);
+
+	});
+	//console.log(allDifferences);
+
+	var table = d3.select("#output_table").append("table");
+
+	var header = table.append("thead").append("tr");
+
+	// Objects to construct the header in code:
+	// The sort_type is for the Jquery sorting function.
+
+	var headerObjs = [
+		{ class: "", column: "name", label: "County", sort_type: "string" },
+		{ class: "", column: "Reg_Comm,", label: "Region", sort_type: "string" },
+		{ class: "", column: "Population", label: "Population", sort_type: "int" },
+		{ class: "", column: "Per Mile", label: "Per Mile", labelfull: "", sort_type: "int" },
+		//{ class: "", column: "Sq Miles", label: "Sq Miles", labelfull: "", sort_type: "int" },
+	];
+
+	header
+		.selectAll("th")
+		.data(headerObjs)
+		.enter()
+		.append("th")
+
+		.attr("data-sort", function (d) { return d.sort_type; })
+		.attr("class", function (d) { return d.class; })
+		.append("div")
+		.append("span")
+			.text(function(d) { return d.label; });
+
+	var tablebody = table.append("tbody");
+
+	rows = tablebody
+		.selectAll("tr")
+		.data(myArray)
+		.enter()
+		.append("tr");
+
+	// We built the rows using the nested array - now each row has its own array.
+
+	// The scale - start at 0 or at lowest number
+	console.log('Extent is ', d3.extent(allDifferences));
+
+	var colorScale = d3.scaleLinear()
+		.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
+		.range(["#bcdbf7","#c00"]);
+
+	cells = rows.selectAll("td")
+		// each row has data associated; we get it and enter it for the cells.
+		.data(function(d) {
+			return d;
+		})
+		.enter()
+		.append("td")
+		.append("div")
+		.style("border-left-color", function(d,i) { // Was background-color
+			// for the last elements in the row, we color the background:
+			if (i >= 2) { // All the columns with colored boxes
+				return colorScale(d);
+			}
+		})
+
+		.append("div")
+		//.text(function(d,i) { // All columns have a div with a value from CSV data
+		//		return d;
+		//})
+		.html(function(d,i) {
+			if (i == 0) {
+				return "<input type='checkbox' id='" + d.split('-')[0] + "' class='loc' onclick='locClick(this)'/><span>" + d + "</span>";
+			} else {
+				return d;
+			}
+		})			
+		;
+
+
+	// load the function file you need before you call it...
+	loadScript('../start/dataset/stupidtable.js', function(results) { 
+			// jquery sorting applied to it - could be done with d3 and events.
+		$("table").stupidtable();
+		});
+
+	// INIT
+	// Set checkboxes based on param (which may be a hash, query or include parameter)
+	updateLoc(param.loc);
+});
+function updateLoc(loc) {
+	$(".loc").prop('checked', false);
+	if (loc) {
+		let sectors = loc.split(";");
+        for(var i = 0 ; i < sectors.length ; i++) {
+            $("#" + sectors[i]).prop('checked', true);
+        }
+    }
+}
+function resetForm() {
+	updateLoc(param.loc);
+}
+function locClick(which) {
+	//console.log(which.id);
+	hash.loc = $('.loc:checked').map(function() {return this.id;}).get().join(';'); 
+	updateHash();
+}
+document.getElementById('showValues').onclick = function() {
+    // access properties using this keyword
+    if ( this.checked ) {
+        // if checked ...
+        $("th.rotate > div > span").css("font-weight","600");
+        $("td:nth-child(n+3) > div > div").css("visibility","visible");
+        $("td:nth-child(n+3) > div > div").css("overflow","none");
+        $("td:nth-child(n+3) > div").css("max-width","none");
+        $("td:nth-child(n+3) > div").css("padding-left","5px");
+
+        // Restore hidden columns
+        $("th:nth-child(n+3)").css("display","table-cell");
+        $("td:nth-child(n+3)").css("display","table-cell");
+        
+    } else {
+        $("th.rotate > div > span").css("font-weight","400");
+        $("td:nth-child(n+3) > div > div").css("visibility","hidden");
+        $("td:nth-child(n+3) > div > div").css("overflow","auto");
+        $("td:nth-child(n+3) > div").css("max-width","0px");
+        $("td:nth-child(n+3) > div").css("padding-left","0px");
+
+        // Hide entire column
+        $("th:nth-child(n+3)").css("display","none");
+        $("td:nth-child(n+3)").css("display","none");
+    }
+};
+function getHash() {
+	return (function (a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i) {
+        var p = a[i].split('=');
+        if (p.length != 2) continue;
+        b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+    })(window.location.hash.substr(1).split('&'));
+}
+
+function updateHash() {
+	// Remove blank attributes
+    for (var i in hash) {
+      if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
+        delete hash[i];
+      }
+    }
+
+    var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+
+    // Update if hash has occurred
+    if (window.location.hash != hashString) {
+    	let searchTitle = 'Page ' + hashString;
+        let queryString = '#' + hashString;
+
+        //console.log("Update URL to: " + window.location.pathname + window.location.search + queryString);
+        window.history.pushState("", searchTitle, window.location.pathname + window.location.search + queryString);
+    }
+}
 </script>
 
 
@@ -459,7 +480,9 @@ window.onhashchange = function() {
 	<div class="io">
 
 		<div style="float:right; font-size:40px;color:#777">&#9881;</div>
-		<h1 style="margin-bottom:10px">Top Industries</h1>
+		<div>
+			<h1 style="margin-bottom:10px">Top Industries</h1>
+		</div>
 		<div id="detail_selection">
 			<select id="sortFactor" class="picklist">
 	          <option value="payann" selected>By Annual payroll</option>
