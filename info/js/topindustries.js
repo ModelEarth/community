@@ -63,6 +63,7 @@ function parseSubsetValues(entry, subsetKeys, randOffset) {
         }
     })
     return subsets
+    console.log(subsets)
 }
 
 
@@ -71,7 +72,7 @@ function formatIndustryData(rawData) {
     // var industryByType = d3.map()
     var industryByType = {}
 
-    subsetKeys = ['emp', 'payann', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY']
+    subsetKeys = ['emp', 'payann', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
 
     for (var i = 1; i<rawData.length; i++){
 
@@ -154,7 +155,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
     text="<b>Troup County</b><br><br>"
     for (i = 0; i < howMany; i++) {
-    text += i + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+top_data_list[i][whichVal.node().value]+"<br>";
+    text += top_data_list[i]['relevant_naics'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+top_data_list[i][whichVal.node().value]+"<br>";
     }
     document.getElementById("p1").innerHTML =text
     return top_data_list
