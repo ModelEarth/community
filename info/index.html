@@ -350,7 +350,11 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			#sector_list {
 				display: table;
 			}
-			#sector_list .left {
+			#sector_list .row {
+				display: table-row;
+				
+			}
+			#sector_list .cell {
 				display: table-cell;
 				padding-right: 15px;
 			}
@@ -358,17 +362,29 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 				display: table-cell;
 				text-align: right;
 			}
+			#sector_list .right div {
+				white-space: nowrap;
+			}
 			#sector_list .right img {
 				margin-left: 8px;
 			}
 			#sector_list div {
 				margin-bottom: 5px;
 			}
+			#sector_list .cell-height {
+				overflow: hidden;
+				max-height: 16px;
+			}
 		</style>
 		<div id="sector_list">
-			<div style="display: table-row;">
-				<div class="left">
-					62 - Health Care and Social Assistance
+			<div class="row">
+				<div class="cell">
+					62
+				</div>
+				<div class="cell">
+					<div class="cell-height">
+					Health Care and Social Assistance
+					</div>
 				</div>
 				<div class="right">
 					<div>
@@ -377,9 +393,14 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 					</div>
 				</div>
 			</div>
-			<div style="display: table-row;">
-				<div class="left">
-					53 - Administrative and Support and Waste Management and Remediation Services
+			<div class="row">
+				<div class="cell">
+					53
+				</div>
+				<div class="cell">
+					<div class="cell-height">
+					Administrative and Support and Waste Management and Remediation Services
+					</div>
 				</div>
 				<div class="right">
 					<div>
@@ -388,9 +409,14 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 					</div>
 				</div>
 			</div>
-			<div style="display: table-row;">
-				<div class="left">
-					23 - Construction
+			<div class="row">
+				<div class="cell">
+					23
+				</div>
+				<div class="cell">
+					<div class="cell-height">
+					Construction
+					</div>
 				</div>
 				<div class="right">
 					<div>
