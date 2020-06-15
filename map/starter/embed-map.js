@@ -15,7 +15,7 @@ strVar += "<style>";
 strVar += "#legendHolder {min-width: 270px;}";
 strVar += ".component--custom_markup > .content {max-width:100%}"; // Drupal container
 strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
-strVar += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
+//strVar += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
 strVar += "<\/style>";
 
 // Omit var strVar=""; here
@@ -1330,6 +1330,9 @@ function lazyLoadFiles() {
 		strVarCss += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
 		//strVarCss += ".headerOffsetOne{display:none !important}";
 		strVarCss += ".component--main_content{margin-top:70px}";
+
+		// Limit where this occurs
+		strVarCss += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
 	}
 	strVarCss += "<\/style>";
 	//document.write(strVarCss);
