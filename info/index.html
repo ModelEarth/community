@@ -40,6 +40,9 @@
 
 <style>
 /* Temp overrides */
+.mock-up {
+	display: inline-block !important;
+}
 .indicator-row {
     height: auto;
 }
@@ -255,6 +258,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 	What are your main priorities?<br><br>
 
+	Evaluate a Specific Technology<br>
 	Increase Local Revenue<br>
 	Increase Lower Income Jobs<br>
 	Increase Middle Income Jobs<br>
@@ -333,7 +337,67 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		</div>
 		<br>
 
+		<!-- Sector List Format -->
+		<style>
+			#sector_list {
+				display: table;
+			}
+			#sector_list .left {
+				display: table-cell;
+				padding-right: 15px;
+			}
+			#sector_list .right {
+				display: table-cell;
+				text-align: right;
+			}
+			#sector_list .right img {
+				margin-left: 8px;
+			}
+			#sector_list div {
+				margin-bottom: 5px;
+			}
+		</style>
+		<div id="sector_list">
+			<div style="display: table-row;">
+				<div class="left">
+					62 - Health Care and Social Assistance
+				</div>
+				<div class="right">
+					<div>
+						$142.71 million 
+						<img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus">
+					</div>
+				</div>
+			</div>
+			<div style="display: table-row;">
+				<div class="left">
+					53 - Administrative and Support and Waste Management and Remediation Services
+				</div>
+				<div class="right">
+					<div>
+						$85.94 million 
+						<img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus">
+					</div>
+				</div>
+			</div>
+			<div style="display: table-row;">
+				<div class="left">
+					23 - Construction
+				</div>
+				<div class="right">
+					<div>
+						$84.78 million 
+						<img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus">
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<!-- /Sector List Format -->
+
+
 		<div style="padding:5px">
+
 			<p id="p1"></p>
 		</div>
 		<br>
