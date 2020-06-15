@@ -1,5 +1,5 @@
 # package installment
-for (package in c('sf','tmap','readr','tidyverse')) {
+for (package in c('sf','readr','tidyverse')) {
   if (!require(package,character.only = TRUE)) {
     install.packages(package)
     library(package)
@@ -28,11 +28,11 @@ totalpop = totalpop %>%
 # final table
 county_attr = st_drop_geometry(county) # attribute only
 county_attr = county_attr %>% 
-  mutate(lon = as.numeric(as.character(INTPTLON)), lat = as.numeric(as.character(INTPTLAT)), FIPS = as.numeric(as.character(STATEFP))) %>% 
+  mutate(longitude = as.numeric(as.character(INTPTLON)), latitude = as.numeric(as.character(INTPTLAT)), FIPS = as.numeric(as.character(STATEFP))) %>% 
   select(1:2,4:6,18:20) %>% 
   left_join(.,abbr, by = 'FIPS') %>% 
-  select(1:7, 9:10) %>% 
-  mutate(area = county_area) %>% 
+  select(1:4,6:7, 9:10) %>% 
+  mutate(sq_miles = county_area) %>% 
   left_join(., totalpop, by = 'GEOID') %>%
   na.omit()# data cleaning
 
