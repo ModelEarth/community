@@ -31,7 +31,7 @@ function ready(values) {
         industryNames[+item.relevant_naics] = item.industry_detail
     })
     dataObject.industryNames=industryNames;
-    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(13285), 10, d3.select("#sortFactor"))
+    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(13285), 20, d3.select("#sortFactor"))
 
 
     //code for what happens when you choose the state and county from drop down
@@ -40,7 +40,7 @@ function ready(values) {
             'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
         }
  
-        a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(13285), 10, d3.select("#sortFactor"))
+        a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(13285), 20, d3.select("#sortFactor"))
         //console.log(a)
         return a;
 
@@ -116,7 +116,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     top_data_list = []
     top_data_ids = []
     naCount = 1
-    for (var i=0; i<howMany; i++) {
+    x=Math.min(howMany,rates_list.length)
+    for (var i=0; i<x; i++) {
         id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
         delete rates_dict[id]
 
@@ -155,7 +156,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     // var viewOptions = getFormValues()
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
     text=""; // <b>Troup County</b><br><br>" // Moved to title
-    for (i = 0; i < howMany; i++) {
+    for (i = 0; i < x; i++) {
         if(String(whichVal.node().value)=="payann"){
             text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
         }else{
