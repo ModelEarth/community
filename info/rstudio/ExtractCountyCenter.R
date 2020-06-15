@@ -7,7 +7,6 @@ for (package in c('sf','tmap','readr','tidyverse')) {
 }
 # working directory, make sure it is in accordance with the actual directory where shapefile is located in your local machine
 setwd("/Users/eloncha/Documents/GitHub/community/info/rstudio")
-
 # read state abbreviation csv (for future table join)
 abbr = read_csv('shapefile/stats.csv')
 colnames(abbr)[2] = 'ABBR'
@@ -21,7 +20,7 @@ county_attr = county_attr %>%
   left_join(.,abbr, by = 'FIPS') %>% 
   select(1:7, 9:10) # data cleaning
 
-stateList = unique(county_attr$`Postal Code`) # get state name list 
+stateList = unique(county_attr$`ABBR`) # get state name list 
 
 setwd("/Users/eloncha/Documents/GitHub/community/info/rstudio/output")
 for (s in stateList) {
