@@ -1333,7 +1333,7 @@ function lazyLoadFiles() {
 	}
 	strVarCss += "<\/style>";
 	//document.write(strVarCss);
-
+	document.head.insertAdjacentHTML("beforeend", strVarCss);
 
   	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
     	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
