@@ -237,19 +237,19 @@ td:nth-child(n+3) > div > div {
 
 <body>
 
-<!--
-Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
-To do: Multicolumn sort (but allow for fixed first column)
-https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
--->
-
-
 <script type="text/javascript" src="../map/starter/embed-map.js?show=smart"></script>
 
 <div id="fixedFooter">
 	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
 <div id="includedContent"></div>
+
+
+<!--
+Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
+To do: Multicolumn sort (but allow for fixed first column)
+https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
+-->
 <!-- two columns -->
 <div id="pageColumns" style="margin:0 10px 0 10px; display: table; max-width:1800px;">
 <div style="display:table-cell; font-size: 15px;">
@@ -297,6 +297,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 	send geo=
 	-->
+
+	<div id="aboutToolsDiv"></div>
 
 	<div style="float:right;margin:12px 0px 0 12px">
 		<input id="showValues" type="checkbox" checked> Show values
@@ -464,6 +466,9 @@ window.onhashchange = function() {
 	resetForm();
 }
 // END COMMON
+
+loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
+//loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
 
 //Load in contents of CSV file
 //d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
