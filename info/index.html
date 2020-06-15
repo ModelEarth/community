@@ -10,14 +10,7 @@
 <script type="text/javascript" src="../js/common/common.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 
-<script> 
-    $(function(){
-    	function showBubbleChart() {
-      		$("#includedContent").load("bubble.html");
-      	}
-      	//showBubbleChart(); // To be called by menu in header.
-    });
-</script> 
+
 <!--
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
 -->
@@ -52,10 +45,12 @@
 #list_main {
 	display:none;
 }
+.markdownEye {
+	display:none;
+}
 
 #map1 {
 	height:350px !important;
-	display: none;
 }
 #data {
 	displayX: none !important;
@@ -242,7 +237,7 @@ td:nth-child(n+3) > div > div {
 <div id="fixedFooter">
 	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
-<div id="includedContent"></div>
+
 
 
 <!--
@@ -252,7 +247,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 -->
 <!-- two columns -->
 <div id="pageColumns" style="margin:0 10px 0 10px; display: table; max-width:1800px;">
-<div style="display:table-cell; font-size: 15px;">
+<div style="display:table-cell; font-size: 15px; min-width: 500px; width: 500px; padding-right: 30px">
 
 	<!--
 	<h1 class="module_h1">Industry Impact Evaluator</h1>
@@ -276,7 +271,33 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	Increase Total Satisfaction<br>
 	<br>
 	-->
-	
+
+<!--
+## What are your main priorities?
+
+<div style="floatX:left; margin-right:30px">
+<b>Currently Quantifiable</b><br>
+Evaluate a Specific Technology<br>
+Increase Local Revenue<br>
+Increase Employment<br>
+Increase Air Quality<br>
+Increase Water Quality<br>
+Increase Clean Energy<br>
+Increase Health and Wellness<br>
+<br><br>
+</div>
+
+<div style="floatX:left">
+<b>Future Areas to Quantify</b><br>
+Increase Higher Paying Jobs<br>
+Increase Ways to Capture Carbon<br>
+Increase Access to Amenities<br>
+Increase Beauty in Land Use<br>
+Increase Green Materials<br>
+Increase Total Satisfaction<br>
+</div>
+<div style="clear:both"></div>
+-->
 	<!--
 
 	<h1 class="module_h1">The Impact Game</h1>
@@ -304,6 +325,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	<div id="aboutToolsDiv" style="position: relative;"></div>
 	<br><br>
 
+	<!--
 	<div style="float:right;margin:12px 0px 0 12px">
 		<input id="showValues" type="checkbox" checked> Show values
 	</div>
@@ -318,6 +340,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	5-digit NAICS are the same in Canada, Mexico and the US.<br>
 	6-digit NAICS are country-specific. 
 	</div>
+	-->
+
 </div>
 
 <div style="display:table-cell;padding-left:20px; padding-top:20px">
@@ -438,24 +462,16 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		</div>
 		<br>
 		
-		<div>
-			<h1 class="module_h1">Industries in Georgia</h1>
-			<div style="font-size: 15px;">
-				<input name="sector_action" type="radio">
-				Recruit a new industry<br>
-				<input name="sector_action" type="radio">
-				Transform an existing industry<br>
-				<br>
-			</div>
-		</div>
+		<div id="includedContent"></div>
+		<script> 
+		    $(function(){
+		    	function showBubbleChart() {
+		      		$("#includedContent").load("bubble.html");
+		      	}
+		      	//showBubbleChart(); // To be called by menu in header.
+		    });
+		</script> 
 
-	    <div style="margin: 0 auto;">
-	        <div class="impact-heatmap">
-	        </div>
-	        <div id="paginator">
-	        </div>
-	        <br><br>
-	    </div>
 	</div>
 </div>
 </div>
@@ -726,6 +742,32 @@ function updateHash() {
     config.join(paginator);
 
 </script>
+
+
+<div style="margin-left:30px">
+	
+	<div style="max-width:500px">
+		<h1 class="module_h1">Industries in Georgia</h1>
+
+		<div style="display:none">
+		<div style="font-size: 15px;">
+			<input name="sector_action" type="radio">
+			Recruit a new industry<br>
+			<input name="sector_action" type="radio">
+			Transform an existing industry<br>
+			<br>
+		</div>
+		</div>
+	</div>
+
+    <div style="margin: 0 auto;">
+        <div class="impact-heatmap">
+        </div>
+        <div id="paginator">
+        </div>
+        <br><br>
+    </div>
+</div>
 
 </body>
 </html>
