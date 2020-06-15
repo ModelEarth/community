@@ -88,6 +88,8 @@ body {
 	z-index: 200;
 	margin-top: 24px;
 	padding-bottom: 20px;
+	position: absolute;
+	height:400px;
 }
 @media (max-width: 800px) {
 	#topPanel {

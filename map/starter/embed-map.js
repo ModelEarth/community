@@ -17,9 +17,10 @@ strVar += "#legendHolder {min-width: 270px;}";
 strVar += ".component--custom_markup > .content {max-width:100%}"; // Drupal container
 strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
 strVar += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
-if (param["show"] == "suppliers") {
+//if (param["show"] == "suppliers") {
 	strVar += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
-}
+	strVar += ".headerOffsetOne{display:none !important}";
+//}
 strVar += "<\/style>";
 
 // Omit var strVar=""; here
@@ -35,7 +36,7 @@ strVar += "    Sample indicator:weight hash value: #census=pop>180:25;edu:50;wor
 strVar += "    https:\/\/datascape.github.io\/community\/#columns=population:31;education:50";
 strVar += "  -->";
 strVar += "  <div id=\"headerFixed\" class=\"filterPanel\">";
-strVar += "    <div class=\"headerOffset\" style=\"height:60px\">&nbsp;<\/div>";
+strVar += "    <div class=\"headerOffset headerOffsetOne\" style=\"height:60px\">&nbsp;<\/div>";
 strVar += "";
 strVar += "    <div class=\"filterPanel_background\">";
 strVar += "    <\/div>";

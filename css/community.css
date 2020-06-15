@@ -150,6 +150,7 @@ hr {
   z-index: 1001;
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
   overflow: visible;
+  min-height: 67px;
 }
 #fixedFooter {
   position: fixed;
