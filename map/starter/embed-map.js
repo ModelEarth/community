@@ -1328,8 +1328,8 @@ function lazyLoadFiles() {
   	var strVarCss = "<style>";
 	if (param["show"] == "suppliers") {
 		strVarCss += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
-		strVarCss += ".headerOffsetOne{display:none !important}";
-		strVarCss += ".component--main_content{margin-top:80px}";
+		//strVarCss += ".headerOffsetOne{display:none !important}";
+		strVarCss += ".component--main_content{margin-top:70px}";
 	}
 	strVarCss += "<\/style>";
 	//document.write(strVarCss);
