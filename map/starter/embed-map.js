@@ -1325,13 +1325,15 @@ function lazyLoadFiles() {
   });
   loadScript(root + '/community/js/common/common.js', function(results) {
 
-  	strVar += "<style>";
+  	var strVarCss += "<style>";
 	if (param["show"] == "suppliers") {
-		strVar += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
-		strVar += ".headerOffsetOne{display:none !important}";
-		strVar += ".component--main_content{margin-top:80px}";
+		strVarCss += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
+		strVarCss += ".headerOffsetOne{display:none !important}";
+		strVarCss += ".component--main_content{margin-top:80px}";
 	}
-	strVar += "<\/style>";
+	strVarCss += "<\/style>";
+	document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVarCss + "<\/div> ");
+
 
   	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
     	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
