@@ -127,6 +127,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
         if (dataSet.ActualRate[id].hasOwnProperty(fips)) {
             rateInFips = dataSet.ActualRate[id][fips][whichVal.node().value]
+            naicscode = dataSet.ActualRate[id][fips]['relevant_naics']
         } else {
             rateInFips = 0
         }
@@ -135,17 +136,17 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         if (rateInFips == null) {
             rateInFips = 1
             top_data_list.push(
-                {'data_id': dataNames[id], [whichVal.node().value]: 1, 'rank': i}
+                {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
             )
         } else if (rateInFips==0) {
             top_data_list.push(
-                {'data_id': 'NA-' + naCount, [whichVal.node().value]: 1, 'rank': i}
+                {'data_id': 'NA-' + naCount, [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
             )
             naCount++
 
         } else {
             top_data_list.push(
-                {'data_id': dataNames[id], [whichVal.node().value]: rateInFips, 'rank': i}
+                {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
             )
             top_data_ids.push(id)
         }
@@ -155,7 +156,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
     text="<b>Troup County</b><br><br>"
     for (i = 0; i < howMany; i++) {
-    text += top_data_list[i]['relevant_naics'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+top_data_list[i][whichVal.node().value]+"<br>";
+        if(String(whichVal.node().value)=="payann"){
+            text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
+        }else{
+            text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
+        }
     }
     document.getElementById("p1").innerHTML =text
     return top_data_list
