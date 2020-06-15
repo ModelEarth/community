@@ -41,7 +41,7 @@ function ready(values) {
         }
  
         a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(13285), 10, d3.select("#sortFactor"))
-        console.log(a)
+        //console.log(a)
         return a;
 
     });
