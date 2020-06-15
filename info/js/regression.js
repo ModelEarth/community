@@ -49,20 +49,20 @@ $.getJSON(url, function (data) {
 
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
-var margin = {top: 20, right: 50, bottom: 50, left: 150};
+var margin = {top: 20, right: 40, bottom: 40, left: 40};
 
 var width = $(parentId).width() - margin.left - margin.right,
-    height = $(parentId).height()  - margin.top - margin.bottom;
+    height = 300  - margin.top - margin.bottom;
 
-var xScale = d3.scale.linear()
+var xScale = d3.scaleLinear()
     .range([0,width]);
 
-var yScale = d3.scale.linear()
+var yScale = d3.scaleLinear()
     .range([height, 0]);
 
 var line = d3.line();
 
-var zScale = d3.scale.linear()
+var zScale = d3.scaleLinear()
     .range([2,100]);
 
 var xAxis = d3.axisBottom()

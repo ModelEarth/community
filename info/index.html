@@ -10,6 +10,11 @@
 <script type="text/javascript" src="../js/common/common.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 
+<script> 
+    $(function(){
+      $("#includedContent").load("bubble.html"); 
+    });
+</script> 
 <!--
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
 -->
@@ -224,7 +229,6 @@ td:nth-child(n+3) > div > div {
 
 <!--
 Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
-
 To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
@@ -235,7 +239,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 <div id="fixedFooter">
 	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
-
+<div id="includedContent"></div>
 <!-- two columns -->
 <div id="pageColumns" style="margin:0 10px 0 10px; display: table; max-width:1800px;">
 <div style="display:table-cell">
@@ -280,7 +284,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			<p id="p1"></p>
 		</div>
 		<br>
-
+		
 	    <div style="margin: 0 auto;">
 	        <div class="impact-heatmap">
 	        </div>

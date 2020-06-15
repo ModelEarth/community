@@ -6,9 +6,9 @@ body {
 
 #title{
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   width: 40%;
-  margin-left: 15%;
+  margin-left: 2%;
   border-bottomX: 2px solid black;
   margin-bottom: 25px;
 }
@@ -16,11 +16,11 @@ body {
 .graph-picklist{
   margin-left: 5px;
 }
-
+/*
 #graph-wrapper{
   width: 90%;
   height: 400px;
-}
+}*/
 
 h4{
   text-align: center;
@@ -40,7 +40,7 @@ h4{
   stroke-width:.3px;
   stroke: #dedede;
 }
-
+/*
 #graph-wrapper-x{
   position: absolute;
   top:450px;
@@ -51,11 +51,11 @@ h4{
 #graph-wrapper-y{
   position: absolute;
   top:250px;
-  left:-120px;
+  left:100px;
   text-align: center;
   transform:rotate(-90deg);
 }
-
+*/
 #equation{
   position: absolute;
   top:20px;
