@@ -1,0 +1,30 @@
+source,target,value
+USDA Chemical Use,PestLCI,2
+PestLCI,FlowSA,2
+CalRecycle,CDDPath,2
+CDDPath,FlowSA,2
+BLS QCEW,FlowSA,2
+USGS WaterUse,FlowSA,2
+BLM Land,FlowSA,2
+USGS LandUse,FlowSA,2
+EIA CBECS,FlowSA,2
+EPA GHGI,FlowSA,2
+EIA MER,FlowSA,2
+EPA FF,FlowSA,2
+USGS Mineral Use,FlowSA,2
+EIA MECS,FlowSA,2
+USDA Ag Census,FlowSA,2
+Standardized Emission and Waste Inventories (StEWI),FlowSA,10
+FlowSA,USEEIO R,36
+USEEIO R,USEEIO PY,53
+USEEIO PY,USEEIO API,53
+USEEIO API,useeio-widgets,53
+useeio-widgets,Community App,53
+LCIA Formatter,USEEIO R,6
+BEA Industry,USEEIO R,3
+BEA Industry,Community App,4
+Community App,Industry Impact,19
+Community App,Local Economy,19
+Community App,Bioeconomy Planner,19
+BEA State,USEEIO R,7
+ORNL FAF,USEEIO R,1
