@@ -403,84 +403,86 @@
 
   <div id="hideTopPanel" class="close-X" style="position:absolute;right:5px;top:8px;padding-right:10px">&#10005;</div>
 
-  <!--
-  Enter a code or keywords.<br><br>
-  -->
-  
-  <div style="display:none; float:left" class="suppliersXX">
-    <div class="filterLabel"><div class="filterLabelMain">&nbsp;</div></div>
-    <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">
-        Goods & Services
-    </div>
-  </div>
-
-
-  <div style="clear:both"></div>
-
-
-  <div id="catsMobile" class="suppliers" style="display:none; margin:15px 20px 20px 0; float:left">
-    <div id="catListClone" class="showMobileX" style="width:100%">
-    </div>
-  </div>
-  <div style="clear:both"></div>
-
-  <div class="local mock-up" style="display:none">
-    <!-- 
-      Products for Export
-      add arrow to show this
-      Populate a dropdown 
-
-      <div class="catHeader">
-        <b>Products</b>
-      </div>
+  <div style="overflow:scroll; max-height:350px">
+    <!--
+    Enter a code or keywords.<br><br>
     -->
     
-    <b>Mock-Up</b> - HS categories are not yet cross-related to NAICS categories.<br><br>
-
-    <div id="hsCatList">
-      <div range="01-05" text="">Animals & Animal Products</div>
-      <div range="06-15" text="">Vegetable Products</div>
-      <div range="16-24" text="">Foodstuffs</div>
-      <div range="25-27" text="">Mineral Products</div>
-      <div range="28-38" text="">Chemicals & Allied Industries</div>
-      <div range="39-40" text="">Plastics / Rubber</div>
-      <div range="41-43" text="">Raw Hides, Skins, Leather & Furs</div>
-      <div range="44-49" text="">Wood & Wood Products</div>
-      <div range="50-63" text="">Textiles</div>
-      <div range="64-67" text="">Footwear / Headgear</div>
-      <div range="68-71" text="">Stone / Glass</div>
-      <div range="72-83" text="">Metals</div>
-      <div range="84-85" text="">Machinery / Electrical</div>
-      <div range="86-89" text="">Transportation</div>
-      <div range="90-92" text="">Cameras, Instruments, Clocks</div>
-      <div range="93-93" text="">Arms and Ammunition</div>
-      <div range="94-94" text="">Furniture and Bedding</div>
-      <div range="95-95" text="">Toys and Games</div>
-      <div range="96-96" text="">Miscellaneous Manufacturing</div>
-      <div range="97-97" text="">Art and Antiques</div>
-    </div>
-    
-
-    <div style="clear:both;"></div>
-
-    <div id='subcatHeaderHolder'>
-      <b><div id='allProductCats' class='backArrow'>&#60;&nbsp;</div> <span id='subcatHeader'>Harmonized System (HS) Product Categories</span></b>
+    <div style="display:none; float:left" class="suppliersXX">
+      <div class="filterLabel"><div class="filterLabelMain">&nbsp;</div></div>
+      <div id="catListHolderShow" class='detailbutton' style="float:left;margin-left:8px">
+          Goods & Services
+      </div>
     </div>
 
-    <a name="listtop"></a>
 
-    <div id="productSubcats" class="menu" style="padding-top:14px">
+    <div style="clear:both"></div>
+
+
+    <div id="catsMobile" class="suppliers" style="display:none; margin:15px 20px 20px 0; float:left">
+      <div id="catListClone" class="showMobileX" style="width:100%">
+      </div>
     </div>
-    <div style="clear:both;"></div>
+    <div style="clear:both"></div>
 
-    <br>
-    HS Codes<br>
-    <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Categories" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
+    <div class="local mock-up" style="display:none">
+      <!-- 
+        Products for Export
+        add arrow to show this
+        Populate a dropdown 
 
-    
+        <div class="catHeader">
+          <b>Products</b>
+        </div>
+      -->
+      
+      <b>Mock-Up</b> - HS categories are not yet cross-related to NAICS categories.<br><br>
+
+      <div id="hsCatList">
+        <div range="01-05" text="">Animals & Animal Products</div>
+        <div range="06-15" text="">Vegetable Products</div>
+        <div range="16-24" text="">Foodstuffs</div>
+        <div range="25-27" text="">Mineral Products</div>
+        <div range="28-38" text="">Chemicals & Allied Industries</div>
+        <div range="39-40" text="">Plastics / Rubber</div>
+        <div range="41-43" text="">Raw Hides, Skins, Leather & Furs</div>
+        <div range="44-49" text="">Wood & Wood Products</div>
+        <div range="50-63" text="">Textiles</div>
+        <div range="64-67" text="">Footwear / Headgear</div>
+        <div range="68-71" text="">Stone / Glass</div>
+        <div range="72-83" text="">Metals</div>
+        <div range="84-85" text="">Machinery / Electrical</div>
+        <div range="86-89" text="">Transportation</div>
+        <div range="90-92" text="">Cameras, Instruments, Clocks</div>
+        <div range="93-93" text="">Arms and Ammunition</div>
+        <div range="94-94" text="">Furniture and Bedding</div>
+        <div range="95-95" text="">Toys and Games</div>
+        <div range="96-96" text="">Miscellaneous Manufacturing</div>
+        <div range="97-97" text="">Art and Antiques</div>
+      </div>
+      
+
+      <div style="clear:both;"></div>
+
+      <div id='subcatHeaderHolder'>
+        <b><div id='allProductCats' class='backArrow'>&#60;&nbsp;</div> <span id='subcatHeader'>Harmonized System (HS) Product Categories</span></b>
+      </div>
+
+      <a name="listtop"></a>
+
+      <div id="productSubcats" class="menu" style="padding-top:14px">
+      </div>
+      <div style="clear:both;"></div>
+
+      <br>
+      HS Codes<br>
+      <input id="productCodes" class="filterClick mobileWide textInput" placeholder="Categories" type="text" autocomplete="off" style="width: 120px; margin-top: 0px;" onkeyup="return SearchProductCodes(event);" />
+
+    </div>
+
   </div>
-  <div id="topPanelFooter">Show more</div>
-  
+  <div id="topPanelFooter" class="local mock-up">Show more</div>
+
 </div>
 
 </div>
