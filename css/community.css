@@ -180,6 +180,9 @@ hr {
 #fixedFooter > div > div:hover {
   background-color: #333;
 }
+#fixedFooter a {
+  color: #fff;
+}
 
 .displayOnload {
   display:block !important; /* hidden until css loaded */

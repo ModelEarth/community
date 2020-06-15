@@ -225,6 +225,21 @@ td:nth-child(n+3) > div > div {
   }
 }
 
+.mainColumn {
+	display:table-cell;
+}
+.mainColumn1 {
+	min-width: 500px;
+	width: 500px; 
+}
+@media (max-width: 800px) {
+	.mainColumn {
+		display: block;
+	}
+	.mainColumn1 {
+		width: 100%;
+	}
+}
 </style>
   
 
@@ -233,10 +248,6 @@ td:nth-child(n+3) > div > div {
 <body>
 
 <script type="text/javascript" src="../map/starter/embed-map.js?show=smart"></script>
-
-<div id="fixedFooter">
-	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
-</div>
 
 
 
@@ -247,7 +258,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 -->
 <!-- two columns -->
 <div id="pageColumns" style="margin:0 10px 0 10px; display: table; max-width:1800px;">
-<div style="display:table-cell; font-size: 15px; min-width: 500px; width: 500px; padding-right: 30px">
+<div class="mainColumn mainColumn1" style="font-size: 15px; padding-right: 30px">
 
 	<!--
 	<h1 class="module_h1">Industry Impact Evaluator</h1>
@@ -324,27 +335,11 @@ Increase Total Satisfaction<br>
 
 	<div id="aboutToolsDiv" style="position: relative;"></div>
 	<br><br>
-
-	<!--
-	<div style="float:right;margin:12px 0px 0 12px">
-		<input id="showValues" type="checkbox" checked> Show values
-	</div>
-
-	<h1 class="module_h1">My Local Area</h1>
-
-	Choose neighborhoods, zip codes and counties to define your local area.<br><br>
-
-	<div id="output_table" style="width:100%" class="rotateHeader"></div>
-	<br>
-	<div style="padding:40px">
-	5-digit NAICS are the same in Canada, Mexico and the US.<br>
-	6-digit NAICS are country-specific. 
-	</div>
-	-->
+	
 
 </div>
 
-<div style="display:table-cell;padding-left:20px; padding-top:20px">
+<div class="mainColumn mainColumn2" style="padding-left:20px; padding-top:20px">
 	<div class="io">
 
 		<div style="float:right; font-size:40px;color:#777">&#9881;</div>
@@ -352,11 +347,13 @@ Increase Total Satisfaction<br>
 			<h1 class="module_h1">Industries in Troup County</h1>
 		</div>
 
+		<!--
 		<div style="max-width:700px">
 			<b>Adjust Industry Levels</b> to reflect technology initiatives that generate new revenue streams, create jobs and increase your community's positive environmental impact.
 		</div>
 		<br><br>
-
+		-->
+		
 		<div id="detail_selection">
 			<select id="sortFactor" class="picklist">
 	          <option value="payann" selected>By Annual payroll</option>
@@ -476,6 +473,63 @@ Increase Total Satisfaction<br>
 </div>
 </div>
 <!-- /two columns -->
+
+
+
+<div style="margin-left:30px">
+	
+	<div style="max-width:500px">
+		<h1 class="module_h1">Industries in Georgia</h1>
+
+		<div style="display:none">
+		<div style="font-size: 15px;">
+			<input name="sector_action" type="radio">
+			Recruit a new industry<br>
+			<input name="sector_action" type="radio">
+			Transform an existing industry<br>
+			<br>
+		</div>
+		</div>
+	</div>
+
+    <div style="margin: 0 auto;">
+        <div class="impact-heatmap">
+        </div>
+        <div id="paginator">
+        </div>
+        <br><br>
+    </div>
+</div>
+
+
+
+<div style="margin:0 30px 0 30px; max-width: 2000px;">
+	<div style="float:right;margin:12px 0px 0 12px">
+		<input id="showValues" type="checkbox" checked> Show values
+	</div>
+
+	<h1 class="module_h1">My Local Area</h1>
+
+	Click columns to sort. Choose counties to define your local area. (Activating shortly)<br><br>
+
+	<div id="output_table" style="width:100%" class="rotateHeader"></div>
+	<br>
+
+	<!--
+		<div style="padding:40px">
+		5-digit NAICS are the same in Canada, Mexico and the US.<br>
+		6-digit NAICS are country-specific. 
+		</div>
+	-->
+</div>
+<br><br>
+
+<div id="fixedFooter">
+	<!--
+	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
+	-->
+	<a href="../../io">About Project</a>
+</div>
 
 
 <script type="text/javascript">
@@ -744,30 +798,6 @@ function updateHash() {
 </script>
 
 
-<div style="margin-left:30px">
-	
-	<div style="max-width:500px">
-		<h1 class="module_h1">Industries in Georgia</h1>
-
-		<div style="display:none">
-		<div style="font-size: 15px;">
-			<input name="sector_action" type="radio">
-			Recruit a new industry<br>
-			<input name="sector_action" type="radio">
-			Transform an existing industry<br>
-			<br>
-		</div>
-		</div>
-	</div>
-
-    <div style="margin: 0 auto;">
-        <div class="impact-heatmap">
-        </div>
-        <div id="paginator">
-        </div>
-        <br><br>
-    </div>
-</div>
 
 </body>
 </html>
