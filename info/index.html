@@ -260,15 +260,19 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 	Evaluate a Specific Technology<br>
 	Increase Local Revenue<br>
-	Increase Lower Income Jobs<br>
-	Increase Middle Income Jobs<br>
-	Increase Upper Income Jobs<br>
+	Increase Employment<br>
 	Increase Air Quality<br>
 	Increase Water Quality<br>
 	Increase Clean Energy<br>
-	Increase Captured Carbon Sales<br>
-	Increase Access / Inclusiveness<br>
 	Increase Health and Wellness<br>
+	<br>
+	
+	Not yet quantified in USEEIO:<br>
+	Increase Lower Income Jobs<br>
+	Increase Middle Income Jobs<br>
+	Increase Upper Income Jobs<br>
+	Increase Captured Carbon Sales<br>
+	Increase Access to Amenities<br>
 	Increase Beauty in Land Use<br>
 	Increase Green Materials<br>
 	Increase Total Satisfaction<br>
@@ -298,7 +302,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	send geo=
 	-->
 
-	<div id="aboutToolsDiv"></div>
+	<div id="aboutToolsDiv" style="position: relative;"></div>
+	<br><br>
 
 	<div style="float:right;margin:12px 0px 0 12px">
 		<input id="showValues" type="checkbox" checked> Show values
@@ -350,7 +355,11 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			#sector_list {
 				display: table;
 			}
-			#sector_list .left {
+			#sector_list .row {
+				display: table-row;
+				
+			}
+			#sector_list .cell {
 				display: table-cell;
 				padding-right: 15px;
 			}
@@ -358,17 +367,29 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 				display: table-cell;
 				text-align: right;
 			}
+			#sector_list .right div {
+				white-space: nowrap;
+			}
 			#sector_list .right img {
 				margin-left: 8px;
 			}
 			#sector_list div {
 				margin-bottom: 5px;
 			}
+			#sector_list .cell-height {
+				overflow: hidden;
+				max-height: 16px;
+			}
 		</style>
 		<div id="sector_list">
-			<div style="display: table-row;">
-				<div class="left">
-					62 - Health Care and Social Assistance
+			<div class="row">
+				<div class="cell">
+					62
+				</div>
+				<div class="cell">
+					<div class="cell-height">
+					Health Care and Social Assistance
+					</div>
 				</div>
 				<div class="right">
 					<div>
@@ -377,9 +398,14 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 					</div>
 				</div>
 			</div>
-			<div style="display: table-row;">
-				<div class="left">
-					53 - Administrative and Support and Waste Management and Remediation Services
+			<div class="row">
+				<div class="cell">
+					53
+				</div>
+				<div class="cell">
+					<div class="cell-height">
+					Administrative and Support and Waste Management and Remediation Services
+					</div>
 				</div>
 				<div class="right">
 					<div>
@@ -388,9 +414,14 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 					</div>
 				</div>
 			</div>
-			<div style="display: table-row;">
-				<div class="left">
-					23 - Construction
+			<div class="row">
+				<div class="cell">
+					23
+				</div>
+				<div class="cell">
+					<div class="cell-height">
+					Construction
+					</div>
 				</div>
 				<div class="right">
 					<div>
