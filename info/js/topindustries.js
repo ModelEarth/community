@@ -154,7 +154,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     // var viewOptions = getFormValues()
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
-    text="<b>Troup County</b><br><br>"
+    text=""; // <b>Troup County</b><br><br>" // Moved to title
     for (i = 0; i < howMany; i++) {
         if(String(whichVal.node().value)=="payann"){
             text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
