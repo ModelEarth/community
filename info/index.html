@@ -37,22 +37,37 @@
 .download-section {
 	display: none; /* Until moved to footer */
 }
+#list_main {
+	display:none;
+}
 
 #map1 {
-	height:290px !important;
+	height:350px !important;
+	display: none;
 }
 #data {
-	display: none !important;
+	displayX: none !important;
 }
 
 h1 {
 	margin-bottom: 1px;
 	padding-bottom: 1px;
 }
+.module_h1 {
+	font-size:28px;
+	padding-top:0px;
+	margin-top:0px;
+	margin-bottom:20px;
+	border-bottom: 1px solid #ddd;
+}
+#pageColumns > div {
+	padding:20px;
+}
 #output_table {
-	margin:20px;
-	margin-right:45px;
     border-collapse: collapse;
+}
+#output_table table {
+    width:100%;
 }
 #output_table th {
     white-space: nowrap;
@@ -221,23 +236,62 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
 </div>
 
-
-<div style="display: table;">
+<!-- two columns -->
+<div id="pageColumns" style="margin:0 10px 0 10px; display: table; max-width:1800px;">
 <div style="display:table-cell">
-	<div style="margin:20px">
-		<h1 style="float:left;padding-top:0px;margin-top:0px">Counties</h1>
-		<div style="float:right;margin:12px 30px 0 12px">
-			<input id="showValues" type="checkbox" checked> Show values
-		</div>
-	</div>
 
-	<div id="output_table" class="rotateHeader"></div>
+	<div style="float:right;margin:12px 0px 0 12px">
+		<input id="showValues" type="checkbox" checked> Show values
+	</div>
+	<h1 class="module_h1">Counties</h1>
+
+	<div id="output_table" style="width:100%" class="rotateHeader"></div>
 	<br>
 	<div style="padding:40px">
 	5-digit NAICS are the same in Canada, Mexico and the US.<br>
 	6-digit NAICS are country-specific. 
 	</div>
 </div>
+
+<div style="display:table-cell;padding-left:20px; padding-top:20px">
+	<div class="io">
+
+		<div style="float:right; font-size:40px;color:#777">&#9881;</div>
+		<div>
+			<h1 class="module_h1">Top Industries</h1>
+		</div>
+		<div id="detail_selection">
+			<select id="sortFactor" class="picklist">
+	          <option value="payann" selected>By Annual payroll</option>
+	          <option value="emp" >By Employee Count</option>
+	          <option value="estab">By Establishments</option>
+	        </select>
+	        <select id="naics" class="picklist">
+	          <option value="2" selected>Sectors - 2 digits</option>
+	          <!--option value="2">Subsectors - 3 digits</option-->
+	          <option value="4">Industry Group - 4 digits</option>
+	          <!--option value="4">NAICS Industry - 5 digits</option-->
+	          <option value="6">National Code - 6 digits</option>
+	        </select>
+		</div>
+		<br>
+
+		<div style="padding:5px">
+			<p id="p1"></p>
+		</div>
+		<br>
+
+	    <div style="margin: 0 auto;">
+	        <div class="impact-heatmap">
+	        </div>
+	        <div id="paginator">
+	        </div>
+	        <br><br>
+	    </div>
+	</div>
+</div>
+</div>
+<!-- /two columns -->
 
 
 <script type="text/javascript">
@@ -417,26 +471,26 @@ document.getElementById('showValues').onclick = function() {
     // access properties using this keyword
     if ( this.checked ) {
         // if checked ...
-        $("th.rotate > div > span").css("font-weight","600");
-        $("td:nth-child(n+3) > div > div").css("visibility","visible");
-        $("td:nth-child(n+3) > div > div").css("overflow","none");
-        $("td:nth-child(n+3) > div").css("max-width","none");
-        $("td:nth-child(n+3) > div").css("padding-left","5px");
+        $("#output_table th.rotate > div > span").css("font-weight","600");
+        $("#output_table td:nth-child(n+3) > div > div").css("visibility","visible");
+        $("#output_table td:nth-child(n+3) > div > div").css("overflow","none");
+        $("#output_table td:nth-child(n+3) > div").css("max-width","none");
+        $("#output_table td:nth-child(n+3) > div").css("padding-left","5px");
 
         // Restore hidden columns
-        $("th:nth-child(n+3)").css("display","table-cell");
-        $("td:nth-child(n+3)").css("display","table-cell");
+        $("#output_table th:nth-child(n+3)").css("display","table-cell");
+        $("#output_table td:nth-child(n+3)").css("display","table-cell");
         
     } else {
-        $("th.rotate > div > span").css("font-weight","400");
-        $("td:nth-child(n+3) > div > div").css("visibility","hidden");
-        $("td:nth-child(n+3) > div > div").css("overflow","auto");
-        $("td:nth-child(n+3) > div").css("max-width","0px");
-        $("td:nth-child(n+3) > div").css("padding-left","0px");
+        $("#output_table th.rotate > div > span").css("font-weight","400");
+        $("#output_table td:nth-child(n+3) > div > div").css("visibility","hidden");
+        $("#output_table td:nth-child(n+3) > div > div").css("overflow","auto");
+        $("#output_table td:nth-child(n+3) > div").css("max-width","0px");
+        $("#output_table td:nth-child(n+3) > div").css("padding-left","0px");
 
         // Hide entire column
-        $("th:nth-child(n+3)").css("display","none");
-        $("td:nth-child(n+3)").css("display","none");
+        $("#output_table th:nth-child(n+3)").css("display","none");
+        $("#output_table td:nth-child(n+3)").css("display","none");
     }
 };
 function getHash() {
@@ -474,46 +528,7 @@ function updateHash() {
 </script>
 
 
-<!-- GODDS & SERVICES WIDGET -->
-    
-<div style="display:table-cell;padding-left:20px; padding-top:20px">
-	<div class="io">
 
-		<div style="float:right; font-size:40px;color:#777">&#9881;</div>
-		<div>
-			<h1 style="margin-bottom:10px">Top Industries</h1>
-		</div>
-		<div id="detail_selection">
-			<select id="sortFactor" class="picklist">
-	          <option value="payann" selected>By Annual payroll</option>
-	          <option value="emp" >By Employee Count</option>
-	          <option value="estab">By Establishments</option>
-	        </select>
-	        <select id="naics" class="picklist">
-	          <option value="2" selected>Sectors - 2 digits</option>
-	          <!--option value="2">Subsectors - 3 digits</option-->
-	          <option value="4">Industry Group - 4 digits</option>
-	          <!--option value="4">NAICS Industry - 5 digits</option-->
-	          <option value="6">National Code - 6 digits</option>
-	        </select>
-		</div>
-		<br>
-
-		<div style="padding:5px">
-			<p id="p1"></p>
-		</div>
-		<br>
-
-	    <div style="margin: 0 auto;">
-	        <div class="impact-heatmap">
-	        </div>
-	        <div id="paginator">
-	        </div>
-	        <br><br>
-	    </div>
-	</div>
-</div>
-</div><!-- /display table -->
 
 <script>
 
