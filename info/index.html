@@ -12,7 +12,10 @@
 
 <script> 
     $(function(){
-      $("#includedContent").load("bubble.html"); 
+    	function showBubbleChart() {
+      		$("#includedContent").load("bubble.html");
+      	}
+      	//showBubbleChart(); // To be called by menu in header.
     });
 </script> 
 <!--
@@ -20,6 +23,7 @@
 -->
 
 <script src="../js/d3/d3.v5.min.js"></script>
+<script type="text/javascript" src="../js/common/showdown.min.js"></script>
 
 <!-- PRODUCTION -->
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
@@ -48,7 +52,7 @@
 
 #map1 {
 	height:350px !important;
-	displayX: none;
+	display: none;
 }
 #data {
 	displayX: none !important;
@@ -247,6 +251,27 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 <div id="pageColumns" style="margin:0 10px 0 10px; display: table; max-width:1800px;">
 <div style="display:table-cell; font-size: 15px;">
 
+	<h1 class="module_h1">Industry Impact Evaluator</h1>
+
+	What are your main priorities?<br><br>
+
+	Increase Local Revenue<br>
+	Increase Lower Income Jobs<br>
+	Increase Middle Income Jobs<br>
+	Increase Upper Income Jobs<br>
+	Increase Air Quality<br>
+	Increase Water Quality<br>
+	Increase Clean Energy<br>
+	Increase Carbon Capture Sales<br>
+	Increase Access / Inclusiveness<br>
+	Increase Health and Wellness<br>
+	Increase Beauty in Land Use<br>
+	Increase Green Materials<br>
+	Increase Total Satisfaction<br>
+	<br>
+
+	<!--
+
 	<h1 class="module_h1">The Impact Game</h1>
 
 	<div style="max-width:400px; margin-bottom:10px">
@@ -266,12 +291,14 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	Increase Total Satisfaction<br>
 	<br>
 
+	send geo=
+	-->
 
 	<div style="float:right;margin:12px 0px 0 12px">
 		<input id="showValues" type="checkbox" checked> Show values
 	</div>
 
-	<h1 class="module_h1">My Community</h1>
+	<h1 class="module_h1">My Local Area</h1>
 
 	Choose neighborhoods, zip codes and counties to define your local area.<br><br>
 
@@ -312,7 +339,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		<br>
 		
 		<div>
-			<h1 class="module_h1">Actions</h1>
+			<h1 class="module_h1">Industries in Georgia</h1>
 			<div style="font-size: 15px;">
 				<input name="sector_action" type="radio">
 				Recruit a new industry<br>
