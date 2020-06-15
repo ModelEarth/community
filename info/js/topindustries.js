@@ -139,13 +139,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             top_data_list.push(
                 {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
             )
-        } else if (rateInFips==0) {
-            top_data_list.push(
-                {'data_id': 'NA-' + naCount, [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
-            )
-            naCount++
-
-        } else {
+        }  else {
             top_data_list.push(
                 {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
             )
