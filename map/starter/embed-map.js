@@ -1325,7 +1325,7 @@ function lazyLoadFiles() {
   });
   loadScript(root + '/community/js/common/common.js', function(results) {
 
-  	var strVarCss += "<style>";
+  	var strVarCss = "<style>";
 	if (param["show"] == "suppliers") {
 		strVarCss += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
 		strVarCss += ".headerOffsetOne{display:none !important}";
