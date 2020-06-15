@@ -23,7 +23,7 @@ totalpop = read_csv('data/county-totalpop.csv')
 totalpop = totalpop %>% 
   separate(.,col = 'GEO_ID', into = c('suffix','GEOID'), sep = 'US') %>%
   separate(.,col = 'NAME', into = c('NAME','STATE'), sep = ',') %>%
-  select(-1)
+  select(2,5)
             
 # final table
 county_attr = st_drop_geometry(county) # attribute only
@@ -32,7 +32,9 @@ county_attr = county_attr %>%
   select(1:2,4:6,18:20) %>% 
   left_join(.,abbr, by = 'FIPS') %>% 
   select(1:7, 9:10) %>% 
-  mutate(area = county_area)# data cleaning
+  mutate(area = county_area) %>% 
+  left_join(., totalpop, by = 'GEOID') %>%
+  na.omit()# data cleaning
 
 stateList = unique(county_attr$`ABBR`) # get state name list 
 
