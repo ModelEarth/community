@@ -84,9 +84,9 @@ body {
 
 #topPanel {
 	overflow:auto;
+	overflow:hidden;
 	clear:both;
 	z-index: 200;
-	margin-top: 24px;
 	padding-bottom: 20px;
 	position: absolute;
 	height:400px;

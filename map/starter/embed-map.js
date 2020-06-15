@@ -8,7 +8,6 @@
 
 // Add \r to end of aside rows manually.
 
-
 var strVar="";
 
 // STYLE OVERRIDES
@@ -17,10 +16,6 @@ strVar += "#legendHolder {min-width: 270px;}";
 strVar += ".component--custom_markup > .content {max-width:100%}"; // Drupal container
 strVar += ".component--main_content, .component--single_column_content {padding:0px}"; // Remove padding between text and map in Drupal.
 strVar += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
-//if (param["show"] == "suppliers") {
-	strVar += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
-	strVar += ".headerOffsetOne{display:none !important}";
-//}
 strVar += "<\/style>";
 
 // Omit var strVar=""; here
@@ -1167,8 +1162,6 @@ strVar += "<!-- End HTML -->";
 
 
 
-
-
 // Hidden until search-filters.css loads
 document.write("<div id=\"filterEmbedHolder\" style=\"display:none;position:relative\">" + strVar + "<\/div> ");
 
@@ -1330,7 +1323,15 @@ function lazyLoadFiles() {
   loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
   	loadScript(root + '/community/js/common/dual-map.js', function(results) {});
   });
-  loadScript(root + '/community/js/common/common.js', function(results) { // _new is for trying to allowing this to be added to the dom prior to jquery load.
+  loadScript(root + '/community/js/common/common.js', function(results) {
+
+  	strVar += "<style>";
+	if (param["show"] == "suppliers") {
+		strVar += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
+		strVar += ".headerOffsetOne{display:none !important}";
+	}
+	strVar += "<\/style>";
+
   	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
     	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
   			loadSearchFilters(1); // Uses dual_map library for community_root
