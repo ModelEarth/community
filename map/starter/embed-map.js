@@ -1329,6 +1329,7 @@ function lazyLoadFiles() {
 	if (param["show"] == "suppliers") {
 		strVar += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
 		strVar += ".headerOffsetOne{display:none !important}";
+		strVar += ".component--main_content{margin-top:80px}";
 	}
 	strVar += "<\/style>";
 
