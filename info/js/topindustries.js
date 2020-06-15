@@ -149,16 +149,22 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     // var viewOptions = getFormValues()
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
-    text=""; // <b>Troup County</b><br><br>" // Moved to title
+    rightCol = "";
+    text = ""; // <b>Troup County</b><br><br>" // Moved to title
     for (i = 0; i < x; i++) {
+        rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
         if(String(whichVal.node().value)=="payann"){
-            text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
-        }else{
-            text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
+            //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
+            rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
         }
+        rightCol += " <img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'>";
+        //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
+
+        text += "<div class='row'><div class='cell'>" + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
     }
-    document.getElementById("p1").innerHTML =text
-    return top_data_list
+    document.getElementById("p1").text = ""; // Clear initial.
+    document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
+    return top_data_list;
 }
 
 
