@@ -1384,7 +1384,7 @@ function lazyLoadFiles() {
 lazyLoadFiles();
 
 function dualmapLoaded(param, root, count) {
-	if (typeof dual_map !== 'undefined') {
+	if (typeof dual_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
 		dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 
 		$("#filterEmbedHolder img[src]").each(function() {
