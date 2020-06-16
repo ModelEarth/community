@@ -129,6 +129,15 @@ hr {
   border:0px;
   border-top:1px solid #ddd;
 }
+.caticon_left {
+  float:left;
+  padding-topX: 8px;
+}
+.caticon_left .material-icons {
+  padding-right:5px;
+  font-size:16px;
+  color: #bbb;
+}
 .alert {
   color:#fff;
   background-color: darkred;
