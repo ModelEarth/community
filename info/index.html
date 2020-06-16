@@ -548,8 +548,9 @@ d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
 
 		// OBJECTID,STATEFP10,COUNTYFP10,GEOID10,NAME10,NAMELSAD10,totalpop18,Reg_Comm,Acres,sq_miles,Label,lat,lon
 		d.name = d.NAME + " County";
+		d.id = d.NAME;
 
-		d.perMile = Math.round(d.totalpop18 / d.sq_miles).toLocaleString(); // Breaks sort
+		//d.perMile = Math.round(d.totalpop18 / d.sq_miles).toLocaleString(); // Breaks sort
 		d.perMile = Math.round(d.totalpop18 / d.sq_miles);
 
 		d.sq_miles = Number(Math.round(d.sq_miles).toLocaleString());
@@ -557,7 +558,7 @@ d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
 	 	// Add an array to the empty array with the values of each:
 	 	// d.difference, 
 	 	// , d.sq_miles
- 	 	myArray.push([d.name, d.totalpop18, d.perMile]);
+ 	 	myArray.push([d.id, d.name, d.totalpop18, d.perMile]);
 
 			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
  	 	allDifferences.push(d.difference);
@@ -630,7 +631,7 @@ d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
 		//})
 		.html(function(d,i) {
 			if (i == 0) {
-				return "<input type='checkbox' id='" + d.split('-')[0] + "' class='loc' onclick='locClick(this)'/> <label for='" + d.split('-')[0] + "'>" + d + "</label>";
+				return "<input type='checkbox' id='" + d.split('-')[0] + "' class='counties' onclick='locClick(this)'/> <label for='" + d.split('-')[0] + "'>" + d + " County</label>";
 			} else {
 				return d;
 			}
@@ -646,23 +647,23 @@ d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
 
 	// INIT
 	// Set checkboxes based on param (which may be a hash, query or include parameter)
-	updateLoc(param.loc);
+	updateLoc(param.counties);
 });
-function updateLoc(loc) {
-	$(".loc").prop('checked', false);
-	if (loc) {
-		let sectors = loc.split(";");
+function updateLoc(counties) {
+	$(".counties").prop('checked', false);
+	if (counties) {
+		let sectors = counties.split(",");
         for(var i = 0 ; i < sectors.length ; i++) {
             $("#" + sectors[i]).prop('checked', true);
         }
     }
 }
 function resetForm() {
-	updateLoc(param.loc);
+	updateLoc(param.counties);
 }
 function locClick(which) {
 	//console.log(which.id);
-	hash.loc = $('.loc:checked').map(function() {return this.id;}).get().join(';'); 
+	hash.counties = $('.counties:checked').map(function() {return this.id;}).get().join(','); 
 	updateHash();
 }
 document.getElementById('showValues').onclick = function() {
