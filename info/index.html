@@ -59,6 +59,12 @@
 .headerImage {
 	display:none;
 }
+.littleHeader {
+	border-bottom: 1px solid #ccc;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+
 h1 {
 	margin-bottom: 1px;
 	padding-bottom: 1px;
@@ -261,55 +267,6 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 <div class="mainColumn mainColumn1" style="font-size: 15px; padding-right: 30px">
 
 	<!--
-	<h1 class="module_h1">Industry Impact Evaluator</h1>
-
-	<b>What are your main priorities?</b><br>
-	Evaluate a Specific Technology<br>
-	Increase Local Revenue<br>
-	Increase Employment<br>
-	Increase Air Quality<br>
-	Increase Water Quality<br>
-	Increase Clean Energy<br>
-	Increase Health and Wellness<br>
-	<br>
-
-	<b>Future areas to quantify:</b><br>
-	Increase Higher Paying Jobs<br>
-	Increase Ways to Capture Carbon<br>
-	Increase Access to Amenities<br>
-	Increase Beauty in Land Use<br>
-	Increase Green Materials<br>
-	Increase Total Satisfaction<br>
-	<br>
-	-->
-
-<!--
-## What are your main priorities?
-
-<div style="floatX:left; margin-right:30px">
-<b>Currently Quantifiable</b><br>
-Evaluate a Specific Technology<br>
-Increase Local Revenue<br>
-Increase Employment<br>
-Increase Air Quality<br>
-Increase Water Quality<br>
-Increase Clean Energy<br>
-Increase Health and Wellness<br>
-<br><br>
-</div>
-
-<div style="floatX:left">
-<b>Future Areas to Quantify</b><br>
-Increase Higher Paying Jobs<br>
-Increase Ways to Capture Carbon<br>
-Increase Access to Amenities<br>
-Increase Beauty in Land Use<br>
-Increase Green Materials<br>
-Increase Total Satisfaction<br>
-</div>
-<div style="clear:both"></div>
--->
-	<!--
 
 	<h1 class="module_h1">The Impact Game</h1>
 
@@ -317,20 +274,6 @@ Increase Total Satisfaction<br>
 	Adjust your local industry mix to maximize job quality, 
 	value added revenue and positive environmental&nbsp;impacts.
 	</div>
-
-	Increase Local Revenue<br>
-	Increase Air Quality<br>
-	Increase Water Quality<br>
-	Increase Clean Energy<br>
-	Increase Carbon Capture<br>
-	Increase Inclusiveness<br>
-	Increase Health<br>
-	Increase Beauty<br>
-	Increase Greeen Materials<br>
-	Increase Total Satisfaction<br>
-	<br>
-
-	send geo=
 	-->
 
 	<div id="aboutToolsDiv" style="position: relative;"></div>
@@ -344,7 +287,8 @@ Increase Total Satisfaction<br>
 
 		<div style="float:right; font-size:40px;color:#777">&#9881;</div>
 		<div>
-			<h1 class="module_h1">Industries in Troup County</h1>
+			<!-- Industries in Troup County -->
+			<h1 class="module_h1">Industries within Region</h1>
 		</div>
 
 		<!--
@@ -412,6 +356,32 @@ Increase Total Satisfaction<br>
 		</div>
 		<br>
 		<!-- /Sector List Format -->
+
+
+		<h1 style="margin-bottom:10px">Set priorities</h1>
+
+		<div style="float:left; margin-right:30px">
+		<div class="littleHeader">Currently Quantifiable</div>
+		Evaluate a Specific Technology<br>
+		Increase Local Revenue<br>
+		Increase Employment<br>
+		Increase Air Quality<br>
+		Increase Water Quality<br>
+		Increase Clean Energy<br>
+		Increase Health and Wellness<br>
+		<br><br>
+		</div>
+
+		<div style="float:left">
+		<div class="littleHeader">Areas to Quantify</div>
+		Increase Higher Paying Jobs<br>
+		Increase Long-term Carbon Capture<br>
+		Increase Access to Amenities<br>
+		Increase Beauty in Land Use<br>
+		Increase Green Materials<br>
+		Increase Total Satisfaction<br>
+		</div>
+		<div style="clear:both"></div>
 
 
 
@@ -524,8 +494,11 @@ window.onhashchange = function() {
 }
 // END COMMON
 
-loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
-//loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
+if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") {
+	loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
+} else {
+	loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
+}
 
 //Load in contents of CSV file
 //d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
