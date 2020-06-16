@@ -4,7 +4,6 @@
 //  let output = state + " " + county + " " + zip;
 //  $("#info").html(output);
 //}
-
 var promises = [
     d3.csv("data/industry_ID_list.csv"),
     d3.tsv("data/c2.tsv"),
@@ -31,7 +30,14 @@ function ready(values) {
         industryNames[+item.relevant_naics] = item.industry_detail
     })
     dataObject.industryNames=industryNames;
-    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(13285), 20, d3.select("#sortFactor"))
+
+    // Quick hack
+    let fips = 13285;
+    if (param["geo"] == "geo=US13001,US13005,US13127,US13161,US13229,US13305") {
+        fips = 13305; // Wayne county. To do: loop through array above.
+    }
+
+    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
 
 
     //code for what happens when you choose the state and county from drop down
@@ -40,7 +46,7 @@ function ready(values) {
             'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
         }
  
-        a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(13285), 20, d3.select("#sortFactor"))
+        a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
         //console.log(a)
         return a;
 
@@ -91,7 +97,6 @@ function formatIndustryData(rawData) {
 
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
-
     rates_dict = {}
     rates_list = []
 
