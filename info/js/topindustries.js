@@ -161,7 +161,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     let rightCol = "";
     let text = ""; // <b>Troup County</b><br><br>" // Moved to title
     for (i = 0; i < x; i++) {
-        icon = "<div class='caticon_left'><span class='material-icons'>thumb_up_alt</span></div>"
+        // Icon hidden for now
+        //icon = "<div class='caticon_left'><span class='material-icons'>thumb_up_alt</span></div>"
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
         if(String(whichVal.node().value)=="payann"){
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
