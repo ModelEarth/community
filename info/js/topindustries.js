@@ -6,12 +6,11 @@
 //}
 var promises = [
     d3.csv("data/industry_ID_list.csv"),
-    d3.tsv("data/c2ga.tsv"),
-    
+    d3.tsv("data/states_processed/industries_state13_naics2.tsv"),
     //d3.tsv("data/c3.tsv"),
-    d3.tsv("data/c4ga.tsv"),
+    d3.tsv("data/states_processed/industries_state13_naics4.tsv"),
     //d3.tsv("data/c5.tsv"),
-    d3.tsv("data/c6ga.tsv"),
+    d3.tsv("data/states_processed/industries_state13_naics6.tsv"),
  
 ]
 
