@@ -157,9 +157,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     // var viewOptions = getFormValues()
     // selectedDataID = parseInt(getKeyByValue(vizDataNames, viewOptions[0]))
-    rightCol = "";
-    text = ""; // <b>Troup County</b><br><br>" // Moved to title
+    let icon = "";
+    let rightCol = "";
+    let text = ""; // <b>Troup County</b><br><br>" // Moved to title
     for (i = 0; i < x; i++) {
+        icon = "<div class='caticon_left'><span class='material-icons'>thumb_up_alt</span></div>"
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
         if(String(whichVal.node().value)=="payann"){
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
@@ -168,7 +170,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         rightCol += " <img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'>";
         //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
 
-        text += "<div class='row'><div class='cell'>" + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
+        text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
     }
     document.getElementById("p1").text = ""; // Clear initial.
     document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
