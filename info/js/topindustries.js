@@ -6,12 +6,12 @@
 //}
 var promises = [
     d3.csv("data/industry_ID_list.csv"),
-    d3.tsv("data/c2ga.tsv"),
-    
+    d3.tsv("data/states_processed/industries_state13_naics2.tsv"),
     //d3.tsv("data/c3.tsv"),
-    d3.tsv("data/c4ga.tsv"),
+    d3.tsv("data/states_processed/industries_state13_naics4.tsv"),
     //d3.tsv("data/c5.tsv"),
-    d3.tsv("data/c6ga.tsv"),
+    d3.tsv("data/states_processed/industries_state13_naics6.tsv"),
+ 
  
 ]
 
@@ -32,13 +32,13 @@ function ready(values) {
     dataObject.industryNames=industryNames;
 
     // Quick hack
-    //let fips = 13285;
-    //if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") { // Bioeconomy Planner
+    let fips = 13285;
+    if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") { // Bioeconomy Planner
         fips = 13305; // Wayne County. To do: loop through array above.
         let theText ="Industries within Wayne County";
         //document.getElementById("infoHeader").text = "Industries within Wayne County";
         document.getElementById("p1").innerHTML = theText;
-   // }
+    }
 
     a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
 
