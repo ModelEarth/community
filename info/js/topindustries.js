@@ -16,6 +16,17 @@ var promises = [
 ]
 
 Promise.all(promises).then(ready)
+//param = loadParams(location.search,location.hash);
+//function for when the geo hash changes
+ function geoChanged(geo){
+    fips = geo.split("US")[1]
+
+            //fips = param["geo"].split("US")[1];
+    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
+
+            //return a;
+
+    }
 
 function ready(values) {
     
@@ -32,15 +43,31 @@ function ready(values) {
     dataObject.industryNames=industryNames;
 
     // Quick hack
-    let fips = 13285;
+    if(param["geo"]){
+        fips = param["geo"].split("US")[1];
+    }else{
+        fips = 13285;
+    }
+    /*
     if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") { // Bioeconomy Planner
         fips = 13305; // Wayne County. To do: loop through array above.
         let theText ="Industries within Wayne County";
         //document.getElementById("infoHeader").text = "Industries within Wayne County";
         document.getElementById("p1").innerHTML = theText;
-    }
+    }*/
 
     a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
+    /*function hashHandler() {
+        if(param["geo"]){
+            fips = param["geo"].split("US")[1];
+            a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
+            //console.log(a)
+            return a;
+        }
+        console.log("ggggggggggggggggggggggggggggggggggggg")
+    }
+        window.addEventListener('hashchange', hashHandler, false);*/
+   
 
 
     //code for what happens when you choose the state and county from drop down
@@ -48,7 +75,14 @@ function ready(values) {
         dataObject.industryData= {
             'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
         }
- 
+        //if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") { // Bioeconomy Planner
+            if (param["geo"]){
+            fips = param["geo"].split("US")[1]; // Wayne County. To do: loop through array above.
+            console.log(fips)}
+            //let theText ="Industries within Wayne County";
+            //document.getElementById("infoHeader").text = "Industries within Wayne County";
+            //document.getElementById("p1").innerHTML = theText;
+        //}
         a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
         //console.log(a)
         return a;
@@ -174,6 +208,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
     }
     document.getElementById("p1").text = ""; // Clear initial.
+    //document.getElementById("p1").innerHTML = "tri"
     document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
     return top_data_list;
 }
