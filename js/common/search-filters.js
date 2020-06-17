@@ -190,7 +190,7 @@ $(document).ready(function () {
 		event.stopPropagation();
 	});
 	$(".filterUL li").click(function(e) {
-		$(".filterBubbleHolder").hide();
+		//$(".filterBubbleHolder").hide();
 		e.preventDefault();
 		$(".filterUL li").removeClass("selected");
 		$(this).addClass("selected");
@@ -199,9 +199,9 @@ $(document).ready(function () {
 		$("#locationDD option[value='" + $(this).data('id') + "']").prop("selected", true).trigger("change");
 		
 		$("#locationStatus").hide();
-		alert($(this).data('id'));
+		//alert($(this).data('id'));
         consoleLog("Call locationFilterChange from .filterUL li click: " + $(this).data('id'));
-		//locationFilterChange("locationFilterChange: " + $(this).data('id'));
+        locationFilterChange($(this).data('id'));
 		updateHash({"loc":$(this).data('id')});
 
 		e.stopPropagation(); // Prevents click on containing #filterClickLocation.
@@ -212,12 +212,14 @@ $(document).ready(function () {
     	$('#topPanelFooter').hide();
     	event.stopPropagation();
     });
-	$('#hideAdvanced').click(function(event) {
+	$(".hideAdvanced").click(function(event) {
 		$(".fieldSelector").hide();
+		$("#filterLocations").hide();
 	});
     $(document).click(function(event) { // Hide open menus
     	if ( !$(event.target).closest( "#goSearch" ).length ) {
-    		$(".fieldSelector").hide(); // Avoid since this occurs when typing text in search field.
+    		// BUGBUG - Reactivate after omitting clicks within location selects
+    		//$(".fieldSelector").hide(); // Avoid since this occurs when typing text in search field.
     	}
     	$('#topPanel').hide();
 	});
@@ -463,9 +465,9 @@ $(document).ready(function () {
 
 function locationFilterChange(selectedValue) {
 
-    //alert("locationFilterChange " + selectedValue);
     consoleLog("locationFilterChange: " + selectedValue);
-
+    $(".geoListHolder > div").hide();
+    $(".geoListCounties").show();
     showSearchClick(); // Display filters
     hideLocationFilters();
 
@@ -489,7 +491,6 @@ function locationFilterChange(selectedValue) {
         //$("#filterClickLocation .filterSelected").html($(this).text()).data('selected', $(this).data('id'));
 
     
-
     if (selectedValue == 'all' || selectedValue == 'state') { // its entire state
         // Reached by clicking "Entire State"
         if(useCookies) {
@@ -534,10 +535,7 @@ function locationFilterChange(selectedValue) {
         }
     }
     if (selectedValue == 'counties') {
-        //alert('showCounties');
-        // BUGBUG - Needed when not initial load. Initial load also causes carto map error from county mini-map.
-        //showCounties();
-
+        showCounties();
     }
     if (selectedValue == 'city') {
         $("#distanceField").show();
@@ -572,6 +570,151 @@ function locationFilterChange(selectedValue) {
         }
     }
 }
+function showCounties() {
+	if ($(".output_table > table").length) {
+		return; // Avoid reloading
+	}
+	//Load in contents of CSV file
+	//d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
+	d3.csv("/community/info/data/usa/GA/GAcounties.csv").then(function(myData,error) {
+		if (error) {
+			alert("error")
+			console.log("Error loading file. " + error);
+		}
+
+		// Data as values, not objects.
+		var myArray = [];
+
+		// Add a new variable, to make it easier to do a color scale.
+		// Alternately, you could extract these values with a map function.
+		var allDifferences = [];
+
+		myData.forEach(function(d, i) {
+
+			d.difference =  d.US_2007_Demand_$;
+
+			// OBJECTID,STATEFP10,COUNTYFP10,GEOID10,NAME10,NAMELSAD10,totalpop18,Reg_Comm,Acres,sq_miles,Label,lat,lon
+			//d.name = ;
+			d.idname = "US" + d.GEOID + "-" + d.NAME + " County";
+
+			//d.perMile = Math.round(d.totalpop18 / d.sq_miles).toLocaleString(); // Breaks sort
+			d.perMile = Math.round(d.totalpop18 / d.sq_miles);
+
+			d.sq_miles = Number(Math.round(d.sq_miles).toLocaleString());
+
+		 	// Add an array to the empty array with the values of each:
+		 	// d.difference, 
+		 	// , d.sq_miles
+	 	 	myArray.push([d.idname, d.totalpop18, d.perMile]);
+
+				// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
+	 	 	allDifferences.push(d.difference);
+
+		});
+		//console.log(allDifferences);
+
+		var table = d3.select(".output_table").append("table");
+
+		var header = table.append("thead").append("tr");
+
+		// Objects to construct the header in code:
+		// The sort_type is for the Jquery sorting function.
+
+		var headerObjs = [
+			{ class: "", column: "name", label: "County", sort_type: "string" },
+			//{ class: "", column: "Reg_Comm,", label: "Region", sort_type: "string" },
+			{ class: "", column: "Population", label: "Population", sort_type: "int" },
+			{ class: "", column: "Per Mile", label: "Per Mile", labelfull: "", sort_type: "int" },
+			//{ class: "", column: "Sq Miles", label: "Sq Miles", labelfull: "", sort_type: "int" },
+		];
+
+		header
+			.selectAll("th")
+			.data(headerObjs)
+			.enter()
+			.append("th")
+
+			.attr("data-sort", function (d) { return d.sort_type; })
+			.attr("class", function (d) { return d.class; })
+			.append("div")
+			.append("span")
+				.text(function(d) { return d.label; });
+
+		var tablebody = table.append("tbody");
+
+		rows = tablebody
+			.selectAll("tr")
+			.data(myArray)
+			.enter()
+			.append("tr");
+
+		// We built the rows using the nested array - now each row has its own array.
+
+		// The scale - start at 0 or at lowest number
+		console.log('Extent is ', d3.extent(allDifferences));
+
+		var colorScale = d3.scaleLinear()
+			.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
+			.range(["#bcdbf7","#c00"]);
+
+		cells = rows.selectAll("td")
+			// each row has data associated; we get it and enter it for the cells.
+			.data(function(d) {
+				return d;
+			})
+			.enter()
+			.append("td")
+			.append("div")
+			.style("border-left-color", function(d,i) { // Was background-color
+				// for the last elements in the row, we color the background:
+				if (i >= 2) { // All the columns with colored boxes
+					return colorScale(d);
+				}
+			})
+
+			.append("div")
+			//.text(function(d,i) { // All columns have a div with a value from CSV data
+			//		return d;
+			//})
+			.html(function(d,i) {
+				if (i == 0) {
+					return "<input type='checkbox' id='" + d.split('-')[0] + "' class='geo' onclick='locClick(this)'/> <label for='" + d.split('-')[0] + "'>" + d.split('-')[1] + "</label>";
+				} else {
+					return d;
+				}
+			})			
+			;
+
+
+		// load the function file you need before you call it...
+		loadScript('/community/start/dataset/stupidtable.js', function(results) { 
+				// jquery sorting applied to it - could be done with d3 and events.
+			$("table").stupidtable();
+			$("table2").stupidtable();
+		});
+
+		// INIT AT TIME OF INITIAL COUNTY LIST DISPLAY
+		// Set checkboxes based on param (which may be a hash, query or include parameter)
+		updateLoc(param.geo);
+	});
+}
+function updateLoc(geo) {
+	$(".geo").prop('checked', false);
+	if (geo) {
+		locationFilterChange("counties");
+		let sectors = geo.split(",");
+        for(var i = 0 ; i < sectors.length ; i++) {
+        	$("#" + sectors[i]).prop('checked', true);
+        }
+		
+    }
+}
+// INIT
+locationFilterChange("counties"); 
+$("#filterClickLocation .filterSelected").html("Counties");
+$(".filterUL li").removeClass("selected");
+$(".filterUL li").find("[data-id='counties']").addClass("selected"); // Not working
+
 function showSearchClick() {
     //if () {
         //$('.').trigger("click");
