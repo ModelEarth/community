@@ -100,6 +100,16 @@ h1 {
 </style>
   
 
+<script>
+	// INIT
+	var hash = getHash(); // Include all existing
+	$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
+		param = loadParams(location.search,location.hash); // param is declared in common.js
+		updateLoc(param.geo); // Check counties. (search-filters.js)
+		geoChanged(param.geo); // Apply county filter to industry list (topindustries.js)
+	});
+</script>
+
 </head>
 
 <body>
@@ -340,18 +350,7 @@ function loadScriptXXXXXX(url, callback)
 */
 
 
-// INIT
 
-//var param = {};
-//param = loadParams(location.search,location.hash);
-var hash = getHash(); // Include all existing
-
-window.onhashchange = function() { // Not working, but works in /community/impact/index.html
-	console.log("geo: " + param.geo);
-	param = loadParams(location.search,location.hash); // param is declared in common.js
-	updateLoc(param.geo); // Check counties. (search-filters.js)
-	geoChanged(param.geo); // Apply county filter to industry list (topindustries.js)
-}
 
 
 if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") {
