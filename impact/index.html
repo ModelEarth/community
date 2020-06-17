@@ -177,7 +177,7 @@
             <div class="filterBubble">
 
               <div id="findWhat" style="min-width: 176px">
-                <div id="hideAdvanced" style="float:right;cursor:pointer">&#10005;</div>
+                <div class="hideAdvanced" style="float:right;cursor:pointer">&#10005;</div>
 
                 <div style="display:none;float:left;margin-right:20px">
                   <input type="checkbox" name="findLocation" id="findLocation" value="findLocation" checked><label for="findLocation" class="filterCheckboxTitle">Search Listings</label><br>
@@ -239,28 +239,47 @@
                 -->
 
                 <div class="filterBubble" style="pointer-events: auto;"><!-- Catch click through -->
-                    <input id="l" autocomplete="off" style="width:100%;max-width:400px;padding-right:27px;margin-bottom:10px" class="filterClick mobileWide textInput si-input" type="text" value="" onkeyup="return SearchEnter(event);" />
+                    <div class="hideAdvanced" style="float:right;cursor:pointer">&#10005;</div>
 
-                    <ul class="filterUL" style="margin-top:0px;clear:both;min-width:120px;float:left">
-                      <li data-id="all" style="display:none"><a href="#">All</a></li>
-                        <li data-id="country:us"><a href="#">USA</a></li>
-                        <!--
-                        <li data-id="state" class="selected" style="white-space:nowrap"><a href="#">Entire State</a></li>
-                        -->
-                        <li data-id="state:ga" class="selected" style="white-space:nowrap"><a href="#">Georgia</a></li>
-                        
-                        
-                        <li data-id="city"><a href="#">Cities</a></li>
-                        <li data-id="counties"><a href="#">Counties</a></li>
-                        <li data-id="zip" style="white-space:nowrap"><a href="#">Zip Code</a></li>
-                        
-                        <li data-id="custom" class="hideFilter"><a href="#">Lat/Lon</a></li>
-                        <li data-id="current" class="hideFilter"><a href="#">Nearby</a></li>
-                        
-                    </ul>
-                    <div style="float:left; border:1px solid #ccc;padding:20px;max-width:150px">
-                        <b>Mock-Up</b><br>
-                        Lists to select countries, states/provinces, counties, cities and postal/zip codes will be displayed here.
+                    <input id="l" autocomplete="off" style="width:100%;max-width:400px;padding-right:27px;margin-bottom:10px" class="filterClick mobileWide textInput si-input" type="text" value="" onkeyup="return SearchEnter(event);" />
+                    <div style="float:left; clear:both">
+                      <ul class="filterUL" style="margin-top:0px;clear:both;min-width:120px;float:left">
+                        <li data-id="all" style="display:none"><a href="#">All</a></li>
+                          <li data-id="country:us"><a href="#">USA</a></li>
+                          <!--
+                          <li data-id="state" class="selected" style="white-space:nowrap"><a href="#">Entire State</a></li>
+                          -->
+                          <li data-id="state:ga" class="selected" style="white-space:nowrap"><a href="#">Georgia</a></li>
+                          
+                          
+                          <li data-id="city"><a href="#">Cities</a></li>
+                          <li data-id="counties"><a href="#">Counties</a></li>
+                          <li data-id="zip" style="white-space:nowrap"><a href="#">Zip Code</a></li>
+                          
+                          <li data-id="custom" class="hideFilter"><a href="#">Lat/Lon</a></li>
+                          <li data-id="current" class="hideFilter"><a href="#">Nearby</a></li>
+                          
+                      </ul>
+                      <div style="overflow:auto; border:1px solid #ccc; padding:20px;" class="geoListHolder height100">
+                          <div class="geoListIntro" style="max-width:150px">
+                            <b>Click Counties</b><br>
+                            Lists to select states, cities and postal codes will be displayed here.
+                          </div>
+
+                          <div class="listHolder">
+                            <!--Cities -->
+                          </div>
+
+                          <div class="geoListCounties" style="overflow:scroll">
+                            <!-- Activate or remove
+                            <div style="float:right;margin:12px 0px 0 12px">
+                              <input id="showValues" type="checkbox" checked> Show values
+                            </div>
+                            -->
+                            <div style="width:100%" class="output_table rotateHeader">
+                            </div>
+                          </div>
+                      </div>
                     </div>
                 </div>
 
@@ -340,7 +359,7 @@
         <div class="filterLabel">
           <div class="filterLabelMain">Distance</div></div>
 
-          <select class="distance triggerSearch">
+          <select class="distance triggerSearch filterClick">
               <option value="">Distance...</option>
               <option value="1">1 Mile</option>
               <option value="2">2 Miles</option>

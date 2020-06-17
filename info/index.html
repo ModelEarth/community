@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
 <meta charset="utf-8">
 <title>Community Info</title>
@@ -21,12 +21,14 @@
 <!-- PRODUCTION -->
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
 <script src="../../io/charts/useeio/lib/useeio_widgets.js"></script>
-<script type="text/javascript" src="js/topindustries.js"></script>
+
 <!-- LOCAL DEV -->
 <!--
 <link rel="stylesheet" type="text/css" href="../../useeio-widgets/build/widgets.css">
 <script src="../../useeio-widgets/build/lib/useeio_widgets.js"></script>
 -->
+
+<script type="text/javascript" src="js/topindustries.js"></script>
 
 <!-- After USEEIO to alter css -->
 <link rel="stylesheet" href="../css/community.css" />
@@ -78,157 +80,6 @@ h1 {
 }
 #pageColumns > div {
 	padding:20px;
-}
-#output_table {
-    border-collapse: collapse;
-}
-#output_table table {
-    width:100%;
-}
-#output_table th {
-    white-space: nowrap;
-}
-th {
-    padding: 5px;
-    cursor:pointer;
-    vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
-}
-
-td {
-	border-bottom: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-}
-
-
-/* Wide screen width */
-.rotateHeader {
-  display: block;
-  
-}
-th {
-	text-align: left; 
-}
-th.rotate {
-  heightX: 320px;
-  height: 240px;
-  height: 118px;
-
-  white-space: nowrap;
-  vertical-align: bottom;
-  text-align: left; 
-  padding: 0px;
-}
-th.rotate > div {
-  transform: 
-    translate(0px, 0px) /* 25px, 51px - To shift right and up. */
-    rotate(315deg); /* 45 is really 360 - 45 */
-  width: 22px;
-  padding: 4px;
-  padding-top: 5px;
-}
-th.rotate > div > span {
-  padding: 5px 10px;
-  font-weight: 400;
-  font-size: 13.5px;
-  display:block;
-  width:130px;
-  border-bottomX: 1px solid #dfdfdf;
-}
-th.rotate > div > span:hover {
-  background: #eee;
-  cursor: pointer;
-}
-.impactTitle {
-    padding-top: 34px;
-}
-.th_title {
-    width: 50px;
-}
-.th_title > div {
-  float:right; /* Allows for space bewteen sections */
-}
-.th_title > div > span, .th_title > div > span:hover {
-  border-bottomX: 1px solid #777 !important;
-  border-top: 1px solid #333;
-  backgroundXXXX: #ddd !important;
-  margin-bottomX: 4px;
-  cursor: default;
-}
-th.rotate > div > span > span {
-    display:none; /* Hide extra after the title */
-}
-td {
-	padding:10px;
-}
-
-
-td:nth-child(n+2) {
-    padding: 2px;
-}
-td:first-child {
-	min-width: 200px;
-}
-td:first-child > div {
-	max-height: 20px;
-	overflow: hidden;
-}
-
-/* Color rect */
-/*
-td:nth-child(n+2) > div {
-	border-left-style: solid;
-	border-left-width: 18px;
-	padding-left: 0px;
-    max-width:0px;
-}
-*/
-
-td:nth-child(n+2) > div > div {
-    /* visibility: hidden; */
-}
-
-/* Wide Screen Width */
-@media (min-width: 1400px) {
-  .rotateHeaderHolder {
-    margin-rightX:80px;
-  }
-}
-/* Standard Screen Width */
-@media (max-width: 1399px) {
-  #output_table {
-  	margin-right:25px;
-  }
-  .rotate {
-  	margin-right:20px;
-  }
-  .rotateHeader {
-    overflowX: auto;
-  }
-  th.rotate {
-    height: 160px;
-  }
-  th.rotate > div {
-    transform: 
-      translate(0px, 0px) /* 25px, 51px - To shift right and up. */
-      rotate(270deg); /* 45 is really 360 - 45 */
-    width: 15px;
-    padding: 0px;
-  }
-  th.rotate > div > span {
-    padding: 5px 10px;
-  }
-  .th_title {
-      width: 30px;
-  }
-  .th_title > div > span {
-    
-    font-size: 14px !important;
-    backgroundXXX: #eee;
-  }
-  .th_title > div > span, .th_title > div > span:hover {
-    margin-bottomX: 0px;
-  }
 }
 
 .mainColumn {
@@ -350,7 +201,6 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		<div style="padding:5px">
 			<div id="p1">
 				
-				<div id="sector_list"><div class="row"><div class="cell">314110</div><div class="cell">Carpet and Rug Mills</div><div class="right"><div>$102.19 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">336390</div><div class="cell">Other Motor Vehicle Parts Manufacturing</div><div class="right"><div>$62.68 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">561320</div><div class="cell">Temporary Help Services</div><div class="right"><div>$57.80 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">551114</div><div class="cell">Corporate, Subsidiary, and Regional Managing Offices</div><div class="right"><div>$57.37 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">621111</div><div class="cell">Offices of Physicians (except Mental Health Specialists)</div><div class="right"><div>$50.52 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">238210</div><div class="cell">Electrical Contractors and Other Wiring Installation Contractors</div><div class="right"><div>$14.35 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">238220</div><div class="cell">Plumbing, Heating, and Air-Conditioning Contractors </div><div class="right"><div>$13.88 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">441110</div><div class="cell">New Car Dealers</div><div class="right"><div>$13.74 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">722513</div><div class="cell">Limited-Service Restaurants</div><div class="right"><div>$12.73 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">722511</div><div class="cell">Full-Service Restaurants</div><div class="right"><div>$11.76 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">517110</div><div class="cell">Wired Telecommunications Carriers</div><div class="right"><div>$11.31 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">445110</div><div class="cell">Supermarkets and Other Grocery (except Convenience) Stores</div><div class="right"><div>$10.78 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">561720</div><div class="cell">Janitorial Services</div><div class="right"><div>$10.06 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">621210</div><div class="cell">Offices of Dentists</div><div class="right"><div>$10.03 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">522110</div><div class="cell">Commercial Banking</div><div class="right"><div>$8.27 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">446110</div><div class="cell">Pharmacies and Drug Stores</div><div class="right"><div>$7.30 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">524210</div><div class="cell">Insurance Agencies and Brokerages</div><div class="right"><div>$7.11 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">332710</div><div class="cell">Machine Shops</div><div class="right"><div>$6.84 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">813110</div><div class="cell">Religious Organizations</div><div class="right"><div>$6.36 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div><div class="row"><div class="cell">236220</div><div class="cell">Commercial and Institutional Building Construction </div><div class="right"><div>$6.32 million <img src="http://localhost:8887/community/impact/img/plus-minus.gif" class="plus-minus"></div></div></div></div>
 
 			</div>
 		</div>
@@ -429,16 +279,15 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 
 <div style="margin:0 30px 0 30px; max-width: 2000px;">
-	<div style="float:right;margin:12px 0px 0 12px">
-		<input id="showValues" type="checkbox" checked> Show values
-	</div>
-
+	
+	<!--
 	<h1 class="module_h1">My Local Area</h1>
 
 	Click columns to sort. Choose geo to define your local area. (Activating shortly.)<br><br>
 
-	<div id="output_table" style="width:100%" class="rotateHeader"></div>
+	<div style="width:100%" class="output_table2 rotateHeader"></div>
 	<br>
+	-->
 
 	<!--
 		<div style="padding:40px">
@@ -462,8 +311,11 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 
 <script type="text/javascript">
+'use strict'; // Optional, make sure we are declaring variables.
+
+/*
 // COMMON - also resides in embed-map.js
-function loadScript(url, callback)
+function loadScriptXXXXXX(url, callback)
 {
   if (!document.getElementById(url)) { // Prevents multiple loads.
     var script = document.createElement('script');
@@ -484,20 +336,23 @@ function loadScript(url, callback)
   }
   // Nested calls are described here: https://books.google.com/books?id=ZOtVCgAAQBAJ&pg=PA6&lpg=PA6
 }
-
-
-
-var param = {};
-var hash = getHash(); // Include all existing
-param = loadParams(location.search,location.hash);
-window.onhashchange = function() {
-	param = loadParams(location.search,location.hash);
-	console.log("UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU");
-	resetForm();
-
-
-}
 // END COMMON
+*/
+
+
+// INIT
+
+//var param = {};
+//param = loadParams(location.search,location.hash);
+var hash = getHash(); // Include all existing
+
+window.onhashchange = function() { // Not working, but works in /community/impact/index.html
+	console.log("geo: " + param.geo);
+	param = loadParams(location.search,location.hash); // param is declared in common.js
+	updateLoc(param.geo); // Check counties. (search-filters.js)
+	geoChanged(param.geo); // Apply county filter to industry list (topindustries.js)
+}
+
 
 if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") {
 	loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
@@ -507,142 +362,6 @@ if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") {
 	loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
 }
 
-//Load in contents of CSV file
-//d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
-d3.csv("data/usa/GA/GAcounties.csv").then(function(myData,error) {
-	if (error) {
-		alert("error")
-		console.log("Error loading file. " + error);
-	}
-
-	// Data as values, not objects.
-	var myArray = [];
-
-	// Add a new variable, to make it easier to do a color scale.
-	// Alternately, you could extract these values with a map function.
-	var allDifferences = [];
-
-	myData.forEach(function(d, i) {
-
-		d.difference =  d.US_2007_Demand_$;
-
-		// OBJECTID,STATEFP10,COUNTYFP10,GEOID10,NAME10,NAMELSAD10,totalpop18,Reg_Comm,Acres,sq_miles,Label,lat,lon
-		//d.name = ;
-		d.idname = "US" + d.GEOID + "-" + d.NAME + " County";
-
-		//d.perMile = Math.round(d.totalpop18 / d.sq_miles).toLocaleString(); // Breaks sort
-		d.perMile = Math.round(d.totalpop18 / d.sq_miles);
-
-		d.sq_miles = Number(Math.round(d.sq_miles).toLocaleString());
-
-	 	// Add an array to the empty array with the values of each:
-	 	// d.difference, 
-	 	// , d.sq_miles
- 	 	myArray.push([d.idname, d.totalpop18, d.perMile]);
-
-			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
- 	 	allDifferences.push(d.difference);
-
-	});
-	//console.log(allDifferences);
-
-	var table = d3.select("#output_table").append("table");
-
-	var header = table.append("thead").append("tr");
-
-	// Objects to construct the header in code:
-	// The sort_type is for the Jquery sorting function.
-
-	var headerObjs = [
-		{ class: "", column: "name", label: "County", sort_type: "string" },
-		//{ class: "", column: "Reg_Comm,", label: "Region", sort_type: "string" },
-		{ class: "", column: "Population", label: "Population", sort_type: "int" },
-		{ class: "", column: "Per Mile", label: "Per Mile", labelfull: "", sort_type: "int" },
-		//{ class: "", column: "Sq Miles", label: "Sq Miles", labelfull: "", sort_type: "int" },
-	];
-
-	header
-		.selectAll("th")
-		.data(headerObjs)
-		.enter()
-		.append("th")
-
-		.attr("data-sort", function (d) { return d.sort_type; })
-		.attr("class", function (d) { return d.class; })
-		.append("div")
-		.append("span")
-			.text(function(d) { return d.label; });
-
-	var tablebody = table.append("tbody");
-
-	rows = tablebody
-		.selectAll("tr")
-		.data(myArray)
-		.enter()
-		.append("tr");
-
-	// We built the rows using the nested array - now each row has its own array.
-
-	// The scale - start at 0 or at lowest number
-	console.log('Extent is ', d3.extent(allDifferences));
-
-	var colorScale = d3.scaleLinear()
-		.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
-		.range(["#bcdbf7","#c00"]);
-
-	cells = rows.selectAll("td")
-		// each row has data associated; we get it and enter it for the cells.
-		.data(function(d) {
-			return d;
-		})
-		.enter()
-		.append("td")
-		.append("div")
-		.style("border-left-color", function(d,i) { // Was background-color
-			// for the last elements in the row, we color the background:
-			if (i >= 2) { // All the columns with colored boxes
-				return colorScale(d);
-			}
-		})
-
-		.append("div")
-		//.text(function(d,i) { // All columns have a div with a value from CSV data
-		//		return d;
-		//})
-		.html(function(d,i) {
-			if (i == 0) {
-				return "<input type='checkbox' id='" + d.split('-')[0] + "' class='geo' onclick='locClick(this)'/> <label for='" + d.split('-')[0] + "'>" + d.split('-')[1] + "</label>";
-			} else {
-				return d;
-			}
-		})			
-		;
-
-
-	// load the function file you need before you call it...
-	loadScript('../start/dataset/stupidtable.js', function(results) { 
-			// jquery sorting applied to it - could be done with d3 and events.
-		$("table").stupidtable();
-		});
-
-	// INIT
-	// Set checkboxes based on param (which may be a hash, query or include parameter)
-	updateLoc(param.geo);
-});
-function updateLoc(geo) {
-	$(".geo").prop('checked', false);
-	if (geo) {
-		let sectors = geo.split(",");
-        for(var i = 0 ; i < sectors.length ; i++) {
-            $("#" + sectors[i]).prop('checked', true);
-        }
-
-    }
-}
-function resetForm() {
-	updateLoc(param.geo);
-
-}
 function locClick(which) {
 	//console.log(which.id);
 	hash.geo = $('.geo:checked').map(function() {return this.id;}).get().join(','); 
@@ -657,26 +376,26 @@ document.getElementById('showValues').onclick = function() {
     // access properties using this keyword
     if ( this.checked ) {
         // if checked ...
-        $("#output_table th.rotate > div > span").css("font-weight","600");
-        $("#output_table td:nth-child(n+2) > div > div").css("visibility","visible");
-        $("#output_table td:nth-child(n+2) > div > div").css("overflow","none");
-        $("#output_table td:nth-child(n+2) > div").css("max-width","none");
-        $("#output_table td:nth-child(n+2) > div").css("padding-left","5px");
+        $(".output_table th.rotate > div > span").css("font-weight","600");
+        $(".output_table td:nth-child(n+2) > div > div").css("visibility","visible");
+        $(".output_table td:nth-child(n+2) > div > div").css("overflow","none");
+        $(".output_table td:nth-child(n+2) > div").css("max-width","none");
+        $(".output_table td:nth-child(n+2) > div").css("padding-left","5px");
 
         // Restore hidden columns
-        $("#output_table th:nth-child(n+2)").css("display","table-cell");
-        $("#output_table td:nth-child(n+2)").css("display","table-cell");
+        $(".output_table th:nth-child(n+2)").css("display","table-cell");
+        $(".output_table td:nth-child(n+2)").css("display","table-cell");
         
     } else {
-        $("#output_table th.rotate > div > span").css("font-weight","400");
-        $("#output_table td:nth-child(n+2) > div > div").css("visibility","hidden");
-        $("#output_table td:nth-child(n+2) > div > div").css("overflow","auto");
-        $("#output_table td:nth-child(n+2) > div").css("max-width","0px");
-        $("#output_table td:nth-child(n+2) > div").css("padding-left","0px");
+        $(".output_table th.rotate > div > span").css("font-weight","400");
+        $(".output_table td:nth-child(n+2) > div > div").css("visibility","hidden");
+        $(".output_table td:nth-child(n+2) > div > div").css("overflow","auto");
+        $(".output_table td:nth-child(n+2) > div").css("max-width","0px");
+        $(".output_table td:nth-child(n+2) > div").css("padding-left","0px");
 
         // Hide entire column
-        $("#output_table th:nth-child(n+2)").css("display","none");
-        $("#output_table td:nth-child(n+2)").css("display","none");
+        $(".output_table th:nth-child(n+2)").css("display","none");
+        $(".output_table td:nth-child(n+2)").css("display","none");
     }
 };
 function getHash() {

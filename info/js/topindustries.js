@@ -11,14 +11,13 @@ var promises = [
     d3.tsv("data/states_processed/industries_state13_naics4.tsv"),
     //d3.tsv("data/c5.tsv"),
     d3.tsv("data/states_processed/industries_state13_naics6.tsv"),
- 
- 
 ]
 
-Promise.all(promises).then(ready)
+Promise.all(promises).then(ready);
+
 //param = loadParams(location.search,location.hash);
 //function for when the geo hash changes
- function geoChanged(geo){
+function geoChanged(geo){
     if (geo.includes(",")){
         geos=geo.split(",")
         fips=[]
@@ -35,10 +34,10 @@ Promise.all(promises).then(ready)
 
             //return a;
 
-    }
+}
 
 function ready(values) {
-    
+
     dataObject={}
     industryData = {
         'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
@@ -86,7 +85,7 @@ function ready(values) {
         console.log("ggggggggggggggggggggggggggggggggggggg")
     }
         window.addEventListener('hashchange', hashHandler, false);*/
-   
+
 
 
     //code for what happens when you choose the state and county from drop down
