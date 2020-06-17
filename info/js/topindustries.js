@@ -168,19 +168,28 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     selectedFIPS = fips
     if(Array.isArray(fips)){
                 for (var i = 0; i<fips.length; i++){
-                    Object.keys(dataSet.ActualRate).forEach( this_key=>{
+                Object.keys(dataSet.ActualRate).forEach( this_key=>{
                 // this_key = parseInt(d.split("$")[1])
                 if (this_key!=1){
                     this_rate = dataSet.ActualRate[this_key]
                     if (this_rate.hasOwnProperty(fips[i])){ 
-                        rates_dict[this_key] = parseFloat(this_rate[fips[i]][whichVal.node().value])
-                        rates_list.push(parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                        if(rates_dict[this_key]){
+                            rates_list.push(rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                            rates_dict[this_key] = rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value])      
+                        }else{
+                            rates_dict[this_key] = parseFloat(this_rate[fips[i]][whichVal.node().value])
+                            rates_list.push(parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                        }
+                        
                     } else {
+                        if(rates_dict[this_key]){
+                            console.log("killme")
+                        }else{
                         rates_dict[this_key] = 0.0
-                        rates_list.push(0.0)
+                        rates_list.push(0.0)}
                     }
                 }
-            })
+            })  
         }
     }else{
     Object.keys(dataSet.ActualRate).forEach( this_key=>{
@@ -198,7 +207,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     })
 }
     rates_list = rates_list.sort(function(a,b) { return a - b}).reverse()
-    console.log(rates_list)
+    console.log(rates_dict)
     top_data_list = []
     top_data_ids = []
     naCount = 1
