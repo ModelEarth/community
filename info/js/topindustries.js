@@ -216,7 +216,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     if(Array.isArray(fips)){
 
        
-            for (var i=0; i<3; i++) {
+            for (var i=0; i<5; i++) {
             
                 id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                 console.log("ID"+id)
@@ -290,7 +290,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     let icon = "";
     let rightCol = "";
     let text = ""; // <b>Troup County</b><br><br>" // Moved to title
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 5; i++) {
         // Icon hidden for now
         //icon = "<div class='caticon_left'><span class='material-icons'>thumb_up_alt</span></div>"
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
