@@ -75,6 +75,7 @@ function ready(values) {
     }*/
 
     a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#sortFactor"))
+    //console.log(a)
     /*function hashHandler() {
         if(param["geo"]){
             fips = param["geo"].split("US")[1];
@@ -184,9 +185,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                     } else {
                         if(rates_dict[this_key]){
                             console.log("killme")
+                            rates_dict[this_key] = rates_dict[this_key]+0.0
+                            rates_list.push(rates_dict[this_key]+0.0)
                         }else{
                         rates_dict[this_key] = 0.0
-                        rates_list.push(0.0)}
+                        rates_list.push(0.0)
+                    }
                     }
                 }
             })  
@@ -217,18 +221,20 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     x=Math.min(howMany,rates_list.length)
     if(Array.isArray(fips)){
 
-       
+            
             for (var i=0; i<x; i++) {
             
                 id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                 console.log("ID"+id)
-                console.log("DATASETID"+dataSet.ActualRate[id])
+                //console.log("DATASETID"+dataSet.ActualRate[id])
+                
                 delete rates_dict[id]
 
                 // console.log(rates_list)
                 // console.log(rates_dict)
                 // console.log(dataSet.ActualRate)
                 // console.log(id)
+
                 rateInFips=0
                 for (var j = 0; j<fips.length; j++){ 
                     //console.log("fffffffffffffffff"+dataSet.ActualRate[id][fips[j]][whichVal.node().value])
@@ -238,11 +244,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                         rateInFips = rateInFips+parseFloat(dataSet.ActualRate[id][fips[j]][whichVal.node().value])
                         //}
                         naicscode = dataSet.ActualRate[id][fips[j]]['relevant_naics']
-                        console.log(naicscode)
-                    } 
+                        //console.log(naicscode)
+                     } 
                     }
                 }
                     // var top
+                    if(dataNames[id]){
                     if (rateInFips == null) {
                         rateInFips = 1
                         top_data_list.push(
@@ -253,7 +260,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                             {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
                         )
                         top_data_ids.push(id)
-                    }
+                    }}
             
         }
         //console.log("ttretertert"+top_data_list[0][whichVal.node().value])
@@ -299,7 +306,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     let icon = "";
     let rightCol = "";
     let text = ""; // <b>Troup County</b><br><br>" // Moved to title
-    for (i = 0; i < x; i++) {
+    y=top_data_ids.length
+    for (i = 0; i < y; i++) {
         // Icon hidden for now
         //icon = "<div class='caticon_left'><span class='material-icons'>thumb_up_alt</span></div>"
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
@@ -315,6 +323,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     document.getElementById("p1").text = ""; // Clear initial.
     //document.getElementById("p1").innerHTML = "tri"
     document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
+
     return top_data_list;
 }
 
