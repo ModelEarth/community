@@ -111,7 +111,7 @@ function ready(values) {
             //document.getElementById("infoHeader").text = "Industries within Wayne County";
             //document.getElementById("p1").innerHTML = theText;
         //}
-        a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
+        a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#sortFactor"))
         //console.log(a)
         return a;
 
