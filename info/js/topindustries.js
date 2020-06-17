@@ -222,7 +222,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     if(Array.isArray(fips)){
 
             
-            for (var i=0; i<x; i++) {
+            for (var i=0; i<rates_list.length; i++) {
             
                 id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                 console.log("ID"+id)
@@ -306,7 +306,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     let icon = "";
     let rightCol = "";
     let text = ""; // <b>Troup County</b><br><br>" // Moved to title
-    y=top_data_ids.length
+    y=Math.min(howMany, top_data_ids.length)
     for (i = 0; i < y; i++) {
         // Icon hidden for now
         //icon = "<div class='caticon_left'><span class='material-icons'>thumb_up_alt</span></div>"
