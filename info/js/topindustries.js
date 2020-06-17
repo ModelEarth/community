@@ -19,10 +19,19 @@ Promise.all(promises).then(ready)
 //param = loadParams(location.search,location.hash);
 //function for when the geo hash changes
  function geoChanged(geo){
-    fips = geo.split("US")[1]
+    if (geo.includes(",")){
+        geos=geo.split(",")
+        fips=[]
+        for (var i = 0; i<geos.length; i++){
+            fips.push(geos[i].split("US")[1])
+        }
+    }else{
+        fips = geo.split("US")[1]
+    }
+
 
             //fips = param["geo"].split("US")[1];
-    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
+    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#sortFactor"))
 
             //return a;
 
@@ -44,7 +53,16 @@ function ready(values) {
 
     // Quick hack
     if(param["geo"]){
-        fips = param["geo"].split("US")[1];
+        geo=param["geo"]
+        if (geo.includes(",")){
+            geos=geo.split(",")
+            fips=[]
+            for (var i = 0; i<geos.length; i++){
+                fips.push(geos[i].split("US")[1])
+            }
+        }else{
+            fips = geo.split("US")[1]
+        }
     }else{
         fips = 13285;
     }
@@ -56,7 +74,7 @@ function ready(values) {
         document.getElementById("p1").innerHTML = theText;
     }*/
 
-    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, String(fips), 20, d3.select("#sortFactor"))
+    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#sortFactor"))
     /*function hashHandler() {
         if(param["geo"]){
             fips = param["geo"].split("US")[1];
@@ -77,7 +95,16 @@ function ready(values) {
         }
         //if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") { // Bioeconomy Planner
             if (param["geo"]){
-            fips = param["geo"].split("US")[1]; // Wayne County. To do: loop through array above.
+                geo=param["geo"]
+                if (geo.includes(",")){
+                    geos=geo.split(",")
+                    fips=[]
+                    for (var i = 0; i<geos.length; i++){
+                        fips.push(geos[i].split("US")[1])
+                    }
+                }else{
+                    fips = geo.split("US")[1]
+                }
             console.log(fips)}
             //let theText ="Industries within Wayne County";
             //document.getElementById("infoHeader").text = "Industries within Wayne County";
@@ -134,11 +161,28 @@ function formatIndustryData(rawData) {
 
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
+    console.log("myfips"+fips)
     rates_dict = {}
     rates_list = []
 
     selectedFIPS = fips
-
+    if(Array.isArray(fips)){
+                for (var i = 0; i<fips.length; i++){
+                    Object.keys(dataSet.ActualRate).forEach( this_key=>{
+                // this_key = parseInt(d.split("$")[1])
+                if (this_key!=1){
+                    this_rate = dataSet.ActualRate[this_key]
+                    if (this_rate.hasOwnProperty(fips[i])){ 
+                        rates_dict[this_key] = parseFloat(this_rate[fips[i]][whichVal.node().value])
+                        rates_list.push(parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                    } else {
+                        rates_dict[this_key] = 0.0
+                        rates_list.push(0.0)
+                    }
+                }
+            })
+        }
+    }else{
     Object.keys(dataSet.ActualRate).forEach( this_key=>{
         // this_key = parseInt(d.split("$")[1])
         if (this_key!=1){
@@ -152,9 +196,9 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             }
         }
     })
-
+}
     rates_list = rates_list.sort(function(a,b) { return a - b}).reverse()
-
+    console.log(rates_list)
     top_data_list = []
     top_data_ids = []
     naCount = 1
