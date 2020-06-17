@@ -492,7 +492,10 @@ var hash = getHash(); // Include all existing
 param = loadParams(location.search,location.hash);
 window.onhashchange = function() {
 	param = loadParams(location.search,location.hash);
+	console.log("UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU");
 	resetForm();
+
+
 }
 // END COMMON
 
@@ -633,15 +636,22 @@ function updateLoc(geo) {
         for(var i = 0 ; i < sectors.length ; i++) {
             $("#" + sectors[i]).prop('checked', true);
         }
+
     }
 }
 function resetForm() {
 	updateLoc(param.geo);
+
 }
 function locClick(which) {
 	//console.log(which.id);
 	hash.geo = $('.geo:checked').map(function() {return this.id;}).get().join(','); 
 	updateHash();
+	if(window.location.hash.includes("geo=US")){
+		param=loadParams(location.search,location.hash);
+		//console.log(param["geo"])
+		geoChanged(param["geo"])
+	}
 }
 document.getElementById('showValues').onclick = function() {
     // access properties using this keyword
@@ -678,16 +688,19 @@ function getHash() {
         if (p.length != 2) continue;
         b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
     }
+
     return b;
     })(window.location.hash.substr(1).split('&'));
 }
 
 function updateHash() {
 	// Remove blank attributes
+
     for (var i in hash) {
       if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
         delete hash[i];
       }
+
     }
 
     var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
@@ -700,6 +713,7 @@ function updateHash() {
         //console.log("Update URL to: " + window.location.pathname + window.location.search + queryString);
         window.history.pushState("", searchTitle, window.location.pathname + window.location.search + queryString);
     }
+
 }
 </script>
 
