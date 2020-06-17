@@ -208,6 +208,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 }
     rates_list = rates_list.sort(function(a,b) { return a - b}).reverse()
     console.log(rates_list)
+    console.log("leeeen"+rates_list.length)
+    console.log("more len"+rates_list.length)
     console.log(rates_dict)
     top_data_list = []
     top_data_ids = []
@@ -216,7 +218,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     if(Array.isArray(fips)){
 
        
-            for (var i=0; i<5; i++) {
+            for (var i=0; i<x; i++) {
             
                 id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                 console.log("ID"+id)
@@ -227,29 +229,36 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 // console.log(rates_dict)
                 // console.log(dataSet.ActualRate)
                 // console.log(id)
+                rateInFips=0
                 for (var j = 0; j<fips.length; j++){ 
-                if (dataSet.ActualRate[id].hasOwnProperty(fips[j])) {
-                    rateInFips = dataSet.ActualRate[id][fips[j]][whichVal.node().value]
-                    naicscode = dataSet.ActualRate[id][fips[j]]['relevant_naics']
-                    console.log(naicscode)
-                } else {
-                    rateInFips = 0
+                    //console.log("fffffffffffffffff"+dataSet.ActualRate[id][fips[j]][whichVal.node().value])
+                   if(dataSet.ActualRate[id]){ 
+                    if (dataSet.ActualRate[id].hasOwnProperty(fips[j])) {
+                        //if(dataSet.ActualRate[id][fips[j]][whichVal.node().value]){
+                        rateInFips = rateInFips+parseFloat(dataSet.ActualRate[id][fips[j]][whichVal.node().value])
+                        //}
+                        naicscode = dataSet.ActualRate[id][fips[j]]['relevant_naics']
+                        console.log(naicscode)
+                    } 
+                    }
                 }
-                
-                // var top
-                if (rateInFips == null) {
-                    rateInFips = 1
-                    top_data_list.push(
-                        {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
-                    )
-                }  else {
-                    top_data_list.push(
-                        {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
-                    )
-                    top_data_ids.push(id)
-                }
-            }
+                    // var top
+                    if (rateInFips == null) {
+                        rateInFips = 1
+                        top_data_list.push(
+                            {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
+                        )
+                    }  else {
+                        top_data_list.push(
+                            {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
+                        )
+                        top_data_ids.push(id)
+                    }
+            
         }
+        //console.log("ttretertert"+top_data_list[0][whichVal.node().value])
+        //console.log("2ttretertert"+top_data_list[1][whichVal.node().value])
+        //console.log("3ttretertert"+top_data_list[2][whichVal.node().value])
     }else{
         for (var i=0; i<x; i++) {
 
@@ -290,7 +299,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     let icon = "";
     let rightCol = "";
     let text = ""; // <b>Troup County</b><br><br>" // Moved to title
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < x; i++) {
         // Icon hidden for now
         //icon = "<div class='caticon_left'><span class='material-icons'>thumb_up_alt</span></div>"
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
