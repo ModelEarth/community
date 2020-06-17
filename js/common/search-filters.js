@@ -308,12 +308,13 @@ $(document).ready(function () {
    		$("#productCatTitle").html("");
    		$("#eTable_alert").hide();
    		$("#mainframe").hide();
+   		$(".output_table input").prop('checked',false); // geo counties
    		$("input[name='hs']").prop('checked',false);
    		$("input[name='in']").prop('checked',true);
    	}
    	$("#clearButton").click(function() {
    		clearFields();
-   		clearHash("cat,search,q");
+   		clearHash("cat,search,q,geo");
    		//history.pushState("", document.title, window.location.pathname);
    		//loadHtmlTable(true); // New list
    		loadMap1();
