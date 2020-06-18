@@ -287,7 +287,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
         if(String(whichVal.node().value)=="payann"){
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
-            rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
+            if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
+                rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
+            }else{
+                rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion";
+            }
+            
         }
         rightCol += " <img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'>";
         //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
