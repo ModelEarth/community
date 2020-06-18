@@ -785,7 +785,7 @@ function loadMap1(dp) { // Also called by search-filters.js
 
     dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-06/ga_suppliers_list_6-17-2020.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
     dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe_2020_06_17.csv";
-    dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe_2020_06_17.csv";
+    //dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe_2020_06_17.csv";
 
     dp1.dataTitle = "Manufacturers and Distributors";
     dp1.itemsColumn = "items";
