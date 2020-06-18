@@ -67,10 +67,10 @@ Some teams will apply Trust Levels authentication to [Google&nbsp;Sheet&nbsp;row
 
 ### Dev Areas
 
-1. A collection of [EEIO widgets](https://modelearth.github.io/io/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Charts are loaded from JSON files [generated](resources/useeio) 
-for Goods & Services demand vectors (Food System and Full System). 
+1. A collection of [EE Input-Output chart widgets](https://modelearth.github.io/io/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Chart widgets are loaded from JSON files generated from 
+our [API endpoints on AWS](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
 
-2. [Goods & Services Reports](start/dataset) for communities with environmental impacts of new technologies.   
+2. [Goods & Services Reports](info/) for communities with environmental impacts of new technologies.   
 
 3. [Maps of products and industries](start/maps) - Regional hubs, industries by zipcode.  
 
