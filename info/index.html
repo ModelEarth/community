@@ -106,7 +106,7 @@ h1 {
 	$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
 		param = loadParams(location.search,location.hash); // param is declared in common.js
 		updateLoc(param.geo); // Check counties. (search-filters.js)
-		geoChanged(param.geo); // Apply county filter to industry list (topindustries.js)
+		geoChanged(param); // Apply county filter to industry list (topindustries.js)
 	});
 </script>
 
@@ -379,7 +379,7 @@ function locClick(which) {
 	if(window.location.hash.includes("geo=US")){
 		param=loadParams(location.search,location.hash);
 		//console.log(param["geo"])
-		geoChanged(param["geo"])
+		geoChanged(param)
 	}
 }
 /*

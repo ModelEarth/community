@@ -7,6 +7,7 @@ var promises = [
     d3.tsv("data/usa/GA/industries_state13_naics4.tsv"),
     //d3.tsv("data/c5.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6.tsv"),
+    d3.csv("data/county_ID_list.csv"),
 
 ]
 
@@ -26,7 +27,14 @@ function ready(values) {
         industryNames[+item.relevant_naics] = item.industry_detail
     })
     dataObject.industryNames=industryNames;
-
+    counties = []
+    values[4].forEach(function(item){
+        if(item.abvr =="GA"){
+            counties.push(item.id)
+        }
+    })
+    dataObject.counties=counties;
+    statelength=dataObject.counties.length
     if(param["geo"]){
         geo=param["geo"]
         if (geo.includes(",")){
@@ -39,7 +47,7 @@ function ready(values) {
             fips = geo.split("US")[1]
         }
     }else{
-        fips = 13285;
+        fips = "state";
     }
 
     a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#catsort"))
@@ -60,6 +68,8 @@ function ready(values) {
                 }else{
                     fips = geo.split("US")[1]
                 }
+            }else{
+                fips = "state";
             }
 
         a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#catsort"))
@@ -74,17 +84,22 @@ function ready(values) {
 
 
 //function for when the geo hash changes
-function geoChanged(geo){
-    if (geo.includes(",")){
-        geos=geo.split(",")
-        fips=[]
-        for (var i = 0; i<geos.length; i++){
-            fips.push(geos[i].split("US")[1])
+function geoChanged(param){
+    if(param.geo){
+        geo=param.geo
+        if (geo.includes(",")){
+            geos=geo.split(",")
+            fips=[]
+            for (var i = 0; i<geos.length; i++){
+                fips.push(geos[i].split("US")[1])
+            }
+        }else{
+            fips = geo.split("US")[1]
         }
-    }else{
-        fips = geo.split("US")[1]
-    }
 
+    }else{
+        fips = "state";
+    }
     a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#catsort"))
 }
 
@@ -131,6 +146,34 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     rates_list = []
     selectedFIPS = fips
     if(Array.isArray(fips)){
+        for (var i = 0; i<fips.length; i++){
+            Object.keys(dataSet.ActualRate).forEach( this_key=>{
+                // this_key = parseInt(d.split("$")[1])
+                if (this_key!=1){
+                    this_rate = dataSet.ActualRate[this_key]
+                    if (this_rate.hasOwnProperty(fips[i])){ 
+                        if(rates_dict[this_key]){
+                            rates_list.push(rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                            rates_dict[this_key] = rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value])      
+                        }else{
+                            rates_dict[this_key] = parseFloat(this_rate[fips[i]][whichVal.node().value])
+                            rates_list.push(parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                        }
+                        
+                    } else {
+                        if(rates_dict[this_key]){
+                            rates_dict[this_key] = rates_dict[this_key]+0.0
+                            rates_list.push(rates_dict[this_key]+0.0)
+                        }else{
+                        rates_dict[this_key] = 0.0
+                        rates_list.push(0.0)
+                        }
+                    }
+                }
+            })  
+        }
+    }else if(fips=="state"){
+        fips=dataObject.counties
         for (var i = 0; i<fips.length; i++){
             Object.keys(dataSet.ActualRate).forEach( this_key=>{
                 // this_key = parseInt(d.split("$")[1])
@@ -207,6 +250,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 }
             }
         }
+
     }else{
         for (var i=0; i<x; i++) {
             id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
@@ -253,12 +297,9 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
 
 
-
-
-
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
         document.getElementById("industryheader").text = ""; // Clear initial.
-        if(Array.isArray(fips)){
+        if(Array.isArray(fips) && statelength!=fips.length){
             fipslen=fips.length
             document.getElementById("industryheader").innerHTML = "Industries within "+fipslen+" counties<br>"
             for(var i=0; i<fipslen; i++){
@@ -274,6 +315,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                     }
                 })
             }
+        }else if(Array.isArray(fips) && statelength==fips.length){
+            document.getElementById("industryheader").innerHTML = "Industries within state"
         }else{
             var filteredData = consdata.filter(function(d) {
                 if(d["id"]==fips )
