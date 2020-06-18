@@ -7,6 +7,7 @@ var promises = [
     d3.tsv("data/usa/GA/industries_state13_naics4.tsv"),
     //d3.tsv("data/c5.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6.tsv"),
+
 ]
 
 
@@ -249,7 +250,41 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
         text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
     }
-    document.getElementById("p1").text = ""; // Clear initial.
+
+
+
+
+
+
+    d3.csv("data/county_ID_list.csv").then( function(consdata) {
+        document.getElementById("industryheader").text = ""; // Clear initial.
+        if(Array.isArray(fips)){
+            fipslen=fips.length
+            document.getElementById("industryheader").innerHTML = "Industries within "+fipslen+" counties<br>"
+            for(var i=0; i<fipslen; i++){
+                var filteredData = consdata.filter(function(d) {
+                    if(d["id"]==fips[i]){
+                        if(i==fipslen-1){
+                            document.getElementById("industryheader").innerHTML=document.getElementById("industryheader").innerHTML+'<font size="3">'+d["county"]+'</font>'
+                        }else if(i==0){
+                            document.getElementById("industryheader").innerHTML=document.getElementById("industryheader").innerHTML+'<font size="3">'+d["county"]+', '+'</font>'
+                        }else{
+                        document.getElementById("industryheader").innerHTML=document.getElementById("industryheader").innerHTML+'<font size="3">'+d["county"]+', '+'</font>'
+                        }
+                    }
+                })
+            }
+        }else{
+            var filteredData = consdata.filter(function(d) {
+                if(d["id"]==fips )
+                {      
+                    document.getElementById("industryheader").innerHTML = "Industries within "+d["county"]
+                } 
+
+            })
+        }  
+    })
+    
     //document.getElementById("p1").innerHTML = "tri"
     document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
 
