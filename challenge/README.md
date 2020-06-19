@@ -46,7 +46,7 @@ for ways communities can use data and planning to be more resilient as they work
 A panel of judges will use Slack video to deliberate while using a Google Form for calculating scores for the Oct 25 awards.<br><br>
 -->
 
-Visit <a target="_parent" href="https://model.earth/community/">model.earth/community</a> for more details.  
+
 
 <!--
 Get an early start by competing in the DataBricks Hackathon
@@ -56,4 +56,4 @@ https://databricks.com/blog/2020/04/22/announcing-spark-ai-summit-hackathon-for-
 
 ---
 <a href="registration/">Register to participate</a> | 
-<a href="https://model.georgia.org/" target="_parent">Opportunities for Georgia Communities</a>
+<a href="../">More details</a>  
