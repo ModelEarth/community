@@ -1425,7 +1425,7 @@ function dualmapLoaded(param, root, count) {
 				loadMap1();
 			}
 		});
-	} else if (count<100) { // Wait a milisecond and try again
+	} else if (count<100) { // Wait a 100th of a second and try again
 		setTimeout( function() {
    			console.log("try dualmapLoaded again")
 			dualmapLoaded(param, root, count++);
