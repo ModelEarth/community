@@ -8,6 +8,9 @@ var promises = [
     //d3.tsv("data/c5.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6.tsv"),
     d3.csv("data/county_ID_list.csv"),
+    d3.tsv("data/usa/GA/industries_state13_naics2_state.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics4_state.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics6_state.tsv"),
 
 ]
 
@@ -20,8 +23,25 @@ function ready(values) {
     industryData = {
         'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
     }
+    dataObject.industryData=industryData;
 
-    dataObject.industryData=industryData;  
+    
+    if (d3.select("#naics").node().value==2){
+        industryDataState = {
+            'ActualRate': formatIndustryData(values[5])
+        }
+    }else if(d3.select("#naics").node().value==4){
+        industryDataState = {
+            'ActualRate': formatIndustryData(values[6])
+        }
+    }else if(d3.select("#naics").node().value==6){
+        industryDataState = {
+            'ActualRate': formatIndustryData(values[7])
+        }
+    }
+        
+    dataObject.industryDataState=industryDataState;
+
     industryNames = {}
     values[0].forEach(function(item){
         industryNames[+item.relevant_naics] = item.industry_detail
@@ -50,13 +70,30 @@ function ready(values) {
         fips = "state";
     }
 
-    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#catsort"))
+    a = topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
 
     //code for what happens when you choose the state and county from drop down
     d3.selectAll(".picklist").on("change",function(){
         dataObject.industryData= {
             'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
         }
+
+        if (d3.select("#naics").node().value==2){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[5])
+            }
+        }else if(d3.select("#naics").node().value==4){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[6])
+            }
+        }else if(d3.select("#naics").node().value==6){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[7])
+            }
+        }
+            
+        dataObject.industryDataState=industryDataState;
+
             if (param["geo"]){
                 geo=param["geo"]
                 if (geo.includes(",")){
@@ -72,7 +109,7 @@ function ready(values) {
                 fips = "state";
             }
 
-        a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#catsort"))
+        a = topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
         return a;
     });
 
@@ -100,7 +137,7 @@ function geoChanged(param){
     }else{
         fips = "state";
     }
-    a = topRatesInFips(dataObject.industryData, dataObject.industryNames, fips, 20, d3.select("#catsort"))
+    a = topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
 }
 
 
@@ -141,16 +178,15 @@ function formatIndustryData(rawData) {
 
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
-
     rates_dict = {}
     rates_list = []
     selectedFIPS = fips
     if(Array.isArray(fips)){
         for (var i = 0; i<fips.length; i++){
-            Object.keys(dataSet.ActualRate).forEach( this_key=>{
+            Object.keys(dataSet.industryData.ActualRate).forEach( this_key=>{
                 // this_key = parseInt(d.split("$")[1])
                 if (this_key!=1){
-                    this_rate = dataSet.ActualRate[this_key]
+                    this_rate = dataSet.industryData.ActualRate[this_key]
                     if (this_rate.hasOwnProperty(fips[i])){ 
                         if(rates_dict[this_key]){
                             rates_list.push(rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value]))
@@ -173,37 +209,24 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             })  
         }
     }else if(fips=="state"){
-        fips=dataObject.counties
-        for (var i = 0; i<fips.length; i++){
-            Object.keys(dataSet.ActualRate).forEach( this_key=>{
-                // this_key = parseInt(d.split("$")[1])
-                if (this_key!=1){
-                    this_rate = dataSet.ActualRate[this_key]
-                    if (this_rate.hasOwnProperty(fips[i])){ 
-                        if(rates_dict[this_key]){
-                            rates_list.push(rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value]))
-                            rates_dict[this_key] = rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value])      
-                        }else{
-                            rates_dict[this_key] = parseFloat(this_rate[fips[i]][whichVal.node().value])
-                            rates_list.push(parseFloat(this_rate[fips[i]][whichVal.node().value]))
-                        }
-                        
-                    } else {
-                        if(rates_dict[this_key]){
-                            rates_dict[this_key] = rates_dict[this_key]+0.0
-                            rates_list.push(rates_dict[this_key]+0.0)
-                        }else{
-                        rates_dict[this_key] = 0.0
-                        rates_list.push(0.0)
-                        }
-                    }
-                }
-            })  
-        }
-    }else{
-        Object.keys(dataSet.ActualRate).forEach( this_key=>{
+        fips=13
+        Object.keys(dataSet.industryDataState.ActualRate).forEach( this_key=>{
             if (this_key!=1){
-                this_rate = dataSet.ActualRate[this_key]
+                this_rate = dataSet.industryDataState.ActualRate[this_key]
+                if (this_rate.hasOwnProperty(fips)){ 
+                    rates_dict[this_key] = parseFloat(this_rate[fips][whichVal.node().value])
+                    rates_list.push(parseFloat(this_rate[fips][whichVal.node().value]))
+                } else {
+                    rates_dict[this_key] = 0.0
+                    rates_list.push(0.0)
+                }
+            }
+        })
+
+    }else{
+        Object.keys(dataSet.industryData.ActualRate).forEach( this_key=>{
+            if (this_key!=1){
+                this_rate = dataSet.industryData.ActualRate[this_key]
                 if (this_rate.hasOwnProperty(fips)){ 
                     rates_dict[this_key] = parseFloat(this_rate[fips][whichVal.node().value])
                     rates_list.push(parseFloat(this_rate[fips][whichVal.node().value]))
@@ -215,7 +238,6 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         })
     }
 
-
     rates_list = rates_list.sort(function(a,b) { return a - b}).reverse()
     top_data_list = []
     top_data_ids = []
@@ -223,15 +245,16 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     x=Math.min(howMany,rates_list.length)
 
     if(Array.isArray(fips)){
+
         for (var i=0; i<rates_list.length; i++) {
             id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
             delete rates_dict[id]
             rateInFips=0
             for (var j = 0; j<fips.length; j++){ 
-                if(dataSet.ActualRate[id]){ 
-                    if (dataSet.ActualRate[id].hasOwnProperty(fips[j])) {
-                    rateInFips = rateInFips+parseFloat(dataSet.ActualRate[id][fips[j]][whichVal.node().value])
-                    naicscode = dataSet.ActualRate[id][fips[j]]['relevant_naics']
+                if(dataSet.industryData.ActualRate[id]){ 
+                    if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips[j])) {
+                    rateInFips = rateInFips+parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value])
+                    naicscode = dataSet.industryData.ActualRate[id][fips[j]]['relevant_naics']
                     } 
                 }
             }
@@ -250,30 +273,57 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 }
             }
         }
-
-    }else{
-        for (var i=0; i<x; i++) {
-            id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
-            delete rates_dict[id]
-
-            if (dataSet.ActualRate[id].hasOwnProperty(fips)) {
-                rateInFips = dataSet.ActualRate[id][fips][whichVal.node().value]
-                naicscode = dataSet.ActualRate[id][fips]['relevant_naics']
-            } else {
-                rateInFips = 0
-            }
             
+    }else{
+        if(fips==13){
+            for (var i=0; i<x; i++) {
+                id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
+                delete rates_dict[id]
 
-            if (rateInFips == null) {
-                rateInFips = 1
-                top_data_list.push(
-                    {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
-                )
-            }  else {
-                top_data_list.push(
-                    {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
-                )
-                top_data_ids.push(id)
+                if (dataSet.industryDataState.ActualRate[id].hasOwnProperty(fips)) {
+                    rateInFips = dataSet.industryDataState.ActualRate[id][fips][whichVal.node().value]
+                    naicscode = dataSet.industryDataState.ActualRate[id][fips]['relevant_naics']
+                } else {
+                    rateInFips = 0
+                }
+                
+
+                if (rateInFips == null) {
+                    rateInFips = 1
+                    top_data_list.push(
+                        {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
+                    )
+                }  else {
+                    top_data_list.push(
+                        {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
+                    )
+                    top_data_ids.push(id)
+                }
+            }
+        }else{
+            for (var i=0; i<x; i++) {
+                id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
+                delete rates_dict[id]
+
+                if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips)) {
+                    rateInFips = dataSet.industryData.ActualRate[id][fips][whichVal.node().value]
+                    naicscode = dataSet.industryData.ActualRate[id][fips]['relevant_naics']
+                } else {
+                    rateInFips = 0
+                }
+                
+
+                if (rateInFips == null) {
+                    rateInFips = 1
+                    top_data_list.push(
+                        {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
+                    )
+                }  else {
+                    top_data_list.push(
+                        {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
+                    )
+                    top_data_ids.push(id)
+                }
             }
         }
     }
@@ -320,7 +370,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                     }
                 })
             }
-        }else if(Array.isArray(fips) && statelength==fips.length){
+        }else if(fips==13){
             document.getElementById("industryheader").innerHTML = "Industries within state"
         }else{
             var filteredData = consdata.filter(function(d) {
