@@ -55,7 +55,7 @@ Teams will collaborate using one or more of the following:
 
 <b>Content Backends</b>
 - [Google Sheets REST](https://neighborhood.org/editor)  
-- [DJango - CensusReporter Python3](../../community/resources/censusreporter)  
+- [CensusReporter - DJango Python3](../../community/resources/censusreporter)  
 - Other collaboration platforms - Please confer with judges in advance  
 
 <!--
@@ -117,8 +117,6 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 1. <a href="start/routing/">Leaflet route maps</a> for driving tours and deliveries.
 
 1. [Jobs and Economic Development Impact (JEDI) models](https://www.nrel.gov/analysis/jedi/models.html) - convert from Excel to an interactive Web Page
-
-1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
 1. [RStudio and USEEIOR](https://modelearth.github.io/io/naics) - Use LCA methodology to evaluate new technologies
 <!--
