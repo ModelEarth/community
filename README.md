@@ -52,21 +52,42 @@ Teams will collaborate using one or more of the following:
 - Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) React build
 - Other detached frontends  
 
-Detached frontends should have an index.html file in their root, and run under any domain as a Github fork.     
 
 <b>Content Backends</b>
 - [Google Sheets REST](https://neighborhood.org/editor)  
 - [DJango - CensusReporter Python3](../../community/resources/censusreporter)  
+- Other collaboration platforms - Please confer with judges in advance  
+
 <!--
 - [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
 -->
 
-Teams should provide documentation of set-up steps. Priority is on quick installs, easy transfers of data, free hosting for static content (using GitHub, Google Sheets, etc.), and free or very low-cost hosting for content API's and Websockets.  
-
+<!--
 <b>Trust Level Services</b>
 - Google Cloud websockets
 - Other Auth services  
+-->
 
+
+**Rules for Entries** 
+
+- Provide documentation of set-up steps in a markdown file.
+- Include an index.html file that loads your readme.md file into HTML (like the current page).
+- Have a judge try your install steps a couple hours before the competition ends.  
+- Detached frontends should have an index.html file in their root.
+- Detached frontends should work under any domain when hosted as a Github fork.  
+
+**Judging Rubric**  
+
+- Utilizes USEEIO Widgets and/or USEEIO APIs effectively  
+- Installs easily using documented steps       
+- Static frontend may be hosted for free using GitHub    
+- Cost analysis accurately provides affordable options for hosting API's and Websockets  
+<!--(Over $20/month, Under $20/month, Free!)-->  
+
+Send questions by [posting an issue](https://github.com/modelearth/community/issues).  
+<br>
+<hr>
 
 ### Dev Areas
 
@@ -87,9 +108,6 @@ our [API endpoints on AWS](https://s3.amazonaws.com/useeio-api-go-swagger-stagin
 
 1. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
 
-1. Use [PWA Starter](resources/pwa) to add an index.html page and thumbnails to the pwa folder.
-
-1. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
 
 1. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/) below [Census Reporter map](https://censusreporter.org/profiles/86000US30313-30313/).
 
@@ -102,9 +120,14 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 1. Use the [Install Notes](resources/censusreporter) for our [fork of Wazimap]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 
-1. [LCA methodology to evaluate new technologies using USEEIO](https://modelearth.github.io/io/naics/add) and 
-Getting started with [RStudio and USEEIOR](https://modelearth.github.io/io/naics)
+1. [RStudio and USEEIOR](https://modelearth.github.io/io/naics) - Use LCA methodology to evaluate new technologies
 <!--
+
+1. Use [PWA Starter](resources/pwa) to add an index.html page and thumbnails to the pwa folder.
+
+1. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
+
+
 1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
 
@@ -124,7 +147,9 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 -->
 
 <br>
- 
+
+
+
 ## Related Material
 
 <!--
@@ -160,14 +185,6 @@ https://usbcsd.org/materials
 Southern Regional Science Association
 http://www.srsa.org/
 -->
-
-<br>
-
-## Team Projects
-
-<a href="https://poloclub.github.io/#cse6242">Georgia Tech Data and Visual Analytics</a>  
-Data science students are contributing new data visualizations during Spring 2020 coursework.  
-
 
 
 <!-- Re-connect with Polo in early January. Provide: 
