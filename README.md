@@ -44,20 +44,24 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 -->
 
-Teams will collaborate on integrated services using:  
+Teams will collaborate using one or more of the following:  
 
 <b>Detached Frontends</b>
-- Vanilla JS and JQuery in the current [community repo](start)
+- Vanilla JS and JQuery within the current [community repo](start)
 - [Real World](https://neighborhood.org/realworld) React / Redux  
-- Other Detached Frontends (to be hosted under one domain) - Each should have an index.html entry point in the root of its repo.  
+- Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) React build
+- Other Detached Frontends  
+
+Detached frontends should have an index.html in the root of its repo so they can be hosted under any domain.   
 
 <b>Content Backends</b>
-- [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
+- [Google Sheets REST](https://neighborhood.org/editor)  
 - [DJango - CensusReporter Python3](../../community/resources/censusreporter)  
-- [Ruby on Rails - Discourse used by Code for America](https://discourse.codeforamerica.org)  
-- Durpal and other backends  
+<!--
+- [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
+-->
 
-Teams should provide documentation of automated server set-up steps. Priority is on quick installs, easy transfers of data, free hosting for static content (using GitHub, Google Sheets, etc.), and free or very low-cost hosting for content API's and Websockets.  
+Teams should provide documentation of set-up steps. Priority is on quick installs, easy transfers of data, free hosting for static content (using GitHub, Google Sheets, etc.), and free or very low-cost hosting for content API's and Websockets.  
 
 <b>Trust Level Services</b>
 - Google Cloud websockets
