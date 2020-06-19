@@ -342,6 +342,7 @@ iframe {
     float:left;
     margin:20px;
     margin-right:40px;
+    min-width: 210px;
 }
 @media (max-width: 800px) {
     .leftLogo {
