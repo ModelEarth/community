@@ -1,20 +1,35 @@
 
 # CensusReporter
 
-Project: Update [CensusReporter.org](https://CensusReporter.org) from Python 2 to 3.
-Add environmentally-enabled IO Charts to maps.
+Project: Add [Environmentally-Enabled IO Charts](../../../io/charts/) to Census Reporter  
 
-## Venv and Django with Postgres
 
-Since the Wazimap fork provides a Python 3 version of Census Reporter, use it as a starting point for updating the US version of Census Reporter. Wazimap is used in Africa and India.    
+Since the Wazimap fork provides a Python 3 version of Census Reporter with international usage, we'll use it as a starting point for updating the US version of Census Reporter.  
+
+Work in our [Wazimap Fork of Census Reporter]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
+Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
+
+
+
+## Virtual Environment
+
+Venv and Django with Postgres
+
 
 ### Mac Users
 
-[First, make Python3 default for Mac](virtualenv-troubleshooting.html)     
-- Install a user copy of Python3 using bash, then change your default from Python2 to Python3.   
+[You may need to make Python3 the default for Mac](virtualenv-troubleshooting.html) - Install a user copy of Python3 using bash, then change your default from Python2 to Python3.   
 
 
 You may want to use [virtualenv](virtualenv.html) - option for use with Python 2 virtual environment.     
+
+
+To see the full range of options, run the following command:  
+
+	python -m venv -h
+
+More here: [Venv command (pythonise.com)](https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command)
+
 
 ## Wazimap Census Reporter (Setup)
 
@@ -54,6 +69,8 @@ Then activate. Your commands will then start with (env1):
 Upgrade pip to 20.0.2+ since 19.0.3 is system default:
 
 	pip install --upgrade pip
+
+## Django
 
 Installs Django 3.0.3
 
@@ -136,11 +153,4 @@ When you're done with the virtual environment
 	deactivate
 
 
-To see the full range of options, run the following command:  
-
-	python -m venv -h
-
-More here: [Venv command (pythonise.com)](https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command)
-
-
-[Wazimap Census Reporter]( https://github.com/modelearth/wazimap) is maintained by [OpenUp](https://openup.org.za/), formerly Code for South Africa. 
+<br><br>
