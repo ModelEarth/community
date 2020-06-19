@@ -50,9 +50,9 @@ Teams will collaborate using one or more of the following:
 - Vanilla JS and JQuery within the current [community repo](start)
 - [Real World](https://neighborhood.org/realworld) React / Redux  
 - Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) React build
-- Other Detached Frontends  
+- Other detached frontends  
 
-Detached frontends should have an index.html in the root of its repo so they can be hosted under any domain.   
+Detached frontends should have an index.html file in their root, and run under any domain as a Github fork.     
 
 <b>Content Backends</b>
 - [Google Sheets REST](https://neighborhood.org/editor)  
@@ -67,7 +67,6 @@ Teams should provide documentation of set-up steps. Priority is on quick install
 - Google Cloud websockets
 - Other Auth services  
 
-Some teams will apply Trust Levels authentication to [Google&nbsp;Sheet&nbsp;row approval](https://neighborhood.org/editor) (ideally with dual-support for AirTable), possibly using [Google Cloud with Flask](https://medium.com/@abuango/how-to-collect-form-data-from-a-jamstack-website-to-google-sheets-using-google-cloud-functions-a59546c803a5)  
 
 ### Dev Areas
 
