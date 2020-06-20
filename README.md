@@ -84,7 +84,7 @@ Teams will collaborate using one or more of the following:
 - Utilizes USEEIO Widgets and/or USEEIO APIs effectively  
 - Installs easily using documented steps       
 - Static frontend may be hosted for free using GitHub    
-- Cost analysis accurately provides affordable options for hosting API's and Websockets<!--(Over $20/month, Under $20/month, Free!)-->    
+- Cost analysis accurately provides affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->    
 <br>
 
 <a href="challenge/registration/">Register to Participate</a> | 
