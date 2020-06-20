@@ -23,8 +23,8 @@ Slack #epa
 -->
  
 
-
-[Starter samples](start/) and [datasets](https://github.com/modelearth/community) for integration with 
+[Community Profiles - Industry Evaluator](info/#view=mosaic&count=30)  
+[Starter samples](start/) <!--and [datasets](https://github.com/modelearth/community) -->and 
 [Embeddable IO Charts](../io/charts) which use static JSON files generated from the [USEEIO&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 
 ---
@@ -48,15 +48,17 @@ Teams will collaborate using one or more of the following:
 
 <b>Detached Frontends</b>
 - Vanilla JS and JQuery within the current [community repo](start)
-- [Real World](https://neighborhood.org/realworld) React / Redux  
-- Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) React build
+- [RealWorld](https://neighborhood.org/realworld) - React, Vue, More  
+- Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) - React and D3
+- Extensions of [datausa.io](https://datausa.io) - Python, React and D3
 - Other detached frontends  
 
 
-<b>Content Backends</b>
+<b>Data Backends</b>
 - [Google Sheets REST](https://neighborhood.org/editor)  
 - [CensusReporter - DJango Python3](../../community/resources/censusreporter)  
-- Other collaboration platforms - Please confer with judges in advance  
+- Census API and USEEIO API  
+- Other collaboration platforms - Please review with judges in advance  
 
 <!--
 - [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
