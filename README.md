@@ -56,7 +56,7 @@ Teams will collaborate using one or more of the following:
 
 <b>Data Backends</b>
 - [Google Sheets REST](https://neighborhood.org/editor)  
-- [CensusReporter - DJango Python3](../../community/resources/censusreporter)  
+- [Wazimap CensusReporter - DJango Python3](../../community/resources/censusreporter)  
 - Census API and USEEIO API  
 - Other collaboration platforms - Please review with judges in advance  
 
@@ -84,10 +84,11 @@ Teams will collaborate using one or more of the following:
 - Utilizes USEEIO Widgets and/or USEEIO APIs effectively  
 - Installs easily using documented steps       
 - Static frontend may be hosted for free using GitHub    
-- Cost analysis accurately provides affordable options for hosting API's and Websockets  
-<!--(Over $20/month, Under $20/month, Free!)-->  
+- Cost analysis accurately provides affordable options for hosting API's and Websockets<!--(Over $20/month, Under $20/month, Free!)-->    
+<br>
 
-Send questions by [posting an issue](https://github.com/modelearth/community/issues).  
+<a href="challenge/registration/">Register to Participate</a> | 
+Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues)  
 <br>
 <hr>
 
