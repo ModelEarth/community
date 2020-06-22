@@ -214,6 +214,7 @@ function formatIndustryData(rawData) {
 
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
+
     rates_dict = {}
     rates_list = []
     selectedFIPS = fips
@@ -415,6 +416,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     let rightCol = "";
     let text = ""; // <b>Troup County</b><br><br>" // Moved to title
     y=Math.min(howMany, top_data_ids.length)
+    hash.naics=""
     for (i = 0; i < y; i++) {
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
         if(String(whichVal.node().value)=="payann"){
@@ -430,9 +432,18 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
 
         text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
+        if(i<5){
+            if(i==0){
+                hash.naics=hash.naics+top_data_list[i]['NAICScode']
+            }else{
+                hash.naics=hash.naics+","+top_data_list[i]['NAICScode']
+            }
+            
+        }
+    
     }
 
-
+    updateHash();
 
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
         document.getElementById("industryheader").text = ""; // Clear initial.
