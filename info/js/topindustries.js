@@ -470,10 +470,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 if(d["id"]==fips )
                 {      
                     document.getElementById("industryheader").innerHTML = "Industries within "+d["county"]
-                } 
-
+                }
             })
-        }  
+        }
+        if (param["view"] == "io") {
+            //document.getElementById("sectorBucketTitle").innerHTML = document.getElementById("industryheader").innerHTML;
+        }
     })
     
     //document.getElementById("p1").innerHTML = "tri"
