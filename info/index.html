@@ -498,7 +498,7 @@ document.getElementById('showValues').onclick = function() {
     }
 };
 */
-function getHash() {
+function getHashX() {
 	return (function (a) {
     if (a == "") return {};
     var b = {};
@@ -512,7 +512,7 @@ function getHash() {
     })(window.location.hash.substr(1).split('&'));
 }
 
-function updateHash() {
+function updateHashX() {
 	// Remove blank attributes
 
     for (var i in hash) {
