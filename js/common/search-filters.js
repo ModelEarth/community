@@ -690,14 +690,30 @@ function showCounties() {
 		// load the function file you need before you call it...
 		loadScript('/community/start/dataset/stupidtable.js', function(results) { 
 				// jquery sorting applied to it - could be done with d3 and events.
+
+			// If these cause error...
 			$("table").stupidtable();
 			$("table2").stupidtable();
+			// Replace above 2 lines with:
+			//applyStupidTable(1);
 		});
 
 		// INIT AT TIME OF INITIAL COUNTY LIST DISPLAY
 		// Set checkboxes based on param (which may be a hash, query or include parameter)
 		updateLoc(param.geo);
 	});
+}
+function applyStupidTable(count) {
+	if (typeof stupidtable === "function") {
+		$("table").stupidtable();
+		$("table2").stupidtable();
+	} else if (count <= 100) {
+		setTimeout( function() {
+			applyStupidTable(count++);
+		}, 10 );
+	} else {
+		console.log("applyStupidTable attepts exceeded 100.");
+	}
 }
 function updateLoc(geo) {
 	$(".geo").prop('checked', false);
