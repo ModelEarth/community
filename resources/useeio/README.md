@@ -20,10 +20,15 @@ Data for 71 sectors is provided annually. Data for 400 sectors is provided every
 
 Clone the [useeio_api repo](https://github.com/usepa/useeio_api/).  
 
-Open [Anaconda](https://www.anaconda.com/distribution/) and launch a Jupyter Notebook.  
+Open [Anaconda](https://www.anaconda.com/distribution/)  
+
+If you receive the message "The application “Anaconda-Navigator” can’t be opened." on a Mac, try opening by clicking the app inside the Application folder.  
+
+Launch a Jupyter Notebook by running "Jupyter Notebook" in the command prompt within the directory.
+
 Your browser will open to a local port, such as http://localhost:8888/tree
 
-Navigate to the examples folder in the cloned repo. Open: USEEIO\_API/examples/example\_use.ipynb  
+Navigate to the "examples" folder in the cloned repo. Open: USEEIO\_API/examples/example\_use.ipynb  
 
 The bold sections below relate to sections of [example_use.ipynb](https://github.com/USEPA/USEEIO_API/blob/master/examples/example_use.ipynb)
 
