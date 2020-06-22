@@ -81,9 +81,6 @@ h1 {
 	margin-bottom:20px;
 	border-bottom: 1px solid #ddd;
 }
-#pageColumns > div {
-	padding:20px;
-}
 
 .mainColumn {
 	display:table-cell;
@@ -91,6 +88,26 @@ h1 {
 .mainColumn1 {
 	min-width: 500px;
 	width: 500px; 
+}
+.industryBucket {
+	width:33%;
+	max-width:33%;
+	float:left;
+	position: relative;
+}
+.industryBucketPadding {
+	border: 1px solid #ccc;
+	padding:15px;
+	margin-right: 30px; /* todo: omit on right column */
+	overflow: hidden;
+}
+.io-arrow {
+	font-size: 64px;
+	position: absolute;
+	right: -13px;
+	top: 45%;
+	z-index: 10;
+	color: #0366d6;
 }
 @media (max-width: 800px) {
 	.mainColumn {
@@ -126,8 +143,10 @@ Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
 To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
+
+<div class="contentpadding" style="padding-top:0px">
 <!-- two columns -->
-<div id="pageColumns" style="margin:0 10px 0 10px; display: table; max-width:1800px;">
+<div id="pageColumns" style="margin:0 10px 0 0px; display: table; max-width:1800px;">
 <div class="mainColumn mainColumn1" style="font-size: 15px; padding-right: 30px">
 
 	<!--
@@ -237,14 +256,13 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		      	}
 		      	//showBubbleChart(); // To be called by menu in header.
 		    });
-
 		</script> 
 
 	</div>
 </div>
 </div>
 <!-- /two columns -->
-
+</div>
 
 
 <div class="contentpadding">
@@ -303,11 +321,11 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 	</div>
 
+	<hr>
+	<h1 id="infoHeader" class="module_h1">Industries in Georgia</h1>
+	<div id="infoHeaderNote" style="display:none; margin-bottom:16px">Not yet implemented - See Jira</div>
 
-	<div style="max-width:500px">
-		<h1 id="infoHeader" class="module_h1">Industries in Georgia</h1>
-
-		<div style="display:none">
+	<div style="display:none">
 		<div style="font-size: 15px;">
 			<input name="sector_action" type="radio">
 			Recruit a new industry<br>
@@ -315,17 +333,53 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			Transform an existing industry<br>
 			<br>
 		</div>
-		</div>
 	</div>
 
-    <div style="margin: 0 auto;">
-        <div class="impact-heatmap">
-        </div>
-        <div id="paginator">
-        </div>
-        <br><br>
+
+	<div id="io-input" class="industryBucket" style="display:none">
+		<div class="io-arrow">&#10145;</div>
+		<div class="industryBucketPadding">
+			<h2 class="module_h1">Suppliers (Input)</h2>
+		    <div style="margin: 0 auto;">
+		        <div class="impact-heatmap-input">
+		        </div>
+		        <div id="paginator-input">
+		        </div>
+		        <br><br>
+		    </div>
+		</div>
     </div>
 
+    <!--  (Sectors) -->
+    <div id="sectorBucket" class="industryBucket">
+    	<div class="io-arrow">&#10145;</div>
+    	<div class="industryBucketPadding">
+			<h2 id="sectorBucketTitle" class="module_h1" style="display:none">Local Industries</h2>
+		    <div style="margin: 0 auto;">
+		        <div class="impact-heatmap">
+		        </div>
+		        <div id="paginator">
+		        </div>
+		        <br><br>
+		    </div>
+		</div>
+    </div>
+
+    <div id="io-output" class="industryBucket" style="display:none">
+    	<div class="industryBucketPadding">
+			<h2 class="module_h1">Buyers (Output)</h2>
+		    <div style="margin: 0 auto;">
+		        <div class="impact-heatmap-output">
+		        </div>
+		        <div id="paginator-output">
+		        </div>
+		        <br><br>
+		    </div>
+		</div>
+    </div>
+
+    <div style="clear:both">
+    </div>
 
     <br><br>
 
@@ -498,41 +552,238 @@ document.getElementById('showValues').onclick = function() {
     }
 };
 */
-function getHashX() {
-	return (function (a) {
-    if (a == "") return {};
-    var b = {};
-    for (var i = 0; i < a.length; ++i) {
-        var p = a[i].split('=');
-        if (p.length != 2) continue;
-        b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
-    }
 
-    return b;
-    })(window.location.hash.substr(1).split('&'));
+function infoMapLoaded(param, root, count) {
+	if (typeof dual_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
+		loadScript(root + '/community/js/common/search-filters.js', function(results) {
+			//addCountyBoundaries()
+			//loadMap1();
+			window.onhashchange = function() {
+				//param = loadParam(location.search,location.hash);
+				console.log("onhashchange")
+				//loadMap1();
+			}
+		});
+	} else if (count<100) { // Wait a 100th of a second and try again
+		setTimeout( function() {
+   			console.log("try infoMapLoaded again")
+			infoMapLoaded(param, root, count++);
+   		}, 10 );
+	} else {
+		console.log("ERROR: dualmapLoaded exceeded 100 attempts.");
+	}
 }
+//infoMapLoaded(param,"",0);
 
-function updateHashX() {
-	// Remove blank attributes
+function addCountyBoundaries() {
+	var req = new XMLHttpRequest();
 
-    for (var i in hash) {
-      if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
-        delete hash[i];
+    // Topo data source
+    //https://github.com/deldersveld/topojson/tree/master/countries/us-states
+    var url = '../start/maps/counties/topo/GA-13-georgia-counties.json'
+
+    req.open('GET', url, true);
+    req.onreadystatechange = handler;
+    req.send();
+
+    var topoob = {};
+    topodata = {};
+    function handler(){
+
+    if(req.readyState === XMLHttpRequest.DONE) {
+
+      //map.addLayer(OpenStreetMap_BlackAndWhite)
+
+      // try and catch json parsing of the responseText
+      //try {
+            topoob = JSON.parse(req.responseText)
+
+            // Originated in community/map/leaflet/zips-sm.html
+            // zips_us_topo.json
+            // {"type":"Topology","objects":{"data":{"type":"GeometryCollection","geometries":[{"type":"Polygon
+
+            // {"type":"Topology","transform":{"scale":[0.00176728378633945,0.0012459509163533049],"translate":
+
+            //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
+
+            // Was used by applyStyle
+            ////neighbors = topojson.neighbors(topoob.objects.data.geometries);
+            neighbors = topojson.neighbors(topoob.arcs); // .properties
+
+            // ADD geometries  see https://observablehq.com/@d3/choropleth
+            //topodata = topojson.feature(topoob, topoob.objects.data)
+
+            //topodata = topojson.feature(topoob, topoob.transform)
+            topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
+
+            mergeInDetailData(topodata, dp.data);
+
+            // IS THIS BEING USED?
+            //topodata.features = topodata.features.map(function(fm,i){
+            /*
+            topodata.features = topodata.features.map(function(fm,i){
+                var ret = fm;
+                //console.log("fm: " + fm.COUNTYFP);
+                console.log("fm: " + fm.properties.countyfp);
+                ret.indie = i;
+                return ret
+              });
+            */
+
+            //dp.data.forEach(function(datarow) { // For each county row from the region lookup table
+              
+              // All these work:
+              //console.log("name:: " + datarow.name);
+              //console.log("county_num:: " + datarow.county_num);
+              //console.log("economic_region:: " + datarow.economic_region);
+
+            //})
+
+            console.log('topodata: ', topodata)
+
+            geojsonLayer = L.geoJson(topodata, {style:style, onEachFeature: onEachFeature}); // Called within addTo(map)
+
+            //console.log('neigh', neighbors)
+         //}
+        //catch(e){
+        //  geojson = {};
+        //   console.log(e)
+        //}
+
+
+        //console.log(topodata)
+
+
+
+
+      //// USA
+      //var lat = 38.3;
+      //var lon = -96.5;
+      //var zoom = 5;
+
+      // Georgia
+      var lat = 32.7;
+      var lonX = -82.90;
+      var lon = -81.8;
+      var zoom = 7;
+
+      //var layer = "terrain";
+
+      var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+
+      var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+          satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
+          streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+
+      var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+          maxZoom: 18,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+
+      var map = new L.Map('mapcon',
+      {
+          scrollWheelZoom: false,
+          center: new L.LatLng(lat,lon),
+          zoom: zoom,
+          layers: [streets, dataParameters[0].group] // Indicates default layer
+      });
+      var baseLayers = {
+        "Open Street Map": OpenStreetMap_BlackAndWhite,
+        "Grayscale Mapbox": grayscale,
+        "Streets Mapbox": streets,
+        "Satellite Mapbox": satellite
+      };
+      var overlays = {
+        "Counties": geojsonLayer
+      };
+
+
+      dataParameters.forEach(function(ele) {
+        //overlays[ele.name] = ele.group; // Allows for use of dp.name with removeLayer and addLayer
+        //console.log("Layer added: " + ele.name);
+      })
+      if(layerControl === false) {
+        // Add the layers control to the map
+        layerControl = L.control.layers(baseLayers, overlays).addTo(map);
       }
 
-    }
+      // Make a layer active. 
+      geojsonLayer.addTo(map);
 
-    var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+      // To add additional layers:
+      //layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
 
-    // Update if hash has occurred
-    if (window.location.hash != hashString) {
-    	let searchTitle = 'Page ' + hashString;
-        let queryString = '#' + hashString;
 
-        //console.log("Update URL to: " + window.location.pathname + window.location.search + queryString);
-        window.history.pushState("", searchTitle, window.location.pathname + window.location.search + queryString);
-    }
+        /* Rollover effect */
+        function highlightFeature(e){
+          var layer = e.target;
+          layer.setStyle({
+            weight: 3,
+              color: '#665',
+            dashArray: '',
+            fillOpacity: .7})
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+              layer.bringToFront();
+            }
+          // Send text to side box
+          info.update(layer.feature.properties);
+        }
 
+        function resetHighlight(e){
+          geojsonLayer.resetStyle(e.target);
+          info.update();
+        }
+
+        function mapFeatureClick(e) {
+            var layer = e.target;
+            //map.fitBounds(e.target.getBounds()); // Zoom to boundary area clicked
+            var fips = "US13" + layer.feature.properties.COUNTYFP;
+            //location.window = 
+            window.top.location.href="../../../info/#geo=" + fips;
+        }
+
+        function onEachFeature(feature, layer){
+          layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight, 
+                click: mapFeatureClick
+          })
+        }
+
+
+        var info = L.control();
+        info.onAdd = function(map) {
+            this._div = L.DomUtil.create('div', 'info');
+            this.update();
+            return this._div;
+        }
+
+        info.update = function(props){
+            if (props) {
+              $(".info.leaflet-control").show();
+            } else {
+              $(".info.leaflet-control").hide();
+            }
+            // National
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
+            
+            this._div.innerHTML = "" 
+            + (props ? "<h4>" + props.NAME + " County</h4>" : "Hover over map<br>") 
+            + (props ? "FIPS 13" + props.COUNTYFP : "")
+            
+
+            // To fix if using state - id is not defined
+            // Also, other state files may need to have primary node renamed to "data"
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
+        }
+
+        info.addTo(map);
+
+     }
+  }
 }
 </script>
 
@@ -550,19 +801,59 @@ function updateHashX() {
         asJsonFiles: true,
     });
 
+    // LEFT - INPUT
+ 	if (param["view"] == "io") {
+
+	    var heatmap_input = useeio.impactHeatmap({
+	        model: model,
+	        selector: '.impact-heatmap-input',
+	    });
+	    var paginator_input = useeio.paginator({
+	        model: model,
+	        selector: '#paginator-input',
+	    });
+	    config.join(heatmap_input);
+	    config.join(paginator_input);
+
+	    $("#io-input").show();
+	}
+
+	// CENTER - SECTORS
+	if (param["view"] == "io") {
+		$("#sectorBucketTitle").show();
+		$("#infoHeader").text("Input-Output Mockup")
+		$("#infoHeaderNote").show();
+	} else {
+		$("#sectorBucket").css({"width":"100%"});
+		$("#sectorBucket").css({"max-width":"100%"});
+	}
     var heatmap = useeio.impactHeatmap({
         model: model,
         selector: '.impact-heatmap',
     });
-
     var paginator = useeio.paginator({
         model: model,
         selector: '#paginator',
     });
-
     config.join(heatmap);
     config.join(paginator);
 
+   
+    // RIGHT - OUTPUT
+    if (param["view"] == "io") {
+	 	var heatmap_output = useeio.impactHeatmap({
+	        model: model,
+	        selector: '.impact-heatmap-output',
+	    });
+	    var paginator_output = useeio.paginator({
+	        model: model,
+	        selector: '#paginator-output',
+	    });
+	    config.join(heatmap_output);
+	    config.join(paginator_output);
+	    
+	    $("#io-output").show();
+	 }
 </script>
 
 
