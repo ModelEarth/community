@@ -497,7 +497,7 @@ function loadScriptXXXXXX(url, callback)
 
 document.getElementById("clearButton").addEventListener("click", function(){
 	hash.geo=""
-	updateHash();
+	updateHash({"geo":""});
 	param=loadParams(location.search,location.hash);
 	console.log(param)
 	geoChanged(param)
@@ -516,8 +516,8 @@ if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") {
 
 function locClick(which) {
 	//console.log(which.id);
-	hash.geo = $('.geo:checked').map(function() {return this.id;}).get().join(','); 
-	updateHash();
+	hash.geo = $('.geo:checked').map(function() {return this.id;}).get().join(',');
+	updateHash({"geo":hash.geo});
 	//if(window.location.hash.includes("geo=US")){
 		param=loadParams(location.search,location.hash);
 		//console.log(param["geo"])
