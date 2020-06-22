@@ -89,9 +89,17 @@ h1 {
 	min-width: 500px;
 	width: 500px; 
 }
+@media (max-width: 800px) {
+	.mainColumn {
+		display: block;
+	}
+	.mainColumn1 {
+		width: 100%;
+	}
+}
+
 .industryBucket {
 	width:33%;
-	max-width:33%;
 	float:left;
 	position: relative;
 }
@@ -105,16 +113,21 @@ h1 {
 	font-size: 64px;
 	position: absolute;
 	right: -13px;
-	top: 45%;
+	top: 250px;
 	z-index: 10;
-	color: #0366d6;
+	color: #f47d22;
+	color: #63a750;
 }
 @media (max-width: 800px) {
-	.mainColumn {
-		display: block;
-	}
-	.mainColumn1 {
+	.industryBucket {
 		width: 100%;
+		margin-bottom: 30px;
+	}
+	.industryBucketPadding {
+		margin-right: 0px;
+	}
+	.io-arrow {
+		display: none;
 	}
 }
 </style>
@@ -354,7 +367,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
     <div id="sectorBucket" class="industryBucket">
     	<div class="io-arrow">&#10145;</div>
     	<div class="industryBucketPadding">
-			<h2 id="sectorBucketTitle" class="module_h1" style="display:none">Local Industries</h2>
+			<h2 id="sectorBucketTitle" class="module_h1" style="display:none">Top Industries</h2>
 		    <div style="margin: 0 auto;">
 		        <div class="impact-heatmap">
 		        </div>
