@@ -10,7 +10,6 @@
 <script type="text/javascript" src="../js/common/common.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
 
 <!--
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
@@ -90,9 +89,17 @@ h1 {
 	min-width: 500px;
 	width: 500px; 
 }
+@media (max-width: 800px) {
+	.mainColumn {
+		display: block;
+	}
+	.mainColumn1 {
+		width: 100%;
+	}
+}
+
 .industryBucket {
 	width:33%;
-	max-width:33%;
 	float:left;
 	position: relative;
 }
@@ -106,33 +113,60 @@ h1 {
 	font-size: 64px;
 	position: absolute;
 	right: -13px;
-	top: 45%;
+	top: 250px;
 	z-index: 10;
-	color: #0366d6;
+	color: #f47d22;
+	color: #63a750;
 }
 .tab-2{
 	display: inline-block;
     margin-left: 140px;
 }
 @media (max-width: 800px) {
-	.mainColumn {
-		display: block;
-	}
-	.mainColumn1 {
+	.industryBucket {
 		width: 100%;
+		margin-bottom: 30px;
+	}
+	.industryBucketPadding {
+		margin-right: 0px;
+	}
+	.io-arrow {
+		display: none;
 	}
 }
 </style>
   
 
 <script>
-	// INIT
-	var hash = getHash(); // Include all existing
-	$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
-		param = loadParams(location.search,location.hash); // param is declared in common.js
-		updateLoc(param.geo); // Check counties. (search-filters.js)
-		geoChanged(param); // Apply county filter to industry list (topindustries.js)
-	});
+// INIT
+var hash = getHash(); // Include all existing
+$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
+	refreshWidgets();
+});
+function refreshWidgets() {
+	hash = getHash();
+	// NOTE: params after ? are not be included, just the hash.
+	if (hash.geo != param.geo) { // Not usable, already changed at this point.
+		updateLoc(hash.geo); // Check counties. (search-filters.js)
+		geoChanged(hash); // Apply county filter to industry list (topindustries.js)
+	}
+	if (hash.indicators != param.indicators) {
+		//alert('hashchange: ' + hash.indicators + " " + param.indicators);
+		updateHash({"view":"mosaic"}); // Temp, until view=io ready.
+		hash.view = "mosaic"; // Temp, until view=io ready.
+		loadIOWidgets(hash);
+	}
+	// For comparison with the next time hash is updated.
+	param = loadParams(location.search,location.hash); // param is declared in common.js
+}
+
+document.getElementById("clearButton").addEventListener("click", function(){
+	hash.geo=""
+	updateHash({"geo":""});
+	param=loadParams(location.search,location.hash);
+	console.log(param)
+	geoChanged(param)
+});
 </script>
 
 </head>
@@ -251,17 +285,8 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 			</div>
 		</div>
 		<br>
+		Change scales to view the impact of different industry mixes. (Not yet activated)<br>
 		<!-- /Sector List Format -->
-
-		<div id="includedContent"></div>
-		<script> 
-		    $(function(){
-		    	function showBubbleChart() {
-		      		$("#includedContent").load("bubble.html");
-		      	}
-		      	showBubbleChart(); // To be called by menu in header.
-		    });
-		</script> 
 
 	</div>
 </div>
@@ -271,64 +296,96 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 
 <div class="contentpadding">
+
+<div style="margin-right:45px">
+<hr>
+	<div class="io" style="float:right;">
+
+	<select class="filterClickX form-selectX picklist" onchange="updateHash({'indicators':this.value});refreshWidgets();" style="width: 450px; height: 40px;">
+
+	<option value="">Industries with top impacts...</option>
+
+	<option value="JOBS,VADD">Positive Impacts:</option>
+
+	<option value="JOBS">&nbsp; &nbsp;Jobs (JOBS)</option>
+	<option value="VADD">&nbsp; &nbsp;Value Added (VADD)</option>
+
+
+	<option value="ENRG,LAND,WATR">Resource Use:</option>
+
+	<option value="ENRG" title="Energy Use (ENRG): 
+	Energy Use is an indicator of the life cycle total amount of primary energy used as defined by heat value in a combusted resource or the available energy in a renewable resource to a converting device such as a wind turbine or water turbine. This indicator is a combination of the NNRG and RNRG indicators. This indicator is expressed in megajoules (MJ).">&nbsp; &nbsp;Energy Use (ENRG)</option>
+
+	<option value="LAND" title="Land Use (LAND): 
+	Nearly every process requires some amount of land for factories, offices, or roads. This land is often converted from existing natural habitats for wildlife. Habitat loss is the leading cause of wildlife extinctions worldwide and additional habitat conversion could lead to further loss of species. This indicator tracks the total area of usable land occupied to allow for the process. This indicator is expressed in square meters for a year (m2*yr).">&nbsp; &nbsp;Land Use (LAND)</option>
+
+	<option value="WATR" title="Water Use (WATR): 
+	Water Use is an indicator of the life cycle total amount (m3) of freshwater withdrawn from surface and groundwater sources in order to provide a given good or service to society.">&nbsp; &nbsp;Water Use (WATR)</option>
+
+	<option value="">Impact Potential:</option>
+
+	<option value="ACID" title="Acid Rain (ACID): 
+	Acid rain occurs when acid-precursors are absorbed from the atmosphere by clouds and dissolved in falling rain. Acid rain, while not directly dangerous to people, causes millions of dollars in damage to infrastructure by very slowly dissolving the exposed surfaces of roads, buildings, drains, and even statues. Acid rain is also detrimental to natural life: acidic soils make it difficult or impossible for plants to survive and grow and acidic runoff can disrupt the delicate chemical balance in natural bodies of water. In this indicator, emissions are expressed in sulfur dioxide (SO2) equivalents. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">&nbsp; &nbsp;Acid Rain (ACID)</option>
+
+	<!--
+	<option value="CCDD" title="Commercial Construction and Demolition Debris (CCDD): 
+	The CCDD indicator represents the annual generation amount of construction and demolition (C&amp;D) materials during the construction, renovation and demolition of buildings (including homes), roads, bridges and other structures. C&amp;D materials include steel, wood products, drywall and plaster, brick and clay tile, asphalt shingles, concrete and asphalt concrete. The CCDD indicator does not include C&amp;D debris from DIY renovations or natural disasters. This indicator is expressed in kilograms (kg).">&nbsp; &nbsp;Commercial Construction and Demolition Debris (CCDD)</option>
+	
+	<option value="CMSW" title="Commercial Municipal Solid Waste (CMSW): 
+	EPA refers to trash, or municipal solid waste (MSW), as various items consumers throw away after they are used. These items include bottles and corrugated boxes, food, grass clippings, sofa, computers, tires and refrigerators. However, MSW does not include everything that is landfilled in MSW, or nonhazardous, landfills, such as construction and demolition debris, municipal wastewater sludge, and other non-hazardous industrial wastes. These wastes come from: our homes; institutions such as schools and hospitals; and commercial sources such as restaurants and businesses. The CMSW indicator includes MSW found in the dumpsters of commercial and institutional entities. It does not include MSW from homes. Data for CMSW comes from this 2014 CalRecycle report (https://www2.calrecycle.ca.gov/Publications/Details/1543). This indicator is expressed in kilograms (kg).">&nbsp; &nbsp;Commercial Municipal Solid Waste (CMSW)</option>
 	
 
-	<div class="local mock-up" style="display: none">
+	<option value="CRHW" title="Commercial RCRA Hazardous Waste (CRHW): 
+	Hazardous wastes are wastes with properties that make them dangerous or capable of having a harmful effect on human health or the environment. Hazardous waste is generated from many sources, ranging from industrial manufacturing process wastes to batteries and may come in many forms, including liquids, solids, gases and sludges. EPA identifies hazardous waste and collects information on quantities generated through its Biennial Hazardous Waste Report. Individual states can identify hazardous waste beyond what EPA identifies. Unless otherwise specified, quantities reflected in this indicator come from EPA's Biennial Report. This indicator is expressed in kilograms (kg).">&nbsp; &nbsp;Commercial RCRA Hazardous Waste (CRHW)</option>
+	-->
 
-	<select class="filterClick form-selectX" style="width: 450px; height: 40px;">
 
-	<option value="-1">Environmental Indicators</option>
+	<option value="EUTR" title="Eutrophication (EUTR): 
+	Aquatic life is frequently limited by access to mineral nutrients, but the most common limiting nutrients are in both agricultural fertilizers and sewage. When these nutrients are carried in to natural water bodies, usually by rain or pipe, they can cause massive blooms of algae. These algae can choke out other life in the water by rapidly taking up oxygen, blocking sunlight, or even releasing toxic chemicals. After the bloom, the algae die and leave behind a devastated ecosystem. In this indicator, emissions are expressed as their equivalent in kilograms of bioavailable nitrogen, based on the emission in question's potential to reach a body of water and its resultant impacts on algal growth. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">&nbsp; &nbsp;Eutrophication (EUTR)</option>
 
-	<option value="0" title="Acid Rain (ACID): 
-	Acid rain occurs when acid-precursors are absorbed from the atmosphere by clouds and dissolved in falling rain. Acid rain, while not directly dangerous to people, causes millions of dollars in damage to infrastructure by very slowly dissolving the exposed surfaces of roads, buildings, drains, and even statues. Acid rain is also detrimental to natural life: acidic soils make it difficult or impossible for plants to survive and grow and acidic runoff can disrupt the delicate chemical balance in natural bodies of water. In this indicator, emissions are expressed in sulfur dioxide (SO2) equivalents. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">Acid Rain (ACID)</option>
+	<option value="ETOX" title="Freshwater Aquatic Ecotoxicity (ETOX): 
+	Like humans, wildlife can be harmed by exposure to toxic chemicals and substances. An ever-expanding list of common chemicals have been assessed for their tendency to cause ecological damage when released in to the air, water, or soil. In this indicator, emissions are expressed in terms of their contribution to ecological damage in the water column of freshwater bodies. A standardized Comparative Toxicity Unit is used. The source of the factors for this indicator is TRACI 2.1 (Bare 2012) which uses USETox 1.0 (Rosenbaum et al. 2008).">&nbsp; &nbsp;Freshwater Aquatic Ecotoxicity (ETOX)</option>
 
-	<option value="1" title="Commercial Construction and Demolition Debris (CCDD): 
-	The CCDD indicator represents the annual generation amount of construction and demolition (C&amp;D) materials during the construction, renovation and demolition of buildings (including homes), roads, bridges and other structures. C&amp;D materials include steel, wood products, drywall and plaster, brick and clay tile, asphalt shingles, concrete and asphalt concrete. The CCDD indicator does not include C&amp;D debris from DIY renovations or natural disasters. This indicator is expressed in kilograms (kg).">Commercial Construction and Demolition Debris (CCDD)</option>
+	<!--
+	<option value="GHG" title="Greenhouse Gases (GHG): 
+	Greenhouse gases are the primary driver of climate change. These gases absorb infrared radiation emitted by the sun at a higher rate than standard atmospheric gases. The result is that, when these gases are emitted, the atmosphere absorbs and stores more heat, causing it to warm up. Carbon dioxide is the most commonly known greenhouse gas, but other gases such as methane, nitrous oxide, and even water vapor are all major contributors to the warming of the atmosphere. In this indicator, emissions are expressed as their equivalent in carbon dioxide (CO2), based on the amount of heat they can absorb and their average life span in the atmosphere. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">&nbsp; &nbsp;Greenhouse Gases (GHG)</option>
+	-->
 
-	<option value="2" title="Commercial Municipal Solid Waste (CMSW): 
-	EPA refers to trash, or municipal solid waste (MSW), as various items consumers throw away after they are used. These items include bottles and corrugated boxes, food, grass clippings, sofa, computers, tires and refrigerators. However, MSW does not include everything that is landfilled in MSW, or nonhazardous, landfills, such as construction and demolition debris, municipal wastewater sludge, and other non-hazardous industrial wastes. These wastes come from: our homes; institutions such as schools and hospitals; and commercial sources such as restaurants and businesses. The CMSW indicator includes MSW found in the dumpsters of commercial and institutional entities. It does not include MSW from homes. Data for CMSW comes from this 2014 CalRecycle report (https://www2.calrecycle.ca.gov/Publications/Details/1543). This indicator is expressed in kilograms (kg).">Commercial Municipal Solid Waste (CMSW)</option>
+	<option value="HRSP" title="Human Health - Respiratory Effects (HRSP): 
+	Particulates can be nearly any ingestible material ground down to a fine enough size. Even otherwise harmless substances, when suspended as a dust and inhaled in to the lungs, can clog airways and irritate the sensitive tissues of the lungs. Over time, exposure to these particulates can lead to a variety of harmful respiratory and cardiac diseases and a general loss of cardiopulmonary function that significantly lowers both lifespan and productive years. In this indicator, emissions are expressed in terms of their effect on human respiratory health in PM2.5 equivalents. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">&nbsp; &nbsp;Human Health - Respiratory Effects (HRSP)</option>
 
-	<option value="3" title="Commercial RCRA Hazardous Waste (CRHW): 
-	Hazardous wastes are wastes with properties that make them dangerous or capable of having a harmful effect on human health or the environment. Hazardous waste is generated from many sources, ranging from industrial manufacturing process wastes to batteries and may come in many forms, including liquids, solids, gases and sludges. EPA identifies hazardous waste and collects information on quantities generated through its Biennial Hazardous Waste Report. Individual states can identify hazardous waste beyond what EPA identifies. Unless otherwise specified, quantities reflected in this indicator come from EPA's Biennial Report. This indicator is expressed in kilograms (kg).">Commercial RCRA Hazardous Waste (CRHW)</option>
+	<option value="HTOX" title="Human Health Toxicity (HTOX): 
+	Millions of tons of chemicals are used in commerce that a human can be exposed to with potential detrimental effect. Exposure to certain chemicals can increase the likelihood of cancer or other illness in humans. In this indicator, emissions are expressed in terms of their contribution to the incidence of cancer and illness in humans. A standardized Comparative Toxicity Unit (CTU) is used. This indicator is a combination of the HCAN and HNCN indicators. The source of the factors for this indicator is TRACI 2.1 (Bare 2012) which uses USETox 1.0 (Rosenbaum et al. 2008).">&nbsp; &nbsp;Human Health Toxicity (HTOX)</option>
 
-	<option value="4" title="Energy Use (ENRG): 
-	Energy Use is an indicator of the life cycle total amount of primary energy used as defined by heat value in a combusted resource or the available energy in a renewable resource to a converting device such as a wind turbine or water turbine. This indicator is a combination of the NNRG and RNRG indicators. This indicator is expressed in megajoules (MJ).">Energy Use (ENRG)</option>
+	
 
-	<option value="5" title="Eutrophication (EUTR): 
-	Aquatic life is frequently limited by access to mineral nutrients, but the most common limiting nutrients are in both agricultural fertilizers and sewage. When these nutrients are carried in to natural water bodies, usually by rain or pipe, they can cause massive blooms of algae. These algae can choke out other life in the water by rapidly taking up oxygen, blocking sunlight, or even releasing toxic chemicals. After the bloom, the algae die and leave behind a devastated ecosystem. In this indicator, emissions are expressed as their equivalent in kilograms of bioavailable nitrogen, based on the emission in question's potential to reach a body of water and its resultant impacts on algal growth. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">Eutrophication (EUTR)</option>
+	<!--
+	<option value="MNRL" title="Minerals and Metals Use (MNRL): 
+	Minerals and Metals Use is an indicator of the life cycle total mass of nonmetallic and metallic minerals extracted for use measured in kilograms (kg).">&nbsp; &nbsp;Minerals and Metals Use (MNRL)</option>
+	-->
 
-	<option value="6" title="Freshwater Aquatic Ecotoxicity (ETOX): 
-	Like humans, wildlife can be harmed by exposure to toxic chemicals and substances. An ever-expanding list of common chemicals have been assessed for their tendency to cause ecological damage when released in to the air, water, or soil. In this indicator, emissions are expressed in terms of their contribution to ecological damage in the water column of freshwater bodies. A standardized Comparative Toxicity Unit is used. The source of the factors for this indicator is TRACI 2.1 (Bare 2012) which uses USETox 1.0 (Rosenbaum et al. 2008).">Freshwater Aquatic Ecotoxicity (ETOX)</option>
+	<option value="OZON" title="Ozone Depletion (OZON): 
+	The earth is surrounded by a protective layer of atmospheric ozone that filters out harmful radiation from the sun. Certain chemicals, when released in to the air, have the ability to react with and destroy large quantities of the ozone layer, allowing more harmful radiation to reach us. Some chemicals are more long lasting or more likely to interact with ozone than others, so they have different destructive potentials. In this indicator, emissions are expressed as their equivalent in kilograms of CFC-11, an extremely harmful gas formerly used as a common refrigerant capable of destroying thousands of times its mass in ozone. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">&nbsp; &nbsp;Ozone Depletion (OZON)</option>
 
-	<option value="7" title="Greenhouse Gases (GHG): 
-	Greenhouse gases are the primary driver of climate change. These gases absorb infrared radiation emitted by the sun at a higher rate than standard atmospheric gases. The result is that, when these gases are emitted, the atmosphere absorbs and stores more heat, causing it to warm up. Carbon dioxide is the most commonly known greenhouse gas, but other gases such as methane, nitrous oxide, and even water vapor are all major contributors to the warming of the atmosphere. In this indicator, emissions are expressed as their equivalent in carbon dioxide (CO2), based on the amount of heat they can absorb and their average life span in the atmosphere. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">Greenhouse Gases (GHG)</option>
+	<option value="SMOG" title="Smog Formation (SMOG): 
+	Smog formation is a complex process by which a group of inorganic gases, typically released by the burning of fossil fuels, react with another group of organic substances, typically released by plant-life, to create ozone at the ground-level. Ozone created at the ground level can cause respiratory disease in humans and stresses plant life, making them more susceptible to disease. Ground-level ozone is also generally broken down and destroyed before it can rise up to join the protective atmospheric ozone layer. In this indicator, emissions are expressed in terms of how much they will contribute to the creation of ground-level ozone (O3), units are kg O3 -equivalents. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">&nbsp; &nbsp;Smog Formation (SMOG)</option>
 
-	<option value="8" title="Human Health - Respiratory Effects (HRSP): 
-	Particulates can be nearly any ingestible material ground down to a fine enough size. Even otherwise harmless substances, when suspended as a dust and inhaled in to the lungs, can clog airways and irritate the sensitive tissues of the lungs. Over time, exposure to these particulates can lead to a variety of harmful respiratory and cardiac diseases and a general loss of cardiopulmonary function that significantly lowers both lifespan and productive years. In this indicator, emissions are expressed in terms of their effect on human respiratory health in PM2.5 equivalents. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">Human Health - Respiratory Effects (HRSP)</option>
+	<option value="METL,PEST">Chemical Releases:</option>
+	<option value="METL">&nbsp; &nbsp;Metal (METL)</option>
+	<option value="PEST">&nbsp; &nbsp;Pesticides (PEST)</option>
 
-	<option value="9" title="Human Health Toxicity (HTOX): 
-	Millions of tons of chemicals are used in commerce that a human can be exposed to with potential detrimental effect. Exposure to certain chemicals can increase the likelihood of cancer or other illness in humans. In this indicator, emissions are expressed in terms of their contribution to the incidence of cancer and illness in humans. A standardized Comparative Toxicity Unit (CTU) is used. This indicator is a combination of the HCAN and HNCN indicators. The source of the factors for this indicator is TRACI 2.1 (Bare 2012) which uses USETox 1.0 (Rosenbaum et al. 2008).">Human Health Toxicity (HTOX)</option>
-
-	<option value="10" title="Land Use (LAND): 
-	Nearly every process requires some amount of land for factories, offices, or roads. This land is often converted from existing natural habitats for wildlife. Habitat loss is the leading cause of wildlife extinctions worldwide and additional habitat conversion could lead to further loss of species. This indicator tracks the total area of usable land occupied to allow for the process. This indicator is expressed in square meters for a year (m2*yr).">Land Use (LAND)</option>
-
-	<option value="11" title="Minerals and Metals Use (MNRL): 
-	Minerals and Metals Use is an indicator of the life cycle total mass of nonmetallic and metallic minerals extracted for use measured in kilograms (kg).">Minerals and Metals Use (MNRL)</option>
-
-	<option value="12" title="Ozone Depletion (OZON): 
-	The earth is surrounded by a protective layer of atmospheric ozone that filters out harmful radiation from the sun. Certain chemicals, when released in to the air, have the ability to react with and destroy large quantities of the ozone layer, allowing more harmful radiation to reach us. Some chemicals are more long lasting or more likely to interact with ozone than others, so they have different destructive potentials. In this indicator, emissions are expressed as their equivalent in kilograms of CFC-11, an extremely harmful gas formerly used as a common refrigerant capable of destroying thousands of times its mass in ozone. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">Ozone Depletion (OZON)</option>
-
-	<option value="13" title="Smog Formation (SMOG): 
-	Smog formation is a complex process by which a group of inorganic gases, typically released by the burning of fossil fuels, react with another group of organic substances, typically released by plant-life, to create ozone at the ground-level. Ozone created at the ground level can cause respiratory disease in humans and stresses plant life, making them more susceptible to disease. Ground-level ozone is also generally broken down and destroyed before it can rise up to join the protective atmospheric ozone layer. In this indicator, emissions are expressed in terms of how much they will contribute to the creation of ground-level ozone (O3), units are kg O3 -equivalents. The source of the factors for this indicator is TRACI 2.1 (Bare 2012).">Smog Formation (SMOG)</option>
-
-	<option value="14" title="Water Use (WATR): 
-	Water Use is an indicator of the life cycle total amount (m3) of freshwater withdrawn from surface and groundwater sources in order to provide a given good or service to society.">Water Use (WATR)</option></select>
+</select>
 
 	</div>
 
-	<hr>
-	<h1 id="infoHeader" class="module_h1">Industries in Georgia</h1>
-	<div id="infoHeaderNote" style="display:none; margin-bottom:16px">Not yet implemented - See Jira</div>
+
+	<h1 id="infoHeader" class="module_h1X">Industries in Georgia</h1>
+	<div id="infoHeaderNote" style="display:none; margin-bottom:16px">Not yet implemented</div>
+
+</div>
+
+	
+	
 
 	<div style="display:none">
 		<div style="font-size: 15px;">
@@ -359,7 +416,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
     <div id="sectorBucket" class="industryBucket">
     	<div class="io-arrow">&#10145;</div>
     	<div class="industryBucketPadding">
-			<h2 id="sectorBucketTitle" class="module_h1" style="display:none">Local Industries</h2>
+			<h2 id="sectorBucketTitle" class="module_h1" style="display:none">Top Industries</h2>
 		    <div style="margin: 0 auto;">
 		        <div class="impact-heatmap">
 		        </div>
@@ -389,7 +446,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
     <br><br>
 
 
-	<h2 class="module_h1" style="margin-bottom:10px">Set Priorities for your Community</h2>
+	<h2 class="module_h1" style="margin-bottom:10px">Set priorities for your community</h2>
 	<br>
 
 	<div style="float:left; margin-right:30px">
@@ -463,7 +520,7 @@ https://www.epa.gov/enviroatlas
 
 <div id="fixedFooter">
 	<!--
-	Click columns to sort. &nbsp; Source: info/data/usa/GA/GAcounties.csv
+	Click columns to sort. &nbsp; &nbsp;Source: info/data/usa/GA/GAcounties.csv
 	-->
 	<a href="https://model.georgia.org/io/">About the Georgia Industry Evaluator</a> &mdash; 
 	<a href="https://model.earth/io/charts">USEEIO Input-Output Widgets</a>
@@ -500,13 +557,6 @@ function loadScriptXXXXXX(url, callback)
 */
 
 
-document.getElementById("clearButton").addEventListener("click", function(){
-	hash.geo=""
-	updateHash({"geo":""});
-	param=loadParams(location.search,location.hash);
-	console.log(param)
-	geoChanged(param)
-});
 
 
 
@@ -526,7 +576,7 @@ function locClick(which) {
 	//if(window.location.hash.includes("geo=US")){
 		param=loadParams(location.search,location.hash);
 		//console.log(param["geo"])
-		geoChanged(param)
+		geoChanged(param);
 	//}
 }
 /*
@@ -796,7 +846,7 @@ function addCountyBoundaries() {
 
 
 <script>
-
+function loadIOWidgets(param) {
     var config = useeio.urlConfig();
     var modelID = config.get().model || 'GAUSEEIO';
 
@@ -805,7 +855,7 @@ function addCountyBoundaries() {
         model: modelID,
         asJsonFiles: true,
     });
-
+    //alert(param["view"])
     // LEFT - INPUT
  	if (param["view"] == "io") {
 
@@ -826,11 +876,20 @@ function addCountyBoundaries() {
 	// CENTER - SECTORS
 	if (param["view"] == "io") {
 		$("#sectorBucketTitle").show();
-		$("#infoHeader").text("Input-Output Mockup")
+		$("#infoHeader").text("Input-output mockup")
 		$("#infoHeaderNote").show();
 	} else {
-		$("#sectorBucket").css({"width":"100%"});
-		$("#sectorBucket").css({"max-width":"100%"});
+		$("#io-input").hide();
+		$("#io-output").hide();
+		$(".io-arrow").hide();
+		$("#sectorBucket").css({"width":"auto"});
+		$("#sectorBucket").css({"max-width":"auto"});
+		$(".industryBucketPadding").css({"padding":"0px"});
+		$(".industryBucketPadding").css({"padding-top":"50px"});
+		$(".industryBucketPadding").css({"border":"none"});
+		$(".industryBucketPadding").css({"margin-right":"0px"});
+
+		//$(".indicator-row").css({"height":"200px"});
 	}
     var heatmap = useeio.impactHeatmap({
         model: model,
@@ -858,7 +917,9 @@ function addCountyBoundaries() {
 	    config.join(paginator_output);
 	    
 	    $("#io-output").show();
-	 }
+	}
+}
+loadIOWidgets(param);
 </script>
 
 
