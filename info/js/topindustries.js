@@ -429,11 +429,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
                     if(d["id"]==fips[i]){
                         if(i==fipslen-1){
-                           text=text+d["county"];
+                           text=text+d["county"].split("County")[0];
                         
                         }else{
                             //console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv")
-                            text=text+d["county"]+', ';
+                            text=text+d["county"].split("County")[0]+', ';
                             //console.log(d["county"])
                         }
                     }

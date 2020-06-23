@@ -10,6 +10,7 @@
 <script type="text/javascript" src="../js/common/common.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
 
 <!--
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
@@ -117,6 +118,10 @@ h1 {
 	z-index: 10;
 	color: #f47d22;
 	color: #63a750;
+}
+.tab-2{
+	display: inline-block;
+    margin-left: 140px;
 }
 @media (max-width: 800px) {
 	.industryBucket {
@@ -262,15 +267,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		Change scales to view the impact of different industry mixes. (Not yet activated)<br>
 		<!-- /Sector List Format -->
 
-		<div id="includedContent"></div>
-		<script> 
-		    $(function(){
-		    	function showBubbleChart() {
-		      		$("#includedContent").load("bubble.html");
-		      	}
-		      	//showBubbleChart(); // To be called by menu in header.
-		    });
-		</script> 
+		
 
 	</div>
 </div>
