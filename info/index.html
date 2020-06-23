@@ -251,6 +251,11 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 				display: table-cell;
 				padding-right: 15px;
 			}
+			#sector_list .cell2 {
+				display: table-cell;
+				padding-right: 15px;
+				text-align: center;
+			}
 			#sector_list .right {
 				display: table-cell;
 				text-align: right;
@@ -279,6 +284,16 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 		<br>
 		Change scales to view the impact of different industry mixes. (Not yet activated)<br>
 		<!-- /Sector List Format -->
+
+		<div id="includedContent"></div>
+		<script> 
+		    $(function(){
+		    	function showBubbleChart() {
+		      		$("#includedContent").load("bubble.html");
+		      	}
+		      	//showBubbleChart(); // To be called by menu in header.
+		    });
+		</script> 
 
 	</div>
 </div>
