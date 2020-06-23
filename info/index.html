@@ -851,8 +851,12 @@ function addCountyBoundaries() {
 		$("#infoHeader").text("Input-output mockup")
 		$("#infoHeaderNote").show();
 	} else {
-		$("#sectorBucket").css({"width":"100%"});
-		$("#sectorBucket").css({"max-width":"100%"});
+		$(".io-arrow").hide();
+		$("#sectorBucket").css({"width":"auto"});
+		$("#sectorBucket").css({"max-width":"auto"});
+		$(".industryBucketPadding").css({"margin-right":"0px"});
+
+		//$(".indicator-row").css({"height":"200px"});
 	}
     var heatmap = useeio.impactHeatmap({
         model: model,
