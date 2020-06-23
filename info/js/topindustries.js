@@ -304,10 +304,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
             delete rates_dict[id]
             rateInFips=0
+            rateArray=[]
             for (var j = 0; j<fips.length; j++){ 
                 if(dataSet.industryData.ActualRate[id]){ 
                     if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips[j])) {
                     rateInFips = rateInFips+parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value])
+                    rateArray.push(parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value]))
                     naicscode = dataSet.industryData.ActualRate[id][fips[j]]['relevant_naics']
                     } 
                 }
@@ -321,7 +323,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                     )
                 }  else {
                     top_data_list.push(
-                        {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
+                        {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i, 'ratearray':rateArray}
                     )
                     top_data_ids.push(id)
                 }
@@ -414,24 +416,77 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     let icon = "";
     let rightCol = "";
-    let text = ""; // <b>Troup County</b><br><br>" // Moved to title
+
+    let text = "";
+    d3.csv("data/county_ID_list.csv").then( function(consdata) {
+         // Clear initial.
+        if(Array.isArray(fips) && statelength!=fips.length){
+
+            fipslen=fips.length
+            for(var i=0; i<fipslen; i++){
+
+                var filteredData = consdata.filter(function(d) {
+
+                    if(d["id"]==fips[i]){
+                        if(i==fipslen-1){
+                           text=text+d["county"];
+                        
+                        }else{
+                            //console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv")
+                            text=text+d["county"]+', ';
+                            //console.log(d["county"])
+                        }
+                    }
+                })
+            }
+        } 
+    
+
+
+
+    text = "<div class='row'><div class='cell'>" + " " + "</div><div class='cell'>" + " " + "</div><div class='right'><div>" +'<span style="color: #676464">'+ text+'</span>'+"<span class='tab-2'>      </span>" + "</div></div></div>"; // <b>Troup County</b><br><br>" // Moved to title
     y=Math.min(howMany, top_data_ids.length)
     naicshash=""
     for (i = 0; i < y; i++) {
         rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
         if(String(whichVal.node().value)=="payann"){
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
-            if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
-                rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
+            if(Array.isArray(fips)){
+                if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
+                    rightCol=""
+                    for (var j = 0; j<top_data_list[i]['ratearray'].length; j++){
+                        if(j!=top_data_list[i]['ratearray'].length-1){
+                            rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+", "
+                        }else{
+                            rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                        }    
+                    }
+                    rightCol = '<span style="color: #676464">'+rightCol+'</span>'+"$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
+                }else{
+                    for (var j = 0; j<top_data_list[i]['ratearray'].length; j++){
+                        if(j!=top_data_list[i]['ratearray'].length-1){
+                            rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+", "
+                        }else{
+                            rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                        }    
+                    }
+                    rightCol = '<span style="color: #676464">'+rightCol+'</span>'+"$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion";
+                }
             }else{
-                rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion";
+                if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
+                    rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
+                }else{
+                    rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion";
+                }
             }
-            
+ 
         }
         rightCol += " <img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'>";
         //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
-
+        
         text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
+        
+        document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
         if(i<5){
             if(i==0){
                 naicshash=naicshash+top_data_list[i]['NAICScode']
@@ -444,7 +499,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     }
 
     updateHash({"naics":naicshash});
-
+})
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
         document.getElementById("industryheader").text = ""; // Clear initial.
         if(Array.isArray(fips) && statelength!=fips.length){
@@ -479,7 +534,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     })
     
     //document.getElementById("p1").innerHTML = "tri"
-    document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
+    
 
     return top_data_list;
 }
