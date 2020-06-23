@@ -304,12 +304,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
             delete rates_dict[id]
             rateInFips=0
-            rateArray=[]
+            rateArray={}
             for (var j = 0; j<fips.length; j++){ 
                 if(dataSet.industryData.ActualRate[id]){ 
                     if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips[j])) {
                     rateInFips = rateInFips+parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value])
-                    rateArray.push(parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value]))
+                    rateArray[j]=parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value]);
                     naicscode = dataSet.industryData.ActualRate[id][fips[j]]['relevant_naics']
                     } 
                 }
@@ -454,21 +454,32 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 if(Array.isArray(fips)){
                     if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
                         rightCol=""
-                        for (var j = 0; j<top_data_list[i]['ratearray'].length; j++){
-                            if(j!=top_data_list[i]['ratearray'].length-1){
-                                rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+", "
+                        
+                        for (var j = 0; j<fips.length; j++){
+                            if(top_data_list[i]['ratearray'][j]){
+                                
+                                    rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                                
                             }else{
-                                rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                                
+                                    rightCol=rightCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
+                                
+                                
                             }    
                         }
                         rightCol = '<span style="color: #676464">'+rightCol+'</span>'+"$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
                     }else{
-                        for (var j = 0; j<top_data_list[i]['ratearray'].length; j++){
-                            if(j!=top_data_list[i]['ratearray'].length-1){
-                                rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+", "
+                        for (var j = 0; j<fips.length; j++){
+                            if(top_data_list[i]['ratearray'][j]){
+                                
+                                    rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                                
                             }else{
-                                rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
-                            }    
+                                
+                                    rightCol=rightCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
+                                
+                                
+                            }   
                         }
                         rightCol = '<span style="color: #676464">'+rightCol+'</span>'+"$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion";
                     }
@@ -485,12 +496,19 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 if(Array.isArray(fips)){
                     rightCol=""
 
-                    for (var j = 0; j<top_data_list[i]['ratearray'].length; j++){
+                    for (var j = 0; j<fips.length; j++){
+                        if(top_data_list[i]['ratearray'][j]){
                             if(j!=top_data_list[i]['ratearray'].length-1){
                                 rightCol=rightCol+String(Math.round(top_data_list[i]['ratearray'][j]))+", "
                             }else{
                                 rightCol=rightCol+String(Math.round(top_data_list[i]['ratearray'][j]))+"&nbsp&nbsp&nbsp&nbsp"
-                            }    
+                            }
+                        }else{
+                                
+                                    rightCol=rightCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
+                                
+                                
+                        } 
                         }
                         rightCol = '<span style="color: #676464">'+rightCol+'</span>'+String(Math.round(top_data_list[i][whichVal.node().value]));
 
