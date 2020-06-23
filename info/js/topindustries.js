@@ -448,7 +448,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         y=Math.min(howMany, top_data_ids.length)
         naicshash=""
         for (i = 0; i < y; i++) {
-            rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
+            
             if(String(whichVal.node().value)=="payann"){
                 //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
                 if(Array.isArray(fips)){
@@ -480,6 +480,26 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                     }
                 }
      
+            }else{
+                //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
+                if(Array.isArray(fips)){
+                    rightCol=""
+
+                    for (var j = 0; j<top_data_list[i]['ratearray'].length; j++){
+                            if(j!=top_data_list[i]['ratearray'].length-1){
+                                rightCol=rightCol+String(Math.round(top_data_list[i]['ratearray'][j]))+", "
+                            }else{
+                                rightCol=rightCol+String(Math.round(top_data_list[i]['ratearray'][j]))+"&nbsp&nbsp&nbsp&nbsp"
+                            }    
+                        }
+                        rightCol = '<span style="color: #676464">'+rightCol+'</span>'+String(Math.round(top_data_list[i][whichVal.node().value]));
+
+
+                    //rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
+                }else{
+                    rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
+                }
+                
             }
             rightCol += " <img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'>";
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
