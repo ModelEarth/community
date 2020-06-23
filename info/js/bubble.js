@@ -1,4 +1,5 @@
 //getting the listof indicators and populating the x and y dropdown options
+console.log("gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg")
 let dropdown = $('#graph-picklist-x');
 
 dropdown.empty();
