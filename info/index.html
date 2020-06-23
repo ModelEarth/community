@@ -159,14 +159,6 @@ function refreshWidgets() {
 	// For comparison with the next time hash is updated.
 	param = loadParams(location.search,location.hash); // param is declared in common.js
 }
-
-document.getElementById("clearButton").addEventListener("click", function(){
-	hash.geo=""
-	updateHash({"geo":""});
-	param=loadParams(location.search,location.hash);
-	console.log(param)
-	geoChanged(param)
-});
 </script>
 
 </head>
@@ -610,6 +602,17 @@ document.getElementById('showValues').onclick = function() {
 
 function infoMapLoaded(param, root, count) {
 	if (typeof dual_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
+
+		document.getElementById("clearButton").addEventListener("click", function(){
+			// This may not need to reside here - unlsess we do a "clear all" option that includes indicators.
+			hash.geo=""
+			updateHash({"geo":""});
+			param=loadParams(location.search,location.hash);
+			console.log(param)
+			geoChanged(param)
+		});
+
+		/*
 		loadScript(root + '/community/js/common/search-filters.js', function(results) {
 			//addCountyBoundaries()
 			//loadMap1();
@@ -619,6 +622,7 @@ function infoMapLoaded(param, root, count) {
 				//loadMap1();
 			}
 		});
+		*/
 	} else if (count<100) { // Wait a 100th of a second and try again
 		setTimeout( function() {
    			console.log("try infoMapLoaded again")
@@ -628,7 +632,7 @@ function infoMapLoaded(param, root, count) {
 		console.log("ERROR: dualmapLoaded exceeded 100 attempts.");
 	}
 }
-//infoMapLoaded(param,"",0);
+infoMapLoaded(param,"",0);
 
 function addCountyBoundaries() {
 	var req = new XMLHttpRequest();
