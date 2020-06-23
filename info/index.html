@@ -603,17 +603,17 @@ document.getElementById('showValues').onclick = function() {
 function infoMapLoaded(param, root, count) {
 	if (typeof dual_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
 
-		document.getElementById("clearButton").addEventListener("click", function(){
-			// This may not need to reside here - unlsess we do a "clear all" option that includes indicators.
-			hash.geo=""
-			updateHash({"geo":""});
-			param=loadParams(location.search,location.hash);
-			console.log(param)
-			geoChanged(param)
-		});
-
-		/*
 		loadScript(root + '/community/js/common/search-filters.js', function(results) {
+
+			document.getElementById("clearButton").addEventListener("click", function(){
+				// This may not need to reside here - unlsess we do a "clear all" option that includes indicators.
+				hash.geo=""
+				updateHash({"geo":""});
+				param=loadParams(location.search,location.hash);
+				console.log(param)
+				geoChanged(param)
+			});	
+			/*
 			//addCountyBoundaries()
 			//loadMap1();
 			window.onhashchange = function() {
@@ -621,8 +621,9 @@ function infoMapLoaded(param, root, count) {
 				console.log("onhashchange")
 				//loadMap1();
 			}
+			*/
 		});
-		*/
+		
 	} else if (count<100) { // Wait a 100th of a second and try again
 		setTimeout( function() {
    			console.log("try infoMapLoaded again")
