@@ -1,7 +1,7 @@
 
 # CensusReporter
 
-Project: Add [Environmentally-Enabled IO Charts](../../../io/charts/) to Census Reporter  
+Project 1: Document steps for deploying static portion of Wazimap to a website. Host on Github or another server.   
 
 
 Since the Wazimap fork provides a Python 3 version of Census Reporter with international usage, we'll use it as a starting point for updating the US version of Census Reporter.  
@@ -9,6 +9,10 @@ Since the Wazimap fork provides a Python 3 version of Census Reporter with inter
 Work in our [Wazimap Fork of Census Reporter]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
 Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
+**Future Projects:**  
+2. Add ability to select country to toggle to the [US API](https://github.com/censusreporter/census-api) from [Census Report repo](https://github.com/censusreporter/censusreporter).  
+3. Add [Environmentally-Enabled IO Charts](../../../io/charts/)  
+4. Merge work into original Census Reporter repo   
 
 
 ## Virtual Environment
@@ -96,7 +100,9 @@ Had one error out of many successful. Appears to have built from mpc-1.1.0.tar.g
 	Warning: Bottle installation failed: building from source.
 	==> Downloading https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
 
-You'll need to have PostgreSQL installed first above.
+You'll need to have PostgreSQL installed first above.  
+
+**Question:** Can we modify so it's not necessary to install PostgreSQL, and only use the API?  
 
 	pip install wazimap
 
