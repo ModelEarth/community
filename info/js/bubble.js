@@ -49,22 +49,23 @@ $.getJSON(url, function (data) {
 
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
-var margin = {top: 20, right: 10, bottom: 40, left: 40};
+var margin = {top: 20, right: 30, bottom: 40, left: 50};
 
 var width = $(parentId).width()- margin.left - margin.right,
     height = 300  - margin.top - margin.bottom;
 
 var xScale = d3.scaleLinear()
-    .range([0,width])
-    .clamp(true);
+    .range([0,width]);
+    //.clamp(true);
 
 var yScale = d3.scaleLinear()
-    .range([height, 0])
-    .clamp(true);
+    .range([height, 0]);
+    //.clamp(true);
 
 var line = d3.line();
 
-var zScale = d3.scaleLinear()
+var zScale = d3.scalePow()
+  .exponent(0.3)
     .range([2,40]);
 
 var xAxis = d3.axisBottom()
@@ -274,15 +275,17 @@ function updateChart(x,y,z){
   //console.log(records.y);
   (records.y).sort(function(a,b){return a-b});
   var l = (records.y).length;
-  var low = Math.round(l * 0.025);
+  var low = Math.round(l * 0.15);
   var high = l - low;
   records.y = (records.y).slice(low,high);
 
   (records.x).sort(function(a,b){return a-b});
   var l = (records.x).length;
-  var low = Math.round(l * 0.025);
+  var low = Math.round(l * 0.15);
   var high = l - low;
   records.x = (records.x).slice(low,high);
+
+  
   //console.log("gggggggggggggggggg"+data2);
   yScale.domain(d3.extent(records.y));
   xScale.domain(d3.extent(records.x));
@@ -299,7 +302,7 @@ zScale.domain(d3.extent(records.z));
     .attr("r",function(d){
                       //console.log(d.ACID)
                       //console.log(zScale(d.z)+5)
-                      return zScale(d.z)+5
+                      return zScale(d.z)+2
                     })
     .style("fill", function (d) { 
 
@@ -340,7 +343,7 @@ zScale.domain(d3.extent(records.z));
                     .attr("r",function(d){
                       //console.log(d.ACID)
                       //console.log(zScale(d.z)+5)
-                      return zScale(d.z)+5
+                      return zScale(d.z)+2
                     })
                     .style("fill", function (d) {
                       if (d.year > 2014) {
