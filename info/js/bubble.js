@@ -265,8 +265,8 @@ $( document ).ready(function() {
       //$("#graph-picklist-z").val('LAND');
 
       // Hack - send a click event - not
-      $("#graph-picklist-x").val('WATR');
-      $("#graph-picklist-y").val('ENRG');
+      $("#graph-picklist-x").val('ENRG');
+      $("#graph-picklist-y").val('WATR');
       $("#graph-picklist-z").val('LAND');
 
       updateChart2(d3.select("#graph-picklist-x").node().value,
@@ -333,6 +333,7 @@ zScale.domain(d3.extent(records.z));
             }
 
           })
+    .style("stroke","black")
     .style("opacity", .5)
 
   //Append any new elements and transition them as well
@@ -374,7 +375,7 @@ zScale.domain(d3.extent(records.z));
 
                     })
     .style("opacity", .5)
-
+.style("stroke","black")
                     .transition().duration(animDuration)
                     .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
 
