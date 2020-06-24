@@ -244,19 +244,21 @@ function refreshWidgets() {
 				display: table-cell;
 				padding-right: 15px;
 			}
-			#sector_list .cell2 {
+			#sector_list .cell2XX {
 				display: table-cell;
 				padding-right: 15px;
 				text-align: center;
 			}
-			#sector_list .right {
+			#sector_list .cell-right {
 				display: table-cell;
 				text-align: right;
+				white-space: nowrap;
+				padding-right: 12px;
 			}
-			#sector_list .right div {
+			#sector_list .cell-right div { /* removed */
 				white-space: nowrap;
 			}
-			#sector_list .right img {
+			#sector_list .cell-right img {
 				margin-left: 8px;
 			}
 			#sector_list div {
@@ -308,11 +310,11 @@ function refreshWidgets() {
 	<option value="ENRG" title="Energy Use (ENRG): 
 	Energy Use is an indicator of the life cycle total amount of primary energy used as defined by heat value in a combusted resource or the available energy in a renewable resource to a converting device such as a wind turbine or water turbine. This indicator is a combination of the NNRG and RNRG indicators. This indicator is expressed in megajoules (MJ).">&nbsp; &nbsp;Energy Use (ENRG)</option>
 
-	<option value="LAND" title="Land Use (LAND): 
-	Nearly every process requires some amount of land for factories, offices, or roads. This land is often converted from existing natural habitats for wildlife. Habitat loss is the leading cause of wildlife extinctions worldwide and additional habitat conversion could lead to further loss of species. This indicator tracks the total area of usable land occupied to allow for the process. This indicator is expressed in square meters for a year (m2*yr).">&nbsp; &nbsp;Land Use (LAND)</option>
-
 	<option value="WATR" title="Water Use (WATR): 
 	Water Use is an indicator of the life cycle total amount (m3) of freshwater withdrawn from surface and groundwater sources in order to provide a given good or service to society.">&nbsp; &nbsp;Water Use (WATR)</option>
+
+	<option value="LAND" title="Land Use (LAND): 
+	Nearly every process requires some amount of land for factories, offices, or roads. This land is often converted from existing natural habitats for wildlife. Habitat loss is the leading cause of wildlife extinctions worldwide and additional habitat conversion could lead to further loss of species. This indicator tracks the total area of usable land occupied to allow for the process. This indicator is expressed in square meters for a year (m2*yr).">&nbsp; &nbsp;Land Use (LAND)</option>
 
 	<option value="">Impact Potential:</option>
 
