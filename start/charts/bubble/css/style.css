@@ -40,22 +40,22 @@ h4{
   stroke-width:.3px;
   stroke: #dedede;
 }
-/*
+
 #graph-wrapper-x{
-  position: absolute;
-  top:450px;
+  
   left:40%;
+   transform: translate(0px, 335px);
   text-align: center;
 }
 
 #graph-wrapper-y{
-  position: absolute;
-  top:250px;
-  left:100px;
+  
   text-align: center;
-  transform:rotate(-90deg);
+  transform:rotate(-90deg) translateX(-1001px) translateY(-10px);
+  transform-origin: bottom left;
+  
 }
-*/
+
 #equation{
   position: absolute;
   top:20px;
@@ -67,7 +67,7 @@ div.tooltip {
   position: absolute;
   text-align: center;
   width: 170px;
-  heightX: 106px;
+  height: 106px;
   overflow: auto;
   padding: 2px;
   padding-top: 8px;
