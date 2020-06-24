@@ -275,13 +275,13 @@ function updateChart(x,y,z){
   //console.log(records.y);
   (records.y).sort(function(a,b){return a-b});
   var l = (records.y).length;
-  var low = Math.round(l * 0.15);
+  var low = Math.round(l * 0.2);
   var high = l - low;
   records.y = (records.y).slice(low,high);
 
   (records.x).sort(function(a,b){return a-b});
   var l = (records.x).length;
-  var low = Math.round(l * 0.15);
+  var low = Math.round(l * 0.2);
   var high = l - low;
   records.x = (records.x).slice(low,high);
 
