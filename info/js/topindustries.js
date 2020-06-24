@@ -423,9 +423,13 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     if(String(whichVal.node().value)=="payann"){
         totalLabel = "Total Payroll ($)";
     }
-    if (fips.length > 3) {
-        $(".mainColumn1").hide();
-    } else {
+    if(Array.isArray(fips)){
+        if (fips.length > 3) {
+            $(".mainColumn1").hide();
+        } else {
+            $(".mainColumn1").show();
+        }
+    }else{
         $(".mainColumn1").show();
     }
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
