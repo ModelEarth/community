@@ -254,7 +254,27 @@ $( document ).ready(function() {
     //updateChart("Count","Rating");
     //
     // updateChart("wind_mph","change_displacement_percent","year");
-    updateChart("ACID","ACID","ACID");
+    
+    //updateChart("WATR","ENGR","LAND"); // Why doesn't this work?
+    updateChart("WATR","WATR","WATR");
+
+
+    $(document).ready(function(){
+      //$("#graph-picklist-x").val('WATR');
+      //$("#graph-picklist-y").val('ENRG');
+      //$("#graph-picklist-z").val('LAND');
+
+      // Hack - send a click event - not
+      $("#graph-picklist-x").val('WATR');
+      $("#graph-picklist-y").val('ENRG');
+      $("#graph-picklist-z").val('LAND');
+
+      updateChart2(d3.select("#graph-picklist-x").node().value,
+              d3.select("#graph-picklist-y").node().value,
+              d3.select("#graph-picklist-z").node().value);
+
+    });
+
   });
 });
 
@@ -396,6 +416,7 @@ zScale.domain(d3.extent(records.z));
           leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
           leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>";
   });*/
+
 }
 
 

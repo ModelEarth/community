@@ -168,21 +168,6 @@ function refreshWidgets() {
 <script type="text/javascript" src="../map/starter/embed-map.js?show=smart"></script>
 
 
-
-<!--
-Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
-To do: Multicolumn sort (but allow for fixed first column)
-https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
--->
-<div id="includedContent"></div>
-		<script> 
-		    $(function(){
-		    	function showBubbleChart() {
-		      		$("#includedContent").load("bubble.html");
-		      	}
-		      	showBubbleChart(); // To be called by menu in header.
-		    });
-		</script> 
 <div class="contentpadding" style="padding-top:0px">
 <!-- two columns -->
 <div id="pageColumns" style="margin:0 10px 0 0px; display: table; max-width:1800px;">
@@ -523,6 +508,24 @@ https://www.epa.gov/enviroatlas
 	<div id="bioenergySummaryDiv"></div>
 
 </div>
+
+
+<!--
+Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
+To do: Multicolumn sort (but allow for fixed first column)
+https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
+-->
+<div class="contentpadding" id="includedContent"></div>
+<script> 
+    $(function(){
+    	function showBubbleChart() {
+      		$("#includedContent").load("bubble.html");
+      	}
+      	showBubbleChart(); // To be called by menu in header.
+    });
+</script> 
+
+
 <br><br><br>
 
 <div id="fixedFooter">
