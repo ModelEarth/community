@@ -49,18 +49,18 @@ $.getJSON(url, function (data) {
 
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
-var margin = {top: 20, right: 30, bottom: 40, left: 50};
+var margin = {top: 20, right: 100, bottom: 40, left: 50};
 
 var width = $(parentId).width()- margin.left - margin.right,
-    height = 300  - margin.top - margin.bottom;
+    height = 350  - margin.top - margin.bottom;
 
 var xScale = d3.scaleLog()
-    .range([0,width]);
-    //.clamp(true);
+    .range([0,width])
+    .clamp(true);
 
 var yScale = d3.scaleLog()
-    .range([height, 0]);
-    //.clamp(true);
+    .range([height, 0])
+    .clamp(true);
 
 var line = d3.line();
 
@@ -126,7 +126,7 @@ d3.selectAll(".graph-picklist").on("change",function(){
 });
 
 d3.selectAll(".graph-picklist2").on("change",function(){
-  updateChart2(d3.select("#graph-picklist-x").node().value,
+  updateChart(d3.select("#graph-picklist-x").node().value,
               d3.select("#graph-picklist-y").node().value,
               d3.select("#graph-picklist-z").node().value);
 });
@@ -256,7 +256,7 @@ $( document ).ready(function() {
     // updateChart("wind_mph","change_displacement_percent","year");
     
     //updateChart("WATR","ENGR","LAND"); // Why doesn't this work?
-    updateChart("WATR","WATR","WATR");
+    updateChart("ENRG","WATR","LAND");
 
 
     $(document).ready(function(){
@@ -269,7 +269,7 @@ $( document ).ready(function() {
       $("#graph-picklist-y").val('WATR');
       $("#graph-picklist-z").val('LAND');
 
-      updateChart2(d3.select("#graph-picklist-x").node().value,
+      updateChart(d3.select("#graph-picklist-x").node().value,
               d3.select("#graph-picklist-y").node().value,
               d3.select("#graph-picklist-z").node().value);
 
@@ -305,6 +305,11 @@ function updateChart(x,y,z){
   var high = l - low;
   records.x = (records.x).slice(low,high);
 
+  (records.pairs).sort(function(a,b){return a-b});
+  var l = (records.pairs).length;
+  var low = Math.round(l * 0.025);
+  var high = l - low;
+  records.pairs = (records.pairs).slice(low,high);
   
   //console.log("gggggggggggggggggg"+data2);
   yScale.domain(d3.extent(records.y));
