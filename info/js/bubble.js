@@ -295,21 +295,21 @@ function updateChart(x,y,z){
   //console.log(records.y);
   (records.y).sort(function(a,b){return a-b});
   var l = (records.y).length;
-  var low = Math.round(l * 0.025);
+  var low = Math.round(l * 0.010);
   var high = l - low;
-  //records.y = (records.y).slice(low,high);
+  records.y = (records.y).slice(low,high);
 
   (records.x).sort(function(a,b){return a-b});
   var l = (records.x).length;
-  var low = Math.round(l * 0.025);
+  var low = Math.round(l * 0.010);
   var high = l - low;
-  //records.x = (records.x).slice(low,high);
+  records.x = (records.x).slice(low,high);
 
   (records.pairs).sort(function(a,b){return a-b});
   var l = (records.pairs).length;
-  var low = Math.round(l * 0.025);
+  var low = Math.round(l * 0.010);
   var high = l - low;
-  //records.pairs = (records.pairs).slice(low,high);
+  records.pairs = (records.pairs).slice(low,high);
   
   //console.log("gggggggggggggggggg"+data2);
   yScale.domain(d3.extent(records.y));
