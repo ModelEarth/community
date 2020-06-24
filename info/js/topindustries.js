@@ -416,7 +416,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     let icon = "";
     let rightCol = "";
-
+    let midCol="";
     let text = "";
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
          // Clear initial.
@@ -429,11 +429,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
                     if(d["id"]==fips[i]){
                         if(i==fipslen-1){
-                           text=text+d["county"].split("County")[0];
+                           text=text+d["county"].split("County")[0]+"&nbsp&nbsp&nbsp&nbsp";
                         
                         }else{
                             //console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv")
-                            text=text+d["county"].split("County")[0]+', ';
+                            text=text+d["county"].split(" County")[0]+', ';
                             //console.log(d["county"])
                         }
                     }
@@ -444,7 +444,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
 
 
-        text = "<div class='row'><div class='cell'>" + " " + "</div><div class='cell'>" + " " + "</div><div class='right'><div>" +'<span style="color: #676464">'+ text+'</span>'+"<span class='tab-2'>      </span>" + "</div></div></div>"; // <b>Troup County</b><br><br>" // Moved to title
+        text = "<div class='row'><div class='cell'>" + " " + "</div><div class='cell'>" + " " + "</div><div class='right'><div>" +'<span style="color: #676464">'+ text+'</span>'+ "</div></div></div>"; // <b>Troup County</b><br><br>" // Moved to title
         y=Math.min(howMany, top_data_ids.length)
         naicshash=""
         for (i = 0; i < y; i++) {
@@ -454,15 +454,15 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 if(Array.isArray(fips)){
                     if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
                         rightCol=""
-                        
+                        midCol=""
                         for (var j = 0; j<fips.length; j++){
                             if(top_data_list[i]['ratearray'][j]){
                                 
-                                    rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                                    midCol=midCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
                                 
                             }else{
                                 
-                                    rightCol=rightCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
+                                    midCol=midCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
                                 
                                 
                             }    
@@ -472,11 +472,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                         for (var j = 0; j<fips.length; j++){
                             if(top_data_list[i]['ratearray'][j]){
                                 
-                                    rightCol=rightCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                                    midCol=midCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
                                 
                             }else{
                                 
-                                    rightCol=rightCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
+                                    midCol=midCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
                                 
                                 
                             }   
@@ -495,17 +495,15 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
                 if(Array.isArray(fips)){
                     rightCol=""
-
+                    midCol=""
                     for (var j = 0; j<fips.length; j++){
                         if(top_data_list[i]['ratearray'][j]){
-                            if(j!=top_data_list[i]['ratearray'].length-1){
-                                rightCol=rightCol+String(Math.round(top_data_list[i]['ratearray'][j]))+", "
-                            }else{
-                                rightCol=rightCol+String(Math.round(top_data_list[i]['ratearray'][j]))+"&nbsp&nbsp&nbsp&nbsp"
-                            }
+                            
+                                midCol=midCol+String(Math.round(top_data_list[i]['ratearray'][j]))+"&nbsp&nbsp&nbsp&nbsp"
+                            
                         }else{
                                 
-                                    rightCol=rightCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
+                                    midCol=midCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
                                 
                                 
                         } 
@@ -521,8 +519,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             }
             rightCol += " <img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'>";
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
+            if(Array.isArray(fips)){
+                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] +"</div><div class='cell2' style='color: #676464'>"+midCol+ "</div><div class='right'><div>" + rightCol + "</div></div></div>";
             
-            text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
+            }else{
+                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
+            }
             
             document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
             if(i<5){

@@ -1,5 +1,4 @@
 //getting the listof indicators and populating the x and y dropdown options
-console.log("gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg")
 let dropdown = $('#graph-picklist-x');
 
 dropdown.empty();
@@ -50,21 +49,24 @@ $.getJSON(url, function (data) {
 
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
-var margin = {top: 20, right: 40, bottom: 40, left: 40};
+var margin = {top: 20, right: 30, bottom: 40, left: 50};
 
-var width = $(parentId).width() - margin.left - margin.right,
+var width = $(parentId).width()- margin.left - margin.right,
     height = 300  - margin.top - margin.bottom;
 
 var xScale = d3.scaleLinear()
     .range([0,width]);
+    //.clamp(true);
 
 var yScale = d3.scaleLinear()
     .range([height, 0]);
+    //.clamp(true);
 
 var line = d3.line();
 
-var zScale = d3.scaleLinear()
-    .range([2,100]);
+var zScale = d3.scalePow()
+  .exponent(0.3)
+    .range([2,40]);
 
 var xAxis = d3.axisBottom()
     .scale(xScale)
@@ -258,7 +260,7 @@ $( document ).ready(function() {
 
 
 var ordinalDomain = ["1-100m", "100-500m", "500m-1km", "1-5km", "5-10km", "Over 10km"];
-var ordinal = d3.scale.ordinal() // Becomes scaleOrdinal in v4
+var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
   .domain(ordinalDomain)
   .range(["blue","#7479BC","#BDE7AE","#ECF809","orange","magenta"]); // Not in use here, from wind/js/regression.js
 
@@ -270,6 +272,21 @@ function updateChart(x,y,z){
   var records = getDimensions(x,y,z);
 
   //Reset scale
+  //console.log(records.y);
+  (records.y).sort(function(a,b){return a-b});
+  var l = (records.y).length;
+  var low = Math.round(l * 0.2);
+  var high = l - low;
+  records.y = (records.y).slice(low,high);
+
+  (records.x).sort(function(a,b){return a-b});
+  var l = (records.x).length;
+  var low = Math.round(l * 0.2);
+  var high = l - low;
+  records.x = (records.x).slice(low,high);
+
+  
+  //console.log("gggggggggggggggggg"+data2);
   yScale.domain(d3.extent(records.y));
   xScale.domain(d3.extent(records.x));
 zScale.domain(d3.extent(records.z));
@@ -285,7 +302,7 @@ zScale.domain(d3.extent(records.z));
     .attr("r",function(d){
                       //console.log(d.ACID)
                       //console.log(zScale(d.z)+5)
-                      return zScale(d.z)+5
+                      return zScale(d.z)+2
                     })
     .style("fill", function (d) { 
 
@@ -326,7 +343,7 @@ zScale.domain(d3.extent(records.z));
                     .attr("r",function(d){
                       //console.log(d.ACID)
                       //console.log(zScale(d.z)+5)
-                      return zScale(d.z)+5
+                      return zScale(d.z)+2
                     })
                     .style("fill", function (d) {
                       if (d.year > 2014) {
