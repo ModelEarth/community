@@ -184,8 +184,8 @@ function refreshWidgets() {
 	-->
 
 	Region samples: 
-	<a href="#region=Southeast+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=50">Southeast Coastal</a> and 
-	<a href="#region=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=50">West&nbsp;Central&nbsp;Georgia</a>
+	<a href="#region=Southeast+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10">Southeast Coastal</a> and 
+	<a href="#region=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
 	<br>
 
 	<div id="aboutToolsDiv" style="position: relative;"></div>
@@ -397,7 +397,7 @@ function refreshWidgets() {
 		<div class="industryBucketPadding">
 			<h2 class="module_h1">Suppliers (Input)</h2>
 		    <div style="margin: 0 auto;">
-		        <div class="impact-heatmap-input">
+		        <div id="impact-heatmap-input">
 		        </div>
 		        <div id="paginator-input">
 		        </div>
@@ -412,9 +412,9 @@ function refreshWidgets() {
     	<div class="industryBucketPadding">
 			<h2 id="sectorBucketTitle" class="module_h1" style="display:none">Top Industries</h2>
 		    <div style="margin: 0 auto;">
-		        <div class="impact-heatmap">
+		        <div id="impact-heatmap-main">
 		        </div>
-		        <div id="paginator">
+		        <div id="paginator-main">
 		        </div>
 		        <br><br>
 		    </div>
@@ -425,7 +425,7 @@ function refreshWidgets() {
     	<div class="industryBucketPadding">
 			<h2 class="module_h1">Buyers (Output)</h2>
 		    <div style="margin: 0 auto;">
-		        <div class="impact-heatmap-output">
+		        <div id="impact-heatmap-output">
 		        </div>
 		        <div id="paginator-output">
 		        </div>
@@ -876,26 +876,62 @@ function loadIOWidgets(param) {
     var modelID = config.get().model || 'GAUSEEIO';
 
     var model = useeio.model({
-        endpoint: '/io/charts/useeio/api',
+        //endpoint: '/io/charts/useeio/api',
+        endpoint: 'https://useeiowidgets.imfast.io/api',
         model: modelID,
         asJsonFiles: true,
     });
-    //alert(param["view"])
+
     // LEFT - INPUT
  	if (param["view"] == "io") {
 
-	    var heatmap_input = useeio.impactHeatmap({
+	    const heatmap_input = useeio.impactHeatmap({
 	        model: model,
-	        selector: '.impact-heatmap-input',
+	        selector: '#impact-heatmap-input',
+	        scope: 'input'
 	    });
-	    var paginator_input = useeio.paginator({
+	    const paginator_input = useeio.paginator({
 	        model: model,
 	        selector: '#paginator-input',
+	        scope: 'input'
 	    });
 	    config.join(heatmap_input);
 	    config.join(paginator_input);
 
 	    $("#io-input").show();
+	}
+
+	// CENTER - MAIN SECTORS
+    const heatmap = useeio.impactHeatmap({
+        model: model,
+        selector: '#impact-heatmap-main',
+        scope: 'main'
+    });
+    const paginator = useeio.paginator({
+        model: model,
+        selector: '#paginator-main',
+        scope: 'main', //  When scope is blank, the main pagination drive others
+    });
+    config.join(heatmap);
+    config.join(paginator);
+
+   
+    // RIGHT - OUTPUT
+    if (param["view"] == "io") {
+	 	const heatmap_output = useeio.impactHeatmap({
+	        model: model,
+	        selector: '#impact-heatmap-output',
+	        scope: 'output'
+	    });
+	    const paginator_output = useeio.paginator({
+	        model: model,
+	        selector: '#paginator-output',
+	        scope: 'output'
+	    });
+	    config.join(heatmap_output);
+	    config.join(paginator_output);
+	    
+	    $("#io-output").show();
 	}
 
 	// CENTER - SECTORS
@@ -916,33 +952,7 @@ function loadIOWidgets(param) {
 
 		//$(".indicator-row").css({"height":"200px"});
 	}
-    var heatmap = useeio.impactHeatmap({
-        model: model,
-        selector: '.impact-heatmap',
-    });
-    var paginator = useeio.paginator({
-        model: model,
-        selector: '#paginator',
-    });
-    config.join(heatmap);
-    config.join(paginator);
 
-   
-    // RIGHT - OUTPUT
-    if (param["view"] == "io") {
-	 	var heatmap_output = useeio.impactHeatmap({
-	        model: model,
-	        selector: '.impact-heatmap-output',
-	    });
-	    var paginator_output = useeio.paginator({
-	        model: model,
-	        selector: '#paginator-output',
-	    });
-	    config.join(heatmap_output);
-	    config.join(paginator_output);
-	    
-	    $("#io-output").show();
-	}
 }
 loadIOWidgets(param);
 </script>
