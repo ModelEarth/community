@@ -418,9 +418,20 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     let rightCol = "";
     let midCol="";
     let text = "";
+    let dollar = ""; // optionally: $
+    let totalLabel = "Total";
+    if(String(whichVal.node().value)=="payann"){
+        totalLabel = "Total Payroll ($)";
+    }
+    if (fips.length > 3) {
+        $(".mainColumn1").hide();
+    } else {
+        $(".mainColumn1").show();
+    }
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
-         // Clear initial.
-        if(Array.isArray(fips) && statelength!=fips.length){
+
+         // TABLE HEADER ROW
+        if(Array.isArray(fips) && statelength != fips.length){
 
             fipslen=fips.length
             for(var i=0; i<fipslen; i++){
@@ -429,69 +440,60 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
                     if(d["id"]==fips[i]){
                         if(i==fipslen-1){
-                           text=text+d["county"].split("County")[0]+"&nbsp&nbsp&nbsp&nbsp";
+                           text += "<div class='cell-right'>" + d["county"].split("County")[0] + " County</div>";
                         
                         }else{
-                            //console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv")
-                            text=text+d["county"].split(" County")[0]+', ';
-                            //console.log(d["county"])
+                            text += "<div class='cell-right'>" + d["county"].split(" County")[0] + " County</div>";
                         }
                     }
                 })
             }
-        } 
-    
-
-
-
-        text = "<div class='row'><div class='cell'>" + " " + "</div><div class='cell'>" + " " + "</div><div class='right'><div>" +'<span style="color: #676464">'+ text+'</span>'+ "</div></div></div>"; // <b>Troup County</b><br><br>" // Moved to title
+        }
+        text = "<div class='row'><div class='cell'><!-- col 1 --></div><div class='cell'><!-- col 2 --></div>" + text + "<div class='cell-right'>" + totalLabel + "</div></div>"; // #676464
+        
+        // INDUSTRY ROWS
         y=Math.min(howMany, top_data_ids.length)
         naicshash=""
-        for (i = 0; i < y; i++) {
-            
+        for (i = 0; i < y; i++) { // Naics
+            rightCol="";
+            midCol="";
             if(String(whichVal.node().value)=="payann"){
                 //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
                 if(Array.isArray(fips)){
-                    if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
-                        rightCol=""
-                        midCol=""
+
+                    //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
+                    if (1==1) { // Always use million
+                        
                         for (var j = 0; j<fips.length; j++){
                             if(top_data_list[i]['ratearray'][j]){
-                                
-                                    midCol=midCol+String((top_data_list[i]['ratearray'][j]/1000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
-                                
-                            }else{
-                                
-                                    midCol=midCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
-                                
-                                
+                                    midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000).toFixed(2)) + " million</div>";
+                            } else {
+                                    midCol = midCol +"<div class='cell-right'>0</div>";
                             }    
                         }
-                        rightCol = '<span style="color: #676464">'+rightCol+'</span>'+"$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
+                        rightCol = rightCol + "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)) + " million</div>";
                     }else{
                         for (var j = 0; j<fips.length; j++){
                             if(top_data_list[i]['ratearray'][j]){
                                 
-                                    midCol=midCol+String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2))+"&nbsp&nbsp&nbsp&nbsp"
+                                    midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2)) + " million</div>";
                                 
                             }else{
-                                
-                                    midCol=midCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
-                                
-                                
+                                    midCol = midCol + "<div class='cell-right'>0</div>";
                             }   
                         }
-                        rightCol = '<span style="color: #676464">'+rightCol+'</span>'+"$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion";
+                        // <span style="color: #676464">
+                        rightCol += "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2)) + " billion</div>";
                     }
                 }else{
-                    if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
-                        rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million";
-                    }else{
-                        rightCol = "$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion";
-                    }
+                    //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
+                        rightCol = "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million</div>";
+                    //}else{
+                    //    rightCol = "<div class='cell'>$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion</div>";
+                    //}
                 }
      
-            }else{
+            } else {
                 //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
                 if(Array.isArray(fips)){
                     rightCol=""
@@ -499,31 +501,30 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                     for (var j = 0; j<fips.length; j++){
                         if(top_data_list[i]['ratearray'][j]){
                             
-                                midCol=midCol+String(Math.round(top_data_list[i]['ratearray'][j]))+"&nbsp&nbsp&nbsp&nbsp"
+                                midCol += "<div class='cell-right'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</div>";
                             
-                        }else{
-                                
-                                    midCol=midCol+"0"+"&nbsp&nbsp&nbsp&nbsp"
-                                
-                                
+                        } else {
+                                midCol += "<div class='cell-right'>0</div>";
                         } 
-                        }
-                        rightCol = '<span style="color: #676464">'+rightCol+'</span>'+String(Math.round(top_data_list[i][whichVal.node().value]));
+                    }
+                    rightCol += "<div class='cell-right'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</div>";
 
 
                     //rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
                 }else{
-                    rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
+                    rightCol = "<div class='cell-right'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</div>";
                 }
                 
             }
-            rightCol += " <img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'>";
+
+
+            rightCol += "<div class='cell'><img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'></div>";
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
-            if(Array.isArray(fips)){
-                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] +"</div><div class='cell2' style='color: #676464'>"+midCol+ "</div><div class='right'><div>" + rightCol + "</div></div></div>";
             
+            if(Array.isArray(fips)){
+                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] +"</div>" + midCol + rightCol + "</div>";
             }else{
-                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div><div class='right'><div>" + rightCol + "</div></div></div>";
+                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div>" + rightCol + "</div>";
             }
             
             document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
@@ -536,7 +537,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 
             }
         
-        }
+        } // End naics rows
 
         updateHash({"naics":naicshash});
     })
