@@ -31,6 +31,9 @@ function populateFieldsFromHash() {
 		}
 	}
 	$("#productCodes").val(param["hs"]);
+	if (param["region"]) {
+		$(".regiontitle").val(param["region"]);
+	}
 }
 // var param = loadParams(location.search,location.hash); // This occurs in common.js
 
