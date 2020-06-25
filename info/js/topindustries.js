@@ -453,7 +453,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                 })
             }
         }
-        text = "<div class='row'><div class='cell'><!-- col 1 --></div><div class='cell'><!-- col 2 --></div>" + text + "<div class='cell-right'>" + totalLabel + "</div></div>"; // #676464
+        text = "<div class='row'><div class='cell'><!-- col 1 --></div><div class='cell'><!-- col 2 --></div>" + text + "<div class='cell-right'>" + totalLabel + "</div><div></div class='cell mock-up' style='display:none'></div>"; // #676464
         
         // INDUSTRY ROWS
         y=Math.min(howMany, top_data_ids.length)
@@ -522,7 +522,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             }
 
 
-            rightCol += "<div class='cell'><img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'></div>";
+            rightCol += "<div class='cell mock-up' style='display:none'><img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'></div>";
             //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
             
             if(Array.isArray(fips)){
@@ -546,13 +546,19 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         updateHash({"naics":naicshash});
     })
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
-        document.getElementById("industryheader").text = ""; // Clear initial.
+        //document.getElementById("industryheader").text = ""; // Clear initial.
+        $(".regionsubtitle").text(""); //Clear
         if(Array.isArray(fips) && statelength!=fips.length){
             fipslen=fips.length
-            document.getElementById("industryheader").innerHTML = "Industries within "+fipslen+" counties<br>"
+            if (param["regiontitle"] == "") {
+                $(".regiontitle").text("Industries within "+fipslen+" counties");
+            } else {
+                $(".regiontitle").text(hash.regiontitle);
+            }
             for(var i=0; i<fipslen; i++){
                 var filteredData = consdata.filter(function(d) {
                     if(d["id"]==fips[i]){
+                        /*
                         if(i==fipslen-1){
                             document.getElementById("industryheader").innerHTML=document.getElementById("industryheader").innerHTML+'<font size="3">'+d["county"]+'</font>'
                         }else if(i==0){
@@ -560,21 +566,20 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
                         }else{
                         document.getElementById("industryheader").innerHTML=document.getElementById("industryheader").innerHTML+'<font size="3">'+d["county"]+', '+'</font>'
                         }
+                        */
+                        $(".regionsubtitle").text($(".regionsubtitle").text() + d["county"] + ", ");
                     }
                 })
             }
         }else if(fips==13){
-            document.getElementById("industryheader").innerHTML = "Industries within state"
+            $(".regiontitle").text("Georgia's Top Industries");
         }else{
             var filteredData = consdata.filter(function(d) {
                 if(d["id"]==fips )
                 {      
-                    document.getElementById("industryheader").innerHTML = "Industries within "+d["county"]
+                    $(".regiontitle").text("Industries within "+d["county"]);
                 }
             })
-        }
-        if (param["view"] == "io") {
-            //document.getElementById("sectorBucketTitle").innerHTML = document.getElementById("industryheader").innerHTML;
         }
     })
     
