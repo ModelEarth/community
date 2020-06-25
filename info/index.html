@@ -119,6 +119,16 @@ h2 {
 	margin-right: 30px; /* todo: omit on right column */
 	overflow: hidden;
 }
+.industryBucketPaddingMosaic {
+	padding: 0px;
+	padding-top: 50px;
+	border: none;
+	margin-right: 0px;
+}
+.sectorBucketMosaic {
+	width:auto;
+	max-width:auto;
+}
 .io-arrow {
 	font-size: 64px;
 	position: absolute;
@@ -155,9 +165,14 @@ $(window).on('hashchange', function() { // Avoid window.onhashchange since overr
 });
 function refreshWidgets() {
 	hash = getHash();
+	//alert("refreshWidgets " + hash.view + " " + param.view);
+	
 	// NOTE: params after ? are not included, just the hash.
 	if (hash.go != param.go) {
 		updateText(hash.go);
+	}
+	if (hash.view != param.view) {
+		applyView(hash.view);
 	}
 	if (hash.geo != param.geo) { // Not usable, already changed at this point.
 		updateLoc(hash.geo); // Check counties. (search-filters.js)
@@ -392,7 +407,9 @@ function refreshWidgets() {
 
 	<h2 id="infoHeaderX">Industry Impact</h2>
 	<div style="margin-bottom:16px">
-		<span id="infoHeaderNote">Using Georgia USEEIO Data</span> | 
+		<span id="infoHeaderNote"></span> 
+		<a href="#view=mosaic&count=20">Georgia USEEIO Mosaic</a> | 
+		<a href="#view=io&count=10">IO Flow Mockup</a> | 
 		<a href="../../io/charts/useeio/">More Widget Samples</a>
 	</div>
 </div>
@@ -909,7 +926,7 @@ function loadIOWidgets(param) {
 
 
     // LEFT - INPUT
- 	if (param["view"] == "io") {
+ 	//if (param["view"] == "io") {
 
 	    const heatmap_input = useeio.impactHeatmap({
 	        model: model,
@@ -925,7 +942,7 @@ function loadIOWidgets(param) {
 	    config.join(paginator_input);
 
 	    $("#io-input").show();
-	}
+	//}
 
 	// CENTER - MAIN SECTORS
     const heatmap = useeio.impactHeatmap({
@@ -943,7 +960,7 @@ function loadIOWidgets(param) {
 
    
     // RIGHT - OUTPUT
-    if (param["view"] == "io") {
+    //if (param["view"] == "io") {
 	 	const heatmap_output = useeio.impactHeatmap({
 	        model: model,
 	        selector: '#impact-heatmap-output',
@@ -958,7 +975,7 @@ function loadIOWidgets(param) {
 	    config.join(paginator_output);
 	    
 	    $("#io-output").show();
-	}
+	//}
 
 	config.updateIfAbsent({
 	  count: 20,
@@ -975,28 +992,31 @@ function loadIOWidgets(param) {
 	  },
 	});
 	*/
+	applyView(param["view"]);
+}
+loadIOWidgets(param);
 
+function applyView(view) {
 	// CENTER - SECTORS
-	if (param["view"] == "io") {
-		$("#sectorBucketTitle").show();
+	if (view == "io") {
 		$("#infoHeader").text("Input-output mockup")
+		$("#sectorBucketTitle").show();
 		$("#infoHeaderNote").show();
+		$("#io-input").show();
+		$("#io-output").show();
+		$(".io-arrow").show();
+		$("#sectorBucket").removeClass("sectorBucketMosaic");
+		$(".industryBucketPadding").removeClass("industryBucketPaddingMosaic");
 	} else {
+		$("#sectorBucketTitle").hide();
+		$("#infoHeaderNote").hide();
 		$("#io-input").hide();
 		$("#io-output").hide();
 		$(".io-arrow").hide();
-		$("#sectorBucket").css({"width":"auto"});
-		$("#sectorBucket").css({"max-width":"auto"});
-		$(".industryBucketPadding").css({"padding":"0px"});
-		$(".industryBucketPadding").css({"padding-top":"50px"});
-		$(".industryBucketPadding").css({"border":"none"});
-		$(".industryBucketPadding").css({"margin-right":"0px"});
-
-		//$(".indicator-row").css({"height":"200px"});
+		$("#sectorBucket").addClass("sectorBucketMosaic");
+		$(".industryBucketPadding").addClass("industryBucketPaddingMosaic");
 	}
-
 }
-loadIOWidgets(param);
 </script>
 
 
