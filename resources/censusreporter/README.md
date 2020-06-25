@@ -70,6 +70,10 @@ Then activate. Your commands will then start with (env1):
 
 	source ~/Documents/env1/bin/activate
 
+Command above differs for bash/zsh. Note that \~/Documents/ is not included here:  
+
+See: https://docs.python.org/3/library/venv.html  
+
 Upgrade pip to 20.0.2+ since 19.0.3 is system default:
 
 	pip install --upgrade pip
