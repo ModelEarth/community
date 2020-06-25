@@ -70,7 +70,7 @@ h1 {
 	margin-bottom: 1px;
 	padding-bottom: 1px;
 }
-.module_h1 {
+.module_h1XX {
 	font-size:28px;
 	font-weight: 200;
 	padding-top:0px;
@@ -78,13 +78,26 @@ h1 {
 	margin-bottom:20px;
 	border-bottom: 1px solid #ddd;
 }
-
+h2 {
+	font-size:28px;
+	font-weight: 200;
+	padding-top:0px;
+	margin-top:0px !important; /* Oddly community.css has priority otherwise */
+	margin-bottom:20px;
+	border-bottom: 1px solid #ddd;
+}
+.pageColumns {
+	margin:0 10px 0 0px;
+	display: table;
+	max-width:1800px;
+}
 .mainColumn {
 	display:table-cell;
 }
 .mainColumn1 {
 	min-width: 500px;
-	width: 500px; 
+	width: 500px;
+	padding-right: 50px
 }
 @media (max-width: 800px) {
 	.mainColumn {
@@ -142,7 +155,10 @@ $(window).on('hashchange', function() { // Avoid window.onhashchange since overr
 });
 function refreshWidgets() {
 	hash = getHash();
-	// NOTE: params after ? are not be included, just the hash.
+	// NOTE: params after ? are not included, just the hash.
+	if (hash.go != param.go) {
+		updateText(hash.go);
+	}
 	if (hash.geo != param.geo) { // Not usable, already changed at this point.
 		updateLoc(hash.geo); // Check counties. (search-filters.js)
 		geoChanged(hash); // Apply county filter to industry list (topindustries.js)
@@ -165,10 +181,27 @@ function refreshWidgets() {
 <script type="text/javascript" src="../map/starter/embed-map.js?show=smart"></script>
 
 
-<div class="contentpadding" style="padding-top:0px">
+<div class="contentpadding" style="padding-top:20px">
+
 <!-- two columns -->
-<div id="pageColumns" style="margin:0 10px 0 0px; display: table; max-width:1800px;">
+<div class="pageColumns">
 <div class="mainColumn mainColumn1" style="font-size: 15px; padding-right: 30px">
+	<a href="./#">Overview</a> | 
+	<a href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
+	<a href="../../io/charts/">About Widgets</a> |
+	<a href="../../io/charts/#updates">Projects</a>
+	
+	<br>
+</div>
+<div class="mainColumn mainColumn2" style="font-size: 15px;">
+	Regions: 
+	<a href="#region=Southeast+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10">Southeast Coastal</a> and 
+	<a href="#region=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
+</div>
+</div>
+
+<div class="pageColumns" style="margin-top:20px">
+<div id="infoColumn" class="mainColumn mainColumn1" style="font-size: 15px;">
 
 	<!--
 
@@ -180,18 +213,11 @@ function refreshWidgets() {
 	</div>
 	-->
 
-	Region samples: 
-	<a href="#region=Southeast+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10">Southeast Coastal</a> and 
-	<a href="#region=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
-	<br>
-
 	<div id="aboutToolsDiv" style="position: relative;"></div>
-	<br><br>
-	
 
 </div>
 
-<div class="mainColumn mainColumn2" style="padding-left:20px; padding-top:20px">
+<div class="mainColumn mainColumn2">
 	<div class="io">
 
 		<div style="float:right;display:none" class="local">
@@ -200,8 +226,7 @@ function refreshWidgets() {
 			</span>
 		</div>
 		<div>
-			<!-- Industries in Troup County -->
-			<h1 id="industryheader" class="module_h1"></h1>
+			<h2 id="industryheader"></h2>
 		</div>
 
 		<!--
@@ -267,12 +292,7 @@ function refreshWidgets() {
 			}
 		</style>
 		
-		<div style="padding:5px">
-			<div id="p1">
-				
-
-			</div>
-		</div>
+		<div id="p1"></div>
 		<br>
 		Change scales to view the impact of different industry mixes. (Not yet activated)<br>
 		<!-- /Sector List Format -->
@@ -286,10 +306,10 @@ function refreshWidgets() {
 </div>
 
 
-<div class="contentpadding">
+<div class="contentpadding" style="margin-top:20px">
 
 <div style="margin-right:45px">
-<hr>
+
 	<div class="io" style="float:right;">
 
 	<select class="filterClickX form-selectX picklist" onchange="updateHash({'indicators':this.value});refreshWidgets();" style="width: 450px; height: 40px;">
@@ -370,9 +390,11 @@ function refreshWidgets() {
 	</div>
 
 
-	<h1 id="infoHeader" class="module_h1X">Industries in Georgia</h1>
-	<div id="infoHeaderNote" style="display:none; margin-bottom:16px">Not yet implemented</div>
-
+	<h2 id="infoHeaderX">Industry Impact</h2>
+	<div style="margin-bottom:16px">
+		<span id="infoHeaderNote">Using Georgia USEEIO Data</span> | 
+		<a href="../../io/charts/useeio/">More Widget Samples</a>
+	</div>
 </div>
 
 	
@@ -437,36 +459,7 @@ function refreshWidgets() {
     <br><br>
 
 
-	<h2 class="module_h1" style="margin-bottom:10px">Set priorities for your community</h2>
-	<br>
 
-	<div style="float:left; margin-right:30px">
-	<div class="littleHeader">Currently Quantifiable</div>
-	Evaluate a Specific Technology<br>
-	Increase Local Revenue<br>
-	Increase Employment<br>
-	Increase Air Quality<br>
-	Increase Water Quality<br>
-	Increase Clean Energy<br>
-	Increase Health and Wellness<br>
-	<br><br>
-	</div>
-
-	<div style="float:left">
-	<div class="littleHeader">Areas to Quantify</div>
-	Increase Higher Paying Jobs<br>
-	Increase Long-term Carbon Capture<br>
-	Increase Access to Amenities<br>
-	Increase Beauty in Land Use<br>
-	Increase Green Material Use<br>
-	Increase Total Satisfaction<br>
-	</div>
-	<div style="clear:both"></div>
-
-
-	Participate in the <a href="../challenge">Fall 2020 Sustainable Communities Web Challenge</a>
-
-	<br><br>
 
 
 </div>
@@ -514,7 +507,11 @@ Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
 To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
-<div class="contentpadding" id="includedContent"></div>
+<div class="contentpadding">
+	<h2>Industry Comparison</h2>
+	<div id="includedContent"></div>
+</div>
+
 <script> 
     $(function(){
     	function showBubbleChart() {
@@ -524,8 +521,40 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
     });
 </script> 
 
-
 <br><br><br>
+
+<div class="contentpadding">
+	<h2 class="module_h1" style="margin-bottom:10px">Set priorities for your community</h2>
+	<br>
+
+	<div style="float:left; margin-right:30px">
+	<div class="littleHeader">Currently Quantifiable</div>
+	Evaluate a Specific Technology<br>
+	Increase Local Revenue<br>
+	Increase Employment<br>
+	Increase Air Quality<br>
+	Increase Water Quality<br>
+	Increase Clean Energy<br>
+	Increase Health and Wellness<br>
+	<br><br>
+	</div>
+
+	<div style="float:left">
+	<div class="littleHeader">Areas to Quantify</div>
+	Increase Higher Paying Jobs<br>
+	Increase Long-term Carbon Capture<br>
+	Increase Access to Amenities<br>
+	Increase Beauty in Land Use<br>
+	Increase Green Material Use<br>
+	Increase Total Satisfaction<br>
+	</div>
+	<div style="clear:both"></div>
+
+
+	Participate in the <a href="../challenge">Fall 2020 Sustainable Communities Web Challenge</a>
+</div>
+
+
 
 <div id="fixedFooter">
 	<!--
@@ -565,18 +594,16 @@ function loadScriptXXXXXX(url, callback)
 // END COMMON
 */
 
-
-
-
-
-
-if (param["geo"] == "US13001,US13005,US13127,US13161,US13229,US13305") {
-	loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
-	loadMarkdown("../../io/tools/bioeconomy-planner/bioenergy/README.md", "bioenergySummaryDiv", "_parent");
-
-} else {
-	loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
+function updateText(go) {
+	$("#aboutToolsDiv").text("");
+	if (go == "bioeconomy") {
+		loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
+		//loadMarkdown("../../io/tools/bioeconomy-planner/bioenergy/README.md", "bioenergySummaryDiv", "_parent");
+	} else {
+		loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
+	}
 }
+updateText(param["go"])
 
 function locClick(which) {
 	//console.log(which.id);
@@ -869,15 +896,17 @@ function addCountyBoundaries() {
 
 <script>
 function loadIOWidgets(param) {
-    var config = useeio.urlConfig();
-    var modelID = config.get().model || 'GAUSEEIO';
+    const config = useeio.urlConfig();
+    const modelID = config.get().model || 'GAUSEEIO';
 
-    var model = useeio.model({
+    const model = useeio.model({
         //endpoint: '/io/charts/useeio/api',
         endpoint: 'https://useeiowidgets.imfast.io/api',
         model: modelID,
         asJsonFiles: true,
     });
+
+
 
     // LEFT - INPUT
  	if (param["view"] == "io") {
@@ -930,6 +959,22 @@ function loadIOWidgets(param) {
 	    
 	    $("#io-output").show();
 	}
+
+	config.updateIfAbsent({
+	  count: 20,
+	  view: "mosaic"
+	});
+
+	/*
+	config.updateIfAbsent({
+	  count: 20,
+	  scopes: {
+	    'input': {
+	      count: 5,
+	     },
+	  },
+	});
+	*/
 
 	// CENTER - SECTORS
 	if (param["view"] == "io") {
