@@ -41,9 +41,6 @@
 .indicator-row {
     height: auto;
 }
-.download-section {
-	display: none; /* Until moved to footer */
-}
 #list_main {
 	display:none;
 }
@@ -893,7 +890,7 @@ function loadIOWidgets(param) {
 	    const paginator_input = useeio.paginator({
 	        model: model,
 	        selector: '#paginator-input',
-	        scope: 'input'
+	        scope: 'input',
 	    });
 	    config.join(heatmap_input);
 	    config.join(paginator_input);
@@ -910,7 +907,7 @@ function loadIOWidgets(param) {
     const paginator = useeio.paginator({
         model: model,
         selector: '#paginator-main',
-        scope: 'main', //  When scope is blank, the main pagination drive others
+        scope: 'main' //  When scope is blank, the main pagination drive others
     });
     config.join(heatmap);
     config.join(paginator);
