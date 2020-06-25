@@ -212,6 +212,18 @@ function formatIndustryData(rawData) {
 }
 
 
+function keyFound(this_key, cat_filter) {
+    if (this_key <= 1) {
+        return false;
+    } else if (cat_filter.length == 0) { // No filter
+        return true;
+    } else if (~cat_filter.indexOf(this_key)) { // Starts with key
+        return true;
+    } else {
+        return false;
+    }
+}
+
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
@@ -219,16 +231,18 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     var bio_input = "113000,321113,113310,32121,32191,562213,";
     var bio_output = "325211,325991,3252A0,335991,325120,326190,";
     var green_energy = "221117,221111,221113,221114,221115,221116,221118";
-    var naics_filter = bio_input + bio_output + green_energy;
-
-    rates_dict = {}
-    rates_list = []
-    selectedFIPS = fips
+    var cat_filter = [];
+    //if (param['go'] == “bioeconomy”) {
+        cat_filter = (bio_input + bio_output + green_energy).split(',');
+    //}
+    var rates_dict = {};
+    var rates_list = [];
+    selectedFIPS = fips;
     if(Array.isArray(fips)){
         for (var i = 0; i<fips.length; i++){
             Object.keys(dataSet.industryData.ActualRate).forEach( this_key=>{
                 // this_key = parseInt(d.split("$")[1])
-                if (this_key!=1){
+                if (keyFound(this_key, cat_filter)){
                     this_rate = dataSet.industryData.ActualRate[this_key]
                     if (this_rate.hasOwnProperty(fips[i])){ 
                         if(rates_dict[this_key]){
@@ -256,7 +270,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         if(param['census_scope']){
             if(param['census_scope']=="state"){
                 Object.keys(dataSet.industryDataStateApi.ActualRate).forEach( this_key=>{
-                    if (this_key!=1){
+                    if (keyFound(this_key, cat_filter)){
                         this_rate = dataSet.industryDataStateApi.ActualRate[this_key]
                         if (this_rate.hasOwnProperty(fips)){ 
                             rates_dict[this_key] = parseFloat(this_rate[fips][whichVal.node().value])
@@ -270,7 +284,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             }
         }else{
             Object.keys(dataSet.industryDataState.ActualRate).forEach( this_key=>{
-                if (this_key!=1){
+                if (keyFound(this_key, cat_filter)){
                     this_rate = dataSet.industryDataState.ActualRate[this_key]
                     if (this_rate.hasOwnProperty(fips)){ 
                         rates_dict[this_key] = parseFloat(this_rate[fips][whichVal.node().value])
@@ -285,7 +299,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
     }else{
         Object.keys(dataSet.industryData.ActualRate).forEach( this_key=>{
-            if (this_key!=1){
+            if (keyFound(this_key, cat_filter)){
                 this_rate = dataSet.industryData.ActualRate[this_key]
                 if (this_rate.hasOwnProperty(fips)){ 
                     rates_dict[this_key] = parseFloat(this_rate[fips][whichVal.node().value])
