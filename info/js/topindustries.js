@@ -425,9 +425,9 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     }
     if(Array.isArray(fips)){
         if (fips.length > 3) {
-            $(".mainColumn1").hide();
+            $("#infoColumn").hide();
         } else {
-            $(".mainColumn1").show();
+            $("#infoColumn").show();
         }
     }else{
         $(".mainColumn1").show();
