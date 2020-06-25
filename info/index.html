@@ -175,13 +175,20 @@ function refreshWidgets() {
 		applyView(hash.view);
 	}
 	if (hash.geo != param.geo) { // Not usable, already changed at this point.
+		//hash.region = "";
+		//updateHash({"region",""});
+		$(".regiontitle").text(""); //Clear
+		$(".regionsubtitle").text(""); //Clear
 		updateLoc(hash.geo); // Check counties. (search-filters.js)
 		geoChanged(hash); // Apply county filter to industry list (topindustries.js)
 	}
+	if (hash.regiontitle != param.regiontitle) {
+		//$(".regiontitle").text(hash.regiontitle);
+	}
 	if (hash.indicators != param.indicators) {
 		//alert('hashchange: ' + hash.indicators + " " + param.indicators);
-		updateHash({"view":"mosaic"}); // Temp, until view=io ready.
-		hash.view = "mosaic"; // Temp, until view=io ready.
+		//updateHash({"view":"mosaic"}); // Temp, until view=io ready.
+		//hash.view = "mosaic"; // Temp, until view=io ready.
 		loadIOWidgets(hash);
 	}
 	// For comparison with the next time hash is updated.
@@ -210,8 +217,8 @@ function refreshWidgets() {
 </div>
 <div class="mainColumn mainColumn2" style="font-size: 15px;">
 	<a href="#view=mosaic">Statewide</a> | 
-	<a href="#region=Southeast+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10">Southeast Coastal</a> |  
-	<a href="#region=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
+	<a href="#regiontitle=Southeast+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10">Southeast Coastal</a> |  
+	<a href="#regiontitle=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
 </div>
 </div>
 
@@ -241,7 +248,8 @@ function refreshWidgets() {
 			</span>
 		</div>
 		<div>
-			<h2 id="industryheader"></h2>
+			<h2 class="regiontitle">Loading Industries...</h2>
+			<h4 class="regionsubtitle" style="font-size:16px;color:#555;"></h4>
 		</div>
 
 		<!--
@@ -275,8 +283,12 @@ function refreshWidgets() {
 			}
 			#sector_list .row {
 				display: table-row;
+			}
+			#sector_list .row:first-of-type .cell, #sector_list .row:first-of-type .cell-right  {
+				border-bottom: 1px solid #ddd;
 				
 			}
+			
 			#sector_list .cell {
 				display: table-cell;
 				padding-right: 15px;
@@ -291,6 +303,15 @@ function refreshWidgets() {
 				text-align: right;
 				white-space: nowrap;
 				padding-right: 12px;
+			}
+			#sector_list .cell, #sector_list .cell-right {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				height: 24px;
+			}
+			#sector_list .row:nth-of-type(2) .cell, #sector_list .row:nth-of-type(2) .cell-right  {
+				padding-top: 10px;
+				height: 30px;
 			}
 			#sector_list .cell-right div { /* removed */
 				white-space: nowrap;
@@ -309,7 +330,9 @@ function refreshWidgets() {
 		
 		<div id="p1"></div>
 		<br>
-		Change scales to view the impact of different industry mixes. (Not yet activated)<br>
+		<div class="mock-up" style="display:none">
+			Change scales to view the impact of different industry mixes. (Not yet activated)<br>
+		</div>
 		<!-- /Sector List Format -->
 
 		
@@ -625,7 +648,10 @@ updateText(param["go"])
 function locClick(which) {
 	//console.log(which.id);
 	hash.geo = $('.geo:checked').map(function() {return this.id;}).get().join(',');
-	updateHash({"geo":hash.geo});
+
+	$(".regiontitle").text(""); //Clear
+	let regiontitle = ""; // Remove from hash. Later associate existing regions.
+	updateHash({"geo":hash.geo,"regiontitle":regiontitle});
 	//if(window.location.hash.includes("geo=US")){
 		param=loadParams(location.search,location.hash);
 		//console.log(param["geo"])
@@ -669,7 +695,8 @@ function infoMapLoaded(param, root, count) {
 			document.getElementById("clearButton").addEventListener("click", function(){
 				// This may not need to reside here - unlsess we do a "clear all" option that includes indicators.
 				hash.geo=""
-				updateHash({"geo":""});
+				//updateHash({"geo":"",});
+				clearHash("geo,regiontitle");
 				param=loadParams(location.search,location.hash);
 				console.log(param)
 				geoChanged(param)
