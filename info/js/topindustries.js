@@ -215,6 +215,12 @@ function formatIndustryData(rawData) {
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
 
+    // NAICS FROM community/projects/biotech
+    var bio_input = "113000,321113,113310,32121,32191,562213,";
+    var bio_output = "325211,325991,3252A0,335991,325120,326190,";
+    var green_energy = "221117,221111,221113,221114,221115,221116,221118";
+    var naics_filter = bio_input + bio_output + green_energy;
+
     rates_dict = {}
     rates_list = []
     selectedFIPS = fips
