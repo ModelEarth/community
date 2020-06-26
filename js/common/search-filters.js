@@ -697,9 +697,13 @@ function showCounties() {
 			applyStupidTable(1); 
 		});
 
+		$(".geo").change(function(e) {
+            console.log("Adjust if this line appears multiple times.");
+        });
+
 		// INIT AT TIME OF INITIAL COUNTY LIST DISPLAY
 		// Set checkboxes based on param (which may be a hash, query or include parameter)
-		updateLoc(param.geo);
+		updateLoc(param.geo); // Needed here to check county boxes.  BUGBUG: Might be reloading data. This also gets called from info/
 	});
 }
 function applyStupidTable(count) {
