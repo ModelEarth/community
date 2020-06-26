@@ -162,7 +162,6 @@ h2 {
 var hash = getHash(); // Include all existing
 $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
 	refreshWidgets();
-
 });
 function refreshWidgets() {
 	param = loadParams(location.search,location.hash); // param is declared in common.js
@@ -183,11 +182,10 @@ function refreshWidgets() {
 		$(".regiontitle").text(""); //Clear
 		$(".regionsubtitle").text(""); //Clear
 		updateLoc(hash.geo); // Check counties. (search-filters.js)
-		//console.log("fffffff")
-		geoChanged(hash); // Apply county filter to industry list (topindustries.js)
 	}
+	alert(hash.regiontitle + " " + priorHash.regiontitle);
 	if (hash.regiontitle != priorHash.regiontitle) {
-		//$(".regiontitle").text(hash.regiontitle);
+		$(".regiontitle").text(hash.regiontitle);
 	}
 	if (hash.directory != priorHash.directory) {
 		
