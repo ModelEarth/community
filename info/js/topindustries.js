@@ -94,63 +94,72 @@ function ready(values) {
 
     //code for what happens when you choose the state and county from drop down
     d3.selectAll(".picklist").on("change",function(){
-        dataObject.industryData= {
-            'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
+        renderBubbleChart(values);
+    });
+    $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
+        // Fires second, so param should already be updated.
+        if (param["go"] != lastGo) {
+            renderBubbleChart(values);
         }
+        lastGo = param["go"];
+    });
+}
+var lastGo = param["go"];
+function renderBubbleChart(values) {
+    dataObject.industryData= {
+        'ActualRate': formatIndustryData($("#naics").value/2),
+    }
 
-        if (d3.select("#naics").node().value==2){
-            industryDataState = {
-                'ActualRate': formatIndustryData(values[5])
-            }
-        }else if(d3.select("#naics").node().value==4){
-            industryDataState = {
-                'ActualRate': formatIndustryData(values[6])
-            }
-        }else if(d3.select("#naics").node().value==6){
-            industryDataState = {
-                'ActualRate': formatIndustryData(values[7])
-            }
+    if (d3.select("#naics").node().value==2){
+        industryDataState = {
+            'ActualRate': formatIndustryData(values[5])
         }
-            
-        dataObject.industryDataState=industryDataState;
-
-        if (d3.select("#naics").node().value==2){
-            industryDataStateApi = {
-                'ActualRate': formatIndustryData(values[8])
-            }
-        }else if(d3.select("#naics").node().value==4){
-            industryDataStateApi = {
-                'ActualRate': formatIndustryData(values[9])
-            }
-        }else if(d3.select("#naics").node().value==6){
-            industryDataStateApi = {
-                'ActualRate': formatIndustryData(values[10])
-            }
+    }else if(d3.select("#naics").node().value==4){
+        industryDataState = {
+            'ActualRate': formatIndustryData(values[6])
         }
-            
-        dataObject.industryDataStateApi=industryDataStateApi;
+    }else if(d3.select("#naics").node().value==6){
+        industryDataState = {
+            'ActualRate': formatIndustryData(values[7])
+        }
+    }
+        
+    dataObject.industryDataState=industryDataState;
 
-            if (param["geo"]){
-                geo=param["geo"]
-                if (geo.includes(",")){
-                    geos=geo.split(",")
-                    fips=[]
-                    for (var i = 0; i<geos.length; i++){
-                        fips.push(geos[i].split("US")[1])
-                    }
-                }else{
-                    fips = geo.split("US")[1]
+    if (d3.select("#naics").node().value==2){
+        industryDataStateApi = {
+            'ActualRate': formatIndustryData(values[8])
+        }
+    }else if(d3.select("#naics").node().value==4){
+        industryDataStateApi = {
+            'ActualRate': formatIndustryData(values[9])
+        }
+    }else if(d3.select("#naics").node().value==6){
+        industryDataStateApi = {
+            'ActualRate': formatIndustryData(values[10])
+        }
+    }
+        
+    dataObject.industryDataStateApi=industryDataStateApi;
+
+        if (param["geo"]){
+            geo=param["geo"]
+            if (geo.includes(",")){
+                geos=geo.split(",")
+                fips=[]
+                for (var i = 0; i<geos.length; i++){
+                    fips.push(geos[i].split("US")[1])
                 }
             }else{
-                fips = "state";
+                fips = geo.split("US")[1]
             }
+        }else{
+            fips = "state";
+        }
 
-        topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
         
-    });
-
 }
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Functions
@@ -226,15 +235,16 @@ function keyFound(this_key, cat_filter) {
 
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
-
+    console.log("topRatesInFips")
     // NAICS FROM community/projects/biotech
-    var bio_input = "113000,321113,113310,32121,32191,562213,541620,";
+    var bio_input = "113000,321113,113310,32121,32191,562213,322121,322110,"; // Omitted 541620
     var bio_output = "325211,325991,3256,335991,325120,326190,";
-    var green_energy = "221117,221111,221113,221114,221115,221116,221118";
+    var green_energy = "221117,221111,221113,221114,221115,221116,221118,";
+    var fossil_energy = "221112,324110";
     var cat_filter = [];
     if (param['go']){
         if (param['go'] == "bioeconomy") {
-            cat_filter = (bio_input + bio_output + green_energy).split(',');
+            cat_filter = (bio_input + bio_output + green_energy + fossil_energy).split(',');
             cat_filt=[]
             for(i=0;i<cat_filter.length;i++){
                 cat_filt.push(cat_filter[i].slice(0,4))
