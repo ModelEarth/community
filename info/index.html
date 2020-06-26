@@ -183,7 +183,6 @@ function refreshWidgets() {
 		$(".regionsubtitle").text(""); //Clear
 		updateLoc(hash.geo); // Check counties. (search-filters.js)
 	}
-	alert(hash.regiontitle + " " + priorHash.regiontitle);
 	if (hash.regiontitle != priorHash.regiontitle) {
 		$(".regiontitle").text(hash.regiontitle);
 	}
