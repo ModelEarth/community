@@ -232,15 +232,17 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
     var bio_output = "325211,325991,3256,335991,325120,326190,";
     var green_energy = "221117,221111,221113,221114,221115,221116,221118";
     var cat_filter = [];
-    //if (param['go'] == “bioeconomy”) {
-        cat_filter = (bio_input + bio_output + green_energy).split(',');
-        cat_filt=[]
-        for(i=0;i<cat_filter.length;i++){
-            cat_filt.push(cat_filter[i].slice(0,4))
+    if (param['go']){
+        if (param['go'] == "bioeconomy") {
+            cat_filter = (bio_input + bio_output + green_energy).split(',');
+            cat_filt=[]
+            for(i=0;i<cat_filter.length;i++){
+                cat_filt.push(cat_filter[i].slice(0,4))
+            }
+            cat_filter=cat_filt
+            //console.log(cat_filter)
         }
-        cat_filter=cat_filt
-        console.log(cat_filter)
-    //}
+    }
     var rates_dict = {};
     var rates_list = [];
     selectedFIPS = fips;
