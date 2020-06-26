@@ -162,6 +162,7 @@ h2 {
 var hash = getHash(); // Include all existing
 $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
 	refreshWidgets();
+
 });
 function refreshWidgets() {
 	hash = getHash();
@@ -170,6 +171,9 @@ function refreshWidgets() {
 	// NOTE: params after ? are not included, just the hash.
 	if (hash.go != param.go) {
 		updateText(hash.go);
+		//var hash = getHash();
+		param=loadParams(location.search,location.hash);
+		geoChanged(param);
 	}
 	if (hash.view != param.view) {
 		applyView(hash.view);
@@ -180,6 +184,7 @@ function refreshWidgets() {
 		$(".regiontitle").text(""); //Clear
 		$(".regionsubtitle").text(""); //Clear
 		updateLoc(hash.geo); // Check counties. (search-filters.js)
+		//console.log("fffffff")
 		geoChanged(hash); // Apply county filter to industry list (topindustries.js)
 	}
 	if (hash.regiontitle != param.regiontitle) {
@@ -642,6 +647,7 @@ function updateText(go) {
 	} else {
 		loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
 	}
+
 }
 updateText(param["go"])
 
