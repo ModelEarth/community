@@ -14,7 +14,6 @@ var promises = [
     d3.tsv("data/usa/GA/industries_state13_naics2_state_api.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics4_state_api.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6_state_api.tsv"),
-
 ]
 Promise.all(promises).then(ready);
 
@@ -94,19 +93,23 @@ function ready(values) {
 
     //code for what happens when you choose the state and county from drop down
     d3.selectAll(".picklist").on("change",function(){
-        renderIndustryChart(values,params);
+        renderIndustryChart(dataObject,values,params);
     });
     $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
         // Note that params differs from param in common.js in case this script runs without refreshWidgets().
-        if (params["go"] != lastParams["go"] || params["geo"] != lastParams["geo"] ) {
-            renderIndustryChart(values,params);
+        lastParams = params;
+        params = loadParams(location.search,location.hash);
+        if (params.go != lastParams.go || params.geo != lastParams.geo ) {
+            renderIndustryChart(dataObject,values,params);
         }
-        lastGo = params["go"];
+        if (params.geo != lastParams.geo) { // Not usable, already changed at this point.
+            geoChanged(dataObject,params); // Apply county filter to industry list (topindustries.js)
+        }
     });
 }
 
 
-function renderIndustryChart(values,params) {
+function renderIndustryChart(dataObject,values,params) {
     dataObject.industryData= {
         'ActualRate': formatIndustryData($("#naics").value/2),
     }
@@ -167,7 +170,7 @@ function renderIndustryChart(values,params) {
 
 
 //function for when the geo hash changes
-function geoChanged(params){
+function geoChanged(dataObject,params){
     if(params.geo){
         geo=params.geo
         if (geo.includes(",")){
