@@ -623,6 +623,9 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
         //document.getElementById("industryheader").text = ""; // Clear initial.
         $(".regionsubtitle").text(""); //Clear
+        if (params.go == "bioeconomy") {
+            $(".regiontitle").text("Bioeconomy and Fossil Fuel Industries");
+        }
         if(Array.isArray(fips) && statelength!=fips.length){
             fipslen=fips.length
             if (params.regiontitle == "") {
