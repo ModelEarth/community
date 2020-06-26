@@ -89,7 +89,8 @@ function ready(values) {
     }
 
 
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"), params)
+    //topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"), params)
+    renderIndustryChart(dataObject,values,params);
 
     //code for what happens when you choose the state and county from drop down
     d3.selectAll(".picklist").on("change",function(){
@@ -99,11 +100,13 @@ function ready(values) {
         // Note that params differs from param in common.js in case this script runs without refreshWidgets().
         lastParams = params;
         params = loadParams(location.search,location.hash);
-        if (params.go != lastParams.go || params.geo != lastParams.geo ) {
-            renderIndustryChart(dataObject,values,params);
-        }
+        
+        // Both call topRatesInFips(). Might be good to move geoChanged processing into renderIndustryChart()
         if (params.geo != lastParams.geo) { // Not usable, already changed at this point.
             geoChanged(dataObject,params); // Apply county filter to industry list (topindustries.js)
+        } 
+        else if (params.go != lastParams.go) {
+            renderIndustryChart(dataObject,values,params);
         }
     });
 }
@@ -111,7 +114,8 @@ function ready(values) {
 
 function renderIndustryChart(dataObject,values,params) {
     dataObject.industryData= {
-        'ActualRate': formatIndustryData($("#naics").value/2),
+        'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
+        //'ActualRate': formatIndustryData($("#naics").value/2),
     }
 
     if (d3.select("#naics").node().value==2){
@@ -146,20 +150,20 @@ function renderIndustryChart(dataObject,values,params) {
         
     dataObject.industryDataStateApi=industryDataStateApi;
 
-        if (params["geo"]){
-            geo=params["geo"]
-            if (geo.includes(",")){
-                geos=geo.split(",")
-                fips=[]
-                for (var i = 0; i<geos.length; i++){
-                    fips.push(geos[i].split("US")[1])
-                }
-            }else{
-                fips = geo.split("US")[1]
+    if (params["geo"]){
+        geo=params["geo"]
+        if (geo.includes(",")){
+            geos=geo.split(",")
+            fips=[]
+            for (var i = 0; i<geos.length; i++){
+                fips.push(geos[i].split("US")[1])
             }
         }else{
-            fips = "state";
+            fips = geo.split("US")[1]
         }
+    }else{
+        fips = "state";
+    }
 
     topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
         
@@ -171,19 +175,18 @@ function renderIndustryChart(dataObject,values,params) {
 
 //function for when the geo hash changes
 function geoChanged(dataObject,params){
-    if(params.geo){
+    if (params.geo) {
         geo=params.geo
-        if (geo.includes(",")){
+        if (geo.includes(",")) {
             geos=geo.split(",")
             fips=[]
             for (var i = 0; i<geos.length; i++){
                 fips.push(geos[i].split("US")[1])
             }
-        }else{
+        } else {
             fips = geo.split("US")[1]
         }
-
-    }else{
+    } else {
         fips = "state";
     }
     topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
@@ -239,7 +242,6 @@ function keyFound(this_key, cat_filter) {
 
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
-    console.log("topRatesInFips");
     // NAICS FROM community/projects/biotech
     var bio_input = "113000,321113,113310,32121,32191,562213,322121,322110,"; // Omitted 541620
     var bio_output = "325211,325991,3256,335991,325120,326190,";
