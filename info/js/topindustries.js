@@ -100,7 +100,8 @@ function ready(values) {
         // Note that params differs from param in common.js in case this script runs without refreshWidgets().
         lastParams = params;
         params = loadParams(location.search,location.hash);
-        
+        //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
+
         // Both call topRatesInFips(). Might be good to move geoChanged processing into renderIndustryChart()
         if (params.geo != lastParams.geo) { // Not usable, already changed at this point.
             geoChanged(dataObject,params); // Apply county filter to industry list (topindustries.js)
@@ -109,6 +110,12 @@ function ready(values) {
             renderIndustryChart(dataObject,values,params);
         }
     });
+
+    // No luck
+    //$(window).on('locationchange', function() {
+    //    alert('The hash has changed!');
+    //});
+ 
 }
 
 
