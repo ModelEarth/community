@@ -92,9 +92,29 @@ function ready(values) {
     //topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"), params)
     renderIndustryChart(dataObject,values,params);
 
-    //code for what happens when you choose the state and county from drop down
-    d3.selectAll(".picklist").on("change",function(){
-        renderIndustryChart(dataObject,values,params);
+    $(document).ready(function() {
+        //code for what happens when you choose the state and county from drop down
+        d3.selectAll(".picklist").on("change",function(){
+            renderIndustryChart(dataObject,values,params);
+        });
+        
+        addGeoChangeDetectToDOM(1);
+        function addGeoChangeDetectToDOM(count) { // Wait for county checkboxes to be added to DOM by search-filters.js
+            if($(".geo").length) {
+                //d3.selectAll(".geo").on("change",function() {
+                $(".geo").change(function(e) {
+                    params = loadParams(location.search,location.hash); // Relies on hash already being updated by invoking index.html page.
+                    geoChanged(dataObject,params);
+                });
+            } else if (count<100) { 
+                setTimeout( function() {
+                    addGeoChangeDetectToDOM(count++)
+                }, 10 );
+            } else {
+                console.log("ERROR: addGeoChangeDetectToDOM exceeded 100 attempts.");
+            }
+        }
+
     });
     $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
         // Note that params differs from param in common.js in case this script runs without refreshWidgets().
@@ -115,8 +135,9 @@ function ready(values) {
     //$(window).on('locationchange', function() {
     //    alert('The hash has changed!');
     //});
- 
+
 }
+
 
 
 function renderIndustryChart(dataObject,values,params) {
@@ -349,6 +370,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
     top_data_list = []
     top_data_ids = []
     naCount = 1
+    let naicscode = [];
     x=Math.min(howMany,rates_list.length)
 
     if(Array.isArray(fips)){
