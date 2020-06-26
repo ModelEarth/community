@@ -601,7 +601,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
         $(".regionsubtitle").text(""); //Clear
         if(Array.isArray(fips) && statelength!=fips.length){
             fipslen=fips.length
-            if (params["regiontitle"] == "") {
+            if (params.regiontitle == "") {
                 $(".regiontitle").text("Industries within "+fipslen+" counties");
             } else {
                 $(".regiontitle").text(hash.regiontitle);
@@ -623,7 +623,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                 })
             }
         }else if(fips==13){
-            $(".regiontitle").text("Georgia's Top Industries");
+            if (params.go = "bioeconomy") {
+                $(".regiontitle").text("Bioeconomy and Fossil Fuel Industries");
+            } else {
+                $(".regiontitle").text("Georgia's Top Industries");
+            }
         }else{
             var filteredData = consdata.filter(function(d) {
                 if(d["id"]==fips )
