@@ -165,20 +165,19 @@ $(window).on('hashchange', function() { // Avoid window.onhashchange since overr
 
 });
 function refreshWidgets() {
+	param = loadParams(location.search,location.hash); // param is declared in common.js
+	let priorHash = hash;
 	hash = getHash();
 	//alert("refreshWidgets " + hash.view + " " + param.view);
 	
 	// NOTE: params after ? are not included, just the hash.
-	if (hash.go != param.go) {
+	if (hash.go != priorHash.go) {
 		updateText(hash.go);
-		//var hash = getHash();
-		param=loadParams(location.search,location.hash);
-		geoChanged(param);
 	}
-	if (hash.view != param.view) {
+	if (hash.view != priorHash.view) {
 		applyView(hash.view);
 	}
-	if (hash.geo != param.geo) { // Not usable, already changed at this point.
+	if (hash.geo != priorHash.geo) { // Not usable, already changed at this point.
 		//hash.region = "";
 		//updateHash({"region",""});
 		$(".regiontitle").text(""); //Clear
@@ -187,17 +186,18 @@ function refreshWidgets() {
 		//console.log("fffffff")
 		geoChanged(hash); // Apply county filter to industry list (topindustries.js)
 	}
-	if (hash.regiontitle != param.regiontitle) {
+	if (hash.regiontitle != priorHash.regiontitle) {
 		//$(".regiontitle").text(hash.regiontitle);
 	}
-	if (hash.indicators != param.indicators) {
+	if (hash.directory != priorHash.directory) {
+		
+	}
+	if (hash.indicators != priorHash.indicators) {
 		//alert('hashchange: ' + hash.indicators + " " + param.indicators);
 		//updateHash({"view":"mosaic"}); // Temp, until view=io ready.
 		//hash.view = "mosaic"; // Temp, until view=io ready.
 		loadIOWidgets(hash);
 	}
-	// For comparison with the next time hash is updated.
-	param = loadParams(location.search,location.hash); // param is declared in common.js
 }
 </script>
 
@@ -1010,10 +1010,13 @@ function loadIOWidgets(param) {
 	    $("#io-output").show();
 	//}
 
+	/*
+	// Reactivate this once fixed
 	config.updateIfAbsent({
 	  count: 20,
 	  view: "mosaic"
 	});
+	*/
 
 	/*
 	config.updateIfAbsent({
