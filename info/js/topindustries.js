@@ -240,7 +240,9 @@ function keyFound(this_key, cat_filter) {
         return false;
     } else if (cat_filter.length == 0) { // No filter
         return true;
-    } else if (cat_filter.includes(this_key.slice(0,4))) { // Starts with key
+    } else if (this_key.startsWith("11")) { // Quick hack, always include Agriculture
+        return true;
+    } else if (cat_filter.includes(this_key.slice(0,4))) { // Our 4 digit array matches key
         return true;
     } else {
         return false;
@@ -255,7 +257,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
     var green_energy = "221117,221111,221113,221114,221115,221116,221118,";
     var fossil_energy = "221112,324110";
     var cat_filter = [];
-    if (params['go']){
+    if (params.go){
         if (params['go'] == "bioeconomy") {
             cat_filter = (bio_input + bio_output + green_energy + fossil_energy).split(',');
             cat_filt=[]
@@ -623,7 +625,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                 })
             }
         }else if(fips==13){
-            if (params.go = "bioeconomy") {
+            if (params.go == "bioeconomy") {
                 $(".regiontitle").text("Bioeconomy and Fossil Fuel Industries");
             } else {
                 $(".regiontitle").text("Georgia's Top Industries");
