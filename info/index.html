@@ -167,7 +167,7 @@ function refreshWidgets() {
 	param = loadParams(location.search,location.hash); // param is declared in common.js
 	let priorHash = hash;
 	hash = getHash();
-	//alert("refreshWidgets " + hash.view + " " + param.view);
+	//alert("refreshWidgets from prior go: " + priorHash.go + " to " + hash.go);
 	
 	// NOTE: params after ? are not included, just the hash.
 	if (hash.go != priorHash.go) {
@@ -196,6 +196,11 @@ function refreshWidgets() {
 		loadIOWidgets(hash);
 	}
 }
+function go(go) {
+	updateHash(go);
+	//refreshWidgets();
+	location.reload(); // For hash change to reach topindustries.js
+}
 </script>
 
 </head>
@@ -211,7 +216,7 @@ function refreshWidgets() {
 <div class="pageColumns">
 <div class="mainColumn mainColumn1" style="font-size: 15px; padding-right: 30px">
 	<a href="./#view=mosaic">Overview</a> | 
-	<a href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
+	<a onClick="go({'go':'bioeconomy'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
 	<a href="../../io/charts/">About Widgets</a> |
 	<a href="../../io/charts/#updates">Projects</a>
 	
