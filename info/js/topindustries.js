@@ -104,7 +104,8 @@ function ready(values) {
         lastGo = param["go"];
     });
 }
-var lastGo = param["go"];
+var lastGo = param["go"]; // To do: Add lastParam object instead.
+
 function renderBubbleChart(values) {
     dataObject.industryData= {
         'ActualRate': formatIndustryData($("#naics").value/2),
