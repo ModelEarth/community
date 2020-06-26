@@ -16,19 +16,18 @@ var promises = [
     d3.tsv("data/usa/GA/industries_state13_naics6_state_api.tsv"),
 
 ]
-
-
 Promise.all(promises).then(ready);
 
 
 function ready(values) {
-    dataObject={}
-    industryData = {
+    let params = loadParams(location.search,location.hash);
+    let lastParams = {};
+    let dataObject={};
+    let industryData = {
         'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
     }
-    dataObject.industryData=industryData;
+    dataObject.industryData = industryData;
 
-    
     if (d3.select("#naics").node().value==2){
         industryDataState = {
             'ActualRate': formatIndustryData(values[5])
@@ -75,8 +74,8 @@ function ready(values) {
     })
     dataObject.counties=counties;
     statelength=dataObject.counties.length
-    if(param["geo"]){
-        geo=param["geo"]
+    if(params["geo"]){
+        geo=params["geo"]
         if (geo.includes(",")){
             geos=geo.split(",")
             fips=[]
@@ -90,23 +89,24 @@ function ready(values) {
         fips = "state";
     }
 
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
+
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"), params)
 
     //code for what happens when you choose the state and county from drop down
     d3.selectAll(".picklist").on("change",function(){
-        renderBubbleChart(values);
+        renderIndustryChart(values,params);
     });
     $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
-        // Fires second, so param should already be updated.
-        if (param["go"] != lastGo) {
-            renderBubbleChart(values);
+        // Note that params differs from param in common.js in case this script runs without refreshWidgets().
+        if (params["go"] != lastParams["go"] || params["geo"] != lastParams["geo"] ) {
+            renderIndustryChart(values,params);
         }
-        lastGo = param["go"];
+        lastGo = params["go"];
     });
 }
-var lastGo = param["go"]; // To do: Add lastParam object instead.
 
-function renderBubbleChart(values) {
+
+function renderIndustryChart(values,params) {
     dataObject.industryData= {
         'ActualRate': formatIndustryData($("#naics").value/2),
     }
@@ -143,8 +143,8 @@ function renderBubbleChart(values) {
         
     dataObject.industryDataStateApi=industryDataStateApi;
 
-        if (param["geo"]){
-            geo=param["geo"]
+        if (params["geo"]){
+            geo=params["geo"]
             if (geo.includes(",")){
                 geos=geo.split(",")
                 fips=[]
@@ -158,7 +158,7 @@ function renderBubbleChart(values) {
             fips = "state";
         }
 
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
         
 }
 
@@ -167,9 +167,9 @@ function renderBubbleChart(values) {
 
 
 //function for when the geo hash changes
-function geoChanged(param){
-    if(param.geo){
-        geo=param.geo
+function geoChanged(params){
+    if(params.geo){
+        geo=params.geo
         if (geo.includes(",")){
             geos=geo.split(",")
             fips=[]
@@ -183,7 +183,7 @@ function geoChanged(param){
     }else{
         fips = "state";
     }
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"))
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
 }
 
 
@@ -235,16 +235,16 @@ function keyFound(this_key, cat_filter) {
 }
 
 //the code to give you the top n rows of data for a specific fips
-function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
-    console.log("topRatesInFips")
+function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
+    console.log("topRatesInFips");
     // NAICS FROM community/projects/biotech
     var bio_input = "113000,321113,113310,32121,32191,562213,322121,322110,"; // Omitted 541620
     var bio_output = "325211,325991,3256,335991,325120,326190,";
     var green_energy = "221117,221111,221113,221114,221115,221116,221118,";
     var fossil_energy = "221112,324110";
     var cat_filter = [];
-    if (param['go']){
-        if (param['go'] == "bioeconomy") {
+    if (params['go']){
+        if (params['go'] == "bioeconomy") {
             cat_filter = (bio_input + bio_output + green_energy + fossil_energy).split(',');
             cat_filt=[]
             for(i=0;i<cat_filter.length;i++){
@@ -286,8 +286,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         }
     }else if(fips=="state"){
         fips=13
-        if(param['census_scope']){
-            if(param['census_scope']=="state"){
+        if(params['census_scope']){
+            if(params['census_scope']=="state"){
                 Object.keys(dataSet.industryDataStateApi.ActualRate).forEach( this_key=>{
                     if (keyFound(this_key, cat_filter)){
                         this_rate = dataSet.industryDataStateApi.ActualRate[this_key]
@@ -371,8 +371,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
             
     }else{
         if(fips==13){
-            if(param['census_scope']){
-                if(param['census_scope']=="state"){
+            if(params['census_scope']){
+                if(params['census_scope']=="state"){
                     for (var i=0; i<x; i++) {
                         id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                         delete rates_dict[id]
@@ -589,7 +589,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal){
         $(".regionsubtitle").text(""); //Clear
         if(Array.isArray(fips) && statelength!=fips.length){
             fipslen=fips.length
-            if (param["regiontitle"] == "") {
+            if (params["regiontitle"] == "") {
                 $(".regiontitle").text("Industries within "+fipslen+" counties");
             } else {
                 $(".regiontitle").text(hash.regiontitle);
