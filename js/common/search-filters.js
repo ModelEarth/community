@@ -1053,6 +1053,7 @@ $(document).ready(function () {
 	  window.open(dual_map.absolute_root() + "resources/input/",'_blank');
 	  event.stopPropagation();
 	});
+
 	$('.addlisting').click(function(event) {
 	  window.location = "https://www.ams.usda.gov/services/local-regional/food-directories-update";
 	  event.stopPropagation();
@@ -1145,8 +1146,7 @@ function displayBigThumbnails(layerName,siteObject) {
     var currentAccess = 0;
     $(".bigThumbMenu").html("");
 
-    $("#honeycombPanelHolder").show(); // Might have to alter when this occurs.
-    $("#honeycombPanel").show();
+    //$("#honeycombPanelHolder").show();
     var thelayers = siteObject.items;
     var sectionMenu = "";
     var categoryMenu = "";
@@ -1232,7 +1232,8 @@ function displayBigThumbnails(layerName,siteObject) {
     //$("#honeycombMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
     
     $("#iconMenu").append(iconMenu);
-    $("#honeyMenuHolder").show();
+    $("#honeycombPanelHolder").show();
+    $("#honeyMenuHolder").show(); // Might be able to remove display:none on this
 
     $(".thumbModule").append($("#honeycombPanelHolder")); // For GDX
 }
@@ -1272,7 +1273,12 @@ function initSiteObject(layerName) {
 	                
 	                // siteObjectFunctions(siteObject); // could add to keep simple here
 	          
-	                displayBigThumbnails("main",siteObject);
+	          		$('.showApps').click(function(event) {
+						displayBigThumbnails("main",siteObject);
+					  	event.stopPropagation();
+					});
+	          		// These should be lazy loaded when clicking menu
+	                //displayBigThumbnails("main",siteObject);
 	                //displayHexagonMenu("",siteObject);
 	            },
 	          error: function (req, status, err) {
@@ -1280,6 +1286,8 @@ function initSiteObject(layerName) {
 	          }
 	        });
 	    })(); // end siteObject
+
+	    
 	}
 } // end initSiteObject
 
