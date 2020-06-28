@@ -31,7 +31,9 @@
 <script type="text/javascript" src="js/topindustries.js"></script>
 
 <!-- After USEEIO to alter css -->
+<!--
 <link rel="stylesheet" href="../css/community.css" />
+-->
 
 <style>
 /* Temp overrides */
@@ -41,7 +43,10 @@
 .indicator-row {
     height: auto;
 }
-#list_main {
+#list_mainX {
+	display:none;
+}
+.data-section { /* to reactivate */
 	display:none;
 }
 .markdownEye {
@@ -210,7 +215,7 @@ function go(go) {
 <script type="text/javascript" src="../map/starter/embed-map.js?show=smart"></script>
 
 
-<div class="contentpadding" style="padding-top:20px">
+<div class="content contentpadding" style="padding-top:20px">
 
 <!-- two columns -->
 <div class="pageColumns">
@@ -357,7 +362,7 @@ function go(go) {
 
 	<div class="io" style="float:right;">
 
-	<select class="filterClickX form-selectX picklist" onchange="updateHash({'indicators':this.value});refreshWidgets();" style="width: 450px; height: 40px;">
+	<select class="filterClickX form-selectX picklist" onchange="updateHash({'indicators':this.value});refreshWidgets();" style="width: 450px;">
 
 	<option value="">Industries with top impacts...</option>
 
@@ -603,7 +608,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 
 
 
-<div id="fixedFooter">
+<div id="fixedFooter" style="display:none">
 	<!--
 	Click columns to sort. &nbsp; &nbsp;Source: info/data/usa/GA/GAcounties.csv
 	-->

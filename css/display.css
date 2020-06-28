@@ -44,10 +44,6 @@ body {
 	padding: 20px;
 	margin-bottom: 20px;
 }
-.filterPanel {
-	overflow: auto;
-	padding: 0 0 4px 24px;
-}
 .filterPanel_backgroundXXX {
 	position: absolute;
 	top:0px;
@@ -163,9 +159,8 @@ body {
 	padding: 7px 8px 7px 8px;
 }
 .catList > div {
-	padding: 7px 8px 7px 8px;
+	padding: 7px 12px 7px 18px;
 	border: solid 1px #fff;
-	
 }
 .catList > div:hover {
 	background: #f3f3f3;

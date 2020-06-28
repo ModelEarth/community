@@ -1,4 +1,6 @@
-<h1 class="h1-home">Community Model&nbsp;Building</h1>
+<h1 class="h1-home">Environmentally-Enabled Input-Output Widgets&nbsp;</h1>
+
+## Form a Team for our Fall 2020 Challenge
 
 Prep for the EPA's sustainable community model building virtual events in 2020.   
 
