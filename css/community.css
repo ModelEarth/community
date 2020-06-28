@@ -129,6 +129,15 @@ hr {
   border:0px;
   border-top:1px solid #ddd;
 }
+select {
+  height: 30px; /* temp here */
+}
+.io input[type="text"], .io input[type="search"], .io select {
+  /* Using 34px for header and 30px for page elements */
+  /*
+  height: 32px;
+  */
+}
 .caticon_left {
   float:left;
   padding-topX: 8px;
@@ -159,7 +168,7 @@ hr {
   z-index: 1001;
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
   overflow: visible;
-  min-height: 67px;
+  min-height: 56px;
 }
 #fixedFooter {
   position: fixed;
@@ -214,8 +223,13 @@ hr {
 .content li {
   margin-left: -10px;
 }
-
+@media (min-width: 1400px) {
+  .content {
+    max-width: 1300px;
+  }
+}
 @media (max-width: 1200px) {
+
   .content li {
     margin-left: -20px;
   }
@@ -742,7 +756,7 @@ iframe {
 }
 .hideMenuInner {
   position:absolute;
-  top:2px;
+  top:3px;
   left:4px;
   color:#555;
   display: none;

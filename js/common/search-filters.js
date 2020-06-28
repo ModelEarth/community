@@ -691,11 +691,12 @@ function showCounties() {
 
 
 		// load the function file you need before you call it...
-		loadScript('/community/start/dataset/stupidtable.js', function(results) { 
+		// Not available here
+		//loadScript('/community/start/dataset/stupidtable.js', function(results) { 
 			// jquery sorting applied to it - could be done with d3 and events.
 
 			applyStupidTable(1); 
-		});
+		//});
 
 		$(".geo").change(function(e) {
             console.log("Adjust if this line appears multiple times.");
@@ -1250,34 +1251,36 @@ function getDirectLink(directlink,rootfolder,layer) {
 }
 function initSiteObject(layerName) {
 
-    // Also make a .json file sample for Greenville
-    // https://github.com/codeforgreenville/leaflet-google-sheets-template
-    // https://data.openupstate.org/map-layers
+	if(location.host.indexOf('localhost') >= 0) {
+	    // Also make a .json file sample for Greenville
+	    // https://github.com/codeforgreenville/leaflet-google-sheets-template
+	    // https://data.openupstate.org/map-layers
 
-    var layerJson = dual_map.community_root() + "impact/menu.json";
+	    var layerJson = dual_map.community_root() + "impact/menu.json";
 
-    var siteObject = (function() {
-        var json = null;
-        $.ajax({
-            'type': 'GET',
-            'async': true,
-            'global': false,
-            'url': layerJson,
-            'jsonpCallback': 'callback',
-            'dataType': "jsonp",
-            'success': function (siteObject) {
-                consoleLog("json loaded within initSiteObject. location.hash: " + location.hash);
-                
-                // siteObjectFunctions(siteObject); // could add to keep simple here
-          
-                //displayBigThumbnails("main",siteObject);
-                //displayHexagonMenu("",siteObject);
-            },
-          error: function (req, status, err) {
-              consoleLog('Error fetching siteObject json: ', status, err);
-          }
-        });
-    })(); // end siteObject
+	    var siteObject = (function() {
+	        var json = null;
+	        $.ajax({
+	            'type': 'GET',
+	            'async': true,
+	            'global': false,
+	            'url': layerJson,
+	            'jsonpCallback': 'callback',
+	            'dataType': "jsonp",
+	            'success': function (siteObject) {
+	                consoleLog("json loaded within initSiteObject. location.hash: " + location.hash);
+	                
+	                // siteObjectFunctions(siteObject); // could add to keep simple here
+	          
+	                displayBigThumbnails("main",siteObject);
+	                //displayHexagonMenu("",siteObject);
+	            },
+	          error: function (req, status, err) {
+	              consoleLog('Error fetching siteObject json: ', status, err);
+	          }
+	        });
+	    })(); // end siteObject
+	}
 } // end initSiteObject
 
 function callInitSiteObject(attempt) { // wait for dual_map
