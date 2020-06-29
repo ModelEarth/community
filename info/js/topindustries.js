@@ -240,7 +240,7 @@ function formatIndustryData(rawData) {
 
     subsetKeys = ['emp', 'payann', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
 
-    for (var i = 1; i<rawData.length; i++){
+    for (var i = 0; i<rawData.length; i++){
 
         entry = rawData[i]
         industryID = entry.relevant_naics
