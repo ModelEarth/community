@@ -10,6 +10,6 @@ Run the notebook cells either in juyter notebook or by running from the command 
 
 After aggregating the data, you can delete the county_level folder inside data\data_raw\BEA_Industry_Factors.  
 
-The last block of this notebook contains the code for generating the state-wide data. Getting the state-wide totals directly from the Census API results in numbers different from the sum of each state’s county totals.  When 1-2 entities operate in a county to protect privacy.
+The last block of this notebook contains the code for generating the state-wide data. When only 1 or 2 of an industry reside in a county, numbers are omitted by the US Census to protect privacy. As a result, the state-wide totals from the Census API are larger than the sum of each state’s county totals.  
 [Additional info](https://github.com/modelearth/community/issues/9) 
 
