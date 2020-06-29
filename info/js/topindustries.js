@@ -291,6 +291,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
     }
     var rates_dict = {};
     var rates_list = [];
+    var forlist={}
     selectedFIPS = fips;
     if(Array.isArray(fips)){
         for (var i = 0; i<fips.length; i++){
@@ -300,25 +301,33 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                     this_rate = dataSet.industryData.ActualRate[this_key]
                     if (this_rate.hasOwnProperty(fips[i])){ 
                         if(rates_dict[this_key]){
-                            rates_list.push(rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                            forlist[this_key]=rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value])
                             rates_dict[this_key] = rates_dict[this_key]+parseFloat(this_rate[fips[i]][whichVal.node().value])      
                         }else{
                             rates_dict[this_key] = parseFloat(this_rate[fips[i]][whichVal.node().value])
-                            rates_list.push(parseFloat(this_rate[fips[i]][whichVal.node().value]))
+                            forlist[this_key]=parseFloat(this_rate[fips[i]][whichVal.node().value])
                         }
                         
                     } else {
                         if(rates_dict[this_key]){
                             rates_dict[this_key] = rates_dict[this_key]+0.0
-                            rates_list.push(rates_dict[this_key]+0.0)
+                            forlist[this_key]=rates_dict[this_key]+0.0
                         }else{
                         rates_dict[this_key] = 0.0
-                        rates_list.push(0.0)
+                        forlist[this_key]=0.0
                         }
                     }
                 }
-            })  
+            })
+
+
         }
+        var keys = Object.keys(forlist);
+        keys.forEach(function(key){
+            rates_list.push(forlist[key])
+        });
+        console.log(rates_dict)
+        console.log(rates_list)    
     }else if(fips=="state"){
         fips=13
         if(params['census_scope']){
@@ -364,6 +373,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                 }
             }
         })
+        console.log(rates_dict)  
+        console.log(rates_list)  
     }
 
     rates_list = rates_list.sort(function(a,b) { return a - b}).reverse()
@@ -380,36 +391,41 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
             delete rates_dict[id]
             rateInFips=0
             rateArray={}
+            naicscode=0
             for (var j = 0; j<fips.length; j++){ 
                 if(dataSet.industryData.ActualRate[id]){ 
                     if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips[j])) {
-                    rateInFips = rateInFips+parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value])
-                    rateArray[j]=parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value]);
-                    naicscode = dataSet.industryData.ActualRate[id][fips[j]]['relevant_naics']
-                    } 
+                        rateInFips = rateInFips+parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value])
+                        rateArray[j]=parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value]);
+                        naicscode = dataSet.industryData.ActualRate[id][fips[j]]['relevant_naics']
+                    } else {
+                            rateInFips = rateInFips+0
+
+                    }
                 }
             }
-
-            if(dataNames[id]){
-                if (rateInFips == null) {
-                    rateInFips = 1
-                    top_data_list.push(
-                        {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
-                    )
-                }  else {
-                    top_data_list.push(
-                        {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i, 'ratearray':rateArray}
-                    )
-                    top_data_ids.push(id)
+            if (keyFound(naicscode, cat_filter)){
+                if(dataNames[id]){
+                    if (rateInFips == null) {
+                        rateInFips = 1
+                        top_data_list.push(
+                            {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
+                        )
+                    }  else {
+                        top_data_list.push(
+                            {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i, 'ratearray':rateArray}
+                        )
+                        top_data_ids.push(id)
+                    }
                 }
             }
         }
-            
+    console.log(top_data_list)      
     }else{
         if(fips==13){
             if(params['census_scope']){
                 if(params['census_scope']=="state"){
-                    for (var i=0; i<x; i++) {
+                    for (var i=0; i<rates_list.length; i++) {
                         id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                         delete rates_dict[id]
 
@@ -418,9 +434,38 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                             naicscode = dataSet.industryDataStateApi.ActualRate[id][fips]['relevant_naics']
                         } else {
                             rateInFips = 0
+                            naicscode = 1
                         }
                         
+                        if (keyFound(naicscode, cat_filter)){
+                            if (rateInFips == null) {
+                                rateInFips = 1
+                                top_data_list.push(
+                                    {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
+                                )
+                            }  else {
+                                top_data_list.push(
+                                    {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
+                                )
+                                top_data_ids.push(id)
+                            }
+                        }
+                    }
+                }
+            }else{
+                for (var i=0; i<rates_list.length; i++) {
+                    id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
+                    delete rates_dict[id]
 
+                    if (dataSet.industryDataState.ActualRate[id].hasOwnProperty(fips)) {
+                        rateInFips = dataSet.industryDataState.ActualRate[id][fips][whichVal.node().value]
+                        naicscode = dataSet.industryDataState.ActualRate[id][fips]['relevant_naics']
+                    } else {
+                        rateInFips = 0
+                        naicscode = 1
+                    }
+                    
+                    if (keyFound(naicscode, cat_filter)){
                         if (rateInFips == null) {
                             rateInFips = 1
                             top_data_list.push(
@@ -434,19 +479,21 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                         }
                     }
                 }
-            }else{
-                for (var i=0; i<x; i++) {
-                    id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
-                    delete rates_dict[id]
+            }
+        }else{
+            for (var i=0; i<rates_list.length; i++) {
+                id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
+                delete rates_dict[id]
 
-                    if (dataSet.industryDataState.ActualRate[id].hasOwnProperty(fips)) {
-                        rateInFips = dataSet.industryDataState.ActualRate[id][fips][whichVal.node().value]
-                        naicscode = dataSet.industryDataState.ActualRate[id][fips]['relevant_naics']
-                    } else {
-                        rateInFips = 0
-                    }
-                    
-
+                if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips)) {
+                    rateInFips = dataSet.industryData.ActualRate[id][fips][whichVal.node().value]
+                    naicscode = dataSet.industryData.ActualRate[id][fips]['relevant_naics']
+                } else {
+                    rateInFips = 0
+                    naicscode = 1
+                }
+                
+                if (keyFound(naicscode, cat_filter)){
                     if (rateInFips == null) {
                         rateInFips = 1
                         top_data_list.push(
@@ -460,31 +507,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                     }
                 }
             }
-        }else{
-            for (var i=0; i<x; i++) {
-                id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
-                delete rates_dict[id]
-
-                if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips)) {
-                    rateInFips = dataSet.industryData.ActualRate[id][fips][whichVal.node().value]
-                    naicscode = dataSet.industryData.ActualRate[id][fips]['relevant_naics']
-                } else {
-                    rateInFips = 0
-                }
-                
-
-                if (rateInFips == null) {
-                    rateInFips = 1
-                    top_data_list.push(
-                        {'data_id': dataNames[id], [whichVal.node().value]: 1,'NAICScode': 1, 'rank': i}
-                    )
-                }  else {
-                    top_data_list.push(
-                        {'data_id': dataNames[id], [whichVal.node().value]: rateInFips,'NAICScode': naicscode, 'rank': i}
-                    )
-                    top_data_ids.push(id)
-                }
-            }
+            console.log(top_data_list)
         }
     }
 
