@@ -23,19 +23,19 @@ function ready(values) {
     let lastParams = {};
     let dataObject={};
     let industryData = {
-        'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
+        'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
     }
     dataObject.industryData = industryData;
 
-    if (d3.select("#naics").node().value==2){
+    if (d3.select("#catsize").node().value==2){
         industryDataState = {
             'ActualRate': formatIndustryData(values[5])
         }
-    }else if(d3.select("#naics").node().value==4){
+    }else if(d3.select("#catsize").node().value==4){
         industryDataState = {
             'ActualRate': formatIndustryData(values[6])
         }
-    }else if(d3.select("#naics").node().value==6){
+    }else if(d3.select("#catsize").node().value==6){
         industryDataState = {
             'ActualRate': formatIndustryData(values[7])
         }
@@ -44,15 +44,15 @@ function ready(values) {
     dataObject.industryDataState=industryDataState;
 
 
-    if (d3.select("#naics").node().value==2){
+    if (d3.select("#catsize").node().value==2){
         industryDataStateApi = {
             'ActualRate': formatIndustryData(values[8])
         }
-    }else if(d3.select("#naics").node().value==4){
+    }else if(d3.select("#catsize").node().value==4){
         industryDataStateApi = {
             'ActualRate': formatIndustryData(values[9])
         }
-    }else if(d3.select("#naics").node().value==6){
+    }else if(d3.select("#catsize").node().value==6){
         industryDataStateApi = {
             'ActualRate': formatIndustryData(values[10])
         }
@@ -142,19 +142,19 @@ function ready(values) {
 
 function renderIndustryChart(dataObject,values,params) {
     dataObject.industryData= {
-        'ActualRate': formatIndustryData(values[d3.select("#naics").node().value/2]),
-        //'ActualRate': formatIndustryData($("#naics").value/2),
+        'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
+        //'ActualRate': formatIndustryData($("#catsize").value/2),
     }
 
-    if (d3.select("#naics").node().value==2){
+    if (d3.select("#catsize").node().value==2){
         industryDataState = {
             'ActualRate': formatIndustryData(values[5])
         }
-    }else if(d3.select("#naics").node().value==4){
+    }else if(d3.select("#catsize").node().value==4){
         industryDataState = {
             'ActualRate': formatIndustryData(values[6])
         }
-    }else if(d3.select("#naics").node().value==6){
+    }else if(d3.select("#catsize").node().value==6){
         industryDataState = {
             'ActualRate': formatIndustryData(values[7])
         }
@@ -162,15 +162,15 @@ function renderIndustryChart(dataObject,values,params) {
         
     dataObject.industryDataState=industryDataState;
 
-    if (d3.select("#naics").node().value==2){
+    if (d3.select("#catsize").node().value==2){
         industryDataStateApi = {
             'ActualRate': formatIndustryData(values[8])
         }
-    }else if(d3.select("#naics").node().value==4){
+    }else if(d3.select("#catsize").node().value==4){
         industryDataStateApi = {
             'ActualRate': formatIndustryData(values[9])
         }
-    }else if(d3.select("#naics").node().value==6){
+    }else if(d3.select("#catsize").node().value==6){
         industryDataStateApi = {
             'ActualRate': formatIndustryData(values[10])
         }
