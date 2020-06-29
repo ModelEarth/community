@@ -62,6 +62,10 @@
 	displayX: none !important;
 }
 
+code {
+	max-width: 500px;
+	overflow: scroll;
+}
 .headerImage {
 	display:none;
 }
@@ -223,7 +227,7 @@ function go(go) {
 	<a href="./#view=mosaic">Overview</a> | 
 	<a onClick="go({'go':'bioeconomy'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
 	<a href="../../io/charts/">About Widgets</a> |
-	<a href="../../io/charts/#updates">Projects</a>
+	<a onClick="go({'go':'dataprep', 'view':'mosaic', 'geo':''}); return false;" href="./#go=bioeconomy&view=mosaic">Data Prep</a>
 	
 	<br>
 </div>
@@ -653,6 +657,8 @@ function updateText(go) {
 	if (go == "bioeconomy") {
 		loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
 		//loadMarkdown("../../io/tools/bioeconomy-planner/bioenergy/README.md", "bioenergySummaryDiv", "_parent");
+	} else if (go == "dataprep") {
+		loadMarkdown("../../community/info/data/README.md", "aboutToolsDiv", "_parent");
 	} else {
 		loadMarkdown("../../io/tools/industry-impact/about.md", "aboutToolsDiv", "_parent");
 	}
