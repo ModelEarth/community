@@ -50,11 +50,10 @@
     box-sizing: border-box;
   }
 
-  aside, pre { display: none; }
+  aside { display: none; }
   /*
   div.legend { position: relative; width: 200px; float: left; }
   */
-
 
   #map1 .leaflet-popup {
     bottom: 17px !important; /* Apply when map points used for "google" material icons */
