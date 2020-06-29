@@ -276,12 +276,12 @@ function go(go) {
 		-->
 
 		<div id="detail_selection">
-			<select id="catsort" class="picklist">
+			<select id="catsort" class="picklist" onchange="updateHash({'catsort':this.value});refreshWidgets();">
 	          <option value="payann" selected>By Annual Payroll</option>
 	          <option value="emp" >By Employee Count</option>
 	          <option value="estab">By Establishments</option>
 	        </select>
-	        <select id="naics" class="picklist">
+	        <select id="catsize" class="picklist" onchange="updateHash({'catsize':this.value});refreshWidgets();">
 	          <option value="2">Sectors - 2 digits</option>
 	          <!--option value="2">Subsectors - 3 digits</option-->
 	          <option value="4">Industry Group - 4 digits</option>
@@ -367,7 +367,7 @@ function go(go) {
 
 	<div class="io" style="float:right;">
 
-	<select class="filterClickX form-selectX picklist" onchange="updateHash({'indicators':this.value});refreshWidgets();" style="width: 450px;">
+	<select id="indicators" class="filterClickX form-selectX picklist" onchange="updateHash({'indicators':this.value});refreshWidgets();" style="width: 450px;">
 
 	<option value="">Industries with top impacts...</option>
 
@@ -957,7 +957,6 @@ function addCountyBoundaries() {
 
 
 
-
 <script>
 function loadIOWidgets(param) {
     const config = useeio.urlConfig();
@@ -1045,6 +1044,22 @@ function loadIOWidgets(param) {
 	applyView(param["view"]);
 }
 loadIOWidgets(param);
+
+
+// Move into topindustries.js
+$(document).ready(function () {
+	if (param.catsort) {
+		$("#catsort").val(param.catsort);
+	}
+	if (param.catsize) {
+		$("#catsize").val(param.catsize);
+	}
+	if (param.indicators) {
+		$("#indicators").val(param.indicators);
+	}
+});
+
+
 
 function applyView(view) {
 	// CENTER - SECTORS
