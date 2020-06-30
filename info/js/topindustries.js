@@ -577,7 +577,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                                             if(d["county"]==e["NAMELSAD"]){
                                                 //mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
                                                 mapLink.push("https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + e['latitude'] + "," + e['longitude'] + ",11z")
-                                                //console.log("xxxxxxxxx"+e["longitude"])
+                                                //mapLink.push("https://bing.com/maps/?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + "&cp=" + e['latitude'] + "~" + e['longitude'] + "&lvl=11"); // lvl not working
                                             }
                                         }
                                     })
@@ -585,8 +585,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                             }
                         }else if(fips==13){
                                 //county=""
-                                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " in Georgia";
-                                mapLink="https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@32.9406955,-84.5411485,8z"
+                                mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@32.9406955,-84.5411485,8z"
+                                //mapLink = "https://bing.com/maps/?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + "&cp=32.94~-84.54&z=8"; // lvl not working
                         }else{
                             var filteredData = consdata.filter(function(d) {
                                 var filteredData = latdata.filter(function(e) {
