@@ -72,6 +72,7 @@ $(document).ready(function(){
 
 	 		// To do: fetch the existing background-image.
 	 		
+	 		console.log("location.host: " + location.host)
 	 		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
 	 			$(".siteTitleShort").text("Model Georgia");
 		 		//imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
