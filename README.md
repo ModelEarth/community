@@ -77,7 +77,7 @@ Teams will collaborate using one or more of the following:
 
 - Provide documentation of set-up steps in a markdown file.
 - Include an index.html file that loads your readme.md file into HTML (like the current page).
-- Have a judge try your install steps a couple hours before the competition ends.  
+- Have judges try your install steps multiple times before the competition ends.  
 - Detached frontends should have an index.html file in their root.
 - Detached frontends should work under any domain when hosted as a Github fork.  
 
