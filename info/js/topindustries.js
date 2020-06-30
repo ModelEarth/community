@@ -615,7 +615,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                                 if(top_data_list[i]['ratearray'][j]){
                                         midCol=midCol + "<div class='cell-right'>" + dollar +"<a href='" + mapLink[j] + "' target='_blank'>"+ String((top_data_list[i]['ratearray'][j]/1000).toFixed(2)) + " million</a></div>";
                                 } else {
-                                        midCol = midCol +"<div class='cell-right'>0</div>";
+                                        midCol = midCol +"<div class='cell-right'>"+"<a href='" + mapLink[j] + "' target='_blank'>"+"0</a></div>";
                                 }    
                             }
                             rightCol = rightCol + "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)) + " million</div>";
@@ -626,7 +626,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                                         midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2)) + " million</div>";
                                     
                                 }else{
-                                        midCol = midCol + "<div class='cell-right'>0</div>";
+                                        midCol = midCol +"<div class='cell-right'>"+"<a href='" + mapLink[j] + "' target='_blank'>"+"0</a></div>";
                                 }   
                             }
                             // <span style="color: #676464">
@@ -657,7 +657,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                                     midCol += "<div class='cell-right'><a href='" + mapLink[j] + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
                                 
                             } else {
-                                    midCol += "<div class='cell-right'>0</div>";
+                                    midCol += "<div class='cell-right'>"+"<a href='" + mapLink[j] + "' target='_blank'>"+"0</a></div>";
                             } 
                         }
                         rightCol += "<div class='cell-right'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</div>";
