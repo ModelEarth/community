@@ -612,7 +612,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                             
                             for (var j = 0; j<fips.length; j++){
                                 if(top_data_list[i]['ratearray'][j]){
-                                        midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000).toFixed(2)) + " million</div>";
+                                        midCol=midCol + "<div class='cell-right'>" + dollar +"<a href='" + mapLink[j] + "' target='_blank'>"+ String((top_data_list[i]['ratearray'][j]/1000).toFixed(2)) + " million</a></div>";
                                 } else {
                                         midCol = midCol +"<div class='cell-right'>0</div>";
                                 }    
@@ -633,7 +633,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                         }
                     }else{
                         //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
-                            rightCol = "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million</div>";
+                            rightCol = "<div class='cell-right'>" + dollar + "<a href='" + mapLink + "' target='_blank'>"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million</a></div>";
                         //}else{
                         //    rightCol = "<div class='cell'>$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion</div>";
                         //}
