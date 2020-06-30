@@ -1372,6 +1372,12 @@ function lazyLoadFiles() {
 
   	var strVarCss = "<style>";
 	if (param["show"] == "suppliers") {
+
+		console.log("location.host: " + location.host);
+		//if(location.host.indexOf('georgia.org') >= 0) { 
+ 			//$('.headerOffsetOne').css('height', '75px'); // Instead of 100px, for space above title.
+ 			strVarCss += ".headerOffsetOne {height:75px}"; 
+ 		//}
 		strVarCss += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
 		//strVarCss += ".headerOffsetOne{display:none !important}";
 		strVarCss += ".component--main_content{margin-top:70px}";
