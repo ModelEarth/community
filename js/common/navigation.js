@@ -43,7 +43,7 @@ $(document).ready(function(){
  		climbpath += "../";
  	}
 
- 	console.log("location.host: " + location.host);
+
  	if (param["showheader"] != "false") {
  		if(location.host.indexOf('model.georgia') >= 0) { 
 	 		$("body").prepend( "<div class='headerImage'><img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'></div>");
@@ -157,9 +157,6 @@ $(document).ready(function(){
 	} else {
 		$(".filterPanel").addClass("filterPanel_fixed");
 		$("#map1").addClass("filterPanel_fixed_maptop");
-		if(location.host.indexOf('georgia.org') >= 0) { 
- 			$('.headerOffsetOne').css('height', '75px'); // Instead of 100px, for space above title.
- 		}
 	}
 
  	// SIDE NAV WITH HIGHLIGHT ON SCROLL
