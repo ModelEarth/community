@@ -158,6 +158,9 @@ select {
   white-space: nowrap;
   margin-right:4px;
 }
+.headerOffset {
+    height: 100px;
+}
 #headerFixed {
   position: fixed;
   top:0;

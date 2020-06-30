@@ -21,7 +21,6 @@ strVar += "<\/style>";
 // Omit var strVar=""; here
 strVar += "";
 strVar += "<style>";
-strVar += "  .headerOffset { height:100px; }";
 strVar += "  svg{ max-width:none; } \/* Fix for embedding material icon map points in Drupal *\/";
 strVar += "<\/style>";
 strVar += "";
