@@ -586,6 +586,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                         }else if(fips==13){
                                 //county=""
                                 mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " in Georgia";
+                                mapLink="https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@32.9406955,-84.5411485,8z"
                         }else{
                             var filteredData = consdata.filter(function(d) {
                                 var filteredData = latdata.filter(function(e) {
