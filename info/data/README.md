@@ -17,7 +17,7 @@ As included in the [data_collection.ipynb](data_collection.ipynb) notebook, the 
 
 	https://api.census.gov/data
 
-A full URL followsthe following following:
+A full URL follows the following format:
 
 	{base_url}/{year}/cbp?get={columns_to_select}&for=county:*&in=state:{fips:02d}
 
