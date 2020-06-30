@@ -56,8 +56,8 @@ $(document).ready(function(){
 	 		$("body").prepend( "<div id='sidecolumn' class='hideprint'></div>\r" );
 	 	}
 	 	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
-		
-	 	$("#header").load( climbpath + "../community/header.html", function( response, status, xhr ) {
+		let headerFile = "../community/header.html";
+	 	$("#header").load( climbpath + headerFile, function( response, status, xhr ) {
 
 	 		// Make paths relative to current page
 	 		$("#header a[href]").each(function() {
@@ -155,6 +155,12 @@ $(document).ready(function(){
 	        	}
 			});
 
+		});
+
+		$("body").append( "<div id='footer' class='hideprint'></div>\r" );
+		let footerFile = "../community/footer.html";
+		$("#footer").load( climbpath + footerFile, function( response, status, xhr ) {
+			
 		});
 	} else {
 		$(".filterPanel").addClass("filterPanel_fixed");
