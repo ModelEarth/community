@@ -31,7 +31,7 @@ strVar += "    Sample indicator:weight hash value: #census=pop>180:25;edu:50;wor
 strVar += "    https:\/\/datascape.github.io\/community\/#columns=population:31;education:50";
 strVar += "  -->";
 strVar += "  <div id=\"headerFixed\" class=\"filterPanel\">";
-strVar += "    <div class=\"headerOffset headerOffsetOne\" style=\"height:100px\">&nbsp;<\/div>";
+strVar += "    <div class=\"headerOffset headerOffsetOne\">&nbsp;<\/div>";
 strVar += "";
 strVar += "    <div class=\"filterPanel_background\">";
 strVar += "    <\/div>";
@@ -475,7 +475,7 @@ strVar += "Port of Bainbridge,30.902867,-84.606259,Liquid\/Dry Bulk,1321 Spring 
 strVar += "<\/aside>";
 strVar += "";
 strVar += "<!-- Matches filterFields and headerFixed height -->";
-strVar += "<div class=\"headerOffset\" style=\"height:56px\">&nbsp;<\/div>";
+strVar += "<div class=\"headerOffset2\" style=\"height:56px\">&nbsp;<\/div>";
 strVar += "";
 strVar += "<div class=\"displayOnload\" style=\"display:none;position:relative\">";
 strVar += "  <div id=\"map1\"><\/div>";
