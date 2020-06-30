@@ -72,7 +72,6 @@ $(document).ready(function(){
 
 	 		// To do: fetch the existing background-image.
 	 		
-	 		console.log("location.host: " + location.host)
 	 		if(location.host.indexOf('georgia') >= 0) { // || location.host.indexOf('localhost') >= 0
 	 			$(".siteTitleShort").text("Model Georgia");
 		 		//imageUrl = climbpath + "../community/img/logo/georgia-icon-rect.png"; // georgia-icon-on-gray.png
@@ -86,10 +85,6 @@ $(document).ready(function(){
 		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa_gray.png' style='width:130px;padding-top:4px'></a>");
 		 		//$('.georgia').show(); // For nav menu
 		 		$('.georgia').css('display', 'inline');
-
-		 		if(location.host.indexOf('georgia.org') >= 0) { 
-		 			$('.headerOffsetOne').css('height', '80px'); // Instead of 100px, for space above title.
-		 		}
 		 	} else if(location.host.indexOf('neighborhood') >= 0) {
 		 		$(".siteTitleShort").text("Model Building");
 		 		$('#logoholder').html("<a href='/'><img style='height: 25px;margin: 30px 10px 4px 10px;' src='" + climbpath + "../localsite/img/logo/neighborhood.png' style='width:140px;padding-top:4px'></a>");
@@ -161,6 +156,9 @@ $(document).ready(function(){
 	} else {
 		$(".filterPanel").addClass("filterPanel_fixed");
 		$("#map1").addClass("filterPanel_fixed_maptop");
+		if(location.host.indexOf('georgia.org') >= 0) { 
+ 			$('.headerOffsetOne').css('height', '75px'); // Instead of 100px, for space above title.
+ 		}
 	}
 
  	// SIDE NAV WITH HIGHLIGHT ON SCROLL
