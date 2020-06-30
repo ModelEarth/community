@@ -599,12 +599,37 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                 // Update these:
                 let latitude = "33.3890488";
                 let longitude = "-84.7726672";
-                let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
-                county = ""; // Delete this line
-
-                let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
+                //let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
+                let county = ""; // Delete this line
                 
-                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
+                //d3.csv("data/county_ID_list.csv").then( function(consdata) {
+                    if(Array.isArray(fips) && statelength!=fips.length){
+                        mapLink=[]
+                        for(var j=0; j<fipslen; j++){
+                            var filteredData = consdata.filter(function(d) {
+                                if(d["id"]==fips[j]){
+                                    mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
+                                }
+                            })
+                        }
+                    }else if(fips==13){
+                            county=""
+                            mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
+                    }else{
+                        var filteredData = consdata.filter(function(d) {
+                            if(d["id"]==fips )
+                            {      
+                                county=d["county"];
+                                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
+                            }
+                        })
+                    }
+                //})
+                //let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
+                
+                
+
+                console.log("xxxxxxxxxx"+county)
 
                 //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
                 if(Array.isArray(fips)){
@@ -613,7 +638,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                     for (var j = 0; j<fips.length; j++){
                         if(top_data_list[i]['ratearray'][j]){
                             
-                                midCol += "<div class='cell-right'><a href='" + mapLink + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
+                                midCol += "<div class='cell-right'><a href='" + mapLink[j] + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
                             
                         } else {
                                 midCol += "<div class='cell-right'>0</div>";
