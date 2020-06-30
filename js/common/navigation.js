@@ -43,6 +43,7 @@ $(document).ready(function(){
  		climbpath += "../";
  	}
 
+ 	console.log("location.host: " + location.host);
  	if (param["showheader"] != "false") {
  		if(location.host.indexOf('model.georgia') >= 0) { 
 	 		$("body").prepend( "<div class='headerImage'><img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'></div>");
