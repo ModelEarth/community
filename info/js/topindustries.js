@@ -14,6 +14,7 @@ var promises = [
     d3.tsv("data/usa/GA/industries_state13_naics2_state_api.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics4_state_api.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6_state_api.tsv"),
+    d3.tsv("data/usa/GA/GAcounties.csv"),
 ]
 Promise.all(promises).then(ready);
 
@@ -531,152 +532,163 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
         $(".mainColumn1").show();
     }
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
+        d3.csv("data/usa/GA/GAcounties.csv").then( function(latdata) {
+             // TABLE HEADER ROW
+            if(Array.isArray(fips) && statelength != fips.length){
 
-         // TABLE HEADER ROW
-        if(Array.isArray(fips) && statelength != fips.length){
+                fipslen=fips.length
+                for(var i=0; i<fipslen; i++){
 
-            fipslen=fips.length
-            for(var i=0; i<fipslen; i++){
+                    var filteredData = consdata.filter(function(d) {
 
-                var filteredData = consdata.filter(function(d) {
-
-                    if(d["id"]==fips[i]){
-                        if(i==fipslen-1){
-                           text += "<div class='cell-right'>" + d["county"].split("County")[0] + " County</div>";
-                        
-                        }else{
-                            text += "<div class='cell-right'>" + d["county"].split(" County")[0] + " County</div>";
-                        }
-                    }
-                })
-            }
-        }
-        text = "<div class='row'><div class='cell'><!-- col 1 --></div><div class='cell'><!-- col 2 --></div>" + text + "<div class='cell-right'>" + totalLabel + "</div><div></div class='cell mock-up' style='display:none'></div>"; // #676464
-        
-        // INDUSTRY ROWS
-        y=Math.min(howMany, top_data_ids.length)
-        naicshash=""
-        for (i = 0; i < y; i++) { // Naics
-            rightCol="";
-            midCol="";
-            if(String(whichVal.node().value)=="payann"){
-                //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
-                if(Array.isArray(fips)){
-
-                    //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
-                    if (1==1) { // Always use million
-                        
-                        for (var j = 0; j<fips.length; j++){
-                            if(top_data_list[i]['ratearray'][j]){
-                                    midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000).toFixed(2)) + " million</div>";
-                            } else {
-                                    midCol = midCol +"<div class='cell-right'>0</div>";
-                            }    
-                        }
-                        rightCol = rightCol + "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)) + " million</div>";
-                    }else{
-                        for (var j = 0; j<fips.length; j++){
-                            if(top_data_list[i]['ratearray'][j]){
-                                
-                                    midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2)) + " million</div>";
-                                
+                        if(d["id"]==fips[i]){
+                            if(i==fipslen-1){
+                               text += "<div class='cell-right'>" + d["county"].split("County")[0] + " County</div>";
+                            
                             }else{
-                                    midCol = midCol + "<div class='cell-right'>0</div>";
-                            }   
+                                text += "<div class='cell-right'>" + d["county"].split(" County")[0] + " County</div>";
+                            }
                         }
-                        // <span style="color: #676464">
-                        rightCol += "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2)) + " billion</div>";
-                    }
-                }else{
-                    //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
-                        rightCol = "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million</div>";
-                    //}else{
-                    //    rightCol = "<div class='cell'>$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion</div>";
-                    //}
+                    })
                 }
-     
-            } else {
-                // Update these:
-                let latitude = "33.3890488";
-                let longitude = "-84.7726672";
-                //let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
-                let county = ""; // Delete this line
-                
-                //d3.csv("data/county_ID_list.csv").then( function(consdata) {
-                    if(Array.isArray(fips) && statelength!=fips.length){
-                        mapLink=[]
-                        for(var j=0; j<fipslen; j++){
+            }
+            text = "<div class='row'><div class='cell'><!-- col 1 --></div><div class='cell'><!-- col 2 --></div>" + text + "<div class='cell-right'>" + totalLabel + "</div><div></div class='cell mock-up' style='display:none'></div>"; // #676464
+            
+            // INDUSTRY ROWS
+            y=Math.min(howMany, top_data_ids.length)
+            naicshash=""
+            for (i = 0; i < y; i++) { // Naics
+                rightCol="";
+                midCol="";
+                if(String(whichVal.node().value)=="payann"){
+                    //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
+                    if(Array.isArray(fips)){
+
+                        //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
+                        if (1==1) { // Always use million
+                            
+                            for (var j = 0; j<fips.length; j++){
+                                if(top_data_list[i]['ratearray'][j]){
+                                        midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000).toFixed(2)) + " million</div>";
+                                } else {
+                                        midCol = midCol +"<div class='cell-right'>0</div>";
+                                }    
+                            }
+                            rightCol = rightCol + "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)) + " million</div>";
+                        }else{
+                            for (var j = 0; j<fips.length; j++){
+                                if(top_data_list[i]['ratearray'][j]){
+                                    
+                                        midCol=midCol + "<div class='cell-right'>" + dollar + String((top_data_list[i]['ratearray'][j]/1000000).toFixed(2)) + " million</div>";
+                                    
+                                }else{
+                                        midCol = midCol + "<div class='cell-right'>0</div>";
+                                }   
+                            }
+                            // <span style="color: #676464">
+                            rightCol += "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2)) + " billion</div>";
+                        }
+                    }else{
+                        //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
+                            rightCol = "<div class='cell-right'>" + dollar + String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million</div>";
+                        //}else{
+                        //    rightCol = "<div class='cell'>$" + String((top_data_list[i][whichVal.node().value]/1000000).toFixed(2))+" billion</div>";
+                        //}
+                    }
+         
+                } else {
+                    // Update these:
+                    let latitude = "33.3890488";
+                    let longitude = "-84.7726672";
+                    //let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
+                    let county = ""; // Delete this line
+                    
+                    //d3.csv("data/county_ID_list.csv").then( function(consdata) {
+                        if(Array.isArray(fips) && statelength!=fips.length){
+                            mapLink=[]
+                            for(var j=0; j<fipslen; j++){
+                                var filteredData = consdata.filter(function(d) {
+                                    var filteredData = latdata.filter(function(e) {
+                                        if(d["id"]==fips[j]){
+                                            if(d["county"]==e["NAMELSAD"]){
+                                                //mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
+                                                mapLink.push("https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + e['latitude'] + "," + e['longitude'] + ",11z")
+                                                //console.log("xxxxxxxxx"+e["longitude"])
+                                            }
+                                        }
+                                    })
+                                })
+                            }
+                        }else if(fips==13){
+                                county=""
+                                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
+                        }else{
                             var filteredData = consdata.filter(function(d) {
-                                if(d["id"]==fips[j]){
-                                    mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
-                                }
+                                var filteredData = latdata.filter(function(e) {
+                                    if(d["id"]==fips ){      
+                                        if(d["county"]==e["NAMELSAD"]){
+                                                    //mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
+                                            mapLink="https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + e['latitude'] + "," + e['longitude'] + ",11z"
+                                                    //console.log("xxxxxxxxx"+e["longitude"])
+                                        }
+                                    }
+                                })
                             })
                         }
-                    }else if(fips==13){
-                            county=""
-                            mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
+                    //})
+                    //let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
+                    
+                    
+
+                    //console.log("xxxxxxxxxx"+county)
+
+                    //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
+                    if(Array.isArray(fips)){
+                        rightCol=""
+                        midCol=""
+                        for (var j = 0; j<fips.length; j++){
+                            if(top_data_list[i]['ratearray'][j]){
+                                
+                                    midCol += "<div class='cell-right'><a href='" + mapLink[j] + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
+                                
+                            } else {
+                                    midCol += "<div class='cell-right'>0</div>";
+                            } 
+                        }
+                        rightCol += "<div class='cell-right'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</div>";
+
+
+                        //rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
                     }else{
-                        var filteredData = consdata.filter(function(d) {
-                            if(d["id"]==fips )
-                            {      
-                                county=d["county"];
-                                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
-                            }
-                        })
+                        rightCol = "<div class='cell-right'><a href='" + mapLink + "' target='_blank'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</a></div>";
                     }
-                //})
-                //let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
-                
-                
+                    
+                }
 
-                console.log("xxxxxxxxxx"+county)
 
-                //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
+                rightCol += "<div class='cell mock-up' style='display:none'><img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'></div>";
+                //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
+                
                 if(Array.isArray(fips)){
-                    rightCol=""
-                    midCol=""
-                    for (var j = 0; j<fips.length; j++){
-                        if(top_data_list[i]['ratearray'][j]){
-                            
-                                midCol += "<div class='cell-right'><a href='" + mapLink[j] + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
-                            
-                        } else {
-                                midCol += "<div class='cell-right'>0</div>";
-                        } 
+                    text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] +"</div>" + midCol + rightCol + "</div>";
+                }else{
+                    text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div>" + rightCol + "</div>";
+                }
+                
+                document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
+                if(i<5){
+                    if(i==0){
+                        naicshash=naicshash+top_data_list[i]['NAICScode']
+                    }else{
+                        naicshash=naicshash+","+top_data_list[i]['NAICScode']
                     }
-                    rightCol += "<div class='cell-right'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</div>";
-
-
-                    //rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
-                }else{
-                    rightCol = "<div class='cell-right'><a href='" + mapLink + "' target='_blank'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</a></div>";
+                    
                 }
-                
-            }
-
-
-            rightCol += "<div class='cell mock-up' style='display:none'><img src='http://localhost:8887/community/impact/img/plus-minus.gif' class='plus-minus'></div>";
-            //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value])+"<br>";
             
-            if(Array.isArray(fips)){
-                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] +"</div>" + midCol + rightCol + "</div>";
-            }else{
-                text += "<div class='row'><div class='cell'>" + icon + top_data_list[i]['NAICScode'] + "</div><div class='cell'>" + top_data_list[i]['data_id'] + "</div>" + rightCol + "</div>";
-            }
-            
-            document.getElementById("p1").innerHTML = "<div id='sector_list'>" + text + "</div>";
-            if(i<5){
-                if(i==0){
-                    naicshash=naicshash+top_data_list[i]['NAICScode']
-                }else{
-                    naicshash=naicshash+","+top_data_list[i]['NAICScode']
-                }
-                
-            }
-        
-        } // End naics rows
+            } // End naics rows
 
-        updateHash({"naics":naicshash});
+            updateHash({"naics":naicshash});
+        })
     })
     d3.csv("data/county_ID_list.csv").then( function(consdata) {
         //document.getElementById("industryheader").text = ""; // Clear initial.
