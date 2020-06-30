@@ -17,8 +17,12 @@ As included in the [data_collection.ipynb](data_collection.ipynb) notebook, the 
 
 	https://api.census.gov/data
 
-A full url could look like the following:
+A full URL followsthe following following:
 
 	{base_url}/{year}/cbp?get={columns_to_select}&for=county:*&in=state:{fips:02d}
 
-You can find a list of columns to select on [this link](https://api.census.gov/data/2011/cbp/variables.html)
+For example, to get the 2016 data for all counties in the state of Georgia, you can use the following URL:
+
+	https://api.census.gov/data/2016/cbp?get=GEO_ID,GEO_TTL,COUNTY,YEAR,NAICS2012,NAICS2012_TTL,ESTAB,EMP,PAYANN&for=county:*&in=state:13
+
+You can find a list of columns to select on [this link](https://api.census.gov/data/2016/cbp/variables.html).
