@@ -596,6 +596,16 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                 }
      
             } else {
+                // Update these:
+                let latitude = "33.3890488";
+                let longitude = "-84.7726672";
+                let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
+                county = ""; // Delete this line
+
+                let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
+                
+                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
+
                 //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
                 if(Array.isArray(fips)){
                     rightCol=""
@@ -603,7 +613,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                     for (var j = 0; j<fips.length; j++){
                         if(top_data_list[i]['ratearray'][j]){
                             
-                                midCol += "<div class='cell-right'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</div>";
+                                midCol += "<div class='cell-right'><a href='" + mapLink + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
                             
                         } else {
                                 midCol += "<div class='cell-right'>0</div>";
@@ -614,7 +624,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
 
                     //rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
                 }else{
-                    rightCol = "<div class='cell-right'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</div>";
+                    rightCol = "<div class='cell-right'><a href='" + mapLink + "' target='_blank'>" + String(Math.round(top_data_list[i][whichVal.node().value])) + "</a></div>";
                 }
                 
             }
