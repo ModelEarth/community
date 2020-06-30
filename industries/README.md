@@ -1,6 +1,6 @@
 # Complete ZIP Code Industry Detail Files 
 
-Additional data download work resides in [modelearth/industries](https://github.com/modelearth/industries), [community/info/](../info/) and [community/info/RStudio](../info/RStudio)  
+Additional data download work resides in [community/info/](../info/#go=dataprep), [modelearth/industries](https://github.com/modelearth/industries) and [community/info/RStudio](../info/RStudio)  
 <br>
 
 <b>Industry Employment Levels</b><br>
@@ -19,6 +19,8 @@ Companies per industry within each zipcode. Normally these are available annuall
 -->
 [Start here](https://www.census.gov/programs-surveys/cbp/data/datasets.html) 
 Choose "County Business Patterns: [Year]" then "Complete ZIP Code Industry Detail File"  
+
+Issue: 2018 zipcode data is not available as of June 2020.  
 
 [Source of Zipcode lat/lon - 2018 Census](https://www.census.gov/geo/maps-data/data/gazetteer2018.html)  
 

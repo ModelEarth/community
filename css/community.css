@@ -218,7 +218,6 @@ select {
   padding-top: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottomX: 30px;
 }
 .content li {
   margin-left: -10px;
@@ -669,15 +668,18 @@ iframe {
 
 
 
-
-
-
 /* HEADER */
 .headerLogo {
   height:22px;
   margin:7px 10px 4px 0px
 }
-.showMenu:hover {
+.upperIcons > div {
+  border-left:1px solid #ddd;
+  height:100px;
+  padding:32px;
+  padding-left:37px;
+}
+.upperIcons > div:hover {
   cursor: pointer;
 }
 #menuHolder {
