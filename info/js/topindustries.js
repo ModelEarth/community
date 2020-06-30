@@ -560,6 +560,49 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
             for (i = 0; i < y; i++) { // Naics
                 rightCol="";
                 midCol="";
+
+                // Update these:
+                    let latitude = "";
+                    let longitude = "";
+                    //let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
+                    let county = ""; // Delete this line
+                    
+                    //d3.csv("data/county_ID_list.csv").then( function(consdata) {
+                        if(Array.isArray(fips) && statelength!=fips.length){
+                            mapLink=[]
+                            for(var j=0; j<fipslen; j++){
+                                var filteredData = consdata.filter(function(d) {
+                                    var filteredData = latdata.filter(function(e) {
+                                        if(d["id"]==fips[j]){
+                                            if(d["county"]==e["NAMELSAD"]){
+                                                //mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
+                                                mapLink.push("https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + e['latitude'] + "," + e['longitude'] + ",11z")
+                                                //console.log("xxxxxxxxx"+e["longitude"])
+                                            }
+                                        }
+                                    })
+                                })
+                            }
+                        }else if(fips==13){
+                                //county=""
+                                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " in Georgia";
+                        }else{
+                            var filteredData = consdata.filter(function(d) {
+                                var filteredData = latdata.filter(function(e) {
+                                    if(d["id"]==fips ){      
+                                        if(d["county"]==e["NAMELSAD"]){
+                                                    //mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
+                                            mapLink="https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + e['latitude'] + "," + e['longitude'] + ",11z"
+                                                    //console.log("xxxxxxxxx"+e["longitude"])
+                                        }
+                                    }
+                                })
+                            })
+                        }
+                    //})
+                    //let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
+
+
                 if(String(whichVal.node().value)=="payann"){
                     //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
                     if(Array.isArray(fips)){
@@ -597,46 +640,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                     }
          
                 } else {
-                    // Update these:
-                    let latitude = "33.3890488";
-                    let longitude = "-84.7726672";
-                    //let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
-                    let county = ""; // Delete this line
                     
-                    //d3.csv("data/county_ID_list.csv").then( function(consdata) {
-                        if(Array.isArray(fips) && statelength!=fips.length){
-                            mapLink=[]
-                            for(var j=0; j<fipslen; j++){
-                                var filteredData = consdata.filter(function(d) {
-                                    var filteredData = latdata.filter(function(e) {
-                                        if(d["id"]==fips[j]){
-                                            if(d["county"]==e["NAMELSAD"]){
-                                                //mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
-                                                mapLink.push("https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + e['latitude'] + "," + e['longitude'] + ",11z")
-                                                //console.log("xxxxxxxxx"+e["longitude"])
-                                            }
-                                        }
-                                    })
-                                })
-                            }
-                        }else if(fips==13){
-                                county=""
-                                mapLink = "https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + county.replace(/ /g,"+") + ",+Georgia";
-                        }else{
-                            var filteredData = consdata.filter(function(d) {
-                                var filteredData = latdata.filter(function(e) {
-                                    if(d["id"]==fips ){      
-                                        if(d["county"]==e["NAMELSAD"]){
-                                                    //mapLink.push("https://www.google.com/search?q=" + top_data_list[i]['data_id'].replace(/ /g,"+") + " " + d["county"].replace(/ /g,"+") + ",+Georgia")
-                                            mapLink="https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + e['latitude'] + "," + e['longitude'] + ",11z"
-                                                    //console.log("xxxxxxxxx"+e["longitude"])
-                                        }
-                                    }
-                                })
-                            })
-                        }
-                    //})
-                    //let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
                     
                     
 
