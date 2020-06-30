@@ -11,5 +11,14 @@ Run the notebook cells either in juyter notebook or by running from the command 
 After aggregating the data, you can delete the county\_level folder inside data/data_raw/BEA\_Industry\_Factors.  
 
 The last block of this notebook contains the code for generating the state-wide data. When only 1 or 2 of an industry reside in a county, numbers are omitted by the US Census to protect privacy. As a result, the state-wide totals from the Census API are larger than the sum of each state’s county totals.  
-[Additional info](https://github.com/modelearth/community/issues/9) 
+[Additional info](https://github.com/modelearth/community/issues/9)  
+### API calls
+As included in the [data_collection.ipynb](data_collection.ipynb) notebook, the base url for API calls is:
 
+	https://api.census.gov/data
+
+A full url could look like the following:
+
+	{base_url}/{year}/cbp?get={columns_to_select}&for=county:*&in=state:{fips:02d}
+
+You can find a list of columns to select on [this link](https://api.census.gov/data/2011/cbp/variables.html)
