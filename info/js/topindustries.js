@@ -99,13 +99,17 @@ function ready(values) {
             renderIndustryChart(dataObject,values,params);
         });
         
+        document.getElementById("clearButton").addEventListener("click", function(){
+            clearHash("geo,regiontitle");
+            geoChanged(dataObject)
+        }); 
+
         addGeoChangeDetectToDOM(1);
         function addGeoChangeDetectToDOM(count) { // Wait for county checkboxes to be added to DOM by search-filters.js
             if($(".geo").length) {
                 //d3.selectAll(".geo").on("change",function() {
                 $(".geo").change(function(e) {
-                    params = loadParams(location.search,location.hash); // Relies on hash already being updated by invoking index.html page.
-                    geoChanged(dataObject,params);
+                    geoChanged(dataObject);
                 });
             } else if (count<100) { 
                 setTimeout( function() {
@@ -125,7 +129,7 @@ function ready(values) {
 
         // Both call topRatesInFips(). Might be good to move geoChanged processing into renderIndustryChart()
         if (params.geo != lastParams.geo) { // Not usable, already changed at this point.
-            geoChanged(dataObject,params); // Apply county filter to industry list (topindustries.js)
+            geoChanged(dataObject); // Apply county filter to industry list (topindustries.js)
         } 
         else if (params.go != lastParams.go) {
             renderIndustryChart(dataObject,values,params);
@@ -204,6 +208,7 @@ function renderIndustryChart(dataObject,values,params) {
 
 //function for when the geo hash changes
 function geoChanged(dataObject,params){
+    params = loadParams(location.search,location.hash); // Pull from updated hash
     if (params.geo) {
         geo=params.geo
         if (geo.includes(",")) {
