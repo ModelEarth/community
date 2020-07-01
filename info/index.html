@@ -675,10 +675,6 @@ function locClick(which) {
 	$(".regiontitle").text(""); //Clear
 	let regiontitle = ""; // Remove from hash. Later associate existing regions.
 	updateHash({"geo":hash.geo,"regiontitle":regiontitle});
-	//if(window.location.hash.includes("geo=US")){
-		//param=loadParams(location.search,location.hash);
-		//geoChanged(param);
-	//}
 }
 /*
 document.getElementById('showValues').onclick = function() {
@@ -708,42 +704,6 @@ document.getElementById('showValues').onclick = function() {
     }
 };
 */
-
-function infoMapLoaded(param, root, count) {
-	if (typeof dual_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
-
-		loadScript(root + '/community/js/common/search-filters.js', function(results) {
-
-			document.getElementById("clearButton").addEventListener("click", function(){
-				// This may not need to reside here - unlsess we do a "clear all" option that includes indicators.
-				hash.geo=""
-				//updateHash({"geo":"",});
-				clearHash("geo,regiontitle");
-				param=loadParams(location.search,location.hash);
-				console.log(param)
-				geoChanged(param)
-			});	
-			/*
-			//addCountyBoundaries()
-			//loadMap1();
-			window.onhashchange = function() {
-				//param = loadParam(location.search,location.hash);
-				console.log("onhashchange")
-				//loadMap1();
-			}
-			*/
-		});
-		
-	} else if (count<100) { // Wait a 100th of a second and try again
-		setTimeout( function() {
-   			console.log("try infoMapLoaded again")
-			infoMapLoaded(param, root, count++);
-   		}, 10 );
-	} else {
-		console.log("ERROR: dualmapLoaded exceeded 100 attempts.");
-	}
-}
-infoMapLoaded(param,"",0);
 
 function addCountyBoundaries() {
 	var req = new XMLHttpRequest();

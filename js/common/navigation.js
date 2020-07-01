@@ -118,6 +118,10 @@ $(document).ready(function(){
 			 	// Hack, since called too early for header
 			 	$('.mock-up').css('display', 'block');
 		 	}
+
+		 	if (param.titleArray) {
+		 		$('#headerSiteTitle').html("<span style='float:left'><a href='" + climbpath + "' style='text-decoration:none'><span style='color: #777;'>" + param.titleArray[0] + "</span><span style='color:#bbb;margin-left:1px'>" + param.titleArray[1] + "</span></a></span>");
+		 	}
 		 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
 			$('#logoholder').css('background-repeat', 'no-repeat');
 
@@ -158,9 +162,10 @@ $(document).ready(function(){
 		});
 
 		$("body").append( "<div id='footer' class='hideprint'></div>\r" );
-		let footerFile = "../community/footer.html";
-		$("#footer").load( climbpath + footerFile, function( response, status, xhr ) {
-			
+		let footerFile = climbpath + "../community/footer.html";
+		if (param.footer) footerFile = param.footer;
+		$("#footer").load(footerFile, function( response, status, xhr ) {
+
 		});
 	} else {
 		$(".filterPanel").addClass("filterPanel_fixed");

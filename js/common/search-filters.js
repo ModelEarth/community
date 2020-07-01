@@ -472,7 +472,7 @@ function locationFilterChange(selectedValue) {
     consoleLog("locationFilterChange: " + selectedValue);
     $(".geoListHolder > div").hide();
     $(".geoListCounties").show();
-    showSearchClick(); // Display filters
+    //showSearchClick(); // Display filters
     hideLocationFilters();
 
     //$(".hideLocationsMenu").trigger("click");
@@ -737,10 +737,9 @@ $(".filterUL li").removeClass("selected");
 $(".filterUL li").find("[data-id='counties']").addClass("selected"); // Not working
 
 function showSearchClick() {
-    //if () {
-        //$('.').trigger("click");
-        //return;
-    //}
+	
+	$(".filterFields").hide();
+	$(".headerOffset2").hide();
     
     //$(".moduleBackgroundImage").addClass("moduleBackgroundImageDarken"); // Not needed since filters are not over image.
     //$(".siteHeaderImage").addClass("siteHeaderImageDarken"); // Not needed since filters are not over image.
@@ -760,8 +759,7 @@ function showSearchClick() {
     $("#filterPanel").show(); // Don't use "normal", causes overflow:hidden.
     $(".searchHeader").show();
     $("#panelHolder").show();
-    //$(".hideSearch").show();
-    //$(".showSearchClick").hide();
+
 
     $(".showFiltersClick").hide();
     $(".hideFiltersClick").show();
@@ -1101,6 +1099,7 @@ function removeFrontFolder(path) {
     return("../.." + path);
 }
 function displayHexagonMenu(layerName,siteObject) {
+
   var currentAccess = 0;
   consoleLog("Display HEXAGON MENU");
 
@@ -1143,99 +1142,108 @@ function displayHexagonMenu(layerName,siteObject) {
     $("#honeyMenuHolder").show();
 }
 function displayBigThumbnails(layerName,siteObject) {
-    var currentAccess = 0;
-    $(".bigThumbMenu").html("");
+	if (!$('.bigThumbUl').length) {
 
-    //$("#honeycombPanelHolder").show();
-    var thelayers = siteObject.items;
-    var sectionMenu = "";
-    var categoryMenu = "";
-    var iconMenu = "";
-    var bigThumbSection = layerName;
-    var layer;
-    for(layer in thelayers) {
+  		$("#filterFieldsHolder").hide();
 
-        var menuaccess = 10; // no one
-        try { // For IE error. Might not be necessary.
-            if (typeof(siteObject.items[layer].menuaccess) === "undefined") {
-                menuaccess = 0;
-            } else {
-                menuaccess = siteObject.items[layer].menuaccess;
-            }
-        } catch(e) {
-            consoleLog("displayLayerCheckboxes: no menuaccess");
-        }
-        
-        var directlink = getDirectLink(thelayers[layer].directlink, thelayers[layer].rootfolder, thelayers[layer].item);
+	    var currentAccess = 0;
+	    $(".bigThumbMenu").html("");
 
-        if (bigThumbSection == "main") {
-            if (thelayers[layer].menulevel == "1") {
-                if (access(currentAccess,menuaccess)) {
-                    //if (siteObject.items[layer].section == bigThumbSection && siteObject.items[layer].showthumb != '0' && bigThumbSection.replace(" ","-").toLowerCase() != thelayers[layer].item) {
-                    
-                        var thumbTitle = ( thelayers[layer].thumbtitle ? thelayers[layer].thumbtitle : (thelayers[layer].section ? thelayers[layer].section : thelayers[layer].primarytitle));
-                        var thumbTitleSecondary = (thelayers[layer].thumbTitleSecondary ? thelayers[layer].thumbTitleSecondary : '&nbsp;');
+	    //$("#honeycombPanelHolder").show();
+	    var thelayers = siteObject.items;
+	    var sectionMenu = "";
+	    var categoryMenu = "";
+	    var iconMenu = "";
+	    var bigThumbSection = layerName;
+	    var layer;
+	    for(layer in thelayers) {
 
-                        var icon = (thelayers[layer].icon ? thelayers[layer].icon : '<i class="material-icons">&#xE880;</i>');
-                           if (thelayers[layer].item != "main" && thelayers[layer].section != "Admin" && thelayers[layer].title != "") {
-                                // <h1 class='honeyTitle'>" + thelayers[layer].provider + "</h1>
-                                //var thumbTitle = thelayers[layer].title;
-                                var bkgdUrl = thelayers[layer].image;
-                                if (thelayers[layer].bigthumb) {
-                                    bkgdUrl = thelayers[layer].bigthumb;
-                                }
-                                bkgdUrl = removeFrontFolder(bkgdUrl);
+	        var menuaccess = 10; // no one
+	        try { // For IE error. Might not be necessary.
+	            if (typeof(siteObject.items[layer].menuaccess) === "undefined") {
+	                menuaccess = 0;
+	            } else {
+	                menuaccess = siteObject.items[layer].menuaccess;
+	            }
+	        } catch(e) {
+	            consoleLog("displayLayerCheckboxes: no menuaccess");
+	        }
+	        
+	        var directlink = getDirectLink(thelayers[layer].directlink, thelayers[layer].rootfolder, thelayers[layer].item);
 
-                                
-                                if (thelayers[layer].directlink) {
-                                    //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
-                                }
-                                if (menuaccess==0) { // Quick hack until user-0 displays for currentAccess 1. In progress...
-                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='displayX:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
-                                } else {
-                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='display:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
-                                }
-                            }
-                    //}
-                }
-            }
-        } else {
-            if (access(currentAccess,menuaccess)) {
-                if (siteObject.items[layer].section == bigThumbSection && siteObject.items[layer].showthumb != '0' && bigThumbSection.replace(" ","-").toLowerCase() != thelayers[layer].item) {
-                    var thumbTitle = (thelayers[layer].navtitle ? thelayers[layer].navtitle : thelayers[layer].title);
-                    var thumbTitleSecondary = (thelayers[layer].thumbTitleSecondary ? thelayers[layer].thumbTitleSecondary : '&nbsp;');
+	        if (bigThumbSection == "main") {
+	            if (thelayers[layer].menulevel == "1") {
+	                if (access(currentAccess,menuaccess)) {
+	                    //if (siteObject.items[layer].section == bigThumbSection && siteObject.items[layer].showthumb != '0' && bigThumbSection.replace(" ","-").toLowerCase() != thelayers[layer].item) {
+	                    
+	                        var thumbTitle = ( thelayers[layer].thumbtitle ? thelayers[layer].thumbtitle : (thelayers[layer].section ? thelayers[layer].section : thelayers[layer].primarytitle));
+	                        var thumbTitleSecondary = (thelayers[layer].thumbTitleSecondary ? thelayers[layer].thumbTitleSecondary : '&nbsp;');
 
-                    var icon = (thelayers[layer].icon ? thelayers[layer].icon : '<i class="material-icons">&#xE880;</i>');
-                    if (!siteObject.items[layer].bigThumbSection) { // Omit the section parent
-                       if (thelayers[layer].item != "main" && thelayers[layer].section != "Admin" && thelayers[layer].title != "") {
-                            // <h1 class='honeyTitle'>" + thelayers[layer].provider + "</h1>
-                            //var thumbTitle = thelayers[layer].title;
-                            var bkgdUrl = thelayers[layer].image;
-                            if (thelayers[layer].bigthumb) {
-                                bkgdUrl = thelayers[layer].bigthumb;
-                            }
-                            bkgdUrl = removeFrontFolder(bkgdUrl);
+	                        var icon = (thelayers[layer].icon ? thelayers[layer].icon : '<i class="material-icons">&#xE880;</i>');
+	                           if (thelayers[layer].item != "main" && thelayers[layer].section != "Admin" && thelayers[layer].title != "") {
+	                                // <h1 class='honeyTitle'>" + thelayers[layer].provider + "</h1>
+	                                //var thumbTitle = thelayers[layer].title;
+	                                var bkgdUrl = thelayers[layer].image;
+	                                if (thelayers[layer].bigthumb) {
+	                                    bkgdUrl = thelayers[layer].bigthumb;
+	                                }
+	                                bkgdUrl = removeFrontFolder(bkgdUrl);
 
-                            //var hrefLink = "";
-                            if (thelayers[layer].directlink) {
-                                //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
-                            }
-                            sectionMenu += "<li class='widthPercent user-" + menuaccess + "'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
-                        }
-                    }
-                }
-            }
-        }
-    }
-    //alert(sectionMenu);
-    $(".bigThumbMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
-    //$("#honeycombMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
-    
-    $("#iconMenu").append(iconMenu);
-    $("#honeycombPanelHolder").show();
-    $("#honeyMenuHolder").show(); // Might be able to remove display:none on this
+	                                
+	                                if (thelayers[layer].directlink) {
+	                                    //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
+	                                }
+	                                if (menuaccess==0) { // Quick hack until user-0 displays for currentAccess 1. In progress...
+	                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='displayX:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+	                                } else {
+	                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='display:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+	                                }
+	                            }
+	                    //}
+	                }
+	            }
+	        } else {
+	            if (access(currentAccess,menuaccess)) {
+	                if (siteObject.items[layer].section == bigThumbSection && siteObject.items[layer].showthumb != '0' && bigThumbSection.replace(" ","-").toLowerCase() != thelayers[layer].item) {
+	                    var thumbTitle = (thelayers[layer].navtitle ? thelayers[layer].navtitle : thelayers[layer].title);
+	                    var thumbTitleSecondary = (thelayers[layer].thumbTitleSecondary ? thelayers[layer].thumbTitleSecondary : '&nbsp;');
 
-    $(".thumbModule").append($("#honeycombPanelHolder")); // For GDX
+	                    var icon = (thelayers[layer].icon ? thelayers[layer].icon : '<i class="material-icons">&#xE880;</i>');
+	                    if (!siteObject.items[layer].bigThumbSection) { // Omit the section parent
+	                       if (thelayers[layer].item != "main" && thelayers[layer].section != "Admin" && thelayers[layer].title != "") {
+	                            // <h1 class='honeyTitle'>" + thelayers[layer].provider + "</h1>
+	                            //var thumbTitle = thelayers[layer].title;
+	                            var bkgdUrl = thelayers[layer].image;
+	                            if (thelayers[layer].bigthumb) {
+	                                bkgdUrl = thelayers[layer].bigthumb;
+	                            }
+	                            bkgdUrl = removeFrontFolder(bkgdUrl);
+
+	                            //var hrefLink = "";
+	                            if (thelayers[layer].directlink) {
+	                                //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
+	                            }
+	                            sectionMenu += "<li class='widthPercent user-" + menuaccess + "'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	    //alert(sectionMenu);
+	    $(".bigThumbMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
+	    //$("#honeycombMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
+	    
+	    $("#iconMenu").append(iconMenu);
+	    $("#honeycombPanelHolder").show();
+	    $("#honeyMenuHolder").show(); // Might be able to remove display:none on this
+
+	    $(".thumbModule").append($("#honeycombPanelHolder")); // For GDX
+	} else if ($("#honeycombPanelHolder").css("display") == "none") {
+		$("#honeycombPanelHolder").show();
+	} else {
+		$("#honeycombPanelHolder").hide();
+	}
 }
 function getDirectLink(directlink,rootfolder,layer) {
     if (directlink) {
@@ -1273,6 +1281,9 @@ function initSiteObject(layerName) {
 	                
 	                // siteObjectFunctions(siteObject); // could add to keep simple here
 	          
+	          		$('.showSearch').click(function(event) {
+	          			showSearchClick();
+	          		});
 	          		$('.showApps').click(function(event) {
 						displayBigThumbnails("main",siteObject);
 					  	event.stopPropagation();
