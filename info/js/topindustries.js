@@ -15,6 +15,15 @@ var promises = [
     d3.tsv("data/usa/GA/industries_state13_naics4_state_api.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6_state_api.tsv"),
     d3.tsv("data/usa/GA/GAcounties.csv"),
+    d3.tsv("data/usa/GA/industries_state13_naics2_est1.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics4_est1.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics6_est1.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics2_est2.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics4_est2.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics6_est2.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics2_est3.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics4_est3.tsv"),
+    d3.tsv("data/usa/GA/industries_state13_naics6_est3.tsv"),
 ]
 Promise.all(promises).then(ready);
 
@@ -23,8 +32,53 @@ function ready(values) {
     let params = loadParams(location.search,location.hash);
     let lastParams = {};
     let dataObject={};
-    let industryData = {
-        'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
+    let industryData ={}
+    if(d3.select("#catmethod").node().value==0){
+        industryData = {
+            'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
+        }
+    }else if(d3.select("#catmethod").node().value==1){
+        if (d3.select("#catsize").node().value==2){
+            industryData = {
+                'ActualRate': formatIndustryData(values[12]),
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryData = {
+                'ActualRate': formatIndustryData(values[13]),
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryData = {
+                'ActualRate': formatIndustryData(values[14]),
+            }
+        }
+    }else if(d3.select("#catmethod").node().value==2){
+        if (d3.select("#catsize").node().value==2){
+            industryData = {
+                'ActualRate': formatIndustryData(values[15]),
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryData = {
+                'ActualRate': formatIndustryData(values[16]),
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryData = {
+                'ActualRate': formatIndustryData(values[17]),
+            }
+        }
+    }else if(d3.select("#catmethod").node().value==3){
+        if (d3.select("#catsize").node().value==2){
+            industryData = {
+                'ActualRate': formatIndustryData(values[18]),
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryData = {
+                'ActualRate': formatIndustryData(values[19]),
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryData = {
+                'ActualRate': formatIndustryData(values[20]),
+            }
+        }
     }
     dataObject.industryData = industryData;
 
@@ -146,11 +200,54 @@ function ready(values) {
 
 
 function renderIndustryChart(dataObject,values,params) {
-    dataObject.industryData= {
-        'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
-        //'ActualRate': formatIndustryData($("#catsize").value/2),
+    if(d3.select("#catmethod").node().value==0){
+        industryData = {
+            'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
+        }
+    }else if(d3.select("#catmethod").node().value==1){
+        if (d3.select("#catsize").node().value==2){
+            industryData = {
+                'ActualRate': formatIndustryData(values[12]),
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryData = {
+                'ActualRate': formatIndustryData(values[13]),
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryData = {
+                'ActualRate': formatIndustryData(values[14]),
+            }
+        }
+    }else if(d3.select("#catmethod").node().value==2){
+        if (d3.select("#catsize").node().value==2){
+            industryData = {
+                'ActualRate': formatIndustryData(values[15]),
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryData = {
+                'ActualRate': formatIndustryData(values[16]),
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryData = {
+                'ActualRate': formatIndustryData(values[17]),
+            }
+        }
+    }else if(d3.select("#catmethod").node().value==3){
+        if (d3.select("#catsize").node().value==2){
+            industryData = {
+                'ActualRate': formatIndustryData(values[18]),
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryData = {
+                'ActualRate': formatIndustryData(values[19]),
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryData = {
+                'ActualRate': formatIndustryData(values[20]),
+            }
+        }
     }
-
+    dataObject.industryData=industryData;
     if (d3.select("#catsize").node().value==2){
         industryDataState = {
             'ActualRate': formatIndustryData(values[5])
