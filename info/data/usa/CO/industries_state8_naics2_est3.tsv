@@ -1,0 +1,991 @@
+	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
+0	8001	8	1	Adams County, Colorado	11	Agriculture, forestry, fishing and hunting	11	4.8	5.6	311.6
+1	8001	8	1	Adams County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	39.2	603.8	43393.8
+2	8001	8	1	Adams County, Colorado	22	Utilities	22	18.4	495.8	48560.6
+3	8001	8	1	Adams County, Colorado	23	Construction	23	1243.8	17998.6	1003429.4
+4	8001	8	1	Adams County, Colorado	42	Wholesale trade	42	705.2	15763.4	929325.0
+5	8001	8	1	Adams County, Colorado	51	Information	51	131.4	3343.6	233447.4
+6	8001	8	1	Adams County, Colorado	52	Finance and insurance	52	463.6	2770.4	151006.6
+7	8001	8	1	Adams County, Colorado	53	Real estate and rental and leasing	53	480.8	2773.0	111992.0
+8	8001	8	1	Adams County, Colorado	54	Professional, scientific, and technical services	54	770.4	4970.8	319686.6
+9	8001	8	1	Adams County, Colorado	55	Management of companies and enterprises	55	59.0	1118.8	77206.6
+10	8001	8	1	Adams County, Colorado	56	Administrative and support and waste management and remediation services	56	510.6	9396.8	356890.8
+11	8001	8	1	Adams County, Colorado	61	Educational services	61	123.4	2078.0	62428.0
+12	8001	8	1	Adams County, Colorado	62	Health care and social assistance	62	694.8	21237.4	1140814.0
+13	8001	8	1	Adams County, Colorado	71	Arts, entertainment, and recreation	71	82.4	1156.4	25932.6
+14	8001	8	1	Adams County, Colorado	72	Accommodation and food services	72	738.4	13861.0	234997.4
+15	8001	8	1	Adams County, Colorado	81	Other services (except public administration)	81	821.2	5899.2	184889.2
+16	8001	8	1	Adams County, Colorado	99	Industries not classified	99	12.6	10.6	230.2
+18	8003	8	3	Alamosa County, Colorado	22	Utilities	22	4.0	20.8	1837.0
+19	8003	8	3	Alamosa County, Colorado	23	Construction	23	39.6	275.2	12950.4
+20	8003	8	3	Alamosa County, Colorado	42	Wholesale trade	42	19.4	220.2	8009.8
+21	8003	8	3	Alamosa County, Colorado	51	Information	51	10.8	38.8	2724.4
+22	8003	8	3	Alamosa County, Colorado	52	Finance and insurance	52	36.6	350.0	16380.8
+23	8003	8	3	Alamosa County, Colorado	53	Real estate and rental and leasing	53	20.0	105.4	3193.0
+24	8003	8	3	Alamosa County, Colorado	54	Professional, scientific, and technical services	54	39.0	158.8	6746.2
+26	8003	8	3	Alamosa County, Colorado	56	Administrative and support and waste management and remediation services	56	20.2	141.8	3529.6
+27	8003	8	3	Alamosa County, Colorado	61	Educational services	61	5.0	15.4	503.0
+28	8003	8	3	Alamosa County, Colorado	62	Health care and social assistance	62	66.2	1635.2	61652.0
+29	8003	8	3	Alamosa County, Colorado	71	Arts, entertainment, and recreation	71	8.0	45.8	841.6
+30	8003	8	3	Alamosa County, Colorado	72	Accommodation and food services	72	44.6	710.8	10008.4
+31	8003	8	3	Alamosa County, Colorado	81	Other services (except public administration)	81	47.4	222.4	4477.8
+33	8005	8	5	Arapahoe County, Colorado	11	Agriculture, forestry, fishing and hunting	11	4.8	23.8	2193.4
+34	8005	8	5	Arapahoe County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	115.2	885.6	104961.2
+35	8005	8	5	Arapahoe County, Colorado	22	Utilities	22	9.2	83.2	12836.4
+36	8005	8	5	Arapahoe County, Colorado	23	Construction	23	1466.8	17185.4	1013087.8
+37	8005	8	5	Arapahoe County, Colorado	42	Wholesale trade	42	855.2	12113.4	1049420.4
+38	8005	8	5	Arapahoe County, Colorado	51	Information	51	466.0	22978.6	1929506.2
+39	8005	8	5	Arapahoe County, Colorado	52	Finance and insurance	52	1618.0	22244.4	1828610.4
+40	8005	8	5	Arapahoe County, Colorado	53	Real estate and rental and leasing	53	1144.0	4886.6	246653.0
+41	8005	8	5	Arapahoe County, Colorado	54	Professional, scientific, and technical services	54	2869.2	24176.2	1957566.8
+42	8005	8	5	Arapahoe County, Colorado	55	Management of companies and enterprises	55	200.2	13988.4	1529387.6
+43	8005	8	5	Arapahoe County, Colorado	56	Administrative and support and waste management and remediation services	56	1072.6	27207.0	1050241.4
+44	8005	8	5	Arapahoe County, Colorado	61	Educational services	61	288.0	5166.2	226210.6
+45	8005	8	5	Arapahoe County, Colorado	62	Health care and social assistance	62	2020.2	33572.8	1714886.4
+46	8005	8	5	Arapahoe County, Colorado	71	Arts, entertainment, and recreation	71	211.4	1753.2	126002.4
+47	8005	8	5	Arapahoe County, Colorado	72	Accommodation and food services	72	1290.2	25484.6	467412.6
+48	8005	8	5	Arapahoe County, Colorado	81	Other services (except public administration)	81	1470.4	11758.2	397272.2
+49	8005	8	5	Arapahoe County, Colorado	99	Industries not classified	99	25.4	18.6	713.0
+50	8007	8	7	Archuleta County, Colorado	11	Agriculture, forestry, fishing and hunting	11	3.6	0.8	104.4
+51	8007	8	7	Archuleta County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	4.0	0.0	147.2
+53	8007	8	7	Archuleta County, Colorado	23	Construction	23	81.0	194.6	7505.8
+54	8007	8	7	Archuleta County, Colorado	42	Wholesale trade	42	6.6	12.0	359.2
+55	8007	8	7	Archuleta County, Colorado	51	Information	51	12.8	20.2	1913.8
+56	8007	8	7	Archuleta County, Colorado	52	Finance and insurance	52	19.8	70.4	5299.6
+57	8007	8	7	Archuleta County, Colorado	53	Real estate and rental and leasing	53	36.0	167.6	6510.2
+58	8007	8	7	Archuleta County, Colorado	54	Professional, scientific, and technical services	54	48.8	95.4	4808.4
+60	8007	8	7	Archuleta County, Colorado	56	Administrative and support and waste management and remediation services	56	24.8	63.0	1959.4
+61	8007	8	7	Archuleta County, Colorado	61	Educational services	61	3.6	5.8	31.6
+62	8007	8	7	Archuleta County, Colorado	62	Health care and social assistance	62	35.4	298.6	7522.0
+63	8007	8	7	Archuleta County, Colorado	71	Arts, entertainment, and recreation	71	13.8	170.4	2189.8
+64	8007	8	7	Archuleta County, Colorado	72	Accommodation and food services	72	56.2	521.2	10580.4
+65	8007	8	7	Archuleta County, Colorado	81	Other services (except public administration)	81	35.2	178.8	4449.6
+66	8009	8	9	Baca County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.4	2.6	68.2
+67	8009	8	9	Baca County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.4	2.6	63.0
+69	8009	8	9	Baca County, Colorado	23	Construction	23	6.8	16.0	529.0
+70	8009	8	9	Baca County, Colorado	42	Wholesale trade	42	17.6	45.4	2214.4
+72	8009	8	9	Baca County, Colorado	52	Finance and insurance	52	6.0	27.0	949.2
+73	8009	8	9	Baca County, Colorado	53	Real estate and rental and leasing	53	3.0	1.6	9.0
+74	8009	8	9	Baca County, Colorado	54	Professional, scientific, and technical services	54	3.4	2.4	108.0
+78	8009	8	9	Baca County, Colorado	72	Accommodation and food services	72	5.4	12.4	181.4
+79	8009	8	9	Baca County, Colorado	81	Other services (except public administration)	81	12.2	20.8	419.0
+83	8011	8	11	Bent County, Colorado	23	Construction	23	2.4	4.8	122.4
+85	8011	8	11	Bent County, Colorado	52	Finance and insurance	52	5.2	19.2	2165.6
+87	8011	8	11	Bent County, Colorado	54	Professional, scientific, and technical services	54	3.2	2.4	24.2
+89	8011	8	11	Bent County, Colorado	62	Health care and social assistance	62	7.2	63.6	2294.0
+91	8011	8	11	Bent County, Colorado	72	Accommodation and food services	72	6.2	26.0	265.2
+92	8011	8	11	Bent County, Colorado	81	Other services (except public administration)	81	6.2	8.4	82.0
+93	8013	8	13	Boulder County, Colorado	11	Agriculture, forestry, fishing and hunting	11	19.6	43.6	1690.8
+94	8013	8	13	Boulder County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	26.8	197.0	11149.8
+95	8013	8	13	Boulder County, Colorado	22	Utilities	22	14.6	183.2	21020.8
+96	8013	8	13	Boulder County, Colorado	23	Construction	23	785.8	4501.4	233545.2
+97	8013	8	13	Boulder County, Colorado	42	Wholesale trade	42	505.6	9679.6	971278.8
+98	8013	8	13	Boulder County, Colorado	51	Information	51	288.6	5985.2	612094.6
+99	8013	8	13	Boulder County, Colorado	52	Finance and insurance	52	651.4	3570.4	303480.8
+100	8013	8	13	Boulder County, Colorado	53	Real estate and rental and leasing	53	683.8	2110.8	91903.4
+101	8013	8	13	Boulder County, Colorado	54	Professional, scientific, and technical services	54	2785.0	26650.8	2716943.6
+102	8013	8	13	Boulder County, Colorado	55	Management of companies and enterprises	55	53.0	2282.8	219025.0
+103	8013	8	13	Boulder County, Colorado	56	Administrative and support and waste management and remediation services	56	582.6	7178.8	241909.0
+104	8013	8	13	Boulder County, Colorado	61	Educational services	61	273.0	2760.6	72145.4
+105	8013	8	13	Boulder County, Colorado	62	Health care and social assistance	62	1377.0	19749.2	931925.8
+106	8013	8	13	Boulder County, Colorado	71	Arts, entertainment, and recreation	71	257.0	3113.6	55648.6
+107	8013	8	13	Boulder County, Colorado	72	Accommodation and food services	72	878.8	17577.6	312814.2
+108	8013	8	13	Boulder County, Colorado	81	Other services (except public administration)	81	915.8	6160.6	227564.6
+109	8013	8	13	Boulder County, Colorado	99	Industries not classified	99	20.8	17.8	702.6
+111	8014	8	14	Broomfield County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	2.4	31.2	2581.6
+113	8014	8	14	Broomfield County, Colorado	23	Construction	23	130.0	1831.2	132116.0
+114	8014	8	14	Broomfield County, Colorado	42	Wholesale trade	42	83.6	650.0	50609.6
+115	8014	8	14	Broomfield County, Colorado	51	Information	51	50.8	3598.6	405435.8
+116	8014	8	14	Broomfield County, Colorado	52	Finance and insurance	52	116.8	1962.4	128242.6
+117	8014	8	14	Broomfield County, Colorado	53	Real estate and rental and leasing	53	109.4	359.0	15896.8
+118	8014	8	14	Broomfield County, Colorado	54	Professional, scientific, and technical services	54	352.4	4792.8	482393.6
+119	8014	8	14	Broomfield County, Colorado	55	Management of companies and enterprises	55	30.0	4115.4	446722.4
+120	8014	8	14	Broomfield County, Colorado	56	Administrative and support and waste management and remediation services	56	101.2	1488.8	65442.4
+121	8014	8	14	Broomfield County, Colorado	61	Educational services	61	42.4	687.8	19590.2
+122	8014	8	14	Broomfield County, Colorado	62	Health care and social assistance	62	158.6	2061.8	86934.8
+123	8014	8	14	Broomfield County, Colorado	71	Arts, entertainment, and recreation	71	30.2	1347.6	24608.6
+124	8014	8	14	Broomfield County, Colorado	72	Accommodation and food services	72	148.8	3257.8	63923.4
+125	8014	8	14	Broomfield County, Colorado	81	Other services (except public administration)	81	145.6	1347.6	75356.2
+126	8014	8	14	Broomfield County, Colorado	99	Industries not classified	99	3.6	2.2	49.4
+129	8015	8	15	Chaffee County, Colorado	22	Utilities	22	3.8	23.0	1863.4
+130	8015	8	15	Chaffee County, Colorado	23	Construction	23	132.4	516.2	26472.8
+131	8015	8	15	Chaffee County, Colorado	42	Wholesale trade	42	24.8	143.6	4328.4
+132	8015	8	15	Chaffee County, Colorado	51	Information	51	11.4	50.6	2460.2
+133	8015	8	15	Chaffee County, Colorado	52	Finance and insurance	52	38.4	234.0	11731.2
+134	8015	8	15	Chaffee County, Colorado	53	Real estate and rental and leasing	53	74.8	140.0	3905.4
+135	8015	8	15	Chaffee County, Colorado	54	Professional, scientific, and technical services	54	94.0	230.8	8482.2
+137	8015	8	15	Chaffee County, Colorado	56	Administrative and support and waste management and remediation services	56	26.4	41.4	1433.2
+138	8015	8	15	Chaffee County, Colorado	61	Educational services	61	7.4	33.8	1067.6
+139	8015	8	15	Chaffee County, Colorado	62	Health care and social assistance	62	68.8	805.0	34057.2
+140	8015	8	15	Chaffee County, Colorado	71	Arts, entertainment, and recreation	71	31.2	336.8	6246.8
+141	8015	8	15	Chaffee County, Colorado	72	Accommodation and food services	72	107.2	1208.6	22562.4
+142	8015	8	15	Chaffee County, Colorado	81	Other services (except public administration)	81	69.8	263.0	6005.0
+145	8017	8	17	Cheyenne County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	9.0	373.8	25417.6
+146	8017	8	17	Cheyenne County, Colorado	23	Construction	23	2.2	0.6	46.6
+147	8017	8	17	Cheyenne County, Colorado	42	Wholesale trade	42	5.6	43.2	2449.4
+148	8017	8	17	Cheyenne County, Colorado	51	Information	51	2.2	1.8	62.8
+149	8017	8	17	Cheyenne County, Colorado	52	Finance and insurance	52	3.0	12.2	588.8
+151	8017	8	17	Cheyenne County, Colorado	54	Professional, scientific, and technical services	54	3.8	2.8	88.6
+154	8017	8	17	Cheyenne County, Colorado	72	Accommodation and food services	72	3.8	20.0	230.0
+155	8017	8	17	Cheyenne County, Colorado	81	Other services (except public administration)	81	5.4	2.2	136.0
+160	8019	8	19	Clear Creek County, Colorado	23	Construction	23	48.6	38.0	2036.4
+161	8019	8	19	Clear Creek County, Colorado	42	Wholesale trade	42	17.8	24.2	1488.2
+162	8019	8	19	Clear Creek County, Colorado	51	Information	51	2.8	3.2	145.4
+163	8019	8	19	Clear Creek County, Colorado	52	Finance and insurance	52	8.4	11.2	360.0
+164	8019	8	19	Clear Creek County, Colorado	53	Real estate and rental and leasing	53	17.4	14.8	698.6
+165	8019	8	19	Clear Creek County, Colorado	54	Professional, scientific, and technical services	54	44.0	68.8	4386.8
+166	8019	8	19	Clear Creek County, Colorado	56	Administrative and support and waste management and remediation services	56	19.0	39.0	1317.4
+167	8019	8	19	Clear Creek County, Colorado	61	Educational services	61	4.0	13.4	545.0
+168	8019	8	19	Clear Creek County, Colorado	62	Health care and social assistance	62	19.2	80.0	3202.8
+169	8019	8	19	Clear Creek County, Colorado	71	Arts, entertainment, and recreation	71	17.0	516.2	9872.6
+170	8019	8	19	Clear Creek County, Colorado	72	Accommodation and food services	72	43.6	561.2	10403.4
+171	8019	8	19	Clear Creek County, Colorado	81	Other services (except public administration)	81	13.4	35.4	876.2
+176	8021	8	21	Conejos County, Colorado	23	Construction	23	14.0	40.2	1880.4
+177	8021	8	21	Conejos County, Colorado	42	Wholesale trade	42	5.0	4.4	177.6
+180	8021	8	21	Conejos County, Colorado	53	Real estate and rental and leasing	53	3.2	5.8	85.6
+181	8021	8	21	Conejos County, Colorado	54	Professional, scientific, and technical services	54	4.8	9.2	737.8
+182	8021	8	21	Conejos County, Colorado	56	Administrative and support and waste management and remediation services	56	2.8	5.6	200.2
+183	8021	8	21	Conejos County, Colorado	62	Health care and social assistance	62	11.8	194.8	6088.6
+184	8021	8	21	Conejos County, Colorado	72	Accommodation and food services	72	12.2	14.8	1161.6
+185	8021	8	21	Conejos County, Colorado	81	Other services (except public administration)	81	8.0	8.8	233.8
+187	8023	8	23	Costilla County, Colorado	23	Construction	23	4.8	9.4	431.2
+193	8023	8	23	Costilla County, Colorado	62	Health care and social assistance	62	6.8	40.6	1029.0
+195	8023	8	23	Costilla County, Colorado	72	Accommodation and food services	72	5.2	45.0	495.6
+196	8023	8	23	Costilla County, Colorado	81	Other services (except public administration)	81	4.2	5.8	122.6
+197	8025	8	25	Crowley County, Colorado	22	Utilities	22	3.0	12.4	460.6
+200	8025	8	25	Crowley County, Colorado	52	Finance and insurance	52	3.2	11.2	409.4
+202	8025	8	25	Crowley County, Colorado	54	Professional, scientific, and technical services	54	2.2	0.0	20.6
+204	8025	8	25	Crowley County, Colorado	62	Health care and social assistance	62	3.0	33.0	857.4
+206	8025	8	25	Crowley County, Colorado	81	Other services (except public administration)	81	4.2	11.2	190.6
+207	8027	8	27	Custer County, Colorado	11	Agriculture, forestry, fishing and hunting	11	3.0	9.8	261.2
+208	8027	8	27	Custer County, Colorado	23	Construction	23	21.8	62.6	3261.2
+209	8027	8	27	Custer County, Colorado	42	Wholesale trade	42	2.6	1.0	15.2
+210	8027	8	27	Custer County, Colorado	51	Information	51	4.8	9.8	343.4
+211	8027	8	27	Custer County, Colorado	52	Finance and insurance	52	6.4	5.4	308.8
+212	8027	8	27	Custer County, Colorado	53	Real estate and rental and leasing	53	7.8	10.4	316.8
+213	8027	8	27	Custer County, Colorado	54	Professional, scientific, and technical services	54	15.0	25.6	955.6
+215	8027	8	27	Custer County, Colorado	62	Health care and social assistance	62	4.0	11.2	210.8
+217	8027	8	27	Custer County, Colorado	72	Accommodation and food services	72	14.2	61.2	994.4
+218	8027	8	27	Custer County, Colorado	81	Other services (except public administration)	81	21.4	53.6	2292.2
+220	8029	8	29	Delta County, Colorado	11	Agriculture, forestry, fishing and hunting	11	8.6	19.0	1020.6
+221	8029	8	29	Delta County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	9.4	106.8	6211.2
+222	8029	8	29	Delta County, Colorado	22	Utilities	22	12.6	47.0	2521.6
+223	8029	8	29	Delta County, Colorado	23	Construction	23	96.4	352.0	13688.0
+224	8029	8	29	Delta County, Colorado	42	Wholesale trade	42	29.6	191.4	7521.4
+225	8029	8	29	Delta County, Colorado	51	Information	51	21.0	144.6	4172.6
+226	8029	8	29	Delta County, Colorado	52	Finance and insurance	52	50.4	234.6	9365.8
+227	8029	8	29	Delta County, Colorado	53	Real estate and rental and leasing	53	36.8	270.4	7798.2
+228	8029	8	29	Delta County, Colorado	54	Professional, scientific, and technical services	54	71.0	174.8	5456.0
+230	8029	8	29	Delta County, Colorado	56	Administrative and support and waste management and remediation services	56	28.6	130.0	5014.0
+231	8029	8	29	Delta County, Colorado	61	Educational services	61	7.4	41.4	834.0
+232	8029	8	29	Delta County, Colorado	62	Health care and social assistance	62	84.2	1481.4	48459.6
+233	8029	8	29	Delta County, Colorado	71	Arts, entertainment, and recreation	71	16.4	27.2	736.4
+234	8029	8	29	Delta County, Colorado	72	Accommodation and food services	72	75.4	684.8	9252.2
+235	8029	8	29	Delta County, Colorado	81	Other services (except public administration)	81	80.8	268.0	5412.6
+236	8029	8	29	Delta County, Colorado	99	Industries not classified	99	3.75	2.75	49.25
+237	8031	8	31	Denver County, Colorado	11	Agriculture, forestry, fishing and hunting	11	7.4	105.2	2429.2
+238	8031	8	31	Denver County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	272.6	5514.6	808675.8
+239	8031	8	31	Denver County, Colorado	22	Utilities	22	27.0	1404.0	105714.0
+240	8031	8	31	Denver County, Colorado	23	Construction	23	1278.4	14998.0	892202.0
+241	8031	8	31	Denver County, Colorado	42	Wholesale trade	42	1404.6	22165.2	1469129.8
+242	8031	8	31	Denver County, Colorado	51	Information	51	560.6	15221.6	1448167.2
+243	8031	8	31	Denver County, Colorado	52	Finance and insurance	52	1573.4	24399.8	2696457.4
+244	8031	8	31	Denver County, Colorado	53	Real estate and rental and leasing	53	1614.2	10358.2	604485.4
+245	8031	8	31	Denver County, Colorado	54	Professional, scientific, and technical services	54	4560.4	41000.6	3682645.8
+246	8031	8	31	Denver County, Colorado	55	Management of companies and enterprises	55	274.0	18975.4	2526832.8
+247	8031	8	31	Denver County, Colorado	56	Administrative and support and waste management and remediation services	56	1211.6	41364.4	1363771.2
+248	8031	8	31	Denver County, Colorado	61	Educational services	61	440.2	16968.4	546719.8
+249	8031	8	31	Denver County, Colorado	62	Health care and social assistance	62	2216.0	52267.4	2694673.8
+250	8031	8	31	Denver County, Colorado	71	Arts, entertainment, and recreation	71	363.4	9822.6	516905.8
+251	8031	8	31	Denver County, Colorado	72	Accommodation and food services	72	2120.4	49554.0	1049569.8
+252	8031	8	31	Denver County, Colorado	81	Other services (except public administration)	81	2090.6	19406.0	642886.6
+253	8031	8	31	Denver County, Colorado	99	Industries not classified	99	38.6	19.8	931.8
+256	8033	8	33	Dolores County, Colorado	23	Construction	23	9.8	12.0	668.8
+257	8033	8	33	Dolores County, Colorado	42	Wholesale trade	42	5.0	20.8	1286.4
+260	8033	8	33	Dolores County, Colorado	53	Real estate and rental and leasing	53	2.25	1.25	153.25
+261	8033	8	33	Dolores County, Colorado	54	Professional, scientific, and technical services	54	3.8	1.2	58.8
+263	8033	8	33	Dolores County, Colorado	62	Health care and social assistance	62	4.2	30.8	1234.0
+264	8033	8	33	Dolores County, Colorado	72	Accommodation and food services	72	8.2	22.0	741.6
+266	8035	8	35	Douglas County, Colorado	11	Agriculture, forestry, fishing and hunting	11	25.8	62.4	1938.8
+267	8035	8	35	Douglas County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	45.6	281.8	40742.2
+268	8035	8	35	Douglas County, Colorado	22	Utilities	22	5.6	87.8	8138.2
+269	8035	8	35	Douglas County, Colorado	23	Construction	23	813.2	7249.2	400897.4
+270	8035	8	35	Douglas County, Colorado	42	Wholesale trade	42	355.2	2660.0	187895.2
+271	8035	8	35	Douglas County, Colorado	51	Information	51	209.8	8192.6	852455.8
+272	8035	8	35	Douglas County, Colorado	52	Finance and insurance	52	650.6	7441.8	687558.4
+273	8035	8	35	Douglas County, Colorado	53	Real estate and rental and leasing	53	579.0	1384.6	69337.6
+274	8035	8	35	Douglas County, Colorado	54	Professional, scientific, and technical services	54	1709.0	8559.2	846159.2
+275	8035	8	35	Douglas County, Colorado	55	Management of companies and enterprises	55	51.8	414.6	114808.8
+276	8035	8	35	Douglas County, Colorado	56	Administrative and support and waste management and remediation services	56	476.4	7683.4	267472.8
+277	8035	8	35	Douglas County, Colorado	61	Educational services	61	185.6	2904.8	82404.4
+278	8035	8	35	Douglas County, Colorado	62	Health care and social assistance	62	816.0	10672.4	565786.6
+279	8035	8	35	Douglas County, Colorado	71	Arts, entertainment, and recreation	71	121.8	2149.6	45154.0
+280	8035	8	35	Douglas County, Colorado	72	Accommodation and food services	72	533.4	11414.4	199452.4
+281	8035	8	35	Douglas County, Colorado	81	Other services (except public administration)	81	667.4	4770.4	131202.4
+282	8035	8	35	Douglas County, Colorado	99	Industries not classified	99	17.2	22.0	936.0
+283	8037	8	37	Eagle County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.6	1.4	75.4
+284	8037	8	37	Eagle County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.0	4.6	266.4
+285	8037	8	37	Eagle County, Colorado	22	Utilities	22	5.6	49.0	3990.8
+286	8037	8	37	Eagle County, Colorado	23	Construction	23	639.4	2315.0	137607.0
+287	8037	8	37	Eagle County, Colorado	42	Wholesale trade	42	96.8	493.4	25691.2
+288	8037	8	37	Eagle County, Colorado	51	Information	51	40.4	434.6	21463.6
+289	8037	8	37	Eagle County, Colorado	52	Finance and insurance	52	118.2	791.2	51829.2
+290	8037	8	37	Eagle County, Colorado	53	Real estate and rental and leasing	53	381.8	1949.4	76841.4
+291	8037	8	37	Eagle County, Colorado	54	Professional, scientific, and technical services	54	424.8	1289.2	73355.2
+292	8037	8	37	Eagle County, Colorado	55	Management of companies and enterprises	55	7.0	112.8	5264.6
+293	8037	8	37	Eagle County, Colorado	56	Administrative and support and waste management and remediation services	56	241.6	1894.0	60286.2
+294	8037	8	37	Eagle County, Colorado	61	Educational services	61	31.0	251.6	10148.4
+295	8037	8	37	Eagle County, Colorado	62	Health care and social assistance	62	176.8	2027.2	121265.0
+296	8037	8	37	Eagle County, Colorado	71	Arts, entertainment, and recreation	71	71.4	4430.6	107606.2
+297	8037	8	37	Eagle County, Colorado	72	Accommodation and food services	72	276.4	7930.0	184136.2
+298	8037	8	37	Eagle County, Colorado	81	Other services (except public administration)	81	216.4	1459.6	47779.2
+299	8037	8	37	Eagle County, Colorado	99	Industries not classified	99	3.75	2.5	78.25
+300	8039	8	39	Elbert County, Colorado	11	Agriculture, forestry, fishing and hunting	11	9.2	7.0	586.6
+301	8039	8	39	Elbert County, Colorado	23	Construction	23	160.0	702.2	32728.2
+302	8039	8	39	Elbert County, Colorado	42	Wholesale trade	42	19.2	71.8	2931.8
+303	8039	8	39	Elbert County, Colorado	51	Information	51	6.4	11.0	729.4
+304	8039	8	39	Elbert County, Colorado	52	Finance and insurance	52	25.6	66.6	2425.8
+305	8039	8	39	Elbert County, Colorado	53	Real estate and rental and leasing	53	20.0	18.0	709.8
+306	8039	8	39	Elbert County, Colorado	54	Professional, scientific, and technical services	54	89.8	187.4	9691.8
+308	8039	8	39	Elbert County, Colorado	56	Administrative and support and waste management and remediation services	56	49.2	163.8	3829.0
+309	8039	8	39	Elbert County, Colorado	61	Educational services	61	6.2	10.0	598.2
+310	8039	8	39	Elbert County, Colorado	62	Health care and social assistance	62	26.0	143.4	4915.6
+311	8039	8	39	Elbert County, Colorado	71	Arts, entertainment, and recreation	71	5.4	45.4	1706.6
+312	8039	8	39	Elbert County, Colorado	72	Accommodation and food services	72	25.8	198.0	2982.0
+313	8039	8	39	Elbert County, Colorado	81	Other services (except public administration)	81	57.4	142.4	4263.8
+315	8041	8	41	El Paso County, Colorado	11	Agriculture, forestry, fishing and hunting	11	15.4	10.2	337.6
+316	8041	8	41	El Paso County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	19.2	145.2	13485.6
+317	8041	8	41	El Paso County, Colorado	22	Utilities	22	9.6	62.8	4844.4
+318	8041	8	41	El Paso County, Colorado	23	Construction	23	1600.2	11384.6	572232.2
+319	8041	8	41	El Paso County, Colorado	42	Wholesale trade	42	524.4	6453.2	395629.0
+320	8041	8	41	El Paso County, Colorado	51	Information	51	295.2	9330.4	558831.2
+321	8041	8	41	El Paso County, Colorado	52	Finance and insurance	52	1151.4	10095.0	614771.2
+322	8041	8	41	El Paso County, Colorado	53	Real estate and rental and leasing	53	1097.2	3950.8	147076.2
+323	8041	8	41	El Paso County, Colorado	54	Professional, scientific, and technical services	54	2548.2	20811.6	1521719.8
+324	8041	8	41	El Paso County, Colorado	55	Management of companies and enterprises	55	81.0	1782.0	118164.2
+325	8041	8	41	El Paso County, Colorado	56	Administrative and support and waste management and remediation services	56	916.8	16690.2	792345.4
+326	8041	8	41	El Paso County, Colorado	61	Educational services	61	290.4	8158.0	253740.8
+327	8041	8	41	El Paso County, Colorado	62	Health care and social assistance	62	1942.4	34090.6	1529137.6
+328	8041	8	41	El Paso County, Colorado	71	Arts, entertainment, and recreation	71	252.0	3352.8	68762.8
+329	8041	8	41	El Paso County, Colorado	72	Accommodation and food services	72	1294.8	27288.0	469505.4
+330	8041	8	41	El Paso County, Colorado	81	Other services (except public administration)	81	1553.2	19782.6	681498.6
+331	8041	8	41	El Paso County, Colorado	99	Industries not classified	99	22.0	22.2	443.4
+333	8043	8	43	Fremont County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.2	14.0	848.4
+334	8043	8	43	Fremont County, Colorado	22	Utilities	22	6.4	21.6	1314.8
+335	8043	8	43	Fremont County, Colorado	23	Construction	23	110.8	493.4	19463.0
+336	8043	8	43	Fremont County, Colorado	42	Wholesale trade	42	27.8	109.0	3905.0
+337	8043	8	43	Fremont County, Colorado	51	Information	51	17.4	131.0	4864.2
+338	8043	8	43	Fremont County, Colorado	52	Finance and insurance	52	46.8	244.8	9029.2
+339	8043	8	43	Fremont County, Colorado	53	Real estate and rental and leasing	53	42.8	144.8	3787.4
+340	8043	8	43	Fremont County, Colorado	54	Professional, scientific, and technical services	54	61.8	171.0	4343.2
+342	8043	8	43	Fremont County, Colorado	56	Administrative and support and waste management and remediation services	56	29.0	255.8	6965.2
+343	8043	8	43	Fremont County, Colorado	61	Educational services	61	3.6	4.2	32.0
+344	8043	8	43	Fremont County, Colorado	62	Health care and social assistance	62	97.6	1960.2	64269.2
+345	8043	8	43	Fremont County, Colorado	71	Arts, entertainment, and recreation	71	24.6	178.0	4716.2
+346	8043	8	43	Fremont County, Colorado	72	Accommodation and food services	72	80.0	903.6	12847.2
+347	8043	8	43	Fremont County, Colorado	81	Other services (except public administration)	81	83.0	407.0	7316.4
+348	8043	8	43	Fremont County, Colorado	99	Industries not classified	99	3.0	3.5	72.5
+349	8045	8	45	Garfield County, Colorado	11	Agriculture, forestry, fishing and hunting	11	9.4	7.6	437.0
+350	8045	8	45	Garfield County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	61.8	930.4	90115.0
+351	8045	8	45	Garfield County, Colorado	22	Utilities	22	14.8	247.4	21923.6
+352	8045	8	45	Garfield County, Colorado	23	Construction	23	493.0	2880.6	165884.2
+353	8045	8	45	Garfield County, Colorado	42	Wholesale trade	42	71.8	542.0	29339.8
+354	8045	8	45	Garfield County, Colorado	51	Information	51	32.8	180.8	8161.8
+355	8045	8	45	Garfield County, Colorado	52	Finance and insurance	52	95.8	670.0	41297.8
+356	8045	8	45	Garfield County, Colorado	53	Real estate and rental and leasing	53	157.4	703.6	30504.4
+357	8045	8	45	Garfield County, Colorado	54	Professional, scientific, and technical services	54	296.4	999.8	59838.6
+358	8045	8	45	Garfield County, Colorado	55	Management of companies and enterprises	55	6.4	27.6	1894.6
+359	8045	8	45	Garfield County, Colorado	56	Administrative and support and waste management and remediation services	56	146.8	1090.6	46790.0
+360	8045	8	45	Garfield County, Colorado	61	Educational services	61	28.0	255.4	7838.6
+361	8045	8	45	Garfield County, Colorado	62	Health care and social assistance	62	156.6	2604.0	148314.8
+362	8045	8	45	Garfield County, Colorado	71	Arts, entertainment, and recreation	71	40.8	308.0	7468.8
+363	8045	8	45	Garfield County, Colorado	72	Accommodation and food services	72	207.8	2955.0	58162.4
+364	8045	8	45	Garfield County, Colorado	81	Other services (except public administration)	81	187.4	853.8	26957.8
+365	8045	8	45	Garfield County, Colorado	99	Industries not classified	99	3.4	1.6	42.4
+366	8047	8	47	Gilpin County, Colorado	23	Construction	23	12.4	25.2	1073.8
+367	8047	8	47	Gilpin County, Colorado	42	Wholesale trade	42	3.6	1.2	46.4
+369	8047	8	47	Gilpin County, Colorado	52	Finance and insurance	52	2.0	0.0	55.6
+370	8047	8	47	Gilpin County, Colorado	53	Real estate and rental and leasing	53	3.2	1.6	141.0
+371	8047	8	47	Gilpin County, Colorado	54	Professional, scientific, and technical services	54	21.8	20.6	1728.0
+372	8047	8	47	Gilpin County, Colorado	56	Administrative and support and waste management and remediation services	56	6.2	3.6	286.8
+374	8047	8	47	Gilpin County, Colorado	62	Health care and social assistance	62	6.0	36.8	2279.4
+375	8047	8	47	Gilpin County, Colorado	71	Arts, entertainment, and recreation	71	26.0	2109.2	72512.0
+376	8047	8	47	Gilpin County, Colorado	72	Accommodation and food services	72	10.8	2427.8	90941.2
+377	8047	8	47	Gilpin County, Colorado	81	Other services (except public administration)	81	9.0	26.0	716.6
+378	8049	8	49	Grand County, Colorado	11	Agriculture, forestry, fishing and hunting	11	6.0	6.2	381.2
+380	8049	8	49	Grand County, Colorado	22	Utilities	22	5.8	40.0	3042.6
+381	8049	8	49	Grand County, Colorado	23	Construction	23	152.2	481.8	19826.8
+382	8049	8	49	Grand County, Colorado	42	Wholesale trade	42	6.8	4.6	638.6
+383	8049	8	49	Grand County, Colorado	51	Information	51	10.0	16.6	1458.4
+384	8049	8	49	Grand County, Colorado	52	Finance and insurance	52	28.0	60.0	4718.4
+385	8049	8	49	Grand County, Colorado	53	Real estate and rental and leasing	53	74.4	411.2	13815.4
+386	8049	8	49	Grand County, Colorado	54	Professional, scientific, and technical services	54	80.0	793.2	38692.6
+387	8049	8	49	Grand County, Colorado	56	Administrative and support and waste management and remediation services	56	43.4	181.0	6035.0
+388	8049	8	49	Grand County, Colorado	61	Educational services	61	8.2	11.0	206.0
+389	8049	8	49	Grand County, Colorado	62	Health care and social assistance	62	37.4	351.8	15503.2
+390	8049	8	49	Grand County, Colorado	71	Arts, entertainment, and recreation	71	32.0	851.4	10642.6
+391	8049	8	49	Grand County, Colorado	72	Accommodation and food services	72	132.4	2104.8	40135.6
+392	8049	8	49	Grand County, Colorado	81	Other services (except public administration)	81	59.0	190.4	4558.2
+394	8051	8	51	Gunnison County, Colorado	11	Agriculture, forestry, fishing and hunting	11	4.8	1.6	40.2
+395	8051	8	51	Gunnison County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	5.0	199.6	15992.4
+397	8051	8	51	Gunnison County, Colorado	23	Construction	23	219.2	488.8	20925.6
+398	8051	8	51	Gunnison County, Colorado	42	Wholesale trade	42	13.6	21.0	664.8
+399	8051	8	51	Gunnison County, Colorado	51	Information	51	19.8	50.2	3053.0
+400	8051	8	51	Gunnison County, Colorado	52	Finance and insurance	52	31.4	59.0	6861.6
+401	8051	8	51	Gunnison County, Colorado	53	Real estate and rental and leasing	53	93.4	197.4	6227.8
+402	8051	8	51	Gunnison County, Colorado	54	Professional, scientific, and technical services	54	129.4	263.4	12564.2
+404	8051	8	51	Gunnison County, Colorado	56	Administrative and support and waste management and remediation services	56	57.4	136.6	4585.4
+405	8051	8	51	Gunnison County, Colorado	61	Educational services	61	12.6	33.8	584.6
+406	8051	8	51	Gunnison County, Colorado	62	Health care and social assistance	62	59.4	515.4	20163.8
+407	8051	8	51	Gunnison County, Colorado	71	Arts, entertainment, and recreation	71	37.0	137.0	4314.0
+408	8051	8	51	Gunnison County, Colorado	72	Accommodation and food services	72	121.2	2133.6	31972.6
+409	8051	8	51	Gunnison County, Colorado	81	Other services (except public administration)	81	85.0	286.4	6752.4
+412	8053	8	53	Hinsdale County, Colorado	23	Construction	23	10.0	12.8	1192.4
+414	8053	8	53	Hinsdale County, Colorado	51	Information	51	2.8	1.4	46.4
+416	8053	8	53	Hinsdale County, Colorado	53	Real estate and rental and leasing	53	4.4	1.4	170.6
+418	8053	8	53	Hinsdale County, Colorado	56	Administrative and support and waste management and remediation services	56	2.8	2.2	139.0
+420	8053	8	53	Hinsdale County, Colorado	71	Arts, entertainment, and recreation	71	3.2	1.6	33.8
+421	8053	8	53	Hinsdale County, Colorado	72	Accommodation and food services	72	16.2	22.6	975.8
+422	8053	8	53	Hinsdale County, Colorado	81	Other services (except public administration)	81	8.6	5.4	104.0
+425	8055	8	55	Huerfano County, Colorado	23	Construction	23	19.8	47.0	2149.2
+426	8055	8	55	Huerfano County, Colorado	42	Wholesale trade	42	5.2	12.0	649.2
+427	8055	8	55	Huerfano County, Colorado	51	Information	51	4.0	6.2	460.6
+428	8055	8	55	Huerfano County, Colorado	52	Finance and insurance	52	7.0	13.0	630.6
+429	8055	8	55	Huerfano County, Colorado	53	Real estate and rental and leasing	53	8.2	7.8	387.6
+430	8055	8	55	Huerfano County, Colorado	54	Professional, scientific, and technical services	54	13.6	42.4	1659.6
+433	8055	8	55	Huerfano County, Colorado	62	Health care and social assistance	62	17.2	436.0	15997.0
+434	8055	8	55	Huerfano County, Colorado	71	Arts, entertainment, and recreation	71	5.2	3.8	320.2
+435	8055	8	55	Huerfano County, Colorado	72	Accommodation and food services	72	23.2	171.4	2395.4
+436	8055	8	55	Huerfano County, Colorado	81	Other services (except public administration)	81	11.6	37.0	528.6
+438	8057	8	57	Jackson County, Colorado	11	Agriculture, forestry, fishing and hunting	11	5.0	11.4	568.8
+441	8057	8	57	Jackson County, Colorado	23	Construction	23	6.0	7.6	686.2
+446	8057	8	57	Jackson County, Colorado	54	Professional, scientific, and technical services	54	5.6	8.8	248.4
+448	8057	8	57	Jackson County, Colorado	62	Health care and social assistance	62	2.6	1.4	38.6
+449	8057	8	57	Jackson County, Colorado	71	Arts, entertainment, and recreation	71	4.4	6.6	225.4
+450	8057	8	57	Jackson County, Colorado	72	Accommodation and food services	72	10.6	45.6	847.0
+451	8057	8	57	Jackson County, Colorado	81	Other services (except public administration)	81	2.6	0.4	5.8
+452	8059	8	59	Jefferson County, Colorado	11	Agriculture, forestry, fishing and hunting	11	20.6	78.8	5232.8
+453	8059	8	59	Jefferson County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	108.8	908.2	89779.4
+454	8059	8	59	Jefferson County, Colorado	22	Utilities	22	36.0	503.6	44759.0
+455	8059	8	59	Jefferson County, Colorado	23	Construction	23	1915.0	13070.2	688536.8
+456	8059	8	59	Jefferson County, Colorado	42	Wholesale trade	42	739.0	5265.8	368779.6
+457	8059	8	59	Jefferson County, Colorado	51	Information	51	266.2	3168.8	228888.0
+458	8059	8	59	Jefferson County, Colorado	52	Finance and insurance	52	1113.2	9068.6	545959.4
+459	8059	8	59	Jefferson County, Colorado	53	Real estate and rental and leasing	53	923.6	2899.4	122353.2
+460	8059	8	59	Jefferson County, Colorado	54	Professional, scientific, and technical services	54	3041.0	23330.2	1837978.4
+461	8059	8	59	Jefferson County, Colorado	55	Management of companies and enterprises	55	105.4	6533.8	590147.6
+462	8059	8	59	Jefferson County, Colorado	56	Administrative and support and waste management and remediation services	56	891.4	13591.0	477353.0
+463	8059	8	59	Jefferson County, Colorado	61	Educational services	61	273.8	3837.0	103367.6
+464	8059	8	59	Jefferson County, Colorado	62	Health care and social assistance	62	1648.0	26408.6	1142058.2
+465	8059	8	59	Jefferson County, Colorado	71	Arts, entertainment, and recreation	71	241.0	2459.0	48556.6
+466	8059	8	59	Jefferson County, Colorado	72	Accommodation and food services	72	1208.4	22573.2	397538.0
+467	8059	8	59	Jefferson County, Colorado	81	Other services (except public administration)	81	1425.8	9323.4	269116.4
+468	8059	8	59	Jefferson County, Colorado	99	Industries not classified	99	23.8	10.2	372.4
+473	8061	8	61	Kiowa County, Colorado	42	Wholesale trade	42	5.8	27.8	962.0
+478	8061	8	61	Kiowa County, Colorado	72	Accommodation and food services	72	2.6	13.2	254.8
+479	8061	8	61	Kiowa County, Colorado	81	Other services (except public administration)	81	6.4	7.8	160.0
+481	8063	8	63	Kit Carson County, Colorado	11	Agriculture, forestry, fishing and hunting	11	5.8	31.0	1815.2
+482	8063	8	63	Kit Carson County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.6	27.4	1284.4
+483	8063	8	63	Kit Carson County, Colorado	22	Utilities	22	4.6	12.4	932.8
+484	8063	8	63	Kit Carson County, Colorado	23	Construction	23	23.4	36.0	2075.6
+485	8063	8	63	Kit Carson County, Colorado	42	Wholesale trade	42	24.0	255.8	10805.4
+486	8063	8	63	Kit Carson County, Colorado	51	Information	51	6.0	26.0	1024.4
+487	8063	8	63	Kit Carson County, Colorado	52	Finance and insurance	52	23.0	109.4	4732.2
+488	8063	8	63	Kit Carson County, Colorado	53	Real estate and rental and leasing	53	9.6	35.6	1359.6
+489	8063	8	63	Kit Carson County, Colorado	54	Professional, scientific, and technical services	54	16.2	31.6	1175.0
+491	8063	8	63	Kit Carson County, Colorado	56	Administrative and support and waste management and remediation services	56	9.0	113.6	5281.8
+492	8063	8	63	Kit Carson County, Colorado	62	Health care and social assistance	62	26.0	209.8	6134.2
+493	8063	8	63	Kit Carson County, Colorado	71	Arts, entertainment, and recreation	71	4.4	1.8	111.8
+494	8063	8	63	Kit Carson County, Colorado	72	Accommodation and food services	72	24.4	283.2	3585.8
+495	8063	8	63	Kit Carson County, Colorado	81	Other services (except public administration)	81	25.6	64.0	2523.8
+496	8063	8	63	Kit Carson County, Colorado	99	Industries not classified	99	2.5	2.25	14.0
+500	8065	8	65	Lake County, Colorado	23	Construction	23	33.0	91.6	4260.0
+501	8065	8	65	Lake County, Colorado	42	Wholesale trade	42	4.0	15.2	777.0
+502	8065	8	65	Lake County, Colorado	51	Information	51	2.6	6.2	215.2
+503	8065	8	65	Lake County, Colorado	52	Finance and insurance	52	5.6	13.6	774.2
+504	8065	8	65	Lake County, Colorado	53	Real estate and rental and leasing	53	12.8	44.2	889.8
+505	8065	8	65	Lake County, Colorado	54	Professional, scientific, and technical services	54	12.0	11.6	1154.0
+506	8065	8	65	Lake County, Colorado	56	Administrative and support and waste management and remediation services	56	10.4	69.6	1001.2
+507	8065	8	65	Lake County, Colorado	61	Educational services	61	2.8	14.2	520.6
+508	8065	8	65	Lake County, Colorado	62	Health care and social assistance	62	12.6	174.8	6548.4
+509	8065	8	65	Lake County, Colorado	71	Arts, entertainment, and recreation	71	12.4	106.8	1999.4
+510	8065	8	65	Lake County, Colorado	72	Accommodation and food services	72	34.4	277.4	4283.8
+511	8065	8	65	Lake County, Colorado	81	Other services (except public administration)	81	18.8	43.0	770.2
+512	8067	8	67	La Plata County, Colorado	11	Agriculture, forestry, fishing and hunting	11	4.8	13.4	351.8
+513	8067	8	67	La Plata County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	24.2	288.2	46635.4
+514	8067	8	67	La Plata County, Colorado	22	Utilities	22	9.6	109.0	8679.6
+515	8067	8	67	La Plata County, Colorado	23	Construction	23	318.0	2472.0	136963.8
+516	8067	8	67	La Plata County, Colorado	42	Wholesale trade	42	64.0	532.8	28628.4
+517	8067	8	67	La Plata County, Colorado	51	Information	51	41.6	234.2	13475.8
+518	8067	8	67	La Plata County, Colorado	52	Finance and insurance	52	98.4	805.6	52536.0
+519	8067	8	67	La Plata County, Colorado	53	Real estate and rental and leasing	53	148.2	419.8	14840.0
+520	8067	8	67	La Plata County, Colorado	54	Professional, scientific, and technical services	54	334.4	1162.0	66343.8
+521	8067	8	67	La Plata County, Colorado	55	Management of companies and enterprises	55	8.6	187.0	20868.8
+522	8067	8	67	La Plata County, Colorado	56	Administrative and support and waste management and remediation services	56	139.6	679.6	26640.4
+523	8067	8	67	La Plata County, Colorado	61	Educational services	61	30.6	215.2	6572.4
+524	8067	8	67	La Plata County, Colorado	62	Health care and social assistance	62	234.2	3142.0	147382.6
+525	8067	8	67	La Plata County, Colorado	71	Arts, entertainment, and recreation	71	55.8	354.0	10218.2
+526	8067	8	67	La Plata County, Colorado	72	Accommodation and food services	72	205.0	3483.4	79799.4
+527	8067	8	67	La Plata County, Colorado	81	Other services (except public administration)	81	183.8	851.0	22365.8
+528	8067	8	67	La Plata County, Colorado	99	Industries not classified	99	2.2	2.8	94.4
+529	8069	8	69	Larimer County, Colorado	11	Agriculture, forestry, fishing and hunting	11	20.0	43.8	1517.8
+530	8069	8	69	Larimer County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	52.6	349.2	23467.8
+531	8069	8	69	Larimer County, Colorado	22	Utilities	22	10.4	239.2	18082.2
+532	8069	8	69	Larimer County, Colorado	23	Construction	23	1126.4	8239.0	418683.6
+533	8069	8	69	Larimer County, Colorado	42	Wholesale trade	42	369.8	5569.0	591288.8
+534	8069	8	69	Larimer County, Colorado	51	Information	51	164.4	2743.6	156127.6
+535	8069	8	69	Larimer County, Colorado	52	Finance and insurance	52	564.6	3718.0	228960.8
+536	8069	8	69	Larimer County, Colorado	53	Real estate and rental and leasing	53	600.2	2170.4	88522.6
+537	8069	8	69	Larimer County, Colorado	54	Professional, scientific, and technical services	54	1557.6	9270.4	639987.4
+538	8069	8	69	Larimer County, Colorado	55	Management of companies and enterprises	55	44.0	928.8	63196.4
+539	8069	8	69	Larimer County, Colorado	56	Administrative and support and waste management and remediation services	56	567.6	7455.4	234879.2
+540	8069	8	69	Larimer County, Colorado	61	Educational services	61	162.2	2107.2	43402.0
+541	8069	8	69	Larimer County, Colorado	62	Health care and social assistance	62	1060.2	19079.8	860536.0
+542	8069	8	69	Larimer County, Colorado	71	Arts, entertainment, and recreation	71	179.4	1902.6	36151.6
+543	8069	8	69	Larimer County, Colorado	72	Accommodation and food services	72	872.2	16114.6	273516.6
+544	8069	8	69	Larimer County, Colorado	81	Other services (except public administration)	81	854.2	5272.8	143402.2
+545	8069	8	69	Larimer County, Colorado	99	Industries not classified	99	15.4	8.0	314.6
+547	8071	8	71	Las Animas County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	8.2	47.2	3301.0
+549	8071	8	71	Las Animas County, Colorado	23	Construction	23	35.4	172.6	6037.6
+550	8071	8	71	Las Animas County, Colorado	42	Wholesale trade	42	11.4	35.6	2510.2
+551	8071	8	71	Las Animas County, Colorado	51	Information	51	6.4	33.8	1028.2
+552	8071	8	71	Las Animas County, Colorado	52	Finance and insurance	52	18.0	138.2	5266.2
+553	8071	8	71	Las Animas County, Colorado	53	Real estate and rental and leasing	53	20.2	52.6	2118.2
+554	8071	8	71	Las Animas County, Colorado	54	Professional, scientific, and technical services	54	24.6	91.4	2525.0
+556	8071	8	71	Las Animas County, Colorado	56	Administrative and support and waste management and remediation services	56	16.8	75.0	3491.0
+557	8071	8	71	Las Animas County, Colorado	61	Educational services	61	2.4	0.0	69.6
+558	8071	8	71	Las Animas County, Colorado	62	Health care and social assistance	62	36.6	739.8	25942.2
+559	8071	8	71	Las Animas County, Colorado	71	Arts, entertainment, and recreation	71	11.0	25.2	591.2
+560	8071	8	71	Las Animas County, Colorado	72	Accommodation and food services	72	44.8	603.0	8659.6
+561	8071	8	71	Las Animas County, Colorado	81	Other services (except public administration)	81	50.4	179.8	4040.2
+564	8073	8	73	Lincoln County, Colorado	22	Utilities	22	4.4	46.8	3520.8
+565	8073	8	73	Lincoln County, Colorado	23	Construction	23	9.4	76.2	2741.0
+568	8073	8	73	Lincoln County, Colorado	52	Finance and insurance	52	9.0	65.6	3593.4
+569	8073	8	73	Lincoln County, Colorado	53	Real estate and rental and leasing	53	3.4	8.0	87.6
+570	8073	8	73	Lincoln County, Colorado	54	Professional, scientific, and technical services	54	9.6	22.4	770.6
+573	8073	8	73	Lincoln County, Colorado	62	Health care and social assistance	62	9.2	211.0	7542.6
+575	8073	8	73	Lincoln County, Colorado	72	Accommodation and food services	72	21.2	203.8	3000.4
+576	8073	8	73	Lincoln County, Colorado	81	Other services (except public administration)	81	17.2	40.8	1377.2
+578	8075	8	75	Logan County, Colorado	11	Agriculture, forestry, fishing and hunting	11	4.8	17.6	1001.4
+579	8075	8	75	Logan County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	19.2	266.6	16179.0
+580	8075	8	75	Logan County, Colorado	22	Utilities	22	7.4	44.6	4495.4
+581	8075	8	75	Logan County, Colorado	23	Construction	23	55.4	257.4	9725.4
+582	8075	8	75	Logan County, Colorado	42	Wholesale trade	42	27.6	265.4	10351.0
+583	8075	8	75	Logan County, Colorado	51	Information	51	9.8	64.6	1951.8
+584	8075	8	75	Logan County, Colorado	52	Finance and insurance	52	36.4	198.0	9900.8
+585	8075	8	75	Logan County, Colorado	53	Real estate and rental and leasing	53	15.2	39.6	1276.6
+586	8075	8	75	Logan County, Colorado	54	Professional, scientific, and technical services	54	29.0	98.0	4508.8
+588	8075	8	75	Logan County, Colorado	56	Administrative and support and waste management and remediation services	56	19.2	239.6	4852.2
+590	8075	8	75	Logan County, Colorado	62	Health care and social assistance	62	64.0	1031.2	38745.8
+591	8075	8	75	Logan County, Colorado	71	Arts, entertainment, and recreation	71	5.0	10.2	425.0
+592	8075	8	75	Logan County, Colorado	72	Accommodation and food services	72	43.4	666.2	8719.8
+593	8075	8	75	Logan County, Colorado	81	Other services (except public administration)	81	77.2	331.0	7789.2
+595	8077	8	77	Mesa County, Colorado	11	Agriculture, forestry, fishing and hunting	11	6.6	6.8	682.4
+596	8077	8	77	Mesa County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	141.0	2478.2	210997.0
+597	8077	8	77	Mesa County, Colorado	22	Utilities	22	12.0	178.4	13362.0
+598	8077	8	77	Mesa County, Colorado	23	Construction	23	498.0	3542.8	195782.4
+599	8077	8	77	Mesa County, Colorado	42	Wholesale trade	42	252.8	2481.0	140794.8
+600	8077	8	77	Mesa County, Colorado	51	Information	51	57.8	1277.8	42111.0
+601	8077	8	77	Mesa County, Colorado	52	Finance and insurance	52	239.2	1838.4	104805.6
+602	8077	8	77	Mesa County, Colorado	53	Real estate and rental and leasing	53	274.2	930.4	34415.2
+603	8077	8	77	Mesa County, Colorado	54	Professional, scientific, and technical services	54	532.8	2390.2	127285.2
+604	8077	8	77	Mesa County, Colorado	55	Management of companies and enterprises	55	17.6	192.4	9168.2
+605	8077	8	77	Mesa County, Colorado	56	Administrative and support and waste management and remediation services	56	219.2	2132.2	63496.4
+606	8077	8	77	Mesa County, Colorado	61	Educational services	61	39.6	503.4	11501.8
+607	8077	8	77	Mesa County, Colorado	62	Health care and social assistance	62	423.4	9850.6	450528.8
+608	8077	8	77	Mesa County, Colorado	71	Arts, entertainment, and recreation	71	61.4	963.8	11628.2
+609	8077	8	77	Mesa County, Colorado	72	Accommodation and food services	72	307.4	6426.6	102705.0
+610	8077	8	77	Mesa County, Colorado	81	Other services (except public administration)	81	399.4	2376.8	67216.6
+611	8077	8	77	Mesa County, Colorado	99	Industries not classified	99	3.2	2.6	87.0
+613	8079	8	79	Mineral County, Colorado	23	Construction	23	7.0	15.6	717.6
+617	8079	8	79	Mineral County, Colorado	53	Real estate and rental and leasing	53	3.0	1.8	36.4
+618	8079	8	79	Mineral County, Colorado	54	Professional, scientific, and technical services	54	3.4	3.2	133.4
+621	8079	8	79	Mineral County, Colorado	71	Arts, entertainment, and recreation	71	5.2	5.6	336.0
+622	8079	8	79	Mineral County, Colorado	72	Accommodation and food services	72	18.2	40.0	2790.4
+623	8079	8	79	Mineral County, Colorado	81	Other services (except public administration)	81	5.2	7.4	162.4
+625	8081	8	81	Moffat County, Colorado	11	Agriculture, forestry, fishing and hunting	11	3.2	1.4	67.4
+626	8081	8	81	Moffat County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	17.2	91.8	7276.2
+628	8081	8	81	Moffat County, Colorado	23	Construction	23	44.0	183.0	8382.8
+629	8081	8	81	Moffat County, Colorado	42	Wholesale trade	42	27.0	141.8	7443.2
+630	8081	8	81	Moffat County, Colorado	51	Information	51	6.8	23.4	1589.8
+631	8081	8	81	Moffat County, Colorado	52	Finance and insurance	52	17.4	34.2	2862.4
+632	8081	8	81	Moffat County, Colorado	53	Real estate and rental and leasing	53	8.4	7.6	468.2
+633	8081	8	81	Moffat County, Colorado	54	Professional, scientific, and technical services	54	31.0	93.2	3024.0
+634	8081	8	81	Moffat County, Colorado	56	Administrative and support and waste management and remediation services	56	14.8	99.0	4108.2
+635	8081	8	81	Moffat County, Colorado	61	Educational services	61	4.0	4.4	30.6
+636	8081	8	81	Moffat County, Colorado	62	Health care and social assistance	62	41.2	483.2	20862.0
+637	8081	8	81	Moffat County, Colorado	71	Arts, entertainment, and recreation	71	14.6	40.6	805.2
+638	8081	8	81	Moffat County, Colorado	72	Accommodation and food services	72	32.6	411.6	5509.8
+639	8081	8	81	Moffat County, Colorado	81	Other services (except public administration)	81	47.2	217.8	5774.4
+641	8083	8	83	Montezuma County, Colorado	11	Agriculture, forestry, fishing and hunting	11	5.2	3.2	259.8
+642	8083	8	83	Montezuma County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	16.2	139.2	10369.6
+643	8083	8	83	Montezuma County, Colorado	22	Utilities	22	8.6	117.8	7521.2
+644	8083	8	83	Montezuma County, Colorado	23	Construction	23	81.6	681.2	35037.2
+645	8083	8	83	Montezuma County, Colorado	42	Wholesale trade	42	22.2	191.6	9680.0
+646	8083	8	83	Montezuma County, Colorado	51	Information	51	15.6	72.2	4101.0
+647	8083	8	83	Montezuma County, Colorado	52	Finance and insurance	52	31.6	168.0	7384.4
+648	8083	8	83	Montezuma County, Colorado	53	Real estate and rental and leasing	53	30.4	117.4	4156.8
+649	8083	8	83	Montezuma County, Colorado	54	Professional, scientific, and technical services	54	80.2	296.4	12169.2
+651	8083	8	83	Montezuma County, Colorado	56	Administrative and support and waste management and remediation services	56	31.8	188.4	5417.0
+652	8083	8	83	Montezuma County, Colorado	61	Educational services	61	8.4	30.0	1232.8
+653	8083	8	83	Montezuma County, Colorado	62	Health care and social assistance	62	87.6	1422.4	46731.0
+654	8083	8	83	Montezuma County, Colorado	71	Arts, entertainment, and recreation	71	3.2	2.4	471.6
+655	8083	8	83	Montezuma County, Colorado	72	Accommodation and food services	72	91.8	1332.8	25049.4
+656	8083	8	83	Montezuma County, Colorado	81	Other services (except public administration)	81	69.6	181.6	5080.6
+658	8085	8	85	Montrose County, Colorado	11	Agriculture, forestry, fishing and hunting	11	10.2	23.4	908.4
+659	8085	8	85	Montrose County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	13.6	122.0	7825.6
+660	8085	8	85	Montrose County, Colorado	22	Utilities	22	14.0	290.8	21548.0
+661	8085	8	85	Montrose County, Colorado	23	Construction	23	180.0	940.6	49771.6
+662	8085	8	85	Montrose County, Colorado	42	Wholesale trade	42	49.8	336.2	13613.6
+663	8085	8	85	Montrose County, Colorado	51	Information	51	13.2	148.2	5286.2
+664	8085	8	85	Montrose County, Colorado	52	Finance and insurance	52	63.6	329.4	14737.4
+665	8085	8	85	Montrose County, Colorado	53	Real estate and rental and leasing	53	55.2	137.2	4057.6
+666	8085	8	85	Montrose County, Colorado	54	Professional, scientific, and technical services	54	106.6	542.2	25073.8
+667	8085	8	85	Montrose County, Colorado	55	Management of companies and enterprises	55	4.0	47.6	1891.6
+668	8085	8	85	Montrose County, Colorado	56	Administrative and support and waste management and remediation services	56	67.4	440.6	14485.0
+669	8085	8	85	Montrose County, Colorado	61	Educational services	61	4.8	37.8	492.0
+670	8085	8	85	Montrose County, Colorado	62	Health care and social assistance	62	168.8	2577.2	96172.6
+671	8085	8	85	Montrose County, Colorado	71	Arts, entertainment, and recreation	71	22.2	117.2	2043.0
+672	8085	8	85	Montrose County, Colorado	72	Accommodation and food services	72	81.8	1122.4	18195.2
+673	8085	8	85	Montrose County, Colorado	81	Other services (except public administration)	81	109.2	493.4	12411.6
+675	8087	8	87	Morgan County, Colorado	11	Agriculture, forestry, fishing and hunting	11	6.8	9.8	429.8
+676	8087	8	87	Morgan County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	15.4	161.0	10675.0
+677	8087	8	87	Morgan County, Colorado	22	Utilities	22	10.0	193.2	16953.6
+678	8087	8	87	Morgan County, Colorado	23	Construction	23	75.4	514.6	25030.0
+679	8087	8	87	Morgan County, Colorado	42	Wholesale trade	42	40.2	378.0	16990.0
+680	8087	8	87	Morgan County, Colorado	51	Information	51	14.8	198.6	8710.8
+681	8087	8	87	Morgan County, Colorado	52	Finance and insurance	52	44.8	152.4	12709.6
+682	8087	8	87	Morgan County, Colorado	53	Real estate and rental and leasing	53	25.2	57.2	1538.8
+683	8087	8	87	Morgan County, Colorado	54	Professional, scientific, and technical services	54	36.4	143.6	4648.4
+685	8087	8	87	Morgan County, Colorado	56	Administrative and support and waste management and remediation services	56	29.0	293.2	9752.2
+687	8087	8	87	Morgan County, Colorado	62	Health care and social assistance	62	55.0	1258.6	48831.0
+688	8087	8	87	Morgan County, Colorado	71	Arts, entertainment, and recreation	71	7.6	43.4	409.6
+689	8087	8	87	Morgan County, Colorado	72	Accommodation and food services	72	54.6	858.8	11822.8
+690	8087	8	87	Morgan County, Colorado	81	Other services (except public administration)	81	65.2	244.0	4986.0
+692	8089	8	89	Otero County, Colorado	11	Agriculture, forestry, fishing and hunting	11	6.2	11.0	692.8
+694	8089	8	89	Otero County, Colorado	22	Utilities	22	14.0	41.2	2109.2
+695	8089	8	89	Otero County, Colorado	23	Construction	23	23.4	67.6	6144.4
+696	8089	8	89	Otero County, Colorado	42	Wholesale trade	42	30.0	237.2	7724.8
+697	8089	8	89	Otero County, Colorado	51	Information	51	11.0	68.0	2962.4
+698	8089	8	89	Otero County, Colorado	52	Finance and insurance	52	25.2	165.4	7177.4
+699	8089	8	89	Otero County, Colorado	53	Real estate and rental and leasing	53	14.2	77.2	2009.4
+700	8089	8	89	Otero County, Colorado	54	Professional, scientific, and technical services	54	29.0	111.6	2801.8
+701	8089	8	89	Otero County, Colorado	56	Administrative and support and waste management and remediation services	56	10.8	34.4	835.0
+702	8089	8	89	Otero County, Colorado	62	Health care and social assistance	62	57.0	708.2	40086.0
+703	8089	8	89	Otero County, Colorado	71	Arts, entertainment, and recreation	71	6.0	6.2	97.0
+704	8089	8	89	Otero County, Colorado	72	Accommodation and food services	72	49.0	571.6	6882.2
+705	8089	8	89	Otero County, Colorado	81	Other services (except public administration)	81	46.2	144.6	2620.0
+706	8089	8	89	Otero County, Colorado	99	Industries not classified	99	1.75	0.75	21.5
+708	8091	8	91	Ouray County, Colorado	22	Utilities	22	4.0	30.8	2154.4
+709	8091	8	91	Ouray County, Colorado	23	Construction	23	37.4	127.4	6269.6
+711	8091	8	91	Ouray County, Colorado	51	Information	51	4.8	13.8	665.2
+712	8091	8	91	Ouray County, Colorado	52	Finance and insurance	52	7.2	21.6	833.6
+713	8091	8	91	Ouray County, Colorado	53	Real estate and rental and leasing	53	9.4	13.2	438.8
+714	8091	8	91	Ouray County, Colorado	54	Professional, scientific, and technical services	54	48.6	79.6	3754.6
+716	8091	8	91	Ouray County, Colorado	56	Administrative and support and waste management and remediation services	56	10.0	26.0	1232.2
+717	8091	8	91	Ouray County, Colorado	61	Educational services	61	3.6	0.0	86.0
+718	8091	8	91	Ouray County, Colorado	62	Health care and social assistance	62	13.8	28.2	1131.8
+719	8091	8	91	Ouray County, Colorado	71	Arts, entertainment, and recreation	71	9.8	10.6	464.2
+720	8091	8	91	Ouray County, Colorado	72	Accommodation and food services	72	50.0	323.6	7819.6
+721	8091	8	91	Ouray County, Colorado	81	Other services (except public administration)	81	13.8	29.2	1225.2
+722	8093	8	93	Park County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.6	0.0	10.6
+724	8093	8	93	Park County, Colorado	23	Construction	23	105.6	190.8	7200.0
+725	8093	8	93	Park County, Colorado	42	Wholesale trade	42	15.0	18.8	1707.0
+726	8093	8	93	Park County, Colorado	51	Information	51	6.4	12.6	1143.4
+727	8093	8	93	Park County, Colorado	52	Finance and insurance	52	8.2	9.0	679.0
+728	8093	8	93	Park County, Colorado	53	Real estate and rental and leasing	53	21.8	14.2	1067.2
+729	8093	8	93	Park County, Colorado	54	Professional, scientific, and technical services	54	62.6	35.8	4075.8
+731	8093	8	93	Park County, Colorado	56	Administrative and support and waste management and remediation services	56	35.6	56.4	3475.6
+732	8093	8	93	Park County, Colorado	61	Educational services	61	7.6	7.6	431.6
+733	8093	8	93	Park County, Colorado	62	Health care and social assistance	62	21.8	114.6	2560.6
+734	8093	8	93	Park County, Colorado	71	Arts, entertainment, and recreation	71	10.6	5.4	507.4
+735	8093	8	93	Park County, Colorado	72	Accommodation and food services	72	39.0	240.0	4137.6
+736	8093	8	93	Park County, Colorado	81	Other services (except public administration)	81	30.2	122.4	3711.2
+738	8095	8	95	Phillips County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.25	2.0	119.0
+741	8095	8	95	Phillips County, Colorado	23	Construction	23	12.2	11.4	465.0
+742	8095	8	95	Phillips County, Colorado	42	Wholesale trade	42	13.2	56.4	4616.4
+743	8095	8	95	Phillips County, Colorado	51	Information	51	4.0	12.6	507.6
+744	8095	8	95	Phillips County, Colorado	52	Finance and insurance	52	12.4	49.6	2240.8
+746	8095	8	95	Phillips County, Colorado	54	Professional, scientific, and technical services	54	9.4	6.2	261.2
+749	8095	8	95	Phillips County, Colorado	62	Health care and social assistance	62	9.4	121.2	4532.2
+751	8095	8	95	Phillips County, Colorado	72	Accommodation and food services	72	14.4	71.4	977.0
+752	8095	8	95	Phillips County, Colorado	81	Other services (except public administration)	81	19.6	42.8	1021.0
+753	8097	8	97	Pitkin County, Colorado	11	Agriculture, forestry, fishing and hunting	11	3.2	8.2	388.4
+756	8097	8	97	Pitkin County, Colorado	23	Construction	23	164.8	550.8	37127.2
+757	8097	8	97	Pitkin County, Colorado	42	Wholesale trade	42	13.8	40.4	3179.0
+758	8097	8	97	Pitkin County, Colorado	51	Information	51	27.4	165.6	12939.4
+759	8097	8	97	Pitkin County, Colorado	52	Finance and insurance	52	58.6	242.8	25847.0
+760	8097	8	97	Pitkin County, Colorado	53	Real estate and rental and leasing	53	215.2	974.8	42839.6
+761	8097	8	97	Pitkin County, Colorado	54	Professional, scientific, and technical services	54	243.0	675.4	51520.6
+762	8097	8	97	Pitkin County, Colorado	55	Management of companies and enterprises	55	9.8	382.8	24593.2
+763	8097	8	97	Pitkin County, Colorado	56	Administrative and support and waste management and remediation services	56	104.4	772.4	32540.0
+764	8097	8	97	Pitkin County, Colorado	61	Educational services	61	26.6	421.0	16656.4
+765	8097	8	97	Pitkin County, Colorado	62	Health care and social assistance	62	72.4	732.2	47281.0
+766	8097	8	97	Pitkin County, Colorado	71	Arts, entertainment, and recreation	71	50.2	1337.6	46941.8
+767	8097	8	97	Pitkin County, Colorado	72	Accommodation and food services	72	167.8	5610.6	139607.4
+768	8097	8	97	Pitkin County, Colorado	81	Other services (except public administration)	81	131.2	946.2	41007.4
+769	8097	8	97	Pitkin County, Colorado	99	Industries not classified	99	2.6	1.2	68.2
+770	8099	8	99	Prowers County, Colorado	11	Agriculture, forestry, fishing and hunting	11	3.2	3.0	392.0
+772	8099	8	99	Prowers County, Colorado	22	Utilities	22	7.4	38.2	2515.6
+773	8099	8	99	Prowers County, Colorado	23	Construction	23	31.0	102.6	3133.0
+774	8099	8	99	Prowers County, Colorado	42	Wholesale trade	42	16.8	83.4	4433.0
+775	8099	8	99	Prowers County, Colorado	51	Information	51	8.6	36.4	1460.2
+776	8099	8	99	Prowers County, Colorado	52	Finance and insurance	52	32.6	199.2	8099.6
+777	8099	8	99	Prowers County, Colorado	53	Real estate and rental and leasing	53	15.4	31.0	1033.0
+778	8099	8	99	Prowers County, Colorado	54	Professional, scientific, and technical services	54	28.6	91.0	3246.8
+780	8099	8	99	Prowers County, Colorado	56	Administrative and support and waste management and remediation services	56	6.2	41.0	1055.8
+782	8099	8	99	Prowers County, Colorado	62	Health care and social assistance	62	30.4	618.8	20843.8
+783	8099	8	99	Prowers County, Colorado	71	Arts, entertainment, and recreation	71	4.4	12.0	203.8
+784	8099	8	99	Prowers County, Colorado	72	Accommodation and food services	72	33.2	375.4	4292.8
+785	8099	8	99	Prowers County, Colorado	81	Other services (except public administration)	81	35.2	116.4	2690.8
+787	8101	8	101	Pueblo County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.8	5.6	71.6
+788	8101	8	101	Pueblo County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	5.0	8.2	439.6
+789	8101	8	101	Pueblo County, Colorado	22	Utilities	22	10.4	178.8	16418.2
+790	8101	8	101	Pueblo County, Colorado	23	Construction	23	317.6	2504.8	123345.2
+791	8101	8	101	Pueblo County, Colorado	42	Wholesale trade	42	91.8	1097.8	51752.6
+792	8101	8	101	Pueblo County, Colorado	51	Information	51	43.0	900.4	44816.8
+793	8101	8	101	Pueblo County, Colorado	52	Finance and insurance	52	219.2	1145.6	49922.8
+794	8101	8	101	Pueblo County, Colorado	53	Real estate and rental and leasing	53	142.4	618.4	19573.4
+795	8101	8	101	Pueblo County, Colorado	54	Professional, scientific, and technical services	54	228.2	1792.4	126239.0
+796	8101	8	101	Pueblo County, Colorado	55	Management of companies and enterprises	55	16.4	177.8	10381.8
+797	8101	8	101	Pueblo County, Colorado	56	Administrative and support and waste management and remediation services	56	152.4	3861.4	103839.4
+798	8101	8	101	Pueblo County, Colorado	61	Educational services	61	24.8	613.0	19914.0
+799	8101	8	101	Pueblo County, Colorado	62	Health care and social assistance	62	412.4	12670.0	537214.2
+800	8101	8	101	Pueblo County, Colorado	71	Arts, entertainment, and recreation	71	46.6	735.2	21308.2
+801	8101	8	101	Pueblo County, Colorado	72	Accommodation and food services	72	339.8	5573.8	74241.4
+802	8101	8	101	Pueblo County, Colorado	81	Other services (except public administration)	81	331.0	1935.4	42654.8
+803	8101	8	101	Pueblo County, Colorado	99	Industries not classified	99	4.4	4.0	94.2
+805	8103	8	103	Rio Blanco County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	34.6	749.2	63670.8
+807	8103	8	103	Rio Blanco County, Colorado	23	Construction	23	29.0	188.8	11588.2
+808	8103	8	103	Rio Blanco County, Colorado	42	Wholesale trade	42	5.0	24.4	1638.4
+809	8103	8	103	Rio Blanco County, Colorado	51	Information	51	4.0	4.4	618.6
+810	8103	8	103	Rio Blanco County, Colorado	52	Finance and insurance	52	8.2	84.0	3802.2
+811	8103	8	103	Rio Blanco County, Colorado	53	Real estate and rental and leasing	53	8.2	9.2	252.2
+812	8103	8	103	Rio Blanco County, Colorado	54	Professional, scientific, and technical services	54	11.8	36.6	1212.4
+813	8103	8	103	Rio Blanco County, Colorado	56	Administrative and support and waste management and remediation services	56	5.6	22.8	1501.4
+814	8103	8	103	Rio Blanco County, Colorado	62	Health care and social assistance	62	10.8	85.4	4413.4
+815	8103	8	103	Rio Blanco County, Colorado	71	Arts, entertainment, and recreation	71	6.0	5.6	308.2
+816	8103	8	103	Rio Blanco County, Colorado	72	Accommodation and food services	72	25.8	184.6	3469.2
+817	8103	8	103	Rio Blanco County, Colorado	81	Other services (except public administration)	81	18.0	39.6	1075.0
+819	8105	8	105	Rio Grande County, Colorado	11	Agriculture, forestry, fishing and hunting	11	9.0	391.2	10637.2
+821	8105	8	105	Rio Grande County, Colorado	23	Construction	23	40.8	113.8	3425.0
+822	8105	8	105	Rio Grande County, Colorado	42	Wholesale trade	42	24.8	315.4	12431.6
+823	8105	8	105	Rio Grande County, Colorado	51	Information	51	7.0	26.8	852.8
+824	8105	8	105	Rio Grande County, Colorado	52	Finance and insurance	52	19.6	103.6	4791.4
+825	8105	8	105	Rio Grande County, Colorado	53	Real estate and rental and leasing	53	17.4	43.2	1396.8
+826	8105	8	105	Rio Grande County, Colorado	54	Professional, scientific, and technical services	54	26.6	57.6	2594.4
+827	8105	8	105	Rio Grande County, Colorado	56	Administrative and support and waste management and remediation services	56	8.0	34.4	1187.6
+828	8105	8	105	Rio Grande County, Colorado	62	Health care and social assistance	62	28.4	433.4	13179.0
+829	8105	8	105	Rio Grande County, Colorado	71	Arts, entertainment, and recreation	71	8.6	21.2	272.8
+830	8105	8	105	Rio Grande County, Colorado	72	Accommodation and food services	72	33.8	279.2	4431.4
+831	8105	8	105	Rio Grande County, Colorado	81	Other services (except public administration)	81	36.0	146.8	3734.2
+833	8107	8	107	Routt County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.2	0.0	32.4
+834	8107	8	107	Routt County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	9.2	145.4	11659.2
+835	8107	8	107	Routt County, Colorado	22	Utilities	22	3.8	29.8	2667.4
+836	8107	8	107	Routt County, Colorado	23	Construction	23	322.8	1212.8	132281.2
+837	8107	8	107	Routt County, Colorado	42	Wholesale trade	42	46.4	271.4	14914.8
+838	8107	8	107	Routt County, Colorado	51	Information	51	18.8	145.0	6935.0
+839	8107	8	107	Routt County, Colorado	52	Finance and insurance	52	50.0	248.6	17665.4
+840	8107	8	107	Routt County, Colorado	53	Real estate and rental and leasing	53	133.0	518.0	15003.4
+841	8107	8	107	Routt County, Colorado	54	Professional, scientific, and technical services	54	201.8	550.4	28292.0
+843	8107	8	107	Routt County, Colorado	56	Administrative and support and waste management and remediation services	56	101.0	641.6	46296.4
+844	8107	8	107	Routt County, Colorado	61	Educational services	61	19.8	259.2	5814.2
+845	8107	8	107	Routt County, Colorado	62	Health care and social assistance	62	126.4	1331.4	61234.4
+846	8107	8	107	Routt County, Colorado	71	Arts, entertainment, and recreation	71	49.4	426.6	8369.2
+847	8107	8	107	Routt County, Colorado	72	Accommodation and food services	72	158.0	5019.6	84113.2
+848	8107	8	107	Routt County, Colorado	81	Other services (except public administration)	81	110.8	541.8	15250.8
+853	8109	8	109	Saguache County, Colorado	23	Construction	23	19.2	36.0	1592.2
+854	8109	8	109	Saguache County, Colorado	42	Wholesale trade	42	11.2	264.8	9356.8
+855	8109	8	109	Saguache County, Colorado	51	Information	51	3.8	2.2	99.4
+856	8109	8	109	Saguache County, Colorado	52	Finance and insurance	52	2.6	4.6	123.0
+858	8109	8	109	Saguache County, Colorado	54	Professional, scientific, and technical services	54	8.2	3.8	459.4
+860	8109	8	109	Saguache County, Colorado	56	Administrative and support and waste management and remediation services	56	3.2	5.4	309.0
+861	8109	8	109	Saguache County, Colorado	61	Educational services	61	3.0	2.8	84.0
+862	8109	8	109	Saguache County, Colorado	62	Health care and social assistance	62	7.6	76.8	1918.0
+864	8109	8	109	Saguache County, Colorado	72	Accommodation and food services	72	6.2	33.4	436.8
+865	8109	8	109	Saguache County, Colorado	81	Other services (except public administration)	81	15.0	95.4	3441.2
+870	8111	8	111	San Juan County, Colorado	23	Construction	23	5.8	4.0	469.6
+871	8111	8	111	San Juan County, Colorado	53	Real estate and rental and leasing	53	2.8	2.8	35.0
+872	8111	8	111	San Juan County, Colorado	54	Professional, scientific, and technical services	54	4.0	5.2	114.0
+874	8111	8	111	San Juan County, Colorado	62	Health care and social assistance	62	3.2	11.8	134.2
+875	8111	8	111	San Juan County, Colorado	71	Arts, entertainment, and recreation	71	4.6	14.8	409.6
+876	8111	8	111	San Juan County, Colorado	72	Accommodation and food services	72	24.2	69.8	1601.4
+877	8111	8	111	San Juan County, Colorado	81	Other services (except public administration)	81	3.4	11.4	370.8
+880	8113	8	113	San Miguel County, Colorado	22	Utilities	22	3.0	12.6	1397.4
+881	8113	8	113	San Miguel County, Colorado	23	Construction	23	99.4	373.2	19947.0
+882	8113	8	113	San Miguel County, Colorado	42	Wholesale trade	42	8.2	11.0	888.8
+883	8113	8	113	San Miguel County, Colorado	51	Information	51	11.0	55.6	1842.2
+884	8113	8	113	San Miguel County, Colorado	52	Finance and insurance	52	18.2	27.6	4075.2
+885	8113	8	113	San Miguel County, Colorado	53	Real estate and rental and leasing	53	79.4	219.4	8906.4
+886	8113	8	113	San Miguel County, Colorado	54	Professional, scientific, and technical services	54	76.4	127.2	8043.8
+888	8113	8	113	San Miguel County, Colorado	56	Administrative and support and waste management and remediation services	56	40.6	158.6	6293.0
+889	8113	8	113	San Miguel County, Colorado	61	Educational services	61	11.6	110.0	3326.6
+890	8113	8	113	San Miguel County, Colorado	62	Health care and social assistance	62	28.2	146.4	5144.4
+891	8113	8	113	San Miguel County, Colorado	71	Arts, entertainment, and recreation	71	22.6	341.4	6697.8
+892	8113	8	113	San Miguel County, Colorado	72	Accommodation and food services	72	72.4	1588.2	35654.6
+893	8113	8	113	San Miguel County, Colorado	81	Other services (except public administration)	81	41.0	269.0	8666.6
+897	8115	8	115	Sedgwick County, Colorado	23	Construction	23	3.6	3.4	143.6
+898	8115	8	115	Sedgwick County, Colorado	42	Wholesale trade	42	5.8	33.6	1689.8
+899	8115	8	115	Sedgwick County, Colorado	51	Information	51	3.0	7.6	142.4
+900	8115	8	115	Sedgwick County, Colorado	52	Finance and insurance	52	4.0	9.8	445.8
+902	8115	8	115	Sedgwick County, Colorado	54	Professional, scientific, and technical services	54	4.8	6.6	269.8
+903	8115	8	115	Sedgwick County, Colorado	56	Administrative and support and waste management and remediation services	56	6.6	26.6	451.6
+906	8115	8	115	Sedgwick County, Colorado	72	Accommodation and food services	72	5.8	50.2	465.4
+907	8115	8	115	Sedgwick County, Colorado	81	Other services (except public administration)	81	8.0	10.8	336.4
+910	8117	8	117	Summit County, Colorado	22	Utilities	22	4.0	23.8	2399.2
+911	8117	8	117	Summit County, Colorado	23	Construction	23	352.4	854.8	47597.6
+912	8117	8	117	Summit County, Colorado	42	Wholesale trade	42	38.0	76.2	4105.2
+913	8117	8	117	Summit County, Colorado	51	Information	51	20.6	82.8	6129.6
+914	8117	8	117	Summit County, Colorado	52	Finance and insurance	52	54.2	240.4	15136.6
+915	8117	8	117	Summit County, Colorado	53	Real estate and rental and leasing	53	285.8	1038.0	42170.4
+916	8117	8	117	Summit County, Colorado	54	Professional, scientific, and technical services	54	262.4	627.8	37298.2
+917	8117	8	117	Summit County, Colorado	55	Management of companies and enterprises	55	5.2	60.2	3876.0
+918	8117	8	117	Summit County, Colorado	56	Administrative and support and waste management and remediation services	56	148.4	817.0	28921.2
+919	8117	8	117	Summit County, Colorado	61	Educational services	61	19.8	78.2	2913.8
+920	8117	8	117	Summit County, Colorado	62	Health care and social assistance	62	109.8	1006.2	51214.8
+921	8117	8	117	Summit County, Colorado	71	Arts, entertainment, and recreation	71	47.0	1707.2	31399.4
+922	8117	8	117	Summit County, Colorado	72	Accommodation and food services	72	261.8	6264.6	117124.6
+923	8117	8	117	Summit County, Colorado	81	Other services (except public administration)	81	143.8	520.2	14819.2
+925	8119	8	119	Teller County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.6	4.6	218.8
+927	8119	8	119	Teller County, Colorado	22	Utilities	22	6.0	13.6	911.8
+928	8119	8	119	Teller County, Colorado	23	Construction	23	104.4	218.6	7292.6
+929	8119	8	119	Teller County, Colorado	42	Wholesale trade	42	18.0	20.0	1107.6
+930	8119	8	119	Teller County, Colorado	51	Information	51	10.0	31.8	1537.2
+931	8119	8	119	Teller County, Colorado	52	Finance and insurance	52	37.2	155.8	6384.8
+932	8119	8	119	Teller County, Colorado	53	Real estate and rental and leasing	53	44.0	49.4	2591.2
+933	8119	8	119	Teller County, Colorado	54	Professional, scientific, and technical services	54	106.8	158.8	7592.0
+934	8119	8	119	Teller County, Colorado	56	Administrative and support and waste management and remediation services	56	36.0	139.6	4281.0
+936	8119	8	119	Teller County, Colorado	62	Health care and social assistance	62	58.2	428.4	16404.8
+937	8119	8	119	Teller County, Colorado	71	Arts, entertainment, and recreation	71	21.0	490.0	12485.2
+938	8119	8	119	Teller County, Colorado	72	Accommodation and food services	72	67.6	1616.6	37254.2
+939	8119	8	119	Teller County, Colorado	81	Other services (except public administration)	81	67.2	348.4	9744.6
+941	8121	8	121	Washington County, Colorado	11	Agriculture, forestry, fishing and hunting	11	3.8	2.4	153.6
+942	8121	8	121	Washington County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.2	2.4	50.6
+944	8121	8	121	Washington County, Colorado	23	Construction	23	9.2	8.4	662.8
+945	8121	8	121	Washington County, Colorado	42	Wholesale trade	42	6.4	35.4	2597.2
+946	8121	8	121	Washington County, Colorado	51	Information	51	3.0	4.2	184.4
+947	8121	8	121	Washington County, Colorado	52	Finance and insurance	52	9.2	14.6	594.2
+948	8121	8	121	Washington County, Colorado	53	Real estate and rental and leasing	53	2.2	2.8	29.4
+949	8121	8	121	Washington County, Colorado	54	Professional, scientific, and technical services	54	7.4	7.4	555.2
+950	8121	8	121	Washington County, Colorado	56	Administrative and support and waste management and remediation services	56	1.8	1.2	44.8
+951	8121	8	121	Washington County, Colorado	62	Health care and social assistance	62	7.0	37.4	828.0
+953	8121	8	121	Washington County, Colorado	72	Accommodation and food services	72	4.6	30.8	348.6
+954	8121	8	121	Washington County, Colorado	81	Other services (except public administration)	81	13.0	32.2	500.6
+956	8123	8	123	Weld County, Colorado	11	Agriculture, forestry, fishing and hunting	11	28.6	146.6	7407.8
+957	8123	8	123	Weld County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	139.6	4033.6	300915.6
+958	8123	8	123	Weld County, Colorado	22	Utilities	22	24.0	203.6	16704.6
+959	8123	8	123	Weld County, Colorado	23	Construction	23	829.4	9879.6	618274.2
+960	8123	8	123	Weld County, Colorado	42	Wholesale trade	42	296.0	3707.4	205461.0
+961	8123	8	123	Weld County, Colorado	51	Information	51	65.8	1247.8	44132.6
+962	8123	8	123	Weld County, Colorado	52	Finance and insurance	52	285.6	2800.4	190101.0
+963	8123	8	123	Weld County, Colorado	53	Real estate and rental and leasing	53	246.0	1104.2	46399.6
+964	8123	8	123	Weld County, Colorado	54	Professional, scientific, and technical services	54	570.2	2543.0	120027.4
+965	8123	8	123	Weld County, Colorado	55	Management of companies and enterprises	55	23.8	2443.4	217976.4
+966	8123	8	123	Weld County, Colorado	56	Administrative and support and waste management and remediation services	56	324.8	4478.4	156284.0
+967	8123	8	123	Weld County, Colorado	61	Educational services	61	57.4	560.6	13587.0
+968	8123	8	123	Weld County, Colorado	62	Health care and social assistance	62	453.8	8329.8	351792.4
+969	8123	8	123	Weld County, Colorado	71	Arts, entertainment, and recreation	71	77.0	696.0	12677.2
+970	8123	8	123	Weld County, Colorado	72	Accommodation and food services	72	424.2	6597.2	94839.8
+971	8123	8	123	Weld County, Colorado	81	Other services (except public administration)	81	485.6	3165.8	92963.0
+972	8123	8	123	Weld County, Colorado	99	Industries not classified	99	9.6	7.4	247.2
+973	8125	8	125	Yuma County, Colorado	11	Agriculture, forestry, fishing and hunting	11	7.0	89.6	1833.8
+974	8125	8	125	Yuma County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	10.4	197.0	11244.8
+976	8125	8	125	Yuma County, Colorado	23	Construction	23	34.8	97.8	3530.6
+977	8125	8	125	Yuma County, Colorado	42	Wholesale trade	42	30.8	248.4	14045.4
+978	8125	8	125	Yuma County, Colorado	51	Information	51	9.6	25.8	1503.0
+979	8125	8	125	Yuma County, Colorado	52	Finance and insurance	52	29.8	145.0	6999.6
+980	8125	8	125	Yuma County, Colorado	53	Real estate and rental and leasing	53	13.6	28.8	815.0
+981	8125	8	125	Yuma County, Colorado	54	Professional, scientific, and technical services	54	32.0	76.2	2544.2
+983	8125	8	125	Yuma County, Colorado	56	Administrative and support and waste management and remediation services	56	15.4	11.2	255.6
+985	8125	8	125	Yuma County, Colorado	62	Health care and social assistance	62	26.8	602.2	23656.2
+986	8125	8	125	Yuma County, Colorado	71	Arts, entertainment, and recreation	71	2.6	0.8	56.4
+987	8125	8	125	Yuma County, Colorado	72	Accommodation and food services	72	26.0	255.6	2730.0
+988	8125	8	125	Yuma County, Colorado	81	Other services (except public administration)	81	35.6	99.2	2401.6
+989	8125	8	125	Yuma County, Colorado	99	Industries not classified	99	4.0	1.6	23.4
+0	8003	8	3	Alamosa County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+1	8003	8	3	Alamosa County, Colorado	55	Management of companies and enterprises	55	3.0	159.79972857696785	17994.813105854988
+2	8003	8	3	Alamosa County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+3	8007	8	7	Archuleta County, Colorado	22	Utilities	22	2.0	31.6529442417926	4341.488275143304
+4	8007	8	7	Archuleta County, Colorado	55	Management of companies and enterprises	55	2.0	106.53315238464522	11996.542070569989
+5	8009	8	9	Baca County, Colorado	22	Utilities	22	1.0	15.8264721208963	2170.744137571652
+6	8009	8	9	Baca County, Colorado	51	Information	51	1.2	31.689213051823412	2601.1406525911707
+7	8009	8	9	Baca County, Colorado	56	Administrative and support and waste management and remediation services	56	1.0	27.334605305503196	1238.0996735782264
+8	8009	8	9	Baca County, Colorado	62	Health care and social assistance	62	4.8	87.48678075556991	4139.119323216016
+9	8009	8	9	Baca County, Colorado	71	Arts, entertainment, and recreation	71	1.0	19.766069546891465	596.402754779467
+10	8009	8	9	Baca County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+11	8011	8	11	Bent County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+12	8011	8	11	Bent County, Colorado	22	Utilities	22	3.0	47.479416362688895	6512.232412714955
+13	8011	8	11	Bent County, Colorado	51	Information	51	1.0	26.40767754318618	2167.6172104926422
+14	8011	8	11	Bent County, Colorado	53	Real estate and rental and leasing	53	1.0	4.187647420269172	189.4738260886801
+15	8011	8	11	Bent County, Colorado	56	Administrative and support and waste management and remediation services	56	2.4	65.60305273320766	2971.439216587743
+16	8011	8	11	Bent County, Colorado	71	Arts, entertainment, and recreation	71	1.6	31.625711275026347	954.2444076471473
+17	8014	8	14	Broomfield County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+18	8014	8	14	Broomfield County, Colorado	22	Utilities	22	1.0	15.8264721208963	2170.744137571652
+19	8015	8	15	Chaffee County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.0	10.495909376966644	370.02013845185644
+20	8015	8	15	Chaffee County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.2	67.81037126108524	7019.977032917482
+21	8015	8	15	Chaffee County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+22	8015	8	15	Chaffee County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+23	8017	8	17	Cheyenne County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.6	8.396727501573316	296.0161107614852
+24	8017	8	17	Cheyenne County, Colorado	53	Real estate and rental and leasing	53	2.0	8.375294840538343	378.9476521773602
+25	8017	8	17	Cheyenne County, Colorado	56	Administrative and support and waste management and remediation services	56	1.2	32.80152636660383	1485.7196082938715
+26	8017	8	17	Cheyenne County, Colorado	62	Health care and social assistance	62	1.4	25.516977720374555	1207.2431359380043
+27	8017	8	17	Cheyenne County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+28	8019	8	19	Clear Creek County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+29	8019	8	19	Clear Creek County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	4.8	101.71555689162784	10529.965549376222
+30	8019	8	19	Clear Creek County, Colorado	22	Utilities	22	4.0	63.3058884835852	8682.976550286608
+31	8019	8	19	Clear Creek County, Colorado	99	Industries not classified	99	1.2	0.7353233830845771	30.478606965174126
+32	8021	8	21	Conejos County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.2	11.545500314663311	407.02215229704217
+33	8021	8	21	Conejos County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.0	21.190741019089135	2193.742822786713
+34	8021	8	21	Conejos County, Colorado	22	Utilities	22	1.0	15.8264721208963	2170.744137571652
+35	8021	8	21	Conejos County, Colorado	51	Information	51	1.8	47.53381957773512	3901.7109788867565
+36	8021	8	21	Conejos County, Colorado	52	Finance and insurance	52	3.0	30.626405109125997	2473.502059168772
+37	8023	8	23	Costilla County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.0	10.495909376966644	370.02013845185644
+38	8023	8	23	Costilla County, Colorado	42	Wholesale trade	42	1.0	13.405089845151675	964.6081316072758
+39	8023	8	23	Costilla County, Colorado	51	Information	51	1.3333333333333333	35.21023672424824	2890.1562806568563
+40	8023	8	23	Costilla County, Colorado	52	Finance and insurance	52	1.0	10.208801703041997	824.5006863895907
+41	8023	8	23	Costilla County, Colorado	53	Real estate and rental and leasing	53	1.0	4.187647420269172	189.4738260886801
+42	8023	8	23	Costilla County, Colorado	56	Administrative and support and waste management and remediation services	56	2.0	54.66921061100639	2476.199347156453
+43	8023	8	23	Costilla County, Colorado	71	Arts, entertainment, and recreation	71	1.0	19.766069546891465	596.402754779467
+44	8025	8	25	Crowley County, Colorado	23	Construction	23	1.4	11.369944054423085	631.4220761488177
+45	8025	8	25	Crowley County, Colorado	42	Wholesale trade	42	1.0	13.405089845151675	964.6081316072758
+46	8025	8	25	Crowley County, Colorado	53	Real estate and rental and leasing	53	1.2	5.025176904323006	227.3685913064161
+47	8025	8	25	Crowley County, Colorado	56	Administrative and support and waste management and remediation services	56	1.0	27.334605305503196	1238.0996735782264
+48	8025	8	25	Crowley County, Colorado	72	Accommodation and food services	72	1.6	31.855579229317588	596.4486272599988
+49	8027	8	27	Custer County, Colorado	56	Administrative and support and waste management and remediation services	56	3.2	87.47073697761023	3961.9189554503246
+50	8027	8	27	Custer County, Colorado	71	Arts, entertainment, and recreation	71	2.4	47.43856691253952	1431.3666114707212
+51	8027	8	27	Custer County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+52	8029	8	29	Delta County, Colorado	55	Management of companies and enterprises	55	1.2	63.91989143078713	7197.925242341994
+53	8033	8	33	Dolores County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+54	8033	8	33	Dolores County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.2	25.42888922290696	2632.4913873440555
+55	8033	8	33	Dolores County, Colorado	51	Information	51	1.2	31.689213051823412	2601.1406525911707
+56	8033	8	33	Dolores County, Colorado	52	Finance and insurance	52	1.0	10.208801703041997	824.5006863895907
+57	8033	8	33	Dolores County, Colorado	56	Administrative and support and waste management and remediation services	56	2.0	54.66921061100639	2476.199347156453
+58	8033	8	33	Dolores County, Colorado	81	Other services (except public administration)	81	1.2	8.989293412120057	287.5823638949575
+59	8039	8	39	Elbert County, Colorado	55	Management of companies and enterprises	55	1.6	85.22652190771618	9597.233656455992
+60	8039	8	39	Elbert County, Colorado	99	Industries not classified	99	2.0	1.2255389718076286	50.79767827529022
+61	8043	8	43	Fremont County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.0	10.495909376966644	370.02013845185644
+62	8043	8	43	Fremont County, Colorado	55	Management of companies and enterprises	55	1.4	74.57320666925166	8397.579449398992
+63	8047	8	47	Gilpin County, Colorado	51	Information	51	1.4	36.97074856046065	3034.6640946896996
+64	8047	8	47	Gilpin County, Colorado	61	Educational services	61	1.0	19.68495803744351	616.5171078114913
+65	8049	8	49	Grand County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.6	76.2866676687209	7897.474162032167
+66	8049	8	49	Grand County, Colorado	99	Industries not classified	99	1.4	0.8578772802653399	35.55837479270315
+67	8051	8	51	Gunnison County, Colorado	22	Utilities	22	4.0	63.3058884835852	8682.976550286608
+68	8051	8	51	Gunnison County, Colorado	55	Management of companies and enterprises	55	2.4	127.83978286157426	14395.850484683988
+69	8051	8	51	Gunnison County, Colorado	99	Industries not classified	99	1.25	0.7659618573797679	31.748548922056383
+70	8053	8	53	Hinsdale County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	2.0	42.38148203817827	4387.485645573426
+71	8053	8	53	Hinsdale County, Colorado	42	Wholesale trade	42	1.0	13.405089845151675	964.6081316072758
+72	8053	8	53	Hinsdale County, Colorado	52	Finance and insurance	52	1.6	16.334082724867198	1319.201098223345
+73	8053	8	53	Hinsdale County, Colorado	54	Professional, scientific, and technical services	54	1.8	13.584282434536902	1119.6833865814697
+74	8053	8	53	Hinsdale County, Colorado	62	Health care and social assistance	62	1.0	18.226412657410396	862.3165256700033
+75	8055	8	55	Huerfano County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.4	29.667037426724786	3071.239951901398
+76	8055	8	55	Huerfano County, Colorado	22	Utilities	22	2.4	37.98353309015112	5209.7859301719645
+77	8055	8	55	Huerfano County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+78	8055	8	55	Huerfano County, Colorado	56	Administrative and support and waste management and remediation services	56	1.4	38.26844742770447	1733.339543009517
+79	8055	8	55	Huerfano County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+80	8057	8	57	Jackson County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.2	25.42888922290696	2632.4913873440555
+81	8057	8	57	Jackson County, Colorado	22	Utilities	22	2.0	31.6529442417926	4341.488275143304
+82	8057	8	57	Jackson County, Colorado	42	Wholesale trade	42	1.4	18.767125783212343	1350.451384250186
+83	8057	8	57	Jackson County, Colorado	51	Information	51	2.2	58.0968905950096	4768.757863083814
+84	8057	8	57	Jackson County, Colorado	52	Finance and insurance	52	1.4	14.292322384258798	1154.3009609454268
+85	8057	8	57	Jackson County, Colorado	53	Real estate and rental and leasing	53	1.25	5.234559275336465	236.84228261085013
+86	8057	8	57	Jackson County, Colorado	56	Administrative and support and waste management and remediation services	56	1.8	49.20228954990576	2228.5794124408076
+87	8061	8	61	Kiowa County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.4	7.347136563876651	259.01409691629954
+88	8061	8	61	Kiowa County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.8	38.14333383436045	3948.7370810160837
+89	8061	8	61	Kiowa County, Colorado	22	Utilities	22	1.0	15.8264721208963	2170.744137571652
+90	8061	8	61	Kiowa County, Colorado	23	Construction	23	1.0	8.121388610302203	451.0157686777269
+91	8061	8	61	Kiowa County, Colorado	51	Information	51	1.0	26.40767754318618	2167.6172104926422
+92	8061	8	61	Kiowa County, Colorado	52	Finance and insurance	52	2.0	20.417603406083995	1649.0013727791813
+93	8061	8	61	Kiowa County, Colorado	54	Professional, scientific, and technical services	54	2.0	15.093647149485449	1244.0926517571886
+94	8061	8	61	Kiowa County, Colorado	62	Health care and social assistance	62	2.8	51.03395544074911	2414.4862718760087
+95	8061	8	61	Kiowa County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+96	8063	8	63	Kit Carson County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+97	8065	8	65	Lake County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+98	8065	8	65	Lake County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.8	38.14333383436045	3948.7370810160837
+99	8065	8	65	Lake County, Colorado	22	Utilities	22	1.0	15.8264721208963	2170.744137571652
+100	8071	8	71	Las Animas County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+101	8071	8	71	Las Animas County, Colorado	22	Utilities	22	2.6	41.14882751433038	5643.934757686295
+102	8071	8	71	Las Animas County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+103	8073	8	73	Lincoln County, Colorado	11	Agriculture, forestry, fishing and hunting	11	3.8	19.942227816236624	703.0382630585273
+104	8073	8	73	Lincoln County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	2.0	42.38148203817827	4387.485645573426
+105	8073	8	73	Lincoln County, Colorado	42	Wholesale trade	42	1.2	16.086107814182007	1157.529757928731
+106	8073	8	73	Lincoln County, Colorado	51	Information	51	2.4	63.378426103646824	5202.281305182341
+107	8073	8	73	Lincoln County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+108	8073	8	73	Lincoln County, Colorado	56	Administrative and support and waste management and remediation services	56	1.25	34.16825663187899	1547.6245919727828
+109	8073	8	73	Lincoln County, Colorado	71	Arts, entertainment, and recreation	71	1.0	19.766069546891465	596.402754779467
+110	8073	8	73	Lincoln County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+111	8075	8	75	Logan County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+112	8075	8	75	Logan County, Colorado	61	Educational services	61	1.0	19.68495803744351	616.5171078114913
+113	8075	8	75	Logan County, Colorado	99	Industries not classified	99	2.0	1.2255389718076286	50.79767827529022
+114	8079	8	79	Mineral County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.0	21.190741019089135	2193.742822786713
+115	8079	8	79	Mineral County, Colorado	42	Wholesale trade	42	1.0	13.405089845151675	964.6081316072758
+116	8079	8	79	Mineral County, Colorado	51	Information	51	1.0	26.40767754318618	2167.6172104926422
+117	8079	8	79	Mineral County, Colorado	52	Finance and insurance	52	1.8	18.375843065475596	1484.1012355012633
+118	8079	8	79	Mineral County, Colorado	56	Administrative and support and waste management and remediation services	56	1.0	27.334605305503196	1238.0996735782264
+119	8079	8	79	Mineral County, Colorado	62	Health care and social assistance	62	2.0	36.45282531482079	1724.6330513400067
+120	8079	8	79	Mineral County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+121	8081	8	81	Moffat County, Colorado	22	Utilities	22	4.0	63.3058884835852	8682.976550286608
+122	8081	8	81	Moffat County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+123	8083	8	83	Montezuma County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+124	8083	8	83	Montezuma County, Colorado	99	Industries not classified	99	1.4	0.8578772802653399	35.55837479270315
+125	8085	8	85	Montrose County, Colorado	99	Industries not classified	99	1.6666666666666667	1.0212824765063573	42.331398562741846
+126	8087	8	87	Morgan County, Colorado	55	Management of companies and enterprises	55	2.0	106.53315238464522	11996.542070569989
+127	8087	8	87	Morgan County, Colorado	61	Educational services	61	1.4	27.55894125242091	863.1239509360877
+128	8087	8	87	Morgan County, Colorado	99	Industries not classified	99	1.4	0.8578772802653399	35.55837479270315
+129	8089	8	89	Otero County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.0	21.190741019089135	2193.742822786713
+130	8091	8	91	Ouray County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.8	38.14333383436045	3948.7370810160837
+131	8091	8	91	Ouray County, Colorado	42	Wholesale trade	42	2.2	29.491197659333686	2122.137889536007
+132	8091	8	91	Ouray County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+133	8093	8	93	Park County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	2.0	42.38148203817827	4387.485645573426
+134	8093	8	93	Park County, Colorado	55	Management of companies and enterprises	55	2.2	117.18646762310975	13196.196277626988
+135	8093	8	93	Park County, Colorado	99	Industries not classified	99	1.2	0.7353233830845771	30.478606965174126
+136	8095	8	95	Phillips County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.2	25.42888922290696	2632.4913873440555
+137	8095	8	95	Phillips County, Colorado	22	Utilities	22	2.0	31.6529442417926	4341.488275143304
+138	8095	8	95	Phillips County, Colorado	53	Real estate and rental and leasing	53	2.2	9.212824324592178	416.8424173950962
+139	8095	8	95	Phillips County, Colorado	56	Administrative and support and waste management and remediation services	56	1.0	27.334605305503196	1238.0996735782264
+140	8095	8	95	Phillips County, Colorado	61	Educational services	61	1.0	19.68495803744351	616.5171078114913
+141	8095	8	95	Phillips County, Colorado	71	Arts, entertainment, and recreation	71	2.2	43.48535300316123	1312.0860605148278
+142	8097	8	97	Pitkin County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	2.2	46.6196302419961	4826.2342101307695
+143	8097	8	97	Pitkin County, Colorado	22	Utilities	22	2.0	31.6529442417926	4341.488275143304
+144	8099	8	99	Prowers County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	3.0	63.57222305726741	6581.228468360139
+145	8099	8	99	Prowers County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+146	8099	8	99	Prowers County, Colorado	61	Educational services	61	1.25	24.60619754680439	770.6463847643641
+147	8099	8	99	Prowers County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+148	8103	8	103	Rio Blanco County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.4	7.347136563876651	259.01409691629954
+149	8103	8	103	Rio Blanco County, Colorado	22	Utilities	22	2.2	34.81823866597186	4775.637102657634
+150	8103	8	103	Rio Blanco County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+151	8105	8	105	Rio Grande County, Colorado	22	Utilities	22	4.8	75.96706618030224	10419.571860343929
+152	8105	8	105	Rio Grande County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+153	8107	8	107	Routt County, Colorado	55	Management of companies and enterprises	55	1.8	95.8798371461807	10796.887863512991
+154	8107	8	107	Routt County, Colorado	99	Industries not classified	99	1.25	0.7659618573797679	31.748548922056383
+155	8109	8	109	Saguache County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+156	8109	8	109	Saguache County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.2	25.42888922290696	2632.4913873440555
+157	8109	8	109	Saguache County, Colorado	22	Utilities	22	1.2	18.99176654507556	2604.8929650859823
+158	8109	8	109	Saguache County, Colorado	53	Real estate and rental and leasing	53	1.3333333333333333	5.583529893692228	252.6317681182401
+159	8109	8	109	Saguache County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+160	8109	8	109	Saguache County, Colorado	71	Arts, entertainment, and recreation	71	2.2	43.48535300316123	1312.0860605148278
+161	8109	8	109	Saguache County, Colorado	99	Industries not classified	99	1.6666666666666667	1.0212824765063573	42.331398562741846
+162	8111	8	111	San Juan County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+163	8111	8	111	San Juan County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.0	21.190741019089135	2193.742822786713
+164	8111	8	111	San Juan County, Colorado	22	Utilities	22	1.0	15.8264721208963	2170.744137571652
+165	8111	8	111	San Juan County, Colorado	56	Administrative and support and waste management and remediation services	56	1.0	27.334605305503196	1238.0996735782264
+166	8113	8	113	San Miguel County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.5	13.119886721208305	462.5251730648206
+167	8113	8	113	San Miguel County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	1.0	21.190741019089135	2193.742822786713
+168	8113	8	113	San Miguel County, Colorado	55	Management of companies and enterprises	55	2.2	117.18646762310975	13196.196277626988
+169	8113	8	113	San Miguel County, Colorado	99	Industries not classified	99	1.5	0.9191542288557215	38.09825870646766
+170	8115	8	115	Sedgwick County, Colorado	11	Agriculture, forestry, fishing and hunting	11	1.0	5.247954688483322	185.01006922592822
+171	8115	8	115	Sedgwick County, Colorado	22	Utilities	22	2.0	31.6529442417926	4341.488275143304
+172	8115	8	115	Sedgwick County, Colorado	53	Real estate and rental and leasing	53	1.0	4.187647420269172	189.4738260886801
+173	8115	8	115	Sedgwick County, Colorado	62	Health care and social assistance	62	5.0	91.13206328705198	4311.582628350016
+174	8115	8	115	Sedgwick County, Colorado	71	Arts, entertainment, and recreation	71	1.0	19.766069546891465	596.402754779467
+175	8115	8	115	Sedgwick County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+176	8117	8	117	Summit County, Colorado	11	Agriculture, forestry, fishing and hunting	11	2.0	10.495909376966644	370.02013845185644
+177	8117	8	117	Summit County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+178	8119	8	119	Teller County, Colorado	21	Mining, quarrying, and oil and gas extraction	21	4.4	93.2392604839922	9652.468420261539
+179	8119	8	119	Teller County, Colorado	61	Educational services	61	4.4	86.61381536475145	2712.6752743705615
+180	8119	8	119	Teller County, Colorado	99	Industries not classified	99	1.0	0.6127694859038143	25.39883913764511
+181	8121	8	121	Washington County, Colorado	22	Utilities	22	2.0	31.6529442417926	4341.488275143304
+182	8121	8	121	Washington County, Colorado	71	Arts, entertainment, and recreation	71	1.4	27.67249736564805	834.9638566912538
+183	8121	8	121	Washington County, Colorado	99	Industries not classified	99	1.5	0.9191542288557215	38.09825870646766
+184	8125	8	125	Yuma County, Colorado	22	Utilities	22	2.0	31.6529442417926	4341.488275143304
+185	8125	8	125	Yuma County, Colorado	55	Management of companies and enterprises	55	1.0	53.26657619232261	5998.2710352849945
+186	8125	8	125	Yuma County, Colorado	61	Educational services	61	1.0	19.68495803744351	616.5171078114913
