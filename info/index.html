@@ -291,12 +291,10 @@ function go(go) {
 	          <option value="6" selected>National Code - 6 digits</option>
 	        </select>
 	        <select id="catmethod" class="picklist" onchange="updateHash({'catmethod':this.value});refreshWidgets();">
-	          <option value="0" selected>Unaltered</option>
-	          <!--option value="2">Subsectors - 3 digits</option-->
+	          <option value="0">Unaltered</option>
 	          <option value="1">Estimated-v1</option>
-	          <!--option value="4">NAICS Industry - 5 digits</option-->
-	          <option value="2">Estimated-v2</option>
-	          <option value="3">Estimated-v3</option>
+	          <option value="2" class="local" style="display:none">Estimated-v2</option>
+	          <option value="3" selected>Estimated-v3</option>
 	        </select>
 		</div>
 		<br>
