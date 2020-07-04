@@ -88,9 +88,6 @@ html a {
   text-decoration:none;
   color: #0366d6;
 }
-html a:hover {
-  text-decoration:underline;
-}
 h1,h2,h3,h4 {
   line-height: 1.5;
 }
@@ -109,12 +106,10 @@ h1 {
 h2 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
+  margin-top: 30px;
 }
 h2 a:visited {
   color: #0366d6;
-}
-h2 {
-  margin-top: 30px;
 }
 h3 {
   margin-top: 20px;
@@ -220,8 +215,6 @@ select {
 .content {
   max-width: 1140px;
   margin:0 auto;
-  padding-leftX: 60px;
-  padding-rightX: 60px;
   font-size: 15px;
   line-height: 1.5;
   position: relative;
@@ -837,4 +830,12 @@ h1 {
   .hideprint {
     display:none;
   }
+}
+
+#footer {
+  position: relative;
+  background-color: #cdc;
+  clear:both;
+  z-index: 1000;
+  padding-bottom:25px;
 }

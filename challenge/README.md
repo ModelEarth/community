@@ -61,4 +61,4 @@ https://databricks.com/blog/2020/04/22/announcing-spark-ai-summit-hackathon-for-
 
 ---
 <a href="registration/">Register to participate</a> | 
-<a href="../">More details</a>  
+<a href="../">Project details</a>  

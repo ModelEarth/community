@@ -1,6 +1,6 @@
 # USEEIO API
 
-View [R Language](../../../io/projects) starter steps in the Bioeconomy Planner section.  
+View [R Language](../../../io/projects) starter steps in the Industrial Ecology section.  
 
 ## Python Example
 
