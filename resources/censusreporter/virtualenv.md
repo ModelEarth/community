@@ -258,6 +258,21 @@ https://packaging.python.org/guides/installing-using-pip-and-virtual-environment
 
 	python -m virtualenv yourenv -p python2.7
 
+
+For Census Reporter Python 2.0
+
+If zsh: shell on your newer computer does not recognize virtualenv, try:
+
+	python -m venv census
+	source census/usr/local/bin/activate
+
+	source ~/Documents/census/bin/activate
+
+Ran line above twise and pytest-cov no longer occurred.  
+
+Didn't get the above working yet.  
+
+
 Activate the new virtualenv:
 
 	source ~/Documents/mytest/yourenv/bin/activate

@@ -1,8 +1,10 @@
-# Getting Started
+# Start a local website   
 
-Steps for creating a static site using markdown and GitHub Pages with free hosting.  
+Whether on your local machine, or for your local community, these steps will get you rolling.  
 
-## 1. Start a local webroot  
+You'll learn how to create a static site using markdown to edit and GitHub Pages for free hosting.  
+
+## 1. Start a localhost server on your computer
 
 Go to the folder where you'd like your webroot to reside and run the following to view pages on localhost:
 
@@ -16,36 +18,25 @@ You'll need to run this command to start localhost whenever you restart your com
 
  Alternatively, you can install [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to view and develop pages offline using https://localhost:8777 on your computer. Web Server for Chrome also allows you to [load a custom domain](https://medium.com/@jmatix/using-chrome-as-a-local-web-server-af04baffd581). Web Server for Chrome does not work as a Brave browser extension on Mac (as of December 2019), but you can add as a Chrome extension, then utilize from within Brave.
 
-## 2. Clone repo into your webroot 
+## 2. Clone the "localsite" repo into your webroot 
 
-Go to the <a href='https://github.com/modelearth/community'>community</a> repo and click "clone or download"
+Go to the <a href='https://github.com/localsite/localsite/'>localsite</a> repo and click "Code"
 
-Choose "Open in Desktop" to use <a href="https://desktop.github.com/">GitHub Desktop</a>, an easy way to deploy your changes.  
+Choose "Open with Github Desktop" to pull down using <a href="https://desktop.github.com/">GitHub Desktop</a>.  
 
 Save the file in the webroot folder you created in step 1.  
 
-The static site should now be visible at [http://localhost:8887/community/](http://localhost:8887/community/)
-
-<!--
-Clone the repo if you are already a collaborator. Otherwise, fork the repo to submit changes.  
--->
-
-## 3. Add additional repos inside your webroot (for summer interns) 
-
-Repeat step 2 above for the following repos:  
+A static page should now be visible at [http://localhost:8887/localsite/](http://localhost:8887/localsite/)
 
 
-- <a href='https://github.com/modelearth/io'>io</a> - Embeddable charts
-- <a href='https://github.com/modelearth/useeio-widgets'>useeio-widgets</a> - NodeJS build for charts  
+React developers: You can also clone the 
+<a href='https://github.com/modelearth/useeio-widgets'>useeio-widgets</a> repo to edit the widget code directly. 
+[Learn more](../../../io/charts/)  
+We also encurage you to help us maintain the <a href='https://github.com/modelearth/community/'>community</a> and <a href='https://github.com/modelearth/io/'>io</a> repos.
 
+## 3. Deploy your updates
 
-The static IO charts should now be visible at [http://localhost:8887/io/charts/useeio](../../../io/charts/useeio)  
-
-[Steps for building the charts using NodeJS](../../../io/charts/)
-
-## 4. Deploy your updates
-
-Deploy your updates using GitHub. If you are not a project collaborator, GitHub Desktop will prompt you to create a project fork on GitHub. After doing so, place a pull request when your updates are ready for review.  
+Deploy your updates using GitHub. If you are not a project collaborator, GitHub Desktop will prompt you to create a project fork on GitHub. Place a pull request when your updates are ready for review.  
 
 <!--
 - <a href='https://github.com/modelearth/io'>io</a> - overview
@@ -91,7 +82,7 @@ You can toggle hidden file viewing using Command+Shift+Dot, .DS_Store will not b
 To fix a conflict you may need delete the .DS_Store within the Github.com website.  
 
 
-## 5. Activate your website
+## 4. Activate your website
 
 ### How to host multiple repos in one site using Github Pages - without using subdomains
 
@@ -105,7 +96,7 @@ To fix a conflict you may need delete the .DS_Store within the Github.com websit
 <!-- note, when setting up the prior neighborhood folder was renamed to [github username].github.io -->
 
 
-## 6. Update your forked repos
+## 5. Update your forked repos
 
 ### Occasionally merge in updates from the master (source) repo by doing a "pull request"
 
