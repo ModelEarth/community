@@ -1,8 +1,10 @@
-<h1 class="h1-home">Web Challenge Projects&nbsp;</h1>
+<h1 class="h1-home">Web Challenge Projects - Fall 2020&nbsp;</h1>
 
-Choose an area below to compete for $10,000 in awards. Register for our [Fall 2020 Virtual Event](challenge/). 
+Choose an area below to compete for $10,000 in awards in our [Fall 2020 Virtual Event](challenge/).  Winning entries will use the USEEIO Widgets and USEEIO API JSON to create LifeCycle Analysis tools for 24 environmental indicators in close to 400 industries. Entries should be easy to integrate with other projects. Please avoid using CMS content systems like Wix and WordPress.  
 
-Winning entries will use the USEEIO Widgets and/or USEEIO APIs effectively, and should be easy to integrate with other projects. Please avoid using CMS content systems like Wix or WordPress.  
+<h2>What do you think?</h2>
+
+<h3>Project Ideas</h3>
 
 1. A collection of [EE Input-Output chart widgets](https://modelearth.github.io/io/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Chart widgets are loaded from JSON files generated from 
 our [API endpoints on AWS](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
@@ -11,6 +13,8 @@ our [API endpoints on AWS](https://s3.amazonaws.com/useeio-api-go-swagger-stagin
 
 3. [Maps of products and industries](start/maps) - Regional hubs, industries by zipcode.  
 
+<h4>More Ideas</h4>
+
 4. [Visualizations](start/charts/) of material flow and regional input-output.  
 
 5. [Google Sheet Editor](https://neighborhood.org/editor) for local and state datasets.
@@ -18,6 +22,10 @@ our [API endpoints on AWS](https://s3.amazonaws.com/useeio-api-go-swagger-stagin
 1. Preprocess data from the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
+
+<h5>And such</h5>
+
+<h6>Some small text?</h6>
 
 1. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
 
