@@ -26,13 +26,14 @@ Choose "Open with Github Desktop" to pull down using <a href="https://desktop.gi
 
 Save the file in the webroot folder you created in step 1.  
 
-A static page should now be visible at [http://localhost:8887/localsite/](http://localhost:8887/localsite/)
+A static page should now be visible at [http://localhost:8887/localsite/](http://localhost:8887/localsite/)  
+An industry impact widget is embedded on the page.  
 
 
-React developers: You can also clone the 
+React developers: You might also want to clone the 
 <a href='https://github.com/modelearth/useeio-widgets'>useeio-widgets</a> repo to edit the widget code directly. 
 [Learn more](../../../io/charts/)  
-We also encurage you to help us maintain the <a href='https://github.com/modelearth/community/'>community</a> and <a href='https://github.com/modelearth/io/'>io</a> repos.
+We also encourage you to help us maintain the <a href='https://github.com/modelearth/community/'>community</a> and <a href='https://github.com/modelearth/io/'>io</a> repos.
 
 ## 3. Deploy your updates
 
