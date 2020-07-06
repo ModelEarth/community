@@ -41,7 +41,7 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 
 ### Fall 2020
 
-<a href="https://model.earth/community/challenge" style="font-size:18px">2020 Sustainable Communities Web Challenge</a> - $10,000 in awards!  
+<a href="https://model.earth/community/challenge" style="font-size:18px">2020 Sustainable Communities Web Challenge</a>  
 
 <!--
 Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
@@ -52,7 +52,7 @@ Teams will collaborate using one or more of the following:
 <b>Detached Frontends</b>
 - Vanilla JS and JQuery within the current [community repo](start)
 - [RealWorld](https://neighborhood.org/realworld) - React, Vue, More  
-- Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) - React and D3
+
 - Extensions of [datausa.io](https://datausa.io) - Python, React and D3
 - Other detached frontends  
 
