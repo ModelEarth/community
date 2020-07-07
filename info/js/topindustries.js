@@ -150,8 +150,10 @@ function ready(values) {
     $(document).ready(function() {
         //code for what happens when you choose the state and county from drop down
         d3.selectAll(".picklist").on("change",function(){
+            
             renderIndustryChart(dataObject,values,params);
             geoChanged(dataObject)
+            
         });
         
         document.getElementById("clearButton").addEventListener("click", function(){
@@ -853,9 +855,3 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value)
 }
-
-
-
-
-
-
