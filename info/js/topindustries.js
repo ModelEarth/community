@@ -151,6 +151,7 @@ function ready(values) {
         //code for what happens when you choose the state and county from drop down
         d3.selectAll(".picklist").on("change",function(){
             renderIndustryChart(dataObject,values,params);
+            geoChanged(dataObject)
         });
         
         document.getElementById("clearButton").addEventListener("click", function(){
