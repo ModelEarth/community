@@ -42,8 +42,9 @@ $(document).ready(function(){
  	for (var i = 0; i < climbcount; i++) {
  		climbpath += "../";
  	}
-
-
+ 	if (climbpath == "") {
+ 		climbpath += "./"; // Eliminates ? portion of URL
+ 	}
  	if (param["showheader"] != "false") {
  		if (param["showhero"] != "false") {
 	 		if(location.host.indexOf('model.georgia') >= 0) { 
