@@ -49,9 +49,10 @@ $.getJSON(url, function (data) {
 
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
-var margin = {top: 20, right: 100, bottom: 40, left: 50};
+var margin = {top: 20, right: 150, bottom: 40, left: 50};
 
-var width = $(parentId).width()- margin.left - margin.right,
+//var width = $(parentId).width()- margin.left - margin.right,
+var width = 1300- margin.left - margin.right,    
     height = 350  - margin.top - margin.bottom;
 
 var xScale = d3.scaleLog()
