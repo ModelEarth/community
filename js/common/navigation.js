@@ -90,7 +90,7 @@ $(document).ready(function(){
 		 		$('.georgia').css('display', 'inline');
 		 	} else if(location.host.indexOf('neighborhood') >= 0) {
 		 		$(".siteTitleShort").text("Model Building");
-		 		$('#logoholder').html("<a href='/'><img style='height: 25px;margin: 30px 10px 4px 10px;' src='" + climbpath + "../localsite/img/logo/neighborhood.png' style='width:140px;padding-top:4px'></a>");
+		 		$('#logoholder').html("<a href='/'><img style='height: 25px;margin: 30px 10px 4px 10px;' src='" + climbpath + "../localsite/img/logo/favicon.png' style='width:140px;padding-top:4px'></a>");
 		 		$('.headerbar').css('height', '80px');
 		 		$('.headerOffsetOne').css('height', '80px');
 		 		$('.headerbarheight').css('height', '80px');
