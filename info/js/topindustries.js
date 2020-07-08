@@ -18,9 +18,9 @@ var promises = [
     d3.tsv("data/usa/GA/industries_state13_naics2_est1.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics4_est1.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6_est1.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics2_est2.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics4_est2.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics6_est2.tsv"),
+    //d3.tsv("data/usa/GA/industries_state13_naics2_est2.tsv"),
+    //d3.tsv("data/usa/GA/industries_state13_naics4_est2.tsv"),
+    //d3.tsv("data/usa/GA/industries_state13_naics6_est2.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics2_est3.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics4_est3.tsv"),
     d3.tsv("data/usa/GA/industries_state13_naics6_est3.tsv"),
@@ -51,21 +51,8 @@ function ready(values) {
                 'ActualRate': formatIndustryData(values[14]),
             }
         }
+    
     }else if(d3.select("#catmethod").node().value==2){
-        if (d3.select("#catsize").node().value==2){
-            industryData = {
-                'ActualRate': formatIndustryData(values[15]),
-            }
-        }else if(d3.select("#catsize").node().value==4){
-            industryData = {
-                'ActualRate': formatIndustryData(values[16]),
-            }
-        }else if(d3.select("#catsize").node().value==6){
-            industryData = {
-                'ActualRate': formatIndustryData(values[17]),
-            }
-        }
-    }else if(d3.select("#catmethod").node().value==3){
         if (d3.select("#catsize").node().value==2){
             industryData = {
                 'ActualRate': formatIndustryData(values[18]),
@@ -817,7 +804,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
             for(var i=0; i<fipslen; i++){
                 var filteredData = consdata.filter(function(d) {
                     if(d["id"]==fips[i]){
-                        $(".regiontitle").text("Industries in "+fipslen+" counties");
+                        $(".regiontitle").text("Industries within "+fipslen+" counties");
                         /*
                         if(i==fipslen-1){
                             document.getElementById("industryheader").innerHTML=document.getElementById("industryheader").innerHTML+'<font size="3">'+d["county"]+'</font>'
