@@ -38,6 +38,12 @@
 
 <style>
 /* Temp overrides */
+
+.includedContent {
+  max-width: 1300px;
+  margin:0 auto;
+
+}
 .mock-up {
 	displayX: inline-block !important;
 }
@@ -294,8 +300,7 @@ function go(go) {
 	        <select id="catmethod" class="picklist" onchange="updateHash({'catmethod':this.value});refreshWidgets();">
 	          <option value="0">Unaltered</option>
 	          <option value="1">Estimated-v1</option>
-	          <option value="2" class="local" style="display:none">Estimated-v2</option>
-	          <option value="3" selected>Estimated-v3</option>
+	          <option value="2" selected>Estimated-v2</option>
 	        </select>
 		</div>
 		<br>
@@ -573,7 +578,7 @@ Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
 To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
-<div class="content contentpadding">
+<div class="includedContent">
 	<h2>Industry Comparison</h2>
 	<div id="includedContent"></div>
 </div>
