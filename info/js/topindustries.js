@@ -152,7 +152,7 @@ function ready(values) {
         d3.selectAll(".picklist").on("change",function(){
             
             renderIndustryChart(dataObject,values,params);
-            geoChanged(dataObject)
+            
             
         });
         
@@ -203,6 +203,7 @@ function ready(values) {
 
 
 function renderIndustryChart(dataObject,values,params) {
+
     if(d3.select("#catmethod").node().value==0){
         industryData = {
             'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
@@ -298,7 +299,7 @@ function renderIndustryChart(dataObject,values,params) {
         fips = "state";
     }
 
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
+    geoChanged(dataObject);
         
 }
 
