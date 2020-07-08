@@ -122,6 +122,16 @@ $(document).ready(function(){
 		 	if (param.titleArray) {
 		 		$('#headerSiteTitle').html("<span style='float:left'><a href='" + climbpath + "' style='text-decoration:none'><span style='color: #777;'>" + param.titleArray[0] + "</span><span style='color:#bbb;margin-left:1px'>" + param.titleArray[1] + "</span></a></span>");
 		 	}
+		 	if (param.favicon) {
+		 		imageUrl = climbpath + ".." + param.favicon;
+		 		//$('#logoholderside').css('width', '40px');
+		 		//$('#logoholderside').css('height', '40px');
+		 		$('.logoholder-modelearth').css('width', '40px');
+		 		$('.logoholder-modelearth').css('height', '40px');
+		 		$('.logoholder-modelearth').css('margin-top', '7px');
+		 		$('.logoholder-modelearth').css('margin-right', '20px');
+		 	}
+
 		 	$('#logoholder').css('background-image', 'url(' + imageUrl + ')');
 			$('#logoholder').css('background-repeat', 'no-repeat');
 
