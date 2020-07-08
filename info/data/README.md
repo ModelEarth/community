@@ -3,6 +3,7 @@
 The census does not publish payroll values for counties with only 1 or 2 establishments, but they provide these as aggregates in the state total. To estimate payrolls and employee based on the number of establishments we provide two options:  
 1. Average of unpublished payrolls  
 2. Average of total state payroll  
+
 Option 1 dispersals should accurately add up to the state total, while pulling their average from other counties with a similar low concentration of an industry. Example:
 With option 1 “Temporary Help Services” is five times higher (at $17.76 mil) for McDuffie County because counties with only a couple firms tend to have large payrolls as the sole provider of a local service.  
 With option 2, the level is low ($4.92 mil) because overall counties with more than a couple services have smaller payrolls per establishment.  
