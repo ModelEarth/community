@@ -161,6 +161,3 @@ Stop dejango site
 When you're done with the virtual environment
 
 	deactivate
-
-
-<br><br>
