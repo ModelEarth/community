@@ -1,20 +1,6 @@
-// Call from end of page. Every browser then waits for doc ready, without using JQuery.
-//loadMarkdown("README.md", "readmeDiv", "_parent");
-
-
-// Resides in common.js
-//function loadMarkdown(pagePath, divID, target) {
-//  d3.text(pagePath).then(function(data) {
-//    var converter = new showdown.Converter({tables:true}),
-//    html = converter.makeHtml(data);
-//    document.getElementById(divID).innerHTML = html;
-//  });
-//}
-
 if (window.location.protocol != 'https:' && location.host.indexOf('localhost') < 0) {
 	location.href = location.href.replace("http://", "https://");
 }
-
 var imageUrl, imageUrlSide;
 $(document).ready(function(){
 
@@ -29,7 +15,6 @@ $(document).ready(function(){
 	        html: '<style>.local{display:none}.localonly{display:none}</style>'
 	      }).appendTo("body");
 	  }
-
 
 	// Get the levels below root
  	var foldercount = (location.pathname.split('/').length - 1); // - (location.pathname[location.pathname.length - 1] == '/' ? 1 : 0) // Removed because ending with slash or filename does not effect levels. Increased -1 to -2.
@@ -52,8 +37,7 @@ $(document).ready(function(){
 		 	}
 		 }
 	 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
-	 	if(document.getElementById("sidecolumn") == null)
-		{
+	 	if(document.getElementById("sidecolumn") == null) {
 	 		$("body").prepend( "<div id='sidecolumn' class='hideprint'></div>\r" );
 	 	}
 	 	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
@@ -172,8 +156,9 @@ $(document).ready(function(){
 			});
 
 		});
-
-		$("body").append( "<div id='footer' class='hideprint'></div>\r" );
+		if(document.getElementById("footer") == null) {
+			$("body").append( "<div id='footer' class='hideprint'></div>\r" );
+		}
 		let footerFile = climbpath + "../community/footer.html";
 		if (param.footer) footerFile = param.footer;
 		$("#footer").load(footerFile, function( response, status, xhr ) {
