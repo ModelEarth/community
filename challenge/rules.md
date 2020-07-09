@@ -93,6 +93,3 @@ Teams will collaborate using one or more of the following:
 <a href="challenge/registration/">Register to Participate</a> | 
 Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues)  
 <br>
-<hr>
-
-### Dev Areas
