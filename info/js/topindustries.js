@@ -333,7 +333,7 @@ function formatIndustryData(rawData) {
     var industryByType = {}
 
     subsetKeys = ['emp', 'payann', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
-
+    if (rawData) {
     for (var i = 0; i<rawData.length; i++){
 
         entry = rawData[i]
@@ -345,6 +345,7 @@ function formatIndustryData(rawData) {
             industryByType[entry.relevant_naics] = {}
             industryByType[entry.relevant_naics][entry.id] = parseSubsetValues(entry, subsetKeys)
         }
+    }
     }
     return industryByType
 }
