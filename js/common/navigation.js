@@ -148,7 +148,6 @@ $(document).ready(function(){
 				if($("#menuHolder").css('display') !== 'none') {
 	            	$("#menuHolder").hide(); // Since menu motion may freeze when going to another page.
 
-
 	            	if (!$(event.target).parents("#menuHolder").length) {
 	            		//event.preventDefault(); // Using requires double click
 	            	}
@@ -162,7 +161,8 @@ $(document).ready(function(){
 		let footerFile = climbpath + "../community/footer.html";
 		if (param.footer) footerFile = param.footer;
 		$("#footer").load(footerFile, function( response, status, xhr ) {
-
+			let pageFolder = getPageFolder(footerFile);
+			makeLinksRelative("footer",climbpath,pageFolder);
 		});
 	} else {
 		$(".filterPanel").addClass("filterPanel_fixed");
@@ -340,4 +340,30 @@ $(document).ready(function(){
 	
 });
 
+function makeLinksRelative(divID,climbpath,pageFolder) {
+	  $("#" + divID + " a[href]").each(function() {
 
+      //if (pagePath.indexOf('../') >= 0) { // If .md file is not in the current directory
+      //$("#" + divID + " a[href]").each(function() {
+      if($(this).attr("href").toLowerCase().indexOf("http") < 0){ // Relative links only        
+          $(this).attr("href", climbpath + $(this).attr('href'));
+      } else if (!/^http/.test($(this).attr("href"))) { // Also not Relative link
+          alert("Adjust: " + $(this).attr('href'))
+          $(this).attr("href", pageFolder + $(this).attr('href'));
+      }
+    })
+}
+function getPageFolder(pagePath) {
+  let pageFolder = pagePath;
+  if (pageFolder.lastIndexOf('?') > 0) { // Incase slash reside in parameters
+    pageFolder = pageFolder.substring(0, pageFolder.lastIndexOf('?'));
+  }
+  // If there is a period after the last slash, remove the filename.
+  if (pageFolder.lastIndexOf('.') > pageFolder.lastIndexOf('/')) {
+    pageFolder = pageFolder.substring(0, pageFolder.lastIndexOf('/')) + "/";
+  }
+  if (pageFolder == "/") {
+    pageFolder = "";
+  }
+  return pageFolder;
+}
