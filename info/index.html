@@ -298,9 +298,10 @@ function go(go) {
 	          <option value="6" selected>National Code - 6 digits</option>
 	        </select>
 	        <select id="catmethod" class="picklist" onchange="updateHash({'catmethod':this.value});refreshWidgets();">
-	          <option value="0" selected>Unaltered</option>
-	          <option value="1">Estimated-v1</option>
-	          <option value="2" >Estimated-v2</option>
+	         
+	          <option value="1" selected>Estimate using unpublished payrolls</option>
+	          <option value="2" >Estimate using total state payroll</option>
+	          <option value="0" >Leave unpublished values blank</option>
 	        </select>
 		</div>
 		<br>
@@ -578,19 +579,37 @@ Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
 To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
+<link rel="stylesheet" type="text/css" href="../start/charts/bubble/css/style.css"/>
 <div class="includedContent">
 	<h2>Industry Comparison</h2>
 	<div id="includedContent"></div>
-</div>
+	<div id="title"></div>
+	    <div id="subtitle"></div>
+	    <text id="equation"></text>
+	    <div id="graph-wrapper">
 
-<script> 
-    $(function(){
-    	function showBubbleChart() {
-      		$("#includedContent").load("bubble.html");
-      	}
-      	showBubbleChart(); // To be called by menu in header.
-    });
-</script> 
+	      <div id="graph-wrapper-x">
+	        <text>X-Axis</text>
+	        <select id="graph-picklist-x" class="graph-picklist">
+	        </select>
+	      </div>
+	      <div id="graph-wrapper-y">
+	        <text>Y-Axis</text>
+	        <select id="graph-picklist-y" class="graph-picklist">
+	        </select>
+	      </div>
+	      <div id="graph-wrapper-z">
+	        <text>Bubble-Size</text>
+	        <select id="graph-picklist-z" class="graph-picklist">
+	        </select>
+	      </div>
+	    </div>
+	    <br>
+	    Inspired by <a href="https://public.tableau.com/profile/john.sherwood#!/vizhome/USEEIOAnalysis/Dashboard1">John Sherwood's Bubble Chart</a>
+	    <br>
+	  </body>
+  </div>
+  <script type="text/javascript" src="js/bubble.js"></script>
 
 <br><br><br>
 <br><br><br>
