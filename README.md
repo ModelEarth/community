@@ -1,48 +1,92 @@
-<h1 class="h1-home">Web Challenge Projects - Fall 2020&nbsp;</h1>
 
-Choose an area below to compete for $10,000 in awards in our [Fall 2020 Virtual Event](challenge/).  Winning entries will use the USEEIO Widgets and USEEIO API JSON to create LifeCycle Analysis tools for 24 environmental indicators in close to 400 industries. Entries should be easy to integrate with other projects. Please avoid using CMS content systems like Wix and WordPress.  
+<style>
+.begin-examples {
+	clear: both;
+}
+.begin-examples ~ h3,
+.begin-examples ~ p,
+.begin-examples ~ .highlight {
+    width: 50%;
+    float:left;
+}
+.end-examples ~ p,
+.end-examples ~ h3,
+.end-examples ~ .highlight {
+    width: auto;
+    float: none;
+    clear: none;
+}
+.end-examples {
+    clear: both;
+}
+</style>
 
-<h2>Project Ideas</h2>
 
-<!--
-<h3>What do you think?</h3>
 
-<h4>More Ideas</h4>
+#### Join our Fall 2020 Hackathon
+<h1 class="h1-home">Sustainable Communities Web Challenge</h1>
 
-<h5>And such</h5>
+Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators for close to 400 industries. [Learn More and Register](challenge/)   
 
-<h6>Some small text?</h6>
--->
+##Project Areas
 
-1. A collection of [EE Input-Output chart widgets](https://modelearth.github.io/io/charts) is being created using the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API). Chart widgets are loaded from JSON files generated from 
-our [API endpoints on AWS](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
+### HTML and JavaScript/JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
-2. [Goods & Services Reports](info/) for communities with environmental impacts of new technologies.   
+1. Create new interfaces using the [EE Input-Output widgets](https://modelearth.github.io/io/charts)  
 
-3. [Maps of products and industries](start/maps) - Regional hubs, industries by zipcode.  
+1. Update search filters, [maps of products and industries](start/maps), [icons](start/dataset/icons/)  
 
-4. [Visualizations](start/charts/) of material flow and regional input-output.  
+1. [Goods & Services Reports](info/) for communities with environmental impacts of new technologies.   
 
-5. [Google Sheet Editor](https://neighborhood.org/editor) for local and state datasets.
 
-1. Preprocess data from the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
+### React and Node.js
+
+1. Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) - React and D3
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
 
-1. Display [Farm Fresh - Federal USDA location data](farmfresh/ga) on Leaflet map - initially merged for Aglanta.  
-
-
-1. Display industry and demographic data on [zip search](zip/#zip=30315) and [zip map](zip/leaflet/) below [Census Reporter map](https://censusreporter.org/profiles/86000US30313-30313/).
+1. Display demographic data using [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) API or Census API or USEEIO API.
 
 1. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
 
-1. <a href="start/routing/">Leaflet route maps</a> for driving tours and deliveries.
+### D3 Visualizations and Leaflet Maps
+
+1. [Visualizations](start/charts/) of material flow and regional input-output.  
+
+1. [Map starters](start) and [Leaflet route maps](start/routing/) for driving tours and deliveries.
+
+
+### API and Python
+
+1. Work with the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) and update [Input-Output charts](https://github.com/USEPA/useeio-widgets). Widgets are loaded from JSON files generated from 
+our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) on AWS <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
+
+1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies
+
+### Google REST App
+
+1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help.
+
+
+
+##Data Integration
+
+
+1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](info/).  
+
+1. Updates for [Farm Fresh - Federal USDA location data](farmfresh/ga) on maps - initially merged for Aglanta.  
+
+
+1. Preprocess the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) with [zip map](zip/leaflet/).  
+
+1. International Harmonized System (HS) code crosswalk  
+
+<!--
+
+Fix JSON reader in [zip search](zip/#zip=30315)  
 
 1. [Jobs and Economic Development Impact (JEDI) models](https://www.nrel.gov/analysis/jedi/models.html) - convert from Excel to an interactive Web Page
-
-1. [RStudio and USEEIOR](https://modelearth.github.io/io/naics) - Use LCA methodology to evaluate new technologies
-<!--
 
 1. Use [PWA Starter](resources/pwa) to add an index.html page and thumbnails to the pwa folder.
 
@@ -64,7 +108,8 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 13. Activate Netlify Identity or Firebase Hosting using [Google Cloud Build](https://medium.com/serverlessguru/aws-to-gcp-web-applications-89ed92070832) and/or [ERPNext](https://aws.amazon.com/marketplace/pp/B015GHHU7M) (MariaDB/Python/AWS EC2).
 
+
 14. [Climate Change Action Plans](https://www.c2es.org/document/climate-action-plans/) - Incorporate how other states support information exchanges.  
 -->
 
-
+<br><br>
