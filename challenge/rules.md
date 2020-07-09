@@ -1,5 +1,5 @@
 
-## Form a Team for our Fall 2020 Challenge
+# Web Challenge Rules
 
 Environmentally-Enabled Input-Output Widgets
 
@@ -39,9 +39,7 @@ We need assistance pre-processing lat/lon centers for zip codes, cities and coun
 We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=farmfresh&design=1) which are also used for Covid-19 supply maps.
 -->
 
-### Fall 2020
-
-<a href="https://model.earth/community/challenge" style="font-size:18px">2020 Sustainable Communities Web Challenge</a>  
+### Form a team or compete as an individual
 
 <!--
 Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
@@ -57,10 +55,10 @@ Teams will collaborate using one or more of the following:
 - Other detached frontends  
 
 
-<b>Data Backends</b>
+<b>Data Backends (optional alternative to widgets)</b>
+- Census API (see our [sample Python](../info/#go=dataprep&view=mosaic&count=10)) and USEEIO API  
 - [Google Sheets REST](https://neighborhood.org/editor)  
 - [Wazimap CensusReporter - DJango Python3](../../community/resources/censusreporter)  
-- Census API and USEEIO API  
 - Other collaboration platforms - Please review with judges in advance  
 
 <!--
@@ -76,6 +74,8 @@ Teams will collaborate using one or more of the following:
 
 **Rules for Entries** 
 
+- Entries should be easy to integrate with other projects.  
+- Please avoid using CMS content systems like Wix and WordPress.  
 - Provide documentation of set-up steps in a markdown file.
 - Include an index.html file that loads your readme.md file into HTML (like the current page).
 - Have judges try your install steps multiple times before the competition ends.  

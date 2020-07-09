@@ -1,8 +1,6 @@
-# Start a local website   
+# Start a Website   
 
-Whether on your local machine, or for your local community, these steps will get you rolling.  
-
-You'll learn how to create a static site using markdown to edit and GitHub Pages for free hosting.  
+Whether on your local machine, or for your local community, these steps will get you started creating a static site using markdown with GitHub for free hosting.  
 
 ## 1. Start a localhost server on your computer
 
