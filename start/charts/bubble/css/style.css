@@ -43,14 +43,14 @@ h4{
 #graph-wrapper-x{
   
   left:40%;
-   transform: translate(0px, 385px);
+   transform: translate(0px, 425px);
   text-align: center;
 }
 
 #graph-wrapper-y{
   
   text-align: center;
-  transform:rotate(-90deg) translateX(-1001px) translateY(-10px);
+  transform:rotate(-90deg) translateX(-860px) translateY(-15px);
   transform-origin: bottom left;
   
 }
@@ -71,7 +71,7 @@ div.tooltip {
   padding: 2px;
   padding-top: 8px;
   padding-bottom: 8px;
-  font: 12px sans-serif;
+  font: 10px sans-serif;
   background: lightsteelblue;
   border: 0px;
   border-radius: 8px;

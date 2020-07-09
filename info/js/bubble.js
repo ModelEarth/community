@@ -120,17 +120,9 @@ d3.selectAll(".graph-picklist").on("change",function(){
 */
 
 // 
-d3.selectAll(".graph-picklist").on("change",function(){
-  updateChart(d3.select("#graph-picklist-x").node().value,
-              d3.select("#graph-picklist-y").node().value,
-              d3.select("#graph-picklist-z").node().value);
-});
 
-d3.selectAll(".graph-picklist2").on("change",function(){
-  updateChart(d3.select("#graph-picklist-x").node().value,
-              d3.select("#graph-picklist-y").node().value,
-              d3.select("#graph-picklist-z").node().value);
-});
+
+
 
 
 // For rollover popup
@@ -161,7 +153,8 @@ function getDimensions(x,y,z){
 function updateTitle(x,y,z){
   //var title = d3.select("#title").text("Linear Regression:");
   //var subtitle = d3.select("#subtitle").text(x+" vs "+y);
-  var title = d3.select("#title").html(x+" <b>VS</b> "+y+" <b>based on</b> "+z);
+  //console.log("KKKKKKKK"+x)
+  document.getElementById("title").innerHTML = x+" <b>VS</b> "+y+" <b>based on</b> "+z;
 }
 
 // returns slope, intercept and r-square of the line
@@ -257,16 +250,9 @@ $( document ).ready(function() {
     // updateChart("wind_mph","change_displacement_percent","year");
     
     //updateChart("WATR","ENGR","LAND"); // Why doesn't this work?
-    updateChart("ENRG","WATR","LAND");
+    //updateChart("ENRG","WATR","LAND");
 
-
-    $(document).ready(function(){
-      //$("#graph-picklist-x").val('WATR');
-      //$("#graph-picklist-y").val('ENRG');
-      //$("#graph-picklist-z").val('LAND');
-
-      // Hack - send a click event - not
-      $("#graph-picklist-x").val('ENRG');
+$("#graph-picklist-x").val('ENRG');
       $("#graph-picklist-y").val('WATR');
       $("#graph-picklist-z").val('LAND');
 
@@ -274,7 +260,13 @@ $( document ).ready(function() {
               d3.select("#graph-picklist-y").node().value,
               d3.select("#graph-picklist-z").node().value);
 
-    });
+
+        d3.selectAll(".graph-picklist").on("change",function(){
+          updateChart(d3.select("#graph-picklist-x").node().value,
+              d3.select("#graph-picklist-y").node().value,
+              d3.select("#graph-picklist-z").node().value);
+            }) 
+
 
   });
 });
@@ -287,11 +279,11 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
 
 //function updateChart(x,y,year){
 function updateChart(x,y,z){
-
-  updateTitle(x,y,z);
+    console.log(x)
+  
   //Fetch data
   var records = getDimensions(x,y,z);
-
+  updateTitle(x,y,z);
   //Reset scale
   //console.log(records.y);
   (records.y).sort(function(a,b){return a-b});
@@ -330,36 +322,46 @@ zScale.domain(d3.extent(records.z));
                       //console.log(zScale(d.z)+5)
                       return zScale(d.z)+2
                     })
-    .style("fill", function (d) { 
 
-            if (d.year > 2014) {
-              return "steelblue";
-            } else {
-              return "red";
-            }
-
-          })
     .style("stroke","black")
-    .style("opacity", .5)
+    .attr("stroke-opacity", 0.7)
+    .style("fill-opacity", .5)
 
   //Append any new elements and transition them as well
   selectedCircles.enter()
                 .append("circle")
 
+                /*
+                .style("fill", function (d) { 
+
+                  if (d.year > 2014) {
+                    return "steelblue";
+                  } else {
+                    return "red";
+                  }
+
+                })
+                */
                     .on("mouseover", function(d) {
+                     d3.select(this)
+    .transition()
+    .attr('fill', '#FFD700');
+
                        div.transition()
                          .duration(200)
                          .style("opacity", .9);
                             // "<br/>Step distance: " + ordinalDomain[d.step_type-1] + "<br/>Norm count: " + d.norm_step_count + "<br/>Impact count: " + d.impact_step_count + 
                             //div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/>Industry Code: " + d.industry_code )
                             // + "<br/>Total change: " + d.change_displacement_degrees
-                            div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/> " +"x: "+ d.x+ "</b><br/> " +"y: "+ d.y + "</b><br/> " +"z: "+ d.z)
+                            div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/> " +x+": "+d.x+ "</b><br/> " +y+": "+ d.y + "</b><br/> " +z+": "+ d.z)
                          .style("left", (d3.event.pageX) + "px")
                          .style("top", (d3.event.pageY - 28) + "px");
                          
                        })
                      .on("mouseout", function(d) {
-                        
+                        d3.select(this)
+    .transition()
+    .attr('fill', 'black');
                        div.transition()
                          .duration(500)
                          .style("opacity", 0);
@@ -372,16 +374,10 @@ zScale.domain(d3.extent(records.z));
                       //console.log(zScale(d.z)+5)
                       return zScale(d.z)+2
                     })
-                    .style("fill", function (d) {
-                      if (d.year > 2014) {
-                        return "steelblue";
-                      } else {
-                        return "red";
-                      }
-
-                    })
-    .style("opacity", .5)
+                    
+    .style("fill-opacity", .5)
 .style("stroke","black")
+.attr("stroke-opacity", 0.7)
                     .transition().duration(animDuration)
                     .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
 
