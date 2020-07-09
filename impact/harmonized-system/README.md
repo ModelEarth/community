@@ -1,9 +1,13 @@
 # Harmonized System (HS) Codes
 
-International Harmonized System (HS) Codes reside in the [impact mockup](../) - Categories are visible when clicking "Lookup" in the upper left only when viewing on localhost. 
-([Localhost setup](../../start/markdown/)) 
+International Harmonized System (HS) Codes reside in the [info page](../../info/)  
 
-Potential Project: Add a crosswalk from NAICS to HS.   
+CURRENTLY HIDDEN
+<!--
+Categories are visible when clicking "Lookup" in the upper left only when viewing on localhost.  
+-->
+
+Project: Add a crosswalk from NAICS to HS.   
 
 #### International Input-Output Datasets   
 
