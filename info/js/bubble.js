@@ -1,30 +1,18 @@
 //getting the listof indicators and populating the x and y dropdown options
 let dropdown = $('#graph-picklist-x');
-
 dropdown.empty();
-
-//dropdown.append('<option selected="true" disabled>Select Indicator</option>');
-//dropdown.prop('selectedIndex', 1);
-
 const url = './data/indicators.json';
-
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
   $.each(data, function (key, entry) {
     dropdown.append($('<option></option>').attr('value', entry.code).text(entry.name));
   })
 });
-//dropdown.value="ENRG";
-//dropdown.prop('selectedIndex', 10);
+
+
 
 let dropdown2 = $('#graph-picklist-y');
-
 dropdown2.empty();
-
-//dropdown2.append('<option selected="true" disabled>Select Indicator</option>');
-//dropdown2.prop('selectedIndex', 1);
-
-
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
   $.each(data, function (key, entry) {
@@ -32,14 +20,10 @@ $.getJSON(url, function (data) {
   })
 });
 
+
+
 let dropdown3 = $('#graph-picklist-z');
-
 dropdown3.empty();
-
-//dropdown2.append('<option selected="true" disabled>Select Indicator</option>');
-//dropdown2.prop('selectedIndex', 1);
-
-
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
   $.each(data, function (key, entry) {
@@ -47,11 +31,11 @@ $.getJSON(url, function (data) {
   })
 });
 
+
+
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
 var margin = {top: 20, right: 150, bottom: 40, left: 50};
-
-//var width = $(parentId).width()- margin.left - margin.right,
 var width = 1300- margin.left - margin.right,    
     height = 350  - margin.top - margin.bottom;
 
@@ -85,7 +69,7 @@ var svg = d3.select(parentId).append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .attr("id","svg-parent")
-    .append("g")
+      .append("g")
       .attr("id","graph-plane")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -104,24 +88,6 @@ svg.append("path")
     .attr("stroke-width", 1)
     .style("stroke","steelblue")
     .style("fill","none");
-
-/*
-// Breaks with v3 to v4 (v5)
-d3.selectAll(".graph-picklist").on("change",function(){
-  updateChart(d3.select("#graph-picklist-x")[0][0].value,
-              d3.select("#graph-picklist-y")[0][0].value);
-});
-
-// Also works
-d3.selectAll(".graph-picklist").on("change",function(){
-  updateChart(d3.select("#graph-picklist-x").property("value"),
-              d3.select("#graph-picklist-y").property("value"));
-});
-*/
-
-// 
-
-
 
 
 
@@ -151,11 +117,9 @@ function getDimensions(x,y,z){
 }
 
 function updateTitle(x,y,z){
-  //var title = d3.select("#title").text("Linear Regression:");
-  //var subtitle = d3.select("#subtitle").text(x+" vs "+y);
-  //console.log("KKKKKKKK"+x)
-  document.getElementById("title").innerHTML = x+" <b>VS</b> "+y+" <b>based on</b> "+z;
+  document.getElementById("title1").innerHTML = x+" <b>VS</b> "+y+" <b>based on</b> "+z;
 }
+
 
 // returns slope, intercept and r-square of the line
 //Pulled from http://bl.ocks.org/benvandyke/8459843
@@ -206,8 +170,7 @@ function calculateLineData(leastSquares,xRange,iterations){
 
 var allData
 $( document ).ready(function() {
-  // Was d3.csv("data/toy.csv",function(data){
-    //data = d3.csvParse("data/indicators_sectors.csv", d3.autoType);
+
   d3.csv("data/indicators_sectors.csv").then(function(data){
 
     data.forEach(function(d) {
@@ -237,39 +200,27 @@ $( document ).ready(function() {
         d.SMOG=+d.SMOG
         d.VADD=+d.VADD
         d.WATR=+d.WATR
-        //console.log(d.ENRG)
-
-
-
-
       });
 
     allData = data;
-    //updateChart("Count","Rating");
-    //
-    // updateChart("wind_mph","change_displacement_percent","year");
-    
-    //updateChart("WATR","ENGR","LAND"); // Why doesn't this work?
-    //updateChart("ENRG","WATR","LAND");
 
-$("#graph-picklist-x").val('ENRG');
-      $("#graph-picklist-y").val('WATR');
-      $("#graph-picklist-z").val('LAND');
+    $("#graph-picklist-x").val('ENRG');
+    $("#graph-picklist-y").val('WATR');
+    $("#graph-picklist-z").val('LAND');
 
       updateChart(d3.select("#graph-picklist-x").node().value,
-              d3.select("#graph-picklist-y").node().value,
-              d3.select("#graph-picklist-z").node().value);
+        d3.select("#graph-picklist-y").node().value,
+        d3.select("#graph-picklist-z").node().value);
 
 
-        d3.selectAll(".graph-picklist").on("change",function(){
-          updateChart(d3.select("#graph-picklist-x").node().value,
-              d3.select("#graph-picklist-y").node().value,
-              d3.select("#graph-picklist-z").node().value);
-            }) 
-
-
+      d3.selectAll(".graph-picklist").on("change",function(){
+        updateChart(d3.select("#graph-picklist-x").node().value,
+          d3.select("#graph-picklist-y").node().value,
+          d3.select("#graph-picklist-z").node().value);
+      }) 
   });
 });
+
 
 
 var ordinalDomain = ["1-100m", "100-500m", "500m-1km", "1-5km", "5-10km", "Over 10km"];
@@ -277,15 +228,15 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
   .domain(ordinalDomain)
   .range(["blue","#7479BC","#BDE7AE","#ECF809","orange","magenta"]); // Not in use here, from wind/js/regression.js
 
-//function updateChart(x,y,year){
+
+
 function updateChart(x,y,z){
-    console.log(x)
+  console.log("ebteda"+x)
   
   //Fetch data
   var records = getDimensions(x,y,z);
   updateTitle(x,y,z);
-  //Reset scale
-  //console.log(records.y);
+
   (records.y).sort(function(a,b){return a-b});
   var l = (records.y).length;
   var low = Math.round(l * 0.010);
@@ -304,232 +255,80 @@ function updateChart(x,y,z){
   var high = l - low;
   records.pairs = (records.pairs).slice(low,high);
   
-  //console.log("gggggggggggggggggg"+data2);
   yScale.domain(d3.extent(records.y));
   xScale.domain(d3.extent(records.x));
-zScale.domain(d3.extent(records.z));
+  zScale.domain(d3.extent(records.z));
   //re-assign data (or assign new data)
   var selectedCircles = d3.select("#graph-plane")
-                          .selectAll(".circles")
-                          .data(records.pairs)
+    .selectAll(".circles")
+    .data(records.pairs)
 
   //give a transition on the existing elements
   selectedCircles
     .transition().duration(animDuration)
     .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
     .attr("r",function(d){
-                      //console.log(d.ACID)
-                      //console.log(zScale(d.z)+5)
-                      return zScale(d.z)+2
-                    })
+      return zScale(d.z)+2
+    })
 
     .style("stroke","black")
     .attr("stroke-opacity", 0.7)
     .style("fill-opacity", .5)
-
-  //Append any new elements and transition them as well
-  selectedCircles.enter()
-                .append("circle")
-
-                /*
-                .style("fill", function (d) { 
-
-                  if (d.year > 2014) {
-                    return "steelblue";
-                  } else {
-                    return "red";
-                  }
-
-                })
-                */
-                    .on("mouseover", function(d) {
-                     d3.select(this)
-    .transition()
-    .attr('fill', '#FFD700');
-
-                       div.transition()
-                         .duration(200)
-                         .style("opacity", .9);
-                            // "<br/>Step distance: " + ordinalDomain[d.step_type-1] + "<br/>Norm count: " + d.norm_step_count + "<br/>Impact count: " + d.impact_step_count + 
-                            //div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/>Industry Code: " + d.industry_code )
-                            // + "<br/>Total change: " + d.change_displacement_degrees
-                            div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/> " +x+": "+d.x+ "</b><br/> " +y+": "+ d.y + "</b><br/> " +z+": "+ d.z)
-                         .style("left", (d3.event.pageX) + "px")
-                         .style("top", (d3.event.pageY - 28) + "px");
-                         
-                       })
-                     .on("mouseout", function(d) {
-                        d3.select(this)
-    .transition()
-    .attr('fill', 'black');
-                       div.transition()
-                         .duration(500)
-                         .style("opacity", 0);
-                        
-                    })
-
-                    .attr("class","circles")
-                    .attr("r",function(d){
-                      //console.log(d.ACID)
-                      //console.log(zScale(d.z)+5)
-                      return zScale(d.z)+2
-                    })
-                    
-    .style("fill-opacity", .5)
-.style("stroke","black")
-.attr("stroke-opacity", 0.7)
-                    .transition().duration(animDuration)
-                    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
-
-
-
-                ;
-
-  //Remove any dom elements which are no longer data bound
-  selectedCircles.exit().remove();
-                  
-  //Update Axes
-  d3.select(parentId).select(".x.axis").transition().duration(animDuration).call(xAxis);
-  
-
-  //BUGBUG invalid format: ,.-4f  AND   invalid format: ,.-2f
-  // Started after v3 to v5 when node added when selecting:  d3.select("#graph-picklist-y").node().value
-  //d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
-  d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
-  //Update Regression
-  /*
-  line.x(function(d) { return xScale(d.xVal); })
-      .y(function(d) { return yScale(d.yVal); });
-
-  var leastSquaresCoeff = leastSquares(records.x, records.y);
-  var lineData = calculateLineData(leastSquaresCoeff,d3.extent(records.x),200);
-
-  var trendline = d3.selectAll(".trendline")
-                        .transition().delay(1000).duration(500)
-                        .attr("d",line(lineData));
-
-                        //was toFixed(2) for all 6:
-  d3.select("#equation").html(function(){
-    return (leastSquaresCoeff[1]<0)?
-      "y="+leastSquaresCoeff[0].toFixed(4)+"x"+
-          leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
-          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>" 
-          :
-      "y="+leastSquaresCoeff[0].toFixed(4)+"x"+"+"+
-          leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
-          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>";
-  });*/
-
-}
-
-
-
-
-function updateChart2(x,y,z){
-
-  updateTitle(x,y,z);
-  //Fetch data
-  var records = getDimensions(x,y,z);
-
-  //re-assign data (or assign new data)
-  var selectedCircles = d3.select("#graph-plane")
-                          .selectAll(".circles")
-                          .data(records.pairs)
-
-  //give a transition on the existing elements
-  selectedCircles
-    .transition().duration(animDuration)
-    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
+    console.log("plaaaa"+x)
     
-    .style("fill", function (d) { 
+    //Append any new elements and transition them as well
+    selectedCircles.enter()
+      .append("circle")
+      .on("mouseover", function(d) {
+        d3.select(this)
+        .transition()
+        .attr('fill', '#FFD700');
 
-            if (d.year > 2014) {
-              return "steelblue";
-            } else {
-              return "red";
-            }
+        div.transition()
+          .duration(200)
+          .style("opacity", .9);               
+          div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/> " +x+": "+d.x+ "</b><br/> " +y+": "+ d.y + "</b><br/> " +z+": "+ d.z)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");                     
+      })
+                     
 
-          })
 
 
-  //Append any new elements and transition them as well
-  selectedCircles.enter()
-                .append("circle")
+      .on("mouseout", function(d) {
+        d3.select(this)
+        .transition()
+        .attr('fill', 'black');
 
-                    .on("mouseover", function(d) {
-                       div.transition()
-                         .duration(200)
-                         .style("opacity", .9);
-                            // "<br/>Step distance: " + ordinalDomain[d.step_type-1] + "<br/>Norm count: " + d.norm_step_count + "<br/>Impact count: " + d.impact_step_count + 
-                            div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/>d.zz " + d.z )
-                            // + "<br/>Total change: " + d.change_displacement_degrees
-                            
-                         .style("left", (d3.event.pageX) + "px")
-                         .style("top", (d3.event.pageY - 28) + "px");
-                         
-                       })
-                     .on("mouseout", function(d) {
+        div.transition()
+          .duration(500)
+          .style("opacity", 0);
                         
-                       div.transition()
-                         .duration(500)
-                         .style("opacity", 0);
-                        
-                    })
-
-                    .attr("class","circles")
-                    //.attr("r",function(d){
-                      //console.log(d.ACID)
-                    //  return d.z*1000+100
-                    //})
-                    .style("fill", function (d) {
-                      if (d.year > 2014) {
-                        return "steelblue";
-                      } else {
-                        return "red";
-                      }
-
-                    })
-    //.style("opacity", 0.)
-
-                    .transition().duration(animDuration)
-                    .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";})
+      })
 
 
 
-                ;
+
+      .attr("class","circles")
+      .attr("r",function(d){
+        return zScale(d.z)+2
+      })
+                    
+      .style("fill-opacity", .5)
+      .style("stroke","black")
+      .attr("stroke-opacity", 0.7)
+      .transition().duration(animDuration)
+      .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";});
+
 
   //Remove any dom elements which are no longer data bound
   selectedCircles.exit().remove();
                   
   //Update Axes
   d3.select(parentId).select(".x.axis").transition().duration(animDuration).call(xAxis);
-  
-
-  //BUGBUG invalid format: ,.-4f  AND   invalid format: ,.-2f
-  // Started after v3 to v5 when node added when selecting:  d3.select("#graph-picklist-y").node().value
-  //d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
   d3.select(parentId).select(".y.axis").transition().duration(animDuration).call(yAxis);
-  //Update Regression
-  /*
-  line.x(function(d) { return xScale(d.xVal); })
-      .y(function(d) { return yScale(d.yVal); });
 
-  var leastSquaresCoeff = leastSquares(records.x, records.y);
-  var lineData = calculateLineData(leastSquaresCoeff,d3.extent(records.x),200);
 
-  var trendline = d3.selectAll(".trendline")
-                        .transition().delay(1000).duration(500)
-                        .attr("d",line(lineData));
-
-                        //was toFixed(2) for all 6:
-  d3.select("#equation").html(function(){
-    return (leastSquaresCoeff[1]<0)?
-      "y="+leastSquaresCoeff[0].toFixed(4)+"x"+
-          leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
-          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>" 
-          :
-      "y="+leastSquaresCoeff[0].toFixed(4)+"x"+"+"+
-          leastSquaresCoeff[1].toFixed(4)+" rSquared: "+
-          leastSquaresCoeff[2].toFixed(4)+"<br><span style='color:red'>Red indicates events prior to 2015</span>";
-  });*/
 }
+
+
