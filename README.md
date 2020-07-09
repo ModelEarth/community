@@ -80,7 +80,7 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 1. Preprocess the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) with [zip map](zip/leaflet/).  
 
-1. International Harmonized System (HS) code crosswalk  
+1. International [Harmonized System (HS)](impact/harmonized-system) code crosswalk  
 
 <!--
 
