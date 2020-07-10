@@ -701,7 +701,6 @@ function showCounties() {
 		$(".geo").change(function(e) {
             console.log("Adjust if this line appears multiple times.");
         });
-
 		// INIT AT TIME OF INITIAL COUNTY LIST DISPLAY
 		// Set checkboxes based on param (which may be a hash, query or include parameter)
 		updateLoc(param.geo); // Needed here to check county boxes.  BUGBUG: Might be reloading data. This also gets called from info/
@@ -728,6 +727,16 @@ function updateLoc(geo) {
         	$("#" + sectors[i]).prop('checked', true);
         }
 		
+    }
+    console.log('ALERT: Change to support state as GEO')
+    if (!geo) {
+        $(".county-view").hide();
+        $(".state-view").show();
+        $(".industry_filter_settings").hide(); // temp
+    } else {
+        $(".state-view").hide();
+        $(".county-view").show();
+        $(".industry_filter_settings").show(); // temp
     }
 }
 // INIT

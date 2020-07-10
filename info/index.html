@@ -170,6 +170,16 @@ h2 {
 		display: none;
 	}
 }
+.picklist {
+	margin-bottom:8px;
+}
+.industry_filter_settings {
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin-bottom: 8px;
+	display: none;
+}
 </style>
   
 
@@ -266,12 +276,6 @@ function go(go) {
 
 <div class="mainColumn mainColumn2">
 	<div class="io">
-
-		<div style="float:right;display:none" class="local">
-			<span class="material-icons" style="font-size:30px;color:#777">
-			settings
-			</span>
-		</div>
 		<div>
 			<h2 class="regiontitle">Loading Industries...</h2>
 			<h4 class="regionsubtitle" style="font-size:16px;color:#555;"></h4>
@@ -285,6 +289,11 @@ function go(go) {
 		-->
 
 		<div id="detail_selection">
+			<div id="show_industry_settings" style="float:right;cursor:pointer" onclick="$('.industry_filter_settings').toggle();">
+				<span class="material-icons" style="font-size:24px;color:#777">
+				settings
+				</span>
+			</div>
 			<select id="catsort" class="picklist" onchange="updateHash({'catsort':this.value});refreshWidgets();">
 	          <option value="payann" selected>By Annual Payroll</option>
 	          <option value="emp" >By Employee Count</option>
@@ -297,14 +306,21 @@ function go(go) {
 	          <!--option value="4">NAICS Industry - 5 digits</option-->
 	          <option value="6" selected>National Code - 6 digits</option>
 	        </select>
-	        <select id="catmethod" class="picklist" onchange="updateHash({'catmethod':this.value});refreshWidgets();">
-	         
-	          <option value="1" selected>Estimate using unpublished payrolls</option>
-	          <option value="2" >Estimate using total state payroll</option>
-	          <option value="0" >Leave unpublished values blank</option>
-	        </select>
+	        <div style="clear:both;margin-bottom:2px"></div>
+
+	        <div class="industry_filter_settings">
+		        <div class="state-view">
+		        	Choose a county or region above to view filter settings.
+		        </div>
+		        <div class="county-view" style="display:none">
+			        <select id="catmethod" class="picklist" onchange="updateHash({'catmethod':this.value});refreshWidgets();">
+			          <option value="1" selected>Estimate using unpublished payrolls</option>
+			          <option value="2" >Estimate using total state payroll</option>
+			          <option value="0" >Leave unpublished values blank</option>
+			        </select>
+			    </div>
+			</div>
 		</div>
-		<br>
 
 		<!-- Sector List Format -->
 		<style>
