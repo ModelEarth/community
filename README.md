@@ -28,7 +28,7 @@
 
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators for close to 400 industries. [Learn More and Register](challenge/)   
 
-##Project Areas
+##Web Challenge Project Areas
 
 ### HTML and JavaScript/JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
