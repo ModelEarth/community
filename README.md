@@ -1,28 +1,3 @@
-
-<style>
-.begin-examples {
-	clear: both;
-}
-.begin-examples ~ h3,
-.begin-examples ~ p,
-.begin-examples ~ .highlight {
-    width: 50%;
-    float:left;
-}
-.end-examples ~ p,
-.end-examples ~ h3,
-.end-examples ~ .highlight {
-    width: auto;
-    float: none;
-    clear: none;
-}
-.end-examples {
-    clear: both;
-}
-</style>
-
-
-
 #### Join our Fall 2020 Hackathon
 <h1 class="h1-home">Sustainable Communities Web Challenge</h1>
 
@@ -32,16 +7,18 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 ### HTML and JavaScript/JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
-1. Create new interfaces using the [EE Input-Output widgets](https://modelearth.github.io/io/charts)  
+1. Embed and customize chart displays using the [EE Input-Output widgets](https://modelearth.github.io/io/charts)  
 
-1. Update search filters, [maps of products and industries](start/maps), [icons](start/dataset/icons/)  
+1. Build location profiles using the [Industry Impact Evaluator](info/#view=mosaic&count=20).<!-- Goods & Services Reports - communities with environmental impacts of new technologies -->  
 
-1. [Goods & Services Reports](info/) for communities with environmental impacts of new technologies.   
+1. Add to [map search filters](impact/), apply [industry icons](start/dataset/icons/) to charts, or integrate [map samples](start/maps).   
+
+   
 
 
 ### React and Node.js
 
-1. Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) - React and D3
+1. Updates to the [USEEIO-widgets](https://github.com/modelearth/useeio-widgets) - React and D3
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zipcode (zcta)](prep/all)<!--[projections](prep/regression/)-->.  
 

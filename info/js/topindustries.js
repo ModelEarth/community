@@ -311,6 +311,15 @@ function geoChanged(dataObject,params){
     } else {
         fips = "state";
     }
+    if (fips == "state") {
+        $(".county-view").hide();
+        $(".state-view").show();
+        $(".industry_filter_settings").hide(); // temp
+    } else {
+        $(".state-view").hide();
+        $(".county-view").show();
+        $(".industry_filter_settings").show(); // temp
+    }
     topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
 }
 
