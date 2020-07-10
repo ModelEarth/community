@@ -194,7 +194,7 @@ $( document ).ready(function() {
         d.MINE=+d.MINE
         d.MSW=+d.MSW
         d.NREN=+d.NREN
-        d.OZONE=+d.OZONE
+        d.OZON=+d.OZON
         d.PEST=+d.PEST
         d.REN=+d.REN
         d.SMOG=+d.SMOG
@@ -289,7 +289,7 @@ function updateChart(x,y,z){
         div.transition()
           .duration(200)
           .style("opacity", .9);               
-          div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/> " +x1+": "+d.x+ "</b><br/> " +y1+": "+ d.y + "</b><br/> " +z1+": "+ d.z)
+          div.html("<b style='font-size:1.3em'>" + d.industry_detail + "</b><br/><b> " +x1+":</b> "+d.x+ "<br/><b> " +y1+":</b> "+ d.y + "<br/><b>" +z1+":</b> "+ d.z)
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");                     
       })
