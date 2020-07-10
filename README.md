@@ -43,7 +43,7 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 1. Updates to the [USEEIO-widgets](https://github.com/USEPA/useeio-widgets) - React and D3
 
-1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zcta](prep/all)<!--[projections](prep/regression/)-->.  
+1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zipcode (zcta)](prep/all)<!--[projections](prep/regression/)-->.  
 
 1. Display demographic data using [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) API or Census API or USEEIO API.
 
