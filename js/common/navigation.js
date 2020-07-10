@@ -68,7 +68,6 @@ $(document).ready(function(){
 		 		//imageUrlSide = climbpath + "../community/img/logo/georgia-icon-rect.png";
 	 			//$('#logoholder').addClass('logoholder-state');
 		 		//$('#headerLocTitleHolder').addClass('headerLocTitleHolder-state');
-		 		
 
 		 		$('#logoholder').html("<a href='https://georgia.org'><img src='" + climbpath + "../community/img/logo/georgia_usa_gray.png' style='width:130px;padding-top:4px'></a>");
 		 		//$('.georgia').show(); // For nav menu
@@ -81,7 +80,7 @@ $(document).ready(function(){
 		 		$('.headerOffsetOne').css('height', '80px');
 		 		$('.headerbarheight').css('height', '80px');
 		 		//$('.neighborhood').show(); // Not yet implemented
-		 		$('.neighborhood').css('display', 'block'); // Not yet implemented
+		 		$('.neighborhood').css('display', 'block');
 		 	} else {
 		 		$(".siteTitleShort").text("Model Earth");
 		 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
@@ -105,6 +104,10 @@ $(document).ready(function(){
 			 	$('.mock-up').css('display', 'block');
 		 	}
 
+		 	if(location.host.indexOf('neighborhood') >= 0) {
+		 		// Since deactivated above due to conflict with header logo in app.
+		 		$('.neighborhood').css('display', 'block');
+		 	}
 		 	if (param.titleArray) {
 		 		$('#headerSiteTitle').html("<span style='float:left'><a href='" + climbpath + "' style='text-decoration:none'><span style='color: #777;'>" + param.titleArray[0] + "</span><span style='color:#bbb;margin-left:1px'>" + param.titleArray[1] + "</span></a></span>");
 		 	}
