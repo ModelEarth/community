@@ -43,7 +43,7 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 ### Google REST App
 
-1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories. This was a popular approach during the Covid19 response, however a process for listing contributors to return and make updates to their sheet rows using a webpage is sorely lacking.  
+1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories. This was a popular approach during the Covid19 response, however a process allowing contributors to return and update their listings using a webpage is sorely lacking.  
 
 
 
