@@ -1406,7 +1406,8 @@ function lazyLoadFiles() {
 		}
 
 	}  	
-	includeCSS(root + '/community/css/community.css',root);
+	//includeCSS(root + '/community/css/community.css',root);
+	includeCSS(root + '/localsite/css/base.css',root);
 	includeCSS(root + '/community/css/search-filters.css',root);
 	includeCSS(root + '/community/css/display.css',root);
 	includeCSS(root + '/community/css/hexagons.css',root);

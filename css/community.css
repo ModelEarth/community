@@ -435,25 +435,6 @@ iframe {
   padding-right:50px;
   padding-bottom:30px;
 }
-#log_display {
-  position:absolute;
-  top:70%;
-  left:50px;
-  max-height:200px;
-  padding: 8px 8px 8px 8px;
-  color:#fff;
-  background: rgba(0,0,0,0.9);
-  border-radiusX: 18px 0px 5px 5px;
-}
-#log_display textarea {
-  
-  color:#fff;
-  background: rgba(0,0,0,0);
-  min-width: 350px;
-  min-height: 150;
-  overflow:scroll;
-  border:0px;
-}
 #closeChat {
   display: none;
   position:absolute;
