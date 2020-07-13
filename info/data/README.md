@@ -15,6 +15,8 @@ With option 2, the level is low ($4.92 mil) because overall counties with more t
 This trend flips for industries that have larger revenue in areas where firms are concentrated, hence “Transportation Equipment Manufacturing” is estimated higher for McDuffie County when using the state average because payrolls are higher for firms in other counties where transportation equipment production is concentrated.  
 Based on the above, we’ll use option 1 by default.  
 
+Issue: When summing the industries that have 0 for emp and payann, the state-level data reports less. For example, "the difference of the aggregation of county-level and reported establishments" for naics sector 11 for year 2012 is 1 establishments, but the sum of all the establishments for the same industry who reported 0 for emp and payann is 195 establishments.
+
 ### For NAICS industry charts
 
 The Jupyter Notebook for industry data preparation resides in [data_collection.ipynb](data_collection.ipynb).  
