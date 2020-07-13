@@ -1,85 +1,93 @@
-	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
-0	44001	44	1	Bristol County, Rhode Island	11	Agriculture, forestry, fishing and hunting	11	1.8	0.6	9.6
-2	44001	44	1	Bristol County, Rhode Island	23	Construction	23	168.6	576.6	30225.2
-3	44001	44	1	Bristol County, Rhode Island	42	Wholesale trade	42	63.2	347.4	23991.6
-4	44001	44	1	Bristol County, Rhode Island	51	Information	51	13.4	153.2	7324.0
-5	44001	44	1	Bristol County, Rhode Island	52	Finance and insurance	52	52.0	244.0	13549.0
-6	44001	44	1	Bristol County, Rhode Island	53	Real estate and rental and leasing	53	41.2	96.2	6437.4
-7	44001	44	1	Bristol County, Rhode Island	54	Professional, scientific, and technical services	54	108.6	422.4	24261.8
-8	44001	44	1	Bristol County, Rhode Island	55	Management of companies and enterprises	55	6.0	9.4	773.0
-9	44001	44	1	Bristol County, Rhode Island	56	Administrative and support and waste management and remediation services	56	77.4	195.8	10902.6
-10	44001	44	1	Bristol County, Rhode Island	61	Educational services	61	25.8	1104.2	29786.6
-11	44001	44	1	Bristol County, Rhode Island	62	Health care and social assistance	62	123.6	2996.2	76460.2
-12	44001	44	1	Bristol County, Rhode Island	71	Arts, entertainment, and recreation	71	31.8	404.4	11543.6
-13	44001	44	1	Bristol County, Rhode Island	72	Accommodation and food services	72	128.4	1664.8	25724.8
-14	44001	44	1	Bristol County, Rhode Island	81	Other services (except public administration)	81	147.8	720.6	17417.0
-15	44001	44	1	Bristol County, Rhode Island	99	Industries not classified	99	5.6	3.4	165.0
-19	44003	44	3	Kent County, Rhode Island	23	Construction	23	487.0	2800.4	167003.0
-20	44003	44	3	Kent County, Rhode Island	42	Wholesale trade	42	241.6	3679.6	219790.6
-21	44003	44	3	Kent County, Rhode Island	51	Information	51	70.8	1643.2	108231.6
-22	44003	44	3	Kent County, Rhode Island	52	Finance and insurance	52	253.6	5076.4	340350.2
-23	44003	44	3	Kent County, Rhode Island	53	Real estate and rental and leasing	53	175.4	1201.0	53201.4
-24	44003	44	3	Kent County, Rhode Island	54	Professional, scientific, and technical services	54	523.0	4175.4	180879.0
-25	44003	44	3	Kent County, Rhode Island	55	Management of companies and enterprises	55	24.2	891.6	65572.6
-26	44003	44	3	Kent County, Rhode Island	56	Administrative and support and waste management and remediation services	56	273.2	3355.0	115746.0
-27	44003	44	3	Kent County, Rhode Island	61	Educational services	61	51.8	1304.0	46532.8
-28	44003	44	3	Kent County, Rhode Island	62	Health care and social assistance	62	587.8	12124.0	490395.2
-29	44003	44	3	Kent County, Rhode Island	71	Arts, entertainment, and recreation	71	66.0	983.0	23242.2
-30	44003	44	3	Kent County, Rhode Island	72	Accommodation and food services	72	468.6	8445.8	140549.8
-31	44003	44	3	Kent County, Rhode Island	81	Other services (except public administration)	81	461.6	2801.4	84946.0
-32	44003	44	3	Kent County, Rhode Island	99	Industries not classified	99	6.6	5.4	177.4
-33	44005	44	5	Newport County, Rhode Island	11	Agriculture, forestry, fishing and hunting	11	12.4	15.0	1141.2
-35	44005	44	5	Newport County, Rhode Island	22	Utilities	22	3.4	41.8	3645.8
-36	44005	44	5	Newport County, Rhode Island	23	Construction	23	287.6	1346.8	69472.0
-37	44005	44	5	Newport County, Rhode Island	42	Wholesale trade	42	82.6	484.2	31367.6
-38	44005	44	5	Newport County, Rhode Island	51	Information	51	40.8	508.0	26573.0
-39	44005	44	5	Newport County, Rhode Island	52	Finance and insurance	52	102.0	1281.0	124955.6
-40	44005	44	5	Newport County, Rhode Island	53	Real estate and rental and leasing	53	108.4	579.4	23495.8
-41	44005	44	5	Newport County, Rhode Island	54	Professional, scientific, and technical services	54	324.2	3088.8	221655.6
-42	44005	44	5	Newport County, Rhode Island	55	Management of companies and enterprises	55	11.0	294.6	13812.8
-43	44005	44	5	Newport County, Rhode Island	56	Administrative and support and waste management and remediation services	56	175.8	1023.6	42666.2
-44	44005	44	5	Newport County, Rhode Island	61	Educational services	61	34.6	1703.2	57607.0
-45	44005	44	5	Newport County, Rhode Island	62	Health care and social assistance	62	243.4	4940.4	160970.0
-46	44005	44	5	Newport County, Rhode Island	71	Arts, entertainment, and recreation	71	94.8	1021.6	41251.8
-47	44005	44	5	Newport County, Rhode Island	72	Accommodation and food services	72	365.6	5768.6	136926.6
-48	44005	44	5	Newport County, Rhode Island	81	Other services (except public administration)	81	269.6	1397.6	45587.0
-49	44005	44	5	Newport County, Rhode Island	99	Industries not classified	99	5.0	3.75	179.0
-50	44007	44	7	Providence County, Rhode Island	11	Agriculture, forestry, fishing and hunting	11	9.4	20.8	726.6
-51	44007	44	7	Providence County, Rhode Island	21	Mining, quarrying, and oil and gas extraction	21	7.2	93.4	6489.2
-52	44007	44	7	Providence County, Rhode Island	22	Utilities	22	24.6	897.8	91679.2
-53	44007	44	7	Providence County, Rhode Island	23	Construction	23	1546.8	9991.2	656363.6
-54	44007	44	7	Providence County, Rhode Island	42	Wholesale trade	42	752.8	12368.2	841668.0
-55	44007	44	7	Providence County, Rhode Island	51	Information	51	259.4	4277.2	286763.2
-56	44007	44	7	Providence County, Rhode Island	52	Finance and insurance	52	756.6	17505.0	1557216.8
-57	44007	44	7	Providence County, Rhode Island	53	Real estate and rental and leasing	53	603.2	3111.6	139380.4
-58	44007	44	7	Providence County, Rhode Island	54	Professional, scientific, and technical services	54	1688.4	12428.6	811248.0
-59	44007	44	7	Providence County, Rhode Island	55	Management of companies and enterprises	55	137.4	5772.6	528361.8
-60	44007	44	7	Providence County, Rhode Island	56	Administrative and support and waste management and remediation services	56	890.4	15600.6	527559.2
-61	44007	44	7	Providence County, Rhode Island	61	Educational services	61	251.8	22290.2	788434.2
-62	44007	44	7	Providence County, Rhode Island	62	Health care and social assistance	62	1911.4	58270.6	2746077.8
-63	44007	44	7	Providence County, Rhode Island	71	Arts, entertainment, and recreation	71	223.6	6150.6	155042.4
-64	44007	44	7	Providence County, Rhode Island	72	Accommodation and food services	72	1603.4	24675.6	417992.4
-65	44007	44	7	Providence County, Rhode Island	81	Other services (except public administration)	81	1661.8	10488.6	326761.8
-66	44007	44	7	Providence County, Rhode Island	99	Industries not classified	99	20.8	21.4	397.8
-67	44009	44	9	Washington County, Rhode Island	11	Agriculture, forestry, fishing and hunting	11	13.4	64.6	3808.4
-68	44009	44	9	Washington County, Rhode Island	21	Mining, quarrying, and oil and gas extraction	21	7.4	40.6	3505.2
-69	44009	44	9	Washington County, Rhode Island	22	Utilities	22	8.4	118.0	12324.2
-70	44009	44	9	Washington County, Rhode Island	23	Construction	23	501.4	1472.6	75260.4
-71	44009	44	9	Washington County, Rhode Island	42	Wholesale trade	42	147.4	2980.2	244439.6
-72	44009	44	9	Washington County, Rhode Island	51	Information	51	54.0	436.6	26597.6
-73	44009	44	9	Washington County, Rhode Island	52	Finance and insurance	52	131.6	984.8	68752.0
-74	44009	44	9	Washington County, Rhode Island	53	Real estate and rental and leasing	53	133.0	367.8	13964.8
-75	44009	44	9	Washington County, Rhode Island	54	Professional, scientific, and technical services	54	338.4	1632.8	103526.8
-76	44009	44	9	Washington County, Rhode Island	55	Management of companies and enterprises	55	7.8	259.8	25608.6
-77	44009	44	9	Washington County, Rhode Island	56	Administrative and support and waste management and remediation services	56	267.6	1163.8	53870.2
-78	44009	44	9	Washington County, Rhode Island	61	Educational services	61	48.2	1084.4	43527.4
-79	44009	44	9	Washington County, Rhode Island	62	Health care and social assistance	62	383.4	7904.4	295257.4
-80	44009	44	9	Washington County, Rhode Island	71	Arts, entertainment, and recreation	71	129.6	1369.2	35759.2
-81	44009	44	9	Washington County, Rhode Island	72	Accommodation and food services	72	467.4	5445.8	118873.0
-82	44009	44	9	Washington County, Rhode Island	81	Other services (except public administration)	81	345.2	1596.8	45735.2
-83	44009	44	9	Washington County, Rhode Island	99	Industries not classified	99	8.8	5.4	221.6
-0	44001	44	1	Bristol County, Rhode Island	22	Utilities	22	1.6	43.811055276381914	4441.109547738694
-1	44003	44	3	Kent County, Rhode Island	11	Agriculture, forestry, fishing and hunting	11	3.4	9.173267326732674	558.0039603960396
-2	44003	44	3	Kent County, Rhode Island	21	Mining, quarrying, and oil and gas extraction	21	1.4	11.860674157303372	813.4157303370787
-3	44003	44	3	Kent County, Rhode Island	22	Utilities	22	1.8	49.28743718592965	4996.248241206031
-4	44005	44	5	Newport County, Rhode Island	21	Mining, quarrying, and oil and gas extraction	21	1.8	15.249438202247191	1045.8202247191011
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
+0	11	Agriculture, forestry, fishing and hunting	44	11	1	44001	Bristol County, Rhode Island	no	3.0	3.0	48.0
+1	11	Agriculture, forestry, fishing and hunting	44	11	1	44001	Bristol County, Rhode Island	yes	1.4	-4.201025641025641	258.0825641025641
+2	11	Agriculture, forestry, fishing and hunting	44	11	3	44003	Kent County, Rhode Island	yes	3.5	13.32991452991453	740.8585470085469
+3	11	Agriculture, forestry, fishing and hunting	44	11	5	44005	Newport County, Rhode Island	no	12.333333333333334	17.833333333333332	1221.5
+4	11	Agriculture, forestry, fishing and hunting	44	11	7	44007	Providence County, Rhode Island	no	9.166666666666666	21.0	717.0
+5	11	Agriculture, forestry, fishing and hunting	44	11	9	44009	Washington County, Rhode Island	no	13.5	64.33333333333333	3906.8333333333335
+6	21	Mining, quarrying, and oil and gas extraction	44	21	3	44003	Kent County, Rhode Island	yes	1.3333333333333333	6.76111111111111	235.83888888888887
+7	21	Mining, quarrying, and oil and gas extraction	44	21	5	44005	Newport County, Rhode Island	yes	1.6666666666666667	10.483333333333333	274.6722222222222
+8	21	Mining, quarrying, and oil and gas extraction	44	21	7	44007	Providence County, Rhode Island	no	7.166666666666667	93.83333333333333	6486.5
+9	21	Mining, quarrying, and oil and gas extraction	44	21	9	44009	Washington County, Rhode Island	no	7.166666666666667	41.5	3450.5
+10	22	Utilities	44	22	1	44001	Bristol County, Rhode Island	yes	1.6666666666666667	17.444017094017095	1760.638034188034
+11	22	Utilities	44	22	3	44003	Kent County, Rhode Island	yes	2.0	23.124358974358973	2375.3320512820515
+12	22	Utilities	44	22	5	44005	Newport County, Rhode Island	no	3.5	71.0	6326.0
+13	22	Utilities	44	22	5	44005	Newport County, Rhode Island	yes	3.0	34.5	2884.5
+14	22	Utilities	44	22	7	44007	Providence County, Rhode Island	no	24.333333333333332	911.3333333333334	94148.83333333333
+15	22	Utilities	44	22	9	44009	Washington County, Rhode Island	no	8.333333333333334	116.33333333333333	12420.833333333334
+16	23	Construction	44	23	1	44001	Bristol County, Rhode Island	no	170.33333333333334	589.0	31226.666666666668
+17	23	Construction	44	23	3	44003	Kent County, Rhode Island	no	487.6666666666667	2861.8333333333335	171552.16666666666
+18	23	Construction	44	23	5	44005	Newport County, Rhode Island	no	288.8333333333333	1366.5	70934.66666666667
+19	23	Construction	44	23	7	44007	Providence County, Rhode Island	no	1560.1666666666667	10164.166666666666	672368.0
+20	23	Construction	44	23	9	44009	Washington County, Rhode Island	no	504.5	1504.6666666666667	77583.33333333333
+21	42	Wholesale trade	44	42	1	44001	Bristol County, Rhode Island	no	63.333333333333336	347.0	24574.0
+22	42	Wholesale trade	44	42	3	44003	Kent County, Rhode Island	no	241.0	3684.6666666666665	222232.16666666666
+23	42	Wholesale trade	44	42	5	44005	Newport County, Rhode Island	no	83.33333333333333	494.0	32586.5
+24	42	Wholesale trade	44	42	7	44007	Providence County, Rhode Island	no	750.5	12375.5	849899.3333333334
+25	42	Wholesale trade	44	42	9	44009	Washington County, Rhode Island	no	147.33333333333334	2974.1666666666665	243390.33333333334
+26	51	Information	44	51	1	44001	Bristol County, Rhode Island	no	13.666666666666666	153.66666666666666	7444.0
+27	51	Information	44	51	3	44003	Kent County, Rhode Island	no	70.66666666666667	1612.8333333333333	107304.66666666667
+28	51	Information	44	51	5	44005	Newport County, Rhode Island	no	41.666666666666664	502.1666666666667	25803.166666666668
+29	51	Information	44	51	7	44007	Providence County, Rhode Island	no	259.5	4285.333333333333	289906.6666666667
+30	51	Information	44	51	9	44009	Washington County, Rhode Island	no	54.5	443.5	27101.166666666668
+31	52	Finance and insurance	44	52	1	44001	Bristol County, Rhode Island	no	52.5	244.0	13538.166666666666
+32	52	Finance and insurance	44	52	3	44003	Kent County, Rhode Island	no	254.5	5045.5	341054.8333333333
+33	52	Finance and insurance	44	52	5	44005	Newport County, Rhode Island	no	102.83333333333333	1291.3333333333333	122963.16666666667
+34	52	Finance and insurance	44	52	7	44007	Providence County, Rhode Island	no	760.6666666666666	17736.0	1574692.1666666667
+35	52	Finance and insurance	44	52	9	44009	Washington County, Rhode Island	no	132.83333333333334	987.6666666666666	69703.16666666667
+36	53	Real estate and rental and leasing	44	53	1	44001	Bristol County, Rhode Island	no	41.5	105.33333333333333	6633.166666666667
+37	53	Real estate and rental and leasing	44	53	3	44003	Kent County, Rhode Island	no	176.33333333333334	1194.8333333333333	52787.5
+38	53	Real estate and rental and leasing	44	53	5	44005	Newport County, Rhode Island	no	108.5	555.5	23578.666666666668
+39	53	Real estate and rental and leasing	44	53	7	44007	Providence County, Rhode Island	no	605.5	3126.1666666666665	141637.66666666666
+40	53	Real estate and rental and leasing	44	53	9	44009	Washington County, Rhode Island	no	134.66666666666666	370.6666666666667	14256.666666666666
+41	54	Professional, scientific, and technical services	44	54	1	44001	Bristol County, Rhode Island	no	108.33333333333333	423.3333333333333	24454.833333333332
+42	54	Professional, scientific, and technical services	44	54	3	44003	Kent County, Rhode Island	no	524.1666666666666	4205.166666666667	183423.83333333334
+43	54	Professional, scientific, and technical services	44	54	5	44005	Newport County, Rhode Island	no	324.3333333333333	3123.5	223355.16666666666
+44	54	Professional, scientific, and technical services	44	54	7	44007	Providence County, Rhode Island	no	1690.0	12516.166666666666	821510.3333333334
+45	54	Professional, scientific, and technical services	44	54	9	44009	Washington County, Rhode Island	no	337.3333333333333	1628.5	103477.5
+46	55	Management of companies and enterprises	44	55	1	44001	Bristol County, Rhode Island	no	7.333333333333333	23.666666666666668	2026.3333333333333
+47	55	Management of companies and enterprises	44	55	1	44001	Bristol County, Rhode Island	yes	5.333333333333333	47.18385281385281	4980.442987012987
+48	55	Management of companies and enterprises	44	55	3	44003	Kent County, Rhode Island	no	23.833333333333332	897.5	65667.0
+49	55	Management of companies and enterprises	44	55	5	44005	Newport County, Rhode Island	no	10.833333333333334	276.3333333333333	13778.833333333334
+50	55	Management of companies and enterprises	44	55	7	44007	Providence County, Rhode Island	no	143.5	9397.25	839737.5
+51	55	Management of companies and enterprises	44	55	7	44007	Providence County, Rhode Island	yes	132.5	-1110.8304761904762	-76889.18857142856
+52	55	Management of companies and enterprises	44	55	9	44009	Washington County, Rhode Island	no	10.0	654.6666666666666	64279.0
+53	55	Management of companies and enterprises	44	55	9	44009	Washington County, Rhode Island	yes	6.666666666666667	53.70313131313131	5798.01606060606
+54	56	Administrative and support and waste management and remediation services	44	56	1	44001	Bristol County, Rhode Island	no	77.83333333333333	210.66666666666666	11133.166666666666
+55	56	Administrative and support and waste management and remediation services	44	56	3	44003	Kent County, Rhode Island	no	275.0	3407.0	116740.0
+56	56	Administrative and support and waste management and remediation services	44	56	5	44005	Newport County, Rhode Island	no	176.16666666666666	1028.1666666666667	42226.833333333336
+57	56	Administrative and support and waste management and remediation services	44	56	7	44007	Providence County, Rhode Island	no	894.5	15717.666666666666	543117.1666666666
+58	56	Administrative and support and waste management and remediation services	44	56	9	44009	Washington County, Rhode Island	no	268.0	1181.3333333333333	54848.333333333336
+59	61	Educational services	44	61	1	44001	Bristol County, Rhode Island	no	27.0	2805.3333333333335	73955.66666666667
+60	61	Educational services	44	61	1	44001	Bristol County, Rhode Island	yes	25.0	2001.0	72554.0
+61	61	Educational services	44	61	3	44003	Kent County, Rhode Island	no	51.666666666666664	1313.6666666666667	47209.666666666664
+62	61	Educational services	44	61	5	44005	Newport County, Rhode Island	no	34.833333333333336	1734.5	58278.333333333336
+63	61	Educational services	44	61	7	44007	Providence County, Rhode Island	no	250.83333333333334	22481.833333333332	799266.1666666666
+64	61	Educational services	44	61	9	44009	Washington County, Rhode Island	no	47.666666666666664	992.5	38918.5
+65	62	Health care and social assistance	44	62	1	44001	Bristol County, Rhode Island	no	123.0	2938.1666666666665	76065.5
+66	62	Health care and social assistance	44	62	3	44003	Kent County, Rhode Island	no	588.1666666666666	12206.0	497858.0
+67	62	Health care and social assistance	44	62	5	44005	Newport County, Rhode Island	no	240.33333333333334	4938.666666666667	161936.0
+68	62	Health care and social assistance	44	62	7	44007	Providence County, Rhode Island	no	1919.0	58520.166666666664	2769355.6666666665
+69	62	Health care and social assistance	44	62	9	44009	Washington County, Rhode Island	no	384.1666666666667	7995.666666666667	301261.1666666667
+70	71	Arts, entertainment, and recreation	44	71	1	44001	Bristol County, Rhode Island	no	32.166666666666664	405.8333333333333	11815.0
+71	71	Arts, entertainment, and recreation	44	71	3	44003	Kent County, Rhode Island	no	65.83333333333333	993.8333333333334	23518.166666666668
+72	71	Arts, entertainment, and recreation	44	71	5	44005	Newport County, Rhode Island	no	95.33333333333333	1029.5	41934.5
+73	71	Arts, entertainment, and recreation	44	71	7	44007	Providence County, Rhode Island	no	223.66666666666666	6307.5	160520.0
+74	71	Arts, entertainment, and recreation	44	71	9	44009	Washington County, Rhode Island	no	129.83333333333334	1377.5	36450.333333333336
+75	72	Accommodation and food services	44	72	1	44001	Bristol County, Rhode Island	no	128.83333333333334	1678.1666666666667	26442.5
+76	72	Accommodation and food services	44	72	3	44003	Kent County, Rhode Island	no	469.0	8486.166666666666	143489.16666666666
+77	72	Accommodation and food services	44	72	5	44005	Newport County, Rhode Island	no	365.5	5799.333333333333	139558.5
+78	72	Accommodation and food services	44	72	7	44007	Providence County, Rhode Island	no	1611.0	24857.666666666668	427684.6666666667
+79	72	Accommodation and food services	44	72	9	44009	Washington County, Rhode Island	no	468.6666666666667	5564.166666666667	122741.0
+80	81	Other services (except public administration)	44	81	1	44001	Bristol County, Rhode Island	no	147.83333333333334	729.5	17723.0
+81	81	Other services (except public administration)	44	81	3	44003	Kent County, Rhode Island	no	463.1666666666667	2830.8333333333335	85965.83333333333
+82	81	Other services (except public administration)	44	81	5	44005	Newport County, Rhode Island	no	270.8333333333333	1409.8333333333333	46009.833333333336
+83	81	Other services (except public administration)	44	81	7	44007	Providence County, Rhode Island	no	1659.3333333333333	10500.166666666666	330506.0
+84	81	Other services (except public administration)	44	81	9	44009	Washington County, Rhode Island	no	346.5	1596.6666666666667	46247.0
+85	99	Industries not classified	44	99	1	44001	Bristol County, Rhode Island	no	6.6	4.8	220.8
+86	99	Industries not classified	44	99	1	44001	Bristol County, Rhode Island	yes	1.0	8.0	8.0
+87	99	Industries not classified	44	99	3	44003	Kent County, Rhode Island	no	6.333333333333333	5.666666666666667	176.16666666666666
+88	99	Industries not classified	44	99	5	44005	Newport County, Rhode Island	no	6.25	5.5	243.0
+89	99	Industries not classified	44	99	5	44005	Newport County, Rhode Island	yes	2.0	-2.0	26.0
+90	99	Industries not classified	44	99	7	44007	Providence County, Rhode Island	no	21.333333333333332	22.666666666666668	425.1666666666667
+91	99	Industries not classified	44	99	9	44009	Washington County, Rhode Island	no	8.5	6.5	213.83333333333334
