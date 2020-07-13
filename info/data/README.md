@@ -1,6 +1,6 @@
 ## Data Preparation
 
-We average 5 years to allow for gaps.  We make the estimates for every year first, and then averaging across years. This allows a sum of each industry's average to match the state total for the 5 years spanned.  
+We average 5 years to allow for gaps.  We calculate an industry estimates for every year first, and then averaging across years. This allows a sum of each industry’s average to match the state total for the 5 years spanned.  
 
 The census does not publish payroll values for counties with only 1 or 2 establishments, but they provide these as aggregates in the state total. To estimate payrolls and employee based on the number of establishments we provide two options:  
 
