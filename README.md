@@ -13,7 +13,7 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 1. Add to [map search filters](impact/), apply [industry icons](start/dataset/icons/) to charts, or integrate [map samples](start/maps).   
 
-   
+1. Update USEEIO widgets to embed in <a href="https://naaee.github.io/core/" style="white-space: nowrap;">Resource and Event Calendars</a> for environmental educators.
 
 
 ### React and Node.js
