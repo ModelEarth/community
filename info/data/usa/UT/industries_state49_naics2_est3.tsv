@@ -1,549 +1,453 @@
-	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
-0	11	Agriculture, forestry, fishing and hunting	49	11	1	49001	Beaver County, Utah	1	1.0	7.34773441868566	484.9184014886928
-1	11	Agriculture, forestry, fishing and hunting	49	11	3	49003	Box Elder County, Utah	0	3.0	2.6666666666666665	385.0
-2	11	Agriculture, forestry, fishing and hunting	49	11	3	49003	Box Elder County, Utah	1	2.0	16.551666891012697	867.529591241531
-3	11	Agriculture, forestry, fishing and hunting	49	11	5	49005	Cache County, Utah	0	10.666666666666666	45.333333333333336	1655.0
-4	11	Agriculture, forestry, fishing and hunting	49	11	5	49005	Cache County, Utah	1	6.0	55.43154454764362	2385.3369453044374
-5	11	Agriculture, forestry, fishing and hunting	49	11	7	49007	Carbon County, Utah	1	1.1666666666666667	10.422089890228051	510.6326613566614
-6	11	Agriculture, forestry, fishing and hunting	49	11	11	49011	Davis County, Utah	0	3.0	21.333333333333332	624.6666666666666
-7	11	Agriculture, forestry, fishing and hunting	49	11	11	49011	Davis County, Utah	1	3.6666666666666665	36.24859534457058	1470.4018747850016
-8	11	Agriculture, forestry, fishing and hunting	49	11	13	49013	Duchesne County, Utah	0	4.0	10.4	506.2
-9	11	Agriculture, forestry, fishing and hunting	49	11	13	49013	Duchesne County, Utah	1	3.0	22.105263157894736	1161.7105263157894
-10	11	Agriculture, forestry, fishing and hunting	49	11	15	49015	Emery County, Utah	1	1.0	10.0453216374269	401.5767543859649
-11	11	Agriculture, forestry, fishing and hunting	49	11	17	49017	Garfield County, Utah	1	1.8	15.379854401837997	825.7161168741507
-12	11	Agriculture, forestry, fishing and hunting	49	11	19	49019	Grand County, Utah	1	1.0	9.387430639685316	429.30276338224076
-13	11	Agriculture, forestry, fishing and hunting	49	11	21	49021	Iron County, Utah	0	4.333333333333333	12.666666666666666	208.0
-14	11	Agriculture, forestry, fishing and hunting	49	11	21	49021	Iron County, Utah	1	1.6666666666666667	14.270668501318655	656.7771757825936
-15	11	Agriculture, forestry, fishing and hunting	49	11	23	49023	Juab County, Utah	1	1.0	7.429918461073069	461.18144817534306
-16	11	Agriculture, forestry, fishing and hunting	49	11	25	49025	Kane County, Utah	1	1.0	8.301719519857679	441.31321691221706
-17	11	Agriculture, forestry, fishing and hunting	49	11	27	49027	Millard County, Utah	0	3.0	8.0	308.25
-18	11	Agriculture, forestry, fishing and hunting	49	11	27	49027	Millard County, Utah	1	2.0	20.398692810457515	805.8872549019607
-19	11	Agriculture, forestry, fishing and hunting	49	11	29	49029	Morgan County, Utah	1	2.0	16.603439039715358	882.6264338244341
-20	11	Agriculture, forestry, fishing and hunting	49	11	31	49031	Piute County, Utah	1	1.0	6.130297280202404	465.33412397216955
-21	11	Agriculture, forestry, fishing and hunting	49	11	35	49035	Salt Lake County, Utah	0	14.0	77.75	8172.0
-22	11	Agriculture, forestry, fishing and hunting	49	11	35	49035	Salt Lake County, Utah	1	14.0	85.82416192283364	6514.677735610374
-23	11	Agriculture, forestry, fishing and hunting	49	11	37	49037	San Juan County, Utah	1	2.0	16.603439039715358	882.6264338244341
-24	11	Agriculture, forestry, fishing and hunting	49	11	41	49041	Sevier County, Utah	1	1.0	7.676470588235294	389.9705882352941
-25	11	Agriculture, forestry, fishing and hunting	49	11	43	49043	Summit County, Utah	1	2.5	20.27730624905819	1125.0856345687803
-26	11	Agriculture, forestry, fishing and hunting	49	11	47	49047	Uintah County, Utah	0	3.3333333333333335	5.0	90.0
-27	11	Agriculture, forestry, fishing and hunting	49	11	47	49047	Uintah County, Utah	1	3.0	27.767113863089094	1193.124097007224
-28	11	Agriculture, forestry, fishing and hunting	49	11	49	49049	Utah County, Utah	0	17.166666666666668	58.0	1917.5
-29	11	Agriculture, forestry, fishing and hunting	49	11	51	49051	Wasatch County, Utah	0	5.333333333333333	3.8333333333333335	208.83333333333334
-30	11	Agriculture, forestry, fishing and hunting	49	11	53	49053	Washington County, Utah	0	4.333333333333333	4.5	254.33333333333334
-31	11	Agriculture, forestry, fishing and hunting	49	11	57	49057	Weber County, Utah	1	6.333333333333333	52.66882207719337	2799.7666012444693
-32	21	Mining, quarrying, and oil and gas extraction	49	21	1	49001	Beaver County, Utah	1	2.5	138.9224467255737	11847.42533840117
-33	21	Mining, quarrying, and oil and gas extraction	49	21	3	49003	Box Elder County, Utah	0	3.4	21.0	1792.6
-34	21	Mining, quarrying, and oil and gas extraction	49	21	3	49003	Box Elder County, Utah	1	3.0	246.26086956521738	22474.173913043476
-35	21	Mining, quarrying, and oil and gas extraction	49	21	5	49005	Cache County, Utah	0	4.166666666666667	4.666666666666667	843.5
-36	21	Mining, quarrying, and oil and gas extraction	49	21	7	49007	Carbon County, Utah	0	10.666666666666666	541.6666666666666	40171.333333333336
-37	21	Mining, quarrying, and oil and gas extraction	49	21	7	49007	Carbon County, Utah	1	13.0	741.2823795735721	60985.60249890323
-38	21	Mining, quarrying, and oil and gas extraction	49	21	9	49009	Daggett County, Utah	1	1.0	60.87931034482759	5040.551724137931
-39	21	Mining, quarrying, and oil and gas extraction	49	21	11	49011	Davis County, Utah	0	8.5	95.33333333333333	5178.666666666667
-40	21	Mining, quarrying, and oil and gas extraction	49	21	13	49013	Duchesne County, Utah	0	98.16666666666667	1486.0	105162.33333333333
-41	21	Mining, quarrying, and oil and gas extraction	49	21	15	49015	Emery County, Utah	0	5.666666666666667	213.66666666666666	14450.333333333334
-42	21	Mining, quarrying, and oil and gas extraction	49	21	15	49015	Emery County, Utah	1	7.333333333333333	416.9105536544705	34283.10445555848
-43	21	Mining, quarrying, and oil and gas extraction	49	21	17	49017	Garfield County, Utah	1	1.5	83.1554438496308	7120.212551359021
-44	21	Mining, quarrying, and oil and gas extraction	49	21	19	49019	Grand County, Utah	0	8.0	44.333333333333336	2782.3333333333335
-45	21	Mining, quarrying, and oil and gas extraction	49	21	19	49019	Grand County, Utah	1	11.0	616.0563007809072	50692.68008774239
-46	21	Mining, quarrying, and oil and gas extraction	49	21	21	49021	Iron County, Utah	0	6.333333333333333	102.5	5985.5
-47	21	Mining, quarrying, and oil and gas extraction	49	21	23	49023	Juab County, Utah	0	4.0	9.5	555.5
-48	21	Mining, quarrying, and oil and gas extraction	49	21	23	49023	Juab County, Utah	1	1.75	99.52440059096665	8576.617472562262
-49	21	Mining, quarrying, and oil and gas extraction	49	21	25	49025	Kane County, Utah	1	2.0	111.53400575188579	9454.425574084298
-50	21	Mining, quarrying, and oil and gas extraction	49	21	27	49027	Millard County, Utah	0	5.333333333333333	102.33333333333333	6721.666666666667
-51	21	Mining, quarrying, and oil and gas extraction	49	21	29	49029	Morgan County, Utah	1	2.1666666666666665	119.96067241855245	10146.4855740843
-52	21	Mining, quarrying, and oil and gas extraction	49	21	33	49033	Rich County, Utah	1	1.0	55.76700287594289	4727.212787042149
-53	21	Mining, quarrying, and oil and gas extraction	49	21	35	49035	Salt Lake County, Utah	0	51.75	2321.5	203131.5
-54	21	Mining, quarrying, and oil and gas extraction	49	21	35	49035	Salt Lake County, Utah	1	54.0	3233.2306528033696	266142.8823374572
-55	21	Mining, quarrying, and oil and gas extraction	49	21	37	49037	San Juan County, Utah	0	9.833333333333334	132.16666666666666	7678.166666666667
-56	21	Mining, quarrying, and oil and gas extraction	49	21	39	49039	Sanpete County, Utah	0	4.25	6.25	364.25
-57	21	Mining, quarrying, and oil and gas extraction	49	21	39	49039	Sanpete County, Utah	1	3.5	208.98308765464594	17185.560410634378
-58	21	Mining, quarrying, and oil and gas extraction	49	21	41	49041	Sevier County, Utah	0	7.0	633.0	39894.333333333336
-59	21	Mining, quarrying, and oil and gas extraction	49	21	41	49041	Sevier County, Utah	1	5.666666666666667	320.2496393787839	26330.372364657367
-60	21	Mining, quarrying, and oil and gas extraction	49	21	43	49043	Summit County, Utah	0	9.0	192.66666666666666	13416.666666666666
-61	21	Mining, quarrying, and oil and gas extraction	49	21	45	49045	Tooele County, Utah	0	3.0	65.33333333333333	4184.333333333333
-62	21	Mining, quarrying, and oil and gas extraction	49	21	45	49045	Tooele County, Utah	1	3.3333333333333335	186.44228832148812	15313.336365710275
-63	21	Mining, quarrying, and oil and gas extraction	49	21	47	49047	Uintah County, Utah	0	158.0	1720.5	126846.5
-64	21	Mining, quarrying, and oil and gas extraction	49	21	49	49049	Utah County, Utah	0	17.25	73.25	4587.25
-65	21	Mining, quarrying, and oil and gas extraction	49	21	49	49049	Utah County, Utah	1	17.5	950.9764885496184	77946.35129770993
-66	21	Mining, quarrying, and oil and gas extraction	49	21	51	49051	Wasatch County, Utah	0	3.5	9.25	595.5
-67	21	Mining, quarrying, and oil and gas extraction	49	21	51	49051	Wasatch County, Utah	1	2.0	82.24368932038836	6866.607281553398
-68	21	Mining, quarrying, and oil and gas extraction	49	21	53	49053	Washington County, Utah	0	7.0	12.5	1740.0
-69	21	Mining, quarrying, and oil and gas extraction	49	21	53	49053	Washington County, Utah	1	4.25	197.92923495452305	16429.46159355937
-70	21	Mining, quarrying, and oil and gas extraction	49	21	55	49055	Wayne County, Utah	1	1.0	55.76700287594289	4727.212787042149
-71	21	Mining, quarrying, and oil and gas extraction	49	21	57	49057	Weber County, Utah	0	7.0	425.3333333333333	27627.666666666668
-72	21	Mining, quarrying, and oil and gas extraction	49	21	57	49057	Weber County, Utah	1	7.0	470.8627651822944	40470.05536163216
-73	22	Utilities	49	22	1	49001	Beaver County, Utah	1	3.8333333333333335	30.303429076645358	2884.134713828902
-74	22	Utilities	49	22	3	49003	Box Elder County, Utah	1	7.5	58.37471298329612	5557.52539995498
-75	22	Utilities	49	22	5	49005	Cache County, Utah	1	4.666666666666667	42.27815937108794	4012.659542110761
-76	22	Utilities	49	22	7	49007	Carbon County, Utah	1	7.5	58.37471298329612	5557.52539995498
-77	22	Utilities	49	22	11	49011	Davis County, Utah	0	5.5	63.25	5319.75
-78	22	Utilities	49	22	11	49011	Davis County, Utah	1	4.5	-3.636150852093415	-263.7248316852514
-79	22	Utilities	49	22	13	49013	Duchesne County, Utah	1	8.833333333333334	69.94407837364027	6657.538112897909
-80	22	Utilities	49	22	15	49015	Emery County, Utah	1	29.5	255.34564251879158	24259.075563023736
-81	22	Utilities	49	22	17	49017	Garfield County, Utah	1	4.166666666666667	42.704663812665935	4044.6315683666126
-82	22	Utilities	49	22	19	49019	Grand County, Utah	1	1.0	8.40017391783916	798.4996323158333
-83	22	Utilities	49	22	21	49021	Iron County, Utah	0	8.0	84.0	6060.0
-84	22	Utilities	49	22	21	49021	Iron County, Utah	1	7.0	72.02640936345719	6815.745365061247
-85	22	Utilities	49	22	23	49023	Juab County, Utah	1	1.1666666666666667	8.225775292409606	785.6010068862801
-86	22	Utilities	49	22	25	49025	Kane County, Utah	1	1.0	8.40017391783916	798.4996323158333
-87	22	Utilities	49	22	27	49027	Millard County, Utah	1	4.0	33.60069567135664	3193.9985292633332
-88	22	Utilities	49	22	29	49029	Morgan County, Utah	0	3.0	6.0	185.0
-89	22	Utilities	49	22	29	49029	Morgan County, Utah	1	2.0	13.525123285166924	1291.6697057932938
-90	22	Utilities	49	22	33	49033	Rich County, Utah	1	1.0	8.40017391783916	798.4996323158333
-91	22	Utilities	49	22	35	49035	Salt Lake County, Utah	0	69.0	2188.0	205435.0
-92	22	Utilities	49	22	35	49035	Salt Lake County, Utah	1	68.66666666666667	-58.79484556277307	-4408.88585375857
-93	22	Utilities	49	22	37	49037	San Juan County, Utah	1	1.0	8.40017391783916	798.4996323158333
-94	22	Utilities	49	22	39	49039	Sanpete County, Utah	0	3.0	5.0	257.0
-95	22	Utilities	49	22	39	49039	Sanpete County, Utah	1	2.0	7.014604322324818	684.9956859383252
-96	22	Utilities	49	22	41	49041	Sevier County, Utah	1	1.1666666666666667	8.225775292409606	785.6010068862801
-97	22	Utilities	49	22	43	49043	Summit County, Utah	0	6.666666666666667	51.333333333333336	4199.833333333333
-98	22	Utilities	49	22	45	49045	Tooele County, Utah	0	5.0	33.0	2678.3333333333335
-99	22	Utilities	49	22	45	49045	Tooele County, Utah	1	5.0	-4.265044415780022	-319.7202625585237
-100	22	Utilities	49	22	47	49047	Uintah County, Utah	1	5.0	42.0008695891958	3992.4981615791658
-101	22	Utilities	49	22	49	49049	Utah County, Utah	0	17.666666666666668	217.0	20273.333333333332
-102	22	Utilities	49	22	49	49049	Utah County, Utah	1	14.666666666666666	-12.589350934414895	-944.6352774714893
-103	22	Utilities	49	22	51	49051	Wasatch County, Utah	1	1.5	10.912773984043653	1039.7301530581615
-104	22	Utilities	49	22	53	49053	Washington County, Utah	0	10.666666666666666	67.66666666666667	5140.166666666667
-105	22	Utilities	49	22	55	49055	Wayne County, Utah	1	1.0	8.40017391783916	798.4996323158333
-106	22	Utilities	49	22	57	49057	Weber County, Utah	1	8.833333333333334	66.47241315349946	6334.775672033924
-107	23	Construction	49	23	1	49001	Beaver County, Utah	0	18.666666666666668	74.33333333333333	2671.0
-108	23	Construction	49	23	3	49003	Box Elder County, Utah	0	169.33333333333334	1113.0	46573.166666666664
-109	23	Construction	49	23	5	49005	Cache County, Utah	0	451.5	2390.5	99251.66666666667
-110	23	Construction	49	23	7	49007	Carbon County, Utah	0	40.0	369.5	18134.833333333332
-111	23	Construction	49	23	9	49009	Daggett County, Utah	1	1.1666666666666667	67.7351287902413	3429.721379410368
-112	23	Construction	49	23	11	49011	Davis County, Utah	0	856.0	6548.333333333333	293044.3333333333
-113	23	Construction	49	23	13	49013	Duchesne County, Utah	0	93.16666666666667	607.8333333333334	31247.5
-114	23	Construction	49	23	15	49015	Emery County, Utah	0	14.25	230.75	9210.0
-115	23	Construction	49	23	15	49015	Emery County, Utah	1	14.0	323.1367521367521	14499.094017094016
-116	23	Construction	49	23	17	49017	Garfield County, Utah	0	14.666666666666666	41.666666666666664	1451.0
-117	23	Construction	49	23	19	49019	Grand County, Utah	0	50.666666666666664	221.5	8576.666666666666
-118	23	Construction	49	23	21	49021	Iron County, Utah	0	190.33333333333334	735.1666666666666	25990.0
-119	23	Construction	49	23	23	49023	Juab County, Utah	0	33.166666666666664	117.83333333333333	5388.5
-120	23	Construction	49	23	25	49025	Kane County, Utah	0	28.333333333333332	86.33333333333333	2501.8333333333335
-121	23	Construction	49	23	27	49027	Millard County, Utah	0	24.166666666666668	63.0	1576.6666666666667
-122	23	Construction	49	23	29	49029	Morgan County, Utah	0	66.5	349.3333333333333	19212.666666666668
-123	23	Construction	49	23	31	49031	Piute County, Utah	1	1.6666666666666667	90.37330542841795	4743.049014738003
-124	23	Construction	49	23	33	49033	Rich County, Utah	0	9.5	34.5	1277.0
-125	23	Construction	49	23	33	49033	Rich County, Utah	1	9.5	219.1196581196581	9824.957264957264
-126	23	Construction	49	23	35	49035	Salt Lake County, Utah	0	3032.8333333333335	30678.666666666668	1644624.8333333333
-127	23	Construction	49	23	37	49037	San Juan County, Utah	0	27.0	178.5	5931.0
-128	23	Construction	49	23	39	49039	Sanpete County, Utah	0	58.5	330.5	11383.5
-129	23	Construction	49	23	41	49041	Sevier County, Utah	0	61.5	288.1666666666667	8706.0
-130	23	Construction	49	23	43	49043	Summit County, Utah	0	287.8333333333333	1183.1666666666667	57223.0
-131	23	Construction	49	23	45	49045	Tooele County, Utah	0	100.66666666666667	550.5	21501.333333333332
-132	23	Construction	49	23	47	49047	Uintah County, Utah	0	121.66666666666667	1239.0	66606.33333333333
-133	23	Construction	49	23	49	49049	Utah County, Utah	0	1421.1666666666667	12141.166666666666	539076.1666666666
-134	23	Construction	49	23	51	49051	Wasatch County, Utah	0	159.16666666666666	697.3333333333334	42777.333333333336
-135	23	Construction	49	23	53	49053	Washington County, Utah	0	690.0	4472.666666666667	161452.0
-136	23	Construction	49	23	55	49055	Wayne County, Utah	0	20.166666666666668	99.83333333333333	4180.833333333333
-137	23	Construction	49	23	57	49057	Weber County, Utah	0	671.6666666666666	4951.5	224523.0
-138	42	Wholesale trade	49	42	1	49001	Beaver County, Utah	1	1.0	62.11360207993729	5392.715539276092
-139	42	Wholesale trade	49	42	3	49003	Box Elder County, Utah	0	40.166666666666664	486.8333333333333	21127.0
-140	42	Wholesale trade	49	42	5	49005	Cache County, Utah	0	130.33333333333334	1084.1666666666667	46166.833333333336
-141	42	Wholesale trade	49	42	7	49007	Carbon County, Utah	0	36.5	290.6666666666667	15888.5
-142	42	Wholesale trade	49	42	9	49009	Daggett County, Utah	1	1.0	62.0	5331.857142857142
-143	42	Wholesale trade	49	42	11	49011	Davis County, Utah	0	291.8333333333333	2679.6666666666665	122013.33333333333
-144	42	Wholesale trade	49	42	13	49013	Duchesne County, Utah	0	23.166666666666668	212.5	9294.333333333334
-145	42	Wholesale trade	49	42	15	49015	Emery County, Utah	0	6.0	68.5	4545.5
-146	42	Wholesale trade	49	42	15	49015	Emery County, Utah	1	5.25	230.66388428639834	20166.026537355683
-147	42	Wholesale trade	49	42	17	49017	Garfield County, Utah	0	5.666666666666667	30.0	480.3333333333333
-148	42	Wholesale trade	49	42	19	49019	Grand County, Utah	0	13.666666666666666	109.16666666666667	3950.8333333333335
-149	42	Wholesale trade	49	42	21	49021	Iron County, Utah	0	43.666666666666664	278.5	13724.166666666666
-150	42	Wholesale trade	49	42	23	49023	Juab County, Utah	0	7.0	54.5	2176.0
-151	42	Wholesale trade	49	42	25	49025	Kane County, Utah	0	3.6666666666666665	4.333333333333333	82.33333333333333
-152	42	Wholesale trade	49	42	25	49025	Kane County, Utah	1	4.666666666666667	304.96871008939974	23333.813993796753
-153	42	Wholesale trade	49	42	27	49027	Millard County, Utah	0	12.833333333333334	45.666666666666664	2469.0
-154	42	Wholesale trade	49	42	29	49029	Morgan County, Utah	1	9.0	511.0657095755252	44272.051051432856
-155	42	Wholesale trade	49	42	31	49031	Piute County, Utah	1	1.0	65.12707535121328	5022.219941616493
-156	42	Wholesale trade	49	42	33	49033	Rich County, Utah	0	4.0	9.0	293.0
-157	42	Wholesale trade	49	42	33	49033	Rich County, Utah	1	1.5	126.05111459421805	10848.989451161866
-158	42	Wholesale trade	49	42	35	49035	Salt Lake County, Utah	0	1948.6666666666667	35063.5	2191117.1666666665
-159	42	Wholesale trade	49	42	37	49037	San Juan County, Utah	0	5.2	12.8	625.0
-160	42	Wholesale trade	49	42	37	49037	San Juan County, Utah	1	6.0	246.6206896551724	20906.48275862069
-161	42	Wholesale trade	49	42	39	49039	Sanpete County, Utah	0	9.333333333333334	48.333333333333336	1743.8333333333333
-162	42	Wholesale trade	49	42	41	49041	Sevier County, Utah	0	16.5	213.0	6869.166666666667
-163	42	Wholesale trade	49	42	43	49043	Summit County, Utah	0	61.666666666666664	614.0	42475.0
-164	42	Wholesale trade	49	42	45	49045	Tooele County, Utah	0	17.0	107.83333333333333	5836.666666666667
-165	42	Wholesale trade	49	42	47	49047	Uintah County, Utah	0	63.833333333333336	506.6666666666667	31308.666666666668
-166	42	Wholesale trade	49	42	49	49049	Utah County, Utah	0	459.1666666666667	7766.166666666667	428714.8333333333
-167	42	Wholesale trade	49	42	51	49051	Wasatch County, Utah	0	23.833333333333332	39.5	2393.8333333333335
-168	42	Wholesale trade	49	42	53	49053	Washington County, Utah	0	174.33333333333334	1465.5	63402.0
-169	42	Wholesale trade	49	42	55	49055	Wayne County, Utah	1	1.0	62.11360207993729	5392.715539276092
-170	42	Wholesale trade	49	42	57	49057	Weber County, Utah	0	213.83333333333334	3311.3333333333335	156306.33333333334
-171	51	Information	49	51	3	49003	Box Elder County, Utah	0	9.25	69.0	1695.5
-172	51	Information	49	51	3	49003	Box Elder County, Utah	1	9.5	175.46867007672634	9837.161764705881
-173	51	Information	49	51	5	49005	Cache County, Utah	0	48.0	787.8333333333334	27576.666666666668
-174	51	Information	49	51	7	49007	Carbon County, Utah	0	7.833333333333333	82.83333333333333	2276.3333333333335
-175	51	Information	49	51	9	49009	Daggett County, Utah	1	1.5	35.47935101901306	2329.4087740991768
-176	51	Information	49	51	11	49011	Davis County, Utah	0	100.33333333333333	1072.5	39678.0
-177	51	Information	49	51	13	49013	Duchesne County, Utah	0	7.0	224.33333333333334	10215.0
-178	51	Information	49	51	13	49013	Duchesne County, Utah	1	7.0	148.48980438238752	8148.50079491256
-179	51	Information	49	51	15	49015	Emery County, Utah	1	2.8333333333333335	69.45442364757857	4916.249904703465
-180	51	Information	49	51	17	49017	Garfield County, Utah	1	2.5	65.7012900792276	4763.927832631393
-181	51	Information	49	51	19	49019	Grand County, Utah	0	9.0	37.833333333333336	1974.0
-182	51	Information	49	51	21	49021	Iron County, Utah	0	18.0	151.5	7078.5
-183	51	Information	49	51	23	49023	Juab County, Utah	1	2.0	49.745872840542184	3494.7460060679878
-184	51	Information	49	51	25	49025	Kane County, Utah	0	3.6	7.4	451.0
-185	51	Information	49	51	25	49025	Kane County, Utah	1	2.0	53.375	4486.0
-186	51	Information	49	51	27	49027	Millard County, Utah	0	6.0	29.666666666666668	745.6666666666666
-187	51	Information	49	51	27	49027	Millard County, Utah	1	6.0	127.27697518490358	6984.4292527821935
-188	51	Information	49	51	29	49029	Morgan County, Utah	1	2.0	49.745872840542184	3494.7460060679878
-189	51	Information	49	51	33	49033	Rich County, Utah	1	1.0	24.872936420271092	1747.3730030339939
-190	51	Information	49	51	35	49035	Salt Lake County, Utah	0	661.0	24461.0	1550040.6666666667
-191	51	Information	49	51	37	49037	San Juan County, Utah	1	1.8333333333333333	46.27038264446376	3272.721496264066
-192	51	Information	49	51	39	49039	Sanpete County, Utah	0	11.333333333333334	163.5	7712.0
-193	51	Information	49	51	41	49041	Sevier County, Utah	0	6.166666666666667	30.166666666666668	1385.8333333333333
-194	51	Information	49	51	43	49043	Summit County, Utah	0	39.166666666666664	320.8333333333333	14471.833333333334
-195	51	Information	49	51	45	49045	Tooele County, Utah	0	12.666666666666666	150.0	5230.0
-196	51	Information	49	51	47	49047	Uintah County, Utah	0	8.0	111.0	4698.0
-197	51	Information	49	51	47	49047	Uintah County, Utah	1	9.5	205.7646886016451	10416.087837837838
-198	51	Information	49	51	49	49049	Utah County, Utah	0	318.1666666666667	11734.0	989467.1666666666
-199	51	Information	49	51	51	49051	Wasatch County, Utah	0	12.166666666666666	78.5	3138.5
-200	51	Information	49	51	53	49053	Washington County, Utah	0	73.0	747.5	28519.333333333332
-201	51	Information	49	51	55	49055	Wayne County, Utah	1	1.0	29.455815464587396	2374.5116959064326
-202	51	Information	49	51	57	49057	Weber County, Utah	0	56.166666666666664	924.1666666666666	43904.833333333336
-203	52	Finance and insurance	49	52	1	49001	Beaver County, Utah	0	8.166666666666666	32.833333333333336	1332.3333333333333
-204	52	Finance and insurance	49	52	3	49003	Box Elder County, Utah	0	63.5	284.1666666666667	10700.666666666666
-205	52	Finance and insurance	49	52	5	49005	Cache County, Utah	0	197.5	1226.3333333333333	50593.833333333336
-206	52	Finance and insurance	49	52	7	49007	Carbon County, Utah	0	32.25	227.0	8764.0
-207	52	Finance and insurance	49	52	7	49007	Carbon County, Utah	1	35.5	1559.3727272727274	74248.33030303029
-208	52	Finance and insurance	49	52	11	49011	Davis County, Utah	0	478.0	2645.6666666666665	131567.0
-209	52	Finance and insurance	49	52	13	49013	Duchesne County, Utah	0	23.333333333333332	104.16666666666667	3820.0
-210	52	Finance and insurance	49	52	15	49015	Emery County, Utah	0	10.0	46.166666666666664	1268.6666666666667
-211	52	Finance and insurance	49	52	17	49017	Garfield County, Utah	0	5.0	18.166666666666668	520.6666666666666
-212	52	Finance and insurance	49	52	19	49019	Grand County, Utah	0	13.5	67.0	2917.0
-213	52	Finance and insurance	49	52	21	49021	Iron County, Utah	0	72.33333333333333	440.1666666666667	19050.0
-214	52	Finance and insurance	49	52	23	49023	Juab County, Utah	0	9.833333333333334	16.333333333333332	1380.5
-215	52	Finance and insurance	49	52	25	49025	Kane County, Utah	0	15.166666666666666	76.33333333333333	3934.0
-216	52	Finance and insurance	49	52	27	49027	Millard County, Utah	0	14.666666666666666	55.166666666666664	2129.3333333333335
-217	52	Finance and insurance	49	52	29	49029	Morgan County, Utah	0	14.0	41.75	2370.25
-218	52	Finance and insurance	49	52	29	49029	Morgan County, Utah	1	12.5	548.7716577540107	26141.117112299464
-219	52	Finance and insurance	49	52	31	49031	Piute County, Utah	1	1.5	603.1425962455544	39823.471468542004
-220	52	Finance and insurance	49	52	33	49033	Rich County, Utah	1	1.6666666666666667	769.5314851344433	52287.082579653106
-221	52	Finance and insurance	49	52	35	49035	Salt Lake County, Utah	0	2364.3333333333335	40384.166666666664	2798465.0
-222	52	Finance and insurance	49	52	37	49037	San Juan County, Utah	0	12.5	74.16666666666667	2242.6666666666665
-223	52	Finance and insurance	49	52	39	49039	Sanpete County, Utah	0	33.333333333333336	134.83333333333334	4626.0
-224	52	Finance and insurance	49	52	41	49041	Sevier County, Utah	0	32.333333333333336	136.33333333333334	5964.833333333333
-225	52	Finance and insurance	49	52	43	49043	Summit County, Utah	0	94.16666666666667	776.3333333333334	98827.5
-226	52	Finance and insurance	49	52	45	49045	Tooele County, Utah	0	46.166666666666664	187.0	6730.833333333333
-227	52	Finance and insurance	49	52	47	49047	Uintah County, Utah	0	40.333333333333336	199.66666666666666	9362.0
-228	52	Finance and insurance	49	52	49	49049	Utah County, Utah	0	752.5	5171.0	314551.5
-229	52	Finance and insurance	49	52	51	49051	Wasatch County, Utah	0	38.833333333333336	144.66666666666666	8647.5
-230	52	Finance and insurance	49	52	53	49053	Washington County, Utah	0	252.5	1405.1666666666667	73130.33333333333
-231	52	Finance and insurance	49	52	55	49055	Wayne County, Utah	1	1.0	149.91408199643493	6155.5403446226965
-232	52	Finance and insurance	49	52	57	49057	Weber County, Utah	0	341.8333333333333	3977.5	206690.33333333334
-233	53	Real estate and rental and leasing	49	53	1	49001	Beaver County, Utah	1	1.5	11.12304666388347	181.10765120696965
-234	53	Real estate and rental and leasing	49	53	3	49003	Box Elder County, Utah	0	51.833333333333336	52.333333333333336	1405.1666666666667
-235	53	Real estate and rental and leasing	49	53	5	49005	Cache County, Utah	0	201.0	640.6666666666666	21460.666666666668
-236	53	Real estate and rental and leasing	49	53	7	49007	Carbon County, Utah	0	17.833333333333332	53.833333333333336	1718.6666666666667
-237	53	Real estate and rental and leasing	49	53	9	49009	Daggett County, Utah	1	1.1666666666666667	10.921138716557119	158.61664611630536
-238	53	Real estate and rental and leasing	49	53	11	49011	Davis County, Utah	0	429.0	1239.8333333333333	46079.333333333336
-239	53	Real estate and rental and leasing	49	53	13	49013	Duchesne County, Utah	0	29.166666666666668	158.0	11079.666666666666
-240	53	Real estate and rental and leasing	49	53	17	49017	Garfield County, Utah	0	4.2	3.8	162.2
-241	53	Real estate and rental and leasing	49	53	17	49017	Garfield County, Utah	1	2.0	15.600000000000001	292.6
-242	53	Real estate and rental and leasing	49	53	19	49019	Grand County, Utah	0	33.0	141.0	3688.8333333333335
-243	53	Real estate and rental and leasing	49	53	21	49021	Iron County, Utah	0	83.83333333333333	160.33333333333334	4595.833333333333
-244	53	Real estate and rental and leasing	49	53	23	49023	Juab County, Utah	0	4.0	24.0	334.0
-245	53	Real estate and rental and leasing	49	53	23	49023	Juab County, Utah	1	2.5	32.482692307692304	350.3269230769231
-246	53	Real estate and rental and leasing	49	53	25	49025	Kane County, Utah	0	17.0	22.333333333333332	900.0
-247	53	Real estate and rental and leasing	49	53	27	49027	Millard County, Utah	0	3.5	2.0	83.5
-248	53	Real estate and rental and leasing	49	53	27	49027	Millard County, Utah	1	3.0	20.720124224507032	358.04990752337403
-249	53	Real estate and rental and leasing	49	53	29	49029	Morgan County, Utah	0	9.0	23.5	754.3333333333334
-250	53	Real estate and rental and leasing	49	53	33	49033	Rich County, Utah	0	11.5	19.0	1571.6666666666667
-251	53	Real estate and rental and leasing	49	53	35	49035	Salt Lake County, Utah	0	2118.0	10476.833333333334	475225.8333333333
-252	53	Real estate and rental and leasing	49	53	37	49037	San Juan County, Utah	0	4.0	15.333333333333334	350.3333333333333
-253	53	Real estate and rental and leasing	49	53	37	49037	San Juan County, Utah	1	3.3333333333333335	59.753846153846155	601.3384615384616
-254	53	Real estate and rental and leasing	49	53	39	49039	Sanpete County, Utah	0	13.833333333333334	31.833333333333332	630.1666666666666
-255	53	Real estate and rental and leasing	49	53	41	49041	Sevier County, Utah	0	15.0	77.33333333333333	3003.1666666666665
-256	53	Real estate and rental and leasing	49	53	43	49043	Summit County, Utah	0	289.1666666666667	1191.5	41593.166666666664
-257	53	Real estate and rental and leasing	49	53	45	49045	Tooele County, Utah	0	37.666666666666664	95.66666666666667	2503.3333333333335
-258	53	Real estate and rental and leasing	49	53	47	49047	Uintah County, Utah	0	71.16666666666667	409.8333333333333	23238.166666666668
-259	53	Real estate and rental and leasing	49	53	49	49049	Utah County, Utah	0	772.8333333333334	2412.0	83497.0
-260	53	Real estate and rental and leasing	49	53	51	49051	Wasatch County, Utah	0	57.5	128.66666666666666	5211.333333333333
-261	53	Real estate and rental and leasing	49	53	53	49053	Washington County, Utah	0	349.8333333333333	853.3333333333334	23346.166666666668
-262	53	Real estate and rental and leasing	49	53	55	49055	Wayne County, Utah	1	1.25	17.68269230769231	194.3519230769231
-263	53	Real estate and rental and leasing	49	53	57	49057	Weber County, Utah	0	303.1666666666667	1099.5	32447.5
-264	54	Professional, scientific, and technical services	49	54	1	49001	Beaver County, Utah	0	6.0	11.5	329.3333333333333
-265	54	Professional, scientific, and technical services	49	54	3	49003	Box Elder County, Utah	0	57.833333333333336	226.83333333333334	8271.5
-266	54	Professional, scientific, and technical services	49	54	5	49005	Cache County, Utah	0	399.5	3003.3333333333335	112265.83333333333
-267	54	Professional, scientific, and technical services	49	54	7	49007	Carbon County, Utah	0	32.0	91.0	4764.5
-268	54	Professional, scientific, and technical services	49	54	9	49009	Daggett County, Utah	1	1.0	2267.185526484014	65750.0602240832
-269	54	Professional, scientific, and technical services	49	54	11	49011	Davis County, Utah	0	992.5	8066.0	416507.3333333333
-270	54	Professional, scientific, and technical services	49	54	13	49013	Duchesne County, Utah	0	53.166666666666664	212.66666666666666	8434.0
-271	54	Professional, scientific, and technical services	49	54	15	49015	Emery County, Utah	0	11.0	90.33333333333333	2214.1666666666665
-272	54	Professional, scientific, and technical services	49	54	17	49017	Garfield County, Utah	0	7.0	20.0	425.6666666666667
-273	54	Professional, scientific, and technical services	49	54	17	49017	Garfield County, Utah	1	8.0	1860.9472052697859	38132.03387506614
-274	54	Professional, scientific, and technical services	49	54	19	49019	Grand County, Utah	0	28.0	130.0	5526.666666666667
-275	54	Professional, scientific, and technical services	49	54	21	49021	Iron County, Utah	0	119.16666666666667	410.1666666666667	15134.333333333334
-276	54	Professional, scientific, and technical services	49	54	23	49023	Juab County, Utah	0	17.8	289.4	14233.8
-277	54	Professional, scientific, and technical services	49	54	23	49023	Juab County, Utah	1	18.0	4279.935483870968	81156.1935483871
-278	54	Professional, scientific, and technical services	49	54	25	49025	Kane County, Utah	0	13.333333333333334	19.5	872.6666666666666
-279	54	Professional, scientific, and technical services	49	54	27	49027	Millard County, Utah	0	11.666666666666666	77.66666666666667	4103.166666666667
-280	54	Professional, scientific, and technical services	49	54	29	49029	Morgan County, Utah	0	31.833333333333332	82.83333333333333	3817.6666666666665
-281	54	Professional, scientific, and technical services	49	54	33	49033	Rich County, Utah	0	8.4	13.2	712.2
-282	54	Professional, scientific, and technical services	49	54	33	49033	Rich County, Utah	1	6.0	1466.0	31370.923076923078
-283	54	Professional, scientific, and technical services	49	54	35	49035	Salt Lake County, Utah	0	4416.166666666667	44026.0	2679454.1666666665
-284	54	Professional, scientific, and technical services	49	54	37	49037	San Juan County, Utah	0	14.333333333333334	19.333333333333332	573.5
-285	54	Professional, scientific, and technical services	49	54	39	49039	Sanpete County, Utah	0	22.0	465.0	13642.75
-286	54	Professional, scientific, and technical services	49	54	39	49039	Sanpete County, Utah	1	24.0	5503.045045045044	117993.5751905752
-287	54	Professional, scientific, and technical services	49	54	41	49041	Sevier County, Utah	0	35.5	126.5	5130.166666666667
-288	54	Professional, scientific, and technical services	49	54	43	49043	Summit County, Utah	0	368.1666666666667	1073.5	72194.66666666667
-289	54	Professional, scientific, and technical services	49	54	45	49045	Tooele County, Utah	0	75.0	933.8333333333334	59433.5
-290	54	Professional, scientific, and technical services	49	54	47	49047	Uintah County, Utah	0	96.5	486.5	23656.0
-291	54	Professional, scientific, and technical services	49	54	49	49049	Utah County, Utah	0	1852.3333333333333	13451.166666666666	741520.6666666666
-292	54	Professional, scientific, and technical services	49	54	51	49051	Wasatch County, Utah	0	124.83333333333333	431.0	22034.833333333332
-293	54	Professional, scientific, and technical services	49	54	53	49053	Washington County, Utah	0	518.8333333333334	1902.5	79564.66666666667
-294	54	Professional, scientific, and technical services	49	54	55	49055	Wayne County, Utah	0	4.666666666666667	6.0	139.0
-295	54	Professional, scientific, and technical services	49	54	55	49055	Wayne County, Utah	1	2.6666666666666665	626.4859052600988	12838.714148391568
-296	54	Professional, scientific, and technical services	49	54	57	49057	Weber County, Utah	0	522.5	5008.333333333333	196015.5
-297	55	Management of companies and enterprises	49	55	3	49003	Box Elder County, Utah	0	4.0	115.0	6535.0
-298	55	Management of companies and enterprises	49	55	3	49003	Box Elder County, Utah	1	2.0	50.2234335839599	2774.0475563909777
-299	55	Management of companies and enterprises	49	55	5	49005	Cache County, Utah	0	12.6	65.2	4269.4
-300	55	Management of companies and enterprises	49	55	5	49005	Cache County, Utah	1	13.0	206.26666666666668	12948.433333333334
-301	55	Management of companies and enterprises	49	55	7	49007	Carbon County, Utah	0	3.0	8.0	866.5
-302	55	Management of companies and enterprises	49	55	7	49007	Carbon County, Utah	1	2.0	59.46811707486539	4303.469741184645
-303	55	Management of companies and enterprises	49	55	11	49011	Davis County, Utah	0	38.166666666666664	1340.6666666666667	113225.33333333333
-304	55	Management of companies and enterprises	49	55	13	49013	Duchesne County, Utah	1	1.0	35.93045733144743	2471.9373880245166
-305	55	Management of companies and enterprises	49	55	15	49015	Emery County, Utah	1	1.5	48.24699868483089	3211.1703036469057
-306	55	Management of companies and enterprises	49	55	19	49019	Grand County, Utah	1	2.0	62.137474875307085	3885.3718909484937
-307	55	Management of companies and enterprises	49	55	21	49021	Iron County, Utah	1	5.0	160.61685236192793	10343.845246780316
-308	55	Management of companies and enterprises	49	55	27	49027	Millard County, Utah	1	1.0	31.068737437653542	1942.6859454742469
-309	55	Management of companies and enterprises	49	55	29	49029	Morgan County, Utah	1	1.0	38.82425742574257	3048.5846534653465
-310	55	Management of companies and enterprises	49	55	35	49035	Salt Lake County, Utah	0	287.8333333333333	17213.833333333332	1534439.8333333333
-311	55	Management of companies and enterprises	49	55	37	49037	San Juan County, Utah	1	1.0	31.068737437653542	1942.6859454742469
-312	55	Management of companies and enterprises	49	55	39	49039	Sanpete County, Utah	1	1.0	31.068737437653542	1942.6859454742469
-313	55	Management of companies and enterprises	49	55	43	49043	Summit County, Utah	0	14.666666666666666	345.1666666666667	29000.666666666668
-314	55	Management of companies and enterprises	49	55	45	49045	Tooele County, Utah	0	7.0	95.33333333333333	5887.833333333333
-315	55	Management of companies and enterprises	49	55	47	49047	Uintah County, Utah	1	1.8333333333333333	61.47841054782171	3755.499083930949
-316	55	Management of companies and enterprises	49	55	49	49049	Utah County, Utah	0	60.833333333333336	1984.6666666666667	155932.5
-317	55	Management of companies and enterprises	49	55	51	49051	Wasatch County, Utah	0	3.0	6.666666666666667	205.66666666666666
-318	55	Management of companies and enterprises	49	55	51	49051	Wasatch County, Utah	1	1.3333333333333333	36.46061606160617	2696.4119911991197
-319	55	Management of companies and enterprises	49	55	53	49053	Washington County, Utah	0	13.166666666666666	19.166666666666668	4689.666666666667
-320	55	Management of companies and enterprises	49	55	57	49057	Weber County, Utah	0	23.166666666666668	742.6666666666666	75578.0
-321	56	Administrative and support and waste management and remediation services	49	56	1	49001	Beaver County, Utah	0	6.6	14.4	591.2
-322	56	Administrative and support and waste management and remediation services	49	56	1	49001	Beaver County, Utah	1	5.0	3842.4489795918366	134193.16326530612
-323	56	Administrative and support and waste management and remediation services	49	56	3	49003	Box Elder County, Utah	0	40.5	801.0	17538.833333333332
-324	56	Administrative and support and waste management and remediation services	49	56	5	49005	Cache County, Utah	0	161.66666666666666	1828.1666666666667	35189.333333333336
-325	56	Administrative and support and waste management and remediation services	49	56	7	49007	Carbon County, Utah	0	18.5	331.3333333333333	9682.166666666666
-326	56	Administrative and support and waste management and remediation services	49	56	9	49009	Daggett County, Utah	1	1.5	1487.9020408163265	51797.630612244895
-327	56	Administrative and support and waste management and remediation services	49	56	11	49011	Davis County, Utah	0	405.5	4299.166666666667	132710.0
-328	56	Administrative and support and waste management and remediation services	49	56	13	49013	Duchesne County, Utah	0	27.666666666666668	107.33333333333333	3885.3333333333335
-329	56	Administrative and support and waste management and remediation services	49	56	15	49015	Emery County, Utah	0	4.0	7.0	315.0
-330	56	Administrative and support and waste management and remediation services	49	56	15	49015	Emery County, Utah	1	4.0	9634.530867346939	341549.50051020406
-331	56	Administrative and support and waste management and remediation services	49	56	17	49017	Garfield County, Utah	0	4.833333333333333	9.666666666666666	244.83333333333334
-332	56	Administrative and support and waste management and remediation services	49	56	19	49019	Grand County, Utah	0	15.666666666666666	83.5	2780.5
-333	56	Administrative and support and waste management and remediation services	49	56	21	49021	Iron County, Utah	0	63.166666666666664	648.1666666666666	13373.833333333334
-334	56	Administrative and support and waste management and remediation services	49	56	23	49023	Juab County, Utah	0	7.333333333333333	31.0	2803.3333333333335
-335	56	Administrative and support and waste management and remediation services	49	56	23	49023	Juab County, Utah	1	8.0	8479.506717687074	294437.25493197277
-336	56	Administrative and support and waste management and remediation services	49	56	25	49025	Kane County, Utah	0	7.0	17.333333333333332	373.3333333333333
-337	56	Administrative and support and waste management and remediation services	49	56	25	49025	Kane County, Utah	1	7.666666666666667	7999.898554421769	277797.9229591837
-338	56	Administrative and support and waste management and remediation services	49	56	27	49027	Millard County, Utah	0	9.25	97.5	1958.0
-339	56	Administrative and support and waste management and remediation services	49	56	27	49027	Millard County, Utah	1	11.0	13422.583035714286	465021.91607142857
-340	56	Administrative and support and waste management and remediation services	49	56	29	49029	Morgan County, Utah	0	12.0	55.0	1361.0
-341	56	Administrative and support and waste management and remediation services	49	56	31	49031	Piute County, Utah	1	1.5	8433.809503654353	312901.13435233815
-342	56	Administrative and support and waste management and remediation services	49	56	33	49033	Rich County, Utah	0	6.666666666666667	17.5	716.1666666666666
-343	56	Administrative and support and waste management and remediation services	49	56	35	49035	Salt Lake County, Utah	0	1786.0	44780.333333333336	1531677.1666666667
-344	56	Administrative and support and waste management and remediation services	49	56	37	49037	San Juan County, Utah	0	10.4	28.8	1400.6
-345	56	Administrative and support and waste management and remediation services	49	56	37	49037	San Juan County, Utah	1	9.0	6916.408163265307	241547.69387755104
-346	56	Administrative and support and waste management and remediation services	49	56	39	49039	Sanpete County, Utah	0	13.8	92.8	2807.6
-347	56	Administrative and support and waste management and remediation services	49	56	39	49039	Sanpete County, Utah	1	11.0	8453.387755102041	295224.9591836735
-348	56	Administrative and support and waste management and remediation services	49	56	41	49041	Sevier County, Utah	0	22.5	91.33333333333333	3974.8333333333335
-349	56	Administrative and support and waste management and remediation services	49	56	43	49043	Summit County, Utah	0	129.33333333333334	899.0	29559.833333333332
-350	56	Administrative and support and waste management and remediation services	49	56	45	49045	Tooele County, Utah	0	50.0	782.6666666666666	32674.0
-351	56	Administrative and support and waste management and remediation services	49	56	47	49047	Uintah County, Utah	0	42.166666666666664	203.33333333333334	6388.833333333333
-352	56	Administrative and support and waste management and remediation services	49	56	49	49049	Utah County, Utah	0	676.1666666666666	16706.666666666668	560670.5
-353	56	Administrative and support and waste management and remediation services	49	56	51	49051	Wasatch County, Utah	0	69.16666666666667	414.0	14673.333333333334
-354	56	Administrative and support and waste management and remediation services	49	56	53	49053	Washington County, Utah	0	275.6666666666667	1906.3333333333333	55493.0
-355	56	Administrative and support and waste management and remediation services	49	56	55	49055	Wayne County, Utah	1	2.0	7540.319303456644	276395.1641430554
-356	56	Administrative and support and waste management and remediation services	49	56	57	49057	Weber County, Utah	0	288.5	6233.833333333333	155673.5
-357	61	Educational services	49	61	3	49003	Box Elder County, Utah	0	12.0	124.16666666666667	1918.1666666666667
-358	61	Educational services	49	61	5	49005	Cache County, Utah	0	37.0	487.6666666666667	10234.5
-359	61	Educational services	49	61	7	49007	Carbon County, Utah	1	2.0	152.91215977062322	3642.1811927650747
-360	61	Educational services	49	61	11	49011	Davis County, Utah	0	101.83333333333333	1361.5	31890.0
-361	61	Educational services	49	61	13	49013	Duchesne County, Utah	0	3.0	7.0	18.0
-362	61	Educational services	49	61	13	49013	Duchesne County, Utah	1	2.6	204.5952960453152	4925.647325927077
-363	61	Educational services	49	61	15	49015	Emery County, Utah	1	2.0	136.35061497196997	3361.4107554194884
-364	61	Educational services	49	61	17	49017	Garfield County, Utah	0	4.0	82.2	2049.2
-365	61	Educational services	49	61	17	49017	Garfield County, Utah	1	4.0	378.9820788530466	8946.967741935483
-366	61	Educational services	49	61	19	49019	Grand County, Utah	0	10.333333333333334	43.666666666666664	1236.8333333333333
-367	61	Educational services	49	61	21	49021	Iron County, Utah	0	15.166666666666666	211.83333333333334	3941.8333333333335
-368	61	Educational services	49	61	23	49023	Juab County, Utah	1	1.0	68.17530748598499	1680.7053777097442
-369	61	Educational services	49	61	25	49025	Kane County, Utah	1	1.0	68.17530748598499	1680.7053777097442
-370	61	Educational services	49	61	27	49027	Millard County, Utah	1	2.0	184.66903914590748	4136.704626334519
-371	61	Educational services	49	61	29	49029	Morgan County, Utah	0	3.0	6.0	252.0
-372	61	Educational services	49	61	29	49029	Morgan County, Utah	1	2.0	161.16937413390627	3785.8884850158206
-373	61	Educational services	49	61	33	49033	Rich County, Utah	1	2.0	110.77807659089204	2913.3905259961525
-374	61	Educational services	49	61	35	49035	Salt Lake County, Utah	0	454.6666666666667	14296.0	495003.3333333333
-375	61	Educational services	49	61	37	49037	San Juan County, Utah	1	2.5	183.3908168798679	4443.776280377828
-376	61	Educational services	49	61	39	49039	Sanpete County, Utah	1	2.1666666666666665	142.79798339302263	3530.945843138787
-377	61	Educational services	49	61	41	49041	Sevier County, Utah	1	3.8333333333333335	273.8736881471009	6658.866562656686
-378	61	Educational services	49	61	43	49043	Summit County, Utah	0	34.333333333333336	429.3333333333333	10881.166666666666
-379	61	Educational services	49	61	45	49045	Tooele County, Utah	0	11.0	197.8	4013.4
-380	61	Educational services	49	61	45	49045	Tooele County, Utah	1	11.0	1015.6797153024911	22751.875444839858
-381	61	Educational services	49	61	47	49047	Uintah County, Utah	0	11.166666666666666	63.5	1463.3333333333333
-382	61	Educational services	49	61	49	49049	Utah County, Utah	0	265.6666666666667	26382.666666666668	661032.3333333334
-383	61	Educational services	49	61	49	49049	Utah County, Utah	1	237.33333333333334	22330.909993572375	513971.1101091921
-384	61	Educational services	49	61	51	49051	Wasatch County, Utah	0	13.666666666666666	151.66666666666666	3946.6666666666665
-385	61	Educational services	49	61	51	49051	Wasatch County, Utah	1	10.333333333333334	971.582211348943	22336.761270222527
-386	61	Educational services	49	61	53	49053	Washington County, Utah	0	40.5	499.8333333333333	11258.833333333334
-387	61	Educational services	49	61	55	49055	Wayne County, Utah	1	2.6666666666666665	250.79792235893717	5732.731493127085
-388	61	Educational services	49	61	57	49057	Weber County, Utah	0	58.333333333333336	945.6666666666666	25054.833333333332
-389	62	Health care and social assistance	49	62	1	49001	Beaver County, Utah	0	19.5	143.5	8252.5
-390	62	Health care and social assistance	49	62	3	49003	Box Elder County, Utah	0	121.5	1494.0	45426.333333333336
-391	62	Health care and social assistance	49	62	5	49005	Cache County, Utah	0	364.8333333333333	5307.333333333333	176063.5
-392	62	Health care and social assistance	49	62	7	49007	Carbon County, Utah	0	70.16666666666667	951.0	34792.0
-393	62	Health care and social assistance	49	62	11	49011	Davis County, Utah	0	734.3333333333334	9995.833333333334	380394.8333333333
-394	62	Health care and social assistance	49	62	13	49013	Duchesne County, Utah	0	47.5	1077.75	36367.25
-395	62	Health care and social assistance	49	62	13	49013	Duchesne County, Utah	1	52.0	1062.8421610169491	32709.120762711864
-396	62	Health care and social assistance	49	62	15	49015	Emery County, Utah	0	15.166666666666666	151.16666666666666	5101.166666666667
-397	62	Health care and social assistance	49	62	17	49017	Garfield County, Utah	1	7.333333333333333	169.43440568826963	6294.516050947645
-398	62	Health care and social assistance	49	62	19	49019	Grand County, Utah	0	25.666666666666668	358.6666666666667	15643.333333333334
-399	62	Health care and social assistance	49	62	19	49019	Grand County, Utah	1	26.0	542.6935549226637	16164.084224784661
-400	62	Health care and social assistance	49	62	21	49021	Iron County, Utah	0	146.83333333333334	1862.3333333333333	53983.333333333336
-401	62	Health care and social assistance	49	62	23	49023	Juab County, Utah	0	21.666666666666668	480.6666666666667	13838.0
-402	62	Health care and social assistance	49	62	23	49023	Juab County, Utah	1	22.0	459.35316523108276	13690.838404186348
-403	62	Health care and social assistance	49	62	25	49025	Kane County, Utah	0	12.5	224.33333333333334	7692.666666666667
-404	62	Health care and social assistance	49	62	27	49027	Millard County, Utah	0	19.5	240.33333333333334	8514.666666666666
-405	62	Health care and social assistance	49	62	29	49029	Morgan County, Utah	0	27.333333333333332	172.66666666666666	4597.333333333333
-406	62	Health care and social assistance	49	62	31	49031	Piute County, Utah	1	1.0	23.030193926978143	840.3334273880783
-407	62	Health care and social assistance	49	62	33	49033	Rich County, Utah	1	2.0	46.060387853956286	1680.6668547761567
-408	62	Health care and social assistance	49	62	35	49035	Salt Lake County, Utah	0	3021.8333333333335	61583.166666666664	2878200.0
-409	62	Health care and social assistance	49	62	37	49037	San Juan County, Utah	0	30.833333333333332	638.0	26155.333333333332
-410	62	Health care and social assistance	49	62	39	49039	Sanpete County, Utah	0	51.5	880.6666666666666	23970.5
-411	62	Health care and social assistance	49	62	41	49041	Sevier County, Utah	0	61.5	819.3333333333334	27059.5
-412	62	Health care and social assistance	49	62	43	49043	Summit County, Utah	0	148.83333333333334	1221.0	53229.333333333336
-413	62	Health care and social assistance	49	62	45	49045	Tooele County, Utah	0	95.66666666666667	1289.8333333333333	48328.666666666664
-414	62	Health care and social assistance	49	62	47	49047	Uintah County, Utah	0	66.16666666666667	714.5	25939.5
-415	62	Health care and social assistance	49	62	49	49049	Utah County, Utah	0	1291.3333333333333	22791.666666666668	870421.5
-416	62	Health care and social assistance	49	62	51	49051	Wasatch County, Utah	0	68.16666666666667	608.8333333333334	20979.833333333332
-417	62	Health care and social assistance	49	62	53	49053	Washington County, Utah	0	527.8333333333334	8124.0	315036.1666666667
-418	62	Health care and social assistance	49	62	55	49055	Wayne County, Utah	0	5.0	103.0	3482.0
-419	62	Health care and social assistance	49	62	55	49055	Wayne County, Utah	1	5.0	107.92629068051295	3738.0459033115208
-420	62	Health care and social assistance	49	62	57	49057	Weber County, Utah	0	628.8333333333334	10794.833333333334	449207.8333333333
-421	71	Arts, entertainment, and recreation	49	71	1	49001	Beaver County, Utah	1	1.8333333333333333	23.11366752698018	470.2272058752622
-422	71	Arts, entertainment, and recreation	49	71	3	49003	Box Elder County, Utah	0	17.0	133.0	1455.1666666666667
-423	71	Arts, entertainment, and recreation	49	71	5	49005	Cache County, Utah	0	60.666666666666664	877.6666666666666	9788.333333333334
-424	71	Arts, entertainment, and recreation	49	71	7	49007	Carbon County, Utah	0	6.666666666666667	57.666666666666664	571.3333333333334
-425	71	Arts, entertainment, and recreation	49	71	7	49007	Carbon County, Utah	1	5.333333333333333	64.32663559912153	1401.8232685200064
-426	71	Arts, entertainment, and recreation	49	71	9	49009	Daggett County, Utah	0	3.3333333333333335	0.6666666666666666	571.0
-427	71	Arts, entertainment, and recreation	49	71	9	49009	Daggett County, Utah	1	2.6666666666666665	26.885484039769754	541.4346415489273
-428	71	Arts, entertainment, and recreation	49	71	11	49011	Davis County, Utah	0	83.4	1499.2	41558.6
-429	71	Arts, entertainment, and recreation	49	71	11	49011	Davis County, Utah	1	80.0	1239.6850393700788	29846.929133858266
-430	71	Arts, entertainment, and recreation	49	71	13	49013	Duchesne County, Utah	0	3.75	13.5	81.75
-431	71	Arts, entertainment, and recreation	49	71	13	49013	Duchesne County, Utah	1	3.5	38.90979591836735	750.6183673469388
-432	71	Arts, entertainment, and recreation	49	71	15	49015	Emery County, Utah	1	1.0	9.42	209.70000000000002
-433	71	Arts, entertainment, and recreation	49	71	17	49017	Garfield County, Utah	0	3.0	12.25	561.5
-434	71	Arts, entertainment, and recreation	49	71	17	49017	Garfield County, Utah	1	3.0	31.823877551020406	639.1010204081633
-435	71	Arts, entertainment, and recreation	49	71	19	49019	Grand County, Utah	0	24.0	142.83333333333334	3988.0
-436	71	Arts, entertainment, and recreation	49	71	21	49021	Iron County, Utah	0	14.5	126.16666666666667	1531.6666666666667
-437	71	Arts, entertainment, and recreation	49	71	25	49025	Kane County, Utah	0	9.5	55.333333333333336	1931.3333333333333
-438	71	Arts, entertainment, and recreation	49	71	27	49027	Millard County, Utah	1	1.5	18.91560574624123	378.6486676156216
-439	71	Arts, entertainment, and recreation	49	71	29	49029	Morgan County, Utah	0	6.333333333333333	3.0	252.66666666666666
-440	71	Arts, entertainment, and recreation	49	71	29	49029	Morgan County, Utah	1	5.333333333333333	65.56001714071455	1454.063024264824
-441	71	Arts, entertainment, and recreation	49	71	33	49033	Rich County, Utah	1	2.6666666666666665	34.2381493936329	639.237919928658
-442	71	Arts, entertainment, and recreation	49	71	35	49035	Salt Lake County, Utah	0	379.0	8119.166666666667	180050.0
-443	71	Arts, entertainment, and recreation	49	71	37	49037	San Juan County, Utah	0	4.0	3.0	161.0
-444	71	Arts, entertainment, and recreation	49	71	37	49037	San Juan County, Utah	1	2.8	32.57988126227032	602.2909646280771
-445	71	Arts, entertainment, and recreation	49	71	39	49039	Sanpete County, Utah	0	4.333333333333333	5.666666666666667	145.0
-446	71	Arts, entertainment, and recreation	49	71	41	49041	Sevier County, Utah	0	6.0	19.333333333333332	270.0
-447	71	Arts, entertainment, and recreation	49	71	41	49041	Sevier County, Utah	1	4.0	48.94930847929723	1065.538614816005
-448	71	Arts, entertainment, and recreation	49	71	43	49043	Summit County, Utah	0	61.5	5198.666666666667	85483.33333333333
-449	71	Arts, entertainment, and recreation	49	71	45	49045	Tooele County, Utah	0	13.666666666666666	165.33333333333334	3395.6666666666665
-450	71	Arts, entertainment, and recreation	49	71	45	49045	Tooele County, Utah	1	13.333333333333334	160.99187101612299	3480.660742407199
-451	71	Arts, entertainment, and recreation	49	71	47	49047	Uintah County, Utah	0	9.333333333333334	8.333333333333334	386.3333333333333
-452	71	Arts, entertainment, and recreation	49	71	49	49049	Utah County, Utah	0	201.5	1828.6666666666667	39806.166666666664
-453	71	Arts, entertainment, and recreation	49	71	51	49051	Wasatch County, Utah	0	15.0	204.8	4437.6
-454	71	Arts, entertainment, and recreation	49	71	51	49051	Wasatch County, Utah	1	13.0	201.44881889763778	4850.1259842519685
-455	71	Arts, entertainment, and recreation	49	71	53	49053	Washington County, Utah	0	68.0	807.0	15561.166666666666
-456	71	Arts, entertainment, and recreation	49	71	55	49055	Wayne County, Utah	0	3.5	2.5	84.0
-457	71	Arts, entertainment, and recreation	49	71	55	49055	Wayne County, Utah	1	2.0	25.932795062924242	444.9757152042487
-458	71	Arts, entertainment, and recreation	49	71	57	49057	Weber County, Utah	0	51.333333333333336	1949.3333333333333	21078.666666666668
-459	72	Accommodation and food services	49	72	1	49001	Beaver County, Utah	0	31.0	250.83333333333334	3399.0
-460	72	Accommodation and food services	49	72	3	49003	Box Elder County, Utah	0	71.66666666666667	1331.6666666666667	16820.666666666668
-461	72	Accommodation and food services	49	72	5	49005	Cache County, Utah	0	170.0	3345.0	41541.166666666664
-462	72	Accommodation and food services	49	72	7	49007	Carbon County, Utah	0	38.666666666666664	722.3333333333334	8329.833333333334
-463	72	Accommodation and food services	49	72	9	49009	Daggett County, Utah	0	7.4	47.4	1758.0
-464	72	Accommodation and food services	49	72	9	49009	Daggett County, Utah	1	7.0	161.0	1644.0
-465	72	Accommodation and food services	49	72	11	49011	Davis County, Utah	0	439.1666666666667	8909.333333333334	116009.66666666667
-466	72	Accommodation and food services	49	72	13	49013	Duchesne County, Utah	0	36.666666666666664	424.0	5406.0
-467	72	Accommodation and food services	49	72	15	49015	Emery County, Utah	0	21.666666666666668	166.16666666666666	2497.1666666666665
-468	72	Accommodation and food services	49	72	17	49017	Garfield County, Utah	0	60.333333333333336	665.3333333333334	19958.833333333332
-469	72	Accommodation and food services	49	72	19	49019	Grand County, Utah	0	91.16666666666667	1577.5	30282.333333333332
-470	72	Accommodation and food services	49	72	21	49021	Iron County, Utah	0	99.5	1856.8333333333333	23446.0
-471	72	Accommodation and food services	49	72	23	49023	Juab County, Utah	0	26.0	272.3333333333333	3286.1666666666665
-472	72	Accommodation and food services	49	72	25	49025	Kane County, Utah	0	57.5	716.0	18609.0
-473	72	Accommodation and food services	49	72	27	49027	Millard County, Utah	0	29.0	360.3333333333333	4304.833333333333
-474	72	Accommodation and food services	49	72	29	49029	Morgan County, Utah	0	9.666666666666666	114.0	1990.0
-475	72	Accommodation and food services	49	72	31	49031	Piute County, Utah	0	5.0	2.0	187.75
-476	72	Accommodation and food services	49	72	31	49031	Piute County, Utah	1	6.0	156.0	280.5
-477	72	Accommodation and food services	49	72	33	49033	Rich County, Utah	0	15.5	50.833333333333336	2566.3333333333335
-478	72	Accommodation and food services	49	72	35	49035	Salt Lake County, Utah	0	2220.1666666666665	45864.833333333336	756206.1666666666
-479	72	Accommodation and food services	49	72	37	49037	San Juan County, Utah	0	53.666666666666664	711.1666666666666	15148.833333333334
-480	72	Accommodation and food services	49	72	39	49039	Sanpete County, Utah	0	38.5	423.8333333333333	3521.0
-481	72	Accommodation and food services	49	72	41	49041	Sevier County, Utah	0	54.0	871.0	10113.833333333334
-482	72	Accommodation and food services	49	72	43	49043	Summit County, Utah	0	185.66666666666666	6298.333333333333	139277.83333333334
-483	72	Accommodation and food services	49	72	45	49045	Tooele County, Utah	0	72.33333333333333	1125.6666666666667	14414.833333333334
-484	72	Accommodation and food services	49	72	47	49047	Uintah County, Utah	0	69.33333333333333	1039.8333333333333	14245.0
-485	72	Accommodation and food services	49	72	49	49049	Utah County, Utah	0	735.1666666666666	15036.833333333334	201311.66666666666
-486	72	Accommodation and food services	49	72	51	49051	Wasatch County, Utah	0	59.5	1280.8333333333333	20506.333333333332
-487	72	Accommodation and food services	49	72	53	49053	Washington County, Utah	0	328.5	6652.5	101129.33333333333
-488	72	Accommodation and food services	49	72	55	49055	Wayne County, Utah	0	22.666666666666668	147.5	3252.8333333333335
-489	72	Accommodation and food services	49	72	57	49057	Weber County, Utah	0	390.1666666666667	7087.333333333333	94260.33333333333
-490	81	Other services (except public administration)	49	81	1	49001	Beaver County, Utah	0	11.333333333333334	34.666666666666664	1031.8333333333333
-491	81	Other services (except public administration)	49	81	3	49003	Box Elder County, Utah	0	71.5	287.1666666666667	6624.333333333333
-492	81	Other services (except public administration)	49	81	5	49005	Cache County, Utah	0	203.83333333333334	870.0	21786.666666666668
-493	81	Other services (except public administration)	49	81	7	49007	Carbon County, Utah	0	49.666666666666664	283.5	8357.0
-494	81	Other services (except public administration)	49	81	11	49011	Davis County, Utah	0	435.5	2786.8333333333335	68291.66666666667
-495	81	Other services (except public administration)	49	81	13	49013	Duchesne County, Utah	0	43.333333333333336	153.0	4922.333333333333
-496	81	Other services (except public administration)	49	81	15	49015	Emery County, Utah	0	17.333333333333332	107.33333333333333	3906.5
-497	81	Other services (except public administration)	49	81	17	49017	Garfield County, Utah	0	3.0	5.0	34.5
-498	81	Other services (except public administration)	49	81	17	49017	Garfield County, Utah	1	2.0	39.09662591930034	1888.728110713576
-499	81	Other services (except public administration)	49	81	19	49019	Grand County, Utah	0	27.0	56.833333333333336	1921.6666666666667
-500	81	Other services (except public administration)	49	81	21	49021	Iron County, Utah	0	80.66666666666667	313.3333333333333	6538.666666666667
-501	81	Other services (except public administration)	49	81	23	49023	Juab County, Utah	0	6.75	27.5	588.75
-502	81	Other services (except public administration)	49	81	23	49023	Juab County, Utah	1	7.5	166.625	5447.25
-503	81	Other services (except public administration)	49	81	25	49025	Kane County, Utah	0	16.666666666666668	621.6666666666666	24843.333333333332
-504	81	Other services (except public administration)	49	81	25	49025	Kane County, Utah	1	19.333333333333332	508.2797619047619	15612.197751322752
-505	81	Other services (except public administration)	49	81	27	49027	Millard County, Utah	0	16.166666666666668	54.833333333333336	1202.1666666666667
-506	81	Other services (except public administration)	49	81	29	49029	Morgan County, Utah	0	12.5	34.666666666666664	1171.3333333333333
-507	81	Other services (except public administration)	49	81	31	49031	Piute County, Utah	1	1.6666666666666667	33.495220850962134	1500.6721630947648
-508	81	Other services (except public administration)	49	81	33	49033	Rich County, Utah	0	5.4	36.4	793.0
-509	81	Other services (except public administration)	49	81	33	49033	Rich County, Utah	1	3.0	63.46875	2251.96875
-510	81	Other services (except public administration)	49	81	35	49035	Salt Lake County, Utah	0	2150.1666666666665	33753.666666666664	1245496.0
-511	81	Other services (except public administration)	49	81	37	49037	San Juan County, Utah	0	16.5	27.166666666666668	1357.6666666666667
-512	81	Other services (except public administration)	49	81	39	49039	Sanpete County, Utah	0	26.833333333333332	124.16666666666667	3962.1666666666665
-513	81	Other services (except public administration)	49	81	41	49041	Sevier County, Utah	0	31.333333333333332	141.16666666666666	5323.666666666667
-514	81	Other services (except public administration)	49	81	43	49043	Summit County, Utah	0	117.33333333333333	907.5	33915.166666666664
-515	81	Other services (except public administration)	49	81	45	49045	Tooele County, Utah	0	76.16666666666667	330.6666666666667	7454.0
-516	81	Other services (except public administration)	49	81	47	49047	Uintah County, Utah	0	81.16666666666667	406.5	14200.333333333334
-517	81	Other services (except public administration)	49	81	49	49049	Utah County, Utah	0	682.6666666666666	3671.5	101268.83333333333
-518	81	Other services (except public administration)	49	81	51	49051	Wasatch County, Utah	0	53.5	272.1666666666667	7392.666666666667
-519	81	Other services (except public administration)	49	81	53	49053	Washington County, Utah	0	236.0	1197.6666666666667	31390.5
-520	81	Other services (except public administration)	49	81	55	49055	Wayne County, Utah	0	3.75	7.5	364.5
-521	81	Other services (except public administration)	49	81	55	49055	Wayne County, Utah	1	2.5	74.42857142857143	2142.297619047619
-522	81	Other services (except public administration)	49	81	57	49057	Weber County, Utah	0	382.5	2271.3333333333335	57407.666666666664
-523	99	Industries not classified	49	99	3	49003	Box Elder County, Utah	0	3.0	3.3333333333333335	43.0
-524	99	Industries not classified	49	99	3	49003	Box Elder County, Utah	1	1.5	-4.757142857142857	14.32857142857143
-525	99	Industries not classified	49	99	5	49005	Cache County, Utah	0	5.8	4.4	63.8
-526	99	Industries not classified	49	99	5	49005	Cache County, Utah	1	2.0	12.0	63.666666666666664
-527	99	Industries not classified	49	99	7	49007	Carbon County, Utah	1	2.0	-7.800000000000001	23.8
-528	99	Industries not classified	49	99	9	49009	Daggett County, Utah	1	1.0	1.1418439716312054	30.27127659574468
-529	99	Industries not classified	49	99	11	49011	Davis County, Utah	0	7.8	4.2	169.4
-530	99	Industries not classified	49	99	13	49013	Duchesne County, Utah	1	2.0	1.1428571428571428	33.14285714285714
-531	99	Industries not classified	49	99	19	49019	Grand County, Utah	1	2.0	0.5704154002026341	40.985562310030396
-532	99	Industries not classified	49	99	21	49021	Iron County, Utah	0	3.0	0.0	6.0
-533	99	Industries not classified	49	99	21	49021	Iron County, Utah	1	1.0	0.8904761904761903	20.1015873015873
-534	99	Industries not classified	49	99	25	49025	Kane County, Utah	1	1.3333333333333333	1.1421816953731847	31.228470111448832
-535	99	Industries not classified	49	99	33	49033	Rich County, Utah	1	1.0	1.1418439716312054	30.27127659574468
-536	99	Industries not classified	49	99	35	49035	Salt Lake County, Utah	0	29.0	19.5	661.8333333333334
-537	99	Industries not classified	49	99	37	49037	San Juan County, Utah	1	1.0	-1.7142857142857142	4.857142857142857
-538	99	Industries not classified	49	99	43	49043	Summit County, Utah	0	4.666666666666667	3.3333333333333335	175.33333333333334
-539	99	Industries not classified	49	99	43	49043	Summit County, Utah	1	1.5	-3.6642857142857146	10.807142857142857
-540	99	Industries not classified	49	99	45	49045	Tooele County, Utah	0	3.0	1.0	28.0
-541	99	Industries not classified	49	99	45	49045	Tooele County, Utah	1	1.0	1.0959219858156026	26.068971631205674
-542	99	Industries not classified	49	99	47	49047	Uintah County, Utah	1	1.0	-1.7142857142857142	4.857142857142857
-543	99	Industries not classified	49	99	49	49049	Utah County, Utah	0	18.333333333333332	22.166666666666668	967.8333333333334
-544	99	Industries not classified	49	99	53	49053	Washington County, Utah	0	5.4	5.2	96.4
-545	99	Industries not classified	49	99	53	49053	Washington County, Utah	1	1.0	6.0	31.833333333333332
-546	99	Industries not classified	49	99	57	49057	Weber County, Utah	0	6.25	8.25	96.25
-547	99	Industries not classified	49	99	57	49057	Weber County, Utah	1	2.0	-2.8499999999999996	33.766666666666666
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estab	emp	payann	estimate
+0	11	Agriculture, forestry, fishing and hunting	49	11	1	49001	Beaver County, Utah	1.0	5.072472137827631	321.91315288234955	1.0
+1	11	Agriculture, forestry, fishing and hunting	49	11	3	49003	Box Elder County, Utah	2.8846153846153846	5.294423102809158	347.5995682201767	0.8846153846153846
+2	11	Agriculture, forestry, fishing and hunting	49	11	5	49005	Cache County, Utah	10.384615384615385	45.47287052472811	1736.9619552274353	0.8846153846153846
+3	11	Agriculture, forestry, fishing and hunting	49	11	7	49007	Carbon County, Utah	1.0384615384615385	6.0444690482825685	346.65551076799744	1.0
+4	11	Agriculture, forestry, fishing and hunting	49	11	11	49011	Davis County, Utah	3.076923076923077	24.33637638591199	727.892524013654	0.8846153846153846
+5	11	Agriculture, forestry, fishing and hunting	49	11	13	49013	Duchesne County, Utah	4.730769230769231	12.080971659919028	544.335020242915	0.8076923076923077
+6	11	Agriculture, forestry, fishing and hunting	49	11	15	49015	Emery County, Utah	1.0	10.0453216374269	401.5767543859649	1.0
+7	11	Agriculture, forestry, fishing and hunting	49	11	17	49017	Garfield County, Utah	1.96	10.64586335348588	641.0830083210672	1.0
+8	11	Agriculture, forestry, fishing and hunting	49	11	19	49019	Grand County, Utah	1.0	9.387430639685316	429.30276338224076	1.0
+9	11	Agriculture, forestry, fishing and hunting	49	11	21	49021	Iron County, Utah	4.538461538461538	16.954307903998306	314.3973664364531	0.8846153846153846
+10	11	Agriculture, forestry, fishing and hunting	49	11	23	49023	Juab County, Utah	1.0	5.180972073261285	324.74887935538896	1.0
+11	11	Agriculture, forestry, fishing and hunting	49	11	25	49025	Kane County, Utah	1.0	5.55515280896633	330.6587158962026	1.0
+12	11	Agriculture, forestry, fishing and hunting	49	11	27	49027	Millard County, Utah	2.923076923076923	8.953745600804424	343.2605580693816	0.8461538461538461
+13	11	Agriculture, forestry, fishing and hunting	49	11	29	49029	Morgan County, Utah	2.0	11.11030561793266	661.3174317924052	1.0
+14	11	Agriculture, forestry, fishing and hunting	49	11	31	49031	Piute County, Utah	1.0	4.858375021562879	312.72343453510456	1.0
+15	11	Agriculture, forestry, fishing and hunting	49	11	35	49035	Salt Lake County, Utah	14.0	69.51459640928331	4961.800686031234	0.8461538461538461
+16	11	Agriculture, forestry, fishing and hunting	49	11	37	49037	San Juan County, Utah	2.0	11.11030561793266	661.3174317924052	1.0
+17	11	Agriculture, forestry, fishing and hunting	49	11	41	49041	Sevier County, Utah	1.0	7.676470588235294	389.9705882352941	1.0
+18	11	Agriculture, forestry, fishing and hunting	49	11	43	49043	Summit County, Utah	2.8846153846153846	15.597492509087866	946.0867593421749	1.0
+19	11	Agriculture, forestry, fishing and hunting	49	11	47	49047	Uintah County, Utah	3.0384615384615383	7.62697467651028	212.66816503929508	0.8846153846153846
+20	11	Agriculture, forestry, fishing and hunting	49	11	49	49049	Utah County, Utah	17.03846153846154	55.69230769230769	1979.423076923077	0.7692307692307693
+21	11	Agriculture, forestry, fishing and hunting	49	11	51	49051	Wasatch County, Utah	5.076923076923077	6.269230769230769	174.34615384615384	0.7692307692307693
+22	11	Agriculture, forestry, fishing and hunting	49	11	53	49053	Washington County, Utah	4.076923076923077	7.1923076923076925	239.46153846153845	0.7692307692307693
+23	11	Agriculture, forestry, fishing and hunting	49	11	57	49057	Weber County, Utah	6.076923076923077	33.99057184411658	2019.0032107090208	1.0
+24	21	Mining, quarrying, and oil and gas extraction	49	21	1	49001	Beaver County, Utah	2.90625	75.51382647949164	6018.4256247366275	1.0
+25	21	Mining, quarrying, and oil and gas extraction	49	21	3	49003	Box Elder County, Utah	3.875	41.03940217391305	3664.4741847826085	0.84375
+26	21	Mining, quarrying, and oil and gas extraction	49	21	5	49005	Cache County, Utah	3.21875	8.1875	814.65625	0.8125
+27	21	Mining, quarrying, and oil and gas extraction	49	21	7	49007	Carbon County, Utah	10.34375	488.3389730850224	36694.90023427218	0.90625
+28	21	Mining, quarrying, and oil and gas extraction	49	21	9	49009	Daggett County, Utah	1.0	60.87931034482759	5040.551724137931	1.0
+29	21	Mining, quarrying, and oil and gas extraction	49	21	11	49011	Davis County, Utah	7.28125	95.0625	5369.0625	0.8125
+30	21	Mining, quarrying, and oil and gas extraction	49	21	13	49013	Duchesne County, Utah	89.90625	1213.8125	83294.4375	0.8125
+31	21	Mining, quarrying, and oil and gas extraction	49	21	15	49015	Emery County, Utah	5.28125	204.55411440510662	13924.697292708608	0.90625
+32	21	Mining, quarrying, and oil and gas extraction	49	21	17	49017	Garfield County, Utah	1.90625	48.56889086743685	3866.3954359040904	1.0
+33	21	Mining, quarrying, and oil and gas extraction	49	21	19	49019	Grand County, Utah	7.46875	92.78652819821005	6755.282508225849	0.90625
+34	21	Mining, quarrying, and oil and gas extraction	49	21	21	49021	Iron County, Utah	5.25	80.15625	4964.59375	0.8125
+35	21	Mining, quarrying, and oil and gas extraction	49	21	23	49023	Juab County, Utah	1.28125	29.522922646686368	2372.4737253324192	0.9375
+36	21	Mining, quarrying, and oil and gas extraction	49	21	25	49025	Kane County, Utah	2.0	53.889871224109655	4304.06037766508	1.0
+37	21	Mining, quarrying, and oil and gas extraction	49	21	27	49027	Millard County, Utah	5.875	105.3125	6913.6875	0.8125
+38	21	Mining, quarrying, and oil and gas extraction	49	21	29	49029	Morgan County, Utah	2.03125	55.46987122410965	4433.82162766508	1.0
+39	21	Mining, quarrying, and oil and gas extraction	49	21	33	49033	Rich County, Utah	1.0	26.944935612054827	2152.03018883254	1.0
+40	21	Mining, quarrying, and oil and gas extraction	49	21	35	49035	Salt Lake County, Utah	50.46875	2313.8894158002104	207499.9301460911	0.875
+41	21	Mining, quarrying, and oil and gas extraction	49	21	37	49037	San Juan County, Utah	8.34375	149.90625	9019.46875	0.8125
+42	21	Mining, quarrying, and oil and gas extraction	49	21	39	49039	Sanpete County, Utah	4.0	20.34269297841537	1434.0662756646486	0.875
+43	21	Mining, quarrying, and oil and gas extraction	49	21	41	49041	Sevier County, Utah	6.875	608.554653691761	38221.87865918663	0.90625
+44	21	Mining, quarrying, and oil and gas extraction	49	21	43	49043	Summit County, Utah	8.1875	172.625	12592.25	0.8125
+45	21	Mining, quarrying, and oil and gas extraction	49	21	45	49045	Tooele County, Utah	3.03125	78.0414645301395	5142.906534285338	0.90625
+46	21	Mining, quarrying, and oil and gas extraction	49	21	47	49047	Uintah County, Utah	138.5	1316.28125	97398.65625	0.8125
+47	21	Mining, quarrying, and oil and gas extraction	49	21	49	49049	Utah County, Utah	17.0625	125.46728053435115	8761.67820610687	0.875
+48	21	Mining, quarrying, and oil and gas extraction	49	21	51	49051	Wasatch County, Utah	2.1875	39.27372572815534	3034.95603762136	0.875
+49	21	Mining, quarrying, and oil and gas extraction	49	21	53	49053	Washington County, Utah	5.84375	124.45413980620849	9756.499446767737	0.9375
+50	21	Mining, quarrying, and oil and gas extraction	49	21	55	49055	Wayne County, Utah	1.0	26.944935612054827	2152.03018883254	1.0
+51	21	Mining, quarrying, and oil and gas extraction	49	21	57	49057	Weber County, Utah	6.1875	415.51838423584013	26751.098940153017	0.90625
+52	22	Utilities	49	22	1	49001	Beaver County, Utah	3.15625	53.70511542893526	5055.528412512645	1.0
+53	22	Utilities	49	22	3	49003	Box Elder County, Utah	7.09375	122.99944446418448	11576.460037720924	1.0
+54	22	Utilities	49	22	5	49005	Cache County, Utah	4.9375	87.96585901051935	8276.962253595308	1.0
+55	22	Utilities	49	22	7	49007	Carbon County, Utah	7.09375	122.99944446418448	11576.460037720924	1.0
+56	22	Utilities	49	22	11	49011	Davis County, Utah	5.84375	65.36649057174417	5711.173448019672	0.875
+57	22	Utilities	49	22	13	49013	Duchesne County, Utah	8.96875	157.18418212625016	14792.547857177527	1.0
+58	22	Utilities	49	22	15	49015	Emery County, Utah	29.90625	528.1095327429153	49696.10820476417	1.0
+59	22	Utilities	49	22	17	49017	Garfield County, Utah	4.84375	88.04582859331522	8282.95700851828	1.0
+60	22	Utilities	49	22	19	49019	Grand County, Utah	1.0	17.582773435282924	1654.6363989491263	1.0
+61	22	Utilities	49	22	21	49021	Iron County, Utah	7.03125	125.93331224285664	11788.759238520186	0.96875
+62	22	Utilities	49	22	23	49023	Juab County, Utah	1.03125	17.55007369301488	1652.217906681085	1.0
+63	22	Utilities	49	22	25	49025	Kane County, Utah	1.0	17.582773435282924	1654.6363989491263	1.0
+64	22	Utilities	49	22	27	49027	Millard County, Utah	4.0	70.3310937411317	6618.545595796505	1.0
+65	22	Utilities	49	22	29	49029	Morgan County, Utah	2.03125	34.31628216468349	3217.4400773100174	0.96875
+66	22	Utilities	49	22	33	49033	Rich County, Utah	1.0	17.582773435282924	1654.6363989491263	1.0
+67	22	Utilities	49	22	35	49035	Salt Lake County, Utah	68.15625	1967.61298322849	187393.63570121012	0.90625
+68	22	Utilities	49	22	37	49037	San Juan County, Utah	1.0	17.582773435282924	1654.6363989491263	1.0
+69	22	Utilities	49	22	39	49039	Sanpete County, Utah	2.875	5.251825540290602	310.49946074229064	0.9375
+70	22	Utilities	49	22	41	49041	Sevier County, Utah	1.03125	17.55007369301488	1652.217906681085	1.0
+71	22	Utilities	49	22	43	49043	Summit County, Utah	6.125	52.6875	4301.53125	0.8125
+72	22	Utilities	49	22	45	49045	Tooele County, Utah	5.0	30.31890208602062	2450.6199753851383	0.90625
+73	22	Utilities	49	22	47	49047	Uintah County, Utah	5.0	87.91386717641458	8273.181994745633	1.0
+74	22	Utilities	49	22	49	49049	Utah County, Utah	18.46875	198.7259983498986	18344.002942737046	0.90625
+75	22	Utilities	49	22	51	49051	Wasatch County, Utah	1.09375	18.053885947696266	1699.8671215883128	1.0
+76	22	Utilities	49	22	53	49053	Washington County, Utah	10.125	67.9375	5476.40625	0.8125
+77	22	Utilities	49	22	55	49055	Wayne County, Utah	1.0	17.582773435282924	1654.6363989491263	1.0
+78	22	Utilities	49	22	57	49057	Weber County, Utah	8.15625	140.52550407178578	13227.112181625622	1.0
+79	23	Construction	49	23	1	49001	Beaver County, Utah	18.941176470588236	95.47058823529412	2853.823529411765	0.8235294117647058
+80	23	Construction	49	23	3	49003	Box Elder County, Utah	178.94117647058823	1131.9411764705883	52542.794117647056	0.8235294117647058
+81	23	Construction	49	23	5	49005	Cache County, Utah	460.97058823529414	2491.3823529411766	102951.23529411765	0.8235294117647058
+82	23	Construction	49	23	7	49007	Carbon County, Utah	41.64705882352941	357.55882352941177	15127.441176470587	0.8235294117647058
+83	23	Construction	49	23	9	49009	Daggett County, Utah	1.0294117647058822	19.020551008479796	954.7199200694504	1.0
+84	23	Construction	49	23	11	49011	Davis County, Utah	879.8823529411765	7278.529411764706	339082.64705882355	0.8235294117647058
+85	23	Construction	49	23	13	49013	Duchesne County, Utah	82.32352941176471	449.02941176470586	23479.558823529413	0.8235294117647058
+86	23	Construction	49	23	15	49015	Emery County, Utah	13.205882352941176	186.15510306686775	5415.005530417295	0.8823529411764706
+87	23	Construction	49	23	17	49017	Garfield County, Utah	14.941176470588236	44.411764705882355	1488.0588235294117	0.8235294117647058
+88	23	Construction	49	23	19	49019	Grand County, Utah	51.76470588235294	249.08823529411765	8661.764705882353	0.8235294117647058
+89	23	Construction	49	23	21	49021	Iron County, Utah	204.88235294117646	853.6176470588235	30937.764705882353	0.8235294117647058
+90	23	Construction	49	23	23	49023	Juab County, Utah	36.3235294117647	187.14705882352942	7416.441176470588	0.8235294117647058
+91	23	Construction	49	23	25	49025	Kane County, Utah	28.058823529411764	98.41176470588235	2764.676470588235	0.8235294117647058
+92	23	Construction	49	23	27	49027	Millard County, Utah	25.676470588235293	82.76470588235294	2243.176470588235	0.8235294117647058
+93	23	Construction	49	23	29	49029	Morgan County, Utah	70.20588235294117	359.7647058823529	23335.529411764706	0.8235294117647058
+94	23	Construction	49	23	31	49031	Piute County, Utah	1.1176470588235294	23.015523356393345	1186.4836204213843	1.0
+95	23	Construction	49	23	33	49033	Rich County, Utah	8.264705882352942	50.71292106586224	1862.9974861739568	0.8823529411764706
+96	23	Construction	49	23	35	49035	Salt Lake County, Utah	3144.970588235294	32651.29411764706	1805524.5	0.8235294117647058
+97	23	Construction	49	23	37	49037	San Juan County, Utah	27.0	156.6764705882353	5529.117647058823	0.8235294117647058
+98	23	Construction	49	23	39	49039	Sanpete County, Utah	61.38235294117647	358.9117647058824	12486.617647058823	0.8235294117647058
+99	23	Construction	49	23	41	49041	Sevier County, Utah	58.61764705882353	290.5	9680.235294117647	0.8235294117647058
+100	23	Construction	49	23	43	49043	Summit County, Utah	304.44117647058823	1374.9117647058824	65335.58823529412	0.8235294117647058
+101	23	Construction	49	23	45	49045	Tooele County, Utah	108.3529411764706	611.0294117647059	24792.70588235294	0.8235294117647058
+102	23	Construction	49	23	47	49047	Uintah County, Utah	116.17647058823529	1026.5294117647059	52246.17647058824	0.8235294117647058
+103	23	Construction	49	23	49	49049	Utah County, Utah	1499.264705882353	15195.5	683523.0882352941	0.8235294117647058
+104	23	Construction	49	23	51	49051	Wasatch County, Utah	169.73529411764707	787.6470588235294	49952.470588235294	0.8235294117647058
+105	23	Construction	49	23	53	49053	Washington County, Utah	744.3529411764706	5124.35294117647	194930.11764705883	0.8235294117647058
+106	23	Construction	49	23	55	49055	Wayne County, Utah	22.5	112.32352941176471	4261.676470588235	0.8235294117647058
+107	23	Construction	49	23	57	49057	Weber County, Utah	695.8235294117648	5199.794117647059	250092.76470588235	0.8235294117647058
+108	42	Wholesale trade	49	42	1	49001	Beaver County, Utah	1.0	24.241141873061842	1763.1413338184561	1.0
+109	42	Wholesale trade	49	42	3	49003	Box Elder County, Utah	41.65625	493.46875	23054.25	0.8125
+110	42	Wholesale trade	49	42	5	49005	Cache County, Utah	137.375	1126.28125	51731.78125	0.8125
+111	42	Wholesale trade	49	42	7	49007	Carbon County, Utah	36.09375	199.9375	10405.34375	0.8125
+112	42	Wholesale trade	49	42	9	49009	Daggett County, Utah	1.0	62.0	5331.857142857142	1.0
+113	42	Wholesale trade	49	42	11	49011	Davis County, Utah	287.90625	2658.0	125385.75	0.8125
+114	42	Wholesale trade	49	42	13	49013	Duchesne County, Utah	23.03125	174.71875	6880.125	0.8125
+115	42	Wholesale trade	49	42	15	49015	Emery County, Utah	5.09375	96.08844295116779	6564.882918190416	0.9375
+116	42	Wholesale trade	49	42	17	49017	Garfield County, Utah	5.9375	23.5	423.1875	0.8125
+117	42	Wholesale trade	49	42	19	49019	Grand County, Utah	13.9375	121.21875	4634.28125	0.8125
+118	42	Wholesale trade	49	42	21	49021	Iron County, Utah	46.375	339.84375	15009.40625	0.8125
+119	42	Wholesale trade	49	42	23	49023	Juab County, Utah	6.1875	51.65625	1983.4375	0.8125
+120	42	Wholesale trade	49	42	25	49025	Kane County, Utah	3.21875	32.24706657088123	2260.2638119184458	0.90625
+121	42	Wholesale trade	49	42	27	49027	Millard County, Utah	12.96875	65.4375	3120.625	0.8125
+122	42	Wholesale trade	49	42	29	49029	Morgan County, Utah	11.4375	246.96291834229456	17325.09561459397	1.0
+123	42	Wholesale trade	49	42	31	49031	Piute County, Utah	1.0	65.12707535121328	5022.219941616493	1.0
+124	42	Wholesale trade	49	42	33	49033	Rich County, Utah	3.6875	23.631389324277258	1612.4986813952332	0.9375
+125	42	Wholesale trade	49	42	35	49035	Salt Lake County, Utah	1922.125	35564.40625	2252054.53125	0.8125
+126	42	Wholesale trade	49	42	37	49037	San Juan County, Utah	5.0625	22.70689655172414	1253.1088362068965	0.84375
+127	42	Wholesale trade	49	42	39	49039	Sanpete County, Utah	8.25	65.9375	1652.96875	0.8125
+128	42	Wholesale trade	49	42	41	49041	Sevier County, Utah	15.28125	210.5625	6923.46875	0.8125
+129	42	Wholesale trade	49	42	43	49043	Summit County, Utah	66.0	610.75	53763.0625	0.8125
+130	42	Wholesale trade	49	42	45	49045	Tooele County, Utah	17.8125	133.96875	7892.5625	0.8125
+131	42	Wholesale trade	49	42	47	49047	Uintah County, Utah	61.53125	450.875	26173.125	0.8125
+132	42	Wholesale trade	49	42	49	49049	Utah County, Utah	471.21875	9052.21875	480660.53125	0.8125
+133	42	Wholesale trade	49	42	51	49051	Wasatch County, Utah	25.59375	61.84375	3176.40625	0.8125
+134	42	Wholesale trade	49	42	53	49053	Washington County, Utah	179.75	1564.21875	70370.0	0.8125
+135	42	Wholesale trade	49	42	55	49055	Wayne County, Utah	1.0	24.241141873061842	1763.1413338184561	1.0
+136	42	Wholesale trade	49	42	57	49057	Weber County, Utah	215.59375	3260.6875	164570.0	0.8125
+137	51	Information	49	51	3	49003	Box Elder County, Utah	8.25	74.0292918797954	2190.9476102941176	0.875
+138	51	Information	49	51	5	49005	Cache County, Utah	52.875	710.78125	26841.625	0.8125
+139	51	Information	49	51	7	49007	Carbon County, Utah	7.96875	83.78125	2444.25	0.8125
+140	51	Information	49	51	9	49009	Daggett County, Utah	1.09375	30.955578446019448	2156.3039843248825	1.0
+141	51	Information	49	51	11	49011	Davis County, Utah	109.8125	1167.96875	45419.125	0.8125
+142	51	Information	49	51	13	49013	Duchesne County, Utah	7.0	219.38966916084883	10195.140699523054	0.90625
+143	51	Information	49	51	15	49015	Emery County, Utah	2.96875	85.93230482378456	6080.416374675759	1.0
+144	51	Information	49	51	17	49017	Garfield County, Utah	2.90625	85.22859227971875	6051.855986162245	1.0
+145	51	Information	49	51	19	49019	Grand County, Utah	9.8125	68.84375	2472.0625	0.8125
+146	51	Information	49	51	21	49021	Iron County, Utah	18.0	163.28125	7871.90625	0.8125
+147	51	Information	49	51	23	49023	Juab County, Utah	2.0	57.93375141751066	4094.344554500322	1.0
+148	51	Information	49	51	25	49025	Kane County, Utah	3.0625	10.94921875	464.15625	0.84375
+149	51	Information	49	51	27	49027	Millard County, Utah	6.0	35.02596642358471	1192.6964924483307	0.90625
+150	51	Information	49	51	29	49029	Morgan County, Utah	2.0	57.93375141751066	4094.344554500322	1.0
+151	51	Information	49	51	33	49033	Rich County, Utah	1.0	28.96687570875533	2047.172277250161	1.0
+152	51	Information	49	51	35	49035	Salt Lake County, Utah	670.75	25840.625	1749006.75	0.8125
+153	51	Information	49	51	37	49037	San Juan County, Utah	1.96875	57.28209700574596	4052.714958912087	1.0
+154	51	Information	49	51	39	49039	Sanpete County, Utah	12.6875	170.40625	8434.3125	0.8125
+155	51	Information	49	51	41	49041	Sevier County, Utah	5.21875	37.34375	1213.71875	0.8125
+156	51	Information	49	51	43	49043	Summit County, Utah	39.84375	413.59375	16847.71875	0.8125
+157	51	Information	49	51	45	49045	Tooele County, Utah	12.9375	165.4375	5307.1875	0.8125
+158	51	Information	49	51	47	49047	Uintah County, Utah	8.09375	124.23529303760282	5405.567989864865	0.875
+159	51	Information	49	51	49	49049	Utah County, Utah	342.40625	13658.8125	1159174.71875	0.8125
+160	51	Information	49	51	51	49051	Wasatch County, Utah	13.65625	81.34375	3134.03125	0.8125
+161	51	Information	49	51	53	49053	Washington County, Utah	89.25	855.96875	36127.3125	0.8125
+162	51	Information	49	51	55	49055	Wayne County, Utah	1.0	29.87907268170425	2134.7963659147877	1.0
+163	51	Information	49	51	57	49057	Weber County, Utah	56.84375	905.34375	45724.96875	0.8125
+164	52	Finance and insurance	49	52	1	49001	Beaver County, Utah	8.03125	37.84375	1410.0625	0.8125
+165	52	Finance and insurance	49	52	3	49003	Box Elder County, Utah	65.53125	279.15625	11534.5625	0.8125
+166	52	Finance and insurance	49	52	5	49005	Cache County, Utah	203.59375	1262.625	52898.21875	0.8125
+167	52	Finance and insurance	49	52	7	49007	Carbon County, Utah	31.4375	301.33579545454546	13049.333143939393	0.875
+168	52	Finance and insurance	49	52	11	49011	Davis County, Utah	505.625	3007.5	161011.1875	0.8125
+169	52	Finance and insurance	49	52	13	49013	Duchesne County, Utah	22.25	95.09375	3532.375	0.8125
+170	52	Finance and insurance	49	52	15	49015	Emery County, Utah	9.1875	36.28125	1234.0	0.8125
+171	52	Finance and insurance	49	52	17	49017	Garfield County, Utah	5.0	18.84375	633.0625	0.8125
+172	52	Finance and insurance	49	52	19	49019	Grand County, Utah	13.90625	64.5625	3142.0625	0.8125
+173	52	Finance and insurance	49	52	21	49021	Iron County, Utah	74.5	467.65625	21533.0	0.8125
+174	52	Finance and insurance	49	52	23	49023	Juab County, Utah	9.15625	27.4375	1372.78125	0.8125
+175	52	Finance and insurance	49	52	25	49025	Kane County, Utah	15.84375	92.3125	3389.625	0.8125
+176	52	Finance and insurance	49	52	27	49027	Millard County, Utah	14.9375	63.96875	2164.8125	0.8125
+177	52	Finance and insurance	49	52	29	49029	Morgan County, Utah	12.28125	85.01697860962567	3637.1635695187165	0.875
+178	52	Finance and insurance	49	52	31	49031	Piute County, Utah	1.09375	123.2761604271653	8163.148462791578	1.0
+179	52	Finance and insurance	49	52	33	49033	Rich County, Utah	1.125	154.47407709383234	10500.07554612491	1.0
+180	52	Finance and insurance	49	52	35	49035	Salt Lake County, Utah	2388.4375	42120.34375	3038235.375	0.8125
+181	52	Finance and insurance	49	52	37	49037	San Juan County, Utah	12.90625	99.21875	2609.375	0.8125
+182	52	Finance and insurance	49	52	39	49039	Sanpete County, Utah	31.4375	126.03125	4546.375	0.8125
+183	52	Finance and insurance	49	52	41	49041	Sevier County, Utah	32.0625	137.6875	6401.28125	0.8125
+184	52	Finance and insurance	49	52	43	49043	Summit County, Utah	95.65625	1113.25	106074.59375	0.8125
+185	52	Finance and insurance	49	52	45	49045	Tooele County, Utah	48.46875	215.4375	8713.46875	0.8125
+186	52	Finance and insurance	49	52	47	49047	Uintah County, Utah	39.25	199.9375	8968.75	0.8125
+187	52	Finance and insurance	49	52	49	49049	Utah County, Utah	778.90625	5540.6875	354121.46875	0.8125
+188	52	Finance and insurance	49	52	51	49051	Wasatch County, Utah	38.96875	136.0	7429.15625	0.8125
+189	52	Finance and insurance	49	52	53	49053	Washington County, Utah	266.71875	1430.21875	80672.5	0.8125
+190	52	Finance and insurance	49	52	55	49055	Wayne County, Utah	1.0	149.91408199643493	6155.5403446226965	1.0
+191	52	Finance and insurance	49	52	57	49057	Weber County, Utah	345.21875	4254.15625	232680.3125	0.8125
+192	53	Real estate and rental and leasing	49	53	1	49001	Beaver County, Utah	1.903225806451613	8.246580564985127	297.9230355196055	1.0
+193	53	Real estate and rental and leasing	49	53	3	49003	Box Elder County, Utah	57.61290322580645	68.19354838709677	1660.6774193548388	0.8064516129032258
+194	53	Real estate and rental and leasing	49	53	5	49005	Cache County, Utah	215.51612903225808	700.6129032258065	25857.709677419356	0.8064516129032258
+195	53	Real estate and rental and leasing	49	53	7	49007	Carbon County, Utah	17.161290322580644	52.354838709677416	1557.6451612903227	0.8064516129032258
+196	53	Real estate and rental and leasing	49	53	9	49009	Daggett County, Utah	1.032258064516129	5.160635195643931	162.1349668913164	1.0
+197	53	Real estate and rental and leasing	49	53	11	49011	Davis County, Utah	449.96774193548384	1459.3225806451612	54693.58064516129	0.8064516129032258
+198	53	Real estate and rental and leasing	49	53	13	49013	Duchesne County, Utah	23.387096774193548	201.5483870967742	11697.677419354839	0.8064516129032258
+199	53	Real estate and rental and leasing	49	53	17	49017	Garfield County, Utah	3.967741935483871	5.148387096774194	108.18064516129031	0.8387096774193549
+200	53	Real estate and rental and leasing	49	53	19	49019	Grand County, Utah	33.0	166.0	4504.290322580645	0.8064516129032258
+201	53	Real estate and rental and leasing	49	53	21	49021	Iron County, Utah	92.03225806451613	163.29032258064515	4903.225806451613	0.8064516129032258
+202	53	Real estate and rental and leasing	49	53	23	49023	Juab County, Utah	3.806451612903226	25.094540942928038	336.106699751861	0.9354838709677419
+203	53	Real estate and rental and leasing	49	53	25	49025	Kane County, Utah	17.0	26.903225806451612	954.8387096774194	0.8064516129032258
+204	53	Real estate and rental and leasing	49	53	27	49027	Millard County, Utah	3.032258064516129	11.943195909512427	445.89199744814294	0.9354838709677419
+205	53	Real estate and rental and leasing	49	53	29	49029	Morgan County, Utah	9.806451612903226	19.870967741935484	795.1935483870968	0.8064516129032258
+206	53	Real estate and rental and leasing	49	53	33	49033	Rich County, Utah	12.709677419354838	35.12903225806452	1765.483870967742	0.8064516129032258
+207	53	Real estate and rental and leasing	49	53	35	49035	Salt Lake County, Utah	2233.3225806451615	10275.354838709678	503500.96774193546	0.8064516129032258
+208	53	Real estate and rental and leasing	49	53	37	49037	San Juan County, Utah	3.935483870967742	17.750372208436726	376.77468982630273	0.9032258064516129
+209	53	Real estate and rental and leasing	49	53	39	49039	Sanpete County, Utah	13.96774193548387	33.58064516129032	682.4516129032259	0.8064516129032258
+210	53	Real estate and rental and leasing	49	53	41	49041	Sevier County, Utah	16.612903225806452	70.61290322580645	2763.516129032258	0.8064516129032258
+211	53	Real estate and rental and leasing	49	53	43	49043	Summit County, Utah	311.61290322580646	1323.3548387096773	47258.354838709674	0.8064516129032258
+212	53	Real estate and rental and leasing	49	53	45	49045	Tooele County, Utah	38.74193548387097	98.35483870967742	2850.6451612903224	0.8064516129032258
+213	53	Real estate and rental and leasing	49	53	47	49047	Uintah County, Utah	61.354838709677416	281.741935483871	14833.193548387097	0.8064516129032258
+214	53	Real estate and rental and leasing	49	53	49	49049	Utah County, Utah	829.4193548387096	2774.0967741935483	100272.80645161291	0.8064516129032258
+215	53	Real estate and rental and leasing	49	53	51	49051	Wasatch County, Utah	67.58064516129032	147.48387096774192	6236.870967741936	0.8064516129032258
+216	53	Real estate and rental and leasing	49	53	53	49053	Washington County, Utah	374.96774193548384	880.483870967742	25221.83870967742	0.8064516129032258
+217	53	Real estate and rental and leasing	49	53	55	49055	Wayne County, Utah	1.25	17.68269230769231	194.3519230769231	1.0
+218	53	Real estate and rental and leasing	49	53	57	49057	Weber County, Utah	318.35483870967744	1005.5483870967741	33038.22580645161	0.8064516129032258
+219	54	Professional, scientific, and technical services	49	54	1	49001	Beaver County, Utah	6.818181818181818	14.363636363636363	397.7878787878788	0.8181818181818182
+220	54	Professional, scientific, and technical services	49	54	3	49003	Box Elder County, Utah	59.60606060606061	242.5151515151515	8578.727272727272	0.8181818181818182
+221	54	Professional, scientific, and technical services	49	54	5	49005	Cache County, Utah	421.1818181818182	3298.4242424242425	127270.60606060606	0.8181818181818182
+222	54	Professional, scientific, and technical services	49	54	7	49007	Carbon County, Utah	31.181818181818183	104.0909090909091	4836.909090909091	0.8181818181818182
+223	54	Professional, scientific, and technical services	49	54	9	49009	Daggett County, Utah	1.0	419.1194211873815	12346.36111274197	1.0
+224	54	Professional, scientific, and technical services	49	54	11	49011	Davis County, Utah	1044.4545454545455	8731.181818181818	451958.0606060606	0.8181818181818182
+225	54	Professional, scientific, and technical services	49	54	13	49013	Duchesne County, Utah	46.484848484848484	223.57575757575756	8236.818181818182	0.8181818181818182
+226	54	Professional, scientific, and technical services	49	54	15	49015	Emery County, Utah	10.181818181818182	67.96969696969697	1947.3030303030303	0.8181818181818182
+227	54	Professional, scientific, and technical services	49	54	17	49017	Garfield County, Utah	7.090909090909091	185.72247320634418	3832.5182310666187	0.9090909090909091
+228	54	Professional, scientific, and technical services	49	54	19	49019	Grand County, Utah	26.363636363636363	133.27272727272728	6014.575757575758	0.8181818181818182
+229	54	Professional, scientific, and technical services	49	54	21	49021	Iron County, Utah	128.84848484848484	419.8484848484849	16879.242424242424	0.8181818181818182
+230	54	Professional, scientific, and technical services	49	54	23	49023	Juab County, Utah	18.78787878787879	391.9980449657869	15577.096774193547	0.8484848484848485
+231	54	Professional, scientific, and technical services	49	54	25	49025	Kane County, Utah	12.242424242424242	30.545454545454547	1201.8484848484848	0.8181818181818182
+232	54	Professional, scientific, and technical services	49	54	27	49027	Millard County, Utah	13.575757575757576	93.48484848484848	4623.393939393939	0.8181818181818182
+233	54	Professional, scientific, and technical services	49	54	29	49029	Morgan County, Utah	38.515151515151516	100.15151515151516	4349.757575757576	0.8181818181818182
+234	54	Professional, scientific, and technical services	49	54	33	49033	Rich County, Utah	9.636363636363637	64.42424242424242	1656.6340326340326	0.8484848484848485
+235	54	Professional, scientific, and technical services	49	54	35	49035	Salt Lake County, Utah	4604.212121212121	46667.90909090909	2872709.393939394	0.8181818181818182
+236	54	Professional, scientific, and technical services	49	54	37	49037	San Juan County, Utah	13.242424242424242	21.515151515151516	512.5454545454545	0.8181818181818182
+237	54	Professional, scientific, and technical services	49	54	39	49039	Sanpete County, Utah	21.303030303030305	879.1542451542451	23361.883344883347	0.8787878787878788
+238	54	Professional, scientific, and technical services	49	54	41	49041	Sevier County, Utah	37.54545454545455	140.8181818181818	5552.212121212121	0.8181818181818182
+239	54	Professional, scientific, and technical services	49	54	43	49043	Summit County, Utah	380.3030303030303	1127.909090909091	72956.66666666667	0.8181818181818182
+240	54	Professional, scientific, and technical services	49	54	45	49045	Tooele County, Utah	77.45454545454545	531.4242424242424	30818.0	0.8181818181818182
+241	54	Professional, scientific, and technical services	49	54	47	49047	Uintah County, Utah	88.72727272727273	405.90909090909093	17491.0	0.8181818181818182
+242	54	Professional, scientific, and technical services	49	54	49	49049	Utah County, Utah	1987.060606060606	14544.939393939394	843999.8484848485	0.8181818181818182
+243	54	Professional, scientific, and technical services	49	54	51	49051	Wasatch County, Utah	133.15151515151516	444.90909090909093	24075.515151515152	0.8181818181818182
+244	54	Professional, scientific, and technical services	49	54	53	49053	Washington County, Utah	564.7878787878788	2044.4545454545455	86870.48484848485	0.8181818181818182
+245	54	Professional, scientific, and technical services	49	54	55	49055	Wayne County, Utah	4.757575757575758	62.40780956909989	1291.8831043992334	0.9090909090909091
+246	54	Professional, scientific, and technical services	49	54	57	49057	Weber County, Utah	544.1818181818181	4100.69696969697	181639.63636363635	0.8181818181818182
+247	55	Management of companies and enterprises	49	55	3	49003	Box Elder County, Utah	3.68	104.63574937343357	5933.247609022556	0.92
+248	55	Management of companies and enterprises	49	55	5	49005	Cache County, Utah	12.92	69.17066666666666	3622.1773333333335	0.8
+249	55	Management of companies and enterprises	49	55	7	49007	Carbon County, Utah	2.08	83.03664130623586	7393.996505124194	0.92
+250	55	Management of companies and enterprises	49	55	11	49011	Davis County, Utah	37.28	1417.68	126493.16	0.76
+251	55	Management of companies and enterprises	49	55	13	49013	Duchesne County, Utah	1.0	46.30968882602545	4107.605863443486	1.0
+252	55	Management of companies and enterprises	49	55	15	49015	Emery County, Utah	1.88	84.46102225861684	7406.802219409908	1.0
+253	55	Management of companies and enterprises	49	55	19	49019	Grand County, Utah	2.0	87.79473654433112	7568.610600362288	1.0
+254	55	Management of companies and enterprises	49	55	21	49021	Iron County, Utah	5.76	257.19327228963505	22390.88689883123	1.0
+255	55	Management of companies and enterprises	49	55	27	49027	Millard County, Utah	1.0	43.89736827216556	3784.305300181144	1.0
+256	55	Management of companies and enterprises	49	55	29	49029	Morgan County, Utah	1.0	47.079537953795366	4240.413625648278	1.0
+257	55	Management of companies and enterprises	49	55	35	49035	Salt Lake County, Utah	299.36	17532.4	1648950.68	0.76
+258	55	Management of companies and enterprises	49	55	37	49037	San Juan County, Utah	1.0	43.89736827216556	3784.305300181144	1.0
+259	55	Management of companies and enterprises	49	55	39	49039	Sanpete County, Utah	1.0	43.89736827216556	3784.305300181144	1.0
+260	55	Management of companies and enterprises	49	55	43	49043	Summit County, Utah	14.92	406.6	30298.24	0.76
+261	55	Management of companies and enterprises	49	55	45	49045	Tooele County, Utah	6.24	93.56	5857.56	0.76
+262	55	Management of companies and enterprises	49	55	47	49047	Uintah County, Utah	1.96	87.63656110573461	7537.441126678078	1.0
+263	55	Management of companies and enterprises	49	55	49	49049	Utah County, Utah	62.48	2736.56	198170.64	0.76
+264	55	Management of companies and enterprises	49	55	51	49051	Wasatch County, Utah	1.28	41.616145214521445	3666.31011221122	0.88
+265	55	Management of companies and enterprises	49	55	53	49053	Washington County, Utah	13.8	31.2	7156.88	0.76
+266	55	Management of companies and enterprises	49	55	57	49057	Weber County, Utah	23.8	815.88	85661.68	0.76
+267	56	Administrative and support and waste management and remediation services	49	56	1	49001	Beaver County, Utah	7.696969696969697	140.71057513914656	5029.035250463822	0.8484848484848485
+268	56	Administrative and support and waste management and remediation services	49	56	3	49003	Box Elder County, Utah	45.0	714.2727272727273	16321.515151515152	0.8181818181818182
+269	56	Administrative and support and waste management and remediation services	49	56	5	49005	Cache County, Utah	170.12121212121212	1800.2121212121212	39836.333333333336	0.8181818181818182
+270	56	Administrative and support and waste management and remediation services	49	56	7	49007	Carbon County, Utah	18.90909090909091	252.5151515151515	7583.393939393939	0.8181818181818182
+271	56	Administrative and support and waste management and remediation services	49	56	9	49009	Daggett County, Utah	1.5	1487.9020408163265	51797.630612244895	1.0
+272	56	Administrative and support and waste management and remediation services	49	56	11	49011	Davis County, Utah	409.1818181818182	3989.757575757576	130996.72727272728	0.8181818181818182
+273	56	Administrative and support and waste management and remediation services	49	56	13	49013	Duchesne County, Utah	27.12121212121212	90.6969696969697	3531.6060606060605	0.8181818181818182
+274	56	Administrative and support and waste management and remediation services	49	56	15	49015	Emery County, Utah	4.0	1173.9734384662956	41676.757637600494	0.9393939393939394
+275	56	Administrative and support and waste management and remediation services	49	56	17	49017	Garfield County, Utah	5.787878787878788	21.393939393939394	300.6060606060606	0.8181818181818182
+276	56	Administrative and support and waste management and remediation services	49	56	19	49019	Grand County, Utah	15.121212121212121	102.72727272727273	3120.4545454545455	0.8181818181818182
+277	56	Administrative and support and waste management and remediation services	49	56	21	49021	Iron County, Utah	67.93939393939394	702.8484848484849	14306.69696969697	0.8181818181818182
+278	56	Administrative and support and waste management and remediation services	49	56	23	49023	Juab County, Utah	7.121212121212121	796.5915197897341	29356.962569573283	0.9090909090909091
+279	56	Administrative and support and waste management and remediation services	49	56	25	49025	Kane County, Utah	7.0606060606060606	743.5665352504639	25606.568753865184	0.9090909090909091
+280	56	Administrative and support and waste management and remediation services	49	56	27	49027	Millard County, Utah	9.151515151515152	915.3080627705627	30130.47976190476	0.8787878787878788
+281	56	Administrative and support and waste management and remediation services	49	56	29	49029	Morgan County, Utah	12.0	31.272727272727273	1069.7272727272727	0.8181818181818182
+282	56	Administrative and support and waste management and remediation services	49	56	31	49031	Piute County, Utah	1.935483870967742	1141.235430253515	42286.10003333225	1.0
+283	56	Administrative and support and waste management and remediation services	49	56	33	49033	Rich County, Utah	7.757575757575758	23.636363636363637	822.3939393939394	0.8181818181818182
+284	56	Administrative and support and waste management and remediation services	49	56	35	49035	Salt Lake County, Utah	1817.090909090909	45945.969696969696	1664466.303030303	0.8181818181818182
+285	56	Administrative and support and waste management and remediation services	49	56	37	49037	San Juan County, Utah	10.030303030303031	231.1335807050093	8089.839208410636	0.8484848484848485
+286	56	Administrative and support and waste management and remediation services	49	56	39	49039	Sanpete County, Utah	16.333333333333332	374.1329622758194	12115.7866419295	0.8484848484848485
+287	56	Administrative and support and waste management and remediation services	49	56	41	49041	Sevier County, Utah	23.727272727272727	137.6969696969697	4853.69696969697	0.8181818181818182
+288	56	Administrative and support and waste management and remediation services	49	56	43	49043	Summit County, Utah	132.33333333333334	877.7272727272727	27366.424242424244	0.8181818181818182
+289	56	Administrative and support and waste management and remediation services	49	56	45	49045	Tooele County, Utah	50.81818181818182	805.030303030303	33999.454545454544	0.8181818181818182
+290	56	Administrative and support and waste management and remediation services	49	56	47	49047	Uintah County, Utah	43.666666666666664	195.6969696969697	5889.878787878788	0.8181818181818182
+291	56	Administrative and support and waste management and remediation services	49	56	49	49049	Utah County, Utah	694.030303030303	17224.030303030304	622924.7272727273	0.8181818181818182
+292	56	Administrative and support and waste management and remediation services	49	56	51	49051	Wasatch County, Utah	78.03030303030303	443.45454545454544	15778.424242424242	0.8181818181818182
+293	56	Administrative and support and waste management and remediation services	49	56	53	49053	Washington County, Utah	298.030303030303	2082.787878787879	63577.454545454544	0.8181818181818182
+294	56	Administrative and support and waste management and remediation services	49	56	55	49055	Wayne County, Utah	2.0	1420.7568528479217	52049.56207522059	1.0
+295	56	Administrative and support and waste management and remediation services	49	56	57	49057	Weber County, Utah	288.90909090909093	5824.878787878788	161065.72727272726	0.8181818181818182
+296	61	Educational services	49	61	3	49003	Box Elder County, Utah	11.206896551724139	152.58620689655172	2142.4827586206898	0.7931034482758621
+297	61	Educational services	49	61	5	49005	Cache County, Utah	36.206896551724135	518.0689655172414	11296.068965517241	0.7931034482758621
+298	61	Educational services	49	61	7	49007	Carbon County, Utah	1.206896551724138	65.39459263084449	1717.9317148628013	1.0
+299	61	Educational services	49	61	11	49011	Davis County, Utah	109.10344827586206	1562.551724137931	36475.724137931036	0.7931034482758621
+300	61	Educational services	49	61	13	49013	Duchesne County, Utah	2.1379310344827585	103.03161846786482	2778.6241992585165	0.9655172413793104
+301	61	Educational services	49	61	15	49015	Emery County, Utah	2.0	95.72566017839048	2624.218264875122	1.0
+302	61	Educational services	49	61	17	49017	Garfield County, Utah	4.0	93.86145099493264	2258.343715239155	0.8275862068965517
+303	61	Educational services	49	61	19	49019	Grand County, Utah	10.068965517241379	70.89655172413794	1372.5862068965516	0.7931034482758621
+304	61	Educational services	49	61	21	49021	Iron County, Utah	17.413793103448278	246.86206896551724	4569.310344827586	0.7931034482758621
+305	61	Educational services	49	61	23	49023	Juab County, Utah	1.0	47.86283008919524	1312.109132437561	1.0
+306	61	Educational services	49	61	25	49025	Kane County, Utah	1.0	47.86283008919524	1312.109132437561	1.0
+307	61	Educational services	49	61	27	49027	Millard County, Utah	2.0	184.66903914590748	4136.704626334519	1.0
+308	61	Educational services	49	61	29	49029	Morgan County, Utah	2.8620689655172415	27.4026722943319	739.4328944849408	0.9310344827586207
+309	61	Educational services	49	61	33	49033	Rich County, Utah	2.0	88.92788006315087	2503.238046401712	1.0
+310	61	Educational services	49	61	35	49035	Salt Lake County, Utah	477.9310344827586	15541.965517241379	553618.9655172414	0.7931034482758621
+311	61	Educational services	49	61	37	49037	San Juan County, Utah	2.103448275862069	105.45811574554178	2848.155959694088	1.0
+312	61	Educational services	49	61	39	49039	Sanpete County, Utah	2.0344827586206895	97.05959847240138	2659.2944899204936	1.0
+313	61	Educational services	49	61	41	49041	Sevier County, Utah	3.1724137931034484	157.93630385844358	4270.827486180432	1.0
+314	61	Educational services	49	61	43	49043	Summit County, Utah	30.103448275862068	424.3103448275862	10747.793103448275	0.7931034482758621
+315	61	Educational services	49	61	45	49045	Tooele County, Utah	11.793103448275861	261.8510246656031	5835.409498097926	0.8275862068965517
+316	61	Educational services	49	61	47	49047	Uintah County, Utah	11.03448275862069	127.34482758620689	2452.862068965517	0.7931034482758621
+317	61	Educational services	49	61	49	49049	Utah County, Utah	263.7931034482759	26100.197585541973	653591.2527699164	0.896551724137931
+318	61	Educational services	49	61	51	49051	Wasatch County, Utah	13.586206896551724	240.71540117402859	5944.527027954055	0.896551724137931
+319	61	Educational services	49	61	53	49053	Washington County, Utah	44.86206896551724	551.5172413793103	12288.413793103447	0.7931034482758621
+320	61	Educational services	49	61	55	49055	Wayne County, Utah	2.6666666666666665	250.79792235893717	5732.731493127085	1.0
+321	61	Educational services	49	61	57	49057	Weber County, Utah	62.03448275862069	1147.3793103448277	30381.44827586207	0.7931034482758621
+322	62	Health care and social assistance	49	62	1	49001	Beaver County, Utah	19.90909090909091	259.27272727272725	8540.90909090909	0.8181818181818182
+323	62	Health care and social assistance	49	62	3	49003	Box Elder County, Utah	126.0	1580.7272727272727	49527.606060606064	0.8181818181818182
+324	62	Health care and social assistance	49	62	5	49005	Cache County, Utah	376.42424242424244	5273.515151515152	187207.54545454544	0.8181818181818182
+325	62	Health care and social assistance	49	62	7	49007	Carbon County, Utah	69.21212121212122	1012.3636363636364	38594.90909090909	0.8181818181818182
+326	62	Health care and social assistance	49	62	11	49011	Davis County, Utah	772.5151515151515	10360.878787878788	403714.7878787879	0.8181818181818182
+327	62	Health care and social assistance	49	62	13	49013	Duchesne County, Utah	45.72727272727273	1072.9601309707243	38576.97701592193	0.8787878787878788
+328	62	Health care and social assistance	49	62	15	49015	Emery County, Utah	13.393939393939394	144.4848484848485	5587.030303030303	0.8181818181818182
+329	62	Health care and social assistance	49	62	17	49017	Garfield County, Utah	8.696969696969697	160.5820562093487	6775.186293395918	1.0
+330	62	Health care and social assistance	49	62	19	49019	Grand County, Utah	25.96969696969697	379.7600201444846	15791.03795982891	0.9090909090909091
+331	62	Health care and social assistance	49	62	21	49021	Iron County, Utah	150.24242424242425	2046.969696969697	61911.242424242424	0.8181818181818182
+332	62	Health care and social assistance	49	62	23	49023	Juab County, Utah	21.151515151515152	477.3654392634317	13890.894400380577	0.9090909090909091
+333	62	Health care and social assistance	49	62	25	49025	Kane County, Utah	12.909090909090908	218.33333333333334	8147.848484848485	0.8181818181818182
+334	62	Health care and social assistance	49	62	27	49027	Millard County, Utah	19.90909090909091	239.24242424242425	8741.575757575758	0.8181818181818182
+335	62	Health care and social assistance	49	62	29	49029	Morgan County, Utah	31.96969696969697	208.12121212121212	5807.969696969697	0.8181818181818182
+336	62	Health care and social assistance	49	62	31	49031	Piute County, Utah	1.0	18.606841390019234	778.4244325095477	1.0
+337	62	Health care and social assistance	49	62	33	49033	Rich County, Utah	2.0	37.21368278003847	1556.8488650190955	1.0
+338	62	Health care and social assistance	49	62	35	49035	Salt Lake County, Utah	3085.787878787879	63036.93939393939	3040727.727272727	0.8181818181818182
+339	62	Health care and social assistance	49	62	37	49037	San Juan County, Utah	26.87878787878788	655.1818181818181	29521.060606060608	0.8181818181818182
+340	62	Health care and social assistance	49	62	39	49039	Sanpete County, Utah	52.72727272727273	884.2121212121212	25587.636363636364	0.8181818181818182
+341	62	Health care and social assistance	49	62	41	49041	Sevier County, Utah	62.72727272727273	868.969696969697	30475.0	0.8181818181818182
+342	62	Health care and social assistance	49	62	43	49043	Summit County, Utah	155.5151515151515	1337.1818181818182	60543.606060606064	0.8181818181818182
+343	62	Health care and social assistance	49	62	45	49045	Tooele County, Utah	96.75757575757575	1283.4242424242425	48783.030303030304	0.8181818181818182
+344	62	Health care and social assistance	49	62	47	49047	Uintah County, Utah	66.84848484848484	735.3636363636364	26172.272727272728	0.8181818181818182
+345	62	Health care and social assistance	49	62	49	49049	Utah County, Utah	1345.060606060606	24452.848484848484	955791.8181818182	0.8181818181818182
+346	62	Health care and social assistance	49	62	51	49051	Wasatch County, Utah	72.12121212121212	695.6969696969697	25626.424242424244	0.8181818181818182
+347	62	Health care and social assistance	49	62	53	49053	Washington County, Utah	545.969696969697	9084.545454545454	355135.9393939394	0.8181818181818182
+348	62	Health care and social assistance	49	62	55	49055	Wayne County, Utah	5.0	91.57134742261799	3800.068426030021	0.9696969696969697
+349	62	Health care and social assistance	49	62	57	49057	Weber County, Utah	620.7878787878788	10979.060606060606	477306.7878787879	0.8181818181818182
+350	71	Arts, entertainment, and recreation	49	71	1	49001	Beaver County, Utah	1.1612903225806452	20.458942513801244	397.62419152836225	1.0
+351	71	Arts, entertainment, and recreation	49	71	3	49003	Box Elder County, Utah	18.612903225806452	146.70967741935485	1642.9354838709678	0.8064516129032258
+352	71	Arts, entertainment, and recreation	49	71	5	49005	Cache County, Utah	66.58064516129032	994.0645161290323	10956.612903225807	0.8064516129032258
+353	71	Arts, entertainment, and recreation	49	71	7	49007	Carbon County, Utah	6.806451612903226	60.19290021926982	658.6925743729039	0.9032258064516129
+354	71	Arts, entertainment, and recreation	49	71	9	49009	Daggett County, Utah	3.0	3.472788778042234	521.3646427305414	0.9032258064516129
+355	71	Arts, entertainment, and recreation	49	71	11	49011	Davis County, Utah	85.38709677419355	1518.8930657861317	44603.707391414784	0.8387096774193549
+356	71	Arts, entertainment, and recreation	49	71	13	49013	Duchesne County, Utah	3.129032258064516	12.316761026991443	119.45924950625412	0.8709677419354839
+357	71	Arts, entertainment, and recreation	49	71	15	49015	Emery County, Utah	1.0	9.42	209.70000000000002	1.0
+358	71	Arts, entertainment, and recreation	49	71	17	49017	Garfield County, Utah	3.0	12.504766293614221	599.1678077682686	0.8709677419354839
+359	71	Arts, entertainment, and recreation	49	71	19	49019	Grand County, Utah	24.806451612903224	186.51612903225808	4768.645161290323	0.8064516129032258
+360	71	Arts, entertainment, and recreation	49	71	21	49021	Iron County, Utah	15.709677419354838	76.83870967741936	1225.483870967742	0.8064516129032258
+361	71	Arts, entertainment, and recreation	49	71	25	49025	Kane County, Utah	9.096774193548388	71.19354838709677	1988.3225806451612	0.8064516129032258
+362	71	Arts, entertainment, and recreation	49	71	27	49027	Millard County, Utah	1.096774193548387	19.646414427206608	379.8993131555286	1.0
+363	71	Arts, entertainment, and recreation	49	71	29	49029	Morgan County, Utah	6.774193548387097	9.054195207165924	391.78029267078944	0.9032258064516129
+364	71	Arts, entertainment, and recreation	49	71	33	49033	Rich County, Utah	2.935483870967742	54.58272692450547	1043.5608911598358	1.0
+365	71	Arts, entertainment, and recreation	49	71	35	49035	Salt Lake County, Utah	409.64516129032256	8862.58064516129	177350.8064516129	0.8064516129032258
+366	71	Arts, entertainment, and recreation	49	71	37	49037	San Juan County, Utah	2.193548387096774	37.32225264010536	715.5622008837322	0.967741935483871
+367	71	Arts, entertainment, and recreation	49	71	39	49039	Sanpete County, Utah	4.064516129032258	7.548387096774194	140.16129032258064	0.8064516129032258
+368	71	Arts, entertainment, and recreation	49	71	41	49041	Sevier County, Utah	6.612903225806452	24.34993307864167	391.3424465950973	0.9032258064516129
+369	71	Arts, entertainment, and recreation	49	71	43	49043	Summit County, Utah	67.54838709677419	4814.258064516129	84920.16129032258	0.8064516129032258
+370	71	Arts, entertainment, and recreation	49	71	45	49045	Tooele County, Utah	13.903225806451612	108.99921332414092	1896.9026524910194	0.9032258064516129
+371	71	Arts, entertainment, and recreation	49	71	47	49047	Uintah County, Utah	9.064516129032258	11.290322580645162	409.4516129032258	0.8064516129032258
+372	71	Arts, entertainment, and recreation	49	71	49	49049	Utah County, Utah	207.5483870967742	1966.032258064516	46664.903225806454	0.8064516129032258
+373	71	Arts, entertainment, and recreation	49	71	51	49051	Wasatch County, Utah	15.741935483870968	199.20802641605283	4449.616967233935	0.8387096774193549
+374	71	Arts, entertainment, and recreation	49	71	53	49053	Washington County, Utah	73.64516129032258	882.8064516129032	17309.41935483871	0.8064516129032258
+375	71	Arts, entertainment, and recreation	49	71	55	49055	Wayne County, Utah	2.096774193548387	35.478116315600374	676.060524679752	0.9354838709677419
+376	71	Arts, entertainment, and recreation	49	71	57	49057	Weber County, Utah	52.67741935483871	2100.6774193548385	23880.548387096773	0.8064516129032258
+377	72	Accommodation and food services	49	72	1	49001	Beaver County, Utah	31.0	264.97058823529414	3718.529411764706	0.8235294117647058
+378	72	Accommodation and food services	49	72	3	49003	Box Elder County, Utah	74.41176470588235	1462.0588235294117	18796.58823529412	0.8235294117647058
+379	72	Accommodation and food services	49	72	5	49005	Cache County, Utah	176.58823529411765	3625.823529411765	46153.617647058825	0.8235294117647058
+380	72	Accommodation and food services	49	72	7	49007	Carbon County, Utah	39.76470588235294	701.4705882352941	8217.14705882353	0.8235294117647058
+381	72	Accommodation and food services	49	72	9	49009	Daggett County, Utah	7.882352941176471	71.82352941176471	1838.6470588235295	0.8529411764705882
+382	72	Accommodation and food services	49	72	11	49011	Davis County, Utah	454.6764705882353	9534.117647058823	130862.29411764706	0.8235294117647058
+383	72	Accommodation and food services	49	72	13	49013	Duchesne County, Utah	36.94117647058823	375.4117647058824	4795.764705882353	0.8235294117647058
+384	72	Accommodation and food services	49	72	15	49015	Emery County, Utah	23.58823529411765	189.91176470588235	3019.970588235294	0.8235294117647058
+385	72	Accommodation and food services	49	72	17	49017	Garfield County, Utah	65.82352941176471	730.1176470588235	22312.617647058825	0.8235294117647058
+386	72	Accommodation and food services	49	72	19	49019	Grand County, Utah	95.1470588235294	1763.2058823529412	34004.41176470588	0.8235294117647058
+387	72	Accommodation and food services	49	72	21	49021	Iron County, Utah	98.26470588235294	1932.735294117647	25447.176470588234	0.8235294117647058
+388	72	Accommodation and food services	49	72	23	49023	Juab County, Utah	29.294117647058822	323.94117647058823	3847.676470588235	0.8235294117647058
+389	72	Accommodation and food services	49	72	25	49025	Kane County, Utah	59.55882352941177	833.7647058823529	21924.529411764706	0.8235294117647058
+390	72	Accommodation and food services	49	72	27	49027	Millard County, Utah	29.823529411764707	372.4117647058824	4592.382352941177	0.8235294117647058
+391	72	Accommodation and food services	49	72	29	49029	Morgan County, Utah	9.941176470588236	140.35294117647058	2217.294117647059	0.8235294117647058
+392	72	Accommodation and food services	49	72	31	49031	Piute County, Utah	5.882352941176471	9.411764705882353	195.88235294117646	0.8823529411764706
+393	72	Accommodation and food services	49	72	33	49033	Rich County, Utah	15.911764705882353	76.5	2889.705882352941	0.8235294117647058
+394	72	Accommodation and food services	49	72	35	49035	Salt Lake County, Utah	2302.3823529411766	48354.5	830896.0294117647	0.8235294117647058
+395	72	Accommodation and food services	49	72	37	49037	San Juan County, Utah	60.529411764705884	787.6176470588235	18528.735294117647	0.8235294117647058
+396	72	Accommodation and food services	49	72	39	49039	Sanpete County, Utah	41.38235294117647	425.61764705882354	3739.235294117647	0.8235294117647058
+397	72	Accommodation and food services	49	72	41	49041	Sevier County, Utah	54.0	916.2941176470588	11131.85294117647	0.8235294117647058
+398	72	Accommodation and food services	49	72	43	49043	Summit County, Utah	195.8235294117647	6781.470588235294	161560.20588235295	0.8235294117647058
+399	72	Accommodation and food services	49	72	45	49045	Tooele County, Utah	74.52941176470588	1186.0588235294117	15688.14705882353	0.8235294117647058
+400	72	Accommodation and food services	49	72	47	49047	Uintah County, Utah	70.70588235294117	1011.9705882352941	14194.764705882353	0.8235294117647058
+401	72	Accommodation and food services	49	72	49	49049	Utah County, Utah	777.0294117647059	16337.323529411764	230818.17647058822	0.8235294117647058
+402	72	Accommodation and food services	49	72	51	49051	Wasatch County, Utah	59.088235294117645	1444.0294117647059	22733.70588235294	0.8235294117647058
+403	72	Accommodation and food services	49	72	53	49053	Washington County, Utah	340.44117647058823	7281.264705882353	113199.5294117647	0.8235294117647058
+404	72	Accommodation and food services	49	72	55	49055	Wayne County, Utah	22.11764705882353	182.5	4162.970588235294	0.8235294117647058
+405	72	Accommodation and food services	49	72	57	49057	Weber County, Utah	407.3235294117647	7462.588235294118	103338.64705882352	0.8235294117647058
+406	81	Other services (except public administration)	49	81	1	49001	Beaver County, Utah	11.06060606060606	46.39393939393939	1231.6060606060605	0.8181818181818182
+407	81	Other services (except public administration)	49	81	3	49003	Box Elder County, Utah	71.0909090909091	282.1212121212121	6774.606060606061	0.8181818181818182
+408	81	Other services (except public administration)	49	81	5	49005	Cache County, Utah	214.6060606060606	895.3636363636364	23674.484848484848	0.8181818181818182
+409	81	Other services (except public administration)	49	81	7	49007	Carbon County, Utah	49.121212121212125	246.27272727272728	6521.0	0.8181818181818182
+410	81	Other services (except public administration)	49	81	11	49011	Davis County, Utah	440.0	2930.151515151515	75803.66666666667	0.8181818181818182
+411	81	Other services (except public administration)	49	81	13	49013	Duchesne County, Utah	41.42424242424242	126.0	4028.6060606060605	0.8181818181818182
+412	81	Other services (except public administration)	49	81	15	49015	Emery County, Utah	17.060606060606062	103.78787878787878	4550.0	0.8181818181818182
+413	81	Other services (except public administration)	49	81	17	49017	Garfield County, Utah	2.0606060606060606	22.13097281701934	822.0014666642567	0.9393939393939394
+414	81	Other services (except public administration)	49	81	19	49019	Grand County, Utah	27.818181818181817	74.96969696969697	2122.3939393939395	0.8181818181818182
+415	81	Other services (except public administration)	49	81	21	49021	Iron County, Utah	80.93939393939394	292.6060606060606	6738.575757575758	0.8181818181818182
+416	81	Other services (except public administration)	49	81	23	49023	Juab County, Utah	6.181818181818182	28.977272727272727	765.5909090909091	0.8787878787878788
+417	81	Other services (except public administration)	49	81	25	49025	Kane County, Utah	15.545454545454545	624.7224025974026	24409.684644059646	0.9090909090909091
+418	81	Other services (except public administration)	49	81	27	49027	Millard County, Utah	15.212121212121213	57.42424242424242	1292.030303030303	0.8181818181818182
+419	81	Other services (except public administration)	49	81	29	49029	Morgan County, Utah	13.727272727272727	51.303030303030305	1225.060606060606	0.8181818181818182
+420	81	Other services (except public administration)	49	81	31	49031	Piute County, Utah	1.9393939393939394	23.17899770879424	863.823301079841	1.0
+421	81	Other services (except public administration)	49	81	33	49033	Rich County, Utah	5.818181818181818	39.347537878787875	1007.3929924242424	0.8484848484848485
+422	81	Other services (except public administration)	49	81	35	49035	Salt Lake County, Utah	2204.848484848485	36152.84848484849	1334666.3636363635	0.8181818181818182
+423	81	Other services (except public administration)	49	81	37	49037	San Juan County, Utah	17.727272727272727	50.75757575757576	1323.5757575757575	0.8181818181818182
+424	81	Other services (except public administration)	49	81	39	49039	Sanpete County, Utah	25.333333333333332	113.39393939393939	3960.3939393939395	0.8181818181818182
+425	81	Other services (except public administration)	49	81	41	49041	Sevier County, Utah	30.242424242424242	148.3939393939394	6113.484848484848	0.8181818181818182
+426	81	Other services (except public administration)	49	81	43	49043	Summit County, Utah	121.96969696969697	972.5454545454545	36129.84848484849	0.8181818181818182
+427	81	Other services (except public administration)	49	81	45	49045	Tooele County, Utah	79.3030303030303	318.6666666666667	8319.636363636364	0.8181818181818182
+428	81	Other services (except public administration)	49	81	47	49047	Uintah County, Utah	76.93939393939394	352.90909090909093	11868.242424242424	0.8181818181818182
+429	81	Other services (except public administration)	49	81	49	49049	Utah County, Utah	716.4848484848485	3847.818181818182	112203.15151515152	0.8181818181818182
+430	81	Other services (except public administration)	49	81	51	49051	Wasatch County, Utah	58.81818181818182	393.93939393939394	10626.39393939394	0.8181818181818182
+431	81	Other services (except public administration)	49	81	53	49053	Washington County, Utah	261.3636363636364	1278.121212121212	35072.72727272727	0.8181818181818182
+432	81	Other services (except public administration)	49	81	55	49055	Wayne County, Utah	3.878787878787879	14.41991341991342	513.563492063492	0.8787878787878788
+433	81	Other services (except public administration)	49	81	57	49057	Weber County, Utah	382.90909090909093	2345.5151515151515	62926.57575757576	0.8181818181818182
+434	99	Industries not classified	49	99	3	49003	Box Elder County, Utah	2.823529411764706	2.146218487394958	39.62689075630252	0.8235294117647058
+435	99	Industries not classified	49	99	5	49005	Cache County, Utah	6.388888888888889	3.2222222222222223	56.59259259259259	0.7222222222222222
+436	99	Industries not classified	49	99	7	49007	Carbon County, Utah	2.0	-7.800000000000001	23.8	1.0
+437	99	Industries not classified	49	99	9	49009	Daggett County, Utah	1.0	1.1205673758865249	34.78951367781154	1.0
+438	99	Industries not classified	49	99	11	49011	Davis County, Utah	8.647058823529411	6.176470588235294	195.94117647058823	0.7058823529411765
+439	99	Industries not classified	49	99	13	49013	Duchesne County, Utah	2.0	1.1428571428571428	33.14285714285714	1.0
+440	99	Industries not classified	49	99	19	49019	Grand County, Utah	2.0	1.8181357649442755	63.56022036474161	1.0
+441	99	Industries not classified	49	99	21	49021	Iron County, Utah	1.5	0.6678571428571427	16.576190476190476	0.75
+442	99	Industries not classified	49	99	25	49025	Kane County, Utah	1.0666666666666667	1.1220533603512328	34.67973657548124	1.0
+443	99	Industries not classified	49	99	33	49033	Rich County, Utah	1.0	1.1205673758865249	34.78951367781154	1.0
+444	99	Industries not classified	49	99	35	49035	Salt Lake County, Utah	29.0	31.166666666666668	740.6111111111111	0.6666666666666666
+445	99	Industries not classified	49	99	37	49037	San Juan County, Utah	1.0	-1.7142857142857142	4.857142857142857	1.0
+446	99	Industries not classified	49	99	43	49043	Summit County, Utah	3.823529411764706	2.2747899159663865	140.2126050420168	0.8235294117647058
+447	99	Industries not classified	49	99	45	49045	Tooele County, Utah	1.1176470588235294	1.1051731330830201	32.869795577805576	0.9411764705882353
+448	99	Industries not classified	49	99	47	49047	Uintah County, Utah	1.0	-1.7142857142857142	4.857142857142857	1.0
+449	99	Industries not classified	49	99	49	49049	Utah County, Utah	21.444444444444443	28.055555555555557	1489.2777777777778	0.6666666666666666
+450	99	Industries not classified	49	99	53	49053	Washington County, Utah	6.222222222222222	8.444444444444445	137.21296296296293	0.7222222222222222
+451	99	Industries not classified	49	99	57	49057	Weber County, Utah	5.611111111111111	4.85	53.14074074074074	0.7777777777777778

@@ -1,194 +1,171 @@
-	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
-0	11	Agriculture, forestry, fishing and hunting	33	11	1	33001	Belknap County, New Hampshire	0	3.6	4.0	302.4
-1	11	Agriculture, forestry, fishing and hunting	33	11	3	33003	Carroll County, New Hampshire	0	11.8	48.2	2192.0
-2	11	Agriculture, forestry, fishing and hunting	33	11	5	33005	Cheshire County, New Hampshire	0	9.8	8.6	519.8
-3	11	Agriculture, forestry, fishing and hunting	33	11	7	33007	Coos County, New Hampshire	0	28.4	156.2	5609.0
-4	11	Agriculture, forestry, fishing and hunting	33	11	9	33009	Grafton County, New Hampshire	0	23.6	46.8	11044.0
-5	11	Agriculture, forestry, fishing and hunting	33	11	11	33011	Hillsborough County, New Hampshire	0	18.8	49.6	2992.0
-6	11	Agriculture, forestry, fishing and hunting	33	11	13	33013	Merrimack County, New Hampshire	0	17.8	85.4	3421.8
-7	11	Agriculture, forestry, fishing and hunting	33	11	15	33015	Rockingham County, New Hampshire	0	10.0	10.4	661.4
-8	11	Agriculture, forestry, fishing and hunting	33	11	17	33017	Strafford County, New Hampshire	0	10.2	30.4	831.2
-9	11	Agriculture, forestry, fishing and hunting	33	11	19	33019	Sullivan County, New Hampshire	0	7.0	67.6	2380.4
-10	21	Mining, quarrying, and oil and gas extraction	33	21	1	33001	Belknap County, New Hampshire	0	5.0	22.0	1440.3333333333333
-11	21	Mining, quarrying, and oil and gas extraction	33	21	1	33001	Belknap County, New Hampshire	1	2.5	19.015151515151516	1083.5151515151515
-12	21	Mining, quarrying, and oil and gas extraction	33	21	3	33003	Carroll County, New Hampshire	1	2.0	12.615151515151515	782.8651515151515
-13	21	Mining, quarrying, and oil and gas extraction	33	21	5	33005	Cheshire County, New Hampshire	0	4.8	11.2	1488.0
-14	21	Mining, quarrying, and oil and gas extraction	33	21	7	33007	Coos County, New Hampshire	1	1.6	9.965151515151515	609.9401515151515
-15	21	Mining, quarrying, and oil and gas extraction	33	21	9	33009	Grafton County, New Hampshire	0	8.0	18.0	1469.8
-16	21	Mining, quarrying, and oil and gas extraction	33	21	11	33011	Hillsborough County, New Hampshire	0	7.6	34.4	2506.0
-17	21	Mining, quarrying, and oil and gas extraction	33	21	13	33013	Merrimack County, New Hampshire	0	9.2	72.6	4182.4
-18	21	Mining, quarrying, and oil and gas extraction	33	21	15	33015	Rockingham County, New Hampshire	0	4.0	19.0	1670.5
-19	21	Mining, quarrying, and oil and gas extraction	33	21	15	33015	Rockingham County, New Hampshire	1	4.0	33.02272727272727	2060.7310606060605
-20	21	Mining, quarrying, and oil and gas extraction	33	21	17	33017	Strafford County, New Hampshire	0	5.4	24.8	2347.8
-21	21	Mining, quarrying, and oil and gas extraction	33	21	19	33019	Sullivan County, New Hampshire	1	1.0	4.0	239.75
-22	22	Utilities	33	22	1	33001	Belknap County, New Hampshire	0	7.75	84.75	10208.5
-23	22	Utilities	33	22	1	33001	Belknap County, New Hampshire	1	6.0	200.20408163265304	16358.08163265306
-24	22	Utilities	33	22	3	33003	Carroll County, New Hampshire	0	7.0	40.4	5063.2
-25	22	Utilities	33	22	5	33005	Cheshire County, New Hampshire	0	4.5	45.0	4118.5
-26	22	Utilities	33	22	5	33005	Cheshire County, New Hampshire	1	7.0	232.49544072948325	18063.277608915905
-27	22	Utilities	33	22	7	33007	Coos County, New Hampshire	0	9.8	87.6	7041.8
-28	22	Utilities	33	22	9	33009	Grafton County, New Hampshire	0	18.4	292.6	24409.6
-29	22	Utilities	33	22	11	33011	Hillsborough County, New Hampshire	0	25.5	946.5	80391.0
-30	22	Utilities	33	22	11	33011	Hillsborough County, New Hampshire	1	23.333333333333332	772.9694601244752	60014.18758141554
-31	22	Utilities	33	22	13	33013	Merrimack County, New Hampshire	0	14.0	311.0	29387.5
-32	22	Utilities	33	22	13	33013	Merrimack County, New Hampshire	1	12.0	397.6071790418295	30915.87610363294
-33	22	Utilities	33	22	15	33015	Rockingham County, New Hampshire	0	27.8	1197.0	133612.8
-34	22	Utilities	33	22	17	33017	Strafford County, New Hampshire	1	1.4	52.51593573599653	4612.178897090751
-35	22	Utilities	33	22	19	33019	Sullivan County, New Hampshire	0	6.6	40.6	4319.8
-36	23	Construction	33	23	1	33001	Belknap County, New Hampshire	0	201.6	1103.4	68945.6
-37	23	Construction	33	23	3	33003	Carroll County, New Hampshire	0	216.6	925.0	47515.4
-38	23	Construction	33	23	5	33005	Cheshire County, New Hampshire	0	219.6	1302.2	69683.4
-39	23	Construction	33	23	7	33007	Coos County, New Hampshire	0	64.8	163.4	9445.6
-40	23	Construction	33	23	9	33009	Grafton County, New Hampshire	0	241.0	1176.6	57989.2
-41	23	Construction	33	23	11	33011	Hillsborough County, New Hampshire	0	1109.0	7527.4	438807.4
-42	23	Construction	33	23	13	33013	Merrimack County, New Hampshire	0	447.4	2969.8	186531.2
-43	23	Construction	33	23	15	33015	Rockingham County, New Hampshire	0	1011.6	6761.0	427933.2
-44	23	Construction	33	23	17	33017	Strafford County, New Hampshire	0	268.4	1302.0	69249.4
-45	23	Construction	33	23	19	33019	Sullivan County, New Hampshire	0	105.6	429.0	19521.4
-46	42	Wholesale trade	33	42	1	33001	Belknap County, New Hampshire	0	58.2	471.2	27130.8
-47	42	Wholesale trade	33	42	3	33003	Carroll County, New Hampshire	0	43.8	298.8	15103.6
-48	42	Wholesale trade	33	42	5	33005	Cheshire County, New Hampshire	0	66.4	982.2	45812.2
-49	42	Wholesale trade	33	42	7	33007	Coos County, New Hampshire	0	21.8	181.4	9185.0
-50	42	Wholesale trade	33	42	9	33009	Grafton County, New Hampshire	0	93.2	731.8	46768.8
-51	42	Wholesale trade	33	42	11	33011	Hillsborough County, New Hampshire	0	589.6	7576.8	585566.4
-52	42	Wholesale trade	33	42	13	33013	Merrimack County, New Hampshire	0	170.0	3492.0	189557.4
-53	42	Wholesale trade	33	42	15	33015	Rockingham County, New Hampshire	0	589.4	7318.0	528766.4
-54	42	Wholesale trade	33	42	17	33017	Strafford County, New Hampshire	0	97.4	1169.2	67214.2
-55	42	Wholesale trade	33	42	19	33019	Sullivan County, New Hampshire	0	41.4	483.6	36732.8
-56	51	Information	33	51	1	33001	Belknap County, New Hampshire	0	25.8	293.8	14393.6
-57	51	Information	33	51	3	33003	Carroll County, New Hampshire	0	39.0	217.4	10483.8
-58	51	Information	33	51	5	33005	Cheshire County, New Hampshire	0	34.4	496.6	28915.2
-59	51	Information	33	51	7	33007	Coos County, New Hampshire	0	14.5	79.0	3644.0
-60	51	Information	33	51	7	33007	Coos County, New Hampshire	1	17.333333333333332	388.3333333333333	33075.333333333336
-61	51	Information	33	51	9	33009	Grafton County, New Hampshire	0	69.4	1013.0	69677.2
-62	51	Information	33	51	11	33011	Hillsborough County, New Hampshire	0	252.0	7071.2	656109.6
-63	51	Information	33	51	13	33013	Merrimack County, New Hampshire	0	67.0	757.8	41807.4
-64	51	Information	33	51	15	33015	Rockingham County, New Hampshire	0	151.2	2900.2	232504.0
-65	51	Information	33	51	17	33017	Strafford County, New Hampshire	0	48.0	657.6	33403.6
-66	51	Information	33	51	19	33019	Sullivan County, New Hampshire	0	14.4	94.6	3444.2
-67	52	Finance and insurance	33	52	1	33001	Belknap County, New Hampshire	0	72.0	245.6	39352.4
-68	52	Finance and insurance	33	52	3	33003	Carroll County, New Hampshire	0	62.4	409.2	19748.0
-69	52	Finance and insurance	33	52	5	33005	Cheshire County, New Hampshire	0	94.2	1384.4	89493.4
-70	52	Finance and insurance	33	52	7	33007	Coos County, New Hampshire	0	35.6	287.8	12417.4
-71	52	Finance and insurance	33	52	9	33009	Grafton County, New Hampshire	0	141.8	901.8	87117.6
-72	52	Finance and insurance	33	52	11	33011	Hillsborough County, New Hampshire	0	612.6	7958.8	737404.0
-73	52	Finance and insurance	33	52	13	33013	Merrimack County, New Hampshire	0	201.0	3434.2	230452.4
-74	52	Finance and insurance	33	52	15	33015	Rockingham County, New Hampshire	0	468.0	6581.0	580454.0
-75	52	Finance and insurance	33	52	17	33017	Strafford County, New Hampshire	0	131.5	3556.5	325650.0
-76	52	Finance and insurance	33	52	17	33017	Strafford County, New Hampshire	1	131.33333333333334	5211.0	377498.0
-77	52	Finance and insurance	33	52	19	33019	Sullivan County, New Hampshire	0	33.2	442.2	21826.2
-78	53	Real estate and rental and leasing	33	53	1	33001	Belknap County, New Hampshire	0	81.2	438.8	14039.4
-79	53	Real estate and rental and leasing	33	53	3	33003	Carroll County, New Hampshire	0	80.2	255.6	9668.6
-80	53	Real estate and rental and leasing	33	53	5	33005	Cheshire County, New Hampshire	0	65.4	224.8	8353.4
-81	53	Real estate and rental and leasing	33	53	7	33007	Coos County, New Hampshire	0	24.0	67.6	2618.0
-82	53	Real estate and rental and leasing	33	53	9	33009	Grafton County, New Hampshire	0	140.6	506.6	21008.6
-83	53	Real estate and rental and leasing	33	53	11	33011	Hillsborough County, New Hampshire	0	399.0	2670.4	130811.0
-84	53	Real estate and rental and leasing	33	53	13	33013	Merrimack County, New Hampshire	0	139.2	916.2	51092.8
-85	53	Real estate and rental and leasing	33	53	15	33015	Rockingham County, New Hampshire	0	309.4	1328.6	63574.8
-86	53	Real estate and rental and leasing	33	53	17	33017	Strafford County, New Hampshire	0	98.2	450.4	18841.6
-87	53	Real estate and rental and leasing	33	53	19	33019	Sullivan County, New Hampshire	0	35.8	275.4	17197.2
-88	54	Professional, scientific, and technical services	33	54	1	33001	Belknap County, New Hampshire	0	144.4	670.0	38126.0
-89	54	Professional, scientific, and technical services	33	54	3	33003	Carroll County, New Hampshire	0	130.8	504.6	30969.2
-90	54	Professional, scientific, and technical services	33	54	5	33005	Cheshire County, New Hampshire	0	151.8	631.4	32895.0
-91	54	Professional, scientific, and technical services	33	54	7	33007	Coos County, New Hampshire	0	32.2	125.2	5416.4
-92	54	Professional, scientific, and technical services	33	54	9	33009	Grafton County, New Hampshire	0	243.8	1563.6	124246.8
-93	54	Professional, scientific, and technical services	33	54	11	33011	Hillsborough County, New Hampshire	0	1305.2	10958.6	853487.4
-94	54	Professional, scientific, and technical services	33	54	13	33013	Merrimack County, New Hampshire	0	410.8	3114.8	185371.2
-95	54	Professional, scientific, and technical services	33	54	15	33015	Rockingham County, New Hampshire	0	1032.4	8651.4	546890.8
-96	54	Professional, scientific, and technical services	33	54	17	33017	Strafford County, New Hampshire	0	236.8	1379.0	79555.0
-97	54	Professional, scientific, and technical services	33	54	19	33019	Sullivan County, New Hampshire	0	53.4	192.0	9060.8
-98	55	Management of companies and enterprises	33	55	1	33001	Belknap County, New Hampshire	0	5.333333333333333	99.0	6607.666666666667
-99	55	Management of companies and enterprises	33	55	1	33001	Belknap County, New Hampshire	1	4.5	190.1847290640394	9637.442528735632
-100	55	Management of companies and enterprises	33	55	3	33003	Carroll County, New Hampshire	0	3.0	69.0	4049.0
-101	55	Management of companies and enterprises	33	55	3	33003	Carroll County, New Hampshire	1	3.0	111.03415435139573	5513.370114942529
-102	55	Management of companies and enterprises	33	55	5	33005	Cheshire County, New Hampshire	0	12.75	1267.25	80177.25
-103	55	Management of companies and enterprises	33	55	5	33005	Cheshire County, New Hampshire	1	11.0	686.551724137931	37280.51724137931
-104	55	Management of companies and enterprises	33	55	7	33007	Coos County, New Hampshire	0	3.5	30.5	2836.5
-105	55	Management of companies and enterprises	33	55	7	33007	Coos County, New Hampshire	1	3.0	116.4233169129721	5591.071264367816
-106	55	Management of companies and enterprises	33	55	9	33009	Grafton County, New Hampshire	0	8.0	165.0	9713.5
-107	55	Management of companies and enterprises	33	55	9	33009	Grafton County, New Hampshire	1	6.0	232.272030651341	11210.609195402298
-108	55	Management of companies and enterprises	33	55	11	33011	Hillsborough County, New Hampshire	0	72.8	3349.0	269107.0
-109	55	Management of companies and enterprises	33	55	13	33013	Merrimack County, New Hampshire	0	19.4	804.0	92266.4
-110	55	Management of companies and enterprises	33	55	15	33015	Rockingham County, New Hampshire	0	65.4	1768.0	207994.2
-111	55	Management of companies and enterprises	33	55	17	33017	Strafford County, New Hampshire	0	17.6	371.8	32165.2
-112	55	Management of companies and enterprises	33	55	19	33019	Sullivan County, New Hampshire	0	3.5	200.5	6100.0
-113	55	Management of companies and enterprises	33	55	19	33019	Sullivan County, New Hampshire	1	2.6666666666666665	95.61871921182266	4461.358620689655
-114	56	Administrative and support and waste management and remediation services	33	56	1	33001	Belknap County, New Hampshire	0	97.0	766.6	25009.6
-115	56	Administrative and support and waste management and remediation services	33	56	3	33003	Carroll County, New Hampshire	0	102.0	592.8	25145.6
-116	56	Administrative and support and waste management and remediation services	33	56	5	33005	Cheshire County, New Hampshire	0	107.4	1148.0	38659.2
-117	56	Administrative and support and waste management and remediation services	33	56	7	33007	Coos County, New Hampshire	0	34.8	194.8	6888.0
-118	56	Administrative and support and waste management and remediation services	33	56	9	33009	Grafton County, New Hampshire	0	148.4	914.0	34995.4
-119	56	Administrative and support and waste management and remediation services	33	56	11	33011	Hillsborough County, New Hampshire	0	684.0	11283.6	436308.2
-120	56	Administrative and support and waste management and remediation services	33	56	13	33013	Merrimack County, New Hampshire	0	235.0	1957.0	84159.0
-121	56	Administrative and support and waste management and remediation services	33	56	15	33015	Rockingham County, New Hampshire	0	645.0	10110.0	442934.8
-122	56	Administrative and support and waste management and remediation services	33	56	17	33017	Strafford County, New Hampshire	0	155.0	1900.0	64519.4
-123	56	Administrative and support and waste management and remediation services	33	56	19	33019	Sullivan County, New Hampshire	0	42.8	595.2	17346.4
-124	61	Educational services	33	61	1	33001	Belknap County, New Hampshire	0	21.0	478.0	17320.4
-125	61	Educational services	33	61	3	33003	Carroll County, New Hampshire	0	23.0	408.4	11916.4
-126	61	Educational services	33	61	5	33005	Cheshire County, New Hampshire	0	33.6	1017.0	32088.4
-127	61	Educational services	33	61	7	33007	Coos County, New Hampshire	0	12.0	87.6	3749.6
-128	61	Educational services	33	61	9	33009	Grafton County, New Hampshire	0	61.5	8455.5	427633.5
-129	61	Educational services	33	61	9	33009	Grafton County, New Hampshire	1	63.0	7974.666666666667	393007.3333333333
-130	61	Educational services	33	61	11	33011	Hillsborough County, New Hampshire	0	191.0	5000.8	155951.8
-131	61	Educational services	33	61	13	33013	Merrimack County, New Hampshire	0	75.0	4356.6	168106.6
-132	61	Educational services	33	61	15	33015	Rockingham County, New Hampshire	0	138.8	3014.4	107439.6
-133	61	Educational services	33	61	17	33017	Strafford County, New Hampshire	0	30.8	977.0	44280.6
-134	61	Educational services	33	61	19	33019	Sullivan County, New Hampshire	0	13.6	253.0	8655.8
-135	62	Health care and social assistance	33	62	1	33001	Belknap County, New Hampshire	0	139.4	3827.6	166809.6
-136	62	Health care and social assistance	33	62	3	33003	Carroll County, New Hampshire	0	149.4	2774.0	105928.6
-137	62	Health care and social assistance	33	62	5	33005	Cheshire County, New Hampshire	0	161.8	3774.2	153877.2
-138	62	Health care and social assistance	33	62	7	33007	Coos County, New Hampshire	0	101.2	2157.8	87315.6
-139	62	Health care and social assistance	33	62	9	33009	Grafton County, New Hampshire	0	271.6	11114.6	736850.8
-140	62	Health care and social assistance	33	62	11	33011	Hillsborough County, New Hampshire	0	1126.6	29029.8	1410001.8
-141	62	Health care and social assistance	33	62	13	33013	Merrimack County, New Hampshire	0	414.2	12278.6	571871.4
-142	62	Health care and social assistance	33	62	15	33015	Rockingham County, New Hampshire	0	876.0	15639.8	706601.2
-143	62	Health care and social assistance	33	62	17	33017	Strafford County, New Hampshire	0	306.8	6763.8	346542.4
-144	62	Health care and social assistance	33	62	19	33019	Sullivan County, New Hampshire	0	94.8	1287.0	46402.8
-145	71	Arts, entertainment, and recreation	33	71	1	33001	Belknap County, New Hampshire	0	55.0	418.2	13260.4
-146	71	Arts, entertainment, and recreation	33	71	3	33003	Carroll County, New Hampshire	0	57.2	803.8	19688.8
-147	71	Arts, entertainment, and recreation	33	71	5	33005	Cheshire County, New Hampshire	0	46.0	571.6	8082.2
-148	71	Arts, entertainment, and recreation	33	71	7	33007	Coos County, New Hampshire	0	24.6	89.6	5758.4
-149	71	Arts, entertainment, and recreation	33	71	9	33009	Grafton County, New Hampshire	0	74.0	1845.8	25491.2
-150	71	Arts, entertainment, and recreation	33	71	11	33011	Hillsborough County, New Hampshire	0	166.0	3075.0	74480.8
-151	71	Arts, entertainment, and recreation	33	71	13	33013	Merrimack County, New Hampshire	0	80.8	1972.0	29374.6
-152	71	Arts, entertainment, and recreation	33	71	15	33015	Rockingham County, New Hampshire	0	202.4	2707.6	67363.0
-153	71	Arts, entertainment, and recreation	33	71	17	33017	Strafford County, New Hampshire	0	39.8	557.8	10881.2
-154	71	Arts, entertainment, and recreation	33	71	19	33019	Sullivan County, New Hampshire	0	15.2	33.2	1421.0
-155	72	Accommodation and food services	33	72	1	33001	Belknap County, New Hampshire	0	232.0	2703.4	58085.0
-156	72	Accommodation and food services	33	72	3	33003	Carroll County, New Hampshire	0	308.2	4109.4	84996.8
-157	72	Accommodation and food services	33	72	5	33005	Cheshire County, New Hampshire	0	172.6	2561.8	43088.4
-158	72	Accommodation and food services	33	72	7	33007	Coos County, New Hampshire	0	113.0	1850.2	35354.0
-159	72	Accommodation and food services	33	72	9	33009	Grafton County, New Hampshire	0	388.2	5042.2	102461.8
-160	72	Accommodation and food services	33	72	11	33011	Hillsborough County, New Hampshire	0	886.6	15192.2	258024.6
-161	72	Accommodation and food services	33	72	13	33013	Merrimack County, New Hampshire	0	309.8	5111.0	89652.0
-162	72	Accommodation and food services	33	72	15	33015	Rockingham County, New Hampshire	0	882.6	13666.8	275579.6
-163	72	Accommodation and food services	33	72	17	33017	Strafford County, New Hampshire	0	283.4	3893.4	60879.8
-164	72	Accommodation and food services	33	72	19	33019	Sullivan County, New Hampshire	0	69.6	733.2	12754.4
-165	81	Other services (except public administration)	33	81	1	33001	Belknap County, New Hampshire	0	189.8	820.0	20359.0
-166	81	Other services (except public administration)	33	81	3	33003	Carroll County, New Hampshire	0	154.8	596.6	17227.4
-167	81	Other services (except public administration)	33	81	5	33005	Cheshire County, New Hampshire	0	185.2	1188.8	31240.0
-168	81	Other services (except public administration)	33	81	7	33007	Coos County, New Hampshire	0	83.0	435.6	12252.8
-169	81	Other services (except public administration)	33	81	9	33009	Grafton County, New Hampshire	0	262.8	1321.6	32582.0
-170	81	Other services (except public administration)	33	81	11	33011	Hillsborough County, New Hampshire	0	1046.6	7293.8	226859.4
-171	81	Other services (except public administration)	33	81	13	33013	Merrimack County, New Hampshire	0	517.6	2616.2	89398.2
-172	81	Other services (except public administration)	33	81	15	33015	Rockingham County, New Hampshire	0	843.8	4801.6	138859.4
-173	81	Other services (except public administration)	33	81	17	33017	Strafford County, New Hampshire	0	271.6	1646.2	45146.4
-174	81	Other services (except public administration)	33	81	19	33019	Sullivan County, New Hampshire	0	101.0	1032.0	26330.0
-175	81	Other services (except public administration)	33	81	19	33019	Sullivan County, New Hampshire	1	104.66666666666667	1016.3333333333334	25770.333333333332
-176	99	Industries not classified	33	99	1	33001	Belknap County, New Hampshire	0	4.0	2.0	76.0
-177	99	Industries not classified	33	99	1	33001	Belknap County, New Hampshire	1	1.5	-2.2857142857142856	38.57142857142857
-178	99	Industries not classified	33	99	3	33003	Carroll County, New Hampshire	0	6.0	9.75	554.5
-179	99	Industries not classified	33	99	3	33003	Carroll County, New Hampshire	1	1.0	-0.5714285714285714	32.14285714285714
-180	99	Industries not classified	33	99	5	33005	Cheshire County, New Hampshire	0	3.0	2.0	48.0
-181	99	Industries not classified	33	99	5	33005	Cheshire County, New Hampshire	1	1.3333333333333333	4.166666666666667	36.72222222222222
-182	99	Industries not classified	33	99	7	33007	Coos County, New Hampshire	1	1.6	5.265714285714286	47.275238095238095
-183	99	Industries not classified	33	99	9	33009	Grafton County, New Hampshire	0	5.5	15.5	215.0
-184	99	Industries not classified	33	99	9	33009	Grafton County, New Hampshire	1	2.0	-1.1428571428571428	64.28571428571428
-185	99	Industries not classified	33	99	11	33011	Hillsborough County, New Hampshire	0	13.0	7.4	388.0
-186	99	Industries not classified	33	99	13	33013	Merrimack County, New Hampshire	0	5.0	3.0	109.0
-187	99	Industries not classified	33	99	13	33013	Merrimack County, New Hampshire	1	1.5	-2.2857142857142856	38.57142857142857
-188	99	Industries not classified	33	99	15	33015	Rockingham County, New Hampshire	0	14.2	6.2	247.2
-189	99	Industries not classified	33	99	17	33017	Strafford County, New Hampshire	0	5.666666666666667	4.0	136.0
-190	99	Industries not classified	33	99	17	33017	Strafford County, New Hampshire	1	1.5	0.9142857142857145	42.27142857142857
-191	99	Industries not classified	33	99	19	33019	Sullivan County, New Hampshire	0	4.0	0.0	43.0
-192	99	Industries not classified	33	99	19	33019	Sullivan County, New Hampshire	1	1.5	-1.4	35.6
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estab	emp	payann	estimate
+0	11	Agriculture, forestry, fishing and hunting	33	11	1	33001	Belknap County, New Hampshire	3.6	4.0	302.4	0.0
+1	11	Agriculture, forestry, fishing and hunting	33	11	3	33003	Carroll County, New Hampshire	11.8	48.2	2192.0	0.0
+2	11	Agriculture, forestry, fishing and hunting	33	11	5	33005	Cheshire County, New Hampshire	9.8	8.6	519.8	0.0
+3	11	Agriculture, forestry, fishing and hunting	33	11	7	33007	Coos County, New Hampshire	28.4	156.2	5609.0	0.0
+4	11	Agriculture, forestry, fishing and hunting	33	11	9	33009	Grafton County, New Hampshire	23.6	46.8	11044.0	0.0
+5	11	Agriculture, forestry, fishing and hunting	33	11	11	33011	Hillsborough County, New Hampshire	18.8	49.6	2992.0	0.0
+6	11	Agriculture, forestry, fishing and hunting	33	11	13	33013	Merrimack County, New Hampshire	17.8	85.4	3421.8	0.0
+7	11	Agriculture, forestry, fishing and hunting	33	11	15	33015	Rockingham County, New Hampshire	10.0	10.4	661.4	0.0
+8	11	Agriculture, forestry, fishing and hunting	33	11	17	33017	Strafford County, New Hampshire	10.2	30.4	831.2	0.0
+9	11	Agriculture, forestry, fishing and hunting	33	11	19	33019	Sullivan County, New Hampshire	7.0	67.6	2380.4	0.0
+10	21	Mining, quarrying, and oil and gas extraction	33	21	1	33001	Belknap County, New Hampshire	4.0	20.806060606060605	1297.6060606060605	0.4
+11	21	Mining, quarrying, and oil and gas extraction	33	21	3	33003	Carroll County, New Hampshire	2.0	12.615151515151515	782.8651515151515	1.0
+12	21	Mining, quarrying, and oil and gas extraction	33	21	5	33005	Cheshire County, New Hampshire	4.8	11.2	1488.0	0.0
+13	21	Mining, quarrying, and oil and gas extraction	33	21	7	33007	Coos County, New Hampshire	1.6	9.965151515151515	609.9401515151515	1.0
+14	21	Mining, quarrying, and oil and gas extraction	33	21	9	33009	Grafton County, New Hampshire	8.0	18.0	1469.8	0.0
+15	21	Mining, quarrying, and oil and gas extraction	33	21	11	33011	Hillsborough County, New Hampshire	7.6	34.4	2506.0	0.0
+16	21	Mining, quarrying, and oil and gas extraction	33	21	13	33013	Merrimack County, New Hampshire	9.2	72.6	4182.4	0.0
+17	21	Mining, quarrying, and oil and gas extraction	33	21	15	33015	Rockingham County, New Hampshire	4.0	27.413636363636364	1904.6386363636364	0.6
+18	21	Mining, quarrying, and oil and gas extraction	33	21	17	33017	Strafford County, New Hampshire	5.4	24.8	2347.8	0.0
+19	21	Mining, quarrying, and oil and gas extraction	33	21	19	33019	Sullivan County, New Hampshire	1.0	4.0	239.75	1.0
+20	22	Utilities	33	22	1	33001	Belknap County, New Hampshire	7.4	107.8408163265306	11438.416326530612	0.2
+21	22	Utilities	33	22	3	33003	Carroll County, New Hampshire	7.0	40.4	5063.2	0.0
+22	22	Utilities	33	22	5	33005	Cheshire County, New Hampshire	6.0	157.49726443768995	12485.366565349543	0.6
+23	22	Utilities	33	22	7	33007	Coos County, New Hampshire	9.8	87.6	7041.8	0.0
+24	22	Utilities	33	22	9	33009	Grafton County, New Hampshire	18.4	292.6	24409.6	0.0
+25	22	Utilities	33	22	11	33011	Hillsborough County, New Hampshire	24.2	842.3816760746852	68164.91254884933	0.6
+26	22	Utilities	33	22	13	33013	Merrimack County, New Hampshire	12.8	362.9643074250977	30304.525662179767	0.6
+27	22	Utilities	33	22	15	33015	Rockingham County, New Hampshire	27.8	1197.0	133612.8	0.0
+28	22	Utilities	33	22	17	33017	Strafford County, New Hampshire	1.4	52.51593573599653	4612.178897090751	1.0
+29	22	Utilities	33	22	19	33019	Sullivan County, New Hampshire	6.6	40.6	4319.8	0.0
+30	23	Construction	33	23	1	33001	Belknap County, New Hampshire	201.6	1103.4	68945.6	0.0
+31	23	Construction	33	23	3	33003	Carroll County, New Hampshire	216.6	925.0	47515.4	0.0
+32	23	Construction	33	23	5	33005	Cheshire County, New Hampshire	219.6	1302.2	69683.4	0.0
+33	23	Construction	33	23	7	33007	Coos County, New Hampshire	64.8	163.4	9445.6	0.0
+34	23	Construction	33	23	9	33009	Grafton County, New Hampshire	241.0	1176.6	57989.2	0.0
+35	23	Construction	33	23	11	33011	Hillsborough County, New Hampshire	1109.0	7527.4	438807.4	0.0
+36	23	Construction	33	23	13	33013	Merrimack County, New Hampshire	447.4	2969.8	186531.2	0.0
+37	23	Construction	33	23	15	33015	Rockingham County, New Hampshire	1011.6	6761.0	427933.2	0.0
+38	23	Construction	33	23	17	33017	Strafford County, New Hampshire	268.4	1302.0	69249.4	0.0
+39	23	Construction	33	23	19	33019	Sullivan County, New Hampshire	105.6	429.0	19521.4	0.0
+40	42	Wholesale trade	33	42	1	33001	Belknap County, New Hampshire	58.2	471.2	27130.8	0.0
+41	42	Wholesale trade	33	42	3	33003	Carroll County, New Hampshire	43.8	298.8	15103.6	0.0
+42	42	Wholesale trade	33	42	5	33005	Cheshire County, New Hampshire	66.4	982.2	45812.2	0.0
+43	42	Wholesale trade	33	42	7	33007	Coos County, New Hampshire	21.8	181.4	9185.0	0.0
+44	42	Wholesale trade	33	42	9	33009	Grafton County, New Hampshire	93.2	731.8	46768.8	0.0
+45	42	Wholesale trade	33	42	11	33011	Hillsborough County, New Hampshire	589.6	7576.8	585566.4	0.0
+46	42	Wholesale trade	33	42	13	33013	Merrimack County, New Hampshire	170.0	3492.0	189557.4	0.0
+47	42	Wholesale trade	33	42	15	33015	Rockingham County, New Hampshire	589.4	7318.0	528766.4	0.0
+48	42	Wholesale trade	33	42	17	33017	Strafford County, New Hampshire	97.4	1169.2	67214.2	0.0
+49	42	Wholesale trade	33	42	19	33019	Sullivan County, New Hampshire	41.4	483.6	36732.8	0.0
+50	51	Information	33	51	1	33001	Belknap County, New Hampshire	25.8	293.8	14393.6	0.0
+51	51	Information	33	51	3	33003	Carroll County, New Hampshire	39.0	217.4	10483.8	0.0
+52	51	Information	33	51	5	33005	Cheshire County, New Hampshire	34.4	496.6	28915.2	0.0
+53	51	Information	33	51	7	33007	Coos County, New Hampshire	16.2	264.6	21302.8	0.6
+54	51	Information	33	51	9	33009	Grafton County, New Hampshire	69.4	1013.0	69677.2	0.0
+55	51	Information	33	51	11	33011	Hillsborough County, New Hampshire	252.0	7071.2	656109.6	0.0
+56	51	Information	33	51	13	33013	Merrimack County, New Hampshire	67.0	757.8	41807.4	0.0
+57	51	Information	33	51	15	33015	Rockingham County, New Hampshire	151.2	2900.2	232504.0	0.0
+58	51	Information	33	51	17	33017	Strafford County, New Hampshire	48.0	657.6	33403.6	0.0
+59	51	Information	33	51	19	33019	Sullivan County, New Hampshire	14.4	94.6	3444.2	0.0
+60	52	Finance and insurance	33	52	1	33001	Belknap County, New Hampshire	72.0	245.6	39352.4	0.0
+61	52	Finance and insurance	33	52	3	33003	Carroll County, New Hampshire	62.4	409.2	19748.0	0.0
+62	52	Finance and insurance	33	52	5	33005	Cheshire County, New Hampshire	94.2	1384.4	89493.4	0.0
+63	52	Finance and insurance	33	52	7	33007	Coos County, New Hampshire	35.6	287.8	12417.4	0.0
+64	52	Finance and insurance	33	52	9	33009	Grafton County, New Hampshire	141.8	901.8	87117.6	0.0
+65	52	Finance and insurance	33	52	11	33011	Hillsborough County, New Hampshire	612.6	7958.8	737404.0	0.0
+66	52	Finance and insurance	33	52	13	33013	Merrimack County, New Hampshire	201.0	3434.2	230452.4	0.0
+67	52	Finance and insurance	33	52	15	33015	Rockingham County, New Hampshire	468.0	6581.0	580454.0	0.0
+68	52	Finance and insurance	33	52	17	33017	Strafford County, New Hampshire	131.4	4549.2	356758.8	0.6
+69	52	Finance and insurance	33	52	19	33019	Sullivan County, New Hampshire	33.2	442.2	21826.2	0.0
+70	53	Real estate and rental and leasing	33	53	1	33001	Belknap County, New Hampshire	81.2	438.8	14039.4	0.0
+71	53	Real estate and rental and leasing	33	53	3	33003	Carroll County, New Hampshire	80.2	255.6	9668.6	0.0
+72	53	Real estate and rental and leasing	33	53	5	33005	Cheshire County, New Hampshire	65.4	224.8	8353.4	0.0
+73	53	Real estate and rental and leasing	33	53	7	33007	Coos County, New Hampshire	24.0	67.6	2618.0	0.0
+74	53	Real estate and rental and leasing	33	53	9	33009	Grafton County, New Hampshire	140.6	506.6	21008.6	0.0
+75	53	Real estate and rental and leasing	33	53	11	33011	Hillsborough County, New Hampshire	399.0	2670.4	130811.0	0.0
+76	53	Real estate and rental and leasing	33	53	13	33013	Merrimack County, New Hampshire	139.2	916.2	51092.8	0.0
+77	53	Real estate and rental and leasing	33	53	15	33015	Rockingham County, New Hampshire	309.4	1328.6	63574.8	0.0
+78	53	Real estate and rental and leasing	33	53	17	33017	Strafford County, New Hampshire	98.2	450.4	18841.6	0.0
+79	53	Real estate and rental and leasing	33	53	19	33019	Sullivan County, New Hampshire	35.8	275.4	17197.2	0.0
+80	54	Professional, scientific, and technical services	33	54	1	33001	Belknap County, New Hampshire	144.4	670.0	38126.0	0.0
+81	54	Professional, scientific, and technical services	33	54	3	33003	Carroll County, New Hampshire	130.8	504.6	30969.2	0.0
+82	54	Professional, scientific, and technical services	33	54	5	33005	Cheshire County, New Hampshire	151.8	631.4	32895.0	0.0
+83	54	Professional, scientific, and technical services	33	54	7	33007	Coos County, New Hampshire	32.2	125.2	5416.4	0.0
+84	54	Professional, scientific, and technical services	33	54	9	33009	Grafton County, New Hampshire	243.8	1563.6	124246.8	0.0
+85	54	Professional, scientific, and technical services	33	54	11	33011	Hillsborough County, New Hampshire	1305.2	10958.6	853487.4	0.0
+86	54	Professional, scientific, and technical services	33	54	13	33013	Merrimack County, New Hampshire	410.8	3114.8	185371.2	0.0
+87	54	Professional, scientific, and technical services	33	54	15	33015	Rockingham County, New Hampshire	1032.4	8651.4	546890.8	0.0
+88	54	Professional, scientific, and technical services	33	54	17	33017	Strafford County, New Hampshire	236.8	1379.0	79555.0	0.0
+89	54	Professional, scientific, and technical services	33	54	19	33019	Sullivan County, New Hampshire	53.4	192.0	9060.8	0.0
+90	55	Management of companies and enterprises	33	55	1	33001	Belknap County, New Hampshire	5.0	135.47389162561575	7819.5770114942525	0.4
+91	55	Management of companies and enterprises	33	55	3	33003	Carroll County, New Hampshire	3.0	102.62732348111658	5220.496091954023	0.8
+92	55	Management of companies and enterprises	33	55	5	33005	Cheshire County, New Hampshire	12.4	1151.1103448275862	71597.90344827586	0.2
+93	55	Management of companies and enterprises	33	55	7	33007	Coos County, New Hampshire	3.2	82.05399014778325	4489.2427586206895	0.6
+94	55	Management of companies and enterprises	33	55	9	33009	Grafton County, New Hampshire	6.8	205.3632183908046	10611.765517241378	0.6
+95	55	Management of companies and enterprises	33	55	11	33011	Hillsborough County, New Hampshire	72.8	3349.0	269107.0	0.0
+96	55	Management of companies and enterprises	33	55	13	33013	Merrimack County, New Hampshire	19.4	804.0	92266.4	0.0
+97	55	Management of companies and enterprises	33	55	15	33015	Rockingham County, New Hampshire	65.4	1768.0	207994.2	0.0
+98	55	Management of companies and enterprises	33	55	17	33017	Strafford County, New Hampshire	17.6	371.8	32165.2	0.0
+99	55	Management of companies and enterprises	33	55	19	33019	Sullivan County, New Hampshire	3.0	137.5712315270936	5116.815172413793	0.6
+100	56	Administrative and support and waste management and remediation services	33	56	1	33001	Belknap County, New Hampshire	97.0	766.6	25009.6	0.0
+101	56	Administrative and support and waste management and remediation services	33	56	3	33003	Carroll County, New Hampshire	102.0	592.8	25145.6	0.0
+102	56	Administrative and support and waste management and remediation services	33	56	5	33005	Cheshire County, New Hampshire	107.4	1148.0	38659.2	0.0
+103	56	Administrative and support and waste management and remediation services	33	56	7	33007	Coos County, New Hampshire	34.8	194.8	6888.0	0.0
+104	56	Administrative and support and waste management and remediation services	33	56	9	33009	Grafton County, New Hampshire	148.4	914.0	34995.4	0.0
+105	56	Administrative and support and waste management and remediation services	33	56	11	33011	Hillsborough County, New Hampshire	684.0	11283.6	436308.2	0.0
+106	56	Administrative and support and waste management and remediation services	33	56	13	33013	Merrimack County, New Hampshire	235.0	1957.0	84159.0	0.0
+107	56	Administrative and support and waste management and remediation services	33	56	15	33015	Rockingham County, New Hampshire	645.0	10110.0	442934.8	0.0
+108	56	Administrative and support and waste management and remediation services	33	56	17	33017	Strafford County, New Hampshire	155.0	1900.0	64519.4	0.0
+109	56	Administrative and support and waste management and remediation services	33	56	19	33019	Sullivan County, New Hampshire	42.8	595.2	17346.4	0.0
+110	61	Educational services	33	61	1	33001	Belknap County, New Hampshire	21.0	478.0	17320.4	0.0
+111	61	Educational services	33	61	3	33003	Carroll County, New Hampshire	23.0	408.4	11916.4	0.0
+112	61	Educational services	33	61	5	33005	Cheshire County, New Hampshire	33.6	1017.0	32088.4	0.0
+113	61	Educational services	33	61	7	33007	Coos County, New Hampshire	12.0	87.6	3749.6	0.0
+114	61	Educational services	33	61	9	33009	Grafton County, New Hampshire	62.4	8167.0	406857.8	0.6
+115	61	Educational services	33	61	11	33011	Hillsborough County, New Hampshire	191.0	5000.8	155951.8	0.0
+116	61	Educational services	33	61	13	33013	Merrimack County, New Hampshire	75.0	4356.6	168106.6	0.0
+117	61	Educational services	33	61	15	33015	Rockingham County, New Hampshire	138.8	3014.4	107439.6	0.0
+118	61	Educational services	33	61	17	33017	Strafford County, New Hampshire	30.8	977.0	44280.6	0.0
+119	61	Educational services	33	61	19	33019	Sullivan County, New Hampshire	13.6	253.0	8655.8	0.0
+120	62	Health care and social assistance	33	62	1	33001	Belknap County, New Hampshire	139.4	3827.6	166809.6	0.0
+121	62	Health care and social assistance	33	62	3	33003	Carroll County, New Hampshire	149.4	2774.0	105928.6	0.0
+122	62	Health care and social assistance	33	62	5	33005	Cheshire County, New Hampshire	161.8	3774.2	153877.2	0.0
+123	62	Health care and social assistance	33	62	7	33007	Coos County, New Hampshire	101.2	2157.8	87315.6	0.0
+124	62	Health care and social assistance	33	62	9	33009	Grafton County, New Hampshire	271.6	11114.6	736850.8	0.0
+125	62	Health care and social assistance	33	62	11	33011	Hillsborough County, New Hampshire	1126.6	29029.8	1410001.8	0.0
+126	62	Health care and social assistance	33	62	13	33013	Merrimack County, New Hampshire	414.2	12278.6	571871.4	0.0
+127	62	Health care and social assistance	33	62	15	33015	Rockingham County, New Hampshire	876.0	15639.8	706601.2	0.0
+128	62	Health care and social assistance	33	62	17	33017	Strafford County, New Hampshire	306.8	6763.8	346542.4	0.0
+129	62	Health care and social assistance	33	62	19	33019	Sullivan County, New Hampshire	94.8	1287.0	46402.8	0.0
+130	71	Arts, entertainment, and recreation	33	71	1	33001	Belknap County, New Hampshire	55.0	418.2	13260.4	0.0
+131	71	Arts, entertainment, and recreation	33	71	3	33003	Carroll County, New Hampshire	57.2	803.8	19688.8	0.0
+132	71	Arts, entertainment, and recreation	33	71	5	33005	Cheshire County, New Hampshire	46.0	571.6	8082.2	0.0
+133	71	Arts, entertainment, and recreation	33	71	7	33007	Coos County, New Hampshire	24.6	89.6	5758.4	0.0
+134	71	Arts, entertainment, and recreation	33	71	9	33009	Grafton County, New Hampshire	74.0	1845.8	25491.2	0.0
+135	71	Arts, entertainment, and recreation	33	71	11	33011	Hillsborough County, New Hampshire	166.0	3075.0	74480.8	0.0
+136	71	Arts, entertainment, and recreation	33	71	13	33013	Merrimack County, New Hampshire	80.8	1972.0	29374.6	0.0
+137	71	Arts, entertainment, and recreation	33	71	15	33015	Rockingham County, New Hampshire	202.4	2707.6	67363.0	0.0
+138	71	Arts, entertainment, and recreation	33	71	17	33017	Strafford County, New Hampshire	39.8	557.8	10881.2	0.0
+139	71	Arts, entertainment, and recreation	33	71	19	33019	Sullivan County, New Hampshire	15.2	33.2	1421.0	0.0
+140	72	Accommodation and food services	33	72	1	33001	Belknap County, New Hampshire	232.0	2703.4	58085.0	0.0
+141	72	Accommodation and food services	33	72	3	33003	Carroll County, New Hampshire	308.2	4109.4	84996.8	0.0
+142	72	Accommodation and food services	33	72	5	33005	Cheshire County, New Hampshire	172.6	2561.8	43088.4	0.0
+143	72	Accommodation and food services	33	72	7	33007	Coos County, New Hampshire	113.0	1850.2	35354.0	0.0
+144	72	Accommodation and food services	33	72	9	33009	Grafton County, New Hampshire	388.2	5042.2	102461.8	0.0
+145	72	Accommodation and food services	33	72	11	33011	Hillsborough County, New Hampshire	886.6	15192.2	258024.6	0.0
+146	72	Accommodation and food services	33	72	13	33013	Merrimack County, New Hampshire	309.8	5111.0	89652.0	0.0
+147	72	Accommodation and food services	33	72	15	33015	Rockingham County, New Hampshire	882.6	13666.8	275579.6	0.0
+148	72	Accommodation and food services	33	72	17	33017	Strafford County, New Hampshire	283.4	3893.4	60879.8	0.0
+149	72	Accommodation and food services	33	72	19	33019	Sullivan County, New Hampshire	69.6	733.2	12754.4	0.0
+150	81	Other services (except public administration)	33	81	1	33001	Belknap County, New Hampshire	189.8	820.0	20359.0	0.0
+151	81	Other services (except public administration)	33	81	3	33003	Carroll County, New Hampshire	154.8	596.6	17227.4	0.0
+152	81	Other services (except public administration)	33	81	5	33005	Cheshire County, New Hampshire	185.2	1188.8	31240.0	0.0
+153	81	Other services (except public administration)	33	81	7	33007	Coos County, New Hampshire	83.0	435.6	12252.8	0.0
+154	81	Other services (except public administration)	33	81	9	33009	Grafton County, New Hampshire	262.8	1321.6	32582.0	0.0
+155	81	Other services (except public administration)	33	81	11	33011	Hillsborough County, New Hampshire	1046.6	7293.8	226859.4	0.0
+156	81	Other services (except public administration)	33	81	13	33013	Merrimack County, New Hampshire	517.6	2616.2	89398.2	0.0
+157	81	Other services (except public administration)	33	81	15	33015	Rockingham County, New Hampshire	843.8	4801.6	138859.4	0.0
+158	81	Other services (except public administration)	33	81	17	33017	Strafford County, New Hampshire	271.6	1646.2	45146.4	0.0
+159	81	Other services (except public administration)	33	81	19	33019	Sullivan County, New Hampshire	103.2	1022.6	25994.2	0.6
+160	99	Industries not classified	33	99	1	33001	Belknap County, New Hampshire	3.0	0.28571428571428575	61.028571428571425	0.4
+161	99	Industries not classified	33	99	3	33003	Carroll County, New Hampshire	5.0	7.685714285714286	450.02857142857135	0.2
+162	99	Industries not classified	33	99	5	33005	Cheshire County, New Hampshire	1.75	3.625	39.541666666666664	0.75
+163	99	Industries not classified	33	99	7	33007	Coos County, New Hampshire	1.6	5.265714285714286	47.275238095238095	1.0
+164	99	Industries not classified	33	99	9	33009	Grafton County, New Hampshire	4.8	12.171428571428573	184.85714285714283	0.2
+165	99	Industries not classified	33	99	11	33011	Hillsborough County, New Hampshire	13.0	7.4	388.0	0.0
+166	99	Industries not classified	33	99	13	33013	Merrimack County, New Hampshire	3.6	0.8857142857142858	80.82857142857142	0.4
+167	99	Industries not classified	33	99	15	33015	Rockingham County, New Hampshire	14.2	6.2	247.2	0.0
+168	99	Industries not classified	33	99	17	33017	Strafford County, New Hampshire	4.0	2.765714285714286	98.50857142857141	0.4
+169	99	Industries not classified	33	99	19	33019	Sullivan County, New Hampshire	2.75	-0.7	39.3	0.5
