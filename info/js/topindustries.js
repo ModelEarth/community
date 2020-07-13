@@ -492,6 +492,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
             delete rates_dict[id]
             rateInFips=0
             rateArray={}
+            estim={}
             naicscode=0
             for (var j = 0; j<fips.length; j++){ 
                 if(dataSet.industryData.ActualRate[id]){ 
@@ -500,13 +501,13 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                         rateArray[j]=parseFloat(dataSet.industryData.ActualRate[id][fips[j]][whichVal.node().value]);
                         naicscode = dataSet.industryData.ActualRate[id][fips[j]]['relevant_naics']
                         if(dataSet.industryData.ActualRate[id][fips[j]]['estimate']){
-                            estim = dataSet.industryData.ActualRate[id][fips[j]]['estimate']
+                            estim[j]=parseFloat(dataSet.industryData.ActualRate[id][fips[j]]['estimate'])
                         }else{
-                            estim=0
+                            estim[j]=parseFloat(0)
                         }
                     } else {
                             rateInFips = rateInFips+0
-                            estim=0
+                            estim[j]=parseFloat(0)
 
                     }
                 }
@@ -636,11 +637,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
         totalLabel = "Total Payroll ($)";
     }
     if(Array.isArray(fips)){
-        if (fips.length > 2) {
+        
+        //if (fips.length > 2) {
             $("#infoColumn").hide();
-        } else {
-            $("#infoColumn").show();
-        }
+        //} else {
+        //    $("#infoColumn").show();
+        //}
     }else{
         $(".mainColumn1").show();
     }
@@ -726,7 +728,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                             
                             for (var j = 0; j<fips.length; j++){
                                 if(top_data_list[i]['ratearray'][j]){
-                                    if(String(top_data_list[i]['Estimate'][j])){    
+                                    if(top_data_list[i]['Estimate'][j]){    
                                         if(top_data_list[i]['Estimate'][j]>0){
                                             
                                             midCol=midCol + "<div class='cell-right'>" + dollar +"<a href='" + mapLink[j] + "' target='_blank'>"+'<span style="color: #676464" >'+ String((top_data_list[i]['ratearray'][j]/1000).toFixed(2)) + " million</span></a></div>";
@@ -759,7 +761,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                         }
                     }else{
                         //if(String((top_data_list[i][whichVal.node().value]/1000).toFixed(2)).length<7){
-                        if(String(top_data_list[i]['Estimate'])){    
+                        if(top_data_list[i]['Estimate']){    
                             if(top_data_list[i]['Estimate']>0){
                                 rightCol = "<div class='cell-right'>" + dollar + "<a href='" + mapLink + "' target='_blank'>"+'<span style="color: #676464" >'+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million</span></a></div>";
                             }else{
@@ -792,7 +794,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                                     midCol += "<div class='cell-right'><a href='" + mapLink[j] + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
                                     
                                 }else{
-                                    if(String(top_data_list[i]['Estimate'][j])){    
+                                    if(top_data_list[i]['Estimate'][j]){    
                                             if(top_data_list[i]['Estimate'][j]>0){
                                                 midCol += "<div class='cell-right'><a href='" + mapLink[j] + "' target='_blank'>" + '<span style="color: #676464" >'+String(Math.round(top_data_list[i]['ratearray'][j])) + "</span></a></div>";
                                     
@@ -821,7 +823,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                             
                         }else{
 
-                            if(String(top_data_list[i]['Estimate'])){    
+                            if(top_data_list[i]['Estimate']){    
                                 if(top_data_list[i]['Estimate']>0){
                                     
                                     rightCol = "<div class='cell-right'><a href='" + mapLink + "' target='_blank'>" +'<span style="color: #676464" >'+ String(Math.round(top_data_list[i][whichVal.node().value])) + "</span></a></div>";
