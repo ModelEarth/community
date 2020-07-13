@@ -1,683 +1,820 @@
-	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
-0	16001	16	1	Ada County, Idaho	11	Agriculture, forestry, fishing and hunting	11	13.8	11.2	888.6
-1	16001	16	1	Ada County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	14.0	64.0	4331.6
-2	16001	16	1	Ada County, Idaho	22	Utilities	22	37.6	715.0	71733.6
-3	16001	16	1	Ada County, Idaho	23	Construction	23	1402.4	10772.8	506035.8
-4	16001	16	1	Ada County, Idaho	42	Wholesale trade	42	659.8	11903.0	839061.8
-5	16001	16	1	Ada County, Idaho	51	Information	51	225.2	6697.8	346713.4
-6	16001	16	1	Ada County, Idaho	52	Finance and insurance	52	949.4	9531.4	555052.4
-7	16001	16	1	Ada County, Idaho	53	Real estate and rental and leasing	53	790.8	2866.4	102089.8
-8	16001	16	1	Ada County, Idaho	54	Professional, scientific, and technical services	54	1698.8	13648.0	751595.8
-9	16001	16	1	Ada County, Idaho	55	Management of companies and enterprises	55	128.8	5778.8	437738.4
-10	16001	16	1	Ada County, Idaho	56	Administrative and support and waste management and remediation services	56	764.2	13884.8	385117.2
-11	16001	16	1	Ada County, Idaho	61	Educational services	61	163.8	2221.4	60386.8
-12	16001	16	1	Ada County, Idaho	62	Health care and social assistance	62	1434.4	30803.2	1408326.4
-13	16001	16	1	Ada County, Idaho	71	Arts, entertainment, and recreation	71	174.8	3425.8	51486.6
-14	16001	16	1	Ada County, Idaho	72	Accommodation and food services	72	959.8	18447.2	274931.8
-15	16001	16	1	Ada County, Idaho	81	Other services (except public administration)	81	985.6	7292.4	188606.0
-16	16001	16	1	Ada County, Idaho	99	Industries not classified	99	24.6	20.4	361.2
-17	16003	16	3	Adams County, Idaho	11	Agriculture, forestry, fishing and hunting	11	8.6	19.0	2087.6
-19	16003	16	3	Adams County, Idaho	23	Construction	23	15.4	8.4	463.4
-21	16003	16	3	Adams County, Idaho	51	Information	51	2.4	2.8	97.4
-22	16003	16	3	Adams County, Idaho	52	Finance and insurance	52	3.0	9.2	365.0
-23	16003	16	3	Adams County, Idaho	53	Real estate and rental and leasing	53	6.4	2.6	96.6
-24	16003	16	3	Adams County, Idaho	54	Professional, scientific, and technical services	54	8.0	5.0	389.6
-25	16003	16	3	Adams County, Idaho	56	Administrative and support and waste management and remediation services	56	6.6	6.6	198.4
-26	16003	16	3	Adams County, Idaho	62	Health care and social assistance	62	5.2	18.2	570.6
-27	16003	16	3	Adams County, Idaho	71	Arts, entertainment, and recreation	71	5.6	9.6	401.4
-28	16003	16	3	Adams County, Idaho	72	Accommodation and food services	72	12.6	52.8	508.0
-29	16003	16	3	Adams County, Idaho	81	Other services (except public administration)	81	8.2	6.6	259.0
-31	16005	16	5	Bannock County, Idaho	22	Utilities	22	5.0	47.4	3971.4
-32	16005	16	5	Bannock County, Idaho	23	Construction	23	212.6	979.6	36326.8
-33	16005	16	5	Bannock County, Idaho	42	Wholesale trade	42	90.4	1044.4	52924.0
-34	16005	16	5	Bannock County, Idaho	51	Information	51	23.4	296.2	9283.4
-35	16005	16	5	Bannock County, Idaho	52	Finance and insurance	52	149.4	2172.0	97477.8
-36	16005	16	5	Bannock County, Idaho	53	Real estate and rental and leasing	53	86.6	244.8	6401.6
-37	16005	16	5	Bannock County, Idaho	54	Professional, scientific, and technical services	54	166.6	1318.2	45831.8
-38	16005	16	5	Bannock County, Idaho	55	Management of companies and enterprises	55	8.2	30.8	2093.8
-39	16005	16	5	Bannock County, Idaho	56	Administrative and support and waste management and remediation services	56	77.4	1587.2	31777.0
-40	16005	16	5	Bannock County, Idaho	61	Educational services	61	16.4	143.6	2656.6
-41	16005	16	5	Bannock County, Idaho	62	Health care and social assistance	62	349.2	5018.0	183943.6
-42	16005	16	5	Bannock County, Idaho	71	Arts, entertainment, and recreation	71	31.2	361.0	3994.2
-43	16005	16	5	Bannock County, Idaho	72	Accommodation and food services	72	193.4	3533.8	44186.8
-44	16005	16	5	Bannock County, Idaho	81	Other services (except public administration)	81	154.8	766.2	19062.8
-45	16005	16	5	Bannock County, Idaho	99	Industries not classified	99	2.0	0.5	7.5
-47	16007	16	7	Bear Lake County, Idaho	23	Construction	23	15.0	33.4	1144.4
-48	16007	16	7	Bear Lake County, Idaho	42	Wholesale trade	42	6.2	18.2	410.8
-49	16007	16	7	Bear Lake County, Idaho	51	Information	51	2.6	1.6	43.0
-50	16007	16	7	Bear Lake County, Idaho	52	Finance and insurance	52	9.2	25.2	1443.4
-51	16007	16	7	Bear Lake County, Idaho	53	Real estate and rental and leasing	53	5.0	8.4	223.6
-52	16007	16	7	Bear Lake County, Idaho	54	Professional, scientific, and technical services	54	6.2	5.2	334.0
-53	16007	16	7	Bear Lake County, Idaho	56	Administrative and support and waste management and remediation services	56	2.2	1.2	83.6
-55	16007	16	7	Bear Lake County, Idaho	62	Health care and social assistance	62	12.0	120.4	5005.8
-56	16007	16	7	Bear Lake County, Idaho	71	Arts, entertainment, and recreation	71	4.2	6.6	98.0
-57	16007	16	7	Bear Lake County, Idaho	72	Accommodation and food services	72	15.8	134.4	1790.8
-58	16007	16	7	Bear Lake County, Idaho	81	Other services (except public administration)	81	3.6	6.4	186.0
-59	16009	16	9	Benewah County, Idaho	11	Agriculture, forestry, fishing and hunting	11	33.4	126.8	7780.2
-62	16009	16	9	Benewah County, Idaho	23	Construction	23	30.0	91.4	3106.6
-63	16009	16	9	Benewah County, Idaho	42	Wholesale trade	42	4.2	13.0	390.2
-64	16009	16	9	Benewah County, Idaho	51	Information	51	5.4	18.0	776.2
-65	16009	16	9	Benewah County, Idaho	52	Finance and insurance	52	12.2	46.8	1485.8
-66	16009	16	9	Benewah County, Idaho	53	Real estate and rental and leasing	53	5.4	7.2	111.2
-67	16009	16	9	Benewah County, Idaho	54	Professional, scientific, and technical services	54	8.6	35.0	859.4
-68	16009	16	9	Benewah County, Idaho	56	Administrative and support and waste management and remediation services	56	7.4	18.2	386.6
-69	16009	16	9	Benewah County, Idaho	62	Health care and social assistance	62	16.4	396.6	13306.6
-70	16009	16	9	Benewah County, Idaho	72	Accommodation and food services	72	22.6	156.4	1832.2
-71	16009	16	9	Benewah County, Idaho	81	Other services (except public administration)	81	19.2	71.6	2091.2
-73	16011	16	11	Bingham County, Idaho	11	Agriculture, forestry, fishing and hunting	11	7.2	55.6	2786.0
-75	16011	16	11	Bingham County, Idaho	23	Construction	23	140.0	699.4	29218.8
-76	16011	16	11	Bingham County, Idaho	42	Wholesale trade	42	54.8	1068.4	40814.6
-77	16011	16	11	Bingham County, Idaho	51	Information	51	5.8	30.8	1054.2
-78	16011	16	11	Bingham County, Idaho	52	Finance and insurance	52	53.2	287.8	12711.8
-79	16011	16	11	Bingham County, Idaho	53	Real estate and rental and leasing	53	22.4	42.0	1482.0
-80	16011	16	11	Bingham County, Idaho	54	Professional, scientific, and technical services	54	59.2	212.4	6858.0
-82	16011	16	11	Bingham County, Idaho	56	Administrative and support and waste management and remediation services	56	29.2	61.8	1860.0
-83	16011	16	11	Bingham County, Idaho	61	Educational services	61	10.4	148.4	3008.6
-84	16011	16	11	Bingham County, Idaho	62	Health care and social assistance	62	106.2	1817.6	73884.4
-86	16011	16	11	Bingham County, Idaho	72	Accommodation and food services	72	48.0	700.2	7776.6
-87	16011	16	11	Bingham County, Idaho	81	Other services (except public administration)	81	61.6	329.6	9458.4
-88	16011	16	11	Bingham County, Idaho	99	Industries not classified	99	1.6	0.0	17.4
-89	16013	16	13	Blaine County, Idaho	11	Agriculture, forestry, fishing and hunting	11	3.8	6.0	292.0
-92	16013	16	13	Blaine County, Idaho	23	Construction	23	255.0	1291.8	58539.6
-93	16013	16	13	Blaine County, Idaho	42	Wholesale trade	42	35.8	342.0	21951.8
-94	16013	16	13	Blaine County, Idaho	51	Information	51	22.2	145.6	5555.0
-95	16013	16	13	Blaine County, Idaho	52	Finance and insurance	52	69.8	270.2	19340.4
-96	16013	16	13	Blaine County, Idaho	53	Real estate and rental and leasing	53	101.8	299.2	10465.4
-97	16013	16	13	Blaine County, Idaho	54	Professional, scientific, and technical services	54	163.2	421.2	39902.4
-98	16013	16	13	Blaine County, Idaho	55	Management of companies and enterprises	55	4.8	26.2	2327.8
-99	16013	16	13	Blaine County, Idaho	56	Administrative and support and waste management and remediation services	56	109.6	610.0	29394.0
-100	16013	16	13	Blaine County, Idaho	61	Educational services	61	13.2	160.4	5085.4
-101	16013	16	13	Blaine County, Idaho	62	Health care and social assistance	62	76.0	784.2	36309.2
-102	16013	16	13	Blaine County, Idaho	71	Arts, entertainment, and recreation	71	44.4	388.2	12243.8
-103	16013	16	13	Blaine County, Idaho	72	Accommodation and food services	72	110.4	2891.4	54935.2
-104	16013	16	13	Blaine County, Idaho	81	Other services (except public administration)	81	104.0	353.4	13552.8
-105	16013	16	13	Blaine County, Idaho	99	Industries not classified	99	3.0	1.8	54.0
-106	16015	16	15	Boise County, Idaho	11	Agriculture, forestry, fishing and hunting	11	7.6	19.4	1604.6
-109	16015	16	15	Boise County, Idaho	23	Construction	23	27.8	73.6	2017.6
-110	16015	16	15	Boise County, Idaho	42	Wholesale trade	42	1.8	1.2	31.6
-112	16015	16	15	Boise County, Idaho	52	Finance and insurance	52	3.0	0.0	58.2
-113	16015	16	15	Boise County, Idaho	53	Real estate and rental and leasing	53	5.6	9.4	279.4
-114	16015	16	15	Boise County, Idaho	54	Professional, scientific, and technical services	54	8.4	7.8	320.8
-115	16015	16	15	Boise County, Idaho	56	Administrative and support and waste management and remediation services	56	9.0	11.4	660.0
-117	16015	16	15	Boise County, Idaho	62	Health care and social assistance	62	7.2	9.6	212.2
-118	16015	16	15	Boise County, Idaho	71	Arts, entertainment, and recreation	71	9.6	21.6	952.0
-119	16015	16	15	Boise County, Idaho	72	Accommodation and food services	72	23.8	118.2	1571.2
-120	16015	16	15	Boise County, Idaho	81	Other services (except public administration)	81	14.0	44.0	855.6
-121	16017	16	17	Bonner County, Idaho	11	Agriculture, forestry, fishing and hunting	11	36.2	142.0	6625.0
-122	16017	16	17	Bonner County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	9.6	85.4	6351.2
-123	16017	16	17	Bonner County, Idaho	22	Utilities	22	9.6	119.2	8899.2
-124	16017	16	17	Bonner County, Idaho	23	Construction	23	252.0	820.4	31859.6
-125	16017	16	17	Bonner County, Idaho	42	Wholesale trade	42	32.4	172.8	6596.2
-126	16017	16	17	Bonner County, Idaho	51	Information	51	20.4	185.4	9544.4
-127	16017	16	17	Bonner County, Idaho	52	Finance and insurance	52	64.2	223.2	14788.6
-128	16017	16	17	Bonner County, Idaho	53	Real estate and rental and leasing	53	72.6	215.8	7648.0
-129	16017	16	17	Bonner County, Idaho	54	Professional, scientific, and technical services	54	146.2	498.8	24640.2
-131	16017	16	17	Bonner County, Idaho	56	Administrative and support and waste management and remediation services	56	58.0	431.6	14201.2
-132	16017	16	17	Bonner County, Idaho	61	Educational services	61	16.8	60.0	2241.2
-133	16017	16	17	Bonner County, Idaho	62	Health care and social assistance	62	144.2	1609.2	57137.0
-134	16017	16	17	Bonner County, Idaho	71	Arts, entertainment, and recreation	71	26.0	101.0	2060.0
-135	16017	16	17	Bonner County, Idaho	72	Accommodation and food services	72	118.8	1731.4	24849.0
-136	16017	16	17	Bonner County, Idaho	81	Other services (except public administration)	81	104.2	468.8	9931.2
-137	16017	16	17	Bonner County, Idaho	99	Industries not classified	99	1.8	1.2	72.6
-138	16019	16	19	Bonneville County, Idaho	11	Agriculture, forestry, fishing and hunting	11	7.0	93.8	2752.0
-139	16019	16	19	Bonneville County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	3.333333333333333	0.0	306.6666666666667
-140	16019	16	19	Bonneville County, Idaho	22	Utilities	22	6.4	32.6	3772.2
-141	16019	16	19	Bonneville County, Idaho	23	Construction	23	357.6	2294.4	101568.0
-142	16019	16	19	Bonneville County, Idaho	42	Wholesale trade	42	193.4	3278.4	162626.4
-143	16019	16	19	Bonneville County, Idaho	51	Information	51	40.8	936.6	40514.4
-144	16019	16	19	Bonneville County, Idaho	52	Finance and insurance	52	229.4	1227.2	67860.0
-145	16019	16	19	Bonneville County, Idaho	53	Real estate and rental and leasing	53	135.4	430.2	15005.8
-146	16019	16	19	Bonneville County, Idaho	54	Professional, scientific, and technical services	54	387.2	2799.6	211169.2
-147	16019	16	19	Bonneville County, Idaho	55	Management of companies and enterprises	55	17.8	155.2	16300.2
-148	16019	16	19	Bonneville County, Idaho	56	Administrative and support and waste management and remediation services	56	135.6	2995.0	100197.4
-149	16019	16	19	Bonneville County, Idaho	61	Educational services	61	30.6	367.2	6808.2
-150	16019	16	19	Bonneville County, Idaho	62	Health care and social assistance	62	558.4	7988.6	314478.4
-151	16019	16	19	Bonneville County, Idaho	71	Arts, entertainment, and recreation	71	29.6	668.6	6466.6
-152	16019	16	19	Bonneville County, Idaho	72	Accommodation and food services	72	238.2	4604.6	65945.4
-153	16019	16	19	Bonneville County, Idaho	81	Other services (except public administration)	81	210.2	1099.4	27292.8
-154	16019	16	19	Bonneville County, Idaho	99	Industries not classified	99	4.6	2.4	41.2
-155	16021	16	21	Boundary County, Idaho	11	Agriculture, forestry, fishing and hunting	11	31.0	150.2	5870.8
-157	16021	16	21	Boundary County, Idaho	22	Utilities	22	1.8	0.4	8.2
-158	16021	16	21	Boundary County, Idaho	23	Construction	23	60.4	175.4	6496.8
-159	16021	16	21	Boundary County, Idaho	42	Wholesale trade	42	9.2	46.4	2085.2
-160	16021	16	21	Boundary County, Idaho	51	Information	51	3.4	5.0	394.2
-161	16021	16	21	Boundary County, Idaho	52	Finance and insurance	52	11.4	34.2	1891.4
-162	16021	16	21	Boundary County, Idaho	53	Real estate and rental and leasing	53	8.2	7.4	233.2
-163	16021	16	21	Boundary County, Idaho	54	Professional, scientific, and technical services	54	23.8	85.6	2677.0
-165	16021	16	21	Boundary County, Idaho	56	Administrative and support and waste management and remediation services	56	18.8	84.0	2207.0
-166	16021	16	21	Boundary County, Idaho	61	Educational services	61	5.6	40.4	1326.0
-167	16021	16	21	Boundary County, Idaho	62	Health care and social assistance	62	28.2	546.4	16081.6
-168	16021	16	21	Boundary County, Idaho	71	Arts, entertainment, and recreation	71	4.8	3.4	240.6
-169	16021	16	21	Boundary County, Idaho	72	Accommodation and food services	72	23.8	67.6	1034.8
-170	16021	16	21	Boundary County, Idaho	81	Other services (except public administration)	81	28.8	80.8	1429.4
-174	16023	16	23	Butte County, Idaho	23	Construction	23	2.4	0.6	19.6
-175	16023	16	23	Butte County, Idaho	42	Wholesale trade	42	3.4	2.4	160.8
-177	16023	16	23	Butte County, Idaho	52	Finance and insurance	52	4.2	4.4	101.2
-183	16023	16	23	Butte County, Idaho	72	Accommodation and food services	72	8.2	28.6	356.0
-184	16023	16	23	Butte County, Idaho	81	Other services (except public administration)	81	6.2	6.4	243.0
-186	16025	16	25	Camas County, Idaho	23	Construction	23	5.4	7.8	337.0
-189	16025	16	25	Camas County, Idaho	62	Health care and social assistance	62	3.4	3.6	52.8
-190	16025	16	25	Camas County, Idaho	71	Arts, entertainment, and recreation	71	3.0	1.0	64.0
-191	16025	16	25	Camas County, Idaho	72	Accommodation and food services	72	5.6	23.2	186.0
-193	16027	16	27	Canyon County, Idaho	11	Agriculture, forestry, fishing and hunting	11	26.0	140.8	4972.0
-194	16027	16	27	Canyon County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	7.8	21.0	1872.8
-196	16027	16	27	Canyon County, Idaho	23	Construction	23	733.2	4081.4	160170.6
-197	16027	16	27	Canyon County, Idaho	42	Wholesale trade	42	174.6	2030.4	92186.4
-198	16027	16	27	Canyon County, Idaho	51	Information	51	45.8	878.0	35498.4
-199	16027	16	27	Canyon County, Idaho	52	Finance and insurance	52	210.8	1045.4	46261.4
-200	16027	16	27	Canyon County, Idaho	53	Real estate and rental and leasing	53	155.8	402.6	14909.8
-201	16027	16	27	Canyon County, Idaho	54	Professional, scientific, and technical services	54	270.6	1362.0	55790.2
-202	16027	16	27	Canyon County, Idaho	55	Management of companies and enterprises	55	12.4	271.2	17643.4
-203	16027	16	27	Canyon County, Idaho	56	Administrative and support and waste management and remediation services	56	201.6	2112.2	47868.2
-204	16027	16	27	Canyon County, Idaho	61	Educational services	61	38.2	2080.0	41591.4
-205	16027	16	27	Canyon County, Idaho	62	Health care and social assistance	62	382.0	6922.8	234312.8
-206	16027	16	27	Canyon County, Idaho	71	Arts, entertainment, and recreation	71	39.6	705.0	6964.6
-207	16027	16	27	Canyon County, Idaho	72	Accommodation and food services	72	261.8	4470.2	59532.8
-208	16027	16	27	Canyon County, Idaho	81	Other services (except public administration)	81	299.0	2015.6	53307.8
-209	16027	16	27	Canyon County, Idaho	99	Industries not classified	99	2.8	0.0	40.6
-211	16029	16	29	Caribou County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	3.0	286.2	27231.0
-213	16029	16	29	Caribou County, Idaho	23	Construction	23	28.0	76.4	3634.0
-214	16029	16	29	Caribou County, Idaho	42	Wholesale trade	42	13.2	103.6	3913.2
-215	16029	16	29	Caribou County, Idaho	51	Information	51	5.2	8.0	228.8
-216	16029	16	29	Caribou County, Idaho	52	Finance and insurance	52	10.8	39.0	1690.0
-217	16029	16	29	Caribou County, Idaho	53	Real estate and rental and leasing	53	6.2	2.8	49.4
-218	16029	16	29	Caribou County, Idaho	54	Professional, scientific, and technical services	54	9.2	17.4	931.8
-219	16029	16	29	Caribou County, Idaho	56	Administrative and support and waste management and remediation services	56	6.6	19.4	365.0
-220	16029	16	29	Caribou County, Idaho	62	Health care and social assistance	62	18.4	249.2	8238.0
-221	16029	16	29	Caribou County, Idaho	71	Arts, entertainment, and recreation	71	2.6	1.8	21.6
-222	16029	16	29	Caribou County, Idaho	72	Accommodation and food services	72	14.6	78.0	1049.6
-223	16029	16	29	Caribou County, Idaho	81	Other services (except public administration)	81	14.0	20.4	885.8
-224	16031	16	31	Cassia County, Idaho	11	Agriculture, forestry, fishing and hunting	11	6.4	13.6	572.6
-225	16031	16	31	Cassia County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	10.0	62.2	5345.0
-226	16031	16	31	Cassia County, Idaho	22	Utilities	22	5.0	8.6	724.8
-227	16031	16	31	Cassia County, Idaho	23	Construction	23	61.8	326.8	13557.8
-228	16031	16	31	Cassia County, Idaho	42	Wholesale trade	42	32.4	429.4	18744.0
-229	16031	16	31	Cassia County, Idaho	51	Information	51	8.6	80.0	3236.0
-230	16031	16	31	Cassia County, Idaho	52	Finance and insurance	52	37.0	221.8	9383.8
-231	16031	16	31	Cassia County, Idaho	53	Real estate and rental and leasing	53	22.8	28.0	853.6
-232	16031	16	31	Cassia County, Idaho	54	Professional, scientific, and technical services	54	50.2	171.4	4498.6
-234	16031	16	31	Cassia County, Idaho	56	Administrative and support and waste management and remediation services	56	16.0	75.2	2152.6
-235	16031	16	31	Cassia County, Idaho	61	Educational services	61	3.2	4.4	80.0
-236	16031	16	31	Cassia County, Idaho	62	Health care and social assistance	62	82.2	1219.6	35562.4
-237	16031	16	31	Cassia County, Idaho	71	Arts, entertainment, and recreation	71	7.4	169.2	1021.2
-238	16031	16	31	Cassia County, Idaho	72	Accommodation and food services	72	51.2	693.0	8162.6
-239	16031	16	31	Cassia County, Idaho	81	Other services (except public administration)	81	44.8	149.8	4138.6
-250	16035	16	35	Clearwater County, Idaho	11	Agriculture, forestry, fishing and hunting	11	19.4	156.8	7492.8
-251	16035	16	35	Clearwater County, Idaho	22	Utilities	22	4.0	2.4	177.6
-252	16035	16	35	Clearwater County, Idaho	23	Construction	23	24.6	78.0	3537.4
-253	16035	16	35	Clearwater County, Idaho	42	Wholesale trade	42	4.0	46.8	2868.8
-254	16035	16	35	Clearwater County, Idaho	51	Information	51	5.0	17.2	609.4
-255	16035	16	35	Clearwater County, Idaho	52	Finance and insurance	52	10.8	42.0	1633.6
-256	16035	16	35	Clearwater County, Idaho	53	Real estate and rental and leasing	53	5.0	5.0	111.2
-257	16035	16	35	Clearwater County, Idaho	54	Professional, scientific, and technical services	54	9.8	41.2	989.6
-259	16035	16	35	Clearwater County, Idaho	56	Administrative and support and waste management and remediation services	56	5.8	9.8	379.8
-261	16035	16	35	Clearwater County, Idaho	62	Health care and social assistance	62	23.2	500.8	18837.2
-262	16035	16	35	Clearwater County, Idaho	71	Arts, entertainment, and recreation	71	8.0	9.0	219.8
-263	16035	16	35	Clearwater County, Idaho	72	Accommodation and food services	72	25.6	174.0	2263.0
-264	16035	16	35	Clearwater County, Idaho	81	Other services (except public administration)	81	20.6	66.4	2380.2
-268	16037	16	37	Custer County, Idaho	23	Construction	23	26.0	76.0	3935.6
-269	16037	16	37	Custer County, Idaho	51	Information	51	3.6	24.8	929.4
-270	16037	16	37	Custer County, Idaho	52	Finance and insurance	52	6.6	26.0	685.2
-271	16037	16	37	Custer County, Idaho	53	Real estate and rental and leasing	53	6.0	3.8	211.4
-272	16037	16	37	Custer County, Idaho	54	Professional, scientific, and technical services	54	8.6	16.6	454.0
-273	16037	16	37	Custer County, Idaho	56	Administrative and support and waste management and remediation services	56	7.6	9.4	247.0
-275	16037	16	37	Custer County, Idaho	62	Health care and social assistance	62	9.4	43.6	1077.0
-276	16037	16	37	Custer County, Idaho	71	Arts, entertainment, and recreation	71	16.0	26.0	1304.8
-277	16037	16	37	Custer County, Idaho	72	Accommodation and food services	72	30.2	88.0	2908.4
-278	16037	16	37	Custer County, Idaho	81	Other services (except public administration)	81	7.6	15.0	330.4
-280	16039	16	39	Elmore County, Idaho	11	Agriculture, forestry, fishing and hunting	11	3.2	1.4	163.0
-283	16039	16	39	Elmore County, Idaho	23	Construction	23	42.4	177.4	5858.0
-284	16039	16	39	Elmore County, Idaho	42	Wholesale trade	42	14.0	60.8	3214.0
-285	16039	16	39	Elmore County, Idaho	51	Information	51	3.8	51.8	1927.2
-286	16039	16	39	Elmore County, Idaho	52	Finance and insurance	52	33.0	167.2	9598.0
-287	16039	16	39	Elmore County, Idaho	53	Real estate and rental and leasing	53	12.8	16.6	667.0
-288	16039	16	39	Elmore County, Idaho	54	Professional, scientific, and technical services	54	21.6	54.8	2640.4
-290	16039	16	39	Elmore County, Idaho	56	Administrative and support and waste management and remediation services	56	22.4	139.2	5427.0
-291	16039	16	39	Elmore County, Idaho	61	Educational services	61	4.4	14.6	750.8
-292	16039	16	39	Elmore County, Idaho	62	Health care and social assistance	62	51.2	765.2	23493.8
-293	16039	16	39	Elmore County, Idaho	71	Arts, entertainment, and recreation	71	5.6	9.8	113.2
-294	16039	16	39	Elmore County, Idaho	72	Accommodation and food services	72	55.8	640.6	8362.0
-295	16039	16	39	Elmore County, Idaho	81	Other services (except public administration)	81	43.4	147.4	2794.8
-300	16041	16	41	Franklin County, Idaho	23	Construction	23	50.4	101.6	3160.8
-301	16041	16	41	Franklin County, Idaho	42	Wholesale trade	42	11.2	122.4	5473.4
-302	16041	16	41	Franklin County, Idaho	51	Information	51	4.2	10.6	193.8
-303	16041	16	41	Franklin County, Idaho	52	Finance and insurance	52	18.6	67.4	2028.0
-304	16041	16	41	Franklin County, Idaho	53	Real estate and rental and leasing	53	10.2	11.2	154.0
-305	16041	16	41	Franklin County, Idaho	54	Professional, scientific, and technical services	54	18.4	58.8	1890.2
-306	16041	16	41	Franklin County, Idaho	56	Administrative and support and waste management and remediation services	56	7.6	5.4	208.6
-308	16041	16	41	Franklin County, Idaho	62	Health care and social assistance	62	25.2	132.8	4208.2
-309	16041	16	41	Franklin County, Idaho	71	Arts, entertainment, and recreation	71	4.8	4.2	86.0
-310	16041	16	41	Franklin County, Idaho	72	Accommodation and food services	72	17.6	192.4	1796.8
-311	16041	16	41	Franklin County, Idaho	81	Other services (except public administration)	81	20.8	43.4	1058.0
-313	16043	16	43	Fremont County, Idaho	11	Agriculture, forestry, fishing and hunting	11	5.0	2.0	371.6
-316	16043	16	43	Fremont County, Idaho	23	Construction	23	58.0	207.4	9682.4
-317	16043	16	43	Fremont County, Idaho	42	Wholesale trade	42	10.8	182.8	6588.8
-319	16043	16	43	Fremont County, Idaho	52	Finance and insurance	52	10.8	34.0	1648.4
-320	16043	16	43	Fremont County, Idaho	53	Real estate and rental and leasing	53	7.2	8.6	354.6
-321	16043	16	43	Fremont County, Idaho	54	Professional, scientific, and technical services	54	10.6	13.8	265.2
-323	16043	16	43	Fremont County, Idaho	56	Administrative and support and waste management and remediation services	56	12.6	25.4	921.6
-325	16043	16	43	Fremont County, Idaho	62	Health care and social assistance	62	19.0	169.6	5462.8
-326	16043	16	43	Fremont County, Idaho	71	Arts, entertainment, and recreation	71	8.8	9.4	849.6
-327	16043	16	43	Fremont County, Idaho	72	Accommodation and food services	72	31.6	178.0	2827.8
-328	16043	16	43	Fremont County, Idaho	81	Other services (except public administration)	81	21.4	52.6	1874.8
-332	16045	16	45	Gem County, Idaho	23	Construction	23	65.0	207.0	6641.2
-333	16045	16	45	Gem County, Idaho	42	Wholesale trade	42	15.6	82.4	2033.0
-334	16045	16	45	Gem County, Idaho	51	Information	51	2.4	4.0	66.0
-335	16045	16	45	Gem County, Idaho	52	Finance and insurance	52	16.8	49.8	2341.2
-336	16045	16	45	Gem County, Idaho	53	Real estate and rental and leasing	53	11.2	18.8	440.8
-337	16045	16	45	Gem County, Idaho	54	Professional, scientific, and technical services	54	27.4	53.4	2271.2
-339	16045	16	45	Gem County, Idaho	56	Administrative and support and waste management and remediation services	56	13.2	37.0	1320.0
-341	16045	16	45	Gem County, Idaho	62	Health care and social assistance	62	44.4	749.6	22023.6
-342	16045	16	45	Gem County, Idaho	71	Arts, entertainment, and recreation	71	6.2	18.4	184.4
-343	16045	16	45	Gem County, Idaho	72	Accommodation and food services	72	25.6	298.6	3523.6
-344	16045	16	45	Gem County, Idaho	81	Other services (except public administration)	81	34.0	99.8	2114.6
-346	16047	16	47	Gooding County, Idaho	11	Agriculture, forestry, fishing and hunting	11	5.4	3.8	449.8
-347	16047	16	47	Gooding County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	2.6	1.4	68.8
-349	16047	16	47	Gooding County, Idaho	23	Construction	23	54.2	184.6	5651.0
-350	16047	16	47	Gooding County, Idaho	42	Wholesale trade	42	20.8	171.4	8439.0
-352	16047	16	47	Gooding County, Idaho	52	Finance and insurance	52	19.2	76.4	2166.8
-353	16047	16	47	Gooding County, Idaho	53	Real estate and rental and leasing	53	7.2	7.8	248.8
-354	16047	16	47	Gooding County, Idaho	54	Professional, scientific, and technical services	54	23.6	70.4	3011.2
-356	16047	16	47	Gooding County, Idaho	56	Administrative and support and waste management and remediation services	56	9.2	11.2	252.4
-358	16047	16	47	Gooding County, Idaho	62	Health care and social assistance	62	36.0	520.2	17476.2
-359	16047	16	47	Gooding County, Idaho	71	Arts, entertainment, and recreation	71	4.6	12.4	332.2
-360	16047	16	47	Gooding County, Idaho	72	Accommodation and food services	72	30.2	227.2	2247.0
-361	16047	16	47	Gooding County, Idaho	81	Other services (except public administration)	81	30.2	137.2	3545.8
-363	16049	16	49	Idaho County, Idaho	11	Agriculture, forestry, fishing and hunting	11	32.4	105.0	4153.2
-366	16049	16	49	Idaho County, Idaho	23	Construction	23	83.8	260.0	9258.8
-367	16049	16	49	Idaho County, Idaho	42	Wholesale trade	42	15.0	131.8	4140.2
-368	16049	16	49	Idaho County, Idaho	51	Information	51	6.0	40.6	710.8
-369	16049	16	49	Idaho County, Idaho	52	Finance and insurance	52	31.6	159.6	5725.4
-370	16049	16	49	Idaho County, Idaho	53	Real estate and rental and leasing	53	10.6	7.4	462.2
-371	16049	16	49	Idaho County, Idaho	54	Professional, scientific, and technical services	54	26.2	169.6	15845.4
-372	16049	16	49	Idaho County, Idaho	56	Administrative and support and waste management and remediation services	56	8.4	12.8	359.4
-373	16049	16	49	Idaho County, Idaho	61	Educational services	61	4.4	10.6	164.2
-374	16049	16	49	Idaho County, Idaho	62	Health care and social assistance	62	30.4	678.2	25323.2
-375	16049	16	49	Idaho County, Idaho	71	Arts, entertainment, and recreation	71	23.8	64.6	967.2
-376	16049	16	49	Idaho County, Idaho	72	Accommodation and food services	72	49.0	283.2	3540.6
-377	16049	16	49	Idaho County, Idaho	81	Other services (except public administration)	81	23.8	77.6	1709.0
-379	16051	16	51	Jefferson County, Idaho	11	Agriculture, forestry, fishing and hunting	11	8.2	53.2	3921.4
-382	16051	16	51	Jefferson County, Idaho	23	Construction	23	103.0	456.8	16628.6
-383	16051	16	51	Jefferson County, Idaho	42	Wholesale trade	42	26.8	415.8	14933.0
-384	16051	16	51	Jefferson County, Idaho	51	Information	51	3.8	6.2	95.0
-385	16051	16	51	Jefferson County, Idaho	52	Finance and insurance	52	16.6	75.0	3219.6
-386	16051	16	51	Jefferson County, Idaho	53	Real estate and rental and leasing	53	13.2	14.0	584.6
-387	16051	16	51	Jefferson County, Idaho	54	Professional, scientific, and technical services	54	31.4	38.4	2725.6
-389	16051	16	51	Jefferson County, Idaho	56	Administrative and support and waste management and remediation services	56	20.2	50.2	2172.4
-390	16051	16	51	Jefferson County, Idaho	61	Educational services	61	2.4	1.8	16.4
-391	16051	16	51	Jefferson County, Idaho	62	Health care and social assistance	62	36.4	299.8	6905.0
-392	16051	16	51	Jefferson County, Idaho	71	Arts, entertainment, and recreation	71	8.6	35.8	894.8
-393	16051	16	51	Jefferson County, Idaho	72	Accommodation and food services	72	30.0	243.6	2144.0
-394	16051	16	51	Jefferson County, Idaho	81	Other services (except public administration)	81	18.4	24.2	765.0
-396	16053	16	53	Jerome County, Idaho	11	Agriculture, forestry, fishing and hunting	11	12.2	73.6	4644.0
-397	16053	16	53	Jerome County, Idaho	22	Utilities	22	5.0	35.0	1935.4
-398	16053	16	53	Jerome County, Idaho	23	Construction	23	58.6	308.8	13255.0
-399	16053	16	53	Jerome County, Idaho	42	Wholesale trade	42	34.4	335.0	21537.8
-400	16053	16	53	Jerome County, Idaho	51	Information	51	6.2	90.4	4497.0
-401	16053	16	53	Jerome County, Idaho	52	Finance and insurance	52	21.8	106.2	3716.4
-402	16053	16	53	Jerome County, Idaho	53	Real estate and rental and leasing	53	21.6	12.4	697.8
-403	16053	16	53	Jerome County, Idaho	54	Professional, scientific, and technical services	54	25.8	101.4	3757.6
-405	16053	16	53	Jerome County, Idaho	56	Administrative and support and waste management and remediation services	56	32.4	243.8	9139.6
-406	16053	16	53	Jerome County, Idaho	61	Educational services	61	5.0	64.4	1056.8
-407	16053	16	53	Jerome County, Idaho	62	Health care and social assistance	62	38.0	383.2	11947.0
-408	16053	16	53	Jerome County, Idaho	71	Arts, entertainment, and recreation	71	5.0	25.4	608.0
-409	16053	16	53	Jerome County, Idaho	72	Accommodation and food services	72	32.0	352.2	4549.2
-410	16053	16	53	Jerome County, Idaho	81	Other services (except public administration)	81	57.2	216.4	5072.2
-412	16055	16	55	Kootenai County, Idaho	11	Agriculture, forestry, fishing and hunting	11	45.4	320.4	10175.8
-413	16055	16	55	Kootenai County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	14.6	102.4	12578.0
-415	16055	16	55	Kootenai County, Idaho	23	Construction	23	669.6	3935.4	176090.8
-416	16055	16	55	Kootenai County, Idaho	42	Wholesale trade	42	156.8	1530.6	74534.8
-417	16055	16	55	Kootenai County, Idaho	51	Information	51	60.4	857.2	49388.0
-418	16055	16	55	Kootenai County, Idaho	52	Finance and insurance	52	266.6	2080.6	96988.4
-419	16055	16	55	Kootenai County, Idaho	53	Real estate and rental and leasing	53	226.6	671.2	24202.8
-420	16055	16	55	Kootenai County, Idaho	54	Professional, scientific, and technical services	54	454.8	2586.0	114079.8
-421	16055	16	55	Kootenai County, Idaho	55	Management of companies and enterprises	55	19.6	96.4	12674.6
-422	16055	16	55	Kootenai County, Idaho	56	Administrative and support and waste management and remediation services	56	234.8	1585.0	45204.2
-423	16055	16	55	Kootenai County, Idaho	61	Educational services	61	54.4	399.0	7325.6
-424	16055	16	55	Kootenai County, Idaho	62	Health care and social assistance	62	504.4	9035.6	381202.0
-425	16055	16	55	Kootenai County, Idaho	71	Arts, entertainment, and recreation	71	89.0	902.6	31201.8
-426	16055	16	55	Kootenai County, Idaho	72	Accommodation and food services	72	371.8	6738.2	120029.8
-427	16055	16	55	Kootenai County, Idaho	81	Other services (except public administration)	81	326.6	1733.0	42829.4
-428	16055	16	55	Kootenai County, Idaho	99	Industries not classified	99	5.8	9.4	165.2
-429	16057	16	57	Latah County, Idaho	11	Agriculture, forestry, fishing and hunting	11	37.8	243.4	15118.8
-432	16057	16	57	Latah County, Idaho	23	Construction	23	102.4	365.8	13343.6
-433	16057	16	57	Latah County, Idaho	42	Wholesale trade	42	25.0	309.4	13454.0
-434	16057	16	57	Latah County, Idaho	51	Information	51	20.0	165.8	5472.8
-435	16057	16	57	Latah County, Idaho	52	Finance and insurance	52	49.0	234.0	8551.8
-436	16057	16	57	Latah County, Idaho	53	Real estate and rental and leasing	53	45.0	160.6	3927.4
-437	16057	16	57	Latah County, Idaho	54	Professional, scientific, and technical services	54	75.4	492.8	20114.2
-439	16057	16	57	Latah County, Idaho	56	Administrative and support and waste management and remediation services	56	34.0	220.4	5032.0
-440	16057	16	57	Latah County, Idaho	61	Educational services	61	14.4	216.0	4867.0
-441	16057	16	57	Latah County, Idaho	62	Health care and social assistance	62	87.8	1324.8	50103.0
-442	16057	16	57	Latah County, Idaho	71	Arts, entertainment, and recreation	71	11.4	74.6	889.0
-443	16057	16	57	Latah County, Idaho	72	Accommodation and food services	72	119.4	1763.0	22616.8
-444	16057	16	57	Latah County, Idaho	81	Other services (except public administration)	81	84.0	557.6	12575.8
-445	16057	16	57	Latah County, Idaho	99	Industries not classified	99	1.8	0.2	9.2
-446	16059	16	59	Lemhi County, Idaho	11	Agriculture, forestry, fishing and hunting	11	3.2	1.8	86.2
-447	16059	16	59	Lemhi County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	2.8	7.6	479.4
-449	16059	16	59	Lemhi County, Idaho	23	Construction	23	41.0	120.2	4862.2
-450	16059	16	59	Lemhi County, Idaho	42	Wholesale trade	42	4.6	13.8	623.2
-451	16059	16	59	Lemhi County, Idaho	51	Information	51	6.0	14.6	445.2
-452	16059	16	59	Lemhi County, Idaho	52	Finance and insurance	52	7.6	27.4	1091.8
-453	16059	16	59	Lemhi County, Idaho	53	Real estate and rental and leasing	53	14.4	24.6	663.2
-454	16059	16	59	Lemhi County, Idaho	54	Professional, scientific, and technical services	54	21.8	51.6	1497.4
-455	16059	16	59	Lemhi County, Idaho	56	Administrative and support and waste management and remediation services	56	9.0	12.0	280.0
-457	16059	16	59	Lemhi County, Idaho	62	Health care and social assistance	62	27.2	475.8	13904.0
-458	16059	16	59	Lemhi County, Idaho	71	Arts, entertainment, and recreation	71	18.6	17.2	834.6
-459	16059	16	59	Lemhi County, Idaho	72	Accommodation and food services	72	32.4	227.0	2981.4
-460	16059	16	59	Lemhi County, Idaho	81	Other services (except public administration)	81	25.8	85.2	1839.4
-462	16061	16	61	Lewis County, Idaho	11	Agriculture, forestry, fishing and hunting	11	9.8	61.4	2593.8
-464	16061	16	61	Lewis County, Idaho	23	Construction	23	13.8	21.8	870.6
-465	16061	16	61	Lewis County, Idaho	42	Wholesale trade	42	6.8	71.8	3100.8
-467	16061	16	61	Lewis County, Idaho	52	Finance and insurance	52	7.4	19.8	938.2
-468	16061	16	61	Lewis County, Idaho	53	Real estate and rental and leasing	53	4.4	4.0	91.2
-469	16061	16	61	Lewis County, Idaho	54	Professional, scientific, and technical services	54	2.8	1.0	5.4
-472	16061	16	61	Lewis County, Idaho	62	Health care and social assistance	62	12.2	36.4	981.0
-473	16061	16	61	Lewis County, Idaho	71	Arts, entertainment, and recreation	71	2.6	6.8	65.8
-474	16061	16	61	Lewis County, Idaho	72	Accommodation and food services	72	14.8	103.0	1285.2
-475	16061	16	61	Lewis County, Idaho	81	Other services (except public administration)	81	5.0	4.6	96.4
-477	16063	16	63	Lincoln County, Idaho	22	Utilities	22	3.8	7.2	563.6
-478	16063	16	63	Lincoln County, Idaho	23	Construction	23	20.0	88.6	3209.2
-479	16063	16	63	Lincoln County, Idaho	52	Finance and insurance	52	2.2	2.0	51.4
-481	16063	16	63	Lincoln County, Idaho	54	Professional, scientific, and technical services	54	4.4	5.0	255.4
-483	16063	16	63	Lincoln County, Idaho	56	Administrative and support and waste management and remediation services	56	7.6	14.6	583.8
-485	16063	16	63	Lincoln County, Idaho	62	Health care and social assistance	62	6.8	91.2	2278.6
-487	16063	16	63	Lincoln County, Idaho	72	Accommodation and food services	72	4.8	25.4	285.2
-488	16063	16	63	Lincoln County, Idaho	81	Other services (except public administration)	81	6.2	6.0	160.4
-490	16065	16	65	Madison County, Idaho	11	Agriculture, forestry, fishing and hunting	11	6.8	46.2	1311.4
-492	16065	16	65	Madison County, Idaho	23	Construction	23	98.6	337.6	13831.4
-493	16065	16	65	Madison County, Idaho	42	Wholesale trade	42	39.0	442.2	16872.2
-494	16065	16	65	Madison County, Idaho	51	Information	51	9.0	35.0	1252.0
-495	16065	16	65	Madison County, Idaho	52	Finance and insurance	52	47.2	154.0	9317.4
-496	16065	16	65	Madison County, Idaho	53	Real estate and rental and leasing	53	57.8	220.0	4568.8
-497	16065	16	65	Madison County, Idaho	54	Professional, scientific, and technical services	54	64.8	528.6	14523.6
-498	16065	16	65	Madison County, Idaho	55	Management of companies and enterprises	55	4.2	6.2	334.4
-499	16065	16	65	Madison County, Idaho	56	Administrative and support and waste management and remediation services	56	38.8	728.2	12895.2
-501	16065	16	65	Madison County, Idaho	62	Health care and social assistance	62	99.2	1405.8	44458.4
-502	16065	16	65	Madison County, Idaho	71	Arts, entertainment, and recreation	71	12.4	64.2	1259.8
-503	16065	16	65	Madison County, Idaho	72	Accommodation and food services	72	57.0	1001.8	10884.0
-504	16065	16	65	Madison County, Idaho	81	Other services (except public administration)	81	31.4	109.0	2827.6
-508	16067	16	67	Minidoka County, Idaho	22	Utilities	22	5.0	43.8	3132.4
-509	16067	16	67	Minidoka County, Idaho	23	Construction	23	57.8	356.6	15226.0
-510	16067	16	67	Minidoka County, Idaho	42	Wholesale trade	42	46.0	736.4	36492.4
-511	16067	16	67	Minidoka County, Idaho	51	Information	51	4.0	54.0	2171.8
-512	16067	16	67	Minidoka County, Idaho	52	Finance and insurance	52	15.6	67.0	2832.8
-513	16067	16	67	Minidoka County, Idaho	53	Real estate and rental and leasing	53	12.4	15.8	623.0
-514	16067	16	67	Minidoka County, Idaho	54	Professional, scientific, and technical services	54	28.0	108.4	2889.8
-516	16067	16	67	Minidoka County, Idaho	56	Administrative and support and waste management and remediation services	56	9.2	25.2	768.4
-518	16067	16	67	Minidoka County, Idaho	62	Health care and social assistance	62	34.6	405.6	12481.0
-519	16067	16	67	Minidoka County, Idaho	71	Arts, entertainment, and recreation	71	5.8	7.0	115.0
-520	16067	16	67	Minidoka County, Idaho	72	Accommodation and food services	72	26.2	294.4	3643.8
-521	16067	16	67	Minidoka County, Idaho	81	Other services (except public administration)	81	36.0	229.2	6521.8
-522	16069	16	69	Nez Perce County, Idaho	11	Agriculture, forestry, fishing and hunting	11	11.8	55.4	3567.4
-525	16069	16	69	Nez Perce County, Idaho	23	Construction	23	111.2	650.6	26628.8
-526	16069	16	69	Nez Perce County, Idaho	42	Wholesale trade	42	46.2	573.8	24563.4
-527	16069	16	69	Nez Perce County, Idaho	51	Information	51	15.4	338.0	9693.4
-528	16069	16	69	Nez Perce County, Idaho	52	Finance and insurance	52	83.4	1164.6	56077.2
-529	16069	16	69	Nez Perce County, Idaho	53	Real estate and rental and leasing	53	39.8	156.4	5865.0
-530	16069	16	69	Nez Perce County, Idaho	54	Professional, scientific, and technical services	54	77.4	492.6	18800.2
-531	16069	16	69	Nez Perce County, Idaho	55	Management of companies and enterprises	55	5.0	32.8	1149.2
-532	16069	16	69	Nez Perce County, Idaho	56	Administrative and support and waste management and remediation services	56	66.2	414.0	12659.2
-533	16069	16	69	Nez Perce County, Idaho	61	Educational services	61	14.8	101.6	2049.6
-534	16069	16	69	Nez Perce County, Idaho	62	Health care and social assistance	62	137.4	3082.8	120809.4
-535	16069	16	69	Nez Perce County, Idaho	71	Arts, entertainment, and recreation	71	22.8	113.2	1814.4
-536	16069	16	69	Nez Perce County, Idaho	72	Accommodation and food services	72	95.8	1803.8	25487.4
-537	16069	16	69	Nez Perce County, Idaho	81	Other services (except public administration)	81	113.2	661.4	14172.4
-541	16071	16	71	Oneida County, Idaho	23	Construction	23	6.4	7.2	365.8
-545	16071	16	71	Oneida County, Idaho	53	Real estate and rental and leasing	53	4.2	6.0	52.4
-546	16071	16	71	Oneida County, Idaho	54	Professional, scientific, and technical services	54	3.0	2.6	139.0
-548	16071	16	71	Oneida County, Idaho	62	Health care and social assistance	62	10.0	82.0	2027.2
-549	16071	16	71	Oneida County, Idaho	71	Arts, entertainment, and recreation	71	2.6	1.4	11.6
-550	16071	16	71	Oneida County, Idaho	72	Accommodation and food services	72	10.8	79.4	738.6
-551	16071	16	71	Oneida County, Idaho	81	Other services (except public administration)	81	3.0	6.6	116.8
-554	16073	16	73	Owyhee County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	4.2	2.4	60.0
-556	16073	16	73	Owyhee County, Idaho	23	Construction	23	34.8	136.0	5191.4
-557	16073	16	73	Owyhee County, Idaho	42	Wholesale trade	42	7.4	49.0	3796.0
-558	16073	16	73	Owyhee County, Idaho	51	Information	51	5.0	14.4	776.4
-559	16073	16	73	Owyhee County, Idaho	52	Finance and insurance	52	8.4	16.4	919.4
-560	16073	16	73	Owyhee County, Idaho	53	Real estate and rental and leasing	53	4.0	5.4	82.6
-561	16073	16	73	Owyhee County, Idaho	54	Professional, scientific, and technical services	54	8.6	23.4	854.0
-563	16073	16	73	Owyhee County, Idaho	56	Administrative and support and waste management and remediation services	56	10.8	34.0	1458.2
-565	16073	16	73	Owyhee County, Idaho	62	Health care and social assistance	62	19.4	185.4	4280.8
-567	16073	16	73	Owyhee County, Idaho	72	Accommodation and food services	72	22.6	136.6	1491.8
-568	16073	16	73	Owyhee County, Idaho	81	Other services (except public administration)	81	7.6	8.4	280.8
-570	16075	16	75	Payette County, Idaho	11	Agriculture, forestry, fishing and hunting	11	7.0	91.6	3638.2
-573	16075	16	75	Payette County, Idaho	23	Construction	23	69.0	303.4	14714.4
-574	16075	16	75	Payette County, Idaho	42	Wholesale trade	42	21.2	172.4	8902.2
-576	16075	16	75	Payette County, Idaho	52	Finance and insurance	52	40.4	201.0	10293.0
-577	16075	16	75	Payette County, Idaho	53	Real estate and rental and leasing	53	25.2	21.6	786.2
-578	16075	16	75	Payette County, Idaho	54	Professional, scientific, and technical services	54	35.8	136.8	4442.8
-580	16075	16	75	Payette County, Idaho	56	Administrative and support and waste management and remediation services	56	29.8	281.0	7853.4
-581	16075	16	75	Payette County, Idaho	61	Educational services	61	2.2	2.6	41.0
-582	16075	16	75	Payette County, Idaho	62	Health care and social assistance	62	49.4	592.6	17147.2
-583	16075	16	75	Payette County, Idaho	71	Arts, entertainment, and recreation	71	5.0	7.8	315.0
-584	16075	16	75	Payette County, Idaho	72	Accommodation and food services	72	27.4	220.8	2203.4
-585	16075	16	75	Payette County, Idaho	81	Other services (except public administration)	81	43.2	156.2	3123.0
-590	16077	16	77	Power County, Idaho	23	Construction	23	18.0	111.8	4709.2
-591	16077	16	77	Power County, Idaho	42	Wholesale trade	42	14.8	185.0	9935.0
-593	16077	16	77	Power County, Idaho	52	Finance and insurance	52	11.6	20.2	2138.8
-594	16077	16	77	Power County, Idaho	53	Real estate and rental and leasing	53	5.2	8.8	199.6
-595	16077	16	77	Power County, Idaho	54	Professional, scientific, and technical services	54	8.4	20.4	1403.6
-596	16077	16	77	Power County, Idaho	56	Administrative and support and waste management and remediation services	56	5.8	17.0	1025.6
-597	16077	16	77	Power County, Idaho	62	Health care and social assistance	62	12.0	170.2	5407.0
-598	16077	16	77	Power County, Idaho	71	Arts, entertainment, and recreation	71	2.0	0.4	6.8
-599	16077	16	77	Power County, Idaho	72	Accommodation and food services	72	12.8	29.4	268.2
-600	16077	16	77	Power County, Idaho	81	Other services (except public administration)	81	13.4	68.4	1630.2
-602	16079	16	79	Shoshone County, Idaho	11	Agriculture, forestry, fishing and hunting	11	5.8	15.4	978.6
-603	16079	16	79	Shoshone County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	12.6	925.4	73343.6
-605	16079	16	79	Shoshone County, Idaho	23	Construction	23	46.6	109.0	6020.0
-606	16079	16	79	Shoshone County, Idaho	42	Wholesale trade	42	9.8	66.4	5693.6
-607	16079	16	79	Shoshone County, Idaho	51	Information	51	4.0	17.2	1046.0
-608	16079	16	79	Shoshone County, Idaho	52	Finance and insurance	52	19.4	40.2	2158.0
-609	16079	16	79	Shoshone County, Idaho	53	Real estate and rental and leasing	53	10.6	17.0	481.2
-610	16079	16	79	Shoshone County, Idaho	54	Professional, scientific, and technical services	54	25.6	176.8	7229.4
-612	16079	16	79	Shoshone County, Idaho	56	Administrative and support and waste management and remediation services	56	10.6	74.0	7022.4
-613	16079	16	79	Shoshone County, Idaho	61	Educational services	61	3.4	15.4	511.0
-614	16079	16	79	Shoshone County, Idaho	62	Health care and social assistance	62	31.6	508.2	15209.8
-615	16079	16	79	Shoshone County, Idaho	71	Arts, entertainment, and recreation	71	15.8	138.8	1642.6
-616	16079	16	79	Shoshone County, Idaho	72	Accommodation and food services	72	48.2	375.8	4764.8
-617	16079	16	79	Shoshone County, Idaho	81	Other services (except public administration)	81	24.4	82.2	1725.8
-620	16081	16	81	Teton County, Idaho	23	Construction	23	104.6	405.2	18742.8
-621	16081	16	81	Teton County, Idaho	42	Wholesale trade	42	9.8	27.2	899.2
-622	16081	16	81	Teton County, Idaho	51	Information	51	6.0	5.0	137.8
-623	16081	16	81	Teton County, Idaho	52	Finance and insurance	52	12.8	38.6	1756.0
-624	16081	16	81	Teton County, Idaho	53	Real estate and rental and leasing	53	36.4	27.0	1738.0
-625	16081	16	81	Teton County, Idaho	54	Professional, scientific, and technical services	54	43.0	113.8	4956.6
-626	16081	16	81	Teton County, Idaho	56	Administrative and support and waste management and remediation services	56	33.0	161.4	13210.8
-627	16081	16	81	Teton County, Idaho	61	Educational services	61	12.0	59.4	1569.8
-628	16081	16	81	Teton County, Idaho	62	Health care and social assistance	62	32.4	126.8	9405.4
-629	16081	16	81	Teton County, Idaho	71	Arts, entertainment, and recreation	71	15.0	36.0	1614.2
-630	16081	16	81	Teton County, Idaho	72	Accommodation and food services	72	37.8	281.8	5183.2
-631	16081	16	81	Teton County, Idaho	81	Other services (except public administration)	81	25.6	67.4	2173.4
-633	16083	16	83	Twin Falls County, Idaho	11	Agriculture, forestry, fishing and hunting	11	19.8	46.2	2702.2
-634	16083	16	83	Twin Falls County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	2.6	5.0	187.8
-635	16083	16	83	Twin Falls County, Idaho	22	Utilities	22	14.8	198.4	14358.6
-636	16083	16	83	Twin Falls County, Idaho	23	Construction	23	282.2	1161.4	41005.0
-637	16083	16	83	Twin Falls County, Idaho	42	Wholesale trade	42	132.4	1223.2	55819.8
-638	16083	16	83	Twin Falls County, Idaho	51	Information	51	26.2	380.2	15910.8
-639	16083	16	83	Twin Falls County, Idaho	52	Finance and insurance	52	150.2	934.6	44957.8
-640	16083	16	83	Twin Falls County, Idaho	53	Real estate and rental and leasing	53	123.8	356.4	9737.4
-641	16083	16	83	Twin Falls County, Idaho	54	Professional, scientific, and technical services	54	229.0	1336.4	49064.0
-642	16083	16	83	Twin Falls County, Idaho	55	Management of companies and enterprises	55	13.6	367.6	26871.4
-643	16083	16	83	Twin Falls County, Idaho	56	Administrative and support and waste management and remediation services	56	110.6	2618.4	53470.4
-644	16083	16	83	Twin Falls County, Idaho	61	Educational services	61	16.6	116.2	2651.2
-645	16083	16	83	Twin Falls County, Idaho	62	Health care and social assistance	62	350.4	4823.4	163333.4
-646	16083	16	83	Twin Falls County, Idaho	71	Arts, entertainment, and recreation	71	39.8	307.6	4239.4
-647	16083	16	83	Twin Falls County, Idaho	72	Accommodation and food services	72	176.4	2967.8	40498.0
-648	16083	16	83	Twin Falls County, Idaho	81	Other services (except public administration)	81	205.6	1219.8	28104.8
-649	16083	16	83	Twin Falls County, Idaho	99	Industries not classified	99	4.0	5.8	53.6
-650	16085	16	85	Valley County, Idaho	11	Agriculture, forestry, fishing and hunting	11	3.6	18.8	1069.6
-653	16085	16	85	Valley County, Idaho	23	Construction	23	142.0	309.6	13145.0
-654	16085	16	85	Valley County, Idaho	42	Wholesale trade	42	10.4	47.4	2671.8
-655	16085	16	85	Valley County, Idaho	51	Information	51	6.6	10.6	604.6
-656	16085	16	85	Valley County, Idaho	52	Finance and insurance	52	16.4	77.0	2714.6
-657	16085	16	85	Valley County, Idaho	53	Real estate and rental and leasing	53	45.8	70.6	2210.8
-658	16085	16	85	Valley County, Idaho	54	Professional, scientific, and technical services	54	39.2	52.6	3763.6
-660	16085	16	85	Valley County, Idaho	56	Administrative and support and waste management and remediation services	56	25.4	50.8	2525.8
-661	16085	16	85	Valley County, Idaho	61	Educational services	61	3.0	0.0	40.0
-662	16085	16	85	Valley County, Idaho	62	Health care and social assistance	62	33.8	444.4	18189.6
-663	16085	16	85	Valley County, Idaho	71	Arts, entertainment, and recreation	71	22.0	118.2	3600.6
-664	16085	16	85	Valley County, Idaho	72	Accommodation and food services	72	76.0	795.4	15851.4
-665	16085	16	85	Valley County, Idaho	81	Other services (except public administration)	81	40.4	206.6	4921.2
-667	16087	16	87	Washington County, Idaho	11	Agriculture, forestry, fishing and hunting	11	4.6	34.6	670.6
-668	16087	16	87	Washington County, Idaho	23	Construction	23	28.2	63.2	1908.0
-669	16087	16	87	Washington County, Idaho	42	Wholesale trade	42	8.4	170.4	4145.8
-670	16087	16	87	Washington County, Idaho	51	Information	51	5.0	67.8	3238.6
-671	16087	16	87	Washington County, Idaho	52	Finance and insurance	52	9.6	35.2	2041.6
-672	16087	16	87	Washington County, Idaho	53	Real estate and rental and leasing	53	10.0	10.4	401.0
-673	16087	16	87	Washington County, Idaho	54	Professional, scientific, and technical services	54	18.8	46.2	1515.0
-675	16087	16	87	Washington County, Idaho	56	Administrative and support and waste management and remediation services	56	6.2	6.0	93.0
-677	16087	16	87	Washington County, Idaho	62	Health care and social assistance	62	24.2	183.0	7924.6
-678	16087	16	87	Washington County, Idaho	71	Arts, entertainment, and recreation	71	4.6	4.6	208.8
-679	16087	16	87	Washington County, Idaho	72	Accommodation and food services	72	21.2	156.8	1722.4
-680	16087	16	87	Washington County, Idaho	81	Other services (except public administration)	81	19.8	34.4	1176.2
-0	16003	16	3	Adams County, Idaho	22	Utilities	22	2.4	17.10683845391477	1524.849157581764
-1	16003	16	3	Adams County, Idaho	42	Wholesale trade	42	1.2	16.782515784361337	954.8711801845556
-2	16005	16	5	Bannock County, Idaho	11	Agriculture, forestry, fishing and hunting	11	1.6	11.841142347166445	447.08183846497104
-3	16007	16	7	Bear Lake County, Idaho	22	Utilities	22	3.0	21.38354806739346	1906.061446977205
-4	16007	16	7	Bear Lake County, Idaho	61	Educational services	61	1.0	27.888841567291312	583.8040885860307
-5	16009	16	9	Benewah County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.0	22.773399014778327	1789.3990147783252
-6	16009	16	9	Benewah County, Idaho	22	Utilities	22	1.0	7.12784935579782	635.3538156590683
-7	16009	16	9	Benewah County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-8	16011	16	11	Bingham County, Idaho	22	Utilities	22	3.2	22.809117938553022	2033.1322101090186
-9	16011	16	11	Bingham County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-10	16011	16	11	Bingham County, Idaho	71	Arts, entertainment, and recreation	71	7.6	91.72859039023096	1574.7938412529863
-11	16013	16	13	Blaine County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.6	36.437438423645325	2863.03842364532
-12	16013	16	13	Blaine County, Idaho	22	Utilities	22	2.4	17.10683845391477	1524.849157581764
-13	16015	16	15	Boise County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.5	34.160098522167495	2684.0985221674878
-14	16015	16	15	Boise County, Idaho	22	Utilities	22	3.0	21.38354806739346	1906.061446977205
-15	16015	16	15	Boise County, Idaho	51	Information	51	1.0	18.606879606879605	886.2773341523342
-16	16015	16	15	Boise County, Idaho	61	Educational services	61	1.4	39.04437819420783	817.325724020443
-17	16017	16	17	Bonner County, Idaho	55	Management of companies and enterprises	55	3.2	102.33652892561985	7650.610247933885
-18	16021	16	21	Boundary County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.0	22.773399014778327	1789.3990147783252
-19	16021	16	21	Boundary County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-20	16021	16	21	Boundary County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-21	16023	16	23	Butte County, Idaho	11	Agriculture, forestry, fishing and hunting	11	1.0	7.400713966979028	279.4261490406069
-22	16023	16	23	Butte County, Idaho	22	Utilities	22	1.0	7.12784935579782	635.3538156590683
-23	16023	16	23	Butte County, Idaho	51	Information	51	2.0	37.21375921375921	1772.5546683046684
-24	16023	16	23	Butte County, Idaho	53	Real estate and rental and leasing	53	2.6	8.087734906945077	262.1314571039492
-25	16023	16	23	Butte County, Idaho	54	Professional, scientific, and technical services	54	2.0	14.889030380207386	809.2071129707114
-26	16023	16	23	Butte County, Idaho	56	Administrative and support and waste management and remediation services	56	3.4	55.40647967335345	1536.0171489437246
-27	16023	16	23	Butte County, Idaho	61	Educational services	61	1.5	41.83326235093697	875.7061328790461
-28	16023	16	23	Butte County, Idaho	62	Health care and social assistance	62	6.0	104.04684512428298	4135.281548757171
-29	16023	16	23	Butte County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-30	16025	16	25	Camas County, Idaho	52	Finance and insurance	52	1.0	7.743471799589555	403.1179675889888
-31	16025	16	25	Camas County, Idaho	56	Administrative and support and waste management and remediation services	56	2.4	39.1104562400142	1084.2473992543937
-32	16025	16	25	Camas County, Idaho	81	Other services (except public administration)	81	2.0	11.363994273443092	285.50083512288234
-33	16027	16	27	Canyon County, Idaho	22	Utilities	22	4.6	32.78810703666996	2922.627552031714
-34	16029	16	29	Caribou County, Idaho	11	Agriculture, forestry, fishing and hunting	11	1.0	7.400713966979028	279.4261490406069
-35	16029	16	29	Caribou County, Idaho	22	Utilities	22	5.2	37.064816650148664	3303.8398414271555
-36	16031	16	31	Cassia County, Idaho	55	Management of companies and enterprises	55	2.2	70.35636363636364	5259.794545454546
-37	16031	16	31	Cassia County, Idaho	99	Industries not classified	99	1.6666666666666667	1.153846153846154	34.76824457593689
-38	16033	16	33	Clark County, Idaho	11	Agriculture, forestry, fishing and hunting	11	1.0	7.400713966979028	279.4261490406069
-39	16033	16	33	Clark County, Idaho	23	Construction	23	1.2	6.494882793017456	279.87100249376556
-40	16033	16	33	Clark County, Idaho	42	Wholesale trade	42	1.0	13.985429820301116	795.7259834871296
-41	16033	16	33	Clark County, Idaho	51	Information	51	1.0	18.606879606879605	886.2773341523342
-42	16033	16	33	Clark County, Idaho	52	Finance and insurance	52	2.0	15.48694359917911	806.2359351779776
-43	16033	16	33	Clark County, Idaho	53	Real estate and rental and leasing	53	1.0	3.110667271901952	100.8197911938266
-44	16033	16	33	Clark County, Idaho	54	Professional, scientific, and technical services	54	2.0	14.889030380207386	809.2071129707114
-45	16033	16	33	Clark County, Idaho	62	Health care and social assistance	62	1.0	17.34114085404716	689.2135914595284
-46	16033	16	33	Clark County, Idaho	72	Accommodation and food services	72	1.0	16.03223292323109	235.1794243723209
-47	16035	16	35	Clearwater County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-48	16035	16	35	Clearwater County, Idaho	61	Educational services	61	2.0	55.777683134582624	1167.6081771720615
-49	16037	16	37	Custer County, Idaho	11	Agriculture, forestry, fishing and hunting	11	1.6666666666666667	12.334523278298379	465.7102484010115
-50	16037	16	37	Custer County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.4	31.882758620689657	2505.158620689655
-51	16037	16	37	Custer County, Idaho	22	Utilities	22	3.0	21.38354806739346	1906.061446977205
-52	16037	16	37	Custer County, Idaho	61	Educational services	61	1.0	27.888841567291312	583.8040885860307
-53	16037	16	37	Custer County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-54	16039	16	39	Elmore County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	3.0	68.32019704433499	5368.1970443349755
-55	16039	16	39	Elmore County, Idaho	22	Utilities	22	4.6	32.78810703666996	2922.627552031714
-56	16039	16	39	Elmore County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-57	16039	16	39	Elmore County, Idaho	99	Industries not classified	99	1.5	1.0384615384615385	31.2914201183432
-58	16041	16	41	Franklin County, Idaho	11	Agriculture, forestry, fishing and hunting	11	2.0	14.801427933958056	558.8522980812138
-59	16041	16	41	Franklin County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	3.0	68.32019704433499	5368.1970443349755
-60	16041	16	41	Franklin County, Idaho	22	Utilities	22	5.2	37.064816650148664	3303.8398414271555
-61	16041	16	41	Franklin County, Idaho	61	Educational services	61	1.0	27.888841567291312	583.8040885860307
-62	16041	16	41	Franklin County, Idaho	99	Industries not classified	99	1.25	0.8653846153846154	26.076183431952664
-63	16043	16	43	Fremont County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.2	27.328078817733992	2147.27881773399
-64	16043	16	43	Fremont County, Idaho	22	Utilities	22	6.0	42.76709613478692	3812.12289395441
-65	16043	16	43	Fremont County, Idaho	51	Information	51	1.8	33.49238329238329	1595.2992014742015
-66	16043	16	43	Fremont County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-67	16043	16	43	Fremont County, Idaho	61	Educational services	61	1.0	27.888841567291312	583.8040885860307
-68	16045	16	45	Gem County, Idaho	11	Agriculture, forestry, fishing and hunting	11	4.2	31.082998661311915	1173.5898259705489
-69	16045	16	45	Gem County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.2	27.328078817733992	2147.27881773399
-70	16045	16	45	Gem County, Idaho	22	Utilities	22	1.0	7.12784935579782	635.3538156590683
-71	16045	16	45	Gem County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-72	16045	16	45	Gem County, Idaho	61	Educational services	61	1.6	44.6221465076661	934.0865417376491
-73	16045	16	45	Gem County, Idaho	99	Industries not classified	99	1.3333333333333333	0.923076923076923	27.814595660749507
-74	16047	16	47	Gooding County, Idaho	22	Utilities	22	6.4	45.618235877106045	4066.2644202180372
-75	16047	16	47	Gooding County, Idaho	51	Information	51	1.0	18.606879606879605	886.2773341523342
-76	16047	16	47	Gooding County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-77	16047	16	47	Gooding County, Idaho	61	Educational services	61	2.6	72.51098807495741	1517.89063032368
-78	16047	16	47	Gooding County, Idaho	99	Industries not classified	99	2.25	1.5576923076923077	46.9371301775148
-79	16049	16	49	Idaho County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	3.4	77.42955665024631	6083.956650246305
-80	16049	16	49	Idaho County, Idaho	22	Utilities	22	2.0	14.25569871159564	1270.7076313181367
-81	16049	16	49	Idaho County, Idaho	99	Industries not classified	99	1.5	1.0384615384615385	31.2914201183432
-82	16051	16	51	Jefferson County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.0	22.773399014778327	1789.3990147783252
-83	16051	16	51	Jefferson County, Idaho	22	Utilities	22	2.2	15.681268582755203	1397.7783944499504
-84	16051	16	51	Jefferson County, Idaho	55	Management of companies and enterprises	55	2.2	70.35636363636364	5259.794545454546
-85	16051	16	51	Jefferson County, Idaho	99	Industries not classified	99	1.3333333333333333	0.923076923076923	27.814595660749507
-86	16053	16	53	Jerome County, Idaho	55	Management of companies and enterprises	55	1.2	38.37619834710743	2868.9788429752066
-87	16053	16	53	Jerome County, Idaho	99	Industries not classified	99	1.5	1.0384615384615385	31.2914201183432
-88	16055	16	55	Kootenai County, Idaho	22	Utilities	22	14.0	99.78989098116948	8894.953419226957
-89	16057	16	57	Latah County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.6	36.437438423645325	2863.03842364532
-90	16057	16	57	Latah County, Idaho	22	Utilities	22	3.0	21.38354806739346	1906.061446977205
-91	16057	16	57	Latah County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-92	16059	16	59	Lemhi County, Idaho	22	Utilities	22	2.4	17.10683845391477	1524.849157581764
-93	16059	16	59	Lemhi County, Idaho	61	Educational services	61	1.0	27.888841567291312	583.8040885860307
-94	16059	16	59	Lemhi County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-95	16061	16	61	Lewis County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.2	27.328078817733992	2147.27881773399
-96	16061	16	61	Lewis County, Idaho	51	Information	51	2.0	37.21375921375921	1772.5546683046684
-97	16061	16	61	Lewis County, Idaho	56	Administrative and support and waste management and remediation services	56	2.6	42.36966092668205	1174.60134919226
-98	16061	16	61	Lewis County, Idaho	61	Educational services	61	2.2	61.35545144804089	1284.3689948892677
-99	16061	16	61	Lewis County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-100	16063	16	63	Lincoln County, Idaho	53	Real estate and rental and leasing	53	1.6	4.977067635043124	161.31166591012257
-101	16063	16	63	Lincoln County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-102	16063	16	63	Lincoln County, Idaho	61	Educational services	61	1.4	39.04437819420783	817.325724020443
-103	16063	16	63	Lincoln County, Idaho	71	Arts, entertainment, and recreation	71	1.0	12.069551367135652	207.2097159543403
-104	16063	16	63	Lincoln County, Idaho	99	Industries not classified	99	1.3333333333333333	0.923076923076923	27.814595660749507
-105	16065	16	65	Madison County, Idaho	22	Utilities	22	5.6	39.915956392467784	3557.9813676907825
-106	16065	16	65	Madison County, Idaho	61	Educational services	61	9.6	267.7328790459966	5604.519250425895
-107	16065	16	65	Madison County, Idaho	99	Industries not classified	99	1.5	1.0384615384615385	31.2914201183432
-108	16067	16	67	Minidoka County, Idaho	11	Agriculture, forestry, fishing and hunting	11	2.2	16.281570727353863	614.7375278893353
-109	16067	16	67	Minidoka County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.0	22.773399014778327	1789.3990147783252
-110	16067	16	67	Minidoka County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-111	16067	16	67	Minidoka County, Idaho	61	Educational services	61	1.6	44.6221465076661	934.0865417376491
-112	16069	16	69	Nez Perce County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	3.8	86.53891625615765	6799.716256157635
-113	16069	16	69	Nez Perce County, Idaho	22	Utilities	22	2.0	14.25569871159564	1270.7076313181367
-114	16069	16	69	Nez Perce County, Idaho	99	Industries not classified	99	1.75	1.2115384615384617	36.50665680473374
-115	16071	16	71	Oneida County, Idaho	11	Agriculture, forestry, fishing and hunting	11	1.4	10.360999553770638	391.1966086568496
-116	16071	16	71	Oneida County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.0	22.773399014778327	1789.3990147783252
-117	16071	16	71	Oneida County, Idaho	42	Wholesale trade	42	1.2	16.782515784361337	954.8711801845556
-118	16071	16	71	Oneida County, Idaho	51	Information	51	2.0	37.21375921375921	1772.5546683046684
-119	16071	16	71	Oneida County, Idaho	52	Finance and insurance	52	4.8	37.16866463802986	1934.9662444271462
-120	16071	16	71	Oneida County, Idaho	56	Administrative and support and waste management and remediation services	56	1.6	26.0736374933428	722.8315995029292
-121	16071	16	71	Oneida County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-122	16073	16	73	Owyhee County, Idaho	11	Agriculture, forestry, fishing and hunting	11	6.4	47.36456938866578	1788.3273538598842
-123	16073	16	73	Owyhee County, Idaho	22	Utilities	22	2.2	15.681268582755203	1397.7783944499504
-124	16073	16	73	Owyhee County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-125	16073	16	73	Owyhee County, Idaho	61	Educational services	61	1.2	33.46660988074957	700.5649063032369
-126	16073	16	73	Owyhee County, Idaho	71	Arts, entertainment, and recreation	71	1.2	14.483461640562782	248.65165914520836
-127	16073	16	73	Owyhee County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-128	16075	16	75	Payette County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.2	27.328078817733992	2147.27881773399
-129	16075	16	75	Payette County, Idaho	22	Utilities	22	7.0	49.89494549058474	4447.476709613478
-130	16075	16	75	Payette County, Idaho	51	Information	51	3.4	63.26339066339066	3013.3429361179365
-131	16075	16	75	Payette County, Idaho	55	Management of companies and enterprises	55	3.0	95.94049586776859	7172.447107438017
-132	16075	16	75	Payette County, Idaho	99	Industries not classified	99	1.25	0.8653846153846154	26.076183431952664
-133	16077	16	77	Power County, Idaho	11	Agriculture, forestry, fishing and hunting	11	3.4	25.162427487728692	950.0489067380635
-134	16077	16	77	Power County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	1.0	22.773399014778327	1789.3990147783252
-135	16077	16	77	Power County, Idaho	22	Utilities	22	3.0	21.38354806739346	1906.061446977205
-136	16077	16	77	Power County, Idaho	51	Information	51	2.0	37.21375921375921	1772.5546683046684
-137	16077	16	77	Power County, Idaho	99	Industries not classified	99	2.0	1.3846153846153846	41.72189349112426
-138	16079	16	79	Shoshone County, Idaho	22	Utilities	22	1.0	7.12784935579782	635.3538156590683
-139	16079	16	79	Shoshone County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-140	16079	16	79	Shoshone County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-141	16081	16	81	Teton County, Idaho	22	Utilities	22	2.6	18.532408325074332	1651.9199207135778
-142	16081	16	81	Teton County, Idaho	99	Industries not classified	99	1.0	0.6923076923076923	20.86094674556213
-143	16085	16	85	Valley County, Idaho	21	Mining, quarrying, and oil and gas extraction	21	2.6	59.21083743842365	4652.437438423645
-144	16085	16	85	Valley County, Idaho	22	Utilities	22	4.0	28.51139742319128	2541.4152626362734
-145	16085	16	85	Valley County, Idaho	55	Management of companies and enterprises	55	1.8	57.56429752066116	4303.46826446281
-146	16085	16	85	Valley County, Idaho	99	Industries not classified	99	1.5	1.0384615384615385	31.2914201183432
-147	16087	16	87	Washington County, Idaho	55	Management of companies and enterprises	55	1.0	31.9801652892562	2390.815702479339
-148	16087	16	87	Washington County, Idaho	61	Educational services	61	1.4	39.04437819420783	817.325724020443
-149	16087	16	87	Washington County, Idaho	99	Industries not classified	99	1.5	1.0384615384615385	31.2914201183432
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
+0	11	Agriculture, forestry, fishing and hunting	16	11	1	16001	Ada County, Idaho	no	13.833333333333334	12.0	904.1666666666666
+1	11	Agriculture, forestry, fishing and hunting	16	11	3	16003	Adams County, Idaho	no	8.0	17.833333333333332	2081.5
+2	11	Agriculture, forestry, fishing and hunting	16	11	5	16005	Bannock County, Idaho	yes	1.5	39.187763026907554	860.6658792397102
+3	11	Agriculture, forestry, fishing and hunting	16	11	9	16009	Benewah County, Idaho	no	33.833333333333336	128.66666666666666	7780.166666666667
+4	11	Agriculture, forestry, fishing and hunting	16	11	11	16011	Bingham County, Idaho	no	7.6	89.2	3655.4
+5	11	Agriculture, forestry, fishing and hunting	16	11	11	16011	Bingham County, Idaho	yes	6.0	134.0909090909091	2778.4545454545455
+6	11	Agriculture, forestry, fishing and hunting	16	11	13	16013	Blaine County, Idaho	no	4.25	11.0	504.5
+7	11	Agriculture, forestry, fishing and hunting	16	11	13	16013	Blaine County, Idaho	yes	3.5	109.10873440285206	2093.989750445633
+8	11	Agriculture, forestry, fishing and hunting	16	11	15	16015	Boise County, Idaho	no	7.666666666666667	19.166666666666668	1631.8333333333333
+9	11	Agriculture, forestry, fishing and hunting	16	11	17	16017	Bonner County, Idaho	no	36.0	142.33333333333334	6678.5
+10	11	Agriculture, forestry, fishing and hunting	16	11	19	16019	Bonneville County, Idaho	no	7.0	100.0	2832.3333333333335
+11	11	Agriculture, forestry, fishing and hunting	16	11	21	16021	Boundary County, Idaho	no	31.5	151.0	6008.166666666667
+12	11	Agriculture, forestry, fishing and hunting	16	11	23	16023	Butte County, Idaho	yes	1.0	23.028298643675438	580.1957628616709
+13	11	Agriculture, forestry, fishing and hunting	16	11	27	16027	Canyon County, Idaho	no	26.166666666666668	136.33333333333334	4769.666666666667
+14	11	Agriculture, forestry, fishing and hunting	16	11	29	16029	Caribou County, Idaho	yes	1.0	25.147146182691042	624.2463030777574
+15	11	Agriculture, forestry, fishing and hunting	16	11	31	16031	Cassia County, Idaho	no	6.5	14.833333333333334	603.5
+16	11	Agriculture, forestry, fishing and hunting	16	11	33	16033	Clark County, Idaho	yes	1.0	26.34711161482757	613.2562729729611
+17	11	Agriculture, forestry, fishing and hunting	16	11	35	16035	Clearwater County, Idaho	no	19.333333333333332	151.83333333333334	7558.0
+18	11	Agriculture, forestry, fishing and hunting	16	11	37	16037	Custer County, Idaho	yes	1.75	40.95832891483813	1134.4381730241619
+19	11	Agriculture, forestry, fishing and hunting	16	11	39	16039	Elmore County, Idaho	no	3.25	2.75	250.25
+20	11	Agriculture, forestry, fishing and hunting	16	11	39	16039	Elmore County, Idaho	yes	3.0	97.93449197860963	1862.451871657754
+21	11	Agriculture, forestry, fishing and hunting	16	11	41	16041	Franklin County, Idaho	yes	2.0	52.69422322965514	1226.5125459459223
+22	11	Agriculture, forestry, fishing and hunting	16	11	43	16043	Fremont County, Idaho	no	5.0	2.3333333333333335	370.8333333333333
+23	11	Agriculture, forestry, fishing and hunting	16	11	45	16045	Gem County, Idaho	yes	4.166666666666667	106.22644613148844	2522.5652705547413
+24	11	Agriculture, forestry, fishing and hunting	16	11	47	16047	Gooding County, Idaho	no	5.333333333333333	3.8333333333333335	445.5
+25	11	Agriculture, forestry, fishing and hunting	16	11	49	16049	Idaho County, Idaho	no	33.333333333333336	103.0	4221.333333333333
+26	11	Agriculture, forestry, fishing and hunting	16	11	51	16051	Jefferson County, Idaho	no	8.166666666666666	64.66666666666667	3915.1666666666665
+27	11	Agriculture, forestry, fishing and hunting	16	11	53	16053	Jerome County, Idaho	no	12.333333333333334	77.83333333333333	4780.833333333333
+28	11	Agriculture, forestry, fishing and hunting	16	11	55	16055	Kootenai County, Idaho	no	45.333333333333336	322.3333333333333	10292.833333333334
+29	11	Agriculture, forestry, fishing and hunting	16	11	57	16057	Latah County, Idaho	no	38.166666666666664	247.66666666666666	15575.0
+30	11	Agriculture, forestry, fishing and hunting	16	11	59	16059	Lemhi County, Idaho	no	4.0	9.0	431.0
+31	11	Agriculture, forestry, fishing and hunting	16	11	59	16059	Lemhi County, Idaho	yes	3.0	69.08489593102631	1740.587288585013
+32	11	Agriculture, forestry, fishing and hunting	16	11	61	16061	Lewis County, Idaho	no	10.166666666666666	63.833333333333336	2714.3333333333335
+33	11	Agriculture, forestry, fishing and hunting	16	11	65	16065	Madison County, Idaho	no	6.333333333333333	111.66666666666667	3232.3333333333335
+34	11	Agriculture, forestry, fishing and hunting	16	11	65	16065	Madison County, Idaho	yes	7.0	227.81873355402763	4199.861641626348
+35	11	Agriculture, forestry, fishing and hunting	16	11	67	16067	Minidoka County, Idaho	yes	2.5	59.45689421458794	1560.6938543811664
+36	11	Agriculture, forestry, fishing and hunting	16	11	69	16069	Nez Perce County, Idaho	no	12.25	95.0	6103.25
+37	11	Agriculture, forestry, fishing and hunting	16	11	69	16069	Nez Perce County, Idaho	yes	11.0	300.8248299319728	5617.600340136054
+38	11	Agriculture, forestry, fishing and hunting	16	11	71	16071	Oneida County, Idaho	yes	1.3333333333333333	35.46301555216008	783.4865863104174
+39	11	Agriculture, forestry, fishing and hunting	16	11	73	16073	Owyhee County, Idaho	yes	6.166666666666667	165.11909111117708	3735.8017780457517
+40	11	Agriculture, forestry, fishing and hunting	16	11	75	16075	Payette County, Idaho	no	7.166666666666667	93.16666666666667	3507.8333333333335
+41	11	Agriculture, forestry, fishing and hunting	16	11	77	16077	Power County, Idaho	yes	3.3333333333333335	88.15723878181522	2009.9991322563394
+42	11	Agriculture, forestry, fishing and hunting	16	11	79	16079	Shoshone County, Idaho	no	6.0	18.333333333333332	1102.8333333333333
+43	11	Agriculture, forestry, fishing and hunting	16	11	83	16083	Twin Falls County, Idaho	no	20.5	50.333333333333336	2897.8333333333335
+44	11	Agriculture, forestry, fishing and hunting	16	11	85	16085	Valley County, Idaho	no	3.6666666666666665	17.166666666666668	1052.0
+45	11	Agriculture, forestry, fishing and hunting	16	11	87	16087	Washington County, Idaho	no	5.25	68.75	1317.25
+46	11	Agriculture, forestry, fishing and hunting	16	11	87	16087	Washington County, Idaho	yes	4.0	109.39084724799011	2042.763760049474
+47	21	Mining, quarrying, and oil and gas extraction	16	21	1	16001	Ada County, Idaho	no	13.333333333333334	129.66666666666666	8067.666666666667
+48	21	Mining, quarrying, and oil and gas extraction	16	21	1	16001	Ada County, Idaho	yes	14.333333333333334	410.19310344827585	29458.821455938694
+49	21	Mining, quarrying, and oil and gas extraction	16	21	9	16009	Benewah County, Idaho	yes	1.0	24.022301456155873	1748.9631121453656
+50	21	Mining, quarrying, and oil and gas extraction	16	21	13	16013	Blaine County, Idaho	yes	1.5	38.13167778650922	2755.610004439959
+51	21	Mining, quarrying, and oil and gas extraction	16	21	15	16015	Boise County, Idaho	yes	1.5	39.04907407407407	2746.646296296296
+52	21	Mining, quarrying, and oil and gas extraction	16	21	17	16017	Bonner County, Idaho	no	9.333333333333334	83.16666666666667	6505.166666666667
+53	21	Mining, quarrying, and oil and gas extraction	16	21	19	16019	Bonneville County, Idaho	no	4.0	0.0	460.0
+54	21	Mining, quarrying, and oil and gas extraction	16	21	19	16019	Bonneville County, Idaho	yes	2.0	54.81481481481481	3741.9259259259256
+55	21	Mining, quarrying, and oil and gas extraction	16	21	21	16021	Boundary County, Idaho	yes	1.0	26.420258620689655	1858.1508620689656
+56	21	Mining, quarrying, and oil and gas extraction	16	21	27	16027	Canyon County, Idaho	no	7.5	23.0	1844.0
+57	21	Mining, quarrying, and oil and gas extraction	16	21	29	16029	Caribou County, Idaho	no	3.0	722.6666666666666	69019.66666666667
+58	21	Mining, quarrying, and oil and gas extraction	16	21	29	16029	Caribou County, Idaho	yes	3.0	84.65625798212005	6039.8813537675605
+59	21	Mining, quarrying, and oil and gas extraction	16	21	31	16031	Cassia County, Idaho	no	9.833333333333334	62.0	5372.0
+60	21	Mining, quarrying, and oil and gas extraction	16	21	37	16037	Custer County, Idaho	yes	1.5	33.93522658195841	2491.279331996138
+61	21	Mining, quarrying, and oil and gas extraction	16	21	39	16039	Elmore County, Idaho	yes	3.0	72.06690436846763	5246.8893364360965
+62	21	Mining, quarrying, and oil and gas extraction	16	21	41	16041	Franklin County, Idaho	yes	3.0	72.06690436846763	5246.8893364360965
+63	21	Mining, quarrying, and oil and gas extraction	16	21	43	16043	Fremont County, Idaho	yes	1.3333333333333333	30.789393248625075	2274.8209986628044
+64	21	Mining, quarrying, and oil and gas extraction	16	21	45	16045	Gem County, Idaho	yes	1.3333333333333333	30.789393248625075	2274.8209986628044
+65	21	Mining, quarrying, and oil and gas extraction	16	21	47	16047	Gooding County, Idaho	no	3.0	2.25	112.0
+66	21	Mining, quarrying, and oil and gas extraction	16	21	47	16047	Gooding County, Idaho	yes	2.0	50.690740740740736	3622.3296296296294
+67	21	Mining, quarrying, and oil and gas extraction	16	21	49	16049	Idaho County, Idaho	yes	3.3333333333333335	81.60837946425306	5941.709068236863
+68	21	Mining, quarrying, and oil and gas extraction	16	21	51	16051	Jefferson County, Idaho	yes	1.0	28.218752660706684	2013.2937845891868
+69	21	Mining, quarrying, and oil and gas extraction	16	21	55	16055	Kootenai County, Idaho	no	14.333333333333334	101.83333333333333	12819.333333333334
+70	21	Mining, quarrying, and oil and gas extraction	16	21	57	16057	Latah County, Idaho	yes	1.6666666666666667	39.596146122188294	2894.2046193524598
+71	21	Mining, quarrying, and oil and gas extraction	16	21	59	16059	Lemhi County, Idaho	no	4.0	19.0	1198.5
+72	21	Mining, quarrying, and oil and gas extraction	16	21	59	16059	Lemhi County, Idaho	yes	2.0	51.596246641775416	3828.5791193224313
+73	21	Mining, quarrying, and oil and gas extraction	16	21	61	16061	Lewis County, Idaho	yes	1.1666666666666667	28.590202690723775	2060.7902726391926
+74	21	Mining, quarrying, and oil and gas extraction	16	21	67	16067	Minidoka County, Idaho	yes	1.0	24.170095080720383	1748.4824012411052
+75	21	Mining, quarrying, and oil and gas extraction	16	21	69	16069	Nez Perce County, Idaho	yes	3.6666666666666665	91.83720023905084	6656.461516087013
+76	21	Mining, quarrying, and oil and gas extraction	16	21	71	16071	Oneida County, Idaho	yes	1.0	24.022301456155873	1748.9631121453656
+77	21	Mining, quarrying, and oil and gas extraction	16	21	73	16073	Owyhee County, Idaho	no	4.333333333333333	6.0	150.66666666666666
+78	21	Mining, quarrying, and oil and gas extraction	16	21	73	16073	Owyhee County, Idaho	yes	4.0	95.59845679012346	6752.177160493827
+79	21	Mining, quarrying, and oil and gas extraction	16	21	75	16075	Payette County, Idaho	yes	1.1666666666666667	28.590202690723775	2060.7902726391926
+80	21	Mining, quarrying, and oil and gas extraction	16	21	77	16077	Power County, Idaho	yes	1.0	24.022301456155873	1748.9631121453656
+81	21	Mining, quarrying, and oil and gas extraction	16	21	79	16079	Shoshone County, Idaho	no	13.0	921.5	73467.66666666667
+82	21	Mining, quarrying, and oil and gas extraction	16	21	83	16083	Twin Falls County, Idaho	no	4.0	25.0	939.0
+83	21	Mining, quarrying, and oil and gas extraction	16	21	83	16083	Twin Falls County, Idaho	yes	2.2	52.22889386514446	3889.922950630359
+84	21	Mining, quarrying, and oil and gas extraction	16	21	85	16085	Valley County, Idaho	yes	2.6666666666666665	63.26015149490441	4627.505715746442
+85	22	Utilities	16	22	1	16001	Ada County, Idaho	no	37.666666666666664	1789.0	178864.33333333334
+86	22	Utilities	16	22	1	16001	Ada County, Idaho	yes	37.666666666666664	-88.71339435593224	-6740.829425460157
+87	22	Utilities	16	22	3	16003	Adams County, Idaho	yes	2.3333333333333335	9.983848302169099	862.0574655555059
+88	22	Utilities	16	22	5	16005	Bannock County, Idaho	no	5.0	118.0	9929.333333333334
+89	22	Utilities	16	22	5	16005	Bannock County, Idaho	yes	5.0	-11.625557231523365	-885.2009074615813
+90	22	Utilities	16	22	7	16007	Bear Lake County, Idaho	yes	3.0	15.982028398230602	1370.0744089866573
+91	22	Utilities	16	22	9	16009	Benewah County, Idaho	yes	1.0	5.3273427994102	456.69146966221916
+92	22	Utilities	16	22	11	16011	Bingham County, Idaho	yes	3.1666666666666665	15.82595903406875	1354.8027326860795
+93	22	Utilities	16	22	13	16013	Blaine County, Idaho	yes	2.3333333333333335	10.342546870496701	882.8395867232822
+94	22	Utilities	16	22	15	16015	Boise County, Idaho	yes	3.0	15.982028398230602	1370.0744089866573
+95	22	Utilities	16	22	17	16017	Bonner County, Idaho	no	9.5	119.5	8926.666666666666
+96	22	Utilities	16	22	19	16019	Bonneville County, Idaho	no	6.666666666666667	36.833333333333336	3915.5
+97	22	Utilities	16	22	21	16021	Boundary County, Idaho	no	3.0	2.0	41.0
+98	22	Utilities	16	22	21	16021	Boundary County, Idaho	yes	1.5	3.29776330360816	268.24225597195175
+99	22	Utilities	16	22	23	16023	Butte County, Idaho	yes	1.0	5.3273427994102	456.69146966221916
+100	22	Utilities	16	22	27	16027	Canyon County, Idaho	yes	4.5	20.146815474488463	1738.2457879027186
+101	22	Utilities	16	22	29	16029	Caribou County, Idaho	yes	5.166666666666667	26.480644632889152	2268.1856720105175
+102	22	Utilities	16	22	31	16031	Cassia County, Idaho	no	4.0	43.0	3624.0
+103	22	Utilities	16	22	31	16031	Cassia County, Idaho	yes	5.25	0.8259780005394042	106.9709218345273
+104	22	Utilities	16	22	35	16035	Clearwater County, Idaho	no	4.0	12.0	888.0
+105	22	Utilities	16	22	35	16035	Clearwater County, Idaho	yes	4.0	17.13012394184186	1513.831203911362
+106	22	Utilities	16	22	37	16037	Custer County, Idaho	yes	3.0	15.982028398230602	1370.0744089866573
+107	22	Utilities	16	22	39	16039	Elmore County, Idaho	yes	4.5	20.146815474488463	1738.2457879027186
+108	22	Utilities	16	22	41	16041	Franklin County, Idaho	yes	5.166666666666667	26.480644632889152	2268.1856720105175
+109	22	Utilities	16	22	43	16043	Fremont County, Idaho	yes	6.0	31.964056796461204	2740.1488179733146
+110	22	Utilities	16	22	45	16045	Gem County, Idaho	yes	1.0	5.3273427994102	456.69146966221916
+111	22	Utilities	16	22	47	16047	Gooding County, Idaho	yes	6.333333333333333	31.293219499809897	2688.8233442043825
+112	22	Utilities	16	22	49	16049	Idaho County, Idaho	yes	2.0	10.6546855988204	913.3829393244383
+113	22	Utilities	16	22	51	16051	Jefferson County, Idaho	yes	2.1666666666666665	10.162967172319364	876.1883223472126
+114	22	Utilities	16	22	53	16053	Jerome County, Idaho	no	5.0	37.666666666666664	2023.1666666666667
+115	22	Utilities	16	22	55	16055	Kootenai County, Idaho	yes	14.166666666666666	81.72048550496821	6991.358428957249
+116	22	Utilities	16	22	57	16057	Latah County, Idaho	yes	3.0	15.982028398230602	1370.0744089866573
+117	22	Utilities	16	22	59	16059	Lemhi County, Idaho	yes	2.5	17.144584121382938	1458.5944997328158
+118	22	Utilities	16	22	63	16063	Lincoln County, Idaho	no	4.0	12.0	939.3333333333334
+119	22	Utilities	16	22	63	16063	Lincoln County, Idaho	yes	3.3333333333333335	24.45424185420806	2125.852613548346
+120	22	Utilities	16	22	65	16065	Madison County, Idaho	yes	5.5	25.474158273898666	2194.9372575649377
+121	22	Utilities	16	22	67	16067	Minidoka County, Idaho	no	5.0	44.0	3171.1666666666665
+122	22	Utilities	16	22	69	16069	Nez Perce County, Idaho	yes	2.0	10.6546855988204	913.3829393244383
+123	22	Utilities	16	22	73	16073	Owyhee County, Idaho	yes	2.1666666666666665	10.162967172319364	876.1883223472126
+124	22	Utilities	16	22	75	16075	Payette County, Idaho	yes	7.0	37.291399595871404	3196.840287635534
+125	22	Utilities	16	22	77	16077	Power County, Idaho	yes	3.0	15.982028398230602	1370.0744089866573
+126	22	Utilities	16	22	79	16079	Shoshone County, Idaho	yes	1.0	5.3273427994102	456.69146966221916
+127	22	Utilities	16	22	81	16081	Teton County, Idaho	yes	2.5	11.40676621802306	981.4444937262102
+128	22	Utilities	16	22	83	16083	Twin Falls County, Idaho	no	15.6	242.2	18116.4
+129	22	Utilities	16	22	83	16083	Twin Falls County, Idaho	yes	13.0	-12.173410404624278	-1191.1907514450868
+130	22	Utilities	16	22	85	16085	Valley County, Idaho	yes	4.0	21.3093711976408	1826.7658786488767
+131	23	Construction	16	23	1	16001	Ada County, Idaho	no	1422.5	11103.166666666666	526500.1666666666
+132	23	Construction	16	23	3	16003	Adams County, Idaho	no	16.25	15.25	808.75
+133	23	Construction	16	23	3	16003	Adams County, Idaho	yes	14.0	139.45437392795884	4684.266209262436
+134	23	Construction	16	23	5	16005	Bannock County, Idaho	no	213.16666666666666	1006.1666666666666	37476.5
+135	23	Construction	16	23	7	16007	Bear Lake County, Idaho	no	15.5	34.0	1140.6666666666667
+136	23	Construction	16	23	9	16009	Benewah County, Idaho	no	29.666666666666668	94.66666666666667	3201.6666666666665
+137	23	Construction	16	23	11	16011	Bingham County, Idaho	no	141.5	708.3333333333334	29809.833333333332
+138	23	Construction	16	23	13	16013	Blaine County, Idaho	no	256.0	1325.8333333333333	60544.333333333336
+139	23	Construction	16	23	15	16015	Boise County, Idaho	no	28.166666666666668	80.5	2236.0
+140	23	Construction	16	23	17	16017	Bonner County, Idaho	no	254.0	823.3333333333334	32685.833333333332
+141	23	Construction	16	23	19	16019	Bonneville County, Idaho	no	362.3333333333333	2343.1666666666665	103752.33333333333
+142	23	Construction	16	23	21	16021	Boundary County, Idaho	no	60.666666666666664	183.33333333333334	6721.666666666667
+143	23	Construction	16	23	23	16023	Butte County, Idaho	no	3.0	3.0	98.0
+144	23	Construction	16	23	23	16023	Butte County, Idaho	yes	2.25	17.61045108483043	696.0085447323282
+145	23	Construction	16	23	25	16025	Camas County, Idaho	no	7.666666666666667	19.0	899.6666666666666
+146	23	Construction	16	23	25	16025	Camas County, Idaho	yes	4.0	35.95838223345671	1482.804489783636
+147	23	Construction	16	23	27	16027	Canyon County, Idaho	no	752.8333333333334	4274.5	168854.0
+148	23	Construction	16	23	29	16029	Caribou County, Idaho	no	29.333333333333332	197.33333333333334	9497.666666666666
+149	23	Construction	16	23	29	16029	Caribou County, Idaho	yes	27.333333333333332	253.20024073906893	10048.714411242514
+150	23	Construction	16	23	31	16031	Cassia County, Idaho	no	62.666666666666664	336.1666666666667	13875.666666666666
+151	23	Construction	16	23	33	16033	Clark County, Idaho	yes	1.3333333333333333	11.506824882701862	519.9569047959698
+152	23	Construction	16	23	35	16035	Clearwater County, Idaho	no	24.833333333333332	78.5	3590.3333333333335
+153	23	Construction	16	23	37	16037	Custer County, Idaho	no	26.333333333333332	76.16666666666667	4052.6666666666665
+154	23	Construction	16	23	39	16039	Elmore County, Idaho	no	42.833333333333336	178.16666666666666	5884.0
+155	23	Construction	16	23	41	16041	Franklin County, Idaho	no	50.666666666666664	107.83333333333333	3326.0
+156	23	Construction	16	23	43	16043	Fremont County, Idaho	no	59.0	224.66666666666666	10311.333333333334
+157	23	Construction	16	23	45	16045	Gem County, Idaho	no	65.5	213.5	6987.666666666667
+158	23	Construction	16	23	47	16047	Gooding County, Idaho	no	54.333333333333336	181.0	5757.833333333333
+159	23	Construction	16	23	49	16049	Idaho County, Idaho	no	84.16666666666667	269.3333333333333	9643.166666666666
+160	23	Construction	16	23	51	16051	Jefferson County, Idaho	no	104.33333333333333	474.8333333333333	17325.5
+161	23	Construction	16	23	53	16053	Jerome County, Idaho	no	58.833333333333336	313.5	13435.0
+162	23	Construction	16	23	55	16055	Kootenai County, Idaho	no	678.6666666666666	4055.5	182607.66666666666
+163	23	Construction	16	23	57	16057	Latah County, Idaho	no	102.16666666666667	373.6666666666667	13751.833333333334
+164	23	Construction	16	23	59	16059	Lemhi County, Idaho	no	41.333333333333336	122.66666666666667	4987.333333333333
+165	23	Construction	16	23	61	16061	Lewis County, Idaho	no	14.166666666666666	23.666666666666668	903.6666666666666
+166	23	Construction	16	23	63	16063	Lincoln County, Idaho	no	20.333333333333332	87.5	3235.5
+167	23	Construction	16	23	65	16065	Madison County, Idaho	no	99.83333333333333	345.1666666666667	14302.5
+168	23	Construction	16	23	67	16067	Minidoka County, Idaho	no	57.0	361.5	15618.166666666666
+169	23	Construction	16	23	69	16069	Nez Perce County, Idaho	no	110.66666666666667	665.0	27556.166666666668
+170	23	Construction	16	23	71	16071	Oneida County, Idaho	no	9.0	19.666666666666668	1011.3333333333334
+171	23	Construction	16	23	71	16071	Oneida County, Idaho	yes	4.666666666666667	43.669074057356084	1695.1441124251453
+172	23	Construction	16	23	73	16073	Owyhee County, Idaho	no	35.166666666666664	139.83333333333334	5353.333333333333
+173	23	Construction	16	23	75	16075	Payette County, Idaho	no	68.66666666666667	310.5	15400.333333333334
+174	23	Construction	16	23	77	16077	Power County, Idaho	no	18.166666666666668	108.5	4625.0
+175	23	Construction	16	23	79	16079	Shoshone County, Idaho	no	46.833333333333336	117.33333333333333	6261.333333333333
+176	23	Construction	16	23	81	16081	Teton County, Idaho	no	105.83333333333333	424.8333333333333	19674.0
+177	23	Construction	16	23	83	16083	Twin Falls County, Idaho	no	284.0	1184.3333333333333	42229.833333333336
+178	23	Construction	16	23	85	16085	Valley County, Idaho	no	142.66666666666666	324.1666666666667	13761.5
+179	23	Construction	16	23	87	16087	Washington County, Idaho	no	27.833333333333332	62.833333333333336	1888.5
+180	42	Wholesale trade	16	42	1	16001	Ada County, Idaho	no	664.0	12248.666666666666	887805.3333333334
+181	42	Wholesale trade	16	42	3	16003	Adams County, Idaho	yes	1.3333333333333333	89.49141846181995	5913.525998595199
+182	42	Wholesale trade	16	42	5	16005	Bannock County, Idaho	no	90.0	1019.6666666666666	51267.166666666664
+183	42	Wholesale trade	16	42	7	16007	Bear Lake County, Idaho	no	7.0	46.0	985.3333333333334
+184	42	Wholesale trade	16	42	7	16007	Bear Lake County, Idaho	yes	5.666666666666667	327.95894909688013	15907.526546250685
+185	42	Wholesale trade	16	42	9	16009	Benewah County, Idaho	no	4.0	32.666666666666664	970.6666666666666
+186	42	Wholesale trade	16	42	9	16009	Benewah County, Idaho	yes	4.333333333333333	254.38095238095238	12193.448823207444
+187	42	Wholesale trade	16	42	11	16011	Bingham County, Idaho	no	54.333333333333336	1055.5	41501.333333333336
+188	42	Wholesale trade	16	42	13	16013	Blaine County, Idaho	no	35.833333333333336	340.0	21849.5
+189	42	Wholesale trade	16	42	15	16015	Boise County, Idaho	no	4.0	6.0	158.0
+190	42	Wholesale trade	16	42	15	16015	Boise County, Idaho	yes	1.25	130.20073891625617	8988.742775041052
+191	42	Wholesale trade	16	42	17	16017	Bonner County, Idaho	no	32.333333333333336	172.16666666666666	6553.5
+192	42	Wholesale trade	16	42	19	16019	Bonneville County, Idaho	no	193.66666666666666	3289.6666666666665	165495.16666666666
+193	42	Wholesale trade	16	42	21	16021	Boundary County, Idaho	no	9.333333333333334	46.166666666666664	2113.5
+194	42	Wholesale trade	16	42	23	16023	Butte County, Idaho	no	4.0	6.0	402.0
+195	42	Wholesale trade	16	42	23	16023	Butte County, Idaho	yes	3.0	175.45852405141017	9336.376107676635
+196	42	Wholesale trade	16	42	27	16027	Canyon County, Idaho	no	176.16666666666666	2073.1666666666665	94641.0
+197	42	Wholesale trade	16	42	29	16029	Caribou County, Idaho	no	13.333333333333334	117.33333333333333	4121.0
+198	42	Wholesale trade	16	42	31	16031	Cassia County, Idaho	no	32.166666666666664	431.8333333333333	19035.833333333332
+199	42	Wholesale trade	16	42	33	16033	Clark County, Idaho	yes	1.0	73.97928886966203	4808.193924311283
+200	42	Wholesale trade	16	42	35	16035	Clearwater County, Idaho	no	4.0	117.66666666666667	7404.666666666667
+201	42	Wholesale trade	16	42	35	16035	Clearwater County, Idaho	yes	4.0	241.07060755336616	11305.828133552272
+202	42	Wholesale trade	16	42	39	16039	Elmore County, Idaho	no	14.166666666666666	62.666666666666664	3223.8333333333335
+203	42	Wholesale trade	16	42	41	16041	Franklin County, Idaho	no	11.333333333333334	125.83333333333333	5634.0
+204	42	Wholesale trade	16	42	43	16043	Fremont County, Idaho	no	11.333333333333334	182.16666666666666	6911.5
+205	42	Wholesale trade	16	42	45	16045	Gem County, Idaho	no	16.0	84.66666666666667	2022.6666666666667
+206	42	Wholesale trade	16	42	47	16047	Gooding County, Idaho	no	20.666666666666668	171.0	8450.0
+207	42	Wholesale trade	16	42	49	16049	Idaho County, Idaho	no	15.166666666666666	129.83333333333334	4114.833333333333
+208	42	Wholesale trade	16	42	51	16051	Jefferson County, Idaho	no	27.5	422.5	15446.5
+209	42	Wholesale trade	16	42	53	16053	Jerome County, Idaho	no	33.833333333333336	349.0	21813.0
+210	42	Wholesale trade	16	42	55	16055	Kootenai County, Idaho	no	157.66666666666666	1543.1666666666667	75314.83333333333
+211	42	Wholesale trade	16	42	57	16057	Latah County, Idaho	no	25.0	312.3333333333333	13576.333333333334
+212	42	Wholesale trade	16	42	59	16059	Lemhi County, Idaho	no	4.666666666666667	15.333333333333334	625.1666666666666
+213	42	Wholesale trade	16	42	61	16061	Lewis County, Idaho	no	7.0	72.16666666666667	3154.1666666666665
+214	42	Wholesale trade	16	42	65	16065	Madison County, Idaho	no	39.166666666666664	445.5	17131.666666666668
+215	42	Wholesale trade	16	42	67	16067	Minidoka County, Idaho	no	45.833333333333336	742.3333333333334	36466.333333333336
+216	42	Wholesale trade	16	42	69	16069	Nez Perce County, Idaho	no	46.5	575.3333333333334	24734.833333333332
+217	42	Wholesale trade	16	42	71	16071	Oneida County, Idaho	yes	1.1666666666666667	90.02690791728106	5341.876463993823
+218	42	Wholesale trade	16	42	73	16073	Owyhee County, Idaho	no	7.333333333333333	54.333333333333336	3851.1666666666665
+219	42	Wholesale trade	16	42	75	16075	Payette County, Idaho	no	21.0	209.83333333333334	11031.166666666666
+220	42	Wholesale trade	16	42	77	16077	Power County, Idaho	no	15.0	195.83333333333334	10078.0
+221	42	Wholesale trade	16	42	79	16079	Shoshone County, Idaho	no	9.5	68.33333333333333	5542.833333333333
+222	42	Wholesale trade	16	42	81	16081	Teton County, Idaho	no	10.5	46.75	1506.75
+223	42	Wholesale trade	16	42	81	16081	Teton County, Idaho	yes	9.0	380.32758620689657	23747.741379310348
+224	42	Wholesale trade	16	42	83	16083	Twin Falls County, Idaho	no	133.83333333333334	1239.1666666666667	57531.666666666664
+225	42	Wholesale trade	16	42	85	16085	Valley County, Idaho	no	10.333333333333334	48.666666666666664	2696.6666666666665
+226	42	Wholesale trade	16	42	87	16087	Washington County, Idaho	no	8.166666666666666	169.16666666666666	4324.166666666667
+227	51	Information	16	51	1	16001	Ada County, Idaho	no	227.66666666666666	6831.833333333333	358010.8333333333
+228	51	Information	16	51	3	16003	Adams County, Idaho	no	3.0	7.333333333333333	254.66666666666666
+229	51	Information	16	51	3	16003	Adams County, Idaho	yes	2.0	25.362606170201104	865.7887445887445
+230	51	Information	16	51	5	16005	Bannock County, Idaho	no	23.666666666666668	287.8333333333333	9475.166666666666
+231	51	Information	16	51	7	16007	Bear Lake County, Idaho	no	3.0	4.0	107.5
+232	51	Information	16	51	7	16007	Bear Lake County, Idaho	yes	2.25	31.132260524365787	1452.7750936514094
+233	51	Information	16	51	9	16009	Benewah County, Idaho	no	5.333333333333333	19.666666666666668	787.3333333333334
+234	51	Information	16	51	11	16011	Bingham County, Idaho	no	6.333333333333333	76.66666666666667	2658.0
+235	51	Information	16	51	11	16011	Bingham County, Idaho	yes	5.666666666666667	72.0453942681791	2473.2147186147185
+236	51	Information	16	51	13	16013	Blaine County, Idaho	no	22.5	146.5	5630.166666666667
+237	51	Information	16	51	15	16015	Boise County, Idaho	yes	1.0	13.566729725996879	657.3271524292577
+238	51	Information	16	51	17	16017	Bonner County, Idaho	no	20.5	192.66666666666666	9909.5
+239	51	Information	16	51	19	16019	Bonneville County, Idaho	no	41.0	931.1666666666666	40701.833333333336
+240	51	Information	16	51	21	16021	Boundary County, Idaho	no	3.3333333333333335	5.333333333333333	403.6666666666667
+241	51	Information	16	51	23	16023	Butte County, Idaho	yes	2.0	27.133459451993758	1314.6543048585154
+242	51	Information	16	51	27	16027	Canyon County, Idaho	no	48.333333333333336	872.6666666666666	35541.0
+243	51	Information	16	51	29	16029	Caribou County, Idaho	no	5.0	11.4	295.8
+244	51	Information	16	51	29	16029	Caribou County, Idaho	yes	6.0	76.55696202531645	2892.0
+245	51	Information	16	51	31	16031	Cassia County, Idaho	no	8.666666666666666	81.16666666666667	3376.1666666666665
+246	51	Information	16	51	33	16033	Clark County, Idaho	yes	1.0	13.566729725996879	657.3271524292577
+247	51	Information	16	51	35	16035	Clearwater County, Idaho	no	5.0	17.5	612.5
+248	51	Information	16	51	37	16037	Custer County, Idaho	no	4.0	57.333333333333336	2149.6666666666665
+249	51	Information	16	51	37	16037	Custer County, Idaho	yes	3.3333333333333335	42.08633349772591	1422.834632034632
+250	51	Information	16	51	39	16039	Elmore County, Idaho	no	3.8333333333333335	50.666666666666664	1951.6666666666667
+251	51	Information	16	51	41	16041	Franklin County, Idaho	no	5.0	53.0	969.0
+252	51	Information	16	51	41	16041	Franklin County, Idaho	yes	4.0	50.483909255301654	2041.3231168831167
+253	51	Information	16	51	43	16043	Fremont County, Idaho	yes	1.6666666666666667	21.98071460188049	997.547671909777
+254	51	Information	16	51	45	16045	Gem County, Idaho	no	4.0	20.0	330.0
+255	51	Information	16	51	45	16045	Gem County, Idaho	yes	2.0	25.241954627650827	1020.6615584415583
+256	51	Information	16	51	47	16047	Gooding County, Idaho	yes	1.0	15.458234550339814	951.3198988462146
+257	51	Information	16	51	49	16049	Idaho County, Idaho	no	6.0	42.5	721.3333333333334
+258	51	Information	16	51	51	16051	Jefferson County, Idaho	no	6.0	31.0	475.0
+259	51	Information	16	51	51	16051	Jefferson County, Idaho	yes	3.25	40.97293194147625	1716.6523376623377
+260	51	Information	16	51	53	16053	Jerome County, Idaho	no	6.166666666666667	88.83333333333333	4553.166666666667
+261	51	Information	16	51	55	16055	Kootenai County, Idaho	no	61.833333333333336	899.6666666666666	53101.666666666664
+262	51	Information	16	51	57	16057	Latah County, Idaho	no	20.166666666666668	167.83333333333334	5435.0
+263	51	Information	16	51	59	16059	Lemhi County, Idaho	no	6.0	27.25	750.0
+264	51	Information	16	51	59	16059	Lemhi County, Idaho	yes	6.0	77.7499095840868	2778.6857142857143
+265	51	Information	16	51	61	16061	Lewis County, Idaho	yes	2.0	27.133459451993758	1314.6543048585154
+266	51	Information	16	51	65	16065	Madison County, Idaho	no	9.0	65.75	2109.75
+267	51	Information	16	51	65	16065	Madison County, Idaho	yes	9.5	123.20343580470163	4390.142857142857
+268	51	Information	16	51	67	16067	Minidoka County, Idaho	no	4.333333333333333	142.33333333333334	5527.0
+269	51	Information	16	51	67	16067	Minidoka County, Idaho	yes	3.6666666666666665	46.68278809797797	1607.425974025974
+270	51	Information	16	51	69	16069	Nez Perce County, Idaho	no	15.166666666666666	332.8333333333333	9479.166666666666
+271	51	Information	16	51	71	16071	Oneida County, Idaho	yes	2.0	27.133459451993758	1314.6543048585154
+272	51	Information	16	51	73	16073	Owyhee County, Idaho	no	4.6	18.6	955.4
+273	51	Information	16	51	73	16073	Owyhee County, Idaho	yes	5.0	63.797468354430386	2410.0
+274	51	Information	16	51	75	16075	Payette County, Idaho	yes	3.5	47.979516306584934	2369.4214235698446
+275	51	Information	16	51	77	16077	Power County, Idaho	yes	2.0	27.133459451993758	1314.6543048585154
+276	51	Information	16	51	79	16079	Shoshone County, Idaho	no	4.0	19.0	1052.6666666666667
+277	51	Information	16	51	81	16081	Teton County, Idaho	no	5.333333333333333	12.0	349.6666666666667
+278	51	Information	16	51	81	16081	Teton County, Idaho	yes	6.333333333333333	80.34098306756535	2758.0329004329
+279	51	Information	16	51	83	16083	Twin Falls County, Idaho	no	25.666666666666668	383.5	15991.666666666666
+280	51	Information	16	51	85	16085	Valley County, Idaho	no	6.0	28.0	1539.6666666666667
+281	51	Information	16	51	85	16085	Valley County, Idaho	yes	7.0	88.55838128116609	2993.745454545455
+282	51	Information	16	51	87	16087	Washington County, Idaho	no	5.166666666666667	67.0	3172.6666666666665
+283	52	Finance and insurance	16	52	1	16001	Ada County, Idaho	no	954.0	9525.166666666666	560903.6666666666
+284	52	Finance and insurance	16	52	3	16003	Adams County, Idaho	no	3.0	27.0	910.3333333333334
+285	52	Finance and insurance	16	52	3	16003	Adams County, Idaho	yes	3.0	171.01190476190473	4845.145833333333
+286	52	Finance and insurance	16	52	5	16005	Bannock County, Idaho	no	150.16666666666666	2215.8333333333335	99462.0
+287	52	Finance and insurance	16	52	7	16007	Bear Lake County, Idaho	no	9.0	27.166666666666668	1453.1666666666667
+288	52	Finance and insurance	16	52	9	16009	Benewah County, Idaho	no	12.333333333333334	49.666666666666664	1503.3333333333333
+289	52	Finance and insurance	16	52	11	16011	Bingham County, Idaho	no	53.166666666666664	285.0	12899.333333333334
+290	52	Finance and insurance	16	52	13	16013	Blaine County, Idaho	no	70.0	269.8333333333333	19458.333333333332
+291	52	Finance and insurance	16	52	15	16015	Boise County, Idaho	no	3.5	0.0	145.5
+292	52	Finance and insurance	16	52	15	16015	Boise County, Idaho	yes	2.5	97.71812666655715	6140.979044498103
+293	52	Finance and insurance	16	52	17	16017	Bonner County, Idaho	no	66.0	230.83333333333334	14615.5
+294	52	Finance and insurance	16	52	19	16019	Bonneville County, Idaho	no	230.83333333333334	1239.1666666666667	69279.16666666667
+295	52	Finance and insurance	16	52	21	16021	Boundary County, Idaho	no	11.5	37.5	1915.3333333333333
+296	52	Finance and insurance	16	52	23	16023	Butte County, Idaho	no	4.0	11.0	247.33333333333334
+297	52	Finance and insurance	16	52	23	16023	Butte County, Idaho	yes	4.333333333333333	250.68253968253967	6914.86111111111
+298	52	Finance and insurance	16	52	25	16025	Camas County, Idaho	yes	1.0	45.661994603138105	2176.322875943812
+299	52	Finance and insurance	16	52	27	16027	Canyon County, Idaho	no	212.0	1047.3333333333333	47064.5
+300	52	Finance and insurance	16	52	29	16029	Caribou County, Idaho	no	10.833333333333334	40.5	1711.8333333333333
+301	52	Finance and insurance	16	52	31	16031	Cassia County, Idaho	no	37.166666666666664	221.0	9435.666666666666
+302	52	Finance and insurance	16	52	33	16033	Clark County, Idaho	yes	2.0	91.32398920627621	4352.645751887624
+303	52	Finance and insurance	16	52	35	16035	Clearwater County, Idaho	no	10.833333333333334	41.5	1634.3333333333333
+304	52	Finance and insurance	16	52	37	16037	Custer County, Idaho	no	6.5	25.0	675.3333333333334
+305	52	Finance and insurance	16	52	39	16039	Elmore County, Idaho	no	33.0	196.66666666666666	12033.0
+306	52	Finance and insurance	16	52	41	16041	Franklin County, Idaho	no	18.166666666666668	66.16666666666667	1999.8333333333333
+307	52	Finance and insurance	16	52	43	16043	Fremont County, Idaho	no	10.5	34.833333333333336	1664.3333333333333
+308	52	Finance and insurance	16	52	45	16045	Gem County, Idaho	no	16.833333333333332	52.333333333333336	2374.8333333333335
+309	52	Finance and insurance	16	52	47	16047	Gooding County, Idaho	no	19.0	75.5	2186.0
+310	52	Finance and insurance	16	52	49	16049	Idaho County, Idaho	no	31.0	158.16666666666666	5678.333333333333
+311	52	Finance and insurance	16	52	51	16051	Jefferson County, Idaho	no	17.166666666666668	76.0	3318.6666666666665
+312	52	Finance and insurance	16	52	53	16053	Jerome County, Idaho	no	21.666666666666668	105.83333333333333	3719.3333333333335
+313	52	Finance and insurance	16	52	55	16055	Kootenai County, Idaho	no	268.3333333333333	2099.5	98915.16666666667
+314	52	Finance and insurance	16	52	57	16057	Latah County, Idaho	no	49.166666666666664	232.5	8663.333333333334
+315	52	Finance and insurance	16	52	59	16059	Lemhi County, Idaho	no	7.5	28.0	1064.5
+316	52	Finance and insurance	16	52	61	16061	Lewis County, Idaho	no	7.333333333333333	20.666666666666668	945.8333333333334
+317	52	Finance and insurance	16	52	63	16063	Lincoln County, Idaho	no	3.0	10.0	257.0
+318	52	Finance and insurance	16	52	63	16063	Lincoln County, Idaho	yes	2.0	103.33928571428571	3818.239583333333
+319	52	Finance and insurance	16	52	65	16065	Madison County, Idaho	no	47.5	175.33333333333334	9637.5
+320	52	Finance and insurance	16	52	67	16067	Minidoka County, Idaho	no	15.333333333333334	69.83333333333333	2892.3333333333335
+321	52	Finance and insurance	16	52	69	16069	Nez Perce County, Idaho	no	83.33333333333333	1144.3333333333333	55820.333333333336
+322	52	Finance and insurance	16	52	71	16071	Oneida County, Idaho	yes	4.666666666666667	221.90194666652064	9754.069281553026
+323	52	Finance and insurance	16	52	73	16073	Owyhee County, Idaho	no	8.666666666666666	17.833333333333332	910.8333333333334
+324	52	Finance and insurance	16	52	75	16075	Payette County, Idaho	no	40.666666666666664	205.83333333333334	10418.166666666666
+325	52	Finance and insurance	16	52	77	16077	Power County, Idaho	no	11.666666666666666	25.333333333333332	2140.3333333333335
+326	52	Finance and insurance	16	52	79	16079	Shoshone County, Idaho	no	19.166666666666668	43.666666666666664	2149.8333333333335
+327	52	Finance and insurance	16	52	81	16081	Teton County, Idaho	no	12.5	39.166666666666664	1754.8333333333333
+328	52	Finance and insurance	16	52	83	16083	Twin Falls County, Idaho	no	149.83333333333334	935.0	45525.5
+329	52	Finance and insurance	16	52	85	16085	Valley County, Idaho	no	16.5	77.5	2692.5
+330	52	Finance and insurance	16	52	87	16087	Washington County, Idaho	no	9.5	36.5	2033.6666666666667
+331	53	Real estate and rental and leasing	16	53	1	16001	Ada County, Idaho	no	805.0	2908.5	105890.83333333333
+332	53	Real estate and rental and leasing	16	53	3	16003	Adams County, Idaho	no	6.0	3.4	122.4
+333	53	Real estate and rental and leasing	16	53	3	16003	Adams County, Idaho	yes	6.0	103.54838709677419	559.3548387096774
+334	53	Real estate and rental and leasing	16	53	5	16005	Bannock County, Idaho	no	87.16666666666667	246.66666666666666	6541.333333333333
+335	53	Real estate and rental and leasing	16	53	7	16007	Bear Lake County, Idaho	no	5.0	8.666666666666666	219.33333333333334
+336	53	Real estate and rental and leasing	16	53	9	16009	Benewah County, Idaho	no	5.5	6.666666666666667	110.5
+337	53	Real estate and rental and leasing	16	53	11	16011	Bingham County, Idaho	no	23.166666666666668	44.333333333333336	1526.6666666666667
+338	53	Real estate and rental and leasing	16	53	13	16013	Blaine County, Idaho	no	102.66666666666667	300.8333333333333	10667.166666666666
+339	53	Real estate and rental and leasing	16	53	15	16015	Boise County, Idaho	no	5.833333333333333	10.5	292.6666666666667
+340	53	Real estate and rental and leasing	16	53	17	16017	Bonner County, Idaho	no	74.5	223.0	7900.5
+341	53	Real estate and rental and leasing	16	53	19	16019	Bonneville County, Idaho	no	135.5	430.5	15175.5
+342	53	Real estate and rental and leasing	16	53	21	16021	Boundary County, Idaho	no	8.333333333333334	9.0	246.33333333333334
+343	53	Real estate and rental and leasing	16	53	23	16023	Butte County, Idaho	yes	2.5	24.566951857817163	263.68345480341776
+344	53	Real estate and rental and leasing	16	53	27	16027	Canyon County, Idaho	no	158.5	424.0	15208.666666666666
+345	53	Real estate and rental and leasing	16	53	29	16029	Caribou County, Idaho	no	6.5	5.25	84.25
+346	53	Real estate and rental and leasing	16	53	29	16029	Caribou County, Idaho	yes	5.5	62.578450363196126	405.06997578692494
+347	53	Real estate and rental and leasing	16	53	31	16031	Cassia County, Idaho	no	23.166666666666668	31.666666666666668	877.5
+348	53	Real estate and rental and leasing	16	53	33	16033	Clark County, Idaho	yes	1.0	7.027729254345975	101.54790216247113
+349	53	Real estate and rental and leasing	16	53	35	16035	Clearwater County, Idaho	no	4.25	9.5	184.25
+350	53	Real estate and rental and leasing	16	53	35	16035	Clearwater County, Idaho	yes	6.0	66.20556900726393	437.5953995157385
+351	53	Real estate and rental and leasing	16	53	37	16037	Custer County, Idaho	no	5.833333333333333	4.5	217.66666666666666
+352	53	Real estate and rental and leasing	16	53	39	16039	Elmore County, Idaho	no	12.833333333333334	18.833333333333332	673.5
+353	53	Real estate and rental and leasing	16	53	41	16041	Franklin County, Idaho	no	11.0	15.0	202.8
+354	53	Real estate and rental and leasing	16	53	41	16041	Franklin County, Idaho	yes	8.0	118.5142857142857	646.5142857142857
+355	53	Real estate and rental and leasing	16	53	43	16043	Fremont County, Idaho	no	7.333333333333333	9.833333333333334	354.3333333333333
+356	53	Real estate and rental and leasing	16	53	45	16045	Gem County, Idaho	no	11.333333333333334	19.0	457.5
+357	53	Real estate and rental and leasing	16	53	47	16047	Gooding County, Idaho	no	7.166666666666667	9.166666666666666	254.0
+358	53	Real estate and rental and leasing	16	53	49	16049	Idaho County, Idaho	no	10.5	9.0	444.6666666666667
+359	53	Real estate and rental and leasing	16	53	51	16051	Jefferson County, Idaho	no	13.833333333333334	16.0	626.0
+360	53	Real estate and rental and leasing	16	53	53	16053	Jerome County, Idaho	no	20.5	23.0	1056.0
+361	53	Real estate and rental and leasing	16	53	53	16053	Jerome County, Idaho	yes	22.5	250.16089588377724	1644.9236077481842
+362	53	Real estate and rental and leasing	16	53	55	16055	Kootenai County, Idaho	no	233.33333333333334	681.1666666666666	24803.833333333332
+363	53	Real estate and rental and leasing	16	53	57	16057	Latah County, Idaho	no	45.0	164.5	3979.3333333333335
+364	53	Real estate and rental and leasing	16	53	59	16059	Lemhi County, Idaho	no	14.0	23.666666666666668	652.5
+365	53	Real estate and rental and leasing	16	53	61	16061	Lewis County, Idaho	no	4.333333333333333	10.333333333333334	229.66666666666666
+366	53	Real estate and rental and leasing	16	53	61	16061	Lewis County, Idaho	yes	4.333333333333333	54.85352912077898	340.47153531724337
+367	53	Real estate and rental and leasing	16	53	63	16063	Lincoln County, Idaho	yes	1.5	13.059734748456085	144.72223262183957
+368	53	Real estate and rental and leasing	16	53	65	16065	Madison County, Idaho	no	58.5	226.83333333333334	4755.666666666667
+369	53	Real estate and rental and leasing	16	53	67	16067	Minidoka County, Idaho	no	13.333333333333334	39.333333333333336	1593.0
+370	53	Real estate and rental and leasing	16	53	67	16067	Minidoka County, Idaho	yes	12.0	159.8263662162514	961.6182379129892
+371	53	Real estate and rental and leasing	16	53	69	16069	Nez Perce County, Idaho	no	40.166666666666664	157.66666666666666	6002.5
+372	53	Real estate and rental and leasing	16	53	71	16071	Oneida County, Idaho	no	4.666666666666667	15.0	137.66666666666666
+373	53	Real estate and rental and leasing	16	53	71	16071	Oneida County, Idaho	yes	4.0	52.43545002473379	318.7879194980343
+374	53	Real estate and rental and leasing	16	53	73	16073	Owyhee County, Idaho	no	4.0	6.0	97.33333333333333
+375	53	Real estate and rental and leasing	16	53	75	16075	Payette County, Idaho	no	26.0	25.166666666666668	815.3333333333334
+376	53	Real estate and rental and leasing	16	53	77	16077	Power County, Idaho	no	5.166666666666667	9.0	193.66666666666666
+377	53	Real estate and rental and leasing	16	53	79	16079	Shoshone County, Idaho	no	10.666666666666666	17.666666666666668	473.8333333333333
+378	53	Real estate and rental and leasing	16	53	81	16081	Teton County, Idaho	no	36.666666666666664	29.166666666666668	1760.5
+379	53	Real estate and rental and leasing	16	53	83	16083	Twin Falls County, Idaho	no	125.83333333333333	361.3333333333333	9935.166666666666
+380	53	Real estate and rental and leasing	16	53	85	16085	Valley County, Idaho	no	47.333333333333336	75.16666666666667	2395.0
+381	53	Real estate and rental and leasing	16	53	87	16087	Washington County, Idaho	no	9.666666666666666	10.666666666666666	397.3333333333333
+382	54	Professional, scientific, and technical services	16	54	1	16001	Ada County, Idaho	no	1711.8333333333333	13660.666666666666	755662.3333333334
+383	54	Professional, scientific, and technical services	16	54	3	16003	Adams County, Idaho	no	7.833333333333333	6.333333333333333	373.6666666666667
+384	54	Professional, scientific, and technical services	16	54	5	16005	Bannock County, Idaho	no	166.66666666666666	1313.3333333333333	47187.5
+385	54	Professional, scientific, and technical services	16	54	7	16007	Bear Lake County, Idaho	no	6.333333333333333	5.833333333333333	349.5
+386	54	Professional, scientific, and technical services	16	54	9	16009	Benewah County, Idaho	no	8.833333333333334	35.666666666666664	897.1666666666666
+387	54	Professional, scientific, and technical services	16	54	11	16011	Bingham County, Idaho	no	59.833333333333336	211.0	6864.166666666667
+388	54	Professional, scientific, and technical services	16	54	13	16013	Blaine County, Idaho	no	165.8	561.2	49741.0
+389	54	Professional, scientific, and technical services	16	54	13	16013	Blaine County, Idaho	yes	156.0	2519.25129982669	166392.51993067592
+390	54	Professional, scientific, and technical services	16	54	15	16015	Boise County, Idaho	no	8.5	8.333333333333334	320.0
+391	54	Professional, scientific, and technical services	16	54	17	16017	Bonner County, Idaho	no	146.16666666666666	496.0	24623.333333333332
+392	54	Professional, scientific, and technical services	16	54	19	16019	Bonneville County, Idaho	no	401.0	7120.0	526279.6666666666
+393	54	Professional, scientific, and technical services	16	54	19	16019	Bonneville County, Idaho	yes	379.0	7072.811986964652	465550.4342241004
+394	54	Professional, scientific, and technical services	16	54	21	16021	Boundary County, Idaho	no	24.0	88.0	2836.0
+395	54	Professional, scientific, and technical services	16	54	23	16023	Butte County, Idaho	yes	2.0	82.0015918961651	5700.964394369687
+396	54	Professional, scientific, and technical services	16	54	27	16027	Canyon County, Idaho	no	273.0	1368.3333333333333	56800.833333333336
+397	54	Professional, scientific, and technical services	16	54	29	16029	Caribou County, Idaho	no	9.0	22.6	1063.2
+398	54	Professional, scientific, and technical services	16	54	29	16029	Caribou County, Idaho	yes	9.0	148.3233256351039	10760.612009237875
+399	54	Professional, scientific, and technical services	16	54	31	16031	Cassia County, Idaho	no	50.333333333333336	171.66666666666666	4630.5
+400	54	Professional, scientific, and technical services	16	54	33	16033	Clark County, Idaho	yes	2.0	82.0015918961651	5700.964394369687
+401	54	Professional, scientific, and technical services	16	54	35	16035	Clearwater County, Idaho	no	9.666666666666666	40.5	974.3333333333334
+402	54	Professional, scientific, and technical services	16	54	37	16037	Custer County, Idaho	no	8.0	22.6	587.8
+403	54	Professional, scientific, and technical services	16	54	37	16037	Custer County, Idaho	yes	10.0	164.8036951501155	11956.235565819861
+404	54	Professional, scientific, and technical services	16	54	39	16039	Elmore County, Idaho	no	21.5	61.666666666666664	2634.5
+405	54	Professional, scientific, and technical services	16	54	41	16041	Franklin County, Idaho	no	18.833333333333332	62.833333333333336	2016.5
+406	54	Professional, scientific, and technical services	16	54	43	16043	Fremont County, Idaho	no	10.0	35.0	661.6666666666666
+407	54	Professional, scientific, and technical services	16	54	43	16043	Fremont County, Idaho	yes	11.0	205.46414920054585	13439.41695676432
+408	54	Professional, scientific, and technical services	16	54	45	16045	Gem County, Idaho	no	28.0	56.333333333333336	2410.8333333333335
+409	54	Professional, scientific, and technical services	16	54	47	16047	Gooding County, Idaho	no	23.666666666666668	70.83333333333333	3102.0
+410	54	Professional, scientific, and technical services	16	54	49	16049	Idaho County, Idaho	no	26.0	178.66666666666666	17141.166666666668
+411	54	Professional, scientific, and technical services	16	54	51	16051	Jefferson County, Idaho	no	32.166666666666664	51.166666666666664	2924.1666666666665
+412	54	Professional, scientific, and technical services	16	54	53	16053	Jerome County, Idaho	no	25.666666666666668	99.5	3806.3333333333335
+413	54	Professional, scientific, and technical services	16	54	55	16055	Kootenai County, Idaho	no	461.5	2527.1666666666665	114836.66666666667
+414	54	Professional, scientific, and technical services	16	54	57	16057	Latah County, Idaho	no	74.5	491.5	20101.833333333332
+415	54	Professional, scientific, and technical services	16	54	59	16059	Lemhi County, Idaho	no	22.333333333333332	56.166666666666664	1556.6666666666667
+416	54	Professional, scientific, and technical services	16	54	61	16061	Lewis County, Idaho	no	3.0	5.0	27.0
+417	54	Professional, scientific, and technical services	16	54	61	16061	Lewis County, Idaho	yes	2.6	66.58458467467833	4531.085458505432
+418	54	Professional, scientific, and technical services	16	54	63	16063	Lincoln County, Idaho	no	4.666666666666667	12.0	678.3333333333334
+419	54	Professional, scientific, and technical services	16	54	63	16063	Lincoln County, Idaho	yes	4.333333333333333	80.17757233054317	5273.874184434568
+420	54	Professional, scientific, and technical services	16	54	65	16065	Madison County, Idaho	no	64.83333333333333	576.3333333333334	15215.666666666666
+421	54	Professional, scientific, and technical services	16	54	67	16067	Minidoka County, Idaho	no	28.666666666666668	110.66666666666667	2952.0
+422	54	Professional, scientific, and technical services	16	54	69	16069	Nez Perce County, Idaho	no	76.83333333333333	493.5	19166.833333333332
+423	54	Professional, scientific, and technical services	16	54	71	16071	Oneida County, Idaho	no	3.2	3.6	172.8
+424	54	Professional, scientific, and technical services	16	54	71	16071	Oneida County, Idaho	yes	2.0	32.29809358752166	2133.237435008665
+425	54	Professional, scientific, and technical services	16	54	73	16073	Owyhee County, Idaho	no	9.0	31.8	1109.8
+426	54	Professional, scientific, and technical services	16	54	73	16073	Owyhee County, Idaho	yes	8.0	129.19237435008665	8532.94974003466
+427	54	Professional, scientific, and technical services	16	54	75	16075	Payette County, Idaho	no	35.5	138.16666666666666	4627.0
+428	54	Professional, scientific, and technical services	16	54	77	16077	Power County, Idaho	no	9.0	49.333333333333336	3480.6666666666665
+429	54	Professional, scientific, and technical services	16	54	77	16077	Power County, Idaho	yes	8.0	147.26040289001804	9759.707514439067
+430	54	Professional, scientific, and technical services	16	54	79	16079	Shoshone County, Idaho	no	25.166666666666668	174.16666666666666	7095.833333333333
+431	54	Professional, scientific, and technical services	16	54	81	16081	Teton County, Idaho	no	44.0	117.16666666666667	5203.333333333333
+432	54	Professional, scientific, and technical services	16	54	83	16083	Twin Falls County, Idaho	no	230.0	1299.0	47888.666666666664
+433	54	Professional, scientific, and technical services	16	54	85	16085	Valley County, Idaho	no	39.833333333333336	59.666666666666664	3798.3333333333335
+434	54	Professional, scientific, and technical services	16	54	87	16087	Washington County, Idaho	no	18.666666666666668	47.333333333333336	1542.8333333333333
+435	55	Management of companies and enterprises	16	55	1	16001	Ada County, Idaho	no	128.16666666666666	5811.5	440179.5
+436	55	Management of companies and enterprises	16	55	5	16005	Bannock County, Idaho	no	7.666666666666667	37.5	1890.5
+437	55	Management of companies and enterprises	16	55	11	16011	Bingham County, Idaho	yes	1.0	21.212932457286524	1415.3280008050383
+438	55	Management of companies and enterprises	16	55	13	16013	Blaine County, Idaho	no	6.0	131.0	11639.0
+439	55	Management of companies and enterprises	16	55	13	16013	Blaine County, Idaho	yes	4.5	98.10153578672848	6079.83767024051
+440	55	Management of companies and enterprises	16	55	17	16017	Bonner County, Idaho	yes	2.8333333333333335	60.35004247804883	3852.420190470923
+441	55	Management of companies and enterprises	16	55	19	16019	Bonneville County, Idaho	no	17.5	260.0	29617.25
+442	55	Management of companies and enterprises	16	55	19	16019	Bonneville County, Idaho	yes	17.5	372.755	25065.285
+443	55	Management of companies and enterprises	16	55	21	16021	Boundary County, Idaho	yes	1.0	23.14870808222153	1494.9112650386814
+444	55	Management of companies and enterprises	16	55	27	16027	Canyon County, Idaho	no	12.333333333333334	272.3333333333333	17536.333333333332
+445	55	Management of companies and enterprises	16	55	31	16031	Cassia County, Idaho	yes	2.3333333333333335	54.52705875840031	3554.707754837864
+446	55	Management of companies and enterprises	16	55	35	16035	Clearwater County, Idaho	yes	1.0	22.378598232396403	1395.0390604172703
+447	55	Management of companies and enterprises	16	55	39	16039	Elmore County, Idaho	yes	1.0	20.931606748078746	1347.0092657121804
+448	55	Management of companies and enterprises	16	55	43	16043	Fremont County, Idaho	yes	1.0	20.931606748078746	1347.0092657121804
+449	55	Management of companies and enterprises	16	55	45	16045	Gem County, Idaho	yes	1.0	20.931606748078746	1347.0092657121804
+450	55	Management of companies and enterprises	16	55	47	16047	Gooding County, Idaho	yes	1.0	22.33823529411765	1688.6029411764705
+451	55	Management of companies and enterprises	16	55	51	16051	Jefferson County, Idaho	yes	2.1666666666666665	49.68408283110972	3188.1958634106963
+452	55	Management of companies and enterprises	16	55	53	16053	Jerome County, Idaho	yes	1.1666666666666667	28.619972450037622	1810.3825294064973
+453	55	Management of companies and enterprises	16	55	55	16055	Kootenai County, Idaho	no	20.5	157.25	20251.0
+454	55	Management of companies and enterprises	16	55	55	16055	Kootenai County, Idaho	yes	19.5	416.4223529411765	28193.309411764705
+455	55	Management of companies and enterprises	16	55	57	16057	Latah County, Idaho	yes	1.0	23.14870808222153	1494.9112650386814
+456	55	Management of companies and enterprises	16	55	63	16063	Lincoln County, Idaho	yes	1.0	23.14870808222153	1494.9112650386814
+457	55	Management of companies and enterprises	16	55	65	16065	Madison County, Idaho	no	4.2	9.2	441.6
+458	55	Management of companies and enterprises	16	55	65	16065	Madison County, Idaho	yes	4.0	56.114285714285714	3233.942857142857
+459	55	Management of companies and enterprises	16	55	67	16067	Minidoka County, Idaho	yes	1.0	20.931606748078746	1347.0092657121804
+460	55	Management of companies and enterprises	16	55	69	16069	Nez Perce County, Idaho	no	5.0	78.33333333333333	2890.0
+461	55	Management of companies and enterprises	16	55	69	16069	Nez Perce County, Idaho	yes	5.0	125.80970250169032	7952.784212305612
+462	55	Management of companies and enterprises	16	55	73	16073	Owyhee County, Idaho	yes	1.0	23.14870808222153	1494.9112650386814
+463	55	Management of companies and enterprises	16	55	75	16075	Payette County, Idaho	yes	3.0	69.4461242466646	4484.733795116044
+464	55	Management of companies and enterprises	16	55	79	16079	Shoshone County, Idaho	yes	1.0	23.14870808222153	1494.9112650386814
+465	55	Management of companies and enterprises	16	55	83	16083	Twin Falls County, Idaho	no	13.5	369.1666666666667	28291.0
+466	55	Management of companies and enterprises	16	55	85	16085	Valley County, Idaho	yes	1.8333333333333333	42.574376948756786	2708.3887065479507
+467	55	Management of companies and enterprises	16	55	87	16087	Washington County, Idaho	yes	1.0	23.14870808222153	1494.9112650386814
+468	56	Administrative and support and waste management and remediation services	16	56	1	16001	Ada County, Idaho	no	768.5	14086.5	397741.1666666667
+469	56	Administrative and support and waste management and remediation services	16	56	3	16003	Adams County, Idaho	no	6.6	8.8	253.8
+470	56	Administrative and support and waste management and remediation services	16	56	3	16003	Adams County, Idaho	yes	6.0	556.2765957446808	14689.723404255317
+471	56	Administrative and support and waste management and remediation services	16	56	5	16005	Bannock County, Idaho	no	77.16666666666667	1583.0	31263.166666666668
+472	56	Administrative and support and waste management and remediation services	16	56	7	16007	Bear Lake County, Idaho	no	3.0	3.6666666666666665	210.66666666666666
+473	56	Administrative and support and waste management and remediation services	16	56	7	16007	Bear Lake County, Idaho	yes	1.6666666666666667	108.83818925308287	2917.296945882052
+474	56	Administrative and support and waste management and remediation services	16	56	9	16009	Benewah County, Idaho	no	7.333333333333333	19.0	390.0
+475	56	Administrative and support and waste management and remediation services	16	56	11	16011	Bingham County, Idaho	no	28.25	102.25	3110.5
+476	56	Administrative and support and waste management and remediation services	16	56	11	16011	Bingham County, Idaho	yes	29.0	1700.063063063063	45800.37837837838
+477	56	Administrative and support and waste management and remediation services	16	56	13	16013	Blaine County, Idaho	no	110.16666666666667	608.3333333333334	30004.333333333332
+478	56	Administrative and support and waste management and remediation services	16	56	15	16015	Boise County, Idaho	no	8.833333333333334	13.0	670.0
+479	56	Administrative and support and waste management and remediation services	16	56	17	16017	Bonner County, Idaho	no	60.0	468.0	15306.0
+480	56	Administrative and support and waste management and remediation services	16	56	19	16019	Bonneville County, Idaho	no	136.83333333333334	2943.1666666666665	111861.16666666667
+481	56	Administrative and support and waste management and remediation services	16	56	21	16021	Boundary County, Idaho	no	18.833333333333332	90.0	2226.6666666666665
+482	56	Administrative and support and waste management and remediation services	16	56	23	16023	Butte County, Idaho	yes	3.5	1339.7579096536815	37084.77489949818
+483	56	Administrative and support and waste management and remediation services	16	56	25	16025	Camas County, Idaho	yes	2.1666666666666665	616.8482372370738	16605.360978564404
+484	56	Administrative and support and waste management and remediation services	16	56	27	16027	Canyon County, Idaho	no	202.66666666666666	2143.3333333333335	48847.0
+485	56	Administrative and support and waste management and remediation services	16	56	29	16029	Caribou County, Idaho	no	7.0	45.333333333333336	881.6666666666666
+486	56	Administrative and support and waste management and remediation services	16	56	29	16029	Caribou County, Idaho	yes	6.333333333333333	440.3774838668455	11758.562456073094
+487	56	Administrative and support and waste management and remediation services	16	56	31	16031	Cassia County, Idaho	no	17.0	122.8	2924.6
+488	56	Administrative and support and waste management and remediation services	16	56	31	16031	Cassia County, Idaho	yes	14.0	748.3063063063063	20673.08108108108
+489	56	Administrative and support and waste management and remediation services	16	56	35	16035	Clearwater County, Idaho	no	5.833333333333333	11.5	402.3333333333333
+490	56	Administrative and support and waste management and remediation services	16	56	37	16037	Custer County, Idaho	no	7.833333333333333	9.833333333333334	251.16666666666666
+491	56	Administrative and support and waste management and remediation services	16	56	39	16039	Elmore County, Idaho	no	22.666666666666668	139.5	5559.333333333333
+492	56	Administrative and support and waste management and remediation services	16	56	41	16041	Franklin County, Idaho	no	8.666666666666666	13.333333333333334	529.0
+493	56	Administrative and support and waste management and remediation services	16	56	41	16041	Franklin County, Idaho	yes	7.0	489.09855600281134	13066.87441697016
+494	56	Administrative and support and waste management and remediation services	16	56	43	16043	Fremont County, Idaho	no	12.666666666666666	27.333333333333332	886.8333333333334
+495	56	Administrative and support and waste management and remediation services	16	56	45	16045	Gem County, Idaho	no	13.0	42.0	1378.8333333333333
+496	56	Administrative and support and waste management and remediation services	16	56	47	16047	Gooding County, Idaho	no	9.333333333333334	27.333333333333332	657.0
+497	56	Administrative and support and waste management and remediation services	16	56	47	16047	Gooding County, Idaho	yes	9.0	641.9284390773752	17124.146635997702
+498	56	Administrative and support and waste management and remediation services	16	56	49	16049	Idaho County, Idaho	no	8.333333333333334	31.666666666666668	901.3333333333334
+499	56	Administrative and support and waste management and remediation services	16	56	49	16049	Idaho County, Idaho	yes	8.333333333333334	589.874033608076	15749.666506932466
+500	56	Administrative and support and waste management and remediation services	16	56	51	16051	Jefferson County, Idaho	no	20.833333333333332	56.666666666666664	2189.1666666666665
+501	56	Administrative and support and waste management and remediation services	16	56	53	16053	Jerome County, Idaho	no	33.333333333333336	258.3333333333333	9924.5
+502	56	Administrative and support and waste management and remediation services	16	56	55	16055	Kootenai County, Idaho	no	236.0	1615.6666666666667	46315.666666666664
+503	56	Administrative and support and waste management and remediation services	16	56	57	16057	Latah County, Idaho	no	34.0	218.66666666666666	4951.5
+504	56	Administrative and support and waste management and remediation services	16	56	59	16059	Lemhi County, Idaho	no	7.333333333333333	29.333333333333332	693.0
+505	56	Administrative and support and waste management and remediation services	16	56	59	16059	Lemhi County, Idaho	yes	10.0	692.2914510254936	18475.42026068622
+506	56	Administrative and support and waste management and remediation services	16	56	61	16061	Lewis County, Idaho	yes	2.5	954.247899303232	25895.652664431862
+507	56	Administrative and support and waste management and remediation services	16	56	63	16063	Lincoln County, Idaho	no	7.25	19.0	864.5
+508	56	Administrative and support and waste management and remediation services	16	56	63	16063	Lincoln County, Idaho	yes	8.0	624.6528656315891	16493.761548782826
+509	56	Administrative and support and waste management and remediation services	16	56	65	16065	Madison County, Idaho	no	39.0	737.0	12951.5
+510	56	Administrative and support and waste management and remediation services	16	56	67	16067	Minidoka County, Idaho	no	9.166666666666666	25.833333333333332	781.5
+511	56	Administrative and support and waste management and remediation services	16	56	69	16069	Nez Perce County, Idaho	no	65.33333333333333	412.6666666666667	12779.666666666666
+512	56	Administrative and support and waste management and remediation services	16	56	71	16071	Oneida County, Idaho	yes	1.5	566.4604984344414	15263.964933583253
+513	56	Administrative and support and waste management and remediation services	16	56	73	16073	Owyhee County, Idaho	no	11.666666666666666	84.66666666666667	3643.3333333333335
+514	56	Administrative and support and waste management and remediation services	16	56	73	16073	Owyhee County, Idaho	yes	10.333333333333334	732.9498115136412	19549.227365663537
+515	56	Administrative and support and waste management and remediation services	16	56	75	16075	Payette County, Idaho	no	30.166666666666668	324.1666666666667	7893.5
+516	56	Administrative and support and waste management and remediation services	16	56	77	16077	Power County, Idaho	no	6.5	33.0	1898.5
+517	56	Administrative and support and waste management and remediation services	16	56	77	16077	Power County, Idaho	yes	5.0	297.2522522522522	7978.756756756757
+518	56	Administrative and support and waste management and remediation services	16	56	79	16079	Shoshone County, Idaho	no	11.4	90.8	8424.6
+519	56	Administrative and support and waste management and remediation services	16	56	79	16079	Shoshone County, Idaho	yes	9.0	834.4148936170212	22034.58510638298
+520	56	Administrative and support and waste management and remediation services	16	56	81	16081	Teton County, Idaho	no	33.5	165.5	13798.666666666666
+521	56	Administrative and support and waste management and remediation services	16	56	83	16083	Twin Falls County, Idaho	no	111.66666666666667	2644.1666666666665	53735.333333333336
+522	56	Administrative and support and waste management and remediation services	16	56	85	16085	Valley County, Idaho	no	25.5	53.333333333333336	2607.1666666666665
+523	56	Administrative and support and waste management and remediation services	16	56	87	16087	Washington County, Idaho	no	6.0	9.75	151.75
+524	56	Administrative and support and waste management and remediation services	16	56	87	16087	Washington County, Idaho	yes	6.5	484.8460322024152	12998.951265094882
+525	61	Educational services	16	61	1	16001	Ada County, Idaho	no	165.33333333333334	2238.6666666666665	60986.666666666664
+526	61	Educational services	16	61	5	16005	Bannock County, Idaho	no	16.833333333333332	140.16666666666666	2563.1666666666665
+527	61	Educational services	16	61	7	16007	Bear Lake County, Idaho	yes	1.0	138.8791678789642	2424.068431771894
+528	61	Educational services	16	61	11	16011	Bingham County, Idaho	no	10.5	157.16666666666666	3210.3333333333335
+529	61	Educational services	16	61	13	16013	Blaine County, Idaho	no	13.25	271.5	8674.25
+530	61	Educational services	16	61	13	16013	Blaine County, Idaho	yes	13.0	1071.1053663754678	20964.490818327686
+531	61	Educational services	16	61	15	16015	Boise County, Idaho	yes	1.5	192.0741888591991	3550.785263549536
+532	61	Educational services	16	61	17	16017	Bonner County, Idaho	no	17.5	114.25	3859.0
+533	61	Educational services	16	61	17	16017	Bonner County, Idaho	yes	17.0	1370.3886610804066	26925.51773934748
+534	61	Educational services	16	61	19	16019	Bonneville County, Idaho	no	30.666666666666668	360.1666666666667	6768.666666666667
+535	61	Educational services	16	61	21	16021	Boundary County, Idaho	no	5.666666666666667	41.0	1364.8333333333333
+536	61	Educational services	16	61	23	16023	Butte County, Idaho	yes	1.5	167.36502680223947	3265.4227546916504
+537	61	Educational services	16	61	27	16027	Canyon County, Idaho	no	37.833333333333336	2028.0	40527.833333333336
+538	61	Educational services	16	61	31	16031	Cassia County, Idaho	no	4.0	11.0	200.0
+539	61	Educational services	16	61	31	16031	Cassia County, Idaho	yes	2.5	301.7397608170055	5654.9005436972775
+540	61	Educational services	16	61	35	16035	Clearwater County, Idaho	yes	2.0	261.2805756582436	4902.431009204194
+541	61	Educational services	16	61	37	16037	Custer County, Idaho	yes	1.0	124.3585892973852	2321.1659225956873
+542	61	Educational services	16	61	39	16039	Elmore County, Idaho	no	4.6	21.0	989.0
+543	61	Educational services	16	61	39	16039	Elmore County, Idaho	yes	3.0	217.59493670886076	4359.7594936708865
+544	61	Educational services	16	61	41	16041	Franklin County, Idaho	yes	1.0	130.6402878291218	2451.215504602097
+545	61	Educational services	16	61	43	16043	Fremont County, Idaho	yes	1.0	81.68835799607774	1601.2674273489035
+546	61	Educational services	16	61	45	16045	Gem County, Idaho	yes	1.6666666666666667	204.1627964541358	3792.9941243090293
+547	61	Educational services	16	61	47	16047	Gooding County, Idaho	yes	2.5	333.539199932774	6303.414842456167
+548	61	Educational services	16	61	49	16049	Idaho County, Idaho	no	4.0	25.333333333333332	413.0
+549	61	Educational services	16	61	49	16049	Idaho County, Idaho	yes	4.666666666666667	488.359567303999	9472.84264400854
+550	61	Educational services	16	61	51	16051	Jefferson County, Idaho	no	3.0	9.0	82.0
+551	61	Educational services	16	61	51	16051	Jefferson County, Idaho	yes	2.25	275.75296321403505	5366.898504569609
+552	61	Educational services	16	61	53	16053	Jerome County, Idaho	no	5.0	65.33333333333333	1086.1666666666667
+553	61	Educational services	16	61	55	16055	Kootenai County, Idaho	no	55.5	401.3333333333333	7574.833333333333
+554	61	Educational services	16	61	57	16057	Latah County, Idaho	no	14.833333333333334	221.33333333333334	4981.166666666667
+555	61	Educational services	16	61	59	16059	Lemhi County, Idaho	yes	1.0	126.52084780420061	2464.789041017199
+556	61	Educational services	16	61	61	16061	Lewis County, Idaho	yes	2.1666666666666665	273.3691832531803	5144.6398699636875
+557	61	Educational services	16	61	63	16063	Lincoln County, Idaho	yes	1.3333333333333333	157.86974049448105	2984.9713137183985
+558	61	Educational services	16	61	65	16065	Madison County, Idaho	yes	10.0	1332.662799868931	24835.32542822075
+559	61	Educational services	16	61	67	16067	Minidoka County, Idaho	yes	1.5	199.84667462816637	3802.8612502567557
+560	61	Educational services	16	61	69	16069	Nez Perce County, Idaho	no	15.0	101.16666666666667	2129.6666666666665
+561	61	Educational services	16	61	73	16073	Owyhee County, Idaho	yes	1.1666666666666667	142.72889542405852	2693.424365361591
+562	61	Educational services	16	61	75	16075	Payette County, Idaho	no	3.0	13.0	205.0
+563	61	Educational services	16	61	75	16075	Payette County, Idaho	yes	2.0	284.5240325620442	5301.615945222248
+564	61	Educational services	16	61	79	16079	Shoshone County, Idaho	no	3.4	18.0	568.4
+565	61	Educational services	16	61	79	16079	Shoshone County, Idaho	yes	3.0	486.1463414634146	9304.390243902439
+566	61	Educational services	16	61	81	16081	Teton County, Idaho	no	12.166666666666666	63.666666666666664	1661.8333333333333
+567	61	Educational services	16	61	83	16083	Twin Falls County, Idaho	no	16.166666666666668	106.5	2415.8333333333335
+568	61	Educational services	16	61	85	16085	Valley County, Idaho	no	3.0	0.0	200.0
+569	61	Educational services	16	61	85	16085	Valley County, Idaho	yes	2.8	396.3779057271001	7516.211008721654
+570	61	Educational services	16	61	87	16087	Washington County, Idaho	yes	1.3333333333333333	172.78926298084517	3259.6730220645954
+571	62	Health care and social assistance	16	62	1	16001	Ada County, Idaho	no	1443.5	31049.666666666668	1430466.1666666667
+572	62	Health care and social assistance	16	62	3	16003	Adams County, Idaho	no	6.333333333333333	46.0	1488.0
+573	62	Health care and social assistance	16	62	3	16003	Adams County, Idaho	yes	4.666666666666667	91.7103802564232	2089.6156653323465
+574	62	Health care and social assistance	16	62	5	16005	Bannock County, Idaho	no	352.8333333333333	5050.833333333333	185690.33333333334
+575	62	Health care and social assistance	16	62	7	16007	Bear Lake County, Idaho	no	11.333333333333334	302.6666666666667	12609.333333333334
+576	62	Health care and social assistance	16	62	7	16007	Bear Lake County, Idaho	yes	12.333333333333334	237.4303947090796	5585.3573488637485
+577	62	Health care and social assistance	16	62	9	16009	Benewah County, Idaho	no	16.166666666666668	395.8333333333333	13502.833333333334
+578	62	Health care and social assistance	16	62	11	16011	Bingham County, Idaho	no	107.83333333333333	1791.5	74729.83333333333
+579	62	Health care and social assistance	16	62	13	16013	Blaine County, Idaho	no	76.5	801.6666666666666	37133.166666666664
+580	62	Health care and social assistance	16	62	15	16015	Boise County, Idaho	no	8.0	24.666666666666668	532.0
+581	62	Health care and social assistance	16	62	15	16015	Boise County, Idaho	yes	6.666666666666667	132.86795853999442	2960.7872911224636
+582	62	Health care and social assistance	16	62	17	16017	Bonner County, Idaho	no	145.0	1615.6666666666667	58179.666666666664
+583	62	Health care and social assistance	16	62	19	16019	Bonneville County, Idaho	no	561.8333333333334	8115.833333333333	321352.5
+584	62	Health care and social assistance	16	62	21	16021	Boundary County, Idaho	no	27.833333333333332	543.3333333333334	16499.833333333332
+585	62	Health care and social assistance	16	62	23	16023	Butte County, Idaho	yes	6.166666666666667	142.09987553055385	4340.831028240132
+586	62	Health care and social assistance	16	62	25	16025	Camas County, Idaho	no	3.0	9.333333333333334	132.66666666666666
+587	62	Health care and social assistance	16	62	25	16025	Camas County, Idaho	yes	3.6666666666666665	69.91402402964627	1669.9130403772942
+588	62	Health care and social assistance	16	62	27	16027	Canyon County, Idaho	no	383.5	6947.666666666667	238002.5
+589	62	Health care and social assistance	16	62	29	16029	Caribou County, Idaho	no	18.166666666666668	254.0	8612.0
+590	62	Health care and social assistance	16	62	31	16031	Cassia County, Idaho	no	81.5	1219.3333333333333	35991.833333333336
+591	62	Health care and social assistance	16	62	33	16033	Clark County, Idaho	yes	1.0	17.74553678889513	473.2590568081521
+592	62	Health care and social assistance	16	62	35	16035	Clearwater County, Idaho	no	23.5	498.3333333333333	19007.166666666668
+593	62	Health care and social assistance	16	62	37	16037	Custer County, Idaho	no	9.666666666666666	46.833333333333336	1156.3333333333333
+594	62	Health care and social assistance	16	62	39	16039	Elmore County, Idaho	no	51.166666666666664	770.8333333333334	24301.666666666668
+595	62	Health care and social assistance	16	62	41	16041	Franklin County, Idaho	no	26.0	324.0	10689.666666666666
+596	62	Health care and social assistance	16	62	41	16041	Franklin County, Idaho	yes	24.666666666666668	477.2959235881419	11138.948321847483
+597	62	Health care and social assistance	16	62	43	16043	Fremont County, Idaho	no	19.333333333333332	180.0	5619.333333333333
+598	62	Health care and social assistance	16	62	45	16045	Gem County, Idaho	no	43.833333333333336	754.0	22712.0
+599	62	Health care and social assistance	16	62	47	16047	Gooding County, Idaho	no	36.333333333333336	526.6666666666666	18414.833333333332
+600	62	Health care and social assistance	16	62	49	16049	Idaho County, Idaho	no	30.166666666666668	685.0	25828.0
+601	62	Health care and social assistance	16	62	51	16051	Jefferson County, Idaho	no	36.333333333333336	289.0	6771.0
+602	62	Health care and social assistance	16	62	53	16053	Jerome County, Idaho	no	39.2	475.8	15176.4
+603	62	Health care and social assistance	16	62	53	16053	Jerome County, Idaho	yes	35.0	707.1359223300972	15516.553398058253
+604	62	Health care and social assistance	16	62	55	16055	Kootenai County, Idaho	no	503.8333333333333	9118.333333333334	390556.6666666667
+605	62	Health care and social assistance	16	62	57	16057	Latah County, Idaho	no	88.66666666666667	1328.5	50627.166666666664
+606	62	Health care and social assistance	16	62	59	16059	Lemhi County, Idaho	no	27.0	478.5	14229.333333333334
+607	62	Health care and social assistance	16	62	61	16061	Lewis County, Idaho	no	12.4	49.2	1231.4
+608	62	Health care and social assistance	16	62	61	16061	Lewis County, Idaho	yes	11.0	248.5185185185185	4486.777777777777
+609	62	Health care and social assistance	16	62	63	16063	Lincoln County, Idaho	no	6.666666666666667	92.0	2306.8333333333335
+610	62	Health care and social assistance	16	62	65	16065	Madison County, Idaho	no	100.83333333333333	1437.8333333333333	45196.166666666664
+611	62	Health care and social assistance	16	62	67	16067	Minidoka County, Idaho	no	34.2	509.2	15743.0
+612	62	Health care and social assistance	16	62	67	16067	Minidoka County, Idaho	yes	38.0	580.9132231404959	19121.144628099173
+613	62	Health care and social assistance	16	62	69	16069	Nez Perce County, Idaho	no	137.66666666666666	3089.0	122787.16666666667
+614	62	Health care and social assistance	16	62	71	16071	Oneida County, Idaho	no	10.666666666666666	205.0	5085.333333333333
+615	62	Health care and social assistance	16	62	71	16071	Oneida County, Idaho	yes	9.666666666666666	190.95162471037727	4315.194293627656
+616	62	Health care and social assistance	16	62	73	16073	Owyhee County, Idaho	no	19.5	190.16666666666666	4430.5
+617	62	Health care and social assistance	16	62	75	16075	Payette County, Idaho	no	49.666666666666664	590.6666666666666	17371.5
+618	62	Health care and social assistance	16	62	77	16077	Power County, Idaho	no	12.166666666666666	168.5	5384.833333333333
+619	62	Health care and social assistance	16	62	79	16079	Shoshone County, Idaho	no	31.0	510.0	15467.333333333334
+620	62	Health care and social assistance	16	62	81	16081	Teton County, Idaho	no	33.6	192.0	12081.2
+621	62	Health care and social assistance	16	62	81	16081	Teton County, Idaho	yes	30.0	458.61570247933884	15095.640495867769
+622	62	Health care and social assistance	16	62	83	16083	Twin Falls County, Idaho	no	360.4	6105.2	208503.0
+623	62	Health care and social assistance	16	62	83	16083	Twin Falls County, Idaho	yes	324.0	4953.0495867768595	163032.9173553719
+624	62	Health care and social assistance	16	62	85	16085	Valley County, Idaho	no	33.166666666666664	451.5	18549.0
+625	62	Health care and social assistance	16	62	87	16087	Washington County, Idaho	no	23.4	254.2	10065.6
+626	62	Health care and social assistance	16	62	87	16087	Washington County, Idaho	yes	26.0	397.4669421487603	13082.888429752067
+627	71	Arts, entertainment, and recreation	16	71	1	16001	Ada County, Idaho	no	178.16666666666666	3379.6666666666665	51739.666666666664
+628	71	Arts, entertainment, and recreation	16	71	3	16003	Adams County, Idaho	no	5.5	9.833333333333334	402.0
+629	71	Arts, entertainment, and recreation	16	71	5	16005	Bannock County, Idaho	no	31.666666666666668	364.8333333333333	4053.6666666666665
+630	71	Arts, entertainment, and recreation	16	71	7	16007	Bear Lake County, Idaho	no	4.666666666666667	17.333333333333332	249.33333333333334
+631	71	Arts, entertainment, and recreation	16	71	7	16007	Bear Lake County, Idaho	yes	4.0	105.68667299778411	1164.2034188034188
+632	71	Arts, entertainment, and recreation	16	71	11	16011	Bingham County, Idaho	yes	7.333333333333333	174.8650291483273	3154.5810053167647
+633	71	Arts, entertainment, and recreation	16	71	13	16013	Blaine County, Idaho	no	44.0	393.6666666666667	12529.833333333334
+634	71	Arts, entertainment, and recreation	16	71	15	16015	Boise County, Idaho	no	9.6	33.2	1219.6
+635	71	Arts, entertainment, and recreation	16	71	15	16015	Boise County, Idaho	yes	9.0	181.24615384615385	2399.123076923077
+636	71	Arts, entertainment, and recreation	16	71	17	16017	Bonner County, Idaho	no	26.5	101.16666666666667	2134.5
+637	71	Arts, entertainment, and recreation	16	71	19	16019	Bonneville County, Idaho	no	30.166666666666668	666.8333333333334	6571.333333333333
+638	71	Arts, entertainment, and recreation	16	71	21	16021	Boundary County, Idaho	no	4.666666666666667	3.8333333333333335	237.0
+639	71	Arts, entertainment, and recreation	16	71	25	16025	Camas County, Idaho	no	3.5	2.5	160.0
+640	71	Arts, entertainment, and recreation	16	71	25	16025	Camas County, Idaho	yes	2.75	60.1278715424285	1039.1713080168774
+641	71	Arts, entertainment, and recreation	16	71	27	16027	Canyon County, Idaho	no	39.5	735.5	7175.166666666667
+642	71	Arts, entertainment, and recreation	16	71	29	16029	Caribou County, Idaho	no	3.5	4.5	54.0
+643	71	Arts, entertainment, and recreation	16	71	29	16029	Caribou County, Idaho	yes	2.0	40.39477150447614	994.7649989953786
+644	71	Arts, entertainment, and recreation	16	71	31	16031	Cassia County, Idaho	no	8.0	175.0	1086.1666666666667
+645	71	Arts, entertainment, and recreation	16	71	35	16035	Clearwater County, Idaho	no	8.166666666666666	11.0	221.66666666666666
+646	71	Arts, entertainment, and recreation	16	71	37	16037	Custer County, Idaho	no	16.0	26.666666666666668	1367.8333333333333
+647	71	Arts, entertainment, and recreation	16	71	39	16039	Elmore County, Idaho	no	6.0	17.5	190.5
+648	71	Arts, entertainment, and recreation	16	71	39	16039	Elmore County, Idaho	yes	5.0	147.81635802469134	1516.4583333333333
+649	71	Arts, entertainment, and recreation	16	71	41	16041	Franklin County, Idaho	no	5.333333333333333	10.666666666666666	225.66666666666666
+650	71	Arts, entertainment, and recreation	16	71	41	16041	Franklin County, Idaho	yes	4.666666666666667	125.39552073440962	1366.3978632478631
+651	71	Arts, entertainment, and recreation	16	71	43	16043	Fremont County, Idaho	no	9.0	11.333333333333334	869.1666666666666
+652	71	Arts, entertainment, and recreation	16	71	45	16045	Gem County, Idaho	no	6.4	22.2	228.2
+653	71	Arts, entertainment, and recreation	16	71	45	16045	Gem County, Idaho	yes	6.0	120.83076923076923	1599.4153846153847
+654	71	Arts, entertainment, and recreation	16	71	47	16047	Gooding County, Idaho	no	5.0	23.25	568.0
+655	71	Arts, entertainment, and recreation	16	71	47	16047	Gooding County, Idaho	yes	4.0	118.25308641975309	1213.1666666666665
+656	71	Arts, entertainment, and recreation	16	71	49	16049	Idaho County, Idaho	no	24.0	64.66666666666667	978.3333333333334
+657	71	Arts, entertainment, and recreation	16	71	51	16051	Jefferson County, Idaho	no	8.666666666666666	37.5	894.8333333333334
+658	71	Arts, entertainment, and recreation	16	71	53	16053	Jerome County, Idaho	no	5.0	26.0	604.3333333333334
+659	71	Arts, entertainment, and recreation	16	71	55	16055	Kootenai County, Idaho	no	89.66666666666667	914.8333333333334	31575.333333333332
+660	71	Arts, entertainment, and recreation	16	71	57	16057	Latah County, Idaho	no	11.166666666666666	73.66666666666667	848.5
+661	71	Arts, entertainment, and recreation	16	71	59	16059	Lemhi County, Idaho	no	18.666666666666668	21.0	886.5
+662	71	Arts, entertainment, and recreation	16	71	61	16061	Lewis County, Idaho	no	3.0	17.0	164.5
+663	71	Arts, entertainment, and recreation	16	71	61	16061	Lewis County, Idaho	yes	2.5	53.03969490425187	920.455923401493
+664	71	Arts, entertainment, and recreation	16	71	63	16063	Lincoln County, Idaho	yes	1.0	22.86300075790231	421.1137603488869
+665	71	Arts, entertainment, and recreation	16	71	65	16065	Madison County, Idaho	no	12.666666666666666	66.16666666666667	1294.8333333333333
+666	71	Arts, entertainment, and recreation	16	71	67	16067	Minidoka County, Idaho	no	4.333333333333333	16.666666666666668	286.6666666666667
+667	71	Arts, entertainment, and recreation	16	71	67	16067	Minidoka County, Idaho	yes	6.666666666666667	178.23885723330167	1948.4995726495727
+668	71	Arts, entertainment, and recreation	16	71	69	16069	Nez Perce County, Idaho	no	22.0	142.2	2292.2
+669	71	Arts, entertainment, and recreation	16	71	69	16069	Nez Perce County, Idaho	yes	24.0	549.037037037037	8064.0
+670	71	Arts, entertainment, and recreation	16	71	71	16071	Oneida County, Idaho	no	3.0	3.3333333333333335	30.0
+671	71	Arts, entertainment, and recreation	16	71	71	16071	Oneida County, Idaho	yes	2.3333333333333335	59.55615701171257	670.9581196581197
+672	71	Arts, entertainment, and recreation	16	71	73	16073	Owyhee County, Idaho	yes	1.1666666666666667	26.99395313885469	551.8399508250774
+673	71	Arts, entertainment, and recreation	16	71	75	16075	Payette County, Idaho	no	4.833333333333333	9.833333333333334	316.0
+674	71	Arts, entertainment, and recreation	16	71	77	16077	Power County, Idaho	no	3.0	2.0	34.0
+675	71	Arts, entertainment, and recreation	16	71	77	16077	Power County, Idaho	yes	1.8	40.38160746270451	629.7301676944714
+676	71	Arts, entertainment, and recreation	16	71	79	16079	Shoshone County, Idaho	no	16.666666666666668	353.6666666666667	4146.666666666667
+677	71	Arts, entertainment, and recreation	16	71	79	16079	Shoshone County, Idaho	yes	15.333333333333334	408.40835707502373	4455.957264957265
+678	71	Arts, entertainment, and recreation	16	71	81	16081	Teton County, Idaho	no	15.0	38.5	1764.3333333333333
+679	71	Arts, entertainment, and recreation	16	71	83	16083	Twin Falls County, Idaho	no	40.166666666666664	310.8333333333333	4277.333333333333
+680	71	Arts, entertainment, and recreation	16	71	85	16085	Valley County, Idaho	no	22.333333333333332	152.5	3847.0
+681	71	Arts, entertainment, and recreation	16	71	87	16087	Washington County, Idaho	no	4.2	7.0	237.8
+682	71	Arts, entertainment, and recreation	16	71	87	16087	Washington County, Idaho	yes	5.0	100.6923076923077	1332.8461538461538
+683	72	Accommodation and food services	16	72	1	16001	Ada County, Idaho	no	966.3333333333334	18734.333333333332	283740.6666666667
+684	72	Accommodation and food services	16	72	3	16003	Adams County, Idaho	no	12.0	52.166666666666664	505.6666666666667
+685	72	Accommodation and food services	16	72	5	16005	Bannock County, Idaho	no	195.0	3533.8333333333335	44689.0
+686	72	Accommodation and food services	16	72	7	16007	Bear Lake County, Idaho	no	15.666666666666666	136.33333333333334	1825.3333333333333
+687	72	Accommodation and food services	16	72	9	16009	Benewah County, Idaho	no	22.833333333333332	158.66666666666666	1848.8333333333333
+688	72	Accommodation and food services	16	72	11	16011	Bingham County, Idaho	no	48.333333333333336	705.6666666666666	7820.0
+689	72	Accommodation and food services	16	72	13	16013	Blaine County, Idaho	no	110.66666666666667	2903.0	55826.5
+690	72	Accommodation and food services	16	72	15	16015	Boise County, Idaho	no	23.833333333333332	117.83333333333333	1580.8333333333333
+691	72	Accommodation and food services	16	72	17	16017	Bonner County, Idaho	no	119.83333333333333	1743.8333333333333	25267.833333333332
+692	72	Accommodation and food services	16	72	19	16019	Bonneville County, Idaho	no	238.66666666666666	4659.0	67584.66666666667
+693	72	Accommodation and food services	16	72	21	16021	Boundary County, Idaho	no	22.75	114.0	1702.0
+694	72	Accommodation and food services	16	72	21	16021	Boundary County, Idaho	yes	25.0	317.9625	3982.7375
+695	72	Accommodation and food services	16	72	23	16023	Butte County, Idaho	no	7.833333333333333	29.0	354.8333333333333
+696	72	Accommodation and food services	16	72	25	16025	Camas County, Idaho	no	5.8	31.8	257.8
+697	72	Accommodation and food services	16	72	25	16025	Camas County, Idaho	yes	5.0	31.666666666666668	233.05555555555557
+698	72	Accommodation and food services	16	72	27	16027	Canyon County, Idaho	no	262.6666666666667	4547.5	61495.666666666664
+699	72	Accommodation and food services	16	72	29	16029	Caribou County, Idaho	no	14.666666666666666	81.16666666666667	1054.0
+700	72	Accommodation and food services	16	72	31	16031	Cassia County, Idaho	no	51.166666666666664	710.5	8415.5
+701	72	Accommodation and food services	16	72	33	16033	Clark County, Idaho	yes	1.0	8.405337091370098	114.49897785927737
+702	72	Accommodation and food services	16	72	35	16035	Clearwater County, Idaho	no	25.833333333333332	175.5	2272.3333333333335
+703	72	Accommodation and food services	16	72	37	16037	Custer County, Idaho	no	30.166666666666668	90.33333333333333	2937.3333333333335
+704	72	Accommodation and food services	16	72	39	16039	Elmore County, Idaho	no	55.5	646.8333333333334	8482.0
+705	72	Accommodation and food services	16	72	41	16041	Franklin County, Idaho	no	17.833333333333332	197.16666666666666	1853.6666666666667
+706	72	Accommodation and food services	16	72	43	16043	Fremont County, Idaho	no	32.166666666666664	178.83333333333334	2921.0
+707	72	Accommodation and food services	16	72	45	16045	Gem County, Idaho	no	25.333333333333332	304.0	3592.8333333333335
+708	72	Accommodation and food services	16	72	47	16047	Gooding County, Idaho	no	30.166666666666668	229.5	2293.0
+709	72	Accommodation and food services	16	72	49	16049	Idaho County, Idaho	no	48.833333333333336	282.6666666666667	3610.1666666666665
+710	72	Accommodation and food services	16	72	51	16051	Jefferson County, Idaho	no	30.0	233.5	2064.3333333333335
+711	72	Accommodation and food services	16	72	53	16053	Jerome County, Idaho	no	32.333333333333336	355.0	4645.333333333333
+712	72	Accommodation and food services	16	72	55	16055	Kootenai County, Idaho	no	374.8333333333333	6837.166666666667	123276.16666666667
+713	72	Accommodation and food services	16	72	57	16057	Latah County, Idaho	no	118.33333333333333	1789.8333333333333	23215.333333333332
+714	72	Accommodation and food services	16	72	59	16059	Lemhi County, Idaho	no	31.833333333333332	228.0	3033.0
+715	72	Accommodation and food services	16	72	61	16061	Lewis County, Idaho	no	14.666666666666666	103.33333333333333	1317.0
+716	72	Accommodation and food services	16	72	63	16063	Lincoln County, Idaho	no	4.833333333333333	24.5	286.8333333333333
+717	72	Accommodation and food services	16	72	65	16065	Madison County, Idaho	no	57.5	1023.6666666666666	11191.0
+718	72	Accommodation and food services	16	72	67	16067	Minidoka County, Idaho	no	26.166666666666668	297.6666666666667	3728.0
+719	72	Accommodation and food services	16	72	69	16069	Nez Perce County, Idaho	no	95.33333333333333	1820.5	25732.333333333332
+720	72	Accommodation and food services	16	72	71	16071	Oneida County, Idaho	no	10.666666666666666	79.0	753.1666666666666
+721	72	Accommodation and food services	16	72	73	16073	Owyhee County, Idaho	no	22.333333333333332	140.0	1525.8333333333333
+722	72	Accommodation and food services	16	72	75	16075	Payette County, Idaho	no	27.0	222.33333333333334	2271.6666666666665
+723	72	Accommodation and food services	16	72	77	16077	Power County, Idaho	no	14.0	48.75	459.0
+724	72	Accommodation and food services	16	72	77	16077	Power County, Idaho	yes	12.0	119.89999999999999	1086.9666666666667
+725	72	Accommodation and food services	16	72	79	16079	Shoshone County, Idaho	no	49.333333333333336	379.5	4876.0
+726	72	Accommodation and food services	16	72	81	16081	Teton County, Idaho	no	37.833333333333336	288.0	5183.166666666667
+727	72	Accommodation and food services	16	72	83	16083	Twin Falls County, Idaho	no	178.5	3033.8333333333335	41845.0
+728	72	Accommodation and food services	16	72	85	16085	Valley County, Idaho	no	75.66666666666667	795.0	16206.166666666666
+729	72	Accommodation and food services	16	72	87	16087	Washington County, Idaho	no	21.333333333333332	158.83333333333334	1752.3333333333333
+730	81	Other services (except public administration)	16	81	1	16001	Ada County, Idaho	no	990.6666666666666	7385.0	193658.5
+731	81	Other services (except public administration)	16	81	3	16003	Adams County, Idaho	no	8.666666666666666	8.166666666666666	270.0
+732	81	Other services (except public administration)	16	81	5	16005	Bannock County, Idaho	no	154.0	757.6666666666666	18984.833333333332
+733	81	Other services (except public administration)	16	81	7	16007	Bear Lake County, Idaho	no	3.6666666666666665	7.166666666666667	195.16666666666666
+734	81	Other services (except public administration)	16	81	9	16009	Benewah County, Idaho	no	19.333333333333332	73.0	2150.6666666666665
+735	81	Other services (except public administration)	16	81	11	16011	Bingham County, Idaho	no	61.166666666666664	330.6666666666667	9503.666666666666
+736	81	Other services (except public administration)	16	81	13	16013	Blaine County, Idaho	no	104.33333333333333	354.8333333333333	13851.333333333334
+737	81	Other services (except public administration)	16	81	15	16015	Boise County, Idaho	no	14.166666666666666	47.666666666666664	908.6666666666666
+738	81	Other services (except public administration)	16	81	17	16017	Bonner County, Idaho	no	104.83333333333333	472.5	10124.333333333334
+739	81	Other services (except public administration)	16	81	19	16019	Bonneville County, Idaho	no	211.16666666666666	1110.3333333333333	27741.0
+740	81	Other services (except public administration)	16	81	21	16021	Boundary County, Idaho	no	29.166666666666668	83.0	1476.5
+741	81	Other services (except public administration)	16	81	23	16023	Butte County, Idaho	no	6.166666666666667	6.666666666666667	239.0
+742	81	Other services (except public administration)	16	81	25	16025	Camas County, Idaho	yes	2.0	111.58153015780812	1053.447816826411
+743	81	Other services (except public administration)	16	81	27	16027	Canyon County, Idaho	no	301.5	2035.5	54431.666666666664
+744	81	Other services (except public administration)	16	81	29	16029	Caribou County, Idaho	no	14.0	23.333333333333332	903.0
+745	81	Other services (except public administration)	16	81	31	16031	Cassia County, Idaho	no	45.0	160.33333333333334	4259.833333333333
+746	81	Other services (except public administration)	16	81	35	16035	Clearwater County, Idaho	no	20.5	66.5	2373.0
+747	81	Other services (except public administration)	16	81	37	16037	Custer County, Idaho	no	7.833333333333333	17.333333333333332	350.8333333333333
+748	81	Other services (except public administration)	16	81	39	16039	Elmore County, Idaho	no	43.166666666666664	147.0	2844.8333333333335
+749	81	Other services (except public administration)	16	81	41	16041	Franklin County, Idaho	no	21.5	47.666666666666664	1169.0
+750	81	Other services (except public administration)	16	81	43	16043	Fremont County, Idaho	no	21.0	53.833333333333336	1861.8333333333333
+751	81	Other services (except public administration)	16	81	45	16045	Gem County, Idaho	no	34.0	100.33333333333333	2142.5
+752	81	Other services (except public administration)	16	81	47	16047	Gooding County, Idaho	no	30.5	142.83333333333334	3727.5
+753	81	Other services (except public administration)	16	81	49	16049	Idaho County, Idaho	no	24.0	79.33333333333333	1760.1666666666667
+754	81	Other services (except public administration)	16	81	51	16051	Jefferson County, Idaho	no	19.0	27.0	799.5
+755	81	Other services (except public administration)	16	81	53	16053	Jerome County, Idaho	no	56.5	220.33333333333334	5108.0
+756	81	Other services (except public administration)	16	81	55	16055	Kootenai County, Idaho	no	329.0	1751.3333333333333	43995.0
+757	81	Other services (except public administration)	16	81	57	16057	Latah County, Idaho	no	84.16666666666667	560.3333333333334	12802.666666666666
+758	81	Other services (except public administration)	16	81	59	16059	Lemhi County, Idaho	no	25.333333333333332	85.66666666666667	1885.5
+759	81	Other services (except public administration)	16	81	61	16061	Lewis County, Idaho	no	4.4	6.0	113.2
+760	81	Other services (except public administration)	16	81	61	16061	Lewis County, Idaho	yes	6.0	275.25	462.75
+761	81	Other services (except public administration)	16	81	63	16063	Lincoln County, Idaho	no	6.2	8.8	207.0
+762	81	Other services (except public administration)	16	81	63	16063	Lincoln County, Idaho	yes	6.0	183.0	497.25
+763	81	Other services (except public administration)	16	81	65	16065	Madison County, Idaho	no	32.0	119.5	2921.6666666666665
+764	81	Other services (except public administration)	16	81	67	16067	Minidoka County, Idaho	no	36.166666666666664	228.83333333333334	6675.0
+765	81	Other services (except public administration)	16	81	69	16069	Nez Perce County, Idaho	no	113.5	665.5	14415.666666666666
+766	81	Other services (except public administration)	16	81	71	16071	Oneida County, Idaho	no	3.0	7.333333333333333	115.0
+767	81	Other services (except public administration)	16	81	73	16073	Owyhee County, Idaho	no	8.0	11.166666666666666	286.3333333333333
+768	81	Other services (except public administration)	16	81	75	16075	Payette County, Idaho	no	43.0	157.83333333333334	3173.0
+769	81	Other services (except public administration)	16	81	77	16077	Power County, Idaho	no	13.5	67.66666666666667	1645.3333333333333
+770	81	Other services (except public administration)	16	81	79	16079	Shoshone County, Idaho	no	24.0	80.5	1709.3333333333333
+771	81	Other services (except public administration)	16	81	81	16081	Teton County, Idaho	no	26.0	68.0	2235.0
+772	81	Other services (except public administration)	16	81	83	16083	Twin Falls County, Idaho	no	206.66666666666666	1235.6666666666667	28756.333333333332
+773	81	Other services (except public administration)	16	81	85	16085	Valley County, Idaho	no	40.666666666666664	200.83333333333334	4867.5
+774	81	Other services (except public administration)	16	81	87	16087	Washington County, Idaho	no	19.833333333333332	37.5	1162.0
+775	99	Industries not classified	16	99	1	16001	Ada County, Idaho	no	26.833333333333332	26.666666666666668	405.1666666666667
+776	99	Industries not classified	16	99	5	16005	Bannock County, Idaho	no	3.0	1.0	15.0
+777	99	Industries not classified	16	99	5	16005	Bannock County, Idaho	yes	1.0	-0.6666666666666666	14.958333333333332
+778	99	Industries not classified	16	99	9	16009	Benewah County, Idaho	yes	1.0	-0.55	33.1
+779	99	Industries not classified	16	99	11	16011	Bingham County, Idaho	no	3.0	0.0	87.0
+780	99	Industries not classified	16	99	11	16011	Bingham County, Idaho	yes	1.2	0.6174709302325582	30.656283376399653
+781	99	Industries not classified	16	99	13	16013	Blaine County, Idaho	no	3.6666666666666665	4.666666666666667	112.66666666666667
+782	99	Industries not classified	16	99	13	16013	Blaine County, Idaho	yes	2.3333333333333335	0.03749999999999994	70.98672839506173
+783	99	Industries not classified	16	99	17	16017	Bonner County, Idaho	no	3.0	6.0	363.0
+784	99	Industries not classified	16	99	17	16017	Bonner County, Idaho	yes	1.5	0.13645833333333335	40.42962962962963
+785	99	Industries not classified	16	99	19	16019	Bonneville County, Idaho	no	5.2	3.8	49.4
+786	99	Industries not classified	16	99	19	16019	Bonneville County, Idaho	yes	3.0	0.0	66.55555555555556
+787	99	Industries not classified	16	99	21	16021	Boundary County, Idaho	yes	1.0	1.2124515503875968	25.2703488372093
+788	99	Industries not classified	16	99	23	16023	Butte County, Idaho	yes	1.0	-0.6666666666666666	14.958333333333332
+789	99	Industries not classified	16	99	27	16027	Canyon County, Idaho	no	4.5	0.0	101.5
+790	99	Industries not classified	16	99	27	16027	Canyon County, Idaho	yes	1.75	1.8186773255813953	43.45181955211025
+791	99	Industries not classified	16	99	31	16031	Cassia County, Idaho	yes	1.75	0.907218992248062	36.337236218776916
+792	99	Industries not classified	16	99	37	16037	Custer County, Idaho	yes	1.0	-0.6083333333333334	24.02916666666667
+793	99	Industries not classified	16	99	39	16039	Elmore County, Idaho	yes	1.3333333333333333	1.5978682170542635	34.99951550387597
+794	99	Industries not classified	16	99	41	16041	Franklin County, Idaho	yes	1.2	0.7153875968992247	30.611375968992252
+795	99	Industries not classified	16	99	45	16045	Gem County, Idaho	yes	1.25	0.5760053294573644	26.43192829457364
+796	99	Industries not classified	16	99	47	16047	Gooding County, Idaho	yes	2.25	-0.16770833333333335	57.990509259259255
+797	99	Industries not classified	16	99	49	16049	Idaho County, Idaho	yes	1.5	-0.3192708333333334	36.87233796296296
+798	99	Industries not classified	16	99	51	16051	Jefferson County, Idaho	yes	1.3333333333333333	-0.4055555555555556	30.80956790123457
+799	99	Industries not classified	16	99	53	16053	Jerome County, Idaho	yes	1.5	0.8229166666666667	36.666666666666664
+800	99	Industries not classified	16	99	55	16055	Kootenai County, Idaho	no	7.4	13.6	209.4
+801	99	Industries not classified	16	99	55	16055	Kootenai County, Idaho	yes	1.0	0.0	22.185185185185183
+802	99	Industries not classified	16	99	57	16057	Latah County, Idaho	no	4.0	1.0	46.0
+803	99	Industries not classified	16	99	57	16057	Latah County, Idaho	yes	1.25	0.2739583333333333	32.154629629629625
+804	99	Industries not classified	16	99	59	16059	Lemhi County, Idaho	yes	1.0	1.2124515503875968	25.2703488372093
+805	99	Industries not classified	16	99	61	16061	Lewis County, Idaho	yes	1.0	0.0	22.185185185185183
+806	99	Industries not classified	16	99	63	16063	Lincoln County, Idaho	yes	1.3333333333333333	0.16319444444444445	29.5054012345679
+807	99	Industries not classified	16	99	65	16065	Madison County, Idaho	yes	1.5	-0.9416666666666667	31.508333333333333
+808	99	Industries not classified	16	99	69	16069	Nez Perce County, Idaho	yes	1.6	0.8253875968992249	37.302487080103354
+809	99	Industries not classified	16	99	71	16071	Oneida County, Idaho	yes	1.0	1.2405523255813953	23.311773255813954
+810	99	Industries not classified	16	99	73	16073	Owyhee County, Idaho	yes	1.0	1.15625	29.1875
+811	99	Industries not classified	16	99	75	16075	Payette County, Idaho	yes	1.2	0.7153875968992247	30.611375968992252
+812	99	Industries not classified	16	99	77	16077	Power County, Idaho	yes	2.0	0.0	44.37037037037037
+813	99	Industries not classified	16	99	79	16079	Shoshone County, Idaho	yes	1.0	-0.6083333333333334	24.02916666666667
+814	99	Industries not classified	16	99	81	16081	Teton County, Idaho	yes	1.0	0.24479166666666669	22.072916666666664
+815	99	Industries not classified	16	99	83	16083	Twin Falls County, Idaho	no	4.4	7.0	60.8
+816	99	Industries not classified	16	99	83	16083	Twin Falls County, Idaho	yes	2.0	0.0	44.37037037037037
+817	99	Industries not classified	16	99	85	16085	Valley County, Idaho	yes	1.3333333333333333	1.5978682170542635	34.99951550387597
+818	99	Industries not classified	16	99	87	16087	Washington County, Idaho	yes	1.6	1.321608527131783	37.75312230835487

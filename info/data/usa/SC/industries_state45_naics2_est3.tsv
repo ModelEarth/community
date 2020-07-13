@@ -1,755 +1,881 @@
-	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
-0	45001	45	1	Abbeville County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	2.2	3.4	112.0
-2	45001	45	1	Abbeville County, South Carolina	23	Construction	23	39.6	152.2	5024.4
-3	45001	45	1	Abbeville County, South Carolina	42	Wholesale trade	42	6.2	24.0	1076.6
-4	45001	45	1	Abbeville County, South Carolina	51	Information	51	4.4	31.4	2120.6
-5	45001	45	1	Abbeville County, South Carolina	52	Finance and insurance	52	29.2	105.2	4504.6
-6	45001	45	1	Abbeville County, South Carolina	53	Real estate and rental and leasing	53	2.6	0.6	20.4
-7	45001	45	1	Abbeville County, South Carolina	54	Professional, scientific, and technical services	54	16.2	45.0	1061.0
-8	45001	45	1	Abbeville County, South Carolina	55	Management of companies and enterprises	55	3.0	3.4	291.2
-9	45001	45	1	Abbeville County, South Carolina	56	Administrative and support and waste management and remediation services	56	15.6	96.6	2527.4
-10	45001	45	1	Abbeville County, South Carolina	61	Educational services	61	4.8	309.4	7438.4
-11	45001	45	1	Abbeville County, South Carolina	62	Health care and social assistance	62	27.4	488.8	16113.6
-12	45001	45	1	Abbeville County, South Carolina	71	Arts, entertainment, and recreation	71	2.8	1.6	71.8
-13	45001	45	1	Abbeville County, South Carolina	72	Accommodation and food services	72	27.4	328.2	4385.6
-14	45001	45	1	Abbeville County, South Carolina	81	Other services (except public administration)	81	50.0	238.2	3967.0
-16	45003	45	3	Aiken County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	22.2	95.6	3828.4
-17	45003	45	3	Aiken County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	4.0	85.6	4750.2
-18	45003	45	3	Aiken County, South Carolina	22	Utilities	22	17.8	203.8	13404.8
-19	45003	45	3	Aiken County, South Carolina	23	Construction	23	241.4	2764.8	141921.8
-20	45003	45	3	Aiken County, South Carolina	42	Wholesale trade	42	73.2	687.4	28871.2
-21	45003	45	3	Aiken County, South Carolina	51	Information	51	28.4	539.0	24073.4
-22	45003	45	3	Aiken County, South Carolina	52	Finance and insurance	52	197.6	1168.4	53519.0
-23	45003	45	3	Aiken County, South Carolina	53	Real estate and rental and leasing	53	106.8	363.6	11533.2
-24	45003	45	3	Aiken County, South Carolina	54	Professional, scientific, and technical services	54	239.2	763.6	58478.6
-25	45003	45	3	Aiken County, South Carolina	55	Management of companies and enterprises	55	9.2	904.8	5736.6
-26	45003	45	3	Aiken County, South Carolina	56	Administrative and support and waste management and remediation services	56	127.4	7285.8	545909.0
-27	45003	45	3	Aiken County, South Carolina	61	Educational services	61	33.2	518.6	11295.4
-28	45003	45	3	Aiken County, South Carolina	62	Health care and social assistance	62	323.4	6229.0	206136.6
-29	45003	45	3	Aiken County, South Carolina	71	Arts, entertainment, and recreation	71	49.4	788.2	14826.8
-30	45003	45	3	Aiken County, South Carolina	72	Accommodation and food services	72	264.0	5202.2	73909.4
-31	45003	45	3	Aiken County, South Carolina	81	Other services (except public administration)	81	300.4	2042.6	41901.2
-32	45003	45	3	Aiken County, South Carolina	99	Industries not classified	99	3.4	1.8	60.2
-33	45005	45	5	Allendale County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	7.2	59.8	2374.0
-34	45005	45	5	Allendale County, South Carolina	23	Construction	23	5.6	10.6	294.4
-35	45005	45	5	Allendale County, South Carolina	42	Wholesale trade	42	9.2	54.8	2224.6
-36	45005	45	5	Allendale County, South Carolina	51	Information	51	5.8	3.6	428.8
-37	45005	45	5	Allendale County, South Carolina	52	Finance and insurance	52	9.2	16.6	648.0
-39	45005	45	5	Allendale County, South Carolina	54	Professional, scientific, and technical services	54	5.8	23.6	1266.8
-40	45005	45	5	Allendale County, South Carolina	56	Administrative and support and waste management and remediation services	56	4.8	3.2	35.2
-42	45005	45	5	Allendale County, South Carolina	62	Health care and social assistance	62	11.8	115.0	9492.2
-44	45005	45	5	Allendale County, South Carolina	72	Accommodation and food services	72	5.4	40.4	460.8
-45	45005	45	5	Allendale County, South Carolina	81	Other services (except public administration)	81	11.2	20.2	409.6
-46	45007	45	7	Anderson County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	12.0	22.2	969.8
-47	45007	45	7	Anderson County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	3.6	38.8	2404.8
-48	45007	45	7	Anderson County, South Carolina	22	Utilities	22	10.6	61.8	10757.0
-49	45007	45	7	Anderson County, South Carolina	23	Construction	23	319.4	2184.6	88048.8
-50	45007	45	7	Anderson County, South Carolina	42	Wholesale trade	42	180.2	2736.0	141325.2
-51	45007	45	7	Anderson County, South Carolina	51	Information	51	33.6	490.8	23476.0
-52	45007	45	7	Anderson County, South Carolina	52	Finance and insurance	52	243.8	1098.8	47417.6
-53	45007	45	7	Anderson County, South Carolina	53	Real estate and rental and leasing	53	129.2	409.6	14509.8
-54	45007	45	7	Anderson County, South Carolina	54	Professional, scientific, and technical services	54	277.4	1941.0	84298.2
-55	45007	45	7	Anderson County, South Carolina	55	Management of companies and enterprises	55	23.4	286.0	28023.4
-56	45007	45	7	Anderson County, South Carolina	56	Administrative and support and waste management and remediation services	56	183.2	2815.8	83172.6
-57	45007	45	7	Anderson County, South Carolina	61	Educational services	61	25.4	493.8	10181.2
-58	45007	45	7	Anderson County, South Carolina	62	Health care and social assistance	62	355.6	8317.6	356132.4
-59	45007	45	7	Anderson County, South Carolina	71	Arts, entertainment, and recreation	71	47.0	398.8	6214.8
-60	45007	45	7	Anderson County, South Carolina	72	Accommodation and food services	72	376.8	6475.8	85370.2
-61	45007	45	7	Anderson County, South Carolina	81	Other services (except public administration)	81	460.0	4583.6	177660.2
-62	45007	45	7	Anderson County, South Carolina	99	Industries not classified	99	8.2	7.0	167.4
-63	45009	45	9	Bamberg County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	9.4	41.6	1832.2
-65	45009	45	9	Bamberg County, South Carolina	23	Construction	23	10.4	25.0	948.8
-66	45009	45	9	Bamberg County, South Carolina	42	Wholesale trade	42	7.2	20.4	1049.2
-67	45009	45	9	Bamberg County, South Carolina	51	Information	51	3.0	4.6	314.8
-68	45009	45	9	Bamberg County, South Carolina	52	Finance and insurance	52	18.8	97.2	3468.6
-69	45009	45	9	Bamberg County, South Carolina	53	Real estate and rental and leasing	53	2.4	1.4	38.4
-70	45009	45	9	Bamberg County, South Carolina	54	Professional, scientific, and technical services	54	15.0	59.4	1832.0
-72	45009	45	9	Bamberg County, South Carolina	56	Administrative and support and waste management and remediation services	56	5.2	28.0	731.8
-73	45009	45	9	Bamberg County, South Carolina	61	Educational services	61	4.2	354.0	10679.0
-74	45009	45	9	Bamberg County, South Carolina	62	Health care and social assistance	62	39.4	537.8	15524.8
-75	45009	45	9	Bamberg County, South Carolina	71	Arts, entertainment, and recreation	71	2.8	1.4	28.8
-76	45009	45	9	Bamberg County, South Carolina	72	Accommodation and food services	72	21.2	116.2	2411.8
-77	45009	45	9	Bamberg County, South Carolina	81	Other services (except public administration)	81	41.2	140.2	1975.2
-79	45011	45	11	Barnwell County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	6.4	6.8	790.8
-82	45011	45	11	Barnwell County, South Carolina	23	Construction	23	22.8	139.4	4379.0
-83	45011	45	11	Barnwell County, South Carolina	42	Wholesale trade	42	6.0	20.6	452.2
-84	45011	45	11	Barnwell County, South Carolina	51	Information	51	6.8	25.8	1516.8
-85	45011	45	11	Barnwell County, South Carolina	52	Finance and insurance	52	25.2	122.8	4221.2
-86	45011	45	11	Barnwell County, South Carolina	53	Real estate and rental and leasing	53	9.6	9.8	539.4
-87	45011	45	11	Barnwell County, South Carolina	54	Professional, scientific, and technical services	54	24.4	40.2	3313.4
-88	45011	45	11	Barnwell County, South Carolina	55	Management of companies and enterprises	55	2.4	1.0	21.0
-89	45011	45	11	Barnwell County, South Carolina	56	Administrative and support and waste management and remediation services	56	15.8	129.2	4479.2
-90	45011	45	11	Barnwell County, South Carolina	61	Educational services	61	3.0	34.0	489.6
-91	45011	45	11	Barnwell County, South Carolina	62	Health care and social assistance	62	30.6	639.8	19955.2
-92	45011	45	11	Barnwell County, South Carolina	71	Arts, entertainment, and recreation	71	2.8	11.2	209.8
-93	45011	45	11	Barnwell County, South Carolina	72	Accommodation and food services	72	30.6	423.2	4645.2
-94	45011	45	11	Barnwell County, South Carolina	81	Other services (except public administration)	81	59.8	301.0	5703.8
-95	45011	45	11	Barnwell County, South Carolina	99	Industries not classified	99	2.0	1.0	11.666666666666664
-96	45013	45	13	Beaufort County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	5.0	7.2	480.8
-98	45013	45	13	Beaufort County, South Carolina	22	Utilities	22	6.2	29.2	1977.8
-99	45013	45	13	Beaufort County, South Carolina	23	Construction	23	594.6	2835.4	116632.0
-100	45013	45	13	Beaufort County, South Carolina	42	Wholesale trade	42	145.6	680.6	32949.0
-101	45013	45	13	Beaufort County, South Carolina	51	Information	51	64.4	538.6	36754.2
-102	45013	45	13	Beaufort County, South Carolina	52	Finance and insurance	52	265.6	1997.6	136068.0
-103	45013	45	13	Beaufort County, South Carolina	53	Real estate and rental and leasing	53	415.4	1767.4	74883.4
-104	45013	45	13	Beaufort County, South Carolina	54	Professional, scientific, and technical services	54	574.4	2812.6	154568.4
-105	45013	45	13	Beaufort County, South Carolina	55	Management of companies and enterprises	55	20.6	206.6	14772.8
-106	45013	45	13	Beaufort County, South Carolina	56	Administrative and support and waste management and remediation services	56	381.8	3938.0	116958.8
-107	45013	45	13	Beaufort County, South Carolina	61	Educational services	61	60.2	785.6	23842.6
-108	45013	45	13	Beaufort County, South Carolina	62	Health care and social assistance	62	457.6	7567.4	313862.8
-109	45013	45	13	Beaufort County, South Carolina	71	Arts, entertainment, and recreation	71	111.2	2780.2	69163.6
-110	45013	45	13	Beaufort County, South Carolina	72	Accommodation and food services	72	519.0	11489.8	233637.2
-111	45013	45	13	Beaufort County, South Carolina	81	Other services (except public administration)	81	407.8	3534.4	103638.6
-112	45013	45	13	Beaufort County, South Carolina	99	Industries not classified	99	6.4	5.4	343.6
-113	45015	45	15	Berkeley County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	8.4	21.6	1260.8
-116	45015	45	15	Berkeley County, South Carolina	23	Construction	23	332.6	3270.2	150352.6
-117	45015	45	15	Berkeley County, South Carolina	42	Wholesale trade	42	174.8	3045.8	179040.8
-118	45015	45	15	Berkeley County, South Carolina	51	Information	51	28.0	2536.8	237916.4
-119	45015	45	15	Berkeley County, South Carolina	52	Finance and insurance	52	184.6	930.6	47991.6
-120	45015	45	15	Berkeley County, South Carolina	53	Real estate and rental and leasing	53	145.2	754.0	31947.2
-121	45015	45	15	Berkeley County, South Carolina	54	Professional, scientific, and technical services	54	263.6	3108.4	203489.8
-122	45015	45	15	Berkeley County, South Carolina	55	Management of companies and enterprises	55	14.2	64.4	8292.4
-123	45015	45	15	Berkeley County, South Carolina	56	Administrative and support and waste management and remediation services	56	170.8	1691.4	46532.4
-124	45015	45	15	Berkeley County, South Carolina	61	Educational services	61	28.8	447.6	13969.2
-125	45015	45	15	Berkeley County, South Carolina	62	Health care and social assistance	62	223.6	2445.6	75634.8
-126	45015	45	15	Berkeley County, South Carolina	71	Arts, entertainment, and recreation	71	30.0	407.6	8605.8
-127	45015	45	15	Berkeley County, South Carolina	72	Accommodation and food services	72	253.2	4713.8	63357.8
-128	45015	45	15	Berkeley County, South Carolina	81	Other services (except public administration)	81	295.8	1892.4	45659.4
-129	45015	45	15	Berkeley County, South Carolina	99	Industries not classified	99	3.25	3.25	39.0
-130	45017	45	17	Calhoun County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	5.6	39.8	1178.4
-131	45017	45	17	Calhoun County, South Carolina	22	Utilities	22	2.6	39.4	2659.6
-132	45017	45	17	Calhoun County, South Carolina	23	Construction	23	35.6	397.0	14536.6
-133	45017	45	17	Calhoun County, South Carolina	42	Wholesale trade	42	9.0	233.6	8792.8
-134	45017	45	17	Calhoun County, South Carolina	51	Information	51	2.8	1.8	135.4
-135	45017	45	17	Calhoun County, South Carolina	52	Finance and insurance	52	12.4	30.4	1878.4
-136	45017	45	17	Calhoun County, South Carolina	53	Real estate and rental and leasing	53	3.4	5.0	305.0
-137	45017	45	17	Calhoun County, South Carolina	54	Professional, scientific, and technical services	54	12.2	32.0	1045.2
-138	45017	45	17	Calhoun County, South Carolina	56	Administrative and support and waste management and remediation services	56	14.8	207.8	8835.6
-140	45017	45	17	Calhoun County, South Carolina	62	Health care and social assistance	62	23.2	378.0	7423.6
-141	45017	45	17	Calhoun County, South Carolina	71	Arts, entertainment, and recreation	71	4.4	12.6	139.6
-142	45017	45	17	Calhoun County, South Carolina	72	Accommodation and food services	72	8.2	101.6	954.2
-143	45017	45	17	Calhoun County, South Carolina	81	Other services (except public administration)	81	33.4	107.0	1702.2
-145	45019	45	19	Charleston County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	15.6	9.2	1131.2
-148	45019	45	19	Charleston County, South Carolina	23	Construction	23	1001.2	8214.6	421395.8
-149	45019	45	19	Charleston County, South Carolina	42	Wholesale trade	42	545.6	6497.6	366749.4
-150	45019	45	19	Charleston County, South Carolina	51	Information	51	207.2	4611.6	215576.2
-151	45019	45	19	Charleston County, South Carolina	52	Finance and insurance	52	748.6	6182.0	438602.4
-152	45019	45	19	Charleston County, South Carolina	53	Real estate and rental and leasing	53	781.0	3674.6	160923.4
-153	45019	45	19	Charleston County, South Carolina	54	Professional, scientific, and technical services	54	1694.0	15456.8	1142873.4
-154	45019	45	19	Charleston County, South Carolina	55	Management of companies and enterprises	55	67.2	2226.0	177298.2
-155	45019	45	19	Charleston County, South Carolina	56	Administrative and support and waste management and remediation services	56	708.6	16125.2	471953.0
-156	45019	45	19	Charleston County, South Carolina	61	Educational services	61	170.0	3884.8	110884.0
-157	45019	45	19	Charleston County, South Carolina	62	Health care and social assistance	62	1305.0	30187.2	1541155.4
-158	45019	45	19	Charleston County, South Carolina	71	Arts, entertainment, and recreation	71	219.0	3864.6	69510.6
-159	45019	45	19	Charleston County, South Carolina	72	Accommodation and food services	72	1271.8	30519.4	583982.2
-160	45019	45	19	Charleston County, South Carolina	81	Other services (except public administration)	81	1092.4	8914.4	242488.2
-161	45019	45	19	Charleston County, South Carolina	99	Industries not classified	99	20.4	29.4	605.2
-162	45021	45	21	Cherokee County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	2.8	1.6	44.6
-163	45021	45	21	Cherokee County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.8	11.2	1037.4
-164	45021	45	21	Cherokee County, South Carolina	22	Utilities	22	9.4	76.4	7020.8
-165	45021	45	21	Cherokee County, South Carolina	23	Construction	23	79.0	674.2	28706.0
-166	45021	45	21	Cherokee County, South Carolina	42	Wholesale trade	42	22.0	410.2	13138.0
-167	45021	45	21	Cherokee County, South Carolina	51	Information	51	9.0	87.8	2067.0
-168	45021	45	21	Cherokee County, South Carolina	52	Finance and insurance	52	64.6	306.6	12443.6
-169	45021	45	21	Cherokee County, South Carolina	53	Real estate and rental and leasing	53	38.8	107.0	2992.0
-170	45021	45	21	Cherokee County, South Carolina	54	Professional, scientific, and technical services	54	46.6	188.2	6536.4
-171	45021	45	21	Cherokee County, South Carolina	55	Management of companies and enterprises	55	7.0	116.8	5822.6
-172	45021	45	21	Cherokee County, South Carolina	56	Administrative and support and waste management and remediation services	56	30.2	1146.2	26742.0
-174	45021	45	21	Cherokee County, South Carolina	62	Health care and social assistance	62	75.8	1209.4	38693.6
-175	45021	45	21	Cherokee County, South Carolina	71	Arts, entertainment, and recreation	71	13.6	165.2	4072.0
-176	45021	45	21	Cherokee County, South Carolina	72	Accommodation and food services	72	91.6	1726.2	22432.2
-177	45021	45	21	Cherokee County, South Carolina	81	Other services (except public administration)	81	152.8	718.8	13585.2
-179	45023	45	23	Chester County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	5.6	62.4	2962.2
-181	45023	45	23	Chester County, South Carolina	23	Construction	23	42.4	366.8	15687.8
-182	45023	45	23	Chester County, South Carolina	42	Wholesale trade	42	13.8	256.2	13734.8
-183	45023	45	23	Chester County, South Carolina	51	Information	51	6.8	31.4	1756.2
-184	45023	45	23	Chester County, South Carolina	52	Finance and insurance	52	33.8	151.0	5533.4
-185	45023	45	23	Chester County, South Carolina	53	Real estate and rental and leasing	53	12.2	8.2	777.8
-186	45023	45	23	Chester County, South Carolina	54	Professional, scientific, and technical services	54	29.0	137.0	4881.0
-188	45023	45	23	Chester County, South Carolina	56	Administrative and support and waste management and remediation services	56	24.0	105.6	3348.8
-189	45023	45	23	Chester County, South Carolina	61	Educational services	61	2.8	3.2	48.0
-190	45023	45	23	Chester County, South Carolina	62	Health care and social assistance	62	48.4	251.2	25399.8
-191	45023	45	23	Chester County, South Carolina	71	Arts, entertainment, and recreation	71	6.0	40.2	1042.8
-192	45023	45	23	Chester County, South Carolina	72	Accommodation and food services	72	43.8	604.0	7491.8
-193	45023	45	23	Chester County, South Carolina	81	Other services (except public administration)	81	78.6	275.8	5514.2
-194	45023	45	23	Chester County, South Carolina	99	Industries not classified	99	2.2	2.0	12.8
-195	45025	45	25	Chesterfield County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	5.8	122.8	3486.8
-196	45025	45	25	Chesterfield County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	5.6	71.8	2176.8
-197	45025	45	25	Chesterfield County, South Carolina	22	Utilities	22	5.0	96.2	5718.6
-198	45025	45	25	Chesterfield County, South Carolina	23	Construction	23	52.8	494.0	20374.4
-199	45025	45	25	Chesterfield County, South Carolina	42	Wholesale trade	42	28.2	262.4	9259.0
-200	45025	45	25	Chesterfield County, South Carolina	51	Information	51	6.2	16.0	854.6
-201	45025	45	25	Chesterfield County, South Carolina	52	Finance and insurance	52	53.2	210.8	7452.2
-202	45025	45	25	Chesterfield County, South Carolina	53	Real estate and rental and leasing	53	13.6	13.6	500.6
-203	45025	45	25	Chesterfield County, South Carolina	54	Professional, scientific, and technical services	54	26.0	80.0	2221.0
-205	45025	45	25	Chesterfield County, South Carolina	56	Administrative and support and waste management and remediation services	56	18.0	208.0	6799.8
-207	45025	45	25	Chesterfield County, South Carolina	62	Health care and social assistance	62	92.4	1673.6	46868.6
-208	45025	45	25	Chesterfield County, South Carolina	71	Arts, entertainment, and recreation	71	6.2	68.6	536.0
-209	45025	45	25	Chesterfield County, South Carolina	72	Accommodation and food services	72	63.4	874.4	10361.8
-210	45025	45	25	Chesterfield County, South Carolina	81	Other services (except public administration)	81	83.6	336.8	5711.2
-211	45025	45	25	Chesterfield County, South Carolina	99	Industries not classified	99	2.6	1.4	39.4
-212	45027	45	27	Clarendon County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	9.6	173.6	5799.8
-213	45027	45	27	Clarendon County, South Carolina	22	Utilities	22	3.0	3.0	76.8
-214	45027	45	27	Clarendon County, South Carolina	23	Construction	23	26.8	89.6	3260.2
-215	45027	45	27	Clarendon County, South Carolina	42	Wholesale trade	42	15.8	92.4	3723.6
-216	45027	45	27	Clarendon County, South Carolina	51	Information	51	3.0	9.6	194.2
-217	45027	45	27	Clarendon County, South Carolina	52	Finance and insurance	52	43.0	235.8	8721.8
-218	45027	45	27	Clarendon County, South Carolina	53	Real estate and rental and leasing	53	13.6	16.8	795.8
-219	45027	45	27	Clarendon County, South Carolina	54	Professional, scientific, and technical services	54	19.8	56.0	5418.0
-220	45027	45	27	Clarendon County, South Carolina	56	Administrative and support and waste management and remediation services	56	19.4	78.2	2643.4
-221	45027	45	27	Clarendon County, South Carolina	61	Educational services	61	5.4	16.2	298.8
-222	45027	45	27	Clarendon County, South Carolina	62	Health care and social assistance	62	40.4	617.6	19587.4
-223	45027	45	27	Clarendon County, South Carolina	71	Arts, entertainment, and recreation	71	8.0	59.6	1087.8
-224	45027	45	27	Clarendon County, South Carolina	72	Accommodation and food services	72	54.6	656.6	7760.4
-225	45027	45	27	Clarendon County, South Carolina	81	Other services (except public administration)	81	62.6	325.8	6137.0
-227	45029	45	29	Colleton County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	31.4	339.8	12475.0
-230	45029	45	29	Colleton County, South Carolina	23	Construction	23	63.0	330.2	11480.8
-231	45029	45	29	Colleton County, South Carolina	42	Wholesale trade	42	31.6	251.8	11555.6
-232	45029	45	29	Colleton County, South Carolina	51	Information	51	9.2	99.2	7611.2
-233	45029	45	29	Colleton County, South Carolina	52	Finance and insurance	52	56.6	268.6	10274.6
-234	45029	45	29	Colleton County, South Carolina	53	Real estate and rental and leasing	53	42.8	126.2	4050.2
-235	45029	45	29	Colleton County, South Carolina	54	Professional, scientific, and technical services	54	44.2	221.6	11646.4
-236	45029	45	29	Colleton County, South Carolina	56	Administrative and support and waste management and remediation services	56	31.0	201.4	5456.6
-237	45029	45	29	Colleton County, South Carolina	61	Educational services	61	7.2	70.4	1870.2
-238	45029	45	29	Colleton County, South Carolina	62	Health care and social assistance	62	70.4	1370.6	58785.2
-239	45029	45	29	Colleton County, South Carolina	71	Arts, entertainment, and recreation	71	8.4	102.0	3055.2
-240	45029	45	29	Colleton County, South Carolina	72	Accommodation and food services	72	71.2	1274.0	20663.4
-241	45029	45	29	Colleton County, South Carolina	81	Other services (except public administration)	81	71.0	275.8	4514.2
-243	45031	45	31	Darlington County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	11.0	40.8	1890.4
-244	45031	45	31	Darlington County, South Carolina	22	Utilities	22	10.6	176.6	19805.0
-245	45031	45	31	Darlington County, South Carolina	23	Construction	23	71.0	866.0	28631.4
-246	45031	45	31	Darlington County, South Carolina	42	Wholesale trade	42	75.2	725.8	35471.2
-247	45031	45	31	Darlington County, South Carolina	51	Information	51	11.4	78.4	3537.4
-248	45031	45	31	Darlington County, South Carolina	52	Finance and insurance	52	80.2	417.2	18200.8
-249	45031	45	31	Darlington County, South Carolina	53	Real estate and rental and leasing	53	36.0	31.2	3034.2
-250	45031	45	31	Darlington County, South Carolina	54	Professional, scientific, and technical services	54	59.8	249.2	8434.2
-251	45031	45	31	Darlington County, South Carolina	55	Management of companies and enterprises	55	14.6	625.6	109507.0
-252	45031	45	31	Darlington County, South Carolina	56	Administrative and support and waste management and remediation services	56	35.2	991.0	22544.6
-253	45031	45	31	Darlington County, South Carolina	61	Educational services	61	10.8	188.6	4790.2
-254	45031	45	31	Darlington County, South Carolina	62	Health care and social assistance	62	97.6	2461.6	78986.6
-255	45031	45	31	Darlington County, South Carolina	71	Arts, entertainment, and recreation	71	16.8	349.2	3771.2
-256	45031	45	31	Darlington County, South Carolina	72	Accommodation and food services	72	86.6	1293.0	15953.0
-257	45031	45	31	Darlington County, South Carolina	81	Other services (except public administration)	81	149.6	824.8	15645.6
-259	45033	45	33	Dillon County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	6.2	27.6	1150.4
-262	45033	45	33	Dillon County, South Carolina	23	Construction	23	26.8	75.8	3781.8
-263	45033	45	33	Dillon County, South Carolina	42	Wholesale trade	42	17.6	321.4	11556.4
-264	45033	45	33	Dillon County, South Carolina	51	Information	51	4.4	22.2	1159.2
-265	45033	45	33	Dillon County, South Carolina	52	Finance and insurance	52	43.4	186.0	6949.2
-266	45033	45	33	Dillon County, South Carolina	53	Real estate and rental and leasing	53	24.8	47.6	1207.0
-267	45033	45	33	Dillon County, South Carolina	54	Professional, scientific, and technical services	54	22.8	189.2	2629.8
-269	45033	45	33	Dillon County, South Carolina	56	Administrative and support and waste management and remediation services	56	12.2	31.6	9993.0
-271	45033	45	33	Dillon County, South Carolina	62	Health care and social assistance	62	48.6	1165.2	39867.2
-272	45033	45	33	Dillon County, South Carolina	71	Arts, entertainment, and recreation	71	3.6	1.4	10.2
-273	45033	45	33	Dillon County, South Carolina	72	Accommodation and food services	72	55.6	821.4	9591.6
-274	45033	45	33	Dillon County, South Carolina	81	Other services (except public administration)	81	61.6	247.0	4470.4
-276	45035	45	35	Dorchester County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	14.4	51.2	9199.6
-277	45035	45	35	Dorchester County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	3.6	25.6	1823.4
-279	45035	45	35	Dorchester County, South Carolina	23	Construction	23	250.6	1605.2	62281.2
-280	45035	45	35	Dorchester County, South Carolina	42	Wholesale trade	42	86.0	664.0	36044.8
-281	45035	45	35	Dorchester County, South Carolina	51	Information	51	25.2	270.8	13772.2
-282	45035	45	35	Dorchester County, South Carolina	52	Finance and insurance	52	155.6	701.8	28946.2
-283	45035	45	35	Dorchester County, South Carolina	53	Real estate and rental and leasing	53	115.2	359.8	12524.6
-284	45035	45	35	Dorchester County, South Carolina	54	Professional, scientific, and technical services	54	195.2	886.6	41620.8
-285	45035	45	35	Dorchester County, South Carolina	55	Management of companies and enterprises	55	8.4	110.0	6813.2
-286	45035	45	35	Dorchester County, South Carolina	56	Administrative and support and waste management and remediation services	56	150.6	2517.8	81111.0
-287	45035	45	35	Dorchester County, South Carolina	61	Educational services	61	21.2	412.0	8951.6
-288	45035	45	35	Dorchester County, South Carolina	62	Health care and social assistance	62	227.4	2912.4	92867.4
-289	45035	45	35	Dorchester County, South Carolina	71	Arts, entertainment, and recreation	71	31.4	716.4	8811.8
-290	45035	45	35	Dorchester County, South Carolina	72	Accommodation and food services	72	182.8	3104.0	42319.8
-291	45035	45	35	Dorchester County, South Carolina	81	Other services (except public administration)	81	243.2	1546.2	36294.6
-292	45035	45	35	Dorchester County, South Carolina	99	Industries not classified	99	3.2	1.4	21.0
-293	45037	45	37	Edgefield County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	12.6	119.2	4702.4
-296	45037	45	37	Edgefield County, South Carolina	23	Construction	23	37.2	198.0	7234.0
-297	45037	45	37	Edgefield County, South Carolina	42	Wholesale trade	42	10.4	217.6	14138.2
-298	45037	45	37	Edgefield County, South Carolina	51	Information	51	4.0	10.8	348.4
-299	45037	45	37	Edgefield County, South Carolina	52	Finance and insurance	52	17.8	56.6	2162.6
-300	45037	45	37	Edgefield County, South Carolina	53	Real estate and rental and leasing	53	7.8	25.2	610.6
-301	45037	45	37	Edgefield County, South Carolina	54	Professional, scientific, and technical services	54	18.0	53.2	1839.8
-303	45037	45	37	Edgefield County, South Carolina	56	Administrative and support and waste management and remediation services	56	19.8	152.6	4393.4
-305	45037	45	37	Edgefield County, South Carolina	62	Health care and social assistance	62	21.4	517.4	14991.2
-306	45037	45	37	Edgefield County, South Carolina	71	Arts, entertainment, and recreation	71	4.2	44.2	771.2
-307	45037	45	37	Edgefield County, South Carolina	72	Accommodation and food services	72	22.2	218.0	2462.2
-308	45037	45	37	Edgefield County, South Carolina	81	Other services (except public administration)	81	49.8	198.2	7522.6
-309	45039	45	39	Fairfield County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	3.4	14.2	1264.0
-312	45039	45	39	Fairfield County, South Carolina	23	Construction	23	21.0	24.8	2410.8
-314	45039	45	39	Fairfield County, South Carolina	51	Information	51	4.2	0.0	281.6
-315	45039	45	39	Fairfield County, South Carolina	52	Finance and insurance	52	19.6	50.0	2261.6
-316	45039	45	39	Fairfield County, South Carolina	53	Real estate and rental and leasing	53	11.8	8.6	758.4
-319	45039	45	39	Fairfield County, South Carolina	56	Administrative and support and waste management and remediation services	56	12.4	90.6	4811.8
-320	45039	45	39	Fairfield County, South Carolina	61	Educational services	61	3.2	19.8	859.2
-321	45039	45	39	Fairfield County, South Carolina	62	Health care and social assistance	62	23.4	632.4	18494.6
-323	45039	45	39	Fairfield County, South Carolina	72	Accommodation and food services	72	20.0	212.0	2462.6
-324	45039	45	39	Fairfield County, South Carolina	81	Other services (except public administration)	81	42.0	122.6	2172.0
-326	45041	45	41	Florence County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	17.6	170.6	6778.0
-328	45041	45	41	Florence County, South Carolina	22	Utilities	22	11.6	89.4	9934.0
-329	45041	45	41	Florence County, South Carolina	23	Construction	23	184.0	1435.0	55643.4
-330	45041	45	41	Florence County, South Carolina	42	Wholesale trade	42	172.4	2754.8	125999.4
-331	45041	45	41	Florence County, South Carolina	51	Information	51	38.0	548.4	19613.4
-332	45041	45	41	Florence County, South Carolina	52	Finance and insurance	52	255.0	4200.8	171931.4
-333	45041	45	41	Florence County, South Carolina	53	Real estate and rental and leasing	53	124.2	517.6	19581.0
-334	45041	45	41	Florence County, South Carolina	54	Professional, scientific, and technical services	54	207.4	2392.0	109950.4
-335	45041	45	41	Florence County, South Carolina	55	Management of companies and enterprises	55	13.8	85.4	10187.2
-336	45041	45	41	Florence County, South Carolina	56	Administrative and support and waste management and remediation services	56	149.6	3986.2	82045.8
-337	45041	45	41	Florence County, South Carolina	61	Educational services	61	29.2	435.2	8703.8
-338	45041	45	41	Florence County, South Carolina	62	Health care and social assistance	62	359.2	13349.2	624253.4
-339	45041	45	41	Florence County, South Carolina	71	Arts, entertainment, and recreation	71	27.2	510.4	7332.2
-340	45041	45	41	Florence County, South Carolina	72	Accommodation and food services	72	307.2	6014.8	82451.0
-341	45041	45	41	Florence County, South Carolina	81	Other services (except public administration)	81	328.2	2728.6	67026.8
-342	45041	45	41	Florence County, South Carolina	99	Industries not classified	99	5.0	5.2	66.0
-343	45043	45	43	Georgetown County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	35.6	431.8	16515.4
-346	45043	45	43	Georgetown County, South Carolina	23	Construction	23	157.4	935.0	35274.4
-347	45043	45	43	Georgetown County, South Carolina	42	Wholesale trade	42	45.8	353.0	13822.0
-348	45043	45	43	Georgetown County, South Carolina	51	Information	51	17.4	100.0	6265.4
-349	45043	45	43	Georgetown County, South Carolina	52	Finance and insurance	52	100.8	514.4	25411.6
-350	45043	45	43	Georgetown County, South Carolina	53	Real estate and rental and leasing	53	86.6	457.2	15957.6
-351	45043	45	43	Georgetown County, South Carolina	54	Professional, scientific, and technical services	54	172.2	768.2	37933.6
-352	45043	45	43	Georgetown County, South Carolina	55	Management of companies and enterprises	55	3.6	2.6	644.6
-353	45043	45	43	Georgetown County, South Carolina	56	Administrative and support and waste management and remediation services	56	111.8	827.2	24044.8
-354	45043	45	43	Georgetown County, South Carolina	61	Educational services	61	13.6	100.4	1693.6
-355	45043	45	43	Georgetown County, South Carolina	62	Health care and social assistance	62	236.4	3640.0	161892.8
-356	45043	45	43	Georgetown County, South Carolina	71	Arts, entertainment, and recreation	71	51.0	1164.4	22683.0
-357	45043	45	43	Georgetown County, South Carolina	72	Accommodation and food services	72	166.6	2939.2	52897.4
-358	45043	45	43	Georgetown County, South Carolina	81	Other services (except public administration)	81	193.8	1059.6	22995.0
-359	45043	45	43	Georgetown County, South Carolina	99	Industries not classified	99	2.4	1.2	33.0
-360	45045	45	45	Greenville County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	9.6	15.6	922.4
-362	45045	45	45	Greenville County, South Carolina	22	Utilities	22	15.6	169.8	20983.2
-363	45045	45	45	Greenville County, South Carolina	23	Construction	23	1014.2	9867.0	493746.2
-364	45045	45	45	Greenville County, South Carolina	42	Wholesale trade	42	817.8	11636.2	676913.8
-365	45045	45	45	Greenville County, South Carolina	51	Information	51	205.8	6598.0	381052.4
-366	45045	45	45	Greenville County, South Carolina	52	Finance and insurance	52	960.4	8493.4	555933.2
-367	45045	45	45	Greenville County, South Carolina	53	Real estate and rental and leasing	53	591.2	2696.2	119017.6
-368	45045	45	45	Greenville County, South Carolina	54	Professional, scientific, and technical services	54	1585.6	15653.8	1030350.4
-369	45045	45	45	Greenville County, South Carolina	55	Management of companies and enterprises	55	106.6	7204.4	542236.2
-370	45045	45	45	Greenville County, South Carolina	56	Administrative and support and waste management and remediation services	56	752.6	27438.2	873427.8
-371	45045	45	45	Greenville County, South Carolina	61	Educational services	61	182.0	7970.0	187657.6
-372	45045	45	45	Greenville County, South Carolina	62	Health care and social assistance	62	1102.0	25605.2	1191220.4
-373	45045	45	45	Greenville County, South Carolina	71	Arts, entertainment, and recreation	71	176.6	2647.6	48867.0
-374	45045	45	45	Greenville County, South Carolina	72	Accommodation and food services	72	1109.2	21926.8	330951.4
-375	45045	45	45	Greenville County, South Carolina	81	Other services (except public administration)	81	1192.0	10112.0	261889.2
-376	45045	45	45	Greenville County, South Carolina	99	Industries not classified	99	16.8	11.4	240.0
-377	45047	45	47	Greenwood County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	6.8	46.8	1956.2
-380	45047	45	47	Greenwood County, South Carolina	23	Construction	23	100.0	840.6	31715.2
-381	45047	45	47	Greenwood County, South Carolina	42	Wholesale trade	42	55.2	603.4	27847.6
-382	45047	45	47	Greenwood County, South Carolina	51	Information	51	14.6	240.4	8644.0
-383	45047	45	47	Greenwood County, South Carolina	52	Finance and insurance	52	103.0	515.6	22560.6
-384	45047	45	47	Greenwood County, South Carolina	53	Real estate and rental and leasing	53	48.0	167.2	4677.6
-385	45047	45	47	Greenwood County, South Carolina	54	Professional, scientific, and technical services	54	111.2	1005.8	51262.4
-386	45047	45	47	Greenwood County, South Carolina	55	Management of companies and enterprises	55	10.8	125.4	21482.6
-387	45047	45	47	Greenwood County, South Carolina	56	Administrative and support and waste management and remediation services	56	58.0	1287.2	33035.0
-388	45047	45	47	Greenwood County, South Carolina	61	Educational services	61	8.4	116.4	1762.8
-389	45047	45	47	Greenwood County, South Carolina	62	Health care and social assistance	62	142.4	4498.2	195050.4
-390	45047	45	47	Greenwood County, South Carolina	71	Arts, entertainment, and recreation	71	19.2	205.6	3323.8
-391	45047	45	47	Greenwood County, South Carolina	72	Accommodation and food services	72	130.2	2342.8	30072.6
-392	45047	45	47	Greenwood County, South Carolina	81	Other services (except public administration)	81	161.0	1028.2	18247.4
-394	45049	45	49	Hampton County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	15.8	170.6	7369.6
-396	45049	45	49	Hampton County, South Carolina	23	Construction	23	27.6	157.4	5097.6
-397	45049	45	49	Hampton County, South Carolina	42	Wholesale trade	42	9.4	208.6	11539.8
-398	45049	45	49	Hampton County, South Carolina	51	Information	51	4.8	4.0	227.6
-399	45049	45	49	Hampton County, South Carolina	52	Finance and insurance	52	23.0	124.6	5298.6
-400	45049	45	49	Hampton County, South Carolina	53	Real estate and rental and leasing	53	6.8	13.2	891.6
-401	45049	45	49	Hampton County, South Carolina	54	Professional, scientific, and technical services	54	14.8	96.8	15680.2
-403	45049	45	49	Hampton County, South Carolina	56	Administrative and support and waste management and remediation services	56	10.4	43.0	1349.4
-405	45049	45	49	Hampton County, South Carolina	62	Health care and social assistance	62	26.2	437.6	13294.0
-407	45049	45	49	Hampton County, South Carolina	72	Accommodation and food services	72	31.6	348.2	3826.0
-408	45049	45	49	Hampton County, South Carolina	81	Other services (except public administration)	81	45.8	202.4	2772.0
-409	45049	45	49	Hampton County, South Carolina	99	Industries not classified	99	1.75	0.5	12.0
-410	45051	45	51	Horry County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	15.8	84.4	2692.6
-411	45051	45	51	Horry County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	3.4	10.8	412.4
-412	45051	45	51	Horry County, South Carolina	22	Utilities	22	6.2	212.4	12878.2
-413	45051	45	51	Horry County, South Carolina	23	Construction	23	839.0	5247.2	193236.2
-414	45051	45	51	Horry County, South Carolina	42	Wholesale trade	42	264.2	2319.4	93136.4
-415	45051	45	51	Horry County, South Carolina	51	Information	51	97.6	2144.2	93396.6
-416	45051	45	51	Horry County, South Carolina	52	Finance and insurance	52	447.8	3545.2	169194.2
-417	45051	45	51	Horry County, South Carolina	53	Real estate and rental and leasing	53	612.2	4768.0	151293.0
-418	45051	45	51	Horry County, South Carolina	54	Professional, scientific, and technical services	54	692.8	3288.6	138120.4
-419	45051	45	51	Horry County, South Carolina	55	Management of companies and enterprises	55	38.0	872.6	45712.6
-420	45051	45	51	Horry County, South Carolina	56	Administrative and support and waste management and remediation services	56	503.8	5544.0	132853.0
-421	45051	45	51	Horry County, South Carolina	61	Educational services	61	61.8	660.2	16864.8
-422	45051	45	51	Horry County, South Carolina	62	Health care and social assistance	62	670.4	10756.6	490942.2
-423	45051	45	51	Horry County, South Carolina	71	Arts, entertainment, and recreation	71	234.6	4447.4	87780.6
-424	45051	45	51	Horry County, South Carolina	72	Accommodation and food services	72	1243.4	26932.2	511688.0
-425	45051	45	51	Horry County, South Carolina	81	Other services (except public administration)	81	701.8	4078.8	98688.8
-426	45051	45	51	Horry County, South Carolina	99	Industries not classified	99	6.8	4.6	96.8
-427	45053	45	53	Jasper County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	8.0	50.4	2323.0
-430	45053	45	53	Jasper County, South Carolina	23	Construction	23	92.8	675.8	28933.0
-431	45053	45	53	Jasper County, South Carolina	42	Wholesale trade	42	29.2	459.4	26244.4
-433	45053	45	53	Jasper County, South Carolina	52	Finance and insurance	52	21.6	39.0	5111.0
-434	45053	45	53	Jasper County, South Carolina	53	Real estate and rental and leasing	53	22.0	60.8	3520.2
-435	45053	45	53	Jasper County, South Carolina	54	Professional, scientific, and technical services	54	29.0	160.2	6680.6
-437	45053	45	53	Jasper County, South Carolina	56	Administrative and support and waste management and remediation services	56	47.6	411.8	14724.8
-438	45053	45	53	Jasper County, South Carolina	61	Educational services	61	5.8	138.0	3961.0
-439	45053	45	53	Jasper County, South Carolina	62	Health care and social assistance	62	44.0	1038.8	32643.0
-440	45053	45	53	Jasper County, South Carolina	71	Arts, entertainment, and recreation	71	4.6	61.4	1640.8
-441	45053	45	53	Jasper County, South Carolina	72	Accommodation and food services	72	61.4	701.6	9931.4
-442	45053	45	53	Jasper County, South Carolina	81	Other services (except public administration)	81	62.8	279.4	6455.2
-444	45055	45	55	Kershaw County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	19.6	97.2	2704.4
-446	45055	45	55	Kershaw County, South Carolina	22	Utilities	22	4.8	29.2	1851.4
-447	45055	45	55	Kershaw County, South Carolina	23	Construction	23	121.4	679.2	22571.4
-448	45055	45	55	Kershaw County, South Carolina	42	Wholesale trade	42	23.0	63.4	5558.8
-450	45055	45	55	Kershaw County, South Carolina	52	Finance and insurance	52	85.8	512.2	20479.6
-451	45055	45	55	Kershaw County, South Carolina	53	Real estate and rental and leasing	53	33.2	86.0	3078.6
-452	45055	45	55	Kershaw County, South Carolina	54	Professional, scientific, and technical services	54	79.4	387.4	13361.4
-453	45055	45	55	Kershaw County, South Carolina	55	Management of companies and enterprises	55	5.6	80.0	7767.8
-454	45055	45	55	Kershaw County, South Carolina	56	Administrative and support and waste management and remediation services	56	57.6	702.6	18615.4
-455	45055	45	55	Kershaw County, South Carolina	61	Educational services	61	17.8	197.6	4899.2
-456	45055	45	55	Kershaw County, South Carolina	62	Health care and social assistance	62	98.0	2186.8	83285.4
-457	45055	45	55	Kershaw County, South Carolina	71	Arts, entertainment, and recreation	71	24.4	171.4	3392.6
-458	45055	45	55	Kershaw County, South Carolina	72	Accommodation and food services	72	93.6	1371.0	16987.0
-459	45055	45	55	Kershaw County, South Carolina	81	Other services (except public administration)	81	141.8	804.8	16542.4
-460	45055	45	55	Kershaw County, South Carolina	99	Industries not classified	99	2.8	0.8	26.2
-461	45057	45	57	Lancaster County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	4.6	26.8	785.6
-462	45057	45	57	Lancaster County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.6	19.2	2723.0
-464	45057	45	57	Lancaster County, South Carolina	23	Construction	23	108.0	705.8	27848.0
-465	45057	45	57	Lancaster County, South Carolina	42	Wholesale trade	42	58.8	964.6	44810.4
-466	45057	45	57	Lancaster County, South Carolina	51	Information	51	18.8	472.6	36034.6
-467	45057	45	57	Lancaster County, South Carolina	52	Finance and insurance	52	98.4	954.6	57811.8
-468	45057	45	57	Lancaster County, South Carolina	53	Real estate and rental and leasing	53	50.0	124.8	5377.8
-469	45057	45	57	Lancaster County, South Carolina	54	Professional, scientific, and technical services	54	95.0	607.0	35514.2
-470	45057	45	57	Lancaster County, South Carolina	55	Management of companies and enterprises	55	5.8	623.0	60020.8
-471	45057	45	57	Lancaster County, South Carolina	56	Administrative and support and waste management and remediation services	56	61.8	1168.6	39623.0
-472	45057	45	57	Lancaster County, South Carolina	61	Educational services	61	7.0	23.4	820.2
-473	45057	45	57	Lancaster County, South Carolina	62	Health care and social assistance	62	139.0	2414.6	99573.4
-474	45057	45	57	Lancaster County, South Carolina	71	Arts, entertainment, and recreation	71	13.6	134.8	2016.8
-475	45057	45	57	Lancaster County, South Carolina	72	Accommodation and food services	72	102.6	1808.8	22383.4
-476	45057	45	57	Lancaster County, South Carolina	81	Other services (except public administration)	81	195.4	1082.4	42890.4
-477	45057	45	57	Lancaster County, South Carolina	99	Industries not classified	99	3.4	2.8	26.6
-478	45059	45	59	Laurens County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	10.4	67.6	2624.4
-481	45059	45	59	Laurens County, South Carolina	23	Construction	23	71.4	450.6	16028.8
-482	45059	45	59	Laurens County, South Carolina	42	Wholesale trade	42	38.2	369.8	17553.2
-483	45059	45	59	Laurens County, South Carolina	51	Information	51	11.4	36.8	1655.6
-484	45059	45	59	Laurens County, South Carolina	52	Finance and insurance	52	67.6	384.4	14567.2
-485	45059	45	59	Laurens County, South Carolina	53	Real estate and rental and leasing	53	21.6	44.8	1247.0
-486	45059	45	59	Laurens County, South Carolina	54	Professional, scientific, and technical services	54	50.6	158.8	7372.0
-487	45059	45	59	Laurens County, South Carolina	55	Management of companies and enterprises	55	3.4	27.0	1575.2
-488	45059	45	59	Laurens County, South Carolina	56	Administrative and support and waste management and remediation services	56	29.8	214.6	5938.2
-490	45059	45	59	Laurens County, South Carolina	62	Health care and social assistance	62	83.4	1963.0	64025.0
-491	45059	45	59	Laurens County, South Carolina	71	Arts, entertainment, and recreation	71	10.4	212.0	2847.2
-492	45059	45	59	Laurens County, South Carolina	72	Accommodation and food services	72	86.8	1255.0	15544.4
-493	45059	45	59	Laurens County, South Carolina	81	Other services (except public administration)	81	140.2	605.0	12399.8
-494	45059	45	59	Laurens County, South Carolina	99	Industries not classified	99	18.8	13.8	156.2
-495	45061	45	61	Lee County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	5.2	32.4	985.0
-496	45061	45	61	Lee County, South Carolina	23	Construction	23	7.8	77.2	3493.4
-497	45061	45	61	Lee County, South Carolina	42	Wholesale trade	42	8.6	28.2	3102.6
-498	45061	45	61	Lee County, South Carolina	52	Finance and insurance	52	16.6	71.0	1833.6
-500	45061	45	61	Lee County, South Carolina	54	Professional, scientific, and technical services	54	11.8	35.8	1188.0
-502	45061	45	61	Lee County, South Carolina	56	Administrative and support and waste management and remediation services	56	10.2	106.0	4827.2
-503	45061	45	61	Lee County, South Carolina	61	Educational services	61	4.2	93.0	1883.8
-504	45061	45	61	Lee County, South Carolina	62	Health care and social assistance	62	15.0	245.6	6511.6
-505	45061	45	61	Lee County, South Carolina	71	Arts, entertainment, and recreation	71	2.2	0.0	25.4
-506	45061	45	61	Lee County, South Carolina	72	Accommodation and food services	72	18.4	287.0	3086.8
-507	45061	45	61	Lee County, South Carolina	81	Other services (except public administration)	81	25.4	76.2	1020.6
-509	45063	45	63	Lexington County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	12.4	82.2	3465.0
-510	45063	45	63	Lexington County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	7.4	115.0	6448.6
-511	45063	45	63	Lexington County, South Carolina	22	Utilities	22	46.4	387.4	35679.4
-512	45063	45	63	Lexington County, South Carolina	23	Construction	23	650.4	5204.2	221690.4
-513	45063	45	63	Lexington County, South Carolina	42	Wholesale trade	42	352.4	6959.6	391333.0
-514	45063	45	63	Lexington County, South Carolina	51	Information	51	71.6	1372.0	75180.6
-515	45063	45	63	Lexington County, South Carolina	52	Finance and insurance	52	442.2	3000.6	159616.4
-516	45063	45	63	Lexington County, South Carolina	53	Real estate and rental and leasing	53	269.4	1388.6	50207.0
-517	45063	45	63	Lexington County, South Carolina	54	Professional, scientific, and technical services	54	580.2	3364.6	159225.4
-518	45063	45	63	Lexington County, South Carolina	55	Management of companies and enterprises	55	40.0	1031.2	76603.4
-519	45063	45	63	Lexington County, South Carolina	56	Administrative and support and waste management and remediation services	56	372.8	7437.8	217463.2
-520	45063	45	63	Lexington County, South Carolina	61	Educational services	61	73.2	697.8	15698.0
-521	45063	45	63	Lexington County, South Carolina	62	Health care and social assistance	62	532.2	13047.2	457888.0
-522	45063	45	63	Lexington County, South Carolina	71	Arts, entertainment, and recreation	71	81.0	693.0	12651.4
-523	45063	45	63	Lexington County, South Carolina	72	Accommodation and food services	72	532.8	11097.0	146635.4
-524	45063	45	63	Lexington County, South Carolina	81	Other services (except public administration)	81	733.0	5232.4	140355.8
-525	45063	45	63	Lexington County, South Carolina	99	Industries not classified	99	6.6	5.6	165.6
-527	45065	45	65	McCormick County, South Carolina	23	Construction	23	6.6	27.2	857.0
-530	45065	45	65	McCormick County, South Carolina	52	Finance and insurance	52	8.4	20.4	644.8
-532	45065	45	65	McCormick County, South Carolina	54	Professional, scientific, and technical services	54	5.6	12.0	84.4
-533	45065	45	65	McCormick County, South Carolina	56	Administrative and support and waste management and remediation services	56	2.2	0.6	42.4
-535	45065	45	65	McCormick County, South Carolina	62	Health care and social assistance	62	9.4	208.6	5065.8
-537	45065	45	65	McCormick County, South Carolina	72	Accommodation and food services	72	8.4	14.8	184.0
-538	45065	45	65	McCormick County, South Carolina	81	Other services (except public administration)	81	14.2	95.6	3064.8
-539	45067	45	67	Marion County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	5.2	15.4	1524.0
-541	45067	45	67	Marion County, South Carolina	22	Utilities	22	3.8	22.4	1654.8
-542	45067	45	67	Marion County, South Carolina	23	Construction	23	33.8	128.4	3273.0
-543	45067	45	67	Marion County, South Carolina	42	Wholesale trade	42	23.6	401.0	17294.0
-544	45067	45	67	Marion County, South Carolina	51	Information	51	5.2	12.2	681.2
-545	45067	45	67	Marion County, South Carolina	52	Finance and insurance	52	47.6	257.2	10452.8
-546	45067	45	67	Marion County, South Carolina	53	Real estate and rental and leasing	53	13.4	30.2	1159.4
-547	45067	45	67	Marion County, South Carolina	54	Professional, scientific, and technical services	54	23.6	74.0	2018.8
-548	45067	45	67	Marion County, South Carolina	55	Management of companies and enterprises	55	4.0	17.0	851.4
-549	45067	45	67	Marion County, South Carolina	56	Administrative and support and waste management and remediation services	56	15.6	286.6	5831.4
-551	45067	45	67	Marion County, South Carolina	62	Health care and social assistance	62	57.6	504.8	19943.8
-552	45067	45	67	Marion County, South Carolina	71	Arts, entertainment, and recreation	71	4.0	10.4	185.0
-553	45067	45	67	Marion County, South Carolina	72	Accommodation and food services	72	42.4	764.0	8616.2
-554	45067	45	67	Marion County, South Carolina	81	Other services (except public administration)	81	68.4	281.6	4688.8
-556	45069	45	69	Marlboro County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	2.6	7.8	394.4
-559	45069	45	69	Marlboro County, South Carolina	23	Construction	23	14.8	126.8	5971.0
-560	45069	45	69	Marlboro County, South Carolina	42	Wholesale trade	42	11.6	79.2	4163.2
-561	45069	45	69	Marlboro County, South Carolina	51	Information	51	3.6	24.0	779.8
-562	45069	45	69	Marlboro County, South Carolina	52	Finance and insurance	52	34.6	117.2	3868.2
-563	45069	45	69	Marlboro County, South Carolina	53	Real estate and rental and leasing	53	12.2	23.4	589.4
-564	45069	45	69	Marlboro County, South Carolina	54	Professional, scientific, and technical services	54	14.2	53.2	1452.4
-565	45069	45	69	Marlboro County, South Carolina	56	Administrative and support and waste management and remediation services	56	3.2	3.2	12.8
-566	45069	45	69	Marlboro County, South Carolina	61	Educational services	61	3.0	9.2	208.0
-567	45069	45	69	Marlboro County, South Carolina	62	Health care and social assistance	62	43.0	1027.8	28024.8
-568	45069	45	69	Marlboro County, South Carolina	71	Arts, entertainment, and recreation	71	3.4	0.0	42.2
-569	45069	45	69	Marlboro County, South Carolina	72	Accommodation and food services	72	25.4	316.6	3895.8
-570	45069	45	69	Marlboro County, South Carolina	81	Other services (except public administration)	81	33.0	165.2	2239.4
-572	45071	45	71	Newberry County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	20.2	231.0	8657.4
-574	45071	45	71	Newberry County, South Carolina	23	Construction	23	67.4	573.6	21419.0
-575	45071	45	71	Newberry County, South Carolina	42	Wholesale trade	42	32.2	258.4	11518.6
-576	45071	45	71	Newberry County, South Carolina	51	Information	51	7.4	10.6	955.6
-577	45071	45	71	Newberry County, South Carolina	52	Finance and insurance	52	51.2	148.0	6389.2
-578	45071	45	71	Newberry County, South Carolina	53	Real estate and rental and leasing	53	18.2	64.8	2321.0
-579	45071	45	71	Newberry County, South Carolina	54	Professional, scientific, and technical services	54	43.6	147.8	4519.8
-580	45071	45	71	Newberry County, South Carolina	55	Management of companies and enterprises	55	3.0	19.4	1700.4
-581	45071	45	71	Newberry County, South Carolina	56	Administrative and support and waste management and remediation services	56	33.2	407.8	8491.2
-583	45071	45	71	Newberry County, South Carolina	62	Health care and social assistance	62	61.4	1304.4	44753.6
-584	45071	45	71	Newberry County, South Carolina	71	Arts, entertainment, and recreation	71	5.8	71.6	758.8
-585	45071	45	71	Newberry County, South Carolina	72	Accommodation and food services	72	61.2	881.4	11214.8
-586	45071	45	71	Newberry County, South Carolina	81	Other services (except public administration)	81	102.0	370.2	8335.6
-588	45073	45	73	Oconee County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	15.4	49.8	1580.0
-590	45073	45	73	Oconee County, South Carolina	23	Construction	23	185.2	921.6	29992.6
-591	45073	45	73	Oconee County, South Carolina	42	Wholesale trade	42	46.4	433.6	14049.0
-592	45073	45	73	Oconee County, South Carolina	51	Information	51	14.6	99.0	4431.4
-593	45073	45	73	Oconee County, South Carolina	52	Finance and insurance	52	91.0	443.4	20875.2
-594	45073	45	73	Oconee County, South Carolina	53	Real estate and rental and leasing	53	73.4	197.0	7037.8
-595	45073	45	73	Oconee County, South Carolina	54	Professional, scientific, and technical services	54	117.0	489.4	18320.8
-596	45073	45	73	Oconee County, South Carolina	55	Management of companies and enterprises	55	6.4	30.6	3075.2
-597	45073	45	73	Oconee County, South Carolina	56	Administrative and support and waste management and remediation services	56	74.2	1437.8	32763.4
-598	45073	45	73	Oconee County, South Carolina	61	Educational services	61	10.2	174.4	3530.4
-599	45073	45	73	Oconee County, South Carolina	62	Health care and social assistance	62	131.0	2538.6	92477.0
-600	45073	45	73	Oconee County, South Carolina	71	Arts, entertainment, and recreation	71	23.6	292.0	5632.4
-601	45073	45	73	Oconee County, South Carolina	72	Accommodation and food services	72	118.6	1705.0	22378.2
-602	45073	45	73	Oconee County, South Carolina	81	Other services (except public administration)	81	197.2	1232.2	26027.2
-603	45073	45	73	Oconee County, South Carolina	99	Industries not classified	99	4.6	3.4	88.6
-604	45075	45	75	Orangeburg County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	19.4	120.8	4401.0
-606	45075	45	75	Orangeburg County, South Carolina	22	Utilities	22	7.8	29.0	2335.4
-607	45075	45	75	Orangeburg County, South Carolina	23	Construction	23	95.6	571.8	22441.0
-608	45075	45	75	Orangeburg County, South Carolina	42	Wholesale trade	42	64.4	677.0	29249.6
-609	45075	45	75	Orangeburg County, South Carolina	51	Information	51	13.4	201.0	7606.2
-610	45075	45	75	Orangeburg County, South Carolina	52	Finance and insurance	52	105.6	682.8	28035.2
-611	45075	45	75	Orangeburg County, South Carolina	53	Real estate and rental and leasing	53	50.8	310.8	10347.4
-612	45075	45	75	Orangeburg County, South Carolina	54	Professional, scientific, and technical services	54	83.2	402.4	17847.6
-613	45075	45	75	Orangeburg County, South Carolina	55	Management of companies and enterprises	55	6.4	38.8	4019.2
-614	45075	45	75	Orangeburg County, South Carolina	56	Administrative and support and waste management and remediation services	56	59.4	838.8	16268.0
-615	45075	45	75	Orangeburg County, South Carolina	61	Educational services	61	18.0	736.8	24689.0
-616	45075	45	75	Orangeburg County, South Carolina	62	Health care and social assistance	62	205.4	4088.4	171888.0
-617	45075	45	75	Orangeburg County, South Carolina	71	Arts, entertainment, and recreation	71	18.8	334.4	4971.8
-618	45075	45	75	Orangeburg County, South Carolina	72	Accommodation and food services	72	170.4	3231.8	41485.8
-619	45075	45	75	Orangeburg County, South Carolina	81	Other services (except public administration)	81	206.6	951.8	18131.8
-620	45075	45	75	Orangeburg County, South Carolina	99	Industries not classified	99	3.0	7.2	33.2
-621	45077	45	77	Pickens County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	7.8	30.0	569.8
-623	45077	45	77	Pickens County, South Carolina	22	Utilities	22	2.8	28.2	3942.2
-624	45077	45	77	Pickens County, South Carolina	23	Construction	23	230.6	1124.2	41155.6
-625	45077	45	77	Pickens County, South Carolina	42	Wholesale trade	42	71.4	459.6	25841.8
-626	45077	45	77	Pickens County, South Carolina	51	Information	51	19.8	177.0	11041.2
-627	45077	45	77	Pickens County, South Carolina	52	Finance and insurance	52	137.2	623.6	30618.4
-628	45077	45	77	Pickens County, South Carolina	53	Real estate and rental and leasing	53	68.6	373.0	10322.6
-629	45077	45	77	Pickens County, South Carolina	54	Professional, scientific, and technical services	54	153.4	824.0	32176.8
-630	45077	45	77	Pickens County, South Carolina	55	Management of companies and enterprises	55	11.0	166.8	11347.8
-631	45077	45	77	Pickens County, South Carolina	56	Administrative and support and waste management and remediation services	56	81.2	2532.6	59165.0
-632	45077	45	77	Pickens County, South Carolina	61	Educational services	61	23.6	610.6	12508.0
-633	45077	45	77	Pickens County, South Carolina	62	Health care and social assistance	62	189.6	3598.6	125611.2
-634	45077	45	77	Pickens County, South Carolina	71	Arts, entertainment, and recreation	71	32.2	478.4	7231.4
-635	45077	45	77	Pickens County, South Carolina	72	Accommodation and food services	72	229.4	4572.6	60126.0
-636	45077	45	77	Pickens County, South Carolina	81	Other services (except public administration)	81	264.4	1634.6	31938.8
-637	45077	45	77	Pickens County, South Carolina	99	Industries not classified	99	2.0	1.5	39.5
-638	45079	45	79	Richland County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	14.0	92.0	4615.2
-639	45079	45	79	Richland County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	4.6	18.6	988.0
-640	45079	45	79	Richland County, South Carolina	22	Utilities	22	29.8	197.2	39621.4
-641	45079	45	79	Richland County, South Carolina	23	Construction	23	519.8	5216.4	246983.8
-642	45079	45	79	Richland County, South Carolina	42	Wholesale trade	42	419.0	7260.0	434077.2
-643	45079	45	79	Richland County, South Carolina	51	Information	51	155.4	3470.0	187643.0
-644	45079	45	79	Richland County, South Carolina	52	Finance and insurance	52	756.8	17817.2	1149916.8
-645	45079	45	79	Richland County, South Carolina	53	Real estate and rental and leasing	53	428.6	2824.0	132580.6
-646	45079	45	79	Richland County, South Carolina	54	Professional, scientific, and technical services	54	1185.0	11203.0	707699.8
-647	45079	45	79	Richland County, South Carolina	55	Management of companies and enterprises	55	61.8	2162.2	147170.6
-648	45079	45	79	Richland County, South Carolina	56	Administrative and support and waste management and remediation services	56	477.8	14009.0	348072.6
-649	45079	45	79	Richland County, South Carolina	61	Educational services	61	137.2	4632.2	119637.4
-650	45079	45	79	Richland County, South Carolina	62	Health care and social assistance	62	976.6	27081.2	1346826.8
-651	45079	45	79	Richland County, South Carolina	71	Arts, entertainment, and recreation	71	101.6	2084.8	38461.8
-652	45079	45	79	Richland County, South Carolina	72	Accommodation and food services	72	880.0	19005.4	275025.2
-653	45079	45	79	Richland County, South Carolina	81	Other services (except public administration)	81	978.4	8805.0	228332.8
-654	45079	45	79	Richland County, South Carolina	99	Industries not classified	99	13.2	8.0	340.6
-655	45081	45	81	Saluda County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	9.6	33.8	1258.0
-658	45081	45	81	Saluda County, South Carolina	23	Construction	23	29.0	117.8	7914.2
-659	45081	45	81	Saluda County, South Carolina	42	Wholesale trade	42	7.8	58.4	1459.0
-661	45081	45	81	Saluda County, South Carolina	52	Finance and insurance	52	13.8	26.8	1663.6
-662	45081	45	81	Saluda County, South Carolina	53	Real estate and rental and leasing	53	3.6	4.2	162.8
-663	45081	45	81	Saluda County, South Carolina	54	Professional, scientific, and technical services	54	15.6	55.6	2260.6
-664	45081	45	81	Saluda County, South Carolina	56	Administrative and support and waste management and remediation services	56	6.6	18.8	609.0
-666	45081	45	81	Saluda County, South Carolina	62	Health care and social assistance	62	22.4	426.4	13080.8
-667	45081	45	81	Saluda County, South Carolina	71	Arts, entertainment, and recreation	71	3.4	35.8	706.0
-668	45081	45	81	Saluda County, South Carolina	72	Accommodation and food services	72	14.6	123.2	1416.0
-669	45081	45	81	Saluda County, South Carolina	81	Other services (except public administration)	81	39.0	125.8	2094.8
-671	45083	45	83	Spartanburg County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	8.8	38.0	1471.2
-672	45083	45	83	Spartanburg County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	8.2	142.8	6984.2
-673	45083	45	83	Spartanburg County, South Carolina	22	Utilities	22	8.0	76.0	11552.4
-674	45083	45	83	Spartanburg County, South Carolina	23	Construction	23	498.0	5386.8	260399.4
-675	45083	45	83	Spartanburg County, South Carolina	42	Wholesale trade	42	445.6	7210.6	406163.8
-676	45083	45	83	Spartanburg County, South Carolina	51	Information	51	62.4	2490.2	104917.2
-677	45083	45	83	Spartanburg County, South Carolina	52	Finance and insurance	52	398.2	2073.2	113375.2
-678	45083	45	83	Spartanburg County, South Carolina	53	Real estate and rental and leasing	53	218.8	1122.6	47190.6
-679	45083	45	83	Spartanburg County, South Carolina	54	Professional, scientific, and technical services	54	454.6	4490.6	236887.2
-680	45083	45	83	Spartanburg County, South Carolina	55	Management of companies and enterprises	55	89.0	3624.2	366749.8
-681	45083	45	83	Spartanburg County, South Carolina	56	Administrative and support and waste management and remediation services	56	315.0	12364.0	339969.8
-682	45083	45	83	Spartanburg County, South Carolina	61	Educational services	61	56.0	2402.6	61353.6
-683	45083	45	83	Spartanburg County, South Carolina	62	Health care and social assistance	62	573.2	14785.6	690305.2
-684	45083	45	83	Spartanburg County, South Carolina	71	Arts, entertainment, and recreation	71	75.2	877.8	12555.4
-685	45083	45	83	Spartanburg County, South Carolina	72	Accommodation and food services	72	543.2	10493.4	142327.8
-686	45083	45	83	Spartanburg County, South Carolina	81	Other services (except public administration)	81	731.6	5346.0	132002.4
-687	45083	45	83	Spartanburg County, South Carolina	99	Industries not classified	99	7.8	6.4	199.0
-689	45085	45	85	Sumter County, South Carolina	22	Utilities	22	7.6	147.0	9164.0
-690	45085	45	85	Sumter County, South Carolina	23	Construction	23	140.8	2960.2	141547.8
-691	45085	45	85	Sumter County, South Carolina	42	Wholesale trade	42	71.2	735.2	34311.0
-692	45085	45	85	Sumter County, South Carolina	51	Information	51	15.8	393.6	28693.2
-693	45085	45	85	Sumter County, South Carolina	52	Finance and insurance	52	116.2	804.2	36140.4
-694	45085	45	85	Sumter County, South Carolina	53	Real estate and rental and leasing	53	72.2	263.2	6847.0
-695	45085	45	85	Sumter County, South Carolina	54	Professional, scientific, and technical services	54	127.2	809.6	36439.0
-696	45085	45	85	Sumter County, South Carolina	55	Management of companies and enterprises	55	7.8	130.6	7922.4
-697	45085	45	85	Sumter County, South Carolina	56	Administrative and support and waste management and remediation services	56	72.8	2404.4	58004.6
-698	45085	45	85	Sumter County, South Carolina	61	Educational services	61	25.8	676.0	17898.0
-699	45085	45	85	Sumter County, South Carolina	62	Health care and social assistance	62	188.4	5365.6	189160.8
-700	45085	45	85	Sumter County, South Carolina	71	Arts, entertainment, and recreation	71	16.4	149.8	2585.4
-701	45085	45	85	Sumter County, South Carolina	72	Accommodation and food services	72	170.4	3336.8	42318.4
-702	45085	45	85	Sumter County, South Carolina	81	Other services (except public administration)	81	232.0	1711.4	37261.4
-704	45087	45	87	Union County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	9.4	83.2	3280.0
-706	45087	45	87	Union County, South Carolina	22	Utilities	22	5.0	24.4	1437.4
-707	45087	45	87	Union County, South Carolina	23	Construction	23	26.0	115.0	3240.8
-708	45087	45	87	Union County, South Carolina	42	Wholesale trade	42	13.0	103.8	5333.0
-709	45087	45	87	Union County, South Carolina	51	Information	51	10.2	130.2	1715.0
-710	45087	45	87	Union County, South Carolina	52	Finance and insurance	52	35.2	194.2	6979.4
-711	45087	45	87	Union County, South Carolina	53	Real estate and rental and leasing	53	13.6	58.6	1590.4
-712	45087	45	87	Union County, South Carolina	54	Professional, scientific, and technical services	54	21.2	33.4	1719.6
-713	45087	45	87	Union County, South Carolina	55	Management of companies and enterprises	55	2.2	0.6	47.6
-714	45087	45	87	Union County, South Carolina	56	Administrative and support and waste management and remediation services	56	12.8	178.8	5018.2
-716	45087	45	87	Union County, South Carolina	62	Health care and social assistance	62	26.2	363.6	22610.2
-717	45087	45	87	Union County, South Carolina	71	Arts, entertainment, and recreation	71	3.6	6.4	54.0
-718	45087	45	87	Union County, South Carolina	72	Accommodation and food services	72	35.6	583.2	6472.0
-719	45087	45	87	Union County, South Carolina	81	Other services (except public administration)	81	79.4	337.2	5562.6
-721	45089	45	89	Williamsburg County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	14.8	69.0	3193.6
-723	45089	45	89	Williamsburg County, South Carolina	23	Construction	23	31.8	267.6	9794.4
-724	45089	45	89	Williamsburg County, South Carolina	42	Wholesale trade	42	23.8	137.4	9021.6
-726	45089	45	89	Williamsburg County, South Carolina	52	Finance and insurance	52	36.8	164.0	6756.8
-727	45089	45	89	Williamsburg County, South Carolina	53	Real estate and rental and leasing	53	15.6	13.0	666.6
-728	45089	45	89	Williamsburg County, South Carolina	54	Professional, scientific, and technical services	54	23.6	55.6	2911.2
-729	45089	45	89	Williamsburg County, South Carolina	55	Management of companies and enterprises	55	2.8	1.4	128.0
-730	45089	45	89	Williamsburg County, South Carolina	56	Administrative and support and waste management and remediation services	56	25.0	586.8	12336.2
-732	45089	45	89	Williamsburg County, South Carolina	62	Health care and social assistance	62	50.6	818.8	22884.2
-733	45089	45	89	Williamsburg County, South Carolina	71	Arts, entertainment, and recreation	71	4.4	4.4	67.6
-734	45089	45	89	Williamsburg County, South Carolina	72	Accommodation and food services	72	28.2	336.0	3771.4
-735	45089	45	89	Williamsburg County, South Carolina	81	Other services (except public administration)	81	67.6	189.8	3285.4
-736	45089	45	89	Williamsburg County, South Carolina	99	Industries not classified	99	3.2	2.6	50.0
-737	45091	45	91	York County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	12.0	63.2	1874.2
-738	45091	45	91	York County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	5.0	37.6	1821.2
-740	45091	45	91	York County, South Carolina	23	Construction	23	420.0	2962.0	126174.8
-741	45091	45	91	York County, South Carolina	42	Wholesale trade	42	284.4	4494.8	258846.0
-742	45091	45	91	York County, South Carolina	51	Information	51	72.0	610.0	37219.4
-743	45091	45	91	York County, South Carolina	52	Finance and insurance	52	336.6	4960.8	271210.8
-744	45091	45	91	York County, South Carolina	53	Real estate and rental and leasing	53	220.8	755.2	33274.6
-745	45091	45	91	York County, South Carolina	54	Professional, scientific, and technical services	54	490.2	2615.6	128194.8
-746	45091	45	91	York County, South Carolina	55	Management of companies and enterprises	55	24.2	1858.4	188960.6
-747	45091	45	91	York County, South Carolina	56	Administrative and support and waste management and remediation services	56	256.0	4196.6	121859.4
-748	45091	45	91	York County, South Carolina	61	Educational services	61	52.6	656.2	18178.2
-749	45091	45	91	York County, South Carolina	62	Health care and social assistance	62	470.0	9029.0	329953.8
-750	45091	45	91	York County, South Carolina	71	Arts, entertainment, and recreation	71	73.6	1211.2	20668.8
-751	45091	45	91	York County, South Carolina	72	Accommodation and food services	72	401.6	7905.0	108054.6
-752	45091	45	91	York County, South Carolina	81	Other services (except public administration)	81	530.0	4155.4	107374.6
-753	45091	45	91	York County, South Carolina	99	Industries not classified	99	7.2	6.8	139.0
-0	45001	45	1	Abbeville County, South Carolina	22	Utilities	22	2.4	82.20998278829603	7180.450258175559
-1	45001	45	1	Abbeville County, South Carolina	99	Industries not classified	99	1.25	1.0367298578199051	25.500592417061608
-2	45005	45	5	Allendale County, South Carolina	53	Real estate and rental and leasing	53	3.0	14.66373098478783	573.7970776621297
-3	45005	45	5	Allendale County, South Carolina	61	Educational services	61	1.0	27.174237170596395	680.0521844660194
-4	45005	45	5	Allendale County, South Carolina	71	Arts, entertainment, and recreation	71	2.8	45.45803526448363	848.6394458438286
-5	45009	45	9	Bamberg County, South Carolina	22	Utilities	22	3.0	102.76247848537004	8975.562822719448
-6	45009	45	9	Bamberg County, South Carolina	55	Management of companies and enterprises	55	1.0	39.1541836414917	3150.67784393607
-7	45009	45	9	Bamberg County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-8	45011	45	11	Barnwell County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-9	45011	45	11	Barnwell County, South Carolina	22	Utilities	22	4.0	137.01663798049339	11967.417096959265
-10	45013	45	13	Beaufort County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-11	45015	45	15	Berkeley County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.8	37.249122807017535	2142.575438596491
-12	45015	45	15	Berkeley County, South Carolina	22	Utilities	22	7.8	267.18244406196214	23336.463339070568
-13	45017	45	17	Calhoun County, South Carolina	61	Educational services	61	2.2	59.783321775312075	1496.114805825243
-14	45017	45	17	Calhoun County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-15	45019	45	19	Charleston County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.0	26.606516290726816	1530.4110275689225
-16	45019	45	19	Charleston County, South Carolina	22	Utilities	22	28.4	972.8181296615031	84968.66138841078
-17	45021	45	21	Cherokee County, South Carolina	61	Educational services	61	6.6	179.3499653259362	4488.344417475728
-18	45021	45	21	Cherokee County, South Carolina	99	Industries not classified	99	1.3333333333333333	1.1058451816745656	27.200631911532383
-19	45023	45	23	Chester County, South Carolina	22	Utilities	22	5.2	178.12162937464143	15557.642226047046
-20	45023	45	23	Chester County, South Carolina	55	Management of companies and enterprises	55	1.0	39.1541836414917	3150.67784393607
-21	45025	45	25	Chesterfield County, South Carolina	55	Management of companies and enterprises	55	1.6	62.64669382638671	5041.084550297713
-22	45025	45	25	Chesterfield County, South Carolina	61	Educational services	61	1.0	27.174237170596395	680.0521844660194
-23	45027	45	27	Clarendon County, South Carolina	99	Industries not classified	99	1.75	1.4514218009478672	35.70082938388625
-24	45029	45	29	Colleton County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-25	45029	45	29	Colleton County, South Carolina	22	Utilities	22	4.0	137.01663798049339	11967.417096959265
-26	45029	45	29	Colleton County, South Carolina	99	Industries not classified	99	1.25	1.0367298578199051	25.500592417061608
-27	45031	45	31	Darlington County, South Carolina	99	Industries not classified	99	2.0	1.6587677725118481	40.800947867298575
-28	45033	45	33	Dillon County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-29	45033	45	33	Dillon County, South Carolina	22	Utilities	22	2.0	68.50831899024669	5983.708548479633
-30	45033	45	33	Dillon County, South Carolina	55	Management of companies and enterprises	55	2.4	93.97004073958006	7561.626825446568
-31	45033	45	33	Dillon County, South Carolina	61	Educational services	61	1.0	27.174237170596395	680.0521844660194
-32	45033	45	33	Dillon County, South Carolina	99	Industries not classified	99	1.5	1.2440758293838863	30.60071090047393
-33	45035	45	35	Dorchester County, South Carolina	22	Utilities	22	5.6	191.82329317269074	16754.38393574297
-34	45037	45	37	Edgefield County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.2	15.963909774436088	918.2466165413533
-35	45037	45	37	Edgefield County, South Carolina	22	Utilities	22	2.8	95.91164658634537	8377.191967871486
-36	45037	45	37	Edgefield County, South Carolina	55	Management of companies and enterprises	55	1.25	48.942729551864616	3938.347304920088
-37	45037	45	37	Edgefield County, South Carolina	61	Educational services	61	1.4	38.04393203883495	952.0730582524272
-38	45039	45	39	Fairfield County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-39	45039	45	39	Fairfield County, South Carolina	22	Utilities	22	10.4	356.24325874928286	31115.284452094093
-40	45039	45	39	Fairfield County, South Carolina	42	Wholesale trade	42	9.2	128.14690329590726	7036.879665177672
-41	45039	45	39	Fairfield County, South Carolina	54	Professional, scientific, and technical services	54	25.0	207.08628947316123	13047.728989049863
-42	45039	45	39	Fairfield County, South Carolina	55	Management of companies and enterprises	55	1.0	39.1541836414917	3150.67784393607
-43	45039	45	39	Fairfield County, South Carolina	71	Arts, entertainment, and recreation	71	1.8	29.223022670025188	545.5539294710327
-44	45039	45	39	Fairfield County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-45	45041	45	41	Florence County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-46	45043	45	43	Georgetown County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.0	26.606516290726816	1530.4110275689225
-47	45043	45	43	Georgetown County, South Carolina	22	Utilities	22	3.0	102.76247848537004	8975.562822719448
-48	45045	45	45	Greenville County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.8	37.249122807017535	2142.575438596491
-49	45047	45	47	Greenwood County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.0	26.606516290726816	1530.4110275689225
-50	45047	45	47	Greenwood County, South Carolina	22	Utilities	22	2.4	82.20998278829603	7180.450258175559
-51	45047	45	47	Greenwood County, South Carolina	99	Industries not classified	99	1.4	1.1611374407582937	28.560663507109002
-52	45049	45	49	Hampton County, South Carolina	22	Utilities	22	2.0	68.50831899024669	5983.708548479633
-53	45049	45	49	Hampton County, South Carolina	55	Management of companies and enterprises	55	1.0	39.1541836414917	3150.67784393607
-54	45049	45	49	Hampton County, South Carolina	61	Educational services	61	2.2	59.783321775312075	1496.114805825243
-55	45049	45	49	Hampton County, South Carolina	71	Arts, entertainment, and recreation	71	3.0	48.70503778337532	909.2565491183879
-56	45053	45	53	Jasper County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-57	45053	45	53	Jasper County, South Carolina	22	Utilities	22	4.0	137.01663798049339	11967.417096959265
-58	45053	45	53	Jasper County, South Carolina	51	Information	51	3.0	74.11447084233262	4192.198272138229
-59	45053	45	53	Jasper County, South Carolina	55	Management of companies and enterprises	55	2.25	88.09691319335631	7089.025148856158
-60	45053	45	53	Jasper County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-61	45055	45	55	Kershaw County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	2.0	26.606516290726816	1530.4110275689225
-62	45055	45	55	Kershaw County, South Carolina	51	Information	51	14.2	350.80849532037433	19843.071821454283
-63	45057	45	57	Lancaster County, South Carolina	22	Utilities	22	2.4	82.20998278829603	7180.450258175559
-64	45059	45	59	Laurens County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-65	45059	45	59	Laurens County, South Carolina	22	Utilities	22	5.8	198.6741250717154	17352.75479059093
-66	45059	45	59	Laurens County, South Carolina	61	Educational services	61	6.6	179.3499653259362	4488.344417475728
-67	45061	45	61	Lee County, South Carolina	53	Real estate and rental and leasing	53	2.0	9.77582065652522	382.53138510808645
-68	45061	45	61	Lee County, South Carolina	55	Management of companies and enterprises	55	1.0	39.1541836414917	3150.67784393607
-69	45061	45	61	Lee County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-70	45065	45	65	McCormick County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	1.0	7.772187004754358	303.1957210776545
-71	45065	45	65	McCormick County, South Carolina	42	Wholesale trade	42	1.5	20.89351684172401	1147.317336713751
-72	45065	45	65	McCormick County, South Carolina	51	Information	51	1.0	24.70482361411087	1397.3994240460763
-73	45065	45	65	McCormick County, South Carolina	53	Real estate and rental and leasing	53	1.8	8.798238590872698	344.27824659727787
-74	45065	45	65	McCormick County, South Carolina	61	Educational services	61	1.6	43.47877947295424	1088.083495145631
-75	45065	45	65	McCormick County, South Carolina	71	Arts, entertainment, and recreation	71	2.0	32.47002518891688	606.1710327455919
-76	45067	45	67	Marion County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-77	45067	45	67	Marion County, South Carolina	61	Educational services	61	1.2	32.609084604715676	816.0626213592233
-78	45067	45	67	Marion County, South Carolina	99	Industries not classified	99	1.5	1.2440758293838863	30.60071090047393
-79	45069	45	69	Marlboro County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.2	15.963909774436088	918.2466165413533
-80	45069	45	69	Marlboro County, South Carolina	22	Utilities	22	3.0	102.76247848537004	8975.562822719448
-81	45069	45	69	Marlboro County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-82	45071	45	71	Newberry County, South Carolina	22	Utilities	22	2.6	89.06081468732071	7778.821113023523
-83	45071	45	71	Newberry County, South Carolina	61	Educational services	61	5.8	157.6105755894591	3944.302669902913
-84	45071	45	71	Newberry County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-85	45073	45	73	Oconee County, South Carolina	22	Utilities	22	12.4	424.7515777395295	37098.993000573726
-86	45075	45	75	Orangeburg County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-87	45077	45	77	Pickens County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-88	45081	45	81	Saluda County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.3333333333333333	17.73767752715121	1020.2740183792815
-89	45081	45	81	Saluda County, South Carolina	22	Utilities	22	1.8	61.65748709122202	5385.337693631669
-90	45081	45	81	Saluda County, South Carolina	51	Information	51	2.2	54.350611951043916	3074.278732901368
-91	45081	45	81	Saluda County, South Carolina	61	Educational services	61	4.4	119.56664355062415	2992.229611650486
-92	45081	45	81	Saluda County, South Carolina	99	Industries not classified	99	2.0	1.6587677725118481	40.800947867298575
-93	45085	45	85	Sumter County, South Carolina	11	Agriculture, forestry, fishing and hunting	11	4.4	34.19762282091918	1334.0611727416801
-94	45085	45	85	Sumter County, South Carolina	99	Industries not classified	99	2.0	1.6587677725118481	40.800947867298575
-95	45087	45	87	Union County, South Carolina	21	Mining, quarrying, and oil and gas extraction	21	1.0	13.303258145363408	765.2055137844612
-96	45087	45	87	Union County, South Carolina	61	Educational services	61	2.0	54.34847434119279	1360.1043689320388
-97	45087	45	87	Union County, South Carolina	99	Industries not classified	99	1.0	0.8293838862559241	20.400473933649288
-98	45089	45	89	Williamsburg County, South Carolina	22	Utilities	22	2.0	68.50831899024669	5983.708548479633
-99	45089	45	89	Williamsburg County, South Carolina	51	Information	51	6.2	153.1699064074874	8663.876429085672
-100	45089	45	89	Williamsburg County, South Carolina	61	Educational services	61	1.6	43.47877947295424	1088.083495145631
-101	45091	45	91	York County, South Carolina	22	Utilities	22	15.8	541.2157200229489	47271.2975329891
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
+0	11	Agriculture, forestry, fishing and hunting	45	11	1	45001	Abbeville County, South Carolina	no	3.0	17.0	560.0
+1	11	Agriculture, forestry, fishing and hunting	45	11	1	45001	Abbeville County, South Carolina	yes	2.0	51.95286289328843	1266.8784910138102
+2	11	Agriculture, forestry, fishing and hunting	45	11	3	45003	Aiken County, South Carolina	no	22.5	97.0	3968.1666666666665
+3	11	Agriculture, forestry, fishing and hunting	45	11	5	45005	Allendale County, South Carolina	no	7.166666666666667	59.833333333333336	2428.1666666666665
+4	11	Agriculture, forestry, fishing and hunting	45	11	7	45007	Anderson County, South Carolina	no	11.666666666666666	23.666666666666668	948.5
+5	11	Agriculture, forestry, fishing and hunting	45	11	9	45009	Bamberg County, South Carolina	no	9.666666666666666	44.666666666666664	1927.3333333333333
+6	11	Agriculture, forestry, fishing and hunting	45	11	11	45011	Barnwell County, South Carolina	no	6.5	8.666666666666666	800.3333333333334
+7	11	Agriculture, forestry, fishing and hunting	45	11	13	45013	Beaufort County, South Carolina	no	5.0	7.333333333333333	490.0
+8	11	Agriculture, forestry, fishing and hunting	45	11	15	45015	Berkeley County, South Carolina	no	8.2	30.2	1636.2
+9	11	Agriculture, forestry, fishing and hunting	45	11	15	45015	Berkeley County, South Carolina	yes	10.0	259.5744680851064	7984.68085106383
+10	11	Agriculture, forestry, fishing and hunting	45	11	17	45017	Calhoun County, South Carolina	no	5.666666666666667	95.33333333333333	2901.6666666666665
+11	11	Agriculture, forestry, fishing and hunting	45	11	17	45017	Calhoun County, South Carolina	yes	5.333333333333333	184.37352245862883	3236.7801418439717
+12	11	Agriculture, forestry, fishing and hunting	45	11	19	45019	Charleston County, South Carolina	no	15.5	11.666666666666666	1105.0
+13	11	Agriculture, forestry, fishing and hunting	45	11	21	45021	Cherokee County, South Carolina	no	3.0	4.0	72.0
+14	11	Agriculture, forestry, fishing and hunting	45	11	21	45021	Cherokee County, South Carolina	yes	2.5	80.39285714285714	2320.6190476190477
+15	11	Agriculture, forestry, fishing and hunting	45	11	23	45023	Chester County, South Carolina	no	5.666666666666667	62.333333333333336	3043.8333333333335
+16	11	Agriculture, forestry, fishing and hunting	45	11	25	45025	Chesterfield County, South Carolina	no	5.833333333333333	124.33333333333333	3521.6666666666665
+17	11	Agriculture, forestry, fishing and hunting	45	11	27	45027	Clarendon County, South Carolina	no	10.0	173.33333333333334	5765.166666666667
+18	11	Agriculture, forestry, fishing and hunting	45	11	29	45029	Colleton County, South Carolina	no	31.5	342.8333333333333	12720.333333333334
+19	11	Agriculture, forestry, fishing and hunting	45	11	31	45031	Darlington County, South Carolina	no	10.833333333333334	42.0	1903.0
+20	11	Agriculture, forestry, fishing and hunting	45	11	33	45033	Dillon County, South Carolina	no	6.166666666666667	28.5	1114.6666666666667
+21	11	Agriculture, forestry, fishing and hunting	45	11	35	45035	Dorchester County, South Carolina	no	14.166666666666666	64.66666666666667	9209.833333333334
+22	11	Agriculture, forestry, fishing and hunting	45	11	37	45037	Edgefield County, South Carolina	no	12.0	151.2	5978.4
+23	11	Agriculture, forestry, fishing and hunting	45	11	37	45037	Edgefield County, South Carolina	yes	14.0	363.40425531914894	11178.553191489362
+24	11	Agriculture, forestry, fishing and hunting	45	11	39	45039	Fairfield County, South Carolina	no	3.3333333333333335	15.5	1256.6666666666667
+25	11	Agriculture, forestry, fishing and hunting	45	11	41	45041	Florence County, South Carolina	no	18.0	169.16666666666666	6783.833333333333
+26	11	Agriculture, forestry, fishing and hunting	45	11	43	45043	Georgetown County, South Carolina	no	35.166666666666664	430.0	16641.833333333332
+27	11	Agriculture, forestry, fishing and hunting	45	11	45	45045	Greenville County, South Carolina	no	9.833333333333334	17.5	936.5
+28	11	Agriculture, forestry, fishing and hunting	45	11	47	45047	Greenwood County, South Carolina	no	6.833333333333333	46.5	1951.5
+29	11	Agriculture, forestry, fishing and hunting	45	11	49	45049	Hampton County, South Carolina	no	16.166666666666668	172.33333333333334	7554.333333333333
+30	11	Agriculture, forestry, fishing and hunting	45	11	51	45051	Horry County, South Carolina	no	15.833333333333334	83.5	2703.0
+31	11	Agriculture, forestry, fishing and hunting	45	11	53	45053	Jasper County, South Carolina	no	8.166666666666666	56.166666666666664	2468.0
+32	11	Agriculture, forestry, fishing and hunting	45	11	55	45055	Kershaw County, South Carolina	no	19.833333333333332	98.83333333333333	2756.3333333333335
+33	11	Agriculture, forestry, fishing and hunting	45	11	57	45057	Lancaster County, South Carolina	no	4.5	27.0	772.0
+34	11	Agriculture, forestry, fishing and hunting	45	11	59	45059	Laurens County, South Carolina	no	10.5	66.83333333333333	2643.8333333333335
+35	11	Agriculture, forestry, fishing and hunting	45	11	61	45061	Lee County, South Carolina	no	5.0	31.166666666666668	960.1666666666666
+36	11	Agriculture, forestry, fishing and hunting	45	11	63	45063	Lexington County, South Carolina	no	12.833333333333334	83.0	3564.3333333333335
+37	11	Agriculture, forestry, fishing and hunting	45	11	65	45065	McCormick County, South Carolina	yes	1.0	24.837502396013036	738.0803236367066
+38	11	Agriculture, forestry, fishing and hunting	45	11	67	45067	Marion County, South Carolina	no	5.166666666666667	15.5	1544.5
+39	11	Agriculture, forestry, fishing and hunting	45	11	69	45069	Marlboro County, South Carolina	no	3.6666666666666665	21.666666666666668	1070.0
+40	11	Agriculture, forestry, fishing and hunting	45	11	69	45069	Marlboro County, South Carolina	yes	2.0	68.30496453900709	1200.5490937746256
+41	11	Agriculture, forestry, fishing and hunting	45	11	71	45071	Newberry County, South Carolina	no	20.166666666666668	233.33333333333334	8894.5
+42	11	Agriculture, forestry, fishing and hunting	45	11	73	45073	Oconee County, South Carolina	no	15.5	51.5	1613.8333333333333
+43	11	Agriculture, forestry, fishing and hunting	45	11	75	45075	Orangeburg County, South Carolina	no	19.5	117.33333333333333	4435.166666666667
+44	11	Agriculture, forestry, fishing and hunting	45	11	77	45077	Pickens County, South Carolina	no	7.666666666666667	28.833333333333332	554.8333333333334
+45	11	Agriculture, forestry, fishing and hunting	45	11	79	45079	Richland County, South Carolina	no	14.5	93.0	4647.333333333333
+46	11	Agriculture, forestry, fishing and hunting	45	11	81	45081	Saluda County, South Carolina	no	10.2	50.4	1732.2
+47	11	Agriculture, forestry, fishing and hunting	45	11	81	45081	Saluda County, South Carolina	yes	8.0	207.6595744680851	6387.744680851064
+48	11	Agriculture, forestry, fishing and hunting	45	11	83	45083	Spartanburg County, South Carolina	no	8.666666666666666	41.166666666666664	1485.0
+49	11	Agriculture, forestry, fishing and hunting	45	11	85	45085	Sumter County, South Carolina	yes	4.333333333333333	109.62069516324836	3134.754864286779
+50	11	Agriculture, forestry, fishing and hunting	45	11	87	45087	Union County, South Carolina	no	9.5	81.66666666666667	3300.5
+51	11	Agriculture, forestry, fishing and hunting	45	11	89	45089	Williamsburg County, South Carolina	no	14.833333333333334	69.33333333333333	3228.8333333333335
+52	11	Agriculture, forestry, fishing and hunting	45	11	91	45091	York County, South Carolina	no	12.0	62.0	1820.3333333333333
+53	21	Mining, quarrying, and oil and gas extraction	45	21	3	45003	Aiken County, South Carolina	no	4.0	85.83333333333333	4767.0
+54	21	Mining, quarrying, and oil and gas extraction	45	21	7	45007	Anderson County, South Carolina	no	3.5	35.5	2112.5
+55	21	Mining, quarrying, and oil and gas extraction	45	21	11	45011	Barnwell County, South Carolina	yes	1.0	14.2945130294899	901.1470695328875
+56	21	Mining, quarrying, and oil and gas extraction	45	21	13	45013	Beaufort County, South Carolina	yes	1.0	14.513011063011064	808.8979557479557
+57	21	Mining, quarrying, and oil and gas extraction	45	21	15	45015	Berkeley County, South Carolina	yes	2.6666666666666665	37.77171532093735	2260.0388756300235
+58	21	Mining, quarrying, and oil and gas extraction	45	21	19	45019	Charleston County, South Carolina	yes	2.4	35.83326818588383	2358.065247573658
+59	21	Mining, quarrying, and oil and gas extraction	45	21	21	45021	Cherokee County, South Carolina	no	3.0	17.0	1338.2
+60	21	Mining, quarrying, and oil and gas extraction	45	21	21	45021	Cherokee County, South Carolina	yes	2.0	28.727272727272727	1683.0909090909092
+61	21	Mining, quarrying, and oil and gas extraction	45	21	25	45025	Chesterfield County, South Carolina	no	5.5	70.0	2083.5
+62	21	Mining, quarrying, and oil and gas extraction	45	21	29	45029	Colleton County, South Carolina	yes	1.0	14.105647002282831	942.2609075253314
+63	21	Mining, quarrying, and oil and gas extraction	45	21	33	45033	Dillon County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+64	21	Mining, quarrying, and oil and gas extraction	45	21	35	45035	Dorchester County, South Carolina	no	3.5	26.833333333333332	1912.6666666666667
+65	21	Mining, quarrying, and oil and gas extraction	45	21	37	45037	Edgefield County, South Carolina	yes	1.1666666666666667	16.70326842658634	1015.8370073942193
+66	21	Mining, quarrying, and oil and gas extraction	45	21	39	45039	Fairfield County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+67	21	Mining, quarrying, and oil and gas extraction	45	21	41	45041	Florence County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+68	21	Mining, quarrying, and oil and gas extraction	45	21	43	45043	Georgetown County, South Carolina	yes	1.8333333333333333	25.848100574004693	1519.016586850523
+69	21	Mining, quarrying, and oil and gas extraction	45	21	45	45045	Greenville County, South Carolina	yes	2.6666666666666665	38.26910299073882	2295.865416904841
+70	21	Mining, quarrying, and oil and gas extraction	45	21	47	45047	Greenwood County, South Carolina	yes	2.0	28.618658065293896	1751.1588632732874
+71	21	Mining, quarrying, and oil and gas extraction	45	21	51	45051	Horry County, South Carolina	no	4.0	30.333333333333332	1081.6666666666667
+72	21	Mining, quarrying, and oil and gas extraction	45	21	51	45051	Horry County, South Carolina	yes	3.0	43.539033189033184	2426.693867243867
+73	21	Mining, quarrying, and oil and gas extraction	45	21	53	45053	Jasper County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+74	21	Mining, quarrying, and oil and gas extraction	45	21	55	45055	Kershaw County, South Carolina	yes	2.0	28.618658065293896	1751.1588632732874
+75	21	Mining, quarrying, and oil and gas extraction	45	21	57	45057	Lancaster County, South Carolina	no	4.0	96.0	13615.0
+76	21	Mining, quarrying, and oil and gas extraction	45	21	57	45057	Lancaster County, South Carolina	yes	2.4	35.978191672825815	2290.7954563052126
+77	21	Mining, quarrying, and oil and gas extraction	45	21	59	45059	Laurens County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+78	21	Mining, quarrying, and oil and gas extraction	45	21	63	45063	Lexington County, South Carolina	no	7.666666666666667	114.83333333333333	6537.5
+79	21	Mining, quarrying, and oil and gas extraction	45	21	67	45067	Marion County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+80	21	Mining, quarrying, and oil and gas extraction	45	21	69	45069	Marlboro County, South Carolina	yes	1.3333333333333333	19.465600809650432	1242.2788509165507
+81	21	Mining, quarrying, and oil and gas extraction	45	21	75	45075	Orangeburg County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+82	21	Mining, quarrying, and oil and gas extraction	45	21	77	45077	Pickens County, South Carolina	yes	1.0	14.309329032646948	875.5794316366437
+83	21	Mining, quarrying, and oil and gas extraction	45	21	79	45079	Richland County, South Carolina	no	7.0	93.0	4940.0
+84	21	Mining, quarrying, and oil and gas extraction	45	21	79	45079	Richland County, South Carolina	yes	4.0	57.19387026579625	3529.5449082195255
+85	21	Mining, quarrying, and oil and gas extraction	45	21	81	45081	Saluda County, South Carolina	yes	1.5	22.02892069499513	1451.1961984527481
+86	21	Mining, quarrying, and oil and gas extraction	45	21	83	45083	Spartanburg County, South Carolina	no	8.333333333333334	147.33333333333334	7185.833333333333
+87	21	Mining, quarrying, and oil and gas extraction	45	21	87	45087	Union County, South Carolina	yes	1.0	14.338961038961038	824.4441558441558
+88	21	Mining, quarrying, and oil and gas extraction	45	21	91	45091	York County, South Carolina	no	5.0	37.666666666666664	1810.0
+89	22	Utilities	45	22	1	45001	Abbeville County, South Carolina	yes	2.3333333333333335	101.21620550048972	8627.617827035929
+90	22	Utilities	45	22	3	45003	Aiken County, South Carolina	no	18.0	509.6666666666667	33508.666666666664
+91	22	Utilities	45	22	3	45003	Aiken County, South Carolina	yes	17.666666666666668	804.4424774993199	62711.2810083053
+92	22	Utilities	45	22	7	45007	Anderson County, South Carolina	no	10.6	94.4	13779.4
+93	22	Utilities	45	22	7	45007	Anderson County, South Carolina	yes	10.0	425.2287581699347	40997.25490196078
+94	22	Utilities	45	22	9	45009	Bamberg County, South Carolina	yes	3.0	129.13925568015756	11209.730991733624
+95	22	Utilities	45	22	11	45011	Barnwell County, South Carolina	yes	4.0	172.1856742402101	14946.307988978167
+96	22	Utilities	45	22	13	45013	Beaufort County, South Carolina	no	7.0	146.0	9889.0
+97	22	Utilities	45	22	13	45013	Beaufort County, South Carolina	yes	6.0	268.9374862918096	22124.37905474633
+98	22	Utilities	45	22	15	45015	Berkeley County, South Carolina	yes	7.666666666666667	331.2068728416798	28614.303320128052
+99	22	Utilities	45	22	17	45017	Calhoun County, South Carolina	no	3.0	65.66666666666667	4432.666666666667
+100	22	Utilities	45	22	17	45017	Calhoun County, South Carolina	yes	2.0	81.00648643295702	7846.400958110517
+101	22	Utilities	45	22	19	45019	Charleston County, South Carolina	yes	28.333333333333332	1219.9116423061193	105559.66177800375
+102	22	Utilities	45	22	21	45021	Cherokee County, South Carolina	no	9.0	75.33333333333333	6662.666666666667
+103	22	Utilities	45	22	23	45023	Chester County, South Carolina	yes	5.166666666666667	223.3171991832413	19276.826120974485
+104	22	Utilities	45	22	25	45025	Chesterfield County, South Carolina	no	5.0	97.16666666666667	5818.333333333333
+105	22	Utilities	45	22	27	45027	Clarendon County, South Carolina	no	3.0	3.3333333333333335	83.0
+106	22	Utilities	45	22	29	45029	Colleton County, South Carolina	yes	4.0	172.1856742402101	14946.307988978167
+107	22	Utilities	45	22	31	45031	Darlington County, South Carolina	no	11.0	883.0	99025.0
+108	22	Utilities	45	22	31	45031	Darlington County, South Carolina	yes	10.6	454.76172950229846	38909.84771029428
+109	22	Utilities	45	22	33	45033	Dillon County, South Carolina	yes	2.0	86.09283712010505	7473.153994489084
+110	22	Utilities	45	22	35	45035	Dorchester County, South Carolina	yes	5.666666666666667	242.10829859435765	21231.579713963703
+111	22	Utilities	45	22	37	45037	Edgefield County, South Carolina	yes	2.8333333333333335	121.05414929717882	10615.789856981852
+112	22	Utilities	45	22	39	45039	Fairfield County, South Carolina	yes	10.5	449.2552850116415	39320.52356543464
+113	22	Utilities	45	22	41	45041	Florence County, South Carolina	no	11.6	120.6	12558.2
+114	22	Utilities	45	22	41	45041	Florence County, South Carolina	yes	11.0	533.6170212765958	39200.11489361702
+115	22	Utilities	45	22	43	45043	Georgetown County, South Carolina	yes	3.0	129.13925568015756	11209.730991733624
+116	22	Utilities	45	22	45	45045	Greenville County, South Carolina	no	15.5	318.75	35751.0
+117	22	Utilities	45	22	45	45045	Greenville County, South Carolina	yes	16.5	727.1799332962757	58371.277995711906
+118	22	Utilities	45	22	47	45047	Greenwood County, South Carolina	yes	2.3333333333333335	101.21620550048972	8627.617827035929
+119	22	Utilities	45	22	49	45049	Hampton County, South Carolina	yes	2.0	86.09283712010505	7473.153994489084
+120	22	Utilities	45	22	51	45051	Horry County, South Carolina	no	6.166666666666667	213.33333333333334	13241.333333333334
+121	22	Utilities	45	22	53	45053	Jasper County, South Carolina	yes	4.0	172.1856742402101	14946.307988978167
+122	22	Utilities	45	22	55	45055	Kershaw County, South Carolina	no	4.833333333333333	32.0	1937.5
+123	22	Utilities	45	22	57	45057	Lancaster County, South Carolina	yes	2.5	106.34445872834429	9434.754234016713
+124	22	Utilities	45	22	59	45059	Laurens County, South Carolina	yes	5.833333333333333	251.24024936290914	21858.93928567218
+125	22	Utilities	45	22	63	45063	Lexington County, South Carolina	no	48.0	1937.0	178397.0
+126	22	Utilities	45	22	63	45063	Lexington County, South Carolina	yes	46.4	1995.1263200608726	170071.97699628034
+127	22	Utilities	45	22	67	45067	Marion County, South Carolina	no	3.8333333333333335	22.333333333333332	1709.8333333333333
+128	22	Utilities	45	22	69	45069	Marlboro County, South Carolina	yes	3.0	129.13925568015756	11209.730991733624
+129	22	Utilities	45	22	71	45071	Newberry County, South Carolina	yes	2.5	108.8876340719183	9248.130752205996
+130	22	Utilities	45	22	73	45073	Oconee County, South Carolina	yes	12.5	536.3949665173194	46827.095996880416
+131	22	Utilities	45	22	75	45075	Orangeburg County, South Carolina	no	8.0	145.0	11677.0
+132	22	Utilities	45	22	75	45075	Orangeburg County, South Carolina	yes	7.6	329.41164610282624	27777.60319983994
+133	22	Utilities	45	22	77	45077	Pickens County, South Carolina	no	3.0	70.5	9855.5
+134	22	Utilities	45	22	77	45077	Pickens County, South Carolina	yes	2.75	116.88455700623254	10475.00481170829
+135	22	Utilities	45	22	79	45079	Richland County, South Carolina	no	30.166666666666668	251.16666666666666	39909.333333333336
+136	22	Utilities	45	22	81	45081	Saluda County, South Carolina	yes	1.6666666666666667	72.92836148136469	6194.8413366608
+137	22	Utilities	45	22	83	45083	Spartanburg County, South Carolina	no	8.5	143.75	19620.0
+138	22	Utilities	45	22	83	45083	Spartanburg County, South Carolina	yes	7.5	341.8460551370147	26025.563887739052
+139	22	Utilities	45	22	85	45085	Sumter County, South Carolina	no	7.666666666666667	148.16666666666666	9268.333333333334
+140	22	Utilities	45	22	87	45087	Union County, South Carolina	no	5.0	61.666666666666664	3621.3333333333335
+141	22	Utilities	45	22	87	45087	Union County, South Carolina	yes	5.0	227.9479695181326	17749.767577169125
+142	22	Utilities	45	22	89	45089	Williamsburg County, South Carolina	yes	2.0	86.09283712010505	7473.153994489084
+143	22	Utilities	45	22	91	45091	York County, South Carolina	yes	16.0	684.7389994201434	59965.00879118498
+144	23	Construction	45	23	1	45001	Abbeville County, South Carolina	no	39.833333333333336	155.16666666666666	5265.833333333333
+145	23	Construction	45	23	3	45003	Aiken County, South Carolina	no	240.66666666666666	2780.6666666666665	144622.66666666666
+146	23	Construction	45	23	5	45005	Allendale County, South Carolina	no	6.333333333333333	27.333333333333332	730.0
+147	23	Construction	45	23	5	45005	Allendale County, South Carolina	yes	5.333333333333333	304.0576923076923	11347.80982905983
+148	23	Construction	45	23	7	45007	Anderson County, South Carolina	no	319.8333333333333	2227.5	90245.66666666667
+149	23	Construction	45	23	9	45009	Bamberg County, South Carolina	no	10.333333333333334	25.5	969.6666666666666
+150	23	Construction	45	23	11	45011	Barnwell County, South Carolina	no	22.5	136.5	4380.833333333333
+151	23	Construction	45	23	13	45013	Beaufort County, South Carolina	no	600.0	2893.6666666666665	120357.83333333333
+152	23	Construction	45	23	15	45015	Berkeley County, South Carolina	no	339.6666666666667	3345.1666666666665	154715.83333333334
+153	23	Construction	45	23	17	45017	Calhoun County, South Carolina	no	35.333333333333336	407.0	14737.166666666666
+154	23	Construction	45	23	19	45019	Charleston County, South Carolina	no	1018.5	8487.5	439308.6666666667
+155	23	Construction	45	23	21	45021	Cherokee County, South Carolina	no	80.16666666666667	692.0	29734.666666666668
+156	23	Construction	45	23	23	45023	Chester County, South Carolina	no	42.166666666666664	357.6666666666667	15764.666666666666
+157	23	Construction	45	23	25	45025	Chesterfield County, South Carolina	no	52.333333333333336	517.3333333333334	21474.666666666668
+158	23	Construction	45	23	27	45027	Clarendon County, South Carolina	no	26.5	90.5	3228.0
+159	23	Construction	45	23	29	45029	Colleton County, South Carolina	no	63.333333333333336	344.3333333333333	12036.5
+160	23	Construction	45	23	31	45031	Darlington County, South Carolina	no	69.83333333333333	862.1666666666666	28793.333333333332
+161	23	Construction	45	23	33	45033	Dillon County, South Carolina	no	26.666666666666668	83.33333333333333	3722.5
+162	23	Construction	45	23	35	45035	Dorchester County, South Carolina	no	253.16666666666666	1650.3333333333333	64715.666666666664
+163	23	Construction	45	23	37	45037	Edgefield County, South Carolina	no	37.333333333333336	199.5	7427.166666666667
+164	23	Construction	45	23	39	45039	Fairfield County, South Carolina	no	19.75	49.75	3844.25
+165	23	Construction	45	23	39	45039	Fairfield County, South Carolina	yes	23.0	784.875	37489.041666666664
+166	23	Construction	45	23	41	45041	Florence County, South Carolina	no	184.5	1444.3333333333333	57170.833333333336
+167	23	Construction	45	23	43	45043	Georgetown County, South Carolina	no	158.33333333333334	954.0	36432.5
+168	23	Construction	45	23	45	45045	Greenville County, South Carolina	no	1025.8333333333333	9840.666666666666	499661.5
+169	23	Construction	45	23	47	45047	Greenwood County, South Carolina	no	100.33333333333333	845.0	32253.5
+170	23	Construction	45	23	49	45049	Hampton County, South Carolina	no	27.5	158.33333333333334	5170.166666666667
+171	23	Construction	45	23	51	45051	Horry County, South Carolina	no	850.3333333333334	5412.166666666667	202496.16666666666
+172	23	Construction	45	23	53	45053	Jasper County, South Carolina	no	95.0	699.0	30193.0
+173	23	Construction	45	23	55	45055	Kershaw County, South Carolina	no	122.5	699.6666666666666	23777.0
+174	23	Construction	45	23	57	45057	Lancaster County, South Carolina	no	108.83333333333333	717.0	28578.833333333332
+175	23	Construction	45	23	59	45059	Laurens County, South Carolina	no	70.83333333333333	454.8333333333333	16642.333333333332
+176	23	Construction	45	23	61	45061	Lee County, South Carolina	no	7.833333333333333	77.16666666666667	3442.1666666666665
+177	23	Construction	45	23	63	45063	Lexington County, South Carolina	no	654.5	5300.166666666667	228273.83333333334
+178	23	Construction	45	23	65	45065	McCormick County, South Carolina	no	5.0	64.66666666666667	2076.3333333333335
+179	23	Construction	45	23	65	45065	McCormick County, South Carolina	yes	7.666666666666667	404.02564102564105	15593.495726495725
+180	23	Construction	45	23	67	45067	Marion County, South Carolina	no	33.333333333333336	127.5	3368.8333333333335
+181	23	Construction	45	23	69	45069	Marlboro County, South Carolina	no	14.666666666666666	126.16666666666667	6032.333333333333
+182	23	Construction	45	23	71	45071	Newberry County, South Carolina	no	67.16666666666667	581.0	21996.666666666668
+183	23	Construction	45	23	73	45073	Oconee County, South Carolina	no	186.5	951.8333333333334	31309.833333333332
+184	23	Construction	45	23	75	45075	Orangeburg County, South Carolina	no	95.16666666666667	584.6666666666666	22979.5
+185	23	Construction	45	23	77	45077	Pickens County, South Carolina	no	230.83333333333334	1139.0	42216.0
+186	23	Construction	45	23	79	45079	Richland County, South Carolina	no	523.0	5308.0	255189.33333333334
+187	23	Construction	45	23	81	45081	Saluda County, South Carolina	no	29.0	131.16666666666666	7814.833333333333
+188	23	Construction	45	23	83	45083	Spartanburg County, South Carolina	no	501.0	5373.5	263838.5
+189	23	Construction	45	23	85	45085	Sumter County, South Carolina	no	140.66666666666666	3083.8333333333335	150249.0
+190	23	Construction	45	23	87	45087	Union County, South Carolina	no	25.666666666666668	114.66666666666667	3255.6666666666665
+191	23	Construction	45	23	89	45089	Williamsburg County, South Carolina	no	32.833333333333336	277.8333333333333	10698.166666666666
+192	23	Construction	45	23	91	45091	York County, South Carolina	no	425.3333333333333	3061.0	135084.66666666666
+193	42	Wholesale trade	45	42	1	45001	Abbeville County, South Carolina	no	5.333333333333333	63.333333333333336	2724.6666666666665
+194	42	Wholesale trade	45	42	1	45001	Abbeville County, South Carolina	yes	6.666666666666667	768.2686733556299	41842.101325405674
+195	42	Wholesale trade	45	42	3	45003	Aiken County, South Carolina	no	72.5	705.0	29343.333333333332
+196	42	Wholesale trade	45	42	5	45005	Allendale County, South Carolina	no	9.333333333333334	56.666666666666664	2256.0
+197	42	Wholesale trade	45	42	7	45007	Anderson County, South Carolina	no	178.16666666666666	2741.0	143134.66666666666
+198	42	Wholesale trade	45	42	9	45009	Bamberg County, South Carolina	no	7.166666666666667	21.666666666666668	1065.6666666666667
+199	42	Wholesale trade	45	42	11	45011	Barnwell County, South Carolina	no	6.666666666666667	47.0	1046.0
+200	42	Wholesale trade	45	42	11	45011	Barnwell County, South Carolina	yes	5.333333333333333	580.0167224080268	32513.424625294185
+201	42	Wholesale trade	45	42	13	45013	Beaufort County, South Carolina	no	145.16666666666666	683.1666666666666	33226.0
+202	42	Wholesale trade	45	42	15	45015	Berkeley County, South Carolina	no	175.66666666666666	3157.5	188008.83333333334
+203	42	Wholesale trade	45	42	17	45017	Calhoun County, South Carolina	no	9.0	237.66666666666666	8604.5
+204	42	Wholesale trade	45	42	19	45019	Charleston County, South Carolina	no	546.6666666666666	6523.5	373070.5
+205	42	Wholesale trade	45	42	21	45021	Cherokee County, South Carolina	no	21.666666666666668	406.5	13118.333333333334
+206	42	Wholesale trade	45	42	23	45023	Chester County, South Carolina	no	14.2	348.6	18470.4
+207	42	Wholesale trade	45	42	23	45023	Chester County, South Carolina	yes	13.0	799.5	59627.62962962963
+208	42	Wholesale trade	45	42	25	45025	Chesterfield County, South Carolina	no	28.166666666666668	258.5	9286.166666666666
+209	42	Wholesale trade	45	42	27	45027	Clarendon County, South Carolina	no	15.5	92.16666666666667	3676.8333333333335
+210	42	Wholesale trade	45	42	29	45029	Colleton County, South Carolina	no	31.333333333333332	247.66666666666666	11472.5
+211	42	Wholesale trade	45	42	31	45031	Darlington County, South Carolina	no	74.16666666666667	713.8333333333334	35715.0
+212	42	Wholesale trade	45	42	33	45033	Dillon County, South Carolina	no	17.166666666666668	310.8333333333333	11208.0
+213	42	Wholesale trade	45	42	35	45035	Dorchester County, South Carolina	no	85.0	664.1666666666666	35959.666666666664
+214	42	Wholesale trade	45	42	37	45037	Edgefield County, South Carolina	no	10.2	318.4	20129.2
+215	42	Wholesale trade	45	42	37	45037	Edgefield County, South Carolina	yes	12.0	738.0	55040.88888888888
+216	42	Wholesale trade	45	42	39	45039	Fairfield County, South Carolina	yes	9.0	1416.963017611355	101929.73256655567
+217	42	Wholesale trade	45	42	41	45041	Florence County, South Carolina	no	171.33333333333334	2720.0	125629.33333333333
+218	42	Wholesale trade	45	42	43	45043	Georgetown County, South Carolina	no	45.833333333333336	356.3333333333333	13827.0
+219	42	Wholesale trade	45	42	45	45045	Greenville County, South Carolina	no	817.0	11778.166666666666	688228.5
+220	42	Wholesale trade	45	42	47	45047	Greenwood County, South Carolina	no	54.833333333333336	613.6666666666666	28539.0
+221	42	Wholesale trade	45	42	49	45049	Hampton County, South Carolina	no	9.333333333333334	212.5	11796.0
+222	42	Wholesale trade	45	42	51	45051	Horry County, South Carolina	no	264.5	2386.0	96461.5
+223	42	Wholesale trade	45	42	53	45053	Jasper County, South Carolina	no	29.333333333333332	503.0	28937.166666666668
+224	42	Wholesale trade	45	42	55	45055	Kershaw County, South Carolina	no	23.166666666666668	70.83333333333333	5669.0
+225	42	Wholesale trade	45	42	57	45057	Lancaster County, South Carolina	no	59.166666666666664	1011.5	45745.166666666664
+226	42	Wholesale trade	45	42	59	45059	Laurens County, South Carolina	no	37.833333333333336	349.5	16748.166666666668
+227	42	Wholesale trade	45	42	61	45061	Lee County, South Carolina	no	8.0	40.0	3835.2
+228	42	Wholesale trade	45	42	61	45061	Lee County, South Carolina	yes	9.0	553.5	41280.666666666664
+229	42	Wholesale trade	45	42	63	45063	Lexington County, South Carolina	no	350.8333333333333	7012.666666666667	394500.0
+230	42	Wholesale trade	45	42	65	45065	McCormick County, South Carolina	yes	1.5	221.9933110367893	10481.072742474917
+231	42	Wholesale trade	45	42	67	45067	Marion County, South Carolina	no	23.666666666666668	386.1666666666667	16685.333333333332
+232	42	Wholesale trade	45	42	69	45069	Marlboro County, South Carolina	no	11.333333333333334	80.33333333333333	4101.0
+233	42	Wholesale trade	45	42	71	45071	Newberry County, South Carolina	no	32.5	268.3333333333333	12208.5
+234	42	Wholesale trade	45	42	73	45073	Oconee County, South Carolina	no	45.666666666666664	428.0	13824.5
+235	42	Wholesale trade	45	42	75	45075	Orangeburg County, South Carolina	no	63.333333333333336	701.1666666666666	30674.666666666668
+236	42	Wholesale trade	45	42	77	45077	Pickens County, South Carolina	no	71.16666666666667	469.0	26115.0
+237	42	Wholesale trade	45	42	79	45079	Richland County, South Carolina	no	416.3333333333333	7315.5	436012.6666666667
+238	42	Wholesale trade	45	42	81	45081	Saluda County, South Carolina	no	7.666666666666667	57.666666666666664	1437.0
+239	42	Wholesale trade	45	42	83	45083	Spartanburg County, South Carolina	no	442.5	7279.666666666667	411736.5
+240	42	Wholesale trade	45	42	85	45085	Sumter County, South Carolina	no	71.0	731.1666666666666	33654.666666666664
+241	42	Wholesale trade	45	42	87	45087	Union County, South Carolina	no	12.833333333333334	107.0	5565.166666666667
+242	42	Wholesale trade	45	42	89	45089	Williamsburg County, South Carolina	no	24.0	149.0	8894.833333333334
+243	42	Wholesale trade	45	42	91	45091	York County, South Carolina	no	285.0	4553.5	264291.5
+244	51	Information	45	51	1	45001	Abbeville County, South Carolina	no	5.333333333333333	78.33333333333333	5340.666666666667
+245	51	Information	45	51	1	45001	Abbeville County, South Carolina	yes	4.0	169.4116760828625	10305.302390265102
+246	51	Information	45	51	3	45003	Aiken County, South Carolina	no	28.666666666666668	541.1666666666666	24564.166666666668
+247	51	Information	45	51	5	45005	Allendale County, South Carolina	no	5.6	5.4	517.6
+248	51	Information	45	51	5	45005	Allendale County, South Carolina	yes	6.0	183.83050847457628	10279.254237288136
+249	51	Information	45	51	7	45007	Anderson County, South Carolina	no	34.666666666666664	490.0	23324.666666666668
+250	51	Information	45	51	9	45009	Bamberg County, South Carolina	no	3.0	4.833333333333333	313.1666666666667
+251	51	Information	45	51	11	45011	Barnwell County, South Carolina	no	7.0	35.2	1965.2
+252	51	Information	45	51	11	45011	Barnwell County, South Carolina	yes	7.0	214.46892655367233	11992.463276836159
+253	51	Information	45	51	13	45013	Beaufort County, South Carolina	no	63.666666666666664	543.6666666666666	35481.0
+254	51	Information	45	51	15	45015	Berkeley County, South Carolina	no	32.0	4433.5	424295.0
+255	51	Information	45	51	15	45015	Berkeley County, South Carolina	yes	24.0	1156.3977401129944	72672.19104737071
+256	51	Information	45	51	17	45017	Calhoun County, South Carolina	no	3.0	4.333333333333333	355.3333333333333
+257	51	Information	45	51	17	45017	Calhoun County, South Carolina	yes	2.6666666666666665	110.88097928436912	6806.845168767202
+258	51	Information	45	51	19	45019	Charleston County, South Carolina	no	213.0	4658.166666666667	219697.33333333334
+259	51	Information	45	51	21	45021	Cherokee County, South Carolina	no	9.5	152.5	3588.25
+260	51	Information	45	51	21	45021	Cherokee County, South Carolina	yes	8.5	409.94802259887007	25446.268448500654
+261	51	Information	45	51	23	45023	Chester County, South Carolina	no	8.0	157.0	8781.0
+262	51	Information	45	51	23	45023	Chester County, South Carolina	yes	6.5	299.9664901129944	18994.095573935247
+263	51	Information	45	51	25	45025	Chesterfield County, South Carolina	no	6.0	80.0	4273.0
+264	51	Information	45	51	25	45025	Chesterfield County, South Carolina	yes	6.25	289.9089689265537	18261.345156996955
+265	51	Information	45	51	27	45027	Clarendon County, South Carolina	no	3.3333333333333335	16.0	323.6666666666667
+266	51	Information	45	51	27	45027	Clarendon County, South Carolina	yes	2.0	97.78942436412315	5911.863622009406
+267	51	Information	45	51	29	45029	Colleton County, South Carolina	no	9.333333333333334	103.16666666666667	7638.833333333333
+268	51	Information	45	51	31	45031	Darlington County, South Carolina	no	11.333333333333334	78.33333333333333	3582.0
+269	51	Information	45	51	33	45033	Dillon County, South Carolina	no	4.333333333333333	21.666666666666668	1162.8333333333333
+270	51	Information	45	51	35	45035	Dorchester County, South Carolina	no	26.0	272.3333333333333	13988.5
+271	51	Information	45	51	37	45037	Edgefield County, South Carolina	no	4.2	14.2	430.6
+272	51	Information	45	51	37	45037	Edgefield County, South Carolina	yes	3.0	91.91525423728814	5139.627118644068
+273	51	Information	45	51	39	45039	Fairfield County, South Carolina	no	5.0	0.0	1408.0
+274	51	Information	45	51	39	45039	Fairfield County, South Carolina	yes	4.0	188.70829079027976	12493.424639802146
+275	51	Information	45	51	41	45041	Florence County, South Carolina	no	38.666666666666664	549.6666666666666	19732.333333333332
+276	51	Information	45	51	43	45043	Georgetown County, South Carolina	no	17.666666666666668	106.66666666666667	6391.666666666667
+277	51	Information	45	51	45	45045	Greenville County, South Carolina	no	209.0	6602.0	384831.3333333333
+278	51	Information	45	51	47	45047	Greenwood County, South Carolina	no	14.666666666666666	237.83333333333334	8795.666666666666
+279	51	Information	45	51	49	45049	Hampton County, South Carolina	no	6.0	20.0	1138.0
+280	51	Information	45	51	49	45049	Hampton County, South Carolina	yes	4.5	207.3746115819209	13137.513427585833
+281	51	Information	45	51	51	45051	Horry County, South Carolina	no	97.83333333333333	2227.3333333333335	95287.16666666667
+282	51	Information	45	51	53	45053	Jasper County, South Carolina	yes	3.0	142.20934841059153	9191.587835773777
+283	51	Information	45	51	55	45055	Kershaw County, South Carolina	yes	14.666666666666666	692.932399938738	44997.861456535255
+284	51	Information	45	51	57	45057	Lancaster County, South Carolina	no	19.166666666666668	471.3333333333333	36631.166666666664
+285	51	Information	45	51	59	45059	Laurens County, South Carolina	no	10.0	90.33333333333333	4110.333333333333
+286	51	Information	45	51	59	45059	Laurens County, South Carolina	yes	12.333333333333334	518.4478342749529	31486.976850644645
+287	51	Information	45	51	63	45063	Lexington County, South Carolina	no	72.0	1430.6666666666667	77266.83333333333
+288	51	Information	45	51	65	45065	McCormick County, South Carolina	yes	1.0	49.61746987951807	3335.0056894243644
+289	51	Information	45	51	67	45067	Marion County, South Carolina	no	5.2	15.4	845.2
+290	51	Information	45	51	67	45067	Marion County, South Carolina	yes	5.0	153.19209039548022	8566.045197740114
+291	51	Information	45	51	69	45069	Marlboro County, South Carolina	no	3.75	30.0	974.75
+292	51	Information	45	51	69	45069	Marlboro County, South Carolina	yes	3.0	148.8524096385542	10005.017068273091
+293	51	Information	45	51	71	45071	Newberry County, South Carolina	no	7.5	12.0	949.8333333333334
+294	51	Information	45	51	73	45073	Oconee County, South Carolina	no	15.0	256.6666666666667	11179.0
+295	51	Information	45	51	73	45073	Oconee County, South Carolina	yes	14.333333333333334	603.1536723163841	36639.6280457772
+296	51	Information	45	51	75	45075	Orangeburg County, South Carolina	no	13.5	195.66666666666666	7601.166666666667
+297	51	Information	45	51	77	45077	Pickens County, South Carolina	no	19.8	217.8	13709.4
+298	51	Information	45	51	77	45077	Pickens County, South Carolina	yes	20.0	970.6666666666666	55327.89743589744
+299	51	Information	45	51	79	45079	Richland County, South Carolina	no	154.5	3384.6666666666665	184414.0
+300	51	Information	45	51	81	45081	Saluda County, South Carolina	yes	2.0	91.46236754929322	5762.657312598213
+301	51	Information	45	51	83	45083	Spartanburg County, South Carolina	no	62.833333333333336	2502.3333333333335	106518.5
+302	51	Information	45	51	85	45085	Sumter County, South Carolina	no	15.833333333333334	373.1666666666667	26784.666666666668
+303	51	Information	45	51	87	45087	Union County, South Carolina	no	10.0	168.16666666666666	1797.6666666666667
+304	51	Information	45	51	89	45089	Williamsburg County, South Carolina	yes	6.166666666666667	289.52509983436573	18668.710511472225
+305	51	Information	45	51	91	45091	York County, South Carolina	no	80.33333333333333	1541.6666666666667	93924.66666666667
+306	51	Information	45	51	91	45091	York County, South Carolina	yes	68.33333333333333	2884.461770244821	175249.15570042012
+307	52	Finance and insurance	45	52	1	45001	Abbeville County, South Carolina	no	29.166666666666668	111.0	4579.666666666667
+308	52	Finance and insurance	45	52	3	45003	Aiken County, South Carolina	no	198.33333333333334	1174.1666666666667	54173.5
+309	52	Finance and insurance	45	52	5	45005	Allendale County, South Carolina	no	9.333333333333334	45.666666666666664	1710.0
+310	52	Finance and insurance	45	52	5	45005	Allendale County, South Carolina	yes	9.333333333333334	1075.9152298850574	84813.5639367816
+311	52	Finance and insurance	45	52	7	45007	Anderson County, South Carolina	no	245.16666666666666	1105.5	48192.0
+312	52	Finance and insurance	45	52	9	45009	Bamberg County, South Carolina	no	18.666666666666668	96.16666666666667	3492.3333333333335
+313	52	Finance and insurance	45	52	11	45011	Barnwell County, South Carolina	no	25.166666666666668	123.16666666666667	4243.166666666667
+314	52	Finance and insurance	45	52	13	45013	Beaufort County, South Carolina	no	267.0	1979.0	135804.66666666666
+315	52	Finance and insurance	45	52	15	45015	Berkeley County, South Carolina	no	186.16666666666666	938.1666666666666	48335.833333333336
+316	52	Finance and insurance	45	52	17	45017	Calhoun County, South Carolina	no	12.333333333333334	30.833333333333332	1887.0
+317	52	Finance and insurance	45	52	19	45019	Charleston County, South Carolina	no	750.5	6189.333333333333	445106.1666666667
+318	52	Finance and insurance	45	52	21	45021	Cherokee County, South Carolina	no	64.16666666666667	310.0	12416.0
+319	52	Finance and insurance	45	52	23	45023	Chester County, South Carolina	no	33.166666666666664	149.66666666666666	5534.0
+320	52	Finance and insurance	45	52	25	45025	Chesterfield County, South Carolina	no	53.166666666666664	210.0	7428.666666666667
+321	52	Finance and insurance	45	52	27	45027	Clarendon County, South Carolina	no	42.833333333333336	235.16666666666666	8672.5
+322	52	Finance and insurance	45	52	29	45029	Colleton County, South Carolina	no	56.5	265.5	10307.833333333334
+323	52	Finance and insurance	45	52	31	45031	Darlington County, South Carolina	no	80.16666666666667	415.0	18355.0
+324	52	Finance and insurance	45	52	33	45033	Dillon County, South Carolina	no	43.666666666666664	185.66666666666666	6992.5
+325	52	Finance and insurance	45	52	35	45035	Dorchester County, South Carolina	no	156.16666666666666	700.3333333333334	29124.833333333332
+326	52	Finance and insurance	45	52	37	45037	Edgefield County, South Carolina	no	18.0	56.666666666666664	2192.3333333333335
+327	52	Finance and insurance	45	52	39	45039	Fairfield County, South Carolina	no	19.5	51.166666666666664	2237.0
+328	52	Finance and insurance	45	52	41	45041	Florence County, South Carolina	no	255.66666666666666	4107.5	169936.66666666666
+329	52	Finance and insurance	45	52	43	45043	Georgetown County, South Carolina	no	99.5	506.0	25139.333333333332
+330	52	Finance and insurance	45	52	45	45045	Greenville County, South Carolina	no	966.0	8620.5	566996.3333333334
+331	52	Finance and insurance	45	52	47	45047	Greenwood County, South Carolina	no	102.66666666666667	513.1666666666666	22574.333333333332
+332	52	Finance and insurance	45	52	49	45049	Hampton County, South Carolina	no	23.5	125.16666666666667	5503.166666666667
+333	52	Finance and insurance	45	52	51	45051	Horry County, South Carolina	no	447.8333333333333	3549.3333333333335	171296.5
+334	52	Finance and insurance	45	52	53	45053	Jasper County, South Carolina	no	22.0	72.5	7842.5
+335	52	Finance and insurance	45	52	53	45053	Jasper County, South Carolina	yes	21.0	1699.127155172414	124261.1540948276
+336	52	Finance and insurance	45	52	55	45055	Kershaw County, South Carolina	no	85.83333333333333	512.6666666666666	20647.666666666668
+337	52	Finance and insurance	45	52	57	45057	Lancaster County, South Carolina	no	99.5	990.1666666666666	60848.333333333336
+338	52	Finance and insurance	45	52	59	45059	Laurens County, South Carolina	no	66.83333333333333	369.5	14080.666666666666
+339	52	Finance and insurance	45	52	61	45061	Lee County, South Carolina	no	16.166666666666668	69.5	1829.6666666666667
+340	52	Finance and insurance	45	52	63	45063	Lexington County, South Carolina	no	445.6666666666667	3015.0	161191.83333333334
+341	52	Finance and insurance	45	52	65	45065	McCormick County, South Carolina	no	8.166666666666666	19.333333333333332	620.3333333333334
+342	52	Finance and insurance	45	52	67	45067	Marion County, South Carolina	no	47.5	265.1666666666667	10825.0
+343	52	Finance and insurance	45	52	69	45069	Marlboro County, South Carolina	no	34.333333333333336	116.83333333333333	3875.1666666666665
+344	52	Finance and insurance	45	52	71	45071	Newberry County, South Carolina	no	51.333333333333336	152.83333333333334	6393.666666666667
+345	52	Finance and insurance	45	52	73	45073	Oconee County, South Carolina	no	91.33333333333333	449.1666666666667	21429.5
+346	52	Finance and insurance	45	52	75	45075	Orangeburg County, South Carolina	no	105.33333333333333	670.8333333333334	27895.0
+347	52	Finance and insurance	45	52	77	45077	Pickens County, South Carolina	no	137.33333333333334	621.6666666666666	30633.166666666668
+348	52	Finance and insurance	45	52	79	45079	Richland County, South Carolina	no	757.8333333333334	17871.5	1170006.0
+349	52	Finance and insurance	45	52	81	45081	Saluda County, South Carolina	no	13.5	28.833333333333332	1677.1666666666667
+350	52	Finance and insurance	45	52	83	45083	Spartanburg County, South Carolina	no	399.0	2063.8333333333335	113660.5
+351	52	Finance and insurance	45	52	85	45085	Sumter County, South Carolina	no	116.33333333333333	804.8333333333334	36440.666666666664
+352	52	Finance and insurance	45	52	87	45087	Union County, South Carolina	no	35.0	195.0	7059.666666666667
+353	52	Finance and insurance	45	52	89	45089	Williamsburg County, South Carolina	no	36.666666666666664	163.33333333333334	6759.666666666667
+354	52	Finance and insurance	45	52	91	45091	York County, South Carolina	no	340.8333333333333	5091.333333333333	286841.5
+355	53	Real estate and rental and leasing	45	53	1	45001	Abbeville County, South Carolina	no	4.0	3.0	102.0
+356	53	Real estate and rental and leasing	45	53	1	45001	Abbeville County, South Carolina	yes	2.2	19.62488169568001	362.52132306708296
+357	53	Real estate and rental and leasing	45	53	3	45003	Aiken County, South Carolina	no	107.33333333333333	364.5	11640.833333333334
+358	53	Real estate and rental and leasing	45	53	5	45005	Allendale County, South Carolina	yes	3.0	25.56388760153804	499.1442064789487
+359	53	Real estate and rental and leasing	45	53	7	45007	Anderson County, South Carolina	no	132.33333333333334	412.6666666666667	14957.166666666666
+360	53	Real estate and rental and leasing	45	53	9	45009	Bamberg County, South Carolina	no	3.0	3.6666666666666665	100.33333333333333
+361	53	Real estate and rental and leasing	45	53	9	45009	Bamberg County, South Carolina	yes	2.0	24.63816127375449	320.8026878959082
+362	53	Real estate and rental and leasing	45	53	11	45011	Barnwell County, South Carolina	no	9.333333333333334	10.166666666666666	535.1666666666666
+363	53	Real estate and rental and leasing	45	53	13	45013	Beaufort County, South Carolina	no	420.1666666666667	1763.0	75790.0
+364	53	Real estate and rental and leasing	45	53	15	45015	Berkeley County, South Carolina	no	147.83333333333334	766.1666666666666	32822.0
+365	53	Real estate and rental and leasing	45	53	17	45017	Calhoun County, South Carolina	no	4.0	12.666666666666666	760.3333333333334
+366	53	Real estate and rental and leasing	45	53	17	45017	Calhoun County, South Carolina	yes	3.0	36.95724191063174	481.2040318438623
+367	53	Real estate and rental and leasing	45	53	19	45019	Charleston County, South Carolina	no	803.6666666666666	3735.1666666666665	166642.66666666666
+368	53	Real estate and rental and leasing	45	53	21	45021	Cherokee County, South Carolina	no	39.0	108.0	3269.1666666666665
+369	53	Real estate and rental and leasing	45	53	23	45023	Chester County, South Carolina	no	12.0	10.333333333333334	829.3333333333334
+370	53	Real estate and rental and leasing	45	53	25	45025	Chesterfield County, South Carolina	no	13.75	26.0	853.5
+371	53	Real estate and rental and leasing	45	53	25	45025	Chesterfield County, South Carolina	yes	13.0	137.4038906009245	1946.4019645608628
+372	53	Real estate and rental and leasing	45	53	27	45027	Clarendon County, South Carolina	no	13.5	18.0	752.5
+373	53	Real estate and rental and leasing	45	53	29	45029	Colleton County, South Carolina	no	42.333333333333336	123.83333333333333	4080.5
+374	53	Real estate and rental and leasing	45	53	31	45031	Darlington County, South Carolina	no	35.666666666666664	38.0	3034.5
+375	53	Real estate and rental and leasing	45	53	33	45033	Dillon County, South Carolina	no	25.0	49.0	1182.6666666666667
+376	53	Real estate and rental and leasing	45	53	35	45035	Dorchester County, South Carolina	no	116.33333333333333	361.1666666666667	12749.333333333334
+377	53	Real estate and rental and leasing	45	53	37	45037	Edgefield County, South Carolina	no	8.166666666666666	27.0	649.6666666666666
+378	53	Real estate and rental and leasing	45	53	39	45039	Fairfield County, South Carolina	no	11.833333333333334	10.666666666666666	755.1666666666666
+379	53	Real estate and rental and leasing	45	53	41	45041	Florence County, South Carolina	no	124.0	516.5	19626.5
+380	53	Real estate and rental and leasing	45	53	43	45043	Georgetown County, South Carolina	no	87.0	469.3333333333333	16228.666666666666
+381	53	Real estate and rental and leasing	45	53	45	45045	Greenville County, South Carolina	no	606.8333333333334	2742.3333333333335	122024.16666666667
+382	53	Real estate and rental and leasing	45	53	47	45047	Greenwood County, South Carolina	no	48.333333333333336	170.66666666666666	4795.333333333333
+383	53	Real estate and rental and leasing	45	53	49	45049	Hampton County, South Carolina	no	7.0	15.0	910.1666666666666
+384	53	Real estate and rental and leasing	45	53	51	45051	Horry County, South Carolina	no	615.3333333333334	4777.0	152542.5
+385	53	Real estate and rental and leasing	45	53	53	45053	Jasper County, South Carolina	no	22.333333333333332	62.5	3443.8333333333335
+386	53	Real estate and rental and leasing	45	53	55	45055	Kershaw County, South Carolina	no	33.166666666666664	86.16666666666667	3012.6666666666665
+387	53	Real estate and rental and leasing	45	53	57	45057	Lancaster County, South Carolina	no	51.833333333333336	125.83333333333333	5551.5
+388	53	Real estate and rental and leasing	45	53	59	45059	Laurens County, South Carolina	no	22.0	47.666666666666664	1298.5
+389	53	Real estate and rental and leasing	45	53	61	45061	Lee County, South Carolina	yes	1.8333333333333333	16.256172885954665	296.85858928514176
+390	53	Real estate and rental and leasing	45	53	63	45063	Lexington County, South Carolina	no	274.6666666666667	1425.5	52612.666666666664
+391	53	Real estate and rental and leasing	45	53	65	45065	McCormick County, South Carolina	yes	1.6666666666666667	14.320566825348607	271.18813473968726
+392	53	Real estate and rental and leasing	45	53	67	45067	Marion County, South Carolina	no	13.833333333333334	32.833333333333336	1195.1666666666667
+393	53	Real estate and rental and leasing	45	53	69	45069	Marlboro County, South Carolina	no	12.166666666666666	25.0	590.1666666666666
+394	53	Real estate and rental and leasing	45	53	71	45071	Newberry County, South Carolina	no	18.666666666666668	65.5	2358.8333333333335
+395	53	Real estate and rental and leasing	45	53	73	45073	Oconee County, South Carolina	no	75.5	205.16666666666666	7442.666666666667
+396	53	Real estate and rental and leasing	45	53	75	45075	Orangeburg County, South Carolina	no	50.333333333333336	322.0	10309.666666666666
+397	53	Real estate and rental and leasing	45	53	77	45077	Pickens County, South Carolina	no	69.83333333333333	373.1666666666667	10498.5
+398	53	Real estate and rental and leasing	45	53	79	45079	Richland County, South Carolina	no	434.3333333333333	2849.5	134596.16666666666
+399	53	Real estate and rental and leasing	45	53	81	45081	Saluda County, South Carolina	no	3.6666666666666665	12.333333333333334	467.3333333333333
+400	53	Real estate and rental and leasing	45	53	81	45081	Saluda County, South Carolina	yes	3.6666666666666665	46.10118130457113	593.1307995206299
+401	53	Real estate and rental and leasing	45	53	83	45083	Spartanburg County, South Carolina	no	221.0	1133.1666666666667	48118.5
+402	53	Real estate and rental and leasing	45	53	85	45085	Sumter County, South Carolina	no	71.66666666666667	267.0	6916.5
+403	53	Real estate and rental and leasing	45	53	87	45087	Union County, South Carolina	no	14.333333333333334	148.66666666666666	3955.3333333333335
+404	53	Real estate and rental and leasing	45	53	87	45087	Union County, South Carolina	yes	13.0	161.54956343091936	2094.4624208183527
+405	53	Real estate and rental and leasing	45	53	89	45089	Williamsburg County, South Carolina	no	15.6	19.6	822.4
+406	53	Real estate and rental and leasing	45	53	89	45089	Williamsburg County, South Carolina	yes	15.0	142.88135593220338	2181.35593220339
+407	53	Real estate and rental and leasing	45	53	91	45091	York County, South Carolina	no	226.0	787.3333333333334	35966.0
+408	54	Professional, scientific, and technical services	45	54	1	45001	Abbeville County, South Carolina	no	16.0	44.833333333333336	1091.8333333333333
+409	54	Professional, scientific, and technical services	45	54	3	45003	Aiken County, South Carolina	no	232.0	1898.6666666666667	143934.0
+410	54	Professional, scientific, and technical services	45	54	3	45003	Aiken County, South Carolina	yes	242.66666666666666	6515.76424926466	589337.9945063222
+411	54	Professional, scientific, and technical services	45	54	5	45005	Allendale County, South Carolina	no	5.833333333333333	24.666666666666668	1295.8333333333333
+412	54	Professional, scientific, and technical services	45	54	7	45007	Anderson County, South Carolina	no	277.0	1985.8333333333333	87261.0
+413	54	Professional, scientific, and technical services	45	54	9	45009	Bamberg County, South Carolina	no	14.666666666666666	58.833333333333336	1837.3333333333333
+414	54	Professional, scientific, and technical services	45	54	11	45011	Barnwell County, South Carolina	no	24.333333333333332	48.333333333333336	3247.1666666666665
+415	54	Professional, scientific, and technical services	45	54	13	45013	Beaufort County, South Carolina	no	580.5	2757.5	154680.83333333334
+416	54	Professional, scientific, and technical services	45	54	15	45015	Berkeley County, South Carolina	no	266.5	3188.5	211108.33333333334
+417	54	Professional, scientific, and technical services	45	54	17	45017	Calhoun County, South Carolina	no	12.0	29.666666666666668	1026.8333333333333
+418	54	Professional, scientific, and technical services	45	54	19	45019	Charleston County, South Carolina	no	1715.3333333333333	15485.0	1153450.8333333333
+419	54	Professional, scientific, and technical services	45	54	21	45021	Cherokee County, South Carolina	no	46.0	192.0	6673.333333333333
+420	54	Professional, scientific, and technical services	45	54	23	45023	Chester County, South Carolina	no	28.333333333333332	136.83333333333334	4776.166666666667
+421	54	Professional, scientific, and technical services	45	54	25	45025	Chesterfield County, South Carolina	no	26.0	80.83333333333333	2316.0
+422	54	Professional, scientific, and technical services	45	54	27	45027	Clarendon County, South Carolina	no	20.166666666666668	59.333333333333336	5531.666666666667
+423	54	Professional, scientific, and technical services	45	54	29	45029	Colleton County, South Carolina	no	44.333333333333336	219.83333333333334	12208.166666666666
+424	54	Professional, scientific, and technical services	45	54	31	45031	Darlington County, South Carolina	no	59.5	246.83333333333334	8551.666666666666
+425	54	Professional, scientific, and technical services	45	54	33	45033	Dillon County, South Carolina	no	24.25	334.5	4640.0
+426	54	Professional, scientific, and technical services	45	54	33	45033	Dillon County, South Carolina	yes	21.0	554.9301899007337	51323.58437634872
+427	54	Professional, scientific, and technical services	45	54	35	45035	Dorchester County, South Carolina	no	196.83333333333334	916.6666666666666	45009.5
+428	54	Professional, scientific, and technical services	45	54	37	45037	Edgefield County, South Carolina	no	18.166666666666668	54.833333333333336	2054.1666666666665
+429	54	Professional, scientific, and technical services	45	54	39	45039	Fairfield County, South Carolina	yes	27.333333333333332	2889.587676909083	264636.9667290401
+430	54	Professional, scientific, and technical services	45	54	41	45041	Florence County, South Carolina	no	208.33333333333334	2388.6666666666665	110423.33333333333
+431	54	Professional, scientific, and technical services	45	54	43	45043	Georgetown County, South Carolina	no	172.5	768.5	38512.333333333336
+432	54	Professional, scientific, and technical services	45	54	45	45045	Greenville County, South Carolina	no	1595.3333333333333	15886.5	1052225.1666666667
+433	54	Professional, scientific, and technical services	45	54	47	45047	Greenwood County, South Carolina	no	110.5	957.1666666666666	48459.0
+434	54	Professional, scientific, and technical services	45	54	49	45049	Hampton County, South Carolina	no	14.5	97.16666666666667	15588.666666666666
+435	54	Professional, scientific, and technical services	45	54	51	45051	Horry County, South Carolina	no	699.8333333333334	3347.3333333333335	141665.5
+436	54	Professional, scientific, and technical services	45	54	53	45053	Jasper County, South Carolina	no	29.333333333333332	165.16666666666666	6920.666666666667
+437	54	Professional, scientific, and technical services	45	54	55	45055	Kershaw County, South Carolina	no	79.0	392.3333333333333	13828.166666666666
+438	54	Professional, scientific, and technical services	45	54	57	45057	Lancaster County, South Carolina	no	97.66666666666667	660.8333333333334	39421.166666666664
+439	54	Professional, scientific, and technical services	45	54	59	45059	Laurens County, South Carolina	no	51.6	238.0	9901.2
+440	54	Professional, scientific, and technical services	45	54	59	45059	Laurens County, South Carolina	yes	47.0	1188.915407854985	112676.32326283988
+441	54	Professional, scientific, and technical services	45	54	61	45061	Lee County, South Carolina	no	11.833333333333334	36.5	1143.6666666666667
+442	54	Professional, scientific, and technical services	45	54	63	45063	Lexington County, South Carolina	no	582.1666666666666	3357.3333333333335	161750.16666666666
+443	54	Professional, scientific, and technical services	45	54	65	45065	McCormick County, South Carolina	no	5.25	19.25	132.75
+444	54	Professional, scientific, and technical services	45	54	65	45065	McCormick County, South Carolina	yes	6.0	159.68065745935837	14710.492878722485
+445	54	Professional, scientific, and technical services	45	54	67	45067	Marion County, South Carolina	no	23.833333333333332	76.16666666666667	2051.8333333333335
+446	54	Professional, scientific, and technical services	45	54	69	45069	Marlboro County, South Carolina	no	14.166666666666666	51.666666666666664	1457.3333333333333
+447	54	Professional, scientific, and technical services	45	54	71	45071	Newberry County, South Carolina	no	44.166666666666664	148.5	4471.5
+448	54	Professional, scientific, and technical services	45	54	73	45073	Oconee County, South Carolina	no	118.16666666666667	495.5	18633.833333333332
+449	54	Professional, scientific, and technical services	45	54	75	45075	Orangeburg County, South Carolina	no	83.33333333333333	411.8333333333333	18468.833333333332
+450	54	Professional, scientific, and technical services	45	54	77	45077	Pickens County, South Carolina	no	152.66666666666666	817.0	32072.0
+451	54	Professional, scientific, and technical services	45	54	79	45079	Richland County, South Carolina	no	1188.0	11245.0	713844.0
+452	54	Professional, scientific, and technical services	45	54	81	45081	Saluda County, South Carolina	no	15.333333333333334	66.66666666666667	2533.0
+453	54	Professional, scientific, and technical services	45	54	83	45083	Spartanburg County, South Carolina	no	458.3333333333333	4365.0	232916.66666666666
+454	54	Professional, scientific, and technical services	45	54	85	45085	Sumter County, South Carolina	no	128.33333333333334	816.1666666666666	36305.0
+455	54	Professional, scientific, and technical services	45	54	87	45087	Union County, South Carolina	no	21.0	41.5	1682.1666666666667
+456	54	Professional, scientific, and technical services	45	54	89	45089	Williamsburg County, South Carolina	no	22.833333333333332	60.666666666666664	2896.0
+457	54	Professional, scientific, and technical services	45	54	91	45091	York County, South Carolina	no	494.8333333333333	2667.1666666666665	132556.0
+458	55	Management of companies and enterprises	45	55	1	45001	Abbeville County, South Carolina	no	3.0	8.333333333333334	731.0
+459	55	Management of companies and enterprises	45	55	1	45001	Abbeville County, South Carolina	yes	3.0	175.4121979476994	11096.165921880172
+460	55	Management of companies and enterprises	45	55	3	45003	Aiken County, South Carolina	no	10.0	1512.0	9470.75
+461	55	Management of companies and enterprises	45	55	3	45003	Aiken County, South Carolina	yes	8.0	508.66633565044685	31557.99702085402
+462	55	Management of companies and enterprises	45	55	7	45007	Anderson County, South Carolina	no	23.833333333333332	291.3333333333333	31440.0
+463	55	Management of companies and enterprises	45	55	9	45009	Bamberg County, South Carolina	yes	1.0	43.32302898727924	2842.5298996426914
+464	55	Management of companies and enterprises	45	55	11	45011	Barnwell County, South Carolina	no	3.6666666666666665	2.6666666666666665	57.0
+465	55	Management of companies and enterprises	45	55	11	45011	Barnwell County, South Carolina	yes	1.6666666666666667	90.63447533929161	5836.499751737835
+466	55	Management of companies and enterprises	45	55	13	45013	Beaufort County, South Carolina	no	20.0	212.66666666666666	14877.666666666666
+467	55	Management of companies and enterprises	45	55	15	45015	Berkeley County, South Carolina	no	14.833333333333334	70.33333333333333	8547.166666666666
+468	55	Management of companies and enterprises	45	55	19	45019	Charleston County, South Carolina	no	67.83333333333333	2277.0	177885.5
+469	55	Management of companies and enterprises	45	55	21	45021	Cherokee County, South Carolina	no	7.0	187.25	9561.5
+470	55	Management of companies and enterprises	45	55	21	45021	Cherokee County, South Carolina	yes	7.0	401.1030701754386	31937.024122807015
+471	55	Management of companies and enterprises	45	55	23	45023	Chester County, South Carolina	yes	1.0	40.401321132453205	2090.5717875894766
+472	55	Management of companies and enterprises	45	55	25	45025	Chesterfield County, South Carolina	yes	1.6666666666666667	65.45162732245652	4370.143256749799
+473	55	Management of companies and enterprises	45	55	31	45031	Darlington County, South Carolina	no	14.0	826.0	135530.8
+474	55	Management of companies and enterprises	45	55	31	45031	Darlington County, South Carolina	yes	16.0	1061.6842105263158	94691.15789473684
+475	55	Management of companies and enterprises	45	55	33	45033	Dillon County, South Carolina	yes	2.3333333333333335	107.84048862666043	6999.976341820967
+476	55	Management of companies and enterprises	45	55	35	45035	Dorchester County, South Carolina	no	7.8	139.4	8649.8
+477	55	Management of companies and enterprises	45	55	35	45035	Dorchester County, South Carolina	yes	10.0	663.5526315789473	59181.97368421052
+478	55	Management of companies and enterprises	45	55	37	45037	Edgefield County, South Carolina	yes	1.2	59.323232269011804	3473.57625692972
+479	55	Management of companies and enterprises	45	55	39	45039	Fairfield County, South Carolina	yes	1.0	43.32302898727924	2842.5298996426914
+480	55	Management of companies and enterprises	45	55	41	45041	Florence County, South Carolina	no	14.333333333333334	90.33333333333333	9349.333333333334
+481	55	Management of companies and enterprises	45	55	43	45043	Georgetown County, South Carolina	no	3.5	2.8333333333333335	626.8333333333334
+482	55	Management of companies and enterprises	45	55	45	45045	Greenville County, South Carolina	no	107.33333333333333	7184.166666666667	547848.5
+483	55	Management of companies and enterprises	45	55	47	45047	Greenwood County, South Carolina	no	10.666666666666666	142.0	20931.5
+484	55	Management of companies and enterprises	45	55	49	45049	Hampton County, South Carolina	yes	1.0	43.32302898727924	2842.5298996426914
+485	55	Management of companies and enterprises	45	55	51	45051	Horry County, South Carolina	no	38.333333333333336	866.6666666666666	46850.5
+486	55	Management of companies and enterprises	45	55	53	45053	Jasper County, South Carolina	yes	2.2	84.47740793425004	6365.271004425478
+487	55	Management of companies and enterprises	45	55	55	45055	Kershaw County, South Carolina	no	5.5	72.33333333333333	6918.166666666667
+488	55	Management of companies and enterprises	45	55	57	45057	Lancaster County, South Carolina	no	6.666666666666667	1673.3333333333333	157974.66666666666
+489	55	Management of companies and enterprises	45	55	57	45057	Lancaster County, South Carolina	yes	5.333333333333333	314.4720842987973	20466.342325940637
+490	55	Management of companies and enterprises	45	55	59	45059	Laurens County, South Carolina	no	5.0	135.0	7876.0
+491	55	Management of companies and enterprises	45	55	59	45059	Laurens County, South Carolina	yes	3.0	119.47611190137506	9050.326506638217
+492	55	Management of companies and enterprises	45	55	61	45061	Lee County, South Carolina	yes	1.0	60.81132075471698	1971.3018867924527
+493	55	Management of companies and enterprises	45	55	63	45063	Lexington County, South Carolina	no	40.166666666666664	1031.8333333333333	77255.16666666667
+494	55	Management of companies and enterprises	45	55	67	45067	Marion County, South Carolina	no	4.0	45.666666666666664	2304.0
+495	55	Management of companies and enterprises	45	55	67	45067	Marion County, South Carolina	yes	4.0	233.8829305969326	14794.88789584023
+496	55	Management of companies and enterprises	45	55	71	45071	Newberry County, South Carolina	no	3.6666666666666665	54.666666666666664	4776.333333333333
+497	55	Management of companies and enterprises	45	55	71	45071	Newberry County, South Carolina	yes	2.6666666666666665	155.14175769612712	10439.065292949354
+498	55	Management of companies and enterprises	45	55	73	45073	Oconee County, South Carolina	no	6.4	39.4	3992.8
+499	55	Management of companies and enterprises	45	55	73	45073	Oconee County, South Carolina	yes	7.0	337.719298245614	22446.666666666664
+500	55	Management of companies and enterprises	45	55	75	45075	Orangeburg County, South Carolina	no	5.25	72.75	5908.0
+501	55	Management of companies and enterprises	45	55	75	45075	Orangeburg County, South Carolina	yes	7.5	412.1049321416749	19108.540880503144
+502	55	Management of companies and enterprises	45	55	77	45077	Pickens County, South Carolina	no	10.833333333333334	170.5	11542.5
+503	55	Management of companies and enterprises	45	55	79	45079	Richland County, South Carolina	no	64.66666666666667	2196.0	149769.83333333334
+504	55	Management of companies and enterprises	45	55	83	45083	Spartanburg County, South Carolina	no	88.5	3689.6666666666665	374249.6666666667
+505	55	Management of companies and enterprises	45	55	85	45085	Sumter County, South Carolina	no	8.6	171.4	10825.6
+506	55	Management of companies and enterprises	45	55	85	45085	Sumter County, South Carolina	yes	6.0	364.8679245283019	11827.811320754718
+507	55	Management of companies and enterprises	45	55	87	45087	Union County, South Carolina	no	3.0	3.0	238.0
+508	55	Management of companies and enterprises	45	55	87	45087	Union County, South Carolina	yes	2.0	99.77276564051638	6377.382960940086
+509	55	Management of companies and enterprises	45	55	89	45089	Williamsburg County, South Carolina	no	3.0	7.0	640.0
+510	55	Management of companies and enterprises	45	55	89	45089	Williamsburg County, South Carolina	yes	2.6	129.4043758256767	8377.864943518494
+511	55	Management of companies and enterprises	45	55	91	45091	York County, South Carolina	no	24.0	1840.6666666666667	183604.66666666666
+512	56	Administrative and support and waste management and remediation services	45	56	1	45001	Abbeville County, South Carolina	no	15.5	100.16666666666667	2593.8333333333335
+513	56	Administrative and support and waste management and remediation services	45	56	3	45003	Aiken County, South Carolina	no	128.0	7251.0	548234.0
+514	56	Administrative and support and waste management and remediation services	45	56	5	45005	Allendale County, South Carolina	no	4.333333333333333	6.333333333333333	81.0
+515	56	Administrative and support and waste management and remediation services	45	56	5	45005	Allendale County, South Carolina	yes	5.0	3126.593567251462	95576.18548182049
+516	56	Administrative and support and waste management and remediation services	45	56	7	45007	Anderson County, South Carolina	no	185.5	2777.8333333333335	82130.33333333333
+517	56	Administrative and support and waste management and remediation services	45	56	9	45009	Bamberg County, South Carolina	no	5.0	29.333333333333332	768.5
+518	56	Administrative and support and waste management and remediation services	45	56	11	45011	Barnwell County, South Carolina	no	15.833333333333334	128.0	4486.333333333333
+519	56	Administrative and support and waste management and remediation services	45	56	13	45013	Beaufort County, South Carolina	no	384.3333333333333	3922.0	116935.0
+520	56	Administrative and support and waste management and remediation services	45	56	15	45015	Berkeley County, South Carolina	no	174.83333333333334	1780.1666666666667	49375.666666666664
+521	56	Administrative and support and waste management and remediation services	45	56	17	45017	Calhoun County, South Carolina	no	14.666666666666666	209.66666666666666	8935.833333333334
+522	56	Administrative and support and waste management and remediation services	45	56	19	45019	Charleston County, South Carolina	no	715.5	16017.0	472641.1666666667
+523	56	Administrative and support and waste management and remediation services	45	56	21	45021	Cherokee County, South Carolina	no	30.833333333333332	1139.5	26410.666666666668
+524	56	Administrative and support and waste management and remediation services	45	56	23	45023	Chester County, South Carolina	no	23.833333333333332	113.33333333333333	3773.5
+525	56	Administrative and support and waste management and remediation services	45	56	25	45025	Chesterfield County, South Carolina	no	18.333333333333332	233.16666666666666	6867.0
+526	56	Administrative and support and waste management and remediation services	45	56	27	45027	Clarendon County, South Carolina	no	19.5	90.33333333333333	2929.1666666666665
+527	56	Administrative and support and waste management and remediation services	45	56	29	45029	Colleton County, South Carolina	no	31.0	202.66666666666666	5562.0
+528	56	Administrative and support and waste management and remediation services	45	56	31	45031	Darlington County, South Carolina	no	35.333333333333336	934.6666666666666	21729.333333333332
+529	56	Administrative and support and waste management and remediation services	45	56	33	45033	Dillon County, South Carolina	no	11.4	46.8	10458.6
+530	56	Administrative and support and waste management and remediation services	45	56	33	45033	Dillon County, South Carolina	yes	14.0	12198.421052631578	409382.84210526315
+531	56	Administrative and support and waste management and remediation services	45	56	35	45035	Dorchester County, South Carolina	no	152.16666666666666	2491.3333333333335	81767.83333333333
+532	56	Administrative and support and waste management and remediation services	45	56	37	45037	Edgefield County, South Carolina	no	19.666666666666668	155.5	4551.333333333333
+533	56	Administrative and support and waste management and remediation services	45	56	39	45039	Fairfield County, South Carolina	no	11.0	222.0	11935.0
+534	56	Administrative and support and waste management and remediation services	45	56	39	45039	Fairfield County, South Carolina	yes	13.0	8297.748538011694	255154.8217645563
+535	56	Administrative and support and waste management and remediation services	45	56	41	45041	Florence County, South Carolina	no	150.83333333333334	3940.6666666666665	82998.0
+536	56	Administrative and support and waste management and remediation services	45	56	43	45043	Georgetown County, South Carolina	no	111.5	833.8333333333334	24738.5
+537	56	Administrative and support and waste management and remediation services	45	56	45	45045	Greenville County, South Carolina	no	756.8333333333334	27191.166666666668	865427.5
+538	56	Administrative and support and waste management and remediation services	45	56	47	45047	Greenwood County, South Carolina	no	57.666666666666664	1249.1666666666667	32625.333333333332
+539	56	Administrative and support and waste management and remediation services	45	56	49	45049	Hampton County, South Carolina	no	10.666666666666666	44.666666666666664	1355.6666666666667
+540	56	Administrative and support and waste management and remediation services	45	56	51	45051	Horry County, South Carolina	no	508.0	5558.166666666667	134097.66666666666
+541	56	Administrative and support and waste management and remediation services	45	56	53	45053	Jasper County, South Carolina	no	48.333333333333336	424.8333333333333	15424.5
+542	56	Administrative and support and waste management and remediation services	45	56	55	45055	Kershaw County, South Carolina	no	58.166666666666664	697.3333333333334	17863.333333333332
+543	56	Administrative and support and waste management and remediation services	45	56	57	45057	Lancaster County, South Carolina	no	62.833333333333336	1158.1666666666667	38080.5
+544	56	Administrative and support and waste management and remediation services	45	56	59	45059	Laurens County, South Carolina	no	28.8	278.2	7810.4
+545	56	Administrative and support and waste management and remediation services	45	56	59	45059	Laurens County, South Carolina	yes	33.0	12061.5	305956.6304347826
+546	56	Administrative and support and waste management and remediation services	45	56	61	45061	Lee County, South Carolina	no	10.333333333333334	107.33333333333333	4888.5
+547	56	Administrative and support and waste management and remediation services	45	56	63	45063	Lexington County, South Carolina	no	374.8333333333333	7642.166666666667	225031.33333333334
+548	56	Administrative and support and waste management and remediation services	45	56	65	45065	McCormick County, South Carolina	no	3.0	1.6666666666666667	105.66666666666667
+549	56	Administrative and support and waste management and remediation services	45	56	65	45065	McCormick County, South Carolina	yes	1.6666666666666667	1037.5906432748536	31952.91863717264
+550	56	Administrative and support and waste management and remediation services	45	56	67	45067	Marion County, South Carolina	no	16.0	465.0	9705.0
+551	56	Administrative and support and waste management and remediation services	45	56	67	45067	Marion County, South Carolina	yes	15.5	7854.372807017544	220196.9311594203
+552	56	Administrative and support and waste management and remediation services	45	56	69	45069	Marlboro County, South Carolina	no	3.5	5.25	21.75
+553	56	Administrative and support and waste management and remediation services	45	56	69	45069	Marlboro County, South Carolina	yes	3.0	1855.2236842105262	57769.566933638445
+554	56	Administrative and support and waste management and remediation services	45	56	71	45071	Newberry County, South Carolina	no	33.166666666666664	414.3333333333333	8893.833333333334
+555	56	Administrative and support and waste management and remediation services	45	56	73	45073	Oconee County, South Carolina	no	74.66666666666667	1452.8333333333333	32804.166666666664
+556	56	Administrative and support and waste management and remediation services	45	56	75	45075	Orangeburg County, South Carolina	no	59.0	831.3333333333334	16165.166666666666
+557	56	Administrative and support and waste management and remediation services	45	56	77	45077	Pickens County, South Carolina	no	81.5	2443.3333333333335	60264.333333333336
+558	56	Administrative and support and waste management and remediation services	45	56	79	45079	Richland County, South Carolina	no	476.8333333333333	13958.166666666666	352131.3333333333
+559	56	Administrative and support and waste management and remediation services	45	56	81	45081	Saluda County, South Carolina	no	6.5	19.0	615.5
+560	56	Administrative and support and waste management and remediation services	45	56	83	45083	Spartanburg County, South Carolina	no	318.5	12255.666666666666	341759.1666666667
+561	56	Administrative and support and waste management and remediation services	45	56	85	45085	Sumter County, South Carolina	no	73.16666666666667	2369.5	56647.0
+562	56	Administrative and support and waste management and remediation services	45	56	87	45087	Union County, South Carolina	no	12.833333333333334	190.5	4972.666666666667
+563	56	Administrative and support and waste management and remediation services	45	56	89	45089	Williamsburg County, South Carolina	no	27.0	898.75	18922.5
+564	56	Administrative and support and waste management and remediation services	45	56	89	45089	Williamsburg County, South Carolina	yes	22.0	11051.043859649122	309144.8768115942
+565	56	Administrative and support and waste management and remediation services	45	56	91	45091	York County, South Carolina	no	256.0	4146.5	122670.0
+566	61	Educational services	45	61	1	45001	Abbeville County, South Carolina	no	4.833333333333333	325.3333333333333	7356.5
+567	61	Educational services	45	61	3	45003	Aiken County, South Carolina	no	32.166666666666664	513.5	11365.833333333334
+568	61	Educational services	45	61	5	45005	Allendale County, South Carolina	yes	1.0	47.289990609291806	1071.8329334522787
+569	61	Educational services	45	61	7	45007	Anderson County, South Carolina	no	23.333333333333332	1241.3333333333333	25725.666666666668
+570	61	Educational services	45	61	7	45007	Anderson County, South Carolina	yes	26.666666666666668	1204.3600608837644	26227.958933200553
+571	61	Educational services	45	61	9	45009	Bamberg County, South Carolina	no	4.333333333333333	345.1666666666667	10596.833333333334
+572	61	Educational services	45	61	11	45011	Barnwell County, South Carolina	no	3.0	42.5	612.0
+573	61	Educational services	45	61	11	45011	Barnwell County, South Carolina	yes	3.0	133.7610643094447	3273.797905790223
+574	61	Educational services	45	61	13	45013	Beaufort County, South Carolina	no	60.5	797.8333333333334	24299.833333333332
+575	61	Educational services	45	61	15	45015	Berkeley County, South Carolina	no	29.0	456.3333333333333	14908.833333333334
+576	61	Educational services	45	61	17	45017	Calhoun County, South Carolina	yes	2.1666666666666665	101.50932904467057	2300.533620527746
+577	61	Educational services	45	61	19	45019	Charleston County, South Carolina	no	171.66666666666666	3929.1666666666665	112782.66666666667
+578	61	Educational services	45	61	21	45021	Cherokee County, South Carolina	yes	6.333333333333333	299.90600797440806	6737.386705152209
+579	61	Educational services	45	61	23	45023	Chester County, South Carolina	no	4.0	16.0	240.0
+580	61	Educational services	45	61	23	45023	Chester County, South Carolina	yes	2.6	119.09660583783587	2746.370828457533
+581	61	Educational services	45	61	25	45025	Chesterfield County, South Carolina	yes	1.0	47.289990609291806	1071.8329334522787
+582	61	Educational services	45	61	27	45027	Clarendon County, South Carolina	no	6.0	81.0	1494.0
+583	61	Educational services	45	61	27	45027	Clarendon County, South Carolina	yes	5.25	257.8669504465698	5630.8267602513015
+584	61	Educational services	45	61	29	45029	Colleton County, South Carolina	no	7.0	70.0	1866.5
+585	61	Educational services	45	61	31	45031	Darlington County, South Carolina	no	9.333333333333334	467.0	12016.666666666666
+586	61	Educational services	45	61	31	45031	Darlington County, South Carolina	yes	11.666666666666666	532.1828949817426	11646.033907248677
+587	61	Educational services	45	61	33	45033	Dillon County, South Carolina	yes	1.0	42.97802197802198	899.3406593406594
+588	61	Educational services	45	61	35	45035	Dorchester County, South Carolina	no	21.5	408.6666666666667	9018.333333333334
+589	61	Educational services	45	61	37	45037	Edgefield County, South Carolina	yes	1.5	69.08167891420595	1592.4560099410473
+590	61	Educational services	45	61	39	45039	Fairfield County, South Carolina	no	3.25	37.75	1491.0
+591	61	Educational services	45	61	39	45039	Fairfield County, South Carolina	yes	3.0	126.83116340181557	2760.820771619685
+592	61	Educational services	45	61	41	45041	Florence County, South Carolina	no	28.5	436.0	8734.0
+593	61	Educational services	45	61	43	45043	Georgetown County, South Carolina	no	13.833333333333334	102.16666666666667	1741.8333333333333
+594	61	Educational services	45	61	45	45045	Greenville County, South Carolina	no	184.16666666666666	7966.5	190618.66666666666
+595	61	Educational services	45	61	47	45047	Greenwood County, South Carolina	no	8.5	116.5	1801.5
+596	61	Educational services	45	61	49	45049	Hampton County, South Carolina	yes	2.1666666666666665	101.50932904467057	2300.533620527746
+597	61	Educational services	45	61	51	45051	Horry County, South Carolina	no	61.833333333333336	673.1666666666666	17093.0
+598	61	Educational services	45	61	53	45053	Jasper County, South Carolina	no	6.0	148.83333333333334	4322.5
+599	61	Educational services	45	61	55	45055	Kershaw County, South Carolina	no	17.833333333333332	200.0	4935.166666666667
+600	61	Educational services	45	61	57	45057	Lancaster County, South Carolina	no	6.833333333333333	27.0	818.1666666666666
+601	61	Educational services	45	61	59	45059	Laurens County, South Carolina	yes	6.333333333333333	298.69520732500195	6711.71354442419
+602	61	Educational services	45	61	61	45061	Lee County, South Carolina	no	4.166666666666667	94.33333333333333	1901.5
+603	61	Educational services	45	61	63	45063	Lexington County, South Carolina	no	74.0	728.0	16216.333333333334
+604	61	Educational services	45	61	65	45065	McCormick County, South Carolina	yes	1.5	69.94459109436637	1566.4140901382677
+605	61	Educational services	45	61	67	45067	Marion County, South Carolina	yes	1.1666666666666667	54.45299427229548	1221.7230433423886
+606	61	Educational services	45	61	69	45069	Marlboro County, South Carolina	no	3.0	46.0	1040.0
+607	61	Educational services	45	61	69	45069	Marlboro County, South Carolina	yes	3.0	144.45715300663733	3318.9941648238078
+608	61	Educational services	45	61	71	45071	Newberry County, South Carolina	yes	5.833333333333333	276.5769399927472	6281.107490823561
+609	61	Educational services	45	61	73	45073	Oconee County, South Carolina	no	10.166666666666666	177.0	3625.6666666666665
+610	61	Educational services	45	61	75	45075	Orangeburg County, South Carolina	no	18.0	732.6666666666666	25143.0
+611	61	Educational services	45	61	77	45077	Pickens County, South Carolina	no	23.5	619.5	12562.166666666666
+612	61	Educational services	45	61	79	45079	Richland County, South Carolina	no	135.83333333333334	4612.5	119523.83333333333
+613	61	Educational services	45	61	81	45081	Saluda County, South Carolina	yes	4.333333333333333	203.25231392625787	4594.089597322413
+614	61	Educational services	45	61	83	45083	Spartanburg County, South Carolina	no	56.833333333333336	2423.3333333333335	62527.333333333336
+615	61	Educational services	45	61	85	45085	Sumter County, South Carolina	no	25.833333333333332	679.1666666666666	18001.833333333332
+616	61	Educational services	45	61	87	45087	Union County, South Carolina	yes	2.0	94.57998121858361	2143.6658669045573
+617	61	Educational services	45	61	89	45089	Williamsburg County, South Carolina	yes	1.6666666666666667	80.48762972949301	1836.908003391259
+618	61	Educational services	45	61	91	45091	York County, South Carolina	no	53.666666666666664	676.6666666666666	18669.833333333332
+619	62	Health care and social assistance	45	62	1	45001	Abbeville County, South Carolina	no	27.333333333333332	497.8333333333333	16358.333333333334
+620	62	Health care and social assistance	45	62	3	45003	Aiken County, South Carolina	no	325.0	6253.666666666667	206284.66666666666
+621	62	Health care and social assistance	45	62	5	45005	Allendale County, South Carolina	no	11.666666666666666	145.83333333333334	9714.333333333334
+622	62	Health care and social assistance	45	62	7	45007	Anderson County, South Carolina	no	356.0	8393.5	362003.5
+623	62	Health care and social assistance	45	62	9	45009	Bamberg County, South Carolina	no	39.0	536.5	15447.0
+624	62	Health care and social assistance	45	62	11	45011	Barnwell County, South Carolina	no	30.333333333333332	606.5	18937.333333333332
+625	62	Health care and social assistance	45	62	13	45013	Beaufort County, South Carolina	no	461.1666666666667	7674.333333333333	319756.8333333333
+626	62	Health care and social assistance	45	62	15	45015	Berkeley County, South Carolina	no	225.0	2485.3333333333335	78746.33333333333
+627	62	Health care and social assistance	45	62	17	45017	Calhoun County, South Carolina	no	23.0	385.0	7565.166666666667
+628	62	Health care and social assistance	45	62	19	45019	Charleston County, South Carolina	no	1319.6666666666667	30450.5	1568220.8333333333
+629	62	Health care and social assistance	45	62	21	45021	Cherokee County, South Carolina	no	75.5	1219.8333333333333	39029.5
+630	62	Health care and social assistance	45	62	23	45023	Chester County, South Carolina	no	47.833333333333336	311.8333333333333	25239.666666666668
+631	62	Health care and social assistance	45	62	25	45025	Chesterfield County, South Carolina	no	92.5	1660.8333333333333	45910.5
+632	62	Health care and social assistance	45	62	27	45027	Clarendon County, South Carolina	no	37.666666666666664	1539.6666666666667	50115.0
+633	62	Health care and social assistance	45	62	27	45027	Clarendon County, South Carolina	yes	42.333333333333336	2380.103641456583	39383.95022624434
+634	62	Health care and social assistance	45	62	29	45029	Colleton County, South Carolina	no	71.16666666666667	1375.0	58929.5
+635	62	Health care and social assistance	45	62	31	45031	Darlington County, South Carolina	no	98.33333333333333	2456.6666666666665	79572.0
+636	62	Health care and social assistance	45	62	33	45033	Dillon County, South Carolina	no	49.5	1164.3333333333333	40308.666666666664
+637	62	Health care and social assistance	45	62	35	45035	Dorchester County, South Carolina	no	231.33333333333334	2954.5	94740.0
+638	62	Health care and social assistance	45	62	37	45037	Edgefield County, South Carolina	no	21.166666666666668	518.1666666666666	15157.666666666666
+639	62	Health care and social assistance	45	62	39	45039	Fairfield County, South Carolina	no	23.666666666666668	629.0	18405.666666666668
+640	62	Health care and social assistance	45	62	41	45041	Florence County, South Carolina	no	362.0	13358.166666666666	629337.5
+641	62	Health care and social assistance	45	62	43	45043	Georgetown County, South Carolina	no	238.33333333333334	3657.1666666666665	163926.66666666666
+642	62	Health care and social assistance	45	62	45	45045	Greenville County, South Carolina	no	1111.8333333333333	25893.666666666668	1217808.6666666667
+643	62	Health care and social assistance	45	62	47	45047	Greenwood County, South Carolina	no	141.33333333333334	4494.833333333333	194633.16666666666
+644	62	Health care and social assistance	45	62	49	45049	Hampton County, South Carolina	no	26.6	571.6	16931.0
+645	62	Health care and social assistance	45	62	49	45049	Hampton County, South Carolina	yes	25.0	1107.1428571428573	24965.384615384617
+646	62	Health care and social assistance	45	62	51	45051	Horry County, South Carolina	no	675.0	10819.333333333334	501415.0
+647	62	Health care and social assistance	45	62	53	45053	Jasper County, South Carolina	no	44.166666666666664	1013.5	32475.833333333332
+648	62	Health care and social assistance	45	62	55	45055	Kershaw County, South Carolina	no	98.16666666666667	2156.8333333333335	82578.16666666667
+649	62	Health care and social assistance	45	62	57	45057	Lancaster County, South Carolina	no	140.33333333333334	2426.5	100789.33333333333
+650	62	Health care and social assistance	45	62	59	45059	Laurens County, South Carolina	no	83.0	1974.5	63590.333333333336
+651	62	Health care and social assistance	45	62	61	45061	Lee County, South Carolina	no	14.5	240.33333333333334	6285.666666666667
+652	62	Health care and social assistance	45	62	63	45063	Lexington County, South Carolina	no	535.0	13099.166666666666	466604.1666666667
+653	62	Health care and social assistance	45	62	65	45065	McCormick County, South Carolina	no	9.166666666666666	207.16666666666666	5084.666666666667
+654	62	Health care and social assistance	45	62	67	45067	Marion County, South Carolina	no	57.6	622.6	24338.2
+655	62	Health care and social assistance	45	62	67	45067	Marion County, South Carolina	yes	60.0	2504.1176470588234	42991.76470588236
+656	62	Health care and social assistance	45	62	69	45069	Marlboro County, South Carolina	no	43.0	1036.5	27618.0
+657	62	Health care and social assistance	45	62	71	45071	Newberry County, South Carolina	no	62.333333333333336	1324.1666666666667	45429.0
+658	62	Health care and social assistance	45	62	73	45073	Oconee County, South Carolina	no	129.5	2475.6666666666665	91414.16666666667
+659	62	Health care and social assistance	45	62	75	45075	Orangeburg County, South Carolina	no	204.66666666666666	4104.666666666667	172710.33333333334
+660	62	Health care and social assistance	45	62	77	45077	Pickens County, South Carolina	no	189.16666666666666	3590.1666666666665	126075.5
+661	62	Health care and social assistance	45	62	79	45079	Richland County, South Carolina	no	984.6666666666666	27202.0	1354803.8333333333
+662	62	Health care and social assistance	45	62	81	45081	Saluda County, South Carolina	no	22.333333333333332	425.0	13075.5
+663	62	Health care and social assistance	45	62	83	45083	Spartanburg County, South Carolina	no	570.6666666666666	15029.0	705878.5
+664	62	Health care and social assistance	45	62	85	45085	Sumter County, South Carolina	no	188.5	5334.5	192729.5
+665	62	Health care and social assistance	45	62	87	45087	Union County, South Carolina	no	26.0	551.6	28520.4
+666	62	Health care and social assistance	45	62	87	45087	Union County, South Carolina	yes	26.0	1151.4285714285713	25964.0
+667	62	Health care and social assistance	45	62	89	45089	Williamsburg County, South Carolina	no	49.833333333333336	830.0	22992.333333333332
+668	62	Health care and social assistance	45	62	91	45091	York County, South Carolina	no	474.5	9136.0	335391.3333333333
+669	71	Arts, entertainment, and recreation	45	71	1	45001	Abbeville County, South Carolina	no	3.0	2.6666666666666665	119.66666666666667
+670	71	Arts, entertainment, and recreation	45	71	1	45001	Abbeville County, South Carolina	yes	2.3333333333333335	19.507308405491575	358.29101542120424
+671	71	Arts, entertainment, and recreation	45	71	3	45003	Aiken County, South Carolina	no	50.0	803.3333333333334	14750.333333333334
+672	71	Arts, entertainment, and recreation	45	71	5	45005	Allendale County, South Carolina	yes	2.8333333333333335	21.179247907534243	396.11052911808525
+673	71	Arts, entertainment, and recreation	45	71	7	45007	Anderson County, South Carolina	no	48.0	402.5	6263.333333333333
+674	71	Arts, entertainment, and recreation	45	71	9	45009	Bamberg County, South Carolina	no	3.0	3.3333333333333335	69.0
+675	71	Arts, entertainment, and recreation	45	71	9	45009	Bamberg County, South Carolina	yes	2.6666666666666665	15.473070841239723	265.43534155597723
+676	71	Arts, entertainment, and recreation	45	71	11	45011	Barnwell County, South Carolina	no	3.0	14.0	262.25
+677	71	Arts, entertainment, and recreation	45	71	11	45011	Barnwell County, South Carolina	yes	2.0	22.777091640495428	431.71071668019334
+678	71	Arts, entertainment, and recreation	45	71	13	45013	Beaufort County, South Carolina	no	112.33333333333333	2813.8333333333335	69975.5
+679	71	Arts, entertainment, and recreation	45	71	15	45015	Berkeley County, South Carolina	no	31.0	417.1666666666667	8816.0
+680	71	Arts, entertainment, and recreation	45	71	17	45017	Calhoun County, South Carolina	no	4.0	33.0	344.6666666666667
+681	71	Arts, entertainment, and recreation	45	71	17	45017	Calhoun County, South Carolina	yes	4.666666666666667	28.28549968374446	484.87800442757754
+682	71	Arts, entertainment, and recreation	45	71	19	45019	Charleston County, South Carolina	no	224.0	3920.3333333333335	71508.83333333333
+683	71	Arts, entertainment, and recreation	45	71	21	45021	Cherokee County, South Carolina	no	13.5	165.33333333333334	4118.0
+684	71	Arts, entertainment, and recreation	45	71	23	45023	Chester County, South Carolina	no	5.5	65.5	1693.5
+685	71	Arts, entertainment, and recreation	45	71	23	45023	Chester County, South Carolina	yes	6.5	43.75220588235294	761.5066176470589
+686	71	Arts, entertainment, and recreation	45	71	25	45025	Chesterfield County, South Carolina	no	6.166666666666667	69.0	524.6666666666666
+687	71	Arts, entertainment, and recreation	45	71	27	45027	Clarendon County, South Carolina	no	7.833333333333333	59.5	1117.1666666666667
+688	71	Arts, entertainment, and recreation	45	71	29	45029	Colleton County, South Carolina	no	8.166666666666666	101.33333333333333	3057.3333333333335
+689	71	Arts, entertainment, and recreation	45	71	31	45031	Darlington County, South Carolina	no	16.833333333333332	354.6666666666667	3777.0
+690	71	Arts, entertainment, and recreation	45	71	33	45033	Dillon County, South Carolina	no	3.0	3.6666666666666665	25.666666666666668
+691	71	Arts, entertainment, and recreation	45	71	33	45033	Dillon County, South Carolina	yes	4.0	24.702972802024036	422.79171410499686
+692	71	Arts, entertainment, and recreation	45	71	35	45035	Dorchester County, South Carolina	no	31.833333333333332	726.1666666666666	8958.5
+693	71	Arts, entertainment, and recreation	45	71	37	45037	Edgefield County, South Carolina	no	4.166666666666667	44.0	774.0
+694	71	Arts, entertainment, and recreation	45	71	39	45039	Fairfield County, South Carolina	yes	1.6666666666666667	11.764896361334943	215.08978421583234
+695	71	Arts, entertainment, and recreation	45	71	41	45041	Florence County, South Carolina	no	27.0	512.5	7343.5
+696	71	Arts, entertainment, and recreation	45	71	43	45043	Georgetown County, South Carolina	no	51.333333333333336	1181.0	23100.5
+697	71	Arts, entertainment, and recreation	45	71	45	45045	Greenville County, South Carolina	no	177.0	2674.8333333333335	49692.166666666664
+698	71	Arts, entertainment, and recreation	45	71	47	45047	Greenwood County, South Carolina	no	19.0	203.83333333333334	3300.5
+699	71	Arts, entertainment, and recreation	45	71	49	45049	Hampton County, South Carolina	yes	3.0	23.400729564713245	429.12645258424595
+700	71	Arts, entertainment, and recreation	45	71	51	45051	Horry County, South Carolina	no	236.83333333333334	4452.0	88647.5
+701	71	Arts, entertainment, and recreation	45	71	53	45053	Jasper County, South Carolina	no	4.666666666666667	60.0	1638.5
+702	71	Arts, entertainment, and recreation	45	71	55	45055	Kershaw County, South Carolina	no	24.333333333333332	180.33333333333334	3780.6666666666665
+703	71	Arts, entertainment, and recreation	45	71	57	45057	Lancaster County, South Carolina	no	14.0	132.16666666666666	1994.6666666666667
+704	71	Arts, entertainment, and recreation	45	71	59	45059	Laurens County, South Carolina	no	10.5	211.83333333333334	2790.3333333333335
+705	71	Arts, entertainment, and recreation	45	71	61	45061	Lee County, South Carolina	no	3.0	0.0	127.0
+706	71	Arts, entertainment, and recreation	45	71	61	45061	Lee County, South Carolina	yes	2.0	15.284868914262688	287.2878350591741
+707	71	Arts, entertainment, and recreation	45	71	63	45063	Lexington County, South Carolina	no	80.83333333333333	697.3333333333334	12645.833333333334
+708	71	Arts, entertainment, and recreation	45	71	65	45065	McCormick County, South Carolina	yes	1.8333333333333333	12.77490980219516	229.42459604378936
+709	71	Arts, entertainment, and recreation	45	71	67	45067	Marion County, South Carolina	no	4.166666666666667	10.0	198.5
+710	71	Arts, entertainment, and recreation	45	71	69	45069	Marlboro County, South Carolina	no	5.0	0.0	211.0
+711	71	Arts, entertainment, and recreation	45	71	69	45069	Marlboro County, South Carolina	yes	3.0	22.927303371394032	430.9317525887612
+712	71	Arts, entertainment, and recreation	45	71	71	45071	Newberry County, South Carolina	no	6.0	73.83333333333333	770.5
+713	71	Arts, entertainment, and recreation	45	71	73	45073	Oconee County, South Carolina	no	23.333333333333332	298.8333333333333	5759.166666666667
+714	71	Arts, entertainment, and recreation	45	71	75	45075	Orangeburg County, South Carolina	no	18.666666666666668	328.6666666666667	4948.5
+715	71	Arts, entertainment, and recreation	45	71	77	45077	Pickens County, South Carolina	no	32.0	478.6666666666667	7557.666666666667
+716	71	Arts, entertainment, and recreation	45	71	79	45079	Richland County, South Carolina	no	102.16666666666667	2097.1666666666665	38857.5
+717	71	Arts, entertainment, and recreation	45	71	81	45081	Saluda County, South Carolina	no	3.3333333333333335	36.166666666666664	701.8333333333334
+718	71	Arts, entertainment, and recreation	45	71	83	45083	Spartanburg County, South Carolina	no	75.16666666666667	885.3333333333334	12688.333333333334
+719	71	Arts, entertainment, and recreation	45	71	85	45085	Sumter County, South Carolina	no	17.0	155.16666666666666	2689.0
+720	71	Arts, entertainment, and recreation	45	71	87	45087	Union County, South Carolina	no	3.8	7.4	63.4
+721	71	Arts, entertainment, and recreation	45	71	87	45087	Union County, South Carolina	yes	2.0	9.375	200.5
+722	71	Arts, entertainment, and recreation	45	71	89	45089	Williamsburg County, South Carolina	no	4.0	10.333333333333334	169.33333333333334
+723	71	Arts, entertainment, and recreation	45	71	89	45089	Williamsburg County, South Carolina	yes	4.666666666666667	27.363614800759013	468.78439278937384
+724	71	Arts, entertainment, and recreation	45	71	91	45091	York County, South Carolina	no	75.5	1244.5	21324.666666666668
+725	72	Accommodation and food services	45	72	1	45001	Abbeville County, South Carolina	no	28.0	330.6666666666667	4508.333333333333
+726	72	Accommodation and food services	45	72	3	45003	Aiken County, South Carolina	no	266.0	5319.0	76647.0
+727	72	Accommodation and food services	45	72	5	45005	Allendale County, South Carolina	no	5.8	50.8	582.8
+728	72	Accommodation and food services	45	72	5	45005	Allendale County, South Carolina	yes	4.0	25.0	470.66666666666663
+729	72	Accommodation and food services	45	72	7	45007	Anderson County, South Carolina	no	376.0	6522.833333333333	87147.0
+730	72	Accommodation and food services	45	72	9	45009	Bamberg County, South Carolina	no	21.666666666666668	130.0	2398.0
+731	72	Accommodation and food services	45	72	11	45011	Barnwell County, South Carolina	no	31.333333333333332	425.5	4709.0
+732	72	Accommodation and food services	45	72	13	45013	Beaufort County, South Carolina	no	522.0	11729.333333333334	241939.66666666666
+733	72	Accommodation and food services	45	72	15	45015	Berkeley County, South Carolina	no	256.8333333333333	4811.5	65330.166666666664
+734	72	Accommodation and food services	45	72	17	45017	Calhoun County, South Carolina	no	8.166666666666666	102.83333333333333	972.1666666666666
+735	72	Accommodation and food services	45	72	19	45019	Charleston County, South Carolina	no	1286.6666666666667	31212.166666666668	602228.6666666666
+736	72	Accommodation and food services	45	72	21	45021	Cherokee County, South Carolina	no	91.66666666666667	1737.5	22821.666666666668
+737	72	Accommodation and food services	45	72	23	45023	Chester County, South Carolina	no	44.0	616.1666666666666	7621.5
+738	72	Accommodation and food services	45	72	25	45025	Chesterfield County, South Carolina	no	63.5	878.1666666666666	10487.333333333334
+739	72	Accommodation and food services	45	72	27	45027	Clarendon County, South Carolina	no	54.833333333333336	666.5	7885.666666666667
+740	72	Accommodation and food services	45	72	29	45029	Colleton County, South Carolina	no	71.83333333333333	1300.1666666666667	21057.5
+741	72	Accommodation and food services	45	72	31	45031	Darlington County, South Carolina	no	86.83333333333333	1315.8333333333333	16255.0
+742	72	Accommodation and food services	45	72	33	45033	Dillon County, South Carolina	no	55.5	817.8333333333334	9654.0
+743	72	Accommodation and food services	45	72	35	45035	Dorchester County, South Carolina	no	185.0	3184.0	43737.166666666664
+744	72	Accommodation and food services	45	72	37	45037	Edgefield County, South Carolina	no	22.5	220.33333333333334	2460.5
+745	72	Accommodation and food services	45	72	39	45039	Fairfield County, South Carolina	no	19.666666666666668	210.83333333333334	2487.1666666666665
+746	72	Accommodation and food services	45	72	41	45041	Florence County, South Carolina	no	310.0	6106.333333333333	84234.66666666667
+747	72	Accommodation and food services	45	72	43	45043	Georgetown County, South Carolina	no	167.33333333333334	2975.1666666666665	54082.166666666664
+748	72	Accommodation and food services	45	72	45	45045	Greenville County, South Carolina	no	1117.0	22255.833333333332	340128.6666666667
+749	72	Accommodation and food services	45	72	47	45047	Greenwood County, South Carolina	no	129.5	2356.5	30632.333333333332
+750	72	Accommodation and food services	45	72	49	45049	Hampton County, South Carolina	no	31.5	357.5	3938.6666666666665
+751	72	Accommodation and food services	45	72	51	45051	Horry County, South Carolina	no	1249.5	27340.0	521771.3333333333
+752	72	Accommodation and food services	45	72	53	45053	Jasper County, South Carolina	no	61.666666666666664	702.5	10074.333333333334
+753	72	Accommodation and food services	45	72	55	45055	Kershaw County, South Carolina	no	94.5	1391.1666666666667	17413.166666666668
+754	72	Accommodation and food services	45	72	57	45057	Lancaster County, South Carolina	no	104.0	1877.1666666666667	23376.5
+755	72	Accommodation and food services	45	72	59	45059	Laurens County, South Carolina	no	86.16666666666667	1257.8333333333333	15741.333333333334
+756	72	Accommodation and food services	45	72	61	45061	Lee County, South Carolina	no	18.5	284.8333333333333	3124.8333333333335
+757	72	Accommodation and food services	45	72	63	45063	Lexington County, South Carolina	no	534.3333333333334	11208.333333333334	149180.5
+758	72	Accommodation and food services	45	72	65	45065	McCormick County, South Carolina	no	10.333333333333334	38.333333333333336	492.0
+759	72	Accommodation and food services	45	72	65	45065	McCormick County, South Carolina	yes	7.333333333333333	195.0	652.4444444444445
+760	72	Accommodation and food services	45	72	67	45067	Marion County, South Carolina	no	42.166666666666664	761.1666666666666	8644.0
+761	72	Accommodation and food services	45	72	69	45069	Marlboro County, South Carolina	no	25.333333333333332	312.8333333333333	3974.3333333333335
+762	72	Accommodation and food services	45	72	71	45071	Newberry County, South Carolina	no	61.833333333333336	897.5	11562.833333333334
+763	72	Accommodation and food services	45	72	73	45073	Oconee County, South Carolina	no	119.0	1714.0	22721.833333333332
+764	72	Accommodation and food services	45	72	75	45075	Orangeburg County, South Carolina	no	170.83333333333334	3255.0	42051.166666666664
+765	72	Accommodation and food services	45	72	77	45077	Pickens County, South Carolina	no	229.0	4616.833333333333	61685.5
+766	72	Accommodation and food services	45	72	79	45079	Richland County, South Carolina	no	883.5	19281.5	279834.6666666667
+767	72	Accommodation and food services	45	72	81	45081	Saluda County, South Carolina	no	14.166666666666666	122.16666666666667	1421.6666666666667
+768	72	Accommodation and food services	45	72	83	45083	Spartanburg County, South Carolina	no	544.5	10640.333333333334	145400.16666666666
+769	72	Accommodation and food services	45	72	85	45085	Sumter County, South Carolina	no	170.83333333333334	3420.3333333333335	43218.166666666664
+770	72	Accommodation and food services	45	72	87	45087	Union County, South Carolina	no	35.5	602.0	6561.666666666667
+771	72	Accommodation and food services	45	72	89	45089	Williamsburg County, South Carolina	no	28.666666666666668	361.0	3954.6666666666665
+772	72	Accommodation and food services	45	72	91	45091	York County, South Carolina	no	404.0	8119.0	112125.0
+773	81	Other services (except public administration)	45	81	1	45001	Abbeville County, South Carolina	no	51.0	239.5	4079.3333333333335
+774	81	Other services (except public administration)	45	81	3	45003	Aiken County, South Carolina	no	302.8333333333333	2070.6666666666665	42823.666666666664
+775	81	Other services (except public administration)	45	81	5	45005	Allendale County, South Carolina	no	10.833333333333334	20.666666666666668	398.3333333333333
+776	81	Other services (except public administration)	45	81	7	45007	Anderson County, South Carolina	no	459.5	4473.5	174188.16666666666
+777	81	Other services (except public administration)	45	81	9	45009	Bamberg County, South Carolina	no	41.0	140.16666666666666	1991.3333333333333
+778	81	Other services (except public administration)	45	81	11	45011	Barnwell County, South Carolina	no	59.833333333333336	303.8333333333333	5697.5
+779	81	Other services (except public administration)	45	81	13	45013	Beaufort County, South Carolina	no	410.6666666666667	3566.5	104543.0
+780	81	Other services (except public administration)	45	81	15	45015	Berkeley County, South Carolina	no	297.1666666666667	1886.0	46000.0
+781	81	Other services (except public administration)	45	81	17	45017	Calhoun County, South Carolina	no	33.5	106.83333333333333	1696.1666666666667
+782	81	Other services (except public administration)	45	81	19	45019	Charleston County, South Carolina	no	1099.6666666666667	8984.5	247169.33333333334
+783	81	Other services (except public administration)	45	81	21	45021	Cherokee County, South Carolina	no	151.5	707.6666666666666	13538.833333333334
+784	81	Other services (except public administration)	45	81	23	45023	Chester County, South Carolina	no	78.0	273.3333333333333	5543.0
+785	81	Other services (except public administration)	45	81	25	45025	Chesterfield County, South Carolina	no	83.83333333333333	337.8333333333333	5748.166666666667
+786	81	Other services (except public administration)	45	81	27	45027	Clarendon County, South Carolina	no	62.5	322.8333333333333	6159.0
+787	81	Other services (except public administration)	45	81	29	45029	Colleton County, South Carolina	no	71.0	273.0	4560.333333333333
+788	81	Other services (except public administration)	45	81	31	45031	Darlington County, South Carolina	no	148.83333333333334	821.5	15758.5
+789	81	Other services (except public administration)	45	81	33	45033	Dillon County, South Carolina	no	61.166666666666664	245.5	4503.0
+790	81	Other services (except public administration)	45	81	35	45035	Dorchester County, South Carolina	no	244.66666666666666	1551.0	36871.333333333336
+791	81	Other services (except public administration)	45	81	37	45037	Edgefield County, South Carolina	no	49.25	351.25	13766.25
+792	81	Other services (except public administration)	45	81	37	45037	Edgefield County, South Carolina	yes	50.5	515.5	16319.0
+793	81	Other services (except public administration)	45	81	39	45039	Fairfield County, South Carolina	no	42.666666666666664	129.33333333333334	2235.5
+794	81	Other services (except public administration)	45	81	41	45041	Florence County, South Carolina	no	328.8333333333333	2746.0	68150.5
+795	81	Other services (except public administration)	45	81	43	45043	Georgetown County, South Carolina	no	195.66666666666666	1065.0	23443.5
+796	81	Other services (except public administration)	45	81	45	45045	Greenville County, South Carolina	no	1195.5	10121.666666666666	266141.1666666667
+797	81	Other services (except public administration)	45	81	47	45047	Greenwood County, South Carolina	no	160.16666666666666	1021.5	18270.833333333332
+798	81	Other services (except public administration)	45	81	49	45049	Hampton County, South Carolina	no	45.0	194.83333333333334	2779.0
+799	81	Other services (except public administration)	45	81	51	45051	Horry County, South Carolina	no	704.1666666666666	4100.0	100094.33333333333
+800	81	Other services (except public administration)	45	81	53	45053	Jasper County, South Carolina	no	62.5	285.1666666666667	6679.833333333333
+801	81	Other services (except public administration)	45	81	55	45055	Kershaw County, South Carolina	no	140.5	794.0	16923.333333333332
+802	81	Other services (except public administration)	45	81	57	45057	Lancaster County, South Carolina	no	197.5	1112.0	44813.0
+803	81	Other services (except public administration)	45	81	59	45059	Laurens County, South Carolina	no	140.16666666666666	602.5	12452.666666666666
+804	81	Other services (except public administration)	45	81	61	45061	Lee County, South Carolina	no	25.666666666666668	76.16666666666667	1034.5
+805	81	Other services (except public administration)	45	81	63	45063	Lexington County, South Carolina	no	734.3333333333334	5304.333333333333	143384.83333333334
+806	81	Other services (except public administration)	45	81	65	45065	McCormick County, South Carolina	no	14.333333333333334	107.66666666666667	3107.0
+807	81	Other services (except public administration)	45	81	67	45067	Marion County, South Carolina	no	67.83333333333333	280.3333333333333	4704.833333333333
+808	81	Other services (except public administration)	45	81	69	45069	Marlboro County, South Carolina	no	32.833333333333336	165.66666666666666	2283.8333333333335
+809	81	Other services (except public administration)	45	81	71	45071	Newberry County, South Carolina	no	102.16666666666667	367.8333333333333	8437.0
+810	81	Other services (except public administration)	45	81	73	45073	Oconee County, South Carolina	no	197.5	1247.6666666666667	26614.0
+811	81	Other services (except public administration)	45	81	75	45075	Orangeburg County, South Carolina	no	206.5	948.1666666666666	18190.833333333332
+812	81	Other services (except public administration)	45	81	77	45077	Pickens County, South Carolina	no	264.1666666666667	1631.8333333333333	32218.666666666668
+813	81	Other services (except public administration)	45	81	79	45079	Richland County, South Carolina	no	978.5	8883.833333333334	231698.16666666666
+814	81	Other services (except public administration)	45	81	81	45081	Saluda County, South Carolina	no	39.333333333333336	126.83333333333333	2201.0
+815	81	Other services (except public administration)	45	81	83	45083	Spartanburg County, South Carolina	no	731.5	5402.833333333333	135173.66666666666
+816	81	Other services (except public administration)	45	81	85	45085	Sumter County, South Carolina	no	232.16666666666666	1713.8333333333333	37730.166666666664
+817	81	Other services (except public administration)	45	81	87	45087	Union County, South Carolina	no	79.0	336.8333333333333	5632.0
+818	81	Other services (except public administration)	45	81	89	45089	Williamsburg County, South Carolina	no	67.0	189.16666666666666	3269.6666666666665
+819	81	Other services (except public administration)	45	81	91	45091	York County, South Carolina	no	532.8333333333334	4190.0	109335.83333333333
+820	99	Industries not classified	45	99	1	45001	Abbeville County, South Carolina	yes	1.25	-0.30044466403162046	18.91586791831357
+821	99	Industries not classified	45	99	3	45003	Aiken County, South Carolina	no	4.2	2.8	86.2
+822	99	Industries not classified	45	99	3	45003	Aiken County, South Carolina	yes	1.0	1.2424242424242424	16.151515151515152
+823	99	Industries not classified	45	99	7	45007	Anderson County, South Carolina	no	8.666666666666666	8.166666666666666	186.5
+824	99	Industries not classified	45	99	9	45009	Bamberg County, South Carolina	yes	1.0	1.4110232762406676	20.773177426438295
+825	99	Industries not classified	45	99	11	45011	Barnwell County, South Carolina	no	3.0	3.0	35.0
+826	99	Industries not classified	45	99	11	45011	Barnwell County, South Carolina	yes	1.5	0.9057971014492754	24.64945652173913
+827	99	Industries not classified	45	99	13	45013	Beaufort County, South Carolina	no	7.6	7.4	487.8
+828	99	Industries not classified	45	99	13	45013	Beaufort County, South Carolina	yes	2.0	2.484848484848485	32.303030303030305
+829	99	Industries not classified	45	99	15	45015	Berkeley County, South Carolina	no	3.2	3.0	36.2
+830	99	Industries not classified	45	99	17	45017	Calhoun County, South Carolina	yes	1.0	1.2469696969696968	22.61628787878788
+831	99	Industries not classified	45	99	19	45019	Charleston County, South Carolina	no	21.833333333333332	38.0	727.8333333333334
+832	99	Industries not classified	45	99	21	45021	Cherokee County, South Carolina	yes	1.5	1.469252305665349	29.931777009222657
+833	99	Industries not classified	45	99	23	45023	Chester County, South Carolina	no	4.0	10.0	64.0
+834	99	Industries not classified	45	99	23	45023	Chester County, South Carolina	yes	1.75	-0.07816205533596843	26.23135704874835
+835	99	Industries not classified	45	99	25	45025	Chesterfield County, South Carolina	no	3.5	3.5	98.5
+836	99	Industries not classified	45	99	25	45025	Chesterfield County, South Carolina	yes	2.0	1.443181818181818	36.779545454545456
+837	99	Industries not classified	45	99	27	45027	Clarendon County, South Carolina	yes	1.8	0.8212121212121211	32.44863636363637
+838	99	Industries not classified	45	99	29	45029	Colleton County, South Carolina	yes	1.25	-0.09627799736495385	18.17836791831357
+839	99	Industries not classified	45	99	31	45031	Darlington County, South Carolina	yes	2.2	1.5186824769433465	41.869328063241106
+840	99	Industries not classified	45	99	33	45033	Dillon County, South Carolina	yes	1.5	-0.7971014492753622	23.668478260869563
+841	99	Industries not classified	45	99	35	45035	Dorchester County, South Carolina	no	4.5	2.75	34.25
+842	99	Industries not classified	45	99	35	45035	Dorchester County, South Carolina	yes	1.5	-1.0454545454545454	23.200757575757578
+843	99	Industries not classified	45	99	39	45039	Fairfield County, South Carolina	yes	1.0	1.4907773386034255	16.61923583662714
+844	99	Industries not classified	45	99	41	45041	Florence County, South Carolina	no	5.6	7.8	99.8
+845	99	Industries not classified	45	99	41	45041	Florence County, South Carolina	yes	4.0	-3.4000000000000004	48.7
+846	99	Industries not classified	45	99	43	45043	Georgetown County, South Carolina	no	3.0	2.5	50.0
+847	99	Industries not classified	45	99	43	45043	Georgetown County, South Carolina	yes	1.5	0.8174242424242424	22.239015151515154
+848	99	Industries not classified	45	99	45	45045	Greenville County, South Carolina	no	17.666666666666668	12.333333333333334	246.0
+849	99	Industries not classified	45	99	47	45047	Greenwood County, South Carolina	yes	1.5	1.1158651734738692	27.859189723320156
+850	99	Industries not classified	45	99	49	45049	Hampton County, South Carolina	no	3.0	2.0	48.0
+851	99	Industries not classified	45	99	49	45049	Hampton County, South Carolina	yes	1.3333333333333333	-0.8147342995169083	19.83731884057971
+852	99	Industries not classified	45	99	51	45051	Horry County, South Carolina	no	6.333333333333333	4.333333333333333	90.0
+853	99	Industries not classified	45	99	53	45053	Jasper County, South Carolina	yes	1.0	0.8457674571805005	18.62363306982872
+854	99	Industries not classified	45	99	55	45055	Kershaw County, South Carolina	no	5.0	2.3333333333333335	84.0
+855	99	Industries not classified	45	99	55	45055	Kershaw County, South Carolina	yes	1.6666666666666667	0.4624505928853755	26.858476064997802
+856	99	Industries not classified	45	99	57	45057	Lancaster County, South Carolina	no	6.333333333333333	6.666666666666667	62.333333333333336
+857	99	Industries not classified	45	99	57	45057	Lancaster County, South Carolina	yes	1.6666666666666667	-1.2636363636363637	23.583838383838383
+858	99	Industries not classified	45	99	59	45059	Laurens County, South Carolina	no	22.2	20.4	203.2
+859	99	Industries not classified	45	99	59	45059	Laurens County, South Carolina	yes	10.0	-8.5	121.75
+860	99	Industries not classified	45	99	61	45061	Lee County, South Carolina	yes	1.0	1.2424242424242424	16.151515151515152
+861	99	Industries not classified	45	99	63	45063	Lexington County, South Carolina	no	7.8	7.6	235.4
+862	99	Industries not classified	45	99	63	45063	Lexington County, South Carolina	yes	4.0	-3.4000000000000004	48.7
+863	99	Industries not classified	45	99	67	45067	Marion County, South Carolina	yes	1.5	0.8174242424242424	22.239015151515154
+864	99	Industries not classified	45	99	69	45069	Marlboro County, South Carolina	yes	1.0	1.2424242424242424	16.151515151515152
+865	99	Industries not classified	45	99	71	45071	Newberry County, South Carolina	yes	1.0	0.19621212121212117	14.163257575757576
+866	99	Industries not classified	45	99	73	45073	Oconee County, South Carolina	no	4.5	3.6666666666666665	93.66666666666667
+867	99	Industries not classified	45	99	75	45075	Orangeburg County, South Carolina	no	3.6666666666666665	12.0	55.333333333333336
+868	99	Industries not classified	45	99	75	45075	Orangeburg County, South Carolina	yes	2.0	2.4909090909090907	40.922727272727265
+869	99	Industries not classified	45	99	77	45077	Pickens County, South Carolina	no	3.0	6.0	158.0
+870	99	Industries not classified	45	99	77	45077	Pickens County, South Carolina	yes	1.75	0.8484189723320157	34.45052700922266
+871	99	Industries not classified	45	99	79	45079	Richland County, South Carolina	no	13.666666666666666	9.0	352.3333333333333
+872	99	Industries not classified	45	99	81	45081	Saluda County, South Carolina	yes	2.0	2.822046552481335	41.54635485287659
+873	99	Industries not classified	45	99	83	45083	Spartanburg County, South Carolina	no	8.8	8.6	265.0
+874	99	Industries not classified	45	99	83	45083	Spartanburg County, South Carolina	yes	4.0	4.96969696969697	64.60606060606061
+875	99	Industries not classified	45	99	85	45085	Sumter County, South Carolina	yes	2.0	0.9862758014931927	35.25701581027668
+876	99	Industries not classified	45	99	87	45087	Union County, South Carolina	yes	1.0	0.036231884057971064	16.105978260869563
+877	99	Industries not classified	45	99	89	45089	Williamsburg County, South Carolina	no	4.0	4.333333333333333	83.33333333333333
+878	99	Industries not classified	45	99	89	45089	Williamsburg County, South Carolina	yes	2.0	2.4909090909090907	40.922727272727265
+879	99	Industries not classified	45	99	91	45091	York County, South Carolina	no	7.666666666666667	8.0	133.5

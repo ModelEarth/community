@@ -1,387 +1,474 @@
-	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
-0	56001	56	1	Albany County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	5.0	13.8	360.2
-1	56001	56	1	Albany County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	5.2	8.8	959.6
-2	56001	56	1	Albany County, Wyoming	22	Utilities	22	8.0	17.0	1112.2
-3	56001	56	1	Albany County, Wyoming	23	Construction	23	119.4	658.4	28442.2
-4	56001	56	1	Albany County, Wyoming	42	Wholesale trade	42	24.2	100.4	5231.8
-5	56001	56	1	Albany County, Wyoming	51	Information	51	15.8	58.2	4755.4
-6	56001	56	1	Albany County, Wyoming	52	Finance and insurance	52	53.8	467.4	25721.2
-7	56001	56	1	Albany County, Wyoming	53	Real estate and rental and leasing	53	54.6	158.0	3537.8
-8	56001	56	1	Albany County, Wyoming	54	Professional, scientific, and technical services	54	124.2	786.6	41355.6
-10	56001	56	1	Albany County, Wyoming	56	Administrative and support and waste management and remediation services	56	43.8	171.8	6036.2
-11	56001	56	1	Albany County, Wyoming	61	Educational services	61	16.6	89.6	1274.2
-12	56001	56	1	Albany County, Wyoming	62	Health care and social assistance	62	123.6	2095.0	79046.8
-13	56001	56	1	Albany County, Wyoming	71	Arts, entertainment, and recreation	71	16.4	62.6	828.0
-14	56001	56	1	Albany County, Wyoming	72	Accommodation and food services	72	115.6	1899.2	26749.2
-15	56001	56	1	Albany County, Wyoming	81	Other services (except public administration)	81	105.8	541.2	12128.0
-16	56001	56	1	Albany County, Wyoming	99	Industries not classified	99	2.5	9.0	45.75
-18	56003	56	3	Big Horn County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	12.0	386.4	22681.4
-19	56003	56	3	Big Horn County, Wyoming	22	Utilities	22	4.0	12.2	1124.4
-20	56003	56	3	Big Horn County, Wyoming	23	Construction	23	57.8	364.0	18689.6
-21	56003	56	3	Big Horn County, Wyoming	42	Wholesale trade	42	9.0	24.2	1068.6
-23	56003	56	3	Big Horn County, Wyoming	52	Finance and insurance	52	11.2	89.6	4109.0
-24	56003	56	3	Big Horn County, Wyoming	53	Real estate and rental and leasing	53	9.0	8.8	101.6
-25	56003	56	3	Big Horn County, Wyoming	54	Professional, scientific, and technical services	54	20.2	34.6	2351.2
-27	56003	56	3	Big Horn County, Wyoming	56	Administrative and support and waste management and remediation services	56	9.2	43.6	1554.0
-29	56003	56	3	Big Horn County, Wyoming	62	Health care and social assistance	62	23.6	222.2	13034.8
-30	56003	56	3	Big Horn County, Wyoming	71	Arts, entertainment, and recreation	71	7.8	9.2	249.6
-31	56003	56	3	Big Horn County, Wyoming	72	Accommodation and food services	72	29.6	178.4	2366.8
-32	56003	56	3	Big Horn County, Wyoming	81	Other services (except public administration)	81	28.4	65.2	1255.8
-33	56003	56	3	Big Horn County, Wyoming	99	Industries not classified	99	2.75	2.0	23.75
-35	56005	56	5	Campbell County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	147.6	7147.2	588745.4
-36	56005	56	5	Campbell County, Wyoming	22	Utilities	22	12.6	160.6	15860.8
-37	56005	56	5	Campbell County, Wyoming	23	Construction	23	190.8	1976.6	117896.0
-38	56005	56	5	Campbell County, Wyoming	42	Wholesale trade	42	88.0	1436.4	93648.8
-39	56005	56	5	Campbell County, Wyoming	51	Information	51	15.8	200.6	8514.4
-40	56005	56	5	Campbell County, Wyoming	52	Finance and insurance	52	51.6	149.6	20982.8
-41	56005	56	5	Campbell County, Wyoming	53	Real estate and rental and leasing	53	82.0	329.0	14707.8
-42	56005	56	5	Campbell County, Wyoming	54	Professional, scientific, and technical services	54	115.8	715.8	37377.0
-43	56005	56	5	Campbell County, Wyoming	55	Management of companies and enterprises	55	12.4	113.0	14613.6
-44	56005	56	5	Campbell County, Wyoming	56	Administrative and support and waste management and remediation services	56	71.8	729.8	23092.4
-45	56005	56	5	Campbell County, Wyoming	61	Educational services	61	10.2	43.6	1787.8
-46	56005	56	5	Campbell County, Wyoming	62	Health care and social assistance	62	101.4	1711.4	91971.8
-47	56005	56	5	Campbell County, Wyoming	71	Arts, entertainment, and recreation	71	16.2	133.8	1957.0
-48	56005	56	5	Campbell County, Wyoming	72	Accommodation and food services	72	113.6	1811.0	29946.4
-49	56005	56	5	Campbell County, Wyoming	81	Other services (except public administration)	81	149.4	892.6	38862.0
-50	56005	56	5	Campbell County, Wyoming	99	Industries not classified	99	2.0	0.3333333333333333	20.0
-51	56007	56	7	Carbon County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	8.4	4.2	210.4
-52	56007	56	7	Carbon County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	16.8	163.8	10724.6
-53	56007	56	7	Carbon County, Wyoming	22	Utilities	22	8.6	26.6	1495.2
-54	56007	56	7	Carbon County, Wyoming	23	Construction	23	48.4	329.6	16784.6
-55	56007	56	7	Carbon County, Wyoming	42	Wholesale trade	42	6.0	15.6	1081.8
-56	56007	56	7	Carbon County, Wyoming	51	Information	51	10.8	71.0	1972.8
-57	56007	56	7	Carbon County, Wyoming	52	Finance and insurance	52	21.8	52.4	2414.4
-58	56007	56	7	Carbon County, Wyoming	53	Real estate and rental and leasing	53	27.6	96.8	6221.2
-59	56007	56	7	Carbon County, Wyoming	54	Professional, scientific, and technical services	54	34.6	85.2	4104.4
-60	56007	56	7	Carbon County, Wyoming	55	Management of companies and enterprises	55	2.2	5.4	109.8
-61	56007	56	7	Carbon County, Wyoming	56	Administrative and support and waste management and remediation services	56	16.0	56.0	2782.6
-63	56007	56	7	Carbon County, Wyoming	62	Health care and social assistance	62	50.4	582.8	22093.2
-64	56007	56	7	Carbon County, Wyoming	71	Arts, entertainment, and recreation	71	15.0	15.8	809.4
-65	56007	56	7	Carbon County, Wyoming	72	Accommodation and food services	72	81.2	799.4	15658.8
-66	56007	56	7	Carbon County, Wyoming	81	Other services (except public administration)	81	46.2	159.0	4259.0
-68	56009	56	9	Converse County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	3.0	2.0	51.4
-69	56009	56	9	Converse County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	43.4	1235.4	97729.8
-70	56009	56	9	Converse County, Wyoming	22	Utilities	22	14.2	104.8	18951.4
-71	56009	56	9	Converse County, Wyoming	23	Construction	23	64.0	572.2	32927.4
-72	56009	56	9	Converse County, Wyoming	42	Wholesale trade	42	10.6	79.8	3105.2
-73	56009	56	9	Converse County, Wyoming	51	Information	51	8.0	37.6	1448.2
-74	56009	56	9	Converse County, Wyoming	52	Finance and insurance	52	17.2	49.6	2050.8
-75	56009	56	9	Converse County, Wyoming	53	Real estate and rental and leasing	53	23.0	59.4	1241.2
-76	56009	56	9	Converse County, Wyoming	54	Professional, scientific, and technical services	54	33.6	127.0	7368.4
-78	56009	56	9	Converse County, Wyoming	56	Administrative and support and waste management and remediation services	56	18.8	70.0	2519.0
-80	56009	56	9	Converse County, Wyoming	62	Health care and social assistance	62	26.2	510.6	25905.6
-81	56009	56	9	Converse County, Wyoming	71	Arts, entertainment, and recreation	71	9.0	40.6	617.6
-82	56009	56	9	Converse County, Wyoming	72	Accommodation and food services	72	41.8	537.6	8149.6
-83	56009	56	9	Converse County, Wyoming	81	Other services (except public administration)	81	47.6	169.4	3818.8
-85	56011	56	11	Crook County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	7.0	18.6	836.6
-86	56011	56	11	Crook County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	14.8	149.2	10189.6
-88	56011	56	11	Crook County, Wyoming	23	Construction	23	45.8	206.6	9890.8
-89	56011	56	11	Crook County, Wyoming	42	Wholesale trade	42	8.2	14.4	1504.8
-91	56011	56	11	Crook County, Wyoming	52	Finance and insurance	52	8.6	35.8	2235.6
-92	56011	56	11	Crook County, Wyoming	53	Real estate and rental and leasing	53	7.0	9.2	298.6
-93	56011	56	11	Crook County, Wyoming	54	Professional, scientific, and technical services	54	15.0	22.8	1642.0
-94	56011	56	11	Crook County, Wyoming	56	Administrative and support and waste management and remediation services	56	5.0	5.2	319.0
-96	56011	56	11	Crook County, Wyoming	62	Health care and social assistance	62	14.2	198.8	6893.8
-97	56011	56	11	Crook County, Wyoming	71	Arts, entertainment, and recreation	71	7.8	18.2	1056.2
-98	56011	56	11	Crook County, Wyoming	72	Accommodation and food services	72	29.4	159.2	2452.0
-99	56011	56	11	Crook County, Wyoming	81	Other services (except public administration)	81	17.2	32.6	747.0
-100	56011	56	11	Crook County, Wyoming	99	Industries not classified	99	2.0	0.75	14.75
-101	56013	56	13	Fremont County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	4.6	0.8	170.2
-102	56013	56	13	Fremont County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	52.2	841.8	70091.2
-103	56013	56	13	Fremont County, Wyoming	22	Utilities	22	5.4	67.0	4997.6
-104	56013	56	13	Fremont County, Wyoming	23	Construction	23	189.8	883.2	39528.4
-105	56013	56	13	Fremont County, Wyoming	42	Wholesale trade	42	46.8	321.2	13950.6
-106	56013	56	13	Fremont County, Wyoming	51	Information	51	27.2	218.4	8026.4
-107	56013	56	13	Fremont County, Wyoming	52	Finance and insurance	52	61.2	300.6	14862.4
-108	56013	56	13	Fremont County, Wyoming	53	Real estate and rental and leasing	53	71.4	427.8	23080.6
-109	56013	56	13	Fremont County, Wyoming	54	Professional, scientific, and technical services	54	124.2	468.0	24106.8
-111	56013	56	13	Fremont County, Wyoming	56	Administrative and support and waste management and remediation services	56	42.2	209.4	11309.0
-112	56013	56	13	Fremont County, Wyoming	61	Educational services	61	16.0	192.6	6735.0
-113	56013	56	13	Fremont County, Wyoming	62	Health care and social assistance	62	154.4	1991.2	73082.8
-114	56013	56	13	Fremont County, Wyoming	71	Arts, entertainment, and recreation	71	33.0	374.2	8878.8
-115	56013	56	13	Fremont County, Wyoming	72	Accommodation and food services	72	127.4	1621.4	27425.4
-116	56013	56	13	Fremont County, Wyoming	81	Other services (except public administration)	81	111.8	417.8	11653.2
-117	56013	56	13	Fremont County, Wyoming	99	Industries not classified	99	4.8	4.2	255.8
-118	56015	56	15	Goshen County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	4.4	6.6	408.6
-121	56015	56	15	Goshen County, Wyoming	23	Construction	23	51.6	194.2	8286.6
-122	56015	56	15	Goshen County, Wyoming	42	Wholesale trade	42	20.6	227.6	6968.4
-123	56015	56	15	Goshen County, Wyoming	51	Information	51	7.4	38.4	937.4
-124	56015	56	15	Goshen County, Wyoming	52	Finance and insurance	52	19.0	103.8	5884.0
-125	56015	56	15	Goshen County, Wyoming	53	Real estate and rental and leasing	53	16.0	18.4	648.2
-126	56015	56	15	Goshen County, Wyoming	54	Professional, scientific, and technical services	54	24.4	141.8	4221.2
-128	56015	56	15	Goshen County, Wyoming	56	Administrative and support and waste management and remediation services	56	14.4	100.6	3329.2
-130	56015	56	15	Goshen County, Wyoming	62	Health care and social assistance	62	26.4	737.0	24933.0
-131	56015	56	15	Goshen County, Wyoming	71	Arts, entertainment, and recreation	71	3.4	4.6	74.8
-132	56015	56	15	Goshen County, Wyoming	72	Accommodation and food services	72	31.6	327.0	3804.8
-133	56015	56	15	Goshen County, Wyoming	81	Other services (except public administration)	81	44.8	187.0	3492.4
-136	56017	56	17	Hot Springs County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	13.4	243.0	17157.2
-138	56017	56	17	Hot Springs County, Wyoming	23	Construction	23	19.6	68.8	3105.6
-139	56017	56	17	Hot Springs County, Wyoming	42	Wholesale trade	42	3.6	9.4	467.2
-140	56017	56	17	Hot Springs County, Wyoming	51	Information	51	2.8	3.6	50.6
-141	56017	56	17	Hot Springs County, Wyoming	52	Finance and insurance	52	8.0	15.4	557.8
-142	56017	56	17	Hot Springs County, Wyoming	53	Real estate and rental and leasing	53	7.4	6.8	170.4
-143	56017	56	17	Hot Springs County, Wyoming	54	Professional, scientific, and technical services	54	12.8	49.6	1695.8
-144	56017	56	17	Hot Springs County, Wyoming	56	Administrative and support and waste management and remediation services	56	4.8	42.0	778.8
-146	56017	56	17	Hot Springs County, Wyoming	62	Health care and social assistance	62	18.4	411.8	15969.4
-147	56017	56	17	Hot Springs County, Wyoming	71	Arts, entertainment, and recreation	71	6.4	53.0	716.0
-148	56017	56	17	Hot Springs County, Wyoming	72	Accommodation and food services	72	23.8	230.2	3454.8
-149	56017	56	17	Hot Springs County, Wyoming	81	Other services (except public administration)	81	19.0	34.6	1815.4
-151	56019	56	19	Johnson County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	6.4	3.2	258.2
-152	56019	56	19	Johnson County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	20.8	102.0	5351.8
-153	56019	56	19	Johnson County, Wyoming	22	Utilities	22	5.0	5.6	585.8
-154	56019	56	19	Johnson County, Wyoming	23	Construction	23	60.6	283.2	14239.4
-155	56019	56	19	Johnson County, Wyoming	42	Wholesale trade	42	8.6	30.8	1188.2
-156	56019	56	19	Johnson County, Wyoming	51	Information	51	4.8	13.2	379.2
-157	56019	56	19	Johnson County, Wyoming	52	Finance and insurance	52	19.0	113.8	6947.0
-158	56019	56	19	Johnson County, Wyoming	53	Real estate and rental and leasing	53	18.4	44.4	1520.0
-159	56019	56	19	Johnson County, Wyoming	54	Professional, scientific, and technical services	54	51.4	160.0	7855.4
-161	56019	56	19	Johnson County, Wyoming	56	Administrative and support and waste management and remediation services	56	18.0	32.0	1374.0
-162	56019	56	19	Johnson County, Wyoming	61	Educational services	61	4.6	6.0	149.8
-163	56019	56	19	Johnson County, Wyoming	62	Health care and social assistance	62	30.6	158.4	6651.0
-164	56019	56	19	Johnson County, Wyoming	71	Arts, entertainment, and recreation	71	12.2	28.4	359.4
-165	56019	56	19	Johnson County, Wyoming	72	Accommodation and food services	72	42.2	395.4	7400.2
-166	56019	56	19	Johnson County, Wyoming	81	Other services (except public administration)	81	37.0	109.2	3660.4
-167	56019	56	19	Johnson County, Wyoming	99	Industries not classified	99	2.0	0.0	8.75
-168	56021	56	21	Laramie County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	4.4	10.4	566.4
-169	56021	56	21	Laramie County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	19.6	241.8	16526.0
-170	56021	56	21	Laramie County, Wyoming	22	Utilities	22	10.6	76.0	6461.2
-171	56021	56	21	Laramie County, Wyoming	23	Construction	23	302.8	2266.2	105908.2
-172	56021	56	21	Laramie County, Wyoming	42	Wholesale trade	42	130.0	988.8	49926.8
-173	56021	56	21	Laramie County, Wyoming	51	Information	51	68.4	675.4	35471.2
-174	56021	56	21	Laramie County, Wyoming	52	Finance and insurance	52	204.4	1671.0	86834.4
-175	56021	56	21	Laramie County, Wyoming	53	Real estate and rental and leasing	53	156.6	555.0	20238.4
-176	56021	56	21	Laramie County, Wyoming	54	Professional, scientific, and technical services	54	496.0	2156.2	125203.0
-177	56021	56	21	Laramie County, Wyoming	55	Management of companies and enterprises	55	18.0	149.2	11823.8
-178	56021	56	21	Laramie County, Wyoming	56	Administrative and support and waste management and remediation services	56	177.2	1184.4	33404.0
-179	56021	56	21	Laramie County, Wyoming	61	Educational services	61	35.0	362.6	9008.2
-180	56021	56	21	Laramie County, Wyoming	62	Health care and social assistance	62	338.6	7088.0	330078.6
-181	56021	56	21	Laramie County, Wyoming	71	Arts, entertainment, and recreation	71	38.4	421.8	7242.0
-182	56021	56	21	Laramie County, Wyoming	72	Accommodation and food services	72	205.6	4107.4	65125.4
-183	56021	56	21	Laramie County, Wyoming	81	Other services (except public administration)	81	271.6	1468.8	45556.4
-184	56021	56	21	Laramie County, Wyoming	99	Industries not classified	99	8.6	4.0	142.2
-185	56023	56	23	Lincoln County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	5.4	2.0	78.2
-186	56023	56	23	Lincoln County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	15.2	309.2	21825.8
-188	56023	56	23	Lincoln County, Wyoming	23	Construction	23	141.6	415.8	18675.6
-189	56023	56	23	Lincoln County, Wyoming	42	Wholesale trade	42	10.6	26.2	1962.6
-190	56023	56	23	Lincoln County, Wyoming	51	Information	51	13.8	99.2	6636.4
-191	56023	56	23	Lincoln County, Wyoming	52	Finance and insurance	52	23.6	116.0	4901.2
-192	56023	56	23	Lincoln County, Wyoming	53	Real estate and rental and leasing	53	16.4	21.4	887.2
-193	56023	56	23	Lincoln County, Wyoming	54	Professional, scientific, and technical services	54	60.8	107.0	4421.8
-195	56023	56	23	Lincoln County, Wyoming	56	Administrative and support and waste management and remediation services	56	35.0	99.8	5267.6
-197	56023	56	23	Lincoln County, Wyoming	62	Health care and social assistance	62	55.4	722.4	29891.8
-198	56023	56	23	Lincoln County, Wyoming	71	Arts, entertainment, and recreation	71	15.0	41.8	1021.4
-199	56023	56	23	Lincoln County, Wyoming	72	Accommodation and food services	72	60.2	388.8	5199.0
-200	56023	56	23	Lincoln County, Wyoming	81	Other services (except public administration)	81	45.4	139.2	4123.6
-202	56025	56	25	Natrona County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	5.0	7.6	299.0
-203	56025	56	25	Natrona County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	148.2	2480.6	213229.4
-204	56025	56	25	Natrona County, Wyoming	22	Utilities	22	12.8	69.6	6067.6
-205	56025	56	25	Natrona County, Wyoming	23	Construction	23	338.8	3248.2	175553.2
-206	56025	56	25	Natrona County, Wyoming	42	Wholesale trade	42	196.4	2751.6	174402.0
-207	56025	56	25	Natrona County, Wyoming	51	Information	51	33.8	508.0	21132.6
-208	56025	56	25	Natrona County, Wyoming	52	Finance and insurance	52	148.4	1025.0	55385.2
-209	56025	56	25	Natrona County, Wyoming	53	Real estate and rental and leasing	53	174.0	1224.0	76077.0
-210	56025	56	25	Natrona County, Wyoming	54	Professional, scientific, and technical services	54	279.0	1661.0	97131.6
-211	56025	56	25	Natrona County, Wyoming	55	Management of companies and enterprises	55	16.6	171.4	11441.8
-212	56025	56	25	Natrona County, Wyoming	56	Administrative and support and waste management and remediation services	56	160.0	1415.8	44855.2
-213	56025	56	25	Natrona County, Wyoming	61	Educational services	61	23.8	208.4	3391.6
-214	56025	56	25	Natrona County, Wyoming	62	Health care and social assistance	62	316.6	5533.4	277825.2
-215	56025	56	25	Natrona County, Wyoming	71	Arts, entertainment, and recreation	71	44.4	448.8	7971.0
-216	56025	56	25	Natrona County, Wyoming	72	Accommodation and food services	72	193.6	3969.8	65665.2
-217	56025	56	25	Natrona County, Wyoming	81	Other services (except public administration)	81	268.0	1669.4	63879.2
-218	56025	56	25	Natrona County, Wyoming	99	Industries not classified	99	4.2	4.8	234.4
-222	56027	56	27	Niobrara County, Wyoming	23	Construction	23	13.0	15.4	1015.6
-225	56027	56	27	Niobrara County, Wyoming	52	Finance and insurance	52	4.0	4.0	172.0
-226	56027	56	27	Niobrara County, Wyoming	53	Real estate and rental and leasing	53	4.2	2.0	46.2
-227	56027	56	27	Niobrara County, Wyoming	54	Professional, scientific, and technical services	54	4.6	4.8	211.4
-229	56027	56	27	Niobrara County, Wyoming	56	Administrative and support and waste management and remediation services	56	3.0	2.2	68.6
-231	56027	56	27	Niobrara County, Wyoming	62	Health care and social assistance	62	6.6	61.8	2170.2
-233	56027	56	27	Niobrara County, Wyoming	72	Accommodation and food services	72	11.0	85.0	1207.0
-234	56027	56	27	Niobrara County, Wyoming	81	Other services (except public administration)	81	10.4	10.6	367.2
-236	56029	56	29	Park County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	6.6	16.2	441.0
-237	56029	56	29	Park County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	27.8	122.6	13511.4
-238	56029	56	29	Park County, Wyoming	22	Utilities	22	4.6	21.8	3979.2
-239	56029	56	29	Park County, Wyoming	23	Construction	23	181.8	933.4	45816.8
-240	56029	56	29	Park County, Wyoming	42	Wholesale trade	42	39.2	283.6	12897.4
-241	56029	56	29	Park County, Wyoming	51	Information	51	26.4	186.8	7007.0
-242	56029	56	29	Park County, Wyoming	52	Finance and insurance	52	50.2	306.0	14425.6
-243	56029	56	29	Park County, Wyoming	53	Real estate and rental and leasing	53	60.2	89.0	2663.6
-244	56029	56	29	Park County, Wyoming	54	Professional, scientific, and technical services	54	99.6	379.4	18247.8
-245	56029	56	29	Park County, Wyoming	55	Management of companies and enterprises	55	3.4	2.4	322.8
-246	56029	56	29	Park County, Wyoming	56	Administrative and support and waste management and remediation services	56	54.6	201.4	5981.2
-247	56029	56	29	Park County, Wyoming	61	Educational services	61	10.0	39.2	725.2
-248	56029	56	29	Park County, Wyoming	62	Health care and social assistance	62	116.4	776.6	52955.8
-249	56029	56	29	Park County, Wyoming	71	Arts, entertainment, and recreation	71	44.4	281.0	7530.8
-250	56029	56	29	Park County, Wyoming	72	Accommodation and food services	72	123.4	1723.6	56544.0
-251	56029	56	29	Park County, Wyoming	81	Other services (except public administration)	81	102.6	372.8	9175.4
-252	56029	56	29	Park County, Wyoming	99	Industries not classified	99	5.8	4.2	290.8
-253	56031	56	31	Platte County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	2.6	1.0	16.8
-256	56031	56	31	Platte County, Wyoming	23	Construction	23	29.2	102.6	4245.4
-257	56031	56	31	Platte County, Wyoming	42	Wholesale trade	42	5.6	10.6	904.6
-258	56031	56	31	Platte County, Wyoming	51	Information	51	5.8	14.0	566.4
-259	56031	56	31	Platte County, Wyoming	52	Finance and insurance	52	17.4	77.2	4536.6
-260	56031	56	31	Platte County, Wyoming	53	Real estate and rental and leasing	53	9.0	30.2	1854.2
-261	56031	56	31	Platte County, Wyoming	54	Professional, scientific, and technical services	54	18.2	39.2	1600.4
-262	56031	56	31	Platte County, Wyoming	56	Administrative and support and waste management and remediation services	56	7.4	11.2	243.0
-263	56031	56	31	Platte County, Wyoming	62	Health care and social assistance	62	20.8	324.4	11144.2
-264	56031	56	31	Platte County, Wyoming	71	Arts, entertainment, and recreation	71	6.6	3.4	240.8
-265	56031	56	31	Platte County, Wyoming	72	Accommodation and food services	72	33.2	334.0	4323.2
-266	56031	56	31	Platte County, Wyoming	81	Other services (except public administration)	81	28.8	100.4	1488.2
-267	56031	56	31	Platte County, Wyoming	99	Industries not classified	99	3.4	1.6	30.6
-268	56033	56	33	Sheridan County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	6.2	6.0	207.6
-269	56033	56	33	Sheridan County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	16.8	81.2	6235.6
-271	56033	56	33	Sheridan County, Wyoming	23	Construction	23	166.8	955.0	45108.2
-272	56033	56	33	Sheridan County, Wyoming	42	Wholesale trade	42	39.4	220.4	9697.4
-273	56033	56	33	Sheridan County, Wyoming	51	Information	51	17.6	199.8	6592.8
-274	56033	56	33	Sheridan County, Wyoming	52	Finance and insurance	52	54.0	132.8	19681.2
-275	56033	56	33	Sheridan County, Wyoming	53	Real estate and rental and leasing	53	63.2	186.8	5933.4
-276	56033	56	33	Sheridan County, Wyoming	54	Professional, scientific, and technical services	54	130.6	688.8	34208.8
-277	56033	56	33	Sheridan County, Wyoming	55	Management of companies and enterprises	55	5.6	12.4	974.0
-278	56033	56	33	Sheridan County, Wyoming	56	Administrative and support and waste management and remediation services	56	56.4	216.2	6332.0
-279	56033	56	33	Sheridan County, Wyoming	61	Educational services	61	4.8	2.4	111.4
-280	56033	56	33	Sheridan County, Wyoming	62	Health care and social assistance	62	126.8	2192.0	90036.6
-281	56033	56	33	Sheridan County, Wyoming	71	Arts, entertainment, and recreation	71	24.4	214.0	4335.6
-282	56033	56	33	Sheridan County, Wyoming	72	Accommodation and food services	72	101.8	1626.2	27389.4
-283	56033	56	33	Sheridan County, Wyoming	81	Other services (except public administration)	81	103.6	444.8	11613.8
-284	56033	56	33	Sheridan County, Wyoming	99	Industries not classified	99	3.4	4.4	46.4
-285	56035	56	35	Sublette County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	4.6	3.0	119.2
-286	56035	56	35	Sublette County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	47.2	1265.2	139112.2
-288	56035	56	35	Sublette County, Wyoming	23	Construction	23	74.0	339.4	19489.0
-289	56035	56	35	Sublette County, Wyoming	42	Wholesale trade	42	11.0	43.0	3642.6
-290	56035	56	35	Sublette County, Wyoming	51	Information	51	4.0	2.8	156.8
-291	56035	56	35	Sublette County, Wyoming	52	Finance and insurance	52	16.2	29.6	3261.8
-292	56035	56	35	Sublette County, Wyoming	53	Real estate and rental and leasing	53	27.6	87.4	5100.2
-293	56035	56	35	Sublette County, Wyoming	54	Professional, scientific, and technical services	54	51.8	121.6	5494.0
-295	56035	56	35	Sublette County, Wyoming	56	Administrative and support and waste management and remediation services	56	15.2	70.4	3193.2
-297	56035	56	35	Sublette County, Wyoming	62	Health care and social assistance	62	21.8	181.6	6047.6
-298	56035	56	35	Sublette County, Wyoming	71	Arts, entertainment, and recreation	71	7.4	8.4	428.8
-299	56035	56	35	Sublette County, Wyoming	72	Accommodation and food services	72	40.6	324.8	9830.2
-300	56035	56	35	Sublette County, Wyoming	81	Other services (except public administration)	81	31.8	145.8	6909.6
-302	56037	56	37	Sweetwater County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	2.2	0.0	18.6
-303	56037	56	37	Sweetwater County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	97.0	3719.8	333261.6
-305	56037	56	37	Sweetwater County, Wyoming	23	Construction	23	137.4	925.4	49607.4
-306	56037	56	37	Sweetwater County, Wyoming	42	Wholesale trade	42	81.0	824.4	49702.6
-307	56037	56	37	Sweetwater County, Wyoming	51	Information	51	18.4	110.2	5937.0
-308	56037	56	37	Sweetwater County, Wyoming	52	Finance and insurance	52	51.0	316.2	15269.6
-309	56037	56	37	Sweetwater County, Wyoming	53	Real estate and rental and leasing	53	81.8	358.4	18921.2
-310	56037	56	37	Sweetwater County, Wyoming	54	Professional, scientific, and technical services	54	122.4	501.6	28988.4
-311	56037	56	37	Sweetwater County, Wyoming	55	Management of companies and enterprises	55	9.0	116.2	12060.4
-312	56037	56	37	Sweetwater County, Wyoming	56	Administrative and support and waste management and remediation services	56	49.6	257.0	15993.8
-313	56037	56	37	Sweetwater County, Wyoming	61	Educational services	61	8.6	40.2	461.8
-314	56037	56	37	Sweetwater County, Wyoming	62	Health care and social assistance	62	101.0	1362.6	54524.0
-315	56037	56	37	Sweetwater County, Wyoming	71	Arts, entertainment, and recreation	71	11.8	58.0	893.0
-316	56037	56	37	Sweetwater County, Wyoming	72	Accommodation and food services	72	114.4	1874.8	30160.8
-317	56037	56	37	Sweetwater County, Wyoming	81	Other services (except public administration)	81	114.4	541.8	17890.2
-318	56037	56	37	Sweetwater County, Wyoming	99	Industries not classified	99	2.4	0.0	10.2
-319	56039	56	39	Teton County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	6.4	7.8	391.2
-322	56039	56	39	Teton County, Wyoming	23	Construction	23	276.2	1656.6	94614.0
-323	56039	56	39	Teton County, Wyoming	42	Wholesale trade	42	35.4	140.6	20508.6
-324	56039	56	39	Teton County, Wyoming	51	Information	51	41.2	241.4	19495.6
-325	56039	56	39	Teton County, Wyoming	52	Finance and insurance	52	112.4	248.2	34821.4
-326	56039	56	39	Teton County, Wyoming	53	Real estate and rental and leasing	53	168.6	610.0	32403.4
-327	56039	56	39	Teton County, Wyoming	54	Professional, scientific, and technical services	54	300.0	861.8	59711.8
-328	56039	56	39	Teton County, Wyoming	55	Management of companies and enterprises	55	10.4	49.0	3983.8
-329	56039	56	39	Teton County, Wyoming	56	Administrative and support and waste management and remediation services	56	144.6	649.4	27713.0
-330	56039	56	39	Teton County, Wyoming	61	Educational services	61	36.2	492.0	15495.2
-331	56039	56	39	Teton County, Wyoming	62	Health care and social assistance	62	129.6	1220.0	65769.0
-332	56039	56	39	Teton County, Wyoming	71	Arts, entertainment, and recreation	71	94.4	903.4	43359.8
-333	56039	56	39	Teton County, Wyoming	72	Accommodation and food services	72	187.2	4770.0	130048.2
-334	56039	56	39	Teton County, Wyoming	81	Other services (except public administration)	81	132.2	599.8	23187.0
-335	56039	56	39	Teton County, Wyoming	99	Industries not classified	99	7.4	11.2	215.4
-336	56041	56	41	Uinta County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	25.8	802.0	64944.4
-337	56041	56	41	Uinta County, Wyoming	22	Utilities	22	4.8	28.0	2322.2
-338	56041	56	41	Uinta County, Wyoming	23	Construction	23	70.2	1983.4	112416.6
-339	56041	56	41	Uinta County, Wyoming	42	Wholesale trade	42	22.8	242.0	15193.0
-340	56041	56	41	Uinta County, Wyoming	51	Information	51	12.6	163.8	10107.4
-341	56041	56	41	Uinta County, Wyoming	52	Finance and insurance	52	30.8	59.2	2751.6
-342	56041	56	41	Uinta County, Wyoming	53	Real estate and rental and leasing	53	36.0	118.6	4581.6
-343	56041	56	41	Uinta County, Wyoming	54	Professional, scientific, and technical services	54	54.2	270.4	15012.4
-344	56041	56	41	Uinta County, Wyoming	55	Management of companies and enterprises	55	3.6	19.4	1248.4
-345	56041	56	41	Uinta County, Wyoming	56	Administrative and support and waste management and remediation services	56	16.0	77.6	2694.0
-346	56041	56	41	Uinta County, Wyoming	61	Educational services	61	3.4	3.0	67.0
-347	56041	56	41	Uinta County, Wyoming	62	Health care and social assistance	62	68.2	1383.4	60153.6
-348	56041	56	41	Uinta County, Wyoming	71	Arts, entertainment, and recreation	71	6.0	14.6	386.6
-349	56041	56	41	Uinta County, Wyoming	72	Accommodation and food services	72	49.2	660.4	9336.6
-350	56041	56	41	Uinta County, Wyoming	81	Other services (except public administration)	81	42.2	119.0	3523.6
-353	56043	56	43	Washakie County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	16.0	103.6	6661.2
-354	56043	56	43	Washakie County, Wyoming	22	Utilities	22	6.0	24.0	2120.2
-355	56043	56	43	Washakie County, Wyoming	23	Construction	23	51.2	245.6	11755.8
-356	56043	56	43	Washakie County, Wyoming	42	Wholesale trade	42	12.4	69.0	3733.0
-357	56043	56	43	Washakie County, Wyoming	51	Information	51	4.6	59.8	2825.8
-358	56043	56	43	Washakie County, Wyoming	52	Finance and insurance	52	19.4	79.0	3766.6
-359	56043	56	43	Washakie County, Wyoming	53	Real estate and rental and leasing	53	15.0	55.2	1750.4
-360	56043	56	43	Washakie County, Wyoming	54	Professional, scientific, and technical services	54	37.2	120.0	5279.2
-362	56043	56	43	Washakie County, Wyoming	56	Administrative and support and waste management and remediation services	56	16.2	28.8	941.2
-364	56043	56	43	Washakie County, Wyoming	62	Health care and social assistance	62	30.8	781.0	22775.2
-365	56043	56	43	Washakie County, Wyoming	71	Arts, entertainment, and recreation	71	7.2	13.8	164.8
-366	56043	56	43	Washakie County, Wyoming	72	Accommodation and food services	72	31.6	291.4	3652.2
-367	56043	56	43	Washakie County, Wyoming	81	Other services (except public administration)	81	34.2	129.6	2334.6
-370	56045	56	45	Weston County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	23.6	113.4	7256.8
-372	56045	56	45	Weston County, Wyoming	23	Construction	23	24.4	141.4	6601.2
-373	56045	56	45	Weston County, Wyoming	42	Wholesale trade	42	6.4	18.4	709.2
-374	56045	56	45	Weston County, Wyoming	51	Information	51	2.8	11.8	243.8
-375	56045	56	45	Weston County, Wyoming	52	Finance and insurance	52	8.4	34.8	2491.4
-376	56045	56	45	Weston County, Wyoming	53	Real estate and rental and leasing	53	3.8	5.0	197.6
-377	56045	56	45	Weston County, Wyoming	54	Professional, scientific, and technical services	54	12.0	24.2	867.8
-379	56045	56	45	Weston County, Wyoming	56	Administrative and support and waste management and remediation services	56	7.8	81.6	3377.4
-381	56045	56	45	Weston County, Wyoming	62	Health care and social assistance	62	23.6	364.8	11339.4
-382	56045	56	45	Weston County, Wyoming	71	Arts, entertainment, and recreation	71	2.2	1.0	27.0
-383	56045	56	45	Weston County, Wyoming	72	Accommodation and food services	72	25.0	197.6	2304.2
-384	56045	56	45	Weston County, Wyoming	81	Other services (except public administration)	81	19.2	54.4	1878.0
-0	56001	56	1	Albany County, Wyoming	55	Management of companies and enterprises	55	1.0		
-1	56003	56	3	Big Horn County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	3.0		
-2	56003	56	3	Big Horn County, Wyoming	51	Information	51	6.0		
-3	56003	56	3	Big Horn County, Wyoming	55	Management of companies and enterprises	55	1.0		
-4	56003	56	3	Big Horn County, Wyoming	61	Educational services	61	1.0		
-5	56005	56	5	Campbell County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	1.4		
-6	56007	56	7	Carbon County, Wyoming	61	Educational services	61	1.2		
-7	56007	56	7	Carbon County, Wyoming	99	Industries not classified	99	1.5		
-8	56009	56	9	Converse County, Wyoming	55	Management of companies and enterprises	55	1.0		
-9	56009	56	9	Converse County, Wyoming	61	Educational services	61	1.4		
-10	56009	56	9	Converse County, Wyoming	99	Industries not classified	99	1.6		
-11	56011	56	11	Crook County, Wyoming	22	Utilities	22	2.0		
-12	56011	56	11	Crook County, Wyoming	51	Information	51	1.6		
-13	56011	56	11	Crook County, Wyoming	61	Educational services	61	1.0		
-14	56013	56	13	Fremont County, Wyoming	55	Management of companies and enterprises	55	1.6666666666666667		
-15	56015	56	15	Goshen County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	1.2		
-16	56015	56	15	Goshen County, Wyoming	22	Utilities	22	3.0		
-17	56015	56	15	Goshen County, Wyoming	55	Management of companies and enterprises	55	2.0		
-18	56015	56	15	Goshen County, Wyoming	61	Educational services	61	1.0		
-19	56015	56	15	Goshen County, Wyoming	99	Industries not classified	99	1.25		
-20	56017	56	17	Hot Springs County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	1.0		
-21	56017	56	17	Hot Springs County, Wyoming	22	Utilities	22	3.0		
-22	56017	56	17	Hot Springs County, Wyoming	61	Educational services	61	1.5		
-23	56017	56	17	Hot Springs County, Wyoming	99	Industries not classified	99	1.0		
-24	56019	56	19	Johnson County, Wyoming	55	Management of companies and enterprises	55	1.0		
-25	56023	56	23	Lincoln County, Wyoming	22	Utilities	22	5.0		
-26	56023	56	23	Lincoln County, Wyoming	55	Management of companies and enterprises	55	1.5		
-27	56023	56	23	Lincoln County, Wyoming	61	Educational services	61	2.4		
-28	56023	56	23	Lincoln County, Wyoming	99	Industries not classified	99	1.3333333333333333		
-29	56027	56	27	Niobrara County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	1.0		
-30	56027	56	27	Niobrara County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	2.0		
-31	56027	56	27	Niobrara County, Wyoming	22	Utilities	22	2.0		
-32	56027	56	27	Niobrara County, Wyoming	42	Wholesale trade	42	2.6		
-33	56027	56	27	Niobrara County, Wyoming	51	Information	51	1.2		
-34	56027	56	27	Niobrara County, Wyoming	55	Management of companies and enterprises	55	2.0		
-35	56027	56	27	Niobrara County, Wyoming	61	Educational services	61	1.0		
-36	56027	56	27	Niobrara County, Wyoming	71	Arts, entertainment, and recreation	71	2.2		
-37	56027	56	27	Niobrara County, Wyoming	99	Industries not classified	99	1.0		
-38	56031	56	31	Platte County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	1.8		
-39	56031	56	31	Platte County, Wyoming	22	Utilities	22	5.4		
-40	56033	56	33	Sheridan County, Wyoming	22	Utilities	22	3.0		
-41	56035	56	35	Sublette County, Wyoming	22	Utilities	22	2.0		
-42	56035	56	35	Sublette County, Wyoming	55	Management of companies and enterprises	55	1.0		
-43	56035	56	35	Sublette County, Wyoming	61	Educational services	61	2.0		
-44	56035	56	35	Sublette County, Wyoming	99	Industries not classified	99	1.0		
-45	56037	56	37	Sweetwater County, Wyoming	22	Utilities	22	6.8		
-46	56039	56	39	Teton County, Wyoming	21	Mining, quarrying, and oil and gas extraction	21	2.4		
-47	56039	56	39	Teton County, Wyoming	22	Utilities	22	2.0		
-48	56041	56	41	Uinta County, Wyoming	99	Industries not classified	99	1.0		
-49	56043	56	43	Washakie County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	1.0		
-50	56043	56	43	Washakie County, Wyoming	55	Management of companies and enterprises	55	1.0		
-51	56043	56	43	Washakie County, Wyoming	61	Educational services	61	1.0		
-52	56043	56	43	Washakie County, Wyoming	99	Industries not classified	99	1.3333333333333333		
-53	56045	56	45	Weston County, Wyoming	11	Agriculture, forestry, fishing and hunting	11	2.8		
-54	56045	56	45	Weston County, Wyoming	22	Utilities	22	3.2		
-55	56045	56	45	Weston County, Wyoming	55	Management of companies and enterprises	55	1.4		
-56	56045	56	45	Weston County, Wyoming	61	Educational services	61	1.0		
-57	56045	56	45	Weston County, Wyoming	99	Industries not classified	99	1.25		
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
+0	11	Agriculture, forestry, fishing and hunting	56	11	1	56001	Albany County, Wyoming	no	5.5	34.5	900.5
+1	11	Agriculture, forestry, fishing and hunting	56	11	1	56001	Albany County, Wyoming	yes	4.666666666666667	23.714360323055974	434.79618749183965
+2	11	Agriculture, forestry, fishing and hunting	56	11	3	56003	Big Horn County, Wyoming	yes	3.0	14.535971635102069	273.78857671901153
+3	11	Agriculture, forestry, fishing and hunting	56	11	5	56005	Campbell County, Wyoming	yes	1.4	6.7797815658685225	127.1880710750276
+4	11	Agriculture, forestry, fishing and hunting	56	11	7	56007	Carbon County, Wyoming	no	8.4	4.2	210.4
+5	11	Agriculture, forestry, fishing and hunting	56	11	9	56009	Converse County, Wyoming	no	3.0	5.0	128.5
+6	11	Agriculture, forestry, fishing and hunting	56	11	9	56009	Converse County, Wyoming	yes	3.0	15.331318896536288	280.1696043869957
+7	11	Agriculture, forestry, fishing and hunting	56	11	11	56011	Crook County, Wyoming	no	7.0	18.6	836.6
+8	11	Agriculture, forestry, fishing and hunting	56	11	13	56013	Fremont County, Wyoming	no	4.6	0.8	170.2
+9	11	Agriculture, forestry, fishing and hunting	56	11	15	56015	Goshen County, Wyoming	no	4.4	6.6	408.6
+10	11	Agriculture, forestry, fishing and hunting	56	11	17	56017	Hot Springs County, Wyoming	yes	1.0	5.1000000000000005	91.5
+11	11	Agriculture, forestry, fishing and hunting	56	11	19	56019	Johnson County, Wyoming	no	6.4	3.2	258.2
+12	11	Agriculture, forestry, fishing and hunting	56	11	21	56021	Laramie County, Wyoming	no	4.4	10.4	566.4
+13	11	Agriculture, forestry, fishing and hunting	56	11	23	56023	Lincoln County, Wyoming	no	5.25	2.5	97.75
+14	11	Agriculture, forestry, fishing and hunting	56	11	23	56023	Lincoln County, Wyoming	yes	6.0	29.478260869565215	546.2608695652174
+15	11	Agriculture, forestry, fishing and hunting	56	11	25	56025	Natrona County, Wyoming	no	6.0	19.0	747.5
+16	11	Agriculture, forestry, fishing and hunting	56	11	25	56025	Natrona County, Wyoming	yes	4.333333333333333	22.07943968813534	403.9072986029508
+17	11	Agriculture, forestry, fishing and hunting	56	11	27	56027	Niobrara County, Wyoming	yes	1.0	4.913043478260869	91.04347826086956
+18	11	Agriculture, forestry, fishing and hunting	56	11	29	56029	Park County, Wyoming	no	6.5	40.5	1102.5
+19	11	Agriculture, forestry, fishing and hunting	56	11	29	56029	Park County, Wyoming	yes	6.666666666666667	33.938000111913155	621.0348609479043
+20	11	Agriculture, forestry, fishing and hunting	56	11	31	56031	Platte County, Wyoming	no	3.0	5.0	84.0
+21	11	Agriculture, forestry, fishing and hunting	56	11	31	56031	Platte County, Wyoming	yes	2.5	11.847383521296564	226.8759747890183
+22	11	Agriculture, forestry, fishing and hunting	56	11	33	56033	Sheridan County, Wyoming	no	5.5	15.0	519.0
+23	11	Agriculture, forestry, fishing and hunting	56	11	33	56033	Sheridan County, Wyoming	yes	6.666666666666667	34.338313468748254	624.6455150802977
+24	11	Agriculture, forestry, fishing and hunting	56	11	35	56035	Sublette County, Wyoming	no	4.6	3.0	119.2
+25	11	Agriculture, forestry, fishing and hunting	56	11	37	56037	Sweetwater County, Wyoming	no	3.0	0.0	93.0
+26	11	Agriculture, forestry, fishing and hunting	56	11	37	56037	Sweetwater County, Wyoming	yes	2.0	9.486410436410436	181.17669942669943
+27	11	Agriculture, forestry, fishing and hunting	56	11	39	56039	Teton County, Wyoming	no	6.25	9.75	489.0
+28	11	Agriculture, forestry, fishing and hunting	56	11	39	56039	Teton County, Wyoming	yes	7.0	34.33333333333333	648.6666666666666
+29	11	Agriculture, forestry, fishing and hunting	56	11	43	56043	Washakie County, Wyoming	yes	1.0	4.913043478260869	91.04347826086956
+30	11	Agriculture, forestry, fishing and hunting	56	11	45	56045	Weston County, Wyoming	yes	2.8	13.228815907946341	252.74623437666915
+31	21	Mining, quarrying, and oil and gas extraction	56	21	1	56001	Albany County, Wyoming	no	5.2	8.8	959.6
+32	21	Mining, quarrying, and oil and gas extraction	56	21	3	56003	Big Horn County, Wyoming	no	12.0	386.4	22681.4
+33	21	Mining, quarrying, and oil and gas extraction	56	21	5	56005	Campbell County, Wyoming	no	147.6	7147.2	588745.4
+34	21	Mining, quarrying, and oil and gas extraction	56	21	7	56007	Carbon County, Wyoming	no	16.8	163.8	10724.6
+35	21	Mining, quarrying, and oil and gas extraction	56	21	9	56009	Converse County, Wyoming	no	43.4	1235.4	97729.8
+36	21	Mining, quarrying, and oil and gas extraction	56	21	11	56011	Crook County, Wyoming	no	15.0	248.66666666666666	16982.666666666668
+37	21	Mining, quarrying, and oil and gas extraction	56	21	11	56011	Crook County, Wyoming	yes	14.5	1203.356762158561	105551.57461692205
+38	21	Mining, quarrying, and oil and gas extraction	56	21	13	56013	Fremont County, Wyoming	no	52.2	841.8	70091.2
+39	21	Mining, quarrying, and oil and gas extraction	56	21	15	56015	Goshen County, Wyoming	yes	1.2	259.35617915852333	21180.74336997926
+40	21	Mining, quarrying, and oil and gas extraction	56	21	17	56017	Hot Springs County, Wyoming	no	13.4	243.0	17157.2
+41	21	Mining, quarrying, and oil and gas extraction	56	21	19	56019	Johnson County, Wyoming	no	20.8	102.0	5351.8
+42	21	Mining, quarrying, and oil and gas extraction	56	21	21	56021	Laramie County, Wyoming	no	22.0	403.0	27543.333333333332
+43	21	Mining, quarrying, and oil and gas extraction	56	21	21	56021	Laramie County, Wyoming	yes	16.0	1395.1499852811303	115080.19590815426
+44	21	Mining, quarrying, and oil and gas extraction	56	21	23	56023	Lincoln County, Wyoming	no	16.333333333333332	515.3333333333334	36376.333333333336
+45	21	Mining, quarrying, and oil and gas extraction	56	21	23	56023	Lincoln County, Wyoming	yes	13.5	1182.320576979688	97195.12040035325
+46	21	Mining, quarrying, and oil and gas extraction	56	21	25	56025	Natrona County, Wyoming	no	148.2	2480.6	213229.4
+47	21	Mining, quarrying, and oil and gas extraction	56	21	27	56027	Niobrara County, Wyoming	yes	2.0	482.2007304100699	39454.05418181898
+48	21	Mining, quarrying, and oil and gas extraction	56	21	29	56029	Park County, Wyoming	no	27.5	306.5	33778.5
+49	21	Mining, quarrying, and oil and gas extraction	56	21	29	56029	Park County, Wyoming	yes	28.0	2400.2660990863974	203931.61589689562
+50	21	Mining, quarrying, and oil and gas extraction	56	21	31	56031	Platte County, Wyoming	yes	1.8	463.6943501674409	38064.14889542077
+51	21	Mining, quarrying, and oil and gas extraction	56	21	33	56033	Sheridan County, Wyoming	no	15.75	101.5	7794.5
+52	21	Mining, quarrying, and oil and gas extraction	56	21	33	56033	Sheridan County, Wyoming	yes	21.0	1916.860465116279	152640.2093023256
+53	21	Mining, quarrying, and oil and gas extraction	56	21	35	56035	Sublette County, Wyoming	no	47.2	1265.2	139112.2
+54	21	Mining, quarrying, and oil and gas extraction	56	21	37	56037	Sweetwater County, Wyoming	no	97.0	3719.8	333261.6
+55	21	Mining, quarrying, and oil and gas extraction	56	21	39	56039	Teton County, Wyoming	yes	2.4	517.1755317053304	42332.848941901415
+56	21	Mining, quarrying, and oil and gas extraction	56	21	41	56041	Uinta County, Wyoming	no	26.0	1002.5	81180.5
+57	21	Mining, quarrying, and oil and gas extraction	56	21	41	56041	Uinta County, Wyoming	yes	25.0	2058.5526315789475	186111.18421052632
+58	21	Mining, quarrying, and oil and gas extraction	56	21	43	56043	Washakie County, Wyoming	no	16.0	103.6	6661.2
+59	21	Mining, quarrying, and oil and gas extraction	56	21	45	56045	Weston County, Wyoming	no	23.6	113.4	7256.8
+60	22	Utilities	56	22	1	56001	Albany County, Wyoming	no	8.0	42.5	2780.5
+61	22	Utilities	56	22	1	56001	Albany County, Wyoming	yes	8.0	-7.202098153554464	-2146.075401764722
+62	22	Utilities	56	22	3	56003	Big Horn County, Wyoming	no	4.0	12.2	1124.4
+63	22	Utilities	56	22	5	56005	Campbell County, Wyoming	no	14.0	401.5	39652.0
+64	22	Utilities	56	22	5	56005	Campbell County, Wyoming	yes	11.666666666666666	-10.686056482172987	-3183.332641827787
+65	22	Utilities	56	22	7	56007	Carbon County, Wyoming	no	8.5	66.5	3738.0
+66	22	Utilities	56	22	7	56007	Carbon County, Wyoming	yes	8.666666666666666	-7.710774662230972	-2298.0953447846655
+67	22	Utilities	56	22	9	56009	Converse County, Wyoming	no	14.25	131.0	23689.25
+68	22	Utilities	56	22	9	56009	Converse County, Wyoming	yes	14.0	-11.606837606837606	-1486.3931623931624
+69	22	Utilities	56	22	11	56011	Crook County, Wyoming	yes	2.0	27.673970991252542	2447.4486897352917
+70	22	Utilities	56	22	13	56013	Fremont County, Wyoming	no	5.4	67.0	4997.6
+71	22	Utilities	56	22	15	56015	Goshen County, Wyoming	yes	3.0	41.51095648687882	3671.1730346029376
+72	22	Utilities	56	22	17	56017	Hot Springs County, Wyoming	yes	3.0	41.51095648687882	3671.1730346029376
+73	22	Utilities	56	22	19	56019	Johnson County, Wyoming	no	5.0	14.0	1464.5
+74	22	Utilities	56	22	19	56019	Johnson County, Wyoming	yes	5.0	-4.501311345971541	-1341.2971261029513
+75	22	Utilities	56	22	21	56021	Laramie County, Wyoming	no	9.0	190.0	16153.0
+76	22	Utilities	56	22	21	56021	Laramie County, Wyoming	yes	11.666666666666666	-10.845319010367554	-3182.942494398805
+77	22	Utilities	56	22	23	56023	Lincoln County, Wyoming	yes	5.0	69.18492747813136	6118.621724338229
+78	22	Utilities	56	22	25	56025	Natrona County, Wyoming	no	13.5	174.0	15169.0
+79	22	Utilities	56	22	25	56025	Natrona County, Wyoming	yes	12.333333333333334	-11.123530550715017	-3173.26409979808
+80	22	Utilities	56	22	27	56027	Niobrara County, Wyoming	yes	2.0	27.673970991252542	2447.4486897352917
+81	22	Utilities	56	22	29	56029	Park County, Wyoming	no	4.6	21.8	3979.2
+82	22	Utilities	56	22	31	56031	Platte County, Wyoming	yes	5.4	68.87972157292545	6027.4097585262625
+83	22	Utilities	56	22	33	56033	Sheridan County, Wyoming	yes	3.0	41.580095977377525	3719.682535889138
+84	22	Utilities	56	22	35	56035	Sublette County, Wyoming	yes	2.0	27.673970991252542	2447.4486897352917
+85	22	Utilities	56	22	37	56037	Sweetwater County, Wyoming	yes	6.8	60.2536328827591	4880.959838306246
+86	22	Utilities	56	22	39	56039	Teton County, Wyoming	yes	2.0	27.673970991252542	2447.4486897352917
+87	22	Utilities	56	22	41	56041	Uinta County, Wyoming	no	4.0	70.0	5805.5
+88	22	Utilities	56	22	41	56041	Uinta County, Wyoming	yes	5.333333333333333	-4.89289710648934	-1457.5366083035985
+89	22	Utilities	56	22	43	56043	Washakie County, Wyoming	no	6.0	24.0	2120.2
+90	22	Utilities	56	22	45	56045	Weston County, Wyoming	yes	3.2	48.68238505830739	4355.99017746008
+91	23	Construction	56	23	1	56001	Albany County, Wyoming	no	119.4	658.4	28442.2
+92	23	Construction	56	23	3	56003	Big Horn County, Wyoming	no	57.8	364.0	18689.6
+93	23	Construction	56	23	5	56005	Campbell County, Wyoming	no	190.8	1976.6	117896.0
+94	23	Construction	56	23	7	56007	Carbon County, Wyoming	no	48.4	329.6	16784.6
+95	23	Construction	56	23	9	56009	Converse County, Wyoming	no	64.0	572.2	32927.4
+96	23	Construction	56	23	11	56011	Crook County, Wyoming	no	45.8	206.6	9890.8
+97	23	Construction	56	23	13	56013	Fremont County, Wyoming	no	189.8	883.2	39528.4
+98	23	Construction	56	23	15	56015	Goshen County, Wyoming	no	51.6	194.2	8286.6
+99	23	Construction	56	23	17	56017	Hot Springs County, Wyoming	no	19.6	68.8	3105.6
+100	23	Construction	56	23	19	56019	Johnson County, Wyoming	no	60.6	283.2	14239.4
+101	23	Construction	56	23	21	56021	Laramie County, Wyoming	no	302.8	2266.2	105908.2
+102	23	Construction	56	23	23	56023	Lincoln County, Wyoming	no	141.6	415.8	18675.6
+103	23	Construction	56	23	25	56025	Natrona County, Wyoming	no	338.8	3248.2	175553.2
+104	23	Construction	56	23	27	56027	Niobrara County, Wyoming	no	13.0	15.4	1015.6
+105	23	Construction	56	23	29	56029	Park County, Wyoming	no	181.8	933.4	45816.8
+106	23	Construction	56	23	31	56031	Platte County, Wyoming	no	29.2	102.6	4245.4
+107	23	Construction	56	23	33	56033	Sheridan County, Wyoming	no	166.8	955.0	45108.2
+108	23	Construction	56	23	35	56035	Sublette County, Wyoming	no	74.0	339.4	19489.0
+109	23	Construction	56	23	37	56037	Sweetwater County, Wyoming	no	137.4	925.4	49607.4
+110	23	Construction	56	23	39	56039	Teton County, Wyoming	no	276.2	1656.6	94614.0
+111	23	Construction	56	23	41	56041	Uinta County, Wyoming	no	70.2	1983.4	112416.6
+112	23	Construction	56	23	43	56043	Washakie County, Wyoming	no	51.2	245.6	11755.8
+113	23	Construction	56	23	45	56045	Weston County, Wyoming	no	24.4	141.4	6601.2
+114	42	Wholesale trade	56	42	1	56001	Albany County, Wyoming	no	24.2	100.4	5231.8
+115	42	Wholesale trade	56	42	3	56003	Big Horn County, Wyoming	no	9.0	60.5	2671.5
+116	42	Wholesale trade	56	42	3	56003	Big Horn County, Wyoming	yes	9.0	110.14369353888452	8255.067250098193
+117	42	Wholesale trade	56	42	5	56005	Campbell County, Wyoming	no	88.0	1436.4	93648.8
+118	42	Wholesale trade	56	42	7	56007	Carbon County, Wyoming	no	7.0	39.0	2704.5
+119	42	Wholesale trade	56	42	7	56007	Carbon County, Wyoming	yes	5.333333333333333	64.03252242079078	4850.229907207384
+120	42	Wholesale trade	56	42	9	56009	Converse County, Wyoming	no	10.6	79.8	3105.2
+121	42	Wholesale trade	56	42	11	56011	Crook County, Wyoming	no	8.25	18.0	1881.0
+122	42	Wholesale trade	56	42	11	56011	Crook County, Wyoming	yes	8.0	94.125	8494.625
+123	42	Wholesale trade	56	42	13	56013	Fremont County, Wyoming	no	46.8	321.2	13950.6
+124	42	Wholesale trade	56	42	15	56015	Goshen County, Wyoming	no	20.6	227.6	6968.4
+125	42	Wholesale trade	56	42	17	56017	Hot Springs County, Wyoming	no	4.0	47.0	2336.0
+126	42	Wholesale trade	56	42	17	56017	Hot Springs County, Wyoming	yes	3.5	55.76680331893166	4188.765949037706
+127	42	Wholesale trade	56	42	19	56019	Johnson County, Wyoming	no	8.6	30.8	1188.2
+128	42	Wholesale trade	56	42	21	56021	Laramie County, Wyoming	no	130.0	988.8	49926.8
+129	42	Wholesale trade	56	42	23	56023	Lincoln County, Wyoming	no	10.6	26.2	1962.6
+130	42	Wholesale trade	56	42	25	56025	Natrona County, Wyoming	no	196.4	2751.6	174402.0
+131	42	Wholesale trade	56	42	27	56027	Niobrara County, Wyoming	yes	2.6	55.4756137077769	4044.487825019639
+132	42	Wholesale trade	56	42	29	56029	Park County, Wyoming	no	39.2	283.6	12897.4
+133	42	Wholesale trade	56	42	31	56031	Platte County, Wyoming	no	5.25	13.25	1130.75
+134	42	Wholesale trade	56	42	31	56031	Platte County, Wyoming	yes	7.0	96.53731343283582	6037.447761194029
+135	42	Wholesale trade	56	42	33	56033	Sheridan County, Wyoming	no	39.4	220.4	9697.4
+136	42	Wholesale trade	56	42	35	56035	Sublette County, Wyoming	no	11.25	53.75	4553.25
+137	42	Wholesale trade	56	42	35	56035	Sublette County, Wyoming	yes	10.0	111.57894736842104	8273.684210526315
+138	42	Wholesale trade	56	42	37	56037	Sweetwater County, Wyoming	no	81.0	824.4	49702.6
+139	42	Wholesale trade	56	42	39	56039	Teton County, Wyoming	no	36.5	351.5	51271.5
+140	42	Wholesale trade	56	42	39	56039	Teton County, Wyoming	yes	34.666666666666664	424.009557475779	31592.79012830584
+141	42	Wholesale trade	56	42	41	56041	Uinta County, Wyoming	no	22.8	242.0	15193.0
+142	42	Wholesale trade	56	42	43	56043	Washakie County, Wyoming	no	12.4	69.0	3733.0
+143	42	Wholesale trade	56	42	45	56045	Weston County, Wyoming	no	8.0	46.0	1773.0
+144	42	Wholesale trade	56	42	45	56045	Weston County, Wyoming	yes	5.333333333333333	65.58537902592302	4795.492750065462
+145	51	Information	56	51	1	56001	Albany County, Wyoming	no	16.0	145.5	11888.5
+146	51	Information	56	51	1	56001	Albany County, Wyoming	yes	15.666666666666666	278.9200364298724	9868.034426229508
+147	51	Information	56	51	3	56003	Big Horn County, Wyoming	yes	6.0	106.1297892271663	4492.247962529274
+148	51	Information	56	51	5	56005	Campbell County, Wyoming	no	15.8	200.6	8514.4
+149	51	Information	56	51	7	56007	Carbon County, Wyoming	no	10.8	71.0	1972.8
+150	51	Information	56	51	9	56009	Converse County, Wyoming	no	8.0	47.0	1810.25
+151	51	Information	56	51	9	56009	Converse County, Wyoming	yes	8.0	158.26666666666665	5597.066666666667
+152	51	Information	56	51	11	56011	Crook County, Wyoming	yes	1.6	28.323263075722092	1123.135987509758
+153	51	Information	56	51	13	56013	Fremont County, Wyoming	no	27.2	218.4	8026.4
+154	51	Information	56	51	15	56015	Goshen County, Wyoming	no	8.5	96.0	2343.5
+155	51	Information	56	51	15	56015	Goshen County, Wyoming	yes	6.666666666666667	118.07096018735363	4187.585948477752
+156	51	Information	56	51	17	56017	Hot Springs County, Wyoming	no	3.0	18.0	253.0
+157	51	Information	56	51	17	56017	Hot Springs County, Wyoming	yes	2.75	48.04089578454332	1870.2411592505855
+158	51	Information	56	51	19	56019	Johnson County, Wyoming	no	6.0	33.0	948.0
+159	51	Information	56	51	19	56019	Johnson County, Wyoming	yes	4.0	70.89976580796252	2496.186625032527
+160	51	Information	56	51	21	56021	Laramie County, Wyoming	no	66.66666666666667	1125.6666666666667	59118.666666666664
+161	51	Information	56	51	21	56021	Laramie County, Wyoming	yes	71.0	1323.1661202185792	48391.01693989071
+162	51	Information	56	51	23	56023	Lincoln County, Wyoming	no	13.8	99.2	6636.4
+163	51	Information	56	51	25	56025	Natrona County, Wyoming	no	33.8	508.0	21132.6
+164	51	Information	56	51	27	56027	Niobrara County, Wyoming	yes	1.2	20.850202966432473	850.2175175644028
+165	51	Information	56	51	29	56029	Park County, Wyoming	no	26.4	186.8	7007.0
+166	51	Information	56	51	31	56031	Platte County, Wyoming	no	5.8	14.0	566.4
+167	51	Information	56	51	33	56033	Sheridan County, Wyoming	no	17.6	199.8	6592.8
+168	51	Information	56	51	35	56035	Sublette County, Wyoming	no	5.0	14.0	784.0
+169	51	Information	56	51	35	56035	Sublette County, Wyoming	yes	3.75	64.21266588602654	2559.466881342701
+170	51	Information	56	51	37	56037	Sweetwater County, Wyoming	no	18.4	110.2	5937.0
+171	51	Information	56	51	39	56039	Teton County, Wyoming	no	41.2	241.4	19495.6
+172	51	Information	56	51	41	56041	Uinta County, Wyoming	no	12.75	204.75	12634.25
+173	51	Information	56	51	41	56041	Uinta County, Wyoming	yes	12.0	185.20000000000002	10242.800000000001
+174	51	Information	56	51	43	56043	Washakie County, Wyoming	no	5.0	99.66666666666667	4709.666666666667
+175	51	Information	56	51	43	56043	Washakie County, Wyoming	yes	4.0	70.53333333333333	3742.7999999999997
+176	51	Information	56	51	45	56045	Weston County, Wyoming	no	3.5	29.5	609.5
+177	51	Information	56	51	45	56045	Weston County, Wyoming	yes	2.3333333333333335	41.31053864168618	1469.7463179807444
+178	52	Finance and insurance	56	52	1	56001	Albany County, Wyoming	no	53.8	467.4	25721.2
+179	52	Finance and insurance	56	52	3	56003	Big Horn County, Wyoming	no	11.2	89.6	4109.0
+180	52	Finance and insurance	56	52	5	56005	Campbell County, Wyoming	no	51.6	149.6	20982.8
+181	52	Finance and insurance	56	52	7	56007	Carbon County, Wyoming	no	23.0	131.0	6036.0
+182	52	Finance and insurance	56	52	7	56007	Carbon County, Wyoming	yes	21.0	487.3238636363637	6497.815909090909
+183	52	Finance and insurance	56	52	9	56009	Converse County, Wyoming	no	18.5	124.0	5127.0
+184	52	Finance and insurance	56	52	9	56009	Converse County, Wyoming	yes	16.333333333333332	384.9093073593074	5040.388744588745
+185	52	Finance and insurance	56	52	11	56011	Crook County, Wyoming	no	8.6	35.8	2235.6
+186	52	Finance and insurance	56	52	13	56013	Fremont County, Wyoming	no	61.2	300.6	14862.4
+187	52	Finance and insurance	56	52	15	56015	Goshen County, Wyoming	no	19.0	103.8	5884.0
+188	52	Finance and insurance	56	52	17	56017	Hot Springs County, Wyoming	no	8.0	38.5	1394.5
+189	52	Finance and insurance	56	52	17	56017	Hot Springs County, Wyoming	yes	8.0	185.64718614718615	2475.3584415584414
+190	52	Finance and insurance	56	52	19	56019	Johnson County, Wyoming	no	19.0	113.8	6947.0
+191	52	Finance and insurance	56	52	21	56021	Laramie County, Wyoming	no	204.4	1671.0	86834.4
+192	52	Finance and insurance	56	52	23	56023	Lincoln County, Wyoming	no	23.6	116.0	4901.2
+193	52	Finance and insurance	56	52	25	56025	Natrona County, Wyoming	no	148.4	1025.0	55385.2
+194	52	Finance and insurance	56	52	27	56027	Niobrara County, Wyoming	no	5.0	20.0	860.0
+195	52	Finance and insurance	56	52	27	56027	Niobrara County, Wyoming	yes	3.75	121.2864448051948	5476.059415584416
+196	52	Finance and insurance	56	52	29	56029	Park County, Wyoming	no	50.2	306.0	14425.6
+197	52	Finance and insurance	56	52	31	56031	Platte County, Wyoming	no	17.4	77.2	4536.6
+198	52	Finance and insurance	56	52	33	56033	Sheridan County, Wyoming	no	54.0	132.8	19681.2
+199	52	Finance and insurance	56	52	35	56035	Sublette County, Wyoming	no	16.2	29.6	3261.8
+200	52	Finance and insurance	56	52	37	56037	Sweetwater County, Wyoming	no	51.0	316.2	15269.6
+201	52	Finance and insurance	56	52	39	56039	Teton County, Wyoming	no	112.4	248.2	34821.4
+202	52	Finance and insurance	56	52	41	56041	Uinta County, Wyoming	no	32.0	148.0	6879.0
+203	52	Finance and insurance	56	52	41	56041	Uinta County, Wyoming	yes	30.0	697.7377164502165	9286.691017316018
+204	52	Finance and insurance	56	52	43	56043	Washakie County, Wyoming	no	19.4	79.0	3766.6
+205	52	Finance and insurance	56	52	45	56045	Weston County, Wyoming	no	8.4	34.8	2491.4
+206	53	Real estate and rental and leasing	56	53	1	56001	Albany County, Wyoming	no	54.6	158.0	3537.8
+207	53	Real estate and rental and leasing	56	53	3	56003	Big Horn County, Wyoming	no	9.0	14.666666666666666	169.33333333333334
+208	53	Real estate and rental and leasing	56	53	3	56003	Big Horn County, Wyoming	yes	9.0	172.16976127320956	819.0358090185675
+209	53	Real estate and rental and leasing	56	53	5	56005	Campbell County, Wyoming	no	82.0	329.0	14707.8
+210	53	Real estate and rental and leasing	56	53	7	56007	Carbon County, Wyoming	no	27.6	96.8	6221.2
+211	53	Real estate and rental and leasing	56	53	9	56009	Converse County, Wyoming	no	23.0	59.4	1241.2
+212	53	Real estate and rental and leasing	56	53	11	56011	Crook County, Wyoming	no	7.0	9.2	298.6
+213	53	Real estate and rental and leasing	56	53	13	56013	Fremont County, Wyoming	no	71.4	427.8	23080.6
+214	53	Real estate and rental and leasing	56	53	15	56015	Goshen County, Wyoming	no	16.25	23.0	810.25
+215	53	Real estate and rental and leasing	56	53	15	56015	Goshen County, Wyoming	yes	15.0	156.20689655172416	1333.9655172413793
+216	53	Real estate and rental and leasing	56	53	17	56017	Hot Springs County, Wyoming	no	7.4	6.8	170.4
+217	53	Real estate and rental and leasing	56	53	19	56019	Johnson County, Wyoming	no	18.4	44.4	1520.0
+218	53	Real estate and rental and leasing	56	53	21	56021	Laramie County, Wyoming	no	156.6	555.0	20238.4
+219	53	Real estate and rental and leasing	56	53	23	56023	Lincoln County, Wyoming	no	16.4	21.4	887.2
+220	53	Real estate and rental and leasing	56	53	25	56025	Natrona County, Wyoming	no	174.0	1224.0	76077.0
+221	53	Real estate and rental and leasing	56	53	27	56027	Niobrara County, Wyoming	no	4.0	5.0	115.5
+222	53	Real estate and rental and leasing	56	53	27	56027	Niobrara County, Wyoming	yes	4.333333333333333	102.81786030061892	364.65428824049513
+223	53	Real estate and rental and leasing	56	53	29	56029	Park County, Wyoming	no	60.2	89.0	2663.6
+224	53	Real estate and rental and leasing	56	53	31	56031	Platte County, Wyoming	no	9.0	30.2	1854.2
+225	53	Real estate and rental and leasing	56	53	33	56033	Sheridan County, Wyoming	no	63.2	186.8	5933.4
+226	53	Real estate and rental and leasing	56	53	35	56035	Sublette County, Wyoming	no	27.6	87.4	5100.2
+227	53	Real estate and rental and leasing	56	53	37	56037	Sweetwater County, Wyoming	no	81.8	358.4	18921.2
+228	53	Real estate and rental and leasing	56	53	39	56039	Teton County, Wyoming	no	168.6	610.0	32403.4
+229	53	Real estate and rental and leasing	56	53	41	56041	Uinta County, Wyoming	no	36.0	118.6	4581.6
+230	53	Real estate and rental and leasing	56	53	43	56043	Washakie County, Wyoming	no	15.0	55.2	1750.4
+231	53	Real estate and rental and leasing	56	53	45	56045	Weston County, Wyoming	no	3.8	5.0	197.6
+232	54	Professional, scientific, and technical services	56	54	1	56001	Albany County, Wyoming	no	124.2	786.6	41355.6
+233	54	Professional, scientific, and technical services	56	54	3	56003	Big Horn County, Wyoming	no	20.2	34.6	2351.2
+234	54	Professional, scientific, and technical services	56	54	5	56005	Campbell County, Wyoming	no	115.8	715.8	37377.0
+235	54	Professional, scientific, and technical services	56	54	7	56007	Carbon County, Wyoming	no	34.6	85.2	4104.4
+236	54	Professional, scientific, and technical services	56	54	9	56009	Converse County, Wyoming	no	33.6	127.0	7368.4
+237	54	Professional, scientific, and technical services	56	54	11	56011	Crook County, Wyoming	no	15.0	22.8	1642.0
+238	54	Professional, scientific, and technical services	56	54	13	56013	Fremont County, Wyoming	no	124.2	468.0	24106.8
+239	54	Professional, scientific, and technical services	56	54	15	56015	Goshen County, Wyoming	no	24.4	141.8	4221.2
+240	54	Professional, scientific, and technical services	56	54	17	56017	Hot Springs County, Wyoming	no	12.8	49.6	1695.8
+241	54	Professional, scientific, and technical services	56	54	19	56019	Johnson County, Wyoming	no	51.4	160.0	7855.4
+242	54	Professional, scientific, and technical services	56	54	21	56021	Laramie County, Wyoming	no	496.0	2156.2	125203.0
+243	54	Professional, scientific, and technical services	56	54	23	56023	Lincoln County, Wyoming	no	60.8	107.0	4421.8
+244	54	Professional, scientific, and technical services	56	54	25	56025	Natrona County, Wyoming	no	279.0	1661.0	97131.6
+245	54	Professional, scientific, and technical services	56	54	27	56027	Niobrara County, Wyoming	no	4.6	4.8	211.4
+246	54	Professional, scientific, and technical services	56	54	29	56029	Park County, Wyoming	no	99.6	379.4	18247.8
+247	54	Professional, scientific, and technical services	56	54	31	56031	Platte County, Wyoming	no	18.2	39.2	1600.4
+248	54	Professional, scientific, and technical services	56	54	33	56033	Sheridan County, Wyoming	no	130.6	688.8	34208.8
+249	54	Professional, scientific, and technical services	56	54	35	56035	Sublette County, Wyoming	no	51.8	121.6	5494.0
+250	54	Professional, scientific, and technical services	56	54	37	56037	Sweetwater County, Wyoming	no	122.4	501.6	28988.4
+251	54	Professional, scientific, and technical services	56	54	39	56039	Teton County, Wyoming	no	300.0	861.8	59711.8
+252	54	Professional, scientific, and technical services	56	54	41	56041	Uinta County, Wyoming	no	54.2	270.4	15012.4
+253	54	Professional, scientific, and technical services	56	54	43	56043	Washakie County, Wyoming	no	37.2	120.0	5279.2
+254	54	Professional, scientific, and technical services	56	54	45	56045	Weston County, Wyoming	no	12.0	24.2	867.8
+255	55	Management of companies and enterprises	56	55	1	56001	Albany County, Wyoming	yes	1.0	16.274702380952377	1466.835119047619
+256	55	Management of companies and enterprises	56	55	3	56003	Big Horn County, Wyoming	yes	1.0	6.0	457.25
+257	55	Management of companies and enterprises	56	55	5	56005	Campbell County, Wyoming	no	11.0	282.5	36534.0
+258	55	Management of companies and enterprises	56	55	5	56005	Campbell County, Wyoming	yes	13.333333333333334	264.00912698412696	23818.91111111111
+259	55	Management of companies and enterprises	56	55	7	56007	Carbon County, Wyoming	no	3.0	27.0	549.0
+260	55	Management of companies and enterprises	56	55	7	56007	Carbon County, Wyoming	yes	2.0	34.90416666666666	2898.2964285714284
+261	55	Management of companies and enterprises	56	55	9	56009	Converse County, Wyoming	yes	1.0	11.05079365079365	954.3198412698412
+262	55	Management of companies and enterprises	56	55	13	56013	Fremont County, Wyoming	yes	1.6666666666666667	15.746031746031745	1174.0436507936508
+263	55	Management of companies and enterprises	56	55	15	56015	Goshen County, Wyoming	yes	2.0	27.60904761904761	2265.744285714286
+264	55	Management of companies and enterprises	56	55	19	56019	Johnson County, Wyoming	yes	1.0	17.485714285714284	1891.542857142857
+265	55	Management of companies and enterprises	56	55	21	56021	Laramie County, Wyoming	no	18.0	149.2	11823.8
+266	55	Management of companies and enterprises	56	55	23	56023	Lincoln County, Wyoming	yes	1.5	17.097619047619045	1367.647619047619
+267	55	Management of companies and enterprises	56	55	25	56025	Natrona County, Wyoming	no	16.6	171.4	11441.8
+268	55	Management of companies and enterprises	56	55	27	56027	Niobrara County, Wyoming	yes	2.0	29.90619047619047	2552.602857142857
+269	55	Management of companies and enterprises	56	55	29	56029	Park County, Wyoming	no	3.3333333333333335	4.0	538.0
+270	55	Management of companies and enterprises	56	55	29	56029	Park County, Wyoming	yes	3.5	41.357142857142854	3368.8214285714284
+271	55	Management of companies and enterprises	56	55	33	56033	Sheridan County, Wyoming	no	5.5	15.5	1217.5
+272	55	Management of companies and enterprises	56	55	33	56033	Sheridan County, Wyoming	yes	6.0	104.91428571428571	11349.257142857143
+273	55	Management of companies and enterprises	56	55	35	56035	Sublette County, Wyoming	yes	1.0	16.274702380952377	1466.835119047619
+274	55	Management of companies and enterprises	56	55	37	56037	Sweetwater County, Wyoming	no	9.0	193.66666666666666	20100.666666666668
+275	55	Management of companies and enterprises	56	55	37	56037	Sweetwater County, Wyoming	yes	9.0	167.79999999999998	15747.242857142857
+276	55	Management of companies and enterprises	56	55	39	56039	Teton County, Wyoming	no	10.4	49.0	3983.8
+277	55	Management of companies and enterprises	56	55	41	56041	Uinta County, Wyoming	no	3.6	19.4	1248.4
+278	55	Management of companies and enterprises	56	55	43	56043	Washakie County, Wyoming	yes	1.0	12.569444444444443	951.25
+279	55	Management of companies and enterprises	56	55	45	56045	Weston County, Wyoming	yes	1.4	23.275714285714283	1980.0109523809522
+280	56	Administrative and support and waste management and remediation services	56	56	1	56001	Albany County, Wyoming	no	43.8	171.8	6036.2
+281	56	Administrative and support and waste management and remediation services	56	56	3	56003	Big Horn County, Wyoming	no	9.2	43.6	1554.0
+282	56	Administrative and support and waste management and remediation services	56	56	5	56005	Campbell County, Wyoming	no	71.8	729.8	23092.4
+283	56	Administrative and support and waste management and remediation services	56	56	7	56007	Carbon County, Wyoming	no	16.0	56.0	2782.6
+284	56	Administrative and support and waste management and remediation services	56	56	9	56009	Converse County, Wyoming	no	18.8	70.0	2519.0
+285	56	Administrative and support and waste management and remediation services	56	56	11	56011	Crook County, Wyoming	no	7.0	26.0	1595.0
+286	56	Administrative and support and waste management and remediation services	56	56	11	56011	Crook County, Wyoming	yes	4.5	204.88034705407586	2998.4144471347863
+287	56	Administrative and support and waste management and remediation services	56	56	13	56013	Fremont County, Wyoming	no	42.2	209.4	11309.0
+288	56	Administrative and support and waste management and remediation services	56	56	15	56015	Goshen County, Wyoming	no	14.4	100.6	3329.2
+289	56	Administrative and support and waste management and remediation services	56	56	17	56017	Hot Springs County, Wyoming	no	4.8	42.0	778.8
+290	56	Administrative and support and waste management and remediation services	56	56	19	56019	Johnson County, Wyoming	no	18.0	32.0	1374.0
+291	56	Administrative and support and waste management and remediation services	56	56	21	56021	Laramie County, Wyoming	no	177.2	1184.4	33404.0
+292	56	Administrative and support and waste management and remediation services	56	56	23	56023	Lincoln County, Wyoming	no	35.0	99.8	5267.6
+293	56	Administrative and support and waste management and remediation services	56	56	25	56025	Natrona County, Wyoming	no	160.0	1415.8	44855.2
+294	56	Administrative and support and waste management and remediation services	56	56	27	56027	Niobrara County, Wyoming	no	3.0	2.2	68.6
+295	56	Administrative and support and waste management and remediation services	56	56	29	56029	Park County, Wyoming	no	54.6	201.4	5981.2
+296	56	Administrative and support and waste management and remediation services	56	56	31	56031	Platte County, Wyoming	no	7.4	11.2	243.0
+297	56	Administrative and support and waste management and remediation services	56	56	33	56033	Sheridan County, Wyoming	no	56.75	270.25	7915.0
+298	56	Administrative and support and waste management and remediation services	56	56	33	56033	Sheridan County, Wyoming	yes	55.0	1467.2881355932202	25088.389830508473
+299	56	Administrative and support and waste management and remediation services	56	56	35	56035	Sublette County, Wyoming	no	14.75	88.0	3991.5
+300	56	Administrative and support and waste management and remediation services	56	56	35	56035	Sublette County, Wyoming	yes	17.0	798.1904761904761	7815.952380952381
+301	56	Administrative and support and waste management and remediation services	56	56	37	56037	Sweetwater County, Wyoming	no	49.6	257.0	15993.8
+302	56	Administrative and support and waste management and remediation services	56	56	39	56039	Teton County, Wyoming	no	144.6	649.4	27713.0
+303	56	Administrative and support and waste management and remediation services	56	56	41	56041	Uinta County, Wyoming	no	16.0	77.6	2694.0
+304	56	Administrative and support and waste management and remediation services	56	56	43	56043	Washakie County, Wyoming	no	16.2	28.8	941.2
+305	56	Administrative and support and waste management and remediation services	56	56	45	56045	Weston County, Wyoming	no	7.8	81.6	3377.4
+306	61	Educational services	56	61	1	56001	Albany County, Wyoming	no	16.0	224.0	3185.5
+307	61	Educational services	56	61	1	56001	Albany County, Wyoming	yes	17.0	322.74680336750856	8845.477160956907
+308	61	Educational services	56	61	3	56003	Big Horn County, Wyoming	yes	1.0	5.2	166.10000000000002
+309	61	Educational services	56	61	5	56005	Campbell County, Wyoming	no	10.2	43.6	1787.8
+310	61	Educational services	56	61	7	56007	Carbon County, Wyoming	yes	1.2	17.146096524131032	455.6307026756689
+311	61	Educational services	56	61	9	56009	Converse County, Wyoming	yes	1.4	21.504236059014758	588.0586096524131
+312	61	Educational services	56	61	11	56011	Crook County, Wyoming	yes	1.0	4.4	59.5
+313	61	Educational services	56	61	13	56013	Fremont County, Wyoming	no	17.5	481.5	16837.5
+314	61	Educational services	56	61	13	56013	Fremont County, Wyoming	yes	15.0	286.16567475202135	7869.238893056598
+315	61	Educational services	56	61	15	56015	Goshen County, Wyoming	yes	1.0	13.3927631907977	360.3973693423356
+316	61	Educational services	56	61	17	56017	Hot Springs County, Wyoming	yes	1.5	29.66201550387597	807.2364341085272
+317	61	Educational services	56	61	19	56019	Johnson County, Wyoming	no	4.0	7.5	187.25
+318	61	Educational services	56	61	19	56019	Johnson County, Wyoming	yes	7.0	36.4	1162.6999999999998
+319	61	Educational services	56	61	21	56021	Laramie County, Wyoming	no	35.0	362.6	9008.2
+320	61	Educational services	56	61	23	56023	Lincoln County, Wyoming	yes	2.4	34.89699924981245	948.4559789947486
+321	61	Educational services	56	61	25	56025	Natrona County, Wyoming	no	23.8	208.4	3391.6
+322	61	Educational services	56	61	27	56027	Niobrara County, Wyoming	yes	1.0	5.2	166.10000000000002
+323	61	Educational services	56	61	29	56029	Park County, Wyoming	no	9.666666666666666	65.33333333333333	1208.6666666666667
+324	61	Educational services	56	61	29	56029	Park County, Wyoming	yes	10.5	187.2489247311828	4809.319892473119
+325	61	Educational services	56	61	33	56033	Sheridan County, Wyoming	no	4.666666666666667	4.0	185.66666666666666
+326	61	Educational services	56	61	33	56033	Sheridan County, Wyoming	yes	5.0	88.93279569892474	2285.6182795698924
+327	61	Educational services	56	61	35	56035	Sublette County, Wyoming	yes	2.0	26.7855263815954	720.7947386846712
+328	61	Educational services	56	61	37	56037	Sweetwater County, Wyoming	no	8.6	40.2	461.8
+329	61	Educational services	56	61	39	56039	Teton County, Wyoming	no	36.2	492.0	15495.2
+330	61	Educational services	56	61	41	56041	Uinta County, Wyoming	no	4.0	5.0	111.66666666666667
+331	61	Educational services	56	61	41	56041	Uinta County, Wyoming	yes	2.5	30.409677419354836	823.2209677419355
+332	61	Educational services	56	61	43	56043	Washakie County, Wyoming	yes	1.0	13.3927631907977	360.3973693423356
+333	61	Educational services	56	61	45	56045	Weston County, Wyoming	yes	1.0	13.3927631907977	360.3973693423356
+334	62	Health care and social assistance	56	62	1	56001	Albany County, Wyoming	no	123.6	2095.0	79046.8
+335	62	Health care and social assistance	56	62	3	56003	Big Horn County, Wyoming	no	23.6	222.2	13034.8
+336	62	Health care and social assistance	56	62	5	56005	Campbell County, Wyoming	no	101.4	1711.4	91971.8
+337	62	Health care and social assistance	56	62	7	56007	Carbon County, Wyoming	no	50.4	582.8	22093.2
+338	62	Health care and social assistance	56	62	9	56009	Converse County, Wyoming	no	25.5	638.25	32382.0
+339	62	Health care and social assistance	56	62	9	56009	Converse County, Wyoming	yes	29.0	573.6882352941177	23590.817647058826
+340	62	Health care and social assistance	56	62	11	56011	Crook County, Wyoming	no	14.2	198.8	6893.8
+341	62	Health care and social assistance	56	62	13	56013	Fremont County, Wyoming	no	154.4	1991.2	73082.8
+342	62	Health care and social assistance	56	62	15	56015	Goshen County, Wyoming	no	26.4	737.0	24933.0
+343	62	Health care and social assistance	56	62	17	56017	Hot Springs County, Wyoming	no	18.4	411.8	15969.4
+344	62	Health care and social assistance	56	62	19	56019	Johnson County, Wyoming	no	30.0	396.0	16627.5
+345	62	Health care and social assistance	56	62	19	56019	Johnson County, Wyoming	yes	31.0	1117.8145204027558	19871.03047164812
+346	62	Health care and social assistance	56	62	21	56021	Laramie County, Wyoming	no	338.6	7088.0	330078.6
+347	62	Health care and social assistance	56	62	23	56023	Lincoln County, Wyoming	no	55.4	722.4	29891.8
+348	62	Health care and social assistance	56	62	25	56025	Natrona County, Wyoming	no	316.6	5533.4	277825.2
+349	62	Health care and social assistance	56	62	27	56027	Niobrara County, Wyoming	no	6.6	61.8	2170.2
+350	62	Health care and social assistance	56	62	29	56029	Park County, Wyoming	no	118.0	1294.3333333333333	88259.66666666667
+351	62	Health care and social assistance	56	62	29	56029	Park County, Wyoming	yes	114.0	2141.4341017488077	84652.0454689984
+352	62	Health care and social assistance	56	62	31	56031	Platte County, Wyoming	no	20.8	324.4	11144.2
+353	62	Health care and social assistance	56	62	33	56033	Sheridan County, Wyoming	no	126.8	2192.0	90036.6
+354	62	Health care and social assistance	56	62	35	56035	Sublette County, Wyoming	no	21.8	181.6	6047.6
+355	62	Health care and social assistance	56	62	37	56037	Sweetwater County, Wyoming	no	101.0	1362.6	54524.0
+356	62	Health care and social assistance	56	62	39	56039	Teton County, Wyoming	no	129.6	1220.0	65769.0
+357	62	Health care and social assistance	56	62	41	56041	Uinta County, Wyoming	no	68.2	1383.4	60153.6
+358	62	Health care and social assistance	56	62	43	56043	Washakie County, Wyoming	no	30.8	781.0	22775.2
+359	62	Health care and social assistance	56	62	45	56045	Weston County, Wyoming	no	23.6	364.8	11339.4
+360	71	Arts, entertainment, and recreation	56	71	1	56001	Albany County, Wyoming	no	16.4	62.6	828.0
+361	71	Arts, entertainment, and recreation	56	71	3	56003	Big Horn County, Wyoming	no	7.8	9.2	249.6
+362	71	Arts, entertainment, and recreation	56	71	5	56005	Campbell County, Wyoming	no	16.2	133.8	1957.0
+363	71	Arts, entertainment, and recreation	56	71	7	56007	Carbon County, Wyoming	no	15.0	39.5	2023.5
+364	71	Arts, entertainment, and recreation	56	71	7	56007	Carbon County, Wyoming	yes	15.0	697.0924080226406	1461.5188261351052
+365	71	Arts, entertainment, and recreation	56	71	9	56009	Converse County, Wyoming	no	9.0	40.6	617.6
+366	71	Arts, entertainment, and recreation	56	71	11	56011	Crook County, Wyoming	no	7.8	18.2	1056.2
+367	71	Arts, entertainment, and recreation	56	71	13	56013	Fremont County, Wyoming	no	33.0	374.2	8878.8
+368	71	Arts, entertainment, and recreation	56	71	15	56015	Goshen County, Wyoming	no	3.6666666666666665	7.666666666666667	124.66666666666667
+369	71	Arts, entertainment, and recreation	56	71	15	56015	Goshen County, Wyoming	yes	3.0	123.49280177187154	303.73421926910294
+370	71	Arts, entertainment, and recreation	56	71	17	56017	Hot Springs County, Wyoming	no	6.4	53.0	716.0
+371	71	Arts, entertainment, and recreation	56	71	19	56019	Johnson County, Wyoming	no	13.5	71.0	898.5
+372	71	Arts, entertainment, and recreation	56	71	19	56019	Johnson County, Wyoming	yes	11.333333333333334	532.2903285345146	1086.580933923957
+373	71	Arts, entertainment, and recreation	56	71	21	56021	Laramie County, Wyoming	no	38.4	421.8	7242.0
+374	71	Arts, entertainment, and recreation	56	71	23	56023	Lincoln County, Wyoming	no	15.0	41.8	1021.4
+375	71	Arts, entertainment, and recreation	56	71	25	56025	Natrona County, Wyoming	no	44.4	448.8	7971.0
+376	71	Arts, entertainment, and recreation	56	71	27	56027	Niobrara County, Wyoming	yes	2.2	74.79712070874862	199.1381321520856
+377	71	Arts, entertainment, and recreation	56	71	29	56029	Park County, Wyoming	no	44.4	281.0	7530.8
+378	71	Arts, entertainment, and recreation	56	71	31	56031	Platte County, Wyoming	no	6.6	3.4	240.8
+379	71	Arts, entertainment, and recreation	56	71	33	56033	Sheridan County, Wyoming	no	24.75	267.5	5419.5
+380	71	Arts, entertainment, and recreation	56	71	33	56033	Sheridan County, Wyoming	yes	23.0	823.2539682539682	2945.095238095238
+381	71	Arts, entertainment, and recreation	56	71	35	56035	Sublette County, Wyoming	no	7.4	8.4	428.8
+382	71	Arts, entertainment, and recreation	56	71	37	56037	Sweetwater County, Wyoming	no	11.8	58.0	893.0
+383	71	Arts, entertainment, and recreation	56	71	39	56039	Teton County, Wyoming	no	94.4	903.4	43359.8
+384	71	Arts, entertainment, and recreation	56	71	41	56041	Uinta County, Wyoming	no	6.0	18.25	483.25
+385	71	Arts, entertainment, and recreation	56	71	41	56041	Uinta County, Wyoming	yes	6.0	34.666666666666664	867.3333333333333
+386	71	Arts, entertainment, and recreation	56	71	43	56043	Washakie County, Wyoming	no	7.0	34.5	412.0
+387	71	Arts, entertainment, and recreation	56	71	43	56043	Washakie County, Wyoming	yes	7.333333333333333	344.37080103359176	700.4838501291989
+388	71	Arts, entertainment, and recreation	56	71	45	56045	Weston County, Wyoming	no	3.0	5.0	135.0
+389	71	Arts, entertainment, and recreation	56	71	45	56045	Weston County, Wyoming	yes	2.0	56.461886304909555	170.41537467700257
+390	72	Accommodation and food services	56	72	1	56001	Albany County, Wyoming	no	115.6	1899.2	26749.2
+391	72	Accommodation and food services	56	72	3	56003	Big Horn County, Wyoming	no	29.6	178.4	2366.8
+392	72	Accommodation and food services	56	72	5	56005	Campbell County, Wyoming	no	113.6	1811.0	29946.4
+393	72	Accommodation and food services	56	72	7	56007	Carbon County, Wyoming	no	81.2	799.4	15658.8
+394	72	Accommodation and food services	56	72	9	56009	Converse County, Wyoming	no	41.8	537.6	8149.6
+395	72	Accommodation and food services	56	72	11	56011	Crook County, Wyoming	no	29.4	159.2	2452.0
+396	72	Accommodation and food services	56	72	13	56013	Fremont County, Wyoming	no	127.4	1621.4	27425.4
+397	72	Accommodation and food services	56	72	15	56015	Goshen County, Wyoming	no	31.6	327.0	3804.8
+398	72	Accommodation and food services	56	72	17	56017	Hot Springs County, Wyoming	no	23.8	230.2	3454.8
+399	72	Accommodation and food services	56	72	19	56019	Johnson County, Wyoming	no	42.2	395.4	7400.2
+400	72	Accommodation and food services	56	72	21	56021	Laramie County, Wyoming	no	205.6	4107.4	65125.4
+401	72	Accommodation and food services	56	72	23	56023	Lincoln County, Wyoming	no	60.2	388.8	5199.0
+402	72	Accommodation and food services	56	72	25	56025	Natrona County, Wyoming	no	193.6	3969.8	65665.2
+403	72	Accommodation and food services	56	72	27	56027	Niobrara County, Wyoming	no	11.0	85.0	1207.0
+404	72	Accommodation and food services	56	72	29	56029	Park County, Wyoming	no	123.4	1723.6	56544.0
+405	72	Accommodation and food services	56	72	31	56031	Platte County, Wyoming	no	33.2	334.0	4323.2
+406	72	Accommodation and food services	56	72	33	56033	Sheridan County, Wyoming	no	101.8	1626.2	27389.4
+407	72	Accommodation and food services	56	72	35	56035	Sublette County, Wyoming	no	40.6	324.8	9830.2
+408	72	Accommodation and food services	56	72	37	56037	Sweetwater County, Wyoming	no	114.4	1874.8	30160.8
+409	72	Accommodation and food services	56	72	39	56039	Teton County, Wyoming	no	187.2	4770.0	130048.2
+410	72	Accommodation and food services	56	72	41	56041	Uinta County, Wyoming	no	49.2	660.4	9336.6
+411	72	Accommodation and food services	56	72	43	56043	Washakie County, Wyoming	no	31.6	291.4	3652.2
+412	72	Accommodation and food services	56	72	45	56045	Weston County, Wyoming	no	25.0	197.6	2304.2
+413	81	Other services (except public administration)	56	81	1	56001	Albany County, Wyoming	no	105.8	541.2	12128.0
+414	81	Other services (except public administration)	56	81	3	56003	Big Horn County, Wyoming	no	28.4	65.2	1255.8
+415	81	Other services (except public administration)	56	81	5	56005	Campbell County, Wyoming	no	149.4	892.6	38862.0
+416	81	Other services (except public administration)	56	81	7	56007	Carbon County, Wyoming	no	46.2	159.0	4259.0
+417	81	Other services (except public administration)	56	81	9	56009	Converse County, Wyoming	no	47.6	169.4	3818.8
+418	81	Other services (except public administration)	56	81	11	56011	Crook County, Wyoming	no	17.2	32.6	747.0
+419	81	Other services (except public administration)	56	81	13	56013	Fremont County, Wyoming	no	111.8	417.8	11653.2
+420	81	Other services (except public administration)	56	81	15	56015	Goshen County, Wyoming	no	44.8	187.0	3492.4
+421	81	Other services (except public administration)	56	81	17	56017	Hot Springs County, Wyoming	no	19.0	34.6	1815.4
+422	81	Other services (except public administration)	56	81	19	56019	Johnson County, Wyoming	no	37.0	109.2	3660.4
+423	81	Other services (except public administration)	56	81	21	56021	Laramie County, Wyoming	no	271.6	1468.8	45556.4
+424	81	Other services (except public administration)	56	81	23	56023	Lincoln County, Wyoming	no	45.4	139.2	4123.6
+425	81	Other services (except public administration)	56	81	25	56025	Natrona County, Wyoming	no	268.0	1669.4	63879.2
+426	81	Other services (except public administration)	56	81	27	56027	Niobrara County, Wyoming	no	10.5	26.5	918.0
+427	81	Other services (except public administration)	56	81	27	56027	Niobrara County, Wyoming	yes	10.333333333333334	137.77777777777777	1992.7301587301588
+428	81	Other services (except public administration)	56	81	29	56029	Park County, Wyoming	no	102.6	372.8	9175.4
+429	81	Other services (except public administration)	56	81	31	56031	Platte County, Wyoming	no	28.8	100.4	1488.2
+430	81	Other services (except public administration)	56	81	33	56033	Sheridan County, Wyoming	no	103.6	444.8	11613.8
+431	81	Other services (except public administration)	56	81	35	56035	Sublette County, Wyoming	no	31.75	182.25	8637.0
+432	81	Other services (except public administration)	56	81	35	56035	Sublette County, Wyoming	yes	32.0	314.66666666666663	9699.809523809523
+433	81	Other services (except public administration)	56	81	37	56037	Sweetwater County, Wyoming	no	114.4	541.8	17890.2
+434	81	Other services (except public administration)	56	81	39	56039	Teton County, Wyoming	no	132.2	599.8	23187.0
+435	81	Other services (except public administration)	56	81	41	56041	Uinta County, Wyoming	no	42.2	119.0	3523.6
+436	81	Other services (except public administration)	56	81	43	56043	Washakie County, Wyoming	no	34.2	129.6	2334.6
+437	81	Other services (except public administration)	56	81	45	56045	Weston County, Wyoming	no	19.2	54.4	1878.0
+438	99	Industries not classified	56	99	1	56001	Albany County, Wyoming	no	3.5	18.0	91.5
+439	99	Industries not classified	56	99	1	56001	Albany County, Wyoming	yes	1.5	4.766233766233766	50.95779220779221
+440	99	Industries not classified	56	99	3	56003	Big Horn County, Wyoming	no	4.5	4.0	47.5
+441	99	Industries not classified	56	99	3	56003	Big Horn County, Wyoming	yes	1.0	3.311688311688312	32.38961038961039
+442	99	Industries not classified	56	99	5	56005	Campbell County, Wyoming	no	4.0	1.0	60.0
+443	99	Industries not classified	56	99	5	56005	Campbell County, Wyoming	yes	1.0	2.9783549783549783	33.56818181818182
+444	99	Industries not classified	56	99	7	56007	Carbon County, Wyoming	yes	1.5	2.9162608225108224	52.46638257575758
+445	99	Industries not classified	56	99	9	56009	Converse County, Wyoming	yes	1.6	3.657683982683983	54.92895021645022
+446	99	Industries not classified	56	99	11	56011	Crook County, Wyoming	no	3.0	3.0	59.0
+447	99	Industries not classified	56	99	11	56011	Crook County, Wyoming	yes	1.6666666666666667	4.362554112554112	52.76569264069264
+448	99	Industries not classified	56	99	13	56013	Fremont County, Wyoming	no	5.5	5.25	319.75
+449	99	Industries not classified	56	99	13	56013	Fremont County, Wyoming	yes	2.0	3.1666666666666665	87.83333333333333
+450	99	Industries not classified	56	99	15	56015	Goshen County, Wyoming	yes	1.25	3.742153679653679	41.58468614718615
+451	99	Industries not classified	56	99	17	56017	Hot Springs County, Wyoming	yes	1.0	3.714285714285714	27.642857142857142
+452	99	Industries not classified	56	99	19	56019	Johnson County, Wyoming	no	3.0	0.0	35.0
+453	99	Industries not classified	56	99	19	56019	Johnson County, Wyoming	yes	1.6666666666666667	4.498917748917749	59.39646464646464
+454	99	Industries not classified	56	99	21	56021	Laramie County, Wyoming	no	10.25	5.0	177.75
+455	99	Industries not classified	56	99	21	56021	Laramie County, Wyoming	yes	2.0	3.1666666666666665	87.83333333333333
+456	99	Industries not classified	56	99	23	56023	Lincoln County, Wyoming	yes	1.3333333333333333	2.5297619047619047	50.256944444444436
+457	99	Industries not classified	56	99	25	56025	Natrona County, Wyoming	no	4.666666666666667	8.0	390.6666666666667
+458	99	Industries not classified	56	99	25	56025	Natrona County, Wyoming	yes	3.5	8.856060606060606	136.75757575757575
+459	99	Industries not classified	56	99	27	56027	Niobrara County, Wyoming	yes	1.0	2.525865800865801	34.32667748917749
+460	99	Industries not classified	56	99	29	56029	Park County, Wyoming	no	6.75	5.25	363.5
+461	99	Industries not classified	56	99	29	56029	Park County, Wyoming	yes	2.0	3.1666666666666665	87.83333333333333
+462	99	Industries not classified	56	99	31	56031	Platte County, Wyoming	no	3.6666666666666665	2.6666666666666665	51.0
+463	99	Industries not classified	56	99	31	56031	Platte County, Wyoming	yes	3.0	6.2142857142857135	117.83333333333333
+464	99	Industries not classified	56	99	33	56033	Sheridan County, Wyoming	no	3.6666666666666665	7.333333333333333	77.33333333333333
+465	99	Industries not classified	56	99	33	56033	Sheridan County, Wyoming	yes	3.0	9.004329004329005	97.13636363636364
+466	99	Industries not classified	56	99	35	56035	Sublette County, Wyoming	yes	1.0	2.7614989177489178	31.929180194805195
+467	99	Industries not classified	56	99	37	56037	Sweetwater County, Wyoming	no	4.0	0.0	51.0
+468	99	Industries not classified	56	99	37	56037	Sweetwater County, Wyoming	yes	2.0	4.441964285714286	67.9828869047619
+469	99	Industries not classified	56	99	39	56039	Teton County, Wyoming	no	7.4	11.2	215.4
+470	99	Industries not classified	56	99	41	56041	Uinta County, Wyoming	yes	1.0	2.525865800865801	34.32667748917749
+471	99	Industries not classified	56	99	43	56043	Washakie County, Wyoming	yes	1.3333333333333333	3.7976190476190474	43.8531746031746
+472	99	Industries not classified	56	99	45	56045	Weston County, Wyoming	yes	1.25	2.9906655844155843	43.49763257575758

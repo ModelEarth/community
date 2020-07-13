@@ -1,520 +1,625 @@
-	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
-0	35001	35	1	Bernalillo County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	8.4	9.0	1272.8
-1	35001	35	1	Bernalillo County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	19.4	131.8	11414.0
-3	35001	35	1	Bernalillo County, New Mexico	23	Construction	23	1364.8	16319.0	757474.6
-4	35001	35	1	Bernalillo County, New Mexico	42	Wholesale trade	42	867.4	11542.0	591525.8
-5	35001	35	1	Bernalillo County, New Mexico	51	Information	51	270.6	7220.0	315118.8
-6	35001	35	1	Bernalillo County, New Mexico	52	Finance and insurance	52	999.8	10690.0	621704.2
-7	35001	35	1	Bernalillo County, New Mexico	53	Real estate and rental and leasing	53	938.8	4250.6	155368.6
-8	35001	35	1	Bernalillo County, New Mexico	54	Professional, scientific, and technical services	54	2238.2	17839.0	1148874.2
-9	35001	35	1	Bernalillo County, New Mexico	55	Management of companies and enterprises	55	109.6	4571.0	262722.4
-10	35001	35	1	Bernalillo County, New Mexico	56	Administrative and support and waste management and remediation services	56	734.8	15503.8	429053.4
-11	35001	35	1	Bernalillo County, New Mexico	61	Educational services	61	260.6	5576.2	171893.8
-12	35001	35	1	Bernalillo County, New Mexico	62	Health care and social assistance	62	1925.2	48810.2	2246509.2
-13	35001	35	1	Bernalillo County, New Mexico	71	Arts, entertainment, and recreation	71	218.0	4465.4	96164.8
-14	35001	35	1	Bernalillo County, New Mexico	72	Accommodation and food services	72	1411.2	32735.2	559468.8
-15	35001	35	1	Bernalillo County, New Mexico	81	Other services (except public administration)	81	1408.6	10829.2	306243.4
-16	35001	35	1	Bernalillo County, New Mexico	99	Industries not classified	99	17.8	12.8	314.6
-19	35003	35	3	Catron County, New Mexico	22	Utilities	22	2.8	3.6	104.6
-20	35003	35	3	Catron County, New Mexico	23	Construction	23	3.8	4.2	270.4
-27	35003	35	3	Catron County, New Mexico	62	Health care and social assistance	62	5.6	103.8	1507.8
-29	35003	35	3	Catron County, New Mexico	72	Accommodation and food services	72	9.6	32.6	341.4
-30	35003	35	3	Catron County, New Mexico	81	Other services (except public administration)	81	5.0	11.6	376.0
-31	35005	35	5	Chaves County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	5.6	41.6	1814.2
-32	35005	35	5	Chaves County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	53.4	302.2	18424.8
-33	35005	35	5	Chaves County, New Mexico	22	Utilities	22	8.0	60.8	3846.6
-34	35005	35	5	Chaves County, New Mexico	23	Construction	23	123.4	1218.0	39837.8
-35	35005	35	5	Chaves County, New Mexico	42	Wholesale trade	42	54.8	655.4	26880.2
-36	35005	35	5	Chaves County, New Mexico	51	Information	51	20.8	209.8	6891.6
-37	35005	35	5	Chaves County, New Mexico	52	Finance and insurance	52	111.4	661.2	27323.8
-38	35005	35	5	Chaves County, New Mexico	53	Real estate and rental and leasing	53	71.2	239.0	8808.6
-39	35005	35	5	Chaves County, New Mexico	54	Professional, scientific, and technical services	54	109.8	936.4	65697.6
-40	35005	35	5	Chaves County, New Mexico	55	Management of companies and enterprises	55	12.4	76.8	3730.4
-41	35005	35	5	Chaves County, New Mexico	56	Administrative and support and waste management and remediation services	56	55.6	349.0	7827.8
-42	35005	35	5	Chaves County, New Mexico	61	Educational services	61	8.6	86.8	1868.2
-43	35005	35	5	Chaves County, New Mexico	62	Health care and social assistance	62	178.4	3723.8	153442.6
-44	35005	35	5	Chaves County, New Mexico	71	Arts, entertainment, and recreation	71	17.8	152.6	1861.0
-45	35005	35	5	Chaves County, New Mexico	72	Accommodation and food services	72	129.6	2429.8	32378.4
-46	35005	35	5	Chaves County, New Mexico	81	Other services (except public administration)	81	124.4	814.8	16556.2
-47	35005	35	5	Chaves County, New Mexico	99	Industries not classified	99	1.75	0.75	7.75
-50	35006	35	6	Cibola County, New Mexico	22	Utilities	22	4.0	37.8	3467.0
-51	35006	35	6	Cibola County, New Mexico	23	Construction	23	20.4	232.8	9202.8
-52	35006	35	6	Cibola County, New Mexico	42	Wholesale trade	42	8.6	35.6	1415.4
-53	35006	35	6	Cibola County, New Mexico	51	Information	51	5.2	7.0	563.2
-54	35006	35	6	Cibola County, New Mexico	52	Finance and insurance	52	24.6	101.6	3193.4
-55	35006	35	6	Cibola County, New Mexico	53	Real estate and rental and leasing	53	12.4	11.6	929.2
-56	35006	35	6	Cibola County, New Mexico	54	Professional, scientific, and technical services	54	14.8	48.4	2022.4
-58	35006	35	6	Cibola County, New Mexico	56	Administrative and support and waste management and remediation services	56	13.2	190.2	7434.2
-60	35006	35	6	Cibola County, New Mexico	62	Health care and social assistance	62	49.0	1448.8	53025.0
-61	35006	35	6	Cibola County, New Mexico	71	Arts, entertainment, and recreation	71	6.6	125.2	2760.4
-62	35006	35	6	Cibola County, New Mexico	72	Accommodation and food services	72	36.6	623.6	7853.6
-63	35006	35	6	Cibola County, New Mexico	81	Other services (except public administration)	81	33.4	86.4	2289.6
-66	35007	35	7	Colfax County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	3.2	30.8	2305.2
-67	35007	35	7	Colfax County, New Mexico	22	Utilities	22	6.4	13.8	1906.0
-68	35007	35	7	Colfax County, New Mexico	23	Construction	23	60.0	163.8	6348.8
-69	35007	35	7	Colfax County, New Mexico	42	Wholesale trade	42	8.0	13.6	783.2
-70	35007	35	7	Colfax County, New Mexico	51	Information	51	7.6	39.4	1143.6
-71	35007	35	7	Colfax County, New Mexico	52	Finance and insurance	52	28.6	135.6	6699.2
-72	35007	35	7	Colfax County, New Mexico	53	Real estate and rental and leasing	53	24.0	84.2	1519.2
-73	35007	35	7	Colfax County, New Mexico	54	Professional, scientific, and technical services	54	24.2	89.4	2094.8
-75	35007	35	7	Colfax County, New Mexico	56	Administrative and support and waste management and remediation services	56	14.2	26.6	666.2
-77	35007	35	7	Colfax County, New Mexico	62	Health care and social assistance	62	33.4	512.0	23821.2
-78	35007	35	7	Colfax County, New Mexico	71	Arts, entertainment, and recreation	71	4.4	3.6	135.2
-79	35007	35	7	Colfax County, New Mexico	72	Accommodation and food services	72	63.8	1155.2	24342.4
-80	35007	35	7	Colfax County, New Mexico	81	Other services (except public administration)	81	39.8	135.0	2628.8
-82	35009	35	9	Curry County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	6.8	18.2	1563.4
-83	35009	35	9	Curry County, New Mexico	22	Utilities	22	6.0	61.6	6930.6
-84	35009	35	9	Curry County, New Mexico	23	Construction	23	104.4	795.2	30412.6
-85	35009	35	9	Curry County, New Mexico	42	Wholesale trade	42	47.8	499.8	18257.0
-86	35009	35	9	Curry County, New Mexico	51	Information	51	14.4	111.4	5475.0
-87	35009	35	9	Curry County, New Mexico	52	Finance and insurance	52	82.8	474.0	19849.2
-88	35009	35	9	Curry County, New Mexico	53	Real estate and rental and leasing	53	60.8	208.6	5748.0
-89	35009	35	9	Curry County, New Mexico	54	Professional, scientific, and technical services	54	86.6	536.2	26577.2
-90	35009	35	9	Curry County, New Mexico	55	Management of companies and enterprises	55	5.0	10.2	1030.0
-91	35009	35	9	Curry County, New Mexico	56	Administrative and support and waste management and remediation services	56	43.6	631.6	13052.4
-92	35009	35	9	Curry County, New Mexico	61	Educational services	61	7.8	84.4	2001.0
-93	35009	35	9	Curry County, New Mexico	62	Health care and social assistance	62	119.4	2762.2	91268.6
-94	35009	35	9	Curry County, New Mexico	71	Arts, entertainment, and recreation	71	13.2	42.8	679.2
-95	35009	35	9	Curry County, New Mexico	72	Accommodation and food services	72	84.4	1855.4	24537.2
-96	35009	35	9	Curry County, New Mexico	81	Other services (except public administration)	81	119.8	773.4	14627.4
-97	35009	35	9	Curry County, New Mexico	99	Industries not classified	99	2.333333333333333	0.3333333333333333	8.333333333333334
-99	35011	35	11	De Baca County, New Mexico	22	Utilities	22	1.8	3.0	119.2
-100	35011	35	11	De Baca County, New Mexico	23	Construction	23	7.2	20.8	428.4
-102	35011	35	11	De Baca County, New Mexico	51	Information	51	3.0	5.8	205.0
-108	35011	35	11	De Baca County, New Mexico	72	Accommodation and food services	72	5.0	16.0	579.6
-109	35011	35	11	De Baca County, New Mexico	81	Other services (except public administration)	81	6.4	21.6	280.0
-110	35013	35	13	Doña Ana County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	10.0	40.2	2180.8
-111	35013	35	13	Doña Ana County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	5.2	28.8	1104.0
-112	35013	35	13	Doña Ana County, New Mexico	22	Utilities	22	22.8	270.6	19194.8
-113	35013	35	13	Doña Ana County, New Mexico	23	Construction	23	432.6	3276.4	112546.4
-114	35013	35	13	Doña Ana County, New Mexico	42	Wholesale trade	42	113.8	1145.4	50373.0
-115	35013	35	13	Doña Ana County, New Mexico	51	Information	51	44.8	483.0	19593.8
-116	35013	35	13	Doña Ana County, New Mexico	52	Finance and insurance	52	240.4	1689.6	67637.4
-117	35013	35	13	Doña Ana County, New Mexico	53	Real estate and rental and leasing	53	210.2	699.4	19497.6
-118	35013	35	13	Doña Ana County, New Mexico	54	Professional, scientific, and technical services	54	330.2	4004.4	216734.8
-119	35013	35	13	Doña Ana County, New Mexico	55	Management of companies and enterprises	55	9.2	137.6	6333.6
-120	35013	35	13	Doña Ana County, New Mexico	56	Administrative and support and waste management and remediation services	56	163.2	2912.8	70376.8
-121	35013	35	13	Doña Ana County, New Mexico	61	Educational services	61	39.8	550.8	15715.6
-122	35013	35	13	Doña Ana County, New Mexico	62	Health care and social assistance	62	513.2	13240.4	450708.8
-123	35013	35	13	Doña Ana County, New Mexico	71	Arts, entertainment, and recreation	71	41.0	1087.0	19058.6
-124	35013	35	13	Doña Ana County, New Mexico	72	Accommodation and food services	72	324.4	6822.0	91665.4
-125	35013	35	13	Doña Ana County, New Mexico	81	Other services (except public administration)	81	321.4	1825.8	37658.0
-126	35013	35	13	Doña Ana County, New Mexico	99	Industries not classified	99	5.4	4.6	161.4
-127	35015	35	15	Eddy County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	7.4	14.8	772.0
-128	35015	35	15	Eddy County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	152.6	5082.4	380379.4
-129	35015	35	15	Eddy County, New Mexico	22	Utilities	22	15.8	168.0	10750.6
-130	35015	35	15	Eddy County, New Mexico	23	Construction	23	135.6	1865.4	88195.8
-131	35015	35	15	Eddy County, New Mexico	42	Wholesale trade	42	64.0	559.8	30615.8
-132	35015	35	15	Eddy County, New Mexico	51	Information	51	22.8	265.2	11871.4
-133	35015	35	15	Eddy County, New Mexico	52	Finance and insurance	52	70.0	533.2	23605.4
-134	35015	35	15	Eddy County, New Mexico	53	Real estate and rental and leasing	53	63.4	385.0	20602.8
-135	35015	35	15	Eddy County, New Mexico	54	Professional, scientific, and technical services	54	79.6	754.6	53949.8
-136	35015	35	15	Eddy County, New Mexico	55	Management of companies and enterprises	55	3.6	30.8	1802.6
-137	35015	35	15	Eddy County, New Mexico	56	Administrative and support and waste management and remediation services	56	50.4	1018.8	60878.6
-138	35015	35	15	Eddy County, New Mexico	61	Educational services	61	12.0	73.4	2307.8
-139	35015	35	15	Eddy County, New Mexico	62	Health care and social assistance	62	116.2	2878.6	117720.4
-140	35015	35	15	Eddy County, New Mexico	71	Arts, entertainment, and recreation	71	10.2	66.8	1636.2
-141	35015	35	15	Eddy County, New Mexico	72	Accommodation and food services	72	121.4	2319.0	36247.4
-142	35015	35	15	Eddy County, New Mexico	81	Other services (except public administration)	81	137.0	946.2	26729.2
-143	35015	35	15	Eddy County, New Mexico	99	Industries not classified	99	2.8	0.8	47.0
-144	35017	35	17	Grant County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.2	0.0	21.8
-147	35017	35	17	Grant County, New Mexico	23	Construction	23	70.4	411.8	13774.8
-148	35017	35	17	Grant County, New Mexico	42	Wholesale trade	42	15.2	74.4	4652.0
-149	35017	35	17	Grant County, New Mexico	51	Information	51	16.4	32.2	1741.4
-150	35017	35	17	Grant County, New Mexico	52	Finance and insurance	52	32.8	202.4	6918.4
-151	35017	35	17	Grant County, New Mexico	53	Real estate and rental and leasing	53	37.0	104.8	2517.8
-152	35017	35	17	Grant County, New Mexico	54	Professional, scientific, and technical services	54	44.6	162.8	4819.6
-153	35017	35	17	Grant County, New Mexico	55	Management of companies and enterprises	55	4.0	113.0	6762.0
-154	35017	35	17	Grant County, New Mexico	56	Administrative and support and waste management and remediation services	56	17.2	16.6	382.8
-155	35017	35	17	Grant County, New Mexico	61	Educational services	61	6.4	112.0	1417.6
-156	35017	35	17	Grant County, New Mexico	62	Health care and social assistance	62	77.6	1580.2	59273.0
-157	35017	35	17	Grant County, New Mexico	71	Arts, entertainment, and recreation	71	8.0	21.6	543.6
-158	35017	35	17	Grant County, New Mexico	72	Accommodation and food services	72	74.8	883.6	10090.8
-159	35017	35	17	Grant County, New Mexico	81	Other services (except public administration)	81	65.4	257.2	4043.2
-162	35019	35	19	Guadalupe County, New Mexico	23	Construction	23	8.8	38.8	1071.4
-164	35019	35	19	Guadalupe County, New Mexico	51	Information	51	4.2	3.0	57.4
-165	35019	35	19	Guadalupe County, New Mexico	52	Finance and insurance	52	7.4	18.0	648.6
-167	35019	35	19	Guadalupe County, New Mexico	54	Professional, scientific, and technical services	54	2.0	1.0	10.2
-170	35019	35	19	Guadalupe County, New Mexico	62	Health care and social assistance	62	9.4	79.4	3663.4
-171	35019	35	19	Guadalupe County, New Mexico	72	Accommodation and food services	72	21.2	320.0	4482.8
-172	35019	35	19	Guadalupe County, New Mexico	81	Other services (except public administration)	81	10.8	32.8	1353.6
-183	35023	35	23	Hidalgo County, New Mexico	22	Utilities	22	3.2	6.0	802.4
-184	35023	35	23	Hidalgo County, New Mexico	23	Construction	23	4.2	5.4	141.4
-186	35023	35	23	Hidalgo County, New Mexico	51	Information	51	3.8	2.4	86.8
-189	35023	35	23	Hidalgo County, New Mexico	54	Professional, scientific, and technical services	54	4.2	10.2	361.8
-193	35023	35	23	Hidalgo County, New Mexico	62	Health care and social assistance	62	11.2	171.8	5147.6
-195	35023	35	23	Hidalgo County, New Mexico	72	Accommodation and food services	72	16.2	245.6	3099.8
-196	35023	35	23	Hidalgo County, New Mexico	81	Other services (except public administration)	81	4.8	2.6	31.4
-198	35025	35	25	Lea County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	239.0	4785.6	333114.2
-199	35025	35	25	Lea County, New Mexico	22	Utilities	22	9.0	90.2	6732.6
-200	35025	35	25	Lea County, New Mexico	23	Construction	23	126.6	2527.4	139131.4
-201	35025	35	25	Lea County, New Mexico	42	Wholesale trade	42	102.4	1531.2	91310.2
-202	35025	35	25	Lea County, New Mexico	51	Information	51	24.0	210.8	10371.8
-203	35025	35	25	Lea County, New Mexico	52	Finance and insurance	52	84.4	466.6	18068.6
-204	35025	35	25	Lea County, New Mexico	53	Real estate and rental and leasing	53	91.4	983.4	68720.2
-205	35025	35	25	Lea County, New Mexico	54	Professional, scientific, and technical services	54	78.6	529.6	26650.8
-206	35025	35	25	Lea County, New Mexico	55	Management of companies and enterprises	55	11.2	150.4	13236.8
-207	35025	35	25	Lea County, New Mexico	56	Administrative and support and waste management and remediation services	56	71.8	1302.2	67241.4
-208	35025	35	25	Lea County, New Mexico	61	Educational services	61	8.8	82.4	2452.8
-209	35025	35	25	Lea County, New Mexico	62	Health care and social assistance	62	114.2	2389.8	88307.2
-210	35025	35	25	Lea County, New Mexico	71	Arts, entertainment, and recreation	71	13.0	147.6	4361.6
-211	35025	35	25	Lea County, New Mexico	72	Accommodation and food services	72	144.4	2456.6	34991.2
-212	35025	35	25	Lea County, New Mexico	81	Other services (except public administration)	81	158.2	1119.2	37770.0
-214	35027	35	27	Lincoln County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	5.8	7.6	344.0
-216	35027	35	27	Lincoln County, New Mexico	22	Utilities	22	5.4	38.4	3000.8
-217	35027	35	27	Lincoln County, New Mexico	23	Construction	23	98.0	305.8	8592.6
-218	35027	35	27	Lincoln County, New Mexico	42	Wholesale trade	42	10.8	37.0	1303.8
-219	35027	35	27	Lincoln County, New Mexico	51	Information	51	11.2	48.2	2360.0
-220	35027	35	27	Lincoln County, New Mexico	52	Finance and insurance	52	41.8	293.2	11058.8
-221	35027	35	27	Lincoln County, New Mexico	53	Real estate and rental and leasing	53	57.6	143.6	3672.6
-222	35027	35	27	Lincoln County, New Mexico	54	Professional, scientific, and technical services	54	47.6	141.8	5515.2
-224	35027	35	27	Lincoln County, New Mexico	56	Administrative and support and waste management and remediation services	56	20.2	135.8	4119.0
-225	35027	35	27	Lincoln County, New Mexico	61	Educational services	61	4.6	16.8	201.0
-226	35027	35	27	Lincoln County, New Mexico	62	Health care and social assistance	62	44.0	549.4	23793.4
-227	35027	35	27	Lincoln County, New Mexico	71	Arts, entertainment, and recreation	71	20.8	444.6	12079.4
-228	35027	35	27	Lincoln County, New Mexico	72	Accommodation and food services	72	94.0	1185.4	18283.6
-229	35027	35	27	Lincoln County, New Mexico	81	Other services (except public administration)	81	62.8	319.8	6639.6
-230	35027	35	27	Lincoln County, New Mexico	99	Industries not classified	99	2.0	0.3333333333333333	7.0
-233	35028	35	28	Los Alamos County, New Mexico	23	Construction	23	30.0	189.0	8647.2
-234	35028	35	28	Los Alamos County, New Mexico	42	Wholesale trade	42	3.2	17.6	1335.2
-235	35028	35	28	Los Alamos County, New Mexico	51	Information	51	9.6	63.0	1680.6
-236	35028	35	28	Los Alamos County, New Mexico	52	Finance and insurance	52	20.0	126.6	7508.0
-237	35028	35	28	Los Alamos County, New Mexico	53	Real estate and rental and leasing	53	21.6	72.2	2714.6
-238	35028	35	28	Los Alamos County, New Mexico	54	Professional, scientific, and technical services	54	61.2	3825.4	385150.2
-239	35028	35	28	Los Alamos County, New Mexico	56	Administrative and support and waste management and remediation services	56	21.2	375.4	25665.8
-240	35028	35	28	Los Alamos County, New Mexico	61	Educational services	61	4.0	20.6	658.4
-241	35028	35	28	Los Alamos County, New Mexico	62	Health care and social assistance	62	67.4	1012.2	42205.0
-242	35028	35	28	Los Alamos County, New Mexico	71	Arts, entertainment, and recreation	71	10.8	74.4	1066.8
-243	35028	35	28	Los Alamos County, New Mexico	72	Accommodation and food services	72	35.0	432.2	6570.6
-244	35028	35	28	Los Alamos County, New Mexico	81	Other services (except public administration)	81	41.2	341.2	5474.8
-249	35029	35	29	Luna County, New Mexico	23	Construction	23	31.8	144.6	5713.0
-250	35029	35	29	Luna County, New Mexico	42	Wholesale trade	42	12.4	58.8	2165.6
-251	35029	35	29	Luna County, New Mexico	51	Information	51	6.6	11.0	451.0
-252	35029	35	29	Luna County, New Mexico	52	Finance and insurance	52	22.8	50.6	3499.4
-253	35029	35	29	Luna County, New Mexico	53	Real estate and rental and leasing	53	20.8	46.2	1204.8
-254	35029	35	29	Luna County, New Mexico	54	Professional, scientific, and technical services	54	19.4	84.0	2632.2
-256	35029	35	29	Luna County, New Mexico	56	Administrative and support and waste management and remediation services	56	14.8	23.0	758.0
-258	35029	35	29	Luna County, New Mexico	62	Health care and social assistance	62	49.8	790.4	33761.4
-259	35029	35	29	Luna County, New Mexico	71	Arts, entertainment, and recreation	71	5.2	48.0	549.2
-260	35029	35	29	Luna County, New Mexico	72	Accommodation and food services	72	60.4	830.8	9170.2
-261	35029	35	29	Luna County, New Mexico	81	Other services (except public administration)	81	38.4	107.8	2264.2
-262	35029	35	29	Luna County, New Mexico	99	Industries not classified	99	2.333333333333333	0.3333333333333333	9.333333333333334
-264	35031	35	31	McKinley County, New Mexico	22	Utilities	22	6.4	96.4	8323.0
-265	35031	35	31	McKinley County, New Mexico	23	Construction	23	53.4	447.6	16383.6
-266	35031	35	31	McKinley County, New Mexico	42	Wholesale trade	42	47.6	603.2	17998.4
-267	35031	35	31	McKinley County, New Mexico	51	Information	51	18.6	188.8	6033.4
-268	35031	35	31	McKinley County, New Mexico	52	Finance and insurance	52	77.4	422.2	13913.0
-269	35031	35	31	McKinley County, New Mexico	53	Real estate and rental and leasing	53	41.4	186.0	6009.8
-270	35031	35	31	McKinley County, New Mexico	54	Professional, scientific, and technical services	54	42.2	225.8	7712.8
-271	35031	35	31	McKinley County, New Mexico	55	Management of companies and enterprises	55	2.0	5.6	179.4
-272	35031	35	31	McKinley County, New Mexico	56	Administrative and support and waste management and remediation services	56	19.8	156.6	3301.4
-273	35031	35	31	McKinley County, New Mexico	61	Educational services	61	9.8	573.2	18420.0
-274	35031	35	31	McKinley County, New Mexico	62	Health care and social assistance	62	112.2	4658.6	186011.6
-276	35031	35	31	McKinley County, New Mexico	72	Accommodation and food services	72	141.2	2508.8	34536.6
-277	35031	35	31	McKinley County, New Mexico	81	Other services (except public administration)	81	106.6	740.6	15753.0
-278	35031	35	31	McKinley County, New Mexico	99	Industries not classified	99	2.5	1.5	33.0
-282	35033	35	33	Mora County, New Mexico	23	Construction	23	7.2	14.4	591.0
-284	35033	35	33	Mora County, New Mexico	52	Finance and insurance	52	5.0	4.0	246.8
-288	35033	35	33	Mora County, New Mexico	62	Health care and social assistance	62	6.0	127.4	2605.2
-290	35033	35	33	Mora County, New Mexico	72	Accommodation and food services	72	2.4	2.2	22.8
-291	35033	35	33	Mora County, New Mexico	81	Other services (except public administration)	81	5.0	5.4	93.8
-292	35035	35	35	Otero County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.0	0.0	7.4
-293	35035	35	35	Otero County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	5.0	48.2	2014.8
-294	35035	35	35	Otero County, New Mexico	22	Utilities	22	11.8	114.4	6383.2
-295	35035	35	35	Otero County, New Mexico	23	Construction	23	111.8	909.0	31479.4
-296	35035	35	35	Otero County, New Mexico	42	Wholesale trade	42	23.2	114.8	4064.6
-297	35035	35	35	Otero County, New Mexico	51	Information	51	18.6	336.0	10414.4
-298	35035	35	35	Otero County, New Mexico	52	Finance and insurance	52	53.0	325.4	11846.4
-299	35035	35	35	Otero County, New Mexico	53	Real estate and rental and leasing	53	48.0	122.6	3779.0
-300	35035	35	35	Otero County, New Mexico	54	Professional, scientific, and technical services	54	70.4	596.6	23365.0
-301	35035	35	35	Otero County, New Mexico	55	Management of companies and enterprises	55	3.6	16.8	1387.8
-302	35035	35	35	Otero County, New Mexico	56	Administrative and support and waste management and remediation services	56	45.2	257.4	7219.2
-303	35035	35	35	Otero County, New Mexico	61	Educational services	61	9.6	119.2	5858.2
-304	35035	35	35	Otero County, New Mexico	62	Health care and social assistance	62	102.4	2295.0	95135.8
-305	35035	35	35	Otero County, New Mexico	71	Arts, entertainment, and recreation	71	15.6	218.6	2905.6
-306	35035	35	35	Otero County, New Mexico	72	Accommodation and food services	72	103.2	2355.0	46612.8
-307	35035	35	35	Otero County, New Mexico	81	Other services (except public administration)	81	108.0	653.8	10790.0
-310	35037	35	37	Quay County, New Mexico	22	Utilities	22	8.6	11.8	1204.0
-311	35037	35	37	Quay County, New Mexico	23	Construction	23	14.8	95.8	3082.6
-312	35037	35	37	Quay County, New Mexico	42	Wholesale trade	42	3.6	2.8	338.2
-313	35037	35	37	Quay County, New Mexico	51	Information	51	6.4	23.0	1276.6
-314	35037	35	37	Quay County, New Mexico	52	Finance and insurance	52	16.4	106.6	4131.2
-315	35037	35	37	Quay County, New Mexico	53	Real estate and rental and leasing	53	9.4	4.8	160.6
-316	35037	35	37	Quay County, New Mexico	54	Professional, scientific, and technical services	54	12.8	43.2	1390.2
-317	35037	35	37	Quay County, New Mexico	56	Administrative and support and waste management and remediation services	56	5.8	10.8	225.6
-318	35037	35	37	Quay County, New Mexico	62	Health care and social assistance	62	23.4	213.8	10999.6
-319	35037	35	37	Quay County, New Mexico	71	Arts, entertainment, and recreation	71	3.2	6.2	71.2
-320	35037	35	37	Quay County, New Mexico	72	Accommodation and food services	72	34.6	495.8	6754.2
-321	35037	35	37	Quay County, New Mexico	81	Other services (except public administration)	81	32.6	148.8	3293.4
-323	35039	35	39	Rio Arriba County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	9.8	17.8	772.6
-324	35039	35	39	Rio Arriba County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	4.6	22.8	1287.2
-326	35039	35	39	Rio Arriba County, New Mexico	23	Construction	23	72.8	275.2	9084.8
-327	35039	35	39	Rio Arriba County, New Mexico	42	Wholesale trade	42	8.6	12.6	744.4
-328	35039	35	39	Rio Arriba County, New Mexico	51	Information	51	11.6	27.4	1231.6
-329	35039	35	39	Rio Arriba County, New Mexico	52	Finance and insurance	52	31.6	212.0	7785.8
-330	35039	35	39	Rio Arriba County, New Mexico	53	Real estate and rental and leasing	53	19.6	41.2	1203.6
-331	35039	35	39	Rio Arriba County, New Mexico	54	Professional, scientific, and technical services	54	35.6	58.4	2841.2
-332	35039	35	39	Rio Arriba County, New Mexico	55	Management of companies and enterprises	55	2.6	9.8	453.2
-333	35039	35	39	Rio Arriba County, New Mexico	56	Administrative and support and waste management and remediation services	56	14.6	141.8	3659.0
-334	35039	35	39	Rio Arriba County, New Mexico	61	Educational services	61	6.6	13.2	438.0
-335	35039	35	39	Rio Arriba County, New Mexico	62	Health care and social assistance	62	82.0	1862.6	67970.8
-336	35039	35	39	Rio Arriba County, New Mexico	71	Arts, entertainment, and recreation	71	15.0	88.6	3037.6
-337	35039	35	39	Rio Arriba County, New Mexico	72	Accommodation and food services	72	64.6	1106.6	21353.0
-338	35039	35	39	Rio Arriba County, New Mexico	81	Other services (except public administration)	81	45.8	228.2	5620.4
-339	35039	35	39	Rio Arriba County, New Mexico	99	Industries not classified	99	2.0	0.5	12.25
-342	35041	35	41	Roosevelt County, New Mexico	22	Utilities	22	5.0	22.6	1407.2
-343	35041	35	41	Roosevelt County, New Mexico	23	Construction	23	50.8	217.8	5694.8
-344	35041	35	41	Roosevelt County, New Mexico	42	Wholesale trade	42	14.0	96.6	2847.8
-345	35041	35	41	Roosevelt County, New Mexico	51	Information	51	5.2	41.4	1597.0
-346	35041	35	41	Roosevelt County, New Mexico	52	Finance and insurance	52	25.4	132.4	4836.2
-347	35041	35	41	Roosevelt County, New Mexico	53	Real estate and rental and leasing	53	13.6	31.4	848.2
-348	35041	35	41	Roosevelt County, New Mexico	54	Professional, scientific, and technical services	54	14.4	69.8	2498.8
-349	35041	35	41	Roosevelt County, New Mexico	56	Administrative and support and waste management and remediation services	56	7.0	22.0	327.2
-351	35041	35	41	Roosevelt County, New Mexico	62	Health care and social assistance	62	31.8	612.0	22219.6
-352	35041	35	41	Roosevelt County, New Mexico	71	Arts, entertainment, and recreation	71	3.8	13.2	412.6
-353	35041	35	41	Roosevelt County, New Mexico	72	Accommodation and food services	72	29.4	565.6	6707.2
-354	35041	35	41	Roosevelt County, New Mexico	81	Other services (except public administration)	81	41.0	184.4	3544.6
-357	35043	35	43	Sandoval County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	8.0	28.4	1376.8
-358	35043	35	43	Sandoval County, New Mexico	22	Utilities	22	11.6	85.8	8033.2
-359	35043	35	43	Sandoval County, New Mexico	23	Construction	23	231.4	1551.6	65506.6
-360	35043	35	43	Sandoval County, New Mexico	42	Wholesale trade	42	52.0	297.2	18988.4
-361	35043	35	43	Sandoval County, New Mexico	51	Information	51	35.0	242.0	9207.4
-362	35043	35	43	Sandoval County, New Mexico	52	Finance and insurance	52	111.6	839.8	35049.8
-363	35043	35	43	Sandoval County, New Mexico	53	Real estate and rental and leasing	53	75.8	250.0	10600.4
-364	35043	35	43	Sandoval County, New Mexico	54	Professional, scientific, and technical services	54	174.4	842.0	52903.0
-365	35043	35	43	Sandoval County, New Mexico	55	Management of companies and enterprises	55	4.2	2.2	192.2
-366	35043	35	43	Sandoval County, New Mexico	56	Administrative and support and waste management and remediation services	56	97.4	2354.4	94620.4
-367	35043	35	43	Sandoval County, New Mexico	61	Educational services	61	28.4	235.0	6031.0
-368	35043	35	43	Sandoval County, New Mexico	62	Health care and social assistance	62	212.0	3596.0	147141.0
-369	35043	35	43	Sandoval County, New Mexico	71	Arts, entertainment, and recreation	71	27.6	1176.6	31066.4
-370	35043	35	43	Sandoval County, New Mexico	72	Accommodation and food services	72	156.2	3674.0	56206.4
-371	35043	35	43	Sandoval County, New Mexico	81	Other services (except public administration)	81	154.2	1125.6	27230.0
-372	35043	35	43	Sandoval County, New Mexico	99	Industries not classified	99	2.6	0.4	8.2
-374	35045	35	45	San Juan County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	178.4	4663.8	386614.8
-375	35045	35	45	San Juan County, New Mexico	22	Utilities	22	14.4	205.4	21258.2
-376	35045	35	45	San Juan County, New Mexico	23	Construction	23	254.6	2689.4	129855.6
-377	35045	35	45	San Juan County, New Mexico	42	Wholesale trade	42	174.4	1703.8	97596.0
-378	35045	35	45	San Juan County, New Mexico	51	Information	51	31.0	398.2	11981.0
-379	35045	35	45	San Juan County, New Mexico	52	Finance and insurance	52	161.4	964.0	36302.2
-380	35045	35	45	San Juan County, New Mexico	53	Real estate and rental and leasing	53	103.0	750.8	37956.6
-381	35045	35	45	San Juan County, New Mexico	54	Professional, scientific, and technical services	54	247.6	1274.6	66847.8
-382	35045	35	45	San Juan County, New Mexico	55	Management of companies and enterprises	55	18.8	797.6	68525.4
-383	35045	35	45	San Juan County, New Mexico	56	Administrative and support and waste management and remediation services	56	108.4	1184.8	44181.0
-384	35045	35	45	San Juan County, New Mexico	61	Educational services	61	18.4	292.4	8281.0
-385	35045	35	45	San Juan County, New Mexico	62	Health care and social assistance	62	276.0	6723.6	301605.0
-386	35045	35	45	San Juan County, New Mexico	71	Arts, entertainment, and recreation	71	27.6	790.8	18486.6
-387	35045	35	45	San Juan County, New Mexico	72	Accommodation and food services	72	213.8	4384.4	62591.6
-388	35045	35	45	San Juan County, New Mexico	81	Other services (except public administration)	81	288.0	2034.8	59946.8
-389	35045	35	45	San Juan County, New Mexico	99	Industries not classified	99	2.0	0.6	6.0
-391	35047	35	47	San Miguel County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	2.6	0.0	77.0
-392	35047	35	47	San Miguel County, New Mexico	22	Utilities	22	7.0	11.2	422.4
-393	35047	35	47	San Miguel County, New Mexico	23	Construction	23	45.4	208.0	6770.0
-394	35047	35	47	San Miguel County, New Mexico	42	Wholesale trade	42	6.8	16.0	545.6
-395	35047	35	47	San Miguel County, New Mexico	51	Information	51	9.2	48.0	1632.2
-396	35047	35	47	San Miguel County, New Mexico	52	Finance and insurance	52	31.4	172.8	6015.6
-397	35047	35	47	San Miguel County, New Mexico	53	Real estate and rental and leasing	53	17.4	16.0	1120.8
-398	35047	35	47	San Miguel County, New Mexico	54	Professional, scientific, and technical services	54	30.6	112.4	3869.4
-400	35047	35	47	San Miguel County, New Mexico	56	Administrative and support and waste management and remediation services	56	11.2	11.2	359.0
-402	35047	35	47	San Miguel County, New Mexico	62	Health care and social assistance	62	74.2	3093.2	88611.4
-404	35047	35	47	San Miguel County, New Mexico	72	Accommodation and food services	72	59.0	772.4	10279.6
-405	35047	35	47	San Miguel County, New Mexico	81	Other services (except public administration)	81	40.8	159.4	2854.8
-406	35049	35	49	Santa Fe County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	8.6	5.0	454.4
-407	35049	35	49	Santa Fe County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	9.2	62.0	5539.8
-408	35049	35	49	Santa Fe County, New Mexico	22	Utilities	22	13.6	74.6	5488.4
-409	35049	35	49	Santa Fe County, New Mexico	23	Construction	23	492.6	2288.2	83275.6
-410	35049	35	49	Santa Fe County, New Mexico	42	Wholesale trade	42	127.4	1223.4	69125.4
-411	35049	35	49	Santa Fe County, New Mexico	51	Information	51	90.4	771.0	41550.0
-412	35049	35	49	Santa Fe County, New Mexico	52	Finance and insurance	52	226.8	1744.2	232847.2
-413	35049	35	49	Santa Fe County, New Mexico	53	Real estate and rental and leasing	53	263.6	853.8	40163.4
-414	35049	35	49	Santa Fe County, New Mexico	54	Professional, scientific, and technical services	54	642.8	2401.2	148519.8
-415	35049	35	49	Santa Fe County, New Mexico	55	Management of companies and enterprises	55	21.8	297.6	20166.8
-416	35049	35	49	Santa Fe County, New Mexico	56	Administrative and support and waste management and remediation services	56	207.6	1354.6	41256.0
-417	35049	35	49	Santa Fe County, New Mexico	61	Educational services	61	113.8	1810.2	58267.6
-418	35049	35	49	Santa Fe County, New Mexico	62	Health care and social assistance	62	507.2	8342.6	376562.4
-419	35049	35	49	Santa Fe County, New Mexico	71	Arts, entertainment, and recreation	71	140.4	1828.2	57010.2
-420	35049	35	49	Santa Fe County, New Mexico	72	Accommodation and food services	72	408.8	9133.4	203863.4
-421	35049	35	49	Santa Fe County, New Mexico	81	Other services (except public administration)	81	421.0	2407.4	85492.6
-422	35049	35	49	Santa Fe County, New Mexico	99	Industries not classified	99	9.2	9.2	285.4
-426	35051	35	51	Sierra County, New Mexico	23	Construction	23	21.8	135.0	6834.0
-428	35051	35	51	Sierra County, New Mexico	51	Information	51	3.2	16.0	603.6
-429	35051	35	51	Sierra County, New Mexico	52	Finance and insurance	52	15.0	52.8	2140.6
-430	35051	35	51	Sierra County, New Mexico	53	Real estate and rental and leasing	53	9.8	21.8	513.8
-431	35051	35	51	Sierra County, New Mexico	54	Professional, scientific, and technical services	54	14.2	42.0	880.6
-432	35051	35	51	Sierra County, New Mexico	56	Administrative and support and waste management and remediation services	56	3.2	4.8	154.2
-433	35051	35	51	Sierra County, New Mexico	62	Health care and social assistance	62	20.4	688.0	20892.2
-434	35051	35	51	Sierra County, New Mexico	71	Arts, entertainment, and recreation	71	7.8	15.4	311.0
-435	35051	35	51	Sierra County, New Mexico	72	Accommodation and food services	72	38.8	439.2	5365.0
-436	35051	35	51	Sierra County, New Mexico	81	Other services (except public administration)	81	26.8	122.4	2617.6
-441	35053	35	53	Socorro County, New Mexico	23	Construction	23	14.4	36.2	895.4
-443	35053	35	53	Socorro County, New Mexico	51	Information	51	4.4	2.0	332.2
-444	35053	35	53	Socorro County, New Mexico	52	Finance and insurance	52	17.2	45.2	1852.2
-445	35053	35	53	Socorro County, New Mexico	53	Real estate and rental and leasing	53	10.6	28.2	538.2
-446	35053	35	53	Socorro County, New Mexico	54	Professional, scientific, and technical services	54	25.6	243.4	14634.2
-447	35053	35	53	Socorro County, New Mexico	56	Administrative and support and waste management and remediation services	56	4.6	26.2	2162.4
-449	35053	35	53	Socorro County, New Mexico	62	Health care and social assistance	62	32.2	363.8	11018.8
-451	35053	35	53	Socorro County, New Mexico	72	Accommodation and food services	72	39.2	596.6	7459.6
-452	35053	35	53	Socorro County, New Mexico	81	Other services (except public administration)	81	20.4	74.4	1353.2
-457	35055	35	55	Taos County, New Mexico	23	Construction	23	143.0	389.0	14525.4
-458	35055	35	55	Taos County, New Mexico	42	Wholesale trade	42	19.2	44.8	3094.0
-459	35055	35	55	Taos County, New Mexico	51	Information	51	15.8	71.0	4210.8
-460	35055	35	55	Taos County, New Mexico	52	Finance and insurance	52	42.0	207.0	7685.8
-461	35055	35	55	Taos County, New Mexico	53	Real estate and rental and leasing	53	60.4	210.0	4806.6
-462	35055	35	55	Taos County, New Mexico	54	Professional, scientific, and technical services	54	98.6	274.4	10637.0
-464	35055	35	55	Taos County, New Mexico	56	Administrative and support and waste management and remediation services	56	42.8	237.8	9577.6
-465	35055	35	55	Taos County, New Mexico	61	Educational services	61	18.6	81.4	1674.2
-466	35055	35	55	Taos County, New Mexico	62	Health care and social assistance	62	98.0	1468.0	54299.0
-467	35055	35	55	Taos County, New Mexico	71	Arts, entertainment, and recreation	71	33.8	616.4	11816.4
-468	35055	35	55	Taos County, New Mexico	72	Accommodation and food services	72	153.4	1995.6	33790.4
-469	35055	35	55	Taos County, New Mexico	81	Other services (except public administration)	81	81.6	336.8	7453.0
-470	35055	35	55	Taos County, New Mexico	99	Industries not classified	99	2.0	0.3333333333333333	13.333333333333336
-473	35057	35	57	Torrance County, New Mexico	22	Utilities	22	4.4	17.2	1120.8
-474	35057	35	57	Torrance County, New Mexico	23	Construction	23	32.4	120.2	4193.8
-475	35057	35	57	Torrance County, New Mexico	42	Wholesale trade	42	9.6	45.2	1460.6
-477	35057	35	57	Torrance County, New Mexico	52	Finance and insurance	52	11.6	23.0	1462.2
-479	35057	35	57	Torrance County, New Mexico	54	Professional, scientific, and technical services	54	13.8	30.6	991.2
-482	35057	35	57	Torrance County, New Mexico	62	Health care and social assistance	62	18.4	59.8	1481.6
-483	35057	35	57	Torrance County, New Mexico	71	Arts, entertainment, and recreation	71	2.8	15.0	316.4
-484	35057	35	57	Torrance County, New Mexico	72	Accommodation and food services	72	23.4	194.6	2329.2
-485	35057	35	57	Torrance County, New Mexico	81	Other services (except public administration)	81	19.4	51.6	1310.6
-489	35059	35	59	Union County, New Mexico	22	Utilities	22	3.0	11.4	636.2
-490	35059	35	59	Union County, New Mexico	23	Construction	23	14.8	25.8	756.2
-492	35059	35	59	Union County, New Mexico	51	Information	51	4.0	36.6	1971.4
-493	35059	35	59	Union County, New Mexico	52	Finance and insurance	52	2.4	13.4	668.4
-495	35059	35	59	Union County, New Mexico	54	Professional, scientific, and technical services	54	6.4	10.8	383.6
-498	35059	35	59	Union County, New Mexico	62	Health care and social assistance	62	10.0	69.4	2134.6
-499	35059	35	59	Union County, New Mexico	71	Arts, entertainment, and recreation	71	3.6	2.4	103.8
-500	35059	35	59	Union County, New Mexico	72	Accommodation and food services	72	13.8	87.6	1864.8
-501	35059	35	59	Union County, New Mexico	81	Other services (except public administration)	81	16.0	51.2	877.0
-502	35061	35	61	Valencia County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.0	1.2	19.6
-504	35061	35	61	Valencia County, New Mexico	22	Utilities	22	6.0	16.4	1753.8
-505	35061	35	61	Valencia County, New Mexico	23	Construction	23	132.4	750.4	26080.2
-506	35061	35	61	Valencia County, New Mexico	42	Wholesale trade	42	20.4	95.6	3945.6
-507	35061	35	61	Valencia County, New Mexico	51	Information	51	8.6	12.8	846.2
-508	35061	35	61	Valencia County, New Mexico	52	Finance and insurance	52	71.4	258.6	10381.8
-509	35061	35	61	Valencia County, New Mexico	53	Real estate and rental and leasing	53	44.4	60.8	3229.6
-510	35061	35	61	Valencia County, New Mexico	54	Professional, scientific, and technical services	54	73.4	301.4	8742.8
-511	35061	35	61	Valencia County, New Mexico	55	Management of companies and enterprises	55	2.4	18.0	777.0
-512	35061	35	61	Valencia County, New Mexico	56	Administrative and support and waste management and remediation services	56	28.8	198.4	5837.8
-513	35061	35	61	Valencia County, New Mexico	61	Educational services	61	5.0	34.2	818.6
-514	35061	35	61	Valencia County, New Mexico	62	Health care and social assistance	62	93.2	2030.4	46227.8
-515	35061	35	61	Valencia County, New Mexico	71	Arts, entertainment, and recreation	71	11.6	52.2	749.0
-516	35061	35	61	Valencia County, New Mexico	72	Accommodation and food services	72	97.4	2065.6	31954.4
-517	35061	35	61	Valencia County, New Mexico	81	Other services (except public administration)	81	92.4	422.2	8178.6
-518	35061	35	61	Valencia County, New Mexico	99	Industries not classified	99	1.5	1.25	24.5
-0	35001	35	1	Bernalillo County, New Mexico	22	Utilities	22	16.8	352.3971580817052	28936.716873889876
-1	35003	35	3	Catron County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.4	5.776873661670234	218.01327623126338
-2	35003	35	3	Catron County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	2.2	59.37361407249467	4476.159754797442
-3	35003	35	3	Catron County, New Mexico	42	Wholesale trade	42	1.0	11.738219338368259	620.2151898734178
-4	35003	35	3	Catron County, New Mexico	52	Finance and insurance	52	1.2	10.00739599383667	563.0817521461589
-5	35003	35	3	Catron County, New Mexico	53	Real estate and rental and leasing	53	1.25	5.338543897216274	215.73565310492506
-6	35003	35	3	Catron County, New Mexico	54	Professional, scientific, and technical services	54	4.0	32.76513440974737	2172.5971115750012
-7	35003	35	3	Catron County, New Mexico	56	Administrative and support and waste management and remediation services	56	2.0	34.94835377663008	1079.3961695717667
-8	35003	35	3	Catron County, New Mexico	61	Educational services	61	1.0	20.962594371997255	653.7594371997254
-9	35003	35	3	Catron County, New Mexico	71	Arts, entertainment, and recreation	71	1.8	34.75540420491561	781.158424637252
-10	35006	35	6	Cibola County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.8	7.427408993576017	280.30278372591005
-11	35006	35	6	Cibola County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	2.0	53.97601279317697	4069.2361407249464
-12	35006	35	6	Cibola County, New Mexico	55	Management of companies and enterprises	55	1.0	29.215789473684207	1804.751754385965
-13	35006	35	6	Cibola County, New Mexico	61	Educational services	61	3.6	75.46533973919013	2353.5339739190117
-14	35006	35	6	Cibola County, New Mexico	99	Industries not classified	99	1.5	1.324742268041237	34.08247422680412
-15	35007	35	7	Colfax County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.0	4.126338329764454	155.7237687366167
-16	35007	35	7	Colfax County, New Mexico	55	Management of companies and enterprises	55	1.2	35.05894736842105	2165.702105263158
-17	35007	35	7	Colfax County, New Mexico	61	Educational services	61	1.8	37.732669869595064	1176.7669869595059
-18	35007	35	7	Colfax County, New Mexico	99	Industries not classified	99	1.3333333333333333	1.1775486827033217	30.29553264604811
-19	35011	35	11	De Baca County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-20	35011	35	11	De Baca County, New Mexico	42	Wholesale trade	42	1.0	11.738219338368259	620.2151898734178
-21	35011	35	11	De Baca County, New Mexico	52	Finance and insurance	52	2.0	16.678993323061118	938.4695869102649
-22	35011	35	11	De Baca County, New Mexico	53	Real estate and rental and leasing	53	1.0	4.270835117773019	172.58852248394004
-23	35011	35	11	De Baca County, New Mexico	54	Professional, scientific, and technical services	54	1.0	8.191283602436842	543.1492778937503
-24	35011	35	11	De Baca County, New Mexico	62	Health care and social assistance	62	3.8	88.87702110712863	3672.6314456391874
-25	35011	35	11	De Baca County, New Mexico	71	Arts, entertainment, and recreation	71	1.0	19.30855789161978	433.9769025762511
-26	35017	35	17	Grant County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	6.4	172.72324093816633	13021.555650319831
-27	35017	35	17	Grant County, New Mexico	22	Utilities	22	5.0	104.88010657193607	8612.118117229129
-28	35017	35	17	Grant County, New Mexico	99	Industries not classified	99	2.0	1.7663230240549825	45.44329896907216
-29	35019	35	19	Guadalupe County, New Mexico	22	Utilities	22	2.0	41.95204262877443	3444.847246891652
-30	35019	35	19	Guadalupe County, New Mexico	42	Wholesale trade	42	1.0	11.738219338368259	620.2151898734178
-31	35019	35	19	Guadalupe County, New Mexico	53	Real estate and rental and leasing	53	2.0	8.541670235546038	345.1770449678801
-32	35019	35	19	Guadalupe County, New Mexico	56	Administrative and support and waste management and remediation services	56	1.4	24.463847643641056	755.5773187002367
-33	35019	35	19	Guadalupe County, New Mexico	61	Educational services	61	1.0	20.962594371997255	653.7594371997254
-34	35021	35	21	Harding County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.0	4.126338329764454	155.7237687366167
-35	35021	35	21	Harding County, New Mexico	23	Construction	23	1.3333333333333333	11.715723503442314	504.73927942947114
-36	35021	35	21	Harding County, New Mexico	52	Finance and insurance	52	1.0	8.339496661530559	469.23479345513243
-37	35021	35	21	Harding County, New Mexico	53	Real estate and rental and leasing	53	2.0	8.541670235546038	345.1770449678801
-38	35021	35	21	Harding County, New Mexico	56	Administrative and support and waste management and remediation services	56	1.0	17.47417688831504	539.6980847858833
-39	35021	35	21	Harding County, New Mexico	62	Health care and social assistance	62	1.4	32.744165671047384	1353.0747431302268
-40	35021	35	21	Harding County, New Mexico	72	Accommodation and food services	72	1.0	20.136372269705603	331.4064577397911
-41	35021	35	21	Harding County, New Mexico	81	Other services (except public administration)	81	1.4	9.083574192916279	240.81069906432174
-42	35023	35	23	Hidalgo County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.0	4.126338329764454	155.7237687366167
-43	35023	35	23	Hidalgo County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-44	35023	35	23	Hidalgo County, New Mexico	42	Wholesale trade	42	2.0	23.476438676736517	1240.4303797468356
-45	35023	35	23	Hidalgo County, New Mexico	52	Finance and insurance	52	2.0	16.678993323061118	938.4695869102649
-46	35023	35	23	Hidalgo County, New Mexico	53	Real estate and rental and leasing	53	1.4	5.979169164882226	241.62393147751604
-47	35023	35	23	Hidalgo County, New Mexico	55	Management of companies and enterprises	55	1.0	29.215789473684207	1804.751754385965
-48	35023	35	23	Hidalgo County, New Mexico	56	Administrative and support and waste management and remediation services	56	2.5	43.68544222078761	1349.2452119647085
-49	35023	35	23	Hidalgo County, New Mexico	61	Educational services	61	1.0	20.962594371997255	653.7594371997254
-50	35023	35	23	Hidalgo County, New Mexico	71	Arts, entertainment, and recreation	71	1.0	19.30855789161978	433.9769025762511
-51	35025	35	25	Lea County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.0	4.126338329764454	155.7237687366167
-52	35025	35	25	Lea County, New Mexico	99	Industries not classified	99	1.75	1.5455326460481098	39.76288659793814
-53	35027	35	27	Lincoln County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.2	32.38560767590618	2441.541684434968
-54	35027	35	27	Lincoln County, New Mexico	55	Management of companies and enterprises	55	2.0	58.431578947368415	3609.50350877193
-55	35028	35	28	Los Alamos County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-56	35028	35	28	Los Alamos County, New Mexico	22	Utilities	22	1.0	20.976021314387214	1722.423623445826
-57	35028	35	28	Los Alamos County, New Mexico	99	Industries not classified	99	1.0	0.8831615120274913	22.72164948453608
-58	35029	35	29	Luna County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.0	4.126338329764454	155.7237687366167
-59	35029	35	29	Luna County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.8	48.57841151385928	3662.312526652452
-60	35029	35	29	Luna County, New Mexico	22	Utilities	22	2.0	41.95204262877443	3444.847246891652
-61	35029	35	29	Luna County, New Mexico	55	Management of companies and enterprises	55	1.6	46.74526315789473	2887.602807017544
-62	35029	35	29	Luna County, New Mexico	61	Educational services	61	1.0	20.962594371997255	653.7594371997254
-63	35031	35	31	McKinley County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	2.2	59.37361407249467	4476.159754797442
-64	35031	35	31	McKinley County, New Mexico	71	Arts, entertainment, and recreation	71	7.6	146.74503997631032	3298.224459579508
-65	35033	35	33	Mora County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.2	4.951605995717344	186.86852248394
-66	35033	35	33	Mora County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-67	35033	35	33	Mora County, New Mexico	22	Utilities	22	2.6	54.53765541740676	4478.301420959148
-68	35033	35	33	Mora County, New Mexico	51	Information	51	1.2	19.663303239511414	847.0738183749335
-69	35033	35	33	Mora County, New Mexico	53	Real estate and rental and leasing	53	1.0	4.270835117773019	172.58852248394004
-70	35033	35	33	Mora County, New Mexico	55	Management of companies and enterprises	55	1.0	29.215789473684207	1804.751754385965
-71	35033	35	33	Mora County, New Mexico	61	Educational services	61	1.0	20.962594371997255	653.7594371997254
-72	35033	35	33	Mora County, New Mexico	71	Arts, entertainment, and recreation	71	1.0	19.30855789161978	433.9769025762511
-73	35035	35	35	Otero County, New Mexico	99	Industries not classified	99	2.0	1.7663230240549825	45.44329896907216
-74	35037	35	37	Quay County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-75	35037	35	37	Quay County, New Mexico	99	Industries not classified	99	1.0	0.8831615120274913	22.72164948453608
-76	35039	35	39	Rio Arriba County, New Mexico	22	Utilities	22	8.6	180.39378330373003	14812.843161634102
-77	35041	35	41	Roosevelt County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.2	9.077944325481798	342.5922912205568
-78	35041	35	41	Roosevelt County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-79	35041	35	41	Roosevelt County, New Mexico	61	Educational services	61	1.25	26.20324296499657	817.1992964996568
-80	35041	35	41	Roosevelt County, New Mexico	99	Industries not classified	99	1.0	0.8831615120274913	22.72164948453608
-81	35043	35	43	Sandoval County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.0	8.252676659528907	311.4475374732334
-82	35045	35	45	San Juan County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.4	9.903211991434688	373.73704496788
-83	35047	35	47	San Miguel County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.0	4.126338329764454	155.7237687366167
-84	35047	35	47	San Miguel County, New Mexico	55	Management of companies and enterprises	55	2.0	58.431578947368415	3609.50350877193
-85	35047	35	47	San Miguel County, New Mexico	61	Educational services	61	1.4	29.347632120796156	915.2632120796156
-86	35047	35	47	San Miguel County, New Mexico	71	Arts, entertainment, and recreation	71	2.2	42.478827361563525	954.7491856677526
-87	35051	35	51	Sierra County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.0	4.126338329764454	155.7237687366167
-88	35051	35	51	Sierra County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-89	35051	35	51	Sierra County, New Mexico	22	Utilities	22	2.0	41.95204262877443	3444.847246891652
-90	35051	35	51	Sierra County, New Mexico	42	Wholesale trade	42	2.8	32.86701414743112	1736.6025316455696
-91	35051	35	51	Sierra County, New Mexico	99	Industries not classified	99	1.0	0.8831615120274913	22.72164948453608
-92	35053	35	53	Socorro County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.2	9.077944325481798	342.5922912205568
-93	35053	35	53	Socorro County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-94	35053	35	53	Socorro County, New Mexico	22	Utilities	22	2.0	41.95204262877443	3444.847246891652
-95	35053	35	53	Socorro County, New Mexico	42	Wholesale trade	42	1.4	16.43350707371556	868.3012658227848
-96	35053	35	53	Socorro County, New Mexico	61	Educational services	61	2.0	41.92518874399451	1307.5188743994509
-97	35053	35	53	Socorro County, New Mexico	71	Arts, entertainment, and recreation	71	1.0	19.30855789161978	433.9769025762511
-98	35053	35	53	Socorro County, New Mexico	99	Industries not classified	99	1.2	1.0597938144329897	27.2659793814433
-99	35055	35	55	Taos County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.4	9.903211991434688	373.73704496788
-100	35055	35	55	Taos County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	2.6	70.16881663113007	5290.006982942431
-101	35055	35	55	Taos County, New Mexico	22	Utilities	22	6.8	142.63694493783305	11712.480639431617
-102	35055	35	55	Taos County, New Mexico	55	Management of companies and enterprises	55	1.8	52.58842105263158	3248.553157894737
-103	35057	35	57	Torrance County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	2.8	11.553747323340469	436.02655246252675
-104	35057	35	57	Torrance County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.8	48.57841151385928	3662.312526652452
-105	35057	35	57	Torrance County, New Mexico	51	Information	51	2.0	32.77217206585236	1411.789697291556
-106	35057	35	57	Torrance County, New Mexico	53	Real estate and rental and leasing	53	2.0	8.541670235546038	345.1770449678801
-107	35057	35	57	Torrance County, New Mexico	56	Administrative and support and waste management and remediation services	56	5.2	90.86571981923822	2806.430040886594
-108	35057	35	57	Torrance County, New Mexico	61	Educational services	61	1.0	20.962594371997255	653.7594371997254
-109	35057	35	57	Torrance County, New Mexico	99	Industries not classified	99	1.0	0.8831615120274913	22.72164948453608
-110	35059	35	59	Union County, New Mexico	11	Agriculture, forestry, fishing and hunting	11	1.2	4.951605995717344	186.86852248394
-111	35059	35	59	Union County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	1.0	26.988006396588485	2034.6180703624732
-112	35059	35	59	Union County, New Mexico	42	Wholesale trade	42	1.0	11.738219338368259	620.2151898734178
-113	35059	35	59	Union County, New Mexico	53	Real estate and rental and leasing	53	1.0	4.270835117773019	172.58852248394004
-114	35059	35	59	Union County, New Mexico	56	Administrative and support and waste management and remediation services	56	1.4	24.463847643641056	755.5773187002367
-115	35059	35	59	Union County, New Mexico	61	Educational services	61	1.0	20.962594371997255	653.7594371997254
-116	35061	35	61	Valencia County, New Mexico	21	Mining, quarrying, and oil and gas extraction	21	2.6	70.16881663113007	5290.006982942431
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
+0	11	Agriculture, forestry, fishing and hunting	35	11	1	35001	Bernalillo County, New Mexico	no	8.166666666666666	10.0	1170.8333333333333
+1	11	Agriculture, forestry, fishing and hunting	35	11	3	35003	Catron County, New Mexico	yes	1.5	10.209192933071593	271.6461549857972
+2	11	Agriculture, forestry, fishing and hunting	35	11	5	35005	Chaves County, New Mexico	no	5.333333333333333	39.666666666666664	1773.1666666666667
+3	11	Agriculture, forestry, fishing and hunting	35	11	6	35006	Cibola County, New Mexico	yes	1.8333333333333333	13.661573885452547	331.1031146927569
+4	11	Agriculture, forestry, fishing and hunting	35	11	7	35007	Colfax County, New Mexico	yes	1.0	10.357142857142858	178.37087912087912
+5	11	Agriculture, forestry, fishing and hunting	35	11	9	35009	Curry County, New Mexico	no	7.0	20.833333333333332	1609.3333333333333
+6	11	Agriculture, forestry, fishing and hunting	35	11	13	35013	Doña Ana County, New Mexico	no	10.0	42.0	2057.6666666666665
+7	11	Agriculture, forestry, fishing and hunting	35	11	15	35015	Eddy County, New Mexico	no	7.333333333333333	15.666666666666666	774.8333333333334
+8	11	Agriculture, forestry, fishing and hunting	35	11	17	35017	Grant County, New Mexico	no	3.0	0.0	54.5
+9	11	Agriculture, forestry, fishing and hunting	35	11	17	35017	Grant County, New Mexico	yes	1.75	12.738212526389866	333.07478482109025
+10	11	Agriculture, forestry, fishing and hunting	35	11	21	35021	Harding County, New Mexico	yes	1.0	7.256225539217501	175.60199594286965
+11	11	Agriculture, forestry, fishing and hunting	35	11	23	35023	Hidalgo County, New Mexico	yes	1.0	7.256225539217501	175.60199594286965
+12	11	Agriculture, forestry, fishing and hunting	35	11	25	35025	Lea County, New Mexico	yes	1.0	5.905934787708186	192.088318085855
+13	11	Agriculture, forestry, fishing and hunting	35	11	27	35027	Lincoln County, New Mexico	no	5.8	10.6	436.0
+14	11	Agriculture, forestry, fishing and hunting	35	11	27	35027	Lincoln County, New Mexico	yes	7.0	35.73684210526316	844.2368421052631
+15	11	Agriculture, forestry, fishing and hunting	35	11	29	35029	Luna County, New Mexico	yes	1.0	5.113436300109879	159.9567391384866
+16	11	Agriculture, forestry, fishing and hunting	35	11	33	35033	Mora County, New Mexico	yes	1.1666666666666667	8.503351975999111	211.76866260953634
+17	11	Agriculture, forestry, fishing and hunting	35	11	35	35035	Otero County, New Mexico	no	3.0	0.0	37.0
+18	11	Agriculture, forestry, fishing and hunting	35	11	35	35035	Otero County, New Mexico	yes	2.0	11.998040668172894	358.15145375754656
+19	11	Agriculture, forestry, fishing and hunting	35	11	39	35039	Rio Arriba County, New Mexico	no	10.0	18.333333333333332	781.8333333333334
+20	11	Agriculture, forestry, fishing and hunting	35	11	41	35041	Roosevelt County, New Mexico	yes	2.1666666666666665	15.363328271417458	371.3048690787218
+21	11	Agriculture, forestry, fishing and hunting	35	11	43	35043	Sandoval County, New Mexico	yes	1.8333333333333333	13.946075163277653	301.65356717865143
+22	11	Agriculture, forestry, fishing and hunting	35	11	45	35045	San Juan County, New Mexico	yes	2.3333333333333335	16.214205464399914	391.40574627170423
+23	11	Agriculture, forestry, fishing and hunting	35	11	47	35047	San Miguel County, New Mexico	yes	1.0	7.256225539217501	175.60199594286965
+24	11	Agriculture, forestry, fishing and hunting	35	11	49	35049	Santa Fe County, New Mexico	no	9.166666666666666	6.5	484.3333333333333
+25	11	Agriculture, forestry, fishing and hunting	35	11	51	35051	Sierra County, New Mexico	yes	1.0	7.256225539217501	175.60199594286965
+26	11	Agriculture, forestry, fishing and hunting	35	11	53	35053	Socorro County, New Mexico	yes	2.1666666666666665	15.363328271417458	371.3048690787218
+27	11	Agriculture, forestry, fishing and hunting	35	11	55	35055	Taos County, New Mexico	yes	2.1666666666666665	16.044078793041717	357.9211110383005
+28	11	Agriculture, forestry, fishing and hunting	35	11	57	35057	Torrance County, New Mexico	yes	2.8333333333333335	19.852009950985842	493.7418852645065
+29	11	Agriculture, forestry, fishing and hunting	35	11	59	35059	Union County, New Mexico	yes	1.3333333333333333	8.962066496289983	235.4794883191305
+30	11	Agriculture, forestry, fishing and hunting	35	11	61	35061	Valencia County, New Mexico	no	3.0	6.0	98.0
+31	11	Agriculture, forestry, fishing and hunting	35	11	61	35061	Valencia County, New Mexico	yes	1.75	15.374837956961368	317.0221949103528
+32	21	Mining, quarrying, and oil and gas extraction	35	21	1	35001	Bernalillo County, New Mexico	no	19.6	176.6	14388.2
+33	21	Mining, quarrying, and oil and gas extraction	35	21	1	35001	Bernalillo County, New Mexico	yes	19.0	2101.02	180661.88
+34	21	Mining, quarrying, and oil and gas extraction	35	21	3	35003	Catron County, New Mexico	yes	2.1666666666666665	272.115548842706	20384.42792110147
+35	21	Mining, quarrying, and oil and gas extraction	35	21	5	35005	Chaves County, New Mexico	no	53.166666666666664	301.5	18496.0
+36	21	Mining, quarrying, and oil and gas extraction	35	21	6	35006	Cibola County, New Mexico	yes	2.0	247.51138217603935	18431.375837768137
+37	21	Mining, quarrying, and oil and gas extraction	35	21	7	35007	Colfax County, New Mexico	no	3.4	41.0	3008.2
+38	21	Mining, quarrying, and oil and gas extraction	35	21	7	35007	Colfax County, New Mexico	yes	2.0	271.7368421052631	20261.57894736842
+39	21	Mining, quarrying, and oil and gas extraction	35	21	11	35011	De Baca County, New Mexico	yes	1.0	123.75569108801967	9215.687918884068
+40	21	Mining, quarrying, and oil and gas extraction	35	21	13	35013	Doña Ana County, New Mexico	no	5.0	27.833333333333332	1078.0
+41	21	Mining, quarrying, and oil and gas extraction	35	21	15	35015	Eddy County, New Mexico	no	153.66666666666666	5049.5	375993.8333333333
+42	21	Mining, quarrying, and oil and gas extraction	35	21	17	35017	Grant County, New Mexico	yes	6.5	800.610934107366	59283.54510324111
+43	21	Mining, quarrying, and oil and gas extraction	35	21	23	35023	Hidalgo County, New Mexico	yes	1.0	188.51612903225805	13489.806451612903
+44	21	Mining, quarrying, and oil and gas extraction	35	21	25	35025	Lea County, New Mexico	no	239.66666666666666	4652.5	321495.0
+45	21	Mining, quarrying, and oil and gas extraction	35	21	27	35027	Lincoln County, New Mexico	yes	1.3333333333333333	150.41312382855776	10956.804433551952
+46	21	Mining, quarrying, and oil and gas extraction	35	21	28	35028	Los Alamos County, New Mexico	yes	1.0	79.97229822161422	5223.349544003648
+47	21	Mining, quarrying, and oil and gas extraction	35	21	29	35029	Luna County, New Mexico	yes	1.8333333333333333	229.08138217603937	16846.622504434803
+48	21	Mining, quarrying, and oil and gas extraction	35	21	31	35031	McKinley County, New Mexico	yes	2.1666666666666665	272.115548842706	20384.42792110147
+49	21	Mining, quarrying, and oil and gas extraction	35	21	33	35033	Mora County, New Mexico	yes	1.0	116.15357515849551	7978.8351798734
+50	21	Mining, quarrying, and oil and gas extraction	35	21	35	35035	Otero County, New Mexico	no	5.2	61.8	2484.0
+51	21	Mining, quarrying, and oil and gas extraction	35	21	35	35035	Otero County, New Mexico	yes	4.0	543.4736842105262	40523.15789473684
+52	21	Mining, quarrying, and oil and gas extraction	35	21	37	35037	Quay County, New Mexico	yes	1.0	131.35780701754385	10452.540657894737
+53	21	Mining, quarrying, and oil and gas extraction	35	21	39	35039	Rio Arriba County, New Mexico	no	4.333333333333333	22.0	1219.3333333333333
+54	21	Mining, quarrying, and oil and gas extraction	35	21	41	35041	Roosevelt County, New Mexico	yes	1.0	123.75569108801967	9215.687918884068
+55	21	Mining, quarrying, and oil and gas extraction	35	21	43	35043	Sandoval County, New Mexico	no	8.0	30.333333333333332	1365.5
+56	21	Mining, quarrying, and oil and gas extraction	35	21	45	35045	San Juan County, New Mexico	no	174.66666666666666	4577.833333333333	376280.8333333333
+57	21	Mining, quarrying, and oil and gas extraction	35	21	47	35047	San Miguel County, New Mexico	no	3.0	0.0	385.0
+58	21	Mining, quarrying, and oil and gas extraction	35	21	47	35047	San Miguel County, New Mexico	yes	2.4	287.2533428217736	21358.187900058605
+59	21	Mining, quarrying, and oil and gas extraction	35	21	49	35049	Santa Fe County, New Mexico	no	9.333333333333334	62.0	5304.166666666667
+60	21	Mining, quarrying, and oil and gas extraction	35	21	51	35051	Sierra County, New Mexico	yes	1.0	123.75569108801967	9215.687918884068
+61	21	Mining, quarrying, and oil and gas extraction	35	21	53	35053	Socorro County, New Mexico	yes	1.0	123.75569108801967	9215.687918884068
+62	21	Mining, quarrying, and oil and gas extraction	35	21	55	35055	Taos County, New Mexico	yes	2.3333333333333335	317.9522077829829	24164.83072731644
+63	21	Mining, quarrying, and oil and gas extraction	35	21	57	35057	Torrance County, New Mexico	yes	1.8333333333333333	216.09202733732968	16183.074762499322
+64	21	Mining, quarrying, and oil and gas extraction	35	21	59	35059	Union County, New Mexico	yes	1.0	123.75569108801967	9215.687918884068
+65	21	Mining, quarrying, and oil and gas extraction	35	21	61	35061	Valencia County, New Mexico	yes	2.3333333333333335	311.1370196109399	23869.581735380954
+66	22	Utilities	35	22	1	35001	Bernalillo County, New Mexico	yes	16.5	569.5969378307914	48732.057363079046
+67	22	Utilities	35	22	3	35003	Catron County, New Mexico	no	3.0	6.0	174.33333333333334
+68	22	Utilities	35	22	3	35003	Catron County, New Mexico	yes	2.3333333333333335	73.73283078087124	6394.9775280584
+69	22	Utilities	35	22	5	35005	Chaves County, New Mexico	no	9.0	100.5	6570.25
+70	22	Utilities	35	22	5	35005	Chaves County, New Mexico	yes	7.0	214.68684077079106	16843.98978194726
+71	22	Utilities	35	22	6	35006	Cibola County, New Mexico	no	4.0	50.4	4407.0
+72	22	Utilities	35	22	6	35006	Cibola County, New Mexico	yes	4.0	135.68627450980392	11464.0
+73	22	Utilities	35	22	7	35007	Colfax County, New Mexico	no	6.5	17.666666666666668	1991.3333333333333
+74	22	Utilities	35	22	9	35009	Curry County, New Mexico	no	6.0	69.5	7003.166666666667
+75	22	Utilities	35	22	11	35011	De Baca County, New Mexico	no	3.0	15.0	596.0
+76	22	Utilities	35	22	11	35011	De Baca County, New Mexico	yes	1.4	49.10512982925799	4179.502852738007
+77	22	Utilities	35	22	13	35013	Doña Ana County, New Mexico	no	22.5	271.5	19306.833333333332
+78	22	Utilities	35	22	15	35015	Eddy County, New Mexico	no	15.0	166.0	10835.5
+79	22	Utilities	35	22	17	35017	Grant County, New Mexico	yes	5.0	173.3472560780724	14895.91456558348
+80	22	Utilities	35	22	19	35019	Guadalupe County, New Mexico	yes	2.0	69.33890243122896	5958.365826233392
+81	22	Utilities	35	22	23	35023	Hidalgo County, New Mexico	no	3.3333333333333335	7.333333333333333	780.3333333333334
+82	22	Utilities	35	22	25	35025	Lea County, New Mexico	no	10.0	225.33333333333334	16922.333333333332
+83	22	Utilities	35	22	25	35025	Lea County, New Mexico	yes	8.333333333333334	264.8495210727969	21304.34690669371
+84	22	Utilities	35	22	27	35027	Lincoln County, New Mexico	no	5.25	71.5	5031.75
+85	22	Utilities	35	22	27	35027	Lincoln County, New Mexico	yes	5.5	171.43150777552398	14149.227586206896
+86	22	Utilities	35	22	28	35028	Los Alamos County, New Mexico	yes	1.0	30.66954868154158	2406.284254563894
+87	22	Utilities	35	22	29	35029	Luna County, New Mexico	yes	2.0	69.33890243122896	5958.365826233392
+88	22	Utilities	35	22	31	35031	McKinley County, New Mexico	no	6.0	160.25	13774.75
+89	22	Utilities	35	22	31	35031	McKinley County, New Mexico	yes	7.0	214.68684077079106	16843.98978194726
+90	22	Utilities	35	22	33	35033	Mora County, New Mexico	yes	2.5	85.21568009631798	7238.127244421357
+91	22	Utilities	35	22	35	35035	Otero County, New Mexico	no	11.666666666666666	111.83333333333333	6350.666666666667
+92	22	Utilities	35	22	37	35037	Quay County, New Mexico	no	8.25	24.0	2103.5
+93	22	Utilities	35	22	37	35037	Quay County, New Mexico	yes	9.0	276.0259381338742	21656.558291075053
+94	22	Utilities	35	22	39	35039	Rio Arriba County, New Mexico	yes	8.333333333333334	286.83078889018935	24484.51195030234
+95	22	Utilities	35	22	41	35041	Roosevelt County, New Mexico	no	5.0	56.333333333333336	3519.6666666666665
+96	22	Utilities	35	22	41	35041	Roosevelt County, New Mexico	yes	5.0	158.76777665089026	12797.614181879648
+97	22	Utilities	35	22	43	35043	Sandoval County, New Mexico	no	11.333333333333334	88.33333333333333	7990.666666666667
+98	22	Utilities	35	22	45	35045	San Juan County, New Mexico	no	15.666666666666666	514.0	53859.0
+99	22	Utilities	35	22	45	35045	San Juan County, New Mexico	yes	13.666666666666666	435.41059837728193	35184.463539553755
+100	22	Utilities	35	22	47	35047	San Miguel County, New Mexico	no	7.0	27.333333333333332	1043.3333333333333
+101	22	Utilities	35	22	47	35047	San Miguel County, New Mexico	yes	7.0	222.27488731124632	17916.659854631507
+102	22	Utilities	35	22	49	35049	Santa Fe County, New Mexico	no	13.0	124.25	9175.5
+103	22	Utilities	35	22	49	35049	Santa Fe County, New Mexico	yes	14.0	427.57999492900603	33609.771171399596
+104	22	Utilities	35	22	51	35051	Sierra County, New Mexico	yes	2.0	69.33890243122896	5958.365826233392
+105	22	Utilities	35	22	53	35053	Socorro County, New Mexico	yes	2.0	69.33890243122896	5958.365826233392
+106	22	Utilities	35	22	55	35055	Taos County, New Mexico	yes	6.666666666666667	231.47191633132488	19837.554975319516
+107	22	Utilities	35	22	57	35057	Torrance County, New Mexico	no	6.0	86.0	5604.0
+108	22	Utilities	35	22	57	35057	Torrance County, New Mexico	yes	4.0	140.73125422582825	11774.744979716022
+109	22	Utilities	35	22	59	35059	Union County, New Mexico	no	3.0	28.666666666666668	1582.0
+110	22	Utilities	35	22	59	35059	Union County, New Mexico	yes	3.0	95.26066599053415	7678.568509127789
+111	22	Utilities	35	22	61	35061	Valencia County, New Mexico	no	6.0	30.25	2909.5
+112	22	Utilities	35	22	61	35061	Valencia County, New Mexico	yes	6.0	184.0172920892495	14437.705527383368
+113	23	Construction	35	23	1	35001	Bernalillo County, New Mexico	no	1367.6666666666667	16472.833333333332	768437.0
+114	23	Construction	35	23	3	35003	Catron County, New Mexico	no	4.166666666666667	5.333333333333333	280.5
+115	23	Construction	35	23	5	35005	Chaves County, New Mexico	no	122.83333333333333	1221.0	40101.0
+116	23	Construction	35	23	6	35006	Cibola County, New Mexico	no	20.166666666666668	230.83333333333334	9056.333333333334
+117	23	Construction	35	23	7	35007	Colfax County, New Mexico	no	59.166666666666664	163.83333333333334	6310.333333333333
+118	23	Construction	35	23	9	35009	Curry County, New Mexico	no	105.0	804.5	30588.666666666668
+119	23	Construction	35	23	11	35011	De Baca County, New Mexico	no	7.333333333333333	21.333333333333332	438.1666666666667
+120	23	Construction	35	23	13	35013	Doña Ana County, New Mexico	no	434.5	3272.6666666666665	113615.33333333333
+121	23	Construction	35	23	15	35015	Eddy County, New Mexico	no	136.5	1891.5	89455.66666666667
+122	23	Construction	35	23	17	35017	Grant County, New Mexico	no	68.4	506.8	17203.2
+123	23	Construction	35	23	17	35017	Grant County, New Mexico	yes	77.0	672.2692307692308	24888.76923076923
+124	23	Construction	35	23	19	35019	Guadalupe County, New Mexico	no	8.666666666666666	37.166666666666664	1035.8333333333333
+125	23	Construction	35	23	21	35021	Harding County, New Mexico	yes	1.5	68.9309598059598	2734.796488796489
+126	23	Construction	35	23	23	35023	Hidalgo County, New Mexico	no	4.5	6.333333333333333	149.16666666666666
+127	23	Construction	35	23	25	35025	Lea County, New Mexico	no	126.16666666666667	2496.1666666666665	137735.0
+128	23	Construction	35	23	27	35027	Lincoln County, New Mexico	no	97.5	306.3333333333333	8667.666666666666
+129	23	Construction	35	23	28	35028	Los Alamos County, New Mexico	no	29.666666666666668	188.83333333333334	8584.666666666666
+130	23	Construction	35	23	29	35029	Luna County, New Mexico	no	31.333333333333332	144.33333333333334	5624.666666666667
+131	23	Construction	35	23	31	35031	McKinley County, New Mexico	no	53.333333333333336	463.5	16756.0
+132	23	Construction	35	23	33	35033	Mora County, New Mexico	no	7.0	14.0	592.8333333333334
+133	23	Construction	35	23	35	35035	Otero County, New Mexico	no	110.83333333333333	908.1666666666666	31531.0
+134	23	Construction	35	23	37	35037	Quay County, New Mexico	no	14.833333333333334	95.83333333333333	3028.6666666666665
+135	23	Construction	35	23	39	35039	Rio Arriba County, New Mexico	no	71.83333333333333	269.3333333333333	9050.166666666666
+136	23	Construction	35	23	41	35041	Roosevelt County, New Mexico	no	50.166666666666664	221.66666666666666	5749.333333333333
+137	23	Construction	35	23	43	35043	Sandoval County, New Mexico	no	231.33333333333334	1561.6666666666667	66970.66666666667
+138	23	Construction	35	23	45	35045	San Juan County, New Mexico	no	251.83333333333334	2634.6666666666665	126679.66666666667
+139	23	Construction	35	23	47	35047	San Miguel County, New Mexico	no	45.833333333333336	210.0	6850.5
+140	23	Construction	35	23	49	35049	Santa Fe County, New Mexico	no	495.8333333333333	2314.1666666666665	84980.83333333333
+141	23	Construction	35	23	51	35051	Sierra County, New Mexico	no	21.666666666666668	144.5	6853.0
+142	23	Construction	35	23	53	35053	Socorro County, New Mexico	no	14.5	39.5	952.1666666666666
+143	23	Construction	35	23	55	35055	Taos County, New Mexico	no	144.0	392.5	14795.0
+144	23	Construction	35	23	57	35057	Torrance County, New Mexico	no	31.666666666666668	118.5	4211.833333333333
+145	23	Construction	35	23	59	35059	Union County, New Mexico	no	14.5	25.833333333333332	734.5
+146	23	Construction	35	23	61	35061	Valencia County, New Mexico	no	132.83333333333334	762.3333333333334	26978.666666666668
+147	42	Wholesale trade	35	42	1	35001	Bernalillo County, New Mexico	no	863.3333333333334	11558.5	592502.5
+148	42	Wholesale trade	35	42	3	35003	Catron County, New Mexico	yes	1.0	38.17915169542386	2583.785722889721
+149	42	Wholesale trade	35	42	5	35005	Chaves County, New Mexico	no	54.5	659.5	27648.0
+150	42	Wholesale trade	35	42	6	35006	Cibola County, New Mexico	no	8.0	91.0	3572.0
+151	42	Wholesale trade	35	42	6	35006	Cibola County, New Mexico	yes	9.0	353.24996959405735	25405.855740174204
+152	42	Wholesale trade	35	42	7	35007	Colfax County, New Mexico	no	7.833333333333333	15.0	781.5
+153	42	Wholesale trade	35	42	9	35009	Curry County, New Mexico	no	47.5	499.5	18732.666666666668
+154	42	Wholesale trade	35	42	11	35011	De Baca County, New Mexico	yes	1.0	38.17915169542386	2583.785722889721
+155	42	Wholesale trade	35	42	13	35013	Doña Ana County, New Mexico	no	114.33333333333333	1159.1666666666667	51509.666666666664
+156	42	Wholesale trade	35	42	15	35015	Eddy County, New Mexico	no	64.16666666666667	555.3333333333334	30385.666666666668
+157	42	Wholesale trade	35	42	17	35017	Grant County, New Mexico	no	15.333333333333334	77.33333333333333	4535.5
+158	42	Wholesale trade	35	42	19	35019	Guadalupe County, New Mexico	yes	1.0	38.17915169542386	2583.785722889721
+159	42	Wholesale trade	35	42	23	35023	Hidalgo County, New Mexico	yes	2.0	76.35830339084772	5167.571445779442
+160	42	Wholesale trade	35	42	25	35025	Lea County, New Mexico	no	101.33333333333333	1496.8333333333333	87759.33333333333
+161	42	Wholesale trade	35	42	27	35027	Lincoln County, New Mexico	no	10.5	38.0	1373.3333333333333
+162	42	Wholesale trade	35	42	28	35028	Los Alamos County, New Mexico	no	3.2	21.8	1654.0
+163	42	Wholesale trade	35	42	28	35028	Los Alamos County, New Mexico	yes	3.0	80.86363636363636	3039.681818181818
+164	42	Wholesale trade	35	42	29	35029	Luna County, New Mexico	no	10.0	148.0	5453.666666666667
+165	42	Wholesale trade	35	42	29	35029	Luna County, New Mexico	yes	14.0	516.7969116917867	35451.8014866167
+166	42	Wholesale trade	35	42	31	35031	McKinley County, New Mexico	no	47.5	602.6666666666666	17970.5
+167	42	Wholesale trade	35	42	35	35035	Otero County, New Mexico	no	23.0	111.5	3866.3333333333335
+168	42	Wholesale trade	35	42	37	35037	Quay County, New Mexico	no	3.8	3.8	370.0
+169	42	Wholesale trade	35	42	37	35037	Quay County, New Mexico	yes	3.0	69.80487804878048	3274.0975609756097
+170	42	Wholesale trade	35	42	39	35039	Rio Arriba County, New Mexico	no	8.333333333333334	13.333333333333334	743.1666666666666
+171	42	Wholesale trade	35	42	41	35041	Roosevelt County, New Mexico	no	14.0	94.66666666666667	2864.1666666666665
+172	42	Wholesale trade	35	42	43	35043	Sandoval County, New Mexico	no	52.8	366.0	23867.2
+173	42	Wholesale trade	35	42	43	35043	Sandoval County, New Mexico	yes	47.0	2965.7594936708856	274327.69620253163
+174	42	Wholesale trade	35	42	45	35045	San Juan County, New Mexico	no	173.33333333333334	1679.0	94660.16666666667
+175	42	Wholesale trade	35	42	47	35047	San Miguel County, New Mexico	no	7.25	25.75	957.0
+176	42	Wholesale trade	35	42	47	35047	San Miguel County, New Mexico	yes	6.5	165.9889135254989	6781.323725055432
+177	42	Wholesale trade	35	42	49	35049	Santa Fe County, New Mexico	no	127.0	1223.6666666666667	69467.83333333333
+178	42	Wholesale trade	35	42	51	35051	Sierra County, New Mexico	yes	2.8333333333333335	103.40620198720433	6791.587016545891
+179	42	Wholesale trade	35	42	53	35053	Socorro County, New Mexico	yes	1.5	58.97116370126901	4255.572591381807
+180	42	Wholesale trade	35	42	55	35055	Taos County, New Mexico	no	19.0	46.5	3177.1666666666665
+181	42	Wholesale trade	35	42	57	35057	Torrance County, New Mexico	no	9.833333333333334	50.5	1565.6666666666667
+182	42	Wholesale trade	35	42	59	35059	Union County, New Mexico	yes	1.0	33.194728869951675	1933.1909687334878
+183	42	Wholesale trade	35	42	61	35061	Valencia County, New Mexico	no	20.333333333333332	99.5	3915.8333333333335
+184	51	Information	35	51	1	35001	Bernalillo County, New Mexico	no	268.6666666666667	7695.5	318190.8333333333
+185	51	Information	35	51	5	35005	Chaves County, New Mexico	no	21.0	210.0	6848.333333333333
+186	51	Information	35	51	6	35006	Cibola County, New Mexico	no	5.0	13.5	926.0
+187	51	Information	35	51	6	35006	Cibola County, New Mexico	yes	5.5	92.7419205250767	3796.7321466790327
+188	51	Information	35	51	7	35007	Colfax County, New Mexico	no	7.5	37.833333333333336	1095.1666666666667
+189	51	Information	35	51	9	35009	Curry County, New Mexico	no	14.333333333333334	276.6666666666667	13203.666666666666
+190	51	Information	35	51	9	35009	Curry County, New Mexico	yes	14.333333333333334	251.5828583809607	9877.789625824726
+191	51	Information	35	51	11	35011	De Baca County, New Mexico	no	3.0	14.0	483.6666666666667
+192	51	Information	35	51	11	35011	De Baca County, New Mexico	yes	3.0	52.68468658427994	2070.9030679677326
+193	51	Information	35	51	13	35013	Doña Ana County, New Mexico	no	45.0	479.6666666666667	19257.333333333332
+194	51	Information	35	51	15	35015	Eddy County, New Mexico	no	23.5	265.3333333333333	11886.333333333334
+195	51	Information	35	51	17	35017	Grant County, New Mexico	no	16.75	60.5	2882.0
+196	51	Information	35	51	17	35017	Grant County, New Mexico	yes	16.0	254.3775515973989	10128.05968334747
+197	51	Information	35	51	19	35019	Guadalupe County, New Mexico	no	4.0	15.0	287.0
+198	51	Information	35	51	19	35019	Guadalupe County, New Mexico	yes	4.25	107.57370527586872	6018.384376378947
+199	51	Information	35	51	23	35023	Hidalgo County, New Mexico	no	4.666666666666667	5.666666666666667	214.33333333333334
+200	51	Information	35	51	23	35023	Hidalgo County, New Mexico	yes	3.3333333333333335	59.70337817306498	2339.5448125160187
+201	51	Information	35	51	25	35025	Lea County, New Mexico	no	24.333333333333332	219.5	10579.5
+202	51	Information	35	51	27	35027	Lincoln County, New Mexico	no	11.666666666666666	52.0	2406.3333333333335
+203	51	Information	35	51	28	35028	Los Alamos County, New Mexico	no	9.5	61.666666666666664	1643.3333333333333
+204	51	Information	35	51	29	35029	Luna County, New Mexico	no	7.333333333333333	28.333333333333332	1150.6666666666667
+205	51	Information	35	51	29	35029	Luna County, New Mexico	yes	6.333333333333333	112.3880647573449	4410.447880483752
+206	51	Information	35	51	31	35031	McKinley County, New Mexico	no	18.5	195.16666666666666	6046.0
+207	51	Information	35	51	33	35033	Mora County, New Mexico	yes	1.1666666666666667	29.901387521660567	1904.3811558545942
+208	51	Information	35	51	35	35035	Otero County, New Mexico	no	21.0	356.8333333333333	10982.666666666666
+209	51	Information	35	51	37	35037	Quay County, New Mexico	no	6.333333333333333	22.666666666666668	1245.8333333333333
+210	51	Information	35	51	39	35039	Rio Arriba County, New Mexico	no	11.0	70.0	3094.3333333333335
+211	51	Information	35	51	39	35039	Rio Arriba County, New Mexico	yes	12.0	209.44104240265565	8228.545835964618
+212	51	Information	35	51	41	35041	Roosevelt County, New Mexico	no	6.25	69.0	2663.0
+213	51	Information	35	51	41	35041	Roosevelt County, New Mexico	yes	4.0	63.25722363584959	2529.955668645745
+214	51	Information	35	51	43	35043	Sandoval County, New Mexico	no	32.666666666666664	600.0	21379.666666666668
+215	51	Information	35	51	43	35043	Sandoval County, New Mexico	yes	36.666666666666664	639.2645970457389	25156.871882731462
+216	51	Information	35	51	45	35045	San Juan County, New Mexico	no	30.833333333333332	399.1666666666667	11832.666666666666
+217	51	Information	35	51	47	35047	San Miguel County, New Mexico	no	9.5	47.833333333333336	1666.3333333333333
+218	51	Information	35	51	49	35049	Santa Fe County, New Mexico	no	90.16666666666667	779.0	41858.333333333336
+219	51	Information	35	51	51	35051	Sierra County, New Mexico	no	3.3333333333333335	16.666666666666668	620.8333333333334
+220	51	Information	35	51	53	35053	Socorro County, New Mexico	no	4.4	3.2	395.6
+221	51	Information	35	51	53	35053	Socorro County, New Mexico	yes	4.0	68.65185185185186	2562.9037037037037
+222	51	Information	35	51	55	35055	Taos County, New Mexico	no	17.333333333333332	179.33333333333334	10594.666666666666
+223	51	Information	35	51	55	35055	Taos County, New Mexico	yes	15.0	264.3225376240667	10360.006679014987
+224	51	Information	35	51	57	35057	Torrance County, New Mexico	yes	2.3333333333333335	75.34860755786109	5541.57181716988
+225	51	Information	35	51	59	35059	Union County, New Mexico	no	4.0	38.0	1976.5
+226	51	Information	35	51	61	35061	Valencia County, New Mexico	no	8.666666666666666	31.666666666666668	2148.0
+227	51	Information	35	51	61	35061	Valencia County, New Mexico	yes	8.666666666666666	151.9344728667218	5949.558798531237
+228	52	Finance and insurance	35	52	1	35001	Bernalillo County, New Mexico	no	996.5	10813.666666666666	631036.0
+229	52	Finance and insurance	35	52	3	35003	Catron County, New Mexico	yes	1.1666666666666667	125.79827674966303	6052.282710262916
+230	52	Finance and insurance	35	52	5	35005	Chaves County, New Mexico	no	111.0	648.3333333333334	26927.333333333332
+231	52	Finance and insurance	35	52	6	35006	Cibola County, New Mexico	no	24.833333333333332	100.83333333333333	3218.1666666666665
+232	52	Finance and insurance	35	52	7	35007	Colfax County, New Mexico	no	28.666666666666668	140.0	6694.166666666667
+233	52	Finance and insurance	35	52	9	35009	Curry County, New Mexico	no	82.5	471.5	19994.666666666668
+234	52	Finance and insurance	35	52	11	35011	De Baca County, New Mexico	yes	2.0	237.09300740003525	11552.224994993916
+235	52	Finance and insurance	35	52	13	35013	Doña Ana County, New Mexico	no	240.66666666666666	1668.5	68940.66666666667
+236	52	Finance and insurance	35	52	15	35015	Eddy County, New Mexico	no	70.33333333333333	532.0	23739.5
+237	52	Finance and insurance	35	52	17	35017	Grant County, New Mexico	no	33.0	198.5	6866.833333333333
+238	52	Finance and insurance	35	52	19	35019	Guadalupe County, New Mexico	no	7.333333333333333	18.5	644.8333333333334
+239	52	Finance and insurance	35	52	21	35021	Harding County, New Mexico	yes	1.0	118.54650370001762	5776.112497496958
+240	52	Finance and insurance	35	52	23	35023	Hidalgo County, New Mexico	yes	2.0	237.09300740003525	11552.224994993916
+241	52	Finance and insurance	35	52	25	35025	Lea County, New Mexico	no	84.0	466.8333333333333	18109.666666666668
+242	52	Finance and insurance	35	52	27	35027	Lincoln County, New Mexico	no	41.666666666666664	289.0	11025.833333333334
+243	52	Finance and insurance	35	52	28	35028	Los Alamos County, New Mexico	no	20.0	312.3333333333333	18953.666666666668
+244	52	Finance and insurance	35	52	28	35028	Los Alamos County, New Mexico	yes	20.0	1060.3090172239108	49783.713272543064
+245	52	Finance and insurance	35	52	29	35029	Luna County, New Mexico	no	23.166666666666668	63.5	3546.3333333333335
+246	52	Finance and insurance	35	52	31	35031	McKinley County, New Mexico	no	77.66666666666667	423.0	13980.5
+247	52	Finance and insurance	35	52	33	35033	Mora County, New Mexico	no	5.0	5.0	241.83333333333334
+248	52	Finance and insurance	35	52	35	35035	Otero County, New Mexico	no	53.166666666666664	323.1666666666667	11859.0
+249	52	Finance and insurance	35	52	37	35037	Quay County, New Mexico	no	16.5	108.33333333333333	4154.166666666667
+250	52	Finance and insurance	35	52	39	35039	Rio Arriba County, New Mexico	no	31.833333333333332	206.83333333333334	7638.5
+251	52	Finance and insurance	35	52	41	35041	Roosevelt County, New Mexico	no	25.5	130.33333333333334	4888.166666666667
+252	52	Finance and insurance	35	52	43	35043	Sandoval County, New Mexico	no	112.66666666666667	855.5	35523.666666666664
+253	52	Finance and insurance	35	52	45	35045	San Juan County, New Mexico	no	159.66666666666666	957.8333333333334	36295.0
+254	52	Finance and insurance	35	52	47	35047	San Miguel County, New Mexico	no	31.833333333333332	172.66666666666666	6097.833333333333
+255	52	Finance and insurance	35	52	49	35049	Santa Fe County, New Mexico	no	225.16666666666666	1720.1666666666667	229004.83333333334
+256	52	Finance and insurance	35	52	51	35051	Sierra County, New Mexico	no	14.833333333333334	54.166666666666664	2101.0
+257	52	Finance and insurance	35	52	53	35053	Socorro County, New Mexico	no	16.8	61.0	2346.2
+258	52	Finance and insurance	35	52	53	35053	Socorro County, New Mexico	yes	18.0	783.1914893617021	29826.382978723403
+259	52	Finance and insurance	35	52	55	35055	Taos County, New Mexico	no	41.666666666666664	203.16666666666666	7599.666666666667
+260	52	Finance and insurance	35	52	57	35057	Torrance County, New Mexico	no	11.333333333333334	25.0	1469.6666666666667
+261	52	Finance and insurance	35	52	59	35059	Union County, New Mexico	no	4.0	67.0	3342.0
+262	52	Finance and insurance	35	52	59	35059	Union County, New Mexico	yes	2.0	151.7731762917933	8755.528495440729
+263	52	Finance and insurance	35	52	61	35061	Valencia County, New Mexico	no	71.0	269.6666666666667	10468.5
+264	53	Real estate and rental and leasing	35	53	1	35001	Bernalillo County, New Mexico	no	941.3333333333334	4248.833333333333	156847.33333333334
+265	53	Real estate and rental and leasing	35	53	3	35003	Catron County, New Mexico	yes	1.2	8.885380235069707	84.50257005806614
+266	53	Real estate and rental and leasing	35	53	5	35005	Chaves County, New Mexico	no	70.16666666666667	234.0	8498.833333333334
+267	53	Real estate and rental and leasing	35	53	6	35006	Cibola County, New Mexico	no	12.166666666666666	14.333333333333334	922.0
+268	53	Real estate and rental and leasing	35	53	7	35007	Colfax County, New Mexico	no	23.166666666666668	79.33333333333333	1482.3333333333333
+269	53	Real estate and rental and leasing	35	53	9	35009	Curry County, New Mexico	no	61.166666666666664	208.66666666666666	5802.333333333333
+270	53	Real estate and rental and leasing	35	53	11	35011	De Baca County, New Mexico	yes	1.0	12.06924019607843	53.77175245098039
+271	53	Real estate and rental and leasing	35	53	13	35013	Doña Ana County, New Mexico	no	210.33333333333334	702.5	19662.0
+272	53	Real estate and rental and leasing	35	53	15	35015	Eddy County, New Mexico	no	64.5	382.0	20480.0
+273	53	Real estate and rental and leasing	35	53	17	35017	Grant County, New Mexico	no	36.5	103.0	2513.1666666666665
+274	53	Real estate and rental and leasing	35	53	19	35019	Guadalupe County, New Mexico	yes	2.0	18.35989298437544	144.27511676344355
+275	53	Real estate and rental and leasing	35	53	21	35021	Harding County, New Mexico	yes	2.0	6.802718168812589	217.73834048640913
+276	53	Real estate and rental and leasing	35	53	23	35023	Hidalgo County, New Mexico	yes	1.5	10.684103224026854	115.59394846278997
+277	53	Real estate and rental and leasing	35	53	25	35025	Lea County, New Mexico	no	90.83333333333333	936.5	64146.166666666664
+278	53	Real estate and rental and leasing	35	53	27	35027	Lincoln County, New Mexico	no	56.5	142.0	3696.1666666666665
+279	53	Real estate and rental and leasing	35	53	28	35028	Los Alamos County, New Mexico	no	21.166666666666668	73.16666666666667	2775.0
+280	53	Real estate and rental and leasing	35	53	29	35029	Luna County, New Mexico	no	20.5	46.833333333333336	1226.0
+281	53	Real estate and rental and leasing	35	53	31	35031	McKinley County, New Mexico	no	41.666666666666664	190.5	6119.0
+282	53	Real estate and rental and leasing	35	53	33	35033	Mora County, New Mexico	yes	1.0	12.875	53.3125
+283	53	Real estate and rental and leasing	35	53	35	35035	Otero County, New Mexico	no	47.666666666666664	130.5	3942.6666666666665
+284	53	Real estate and rental and leasing	35	53	37	35037	Quay County, New Mexico	no	10.25	9.0	271.0
+285	53	Real estate and rental and leasing	35	53	37	35037	Quay County, New Mexico	yes	8.5	120.05882352941177	415.4852941176471
+286	53	Real estate and rental and leasing	35	53	39	35039	Rio Arriba County, New Mexico	no	19.0	42.0	1210.6666666666667
+287	53	Real estate and rental and leasing	35	53	41	35041	Roosevelt County, New Mexico	no	13.833333333333334	33.333333333333336	868.5
+288	53	Real estate and rental and leasing	35	53	43	35043	Sandoval County, New Mexico	no	77.0	256.6666666666667	10735.0
+289	53	Real estate and rental and leasing	35	53	45	35045	San Juan County, New Mexico	no	102.16666666666667	746.1666666666666	37125.666666666664
+290	53	Real estate and rental and leasing	35	53	47	35047	San Miguel County, New Mexico	no	17.333333333333332	19.333333333333332	1078.5
+291	53	Real estate and rental and leasing	35	53	49	35049	Santa Fe County, New Mexico	no	263.5	847.1666666666666	41041.666666666664
+292	53	Real estate and rental and leasing	35	53	51	35051	Sierra County, New Mexico	no	9.4	30.2	708.6
+293	53	Real estate and rental and leasing	35	53	51	35051	Sierra County, New Mexico	yes	11.0	197.3888888888889	812.1666666666667
+294	53	Real estate and rental and leasing	35	53	53	35053	Socorro County, New Mexico	no	10.666666666666666	27.5	527.5
+295	53	Real estate and rental and leasing	35	53	55	35055	Taos County, New Mexico	no	60.5	211.0	4891.166666666667
+296	53	Real estate and rental and leasing	35	53	57	35057	Torrance County, New Mexico	yes	2.0	18.35989298437544	144.27511676344355
+297	53	Real estate and rental and leasing	35	53	59	35059	Union County, New Mexico	yes	1.0	14.055147058823529	49.126838235294116
+298	53	Real estate and rental and leasing	35	53	61	35061	Valencia County, New Mexico	no	44.333333333333336	67.33333333333333	3246.3333333333335
+299	54	Professional, scientific, and technical services	35	54	1	35001	Bernalillo County, New Mexico	no	2229.6	24136.2	1625478.4
+300	54	Professional, scientific, and technical services	35	54	1	35001	Bernalillo County, New Mexico	yes	2248.0	-23147.51531291611	-1633746.2228140258
+301	54	Professional, scientific, and technical services	35	54	3	35003	Catron County, New Mexico	yes	4.0	635.4173524250612	37456.914843913655
+302	54	Professional, scientific, and technical services	35	54	5	35005	Chaves County, New Mexico	no	109.0	903.6666666666666	62543.5
+303	54	Professional, scientific, and technical services	35	54	6	35006	Cibola County, New Mexico	no	14.5	44.5	1851.1666666666667
+304	54	Professional, scientific, and technical services	35	54	7	35007	Colfax County, New Mexico	no	24.5	87.66666666666667	2083.8333333333335
+305	54	Professional, scientific, and technical services	35	54	9	35009	Curry County, New Mexico	no	86.33333333333333	577.5	27564.833333333332
+306	54	Professional, scientific, and technical services	35	54	11	35011	De Baca County, New Mexico	yes	1.0	158.8543381062653	9364.228710978414
+307	54	Professional, scientific, and technical services	35	54	13	35013	Doña Ana County, New Mexico	no	328.0	3984.5	213597.16666666666
+308	54	Professional, scientific, and technical services	35	54	15	35015	Eddy County, New Mexico	no	80.16666666666667	730.3333333333334	50477.666666666664
+309	54	Professional, scientific, and technical services	35	54	17	35017	Grant County, New Mexico	no	45.166666666666664	162.5	5093.333333333333
+310	54	Professional, scientific, and technical services	35	54	19	35019	Guadalupe County, New Mexico	no	3.0	5.0	51.0
+311	54	Professional, scientific, and technical services	35	54	19	35019	Guadalupe County, New Mexico	yes	1.6	288.50587748215816	19116.218938881466
+312	54	Professional, scientific, and technical services	35	54	23	35023	Hidalgo County, New Mexico	no	4.333333333333333	26.0	923.0
+313	54	Professional, scientific, and technical services	35	54	23	35023	Hidalgo County, New Mexico	yes	4.0	638.8085618085619	51558.62265512266
+314	54	Professional, scientific, and technical services	35	54	25	35025	Lea County, New Mexico	no	78.16666666666667	520.5	26105.0
+315	54	Professional, scientific, and technical services	35	54	27	35027	Lincoln County, New Mexico	no	47.666666666666664	142.16666666666666	5566.166666666667
+316	54	Professional, scientific, and technical services	35	54	28	35028	Los Alamos County, New Mexico	no	58.666666666666664	9629.666666666666	976963.0
+317	54	Professional, scientific, and technical services	35	54	28	35028	Los Alamos County, New Mexico	yes	62.666666666666664	9974.276455026456	806940.1210317462
+318	54	Professional, scientific, and technical services	35	54	29	35029	Luna County, New Mexico	no	19.333333333333332	84.16666666666667	2646.6666666666665
+319	54	Professional, scientific, and technical services	35	54	31	35031	McKinley County, New Mexico	no	42.5	227.0	7728.833333333333
+320	54	Professional, scientific, and technical services	35	54	35	35035	Otero County, New Mexico	no	69.83333333333333	591.6666666666666	23536.833333333332
+321	54	Professional, scientific, and technical services	35	54	37	35037	Quay County, New Mexico	no	12.833333333333334	45.833333333333336	1423.5
+322	54	Professional, scientific, and technical services	35	54	39	35039	Rio Arriba County, New Mexico	no	35.333333333333336	58.666666666666664	2790.3333333333335
+323	54	Professional, scientific, and technical services	35	54	41	35041	Roosevelt County, New Mexico	no	14.166666666666666	68.16666666666667	2526.8333333333335
+324	54	Professional, scientific, and technical services	35	54	43	35043	Sandoval County, New Mexico	no	175.33333333333334	903.0	59175.666666666664
+325	54	Professional, scientific, and technical services	35	54	45	35045	San Juan County, New Mexico	no	244.16666666666666	1266.5	65109.5
+326	54	Professional, scientific, and technical services	35	54	47	35047	San Miguel County, New Mexico	no	30.333333333333332	112.66666666666667	3803.8333333333335
+327	54	Professional, scientific, and technical services	35	54	49	35049	Santa Fe County, New Mexico	no	644.5	2404.8333333333335	149338.5
+328	54	Professional, scientific, and technical services	35	54	51	35051	Sierra County, New Mexico	no	14.166666666666666	45.333333333333336	970.1666666666666
+329	54	Professional, scientific, and technical services	35	54	53	35053	Socorro County, New Mexico	no	25.5	240.33333333333334	14442.5
+330	54	Professional, scientific, and technical services	35	54	55	35055	Taos County, New Mexico	no	98.33333333333333	275.0	10731.833333333334
+331	54	Professional, scientific, and technical services	35	54	57	35057	Torrance County, New Mexico	no	13.833333333333334	34.5	1019.1666666666666
+332	54	Professional, scientific, and technical services	35	54	59	35059	Union County, New Mexico	no	6.333333333333333	11.333333333333334	377.1666666666667
+333	54	Professional, scientific, and technical services	35	54	61	35061	Valencia County, New Mexico	no	72.83333333333333	304.6666666666667	8858.0
+334	55	Management of companies and enterprises	35	55	1	35001	Bernalillo County, New Mexico	no	110.0	4610.166666666667	266906.6666666667
+335	55	Management of companies and enterprises	35	55	5	35005	Chaves County, New Mexico	no	12.666666666666666	171.66666666666666	8631.333333333334
+336	55	Management of companies and enterprises	35	55	5	35005	Chaves County, New Mexico	yes	12.333333333333334	163.87837367505142	9636.715899383009
+337	55	Management of companies and enterprises	35	55	6	35006	Cibola County, New Mexico	yes	1.0	14.948096920403822	868.7209130060004
+338	55	Management of companies and enterprises	35	55	7	35007	Colfax County, New Mexico	yes	1.1666666666666667	16.97522870334956	986.1395176571631
+339	55	Management of companies and enterprises	35	55	9	35009	Curry County, New Mexico	no	5.0	25.333333333333332	2623.3333333333335
+340	55	Management of companies and enterprises	35	55	9	35009	Curry County, New Mexico	yes	5.0	66.01809840215157	3857.219174181301
+341	55	Management of companies and enterprises	35	55	13	35013	Doña Ana County, New Mexico	no	9.0	131.83333333333334	6204.333333333333
+342	55	Management of companies and enterprises	35	55	15	35015	Eddy County, New Mexico	no	5.5	55.0	3404.5
+343	55	Management of companies and enterprises	35	55	15	35015	Eddy County, New Mexico	yes	1.5	20.856905552918843	1141.1333649738965
+344	55	Management of companies and enterprises	35	55	17	35017	Grant County, New Mexico	no	4.0	145.6	8209.4
+345	55	Management of companies and enterprises	35	55	17	35017	Grant County, New Mexico	yes	4.0	59.10204081632653	3155.5102040816323
+346	55	Management of companies and enterprises	35	55	23	35023	Hidalgo County, New Mexico	yes	1.0	14.948096920403822	868.7209130060004
+347	55	Management of companies and enterprises	35	55	25	35025	Lea County, New Mexico	no	11.5	150.16666666666666	13757.333333333334
+348	55	Management of companies and enterprises	35	55	27	35027	Lincoln County, New Mexico	yes	2.0	29.896193840807644	1737.4418260120008
+349	55	Management of companies and enterprises	35	55	29	35029	Luna County, New Mexico	yes	1.6666666666666667	25.406477023848307	1488.5436295241032
+350	55	Management of companies and enterprises	35	55	31	35031	McKinley County, New Mexico	no	3.0	13.333333333333334	391.6666666666667
+351	55	Management of companies and enterprises	35	55	31	35031	McKinley County, New Mexico	yes	1.3333333333333333	18.171270368612564	1044.1055766492643
+352	55	Management of companies and enterprises	35	55	33	35033	Mora County, New Mexico	yes	1.0	13.246100300585349	781.146392975795
+353	55	Management of companies and enterprises	35	55	35	35035	Otero County, New Mexico	no	4.0	84.0	6939.0
+354	55	Management of companies and enterprises	35	55	35	35035	Otero County, New Mexico	yes	3.4	52.49748172350087	3138.565412410298
+355	55	Management of companies and enterprises	35	55	39	35039	Rio Arriba County, New Mexico	no	4.0	49.0	2266.0
+356	55	Management of companies and enterprises	35	55	39	35039	Rio Arriba County, New Mexico	yes	2.2	33.96541837071574	1960.9010502556914
+357	55	Management of companies and enterprises	35	55	43	35043	Sandoval County, New Mexico	no	4.0	11.0	961.0
+358	55	Management of companies and enterprises	35	55	43	35043	Sandoval County, New Mexico	yes	4.2	64.42574528803438	3842.628002815059
+359	55	Management of companies and enterprises	35	55	45	35045	San Juan County, New Mexico	no	18.666666666666668	752.8333333333334	65195.166666666664
+360	55	Management of companies and enterprises	35	55	47	35047	San Miguel County, New Mexico	yes	2.0	29.896193840807644	1737.4418260120008
+361	55	Management of companies and enterprises	35	55	49	35049	Santa Fe County, New Mexico	no	21.833333333333332	297.3333333333333	20722.333333333332
+362	55	Management of companies and enterprises	35	55	55	35055	Taos County, New Mexico	yes	1.8333333333333333	27.86906205786191	1620.0232213608379
+363	55	Management of companies and enterprises	35	55	61	35061	Valencia County, New Mexico	no	3.0	38.0	1665.0
+364	55	Management of companies and enterprises	35	55	61	35061	Valencia County, New Mexico	yes	2.0	26.492200601170698	1562.29278595159
+365	56	Administrative and support and waste management and remediation services	35	56	1	35001	Bernalillo County, New Mexico	no	733.3333333333334	15493.5	429579.8333333333
+366	56	Administrative and support and waste management and remediation services	35	56	3	35003	Catron County, New Mexico	yes	2.0	171.98237374512985	4235.542908262575
+367	56	Administrative and support and waste management and remediation services	35	56	5	35005	Chaves County, New Mexico	no	55.5	348.5	7943.833333333333
+368	56	Administrative and support and waste management and remediation services	35	56	6	35006	Cibola County, New Mexico	no	12.333333333333334	467.0	18247.0
+369	56	Administrative and support and waste management and remediation services	35	56	6	35006	Cibola County, New Mexico	yes	14.0	563.743031199138	14047.405894716963
+370	56	Administrative and support and waste management and remediation services	35	56	7	35007	Colfax County, New Mexico	no	14.0	69.66666666666667	1715.6666666666667
+371	56	Administrative and support and waste management and remediation services	35	56	7	35007	Colfax County, New Mexico	yes	14.333333333333334	534.0974256699448	13779.145999871189
+372	56	Administrative and support and waste management and remediation services	35	56	9	35009	Curry County, New Mexico	no	43.5	597.6666666666666	12486.666666666666
+373	56	Administrative and support and waste management and remediation services	35	56	13	35013	Doña Ana County, New Mexico	no	164.16666666666666	2933.1666666666665	70444.33333333333
+374	56	Administrative and support and waste management and remediation services	35	56	15	35015	Eddy County, New Mexico	no	51.0	1068.8333333333333	66775.33333333333
+375	56	Administrative and support and waste management and remediation services	35	56	17	35017	Grant County, New Mexico	no	17.333333333333332	42.0	949.0
+376	56	Administrative and support and waste management and remediation services	35	56	17	35017	Grant County, New Mexico	yes	17.333333333333332	672.5490853448869	16955.33866554668
+377	56	Administrative and support and waste management and remediation services	35	56	19	35019	Guadalupe County, New Mexico	yes	1.3333333333333333	101.19651720289527	2486.292814777648
+378	56	Administrative and support and waste management and remediation services	35	56	21	35021	Harding County, New Mexico	yes	1.0	45.615990990990994	1105.564081939082
+379	56	Administrative and support and waste management and remediation services	35	56	23	35023	Hidalgo County, New Mexico	yes	2.5	72.59033938518672	2399.9135289870023
+380	56	Administrative and support and waste management and remediation services	35	56	25	35025	Lea County, New Mexico	no	71.33333333333333	1280.5	66416.33333333333
+381	56	Administrative and support and waste management and remediation services	35	56	27	35027	Lincoln County, New Mexico	no	20.5	135.16666666666666	4163.833333333333
+382	56	Administrative and support and waste management and remediation services	35	56	28	35028	Los Alamos County, New Mexico	no	19.8	404.2	26808.8
+383	56	Administrative and support and waste management and remediation services	35	56	28	35028	Los Alamos County, New Mexico	yes	25.0	809.9662162162161	28049.83108108108
+384	56	Administrative and support and waste management and remediation services	35	56	29	35029	Luna County, New Mexico	no	15.25	41.0	1260.25
+385	56	Administrative and support and waste management and remediation services	35	56	29	35029	Luna County, New Mexico	yes	14.0	562.3594147582696	12456.304465043015
+386	56	Administrative and support and waste management and remediation services	35	56	31	35031	McKinley County, New Mexico	no	19.5	159.5	3291.6666666666665
+387	56	Administrative and support and waste management and remediation services	35	56	35	35035	Otero County, New Mexico	no	46.25	423.0	11781.5
+388	56	Administrative and support and waste management and remediation services	35	56	35	35035	Otero County, New Mexico	yes	44.0	2007.1036036036035	48644.81960531961
+389	56	Administrative and support and waste management and remediation services	35	56	37	35037	Quay County, New Mexico	no	5.666666666666667	11.0	224.83333333333334
+390	56	Administrative and support and waste management and remediation services	35	56	39	35039	Rio Arriba County, New Mexico	no	15.333333333333334	134.83333333333334	3442.3333333333335
+391	56	Administrative and support and waste management and remediation services	35	56	41	35041	Roosevelt County, New Mexico	no	6.666666666666667	55.0	827.0
+392	56	Administrative and support and waste management and remediation services	35	56	41	35041	Roosevelt County, New Mexico	yes	7.333333333333333	268.04270682896635	7082.048260910856
+393	56	Administrative and support and waste management and remediation services	35	56	43	35043	Sandoval County, New Mexico	no	98.5	2620.8333333333335	108879.33333333333
+394	56	Administrative and support and waste management and remediation services	35	56	45	35045	San Juan County, New Mexico	no	107.5	1164.3333333333333	44160.666666666664
+395	56	Administrative and support and waste management and remediation services	35	56	47	35047	San Miguel County, New Mexico	no	11.75	21.0	624.0
+396	56	Administrative and support and waste management and remediation services	35	56	47	35047	San Miguel County, New Mexico	yes	10.5	293.9512585104188	9553.046368887972
+397	56	Administrative and support and waste management and remediation services	35	56	49	35049	Santa Fe County, New Mexico	no	209.0	1384.1666666666667	41785.666666666664
+398	56	Administrative and support and waste management and remediation services	35	56	51	35051	Sierra County, New Mexico	no	3.75	9.25	263.5
+399	56	Administrative and support and waste management and remediation services	35	56	51	35051	Sierra County, New Mexico	yes	2.5	120.64864864864865	2755.695624195624
+400	56	Administrative and support and waste management and remediation services	35	56	53	35053	Socorro County, New Mexico	no	5.666666666666667	43.666666666666664	3604.0
+401	56	Administrative and support and waste management and remediation services	35	56	53	35053	Socorro County, New Mexico	yes	3.0	400.72277284119383	9778.576896787423
+402	56	Administrative and support and waste management and remediation services	35	56	55	35055	Taos County, New Mexico	no	42.8	276.8	12414.6
+403	56	Administrative and support and waste management and remediation services	35	56	55	35055	Taos County, New Mexico	yes	42.0	1007.679389312977	30110.79389312977
+404	56	Administrative and support and waste management and remediation services	35	56	57	35057	Torrance County, New Mexico	yes	5.5	466.158194979559	11676.550695711705
+405	56	Administrative and support and waste management and remediation services	35	56	59	35059	Union County, New Mexico	yes	1.3333333333333333	105.60229798367605	2480.816427676261
+406	56	Administrative and support and waste management and remediation services	35	56	61	35061	Valencia County, New Mexico	no	28.666666666666668	199.66666666666666	5928.333333333333
+407	61	Educational services	35	61	1	35001	Bernalillo County, New Mexico	no	259.5	5287.0	162604.5
+408	61	Educational services	35	61	3	35003	Catron County, New Mexico	yes	1.0	58.8476286126573	1954.446938958398
+409	61	Educational services	35	61	5	35005	Chaves County, New Mexico	no	8.5	87.33333333333333	1844.0
+410	61	Educational services	35	61	6	35006	Cibola County, New Mexico	yes	3.5	217.60344501534655	7218.699900554963
+411	61	Educational services	35	61	7	35007	Colfax County, New Mexico	yes	1.6666666666666667	107.31995249591431	3540.649159893068
+412	61	Educational services	35	61	9	35009	Curry County, New Mexico	no	8.0	92.5	2103.8333333333335
+413	61	Educational services	35	61	13	35013	Doña Ana County, New Mexico	no	40.0	544.6666666666666	16555.5
+414	61	Educational services	35	61	15	35015	Eddy County, New Mexico	no	12.833333333333334	77.16666666666667	2270.1666666666665
+415	61	Educational services	35	61	17	35017	Grant County, New Mexico	no	6.166666666666667	110.66666666666667	1443.1666666666667
+416	61	Educational services	35	61	19	35019	Guadalupe County, New Mexico	yes	1.0	58.8476286126573	1954.446938958398
+417	61	Educational services	35	61	23	35023	Hidalgo County, New Mexico	yes	1.0	58.8476286126573	1954.446938958398
+418	61	Educational services	35	61	25	35025	Lea County, New Mexico	no	8.666666666666666	206.0	6199.0
+419	61	Educational services	35	61	25	35025	Lea County, New Mexico	yes	9.0	739.6853584026203	24466.326546359283
+420	61	Educational services	35	61	27	35027	Lincoln County, New Mexico	no	4.75	28.5	340.25
+421	61	Educational services	35	61	27	35027	Lincoln County, New Mexico	yes	4.5	448.06409438775506	15244.659119897959
+422	61	Educational services	35	61	28	35028	Los Alamos County, New Mexico	no	4.0	21.5	677.5
+423	61	Educational services	35	61	29	35029	Luna County, New Mexico	yes	1.0	58.8476286126573	1954.446938958398
+424	61	Educational services	35	61	31	35031	McKinley County, New Mexico	no	9.666666666666666	564.6666666666666	18349.333333333332
+425	61	Educational services	35	61	33	35033	Mora County, New Mexico	yes	1.0	58.8476286126573	1954.446938958398
+426	61	Educational services	35	61	35	35035	Otero County, New Mexico	no	9.5	111.33333333333333	5199.0
+427	61	Educational services	35	61	39	35039	Rio Arriba County, New Mexico	no	6.666666666666667	14.0	440.5
+428	61	Educational services	35	61	41	35041	Roosevelt County, New Mexico	yes	1.25	83.82613288370904	2725.568037284358
+429	61	Educational services	35	61	43	35043	Sandoval County, New Mexico	no	27.833333333333332	230.5	6028.166666666667
+430	61	Educational services	35	61	45	35045	San Juan County, New Mexico	no	18.833333333333332	289.1666666666667	8366.5
+431	61	Educational services	35	61	47	35047	San Miguel County, New Mexico	yes	1.5	76.63469804793993	2553.5347942370286
+432	61	Educational services	35	61	49	35049	Santa Fe County, New Mexico	no	114.33333333333333	1814.3333333333333	58840.666666666664
+433	61	Educational services	35	61	53	35053	Socorro County, New Mexico	yes	2.0	129.08616052222936	4390.820801648304
+434	61	Educational services	35	61	55	35055	Taos County, New Mexico	no	19.2	102.4	2086.4
+435	61	Educational services	35	61	55	35055	Taos County, New Mexico	yes	17.0	3125.2244897959185	109196.20408163265
+436	61	Educational services	35	61	57	35057	Torrance County, New Mexico	yes	1.0	58.8476286126573	1954.446938958398
+437	61	Educational services	35	61	59	35059	Union County, New Mexico	yes	1.0	32.15625	959.21875
+438	61	Educational services	35	61	61	35061	Valencia County, New Mexico	no	6.0	62.25	1443.5
+439	61	Educational services	35	61	61	35061	Valencia County, New Mexico	yes	4.0	351.68102796674225	11509.033257747542
+440	62	Health care and social assistance	35	62	1	35001	Bernalillo County, New Mexico	no	1933.5	49193.5	2269916.1666666665
+441	62	Health care and social assistance	35	62	3	35003	Catron County, New Mexico	no	6.0	129.75	1884.75
+442	62	Health care and social assistance	35	62	3	35003	Catron County, New Mexico	yes	4.0	95.39012635143936	3159.984629412531
+443	62	Health care and social assistance	35	62	5	35005	Chaves County, New Mexico	no	179.5	3707.5	153337.66666666666
+444	62	Health care and social assistance	35	62	6	35006	Cibola County, New Mexico	no	49.166666666666664	1428.1666666666667	53131.5
+445	62	Health care and social assistance	35	62	7	35007	Colfax County, New Mexico	no	32.666666666666664	503.8333333333333	23589.5
+446	62	Health care and social assistance	35	62	9	35009	Curry County, New Mexico	no	119.5	2753.5	91454.0
+447	62	Health care and social assistance	35	62	11	35011	De Baca County, New Mexico	yes	3.6666666666666665	91.12311323604422	2344.169662462939
+448	62	Health care and social assistance	35	62	13	35013	Doña Ana County, New Mexico	no	518.5	13396.5	457946.6666666667
+449	62	Health care and social assistance	35	62	15	35015	Eddy County, New Mexico	no	115.66666666666667	2902.3333333333335	119035.66666666667
+450	62	Health care and social assistance	35	62	17	35017	Grant County, New Mexico	no	76.83333333333333	1580.1666666666667	59305.166666666664
+451	62	Health care and social assistance	35	62	19	35019	Guadalupe County, New Mexico	no	9.333333333333334	80.66666666666667	3615.3333333333335
+452	62	Health care and social assistance	35	62	21	35021	Harding County, New Mexico	yes	1.5	36.298020986093704	1049.6425096277535
+453	62	Health care and social assistance	35	62	23	35023	Hidalgo County, New Mexico	no	11.333333333333334	177.83333333333334	5380.0
+454	62	Health care and social assistance	35	62	25	35025	Lea County, New Mexico	no	113.83333333333333	2372.5	89522.83333333333
+455	62	Health care and social assistance	35	62	27	35027	Lincoln County, New Mexico	no	44.166666666666664	546.0	23912.333333333332
+456	62	Health care and social assistance	35	62	28	35028	Los Alamos County, New Mexico	no	67.66666666666667	1007.8333333333334	42341.833333333336
+457	62	Health care and social assistance	35	62	29	35029	Luna County, New Mexico	no	49.666666666666664	835.1666666666666	33876.833333333336
+458	62	Health care and social assistance	35	62	31	35031	McKinley County, New Mexico	no	113.83333333333333	4669.833333333333	187132.0
+459	62	Health care and social assistance	35	62	33	35033	Mora County, New Mexico	no	6.0	131.5	2727.1666666666665
+460	62	Health care and social assistance	35	62	35	35035	Otero County, New Mexico	no	103.0	2340.0	100524.66666666667
+461	62	Health care and social assistance	35	62	37	35037	Quay County, New Mexico	no	23.0	238.0	11134.0
+462	62	Health care and social assistance	35	62	39	35039	Rio Arriba County, New Mexico	no	82.16666666666667	1874.5	69412.0
+463	62	Health care and social assistance	35	62	41	35041	Roosevelt County, New Mexico	no	31.666666666666668	610.5	22458.0
+464	62	Health care and social assistance	35	62	43	35043	Sandoval County, New Mexico	no	214.16666666666666	3648.3333333333335	150348.0
+465	62	Health care and social assistance	35	62	45	35045	San Juan County, New Mexico	no	276.3333333333333	6748.833333333333	306516.8333333333
+466	62	Health care and social assistance	35	62	47	35047	San Miguel County, New Mexico	no	74.16666666666667	3124.3333333333335	88839.33333333333
+467	62	Health care and social assistance	35	62	49	35049	Santa Fe County, New Mexico	no	506.5	8424.333333333334	379292.0
+468	62	Health care and social assistance	35	62	51	35051	Sierra County, New Mexico	no	20.333333333333332	690.1666666666666	21334.833333333332
+469	62	Health care and social assistance	35	62	53	35053	Socorro County, New Mexico	no	32.666666666666664	911.3333333333334	27687.333333333332
+470	62	Health care and social assistance	35	62	53	35053	Socorro County, New Mexico	yes	32.0	901.2260056534029	17844.198717112416
+471	62	Health care and social assistance	35	62	55	35055	Taos County, New Mexico	no	97.83333333333333	1463.5	54485.333333333336
+472	62	Health care and social assistance	35	62	57	35057	Torrance County, New Mexico	no	16.333333333333332	149.66666666666666	3722.0
+473	62	Health care and social assistance	35	62	57	35057	Torrance County, New Mexico	yes	20.0	546.380705950569	11052.32844821338
+474	62	Health care and social assistance	35	62	59	35059	Union County, New Mexico	no	8.0	175.33333333333334	5349.333333333333
+475	62	Health care and social assistance	35	62	59	35059	Union County, New Mexico	yes	11.333333333333334	306.7094585779517	6245.169015003262
+476	62	Health care and social assistance	35	62	61	35061	Valencia County, New Mexico	no	93.33333333333333	1997.8333333333333	45733.166666666664
+477	71	Arts, entertainment, and recreation	35	71	1	35001	Bernalillo County, New Mexico	no	221.5	4472.0	95916.16666666667
+478	71	Arts, entertainment, and recreation	35	71	3	35003	Catron County, New Mexico	yes	1.6666666666666667	52.46852083810464	971.7105577576941
+479	71	Arts, entertainment, and recreation	35	71	5	35005	Chaves County, New Mexico	no	18.166666666666668	155.0	1929.8333333333333
+480	71	Arts, entertainment, and recreation	35	71	6	35006	Cibola County, New Mexico	no	7.0	156.5	3450.5
+481	71	Arts, entertainment, and recreation	35	71	6	35006	Cibola County, New Mexico	yes	5.0	120.41626984126984	2977.080952380952
+482	71	Arts, entertainment, and recreation	35	71	7	35007	Colfax County, New Mexico	no	4.5	4.833333333333333	143.33333333333334
+483	71	Arts, entertainment, and recreation	35	71	9	35009	Curry County, New Mexico	no	13.833333333333334	46.166666666666664	708.1666666666666
+484	71	Arts, entertainment, and recreation	35	71	11	35011	De Baca County, New Mexico	yes	1.0	34.107436182019974	524.321827598964
+485	71	Arts, entertainment, and recreation	35	71	13	35013	Doña Ana County, New Mexico	no	40.5	1089.5	19008.333333333332
+486	71	Arts, entertainment, and recreation	35	71	15	35015	Eddy County, New Mexico	no	10.166666666666666	72.83333333333333	1700.1666666666667
+487	71	Arts, entertainment, and recreation	35	71	17	35017	Grant County, New Mexico	no	8.333333333333334	24.333333333333332	536.6666666666666
+488	71	Arts, entertainment, and recreation	35	71	23	35023	Hidalgo County, New Mexico	yes	1.0	34.30743618201998	616.4777099519052
+489	71	Arts, entertainment, and recreation	35	71	25	35025	Lea County, New Mexico	no	13.666666666666666	374.3333333333333	10644.666666666666
+490	71	Arts, entertainment, and recreation	35	71	25	35025	Lea County, New Mexico	yes	12.666666666666666	433.26333703292636	6659.422974472807
+491	71	Arts, entertainment, and recreation	35	71	27	35027	Lincoln County, New Mexico	no	21.0	442.1666666666667	12120.666666666666
+492	71	Arts, entertainment, and recreation	35	71	28	35028	Los Alamos County, New Mexico	no	10.666666666666666	80.83333333333333	1113.1666666666667
+493	71	Arts, entertainment, and recreation	35	71	29	35029	Luna County, New Mexico	no	5.2	58.6	672.6
+494	71	Arts, entertainment, and recreation	35	71	29	35029	Luna County, New Mexico	yes	5.0	152.0	2351.4117647058824
+495	71	Arts, entertainment, and recreation	35	71	31	35031	McKinley County, New Mexico	yes	7.833333333333333	235.28931055441046	4581.3883328048205
+496	71	Arts, entertainment, and recreation	35	71	33	35033	Mora County, New Mexico	yes	1.0	30.4	470.28235294117644
+497	71	Arts, entertainment, and recreation	35	71	35	35035	Otero County, New Mexico	no	13.666666666666666	555.0	7292.333333333333
+498	71	Arts, entertainment, and recreation	35	71	35	35035	Otero County, New Mexico	yes	17.0	579.8264150943396	8913.47106918239
+499	71	Arts, entertainment, and recreation	35	71	37	35037	Quay County, New Mexico	no	3.1666666666666665	6.333333333333333	70.16666666666667
+500	71	Arts, entertainment, and recreation	35	71	39	35039	Rio Arriba County, New Mexico	no	14.25	161.5	4937.5
+501	71	Arts, entertainment, and recreation	35	71	39	35039	Rio Arriba County, New Mexico	yes	16.0	458.7294117647059	8321.082352941175
+502	71	Arts, entertainment, and recreation	35	71	41	35041	Roosevelt County, New Mexico	no	3.8333333333333335	15.333333333333334	427.0
+503	71	Arts, entertainment, and recreation	35	71	43	35043	Sandoval County, New Mexico	no	27.5	1168.1666666666667	31084.666666666668
+504	71	Arts, entertainment, and recreation	35	71	45	35045	San Juan County, New Mexico	no	27.833333333333332	793.1666666666666	18526.666666666668
+505	71	Arts, entertainment, and recreation	35	71	47	35047	San Miguel County, New Mexico	yes	2.0	64.45557226244796	1155.4910794003135
+506	71	Arts, entertainment, and recreation	35	71	49	35049	Santa Fe County, New Mexico	no	141.33333333333334	1869.1666666666667	57983.333333333336
+507	71	Arts, entertainment, and recreation	35	71	51	35051	Sierra County, New Mexico	no	7.666666666666667	41.333333333333336	805.0
+508	71	Arts, entertainment, and recreation	35	71	51	35051	Sierra County, New Mexico	yes	7.666666666666667	259.01871994080653	3983.7743618202
+509	71	Arts, entertainment, and recreation	35	71	53	35053	Socorro County, New Mexico	yes	1.0	34.107436182019974	524.321827598964
+510	71	Arts, entertainment, and recreation	35	71	55	35055	Taos County, New Mexico	no	34.0	705.3333333333334	12484.166666666666
+511	71	Arts, entertainment, and recreation	35	71	57	35057	Torrance County, New Mexico	no	3.0	20.6	394.8
+512	71	Arts, entertainment, and recreation	35	71	57	35057	Torrance County, New Mexico	yes	2.0	60.8	940.5647058823529
+513	71	Arts, entertainment, and recreation	35	71	59	35059	Union County, New Mexico	no	4.0	3.0	129.75
+514	71	Arts, entertainment, and recreation	35	71	59	35059	Union County, New Mexico	yes	2.0	48.16650793650794	1190.8323809523808
+515	71	Arts, entertainment, and recreation	35	71	61	35061	Valencia County, New Mexico	no	11.6	69.4	966.0
+516	71	Arts, entertainment, and recreation	35	71	61	35061	Valencia County, New Mexico	yes	10.0	304.0	4702.823529411765
+517	72	Accommodation and food services	35	72	1	35001	Bernalillo County, New Mexico	no	1417.1666666666667	33118.5	571104.0
+518	72	Accommodation and food services	35	72	3	35003	Catron County, New Mexico	no	9.5	33.5	362.6666666666667
+519	72	Accommodation and food services	35	72	5	35005	Chaves County, New Mexico	no	129.83333333333334	2436.6666666666665	32774.166666666664
+520	72	Accommodation and food services	35	72	6	35006	Cibola County, New Mexico	no	37.0	628.5	7887.166666666667
+521	72	Accommodation and food services	35	72	7	35007	Colfax County, New Mexico	no	63.833333333333336	1185.6666666666667	24569.0
+522	72	Accommodation and food services	35	72	9	35009	Curry County, New Mexico	no	83.83333333333333	1856.5	24783.0
+523	72	Accommodation and food services	35	72	11	35011	De Baca County, New Mexico	no	5.0	20.5	584.3333333333334
+524	72	Accommodation and food services	35	72	13	35013	Doña Ana County, New Mexico	no	325.8333333333333	6848.166666666667	93699.0
+525	72	Accommodation and food services	35	72	15	35015	Eddy County, New Mexico	no	124.0	2364.1666666666665	36929.333333333336
+526	72	Accommodation and food services	35	72	17	35017	Grant County, New Mexico	no	74.5	875.1666666666666	10117.166666666666
+527	72	Accommodation and food services	35	72	19	35019	Guadalupe County, New Mexico	no	21.0	319.6666666666667	4579.666666666667
+528	72	Accommodation and food services	35	72	21	35021	Harding County, New Mexico	yes	1.0	34.4375	29.14583333333333
+529	72	Accommodation and food services	35	72	23	35023	Hidalgo County, New Mexico	no	16.0	248.83333333333334	3092.1666666666665
+530	72	Accommodation and food services	35	72	25	35025	Lea County, New Mexico	no	145.66666666666666	2470.8333333333335	35403.166666666664
+531	72	Accommodation and food services	35	72	27	35027	Lincoln County, New Mexico	no	92.33333333333333	1180.6666666666667	18437.166666666668
+532	72	Accommodation and food services	35	72	28	35028	Los Alamos County, New Mexico	no	35.0	438.0	6776.5
+533	72	Accommodation and food services	35	72	29	35029	Luna County, New Mexico	no	60.666666666666664	839.1666666666666	9302.5
+534	72	Accommodation and food services	35	72	31	35031	McKinley County, New Mexico	no	141.66666666666666	2568.0	35500.333333333336
+535	72	Accommodation and food services	35	72	33	35033	Mora County, New Mexico	no	3.0	11.0	114.0
+536	72	Accommodation and food services	35	72	33	35033	Mora County, New Mexico	yes	2.2	74.84083255378859	209.62842220143438
+537	72	Accommodation and food services	35	72	35	35035	Otero County, New Mexico	no	103.5	2367.6666666666665	47126.0
+538	72	Accommodation and food services	35	72	37	35037	Quay County, New Mexico	no	34.666666666666664	493.0	6816.166666666667
+539	72	Accommodation and food services	35	72	39	35039	Rio Arriba County, New Mexico	no	64.66666666666667	1135.5	22154.166666666668
+540	72	Accommodation and food services	35	72	41	35041	Roosevelt County, New Mexico	no	29.666666666666668	571.6666666666666	6830.166666666667
+541	72	Accommodation and food services	35	72	43	35043	Sandoval County, New Mexico	no	157.16666666666666	3728.1666666666665	56940.166666666664
+542	72	Accommodation and food services	35	72	45	35045	San Juan County, New Mexico	no	215.16666666666666	4459.5	63690.833333333336
+543	72	Accommodation and food services	35	72	47	35047	San Miguel County, New Mexico	no	59.5	778.1666666666666	10522.833333333334
+544	72	Accommodation and food services	35	72	49	35049	Santa Fe County, New Mexico	no	408.1666666666667	9141.0	204633.66666666666
+545	72	Accommodation and food services	35	72	51	35051	Sierra County, New Mexico	no	38.833333333333336	451.8333333333333	5511.5
+546	72	Accommodation and food services	35	72	53	35053	Socorro County, New Mexico	no	39.166666666666664	595.5	7516.833333333333
+547	72	Accommodation and food services	35	72	55	35055	Taos County, New Mexico	no	152.83333333333334	2008.8333333333333	33990.666666666664
+548	72	Accommodation and food services	35	72	57	35057	Torrance County, New Mexico	no	22.666666666666668	185.5	2265.6666666666665
+549	72	Accommodation and food services	35	72	59	35059	Union County, New Mexico	no	13.666666666666666	100.16666666666667	1890.3333333333333
+550	72	Accommodation and food services	35	72	61	35061	Valencia County, New Mexico	no	97.16666666666667	2097.8333333333335	32375.5
+551	81	Other services (except public administration)	35	81	1	35001	Bernalillo County, New Mexico	no	1407.6666666666667	10848.666666666666	308940.5
+552	81	Other services (except public administration)	35	81	3	35003	Catron County, New Mexico	no	5.166666666666667	13.166666666666666	383.3333333333333
+553	81	Other services (except public administration)	35	81	5	35005	Chaves County, New Mexico	no	124.0	825.3333333333334	16841.5
+554	81	Other services (except public administration)	35	81	6	35006	Cibola County, New Mexico	no	33.333333333333336	90.66666666666667	2302.0
+555	81	Other services (except public administration)	35	81	7	35007	Colfax County, New Mexico	no	39.666666666666664	134.5	2631.6666666666665
+556	81	Other services (except public administration)	35	81	9	35009	Curry County, New Mexico	no	120.16666666666667	782.3333333333334	14796.166666666666
+557	81	Other services (except public administration)	35	81	11	35011	De Baca County, New Mexico	no	6.333333333333333	21.833333333333332	285.5
+558	81	Other services (except public administration)	35	81	13	35013	Doña Ana County, New Mexico	no	322.1666666666667	1821.1666666666667	37778.166666666664
+559	81	Other services (except public administration)	35	81	15	35015	Eddy County, New Mexico	no	136.66666666666666	951.6666666666666	27456.166666666668
+560	81	Other services (except public administration)	35	81	17	35017	Grant County, New Mexico	no	64.83333333333333	255.16666666666666	4051.5
+561	81	Other services (except public administration)	35	81	19	35019	Guadalupe County, New Mexico	no	10.666666666666666	34.833333333333336	1380.5
+562	81	Other services (except public administration)	35	81	21	35021	Harding County, New Mexico	yes	1.5	17.713772209940227	433.8033120445427
+563	81	Other services (except public administration)	35	81	23	35023	Hidalgo County, New Mexico	no	5.666666666666667	7.333333333333333	85.66666666666667
+564	81	Other services (except public administration)	35	81	23	35023	Hidalgo County, New Mexico	yes	4.333333333333333	73.91111111111111	309.32222222222225
+565	81	Other services (except public administration)	35	81	25	35025	Lea County, New Mexico	no	157.66666666666666	1097.6666666666667	37053.666666666664
+566	81	Other services (except public administration)	35	81	27	35027	Lincoln County, New Mexico	no	63.0	319.1666666666667	6687.5
+567	81	Other services (except public administration)	35	81	28	35028	Los Alamos County, New Mexico	no	42.166666666666664	344.3333333333333	5534.333333333333
+568	81	Other services (except public administration)	35	81	29	35029	Luna County, New Mexico	no	38.166666666666664	111.83333333333333	2247.0
+569	81	Other services (except public administration)	35	81	31	35031	McKinley County, New Mexico	no	106.0	717.5	15552.833333333334
+570	81	Other services (except public administration)	35	81	33	35033	Mora County, New Mexico	no	4.333333333333333	12.0	217.66666666666666
+571	81	Other services (except public administration)	35	81	33	35033	Mora County, New Mexico	yes	5.333333333333333	90.66666666666667	382.0
+572	81	Other services (except public administration)	35	81	35	35035	Otero County, New Mexico	no	108.16666666666667	652.3333333333334	10846.166666666666
+573	81	Other services (except public administration)	35	81	37	35037	Quay County, New Mexico	no	32.5	148.83333333333334	3342.6666666666665
+574	81	Other services (except public administration)	35	81	39	35039	Rio Arriba County, New Mexico	no	45.166666666666664	223.5	5616.666666666667
+575	81	Other services (except public administration)	35	81	41	35041	Roosevelt County, New Mexico	no	41.0	181.66666666666666	3647.0
+576	81	Other services (except public administration)	35	81	43	35043	Sandoval County, New Mexico	no	154.0	1126.3333333333333	27143.0
+577	81	Other services (except public administration)	35	81	45	35045	San Juan County, New Mexico	no	287.3333333333333	2025.6666666666667	59485.666666666664
+578	81	Other services (except public administration)	35	81	47	35047	San Miguel County, New Mexico	no	40.666666666666664	156.66666666666666	2775.0
+579	81	Other services (except public administration)	35	81	49	35049	Santa Fe County, New Mexico	no	421.1666666666667	2423.6666666666665	86902.0
+580	81	Other services (except public administration)	35	81	51	35051	Sierra County, New Mexico	no	26.833333333333332	121.16666666666667	2665.1666666666665
+581	81	Other services (except public administration)	35	81	53	35053	Socorro County, New Mexico	no	20.833333333333332	85.33333333333333	1408.0
+582	81	Other services (except public administration)	35	81	55	35055	Taos County, New Mexico	no	81.66666666666667	339.6666666666667	7624.833333333333
+583	81	Other services (except public administration)	35	81	57	35057	Torrance County, New Mexico	no	19.5	53.833333333333336	1333.6666666666667
+584	81	Other services (except public administration)	35	81	59	35059	Union County, New Mexico	no	15.833333333333334	50.166666666666664	870.6666666666666
+585	81	Other services (except public administration)	35	81	61	35061	Valencia County, New Mexico	no	92.5	418.1666666666667	8182.5
+586	99	Industries not classified	35	99	1	35001	Bernalillo County, New Mexico	no	18.666666666666668	15.666666666666666	319.0
+587	99	Industries not classified	35	99	5	35005	Chaves County, New Mexico	no	3.0	3.0	31.0
+588	99	Industries not classified	35	99	5	35005	Chaves County, New Mexico	yes	1.5	1.9109305726952786	36.4954179807121
+589	99	Industries not classified	35	99	6	35006	Cibola County, New Mexico	yes	1.5	2.7181818181818183	32.347272727272724
+590	99	Industries not classified	35	99	7	35007	Colfax County, New Mexico	yes	1.25	2.1591269025092554	27.028062525709586
+591	99	Industries not classified	35	99	9	35009	Curry County, New Mexico	no	4.0	1.0	25.0
+592	99	Industries not classified	35	99	9	35009	Curry County, New Mexico	yes	1.5	2.709090909090909	29.103636363636365
+593	99	Industries not classified	35	99	13	35013	Doña Ana County, New Mexico	no	5.75	8.25	239.0
+594	99	Industries not classified	35	99	13	35013	Doña Ana County, New Mexico	yes	5.0	-1.8333333333333333	114.47619047619047
+595	99	Industries not classified	35	99	15	35015	Eddy County, New Mexico	no	3.25	1.5	67.5
+596	99	Industries not classified	35	99	15	35015	Eddy County, New Mexico	yes	2.0	1.8	40.81142857142857
+597	99	Industries not classified	35	99	17	35017	Grant County, New Mexico	yes	2.0	3.6	34.480000000000004
+598	99	Industries not classified	35	99	25	35025	Lea County, New Mexico	yes	1.8	2.1301585995703642	41.87867781891312
+599	99	Industries not classified	35	99	27	35027	Lincoln County, New Mexico	no	3.0	1.0	21.0
+600	99	Industries not classified	35	99	27	35027	Lincoln County, New Mexico	yes	1.6666666666666667	2.7516111339640754	41.17907582613466
+601	99	Industries not classified	35	99	28	35028	Los Alamos County, New Mexico	yes	1.0	1.8	17.240000000000002
+602	99	Industries not classified	35	99	29	35029	Luna County, New Mexico	no	3.0	1.0	28.0
+603	99	Industries not classified	35	99	29	35029	Luna County, New Mexico	yes	2.0	3.3576717400246814	49.08816673522556
+604	99	Industries not classified	35	99	31	35031	McKinley County, New Mexico	no	4.333333333333333	4.0	80.0
+605	99	Industries not classified	35	99	31	35031	McKinley County, New Mexico	yes	1.0	0.9	20.405714285714286
+606	99	Industries not classified	35	99	35	35035	Otero County, New Mexico	yes	2.0	1.5962962962962963	40.43576719576719
+607	99	Industries not classified	35	99	37	35037	Quay County, New Mexico	yes	1.0	0.0	23.57142857142857
+608	99	Industries not classified	35	99	39	35039	Rio Arriba County, New Mexico	no	3.0	2.0	49.0
+609	99	Industries not classified	35	99	39	35039	Rio Arriba County, New Mexico	yes	1.5	1.4081168014991547	35.56210292974999
+610	99	Industries not classified	35	99	41	35041	Roosevelt County, New Mexico	yes	1.0	0.5944444444444446	19.842222222222222
+611	99	Industries not classified	35	99	43	35043	Sandoval County, New Mexico	no	3.0	2.0	41.0
+612	99	Industries not classified	35	99	43	35043	Sandoval County, New Mexico	yes	2.5	2.8626262626262626	53.772352092352094
+613	99	Industries not classified	35	99	45	35045	San Juan County, New Mexico	no	4.0	3.0	30.0
+614	99	Industries not classified	35	99	45	35045	San Juan County, New Mexico	yes	1.6	2.374603044014809	37.61518575542105
+615	99	Industries not classified	35	99	49	35049	Santa Fe County, New Mexico	no	10.6	15.6	318.2
+616	99	Industries not classified	35	99	49	35049	Santa Fe County, New Mexico	yes	1.0	0.0	23.57142857142857
+617	99	Industries not classified	35	99	51	35051	Sierra County, New Mexico	yes	1.0	1.809090909090909	20.483636363636364
+618	99	Industries not classified	35	99	53	35053	Socorro County, New Mexico	yes	1.1666666666666667	0.9357142313024666	26.55542792719263
+619	99	Industries not classified	35	99	55	35055	Taos County, New Mexico	no	4.0	1.0	40.0
+620	99	Industries not classified	35	99	55	35055	Taos County, New Mexico	yes	1.0	1.809090909090909	20.483636363636364
+621	99	Industries not classified	35	99	57	35057	Torrance County, New Mexico	yes	1.0	1.8	17.240000000000002
+622	99	Industries not classified	35	99	61	35061	Valencia County, New Mexico	no	3.0	5.0	98.0
+623	99	Industries not classified	35	99	61	35061	Valencia County, New Mexico	yes	1.0	1.0023569023569026	21.137239057239057

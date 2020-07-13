@@ -1,259 +1,301 @@
-	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
-1	32001	32	1	Churchill County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	4.4	64.6	5278.8
-2	32001	32	1	Churchill County, Nevada	22	Utilities	22	8.6	76.4	7851.0
-3	32001	32	1	Churchill County, Nevada	23	Construction	23	53.8	368.8	17270.8
-4	32001	32	1	Churchill County, Nevada	42	Wholesale trade	42	20.8	100.0	4131.8
-5	32001	32	1	Churchill County, Nevada	51	Information	51	5.6	34.8	1340.8
-6	32001	32	1	Churchill County, Nevada	52	Finance and insurance	52	33.6	160.2	6082.4
-7	32001	32	1	Churchill County, Nevada	53	Real estate and rental and leasing	53	30.8	120.6	2852.6
-8	32001	32	1	Churchill County, Nevada	54	Professional, scientific, and technical services	54	39.2	368.4	16078.6
-10	32001	32	1	Churchill County, Nevada	56	Administrative and support and waste management and remediation services	56	24.2	162.2	4526.2
-12	32001	32	1	Churchill County, Nevada	62	Health care and social assistance	62	40.8	609.4	29623.6
-13	32001	32	1	Churchill County, Nevada	71	Arts, entertainment, and recreation	71	14.6	299.6	5731.0
-14	32001	32	1	Churchill County, Nevada	72	Accommodation and food services	72	49.8	660.4	10170.8
-15	32001	32	1	Churchill County, Nevada	81	Other services (except public administration)	81	53.6	238.2	5391.8
-17	32003	32	3	Clark County, Nevada	11	Agriculture, forestry, fishing and hunting	11	14.2	12.6	1226.4
-18	32003	32	3	Clark County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	46.0	413.6	23725.2
-19	32003	32	3	Clark County, Nevada	22	Utilities	22	54.0	1137.2	124133.6
-20	32003	32	3	Clark County, Nevada	23	Construction	23	2839.6	43711.0	2275352.2
-21	32003	32	3	Clark County, Nevada	42	Wholesale trade	42	1906.8	20855.2	1263964.0
-22	32003	32	3	Clark County, Nevada	51	Information	51	821.2	11312.4	674273.2
-23	32003	32	3	Clark County, Nevada	52	Finance and insurance	52	2883.6	25748.2	1473385.0
-24	32003	32	3	Clark County, Nevada	53	Real estate and rental and leasing	53	2974.0	22060.2	914160.0
-25	32003	32	3	Clark County, Nevada	54	Professional, scientific, and technical services	54	5970.6	41442.2	2533998.0
-26	32003	32	3	Clark County, Nevada	55	Management of companies and enterprises	55	400.4	15366.2	1409301.6
-27	32003	32	3	Clark County, Nevada	56	Administrative and support and waste management and remediation services	56	2990.0	65815.4	1996889.8
-28	32003	32	3	Clark County, Nevada	61	Educational services	61	504.8	7912.2	278475.2
-29	32003	32	3	Clark County, Nevada	62	Health care and social assistance	62	4778.6	77733.8	3769818.2
-30	32003	32	3	Clark County, Nevada	71	Arts, entertainment, and recreation	71	981.2	20084.4	741518.0
-31	32003	32	3	Clark County, Nevada	72	Accommodation and food services	72	4347.0	261203.4	8043217.8
-32	32003	32	3	Clark County, Nevada	81	Other services (except public administration)	81	2842.6	22769.6	668383.2
-33	32003	32	3	Clark County, Nevada	99	Industries not classified	99	60.4	60.8	1876.8
-34	32005	32	5	Douglas County, Nevada	11	Agriculture, forestry, fishing and hunting	11	7.4	3.6	148.4
-36	32005	32	5	Douglas County, Nevada	22	Utilities	22	4.4	12.2	559.8
-37	32005	32	5	Douglas County, Nevada	23	Construction	23	200.0	999.2	46521.2
-38	32005	32	5	Douglas County, Nevada	42	Wholesale trade	42	58.2	397.4	21268.0
-39	32005	32	5	Douglas County, Nevada	51	Information	51	46.6	258.8	16592.4
-40	32005	32	5	Douglas County, Nevada	52	Finance and insurance	52	102.0	366.0	25348.6
-41	32005	32	5	Douglas County, Nevada	53	Real estate and rental and leasing	53	123.0	440.4	21557.8
-42	32005	32	5	Douglas County, Nevada	54	Professional, scientific, and technical services	54	248.6	792.8	39819.6
-43	32005	32	5	Douglas County, Nevada	55	Management of companies and enterprises	55	6.2	73.0	5092.8
-44	32005	32	5	Douglas County, Nevada	56	Administrative and support and waste management and remediation services	56	109.6	1034.0	29597.4
-45	32005	32	5	Douglas County, Nevada	61	Educational services	61	19.0	112.6	1973.2
-46	32005	32	5	Douglas County, Nevada	62	Health care and social assistance	62	123.0	1340.4	63325.8
-47	32005	32	5	Douglas County, Nevada	71	Arts, entertainment, and recreation	71	38.8	308.0	10046.4
-48	32005	32	5	Douglas County, Nevada	72	Accommodation and food services	72	135.0	5407.6	130373.2
-49	32005	32	5	Douglas County, Nevada	81	Other services (except public administration)	81	101.2	694.6	20199.2
-50	32005	32	5	Douglas County, Nevada	99	Industries not classified	99	2.75	2.75	116.25
-52	32007	32	7	Elko County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	26.2	4994.2	496035.8
-53	32007	32	7	Elko County, Nevada	22	Utilities	22	4.0	31.0	2959.4
-54	32007	32	7	Elko County, Nevada	23	Construction	23	102.0	1280.0	77104.0
-55	32007	32	7	Elko County, Nevada	42	Wholesale trade	42	73.2	877.2	59381.4
-56	32007	32	7	Elko County, Nevada	51	Information	51	17.6	139.6	5286.0
-57	32007	32	7	Elko County, Nevada	52	Finance and insurance	52	53.8	282.6	12876.6
-58	32007	32	7	Elko County, Nevada	53	Real estate and rental and leasing	53	47.4	247.6	7814.6
-59	32007	32	7	Elko County, Nevada	54	Professional, scientific, and technical services	54	97.8	561.8	29345.2
-61	32007	32	7	Elko County, Nevada	56	Administrative and support and waste management and remediation services	56	41.6	683.0	17780.0
-62	32007	32	7	Elko County, Nevada	61	Educational services	61	4.6	13.8	112.8
-63	32007	32	7	Elko County, Nevada	62	Health care and social assistance	62	125.0	1520.8	62025.4
-64	32007	32	7	Elko County, Nevada	71	Arts, entertainment, and recreation	71	28.8	444.2	9920.6
-65	32007	32	7	Elko County, Nevada	72	Accommodation and food services	72	146.2	5242.4	120860.2
-66	32007	32	7	Elko County, Nevada	81	Other services (except public administration)	81	88.0	653.2	32356.6
-67	32007	32	7	Elko County, Nevada	99	Industries not classified	99	2.75	0.75	35.5
-83	32011	32	11	Eureka County, Nevada	54	Professional, scientific, and technical services	54	3.4	1.2	25.0
-86	32011	32	11	Eureka County, Nevada	72	Accommodation and food services	72	5.2	20.2	299.8
-89	32013	32	13	Humboldt County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	21.0	2178.6	197798.2
-90	32013	32	13	Humboldt County, Nevada	22	Utilities	22	4.4	32.0	3555.0
-91	32013	32	13	Humboldt County, Nevada	23	Construction	23	32.4	297.2	17498.8
-92	32013	32	13	Humboldt County, Nevada	42	Wholesale trade	42	18.2	117.2	8086.4
-93	32013	32	13	Humboldt County, Nevada	51	Information	51	8.4	25.6	1715.8
-94	32013	32	13	Humboldt County, Nevada	52	Finance and insurance	52	15.6	63.6	2892.6
-95	32013	32	13	Humboldt County, Nevada	53	Real estate and rental and leasing	53	9.4	10.4	373.2
-96	32013	32	13	Humboldt County, Nevada	54	Professional, scientific, and technical services	54	20.2	65.2	2517.2
-98	32013	32	13	Humboldt County, Nevada	56	Administrative and support and waste management and remediation services	56	14.8	242.2	7358.6
-100	32013	32	13	Humboldt County, Nevada	62	Health care and social assistance	62	36.2	563.4	20876.8
-101	32013	32	13	Humboldt County, Nevada	71	Arts, entertainment, and recreation	71	9.2	29.8	725.0
-102	32013	32	13	Humboldt County, Nevada	72	Accommodation and food services	72	63.2	1133.6	17864.0
-103	32013	32	13	Humboldt County, Nevada	81	Other services (except public administration)	81	41.4	164.2	5278.6
-108	32015	32	15	Lander County, Nevada	23	Construction	23	9.6	35.0	1686.6
-109	32015	32	15	Lander County, Nevada	42	Wholesale trade	42	4.4	63.6	4545.4
-111	32015	32	15	Lander County, Nevada	52	Finance and insurance	52	4.0	5.4	356.4
-114	32015	32	15	Lander County, Nevada	56	Administrative and support and waste management and remediation services	56	3.4	6.4	187.2
-117	32015	32	15	Lander County, Nevada	72	Accommodation and food services	72	14.2	119.4	1635.4
-118	32015	32	15	Lander County, Nevada	81	Other services (except public administration)	81	9.2	12.0	651.8
-121	32017	32	17	Lincoln County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	4.4	12.8	872.0
-123	32017	32	17	Lincoln County, Nevada	23	Construction	23	10.2	20.2	1190.4
-124	32017	32	17	Lincoln County, Nevada	42	Wholesale trade	42	2.2	0.0	30.0
-126	32017	32	17	Lincoln County, Nevada	52	Finance and insurance	52	5.8	12.4	1564.2
-128	32017	32	17	Lincoln County, Nevada	54	Professional, scientific, and technical services	54	7.0	13.6	473.2
-129	32017	32	17	Lincoln County, Nevada	56	Administrative and support and waste management and remediation services	56	2.4	1.6	64.0
-131	32017	32	17	Lincoln County, Nevada	62	Health care and social assistance	62	6.0	117.6	3673.2
-133	32017	32	17	Lincoln County, Nevada	72	Accommodation and food services	72	15.8	95.4	1448.0
-134	32017	32	17	Lincoln County, Nevada	81	Other services (except public administration)	81	3.6	0.8	40.6
-137	32019	32	19	Lyon County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	9.8	183.6	13869.8
-138	32019	32	19	Lyon County, Nevada	22	Utilities	22	6.8	28.2	3917.4
-139	32019	32	19	Lyon County, Nevada	23	Construction	23	93.2	562.6	26887.2
-140	32019	32	19	Lyon County, Nevada	42	Wholesale trade	42	49.6	520.0	22283.6
-141	32019	32	19	Lyon County, Nevada	51	Information	51	9.8	29.2	2136.6
-142	32019	32	19	Lyon County, Nevada	52	Finance and insurance	52	42.0	158.0	5297.8
-143	32019	32	19	Lyon County, Nevada	53	Real estate and rental and leasing	53	33.6	56.6	2587.8
-144	32019	32	19	Lyon County, Nevada	54	Professional, scientific, and technical services	54	64.8	299.6	17852.6
-146	32019	32	19	Lyon County, Nevada	56	Administrative and support and waste management and remediation services	56	40.2	185.2	16372.4
-147	32019	32	19	Lyon County, Nevada	61	Educational services	61	2.6	1.2	56.0
-148	32019	32	19	Lyon County, Nevada	62	Health care and social assistance	62	41.4	414.8	17519.8
-149	32019	32	19	Lyon County, Nevada	71	Arts, entertainment, and recreation	71	33.2	789.8	16657.8
-150	32019	32	19	Lyon County, Nevada	72	Accommodation and food services	72	68.8	705.4	9791.6
-151	32019	32	19	Lyon County, Nevada	81	Other services (except public administration)	81	60.2	259.2	6707.8
-152	32019	32	19	Lyon County, Nevada	99	Industries not classified	99	4.2	0.6	255.2
-155	32021	32	21	Mineral County, Nevada	23	Construction	23	5.0	11.6	889.2
-156	32021	32	21	Mineral County, Nevada	42	Wholesale trade	42	2.4	5.4	112.4
-159	32021	32	21	Mineral County, Nevada	53	Real estate and rental and leasing	53	2.0	2.6666666666666665	24.0
-160	32021	32	21	Mineral County, Nevada	54	Professional, scientific, and technical services	54	4.6	18.4	703.2
-163	32021	32	21	Mineral County, Nevada	62	Health care and social assistance	62	5.2	46.0	2093.2
-165	32021	32	21	Mineral County, Nevada	72	Accommodation and food services	72	8.8	59.0	938.2
-166	32021	32	21	Mineral County, Nevada	81	Other services (except public administration)	81	6.0	19.6	466.0
-167	32023	32	23	Nye County, Nevada	11	Agriculture, forestry, fishing and hunting	11	2.4	5.8	234.4
-168	32023	32	23	Nye County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	13.2	342.2	27694.2
-170	32023	32	23	Nye County, Nevada	23	Construction	23	76.0	392.8	13222.4
-171	32023	32	23	Nye County, Nevada	42	Wholesale trade	42	10.2	52.0	2408.6
-172	32023	32	23	Nye County, Nevada	51	Information	51	16.2	91.4	4009.2
-173	32023	32	23	Nye County, Nevada	52	Finance and insurance	52	28.4	133.8	4100.0
-174	32023	32	23	Nye County, Nevada	53	Real estate and rental and leasing	53	38.2	100.0	2141.0
-175	32023	32	23	Nye County, Nevada	54	Professional, scientific, and technical services	54	48.0	98.8	2915.0
-177	32023	32	23	Nye County, Nevada	56	Administrative and support and waste management and remediation services	56	30.8	443.8	22055.6
-179	32023	32	23	Nye County, Nevada	62	Health care and social assistance	62	62.4	744.6	27567.0
-180	32023	32	23	Nye County, Nevada	71	Arts, entertainment, and recreation	71	17.6	526.0	11283.4
-181	32023	32	23	Nye County, Nevada	72	Accommodation and food services	72	81.6	1505.2	24591.6
-182	32023	32	23	Nye County, Nevada	81	Other services (except public administration)	81	64.4	276.8	5808.2
-184	32027	32	27	Pershing County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	5.4	336.6	26538.2
-189	32027	32	27	Pershing County, Nevada	52	Finance and insurance	52	4.0	11.0	445.0
-191	32027	32	27	Pershing County, Nevada	54	Professional, scientific, and technical services	54	2.8	6.0	219.8
-196	32027	32	27	Pershing County, Nevada	72	Accommodation and food services	72	14.0	126.0	1871.6
-197	32027	32	27	Pershing County, Nevada	81	Other services (except public administration)	81	6.0	7.2	477.8
-199	32029	32	29	Storey County, Nevada	23	Construction	23	15.8	42.0	1358.0
-203	32029	32	29	Storey County, Nevada	54	Professional, scientific, and technical services	54	9.4	8.4	588.8
-206	32029	32	29	Storey County, Nevada	71	Arts, entertainment, and recreation	71	8.2	42.8	674.4
-207	32029	32	29	Storey County, Nevada	72	Accommodation and food services	72	14.8	152.4	3947.8
-208	32029	32	29	Storey County, Nevada	81	Other services (except public administration)	81	4.2	17.4	431.8
-209	32031	32	31	Washoe County, Nevada	11	Agriculture, forestry, fishing and hunting	11	14.0	21.0	1663.4
-210	32031	32	31	Washoe County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	47.0	269.2	30278.6
-211	32031	32	31	Washoe County, Nevada	22	Utilities	22	19.2	401.8	40493.6
-212	32031	32	31	Washoe County, Nevada	23	Construction	23	1047.4	10139.2	542730.4
-213	32031	32	31	Washoe County, Nevada	42	Wholesale trade	42	643.6	9426.2	519145.0
-214	32031	32	31	Washoe County, Nevada	51	Information	51	229.6	3885.8	246381.2
-215	32031	32	31	Washoe County, Nevada	52	Finance and insurance	52	731.0	5864.4	398773.4
-216	32031	32	31	Washoe County, Nevada	53	Real estate and rental and leasing	53	705.4	3477.2	143592.6
-217	32031	32	31	Washoe County, Nevada	54	Professional, scientific, and technical services	54	1656.8	9869.6	612539.2
-218	32031	32	31	Washoe County, Nevada	55	Management of companies and enterprises	55	89.8	1490.0	153715.6
-219	32031	32	31	Washoe County, Nevada	56	Administrative and support and waste management and remediation services	56	790.6	15499.2	534553.0
-220	32031	32	31	Washoe County, Nevada	61	Educational services	61	141.8	1841.6	58698.8
-221	32031	32	31	Washoe County, Nevada	62	Health care and social assistance	62	1203.6	22739.0	1180033.0
-222	32031	32	31	Washoe County, Nevada	71	Arts, entertainment, and recreation	71	219.4	4251.4	101521.8
-223	32031	32	31	Washoe County, Nevada	72	Accommodation and food services	72	1006.6	29286.6	621916.0
-224	32031	32	31	Washoe County, Nevada	81	Other services (except public administration)	81	884.6	6214.4	197458.8
-225	32031	32	31	Washoe County, Nevada	99	Industries not classified	99	21.6	22.8	1211.0
-227	32033	32	33	White Pine County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	7.8	464.8	56997.6
-229	32033	32	33	White Pine County, Nevada	23	Construction	23	23.2	81.4	3033.0
-230	32033	32	33	White Pine County, Nevada	42	Wholesale trade	42	7.2	71.2	3734.6
-231	32033	32	33	White Pine County, Nevada	51	Information	51	4.2	11.2	706.4
-232	32033	32	33	White Pine County, Nevada	52	Finance and insurance	52	8.4	42.2	1581.8
-233	32033	32	33	White Pine County, Nevada	53	Real estate and rental and leasing	53	7.2	18.2	550.8
-234	32033	32	33	White Pine County, Nevada	54	Professional, scientific, and technical services	54	9.2	14.2	751.2
-235	32033	32	33	White Pine County, Nevada	56	Administrative and support and waste management and remediation services	56	6.2	30.6	1429.4
-237	32033	32	33	White Pine County, Nevada	62	Health care and social assistance	62	14.6	283.8	16262.2
-238	32033	32	33	White Pine County, Nevada	71	Arts, entertainment, and recreation	71	3.8	7.0	190.8
-239	32033	32	33	White Pine County, Nevada	72	Accommodation and food services	72	34.0	495.0	9598.4
-240	32033	32	33	White Pine County, Nevada	81	Other services (except public administration)	81	16.6	60.8	1897.2
-241	32510	32	510	Carson City, Nevada	11	Agriculture, forestry, fishing and hunting	11	3.6	3.6	789.8
-243	32510	32	510	Carson City, Nevada	22	Utilities	22	4.0	68.6	6918.6
-244	32510	32	510	Carson City, Nevada	23	Construction	23	148.0	862.4	34493.0
-245	32510	32	510	Carson City, Nevada	42	Wholesale trade	42	100.6	607.4	29853.0
-246	32510	32	510	Carson City, Nevada	51	Information	51	51.4	346.4	22837.4
-247	32510	32	510	Carson City, Nevada	52	Finance and insurance	52	122.0	1034.4	54923.2
-248	32510	32	510	Carson City, Nevada	53	Real estate and rental and leasing	53	117.0	346.0	11676.6
-249	32510	32	510	Carson City, Nevada	54	Professional, scientific, and technical services	54	292.2	1152.2	67075.2
-250	32510	32	510	Carson City, Nevada	55	Management of companies and enterprises	55	9.2	70.0	4616.8
-251	32510	32	510	Carson City, Nevada	56	Administrative and support and waste management and remediation services	56	133.8	1418.6	56782.2
-252	32510	32	510	Carson City, Nevada	61	Educational services	61	11.2	44.0	1586.0
-253	32510	32	510	Carson City, Nevada	62	Health care and social assistance	62	219.0	3676.2	198112.2
-254	32510	32	510	Carson City, Nevada	71	Arts, entertainment, and recreation	71	49.6	1132.0	37037.8
-255	32510	32	510	Carson City, Nevada	72	Accommodation and food services	72	166.2	2791.6	47213.6
-256	32510	32	510	Carson City, Nevada	81	Other services (except public administration)	81	144.8	794.6	23586.4
-257	32510	32	510	Carson City, Nevada	99	Industries not classified	99	3.2	1.4	22.0
-0	32001	32	1	Churchill County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.4		
-1	32001	32	1	Churchill County, Nevada	55	Management of companies and enterprises	55	1.0		
-2	32001	32	1	Churchill County, Nevada	61	Educational services	61	2.4		
-3	32001	32	1	Churchill County, Nevada	99	Industries not classified	99	1.3333333333333333		
-4	32005	32	5	Douglas County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	3.4		
-5	32007	32	7	Elko County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.0		
-6	32007	32	7	Elko County, Nevada	55	Management of companies and enterprises	55	1.0		
-7	32009	32	9	Esmeralda County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.0		
-8	32009	32	9	Esmeralda County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	2.2		
-9	32009	32	9	Esmeralda County, Nevada	22	Utilities	22	1.0		
-10	32009	32	9	Esmeralda County, Nevada	23	Construction	23	2.0		
-11	32009	32	9	Esmeralda County, Nevada	42	Wholesale trade	42	1.0		
-12	32009	32	9	Esmeralda County, Nevada	54	Professional, scientific, and technical services	54	1.0		
-13	32009	32	9	Esmeralda County, Nevada	72	Accommodation and food services	72	1.4		
-14	32009	32	9	Esmeralda County, Nevada	81	Other services (except public administration)	81	1.2		
-15	32011	32	11	Eureka County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.0		
-16	32011	32	11	Eureka County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	7.6		
-17	32011	32	11	Eureka County, Nevada	22	Utilities	22	2.0		
-18	32011	32	11	Eureka County, Nevada	23	Construction	23	3.0		
-19	32011	32	11	Eureka County, Nevada	42	Wholesale trade	42	1.8		
-20	32011	32	11	Eureka County, Nevada	51	Information	51	1.0		
-21	32011	32	11	Eureka County, Nevada	52	Finance and insurance	52	1.0		
-22	32011	32	11	Eureka County, Nevada	56	Administrative and support and waste management and remediation services	56	1.8		
-23	32011	32	11	Eureka County, Nevada	62	Health care and social assistance	62	2.2		
-24	32011	32	11	Eureka County, Nevada	81	Other services (except public administration)	81	2.0		
-25	32013	32	13	Humboldt County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.2		
-26	32013	32	13	Humboldt County, Nevada	55	Management of companies and enterprises	55	1.2		
-27	32013	32	13	Humboldt County, Nevada	61	Educational services	61	2.0		
-28	32013	32	13	Humboldt County, Nevada	99	Industries not classified	99	1.0		
-29	32015	32	15	Lander County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.0		
-30	32015	32	15	Lander County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	1.6		
-31	32015	32	15	Lander County, Nevada	22	Utilities	22	3.0		
-32	32015	32	15	Lander County, Nevada	51	Information	51	2.0		
-33	32015	32	15	Lander County, Nevada	53	Real estate and rental and leasing	53	3.0		
-34	32015	32	15	Lander County, Nevada	54	Professional, scientific, and technical services	54	1.6		
-35	32015	32	15	Lander County, Nevada	62	Health care and social assistance	62	7.4		
-36	32015	32	15	Lander County, Nevada	71	Arts, entertainment, and recreation	71	2.4		
-37	32015	32	15	Lander County, Nevada	99	Industries not classified	99	1.0		
-38	32017	32	17	Lincoln County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.2		
-39	32017	32	17	Lincoln County, Nevada	22	Utilities	22	1.6		
-40	32017	32	17	Lincoln County, Nevada	51	Information	51	2.8		
-41	32017	32	17	Lincoln County, Nevada	53	Real estate and rental and leasing	53	2.0		
-42	32017	32	17	Lincoln County, Nevada	61	Educational services	61	1.0		
-43	32017	32	17	Lincoln County, Nevada	71	Arts, entertainment, and recreation	71	1.0		
-44	32017	32	17	Lincoln County, Nevada	99	Industries not classified	99	1.0		
-45	32019	32	19	Lyon County, Nevada	11	Agriculture, forestry, fishing and hunting	11	2.0		
-46	32019	32	19	Lyon County, Nevada	55	Management of companies and enterprises	55	1.25		
-47	32021	32	21	Mineral County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	3.4		
-48	32021	32	21	Mineral County, Nevada	22	Utilities	22	1.0		
-49	32021	32	21	Mineral County, Nevada	51	Information	51	1.2		
-50	32021	32	21	Mineral County, Nevada	52	Finance and insurance	52	1.6		
-51	32021	32	21	Mineral County, Nevada	56	Administrative and support and waste management and remediation services	56	1.0		
-52	32021	32	21	Mineral County, Nevada	61	Educational services	61	1.0		
-53	32021	32	21	Mineral County, Nevada	71	Arts, entertainment, and recreation	71	1.0		
-54	32023	32	23	Nye County, Nevada	22	Utilities	22	8.0		
-55	32023	32	23	Nye County, Nevada	55	Management of companies and enterprises	55	1.0		
-56	32023	32	23	Nye County, Nevada	61	Educational services	61	3.4		
-57	32023	32	23	Nye County, Nevada	99	Industries not classified	99	1.0		
-58	32027	32	27	Pershing County, Nevada	22	Utilities	22	1.0		
-59	32027	32	27	Pershing County, Nevada	23	Construction	23	1.4		
-60	32027	32	27	Pershing County, Nevada	42	Wholesale trade	42	1.6		
-61	32027	32	27	Pershing County, Nevada	51	Information	51	1.25		
-62	32027	32	27	Pershing County, Nevada	53	Real estate and rental and leasing	53	1.4		
-63	32027	32	27	Pershing County, Nevada	56	Administrative and support and waste management and remediation services	56	1.0		
-64	32027	32	27	Pershing County, Nevada	61	Educational services	61	1.2		
-65	32027	32	27	Pershing County, Nevada	62	Health care and social assistance	62	6.0		
-66	32027	32	27	Pershing County, Nevada	71	Arts, entertainment, and recreation	71	1.3333333333333333		
-67	32029	32	29	Storey County, Nevada	21	Mining, quarrying, and oil and gas extraction	21	1.0		
-68	32029	32	29	Storey County, Nevada	51	Information	51	1.6		
-69	32029	32	29	Storey County, Nevada	52	Finance and insurance	52	1.0		
-70	32029	32	29	Storey County, Nevada	53	Real estate and rental and leasing	53	1.8		
-71	32029	32	29	Storey County, Nevada	56	Administrative and support and waste management and remediation services	56	1.0		
-72	32029	32	29	Storey County, Nevada	62	Health care and social assistance	62	1.0		
-73	32033	32	33	White Pine County, Nevada	11	Agriculture, forestry, fishing and hunting	11	1.8		
-74	32033	32	33	White Pine County, Nevada	22	Utilities	22	2.0		
-75	32033	32	33	White Pine County, Nevada	61	Educational services	61	1.0		
-76	32510	32	510	Carson City, Nevada	21	Mining, quarrying, and oil and gas extraction	21	4.25		
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
+0	11	Agriculture, forestry, fishing and hunting	32	11	1	32001	Churchill County, Nevada	yes	1.4	4.371555555555555	211.3908253968254
+1	11	Agriculture, forestry, fishing and hunting	32	11	3	32003	Clark County, Nevada	no	14.5	31.5	3066.0
+2	11	Agriculture, forestry, fishing and hunting	32	11	3	32003	Clark County, Nevada	yes	14.0	32.553333333333335	2233.909761904762
+3	11	Agriculture, forestry, fishing and hunting	32	11	5	32005	Douglas County, Nevada	no	8.0	6.0	247.33333333333334
+4	11	Agriculture, forestry, fishing and hunting	32	11	5	32005	Douglas County, Nevada	yes	6.5	23.45	1097.5482142857143
+5	11	Agriculture, forestry, fishing and hunting	32	11	7	32007	Elko County, Nevada	yes	1.0	2.6905555555555556	152.81867063492064
+6	11	Agriculture, forestry, fishing and hunting	32	11	9	32009	Esmeralda County, Nevada	yes	1.0	6.7	185.07500000000002
+7	11	Agriculture, forestry, fishing and hunting	32	11	11	32011	Eureka County, Nevada	yes	1.0	3.592592592592593	138.16137566137567
+8	11	Agriculture, forestry, fishing and hunting	32	11	13	32013	Humboldt County, Nevada	yes	1.2	3.031555555555556	174.3758253968254
+9	11	Agriculture, forestry, fishing and hunting	32	11	15	32015	Lander County, Nevada	yes	1.0	5.555555555555555	124.44444444444444
+10	11	Agriculture, forestry, fishing and hunting	32	11	17	32017	Lincoln County, Nevada	yes	1.2	4.374666666666667	172.0327142857143
+11	11	Agriculture, forestry, fishing and hunting	32	11	19	32019	Lyon County, Nevada	yes	2.0	6.527111111111111	294.2876507936508
+12	11	Agriculture, forestry, fishing and hunting	32	11	23	32023	Nye County, Nevada	no	4.0	14.5	586.0
+13	11	Agriculture, forestry, fishing and hunting	32	11	23	32023	Nye County, Nevada	yes	1.3333333333333333	1.8466666666666667	207.03071428571425
+14	11	Agriculture, forestry, fishing and hunting	32	11	31	32031	Washoe County, Nevada	no	14.0	21.0	1663.4
+15	11	Agriculture, forestry, fishing and hunting	32	11	33	32033	White Pine County, Nevada	yes	1.8	5.4159999999999995	269.3987619047619
+16	11	Agriculture, forestry, fishing and hunting	32	11	510	32510	Carson City, Nevada	no	3.25	4.5	987.25
+17	11	Agriculture, forestry, fishing and hunting	32	11	510	32510	Carson City, Nevada	yes	5.0	33.5	925.375
+18	21	Mining, quarrying, and oil and gas extraction	32	21	1	32001	Churchill County, Nevada	no	4.4	64.6	5278.8
+19	21	Mining, quarrying, and oil and gas extraction	32	21	3	32003	Clark County, Nevada	no	46.0	413.6	23725.2
+20	21	Mining, quarrying, and oil and gas extraction	32	21	5	32005	Douglas County, Nevada	yes	3.4	454.35507792860733	39528.27661136249
+21	21	Mining, quarrying, and oil and gas extraction	32	21	7	32007	Elko County, Nevada	no	26.2	4994.2	496035.8
+22	21	Mining, quarrying, and oil and gas extraction	32	21	9	32009	Esmeralda County, Nevada	yes	2.2	282.2106334841629	25075.77550025138
+23	21	Mining, quarrying, and oil and gas extraction	32	21	11	32011	Eureka County, Nevada	yes	7.6	977.2698089492208	84692.49042232276
+24	21	Mining, quarrying, and oil and gas extraction	32	21	13	32013	Humboldt County, Nevada	no	21.0	2178.6	197798.2
+25	21	Mining, quarrying, and oil and gas extraction	32	21	15	32015	Lander County, Nevada	yes	1.6	205.60708898944193	17350.918481649067
+26	21	Mining, quarrying, and oil and gas extraction	32	21	17	32017	Lincoln County, Nevada	no	4.666666666666667	21.333333333333332	1453.3333333333333
+27	21	Mining, quarrying, and oil and gas extraction	32	21	17	32017	Lincoln County, Nevada	yes	4.0	498.39869281045753	38585.12745098039
+28	21	Mining, quarrying, and oil and gas extraction	32	21	19	32019	Lyon County, Nevada	no	9.8	183.6	13869.8
+29	21	Mining, quarrying, and oil and gas extraction	32	21	21	32021	Mineral County, Nevada	yes	3.4	444.3808446455505	38799.782518853695
+30	21	Mining, quarrying, and oil and gas extraction	32	21	23	32023	Nye County, Nevada	no	13.5	855.5	69235.5
+31	21	Mining, quarrying, and oil and gas extraction	32	21	23	32023	Nye County, Nevada	yes	13.0	1547.106209150327	121675.40849673202
+32	21	Mining, quarrying, and oil and gas extraction	32	21	27	32027	Pershing County, Nevada	no	5.25	420.75	33172.75
+33	21	Mining, quarrying, and oil and gas extraction	32	21	27	32027	Pershing County, Nevada	yes	6.0	746.6666666666666	70670.66666666666
+34	21	Mining, quarrying, and oil and gas extraction	32	21	29	32029	Storey County, Nevada	yes	1.0	133.6479889391654	11724.290351935644
+35	21	Mining, quarrying, and oil and gas extraction	32	21	31	32031	Washoe County, Nevada	no	47.0	269.2	30278.6
+36	21	Mining, quarrying, and oil and gas extraction	32	21	33	32033	White Pine County, Nevada	no	8.0	774.6666666666666	94996.0
+37	21	Mining, quarrying, and oil and gas extraction	32	21	33	32033	White Pine County, Nevada	yes	7.5	815.4434389140272	67891.23906485672
+38	21	Mining, quarrying, and oil and gas extraction	32	21	510	32510	Carson City, Nevada	yes	4.25	484.49330693815983	39452.67634489693
+39	22	Utilities	32	22	1	32001	Churchill County, Nevada	no	8.6	76.4	7851.0
+40	22	Utilities	32	22	3	32003	Clark County, Nevada	no	55.0	2843.0	310334.0
+41	22	Utilities	32	22	3	32003	Clark County, Nevada	yes	53.333333333333336	-36.89622641509434	-5391.361526783778
+42	22	Utilities	32	22	5	32005	Douglas County, Nevada	no	4.4	12.2	559.8
+43	22	Utilities	32	22	7	32007	Elko County, Nevada	no	4.0	77.5	7398.5
+44	22	Utilities	32	22	7	32007	Elko County, Nevada	yes	4.0	-2.8301886792452833	-404.0631099544567
+45	22	Utilities	32	22	9	32009	Esmeralda County, Nevada	yes	1.0	5.472039203834031	507.2115861384103
+46	22	Utilities	32	22	11	32011	Eureka County, Nevada	yes	2.0	10.944078407668062	1014.4231722768207
+47	22	Utilities	32	22	13	32013	Humboldt County, Nevada	no	5.0	160.0	17775.0
+48	22	Utilities	32	22	13	32013	Humboldt County, Nevada	yes	4.25	14.833880229696472	1432.4030985686402
+49	22	Utilities	32	22	15	32015	Lander County, Nevada	yes	3.0	16.416117611502095	1521.6347584152313
+50	22	Utilities	32	22	17	32017	Lincoln County, Nevada	yes	1.6	5.047510901947239	446.6021196452419
+51	22	Utilities	32	22	19	32019	Lyon County, Nevada	no	7.0	47.0	6529.0
+52	22	Utilities	32	22	19	32019	Lyon County, Nevada	yes	6.5	-3.0283018867924527	-527.5524560832791
+53	22	Utilities	32	22	21	32021	Mineral County, Nevada	yes	1.0	5.472039203834031	507.2115861384103
+54	22	Utilities	32	22	23	32023	Nye County, Nevada	yes	8.0	43.77631363067225	4057.6926891072826
+55	22	Utilities	32	22	27	32027	Pershing County, Nevada	yes	1.0	5.472039203834031	507.2115861384103
+56	22	Utilities	32	22	31	32031	Washoe County, Nevada	no	19.0	1004.5	101234.0
+57	22	Utilities	32	22	31	32031	Washoe County, Nevada	yes	19.333333333333332	-13.443396226415095	-1942.699197571026
+58	22	Utilities	32	22	33	32033	White Pine County, Nevada	yes	2.0	10.944078407668062	1014.4231722768207
+59	22	Utilities	32	22	510	32510	Carson City, Nevada	no	4.0	171.5	17296.5
+60	22	Utilities	32	22	510	32510	Carson City, Nevada	yes	4.0	-2.8301886792452833	-404.0631099544567
+61	23	Construction	32	23	1	32001	Churchill County, Nevada	no	53.8	368.8	17270.8
+62	23	Construction	32	23	3	32003	Clark County, Nevada	no	2839.6	43711.0	2275352.2
+63	23	Construction	32	23	5	32005	Douglas County, Nevada	no	200.0	999.2	46521.2
+64	23	Construction	32	23	7	32007	Elko County, Nevada	no	102.0	1280.0	77104.0
+65	23	Construction	32	23	9	32009	Esmeralda County, Nevada	yes	2.0	136.67619047619047	10173.264285714286
+66	23	Construction	32	23	11	32011	Eureka County, Nevada	yes	3.0	124.82857142857142	6954.407142857142
+67	23	Construction	32	23	13	32013	Humboldt County, Nevada	no	32.4	297.2	17498.8
+68	23	Construction	32	23	15	32015	Lander County, Nevada	no	9.6	35.0	1686.6
+69	23	Construction	32	23	17	32017	Lincoln County, Nevada	no	10.2	20.2	1190.4
+70	23	Construction	32	23	19	32019	Lyon County, Nevada	no	93.2	562.6	26887.2
+71	23	Construction	32	23	21	32021	Mineral County, Nevada	no	5.0	11.6	889.2
+72	23	Construction	32	23	23	32023	Nye County, Nevada	no	76.0	392.8	13222.4
+73	23	Construction	32	23	27	32027	Pershing County, Nevada	yes	1.4	78.0952380952381	5484.328571428571
+74	23	Construction	32	23	29	32029	Storey County, Nevada	no	15.8	42.0	1358.0
+75	23	Construction	32	23	31	32031	Washoe County, Nevada	no	1047.4	10139.2	542730.4
+76	23	Construction	32	23	33	32033	White Pine County, Nevada	no	23.2	81.4	3033.0
+77	23	Construction	32	23	510	32510	Carson City, Nevada	no	148.0	862.4	34493.0
+78	42	Wholesale trade	32	42	1	32001	Churchill County, Nevada	no	20.8	100.0	4131.8
+79	42	Wholesale trade	32	42	3	32003	Clark County, Nevada	no	1906.8	20855.2	1263964.0
+80	42	Wholesale trade	32	42	5	32005	Douglas County, Nevada	no	58.2	397.4	21268.0
+81	42	Wholesale trade	32	42	7	32007	Elko County, Nevada	no	73.2	877.2	59381.4
+82	42	Wholesale trade	32	42	9	32009	Esmeralda County, Nevada	yes	1.0	96.08360674413306	6641.677660059239
+83	42	Wholesale trade	32	42	11	32011	Eureka County, Nevada	yes	1.8	178.609318751424	12417.260583276371
+84	42	Wholesale trade	32	42	13	32013	Humboldt County, Nevada	no	18.2	117.2	8086.4
+85	42	Wholesale trade	32	42	15	32015	Lander County, Nevada	no	4.333333333333333	106.0	7575.666666666667
+86	42	Wholesale trade	32	42	15	32015	Lander County, Nevada	yes	4.5	225.2658920027341	14030.495898838004
+87	42	Wholesale trade	32	42	17	32017	Lincoln County, Nevada	no	3.0	0.0	150.0
+88	42	Wholesale trade	32	42	17	32017	Lincoln County, Nevada	yes	2.0	206.31428001822738	14438.957308042834
+89	42	Wholesale trade	32	42	19	32019	Lyon County, Nevada	no	48.5	650.0	27854.5
+90	42	Wholesale trade	32	42	19	32019	Lyon County, Nevada	yes	54.0	1506.3896103896104	86516.41558441559
+91	42	Wholesale trade	32	42	21	32021	Mineral County, Nevada	no	3.0	13.5	281.0
+92	42	Wholesale trade	32	42	21	32021	Mineral County, Nevada	yes	2.0	187.90350877192984	11729.377192982456
+93	42	Wholesale trade	32	42	23	32023	Nye County, Nevada	no	10.5	130.0	6021.5
+94	42	Wholesale trade	32	42	23	32023	Nye County, Nevada	yes	10.0	620.075643654591	31549.36021872864
+95	42	Wholesale trade	32	42	27	32027	Pershing County, Nevada	yes	1.6	134.8838801549328	8643.771986785145
+96	42	Wholesale trade	32	42	31	32031	Washoe County, Nevada	no	643.6	9426.2	519145.0
+97	42	Wholesale trade	32	42	33	32033	White Pine County, Nevada	no	7.2	71.2	3734.6
+98	42	Wholesale trade	32	42	510	32510	Carson City, Nevada	no	100.6	607.4	29853.0
+99	51	Information	32	51	1	32001	Churchill County, Nevada	no	5.6	34.8	1340.8
+100	51	Information	32	51	3	32003	Clark County, Nevada	no	821.2	11312.4	674273.2
+101	51	Information	32	51	5	32005	Douglas County, Nevada	no	46.6	258.8	16592.4
+102	51	Information	32	51	7	32007	Elko County, Nevada	no	17.6	139.6	5286.0
+103	51	Information	32	51	11	32011	Eureka County, Nevada	yes	1.0	27.46662163429965	2621.841075773212
+104	51	Information	32	51	13	32013	Humboldt County, Nevada	no	8.4	25.6	1715.8
+105	51	Information	32	51	15	32015	Lander County, Nevada	yes	2.0	54.9332432685993	5243.682151546424
+106	51	Information	32	51	17	32017	Lincoln County, Nevada	yes	2.8	77.16350126653532	7313.2141364105455
+107	51	Information	32	51	19	32019	Lyon County, Nevada	no	11.0	73.0	5341.5
+108	51	Information	32	51	19	32019	Lyon County, Nevada	yes	9.0	126.75386996904024	10370.879772961816
+109	51	Information	32	51	21	32021	Mineral County, Nevada	yes	1.2	32.70298527066329	3174.1501666823033
+110	51	Information	32	51	23	32023	Nye County, Nevada	no	16.2	91.4	4009.2
+111	51	Information	32	51	27	32027	Pershing County, Nevada	yes	1.25	36.76108452950558	3701.275943646996
+112	51	Information	32	51	29	32029	Storey County, Nevada	yes	1.6	49.87245895487382	4915.56385089283
+113	51	Information	32	51	31	32031	Washoe County, Nevada	no	229.6	3885.8	246381.2
+114	51	Information	32	51	33	32033	White Pine County, Nevada	no	4.2	11.2	706.4
+115	51	Information	32	51	510	32510	Carson City, Nevada	no	51.4	346.4	22837.4
+116	52	Finance and insurance	32	52	1	32001	Churchill County, Nevada	no	33.6	160.2	6082.4
+117	52	Finance and insurance	32	52	3	32003	Clark County, Nevada	no	2883.6	25748.2	1473385.0
+118	52	Finance and insurance	32	52	5	32005	Douglas County, Nevada	no	102.0	366.0	25348.6
+119	52	Finance and insurance	32	52	7	32007	Elko County, Nevada	no	53.8	282.6	12876.6
+120	52	Finance and insurance	32	52	11	32011	Eureka County, Nevada	yes	1.0	444.66666666666663	41283.58333333333
+121	52	Finance and insurance	32	52	13	32013	Humboldt County, Nevada	no	15.6	63.6	2892.6
+122	52	Finance and insurance	32	52	15	32015	Lander County, Nevada	no	4.0	5.4	356.4
+123	52	Finance and insurance	32	52	17	32017	Lincoln County, Nevada	no	5.8	12.4	1564.2
+124	52	Finance and insurance	32	52	19	32019	Lyon County, Nevada	no	42.0	158.0	5297.8
+125	52	Finance and insurance	32	52	21	32021	Mineral County, Nevada	yes	1.6	594.1333333333333	54531.36666666666
+126	52	Finance and insurance	32	52	23	32023	Nye County, Nevada	no	28.4	133.8	4100.0
+127	52	Finance and insurance	32	52	27	32027	Pershing County, Nevada	no	4.0	11.0	445.0
+128	52	Finance and insurance	32	52	29	32029	Storey County, Nevada	yes	1.0	191.5	17018.125
+129	52	Finance and insurance	32	52	31	32031	Washoe County, Nevada	no	731.0	5864.4	398773.4
+130	52	Finance and insurance	32	52	33	32033	White Pine County, Nevada	no	8.4	42.2	1581.8
+131	52	Finance and insurance	32	52	510	32510	Carson City, Nevada	no	122.0	1034.4	54923.2
+132	53	Real estate and rental and leasing	32	53	1	32001	Churchill County, Nevada	no	30.8	120.6	2852.6
+133	53	Real estate and rental and leasing	32	53	3	32003	Clark County, Nevada	no	2974.0	22060.2	914160.0
+134	53	Real estate and rental and leasing	32	53	5	32005	Douglas County, Nevada	no	123.0	440.4	21557.8
+135	53	Real estate and rental and leasing	32	53	7	32007	Elko County, Nevada	no	47.4	247.6	7814.6
+136	53	Real estate and rental and leasing	32	53	13	32013	Humboldt County, Nevada	no	9.0	17.333333333333332	622.0
+137	53	Real estate and rental and leasing	32	53	13	32013	Humboldt County, Nevada	yes	10.0	71.74603174603175	1408.5714285714284
+138	53	Real estate and rental and leasing	32	53	15	32015	Lander County, Nevada	yes	3.0	24.367936507936506	479.0864285714286
+139	53	Real estate and rental and leasing	32	53	17	32017	Lincoln County, Nevada	yes	2.0	15.194920634920631	310.25190476190477
+140	53	Real estate and rental and leasing	32	53	19	32019	Lyon County, Nevada	no	33.6	56.6	2587.8
+141	53	Real estate and rental and leasing	32	53	21	32021	Mineral County, Nevada	no	3.0	8.0	72.0
+142	53	Real estate and rental and leasing	32	53	21	32021	Mineral County, Nevada	yes	1.5	4.352380952380953	175.2904761904762
+143	53	Real estate and rental and leasing	32	53	23	32023	Nye County, Nevada	no	38.2	100.0	2141.0
+144	53	Real estate and rental and leasing	32	53	27	32027	Pershing County, Nevada	yes	1.4	8.758412698412698	219.2078571428571
+145	53	Real estate and rental and leasing	32	53	29	32029	Storey County, Nevada	yes	1.8	13.039365079365078	290.50904761904764
+146	53	Real estate and rental and leasing	32	53	31	32031	Washoe County, Nevada	no	705.4	3477.2	143592.6
+147	53	Real estate and rental and leasing	32	53	33	32033	White Pine County, Nevada	no	7.2	18.2	550.8
+148	53	Real estate and rental and leasing	32	53	510	32510	Carson City, Nevada	no	117.0	346.0	11676.6
+149	54	Professional, scientific, and technical services	32	54	1	32001	Churchill County, Nevada	no	39.2	368.4	16078.6
+150	54	Professional, scientific, and technical services	32	54	3	32003	Clark County, Nevada	no	5970.6	41442.2	2533998.0
+151	54	Professional, scientific, and technical services	32	54	5	32005	Douglas County, Nevada	no	248.6	792.8	39819.6
+152	54	Professional, scientific, and technical services	32	54	7	32007	Elko County, Nevada	no	97.8	561.8	29345.2
+153	54	Professional, scientific, and technical services	32	54	9	32009	Esmeralda County, Nevada	yes	1.0	95.25	3337.25
+154	54	Professional, scientific, and technical services	32	54	11	32011	Eureka County, Nevada	no	4.0	6.0	125.0
+155	54	Professional, scientific, and technical services	32	54	11	32011	Eureka County, Nevada	yes	3.25	256.30833333333334	16050.177777777777
+156	54	Professional, scientific, and technical services	32	54	13	32013	Humboldt County, Nevada	no	20.2	65.2	2517.2
+157	54	Professional, scientific, and technical services	32	54	15	32015	Lander County, Nevada	yes	1.6	96.16971014492754	7079.470096618356
+158	54	Professional, scientific, and technical services	32	54	17	32017	Lincoln County, Nevada	no	7.0	13.6	473.2
+159	54	Professional, scientific, and technical services	32	54	19	32019	Lyon County, Nevada	no	64.8	299.6	17852.6
+160	54	Professional, scientific, and technical services	32	54	21	32021	Mineral County, Nevada	no	4.6	18.4	703.2
+161	54	Professional, scientific, and technical services	32	54	23	32023	Nye County, Nevada	no	51.333333333333336	164.66666666666666	4858.333333333333
+162	54	Professional, scientific, and technical services	32	54	23	32023	Nye County, Nevada	yes	43.0	1823.6173913043478	162925.19420289854
+163	54	Professional, scientific, and technical services	32	54	27	32027	Pershing County, Nevada	no	3.3333333333333335	10.0	366.3333333333333
+164	54	Professional, scientific, and technical services	32	54	27	32027	Pershing County, Nevada	yes	2.0	218.08333333333331	12730.583333333332
+165	54	Professional, scientific, and technical services	32	54	29	32029	Storey County, Nevada	no	9.75	10.5	736.0
+166	54	Professional, scientific, and technical services	32	54	29	32029	Storey County, Nevada	yes	8.0	372.26666666666665	29994.13333333333
+167	54	Professional, scientific, and technical services	32	54	31	32031	Washoe County, Nevada	no	1656.8	9869.6	612539.2
+168	54	Professional, scientific, and technical services	32	54	33	32033	White Pine County, Nevada	no	9.2	14.2	751.2
+169	54	Professional, scientific, and technical services	32	54	510	32510	Carson City, Nevada	no	292.2	1152.2	67075.2
+170	55	Management of companies and enterprises	32	55	1	32001	Churchill County, Nevada	yes	1.0	25.458531746031746	1526.8787698412698
+171	55	Management of companies and enterprises	32	55	3	32003	Clark County, Nevada	no	400.4	15366.2	1409301.6
+172	55	Management of companies and enterprises	32	55	5	32005	Douglas County, Nevada	no	6.2	73.0	5092.8
+173	55	Management of companies and enterprises	32	55	7	32007	Elko County, Nevada	yes	1.0	26.266825396825396	1606.2530158730158
+174	55	Management of companies and enterprises	32	55	13	32013	Humboldt County, Nevada	yes	1.2	29.877936507936504	1825.6641269841268
+175	55	Management of companies and enterprises	32	55	19	32019	Lyon County, Nevada	yes	1.25	33.271031746031746	2079.8996031746033
+176	55	Management of companies and enterprises	32	55	23	32023	Nye County, Nevada	yes	1.0	25.458531746031746	1526.8787698412698
+177	55	Management of companies and enterprises	32	55	31	32031	Washoe County, Nevada	no	89.8	1490.0	153715.6
+178	55	Management of companies and enterprises	32	55	510	32510	Carson City, Nevada	no	8.5	175.0	11542.0
+179	55	Management of companies and enterprises	32	55	510	32510	Carson City, Nevada	yes	9.666666666666666	222.5079365079365	12822.261904761906
+180	56	Administrative and support and waste management and remediation services	32	56	1	32001	Churchill County, Nevada	no	24.2	162.2	4526.2
+181	56	Administrative and support and waste management and remediation services	32	56	3	32003	Clark County, Nevada	no	2990.0	65815.4	1996889.8
+182	56	Administrative and support and waste management and remediation services	32	56	5	32005	Douglas County, Nevada	no	109.6	1034.0	29597.4
+183	56	Administrative and support and waste management and remediation services	32	56	7	32007	Elko County, Nevada	no	41.6	683.0	17780.0
+184	56	Administrative and support and waste management and remediation services	32	56	11	32011	Eureka County, Nevada	yes	1.8	5512.775939849625	190521.08545112782
+185	56	Administrative and support and waste management and remediation services	32	56	13	32013	Humboldt County, Nevada	no	15.25	302.75	9198.25
+186	56	Administrative and support and waste management and remediation services	32	56	13	32013	Humboldt County, Nevada	yes	13.0	13139.578947368422	417969.15789473685
+187	56	Administrative and support and waste management and remediation services	32	56	15	32015	Lander County, Nevada	no	3.4	6.4	187.2
+188	56	Administrative and support and waste management and remediation services	32	56	17	32017	Lincoln County, Nevada	no	4.0	8.0	320.0
+189	56	Administrative and support and waste management and remediation services	32	56	17	32017	Lincoln County, Nevada	yes	2.0	4670.404135338345	142166.98148496242
+190	56	Administrative and support and waste management and remediation services	32	56	19	32019	Lyon County, Nevada	no	40.2	185.2	16372.4
+191	56	Administrative and support and waste management and remediation services	32	56	21	32021	Mineral County, Nevada	yes	1.0	3193.211654135338	111458.89259398496
+192	56	Administrative and support and waste management and remediation services	32	56	23	32023	Nye County, Nevada	no	30.8	443.8	22055.6
+193	56	Administrative and support and waste management and remediation services	32	56	27	32027	Pershing County, Nevada	yes	1.0	1529.2694235588972	40235.52098997494
+194	56	Administrative and support and waste management and remediation services	32	56	29	32029	Storey County, Nevada	yes	1.0	3193.211654135338	111458.89259398496
+195	56	Administrative and support and waste management and remediation services	32	56	31	32031	Washoe County, Nevada	no	790.6	15499.2	534553.0
+196	56	Administrative and support and waste management and remediation services	32	56	33	32033	White Pine County, Nevada	no	6.2	30.6	1429.4
+197	56	Administrative and support and waste management and remediation services	32	56	510	32510	Carson City, Nevada	no	133.8	1418.6	56782.2
+198	61	Educational services	32	61	1	32001	Churchill County, Nevada	yes	2.4	157.6730532212885	5782.926834733893
+199	61	Educational services	32	61	3	32003	Clark County, Nevada	no	504.8	7912.2	278475.2
+200	61	Educational services	32	61	5	32005	Douglas County, Nevada	no	19.0	112.6	1973.2
+201	61	Educational services	32	61	7	32007	Elko County, Nevada	no	4.333333333333333	23.0	188.0
+202	61	Educational services	32	61	7	32007	Elko County, Nevada	yes	5.0	271.8137254901961	9449.578431372549
+203	61	Educational services	32	61	13	32013	Humboldt County, Nevada	yes	2.0	128.92638655462184	4763.100168067227
+204	61	Educational services	32	61	17	32017	Lincoln County, Nevada	yes	1.0	71.19682539682539	2709.306349206349
+205	61	Educational services	32	61	19	32019	Lyon County, Nevada	no	4.0	6.0	280.0
+206	61	Educational services	32	61	19	32019	Lyon County, Nevada	yes	2.25	145.0893557422969	5420.533053221289
+207	61	Educational services	32	61	21	32021	Mineral County, Nevada	yes	1.0	64.46319327731092	2381.5500840336135
+208	61	Educational services	32	61	23	32023	Nye County, Nevada	yes	3.4	225.89591036414564	8408.48112044818
+209	61	Educational services	32	61	27	32027	Pershing County, Nevada	yes	1.2	74.67495798319327	2743.3030252100843
+210	61	Educational services	32	61	31	32031	Washoe County, Nevada	no	141.8	1841.6	58698.8
+211	61	Educational services	32	61	33	32033	White Pine County, Nevada	yes	1.0	67.8142857142857	2524.7464285714286
+212	61	Educational services	32	61	510	32510	Carson City, Nevada	no	11.2	44.0	1586.0
+213	62	Health care and social assistance	32	62	1	32001	Churchill County, Nevada	no	40.8	609.4	29623.6
+214	62	Health care and social assistance	32	62	3	32003	Clark County, Nevada	no	4778.6	77733.8	3769818.2
+215	62	Health care and social assistance	32	62	5	32005	Douglas County, Nevada	no	123.0	1340.4	63325.8
+216	62	Health care and social assistance	32	62	7	32007	Elko County, Nevada	no	125.0	1520.8	62025.4
+217	62	Health care and social assistance	32	62	11	32011	Eureka County, Nevada	yes	2.2	84.12627987954076	3508.5071568350663
+218	62	Health care and social assistance	32	62	13	32013	Humboldt County, Nevada	no	36.2	563.4	20876.8
+219	62	Health care and social assistance	32	62	15	32015	Lander County, Nevada	yes	7.4	303.53338038772824	9499.80874242978
+220	62	Health care and social assistance	32	62	17	32017	Lincoln County, Nevada	no	6.0	117.6	3673.2
+221	62	Health care and social assistance	32	62	19	32019	Lyon County, Nevada	no	41.4	414.8	17519.8
+222	62	Health care and social assistance	32	62	21	32021	Mineral County, Nevada	no	5.0	115.0	5233.0
+223	62	Health care and social assistance	32	62	21	32021	Mineral County, Nevada	yes	5.333333333333333	215.3966371792459	4510.97390049564
+224	62	Health care and social assistance	32	62	23	32023	Nye County, Nevada	no	62.4	744.6	27567.0
+225	62	Health care and social assistance	32	62	27	32027	Pershing County, Nevada	yes	6.0	247.1788913984566	8565.270302864228
+226	62	Health care and social assistance	32	62	29	32029	Storey County, Nevada	yes	1.0	40.523466026726894	1388.4294575735432
+227	62	Health care and social assistance	32	62	31	32031	Washoe County, Nevada	no	1203.6	22739.0	1180033.0
+228	62	Health care and social assistance	32	62	33	32033	White Pine County, Nevada	no	14.6	283.8	16262.2
+229	62	Health care and social assistance	32	62	510	32510	Carson City, Nevada	no	219.0	3676.2	198112.2
+230	71	Arts, entertainment, and recreation	32	71	1	32001	Churchill County, Nevada	no	14.6	299.6	5731.0
+231	71	Arts, entertainment, and recreation	32	71	3	32003	Clark County, Nevada	no	981.2	20084.4	741518.0
+232	71	Arts, entertainment, and recreation	32	71	5	32005	Douglas County, Nevada	no	38.8	308.0	10046.4
+233	71	Arts, entertainment, and recreation	32	71	7	32007	Elko County, Nevada	no	28.8	444.2	9920.6
+234	71	Arts, entertainment, and recreation	32	71	13	32013	Humboldt County, Nevada	no	9.2	29.8	725.0
+235	71	Arts, entertainment, and recreation	32	71	15	32015	Lander County, Nevada	yes	2.4	99.1	2446.2
+236	71	Arts, entertainment, and recreation	32	71	17	32017	Lincoln County, Nevada	yes	1.0	48.666666666666664	1248.388888888889
+237	71	Arts, entertainment, and recreation	32	71	19	32019	Lyon County, Nevada	no	33.2	789.8	16657.8
+238	71	Arts, entertainment, and recreation	32	71	21	32021	Mineral County, Nevada	yes	1.0	37.83333333333333	882.4166666666665
+239	71	Arts, entertainment, and recreation	32	71	23	32023	Nye County, Nevada	no	17.6	526.0	11283.4
+240	71	Arts, entertainment, and recreation	32	71	27	32027	Pershing County, Nevada	yes	1.3333333333333333	72.05555555555554	1918.3888888888887
+241	71	Arts, entertainment, and recreation	32	71	29	32029	Storey County, Nevada	no	8.2	42.8	674.4
+242	71	Arts, entertainment, and recreation	32	71	31	32031	Washoe County, Nevada	no	219.4	4251.4	101521.8
+243	71	Arts, entertainment, and recreation	32	71	33	32033	White Pine County, Nevada	no	4.0	17.5	477.0
+244	71	Arts, entertainment, and recreation	32	71	33	32033	White Pine County, Nevada	yes	3.6666666666666665	65.88888888888889	1132.9444444444443
+245	71	Arts, entertainment, and recreation	32	71	510	32510	Carson City, Nevada	no	49.6	1132.0	37037.8
+246	72	Accommodation and food services	32	72	1	32001	Churchill County, Nevada	no	49.8	660.4	10170.8
+247	72	Accommodation and food services	32	72	3	32003	Clark County, Nevada	no	4347.0	261203.4	8043217.8
+248	72	Accommodation and food services	32	72	5	32005	Douglas County, Nevada	no	135.0	5407.6	130373.2
+249	72	Accommodation and food services	32	72	7	32007	Elko County, Nevada	no	146.2	5242.4	120860.2
+250	72	Accommodation and food services	32	72	9	32009	Esmeralda County, Nevada	yes	1.4	13.88969696969697	192.3922727272727
+251	72	Accommodation and food services	32	72	11	32011	Eureka County, Nevada	no	5.666666666666667	33.666666666666664	499.6666666666667
+252	72	Accommodation and food services	32	72	11	32011	Eureka County, Nevada	yes	4.5	60.53333333333333	766.30625
+253	72	Accommodation and food services	32	72	13	32013	Humboldt County, Nevada	no	63.2	1133.6	17864.0
+254	72	Accommodation and food services	32	72	15	32015	Lander County, Nevada	no	14.2	119.4	1635.4
+255	72	Accommodation and food services	32	72	17	32017	Lincoln County, Nevada	no	15.8	95.4	1448.0
+256	72	Accommodation and food services	32	72	19	32019	Lyon County, Nevada	no	68.8	705.4	9791.6
+257	72	Accommodation and food services	32	72	21	32021	Mineral County, Nevada	no	8.0	147.5	2345.5
+258	72	Accommodation and food services	32	72	21	32021	Mineral County, Nevada	yes	9.333333333333334	123.16161616161617	1639.4753787878788
+259	72	Accommodation and food services	32	72	23	32023	Nye County, Nevada	no	81.6	1505.2	24591.6
+260	72	Accommodation and food services	32	72	27	32027	Pershing County, Nevada	no	14.0	126.0	1871.6
+261	72	Accommodation and food services	32	72	29	32029	Storey County, Nevada	no	14.8	152.4	3947.8
+262	72	Accommodation and food services	32	72	31	32031	Washoe County, Nevada	no	1006.6	29286.6	621916.0
+263	72	Accommodation and food services	32	72	33	32033	White Pine County, Nevada	no	34.0	495.0	9598.4
+264	72	Accommodation and food services	32	72	510	32510	Carson City, Nevada	no	166.2	2791.6	47213.6
+265	81	Other services (except public administration)	32	81	1	32001	Churchill County, Nevada	no	53.6	238.2	5391.8
+266	81	Other services (except public administration)	32	81	3	32003	Clark County, Nevada	no	2842.6	22769.6	668383.2
+267	81	Other services (except public administration)	32	81	5	32005	Douglas County, Nevada	no	101.2	694.6	20199.2
+268	81	Other services (except public administration)	32	81	7	32007	Elko County, Nevada	no	88.0	653.2	32356.6
+269	81	Other services (except public administration)	32	81	9	32009	Esmeralda County, Nevada	yes	1.2	23.98787878787879	1251.7820346320345
+270	81	Other services (except public administration)	32	81	11	32011	Eureka County, Nevada	yes	2.0	19.6969696969697	467.58441558441564
+271	81	Other services (except public administration)	32	81	13	32013	Humboldt County, Nevada	no	41.4	164.2	5278.6
+272	81	Other services (except public administration)	32	81	15	32015	Lander County, Nevada	no	9.25	15.0	814.75
+273	81	Other services (except public administration)	32	81	15	32015	Lander County, Nevada	yes	9.0	69.0	1615.7142857142856
+274	81	Other services (except public administration)	32	81	17	32017	Lincoln County, Nevada	no	3.0	4.0	203.0
+275	81	Other services (except public administration)	32	81	17	32017	Lincoln County, Nevada	yes	3.75	41.121212121212125	1403.3590367965369
+276	81	Other services (except public administration)	32	81	19	32019	Lyon County, Nevada	no	60.2	259.2	6707.8
+277	81	Other services (except public administration)	32	81	21	32021	Mineral County, Nevada	no	6.0	19.6	466.0
+278	81	Other services (except public administration)	32	81	23	32023	Nye County, Nevada	no	64.4	276.8	5808.2
+279	81	Other services (except public administration)	32	81	27	32027	Pershing County, Nevada	no	6.0	7.2	477.8
+280	81	Other services (except public administration)	32	81	29	32029	Storey County, Nevada	no	4.5	43.5	1079.5
+281	81	Other services (except public administration)	32	81	29	32029	Storey County, Nevada	yes	4.0	42.82828282828283	1030.3953823953825
+282	81	Other services (except public administration)	32	81	31	32031	Washoe County, Nevada	no	884.6	6214.4	197458.8
+283	81	Other services (except public administration)	32	81	33	32033	White Pine County, Nevada	no	16.6	60.8	1897.2
+284	81	Other services (except public administration)	32	81	510	32510	Carson City, Nevada	no	144.8	794.6	23586.4
+285	99	Industries not classified	32	99	1	32001	Churchill County, Nevada	yes	1.3333333333333333	-2.888888888888889	30.477777777777778
+286	99	Industries not classified	32	99	3	32003	Clark County, Nevada	no	60.4	60.8	1876.8
+287	99	Industries not classified	32	99	5	32005	Douglas County, Nevada	no	3.5	5.5	232.5
+288	99	Industries not classified	32	99	5	32005	Douglas County, Nevada	yes	2.0	5.333333333333333	41.83333333333333
+289	99	Industries not classified	32	99	7	32007	Elko County, Nevada	no	3.5	1.5	71.0
+290	99	Industries not classified	32	99	7	32007	Elko County, Nevada	yes	2.0	-9.6	44.3
+291	99	Industries not classified	32	99	13	32013	Humboldt County, Nevada	yes	1.0	4.0	20.666666666666664
+292	99	Industries not classified	32	99	15	32015	Lander County, Nevada	yes	1.0	-7.0	24.8
+293	99	Industries not classified	32	99	17	32017	Lincoln County, Nevada	yes	1.0	-1.5	22.733333333333334
+294	99	Industries not classified	32	99	19	32019	Lyon County, Nevada	no	5.666666666666667	1.0	425.3333333333333
+295	99	Industries not classified	32	99	19	32019	Lyon County, Nevada	yes	2.0	-4.666666666666667	203.66666666666666
+296	99	Industries not classified	32	99	23	32023	Nye County, Nevada	yes	1.0	0.033333333333333326	20.208333333333332
+297	99	Industries not classified	32	99	31	32031	Washoe County, Nevada	no	21.6	22.8	1211.0
+298	99	Industries not classified	32	99	510	32510	Carson City, Nevada	no	4.0	3.5	55.0
+299	99	Industries not classified	32	99	510	32510	Carson City, Nevada	yes	2.6666666666666665	1.133333333333333	51.4

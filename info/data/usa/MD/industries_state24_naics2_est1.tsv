@@ -1,406 +1,466 @@
-	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
-0	24001	24	1	Allegany County, Maryland	11	Agriculture, forestry, fishing and hunting	11	2.8	0.0	14.2
-1	24001	24	1	Allegany County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	5.4	38.4	1713.2
-2	24001	24	1	Allegany County, Maryland	22	Utilities	22	6.0	152.4	12783.2
-3	24001	24	1	Allegany County, Maryland	23	Construction	23	107.8	891.6	40405.6
-4	24001	24	1	Allegany County, Maryland	42	Wholesale trade	42	55.6	629.6	27804.8
-5	24001	24	1	Allegany County, Maryland	51	Information	51	34.8	613.6	14834.6
-6	24001	24	1	Allegany County, Maryland	52	Finance and insurance	52	93.6	844.6	42287.4
-7	24001	24	1	Allegany County, Maryland	53	Real estate and rental and leasing	53	53.6	186.2	5855.8
-8	24001	24	1	Allegany County, Maryland	54	Professional, scientific, and technical services	54	98.8	1095.6	33150.6
-10	24001	24	1	Allegany County, Maryland	56	Administrative and support and waste management and remediation services	56	51.8	1282.0	53246.2
-11	24001	24	1	Allegany County, Maryland	61	Educational services	61	15.2	210.0	4682.0
-12	24001	24	1	Allegany County, Maryland	62	Health care and social assistance	62	241.8	5987.2	235359.0
-13	24001	24	1	Allegany County, Maryland	71	Arts, entertainment, and recreation	71	21.2	263.4	3279.4
-14	24001	24	1	Allegany County, Maryland	72	Accommodation and food services	72	172.8	3273.4	48482.6
-15	24001	24	1	Allegany County, Maryland	81	Other services (except public administration)	81	232.6	1220.2	24135.2
-17	24003	24	3	Anne Arundel County, Maryland	11	Agriculture, forestry, fishing and hunting	11	10.4	20.4	687.6
-18	24003	24	3	Anne Arundel County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	4.6	19.8	1156.6
-19	24003	24	3	Anne Arundel County, Maryland	22	Utilities	22	11.2	220.6	27224.8
-20	24003	24	3	Anne Arundel County, Maryland	23	Construction	23	1573.8	16088.6	891419.2
-21	24003	24	3	Anne Arundel County, Maryland	42	Wholesale trade	42	629.4	9919.8	649195.4
-22	24003	24	3	Anne Arundel County, Maryland	51	Information	51	238.2	4972.6	458784.2
-23	24003	24	3	Anne Arundel County, Maryland	52	Finance and insurance	52	754.4	5806.8	424765.4
-24	24003	24	3	Anne Arundel County, Maryland	53	Real estate and rental and leasing	53	595.6	4148.6	218287.8
-25	24003	24	3	Anne Arundel County, Maryland	54	Professional, scientific, and technical services	54	2173.4	29617.8	3028839.4
-26	24003	24	3	Anne Arundel County, Maryland	55	Management of companies and enterprises	55	93.8	3596.4	306861.2
-27	24003	24	3	Anne Arundel County, Maryland	56	Administrative and support and waste management and remediation services	56	837.2	18440.6	791103.4
-28	24003	24	3	Anne Arundel County, Maryland	61	Educational services	61	177.4	3524.4	127365.2
-29	24003	24	3	Anne Arundel County, Maryland	62	Health care and social assistance	62	1317.0	27053.6	1328075.2
-30	24003	24	3	Anne Arundel County, Maryland	71	Arts, entertainment, and recreation	71	247.2	5409.4	141731.4
-31	24003	24	3	Anne Arundel County, Maryland	72	Accommodation and food services	72	1185.2	28002.2	521087.6
-32	24003	24	3	Anne Arundel County, Maryland	81	Other services (except public administration)	81	1365.0	11224.0	403129.8
-33	24003	24	3	Anne Arundel County, Maryland	99	Industries not classified	99	21.0	15.2	526.0
-34	24005	24	5	Baltimore County, Maryland	11	Agriculture, forestry, fishing and hunting	11	12.4	10.6	465.8
-35	24005	24	5	Baltimore County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	8.4	52.2	3546.0
-36	24005	24	5	Baltimore County, Maryland	22	Utilities	22	16.2	283.6	31102.4
-37	24005	24	5	Baltimore County, Maryland	23	Construction	23	1852.8	21166.2	1268180.4
-38	24005	24	5	Baltimore County, Maryland	42	Wholesale trade	42	874.2	12772.6	831890.4
-39	24005	24	5	Baltimore County, Maryland	51	Information	51	320.2	7182.4	471511.8
-40	24005	24	5	Baltimore County, Maryland	52	Finance and insurance	52	1402.6	19957.0	1602771.0
-41	24005	24	5	Baltimore County, Maryland	53	Real estate and rental and leasing	53	863.8	7277.4	409786.8
-42	24005	24	5	Baltimore County, Maryland	54	Professional, scientific, and technical services	54	2734.6	26243.8	1810658.2
-43	24005	24	5	Baltimore County, Maryland	55	Management of companies and enterprises	55	161.4	8123.6	803249.6
-44	24005	24	5	Baltimore County, Maryland	56	Administrative and support and waste management and remediation services	56	1287.6	26225.4	913304.4
-45	24005	24	5	Baltimore County, Maryland	61	Educational services	61	263.2	8635.0	266565.2
-46	24005	24	5	Baltimore County, Maryland	62	Health care and social assistance	62	2662.4	57959.4	2522136.4
-47	24005	24	5	Baltimore County, Maryland	71	Arts, entertainment, and recreation	71	286.2	4574.2	285246.2
-48	24005	24	5	Baltimore County, Maryland	72	Accommodation and food services	72	1611.8	27874.8	466001.6
-49	24005	24	5	Baltimore County, Maryland	81	Other services (except public administration)	81	1837.6	15043.6	451523.4
-50	24005	24	5	Baltimore County, Maryland	99	Industries not classified	99	27.4	17.2	691.4
-54	24009	24	9	Calvert County, Maryland	23	Construction	23	315.8	1950.0	102693.4
-55	24009	24	9	Calvert County, Maryland	42	Wholesale trade	42	40.6	279.8	15963.4
-56	24009	24	9	Calvert County, Maryland	51	Information	51	19.4	110.0	20443.0
-57	24009	24	9	Calvert County, Maryland	52	Finance and insurance	52	73.2	343.2	20549.2
-58	24009	24	9	Calvert County, Maryland	53	Real estate and rental and leasing	53	81.8	297.8	17469.4
-59	24009	24	9	Calvert County, Maryland	54	Professional, scientific, and technical services	54	219.6	1459.4	81403.6
-60	24009	24	9	Calvert County, Maryland	55	Management of companies and enterprises	55	6.4	27.6	1583.2
-61	24009	24	9	Calvert County, Maryland	56	Administrative and support and waste management and remediation services	56	93.8	599.8	22134.4
-62	24009	24	9	Calvert County, Maryland	61	Educational services	61	18.4	174.8	5401.6
-63	24009	24	9	Calvert County, Maryland	62	Health care and social assistance	62	185.0	3431.0	152988.6
-64	24009	24	9	Calvert County, Maryland	71	Arts, entertainment, and recreation	71	29.6	338.8	9636.0
-65	24009	24	9	Calvert County, Maryland	72	Accommodation and food services	72	146.2	2776.2	43252.4
-66	24009	24	9	Calvert County, Maryland	81	Other services (except public administration)	81	166.6	1063.8	29623.0
-67	24009	24	9	Calvert County, Maryland	99	Industries not classified	99	2.8	1.0	53.8
-68	24011	24	11	Caroline County, Maryland	11	Agriculture, forestry, fishing and hunting	11	6.0	8.8	274.4
-71	24011	24	11	Caroline County, Maryland	23	Construction	23	113.8	508.8	20398.4
-72	24011	24	11	Caroline County, Maryland	42	Wholesale trade	42	26.6	224.0	8584.0
-74	24011	24	11	Caroline County, Maryland	52	Finance and insurance	52	28.2	158.8	7178.4
-75	24011	24	11	Caroline County, Maryland	53	Real estate and rental and leasing	53	16.2	51.0	1715.6
-76	24011	24	11	Caroline County, Maryland	54	Professional, scientific, and technical services	54	38.0	246.0	11870.4
-78	24011	24	11	Caroline County, Maryland	56	Administrative and support and waste management and remediation services	56	38.2	226.6	10016.0
-80	24011	24	11	Caroline County, Maryland	62	Health care and social assistance	62	47.0	801.4	26159.4
-81	24011	24	11	Caroline County, Maryland	71	Arts, entertainment, and recreation	71	6.8	15.4	262.4
-82	24011	24	11	Caroline County, Maryland	72	Accommodation and food services	72	35.6	442.8	5138.8
-83	24011	24	11	Caroline County, Maryland	81	Other services (except public administration)	81	74.4	301.8	9046.2
-85	24013	24	13	Carroll County, Maryland	11	Agriculture, forestry, fishing and hunting	11	7.0	9.6	489.6
-86	24013	24	13	Carroll County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	3.4	13.6	1019.4
-87	24013	24	13	Carroll County, Maryland	22	Utilities	22	1.4	0.0	502.2
-88	24013	24	13	Carroll County, Maryland	23	Construction	23	767.4	4834.2	237875.6
-89	24013	24	13	Carroll County, Maryland	42	Wholesale trade	42	166.8	1200.8	62036.4
-90	24013	24	13	Carroll County, Maryland	51	Information	51	63.6	742.4	41021.4
-91	24013	24	13	Carroll County, Maryland	52	Finance and insurance	52	198.0	1098.2	65284.4
-92	24013	24	13	Carroll County, Maryland	53	Real estate and rental and leasing	53	136.0	412.2	17464.6
-93	24013	24	13	Carroll County, Maryland	54	Professional, scientific, and technical services	54	499.6	2556.6	168636.2
-94	24013	24	13	Carroll County, Maryland	55	Management of companies and enterprises	55	12.8	333.2	22860.2
-95	24013	24	13	Carroll County, Maryland	56	Administrative and support and waste management and remediation services	56	304.6	2594.8	95967.4
-96	24013	24	13	Carroll County, Maryland	61	Educational services	61	55.4	1708.8	38663.2
-97	24013	24	13	Carroll County, Maryland	62	Health care and social assistance	62	452.4	9968.6	413632.0
-98	24013	24	13	Carroll County, Maryland	71	Arts, entertainment, and recreation	71	51.4	742.8	9349.0
-99	24013	24	13	Carroll County, Maryland	72	Accommodation and food services	72	275.6	5983.8	83679.6
-100	24013	24	13	Carroll County, Maryland	81	Other services (except public administration)	81	459.8	2848.6	78258.2
-101	24013	24	13	Carroll County, Maryland	99	Industries not classified	99	3.8	3.4	54.8
-102	24015	24	15	Cecil County, Maryland	11	Agriculture, forestry, fishing and hunting	11	12.2	88.6	3026.6
-103	24015	24	15	Cecil County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	5.0	41.2	4498.2
-104	24015	24	15	Cecil County, Maryland	22	Utilities	22	5.4	85.2	9435.8
-105	24015	24	15	Cecil County, Maryland	23	Construction	23	218.4	872.6	35605.6
-106	24015	24	15	Cecil County, Maryland	42	Wholesale trade	42	67.8	1003.8	42286.8
-107	24015	24	15	Cecil County, Maryland	51	Information	51	14.0	88.8	9196.0
-108	24015	24	15	Cecil County, Maryland	52	Finance and insurance	52	78.8	417.0	19395.6
-109	24015	24	15	Cecil County, Maryland	53	Real estate and rental and leasing	53	82.0	219.2	6664.2
-110	24015	24	15	Cecil County, Maryland	54	Professional, scientific, and technical services	54	142.4	482.6	18016.6
-112	24015	24	15	Cecil County, Maryland	56	Administrative and support and waste management and remediation services	56	99.2	1035.6	32837.2
-113	24015	24	15	Cecil County, Maryland	61	Educational services	61	24.0	542.0	15251.0
-114	24015	24	15	Cecil County, Maryland	62	Health care and social assistance	62	193.2	4700.4	264635.2
-115	24015	24	15	Cecil County, Maryland	71	Arts, entertainment, and recreation	71	50.8	866.2	23350.0
-116	24015	24	15	Cecil County, Maryland	72	Accommodation and food services	72	174.6	2928.2	49697.0
-117	24015	24	15	Cecil County, Maryland	81	Other services (except public administration)	81	214.4	1202.0	30030.0
-118	24015	24	15	Cecil County, Maryland	99	Industries not classified	99	4.0	2.0	84.0
-119	24017	24	17	Charles County, Maryland	11	Agriculture, forestry, fishing and hunting	11	5.6	23.2	601.0
-122	24017	24	17	Charles County, Maryland	23	Construction	23	348.6	3667.4	193908.4
-123	24017	24	17	Charles County, Maryland	42	Wholesale trade	42	68.2	657.0	32667.4
-124	24017	24	17	Charles County, Maryland	51	Information	51	38.6	275.4	24734.2
-125	24017	24	17	Charles County, Maryland	52	Finance and insurance	52	132.6	791.8	47920.8
-126	24017	24	17	Charles County, Maryland	53	Real estate and rental and leasing	53	98.4	388.0	14671.4
-127	24017	24	17	Charles County, Maryland	54	Professional, scientific, and technical services	54	284.0	2189.4	133064.6
-128	24017	24	17	Charles County, Maryland	55	Management of companies and enterprises	55	12.0	110.4	9674.6
-129	24017	24	17	Charles County, Maryland	56	Administrative and support and waste management and remediation services	56	121.6	1189.6	45289.4
-130	24017	24	17	Charles County, Maryland	61	Educational services	61	34.6	546.0	13827.0
-131	24017	24	17	Charles County, Maryland	62	Health care and social assistance	62	323.2	4690.4	202681.0
-132	24017	24	17	Charles County, Maryland	71	Arts, entertainment, and recreation	71	26.0	312.2	4463.4
-133	24017	24	17	Charles County, Maryland	72	Accommodation and food services	72	250.4	5091.2	77775.6
-134	24017	24	17	Charles County, Maryland	81	Other services (except public administration)	81	279.6	1860.2	51030.0
-139	24019	24	19	Dorchester County, Maryland	23	Construction	23	70.0	520.0	23613.0
-140	24019	24	19	Dorchester County, Maryland	42	Wholesale trade	42	32.4	316.0	16746.8
-141	24019	24	19	Dorchester County, Maryland	51	Information	51	12.2	21.2	852.4
-142	24019	24	19	Dorchester County, Maryland	52	Finance and insurance	52	33.6	220.8	11564.8
-143	24019	24	19	Dorchester County, Maryland	53	Real estate and rental and leasing	53	37.8	100.0	2949.4
-144	24019	24	19	Dorchester County, Maryland	54	Professional, scientific, and technical services	54	50.0	180.6	7475.6
-146	24019	24	19	Dorchester County, Maryland	56	Administrative and support and waste management and remediation services	56	29.0	115.8	3414.2
-147	24019	24	19	Dorchester County, Maryland	61	Educational services	61	2.8	6.2	93.2
-148	24019	24	19	Dorchester County, Maryland	62	Health care and social assistance	62	82.8	1808.6	66719.2
-149	24019	24	19	Dorchester County, Maryland	71	Arts, entertainment, and recreation	71	13.0	44.6	1163.8
-150	24019	24	19	Dorchester County, Maryland	72	Accommodation and food services	72	58.2	1220.2	23544.8
-151	24019	24	19	Dorchester County, Maryland	81	Other services (except public administration)	81	83.6	446.6	6725.8
-152	24019	24	19	Dorchester County, Maryland	99	Industries not classified	99	1.6666666666666667	2.0	10.666666666666666
-153	24021	24	21	Frederick County, Maryland	11	Agriculture, forestry, fishing and hunting	11	14.8	21.2	780.2
-154	24021	24	21	Frederick County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	3.0	49.8	2644.8
-155	24021	24	21	Frederick County, Maryland	22	Utilities	22	6.8	65.2	5890.0
-156	24021	24	21	Frederick County, Maryland	23	Construction	23	892.8	8161.0	447990.6
-157	24021	24	21	Frederick County, Maryland	42	Wholesale trade	42	247.8	2590.0	154904.4
-158	24021	24	21	Frederick County, Maryland	51	Information	51	87.8	1006.2	54905.8
-159	24021	24	21	Frederick County, Maryland	52	Finance and insurance	52	318.8	5946.2	416010.2
-160	24021	24	21	Frederick County, Maryland	53	Real estate and rental and leasing	53	246.4	995.2	49893.0
-161	24021	24	21	Frederick County, Maryland	54	Professional, scientific, and technical services	54	854.8	8165.0	585265.8
-162	24021	24	21	Frederick County, Maryland	55	Management of companies and enterprises	55	44.8	2832.0	215667.2
-163	24021	24	21	Frederick County, Maryland	56	Administrative and support and waste management and remediation services	56	390.0	6282.2	219251.4
-164	24021	24	21	Frederick County, Maryland	61	Educational services	61	84.2	3073.6	69404.0
-165	24021	24	21	Frederick County, Maryland	62	Health care and social assistance	62	646.2	11569.0	542522.4
-166	24021	24	21	Frederick County, Maryland	71	Arts, entertainment, and recreation	71	83.8	1662.2	29665.0
-167	24021	24	21	Frederick County, Maryland	72	Accommodation and food services	72	452.8	8975.6	150113.0
-168	24021	24	21	Frederick County, Maryland	81	Other services (except public administration)	81	602.2	4100.6	133180.2
-169	24021	24	21	Frederick County, Maryland	99	Industries not classified	99	6.8	3.2	124.0
-170	24023	24	23	Garrett County, Maryland	11	Agriculture, forestry, fishing and hunting	11	18.0	44.4	1498.2
-171	24023	24	23	Garrett County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	8.8	304.8	20256.2
-172	24023	24	23	Garrett County, Maryland	22	Utilities	22	3.2	6.4	560.4
-173	24023	24	23	Garrett County, Maryland	23	Construction	23	152.8	682.4	27401.0
-174	24023	24	23	Garrett County, Maryland	42	Wholesale trade	42	27.6	194.4	5728.8
-175	24023	24	23	Garrett County, Maryland	51	Information	51	16.0	309.0	10587.6
-176	24023	24	23	Garrett County, Maryland	52	Finance and insurance	52	35.0	356.8	14869.0
-177	24023	24	23	Garrett County, Maryland	53	Real estate and rental and leasing	53	37.0	304.2	9043.4
-178	24023	24	23	Garrett County, Maryland	54	Professional, scientific, and technical services	54	53.0	236.4	15805.8
-179	24023	24	23	Garrett County, Maryland	55	Management of companies and enterprises	55	4.2	85.4	5273.8
-180	24023	24	23	Garrett County, Maryland	56	Administrative and support and waste management and remediation services	56	42.6	144.2	3944.6
-181	24023	24	23	Garrett County, Maryland	61	Educational services	61	6.8	22.8	552.2
-182	24023	24	23	Garrett County, Maryland	62	Health care and social assistance	62	71.4	1719.0	52608.2
-183	24023	24	23	Garrett County, Maryland	71	Arts, entertainment, and recreation	71	17.0	28.6	2360.2
-184	24023	24	23	Garrett County, Maryland	72	Accommodation and food services	72	80.0	1207.4	17477.4
-185	24023	24	23	Garrett County, Maryland	81	Other services (except public administration)	81	97.2	404.2	13168.6
-186	24025	24	25	Harford County, Maryland	11	Agriculture, forestry, fishing and hunting	11	6.8	13.6	518.0
-187	24025	24	25	Harford County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	5.8	37.8	2768.4
-189	24025	24	25	Harford County, Maryland	23	Construction	23	762.6	4483.2	216613.0
-190	24025	24	25	Harford County, Maryland	42	Wholesale trade	42	215.8	2457.4	141505.6
-191	24025	24	25	Harford County, Maryland	51	Information	51	66.4	590.6	34615.6
-192	24025	24	25	Harford County, Maryland	52	Finance and insurance	52	284.0	1896.2	112272.2
-193	24025	24	25	Harford County, Maryland	53	Real estate and rental and leasing	53	226.2	815.6	31030.6
-194	24025	24	25	Harford County, Maryland	54	Professional, scientific, and technical services	54	737.2	8175.2	610898.6
-195	24025	24	25	Harford County, Maryland	55	Management of companies and enterprises	55	32.8	306.2	33434.6
-196	24025	24	25	Harford County, Maryland	56	Administrative and support and waste management and remediation services	56	347.8	3098.2	105912.2
-197	24025	24	25	Harford County, Maryland	61	Educational services	61	66.4	881.4	24123.8
-198	24025	24	25	Harford County, Maryland	62	Health care and social assistance	62	602.2	10910.0	482340.2
-199	24025	24	25	Harford County, Maryland	71	Arts, entertainment, and recreation	71	80.6	1279.8	20175.4
-200	24025	24	25	Harford County, Maryland	72	Accommodation and food services	72	396.6	8257.4	123046.8
-201	24025	24	25	Harford County, Maryland	81	Other services (except public administration)	81	550.6	3641.4	111988.6
-202	24025	24	25	Harford County, Maryland	99	Industries not classified	99	6.4	3.4	204.2
-203	24027	24	27	Howard County, Maryland	11	Agriculture, forestry, fishing and hunting	11	9.8	202.2	10957.4
-206	24027	24	27	Howard County, Maryland	23	Construction	23	841.6	10671.0	647657.8
-207	24027	24	27	Howard County, Maryland	42	Wholesale trade	42	604.8	14099.0	1091207.2
-208	24027	24	27	Howard County, Maryland	51	Information	51	169.2	4724.4	432517.2
-209	24027	24	27	Howard County, Maryland	52	Finance and insurance	52	522.0	6971.0	589167.2
-210	24027	24	27	Howard County, Maryland	53	Real estate and rental and leasing	53	397.4	3180.8	220246.0
-211	24027	24	27	Howard County, Maryland	54	Professional, scientific, and technical services	54	2019.4	39763.8	3502852.8
-212	24027	24	27	Howard County, Maryland	55	Management of companies and enterprises	55	107.6	7987.2	641897.0
-213	24027	24	27	Howard County, Maryland	56	Administrative and support and waste management and remediation services	56	545.8	13581.4	585648.8
-214	24027	24	27	Howard County, Maryland	61	Educational services	61	188.2	2813.8	97270.4
-215	24027	24	27	Howard County, Maryland	62	Health care and social assistance	62	980.2	15073.4	695826.6
-216	24027	24	27	Howard County, Maryland	71	Arts, entertainment, and recreation	71	143.8	2971.4	77366.2
-217	24027	24	27	Howard County, Maryland	72	Accommodation and food services	72	565.8	11576.8	206921.8
-218	24027	24	27	Howard County, Maryland	81	Other services (except public administration)	81	694.2	7069.2	285930.4
-219	24027	24	27	Howard County, Maryland	99	Industries not classified	99	11.6	11.0	537.8
-220	24029	24	29	Kent County, Maryland	11	Agriculture, forestry, fishing and hunting	11	4.2	11.0	283.6
-223	24029	24	29	Kent County, Maryland	23	Construction	23	59.2	352.8	17037.0
-224	24029	24	29	Kent County, Maryland	42	Wholesale trade	42	25.6	150.4	8181.6
-225	24029	24	29	Kent County, Maryland	51	Information	51	6.8	25.6	1531.0
-226	24029	24	29	Kent County, Maryland	52	Finance and insurance	52	29.6	194.8	8775.8
-227	24029	24	29	Kent County, Maryland	53	Real estate and rental and leasing	53	24.4	59.4	2353.4
-228	24029	24	29	Kent County, Maryland	54	Professional, scientific, and technical services	54	51.0	235.2	11441.6
-229	24029	24	29	Kent County, Maryland	55	Management of companies and enterprises	55	3.4	17.6	2232.0
-230	24029	24	29	Kent County, Maryland	56	Administrative and support and waste management and remediation services	56	31.6	209.8	8295.6
-231	24029	24	29	Kent County, Maryland	61	Educational services	61	14.2	525.2	13281.6
-232	24029	24	29	Kent County, Maryland	62	Health care and social assistance	62	73.8	1256.8	41956.8
-233	24029	24	29	Kent County, Maryland	71	Arts, entertainment, and recreation	71	26.6	212.4	5584.4
-234	24029	24	29	Kent County, Maryland	72	Accommodation and food services	72	69.0	729.0	13295.2
-235	24029	24	29	Kent County, Maryland	81	Other services (except public administration)	81	62.8	224.2	5951.8
-237	24031	24	31	Montgomery County, Maryland	11	Agriculture, forestry, fishing and hunting	11	21.0	88.8	3381.0
-238	24031	24	31	Montgomery County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	4.8	37.4	4448.8
-239	24031	24	31	Montgomery County, Maryland	22	Utilities	22	13.0	334.0	49449.6
-240	24031	24	31	Montgomery County, Maryland	23	Construction	23	2223.8	25323.4	1525214.0
-241	24031	24	31	Montgomery County, Maryland	42	Wholesale trade	42	811.6	10551.4	1030588.0
-242	24031	24	31	Montgomery County, Maryland	51	Information	51	640.4	16711.4	1635183.2
-243	24031	24	31	Montgomery County, Maryland	52	Finance and insurance	52	1582.4	19609.6	2495007.8
-244	24031	24	31	Montgomery County, Maryland	53	Real estate and rental and leasing	53	1369.2	11210.2	863708.6
-245	24031	24	31	Montgomery County, Maryland	54	Professional, scientific, and technical services	54	5734.8	75970.0	7004205.2
-246	24031	24	31	Montgomery County, Maryland	55	Management of companies and enterprises	55	470.2	12177.2	1472185.6
-247	24031	24	31	Montgomery County, Maryland	56	Administrative and support and waste management and remediation services	56	1811.6	45808.2	1857187.8
-248	24031	24	31	Montgomery County, Maryland	61	Educational services	61	570.6	11249.2	480260.4
-249	24031	24	31	Montgomery County, Maryland	62	Health care and social assistance	62	3628.2	65631.8	3352155.4
-250	24031	24	31	Montgomery County, Maryland	71	Arts, entertainment, and recreation	71	388.8	7391.4	188217.4
-251	24031	24	31	Montgomery County, Maryland	72	Accommodation and food services	72	1872.6	33538.2	662042.0
-252	24031	24	31	Montgomery County, Maryland	81	Other services (except public administration)	81	2429.2	26132.4	1350248.2
-253	24031	24	31	Montgomery County, Maryland	99	Industries not classified	99	82.0	46.0	2367.2
-255	24033	24	33	Prince George's County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	3.4	23.8	1264.2
-256	24033	24	33	Prince George's County, Maryland	22	Utilities	22	6.8	237.6	23729.0
-257	24033	24	33	Prince George's County, Maryland	23	Construction	23	1460.6	27024.4	1681361.0
-258	24033	24	33	Prince George's County, Maryland	42	Wholesale trade	42	602.6	12811.4	764978.0
-259	24033	24	33	Prince George's County, Maryland	51	Information	51	258.8	5340.6	344359.6
-260	24033	24	33	Prince George's County, Maryland	52	Finance and insurance	52	612.6	5905.8	349712.0
-261	24033	24	33	Prince George's County, Maryland	53	Real estate and rental and leasing	53	670.4	7084.2	346448.8
-262	24033	24	33	Prince George's County, Maryland	54	Professional, scientific, and technical services	54	1726.0	29905.6	2193450.6
-263	24033	24	33	Prince George's County, Maryland	55	Management of companies and enterprises	55	79.2	2091.2	177316.8
-264	24033	24	33	Prince George's County, Maryland	56	Administrative and support and waste management and remediation services	56	931.6	22891.4	854494.0
-265	24033	24	33	Prince George's County, Maryland	61	Educational services	61	212.0	4004.8	127090.6
-266	24033	24	33	Prince George's County, Maryland	62	Health care and social assistance	62	1824.0	30609.8	1333899.6
-267	24033	24	33	Prince George's County, Maryland	71	Arts, entertainment, and recreation	71	167.4	3957.0	79148.8
-268	24033	24	33	Prince George's County, Maryland	72	Accommodation and food services	72	1323.0	25987.0	522221.6
-269	24033	24	33	Prince George's County, Maryland	81	Other services (except public administration)	81	1680.8	14281.6	512969.6
-270	24033	24	33	Prince George's County, Maryland	99	Industries not classified	99	17.0	22.0	673.0
-271	24035	24	35	Queen Anne's County, Maryland	11	Agriculture, forestry, fishing and hunting	11	3.6	4.6	236.4
-274	24035	24	35	Queen Anne's County, Maryland	23	Construction	23	229.4	994.2	43290.4
-275	24035	24	35	Queen Anne's County, Maryland	42	Wholesale trade	42	80.6	841.8	50991.2
-276	24035	24	35	Queen Anne's County, Maryland	51	Information	51	21.6	116.6	7335.0
-277	24035	24	35	Queen Anne's County, Maryland	52	Finance and insurance	52	57.6	327.2	15834.8
-278	24035	24	35	Queen Anne's County, Maryland	53	Real estate and rental and leasing	53	50.4	158.4	5442.6
-279	24035	24	35	Queen Anne's County, Maryland	54	Professional, scientific, and technical services	54	154.8	542.0	30088.4
-280	24035	24	35	Queen Anne's County, Maryland	55	Management of companies and enterprises	55	4.6	15.8	648.2
-281	24035	24	35	Queen Anne's County, Maryland	56	Administrative and support and waste management and remediation services	56	81.0	510.6	17064.0
-282	24035	24	35	Queen Anne's County, Maryland	61	Educational services	61	16.0	70.2	6257.2
-283	24035	24	35	Queen Anne's County, Maryland	62	Health care and social assistance	62	89.8	966.8	37140.2
-284	24035	24	35	Queen Anne's County, Maryland	71	Arts, entertainment, and recreation	71	25.6	248.8	5366.0
-285	24035	24	35	Queen Anne's County, Maryland	72	Accommodation and food services	72	97.0	2015.4	38036.2
-286	24035	24	35	Queen Anne's County, Maryland	81	Other services (except public administration)	81	121.2	644.6	16751.6
-288	24037	24	37	St. Mary's County, Maryland	11	Agriculture, forestry, fishing and hunting	11	5.8	14.4	583.2
-291	24037	24	37	St. Mary's County, Maryland	23	Construction	23	253.4	1518.8	71581.8
-292	24037	24	37	St. Mary's County, Maryland	42	Wholesale trade	42	40.4	393.8	20951.4
-293	24037	24	37	St. Mary's County, Maryland	51	Information	51	28.0	135.6	6803.6
-294	24037	24	37	St. Mary's County, Maryland	52	Finance and insurance	52	70.6	474.0	23159.6
-295	24037	24	37	St. Mary's County, Maryland	53	Real estate and rental and leasing	53	81.6	278.6	11308.6
-296	24037	24	37	St. Mary's County, Maryland	54	Professional, scientific, and technical services	54	335.0	8442.2	715538.6
-297	24037	24	37	St. Mary's County, Maryland	55	Management of companies and enterprises	55	6.0	40.8	2752.6
-298	24037	24	37	St. Mary's County, Maryland	56	Administrative and support and waste management and remediation services	56	84.8	819.0	46058.0
-299	24037	24	37	St. Mary's County, Maryland	61	Educational services	61	27.8	600.8	19866.8
-300	24037	24	37	St. Mary's County, Maryland	62	Health care and social assistance	62	182.0	4327.2	182215.4
-301	24037	24	37	St. Mary's County, Maryland	71	Arts, entertainment, and recreation	71	23.2	268.4	3794.4
-302	24037	24	37	St. Mary's County, Maryland	72	Accommodation and food services	72	180.4	3665.8	54549.8
-303	24037	24	37	St. Mary's County, Maryland	81	Other services (except public administration)	81	193.2	1208.2	35820.8
-305	24039	24	39	Somerset County, Maryland	11	Agriculture, forestry, fishing and hunting	11	8.6	5.6	143.4
-306	24039	24	39	Somerset County, Maryland	22	Utilities	22	2.6	1.0	67.2
-307	24039	24	39	Somerset County, Maryland	23	Construction	23	54.4	234.6	9171.0
-308	24039	24	39	Somerset County, Maryland	42	Wholesale trade	42	13.8	232.2	17082.6
-309	24039	24	39	Somerset County, Maryland	51	Information	51	6.4	4.0	501.0
-310	24039	24	39	Somerset County, Maryland	52	Finance and insurance	52	13.8	84.2	2937.0
-311	24039	24	39	Somerset County, Maryland	53	Real estate and rental and leasing	53	14.4	22.2	629.2
-312	24039	24	39	Somerset County, Maryland	54	Professional, scientific, and technical services	54	20.0	72.8	4180.4
-314	24039	24	39	Somerset County, Maryland	56	Administrative and support and waste management and remediation services	56	11.6	36.8	944.0
-315	24039	24	39	Somerset County, Maryland	61	Educational services	61	4.2	16.2	549.2
-316	24039	24	39	Somerset County, Maryland	62	Health care and social assistance	62	38.0	1141.0	34211.2
-317	24039	24	39	Somerset County, Maryland	71	Arts, entertainment, and recreation	71	5.0	7.0	85.6
-318	24039	24	39	Somerset County, Maryland	72	Accommodation and food services	72	26.4	292.8	3978.8
-319	24039	24	39	Somerset County, Maryland	81	Other services (except public administration)	81	52.2	204.2	4510.6
-321	24041	24	41	Talbot County, Maryland	11	Agriculture, forestry, fishing and hunting	11	6.6	25.8	1131.0
-324	24041	24	41	Talbot County, Maryland	23	Construction	23	183.0	846.8	38262.6
-325	24041	24	41	Talbot County, Maryland	42	Wholesale trade	42	70.6	546.6	28703.6
-326	24041	24	41	Talbot County, Maryland	51	Information	51	22.2	230.2	11454.4
-327	24041	24	41	Talbot County, Maryland	52	Finance and insurance	52	80.0	583.8	41979.4
-328	24041	24	41	Talbot County, Maryland	53	Real estate and rental and leasing	53	60.0	167.6	6937.8
-329	24041	24	41	Talbot County, Maryland	54	Professional, scientific, and technical services	54	134.4	1142.4	77365.2
-330	24041	24	41	Talbot County, Maryland	55	Management of companies and enterprises	55	8.6	356.0	20898.2
-331	24041	24	41	Talbot County, Maryland	56	Administrative and support and waste management and remediation services	56	88.6	1651.0	54561.4
-332	24041	24	41	Talbot County, Maryland	61	Educational services	61	17.0	321.6	11240.0
-333	24041	24	41	Talbot County, Maryland	62	Health care and social assistance	62	172.0	3314.0	152173.8
-334	24041	24	41	Talbot County, Maryland	71	Arts, entertainment, and recreation	71	34.0	452.2	11438.0
-335	24041	24	41	Talbot County, Maryland	72	Accommodation and food services	72	141.2	2415.4	46841.2
-336	24041	24	41	Talbot County, Maryland	81	Other services (except public administration)	81	145.4	754.8	21855.2
-337	24041	24	41	Talbot County, Maryland	99	Industries not classified	99	2.0	0.0	25.2
-341	24043	24	43	Washington County, Maryland	23	Construction	23	344.4	2544.6	116811.4
-342	24043	24	43	Washington County, Maryland	42	Wholesale trade	42	151.8	2391.8	113559.8
-343	24043	24	43	Washington County, Maryland	51	Information	51	56.4	1795.8	66021.0
-344	24043	24	43	Washington County, Maryland	52	Finance and insurance	52	196.4	6602.8	311327.6
-345	24043	24	43	Washington County, Maryland	53	Real estate and rental and leasing	53	140.6	766.6	31581.0
-346	24043	24	43	Washington County, Maryland	54	Professional, scientific, and technical services	54	228.8	1750.6	75778.0
-347	24043	24	43	Washington County, Maryland	55	Management of companies and enterprises	55	20.8	359.6	21573.6
-348	24043	24	43	Washington County, Maryland	56	Administrative and support and waste management and remediation services	56	168.8	2820.6	81610.4
-349	24043	24	43	Washington County, Maryland	61	Educational services	61	28.6	478.8	12881.2
-350	24043	24	43	Washington County, Maryland	62	Health care and social assistance	62	443.4	10093.4	426133.0
-351	24043	24	43	Washington County, Maryland	71	Arts, entertainment, and recreation	71	49.4	721.8	9742.6
-352	24043	24	43	Washington County, Maryland	72	Accommodation and food services	72	300.8	5363.2	80808.6
-353	24043	24	43	Washington County, Maryland	81	Other services (except public administration)	81	394.0	2311.4	56429.2
-354	24043	24	43	Washington County, Maryland	99	Industries not classified	99	4.0	4.0	81.6
-355	24045	24	45	Wicomico County, Maryland	11	Agriculture, forestry, fishing and hunting	11	14.2	175.0	7759.8
-356	24045	24	45	Wicomico County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	3.0	5.2	621.6
-357	24045	24	45	Wicomico County, Maryland	22	Utilities	22	5.6	148.2	12459.4
-358	24045	24	45	Wicomico County, Maryland	23	Construction	23	242.8	1642.8	74482.4
-359	24045	24	45	Wicomico County, Maryland	42	Wholesale trade	42	124.2	1489.6	69395.4
-360	24045	24	45	Wicomico County, Maryland	51	Information	51	43.4	885.2	42716.4
-361	24045	24	45	Wicomico County, Maryland	52	Finance and insurance	52	149.6	1185.2	61743.2
-362	24045	24	45	Wicomico County, Maryland	53	Real estate and rental and leasing	53	117.6	551.4	19362.0
-363	24045	24	45	Wicomico County, Maryland	54	Professional, scientific, and technical services	54	228.4	1340.4	59317.0
-364	24045	24	45	Wicomico County, Maryland	55	Management of companies and enterprises	55	16.6	223.2	29594.0
-365	24045	24	45	Wicomico County, Maryland	56	Administrative and support and waste management and remediation services	56	136.2	2353.2	81281.6
-366	24045	24	45	Wicomico County, Maryland	61	Educational services	61	26.4	494.2	10594.0
-367	24045	24	45	Wicomico County, Maryland	62	Health care and social assistance	62	351.0	8723.4	406834.4
-368	24045	24	45	Wicomico County, Maryland	71	Arts, entertainment, and recreation	71	25.0	357.6	4289.4
-369	24045	24	45	Wicomico County, Maryland	72	Accommodation and food services	72	208.0	4086.4	56933.8
-370	24045	24	45	Wicomico County, Maryland	81	Other services (except public administration)	81	255.8	1669.0	40859.8
-371	24045	24	45	Wicomico County, Maryland	99	Industries not classified	99	4.25	1.75	45.5
-372	24047	24	47	Worcester County, Maryland	11	Agriculture, forestry, fishing and hunting	11	11.8	14.6	401.2
-375	24047	24	47	Worcester County, Maryland	23	Construction	23	223.0	957.6	36113.6
-376	24047	24	47	Worcester County, Maryland	42	Wholesale trade	42	56.6	280.8	12371.2
-377	24047	24	47	Worcester County, Maryland	51	Information	51	27.2	112.8	6645.4
-378	24047	24	47	Worcester County, Maryland	52	Finance and insurance	52	94.4	506.8	22812.2
-379	24047	24	47	Worcester County, Maryland	53	Real estate and rental and leasing	53	159.2	448.2	16299.2
-380	24047	24	47	Worcester County, Maryland	54	Professional, scientific, and technical services	54	140.4	640.4	29126.6
-381	24047	24	47	Worcester County, Maryland	55	Management of companies and enterprises	55	3.2	17.4	839.2
-382	24047	24	47	Worcester County, Maryland	56	Administrative and support and waste management and remediation services	56	76.8	379.4	18033.0
-383	24047	24	47	Worcester County, Maryland	61	Educational services	61	9.4	105.0	4090.0
-384	24047	24	47	Worcester County, Maryland	62	Health care and social assistance	62	140.4	2115.4	88979.2
-385	24047	24	47	Worcester County, Maryland	71	Arts, entertainment, and recreation	71	75.0	829.0	25273.0
-386	24047	24	47	Worcester County, Maryland	72	Accommodation and food services	72	425.8	5642.2	172682.0
-387	24047	24	47	Worcester County, Maryland	81	Other services (except public administration)	81	193.0	1077.8	28025.2
-391	24510	24	510	Baltimore city, Maryland	23	Construction	23	598.8	7251.4	410956.4
-392	24510	24	510	Baltimore city, Maryland	42	Wholesale trade	42	539.4	8554.0	532366.2
-393	24510	24	510	Baltimore city, Maryland	51	Information	51	242.6	4993.0	388645.0
-394	24510	24	510	Baltimore city, Maryland	52	Finance and insurance	52	595.2	16620.0	2193149.4
-395	24510	24	510	Baltimore city, Maryland	53	Real estate and rental and leasing	53	641.0	4672.2	251191.6
-396	24510	24	510	Baltimore city, Maryland	54	Professional, scientific, and technical services	54	1550.6	21167.2	1834320.4
-397	24510	24	510	Baltimore city, Maryland	55	Management of companies and enterprises	55	93.6	8176.0	763133.2
-398	24510	24	510	Baltimore city, Maryland	56	Administrative and support and waste management and remediation services	56	544.8	14770.2	535888.0
-399	24510	24	510	Baltimore city, Maryland	61	Educational services	61	214.2	40437.8	2353296.4
-400	24510	24	510	Baltimore city, Maryland	62	Health care and social assistance	62	1462.4	76281.4	4257347.2
-401	24510	24	510	Baltimore city, Maryland	71	Arts, entertainment, and recreation	71	176.2	5101.4	230524.8
-402	24510	24	510	Baltimore city, Maryland	72	Accommodation and food services	72	1524.6	23972.8	515106.2
-403	24510	24	510	Baltimore city, Maryland	81	Other services (except public administration)	81	1451.8	13432.0	460741.0
-404	24510	24	510	Baltimore city, Maryland	99	Industries not classified	99	25.8	22.2	528.6
-0	24001	24	1	Allegany County, Maryland	55	Management of companies and enterprises	55	2.4		
-1	24001	24	1	Allegany County, Maryland	99	Industries not classified	99	2.5		
-2	24009	24	9	Calvert County, Maryland	11	Agriculture, forestry, fishing and hunting	11	1.75		
-3	24009	24	9	Calvert County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.0		
-4	24009	24	9	Calvert County, Maryland	22	Utilities	22	5.8		
-5	24011	24	11	Caroline County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.0		
-6	24011	24	11	Caroline County, Maryland	22	Utilities	22	2.0		
-7	24011	24	11	Caroline County, Maryland	51	Information	51	6.6		
-8	24011	24	11	Caroline County, Maryland	55	Management of companies and enterprises	55	1.4		
-9	24011	24	11	Caroline County, Maryland	61	Educational services	61	6.0		
-10	24011	24	11	Caroline County, Maryland	99	Industries not classified	99	1.6666666666666667		
-11	24015	24	15	Cecil County, Maryland	55	Management of companies and enterprises	55	3.2		
-12	24017	24	17	Charles County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	2.0		
-13	24017	24	17	Charles County, Maryland	22	Utilities	22	5.2		
-14	24017	24	17	Charles County, Maryland	99	Industries not classified	99	2.0		
-15	24019	24	19	Dorchester County, Maryland	11	Agriculture, forestry, fishing and hunting	11	3.0		
-16	24019	24	19	Dorchester County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.2		
-17	24019	24	19	Dorchester County, Maryland	22	Utilities	22	2.0		
-18	24019	24	19	Dorchester County, Maryland	55	Management of companies and enterprises	55	2.0		
-19	24025	24	25	Harford County, Maryland	22	Utilities	22	3.4		
-20	24027	24	27	Howard County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	2.4		
-21	24027	24	27	Howard County, Maryland	22	Utilities	22	4.4		
-22	24029	24	29	Kent County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.4		
-23	24029	24	29	Kent County, Maryland	22	Utilities	22	1.0		
-24	24029	24	29	Kent County, Maryland	99	Industries not classified	99	1.75		
-25	24033	24	33	Prince George's County, Maryland	11	Agriculture, forestry, fishing and hunting	11	4.0		
-26	24035	24	35	Queen Anne's County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.0		
-27	24035	24	35	Queen Anne's County, Maryland	22	Utilities	22	2.0		
-28	24035	24	35	Queen Anne's County, Maryland	99	Industries not classified	99	1.0		
-29	24037	24	37	St. Mary's County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.8		
-30	24037	24	37	St. Mary's County, Maryland	22	Utilities	22	1.0		
-31	24037	24	37	St. Mary's County, Maryland	99	Industries not classified	99	1.3333333333333333		
-32	24039	24	39	Somerset County, Maryland	55	Management of companies and enterprises	55	1.0		
-33	24039	24	39	Somerset County, Maryland	99	Industries not classified	99	1.0		
-34	24041	24	41	Talbot County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.0		
-35	24041	24	41	Talbot County, Maryland	22	Utilities	22	1.8		
-36	24043	24	43	Washington County, Maryland	11	Agriculture, forestry, fishing and hunting	11	2.6		
-37	24043	24	43	Washington County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	2.0		
-38	24043	24	43	Washington County, Maryland	22	Utilities	22	6.4		
-39	24047	24	47	Worcester County, Maryland	21	Mining, quarrying, and oil and gas extraction	21	2.0		
-40	24047	24	47	Worcester County, Maryland	22	Utilities	22	1.4		
-41	24047	24	47	Worcester County, Maryland	99	Industries not classified	99	1.5		
-42	24510	24	510	Baltimore city, Maryland	21	Mining, quarrying, and oil and gas extraction	21	1.5		
-43	24510	24	510	Baltimore city, Maryland	22	Utilities	22	27.4		
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
+0	11	Agriculture, forestry, fishing and hunting	24	11	1	24001	Allegany County, Maryland	no	6.0	0.0	71.0
+1	11	Agriculture, forestry, fishing and hunting	24	11	1	24001	Allegany County, Maryland	yes	2.0	21.87530309984793	455.26218600478467
+2	11	Agriculture, forestry, fishing and hunting	24	11	3	24003	Anne Arundel County, Maryland	no	10.4	20.4	687.6
+3	11	Agriculture, forestry, fishing and hunting	24	11	5	24005	Baltimore County, Maryland	no	12.75	13.25	582.25
+4	11	Agriculture, forestry, fishing and hunting	24	11	5	24005	Baltimore County, Maryland	yes	11.0	99.3859649122807	1634.3684210526314
+5	11	Agriculture, forestry, fishing and hunting	24	11	9	24009	Calvert County, Maryland	yes	1.75	18.959767696858425	335.2607672888617
+6	11	Agriculture, forestry, fishing and hunting	24	11	11	24011	Caroline County, Maryland	no	6.0	22.0	686.0
+7	11	Agriculture, forestry, fishing and hunting	24	11	11	24011	Caroline County, Maryland	yes	6.0	65.6515707874337	979.8555691554467
+8	11	Agriculture, forestry, fishing and hunting	24	11	13	24013	Carroll County, Maryland	no	7.0	9.6	489.6
+9	11	Agriculture, forestry, fishing and hunting	24	11	15	24015	Cecil County, Maryland	no	12.2	88.6	3026.6
+10	11	Agriculture, forestry, fishing and hunting	24	11	17	24017	Charles County, Maryland	no	5.6	23.2	601.0
+11	11	Agriculture, forestry, fishing and hunting	24	11	19	24019	Dorchester County, Maryland	yes	3.0	30.335243963502837	833.1964434739068
+12	11	Agriculture, forestry, fishing and hunting	24	11	21	24021	Frederick County, Maryland	no	14.8	21.2	780.2
+13	11	Agriculture, forestry, fishing and hunting	24	11	23	24023	Garrett County, Maryland	no	18.0	44.4	1498.2
+14	11	Agriculture, forestry, fishing and hunting	24	11	25	24025	Harford County, Maryland	no	6.8	13.6	518.0
+15	11	Agriculture, forestry, fishing and hunting	24	11	27	24027	Howard County, Maryland	no	9.8	202.2	10957.4
+16	11	Agriculture, forestry, fishing and hunting	24	11	29	24029	Kent County, Maryland	no	5.0	55.0	1418.0
+17	11	Agriculture, forestry, fishing and hunting	24	11	29	24029	Kent County, Maryland	yes	4.0	43.01328539371685	851.1152845777234
+18	11	Agriculture, forestry, fishing and hunting	24	11	31	24031	Montgomery County, Maryland	no	21.0	88.8	3381.0
+19	11	Agriculture, forestry, fishing and hunting	24	11	33	24033	Prince George's County, Maryland	yes	4.0	40.744918586105854	1033.1352898631355
+20	11	Agriculture, forestry, fishing and hunting	24	11	35	24035	Queen Anne's County, Maryland	no	3.75	5.75	295.5
+21	11	Agriculture, forestry, fishing and hunting	24	11	35	24035	Queen Anne's County, Maryland	yes	3.0	20.930232558139533	532.046511627907
+22	11	Agriculture, forestry, fishing and hunting	24	11	37	24037	St. Mary's County, Maryland	no	5.8	14.4	583.2
+23	11	Agriculture, forestry, fishing and hunting	24	11	39	24039	Somerset County, Maryland	no	9.0	14.0	358.5
+24	11	Agriculture, forestry, fishing and hunting	24	11	39	24039	Somerset County, Maryland	yes	8.333333333333334	89.8610091119271	1365.5903712770298
+25	11	Agriculture, forestry, fishing and hunting	24	11	41	24041	Talbot County, Maryland	no	6.6	25.8	1131.0
+26	11	Agriculture, forestry, fishing and hunting	24	11	43	24043	Washington County, Maryland	yes	2.6	25.279177793850376	842.719977467453
+27	11	Agriculture, forestry, fishing and hunting	24	11	45	24045	Wicomico County, Maryland	no	14.2	175.0	7759.8
+28	11	Agriculture, forestry, fishing and hunting	24	11	47	24047	Worcester County, Maryland	no	12.5	36.5	1003.0
+29	11	Agriculture, forestry, fishing and hunting	24	11	47	24047	Worcester County, Maryland	yes	11.333333333333334	126.65197878416973	1841.4785801713585
+30	21	Mining, quarrying, and oil and gas extraction	24	21	1	24001	Allegany County, Maryland	no	5.0	96.0	4283.0
+31	21	Mining, quarrying, and oil and gas extraction	24	21	1	24001	Allegany County, Maryland	yes	5.666666666666667	101.06825219868698	4630.987613031091
+32	21	Mining, quarrying, and oil and gas extraction	24	21	3	24003	Anne Arundel County, Maryland	no	4.6	19.8	1156.6
+33	21	Mining, quarrying, and oil and gas extraction	24	21	5	24005	Baltimore County, Maryland	no	9.0	130.5	8865.0
+34	21	Mining, quarrying, and oil and gas extraction	24	21	5	24005	Baltimore County, Maryland	yes	8.0	141.72616127833518	6578.606726124118
+35	21	Mining, quarrying, and oil and gas extraction	24	21	9	24009	Calvert County, Maryland	yes	1.0	14.911039886039887	744.5167022792024
+36	21	Mining, quarrying, and oil and gas extraction	24	21	11	24011	Caroline County, Maryland	yes	1.0	14.819232627276104	942.1808909327389
+37	21	Mining, quarrying, and oil and gas extraction	24	21	13	24013	Carroll County, Maryland	no	3.5	17.0	1274.25
+38	21	Mining, quarrying, and oil and gas extraction	24	21	13	24013	Carroll County, Maryland	yes	3.0	52.23913043478261	2267.413043478261
+39	21	Mining, quarrying, and oil and gas extraction	24	21	15	24015	Cecil County, Maryland	no	5.0	51.5	5622.75
+40	21	Mining, quarrying, and oil and gas extraction	24	21	15	24015	Cecil County, Maryland	yes	5.0	82.1111111111111	4216.444444444444
+41	21	Mining, quarrying, and oil and gas extraction	24	21	17	24017	Charles County, Maryland	yes	2.0	29.63846525455221	1884.3617818654777
+42	21	Mining, quarrying, and oil and gas extraction	24	21	19	24019	Dorchester County, Maryland	yes	1.2	18.706412114455592	1113.5706345224821
+43	21	Mining, quarrying, and oil and gas extraction	24	21	21	24021	Frederick County, Maryland	no	3.0	124.5	6612.0
+44	21	Mining, quarrying, and oil and gas extraction	24	21	21	24021	Frederick County, Maryland	yes	3.0	53.27116313638053	2456.0419546636936
+45	21	Mining, quarrying, and oil and gas extraction	24	21	23	24023	Garrett County, Maryland	no	8.8	304.8	20256.2
+46	21	Mining, quarrying, and oil and gas extraction	24	21	25	24025	Harford County, Maryland	no	6.0	94.5	6921.0
+47	21	Mining, quarrying, and oil and gas extraction	24	21	25	24025	Harford County, Maryland	yes	5.666666666666667	100.39396754614144	4597.272822990214
+48	21	Mining, quarrying, and oil and gas extraction	24	21	27	24027	Howard County, Maryland	yes	2.4	34.41846525455221	2572.9817818654774
+49	21	Mining, quarrying, and oil and gas extraction	24	21	29	24029	Kent County, Maryland	yes	1.4	20.07684132292828	1200.0042604979562
+50	21	Mining, quarrying, and oil and gas extraction	24	21	31	24031	Montgomery County, Maryland	no	5.25	46.75	5561.0
+51	21	Mining, quarrying, and oil and gas extraction	24	21	31	24031	Montgomery County, Maryland	yes	3.0	35.85	5164.65
+52	21	Mining, quarrying, and oil and gas extraction	24	21	33	24033	Prince George's County, Maryland	no	4.0	59.5	3160.5
+53	21	Mining, quarrying, and oil and gas extraction	24	21	33	24033	Prince George's County, Maryland	yes	3.0	53.27116313638053	2456.0419546636936
+54	21	Mining, quarrying, and oil and gas extraction	24	21	35	24035	Queen Anne's County, Maryland	yes	1.0	12.415740740740743	1032.7171296296297
+55	21	Mining, quarrying, and oil and gas extraction	24	21	37	24037	St. Mary's County, Maryland	yes	1.8	25.751285767372725	1712.972038275734
+56	21	Mining, quarrying, and oil and gas extraction	24	21	41	24041	Talbot County, Maryland	yes	1.0	17.413043478260867	755.8043478260869
+57	21	Mining, quarrying, and oil and gas extraction	24	21	43	24043	Washington County, Maryland	yes	2.0	29.63846525455221	1884.3617818654777
+58	21	Mining, quarrying, and oil and gas extraction	24	21	45	24045	Wicomico County, Maryland	no	3.0	5.2	621.6
+59	21	Mining, quarrying, and oil and gas extraction	24	21	47	24047	Worcester County, Maryland	yes	2.0	29.63846525455221	1884.3617818654777
+60	21	Mining, quarrying, and oil and gas extraction	24	21	510	24510	Baltimore city, Maryland	yes	1.5	23.38804347826087	1616.579347826087
+61	22	Utilities	24	22	1	24001	Allegany County, Maryland	no	6.0	152.4	12783.2
+62	22	Utilities	24	22	3	24003	Anne Arundel County, Maryland	no	12.0	551.5	68062.0
+63	22	Utilities	24	22	3	24003	Anne Arundel County, Maryland	yes	10.666666666666666	898.3996961449353	99142.98254842592
+64	22	Utilities	24	22	5	24005	Baltimore County, Maryland	no	19.0	1418.0	155512.0
+65	22	Utilities	24	22	5	24005	Baltimore County, Maryland	yes	15.5	1315.1837635564025	150165.2841108704
+66	22	Utilities	24	22	9	24009	Calvert County, Maryland	yes	5.8	493.801195957372	57256.05034084337
+67	22	Utilities	24	22	11	24011	Caroline County, Maryland	yes	2.0	170.12105963326758	19851.57970494353
+68	22	Utilities	24	22	13	24013	Carroll County, Maryland	no	3.0	0.0	2511.0
+69	22	Utilities	24	22	13	24013	Carroll County, Maryland	yes	1.0	83.88349809168776	9834.472390216572
+70	22	Utilities	24	22	15	24015	Cecil County, Maryland	no	6.0	142.0	15726.333333333334
+71	22	Utilities	24	22	15	24015	Cecil County, Maryland	yes	4.5	393.8587420042644	48107.9408315565
+72	22	Utilities	24	22	17	24017	Charles County, Maryland	yes	5.2	442.5248896510657	51557.2333588614
+73	22	Utilities	24	22	19	24019	Dorchester County, Maryland	yes	2.0	170.12105963326758	19851.57970494353
+74	22	Utilities	24	22	21	24021	Frederick County, Maryland	no	8.0	163.0	14725.0
+75	22	Utilities	24	22	21	24021	Frederick County, Maryland	yes	6.0	498.2532274940922	54202.27866183219
+76	22	Utilities	24	22	23	24023	Garrett County, Maryland	no	5.0	32.0	2802.0
+77	22	Utilities	24	22	23	24023	Garrett County, Maryland	yes	2.75	232.23839406184362	26391.200592824553
+78	22	Utilities	24	22	25	24025	Harford County, Maryland	yes	3.4	291.08905213646847	33893.79343801231
+79	22	Utilities	24	22	27	24027	Howard County, Maryland	yes	4.4	374.7578335522494	44060.06012417277
+80	22	Utilities	24	22	29	24029	Kent County, Maryland	yes	1.0	85.06052981663379	9925.789852471766
+81	22	Utilities	24	22	31	24031	Montgomery County, Maryland	no	13.25	417.5	61812.0
+82	22	Utilities	24	22	31	24031	Montgomery County, Maryland	yes	12.0	1077.2238805970148	123492.71641791044
+83	22	Utilities	24	22	33	24033	Prince George's County, Maryland	no	8.0	594.0	59322.5
+84	22	Utilities	24	22	33	24033	Prince George's County, Maryland	yes	6.0	505.4481553091949	55688.8913818605
+85	22	Utilities	24	22	35	24035	Queen Anne's County, Maryland	yes	2.0	170.12105963326758	19851.57970494353
+86	22	Utilities	24	22	37	24037	St. Mary's County, Maryland	yes	1.0	85.06052981663379	9925.789852471766
+87	22	Utilities	24	22	39	24039	Somerset County, Maryland	no	3.0	5.0	336.0
+88	22	Utilities	24	22	39	24039	Somerset County, Maryland	yes	2.5	212.85993016213035	24215.140795291285
+89	22	Utilities	24	22	41	24041	Talbot County, Maryland	yes	1.8	154.4831285987848	18112.893498046975
+90	22	Utilities	24	22	43	24043	Washington County, Maryland	yes	6.4	539.7144108706898	62185.88801222552
+91	22	Utilities	24	22	45	24045	Wicomico County, Maryland	no	6.0	370.5	31148.5
+92	22	Utilities	24	22	45	24045	Wicomico County, Maryland	yes	5.333333333333333	451.12968166313505	49837.7627187146
+93	22	Utilities	24	22	47	24047	Worcester County, Maryland	yes	1.4	118.65219219440011	13722.687999666825
+94	22	Utilities	24	22	510	24510	Baltimore city, Maryland	yes	27.4	2335.6338605203246	272765.72729432984
+95	23	Construction	24	23	1	24001	Allegany County, Maryland	no	107.8	891.6	40405.6
+96	23	Construction	24	23	3	24003	Anne Arundel County, Maryland	no	1573.8	16088.6	891419.2
+97	23	Construction	24	23	5	24005	Baltimore County, Maryland	no	1852.8	21166.2	1268180.4
+98	23	Construction	24	23	9	24009	Calvert County, Maryland	no	315.8	1950.0	102693.4
+99	23	Construction	24	23	11	24011	Caroline County, Maryland	no	113.8	508.8	20398.4
+100	23	Construction	24	23	13	24013	Carroll County, Maryland	no	767.4	4834.2	237875.6
+101	23	Construction	24	23	15	24015	Cecil County, Maryland	no	218.4	872.6	35605.6
+102	23	Construction	24	23	17	24017	Charles County, Maryland	no	348.6	3667.4	193908.4
+103	23	Construction	24	23	19	24019	Dorchester County, Maryland	no	70.0	520.0	23613.0
+104	23	Construction	24	23	21	24021	Frederick County, Maryland	no	892.8	8161.0	447990.6
+105	23	Construction	24	23	23	24023	Garrett County, Maryland	no	152.8	682.4	27401.0
+106	23	Construction	24	23	25	24025	Harford County, Maryland	no	762.6	4483.2	216613.0
+107	23	Construction	24	23	27	24027	Howard County, Maryland	no	841.6	10671.0	647657.8
+108	23	Construction	24	23	29	24029	Kent County, Maryland	no	59.2	352.8	17037.0
+109	23	Construction	24	23	31	24031	Montgomery County, Maryland	no	2223.8	25323.4	1525214.0
+110	23	Construction	24	23	33	24033	Prince George's County, Maryland	no	1460.6	27024.4	1681361.0
+111	23	Construction	24	23	35	24035	Queen Anne's County, Maryland	no	229.4	994.2	43290.4
+112	23	Construction	24	23	37	24037	St. Mary's County, Maryland	no	253.4	1518.8	71581.8
+113	23	Construction	24	23	39	24039	Somerset County, Maryland	no	54.4	234.6	9171.0
+114	23	Construction	24	23	41	24041	Talbot County, Maryland	no	183.0	846.8	38262.6
+115	23	Construction	24	23	43	24043	Washington County, Maryland	no	344.4	2544.6	116811.4
+116	23	Construction	24	23	45	24045	Wicomico County, Maryland	no	242.8	1642.8	74482.4
+117	23	Construction	24	23	47	24047	Worcester County, Maryland	no	223.0	957.6	36113.6
+118	23	Construction	24	23	510	24510	Baltimore city, Maryland	no	598.8	7251.4	410956.4
+119	42	Wholesale trade	24	42	1	24001	Allegany County, Maryland	no	55.6	629.6	27804.8
+120	42	Wholesale trade	24	42	3	24003	Anne Arundel County, Maryland	no	629.4	9919.8	649195.4
+121	42	Wholesale trade	24	42	5	24005	Baltimore County, Maryland	no	874.2	12772.6	831890.4
+122	42	Wholesale trade	24	42	9	24009	Calvert County, Maryland	no	40.6	279.8	15963.4
+123	42	Wholesale trade	24	42	11	24011	Caroline County, Maryland	no	26.6	224.0	8584.0
+124	42	Wholesale trade	24	42	13	24013	Carroll County, Maryland	no	166.8	1200.8	62036.4
+125	42	Wholesale trade	24	42	15	24015	Cecil County, Maryland	no	67.8	1003.8	42286.8
+126	42	Wholesale trade	24	42	17	24017	Charles County, Maryland	no	68.2	657.0	32667.4
+127	42	Wholesale trade	24	42	19	24019	Dorchester County, Maryland	no	32.4	316.0	16746.8
+128	42	Wholesale trade	24	42	21	24021	Frederick County, Maryland	no	247.8	2590.0	154904.4
+129	42	Wholesale trade	24	42	23	24023	Garrett County, Maryland	no	27.6	194.4	5728.8
+130	42	Wholesale trade	24	42	25	24025	Harford County, Maryland	no	215.8	2457.4	141505.6
+131	42	Wholesale trade	24	42	27	24027	Howard County, Maryland	no	604.8	14099.0	1091207.2
+132	42	Wholesale trade	24	42	29	24029	Kent County, Maryland	no	25.6	150.4	8181.6
+133	42	Wholesale trade	24	42	31	24031	Montgomery County, Maryland	no	811.6	10551.4	1030588.0
+134	42	Wholesale trade	24	42	33	24033	Prince George's County, Maryland	no	602.6	12811.4	764978.0
+135	42	Wholesale trade	24	42	35	24035	Queen Anne's County, Maryland	no	80.6	841.8	50991.2
+136	42	Wholesale trade	24	42	37	24037	St. Mary's County, Maryland	no	40.4	393.8	20951.4
+137	42	Wholesale trade	24	42	39	24039	Somerset County, Maryland	no	13.5	580.5	42706.5
+138	42	Wholesale trade	24	42	39	24039	Somerset County, Maryland	yes	14.0	3067.3333333333335	270666.6666666667
+139	42	Wholesale trade	24	42	41	24041	Talbot County, Maryland	no	70.6	546.6	28703.6
+140	42	Wholesale trade	24	42	43	24043	Washington County, Maryland	no	151.8	2391.8	113559.8
+141	42	Wholesale trade	24	42	45	24045	Wicomico County, Maryland	no	124.2	1489.6	69395.4
+142	42	Wholesale trade	24	42	47	24047	Worcester County, Maryland	no	56.6	280.8	12371.2
+143	42	Wholesale trade	24	42	510	24510	Baltimore city, Maryland	no	539.4	8554.0	532366.2
+144	51	Information	24	51	1	24001	Allegany County, Maryland	no	35.5	1534.0	37086.5
+145	51	Information	24	51	1	24001	Allegany County, Maryland	yes	34.333333333333336	1496.4023377317683	39897.433505868634
+146	51	Information	24	51	3	24003	Anne Arundel County, Maryland	no	238.2	4972.6	458784.2
+147	51	Information	24	51	5	24005	Baltimore County, Maryland	no	320.2	7182.4	471511.8
+148	51	Information	24	51	9	24009	Calvert County, Maryland	no	19.4	110.0	20443.0
+149	51	Information	24	51	11	24011	Caroline County, Maryland	yes	6.6	345.29552817671504	25092.529337318654
+150	51	Information	24	51	13	24013	Carroll County, Maryland	no	63.6	742.4	41021.4
+151	51	Information	24	51	15	24015	Cecil County, Maryland	no	14.0	88.8	9196.0
+152	51	Information	24	51	17	24017	Charles County, Maryland	no	38.6	275.4	24734.2
+153	51	Information	24	51	19	24019	Dorchester County, Maryland	no	11.0	53.0	2131.0
+154	51	Information	24	51	19	24019	Dorchester County, Maryland	yes	13.0	572.1738135160749	15098.399314718961
+155	51	Information	24	51	21	24021	Frederick County, Maryland	no	87.8	1006.2	54905.8
+156	51	Information	24	51	23	24023	Garrett County, Maryland	no	16.0	309.0	10587.6
+157	51	Information	24	51	25	24025	Harford County, Maryland	no	66.4	590.6	34615.6
+158	51	Information	24	51	27	24027	Howard County, Maryland	no	169.2	4724.4	432517.2
+159	51	Information	24	51	29	24029	Kent County, Maryland	no	7.0	32.0	1913.75
+160	51	Information	24	51	29	24029	Kent County, Maryland	yes	6.0	236.06896551724137	7343.379310344828
+161	51	Information	24	51	31	24031	Montgomery County, Maryland	no	640.4	16711.4	1635183.2
+162	51	Information	24	51	33	24033	Prince George's County, Maryland	no	258.8	5340.6	344359.6
+163	51	Information	24	51	35	24035	Queen Anne's County, Maryland	no	21.6	116.6	7335.0
+164	51	Information	24	51	37	24037	St. Mary's County, Maryland	no	27.0	226.0	11339.333333333334
+165	51	Information	24	51	37	24037	St. Mary's County, Maryland	yes	29.5	1135.8624699278266	34065.23777064956
+166	51	Information	24	51	39	24039	Somerset County, Maryland	no	6.4	4.0	501.0
+167	51	Information	24	51	41	24041	Talbot County, Maryland	no	22.2	230.2	11454.4
+168	51	Information	24	51	43	24043	Washington County, Maryland	no	56.4	1795.8	66021.0
+169	51	Information	24	51	45	24045	Wicomico County, Maryland	no	43.4	885.2	42716.4
+170	51	Information	24	51	47	24047	Worcester County, Maryland	no	27.2	112.8	6645.4
+171	51	Information	24	51	510	24510	Baltimore city, Maryland	no	242.6	4993.0	388645.0
+172	52	Finance and insurance	24	52	1	24001	Allegany County, Maryland	no	93.6	844.6	42287.4
+173	52	Finance and insurance	24	52	3	24003	Anne Arundel County, Maryland	no	754.4	5806.8	424765.4
+174	52	Finance and insurance	24	52	5	24005	Baltimore County, Maryland	no	1402.6	19957.0	1602771.0
+175	52	Finance and insurance	24	52	9	24009	Calvert County, Maryland	no	73.2	343.2	20549.2
+176	52	Finance and insurance	24	52	11	24011	Caroline County, Maryland	no	28.2	158.8	7178.4
+177	52	Finance and insurance	24	52	13	24013	Carroll County, Maryland	no	198.0	1098.2	65284.4
+178	52	Finance and insurance	24	52	15	24015	Cecil County, Maryland	no	78.8	417.0	19395.6
+179	52	Finance and insurance	24	52	17	24017	Charles County, Maryland	no	132.6	791.8	47920.8
+180	52	Finance and insurance	24	52	19	24019	Dorchester County, Maryland	no	33.6	220.8	11564.8
+181	52	Finance and insurance	24	52	21	24021	Frederick County, Maryland	no	318.8	5946.2	416010.2
+182	52	Finance and insurance	24	52	23	24023	Garrett County, Maryland	no	35.0	356.8	14869.0
+183	52	Finance and insurance	24	52	25	24025	Harford County, Maryland	no	284.0	1896.2	112272.2
+184	52	Finance and insurance	24	52	27	24027	Howard County, Maryland	no	522.0	6971.0	589167.2
+185	52	Finance and insurance	24	52	29	24029	Kent County, Maryland	no	29.6	194.8	8775.8
+186	52	Finance and insurance	24	52	31	24031	Montgomery County, Maryland	no	1582.4	19609.6	2495007.8
+187	52	Finance and insurance	24	52	33	24033	Prince George's County, Maryland	no	612.6	5905.8	349712.0
+188	52	Finance and insurance	24	52	35	24035	Queen Anne's County, Maryland	no	57.6	327.2	15834.8
+189	52	Finance and insurance	24	52	37	24037	St. Mary's County, Maryland	no	70.6	474.0	23159.6
+190	52	Finance and insurance	24	52	39	24039	Somerset County, Maryland	no	13.8	84.2	2937.0
+191	52	Finance and insurance	24	52	41	24041	Talbot County, Maryland	no	80.0	583.8	41979.4
+192	52	Finance and insurance	24	52	43	24043	Washington County, Maryland	no	196.4	6602.8	311327.6
+193	52	Finance and insurance	24	52	45	24045	Wicomico County, Maryland	no	149.6	1185.2	61743.2
+194	52	Finance and insurance	24	52	47	24047	Worcester County, Maryland	no	94.4	506.8	22812.2
+195	52	Finance and insurance	24	52	510	24510	Baltimore city, Maryland	no	595.2	16620.0	2193149.4
+196	53	Real estate and rental and leasing	24	53	1	24001	Allegany County, Maryland	no	53.6	186.2	5855.8
+197	53	Real estate and rental and leasing	24	53	3	24003	Anne Arundel County, Maryland	no	595.6	4148.6	218287.8
+198	53	Real estate and rental and leasing	24	53	5	24005	Baltimore County, Maryland	no	863.8	7277.4	409786.8
+199	53	Real estate and rental and leasing	24	53	9	24009	Calvert County, Maryland	no	81.8	297.8	17469.4
+200	53	Real estate and rental and leasing	24	53	11	24011	Caroline County, Maryland	no	16.2	51.0	1715.6
+201	53	Real estate and rental and leasing	24	53	13	24013	Carroll County, Maryland	no	136.0	412.2	17464.6
+202	53	Real estate and rental and leasing	24	53	15	24015	Cecil County, Maryland	no	82.0	219.2	6664.2
+203	53	Real estate and rental and leasing	24	53	17	24017	Charles County, Maryland	no	98.4	388.0	14671.4
+204	53	Real estate and rental and leasing	24	53	19	24019	Dorchester County, Maryland	no	37.8	100.0	2949.4
+205	53	Real estate and rental and leasing	24	53	21	24021	Frederick County, Maryland	no	246.4	995.2	49893.0
+206	53	Real estate and rental and leasing	24	53	23	24023	Garrett County, Maryland	no	37.0	304.2	9043.4
+207	53	Real estate and rental and leasing	24	53	25	24025	Harford County, Maryland	no	226.2	815.6	31030.6
+208	53	Real estate and rental and leasing	24	53	27	24027	Howard County, Maryland	no	397.4	3180.8	220246.0
+209	53	Real estate and rental and leasing	24	53	29	24029	Kent County, Maryland	no	24.4	59.4	2353.4
+210	53	Real estate and rental and leasing	24	53	31	24031	Montgomery County, Maryland	no	1369.2	11210.2	863708.6
+211	53	Real estate and rental and leasing	24	53	33	24033	Prince George's County, Maryland	no	670.4	7084.2	346448.8
+212	53	Real estate and rental and leasing	24	53	35	24035	Queen Anne's County, Maryland	no	50.4	158.4	5442.6
+213	53	Real estate and rental and leasing	24	53	37	24037	St. Mary's County, Maryland	no	81.6	278.6	11308.6
+214	53	Real estate and rental and leasing	24	53	39	24039	Somerset County, Maryland	no	14.4	22.2	629.2
+215	53	Real estate and rental and leasing	24	53	41	24041	Talbot County, Maryland	no	60.0	167.6	6937.8
+216	53	Real estate and rental and leasing	24	53	43	24043	Washington County, Maryland	no	140.6	766.6	31581.0
+217	53	Real estate and rental and leasing	24	53	45	24045	Wicomico County, Maryland	no	117.6	551.4	19362.0
+218	53	Real estate and rental and leasing	24	53	47	24047	Worcester County, Maryland	no	159.2	448.2	16299.2
+219	53	Real estate and rental and leasing	24	53	510	24510	Baltimore city, Maryland	no	641.0	4672.2	251191.6
+220	54	Professional, scientific, and technical services	24	54	1	24001	Allegany County, Maryland	no	98.8	1095.6	33150.6
+221	54	Professional, scientific, and technical services	24	54	3	24003	Anne Arundel County, Maryland	no	2173.4	29617.8	3028839.4
+222	54	Professional, scientific, and technical services	24	54	5	24005	Baltimore County, Maryland	no	2734.6	26243.8	1810658.2
+223	54	Professional, scientific, and technical services	24	54	9	24009	Calvert County, Maryland	no	219.6	1459.4	81403.6
+224	54	Professional, scientific, and technical services	24	54	11	24011	Caroline County, Maryland	no	38.0	246.0	11870.4
+225	54	Professional, scientific, and technical services	24	54	13	24013	Carroll County, Maryland	no	499.6	2556.6	168636.2
+226	54	Professional, scientific, and technical services	24	54	15	24015	Cecil County, Maryland	no	142.4	482.6	18016.6
+227	54	Professional, scientific, and technical services	24	54	17	24017	Charles County, Maryland	no	284.0	2189.4	133064.6
+228	54	Professional, scientific, and technical services	24	54	19	24019	Dorchester County, Maryland	no	50.0	180.6	7475.6
+229	54	Professional, scientific, and technical services	24	54	21	24021	Frederick County, Maryland	no	854.8	8165.0	585265.8
+230	54	Professional, scientific, and technical services	24	54	23	24023	Garrett County, Maryland	no	53.25	295.5	19757.25
+231	54	Professional, scientific, and technical services	24	54	23	24023	Garrett County, Maryland	yes	52.0	4360.0	424976.0
+232	54	Professional, scientific, and technical services	24	54	25	24025	Harford County, Maryland	no	737.2	8175.2	610898.6
+233	54	Professional, scientific, and technical services	24	54	27	24027	Howard County, Maryland	no	2019.4	39763.8	3502852.8
+234	54	Professional, scientific, and technical services	24	54	29	24029	Kent County, Maryland	no	51.0	235.2	11441.6
+235	54	Professional, scientific, and technical services	24	54	31	24031	Montgomery County, Maryland	no	5734.8	75970.0	7004205.2
+236	54	Professional, scientific, and technical services	24	54	33	24033	Prince George's County, Maryland	no	1726.0	29905.6	2193450.6
+237	54	Professional, scientific, and technical services	24	54	35	24035	Queen Anne's County, Maryland	no	154.8	542.0	30088.4
+238	54	Professional, scientific, and technical services	24	54	37	24037	St. Mary's County, Maryland	no	335.0	8442.2	715538.6
+239	54	Professional, scientific, and technical services	24	54	39	24039	Somerset County, Maryland	no	20.0	72.8	4180.4
+240	54	Professional, scientific, and technical services	24	54	41	24041	Talbot County, Maryland	no	134.4	1142.4	77365.2
+241	54	Professional, scientific, and technical services	24	54	43	24043	Washington County, Maryland	no	228.8	1750.6	75778.0
+242	54	Professional, scientific, and technical services	24	54	45	24045	Wicomico County, Maryland	no	228.4	1340.4	59317.0
+243	54	Professional, scientific, and technical services	24	54	47	24047	Worcester County, Maryland	no	140.4	640.4	29126.6
+244	54	Professional, scientific, and technical services	24	54	510	24510	Baltimore city, Maryland	no	1550.6	21167.2	1834320.4
+245	55	Management of companies and enterprises	24	55	1	24001	Allegany County, Maryland	yes	2.4	86.3942963849195	7145.325466742125
+246	55	Management of companies and enterprises	24	55	3	24003	Anne Arundel County, Maryland	no	93.8	3596.4	306861.2
+247	55	Management of companies and enterprises	24	55	5	24005	Baltimore County, Maryland	no	161.4	8123.6	803249.6
+248	55	Management of companies and enterprises	24	55	9	24009	Calvert County, Maryland	no	6.5	69.0	3958.0
+249	55	Management of companies and enterprises	24	55	9	24009	Calvert County, Maryland	yes	6.333333333333333	220.00917012738003	17338.524758089185
+250	55	Management of companies and enterprises	24	55	11	24011	Caroline County, Maryland	yes	1.4	50.434755396576385	3806.458825015268
+251	55	Management of companies and enterprises	24	55	13	24013	Carroll County, Maryland	no	12.8	333.2	22860.2
+252	55	Management of companies and enterprises	24	55	15	24015	Cecil County, Maryland	yes	3.2	112.35353684566067	9217.900594079034
+253	55	Management of companies and enterprises	24	55	17	24017	Charles County, Maryland	no	12.5	276.0	24186.5
+254	55	Management of companies and enterprises	24	55	17	24017	Charles County, Maryland	yes	11.666666666666666	405.39475802814286	31885.221315756095
+255	55	Management of companies and enterprises	24	55	19	24019	Dorchester County, Maryland	yes	2.0	72.04829867194064	5726.050983363868
+256	55	Management of companies and enterprises	24	55	21	24021	Frederick County, Maryland	no	44.8	2832.0	215667.2
+257	55	Management of companies and enterprises	24	55	23	24023	Garrett County, Maryland	no	4.333333333333333	142.33333333333334	8789.666666666666
+258	55	Management of companies and enterprises	24	55	23	24023	Garrett County, Maryland	yes	4.0	143.1754556238542	10912.17674970344
+259	55	Management of companies and enterprises	24	55	25	24025	Harford County, Maryland	no	32.8	306.2	33434.6
+260	55	Management of companies and enterprises	24	55	27	24027	Howard County, Maryland	no	107.6	7987.2	641897.0
+261	55	Management of companies and enterprises	24	55	29	24029	Kent County, Maryland	no	4.0	88.0	11160.0
+262	55	Management of companies and enterprises	24	55	29	24029	Kent County, Maryland	yes	3.25	118.90306000988872	9266.756308092969
+263	55	Management of companies and enterprises	24	55	31	24031	Montgomery County, Maryland	no	467.75	15221.5	1840232.0
+264	55	Management of companies and enterprises	24	55	31	24031	Montgomery County, Maryland	yes	480.0	16696.654804270464	1772842.4199288257
+265	55	Management of companies and enterprises	24	55	33	24033	Prince George's County, Maryland	no	79.2	2091.2	177316.8
+266	55	Management of companies and enterprises	24	55	35	24035	Queen Anne's County, Maryland	no	4.0	79.0	3241.0
+267	55	Management of companies and enterprises	24	55	35	24035	Queen Anne's County, Maryland	yes	4.75	166.10211058581518	13319.403788692674
+268	55	Management of companies and enterprises	24	55	37	24037	St. Mary's County, Maryland	no	6.0	40.8	2752.6
+269	55	Management of companies and enterprises	24	55	39	24039	Somerset County, Maryland	yes	1.0	35.79386390596355	2728.04418742586
+270	55	Management of companies and enterprises	24	55	41	24041	Talbot County, Maryland	no	8.6	356.0	20898.2
+271	55	Management of companies and enterprises	24	55	43	24043	Washington County, Maryland	no	20.75	449.5	26967.0
+272	55	Management of companies and enterprises	24	55	43	24043	Washington County, Maryland	yes	21.0	730.4786476868327	77561.85587188612
+273	55	Management of companies and enterprises	24	55	45	24045	Wicomico County, Maryland	no	15.0	558.0	73985.0
+274	55	Management of companies and enterprises	24	55	45	24045	Wicomico County, Maryland	yes	17.666666666666668	614.6429218662147	48250.613998373585
+275	55	Management of companies and enterprises	24	55	47	24047	Worcester County, Maryland	no	4.0	87.0	4196.0
+276	55	Management of companies and enterprises	24	55	47	24047	Worcester County, Maryland	yes	3.0	108.65306000988872	8520.470593807253
+277	55	Management of companies and enterprises	24	55	510	24510	Baltimore city, Maryland	no	93.6	8176.0	763133.2
+278	56	Administrative and support and waste management and remediation services	24	56	1	24001	Allegany County, Maryland	no	51.8	1282.0	53246.2
+279	56	Administrative and support and waste management and remediation services	24	56	3	24003	Anne Arundel County, Maryland	no	837.2	18440.6	791103.4
+280	56	Administrative and support and waste management and remediation services	24	56	5	24005	Baltimore County, Maryland	no	1287.6	26225.4	913304.4
+281	56	Administrative and support and waste management and remediation services	24	56	9	24009	Calvert County, Maryland	no	93.8	599.8	22134.4
+282	56	Administrative and support and waste management and remediation services	24	56	11	24011	Caroline County, Maryland	no	38.2	226.6	10016.0
+283	56	Administrative and support and waste management and remediation services	24	56	13	24013	Carroll County, Maryland	no	304.6	2594.8	95967.4
+284	56	Administrative and support and waste management and remediation services	24	56	15	24015	Cecil County, Maryland	no	99.2	1035.6	32837.2
+285	56	Administrative and support and waste management and remediation services	24	56	17	24017	Charles County, Maryland	no	121.6	1189.6	45289.4
+286	56	Administrative and support and waste management and remediation services	24	56	19	24019	Dorchester County, Maryland	no	29.0	115.8	3414.2
+287	56	Administrative and support and waste management and remediation services	24	56	21	24021	Frederick County, Maryland	no	390.0	6282.2	219251.4
+288	56	Administrative and support and waste management and remediation services	24	56	23	24023	Garrett County, Maryland	no	39.5	360.5	9861.5
+289	56	Administrative and support and waste management and remediation services	24	56	23	24023	Garrett County, Maryland	yes	44.666666666666664	5663.95366444579	229547.95424994951
+290	56	Administrative and support and waste management and remediation services	24	56	25	24025	Harford County, Maryland	no	347.8	3098.2	105912.2
+291	56	Administrative and support and waste management and remediation services	24	56	27	24027	Howard County, Maryland	no	545.8	13581.4	585648.8
+292	56	Administrative and support and waste management and remediation services	24	56	29	24029	Kent County, Maryland	no	31.6	209.8	8295.6
+293	56	Administrative and support and waste management and remediation services	24	56	31	24031	Montgomery County, Maryland	no	1811.6	45808.2	1857187.8
+294	56	Administrative and support and waste management and remediation services	24	56	33	24033	Prince George's County, Maryland	no	931.6	22891.4	854494.0
+295	56	Administrative and support and waste management and remediation services	24	56	35	24035	Queen Anne's County, Maryland	no	81.0	510.6	17064.0
+296	56	Administrative and support and waste management and remediation services	24	56	37	24037	St. Mary's County, Maryland	no	85.5	2047.5	115145.0
+297	56	Administrative and support and waste management and remediation services	24	56	37	24037	St. Mary's County, Maryland	yes	84.33333333333333	10663.713002220875	434154.3790833838
+298	56	Administrative and support and waste management and remediation services	24	56	39	24039	Somerset County, Maryland	no	11.6	36.8	944.0
+299	56	Administrative and support and waste management and remediation services	24	56	41	24041	Talbot County, Maryland	no	88.6	1651.0	54561.4
+300	56	Administrative and support and waste management and remediation services	24	56	43	24043	Washington County, Maryland	no	168.8	2820.6	81610.4
+301	56	Administrative and support and waste management and remediation services	24	56	45	24045	Wicomico County, Maryland	no	136.2	2353.2	81281.6
+302	56	Administrative and support and waste management and remediation services	24	56	47	24047	Worcester County, Maryland	no	76.8	379.4	18033.0
+303	56	Administrative and support and waste management and remediation services	24	56	510	24510	Baltimore city, Maryland	no	544.8	14770.2	535888.0
+304	61	Educational services	24	61	1	24001	Allegany County, Maryland	no	15.2	210.0	4682.0
+305	61	Educational services	24	61	3	24003	Anne Arundel County, Maryland	no	177.4	3524.4	127365.2
+306	61	Educational services	24	61	5	24005	Baltimore County, Maryland	no	263.2	8635.0	266565.2
+307	61	Educational services	24	61	9	24009	Calvert County, Maryland	no	18.4	174.8	5401.6
+308	61	Educational services	24	61	11	24011	Caroline County, Maryland	yes	6.0	581.7398384141263	14594.127611194403
+309	61	Educational services	24	61	13	24013	Carroll County, Maryland	no	55.4	1708.8	38663.2
+310	61	Educational services	24	61	15	24015	Cecil County, Maryland	no	24.0	542.0	15251.0
+311	61	Educational services	24	61	17	24017	Charles County, Maryland	no	34.6	546.0	13827.0
+312	61	Educational services	24	61	19	24019	Dorchester County, Maryland	no	3.5	15.5	233.0
+313	61	Educational services	24	61	19	24019	Dorchester County, Maryland	yes	2.3333333333333335	208.2435012652404	5229.047273982056
+314	61	Educational services	24	61	21	24021	Frederick County, Maryland	no	84.2	3073.6	69404.0
+315	61	Educational services	24	61	23	24023	Garrett County, Maryland	no	6.75	28.5	690.25
+316	61	Educational services	24	61	23	24023	Garrett County, Maryland	yes	7.0	523.0689655172414	12258.689655172415
+317	61	Educational services	24	61	25	24025	Harford County, Maryland	no	66.4	881.4	24123.8
+318	61	Educational services	24	61	27	24027	Howard County, Maryland	no	188.2	2813.8	97270.4
+319	61	Educational services	24	61	29	24029	Kent County, Maryland	no	15.0	1313.0	33204.0
+320	61	Educational services	24	61	29	24029	Kent County, Maryland	yes	13.666666666666666	1140.6115335189547	26289.291836224744
+321	61	Educational services	24	61	31	24031	Montgomery County, Maryland	no	570.6	11249.2	480260.4
+322	61	Educational services	24	61	33	24033	Prince George's County, Maryland	no	212.0	4004.8	127090.6
+323	61	Educational services	24	61	35	24035	Queen Anne's County, Maryland	no	16.0	70.2	6257.2
+324	61	Educational services	24	61	37	24037	St. Mary's County, Maryland	no	27.8	600.8	19866.8
+325	61	Educational services	24	61	39	24039	Somerset County, Maryland	no	5.0	40.5	1373.0
+326	61	Educational services	24	61	39	24039	Somerset County, Maryland	yes	3.6666666666666665	303.5555793531805	7007.8849860783885
+327	61	Educational services	24	61	41	24041	Talbot County, Maryland	no	17.0	321.6	11240.0
+328	61	Educational services	24	61	43	24043	Washington County, Maryland	no	28.6	478.8	12881.2
+329	61	Educational services	24	61	45	24045	Wicomico County, Maryland	no	26.4	494.2	10594.0
+330	61	Educational services	24	61	47	24047	Worcester County, Maryland	no	9.4	105.0	4090.0
+331	61	Educational services	24	61	510	24510	Baltimore city, Maryland	no	214.2	40437.8	2353296.4
+332	62	Health care and social assistance	24	62	1	24001	Allegany County, Maryland	no	241.8	5987.2	235359.0
+333	62	Health care and social assistance	24	62	3	24003	Anne Arundel County, Maryland	no	1317.0	27053.6	1328075.2
+334	62	Health care and social assistance	24	62	5	24005	Baltimore County, Maryland	no	2662.4	57959.4	2522136.4
+335	62	Health care and social assistance	24	62	9	24009	Calvert County, Maryland	no	185.0	3431.0	152988.6
+336	62	Health care and social assistance	24	62	11	24011	Caroline County, Maryland	no	47.0	801.4	26159.4
+337	62	Health care and social assistance	24	62	13	24013	Carroll County, Maryland	no	452.4	9968.6	413632.0
+338	62	Health care and social assistance	24	62	15	24015	Cecil County, Maryland	no	193.2	4700.4	264635.2
+339	62	Health care and social assistance	24	62	17	24017	Charles County, Maryland	no	323.2	4690.4	202681.0
+340	62	Health care and social assistance	24	62	19	24019	Dorchester County, Maryland	no	82.8	1808.6	66719.2
+341	62	Health care and social assistance	24	62	21	24021	Frederick County, Maryland	no	646.2	11569.0	542522.4
+342	62	Health care and social assistance	24	62	23	24023	Garrett County, Maryland	no	71.4	1719.0	52608.2
+343	62	Health care and social assistance	24	62	25	24025	Harford County, Maryland	no	602.2	10910.0	482340.2
+344	62	Health care and social assistance	24	62	27	24027	Howard County, Maryland	no	980.2	15073.4	695826.6
+345	62	Health care and social assistance	24	62	29	24029	Kent County, Maryland	no	73.8	1256.8	41956.8
+346	62	Health care and social assistance	24	62	31	24031	Montgomery County, Maryland	no	3628.2	65631.8	3352155.4
+347	62	Health care and social assistance	24	62	33	24033	Prince George's County, Maryland	no	1824.0	30609.8	1333899.6
+348	62	Health care and social assistance	24	62	35	24035	Queen Anne's County, Maryland	no	89.8	966.8	37140.2
+349	62	Health care and social assistance	24	62	37	24037	St. Mary's County, Maryland	no	182.0	4327.2	182215.4
+350	62	Health care and social assistance	24	62	39	24039	Somerset County, Maryland	no	38.0	1141.0	34211.2
+351	62	Health care and social assistance	24	62	41	24041	Talbot County, Maryland	no	172.0	3314.0	152173.8
+352	62	Health care and social assistance	24	62	43	24043	Washington County, Maryland	no	443.4	10093.4	426133.0
+353	62	Health care and social assistance	24	62	45	24045	Wicomico County, Maryland	no	351.0	8723.4	406834.4
+354	62	Health care and social assistance	24	62	47	24047	Worcester County, Maryland	no	140.4	2115.4	88979.2
+355	62	Health care and social assistance	24	62	510	24510	Baltimore city, Maryland	no	1462.4	76281.4	4257347.2
+356	71	Arts, entertainment, and recreation	24	71	1	24001	Allegany County, Maryland	no	21.2	263.4	3279.4
+357	71	Arts, entertainment, and recreation	24	71	3	24003	Anne Arundel County, Maryland	no	247.2	5409.4	141731.4
+358	71	Arts, entertainment, and recreation	24	71	5	24005	Baltimore County, Maryland	no	286.2	4574.2	285246.2
+359	71	Arts, entertainment, and recreation	24	71	9	24009	Calvert County, Maryland	no	29.6	338.8	9636.0
+360	71	Arts, entertainment, and recreation	24	71	11	24011	Caroline County, Maryland	no	5.5	38.5	656.0
+361	71	Arts, entertainment, and recreation	24	71	11	24011	Caroline County, Maryland	yes	7.666666666666667	220.55341880341882	4249.1474358974365
+362	71	Arts, entertainment, and recreation	24	71	13	24013	Carroll County, Maryland	no	51.4	742.8	9349.0
+363	71	Arts, entertainment, and recreation	24	71	15	24015	Cecil County, Maryland	no	50.8	866.2	23350.0
+364	71	Arts, entertainment, and recreation	24	71	17	24017	Charles County, Maryland	no	26.0	312.2	4463.4
+365	71	Arts, entertainment, and recreation	24	71	19	24019	Dorchester County, Maryland	no	13.0	44.6	1163.8
+366	71	Arts, entertainment, and recreation	24	71	21	24021	Frederick County, Maryland	no	83.8	1662.2	29665.0
+367	71	Arts, entertainment, and recreation	24	71	23	24023	Garrett County, Maryland	no	17.0	35.75	2950.25
+368	71	Arts, entertainment, and recreation	24	71	23	24023	Garrett County, Maryland	yes	17.0	591.7307692307693	23741.48076923077
+369	71	Arts, entertainment, and recreation	24	71	25	24025	Harford County, Maryland	no	80.6	1279.8	20175.4
+370	71	Arts, entertainment, and recreation	24	71	27	24027	Howard County, Maryland	no	143.8	2971.4	77366.2
+371	71	Arts, entertainment, and recreation	24	71	29	24029	Kent County, Maryland	no	26.6	212.4	5584.4
+372	71	Arts, entertainment, and recreation	24	71	31	24031	Montgomery County, Maryland	no	388.8	7391.4	188217.4
+373	71	Arts, entertainment, and recreation	24	71	33	24033	Prince George's County, Maryland	no	167.4	3957.0	79148.8
+374	71	Arts, entertainment, and recreation	24	71	35	24035	Queen Anne's County, Maryland	no	25.6	248.8	5366.0
+375	71	Arts, entertainment, and recreation	24	71	37	24037	St. Mary's County, Maryland	no	23.2	268.4	3794.4
+376	71	Arts, entertainment, and recreation	24	71	39	24039	Somerset County, Maryland	no	5.0	17.5	214.0
+377	71	Arts, entertainment, and recreation	24	71	39	24039	Somerset County, Maryland	yes	5.0	139.9465811965812	2676.6025641025644
+378	71	Arts, entertainment, and recreation	24	71	41	24041	Talbot County, Maryland	no	34.0	452.2	11438.0
+379	71	Arts, entertainment, and recreation	24	71	43	24043	Washington County, Maryland	no	49.4	721.8	9742.6
+380	71	Arts, entertainment, and recreation	24	71	45	24045	Wicomico County, Maryland	no	25.0	357.6	4289.4
+381	71	Arts, entertainment, and recreation	24	71	47	24047	Worcester County, Maryland	no	75.0	829.0	25273.0
+382	71	Arts, entertainment, and recreation	24	71	510	24510	Baltimore city, Maryland	no	175.75	6376.75	288156.0
+383	71	Arts, entertainment, and recreation	24	71	510	24510	Baltimore city, Maryland	yes	178.0	6195.7692307692305	248587.26923076922
+384	72	Accommodation and food services	24	72	1	24001	Allegany County, Maryland	no	172.8	3273.4	48482.6
+385	72	Accommodation and food services	24	72	3	24003	Anne Arundel County, Maryland	no	1185.2	28002.2	521087.6
+386	72	Accommodation and food services	24	72	5	24005	Baltimore County, Maryland	no	1611.8	27874.8	466001.6
+387	72	Accommodation and food services	24	72	9	24009	Calvert County, Maryland	no	146.2	2776.2	43252.4
+388	72	Accommodation and food services	24	72	11	24011	Caroline County, Maryland	no	35.6	442.8	5138.8
+389	72	Accommodation and food services	24	72	13	24013	Carroll County, Maryland	no	275.6	5983.8	83679.6
+390	72	Accommodation and food services	24	72	15	24015	Cecil County, Maryland	no	174.6	2928.2	49697.0
+391	72	Accommodation and food services	24	72	17	24017	Charles County, Maryland	no	250.4	5091.2	77775.6
+392	72	Accommodation and food services	24	72	19	24019	Dorchester County, Maryland	no	58.2	1220.2	23544.8
+393	72	Accommodation and food services	24	72	21	24021	Frederick County, Maryland	no	452.8	8975.6	150113.0
+394	72	Accommodation and food services	24	72	23	24023	Garrett County, Maryland	no	80.0	1207.4	17477.4
+395	72	Accommodation and food services	24	72	25	24025	Harford County, Maryland	no	396.6	8257.4	123046.8
+396	72	Accommodation and food services	24	72	27	24027	Howard County, Maryland	no	565.8	11576.8	206921.8
+397	72	Accommodation and food services	24	72	29	24029	Kent County, Maryland	no	69.0	729.0	13295.2
+398	72	Accommodation and food services	24	72	31	24031	Montgomery County, Maryland	no	1872.6	33538.2	662042.0
+399	72	Accommodation and food services	24	72	33	24033	Prince George's County, Maryland	no	1323.0	25987.0	522221.6
+400	72	Accommodation and food services	24	72	35	24035	Queen Anne's County, Maryland	no	97.0	2015.4	38036.2
+401	72	Accommodation and food services	24	72	37	24037	St. Mary's County, Maryland	no	180.4	3665.8	54549.8
+402	72	Accommodation and food services	24	72	39	24039	Somerset County, Maryland	no	26.4	292.8	3978.8
+403	72	Accommodation and food services	24	72	41	24041	Talbot County, Maryland	no	141.2	2415.4	46841.2
+404	72	Accommodation and food services	24	72	43	24043	Washington County, Maryland	no	300.8	5363.2	80808.6
+405	72	Accommodation and food services	24	72	45	24045	Wicomico County, Maryland	no	208.0	4086.4	56933.8
+406	72	Accommodation and food services	24	72	47	24047	Worcester County, Maryland	no	425.8	5642.2	172682.0
+407	72	Accommodation and food services	24	72	510	24510	Baltimore city, Maryland	no	1524.6	23972.8	515106.2
+408	81	Other services (except public administration)	24	81	1	24001	Allegany County, Maryland	no	232.6	1220.2	24135.2
+409	81	Other services (except public administration)	24	81	3	24003	Anne Arundel County, Maryland	no	1365.0	11224.0	403129.8
+410	81	Other services (except public administration)	24	81	5	24005	Baltimore County, Maryland	no	1837.6	15043.6	451523.4
+411	81	Other services (except public administration)	24	81	9	24009	Calvert County, Maryland	no	166.6	1063.8	29623.0
+412	81	Other services (except public administration)	24	81	11	24011	Caroline County, Maryland	no	74.4	301.8	9046.2
+413	81	Other services (except public administration)	24	81	13	24013	Carroll County, Maryland	no	459.8	2848.6	78258.2
+414	81	Other services (except public administration)	24	81	15	24015	Cecil County, Maryland	no	214.4	1202.0	30030.0
+415	81	Other services (except public administration)	24	81	17	24017	Charles County, Maryland	no	279.6	1860.2	51030.0
+416	81	Other services (except public administration)	24	81	19	24019	Dorchester County, Maryland	no	83.6	446.6	6725.8
+417	81	Other services (except public administration)	24	81	21	24021	Frederick County, Maryland	no	602.2	4100.6	133180.2
+418	81	Other services (except public administration)	24	81	23	24023	Garrett County, Maryland	no	98.0	1010.5	32921.5
+419	81	Other services (except public administration)	24	81	23	24023	Garrett County, Maryland	yes	96.66666666666667	1360.0	58896.666666666664
+420	81	Other services (except public administration)	24	81	25	24025	Harford County, Maryland	no	550.6	3641.4	111988.6
+421	81	Other services (except public administration)	24	81	27	24027	Howard County, Maryland	no	694.2	7069.2	285930.4
+422	81	Other services (except public administration)	24	81	29	24029	Kent County, Maryland	no	62.8	224.2	5951.8
+423	81	Other services (except public administration)	24	81	31	24031	Montgomery County, Maryland	no	2429.2	26132.4	1350248.2
+424	81	Other services (except public administration)	24	81	33	24033	Prince George's County, Maryland	no	1680.8	14281.6	512969.6
+425	81	Other services (except public administration)	24	81	35	24035	Queen Anne's County, Maryland	no	121.2	644.6	16751.6
+426	81	Other services (except public administration)	24	81	37	24037	St. Mary's County, Maryland	no	193.2	1208.2	35820.8
+427	81	Other services (except public administration)	24	81	39	24039	Somerset County, Maryland	no	52.2	204.2	4510.6
+428	81	Other services (except public administration)	24	81	41	24041	Talbot County, Maryland	no	145.4	754.8	21855.2
+429	81	Other services (except public administration)	24	81	43	24043	Washington County, Maryland	no	394.0	2311.4	56429.2
+430	81	Other services (except public administration)	24	81	45	24045	Wicomico County, Maryland	no	255.8	1669.0	40859.8
+431	81	Other services (except public administration)	24	81	47	24047	Worcester County, Maryland	no	193.0	1077.8	28025.2
+432	81	Other services (except public administration)	24	81	510	24510	Baltimore city, Maryland	no	1451.8	13432.0	460741.0
+433	99	Industries not classified	24	99	1	24001	Allegany County, Maryland	yes	2.5	-4.79326923076923	49.08533653846154
+434	99	Industries not classified	24	99	3	24003	Anne Arundel County, Maryland	no	21.0	15.2	526.0
+435	99	Industries not classified	24	99	5	24005	Baltimore County, Maryland	no	27.4	17.2	691.4
+436	99	Industries not classified	24	99	9	24009	Calvert County, Maryland	no	3.3333333333333335	1.6666666666666667	89.66666666666667
+437	99	Industries not classified	24	99	9	24009	Calvert County, Maryland	yes	2.0	4.626373626373626	56.26373626373626
+438	99	Industries not classified	24	99	11	24011	Caroline County, Maryland	yes	1.6666666666666667	-0.47130647130647124	50.081807081807085
+439	99	Industries not classified	24	99	13	24013	Carroll County, Maryland	no	5.0	5.666666666666667	91.33333333333333
+440	99	Industries not classified	24	99	13	24013	Carroll County, Maryland	yes	2.0	2.019230769230769	33.75480769230769
+441	99	Industries not classified	24	99	15	24015	Cecil County, Maryland	no	4.666666666666667	2.6666666666666665	112.0
+442	99	Industries not classified	24	99	15	24015	Cecil County, Maryland	yes	2.0	5.538461538461538	33.38461538461539
+443	99	Industries not classified	24	99	17	24017	Charles County, Maryland	yes	2.0	-3.3601953601953602	56.85958485958486
+444	99	Industries not classified	24	99	19	24019	Dorchester County, Maryland	no	3.0	6.0	32.0
+445	99	Industries not classified	24	99	19	24019	Dorchester County, Maryland	yes	1.0	1.0096153846153846	16.877403846153847
+446	99	Industries not classified	24	99	21	24021	Frederick County, Maryland	no	8.0	4.0	155.0
+447	99	Industries not classified	24	99	21	24021	Frederick County, Maryland	yes	2.0	5.538461538461538	33.38461538461539
+448	99	Industries not classified	24	99	25	24025	Harford County, Maryland	no	6.4	3.4	204.2
+449	99	Industries not classified	24	99	27	24027	Howard County, Maryland	no	13.75	13.75	672.25
+450	99	Industries not classified	24	99	27	24027	Howard County, Maryland	yes	3.0	8.307692307692308	50.07692307692308
+451	99	Industries not classified	24	99	29	24029	Kent County, Maryland	yes	1.75	-2.70764652014652	46.91031364468864
+452	99	Industries not classified	24	99	31	24031	Montgomery County, Maryland	no	82.0	46.0	2367.2
+453	99	Industries not classified	24	99	33	24033	Prince George's County, Maryland	no	17.0	22.0	673.0
+454	99	Industries not classified	24	99	35	24035	Queen Anne's County, Maryland	yes	1.0	-1.219551282051282	19.868189102564102
+455	99	Industries not classified	24	99	37	24037	St. Mary's County, Maryland	yes	1.3333333333333333	-0.42368742368742357	31.096459096459096
+456	99	Industries not classified	24	99	39	24039	Somerset County, Maryland	yes	1.0	-1.44757326007326	25.58796932234432
+457	99	Industries not classified	24	99	41	24041	Talbot County, Maryland	no	3.0	0.0	126.0
+458	99	Industries not classified	24	99	41	24041	Talbot County, Maryland	yes	1.75	2.1304945054945055	45.182348901098905
+459	99	Industries not classified	24	99	43	24043	Washington County, Maryland	no	5.333333333333333	6.666666666666667	136.0
+460	99	Industries not classified	24	99	43	24043	Washington County, Maryland	yes	2.0	0.2596153846153846	33.93990384615385
+461	99	Industries not classified	24	99	45	24045	Wicomico County, Maryland	no	4.25	1.75	45.5
+462	99	Industries not classified	24	99	47	24047	Worcester County, Maryland	yes	1.5	-1.1707875457875456	39.74645146520146
+463	99	Industries not classified	24	99	510	24510	Baltimore city, Maryland	no	30.5	27.75	660.75
+464	99	Industries not classified	24	99	510	24510	Baltimore city, Maryland	yes	7.0	19.384615384615383	116.84615384615384
