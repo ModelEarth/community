@@ -1,264 +1,229 @@
-	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
-0	11	Agriculture, forestry, fishing and hunting	50	11	1	50001	Addison County, Vermont	0	16.333333333333332	24.333333333333332	833.0
-1	11	Agriculture, forestry, fishing and hunting	50	11	3	50003	Bennington County, Vermont	0	6.666666666666667	19.666666666666668	645.3333333333334
-2	11	Agriculture, forestry, fishing and hunting	50	11	5	50005	Caledonia County, Vermont	0	9.5	15.666666666666666	950.0
-3	11	Agriculture, forestry, fishing and hunting	50	11	7	50007	Chittenden County, Vermont	0	7.333333333333333	20.833333333333332	991.8333333333334
-4	11	Agriculture, forestry, fishing and hunting	50	11	9	50009	Essex County, Vermont	0	6.333333333333333	16.166666666666668	1032.0
-5	11	Agriculture, forestry, fishing and hunting	50	11	11	50011	Franklin County, Vermont	0	8.333333333333334	29.0	994.8333333333334
-6	11	Agriculture, forestry, fishing and hunting	50	11	15	50015	Lamoille County, Vermont	0	4.4	4.8	239.2
-7	11	Agriculture, forestry, fishing and hunting	50	11	15	50015	Lamoille County, Vermont	1	5.0	63.1578947368421	2019.2105263157894
-8	11	Agriculture, forestry, fishing and hunting	50	11	17	50017	Orange County, Vermont	0	13.5	23.166666666666668	1275.5
-9	11	Agriculture, forestry, fishing and hunting	50	11	19	50019	Orleans County, Vermont	0	10.5	23.666666666666668	977.5
-10	11	Agriculture, forestry, fishing and hunting	50	11	21	50021	Rutland County, Vermont	0	14.333333333333334	8.5	289.3333333333333
-11	11	Agriculture, forestry, fishing and hunting	50	11	23	50023	Washington County, Vermont	0	6.833333333333333	29.666666666666668	1117.0
-12	11	Agriculture, forestry, fishing and hunting	50	11	25	50025	Windham County, Vermont	0	11.0	148.0	7314.0
-13	11	Agriculture, forestry, fishing and hunting	50	11	25	50025	Windham County, Vermont	1	13.333333333333334	288.6140350877193	6863.263157894737
-14	11	Agriculture, forestry, fishing and hunting	50	11	27	50027	Windsor County, Vermont	0	21.666666666666668	28.833333333333332	992.3333333333334
-15	21	Mining, quarrying, and oil and gas extraction	50	21	1	50001	Addison County, Vermont	0	5.166666666666667	17.0	1328.0
-16	21	Mining, quarrying, and oil and gas extraction	50	21	5	50005	Caledonia County, Vermont	1	1.3333333333333333	13.729295125164692	843.3911462450593
-17	21	Mining, quarrying, and oil and gas extraction	50	21	7	50007	Chittenden County, Vermont	0	4.833333333333333	40.333333333333336	2555.5
-18	21	Mining, quarrying, and oil and gas extraction	50	21	9	50009	Essex County, Vermont	1	1.0	9.409295125164691	608.097812911726
-19	21	Mining, quarrying, and oil and gas extraction	50	21	11	50011	Franklin County, Vermont	0	3.0	29.666666666666668	1897.3333333333333
-20	21	Mining, quarrying, and oil and gas extraction	50	21	11	50011	Franklin County, Vermont	1	3.0	40.19272727272727	2166.0781818181817
-21	21	Mining, quarrying, and oil and gas extraction	50	21	13	50013	Grand Isle County, Vermont	1	1.0	12.96	705.8800000000001
-22	21	Mining, quarrying, and oil and gas extraction	50	21	17	50017	Orange County, Vermont	0	3.0	7.0	410.0
-23	21	Mining, quarrying, and oil and gas extraction	50	21	17	50017	Orange County, Vermont	1	3.0	40.19272727272727	2166.0781818181817
-24	21	Mining, quarrying, and oil and gas extraction	50	21	19	50019	Orleans County, Vermont	1	1.5	13.814802371541502	908.4025955204216
-25	21	Mining, quarrying, and oil and gas extraction	50	21	21	50021	Rutland County, Vermont	0	10.333333333333334	211.33333333333334	16256.333333333334
-26	21	Mining, quarrying, and oil and gas extraction	50	21	21	50021	Rutland County, Vermont	1	12.333333333333334	164.77090909090907	8886.459393939394
-27	21	Mining, quarrying, and oil and gas extraction	50	21	23	50023	Washington County, Vermont	0	8.5	48.166666666666664	4896.166666666667
-28	21	Mining, quarrying, and oil and gas extraction	50	21	25	50025	Windham County, Vermont	1	1.0	9.409295125164691	608.097812911726
-29	21	Mining, quarrying, and oil and gas extraction	50	21	27	50027	Windsor County, Vermont	0	6.333333333333333	40.0	3245.8333333333335
-30	22	Utilities	50	22	1	50001	Addison County, Vermont	1	3.0	35.7407845060797	8916.45815198422
-31	22	Utilities	50	22	3	50003	Bennington County, Vermont	1	2.5	37.673620412311834	7302.480581944197
-32	22	Utilities	50	22	5	50005	Caledonia County, Vermont	0	5.333333333333333	24.0	3678.8333333333335
-33	22	Utilities	50	22	7	50007	Chittenden County, Vermont	1	4.0	47.99457373823777	11806.146318140194
-34	22	Utilities	50	22	11	50011	Franklin County, Vermont	0	3.0	30.0	2249.0
-35	22	Utilities	50	22	11	50011	Franklin County, Vermont	1	3.0	45.834395952750185	8555.567964199246
-36	22	Utilities	50	22	15	50015	Lamoille County, Vermont	1	3.3333333333333335	34.62613041802938	9934.829661418182
-37	22	Utilities	50	22	17	50017	Orange County, Vermont	1	2.6666666666666665	-9.96065180102916	8492.653299028016
-38	22	Utilities	50	22	19	50019	Orleans County, Vermont	0	3.5	6.0	323.75
-39	22	Utilities	50	22	19	50019	Orleans County, Vermont	1	3.0	-11.665523156089193	9978.728130360207
-40	22	Utilities	50	22	21	50021	Rutland County, Vermont	0	8.0	447.3333333333333	40677.333333333336
-41	22	Utilities	50	22	21	50021	Rutland County, Vermont	1	8.333333333333334	-32.19870783304745	26834.101120640364
-42	22	Utilities	50	22	23	50023	Washington County, Vermont	0	6.333333333333333	177.83333333333334	15050.5
-43	22	Utilities	50	22	25	50025	Windham County, Vermont	0	17.0	367.0	40469.0
-44	22	Utilities	50	22	25	50025	Windham County, Vermont	1	14.0	75.4780135366928	44662.7451870567
-45	22	Utilities	50	22	27	50027	Windsor County, Vermont	1	6.833333333333333	74.7792878630858	20382.479142656182
-46	23	Construction	50	23	1	50001	Addison County, Vermont	0	175.0	689.6666666666666	33530.666666666664
-47	23	Construction	50	23	3	50003	Bennington County, Vermont	0	158.66666666666666	509.5	21629.166666666668
-48	23	Construction	50	23	5	50005	Caledonia County, Vermont	0	120.66666666666667	497.1666666666667	24819.5
-49	23	Construction	50	23	7	50007	Chittenden County, Vermont	0	595.0	5067.666666666667	291263.6666666667
-50	23	Construction	50	23	9	50009	Essex County, Vermont	0	15.833333333333334	32.5	1390.1666666666667
-51	23	Construction	50	23	11	50011	Franklin County, Vermont	0	134.33333333333334	451.3333333333333	21247.833333333332
-52	23	Construction	50	23	13	50013	Grand Isle County, Vermont	0	33.0	122.33333333333333	5021.5
-53	23	Construction	50	23	15	50015	Lamoille County, Vermont	0	141.33333333333334	596.8333333333334	30883.333333333332
-54	23	Construction	50	23	17	50017	Orange County, Vermont	0	126.0	520.8333333333334	26014.166666666668
-55	23	Construction	50	23	19	50019	Orleans County, Vermont	0	131.16666666666666	526.6666666666666	27513.5
-56	23	Construction	50	23	21	50021	Rutland County, Vermont	0	284.1666666666667	1294.1666666666667	59657.0
-57	23	Construction	50	23	23	50023	Washington County, Vermont	0	242.83333333333334	1141.5	58528.833333333336
-58	23	Construction	50	23	25	50025	Windham County, Vermont	0	221.16666666666666	891.6666666666666	43201.0
-59	23	Construction	50	23	27	50027	Windsor County, Vermont	0	308.3333333333333	1151.3333333333333	52745.0
-60	42	Wholesale trade	50	42	1	50001	Addison County, Vermont	0	38.5	327.3333333333333	16585.333333333332
-61	42	Wholesale trade	50	42	3	50003	Bennington County, Vermont	0	28.166666666666668	137.33333333333334	8676.666666666666
-62	42	Wholesale trade	50	42	5	50005	Caledonia County, Vermont	0	33.333333333333336	295.1666666666667	14849.833333333334
-63	42	Wholesale trade	50	42	7	50007	Chittenden County, Vermont	0	259.0	4979.833333333333	298754.6666666667
-64	42	Wholesale trade	50	42	9	50009	Essex County, Vermont	0	3.5	9.0	313.0
-65	42	Wholesale trade	50	42	9	50009	Essex County, Vermont	1	1.75	168.40306748466259	14474.351226993866
-66	42	Wholesale trade	50	42	11	50011	Franklin County, Vermont	0	49.333333333333336	790.6666666666666	34092.0
-67	42	Wholesale trade	50	42	13	50013	Grand Isle County, Vermont	0	7.0	8.333333333333334	286.5
-68	42	Wholesale trade	50	42	15	50015	Lamoille County, Vermont	0	26.833333333333332	301.3333333333333	14450.333333333334
-69	42	Wholesale trade	50	42	17	50017	Orange County, Vermont	0	30.833333333333332	219.66666666666666	9401.666666666666
-70	42	Wholesale trade	50	42	19	50019	Orleans County, Vermont	0	25.666666666666668	311.6666666666667	10898.166666666666
-71	42	Wholesale trade	50	42	21	50021	Rutland County, Vermont	0	84.83333333333333	786.0	34459.333333333336
-72	42	Wholesale trade	50	42	23	50023	Washington County, Vermont	0	80.66666666666667	876.3333333333334	39898.333333333336
-73	42	Wholesale trade	50	42	25	50025	Windham County, Vermont	0	50.5	1365.5	92170.66666666667
-74	42	Wholesale trade	50	42	27	50027	Windsor County, Vermont	0	63.333333333333336	762.5	38965.0
-75	51	Information	50	51	1	50001	Addison County, Vermont	0	15.0	86.2	2351.2
-76	51	Information	50	51	1	50001	Addison County, Vermont	1	13.0	166.06451612903226	4000.225806451613
-77	51	Information	50	51	3	50003	Bennington County, Vermont	0	38.5	401.1666666666667	21024.0
-78	51	Information	50	51	5	50005	Caledonia County, Vermont	0	27.666666666666668	264.0	8656.0
-79	51	Information	50	51	7	50007	Chittenden County, Vermont	0	148.16666666666666	3879.1666666666665	263062.3333333333
-80	51	Information	50	51	9	50009	Essex County, Vermont	1	1.0	16.553763440860216	278.37864823348696
-81	51	Information	50	51	11	50011	Franklin County, Vermont	0	16.166666666666668	89.33333333333333	5043.666666666667
-82	51	Information	50	51	13	50013	Grand Isle County, Vermont	0	4.166666666666667	3.3333333333333335	302.8333333333333
-83	51	Information	50	51	15	50015	Lamoille County, Vermont	0	17.0	132.83333333333334	6810.666666666667
-84	51	Information	50	51	17	50017	Orange County, Vermont	0	19.0	70.0	1782.6666666666667
-85	51	Information	50	51	19	50019	Orleans County, Vermont	0	21.25	66.75	2290.75
-86	51	Information	50	51	19	50019	Orleans County, Vermont	1	18.5	311.9139784946236	5106.008448540706
-87	51	Information	50	51	21	50021	Rutland County, Vermont	0	36.0	231.16666666666666	11607.333333333334
-88	51	Information	50	51	23	50023	Washington County, Vermont	0	51.666666666666664	504.5	23825.333333333332
-89	51	Information	50	51	25	50025	Windham County, Vermont	0	32.666666666666664	349.1666666666667	23186.0
-90	51	Information	50	51	27	50027	Windsor County, Vermont	0	52.666666666666664	642.8333333333334	34902.666666666664
-91	52	Finance and insurance	50	52	1	50001	Addison County, Vermont	0	41.333333333333336	325.3333333333333	16355.5
-92	52	Finance and insurance	50	52	3	50003	Bennington County, Vermont	0	60.333333333333336	321.8333333333333	18656.833333333332
-93	52	Finance and insurance	50	52	5	50005	Caledonia County, Vermont	0	41.333333333333336	293.6666666666667	14139.333333333334
-94	52	Finance and insurance	50	52	7	50007	Chittenden County, Vermont	0	303.0	3152.3333333333335	241460.0
-95	52	Finance and insurance	50	52	9	50009	Essex County, Vermont	0	3.8333333333333335	5.333333333333333	308.1666666666667
-96	52	Finance and insurance	50	52	11	50011	Franklin County, Vermont	0	50.833333333333336	298.5	12740.0
-97	52	Finance and insurance	50	52	13	50013	Grand Isle County, Vermont	0	6.5	15.166666666666666	829.0
-98	52	Finance and insurance	50	52	15	50015	Lamoille County, Vermont	0	28.666666666666668	222.5	11959.833333333334
-99	52	Finance and insurance	50	52	17	50017	Orange County, Vermont	0	29.333333333333332	74.66666666666667	7199.666666666667
-100	52	Finance and insurance	50	52	19	50019	Orleans County, Vermont	0	31.666666666666668	215.33333333333334	10426.5
-101	52	Finance and insurance	50	52	21	50021	Rutland County, Vermont	0	81.83333333333333	566.0	30196.5
-102	52	Finance and insurance	50	52	23	50023	Washington County, Vermont	0	101.83333333333333	2336.3333333333335	187002.66666666666
-103	52	Finance and insurance	50	52	25	50025	Windham County, Vermont	0	51.0	572.8333333333334	30874.166666666668
-104	52	Finance and insurance	50	52	27	50027	Windsor County, Vermont	0	86.33333333333333	419.8333333333333	30391.666666666668
-105	53	Real estate and rental and leasing	50	53	1	50001	Addison County, Vermont	0	35.166666666666664	79.0	3555.8333333333335
-106	53	Real estate and rental and leasing	50	53	3	50003	Bennington County, Vermont	0	50.5	210.0	6959.833333333333
-107	53	Real estate and rental and leasing	50	53	5	50005	Caledonia County, Vermont	0	24.166666666666668	79.83333333333333	3967.0
-108	53	Real estate and rental and leasing	50	53	7	50007	Chittenden County, Vermont	0	241.16666666666666	1305.3333333333333	64342.833333333336
-109	53	Real estate and rental and leasing	50	53	9	50009	Essex County, Vermont	0	3.0	2.0	58.0
-110	53	Real estate and rental and leasing	50	53	9	50009	Essex County, Vermont	1	2.0	27.78411222196388	633.518406572115
-111	53	Real estate and rental and leasing	50	53	11	50011	Franklin County, Vermont	0	24.833333333333332	77.0	2012.8333333333333
-112	53	Real estate and rental and leasing	50	53	13	50013	Grand Isle County, Vermont	0	6.333333333333333	7.0	265.1666666666667
-113	53	Real estate and rental and leasing	50	53	15	50015	Lamoille County, Vermont	0	34.25	364.0	16193.5
-114	53	Real estate and rental and leasing	50	53	15	50015	Lamoille County, Vermont	1	32.0	423.05882352941177	16847.529411764706
-115	53	Real estate and rental and leasing	50	53	17	50017	Orange County, Vermont	0	19.833333333333332	16.666666666666668	1194.0
-116	53	Real estate and rental and leasing	50	53	19	50019	Orleans County, Vermont	0	20.5	82.5	2882.6666666666665
-117	53	Real estate and rental and leasing	50	53	21	50021	Rutland County, Vermont	0	66.16666666666667	257.6666666666667	8136.833333333333
-118	53	Real estate and rental and leasing	50	53	23	50023	Washington County, Vermont	0	61.5	223.83333333333334	8312.0
-119	53	Real estate and rental and leasing	50	53	25	50025	Windham County, Vermont	0	77.0	270.8333333333333	8740.0
-120	53	Real estate and rental and leasing	50	53	27	50027	Windsor County, Vermont	0	95.83333333333333	299.3333333333333	10586.0
-121	54	Professional, scientific, and technical services	50	54	1	50001	Addison County, Vermont	0	128.16666666666666	522.0	36466.5
-122	54	Professional, scientific, and technical services	50	54	3	50003	Bennington County, Vermont	0	123.33333333333333	379.1666666666667	16849.166666666668
-123	54	Professional, scientific, and technical services	50	54	5	50005	Caledonia County, Vermont	0	73.33333333333333	287.0	16820.0
-124	54	Professional, scientific, and technical services	50	54	7	50007	Chittenden County, Vermont	0	759.6666666666666	7317.0	510058.6666666667
-125	54	Professional, scientific, and technical services	50	54	9	50009	Essex County, Vermont	0	5.166666666666667	16.166666666666668	1767.0
-126	54	Professional, scientific, and technical services	50	54	11	50011	Franklin County, Vermont	0	62.666666666666664	242.83333333333334	14023.166666666666
-127	54	Professional, scientific, and technical services	50	54	13	50013	Grand Isle County, Vermont	0	18.333333333333332	29.5	1389.0
-128	54	Professional, scientific, and technical services	50	54	15	50015	Lamoille County, Vermont	0	85.83333333333333	335.1666666666667	16341.333333333334
-129	54	Professional, scientific, and technical services	50	54	17	50017	Orange County, Vermont	0	68.83333333333333	319.8333333333333	19602.666666666668
-130	54	Professional, scientific, and technical services	50	54	19	50019	Orleans County, Vermont	0	48.5	166.5	6408.166666666667
-131	54	Professional, scientific, and technical services	50	54	21	50021	Rutland County, Vermont	0	163.66666666666666	638.1666666666666	31772.333333333332
-132	54	Professional, scientific, and technical services	50	54	23	50023	Washington County, Vermont	0	246.0	992.0	60924.5
-133	54	Professional, scientific, and technical services	50	54	25	50025	Windham County, Vermont	0	119.5	505.6666666666667	24034.166666666668
-134	54	Professional, scientific, and technical services	50	54	27	50027	Windsor County, Vermont	0	188.0	1026.3333333333333	55925.5
-135	55	Management of companies and enterprises	50	55	1	50001	Addison County, Vermont	1	2.8333333333333335	127.70074630688221	3567.1463121324814
-136	55	Management of companies and enterprises	50	55	3	50003	Bennington County, Vermont	0	5.0	0.0	2680.0
-137	55	Management of companies and enterprises	50	55	3	50003	Bennington County, Vermont	1	4.4	189.9992156862745	5267.431730899256
-138	55	Management of companies and enterprises	50	55	5	50005	Caledonia County, Vermont	1	2.3333333333333335	111.36330956625075	2914.445039389842
-139	55	Management of companies and enterprises	50	55	7	50007	Chittenden County, Vermont	0	37.333333333333336	644.6666666666666	83728.16666666667
-140	55	Management of companies and enterprises	50	55	11	50011	Franklin County, Vermont	1	1.0	63.93030303030303	1285.3151515151517
-141	55	Management of companies and enterprises	50	55	15	50015	Lamoille County, Vermont	0	3.8	9.6	435.0
-142	55	Management of companies and enterprises	50	55	15	50015	Lamoille County, Vermont	1	4.0	257.57575757575756	5757.454545454546
-143	55	Management of companies and enterprises	50	55	17	50017	Orange County, Vermont	1	2.3333333333333335	106.9646351957711	2872.463721136313
-144	55	Management of companies and enterprises	50	55	19	50019	Orleans County, Vermont	1	1.6666666666666667	68.74310754604872	2057.568271713074
-145	55	Management of companies and enterprises	50	55	21	50021	Rutland County, Vermont	0	9.666666666666666	283.6666666666667	24476.666666666668
-146	55	Management of companies and enterprises	50	55	21	50021	Rutland County, Vermont	1	10.666666666666666	747.4429118773946	14757.138697318007
-147	55	Management of companies and enterprises	50	55	23	50023	Washington County, Vermont	0	12.666666666666666	471.1666666666667	33881.166666666664
-148	55	Management of companies and enterprises	50	55	25	50025	Windham County, Vermont	0	4.0	33.5	1229.5
-149	55	Management of companies and enterprises	50	55	25	50025	Windham County, Vermont	1	3.25	108.42854892740795	3905.3196771851376
-150	55	Management of companies and enterprises	50	55	27	50027	Windsor County, Vermont	0	4.666666666666667	83.0	7261.666666666667
-151	55	Management of companies and enterprises	50	55	27	50027	Windsor County, Vermont	1	4.333333333333333	303.3937304075235	6039.892650644375
-152	56	Administrative and support and waste management and remediation services	50	56	1	50001	Addison County, Vermont	0	57.666666666666664	138.0	10046.666666666666
-153	56	Administrative and support and waste management and remediation services	50	56	3	50003	Bennington County, Vermont	0	84.0	586.5	18328.833333333332
-154	56	Administrative and support and waste management and remediation services	50	56	5	50005	Caledonia County, Vermont	0	38.5	94.66666666666667	3033.5
-155	56	Administrative and support and waste management and remediation services	50	56	7	50007	Chittenden County, Vermont	0	289.8333333333333	3067.8333333333335	86609.16666666667
-156	56	Administrative and support and waste management and remediation services	50	56	9	50009	Essex County, Vermont	0	5.6	1.8	75.4
-157	56	Administrative and support and waste management and remediation services	50	56	9	50009	Essex County, Vermont	1	3.0	234.0	1301.0
-158	56	Administrative and support and waste management and remediation services	50	56	11	50011	Franklin County, Vermont	0	53.333333333333336	486.6666666666667	11322.666666666666
-159	56	Administrative and support and waste management and remediation services	50	56	13	50013	Grand Isle County, Vermont	0	8.333333333333334	9.666666666666666	840.5
-160	56	Administrative and support and waste management and remediation services	50	56	15	50015	Lamoille County, Vermont	0	67.16666666666667	207.83333333333334	9695.0
-161	56	Administrative and support and waste management and remediation services	50	56	17	50017	Orange County, Vermont	0	36.5	102.16666666666667	4278.833333333333
-162	56	Administrative and support and waste management and remediation services	50	56	19	50019	Orleans County, Vermont	0	35.0	140.33333333333334	5469.166666666667
-163	56	Administrative and support and waste management and remediation services	50	56	21	50021	Rutland County, Vermont	0	125.16666666666667	931.8333333333334	28739.0
-164	56	Administrative and support and waste management and remediation services	50	56	23	50023	Washington County, Vermont	0	101.0	671.1666666666666	28107.166666666668
-165	56	Administrative and support and waste management and remediation services	50	56	25	50025	Windham County, Vermont	0	91.0	590.1666666666666	24046.833333333332
-166	56	Administrative and support and waste management and remediation services	50	56	27	50027	Windsor County, Vermont	0	102.33333333333333	442.6666666666667	15920.833333333334
-167	61	Educational services	50	61	1	50001	Addison County, Vermont	0	27.0	3579.0	115643.0
-168	61	Educational services	50	61	1	50001	Addison County, Vermont	1	24.4	2044.0515920398007	67301.97347547975
-169	61	Educational services	50	61	3	50003	Bennington County, Vermont	0	23.333333333333332	1133.1666666666667	38390.666666666664
-170	61	Educational services	50	61	5	50005	Caledonia County, Vermont	0	16.333333333333332	582.0	22179.166666666668
-171	61	Educational services	50	61	7	50007	Chittenden County, Vermont	0	120.0	4017.0	100244.5
-172	61	Educational services	50	61	9	50009	Essex County, Vermont	1	1.0	69.00379945510542	2159.4667614309406
-173	61	Educational services	50	61	11	50011	Franklin County, Vermont	0	10.25	45.25	1000.0
-174	61	Educational services	50	61	11	50011	Franklin County, Vermont	1	7.0	574.5064935064935	19398.071428571428
-175	61	Educational services	50	61	15	50015	Lamoille County, Vermont	0	13.666666666666666	169.66666666666666	3794.6666666666665
-176	61	Educational services	50	61	17	50017	Orange County, Vermont	0	13.666666666666666	597.6666666666666	28837.666666666668
-177	61	Educational services	50	61	17	50017	Orange County, Vermont	1	13.666666666666666	1174.527946127946	39106.72592592592
-178	61	Educational services	50	61	19	50019	Orleans County, Vermont	0	8.8	146.6	3859.0
-179	61	Educational services	50	61	19	50019	Orleans County, Vermont	1	7.0	649.9111111111112	21585.044444444444
-180	61	Educational services	50	61	21	50021	Rutland County, Vermont	0	24.833333333333332	708.5	13738.5
-181	61	Educational services	50	61	23	50023	Washington County, Vermont	0	51.5	2422.6666666666665	66790.16666666667
-182	61	Educational services	50	61	25	50025	Windham County, Vermont	0	48.833333333333336	1856.5	57591.666666666664
-183	61	Educational services	50	61	27	50027	Windsor County, Vermont	0	27.166666666666668	478.8333333333333	17152.5
-184	62	Health care and social assistance	50	62	1	50001	Addison County, Vermont	0	116.66666666666667	2103.3333333333335	77453.83333333333
-185	62	Health care and social assistance	50	62	3	50003	Bennington County, Vermont	0	153.5	3129.1666666666665	135210.66666666666
-186	62	Health care and social assistance	50	62	5	50005	Caledonia County, Vermont	0	94.0	1775.6666666666667	68549.83333333333
-187	62	Health care and social assistance	50	62	7	50007	Chittenden County, Vermont	0	578.6666666666666	15711.166666666666	668784.8333333334
-188	62	Health care and social assistance	50	62	9	50009	Essex County, Vermont	0	9.0	74.33333333333333	2150.3333333333335
-189	62	Health care and social assistance	50	62	9	50009	Essex County, Vermont	1	8.666666666666666	92.66666666666667	3300.0
-190	62	Health care and social assistance	50	62	11	50011	Franklin County, Vermont	0	104.0	2758.6666666666665	104609.0
-191	62	Health care and social assistance	50	62	13	50013	Grand Isle County, Vermont	0	11.333333333333334	40.666666666666664	1329.8333333333333
-192	62	Health care and social assistance	50	62	15	50015	Lamoille County, Vermont	0	80.5	1703.8333333333333	67438.33333333333
-193	62	Health care and social assistance	50	62	17	50017	Orange County, Vermont	0	79.66666666666667	1519.3333333333333	61838.5
-194	62	Health care and social assistance	50	62	19	50019	Orleans County, Vermont	0	78.83333333333333	1721.0	71642.83333333333
-195	62	Health care and social assistance	50	62	21	50021	Rutland County, Vermont	0	204.16666666666666	4642.333333333333	193831.0
-196	62	Health care and social assistance	50	62	23	50023	Washington County, Vermont	0	236.33333333333334	4424.0	184046.5
-197	62	Health care and social assistance	50	62	25	50025	Windham County, Vermont	0	174.33333333333334	3463.8333333333335	139290.16666666666
-198	62	Health care and social assistance	50	62	27	50027	Windsor County, Vermont	0	171.83333333333334	3952.0	218419.33333333334
-199	71	Arts, entertainment, and recreation	50	71	1	50001	Addison County, Vermont	0	28.0	169.0	3119.0
-200	71	Arts, entertainment, and recreation	50	71	3	50003	Bennington County, Vermont	0	37.166666666666664	376.1666666666667	12420.5
-201	71	Arts, entertainment, and recreation	50	71	5	50005	Caledonia County, Vermont	0	13.333333333333334	109.66666666666667	3656.1666666666665
-202	71	Arts, entertainment, and recreation	50	71	7	50007	Chittenden County, Vermont	0	115.0	2090.8333333333335	44283.0
-203	71	Arts, entertainment, and recreation	50	71	9	50009	Essex County, Vermont	0	4.0	9.333333333333334	75.66666666666667
-204	71	Arts, entertainment, and recreation	50	71	9	50009	Essex County, Vermont	1	3.0	202.2268301678038	1312.8835146597823
-205	71	Arts, entertainment, and recreation	50	71	11	50011	Franklin County, Vermont	0	13.166666666666666	36.833333333333336	945.8333333333334
-206	71	Arts, entertainment, and recreation	50	71	13	50013	Grand Isle County, Vermont	0	7.0	7.666666666666667	531.6666666666666
-207	71	Arts, entertainment, and recreation	50	71	15	50015	Lamoille County, Vermont	0	27.333333333333332	122.5	6120.333333333333
-208	71	Arts, entertainment, and recreation	50	71	17	50017	Orange County, Vermont	0	16.833333333333332	35.5	1016.3333333333334
-209	71	Arts, entertainment, and recreation	50	71	19	50019	Orleans County, Vermont	0	17.0	61.0	2179.6666666666665
-210	71	Arts, entertainment, and recreation	50	71	21	50021	Rutland County, Vermont	0	47.0	1554.3333333333333	24048.666666666668
-211	71	Arts, entertainment, and recreation	50	71	21	50021	Rutland County, Vermont	1	38.333333333333336	2636.719349683447	16842.145018132644
-212	71	Arts, entertainment, and recreation	50	71	23	50023	Washington County, Vermont	0	54.333333333333336	445.0	10242.0
-213	71	Arts, entertainment, and recreation	50	71	25	50025	Windham County, Vermont	0	44.5	1077.25	24874.0
-214	71	Arts, entertainment, and recreation	50	71	25	50025	Windham County, Vermont	1	46.0	2302.0807302231237	19297.457200811357
-215	71	Arts, entertainment, and recreation	50	71	27	50027	Windsor County, Vermont	0	50.5	448.8333333333333	10732.666666666666
-216	72	Accommodation and food services	50	72	1	50001	Addison County, Vermont	0	84.83333333333333	979.3333333333334	23919.0
-217	72	Accommodation and food services	50	72	3	50003	Bennington County, Vermont	0	137.16666666666666	1670.5	34250.0
-218	72	Accommodation and food services	50	72	5	50005	Caledonia County, Vermont	0	69.83333333333333	695.6666666666666	11085.166666666666
-219	72	Accommodation and food services	50	72	7	50007	Chittenden County, Vermont	0	450.8333333333333	8603.833333333334	164694.0
-220	72	Accommodation and food services	50	72	9	50009	Essex County, Vermont	0	12.166666666666666	43.666666666666664	685.8333333333334
-221	72	Accommodation and food services	50	72	11	50011	Franklin County, Vermont	0	91.0	1053.8333333333333	17815.666666666668
-222	72	Accommodation and food services	50	72	13	50013	Grand Isle County, Vermont	0	23.166666666666668	56.5	3133.1666666666665
-223	72	Accommodation and food services	50	72	15	50015	Lamoille County, Vermont	0	120.5	3927.3333333333335	70539.33333333333
-224	72	Accommodation and food services	50	72	17	50017	Orange County, Vermont	0	60.166666666666664	594.3333333333334	12994.5
-225	72	Accommodation and food services	50	72	19	50019	Orleans County, Vermont	0	60.166666666666664	1584.8333333333333	26204.0
-226	72	Accommodation and food services	50	72	21	50021	Rutland County, Vermont	0	247.66666666666666	2793.8333333333335	44029.5
-227	72	Accommodation and food services	50	72	23	50023	Washington County, Vermont	0	168.83333333333334	3207.8333333333335	51602.0
-228	72	Accommodation and food services	50	72	25	50025	Windham County, Vermont	0	212.83333333333334	3560.5	50783.333333333336
-229	72	Accommodation and food services	50	72	27	50027	Windsor County, Vermont	0	198.5	3358.6666666666665	61581.833333333336
-230	81	Other services (except public administration)	50	81	1	50001	Addison County, Vermont	0	107.66666666666667	452.6666666666667	13810.0
-231	81	Other services (except public administration)	50	81	3	50003	Bennington County, Vermont	0	123.66666666666667	505.8333333333333	10967.333333333334
-232	81	Other services (except public administration)	50	81	5	50005	Caledonia County, Vermont	0	93.33333333333333	345.1666666666667	6988.5
-233	81	Other services (except public administration)	50	81	7	50007	Chittenden County, Vermont	0	527.3333333333334	3281.5	94702.16666666667
-234	81	Other services (except public administration)	50	81	9	50009	Essex County, Vermont	0	11.166666666666666	30.333333333333332	620.5
-235	81	Other services (except public administration)	50	81	11	50011	Franklin County, Vermont	0	103.16666666666667	385.5	8990.5
-236	81	Other services (except public administration)	50	81	13	50013	Grand Isle County, Vermont	0	16.0	29.833333333333332	761.1666666666666
-237	81	Other services (except public administration)	50	81	15	50015	Lamoille County, Vermont	0	79.66666666666667	332.0	9035.833333333334
-238	81	Other services (except public administration)	50	81	17	50017	Orange County, Vermont	0	69.33333333333333	218.5	5810.666666666667
-239	81	Other services (except public administration)	50	81	19	50019	Orleans County, Vermont	0	82.66666666666667	298.0	6088.5
-240	81	Other services (except public administration)	50	81	21	50021	Rutland County, Vermont	0	201.0	944.0	21753.5
-241	81	Other services (except public administration)	50	81	23	50023	Washington County, Vermont	0	269.8333333333333	1268.5	48708.0
-242	81	Other services (except public administration)	50	81	25	50025	Windham County, Vermont	0	157.83333333333334	563.5	13594.666666666666
-243	81	Other services (except public administration)	50	81	27	50027	Windsor County, Vermont	0	187.5	898.0	26181.0
-244	99	Industries not classified	50	99	1	50001	Addison County, Vermont	0	4.6	3.2	99.2
-245	99	Industries not classified	50	99	1	50001	Addison County, Vermont	1	2.0	-1.0	69.66666666666666
-246	99	Industries not classified	50	99	3	50003	Bennington County, Vermont	0	3.0	4.0	93.0
-247	99	Industries not classified	50	99	3	50003	Bennington County, Vermont	1	1.75	0.049107142857142794	59.08779761904762
-248	99	Industries not classified	50	99	5	50005	Caledonia County, Vermont	1	1.2	-0.10321428571428574	32.375238095238096
-249	99	Industries not classified	50	99	7	50007	Chittenden County, Vermont	0	17.0	14.2	564.8
-250	99	Industries not classified	50	99	7	50007	Chittenden County, Vermont	1	3.0	-1.5	104.5
-251	99	Industries not classified	50	99	11	50011	Franklin County, Vermont	1	2.0	-1.0	69.66666666666666
-252	99	Industries not classified	50	99	15	50015	Lamoille County, Vermont	1	1.8	0.5185714285714286	45.225476190476186
-253	99	Industries not classified	50	99	17	50017	Orange County, Vermont	0	3.25	5.0	108.0
-254	99	Industries not classified	50	99	17	50017	Orange County, Vermont	1	1.5	-2.75	47.291666666666664
-255	99	Industries not classified	50	99	19	50019	Orleans County, Vermont	0	3.0	2.0	32.0
-256	99	Industries not classified	50	99	19	50019	Orleans County, Vermont	1	1.0	1.4732142857142856	33.00892857142857
-257	99	Industries not classified	50	99	21	50021	Rutland County, Vermont	0	4.666666666666667	3.6666666666666665	115.33333333333333
-258	99	Industries not classified	50	99	23	50023	Washington County, Vermont	0	6.5	9.0	77.0
-259	99	Industries not classified	50	99	23	50023	Washington County, Vermont	1	2.0	1.3044642857142859	49.5422619047619
-260	99	Industries not classified	50	99	25	50025	Windham County, Vermont	0	5.166666666666667	2.6666666666666665	66.5
-261	99	Industries not classified	50	99	27	50027	Windsor County, Vermont	0	4.25	2.5	195.75
-262	99	Industries not classified	50	99	27	50027	Windsor County, Vermont	1	1.5	1.125	55.291666666666664
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estab	emp	payann	estimate
+0	11	Agriculture, forestry, fishing and hunting	50	11	1	50001	Addison County, Vermont	16.11111111111111	26.11111111111111	849.6666666666666	0.6666666666666666
+1	11	Agriculture, forestry, fishing and hunting	50	11	3	50003	Bennington County, Vermont	6.222222222222222	21.88888888888889	639.1111111111111	0.6666666666666666
+2	11	Agriculture, forestry, fishing and hunting	50	11	5	50005	Caledonia County, Vermont	10.5	25.88888888888889	1104.0	0.6666666666666666
+3	11	Agriculture, forestry, fishing and hunting	50	11	7	50007	Chittenden County, Vermont	7.111111111111111	21.61111111111111	992.6111111111111	0.6666666666666666
+4	11	Agriculture, forestry, fishing and hunting	50	11	9	50009	Essex County, Vermont	5.444444444444445	20.055555555555557	1168.6666666666667	0.6666666666666666
+5	11	Agriculture, forestry, fishing and hunting	50	11	11	50011	Franklin County, Vermont	10.11111111111111	36.333333333333336	948.2777777777778	0.6666666666666666
+6	11	Agriculture, forestry, fishing and hunting	50	11	15	50015	Lamoille County, Vermont	4.166666666666667	10.175438596491228	379.2894736842105	0.7222222222222222
+7	11	Agriculture, forestry, fishing and hunting	50	11	17	50017	Orange County, Vermont	11.833333333333334	26.38888888888889	1232.5	0.6666666666666666
+8	11	Agriculture, forestry, fishing and hunting	50	11	19	50019	Orleans County, Vermont	10.166666666666666	24.555555555555557	1039.1666666666667	0.6666666666666666
+9	11	Agriculture, forestry, fishing and hunting	50	11	21	50021	Rutland County, Vermont	15.444444444444445	14.166666666666666	299.1111111111111	0.6666666666666666
+10	11	Agriculture, forestry, fishing and hunting	50	11	23	50023	Washington County, Vermont	6.277777777777778	28.555555555555557	1114.3333333333333	0.6666666666666666
+11	11	Agriculture, forestry, fishing and hunting	50	11	25	50025	Windham County, Vermont	11.38888888888889	172.10233918128654	7238.877192982456	0.8333333333333334
+12	11	Agriculture, forestry, fishing and hunting	50	11	27	50027	Windsor County, Vermont	21.88888888888889	35.611111111111114	1053.4444444444443	0.6666666666666666
+13	21	Mining, quarrying, and oil and gas extraction	50	21	1	50001	Addison County, Vermont	5.6875	20.75	1425.5	0.625
+14	21	Mining, quarrying, and oil and gas extraction	50	21	5	50005	Caledonia County, Vermont	1.125	10.719137845849806	772.589614624506	1.0
+15	21	Mining, quarrying, and oil and gas extraction	50	21	7	50007	Chittenden County, Vermont	4.9375	41.375	2690.8125	0.625
+16	21	Mining, quarrying, and oil and gas extraction	50	21	9	50009	Essex County, Vermont	1.0	9.099137845849805	684.354614624506	1.0
+17	21	Mining, quarrying, and oil and gas extraction	50	21	11	50011	Franklin County, Vermont	3.0	32.47363636363636	1960.014659090909	0.8125
+18	21	Mining, quarrying, and oil and gas extraction	50	21	13	50013	Grand Isle County, Vermont	1.0	12.96	705.8800000000001	1.0
+19	21	Mining, quarrying, and oil and gas extraction	50	21	17	50017	Orange County, Vermont	3.0	13.848636363636363	746.764659090909	0.8125
+20	21	Mining, quarrying, and oil and gas extraction	50	21	19	50019	Orleans County, Vermont	1.8125	16.321855237154153	1253.2868428853756	1.0
+21	21	Mining, quarrying, and oil and gas extraction	50	21	21	50021	Rutland County, Vermont	10.5	184.89454545454544	14790.523636363636	0.8125
+22	21	Mining, quarrying, and oil and gas extraction	50	21	23	50023	Washington County, Vermont	8.1875	53.0625	5129.8125	0.625
+23	21	Mining, quarrying, and oil and gas extraction	50	21	25	50025	Windham County, Vermont	1.0	9.099137845849805	684.354614624506	1.0
+24	21	Mining, quarrying, and oil and gas extraction	50	21	27	50027	Windsor County, Vermont	6.125	45.625	3695.9375	0.625
+25	22	Utilities	50	22	1	50001	Addison County, Vermont	3.0	60.97335870590892	8146.8169682844045	1.0
+26	22	Utilities	50	22	3	50003	Bennington County, Vermont	2.8125	61.69817217074598	7541.575379519396	1.0
+27	22	Utilities	50	22	5	50005	Caledonia County, Vermont	5.125	38.375	3868.9375	0.625
+28	22	Utilities	50	22	7	50007	Chittenden County, Vermont	4.0	81.42538450667787	10831.49841768967	1.0
+29	22	Utilities	50	22	11	50011	Franklin County, Vermont	3.0	63.76881325136347	7617.3226501025865	0.9375
+30	22	Utilities	50	22	15	50015	Lamoille County, Vermont	3.125	60.55536342289005	8528.706284322141	1.0
+31	22	Utilities	50	22	17	50017	Orange County, Vermont	2.6666666666666665	-9.96065180102916	8492.653299028016	1.0
+32	22	Utilities	50	22	19	50019	Orleans County, Vermont	3.75	3.166809605488851	1517.0285162950258	0.75
+33	22	Utilities	50	22	21	50021	Rutland County, Vermont	8.0625	354.0877422813036	40395.26896012007	0.8125
+34	22	Utilities	50	22	23	50023	Washington County, Vermont	6.125	174.1875	14682.0625	0.625
+35	22	Utilities	50	22	25	50025	Windham County, Vermont	16.25	294.1195033841732	41517.43629676418	0.875
+36	22	Utilities	50	22	27	50027	Windsor County, Vermont	6.3125	123.18336198091525	17249.720001076712	1.0
+37	23	Construction	50	23	1	50001	Addison County, Vermont	175.68421052631578	734.3684210526316	36429.21052631579	0.6842105263157895
+38	23	Construction	50	23	3	50003	Bennington County, Vermont	159.57894736842104	533.1052631578947	23123.36842105263	0.6842105263157895
+39	23	Construction	50	23	5	50005	Caledonia County, Vermont	118.15789473684211	530.578947368421	25830.42105263158	0.6842105263157895
+40	23	Construction	50	23	7	50007	Chittenden County, Vermont	603.2105263157895	4959.105263157895	286434.7368421053	0.6842105263157895
+41	23	Construction	50	23	9	50009	Essex County, Vermont	16.63157894736842	34.89473684210526	1445.4736842105262	0.6842105263157895
+42	23	Construction	50	23	11	50011	Franklin County, Vermont	134.78947368421052	473.6842105263158	22385.105263157893	0.6842105263157895
+43	23	Construction	50	23	13	50013	Grand Isle County, Vermont	33.0	113.21052631578948	4837.789473684211	0.6842105263157895
+44	23	Construction	50	23	15	50015	Lamoille County, Vermont	145.89473684210526	649.6315789473684	33000.73684210526	0.6842105263157895
+45	23	Construction	50	23	17	50017	Orange County, Vermont	128.05263157894737	551.0526315789474	28693.42105263158	0.6842105263157895
+46	23	Construction	50	23	19	50019	Orleans County, Vermont	129.68421052631578	536.4736842105264	28046.842105263157	0.6842105263157895
+47	23	Construction	50	23	21	50021	Rutland County, Vermont	289.5263157894737	1365.8947368421052	65285.31578947369	0.6842105263157895
+48	23	Construction	50	23	23	50023	Washington County, Vermont	240.89473684210526	1174.0	61794.0	0.6842105263157895
+49	23	Construction	50	23	25	50025	Windham County, Vermont	223.10526315789474	928.1578947368421	47230.31578947369	0.6842105263157895
+50	23	Construction	50	23	27	50027	Windsor County, Vermont	300.57894736842104	1159.3157894736842	55943.0	0.6842105263157895
+51	42	Wholesale trade	50	42	1	50001	Addison County, Vermont	38.8421052631579	332.57894736842104	17064.736842105263	0.6842105263157895
+52	42	Wholesale trade	50	42	3	50003	Bennington County, Vermont	28.736842105263158	157.6315789473684	9283.105263157895	0.6842105263157895
+53	42	Wholesale trade	50	42	5	50005	Caledonia County, Vermont	33.10526315789474	284.10526315789474	14879.368421052632	0.6842105263157895
+54	42	Wholesale trade	50	42	7	50007	Chittenden County, Vermont	259.0	5265.263157894737	323458.3157894737	0.6842105263157895
+55	42	Wholesale trade	50	42	9	50009	Essex County, Vermont	1.4210526315789473	46.3985146916371	3656.5615111398142	0.8947368421052632
+56	42	Wholesale trade	50	42	11	50011	Franklin County, Vermont	51.1578947368421	868.8947368421053	38282.78947368421	0.6842105263157895
+57	42	Wholesale trade	50	42	13	50013	Grand Isle County, Vermont	7.0	10.157894736842104	319.0	0.6842105263157895
+58	42	Wholesale trade	50	42	15	50015	Lamoille County, Vermont	26.263157894736842	324.36842105263156	14430.947368421053	0.6842105263157895
+59	42	Wholesale trade	50	42	17	50017	Orange County, Vermont	27.526315789473685	201.42105263157896	8801.842105263158	0.6842105263157895
+60	42	Wholesale trade	50	42	19	50019	Orleans County, Vermont	25.894736842105264	318.05263157894734	11255.894736842105	0.6842105263157895
+61	42	Wholesale trade	50	42	21	50021	Rutland County, Vermont	83.57894736842105	757.9473684210526	34224.42105263158	0.6842105263157895
+62	42	Wholesale trade	50	42	23	50023	Washington County, Vermont	82.94736842105263	874.7368421052631	41853.57894736842	0.6842105263157895
+63	42	Wholesale trade	50	42	25	50025	Windham County, Vermont	48.10526315789474	1367.2105263157894	94029.8947368421	0.6842105263157895
+64	42	Wholesale trade	50	42	27	50027	Windsor County, Vermont	63.78947368421053	769.0	41407.63157894737	0.6842105263157895
+65	51	Information	50	51	1	50001	Addison County, Vermont	15.555555555555555	93.83691756272401	2460.679211469534	0.7222222222222222
+66	51	Information	50	51	3	50003	Bennington County, Vermont	40.166666666666664	410.3888888888889	21238.666666666668	0.6666666666666666
+67	51	Information	50	51	5	50005	Caledonia County, Vermont	26.555555555555557	264.0	8020.0	0.6666666666666666
+68	51	Information	50	51	7	50007	Chittenden County, Vermont	152.72222222222223	3965.0555555555557	268666.1111111111	0.6666666666666666
+69	51	Information	50	51	9	50009	Essex County, Vermont	1.0	16.553763440860216	278.37864823348696	1.0
+70	51	Information	50	51	11	50011	Franklin County, Vermont	16.055555555555557	118.44444444444444	5045.222222222223	0.6666666666666666
+71	51	Information	50	51	13	50013	Grand Isle County, Vermont	4.055555555555555	5.777777777777778	298.94444444444446	0.6666666666666666
+72	51	Information	50	51	15	50015	Lamoille County, Vermont	16.333333333333332	123.61111111111111	6926.222222222223	0.6666666666666666
+73	51	Information	50	51	17	50017	Orange County, Vermont	18.333333333333332	66.66666666666667	1777.5555555555557	0.6666666666666666
+74	51	Information	50	51	19	50019	Orleans County, Vermont	21.444444444444443	110.82377538829151	2653.7231609489672	0.7777777777777778
+75	51	Information	50	51	21	50021	Rutland County, Vermont	36.0	259.05555555555554	11080.444444444445	0.6666666666666666
+76	51	Information	50	51	23	50023	Washington County, Vermont	53.888888888888886	514.1666666666666	25509.11111111111	0.6666666666666666
+77	51	Information	50	51	25	50025	Windham County, Vermont	32.22222222222222	381.05555555555554	27199.333333333332	0.6666666666666666
+78	51	Information	50	51	27	50027	Windsor County, Vermont	52.22222222222222	635.6111111111111	33379.555555555555	0.6666666666666666
+79	52	Finance and insurance	50	52	1	50001	Addison County, Vermont	39.73684210526316	323.7368421052632	16832.052631578947	0.6842105263157895
+80	52	Finance and insurance	50	52	3	50003	Bennington County, Vermont	59.421052631578945	315.7894736842105	18571.42105263158	0.6842105263157895
+81	52	Finance and insurance	50	52	5	50005	Caledonia County, Vermont	40.421052631578945	281.57894736842104	14128.842105263158	0.6842105263157895
+82	52	Finance and insurance	50	52	7	50007	Chittenden County, Vermont	299.57894736842104	3163.0526315789475	243560.52631578947	0.6842105263157895
+83	52	Finance and insurance	50	52	9	50009	Essex County, Vermont	3.9473684210526314	9.210526315789474	280.0	0.6842105263157895
+84	52	Finance and insurance	50	52	11	50011	Franklin County, Vermont	49.578947368421055	292.6842105263158	12943.894736842105	0.6842105263157895
+85	52	Finance and insurance	50	52	13	50013	Grand Isle County, Vermont	6.157894736842105	18.473684210526315	918.6315789473684	0.6842105263157895
+86	52	Finance and insurance	50	52	15	50015	Lamoille County, Vermont	28.210526315789473	235.1578947368421	13110.78947368421	0.6842105263157895
+87	52	Finance and insurance	50	52	17	50017	Orange County, Vermont	28.42105263157895	122.78947368421052	7048.684210526316	0.6842105263157895
+88	52	Finance and insurance	50	52	19	50019	Orleans County, Vermont	32.578947368421055	215.78947368421052	10697.78947368421	0.6842105263157895
+89	52	Finance and insurance	50	52	21	50021	Rutland County, Vermont	79.89473684210526	544.7894736842105	30598.473684210527	0.6842105263157895
+90	52	Finance and insurance	50	52	23	50023	Washington County, Vermont	103.3157894736842	2436.0	199994.0	0.6842105263157895
+91	52	Finance and insurance	50	52	25	50025	Windham County, Vermont	48.94736842105263	585.2631578947369	31863.42105263158	0.6842105263157895
+92	52	Finance and insurance	50	52	27	50027	Windsor County, Vermont	85.42105263157895	474.6842105263158	26701.947368421053	0.6842105263157895
+93	53	Real estate and rental and leasing	50	53	1	50001	Addison County, Vermont	33.0	89.26315789473684	4073.2105263157896	0.6842105263157895
+94	53	Real estate and rental and leasing	50	53	3	50003	Bennington County, Vermont	48.10526315789474	197.68421052631578	6972.9473684210525	0.6842105263157895
+95	53	Real estate and rental and leasing	50	53	5	50005	Caledonia County, Vermont	22.0	74.47368421052632	4611.526315789473	0.6842105263157895
+96	53	Real estate and rental and leasing	50	53	7	50007	Chittenden County, Vermont	241.05263157894737	1334.5263157894738	69865.21052631579	0.6842105263157895
+97	53	Real estate and rental and leasing	50	53	9	50009	Essex County, Vermont	2.0526315789473686	13.600908805377768	448.0027982068634	0.9473684210526315
+98	53	Real estate and rental and leasing	50	53	11	50011	Franklin County, Vermont	24.94736842105263	72.89473684210526	2066.315789473684	0.6842105263157895
+99	53	Real estate and rental and leasing	50	53	13	50013	Grand Isle County, Vermont	6.105263157894737	8.368421052631579	286.94736842105266	0.6842105263157895
+100	53	Real estate and rental and leasing	50	53	15	50015	Lamoille County, Vermont	35.21052631578947	429.05882352941177	19184.950464396283	0.7894736842105263
+101	53	Real estate and rental and leasing	50	53	17	50017	Orange County, Vermont	19.94736842105263	24.42105263157895	1234.3684210526317	0.6842105263157895
+102	53	Real estate and rental and leasing	50	53	19	50019	Orleans County, Vermont	20.157894736842106	83.52631578947368	2930.7894736842104	0.6842105263157895
+103	53	Real estate and rental and leasing	50	53	21	50021	Rutland County, Vermont	64.6842105263158	248.31578947368422	8347.0	0.6842105263157895
+104	53	Real estate and rental and leasing	50	53	23	50023	Washington County, Vermont	60.473684210526315	237.6315789473684	9240.473684210527	0.6842105263157895
+105	53	Real estate and rental and leasing	50	53	25	50025	Windham County, Vermont	81.10526315789474	273.6842105263158	8916.526315789473	0.6842105263157895
+106	53	Real estate and rental and leasing	50	53	27	50027	Windsor County, Vermont	99.36842105263158	310.05263157894734	11058.78947368421	0.6842105263157895
+107	54	Professional, scientific, and technical services	50	54	1	50001	Addison County, Vermont	132.8421052631579	599.3157894736842	47455.26315789474	0.6842105263157895
+108	54	Professional, scientific, and technical services	50	54	3	50003	Bennington County, Vermont	122.42105263157895	379.7368421052632	17383.42105263158	0.6842105263157895
+109	54	Professional, scientific, and technical services	50	54	5	50005	Caledonia County, Vermont	73.78947368421052	261.0	15374.263157894737	0.6842105263157895
+110	54	Professional, scientific, and technical services	50	54	7	50007	Chittenden County, Vermont	774.2631578947369	7135.684210526316	504641.3157894737	0.6842105263157895
+111	54	Professional, scientific, and technical services	50	54	9	50009	Essex County, Vermont	5.052631578947368	17.42105263157895	1963.3684210526317	0.6842105263157895
+112	54	Professional, scientific, and technical services	50	54	11	50011	Franklin County, Vermont	61.526315789473685	245.68421052631578	14063.421052631578	0.6842105263157895
+113	54	Professional, scientific, and technical services	50	54	13	50013	Grand Isle County, Vermont	17.42105263157895	39.421052631578945	1317.842105263158	0.6842105263157895
+114	54	Professional, scientific, and technical services	50	54	15	50015	Lamoille County, Vermont	83.89473684210526	298.7894736842105	13396.263157894737	0.6842105263157895
+115	54	Professional, scientific, and technical services	50	54	17	50017	Orange County, Vermont	66.21052631578948	318.57894736842104	19787.63157894737	0.6842105263157895
+116	54	Professional, scientific, and technical services	50	54	19	50019	Orleans County, Vermont	48.8421052631579	167.52631578947367	6444.315789473684	0.6842105263157895
+117	54	Professional, scientific, and technical services	50	54	21	50021	Rutland County, Vermont	157.05263157894737	617.5263157894736	31361.57894736842	0.6842105263157895
+118	54	Professional, scientific, and technical services	50	54	23	50023	Washington County, Vermont	245.31578947368422	950.2631578947369	58830.47368421053	0.6842105263157895
+119	54	Professional, scientific, and technical services	50	54	25	50025	Windham County, Vermont	120.52631578947368	535.3157894736842	26565.63157894737	0.6842105263157895
+120	54	Professional, scientific, and technical services	50	54	27	50027	Windsor County, Vermont	187.31578947368422	1079.4736842105262	59356.47368421053	0.6842105263157895
+121	55	Management of companies and enterprises	50	55	1	50001	Addison County, Vermont	2.9375	94.91364193404638	4668.541936015197	1.0
+122	55	Management of companies and enterprises	50	55	3	50003	Bennington County, Vermont	4.1875	122.07590432724814	6254.721841193375	0.9375
+123	55	Management of companies and enterprises	50	55	5	50005	Caledonia County, Vermont	2.125	73.11181579998771	3313.4916024148697	1.0
+124	55	Management of companies and enterprises	50	55	7	50007	Chittenden County, Vermont	38.375	936.75	74687.4375	0.625
+125	55	Management of companies and enterprises	50	55	11	50011	Franklin County, Vermont	1.0	63.93030303030303	1285.3151515151517	1.0
+126	55	Management of companies and enterprises	50	55	15	50015	Lamoille County, Vermont	3.9375	25.973484848484848	773.2784090909091	0.6875
+127	55	Management of companies and enterprises	50	55	17	50017	Orange County, Vermont	2.125	71.46231291105784	3297.7486080697963	1.0
+128	55	Management of companies and enterprises	50	55	19	50019	Orleans County, Vermont	1.875	57.12924004241195	2992.1628145360814	1.0
+129	55	Management of companies and enterprises	50	55	21	50021	Rutland County, Vermont	10.0625	382.08304597701147	23929.463505747124	0.8125
+130	55	Management of companies and enterprises	50	55	23	50023	Washington County, Vermont	12.25	439.8125	36552.3125	0.625
+131	55	Management of companies and enterprises	50	55	25	50025	Windham County, Vermont	3.1875	78.32049930081753	4460.879488261801	0.875
+132	55	Management of companies and enterprises	50	55	27	50027	Windsor County, Vermont	4.8125	124.94882445141066	7180.29237199582	0.8125
+133	56	Administrative and support and waste management and remediation services	50	56	1	50001	Addison County, Vermont	60.63157894736842	252.94736842105263	11333.894736842105	0.6842105263157895
+134	56	Administrative and support and waste management and remediation services	50	56	3	50003	Bennington County, Vermont	85.36842105263158	588.2105263157895	19360.052631578947	0.6842105263157895
+135	56	Administrative and support and waste management and remediation services	50	56	5	50005	Caledonia County, Vermont	38.1578947368421	96.26315789473684	3066.684210526316	0.6842105263157895
+136	56	Administrative and support and waste management and remediation services	50	56	7	50007	Chittenden County, Vermont	298.1578947368421	3271.842105263158	95118.57894736843	0.6842105263157895
+137	56	Administrative and support and waste management and remediation services	50	56	9	50009	Essex County, Vermont	5.7368421052631575	14.842105263157896	145.10526315789474	0.7368421052631579
+138	56	Administrative and support and waste management and remediation services	50	56	11	50011	Franklin County, Vermont	57.89473684210526	481.42105263157896	12701.578947368422	0.6842105263157895
+139	56	Administrative and support and waste management and remediation services	50	56	13	50013	Grand Isle County, Vermont	9.473684210526315	12.631578947368421	868.8947368421053	0.6842105263157895
+140	56	Administrative and support and waste management and remediation services	50	56	15	50015	Lamoille County, Vermont	67.05263157894737	209.31578947368422	9927.631578947368	0.6842105263157895
+141	56	Administrative and support and waste management and remediation services	50	56	17	50017	Orange County, Vermont	40.26315789473684	101.36842105263158	4298.789473684211	0.6842105263157895
+142	56	Administrative and support and waste management and remediation services	50	56	19	50019	Orleans County, Vermont	35.68421052631579	158.57894736842104	5731.789473684211	0.6842105263157895
+143	56	Administrative and support and waste management and remediation services	50	56	21	50021	Rutland County, Vermont	125.73684210526316	931.2631578947369	28193.0	0.6842105263157895
+144	56	Administrative and support and waste management and remediation services	50	56	23	50023	Washington County, Vermont	105.10526315789474	733.3157894736842	32694.0	0.6842105263157895
+145	56	Administrative and support and waste management and remediation services	50	56	25	50025	Windham County, Vermont	94.42105263157895	601.0	25890.21052631579	0.6842105263157895
+146	56	Administrative and support and waste management and remediation services	50	56	27	50027	Windsor County, Vermont	103.47368421052632	412.10526315789474	15758.105263157895	0.6842105263157895
+147	61	Educational services	50	61	1	50001	Addison County, Vermont	26.27777777777778	1463.3418601437265	46618.096280502265	0.9444444444444444
+148	61	Educational services	50	61	3	50003	Bennington County, Vermont	23.77777777777778	1044.388888888889	39357.555555555555	0.6666666666666666
+149	61	Educational services	50	61	5	50005	Caledonia County, Vermont	17.444444444444443	594.0	23439.722222222223	0.6666666666666666
+150	61	Educational services	50	61	7	50007	Chittenden County, Vermont	121.33333333333333	4091.0	103768.83333333333	0.6666666666666666
+151	61	Educational services	50	61	9	50009	Essex County, Vermont	1.0	46.28080061004503	1435.6372127457944	1.0
+152	61	Educational services	50	61	11	50011	Franklin County, Vermont	10.38888888888889	113.88961038961037	3151.563492063492	0.7777777777777778
+153	61	Educational services	50	61	15	50015	Lamoille County, Vermont	15.222222222222221	179.88888888888889	4152.888888888889	0.6666666666666666
+154	61	Educational services	50	61	17	50017	Orange County, Vermont	13.88888888888889	698.0324354657688	30713.3987654321	0.8333333333333334
+155	61	Educational services	50	61	19	50019	Orleans County, Vermont	9.5	165.49506172839506	4721.78024691358	0.7222222222222222
+156	61	Educational services	50	61	21	50021	Rutland County, Vermont	25.61111111111111	715.5	14426.166666666666	0.6666666666666666
+157	61	Educational services	50	61	23	50023	Washington County, Vermont	54.5	2477.5555555555557	68966.05555555556	0.6666666666666666
+158	61	Educational services	50	61	25	50025	Windham County, Vermont	48.27777777777778	1804.8333333333333	58257.22222222222	0.6666666666666666
+159	61	Educational services	50	61	27	50027	Windsor County, Vermont	26.38888888888889	438.27777777777777	16452.166666666668	0.6666666666666666
+160	62	Health care and social assistance	50	62	1	50001	Addison County, Vermont	116.89473684210526	2090.1052631578946	78257.21052631579	0.6842105263157895
+161	62	Health care and social assistance	50	62	3	50003	Bennington County, Vermont	151.10526315789474	3262.4736842105262	141003.42105263157	0.6842105263157895
+162	62	Health care and social assistance	50	62	5	50005	Caledonia County, Vermont	93.3157894736842	1819.6842105263158	72803.0	0.6842105263157895
+163	62	Health care and social assistance	50	62	7	50007	Chittenden County, Vermont	585.7368421052631	15854.052631578947	679801.4210526316	0.6842105263157895
+164	62	Health care and social assistance	50	62	9	50009	Essex County, Vermont	8.947368421052632	79.73684210526316	2363.7894736842104	0.8421052631578947
+165	62	Health care and social assistance	50	62	11	50011	Franklin County, Vermont	101.26315789473684	2783.5263157894738	110634.15789473684	0.6842105263157895
+166	62	Health care and social assistance	50	62	13	50013	Grand Isle County, Vermont	12.473684210526315	48.421052631578945	1400.421052631579	0.6842105263157895
+167	62	Health care and social assistance	50	62	15	50015	Lamoille County, Vermont	78.78947368421052	1779.8947368421052	72544.36842105263	0.6842105263157895
+168	62	Health care and social assistance	50	62	17	50017	Orange County, Vermont	78.52631578947368	1525.9473684210527	65710.1052631579	0.6842105263157895
+169	62	Health care and social assistance	50	62	19	50019	Orleans County, Vermont	77.57894736842105	1719.6315789473683	71898.15789473684	0.6842105263157895
+170	62	Health care and social assistance	50	62	21	50021	Rutland County, Vermont	206.10526315789474	4588.736842105263	201704.8947368421	0.6842105263157895
+171	62	Health care and social assistance	50	62	23	50023	Washington County, Vermont	231.31578947368422	4736.684210526316	205601.52631578947	0.6842105263157895
+172	62	Health care and social assistance	50	62	25	50025	Windham County, Vermont	171.3684210526316	3513.8947368421054	142548.94736842104	0.6842105263157895
+173	62	Health care and social assistance	50	62	27	50027	Windsor County, Vermont	171.94736842105263	4005.3684210526317	224815.7894736842	0.6842105263157895
+174	71	Arts, entertainment, and recreation	50	71	1	50001	Addison County, Vermont	27.31578947368421	174.47368421052633	3200.4210526315787	0.6842105263157895
+175	71	Arts, entertainment, and recreation	50	71	3	50003	Bennington County, Vermont	35.0	425.3157894736842	11755.105263157895	0.6842105263157895
+176	71	Arts, entertainment, and recreation	50	71	5	50005	Caledonia County, Vermont	13.789473684210526	187.21052631578948	3614.315789473684	0.6842105263157895
+177	71	Arts, entertainment, and recreation	50	71	7	50007	Chittenden County, Vermont	123.21052631578948	2435.1052631578946	50813.10526315789	0.6842105263157895
+178	71	Arts, entertainment, and recreation	50	71	9	50009	Essex County, Vermont	3.8421052631578947	39.562131079126914	273.2973970515446	0.8421052631578947
+179	71	Arts, entertainment, and recreation	50	71	11	50011	Franklin County, Vermont	13.736842105263158	41.73684210526316	936.3684210526316	0.6842105263157895
+180	71	Arts, entertainment, and recreation	50	71	13	50013	Grand Isle County, Vermont	7.0	10.631578947368421	513.421052631579	0.6842105263157895
+181	71	Arts, entertainment, and recreation	50	71	15	50015	Lamoille County, Vermont	27.789473684210527	158.42105263157896	4511.526315789473	0.6842105263157895
+182	71	Arts, entertainment, and recreation	50	71	17	50017	Orange County, Vermont	15.578947368421053	34.473684210526315	1012.0	0.6842105263157895
+183	71	Arts, entertainment, and recreation	50	71	19	50019	Orleans County, Vermont	18.36842105263158	56.21052631578947	2312.6315789473683	0.6842105263157895
+184	71	Arts, entertainment, and recreation	50	71	21	50021	Rutland County, Vermont	46.31578947368421	1753.7451604763337	22003.075529178837	0.8421052631578947
+185	71	Arts, entertainment, and recreation	50	71	23	50023	Washington County, Vermont	54.78947368421053	404.63157894736844	10504.736842105263	0.6842105263157895
+186	71	Arts, entertainment, and recreation	50	71	25	50025	Windham County, Vermont	45.68421052631579	1431.797971602434	24684.52181061172	0.7894736842105263
+187	71	Arts, entertainment, and recreation	50	71	27	50027	Windsor County, Vermont	52.21052631578947	487.94736842105266	11720.894736842105	0.6842105263157895
+188	72	Accommodation and food services	50	72	1	50001	Addison County, Vermont	84.26315789473684	1018.7894736842105	25973.0	0.6842105263157895
+189	72	Accommodation and food services	50	72	3	50003	Bennington County, Vermont	136.3684210526316	1674.2631578947369	36520.89473684211	0.6842105263157895
+190	72	Accommodation and food services	50	72	5	50005	Caledonia County, Vermont	67.89473684210526	694.5263157894736	11586.578947368422	0.6842105263157895
+191	72	Accommodation and food services	50	72	7	50007	Chittenden County, Vermont	449.57894736842104	8822.21052631579	174973.57894736843	0.6842105263157895
+192	72	Accommodation and food services	50	72	9	50009	Essex County, Vermont	12.052631578947368	32.26315789473684	633.9473684210526	0.6842105263157895
+193	72	Accommodation and food services	50	72	11	50011	Franklin County, Vermont	89.63157894736842	1080.6315789473683	19266.42105263158	0.6842105263157895
+194	72	Accommodation and food services	50	72	13	50013	Grand Isle County, Vermont	23.736842105263158	63.68421052631579	3367.0526315789475	0.6842105263157895
+195	72	Accommodation and food services	50	72	15	50015	Lamoille County, Vermont	124.26315789473684	4198.0526315789475	74432.26315789473	0.6842105263157895
+196	72	Accommodation and food services	50	72	17	50017	Orange County, Vermont	61.421052631578945	598.2105263157895	13445.736842105263	0.6842105263157895
+197	72	Accommodation and food services	50	72	19	50019	Orleans County, Vermont	60.73684210526316	1587.0	26993.57894736842	0.6842105263157895
+198	72	Accommodation and food services	50	72	21	50021	Rutland County, Vermont	245.1578947368421	2832.9473684210525	46916.52631578947	0.6842105263157895
+199	72	Accommodation and food services	50	72	23	50023	Washington County, Vermont	171.0	3292.1052631578946	55296.73684210526	0.6842105263157895
+200	72	Accommodation and food services	50	72	25	50025	Windham County, Vermont	212.94736842105263	3581.3684210526317	52056.42105263158	0.6842105263157895
+201	72	Accommodation and food services	50	72	27	50027	Windsor County, Vermont	192.68421052631578	3317.157894736842	64823.73684210526	0.6842105263157895
+202	81	Other services (except public administration)	50	81	1	50001	Addison County, Vermont	107.89473684210526	452.2105263157895	14364.21052631579	0.6842105263157895
+203	81	Other services (except public administration)	50	81	3	50003	Bennington County, Vermont	125.26315789473684	515.5263157894736	11415.263157894737	0.6842105263157895
+204	81	Other services (except public administration)	50	81	5	50005	Caledonia County, Vermont	91.73684210526316	346.42105263157896	7187.263157894737	0.6842105263157895
+205	81	Other services (except public administration)	50	81	7	50007	Chittenden County, Vermont	535.3157894736842	3671.842105263158	103518.78947368421	0.6842105263157895
+206	81	Other services (except public administration)	50	81	9	50009	Essex County, Vermont	11.052631578947368	28.736842105263158	642.0526315789474	0.6842105263157895
+207	81	Other services (except public administration)	50	81	11	50011	Franklin County, Vermont	105.10526315789474	401.57894736842104	9653.157894736842	0.6842105263157895
+208	81	Other services (except public administration)	50	81	13	50013	Grand Isle County, Vermont	17.36842105263158	31.31578947368421	821.9473684210526	0.6842105263157895
+209	81	Other services (except public administration)	50	81	15	50015	Lamoille County, Vermont	81.26315789473684	340.89473684210526	9653.78947368421	0.6842105263157895
+210	81	Other services (except public administration)	50	81	17	50017	Orange County, Vermont	72.52631578947368	234.57894736842104	6233.0526315789475	0.6842105263157895
+211	81	Other services (except public administration)	50	81	19	50019	Orleans County, Vermont	84.26315789473684	294.57894736842104	6643.736842105263	0.6842105263157895
+212	81	Other services (except public administration)	50	81	21	50021	Rutland County, Vermont	200.31578947368422	939.8947368421053	21157.894736842107	0.6842105263157895
+213	81	Other services (except public administration)	50	81	23	50023	Washington County, Vermont	268.57894736842104	1245.578947368421	50757.89473684211	0.6842105263157895
+214	81	Other services (except public administration)	50	81	25	50025	Windham County, Vermont	155.89473684210526	566.578947368421	13973.263157894737	0.6842105263157895
+215	81	Other services (except public administration)	50	81	27	50027	Windsor County, Vermont	187.8421052631579	889.7894736842105	27221.684210526317	0.6842105263157895
+216	99	Industries not classified	50	99	1	50001	Addison County, Vermont	4.6875	4.0625	94.72916666666666	0.6875
+217	99	Industries not classified	50	99	3	50003	Bennington County, Vermont	2.6875	3.0122767857142856	84.5219494047619	0.875
+218	99	Industries not classified	50	99	5	50005	Caledonia County, Vermont	1.0666666666666667	0.5905952380952381	29.263968253968248	1.0
+219	99	Industries not classified	50	99	7	50007	Chittenden County, Vermont	15.5	15.59375	526.78125	0.6875
+220	99	Industries not classified	50	99	11	50011	Franklin County, Vermont	2.0	-1.0	69.66666666666666	1.0
+221	99	Industries not classified	50	99	15	50015	Lamoille County, Vermont	1.9333333333333333	1.4228571428571428	52.01960317460317	1.0
+222	99	Industries not classified	50	99	17	50017	Orange County, Vermont	2.875	3.40625	99.78645833333333	0.75
+223	99	Industries not classified	50	99	19	50019	Orleans County, Vermont	2.7142857142857144	1.9247448979591835	32.14413265306122	0.8571428571428571
+224	99	Industries not classified	50	99	21	50021	Rutland County, Vermont	4.875	2.625	117.625	0.625
+225	99	Industries not classified	50	99	23	50023	Washington County, Vermont	2.5625	2.6229910714285714	56.64598214285713	0.875
+226	99	Industries not classified	50	99	25	50025	Windham County, Vermont	4.4375	2.25	49.9375	0.625
+227	99	Industries not classified	50	99	27	50027	Windsor County, Vermont	3.75	3.890625	213.34895833333331	0.75

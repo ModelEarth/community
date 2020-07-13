@@ -1,55 +1,52 @@
-	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
-0	11	Agriculture, forestry, fishing and hunting	10	11	1	10001	Kent County, Delaware	0	9.0	14.166666666666666	1072.3333333333333
-1	11	Agriculture, forestry, fishing and hunting	10	11	3	10003	New Castle County, Delaware	0	12.166666666666666	46.0	1770.8333333333333
-2	11	Agriculture, forestry, fishing and hunting	10	11	5	10005	Sussex County, Delaware	0	16.5	39.166666666666664	1635.5
-3	21	Mining, quarrying, and oil and gas extraction	10	21	1	10001	Kent County, Delaware	0	6.0	74.0	2418.0
-4	21	Mining, quarrying, and oil and gas extraction	10	21	1	10001	Kent County, Delaware	1	5.5	124.04166666666667	5765.541666666666
-5	21	Mining, quarrying, and oil and gas extraction	10	21	3	10003	New Castle County, Delaware	0	8.0	18.333333333333332	5750.5
-6	21	Mining, quarrying, and oil and gas extraction	10	21	5	10005	Sussex County, Delaware	1	2.3333333333333335	35.776143790849666	1885.187908496732
-7	22	Utilities	10	22	1	10001	Kent County, Delaware	0	10.0	337.6666666666667	33109.333333333336
-8	22	Utilities	10	22	3	10003	New Castle County, Delaware	0	26.0	1587.6666666666667	173699.0
-9	22	Utilities	10	22	3	10003	New Castle County, Delaware	1	28.666666666666668	1749.0	173946.33333333334
-10	22	Utilities	10	22	5	10005	Sussex County, Delaware	0	11.166666666666666	320.3333333333333	30964.666666666668
-11	23	Construction	10	23	1	10001	Kent County, Delaware	0	312.5	2131.8333333333335	102916.16666666667
-12	23	Construction	10	23	3	10003	New Castle County, Delaware	0	1206.8333333333333	12659.833333333334	727190.5
-13	23	Construction	10	23	5	10005	Sussex County, Delaware	0	668.1666666666666	4017.6666666666665	179797.5
-14	42	Wholesale trade	10	42	1	10001	Kent County, Delaware	0	127.0	998.6666666666666	49288.333333333336
-15	42	Wholesale trade	10	42	3	10003	New Castle County, Delaware	0	753.6666666666666	13271.5	1186997.1666666667
-16	42	Wholesale trade	10	42	5	10005	Sussex County, Delaware	0	177.66666666666666	1502.8333333333333	74554.5
-17	51	Information	10	51	1	10001	Kent County, Delaware	0	92.66666666666667	908.1666666666666	49724.333333333336
-18	51	Information	10	51	3	10003	New Castle County, Delaware	0	304.1666666666667	5183.833333333333	316136.6666666667
-19	51	Information	10	51	5	10005	Sussex County, Delaware	0	84.0	582.8333333333334	28953.833333333332
-20	52	Finance and insurance	10	52	1	10001	Kent County, Delaware	0	194.16666666666666	1460.3333333333333	87863.5
-21	52	Finance and insurance	10	52	3	10003	New Castle County, Delaware	0	1501.0	36281.333333333336	3345666.8333333335
-22	52	Finance and insurance	10	52	5	10005	Sussex County, Delaware	0	253.5	1897.8333333333333	94882.33333333333
-23	53	Real estate and rental and leasing	10	53	1	10001	Kent County, Delaware	0	132.66666666666666	550.0	21337.833333333332
-24	53	Real estate and rental and leasing	10	53	3	10003	New Castle County, Delaware	0	745.1666666666666	4045.5	215515.33333333334
-25	53	Real estate and rental and leasing	10	53	5	10005	Sussex County, Delaware	0	275.8333333333333	1421.0	50569.5
-26	54	Professional, scientific, and technical services	10	54	1	10001	Kent County, Delaware	0	318.8333333333333	2314.6666666666665	171262.16666666666
-27	54	Professional, scientific, and technical services	10	54	3	10003	New Castle County, Delaware	0	2049.0	24991.666666666668	2509414.0
-28	54	Professional, scientific, and technical services	10	54	5	10005	Sussex County, Delaware	0	372.8333333333333	1741.5	94111.66666666667
-29	55	Management of companies and enterprises	10	55	1	10001	Kent County, Delaware	0	23.666666666666668	104.33333333333333	6515.166666666667
-30	55	Management of companies and enterprises	10	55	3	10003	New Castle County, Delaware	0	794.3333333333334	11178.0	1151289.1666666667
-31	55	Management of companies and enterprises	10	55	5	10005	Sussex County, Delaware	0	23.0	426.75	46401.25
-32	55	Management of companies and enterprises	10	55	5	10005	Sussex County, Delaware	1	18.5	196.5	14522.5
-33	56	Administrative and support and waste management and remediation services	10	56	1	10001	Kent County, Delaware	0	174.83333333333334	3071.0	100212.5
-34	56	Administrative and support and waste management and remediation services	10	56	3	10003	New Castle County, Delaware	0	940.6666666666666	20230.166666666668	734686.3333333334
-35	56	Administrative and support and waste management and remediation services	10	56	5	10005	Sussex County, Delaware	0	297.1666666666667	3094.5	91858.16666666667
-36	61	Educational services	10	61	1	10001	Kent County, Delaware	0	40.666666666666664	849.1666666666666	23124.0
-37	61	Educational services	10	61	3	10003	New Castle County, Delaware	0	228.5	5651.5	226785.5
-38	61	Educational services	10	61	5	10005	Sussex County, Delaware	0	31.166666666666668	360.6666666666667	7347.833333333333
-39	62	Health care and social assistance	10	62	1	10001	Kent County, Delaware	0	413.6666666666667	10159.5	440255.0
-40	62	Health care and social assistance	10	62	3	10003	New Castle County, Delaware	0	1639.3333333333333	43105.0	2347475.6666666665
-41	62	Health care and social assistance	10	62	5	10005	Sussex County, Delaware	0	549.0	11198.166666666666	517522.0
-42	71	Arts, entertainment, and recreation	10	71	1	10001	Kent County, Delaware	0	64.5	1541.8333333333333	39705.333333333336
-43	71	Arts, entertainment, and recreation	10	71	3	10003	New Castle County, Delaware	0	260.3333333333333	5755.5	212587.33333333334
-44	71	Arts, entertainment, and recreation	10	71	5	10005	Sussex County, Delaware	0	98.83333333333333	1032.8333333333333	27021.666666666668
-45	72	Accommodation and food services	10	72	1	10001	Kent County, Delaware	0	282.3333333333333	6767.833333333333	109368.66666666667
-46	72	Accommodation and food services	10	72	3	10003	New Castle County, Delaware	0	1136.3333333333333	22700.5	383395.1666666667
-47	72	Accommodation and food services	10	72	5	10005	Sussex County, Delaware	0	643.3333333333334	9311.333333333334	198335.5
-48	81	Other services (except public administration)	10	81	1	10001	Kent County, Delaware	0	334.1666666666667	1783.6666666666667	48667.833333333336
-49	81	Other services (except public administration)	10	81	3	10003	New Castle County, Delaware	0	1335.0	10384.0	306671.5
-50	81	Other services (except public administration)	10	81	5	10005	Sussex County, Delaware	0	497.1666666666667	2551.8333333333335	64874.666666666664
-51	99	Industries not classified	10	99	1	10001	Kent County, Delaware	0	5.5	12.166666666666666	280.8333333333333
-52	99	Industries not classified	10	99	3	10003	New Castle County, Delaware	0	27.0	20.0	972.6666666666666
-53	99	Industries not classified	10	99	5	10005	Sussex County, Delaware	0	9.0	8.666666666666666	141.33333333333334
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estab	emp	payann	estimate
+0	11	Agriculture, forestry, fishing and hunting	10	11	1	10001	Kent County, Delaware	8.5	17.375	1067.75	0.25
+1	11	Agriculture, forestry, fishing and hunting	10	11	3	10003	New Castle County, Delaware	11.875	47.0	1877.375	0.25
+2	11	Agriculture, forestry, fishing and hunting	10	11	5	10005	Sussex County, Delaware	16.125	41.125	1589.625	0.25
+3	21	Mining, quarrying, and oil and gas extraction	10	21	1	10001	Kent County, Delaware	5.75	99.02083333333334	4091.770833333333	0.75
+4	21	Mining, quarrying, and oil and gas extraction	10	21	3	10003	New Castle County, Delaware	8.0	23.0	5535.125	0.25
+5	21	Mining, quarrying, and oil and gas extraction	10	21	5	10005	Sussex County, Delaware	2.5	32.787990196078425	1799.2144607843138	1.0
+6	22	Utilities	10	22	1	10001	Kent County, Delaware	10.25	344.75	34476.0	0.25
+7	22	Utilities	10	22	3	10003	New Castle County, Delaware	26.75	1634.25	172577.0	0.625
+8	22	Utilities	10	22	5	10005	Sussex County, Delaware	11.375	315.75	30556.0	0.25
+9	23	Construction	10	23	1	10001	Kent County, Delaware	312.875	2170.125	106043.875	0.25
+10	23	Construction	10	23	3	10003	New Castle County, Delaware	1212.875	12858.125	742169.625	0.25
+11	23	Construction	10	23	5	10005	Sussex County, Delaware	671.125	4116.75	186453.625	0.25
+12	42	Wholesale trade	10	42	1	10001	Kent County, Delaware	130.0	1017.0	50734.75	0.25
+13	42	Wholesale trade	10	42	3	10003	New Castle County, Delaware	764.75	13435.125	1198380.375	0.25
+14	42	Wholesale trade	10	42	5	10005	Sussex County, Delaware	179.5	1525.375	76445.125	0.25
+15	51	Information	10	51	1	10001	Kent County, Delaware	96.75	935.375	51064.5	0.25
+16	51	Information	10	51	3	10003	New Castle County, Delaware	314.375	5160.875	322674.0	0.25
+17	51	Information	10	51	5	10005	Sussex County, Delaware	87.0	589.125	29678.625	0.25
+18	52	Finance and insurance	10	52	1	10001	Kent County, Delaware	196.875	1490.5	91412.125	0.25
+19	52	Finance and insurance	10	52	3	10003	New Castle County, Delaware	1498.75	36653.0	3414003.125	0.25
+20	52	Finance and insurance	10	52	5	10005	Sussex County, Delaware	254.625	1897.625	96896.5	0.25
+21	53	Real estate and rental and leasing	10	53	1	10001	Kent County, Delaware	135.5	561.75	22267.125	0.25
+22	53	Real estate and rental and leasing	10	53	3	10003	New Castle County, Delaware	759.375	4151.375	223073.75	0.25
+23	53	Real estate and rental and leasing	10	53	5	10005	Sussex County, Delaware	279.625	1433.5	51150.875	0.25
+24	54	Professional, scientific, and technical services	10	54	1	10001	Kent County, Delaware	327.625	2349.0	174887.375	0.25
+25	54	Professional, scientific, and technical services	10	54	3	10003	New Castle County, Delaware	2077.0	24722.75	2474970.0	0.25
+26	54	Professional, scientific, and technical services	10	54	5	10005	Sussex County, Delaware	374.875	1769.375	96370.25	0.25
+27	55	Management of companies and enterprises	10	55	1	10001	Kent County, Delaware	22.75	90.5	5456.375	0.25
+28	55	Management of companies and enterprises	10	55	3	10003	New Castle County, Delaware	768.0	10349.25	1065353.125	0.25
+29	55	Management of companies and enterprises	10	55	5	10005	Sussex County, Delaware	22.375	343.25	33691.0	0.5
+30	56	Administrative and support and waste management and remediation services	10	56	1	10001	Kent County, Delaware	176.375	2984.75	99819.375	0.125
+31	56	Administrative and support and waste management and remediation services	10	56	3	10003	New Castle County, Delaware	949.0	19873.875	734920.25	0.25
+32	56	Administrative and support and waste management and remediation services	10	56	5	10005	Sussex County, Delaware	299.875	3075.375	93553.625	0.125
+33	61	Educational services	10	61	1	10001	Kent County, Delaware	40.5	919.625	23385.0	0.25
+34	61	Educational services	10	61	3	10003	New Castle County, Delaware	231.625	5649.875	228077.875	0.25
+35	61	Educational services	10	61	5	10005	Sussex County, Delaware	32.375	371.5	7662.625	0.25
+36	62	Health care and social assistance	10	62	1	10001	Kent County, Delaware	416.75	10339.375	451243.5	0.25
+37	62	Health care and social assistance	10	62	3	10003	New Castle County, Delaware	1649.5	43595.0	2389408.75	0.25
+38	62	Health care and social assistance	10	62	5	10005	Sussex County, Delaware	557.0	11317.125	530330.0	0.25
+39	71	Arts, entertainment, and recreation	10	71	1	10001	Kent County, Delaware	65.625	1547.375	40047.75	0.25
+40	71	Arts, entertainment, and recreation	10	71	3	10003	New Castle County, Delaware	262.25	5837.875	219143.75	0.25
+41	71	Arts, entertainment, and recreation	10	71	5	10005	Sussex County, Delaware	98.875	1050.875	27636.5	0.25
+42	72	Accommodation and food services	10	72	1	10001	Kent County, Delaware	286.0	6974.125	113688.0	0.25
+43	72	Accommodation and food services	10	72	3	10003	New Castle County, Delaware	1144.5	22932.625	389980.125	0.25
+44	72	Accommodation and food services	10	72	5	10005	Sussex County, Delaware	645.75	9542.25	204850.875	0.25
+45	81	Other services (except public administration)	10	81	1	10001	Kent County, Delaware	334.875	1783.25	49646.875	0.25
+46	81	Other services (except public administration)	10	81	3	10003	New Castle County, Delaware	1339.75	10412.0	310130.375	0.25
+47	81	Other services (except public administration)	10	81	5	10005	Sussex County, Delaware	501.625	2554.125	65769.5	0.25
+48	99	Industries not classified	10	99	1	10001	Kent County, Delaware	6.125	13.625	295.125	0.25
+49	99	Industries not classified	10	99	3	10003	New Castle County, Delaware	28.75	25.75	968.5	0.25
+50	99	Industries not classified	10	99	5	10005	Sussex County, Delaware	9.25	9.75	139.75	0.25

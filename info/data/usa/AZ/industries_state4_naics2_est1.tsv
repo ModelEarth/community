@@ -1,305 +1,254 @@
-	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
-0	11	Agriculture, forestry, fishing and hunting	4	11	1	04001	Apache County, Arizona	0	7.2	15.2	1255.6
-1	11	Agriculture, forestry, fishing and hunting	4	11	3	04003	Cochise County, Arizona	0	6.0	47.4	613.2
-2	11	Agriculture, forestry, fishing and hunting	4	11	5	04005	Coconino County, Arizona	0	8.25	10.0	850.25
-3	11	Agriculture, forestry, fishing and hunting	4	11	5	04005	Coconino County, Arizona	1	6.0	64.28571428571428	1609.7142857142856
-4	11	Agriculture, forestry, fishing and hunting	4	11	7	04007	Gila County, Arizona	1	2.0	62.1439393939394	490.54924242424244
-5	11	Agriculture, forestry, fishing and hunting	4	11	9	04009	Graham County, Arizona	1	4.0	73.8077922077922	1013.7831168831169
-6	11	Agriculture, forestry, fishing and hunting	4	11	11	04011	Greenlee County, Arizona	1	1.0	18.45194805194805	253.44577922077923
-7	11	Agriculture, forestry, fishing and hunting	4	11	12	04012	La Paz County, Arizona	0	4.0	26.0	950.5
-8	11	Agriculture, forestry, fishing and hunting	4	11	12	04012	La Paz County, Arizona	1	1.6666666666666667	27.515151515151516	418.68939393939394
-9	11	Agriculture, forestry, fishing and hunting	4	11	13	04013	Maricopa County, Arizona	0	85.8	321.2	10943.0
-10	11	Agriculture, forestry, fishing and hunting	4	11	15	04015	Mohave County, Arizona	1	1.0	20.252435064935064	258.46347402597405
-11	11	Agriculture, forestry, fishing and hunting	4	11	17	04017	Navajo County, Arizona	0	7.0	68.0	2946.75
-12	11	Agriculture, forestry, fishing and hunting	4	11	17	04017	Navajo County, Arizona	1	7.0	75.0	1878.0
-13	11	Agriculture, forestry, fishing and hunting	4	11	19	04019	Pima County, Arizona	0	21.6	149.8	4763.6
-14	11	Agriculture, forestry, fishing and hunting	4	11	21	04021	Pinal County, Arizona	0	12.0	121.6	6006.2
-15	11	Agriculture, forestry, fishing and hunting	4	11	23	04023	Santa Cruz County, Arizona	0	6.6	103.6	782.2
-16	11	Agriculture, forestry, fishing and hunting	4	11	25	04025	Yavapai County, Arizona	0	10.0	77.75	1452.5
-17	11	Agriculture, forestry, fishing and hunting	4	11	25	04025	Yavapai County, Arizona	1	9.0	96.42857142857143	2414.571428571429
-18	11	Agriculture, forestry, fishing and hunting	4	11	27	04027	Yuma County, Arizona	0	26.2	385.0	17430.4
-19	21	Mining, quarrying, and oil and gas extraction	4	21	1	04001	Apache County, Arizona	0	6.8	92.4	5799.4
-20	21	Mining, quarrying, and oil and gas extraction	4	21	3	04003	Cochise County, Arizona	0	9.5	52.5	2463.0
-21	21	Mining, quarrying, and oil and gas extraction	4	21	3	04003	Cochise County, Arizona	1	9.333333333333334	1440.2510871620345	79829.78521459634
-22	21	Mining, quarrying, and oil and gas extraction	4	21	5	04005	Coconino County, Arizona	0	6.5	9.75	1228.0
-23	21	Mining, quarrying, and oil and gas extraction	4	21	5	04005	Coconino County, Arizona	1	5.0	1788.0	131807.5
-24	21	Mining, quarrying, and oil and gas extraction	4	21	7	04007	Gila County, Arizona	0	13.4	1662.8	170947.0
-25	21	Mining, quarrying, and oil and gas extraction	4	21	9	04009	Graham County, Arizona	1	2.0	557.5265948194365	39454.92474948005
-26	21	Mining, quarrying, and oil and gas extraction	4	21	11	04011	Greenlee County, Arizona	1	2.0	557.5265948194365	39454.92474948005
-27	21	Mining, quarrying, and oil and gas extraction	4	21	12	04012	La Paz County, Arizona	0	5.4	22.6	1663.4
-28	21	Mining, quarrying, and oil and gas extraction	4	21	13	04013	Maricopa County, Arizona	0	74.4	687.2	44711.4
-29	21	Mining, quarrying, and oil and gas extraction	4	21	15	04015	Mohave County, Arizona	0	12.8	380.6	21587.8
-30	21	Mining, quarrying, and oil and gas extraction	4	21	17	04017	Navajo County, Arizona	0	10.5	528.0	42797.5
-31	21	Mining, quarrying, and oil and gas extraction	4	21	17	04017	Navajo County, Arizona	1	9.0	1371.7487237663074	77358.97995840425
-32	21	Mining, quarrying, and oil and gas extraction	4	21	19	04019	Pima County, Arizona	0	36.8	1486.6	159083.4
-33	21	Mining, quarrying, and oil and gas extraction	4	21	21	04021	Pinal County, Arizona	0	24.0	1132.2	83776.6
-34	21	Mining, quarrying, and oil and gas extraction	4	21	23	04023	Santa Cruz County, Arizona	1	1.6	460.2689884666288	32347.751805634332
-35	21	Mining, quarrying, and oil and gas extraction	4	21	25	04025	Yavapai County, Arizona	0	19.5	1083.0	66434.5
-36	21	Mining, quarrying, and oil and gas extraction	4	21	25	04025	Yavapai County, Arizona	1	17.666666666666668	2708.7965588958214	152096.0659860087
-37	21	Mining, quarrying, and oil and gas extraction	4	21	27	04027	Yuma County, Arizona	0	8.0	39.4	1863.0
-38	22	Utilities	4	22	1	04001	Apache County, Arizona	1	6.2	253.78956494333306	21502.45629902352
-39	22	Utilities	4	22	3	04003	Cochise County, Arizona	0	22.2	549.6	42889.0
-40	22	Utilities	4	22	5	04005	Coconino County, Arizona	0	14.0	230.5	18165.5
-41	22	Utilities	4	22	5	04005	Coconino County, Arizona	1	12.666666666666666	447.31695114034073	37433.64691204256
-42	22	Utilities	4	22	7	04007	Gila County, Arizona	0	5.0	71.0	6946.5
-43	22	Utilities	4	22	7	04007	Gila County, Arizona	1	5.333333333333333	187.60627203960289	15594.020134627513
-44	22	Utilities	4	22	9	04009	Graham County, Arizona	1	4.6	184.15797078611087	15555.866915852937
-45	22	Utilities	4	22	11	04011	Greenlee County, Arizona	0	3.2	36.4	2393.8
-46	22	Utilities	4	22	12	04012	La Paz County, Arizona	0	6.333333333333333	33.0	2468.3333333333335
-47	22	Utilities	4	22	12	04012	La Paz County, Arizona	1	7.0	240.3701423624471	18052.759753751445
-48	22	Utilities	4	22	13	04013	Maricopa County, Arizona	0	72.2	7414.2	785058.0
-49	22	Utilities	4	22	15	04015	Mohave County, Arizona	0	26.4	365.2	24113.4
-50	22	Utilities	4	22	17	04017	Navajo County, Arizona	0	16.0	487.0	48143.5
-51	22	Utilities	4	22	17	04017	Navajo County, Arizona	1	14.333333333333334	507.50831472321505	42829.627467873586
-52	22	Utilities	4	22	19	04019	Pima County, Arizona	0	23.5	1928.0	161732.5
-53	22	Utilities	4	22	19	04019	Pima County, Arizona	1	25.0	881.6809663774992	73265.80650897979
-54	22	Utilities	4	22	21	04021	Pinal County, Arizona	0	17.75	187.5	18366.5
-55	22	Utilities	4	22	21	04021	Pinal County, Arizona	1	19.0	708.680412371134	69856.73195876289
-56	22	Utilities	4	22	23	04023	Santa Cruz County, Arizona	0	6.5	72.5	4698.0
-57	22	Utilities	4	22	23	04023	Santa Cruz County, Arizona	1	4.0	142.95652173913044	10195.51304347826
-58	22	Utilities	4	22	25	04025	Yavapai County, Arizona	0	26.333333333333332	327.6666666666667	23748.333333333332
-59	22	Utilities	4	22	25	04025	Yavapai County, Arizona	1	28.0	962.8811081185071	72180.95159676799
-60	22	Utilities	4	22	27	04027	Yuma County, Arizona	0	8.5	221.0	19239.0
-61	22	Utilities	4	22	27	04027	Yuma County, Arizona	1	9.0	317.9284578128781	26503.804383922445
-62	23	Construction	4	23	1	04001	Apache County, Arizona	0	27.8	130.6	4099.4
-63	23	Construction	4	23	3	04003	Cochise County, Arizona	0	181.4	1126.4	39738.6
-64	23	Construction	4	23	5	04005	Coconino County, Arizona	0	341.4	2093.8	85939.8
-65	23	Construction	4	23	7	04007	Gila County, Arizona	0	128.2	618.2	22771.0
-66	23	Construction	4	23	9	04009	Graham County, Arizona	0	49.2	383.6	14872.4
-67	23	Construction	4	23	11	04011	Greenlee County, Arizona	0	6.333333333333333	31.333333333333332	1994.6666666666667
-68	23	Construction	4	23	11	04011	Greenlee County, Arizona	1	5.5	1660.5	50190.5
-69	23	Construction	4	23	12	04012	La Paz County, Arizona	0	17.0	39.4	2400.2
-70	23	Construction	4	23	13	04013	Maricopa County, Arizona	0	7036.2	95407.2	4810905.6
-71	23	Construction	4	23	15	04015	Mohave County, Arizona	0	446.4	2356.8	81733.4
-72	23	Construction	4	23	17	04017	Navajo County, Arizona	0	195.0	922.0	34272.0
-73	23	Construction	4	23	19	04019	Pima County, Arizona	0	1630.8	16842.8	717364.0
-74	23	Construction	4	23	21	04021	Pinal County, Arizona	0	334.2	2334.2	101305.0
-75	23	Construction	4	23	23	04023	Santa Cruz County, Arizona	0	53.0	294.0	10953.6
-76	23	Construction	4	23	25	04025	Yavapai County, Arizona	0	720.2	3780.6	140169.6
-77	23	Construction	4	23	27	04027	Yuma County, Arizona	0	298.0	2389.4	82368.4
-78	42	Wholesale trade	4	42	1	04001	Apache County, Arizona	0	15.4	64.4	1835.2
-79	42	Wholesale trade	4	42	3	04003	Cochise County, Arizona	0	54.2	422.8	14496.2
-80	42	Wholesale trade	4	42	5	04005	Coconino County, Arizona	0	104.6	865.2	39662.6
-81	42	Wholesale trade	4	42	7	04007	Gila County, Arizona	0	23.8	191.8	9953.4
-82	42	Wholesale trade	4	42	9	04009	Graham County, Arizona	0	16.4	182.4	8293.4
-83	42	Wholesale trade	4	42	11	04011	Greenlee County, Arizona	0	4.0	37.5	2238.5
-84	42	Wholesale trade	4	42	11	04011	Greenlee County, Arizona	1	3.6666666666666665	1917.9147286821706	175365.2093023256
-85	42	Wholesale trade	4	42	12	04012	La Paz County, Arizona	0	12.4	108.4	4583.4
-86	42	Wholesale trade	4	42	13	04013	Maricopa County, Arizona	0	4638.2	73047.8	4723500.8
-87	42	Wholesale trade	4	42	15	04015	Mohave County, Arizona	0	118.6	1051.2	42597.4
-88	42	Wholesale trade	4	42	17	04017	Navajo County, Arizona	0	38.75	373.75	14889.0
-89	42	Wholesale trade	4	42	17	04017	Navajo County, Arizona	1	39.0	2191.255813953488	175340.37209302324
-90	42	Wholesale trade	4	42	19	04019	Pima County, Arizona	0	772.6	7444.6	363733.4
-91	42	Wholesale trade	4	42	21	04021	Pinal County, Arizona	0	121.4	1324.2	62683.2
-92	42	Wholesale trade	4	42	23	04023	Santa Cruz County, Arizona	0	214.0	2278.4	106880.8
-93	42	Wholesale trade	4	42	25	04025	Yavapai County, Arizona	0	173.0	1498.0	68592.2
-94	42	Wholesale trade	4	42	27	04027	Yuma County, Arizona	0	144.6	2121.2	110617.2
-95	51	Information	4	51	1	04001	Apache County, Arizona	0	11.0	85.0	4202.0
-96	51	Information	4	51	1	04001	Apache County, Arizona	1	11.0	347.57533212560384	22231.13399327122
-97	51	Information	4	51	3	04003	Cochise County, Arizona	0	34.4	348.4	14478.4
-98	51	Information	4	51	5	04005	Coconino County, Arizona	0	47.5	739.25	35631.25
-99	51	Information	4	51	5	04005	Coconino County, Arizona	1	47.0	803.7474747474747	50214.51515151515
-100	51	Information	4	51	7	04007	Gila County, Arizona	0	17.6	128.2	3893.6
-101	51	Information	4	51	9	04009	Graham County, Arizona	0	9.6	84.0	3124.2
-102	51	Information	4	51	11	04011	Greenlee County, Arizona	0	5.0	14.0	326.0
-103	51	Information	4	51	11	04011	Greenlee County, Arizona	1	4.75	219.05696914800177	18201.35636057783
-104	51	Information	4	51	12	04012	La Paz County, Arizona	0	8.8	22.8	1333.2
-105	51	Information	4	51	13	04013	Maricopa County, Arizona	0	1410.6	35358.8	2485232.6
-106	51	Information	4	51	15	04015	Mohave County, Arizona	0	54.2	675.0	25108.2
-107	51	Information	4	51	17	04017	Navajo County, Arizona	0	27.0	355.0	17118.5
-108	51	Information	4	51	17	04017	Navajo County, Arizona	1	28.0	705.4957363489974	24440.307414204155
-109	51	Information	4	51	19	04019	Pima County, Arizona	0	281.8	6162.8	347960.2
-110	51	Information	4	51	21	04021	Pinal County, Arizona	0	47.8	1065.8	43410.2
-111	51	Information	4	51	23	04023	Santa Cruz County, Arizona	0	11.0	75.0	2576.6666666666665
-112	51	Information	4	51	23	04023	Santa Cruz County, Arizona	1	11.0	332.61805555555554	10428.300595238095
-113	51	Information	4	51	25	04025	Yavapai County, Arizona	0	73.0	755.8	28708.2
-114	51	Information	4	51	27	04027	Yuma County, Arizona	0	37.8	563.2	19990.4
-115	52	Finance and insurance	4	52	1	04001	Apache County, Arizona	0	14.2	59.0	2875.0
-116	52	Finance and insurance	4	52	3	04003	Cochise County, Arizona	0	106.2	550.0	21974.6
-117	52	Finance and insurance	4	52	5	04005	Coconino County, Arizona	0	152.8	825.8	47344.4
-118	52	Finance and insurance	4	52	7	04007	Gila County, Arizona	0	46.8	201.4	8408.0
-119	52	Finance and insurance	4	52	9	04009	Graham County, Arizona	0	23.2	114.2	4552.4
-120	52	Finance and insurance	4	52	11	04011	Greenlee County, Arizona	0	4.0	17.0	329.0
-121	52	Finance and insurance	4	52	11	04011	Greenlee County, Arizona	1	4.0	4014.75	333888.0
-122	52	Finance and insurance	4	52	12	04012	La Paz County, Arizona	0	14.6	53.8	2158.6
-123	52	Finance and insurance	4	52	13	04013	Maricopa County, Arizona	0	6705.4	114140.2	7759642.6
-124	52	Finance and insurance	4	52	15	04015	Mohave County, Arizona	0	186.2	1026.4	46817.8
-125	52	Finance and insurance	4	52	17	04017	Navajo County, Arizona	0	75.2	370.8	13865.0
-126	52	Finance and insurance	4	52	19	04019	Pima County, Arizona	0	1237.8	12336.0	653130.4
-127	52	Finance and insurance	4	52	21	04021	Pinal County, Arizona	0	210.4	983.6	38340.8
-128	52	Finance and insurance	4	52	23	04023	Santa Cruz County, Arizona	0	43.2	219.4	9188.0
-129	52	Finance and insurance	4	52	25	04025	Yavapai County, Arizona	0	302.4	1271.4	62029.2
-130	52	Finance and insurance	4	52	27	04027	Yuma County, Arizona	0	144.8	1157.2	48914.8
-131	53	Real estate and rental and leasing	4	53	1	04001	Apache County, Arizona	0	12.0	25.6	777.0
-132	53	Real estate and rental and leasing	4	53	3	04003	Cochise County, Arizona	0	112.2	441.2	14313.6
-133	53	Real estate and rental and leasing	4	53	5	04005	Coconino County, Arizona	0	197.4	605.4	27672.2
-134	53	Real estate and rental and leasing	4	53	7	04007	Gila County, Arizona	0	62.6	144.0	4388.8
-135	53	Real estate and rental and leasing	4	53	9	04009	Graham County, Arizona	0	25.4	83.8	2766.4
-136	53	Real estate and rental and leasing	4	53	11	04011	Greenlee County, Arizona	0	3.0	9.0	305.5
-137	53	Real estate and rental and leasing	4	53	11	04011	Greenlee County, Arizona	1	2.6666666666666665	328.6666666666667	3006.3333333333335
-138	53	Real estate and rental and leasing	4	53	12	04012	La Paz County, Arizona	0	19.4	58.0	1498.8
-139	53	Real estate and rental and leasing	4	53	13	04013	Maricopa County, Arizona	0	5779.0	33266.4	1709865.4
-140	53	Real estate and rental and leasing	4	53	15	04015	Mohave County, Arizona	0	212.4	687.6	17743.8
-141	53	Real estate and rental and leasing	4	53	17	04017	Navajo County, Arizona	0	93.4	246.6	6624.4
-142	53	Real estate and rental and leasing	4	53	19	04019	Pima County, Arizona	0	1242.8	6028.6	217546.0
-143	53	Real estate and rental and leasing	4	53	21	04021	Pinal County, Arizona	0	192.8	652.0	18824.0
-144	53	Real estate and rental and leasing	4	53	23	04023	Santa Cruz County, Arizona	0	47.2	163.2	3748.8
-145	53	Real estate and rental and leasing	4	53	25	04025	Yavapai County, Arizona	0	363.0	973.0	35043.4
-146	53	Real estate and rental and leasing	4	53	27	04027	Yuma County, Arizona	0	161.6	729.8	21028.4
-147	54	Professional, scientific, and technical services	4	54	1	04001	Apache County, Arizona	0	26.0	118.2	5167.0
-148	54	Professional, scientific, and technical services	4	54	3	04003	Cochise County, Arizona	0	225.8	3831.0	250728.4
-149	54	Professional, scientific, and technical services	4	54	5	04005	Coconino County, Arizona	0	334.2	1628.6	73699.8
-150	54	Professional, scientific, and technical services	4	54	7	04007	Gila County, Arizona	0	77.6	222.6	12727.4
-151	54	Professional, scientific, and technical services	4	54	9	04009	Graham County, Arizona	0	27.0	467.5	17597.0
-152	54	Professional, scientific, and technical services	4	54	9	04009	Graham County, Arizona	1	26.0	4667.572477650064	168490.1066411239
-153	54	Professional, scientific, and technical services	4	54	11	04011	Greenlee County, Arizona	0	6.0	65.0	3934.0
-154	54	Professional, scientific, and technical services	4	54	11	04011	Greenlee County, Arizona	1	3.6666666666666665	624.9066890166027	23155.601692209453
-155	54	Professional, scientific, and technical services	4	54	12	04012	La Paz County, Arizona	0	11.75	21.25	2483.75
-156	54	Professional, scientific, and technical services	4	54	12	04012	La Paz County, Arizona	1	15.0	1866.5625	83076.875
-157	54	Professional, scientific, and technical services	4	54	13	04013	Maricopa County, Arizona	0	12163.4	104208.6	7329505.2
-158	54	Professional, scientific, and technical services	4	54	15	04015	Mohave County, Arizona	0	227.2	927.0	32385.2
-159	54	Professional, scientific, and technical services	4	54	17	04017	Navajo County, Arizona	0	113.0	368.2	11389.8
-160	54	Professional, scientific, and technical services	4	54	19	04019	Pima County, Arizona	0	2534.0	16682.6	967499.8
-161	54	Professional, scientific, and technical services	4	54	21	04021	Pinal County, Arizona	0	262.2	932.4	41540.8
-162	54	Professional, scientific, and technical services	4	54	23	04023	Santa Cruz County, Arizona	0	66.2	194.8	7557.6
-163	54	Professional, scientific, and technical services	4	54	25	04025	Yavapai County, Arizona	0	524.2	1678.2	74505.8
-164	54	Professional, scientific, and technical services	4	54	27	04027	Yuma County, Arizona	0	222.8	1333.8	66868.6
-165	55	Management of companies and enterprises	4	55	1	04001	Apache County, Arizona	1	2.4	45.85802605767823	3506.2060922266137
-166	55	Management of companies and enterprises	4	55	3	04003	Cochise County, Arizona	0	8.666666666666666	94.0	8498.0
-167	55	Management of companies and enterprises	4	55	3	04003	Cochise County, Arizona	1	9.0	140.2191304347826	9163.071304347826
-168	55	Management of companies and enterprises	4	55	5	04005	Coconino County, Arizona	0	13.2	500.0	31008.6
-169	55	Management of companies and enterprises	4	55	7	04007	Gila County, Arizona	1	2.4	53.73595198360415	3759.30475889328
-170	55	Management of companies and enterprises	4	55	9	04009	Graham County, Arizona	1	1.0	19.505013028839112	1527.3190461133067
-171	55	Management of companies and enterprises	4	55	11	04011	Greenlee County, Arizona	1	1.0	19.505013028839112	1527.3190461133067
-172	55	Management of companies and enterprises	4	55	13	04013	Maricopa County, Arizona	0	730.2	43328.4	3863408.4
-173	55	Management of companies and enterprises	4	55	15	04015	Mohave County, Arizona	0	5.333333333333333	81.33333333333333	5068.0
-174	55	Management of companies and enterprises	4	55	15	04015	Mohave County, Arizona	1	4.5	116.42962962962963	6345.633333333333
-175	55	Management of companies and enterprises	4	55	17	04017	Navajo County, Arizona	1	3.6	67.27527097057532	5306.470123847166
-176	55	Management of companies and enterprises	4	55	19	04019	Pima County, Arizona	0	136.4	4791.8	348217.8
-177	55	Management of companies and enterprises	4	55	21	04021	Pinal County, Arizona	0	7.8	125.0	4573.2
-178	55	Management of companies and enterprises	4	55	23	04023	Santa Cruz County, Arizona	0	3.0	1.5	487.0
-179	55	Management of companies and enterprises	4	55	23	04023	Santa Cruz County, Arizona	1	2.3333333333333335	33.84277558190601	3473.8317962231
-180	55	Management of companies and enterprises	4	55	25	04025	Yavapai County, Arizona	0	16.8	105.2	5052.6
-181	55	Management of companies and enterprises	4	55	27	04027	Yuma County, Arizona	0	12.25	505.5	17640.75
-182	55	Management of companies and enterprises	4	55	27	04027	Yuma County, Arizona	1	12.0	441.77777777777777	21140.0
-183	56	Administrative and support and waste management and remediation services	4	56	1	04001	Apache County, Arizona	0	14.0	153.6	5415.4
-184	56	Administrative and support and waste management and remediation services	4	56	3	04003	Cochise County, Arizona	0	93.33333333333333	1850.6666666666667	51434.0
-185	56	Administrative and support and waste management and remediation services	4	56	3	04003	Cochise County, Arizona	1	96.5	47301.26234567902	1562655.9814814816
-186	56	Administrative and support and waste management and remediation services	4	56	5	04005	Coconino County, Arizona	0	150.0	1389.0	37479.2
-187	56	Administrative and support and waste management and remediation services	4	56	7	04007	Gila County, Arizona	0	36.2	296.0	8279.8
-188	56	Administrative and support and waste management and remediation services	4	56	9	04009	Graham County, Arizona	0	15.4	123.0	3017.6
-189	56	Administrative and support and waste management and remediation services	4	56	11	04011	Greenlee County, Arizona	0	3.0	87.75	2345.75
-190	56	Administrative and support and waste management and remediation services	4	56	11	04011	Greenlee County, Arizona	1	2.0	503.6036036036036	17239.64864864865
-191	56	Administrative and support and waste management and remediation services	4	56	12	04012	La Paz County, Arizona	0	5.333333333333333	24.333333333333332	835.6666666666666
-192	56	Administrative and support and waste management and remediation services	4	56	12	04012	La Paz County, Arizona	1	6.0	1314.0535535535537	46817.250750750754
-193	56	Administrative and support and waste management and remediation services	4	56	13	04013	Maricopa County, Arizona	0	5660.2	136147.6	4841066.6
-194	56	Administrative and support and waste management and remediation services	4	56	15	04015	Mohave County, Arizona	0	207.8	2220.4	61814.4
-195	56	Administrative and support and waste management and remediation services	4	56	17	04017	Navajo County, Arizona	0	77.2	464.8	14943.4
-196	56	Administrative and support and waste management and remediation services	4	56	19	04019	Pima County, Arizona	0	1172.8	26305.8	654325.6
-197	56	Administrative and support and waste management and remediation services	4	56	21	04021	Pinal County, Arizona	0	214.66666666666666	5463.333333333333	220513.33333333334
-198	56	Administrative and support and waste management and remediation services	4	56	21	04021	Pinal County, Arizona	1	218.5	47705.88229896563	1701251.9434434434
-199	56	Administrative and support and waste management and remediation services	4	56	23	04023	Santa Cruz County, Arizona	0	27.6	296.8	6847.4
-200	56	Administrative and support and waste management and remediation services	4	56	25	04025	Yavapai County, Arizona	0	323.0	2289.8	67590.2
-201	56	Administrative and support and waste management and remediation services	4	56	27	04027	Yuma County, Arizona	0	151.4	3845.8	116904.4
-202	61	Educational services	4	61	1	04001	Apache County, Arizona	0	9.4	342.4	8694.2
-203	61	Educational services	4	61	3	04003	Cochise County, Arizona	0	35.6	600.4	21967.0
-204	61	Educational services	4	61	5	04005	Coconino County, Arizona	0	30.4	638.0	19708.8
-205	61	Educational services	4	61	7	04007	Gila County, Arizona	0	11.6	118.6	2897.6
-206	61	Educational services	4	61	9	04009	Graham County, Arizona	0	6.8	63.8	1092.6
-207	61	Educational services	4	61	12	04012	La Paz County, Arizona	1	1.6	538.4	15488.8
-208	61	Educational services	4	61	13	04013	Maricopa County, Arizona	0	1441.2	51808.4	1859658.4
-209	61	Educational services	4	61	15	04015	Mohave County, Arizona	0	23.0	478.4	13697.4
-210	61	Educational services	4	61	17	04017	Navajo County, Arizona	0	20.6	473.6	13984.0
-211	61	Educational services	4	61	19	04019	Pima County, Arizona	0	357.0	6446.8	203988.6
-212	61	Educational services	4	61	21	04021	Pinal County, Arizona	0	40.0	978.6	32250.8
-213	61	Educational services	4	61	23	04023	Santa Cruz County, Arizona	0	10.4	93.6	2350.4
-214	61	Educational services	4	61	25	04025	Yavapai County, Arizona	0	83.0	2735.8	92076.2
-215	61	Educational services	4	61	27	04027	Yuma County, Arizona	0	23.4	524.4	14722.8
-216	62	Health care and social assistance	4	62	1	04001	Apache County, Arizona	0	69.2	2786.6	123334.8
-217	62	Health care and social assistance	4	62	3	04003	Cochise County, Arizona	0	274.4	4786.8	174247.2
-218	62	Health care and social assistance	4	62	5	04005	Coconino County, Arizona	0	387.4	7769.8	409335.6
-219	62	Health care and social assistance	4	62	7	04007	Gila County, Arizona	0	136.6	2245.6	97204.0
-220	62	Health care and social assistance	4	62	9	04009	Graham County, Arizona	0	74.4	1498.8	58198.4
-221	62	Health care and social assistance	4	62	11	04011	Greenlee County, Arizona	0	9.4	100.4	6415.6
-222	62	Health care and social assistance	4	62	12	04012	La Paz County, Arizona	0	24.0	583.4	30484.8
-223	62	Health care and social assistance	4	62	13	04013	Maricopa County, Arizona	0	11249.4	214444.6	10652148.2
-224	62	Health care and social assistance	4	62	15	04015	Mohave County, Arizona	0	479.8	8480.6	388668.4
-225	62	Health care and social assistance	4	62	17	04017	Navajo County, Arizona	0	239.8	4086.8	194333.8
-226	62	Health care and social assistance	4	62	19	04019	Pima County, Arizona	0	2809.4	58095.4	2518018.4
-227	62	Health care and social assistance	4	62	21	04021	Pinal County, Arizona	0	430.0	7995.2	320633.8
-228	62	Health care and social assistance	4	62	23	04023	Santa Cruz County, Arizona	0	71.0	1179.0	45406.5
-229	62	Health care and social assistance	4	62	23	04023	Santa Cruz County, Arizona	1	69.0	1438.0	48687.0
-230	62	Health care and social assistance	4	62	25	04025	Yavapai County, Arizona	0	769.8	12417.8	535599.8
-231	62	Health care and social assistance	4	62	27	04027	Yuma County, Arizona	0	386.0	6738.4	290278.2
-232	71	Arts, entertainment, and recreation	4	71	1	04001	Apache County, Arizona	0	3.0	1.0	79.66666666666667
-233	71	Arts, entertainment, and recreation	4	71	1	04001	Apache County, Arizona	1	3.0	123.20454545454544	3153.272727272727
-234	71	Arts, entertainment, and recreation	4	71	3	04003	Cochise County, Arizona	0	34.8	255.4	4149.0
-235	71	Arts, entertainment, and recreation	4	71	5	04005	Coconino County, Arizona	0	90.2	1595.8	39639.8
-236	71	Arts, entertainment, and recreation	4	71	7	04007	Gila County, Arizona	0	12.333333333333334	516.6666666666666	12371.666666666666
-237	71	Arts, entertainment, and recreation	4	71	7	04007	Gila County, Arizona	1	13.0	533.8863636363637	13664.181818181818
-238	71	Arts, entertainment, and recreation	4	71	9	04009	Graham County, Arizona	0	4.6	16.6	338.2
-239	71	Arts, entertainment, and recreation	4	71	11	04011	Greenlee County, Arizona	1	2.0	140.72121212121212	3837.139393939394
-240	71	Arts, entertainment, and recreation	4	71	12	04012	La Paz County, Arizona	1	4.0	281.44242424242424	7674.278787878788
-241	71	Arts, entertainment, and recreation	4	71	13	04013	Maricopa County, Arizona	0	1119.6	30494.6	1172859.2
-242	71	Arts, entertainment, and recreation	4	71	15	04015	Mohave County, Arizona	0	40.6	578.4	10799.4
-243	71	Arts, entertainment, and recreation	4	71	17	04017	Navajo County, Arizona	0	17.2	157.4	6994.2
-244	71	Arts, entertainment, and recreation	4	71	19	04019	Pima County, Arizona	0	309.2	6302.6	110389.6
-245	71	Arts, entertainment, and recreation	4	71	21	04021	Pinal County, Arizona	0	52.2	1389.2	18838.4
-246	71	Arts, entertainment, and recreation	4	71	23	04023	Santa Cruz County, Arizona	0	12.4	56.8	932.6
-247	71	Arts, entertainment, and recreation	4	71	25	04025	Yavapai County, Arizona	0	85.6	981.8	17186.6
-248	71	Arts, entertainment, and recreation	4	71	27	04027	Yuma County, Arizona	0	26.4	587.6	11540.8
-249	72	Accommodation and food services	4	72	1	04001	Apache County, Arizona	0	60.6	845.6	13146.0
-250	72	Accommodation and food services	4	72	3	04003	Cochise County, Arizona	0	268.2	4012.4	56490.2
-251	72	Accommodation and food services	4	72	5	04005	Coconino County, Arizona	0	556.6	12324.6	243107.2
-252	72	Accommodation and food services	4	72	7	04007	Gila County, Arizona	0	134.6	1819.6	30148.0
-253	72	Accommodation and food services	4	72	9	04009	Graham County, Arizona	0	49.4	836.6	9647.2
-254	72	Accommodation and food services	4	72	11	04011	Greenlee County, Arizona	0	14.8	99.0	1818.6
-255	72	Accommodation and food services	4	72	12	04012	La Paz County, Arizona	0	82.6	964.0	13162.8
-256	72	Accommodation and food services	4	72	13	04013	Maricopa County, Arizona	0	7183.6	174726.8	3163011.2
-257	72	Accommodation and food services	4	72	15	04015	Mohave County, Arizona	0	388.8	6103.4	87725.4
-258	72	Accommodation and food services	4	72	17	04017	Navajo County, Arizona	0	223.0	3574.2	60897.8
-259	72	Accommodation and food services	4	72	19	04019	Pima County, Arizona	0	1775.4	43979.0	731075.8
-260	72	Accommodation and food services	4	72	21	04021	Pinal County, Arizona	0	337.2	6465.6	98200.2
-261	72	Accommodation and food services	4	72	23	04023	Santa Cruz County, Arizona	0	101.0	1455.0	20838.0
-262	72	Accommodation and food services	4	72	25	04025	Yavapai County, Arizona	0	549.2	8750.2	153455.4
-263	72	Accommodation and food services	4	72	27	04027	Yuma County, Arizona	0	329.6	6001.4	86059.6
-264	81	Other services (except public administration)	4	81	1	04001	Apache County, Arizona	0	39.2	126.0	2763.2
-265	81	Other services (except public administration)	4	81	3	04003	Cochise County, Arizona	0	229.0	1033.6	21223.4
-266	81	Other services (except public administration)	4	81	5	04005	Coconino County, Arizona	0	315.2	1840.2	46686.4
-267	81	Other services (except public administration)	4	81	7	04007	Gila County, Arizona	0	87.4	331.4	6711.0
-268	81	Other services (except public administration)	4	81	9	04009	Graham County, Arizona	0	41.4	304.2	10155.4
-269	81	Other services (except public administration)	4	81	11	04011	Greenlee County, Arizona	0	7.0	10.6	251.6
-270	81	Other services (except public administration)	4	81	12	04012	La Paz County, Arizona	0	22.4	49.4	1750.8
-271	81	Other services (except public administration)	4	81	13	04013	Maricopa County, Arizona	0	6680.6	58986.2	1829598.0
-272	81	Other services (except public administration)	4	81	15	04015	Mohave County, Arizona	0	362.0	1770.2	38188.8
-273	81	Other services (except public administration)	4	81	17	04017	Navajo County, Arizona	0	164.4	714.0	15088.8
-274	81	Other services (except public administration)	4	81	19	04019	Pima County, Arizona	0	1842.8	14588.0	356409.2
-275	81	Other services (except public administration)	4	81	21	04021	Pinal County, Arizona	0	321.0	1818.2	45409.4
-276	81	Other services (except public administration)	4	81	23	04023	Santa Cruz County, Arizona	0	65.0	277.2	5954.6
-277	81	Other services (except public administration)	4	81	25	04025	Yavapai County, Arizona	0	504.2	2536.0	60457.8
-278	81	Other services (except public administration)	4	81	27	04027	Yuma County, Arizona	0	251.0	1504.0	34104.0
-279	99	Industries not classified	4	99	1	04001	Apache County, Arizona	0	3.0	9.5	68.0
-280	99	Industries not classified	4	99	1	04001	Apache County, Arizona	1	1.6666666666666667	-2.1269841269841265	42.226190476190474
-281	99	Industries not classified	4	99	3	04003	Cochise County, Arizona	0	4.333333333333333	4.333333333333333	80.66666666666667
-282	99	Industries not classified	4	99	3	04003	Cochise County, Arizona	1	2.5	5.714285714285714	46.21428571428571
-283	99	Industries not classified	4	99	5	04005	Coconino County, Arizona	0	10.75	12.5	216.5
-284	99	Industries not classified	4	99	5	04005	Coconino County, Arizona	1	2.0	-12.571428571428571	44.42857142857142
-285	99	Industries not classified	4	99	7	04007	Gila County, Arizona	0	5.0	3.0	23.0
-286	99	Industries not classified	4	99	7	04007	Gila County, Arizona	1	1.5	5.428571428571429	29.44940476190476
-287	99	Industries not classified	4	99	9	04009	Graham County, Arizona	1	1.5	3.9761904761904763	34.11607142857143
-288	99	Industries not classified	4	99	11	04011	Greenlee County, Arizona	1	1.0	3.0317460317460316	24.305555555555554
-289	99	Industries not classified	4	99	12	04012	La Paz County, Arizona	0	3.0	5.0	63.0
-290	99	Industries not classified	4	99	12	04012	La Paz County, Arizona	1	1.0	3.5476190476190474	22.0
-291	99	Industries not classified	4	99	13	04013	Maricopa County, Arizona	0	139.8	102.6	4794.2
-292	99	Industries not classified	4	99	15	04015	Mohave County, Arizona	0	6.5	7.0	198.0
-293	99	Industries not classified	4	99	15	04015	Mohave County, Arizona	1	2.0	-2.4285714285714284	48.14285714285714
-294	99	Industries not classified	4	99	17	04017	Navajo County, Arizona	0	7.6	6.6	282.6
-295	99	Industries not classified	4	99	19	04019	Pima County, Arizona	0	27.6	29.4	1039.6
-296	99	Industries not classified	4	99	21	04021	Pinal County, Arizona	0	6.0	8.0	153.33333333333334
-297	99	Industries not classified	4	99	21	04021	Pinal County, Arizona	1	2.0	8.857142857142858	35.107142857142854
-298	99	Industries not classified	4	99	23	04023	Santa Cruz County, Arizona	0	4.5	3.5	86.5
-299	99	Industries not classified	4	99	23	04023	Santa Cruz County, Arizona	1	1.3333333333333333	2.9365079365079367	27.4047619047619
-300	99	Industries not classified	4	99	25	04025	Yavapai County, Arizona	0	11.666666666666666	11.333333333333334	297.0
-301	99	Industries not classified	4	99	25	04025	Yavapai County, Arizona	1	5.0	-9.904761904761905	134.21428571428572
-302	99	Industries not classified	4	99	27	04027	Yuma County, Arizona	0	5.5	16.0	488.5
-303	99	Industries not classified	4	99	27	04027	Yuma County, Arizona	1	3.0	10.642857142857142	66.0
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estab	emp	payann	estimate
+0	11	Agriculture, forestry, fishing and hunting	4	11	1	04001	Apache County, Arizona	7.2	15.2	1255.6	0.0
+1	11	Agriculture, forestry, fishing and hunting	4	11	3	04003	Cochise County, Arizona	6.0	47.4	613.2	0.0
+2	11	Agriculture, forestry, fishing and hunting	4	11	5	04005	Coconino County, Arizona	7.8	20.857142857142854	1002.1428571428571	0.2
+3	11	Agriculture, forestry, fishing and hunting	4	11	7	04007	Gila County, Arizona	2.0	62.1439393939394	490.54924242424244	1.0
+4	11	Agriculture, forestry, fishing and hunting	4	11	9	04009	Graham County, Arizona	4.0	73.8077922077922	1013.7831168831169	1.0
+5	11	Agriculture, forestry, fishing and hunting	4	11	11	04011	Greenlee County, Arizona	1.0	18.45194805194805	253.44577922077923	1.0
+6	11	Agriculture, forestry, fishing and hunting	4	11	12	04012	La Paz County, Arizona	2.6	26.909090909090914	631.4136363636364	0.6
+7	11	Agriculture, forestry, fishing and hunting	4	11	13	04013	Maricopa County, Arizona	85.8	321.2	10943.0	0.0
+8	11	Agriculture, forestry, fishing and hunting	4	11	15	04015	Mohave County, Arizona	1.0	20.252435064935064	258.46347402597405	1.0
+9	11	Agriculture, forestry, fishing and hunting	4	11	17	04017	Navajo County, Arizona	7.0	69.4	2733.0	0.2
+10	11	Agriculture, forestry, fishing and hunting	4	11	19	04019	Pima County, Arizona	21.6	149.8	4763.6	0.0
+11	11	Agriculture, forestry, fishing and hunting	4	11	21	04021	Pinal County, Arizona	12.0	121.6	6006.2	0.0
+12	11	Agriculture, forestry, fishing and hunting	4	11	23	04023	Santa Cruz County, Arizona	6.6	103.6	782.2	0.0
+13	11	Agriculture, forestry, fishing and hunting	4	11	25	04025	Yavapai County, Arizona	9.8	81.4857142857143	1644.9142857142858	0.2
+14	11	Agriculture, forestry, fishing and hunting	4	11	27	04027	Yuma County, Arizona	26.2	385.0	17430.4	0.0
+15	21	Mining, quarrying, and oil and gas extraction	4	21	1	04001	Apache County, Arizona	6.8	92.4	5799.4	0.0
+16	21	Mining, quarrying, and oil and gas extraction	4	21	3	04003	Cochise County, Arizona	9.4	885.1506522972207	48883.0711287578	0.6
+17	21	Mining, quarrying, and oil and gas extraction	4	21	5	04005	Coconino County, Arizona	6.2	365.4	27343.9	0.2
+18	21	Mining, quarrying, and oil and gas extraction	4	21	7	04007	Gila County, Arizona	13.4	1662.8	170947.0	0.0
+19	21	Mining, quarrying, and oil and gas extraction	4	21	9	04009	Graham County, Arizona	2.0	557.5265948194365	39454.92474948005	1.0
+20	21	Mining, quarrying, and oil and gas extraction	4	21	11	04011	Greenlee County, Arizona	2.0	557.5265948194365	39454.92474948005	1.0
+21	21	Mining, quarrying, and oil and gas extraction	4	21	12	04012	La Paz County, Arizona	5.4	22.6	1663.4	0.0
+22	21	Mining, quarrying, and oil and gas extraction	4	21	13	04013	Maricopa County, Arizona	74.4	687.2	44711.4	0.0
+23	21	Mining, quarrying, and oil and gas extraction	4	21	15	04015	Mohave County, Arizona	12.8	380.6	21587.8	0.0
+24	21	Mining, quarrying, and oil and gas extraction	4	21	17	04017	Navajo County, Arizona	9.6	1034.2492342597845	63534.38797504255	0.6
+25	21	Mining, quarrying, and oil and gas extraction	4	21	19	04019	Pima County, Arizona	36.8	1486.6	159083.4	0.0
+26	21	Mining, quarrying, and oil and gas extraction	4	21	21	04021	Pinal County, Arizona	24.0	1132.2	83776.6	0.0
+27	21	Mining, quarrying, and oil and gas extraction	4	21	23	04023	Santa Cruz County, Arizona	1.6	460.2689884666288	32347.751805634332	1.0
+28	21	Mining, quarrying, and oil and gas extraction	4	21	25	04025	Yavapai County, Arizona	18.4	2058.477935337493	117831.43959160522	0.6
+29	21	Mining, quarrying, and oil and gas extraction	4	21	27	04027	Yuma County, Arizona	8.0	39.4	1863.0	0.0
+30	22	Utilities	4	22	1	04001	Apache County, Arizona	6.2	253.78956494333306	21502.45629902352	1.0
+31	22	Utilities	4	22	3	04003	Cochise County, Arizona	22.2	549.6	42889.0	0.0
+32	22	Utilities	4	22	5	04005	Coconino County, Arizona	13.2	360.59017068420445	29726.388147225534	0.6
+33	22	Utilities	4	22	7	04007	Gila County, Arizona	5.2	140.96376322376173	12135.012080776509	0.6
+34	22	Utilities	4	22	9	04009	Graham County, Arizona	4.6	184.15797078611087	15555.866915852937	1.0
+35	22	Utilities	4	22	11	04011	Greenlee County, Arizona	3.2	36.4	2393.8	0.0
+36	22	Utilities	4	22	12	04012	La Paz County, Arizona	6.6	115.94805694497884	8702.103901500577	0.4
+37	22	Utilities	4	22	13	04013	Maricopa County, Arizona	72.2	7414.2	785058.0	0.0
+38	22	Utilities	4	22	15	04015	Mohave County, Arizona	26.4	365.2	24113.4	0.0
+39	22	Utilities	4	22	17	04017	Navajo County, Arizona	15.0	499.30498883392903	44955.17648072415	0.6
+40	22	Utilities	4	22	19	04019	Pima County, Arizona	24.4	1300.2085798264993	108652.48390538788	0.6
+41	22	Utilities	4	22	21	04021	Pinal County, Arizona	18.0	291.7360824742268	28664.546391752578	0.2
+42	22	Utilities	4	22	23	04023	Santa Cruz County, Arizona	6.0	86.59130434782608	5797.502608695652	0.2
+43	22	Utilities	4	22	25	04025	Yavapai County, Arizona	27.0	581.7524432474029	43121.380638707196	0.4
+44	22	Utilities	4	22	27	04027	Yuma County, Arizona	8.8	279.15707468772683	23597.882630353466	0.6
+45	23	Construction	4	23	1	04001	Apache County, Arizona	27.8	130.6	4099.4	0.0
+46	23	Construction	4	23	3	04003	Cochise County, Arizona	181.4	1126.4	39738.6	0.0
+47	23	Construction	4	23	5	04005	Coconino County, Arizona	341.4	2093.8	85939.8	0.0
+48	23	Construction	4	23	7	04007	Gila County, Arizona	128.2	618.2	22771.0	0.0
+49	23	Construction	4	23	9	04009	Graham County, Arizona	49.2	383.6	14872.4	0.0
+50	23	Construction	4	23	11	04011	Greenlee County, Arizona	6.0	683.0	21273.0	0.4
+51	23	Construction	4	23	12	04012	La Paz County, Arizona	17.0	39.4	2400.2	0.0
+52	23	Construction	4	23	13	04013	Maricopa County, Arizona	7036.2	95407.2	4810905.6	0.0
+53	23	Construction	4	23	15	04015	Mohave County, Arizona	446.4	2356.8	81733.4	0.0
+54	23	Construction	4	23	17	04017	Navajo County, Arizona	195.0	922.0	34272.0	0.0
+55	23	Construction	4	23	19	04019	Pima County, Arizona	1630.8	16842.8	717364.0	0.0
+56	23	Construction	4	23	21	04021	Pinal County, Arizona	334.2	2334.2	101305.0	0.0
+57	23	Construction	4	23	23	04023	Santa Cruz County, Arizona	53.0	294.0	10953.6	0.0
+58	23	Construction	4	23	25	04025	Yavapai County, Arizona	720.2	3780.6	140169.6	0.0
+59	23	Construction	4	23	27	04027	Yuma County, Arizona	298.0	2389.4	82368.4	0.0
+60	42	Wholesale trade	4	42	1	04001	Apache County, Arizona	15.4	64.4	1835.2	0.0
+61	42	Wholesale trade	4	42	3	04003	Cochise County, Arizona	54.2	422.8	14496.2	0.0
+62	42	Wholesale trade	4	42	5	04005	Coconino County, Arizona	104.6	865.2	39662.6	0.0
+63	42	Wholesale trade	4	42	7	04007	Gila County, Arizona	23.8	191.8	9953.4	0.0
+64	42	Wholesale trade	4	42	9	04009	Graham County, Arizona	16.4	182.4	8293.4	0.0
+65	42	Wholesale trade	4	42	11	04011	Greenlee County, Arizona	3.8	1165.7488372093023	106114.52558139534	0.6
+66	42	Wholesale trade	4	42	12	04012	La Paz County, Arizona	12.4	108.4	4583.4	0.0
+67	42	Wholesale trade	4	42	13	04013	Maricopa County, Arizona	4638.2	73047.8	4723500.8	0.0
+68	42	Wholesale trade	4	42	15	04015	Mohave County, Arizona	118.6	1051.2	42597.4	0.0
+69	42	Wholesale trade	4	42	17	04017	Navajo County, Arizona	38.8	737.2511627906977	46979.27441860465	0.2
+70	42	Wholesale trade	4	42	19	04019	Pima County, Arizona	772.6	7444.6	363733.4	0.0
+71	42	Wholesale trade	4	42	21	04021	Pinal County, Arizona	121.4	1324.2	62683.2	0.0
+72	42	Wholesale trade	4	42	23	04023	Santa Cruz County, Arizona	214.0	2278.4	106880.8	0.0
+73	42	Wholesale trade	4	42	25	04025	Yavapai County, Arizona	173.0	1498.0	68592.2	0.0
+74	42	Wholesale trade	4	42	27	04027	Yuma County, Arizona	144.6	2121.2	110617.2	0.0
+75	51	Information	4	51	1	04001	Apache County, Arizona	11.0	295.06026570048306	18625.307194616977	0.8
+76	51	Information	4	51	3	04003	Cochise County, Arizona	34.4	348.4	14478.4	0.0
+77	51	Information	4	51	5	04005	Coconino County, Arizona	47.4	752.149494949495	38547.90303030303	0.2
+78	51	Information	4	51	7	04007	Gila County, Arizona	17.6	128.2	3893.6	0.0
+79	51	Information	4	51	9	04009	Graham County, Arizona	9.6	84.0	3124.2	0.0
+80	51	Information	4	51	11	04011	Greenlee County, Arizona	4.8	178.0455753184014	14626.285088462264	0.8
+81	51	Information	4	51	12	04012	La Paz County, Arizona	8.8	22.8	1333.2	0.0
+82	51	Information	4	51	13	04013	Maricopa County, Arizona	1410.6	35358.8	2485232.6	0.0
+83	51	Information	4	51	15	04015	Mohave County, Arizona	54.2	675.0	25108.2	0.0
+84	51	Information	4	51	17	04017	Navajo County, Arizona	27.6	565.2974418093984	21511.58444852249	0.6
+85	51	Information	4	51	19	04019	Pima County, Arizona	281.8	6162.8	347960.2	0.0
+86	51	Information	4	51	21	04021	Pinal County, Arizona	47.8	1065.8	43410.2	0.0
+87	51	Information	4	51	23	04023	Santa Cruz County, Arizona	11.0	178.04722222222222	5717.320238095238	0.4
+88	51	Information	4	51	25	04025	Yavapai County, Arizona	73.0	755.8	28708.2	0.0
+89	51	Information	4	51	27	04027	Yuma County, Arizona	37.8	563.2	19990.4	0.0
+90	52	Finance and insurance	4	52	1	04001	Apache County, Arizona	14.2	59.0	2875.0	0.0
+91	52	Finance and insurance	4	52	3	04003	Cochise County, Arizona	106.2	550.0	21974.6	0.0
+92	52	Finance and insurance	4	52	5	04005	Coconino County, Arizona	152.8	825.8	47344.4	0.0
+93	52	Finance and insurance	4	52	7	04007	Gila County, Arizona	46.8	201.4	8408.0	0.0
+94	52	Finance and insurance	4	52	9	04009	Graham County, Arizona	23.2	114.2	4552.4	0.0
+95	52	Finance and insurance	4	52	11	04011	Greenlee County, Arizona	4.0	3215.2	267176.2	0.8
+96	52	Finance and insurance	4	52	12	04012	La Paz County, Arizona	14.6	53.8	2158.6	0.0
+97	52	Finance and insurance	4	52	13	04013	Maricopa County, Arizona	6705.4	114140.2	7759642.6	0.0
+98	52	Finance and insurance	4	52	15	04015	Mohave County, Arizona	186.2	1026.4	46817.8	0.0
+99	52	Finance and insurance	4	52	17	04017	Navajo County, Arizona	75.2	370.8	13865.0	0.0
+100	52	Finance and insurance	4	52	19	04019	Pima County, Arizona	1237.8	12336.0	653130.4	0.0
+101	52	Finance and insurance	4	52	21	04021	Pinal County, Arizona	210.4	983.6	38340.8	0.0
+102	52	Finance and insurance	4	52	23	04023	Santa Cruz County, Arizona	43.2	219.4	9188.0	0.0
+103	52	Finance and insurance	4	52	25	04025	Yavapai County, Arizona	302.4	1271.4	62029.2	0.0
+104	52	Finance and insurance	4	52	27	04027	Yuma County, Arizona	144.8	1157.2	48914.8	0.0
+105	53	Real estate and rental and leasing	4	53	1	04001	Apache County, Arizona	12.0	25.6	777.0	0.0
+106	53	Real estate and rental and leasing	4	53	3	04003	Cochise County, Arizona	112.2	441.2	14313.6	0.0
+107	53	Real estate and rental and leasing	4	53	5	04005	Coconino County, Arizona	197.4	605.4	27672.2	0.0
+108	53	Real estate and rental and leasing	4	53	7	04007	Gila County, Arizona	62.6	144.0	4388.8	0.0
+109	53	Real estate and rental and leasing	4	53	9	04009	Graham County, Arizona	25.4	83.8	2766.4	0.0
+110	53	Real estate and rental and leasing	4	53	11	04011	Greenlee County, Arizona	2.8	200.8	1926.0	0.6
+111	53	Real estate and rental and leasing	4	53	12	04012	La Paz County, Arizona	19.4	58.0	1498.8	0.0
+112	53	Real estate and rental and leasing	4	53	13	04013	Maricopa County, Arizona	5779.0	33266.4	1709865.4	0.0
+113	53	Real estate and rental and leasing	4	53	15	04015	Mohave County, Arizona	212.4	687.6	17743.8	0.0
+114	53	Real estate and rental and leasing	4	53	17	04017	Navajo County, Arizona	93.4	246.6	6624.4	0.0
+115	53	Real estate and rental and leasing	4	53	19	04019	Pima County, Arizona	1242.8	6028.6	217546.0	0.0
+116	53	Real estate and rental and leasing	4	53	21	04021	Pinal County, Arizona	192.8	652.0	18824.0	0.0
+117	53	Real estate and rental and leasing	4	53	23	04023	Santa Cruz County, Arizona	47.2	163.2	3748.8	0.0
+118	53	Real estate and rental and leasing	4	53	25	04025	Yavapai County, Arizona	363.0	973.0	35043.4	0.0
+119	53	Real estate and rental and leasing	4	53	27	04027	Yuma County, Arizona	161.6	729.8	21028.4	0.0
+120	54	Professional, scientific, and technical services	4	54	1	04001	Apache County, Arizona	26.0	118.2	5167.0	0.0
+121	54	Professional, scientific, and technical services	4	54	3	04003	Cochise County, Arizona	225.8	3831.0	250728.4	0.0
+122	54	Professional, scientific, and technical services	4	54	5	04005	Coconino County, Arizona	334.2	1628.6	73699.8	0.0
+123	54	Professional, scientific, and technical services	4	54	7	04007	Gila County, Arizona	77.6	222.6	12727.4	0.0
+124	54	Professional, scientific, and technical services	4	54	9	04009	Graham County, Arizona	26.4	2987.543486590038	108132.86398467433	0.6
+125	54	Professional, scientific, and technical services	4	54	11	04011	Greenlee County, Arizona	4.6	400.94401340996166	15466.96101532567	0.6
+126	54	Professional, scientific, and technical services	4	54	12	04012	La Paz County, Arizona	12.4	390.3125	18602.375	0.2
+127	54	Professional, scientific, and technical services	4	54	13	04013	Maricopa County, Arizona	12163.4	104208.6	7329505.2	0.0
+128	54	Professional, scientific, and technical services	4	54	15	04015	Mohave County, Arizona	227.2	927.0	32385.2	0.0
+129	54	Professional, scientific, and technical services	4	54	17	04017	Navajo County, Arizona	113.0	368.2	11389.8	0.0
+130	54	Professional, scientific, and technical services	4	54	19	04019	Pima County, Arizona	2534.0	16682.6	967499.8	0.0
+131	54	Professional, scientific, and technical services	4	54	21	04021	Pinal County, Arizona	262.2	932.4	41540.8	0.0
+132	54	Professional, scientific, and technical services	4	54	23	04023	Santa Cruz County, Arizona	66.2	194.8	7557.6	0.0
+133	54	Professional, scientific, and technical services	4	54	25	04025	Yavapai County, Arizona	524.2	1678.2	74505.8	0.0
+134	54	Professional, scientific, and technical services	4	54	27	04027	Yuma County, Arizona	222.8	1333.8	66868.6	0.0
+135	55	Management of companies and enterprises	4	55	1	04001	Apache County, Arizona	2.4	45.85802605767823	3506.2060922266137	1.0
+136	55	Management of companies and enterprises	4	55	3	04003	Cochise County, Arizona	8.8	112.48765217391306	8764.02852173913	0.4
+137	55	Management of companies and enterprises	4	55	5	04005	Coconino County, Arizona	13.2	500.0	31008.6	0.0
+138	55	Management of companies and enterprises	4	55	7	04007	Gila County, Arizona	2.4	53.73595198360415	3759.30475889328	1.0
+139	55	Management of companies and enterprises	4	55	9	04009	Graham County, Arizona	1.0	19.505013028839112	1527.3190461133067	1.0
+140	55	Management of companies and enterprises	4	55	11	04011	Greenlee County, Arizona	1.0	19.505013028839112	1527.3190461133067	1.0
+141	55	Management of companies and enterprises	4	55	13	04013	Maricopa County, Arizona	730.2	43328.4	3863408.4	0.0
+142	55	Management of companies and enterprises	4	55	15	04015	Mohave County, Arizona	5.0	95.37185185185186	5579.053333333333	0.4
+143	55	Management of companies and enterprises	4	55	17	04017	Navajo County, Arizona	3.6	67.27527097057532	5306.470123847166	1.0
+144	55	Management of companies and enterprises	4	55	19	04019	Pima County, Arizona	136.4	4791.8	348217.8	0.0
+145	55	Management of companies and enterprises	4	55	21	04021	Pinal County, Arizona	7.8	125.0	4573.2	0.0
+146	55	Management of companies and enterprises	4	55	23	04023	Santa Cruz County, Arizona	2.6	20.905665349143607	2279.09907773386	0.6
+147	55	Management of companies and enterprises	4	55	25	04025	Yavapai County, Arizona	16.8	105.2	5052.6	0.0
+148	55	Management of companies and enterprises	4	55	27	04027	Yuma County, Arizona	12.2	492.7555555555556	18340.6	0.2
+149	56	Administrative and support and waste management and remediation services	4	56	1	04001	Apache County, Arizona	14.0	153.6	5415.4	0.0
+150	56	Administrative and support and waste management and remediation services	4	56	3	04003	Cochise County, Arizona	94.6	20030.904938271608	655922.7925925927	0.4
+151	56	Administrative and support and waste management and remediation services	4	56	5	04005	Coconino County, Arizona	150.0	1389.0	37479.2	0.0
+152	56	Administrative and support and waste management and remediation services	4	56	7	04007	Gila County, Arizona	36.2	296.0	8279.8	0.0
+153	56	Administrative and support and waste management and remediation services	4	56	9	04009	Graham County, Arizona	15.4	123.0	3017.6	0.0
+154	56	Administrative and support and waste management and remediation services	4	56	11	04011	Greenlee County, Arizona	2.8	170.9207207207207	5324.52972972973	0.2
+155	56	Administrative and support and waste management and remediation services	4	56	12	04012	La Paz County, Arizona	5.6	540.2214214214215	19228.300300300303	0.4
+156	56	Administrative and support and waste management and remediation services	4	56	13	04013	Maricopa County, Arizona	5660.2	136147.6	4841066.6	0.0
+157	56	Administrative and support and waste management and remediation services	4	56	15	04015	Mohave County, Arizona	207.8	2220.4	61814.4	0.0
+158	56	Administrative and support and waste management and remediation services	4	56	17	04017	Navajo County, Arizona	77.2	464.8	14943.4	0.0
+159	56	Administrative and support and waste management and remediation services	4	56	19	04019	Pima County, Arizona	1172.8	26305.8	654325.6	0.0
+160	56	Administrative and support and waste management and remediation services	4	56	21	04021	Pinal County, Arizona	216.2	22360.352919586254	812808.7773773774	0.4
+161	56	Administrative and support and waste management and remediation services	4	56	23	04023	Santa Cruz County, Arizona	27.6	296.8	6847.4	0.0
+162	56	Administrative and support and waste management and remediation services	4	56	25	04025	Yavapai County, Arizona	323.0	2289.8	67590.2	0.0
+163	56	Administrative and support and waste management and remediation services	4	56	27	04027	Yuma County, Arizona	151.4	3845.8	116904.4	0.0
+164	61	Educational services	4	61	1	04001	Apache County, Arizona	9.4	342.4	8694.2	0.0
+165	61	Educational services	4	61	3	04003	Cochise County, Arizona	35.6	600.4	21967.0	0.0
+166	61	Educational services	4	61	5	04005	Coconino County, Arizona	30.4	638.0	19708.8	0.0
+167	61	Educational services	4	61	7	04007	Gila County, Arizona	11.6	118.6	2897.6	0.0
+168	61	Educational services	4	61	9	04009	Graham County, Arizona	6.8	63.8	1092.6	0.0
+169	61	Educational services	4	61	12	04012	La Paz County, Arizona	1.6	538.4	15488.8	1.0
+170	61	Educational services	4	61	13	04013	Maricopa County, Arizona	1441.2	51808.4	1859658.4	0.0
+171	61	Educational services	4	61	15	04015	Mohave County, Arizona	23.0	478.4	13697.4	0.0
+172	61	Educational services	4	61	17	04017	Navajo County, Arizona	20.6	473.6	13984.0	0.0
+173	61	Educational services	4	61	19	04019	Pima County, Arizona	357.0	6446.8	203988.6	0.0
+174	61	Educational services	4	61	21	04021	Pinal County, Arizona	40.0	978.6	32250.8	0.0
+175	61	Educational services	4	61	23	04023	Santa Cruz County, Arizona	10.4	93.6	2350.4	0.0
+176	61	Educational services	4	61	25	04025	Yavapai County, Arizona	83.0	2735.8	92076.2	0.0
+177	61	Educational services	4	61	27	04027	Yuma County, Arizona	23.4	524.4	14722.8	0.0
+178	62	Health care and social assistance	4	62	1	04001	Apache County, Arizona	69.2	2786.6	123334.8	0.0
+179	62	Health care and social assistance	4	62	3	04003	Cochise County, Arizona	274.4	4786.8	174247.2	0.0
+180	62	Health care and social assistance	4	62	5	04005	Coconino County, Arizona	387.4	7769.8	409335.6	0.0
+181	62	Health care and social assistance	4	62	7	04007	Gila County, Arizona	136.6	2245.6	97204.0	0.0
+182	62	Health care and social assistance	4	62	9	04009	Graham County, Arizona	74.4	1498.8	58198.4	0.0
+183	62	Health care and social assistance	4	62	11	04011	Greenlee County, Arizona	9.4	100.4	6415.6	0.0
+184	62	Health care and social assistance	4	62	12	04012	La Paz County, Arizona	24.0	583.4	30484.8	0.0
+185	62	Health care and social assistance	4	62	13	04013	Maricopa County, Arizona	11249.4	214444.6	10652148.2	0.0
+186	62	Health care and social assistance	4	62	15	04015	Mohave County, Arizona	479.8	8480.6	388668.4	0.0
+187	62	Health care and social assistance	4	62	17	04017	Navajo County, Arizona	239.8	4086.8	194333.8	0.0
+188	62	Health care and social assistance	4	62	19	04019	Pima County, Arizona	2809.4	58095.4	2518018.4	0.0
+189	62	Health care and social assistance	4	62	21	04021	Pinal County, Arizona	430.0	7995.2	320633.8	0.0
+190	62	Health care and social assistance	4	62	23	04023	Santa Cruz County, Arizona	70.6	1230.8	46062.6	0.2
+191	62	Health care and social assistance	4	62	25	04025	Yavapai County, Arizona	769.8	12417.8	535599.8	0.0
+192	62	Health care and social assistance	4	62	27	04027	Yuma County, Arizona	386.0	6738.4	290278.2	0.0
+193	71	Arts, entertainment, and recreation	4	71	1	04001	Apache County, Arizona	3.0	49.881818181818176	1309.1090909090908	0.4
+194	71	Arts, entertainment, and recreation	4	71	3	04003	Cochise County, Arizona	34.8	255.4	4149.0	0.0
+195	71	Arts, entertainment, and recreation	4	71	5	04005	Coconino County, Arizona	90.2	1595.8	39639.8	0.0
+196	71	Arts, entertainment, and recreation	4	71	7	04007	Gila County, Arizona	12.6	523.5545454545455	12888.672727272726	0.4
+197	71	Arts, entertainment, and recreation	4	71	9	04009	Graham County, Arizona	4.6	16.6	338.2	0.0
+198	71	Arts, entertainment, and recreation	4	71	11	04011	Greenlee County, Arizona	2.0	140.72121212121212	3837.139393939394	1.0
+199	71	Arts, entertainment, and recreation	4	71	12	04012	La Paz County, Arizona	4.0	281.44242424242424	7674.278787878788	1.0
+200	71	Arts, entertainment, and recreation	4	71	13	04013	Maricopa County, Arizona	1119.6	30494.6	1172859.2	0.0
+201	71	Arts, entertainment, and recreation	4	71	15	04015	Mohave County, Arizona	40.6	578.4	10799.4	0.0
+202	71	Arts, entertainment, and recreation	4	71	17	04017	Navajo County, Arizona	17.2	157.4	6994.2	0.0
+203	71	Arts, entertainment, and recreation	4	71	19	04019	Pima County, Arizona	309.2	6302.6	110389.6	0.0
+204	71	Arts, entertainment, and recreation	4	71	21	04021	Pinal County, Arizona	52.2	1389.2	18838.4	0.0
+205	71	Arts, entertainment, and recreation	4	71	23	04023	Santa Cruz County, Arizona	12.4	56.8	932.6	0.0
+206	71	Arts, entertainment, and recreation	4	71	25	04025	Yavapai County, Arizona	85.6	981.8	17186.6	0.0
+207	71	Arts, entertainment, and recreation	4	71	27	04027	Yuma County, Arizona	26.4	587.6	11540.8	0.0
+208	72	Accommodation and food services	4	72	1	04001	Apache County, Arizona	60.6	845.6	13146.0	0.0
+209	72	Accommodation and food services	4	72	3	04003	Cochise County, Arizona	268.2	4012.4	56490.2	0.0
+210	72	Accommodation and food services	4	72	5	04005	Coconino County, Arizona	556.6	12324.6	243107.2	0.0
+211	72	Accommodation and food services	4	72	7	04007	Gila County, Arizona	134.6	1819.6	30148.0	0.0
+212	72	Accommodation and food services	4	72	9	04009	Graham County, Arizona	49.4	836.6	9647.2	0.0
+213	72	Accommodation and food services	4	72	11	04011	Greenlee County, Arizona	14.8	99.0	1818.6	0.0
+214	72	Accommodation and food services	4	72	12	04012	La Paz County, Arizona	82.6	964.0	13162.8	0.0
+215	72	Accommodation and food services	4	72	13	04013	Maricopa County, Arizona	7183.6	174726.8	3163011.2	0.0
+216	72	Accommodation and food services	4	72	15	04015	Mohave County, Arizona	388.8	6103.4	87725.4	0.0
+217	72	Accommodation and food services	4	72	17	04017	Navajo County, Arizona	223.0	3574.2	60897.8	0.0
+218	72	Accommodation and food services	4	72	19	04019	Pima County, Arizona	1775.4	43979.0	731075.8	0.0
+219	72	Accommodation and food services	4	72	21	04021	Pinal County, Arizona	337.2	6465.6	98200.2	0.0
+220	72	Accommodation and food services	4	72	23	04023	Santa Cruz County, Arizona	101.0	1455.0	20838.0	0.0
+221	72	Accommodation and food services	4	72	25	04025	Yavapai County, Arizona	549.2	8750.2	153455.4	0.0
+222	72	Accommodation and food services	4	72	27	04027	Yuma County, Arizona	329.6	6001.4	86059.6	0.0
+223	81	Other services (except public administration)	4	81	1	04001	Apache County, Arizona	39.2	126.0	2763.2	0.0
+224	81	Other services (except public administration)	4	81	3	04003	Cochise County, Arizona	229.0	1033.6	21223.4	0.0
+225	81	Other services (except public administration)	4	81	5	04005	Coconino County, Arizona	315.2	1840.2	46686.4	0.0
+226	81	Other services (except public administration)	4	81	7	04007	Gila County, Arizona	87.4	331.4	6711.0	0.0
+227	81	Other services (except public administration)	4	81	9	04009	Graham County, Arizona	41.4	304.2	10155.4	0.0
+228	81	Other services (except public administration)	4	81	11	04011	Greenlee County, Arizona	7.0	10.6	251.6	0.0
+229	81	Other services (except public administration)	4	81	12	04012	La Paz County, Arizona	22.4	49.4	1750.8	0.0
+230	81	Other services (except public administration)	4	81	13	04013	Maricopa County, Arizona	6680.6	58986.2	1829598.0	0.0
+231	81	Other services (except public administration)	4	81	15	04015	Mohave County, Arizona	362.0	1770.2	38188.8	0.0
+232	81	Other services (except public administration)	4	81	17	04017	Navajo County, Arizona	164.4	714.0	15088.8	0.0
+233	81	Other services (except public administration)	4	81	19	04019	Pima County, Arizona	1842.8	14588.0	356409.2	0.0
+234	81	Other services (except public administration)	4	81	21	04021	Pinal County, Arizona	321.0	1818.2	45409.4	0.0
+235	81	Other services (except public administration)	4	81	23	04023	Santa Cruz County, Arizona	65.0	277.2	5954.6	0.0
+236	81	Other services (except public administration)	4	81	25	04025	Yavapai County, Arizona	504.2	2536.0	60457.8	0.0
+237	81	Other services (except public administration)	4	81	27	04027	Yuma County, Arizona	251.0	1504.0	34104.0	0.0
+238	99	Industries not classified	4	99	1	04001	Apache County, Arizona	2.2	2.523809523809524	52.53571428571429	0.6
+239	99	Industries not classified	4	99	3	04003	Cochise County, Arizona	3.6	4.885714285714286	66.88571428571429	0.4
+240	99	Industries not classified	4	99	5	04005	Coconino County, Arizona	9.0	7.485714285714286	182.0857142857143	0.2
+241	99	Industries not classified	4	99	7	04007	Gila County, Arizona	2.2	4.942857142857143	28.159523809523808	0.8
+242	99	Industries not classified	4	99	9	04009	Graham County, Arizona	1.5	3.9761904761904763	34.11607142857143	1.0
+243	99	Industries not classified	4	99	11	04011	Greenlee County, Arizona	1.0	3.0317460317460316	24.305555555555554	1.0
+244	99	Industries not classified	4	99	12	04012	La Paz County, Arizona	1.6666666666666667	4.031746031746032	35.666666666666664	0.6666666666666666
+245	99	Industries not classified	4	99	13	04013	Maricopa County, Arizona	139.8	102.6	4794.2	0.0
+246	99	Industries not classified	4	99	15	04015	Mohave County, Arizona	3.8	1.342857142857143	108.08571428571429	0.6
+247	99	Industries not classified	4	99	17	04017	Navajo County, Arizona	7.6	6.6	282.6	0.0
+248	99	Industries not classified	4	99	19	04019	Pima County, Arizona	27.6	29.4	1039.6	0.0
+249	99	Industries not classified	4	99	21	04021	Pinal County, Arizona	4.4	8.342857142857143	106.04285714285716	0.4
+250	99	Industries not classified	4	99	23	04023	Santa Cruz County, Arizona	2.6	3.161904761904762	51.042857142857144	0.6
+251	99	Industries not classified	4	99	25	04025	Yavapai County, Arizona	9.0	2.838095238095238	231.8857142857143	0.4
+252	99	Industries not classified	4	99	27	04027	Yuma County, Arizona	4.25	13.321428571428571	277.25	0.5

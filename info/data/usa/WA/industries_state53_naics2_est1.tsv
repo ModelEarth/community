@@ -1,733 +1,640 @@
-	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
-0	11	Agriculture, forestry, fishing and hunting	53	11	1	53001	Adams County, Washington	0	11.333333333333334	163.66666666666666	7339.333333333333
-1	11	Agriculture, forestry, fishing and hunting	53	11	1	53001	Adams County, Washington	1	9.0	216.03966346153845	3629.7403846153848
-2	11	Agriculture, forestry, fishing and hunting	53	11	3	53003	Asotin County, Washington	0	3.0	0.0	952.0
-3	11	Agriculture, forestry, fishing and hunting	53	11	3	53003	Asotin County, Washington	1	1.75	36.259910714285716	618.0517857142856
-4	11	Agriculture, forestry, fishing and hunting	53	11	5	53005	Benton County, Washington	0	13.0	65.0	3273.0
-5	11	Agriculture, forestry, fishing and hunting	53	11	7	53007	Chelan County, Washington	0	20.6	1452.8	58531.6
-6	11	Agriculture, forestry, fishing and hunting	53	11	9	53009	Clallam County, Washington	0	59.8	439.2	22603.4
-7	11	Agriculture, forestry, fishing and hunting	53	11	11	53011	Clark County, Washington	0	38.0	198.2	14681.2
-8	11	Agriculture, forestry, fishing and hunting	53	11	13	53013	Columbia County, Washington	0	3.3333333333333335	9.666666666666666	436.0
-9	11	Agriculture, forestry, fishing and hunting	53	11	13	53013	Columbia County, Washington	1	3.5	89.09821428571428	1327.2857142857142
-10	11	Agriculture, forestry, fishing and hunting	53	11	15	53015	Cowlitz County, Washington	0	52.8	805.6	45836.2
-11	11	Agriculture, forestry, fishing and hunting	53	11	17	53017	Douglas County, Washington	0	12.8	105.4	4835.4
-12	11	Agriculture, forestry, fishing and hunting	53	11	19	53019	Ferry County, Washington	0	14.8	20.2	1786.4
-13	11	Agriculture, forestry, fishing and hunting	53	11	21	53021	Franklin County, Washington	0	22.6	567.4	29563.4
-14	11	Agriculture, forestry, fishing and hunting	53	11	23	53023	Garfield County, Washington	1	1.0	16.29785805860806	361.98322344322344
-15	11	Agriculture, forestry, fishing and hunting	53	11	25	53025	Grant County, Washington	0	23.4	420.4	13050.4
-16	11	Agriculture, forestry, fishing and hunting	53	11	27	53027	Grays Harbor County, Washington	0	73.0	357.2	23254.8
-17	11	Agriculture, forestry, fishing and hunting	53	11	29	53029	Island County, Washington	0	16.2	9.4	843.2
-18	11	Agriculture, forestry, fishing and hunting	53	11	31	53031	Jefferson County, Washington	0	12.2	16.8	1699.2
-19	11	Agriculture, forestry, fishing and hunting	53	11	33	53033	King County, Washington	0	239.0	1696.6	125387.6
-20	11	Agriculture, forestry, fishing and hunting	53	11	35	53035	Kitsap County, Washington	0	34.2	54.8	4237.4
-21	11	Agriculture, forestry, fishing and hunting	53	11	37	53037	Kittitas County, Washington	0	13.5	117.5	6492.5
-22	11	Agriculture, forestry, fishing and hunting	53	11	37	53037	Kittitas County, Washington	1	15.666666666666666	327.6457799145299	5748.2841880341875
-23	11	Agriculture, forestry, fishing and hunting	53	11	39	53039	Klickitat County, Washington	0	24.8	327.4	14536.2
-24	11	Agriculture, forestry, fishing and hunting	53	11	41	53041	Lewis County, Washington	0	80.0	893.2	33840.6
-25	11	Agriculture, forestry, fishing and hunting	53	11	43	53043	Lincoln County, Washington	1	1.4	19.719286630036628	503.80465201465205
-26	11	Agriculture, forestry, fishing and hunting	53	11	45	53045	Mason County, Washington	0	21.8	483.4	20997.8
-27	11	Agriculture, forestry, fishing and hunting	53	11	47	53047	Okanogan County, Washington	0	37.2	256.8	8651.6
-28	11	Agriculture, forestry, fishing and hunting	53	11	49	53049	Pacific County, Washington	0	46.4	206.2	9056.4
-29	11	Agriculture, forestry, fishing and hunting	53	11	51	53051	Pend Oreille County, Washington	0	6.2	37.0	2487.8
-30	11	Agriculture, forestry, fishing and hunting	53	11	53	53053	Pierce County, Washington	0	77.4	254.8	12651.8
-31	11	Agriculture, forestry, fishing and hunting	53	11	55	53055	San Juan County, Washington	0	9.8	4.6	295.0
-32	11	Agriculture, forestry, fishing and hunting	53	11	57	53057	Skagit County, Washington	0	52.0	259.3333333333333	20716.0
-33	11	Agriculture, forestry, fishing and hunting	53	11	57	53057	Skagit County, Washington	1	52.5	665.3307692307692	17249.47435897436
-34	11	Agriculture, forestry, fishing and hunting	53	11	59	53059	Skamania County, Washington	0	4.6	5.4	297.4
-35	11	Agriculture, forestry, fishing and hunting	53	11	61	53061	Snohomish County, Washington	0	125.8	268.0	15515.2
-36	11	Agriculture, forestry, fishing and hunting	53	11	63	53063	Spokane County, Washington	0	26.6	56.2	3567.2
-37	11	Agriculture, forestry, fishing and hunting	53	11	65	53065	Stevens County, Washington	0	47.8	168.2	8053.6
-38	11	Agriculture, forestry, fishing and hunting	53	11	67	53067	Thurston County, Washington	0	52.6	406.0	23406.8
-39	11	Agriculture, forestry, fishing and hunting	53	11	69	53069	Wahkiakum County, Washington	0	7.0	96.0	4688.8
-40	11	Agriculture, forestry, fishing and hunting	53	11	71	53071	Walla Walla County, Washington	0	10.0	42.6	1950.8
-41	11	Agriculture, forestry, fishing and hunting	53	11	73	53073	Whatcom County, Washington	0	70.6	294.4	14602.0
-42	11	Agriculture, forestry, fishing and hunting	53	11	75	53075	Whitman County, Washington	0	7.4	17.0	680.2
-43	11	Agriculture, forestry, fishing and hunting	53	11	77	53077	Yakima County, Washington	0	36.0	1996.2	66788.8
-44	21	Mining, quarrying, and oil and gas extraction	53	21	5	53005	Benton County, Washington	1	1.0	22.070061876994956	1622.2078882766573
-45	21	Mining, quarrying, and oil and gas extraction	53	21	7	53007	Chelan County, Washington	0	4.25	6.25	1061.5
-46	21	Mining, quarrying, and oil and gas extraction	53	21	7	53007	Chelan County, Washington	1	4.0	80.88888888888889	5370.296296296296
-47	21	Mining, quarrying, and oil and gas extraction	53	21	9	53009	Clallam County, Washington	0	3.4	6.2	698.4
-48	21	Mining, quarrying, and oil and gas extraction	53	21	11	53011	Clark County, Washington	0	10.0	21.0	3650.6
-49	21	Mining, quarrying, and oil and gas extraction	53	21	13	53013	Columbia County, Washington	1	1.0	23.589656173816017	1784.3739393152005
-50	21	Mining, quarrying, and oil and gas extraction	53	21	15	53015	Cowlitz County, Washington	1	6.4	150.2157148206739	11308.036228483796
-51	21	Mining, quarrying, and oil and gas extraction	53	21	17	53017	Douglas County, Washington	1	1.0	21.512714206744054	1461.9826791966095
-52	21	Mining, quarrying, and oil and gas extraction	53	21	19	53019	Ferry County, Washington	1	1.8	42.21157041214816	3139.334975404595
-53	21	Mining, quarrying, and oil and gas extraction	53	21	21	53021	Franklin County, Washington	0	3.0	24.0	1920.0
-54	21	Mining, quarrying, and oil and gas extraction	53	21	21	53021	Franklin County, Washington	1	3.0	60.666666666666664	4027.722222222222
-55	21	Mining, quarrying, and oil and gas extraction	53	21	25	53025	Grant County, Washington	1	2.4	55.85709012540981	4170.540471222994
-56	21	Mining, quarrying, and oil and gas extraction	53	21	29	53029	Island County, Washington	0	3.0	7.0	492.0
-57	21	Mining, quarrying, and oil and gas extraction	53	21	29	53029	Island County, Washington	1	2.3333333333333335	56.75601256390856	4400.932847284315
-58	21	Mining, quarrying, and oil and gas extraction	53	21	31	53031	Jefferson County, Washington	0	3.0	17.0	1178.3333333333333
-59	21	Mining, quarrying, and oil and gas extraction	53	21	31	53031	Jefferson County, Washington	1	3.0	65.08333333333333	4513.444444444444
-60	21	Mining, quarrying, and oil and gas extraction	53	21	33	53033	King County, Washington	0	22.0	519.6	30356.2
-61	21	Mining, quarrying, and oil and gas extraction	53	21	35	53035	Kitsap County, Washington	1	2.0	47.179312347632035	3568.747878630401
-62	21	Mining, quarrying, and oil and gas extraction	53	21	37	53037	Kittitas County, Washington	1	2.2	52.14705428311591	3998.160781856208
-63	21	Mining, quarrying, and oil and gas extraction	53	21	39	53039	Klickitat County, Washington	1	2.2	51.4091630939007	3844.1448935557746
-64	21	Mining, quarrying, and oil and gas extraction	53	21	41	53041	Lewis County, Washington	0	10.0	92.66666666666667	8285.0
-65	21	Mining, quarrying, and oil and gas extraction	53	21	41	53041	Lewis County, Washington	1	9.0	199.42164179104478	13695.182835820895
-66	21	Mining, quarrying, and oil and gas extraction	53	21	45	53045	Mason County, Washington	0	3.6	36.4	2738.8
-67	21	Mining, quarrying, and oil and gas extraction	53	21	47	53047	Okanogan County, Washington	1	1.8	41.06154404628164	3033.095687206568
-68	21	Mining, quarrying, and oil and gas extraction	53	21	49	53049	Pacific County, Washington	1	2.0	47.179312347632035	3568.747878630401
-69	21	Mining, quarrying, and oil and gas extraction	53	21	51	53051	Pend Oreille County, Washington	1	1.8	41.465026633346326	3090.9764500589727
-70	21	Mining, quarrying, and oil and gas extraction	53	21	53	53053	Pierce County, Washington	0	11.4	160.4	10520.0
-71	21	Mining, quarrying, and oil and gas extraction	53	21	55	53055	San Juan County, Washington	1	1.0	23.589656173816017	1784.3739393152005
-72	21	Mining, quarrying, and oil and gas extraction	53	21	57	53057	Skagit County, Washington	0	8.6	26.0	1954.2
-73	21	Mining, quarrying, and oil and gas extraction	53	21	61	53061	Snohomish County, Washington	0	14.0	140.6	9011.4
-74	21	Mining, quarrying, and oil and gas extraction	53	21	63	53063	Spokane County, Washington	0	18.4	139.8	12361.0
-75	21	Mining, quarrying, and oil and gas extraction	53	21	65	53065	Stevens County, Washington	0	4.5	57.5	4059.5
-76	21	Mining, quarrying, and oil and gas extraction	53	21	65	53065	Stevens County, Washington	1	6.0	129.07628524046433	8771.896075179657
-77	21	Mining, quarrying, and oil and gas extraction	53	21	67	53067	Thurston County, Washington	0	6.5	244.5	14158.0
-78	21	Mining, quarrying, and oil and gas extraction	53	21	67	53067	Thurston County, Washington	1	5.333333333333333	114.61332227750137	7768.908420858669
-79	21	Mining, quarrying, and oil and gas extraction	53	21	69	53069	Wahkiakum County, Washington	1	1.4	32.452840253418	2393.048732018352
-80	21	Mining, quarrying, and oil and gas extraction	53	21	71	53071	Walla Walla County, Washington	1	2.0	47.179312347632035	3568.747878630401
-81	21	Mining, quarrying, and oil and gas extraction	53	21	73	53073	Whatcom County, Washington	0	11.25	60.5	4200.5
-82	21	Mining, quarrying, and oil and gas extraction	53	21	73	53073	Whatcom County, Washington	1	10.0	211.49253731343282	13769.850746268656
-83	21	Mining, quarrying, and oil and gas extraction	53	21	75	53075	Whitman County, Washington	1	1.2	27.634100618260465	2052.8887541300155
-84	21	Mining, quarrying, and oil and gas extraction	53	21	77	53077	Yakima County, Washington	0	7.0	40.0	1636.4
-85	22	Utilities	53	22	1	53001	Adams County, Washington	1	3.0	24.731687078970186	2533.5582282843106
-86	22	Utilities	53	22	3	53003	Asotin County, Washington	1	1.0	8.243895692990062	844.5194094281035
-87	22	Utilities	53	22	5	53005	Benton County, Washington	1	7.2	56.88539485093044	5840.919199330057
-88	22	Utilities	53	22	7	53007	Chelan County, Washington	1	4.2	38.48822645012117	3933.9695917354024
-89	22	Utilities	53	22	9	53009	Clallam County, Washington	0	9.0	25.4	739.2
-90	22	Utilities	53	22	11	53011	Clark County, Washington	1	2.8	19.219043400809266	1977.6662742613219
-91	22	Utilities	53	22	13	53013	Columbia County, Washington	0	4.0	18.0	3465.0
-92	22	Utilities	53	22	13	53013	Columbia County, Washington	1	3.6666666666666665	67.63449065582456	6794.660899160349
-93	22	Utilities	53	22	15	53015	Cowlitz County, Washington	0	7.0	64.0	7252.0
-94	22	Utilities	53	22	15	53015	Cowlitz County, Washington	1	7.666666666666667	-32.19933040511498	-2918.36856150154
-95	22	Utilities	53	22	17	53017	Douglas County, Washington	1	1.0	8.243895692990062	844.5194094281035
-96	22	Utilities	53	22	21	53021	Franklin County, Washington	1	4.0	32.97558277196025	3378.077637712414
-97	22	Utilities	53	22	23	53023	Garfield County, Washington	1	1.8	17.309666385980126	1759.7554855228736
-98	22	Utilities	53	22	25	53025	Grant County, Washington	0	6.5	12.5	624.0
-99	22	Utilities	53	22	25	53025	Grant County, Washington	1	7.0	41.45314850633999	4192.348090837452
-100	22	Utilities	53	22	27	53027	Grays Harbor County, Washington	1	3.0	24.731687078970186	2533.5582282843106
-101	22	Utilities	53	22	29	53029	Island County, Washington	0	15.2	49.6	2367.8
-102	22	Utilities	53	22	31	53031	Jefferson County, Washington	1	3.6	16.01771764323351	1689.3339510289982
-103	22	Utilities	53	22	33	53033	King County, Washington	0	40.5	4763.0	577829.5
-104	22	Utilities	53	22	33	53033	King County, Washington	1	46.0	-192.72025104771114	-17446.039383193638
-105	22	Utilities	53	22	35	53035	Kitsap County, Washington	0	9.0	116.0	11324.5
-106	22	Utilities	53	22	35	53035	Kitsap County, Washington	1	11.0	-45.92715385235332	-4157.979851708576
-107	22	Utilities	53	22	37	53037	Kittitas County, Washington	0	9.4	27.6	3372.6
-108	22	Utilities	53	22	39	53039	Klickitat County, Washington	0	9.8	62.8	5700.8
-109	22	Utilities	53	22	41	53041	Lewis County, Washington	0	8.0	250.0	24109.5
-110	22	Utilities	53	22	41	53041	Lewis County, Washington	1	7.666666666666667	-32.0407532774554	-2896.977899563006
-111	22	Utilities	53	22	43	53043	Lincoln County, Washington	0	4.0	18.2	1844.6
-112	22	Utilities	53	22	45	53045	Mason County, Washington	0	3.8	5.6	226.8
-113	22	Utilities	53	22	47	53047	Okanogan County, Washington	0	7.8	26.2	1832.4
-114	22	Utilities	53	22	49	53049	Pacific County, Washington	1	1.4	19.005475541363744	1916.7560443021557
-115	22	Utilities	53	22	53	53053	Pierce County, Washington	0	26.4	579.4	45374.6
-116	22	Utilities	53	22	55	53055	San Juan County, Washington	0	8.5	94.5	7416.0
-117	22	Utilities	53	22	55	53055	San Juan County, Washington	1	9.333333333333334	-39.13505399742102	-3533.619492800344
-118	22	Utilities	53	22	57	53057	Skagit County, Washington	1	8.0	65.9511655439205	6756.155275424828
-119	22	Utilities	53	22	61	53061	Snohomish County, Washington	0	10.4	49.8	4246.2
-120	22	Utilities	53	22	63	53063	Spokane County, Washington	1	13.2	106.34876900887082	10908.035655898679
-121	22	Utilities	53	22	65	53065	Stevens County, Washington	1	6.0	49.46337415794037	5067.116456568621
-122	22	Utilities	53	22	67	53067	Thurston County, Washington	0	8.5	103.5	10301.5
-123	22	Utilities	53	22	67	53067	Thurston County, Washington	1	10.666666666666666	-44.62917405437352	-4035.56402679275
-124	22	Utilities	53	22	71	53071	Walla Walla County, Washington	0	11.6	47.4	9610.6
-125	22	Utilities	53	22	73	53073	Whatcom County, Washington	1	18.8	151.38508199659842	15529.524098282904
-126	22	Utilities	53	22	75	53075	Whitman County, Washington	1	5.0	41.21947846495031	4222.597047140518
-127	22	Utilities	53	22	77	53077	Yakima County, Washington	0	9.0	157.5	13651.5
-128	22	Utilities	53	22	77	53077	Yakima County, Washington	1	10.0	-41.80282546206748	-3773.8964288272796
-129	23	Construction	53	23	1	53001	Adams County, Washington	0	28.0	72.6	3420.6
-130	23	Construction	53	23	3	53003	Asotin County, Washington	0	62.6	336.0	20178.0
-131	23	Construction	53	23	5	53005	Benton County, Washington	0	512.2	4368.0	259749.8
-132	23	Construction	53	23	7	53007	Chelan County, Washington	0	346.4	1811.0	116034.8
-133	23	Construction	53	23	9	53009	Clallam County, Washington	0	304.4	1085.8	48871.0
-134	23	Construction	53	23	11	53011	Clark County, Washington	0	1390.2	10386.6	592461.2
-135	23	Construction	53	23	13	53013	Columbia County, Washington	0	10.2	8.0	460.0
-136	23	Construction	53	23	15	53015	Cowlitz County, Washington	0	231.0	2677.4	177650.6
-137	23	Construction	53	23	17	53017	Douglas County, Washington	0	124.4	446.6	21772.6
-138	23	Construction	53	23	19	53019	Ferry County, Washington	0	15.2	9.8	861.0
-139	23	Construction	53	23	21	53021	Franklin County, Washington	0	224.6	1616.6	75943.2
-140	23	Construction	53	23	23	53023	Garfield County, Washington	0	3.0	3.0	46.0
-141	23	Construction	53	23	23	53023	Garfield County, Washington	1	2.0	128.03113553113553	7089.10347985348
-142	23	Construction	53	23	25	53025	Grant County, Washington	0	188.4	892.0	44640.2
-143	23	Construction	53	23	27	53027	Grays Harbor County, Washington	0	164.0	1290.2	79608.2
-144	23	Construction	53	23	29	53029	Island County, Washington	0	273.6	877.6	40753.8
-145	23	Construction	53	23	31	53031	Jefferson County, Washington	0	137.0	551.8	23835.2
-146	23	Construction	53	23	33	53033	King County, Washington	0	5533.6	55063.8	3742761.4
-147	23	Construction	53	23	35	53035	Kitsap County, Washington	0	762.0	3567.2	189879.4
-148	23	Construction	53	23	37	53037	Kittitas County, Washington	0	199.2	636.2	29246.0
-149	23	Construction	53	23	39	53039	Klickitat County, Washington	0	80.6	170.8	7100.6
-150	23	Construction	53	23	41	53041	Lewis County, Washington	0	190.4	746.0	32569.8
-151	23	Construction	53	23	43	53043	Lincoln County, Washington	0	35.8	151.4	8040.4
-152	23	Construction	53	23	45	53045	Mason County, Washington	0	168.8	563.2	21396.2
-153	23	Construction	53	23	47	53047	Okanogan County, Washington	0	156.0	402.0	15359.2
-154	23	Construction	53	23	49	53049	Pacific County, Washington	0	56.2	178.6	5394.6
-155	23	Construction	53	23	51	53051	Pend Oreille County, Washington	0	39.0	62.8	3990.4
-156	23	Construction	53	23	53	53053	Pierce County, Washington	0	2224.8	16462.0	977623.4
-157	23	Construction	53	23	55	53055	San Juan County, Washington	0	211.0	674.2	26558.8
-158	23	Construction	53	23	57	53057	Skagit County, Washington	0	431.8	2832.2	187335.8
-159	23	Construction	53	23	59	53059	Skamania County, Washington	0	34.6	79.8	3563.6
-160	23	Construction	53	23	61	53061	Snohomish County, Washington	0	2841.4	18508.2	1049731.4
-161	23	Construction	53	23	63	53063	Spokane County, Washington	0	1375.2	9325.6	532926.8
-162	23	Construction	53	23	65	53065	Stevens County, Washington	0	127.0	436.8	18737.4
-163	23	Construction	53	23	67	53067	Thurston County, Washington	0	696.4	3631.8	185071.2
-164	23	Construction	53	23	69	53069	Wahkiakum County, Washington	0	7.5	54.0	2112.5
-165	23	Construction	53	23	69	53069	Wahkiakum County, Washington	1	11.0	231.62515262515262	5771.19536019536
-166	23	Construction	53	23	71	53071	Walla Walla County, Washington	0	154.8	777.0	35354.8
-167	23	Construction	53	23	73	53073	Whatcom County, Washington	0	757.4	6366.6	363937.0
-168	23	Construction	53	23	75	53075	Whitman County, Washington	0	72.6	309.6	14937.0
-169	23	Construction	53	23	77	53077	Yakima County, Washington	0	528.2	2842.8	139273.4
-170	42	Wholesale trade	53	42	1	53001	Adams County, Washington	0	32.6	482.8	28996.6
-171	42	Wholesale trade	53	42	3	53003	Asotin County, Washington	0	16.4	88.0	5554.4
-172	42	Wholesale trade	53	42	5	53005	Benton County, Washington	0	131.2	1481.4	90372.0
-173	42	Wholesale trade	53	42	7	53007	Chelan County, Washington	0	101.8	2506.4	107789.6
-174	42	Wholesale trade	53	42	9	53009	Clallam County, Washington	0	48.0	310.6	13056.0
-175	42	Wholesale trade	53	42	11	53011	Clark County, Washington	0	556.0	6240.8	509366.6
-176	42	Wholesale trade	53	42	13	53013	Columbia County, Washington	0	15.25	11.0	1549.0
-177	42	Wholesale trade	53	42	13	53013	Columbia County, Washington	1	12.0	2370.4	233332.0
-178	42	Wholesale trade	53	42	15	53015	Cowlitz County, Washington	0	97.2	1099.8	60300.0
-179	42	Wholesale trade	53	42	17	53017	Douglas County, Washington	0	42.2	685.6	27778.0
-180	42	Wholesale trade	53	42	19	53019	Ferry County, Washington	1	1.0	665.4384126984127	58701.446031746025
-181	42	Wholesale trade	53	42	21	53021	Franklin County, Washington	0	124.4	1692.2	88401.4
-182	42	Wholesale trade	53	42	23	53023	Garfield County, Washington	0	9.0	103.0	4321.4
-183	42	Wholesale trade	53	42	25	53025	Grant County, Washington	0	130.4	1787.8	85754.2
-184	42	Wholesale trade	53	42	27	53027	Grays Harbor County, Washington	0	50.6	564.4	27657.6
-185	42	Wholesale trade	53	42	29	53029	Island County, Washington	0	44.6	166.8	8938.6
-186	42	Wholesale trade	53	42	31	53031	Jefferson County, Washington	0	25.6	144.4	5555.2
-187	42	Wholesale trade	53	42	33	53033	King County, Washington	0	3936.8	59944.6	4358618.2
-188	42	Wholesale trade	53	42	35	53035	Kitsap County, Washington	0	161.2	1011.6	56830.0
-189	42	Wholesale trade	53	42	37	53037	Kittitas County, Washington	0	42.0	472.2	26862.6
-190	42	Wholesale trade	53	42	39	53039	Klickitat County, Washington	0	17.6	107.8	8522.0
-191	42	Wholesale trade	53	42	41	53041	Lewis County, Washington	0	71.6	559.6	25127.0
-192	42	Wholesale trade	53	42	43	53043	Lincoln County, Washington	0	28.0	174.8	9052.2
-193	42	Wholesale trade	53	42	45	53045	Mason County, Washington	0	35.6	447.8	25642.8
-194	42	Wholesale trade	53	42	47	53047	Okanogan County, Washington	0	40.8	364.2	15100.8
-195	42	Wholesale trade	53	42	49	53049	Pacific County, Washington	0	7.4	34.2	2283.0
-196	42	Wholesale trade	53	42	51	53051	Pend Oreille County, Washington	0	5.333333333333333	8.0	489.6666666666667
-197	42	Wholesale trade	53	42	51	53051	Pend Oreille County, Washington	1	5.0	1758.7619047619046	137109.90476190476
-198	42	Wholesale trade	53	42	53	53053	Pierce County, Washington	0	795.6	11399.4	622536.6
-199	42	Wholesale trade	53	42	55	53055	San Juan County, Washington	0	17.2	35.0	1792.6
-200	42	Wholesale trade	53	42	57	53057	Skagit County, Washington	0	120.0	1504.6	74049.6
-201	42	Wholesale trade	53	42	59	53059	Skamania County, Washington	0	9.0	24.8	1881.0
-202	42	Wholesale trade	53	42	61	53061	Snohomish County, Washington	0	834.4	8573.2	527557.6
-203	42	Wholesale trade	53	42	63	53063	Spokane County, Washington	0	691.8	10447.6	543317.4
-204	42	Wholesale trade	53	42	65	53065	Stevens County, Washington	0	22.4	203.4	6601.2
-205	42	Wholesale trade	53	42	67	53067	Thurston County, Washington	0	203.2	2255.6	118324.6
-206	42	Wholesale trade	53	42	69	53069	Wahkiakum County, Washington	1	1.8	1029.5768253968254	88404.19206349205
-207	42	Wholesale trade	53	42	71	53071	Walla Walla County, Washington	0	71.4	534.0	26277.8
-208	42	Wholesale trade	53	42	73	53073	Whatcom County, Washington	0	343.4	3703.4	202846.6
-209	42	Wholesale trade	53	42	75	53075	Whitman County, Washington	0	61.2	699.4	37928.0
-210	42	Wholesale trade	53	42	77	53077	Yakima County, Washington	0	264.6	5580.8	280331.2
-211	51	Information	53	51	1	53001	Adams County, Washington	1	4.6	295.4892902754972	30942.705090311985
-212	51	Information	53	51	3	53003	Asotin County, Washington	0	5.333333333333333	23.333333333333332	1113.6666666666667
-213	51	Information	53	51	3	53003	Asotin County, Washington	1	4.5	185.82535121328223	8089.3975095785445
-214	51	Information	53	51	5	53005	Benton County, Washington	0	55.0	780.2	29879.2
-215	51	Information	53	51	7	53007	Chelan County, Washington	0	36.2	437.0	17694.8
-216	51	Information	53	51	9	53009	Clallam County, Washington	0	17.6	130.8	6450.6
-217	51	Information	53	51	11	53011	Clark County, Washington	0	170.6	3236.2	183157.2
-218	51	Information	53	51	13	53013	Columbia County, Washington	0	3.0	4.0	99.0
-219	51	Information	53	51	13	53013	Columbia County, Washington	1	2.25	155.09019795657724	16851.563697318008
-220	51	Information	53	51	15	53015	Cowlitz County, Washington	0	26.8	304.2	13463.4
-221	51	Information	53	51	17	53017	Douglas County, Washington	0	13.0	148.0	8445.0
-222	51	Information	53	51	17	53017	Douglas County, Washington	1	7.25	389.9072477650064	33519.474616858235
-223	51	Information	53	51	19	53019	Ferry County, Washington	0	3.4	9.6	466.8
-224	51	Information	53	51	21	53021	Franklin County, Washington	0	21.8	210.4	7797.8
-225	51	Information	53	51	23	53023	Garfield County, Washington	1	1.0	68.57819740923189	7504.093705528188
-226	51	Information	53	51	25	53025	Grant County, Washington	0	24.4	268.4	12361.8
-227	51	Information	53	51	27	53027	Grays Harbor County, Washington	0	21.2	174.0	7279.8
-228	51	Information	53	51	29	53029	Island County, Washington	0	21.5	181.0	9206.0
-229	51	Information	53	51	29	53029	Island County, Washington	1	24.666666666666668	1045.0381013197104	62318.50255427841
-230	51	Information	53	51	31	53031	Jefferson County, Washington	0	27.2	153.0	7339.4
-231	51	Information	53	51	33	53033	King County, Washington	0	1702.8	97363.6	16869974.0
-232	51	Information	53	51	35	53035	Kitsap County, Washington	0	83.0	1201.8	72222.6
-233	51	Information	53	51	37	53037	Kittitas County, Washington	0	13.4	220.0	9575.4
-234	51	Information	53	51	39	53039	Klickitat County, Washington	0	7.8	23.2	1714.0
-235	51	Information	53	51	41	53041	Lewis County, Washington	0	19.4	127.0	6217.0
-236	51	Information	53	51	43	53043	Lincoln County, Washington	0	6.0	28.0	625.0
-237	51	Information	53	51	43	53043	Lincoln County, Washington	1	6.0	259.89308520343	16115.381499726325
-238	51	Information	53	51	45	53045	Mason County, Washington	0	10.4	92.0	3361.4
-239	51	Information	53	51	47	53047	Okanogan County, Washington	0	17.8	154.8	5622.0
-240	51	Information	53	51	49	53049	Pacific County, Washington	0	11.4	27.8	1640.0
-241	51	Information	53	51	51	53051	Pend Oreille County, Washington	0	8.2	54.6	1799.4
-242	51	Information	53	51	53	53053	Pierce County, Washington	0	183.0	3586.4	171667.2
-243	51	Information	53	51	55	53055	San Juan County, Washington	0	14.8	64.0	2437.4
-244	51	Information	53	51	57	53057	Skagit County, Washington	0	38.6	492.0	21860.0
-245	51	Information	53	51	59	53059	Skamania County, Washington	0	4.5	8.75	711.25
-246	51	Information	53	51	59	53059	Skamania County, Washington	1	2.0	276.88888888888886	40078.0
-247	51	Information	53	51	61	53061	Snohomish County, Washington	0	228.8	5439.8	337633.2
-248	51	Information	53	51	63	53063	Spokane County, Washington	0	205.8	3720.0	205570.8
-249	51	Information	53	51	65	53065	Stevens County, Washington	0	14.6	53.6	2200.2
-250	51	Information	53	51	67	53067	Thurston County, Washington	0	90.4	1574.4	90184.8
-251	51	Information	53	51	69	53069	Wahkiakum County, Washington	0	3.0	18.0	1181.0
-252	51	Information	53	51	69	53069	Wahkiakum County, Washington	1	3.0	153.33490695128626	13111.101395730704
-253	51	Information	53	51	71	53071	Walla Walla County, Washington	0	22.0	352.4	14187.8
-254	51	Information	53	51	73	53073	Whatcom County, Washington	0	92.4	1744.2	92403.0
-255	51	Information	53	51	75	53075	Whitman County, Washington	0	17.0	81.6	4675.4
-256	51	Information	53	51	77	53077	Yakima County, Washington	0	62.6	972.0	42062.8
-257	52	Finance and insurance	53	52	1	53001	Adams County, Washington	0	20.0	85.6	3566.0
-258	52	Finance and insurance	53	52	3	53003	Asotin County, Washington	0	29.6	159.6	7869.6
-259	52	Finance and insurance	53	52	5	53005	Benton County, Washington	0	231.0	1636.6	99094.0
-260	52	Finance and insurance	53	52	7	53007	Chelan County, Washington	0	124.8	754.8	42387.8
-261	52	Finance and insurance	53	52	9	53009	Clallam County, Washington	0	90.0	494.8	25616.4
-262	52	Finance and insurance	53	52	11	53011	Clark County, Washington	0	622.6	4984.6	357401.4
-263	52	Finance and insurance	53	52	13	53013	Columbia County, Washington	0	4.8	16.8	671.6
-264	52	Finance and insurance	53	52	15	53015	Cowlitz County, Washington	0	105.6	822.0	40902.8
-265	52	Finance and insurance	53	52	17	53017	Douglas County, Washington	0	33.6	189.0	8307.6
-266	52	Finance and insurance	53	52	19	53019	Ferry County, Washington	0	5.75	15.25	630.75
-267	52	Finance and insurance	53	52	19	53019	Ferry County, Washington	1	6.0	508.95	27873.6
-268	52	Finance and insurance	53	52	21	53021	Franklin County, Washington	0	50.2	366.6	17694.6
-269	52	Finance and insurance	53	52	23	53023	Garfield County, Washington	0	3.4	7.2	477.8
-270	52	Finance and insurance	53	52	25	53025	Grant County, Washington	0	90.6	532.6	28147.8
-271	52	Finance and insurance	53	52	27	53027	Grays Harbor County, Washington	0	79.6	347.2	27753.8
-272	52	Finance and insurance	53	52	29	53029	Island County, Washington	0	78.4	418.2	19726.2
-273	52	Finance and insurance	53	52	31	53031	Jefferson County, Washington	0	34.8	144.2	8337.8
-274	52	Finance and insurance	53	52	33	53033	King County, Washington	0	3560.0	42730.0	4297193.8
-275	52	Finance and insurance	53	52	35	53035	Kitsap County, Washington	0	294.4	1907.0	103074.2
-276	52	Finance and insurance	53	52	37	53037	Kittitas County, Washington	0	44.8	199.0	8678.0
-277	52	Finance and insurance	53	52	39	53039	Klickitat County, Washington	0	16.6	42.4	2760.8
-278	52	Finance and insurance	53	52	41	53041	Lewis County, Washington	0	88.2	386.2	17256.6
-279	52	Finance and insurance	53	52	43	53043	Lincoln County, Washington	0	21.4	56.0	2464.0
-280	52	Finance and insurance	53	52	45	53045	Mason County, Washington	0	46.4	326.0	15680.2
-281	52	Finance and insurance	53	52	47	53047	Okanogan County, Washington	0	44.8	218.2	9031.4
-282	52	Finance and insurance	53	52	49	53049	Pacific County, Washington	0	25.4	183.2	8825.8
-283	52	Finance and insurance	53	52	51	53051	Pend Oreille County, Washington	0	11.4	40.0	2043.2
-284	52	Finance and insurance	53	52	53	53053	Pierce County, Washington	0	903.0	9900.0	649474.8
-285	52	Finance and insurance	53	52	55	53055	San Juan County, Washington	0	24.2	133.0	7127.6
-286	52	Finance and insurance	53	52	57	53057	Skagit County, Washington	0	180.2	1496.6	76174.6
-287	52	Finance and insurance	53	52	59	53059	Skamania County, Washington	0	4.2	21.6	710.6
-288	52	Finance and insurance	53	52	61	53061	Snohomish County, Washington	0	912.0	8685.0	607409.6
-289	52	Finance and insurance	53	52	63	53063	Spokane County, Washington	0	860.4	10768.4	673352.8
-290	52	Finance and insurance	53	52	65	53065	Stevens County, Washington	0	30.75	207.75	10448.25
-291	52	Finance and insurance	53	52	65	53065	Stevens County, Washington	1	34.0	2884.0499999999997	157950.4
-292	52	Finance and insurance	53	52	67	53067	Thurston County, Washington	0	330.6	2610.0	156655.6
-293	52	Finance and insurance	53	52	69	53069	Wahkiakum County, Washington	0	3.8	5.0	370.2
-294	52	Finance and insurance	53	52	71	53071	Walla Walla County, Washington	0	76.4	412.2	37861.0
-295	52	Finance and insurance	53	52	73	53073	Whatcom County, Washington	0	297.2	2295.4	144849.2
-296	52	Finance and insurance	53	52	75	53075	Whitman County, Washington	0	49.0	213.8	11028.4
-297	52	Finance and insurance	53	52	77	53077	Yakima County, Washington	0	242.2	1555.8	90199.4
-298	53	Real estate and rental and leasing	53	53	1	53001	Adams County, Washington	0	11.6	15.4	635.2
-299	53	Real estate and rental and leasing	53	53	3	53003	Asotin County, Washington	0	20.6	100.2	2269.8
-300	53	Real estate and rental and leasing	53	53	5	53005	Benton County, Washington	0	256.0	1073.0	35434.6
-301	53	Real estate and rental and leasing	53	53	7	53007	Chelan County, Washington	0	128.0	433.2	14160.6
-302	53	Real estate and rental and leasing	53	53	9	53009	Clallam County, Washington	0	87.6	236.0	7535.0
-303	53	Real estate and rental and leasing	53	53	11	53011	Clark County, Washington	0	511.6	2097.6	80872.4
-304	53	Real estate and rental and leasing	53	53	13	53013	Columbia County, Washington	0	6.8	10.2	219.4
-305	53	Real estate and rental and leasing	53	53	15	53015	Cowlitz County, Washington	0	113.0	421.0	12813.6
-306	53	Real estate and rental and leasing	53	53	17	53017	Douglas County, Washington	0	33.4	83.4	2730.8
-307	53	Real estate and rental and leasing	53	53	19	53019	Ferry County, Washington	0	7.2	14.0	435.8
-308	53	Real estate and rental and leasing	53	53	21	53021	Franklin County, Washington	0	62.4	285.6	9128.8
-309	53	Real estate and rental and leasing	53	53	25	53025	Grant County, Washington	0	108.0	273.0	5997.2
-310	53	Real estate and rental and leasing	53	53	27	53027	Grays Harbor County, Washington	0	78.2	283.2	6557.6
-311	53	Real estate and rental and leasing	53	53	29	53029	Island County, Washington	0	94.0	217.2	8350.4
-312	53	Real estate and rental and leasing	53	53	31	53031	Jefferson County, Washington	0	49.6	123.4	3795.0
-313	53	Real estate and rental and leasing	53	53	33	53033	King County, Washington	0	4178.8	23079.2	1361788.4
-314	53	Real estate and rental and leasing	53	53	35	53035	Kitsap County, Washington	0	345.0	965.0	35801.6
-315	53	Real estate and rental and leasing	53	53	37	53037	Kittitas County, Washington	0	62.2	151.6	5468.8
-316	53	Real estate and rental and leasing	53	53	39	53039	Klickitat County, Washington	0	21.8	28.0	696.4
-317	53	Real estate and rental and leasing	53	53	41	53041	Lewis County, Washington	0	78.0	287.0	9649.6
-318	53	Real estate and rental and leasing	53	53	43	53043	Lincoln County, Washington	0	5.25	10.25	190.75
-319	53	Real estate and rental and leasing	53	53	43	53043	Lincoln County, Washington	1	4.0	91.27272727272728	2158.909090909091
-320	53	Real estate and rental and leasing	53	53	45	53045	Mason County, Washington	0	44.4	136.2	3744.2
-321	53	Real estate and rental and leasing	53	53	47	53047	Okanogan County, Washington	0	56.8	146.6	2186.0
-322	53	Real estate and rental and leasing	53	53	49	53049	Pacific County, Washington	0	19.4	79.6	3445.0
-323	53	Real estate and rental and leasing	53	53	51	53051	Pend Oreille County, Washington	0	7.0	4.6	368.6
-324	53	Real estate and rental and leasing	53	53	53	53053	Pierce County, Washington	0	1003.0	5054.0	184066.2
-325	53	Real estate and rental and leasing	53	53	55	53055	San Juan County, Washington	0	57.0	116.8	3880.8
-326	53	Real estate and rental and leasing	53	53	57	53057	Skagit County, Washington	0	156.8	472.0	14591.2
-327	53	Real estate and rental and leasing	53	53	59	53059	Skamania County, Washington	0	6.0	7.5	139.5
-328	53	Real estate and rental and leasing	53	53	59	53059	Skamania County, Washington	1	7.0	159.72727272727272	3778.090909090909
-329	53	Real estate and rental and leasing	53	53	61	53061	Snohomish County, Washington	0	924.6	3095.0	134529.6
-330	53	Real estate and rental and leasing	53	53	63	53063	Spokane County, Washington	0	623.6	3207.2	118507.6
-331	53	Real estate and rental and leasing	53	53	65	53065	Stevens County, Washington	0	24.8	62.2	1856.0
-332	53	Real estate and rental and leasing	53	53	67	53067	Thurston County, Washington	0	326.6	1053.2	35921.8
-333	53	Real estate and rental and leasing	53	53	69	53069	Wahkiakum County, Washington	0	5.8	3.4	88.6
-334	53	Real estate and rental and leasing	53	53	71	53071	Walla Walla County, Washington	0	59.4	176.8	5781.6
-335	53	Real estate and rental and leasing	53	53	73	53073	Whatcom County, Washington	0	335.2	1281.6	44336.0
-336	53	Real estate and rental and leasing	53	53	75	53075	Whitman County, Washington	0	49.6	244.4	5515.2
-337	53	Real estate and rental and leasing	53	53	77	53077	Yakima County, Washington	0	255.0	948.4	28570.6
-338	54	Professional, scientific, and technical services	53	54	1	53001	Adams County, Washington	0	11.4	38.4	1850.8
-339	54	Professional, scientific, and technical services	53	54	3	53003	Asotin County, Washington	0	35.0	252.0	8183.0
-340	54	Professional, scientific, and technical services	53	54	5	53005	Benton County, Washington	0	455.2	7747.0	619403.6
-341	54	Professional, scientific, and technical services	53	54	7	53007	Chelan County, Washington	0	180.8	1048.0	49800.6
-342	54	Professional, scientific, and technical services	53	54	9	53009	Clallam County, Washington	0	161.0	729.8	29357.2
-343	54	Professional, scientific, and technical services	53	54	11	53011	Clark County, Washington	0	1166.6	8187.4	432990.2
-344	54	Professional, scientific, and technical services	53	54	13	53013	Columbia County, Washington	0	7.8	19.2	559.8
-345	54	Professional, scientific, and technical services	53	54	15	53015	Cowlitz County, Washington	0	134.2	726.2	30844.2
-346	54	Professional, scientific, and technical services	53	54	17	53017	Douglas County, Washington	0	35.4	180.0	6987.4
-347	54	Professional, scientific, and technical services	53	54	19	53019	Ferry County, Washington	0	6.4	10.0	344.8
-348	54	Professional, scientific, and technical services	53	54	21	53021	Franklin County, Washington	0	78.8	480.2	23214.0
-349	54	Professional, scientific, and technical services	53	54	23	53023	Garfield County, Washington	0	4.0	4.5	92.0
-350	54	Professional, scientific, and technical services	53	54	23	53023	Garfield County, Washington	1	2.0	2844.8888888888887	316664.6666666666
-351	54	Professional, scientific, and technical services	53	54	25	53025	Grant County, Washington	0	99.2	449.2	18837.0
-352	54	Professional, scientific, and technical services	53	54	27	53027	Grays Harbor County, Washington	0	88.8	411.2	19818.4
-353	54	Professional, scientific, and technical services	53	54	29	53029	Island County, Washington	0	178.2	634.2	28797.4
-354	54	Professional, scientific, and technical services	53	54	31	53031	Jefferson County, Washington	0	111.0	285.0	12004.6
-355	54	Professional, scientific, and technical services	53	54	33	53033	King County, Washington	0	10184.2	102128.4	9361413.0
-356	54	Professional, scientific, and technical services	53	54	35	53035	Kitsap County, Washington	0	705.0	4244.8	247937.4
-357	54	Professional, scientific, and technical services	53	54	37	53037	Kittitas County, Washington	0	70.6	253.0	10619.2
-358	54	Professional, scientific, and technical services	53	54	39	53039	Klickitat County, Washington	0	58.2	277.2	11902.4
-359	54	Professional, scientific, and technical services	53	54	41	53041	Lewis County, Washington	0	113.6	517.8	19994.6
-360	54	Professional, scientific, and technical services	53	54	43	53043	Lincoln County, Washington	0	12.4	80.6	6247.2
-361	54	Professional, scientific, and technical services	53	54	45	53045	Mason County, Washington	0	75.0	247.8	7763.6
-362	54	Professional, scientific, and technical services	53	54	47	53047	Okanogan County, Washington	0	75.0	397.6666666666667	14060.0
-363	54	Professional, scientific, and technical services	53	54	47	53047	Okanogan County, Washington	1	72.5	12652.714800759015	1310076.7411764706
-364	54	Professional, scientific, and technical services	53	54	49	53049	Pacific County, Washington	0	36.4	44.0	3882.6
-365	54	Professional, scientific, and technical services	53	54	51	53051	Pend Oreille County, Washington	0	14.4	64.6	2230.8
-366	54	Professional, scientific, and technical services	53	54	53	53053	Pierce County, Washington	0	1453.8	9306.2	559301.6
-367	54	Professional, scientific, and technical services	53	54	55	53055	San Juan County, Washington	0	101.2	228.4	13211.8
-368	54	Professional, scientific, and technical services	53	54	57	53057	Skagit County, Washington	0	292.6	1618.8	85412.2
-369	54	Professional, scientific, and technical services	53	54	59	53059	Skamania County, Washington	0	13.0	48.0	3978.5
-370	54	Professional, scientific, and technical services	53	54	59	53059	Skamania County, Washington	1	16.333333333333332	9532.227169864362	1046238.2836601306
-371	54	Professional, scientific, and technical services	53	54	61	53061	Snohomish County, Washington	0	1650.2	10978.8	783974.4
-372	54	Professional, scientific, and technical services	53	54	63	53063	Spokane County, Washington	0	1289.0	8804.6	512430.4
-373	54	Professional, scientific, and technical services	53	54	65	53065	Stevens County, Washington	0	63.6	216.2	8422.8
-374	54	Professional, scientific, and technical services	53	54	67	53067	Thurston County, Washington	0	630.4	5200.6	285266.4
-375	54	Professional, scientific, and technical services	53	54	69	53069	Wahkiakum County, Washington	0	7.0	9.8	355.6
-376	54	Professional, scientific, and technical services	53	54	71	53071	Walla Walla County, Washington	0	104.4	464.0	19904.6
-377	54	Professional, scientific, and technical services	53	54	73	53073	Whatcom County, Washington	0	693.4	3350.2	205035.8
-378	54	Professional, scientific, and technical services	53	54	75	53075	Whitman County, Washington	0	61.0	335.4	16762.2
-379	54	Professional, scientific, and technical services	53	54	77	53077	Yakima County, Washington	0	317.2	1850.8	86105.0
-380	55	Management of companies and enterprises	53	55	3	53003	Asotin County, Washington	1	1.8	32.89744202898551	2734.282525171625
-381	55	Management of companies and enterprises	53	55	5	53005	Benton County, Washington	0	15.8	366.2	34463.6
-382	55	Management of companies and enterprises	53	55	7	53007	Chelan County, Washington	1	3.4	62.26155072463767	5181.386102974828
-383	55	Management of companies and enterprises	53	55	9	53009	Clallam County, Washington	0	5.0	111.0	5073.0
-384	55	Management of companies and enterprises	53	55	9	53009	Clallam County, Washington	1	4.0	74.26183574879227	5378.78718535469
-385	55	Management of companies and enterprises	53	55	11	53011	Clark County, Washington	0	80.2	2552.2	262873.8
-386	55	Management of companies and enterprises	53	55	15	53015	Cowlitz County, Washington	0	6.6	59.4	7559.2
-387	55	Management of companies and enterprises	53	55	17	53017	Douglas County, Washington	1	5.8	108.02201086956522	8566.661347254005
-388	55	Management of companies and enterprises	53	55	21	53021	Franklin County, Washington	1	2.0	37.08005072463768	2998.321655606407
-389	55	Management of companies and enterprises	53	55	25	53025	Grant County, Washington	0	5.5	128.5	12612.5
-390	55	Management of companies and enterprises	53	55	25	53025	Grant County, Washington	1	5.0	92.82729468599034	6723.483981693364
-391	55	Management of companies and enterprises	53	55	27	53027	Grays Harbor County, Washington	0	3.25	27.75	3969.25
-392	55	Management of companies and enterprises	53	55	27	53027	Grays Harbor County, Washington	1	3.0	62.73913043478261	3960.586956521739
-393	55	Management of companies and enterprises	53	55	29	53029	Island County, Washington	1	2.2	41.26265942028986	3262.36078604119
-394	55	Management of companies and enterprises	53	55	31	53031	Jefferson County, Washington	0	6.0	33.0	1287.0
-395	55	Management of companies and enterprises	53	55	31	53031	Jefferson County, Washington	1	3.25	60.383355978260866	4523.812017305492
-396	55	Management of companies and enterprises	53	55	33	53033	King County, Washington	0	583.8	62385.4	7796145.8
-397	55	Management of companies and enterprises	53	55	35	53035	Kitsap County, Washington	0	18.0	234.0	17745.666666666668
-398	55	Management of companies and enterprises	53	55	35	53035	Kitsap County, Washington	1	17.5	304.21666666666664	23707.105263157893
-399	55	Management of companies and enterprises	53	55	37	53037	Kittitas County, Washington	0	3.0	11.0	358.0
-400	55	Management of companies and enterprises	53	55	37	53037	Kittitas County, Washington	1	2.0	37.4281884057971	2969.105194508009
-401	55	Management of companies and enterprises	53	55	39	53039	Klickitat County, Washington	1	1.0	17.84375	1557.59375
-402	55	Management of companies and enterprises	53	55	41	53041	Lewis County, Washington	0	4.333333333333333	81.66666666666667	6813.333333333333
-403	55	Management of companies and enterprises	53	55	41	53041	Lewis County, Washington	1	3.0	57.04456521739131	3897.2934782608695
-404	55	Management of companies and enterprises	53	55	43	53043	Lincoln County, Washington	1	1.4	25.94077536231884	2191.503577803204
-405	55	Management of companies and enterprises	53	55	45	53045	Mason County, Washington	1	1.5	28.029959239130434	2086.943632008009
-406	55	Management of companies and enterprises	53	55	47	53047	Okanogan County, Washington	0	3.0	46.0	1884.0
-407	55	Management of companies and enterprises	53	55	47	53047	Okanogan County, Washington	1	2.25	41.2310009057971	3185.240507008009
-408	55	Management of companies and enterprises	53	55	49	53049	Pacific County, Washington	1	1.0	17.84375	1557.59375
-409	55	Management of companies and enterprises	53	55	53	53053	Pierce County, Washington	0	84.4	6262.6	390791.4
-410	55	Management of companies and enterprises	53	55	55	53055	San Juan County, Washington	1	1.6	29.47410869565217	2478.6825251716245
-411	55	Management of companies and enterprises	53	55	57	53057	Skagit County, Washington	0	6.6	55.6	2620.0
-412	55	Management of companies and enterprises	53	55	61	53061	Snohomish County, Washington	0	65.4	2597.4	217145.6
-413	55	Management of companies and enterprises	53	55	63	53063	Spokane County, Washington	0	88.8	2977.4	224738.8
-414	55	Management of companies and enterprises	53	55	65	53065	Stevens County, Washington	1	1.0	18.54002536231884	1499.1608278032036
-415	55	Management of companies and enterprises	53	55	67	53067	Thurston County, Washington	0	19.8	238.6	18140.8
-416	55	Management of companies and enterprises	53	55	71	53071	Walla Walla County, Washington	1	1.0	18.54002536231884	1499.1608278032036
-417	55	Management of companies and enterprises	53	55	73	53073	Whatcom County, Washington	0	22.0	842.0	51716.8
-418	55	Management of companies and enterprises	53	55	75	53075	Whitman County, Washington	1	2.0	37.08005072463768	2998.321655606407
-419	55	Management of companies and enterprises	53	55	77	53077	Yakima County, Washington	0	13.0	229.8	13095.0
-420	56	Administrative and support and waste management and remediation services	53	56	1	53001	Adams County, Washington	0	8.6	17.4	743.2
-421	56	Administrative and support and waste management and remediation services	53	56	3	53003	Asotin County, Washington	0	18.0	112.4	3732.0
-422	56	Administrative and support and waste management and remediation services	53	56	5	53005	Benton County, Washington	0	219.8	8513.2	618589.2
-423	56	Administrative and support and waste management and remediation services	53	56	7	53007	Chelan County, Washington	0	124.0	612.4	18696.6
-424	56	Administrative and support and waste management and remediation services	53	56	9	53009	Clallam County, Washington	0	101.2	558.4	12776.2
-425	56	Administrative and support and waste management and remediation services	53	56	11	53011	Clark County, Washington	0	592.0	7218.0	225760.2
-426	56	Administrative and support and waste management and remediation services	53	56	13	53013	Columbia County, Washington	1	3.8	3851.125401174168	125280.41769080234
-427	56	Administrative and support and waste management and remediation services	53	56	15	53015	Cowlitz County, Washington	0	93.6	914.6	27219.0
-428	56	Administrative and support and waste management and remediation services	53	56	17	53017	Douglas County, Washington	0	46.6	192.4	5576.4
-429	56	Administrative and support and waste management and remediation services	53	56	19	53019	Ferry County, Washington	0	4.2	5.0	425.0
-430	56	Administrative and support and waste management and remediation services	53	56	21	53021	Franklin County, Washington	0	84.8	862.0	34091.6
-431	56	Administrative and support and waste management and remediation services	53	56	23	53023	Garfield County, Washington	1	1.0	260.2857142857143	6407.761904761905
-432	56	Administrative and support and waste management and remediation services	53	56	25	53025	Grant County, Washington	0	61.4	968.4	30687.8
-433	56	Administrative and support and waste management and remediation services	53	56	27	53027	Grays Harbor County, Washington	0	60.2	559.8	15073.4
-434	56	Administrative and support and waste management and remediation services	53	56	29	53029	Island County, Washington	0	102.6	419.2	12650.0
-435	56	Administrative and support and waste management and remediation services	53	56	31	53031	Jefferson County, Washington	0	41.2	209.2	6264.8
-436	56	Administrative and support and waste management and remediation services	53	56	33	53033	King County, Washington	0	3336.6	67079.4	3484232.0
-437	56	Administrative and support and waste management and remediation services	53	56	35	53035	Kitsap County, Washington	0	326.0	3592.0	107627.8
-438	56	Administrative and support and waste management and remediation services	53	56	37	53037	Kittitas County, Washington	0	56.0	296.25	19544.75
-439	56	Administrative and support and waste management and remediation services	53	56	37	53037	Kittitas County, Washington	1	57.0	4237.520547945205	173516.5890410959
-440	56	Administrative and support and waste management and remediation services	53	56	39	53039	Klickitat County, Washington	0	19.2	206.4	11842.8
-441	56	Administrative and support and waste management and remediation services	53	56	41	53041	Lewis County, Washington	0	76.0	778.4	22219.2
-442	56	Administrative and support and waste management and remediation services	53	56	43	53043	Lincoln County, Washington	0	9.0	38.5	1520.5
-443	56	Administrative and support and waste management and remediation services	53	56	43	53043	Lincoln County, Washington	1	8.0	1914.6084801043708	58747.900239182425
-444	56	Administrative and support and waste management and remediation services	53	56	45	53045	Mason County, Washington	0	47.4	189.8	6617.0
-445	56	Administrative and support and waste management and remediation services	53	56	47	53047	Okanogan County, Washington	0	45.4	149.0	3821.2
-446	56	Administrative and support and waste management and remediation services	53	56	49	53049	Pacific County, Washington	0	18.0	123.2	2861.4
-447	56	Administrative and support and waste management and remediation services	53	56	51	53051	Pend Oreille County, Washington	0	7.2	9.4	233.8
-448	56	Administrative and support and waste management and remediation services	53	56	53	53053	Pierce County, Washington	0	980.6	12638.4	432055.0
-449	56	Administrative and support and waste management and remediation services	53	56	55	53055	San Juan County, Washington	0	56.4	233.0	6499.8
-450	56	Administrative and support and waste management and remediation services	53	56	57	53057	Skagit County, Washington	0	143.2	1372.8	39961.6
-451	56	Administrative and support and waste management and remediation services	53	56	59	53059	Skamania County, Washington	0	8.0	15.0	474.6666666666667
-452	56	Administrative and support and waste management and remediation services	53	56	59	53059	Skamania County, Washington	1	4.5	1417.4142857142856	41176.50476190476
-453	56	Administrative and support and waste management and remediation services	53	56	61	53061	Snohomish County, Washington	0	1044.0	10918.4	423815.4
-454	56	Administrative and support and waste management and remediation services	53	56	63	53063	Spokane County, Washington	0	677.4	10850.6	329537.0
-455	56	Administrative and support and waste management and remediation services	53	56	65	53065	Stevens County, Washington	0	34.6	107.2	2959.0
-456	56	Administrative and support and waste management and remediation services	53	56	67	53067	Thurston County, Washington	0	312.0	2479.2	72105.2
-457	56	Administrative and support and waste management and remediation services	53	56	69	53069	Wahkiakum County, Washington	0	3.5	17.5	342.0
-458	56	Administrative and support and waste management and remediation services	53	56	69	53069	Wahkiakum County, Washington	1	4.0	957.3042400521854	29373.950119591213
-459	56	Administrative and support and waste management and remediation services	53	56	71	53071	Walla Walla County, Washington	0	69.4	354.4	10001.8
-460	56	Administrative and support and waste management and remediation services	53	56	73	53073	Whatcom County, Washington	0	307.0	3003.0	82114.4
-461	56	Administrative and support and waste management and remediation services	53	56	75	53075	Whitman County, Washington	0	20.2	150.0	2965.8
-462	56	Administrative and support and waste management and remediation services	53	56	77	53077	Yakima County, Washington	0	188.4	2317.8	66042.4
-463	61	Educational services	53	61	1	53001	Adams County, Washington	1	2.0	168.13961344537816	3487.9275444493587
-464	61	Educational services	53	61	3	53003	Asotin County, Washington	0	10.333333333333334	58.333333333333336	958.0
-465	61	Educational services	53	61	3	53003	Asotin County, Washington	1	9.5	845.7352941176471	16714.804179566563
-466	61	Educational services	53	61	5	53005	Benton County, Washington	0	42.0	373.4	6958.4
-467	61	Educational services	53	61	7	53007	Chelan County, Washington	0	27.0	113.6	1760.6
-468	61	Educational services	53	61	9	53009	Clallam County, Washington	0	18.8	171.8	3451.4
-469	61	Educational services	53	61	11	53011	Clark County, Washington	0	124.2	1515.2	33660.4
-470	61	Educational services	53	61	13	53013	Columbia County, Washington	1	1.75	126.19826680672269	2764.4431805616982
-471	61	Educational services	53	61	15	53015	Cowlitz County, Washington	0	25.0	324.8	6761.2
-472	61	Educational services	53	61	17	53017	Douglas County, Washington	0	8.0	47.0	905.5
-473	61	Educational services	53	61	17	53017	Douglas County, Washington	1	4.333333333333333	420.6423529411765	8019.96080495356
-474	61	Educational services	53	61	19	53019	Ferry County, Washington	0	3.0	7.0	75.0
-475	61	Educational services	53	61	19	53019	Ferry County, Washington	1	2.0	190.10308823529414	3855.9808591331266
-476	61	Educational services	53	61	21	53021	Franklin County, Washington	0	16.0	217.2	11148.6
-477	61	Educational services	53	61	25	53025	Grant County, Washington	0	9.0	98.4	1839.6
-478	61	Educational services	53	61	27	53027	Grays Harbor County, Washington	0	7.0	7.0	391.4
-479	61	Educational services	53	61	29	53029	Island County, Washington	0	37.8	278.6	10521.6
-480	61	Educational services	53	61	31	53031	Jefferson County, Washington	0	23.2	137.0	3023.4
-481	61	Educational services	53	61	33	53033	King County, Washington	0	1317.2	25591.6	824714.0
-482	61	Educational services	53	61	35	53035	Kitsap County, Washington	0	89.6	775.6	23310.6
-483	61	Educational services	53	61	37	53037	Kittitas County, Washington	0	11.6	158.6	2651.0
-484	61	Educational services	53	61	39	53039	Klickitat County, Washington	0	6.0	14.2	483.4
-485	61	Educational services	53	61	41	53041	Lewis County, Washington	0	12.4	109.0	2228.6
-486	61	Educational services	53	61	43	53043	Lincoln County, Washington	1	2.0	168.13961344537816	3487.9275444493587
-487	61	Educational services	53	61	45	53045	Mason County, Washington	0	5.666666666666667	31.333333333333332	942.6666666666666
-488	61	Educational services	53	61	45	53045	Mason County, Washington	1	5.0	539.1	9484.444736842106
-489	61	Educational services	53	61	47	53047	Okanogan County, Washington	0	16.0	37.6	707.4
-490	61	Educational services	53	61	49	53049	Pacific County, Washington	1	1.0	84.06980672268908	1743.9637722246794
-491	61	Educational services	53	61	53	53053	Pierce County, Washington	0	198.8	7107.8	181726.4
-492	61	Educational services	53	61	55	53055	San Juan County, Washington	0	14.6	72.0	2306.4
-493	61	Educational services	53	61	57	53057	Skagit County, Washington	0	40.2	342.8	8765.8
-494	61	Educational services	53	61	61	53061	Snohomish County, Washington	0	239.8	2148.6	55298.4
-495	61	Educational services	53	61	63	53063	Spokane County, Washington	0	153.4	6658.8	173205.0
-496	61	Educational services	53	61	65	53065	Stevens County, Washington	0	6.8	12.2	282.2
-497	61	Educational services	53	61	67	53067	Thurston County, Washington	0	82.0	1660.4	35874.0
-498	61	Educational services	53	61	71	53071	Walla Walla County, Washington	0	9.5	2955.5	60091.5
-499	61	Educational services	53	61	71	53071	Walla Walla County, Washington	1	10.0	1063.1505882352942	19361.94309597523
-500	61	Educational services	53	61	73	53073	Whatcom County, Washington	0	94.2	1297.0	29901.6
-501	61	Educational services	53	61	75	53075	Whitman County, Washington	0	5.2	23.4	210.2
-502	61	Educational services	53	61	77	53077	Yakima County, Washington	0	62.6	1302.8	39049.2
-503	62	Health care and social assistance	53	62	1	53001	Adams County, Washington	0	32.5	783.0	39443.5
-504	62	Health care and social assistance	53	62	1	53001	Adams County, Washington	1	30.666666666666668	881.8915127070865	40665.767586087255
-505	62	Health care and social assistance	53	62	3	53003	Asotin County, Washington	0	50.8	1010.6	40499.2
-506	62	Health care and social assistance	53	62	5	53005	Benton County, Washington	0	550.4	9940.4	488448.0
-507	62	Health care and social assistance	53	62	7	53007	Chelan County, Washington	0	230.2	5600.0	336227.6
-508	62	Health care and social assistance	53	62	9	53009	Clallam County, Washington	0	254.8	3927.6	154065.8
-509	62	Health care and social assistance	53	62	11	53011	Clark County, Washington	0	1110.2	20855.0	1096367.0
-510	62	Health care and social assistance	53	62	13	53013	Columbia County, Washington	0	9.8	169.2	6294.4
-511	62	Health care and social assistance	53	62	15	53015	Cowlitz County, Washington	0	227.8	5462.0	239015.4
-512	62	Health care and social assistance	53	62	17	53017	Douglas County, Washington	0	64.8	901.2	25234.0
-513	62	Health care and social assistance	53	62	19	53019	Ferry County, Washington	0	15.0	150.5	5954.5
-514	62	Health care and social assistance	53	62	19	53019	Ferry County, Washington	1	13.333333333333334	383.81598577500216	17700.714372452076
-515	62	Health care and social assistance	53	62	21	53021	Franklin County, Washington	0	127.2	1776.8	86372.4
-516	62	Health care and social assistance	53	62	23	53023	Garfield County, Washington	0	5.0	109.0	4007.5
-517	62	Health care and social assistance	53	62	23	53023	Garfield County, Washington	1	4.0	115.36828866337062	5316.979269667794
-518	62	Health care and social assistance	53	62	25	53025	Grant County, Washington	0	162.6	2905.0	125527.4
-519	62	Health care and social assistance	53	62	27	53027	Grays Harbor County, Washington	0	193.0	2761.2	108651.6
-520	62	Health care and social assistance	53	62	29	53029	Island County, Washington	0	172.4	2501.8	102051.0
-521	62	Health care and social assistance	53	62	31	53031	Jefferson County, Washington	0	101.8	1383.8	55238.8
-522	62	Health care and social assistance	53	62	33	53033	King County, Washington	0	7495.6	141256.4	7719992.6
-523	62	Health care and social assistance	53	62	35	53035	Kitsap County, Washington	0	689.8	12270.4	538806.0
-524	62	Health care and social assistance	53	62	37	53037	Kittitas County, Washington	0	97.6	1597.4	61303.0
-525	62	Health care and social assistance	53	62	39	53039	Klickitat County, Washington	0	44.6	627.6	26950.2
-526	62	Health care and social assistance	53	62	41	53041	Lewis County, Washington	0	204.0	3371.0	150271.0
-527	62	Health care and social assistance	53	62	43	53043	Lincoln County, Washington	0	16.0	420.5	19400.0
-528	62	Health care and social assistance	53	62	43	53043	Lincoln County, Washington	1	15.666666666666666	451.4837366640645	20819.832422586518
-529	62	Health care and social assistance	53	62	45	53045	Mason County, Washington	0	94.2	1823.6	73460.4
-530	62	Health care and social assistance	53	62	47	53047	Okanogan County, Washington	0	109.8	1728.0	67640.2
-531	62	Health care and social assistance	53	62	49	53049	Pacific County, Washington	0	42.8	642.0	27733.6
-532	62	Health care and social assistance	53	62	51	53051	Pend Oreille County, Washington	0	18.5	387.25	16098.5
-533	62	Health care and social assistance	53	62	51	53051	Pend Oreille County, Washington	1	17.0	452.32142857142856	21447.11904761905
-534	62	Health care and social assistance	53	62	53	53053	Pierce County, Washington	0	1905.6	45974.0	2385733.8
-535	62	Health care and social assistance	53	62	55	53055	San Juan County, Washington	0	58.4	354.6	10564.8
-536	62	Health care and social assistance	53	62	57	53057	Skagit County, Washington	0	339.6	7277.2	335523.4
-537	62	Health care and social assistance	53	62	59	53059	Skamania County, Washington	0	19.0	141.2	3215.2
-538	62	Health care and social assistance	53	62	61	53061	Snohomish County, Washington	0	1851.4	29023.8	1336559.8
-539	62	Health care and social assistance	53	62	63	53063	Spokane County, Washington	0	1537.0	35034.8	1747222.8
-540	62	Health care and social assistance	53	62	65	53065	Stevens County, Washington	0	79.0	1594.4	59292.2
-541	62	Health care and social assistance	53	62	67	53067	Thurston County, Washington	0	824.8	13542.8	653792.4
-542	62	Health care and social assistance	53	62	69	53069	Wahkiakum County, Washington	0	4.6	34.0	1188.4
-543	62	Health care and social assistance	53	62	71	53071	Walla Walla County, Washington	0	159.6	4004.0	193653.4
-544	62	Health care and social assistance	53	62	73	53073	Whatcom County, Washington	0	653.0	9692.0	416356.2
-545	62	Health care and social assistance	53	62	75	53075	Whitman County, Washington	0	100.0	1886.0	76612.0
-546	62	Health care and social assistance	53	62	77	53077	Yakima County, Washington	0	551.8	13144.8	593950.4
-547	71	Arts, entertainment, and recreation	53	71	1	53001	Adams County, Washington	0	3.6666666666666665	16.0	325.3333333333333
-548	71	Arts, entertainment, and recreation	53	71	1	53001	Adams County, Washington	1	3.0	99.03992587601078	1024.868935309973
-549	71	Arts, entertainment, and recreation	53	71	3	53003	Asotin County, Washington	0	8.0	90.4	1765.0
-550	71	Arts, entertainment, and recreation	53	71	5	53005	Benton County, Washington	0	60.0	1311.4	22799.0
-551	71	Arts, entertainment, and recreation	53	71	7	53007	Chelan County, Washington	0	60.0	694.0	13803.4
-552	71	Arts, entertainment, and recreation	53	71	9	53009	Clallam County, Washington	0	38.4	541.2	14538.0
-553	71	Arts, entertainment, and recreation	53	71	11	53011	Clark County, Washington	0	125.6	2133.2	43106.0
-554	71	Arts, entertainment, and recreation	53	71	13	53013	Columbia County, Washington	0	3.0	83.5	555.5
-555	71	Arts, entertainment, and recreation	53	71	13	53013	Columbia County, Washington	1	3.0	96.89758499260934	986.7298278410573
-556	71	Arts, entertainment, and recreation	53	71	15	53015	Cowlitz County, Washington	0	22.0	307.8	5489.0
-557	71	Arts, entertainment, and recreation	53	71	17	53017	Douglas County, Washington	0	11.2	164.6	3174.6
-558	71	Arts, entertainment, and recreation	53	71	19	53019	Ferry County, Washington	1	1.0	22.9128503318552	421.0792989015448
-559	71	Arts, entertainment, and recreation	53	71	21	53021	Franklin County, Washington	0	15.5	283.5	8765.0
-560	71	Arts, entertainment, and recreation	53	71	21	53021	Franklin County, Washington	1	15.0	482.546104686549	4937.869953337391
-561	71	Arts, entertainment, and recreation	53	71	23	53023	Garfield County, Washington	1	1.0	22.9128503318552	421.0792989015448
-562	71	Arts, entertainment, and recreation	53	71	25	53025	Grant County, Washington	0	21.8	221.2	5545.4
-563	71	Arts, entertainment, and recreation	53	71	27	53027	Grays Harbor County, Washington	0	29.0	206.2	2995.2
-564	71	Arts, entertainment, and recreation	53	71	29	53029	Island County, Washington	0	43.6	327.0	6028.2
-565	71	Arts, entertainment, and recreation	53	71	31	53031	Jefferson County, Washington	0	25.0	101.4	2350.8
-566	71	Arts, entertainment, and recreation	53	71	33	53033	King County, Washington	0	1115.0	27649.0	1066427.8
-567	71	Arts, entertainment, and recreation	53	71	35	53035	Kitsap County, Washington	0	98.8	1565.4	32890.2
-568	71	Arts, entertainment, and recreation	53	71	37	53037	Kittitas County, Washington	0	32.0	1116.0	7908.5
-569	71	Arts, entertainment, and recreation	53	71	37	53037	Kittitas County, Washington	1	28.333333333333332	912.7259622351679	9314.860497637887
-570	71	Arts, entertainment, and recreation	53	71	39	53039	Klickitat County, Washington	0	12.6	32.2	1661.8
-571	71	Arts, entertainment, and recreation	53	71	41	53041	Lewis County, Washington	0	15.2	197.4	2220.2
-572	71	Arts, entertainment, and recreation	53	71	43	53043	Lincoln County, Washington	0	7.8	16.8	1434.0
-573	71	Arts, entertainment, and recreation	53	71	45	53045	Mason County, Washington	0	20.2	208.0	5114.2
-574	71	Arts, entertainment, and recreation	53	71	47	53047	Okanogan County, Washington	0	30.4	405.0	8703.6
-575	71	Arts, entertainment, and recreation	53	71	49	53049	Pacific County, Washington	0	13.4	36.4	797.0
-576	71	Arts, entertainment, and recreation	53	71	51	53051	Pend Oreille County, Washington	0	3.0	7.0	152.75
-577	71	Arts, entertainment, and recreation	53	71	51	53051	Pend Oreille County, Washington	1	4.0	146.78571428571428	1163.2857142857142
-578	71	Arts, entertainment, and recreation	53	71	53	53053	Pierce County, Washington	0	240.6	6758.6	159048.4
-579	71	Arts, entertainment, and recreation	53	71	55	53055	San Juan County, Washington	0	40.2	178.0	4344.4
-580	71	Arts, entertainment, and recreation	53	71	57	53057	Skagit County, Washington	0	56.75	701.0	15529.5
-581	71	Arts, entertainment, and recreation	53	71	57	53057	Skagit County, Washington	1	54.0	1583.8301886792453	21190.924528301886
-582	71	Arts, entertainment, and recreation	53	71	59	53059	Skamania County, Washington	0	3.75	12.75	528.75
-583	71	Arts, entertainment, and recreation	53	71	59	53059	Skamania County, Washington	1	3.0	110.08928571428571	872.4642857142857
-584	71	Arts, entertainment, and recreation	53	71	61	53061	Snohomish County, Washington	0	197.6	4873.6	123381.2
-585	71	Arts, entertainment, and recreation	53	71	63	53063	Spokane County, Washington	0	170.4	2890.2	45032.8
-586	71	Arts, entertainment, and recreation	53	71	65	53065	Stevens County, Washington	0	12.6	100.8	4683.8
-587	71	Arts, entertainment, and recreation	53	71	67	53067	Thurston County, Washington	0	88.8	2676.4	70691.6
-588	71	Arts, entertainment, and recreation	53	71	69	53069	Wahkiakum County, Washington	1	1.0	19.466955771961857	453.6437664840738
-589	71	Arts, entertainment, and recreation	53	71	71	53071	Walla Walla County, Washington	0	26.4	323.0	5972.2
-590	71	Arts, entertainment, and recreation	53	71	73	53073	Whatcom County, Washington	0	122.8	1780.0	32868.4
-591	71	Arts, entertainment, and recreation	53	71	75	53075	Whitman County, Washington	0	11.5	86.25	1944.0
-592	71	Arts, entertainment, and recreation	53	71	75	53075	Whitman County, Washington	1	10.0	308.7096774193548	3034.838709677419
-593	71	Arts, entertainment, and recreation	53	71	77	53077	Yakima County, Washington	0	73.6	1960.4	42818.0
-594	72	Accommodation and food services	53	72	1	53001	Adams County, Washington	0	35.6	386.4	5297.0
-595	72	Accommodation and food services	53	72	3	53003	Asotin County, Washington	0	42.6	604.0	9859.2
-596	72	Accommodation and food services	53	72	5	53005	Benton County, Washington	0	379.0	6283.2	105004.0
-597	72	Accommodation and food services	53	72	7	53007	Chelan County, Washington	0	296.0	3634.2	73004.0
-598	72	Accommodation and food services	53	72	9	53009	Clallam County, Washington	0	225.4	2161.8	38930.8
-599	72	Accommodation and food services	53	72	11	53011	Clark County, Washington	0	745.2	11649.8	203370.2
-600	72	Accommodation and food services	53	72	13	53013	Columbia County, Washington	0	12.0	48.6	916.8
-601	72	Accommodation and food services	53	72	15	53015	Cowlitz County, Washington	0	212.8	2768.4	43918.4
-602	72	Accommodation and food services	53	72	17	53017	Douglas County, Washington	0	56.6	863.8	14236.8
-603	72	Accommodation and food services	53	72	19	53019	Ferry County, Washington	0	18.8	52.0	956.8
-604	72	Accommodation and food services	53	72	21	53021	Franklin County, Washington	0	121.4	1892.6	31803.8
-605	72	Accommodation and food services	53	72	23	53023	Garfield County, Washington	0	6.0	0.0	107.0
-606	72	Accommodation and food services	53	72	23	53023	Garfield County, Washington	1	2.25	35.25	217.25
-607	72	Accommodation and food services	53	72	25	53025	Grant County, Washington	0	192.6	2090.4	35147.6
-608	72	Accommodation and food services	53	72	27	53027	Grays Harbor County, Washington	0	224.0	1995.2	34430.4
-609	72	Accommodation and food services	53	72	29	53029	Island County, Washington	0	160.4	1715.8	31540.4
-610	72	Accommodation and food services	53	72	31	53031	Jefferson County, Washington	0	101.6	949.2	16938.8
-611	72	Accommodation and food services	53	72	33	53033	King County, Washington	0	6043.2	102784.4	2373334.8
-612	72	Accommodation and food services	53	72	35	53035	Kitsap County, Washington	0	484.6	8075.8	151994.8
-613	72	Accommodation and food services	53	72	37	53037	Kittitas County, Washington	0	161.0	2240.2	41542.4
-614	72	Accommodation and food services	53	72	39	53039	Klickitat County, Washington	0	51.6	318.0	6283.2
-615	72	Accommodation and food services	53	72	41	53041	Lewis County, Washington	0	189.2	1977.0	31715.0
-616	72	Accommodation and food services	53	72	43	53043	Lincoln County, Washington	0	20.8	77.6	935.2
-617	72	Accommodation and food services	53	72	45	53045	Mason County, Washington	0	104.2	1674.8	41615.8
-618	72	Accommodation and food services	53	72	47	53047	Okanogan County, Washington	0	122.0	1080.6	18689.4
-619	72	Accommodation and food services	53	72	49	53049	Pacific County, Washington	0	110.4	790.8	14453.4
-620	72	Accommodation and food services	53	72	51	53051	Pend Oreille County, Washington	0	25.4	162.8	2275.8
-621	72	Accommodation and food services	53	72	53	53053	Pierce County, Washington	0	1568.6	24775.0	445387.2
-622	72	Accommodation and food services	53	72	55	53055	San Juan County, Washington	0	103.6	837.2	25999.2
-623	72	Accommodation and food services	53	72	57	53057	Skagit County, Washington	0	336.4	4829.8	102185.6
-624	72	Accommodation and food services	53	72	59	53059	Skamania County, Washington	0	26.8	550.6	11411.8
-625	72	Accommodation and food services	53	72	61	53061	Snohomish County, Washington	0	1573.6	23063.8	461369.4
-626	72	Accommodation and food services	53	72	63	53063	Spokane County, Washington	0	1064.4	18178.2	328848.0
-627	72	Accommodation and food services	53	72	65	53065	Stevens County, Washington	0	84.6	557.4	8683.8
-628	72	Accommodation and food services	53	72	67	53067	Thurston County, Washington	0	540.8	8319.4	143692.0
-629	72	Accommodation and food services	53	72	69	53069	Wahkiakum County, Washington	0	6.6	14.4	263.8
-630	72	Accommodation and food services	53	72	71	53071	Walla Walla County, Washington	0	130.6	1929.0	32556.4
-631	72	Accommodation and food services	53	72	73	53073	Whatcom County, Washington	0	520.2	8682.8	162818.8
-632	72	Accommodation and food services	53	72	75	53075	Whitman County, Washington	0	132.2	1613.2	21512.0
-633	72	Accommodation and food services	53	72	77	53077	Yakima County, Washington	0	424.8	5848.4	94257.6
-634	81	Other services (except public administration)	53	81	1	53001	Adams County, Washington	0	44.6	99.2	2900.6
-635	81	Other services (except public administration)	53	81	3	53003	Asotin County, Washington	0	39.8	189.4	3206.4
-636	81	Other services (except public administration)	53	81	5	53005	Benton County, Washington	0	376.6	2760.6	68998.2
-637	81	Other services (except public administration)	53	81	7	53007	Chelan County, Washington	0	231.8	1036.6	25302.6
-638	81	Other services (except public administration)	53	81	9	53009	Clallam County, Washington	0	193.8	924.8	21906.4
-639	81	Other services (except public administration)	53	81	11	53011	Clark County, Washington	0	937.2	5402.4	140923.0
-640	81	Other services (except public administration)	53	81	13	53013	Columbia County, Washington	0	12.4	79.0	3980.4
-641	81	Other services (except public administration)	53	81	15	53015	Cowlitz County, Washington	0	226.6	1217.8	28969.4
-642	81	Other services (except public administration)	53	81	17	53017	Douglas County, Washington	0	73.0	294.4	6373.6
-643	81	Other services (except public administration)	53	81	19	53019	Ferry County, Washington	0	11.0	39.0	1161.0
-644	81	Other services (except public administration)	53	81	19	53019	Ferry County, Washington	1	9.666666666666666	149.6923076923077	3015.153846153846
-645	81	Other services (except public administration)	53	81	21	53021	Franklin County, Washington	0	135.4	709.2	18305.4
-646	81	Other services (except public administration)	53	81	23	53023	Garfield County, Washington	0	4.5	10.25	175.0
-647	81	Other services (except public administration)	53	81	23	53023	Garfield County, Washington	1	4.0	32.92307692307693	1397.5384615384617
-648	81	Other services (except public administration)	53	81	25	53025	Grant County, Washington	0	186.6	678.0	13835.8
-649	81	Other services (except public administration)	53	81	27	53027	Grays Harbor County, Washington	0	155.6	851.8	16032.2
-650	81	Other services (except public administration)	53	81	29	53029	Island County, Washington	0	148.2	773.8	16592.0
-651	81	Other services (except public administration)	53	81	31	53031	Jefferson County, Washington	0	108.4	503.2	12870.6
-652	81	Other services (except public administration)	53	81	33	53033	King County, Washington	0	5800.4	46056.4	1750228.8
-653	81	Other services (except public administration)	53	81	35	53035	Kitsap County, Washington	0	542.6	3350.8	83507.6
-654	81	Other services (except public administration)	53	81	37	53037	Kittitas County, Washington	0	99.2	498.2	11769.4
-655	81	Other services (except public administration)	53	81	39	53039	Klickitat County, Washington	0	51.0	187.4	4432.6
-656	81	Other services (except public administration)	53	81	41	53041	Lewis County, Washington	0	167.0	765.4	16754.0
-657	81	Other services (except public administration)	53	81	43	53043	Lincoln County, Washington	0	27.4	46.4	1046.0
-658	81	Other services (except public administration)	53	81	45	53045	Mason County, Washington	0	104.2	468.6	10009.2
-659	81	Other services (except public administration)	53	81	47	53047	Okanogan County, Washington	0	97.0	293.0	7086.4
-660	81	Other services (except public administration)	53	81	49	53049	Pacific County, Washington	0	59.4	203.2	3738.2
-661	81	Other services (except public administration)	53	81	51	53051	Pend Oreille County, Washington	0	24.4	70.4	1441.0
-662	81	Other services (except public administration)	53	81	53	53053	Pierce County, Washington	0	1794.4	12583.2	388233.6
-663	81	Other services (except public administration)	53	81	55	53055	San Juan County, Washington	0	75.4	249.6	6850.8
-664	81	Other services (except public administration)	53	81	57	53057	Skagit County, Washington	0	340.0	1726.8	46780.2
-665	81	Other services (except public administration)	53	81	59	53059	Skamania County, Washington	0	16.2	31.4	613.8
-666	81	Other services (except public administration)	53	81	61	53061	Snohomish County, Washington	0	1655.0	10137.4	283925.4
-667	81	Other services (except public administration)	53	81	63	53063	Spokane County, Washington	0	1173.0	7706.4	201038.2
-668	81	Other services (except public administration)	53	81	65	53065	Stevens County, Washington	0	89.2	298.6	6825.2
-669	81	Other services (except public administration)	53	81	67	53067	Thurston County, Washington	0	629.0	4110.6	139511.2
-670	81	Other services (except public administration)	53	81	69	53069	Wahkiakum County, Washington	0	7.2	5.6	142.6
-671	81	Other services (except public administration)	53	81	71	53071	Walla Walla County, Washington	0	119.2	646.0	13974.2
-672	81	Other services (except public administration)	53	81	73	53073	Whatcom County, Washington	0	580.4	3539.4	103712.8
-673	81	Other services (except public administration)	53	81	75	53075	Whitman County, Washington	0	93.6	454.8	8961.4
-674	81	Other services (except public administration)	53	81	77	53077	Yakima County, Washington	0	444.4	2509.4	59597.4
-675	99	Industries not classified	53	99	1	53001	Adams County, Washington	1	1.3333333333333333	-0.45555555555555566	25.51851851851852
-676	99	Industries not classified	53	99	3	53003	Asotin County, Washington	0	3.0	5.0	92.0
-677	99	Industries not classified	53	99	3	53003	Asotin County, Washington	1	1.5	1.0654761904761905	34.073412698412696
-678	99	Industries not classified	53	99	5	53005	Benton County, Washington	0	8.75	7.0	182.5
-679	99	Industries not classified	53	99	5	53005	Benton County, Washington	1	2.0	-1.0714285714285714	82.07142857142857
-680	99	Industries not classified	53	99	7	53007	Chelan County, Washington	0	9.2	4.6	202.6
-681	99	Industries not classified	53	99	9	53009	Clallam County, Washington	0	5.666666666666667	9.666666666666666	423.0
-682	99	Industries not classified	53	99	9	53009	Clallam County, Washington	1	1.5	-4.767857142857143	62.51785714285714
-683	99	Industries not classified	53	99	11	53011	Clark County, Washington	0	31.0	27.6	622.2
-684	99	Industries not classified	53	99	13	53013	Columbia County, Washington	1	1.5	10.633333333333335	29.880555555555553
-685	99	Industries not classified	53	99	15	53015	Cowlitz County, Washington	0	6.2	4.4	173.4
-686	99	Industries not classified	53	99	17	53017	Douglas County, Washington	0	4.0	1.0	90.0
-687	99	Industries not classified	53	99	17	53017	Douglas County, Washington	1	1.6666666666666667	3.8000000000000007	45.88333333333333
-688	99	Industries not classified	53	99	21	53021	Franklin County, Washington	0	3.6666666666666665	2.0	44.0
-689	99	Industries not classified	53	99	21	53021	Franklin County, Washington	1	1.0	-4.5	42.0
-690	99	Industries not classified	53	99	25	53025	Grant County, Washington	0	4.666666666666667	3.6666666666666665	132.33333333333334
-691	99	Industries not classified	53	99	25	53025	Grant County, Washington	1	2.0	-9.0	84.0
-692	99	Industries not classified	53	99	27	53027	Grays Harbor County, Washington	0	5.0	3.0	135.0
-693	99	Industries not classified	53	99	27	53027	Grays Harbor County, Washington	1	1.0	-4.5	42.0
-694	99	Industries not classified	53	99	29	53029	Island County, Washington	0	7.8	3.8	213.4
-695	99	Industries not classified	53	99	31	53031	Jefferson County, Washington	0	4.0	8.75	214.5
-696	99	Industries not classified	53	99	33	53033	King County, Washington	0	199.6	97.2	4571.4
-697	99	Industries not classified	53	99	35	53035	Kitsap County, Washington	0	17.75	10.25	410.25
-698	99	Industries not classified	53	99	35	53035	Kitsap County, Washington	1	2.0	-1.0714285714285714	82.07142857142857
-699	99	Industries not classified	53	99	37	53037	Kittitas County, Washington	0	6.666666666666667	6.0	93.66666666666667
-700	99	Industries not classified	53	99	37	53037	Kittitas County, Washington	1	1.5	-2.7857142857142856	62.035714285714285
-701	99	Industries not classified	53	99	39	53039	Klickitat County, Washington	1	1.75	8.10654761904762	60.9906746031746
-702	99	Industries not classified	53	99	41	53041	Lewis County, Washington	0	5.5	6.25	76.75
-703	99	Industries not classified	53	99	41	53041	Lewis County, Washington	1	3.0	-1.607142857142857	123.10714285714285
-704	99	Industries not classified	53	99	43	53043	Lincoln County, Washington	0	3.0	0.0	57.0
-705	99	Industries not classified	53	99	43	53043	Lincoln County, Washington	1	1.0	1.1166666666666667	12.027777777777779
-706	99	Industries not classified	53	99	45	53045	Mason County, Washington	0	5.333333333333333	3.0	84.33333333333333
-707	99	Industries not classified	53	99	45	53045	Mason County, Washington	1	3.5	36.39642857142857	126.85357142857143
-708	99	Industries not classified	53	99	47	53047	Okanogan County, Washington	0	6.75	9.0	187.25
-709	99	Industries not classified	53	99	47	53047	Okanogan County, Washington	1	1.0	-0.5357142857142857	41.035714285714285
-710	99	Industries not classified	53	99	49	53049	Pacific County, Washington	0	4.4	3.8	92.0
-711	99	Industries not classified	53	99	51	53051	Pend Oreille County, Washington	0	3.0	4.0	15.0
-712	99	Industries not classified	53	99	51	53051	Pend Oreille County, Washington	1	1.3333333333333333	5.300000000000001	31.883333333333336
-713	99	Industries not classified	53	99	53	53053	Pierce County, Washington	0	30.6	39.6	873.4
-714	99	Industries not classified	53	99	55	53055	San Juan County, Washington	0	4.0	7.0	219.0
-715	99	Industries not classified	53	99	55	53055	San Juan County, Washington	1	2.6666666666666665	15.064285714285711	101.68571428571427
-716	99	Industries not classified	53	99	57	53057	Skagit County, Washington	0	7.4	9.6	244.0
-717	99	Industries not classified	53	99	59	53059	Skamania County, Washington	1	1.3333333333333333	11.200000000000001	39.266666666666666
-718	99	Industries not classified	53	99	61	53061	Snohomish County, Washington	0	33.2	26.6	755.2
-719	99	Industries not classified	53	99	63	53063	Spokane County, Washington	0	23.4	26.0	694.4
-720	99	Industries not classified	53	99	65	53065	Stevens County, Washington	0	4.25	2.75	90.75
-721	99	Industries not classified	53	99	65	53065	Stevens County, Washington	1	4.0	74.4	130.6
-722	99	Industries not classified	53	99	67	53067	Thurston County, Washington	0	17.8	14.4	578.4
-723	99	Industries not classified	53	99	69	53069	Wahkiakum County, Washington	1	2.0	13.888888888888888	37.803703703703704
-724	99	Industries not classified	53	99	71	53071	Walla Walla County, Washington	0	4.0	4.666666666666667	74.0
-725	99	Industries not classified	53	99	71	53071	Walla Walla County, Washington	1	1.5	-4.767857142857143	62.51785714285714
-726	99	Industries not classified	53	99	73	53073	Whatcom County, Washington	0	15.75	13.25	454.5
-727	99	Industries not classified	53	99	73	53073	Whatcom County, Washington	1	4.0	-2.142857142857143	164.14285714285714
-728	99	Industries not classified	53	99	75	53075	Whitman County, Washington	0	3.6666666666666665	2.3333333333333335	50.0
-729	99	Industries not classified	53	99	75	53075	Whitman County, Washington	1	1.5	-2.7857142857142856	62.035714285714285
-730	99	Industries not classified	53	99	77	53077	Yakima County, Washington	0	9.5	12.25	205.75
-731	99	Industries not classified	53	99	77	53077	Yakima County, Washington	1	2.0	-9.0	84.0
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estab	emp	payann	estimate
+0	11	Agriculture, forestry, fishing and hunting	53	11	1	53001	Adams County, Washington	10.4	184.61586538461538	5855.496153846154	0.4
+1	11	Agriculture, forestry, fishing and hunting	53	11	3	53003	Asotin County, Washington	2.0	29.00792857142857	684.8414285714285	0.8
+2	11	Agriculture, forestry, fishing and hunting	53	11	5	53005	Benton County, Washington	13.0	65.0	3273.0	0.0
+3	11	Agriculture, forestry, fishing and hunting	53	11	7	53007	Chelan County, Washington	20.6	1452.8	58531.6	0.0
+4	11	Agriculture, forestry, fishing and hunting	53	11	9	53009	Clallam County, Washington	59.8	439.2	22603.4	0.0
+5	11	Agriculture, forestry, fishing and hunting	53	11	11	53011	Clark County, Washington	38.0	198.2	14681.2	0.0
+6	11	Agriculture, forestry, fishing and hunting	53	11	13	53013	Columbia County, Washington	3.4	41.43928571428571	792.5142857142857	0.4
+7	11	Agriculture, forestry, fishing and hunting	53	11	15	53015	Cowlitz County, Washington	52.8	805.6	45836.2	0.0
+8	11	Agriculture, forestry, fishing and hunting	53	11	17	53017	Douglas County, Washington	12.8	105.4	4835.4	0.0
+9	11	Agriculture, forestry, fishing and hunting	53	11	19	53019	Ferry County, Washington	14.8	20.2	1786.4	0.0
+10	11	Agriculture, forestry, fishing and hunting	53	11	21	53021	Franklin County, Washington	22.6	567.4	29563.4	0.0
+11	11	Agriculture, forestry, fishing and hunting	53	11	23	53023	Garfield County, Washington	1.0	16.29785805860806	361.98322344322344	1.0
+12	11	Agriculture, forestry, fishing and hunting	53	11	25	53025	Grant County, Washington	23.4	420.4	13050.4	0.0
+13	11	Agriculture, forestry, fishing and hunting	53	11	27	53027	Grays Harbor County, Washington	73.0	357.2	23254.8	0.0
+14	11	Agriculture, forestry, fishing and hunting	53	11	29	53029	Island County, Washington	16.2	9.4	843.2	0.0
+15	11	Agriculture, forestry, fishing and hunting	53	11	31	53031	Jefferson County, Washington	12.2	16.8	1699.2	0.0
+16	11	Agriculture, forestry, fishing and hunting	53	11	33	53033	King County, Washington	239.0	1696.6	125387.6	0.0
+17	11	Agriculture, forestry, fishing and hunting	53	11	35	53035	Kitsap County, Washington	34.2	54.8	4237.4	0.0
+18	11	Agriculture, forestry, fishing and hunting	53	11	37	53037	Kittitas County, Washington	14.8	243.58746794871794	6045.970512820512	0.6
+19	11	Agriculture, forestry, fishing and hunting	53	11	39	53039	Klickitat County, Washington	24.8	327.4	14536.2	0.0
+20	11	Agriculture, forestry, fishing and hunting	53	11	41	53041	Lewis County, Washington	80.0	893.2	33840.6	0.0
+21	11	Agriculture, forestry, fishing and hunting	53	11	43	53043	Lincoln County, Washington	1.4	19.719286630036628	503.80465201465205	1.0
+22	11	Agriculture, forestry, fishing and hunting	53	11	45	53045	Mason County, Washington	21.8	483.4	20997.8	0.0
+23	11	Agriculture, forestry, fishing and hunting	53	11	47	53047	Okanogan County, Washington	37.2	256.8	8651.6	0.0
+24	11	Agriculture, forestry, fishing and hunting	53	11	49	53049	Pacific County, Washington	46.4	206.2	9056.4	0.0
+25	11	Agriculture, forestry, fishing and hunting	53	11	51	53051	Pend Oreille County, Washington	6.2	37.0	2487.8	0.0
+26	11	Agriculture, forestry, fishing and hunting	53	11	53	53053	Pierce County, Washington	77.4	254.8	12651.8	0.0
+27	11	Agriculture, forestry, fishing and hunting	53	11	55	53055	San Juan County, Washington	9.8	4.6	295.0	0.0
+28	11	Agriculture, forestry, fishing and hunting	53	11	57	53057	Skagit County, Washington	52.2	421.7323076923077	19329.389743589745	0.4
+29	11	Agriculture, forestry, fishing and hunting	53	11	59	53059	Skamania County, Washington	4.6	5.4	297.4	0.0
+30	11	Agriculture, forestry, fishing and hunting	53	11	61	53061	Snohomish County, Washington	125.8	268.0	15515.2	0.0
+31	11	Agriculture, forestry, fishing and hunting	53	11	63	53063	Spokane County, Washington	26.6	56.2	3567.2	0.0
+32	11	Agriculture, forestry, fishing and hunting	53	11	65	53065	Stevens County, Washington	47.8	168.2	8053.6	0.0
+33	11	Agriculture, forestry, fishing and hunting	53	11	67	53067	Thurston County, Washington	52.6	406.0	23406.8	0.0
+34	11	Agriculture, forestry, fishing and hunting	53	11	69	53069	Wahkiakum County, Washington	7.0	96.0	4688.8	0.0
+35	11	Agriculture, forestry, fishing and hunting	53	11	71	53071	Walla Walla County, Washington	10.0	42.6	1950.8	0.0
+36	11	Agriculture, forestry, fishing and hunting	53	11	73	53073	Whatcom County, Washington	70.6	294.4	14602.0	0.0
+37	11	Agriculture, forestry, fishing and hunting	53	11	75	53075	Whitman County, Washington	7.4	17.0	680.2	0.0
+38	11	Agriculture, forestry, fishing and hunting	53	11	77	53077	Yakima County, Washington	36.0	1996.2	66788.8	0.0
+39	21	Mining, quarrying, and oil and gas extraction	53	21	5	53005	Benton County, Washington	1.0	22.070061876994956	1622.2078882766573	1.0
+40	21	Mining, quarrying, and oil and gas extraction	53	21	7	53007	Chelan County, Washington	4.2	21.177777777777777	1923.2592592592591	0.2
+41	21	Mining, quarrying, and oil and gas extraction	53	21	9	53009	Clallam County, Washington	3.4	6.2	698.4	0.0
+42	21	Mining, quarrying, and oil and gas extraction	53	21	11	53011	Clark County, Washington	10.0	21.0	3650.6	0.0
+43	21	Mining, quarrying, and oil and gas extraction	53	21	13	53013	Columbia County, Washington	1.0	23.589656173816017	1784.3739393152005	1.0
+44	21	Mining, quarrying, and oil and gas extraction	53	21	15	53015	Cowlitz County, Washington	6.4	150.2157148206739	11308.036228483796	1.0
+45	21	Mining, quarrying, and oil and gas extraction	53	21	17	53017	Douglas County, Washington	1.0	21.512714206744054	1461.9826791966095	1.0
+46	21	Mining, quarrying, and oil and gas extraction	53	21	19	53019	Ferry County, Washington	1.8	42.21157041214816	3139.334975404595	1.0
+47	21	Mining, quarrying, and oil and gas extraction	53	21	21	53021	Franklin County, Washington	3.0	31.333333333333332	2341.5444444444447	0.2
+48	21	Mining, quarrying, and oil and gas extraction	53	21	25	53025	Grant County, Washington	2.4	55.85709012540981	4170.540471222994	1.0
+49	21	Mining, quarrying, and oil and gas extraction	53	21	29	53029	Island County, Washington	2.6	36.853607538345145	2837.359708370589	0.6
+50	21	Mining, quarrying, and oil and gas extraction	53	21	31	53031	Jefferson County, Washington	3.0	36.233333333333334	2512.3777777777777	0.4
+51	21	Mining, quarrying, and oil and gas extraction	53	21	33	53033	King County, Washington	22.0	519.6	30356.2	0.0
+52	21	Mining, quarrying, and oil and gas extraction	53	21	35	53035	Kitsap County, Washington	2.0	47.179312347632035	3568.747878630401	1.0
+53	21	Mining, quarrying, and oil and gas extraction	53	21	37	53037	Kittitas County, Washington	2.2	52.14705428311591	3998.160781856208	1.0
+54	21	Mining, quarrying, and oil and gas extraction	53	21	39	53039	Klickitat County, Washington	2.2	51.4091630939007	3844.1448935557746	1.0
+55	21	Mining, quarrying, and oil and gas extraction	53	21	41	53041	Lewis County, Washington	9.6	135.3686567164179	10449.073134328359	0.4
+56	21	Mining, quarrying, and oil and gas extraction	53	21	45	53045	Mason County, Washington	3.6	36.4	2738.8	0.0
+57	21	Mining, quarrying, and oil and gas extraction	53	21	47	53047	Okanogan County, Washington	1.8	41.06154404628164	3033.095687206568	1.0
+58	21	Mining, quarrying, and oil and gas extraction	53	21	49	53049	Pacific County, Washington	2.0	47.179312347632035	3568.747878630401	1.0
+59	21	Mining, quarrying, and oil and gas extraction	53	21	51	53051	Pend Oreille County, Washington	1.8	41.465026633346326	3090.9764500589727	1.0
+60	21	Mining, quarrying, and oil and gas extraction	53	21	53	53053	Pierce County, Washington	11.4	160.4	10520.0	0.0
+61	21	Mining, quarrying, and oil and gas extraction	53	21	55	53055	San Juan County, Washington	1.0	23.589656173816017	1784.3739393152005	1.0
+62	21	Mining, quarrying, and oil and gas extraction	53	21	57	53057	Skagit County, Washington	8.6	26.0	1954.2	0.0
+63	21	Mining, quarrying, and oil and gas extraction	53	21	61	53061	Snohomish County, Washington	14.0	140.6	9011.4	0.0
+64	21	Mining, quarrying, and oil and gas extraction	53	21	63	53063	Spokane County, Washington	18.4	139.8	12361.0	0.0
+65	21	Mining, quarrying, and oil and gas extraction	53	21	65	53065	Stevens County, Washington	5.4	100.44577114427861	6886.937645107794	0.6
+66	21	Mining, quarrying, and oil and gas extraction	53	21	67	53067	Thurston County, Washington	5.8	166.56799336650084	10324.545052515201	0.6
+67	21	Mining, quarrying, and oil and gas extraction	53	21	69	53069	Wahkiakum County, Washington	1.4	32.452840253418	2393.048732018352	1.0
+68	21	Mining, quarrying, and oil and gas extraction	53	21	71	53071	Walla Walla County, Washington	2.0	47.179312347632035	3568.747878630401	1.0
+69	21	Mining, quarrying, and oil and gas extraction	53	21	73	53073	Whatcom County, Washington	11.0	90.69850746268656	6114.370149253731	0.2
+70	21	Mining, quarrying, and oil and gas extraction	53	21	75	53075	Whitman County, Washington	1.2	27.634100618260465	2052.8887541300155	1.0
+71	21	Mining, quarrying, and oil and gas extraction	53	21	77	53077	Yakima County, Washington	7.0	40.0	1636.4	0.0
+72	22	Utilities	53	22	1	53001	Adams County, Washington	3.0	24.731687078970186	2533.5582282843106	1.0
+73	22	Utilities	53	22	3	53003	Asotin County, Washington	1.0	8.243895692990062	844.5194094281035	1.0
+74	22	Utilities	53	22	5	53005	Benton County, Washington	7.2	56.88539485093044	5840.919199330057	1.0
+75	22	Utilities	53	22	7	53007	Chelan County, Washington	4.2	38.48822645012117	3933.9695917354024	1.0
+76	22	Utilities	53	22	9	53009	Clallam County, Washington	9.0	25.4	739.2	0.0
+77	22	Utilities	53	22	11	53011	Clark County, Washington	2.8	19.219043400809266	1977.6662742613219	1.0
+78	22	Utilities	53	22	13	53013	Columbia County, Washington	3.8	47.78069439349474	5462.796539496209	0.6
+79	22	Utilities	53	22	15	53015	Cowlitz County, Washington	7.4	6.280401756931013	1149.7788630990758	0.6
+80	22	Utilities	53	22	17	53017	Douglas County, Washington	1.0	8.243895692990062	844.5194094281035	1.0
+81	22	Utilities	53	22	21	53021	Franklin County, Washington	4.0	32.97558277196025	3378.077637712414	1.0
+82	22	Utilities	53	22	23	53023	Garfield County, Washington	1.8	17.309666385980126	1759.7554855228736	1.0
+83	22	Utilities	53	22	25	53025	Grant County, Washington	6.8	29.871889103803994	2765.008854502471	0.6
+84	22	Utilities	53	22	27	53027	Grays Harbor County, Washington	3.0	24.731687078970186	2533.5582282843106	1.0
+85	22	Utilities	53	22	29	53029	Island County, Washington	15.2	49.6	2367.8	0.0
+86	22	Utilities	53	22	31	53031	Jefferson County, Washington	3.6	16.01771764323351	1689.3339510289982	1.0
+87	22	Utilities	53	22	33	53033	King County, Washington	43.8	1789.5678493713735	220664.17637008382	0.6
+88	22	Utilities	53	22	35	53035	Kitsap County, Washington	10.2	18.843707688588005	2035.0120889748548	0.6
+89	22	Utilities	53	22	37	53037	Kittitas County, Washington	9.4	27.6	3372.6	0.0
+90	22	Utilities	53	22	39	53039	Klickitat County, Washington	9.8	62.8	5700.8	0.0
+91	22	Utilities	53	22	41	53041	Lewis County, Washington	7.8	80.77554803352675	7905.6132602621965	0.6
+92	22	Utilities	53	22	43	53043	Lincoln County, Washington	4.0	18.2	1844.6	0.0
+93	22	Utilities	53	22	45	53045	Mason County, Washington	3.8	5.6	226.8	0.0
+94	22	Utilities	53	22	47	53047	Okanogan County, Washington	7.8	26.2	1832.4	0.0
+95	22	Utilities	53	22	49	53049	Pacific County, Washington	1.4	19.005475541363744	1916.7560443021557	1.0
+96	22	Utilities	53	22	53	53053	Pierce County, Washington	26.4	579.4	45374.6	0.0
+97	22	Utilities	53	22	55	53055	San Juan County, Washington	9.0	14.318967601547389	846.2283043197938	0.6
+98	22	Utilities	53	22	57	53057	Skagit County, Washington	8.0	65.9511655439205	6756.155275424828	1.0
+99	22	Utilities	53	22	61	53061	Snohomish County, Washington	10.4	49.8	4246.2	0.0
+100	22	Utilities	53	22	63	53063	Spokane County, Washington	13.2	106.34876900887082	10908.035655898679	1.0
+101	22	Utilities	53	22	65	53065	Stevens County, Washington	6.0	49.46337415794037	5067.116456568621	1.0
+102	22	Utilities	53	22	67	53067	Thurston County, Washington	9.8	14.622495567375887	1699.26158392435	0.6
+103	22	Utilities	53	22	71	53071	Walla Walla County, Washington	11.6	47.4	9610.6	0.0
+104	22	Utilities	53	22	73	53073	Whatcom County, Washington	18.8	151.38508199659842	15529.524098282904	1.0
+105	22	Utilities	53	22	75	53075	Whitman County, Washington	5.0	41.21947846495031	4222.597047140518	1.0
+106	22	Utilities	53	22	77	53077	Yakima County, Washington	9.6	37.918304722759515	3196.2621427036324	0.6
+107	23	Construction	53	23	1	53001	Adams County, Washington	28.0	72.6	3420.6	0.0
+108	23	Construction	53	23	3	53003	Asotin County, Washington	62.6	336.0	20178.0	0.0
+109	23	Construction	53	23	5	53005	Benton County, Washington	512.2	4368.0	259749.8	0.0
+110	23	Construction	53	23	7	53007	Chelan County, Washington	346.4	1811.0	116034.8	0.0
+111	23	Construction	53	23	9	53009	Clallam County, Washington	304.4	1085.8	48871.0	0.0
+112	23	Construction	53	23	11	53011	Clark County, Washington	1390.2	10386.6	592461.2	0.0
+113	23	Construction	53	23	13	53013	Columbia County, Washington	10.2	8.0	460.0	0.0
+114	23	Construction	53	23	15	53015	Cowlitz County, Washington	231.0	2677.4	177650.6	0.0
+115	23	Construction	53	23	17	53017	Douglas County, Washington	124.4	446.6	21772.6	0.0
+116	23	Construction	53	23	19	53019	Ferry County, Washington	15.2	9.8	861.0	0.0
+117	23	Construction	53	23	21	53021	Franklin County, Washington	224.6	1616.6	75943.2	0.0
+118	23	Construction	53	23	23	53023	Garfield County, Washington	2.2	103.02490842490843	5680.482783882784	0.8
+119	23	Construction	53	23	25	53025	Grant County, Washington	188.4	892.0	44640.2	0.0
+120	23	Construction	53	23	27	53027	Grays Harbor County, Washington	164.0	1290.2	79608.2	0.0
+121	23	Construction	53	23	29	53029	Island County, Washington	273.6	877.6	40753.8	0.0
+122	23	Construction	53	23	31	53031	Jefferson County, Washington	137.0	551.8	23835.2	0.0
+123	23	Construction	53	23	33	53033	King County, Washington	5533.6	55063.8	3742761.4	0.0
+124	23	Construction	53	23	35	53035	Kitsap County, Washington	762.0	3567.2	189879.4	0.0
+125	23	Construction	53	23	37	53037	Kittitas County, Washington	199.2	636.2	29246.0	0.0
+126	23	Construction	53	23	39	53039	Klickitat County, Washington	80.6	170.8	7100.6	0.0
+127	23	Construction	53	23	41	53041	Lewis County, Washington	190.4	746.0	32569.8	0.0
+128	23	Construction	53	23	43	53043	Lincoln County, Washington	35.8	151.4	8040.4	0.0
+129	23	Construction	53	23	45	53045	Mason County, Washington	168.8	563.2	21396.2	0.0
+130	23	Construction	53	23	47	53047	Okanogan County, Washington	156.0	402.0	15359.2	0.0
+131	23	Construction	53	23	49	53049	Pacific County, Washington	56.2	178.6	5394.6	0.0
+132	23	Construction	53	23	51	53051	Pend Oreille County, Washington	39.0	62.8	3990.4	0.0
+133	23	Construction	53	23	53	53053	Pierce County, Washington	2224.8	16462.0	977623.4	0.0
+134	23	Construction	53	23	55	53055	San Juan County, Washington	211.0	674.2	26558.8	0.0
+135	23	Construction	53	23	57	53057	Skagit County, Washington	431.8	2832.2	187335.8	0.0
+136	23	Construction	53	23	59	53059	Skamania County, Washington	34.6	79.8	3563.6	0.0
+137	23	Construction	53	23	61	53061	Snohomish County, Washington	2841.4	18508.2	1049731.4	0.0
+138	23	Construction	53	23	63	53063	Spokane County, Washington	1375.2	9325.6	532926.8	0.0
+139	23	Construction	53	23	65	53065	Stevens County, Washington	127.0	436.8	18737.4	0.0
+140	23	Construction	53	23	67	53067	Thurston County, Washington	696.4	3631.8	185071.2	0.0
+141	23	Construction	53	23	69	53069	Wahkiakum County, Washington	9.6	160.57509157509156	4307.717216117216	0.6
+142	23	Construction	53	23	71	53071	Walla Walla County, Washington	154.8	777.0	35354.8	0.0
+143	23	Construction	53	23	73	53073	Whatcom County, Washington	757.4	6366.6	363937.0	0.0
+144	23	Construction	53	23	75	53075	Whitman County, Washington	72.6	309.6	14937.0	0.0
+145	23	Construction	53	23	77	53077	Yakima County, Washington	528.2	2842.8	139273.4	0.0
+146	42	Wholesale trade	53	42	1	53001	Adams County, Washington	32.6	482.8	28996.6	0.0
+147	42	Wholesale trade	53	42	3	53003	Asotin County, Washington	16.4	88.0	5554.4	0.0
+148	42	Wholesale trade	53	42	5	53005	Benton County, Washington	131.2	1481.4	90372.0	0.0
+149	42	Wholesale trade	53	42	7	53007	Chelan County, Washington	101.8	2506.4	107789.6	0.0
+150	42	Wholesale trade	53	42	9	53009	Clallam County, Washington	48.0	310.6	13056.0	0.0
+151	42	Wholesale trade	53	42	11	53011	Clark County, Washington	556.0	6240.8	509366.6	0.0
+152	42	Wholesale trade	53	42	13	53013	Columbia County, Washington	14.6	482.88	47905.6	0.2
+153	42	Wholesale trade	53	42	15	53015	Cowlitz County, Washington	97.2	1099.8	60300.0	0.0
+154	42	Wholesale trade	53	42	17	53017	Douglas County, Washington	42.2	685.6	27778.0	0.0
+155	42	Wholesale trade	53	42	19	53019	Ferry County, Washington	1.0	665.4384126984127	58701.446031746025	1.0
+156	42	Wholesale trade	53	42	21	53021	Franklin County, Washington	124.4	1692.2	88401.4	0.0
+157	42	Wholesale trade	53	42	23	53023	Garfield County, Washington	9.0	103.0	4321.4	0.0
+158	42	Wholesale trade	53	42	25	53025	Grant County, Washington	130.4	1787.8	85754.2	0.0
+159	42	Wholesale trade	53	42	27	53027	Grays Harbor County, Washington	50.6	564.4	27657.6	0.0
+160	42	Wholesale trade	53	42	29	53029	Island County, Washington	44.6	166.8	8938.6	0.0
+161	42	Wholesale trade	53	42	31	53031	Jefferson County, Washington	25.6	144.4	5555.2	0.0
+162	42	Wholesale trade	53	42	33	53033	King County, Washington	3936.8	59944.6	4358618.2	0.0
+163	42	Wholesale trade	53	42	35	53035	Kitsap County, Washington	161.2	1011.6	56830.0	0.0
+164	42	Wholesale trade	53	42	37	53037	Kittitas County, Washington	42.0	472.2	26862.6	0.0
+165	42	Wholesale trade	53	42	39	53039	Klickitat County, Washington	17.6	107.8	8522.0	0.0
+166	42	Wholesale trade	53	42	41	53041	Lewis County, Washington	71.6	559.6	25127.0	0.0
+167	42	Wholesale trade	53	42	43	53043	Lincoln County, Washington	28.0	174.8	9052.2	0.0
+168	42	Wholesale trade	53	42	45	53045	Mason County, Washington	35.6	447.8	25642.8	0.0
+169	42	Wholesale trade	53	42	47	53047	Okanogan County, Washington	40.8	364.2	15100.8	0.0
+170	42	Wholesale trade	53	42	49	53049	Pacific County, Washington	7.4	34.2	2283.0	0.0
+171	42	Wholesale trade	53	42	51	53051	Pend Oreille County, Washington	5.2	708.3047619047618	55137.76190476191	0.4
+172	42	Wholesale trade	53	42	53	53053	Pierce County, Washington	795.6	11399.4	622536.6	0.0
+173	42	Wholesale trade	53	42	55	53055	San Juan County, Washington	17.2	35.0	1792.6	0.0
+174	42	Wholesale trade	53	42	57	53057	Skagit County, Washington	120.0	1504.6	74049.6	0.0
+175	42	Wholesale trade	53	42	59	53059	Skamania County, Washington	9.0	24.8	1881.0	0.0
+176	42	Wholesale trade	53	42	61	53061	Snohomish County, Washington	834.4	8573.2	527557.6	0.0
+177	42	Wholesale trade	53	42	63	53063	Spokane County, Washington	691.8	10447.6	543317.4	0.0
+178	42	Wholesale trade	53	42	65	53065	Stevens County, Washington	22.4	203.4	6601.2	0.0
+179	42	Wholesale trade	53	42	67	53067	Thurston County, Washington	203.2	2255.6	118324.6	0.0
+180	42	Wholesale trade	53	42	69	53069	Wahkiakum County, Washington	1.8	1029.5768253968254	88404.19206349205	1.0
+181	42	Wholesale trade	53	42	71	53071	Walla Walla County, Washington	71.4	534.0	26277.8	0.0
+182	42	Wholesale trade	53	42	73	53073	Whatcom County, Washington	343.4	3703.4	202846.6	0.0
+183	42	Wholesale trade	53	42	75	53075	Whitman County, Washington	61.2	699.4	37928.0	0.0
+184	42	Wholesale trade	53	42	77	53077	Yakima County, Washington	264.6	5580.8	280331.2	0.0
+185	51	Information	53	51	1	53001	Adams County, Washington	4.6	295.4892902754972	30942.705090311985	1.0
+186	51	Information	53	51	3	53003	Asotin County, Washington	5.0	88.3301404853129	3903.9590038314177	0.4
+187	51	Information	53	51	5	53005	Benton County, Washington	55.0	780.2	29879.2	0.0
+188	51	Information	53	51	7	53007	Chelan County, Washington	36.2	437.0	17694.8	0.0
+189	51	Information	53	51	9	53009	Clallam County, Washington	17.6	130.8	6450.6	0.0
+190	51	Information	53	51	11	53011	Clark County, Washington	170.6	3236.2	183157.2	0.0
+191	51	Information	53	51	13	53013	Columbia County, Washington	2.4	124.8721583652618	13501.050957854406	0.8
+192	51	Information	53	51	15	53015	Cowlitz County, Washington	26.8	304.2	13463.4	0.0
+193	51	Information	53	51	17	53017	Douglas County, Washington	8.4	341.5257982120051	28504.579693486587	0.8
+194	51	Information	53	51	19	53019	Ferry County, Washington	3.4	9.6	466.8	0.0
+195	51	Information	53	51	21	53021	Franklin County, Washington	21.8	210.4	7797.8	0.0
+196	51	Information	53	51	23	53023	Garfield County, Washington	1.0	68.57819740923189	7504.093705528188	1.0
+197	51	Information	53	51	25	53025	Grant County, Washington	24.4	268.4	12361.8	0.0
+198	51	Information	53	51	27	53027	Grays Harbor County, Washington	21.2	174.0	7279.8	0.0
+199	51	Information	53	51	29	53029	Island County, Washington	23.4	699.4228607918263	41073.50153256705	0.6
+200	51	Information	53	51	31	53031	Jefferson County, Washington	27.2	153.0	7339.4	0.0
+201	51	Information	53	51	33	53033	King County, Washington	1702.8	97363.6	16869974.0	0.0
+202	51	Information	53	51	35	53035	Kitsap County, Washington	83.0	1201.8	72222.6	0.0
+203	51	Information	53	51	37	53037	Kittitas County, Washington	13.4	220.0	9575.4	0.0
+204	51	Information	53	51	39	53039	Klickitat County, Washington	7.8	23.2	1714.0	0.0
+205	51	Information	53	51	41	53041	Lewis County, Washington	19.4	127.0	6217.0	0.0
+206	51	Information	53	51	43	53043	Lincoln County, Washington	6.0	167.135851122058	9919.228899835794	0.6
+207	51	Information	53	51	45	53045	Mason County, Washington	10.4	92.0	3361.4	0.0
+208	51	Information	53	51	47	53047	Okanogan County, Washington	17.8	154.8	5622.0	0.0
+209	51	Information	53	51	49	53049	Pacific County, Washington	11.4	27.8	1640.0	0.0
+210	51	Information	53	51	51	53051	Pend Oreille County, Washington	8.2	54.6	1799.4	0.0
+211	51	Information	53	51	53	53053	Pierce County, Washington	183.0	3586.4	171667.2	0.0
+212	51	Information	53	51	55	53055	San Juan County, Washington	14.8	64.0	2437.4	0.0
+213	51	Information	53	51	57	53057	Skagit County, Washington	38.6	492.0	21860.0	0.0
+214	51	Information	53	51	59	53059	Skamania County, Washington	4.0	62.37777777777777	8584.6	0.2
+215	51	Information	53	51	61	53061	Snohomish County, Washington	228.8	5439.8	337633.2	0.0
+216	51	Information	53	51	63	53063	Spokane County, Washington	205.8	3720.0	205570.8	0.0
+217	51	Information	53	51	65	53065	Stevens County, Washington	14.6	53.6	2200.2	0.0
+218	51	Information	53	51	67	53067	Thurston County, Washington	90.4	1574.4	90184.8	0.0
+219	51	Information	53	51	69	53069	Wahkiakum County, Washington	3.0	126.267925561029	10725.081116584563	0.8
+220	51	Information	53	51	71	53071	Walla Walla County, Washington	22.0	352.4	14187.8	0.0
+221	51	Information	53	51	73	53073	Whatcom County, Washington	92.4	1744.2	92403.0	0.0
+222	51	Information	53	51	75	53075	Whitman County, Washington	17.0	81.6	4675.4	0.0
+223	51	Information	53	51	77	53077	Yakima County, Washington	62.6	972.0	42062.8	0.0
+224	52	Finance and insurance	53	52	1	53001	Adams County, Washington	20.0	85.6	3566.0	0.0
+225	52	Finance and insurance	53	52	3	53003	Asotin County, Washington	29.6	159.6	7869.6	0.0
+226	52	Finance and insurance	53	52	5	53005	Benton County, Washington	231.0	1636.6	99094.0	0.0
+227	52	Finance and insurance	53	52	7	53007	Chelan County, Washington	124.8	754.8	42387.8	0.0
+228	52	Finance and insurance	53	52	9	53009	Clallam County, Washington	90.0	494.8	25616.4	0.0
+229	52	Finance and insurance	53	52	11	53011	Clark County, Washington	622.6	4984.6	357401.4	0.0
+230	52	Finance and insurance	53	52	13	53013	Columbia County, Washington	4.8	16.8	671.6	0.0
+231	52	Finance and insurance	53	52	15	53015	Cowlitz County, Washington	105.6	822.0	40902.8	0.0
+232	52	Finance and insurance	53	52	17	53017	Douglas County, Washington	33.6	189.0	8307.6	0.0
+233	52	Finance and insurance	53	52	19	53019	Ferry County, Washington	5.8	113.99000000000001	6079.32	0.2
+234	52	Finance and insurance	53	52	21	53021	Franklin County, Washington	50.2	366.6	17694.6	0.0
+235	52	Finance and insurance	53	52	23	53023	Garfield County, Washington	3.4	7.2	477.8	0.0
+236	52	Finance and insurance	53	52	25	53025	Grant County, Washington	90.6	532.6	28147.8	0.0
+237	52	Finance and insurance	53	52	27	53027	Grays Harbor County, Washington	79.6	347.2	27753.8	0.0
+238	52	Finance and insurance	53	52	29	53029	Island County, Washington	78.4	418.2	19726.2	0.0
+239	52	Finance and insurance	53	52	31	53031	Jefferson County, Washington	34.8	144.2	8337.8	0.0
+240	52	Finance and insurance	53	52	33	53033	King County, Washington	3560.0	42730.0	4297193.8	0.0
+241	52	Finance and insurance	53	52	35	53035	Kitsap County, Washington	294.4	1907.0	103074.2	0.0
+242	52	Finance and insurance	53	52	37	53037	Kittitas County, Washington	44.8	199.0	8678.0	0.0
+243	52	Finance and insurance	53	52	39	53039	Klickitat County, Washington	16.6	42.4	2760.8	0.0
+244	52	Finance and insurance	53	52	41	53041	Lewis County, Washington	88.2	386.2	17256.6	0.0
+245	52	Finance and insurance	53	52	43	53043	Lincoln County, Washington	21.4	56.0	2464.0	0.0
+246	52	Finance and insurance	53	52	45	53045	Mason County, Washington	46.4	326.0	15680.2	0.0
+247	52	Finance and insurance	53	52	47	53047	Okanogan County, Washington	44.8	218.2	9031.4	0.0
+248	52	Finance and insurance	53	52	49	53049	Pacific County, Washington	25.4	183.2	8825.8	0.0
+249	52	Finance and insurance	53	52	51	53051	Pend Oreille County, Washington	11.4	40.0	2043.2	0.0
+250	52	Finance and insurance	53	52	53	53053	Pierce County, Washington	903.0	9900.0	649474.8	0.0
+251	52	Finance and insurance	53	52	55	53055	San Juan County, Washington	24.2	133.0	7127.6	0.0
+252	52	Finance and insurance	53	52	57	53057	Skagit County, Washington	180.2	1496.6	76174.6	0.0
+253	52	Finance and insurance	53	52	59	53059	Skamania County, Washington	4.2	21.6	710.6	0.0
+254	52	Finance and insurance	53	52	61	53061	Snohomish County, Washington	912.0	8685.0	607409.6	0.0
+255	52	Finance and insurance	53	52	63	53063	Spokane County, Washington	860.4	10768.4	673352.8	0.0
+256	52	Finance and insurance	53	52	65	53065	Stevens County, Washington	31.4	743.01	39948.68	0.2
+257	52	Finance and insurance	53	52	67	53067	Thurston County, Washington	330.6	2610.0	156655.6	0.0
+258	52	Finance and insurance	53	52	69	53069	Wahkiakum County, Washington	3.8	5.0	370.2	0.0
+259	52	Finance and insurance	53	52	71	53071	Walla Walla County, Washington	76.4	412.2	37861.0	0.0
+260	52	Finance and insurance	53	52	73	53073	Whatcom County, Washington	297.2	2295.4	144849.2	0.0
+261	52	Finance and insurance	53	52	75	53075	Whitman County, Washington	49.0	213.8	11028.4	0.0
+262	52	Finance and insurance	53	52	77	53077	Yakima County, Washington	242.2	1555.8	90199.4	0.0
+263	53	Real estate and rental and leasing	53	53	1	53001	Adams County, Washington	11.6	15.4	635.2	0.0
+264	53	Real estate and rental and leasing	53	53	3	53003	Asotin County, Washington	20.6	100.2	2269.8	0.0
+265	53	Real estate and rental and leasing	53	53	5	53005	Benton County, Washington	256.0	1073.0	35434.6	0.0
+266	53	Real estate and rental and leasing	53	53	7	53007	Chelan County, Washington	128.0	433.2	14160.6	0.0
+267	53	Real estate and rental and leasing	53	53	9	53009	Clallam County, Washington	87.6	236.0	7535.0	0.0
+268	53	Real estate and rental and leasing	53	53	11	53011	Clark County, Washington	511.6	2097.6	80872.4	0.0
+269	53	Real estate and rental and leasing	53	53	13	53013	Columbia County, Washington	6.8	10.2	219.4	0.0
+270	53	Real estate and rental and leasing	53	53	15	53015	Cowlitz County, Washington	113.0	421.0	12813.6	0.0
+271	53	Real estate and rental and leasing	53	53	17	53017	Douglas County, Washington	33.4	83.4	2730.8	0.0
+272	53	Real estate and rental and leasing	53	53	19	53019	Ferry County, Washington	7.2	14.0	435.8	0.0
+273	53	Real estate and rental and leasing	53	53	21	53021	Franklin County, Washington	62.4	285.6	9128.8	0.0
+274	53	Real estate and rental and leasing	53	53	25	53025	Grant County, Washington	108.0	273.0	5997.2	0.0
+275	53	Real estate and rental and leasing	53	53	27	53027	Grays Harbor County, Washington	78.2	283.2	6557.6	0.0
+276	53	Real estate and rental and leasing	53	53	29	53029	Island County, Washington	94.0	217.2	8350.4	0.0
+277	53	Real estate and rental and leasing	53	53	31	53031	Jefferson County, Washington	49.6	123.4	3795.0	0.0
+278	53	Real estate and rental and leasing	53	53	33	53033	King County, Washington	4178.8	23079.2	1361788.4	0.0
+279	53	Real estate and rental and leasing	53	53	35	53035	Kitsap County, Washington	345.0	965.0	35801.6	0.0
+280	53	Real estate and rental and leasing	53	53	37	53037	Kittitas County, Washington	62.2	151.6	5468.8	0.0
+281	53	Real estate and rental and leasing	53	53	39	53039	Klickitat County, Washington	21.8	28.0	696.4	0.0
+282	53	Real estate and rental and leasing	53	53	41	53041	Lewis County, Washington	78.0	287.0	9649.6	0.0
+283	53	Real estate and rental and leasing	53	53	43	53043	Lincoln County, Washington	5.0	26.454545454545457	584.3818181818182	0.2
+284	53	Real estate and rental and leasing	53	53	45	53045	Mason County, Washington	44.4	136.2	3744.2	0.0
+285	53	Real estate and rental and leasing	53	53	47	53047	Okanogan County, Washington	56.8	146.6	2186.0	0.0
+286	53	Real estate and rental and leasing	53	53	49	53049	Pacific County, Washington	19.4	79.6	3445.0	0.0
+287	53	Real estate and rental and leasing	53	53	51	53051	Pend Oreille County, Washington	7.0	4.6	368.6	0.0
+288	53	Real estate and rental and leasing	53	53	53	53053	Pierce County, Washington	1003.0	5054.0	184066.2	0.0
+289	53	Real estate and rental and leasing	53	53	55	53055	San Juan County, Washington	57.0	116.8	3880.8	0.0
+290	53	Real estate and rental and leasing	53	53	57	53057	Skagit County, Washington	156.8	472.0	14591.2	0.0
+291	53	Real estate and rental and leasing	53	53	59	53059	Skamania County, Washington	6.2	37.945454545454545	867.2181818181818	0.2
+292	53	Real estate and rental and leasing	53	53	61	53061	Snohomish County, Washington	924.6	3095.0	134529.6	0.0
+293	53	Real estate and rental and leasing	53	53	63	53063	Spokane County, Washington	623.6	3207.2	118507.6	0.0
+294	53	Real estate and rental and leasing	53	53	65	53065	Stevens County, Washington	24.8	62.2	1856.0	0.0
+295	53	Real estate and rental and leasing	53	53	67	53067	Thurston County, Washington	326.6	1053.2	35921.8	0.0
+296	53	Real estate and rental and leasing	53	53	69	53069	Wahkiakum County, Washington	5.8	3.4	88.6	0.0
+297	53	Real estate and rental and leasing	53	53	71	53071	Walla Walla County, Washington	59.4	176.8	5781.6	0.0
+298	53	Real estate and rental and leasing	53	53	73	53073	Whatcom County, Washington	335.2	1281.6	44336.0	0.0
+299	53	Real estate and rental and leasing	53	53	75	53075	Whitman County, Washington	49.6	244.4	5515.2	0.0
+300	53	Real estate and rental and leasing	53	53	77	53077	Yakima County, Washington	255.0	948.4	28570.6	0.0
+301	54	Professional, scientific, and technical services	53	54	1	53001	Adams County, Washington	11.4	38.4	1850.8	0.0
+302	54	Professional, scientific, and technical services	53	54	3	53003	Asotin County, Washington	35.0	252.0	8183.0	0.0
+303	54	Professional, scientific, and technical services	53	54	5	53005	Benton County, Washington	455.2	7747.0	619403.6	0.0
+304	54	Professional, scientific, and technical services	53	54	7	53007	Chelan County, Washington	180.8	1048.0	49800.6	0.0
+305	54	Professional, scientific, and technical services	53	54	9	53009	Clallam County, Washington	161.0	729.8	29357.2	0.0
+306	54	Professional, scientific, and technical services	53	54	11	53011	Clark County, Washington	1166.6	8187.4	432990.2	0.0
+307	54	Professional, scientific, and technical services	53	54	13	53013	Columbia County, Washington	7.8	19.2	559.8	0.0
+308	54	Professional, scientific, and technical services	53	54	15	53015	Cowlitz County, Washington	134.2	726.2	30844.2	0.0
+309	54	Professional, scientific, and technical services	53	54	17	53017	Douglas County, Washington	35.4	180.0	6987.4	0.0
+310	54	Professional, scientific, and technical services	53	54	19	53019	Ferry County, Washington	6.4	10.0	344.8	0.0
+311	54	Professional, scientific, and technical services	53	54	21	53021	Franklin County, Washington	78.8	480.2	23214.0	0.0
+312	54	Professional, scientific, and technical services	53	54	23	53023	Garfield County, Washington	3.6	572.5777777777778	63406.533333333326	0.2
+313	54	Professional, scientific, and technical services	53	54	25	53025	Grant County, Washington	99.2	449.2	18837.0	0.0
+314	54	Professional, scientific, and technical services	53	54	27	53027	Grays Harbor County, Washington	88.8	411.2	19818.4	0.0
+315	54	Professional, scientific, and technical services	53	54	29	53029	Island County, Washington	178.2	634.2	28797.4	0.0
+316	54	Professional, scientific, and technical services	53	54	31	53031	Jefferson County, Washington	111.0	285.0	12004.6	0.0
+317	54	Professional, scientific, and technical services	53	54	33	53033	King County, Washington	10184.2	102128.4	9361413.0	0.0
+318	54	Professional, scientific, and technical services	53	54	35	53035	Kitsap County, Washington	705.0	4244.8	247937.4	0.0
+319	54	Professional, scientific, and technical services	53	54	37	53037	Kittitas County, Washington	70.6	253.0	10619.2	0.0
+320	54	Professional, scientific, and technical services	53	54	39	53039	Klickitat County, Washington	58.2	277.2	11902.4	0.0
+321	54	Professional, scientific, and technical services	53	54	41	53041	Lewis County, Washington	113.6	517.8	19994.6	0.0
+322	54	Professional, scientific, and technical services	53	54	43	53043	Lincoln County, Washington	12.4	80.6	6247.2	0.0
+323	54	Professional, scientific, and technical services	53	54	45	53045	Mason County, Washington	75.0	247.8	7763.6	0.0
+324	54	Professional, scientific, and technical services	53	54	47	53047	Okanogan County, Washington	74.0	5299.685920303606	532466.6964705882	0.4
+325	54	Professional, scientific, and technical services	53	54	49	53049	Pacific County, Washington	36.4	44.0	3882.6	0.0
+326	54	Professional, scientific, and technical services	53	54	51	53051	Pend Oreille County, Washington	14.4	64.6	2230.8	0.0
+327	54	Professional, scientific, and technical services	53	54	53	53053	Pierce County, Washington	1453.8	9306.2	559301.6	0.0
+328	54	Professional, scientific, and technical services	53	54	55	53055	San Juan County, Washington	101.2	228.4	13211.8	0.0
+329	54	Professional, scientific, and technical services	53	54	57	53057	Skagit County, Washington	292.6	1618.8	85412.2	0.0
+330	54	Professional, scientific, and technical services	53	54	59	53059	Skamania County, Washington	15.0	5738.536301918617	629334.3701960783	0.6
+331	54	Professional, scientific, and technical services	53	54	61	53061	Snohomish County, Washington	1650.2	10978.8	783974.4	0.0
+332	54	Professional, scientific, and technical services	53	54	63	53063	Spokane County, Washington	1289.0	8804.6	512430.4	0.0
+333	54	Professional, scientific, and technical services	53	54	65	53065	Stevens County, Washington	63.6	216.2	8422.8	0.0
+334	54	Professional, scientific, and technical services	53	54	67	53067	Thurston County, Washington	630.4	5200.6	285266.4	0.0
+335	54	Professional, scientific, and technical services	53	54	69	53069	Wahkiakum County, Washington	7.0	9.8	355.6	0.0
+336	54	Professional, scientific, and technical services	53	54	71	53071	Walla Walla County, Washington	104.4	464.0	19904.6	0.0
+337	54	Professional, scientific, and technical services	53	54	73	53073	Whatcom County, Washington	693.4	3350.2	205035.8	0.0
+338	54	Professional, scientific, and technical services	53	54	75	53075	Whitman County, Washington	61.0	335.4	16762.2	0.0
+339	54	Professional, scientific, and technical services	53	54	77	53077	Yakima County, Washington	317.2	1850.8	86105.0	0.0
+340	55	Management of companies and enterprises	53	55	3	53003	Asotin County, Washington	1.8	32.89744202898551	2734.282525171625	1.0
+341	55	Management of companies and enterprises	53	55	5	53005	Benton County, Washington	15.8	366.2	34463.6	0.0
+342	55	Management of companies and enterprises	53	55	7	53007	Chelan County, Washington	3.4	62.26155072463767	5181.386102974828	1.0
+343	55	Management of companies and enterprises	53	55	9	53009	Clallam County, Washington	4.4	88.95710144927537	5256.472311212814	0.6
+344	55	Management of companies and enterprises	53	55	11	53011	Clark County, Washington	80.2	2552.2	262873.8	0.0
+345	55	Management of companies and enterprises	53	55	15	53015	Cowlitz County, Washington	6.6	59.4	7559.2	0.0
+346	55	Management of companies and enterprises	53	55	17	53017	Douglas County, Washington	5.8	108.02201086956522	8566.661347254005	1.0
+347	55	Management of companies and enterprises	53	55	21	53021	Franklin County, Washington	2.0	37.08005072463768	2998.321655606407	1.0
+348	55	Management of companies and enterprises	53	55	25	53025	Grant County, Washington	5.2	107.0963768115942	9079.090389016017	0.6
+349	55	Management of companies and enterprises	53	55	27	53027	Grays Harbor County, Washington	3.2	34.74782608695652	3967.517391304348	0.2
+350	55	Management of companies and enterprises	53	55	29	53029	Island County, Washington	2.2	41.26265942028986	3262.36078604119	1.0
+351	55	Management of companies and enterprises	53	55	31	53031	Jefferson County, Washington	3.8	54.90668478260869	3876.4496138443938	0.8
+352	55	Management of companies and enterprises	53	55	33	53033	King County, Washington	583.8	62385.4	7796145.8	0.0
+353	55	Management of companies and enterprises	53	55	35	53035	Kitsap County, Washington	17.8	262.0866666666667	20130.242105263158	0.4
+354	55	Management of companies and enterprises	53	55	37	53037	Kittitas County, Washington	2.2	32.14255072463768	2446.884155606407	0.8
+355	55	Management of companies and enterprises	53	55	39	53039	Klickitat County, Washington	1.0	17.84375	1557.59375	1.0
+356	55	Management of companies and enterprises	53	55	41	53041	Lewis County, Washington	3.8	71.81782608695653	5646.917391304348	0.4
+357	55	Management of companies and enterprises	53	55	43	53043	Lincoln County, Washington	1.4	25.94077536231884	2191.503577803204	1.0
+358	55	Management of companies and enterprises	53	55	45	53045	Mason County, Washington	1.5	28.029959239130434	2086.943632008009	1.0
+359	55	Management of companies and enterprises	53	55	47	53047	Okanogan County, Washington	2.4	42.18480072463768	2924.9924056064074	0.8
+360	55	Management of companies and enterprises	53	55	49	53049	Pacific County, Washington	1.0	17.84375	1557.59375	1.0
+361	55	Management of companies and enterprises	53	55	53	53053	Pierce County, Washington	84.4	6262.6	390791.4	0.0
+362	55	Management of companies and enterprises	53	55	55	53055	San Juan County, Washington	1.6	29.47410869565217	2478.6825251716245	1.0
+363	55	Management of companies and enterprises	53	55	57	53057	Skagit County, Washington	6.6	55.6	2620.0	0.0
+364	55	Management of companies and enterprises	53	55	61	53061	Snohomish County, Washington	65.4	2597.4	217145.6	0.0
+365	55	Management of companies and enterprises	53	55	63	53063	Spokane County, Washington	88.8	2977.4	224738.8	0.0
+366	55	Management of companies and enterprises	53	55	65	53065	Stevens County, Washington	1.0	18.54002536231884	1499.1608278032036	1.0
+367	55	Management of companies and enterprises	53	55	67	53067	Thurston County, Washington	19.8	238.6	18140.8	0.0
+368	55	Management of companies and enterprises	53	55	71	53071	Walla Walla County, Washington	1.0	18.54002536231884	1499.1608278032036	1.0
+369	55	Management of companies and enterprises	53	55	73	53073	Whatcom County, Washington	22.0	842.0	51716.8	0.0
+370	55	Management of companies and enterprises	53	55	75	53075	Whitman County, Washington	2.0	37.08005072463768	2998.321655606407	1.0
+371	55	Management of companies and enterprises	53	55	77	53077	Yakima County, Washington	13.0	229.8	13095.0	0.0
+372	56	Administrative and support and waste management and remediation services	53	56	1	53001	Adams County, Washington	8.6	17.4	743.2	0.0
+373	56	Administrative and support and waste management and remediation services	53	56	3	53003	Asotin County, Washington	18.0	112.4	3732.0	0.0
+374	56	Administrative and support and waste management and remediation services	53	56	5	53005	Benton County, Washington	219.8	8513.2	618589.2	0.0
+375	56	Administrative and support and waste management and remediation services	53	56	7	53007	Chelan County, Washington	124.0	612.4	18696.6	0.0
+376	56	Administrative and support and waste management and remediation services	53	56	9	53009	Clallam County, Washington	101.2	558.4	12776.2	0.0
+377	56	Administrative and support and waste management and remediation services	53	56	11	53011	Clark County, Washington	592.0	7218.0	225760.2	0.0
+378	56	Administrative and support and waste management and remediation services	53	56	13	53013	Columbia County, Washington	3.8	3851.125401174168	125280.41769080234	1.0
+379	56	Administrative and support and waste management and remediation services	53	56	15	53015	Cowlitz County, Washington	93.6	914.6	27219.0	0.0
+380	56	Administrative and support and waste management and remediation services	53	56	17	53017	Douglas County, Washington	46.6	192.4	5576.4	0.0
+381	56	Administrative and support and waste management and remediation services	53	56	19	53019	Ferry County, Washington	4.2	5.0	425.0	0.0
+382	56	Administrative and support and waste management and remediation services	53	56	21	53021	Franklin County, Washington	84.8	862.0	34091.6	0.0
+383	56	Administrative and support and waste management and remediation services	53	56	23	53023	Garfield County, Washington	1.0	260.2857142857143	6407.761904761905	1.0
+384	56	Administrative and support and waste management and remediation services	53	56	25	53025	Grant County, Washington	61.4	968.4	30687.8	0.0
+385	56	Administrative and support and waste management and remediation services	53	56	27	53027	Grays Harbor County, Washington	60.2	559.8	15073.4	0.0
+386	56	Administrative and support and waste management and remediation services	53	56	29	53029	Island County, Washington	102.6	419.2	12650.0	0.0
+387	56	Administrative and support and waste management and remediation services	53	56	31	53031	Jefferson County, Washington	41.2	209.2	6264.8	0.0
+388	56	Administrative and support and waste management and remediation services	53	56	33	53033	King County, Washington	3336.6	67079.4	3484232.0	0.0
+389	56	Administrative and support and waste management and remediation services	53	56	35	53035	Kitsap County, Washington	326.0	3592.0	107627.8	0.0
+390	56	Administrative and support and waste management and remediation services	53	56	37	53037	Kittitas County, Washington	56.2	1084.504109589041	50339.11780821918	0.2
+391	56	Administrative and support and waste management and remediation services	53	56	39	53039	Klickitat County, Washington	19.2	206.4	11842.8	0.0
+392	56	Administrative and support and waste management and remediation services	53	56	41	53041	Lewis County, Washington	76.0	778.4	22219.2	0.0
+393	56	Administrative and support and waste management and remediation services	53	56	43	53043	Lincoln County, Washington	8.4	1164.1650880626225	35856.940143509455	0.6
+394	56	Administrative and support and waste management and remediation services	53	56	45	53045	Mason County, Washington	47.4	189.8	6617.0	0.0
+395	56	Administrative and support and waste management and remediation services	53	56	47	53047	Okanogan County, Washington	45.4	149.0	3821.2	0.0
+396	56	Administrative and support and waste management and remediation services	53	56	49	53049	Pacific County, Washington	18.0	123.2	2861.4	0.0
+397	56	Administrative and support and waste management and remediation services	53	56	51	53051	Pend Oreille County, Washington	7.2	9.4	233.8	0.0
+398	56	Administrative and support and waste management and remediation services	53	56	53	53053	Pierce County, Washington	980.6	12638.4	432055.0	0.0
+399	56	Administrative and support and waste management and remediation services	53	56	55	53055	San Juan County, Washington	56.4	233.0	6499.8	0.0
+400	56	Administrative and support and waste management and remediation services	53	56	57	53057	Skagit County, Washington	143.2	1372.8	39961.6	0.0
+401	56	Administrative and support and waste management and remediation services	53	56	59	53059	Skamania County, Washington	6.6	575.9657142857143	16755.401904761904	0.4
+402	56	Administrative and support and waste management and remediation services	53	56	61	53061	Snohomish County, Washington	1044.0	10918.4	423815.4	0.0
+403	56	Administrative and support and waste management and remediation services	53	56	63	53063	Spokane County, Washington	677.4	10850.6	329537.0	0.0
+404	56	Administrative and support and waste management and remediation services	53	56	65	53065	Stevens County, Washington	34.6	107.2	2959.0	0.0
+405	56	Administrative and support and waste management and remediation services	53	56	67	53067	Thurston County, Washington	312.0	2479.2	72105.2	0.0
+406	56	Administrative and support and waste management and remediation services	53	56	69	53069	Wahkiakum County, Washington	3.8	581.3825440313112	17761.17007175473	0.6
+407	56	Administrative and support and waste management and remediation services	53	56	71	53071	Walla Walla County, Washington	69.4	354.4	10001.8	0.0
+408	56	Administrative and support and waste management and remediation services	53	56	73	53073	Whatcom County, Washington	307.0	3003.0	82114.4	0.0
+409	56	Administrative and support and waste management and remediation services	53	56	75	53075	Whitman County, Washington	20.2	150.0	2965.8	0.0
+410	56	Administrative and support and waste management and remediation services	53	56	77	53077	Yakima County, Washington	188.4	2317.8	66042.4	0.0
+411	61	Educational services	53	61	1	53001	Adams County, Washington	2.0	168.13961344537816	3487.9275444493587	1.0
+412	61	Educational services	53	61	3	53003	Asotin County, Washington	10.0	373.29411764705884	7260.721671826625	0.4
+413	61	Educational services	53	61	5	53005	Benton County, Washington	42.0	373.4	6958.4	0.0
+414	61	Educational services	53	61	7	53007	Chelan County, Washington	27.0	113.6	1760.6	0.0
+415	61	Educational services	53	61	9	53009	Clallam County, Washington	18.8	171.8	3451.4	0.0
+416	61	Educational services	53	61	11	53011	Clark County, Washington	124.2	1515.2	33660.4	0.0
+417	61	Educational services	53	61	13	53013	Columbia County, Washington	1.75	126.19826680672269	2764.4431805616982	1.0
+418	61	Educational services	53	61	15	53015	Cowlitz County, Washington	25.0	324.8	6761.2	0.0
+419	61	Educational services	53	61	17	53017	Douglas County, Washington	5.8	271.1854117647059	5174.176482972136	0.6
+420	61	Educational services	53	61	19	53019	Ferry County, Washington	2.2	153.48247058823532	3099.7846873065014	0.8
+421	61	Educational services	53	61	21	53021	Franklin County, Washington	16.0	217.2	11148.6	0.0
+422	61	Educational services	53	61	25	53025	Grant County, Washington	9.0	98.4	1839.6	0.0
+423	61	Educational services	53	61	27	53027	Grays Harbor County, Washington	7.0	7.0	391.4	0.0
+424	61	Educational services	53	61	29	53029	Island County, Washington	37.8	278.6	10521.6	0.0
+425	61	Educational services	53	61	31	53031	Jefferson County, Washington	23.2	137.0	3023.4	0.0
+426	61	Educational services	53	61	33	53033	King County, Washington	1317.2	25591.6	824714.0	0.0
+427	61	Educational services	53	61	35	53035	Kitsap County, Washington	89.6	775.6	23310.6	0.0
+428	61	Educational services	53	61	37	53037	Kittitas County, Washington	11.6	158.6	2651.0	0.0
+429	61	Educational services	53	61	39	53039	Klickitat County, Washington	6.0	14.2	483.4	0.0
+430	61	Educational services	53	61	41	53041	Lewis County, Washington	12.4	109.0	2228.6	0.0
+431	61	Educational services	53	61	43	53043	Lincoln County, Washington	2.0	168.13961344537816	3487.9275444493587	1.0
+432	61	Educational services	53	61	45	53045	Mason County, Washington	5.4	234.44	4359.377894736843	0.4
+433	61	Educational services	53	61	47	53047	Okanogan County, Washington	16.0	37.6	707.4	0.0
+434	61	Educational services	53	61	49	53049	Pacific County, Washington	1.0	84.06980672268908	1743.9637722246794	1.0
+435	61	Educational services	53	61	53	53053	Pierce County, Washington	198.8	7107.8	181726.4	0.0
+436	61	Educational services	53	61	55	53055	San Juan County, Washington	14.6	72.0	2306.4	0.0
+437	61	Educational services	53	61	57	53057	Skagit County, Washington	40.2	342.8	8765.8	0.0
+438	61	Educational services	53	61	61	53061	Snohomish County, Washington	239.8	2148.6	55298.4	0.0
+439	61	Educational services	53	61	63	53063	Spokane County, Washington	153.4	6658.8	173205.0	0.0
+440	61	Educational services	53	61	65	53065	Stevens County, Washington	6.8	12.2	282.2	0.0
+441	61	Educational services	53	61	67	53067	Thurston County, Washington	82.0	1660.4	35874.0	0.0
+442	61	Educational services	53	61	71	53071	Walla Walla County, Washington	9.8	1820.0903529411764	35653.76585758514	0.6
+443	61	Educational services	53	61	73	53073	Whatcom County, Washington	94.2	1297.0	29901.6	0.0
+444	61	Educational services	53	61	75	53075	Whitman County, Washington	5.2	23.4	210.2	0.0
+445	61	Educational services	53	61	77	53077	Yakima County, Washington	62.6	1302.8	39049.2	0.0
+446	62	Health care and social assistance	53	62	1	53001	Adams County, Washington	31.4	842.3349076242519	40176.86055165235	0.6
+447	62	Health care and social assistance	53	62	3	53003	Asotin County, Washington	50.8	1010.6	40499.2	0.0
+448	62	Health care and social assistance	53	62	5	53005	Benton County, Washington	550.4	9940.4	488448.0	0.0
+449	62	Health care and social assistance	53	62	7	53007	Chelan County, Washington	230.2	5600.0	336227.6	0.0
+450	62	Health care and social assistance	53	62	9	53009	Clallam County, Washington	254.8	3927.6	154065.8	0.0
+451	62	Health care and social assistance	53	62	11	53011	Clark County, Washington	1110.2	20855.0	1096367.0	0.0
+452	62	Health care and social assistance	53	62	13	53013	Columbia County, Washington	9.8	169.2	6294.4	0.0
+453	62	Health care and social assistance	53	62	15	53015	Cowlitz County, Washington	227.8	5462.0	239015.4	0.0
+454	62	Health care and social assistance	53	62	17	53017	Douglas County, Washington	64.8	901.2	25234.0	0.0
+455	62	Health care and social assistance	53	62	19	53019	Ferry County, Washington	14.0	290.4895914650013	13002.228623471246	0.6
+456	62	Health care and social assistance	53	62	21	53021	Franklin County, Washington	127.2	1776.8	86372.4	0.0
+457	62	Health care and social assistance	53	62	23	53023	Garfield County, Washington	4.4	112.82097319802237	4793.187561800676	0.6
+458	62	Health care and social assistance	53	62	25	53025	Grant County, Washington	162.6	2905.0	125527.4	0.0
+459	62	Health care and social assistance	53	62	27	53027	Grays Harbor County, Washington	193.0	2761.2	108651.6	0.0
+460	62	Health care and social assistance	53	62	29	53029	Island County, Washington	172.4	2501.8	102051.0	0.0
+461	62	Health care and social assistance	53	62	31	53031	Jefferson County, Washington	101.8	1383.8	55238.8	0.0
+462	62	Health care and social assistance	53	62	33	53033	King County, Washington	7495.6	141256.4	7719992.6	0.0
+463	62	Health care and social assistance	53	62	35	53035	Kitsap County, Washington	689.8	12270.4	538806.0	0.0
+464	62	Health care and social assistance	53	62	37	53037	Kittitas County, Washington	97.6	1597.4	61303.0	0.0
+465	62	Health care and social assistance	53	62	39	53039	Klickitat County, Washington	44.6	627.6	26950.2	0.0
+466	62	Health care and social assistance	53	62	41	53041	Lewis County, Washington	204.0	3371.0	150271.0	0.0
+467	62	Health care and social assistance	53	62	43	53043	Lincoln County, Washington	15.8	439.0902419984387	20251.89945355191	0.6
+468	62	Health care and social assistance	53	62	45	53045	Mason County, Washington	94.2	1823.6	73460.4	0.0
+469	62	Health care and social assistance	53	62	47	53047	Okanogan County, Washington	109.8	1728.0	67640.2	0.0
+470	62	Health care and social assistance	53	62	49	53049	Pacific County, Washington	42.8	642.0	27733.6	0.0
+471	62	Health care and social assistance	53	62	51	53051	Pend Oreille County, Washington	18.2	400.2642857142857	17168.22380952381	0.2
+472	62	Health care and social assistance	53	62	53	53053	Pierce County, Washington	1905.6	45974.0	2385733.8	0.0
+473	62	Health care and social assistance	53	62	55	53055	San Juan County, Washington	58.4	354.6	10564.8	0.0
+474	62	Health care and social assistance	53	62	57	53057	Skagit County, Washington	339.6	7277.2	335523.4	0.0
+475	62	Health care and social assistance	53	62	59	53059	Skamania County, Washington	19.0	141.2	3215.2	0.0
+476	62	Health care and social assistance	53	62	61	53061	Snohomish County, Washington	1851.4	29023.8	1336559.8	0.0
+477	62	Health care and social assistance	53	62	63	53063	Spokane County, Washington	1537.0	35034.8	1747222.8	0.0
+478	62	Health care and social assistance	53	62	65	53065	Stevens County, Washington	79.0	1594.4	59292.2	0.0
+479	62	Health care and social assistance	53	62	67	53067	Thurston County, Washington	824.8	13542.8	653792.4	0.0
+480	62	Health care and social assistance	53	62	69	53069	Wahkiakum County, Washington	4.6	34.0	1188.4	0.0
+481	62	Health care and social assistance	53	62	71	53071	Walla Walla County, Washington	159.6	4004.0	193653.4	0.0
+482	62	Health care and social assistance	53	62	73	53073	Whatcom County, Washington	653.0	9692.0	416356.2	0.0
+483	62	Health care and social assistance	53	62	75	53075	Whitman County, Washington	100.0	1886.0	76612.0	0.0
+484	62	Health care and social assistance	53	62	77	53077	Yakima County, Washington	551.8	13144.8	593950.4	0.0
+485	71	Arts, entertainment, and recreation	53	71	1	53001	Adams County, Washington	3.4	49.21597035040431	605.1475741239892	0.4
+486	71	Arts, entertainment, and recreation	53	71	3	53003	Asotin County, Washington	8.0	90.4	1765.0	0.0
+487	71	Arts, entertainment, and recreation	53	71	5	53005	Benton County, Washington	60.0	1311.4	22799.0	0.0
+488	71	Arts, entertainment, and recreation	53	71	7	53007	Chelan County, Washington	60.0	694.0	13803.4	0.0
+489	71	Arts, entertainment, and recreation	53	71	9	53009	Clallam County, Washington	38.4	541.2	14538.0	0.0
+490	71	Arts, entertainment, and recreation	53	71	11	53011	Clark County, Washington	125.6	2133.2	43106.0	0.0
+491	71	Arts, entertainment, and recreation	53	71	13	53013	Columbia County, Washington	3.0	91.5385509955656	814.2378967046344	0.6
+492	71	Arts, entertainment, and recreation	53	71	15	53015	Cowlitz County, Washington	22.0	307.8	5489.0	0.0
+493	71	Arts, entertainment, and recreation	53	71	17	53017	Douglas County, Washington	11.2	164.6	3174.6	0.0
+494	71	Arts, entertainment, and recreation	53	71	19	53019	Ferry County, Washington	1.0	22.9128503318552	421.0792989015448	1.0
+495	71	Arts, entertainment, and recreation	53	71	21	53021	Franklin County, Washington	15.2	402.9276628119294	6468.721972002435	0.6
+496	71	Arts, entertainment, and recreation	53	71	23	53023	Garfield County, Washington	1.0	22.9128503318552	421.0792989015448	1.0
+497	71	Arts, entertainment, and recreation	53	71	25	53025	Grant County, Washington	21.8	221.2	5545.4	0.0
+498	71	Arts, entertainment, and recreation	53	71	27	53027	Grays Harbor County, Washington	29.0	206.2	2995.2	0.0
+499	71	Arts, entertainment, and recreation	53	71	29	53029	Island County, Washington	43.6	327.0	6028.2	0.0
+500	71	Arts, entertainment, and recreation	53	71	31	53031	Jefferson County, Washington	25.0	101.4	2350.8	0.0
+501	71	Arts, entertainment, and recreation	53	71	33	53033	King County, Washington	1115.0	27649.0	1066427.8	0.0
+502	71	Arts, entertainment, and recreation	53	71	35	53035	Kitsap County, Washington	98.8	1565.4	32890.2	0.0
+503	71	Arts, entertainment, and recreation	53	71	37	53037	Kittitas County, Washington	29.8	994.0355773411007	8752.316298582731	0.6
+504	71	Arts, entertainment, and recreation	53	71	39	53039	Klickitat County, Washington	12.6	32.2	1661.8	0.0
+505	71	Arts, entertainment, and recreation	53	71	41	53041	Lewis County, Washington	15.2	197.4	2220.2	0.0
+506	71	Arts, entertainment, and recreation	53	71	43	53043	Lincoln County, Washington	7.8	16.8	1434.0	0.0
+507	71	Arts, entertainment, and recreation	53	71	45	53045	Mason County, Washington	20.2	208.0	5114.2	0.0
+508	71	Arts, entertainment, and recreation	53	71	47	53047	Okanogan County, Washington	30.4	405.0	8703.6	0.0
+509	71	Arts, entertainment, and recreation	53	71	49	53049	Pacific County, Washington	13.4	36.4	797.0	0.0
+510	71	Arts, entertainment, and recreation	53	71	51	53051	Pend Oreille County, Washington	3.2	34.957142857142856	354.85714285714283	0.2
+511	71	Arts, entertainment, and recreation	53	71	53	53053	Pierce County, Washington	240.6	6758.6	159048.4	0.0
+512	71	Arts, entertainment, and recreation	53	71	55	53055	San Juan County, Washington	40.2	178.0	4344.4	0.0
+513	71	Arts, entertainment, and recreation	53	71	57	53057	Skagit County, Washington	56.2	877.566037735849	16661.784905660377	0.2
+514	71	Arts, entertainment, and recreation	53	71	59	53059	Skamania County, Washington	3.6	32.21785714285714	597.4928571428571	0.2
+515	71	Arts, entertainment, and recreation	53	71	61	53061	Snohomish County, Washington	197.6	4873.6	123381.2	0.0
+516	71	Arts, entertainment, and recreation	53	71	63	53063	Spokane County, Washington	170.4	2890.2	45032.8	0.0
+517	71	Arts, entertainment, and recreation	53	71	65	53065	Stevens County, Washington	12.6	100.8	4683.8	0.0
+518	71	Arts, entertainment, and recreation	53	71	67	53067	Thurston County, Washington	88.8	2676.4	70691.6	0.0
+519	71	Arts, entertainment, and recreation	53	71	69	53069	Wahkiakum County, Washington	1.0	19.466955771961857	453.6437664840738	1.0
+520	71	Arts, entertainment, and recreation	53	71	71	53071	Walla Walla County, Washington	26.4	323.0	5972.2	0.0
+521	71	Arts, entertainment, and recreation	53	71	73	53073	Whatcom County, Washington	122.8	1780.0	32868.4	0.0
+522	71	Arts, entertainment, and recreation	53	71	75	53075	Whitman County, Washington	11.2	130.74193548387098	2162.1677419354837	0.2
+523	71	Arts, entertainment, and recreation	53	71	77	53077	Yakima County, Washington	73.6	1960.4	42818.0	0.0
+524	72	Accommodation and food services	53	72	1	53001	Adams County, Washington	35.6	386.4	5297.0	0.0
+525	72	Accommodation and food services	53	72	3	53003	Asotin County, Washington	42.6	604.0	9859.2	0.0
+526	72	Accommodation and food services	53	72	5	53005	Benton County, Washington	379.0	6283.2	105004.0	0.0
+527	72	Accommodation and food services	53	72	7	53007	Chelan County, Washington	296.0	3634.2	73004.0	0.0
+528	72	Accommodation and food services	53	72	9	53009	Clallam County, Washington	225.4	2161.8	38930.8	0.0
+529	72	Accommodation and food services	53	72	11	53011	Clark County, Washington	745.2	11649.8	203370.2	0.0
+530	72	Accommodation and food services	53	72	13	53013	Columbia County, Washington	12.0	48.6	916.8	0.0
+531	72	Accommodation and food services	53	72	15	53015	Cowlitz County, Washington	212.8	2768.4	43918.4	0.0
+532	72	Accommodation and food services	53	72	17	53017	Douglas County, Washington	56.6	863.8	14236.8	0.0
+533	72	Accommodation and food services	53	72	19	53019	Ferry County, Washington	18.8	52.0	956.8	0.0
+534	72	Accommodation and food services	53	72	21	53021	Franklin County, Washington	121.4	1892.6	31803.8	0.0
+535	72	Accommodation and food services	53	72	23	53023	Garfield County, Washington	3.0	28.2	195.2	0.8
+536	72	Accommodation and food services	53	72	25	53025	Grant County, Washington	192.6	2090.4	35147.6	0.0
+537	72	Accommodation and food services	53	72	27	53027	Grays Harbor County, Washington	224.0	1995.2	34430.4	0.0
+538	72	Accommodation and food services	53	72	29	53029	Island County, Washington	160.4	1715.8	31540.4	0.0
+539	72	Accommodation and food services	53	72	31	53031	Jefferson County, Washington	101.6	949.2	16938.8	0.0
+540	72	Accommodation and food services	53	72	33	53033	King County, Washington	6043.2	102784.4	2373334.8	0.0
+541	72	Accommodation and food services	53	72	35	53035	Kitsap County, Washington	484.6	8075.8	151994.8	0.0
+542	72	Accommodation and food services	53	72	37	53037	Kittitas County, Washington	161.0	2240.2	41542.4	0.0
+543	72	Accommodation and food services	53	72	39	53039	Klickitat County, Washington	51.6	318.0	6283.2	0.0
+544	72	Accommodation and food services	53	72	41	53041	Lewis County, Washington	189.2	1977.0	31715.0	0.0
+545	72	Accommodation and food services	53	72	43	53043	Lincoln County, Washington	20.8	77.6	935.2	0.0
+546	72	Accommodation and food services	53	72	45	53045	Mason County, Washington	104.2	1674.8	41615.8	0.0
+547	72	Accommodation and food services	53	72	47	53047	Okanogan County, Washington	122.0	1080.6	18689.4	0.0
+548	72	Accommodation and food services	53	72	49	53049	Pacific County, Washington	110.4	790.8	14453.4	0.0
+549	72	Accommodation and food services	53	72	51	53051	Pend Oreille County, Washington	25.4	162.8	2275.8	0.0
+550	72	Accommodation and food services	53	72	53	53053	Pierce County, Washington	1568.6	24775.0	445387.2	0.0
+551	72	Accommodation and food services	53	72	55	53055	San Juan County, Washington	103.6	837.2	25999.2	0.0
+552	72	Accommodation and food services	53	72	57	53057	Skagit County, Washington	336.4	4829.8	102185.6	0.0
+553	72	Accommodation and food services	53	72	59	53059	Skamania County, Washington	26.8	550.6	11411.8	0.0
+554	72	Accommodation and food services	53	72	61	53061	Snohomish County, Washington	1573.6	23063.8	461369.4	0.0
+555	72	Accommodation and food services	53	72	63	53063	Spokane County, Washington	1064.4	18178.2	328848.0	0.0
+556	72	Accommodation and food services	53	72	65	53065	Stevens County, Washington	84.6	557.4	8683.8	0.0
+557	72	Accommodation and food services	53	72	67	53067	Thurston County, Washington	540.8	8319.4	143692.0	0.0
+558	72	Accommodation and food services	53	72	69	53069	Wahkiakum County, Washington	6.6	14.4	263.8	0.0
+559	72	Accommodation and food services	53	72	71	53071	Walla Walla County, Washington	130.6	1929.0	32556.4	0.0
+560	72	Accommodation and food services	53	72	73	53073	Whatcom County, Washington	520.2	8682.8	162818.8	0.0
+561	72	Accommodation and food services	53	72	75	53075	Whitman County, Washington	132.2	1613.2	21512.0	0.0
+562	72	Accommodation and food services	53	72	77	53077	Yakima County, Washington	424.8	5848.4	94257.6	0.0
+563	81	Other services (except public administration)	53	81	1	53001	Adams County, Washington	44.6	99.2	2900.6	0.0
+564	81	Other services (except public administration)	53	81	3	53003	Asotin County, Washington	39.8	189.4	3206.4	0.0
+565	81	Other services (except public administration)	53	81	5	53005	Benton County, Washington	376.6	2760.6	68998.2	0.0
+566	81	Other services (except public administration)	53	81	7	53007	Chelan County, Washington	231.8	1036.6	25302.6	0.0
+567	81	Other services (except public administration)	53	81	9	53009	Clallam County, Washington	193.8	924.8	21906.4	0.0
+568	81	Other services (except public administration)	53	81	11	53011	Clark County, Washington	937.2	5402.4	140923.0	0.0
+569	81	Other services (except public administration)	53	81	13	53013	Columbia County, Washington	12.4	79.0	3980.4	0.0
+570	81	Other services (except public administration)	53	81	15	53015	Cowlitz County, Washington	226.6	1217.8	28969.4	0.0
+571	81	Other services (except public administration)	53	81	17	53017	Douglas County, Washington	73.0	294.4	6373.6	0.0
+572	81	Other services (except public administration)	53	81	19	53019	Ferry County, Washington	10.2	105.41538461538462	2273.492307692308	0.6
+573	81	Other services (except public administration)	53	81	21	53021	Franklin County, Washington	135.4	709.2	18305.4	0.0
+574	81	Other services (except public administration)	53	81	23	53023	Garfield County, Washington	4.4	14.784615384615387	419.50769230769237	0.2
+575	81	Other services (except public administration)	53	81	25	53025	Grant County, Washington	186.6	678.0	13835.8	0.0
+576	81	Other services (except public administration)	53	81	27	53027	Grays Harbor County, Washington	155.6	851.8	16032.2	0.0
+577	81	Other services (except public administration)	53	81	29	53029	Island County, Washington	148.2	773.8	16592.0	0.0
+578	81	Other services (except public administration)	53	81	31	53031	Jefferson County, Washington	108.4	503.2	12870.6	0.0
+579	81	Other services (except public administration)	53	81	33	53033	King County, Washington	5800.4	46056.4	1750228.8	0.0
+580	81	Other services (except public administration)	53	81	35	53035	Kitsap County, Washington	542.6	3350.8	83507.6	0.0
+581	81	Other services (except public administration)	53	81	37	53037	Kittitas County, Washington	99.2	498.2	11769.4	0.0
+582	81	Other services (except public administration)	53	81	39	53039	Klickitat County, Washington	51.0	187.4	4432.6	0.0
+583	81	Other services (except public administration)	53	81	41	53041	Lewis County, Washington	167.0	765.4	16754.0	0.0
+584	81	Other services (except public administration)	53	81	43	53043	Lincoln County, Washington	27.4	46.4	1046.0	0.0
+585	81	Other services (except public administration)	53	81	45	53045	Mason County, Washington	104.2	468.6	10009.2	0.0
+586	81	Other services (except public administration)	53	81	47	53047	Okanogan County, Washington	97.0	293.0	7086.4	0.0
+587	81	Other services (except public administration)	53	81	49	53049	Pacific County, Washington	59.4	203.2	3738.2	0.0
+588	81	Other services (except public administration)	53	81	51	53051	Pend Oreille County, Washington	24.4	70.4	1441.0	0.0
+589	81	Other services (except public administration)	53	81	53	53053	Pierce County, Washington	1794.4	12583.2	388233.6	0.0
+590	81	Other services (except public administration)	53	81	55	53055	San Juan County, Washington	75.4	249.6	6850.8	0.0
+591	81	Other services (except public administration)	53	81	57	53057	Skagit County, Washington	340.0	1726.8	46780.2	0.0
+592	81	Other services (except public administration)	53	81	59	53059	Skamania County, Washington	16.2	31.4	613.8	0.0
+593	81	Other services (except public administration)	53	81	61	53061	Snohomish County, Washington	1655.0	10137.4	283925.4	0.0
+594	81	Other services (except public administration)	53	81	63	53063	Spokane County, Washington	1173.0	7706.4	201038.2	0.0
+595	81	Other services (except public administration)	53	81	65	53065	Stevens County, Washington	89.2	298.6	6825.2	0.0
+596	81	Other services (except public administration)	53	81	67	53067	Thurston County, Washington	629.0	4110.6	139511.2	0.0
+597	81	Other services (except public administration)	53	81	69	53069	Wahkiakum County, Washington	7.2	5.6	142.6	0.0
+598	81	Other services (except public administration)	53	81	71	53071	Walla Walla County, Washington	119.2	646.0	13974.2	0.0
+599	81	Other services (except public administration)	53	81	73	53073	Whatcom County, Washington	580.4	3539.4	103712.8	0.0
+600	81	Other services (except public administration)	53	81	75	53075	Whitman County, Washington	93.6	454.8	8961.4	0.0
+601	81	Other services (except public administration)	53	81	77	53077	Yakima County, Washington	444.4	2509.4	59597.4	0.0
+602	99	Industries not classified	53	99	1	53001	Adams County, Washington	1.3333333333333333	-0.45555555555555566	25.51851851851852	1.0
+603	99	Industries not classified	53	99	3	53003	Asotin County, Washington	2.0	2.376984126984127	53.38227513227513	0.6666666666666666
+604	99	Industries not classified	53	99	5	53005	Benton County, Washington	7.4	5.385714285714286	162.4142857142857	0.2
+605	99	Industries not classified	53	99	7	53007	Chelan County, Washington	9.2	4.6	202.6	0.0
+606	99	Industries not classified	53	99	9	53009	Clallam County, Washington	4.0	3.8928571428571432	278.8071428571428	0.4
+607	99	Industries not classified	53	99	11	53011	Clark County, Washington	31.0	27.6	622.2	0.0
+608	99	Industries not classified	53	99	13	53013	Columbia County, Washington	1.5	10.633333333333335	29.880555555555553	1.0
+609	99	Industries not classified	53	99	15	53015	Cowlitz County, Washington	6.2	4.4	173.4	0.0
+610	99	Industries not classified	53	99	17	53017	Douglas County, Washington	2.25	3.1000000000000005	56.9125	0.75
+611	99	Industries not classified	53	99	21	53021	Franklin County, Washington	3.0	0.375	43.5	0.25
+612	99	Industries not classified	53	99	25	53025	Grant County, Washington	4.0	0.5	120.25	0.25
+613	99	Industries not classified	53	99	27	53027	Grays Harbor County, Washington	4.2	1.5	116.4	0.2
+614	99	Industries not classified	53	99	29	53029	Island County, Washington	7.8	3.8	213.4	0.0
+615	99	Industries not classified	53	99	31	53031	Jefferson County, Washington	4.0	8.75	214.5	0.0
+616	99	Industries not classified	53	99	33	53033	King County, Washington	199.6	97.2	4571.4	0.0
+617	99	Industries not classified	53	99	35	53035	Kitsap County, Washington	14.6	7.985714285714286	344.6142857142857	0.2
+618	99	Industries not classified	53	99	37	53037	Kittitas County, Washington	4.6	2.4857142857142858	81.0142857142857	0.4
+619	99	Industries not classified	53	99	39	53039	Klickitat County, Washington	1.75	8.10654761904762	60.9906746031746	1.0
+620	99	Industries not classified	53	99	41	53041	Lewis County, Washington	5.0	4.678571428571429	86.02142857142857	0.2
+621	99	Industries not classified	53	99	43	53043	Lincoln County, Washington	1.6666666666666667	0.7444444444444445	27.01851851851852	0.6666666666666666
+622	99	Industries not classified	53	99	45	53045	Mason County, Washington	4.6	16.35857142857143	101.34142857142857	0.4
+623	99	Industries not classified	53	99	47	53047	Okanogan County, Washington	5.6	7.092857142857143	158.00714285714284	0.2
+624	99	Industries not classified	53	99	49	53049	Pacific County, Washington	4.4	3.8	92.0	0.0
+625	99	Industries not classified	53	99	51	53051	Pend Oreille County, Washington	1.75	4.9750000000000005	27.6625	0.75
+626	99	Industries not classified	53	99	53	53053	Pierce County, Washington	30.6	39.6	873.4	0.0
+627	99	Industries not classified	53	99	55	53055	San Juan County, Washington	3.0	13.048214285714284	131.0142857142857	0.75
+628	99	Industries not classified	53	99	57	53057	Skagit County, Washington	7.4	9.6	244.0	0.0
+629	99	Industries not classified	53	99	59	53059	Skamania County, Washington	1.3333333333333333	11.200000000000001	39.266666666666666	1.0
+630	99	Industries not classified	53	99	61	53061	Snohomish County, Washington	33.2	26.6	755.2	0.0
+631	99	Industries not classified	53	99	63	53063	Spokane County, Washington	23.4	26.0	694.4	0.0
+632	99	Industries not classified	53	99	65	53065	Stevens County, Washington	4.2	17.080000000000002	98.72	0.2
+633	99	Industries not classified	53	99	67	53067	Thurston County, Washington	17.8	14.4	578.4	0.0
+634	99	Industries not classified	53	99	69	53069	Wahkiakum County, Washington	2.0	13.888888888888888	37.803703703703704	1.0
+635	99	Industries not classified	53	99	71	53071	Walla Walla County, Washington	3.0	0.8928571428571427	69.40714285714286	0.4
+636	99	Industries not classified	53	99	73	53073	Whatcom County, Washington	13.4	10.171428571428573	396.42857142857144	0.2
+637	99	Industries not classified	53	99	75	53075	Whitman County, Washington	2.8	0.28571428571428575	54.81428571428571	0.4
+638	99	Industries not classified	53	99	77	53077	Yakima County, Washington	8.0	8.0	181.4	0.2

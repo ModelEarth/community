@@ -1,153 +1,137 @@
-	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estimate	estab	emp	payann
-0	11	Agriculture, forestry, fishing and hunting	9	11	1	09001	Fairfield County, Connecticut	0	17.333333333333332	107.66666666666667	7211.333333333333
-1	11	Agriculture, forestry, fishing and hunting	9	11	3	09003	Hartford County, Connecticut	0	8.666666666666666	12.0	626.0
-2	11	Agriculture, forestry, fishing and hunting	9	11	5	09005	Litchfield County, Connecticut	0	14.166666666666666	25.833333333333332	966.1666666666666
-3	11	Agriculture, forestry, fishing and hunting	9	11	7	09007	Middlesex County, Connecticut	0	3.5	3.5	77.5
-4	11	Agriculture, forestry, fishing and hunting	9	11	9	09009	New Haven County, Connecticut	0	11.666666666666666	39.0	928.3333333333334
-5	11	Agriculture, forestry, fishing and hunting	9	11	11	09011	New London County, Connecticut	0	11.333333333333334	40.0	1476.6666666666667
-6	11	Agriculture, forestry, fishing and hunting	9	11	11	09011	New London County, Connecticut	1	12.666666666666666	104.24818840579711	1488.5815217391303
-7	11	Agriculture, forestry, fishing and hunting	9	11	13	09013	Tolland County, Connecticut	0	8.333333333333334	26.0	550.0
-8	11	Agriculture, forestry, fishing and hunting	9	11	13	09013	Tolland County, Connecticut	1	7.666666666666667	62.01992753623188	901.1213768115941
-9	11	Agriculture, forestry, fishing and hunting	9	11	15	09015	Windham County, Connecticut	1	2.6666666666666665	18.793292456335937	434.7938498699368
-10	21	Mining, quarrying, and oil and gas extraction	9	21	1	09001	Fairfield County, Connecticut	0	12.333333333333334	54.666666666666664	3820.6666666666665
-11	21	Mining, quarrying, and oil and gas extraction	9	21	1	09001	Fairfield County, Connecticut	1	14.0	536.4651928068224	57126.48734705229
-12	21	Mining, quarrying, and oil and gas extraction	9	21	3	09003	Hartford County, Connecticut	0	10.0	121.66666666666667	15566.666666666666
-13	21	Mining, quarrying, and oil and gas extraction	9	21	5	09005	Litchfield County, Connecticut	0	14.666666666666666	459.3333333333333	21581.666666666668
-14	21	Mining, quarrying, and oil and gas extraction	9	21	5	09005	Litchfield County, Connecticut	1	15.0	579.1302373007046	61964.73442714128
-15	21	Mining, quarrying, and oil and gas extraction	9	21	7	09007	Middlesex County, Connecticut	0	3.5	9.0	969.25
-16	21	Mining, quarrying, and oil and gas extraction	9	21	7	09007	Middlesex County, Connecticut	1	2.0	19.253424657534246	1731.8287671232877
-17	21	Mining, quarrying, and oil and gas extraction	9	21	9	09009	New Haven County, Connecticut	0	12.0	118.83333333333333	10493.333333333334
-18	21	Mining, quarrying, and oil and gas extraction	9	21	11	09011	New London County, Connecticut	0	5.166666666666667	8.333333333333334	909.5
-19	21	Mining, quarrying, and oil and gas extraction	9	21	13	09013	Tolland County, Connecticut	0	4.0	41.75	2187.25
-20	21	Mining, quarrying, and oil and gas extraction	9	21	13	09013	Tolland County, Connecticut	1	2.5	71.60685483870968	6612.167338709678
-21	21	Mining, quarrying, and oil and gas extraction	9	21	15	09015	Windham County, Connecticut	0	10.333333333333334	44.0	5161.5
-22	22	Utilities	9	22	1	09001	Fairfield County, Connecticut	0	35.666666666666664	840.0	159178.66666666666
-23	22	Utilities	9	22	3	09003	Hartford County, Connecticut	0	39.0	3063.0	340924.0
-24	22	Utilities	9	22	3	09003	Hartford County, Connecticut	1	37.0	643.1410362361147	43271.13197004039
-25	22	Utilities	9	22	5	09005	Litchfield County, Connecticut	0	8.6	147.8	17260.2
-26	22	Utilities	9	22	5	09005	Litchfield County, Connecticut	1	8.0	-112.68817204301077	-13431.483870967742
-27	22	Utilities	9	22	7	09007	Middlesex County, Connecticut	0	9.0	321.8333333333333	36212.166666666664
-28	22	Utilities	9	22	9	09009	New Haven County, Connecticut	0	24.333333333333332	1611.6666666666667	170916.33333333334
-29	22	Utilities	9	22	9	09009	New Haven County, Connecticut	1	26.333333333333332	-349.7965374687703	-77755.74734978675
-30	22	Utilities	9	22	11	09011	New London County, Connecticut	0	11.333333333333334	1267.3333333333333	144063.0
-31	22	Utilities	9	22	11	09011	New London County, Connecticut	1	11.0	-144.65398268159254	-32680.110898311872
-32	22	Utilities	9	22	13	09013	Tolland County, Connecticut	1	3.0	58.52940233914084	4809.871942289149
-33	22	Utilities	9	22	15	09015	Windham County, Connecticut	0	9.0	86.4	18912.4
-34	22	Utilities	9	22	15	09015	Windham County, Connecticut	1	9.0	-126.77419354838709	-15110.419354838708
-35	23	Construction	9	23	1	09001	Fairfield County, Connecticut	0	2241.5	12241.166666666666	831325.0
-36	23	Construction	9	23	3	09003	Hartford County, Connecticut	0	1805.0	17552.666666666668	1241295.1666666667
-37	23	Construction	9	23	5	09005	Litchfield County, Connecticut	0	655.6666666666666	3357.8333333333335	217930.33333333334
-38	23	Construction	9	23	7	09007	Middlesex County, Connecticut	0	434.3333333333333	2801.8333333333335	170472.0
-39	23	Construction	9	23	9	09009	New Haven County, Connecticut	0	1700.0	11881.333333333334	761047.8333333334
-40	23	Construction	9	23	11	09011	New London County, Connecticut	0	521.5	3273.3333333333335	194757.0
-41	23	Construction	9	23	13	09013	Tolland County, Connecticut	0	333.1666666666667	1750.5	118725.83333333333
-42	23	Construction	9	23	15	09015	Windham County, Connecticut	0	220.66666666666666	897.6666666666666	49483.666666666664
-43	42	Wholesale trade	9	42	1	09001	Fairfield County, Connecticut	0	1342.0	25004.833333333332	2492530.8333333335
-44	42	Wholesale trade	9	42	3	09003	Hartford County, Connecticut	0	1130.8333333333333	22222.0	1474815.3333333333
-45	42	Wholesale trade	9	42	5	09005	Litchfield County, Connecticut	0	178.16666666666666	1051.5	58571.5
-46	42	Wholesale trade	9	42	7	09007	Middlesex County, Connecticut	0	200.5	2774.8333333333335	182860.5
-47	42	Wholesale trade	9	42	9	09009	New Haven County, Connecticut	0	1028.8333333333333	15682.0	1028659.6666666666
-48	42	Wholesale trade	9	42	11	09011	New London County, Connecticut	0	173.83333333333334	2590.0	163736.16666666666
-49	42	Wholesale trade	9	42	13	09013	Tolland County, Connecticut	0	67.5	465.5	30643.166666666668
-50	42	Wholesale trade	9	42	15	09015	Windham County, Connecticut	0	62.166666666666664	1153.1666666666667	52580.5
-51	51	Information	9	51	1	09001	Fairfield County, Connecticut	0	592.3333333333334	14090.833333333334	1301979.0
-52	51	Information	9	51	3	09003	Hartford County, Connecticut	0	409.5	12752.0	1187806.8333333333
-53	51	Information	9	51	5	09005	Litchfield County, Connecticut	0	90.0	806.6666666666666	51117.166666666664
-54	51	Information	9	51	7	09007	Middlesex County, Connecticut	0	74.66666666666667	886.1666666666666	49456.833333333336
-55	51	Information	9	51	9	09009	New Haven County, Connecticut	0	344.0	7259.333333333333	519306.0
-56	51	Information	9	51	11	09011	New London County, Connecticut	0	98.33333333333333	1677.1666666666667	80791.66666666667
-57	51	Information	9	51	13	09013	Tolland County, Connecticut	0	32.666666666666664	513.1666666666666	41270.166666666664
-58	51	Information	9	51	15	09015	Windham County, Connecticut	0	28.333333333333332	279.0	14181.333333333334
-59	52	Finance and insurance	9	52	1	09001	Fairfield County, Connecticut	0	2375.0	42637.166666666664	9652294.333333334
-60	52	Finance and insurance	9	52	3	09003	Hartford County, Connecticut	0	1683.5	53363.5	5964072.5
-61	52	Finance and insurance	9	52	5	09005	Litchfield County, Connecticut	0	216.66666666666666	1405.5	80343.16666666667
-62	52	Finance and insurance	9	52	7	09007	Middlesex County, Connecticut	0	195.66666666666666	1833.3333333333333	142417.0
-63	52	Finance and insurance	9	52	9	09009	New Haven County, Connecticut	0	1000.8333333333334	12080.333333333334	1024981.6666666666
-64	52	Finance and insurance	9	52	11	09011	New London County, Connecticut	0	270.6666666666667	2087.3333333333335	136269.33333333334
-65	52	Finance and insurance	9	52	13	09013	Tolland County, Connecticut	0	116.33333333333333	538.3333333333334	28486.833333333332
-66	52	Finance and insurance	9	52	15	09015	Windham County, Connecticut	0	83.83333333333333	688.5	37203.333333333336
-67	53	Real estate and rental and leasing	9	53	1	09001	Fairfield County, Connecticut	0	1071.0	6862.5	496135.1666666667
-68	53	Real estate and rental and leasing	9	53	3	09003	Hartford County, Connecticut	0	850.6666666666666	5014.5	255603.16666666666
-69	53	Real estate and rental and leasing	9	53	5	09005	Litchfield County, Connecticut	0	132.5	386.5	16289.666666666666
-70	53	Real estate and rental and leasing	9	53	7	09007	Middlesex County, Connecticut	0	127.16666666666667	1080.0	54160.5
-71	53	Real estate and rental and leasing	9	53	9	09009	New Haven County, Connecticut	0	673.3333333333334	4839.0	192822.0
-72	53	Real estate and rental and leasing	9	53	11	09011	New London County, Connecticut	0	199.5	736.3333333333334	30226.166666666668
-73	53	Real estate and rental and leasing	9	53	13	09013	Tolland County, Connecticut	0	88.83333333333333	392.3333333333333	14965.5
-74	53	Real estate and rental and leasing	9	53	15	09015	Windham County, Connecticut	0	46.166666666666664	136.0	4023.6666666666665
-75	54	Professional, scientific, and technical services	9	54	1	09001	Fairfield County, Connecticut	0	3439.5	37041.0	3962751.3333333335
-76	54	Professional, scientific, and technical services	9	54	3	09003	Hartford County, Connecticut	0	2240.3333333333335	31141.0	2224820.0
-77	54	Professional, scientific, and technical services	9	54	5	09005	Litchfield County, Connecticut	0	368.3333333333333	1691.1666666666667	87894.66666666667
-78	54	Professional, scientific, and technical services	9	54	7	09007	Middlesex County, Connecticut	0	371.6666666666667	2744.3333333333335	194436.0
-79	54	Professional, scientific, and technical services	9	54	9	09009	New Haven County, Connecticut	0	1894.6666666666667	15178.833333333334	1291962.8333333333
-80	54	Professional, scientific, and technical services	9	54	11	09011	New London County, Connecticut	0	536.6666666666666	7977.166666666667	964705.1666666666
-81	54	Professional, scientific, and technical services	9	54	13	09013	Tolland County, Connecticut	0	191.83333333333334	1186.3333333333333	74208.5
-82	54	Professional, scientific, and technical services	9	54	15	09015	Windham County, Connecticut	0	127.33333333333333	553.6666666666666	20895.0
-83	55	Management of companies and enterprises	9	55	1	09001	Fairfield County, Connecticut	0	280.6666666666667	14137.333333333334	2483694.3333333335
-84	55	Management of companies and enterprises	9	55	3	09003	Hartford County, Connecticut	0	249.16666666666666	9399.666666666666	1065525.1666666667
-85	55	Management of companies and enterprises	9	55	5	09005	Litchfield County, Connecticut	0	16.166666666666668	369.8333333333333	22822.166666666668
-86	55	Management of companies and enterprises	9	55	7	09007	Middlesex County, Connecticut	0	10.5	151.16666666666666	10252.833333333334
-87	55	Management of companies and enterprises	9	55	9	09009	New Haven County, Connecticut	0	114.5	9325.5	950757.3333333334
-88	55	Management of companies and enterprises	9	55	11	09011	New London County, Connecticut	0	19.666666666666668	490.0	28350.666666666668
-89	55	Management of companies and enterprises	9	55	13	09013	Tolland County, Connecticut	0	8.0	38.0	3314.6666666666665
-90	55	Management of companies and enterprises	9	55	13	09013	Tolland County, Connecticut	1	6.666666666666667	232.0	12678.0
-91	55	Management of companies and enterprises	9	55	15	09015	Windham County, Connecticut	0	9.0	441.1666666666667	43325.833333333336
-92	56	Administrative and support and waste management and remediation services	9	56	1	09001	Fairfield County, Connecticut	0	1883.0	27723.833333333332	1555283.5
-93	56	Administrative and support and waste management and remediation services	9	56	3	09003	Hartford County, Connecticut	0	1233.3333333333333	23390.333333333332	916687.0
-94	56	Administrative and support and waste management and remediation services	9	56	5	09005	Litchfield County, Connecticut	0	338.6666666666667	1748.0	60035.0
-95	56	Administrative and support and waste management and remediation services	9	56	7	09007	Middlesex County, Connecticut	0	255.5	2568.1666666666665	80167.0
-96	56	Administrative and support and waste management and remediation services	9	56	9	09009	New Haven County, Connecticut	0	992.3333333333334	18571.0	566275.6666666666
-97	56	Administrative and support and waste management and remediation services	9	56	11	09011	New London County, Connecticut	0	305.1666666666667	2423.5	78406.83333333333
-98	56	Administrative and support and waste management and remediation services	9	56	13	09013	Tolland County, Connecticut	0	141.5	3571.5	76273.33333333333
-99	56	Administrative and support and waste management and remediation services	9	56	15	09015	Windham County, Connecticut	0	102.16666666666667	870.5	26181.0
-100	61	Educational services	9	61	1	09001	Fairfield County, Connecticut	0	495.6666666666667	13807.5	559355.8333333334
-101	61	Educational services	9	61	3	09003	Hartford County, Connecticut	0	297.3333333333333	13188.5	450632.3333333333
-102	61	Educational services	9	61	5	09005	Litchfield County, Connecticut	0	74.33333333333333	3079.0	126534.0
-103	61	Educational services	9	61	7	09007	Middlesex County, Connecticut	0	65.83333333333333	3683.6666666666665	106926.66666666667
-104	61	Educational services	9	61	9	09009	New Haven County, Connecticut	0	318.1666666666667	34769.5	1917831.6666666667
-105	61	Educational services	9	61	11	09011	New London County, Connecticut	0	87.0	2669.5	106012.83333333333
-106	61	Educational services	9	61	13	09013	Tolland County, Connecticut	0	38.333333333333336	313.0	9480.5
-107	61	Educational services	9	61	15	09015	Windham County, Connecticut	0	27.333333333333332	908.1666666666666	37123.0
-108	62	Health care and social assistance	9	62	1	09001	Fairfield County, Connecticut	0	2933.6666666666665	65640.16666666667	3420169.5
-109	62	Health care and social assistance	9	62	3	09003	Hartford County, Connecticut	0	2889.1666666666665	83238.16666666667	3929701.6666666665
-110	62	Health care and social assistance	9	62	5	09005	Litchfield County, Connecticut	0	512.3333333333334	9566.666666666666	379477.5
-111	62	Health care and social assistance	9	62	7	09007	Middlesex County, Connecticut	0	492.0	14244.5	716804.0
-112	62	Health care and social assistance	9	62	9	09009	New Haven County, Connecticut	0	2496.6666666666665	73955.0	3408740.6666666665
-113	62	Health care and social assistance	9	62	11	09011	New London County, Connecticut	0	762.3333333333334	17192.166666666668	758634.6666666666
-114	62	Health care and social assistance	9	62	13	09013	Tolland County, Connecticut	0	312.5	6135.0	226718.5
-115	62	Health care and social assistance	9	62	15	09015	Windham County, Connecticut	0	266.5	7133.166666666667	272714.8333333333
-116	71	Arts, entertainment, and recreation	9	71	1	09001	Fairfield County, Connecticut	0	594.6666666666666	10943.833333333334	358531.6666666667
-117	71	Arts, entertainment, and recreation	9	71	3	09003	Hartford County, Connecticut	0	341.3333333333333	6630.666666666667	133843.5
-118	71	Arts, entertainment, and recreation	9	71	5	09005	Litchfield County, Connecticut	0	125.0	1665.8333333333333	35549.0
-119	71	Arts, entertainment, and recreation	9	71	7	09007	Middlesex County, Connecticut	0	102.83333333333333	1387.8333333333333	39737.833333333336
-120	71	Arts, entertainment, and recreation	9	71	9	09009	New Haven County, Connecticut	0	292.1666666666667	4201.333333333333	89752.33333333333
-121	71	Arts, entertainment, and recreation	9	71	11	09011	New London County, Connecticut	0	132.5	1790.1666666666667	54343.333333333336
-122	71	Arts, entertainment, and recreation	9	71	13	09013	Tolland County, Connecticut	0	42.5	462.1666666666667	10409.0
-123	71	Arts, entertainment, and recreation	9	71	15	09015	Windham County, Connecticut	0	36.333333333333336	173.83333333333334	3554.1666666666665
-124	72	Accommodation and food services	9	72	1	09001	Fairfield County, Connecticut	0	2361.6666666666665	33462.0	741559.1666666666
-125	72	Accommodation and food services	9	72	3	09003	Hartford County, Connecticut	0	2082.6666666666665	34727.333333333336	641085.1666666666
-126	72	Accommodation and food services	9	72	5	09005	Litchfield County, Connecticut	0	423.8333333333333	4720.166666666667	88475.16666666667
-127	72	Accommodation and food services	9	72	7	09007	Middlesex County, Connecticut	0	419.6666666666667	5557.5	115317.0
-128	72	Accommodation and food services	9	72	9	09009	New Haven County, Connecticut	0	2008.1666666666667	29523.333333333332	513430.5
-129	72	Accommodation and food services	9	72	11	09011	New London County, Connecticut	0	704.3333333333334	25667.0	690387.1666666666
-130	72	Accommodation and food services	9	72	13	09013	Tolland County, Connecticut	0	225.33333333333334	3820.5	65077.666666666664
-131	72	Accommodation and food services	9	72	15	09015	Windham County, Connecticut	0	237.33333333333334	3095.6666666666665	52821.833333333336
-132	81	Other services (except public administration)	9	81	1	09001	Fairfield County, Connecticut	0	2601.6666666666665	17994.5	605551.6666666666
-133	81	Other services (except public administration)	9	81	3	09003	Hartford County, Connecticut	0	2501.1666666666665	17525.833333333332	612848.3333333334
-134	81	Other services (except public administration)	9	81	5	09005	Litchfield County, Connecticut	0	498.8333333333333	2363.0	64388.5
-135	81	Other services (except public administration)	9	81	7	09007	Middlesex County, Connecticut	0	449.0	2206.0	65160.166666666664
-136	81	Other services (except public administration)	9	81	9	09009	New Haven County, Connecticut	0	2205.0	13515.166666666666	406311.1666666667
-137	81	Other services (except public administration)	9	81	11	09011	New London County, Connecticut	0	627.0	3622.0	87976.16666666667
-138	81	Other services (except public administration)	9	81	13	09013	Tolland County, Connecticut	0	268.0	1538.8333333333333	47970.5
-139	81	Other services (except public administration)	9	81	15	09015	Windham County, Connecticut	0	243.5	1023.5	24124.833333333332
-140	99	Industries not classified	9	99	1	09001	Fairfield County, Connecticut	0	49.833333333333336	37.166666666666664	2042.1666666666667
-141	99	Industries not classified	9	99	3	09003	Hartford County, Connecticut	0	34.5	29.5	933.5
-142	99	Industries not classified	9	99	5	09005	Litchfield County, Connecticut	0	10.833333333333334	6.333333333333333	208.83333333333334
-143	99	Industries not classified	9	99	7	09007	Middlesex County, Connecticut	0	5.8	3.8	145.4
-144	99	Industries not classified	9	99	7	09007	Middlesex County, Connecticut	1	2.0	-3.333333333333333	80.66666666666666
-145	99	Industries not classified	9	99	9	09009	New Haven County, Connecticut	0	24.333333333333332	28.166666666666668	713.1666666666666
-146	99	Industries not classified	9	99	11	09011	New London County, Connecticut	0	11.0	20.8	581.2
-147	99	Industries not classified	9	99	11	09011	New London County, Connecticut	1	2.0	28.666666666666664	4.666666666666666
-148	99	Industries not classified	9	99	13	09013	Tolland County, Connecticut	0	4.4	2.8	61.2
-149	99	Industries not classified	9	99	13	09013	Tolland County, Connecticut	1	1.0	14.333333333333332	2.333333333333333
-150	99	Industries not classified	9	99	15	09015	Windham County, Connecticut	0	5.5	0.5	236.0
-151	99	Industries not classified	9	99	15	09015	Windham County, Connecticut	1	2.5	-0.4999999999999999	67.03846153846153
+	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	COUNTY	id	GEO_TTL	estab	emp	payann	estimate
+0	11	Agriculture, forestry, fishing and hunting	9	11	1	09001	Fairfield County, Connecticut	17.692307692307693	139.07692307692307	8765.153846153846	0.5384615384615384
+1	11	Agriculture, forestry, fishing and hunting	9	11	3	09003	Hartford County, Connecticut	8.846153846153847	21.153846153846153	671.7692307692307	0.5384615384615384
+2	11	Agriculture, forestry, fishing and hunting	9	11	5	09005	Litchfield County, Connecticut	14.076923076923077	32.92307692307692	973.0769230769231	0.5384615384615384
+3	11	Agriculture, forestry, fishing and hunting	9	11	7	09007	Middlesex County, Connecticut	3.769230769230769	4.3076923076923075	69.6923076923077	0.5384615384615384
+4	11	Agriculture, forestry, fishing and hunting	9	11	9	09009	New Haven County, Connecticut	11.307692307692308	30.384615384615383	756.3846153846154	0.5384615384615384
+5	11	Agriculture, forestry, fishing and hunting	9	11	11	09011	New London County, Connecticut	12.0	55.36496655518394	1487.6726588628762	0.7692307692307693
+6	11	Agriculture, forestry, fishing and hunting	9	11	13	09013	Tolland County, Connecticut	8.0	33.77382943143812	632.6433946488294	0.7692307692307693
+7	11	Agriculture, forestry, fishing and hunting	9	11	15	09015	Windham County, Connecticut	2.3076923076923075	13.285267129748737	406.2973587170912	1.0
+8	21	Mining, quarrying, and oil and gas extraction	9	21	1	09001	Fairfield County, Connecticut	12.0	162.26119834003595	15633.26631085822	0.7692307692307693
+9	21	Mining, quarrying, and oil and gas extraction	9	21	3	09003	Hartford County, Connecticut	10.0	126.6923076923077	16179.615384615385	0.5384615384615384
+10	21	Mining, quarrying, and oil and gas extraction	9	21	5	09005	Litchfield County, Connecticut	14.923076923076923	486.7992855309318	30553.169483186448	0.7692307692307693
+11	21	Mining, quarrying, and oil and gas extraction	9	21	7	09007	Middlesex County, Connecticut	2.4615384615384617	19.46575342465754	1485.7892518440462	0.6923076923076923
+12	21	Mining, quarrying, and oil and gas extraction	9	21	9	09009	New Haven County, Connecticut	11.461538461538462	121.61538461538461	10503.923076923076	0.5384615384615384
+13	21	Mining, quarrying, and oil and gas extraction	9	21	11	09011	New London County, Connecticut	5.076923076923077	9.76923076923077	967.9230769230769	0.5384615384615384
+14	21	Mining, quarrying, and oil and gas extraction	9	21	13	09013	Tolland County, Connecticut	3.769230769230769	50.78566997518611	2922.7949751861042	0.6923076923076923
+15	21	Mining, quarrying, and oil and gas extraction	9	21	15	09015	Windham County, Connecticut	10.153846153846153	71.46153846153847	5781.0	0.5384615384615384
+16	22	Utilities	9	22	1	09001	Fairfield County, Connecticut	33.15384615384615	927.7692307692307	147158.76923076922	0.5384615384615384
+17	22	Utilities	9	22	3	09003	Hartford County, Connecticut	36.61538461538461	1567.0582932891937	167898.14387511674	0.9230769230769231
+18	22	Utilities	9	22	5	09005	Litchfield County, Connecticut	8.23076923076923	130.02398676592225	16306.193548387095	0.6153846153846154
+19	22	Utilities	9	22	7	09007	Middlesex County, Connecticut	9.0	333.7692307692308	37989.53846153846	0.5384615384615384
+20	22	Utilities	9	22	9	09009	New Haven County, Connecticut	24.615384615384617	1144.1238759687453	108662.05830389538	0.7692307692307693
+21	22	Utilities	9	22	11	09011	New London County, Connecticut	11.615384615384615	954.7721578427094	101942.35902346649	0.7692307692307693
+22	22	Utilities	9	22	13	09013	Tolland County, Connecticut	3.0	117.35365128203263	12639.14737417394	1.0
+23	22	Utilities	9	22	15	09015	Windham County, Connecticut	9.0	104.24813895781638	17078.506203473946	0.6153846153846154
+24	23	Construction	9	23	1	09001	Fairfield County, Connecticut	2254.6923076923076	12801.615384615385	895101.4615384615	0.5384615384615384
+25	23	Construction	9	23	3	09003	Hartford County, Connecticut	1803.923076923077	18342.23076923077	1312460.3076923077	0.5384615384615384
+26	23	Construction	9	23	5	09005	Litchfield County, Connecticut	654.7692307692307	3488.230769230769	233658.61538461538	0.5384615384615384
+27	23	Construction	9	23	7	09007	Middlesex County, Connecticut	432.0	2887.0	178555.38461538462	0.5384615384615384
+28	23	Construction	9	23	9	09009	New Haven County, Connecticut	1712.923076923077	12289.307692307691	799741.2307692308	0.5384615384615384
+29	23	Construction	9	23	11	09011	New London County, Connecticut	526.0769230769231	3505.769230769231	213180.46153846153	0.5384615384615384
+30	23	Construction	9	23	13	09013	Tolland County, Connecticut	330.38461538461536	1841.2307692307693	130729.84615384616	0.5384615384615384
+31	23	Construction	9	23	15	09015	Windham County, Connecticut	222.46153846153845	947.3846153846154	53479.230769230766	0.5384615384615384
+32	42	Wholesale trade	9	42	1	09001	Fairfield County, Connecticut	1328.5384615384614	24796.0	2590442.076923077	0.5384615384615384
+33	42	Wholesale trade	9	42	3	09003	Hartford County, Connecticut	1116.923076923077	22406.69230769231	1535519.1538461538	0.5384615384615384
+34	42	Wholesale trade	9	42	5	09005	Litchfield County, Connecticut	172.15384615384616	1065.2307692307693	58743.53846153846	0.5384615384615384
+35	42	Wholesale trade	9	42	7	09007	Middlesex County, Connecticut	203.46153846153845	2911.153846153846	196748.76923076922	0.5384615384615384
+36	42	Wholesale trade	9	42	9	09009	New Haven County, Connecticut	1018.6923076923077	15774.615384615385	1056960.3076923077	0.5384615384615384
+37	42	Wholesale trade	9	42	11	09011	New London County, Connecticut	172.30769230769232	2581.923076923077	165920.61538461538	0.5384615384615384
+38	42	Wholesale trade	9	42	13	09013	Tolland County, Connecticut	67.23076923076923	525.0	30311.923076923078	0.5384615384615384
+39	42	Wholesale trade	9	42	15	09015	Windham County, Connecticut	59.92307692307692	1224.6923076923076	55818.0	0.5384615384615384
+40	51	Information	9	51	1	09001	Fairfield County, Connecticut	598.0769230769231	14037.076923076924	1354759.5384615385	0.5384615384615384
+41	51	Information	9	51	3	09003	Hartford County, Connecticut	409.2307692307692	12628.692307692309	1240900.3076923077	0.5384615384615384
+42	51	Information	9	51	5	09005	Litchfield County, Connecticut	93.76923076923077	779.3846153846154	50680.92307692308	0.5384615384615384
+43	51	Information	9	51	7	09007	Middlesex County, Connecticut	73.23076923076923	865.6153846153846	47442.53846153846	0.5384615384615384
+44	51	Information	9	51	9	09009	New Haven County, Connecticut	351.0	6919.923076923077	519549.3846153846	0.5384615384615384
+45	51	Information	9	51	11	09011	New London County, Connecticut	98.15384615384616	1672.2307692307693	80287.84615384616	0.5384615384615384
+46	51	Information	9	51	13	09013	Tolland County, Connecticut	33.92307692307692	513.0769230769231	43943.53846153846	0.5384615384615384
+47	51	Information	9	51	15	09015	Windham County, Connecticut	30.307692307692307	283.84615384615387	15317.307692307691	0.5384615384615384
+48	52	Finance and insurance	9	52	1	09001	Fairfield County, Connecticut	2352.3846153846152	44865.230769230766	10200694.615384616	0.5384615384615384
+49	52	Finance and insurance	9	52	3	09003	Hartford County, Connecticut	1678.923076923077	53594.230769230766	6087847.846153846	0.5384615384615384
+50	52	Finance and insurance	9	52	5	09005	Litchfield County, Connecticut	211.46153846153845	1376.6923076923076	79464.30769230769	0.5384615384615384
+51	52	Finance and insurance	9	52	7	09007	Middlesex County, Connecticut	198.0	1833.1538461538462	144692.53846153847	0.5384615384615384
+52	52	Finance and insurance	9	52	9	09009	New Haven County, Connecticut	994.4615384615385	11894.384615384615	1043714.3846153846	0.5384615384615384
+53	52	Finance and insurance	9	52	11	09011	New London County, Connecticut	270.3076923076923	2080.6923076923076	139255.46153846153	0.5384615384615384
+54	52	Finance and insurance	9	52	13	09013	Tolland County, Connecticut	115.07692307692308	609.2307692307693	27945.23076923077	0.5384615384615384
+55	52	Finance and insurance	9	52	15	09015	Windham County, Connecticut	82.3076923076923	684.4615384615385	38821.769230769234	0.5384615384615384
+56	53	Real estate and rental and leasing	9	53	1	09001	Fairfield County, Connecticut	1085.5384615384614	7100.7692307692305	515773.3076923077	0.5384615384615384
+57	53	Real estate and rental and leasing	9	53	3	09003	Hartford County, Connecticut	848.6923076923077	5007.7692307692305	260745.92307692306	0.5384615384615384
+58	53	Real estate and rental and leasing	9	53	5	09005	Litchfield County, Connecticut	133.84615384615384	392.6923076923077	17196.076923076922	0.5384615384615384
+59	53	Real estate and rental and leasing	9	53	7	09007	Middlesex County, Connecticut	129.23076923076923	1103.1538461538462	54016.46153846154	0.5384615384615384
+60	53	Real estate and rental and leasing	9	53	9	09009	New Haven County, Connecticut	682.8461538461538	4973.076923076923	206739.61538461538	0.5384615384615384
+61	53	Real estate and rental and leasing	9	53	11	09011	New London County, Connecticut	198.69230769230768	729.6923076923077	29996.69230769231	0.5384615384615384
+62	53	Real estate and rental and leasing	9	53	13	09013	Tolland County, Connecticut	87.84615384615384	413.6923076923077	15736.846153846154	0.5384615384615384
+63	53	Real estate and rental and leasing	9	53	15	09015	Windham County, Connecticut	46.61538461538461	138.15384615384616	4219.307692307692	0.5384615384615384
+64	54	Professional, scientific, and technical services	9	54	1	09001	Fairfield County, Connecticut	3426.3076923076924	38225.07692307692	4126421.923076923	0.5384615384615384
+65	54	Professional, scientific, and technical services	9	54	3	09003	Hartford County, Connecticut	2241.769230769231	30492.153846153848	2306245.6153846155	0.5384615384615384
+66	54	Professional, scientific, and technical services	9	54	5	09005	Litchfield County, Connecticut	367.61538461538464	1689.4615384615386	86934.23076923077	0.5384615384615384
+67	54	Professional, scientific, and technical services	9	54	7	09007	Middlesex County, Connecticut	367.53846153846155	2738.230769230769	199111.46153846153	0.5384615384615384
+68	54	Professional, scientific, and technical services	9	54	9	09009	New Haven County, Connecticut	1872.2307692307693	15247.307692307691	1301291.2307692308	0.5384615384615384
+69	54	Professional, scientific, and technical services	9	54	11	09011	New London County, Connecticut	535.7692307692307	8105.7692307692305	978145.6153846154	0.5384615384615384
+70	54	Professional, scientific, and technical services	9	54	13	09013	Tolland County, Connecticut	195.69230769230768	1214.1538461538462	77746.46153846153	0.5384615384615384
+71	54	Professional, scientific, and technical services	9	54	15	09015	Windham County, Connecticut	127.15384615384616	558.1538461538462	21343.0	0.5384615384615384
+72	55	Management of companies and enterprises	9	55	1	09001	Fairfield County, Connecticut	277.0769230769231	14410.692307692309	2534903.4615384615	0.5384615384615384
+73	55	Management of companies and enterprises	9	55	3	09003	Hartford County, Connecticut	250.69230769230768	9380.461538461539	1015350.6923076923	0.5384615384615384
+74	55	Management of companies and enterprises	9	55	5	09005	Litchfield County, Connecticut	17.153846153846153	431.3076923076923	22517.30769230769	0.5384615384615384
+75	55	Management of companies and enterprises	9	55	7	09007	Middlesex County, Connecticut	10.76923076923077	161.84615384615384	12673.846153846154	0.5384615384615384
+76	55	Management of companies and enterprises	9	55	9	09009	New Haven County, Connecticut	115.84615384615384	8899.307692307691	914905.3076923077	0.5384615384615384
+77	55	Management of companies and enterprises	9	55	11	09011	New London County, Connecticut	20.384615384615383	469.53846153846155	28993.76923076923	0.5384615384615384
+78	55	Management of companies and enterprises	9	55	13	09013	Tolland County, Connecticut	7.6923076923076925	82.76923076923077	5554.2307692307695	0.7692307692307693
+79	55	Management of companies and enterprises	9	55	15	09015	Windham County, Connecticut	9.0	410.9230769230769	39909.38461538462	0.5384615384615384
+80	56	Administrative and support and waste management and remediation services	9	56	1	09001	Fairfield County, Connecticut	1871.1538461538462	27149.923076923078	1555998.3076923077	0.5384615384615384
+81	56	Administrative and support and waste management and remediation services	9	56	3	09003	Hartford County, Connecticut	1229.3846153846155	23635.153846153848	940354.0	0.5384615384615384
+82	56	Administrative and support and waste management and remediation services	9	56	5	09005	Litchfield County, Connecticut	336.6923076923077	1750.1538461538462	60874.46153846154	0.5384615384615384
+83	56	Administrative and support and waste management and remediation services	9	56	7	09007	Middlesex County, Connecticut	255.23076923076923	2561.076923076923	83834.46153846153	0.5384615384615384
+84	56	Administrative and support and waste management and remediation services	9	56	9	09009	New Haven County, Connecticut	989.4615384615385	17948.53846153846	561954.1538461539	0.5384615384615384
+85	56	Administrative and support and waste management and remediation services	9	56	11	09011	New London County, Connecticut	309.9230769230769	2224.0	72953.38461538461	0.5384615384615384
+86	56	Administrative and support and waste management and remediation services	9	56	13	09013	Tolland County, Connecticut	143.92307692307693	2060.846153846154	50435.07692307692	0.5384615384615384
+87	56	Administrative and support and waste management and remediation services	9	56	15	09015	Windham County, Connecticut	101.53846153846153	946.1538461538462	27917.53846153846	0.5384615384615384
+88	61	Educational services	9	61	1	09001	Fairfield County, Connecticut	503.38461538461536	14070.538461538461	578508.4615384615	0.5384615384615384
+89	61	Educational services	9	61	3	09003	Hartford County, Connecticut	301.46153846153845	13159.692307692309	454704.0	0.5384615384615384
+90	61	Educational services	9	61	5	09005	Litchfield County, Connecticut	74.15384615384616	3153.3076923076924	131497.0	0.5384615384615384
+91	61	Educational services	9	61	7	09007	Middlesex County, Connecticut	64.84615384615384	3662.846153846154	111139.23076923077	0.5384615384615384
+92	61	Educational services	9	61	9	09009	New Haven County, Connecticut	322.9230769230769	36383.0	1988912.5384615385	0.5384615384615384
+93	61	Educational services	9	61	11	09011	New London County, Connecticut	86.46153846153847	2864.153846153846	111280.15384615384	0.5384615384615384
+94	61	Educational services	9	61	13	09013	Tolland County, Connecticut	38.69230769230769	305.46153846153845	9648.23076923077	0.5384615384615384
+95	61	Educational services	9	61	15	09015	Windham County, Connecticut	28.76923076923077	929.6153846153846	37902.692307692305	0.5384615384615384
+96	62	Health care and social assistance	9	62	1	09001	Fairfield County, Connecticut	2971.5384615384614	66890.92307692308	3522881.846153846	0.5384615384615384
+97	62	Health care and social assistance	9	62	3	09003	Hartford County, Connecticut	2942.3846153846152	84731.23076923077	4016989.6923076925	0.5384615384615384
+98	62	Health care and social assistance	9	62	5	09005	Litchfield County, Connecticut	508.9230769230769	9493.615384615385	378145.07692307694	0.5384615384615384
+99	62	Health care and social assistance	9	62	7	09007	Middlesex County, Connecticut	504.38461538461536	14542.0	745047.3846153846	0.5384615384615384
+100	62	Health care and social assistance	9	62	9	09009	New Haven County, Connecticut	2543.6923076923076	74843.46153846153	3485621.846153846	0.5384615384615384
+101	62	Health care and social assistance	9	62	11	09011	New London County, Connecticut	781.0	17244.846153846152	764875.0769230769	0.5384615384615384
+102	62	Health care and social assistance	9	62	13	09013	Tolland County, Connecticut	318.6923076923077	6244.307692307692	226395.6923076923	0.5384615384615384
+103	62	Health care and social assistance	9	62	15	09015	Windham County, Connecticut	266.2307692307692	7106.153846153846	273146.23076923075	0.5384615384615384
+104	71	Arts, entertainment, and recreation	9	71	1	09001	Fairfield County, Connecticut	604.5384615384615	11071.0	365007.92307692306	0.5384615384615384
+105	71	Arts, entertainment, and recreation	9	71	3	09003	Hartford County, Connecticut	344.9230769230769	6874.2307692307695	137097.15384615384	0.5384615384615384
+106	71	Arts, entertainment, and recreation	9	71	5	09005	Litchfield County, Connecticut	126.61538461538461	1644.923076923077	35129.53846153846	0.5384615384615384
+107	71	Arts, entertainment, and recreation	9	71	7	09007	Middlesex County, Connecticut	105.07692307692308	1496.6923076923076	41836.846153846156	0.5384615384615384
+108	71	Arts, entertainment, and recreation	9	71	9	09009	New Haven County, Connecticut	302.3076923076923	4375.076923076923	95889.53846153847	0.5384615384615384
+109	71	Arts, entertainment, and recreation	9	71	11	09011	New London County, Connecticut	133.30769230769232	1782.5384615384614	56072.153846153844	0.5384615384615384
+110	71	Arts, entertainment, and recreation	9	71	13	09013	Tolland County, Connecticut	41.15384615384615	471.2307692307692	10679.846153846154	0.5384615384615384
+111	71	Arts, entertainment, and recreation	9	71	15	09015	Windham County, Connecticut	36.69230769230769	182.53846153846155	3826.5384615384614	0.5384615384615384
+112	72	Accommodation and food services	9	72	1	09001	Fairfield County, Connecticut	2386.076923076923	34388.153846153844	775751.9230769231	0.5384615384615384
+113	72	Accommodation and food services	9	72	3	09003	Hartford County, Connecticut	2095.230769230769	35644.153846153844	670810.3076923077	0.5384615384615384
+114	72	Accommodation and food services	9	72	5	09005	Litchfield County, Connecticut	427.6923076923077	4868.692307692308	93781.07692307692	0.5384615384615384
+115	72	Accommodation and food services	9	72	7	09007	Middlesex County, Connecticut	424.6923076923077	5661.692307692308	120604.69230769231	0.5384615384615384
+116	72	Accommodation and food services	9	72	9	09009	New Haven County, Connecticut	2017.7692307692307	30503.153846153848	543674.5384615385	0.5384615384615384
+117	72	Accommodation and food services	9	72	11	09011	New London County, Connecticut	708.4615384615385	25513.0	694290.3846153846	0.5384615384615384
+118	72	Accommodation and food services	9	72	13	09013	Tolland County, Connecticut	226.23076923076923	3896.6923076923076	68012.46153846153	0.5384615384615384
+119	72	Accommodation and food services	9	72	15	09015	Windham County, Connecticut	238.76923076923077	3225.6153846153848	55716.692307692305	0.5384615384615384
+120	81	Other services (except public administration)	9	81	1	09001	Fairfield County, Connecticut	2617.4615384615386	18281.23076923077	624393.1538461539	0.5384615384615384
+121	81	Other services (except public administration)	9	81	3	09003	Hartford County, Connecticut	2525.3076923076924	17623.923076923078	623785.9230769231	0.5384615384615384
+122	81	Other services (except public administration)	9	81	5	09005	Litchfield County, Connecticut	499.46153846153845	2403.3846153846152	65844.23076923077	0.5384615384615384
+123	81	Other services (except public administration)	9	81	7	09007	Middlesex County, Connecticut	450.0769230769231	2194.153846153846	66012.46153846153	0.5384615384615384
+124	81	Other services (except public administration)	9	81	9	09009	New Haven County, Connecticut	2208.769230769231	13650.23076923077	415617.8461538461	0.5384615384615384
+125	81	Other services (except public administration)	9	81	11	09011	New London County, Connecticut	635.0769230769231	3647.3076923076924	90189.69230769231	0.5384615384615384
+126	81	Other services (except public administration)	9	81	13	09013	Tolland County, Connecticut	272.3076923076923	1545.923076923077	49442.38461538462	0.5384615384615384
+127	81	Other services (except public administration)	9	81	15	09015	Windham County, Connecticut	240.53846153846155	1018.3846153846154	24341.923076923078	0.5384615384615384
+128	99	Industries not classified	9	99	1	09001	Fairfield County, Connecticut	54.76923076923077	58.07692307692308	2520.769230769231	0.5384615384615384
+129	99	Industries not classified	9	99	3	09003	Hartford County, Connecticut	36.38461538461539	37.84615384615385	1034.4615384615386	0.5384615384615384
+130	99	Industries not classified	9	99	5	09005	Litchfield County, Connecticut	9.846153846153847	8.307692307692308	179.30769230769232	0.5384615384615384
+131	99	Industries not classified	9	99	7	09007	Middlesex County, Connecticut	5.076923076923077	4.435897435897436	142.89743589743588	0.6153846153846154
+132	99	Industries not classified	9	99	9	09009	New Haven County, Connecticut	25.23076923076923	30.23076923076923	726.0	0.5384615384615384
+133	99	Industries not classified	9	99	11	09011	New London County, Connecticut	10.846153846153847	28.51282051282051	818.897435897436	0.6153846153846154
+134	99	Industries not classified	9	99	13	09013	Tolland County, Connecticut	4.461538461538462	4.333333333333333	75.41025641025641	0.6153846153846154
+135	99	Industries not classified	9	99	15	09015	Windham County, Connecticut	2.6923076923076925	1.3589743589743588	100.45364891518736	0.8461538461538461
