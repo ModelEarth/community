@@ -592,11 +592,11 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
     }
     if(Array.isArray(fips)){
         
-        //if (fips.length > 2) {
+        if (fips.length > 2) {
             $("#infoColumn").hide();
-        //} else {
-        //    $("#infoColumn").show();
-        //}
+        } else {
+            $("#infoColumn").show();
+        }
     }else{
         $(".mainColumn1").show();
     }
