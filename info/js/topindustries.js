@@ -65,7 +65,7 @@ function ready(values) {
     }
         
     dataObject.industryDataStateApi=industryDataStateApi;
-
+    dataObject.stateshown=13
     industryNames = {}
     values[0].forEach(function(item){
         industryNames[+item.relevant_naics] = item.industry_detail
@@ -87,11 +87,14 @@ function ready(values) {
             for (var i = 0; i<geos.length; i++){
                 fips.push(geos[i].split("US")[1])
             }
+            dataObject.stateshown=(geos[0].split("US")[1]).slice(0,2)
         }else{
             fips = geo.split("US")[1]
+            dataObject.stateshown=(geo.split("US")[1]).slice(0,2)
         }
+
     }else{
-        fips = "state";
+        fips = dataObject.stateshown;
     }
 
 
@@ -140,6 +143,8 @@ function ready(values) {
             geoChanged(dataObject); // Apply county filter to industry list (topindustries.js)
         } 
         else if (params.go != lastParams.go) {
+            renderIndustryChart(dataObject,values,params);
+        }else if (params.census_scope != lastParams.census_scope) {
             renderIndustryChart(dataObject,values,params);
         }
     });
@@ -206,11 +211,13 @@ function renderIndustryChart(dataObject,values,params) {
             for (var i = 0; i<geos.length; i++){
                 fips.push(geos[i].split("US")[1])
             }
+            dataObject.stateshown=(geos[0].split("US")[1]).slice(0,2)
         }else{
             fips = geo.split("US")[1]
+            dataObject.stateshown=(geo.split("US")[1]).slice(0,2)
         }
     }else{
-        fips = "state";
+        fips = dataObject.stateshown;
     }
 
     geoChanged(dataObject);
@@ -232,13 +239,15 @@ function geoChanged(dataObject,params){
             for (var i = 0; i<geos.length; i++){
                 fips.push(geos[i].split("US")[1])
             }
+            dataObject.stateshown=(geos[0].split("US")[1]).slice(0,2)
         } else {
             fips = geo.split("US")[1]
+            dataObject.stateshown=(geo.split("US")[1]).slice(0,2)
         }
     } else {
-        fips = "state";
+        fips = dataObject.stateshown;
     }
-    if (fips == "state") {
+    if (fips == 13) {
         $(".county-view").hide();
         $(".state-view").show();
         $(".industry_filter_settings").hide(); // temp
@@ -248,6 +257,7 @@ function geoChanged(dataObject,params){
         $(".industry_filter_settings").show(); // temp
     }
     topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
+    console.log('kkkkk'+fips)
 }
 
 
@@ -382,8 +392,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
         });
         console.log(rates_dict)
         console.log(rates_list)    
-    }else if(fips=="state"){
-        fips=13
+    }else if(fips==13){
+        //fips=13
         if(params['census_scope']){
             if(params['census_scope']=="state"){
                 Object.keys(dataSet.industryDataStateApi.ActualRate).forEach( this_key=>{
