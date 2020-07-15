@@ -63,6 +63,7 @@ var mbAttr = '<a href="https://www.mapbox.com/">Mapbox</a>',
 
 function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
 
+  console.log('loadFromCSV into #' + whichmap + '._leaflet_map');
   let defaults = {};
   defaults.zoom = 7;
   defaults.numColumns = ["zip","lat","lon"];
@@ -728,7 +729,7 @@ function loadMap1(dp) { // Also called by search-filters.js
   dp1.zoom = 7;
   dp1.listLocation = false; // Hides Waze direction link in list, remains in popup.
 
-  if (dp) { // Paraters set in page or layer json
+  if (dp) { // Parameters set in page or layer json
     dp1 = dp;
   } else if (param["show"] == "smart" || param["data"] == "smart") {
     dp1.listTitle = "Data Driven Decision Making";
@@ -747,7 +748,11 @@ function loadMap1(dp) { // Also called by search-filters.js
     // Georgia
     dp1.latitude = 32.9;
     dp1.longitude = -83.4;
-    
+    if (param.lat) {
+      dp1.latitude = param.lat;
+      dp1.longitude = param.lon;
+      dp1.zoom = 14;
+    }
     dp1.markerType = "google";
      
 
@@ -783,8 +788,8 @@ function loadMap1(dp) { // Also called by search-filters.js
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
 
-    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-07/ga_suppliers_list_7-8-2020.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
-    dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe_2020_07_08.csv";
+    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-07/ga_suppliers_list_7-15-2020.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
+    dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe_2020_07_15.csv";
     //dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe_2020_06_17.csv";
 
     dp1.dataTitle = "Manufacturers and Distributors";
