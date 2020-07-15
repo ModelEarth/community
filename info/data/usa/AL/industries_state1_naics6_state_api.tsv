@@ -1,0 +1,936 @@
+	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
+0	01	1	0	Alabama	113110	Timber tract operations	11	44.2	290.2	14340.4
+1	01	1	0	Alabama	113210	Forest nurseries and gathering of forest products	11	7.0	51.8	3372.4
+2	01	1	0	Alabama	113310	Logging	11	529.6	4000.8	151609.6
+3	01	1	0	Alabama	114111	Finfish fishing	11	2.4	0.0	0.0
+4	01	1	0	Alabama	114112	Shellfish fishing	11	14.2	18.2	855.8
+5	01	1	0	Alabama	114119	Other marine fishing	11	1.0	0.0	0.0
+6	01	1	0	Alabama	114210	Hunting and trapping	11	7.4	50.4	2746.6
+7	01	1	0	Alabama	115111	Cotton ginning	11	12.8	105.4	4584.2
+8	01	1	0	Alabama	115112	Soil preparation, planting, and cultivating	11	12.4	6.4	413.4
+9	01	1	0	Alabama	115113	Crop harvesting, primarily by machine	11	1.0	0.0	0.0
+10	01	1	0	Alabama	115114	Postharvest crop activities (except cotton ginning)	11	9.2	473.8	17126.4
+11	01	1	0	Alabama	115115	Farm labor contractors and crew leaders	11	1.6	0.0	0.0
+12	01	1	0	Alabama	115210	Support activities for animal production	11	38.6	192.8	5841.4
+13	01	1	0	Alabama	115310	Support activities for forestry	11	116.8	785.6	33878.8
+14	01	1	0	Alabama	211111	Crude petroleum and natural gas extraction	21	31.4	395.4	35635.8
+15	01	1	0	Alabama	211112	Natural gas liquid extraction	21	2.0	11.2	874.8
+16	01	1	0	Alabama	212111	Bituminous coal and lignite surface mining	21	25.0	1057.4	62051.4
+17	01	1	0	Alabama	212112	Bituminous coal underground mining	21	8.0	1995.0	180140.0
+18	01	1	0	Alabama	212221	Gold ore mining	21	1.0	0.0	0.0
+19	01	1	0	Alabama	212299	All other metal ore mining	21	2.4	0.0	0.0
+20	01	1	0	Alabama	212311	Dimension stone mining and quarrying	21	1.0	0.0	0.0
+21	01	1	0	Alabama	212312	Crushed and broken limestone mining and quarrying	21	44.2	488.2	47107.0
+22	01	1	0	Alabama	212313	Crushed and broken granite mining and quarrying	21	5.0	74.2	3675.2
+23	01	1	0	Alabama	212319	Other crushed and broken stone mining and quarrying	21	7.8	186.8	11047.6
+24	01	1	0	Alabama	212321	Construction sand and gravel mining	21	28.0	277.4	11568.8
+25	01	1	0	Alabama	212322	Industrial sand mining	21	3.6	22.2	1422.8
+26	01	1	0	Alabama	212325	Clay and ceramic and refractory minerals mining	21	3.0	0.0	0.0
+27	01	1	0	Alabama	212391	Potash, soda, and borate mineral mining	21	1.0	0.0	0.0
+28	01	1	0	Alabama	212399	All other nonmetallic mineral mining	21	3.2	6.0	180.6
+29	01	1	0	Alabama	213111	Drilling oil and gas wells	21	13.6	253.2	13795.2
+30	01	1	0	Alabama	213112	Support activities for oil and gas operations	21	47.6	897.8	52281.2
+31	01	1	0	Alabama	213113	Support activities for coal mining	21	7.2	183.6	8646.6
+32	01	1	0	Alabama	213114	Support activities for metal mining	21	2.2	0.0	0.0
+33	01	1	0	Alabama	213115	Support activities for nonmetallic minerals (except fuels) mining	21	2.4	10.2	731.6
+34	01	1	0	Alabama	221111	Hydroelectric power generation	22	11.2	0.0	0.0
+35	01	1	0	Alabama	221112	Fossil fuel electric power generation	22	27.8	1740.6	155384.0
+36	01	1	0	Alabama	221113	Nuclear electric power generation	22	2.0	0.0	0.0
+37	01	1	0	Alabama	221114	Solar electric power generation	22	1.0	0.0	0.0
+38	01	1	0	Alabama	221117	Biomass electric power generation	22	3.0	0.0	0.0
+39	01	1	0	Alabama	221118	Other electric power generation	22	2.2	0.0	0.0
+40	01	1	0	Alabama	221121	Electric bulk power transmission and control	22	9.8	0.0	0.0
+41	01	1	0	Alabama	221122	Electric power distribution	22	252.8	4154.8	387914.4
+42	01	1	0	Alabama	221210	Natural gas distribution	22	28.4	533.0	49500.2
+43	01	1	0	Alabama	221310	Water supply and irrigation systems	22	59.6	366.4	13837.0
+44	01	1	0	Alabama	221320	Sewage treatment facilities	22	16.6	237.0	10025.6
+45	01	1	0	Alabama	221330	Steam and air-conditioning supply	22	1.0	0.0	0.0
+46	01	1	0	Alabama	236115	New single-family housing construction (except for-sale builders)	23	475.8	1517.8	57401.0
+47	01	1	0	Alabama	236116	New multifamily housing construction (except for-sale builders)	23	41.2	668.0	47947.4
+48	01	1	0	Alabama	236117	New housing for-sale builders	23	216.0	1255.2	69570.0
+49	01	1	0	Alabama	236118	Residential remodelers	23	625.2	2099.4	72391.4
+50	01	1	0	Alabama	236210	Industrial building construction	23	72.8	4484.8	243359.8
+51	01	1	0	Alabama	236220	Commercial and institutional building construction	23	599.8	9633.8	589821.6
+52	01	1	0	Alabama	237110	Water and sewer line and related structures construction	23	136.0	1681.4	74494.6
+53	01	1	0	Alabama	237120	Oil and gas pipeline and related structures construction	23	36.2	1763.6	103725.2
+54	01	1	0	Alabama	237130	Power and communication line and related structures construction	23	94.6	3397.0	181806.2
+55	01	1	0	Alabama	237210	Land subdivision	23	99.8	350.4	16564.2
+56	01	1	0	Alabama	237310	Highway, street, and bridge construction	23	180.2	4570.2	206229.8
+57	01	1	0	Alabama	237990	Other heavy and civil engineering construction	23	84.0	844.4	35902.8
+58	01	1	0	Alabama	238110	Poured concrete foundation and structure contractors	23	180.4	1808.6	73584.2
+59	01	1	0	Alabama	238120	Structural steel and precast concrete contractors	23	54.6	699.0	28732.4
+60	01	1	0	Alabama	238130	Framing contractors	23	84.0	195.0	7842.6
+61	01	1	0	Alabama	238140	Masonry contractors	23	163.6	1484.8	58202.8
+62	01	1	0	Alabama	238150	Glass and glazing contractors	23	61.2	704.0	29166.0
+63	01	1	0	Alabama	238160	Roofing contractors	23	194.2	1423.0	48064.2
+64	01	1	0	Alabama	238170	Siding contractors	23	74.8	338.6	11766.2
+65	01	1	0	Alabama	238190	Other foundation, structure, and building exterior contractors	23	52.6	751.6	33417.6
+66	01	1	0	Alabama	238210	Electrical contractors and other wiring installation contractors	23	829.6	9665.4	425583.6
+67	01	1	0	Alabama	238220	Plumbing, heating, and air-conditioning contractors	23	1303.6	13186.8	568461.8
+68	01	1	0	Alabama	238290	Other building equipment contractors	23	94.4	2826.4	145264.2
+69	01	1	0	Alabama	238310	Drywall and insulation contractors	23	194.0	2472.6	95561.8
+70	01	1	0	Alabama	238320	Painting and wall covering contractors	23	253.8	1482.2	49489.4
+71	01	1	0	Alabama	238330	Flooring contractors	23	110.6	553.2	20892.0
+72	01	1	0	Alabama	238340	Tile and terrazzo contractors	23	68.4	359.0	13507.0
+73	01	1	0	Alabama	238350	Finish carpentry contractors	23	200.6	863.0	26400.2
+74	01	1	0	Alabama	238390	Other building finishing contractors	23	61.0	490.6	18758.4
+75	01	1	0	Alabama	238910	Site preparation contractors	23	449.8	5306.2	230448.0
+76	01	1	0	Alabama	238990	All other specialty trade contractors	23	279.8	2147.2	84756.0
+77	01	1	0	Alabama	311111	Dog and cat food manufacturing	31	4.4	0.0	0.0
+78	01	1	0	Alabama	311119	Other animal food manufacturing	31	33.0	687.2	30401.6
+79	01	1	0	Alabama	311211	Flour milling	31	5.0	140.2	8198.0
+80	01	1	0	Alabama	311224	Soybean and other oilseed processing	31	3.4	366.0	20082.8
+81	01	1	0	Alabama	311225	Fats and oils refining and blending	31	1.4	0.0	0.0
+82	01	1	0	Alabama	311314	Cane sugar manufacturing	31	2.8	0.0	0.0
+83	01	1	0	Alabama	311340	Nonchocolate confectionery manufacturing	31	1.4	0.0	0.0
+84	01	1	0	Alabama	311352	Confectionery manufacturing from purchased chocolate	31	11.2	88.8	1808.8
+85	01	1	0	Alabama	311411	Frozen fruit, juice, and vegetable manufacturing	31	1.0	0.0	0.0
+86	01	1	0	Alabama	311412	Frozen specialty food manufacturing	31	1.6	0.0	0.0
+87	01	1	0	Alabama	311421	Fruit and vegetable canning	31	2.8	2.2	146.8
+88	01	1	0	Alabama	311423	Dried and dehydrated food manufacturing	31	1.0	0.0	0.0
+89	01	1	0	Alabama	311511	Fluid milk manufacturing	31	1.8	0.0	0.0
+90	01	1	0	Alabama	311513	Cheese manufacturing	31	2.4	0.0	0.0
+91	01	1	0	Alabama	311514	Dry, condensed, and evaporated dairy product manufacturing	31	1.0	0.0	0.0
+92	01	1	0	Alabama	311520	Ice cream and frozen dessert manufacturing	31	3.0	0.0	0.0
+93	01	1	0	Alabama	311611	Animal (except poultry) slaughtering	31	22.4	167.2	4103.8
+94	01	1	0	Alabama	311612	Meat processed from carcasses	31	13.2	565.8	17452.2
+95	01	1	0	Alabama	311613	Rendering and meat byproduct processing	31	6.4	88.2	4929.0
+96	01	1	0	Alabama	311615	Poultry processing	31	34.2	21357.8	561358.2
+97	01	1	0	Alabama	311710	Seafood product preparation and packaging	31	20.4	918.2	24043.8
+98	01	1	0	Alabama	311811	Retail bakeries	31	56.6	384.2	6016.0
+99	01	1	0	Alabama	311812	Commercial bakeries	31	15.2	1056.4	50033.0
+100	01	1	0	Alabama	311813	Frozen cakes, pies, and other pastries manufacturing	31	1.0	0.0	0.0
+101	01	1	0	Alabama	311821	Cookie and cracker manufacturing	31	1.8	0.0	0.0
+102	01	1	0	Alabama	311824	Dry pasta, dough, and flour mixes manufacturing from purchased flour	31	2.6	0.0	0.0
+103	01	1	0	Alabama	311830	Tortilla manufacturing	31	1.0	0.0	0.0
+104	01	1	0	Alabama	311911	Roasted nuts and peanut butter manufacturing	31	3.2	0.0	0.0
+105	01	1	0	Alabama	311919	Other snack food manufacturing	31	1.2	0.0	0.0
+106	01	1	0	Alabama	311920	Coffee and tea manufacturing	31	3.6	0.0	0.0
+107	01	1	0	Alabama	311930	Flavoring syrup and concentrate manufacturing	31	1.6	0.0	0.0
+108	01	1	0	Alabama	311941	Mayonnaise, dressing, and other prepared sauce manufacturing	31	6.4	148.6	5996.6
+109	01	1	0	Alabama	311942	Spice and extract manufacturing	31	3.8	102.8	5069.2
+110	01	1	0	Alabama	311991	Perishable prepared food manufacturing	31	1.8	0.0	0.0
+111	01	1	0	Alabama	311999	All other miscellaneous food manufacturing	31	6.8	202.2	10002.2
+112	01	1	0	Alabama	312111	Soft drink manufacturing	31	4.4	473.4	36736.6
+113	01	1	0	Alabama	312112	Bottled water manufacturing	31	1.0	0.0	0.0
+114	01	1	0	Alabama	312113	Ice manufacturing	31	10.8	39.6	1544.8
+115	01	1	0	Alabama	312120	Breweries	31	14.6	103.8	2695.4
+116	01	1	0	Alabama	312130	Wineries	31	5.2	4.0	153.6
+117	01	1	0	Alabama	312140	Distilleries	31	3.2	5.8	414.0
+118	01	1	0	Alabama	312230	Tobacco manufacturing	31	1.4	0.0	0.0
+119	01	1	0	Alabama	313110	Fiber, yarn, and thread mills	31	7.0	1197.8	38963.2
+120	01	1	0	Alabama	313210	Broadwoven fabric mills	31	6.6	669.6	25409.6
+121	01	1	0	Alabama	313220	Narrow fabric mills and schiffli machine embroidery	31	3.8	62.8	1683.8
+122	01	1	0	Alabama	313230	Nonwoven fabric mills	31	2.0	0.0	0.0
+123	01	1	0	Alabama	313240	Knit fabric mills	31	1.4	0.0	0.0
+124	01	1	0	Alabama	313310	Textile and fabric finishing mills	31	8.8	101.4	3200.0
+125	01	1	0	Alabama	313320	Fabric coating mills	31	1.2	0.0	0.0
+126	01	1	0	Alabama	314110	Carpet and rug mills	31	4.2	2553.8	79715.0
+127	01	1	0	Alabama	314120	Curtain and linen mills	31	27.0	705.2	19693.0
+128	01	1	0	Alabama	314910	Textile bag and canvas mills	31	21.8	375.2	12534.6
+129	01	1	0	Alabama	314994	Rope, cordage, twine, tire cord, and tire fabric mills	31	7.4	92.4	4451.6
+130	01	1	0	Alabama	314999	All other miscellaneous textile product mills	31	36.2	871.0	22120.2
+131	01	1	0	Alabama	315110	Hosiery and sock mills	31	19.4	1125.4	27573.6
+132	01	1	0	Alabama	315210	Cut and sew apparel contractors	31	10.0	623.4	12336.8
+133	01	1	0	Alabama	315220	Men's and boys' cut and sew apparel manufacturing	31	7.0	149.2	4194.6
+134	01	1	0	Alabama	315240	Women's, girls', and infants' cut and sew apparel manufacturing	31	3.8	20.0	476.6
+135	01	1	0	Alabama	315280	Other cut and sew apparel manufacturing	31	3.6	12.2	345.8
+136	01	1	0	Alabama	315990	Apparel accessories and other apparel manufacturing	31	3.8	4.0	94.0
+137	01	1	0	Alabama	316110	Leather and hide tanning and finishing	31	1.6	0.0	0.0
+138	01	1	0	Alabama	316210	Footwear manufacturing	31	1.0	0.0	0.0
+139	01	1	0	Alabama	316992	Women's handbag and purse manufacturing	31	1.0	0.0	0.0
+140	01	1	0	Alabama	316998	All other leather good and allied product manufacturing	31	11.4	48.8	1214.0
+141	01	1	0	Alabama	321113	Sawmills	32	81.6	3972.4	172899.0
+142	01	1	0	Alabama	321114	Wood preservation	32	20.2	839.0	37034.6
+143	01	1	0	Alabama	321211	Hardwood veneer and plywood manufacturing	32	9.2	514.8	17163.4
+144	01	1	0	Alabama	321212	Softwood veneer and plywood manufacturing	32	6.2	308.0	15321.2
+145	01	1	0	Alabama	321213	Engineered wood member (except truss) manufacturing	32	5.8	382.4	18203.4
+146	01	1	0	Alabama	321214	Truss manufacturing	32	15.2	298.6	9691.6
+147	01	1	0	Alabama	321219	Reconstituted wood product manufacturing	32	8.4	311.0	15510.8
+148	01	1	0	Alabama	321911	Wood window and door manufacturing	32	25.2	819.6	26385.2
+149	01	1	0	Alabama	321912	Cut stock, resawing lumber, and planing	32	36.0	1025.6	32351.6
+150	01	1	0	Alabama	321918	Other millwork (including flooring)	32	18.6	767.2	24557.6
+151	01	1	0	Alabama	321920	Wood container and pallet manufacturing	32	55.2	1144.6	35131.2
+152	01	1	0	Alabama	321991	Manufactured home (mobile home) manufacturing	32	19.8	1473.2	77038.6
+153	01	1	0	Alabama	321992	Prefabricated wood building manufacturing	32	10.8	130.8	4592.0
+154	01	1	0	Alabama	321999	All other miscellaneous wood product manufacturing	32	22.6	226.8	7120.0
+155	01	1	0	Alabama	322110	Pulp mills	32	2.6	0.0	0.0
+156	01	1	0	Alabama	322121	Paper (except newsprint) mills	32	6.0	3737.2	295726.6
+157	01	1	0	Alabama	322130	Paperboard mills	32	9.2	3376.4	286624.2
+158	01	1	0	Alabama	322211	Corrugated and solid fiber box manufacturing	32	17.8	1222.0	64048.6
+159	01	1	0	Alabama	322212	Folding paperboard box manufacturing	32	8.6	741.6	44298.8
+160	01	1	0	Alabama	322219	Other paperboard container manufacturing	32	6.0	239.6	12430.4
+161	01	1	0	Alabama	322220	Paper bag and coated and treated paper manufacturing	32	6.8	293.0	14049.8
+162	01	1	0	Alabama	322230	Stationery product manufacturing	32	1.6	0.0	0.0
+163	01	1	0	Alabama	322299	All other converted paper product manufacturing	32	3.6	0.0	0.0
+164	01	1	0	Alabama	323111	Commercial printing (except screen and books)	32	222.8	2722.4	106981.0
+165	01	1	0	Alabama	323113	Commercial screen printing	32	96.6	725.2	20381.2
+166	01	1	0	Alabama	323117	Books printing	32	3.8	8.8	471.4
+167	01	1	0	Alabama	323120	Support activities for printing	32	10.0	55.6	2194.0
+168	01	1	0	Alabama	324110	Petroleum refineries	32	3.4	254.8	25712.8
+169	01	1	0	Alabama	324121	Asphalt paving mixture and block manufacturing	32	13.0	182.8	9799.2
+170	01	1	0	Alabama	324122	Asphalt shingle and coating materials manufacturing	32	8.8	486.0	33900.4
+171	01	1	0	Alabama	324191	Petroleum lubricating oil and grease manufacturing	32	2.0	0.0	0.0
+172	01	1	0	Alabama	324199	All other petroleum and coal products manufacturing	32	3.4	470.8	31448.2
+173	01	1	0	Alabama	325110	Petrochemical manufacturing	32	1.0	0.0	0.0
+174	01	1	0	Alabama	325120	Industrial gas manufacturing	32	14.2	172.0	13492.4
+175	01	1	0	Alabama	325130	Synthetic dye and pigment manufacturing	32	1.0	0.0	0.0
+176	01	1	0	Alabama	325180	Other basic inorganic chemical manufacturing	32	20.2	1123.2	92331.8
+177	01	1	0	Alabama	325194	Cyclic crude, intermediate, and gum and wood chemical manufacturing	32	3.0	255.2	21051.0
+178	01	1	0	Alabama	325199	All other basic organic chemical manufacturing	32	17.0	1743.6	141557.2
+179	01	1	0	Alabama	325211	Plastics material and resin manufacturing	32	20.4	2427.0	175824.6
+180	01	1	0	Alabama	325212	Synthetic rubber manufacturing	32	1.0	0.0	0.0
+181	01	1	0	Alabama	325220	Artificial and synthetic fibers and filaments manufacturing	32	5.6	2351.6	96469.4
+182	01	1	0	Alabama	325311	Nitrogenous fertilizer manufacturing	32	5.6	191.0	9914.0
+183	01	1	0	Alabama	325312	Phosphatic fertilizer manufacturing	32	3.2	39.2	2330.4
+184	01	1	0	Alabama	325314	Fertilizer (mixing only) manufacturing	32	11.4	327.0	16329.8
+185	01	1	0	Alabama	325320	Pesticide and other agricultural chemical manufacturing	32	1.6	0.0	0.0
+186	01	1	0	Alabama	325411	Medicinal and botanical manufacturing	32	5.0	191.2	13159.2
+187	01	1	0	Alabama	325412	Pharmaceutical preparation manufacturing	32	7.4	0.0	0.0
+188	01	1	0	Alabama	325414	Biological product (except diagnostic) manufacturing	32	3.0	114.0	7074.6
+189	01	1	0	Alabama	325510	Paint and coating manufacturing	32	21.0	715.8	41474.2
+190	01	1	0	Alabama	325520	Adhesive manufacturing	32	4.6	0.0	0.0
+191	01	1	0	Alabama	325611	Soap and other detergent manufacturing	32	4.4	0.0	0.0
+192	01	1	0	Alabama	325612	Polish and other sanitation good manufacturing	32	3.8	32.2	965.4
+193	01	1	0	Alabama	325613	Surface active agent manufacturing	32	2.0	0.0	0.0
+194	01	1	0	Alabama	325620	Toilet preparation manufacturing	32	3.2	0.0	0.0
+195	01	1	0	Alabama	325910	Printing ink manufacturing	32	3.2	8.0	352.6
+196	01	1	0	Alabama	325920	Explosives manufacturing	32	2.0	0.0	0.0
+197	01	1	0	Alabama	325991	Custom compounding of purchased resins	32	4.6	215.8	14469.2
+198	01	1	0	Alabama	325992	Photographic film, paper, plate, and chemical manufacturing	32	2.0	0.0	0.0
+199	01	1	0	Alabama	325998	All other miscellaneous chemical product and preparation manufacturing	32	14.6	235.2	12282.0
+200	01	1	0	Alabama	326111	Plastics bag and pouch manufacturing	32	6.0	598.6	25278.0
+201	01	1	0	Alabama	326112	Plastics packaging film and sheet (including laminated) manufacturing	32	3.2	134.2	5190.0
+202	01	1	0	Alabama	326113	Unlaminated plastics film and sheet (except packaging) manufacturing	32	5.6	673.0	38663.2
+203	01	1	0	Alabama	326121	Unlaminated plastics profile shape manufacturing	32	4.4	65.0	2709.2
+204	01	1	0	Alabama	326122	Plastics pipe and pipe fitting manufacturing	32	10.4	894.2	37149.8
+205	01	1	0	Alabama	326130	Laminated plastics plate, sheet (except packaging), and shape manufacturing	32	2.4	24.8	935.4
+206	01	1	0	Alabama	326140	Polystyrene foam product manufacturing	32	5.2	590.0	21928.0
+207	01	1	0	Alabama	326150	Urethane and other foam product (except polystyrene) manufacturing	32	4.0	125.6	4760.6
+208	01	1	0	Alabama	326160	Plastics bottle manufacturing	32	5.0	157.8	6789.0
+209	01	1	0	Alabama	326191	Plastics plumbing fixture manufacturing	32	11.2	585.2	24818.2
+210	01	1	0	Alabama	326199	All other plastics product manufacturing	32	76.4	7081.0	317007.6
+211	01	1	0	Alabama	326211	Tire manufacturing (except retreading)	32	4.8	0.0	0.0
+212	01	1	0	Alabama	326212	Tire retreading	32	11.2	138.0	4238.6
+213	01	1	0	Alabama	326220	Rubber and plastics hoses and belting manufacturing	32	5.6	365.6	15906.6
+214	01	1	0	Alabama	326291	Rubber product manufacturing for mechanical use	32	5.6	139.2	5889.6
+215	01	1	0	Alabama	326299	All other rubber product manufacturing	32	13.6	768.6	27448.0
+216	01	1	0	Alabama	327110	Pottery, ceramics, and plumbing fixture manufacturing	32	2.2	2.0	50.2
+217	01	1	0	Alabama	327120	Clay building material and refractories manufacturing	32	21.2	977.6	50755.0
+218	01	1	0	Alabama	327212	Other pressed and blown glass and glassware manufacturing	32	2.4	0.0	0.0
+219	01	1	0	Alabama	327213	Glass container manufacturing	32	1.0	0.0	0.0
+220	01	1	0	Alabama	327215	Glass product manufacturing made of purchased glass	32	10.8	971.6	52310.2
+221	01	1	0	Alabama	327310	Cement manufacturing	32	7.0	552.2	48879.8
+222	01	1	0	Alabama	327320	Ready-mix concrete manufacturing	32	110.4	1060.2	42608.6
+223	01	1	0	Alabama	327331	Concrete block and brick manufacturing	32	13.4	90.4	6118.6
+224	01	1	0	Alabama	327332	Concrete pipe manufacturing	32	8.6	41.0	1243.0
+225	01	1	0	Alabama	327390	Other concrete product manufacturing	32	38.0	676.2	25881.0
+226	01	1	0	Alabama	327410	Lime manufacturing	32	7.6	431.8	29750.0
+227	01	1	0	Alabama	327420	Gypsum product manufacturing	32	1.8	0.0	0.0
+228	01	1	0	Alabama	327910	Abrasive product manufacturing	32	3.4	0.0	0.0
+229	01	1	0	Alabama	327991	Cut stone and stone product manufacturing	32	32.4	282.8	9605.2
+230	01	1	0	Alabama	327992	Ground or treated mineral and earth manufacturing	32	5.8	57.4	2966.0
+231	01	1	0	Alabama	327993	Mineral wool manufacturing	32	7.6	291.6	14210.4
+232	01	1	0	Alabama	327999	All other miscellaneous nonmetallic mineral product manufacturing	32	5.0	73.4	3841.6
+233	01	1	0	Alabama	331110	Iron and steel mills and ferroalloy manufacturing	33	16.4	6022.8	495858.0
+234	01	1	0	Alabama	331210	Iron and steel pipe and tube manufacturing from purchased steel	33	8.8	2026.2	137269.2
+235	01	1	0	Alabama	331221	Rolled steel shape manufacturing	33	3.8	270.8	15338.4
+236	01	1	0	Alabama	331222	Steel wire drawing	33	4.0	0.0	0.0
+237	01	1	0	Alabama	331314	Secondary smelting and alloying of aluminum	33	5.8	121.2	5028.0
+238	01	1	0	Alabama	331315	Aluminum sheet, plate, and foil manufacturing	33	4.0	309.8	20084.8
+239	01	1	0	Alabama	331318	Other aluminum rolling, drawing, and extruding	33	7.4	566.0	27268.2
+240	01	1	0	Alabama	331410	Nonferrous metal (except aluminum) smelting and refining	33	5.6	298.6	16744.4
+241	01	1	0	Alabama	331420	Copper rolling, drawing, extruding, and alloying	33	2.8	284.4	9829.8
+242	01	1	0	Alabama	331491	Nonferrous metal (except copper and aluminum) rolling, drawing, extruding, and alloying	33	4.0	120.0	8992.2
+243	01	1	0	Alabama	331492	Secondary smelting, refining, and alloying of nonferrous metal (except copper and aluminum)	33	5.4	839.2	44217.6
+244	01	1	0	Alabama	331511	Iron foundries	33	18.4	2563.2	118695.6
+245	01	1	0	Alabama	331512	Steel investment foundries	33	1.0	0.0	0.0
+246	01	1	0	Alabama	331513	Steel foundries (except investment)	33	8.0	326.0	15310.0
+247	01	1	0	Alabama	331523	Nonferrous metal die-casting foundries	33	6.4	836.4	41098.8
+248	01	1	0	Alabama	331524	Aluminum foundries (except die-casting)	33	3.0	14.0	642.0
+249	01	1	0	Alabama	331529	Other nonferrous metal foundries (except die-casting)	33	1.8	0.0	0.0
+250	01	1	0	Alabama	332111	Iron and steel forging	33	2.4	0.0	0.0
+251	01	1	0	Alabama	332112	Nonferrous forging	33	1.0	0.0	0.0
+252	01	1	0	Alabama	332114	Custom roll forming	33	11.8	485.2	20769.6
+253	01	1	0	Alabama	332117	Powder metallurgy part manufacturing	33	1.0	0.0	0.0
+254	01	1	0	Alabama	332119	Metal crown, closure, and other metal stamping (except automotive)	33	19.8	624.8	32230.0
+255	01	1	0	Alabama	332215	Metal kitchen cookware, utensil, cutlery, and flatware (except precious) manufacturing	33	3.0	8.4	232.4
+256	01	1	0	Alabama	332216	Saw blade and handtool manufacturing	33	5.6	97.2	5064.2
+257	01	1	0	Alabama	332311	Prefabricated metal building and component manufacturing	33	27.2	683.4	32689.4
+258	01	1	0	Alabama	332312	Fabricated structural metal manufacturing	33	114.8	3291.4	155421.8
+259	01	1	0	Alabama	332313	Plate work manufacturing	33	39.8	1131.0	49191.8
+260	01	1	0	Alabama	332321	Metal window and door manufacturing	33	17.8	624.2	25621.4
+261	01	1	0	Alabama	332322	Sheet metal work manufacturing	33	70.6	1965.6	74193.2
+262	01	1	0	Alabama	332323	Ornamental and architectural metal work manufacturing	33	46.0	1058.6	48801.4
+263	01	1	0	Alabama	332410	Power boiler and heat exchanger manufacturing	33	3.4	31.4	1627.6
+264	01	1	0	Alabama	332420	Metal tank (heavy gauge) manufacturing	33	14.2	655.2	33619.6
+265	01	1	0	Alabama	332431	Metal can manufacturing	33	2.0	0.0	0.0
+266	01	1	0	Alabama	332439	Other metal container manufacturing	33	6.2	57.6	3682.4
+267	01	1	0	Alabama	332510	Hardware manufacturing	33	7.0	882.0	29378.4
+268	01	1	0	Alabama	332613	Spring manufacturing	33	3.0	0.0	0.0
+269	01	1	0	Alabama	332618	Other fabricated wire product manufacturing	33	8.8	331.6	12811.2
+270	01	1	0	Alabama	332710	Machine shops	33	301.4	4259.0	191470.4
+271	01	1	0	Alabama	332721	Precision turned product manufacturing	33	34.2	557.6	26806.2
+272	01	1	0	Alabama	332722	Bolt, nut, screw, rivet, and washer manufacturing	33	7.4	635.4	31198.8
+273	01	1	0	Alabama	332811	Metal heat treating	33	11.0	171.2	11508.2
+274	01	1	0	Alabama	332812	Metal coating, engraving (except jewelry and silverware), and allied services to manufacturers	33	28.4	743.6	36747.8
+275	01	1	0	Alabama	332813	Electroplating, plating, polishing, anodizing, and coloring	33	23.6	280.2	11698.6
+276	01	1	0	Alabama	332911	Industrial valve manufacturing	33	11.0	821.8	46319.8
+277	01	1	0	Alabama	332912	Fluid power valve and hose fitting manufacturing	33	2.0	0.0	0.0
+278	01	1	0	Alabama	332913	Plumbing fixture fitting and trim manufacturing	33	1.0	0.0	0.0
+279	01	1	0	Alabama	332919	Other metal valve and pipe fitting manufacturing	33	3.6	486.0	24269.8
+280	01	1	0	Alabama	332991	Ball and roller bearing manufacturing	33	2.0	0.0	0.0
+281	01	1	0	Alabama	332992	Small arms ammunition manufacturing	33	4.8	33.2	1656.0
+282	01	1	0	Alabama	332993	Ammunition (except small arms) manufacturing	33	1.0	0.0	0.0
+283	01	1	0	Alabama	332994	Small arms, ordnance, and ordnance accessories manufacturing	33	3.8	0.0	0.0
+284	01	1	0	Alabama	332996	Fabricated pipe and pipe fitting manufacturing	33	19.8	682.8	36734.8
+285	01	1	0	Alabama	332999	All other miscellaneous fabricated metal product manufacturing	33	46.6	1087.8	46309.6
+286	01	1	0	Alabama	333111	Farm machinery and equipment manufacturing	33	11.8	289.6	15135.2
+287	01	1	0	Alabama	333112	Lawn and garden tractor and home lawn and garden equipment manufacturing	33	3.6	15.0	1022.0
+288	01	1	0	Alabama	333120	Construction machinery manufacturing	33	6.2	146.0	6331.4
+289	01	1	0	Alabama	333131	Mining machinery and equipment manufacturing	33	1.4	0.0	0.0
+290	01	1	0	Alabama	333132	Oil and gas field machinery and equipment manufacturing	33	2.0	0.0	0.0
+291	01	1	0	Alabama	333241	Food product machinery manufacturing	33	1.5	0.0	0.0
+292	01	1	0	Alabama	333242	Semiconductor machinery manufacturing	33	1.0	0.0	0.0
+293	01	1	0	Alabama	333243	Sawmill, woodworking, and paper machinery manufacturing	33	12.8	284.2	13732.8
+294	01	1	0	Alabama	333244	Printing machinery and equipment manufacturing	33	1.6	0.0	0.0
+295	01	1	0	Alabama	333249	Other industrial machinery manufacturing	33	11.0	325.0	15577.6
+296	01	1	0	Alabama	333314	Optical instrument and lens manufacturing	33	4.6	88.0	5241.4
+297	01	1	0	Alabama	333316	Photographic and photocopying equipment manufacturing	33	3.2	5.4	487.0
+298	01	1	0	Alabama	333318	Other commercial and service industry machinery manufacturing	33	16.0	543.6	31696.2
+299	01	1	0	Alabama	333413	Industrial and commercial fan and blower and air purification equipment manufacturing	33	8.4	395.6	18844.2
+300	01	1	0	Alabama	333414	Heating equipment (except warm air furnaces) manufacturing	33	4.8	246.2	10908.6
+301	01	1	0	Alabama	333415	Air-conditioning and warm air heating equipment and commercial and industrial refrigeration equipment manufacturing	33	7.0	506.8	23906.0
+302	01	1	0	Alabama	333511	Industrial mold manufacturing	33	16.8	274.0	12018.0
+303	01	1	0	Alabama	333514	Special die and tool, die set, jig, and fixture manufacturing	33	22.2	629.6	27166.2
+304	01	1	0	Alabama	333515	Cutting tool and machine tool accessory manufacturing	33	5.4	88.4	4643.8
+305	01	1	0	Alabama	333517	Machine tool manufacturing	33	7.0	139.2	6188.0
+306	01	1	0	Alabama	333519	Rolling mill and other metalworking machinery manufacturing	33	3.8	19.8	714.4
+307	01	1	0	Alabama	333611	Turbine and turbine generator set units manufacturing	33	2.0	0.0	0.0
+308	01	1	0	Alabama	333612	Speed changer, industrial high-speed drive, and gear manufacturing	33	3.6	84.8	4355.6
+309	01	1	0	Alabama	333613	Mechanical power transmission equipment manufacturing	33	3.0	103.8	5220.4
+310	01	1	0	Alabama	333618	Other engine equipment manufacturing	33	7.4	247.6	10513.4
+311	01	1	0	Alabama	333911	Pump and pumping equipment manufacturing	33	4.0	156.2	7905.0
+312	01	1	0	Alabama	333912	Air and gas compressor manufacturing	33	3.4	64.8	3235.6
+313	01	1	0	Alabama	333913	Measuring and dispensing pump manufacturing	33	1.0	0.0	0.0
+314	01	1	0	Alabama	333921	Elevator and moving stairway manufacturing	33	2.2	0.0	0.0
+315	01	1	0	Alabama	333922	Conveyor and conveying equipment manufacturing	33	18.6	1058.0	52503.4
+316	01	1	0	Alabama	333923	Overhead traveling crane, hoist, and monorail system manufacturing	33	6.2	174.0	24097.8
+317	01	1	0	Alabama	333924	Industrial truck, trailer, and stacker machinery manufacturing	33	7.0	264.6	13641.8
+318	01	1	0	Alabama	333992	Welding and soldering equipment manufacturing	33	5.0	35.2	2011.0
+319	01	1	0	Alabama	333993	Packaging machinery manufacturing	33	5.8	116.8	7157.2
+320	01	1	0	Alabama	333994	Industrial process furnace and oven manufacturing	33	4.6	102.6	6072.0
+321	01	1	0	Alabama	333995	Fluid power cylinder and actuator manufacturing	33	11.0	473.8	22123.0
+322	01	1	0	Alabama	333996	Fluid power pump and motor manufacturing	33	2.4	0.0	0.0
+323	01	1	0	Alabama	333997	Scale and balance manufacturing	33	2.0	0.0	0.0
+324	01	1	0	Alabama	333999	All other miscellaneous general purpose machinery manufacturing	33	17.0	321.8	14550.8
+325	01	1	0	Alabama	334111	Electronic computer manufacturing	33	2.4	0.0	0.0
+326	01	1	0	Alabama	334112	Computer storage device manufacturing	33	2.0	0.0	0.0
+327	01	1	0	Alabama	334118	Computer terminal and other computer peripheral equipment manufacturing	33	4.0	679.8	48139.2
+328	01	1	0	Alabama	334210	Telephone apparatus manufacturing	33	3.0	0.0	0.0
+329	01	1	0	Alabama	334220	Radio and television broadcasting and wireless communications equipment manufacturing	33	10.4	754.8	41874.8
+330	01	1	0	Alabama	334290	Other communications equipment manufacturing	33	4.2	13.2	843.6
+331	01	1	0	Alabama	334310	Audio and video equipment manufacturing	33	1.0	0.0	0.0
+332	01	1	0	Alabama	334412	Bare printed circuit board manufacturing	33	1.0	0.0	0.0
+333	01	1	0	Alabama	334413	Semiconductor and related device manufacturing	33	2.6	0.0	0.0
+334	01	1	0	Alabama	334416	Capacitor, resistor, coil, transformer, and other inductor manufacturing	33	2.8	4.0	348.4
+335	01	1	0	Alabama	334418	Printed circuit assembly (electronic assembly) manufacturing	33	14.2	470.8	35528.4
+336	01	1	0	Alabama	334419	Other electronic component manufacturing	33	13.8	373.0	11490.0
+337	01	1	0	Alabama	334510	Electromedical and electrotherapeutic apparatus manufacturing	33	3.8	140.6	8864.2
+338	01	1	0	Alabama	334511	Search, detection, navigation, guidance, aeronautical, and nautical system and instrument manufacturing	33	7.8	1057.4	88677.8
+339	01	1	0	Alabama	334512	Automatic environmental control manufacturing for residential, commercial, and appliance use	33	2.2	2.2	86.0
+340	01	1	0	Alabama	334513	Instruments and related products manufacturing for measuring, displaying, and controlling industrial process variables	33	2.2	0.0	43.6
+341	01	1	0	Alabama	334514	Totalizing fluid meter and counting device manufacturing	33	2.4	0.0	0.0
+342	01	1	0	Alabama	334515	Instrument manufacturing for measuring and testing electricity and electrical systems	33	7.6	24.8	1921.8
+343	01	1	0	Alabama	334516	Analytical laboratory instrument manufacturing	33	5.2	51.8	3996.0
+344	01	1	0	Alabama	334517	Irradiation apparatus manufacturing	33	1.8	0.0	0.0
+345	01	1	0	Alabama	334519	Other measuring and controlling device manufacturing	33	4.4	0.0	0.0
+346	01	1	0	Alabama	334614	Software and other prerecorded compact disc, tape, and record reproducing	33	4.6	220.2	7937.4
+347	01	1	0	Alabama	335121	Residential electric lighting fixture manufacturing	33	3.6	19.0	644.6
+348	01	1	0	Alabama	335122	Commercial, industrial, and institutional electric lighting fixture manufacturing	33	3.4	12.0	366.6
+349	01	1	0	Alabama	335129	Other lighting equipment manufacturing	33	3.4	0.0	0.0
+350	01	1	0	Alabama	335210	Small electrical appliance manufacturing	33	1.25	0.0	0.0
+351	01	1	0	Alabama	335222	Household refrigerator and home freezer manufacturing	33	1.0	0.0	0.0
+352	01	1	0	Alabama	335228	Other major household appliance manufacturing	33	1.0	0.0	0.0
+353	01	1	0	Alabama	335311	Power, distribution, and specialty transformer manufacturing	33	4.0	213.6	10640.6
+354	01	1	0	Alabama	335312	Motor and generator manufacturing	33	5.4	256.2	13489.4
+355	01	1	0	Alabama	335313	Switchgear and switchboard apparatus manufacturing	33	8.8	329.0	14728.8
+356	01	1	0	Alabama	335314	Relay and industrial control manufacturing	33	8.4	256.8	21983.8
+357	01	1	0	Alabama	335911	Storage battery manufacturing	33	1.0	0.0	0.0
+358	01	1	0	Alabama	335912	Primary battery manufacturing	33	1.0	0.0	0.0
+359	01	1	0	Alabama	335921	Fiber optic cable manufacturing	33	1.0	0.0	0.0
+360	01	1	0	Alabama	335929	Other communication and energy wire manufacturing	33	1.0	0.0	0.0
+361	01	1	0	Alabama	335931	Current-carrying wiring device manufacturing	33	5.0	19.8	813.2
+362	01	1	0	Alabama	335932	Noncurrent-carrying wiring device manufacturing	33	6.4	0.0	0.0
+363	01	1	0	Alabama	335991	Carbon and graphite product manufacturing	33	4.6	116.2	7801.0
+364	01	1	0	Alabama	335999	All other miscellaneous electrical equipment and component manufacturing	33	8.4	198.6	6751.0
+365	01	1	0	Alabama	336111	Automobile manufacturing	33	2.0	0.0	0.0
+366	01	1	0	Alabama	336112	Light truck and utility vehicle manufacturing	33	3.8	0.0	0.0
+367	01	1	0	Alabama	336120	Heavy duty truck manufacturing	33	2.0	0.0	0.0
+368	01	1	0	Alabama	336211	Motor vehicle body manufacturing	33	15.6	1869.0	97996.8
+369	01	1	0	Alabama	336212	Truck trailer manufacturing	33	15.4	539.2	19780.4
+370	01	1	0	Alabama	336213	Motor home manufacturing	33	2.4	0.0	0.0
+371	01	1	0	Alabama	336214	Travel trailer and camper manufacturing	33	13.6	190.6	5861.4
+372	01	1	0	Alabama	336310	Motor vehicle gasoline engine and engine parts manufacturing	33	7.0	0.0	0.0
+373	01	1	0	Alabama	336320	Motor vehicle electrical and electronic equipment manufacturing	33	18.4	1518.0	65669.0
+374	01	1	0	Alabama	336330	Motor vehicle steering and suspension components (except spring) manufacturing	33	6.0	213.6	10218.4
+375	01	1	0	Alabama	336340	Motor vehicle brake system manufacturing	33	5.0	225.8	16094.0
+376	01	1	0	Alabama	336350	Motor vehicle transmission and power train parts manufacturing	33	12.2	1008.2	47848.0
+377	01	1	0	Alabama	336360	Motor vehicle seating and interior trim manufacturing	33	20.6	3938.6	150910.0
+378	01	1	0	Alabama	336370	Motor vehicle metal stamping	33	20.4	5531.4	244581.2
+379	01	1	0	Alabama	336390	Other motor vehicle parts manufacturing	33	51.4	7565.0	335013.6
+380	01	1	0	Alabama	336411	Aircraft manufacturing	33	9.4	1930.2	114390.8
+381	01	1	0	Alabama	336412	Aircraft engine and engine parts manufacturing	33	5.6	259.4	16483.8
+382	01	1	0	Alabama	336413	Other aircraft parts and auxiliary equipment manufacturing	33	8.6	1430.2	75552.2
+383	01	1	0	Alabama	336414	Guided missile and space vehicle manufacturing	33	4.0	1202.8	93257.6
+384	01	1	0	Alabama	336415	Guided missile and space vehicle propulsion unit and propulsion unit parts manufacturing	33	1.0	0.0	0.0
+385	01	1	0	Alabama	336419	Other guided missile and space vehicle parts and auxiliary equipment manufacturing	33	1.8	0.0	0.0
+386	01	1	0	Alabama	336510	Railroad rolling stock manufacturing	33	7.2	570.6	26587.6
+387	01	1	0	Alabama	336611	Ship building and repairing	33	29.2	5603.2	302738.4
+388	01	1	0	Alabama	336612	Boat building	33	10.0	169.2	7167.6
+389	01	1	0	Alabama	336991	Motorcycle, bicycle, and parts manufacturing	33	4.8	22.2	1505.2
+390	01	1	0	Alabama	336992	Military armored vehicle, tank, and tank component manufacturing	33	3.8	545.4	30684.8
+391	01	1	0	Alabama	336999	All other transportation equipment manufacturing	33	5.4	79.8	2924.0
+392	01	1	0	Alabama	337110	Wood kitchen cabinet and countertop manufacturing	33	168.6	3513.0	120710.8
+393	01	1	0	Alabama	337121	Upholstered household furniture manufacturing	33	6.8	211.8	6896.4
+394	01	1	0	Alabama	337122	Nonupholstered wood household furniture manufacturing	33	20.0	418.4	11099.0
+395	01	1	0	Alabama	337124	Metal household furniture manufacturing	33	7.2	377.6	16519.0
+396	01	1	0	Alabama	337125	Household furniture (except wood and metal) manufacturing	33	3.0	15.0	329.6
+397	01	1	0	Alabama	337127	Institutional furniture manufacturing	33	10.2	385.2	13310.8
+398	01	1	0	Alabama	337211	Wood office furniture manufacturing	33	4.6	209.6	5390.0
+399	01	1	0	Alabama	337212	Custom architectural woodwork and millwork manufacturing	33	14.4	293.0	11859.8
+400	01	1	0	Alabama	337214	Office furniture (except wood) manufacturing	33	1.6	0.0	0.0
+401	01	1	0	Alabama	337215	Showcase, partition, shelving, and locker manufacturing	33	16.2	531.4	23445.2
+402	01	1	0	Alabama	337910	Mattress manufacturing	33	6.4	308.2	8752.8
+403	01	1	0	Alabama	337920	Blind and shade manufacturing	33	5.4	25.8	1006.4
+404	01	1	0	Alabama	339112	Surgical and medical instrument manufacturing	33	5.6	191.6	12302.6
+405	01	1	0	Alabama	339113	Surgical appliance and supplies manufacturing	33	26.0	1104.6	44489.0
+406	01	1	0	Alabama	339114	Dental equipment and supplies manufacturing	33	5.2	0.0	0.0
+407	01	1	0	Alabama	339115	Ophthalmic goods manufacturing	33	4.2	56.2	1879.6
+408	01	1	0	Alabama	339116	Dental laboratories	33	88.6	821.0	33407.0
+409	01	1	0	Alabama	339910	Jewelry and silverware manufacturing	33	5.6	20.2	1183.6
+410	01	1	0	Alabama	339920	Sporting and athletic goods manufacturing	33	29.8	248.2	14017.4
+411	01	1	0	Alabama	339930	Doll, toy, and game manufacturing	33	2.0	0.0	0.0
+412	01	1	0	Alabama	339940	Office supplies (except paper) manufacturing	33	6.0	39.2	1882.0
+413	01	1	0	Alabama	339950	Sign manufacturing	33	64.2	884.6	34491.6
+414	01	1	0	Alabama	339991	Gasket, packing, and sealing device manufacturing	33	10.2	412.2	20980.2
+415	01	1	0	Alabama	339992	Musical instrument manufacturing	33	1.0	0.0	0.0
+416	01	1	0	Alabama	339993	Fastener, button, needle, and pin manufacturing	33	1.6	0.0	0.0
+417	01	1	0	Alabama	339994	Broom, brush, and mop manufacturing	33	1.2	0.0	0.0
+418	01	1	0	Alabama	339995	Burial casket manufacturing	33	3.4	212.8	7233.6
+419	01	1	0	Alabama	339999	All other miscellaneous manufacturing	33	36.6	1048.8	49489.8
+420	01	1	0	Alabama	423110	Automobile and other motor vehicle merchant wholesalers	42	131.4	2358.8	115434.4
+421	01	1	0	Alabama	423120	Motor vehicle supplies and new parts merchant wholesalers	42	200.2	2694.0	111721.4
+422	01	1	0	Alabama	423130	Tire and tube merchant wholesalers	42	57.4	680.0	30867.0
+423	01	1	0	Alabama	423140	Motor vehicle parts (used) merchant wholesalers	42	34.0	305.6	10981.8
+424	01	1	0	Alabama	423210	Furniture merchant wholesalers	42	50.2	393.4	21967.4
+425	01	1	0	Alabama	423220	Home furnishing merchant wholesalers	42	47.4	349.0	17097.4
+426	01	1	0	Alabama	423310	Lumber, plywood, millwork, and wood panel merchant wholesalers	42	156.2	1892.8	95889.6
+427	01	1	0	Alabama	423320	Brick, stone, and related construction material merchant wholesalers	42	53.2	471.4	23385.2
+428	01	1	0	Alabama	423330	Roofing, siding, and insulation material merchant wholesalers	42	65.6	521.4	28037.0
+429	01	1	0	Alabama	423390	Other construction material merchant wholesalers	42	56.8	695.4	39665.2
+430	01	1	0	Alabama	423410	Photographic equipment and supplies merchant wholesalers	42	7.8	131.2	10096.6
+431	01	1	0	Alabama	423420	Office equipment merchant wholesalers	42	110.6	812.0	65322.6
+432	01	1	0	Alabama	423430	Computer and computer peripheral equipment and software merchant wholesalers	42	67.4	1421.6	118863.6
+433	01	1	0	Alabama	423440	Other commercial equipment merchant wholesalers	42	39.2	474.4	23701.6
+434	01	1	0	Alabama	423450	Medical, dental, and hospital equipment and supplies merchant wholesalers	42	104.2	1244.2	112471.6
+435	01	1	0	Alabama	423460	Ophthalmic goods merchant wholesalers	42	11.0	92.6	2228.2
+436	01	1	0	Alabama	423490	Other professional equipment and supplies merchant wholesalers	42	19.6	204.0	10322.2
+437	01	1	0	Alabama	423510	Metal service centers and other metal merchant wholesalers	42	191.2	3123.2	186814.0
+438	01	1	0	Alabama	423520	Coal and other mineral and ore merchant wholesalers	42	16.4	111.6	11396.4
+439	01	1	0	Alabama	423610	Electrical apparatus and equipment, wiring supplies, and related equipment merchant wholesalers	42	217.0	2190.8	135851.6
+440	01	1	0	Alabama	423620	Household appliances, electric housewares, and consumer electronics merchant wholesalers 	42	26.0	348.6	20082.8
+441	01	1	0	Alabama	423690	Other electronic parts and equipment merchant wholesalers	42	129.6	1223.6	98879.6
+442	01	1	0	Alabama	423710	Hardware merchant wholesalers	42	82.0	1321.8	57775.0
+443	01	1	0	Alabama	423720	Plumbing and heating equipment and supplies (hydronics) merchant wholesalers	42	69.6	1027.4	62601.0
+444	01	1	0	Alabama	423730	Warm air heating and air-conditioning equipment and supplies merchant wholesalers	42	119.4	1060.2	104132.2
+445	01	1	0	Alabama	423740	Refrigeration equipment and supplies merchant wholesalers	42	19.0	214.8	12511.6
+446	01	1	0	Alabama	423810	Construction and mining (except oil well) machinery and equipment merchant wholesalers	42	92.0	2190.0	140236.6
+447	01	1	0	Alabama	423820	Farm and garden machinery and equipment merchant wholesalers	42	131.6	1209.2	48149.2
+448	01	1	0	Alabama	423830	Industrial machinery and equipment merchant wholesalers	42	447.8	4337.6	263314.6
+449	01	1	0	Alabama	423840	Industrial supplies merchant wholesalers	42	151.0	1448.6	85642.8
+450	01	1	0	Alabama	423850	Service establishment equipment and supplies merchant wholesalers	42	62.4	592.8	25078.8
+451	01	1	0	Alabama	423860	Transportation equipment and supplies (except motor vehicle) merchant wholesalers	42	28.6	357.8	20621.8
+452	01	1	0	Alabama	423910	Sporting and recreational goods and supplies merchant wholesalers	42	64.6	736.2	34430.8
+453	01	1	0	Alabama	423920	Toy and hobby goods and supplies merchant wholesalers	42	8.2	6.4	351.6
+454	01	1	0	Alabama	423930	Recyclable material merchant wholesalers	42	196.6	2455.2	92749.8
+455	01	1	0	Alabama	423940	Jewelry, watch, precious stone, and precious metal merchant wholesalers	42	29.4	111.8	5148.0
+456	01	1	0	Alabama	423990	Other miscellaneous durable goods merchant wholesalers	42	133.0	1382.4	62392.2
+457	01	1	0	Alabama	424110	Printing and writing paper merchant wholesalers	42	6.6	0.0	0.0
+458	01	1	0	Alabama	424120	Stationery and office supplies merchant wholesalers	42	74.0	580.0	25976.6
+459	01	1	0	Alabama	424130	Industrial and personal service paper merchant wholesalers	42	51.4	945.6	48650.6
+460	01	1	0	Alabama	424210	Drugs and druggists' sundries merchant wholesalers	42	92.0	2749.8	268955.2
+461	01	1	0	Alabama	424310	Piece goods, notions, and other dry goods merchant wholesalers	42	16.6	205.0	8504.4
+462	01	1	0	Alabama	424320	Men's and boys' clothing and furnishings merchant wholesalers	42	25.0	515.8	19674.2
+463	01	1	0	Alabama	424330	Women's, children's, and infants' clothing and accessories merchant wholesalers	42	26.4	205.6	7161.4
+464	01	1	0	Alabama	424340	Footwear merchant wholesalers	42	2.8	3.8	179.0
+465	01	1	0	Alabama	424410	General line grocery merchant wholesalers	42	26.2	2733.0	148028.8
+466	01	1	0	Alabama	424420	Packaged frozen food merchant wholesalers	42	32.0	959.6	46758.4
+467	01	1	0	Alabama	424430	Dairy product (except dried or canned) merchant wholesalers	42	19.8	462.2	19853.6
+468	01	1	0	Alabama	424440	Poultry and poultry product merchant wholesalers	42	6.8	30.4	6957.6
+469	01	1	0	Alabama	424450	Confectionery merchant wholesalers	42	40.8	277.8	15676.6
+470	01	1	0	Alabama	424460	Fish and seafood merchant wholesalers	42	18.0	353.0	8584.8
+471	01	1	0	Alabama	424470	Meat and meat product merchant wholesalers	42	12.8	395.2	15218.2
+472	01	1	0	Alabama	424480	Fresh fruit and vegetable merchant wholesalers	42	26.0	457.2	18478.8
+473	01	1	0	Alabama	424490	Other grocery and related products merchant wholesalers	42	160.8	4656.0	205968.0
+474	01	1	0	Alabama	424510	Grain and field bean merchant wholesalers	42	17.2	209.2	10314.4
+475	01	1	0	Alabama	424520	Livestock merchant wholesalers	42	17.4	183.6	4181.2
+476	01	1	0	Alabama	424590	Other farm product raw material merchant wholesalers	42	12.2	30.0	1338.6
+477	01	1	0	Alabama	424610	Plastics materials and basic forms and shapes merchant wholesalers	42	35.8	369.8	15423.2
+478	01	1	0	Alabama	424690	Other chemical and allied products merchant wholesalers	42	112.6	1026.2	59605.8
+479	01	1	0	Alabama	424710	Petroleum bulk stations and terminals 	42	104.6	1261.8	61197.4
+480	01	1	0	Alabama	424720	Petroleum and petroleum products merchant wholesalers (except bulk stations and terminals) 	42	47.0	337.2	13965.2
+481	01	1	0	Alabama	424810	Beer and ale merchant wholesalers	42	28.4	2077.6	90119.6
+482	01	1	0	Alabama	424820	Wine and distilled alcoholic beverage merchant wholesalers	42	19.0	652.4	33564.2
+483	01	1	0	Alabama	424910	Farm supplies merchant wholesalers	42	79.4	1052.2	50589.8
+484	01	1	0	Alabama	424920	Book, periodical, and newspaper merchant wholesalers	42	22.0	632.4	18437.2
+485	01	1	0	Alabama	424930	Flower, nursery stock, and florists' supplies merchant wholesalers	42	47.8	458.8	12016.6
+486	01	1	0	Alabama	424940	Tobacco and tobacco product merchant wholesalers	42	19.6	533.2	21964.4
+487	01	1	0	Alabama	424950	Paint, varnish, and supplies merchant wholesalers	42	27.0	154.0	6825.8
+488	01	1	0	Alabama	424990	Other miscellaneous nondurable goods merchant wholesalers	42	87.4	627.8	22708.4
+489	01	1	0	Alabama	425110	Business to business electronic markets	42	4.6	5.8	302.4
+490	01	1	0	Alabama	425120	Wholesale trade agents and brokers	42	609.0	3762.4	180327.2
+491	01	1	0	Alabama	441110	New car dealers	44	355.8	15049.0	744454.0
+492	01	1	0	Alabama	441120	Used car dealers	44	568.8	2876.4	105258.0
+493	01	1	0	Alabama	441210	Recreational vehicle dealers	44	39.6	478.6	21114.2
+494	01	1	0	Alabama	441222	Boat dealers	44	75.8	508.2	18579.6
+495	01	1	0	Alabama	441228	Motorcycle, ATV, and all other motor vehicle dealers	44	107.2	1138.0	42352.8
+496	01	1	0	Alabama	441310	Automotive parts and accessories stores	44	805.2	6595.2	147134.2
+497	01	1	0	Alabama	441320	Tire dealers	44	427.4	3185.6	105876.4
+498	01	1	0	Alabama	442110	Furniture stores	44	487.6	3265.2	97851.4
+499	01	1	0	Alabama	442210	Floor covering stores	44	178.4	982.2	34854.8
+500	01	1	0	Alabama	442291	Window treatment stores	44	13.6	26.0	1206.8
+501	01	1	0	Alabama	442299	All other home furnishings stores	44	238.8	2282.4	36078.2
+502	01	1	0	Alabama	443141	Household appliance stores	44	145.6	1116.2	44766.2
+503	01	1	0	Alabama	443142	Electronics stores	44	491.8	2982.6	91084.2
+504	01	1	0	Alabama	444110	Home centers	44	160.8	4614.4	105717.8
+505	01	1	0	Alabama	444120	Paint and wallpaper stores	44	123.2	387.6	17728.6
+506	01	1	0	Alabama	444130	Hardware stores	44	242.4	1456.0	37118.6
+507	01	1	0	Alabama	444190	Other building material dealers	44	458.0	4409.4	178373.0
+508	01	1	0	Alabama	444210	Outdoor power equipment stores	44	96.4	626.0	22151.6
+509	01	1	0	Alabama	444220	Nursery, garden center, and farm supply stores	44	275.2	1561.0	51414.2
+510	01	1	0	Alabama	445110	Supermarkets and other grocery (except convenience) stores	44	765.0	29669.0	582839.0
+511	01	1	0	Alabama	445120	Convenience stores	44	266.8	689.0	11399.0
+512	01	1	0	Alabama	445210	Meat markets	44	46.0	318.0	5364.4
+513	01	1	0	Alabama	445220	Fish and seafood markets	44	31.0	219.4	3461.2
+514	01	1	0	Alabama	445230	Fruit and vegetable markets	44	30.6	221.8	3391.6
+515	01	1	0	Alabama	445291	Baked goods stores	44	20.6	84.0	2287.6
+516	01	1	0	Alabama	445292	Confectionery and nut stores	44	20.6	84.2	1501.6
+517	01	1	0	Alabama	445299	All other specialty food stores	44	38.4	172.2	3460.6
+518	01	1	0	Alabama	445310	Beer, wine, and liquor stores	44	362.2	1131.8	26214.4
+519	01	1	0	Alabama	446110	Pharmacies and drug stores	44	1007.6	13173.4	495562.6
+520	01	1	0	Alabama	446120	Cosmetics, beauty supplies, and perfume stores	44	279.0	1886.4	29797.8
+521	01	1	0	Alabama	446130	Optical goods stores	44	136.8	817.0	18404.0
+522	01	1	0	Alabama	446191	Food (health) supplement stores	44	110.2	439.6	7836.4
+523	01	1	0	Alabama	446199	All other health and personal care stores	44	193.8	1167.4	44350.2
+524	01	1	0	Alabama	447110	Gasoline stations with convenience stores	44	2896.6	15002.8	253017.0
+525	01	1	0	Alabama	447190	Other gasoline stations	44	174.8	2202.4	49361.4
+526	01	1	0	Alabama	448110	Men's clothing stores	44	128.8	866.8	18884.8
+527	01	1	0	Alabama	448120	Women's clothing stores	44	638.2	5337.8	68438.0
+528	01	1	0	Alabama	448130	Children's and infants' clothing stores	44	120.8	994.8	12472.2
+529	01	1	0	Alabama	448140	Family clothing stores	44	448.6	7955.4	99543.0
+530	01	1	0	Alabama	448150	Clothing accessories stores	44	89.6	671.6	8852.4
+531	01	1	0	Alabama	448190	Other clothing stores	44	151.6	1301.6	19686.2
+532	01	1	0	Alabama	448210	Shoe stores	44	409.0	3264.6	49163.6
+533	01	1	0	Alabama	448310	Jewelry stores	44	272.2	1594.8	43520.6
+534	01	1	0	Alabama	448320	Luggage and leather goods stores	44	7.6	12.4	430.0
+535	01	1	0	Alabama	451110	Sporting goods stores	45	260.8	4015.0	73584.4
+536	01	1	0	Alabama	451120	Hobby, toy, and game stores	45	82.8	1689.6	28463.0
+537	01	1	0	Alabama	451130	Sewing, needlework, and piece goods stores	45	59.0	403.0	4584.4
+538	01	1	0	Alabama	451140	Musical instrument and supplies stores	45	57.6	402.8	9448.4
+539	01	1	0	Alabama	451211	Book stores	45	132.0	931.6	19843.6
+540	01	1	0	Alabama	451212	News dealers and newsstands	45	3.8	0.0	0.0
+541	01	1	0	Alabama	452111	Department stores (except discount department stores)	45	62.2	6218.6	116341.4
+542	01	1	0	Alabama	452112	Discount department stores	45	57.0	4717.4	88718.2
+543	01	1	0	Alabama	452910	Warehouse clubs and supercenters	45	121.0	0.0	0.0
+544	01	1	0	Alabama	452990	All other general merchandise stores	45	1172.4	9778.0	152580.2
+545	01	1	0	Alabama	453110	Florists	45	249.2	933.0	14283.8
+546	01	1	0	Alabama	453210	Office supplies and stationery stores	45	105.0	1196.2	28665.2
+547	01	1	0	Alabama	453220	Gift, novelty, and souvenir stores	45	280.0	1578.0	22059.2
+548	01	1	0	Alabama	453310	Used merchandise stores	45	322.2	2948.0	50244.6
+549	01	1	0	Alabama	453910	Pet and pet supplies stores	45	77.0	935.4	18998.0
+550	01	1	0	Alabama	453920	Art dealers	45	22.8	55.8	1150.2
+551	01	1	0	Alabama	453930	Manufactured (mobile) home dealers	45	72.2	369.4	12203.4
+552	01	1	0	Alabama	453991	Tobacco stores	45	119.0	394.8	7153.6
+553	01	1	0	Alabama	453998	All other miscellaneous store retailers (except tobacco stores)	45	217.4	936.6	26758.2
+554	01	1	0	Alabama	454111	Electronic shopping	45	173.2	886.0	28157.8
+555	01	1	0	Alabama	454112	Electronic auctions	45	3.0	0.0	0.0
+556	01	1	0	Alabama	454113	Mail-order houses	45	49.6	1046.2	48715.4
+557	01	1	0	Alabama	454210	Vending machine operators	45	63.6	516.2	16182.0
+558	01	1	0	Alabama	454310	Fuel dealers	45	160.0	949.2	32281.8
+559	01	1	0	Alabama	454390	Other direct selling establishments	45	225.8	1049.6	32509.4
+560	01	1	0	Alabama	481111	Scheduled passenger air transportation	48	16.6	111.8	4650.4
+561	01	1	0	Alabama	481112	Scheduled freight air transportation	48	3.0	0.0	0.0
+562	01	1	0	Alabama	481211	Nonscheduled chartered passenger air transportation	48	17.8	68.6	4934.8
+563	01	1	0	Alabama	481212	Nonscheduled chartered freight air transportation	48	1.0	0.0	0.0
+564	01	1	0	Alabama	481219	Other nonscheduled air transportation	48	4.0	1.2	320.8
+565	01	1	0	Alabama	483111	Deep sea freight transportation	48	3.0	0.0	0.0
+566	01	1	0	Alabama	483112	Deep sea passenger transportation	48	1.0	0.0	0.0
+567	01	1	0	Alabama	483113	Coastal and great lakes freight transportation	48	4.4	9.0	523.4
+568	01	1	0	Alabama	483114	Coastal and great lakes passenger transportation	48	1.0	0.0	0.0
+569	01	1	0	Alabama	483211	Inland water freight transportation	48	8.0	196.2	16262.8
+570	01	1	0	Alabama	483212	Inland water passenger transportation	48	3.8	5.2	264.6
+571	01	1	0	Alabama	484110	General freight trucking, local	48	280.4	2525.6	96046.2
+572	01	1	0	Alabama	484121	General freight trucking, long-distance, truckload	48	572.6	12195.4	484743.2
+573	01	1	0	Alabama	484122	General freight trucking, long-distance, less than truckload	48	115.0	3644.6	190558.4
+574	01	1	0	Alabama	484210	Used household and office goods moving	48	81.2	959.2	29203.0
+575	01	1	0	Alabama	484220	Specialized freight (except used goods) trucking, local	48	471.6	3537.2	130091.8
+576	01	1	0	Alabama	484230	Specialized freight (except used goods) trucking, long-distance	48	201.6	3021.2	133722.8
+577	01	1	0	Alabama	485113	Bus and other motor vehicle transit systems	48	4.4	57.2	1465.6
+578	01	1	0	Alabama	485210	Interurban and rural bus transportation	48	3.2	49.4	1331.0
+579	01	1	0	Alabama	485310	Taxi service	48	14.4	60.8	1673.2
+580	01	1	0	Alabama	485320	Limousine service	48	15.6	49.2	1202.8
+581	01	1	0	Alabama	485410	School and employee bus transportation	48	13.0	523.0	8237.8
+582	01	1	0	Alabama	485510	Charter bus industry	48	19.6	413.6	9026.8
+583	01	1	0	Alabama	485991	Special needs transportation	48	17.4	177.4	3887.8
+584	01	1	0	Alabama	485999	All other transit and ground passenger transportation	48	12.8	72.4	1475.2
+585	01	1	0	Alabama	486110	Pipeline transportation of crude oil	48	11.0	122.4	10458.4
+586	01	1	0	Alabama	486210	Pipeline transportation of natural gas	48	45.4	342.2	53333.2
+587	01	1	0	Alabama	486910	Pipeline transportation of refined petroleum products	48	6.0	14.8	3305.8
+588	01	1	0	Alabama	487110	Scenic and sightseeing transportation, land	48	1.6666666666666667	0.0	0.0
+589	01	1	0	Alabama	487210	Scenic and sightseeing transportation, water	48	29.4	55.0	2193.8
+590	01	1	0	Alabama	488111	Air traffic control	48	2.0	0.0	0.0
+591	01	1	0	Alabama	488119	Other airport operations	48	33.6	640.0	15921.8
+592	01	1	0	Alabama	488190	Other support activities for air transportation	48	53.8	5011.6	350993.2
+593	01	1	0	Alabama	488210	Support activities for rail transportation	48	44.0	841.2	38056.0
+594	01	1	0	Alabama	488310	Port and harbor operations	48	3.0	21.0	1189.6
+595	01	1	0	Alabama	488320	Marine cargo handling	48	13.0	541.4	31263.0
+596	01	1	0	Alabama	488330	Navigational services to shipping	48	14.0	161.4	8660.8
+597	01	1	0	Alabama	488390	Other support activities for water transportation	48	15.8	426.2	22029.0
+598	01	1	0	Alabama	488410	Motor vehicle towing	48	113.6	628.4	20028.0
+599	01	1	0	Alabama	488490	Other support activities for road transportation	48	33.6	252.6	6258.2
+600	01	1	0	Alabama	488510	Freight transportation arrangement	48	178.2	1711.6	84124.8
+601	01	1	0	Alabama	488991	Packing and crating	48	7.2	17.4	779.2
+602	01	1	0	Alabama	488999	All other support activities for transportation	48	2.0	5.0	225.4
+603	01	1	0	Alabama	492110	Couriers and express delivery services	49	139.8	3964.8	175664.2
+604	01	1	0	Alabama	492210	Local messengers and local delivery	49	33.6	355.0	13434.4
+605	01	1	0	Alabama	493110	General warehousing and storage	49	155.4	11315.8	396226.2
+606	01	1	0	Alabama	493120	Refrigerated warehousing and storage	49	19.0	480.8	19355.8
+607	01	1	0	Alabama	493130	Farm product warehousing and storage	49	11.6	78.6	3650.4
+608	01	1	0	Alabama	493190	Other warehousing and storage	49	35.6	903.8	48075.0
+609	01	1	0	Alabama	511110	Newspaper publishers	51	109.6	3015.6	103653.0
+610	01	1	0	Alabama	511120	Periodical publishers	51	73.8	2370.0	134248.0
+611	01	1	0	Alabama	511130	Book publishers	51	23.6	111.4	4809.6
+612	01	1	0	Alabama	511140	Directory and mailing list publishers	51	10.2	27.8	1277.6
+613	01	1	0	Alabama	511191	Greeting card publishers	51	1.0	0.0	0.0
+614	01	1	0	Alabama	511199	All other publishers	51	6.4	44.8	2523.6
+615	01	1	0	Alabama	511210	Software publishers	51	68.2	2004.6	159899.8
+616	01	1	0	Alabama	512110	Motion picture and video production	51	51.4	198.2	9931.4
+617	01	1	0	Alabama	512131	Motion picture theaters (except drive-ins)	51	52.2	1403.0	17859.4
+618	01	1	0	Alabama	512132	Drive-in motion picture theaters	51	2.8	4.2	74.0
+619	01	1	0	Alabama	512191	Teleproduction and other postproduction services	51	4.6	0.0	0.0
+620	01	1	0	Alabama	512199	Other motion picture and video industries	51	1.0	0.0	0.0
+621	01	1	0	Alabama	512210	Record production	51	1.0	0.0	0.0
+622	01	1	0	Alabama	512220	Integrated record production/distribution	51	1.0	0.0	0.0
+623	01	1	0	Alabama	512230	Music publishers	51	3.4	3.2	95.0
+624	01	1	0	Alabama	512240	Sound recording studios	51	11.2	15.6	992.6
+625	01	1	0	Alabama	512290	Other sound recording industries	51	1.8	0.0	0.0
+626	01	1	0	Alabama	515111	Radio networks	51	9.8	18.0	1152.8
+627	01	1	0	Alabama	515112	Radio stations	51	127.4	1227.0	44735.4
+628	01	1	0	Alabama	515120	Television broadcasting	51	38.8	1512.2	79667.0
+629	01	1	0	Alabama	515210	Cable and other subscription programming	51	2.6	0.0	0.0
+630	01	1	0	Alabama	517110	Wired telecommunications carriers	51	516.0	10920.4	669592.2
+631	01	1	0	Alabama	517210	Wireless telecommunications carriers (except satellite)	51	214.6	1467.6	119604.4
+632	01	1	0	Alabama	517410	Satellite telecommunications	51	2.4	3.6	235.0
+633	01	1	0	Alabama	517911	Telecommunications resellers	51	11.4	42.6	1747.6
+634	01	1	0	Alabama	517919	All other telecommunications	51	28.6	73.4	6480.6
+635	01	1	0	Alabama	518210	Data processing, hosting, and related services	51	109.4	4676.2	269636.2
+636	01	1	0	Alabama	519110	News syndicates	51	3.2	0.0	0.0
+637	01	1	0	Alabama	519120	Libraries and archives	51	14.2	91.4	1827.8
+638	01	1	0	Alabama	519130	Internet publishing and broadcasting and web search portals	51	36.8	214.2	14538.8
+639	01	1	0	Alabama	519190	All other information services	51	2.8	6.2	250.6
+640	01	1	0	Alabama	521110	Monetary authorities - central bank	52	1.0	0.0	0.0
+641	01	1	0	Alabama	522110	Commercial banking	52	1663.6	27325.2	1654545.2
+642	01	1	0	Alabama	522120	Savings institutions	52	34.8	412.8	17285.6
+643	01	1	0	Alabama	522130	Credit unions	52	396.8	4800.8	196457.4
+644	01	1	0	Alabama	522190	Other depository credit intermediation	52	16.0	0.0	0.0
+645	01	1	0	Alabama	522210	Credit card issuing	52	2.6	0.0	0.0
+646	01	1	0	Alabama	522220	Sales financing	52	53.4	236.8	15666.6
+647	01	1	0	Alabama	522291	Consumer lending	52	678.0	2355.2	89810.6
+648	01	1	0	Alabama	522292	Real estate credit	52	221.8	1391.8	98448.2
+649	01	1	0	Alabama	522293	International trade financing	52	1.0	0.0	0.0
+650	01	1	0	Alabama	522294	Secondary market financing	52	1.0	0.0	0.0
+651	01	1	0	Alabama	522298	All other nondepository credit intermediation	52	426.0	1576.6	57895.0
+652	01	1	0	Alabama	522310	Mortgage and nonmortgage loan brokers	52	58.6	373.4	25977.6
+653	01	1	0	Alabama	522320	Financial transactions processing, reserve, and clearinghouse activities	52	21.6	141.6	9478.8
+654	01	1	0	Alabama	522390	Other activities related to credit intermediation	52	483.0	590.6	47065.2
+655	01	1	0	Alabama	523110	Investment banking and securities dealing	52	27.4	200.2	35322.6
+656	01	1	0	Alabama	523120	Securities brokerage	52	373.6	2034.0	293379.8
+657	01	1	0	Alabama	523130	Commodity contracts dealing	52	4.0	0.0	316.5
+658	01	1	0	Alabama	523140	Commodity contracts brokerage	52	5.8	5.6	1705.8
+659	01	1	0	Alabama	523910	Miscellaneous intermediation	52	58.0	63.4	14574.6
+660	01	1	0	Alabama	523920	Portfolio management	52	128.8	571.2	55166.4
+661	01	1	0	Alabama	523930	Investment advice	52	144.6	569.6	61511.8
+662	01	1	0	Alabama	523991	Trust, fiduciary, and custody activities	52	20.6	203.0	11790.2
+663	01	1	0	Alabama	523999	Miscellaneous financial investment activities	52	5.6	2.2	885.2
+664	01	1	0	Alabama	524113	Direct life insurance carriers	52	127.6	4182.8	362433.6
+665	01	1	0	Alabama	524114	Direct health and medical insurance carriers	52	63.0	4262.2	373005.6
+666	01	1	0	Alabama	524126	Direct property and casualty insurance carriers	52	421.8	5147.4	376346.0
+667	01	1	0	Alabama	524127	Direct title insurance carriers	52	16.8	125.6	5228.2
+668	01	1	0	Alabama	524128	Other direct insurance (except life, health, and medical) carriers	52	9.0	48.2	3227.8
+669	01	1	0	Alabama	524210	Insurance agencies and brokerages	52	1643.0	7344.2	436162.6
+670	01	1	0	Alabama	524291	Claims adjusting	52	63.4	3033.4	251253.2
+671	01	1	0	Alabama	524292	Third party administration of insurance and pension funds	52	51.8	1486.2	94029.6
+672	01	1	0	Alabama	524298	All other insurance related activities	52	21.4	142.4	8734.2
+673	01	1	0	Alabama	525910	Open-end investment funds	52	1.0	0.0	0.0
+674	01	1	0	Alabama	525990	Other financial vehicles	52	6.6	0.0	0.0
+675	01	1	0	Alabama	531110	Lessors of residential buildings and dwellings	53	767.4	3612.6	106217.4
+676	01	1	0	Alabama	531120	Lessors of nonresidential buildings (except miniwarehouses)	53	353.4	1503.8	81565.6
+677	01	1	0	Alabama	531130	Lessors of miniwarehouses and self-storage units	53	304.0	694.2	17149.2
+678	01	1	0	Alabama	531190	Lessors of other real estate property	53	84.6	218.6	6246.0
+679	01	1	0	Alabama	531210	Offices of real estate agents and brokers	53	868.0	3017.8	133158.4
+680	01	1	0	Alabama	531311	Residential property managers	53	341.0	5457.8	176788.2
+681	01	1	0	Alabama	531312	Nonresidential property managers	53	127.4	1223.2	66910.8
+682	01	1	0	Alabama	531320	Offices of real estate appraisers	53	185.6	380.8	16179.8
+683	01	1	0	Alabama	531390	Other activities related to real estate	53	97.8	318.4	17621.6
+684	01	1	0	Alabama	532111	Passenger car rental	53	127.6	514.2	14684.8
+685	01	1	0	Alabama	532112	Passenger car leasing	53	4.4	14.6	1295.8
+686	01	1	0	Alabama	532120	Truck, utility trailer, and RV (recreational vehicle) rental and leasing	53	111.0	713.8	28865.2
+687	01	1	0	Alabama	532210	Consumer electronics and appliances rental	53	147.0	486.8	26880.8
+688	01	1	0	Alabama	532220	Formal wear and costume rental	53	20.4	72.8	1603.8
+689	01	1	0	Alabama	532230	Video tape and disc rental	53	33.6	51.8	1353.4
+690	01	1	0	Alabama	532291	Home health equipment rental	53	80.2	633.6	22905.6
+691	01	1	0	Alabama	532292	Recreational goods rental	53	19.8	111.2	3777.0
+692	01	1	0	Alabama	532299	All other consumer goods rental	53	72.0	484.8	14968.2
+693	01	1	0	Alabama	532310	General rental centers	53	40.6	251.6	7119.0
+694	01	1	0	Alabama	532411	Commercial air, rail, and water transportation equipment rental and leasing	53	6.2	11.6	1247.8
+695	01	1	0	Alabama	532412	Construction, mining, and forestry machinery and equipment rental and leasing	53	75.4	908.2	50978.2
+696	01	1	0	Alabama	532420	Office machinery and equipment rental and leasing	53	2.0	2.0	31.8
+697	01	1	0	Alabama	532490	Other commercial and industrial machinery and equipment rental and leasing	53	101.4	928.0	57805.4
+698	01	1	0	Alabama	533110	Lessors of nonfinancial intangible assets (except copyrighted works)	53	22.2	144.2	13041.0
+699	01	1	0	Alabama	541110	Offices of lawyers	54	2452.2	12913.2	896153.6
+700	01	1	0	Alabama	541191	Title abstract and settlement offices	54	119.2	547.0	26105.8
+701	01	1	0	Alabama	541199	All other legal services	54	17.2	74.8	4391.2
+702	01	1	0	Alabama	541211	Offices of certified public accountants	54	734.2	5309.4	314601.0
+703	01	1	0	Alabama	541213	Tax preparation services	54	408.8	2594.4	25583.2
+704	01	1	0	Alabama	541214	Payroll services	54	58.6	3866.0	160886.4
+705	01	1	0	Alabama	541219	Other accounting services	54	408.0	2057.4	66982.8
+706	01	1	0	Alabama	541310	Architectural services	54	191.8	1076.0	75989.2
+707	01	1	0	Alabama	541320	Landscape architectural services	54	32.4	77.8	3981.2
+708	01	1	0	Alabama	541330	Engineering services	54	863.8	22231.6	1877985.6
+709	01	1	0	Alabama	541340	Drafting services	54	43.2	77.8	6137.4
+710	01	1	0	Alabama	541350	Building inspection services	54	48.6	56.8	3203.6
+711	01	1	0	Alabama	541360	Geophysical surveying and mapping services	54	4.4	12.6	773.8
+712	01	1	0	Alabama	541370	Surveying and mapping (except geophysical) services	54	115.4	575.2	24749.2
+713	01	1	0	Alabama	541380	Testing laboratories	54	84.2	1096.4	58136.8
+714	01	1	0	Alabama	541410	Interior design services	54	107.2	219.8	11074.2
+715	01	1	0	Alabama	541420	Industrial design services	54	4.8	10.2	850.4
+716	01	1	0	Alabama	541430	Graphic design services	54	63.6	160.8	5905.4
+717	01	1	0	Alabama	541490	Other specialized design services	54	8.6	6.4	291.2
+718	01	1	0	Alabama	541511	Custom computer programming services	54	384.8	5416.8	451050.6
+719	01	1	0	Alabama	541512	Computer systems design services	54	534.2	10634.4	836248.6
+720	01	1	0	Alabama	541513	Computer facilities management services	54	78.4	985.6	71837.4
+721	01	1	0	Alabama	541519	Other computer related services	54	61.0	801.0	59360.4
+722	01	1	0	Alabama	541611	Administrative management and general management consulting services	54	503.2	2706.2	180790.8
+723	01	1	0	Alabama	541612	Human resources consulting services	54	59.2	591.8	26749.4
+724	01	1	0	Alabama	541613	Marketing consulting services	54	178.4	620.8	28396.8
+725	01	1	0	Alabama	541614	Process, physical distribution, and logistics consulting services	54	92.4	1307.8	69331.2
+726	01	1	0	Alabama	541618	Other management consulting services	54	32.6	97.8	5757.2
+727	01	1	0	Alabama	541620	Environmental consulting services	54	98.2	744.2	42150.8
+728	01	1	0	Alabama	541690	Other scientific and technical consulting services	54	161.4	669.2	37370.0
+729	01	1	0	Alabama	541711	Research and development in biotechnology	54	18.0	222.4	16800.4
+730	01	1	0	Alabama	541712	Research and development in the physical, engineering, and life sciences (except biotechnology)	54	182.8	6882.0	566770.6
+731	01	1	0	Alabama	541720	Research and development in the social sciences and humanities	54	10.8	38.8	2570.2
+732	01	1	0	Alabama	541810	Advertising agencies	54	114.4	984.4	61318.0
+733	01	1	0	Alabama	541820	Public relations agencies	54	44.8	104.6	6109.4
+734	01	1	0	Alabama	541830	Media buying agencies	54	5.6	17.8	469.4
+735	01	1	0	Alabama	541840	Media representatives	54	17.4	22.6	3121.6
+736	01	1	0	Alabama	541850	Outdoor advertising	54	24.4	232.4	13594.6
+737	01	1	0	Alabama	541860	Direct mail advertising	54	22.6	743.0	31570.2
+738	01	1	0	Alabama	541870	Advertising material distribution services	54	2.0	0.0	0.0
+739	01	1	0	Alabama	541890	Other services related to advertising	54	84.2	672.2	17141.8
+740	01	1	0	Alabama	541910	Marketing research and public opinion polling	54	15.4	167.2	7361.8
+741	01	1	0	Alabama	541921	Photography studios, portrait	54	154.6	733.8	12719.2
+742	01	1	0	Alabama	541922	Commercial photography	54	17.4	13.0	719.6
+743	01	1	0	Alabama	541930	Translation and interpretation services	54	12.8	20.0	738.0
+744	01	1	0	Alabama	541940	Veterinary services	54	527.2	4991.2	139675.2
+745	01	1	0	Alabama	541990	All other professional, scientific, and technical services	54	85.0	431.6	18495.2
+746	01	1	0	Alabama	551111	Offices of bank holding companies	55	14.6	98.2	5041.8
+747	01	1	0	Alabama	551112	Offices of other holding companies	55	53.4	679.0	56229.8
+748	01	1	0	Alabama	551114	Corporate, subsidiary, and regional managing offices	55	566.2	17600.8	1481986.4
+749	01	1	0	Alabama	561110	Office administrative services	56	233.6	5016.6	225330.4
+750	01	1	0	Alabama	561210	Facilities support services	56	78.0	3979.0	178240.6
+751	01	1	0	Alabama	561311	Employment placement agencies	56	47.0	1197.2	28351.4
+752	01	1	0	Alabama	561312	Executive search services	56	26.2	134.2	15505.2
+753	01	1	0	Alabama	561320	Temporary help services	56	454.6	49990.2	1215753.6
+754	01	1	0	Alabama	561330	Professional employer organizations	56	46.2	24300.2	622787.6
+755	01	1	0	Alabama	561410	Document preparation services	56	24.0	248.0	6563.6
+756	01	1	0	Alabama	561421	Telephone answering services	56	22.0	678.2	16625.4
+757	01	1	0	Alabama	561422	Telemarketing bureaus and other contact centers	56	33.6	5203.6	107778.6
+758	01	1	0	Alabama	561431	Private mail centers	56	68.8	285.8	5703.4
+759	01	1	0	Alabama	561439	Other business service centers (including copy shops)	56	45.0	332.8	10869.2
+760	01	1	0	Alabama	561440	Collection agencies	56	47.2	2284.4	74140.6
+761	01	1	0	Alabama	561450	Credit bureaus	56	3.8	15.0	2087.8
+762	01	1	0	Alabama	561491	Repossession services	56	22.6	97.0	3019.6
+763	01	1	0	Alabama	561492	Court reporting and stenotype services	56	34.4	85.0	4151.6
+764	01	1	0	Alabama	561499	All other business support services	56	27.6	288.0	13072.6
+765	01	1	0	Alabama	561510	Travel agencies	56	65.8	451.6	24418.8
+766	01	1	0	Alabama	561520	Tour operators	56	7.4	56.0	2275.8
+767	01	1	0	Alabama	561591	Convention and visitors bureaus	56	10.6	126.4	6280.6
+768	01	1	0	Alabama	561599	All other travel arrangement and reservation services	56	25.8	76.0	7202.8
+769	01	1	0	Alabama	561611	Investigation services	56	51.4	261.8	11444.2
+770	01	1	0	Alabama	561612	Security guards and patrol services	56	116.0	8741.0	171123.0
+771	01	1	0	Alabama	561613	Armored car services	56	11.0	120.2	4465.0
+772	01	1	0	Alabama	561621	Security systems services (except locksmiths)	56	117.0	1219.0	56748.2
+773	01	1	0	Alabama	561622	Locksmiths	56	47.8	173.4	5019.2
+774	01	1	0	Alabama	561710	Exterminating and pest control services	56	280.0	2859.0	106335.2
+775	01	1	0	Alabama	561720	Janitorial services	56	614.6	11741.6	190965.8
+776	01	1	0	Alabama	561730	Landscaping services	56	1038.8	7852.8	236599.4
+777	01	1	0	Alabama	561740	Carpet and upholstery cleaning services	56	74.4	404.6	11114.0
+778	01	1	0	Alabama	561790	Other services to buildings and dwellings	56	103.6	525.6	16013.8
+779	01	1	0	Alabama	561910	Packaging and labeling services	56	9.2	37.0	1508.4
+780	01	1	0	Alabama	561920	Convention and trade show organizers	56	23.0	1194.0	11728.8
+781	01	1	0	Alabama	561990	All other support services	56	123.2	1537.8	56371.2
+782	01	1	0	Alabama	562111	Solid waste collection	56	107.4	1775.6	84118.4
+783	01	1	0	Alabama	562112	Hazardous waste collection	56	5.2	73.2	3550.6
+784	01	1	0	Alabama	562119	Other waste collection	56	14.2	153.6	8263.2
+785	01	1	0	Alabama	562211	Hazardous waste treatment and disposal	56	18.2	129.6	14556.2
+786	01	1	0	Alabama	562212	Solid waste landfill	56	39.6	558.8	27491.6
+787	01	1	0	Alabama	562213	Solid waste combustors and incinerators	56	1.0	0.0	0.0
+788	01	1	0	Alabama	562219	Other nonhazardous waste treatment and disposal	56	8.2	49.2	2607.8
+789	01	1	0	Alabama	562910	Remediation services	56	50.8	1076.4	43814.2
+790	01	1	0	Alabama	562920	Materials recovery facilities	56	13.8	137.6	4765.6
+791	01	1	0	Alabama	562991	Septic tank and related services	56	47.6	278.2	9839.4
+792	01	1	0	Alabama	562998	All other miscellaneous waste management services	56	14.0	396.8	17039.6
+793	01	1	0	Alabama	611110	Elementary and secondary schools	61	219.0	9626.4	231879.4
+794	01	1	0	Alabama	611210	Junior colleges	61	9.4	424.4	30456.8
+795	01	1	0	Alabama	611310	Colleges, universities, and professional schools	61	48.6	11863.8	383311.8
+796	01	1	0	Alabama	611410	Business and secretarial schools	61	1.0	0.0	0.0
+797	01	1	0	Alabama	611420	Computer training	61	6.2	13.8	375.6
+798	01	1	0	Alabama	611430	Professional and management development training	61	46.6	529.0	27693.4
+799	01	1	0	Alabama	611511	Cosmetology and barber schools	61	14.8	60.8	2876.4
+800	01	1	0	Alabama	611512	Flight training	61	14.6	333.8	22201.2
+801	01	1	0	Alabama	611513	Apprenticeship training	61	16.4	94.4	2112.8
+802	01	1	0	Alabama	611519	Other technical and trade schools	61	39.8	420.0	19207.8
+803	01	1	0	Alabama	611610	Fine arts schools	61	147.2	893.8	9317.2
+804	01	1	0	Alabama	611620	Sports and recreation instruction	61	133.2	833.6	11185.0
+805	01	1	0	Alabama	611630	Language schools	61	1.0	0.0	0.0
+806	01	1	0	Alabama	611691	Exam preparation and tutoring	61	79.0	606.8	6406.0
+807	01	1	0	Alabama	611692	Automobile driving schools	61	4.0	11.2	322.6
+808	01	1	0	Alabama	611699	All other miscellaneous schools and instruction	61	26.6	143.4	4118.2
+809	01	1	0	Alabama	611710	Educational support services	61	44.2	301.4	8332.4
+810	01	1	0	Alabama	621111	Offices of physicians (except mental health specialists)	62	2932.8	34262.6	2700008.2
+811	01	1	0	Alabama	621112	Offices of physicians, mental health specialists	62	123.4	825.6	40480.4
+812	01	1	0	Alabama	621210	Offices of dentists	62	1493.6	10819.8	492771.8
+813	01	1	0	Alabama	621310	Offices of chiropractors	62	405.6	1345.0	41289.0
+814	01	1	0	Alabama	621320	Offices of optometrists	62	350.2	1872.0	68336.2
+815	01	1	0	Alabama	621330	Offices of mental health practitioners (except physicians)	62	148.8	424.2	14322.6
+816	01	1	0	Alabama	621340	Offices of physical, occupational and speech therapists, and audiologists	62	436.0	3449.6	139260.0
+817	01	1	0	Alabama	621391	Offices of podiatrists	62	89.6	435.2	16431.4
+818	01	1	0	Alabama	621399	Offices of all other miscellaneous health practitioners	62	119.0	534.6	25112.8
+819	01	1	0	Alabama	621410	Family planning centers	62	25.0	104.4	2626.2
+820	01	1	0	Alabama	621420	Outpatient mental health and substance abuse centers	62	103.2	1476.4	53404.0
+821	01	1	0	Alabama	621492	Kidney dialysis centers	62	169.2	837.2	49725.4
+822	01	1	0	Alabama	621493	Freestanding ambulatory surgical and emergency centers	62	91.2	2586.4	120183.4
+823	01	1	0	Alabama	621498	All other outpatient care centers	62	158.4	5906.6	443197.2
+824	01	1	0	Alabama	621511	Medical laboratories	62	128.0	2148.0	130393.8
+825	01	1	0	Alabama	621512	Diagnostic imaging centers	62	84.0	1040.4	72043.6
+826	01	1	0	Alabama	621610	Home health care services	62	383.6	11356.0	442914.0
+827	01	1	0	Alabama	621910	Ambulance services	62	108.8	3916.6	122945.8
+828	01	1	0	Alabama	621991	Blood and organ banks	62	26.6	1122.0	39110.0
+829	01	1	0	Alabama	621999	All other miscellaneous ambulatory health care services	62	54.0	426.6	18878.8
+830	01	1	0	Alabama	622110	General medical and surgical hospitals	62	101.6	78837.0	3812097.2
+831	01	1	0	Alabama	622210	Psychiatric and substance abuse hospitals	62	8.6	2833.6	131579.8
+832	01	1	0	Alabama	622310	Specialty (except psychiatric and substance abuse) hospitals	62	16.2	2694.0	107781.0
+833	01	1	0	Alabama	623110	Nursing care facilities (skilled nursing facilities)	62	232.4	26440.0	700463.8
+834	01	1	0	Alabama	623210	Residential intellectual and developmental disability facilities	62	283.8	5547.4	96467.2
+835	01	1	0	Alabama	623220	Residential mental health and substance abuse facilities	62	80.8	2416.2	62223.8
+836	01	1	0	Alabama	623311	Continuing care retirement communities	62	61.8	4230.0	95856.6
+837	01	1	0	Alabama	623312	Assisted living facilities for the elderly	62	149.4	3424.2	65782.2
+838	01	1	0	Alabama	623990	Other residential care facilities	62	92.2	1804.6	42384.4
+839	01	1	0	Alabama	624110	Child and youth services	62	131.0	1361.8	34822.2
+840	01	1	0	Alabama	624120	Services for the elderly and persons with disabilities	62	251.6	6791.0	116389.0
+841	01	1	0	Alabama	624190	Other individual and family services	62	358.6	3557.2	93184.0
+842	01	1	0	Alabama	624210	Community food services	62	39.4	285.0	7606.6
+843	01	1	0	Alabama	624221	Temporary shelters	62	54.8	843.8	20099.6
+844	01	1	0	Alabama	624229	Other community housing services	62	58.4	398.6	11526.4
+845	01	1	0	Alabama	624230	Emergency and other relief services	62	23.4	45.2	1652.2
+846	01	1	0	Alabama	624310	Vocational rehabilitation services	62	63.2	2339.8	55275.4
+847	01	1	0	Alabama	624410	Child day care services	62	987.4	10327.8	151320.6
+848	01	1	0	Alabama	711110	Theater companies and dinner theaters	71	21.6	277.2	6429.4
+849	01	1	0	Alabama	711120	Dance companies	71	5.4	12.0	196.6
+850	01	1	0	Alabama	711130	Musical groups and artists	71	30.2	308.6	6891.0
+851	01	1	0	Alabama	711190	Other performing arts companies	71	3.2	15.0	379.0
+852	01	1	0	Alabama	711211	Sports teams and clubs	71	5.6	72.8	883.0
+853	01	1	0	Alabama	711212	Racetracks	71	7.8	409.2	10052.4
+854	01	1	0	Alabama	711219	Other spectator sports	71	16.0	24.0	1431.6
+855	01	1	0	Alabama	711310	Promoters of performing arts, sports, and similar events with facilities	71	18.2	760.0	10139.4
+856	01	1	0	Alabama	711320	Promoters of performing arts, sports, and similar events without facilities	71	42.0	225.4	11047.2
+857	01	1	0	Alabama	711410	Agents and managers for artists, athletes, entertainers, and other public figures	71	10.0	22.4	1629.6
+858	01	1	0	Alabama	711510	Independent artists, writers, and performers	71	63.4	131.2	4365.6
+859	01	1	0	Alabama	712110	Museums	71	51.8	686.8	14776.6
+860	01	1	0	Alabama	712120	Historical sites	71	15.4	61.6	1707.0
+861	01	1	0	Alabama	712130	Zoos and botanical gardens	71	12.2	336.8	9500.8
+862	01	1	0	Alabama	712190	Nature parks and other similar institutions	71	6.2	33.8	587.6
+863	01	1	0	Alabama	713110	Amusement and theme parks	71	5.4	33.2	1323.2
+864	01	1	0	Alabama	713120	Amusement arcades	71	42.6	589.4	7134.2
+865	01	1	0	Alabama	713210	Casinos (except casino hotels)	71	1.0	0.0	0.0
+866	01	1	0	Alabama	713290	Other gambling industries	71	11.2	958.4	28331.4
+867	01	1	0	Alabama	713910	Golf courses and country clubs	71	144.2	4393.0	98494.4
+868	01	1	0	Alabama	713930	Marinas	71	55.8	352.6	10596.8
+869	01	1	0	Alabama	713940	Fitness and recreational sports centers	71	362.0	5141.6	60733.8
+870	01	1	0	Alabama	713950	Bowling centers	71	33.6	509.6	7254.0
+871	01	1	0	Alabama	713990	All other amusement and recreation industries	71	140.2	743.4	13242.8
+872	01	1	0	Alabama	721110	Hotels (except casino hotels) and motels	72	791.6	14670.4	266145.6
+873	01	1	0	Alabama	721120	Casino hotels	72	1.3333333333333333	0.0	0.0
+874	01	1	0	Alabama	721191	Bed-and-breakfast inns	72	8.8	9.2	253.0
+875	01	1	0	Alabama	721199	All other traveler accommodation	72	2.5	0.0	96.0
+876	01	1	0	Alabama	721211	RV (recreational vehicle) parks and campgrounds	72	43.4	170.8	2827.4
+877	01	1	0	Alabama	721214	Recreational and vacation camps (except campgrounds)	72	45.2	213.4	6802.2
+878	01	1	0	Alabama	721310	Rooming and boarding houses	72	43.2	234.8	4069.0
+879	01	1	0	Alabama	722310	Food service contractors	72	268.6	5304.0	112672.2
+880	01	1	0	Alabama	722320	Caterers	72	97.0	783.0	12747.4
+881	01	1	0	Alabama	722330	Mobile food services	72	25.8	44.6	828.8
+882	01	1	0	Alabama	722410	Drinking places (alcoholic beverages)	72	248.2	1637.2	23311.0
+883	01	1	0	Alabama	722511	Full-service restaurants	72	2795.8	62621.8	939606.6
+884	01	1	0	Alabama	722513	Limited-service restaurants	72	3612.2	72498.8	904797.0
+885	01	1	0	Alabama	722514	Cafeterias, grill buffets, and buffets	72	158.8	2341.0	32087.4
+886	01	1	0	Alabama	722515	Snack and nonalcoholic beverage bars	72	354.4	3913.2	51216.2
+887	01	1	0	Alabama	811111	General automotive repair	81	865.4	3639.2	122686.0
+888	01	1	0	Alabama	811112	Automotive exhaust system repair	81	23.8	46.2	1610.4
+889	01	1	0	Alabama	811113	Automotive transmission repair	81	92.0	279.8	8984.6
+890	01	1	0	Alabama	811118	Other automotive mechanical and electrical repair and maintenance	81	53.6	147.4	8959.6
+891	01	1	0	Alabama	811121	Automotive body, paint, and interior repair and maintenance	81	511.8	2925.2	116730.4
+892	01	1	0	Alabama	811122	Automotive glass replacement shops	81	85.6	347.8	11567.4
+893	01	1	0	Alabama	811191	Automotive oil change and lubrication shops	81	165.8	597.0	32485.0
+894	01	1	0	Alabama	811192	Car washes	81	184.2	1311.2	22267.0
+895	01	1	0	Alabama	811198	All other automotive repair and maintenance	81	30.8	370.0	12869.0
+896	01	1	0	Alabama	811211	Consumer electronics repair and maintenance	81	28.0	99.6	3547.2
+897	01	1	0	Alabama	811212	Computer and office machine repair and maintenance	81	60.6	254.4	10850.6
+898	01	1	0	Alabama	811213	Communication equipment repair and maintenance	81	24.0	332.4	13801.4
+899	01	1	0	Alabama	811219	Other electronic and precision equipment repair and maintenance	81	52.2	1432.0	82388.8
+900	01	1	0	Alabama	811310	Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance	81	371.0	4078.8	192306.8
+901	01	1	0	Alabama	811411	Home and garden equipment repair and maintenance	81	33.6	81.0	1737.0
+902	01	1	0	Alabama	811412	Appliance repair and maintenance	81	48.4	179.0	5175.4
+903	01	1	0	Alabama	811420	Reupholstery and furniture repair	81	42.2	69.2	1703.2
+904	01	1	0	Alabama	811430	Footwear and leather goods repair	81	7.4	8.2	303.8
+905	01	1	0	Alabama	811490	Other personal and household goods repair and maintenance	81	120.4	308.8	7581.4
+906	01	1	0	Alabama	812111	Barber shops	81	35.2	138.0	3607.0
+907	01	1	0	Alabama	812112	Beauty salons	81	760.2	3508.0	74486.0
+908	01	1	0	Alabama	812113	Nail salons	81	105.6	262.4	4729.4
+909	01	1	0	Alabama	812191	Diet and weight reducing centers	81	51.4	329.8	7520.2
+910	01	1	0	Alabama	812199	Other personal care services	81	168.6	1156.2	15170.4
+911	01	1	0	Alabama	812210	Funeral homes and funeral services	81	283.4	2097.0	65336.2
+912	01	1	0	Alabama	812220	Cemeteries and crematories	81	73.8	510.6	15664.0
+913	01	1	0	Alabama	812310	Coin-operated laundries and drycleaners	81	75.8	333.8	5402.8
+914	01	1	0	Alabama	812320	Drycleaning and laundry services (except coin-operated)	81	294.0	2696.6	49956.2
+915	01	1	0	Alabama	812331	Linen supply	81	18.0	543.0	15376.4
+916	01	1	0	Alabama	812332	Industrial launderers	81	24.8	1147.6	44331.8
+917	01	1	0	Alabama	812910	Pet care (except veterinary) services	81	142.0	726.4	13513.4
+918	01	1	0	Alabama	812921	Photofinishing laboratories (except one-hour)	81	2.6	0.0	0.0
+919	01	1	0	Alabama	812922	One-hour photofinishing	81	1.0	0.0	0.0
+920	01	1	0	Alabama	812930	Parking lots and garages	81	73.2	310.2	11182.4
+921	01	1	0	Alabama	812990	All other personal services	81	131.2	362.6	7555.8
+922	01	1	0	Alabama	813110	Religious organizations	81	4620.2	41662.4	720308.6
+923	01	1	0	Alabama	813211	Grantmaking foundations	81	113.6	361.4	16905.0
+924	01	1	0	Alabama	813212	Voluntary health organizations	81	51.4	366.2	21410.2
+925	01	1	0	Alabama	813219	Other grantmaking and giving services	81	40.2	283.2	12787.2
+926	01	1	0	Alabama	813311	Human rights organizations	81	32.0	190.6	7858.6
+927	01	1	0	Alabama	813312	Environment, conservation and wildlife organizations	81	74.4	456.6	12288.6
+928	01	1	0	Alabama	813319	Other social advocacy organizations	81	64.2	271.6	8857.0
+929	01	1	0	Alabama	813410	Civic and social organizations	81	279.6	1713.2	33224.6
+930	01	1	0	Alabama	813910	Business associations	81	217.6	938.0	51443.0
+931	01	1	0	Alabama	813920	Professional organizations	81	81.8	566.2	35742.8
+932	01	1	0	Alabama	813930	Labor unions and similar labor organizations	81	238.4	1326.8	22618.6
+933	01	1	0	Alabama	813940	Political organizations	81	21.2	22.2	1427.0
+934	01	1	0	Alabama	813990	Other similar organizations (except business, professional, labor, and political organizations)	81	86.2	309.4	14637.8

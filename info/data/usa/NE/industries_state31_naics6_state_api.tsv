@@ -1,0 +1,856 @@
+	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
+23439	31	31	0	Nebraska	113210	Forest nurseries and gathering of forest products	11	1.0	0.0	0.0
+23440	31	31	0	Nebraska	113310	Logging	11	3.6	2.6	63.0
+23441	31	31	0	Nebraska	114111	Finfish fishing	11	2.0	1.0	43.0
+23442	31	31	0	Nebraska	114112	Shellfish fishing	11	1.0	0.0	0.0
+23443	31	31	0	Nebraska	114210	Hunting and trapping	11	2.6	0.0	0.0
+23444	31	31	0	Nebraska	115112	Soil preparation, planting, and cultivating	11	85.0	226.8	13425.8
+23445	31	31	0	Nebraska	115113	Crop harvesting, primarily by machine	11	13.8	28.8	1486.2
+23446	31	31	0	Nebraska	115114	Postharvest crop activities (except cotton ginning)	11	21.6	607.0	32825.2
+23447	31	31	0	Nebraska	115115	Farm labor contractors and crew leaders	11	2.8	0.0	149.2
+23448	31	31	0	Nebraska	115116	Farm management services	11	15.2	46.2	2734.0
+23449	31	31	0	Nebraska	115210	Support activities for animal production	11	38.2	150.8	7230.8
+23450	31	31	0	Nebraska	115310	Support activities for forestry	11	2.4	1.2	23.6
+23451	31	31	0	Nebraska	211111	Crude petroleum and natural gas extraction	21	20.6	95.2	4753.0
+23452	31	31	0	Nebraska	211112	Natural gas liquid extraction	21	1.0	0.0	0.0
+23453	31	31	0	Nebraska	212291	Uranium-radium-vanadium ore mining	21	1.0	0.0	0.0
+23454	31	31	0	Nebraska	212299	All other metal ore mining	21	1.0	0.0	0.0
+23455	31	31	0	Nebraska	212312	Crushed and broken limestone mining and quarrying	21	10.2	268.4	19665.8
+23456	31	31	0	Nebraska	212313	Crushed and broken granite mining and quarrying	21	1.0	0.0	0.0
+23457	31	31	0	Nebraska	212319	Other crushed and broken stone mining and quarrying	21	2.0	0.0	0.0
+23458	31	31	0	Nebraska	212321	Construction sand and gravel mining	21	50.0	361.2	17354.8
+23459	31	31	0	Nebraska	212322	Industrial sand mining	21	1.2	0.0	0.0
+23460	31	31	0	Nebraska	213111	Drilling oil and gas wells	21	8.6	23.8	1898.4
+23461	31	31	0	Nebraska	213112	Support activities for oil and gas operations	21	25.6	52.8	6821.6
+23462	31	31	0	Nebraska	213113	Support activities for coal mining	21	1.0	0.0	0.0
+23463	31	31	0	Nebraska	213114	Support activities for metal mining	21	1.0	0.0	0.0
+23464	31	31	0	Nebraska	213115	Support activities for nonmetallic minerals (except fuels) mining	21	1.8	0.0	0.0
+23465	31	31	0	Nebraska	221112	Fossil fuel electric power generation	22	8.2	76.8	10522.2
+23466	31	31	0	Nebraska	221113	Nuclear electric power generation	22	1.0	0.0	0.0
+23467	31	31	0	Nebraska	221115	Wind electric power generation	22	1.2	0.0	0.0
+23468	31	31	0	Nebraska	221117	Biomass electric power generation	22	1.0	0.0	0.0
+23469	31	31	0	Nebraska	221118	Other electric power generation	22	2.0	0.0	0.0
+23470	31	31	0	Nebraska	221121	Electric bulk power transmission and control	22	1.0	0.0	0.0
+23471	31	31	0	Nebraska	221122	Electric power distribution	22	13.0	137.0	10379.6
+23472	31	31	0	Nebraska	221210	Natural gas distribution	22	85.0	245.8	27539.6
+23473	31	31	0	Nebraska	221310	Water supply and irrigation systems	22	6.4	9.4	399.6
+23474	31	31	0	Nebraska	221320	Sewage treatment facilities	22	2.0	0.0	0.0
+23475	31	31	0	Nebraska	221330	Steam and air-conditioning supply	22	1.0	0.0	0.0
+23476	31	31	0	Nebraska	236115	New single-family housing construction (except for-sale builders)	23	397.4	1090.2	38396.2
+23477	31	31	0	Nebraska	236116	New multifamily housing construction (except for-sale builders)	23	12.4	46.0	3396.4
+23478	31	31	0	Nebraska	236117	New housing for-sale builders	23	114.6	510.4	24862.2
+23479	31	31	0	Nebraska	236118	Residential remodelers	23	781.2	1940.6	62289.6
+23480	31	31	0	Nebraska	236210	Industrial building construction	23	19.4	326.6	21595.4
+23481	31	31	0	Nebraska	236220	Commercial and institutional building construction	23	307.6	4170.2	234908.2
+23482	31	31	0	Nebraska	237110	Water and sewer line and related structures construction	23	193.6	2066.0	110013.2
+23483	31	31	0	Nebraska	237120	Oil and gas pipeline and related structures construction	23	4.8	50.4	4086.6
+23484	31	31	0	Nebraska	237130	Power and communication line and related structures construction	23	52.2	605.2	30470.4
+23485	31	31	0	Nebraska	237210	Land subdivision	23	13.6	61.4	2906.2
+23486	31	31	0	Nebraska	237310	Highway, street, and bridge construction	23	88.0	1548.4	105628.8
+23487	31	31	0	Nebraska	237990	Other heavy and civil engineering construction	23	35.2	232.8	16431.4
+23488	31	31	0	Nebraska	238110	Poured concrete foundation and structure contractors	23	282.4	2109.2	95772.8
+23489	31	31	0	Nebraska	238120	Structural steel and precast concrete contractors	23	25.4	785.0	44541.2
+23490	31	31	0	Nebraska	238130	Framing contractors	23	200.0	821.2	24734.4
+23491	31	31	0	Nebraska	238140	Masonry contractors	23	161.2	911.4	35492.4
+23492	31	31	0	Nebraska	238150	Glass and glazing contractors	23	38.8	384.8	16969.4
+23493	31	31	0	Nebraska	238160	Roofing contractors	23	175.0	1199.2	53910.2
+23494	31	31	0	Nebraska	238170	Siding contractors	23	140.6	466.4	15655.6
+23495	31	31	0	Nebraska	238190	Other foundation, structure, and building exterior contractors	23	28.6	132.2	4771.8
+23496	31	31	0	Nebraska	238210	Electrical contractors and other wiring installation contractors	23	637.6	5947.8	300133.4
+23497	31	31	0	Nebraska	238220	Plumbing, heating, and air-conditioning contractors	23	793.4	7221.4	361733.0
+23498	31	31	0	Nebraska	238290	Other building equipment contractors	23	63.4	638.4	41973.4
+23499	31	31	0	Nebraska	238310	Drywall and insulation contractors	23	183.0	1526.0	61770.8
+23500	31	31	0	Nebraska	238320	Painting and wall covering contractors	23	273.0	1143.8	39043.2
+23501	31	31	0	Nebraska	238330	Flooring contractors	23	129.2	452.6	16907.6
+23502	31	31	0	Nebraska	238340	Tile and terrazzo contractors	23	69.0	242.6	8439.0
+23503	31	31	0	Nebraska	238350	Finish carpentry contractors	23	265.0	1002.0	33912.2
+23504	31	31	0	Nebraska	238390	Other building finishing contractors	23	45.8	585.2	28940.8
+23505	31	31	0	Nebraska	238910	Site preparation contractors	23	321.0	2119.8	98904.0
+23506	31	31	0	Nebraska	238990	All other specialty trade contractors	23	259.0	1376.4	62915.8
+23507	31	31	0	Nebraska	311111	Dog and cat food manufacturing	31	11.2	484.4	26857.2
+23508	31	31	0	Nebraska	311119	Other animal food manufacturing	31	44.8	752.8	37442.8
+23509	31	31	0	Nebraska	311211	Flour milling	31	8.6	153.0	8165.8
+23510	31	31	0	Nebraska	311212	Rice milling	31	1.0	0.0	0.0
+23511	31	31	0	Nebraska	311221	Wet corn milling	31	2.0	0.0	0.0
+23512	31	31	0	Nebraska	311224	Soybean and other oilseed processing	31	5.4	357.0	20808.6
+23513	31	31	0	Nebraska	311225	Fats and oils refining and blending	31	1.2	0.0	0.0
+23514	31	31	0	Nebraska	311230	Breakfast cereal manufacturing	31	2.0	0.0	0.0
+23515	31	31	0	Nebraska	311313	Beet sugar manufacturing	31	1.0	0.0	0.0
+23516	31	31	0	Nebraska	311340	Nonchocolate confectionery manufacturing	31	2.0	0.0	0.0
+23517	31	31	0	Nebraska	311352	Confectionery manufacturing from purchased chocolate	31	3.4	0.0	0.0
+23518	31	31	0	Nebraska	311411	Frozen fruit, juice, and vegetable manufacturing	31	1.0	0.0	0.0
+23519	31	31	0	Nebraska	311412	Frozen specialty food manufacturing	31	3.0	132.0	5412.2
+23520	31	31	0	Nebraska	311421	Fruit and vegetable canning	31	3.4	2.6	60.6
+23521	31	31	0	Nebraska	311422	Specialty canning	31	1.0	0.0	0.0
+23522	31	31	0	Nebraska	311511	Fluid milk manufacturing	31	3.0	386.8	19156.6
+23523	31	31	0	Nebraska	311512	Creamery butter manufacturing	31	1.0	0.0	0.0
+23524	31	31	0	Nebraska	311513	Cheese manufacturing	31	4.0	67.6	2481.6
+23525	31	31	0	Nebraska	311514	Dry, condensed, and evaporated dairy product manufacturing	31	1.6	0.0	0.0
+23526	31	31	0	Nebraska	311520	Ice cream and frozen dessert manufacturing	31	2.0	0.0	0.0
+23527	31	31	0	Nebraska	311611	Animal (except poultry) slaughtering	31	65.4	19755.2	731844.6
+23528	31	31	0	Nebraska	311612	Meat processed from carcasses	31	34.8	4223.2	171031.4
+23529	31	31	0	Nebraska	311613	Rendering and meat byproduct processing	31	11.2	243.2	13331.2
+23530	31	31	0	Nebraska	311615	Poultry processing	31	4.4	0.0	0.0
+23531	31	31	0	Nebraska	311811	Retail bakeries	31	29.4	246.2	3863.8
+23532	31	31	0	Nebraska	311812	Commercial bakeries	31	16.2	940.0	51325.2
+23533	31	31	0	Nebraska	311813	Frozen cakes, pies, and other pastries manufacturing	31	1.0	0.0	0.0
+23534	31	31	0	Nebraska	311824	Dry pasta, dough, and flour mixes manufacturing from purchased flour	31	1.0	0.0	0.0
+23535	31	31	0	Nebraska	311830	Tortilla manufacturing	31	3.0	0.0	0.0
+23536	31	31	0	Nebraska	311911	Roasted nuts and peanut butter manufacturing	31	2.2	0.0	0.0
+23537	31	31	0	Nebraska	311919	Other snack food manufacturing	31	1.0	0.0	0.0
+23538	31	31	0	Nebraska	311920	Coffee and tea manufacturing	31	2.0	0.0	0.0
+23539	31	31	0	Nebraska	311942	Spice and extract manufacturing	31	1.0	0.0	0.0
+23540	31	31	0	Nebraska	311991	Perishable prepared food manufacturing	31	3.2	0.0	0.0
+23541	31	31	0	Nebraska	311999	All other miscellaneous food manufacturing	31	5.8	283.8	13191.6
+23542	31	31	0	Nebraska	312111	Soft drink manufacturing	31	3.0	0.0	0.0
+23543	31	31	0	Nebraska	312112	Bottled water manufacturing	31	1.8	0.0	0.0
+23544	31	31	0	Nebraska	312113	Ice manufacturing	31	2.0	0.0	0.0
+23545	31	31	0	Nebraska	312120	Breweries	31	8.8	54.2	1535.2
+23546	31	31	0	Nebraska	312130	Wineries	31	16.0	50.8	1404.8
+23547	31	31	0	Nebraska	312140	Distilleries	31	2.0	0.0	0.0
+23548	31	31	0	Nebraska	313110	Fiber, yarn, and thread mills	31	1.0	0.0	0.0
+23549	31	31	0	Nebraska	313210	Broadwoven fabric mills	31	1.0	0.0	0.0
+23550	31	31	0	Nebraska	313220	Narrow fabric mills and schiffli machine embroidery	31	1.0	0.0	0.0
+23551	31	31	0	Nebraska	313230	Nonwoven fabric mills	31	1.0	0.0	0.0
+23552	31	31	0	Nebraska	313310	Textile and fabric finishing mills	31	3.2	9.2	235.4
+23553	31	31	0	Nebraska	313320	Fabric coating mills	31	1.2	0.0	0.0
+23554	31	31	0	Nebraska	314110	Carpet and rug mills	31	1.0	0.0	0.0
+23555	31	31	0	Nebraska	314120	Curtain and linen mills	31	12.2	28.0	2004.0
+23556	31	31	0	Nebraska	314910	Textile bag and canvas mills	31	14.4	92.8	2377.4
+23557	31	31	0	Nebraska	314999	All other miscellaneous textile product mills	31	22.0	107.6	3031.0
+23558	31	31	0	Nebraska	315190	Other apparel knitting mills	31	1.0	0.0	0.0
+23559	31	31	0	Nebraska	315210	Cut and sew apparel contractors	31	5.6	8.8	255.4
+23560	31	31	0	Nebraska	315220	Men's and boys' cut and sew apparel manufacturing	31	1.5	0.0	0.0
+23561	31	31	0	Nebraska	315240	Women's, girls', and infants' cut and sew apparel manufacturing	31	2.8	0.0	75.4
+23562	31	31	0	Nebraska	315280	Other cut and sew apparel manufacturing	31	1.0	0.0	0.0
+23563	31	31	0	Nebraska	315990	Apparel accessories and other apparel manufacturing	31	1.0	0.0	0.0
+23564	31	31	0	Nebraska	316110	Leather and hide tanning and finishing	31	2.8	0.0	0.0
+23565	31	31	0	Nebraska	316210	Footwear manufacturing	31	1.0	0.0	0.0
+23566	31	31	0	Nebraska	316998	All other leather good and allied product manufacturing	31	1.0	0.0	0.0
+23567	31	31	0	Nebraska	321113	Sawmills	32	7.8	127.2	3261.0
+23568	31	31	0	Nebraska	321114	Wood preservation	32	1.0	0.0	0.0
+23569	31	31	0	Nebraska	321214	Truss manufacturing	32	4.4	176.8	7886.4
+23570	31	31	0	Nebraska	321911	Wood window and door manufacturing	32	2.8	0.0	0.0
+23571	31	31	0	Nebraska	321912	Cut stock, resawing lumber, and planing	32	2.0	0.0	0.0
+23572	31	31	0	Nebraska	321918	Other millwork (including flooring)	32	6.4	21.6	1558.0
+23573	31	31	0	Nebraska	321920	Wood container and pallet manufacturing	32	20.4	275.4	8045.2
+23574	31	31	0	Nebraska	321991	Manufactured home (mobile home) manufacturing	32	4.0	193.2	6769.6
+23575	31	31	0	Nebraska	321992	Prefabricated wood building manufacturing	32	5.4	135.4	4701.0
+23576	31	31	0	Nebraska	321999	All other miscellaneous wood product manufacturing	32	11.2	122.6	3604.0
+23577	31	31	0	Nebraska	322121	Paper (except newsprint) mills	32	1.0	0.0	0.0
+23578	31	31	0	Nebraska	322122	Newsprint mills	32	1.0	0.0	0.0
+23579	31	31	0	Nebraska	322130	Paperboard mills	32	1.0	0.0	0.0
+23580	31	31	0	Nebraska	322211	Corrugated and solid fiber box manufacturing	32	4.2	353.8	19279.4
+23581	31	31	0	Nebraska	322212	Folding paperboard box manufacturing	32	3.8	199.4	9064.4
+23582	31	31	0	Nebraska	322219	Other paperboard container manufacturing	32	1.0	0.0	0.0
+23583	31	31	0	Nebraska	322220	Paper bag and coated and treated paper manufacturing	32	3.2	0.0	0.0
+23584	31	31	0	Nebraska	322230	Stationery product manufacturing	32	1.0	0.0	0.0
+23585	31	31	0	Nebraska	322291	Sanitary paper product manufacturing	32	1.0	0.0	0.0
+23586	31	31	0	Nebraska	322299	All other converted paper product manufacturing	32	1.0	0.0	0.0
+23587	31	31	0	Nebraska	323111	Commercial printing (except screen and books)	32	127.2	2139.0	90711.6
+23588	31	31	0	Nebraska	323113	Commercial screen printing	32	44.8	383.0	11151.8
+23589	31	31	0	Nebraska	323117	Books printing	32	5.2	0.0	0.0
+23590	31	31	0	Nebraska	323120	Support activities for printing	32	6.4	32.0	991.2
+23591	31	31	0	Nebraska	324121	Asphalt paving mixture and block manufacturing	32	3.0	0.0	0.0
+23592	31	31	0	Nebraska	324191	Petroleum lubricating oil and grease manufacturing	32	1.0	0.0	0.0
+23593	31	31	0	Nebraska	324199	All other petroleum and coal products manufacturing	32	1.0	0.0	0.0
+23594	31	31	0	Nebraska	325120	Industrial gas manufacturing	32	5.6	0.0	0.0
+23595	31	31	0	Nebraska	325180	Other basic inorganic chemical manufacturing	32	4.0	46.6	2798.8
+23596	31	31	0	Nebraska	325193	Ethyl alcohol manufacturing	32	24.8	1465.4	84240.8
+23597	31	31	0	Nebraska	325199	All other basic organic chemical manufacturing	32	7.2	434.8	33485.8
+23598	31	31	0	Nebraska	325211	Plastics material and resin manufacturing	32	3.8	63.6	3931.2
+23599	31	31	0	Nebraska	325311	Nitrogenous fertilizer manufacturing	32	2.8	0.0	0.0
+23600	31	31	0	Nebraska	325312	Phosphatic fertilizer manufacturing	32	1.6	0.0	0.0
+23601	31	31	0	Nebraska	325314	Fertilizer (mixing only) manufacturing	32	4.0	9.6	423.6
+23602	31	31	0	Nebraska	325320	Pesticide and other agricultural chemical manufacturing	32	2.8	0.0	0.0
+23603	31	31	0	Nebraska	325411	Medicinal and botanical manufacturing	32	2.2	0.0	148.6
+23604	31	31	0	Nebraska	325412	Pharmaceutical preparation manufacturing	32	12.2	248.0	28632.0
+23605	31	31	0	Nebraska	325413	In-vitro diagnostic substance manufacturing	32	1.0	0.0	0.0
+23606	31	31	0	Nebraska	325414	Biological product (except diagnostic) manufacturing	32	7.8	1023.0	65977.6
+23607	31	31	0	Nebraska	325510	Paint and coating manufacturing	32	3.4	38.2	1451.0
+23608	31	31	0	Nebraska	325611	Soap and other detergent manufacturing	32	2.6	0.0	71.2
+23609	31	31	0	Nebraska	325910	Printing ink manufacturing	32	1.0	0.0	0.0
+23610	31	31	0	Nebraska	325991	Custom compounding of purchased resins	32	1.6	0.0	0.0
+23611	31	31	0	Nebraska	325992	Photographic film, paper, plate, and chemical manufacturing	32	1.0	0.0	0.0
+23612	31	31	0	Nebraska	325998	All other miscellaneous chemical product and preparation manufacturing	32	1.6	0.0	0.0
+23613	31	31	0	Nebraska	326111	Plastics bag and pouch manufacturing	32	1.0	0.0	0.0
+23614	31	31	0	Nebraska	326112	Plastics packaging film and sheet (including laminated) manufacturing	32	1.0	0.0	0.0
+23615	31	31	0	Nebraska	326113	Unlaminated plastics film and sheet (except packaging) manufacturing	32	3.8	6.6	342.4
+23616	31	31	0	Nebraska	326121	Unlaminated plastics profile shape manufacturing	32	1.0	0.0	0.0
+23617	31	31	0	Nebraska	326122	Plastics pipe and pipe fitting manufacturing	32	8.8	295.8	13005.2
+23618	31	31	0	Nebraska	326130	Laminated plastics plate, sheet (except packaging), and shape manufacturing	32	2.2	0.0	34.4
+23619	31	31	0	Nebraska	326140	Polystyrene foam product manufacturing	32	2.0	0.0	0.0
+23620	31	31	0	Nebraska	326150	Urethane and other foam product (except polystyrene) manufacturing	32	1.6	0.0	0.0
+23621	31	31	0	Nebraska	326191	Plastics plumbing fixture manufacturing	32	2.2	10.8	323.8
+23622	31	31	0	Nebraska	326199	All other plastics product manufacturing	32	36.2	3166.8	128340.2
+23623	31	31	0	Nebraska	326211	Tire manufacturing (except retreading)	32	1.0	0.0	0.0
+23624	31	31	0	Nebraska	326212	Tire retreading	32	6.4	86.2	4218.2
+23625	31	31	0	Nebraska	326220	Rubber and plastics hoses and belting manufacturing	32	4.6	0.0	0.0
+23626	31	31	0	Nebraska	326291	Rubber product manufacturing for mechanical use	32	3.6	88.4	3147.6
+23627	31	31	0	Nebraska	326299	All other rubber product manufacturing	32	1.8	0.0	0.0
+23628	31	31	0	Nebraska	327110	Pottery, ceramics, and plumbing fixture manufacturing	32	1.5	0.5	1.5
+23629	31	31	0	Nebraska	327120	Clay building material and refractories manufacturing	32	6.0	135.0	6472.4
+23630	31	31	0	Nebraska	327212	Other pressed and blown glass and glassware manufacturing	32	1.0	0.0	0.0
+23631	31	31	0	Nebraska	327215	Glass product manufacturing made of purchased glass	32	2.6	3.4	330.2
+23632	31	31	0	Nebraska	327310	Cement manufacturing	32	1.0	0.0	0.0
+23633	31	31	0	Nebraska	327320	Ready-mix concrete manufacturing	32	68.8	910.4	48314.8
+23634	31	31	0	Nebraska	327331	Concrete block and brick manufacturing	32	5.8	37.6	2067.8
+23635	31	31	0	Nebraska	327332	Concrete pipe manufacturing	32	4.0	35.4	2695.4
+23636	31	31	0	Nebraska	327390	Other concrete product manufacturing	32	25.4	796.2	32653.8
+23637	31	31	0	Nebraska	327410	Lime manufacturing	32	1.25	0.0	0.0
+23638	31	31	0	Nebraska	327991	Cut stone and stone product manufacturing	32	7.2	48.2	2303.0
+23639	31	31	0	Nebraska	327992	Ground or treated mineral and earth manufacturing	32	1.6	0.0	0.0
+23640	31	31	0	Nebraska	327999	All other miscellaneous nonmetallic mineral product manufacturing	32	5.6	69.8	3591.0
+23641	31	31	0	Nebraska	331110	Iron and steel mills and ferroalloy manufacturing	33	2.2	0.0	0.0
+23642	31	31	0	Nebraska	331210	Iron and steel pipe and tube manufacturing from purchased steel	33	1.0	0.0	0.0
+23643	31	31	0	Nebraska	331221	Rolled steel shape manufacturing	33	1.0	0.0	0.0
+23644	31	31	0	Nebraska	331222	Steel wire drawing	33	1.5	0.0	0.0
+23645	31	31	0	Nebraska	331318	Other aluminum rolling, drawing, and extruding	33	1.0	0.0	0.0
+23646	31	31	0	Nebraska	331420	Copper rolling, drawing, extruding, and alloying	33	1.0	0.0	0.0
+23647	31	31	0	Nebraska	331492	Secondary smelting, refining, and alloying of nonferrous metal (except copper and aluminum)	33	1.0	0.0	0.0
+23648	31	31	0	Nebraska	331511	Iron foundries	33	5.4	201.2	8034.8
+23649	31	31	0	Nebraska	331513	Steel foundries (except investment)	33	1.4	0.0	0.0
+23650	31	31	0	Nebraska	331523	Nonferrous metal die-casting foundries	33	1.0	0.0	0.0
+23651	31	31	0	Nebraska	331524	Aluminum foundries (except die-casting)	33	1.2	0.0	0.0
+23652	31	31	0	Nebraska	331529	Other nonferrous metal foundries (except die-casting)	33	1.0	0.0	0.0
+23653	31	31	0	Nebraska	332111	Iron and steel forging	33	1.0	0.0	0.0
+23654	31	31	0	Nebraska	332114	Custom roll forming	33	6.6	330.0	13067.8
+23655	31	31	0	Nebraska	332119	Metal crown, closure, and other metal stamping (except automotive)	33	3.0	21.2	756.4
+23656	31	31	0	Nebraska	332216	Saw blade and handtool manufacturing	33	4.0	9.2	350.6
+23657	31	31	0	Nebraska	332311	Prefabricated metal building and component manufacturing	33	9.2	1409.0	66666.8
+23658	31	31	0	Nebraska	332312	Fabricated structural metal manufacturing	33	18.8	606.0	48409.6
+23659	31	31	0	Nebraska	332313	Plate work manufacturing	33	10.8	435.4	20309.4
+23660	31	31	0	Nebraska	332321	Metal window and door manufacturing	33	5.4	230.4	9645.0
+23661	31	31	0	Nebraska	332322	Sheet metal work manufacturing	33	15.8	366.4	17342.8
+23662	31	31	0	Nebraska	332323	Ornamental and architectural metal work manufacturing	33	16.6	253.6	9263.0
+23663	31	31	0	Nebraska	332410	Power boiler and heat exchanger manufacturing	33	1.2	0.0	0.0
+23664	31	31	0	Nebraska	332420	Metal tank (heavy gauge) manufacturing	33	2.8	0.0	0.0
+23665	31	31	0	Nebraska	332431	Metal can manufacturing	33	1.0	0.0	0.0
+23666	31	31	0	Nebraska	332439	Other metal container manufacturing	33	2.2	0.0	0.0
+23667	31	31	0	Nebraska	332510	Hardware manufacturing	33	1.8	0.0	0.0
+23668	31	31	0	Nebraska	332613	Spring manufacturing	33	1.0	0.0	0.0
+23669	31	31	0	Nebraska	332618	Other fabricated wire product manufacturing	33	4.2	16.4	776.8
+23670	31	31	0	Nebraska	332710	Machine shops	33	98.4	900.6	36231.8
+23671	31	31	0	Nebraska	332721	Precision turned product manufacturing	33	16.2	473.8	18423.6
+23672	31	31	0	Nebraska	332722	Bolt, nut, screw, rivet, and washer manufacturing	33	3.6	94.6	4913.0
+23673	31	31	0	Nebraska	332811	Metal heat treating	33	2.8	11.6	852.8
+23674	31	31	0	Nebraska	332812	Metal coating, engraving (except jewelry and silverware), and allied services to manufacturers	33	10.6	47.6	3871.0
+23675	31	31	0	Nebraska	332813	Electroplating, plating, polishing, anodizing, and coloring	33	6.6	0.0	0.0
+23676	31	31	0	Nebraska	332911	Industrial valve manufacturing	33	1.0	0.0	0.0
+23677	31	31	0	Nebraska	332912	Fluid power valve and hose fitting manufacturing	33	4.2	185.8	8531.8
+23678	31	31	0	Nebraska	332919	Other metal valve and pipe fitting manufacturing	33	1.0	0.0	0.0
+23679	31	31	0	Nebraska	332991	Ball and roller bearing manufacturing	33	1.0	0.0	0.0
+23680	31	31	0	Nebraska	332992	Small arms ammunition manufacturing	33	4.8	0.0	60.2
+23681	31	31	0	Nebraska	332994	Small arms, ordnance, and ordnance accessories manufacturing	33	1.2	0.0	0.0
+23682	31	31	0	Nebraska	332996	Fabricated pipe and pipe fitting manufacturing	33	3.2	0.0	0.0
+23683	31	31	0	Nebraska	332999	All other miscellaneous fabricated metal product manufacturing	33	17.4	263.8	18054.2
+23684	31	31	0	Nebraska	333111	Farm machinery and equipment manufacturing	33	76.8	6673.4	333124.4
+23685	31	31	0	Nebraska	333112	Lawn and garden tractor and home lawn and garden equipment manufacturing	33	2.4	41.4	1656.8
+23686	31	31	0	Nebraska	333120	Construction machinery manufacturing	33	9.0	347.4	16619.8
+23687	31	31	0	Nebraska	333132	Oil and gas field machinery and equipment manufacturing	33	1.0	0.0	0.0
+23688	31	31	0	Nebraska	333241	Food product machinery manufacturing	33	3.8	10.8	776.4
+23689	31	31	0	Nebraska	333243	Sawmill, woodworking, and paper machinery manufacturing	33	1.0	0.0	0.0
+23690	31	31	0	Nebraska	333244	Printing machinery and equipment manufacturing	33	1.0	0.0	0.0
+23691	31	31	0	Nebraska	333249	Other industrial machinery manufacturing	33	10.8	223.2	8846.2
+23692	31	31	0	Nebraska	333316	Photographic and photocopying equipment manufacturing	33	1.2	0.0	0.0
+23693	31	31	0	Nebraska	333318	Other commercial and service industry machinery manufacturing	33	6.6	20.8	782.8
+23694	31	31	0	Nebraska	333413	Industrial and commercial fan and blower and air purification equipment manufacturing	33	3.8	90.6	3944.2
+23695	31	31	0	Nebraska	333414	Heating equipment (except warm air furnaces) manufacturing	33	3.0	0.0	0.0
+23696	31	31	0	Nebraska	333415	Air-conditioning and warm air heating equipment and commercial and industrial refrigeration equipment manufacturing	33	2.6	0.0	0.0
+23697	31	31	0	Nebraska	333511	Industrial mold manufacturing	33	4.2	35.0	2241.4
+23698	31	31	0	Nebraska	333514	Special die and tool, die set, jig, and fixture manufacturing	33	11.0	137.0	6283.8
+23699	31	31	0	Nebraska	333515	Cutting tool and machine tool accessory manufacturing	33	1.5	0.0	0.0
+23700	31	31	0	Nebraska	333517	Machine tool manufacturing	33	2.6	72.8	2269.8
+23701	31	31	0	Nebraska	333519	Rolling mill and other metalworking machinery manufacturing	33	2.0	0.0	0.0
+23702	31	31	0	Nebraska	333611	Turbine and turbine generator set units manufacturing	33	1.0	0.0	0.0
+23703	31	31	0	Nebraska	333612	Speed changer, industrial high-speed drive, and gear manufacturing	33	1.0	0.0	0.0
+23704	31	31	0	Nebraska	333613	Mechanical power transmission equipment manufacturing	33	4.2	156.2	7649.8
+23705	31	31	0	Nebraska	333618	Other engine equipment manufacturing	33	1.0	0.0	0.0
+23706	31	31	0	Nebraska	333911	Pump and pumping equipment manufacturing	33	5.2	199.4	9875.8
+23707	31	31	0	Nebraska	333912	Air and gas compressor manufacturing	33	2.6	11.0	473.6
+23708	31	31	0	Nebraska	333922	Conveyor and conveying equipment manufacturing	33	15.2	404.8	28629.8
+23709	31	31	0	Nebraska	333923	Overhead traveling crane, hoist, and monorail system manufacturing	33	1.8	0.0	0.0
+23710	31	31	0	Nebraska	333924	Industrial truck, trailer, and stacker machinery manufacturing	33	4.2	50.6	1610.4
+23711	31	31	0	Nebraska	333991	Power-driven handtool manufacturing	33	1.0	0.0	0.0
+23712	31	31	0	Nebraska	333992	Welding and soldering equipment manufacturing	33	1.0	0.0	0.0
+23713	31	31	0	Nebraska	333993	Packaging machinery manufacturing	33	4.0	47.8	3288.8
+23714	31	31	0	Nebraska	333994	Industrial process furnace and oven manufacturing	33	1.0	0.0	0.0
+23715	31	31	0	Nebraska	333995	Fluid power cylinder and actuator manufacturing	33	4.8	428.0	20526.8
+23716	31	31	0	Nebraska	333997	Scale and balance manufacturing	33	2.0	0.0	0.0
+23717	31	31	0	Nebraska	333999	All other miscellaneous general purpose machinery manufacturing	33	9.0	154.4	5863.8
+23718	31	31	0	Nebraska	334111	Electronic computer manufacturing	33	1.5	0.0	0.0
+23719	31	31	0	Nebraska	334118	Computer terminal and other computer peripheral equipment manufacturing	33	1.0	0.0	0.0
+23720	31	31	0	Nebraska	334210	Telephone apparatus manufacturing	33	1.8	0.0	0.0
+23721	31	31	0	Nebraska	334220	Radio and television broadcasting and wireless communications equipment manufacturing	33	2.2	0.0	0.0
+23722	31	31	0	Nebraska	334290	Other communications equipment manufacturing	33	2.0	0.0	0.0
+23723	31	31	0	Nebraska	334310	Audio and video equipment manufacturing	33	1.25	0.0	0.0
+23724	31	31	0	Nebraska	334413	Semiconductor and related device manufacturing	33	2.0	0.0	322.4
+23725	31	31	0	Nebraska	334416	Capacitor, resistor, coil, transformer, and other inductor manufacturing	33	2.0	0.0	0.0
+23726	31	31	0	Nebraska	334417	Electronic connector manufacturing	33	1.0	0.0	0.0
+23727	31	31	0	Nebraska	334418	Printed circuit assembly (electronic assembly) manufacturing	33	3.4	76.2	3364.4
+23728	31	31	0	Nebraska	334419	Other electronic component manufacturing	33	1.6	0.0	0.0
+23729	31	31	0	Nebraska	334513	Instruments and related products manufacturing for measuring, displaying, and controlling industrial process variables	33	3.8	12.0	529.8
+23730	31	31	0	Nebraska	334514	Totalizing fluid meter and counting device manufacturing	33	2.0	0.0	0.0
+23731	31	31	0	Nebraska	334515	Instrument manufacturing for measuring and testing electricity and electrical systems	33	1.0	0.0	0.0
+23732	31	31	0	Nebraska	334516	Analytical laboratory instrument manufacturing	33	6.2	812.2	50724.2
+23733	31	31	0	Nebraska	334519	Other measuring and controlling device manufacturing	33	1.2	0.0	0.0
+23734	31	31	0	Nebraska	334614	Software and other prerecorded compact disc, tape, and record reproducing	33	6.2	48.0	2695.2
+23735	31	31	0	Nebraska	335121	Residential electric lighting fixture manufacturing	33	2.0	0.0	0.0
+23736	31	31	0	Nebraska	335122	Commercial, industrial, and institutional electric lighting fixture manufacturing	33	1.0	0.0	0.0
+23737	31	31	0	Nebraska	335129	Other lighting equipment manufacturing	33	2.8	0.0	0.0
+23738	31	31	0	Nebraska	335210	Small electrical appliance manufacturing	33	1.0	0.0	0.0
+23739	31	31	0	Nebraska	335311	Power, distribution, and specialty transformer manufacturing	33	1.0	0.0	0.0
+23740	31	31	0	Nebraska	335313	Switchgear and switchboard apparatus manufacturing	33	5.4	203.2	12550.0
+23741	31	31	0	Nebraska	335314	Relay and industrial control manufacturing	33	3.6	2.8	93.6
+23742	31	31	0	Nebraska	335929	Other communication and energy wire manufacturing	33	1.0	0.0	0.0
+23743	31	31	0	Nebraska	335931	Current-carrying wiring device manufacturing	33	6.0	277.4	10961.0
+23744	31	31	0	Nebraska	335932	Noncurrent-carrying wiring device manufacturing	33	1.0	0.0	0.0
+23745	31	31	0	Nebraska	335999	All other miscellaneous electrical equipment and component manufacturing	33	2.4	0.0	0.0
+23746	31	31	0	Nebraska	336111	Automobile manufacturing	33	1.0	0.0	0.0
+23747	31	31	0	Nebraska	336112	Light truck and utility vehicle manufacturing	33	1.0	0.0	0.0
+23748	31	31	0	Nebraska	336120	Heavy duty truck manufacturing	33	1.4	0.0	0.0
+23749	31	31	0	Nebraska	336211	Motor vehicle body manufacturing	33	5.2	53.8	1980.2
+23750	31	31	0	Nebraska	336212	Truck trailer manufacturing	33	13.2	501.2	23209.0
+23751	31	31	0	Nebraska	336213	Motor home manufacturing	33	1.0	0.0	0.0
+23752	31	31	0	Nebraska	336214	Travel trailer and camper manufacturing	33	4.6	0.0	0.0
+23753	31	31	0	Nebraska	336310	Motor vehicle gasoline engine and engine parts manufacturing	33	3.6	0.0	0.0
+23754	31	31	0	Nebraska	336320	Motor vehicle electrical and electronic equipment manufacturing	33	3.2	111.0	1466.0
+23755	31	31	0	Nebraska	336330	Motor vehicle steering and suspension components (except spring) manufacturing	33	2.2	0.0	0.0
+23756	31	31	0	Nebraska	336340	Motor vehicle brake system manufacturing	33	1.0	0.0	0.0
+23757	31	31	0	Nebraska	336350	Motor vehicle transmission and power train parts manufacturing	33	2.2	0.0	0.0
+23758	31	31	0	Nebraska	336360	Motor vehicle seating and interior trim manufacturing	33	1.0	0.0	0.0
+23759	31	31	0	Nebraska	336370	Motor vehicle metal stamping	33	1.0	0.0	0.0
+23760	31	31	0	Nebraska	336390	Other motor vehicle parts manufacturing	33	12.0	851.0	40634.2
+23761	31	31	0	Nebraska	336411	Aircraft manufacturing	33	1.0	0.0	0.0
+23762	31	31	0	Nebraska	336412	Aircraft engine and engine parts manufacturing	33	3.0	0.0	0.0
+23763	31	31	0	Nebraska	336413	Other aircraft parts and auxiliary equipment manufacturing	33	1.0	0.0	0.0
+23764	31	31	0	Nebraska	336419	Other guided missile and space vehicle parts and auxiliary equipment manufacturing	33	1.0	0.0	0.0
+23765	31	31	0	Nebraska	336510	Railroad rolling stock manufacturing	33	5.8	116.4	5679.0
+23766	31	31	0	Nebraska	336612	Boat building	33	1.0	0.0	0.0
+23767	31	31	0	Nebraska	336991	Motorcycle, bicycle, and parts manufacturing	33	1.5	0.0	0.0
+23768	31	31	0	Nebraska	336992	Military armored vehicle, tank, and tank component manufacturing	33	1.0	0.0	0.0
+23769	31	31	0	Nebraska	336999	All other transportation equipment manufacturing	33	6.0	0.0	0.0
+23770	31	31	0	Nebraska	337110	Wood kitchen cabinet and countertop manufacturing	33	33.8	278.6	9785.8
+23771	31	31	0	Nebraska	337121	Upholstered household furniture manufacturing	33	1.0	0.0	0.0
+23772	31	31	0	Nebraska	337122	Nonupholstered wood household furniture manufacturing	33	4.0	10.0	220.4
+23773	31	31	0	Nebraska	337124	Metal household furniture manufacturing	33	1.0	0.0	0.0
+23774	31	31	0	Nebraska	337127	Institutional furniture manufacturing	33	4.4	24.8	3841.2
+23775	31	31	0	Nebraska	337211	Wood office furniture manufacturing	33	1.0	0.0	0.0
+23776	31	31	0	Nebraska	337212	Custom architectural woodwork and millwork manufacturing	33	10.0	238.8	9203.2
+23777	31	31	0	Nebraska	337214	Office furniture (except wood) manufacturing	33	1.0	0.0	0.0
+23778	31	31	0	Nebraska	337215	Showcase, partition, shelving, and locker manufacturing	33	7.4	329.6	16218.2
+23779	31	31	0	Nebraska	337910	Mattress manufacturing	33	2.4	0.0	0.0
+23780	31	31	0	Nebraska	337920	Blind and shade manufacturing	33	2.3333333333333335	0.0	0.0
+23781	31	31	0	Nebraska	339112	Surgical and medical instrument manufacturing	33	6.8	0.0	0.0
+23782	31	31	0	Nebraska	339113	Surgical appliance and supplies manufacturing	33	7.8	118.8	12916.0
+23783	31	31	0	Nebraska	339114	Dental equipment and supplies manufacturing	33	4.2	7.4	278.6
+23784	31	31	0	Nebraska	339115	Ophthalmic goods manufacturing	33	6.0	51.2	4164.4
+23785	31	31	0	Nebraska	339116	Dental laboratories	33	46.4	254.4	9660.8
+23786	31	31	0	Nebraska	339910	Jewelry and silverware manufacturing	33	5.8	5.0	403.0
+23787	31	31	0	Nebraska	339920	Sporting and athletic goods manufacturing	33	12.0	119.6	7107.0
+23788	31	31	0	Nebraska	339930	Doll, toy, and game manufacturing	33	3.4	3.8	52.0
+23789	31	31	0	Nebraska	339940	Office supplies (except paper) manufacturing	33	2.0	0.0	0.0
+23790	31	31	0	Nebraska	339950	Sign manufacturing	33	34.8	367.2	13864.4
+23791	31	31	0	Nebraska	339991	Gasket, packing, and sealing device manufacturing	33	1.4	0.0	0.0
+23792	31	31	0	Nebraska	339992	Musical instrument manufacturing	33	1.2	0.0	0.0
+23793	31	31	0	Nebraska	339994	Broom, brush, and mop manufacturing	33	2.0	0.0	0.0
+23794	31	31	0	Nebraska	339999	All other miscellaneous manufacturing	33	12.2	40.6	2025.2
+23795	31	31	0	Nebraska	423110	Automobile and other motor vehicle merchant wholesalers	42	58.2	1255.0	67039.2
+23796	31	31	0	Nebraska	423120	Motor vehicle supplies and new parts merchant wholesalers	42	92.4	1079.6	47915.6
+23797	31	31	0	Nebraska	423130	Tire and tube merchant wholesalers	42	11.2	199.8	8244.0
+23798	31	31	0	Nebraska	423140	Motor vehicle parts (used) merchant wholesalers	42	16.0	207.2	6736.0
+23799	31	31	0	Nebraska	423210	Furniture merchant wholesalers	42	16.4	150.8	7588.4
+23800	31	31	0	Nebraska	423220	Home furnishing merchant wholesalers	42	27.2	107.4	8704.6
+23801	31	31	0	Nebraska	423310	Lumber, plywood, millwork, and wood panel merchant wholesalers	42	39.8	393.6	20922.4
+23802	31	31	0	Nebraska	423320	Brick, stone, and related construction material merchant wholesalers	42	24.8	159.6	8827.6
+23803	31	31	0	Nebraska	423330	Roofing, siding, and insulation material merchant wholesalers	42	31.6	216.6	14395.4
+23804	31	31	0	Nebraska	423390	Other construction material merchant wholesalers	42	23.4	313.2	14381.2
+23805	31	31	0	Nebraska	423410	Photographic equipment and supplies merchant wholesalers	42	2.0	0.0	0.0
+23806	31	31	0	Nebraska	423420	Office equipment merchant wholesalers	42	54.4	624.6	29168.2
+23807	31	31	0	Nebraska	423430	Computer and computer peripheral equipment and software merchant wholesalers	42	59.6	1023.0	84631.6
+23808	31	31	0	Nebraska	423440	Other commercial equipment merchant wholesalers	42	22.8	220.0	9226.8
+23809	31	31	0	Nebraska	423450	Medical, dental, and hospital equipment and supplies merchant wholesalers	42	57.8	827.4	57058.2
+23810	31	31	0	Nebraska	423460	Ophthalmic goods merchant wholesalers	42	4.8	52.4	2139.2
+23811	31	31	0	Nebraska	423490	Other professional equipment and supplies merchant wholesalers	42	15.2	219.0	12526.4
+23812	31	31	0	Nebraska	423510	Metal service centers and other metal merchant wholesalers	42	45.0	788.0	40330.0
+23813	31	31	0	Nebraska	423610	Electrical apparatus and equipment, wiring supplies, and related equipment merchant wholesalers	42	100.2	913.6	50541.2
+23814	31	31	0	Nebraska	423620	Household appliances, electric housewares, and consumer electronics merchant wholesalers 	42	11.4	107.8	3717.4
+23815	31	31	0	Nebraska	423690	Other electronic parts and equipment merchant wholesalers	42	40.4	389.2	27739.0
+23816	31	31	0	Nebraska	423710	Hardware merchant wholesalers	42	32.2	333.2	16099.0
+23817	31	31	0	Nebraska	423720	Plumbing and heating equipment and supplies (hydronics) merchant wholesalers	42	47.6	514.4	31902.8
+23818	31	31	0	Nebraska	423730	Warm air heating and air-conditioning equipment and supplies merchant wholesalers	42	48.8	469.4	30951.2
+23819	31	31	0	Nebraska	423740	Refrigeration equipment and supplies merchant wholesalers	42	12.8	332.6	24155.8
+23820	31	31	0	Nebraska	423810	Construction and mining (except oil well) machinery and equipment merchant wholesalers	42	46.2	830.8	61583.2
+23821	31	31	0	Nebraska	423820	Farm and garden machinery and equipment merchant wholesalers	42	316.8	4635.6	246200.6
+23822	31	31	0	Nebraska	423830	Industrial machinery and equipment merchant wholesalers	42	168.2	1768.0	96482.8
+23823	31	31	0	Nebraska	423840	Industrial supplies merchant wholesalers	42	26.8	164.6	14396.6
+23824	31	31	0	Nebraska	423850	Service establishment equipment and supplies merchant wholesalers	42	29.2	130.2	9717.4
+23825	31	31	0	Nebraska	423860	Transportation equipment and supplies (except motor vehicle) merchant wholesalers	42	6.0	27.8	1900.4
+23826	31	31	0	Nebraska	423910	Sporting and recreational goods and supplies merchant wholesalers	42	20.0	126.4	6581.8
+23827	31	31	0	Nebraska	423920	Toy and hobby goods and supplies merchant wholesalers	42	12.6	156.4	7408.6
+23828	31	31	0	Nebraska	423930	Recyclable material merchant wholesalers	42	63.4	476.4	19238.4
+23829	31	31	0	Nebraska	423940	Jewelry, watch, precious stone, and precious metal merchant wholesalers	42	4.6	7.6	264.2
+23830	31	31	0	Nebraska	423990	Other miscellaneous durable goods merchant wholesalers	42	37.6	346.4	16259.8
+23831	31	31	0	Nebraska	424110	Printing and writing paper merchant wholesalers	42	4.6	126.4	6510.6
+23832	31	31	0	Nebraska	424120	Stationery and office supplies merchant wholesalers	42	27.4	148.0	7345.4
+23833	31	31	0	Nebraska	424130	Industrial and personal service paper merchant wholesalers	42	17.4	194.2	12789.4
+23834	31	31	0	Nebraska	424210	Drugs and druggists' sundries merchant wholesalers	42	62.4	928.4	53406.4
+23835	31	31	0	Nebraska	424310	Piece goods, notions, and other dry goods merchant wholesalers	42	3.0	3.2	181.2
+23836	31	31	0	Nebraska	424320	Men's and boys' clothing and furnishings merchant wholesalers	42	4.0	0.0	0.0
+23837	31	31	0	Nebraska	424330	Women's, children's, and infants' clothing and accessories merchant wholesalers	42	4.6	4.0	334.2
+23838	31	31	0	Nebraska	424340	Footwear merchant wholesalers	42	3.0	0.0	0.0
+23839	31	31	0	Nebraska	424410	General line grocery merchant wholesalers	42	16.8	1601.8	82367.4
+23840	31	31	0	Nebraska	424420	Packaged frozen food merchant wholesalers	42	18.2	238.6	21857.6
+23841	31	31	0	Nebraska	424430	Dairy product (except dried or canned) merchant wholesalers	42	9.0	35.0	3533.0
+23842	31	31	0	Nebraska	424440	Poultry and poultry product merchant wholesalers	42	2.0	0.0	0.0
+23843	31	31	0	Nebraska	424450	Confectionery merchant wholesalers	42	27.0	155.8	8964.0
+23844	31	31	0	Nebraska	424460	Fish and seafood merchant wholesalers	42	2.2	0.0	0.0
+23845	31	31	0	Nebraska	424470	Meat and meat product merchant wholesalers	42	18.8	89.2	6941.8
+23846	31	31	0	Nebraska	424480	Fresh fruit and vegetable merchant wholesalers	42	4.0	21.0	977.0
+23847	31	31	0	Nebraska	424490	Other grocery and related products merchant wholesalers	42	107.6	2024.6	154096.8
+23848	31	31	0	Nebraska	424510	Grain and field bean merchant wholesalers	42	348.6	3923.0	253621.0
+23849	31	31	0	Nebraska	424520	Livestock merchant wholesalers	42	30.6	427.0	11073.4
+23850	31	31	0	Nebraska	424590	Other farm product raw material merchant wholesalers	42	5.6	72.4	2246.6
+23851	31	31	0	Nebraska	424610	Plastics materials and basic forms and shapes merchant wholesalers	42	10.4	112.0	5234.2
+23852	31	31	0	Nebraska	424690	Other chemical and allied products merchant wholesalers	42	63.4	608.0	33631.8
+23853	31	31	0	Nebraska	424710	Petroleum bulk stations and terminals 	42	51.2	676.6	29680.4
+23854	31	31	0	Nebraska	424720	Petroleum and petroleum products merchant wholesalers (except bulk stations and terminals) 	42	26.2	130.0	8868.8
+23855	31	31	0	Nebraska	424810	Beer and ale merchant wholesalers	42	15.8	663.0	30246.2
+23856	31	31	0	Nebraska	424820	Wine and distilled alcoholic beverage merchant wholesalers	42	10.4	489.8	27309.4
+23857	31	31	0	Nebraska	424910	Farm supplies merchant wholesalers	42	331.0	3226.8	188221.2
+23858	31	31	0	Nebraska	424920	Book, periodical, and newspaper merchant wholesalers	42	8.0	597.0	9690.2
+23859	31	31	0	Nebraska	424930	Flower, nursery stock, and florists' supplies merchant wholesalers	42	15.2	152.2	4465.6
+23860	31	31	0	Nebraska	424940	Tobacco and tobacco product merchant wholesalers	42	10.2	202.6	10926.8
+23861	31	31	0	Nebraska	424950	Paint, varnish, and supplies merchant wholesalers	42	13.2	62.6	2968.2
+23862	31	31	0	Nebraska	424990	Other miscellaneous nondurable goods merchant wholesalers	42	47.4	348.6	11492.0
+23863	31	31	0	Nebraska	425110	Business to business electronic markets	42	1.8	0.0	0.0
+23864	31	31	0	Nebraska	425120	Wholesale trade agents and brokers	42	239.8	1967.4	74725.6
+23865	31	31	0	Nebraska	441110	New car dealers	44	199.2	7714.0	375866.2
+23866	31	31	0	Nebraska	441120	Used car dealers	44	246.8	1170.4	42127.2
+23867	31	31	0	Nebraska	441210	Recreational vehicle dealers	44	13.4	202.4	11148.8
+23868	31	31	0	Nebraska	441222	Boat dealers	44	16.6	109.2	4357.2
+23869	31	31	0	Nebraska	441228	Motorcycle, ATV, and all other motor vehicle dealers	44	62.4	503.4	18554.8
+23870	31	31	0	Nebraska	441310	Automotive parts and accessories stores	44	311.8	2397.2	57108.0
+23871	31	31	0	Nebraska	441320	Tire dealers	44	168.6	1348.0	50846.4
+23872	31	31	0	Nebraska	442110	Furniture stores	44	96.8	1809.8	59399.4
+23873	31	31	0	Nebraska	442210	Floor covering stores	44	70.0	460.8	17219.2
+23874	31	31	0	Nebraska	442291	Window treatment stores	44	9.4	9.4	339.0
+23875	31	31	0	Nebraska	442299	All other home furnishings stores	44	80.0	723.2	10842.4
+23876	31	31	0	Nebraska	443141	Household appliance stores	44	67.6	317.2	9652.4
+23877	31	31	0	Nebraska	443142	Electronics stores	44	197.6	1874.2	49625.6
+23878	31	31	0	Nebraska	444110	Home centers	44	50.6	4194.2	98769.2
+23879	31	31	0	Nebraska	444120	Paint and wallpaper stores	44	38.8	195.2	6370.0
+23880	31	31	0	Nebraska	444130	Hardware stores	44	159.8	1295.2	25402.4
+23881	31	31	0	Nebraska	444190	Other building material dealers	44	284.0	2800.6	119301.8
+23882	31	31	0	Nebraska	444210	Outdoor power equipment stores	44	25.0	144.8	4517.4
+23883	31	31	0	Nebraska	444220	Nursery, garden center, and farm supply stores	44	220.0	2019.2	62528.8
+23884	31	31	0	Nebraska	445110	Supermarkets and other grocery (except convenience) stores	44	429.0	18820.0	333529.6
+23885	31	31	0	Nebraska	445120	Convenience stores	44	43.8	174.4	2520.8
+23886	31	31	0	Nebraska	445210	Meat markets	44	46.8	203.8	6465.6
+23887	31	31	0	Nebraska	445220	Fish and seafood markets	44	2.2	0.0	0.0
+23888	31	31	0	Nebraska	445230	Fruit and vegetable markets	44	4.6	7.8	246.8
+23889	31	31	0	Nebraska	445291	Baked goods stores	44	28.4	77.6	3615.0
+23890	31	31	0	Nebraska	445292	Confectionery and nut stores	44	12.0	32.0	453.0
+23891	31	31	0	Nebraska	445299	All other specialty food stores	44	38.2	186.2	3647.4
+23892	31	31	0	Nebraska	445310	Beer, wine, and liquor stores	44	135.4	709.6	9444.2
+23893	31	31	0	Nebraska	446110	Pharmacies and drug stores	44	277.4	4647.2	149753.6
+23894	31	31	0	Nebraska	446120	Cosmetics, beauty supplies, and perfume stores	44	59.8	654.6	9673.4
+23895	31	31	0	Nebraska	446130	Optical goods stores	44	60.2	315.8	10615.4
+23896	31	31	0	Nebraska	446191	Food (health) supplement stores	44	71.0	266.0	5298.4
+23897	31	31	0	Nebraska	446199	All other health and personal care stores	44	80.0	377.8	17201.6
+23898	31	31	0	Nebraska	447110	Gasoline stations with convenience stores	44	787.2	7563.4	126906.6
+23899	31	31	0	Nebraska	447190	Other gasoline stations	44	186.2	2160.2	57170.2
+23900	31	31	0	Nebraska	448110	Men's clothing stores	44	36.2	231.6	6499.8
+23901	31	31	0	Nebraska	448120	Women's clothing stores	44	227.8	1884.4	20391.8
+23902	31	31	0	Nebraska	448130	Children's and infants' clothing stores	44	36.6	327.2	3760.6
+23903	31	31	0	Nebraska	448140	Family clothing stores	44	147.2	2687.2	37924.4
+23904	31	31	0	Nebraska	448150	Clothing accessories stores	44	47.8	300.6	4209.2
+23905	31	31	0	Nebraska	448190	Other clothing stores	44	69.8	653.8	10036.6
+23906	31	31	0	Nebraska	448210	Shoe stores	44	141.8	976.0	15111.6
+23907	31	31	0	Nebraska	448310	Jewelry stores	44	105.2	807.8	23801.6
+23908	31	31	0	Nebraska	448320	Luggage and leather goods stores	44	1.6	0.0	0.0
+23909	31	31	0	Nebraska	451110	Sporting goods stores	45	138.4	2221.4	49797.2
+23910	31	31	0	Nebraska	451120	Hobby, toy, and game stores	45	55.0	923.2	15119.4
+23911	31	31	0	Nebraska	451130	Sewing, needlework, and piece goods stores	45	42.8	281.2	2736.6
+23912	31	31	0	Nebraska	451140	Musical instrument and supplies stores	45	30.6	231.0	5137.2
+23913	31	31	0	Nebraska	451211	Book stores	45	54.4	491.6	7638.8
+23914	31	31	0	Nebraska	451212	News dealers and newsstands	45	2.0	0.0	0.0
+23915	31	31	0	Nebraska	452111	Department stores (except discount department stores)	45	22.0	881.6	36555.4
+23916	31	31	0	Nebraska	452112	Discount department stores	45	39.4	3316.8	53157.2
+23917	31	31	0	Nebraska	452910	Warehouse clubs and supercenters	45	45.6	0.0	0.0
+23918	31	31	0	Nebraska	452990	All other general merchandise stores	45	246.8	2554.6	41972.8
+23919	31	31	0	Nebraska	453110	Florists	45	137.2	575.4	6999.8
+23920	31	31	0	Nebraska	453210	Office supplies and stationery stores	45	51.6	559.8	14699.6
+23921	31	31	0	Nebraska	453220	Gift, novelty, and souvenir stores	45	143.0	879.2	11495.8
+23922	31	31	0	Nebraska	453310	Used merchandise stores	45	158.2	1409.6	21280.2
+23923	31	31	0	Nebraska	453910	Pet and pet supplies stores	45	43.2	317.6	9503.8
+23924	31	31	0	Nebraska	453920	Art dealers	45	22.8	99.0	1829.4
+23925	31	31	0	Nebraska	453930	Manufactured (mobile) home dealers	45	18.4	55.6	2374.4
+23926	31	31	0	Nebraska	453991	Tobacco stores	45	58.8	353.2	6211.8
+23927	31	31	0	Nebraska	453998	All other miscellaneous store retailers (except tobacco stores)	45	110.4	429.6	13654.0
+23928	31	31	0	Nebraska	454111	Electronic shopping	45	139.2	1480.2	51054.6
+23929	31	31	0	Nebraska	454112	Electronic auctions	45	6.6	13.4	505.6
+23930	31	31	0	Nebraska	454113	Mail-order houses	45	41.4	2624.8	89145.4
+23931	31	31	0	Nebraska	454210	Vending machine operators	45	24.4	392.2	13670.8
+23932	31	31	0	Nebraska	454310	Fuel dealers	45	44.4	221.6	7604.0
+23933	31	31	0	Nebraska	454390	Other direct selling establishments	45	204.8	1055.0	34935.4
+23934	31	31	0	Nebraska	481111	Scheduled passenger air transportation	48	12.4	212.8	6958.2
+23935	31	31	0	Nebraska	481112	Scheduled freight air transportation	48	1.6	0.0	0.0
+23936	31	31	0	Nebraska	481211	Nonscheduled chartered passenger air transportation	48	11.4	333.6	22723.4
+23937	31	31	0	Nebraska	481219	Other nonscheduled air transportation	48	5.0	3.0	141.4
+23938	31	31	0	Nebraska	484110	General freight trucking, local	48	269.0	1427.4	55894.6
+23939	31	31	0	Nebraska	484121	General freight trucking, long-distance, truckload	48	468.8	8670.2	380444.0
+23940	31	31	0	Nebraska	484122	General freight trucking, long-distance, less than truckload	48	75.4	1282.4	66072.0
+23941	31	31	0	Nebraska	484210	Used household and office goods moving	48	54.0	847.8	27050.2
+23942	31	31	0	Nebraska	484220	Specialized freight (except used goods) trucking, local	48	586.2	2091.0	78700.6
+23943	31	31	0	Nebraska	484230	Specialized freight (except used goods) trucking, long-distance	48	303.0	2006.2	89843.4
+23944	31	31	0	Nebraska	485113	Bus and other motor vehicle transit systems	48	2.2	0.0	0.0
+23945	31	31	0	Nebraska	485210	Interurban and rural bus transportation	48	2.8	21.4	440.0
+23946	31	31	0	Nebraska	485310	Taxi service	48	8.4	46.8	1249.4
+23947	31	31	0	Nebraska	485320	Limousine service	48	11.2	43.4	965.8
+23948	31	31	0	Nebraska	485410	School and employee bus transportation	48	20.2	1064.2	19990.0
+23949	31	31	0	Nebraska	485510	Charter bus industry	48	7.8	59.0	1661.0
+23950	31	31	0	Nebraska	485991	Special needs transportation	48	14.0	145.2	2609.4
+23951	31	31	0	Nebraska	485999	All other transit and ground passenger transportation	48	5.8	54.8	1104.8
+23952	31	31	0	Nebraska	486110	Pipeline transportation of crude oil	48	3.4	0.0	0.0
+23953	31	31	0	Nebraska	486210	Pipeline transportation of natural gas	48	37.6	603.6	59933.4
+23954	31	31	0	Nebraska	486910	Pipeline transportation of refined petroleum products	48	14.8	43.4	5526.0
+23955	31	31	0	Nebraska	486990	All other pipeline transportation	48	1.0	0.0	0.0
+23956	31	31	0	Nebraska	487110	Scenic and sightseeing transportation, land	48	2.4	0.0	0.0
+23957	31	31	0	Nebraska	487210	Scenic and sightseeing transportation, water	48	3.0	5.2	58.2
+23958	31	31	0	Nebraska	488111	Air traffic control	48	1.0	0.0	0.0
+23959	31	31	0	Nebraska	488119	Other airport operations	48	9.6	313.0	6194.4
+23960	31	31	0	Nebraska	488190	Other support activities for air transportation	48	28.8	560.8	33193.2
+23961	31	31	0	Nebraska	488210	Support activities for rail transportation	48	23.4	448.2	20105.6
+23962	31	31	0	Nebraska	488310	Port and harbor operations	48	1.0	0.0	0.0
+23963	31	31	0	Nebraska	488410	Motor vehicle towing	48	42.8	139.4	5443.4
+23964	31	31	0	Nebraska	488490	Other support activities for road transportation	48	20.0	86.2	4448.6
+23965	31	31	0	Nebraska	488510	Freight transportation arrangement	48	97.6	650.6	32921.4
+23966	31	31	0	Nebraska	488991	Packing and crating	48	6.4	35.6	416.4
+23967	31	31	0	Nebraska	492110	Couriers and express delivery services	49	78.2	2653.4	112584.4
+23968	31	31	0	Nebraska	492210	Local messengers and local delivery	49	23.0	158.2	5374.8
+23969	31	31	0	Nebraska	493110	General warehousing and storage	49	45.2	3003.2	125960.8
+23970	31	31	0	Nebraska	493120	Refrigerated warehousing and storage	49	21.8	859.2	34077.0
+23971	31	31	0	Nebraska	493130	Farm product warehousing and storage	49	15.2	48.6	2084.0
+23972	31	31	0	Nebraska	493190	Other warehousing and storage	49	12.0	591.0	21222.4
+23973	31	31	0	Nebraska	511110	Newspaper publishers	51	119.4	2431.4	72877.8
+23974	31	31	0	Nebraska	511120	Periodical publishers	51	23.6	786.6	51717.2
+23975	31	31	0	Nebraska	511130	Book publishers	51	10.4	264.6	13060.6
+23976	31	31	0	Nebraska	511140	Directory and mailing list publishers	51	23.0	872.8	53935.4
+23977	31	31	0	Nebraska	511191	Greeting card publishers	51	1.0	0.0	0.0
+23978	31	31	0	Nebraska	511199	All other publishers	51	2.2	0.0	0.0
+23979	31	31	0	Nebraska	511210	Software publishers	51	52.4	2529.8	250615.4
+23980	31	31	0	Nebraska	512110	Motion picture and video production	51	32.2	79.8	3145.4
+23981	31	31	0	Nebraska	512131	Motion picture theaters (except drive-ins)	51	52.4	1055.4	8778.6
+23982	31	31	0	Nebraska	512191	Teleproduction and other postproduction services	51	1.4	0.0	0.0
+23983	31	31	0	Nebraska	512210	Record production	51	1.0	0.0	0.0
+23984	31	31	0	Nebraska	512220	Integrated record production/distribution	51	2.6	0.0	0.0
+23985	31	31	0	Nebraska	512230	Music publishers	51	1.0	0.0	0.0
+23986	31	31	0	Nebraska	512240	Sound recording studios	51	7.4	3.4	223.8
+23987	31	31	0	Nebraska	512290	Other sound recording industries	51	2.6	0.0	0.0
+23988	31	31	0	Nebraska	515111	Radio networks	51	8.8	42.2	2049.8
+23989	31	31	0	Nebraska	515112	Radio stations	51	58.6	886.4	34434.6
+23990	31	31	0	Nebraska	515120	Television broadcasting	51	15.4	827.4	39594.8
+23991	31	31	0	Nebraska	515210	Cable and other subscription programming	51	1.8	0.0	0.0
+23992	31	31	0	Nebraska	517110	Wired telecommunications carriers	51	258.0	4283.0	262708.6
+23993	31	31	0	Nebraska	517210	Wireless telecommunications carriers (except satellite)	51	65.6	703.4	63101.8
+23994	31	31	0	Nebraska	517410	Satellite telecommunications	51	2.4	1.2	27.4
+23995	31	31	0	Nebraska	517911	Telecommunications resellers	51	7.0	39.0	6126.6
+23996	31	31	0	Nebraska	517919	All other telecommunications	51	16.4	58.4	2917.0
+23997	31	31	0	Nebraska	518210	Data processing, hosting, and related services	51	103.4	3618.0	260946.4
+23998	31	31	0	Nebraska	519110	News syndicates	51	2.2	0.0	0.0
+23999	31	31	0	Nebraska	519120	Libraries and archives	51	6.2	2.8	103.2
+24000	31	31	0	Nebraska	519130	Internet publishing and broadcasting and web search portals	51	32.0	972.2	74048.8
+24001	31	31	0	Nebraska	519190	All other information services	51	1.25	0.0	0.0
+24002	31	31	0	Nebraska	521110	Monetary authorities - central bank	52	1.0	0.0	0.0
+24003	31	31	0	Nebraska	522110	Commercial banking	52	1040.4	15506.6	832168.2
+24004	31	31	0	Nebraska	522120	Savings institutions	52	37.0	480.0	21689.4
+24005	31	31	0	Nebraska	522130	Credit unions	52	129.0	1763.0	73153.6
+24006	31	31	0	Nebraska	522190	Other depository credit intermediation	52	1.0	0.0	0.0
+24007	31	31	0	Nebraska	522210	Credit card issuing	52	5.4	0.0	0.0
+24008	31	31	0	Nebraska	522220	Sales financing	52	19.0	124.0	6506.4
+24009	31	31	0	Nebraska	522291	Consumer lending	52	12.0	84.2	6374.2
+24010	31	31	0	Nebraska	522292	Real estate credit	52	54.6	384.2	31292.8
+24011	31	31	0	Nebraska	522293	International trade financing	52	1.6	0.0	0.0
+24012	31	31	0	Nebraska	522298	All other nondepository credit intermediation	52	48.0	1050.8	108390.0
+24013	31	31	0	Nebraska	522310	Mortgage and nonmortgage loan brokers	52	22.4	65.2	4838.2
+24014	31	31	0	Nebraska	522320	Financial transactions processing, reserve, and clearinghouse activities	52	63.0	3829.2	377488.4
+24015	31	31	0	Nebraska	522390	Other activities related to credit intermediation	52	122.0	359.6	16682.6
+24016	31	31	0	Nebraska	523110	Investment banking and securities dealing	52	14.6	37.0	4470.6
+24017	31	31	0	Nebraska	523120	Securities brokerage	52	325.0	1263.4	291083.8
+24018	31	31	0	Nebraska	523130	Commodity contracts dealing	52	8.2	17.0	1335.4
+24019	31	31	0	Nebraska	523140	Commodity contracts brokerage	52	43.2	120.6	8511.0
+24020	31	31	0	Nebraska	523910	Miscellaneous intermediation	52	35.0	111.0	9198.2
+24021	31	31	0	Nebraska	523920	Portfolio management	52	126.0	780.4	75894.6
+24022	31	31	0	Nebraska	523930	Investment advice	52	127.6	534.2	31887.2
+24023	31	31	0	Nebraska	523991	Trust, fiduciary, and custody activities	52	10.8	104.8	8787.2
+24024	31	31	0	Nebraska	523999	Miscellaneous financial investment activities	52	2.3333333333333335	0.0	0.0
+24025	31	31	0	Nebraska	524113	Direct life insurance carriers	52	135.2	5991.0	419147.0
+24026	31	31	0	Nebraska	524114	Direct health and medical insurance carriers	52	101.4	2490.6	194385.0
+24027	31	31	0	Nebraska	524126	Direct property and casualty insurance carriers	52	142.2	6227.6	420309.0
+24028	31	31	0	Nebraska	524127	Direct title insurance carriers	52	15.6	130.2	5723.6
+24029	31	31	0	Nebraska	524128	Other direct insurance (except life, health, and medical) carriers	52	5.0	3.4	623.6
+24030	31	31	0	Nebraska	524130	Reinsurance carriers	52	2.6	0.0	0.0
+24031	31	31	0	Nebraska	524210	Insurance agencies and brokerages	52	1550.0	5745.6	330320.6
+24032	31	31	0	Nebraska	524291	Claims adjusting	52	34.4	290.8	28321.0
+24033	31	31	0	Nebraska	524292	Third party administration of insurance and pension funds	52	28.4	681.4	37332.0
+24034	31	31	0	Nebraska	524298	All other insurance related activities	52	20.0	457.4	38657.4
+24035	31	31	0	Nebraska	525990	Other financial vehicles	52	3.0	2.2	275.4
+24036	31	31	0	Nebraska	531110	Lessors of residential buildings and dwellings	53	348.6	1518.0	38622.6
+24037	31	31	0	Nebraska	531120	Lessors of nonresidential buildings (except miniwarehouses)	53	206.6	751.2	25119.8
+24038	31	31	0	Nebraska	531130	Lessors of miniwarehouses and self-storage units	53	52.6	140.8	3749.8
+24039	31	31	0	Nebraska	531190	Lessors of other real estate property	53	74.0	132.4	4136.0
+24040	31	31	0	Nebraska	531210	Offices of real estate agents and brokers	53	663.2	2319.8	108599.4
+24041	31	31	0	Nebraska	531311	Residential property managers	53	165.0	2186.4	75879.6
+24042	31	31	0	Nebraska	531312	Nonresidential property managers	53	85.6	574.8	36116.4
+24043	31	31	0	Nebraska	531320	Offices of real estate appraisers	53	119.6	100.6	7709.2
+24044	31	31	0	Nebraska	531390	Other activities related to real estate	53	37.8	62.6	4587.2
+24045	31	31	0	Nebraska	532111	Passenger car rental	53	51.2	191.0	4691.8
+24046	31	31	0	Nebraska	532112	Passenger car leasing	53	4.4	0.8	111.2
+24047	31	31	0	Nebraska	532120	Truck, utility trailer, and RV (recreational vehicle) rental and leasing	53	39.4	327.0	14657.6
+24048	31	31	0	Nebraska	532210	Consumer electronics and appliances rental	53	31.6	71.0	2520.8
+24049	31	31	0	Nebraska	532220	Formal wear and costume rental	53	11.6	32.0	823.6
+24050	31	31	0	Nebraska	532230	Video tape and disc rental	53	19.6	31.6	293.8
+24051	31	31	0	Nebraska	532291	Home health equipment rental	53	35.8	236.8	9043.0
+24052	31	31	0	Nebraska	532292	Recreational goods rental	53	7.6	4.0	171.0
+24053	31	31	0	Nebraska	532299	All other consumer goods rental	53	31.2	204.0	7007.2
+24054	31	31	0	Nebraska	532310	General rental centers	53	11.4	48.0	2534.6
+24055	31	31	0	Nebraska	532411	Commercial air, rail, and water transportation equipment rental and leasing	53	9.2	5.0	1048.2
+24056	31	31	0	Nebraska	532412	Construction, mining, and forestry machinery and equipment rental and leasing	53	25.6	255.0	15165.2
+24057	31	31	0	Nebraska	532420	Office machinery and equipment rental and leasing	53	5.0	6.0	345.8
+24058	31	31	0	Nebraska	532490	Other commercial and industrial machinery and equipment rental and leasing	53	39.6	278.8	13848.4
+24059	31	31	0	Nebraska	533110	Lessors of nonfinancial intangible assets (except copyrighted works)	53	17.8	518.2	34655.0
+24060	31	31	0	Nebraska	541110	Offices of lawyers	54	868.8	4767.2	299623.6
+24061	31	31	0	Nebraska	541191	Title abstract and settlement offices	54	78.0	808.2	34124.4
+24062	31	31	0	Nebraska	541199	All other legal services	54	8.4	11.2	198.0
+24063	31	31	0	Nebraska	541211	Offices of certified public accountants	54	353.4	2775.8	163539.0
+24064	31	31	0	Nebraska	541213	Tax preparation services	54	141.4	1074.0	11300.2
+24065	31	31	0	Nebraska	541214	Payroll services	54	28.8	129.0	5370.4
+24066	31	31	0	Nebraska	541219	Other accounting services	54	220.8	1100.8	37447.4
+24067	31	31	0	Nebraska	541310	Architectural services	54	94.8	1224.8	88694.6
+24068	31	31	0	Nebraska	541320	Landscape architectural services	54	15.0	22.2	1480.4
+24069	31	31	0	Nebraska	541330	Engineering services	54	273.8	4374.0	336062.2
+24070	31	31	0	Nebraska	541340	Drafting services	54	15.0	36.2	1476.6
+24071	31	31	0	Nebraska	541350	Building inspection services	54	25.0	63.6	2214.2
+24072	31	31	0	Nebraska	541360	Geophysical surveying and mapping services	54	3.6	7.4	450.6
+24073	31	31	0	Nebraska	541370	Surveying and mapping (except geophysical) services	54	40.0	135.6	5764.8
+24074	31	31	0	Nebraska	541380	Testing laboratories	54	31.0	408.0	25484.6
+24075	31	31	0	Nebraska	541410	Interior design services	54	65.0	202.6	7698.0
+24076	31	31	0	Nebraska	541420	Industrial design services	54	3.2	4.2	185.4
+24077	31	31	0	Nebraska	541430	Graphic design services	54	67.2	144.2	7465.2
+24078	31	31	0	Nebraska	541490	Other specialized design services	54	3.0	2.8	72.6
+24079	31	31	0	Nebraska	541511	Custom computer programming services	54	352.6	4954.0	347897.4
+24080	31	31	0	Nebraska	541512	Computer systems design services	54	222.8	2431.2	184052.4
+24081	31	31	0	Nebraska	541513	Computer facilities management services	54	33.8	688.8	62466.0
+24082	31	31	0	Nebraska	541519	Other computer related services	54	30.8	285.6	26219.4
+24083	31	31	0	Nebraska	541611	Administrative management and general management consulting services	54	312.2	1308.6	86426.2
+24084	31	31	0	Nebraska	541612	Human resources consulting services	54	47.4	578.4	31797.4
+24085	31	31	0	Nebraska	541613	Marketing consulting services	54	159.2	1410.4	73945.2
+24086	31	31	0	Nebraska	541614	Process, physical distribution, and logistics consulting services	54	45.6	107.0	6833.4
+24087	31	31	0	Nebraska	541618	Other management consulting services	54	14.0	40.8	2921.0
+24088	31	31	0	Nebraska	541620	Environmental consulting services	54	33.2	182.6	9882.8
+24089	31	31	0	Nebraska	541690	Other scientific and technical consulting services	54	153.0	410.2	21418.0
+24090	31	31	0	Nebraska	541711	Research and development in biotechnology	54	10.0	284.6	16385.8
+24091	31	31	0	Nebraska	541712	Research and development in the physical, engineering, and life sciences (except biotechnology)	54	53.8	825.8	48157.0
+24092	31	31	0	Nebraska	541720	Research and development in the social sciences and humanities	54	5.6	9.0	1041.0
+24093	31	31	0	Nebraska	541810	Advertising agencies	54	80.4	1266.6	78794.8
+24094	31	31	0	Nebraska	541820	Public relations agencies	54	36.4	116.2	6147.2
+24095	31	31	0	Nebraska	541830	Media buying agencies	54	3.8	15.0	1097.2
+24096	31	31	0	Nebraska	541840	Media representatives	54	11.0	22.2	936.6
+24097	31	31	0	Nebraska	541850	Outdoor advertising	54	19.6	72.0	3704.8
+24098	31	31	0	Nebraska	541860	Direct mail advertising	54	18.0	190.2	10118.2
+24099	31	31	0	Nebraska	541870	Advertising material distribution services	54	3.8	3.2	387.8
+24100	31	31	0	Nebraska	541890	Other services related to advertising	54	58.6	426.4	15839.0
+24101	31	31	0	Nebraska	541910	Marketing research and public opinion polling	54	24.4	1318.8	44627.6
+24102	31	31	0	Nebraska	541921	Photography studios, portrait	54	115.0	306.8	5779.4
+24103	31	31	0	Nebraska	541922	Commercial photography	54	19.2	29.4	1457.0
+24104	31	31	0	Nebraska	541930	Translation and interpretation services	54	10.8	28.2	1279.8
+24105	31	31	0	Nebraska	541940	Veterinary services	54	298.2	2475.6	76969.6
+24106	31	31	0	Nebraska	541990	All other professional, scientific, and technical services	54	48.8	169.4	9715.8
+24107	31	31	0	Nebraska	551111	Offices of bank holding companies	55	29.0	170.0	17530.6
+24108	31	31	0	Nebraska	551112	Offices of other holding companies	55	41.4	695.8	69036.2
+24109	31	31	0	Nebraska	551114	Corporate, subsidiary, and regional managing offices	55	297.8	18484.4	1496639.8
+24110	31	31	0	Nebraska	561110	Office administrative services	56	148.4	1926.2	115662.0
+24111	31	31	0	Nebraska	561210	Facilities support services	56	33.4	405.0	19104.4
+24112	31	31	0	Nebraska	561311	Employment placement agencies	56	33.2	1272.4	38818.8
+24113	31	31	0	Nebraska	561312	Executive search services	56	23.0	56.0	5143.2
+24114	31	31	0	Nebraska	561320	Temporary help services	56	188.2	14368.2	560749.6
+24115	31	31	0	Nebraska	561330	Professional employer organizations	56	15.8	24648.6	967953.4
+24116	31	31	0	Nebraska	561410	Document preparation services	56	30.4	112.2	4198.4
+24117	31	31	0	Nebraska	561421	Telephone answering services	56	10.6	24.2	433.6
+24118	31	31	0	Nebraska	561422	Telemarketing bureaus and other contact centers	56	47.6	4019.2	141474.4
+24119	31	31	0	Nebraska	561431	Private mail centers	56	15.2	73.4	1138.6
+24120	31	31	0	Nebraska	561439	Other business service centers (including copy shops)	56	23.8	97.8	4691.6
+24121	31	31	0	Nebraska	561440	Collection agencies	56	35.0	1334.4	45621.0
+24122	31	31	0	Nebraska	561450	Credit bureaus	56	3.6	4.4	374.2
+24123	31	31	0	Nebraska	561491	Repossession services	56	2.2	0.0	0.0
+24124	31	31	0	Nebraska	561492	Court reporting and stenotype services	56	17.8	34.0	913.4
+24125	31	31	0	Nebraska	561499	All other business support services	56	32.4	579.6	34542.8
+24126	31	31	0	Nebraska	561510	Travel agencies	56	94.2	818.4	34425.2
+24127	31	31	0	Nebraska	561520	Tour operators	56	5.4	31.2	722.0
+24128	31	31	0	Nebraska	561591	Convention and visitors bureaus	56	3.8	8.0	557.4
+24129	31	31	0	Nebraska	561599	All other travel arrangement and reservation services	56	15.8	589.8	21156.4
+24130	31	31	0	Nebraska	561611	Investigation services	56	17.8	54.2	1984.4
+24131	31	31	0	Nebraska	561612	Security guards and patrol services	56	43.8	2377.2	46013.0
+24132	31	31	0	Nebraska	561613	Armored car services	56	9.0	189.4	5115.6
+24133	31	31	0	Nebraska	561621	Security systems services (except locksmiths)	56	28.4	380.2	21626.4
+24134	31	31	0	Nebraska	561622	Locksmiths	56	20.0	74.4	2572.8
+24135	31	31	0	Nebraska	561710	Exterminating and pest control services	56	72.8	347.4	13611.2
+24136	31	31	0	Nebraska	561720	Janitorial services	56	442.6	6118.0	101150.0
+24137	31	31	0	Nebraska	561730	Landscaping services	56	764.4	2946.8	97148.4
+24138	31	31	0	Nebraska	561740	Carpet and upholstery cleaning services	56	76.0	237.2	5406.8
+24139	31	31	0	Nebraska	561790	Other services to buildings and dwellings	56	46.2	203.2	7243.2
+24140	31	31	0	Nebraska	561910	Packaging and labeling services	56	2.6	13.8	313.4
+24141	31	31	0	Nebraska	561920	Convention and trade show organizers	56	10.0	22.2	1488.6
+24142	31	31	0	Nebraska	561990	All other support services	56	114.0	865.4	26460.4
+24143	31	31	0	Nebraska	562111	Solid waste collection	56	143.4	1513.4	58522.4
+24144	31	31	0	Nebraska	562112	Hazardous waste collection	56	4.0	10.4	678.6
+24145	31	31	0	Nebraska	562119	Other waste collection	56	2.8	0.0	0.0
+24146	31	31	0	Nebraska	562211	Hazardous waste treatment and disposal	56	2.6	0.0	0.0
+24147	31	31	0	Nebraska	562212	Solid waste landfill	56	12.2	94.8	4678.4
+24148	31	31	0	Nebraska	562213	Solid waste combustors and incinerators	56	1.0	0.0	0.0
+24149	31	31	0	Nebraska	562219	Other nonhazardous waste treatment and disposal	56	1.0	0.0	0.0
+24150	31	31	0	Nebraska	562910	Remediation services	56	16.0	213.4	11110.8
+24151	31	31	0	Nebraska	562920	Materials recovery facilities	56	2.4	3.2	120.0
+24152	31	31	0	Nebraska	562991	Septic tank and related services	56	23.6	76.6	2536.6
+24153	31	31	0	Nebraska	562998	All other miscellaneous waste management services	56	3.4	0.0	0.0
+24154	31	31	0	Nebraska	611110	Elementary and secondary schools	61	174.0	4546.4	109184.2
+24155	31	31	0	Nebraska	611210	Junior colleges	61	6.2	447.0	11901.6
+24156	31	31	0	Nebraska	611310	Colleges, universities, and professional schools	61	30.0	11274.0	340985.0
+24157	31	31	0	Nebraska	611420	Computer training	61	5.0	9.8	715.2
+24158	31	31	0	Nebraska	611430	Professional and management development training	61	19.2	44.8	4027.4
+24159	31	31	0	Nebraska	611511	Cosmetology and barber schools	61	17.6	180.4	6022.8
+24160	31	31	0	Nebraska	611512	Flight training	61	1.8	0.0	0.0
+24161	31	31	0	Nebraska	611513	Apprenticeship training	61	7.0	22.8	1210.4
+24162	31	31	0	Nebraska	611519	Other technical and trade schools	61	14.6	125.2	4167.8
+24163	31	31	0	Nebraska	611610	Fine arts schools	61	97.4	696.0	6264.0
+24164	31	31	0	Nebraska	611620	Sports and recreation instruction	61	95.4	759.0	8413.2
+24165	31	31	0	Nebraska	611630	Language schools	61	1.4	0.0	0.0
+24166	31	31	0	Nebraska	611691	Exam preparation and tutoring	61	28.8	343.4	4705.4
+24167	31	31	0	Nebraska	611692	Automobile driving schools	61	7.0	29.0	601.4
+24168	31	31	0	Nebraska	611699	All other miscellaneous schools and instruction	61	17.4	65.6	1222.4
+24169	31	31	0	Nebraska	611710	Educational support services	61	27.6	203.6	9024.0
+24170	31	31	0	Nebraska	621111	Offices of physicians (except mental health specialists)	62	957.6	13869.8	1271001.4
+24171	31	31	0	Nebraska	621112	Offices of physicians, mental health specialists	62	64.8	212.6	18392.4
+24172	31	31	0	Nebraska	621210	Offices of dentists	62	792.0	4965.8	226190.4
+24173	31	31	0	Nebraska	621310	Offices of chiropractors	62	394.8	1173.8	34283.4
+24174	31	31	0	Nebraska	621320	Offices of optometrists	62	178.8	1152.6	43890.2
+24175	31	31	0	Nebraska	621330	Offices of mental health practitioners (except physicians)	62	220.0	946.6	28448.8
+24176	31	31	0	Nebraska	621340	Offices of physical, occupational and speech therapists, and audiologists	62	256.6	2950.0	123835.2
+24177	31	31	0	Nebraska	621391	Offices of podiatrists	62	42.2	206.8	9822.8
+24178	31	31	0	Nebraska	621399	Offices of all other miscellaneous health practitioners	62	100.2	362.4	17734.8
+24179	31	31	0	Nebraska	621410	Family planning centers	62	16.2	165.2	3899.2
+24180	31	31	0	Nebraska	621420	Outpatient mental health and substance abuse centers	62	93.4	980.8	32242.8
+24181	31	31	0	Nebraska	621491	HMO medical centers	62	5.666666666666667	48.666666666666664	1432.3333333333333
+24182	31	31	0	Nebraska	621492	Kidney dialysis centers	62	36.4	170.8	19522.8
+24183	31	31	0	Nebraska	621493	Freestanding ambulatory surgical and emergency centers	62	42.8	731.2	31196.8
+24184	31	31	0	Nebraska	621498	All other outpatient care centers	62	74.8	1473.8	68657.2
+24185	31	31	0	Nebraska	621511	Medical laboratories	62	28.0	745.6	41062.6
+24186	31	31	0	Nebraska	621512	Diagnostic imaging centers	62	26.2	185.4	12626.8
+24187	31	31	0	Nebraska	621610	Home health care services	62	96.0	2897.0	85153.0
+24188	31	31	0	Nebraska	621910	Ambulance services	62	27.4	549.2	17921.2
+24189	31	31	0	Nebraska	621991	Blood and organ banks	62	11.4	454.0	15637.2
+24190	31	31	0	Nebraska	621999	All other miscellaneous ambulatory health care services	62	20.2	93.4	5439.4
+24191	31	31	0	Nebraska	622110	General medical and surgical hospitals	62	94.4	37642.0	1874194.6
+24192	31	31	0	Nebraska	622210	Psychiatric and substance abuse hospitals	62	6.4	567.0	59373.0
+24193	31	31	0	Nebraska	622310	Specialty (except psychiatric and substance abuse) hospitals	62	6.2	2830.4	119049.2
+24194	31	31	0	Nebraska	623110	Nursing care facilities (skilled nursing facilities)	62	167.8	14037.4	382916.4
+24195	31	31	0	Nebraska	623210	Residential intellectual and developmental disability facilities	62	72.2	3332.4	69846.0
+24196	31	31	0	Nebraska	623220	Residential mental health and substance abuse facilities	62	53.0	1025.6	29336.2
+24197	31	31	0	Nebraska	623311	Continuing care retirement communities	62	66.6	4659.4	104837.4
+24198	31	31	0	Nebraska	623312	Assisted living facilities for the elderly	62	105.2	3552.4	70815.0
+24199	31	31	0	Nebraska	623990	Other residential care facilities	62	21.8	774.8	33208.0
+24200	31	31	0	Nebraska	624110	Child and youth services	62	102.8	1564.4	45999.8
+24201	31	31	0	Nebraska	624120	Services for the elderly and persons with disabilities	62	156.4	3622.4	62356.8
+24202	31	31	0	Nebraska	624190	Other individual and family services	62	284.4	3267.0	80615.0
+24203	31	31	0	Nebraska	624210	Community food services	62	50.4	292.4	7061.8
+24204	31	31	0	Nebraska	624221	Temporary shelters	62	27.0	429.8	10515.6
+24205	31	31	0	Nebraska	624229	Other community housing services	62	31.0	268.4	11227.8
+24206	31	31	0	Nebraska	624230	Emergency and other relief services	62	6.8	92.6	2877.6
+24207	31	31	0	Nebraska	624310	Vocational rehabilitation services	62	75.0	2144.2	37707.0
+24208	31	31	0	Nebraska	624410	Child day care services	62	670.6	7754.0	117193.0
+24209	31	31	0	Nebraska	711110	Theater companies and dinner theaters	71	16.6	195.0	4601.4
+24210	31	31	0	Nebraska	711120	Dance companies	71	2.2	0.0	0.0
+24211	31	31	0	Nebraska	711130	Musical groups and artists	71	13.8	227.4	4319.2
+24212	31	31	0	Nebraska	711190	Other performing arts companies	71	2.0	0.0	0.0
+24213	31	31	0	Nebraska	711211	Sports teams and clubs	71	7.4	352.0	3622.2
+24214	31	31	0	Nebraska	711212	Racetracks	71	9.6	353.0	6138.6
+24215	31	31	0	Nebraska	711219	Other spectator sports	71	4.4	3.8	104.6
+24216	31	31	0	Nebraska	711310	Promoters of performing arts, sports, and similar events with facilities	71	36.2	1220.2	17963.4
+24217	31	31	0	Nebraska	711320	Promoters of performing arts, sports, and similar events without facilities	71	25.6	54.0	4355.4
+24218	31	31	0	Nebraska	711410	Agents and managers for artists, athletes, entertainers, and other public figures	71	5.0	3.4	55.2
+24219	31	31	0	Nebraska	711510	Independent artists, writers, and performers	71	72.2	244.8	7483.4
+24220	31	31	0	Nebraska	712110	Museums	71	54.4	451.4	10813.8
+24221	31	31	0	Nebraska	712120	Historical sites	71	5.8	14.2	386.4
+24222	31	31	0	Nebraska	712130	Zoos and botanical gardens	71	4.4	381.6	8404.2
+24223	31	31	0	Nebraska	712190	Nature parks and other similar institutions	71	7.0	114.6	2439.8
+24224	31	31	0	Nebraska	713110	Amusement and theme parks	71	4.2	0.0	0.0
+24225	31	31	0	Nebraska	713120	Amusement arcades	71	18.2	312.8	3063.8
+24226	31	31	0	Nebraska	713210	Casinos (except casino hotels)	71	2.0	0.0	0.0
+24227	31	31	0	Nebraska	713290	Other gambling industries	71	22.2	458.2	9617.2
+24228	31	31	0	Nebraska	713910	Golf courses and country clubs	71	147.8	1950.6	50379.8
+24229	31	31	0	Nebraska	713930	Marinas	71	2.4	0.8	163.8
+24230	31	31	0	Nebraska	713940	Fitness and recreational sports centers	71	224.0	4914.0	46439.8
+24231	31	31	0	Nebraska	713950	Bowling centers	71	64.0	780.2	8704.8
+24232	31	31	0	Nebraska	713990	All other amusement and recreation industries	71	124.4	786.4	13890.4
+24233	31	31	0	Nebraska	721110	Hotels (except casino hotels) and motels	72	441.0	7551.2	129764.6
+24234	31	31	0	Nebraska	721191	Bed-and-breakfast inns	72	7.4	9.2	98.4
+24235	31	31	0	Nebraska	721199	All other traveler accommodation	72	4.4	6.4	312.4
+24236	31	31	0	Nebraska	721211	RV (recreational vehicle) parks and campgrounds	72	16.0	22.8	766.6
+24237	31	31	0	Nebraska	721214	Recreational and vacation camps (except campgrounds)	72	18.6	60.6	1469.6
+24238	31	31	0	Nebraska	721310	Rooming and boarding houses	72	31.8	144.2	1778.6
+24239	31	31	0	Nebraska	722310	Food service contractors	72	142.6	2465.8	38890.4
+24240	31	31	0	Nebraska	722320	Caterers	72	61.0	534.8	8302.2
+24241	31	31	0	Nebraska	722330	Mobile food services	72	11.0	25.4	461.4
+24242	31	31	0	Nebraska	722410	Drinking places (alcoholic beverages)	72	551.4	3581.6	39612.8
+24243	31	31	0	Nebraska	722511	Full-service restaurants	72	1427.6	28886.4	419180.4
+24244	31	31	0	Nebraska	722513	Limited-service restaurants	72	1338.6	25661.8	319936.2
+24245	31	31	0	Nebraska	722514	Cafeterias, grill buffets, and buffets	72	48.6	758.6	9380.8
+24246	31	31	0	Nebraska	722515	Snack and nonalcoholic beverage bars	72	309.6	3234.4	40493.0
+24247	31	31	0	Nebraska	811111	General automotive repair	81	700.4	3054.6	105732.0
+24248	31	31	0	Nebraska	811112	Automotive exhaust system repair	81	9.2	15.4	652.4
+24249	31	31	0	Nebraska	811113	Automotive transmission repair	81	42.8	382.4	21839.6
+24250	31	31	0	Nebraska	811118	Other automotive mechanical and electrical repair and maintenance	81	27.8	74.0	3181.2
+24251	31	31	0	Nebraska	811121	Automotive body, paint, and interior repair and maintenance	81	364.8	1657.0	70451.4
+24252	31	31	0	Nebraska	811122	Automotive glass replacement shops	81	64.4	266.4	7538.0
+24253	31	31	0	Nebraska	811191	Automotive oil change and lubrication shops	81	48.0	337.2	6861.0
+24254	31	31	0	Nebraska	811192	Car washes	81	125.4	1019.8	17257.0
+24255	31	31	0	Nebraska	811198	All other automotive repair and maintenance	81	10.2	14.4	369.4
+24256	31	31	0	Nebraska	811211	Consumer electronics repair and maintenance	81	10.2	38.2	966.2
+24257	31	31	0	Nebraska	811212	Computer and office machine repair and maintenance	81	32.4	46.4	1966.4
+24258	31	31	0	Nebraska	811213	Communication equipment repair and maintenance	81	5.8	13.6	858.4
+24259	31	31	0	Nebraska	811219	Other electronic and precision equipment repair and maintenance	81	23.6	155.2	9100.8
+24260	31	31	0	Nebraska	811310	Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance	81	280.4	1922.4	76780.0
+24261	31	31	0	Nebraska	811411	Home and garden equipment repair and maintenance	81	24.0	40.4	1066.2
+24262	31	31	0	Nebraska	811412	Appliance repair and maintenance	81	30.8	143.0	5318.4
+24263	31	31	0	Nebraska	811420	Reupholstery and furniture repair	81	19.6	18.6	1141.0
+24264	31	31	0	Nebraska	811430	Footwear and leather goods repair	81	2.2	2.8	41.8
+24265	31	31	0	Nebraska	811490	Other personal and household goods repair and maintenance	81	47.8	110.0	2322.0
+24266	31	31	0	Nebraska	812111	Barber shops	81	34.0	27.6	1086.4
+24267	31	31	0	Nebraska	812112	Beauty salons	81	599.0	2947.6	58075.4
+24268	31	31	0	Nebraska	812113	Nail salons	81	36.2	104.4	2208.4
+24269	31	31	0	Nebraska	812191	Diet and weight reducing centers	81	25.6	114.8	2524.0
+24270	31	31	0	Nebraska	812199	Other personal care services	81	126.8	675.2	9902.2
+24271	31	31	0	Nebraska	812210	Funeral homes and funeral services	81	152.4	887.4	26460.6
+24272	31	31	0	Nebraska	812220	Cemeteries and crematories	81	33.4	171.4	4943.6
+24273	31	31	0	Nebraska	812310	Coin-operated laundries and drycleaners	81	40.2	141.0	2323.8
+24274	31	31	0	Nebraska	812320	Drycleaning and laundry services (except coin-operated)	81	88.6	620.6	11684.0
+24275	31	31	0	Nebraska	812331	Linen supply	81	9.2	418.2	11666.8
+24276	31	31	0	Nebraska	812332	Industrial launderers	81	10.2	432.4	15223.2
+24277	31	31	0	Nebraska	812910	Pet care (except veterinary) services	81	96.4	466.2	8058.6
+24278	31	31	0	Nebraska	812921	Photofinishing laboratories (except one-hour)	81	2.4	0.0	0.0
+24279	31	31	0	Nebraska	812930	Parking lots and garages	81	31.0	445.0	6956.0
+24280	31	31	0	Nebraska	812990	All other personal services	81	61.8	250.6	6987.2
+24281	31	31	0	Nebraska	813110	Religious organizations	81	1588.2	12712.4	226486.8
+24282	31	31	0	Nebraska	813211	Grantmaking foundations	81	122.0	919.8	47685.8
+24283	31	31	0	Nebraska	813212	Voluntary health organizations	81	38.0	181.6	8881.0
+24284	31	31	0	Nebraska	813219	Other grantmaking and giving services	81	25.4	220.6	8017.4
+24285	31	31	0	Nebraska	813311	Human rights organizations	81	21.6	69.6	2878.0
+24286	31	31	0	Nebraska	813312	Environment, conservation and wildlife organizations	81	55.4	481.0	16897.0
+24287	31	31	0	Nebraska	813319	Other social advocacy organizations	81	44.4	187.8	6595.2
+24288	31	31	0	Nebraska	813410	Civic and social organizations	81	272.0	1790.6	29657.0
+24289	31	31	0	Nebraska	813910	Business associations	81	171.2	808.0	40446.6
+24290	31	31	0	Nebraska	813920	Professional organizations	81	46.8	200.0	10194.2
+24291	31	31	0	Nebraska	813930	Labor unions and similar labor organizations	81	108.2	829.0	15297.6
+24292	31	31	0	Nebraska	813940	Political organizations	81	24.0	63.4	2411.4
+24293	31	31	0	Nebraska	813990	Other similar organizations (except business, professional, labor, and political organizations)	81	32.8	88.8	4095.2

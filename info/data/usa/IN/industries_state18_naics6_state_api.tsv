@@ -1,0 +1,940 @@
+	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
+11593	18	18	0	Indiana	113110	Timber tract operations	11	3.0	3.0	97.4
+11594	18	18	0	Indiana	113210	Forest nurseries and gathering of forest products	11	1.0	0.0	0.0
+11595	18	18	0	Indiana	113310	Logging	11	67.0	195.0	5752.2
+11596	18	18	0	Indiana	114111	Finfish fishing	11	1.0	0.0	0.0
+11597	18	18	0	Indiana	114112	Shellfish fishing	11	1.0	0.0	0.0
+11598	18	18	0	Indiana	114210	Hunting and trapping	11	6.2	15.0	1067.2
+11599	18	18	0	Indiana	115111	Cotton ginning	11	1.0	0.0	0.0
+11600	18	18	0	Indiana	115112	Soil preparation, planting, and cultivating	11	40.0	256.0	12705.2
+11601	18	18	0	Indiana	115113	Crop harvesting, primarily by machine	11	1.3333333333333333	0.0	0.0
+11602	18	18	0	Indiana	115114	Postharvest crop activities (except cotton ginning)	11	18.4	226.4	11014.8
+11603	18	18	0	Indiana	115115	Farm labor contractors and crew leaders	11	4.4	2.0	1247.4
+11604	18	18	0	Indiana	115116	Farm management services	11	12.0	81.4	4269.4
+11605	18	18	0	Indiana	115210	Support activities for animal production	11	98.4	219.8	6715.0
+11606	18	18	0	Indiana	115310	Support activities for forestry	11	14.8	18.2	1294.2
+11607	18	18	0	Indiana	211111	Crude petroleum and natural gas extraction	21	41.8	166.2	11992.4
+11608	18	18	0	Indiana	211112	Natural gas liquid extraction	21	2.0	0.0	0.0
+11609	18	18	0	Indiana	212111	Bituminous coal and lignite surface mining	21	15.8	1072.4	87884.0
+11610	18	18	0	Indiana	212112	Bituminous coal underground mining	21	11.4	1084.2	143119.8
+11611	18	18	0	Indiana	212221	Gold ore mining	21	1.0	0.0	0.0
+11612	18	18	0	Indiana	212299	All other metal ore mining	21	1.0	0.0	0.0
+11613	18	18	0	Indiana	212311	Dimension stone mining and quarrying	21	6.0	79.2	5505.8
+11614	18	18	0	Indiana	212312	Crushed and broken limestone mining and quarrying	21	68.4	1118.2	57110.4
+11615	18	18	0	Indiana	212313	Crushed and broken granite mining and quarrying	21	1.4	0.0	0.0
+11616	18	18	0	Indiana	212319	Other crushed and broken stone mining and quarrying	21	5.0	0.0	0.0
+11617	18	18	0	Indiana	212321	Construction sand and gravel mining	21	81.0	647.0	34292.4
+11618	18	18	0	Indiana	212324	Kaolin and ball clay mining	21	1.0	0.0	0.0
+11619	18	18	0	Indiana	212325	Clay and ceramic and refractory minerals mining	21	1.0	0.0	0.0
+11620	18	18	0	Indiana	212399	All other nonmetallic mineral mining	21	2.4	0.0	0.0
+11621	18	18	0	Indiana	213111	Drilling oil and gas wells	21	16.0	111.0	8588.4
+11622	18	18	0	Indiana	213112	Support activities for oil and gas operations	21	24.4	226.2	11848.6
+11623	18	18	0	Indiana	213113	Support activities for coal mining	21	6.0	118.2	6112.2
+11624	18	18	0	Indiana	213114	Support activities for metal mining	21	2.0	0.0	0.0
+11625	18	18	0	Indiana	213115	Support activities for nonmetallic minerals (except fuels) mining	21	5.8	23.0	1182.0
+11626	18	18	0	Indiana	221111	Hydroelectric power generation	22	3.0	0.0	0.0
+11627	18	18	0	Indiana	221112	Fossil fuel electric power generation	22	32.6	2383.0	231089.2
+11628	18	18	0	Indiana	221113	Nuclear electric power generation	22	1.0	0.0	0.0
+11629	18	18	0	Indiana	221114	Solar electric power generation	22	1.0	0.0	0.0
+11630	18	18	0	Indiana	221115	Wind electric power generation	22	5.6	6.2	1039.0
+11631	18	18	0	Indiana	221116	Geothermal electric power generation	22	1.0	0.0	0.0
+11632	18	18	0	Indiana	221117	Biomass electric power generation	22	1.0	0.0	0.0
+11633	18	18	0	Indiana	221118	Other electric power generation	22	1.4	0.0	0.0
+11634	18	18	0	Indiana	221121	Electric bulk power transmission and control	22	2.0	0.0	0.0
+11635	18	18	0	Indiana	221122	Electric power distribution	22	240.8	3565.6	774641.2
+11636	18	18	0	Indiana	221210	Natural gas distribution	22	101.0	1101.0	88057.6
+11637	18	18	0	Indiana	221310	Water supply and irrigation systems	22	106.8	1206.2	65613.4
+11638	18	18	0	Indiana	221320	Sewage treatment facilities	22	36.2	417.4	26359.0
+11639	18	18	0	Indiana	221330	Steam and air-conditioning supply	22	1.8	0.0	0.0
+11640	18	18	0	Indiana	236115	New single-family housing construction (except for-sale builders)	23	858.8	2671.0	95454.0
+11641	18	18	0	Indiana	236116	New multifamily housing construction (except for-sale builders)	23	53.4	742.2	43324.8
+11642	18	18	0	Indiana	236117	New housing for-sale builders	23	210.4	1600.6	95976.4
+11643	18	18	0	Indiana	236118	Residential remodelers	23	1856.2	6383.4	219612.8
+11644	18	18	0	Indiana	236210	Industrial building construction	23	105.0	2908.6	187869.6
+11645	18	18	0	Indiana	236220	Commercial and institutional building construction	23	696.4	10386.0	605077.0
+11646	18	18	0	Indiana	237110	Water and sewer line and related structures construction	23	272.0	3716.8	234852.6
+11647	18	18	0	Indiana	237120	Oil and gas pipeline and related structures construction	23	20.8	2268.4	174550.4
+11648	18	18	0	Indiana	237130	Power and communication line and related structures construction	23	126.2	3759.4	267810.4
+11649	18	18	0	Indiana	237210	Land subdivision	23	67.8	267.0	14295.8
+11650	18	18	0	Indiana	237310	Highway, street, and bridge construction	23	187.4	4841.8	423372.8
+11651	18	18	0	Indiana	237990	Other heavy and civil engineering construction	23	97.6	911.2	72027.2
+11652	18	18	0	Indiana	238110	Poured concrete foundation and structure contractors	23	512.0	3539.0	159675.0
+11653	18	18	0	Indiana	238120	Structural steel and precast concrete contractors	23	60.6	1085.6	63386.8
+11654	18	18	0	Indiana	238130	Framing contractors	23	250.6	1255.0	47896.0
+11655	18	18	0	Indiana	238140	Masonry contractors	23	393.6	2517.4	108612.2
+11656	18	18	0	Indiana	238150	Glass and glazing contractors	23	85.2	711.6	32655.4
+11657	18	18	0	Indiana	238160	Roofing contractors	23	392.2	3670.0	183380.0
+11658	18	18	0	Indiana	238170	Siding contractors	23	188.2	682.4	24936.4
+11659	18	18	0	Indiana	238190	Other foundation, structure, and building exterior contractors	23	87.2	861.0	47091.4
+11660	18	18	0	Indiana	238210	Electrical contractors and other wiring installation contractors	23	1228.4	13609.6	741272.4
+11661	18	18	0	Indiana	238220	Plumbing, heating, and air-conditioning contractors	23	1907.0	20904.8	1226349.6
+11662	18	18	0	Indiana	238290	Other building equipment contractors	23	166.6	4065.0	242214.6
+11663	18	18	0	Indiana	238310	Drywall and insulation contractors	23	294.6	2981.0	131097.0
+11664	18	18	0	Indiana	238320	Painting and wall covering contractors	23	614.0	3589.0	140746.8
+11665	18	18	0	Indiana	238330	Flooring contractors	23	237.4	1104.0	44507.8
+11666	18	18	0	Indiana	238340	Tile and terrazzo contractors	23	96.8	779.0	32179.4
+11667	18	18	0	Indiana	238350	Finish carpentry contractors	23	461.2	2630.0	114790.4
+11668	18	18	0	Indiana	238390	Other building finishing contractors	23	104.2	849.0	36988.2
+11669	18	18	0	Indiana	238910	Site preparation contractors	23	840.0	6588.0	370492.4
+11670	18	18	0	Indiana	238990	All other specialty trade contractors	23	569.2	4905.2	301696.6
+11671	18	18	0	Indiana	311111	Dog and cat food manufacturing	31	10.0	376.0	23967.8
+11672	18	18	0	Indiana	311119	Other animal food manufacturing	31	46.0	1235.2	61383.4
+11673	18	18	0	Indiana	311211	Flour milling	31	13.4	768.8	39409.4
+11674	18	18	0	Indiana	311221	Wet corn milling	31	5.0	1144.2	101490.4
+11675	18	18	0	Indiana	311224	Soybean and other oilseed processing	31	8.4	710.2	41438.0
+11676	18	18	0	Indiana	311225	Fats and oils refining and blending	31	2.6	0.0	0.0
+11677	18	18	0	Indiana	311340	Nonchocolate confectionery manufacturing	31	9.4	959.4	47788.4
+11678	18	18	0	Indiana	311351	Chocolate and confectionery manufacturing from cacao beans	31	1.5	0.0	0.0
+11679	18	18	0	Indiana	311352	Confectionery manufacturing from purchased chocolate	31	30.6	961.6	23898.6
+11680	18	18	0	Indiana	311411	Frozen fruit, juice, and vegetable manufacturing	31	1.25	0.0	0.0
+11681	18	18	0	Indiana	311412	Frozen specialty food manufacturing	31	11.0	622.8	32667.6
+11682	18	18	0	Indiana	311421	Fruit and vegetable canning	31	13.0	921.4	44436.8
+11683	18	18	0	Indiana	311422	Specialty canning	31	3.2	0.0	0.0
+11684	18	18	0	Indiana	311423	Dried and dehydrated food manufacturing	31	3.0	0.0	0.0
+11685	18	18	0	Indiana	311511	Fluid milk manufacturing	31	6.8	374.2	16939.0
+11686	18	18	0	Indiana	311513	Cheese manufacturing	31	5.0	0.0	0.0
+11687	18	18	0	Indiana	311514	Dry, condensed, and evaporated dairy product manufacturing	31	4.0	0.0	0.0
+11688	18	18	0	Indiana	311520	Ice cream and frozen dessert manufacturing	31	8.6	1192.2	52868.0
+11689	18	18	0	Indiana	311611	Animal (except poultry) slaughtering	31	44.2	4235.2	153838.6
+11690	18	18	0	Indiana	311612	Meat processed from carcasses	31	18.4	1751.8	58595.4
+11691	18	18	0	Indiana	311613	Rendering and meat byproduct processing	31	5.8	152.4	9927.0
+11692	18	18	0	Indiana	311615	Poultry processing	31	11.6	2011.8	65172.2
+11693	18	18	0	Indiana	311710	Seafood product preparation and packaging	31	1.3333333333333333	0.0	0.0
+11694	18	18	0	Indiana	311811	Retail bakeries	31	97.6	898.8	13950.0
+11695	18	18	0	Indiana	311812	Commercial bakeries	31	37.8	4159.0	150936.2
+11696	18	18	0	Indiana	311813	Frozen cakes, pies, and other pastries manufacturing	31	5.8	283.2	15723.4
+11697	18	18	0	Indiana	311821	Cookie and cracker manufacturing	31	8.8	939.0	41483.2
+11698	18	18	0	Indiana	311824	Dry pasta, dough, and flour mixes manufacturing from purchased flour	31	7.6	0.0	0.0
+11699	18	18	0	Indiana	311830	Tortilla manufacturing	31	3.0	198.2	6873.6
+11700	18	18	0	Indiana	311919	Other snack food manufacturing	31	11.0	2328.4	108178.4
+11701	18	18	0	Indiana	311920	Coffee and tea manufacturing	31	9.2	43.6	2776.0
+11702	18	18	0	Indiana	311941	Mayonnaise, dressing, and other prepared sauce manufacturing	31	3.6	0.0	0.0
+11703	18	18	0	Indiana	311942	Spice and extract manufacturing	31	5.8	177.2	10827.6
+11704	18	18	0	Indiana	311991	Perishable prepared food manufacturing	31	5.8	714.0	29125.8
+11705	18	18	0	Indiana	311999	All other miscellaneous food manufacturing	31	16.4	1287.2	60936.8
+11706	18	18	0	Indiana	312111	Soft drink manufacturing	31	8.6	1534.6	82682.4
+11707	18	18	0	Indiana	312112	Bottled water manufacturing	31	4.8	121.8	5992.4
+11708	18	18	0	Indiana	312113	Ice manufacturing	31	9.6	0.0	0.0
+11709	18	18	0	Indiana	312120	Breweries	31	39.0	440.6	11568.8
+11710	18	18	0	Indiana	312130	Wineries	31	40.6	460.6	9837.4
+11711	18	18	0	Indiana	312140	Distilleries	31	6.2	109.2	7846.4
+11712	18	18	0	Indiana	312230	Tobacco manufacturing	31	1.2	0.0	0.0
+11713	18	18	0	Indiana	313110	Fiber, yarn, and thread mills	31	2.0	0.0	0.0
+11714	18	18	0	Indiana	313210	Broadwoven fabric mills	31	5.4	46.6	2024.6
+11715	18	18	0	Indiana	313220	Narrow fabric mills and schiffli machine embroidery	31	1.6	0.0	0.0
+11716	18	18	0	Indiana	313230	Nonwoven fabric mills	31	4.0	148.0	6563.0
+11717	18	18	0	Indiana	313240	Knit fabric mills	31	1.0	0.0	0.0
+11718	18	18	0	Indiana	313310	Textile and fabric finishing mills	31	6.8	81.4	2062.2
+11719	18	18	0	Indiana	313320	Fabric coating mills	31	4.4	65.6	3618.4
+11720	18	18	0	Indiana	314110	Carpet and rug mills	31	5.2	42.8	2003.4
+11721	18	18	0	Indiana	314120	Curtain and linen mills	31	29.2	906.6	21311.8
+11722	18	18	0	Indiana	314910	Textile bag and canvas mills	31	34.0	961.2	34080.4
+11723	18	18	0	Indiana	314994	Rope, cordage, twine, tire cord, and tire fabric mills	31	2.4	0.0	0.0
+11724	18	18	0	Indiana	314999	All other miscellaneous textile product mills	31	61.6	320.2	8295.4
+11725	18	18	0	Indiana	315110	Hosiery and sock mills	31	2.2	0.0	0.0
+11726	18	18	0	Indiana	315190	Other apparel knitting mills	31	1.0	0.0	0.0
+11727	18	18	0	Indiana	315210	Cut and sew apparel contractors	31	16.2	168.0	4296.8
+11728	18	18	0	Indiana	315220	Men's and boys' cut and sew apparel manufacturing	31	2.8	13.0	306.2
+11729	18	18	0	Indiana	315240	Women's, girls', and infants' cut and sew apparel manufacturing	31	2.4	0.0	0.0
+11730	18	18	0	Indiana	315280	Other cut and sew apparel manufacturing	31	6.2	265.8	9175.4
+11731	18	18	0	Indiana	315990	Apparel accessories and other apparel manufacturing	31	4.0	21.0	674.6
+11732	18	18	0	Indiana	316210	Footwear manufacturing	31	1.0	0.0	0.0
+11733	18	18	0	Indiana	316992	Women's handbag and purse manufacturing	31	1.2	0.0	0.0
+11734	18	18	0	Indiana	316998	All other leather good and allied product manufacturing	31	11.8	175.6	5121.4
+11735	18	18	0	Indiana	321113	Sawmills	32	76.2	1289.0	40628.0
+11736	18	18	0	Indiana	321114	Wood preservation	32	7.4	172.6	7941.4
+11737	18	18	0	Indiana	321211	Hardwood veneer and plywood manufacturing	32	27.2	2107.2	84672.8
+11738	18	18	0	Indiana	321212	Softwood veneer and plywood manufacturing	32	3.6	202.4	9844.4
+11739	18	18	0	Indiana	321213	Engineered wood member (except truss) manufacturing	32	3.2	10.2	328.2
+11740	18	18	0	Indiana	321214	Truss manufacturing	32	23.8	685.0	29780.4
+11741	18	18	0	Indiana	321219	Reconstituted wood product manufacturing	32	6.2	120.4	5261.8
+11742	18	18	0	Indiana	321911	Wood window and door manufacturing	32	34.6	2105.6	77570.6
+11743	18	18	0	Indiana	321912	Cut stock, resawing lumber, and planing	32	36.0	919.8	32076.0
+11744	18	18	0	Indiana	321918	Other millwork (including flooring)	32	52.2	1146.8	40737.2
+11745	18	18	0	Indiana	321920	Wood container and pallet manufacturing	32	121.8	2219.8	64300.4
+11746	18	18	0	Indiana	321991	Manufactured home (mobile home) manufacturing	32	20.0	1908.0	88281.8
+11747	18	18	0	Indiana	321992	Prefabricated wood building manufacturing	32	17.6	445.6	19310.8
+11748	18	18	0	Indiana	321999	All other miscellaneous wood product manufacturing	32	61.8	913.4	29963.2
+11749	18	18	0	Indiana	322121	Paper (except newsprint) mills	32	1.0	0.0	0.0
+11750	18	18	0	Indiana	322130	Paperboard mills	32	4.2	555.4	39979.8
+11751	18	18	0	Indiana	322211	Corrugated and solid fiber box manufacturing	32	54.6	3707.4	202973.2
+11752	18	18	0	Indiana	322212	Folding paperboard box manufacturing	32	15.6	1795.4	83085.2
+11753	18	18	0	Indiana	322219	Other paperboard container manufacturing	32	8.0	373.0	15472.6
+11754	18	18	0	Indiana	322220	Paper bag and coated and treated paper manufacturing	32	26.4	1743.4	94640.0
+11755	18	18	0	Indiana	322230	Stationery product manufacturing	32	11.6	498.8	19616.0
+11756	18	18	0	Indiana	322299	All other converted paper product manufacturing	32	12.6	556.2	27274.6
+11757	18	18	0	Indiana	323111	Commercial printing (except screen and books)	32	402.8	9258.2	382771.2
+11758	18	18	0	Indiana	323113	Commercial screen printing	32	117.8	2297.2	80551.8
+11759	18	18	0	Indiana	323117	Books printing	32	13.2	2169.0	90033.2
+11760	18	18	0	Indiana	323120	Support activities for printing	32	35.4	844.4	29475.4
+11761	18	18	0	Indiana	324110	Petroleum refineries	32	3.2	0.0	0.0
+11762	18	18	0	Indiana	324121	Asphalt paving mixture and block manufacturing	32	35.6	83.2	15421.2
+11763	18	18	0	Indiana	324122	Asphalt shingle and coating materials manufacturing	32	8.8	212.0	14669.8
+11764	18	18	0	Indiana	324191	Petroleum lubricating oil and grease manufacturing	32	11.2	510.4	32252.4
+11765	18	18	0	Indiana	324199	All other petroleum and coal products manufacturing	32	2.2	0.0	0.0
+11766	18	18	0	Indiana	325120	Industrial gas manufacturing	32	17.2	282.2	22493.6
+11767	18	18	0	Indiana	325130	Synthetic dye and pigment manufacturing	32	6.2	252.6	13416.2
+11768	18	18	0	Indiana	325180	Other basic inorganic chemical manufacturing	32	18.0	485.0	38095.0
+11769	18	18	0	Indiana	325193	Ethyl alcohol manufacturing	32	15.0	793.8	46597.0
+11770	18	18	0	Indiana	325199	All other basic organic chemical manufacturing	32	13.8	468.6	36241.2
+11771	18	18	0	Indiana	325211	Plastics material and resin manufacturing	32	38.0	2956.2	195490.6
+11772	18	18	0	Indiana	325212	Synthetic rubber manufacturing	32	8.2	296.2	20958.0
+11773	18	18	0	Indiana	325311	Nitrogenous fertilizer manufacturing	32	1.0	0.0	0.0
+11774	18	18	0	Indiana	325312	Phosphatic fertilizer manufacturing	32	1.0	0.0	0.0
+11775	18	18	0	Indiana	325314	Fertilizer (mixing only) manufacturing	32	9.2	120.4	6999.4
+11776	18	18	0	Indiana	325320	Pesticide and other agricultural chemical manufacturing	32	4.8	40.2	2688.0
+11777	18	18	0	Indiana	325411	Medicinal and botanical manufacturing	32	4.2	130.4	7818.4
+11778	18	18	0	Indiana	325412	Pharmaceutical preparation manufacturing	32	21.4	5255.0	463147.6
+11779	18	18	0	Indiana	325413	In-vitro diagnostic substance manufacturing	32	4.2	381.4	44653.2
+11780	18	18	0	Indiana	325414	Biological product (except diagnostic) manufacturing	32	4.4	99.8	6343.0
+11781	18	18	0	Indiana	325510	Paint and coating manufacturing	32	26.8	1022.8	53014.6
+11782	18	18	0	Indiana	325520	Adhesive manufacturing	32	13.8	464.4	21883.8
+11783	18	18	0	Indiana	325611	Soap and other detergent manufacturing	32	18.8	726.2	43244.2
+11784	18	18	0	Indiana	325612	Polish and other sanitation good manufacturing	32	14.6	400.8	19573.0
+11785	18	18	0	Indiana	325613	Surface active agent manufacturing	32	3.8	60.8	3907.0
+11786	18	18	0	Indiana	325620	Toilet preparation manufacturing	32	8.4	419.6	22789.0
+11787	18	18	0	Indiana	325910	Printing ink manufacturing	32	6.4	73.4	10378.8
+11788	18	18	0	Indiana	325920	Explosives manufacturing	32	1.0	0.0	0.0
+11789	18	18	0	Indiana	325991	Custom compounding of purchased resins	32	23.2	1478.2	83435.0
+11790	18	18	0	Indiana	325992	Photographic film, paper, plate, and chemical manufacturing	32	4.6	7.8	266.4
+11791	18	18	0	Indiana	325998	All other miscellaneous chemical product and preparation manufacturing	32	23.4	1441.0	71047.8
+11792	18	18	0	Indiana	326111	Plastics bag and pouch manufacturing	32	5.2	150.4	12142.8
+11793	18	18	0	Indiana	326112	Plastics packaging film and sheet (including laminated) manufacturing	32	10.2	1629.2	91181.4
+11794	18	18	0	Indiana	326113	Unlaminated plastics film and sheet (except packaging) manufacturing	32	26.4	2351.0	131169.2
+11795	18	18	0	Indiana	326121	Unlaminated plastics profile shape manufacturing	32	12.8	923.8	43594.6
+11796	18	18	0	Indiana	326122	Plastics pipe and pipe fitting manufacturing	32	13.2	617.2	22428.8
+11797	18	18	0	Indiana	326130	Laminated plastics plate, sheet (except packaging), and shape manufacturing	32	7.8	579.4	31460.8
+11798	18	18	0	Indiana	326140	Polystyrene foam product manufacturing	32	13.2	743.6	37666.8
+11799	18	18	0	Indiana	326150	Urethane and other foam product (except polystyrene) manufacturing	32	29.2	2067.4	81110.0
+11800	18	18	0	Indiana	326160	Plastics bottle manufacturing	32	17.2	1651.6	64416.6
+11801	18	18	0	Indiana	326191	Plastics plumbing fixture manufacturing	32	19.2	1091.8	41133.4
+11802	18	18	0	Indiana	326199	All other plastics product manufacturing	32	266.2	20310.6	811003.6
+11803	18	18	0	Indiana	326211	Tire manufacturing (except retreading)	32	2.6	0.0	0.0
+11804	18	18	0	Indiana	326212	Tire retreading	32	12.8	236.2	8935.6
+11805	18	18	0	Indiana	326220	Rubber and plastics hoses and belting manufacturing	32	7.4	366.6	12930.6
+11806	18	18	0	Indiana	326291	Rubber product manufacturing for mechanical use	32	37.2	3423.2	128558.8
+11807	18	18	0	Indiana	326299	All other rubber product manufacturing	32	21.2	640.4	22959.0
+11808	18	18	0	Indiana	327110	Pottery, ceramics, and plumbing fixture manufacturing	32	6.0	0.0	0.0
+11809	18	18	0	Indiana	327120	Clay building material and refractories manufacturing	32	27.2	618.0	32066.4
+11810	18	18	0	Indiana	327211	Flat glass manufacturing	32	2.2	0.0	0.0
+11811	18	18	0	Indiana	327212	Other pressed and blown glass and glassware manufacturing	32	2.8	0.0	0.0
+11812	18	18	0	Indiana	327213	Glass container manufacturing	32	5.0	586.0	36293.2
+11813	18	18	0	Indiana	327215	Glass product manufacturing made of purchased glass	32	33.0	3333.8	149102.4
+11814	18	18	0	Indiana	327310	Cement manufacturing	32	7.2	599.0	37881.0
+11815	18	18	0	Indiana	327320	Ready-mix concrete manufacturing	32	154.8	1844.8	98382.8
+11816	18	18	0	Indiana	327331	Concrete block and brick manufacturing	32	17.2	333.0	12190.6
+11817	18	18	0	Indiana	327332	Concrete pipe manufacturing	32	10.2	134.8	9649.8
+11818	18	18	0	Indiana	327390	Other concrete product manufacturing	32	65.4	1021.0	43460.2
+11819	18	18	0	Indiana	327410	Lime manufacturing	32	2.6	19.2	1286.4
+11820	18	18	0	Indiana	327420	Gypsum product manufacturing	32	6.0	542.8	32123.4
+11821	18	18	0	Indiana	327910	Abrasive product manufacturing	32	8.6	211.2	9625.2
+11822	18	18	0	Indiana	327991	Cut stone and stone product manufacturing	32	53.6	729.0	40933.4
+11823	18	18	0	Indiana	327992	Ground or treated mineral and earth manufacturing	32	11.6	229.6	13508.0
+11824	18	18	0	Indiana	327993	Mineral wool manufacturing	32	17.8	868.2	45979.2
+11825	18	18	0	Indiana	327999	All other miscellaneous nonmetallic mineral product manufacturing	32	5.2	160.4	8596.8
+11826	18	18	0	Indiana	331110	Iron and steel mills and ferroalloy manufacturing	33	41.8	20823.0	1774615.2
+11827	18	18	0	Indiana	331210	Iron and steel pipe and tube manufacturing from purchased steel	33	8.6	1369.6	62044.2
+11828	18	18	0	Indiana	331221	Rolled steel shape manufacturing	33	4.8	186.6	9217.0
+11829	18	18	0	Indiana	331222	Steel wire drawing	33	10.4	1138.2	60033.2
+11830	18	18	0	Indiana	331313	Alumina refining and primary aluminum production	33	4.4	225.8	18709.0
+11831	18	18	0	Indiana	331314	Secondary smelting and alloying of aluminum	33	14.2	800.6	40591.0
+11832	18	18	0	Indiana	331315	Aluminum sheet, plate, and foil manufacturing	33	6.6	1537.8	116211.0
+11833	18	18	0	Indiana	331318	Other aluminum rolling, drawing, and extruding	33	18.6	2465.0	131821.0
+11834	18	18	0	Indiana	331410	Nonferrous metal (except aluminum) smelting and refining	33	3.8	96.2	6211.6
+11835	18	18	0	Indiana	331420	Copper rolling, drawing, extruding, and alloying	33	17.2	1520.0	78606.0
+11836	18	18	0	Indiana	331491	Nonferrous metal (except copper and aluminum) rolling, drawing, extruding, and alloying	33	9.0	411.8	26310.0
+11837	18	18	0	Indiana	331492	Secondary smelting, refining, and alloying of nonferrous metal (except copper and aluminum)	33	8.6	627.0	38104.4
+11838	18	18	0	Indiana	331511	Iron foundries	33	29.4	3862.2	191193.4
+11839	18	18	0	Indiana	331512	Steel investment foundries	33	5.0	892.6	45554.6
+11840	18	18	0	Indiana	331513	Steel foundries (except investment)	33	5.2	154.6	7379.6
+11841	18	18	0	Indiana	331523	Nonferrous metal die-casting foundries	33	17.0	3151.2	173402.8
+11842	18	18	0	Indiana	331524	Aluminum foundries (except die-casting)	33	14.0	767.2	32027.4
+11843	18	18	0	Indiana	331529	Other nonferrous metal foundries (except die-casting)	33	9.4	224.2	13975.0
+11844	18	18	0	Indiana	332111	Iron and steel forging	33	13.8	1465.6	64656.2
+11845	18	18	0	Indiana	332112	Nonferrous forging	33	1.2	0.0	0.0
+11846	18	18	0	Indiana	332114	Custom roll forming	33	19.4	1005.2	41633.0
+11847	18	18	0	Indiana	332117	Powder metallurgy part manufacturing	33	5.8	1062.6	51707.0
+11848	18	18	0	Indiana	332119	Metal crown, closure, and other metal stamping (except automotive)	33	62.0	2495.2	110051.0
+11849	18	18	0	Indiana	332215	Metal kitchen cookware, utensil, cutlery, and flatware (except precious) manufacturing	33	5.6	45.8	1637.0
+11850	18	18	0	Indiana	332216	Saw blade and handtool manufacturing	33	22.0	425.8	18377.8
+11851	18	18	0	Indiana	332311	Prefabricated metal building and component manufacturing	33	13.2	878.6	50681.6
+11852	18	18	0	Indiana	332312	Fabricated structural metal manufacturing	33	86.8	2840.0	155951.0
+11853	18	18	0	Indiana	332313	Plate work manufacturing	33	42.0	809.4	33768.6
+11854	18	18	0	Indiana	332321	Metal window and door manufacturing	33	24.2	2087.0	67567.6
+11855	18	18	0	Indiana	332322	Sheet metal work manufacturing	33	115.8	4657.8	203438.8
+11856	18	18	0	Indiana	332323	Ornamental and architectural metal work manufacturing	33	38.8	709.2	28461.4
+11857	18	18	0	Indiana	332410	Power boiler and heat exchanger manufacturing	33	4.2	184.2	11050.6
+11858	18	18	0	Indiana	332420	Metal tank (heavy gauge) manufacturing	33	19.6	978.8	44187.4
+11859	18	18	0	Indiana	332431	Metal can manufacturing	33	4.8	418.2	34445.4
+11860	18	18	0	Indiana	332439	Other metal container manufacturing	33	14.6	388.2	21452.0
+11861	18	18	0	Indiana	332510	Hardware manufacturing	33	20.2	2000.0	92118.8
+11862	18	18	0	Indiana	332613	Spring manufacturing	33	20.8	1219.0	56399.2
+11863	18	18	0	Indiana	332618	Other fabricated wire product manufacturing	33	26.4	1560.6	45213.2
+11864	18	18	0	Indiana	332710	Machine shops	33	606.2	8158.0	348953.4
+11865	18	18	0	Indiana	332721	Precision turned product manufacturing	33	120.8	4667.6	194911.6
+11866	18	18	0	Indiana	332722	Bolt, nut, screw, rivet, and washer manufacturing	33	29.4	2131.6	104300.6
+11867	18	18	0	Indiana	332811	Metal heat treating	33	46.4	2249.0	124382.8
+11868	18	18	0	Indiana	332812	Metal coating, engraving (except jewelry and silverware), and allied services to manufacturers	33	106.2	3413.6	160290.6
+11869	18	18	0	Indiana	332813	Electroplating, plating, polishing, anodizing, and coloring	33	82.4	2028.0	80860.0
+11870	18	18	0	Indiana	332911	Industrial valve manufacturing	33	10.0	971.6	59532.4
+11871	18	18	0	Indiana	332912	Fluid power valve and hose fitting manufacturing	33	13.6	784.2	38187.8
+11872	18	18	0	Indiana	332913	Plumbing fixture fitting and trim manufacturing	33	7.4	590.0	25992.2
+11873	18	18	0	Indiana	332919	Other metal valve and pipe fitting manufacturing	33	3.6	270.8	14082.8
+11874	18	18	0	Indiana	332991	Ball and roller bearing manufacturing	33	14.4	2431.2	120298.2
+11875	18	18	0	Indiana	332992	Small arms ammunition manufacturing	33	1.0	0.0	0.0
+11876	18	18	0	Indiana	332993	Ammunition (except small arms) manufacturing	33	1.0	0.0	0.0
+11877	18	18	0	Indiana	332994	Small arms, ordnance, and ordnance accessories manufacturing	33	7.6	18.2	844.8
+11878	18	18	0	Indiana	332996	Fabricated pipe and pipe fitting manufacturing	33	21.2	892.2	48078.6
+11879	18	18	0	Indiana	332999	All other miscellaneous fabricated metal product manufacturing	33	110.8	3848.4	172552.6
+11880	18	18	0	Indiana	333111	Farm machinery and equipment manufacturing	33	36.2	1646.2	80068.6
+11881	18	18	0	Indiana	333112	Lawn and garden tractor and home lawn and garden equipment manufacturing	33	7.0	318.8	12890.8
+11882	18	18	0	Indiana	333120	Construction machinery manufacturing	33	22.6	1133.8	55084.0
+11883	18	18	0	Indiana	333131	Mining machinery and equipment manufacturing	33	8.0	378.4	24209.2
+11884	18	18	0	Indiana	333132	Oil and gas field machinery and equipment manufacturing	33	3.8	133.0	8047.0
+11885	18	18	0	Indiana	333241	Food product machinery manufacturing	33	11.4	424.4	34801.2
+11886	18	18	0	Indiana	333242	Semiconductor machinery manufacturing	33	1.0	0.0	0.0
+11887	18	18	0	Indiana	333243	Sawmill, woodworking, and paper machinery manufacturing	33	17.6	601.8	33229.8
+11888	18	18	0	Indiana	333244	Printing machinery and equipment manufacturing	33	6.2	168.0	8381.6
+11889	18	18	0	Indiana	333249	Other industrial machinery manufacturing	33	60.6	1089.0	54137.0
+11890	18	18	0	Indiana	333314	Optical instrument and lens manufacturing	33	5.6	31.6	1392.6
+11891	18	18	0	Indiana	333316	Photographic and photocopying equipment manufacturing	33	1.6	0.0	0.0
+11892	18	18	0	Indiana	333318	Other commercial and service industry machinery manufacturing	33	26.8	686.0	31668.6
+11893	18	18	0	Indiana	333413	Industrial and commercial fan and blower and air purification equipment manufacturing	33	16.6	829.0	49685.8
+11894	18	18	0	Indiana	333414	Heating equipment (except warm air furnaces) manufacturing	33	15.2	261.6	14955.6
+11895	18	18	0	Indiana	333415	Air-conditioning and warm air heating equipment and commercial and industrial refrigeration equipment manufacturing	33	20.2	3069.4	164104.4
+11896	18	18	0	Indiana	333511	Industrial mold manufacturing	33	84.2	1655.2	77120.4
+11897	18	18	0	Indiana	333514	Special die and tool, die set, jig, and fixture manufacturing	33	154.6	2617.0	132252.4
+11898	18	18	0	Indiana	333515	Cutting tool and machine tool accessory manufacturing	33	32.6	595.4	32419.8
+11899	18	18	0	Indiana	333517	Machine tool manufacturing	33	31.0	618.4	30503.2
+11900	18	18	0	Indiana	333519	Rolling mill and other metalworking machinery manufacturing	33	11.0	265.0	27458.2
+11901	18	18	0	Indiana	333611	Turbine and turbine generator set units manufacturing	33	6.0	667.4	41227.2
+11902	18	18	0	Indiana	333612	Speed changer, industrial high-speed drive, and gear manufacturing	33	8.4	1516.2	82378.6
+11903	18	18	0	Indiana	333613	Mechanical power transmission equipment manufacturing	33	10.8	332.4	16676.6
+11904	18	18	0	Indiana	333618	Other engine equipment manufacturing	33	29.0	5396.8	310620.4
+11905	18	18	0	Indiana	333911	Pump and pumping equipment manufacturing	33	9.4	369.2	19747.6
+11906	18	18	0	Indiana	333912	Air and gas compressor manufacturing	33	13.8	936.0	59967.8
+11907	18	18	0	Indiana	333921	Elevator and moving stairway manufacturing	33	2.2	0.0	0.0
+11908	18	18	0	Indiana	333922	Conveyor and conveying equipment manufacturing	33	33.8	1409.4	72066.0
+11909	18	18	0	Indiana	333923	Overhead traveling crane, hoist, and monorail system manufacturing	33	10.4	261.4	13023.2
+11910	18	18	0	Indiana	333924	Industrial truck, trailer, and stacker machinery manufacturing	33	14.4	1254.4	64176.2
+11911	18	18	0	Indiana	333991	Power-driven handtool manufacturing	33	2.0	0.0	0.0
+11912	18	18	0	Indiana	333992	Welding and soldering equipment manufacturing	33	7.6	322.8	16243.4
+11913	18	18	0	Indiana	333993	Packaging machinery manufacturing	33	10.8	117.2	9209.2
+11914	18	18	0	Indiana	333994	Industrial process furnace and oven manufacturing	33	10.4	367.8	19644.0
+11915	18	18	0	Indiana	333995	Fluid power cylinder and actuator manufacturing	33	7.8	414.8	23196.2
+11916	18	18	0	Indiana	333996	Fluid power pump and motor manufacturing	33	1.0	0.0	0.0
+11917	18	18	0	Indiana	333997	Scale and balance manufacturing	33	3.0	52.8	2325.0
+11918	18	18	0	Indiana	333999	All other miscellaneous general purpose machinery manufacturing	33	49.8	1169.2	59480.4
+11919	18	18	0	Indiana	334111	Electronic computer manufacturing	33	7.0	499.4	19716.4
+11920	18	18	0	Indiana	334112	Computer storage device manufacturing	33	1.0	0.0	0.0
+11921	18	18	0	Indiana	334118	Computer terminal and other computer peripheral equipment manufacturing	33	2.2	2.6	70.4
+11922	18	18	0	Indiana	334210	Telephone apparatus manufacturing	33	2.2	0.0	0.0
+11923	18	18	0	Indiana	334220	Radio and television broadcasting and wireless communications equipment manufacturing	33	11.6	823.2	72452.8
+11924	18	18	0	Indiana	334290	Other communications equipment manufacturing	33	1.8	0.0	0.0
+11925	18	18	0	Indiana	334310	Audio and video equipment manufacturing	33	6.6	95.6	4696.2
+11926	18	18	0	Indiana	334412	Bare printed circuit board manufacturing	33	6.4	89.6	4217.2
+11927	18	18	0	Indiana	334413	Semiconductor and related device manufacturing	33	8.0	119.8	4997.8
+11928	18	18	0	Indiana	334416	Capacitor, resistor, coil, transformer, and other inductor manufacturing	33	7.2	55.0	1627.4
+11929	18	18	0	Indiana	334417	Electronic connector manufacturing	33	8.6	578.4	48304.8
+11930	18	18	0	Indiana	334418	Printed circuit assembly (electronic assembly) manufacturing	33	15.2	807.2	39162.4
+11931	18	18	0	Indiana	334419	Other electronic component manufacturing	33	22.6	582.6	40055.2
+11932	18	18	0	Indiana	334510	Electromedical and electrotherapeutic apparatus manufacturing	33	7.0	243.4	19235.0
+11933	18	18	0	Indiana	334511	Search, detection, navigation, guidance, aeronautical, and nautical system and instrument manufacturing	33	7.8	1761.2	127990.6
+11934	18	18	0	Indiana	334512	Automatic environmental control manufacturing for residential, commercial, and appliance use	33	8.6	377.0	20428.4
+11935	18	18	0	Indiana	334513	Instruments and related products manufacturing for measuring, displaying, and controlling industrial process variables	33	17.0	991.2	58316.2
+11936	18	18	0	Indiana	334514	Totalizing fluid meter and counting device manufacturing	33	5.4	31.0	1941.2
+11937	18	18	0	Indiana	334515	Instrument manufacturing for measuring and testing electricity and electrical systems	33	10.0	837.0	68319.2
+11938	18	18	0	Indiana	334516	Analytical laboratory instrument manufacturing	33	14.2	622.4	27252.4
+11939	18	18	0	Indiana	334517	Irradiation apparatus manufacturing	33	4.2	121.6	6406.8
+11940	18	18	0	Indiana	334519	Other measuring and controlling device manufacturing	33	15.2	473.4	42256.0
+11941	18	18	0	Indiana	334613	Blank magnetic and optical recording media manufacturing	33	1.0	0.0	0.0
+11942	18	18	0	Indiana	334614	Software and other prerecorded compact disc, tape, and record reproducing	33	11.2	146.4	8594.8
+11943	18	18	0	Indiana	335110	Electric lamp bulb and part manufacturing	33	1.0	0.0	0.0
+11944	18	18	0	Indiana	335121	Residential electric lighting fixture manufacturing	33	2.6	14.4	511.8
+11945	18	18	0	Indiana	335122	Commercial, industrial, and institutional electric lighting fixture manufacturing	33	6.8	84.4	3583.0
+11946	18	18	0	Indiana	335129	Other lighting equipment manufacturing	33	5.8	55.4	2694.2
+11947	18	18	0	Indiana	335210	Small electrical appliance manufacturing	33	1.0	0.0	0.0
+11948	18	18	0	Indiana	335221	Household cooking appliance manufacturing	33	1.4	0.0	0.0
+11949	18	18	0	Indiana	335222	Household refrigerator and home freezer manufacturing	33	2.6	0.0	0.0
+11950	18	18	0	Indiana	335224	Household laundry equipment manufacturing	33	1.0	0.0	0.0
+11951	18	18	0	Indiana	335311	Power, distribution, and specialty transformer manufacturing	33	4.2	91.6	10362.2
+11952	18	18	0	Indiana	335312	Motor and generator manufacturing	33	16.8	1193.2	56364.2
+11953	18	18	0	Indiana	335313	Switchgear and switchboard apparatus manufacturing	33	12.4	317.8	19808.0
+11954	18	18	0	Indiana	335314	Relay and industrial control manufacturing	33	31.6	690.2	36259.4
+11955	18	18	0	Indiana	335911	Storage battery manufacturing	33	4.8	573.8	27957.6
+11956	18	18	0	Indiana	335921	Fiber optic cable manufacturing	33	1.0	0.0	0.0
+11957	18	18	0	Indiana	335929	Other communication and energy wire manufacturing	33	4.4	645.2	34038.8
+11958	18	18	0	Indiana	335931	Current-carrying wiring device manufacturing	33	10.2	645.0	22054.4
+11959	18	18	0	Indiana	335932	Noncurrent-carrying wiring device manufacturing	33	2.0	0.0	0.0
+11960	18	18	0	Indiana	335991	Carbon and graphite product manufacturing	33	1.8	0.0	0.0
+11961	18	18	0	Indiana	335999	All other miscellaneous electrical equipment and component manufacturing	33	14.4	229.0	8712.6
+11962	18	18	0	Indiana	336111	Automobile manufacturing	33	10.2	5623.0	374472.8
+11963	18	18	0	Indiana	336112	Light truck and utility vehicle manufacturing	33	6.8	8277.0	665868.8
+11964	18	18	0	Indiana	336120	Heavy duty truck manufacturing	33	3.0	203.2	11328.6
+11965	18	18	0	Indiana	336211	Motor vehicle body manufacturing	33	40.6	3927.4	187671.0
+11966	18	18	0	Indiana	336212	Truck trailer manufacturing	33	22.0	4976.4	224753.0
+11967	18	18	0	Indiana	336213	Motor home manufacturing	33	18.8	4384.2	232588.4
+11968	18	18	0	Indiana	336214	Travel trailer and camper manufacturing	33	117.6	24381.4	1276646.6
+11969	18	18	0	Indiana	336310	Motor vehicle gasoline engine and engine parts manufacturing	33	32.6	3659.4	186972.2
+11970	18	18	0	Indiana	336320	Motor vehicle electrical and electronic equipment manufacturing	33	43.8	2917.4	148511.0
+11971	18	18	0	Indiana	336330	Motor vehicle steering and suspension components (except spring) manufacturing	33	13.0	1167.4	54607.8
+11972	18	18	0	Indiana	336340	Motor vehicle brake system manufacturing	33	13.6	2266.6	97858.2
+11973	18	18	0	Indiana	336350	Motor vehicle transmission and power train parts manufacturing	33	41.8	16088.2	1144124.4
+11974	18	18	0	Indiana	336360	Motor vehicle seating and interior trim manufacturing	33	32.2	5031.4	211255.4
+11975	18	18	0	Indiana	336370	Motor vehicle metal stamping	33	45.0	8334.2	442551.2
+11976	18	18	0	Indiana	336390	Other motor vehicle parts manufacturing	33	80.4	9470.2	459640.0
+11977	18	18	0	Indiana	336411	Aircraft manufacturing	33	2.0	0.0	0.0
+11978	18	18	0	Indiana	336412	Aircraft engine and engine parts manufacturing	33	13.0	5117.0	447800.6
+11979	18	18	0	Indiana	336413	Other aircraft parts and auxiliary equipment manufacturing	33	10.0	449.0	33683.0
+11980	18	18	0	Indiana	336510	Railroad rolling stock manufacturing	33	8.0	1016.4	50493.0
+11981	18	18	0	Indiana	336611	Ship building and repairing	33	4.2	725.4	32784.2
+11982	18	18	0	Indiana	336612	Boat building	33	13.2	2332.4	100830.2
+11983	18	18	0	Indiana	336991	Motorcycle, bicycle, and parts manufacturing	33	8.4	142.0	4841.8
+11984	18	18	0	Indiana	336992	Military armored vehicle, tank, and tank component manufacturing	33	1.8	0.0	0.0
+11985	18	18	0	Indiana	336999	All other transportation equipment manufacturing	33	27.8	223.0	7578.8
+11986	18	18	0	Indiana	337110	Wood kitchen cabinet and countertop manufacturing	33	185.4	6476.2	246199.2
+11987	18	18	0	Indiana	337121	Upholstered household furniture manufacturing	33	29.4	2070.4	76924.6
+11988	18	18	0	Indiana	337122	Nonupholstered wood household furniture manufacturing	33	73.4	1043.6	31454.8
+11989	18	18	0	Indiana	337124	Metal household furniture manufacturing	33	9.6	165.6	7334.8
+11990	18	18	0	Indiana	337125	Household furniture (except wood and metal) manufacturing	33	8.0	612.2	24722.0
+11991	18	18	0	Indiana	337127	Institutional furniture manufacturing	33	20.8	1124.8	42699.6
+11992	18	18	0	Indiana	337211	Wood office furniture manufacturing	33	24.2	2927.2	111611.2
+11993	18	18	0	Indiana	337212	Custom architectural woodwork and millwork manufacturing	33	41.8	780.4	30531.0
+11994	18	18	0	Indiana	337214	Office furniture (except wood) manufacturing	33	7.4	296.2	13336.0
+11995	18	18	0	Indiana	337215	Showcase, partition, shelving, and locker manufacturing	33	35.0	1494.4	56454.4
+11996	18	18	0	Indiana	337910	Mattress manufacturing	33	10.8	369.8	13781.6
+11997	18	18	0	Indiana	337920	Blind and shade manufacturing	33	8.2	657.4	27287.2
+11998	18	18	0	Indiana	339112	Surgical and medical instrument manufacturing	33	49.0	7405.4	396811.0
+11999	18	18	0	Indiana	339113	Surgical appliance and supplies manufacturing	33	64.6	7734.2	542966.4
+12000	18	18	0	Indiana	339114	Dental equipment and supplies manufacturing	33	14.0	596.2	28960.8
+12001	18	18	0	Indiana	339115	Ophthalmic goods manufacturing	33	10.6	234.6	11839.2
+12002	18	18	0	Indiana	339116	Dental laboratories	33	103.6	659.0	22338.0
+12003	18	18	0	Indiana	339910	Jewelry and silverware manufacturing	33	13.8	96.2	5705.8
+12004	18	18	0	Indiana	339920	Sporting and athletic goods manufacturing	33	34.0	663.8	26231.8
+12005	18	18	0	Indiana	339930	Doll, toy, and game manufacturing	33	12.0	78.6	2642.0
+12006	18	18	0	Indiana	339940	Office supplies (except paper) manufacturing	33	8.2	308.2	11386.6
+12007	18	18	0	Indiana	339950	Sign manufacturing	33	130.6	1576.4	64628.6
+12008	18	18	0	Indiana	339991	Gasket, packing, and sealing device manufacturing	33	19.2	909.8	45202.4
+12009	18	18	0	Indiana	339992	Musical instrument manufacturing	33	18.0	483.0	18794.6
+12010	18	18	0	Indiana	339993	Fastener, button, needle, and pin manufacturing	33	2.8	1.6	83.8
+12011	18	18	0	Indiana	339994	Broom, brush, and mop manufacturing	33	3.6	0.0	0.0
+12012	18	18	0	Indiana	339995	Burial casket manufacturing	33	20.4	618.8	27229.0
+12013	18	18	0	Indiana	339999	All other miscellaneous manufacturing	33	84.2	1407.8	62007.2
+12014	18	18	0	Indiana	423110	Automobile and other motor vehicle merchant wholesalers	42	186.8	4322.2	200713.0
+12015	18	18	0	Indiana	423120	Motor vehicle supplies and new parts merchant wholesalers	42	310.6	5737.6	248531.0
+12016	18	18	0	Indiana	423130	Tire and tube merchant wholesalers	42	56.0	1037.8	56051.6
+12017	18	18	0	Indiana	423140	Motor vehicle parts (used) merchant wholesalers	42	36.8	507.2	16690.4
+12018	18	18	0	Indiana	423210	Furniture merchant wholesalers	42	92.2	1819.6	111531.8
+12019	18	18	0	Indiana	423220	Home furnishing merchant wholesalers	42	72.6	947.0	49470.0
+12020	18	18	0	Indiana	423310	Lumber, plywood, millwork, and wood panel merchant wholesalers	42	139.6	2014.8	88371.8
+12021	18	18	0	Indiana	423320	Brick, stone, and related construction material merchant wholesalers	42	41.4	348.2	19769.0
+12022	18	18	0	Indiana	423330	Roofing, siding, and insulation material merchant wholesalers	42	76.6	958.6	51137.8
+12023	18	18	0	Indiana	423390	Other construction material merchant wholesalers	42	58.6	773.6	38907.8
+12024	18	18	0	Indiana	423410	Photographic equipment and supplies merchant wholesalers	42	9.8	101.2	6622.6
+12025	18	18	0	Indiana	423420	Office equipment merchant wholesalers	42	187.6	2163.4	105716.6
+12026	18	18	0	Indiana	423430	Computer and computer peripheral equipment and software merchant wholesalers	42	93.0	1424.6	97807.6
+12027	18	18	0	Indiana	423440	Other commercial equipment merchant wholesalers	42	77.2	790.8	44799.8
+12028	18	18	0	Indiana	423450	Medical, dental, and hospital equipment and supplies merchant wholesalers	42	164.0	4615.2	444407.0
+12029	18	18	0	Indiana	423460	Ophthalmic goods merchant wholesalers	42	13.2	252.0	8278.6
+12030	18	18	0	Indiana	423490	Other professional equipment and supplies merchant wholesalers	42	35.8	455.0	25899.8
+12031	18	18	0	Indiana	423510	Metal service centers and other metal merchant wholesalers	42	225.6	4980.2	278453.2
+12032	18	18	0	Indiana	423520	Coal and other mineral and ore merchant wholesalers	42	8.6	0.0	0.0
+12033	18	18	0	Indiana	423610	Electrical apparatus and equipment, wiring supplies, and related equipment merchant wholesalers	42	292.0	3956.8	256556.6
+12034	18	18	0	Indiana	423620	Household appliances, electric housewares, and consumer electronics merchant wholesalers 	42	39.0	608.8	35815.6
+12035	18	18	0	Indiana	423690	Other electronic parts and equipment merchant wholesalers	42	179.2	3623.8	244462.6
+12036	18	18	0	Indiana	423710	Hardware merchant wholesalers	42	137.2	2512.8	135025.6
+12037	18	18	0	Indiana	423720	Plumbing and heating equipment and supplies (hydronics) merchant wholesalers	42	117.0	1341.6	78979.8
+12038	18	18	0	Indiana	423730	Warm air heating and air-conditioning equipment and supplies merchant wholesalers	42	134.8	1585.4	92446.0
+12039	18	18	0	Indiana	423740	Refrigeration equipment and supplies merchant wholesalers	42	25.0	584.8	24642.4
+12040	18	18	0	Indiana	423810	Construction and mining (except oil well) machinery and equipment merchant wholesalers	42	97.2	1744.0	117526.8
+12041	18	18	0	Indiana	423820	Farm and garden machinery and equipment merchant wholesalers	42	240.4	3875.0	192607.4
+12042	18	18	0	Indiana	423830	Industrial machinery and equipment merchant wholesalers	42	695.4	8857.6	541561.2
+12043	18	18	0	Indiana	423840	Industrial supplies merchant wholesalers	42	183.0	2088.2	131643.0
+12044	18	18	0	Indiana	423850	Service establishment equipment and supplies merchant wholesalers	42	93.4	968.2	45582.8
+12045	18	18	0	Indiana	423860	Transportation equipment and supplies (except motor vehicle) merchant wholesalers	42	27.4	195.6	9677.8
+12046	18	18	0	Indiana	423910	Sporting and recreational goods and supplies merchant wholesalers	42	80.2	785.0	37536.8
+12047	18	18	0	Indiana	423920	Toy and hobby goods and supplies merchant wholesalers	42	30.0	332.6	15864.2
+12048	18	18	0	Indiana	423930	Recyclable material merchant wholesalers	42	232.8	3120.4	152356.0
+12049	18	18	0	Indiana	423940	Jewelry, watch, precious stone, and precious metal merchant wholesalers	42	29.2	131.8	4640.4
+12050	18	18	0	Indiana	423990	Other miscellaneous durable goods merchant wholesalers	42	140.2	1617.8	75968.6
+12051	18	18	0	Indiana	424110	Printing and writing paper merchant wholesalers	42	13.0	150.8	8837.2
+12052	18	18	0	Indiana	424120	Stationery and office supplies merchant wholesalers	42	81.0	963.4	63804.4
+12053	18	18	0	Indiana	424130	Industrial and personal service paper merchant wholesalers	42	69.0	827.2	46346.2
+12054	18	18	0	Indiana	424210	Drugs and druggists' sundries merchant wholesalers	42	128.0	7388.6	802460.6
+12055	18	18	0	Indiana	424310	Piece goods, notions, and other dry goods merchant wholesalers	42	19.0	376.4	23076.2
+12056	18	18	0	Indiana	424320	Men's and boys' clothing and furnishings merchant wholesalers	42	41.2	596.8	23359.8
+12057	18	18	0	Indiana	424330	Women's, children's, and infants' clothing and accessories merchant wholesalers	42	27.4	114.8	3980.0
+12058	18	18	0	Indiana	424340	Footwear merchant wholesalers	42	6.4	38.2	1605.4
+12059	18	18	0	Indiana	424410	General line grocery merchant wholesalers	42	26.6	1675.4	79641.8
+12060	18	18	0	Indiana	424420	Packaged frozen food merchant wholesalers	42	28.4	527.6	20301.4
+12061	18	18	0	Indiana	424430	Dairy product (except dried or canned) merchant wholesalers	42	32.4	429.8	18208.2
+12062	18	18	0	Indiana	424440	Poultry and poultry product merchant wholesalers	42	5.8	30.0	926.0
+12063	18	18	0	Indiana	424450	Confectionery merchant wholesalers	42	61.2	552.6	33516.8
+12064	18	18	0	Indiana	424460	Fish and seafood merchant wholesalers	42	4.0	6.2	142.8
+12065	18	18	0	Indiana	424470	Meat and meat product merchant wholesalers	42	25.4	530.4	21347.6
+12066	18	18	0	Indiana	424480	Fresh fruit and vegetable merchant wholesalers	42	25.0	465.8	20758.2
+12067	18	18	0	Indiana	424490	Other grocery and related products merchant wholesalers	42	212.4	5005.6	218101.6
+12068	18	18	0	Indiana	424510	Grain and field bean merchant wholesalers	42	185.8	2324.2	131950.0
+12069	18	18	0	Indiana	424520	Livestock merchant wholesalers	42	15.4	39.4	1758.8
+12070	18	18	0	Indiana	424590	Other farm product raw material merchant wholesalers	42	2.4	0.8	84.8
+12071	18	18	0	Indiana	424610	Plastics materials and basic forms and shapes merchant wholesalers	42	57.8	1355.0	99224.8
+12072	18	18	0	Indiana	424690	Other chemical and allied products merchant wholesalers	42	213.2	2510.4	161625.8
+12073	18	18	0	Indiana	424710	Petroleum bulk stations and terminals 	42	119.2	1474.4	78112.2
+12074	18	18	0	Indiana	424720	Petroleum and petroleum products merchant wholesalers (except bulk stations and terminals) 	42	42.8	441.0	25238.0
+12075	18	18	0	Indiana	424810	Beer and ale merchant wholesalers	42	30.2	1586.2	77666.8
+12076	18	18	0	Indiana	424820	Wine and distilled alcoholic beverage merchant wholesalers	42	24.4	579.2	36756.2
+12077	18	18	0	Indiana	424910	Farm supplies merchant wholesalers	42	343.0	3497.8	174842.8
+12078	18	18	0	Indiana	424920	Book, periodical, and newspaper merchant wholesalers	42	36.0	1405.8	51243.6
+12079	18	18	0	Indiana	424930	Flower, nursery stock, and florists' supplies merchant wholesalers	42	39.6	430.2	12680.4
+12080	18	18	0	Indiana	424940	Tobacco and tobacco product merchant wholesalers	42	28.6	1254.2	50378.4
+12081	18	18	0	Indiana	424950	Paint, varnish, and supplies merchant wholesalers	42	53.6	661.8	35914.4
+12082	18	18	0	Indiana	424990	Other miscellaneous nondurable goods merchant wholesalers	42	127.6	1234.8	43947.8
+12083	18	18	0	Indiana	425110	Business to business electronic markets	42	7.2	6.4	1236.2
+12084	18	18	0	Indiana	425120	Wholesale trade agents and brokers	42	925.0	5970.6	254444.6
+12085	18	18	0	Indiana	441110	New car dealers	44	482.0	21660.4	1024957.2
+12086	18	18	0	Indiana	441120	Used car dealers	44	739.8	3591.2	132478.0
+12087	18	18	0	Indiana	441210	Recreational vehicle dealers	44	66.0	847.8	36499.8
+12088	18	18	0	Indiana	441222	Boat dealers	44	84.0	605.6	22365.0
+12089	18	18	0	Indiana	441228	Motorcycle, ATV, and all other motor vehicle dealers	44	178.2	1551.0	56296.2
+12090	18	18	0	Indiana	441310	Automotive parts and accessories stores	44	896.2	8120.0	187457.2
+12091	18	18	0	Indiana	441320	Tire dealers	44	408.2	3958.8	135213.6
+12092	18	18	0	Indiana	442110	Furniture stores	44	477.2	3513.6	110787.8
+12093	18	18	0	Indiana	442210	Floor covering stores	44	254.8	1444.2	55056.8
+12094	18	18	0	Indiana	442291	Window treatment stores	44	25.4	57.8	1876.8
+12095	18	18	0	Indiana	442299	All other home furnishings stores	44	240.8	2562.8	40622.2
+12096	18	18	0	Indiana	443141	Household appliance stores	44	207.6	1680.6	46799.4
+12097	18	18	0	Indiana	443142	Electronics stores	44	735.2	6305.4	154202.2
+12098	18	18	0	Indiana	444110	Home centers	44	150.4	15586.6	390377.0
+12099	18	18	0	Indiana	444120	Paint and wallpaper stores	44	158.0	732.0	23173.0
+12100	18	18	0	Indiana	444130	Hardware stores	44	406.2	3587.8	78764.2
+12101	18	18	0	Indiana	444190	Other building material dealers	44	651.6	5842.2	246611.6
+12102	18	18	0	Indiana	444210	Outdoor power equipment stores	44	165.8	998.4	32031.8
+12103	18	18	0	Indiana	444220	Nursery, garden center, and farm supply stores	44	340.6	3347.6	87984.4
+12104	18	18	0	Indiana	445110	Supermarkets and other grocery (except convenience) stores	44	1007.6	40159.2	771564.6
+12105	18	18	0	Indiana	445120	Convenience stores	44	217.0	1077.4	17104.6
+12106	18	18	0	Indiana	445210	Meat markets	44	97.0	1007.6	20945.6
+12107	18	18	0	Indiana	445220	Fish and seafood markets	44	4.4	6.6	235.4
+12108	18	18	0	Indiana	445230	Fruit and vegetable markets	44	37.2	117.0	2803.6
+12109	18	18	0	Indiana	445291	Baked goods stores	44	56.8	336.8	6663.4
+12110	18	18	0	Indiana	445292	Confectionery and nut stores	44	50.6	350.0	3459.2
+12111	18	18	0	Indiana	445299	All other specialty food stores	44	100.4	807.8	7066.2
+12112	18	18	0	Indiana	445310	Beer, wine, and liquor stores	44	807.0	4542.2	74550.6
+12113	18	18	0	Indiana	446110	Pharmacies and drug stores	44	820.0	15298.6	528491.0
+12114	18	18	0	Indiana	446120	Cosmetics, beauty supplies, and perfume stores	44	260.8	2235.0	35612.2
+12115	18	18	0	Indiana	446130	Optical goods stores	44	204.6	1518.2	38797.2
+12116	18	18	0	Indiana	446191	Food (health) supplement stores	44	196.6	852.2	14219.2
+12117	18	18	0	Indiana	446199	All other health and personal care stores	44	204.6	1047.2	42029.8
+12118	18	18	0	Indiana	447110	Gasoline stations with convenience stores	44	2294.4	17210.2	291307.2
+12119	18	18	0	Indiana	447190	Other gasoline stations	44	342.8	4343.6	97385.4
+12120	18	18	0	Indiana	448110	Men's clothing stores	44	100.4	708.0	16006.2
+12121	18	18	0	Indiana	448120	Women's clothing stores	44	606.4	5565.4	67632.6
+12122	18	18	0	Indiana	448130	Children's and infants' clothing stores	44	122.6	1302.6	15648.0
+12123	18	18	0	Indiana	448140	Family clothing stores	44	405.2	9264.8	118411.6
+12124	18	18	0	Indiana	448150	Clothing accessories stores	44	122.0	980.6	14534.6
+12125	18	18	0	Indiana	448190	Other clothing stores	44	168.8	1812.6	28292.4
+12126	18	18	0	Indiana	448210	Shoe stores	44	448.2	3614.0	55689.8
+12127	18	18	0	Indiana	448310	Jewelry stores	44	351.6	2356.0	71848.6
+12128	18	18	0	Indiana	448320	Luggage and leather goods stores	44	9.2	44.8	1253.4
+12129	18	18	0	Indiana	451110	Sporting goods stores	45	436.0	5010.2	93924.2
+12130	18	18	0	Indiana	451120	Hobby, toy, and game stores	45	175.6	2455.8	38862.0
+12131	18	18	0	Indiana	451130	Sewing, needlework, and piece goods stores	45	109.6	809.0	12816.8
+12132	18	18	0	Indiana	451140	Musical instrument and supplies stores	45	75.2	554.0	14327.6
+12133	18	18	0	Indiana	451211	Book stores	45	161.6	905.8	10727.2
+12134	18	18	0	Indiana	451212	News dealers and newsstands	45	12.4	71.8	1263.6
+12135	18	18	0	Indiana	452111	Department stores (except discount department stores)	45	67.0	7419.6	118778.2
+12136	18	18	0	Indiana	452112	Discount department stores	45	112.2	11453.8	197113.0
+12137	18	18	0	Indiana	452910	Warehouse clubs and supercenters	45	156.8	43181.8	992773.2
+12138	18	18	0	Indiana	452990	All other general merchandise stores	45	922.4	8696.0	140439.8
+12139	18	18	0	Indiana	453110	Florists	45	337.8	1615.8	23993.4
+12140	18	18	0	Indiana	453210	Office supplies and stationery stores	45	119.2	1563.0	31187.4
+12141	18	18	0	Indiana	453220	Gift, novelty, and souvenir stores	45	406.6	2821.2	37791.4
+12142	18	18	0	Indiana	453310	Used merchandise stores	45	516.8	5713.0	85049.2
+12143	18	18	0	Indiana	453910	Pet and pet supplies stores	45	153.2	2162.4	37664.0
+12144	18	18	0	Indiana	453920	Art dealers	45	33.2	82.0	1603.8
+12145	18	18	0	Indiana	453930	Manufactured (mobile) home dealers	45	47.4	194.4	7192.6
+12146	18	18	0	Indiana	453991	Tobacco stores	45	293.8	1468.4	25245.6
+12147	18	18	0	Indiana	453998	All other miscellaneous store retailers (except tobacco stores)	45	397.0	1898.4	53898.6
+12148	18	18	0	Indiana	454111	Electronic shopping	45	383.8	3063.6	98232.2
+12149	18	18	0	Indiana	454112	Electronic auctions	45	9.2	23.8	1404.4
+12150	18	18	0	Indiana	454113	Mail-order houses	45	89.4	5229.0	224529.6
+12151	18	18	0	Indiana	454210	Vending machine operators	45	103.4	1154.4	46648.6
+12152	18	18	0	Indiana	454310	Fuel dealers	45	168.8	1046.2	42362.4
+12153	18	18	0	Indiana	454390	Other direct selling establishments	45	465.4	2328.2	79505.2
+12154	18	18	0	Indiana	481111	Scheduled passenger air transportation	48	25.4	962.8	46459.2
+12155	18	18	0	Indiana	481112	Scheduled freight air transportation	48	3.8	3.2	126.8
+12156	18	18	0	Indiana	481211	Nonscheduled chartered passenger air transportation	48	28.8	443.0	26270.4
+12157	18	18	0	Indiana	481212	Nonscheduled chartered freight air transportation	48	1.6	0.0	0.0
+12158	18	18	0	Indiana	481219	Other nonscheduled air transportation	48	10.2	11.6	1442.0
+12159	18	18	0	Indiana	483111	Deep sea freight transportation	48	1.0	0.0	0.0
+12160	18	18	0	Indiana	483113	Coastal and great lakes freight transportation	48	1.2	0.0	0.0
+12161	18	18	0	Indiana	483211	Inland water freight transportation	48	5.4	0.0	0.0
+12162	18	18	0	Indiana	483212	Inland water passenger transportation	48	1.0	0.0	0.0
+12163	18	18	0	Indiana	484110	General freight trucking, local	48	642.2	6270.2	245027.4
+12164	18	18	0	Indiana	484121	General freight trucking, long-distance, truckload	48	1299.4	23540.4	973012.0
+12165	18	18	0	Indiana	484122	General freight trucking, long-distance, less than truckload	48	226.0	10404.2	557537.6
+12166	18	18	0	Indiana	484210	Used household and office goods moving	48	117.0	2359.2	87689.8
+12167	18	18	0	Indiana	484220	Specialized freight (except used goods) trucking, local	48	841.8	6492.2	297823.4
+12168	18	18	0	Indiana	484230	Specialized freight (except used goods) trucking, long-distance	48	317.2	5693.2	274326.4
+12169	18	18	0	Indiana	485113	Bus and other motor vehicle transit systems	48	7.8	154.6	2459.8
+12170	18	18	0	Indiana	485119	Other urban transit systems	48	1.0	0.0	0.0
+12171	18	18	0	Indiana	485210	Interurban and rural bus transportation	48	6.4	125.0	3219.6
+12172	18	18	0	Indiana	485310	Taxi service	48	27.0	230.4	4706.8
+12173	18	18	0	Indiana	485320	Limousine service	48	36.2	315.4	6442.4
+12174	18	18	0	Indiana	485410	School and employee bus transportation	48	84.8	1109.6	15748.8
+12175	18	18	0	Indiana	485510	Charter bus industry	48	18.4	484.8	13250.4
+12176	18	18	0	Indiana	485991	Special needs transportation	48	39.6	547.0	12308.8
+12177	18	18	0	Indiana	485999	All other transit and ground passenger transportation	48	13.4	342.2	6079.4
+12178	18	18	0	Indiana	486110	Pipeline transportation of crude oil	48	12.4	0.0	0.0
+12179	18	18	0	Indiana	486210	Pipeline transportation of natural gas	48	31.6	282.0	25776.0
+12180	18	18	0	Indiana	486910	Pipeline transportation of refined petroleum products	48	17.6	165.8	16658.8
+12181	18	18	0	Indiana	486990	All other pipeline transportation	48	1.8	0.0	0.0
+12182	18	18	0	Indiana	487110	Scenic and sightseeing transportation, land	48	13.4	122.2	2226.4
+12183	18	18	0	Indiana	487210	Scenic and sightseeing transportation, water	48	2.5	0.5	108.0
+12184	18	18	0	Indiana	487990	Scenic and sightseeing transportation, other	48	1.3333333333333333	0.0	0.0
+12185	18	18	0	Indiana	488111	Air traffic control	48	4.0	0.0	0.0
+12186	18	18	0	Indiana	488119	Other airport operations	48	31.0	468.8	16395.0
+12187	18	18	0	Indiana	488190	Other support activities for air transportation	48	55.4	1635.8	80026.8
+12188	18	18	0	Indiana	488210	Support activities for rail transportation	48	44.2	667.0	42124.8
+12189	18	18	0	Indiana	488310	Port and harbor operations	48	4.8	26.0	1530.2
+12190	18	18	0	Indiana	488320	Marine cargo handling	48	3.0	170.8	6348.8
+12191	18	18	0	Indiana	488330	Navigational services to shipping	48	2.4	75.2	3679.0
+12192	18	18	0	Indiana	488390	Other support activities for water transportation	48	2.0	0.0	0.0
+12193	18	18	0	Indiana	488410	Motor vehicle towing	48	175.4	1208.2	41016.4
+12194	18	18	0	Indiana	488490	Other support activities for road transportation	48	53.6	1085.4	37210.0
+12195	18	18	0	Indiana	488510	Freight transportation arrangement	48	331.8	5051.6	244107.0
+12196	18	18	0	Indiana	488991	Packing and crating	48	22.6	325.2	6687.2
+12197	18	18	0	Indiana	488999	All other support activities for transportation	48	3.8	2.2	63.4
+12198	18	18	0	Indiana	492110	Couriers and express delivery services	49	168.6	14148.2	518993.0
+12199	18	18	0	Indiana	492210	Local messengers and local delivery	49	67.6	429.4	12074.6
+12200	18	18	0	Indiana	493110	General warehousing and storage	49	283.6	25370.6	965858.6
+12201	18	18	0	Indiana	493120	Refrigerated warehousing and storage	49	25.8	1551.8	59838.4
+12202	18	18	0	Indiana	493130	Farm product warehousing and storage	49	12.8	42.8	3273.4
+12203	18	18	0	Indiana	493190	Other warehousing and storage	49	54.0	1349.8	62045.8
+12204	18	18	0	Indiana	511110	Newspaper publishers	51	172.4	5587.8	188422.2
+12205	18	18	0	Indiana	511120	Periodical publishers	51	80.8	692.0	32909.6
+12206	18	18	0	Indiana	511130	Book publishers	51	38.2	1464.2	68750.4
+12207	18	18	0	Indiana	511140	Directory and mailing list publishers	51	9.0	258.4	23011.6
+12208	18	18	0	Indiana	511191	Greeting card publishers	51	1.2	0.0	0.0
+12209	18	18	0	Indiana	511199	All other publishers	51	9.8	12.6	667.4
+12210	18	18	0	Indiana	511210	Software publishers	51	96.4	3604.6	314235.6
+12211	18	18	0	Indiana	512110	Motion picture and video production	51	111.4	332.2	15408.4
+12212	18	18	0	Indiana	512120	Motion picture and video distribution	51	3.2	0.0	0.0
+12213	18	18	0	Indiana	512131	Motion picture theaters (except drive-ins)	51	109.6	2617.8	25944.8
+12214	18	18	0	Indiana	512132	Drive-in motion picture theaters	51	11.0	5.0	382.8
+12215	18	18	0	Indiana	512191	Teleproduction and other postproduction services	51	13.6	105.8	7695.6
+12216	18	18	0	Indiana	512210	Record production	51	1.25	0.0	0.0
+12217	18	18	0	Indiana	512220	Integrated record production/distribution	51	2.0	0.0	0.0
+12218	18	18	0	Indiana	512230	Music publishers	51	4.8	6.2	202.8
+12219	18	18	0	Indiana	512240	Sound recording studios	51	16.8	28.6	1275.8
+12220	18	18	0	Indiana	512290	Other sound recording industries	51	7.4	5.2	249.8
+12221	18	18	0	Indiana	515111	Radio networks	51	17.6	242.4	10880.4
+12222	18	18	0	Indiana	515112	Radio stations	51	118.2	1876.0	64385.8
+12223	18	18	0	Indiana	515120	Television broadcasting	51	33.8	1881.0	105720.6
+12224	18	18	0	Indiana	515210	Cable and other subscription programming	51	2.2	20.0	696.2
+12225	18	18	0	Indiana	517110	Wired telecommunications carriers	51	663.4	10967.0	669168.6
+12226	18	18	0	Indiana	517210	Wireless telecommunications carriers (except satellite)	51	233.6	1317.0	75280.8
+12227	18	18	0	Indiana	517410	Satellite telecommunications	51	8.6	23.0	1227.8
+12228	18	18	0	Indiana	517911	Telecommunications resellers	51	26.2	234.0	11523.6
+12229	18	18	0	Indiana	517919	All other telecommunications	51	44.6	138.4	6462.4
+12230	18	18	0	Indiana	518210	Data processing, hosting, and related services	51	205.2	7147.2	511565.4
+12231	18	18	0	Indiana	519110	News syndicates	51	4.4	3.8	211.2
+12232	18	18	0	Indiana	519120	Libraries and archives	51	12.2	265.6	5981.8
+12233	18	18	0	Indiana	519130	Internet publishing and broadcasting and web search portals	51	61.0	1943.4	143918.8
+12234	18	18	0	Indiana	519190	All other information services	51	4.2	5.0	307.8
+12235	18	18	0	Indiana	522110	Commercial banking	52	2159.0	24971.6	1315971.4
+12236	18	18	0	Indiana	522120	Savings institutions	52	182.0	2601.8	119830.6
+12237	18	18	0	Indiana	522130	Credit unions	52	541.8	6623.4	282132.8
+12238	18	18	0	Indiana	522190	Other depository credit intermediation	52	1.6666666666666667	0.0	0.0
+12239	18	18	0	Indiana	522210	Credit card issuing	52	3.8	3.8	840.0
+12240	18	18	0	Indiana	522220	Sales financing	52	69.2	1203.4	92681.4
+12241	18	18	0	Indiana	522291	Consumer lending	52	203.0	2155.4	127260.4
+12242	18	18	0	Indiana	522292	Real estate credit	52	211.8	1992.6	152709.2
+12243	18	18	0	Indiana	522293	International trade financing	52	1.0	0.0	0.0
+12244	18	18	0	Indiana	522294	Secondary market financing	52	9.2	0.0	0.0
+12245	18	18	0	Indiana	522298	All other nondepository credit intermediation	52	131.4	942.6	49036.8
+12246	18	18	0	Indiana	522310	Mortgage and nonmortgage loan brokers	52	80.4	431.6	33641.6
+12247	18	18	0	Indiana	522320	Financial transactions processing, reserve, and clearinghouse activities	52	34.6	421.4	26924.6
+12248	18	18	0	Indiana	522390	Other activities related to credit intermediation	52	363.2	1255.6	67000.6
+12249	18	18	0	Indiana	523110	Investment banking and securities dealing	52	52.6	205.4	26244.4
+12250	18	18	0	Indiana	523120	Securities brokerage	52	1002.8	2160.4	500888.6
+12251	18	18	0	Indiana	523130	Commodity contracts dealing	52	4.6	6.0	314.8
+12252	18	18	0	Indiana	523140	Commodity contracts brokerage	52	19.4	33.4	4381.0
+12253	18	18	0	Indiana	523910	Miscellaneous intermediation	52	42.2	99.2	13078.0
+12254	18	18	0	Indiana	523920	Portfolio management	52	303.2	2207.8	187982.4
+12255	18	18	0	Indiana	523930	Investment advice	52	277.4	921.4	87422.0
+12256	18	18	0	Indiana	523991	Trust, fiduciary, and custody activities	52	40.0	712.0	57652.4
+12257	18	18	0	Indiana	523999	Miscellaneous financial investment activities	52	5.6	4.6	513.4
+12258	18	18	0	Indiana	524113	Direct life insurance carriers	52	160.4	6076.4	480752.0
+12259	18	18	0	Indiana	524114	Direct health and medical insurance carriers	52	91.2	9103.6	762456.8
+12260	18	18	0	Indiana	524126	Direct property and casualty insurance carriers	52	248.0	10054.0	710331.4
+12261	18	18	0	Indiana	524127	Direct title insurance carriers	52	76.6	178.6	8590.2
+12262	18	18	0	Indiana	524128	Other direct insurance (except life, health, and medical) carriers	52	11.2	170.2	6389.2
+12263	18	18	0	Indiana	524130	Reinsurance carriers	52	6.2	0.0	0.0
+12264	18	18	0	Indiana	524210	Insurance agencies and brokerages	52	3019.0	14534.4	768784.6
+12265	18	18	0	Indiana	524291	Claims adjusting	52	76.0	762.6	50733.8
+12266	18	18	0	Indiana	524292	Third party administration of insurance and pension funds	52	84.6	2426.2	136376.0
+12267	18	18	0	Indiana	524298	All other insurance related activities	52	46.2	600.8	40715.6
+12268	18	18	0	Indiana	525910	Open-end investment funds	52	2.0	0.0	0.0
+12269	18	18	0	Indiana	525990	Other financial vehicles	52	6.0	4.6	723.6
+12270	18	18	0	Indiana	531110	Lessors of residential buildings and dwellings	53	1157.4	5878.4	171879.8
+12271	18	18	0	Indiana	531120	Lessors of nonresidential buildings (except miniwarehouses)	53	511.6	2913.0	151445.0
+12272	18	18	0	Indiana	531130	Lessors of miniwarehouses and self-storage units	53	225.8	559.2	12876.6
+12273	18	18	0	Indiana	531190	Lessors of other real estate property	53	171.6	525.4	15638.2
+12274	18	18	0	Indiana	531210	Offices of real estate agents and brokers	53	1473.0	3604.2	168989.4
+12275	18	18	0	Indiana	531311	Residential property managers	53	652.8	5526.8	194332.6
+12276	18	18	0	Indiana	531312	Nonresidential property managers	53	258.4	2120.4	133531.6
+12277	18	18	0	Indiana	531320	Offices of real estate appraisers	53	326.6	820.4	34008.0
+12278	18	18	0	Indiana	531390	Other activities related to real estate	53	106.6	337.0	18701.6
+12279	18	18	0	Indiana	532111	Passenger car rental	53	135.0	1130.0	33729.6
+12280	18	18	0	Indiana	532112	Passenger car leasing	53	9.8	37.8	1834.8
+12281	18	18	0	Indiana	532120	Truck, utility trailer, and RV (recreational vehicle) rental and leasing	53	146.6	1878.0	83123.6
+12282	18	18	0	Indiana	532210	Consumer electronics and appliances rental	53	224.8	541.4	15381.4
+12283	18	18	0	Indiana	532220	Formal wear and costume rental	53	27.0	151.8	3611.8
+12284	18	18	0	Indiana	532230	Video tape and disc rental	53	116.0	358.6	3585.2
+12285	18	18	0	Indiana	532291	Home health equipment rental	53	66.2	821.2	33824.0
+12286	18	18	0	Indiana	532292	Recreational goods rental	53	23.6	26.6	1939.2
+12287	18	18	0	Indiana	532299	All other consumer goods rental	53	90.2	604.2	19899.0
+12288	18	18	0	Indiana	532310	General rental centers	53	82.0	507.8	19405.8
+12289	18	18	0	Indiana	532411	Commercial air, rail, and water transportation equipment rental and leasing	53	4.4	0.0	79.8
+12290	18	18	0	Indiana	532412	Construction, mining, and forestry machinery and equipment rental and leasing	53	61.0	837.0	59803.8
+12291	18	18	0	Indiana	532420	Office machinery and equipment rental and leasing	53	4.8	14.4	2195.4
+12292	18	18	0	Indiana	532490	Other commercial and industrial machinery and equipment rental and leasing	53	141.6	1342.6	75977.2
+12293	18	18	0	Indiana	533110	Lessors of nonfinancial intangible assets (except copyrighted works)	53	26.0	425.8	26472.8
+12294	18	18	0	Indiana	541110	Offices of lawyers	54	2564.4	13307.6	783787.6
+12295	18	18	0	Indiana	541191	Title abstract and settlement offices	54	211.8	1048.0	41229.4
+12296	18	18	0	Indiana	541199	All other legal services	54	26.6	132.6	5798.2
+12297	18	18	0	Indiana	541211	Offices of certified public accountants	54	889.4	7814.0	462842.6
+12298	18	18	0	Indiana	541213	Tax preparation services	54	632.4	4611.6	41321.0
+12299	18	18	0	Indiana	541214	Payroll services	54	97.6	3114.2	142241.2
+12300	18	18	0	Indiana	541219	Other accounting services	54	566.4	4885.8	320272.0
+12301	18	18	0	Indiana	541310	Architectural services	54	242.0	1867.8	128218.0
+12302	18	18	0	Indiana	541320	Landscape architectural services	54	59.0	177.2	6864.0
+12303	18	18	0	Indiana	541330	Engineering services	54	996.6	14605.2	1198190.6
+12304	18	18	0	Indiana	541340	Drafting services	54	46.0	59.4	6583.0
+12305	18	18	0	Indiana	541350	Building inspection services	54	97.4	349.4	14353.4
+12306	18	18	0	Indiana	541360	Geophysical surveying and mapping services	54	7.4	5.4	350.2
+12307	18	18	0	Indiana	541370	Surveying and mapping (except geophysical) services	54	158.0	925.2	47126.2
+12308	18	18	0	Indiana	541380	Testing laboratories	54	135.8	2107.6	108904.2
+12309	18	18	0	Indiana	541410	Interior design services	54	145.2	424.4	14828.8
+12310	18	18	0	Indiana	541420	Industrial design services	54	20.8	73.6	5063.4
+12311	18	18	0	Indiana	541430	Graphic design services	54	230.4	1080.0	46758.4
+12312	18	18	0	Indiana	541490	Other specialized design services	54	8.8	8.8	531.0
+12313	18	18	0	Indiana	541511	Custom computer programming services	54	799.2	8210.8	589115.8
+12314	18	18	0	Indiana	541512	Computer systems design services	54	681.2	6798.2	521780.2
+12315	18	18	0	Indiana	541513	Computer facilities management services	54	126.2	1471.8	126570.2
+12316	18	18	0	Indiana	541519	Other computer related services	54	91.4	460.4	37300.6
+12317	18	18	0	Indiana	541611	Administrative management and general management consulting services	54	897.8	5512.2	325736.2
+12318	18	18	0	Indiana	541612	Human resources consulting services	54	121.0	1130.4	86802.0
+12319	18	18	0	Indiana	541613	Marketing consulting services	54	468.6	2345.8	214189.2
+12320	18	18	0	Indiana	541614	Process, physical distribution, and logistics consulting services	54	180.6	2065.2	109372.0
+12321	18	18	0	Indiana	541618	Other management consulting services	54	41.0	115.0	6700.0
+12322	18	18	0	Indiana	541620	Environmental consulting services	54	166.2	1521.2	81906.0
+12323	18	18	0	Indiana	541690	Other scientific and technical consulting services	54	243.0	1691.4	108865.2
+12324	18	18	0	Indiana	541711	Research and development in biotechnology	54	32.4	713.8	75817.2
+12325	18	18	0	Indiana	541712	Research and development in the physical, engineering, and life sciences (except biotechnology)	54	164.6	8763.8	849345.6
+12326	18	18	0	Indiana	541720	Research and development in the social sciences and humanities	54	19.8	58.6	4360.6
+12327	18	18	0	Indiana	541810	Advertising agencies	54	204.8	1337.6	72082.8
+12328	18	18	0	Indiana	541820	Public relations agencies	54	64.6	305.0	20352.8
+12329	18	18	0	Indiana	541830	Media buying agencies	54	5.6	4.2	244.8
+12330	18	18	0	Indiana	541840	Media representatives	54	10.8	78.8	3252.6
+12331	18	18	0	Indiana	541850	Outdoor advertising	54	58.2	431.4	22043.4
+12332	18	18	0	Indiana	541860	Direct mail advertising	54	39.6	534.2	16656.0
+12333	18	18	0	Indiana	541870	Advertising material distribution services	54	10.4	215.2	7623.8
+12334	18	18	0	Indiana	541890	Other services related to advertising	54	139.2	1142.0	27600.2
+12335	18	18	0	Indiana	541910	Marketing research and public opinion polling	54	65.8	801.6	40290.4
+12336	18	18	0	Indiana	541921	Photography studios, portrait	54	245.8	1096.6	20708.2
+12337	18	18	0	Indiana	541922	Commercial photography	54	42.0	74.0	6737.2
+12338	18	18	0	Indiana	541930	Translation and interpretation services	54	24.8	73.6	3165.6
+12339	18	18	0	Indiana	541940	Veterinary services	54	641.8	6921.4	212250.8
+12340	18	18	0	Indiana	541990	All other professional, scientific, and technical services	54	150.6	660.8	25722.6
+12341	18	18	0	Indiana	551111	Offices of bank holding companies	55	15.8	253.0	18849.2
+12342	18	18	0	Indiana	551112	Offices of other holding companies	55	68.0	871.0	73363.0
+12343	18	18	0	Indiana	551114	Corporate, subsidiary, and regional managing offices	55	823.4	53041.4	5085140.2
+12344	18	18	0	Indiana	561110	Office administrative services	56	374.0	5414.8	306483.8
+12345	18	18	0	Indiana	561210	Facilities support services	56	68.8	2717.2	131411.8
+12346	18	18	0	Indiana	561311	Employment placement agencies	56	101.0	5020.2	113269.4
+12347	18	18	0	Indiana	561312	Executive search services	56	67.4	270.6	14826.2
+12348	18	18	0	Indiana	561320	Temporary help services	56	686.0	86831.6	1876958.4
+12349	18	18	0	Indiana	561330	Professional employer organizations	56	77.4	25644.0	1097464.6
+12350	18	18	0	Indiana	561410	Document preparation services	56	58.2	573.6	15191.2
+12351	18	18	0	Indiana	561421	Telephone answering services	56	19.0	299.0	8728.4
+12352	18	18	0	Indiana	561422	Telemarketing bureaus and other contact centers	56	58.0	4528.2	97763.6
+12353	18	18	0	Indiana	561431	Private mail centers	56	68.0	292.8	5115.6
+12354	18	18	0	Indiana	561439	Other business service centers (including copy shops)	56	64.8	124.2	6175.6
+12355	18	18	0	Indiana	561440	Collection agencies	56	99.8	2389.6	88418.6
+12356	18	18	0	Indiana	561450	Credit bureaus	56	4.2	8.2	1315.2
+12357	18	18	0	Indiana	561491	Repossession services	56	11.6	59.0	1909.8
+12358	18	18	0	Indiana	561492	Court reporting and stenotype services	56	58.6	56.4	4043.2
+12359	18	18	0	Indiana	561499	All other business support services	56	61.6	1000.2	32044.8
+12360	18	18	0	Indiana	561510	Travel agencies	56	152.8	1138.6	44077.2
+12361	18	18	0	Indiana	561520	Tour operators	56	16.0	73.0	3750.6
+12362	18	18	0	Indiana	561591	Convention and visitors bureaus	56	40.8	258.8	10417.8
+12363	18	18	0	Indiana	561599	All other travel arrangement and reservation services	56	47.0	270.2	14308.6
+12364	18	18	0	Indiana	561611	Investigation services	56	51.8	396.8	18708.0
+12365	18	18	0	Indiana	561612	Security guards and patrol services	56	168.8	9800.2	185315.6
+12366	18	18	0	Indiana	561613	Armored car services	56	20.2	446.2	14487.0
+12367	18	18	0	Indiana	561621	Security systems services (except locksmiths)	56	132.2	1986.4	93140.8
+12368	18	18	0	Indiana	561622	Locksmiths	56	56.8	265.2	11678.6
+12369	18	18	0	Indiana	561710	Exterminating and pest control services	56	194.6	1466.0	60296.4
+12370	18	18	0	Indiana	561720	Janitorial services	56	1090.8	15694.6	270256.0
+12371	18	18	0	Indiana	561730	Landscaping services	56	2012.6	12215.0	431306.2
+12372	18	18	0	Indiana	561740	Carpet and upholstery cleaning services	56	223.8	1168.8	29312.6
+12373	18	18	0	Indiana	561790	Other services to buildings and dwellings	56	194.0	954.2	31105.0
+12374	18	18	0	Indiana	561910	Packaging and labeling services	56	34.0	1625.8	53870.6
+12375	18	18	0	Indiana	561920	Convention and trade show organizers	56	60.8	685.4	36745.8
+12376	18	18	0	Indiana	561990	All other support services	56	342.2	3956.8	155249.0
+12377	18	18	0	Indiana	562111	Solid waste collection	56	203.4	3770.4	189460.2
+12378	18	18	0	Indiana	562112	Hazardous waste collection	56	16.6	132.0	10699.8
+12379	18	18	0	Indiana	562119	Other waste collection	56	11.4	45.8	2015.4
+12380	18	18	0	Indiana	562211	Hazardous waste treatment and disposal	56	27.4	1109.2	76500.6
+12381	18	18	0	Indiana	562212	Solid waste landfill	56	26.6	289.8	16569.4
+12382	18	18	0	Indiana	562213	Solid waste combustors and incinerators	56	1.0	0.0	0.0
+12383	18	18	0	Indiana	562219	Other nonhazardous waste treatment and disposal	56	7.2	43.0	2071.4
+12384	18	18	0	Indiana	562910	Remediation services	56	68.8	1072.6	53366.8
+12385	18	18	0	Indiana	562920	Materials recovery facilities	56	37.0	553.0	20164.0
+12386	18	18	0	Indiana	562991	Septic tank and related services	56	79.2	592.6	26839.8
+12387	18	18	0	Indiana	562998	All other miscellaneous waste management services	56	35.4	396.6	18622.4
+12388	18	18	0	Indiana	611110	Elementary and secondary schools	61	344.0	13533.6	388728.6
+12389	18	18	0	Indiana	611210	Junior colleges	61	37.2	3037.0	101193.8
+12390	18	18	0	Indiana	611310	Colleges, universities, and professional schools	61	72.0	41398.6	1130244.0
+12391	18	18	0	Indiana	611410	Business and secretarial schools	61	3.2	0.0	0.0
+12392	18	18	0	Indiana	611420	Computer training	61	16.0	64.4	5124.6
+12393	18	18	0	Indiana	611430	Professional and management development training	61	90.4	506.2	29020.6
+12394	18	18	0	Indiana	611511	Cosmetology and barber schools	61	63.6	521.0	15209.0
+12395	18	18	0	Indiana	611512	Flight training	61	10.4	97.2	2406.4
+12396	18	18	0	Indiana	611513	Apprenticeship training	61	48.6	553.6	15513.4
+12397	18	18	0	Indiana	611519	Other technical and trade schools	61	71.0	705.6	27127.2
+12398	18	18	0	Indiana	611610	Fine arts schools	61	233.0	1518.2	18065.8
+12399	18	18	0	Indiana	611620	Sports and recreation instruction	61	249.8	1752.6	22405.2
+12400	18	18	0	Indiana	611630	Language schools	61	17.4	202.8	5177.2
+12401	18	18	0	Indiana	611691	Exam preparation and tutoring	61	118.0	1215.2	16918.6
+12402	18	18	0	Indiana	611692	Automobile driving schools	61	57.6	258.2	4229.0
+12403	18	18	0	Indiana	611699	All other miscellaneous schools and instruction	61	79.2	546.2	12481.0
+12404	18	18	0	Indiana	611710	Educational support services	61	110.2	1197.4	62615.0
+12405	18	18	0	Indiana	621111	Offices of physicians (except mental health specialists)	62	3466.0	48369.6	4132130.0
+12406	18	18	0	Indiana	621112	Offices of physicians, mental health specialists	62	122.6	655.0	42973.4
+12407	18	18	0	Indiana	621210	Offices of dentists	62	2356.6	17805.8	848716.4
+12408	18	18	0	Indiana	621310	Offices of chiropractors	62	649.4	2632.6	75929.6
+12409	18	18	0	Indiana	621320	Offices of optometrists	62	575.0	3384.0	115947.4
+12410	18	18	0	Indiana	621330	Offices of mental health practitioners (except physicians)	62	350.2	2403.4	80979.6
+12411	18	18	0	Indiana	621340	Offices of physical, occupational and speech therapists, and audiologists	62	577.8	6968.0	271092.4
+12412	18	18	0	Indiana	621391	Offices of podiatrists	62	157.4	744.6	34021.0
+12413	18	18	0	Indiana	621399	Offices of all other miscellaneous health practitioners	62	261.0	2066.2	82076.6
+12414	18	18	0	Indiana	621410	Family planning centers	62	56.0	125.4	4980.0
+12415	18	18	0	Indiana	621420	Outpatient mental health and substance abuse centers	62	247.6	6156.0	229152.2
+12416	18	18	0	Indiana	621491	HMO medical centers	62	9.75	0.0	0.0
+12417	18	18	0	Indiana	621492	Kidney dialysis centers	62	182.0	1059.0	43646.8
+12418	18	18	0	Indiana	621493	Freestanding ambulatory surgical and emergency centers	62	146.8	3734.4	197863.0
+12419	18	18	0	Indiana	621498	All other outpatient care centers	62	217.0	3875.8	180587.2
+12420	18	18	0	Indiana	621511	Medical laboratories	62	184.4	3376.8	232380.6
+12421	18	18	0	Indiana	621512	Diagnostic imaging centers	62	80.6	826.4	57075.8
+12422	18	18	0	Indiana	621610	Home health care services	62	488.0	21870.2	613260.0
+12423	18	18	0	Indiana	621910	Ambulance services	62	94.4	3603.8	101040.6
+12424	18	18	0	Indiana	621991	Blood and organ banks	62	41.0	709.6	44018.6
+12425	18	18	0	Indiana	621999	All other miscellaneous ambulatory health care services	62	90.0	1351.6	63899.6
+12426	18	18	0	Indiana	622110	General medical and surgical hospitals	62	123.0	119096.8	5834121.8
+12427	18	18	0	Indiana	622210	Psychiatric and substance abuse hospitals	62	21.2	4855.0	190604.2
+12428	18	18	0	Indiana	622310	Specialty (except psychiatric and substance abuse) hospitals	62	28.0	5871.2	284614.4
+12429	18	18	0	Indiana	623110	Nursing care facilities (skilled nursing facilities)	62	518.8	48198.0	1265929.4
+12430	18	18	0	Indiana	623210	Residential intellectual and developmental disability facilities	62	1052.6	13414.6	274688.6
+12431	18	18	0	Indiana	623220	Residential mental health and substance abuse facilities	62	127.8	2872.4	80441.6
+12432	18	18	0	Indiana	623311	Continuing care retirement communities	62	98.0	13357.4	332434.2
+12433	18	18	0	Indiana	623312	Assisted living facilities for the elderly	62	173.2	6634.8	137941.2
+12434	18	18	0	Indiana	623990	Other residential care facilities	62	90.8	2783.0	78647.6
+12435	18	18	0	Indiana	624110	Child and youth services	62	228.6	2750.2	77811.4
+12436	18	18	0	Indiana	624120	Services for the elderly and persons with disabilities	62	498.8	17581.8	315666.0
+12437	18	18	0	Indiana	624190	Other individual and family services	62	589.2	7028.8	175319.2
+12438	18	18	0	Indiana	624210	Community food services	62	102.4	634.6	14490.8
+12439	18	18	0	Indiana	624221	Temporary shelters	62	90.4	1402.2	30930.6
+12440	18	18	0	Indiana	624229	Other community housing services	62	82.6	730.8	21163.8
+12441	18	18	0	Indiana	624230	Emergency and other relief services	62	32.8	702.4	27583.8
+12442	18	18	0	Indiana	624310	Vocational rehabilitation services	62	204.2	9208.0	157365.6
+12443	18	18	0	Indiana	624410	Child day care services	62	1369.4	13743.6	233313.2
+12444	18	18	0	Indiana	711110	Theater companies and dinner theaters	71	43.4	661.0	13869.8
+12445	18	18	0	Indiana	711120	Dance companies	71	4.8	26.8	562.6
+12446	18	18	0	Indiana	711130	Musical groups and artists	71	56.4	918.8	21090.0
+12447	18	18	0	Indiana	711190	Other performing arts companies	71	4.4	0.0	0.0
+12448	18	18	0	Indiana	711211	Sports teams and clubs	71	19.4	1851.8	300011.4
+12449	18	18	0	Indiana	711212	Racetracks	71	23.6	870.8	42745.8
+12450	18	18	0	Indiana	711219	Other spectator sports	71	81.4	805.0	62865.6
+12451	18	18	0	Indiana	711310	Promoters of performing arts, sports, and similar events with facilities	71	47.8	926.2	18223.2
+12452	18	18	0	Indiana	711320	Promoters of performing arts, sports, and similar events without facilities	71	76.0	206.4	10451.4
+12453	18	18	0	Indiana	711410	Agents and managers for artists, athletes, entertainers, and other public figures	71	18.6	46.8	4000.0
+12454	18	18	0	Indiana	711510	Independent artists, writers, and performers	71	155.2	311.0	10816.0
+12455	18	18	0	Indiana	712110	Museums	71	109.8	1424.8	42406.8
+12456	18	18	0	Indiana	712120	Historical sites	71	23.0	363.2	8062.2
+12457	18	18	0	Indiana	712130	Zoos and botanical gardens	71	6.6	193.0	5963.4
+12458	18	18	0	Indiana	712190	Nature parks and other similar institutions	71	12.2	63.0	1922.8
+12459	18	18	0	Indiana	713110	Amusement and theme parks	71	4.0	0.0	0.0
+12460	18	18	0	Indiana	713120	Amusement arcades	71	65.6	932.0	9374.0
+12461	18	18	0	Indiana	713210	Casinos (except casino hotels)	71	2.8	0.0	0.0
+12462	18	18	0	Indiana	713290	Other gambling industries	71	13.0	334.4	13711.4
+12463	18	18	0	Indiana	713910	Golf courses and country clubs	71	295.4	4038.8	107824.0
+12464	18	18	0	Indiana	713920	Skiing facilities	71	2.0	0.0	0.0
+12465	18	18	0	Indiana	713930	Marinas	71	43.2	213.2	6937.0
+12466	18	18	0	Indiana	713940	Fitness and recreational sports centers	71	586.6	10473.0	117174.6
+12467	18	18	0	Indiana	713950	Bowling centers	71	132.6	1995.4	23173.0
+12468	18	18	0	Indiana	713990	All other amusement and recreation industries	71	275.8	1627.2	29911.0
+12469	18	18	0	Indiana	721110	Hotels (except casino hotels) and motels	72	929.8	20336.4	399275.8
+12470	18	18	0	Indiana	721120	Casino hotels	72	9.2	9102.2	270454.0
+12471	18	18	0	Indiana	721191	Bed-and-breakfast inns	72	28.6	95.6	1567.8
+12472	18	18	0	Indiana	721199	All other traveler accommodation	72	8.6	37.2	767.8
+12473	18	18	0	Indiana	721211	RV (recreational vehicle) parks and campgrounds	72	80.4	268.0	8222.6
+12474	18	18	0	Indiana	721214	Recreational and vacation camps (except campgrounds)	72	51.8	274.6	9732.0
+12475	18	18	0	Indiana	721310	Rooming and boarding houses	72	114.6	709.0	9425.0
+12476	18	18	0	Indiana	722310	Food service contractors	72	431.2	3468.0	69236.6
+12477	18	18	0	Indiana	722320	Caterers	72	195.2	2614.8	37232.2
+12478	18	18	0	Indiana	722330	Mobile food services	72	85.4	340.8	5776.0
+12479	18	18	0	Indiana	722410	Drinking places (alcoholic beverages)	72	992.2	7745.8	106399.2
+12480	18	18	0	Indiana	722511	Full-service restaurants	72	4466.2	106930.6	1551588.8
+12481	18	18	0	Indiana	722513	Limited-service restaurants	72	4737.6	95859.4	1142440.8
+12482	18	18	0	Indiana	722514	Cafeterias, grill buffets, and buffets	72	180.6	3664.2	43341.0
+12483	18	18	0	Indiana	722515	Snack and nonalcoholic beverage bars	72	854.8	9641.4	128484.4
+12484	18	18	0	Indiana	811111	General automotive repair	81	1771.4	9015.0	319380.2
+12485	18	18	0	Indiana	811112	Automotive exhaust system repair	81	70.0	235.4	7023.4
+12486	18	18	0	Indiana	811113	Automotive transmission repair	81	111.6	547.6	19766.4
+12487	18	18	0	Indiana	811118	Other automotive mechanical and electrical repair and maintenance	81	78.8	383.6	14409.8
+12488	18	18	0	Indiana	811121	Automotive body, paint, and interior repair and maintenance	81	787.4	5314.0	209777.0
+12489	18	18	0	Indiana	811122	Automotive glass replacement shops	81	105.0	507.6	16960.8
+12490	18	18	0	Indiana	811191	Automotive oil change and lubrication shops	81	169.0	1220.4	26739.0
+12491	18	18	0	Indiana	811192	Car washes	81	353.0	2675.4	49339.8
+12492	18	18	0	Indiana	811198	All other automotive repair and maintenance	81	56.4	333.4	11638.4
+12493	18	18	0	Indiana	811211	Consumer electronics repair and maintenance	81	37.4	307.8	8272.0
+12494	18	18	0	Indiana	811212	Computer and office machine repair and maintenance	81	97.0	935.8	33805.6
+12495	18	18	0	Indiana	811213	Communication equipment repair and maintenance	81	30.2	126.6	5255.6
+12496	18	18	0	Indiana	811219	Other electronic and precision equipment repair and maintenance	81	71.4	1082.0	77948.8
+12497	18	18	0	Indiana	811310	Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance	81	565.6	5872.2	302468.8
+12498	18	18	0	Indiana	811411	Home and garden equipment repair and maintenance	81	33.6	43.6	1760.8
+12499	18	18	0	Indiana	811412	Appliance repair and maintenance	81	69.8	261.8	9164.8
+12500	18	18	0	Indiana	811420	Reupholstery and furniture repair	81	78.6	254.4	6292.8
+12501	18	18	0	Indiana	811430	Footwear and leather goods repair	81	10.6	11.2	539.2
+12502	18	18	0	Indiana	811490	Other personal and household goods repair and maintenance	81	165.2	444.8	10819.6
+12503	18	18	0	Indiana	812111	Barber shops	81	67.8	278.0	4991.0
+12504	18	18	0	Indiana	812112	Beauty salons	81	1357.6	8057.8	155455.0
+12505	18	18	0	Indiana	812113	Nail salons	81	50.0	93.0	3432.2
+12506	18	18	0	Indiana	812191	Diet and weight reducing centers	81	48.0	156.0	4925.6
+12507	18	18	0	Indiana	812199	Other personal care services	81	395.0	2831.4	35516.2
+12508	18	18	0	Indiana	812210	Funeral homes and funeral services	81	510.8	3513.2	105929.6
+12509	18	18	0	Indiana	812220	Cemeteries and crematories	81	149.6	697.8	24672.2
+12510	18	18	0	Indiana	812310	Coin-operated laundries and drycleaners	81	195.2	1043.8	14784.6
+12511	18	18	0	Indiana	812320	Drycleaning and laundry services (except coin-operated)	81	262.6	1859.8	35330.2
+12512	18	18	0	Indiana	812331	Linen supply	81	19.8	622.0	18303.6
+12513	18	18	0	Indiana	812332	Industrial launderers	81	44.6	2158.2	88374.8
+12514	18	18	0	Indiana	812910	Pet care (except veterinary) services	81	302.2	1782.8	31240.0
+12515	18	18	0	Indiana	812921	Photofinishing laboratories (except one-hour)	81	12.8	136.8	4146.4
+12516	18	18	0	Indiana	812922	One-hour photofinishing	81	1.0	0.0	0.0
+12517	18	18	0	Indiana	812930	Parking lots and garages	81	120.0	1214.0	17232.8
+12518	18	18	0	Indiana	812990	All other personal services	81	163.6	546.0	14788.8
+12519	18	18	0	Indiana	813110	Religious organizations	81	5225.6	46144.2	860987.0
+12520	18	18	0	Indiana	813211	Grantmaking foundations	81	253.0	2334.6	136578.2
+12521	18	18	0	Indiana	813212	Voluntary health organizations	81	74.2	557.2	23877.4
+12522	18	18	0	Indiana	813219	Other grantmaking and giving services	81	85.8	579.0	21174.8
+12523	18	18	0	Indiana	813311	Human rights organizations	81	41.8	223.2	7316.8
+12524	18	18	0	Indiana	813312	Environment, conservation and wildlife organizations	81	122.6	837.0	19625.2
+12525	18	18	0	Indiana	813319	Other social advocacy organizations	81	119.4	764.8	22062.6
+12526	18	18	0	Indiana	813410	Civic and social organizations	81	998.2	10218.0	177858.2
+12527	18	18	0	Indiana	813910	Business associations	81	364.8	1559.2	85459.4
+12528	18	18	0	Indiana	813920	Professional organizations	81	99.4	753.6	46437.6
+12529	18	18	0	Indiana	813930	Labor unions and similar labor organizations	81	452.8	4264.4	76309.4
+12530	18	18	0	Indiana	813940	Political organizations	81	37.2	115.4	5334.2
+12531	18	18	0	Indiana	813990	Other similar organizations (except business, professional, labor, and political organizations)	81	157.4	1314.0	78144.6
