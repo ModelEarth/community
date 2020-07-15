@@ -91,7 +91,7 @@ To fix a conflict you may need delete the .DS_Store within the Github.com websit
 - Create a public repo called [github username].github.io
 - Activate GitHub Pages and add your custom domain name.
 - Wait a couple minutes for new GitHub Pages site to become available.
-- Activate GitHub Pages for each additional repo.
+- Activate GitHub Pages for each additional repo. These can be forks from other accounts.  
 <!-- note, when setting up the prior neighborhood folder was renamed to [github username].github.io -->
 
 

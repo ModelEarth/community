@@ -1447,7 +1447,7 @@ function dualmapLoaded(param, root, count) {
 			loadMap1();
 			window.onhashchange = function() {
 				//param = loadParam(location.search,location.hash);
-				console.log("user changed hash")
+				console.log("embed-map reports user changed hash")
 				loadMap1();
 			}
 		});
