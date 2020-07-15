@@ -1,26 +1,27 @@
 //default is state13 for GA, change that number to get data for other states
 //the number after naics is the number of digits in the naics code
+let root = "/community/info/"
 var promises = [
-    d3.csv("data/industry_ID_list.csv"),
-    d3.tsv("data/usa/GA/industries_state13_naics2.tsv"),
-    //d3.tsv("data/c3.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics4.tsv"),
-    //d3.tsv("data/c5.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics6.tsv"),
-    d3.csv("data/county_ID_list.csv"),
-    d3.tsv("data/usa/GA/industries_state13_naics2_state.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics4_state.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics6_state.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics2_state_api.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics4_state_api.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics6_state_api.tsv"),
-    d3.tsv("data/usa/GA/GAcounties.csv"),
-    d3.tsv("data/usa/GA/industries_state13_naics2_est1.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics4_est1.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics6_est1.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics2_est3.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics4_est3.tsv"),
-    d3.tsv("data/usa/GA/industries_state13_naics6_est3.tsv"),
+    d3.csv(root + "data/industry_ID_list.csv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics2.tsv"),
+    //d3.tsv(root + "data/c3.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics4.tsv"),
+    //d3.tsv(root + "data/c5.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics6.tsv"),
+    d3.tsv(root + "data/county_ID_list.csv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics2_state.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics4_state.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics6_state.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics2_state_api.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics4_state_api.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics6_state_api.tsv"),
+    d3.tsv(root + "data/usa/GA/GAcounties.csv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics2_est1.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics4_est1.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics6_est1.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics2_est3.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics4_est3.tsv"),
+    d3.tsv(root + "data/usa/GA/industries_state13_naics6_est3.tsv"),
 ]
 Promise.all(promises).then(ready);
 
@@ -30,76 +31,81 @@ function ready(values) {
     let lastParams = {};
     let dataObject={};
     let industryData ={}
-    if(d3.select("#catmethod").node().value==0){
-        industryData = {
-            'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
-        }
-    }else if(d3.select("#catmethod").node().value==1){
-        if (d3.select("#catsize").node().value==2){
+    if (d3.select("#catmethod").node()) {
+        if(d3.select("#catmethod").node().value==0){
             industryData = {
-                'ActualRate': formatIndustryData(values[12]),
+                'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
             }
-        }else if(d3.select("#catsize").node().value==4){
-            industryData = {
-                'ActualRate': formatIndustryData(values[13]),
+        }else if(d3.select("#catmethod").node().value==1){
+            if (d3.select("#catsize").node().value==2){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[12]),
+                }
+            }else if(d3.select("#catsize").node().value==4){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[13]),
+                }
+            }else if(d3.select("#catsize").node().value==6){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[14]),
+                }
             }
-        }else if(d3.select("#catsize").node().value==6){
-            industryData = {
-                'ActualRate': formatIndustryData(values[14]),
-            }
-        }
-    
-    }else if(d3.select("#catmethod").node().value==2){
-        if (d3.select("#catsize").node().value==2){
-            industryData = {
-                'ActualRate': formatIndustryData(values[18]),
-            }
-        }else if(d3.select("#catsize").node().value==4){
-            industryData = {
-                'ActualRate': formatIndustryData(values[19]),
-            }
-        }else if(d3.select("#catsize").node().value==6){
-            industryData = {
-                'ActualRate': formatIndustryData(values[20]),
+        
+        }else if(d3.select("#catmethod").node().value==2){
+            if (d3.select("#catsize").node().value==2){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[18]),
+                }
+            }else if(d3.select("#catsize").node().value==4){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[19]),
+                }
+            }else if(d3.select("#catsize").node().value==6){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[20]),
+                }
             }
         }
     }
     dataObject.industryData = industryData;
 
-    if (d3.select("#catsize").node().value==2){
-        industryDataState = {
-            'ActualRate': formatIndustryData(values[5])
+    industryDataState = {};
+    if (d3.select("#catsize").node()) {
+        if (d3.select("#catsize").node().value==2){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[5])
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[6])
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[7])
+            }
         }
-    }else if(d3.select("#catsize").node().value==4){
-        industryDataState = {
-            'ActualRate': formatIndustryData(values[6])
-        }
-    }else if(d3.select("#catsize").node().value==6){
-        industryDataState = {
-            'ActualRate': formatIndustryData(values[7])
-        }
-    }
-        
+    } 
     dataObject.industryDataState=industryDataState;
 
-
-    if (d3.select("#catsize").node().value==2){
-        industryDataStateApi = {
-            'ActualRate': formatIndustryData(values[8])
-        }
-    }else if(d3.select("#catsize").node().value==4){
-        industryDataStateApi = {
-            'ActualRate': formatIndustryData(values[9])
-        }
-    }else if(d3.select("#catsize").node().value==6){
-        industryDataStateApi = {
-            'ActualRate': formatIndustryData(values[10])
+    industryDataStateApi = {};
+    if (d3.select("#catsize").node()) {
+        if (d3.select("#catsize").node().value==2){
+            industryDataStateApi = {
+                'ActualRate': formatIndustryData(values[8])
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryDataStateApi = {
+                'ActualRate': formatIndustryData(values[9])
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryDataStateApi = {
+                'ActualRate': formatIndustryData(values[10])
+            }
         }
     }
-        
     dataObject.industryDataStateApi=industryDataStateApi;
 
-    industryNames = {}
+    industryNames = {};
     values[0].forEach(function(item){
         industryNames[+item.relevant_naics] = item.industry_detail
     })
@@ -140,11 +146,12 @@ function ready(values) {
             
         });
         
-        document.getElementById("clearButton").addEventListener("click", function(){
-            clearHash("geo,regiontitle");
-            geoChanged(dataObject)
-        }); 
-
+        if (document.getElementById("clearButton")) {
+            document.getElementById("clearButton").addEventListener("click", function(){
+                clearHash("geo,regiontitle");
+                geoChanged(dataObject)
+            }); 
+        }
         addGeoChangeDetectToDOM(1);
         function addGeoChangeDetectToDOM(count) { // Wait for county checkboxes to be added to DOM by search-filters.js
             if($(".geo").length) {
@@ -166,7 +173,7 @@ function ready(values) {
         // Note that params differs from param in common.js in case this script runs without refreshWidgets().
         lastParams = params;
         params = loadParams(location.search,location.hash);
-        //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
+        console.log("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
 
         // Both call topRatesInFips(). Might be good to move geoChanged processing into renderIndustryChart()
         if (params.geo != lastParams.geo) { // Not usable, already changed at this point.
@@ -188,84 +195,93 @@ function ready(values) {
 
 function renderIndustryChart(dataObject,values,params) {
 
-    if(d3.select("#catmethod").node().value==0){
-        industryData = {
-            'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
-        }
-    }else if(d3.select("#catmethod").node().value==1){
-        if (d3.select("#catsize").node().value==2){
+    industryData = {'ActualRate': formatIndustryData(values[12])};
+    if(d3.select("#catmethod").node()) {
+        if(d3.select("#catmethod").node().value==0){
             industryData = {
-                'ActualRate': formatIndustryData(values[12]),
+                'ActualRate': formatIndustryData(values[d3.select("#catsize").node().value/2]),
             }
-        }else if(d3.select("#catsize").node().value==4){
-            industryData = {
-                'ActualRate': formatIndustryData(values[13]),
+        }else if(d3.select("#catmethod").node().value==1){
+            if (d3.select("#catsize").node().value==2){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[12]),
+                }
+            }else if(d3.select("#catsize").node().value==4){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[13]),
+                }
+            }else if(d3.select("#catsize").node().value==6){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[14]),
+                }
             }
-        }else if(d3.select("#catsize").node().value==6){
-            industryData = {
-                'ActualRate': formatIndustryData(values[14]),
+        }else if(d3.select("#catmethod").node().value==2){
+            if (d3.select("#catsize").node().value==2){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[15]),
+                }
+            }else if(d3.select("#catsize").node().value==4){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[16]),
+                }
+            }else if(d3.select("#catsize").node().value==6){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[17]),
+                }
             }
-        }
-    }else if(d3.select("#catmethod").node().value==2){
-        if (d3.select("#catsize").node().value==2){
-            industryData = {
-                'ActualRate': formatIndustryData(values[15]),
-            }
-        }else if(d3.select("#catsize").node().value==4){
-            industryData = {
-                'ActualRate': formatIndustryData(values[16]),
-            }
-        }else if(d3.select("#catsize").node().value==6){
-            industryData = {
-                'ActualRate': formatIndustryData(values[17]),
-            }
-        }
-    }else if(d3.select("#catmethod").node().value==3){
-        if (d3.select("#catsize").node().value==2){
-            industryData = {
-                'ActualRate': formatIndustryData(values[18]),
-            }
-        }else if(d3.select("#catsize").node().value==4){
-            industryData = {
-                'ActualRate': formatIndustryData(values[19]),
-            }
-        }else if(d3.select("#catsize").node().value==6){
-            industryData = {
-                'ActualRate': formatIndustryData(values[20]),
+        }else if(d3.select("#catmethod").node().value==3){
+            if (d3.select("#catsize").node().value==2){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[18]),
+                }
+            }else if(d3.select("#catsize").node().value==4){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[19]),
+                }
+            }else if(d3.select("#catsize").node().value==6){
+                industryData = {
+                    'ActualRate': formatIndustryData(values[20]),
+                }
             }
         }
     }
     dataObject.industryData=industryData;
-    if (d3.select("#catsize").node().value==2){
-        industryDataState = {
-            'ActualRate': formatIndustryData(values[5])
-        }
-    }else if(d3.select("#catsize").node().value==4){
-        industryDataState = {
-            'ActualRate': formatIndustryData(values[6])
-        }
-    }else if(d3.select("#catsize").node().value==6){
-        industryDataState = {
-            'ActualRate': formatIndustryData(values[7])
+
+    industryDataState = {'ActualRate': formatIndustryData(values[5])};
+
+    if (d3.select("#catsize").node()) {
+        if (d3.select("#catsize").node().value==2){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[5])
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[6])
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryDataState = {
+                'ActualRate': formatIndustryData(values[7])
+            }
         }
     }
-        
     dataObject.industryDataState=industryDataState;
 
-    if (d3.select("#catsize").node().value==2){
-        industryDataStateApi = {
-            'ActualRate': formatIndustryData(values[8])
-        }
-    }else if(d3.select("#catsize").node().value==4){
-        industryDataStateApi = {
-            'ActualRate': formatIndustryData(values[9])
-        }
-    }else if(d3.select("#catsize").node().value==6){
-        industryDataStateApi = {
-            'ActualRate': formatIndustryData(values[10])
+    industryDataStateApi = {};
+    if (d3.select("#catsize").node()) {
+        if (d3.select("#catsize").node().value==2){
+            industryDataStateApi = {
+                'ActualRate': formatIndustryData(values[8])
+            }
+        }else if(d3.select("#catsize").node().value==4){
+            industryDataStateApi = {
+                'ActualRate': formatIndustryData(values[9])
+            }
+        }else if(d3.select("#catsize").node().value==6){
+            industryDataStateApi = {
+                'ActualRate': formatIndustryData(values[10])
+            }
         }
     }
-        
     dataObject.industryDataStateApi=industryDataStateApi;
 
     if (params["geo"]){
@@ -284,7 +300,7 @@ function renderIndustryChart(dataObject,values,params) {
     }
 
     geoChanged(dataObject);
-        
+      
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -317,7 +333,7 @@ function geoChanged(dataObject,params){
         $(".county-view").show();
         $(".industry_filter_settings").show(); // temp
     }
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"),params)
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"), params)
 }
 
 
@@ -372,7 +388,7 @@ function keyFound(this_key, cat_filter) {
 }
 
 //the code to give you the top n rows of data for a specific fips
-function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
+function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal, params){
     // NAICS FROM community/projects/biotech
     var bio_input = "113000,321113,113310,32121,32191,562213,322121,322110,"; // Omitted 541620
     var bio_output = "325211,325991,3256,335991,325120,326190,";
@@ -389,6 +405,9 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
             cat_filter=cat_filt
             //console.log(cat_filter)
         }
+    }
+    if (!params.catsort) {
+        params.catsort = "payann";
     }
     var rates_dict = {};
     var rates_list = [];
@@ -447,18 +466,24 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                 })
             }
         }else{
-            Object.keys(dataSet.industryDataState.ActualRate).forEach( this_key=>{
-                if (keyFound(this_key, cat_filter)){
-                    this_rate = dataSet.industryDataState.ActualRate[this_key]
-                    if (this_rate.hasOwnProperty(fips)){ 
-                        rates_dict[this_key] = parseFloat(this_rate[fips][whichVal.node().value])
-                        rates_list.push(parseFloat(this_rate[fips][whichVal.node().value]))
-                    } else {
-                        rates_dict[this_key] = 0.0
-                        rates_list.push(0.0)
+            if (dataSet.industryDataState.ActualRate) {
+                Object.keys(dataSet.industryDataState.ActualRate).forEach( this_key=>{
+                    if (keyFound(this_key, cat_filter)){
+                        this_rate = dataSet.industryDataState.ActualRate[this_key]
+                        if (this_rate.hasOwnProperty(fips)){ 
+                            if (whichVal.node()) {
+                                rates_dict[this_key] = parseFloat(this_rate[fips][whichVal.node().value]);
+                                rates_list.push(parseFloat(this_rate[fips][whichVal.node().value]));
+                            } else {
+                                console.log("this_rate[fips][whichVal.node() is null")
+                            }
+                        } else {
+                            rates_dict[this_key] = 0.0
+                            rates_list.push(0.0)
+                        }
                     }
-                }
-            })
+                })
+            }
         }    
 
     }else{
@@ -633,8 +658,10 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
     let text = "";
     let dollar = ""; // optionally: $
     let totalLabel = "Total";
-    if(String(whichVal.node().value)=="payann"){
-        totalLabel = "Total Payroll ($)";
+    if (whichVal.node()) {
+        if(String(whichVal.node().value)=="payann"){
+            totalLabel = "Total Payroll ($)";
+        }
     }
     if(Array.isArray(fips)){
         
@@ -646,8 +673,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
     }else{
         $(".mainColumn1").show();
     }
-    d3.csv("data/county_ID_list.csv").then( function(consdata) {
-        d3.csv("data/usa/GA/GAcounties.csv").then( function(latdata) {
+    d3.tsv(root + "data/county_ID_list.csv").then( function(consdata) {
+        d3.tsv(root + "data/usa/GA/GAcounties.csv").then( function(latdata) {
              // TABLE HEADER ROW
             if(Array.isArray(fips) && statelength != fips.length){
 
@@ -682,7 +709,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
                     //let county = "Coweta" + " County"; // Replace "Coweta" with county name from dataset
                     let county = ""; // Delete this line
                     
-                    //d3.csv("data/county_ID_list.csv").then( function(consdata) {
+                    //d3.tsv(root + "data/county_ID_list.csv").then( function(consdata) {
                         if(Array.isArray(fips) && statelength!=fips.length){
                             mapLink=[]
                             for(var j=0; j<fipslen; j++){
@@ -864,7 +891,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, whichVal,params){
             updateHash({"naics":naicshash});
         })
     })
-    d3.csv("data/county_ID_list.csv").then( function(consdata) {
+    d3.tsv(root + "data/county_ID_list.csv").then( function(consdata) {
         //document.getElementById("industryheader").text = ""; // Clear initial.
         $(".regionsubtitle").text(""); //Clear
         if (params.go == "bioeconomy") {
