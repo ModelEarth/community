@@ -1,0 +1,955 @@
+	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
+18881	26	26	0	Michigan	113110	Timber tract operations	11	6.2	20.2	1059.0
+18882	26	26	0	Michigan	113210	Forest nurseries and gathering of forest products	11	7.2	19.6	697.6
+18883	26	26	0	Michigan	113310	Logging	11	310.0	1562.8	59957.2
+18884	26	26	0	Michigan	114111	Finfish fishing	11	7.6	14.8	2118.8
+18885	26	26	0	Michigan	114112	Shellfish fishing	11	1.0	0.0	0.0
+18886	26	26	0	Michigan	114210	Hunting and trapping	11	10.6	62.8	1185.4
+18887	26	26	0	Michigan	115112	Soil preparation, planting, and cultivating	11	37.0	123.2	5477.2
+18888	26	26	0	Michigan	115113	Crop harvesting, primarily by machine	11	4.2	13.0	691.4
+18889	26	26	0	Michigan	115114	Postharvest crop activities (except cotton ginning)	11	17.4	665.8	26769.2
+18890	26	26	0	Michigan	115115	Farm labor contractors and crew leaders	11	6.8	12.2	1266.0
+18891	26	26	0	Michigan	115116	Farm management services	11	5.4	0.0	0.0
+18892	26	26	0	Michigan	115210	Support activities for animal production	11	102.4	770.4	25316.4
+18893	26	26	0	Michigan	115310	Support activities for forestry	11	36.8	40.6	3360.8
+18894	26	26	0	Michigan	211111	Crude petroleum and natural gas extraction	21	71.2	814.0	63883.6
+18895	26	26	0	Michigan	211112	Natural gas liquid extraction	21	10.6	136.2	12996.0
+18896	26	26	0	Michigan	212111	Bituminous coal and lignite surface mining	21	1.0	0.0	0.0
+18897	26	26	0	Michigan	212112	Bituminous coal underground mining	21	1.0	0.0	0.0
+18898	26	26	0	Michigan	212210	Iron ore mining	21	3.0	0.0	0.0
+18899	26	26	0	Michigan	212231	Lead ore and zinc ore mining	21	1.0	0.0	0.0
+18900	26	26	0	Michigan	212234	Copper ore and nickel ore mining	21	1.6	0.0	0.0
+18901	26	26	0	Michigan	212299	All other metal ore mining	21	1.0	0.0	0.0
+18902	26	26	0	Michigan	212311	Dimension stone mining and quarrying	21	1.25	0.0	0.0
+18903	26	26	0	Michigan	212312	Crushed and broken limestone mining and quarrying	21	17.2	415.2	30007.0
+18904	26	26	0	Michigan	212319	Other crushed and broken stone mining and quarrying	21	7.8	63.4	4828.8
+18905	26	26	0	Michigan	212321	Construction sand and gravel mining	21	88.4	560.0	39876.4
+18906	26	26	0	Michigan	212322	Industrial sand mining	21	5.4	14.8	2951.2
+18907	26	26	0	Michigan	212393	Other chemical and fertilizer mineral mining	21	1.0	0.0	0.0
+18908	26	26	0	Michigan	212399	All other nonmetallic mineral mining	21	4.8	18.0	732.0
+18909	26	26	0	Michigan	213111	Drilling oil and gas wells	21	25.8	517.6	27748.0
+18910	26	26	0	Michigan	213112	Support activities for oil and gas operations	21	100.6	1402.6	87366.0
+18911	26	26	0	Michigan	213113	Support activities for coal mining	21	3.4	0.0	0.0
+18912	26	26	0	Michigan	213114	Support activities for metal mining	21	2.8	0.0	0.0
+18913	26	26	0	Michigan	213115	Support activities for nonmetallic minerals (except fuels) mining	21	7.8	47.4	5698.6
+18914	26	26	0	Michigan	221111	Hydroelectric power generation	22	17.6	64.6	8190.4
+18915	26	26	0	Michigan	221112	Fossil fuel electric power generation	22	36.2	1045.0	97929.6
+18916	26	26	0	Michigan	221113	Nuclear electric power generation	22	8.2	2547.8	283994.8
+18917	26	26	0	Michigan	221114	Solar electric power generation	22	1.0	0.0	0.0
+18918	26	26	0	Michigan	221115	Wind electric power generation	22	5.4	13.2	2440.6
+18919	26	26	0	Michigan	221117	Biomass electric power generation	22	7.2	53.8	4513.6
+18920	26	26	0	Michigan	221118	Other electric power generation	22	9.2	17.4	1466.8
+18921	26	26	0	Michigan	221121	Electric bulk power transmission and control	22	6.2	0.0	0.0
+18922	26	26	0	Michigan	221122	Electric power distribution	22	151.4	5173.2	545085.0
+18923	26	26	0	Michigan	221210	Natural gas distribution	22	71.0	1996.6	188165.2
+18924	26	26	0	Michigan	221310	Water supply and irrigation systems	22	43.0	181.0	12490.4
+18925	26	26	0	Michigan	221320	Sewage treatment facilities	22	22.8	170.4	8831.2
+18926	26	26	0	Michigan	221330	Steam and air-conditioning supply	22	7.6	50.4	3725.0
+18927	26	26	0	Michigan	236115	New single-family housing construction (except for-sale builders)	23	1441.6	4503.2	193350.8
+18928	26	26	0	Michigan	236116	New multifamily housing construction (except for-sale builders)	23	56.2	284.4	15761.2
+18929	26	26	0	Michigan	236117	New housing for-sale builders	23	315.6	1688.2	125916.2
+18930	26	26	0	Michigan	236118	Residential remodelers	23	2734.8	8160.0	320586.8
+18931	26	26	0	Michigan	236210	Industrial building construction	23	120.6	3278.0	219070.2
+18932	26	26	0	Michigan	236220	Commercial and institutional building construction	23	970.8	9447.0	630387.0
+18933	26	26	0	Michigan	237110	Water and sewer line and related structures construction	23	379.0	2664.0	175911.2
+18934	26	26	0	Michigan	237120	Oil and gas pipeline and related structures construction	23	37.6	2201.0	178682.8
+18935	26	26	0	Michigan	237130	Power and communication line and related structures construction	23	145.8	4139.8	307799.2
+18936	26	26	0	Michigan	237210	Land subdivision	23	111.2	931.6	67086.8
+18937	26	26	0	Michigan	237310	Highway, street, and bridge construction	23	248.8	2666.2	340696.0
+18938	26	26	0	Michigan	237990	Other heavy and civil engineering construction	23	136.8	1062.0	78473.2
+18939	26	26	0	Michigan	238110	Poured concrete foundation and structure contractors	23	660.8	3390.6	233422.8
+18940	26	26	0	Michigan	238120	Structural steel and precast concrete contractors	23	71.6	1125.0	62200.8
+18941	26	26	0	Michigan	238130	Framing contractors	23	288.8	1274.2	48425.8
+18942	26	26	0	Michigan	238140	Masonry contractors	23	538.2	2738.6	165051.2
+18943	26	26	0	Michigan	238150	Glass and glazing contractors	23	144.8	1230.2	68958.2
+18944	26	26	0	Michigan	238160	Roofing contractors	23	417.2	3148.8	179228.0
+18945	26	26	0	Michigan	238170	Siding contractors	23	233.6	935.2	41653.0
+18946	26	26	0	Michigan	238190	Other foundation, structure, and building exterior contractors	23	81.2	480.2	24080.0
+18947	26	26	0	Michigan	238210	Electrical contractors and other wiring installation contractors	23	1866.8	19441.2	1205136.2
+18948	26	26	0	Michigan	238220	Plumbing, heating, and air-conditioning contractors	23	2526.8	21424.8	1229685.0
+18949	26	26	0	Michigan	238290	Other building equipment contractors	23	226.8	3865.8	259582.4
+18950	26	26	0	Michigan	238310	Drywall and insulation contractors	23	436.6	3310.4	154654.8
+18951	26	26	0	Michigan	238320	Painting and wall covering contractors	23	872.4	3683.2	174356.6
+18952	26	26	0	Michigan	238330	Flooring contractors	23	342.2	1680.4	71352.4
+18953	26	26	0	Michigan	238340	Tile and terrazzo contractors	23	207.2	966.8	44775.8
+18954	26	26	0	Michigan	238350	Finish carpentry contractors	23	707.2	3291.2	141232.4
+18955	26	26	0	Michigan	238390	Other building finishing contractors	23	191.4	1230.4	51513.8
+18956	26	26	0	Michigan	238910	Site preparation contractors	23	1076.4	6284.6	407111.4
+18957	26	26	0	Michigan	238990	All other specialty trade contractors	23	819.2	3674.4	272184.2
+18958	26	26	0	Michigan	311111	Dog and cat food manufacturing	31	6.4	52.0	1929.0
+18959	26	26	0	Michigan	311119	Other animal food manufacturing	31	26.6	351.6	16911.0
+18960	26	26	0	Michigan	311211	Flour milling	31	9.6	548.8	34220.6
+18961	26	26	0	Michigan	311224	Soybean and other oilseed processing	31	2.2	0.0	0.0
+18962	26	26	0	Michigan	311225	Fats and oils refining and blending	31	1.0	0.0	0.0
+18963	26	26	0	Michigan	311230	Breakfast cereal manufacturing	31	5.2	595.6	45552.2
+18964	26	26	0	Michigan	311313	Beet sugar manufacturing	31	4.0	0.0	0.0
+18965	26	26	0	Michigan	311314	Cane sugar manufacturing	31	1.0	0.0	0.0
+18966	26	26	0	Michigan	311340	Nonchocolate confectionery manufacturing	31	14.2	153.4	7815.2
+18967	26	26	0	Michigan	311351	Chocolate and confectionery manufacturing from cacao beans	31	6.8	12.0	227.8
+18968	26	26	0	Michigan	311352	Confectionery manufacturing from purchased chocolate	31	48.6	229.2	6600.6
+18969	26	26	0	Michigan	311411	Frozen fruit, juice, and vegetable manufacturing	31	12.8	860.4	32771.2
+18970	26	26	0	Michigan	311412	Frozen specialty food manufacturing	31	15.8	1316.2	57480.8
+18971	26	26	0	Michigan	311421	Fruit and vegetable canning	31	37.8	2408.8	94183.4
+18972	26	26	0	Michigan	311422	Specialty canning	31	4.4	13.8	717.0
+18973	26	26	0	Michigan	311423	Dried and dehydrated food manufacturing	31	6.2	443.2	15732.0
+18974	26	26	0	Michigan	311511	Fluid milk manufacturing	31	12.0	578.0	30743.0
+18975	26	26	0	Michigan	311512	Creamery butter manufacturing	31	1.0	0.0	0.0
+18976	26	26	0	Michigan	311513	Cheese manufacturing	31	11.2	249.0	12797.0
+18977	26	26	0	Michigan	311514	Dry, condensed, and evaporated dairy product manufacturing	31	9.6	1483.6	87331.6
+18978	26	26	0	Michigan	311520	Ice cream and frozen dessert manufacturing	31	11.2	76.6	3294.8
+18979	26	26	0	Michigan	311611	Animal (except poultry) slaughtering	31	39.2	1810.8	67614.0
+18980	26	26	0	Michigan	311612	Meat processed from carcasses	31	34.6	1536.2	64141.2
+18981	26	26	0	Michigan	311613	Rendering and meat byproduct processing	31	4.8	131.0	7326.2
+18982	26	26	0	Michigan	311615	Poultry processing	31	7.0	2056.0	81747.0
+18983	26	26	0	Michigan	311710	Seafood product preparation and packaging	31	5.6	6.6	576.8
+18984	26	26	0	Michigan	311811	Retail bakeries	31	225.0	1833.2	31031.0
+18985	26	26	0	Michigan	311812	Commercial bakeries	31	79.4	2898.2	121346.2
+18986	26	26	0	Michigan	311813	Frozen cakes, pies, and other pastries manufacturing	31	6.8	0.0	0.0
+18987	26	26	0	Michigan	311821	Cookie and cracker manufacturing	31	7.4	0.0	0.0
+18988	26	26	0	Michigan	311824	Dry pasta, dough, and flour mixes manufacturing from purchased flour	31	21.8	373.2	14588.8
+18989	26	26	0	Michigan	311830	Tortilla manufacturing	31	6.2	167.0	4118.0
+18990	26	26	0	Michigan	311911	Roasted nuts and peanut butter manufacturing	31	4.6	55.4	3020.4
+18991	26	26	0	Michigan	311919	Other snack food manufacturing	31	16.2	349.2	13269.4
+18992	26	26	0	Michigan	311920	Coffee and tea manufacturing	31	15.0	245.8	10640.6
+18993	26	26	0	Michigan	311930	Flavoring syrup and concentrate manufacturing	31	4.0	44.4	1950.8
+18994	26	26	0	Michigan	311941	Mayonnaise, dressing, and other prepared sauce manufacturing	31	10.8	229.6	8550.0
+18995	26	26	0	Michigan	311942	Spice and extract manufacturing	31	7.2	142.6	12282.4
+18996	26	26	0	Michigan	311991	Perishable prepared food manufacturing	31	21.6	315.4	8444.8
+18997	26	26	0	Michigan	311999	All other miscellaneous food manufacturing	31	22.4	1481.4	66355.4
+18998	26	26	0	Michigan	312111	Soft drink manufacturing	31	10.8	2066.0	105522.0
+18999	26	26	0	Michigan	312112	Bottled water manufacturing	31	8.4	192.4	15906.4
+19000	26	26	0	Michigan	312113	Ice manufacturing	31	12.0	43.8	2123.4
+19001	26	26	0	Michigan	312120	Breweries	31	68.0	1233.8	42213.0
+19002	26	26	0	Michigan	312130	Wineries	31	76.4	566.6	18118.2
+19003	26	26	0	Michigan	312140	Distilleries	31	14.8	74.2	2443.2
+19004	26	26	0	Michigan	312230	Tobacco manufacturing	31	1.6	0.6	6.2
+19005	26	26	0	Michigan	313110	Fiber, yarn, and thread mills	31	2.0	9.6	235.0
+19006	26	26	0	Michigan	313210	Broadwoven fabric mills	31	3.4	14.4	727.4
+19007	26	26	0	Michigan	313220	Narrow fabric mills and schiffli machine embroidery	31	2.6	6.4	212.0
+19008	26	26	0	Michigan	313230	Nonwoven fabric mills	31	3.4	266.2	11033.0
+19009	26	26	0	Michigan	313240	Knit fabric mills	31	3.8	5.8	286.6
+19010	26	26	0	Michigan	313310	Textile and fabric finishing mills	31	13.2	71.8	2009.6
+19011	26	26	0	Michigan	313320	Fabric coating mills	31	6.0	102.4	4773.8
+19012	26	26	0	Michigan	314110	Carpet and rug mills	31	9.2	259.8	15616.6
+19013	26	26	0	Michigan	314120	Curtain and linen mills	31	31.2	160.4	4425.8
+19014	26	26	0	Michigan	314910	Textile bag and canvas mills	31	49.0	665.4	21391.8
+19015	26	26	0	Michigan	314994	Rope, cordage, twine, tire cord, and tire fabric mills	31	3.0	0.0	0.0
+19016	26	26	0	Michigan	314999	All other miscellaneous textile product mills	31	88.6	517.8	14392.6
+19017	26	26	0	Michigan	315110	Hosiery and sock mills	31	1.8	0.0	202.0
+19018	26	26	0	Michigan	315190	Other apparel knitting mills	31	1.8	0.0	0.0
+19019	26	26	0	Michigan	315210	Cut and sew apparel contractors	31	27.8	155.2	3498.6
+19020	26	26	0	Michigan	315220	Men's and boys' cut and sew apparel manufacturing	31	6.8	12.8	758.8
+19021	26	26	0	Michigan	315240	Women's, girls', and infants' cut and sew apparel manufacturing	31	8.8	59.0	1524.2
+19022	26	26	0	Michigan	315280	Other cut and sew apparel manufacturing	31	7.0	41.0	970.0
+19023	26	26	0	Michigan	315990	Apparel accessories and other apparel manufacturing	31	11.8	19.4	543.2
+19024	26	26	0	Michigan	316110	Leather and hide tanning and finishing	31	5.0	25.6	1270.6
+19025	26	26	0	Michigan	316210	Footwear manufacturing	31	1.8	0.0	0.0
+19026	26	26	0	Michigan	316992	Women's handbag and purse manufacturing	31	1.3333333333333333	0.0	0.0
+19027	26	26	0	Michigan	316998	All other leather good and allied product manufacturing	31	5.8	5.2	224.2
+19028	26	26	0	Michigan	321113	Sawmills	32	97.4	1719.6	61737.6
+19029	26	26	0	Michigan	321114	Wood preservation	32	11.8	158.0	6173.0
+19030	26	26	0	Michigan	321211	Hardwood veneer and plywood manufacturing	32	10.0	601.0	24539.2
+19031	26	26	0	Michigan	321212	Softwood veneer and plywood manufacturing	32	4.0	0.0	0.0
+19032	26	26	0	Michigan	321213	Engineered wood member (except truss) manufacturing	32	1.4	0.0	0.0
+19033	26	26	0	Michigan	321214	Truss manufacturing	32	19.0	630.6	29348.4
+19034	26	26	0	Michigan	321219	Reconstituted wood product manufacturing	32	7.6	703.4	49032.4
+19035	26	26	0	Michigan	321911	Wood window and door manufacturing	32	30.4	632.0	25531.4
+19036	26	26	0	Michigan	321912	Cut stock, resawing lumber, and planing	32	43.0	1002.0	40913.4
+19037	26	26	0	Michigan	321918	Other millwork (including flooring)	32	51.4	934.0	36910.8
+19038	26	26	0	Michigan	321920	Wood container and pallet manufacturing	32	86.2	1947.6	67980.4
+19039	26	26	0	Michigan	321991	Manufactured home (mobile home) manufacturing	32	4.8	30.6	2830.8
+19040	26	26	0	Michigan	321992	Prefabricated wood building manufacturing	32	11.2	284.0	11822.6
+19041	26	26	0	Michigan	321999	All other miscellaneous wood product manufacturing	32	73.2	723.2	24923.2
+19042	26	26	0	Michigan	322110	Pulp mills	32	2.2	0.0	0.0
+19043	26	26	0	Michigan	322121	Paper (except newsprint) mills	32	10.2	1852.8	141906.2
+19044	26	26	0	Michigan	322122	Newsprint mills	32	1.0	0.0	0.0
+19045	26	26	0	Michigan	322130	Paperboard mills	32	9.6	1343.6	96964.8
+19046	26	26	0	Michigan	322211	Corrugated and solid fiber box manufacturing	32	55.0	2964.8	153178.2
+19047	26	26	0	Michigan	322212	Folding paperboard box manufacturing	32	18.2	1407.0	71258.0
+19048	26	26	0	Michigan	322219	Other paperboard container manufacturing	32	12.8	1120.8	35461.2
+19049	26	26	0	Michigan	322220	Paper bag and coated and treated paper manufacturing	32	23.4	933.2	43341.6
+19050	26	26	0	Michigan	322230	Stationery product manufacturing	32	13.8	329.8	12245.0
+19051	26	26	0	Michigan	322291	Sanitary paper product manufacturing	32	1.0	0.0	0.0
+19052	26	26	0	Michigan	322299	All other converted paper product manufacturing	32	11.4	296.8	13866.6
+19053	26	26	0	Michigan	323111	Commercial printing (except screen and books)	32	590.4	10114.0	472616.0
+19054	26	26	0	Michigan	323113	Commercial screen printing	32	164.0	1691.6	60813.2
+19055	26	26	0	Michigan	323117	Books printing	32	20.4	1529.4	63545.0
+19056	26	26	0	Michigan	323120	Support activities for printing	32	65.2	319.4	17758.6
+19057	26	26	0	Michigan	324110	Petroleum refineries	32	2.6	0.0	0.0
+19058	26	26	0	Michigan	324121	Asphalt paving mixture and block manufacturing	32	20.2	222.8	14651.8
+19059	26	26	0	Michigan	324122	Asphalt shingle and coating materials manufacturing	32	6.6	73.4	4273.8
+19060	26	26	0	Michigan	324191	Petroleum lubricating oil and grease manufacturing	32	19.0	431.8	28173.4
+19061	26	26	0	Michigan	324199	All other petroleum and coal products manufacturing	32	2.6	0.0	0.0
+19062	26	26	0	Michigan	325110	Petrochemical manufacturing	32	1.6	0.0	0.0
+19063	26	26	0	Michigan	325120	Industrial gas manufacturing	32	9.6	101.0	6101.6
+19064	26	26	0	Michigan	325130	Synthetic dye and pigment manufacturing	32	3.0	0.0	0.0
+19065	26	26	0	Michigan	325180	Other basic inorganic chemical manufacturing	32	19.6	1709.2	133036.4
+19066	26	26	0	Michigan	325193	Ethyl alcohol manufacturing	32	4.4	54.8	3804.4
+19067	26	26	0	Michigan	325194	Cyclic crude, intermediate, and gum and wood chemical manufacturing	32	1.6	0.0	0.0
+19068	26	26	0	Michigan	325199	All other basic organic chemical manufacturing	32	26.6	2428.8	236465.0
+19069	26	26	0	Michigan	325211	Plastics material and resin manufacturing	32	59.8	3738.8	259120.6
+19070	26	26	0	Michigan	325212	Synthetic rubber manufacturing	32	5.6	137.0	12568.2
+19071	26	26	0	Michigan	325220	Artificial and synthetic fibers and filaments manufacturing	32	2.2	0.0	0.0
+19072	26	26	0	Michigan	325311	Nitrogenous fertilizer manufacturing	32	2.2	0.0	0.0
+19073	26	26	0	Michigan	325314	Fertilizer (mixing only) manufacturing	32	9.6	238.0	14475.2
+19074	26	26	0	Michigan	325320	Pesticide and other agricultural chemical manufacturing	32	3.6	0.0	0.0
+19075	26	26	0	Michigan	325411	Medicinal and botanical manufacturing	32	7.8	361.8	22562.6
+19076	26	26	0	Michigan	325412	Pharmaceutical preparation manufacturing	32	29.2	6562.0	457229.0
+19077	26	26	0	Michigan	325413	In-vitro diagnostic substance manufacturing	32	7.0	246.2	26748.2
+19078	26	26	0	Michigan	325414	Biological product (except diagnostic) manufacturing	32	3.8	0.0	0.0
+19079	26	26	0	Michigan	325510	Paint and coating manufacturing	32	45.4	2444.6	150405.8
+19080	26	26	0	Michigan	325520	Adhesive manufacturing	32	23.8	1587.0	120990.4
+19081	26	26	0	Michigan	325611	Soap and other detergent manufacturing	32	20.4	205.0	12100.6
+19082	26	26	0	Michigan	325612	Polish and other sanitation good manufacturing	32	14.0	157.4	11987.8
+19083	26	26	0	Michigan	325613	Surface active agent manufacturing	32	1.4	3.6	179.4
+19084	26	26	0	Michigan	325620	Toilet preparation manufacturing	32	12.6	894.4	55210.2
+19085	26	26	0	Michigan	325910	Printing ink manufacturing	32	8.6	98.4	5497.0
+19086	26	26	0	Michigan	325920	Explosives manufacturing	32	1.8	0.0	0.0
+19087	26	26	0	Michigan	325991	Custom compounding of purchased resins	32	22.4	1140.0	83647.0
+19088	26	26	0	Michigan	325992	Photographic film, paper, plate, and chemical manufacturing	32	6.8	94.0	1073.0
+19089	26	26	0	Michigan	325998	All other miscellaneous chemical product and preparation manufacturing	32	29.8	1699.6	108789.2
+19090	26	26	0	Michigan	326111	Plastics bag and pouch manufacturing	32	8.0	233.4	15731.8
+19091	26	26	0	Michigan	326112	Plastics packaging film and sheet (including laminated) manufacturing	32	8.6	454.0	26193.6
+19092	26	26	0	Michigan	326113	Unlaminated plastics film and sheet (except packaging) manufacturing	32	18.6	606.2	38470.6
+19093	26	26	0	Michigan	326121	Unlaminated plastics profile shape manufacturing	32	18.6	1063.2	48812.2
+19094	26	26	0	Michigan	326122	Plastics pipe and pipe fitting manufacturing	32	12.2	1012.2	40549.2
+19095	26	26	0	Michigan	326130	Laminated plastics plate, sheet (except packaging), and shape manufacturing	32	11.2	383.2	20708.0
+19096	26	26	0	Michigan	326140	Polystyrene foam product manufacturing	32	22.2	1118.2	53508.2
+19097	26	26	0	Michigan	326150	Urethane and other foam product (except polystyrene) manufacturing	32	33.0	2279.2	93856.8
+19098	26	26	0	Michigan	326160	Plastics bottle manufacturing	32	5.4	473.2	23356.4
+19099	26	26	0	Michigan	326191	Plastics plumbing fixture manufacturing	32	19.6	844.4	34753.2
+19100	26	26	0	Michigan	326199	All other plastics product manufacturing	32	395.0	34056.0	1412065.4
+19101	26	26	0	Michigan	326211	Tire manufacturing (except retreading)	32	1.2	0.0	0.0
+19102	26	26	0	Michigan	326212	Tire retreading	32	9.4	131.4	5638.8
+19103	26	26	0	Michigan	326220	Rubber and plastics hoses and belting manufacturing	32	13.6	1511.4	75065.6
+19104	26	26	0	Michigan	326291	Rubber product manufacturing for mechanical use	32	30.4	2474.4	110356.2
+19105	26	26	0	Michigan	326299	All other rubber product manufacturing	32	26.0	777.6	43157.6
+19106	26	26	0	Michigan	327110	Pottery, ceramics, and plumbing fixture manufacturing	32	17.2	260.2	9290.2
+19107	26	26	0	Michigan	327120	Clay building material and refractories manufacturing	32	12.8	294.8	14767.0
+19108	26	26	0	Michigan	327211	Flat glass manufacturing	32	1.0	0.0	0.0
+19109	26	26	0	Michigan	327212	Other pressed and blown glass and glassware manufacturing	32	2.2	0.0	0.0
+19110	26	26	0	Michigan	327213	Glass container manufacturing	32	2.2	0.0	0.0
+19111	26	26	0	Michigan	327215	Glass product manufacturing made of purchased glass	32	40.4	6630.2	315150.0
+19112	26	26	0	Michigan	327310	Cement manufacturing	32	8.4	170.6	12847.4
+19113	26	26	0	Michigan	327320	Ready-mix concrete manufacturing	32	172.0	1566.2	105726.0
+19114	26	26	0	Michigan	327331	Concrete block and brick manufacturing	32	22.0	330.2	19758.8
+19115	26	26	0	Michigan	327332	Concrete pipe manufacturing	32	12.6	155.6	17533.8
+19116	26	26	0	Michigan	327390	Other concrete product manufacturing	32	52.4	530.8	28919.4
+19117	26	26	0	Michigan	327410	Lime manufacturing	32	2.0	0.0	0.0
+19118	26	26	0	Michigan	327420	Gypsum product manufacturing	32	7.8	257.2	12876.6
+19119	26	26	0	Michigan	327910	Abrasive product manufacturing	32	32.0	709.8	40504.6
+19120	26	26	0	Michigan	327991	Cut stone and stone product manufacturing	32	39.4	494.0	22813.4
+19121	26	26	0	Michigan	327992	Ground or treated mineral and earth manufacturing	32	7.6	69.8	4713.8
+19122	26	26	0	Michigan	327993	Mineral wool manufacturing	32	6.0	423.0	15370.0
+19123	26	26	0	Michigan	327999	All other miscellaneous nonmetallic mineral product manufacturing	32	13.2	120.4	6293.6
+19124	26	26	0	Michigan	331110	Iron and steel mills and ferroalloy manufacturing	33	24.4	5308.4	423812.8
+19125	26	26	0	Michigan	331210	Iron and steel pipe and tube manufacturing from purchased steel	33	12.8	732.4	39840.6
+19126	26	26	0	Michigan	331221	Rolled steel shape manufacturing	33	12.8	575.4	35419.4
+19127	26	26	0	Michigan	331222	Steel wire drawing	33	10.2	323.8	15514.6
+19128	26	26	0	Michigan	331313	Alumina refining and primary aluminum production	33	2.2	0.0	0.0
+19129	26	26	0	Michigan	331314	Secondary smelting and alloying of aluminum	33	6.2	118.0	6781.8
+19130	26	26	0	Michigan	331315	Aluminum sheet, plate, and foil manufacturing	33	4.6	58.2	2659.4
+19131	26	26	0	Michigan	331318	Other aluminum rolling, drawing, and extruding	33	17.2	2032.8	90924.4
+19132	26	26	0	Michigan	331410	Nonferrous metal (except aluminum) smelting and refining	33	6.2	0.0	0.0
+19133	26	26	0	Michigan	331420	Copper rolling, drawing, extruding, and alloying	33	7.8	562.6	27552.8
+19134	26	26	0	Michigan	331491	Nonferrous metal (except copper and aluminum) rolling, drawing, extruding, and alloying	33	8.4	131.0	6989.4
+19135	26	26	0	Michigan	331492	Secondary smelting, refining, and alloying of nonferrous metal (except copper and aluminum)	33	12.2	448.2	22572.8
+19136	26	26	0	Michigan	331511	Iron foundries	33	29.6	2918.2	158858.8
+19137	26	26	0	Michigan	331512	Steel investment foundries	33	10.8	1605.4	92646.4
+19138	26	26	0	Michigan	331513	Steel foundries (except investment)	33	19.8	1289.6	51832.4
+19139	26	26	0	Michigan	331523	Nonferrous metal die-casting foundries	33	41.6	2945.4	149723.8
+19140	26	26	0	Michigan	331524	Aluminum foundries (except die-casting)	33	20.0	630.4	26393.2
+19141	26	26	0	Michigan	331529	Other nonferrous metal foundries (except die-casting)	33	15.6	416.4	25915.8
+19142	26	26	0	Michigan	332111	Iron and steel forging	33	32.0	1913.0	103709.8
+19143	26	26	0	Michigan	332112	Nonferrous forging	33	6.2	582.2	26852.8
+19144	26	26	0	Michigan	332114	Custom roll forming	33	26.4	1012.0	55419.6
+19145	26	26	0	Michigan	332117	Powder metallurgy part manufacturing	33	3.0	43.2	1553.2
+19146	26	26	0	Michigan	332119	Metal crown, closure, and other metal stamping (except automotive)	33	79.0	2378.8	123430.6
+19147	26	26	0	Michigan	332215	Metal kitchen cookware, utensil, cutlery, and flatware (except precious) manufacturing	33	4.4	9.6	275.6
+19148	26	26	0	Michigan	332216	Saw blade and handtool manufacturing	33	82.6	2162.8	137070.6
+19149	26	26	0	Michigan	332311	Prefabricated metal building and component manufacturing	33	18.0	309.4	15163.4
+19150	26	26	0	Michigan	332312	Fabricated structural metal manufacturing	33	103.4	1171.8	60741.8
+19151	26	26	0	Michigan	332313	Plate work manufacturing	33	75.0	2114.2	112546.0
+19152	26	26	0	Michigan	332321	Metal window and door manufacturing	33	22.8	710.0	26655.8
+19153	26	26	0	Michigan	332322	Sheet metal work manufacturing	33	135.2	2885.0	151010.2
+19154	26	26	0	Michigan	332323	Ornamental and architectural metal work manufacturing	33	54.0	728.4	33279.0
+19155	26	26	0	Michigan	332410	Power boiler and heat exchanger manufacturing	33	7.4	220.8	13687.6
+19156	26	26	0	Michigan	332420	Metal tank (heavy gauge) manufacturing	33	15.0	280.4	14618.2
+19157	26	26	0	Michigan	332439	Other metal container manufacturing	33	13.8	465.0	18766.0
+19158	26	26	0	Michigan	332510	Hardware manufacturing	33	34.2	2125.0	103836.0
+19159	26	26	0	Michigan	332613	Spring manufacturing	33	32.6	1282.2	57428.8
+19160	26	26	0	Michigan	332618	Other fabricated wire product manufacturing	33	34.8	669.4	30901.4
+19161	26	26	0	Michigan	332710	Machine shops	33	1022.8	15327.4	753166.4
+19162	26	26	0	Michigan	332721	Precision turned product manufacturing	33	317.0	12148.0	591037.6
+19163	26	26	0	Michigan	332722	Bolt, nut, screw, rivet, and washer manufacturing	33	66.4	3017.0	175730.2
+19164	26	26	0	Michigan	332811	Metal heat treating	33	111.2	3245.4	168888.0
+19165	26	26	0	Michigan	332812	Metal coating, engraving (except jewelry and silverware), and allied services to manufacturers	33	161.0	3965.8	165111.8
+19166	26	26	0	Michigan	332813	Electroplating, plating, polishing, anodizing, and coloring	33	161.2	5127.0	210728.8
+19167	26	26	0	Michigan	332911	Industrial valve manufacturing	33	19.8	836.6	42065.0
+19168	26	26	0	Michigan	332912	Fluid power valve and hose fitting manufacturing	33	30.0	3500.0	190476.0
+19169	26	26	0	Michigan	332913	Plumbing fixture fitting and trim manufacturing	33	2.4	24.8	1022.6
+19170	26	26	0	Michigan	332919	Other metal valve and pipe fitting manufacturing	33	13.4	533.2	25972.2
+19171	26	26	0	Michigan	332991	Ball and roller bearing manufacturing	33	4.0	0.0	0.0
+19172	26	26	0	Michigan	332992	Small arms ammunition manufacturing	33	2.4	2.4	57.6
+19173	26	26	0	Michigan	332993	Ammunition (except small arms) manufacturing	33	3.2	1.8	172.6
+19174	26	26	0	Michigan	332994	Small arms, ordnance, and ordnance accessories manufacturing	33	9.6	70.6	2588.4
+19175	26	26	0	Michigan	332996	Fabricated pipe and pipe fitting manufacturing	33	41.0	2224.6	101954.2
+19176	26	26	0	Michigan	332999	All other miscellaneous fabricated metal product manufacturing	33	223.2	4147.0	192978.4
+19177	26	26	0	Michigan	333111	Farm machinery and equipment manufacturing	33	23.6	813.4	35851.6
+19178	26	26	0	Michigan	333112	Lawn and garden tractor and home lawn and garden equipment manufacturing	33	8.6	23.2	1170.2
+19179	26	26	0	Michigan	333120	Construction machinery manufacturing	33	31.4	801.6	67421.4
+19180	26	26	0	Michigan	333131	Mining machinery and equipment manufacturing	33	5.8	456.6	22240.8
+19181	26	26	0	Michigan	333132	Oil and gas field machinery and equipment manufacturing	33	3.4	5.0	433.4
+19182	26	26	0	Michigan	333241	Food product machinery manufacturing	33	14.2	234.2	14033.0
+19183	26	26	0	Michigan	333242	Semiconductor machinery manufacturing	33	1.4	0.0	0.0
+19184	26	26	0	Michigan	333243	Sawmill, woodworking, and paper machinery manufacturing	33	12.4	100.6	7742.4
+19185	26	26	0	Michigan	333244	Printing machinery and equipment manufacturing	33	10.6	152.4	7132.2
+19186	26	26	0	Michigan	333249	Other industrial machinery manufacturing	33	167.6	3817.4	254218.2
+19187	26	26	0	Michigan	333314	Optical instrument and lens manufacturing	33	12.6	183.0	19532.6
+19188	26	26	0	Michigan	333316	Photographic and photocopying equipment manufacturing	33	3.4	7.4	205.6
+19189	26	26	0	Michigan	333318	Other commercial and service industry machinery manufacturing	33	52.4	1233.2	72761.8
+19190	26	26	0	Michigan	333413	Industrial and commercial fan and blower and air purification equipment manufacturing	33	29.2	730.2	40327.0
+19191	26	26	0	Michigan	333414	Heating equipment (except warm air furnaces) manufacturing	33	16.6	305.6	17593.4
+19192	26	26	0	Michigan	333415	Air-conditioning and warm air heating equipment and commercial and industrial refrigeration equipment manufacturing	33	36.0	2680.8	137616.0
+19193	26	26	0	Michigan	333511	Industrial mold manufacturing	33	216.0	6805.8	409754.8
+19194	26	26	0	Michigan	333514	Special die and tool, die set, jig, and fixture manufacturing	33	478.8	13893.4	893468.4
+19195	26	26	0	Michigan	333515	Cutting tool and machine tool accessory manufacturing	33	227.6	4757.2	278204.8
+19196	26	26	0	Michigan	333517	Machine tool manufacturing	33	140.0	3457.2	219055.0
+19197	26	26	0	Michigan	333519	Rolling mill and other metalworking machinery manufacturing	33	63.0	3327.6	260512.6
+19198	26	26	0	Michigan	333611	Turbine and turbine generator set units manufacturing	33	4.2	110.4	6649.4
+19199	26	26	0	Michigan	333612	Speed changer, industrial high-speed drive, and gear manufacturing	33	14.6	734.8	44229.8
+19200	26	26	0	Michigan	333613	Mechanical power transmission equipment manufacturing	33	18.4	865.4	40173.2
+19201	26	26	0	Michigan	333618	Other engine equipment manufacturing	33	26.6	4253.0	284684.2
+19202	26	26	0	Michigan	333911	Pump and pumping equipment manufacturing	33	19.0	1159.6	74974.4
+19203	26	26	0	Michigan	333912	Air and gas compressor manufacturing	33	16.4	637.4	37525.4
+19204	26	26	0	Michigan	333913	Measuring and dispensing pump manufacturing	33	3.2	52.8	4330.4
+19205	26	26	0	Michigan	333921	Elevator and moving stairway manufacturing	33	3.2	84.4	5892.0
+19206	26	26	0	Michigan	333922	Conveyor and conveying equipment manufacturing	33	74.4	4346.0	295990.2
+19207	26	26	0	Michigan	333923	Overhead traveling crane, hoist, and monorail system manufacturing	33	15.6	253.2	18096.0
+19208	26	26	0	Michigan	333924	Industrial truck, trailer, and stacker machinery manufacturing	33	21.6	674.6	33073.6
+19209	26	26	0	Michigan	333991	Power-driven handtool manufacturing	33	10.0	192.0	10784.0
+19210	26	26	0	Michigan	333992	Welding and soldering equipment manufacturing	33	43.6	2193.6	169910.8
+19211	26	26	0	Michigan	333993	Packaging machinery manufacturing	33	15.4	370.0	22561.8
+19212	26	26	0	Michigan	333994	Industrial process furnace and oven manufacturing	33	30.8	741.0	50496.0
+19213	26	26	0	Michigan	333995	Fluid power cylinder and actuator manufacturing	33	23.4	1923.6	127407.8
+19214	26	26	0	Michigan	333996	Fluid power pump and motor manufacturing	33	11.0	593.8	35662.4
+19215	26	26	0	Michigan	333997	Scale and balance manufacturing	33	1.8	0.0	0.0
+19216	26	26	0	Michigan	333999	All other miscellaneous general purpose machinery manufacturing	33	148.8	5174.6	384406.2
+19217	26	26	0	Michigan	334111	Electronic computer manufacturing	33	13.2	128.8	10025.4
+19218	26	26	0	Michigan	334112	Computer storage device manufacturing	33	1.0	0.0	0.0
+19219	26	26	0	Michigan	334118	Computer terminal and other computer peripheral equipment manufacturing	33	13.8	299.0	21021.8
+19220	26	26	0	Michigan	334210	Telephone apparatus manufacturing	33	4.8	31.4	1704.2
+19221	26	26	0	Michigan	334220	Radio and television broadcasting and wireless communications equipment manufacturing	33	11.4	465.8	23310.6
+19222	26	26	0	Michigan	334290	Other communications equipment manufacturing	33	10.4	366.0	22489.2
+19223	26	26	0	Michigan	334310	Audio and video equipment manufacturing	33	9.0	35.6	1941.8
+19224	26	26	0	Michigan	334412	Bare printed circuit board manufacturing	33	11.4	845.6	30416.4
+19225	26	26	0	Michigan	334413	Semiconductor and related device manufacturing	33	13.8	315.2	15008.2
+19226	26	26	0	Michigan	334416	Capacitor, resistor, coil, transformer, and other inductor manufacturing	33	9.0	134.6	5945.8
+19227	26	26	0	Michigan	334417	Electronic connector manufacturing	33	4.2	47.8	2311.4
+19228	26	26	0	Michigan	334418	Printed circuit assembly (electronic assembly) manufacturing	33	26.8	2207.0	118696.6
+19229	26	26	0	Michigan	334419	Other electronic component manufacturing	33	25.8	580.2	32575.2
+19230	26	26	0	Michigan	334510	Electromedical and electrotherapeutic apparatus manufacturing	33	14.6	652.8	59734.6
+19231	26	26	0	Michigan	334511	Search, detection, navigation, guidance, aeronautical, and nautical system and instrument manufacturing	33	11.2	2385.4	207196.0
+19232	26	26	0	Michigan	334512	Automatic environmental control manufacturing for residential, commercial, and appliance use	33	10.0	77.4	4713.4
+19233	26	26	0	Michigan	334513	Instruments and related products manufacturing for measuring, displaying, and controlling industrial process variables	33	35.0	698.4	53609.4
+19234	26	26	0	Michigan	334514	Totalizing fluid meter and counting device manufacturing	33	9.6	256.6	11027.8
+19235	26	26	0	Michigan	334515	Instrument manufacturing for measuring and testing electricity and electrical systems	33	45.0	905.2	58463.4
+19236	26	26	0	Michigan	334516	Analytical laboratory instrument manufacturing	33	15.2	1312.0	95450.6
+19237	26	26	0	Michigan	334517	Irradiation apparatus manufacturing	33	1.2	0.0	0.0
+19238	26	26	0	Michigan	334519	Other measuring and controlling device manufacturing	33	47.4	1550.2	100064.2
+19239	26	26	0	Michigan	334613	Blank magnetic and optical recording media manufacturing	33	2.4	2.8	218.6
+19240	26	26	0	Michigan	334614	Software and other prerecorded compact disc, tape, and record reproducing	33	12.0	315.4	14972.0
+19241	26	26	0	Michigan	335110	Electric lamp bulb and part manufacturing	33	1.3333333333333333	0.0	0.0
+19242	26	26	0	Michigan	335121	Residential electric lighting fixture manufacturing	33	6.2	53.0	2816.2
+19243	26	26	0	Michigan	335122	Commercial, industrial, and institutional electric lighting fixture manufacturing	33	13.0	179.6	10800.0
+19244	26	26	0	Michigan	335129	Other lighting equipment manufacturing	33	8.2	150.8	7342.0
+19245	26	26	0	Michigan	335210	Small electrical appliance manufacturing	33	6.8	0.0	0.0
+19246	26	26	0	Michigan	335221	Household cooking appliance manufacturing	33	1.25	0.0	0.0
+19247	26	26	0	Michigan	335222	Household refrigerator and home freezer manufacturing	33	1.0	0.0	0.0
+19248	26	26	0	Michigan	335228	Other major household appliance manufacturing	33	1.6	0.0	0.0
+19249	26	26	0	Michigan	335311	Power, distribution, and specialty transformer manufacturing	33	6.4	176.0	8107.0
+19250	26	26	0	Michigan	335312	Motor and generator manufacturing	33	26.2	588.2	32649.2
+19251	26	26	0	Michigan	335313	Switchgear and switchboard apparatus manufacturing	33	26.2	819.2	40699.0
+19252	26	26	0	Michigan	335314	Relay and industrial control manufacturing	33	43.4	1062.4	63111.0
+19253	26	26	0	Michigan	335911	Storage battery manufacturing	33	5.4	367.4	29212.2
+19254	26	26	0	Michigan	335912	Primary battery manufacturing	33	5.2	0.0	0.0
+19255	26	26	0	Michigan	335921	Fiber optic cable manufacturing	33	1.0	0.0	0.0
+19256	26	26	0	Michigan	335929	Other communication and energy wire manufacturing	33	6.8	104.4	5318.6
+19257	26	26	0	Michigan	335931	Current-carrying wiring device manufacturing	33	18.8	1592.8	71049.2
+19258	26	26	0	Michigan	335932	Noncurrent-carrying wiring device manufacturing	33	5.0	20.4	748.6
+19259	26	26	0	Michigan	335991	Carbon and graphite product manufacturing	33	9.8	155.0	8265.0
+19260	26	26	0	Michigan	335999	All other miscellaneous electrical equipment and component manufacturing	33	33.6	578.0	36350.8
+19261	26	26	0	Michigan	336111	Automobile manufacturing	33	24.6	8668.6	712058.2
+19262	26	26	0	Michigan	336112	Light truck and utility vehicle manufacturing	33	6.4	17485.0	1426879.4
+19263	26	26	0	Michigan	336120	Heavy duty truck manufacturing	33	3.4	207.2	11312.6
+19264	26	26	0	Michigan	336211	Motor vehicle body manufacturing	33	27.4	1441.4	58428.8
+19265	26	26	0	Michigan	336212	Truck trailer manufacturing	33	10.8	401.2	16003.0
+19266	26	26	0	Michigan	336213	Motor home manufacturing	33	3.4	0.0	0.0
+19267	26	26	0	Michigan	336214	Travel trailer and camper manufacturing	33	19.8	743.0	30683.8
+19268	26	26	0	Michigan	336310	Motor vehicle gasoline engine and engine parts manufacturing	33	82.2	13061.2	868793.2
+19269	26	26	0	Michigan	336320	Motor vehicle electrical and electronic equipment manufacturing	33	48.8	4528.0	237018.6
+19270	26	26	0	Michigan	336330	Motor vehicle steering and suspension components (except spring) manufacturing	33	28.6	5201.8	307754.4
+19271	26	26	0	Michigan	336340	Motor vehicle brake system manufacturing	33	20.6	2023.8	118501.6
+19272	26	26	0	Michigan	336350	Motor vehicle transmission and power train parts manufacturing	33	56.4	12249.4	853272.0
+19273	26	26	0	Michigan	336360	Motor vehicle seating and interior trim manufacturing	33	58.6	11595.4	548835.8
+19274	26	26	0	Michigan	336370	Motor vehicle metal stamping	33	235.6	31293.6	1900207.4
+19275	26	26	0	Michigan	336390	Other motor vehicle parts manufacturing	33	162.6	23915.0	1203426.0
+19276	26	26	0	Michigan	336411	Aircraft manufacturing	33	7.8	197.4	10621.0
+19277	26	26	0	Michigan	336412	Aircraft engine and engine parts manufacturing	33	24.2	3579.0	235478.0
+19278	26	26	0	Michigan	336413	Other aircraft parts and auxiliary equipment manufacturing	33	20.0	761.4	44989.2
+19279	26	26	0	Michigan	336510	Railroad rolling stock manufacturing	33	5.4	106.8	6575.6
+19280	26	26	0	Michigan	336611	Ship building and repairing	33	6.0	39.4	2416.8
+19281	26	26	0	Michigan	336612	Boat building	33	24.0	1661.0	70408.0
+19282	26	26	0	Michigan	336991	Motorcycle, bicycle, and parts manufacturing	33	10.4	134.2	5459.6
+19283	26	26	0	Michigan	336992	Military armored vehicle, tank, and tank component manufacturing	33	16.6	1134.4	70214.8
+19284	26	26	0	Michigan	336999	All other transportation equipment manufacturing	33	22.6	581.0	31408.6
+19285	26	26	0	Michigan	337110	Wood kitchen cabinet and countertop manufacturing	33	118.0	981.2	35299.4
+19286	26	26	0	Michigan	337121	Upholstered household furniture manufacturing	33	33.0	267.2	9692.8
+19287	26	26	0	Michigan	337122	Nonupholstered wood household furniture manufacturing	33	52.2	403.8	12728.2
+19288	26	26	0	Michigan	337124	Metal household furniture manufacturing	33	7.8	315.4	10671.8
+19289	26	26	0	Michigan	337125	Household furniture (except wood and metal) manufacturing	33	3.8	0.0	0.0
+19290	26	26	0	Michigan	337127	Institutional furniture manufacturing	33	45.4	2815.8	145871.6
+19291	26	26	0	Michigan	337211	Wood office furniture manufacturing	33	20.2	1695.6	70784.6
+19292	26	26	0	Michigan	337212	Custom architectural woodwork and millwork manufacturing	33	51.4	817.4	38414.8
+19293	26	26	0	Michigan	337214	Office furniture (except wood) manufacturing	33	32.4	8710.6	535429.0
+19294	26	26	0	Michigan	337215	Showcase, partition, shelving, and locker manufacturing	33	46.2	2442.8	125246.2
+19295	26	26	0	Michigan	337910	Mattress manufacturing	33	9.4	147.0	7442.6
+19296	26	26	0	Michigan	337920	Blind and shade manufacturing	33	5.8	38.2	1375.0
+19297	26	26	0	Michigan	339112	Surgical and medical instrument manufacturing	33	40.6	2813.2	156159.0
+19298	26	26	0	Michigan	339113	Surgical appliance and supplies manufacturing	33	62.2	3280.6	226412.2
+19299	26	26	0	Michigan	339114	Dental equipment and supplies manufacturing	33	23.4	224.6	15489.2
+19300	26	26	0	Michigan	339115	Ophthalmic goods manufacturing	33	23.2	305.8	11530.0
+19301	26	26	0	Michigan	339116	Dental laboratories	33	193.4	1361.6	52532.6
+19302	26	26	0	Michigan	339910	Jewelry and silverware manufacturing	33	29.4	66.2	2344.0
+19303	26	26	0	Michigan	339920	Sporting and athletic goods manufacturing	33	59.2	515.4	17861.2
+19304	26	26	0	Michigan	339930	Doll, toy, and game manufacturing	33	21.8	342.2	11138.0
+19305	26	26	0	Michigan	339940	Office supplies (except paper) manufacturing	33	19.8	257.8	12317.8
+19306	26	26	0	Michigan	339950	Sign manufacturing	33	167.6	2022.6	98999.6
+19307	26	26	0	Michigan	339991	Gasket, packing, and sealing device manufacturing	33	20.4	365.6	18364.8
+19308	26	26	0	Michigan	339992	Musical instrument manufacturing	33	15.6	104.2	3903.8
+19309	26	26	0	Michigan	339993	Fastener, button, needle, and pin manufacturing	33	7.0	47.2	3572.8
+19310	26	26	0	Michigan	339994	Broom, brush, and mop manufacturing	33	6.8	222.2	10137.8
+19311	26	26	0	Michigan	339995	Burial casket manufacturing	33	5.6	9.8	1149.8
+19312	26	26	0	Michigan	339999	All other miscellaneous manufacturing	33	252.0	2219.8	100297.2
+19313	26	26	0	Michigan	423110	Automobile and other motor vehicle merchant wholesalers	42	213.8	3839.0	311951.0
+19314	26	26	0	Michigan	423120	Motor vehicle supplies and new parts merchant wholesalers	42	713.4	21734.2	1677868.2
+19315	26	26	0	Michigan	423130	Tire and tube merchant wholesalers	42	58.2	795.6	38268.2
+19316	26	26	0	Michigan	423140	Motor vehicle parts (used) merchant wholesalers	42	67.8	800.4	32890.4
+19317	26	26	0	Michigan	423210	Furniture merchant wholesalers	42	143.8	1718.0	95265.4
+19318	26	26	0	Michigan	423220	Home furnishing merchant wholesalers	42	118.2	1122.8	59095.4
+19319	26	26	0	Michigan	423310	Lumber, plywood, millwork, and wood panel merchant wholesalers	42	177.8	2914.8	166946.0
+19320	26	26	0	Michigan	423320	Brick, stone, and related construction material merchant wholesalers	42	86.4	773.4	42534.8
+19321	26	26	0	Michigan	423330	Roofing, siding, and insulation material merchant wholesalers	42	66.2	1008.8	66606.0
+19322	26	26	0	Michigan	423390	Other construction material merchant wholesalers	42	89.6	1095.8	68266.8
+19323	26	26	0	Michigan	423410	Photographic equipment and supplies merchant wholesalers	42	13.0	328.6	22330.8
+19324	26	26	0	Michigan	423420	Office equipment merchant wholesalers	42	238.4	2935.2	151517.6
+19325	26	26	0	Michigan	423430	Computer and computer peripheral equipment and software merchant wholesalers	42	213.0	3861.2	397398.6
+19326	26	26	0	Michigan	423440	Other commercial equipment merchant wholesalers	42	98.6	1061.6	57548.8
+19327	26	26	0	Michigan	423450	Medical, dental, and hospital equipment and supplies merchant wholesalers	42	226.2	3657.4	373532.2
+19328	26	26	0	Michigan	423460	Ophthalmic goods merchant wholesalers	42	21.6	218.2	12905.8
+19329	26	26	0	Michigan	423490	Other professional equipment and supplies merchant wholesalers	42	62.0	521.6	37568.6
+19330	26	26	0	Michigan	423510	Metal service centers and other metal merchant wholesalers	42	373.2	6911.4	440032.0
+19331	26	26	0	Michigan	423520	Coal and other mineral and ore merchant wholesalers	42	9.0	39.2	3164.0
+19332	26	26	0	Michigan	423610	Electrical apparatus and equipment, wiring supplies, and related equipment merchant wholesalers	42	377.2	5356.8	398709.0
+19333	26	26	0	Michigan	423620	Household appliances, electric housewares, and consumer electronics merchant wholesalers 	42	61.8	1675.8	125715.8
+19334	26	26	0	Michigan	423690	Other electronic parts and equipment merchant wholesalers	42	276.4	3935.0	368596.0
+19335	26	26	0	Michigan	423710	Hardware merchant wholesalers	42	226.8	2995.0	163763.0
+19336	26	26	0	Michigan	423720	Plumbing and heating equipment and supplies (hydronics) merchant wholesalers	42	176.2	2096.2	129749.6
+19337	26	26	0	Michigan	423730	Warm air heating and air-conditioning equipment and supplies merchant wholesalers	42	156.0	1672.8	122909.0
+19338	26	26	0	Michigan	423740	Refrigeration equipment and supplies merchant wholesalers	42	39.8	332.2	20577.0
+19339	26	26	0	Michigan	423810	Construction and mining (except oil well) machinery and equipment merchant wholesalers	42	100.6	1460.0	96341.2
+19340	26	26	0	Michigan	423820	Farm and garden machinery and equipment merchant wholesalers	42	173.8	2450.4	143664.4
+19341	26	26	0	Michigan	423830	Industrial machinery and equipment merchant wholesalers	42	1181.2	15627.4	1101706.8
+19342	26	26	0	Michigan	423840	Industrial supplies merchant wholesalers	42	269.8	3214.2	248652.8
+19343	26	26	0	Michigan	423850	Service establishment equipment and supplies merchant wholesalers	42	131.6	1631.2	81866.8
+19344	26	26	0	Michigan	423860	Transportation equipment and supplies (except motor vehicle) merchant wholesalers	42	34.4	411.0	29135.8
+19345	26	26	0	Michigan	423910	Sporting and recreational goods and supplies merchant wholesalers	42	129.0	1189.6	58508.8
+19346	26	26	0	Michigan	423920	Toy and hobby goods and supplies merchant wholesalers	42	34.6	336.6	19978.0
+19347	26	26	0	Michigan	423930	Recyclable material merchant wholesalers	42	262.8	3455.2	175648.4
+19348	26	26	0	Michigan	423940	Jewelry, watch, precious stone, and precious metal merchant wholesalers	42	78.8	412.4	18373.0
+19349	26	26	0	Michigan	423990	Other miscellaneous durable goods merchant wholesalers	42	221.2	1999.2	102518.2
+19350	26	26	0	Michigan	424110	Printing and writing paper merchant wholesalers	42	25.2	192.4	14164.2
+19351	26	26	0	Michigan	424120	Stationery and office supplies merchant wholesalers	42	120.8	1094.2	54685.8
+19352	26	26	0	Michigan	424130	Industrial and personal service paper merchant wholesalers	42	103.2	1098.2	71444.4
+19353	26	26	0	Michigan	424210	Drugs and druggists' sundries merchant wholesalers	42	152.8	3985.6	362149.0
+19354	26	26	0	Michigan	424310	Piece goods, notions, and other dry goods merchant wholesalers	42	31.6	1070.8	44393.4
+19355	26	26	0	Michigan	424320	Men's and boys' clothing and furnishings merchant wholesalers	42	46.8	1135.0	46257.8
+19356	26	26	0	Michigan	424330	Women's, children's, and infants' clothing and accessories merchant wholesalers	42	53.8	227.2	9212.8
+19357	26	26	0	Michigan	424340	Footwear merchant wholesalers	42	13.6	363.6	21838.6
+19358	26	26	0	Michigan	424410	General line grocery merchant wholesalers	42	75.0	4346.0	262838.6
+19359	26	26	0	Michigan	424420	Packaged frozen food merchant wholesalers	42	57.2	1901.2	103445.4
+19360	26	26	0	Michigan	424430	Dairy product (except dried or canned) merchant wholesalers	42	44.6	1466.6	77203.8
+19361	26	26	0	Michigan	424440	Poultry and poultry product merchant wholesalers	42	4.8	24.6	926.4
+19362	26	26	0	Michigan	424450	Confectionery merchant wholesalers	42	84.0	1406.2	60079.0
+19363	26	26	0	Michigan	424460	Fish and seafood merchant wholesalers	42	16.4	82.0	2774.6
+19364	26	26	0	Michigan	424470	Meat and meat product merchant wholesalers	42	75.8	1392.8	74337.6
+19365	26	26	0	Michigan	424480	Fresh fruit and vegetable merchant wholesalers	42	105.2	2726.2	119346.0
+19366	26	26	0	Michigan	424490	Other grocery and related products merchant wholesalers	42	350.0	7387.2	372617.6
+19367	26	26	0	Michigan	424510	Grain and field bean merchant wholesalers	42	81.6	958.8	52294.8
+19368	26	26	0	Michigan	424520	Livestock merchant wholesalers	42	17.4	109.2	3813.4
+19369	26	26	0	Michigan	424590	Other farm product raw material merchant wholesalers	42	13.2	113.8	5939.4
+19370	26	26	0	Michigan	424610	Plastics materials and basic forms and shapes merchant wholesalers	42	135.0	2068.0	176807.8
+19371	26	26	0	Michigan	424690	Other chemical and allied products merchant wholesalers	42	274.2	3555.2	245467.8
+19372	26	26	0	Michigan	424710	Petroleum bulk stations and terminals 	42	126.2	2278.4	131346.4
+19373	26	26	0	Michigan	424720	Petroleum and petroleum products merchant wholesalers (except bulk stations and terminals) 	42	69.2	1012.6	55226.4
+19374	26	26	0	Michigan	424810	Beer and ale merchant wholesalers	42	62.4	3598.0	167412.6
+19375	26	26	0	Michigan	424820	Wine and distilled alcoholic beverage merchant wholesalers	42	43.2	1831.8	95930.6
+19376	26	26	0	Michigan	424910	Farm supplies merchant wholesalers	42	180.2	2163.2	147093.6
+19377	26	26	0	Michigan	424920	Book, periodical, and newspaper merchant wholesalers	42	53.4	758.0	32078.2
+19378	26	26	0	Michigan	424930	Flower, nursery stock, and florists' supplies merchant wholesalers	42	98.6	1345.0	45133.4
+19379	26	26	0	Michigan	424940	Tobacco and tobacco product merchant wholesalers	42	42.6	1557.0	67656.2
+19380	26	26	0	Michigan	424950	Paint, varnish, and supplies merchant wholesalers	42	44.6	382.4	18332.2
+19381	26	26	0	Michigan	424990	Other miscellaneous nondurable goods merchant wholesalers	42	263.8	2155.6	132700.2
+19382	26	26	0	Michigan	425110	Business to business electronic markets	42	13.4	39.4	3142.2
+19383	26	26	0	Michigan	425120	Wholesale trade agents and brokers	42	1433.0	10778.0	517184.2
+19384	26	26	0	Michigan	441110	New car dealers	44	708.6	33864.4	1756821.0
+19385	26	26	0	Michigan	441120	Used car dealers	44	707.8	3247.0	123398.8
+19386	26	26	0	Michigan	441210	Recreational vehicle dealers	44	115.4	1624.0	82384.0
+19387	26	26	0	Michigan	441222	Boat dealers	44	201.0	1215.2	55616.6
+19388	26	26	0	Michigan	441228	Motorcycle, ATV, and all other motor vehicle dealers	44	212.2	2003.2	71990.0
+19389	26	26	0	Michigan	441310	Automotive parts and accessories stores	44	1381.4	11164.8	275537.0
+19390	26	26	0	Michigan	441320	Tire dealers	44	527.8	4851.8	172693.0
+19391	26	26	0	Michigan	442110	Furniture stores	44	588.4	6300.8	213609.8
+19392	26	26	0	Michigan	442210	Floor covering stores	44	327.0	2192.0	75556.6
+19393	26	26	0	Michigan	442291	Window treatment stores	44	58.2	201.0	5723.4
+19394	26	26	0	Michigan	442299	All other home furnishings stores	44	357.2	3837.2	67959.2
+19395	26	26	0	Michigan	443141	Household appliance stores	44	279.2	2622.2	73208.8
+19396	26	26	0	Michigan	443142	Electronics stores	44	1343.6	9798.8	245661.2
+19397	26	26	0	Michigan	444110	Home centers	44	230.4	21466.8	569786.2
+19398	26	26	0	Michigan	444120	Paint and wallpaper stores	44	187.2	802.4	31943.4
+19399	26	26	0	Michigan	444130	Hardware stores	44	664.6	5890.0	129899.8
+19400	26	26	0	Michigan	444190	Other building material dealers	44	975.4	7781.6	334589.8
+19401	26	26	0	Michigan	444210	Outdoor power equipment stores	44	186.0	1180.0	42310.0
+19402	26	26	0	Michigan	444220	Nursery, garden center, and farm supply stores	44	453.6	3336.8	106091.6
+19403	26	26	0	Michigan	445110	Supermarkets and other grocery (except convenience) stores	44	1904.4	56513.2	1163830.2
+19404	26	26	0	Michigan	445120	Convenience stores	44	948.6	4513.8	66867.6
+19405	26	26	0	Michigan	445210	Meat markets	44	226.2	1685.2	33072.6
+19406	26	26	0	Michigan	445220	Fish and seafood markets	44	70.8	257.4	5075.8
+19407	26	26	0	Michigan	445230	Fruit and vegetable markets	44	99.4	1300.6	25299.0
+19408	26	26	0	Michigan	445291	Baked goods stores	44	175.6	926.6	13989.8
+19409	26	26	0	Michigan	445292	Confectionery and nut stores	44	103.4	748.8	15105.8
+19410	26	26	0	Michigan	445299	All other specialty food stores	44	201.0	1372.8	20266.0
+19411	26	26	0	Michigan	445310	Beer, wine, and liquor stores	44	1605.8	6007.0	100370.6
+19412	26	26	0	Michigan	446110	Pharmacies and drug stores	44	1653.6	21736.0	757831.2
+19413	26	26	0	Michigan	446120	Cosmetics, beauty supplies, and perfume stores	44	470.4	3624.6	60280.8
+19414	26	26	0	Michigan	446130	Optical goods stores	44	436.0	3074.4	101073.4
+19415	26	26	0	Michigan	446191	Food (health) supplement stores	44	250.0	1098.0	19383.4
+19416	26	26	0	Michigan	446199	All other health and personal care stores	44	550.4	3758.2	147000.0
+19417	26	26	0	Michigan	447110	Gasoline stations with convenience stores	44	3241.6	22523.0	385655.8
+19418	26	26	0	Michigan	447190	Other gasoline stations	44	478.6	3630.0	78048.4
+19419	26	26	0	Michigan	448110	Men's clothing stores	44	211.6	1386.0	35353.2
+19420	26	26	0	Michigan	448120	Women's clothing stores	44	994.6	9044.0	124491.4
+19421	26	26	0	Michigan	448130	Children's and infants' clothing stores	44	180.6	2118.6	25891.6
+19422	26	26	0	Michigan	448140	Family clothing stores	44	691.0	14872.2	216826.6
+19423	26	26	0	Michigan	448150	Clothing accessories stores	44	217.4	1245.8	19535.6
+19424	26	26	0	Michigan	448190	Other clothing stores	44	363.2	3452.8	58033.4
+19425	26	26	0	Michigan	448210	Shoe stores	44	670.8	5421.0	87373.8
+19426	26	26	0	Michigan	448310	Jewelry stores	44	667.2	3696.6	111046.2
+19427	26	26	0	Michigan	448320	Luggage and leather goods stores	44	19.4	55.0	2623.6
+19428	26	26	0	Michigan	451110	Sporting goods stores	45	768.4	8597.2	163220.4
+19429	26	26	0	Michigan	451120	Hobby, toy, and game stores	45	251.0	3733.0	55900.2
+19430	26	26	0	Michigan	451130	Sewing, needlework, and piece goods stores	45	166.2	1903.2	23425.4
+19431	26	26	0	Michigan	451140	Musical instrument and supplies stores	45	86.0	1076.6	26143.8
+19432	26	26	0	Michigan	451211	Book stores	45	212.4	931.4	13564.0
+19433	26	26	0	Michigan	451212	News dealers and newsstands	45	17.8	37.2	833.6
+19434	26	26	0	Michigan	452111	Department stores (except discount department stores)	45	96.0	12352.2	210217.6
+19435	26	26	0	Michigan	452112	Discount department stores	45	186.8	20147.2	353083.6
+19436	26	26	0	Michigan	452910	Warehouse clubs and supercenters	45	237.4	61064.8	1405256.2
+19437	26	26	0	Michigan	452990	All other general merchandise stores	45	1430.4	11019.8	179382.2
+19438	26	26	0	Michigan	453110	Florists	45	439.0	2380.0	38208.8
+19439	26	26	0	Michigan	453210	Office supplies and stationery stores	45	186.0	2462.6	51388.8
+19440	26	26	0	Michigan	453220	Gift, novelty, and souvenir stores	45	722.8	5401.8	71730.8
+19441	26	26	0	Michigan	453310	Used merchandise stores	45	615.4	5504.6	85752.2
+19442	26	26	0	Michigan	453910	Pet and pet supplies stores	45	272.8	3462.4	65858.6
+19443	26	26	0	Michigan	453920	Art dealers	45	105.6	433.2	20762.8
+19444	26	26	0	Michigan	453930	Manufactured (mobile) home dealers	45	43.2	349.2	13389.2
+19445	26	26	0	Michigan	453991	Tobacco stores	45	417.2	1265.0	20965.0
+19446	26	26	0	Michigan	453998	All other miscellaneous store retailers (except tobacco stores)	45	708.6	2619.6	69692.0
+19447	26	26	0	Michigan	454111	Electronic shopping	45	627.8	4350.2	183569.4
+19448	26	26	0	Michigan	454112	Electronic auctions	45	18.0	44.2	1476.4
+19449	26	26	0	Michigan	454113	Mail-order houses	45	164.8	2635.6	109266.6
+19450	26	26	0	Michigan	454210	Vending machine operators	45	111.4	1325.0	43754.0
+19451	26	26	0	Michigan	454310	Fuel dealers	45	287.8	1888.2	75419.2
+19452	26	26	0	Michigan	454390	Other direct selling establishments	45	612.8	2808.2	96693.8
+19453	26	26	0	Michigan	481111	Scheduled passenger air transportation	48	40.4	4422.6	317576.4
+19454	26	26	0	Michigan	481112	Scheduled freight air transportation	48	10.2	329.8	28809.0
+19455	26	26	0	Michigan	481211	Nonscheduled chartered passenger air transportation	48	37.8	378.2	20888.4
+19456	26	26	0	Michigan	481212	Nonscheduled chartered freight air transportation	48	10.2	578.0	57493.4
+19457	26	26	0	Michigan	481219	Other nonscheduled air transportation	48	12.6	60.0	4786.6
+19458	26	26	0	Michigan	483111	Deep sea freight transportation	48	3.2	1.4	156.4
+19459	26	26	0	Michigan	483113	Coastal and great lakes freight transportation	48	13.6	300.6	24101.8
+19460	26	26	0	Michigan	483114	Coastal and great lakes passenger transportation	48	15.6	91.4	10372.0
+19461	26	26	0	Michigan	483211	Inland water freight transportation	48	1.8	0.0	0.0
+19462	26	26	0	Michigan	483212	Inland water passenger transportation	48	4.0	0.2	42.8
+19463	26	26	0	Michigan	484110	General freight trucking, local	48	971.8	9333.2	394559.8
+19464	26	26	0	Michigan	484121	General freight trucking, long-distance, truckload	48	1138.6	16036.2	731542.8
+19465	26	26	0	Michigan	484122	General freight trucking, long-distance, less than truckload	48	322.4	6527.6	338747.2
+19466	26	26	0	Michigan	484210	Used household and office goods moving	48	162.6	2159.2	78093.4
+19467	26	26	0	Michigan	484220	Specialized freight (except used goods) trucking, local	48	724.8	5234.8	256650.4
+19468	26	26	0	Michigan	484230	Specialized freight (except used goods) trucking, long-distance	48	255.8	4953.0	290957.2
+19469	26	26	0	Michigan	485111	Mixed mode transit systems	48	1.0	0.0	0.0
+19470	26	26	0	Michigan	485113	Bus and other motor vehicle transit systems	48	17.0	274.0	7783.6
+19471	26	26	0	Michigan	485119	Other urban transit systems	48	2.0	0.0	0.0
+19472	26	26	0	Michigan	485210	Interurban and rural bus transportation	48	6.6	20.2	326.8
+19473	26	26	0	Michigan	485310	Taxi service	48	62.4	389.2	7242.0
+19474	26	26	0	Michigan	485320	Limousine service	48	77.8	525.4	11554.4
+19475	26	26	0	Michigan	485410	School and employee bus transportation	48	40.6	3891.0	81817.6
+19476	26	26	0	Michigan	485510	Charter bus industry	48	29.4	572.8	16445.6
+19477	26	26	0	Michigan	485991	Special needs transportation	48	89.4	1268.4	27669.6
+19478	26	26	0	Michigan	485999	All other transit and ground passenger transportation	48	37.4	97.2	3330.6
+19479	26	26	0	Michigan	486110	Pipeline transportation of crude oil	48	24.0	52.0	5217.6
+19480	26	26	0	Michigan	486210	Pipeline transportation of natural gas	48	43.0	367.4	39176.8
+19481	26	26	0	Michigan	486910	Pipeline transportation of refined petroleum products	48	10.0	49.2	7620.0
+19482	26	26	0	Michigan	486990	All other pipeline transportation	48	1.2	0.0	0.0
+19483	26	26	0	Michigan	487110	Scenic and sightseeing transportation, land	48	9.2	67.4	1470.2
+19484	26	26	0	Michigan	487210	Scenic and sightseeing transportation, water	48	23.2	19.2	3121.6
+19485	26	26	0	Michigan	487990	Scenic and sightseeing transportation, other	48	4.2	1.8	136.2
+19486	26	26	0	Michigan	488111	Air traffic control	48	4.0	0.0	0.0
+19487	26	26	0	Michigan	488119	Other airport operations	48	51.8	1761.0	45015.0
+19488	26	26	0	Michigan	488190	Other support activities for air transportation	48	70.6	1910.0	101548.6
+19489	26	26	0	Michigan	488210	Support activities for rail transportation	48	31.2	547.2	26658.2
+19490	26	26	0	Michigan	488310	Port and harbor operations	48	6.2	12.6	664.4
+19491	26	26	0	Michigan	488320	Marine cargo handling	48	2.2	0.0	0.0
+19492	26	26	0	Michigan	488330	Navigational services to shipping	48	8.4	21.0	4382.8
+19493	26	26	0	Michigan	488390	Other support activities for water transportation	48	13.4	26.2	1323.2
+19494	26	26	0	Michigan	488410	Motor vehicle towing	48	268.8	1972.8	63519.4
+19495	26	26	0	Michigan	488490	Other support activities for road transportation	48	77.4	1065.2	34393.2
+19496	26	26	0	Michigan	488510	Freight transportation arrangement	48	458.2	6473.2	328991.2
+19497	26	26	0	Michigan	488991	Packing and crating	48	40.0	821.6	26563.2
+19498	26	26	0	Michigan	488999	All other support activities for transportation	48	21.4	108.4	3664.2
+19499	26	26	0	Michigan	492110	Couriers and express delivery services	49	239.4	11126.2	487641.6
+19500	26	26	0	Michigan	492210	Local messengers and local delivery	49	88.6	515.2	14893.4
+19501	26	26	0	Michigan	493110	General warehousing and storage	49	287.8	11433.6	544466.0
+19502	26	26	0	Michigan	493120	Refrigerated warehousing and storage	49	29.2	637.0	33358.6
+19503	26	26	0	Michigan	493130	Farm product warehousing and storage	49	7.6	67.0	2554.2
+19504	26	26	0	Michigan	493190	Other warehousing and storage	49	73.2	1740.2	72927.8
+19505	26	26	0	Michigan	511110	Newspaper publishers	51	199.2	5275.4	196032.4
+19506	26	26	0	Michigan	511120	Periodical publishers	51	132.0	1843.4	126344.0
+19507	26	26	0	Michigan	511130	Book publishers	51	57.4	1606.2	111442.0
+19508	26	26	0	Michigan	511140	Directory and mailing list publishers	51	19.0	1914.0	170013.2
+19509	26	26	0	Michigan	511191	Greeting card publishers	51	4.6	0.0	0.0
+19510	26	26	0	Michigan	511199	All other publishers	51	17.4	160.0	7604.0
+19511	26	26	0	Michigan	511210	Software publishers	51	217.6	10605.0	1137759.0
+19512	26	26	0	Michigan	512110	Motion picture and video production	51	174.6	758.4	30709.0
+19513	26	26	0	Michigan	512120	Motion picture and video distribution	51	3.6	24.4	1663.8
+19514	26	26	0	Michigan	512131	Motion picture theaters (except drive-ins)	51	143.4	4450.2	47835.0
+19515	26	26	0	Michigan	512132	Drive-in motion picture theaters	51	5.2	5.0	394.8
+19516	26	26	0	Michigan	512191	Teleproduction and other postproduction services	51	38.2	146.2	9300.2
+19517	26	26	0	Michigan	512199	Other motion picture and video industries	51	8.0	22.2	751.0
+19518	26	26	0	Michigan	512210	Record production	51	3.4	0.0	0.0
+19519	26	26	0	Michigan	512220	Integrated record production/distribution	51	10.4	17.8	1313.4
+19520	26	26	0	Michigan	512230	Music publishers	51	6.2	0.0	0.0
+19521	26	26	0	Michigan	512240	Sound recording studios	51	31.8	89.6	5867.2
+19522	26	26	0	Michigan	512290	Other sound recording industries	51	10.2	51.4	1669.2
+19523	26	26	0	Michigan	515111	Radio networks	51	15.4	222.2	21043.8
+19524	26	26	0	Michigan	515112	Radio stations	51	141.6	2567.2	122516.6
+19525	26	26	0	Michigan	515120	Television broadcasting	51	55.8	2651.0	185410.4
+19526	26	26	0	Michigan	515210	Cable and other subscription programming	51	20.0	259.0	35536.8
+19527	26	26	0	Michigan	517110	Wired telecommunications carriers	51	929.6	17736.2	1124575.6
+19528	26	26	0	Michigan	517210	Wireless telecommunications carriers (except satellite)	51	349.8	1671.4	210322.2
+19529	26	26	0	Michigan	517410	Satellite telecommunications	51	18.2	162.6	8946.4
+19530	26	26	0	Michigan	517911	Telecommunications resellers	51	51.6	833.8	46670.4
+19531	26	26	0	Michigan	517919	All other telecommunications	51	139.6	432.8	17862.4
+19532	26	26	0	Michigan	518210	Data processing, hosting, and related services	51	338.8	9016.2	691837.2
+19533	26	26	0	Michigan	519110	News syndicates	51	5.4	35.6	3010.8
+19534	26	26	0	Michigan	519120	Libraries and archives	51	38.4	532.0	22359.2
+19535	26	26	0	Michigan	519130	Internet publishing and broadcasting and web search portals	51	120.2	2088.0	239287.2
+19536	26	26	0	Michigan	519190	All other information services	51	335.2	599.0	19107.2
+19537	26	26	0	Michigan	521110	Monetary authorities - central bank	52	1.0	0.0	0.0
+19538	26	26	0	Michigan	522110	Commercial banking	52	2849.0	34576.4	1989491.2
+19539	26	26	0	Michigan	522120	Savings institutions	52	247.2	3359.4	230556.2
+19540	26	26	0	Michigan	522130	Credit unions	52	916.4	13535.2	577018.8
+19541	26	26	0	Michigan	522190	Other depository credit intermediation	52	2.3333333333333335	0.0	0.0
+19542	26	26	0	Michigan	522210	Credit card issuing	52	14.0	57.4	2721.2
+19543	26	26	0	Michigan	522220	Sales financing	52	123.8	5085.2	500260.6
+19544	26	26	0	Michigan	522291	Consumer lending	52	43.2	242.0	23426.8
+19545	26	26	0	Michigan	522292	Real estate credit	52	240.0	10881.8	1022521.8
+19546	26	26	0	Michigan	522293	International trade financing	52	1.8	0.0	0.0
+19547	26	26	0	Michigan	522294	Secondary market financing	52	2.25	0.0	0.0
+19548	26	26	0	Michigan	522298	All other nondepository credit intermediation	52	109.6	726.6	44174.4
+19549	26	26	0	Michigan	522310	Mortgage and nonmortgage loan brokers	52	169.8	1339.6	106111.6
+19550	26	26	0	Michigan	522320	Financial transactions processing, reserve, and clearinghouse activities	52	79.2	822.6	38241.6
+19551	26	26	0	Michigan	522390	Other activities related to credit intermediation	52	558.0	2056.4	62714.0
+19552	26	26	0	Michigan	523110	Investment banking and securities dealing	52	60.8	240.0	35395.0
+19553	26	26	0	Michigan	523120	Securities brokerage	52	1288.2	4995.4	913428.8
+19554	26	26	0	Michigan	523130	Commodity contracts dealing	52	9.4	0.0	0.0
+19555	26	26	0	Michigan	523140	Commodity contracts brokerage	52	9.6	7.2	4826.6
+19556	26	26	0	Michigan	523910	Miscellaneous intermediation	52	101.4	353.6	51727.2
+19557	26	26	0	Michigan	523920	Portfolio management	52	530.2	2456.4	297914.6
+19558	26	26	0	Michigan	523930	Investment advice	52	503.4	2241.0	193203.2
+19559	26	26	0	Michigan	523991	Trust, fiduciary, and custody activities	52	39.8	478.2	35394.8
+19560	26	26	0	Michigan	523999	Miscellaneous financial investment activities	52	35.4	52.4	3662.0
+19561	26	26	0	Michigan	524113	Direct life insurance carriers	52	188.0	5275.4	460074.2
+19562	26	26	0	Michigan	524114	Direct health and medical insurance carriers	52	128.6	13753.2	1108330.4
+19563	26	26	0	Michigan	524126	Direct property and casualty insurance carriers	52	384.0	15453.0	1157481.8
+19564	26	26	0	Michigan	524127	Direct title insurance carriers	52	106.4	393.2	19832.2
+19565	26	26	0	Michigan	524128	Other direct insurance (except life, health, and medical) carriers	52	18.0	152.6	13563.6
+19566	26	26	0	Michigan	524130	Reinsurance carriers	52	7.8	103.4	10166.6
+19567	26	26	0	Michigan	524210	Insurance agencies and brokerages	52	3996.4	22524.4	1282540.6
+19568	26	26	0	Michigan	524291	Claims adjusting	52	87.0	720.8	41981.2
+19569	26	26	0	Michigan	524292	Third party administration of insurance and pension funds	52	138.2	6085.2	221540.8
+19570	26	26	0	Michigan	524298	All other insurance related activities	52	101.0	538.2	25379.0
+19571	26	26	0	Michigan	525910	Open-end investment funds	52	5.2	6.2	342.6
+19572	26	26	0	Michigan	525990	Other financial vehicles	52	31.0	43.8	2787.6
+19573	26	26	0	Michigan	531110	Lessors of residential buildings and dwellings	53	1245.6	8492.4	250944.0
+19574	26	26	0	Michigan	531120	Lessors of nonresidential buildings (except miniwarehouses)	53	680.0	3740.4	217197.4
+19575	26	26	0	Michigan	531130	Lessors of miniwarehouses and self-storage units	53	278.4	504.6	15737.0
+19576	26	26	0	Michigan	531190	Lessors of other real estate property	53	304.6	2124.4	80156.8
+19577	26	26	0	Michigan	531210	Offices of real estate agents and brokers	53	1722.4	5530.6	266655.6
+19578	26	26	0	Michigan	531311	Residential property managers	53	809.2	12747.8	453364.4
+19579	26	26	0	Michigan	531312	Nonresidential property managers	53	434.6	3471.6	177612.2
+19580	26	26	0	Michigan	531320	Offices of real estate appraisers	53	383.0	946.2	46733.2
+19581	26	26	0	Michigan	531390	Other activities related to real estate	53	285.8	871.4	49057.0
+19582	26	26	0	Michigan	532111	Passenger car rental	53	193.0	1289.6	57189.0
+19583	26	26	0	Michigan	532112	Passenger car leasing	53	13.8	109.0	10146.2
+19584	26	26	0	Michigan	532120	Truck, utility trailer, and RV (recreational vehicle) rental and leasing	53	159.8	1202.2	62270.0
+19585	26	26	0	Michigan	532210	Consumer electronics and appliances rental	53	149.8	384.0	15481.2
+19586	26	26	0	Michigan	532220	Formal wear and costume rental	53	38.2	106.4	4058.0
+19587	26	26	0	Michigan	532230	Video tape and disc rental	53	205.0	549.0	5733.2
+19588	26	26	0	Michigan	532291	Home health equipment rental	53	85.2	724.2	30048.2
+19589	26	26	0	Michigan	532292	Recreational goods rental	53	72.6	77.4	4640.6
+19590	26	26	0	Michigan	532299	All other consumer goods rental	53	178.0	934.8	30692.8
+19591	26	26	0	Michigan	532310	General rental centers	53	127.2	493.0	17003.4
+19592	26	26	0	Michigan	532411	Commercial air, rail, and water transportation equipment rental and leasing	53	10.0	20.0	2014.8
+19593	26	26	0	Michigan	532412	Construction, mining, and forestry machinery and equipment rental and leasing	53	55.2	496.0	34390.8
+19594	26	26	0	Michigan	532420	Office machinery and equipment rental and leasing	53	16.2	130.2	9067.8
+19595	26	26	0	Michigan	532490	Other commercial and industrial machinery and equipment rental and leasing	53	194.6	2056.2	126366.2
+19596	26	26	0	Michigan	533110	Lessors of nonfinancial intangible assets (except copyrighted works)	53	70.4	846.6	64150.6
+19597	26	26	0	Michigan	541110	Offices of lawyers	54	4333.8	24083.2	1850450.4
+19598	26	26	0	Michigan	541191	Title abstract and settlement offices	54	244.0	2109.6	98027.0
+19599	26	26	0	Michigan	541199	All other legal services	54	95.6	360.0	19379.0
+19600	26	26	0	Michigan	541211	Offices of certified public accountants	54	1540.0	12543.8	854246.2
+19601	26	26	0	Michigan	541213	Tax preparation services	54	884.2	5714.4	60715.4
+19602	26	26	0	Michigan	541214	Payroll services	54	193.4	12966.8	587740.0
+19603	26	26	0	Michigan	541219	Other accounting services	54	1179.2	7265.4	267471.2
+19604	26	26	0	Michigan	541310	Architectural services	54	397.4	2874.6	212084.6
+19605	26	26	0	Michigan	541320	Landscape architectural services	54	117.2	307.2	20335.6
+19606	26	26	0	Michigan	541330	Engineering services	54	1827.8	47873.0	4186344.0
+19607	26	26	0	Michigan	541340	Drafting services	54	58.2	436.8	33527.8
+19608	26	26	0	Michigan	541350	Building inspection services	54	145.0	340.0	15991.0
+19609	26	26	0	Michigan	541360	Geophysical surveying and mapping services	54	7.4	35.8	1584.6
+19610	26	26	0	Michigan	541370	Surveying and mapping (except geophysical) services	54	175.0	680.8	36219.4
+19611	26	26	0	Michigan	541380	Testing laboratories	54	190.0	6104.4	527721.4
+19612	26	26	0	Michigan	541410	Interior design services	54	217.8	599.4	23576.0
+19613	26	26	0	Michigan	541420	Industrial design services	54	83.8	631.6	56869.8
+19614	26	26	0	Michigan	541430	Graphic design services	54	353.2	1638.8	89968.4
+19615	26	26	0	Michigan	541490	Other specialized design services	54	49.0	100.8	4286.6
+19616	26	26	0	Michigan	541511	Custom computer programming services	54	1386.2	18051.6	1439286.8
+19617	26	26	0	Michigan	541512	Computer systems design services	54	991.8	13757.4	1186650.2
+19618	26	26	0	Michigan	541513	Computer facilities management services	54	158.8	2602.2	180600.6
+19619	26	26	0	Michigan	541519	Other computer related services	54	264.0	1558.2	124834.6
+19620	26	26	0	Michigan	541611	Administrative management and general management consulting services	54	1360.8	9718.8	906778.8
+19621	26	26	0	Michigan	541612	Human resources consulting services	54	224.0	7451.6	362471.0
+19622	26	26	0	Michigan	541613	Marketing consulting services	54	722.6	4241.6	295815.0
+19623	26	26	0	Michigan	541614	Process, physical distribution, and logistics consulting services	54	276.0	5566.0	301047.2
+19624	26	26	0	Michigan	541618	Other management consulting services	54	150.2	378.4	21396.8
+19625	26	26	0	Michigan	541620	Environmental consulting services	54	204.2	1548.4	85916.4
+19626	26	26	0	Michigan	541690	Other scientific and technical consulting services	54	286.2	1173.0	83828.2
+19627	26	26	0	Michigan	541711	Research and development in biotechnology	54	59.6	820.8	74694.2
+19628	26	26	0	Michigan	541712	Research and development in the physical, engineering, and life sciences (except biotechnology)	54	301.4	22372.4	2095811.0
+19629	26	26	0	Michigan	541720	Research and development in the social sciences and humanities	54	32.6	357.8	29428.8
+19630	26	26	0	Michigan	541810	Advertising agencies	54	288.8	6063.6	472989.0
+19631	26	26	0	Michigan	541820	Public relations agencies	54	160.2	1010.2	74785.8
+19632	26	26	0	Michigan	541830	Media buying agencies	54	18.4	121.0	8580.4
+19633	26	26	0	Michigan	541840	Media representatives	54	33.0	219.0	22360.4
+19634	26	26	0	Michigan	541850	Outdoor advertising	54	65.8	473.6	27942.4
+19635	26	26	0	Michigan	541860	Direct mail advertising	54	55.4	1372.4	66446.8
+19636	26	26	0	Michigan	541870	Advertising material distribution services	54	30.0	343.6	28243.2
+19637	26	26	0	Michigan	541890	Other services related to advertising	54	202.6	2245.0	103012.0
+19638	26	26	0	Michigan	541910	Marketing research and public opinion polling	54	128.2	2395.6	167486.0
+19639	26	26	0	Michigan	541921	Photography studios, portrait	54	340.4	1163.2	24022.8
+19640	26	26	0	Michigan	541922	Commercial photography	54	84.0	263.0	15105.6
+19641	26	26	0	Michigan	541930	Translation and interpretation services	54	57.0	191.4	8394.4
+19642	26	26	0	Michigan	541940	Veterinary services	54	957.6	9354.2	306262.4
+19643	26	26	0	Michigan	541990	All other professional, scientific, and technical services	54	611.0	4275.0	146868.4
+19644	26	26	0	Michigan	551111	Offices of bank holding companies	55	18.2	183.4	11945.4
+19645	26	26	0	Michigan	551112	Offices of other holding companies	55	189.2	5252.8	325076.8
+19646	26	26	0	Michigan	551114	Corporate, subsidiary, and regional managing offices	55	1378.6	109171.6	11668406.6
+19647	26	26	0	Michigan	561110	Office administrative services	56	749.6	14266.6	775477.2
+19648	26	26	0	Michigan	561210	Facilities support services	56	169.2	5300.6	231379.6
+19649	26	26	0	Michigan	561311	Employment placement agencies	56	137.2	5584.6	175820.8
+19650	26	26	0	Michigan	561312	Executive search services	56	118.0	548.8	37439.4
+19651	26	26	0	Michigan	561320	Temporary help services	56	1261.2	148347.2	3994155.2
+19652	26	26	0	Michigan	561330	Professional employer organizations	56	293.2	44220.6	1503354.4
+19653	26	26	0	Michigan	561410	Document preparation services	56	105.0	1042.6	32417.4
+19654	26	26	0	Michigan	561421	Telephone answering services	56	30.6	322.2	9263.6
+19655	26	26	0	Michigan	561422	Telemarketing bureaus and other contact centers	56	79.8	6248.0	152997.8
+19656	26	26	0	Michigan	561431	Private mail centers	56	93.4	415.6	9928.4
+19657	26	26	0	Michigan	561439	Other business service centers (including copy shops)	56	103.0	669.0	26735.6
+19658	26	26	0	Michigan	561440	Collection agencies	56	93.2	1503.2	60900.2
+19659	26	26	0	Michigan	561450	Credit bureaus	56	12.6	157.0	12279.2
+19660	26	26	0	Michigan	561491	Repossession services	56	25.4	217.0	7124.6
+19661	26	26	0	Michigan	561492	Court reporting and stenotype services	56	82.0	151.8	9473.2
+19662	26	26	0	Michigan	561499	All other business support services	56	481.0	2458.6	100702.2
+19663	26	26	0	Michigan	561510	Travel agencies	56	394.8	2339.6	131872.4
+19664	26	26	0	Michigan	561520	Tour operators	56	40.2	268.8	15808.4
+19665	26	26	0	Michigan	561591	Convention and visitors bureaus	56	43.2	272.8	13616.0
+19666	26	26	0	Michigan	561599	All other travel arrangement and reservation services	56	35.2	601.4	22806.6
+19667	26	26	0	Michigan	561611	Investigation services	56	114.4	720.0	27148.0
+19668	26	26	0	Michigan	561612	Security guards and patrol services	56	249.0	15241.6	323178.8
+19669	26	26	0	Michigan	561613	Armored car services	56	21.4	697.0	22801.4
+19670	26	26	0	Michigan	561621	Security systems services (except locksmiths)	56	151.0	2519.0	121409.0
+19671	26	26	0	Michigan	561622	Locksmiths	56	93.6	301.2	9674.8
+19672	26	26	0	Michigan	561710	Exterminating and pest control services	56	206.8	1306.2	54897.2
+19673	26	26	0	Michigan	561720	Janitorial services	56	1520.2	29325.6	544361.0
+19674	26	26	0	Michigan	561730	Landscaping services	56	3108.4	13187.2	568434.0
+19675	26	26	0	Michigan	561740	Carpet and upholstery cleaning services	56	244.4	1406.4	43788.2
+19676	26	26	0	Michigan	561790	Other services to buildings and dwellings	56	285.0	1463.2	58029.6
+19677	26	26	0	Michigan	561910	Packaging and labeling services	56	63.2	1565.0	61016.8
+19678	26	26	0	Michigan	561920	Convention and trade show organizers	56	83.0	1420.4	82569.2
+19679	26	26	0	Michigan	561990	All other support services	56	368.6	5930.4	285214.8
+19680	26	26	0	Michigan	562111	Solid waste collection	56	287.4	5997.2	324043.0
+19681	26	26	0	Michigan	562112	Hazardous waste collection	56	16.6	247.6	13433.8
+19682	26	26	0	Michigan	562119	Other waste collection	56	19.2	155.6	7319.4
+19683	26	26	0	Michigan	562211	Hazardous waste treatment and disposal	56	22.4	682.6	40318.8
+19684	26	26	0	Michigan	562212	Solid waste landfill	56	50.0	386.0	22080.6
+19685	26	26	0	Michigan	562213	Solid waste combustors and incinerators	56	2.4	0.0	0.0
+19686	26	26	0	Michigan	562219	Other nonhazardous waste treatment and disposal	56	9.4	139.2	6383.8
+19687	26	26	0	Michigan	562910	Remediation services	56	111.2	1770.8	95088.0
+19688	26	26	0	Michigan	562920	Materials recovery facilities	56	56.2	575.0	21418.2
+19689	26	26	0	Michigan	562991	Septic tank and related services	56	111.2	428.0	17695.2
+19690	26	26	0	Michigan	562998	All other miscellaneous waste management services	56	47.8	400.2	20455.4
+19691	26	26	0	Michigan	611110	Elementary and secondary schools	61	507.2	25564.2	790491.4
+19692	26	26	0	Michigan	611210	Junior colleges	61	28.6	2296.0	57301.0
+19693	26	26	0	Michigan	611310	Colleges, universities, and professional schools	61	106.8	29695.8	777858.0
+19694	26	26	0	Michigan	611410	Business and secretarial schools	61	13.2	0.0	0.0
+19695	26	26	0	Michigan	611420	Computer training	61	36.8	336.4	19262.8
+19696	26	26	0	Michigan	611430	Professional and management development training	61	150.4	1485.8	94809.0
+19697	26	26	0	Michigan	611511	Cosmetology and barber schools	61	65.0	600.2	16118.8
+19698	26	26	0	Michigan	611512	Flight training	61	9.0	46.8	1973.0
+19699	26	26	0	Michigan	611513	Apprenticeship training	61	39.0	269.0	13911.2
+19700	26	26	0	Michigan	611519	Other technical and trade schools	61	124.8	1889.0	65017.6
+19701	26	26	0	Michigan	611610	Fine arts schools	61	302.2	1852.4	22739.4
+19702	26	26	0	Michigan	611620	Sports and recreation instruction	61	307.6	2580.4	34740.4
+19703	26	26	0	Michigan	611630	Language schools	61	21.2	438.4	14045.2
+19704	26	26	0	Michigan	611691	Exam preparation and tutoring	61	184.6	2097.8	32171.6
+19705	26	26	0	Michigan	611692	Automobile driving schools	61	93.4	687.6	13315.8
+19706	26	26	0	Michigan	611699	All other miscellaneous schools and instruction	61	141.2	796.4	21693.8
+19707	26	26	0	Michigan	611710	Educational support services	61	221.2	2321.2	69869.6
+19708	26	26	0	Michigan	621111	Offices of physicians (except mental health specialists)	62	6455.8	73564.4	5867937.2
+19709	26	26	0	Michigan	621112	Offices of physicians, mental health specialists	62	319.8	1077.8	63810.2
+19710	26	26	0	Michigan	621210	Offices of dentists	62	4149.4	31858.4	1487086.8
+19711	26	26	0	Michigan	621310	Offices of chiropractors	62	1347.0	5050.4	140514.4
+19712	26	26	0	Michigan	621320	Offices of optometrists	62	583.4	3325.6	122036.8
+19713	26	26	0	Michigan	621330	Offices of mental health practitioners (except physicians)	62	627.2	2536.2	95705.6
+19714	26	26	0	Michigan	621340	Offices of physical, occupational and speech therapists, and audiologists	62	1097.6	12158.4	508223.6
+19715	26	26	0	Michigan	621391	Offices of podiatrists	62	370.2	1926.4	82873.0
+19716	26	26	0	Michigan	621399	Offices of all other miscellaneous health practitioners	62	298.8	829.4	32141.8
+19717	26	26	0	Michigan	621410	Family planning centers	62	79.0	653.0	22452.4
+19718	26	26	0	Michigan	621420	Outpatient mental health and substance abuse centers	62	267.6	5901.6	221867.0
+19719	26	26	0	Michigan	621491	HMO medical centers	62	11.8	103.8	7753.8
+19720	26	26	0	Michigan	621492	Kidney dialysis centers	62	199.0	1201.4	112202.4
+19721	26	26	0	Michigan	621493	Freestanding ambulatory surgical and emergency centers	62	164.8	4894.0	194034.0
+19722	26	26	0	Michigan	621498	All other outpatient care centers	62	385.4	10083.0	603501.0
+19723	26	26	0	Michigan	621511	Medical laboratories	62	166.2	4331.0	226639.4
+19724	26	26	0	Michigan	621512	Diagnostic imaging centers	62	162.4	2229.2	145921.4
+19725	26	26	0	Michigan	621610	Home health care services	62	1440.2	39114.0	1111580.0
+19726	26	26	0	Michigan	621910	Ambulance services	62	132.8	5922.2	201220.0
+19727	26	26	0	Michigan	621991	Blood and organ banks	62	31.4	2479.4	104700.0
+19728	26	26	0	Michigan	621999	All other miscellaneous ambulatory health care services	62	152.0	1625.4	81250.4
+19729	26	26	0	Michigan	622110	General medical and surgical hospitals	62	162.6	192938.4	10619585.2
+19730	26	26	0	Michigan	622210	Psychiatric and substance abuse hospitals	62	16.2	5343.8	312019.4
+19731	26	26	0	Michigan	622310	Specialty (except psychiatric and substance abuse) hospitals	62	28.0	6186.0	268041.6
+19732	26	26	0	Michigan	623110	Nursing care facilities (skilled nursing facilities)	62	471.4	50922.6	1468565.6
+19733	26	26	0	Michigan	623210	Residential intellectual and developmental disability facilities	62	1831.4	22239.0	436638.6
+19734	26	26	0	Michigan	623220	Residential mental health and substance abuse facilities	62	170.0	4127.4	110539.6
+19735	26	26	0	Michigan	623311	Continuing care retirement communities	62	106.2	10960.0	275574.0
+19736	26	26	0	Michigan	623312	Assisted living facilities for the elderly	62	705.6	15226.0	315938.4
+19737	26	26	0	Michigan	623990	Other residential care facilities	62	198.6	4208.2	107594.8
+19738	26	26	0	Michigan	624110	Child and youth services	62	265.2	3898.4	114739.8
+19739	26	26	0	Michigan	624120	Services for the elderly and persons with disabilities	62	852.8	17018.6	326114.6
+19740	26	26	0	Michigan	624190	Other individual and family services	62	721.2	12654.6	318487.4
+19741	26	26	0	Michigan	624210	Community food services	62	114.0	1208.6	30308.2
+19742	26	26	0	Michigan	624221	Temporary shelters	62	115.6	2113.6	50568.6
+19743	26	26	0	Michigan	624229	Other community housing services	62	139.6	1470.8	48489.0
+19744	26	26	0	Michigan	624230	Emergency and other relief services	62	39.4	551.4	18781.4
+19745	26	26	0	Michigan	624310	Vocational rehabilitation services	62	275.8	15201.8	268253.6
+19746	26	26	0	Michigan	624410	Child day care services	62	1814.8	17809.8	290502.2
+19747	26	26	0	Michigan	711110	Theater companies and dinner theaters	71	54.6	642.0	15795.0
+19748	26	26	0	Michigan	711120	Dance companies	71	9.6	61.4	1411.6
+19749	26	26	0	Michigan	711130	Musical groups and artists	71	71.6	1140.2	40973.2
+19750	26	26	0	Michigan	711190	Other performing arts companies	71	11.4	23.8	2297.4
+19751	26	26	0	Michigan	711211	Sports teams and clubs	71	29.6	1352.6	577753.6
+19752	26	26	0	Michigan	711212	Racetracks	71	15.6	263.6	8009.4
+19753	26	26	0	Michigan	711219	Other spectator sports	71	38.6	103.4	6547.2
+19754	26	26	0	Michigan	711310	Promoters of performing arts, sports, and similar events with facilities	71	86.4	3696.4	70535.8
+19755	26	26	0	Michigan	711320	Promoters of performing arts, sports, and similar events without facilities	71	115.0	536.8	23515.0
+19756	26	26	0	Michigan	711410	Agents and managers for artists, athletes, entertainers, and other public figures	71	36.4	256.6	12626.8
+19757	26	26	0	Michigan	711510	Independent artists, writers, and performers	71	258.6	533.4	19632.0
+19758	26	26	0	Michigan	712110	Museums	71	133.4	3073.4	71671.2
+19759	26	26	0	Michigan	712120	Historical sites	71	24.6	158.0	4526.6
+19760	26	26	0	Michigan	712130	Zoos and botanical gardens	71	14.8	426.2	15155.4
+19761	26	26	0	Michigan	712190	Nature parks and other similar institutions	71	24.4	206.8	7064.8
+19762	26	26	0	Michigan	713110	Amusement and theme parks	71	11.2	334.4	10590.6
+19763	26	26	0	Michigan	713120	Amusement arcades	71	91.4	1257.4	16144.2
+19764	26	26	0	Michigan	713210	Casinos (except casino hotels)	71	1.4	0.0	0.0
+19765	26	26	0	Michigan	713290	Other gambling industries	71	23.4	325.6	9384.8
+19766	26	26	0	Michigan	713910	Golf courses and country clubs	71	584.6	5874.4	240150.2
+19767	26	26	0	Michigan	713920	Skiing facilities	71	19.6	1550.0	10730.0
+19768	26	26	0	Michigan	713930	Marinas	71	190.0	1012.0	45359.6
+19769	26	26	0	Michigan	713940	Fitness and recreational sports centers	71	806.2	15188.2	206300.8
+19770	26	26	0	Michigan	713950	Bowling centers	71	235.0	4007.4	48948.8
+19771	26	26	0	Michigan	713990	All other amusement and recreation industries	71	477.4	2732.6	54584.2
+19772	26	26	0	Michigan	721110	Hotels (except casino hotels) and motels	72	1236.8	27615.2	560709.6
+19773	26	26	0	Michigan	721120	Casino hotels	72	9.2	14050.2	480788.4
+19774	26	26	0	Michigan	721191	Bed-and-breakfast inns	72	78.4	423.6	8272.6
+19775	26	26	0	Michigan	721199	All other traveler accommodation	72	50.4	53.4	1581.4
+19776	26	26	0	Michigan	721211	RV (recreational vehicle) parks and campgrounds	72	171.2	466.8	19421.2
+19777	26	26	0	Michigan	721214	Recreational and vacation camps (except campgrounds)	72	108.8	1187.8	30183.6
+19778	26	26	0	Michigan	721310	Rooming and boarding houses	72	80.8	466.4	6394.8
+19779	26	26	0	Michigan	722310	Food service contractors	72	761.8	6836.2	329725.4
+19780	26	26	0	Michigan	722320	Caterers	72	358.0	4413.8	69857.4
+19781	26	26	0	Michigan	722330	Mobile food services	72	68.6	131.2	3736.8
+19782	26	26	0	Michigan	722410	Drinking places (alcoholic beverages)	72	1394.0	11633.2	161557.8
+19783	26	26	0	Michigan	722511	Full-service restaurants	72	7019.4	148999.2	2313598.4
+19784	26	26	0	Michigan	722513	Limited-service restaurants	72	6692.0	121731.0	1483491.2
+19785	26	26	0	Michigan	722514	Cafeterias, grill buffets, and buffets	72	156.8	1803.6	22906.8
+19786	26	26	0	Michigan	722515	Snack and nonalcoholic beverage bars	72	1516.2	14794.2	200773.6
+19787	26	26	0	Michigan	811111	General automotive repair	81	2543.6	10947.6	390017.6
+19788	26	26	0	Michigan	811112	Automotive exhaust system repair	81	84.8	422.6	13029.8
+19789	26	26	0	Michigan	811113	Automotive transmission repair	81	166.2	655.0	22400.0
+19790	26	26	0	Michigan	811118	Other automotive mechanical and electrical repair and maintenance	81	181.0	716.2	24165.0
+19791	26	26	0	Michigan	811121	Automotive body, paint, and interior repair and maintenance	81	1187.8	6640.4	272155.8
+19792	26	26	0	Michigan	811122	Automotive glass replacement shops	81	221.4	1032.4	36175.0
+19793	26	26	0	Michigan	811191	Automotive oil change and lubrication shops	81	510.0	2744.4	54126.6
+19794	26	26	0	Michigan	811192	Car washes	81	581.6	4386.2	68858.0
+19795	26	26	0	Michigan	811198	All other automotive repair and maintenance	81	153.2	970.4	33815.6
+19796	26	26	0	Michigan	811211	Consumer electronics repair and maintenance	81	65.6	268.0	10498.2
+19797	26	26	0	Michigan	811212	Computer and office machine repair and maintenance	81	131.8	726.6	32382.2
+19798	26	26	0	Michigan	811213	Communication equipment repair and maintenance	81	46.2	179.2	7728.2
+19799	26	26	0	Michigan	811219	Other electronic and precision equipment repair and maintenance	81	123.8	1618.4	97823.0
+19800	26	26	0	Michigan	811310	Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance	81	749.2	6014.8	299012.0
+19801	26	26	0	Michigan	811411	Home and garden equipment repair and maintenance	81	68.6	167.6	4836.6
+19802	26	26	0	Michigan	811412	Appliance repair and maintenance	81	120.8	521.8	19559.2
+19803	26	26	0	Michigan	811420	Reupholstery and furniture repair	81	103.4	382.2	11583.8
+19804	26	26	0	Michigan	811430	Footwear and leather goods repair	81	24.2	49.6	1436.4
+19805	26	26	0	Michigan	811490	Other personal and household goods repair and maintenance	81	458.2	1041.4	33835.0
+19806	26	26	0	Michigan	812111	Barber shops	81	95.6	317.2	6331.6
+19807	26	26	0	Michigan	812112	Beauty salons	81	2306.0	13522.6	245717.0
+19808	26	26	0	Michigan	812113	Nail salons	81	83.4	198.8	4047.6
+19809	26	26	0	Michigan	812191	Diet and weight reducing centers	81	113.8	347.2	10661.2
+19810	26	26	0	Michigan	812199	Other personal care services	81	587.2	2971.2	42792.8
+19811	26	26	0	Michigan	812210	Funeral homes and funeral services	81	565.8	4524.4	135581.4
+19812	26	26	0	Michigan	812220	Cemeteries and crematories	81	144.0	1112.0	42674.6
+19813	26	26	0	Michigan	812310	Coin-operated laundries and drycleaners	81	314.8	1392.6	19890.6
+19814	26	26	0	Michigan	812320	Drycleaning and laundry services (except coin-operated)	81	531.6	3143.4	57401.8
+19815	26	26	0	Michigan	812331	Linen supply	81	36.8	1421.0	40044.4
+19816	26	26	0	Michigan	812332	Industrial launderers	81	56.2	2217.2	93583.4
+19817	26	26	0	Michigan	812910	Pet care (except veterinary) services	81	430.4	2346.8	39668.0
+19818	26	26	0	Michigan	812921	Photofinishing laboratories (except one-hour)	81	11.2	59.2	1656.6
+19819	26	26	0	Michigan	812922	One-hour photofinishing	81	2.4	0.0	0.0
+19820	26	26	0	Michigan	812930	Parking lots and garages	81	143.0	2990.2	52010.8
+19821	26	26	0	Michigan	812990	All other personal services	81	436.2	1225.6	29185.2
+19822	26	26	0	Michigan	813110	Religious organizations	81	5964.0	48579.0	970124.2
+19823	26	26	0	Michigan	813211	Grantmaking foundations	81	294.2	2034.2	129399.8
+19824	26	26	0	Michigan	813212	Voluntary health organizations	81	96.4	1854.2	86618.2
+19825	26	26	0	Michigan	813219	Other grantmaking and giving services	81	97.2	796.0	38166.4
+19826	26	26	0	Michigan	813311	Human rights organizations	81	108.2	841.2	29717.8
+19827	26	26	0	Michigan	813312	Environment, conservation and wildlife organizations	81	162.6	1543.2	52163.4
+19828	26	26	0	Michigan	813319	Other social advocacy organizations	81	176.4	945.8	32476.4
+19829	26	26	0	Michigan	813410	Civic and social organizations	81	896.4	6999.6	117408.4
+19830	26	26	0	Michigan	813910	Business associations	81	460.4	2768.0	156134.0
+19831	26	26	0	Michigan	813920	Professional organizations	81	182.4	2190.6	138464.6
+19832	26	26	0	Michigan	813930	Labor unions and similar labor organizations	81	745.2	7643.8	231184.8
+19833	26	26	0	Michigan	813940	Political organizations	81	44.6	199.0	8980.0
+19834	26	26	0	Michigan	813990	Other similar organizations (except business, professional, labor, and political organizations)	81	332.6	1240.0	39553.4

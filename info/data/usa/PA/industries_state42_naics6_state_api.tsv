@@ -1,0 +1,962 @@
+	id	state	COUNTY	GEO_TTL	relevant_naics	NAICS2012_TTL	NAICS_Sector	estab	emp	payann
+33289	42	42	0	Pennsylvania	113110	Timber tract operations	11	13.0	53.6	2538.4
+33290	42	42	0	Pennsylvania	113210	Forest nurseries and gathering of forest products	11	8.0	66.4	2886.0
+33291	42	42	0	Pennsylvania	113310	Logging	11	205.4	720.8	23359.0
+33292	42	42	0	Pennsylvania	114111	Finfish fishing	11	1.75	0.0	0.0
+33293	42	42	0	Pennsylvania	114119	Other marine fishing	11	3.4	1.8	32.8
+33294	42	42	0	Pennsylvania	114210	Hunting and trapping	11	7.6	7.6	696.2
+33295	42	42	0	Pennsylvania	115111	Cotton ginning	11	1.0	0.0	0.0
+33296	42	42	0	Pennsylvania	115112	Soil preparation, planting, and cultivating	11	26.6	388.4	17211.4
+33297	42	42	0	Pennsylvania	115113	Crop harvesting, primarily by machine	11	5.8	13.2	817.0
+33298	42	42	0	Pennsylvania	115114	Postharvest crop activities (except cotton ginning)	11	14.4	128.0	4464.8
+33299	42	42	0	Pennsylvania	115115	Farm labor contractors and crew leaders	11	6.2	226.8	6450.8
+33300	42	42	0	Pennsylvania	115116	Farm management services	11	6.2	6.4	692.6
+33301	42	42	0	Pennsylvania	115210	Support activities for animal production	11	145.4	762.2	23230.0
+33302	42	42	0	Pennsylvania	115310	Support activities for forestry	11	42.6	80.8	4684.4
+33303	42	42	0	Pennsylvania	211111	Crude petroleum and natural gas extraction	21	198.4	4867.0	569709.0
+33304	42	42	0	Pennsylvania	211112	Natural gas liquid extraction	21	11.8	304.8	39564.8
+33305	42	42	0	Pennsylvania	212111	Bituminous coal and lignite surface mining	21	98.4	1436.0	73943.8
+33306	42	42	0	Pennsylvania	212112	Bituminous coal underground mining	21	43.8	3794.0	319932.0
+33307	42	42	0	Pennsylvania	212113	Anthracite mining	21	51.0	704.8	35405.0
+33308	42	42	0	Pennsylvania	212210	Iron ore mining	21	1.2	0.0	0.0
+33309	42	42	0	Pennsylvania	212299	All other metal ore mining	21	1.3333333333333333	0.0	0.0
+33310	42	42	0	Pennsylvania	212311	Dimension stone mining and quarrying	21	54.8	241.0	10298.0
+33311	42	42	0	Pennsylvania	212312	Crushed and broken limestone mining and quarrying	21	109.4	2121.6	106913.8
+33312	42	42	0	Pennsylvania	212313	Crushed and broken granite mining and quarrying	21	7.6	181.0	10195.0
+33313	42	42	0	Pennsylvania	212319	Other crushed and broken stone mining and quarrying	21	48.0	458.6	23517.8
+33314	42	42	0	Pennsylvania	212321	Construction sand and gravel mining	21	59.8	551.8	26146.6
+33315	42	42	0	Pennsylvania	212322	Industrial sand mining	21	3.0	0.0	0.0
+33316	42	42	0	Pennsylvania	212324	Kaolin and ball clay mining	21	1.0	0.0	0.0
+33317	42	42	0	Pennsylvania	212325	Clay and ceramic and refractory minerals mining	21	2.0	0.0	0.0
+33318	42	42	0	Pennsylvania	212399	All other nonmetallic mineral mining	21	6.8	18.6	888.6
+33319	42	42	0	Pennsylvania	213111	Drilling oil and gas wells	21	87.0	3664.4	286394.0
+33320	42	42	0	Pennsylvania	213112	Support activities for oil and gas operations	21	272.6	9308.2	682335.2
+33321	42	42	0	Pennsylvania	213113	Support activities for coal mining	21	50.6	898.8	53901.4
+33322	42	42	0	Pennsylvania	213114	Support activities for metal mining	21	4.8	5.8	300.8
+33323	42	42	0	Pennsylvania	213115	Support activities for nonmetallic minerals (except fuels) mining	21	16.0	138.6	6955.6
+33324	42	42	0	Pennsylvania	221111	Hydroelectric power generation	22	11.2	48.8	7283.8
+33325	42	42	0	Pennsylvania	221112	Fossil fuel electric power generation	22	71.4	3490.4	380723.4
+33326	42	42	0	Pennsylvania	221113	Nuclear electric power generation	22	8.0	1805.2	240900.0
+33327	42	42	0	Pennsylvania	221114	Solar electric power generation	22	2.0	3.4	458.0
+33328	42	42	0	Pennsylvania	221115	Wind electric power generation	22	4.0	1.8	245.4
+33329	42	42	0	Pennsylvania	221116	Geothermal electric power generation	22	1.0	0.0	0.0
+33330	42	42	0	Pennsylvania	221117	Biomass electric power generation	22	3.8	13.0	722.2
+33331	42	42	0	Pennsylvania	221118	Other electric power generation	22	9.8	71.6	7799.4
+33332	42	42	0	Pennsylvania	221121	Electric bulk power transmission and control	22	21.6	772.4	99579.6
+33333	42	42	0	Pennsylvania	221122	Electric power distribution	22	312.4	5014.6	579144.4
+33334	42	42	0	Pennsylvania	221210	Natural gas distribution	22	166.6	2708.6	237112.4
+33335	42	42	0	Pennsylvania	221310	Water supply and irrigation systems	22	145.2	1457.6	139624.0
+33336	42	42	0	Pennsylvania	221320	Sewage treatment facilities	22	45.4	439.2	20719.4
+33337	42	42	0	Pennsylvania	221330	Steam and air-conditioning supply	22	10.4	354.0	34881.8
+33338	42	42	0	Pennsylvania	236115	New single-family housing construction (except for-sale builders)	23	1465.8	5402.2	245040.2
+33339	42	42	0	Pennsylvania	236116	New multifamily housing construction (except for-sale builders)	23	77.6	603.6	37608.6
+33340	42	42	0	Pennsylvania	236117	New housing for-sale builders	23	390.4	3893.8	257469.4
+33341	42	42	0	Pennsylvania	236118	Residential remodelers	23	4752.0	15257.8	555205.0
+33342	42	42	0	Pennsylvania	236210	Industrial building construction	23	166.6	2990.0	242766.2
+33343	42	42	0	Pennsylvania	236220	Commercial and institutional building construction	23	1590.0	22140.8	1494922.4
+33344	42	42	0	Pennsylvania	237110	Water and sewer line and related structures construction	23	332.2	5598.6	348292.8
+33345	42	42	0	Pennsylvania	237120	Oil and gas pipeline and related structures construction	23	85.2	3507.4	234098.0
+33346	42	42	0	Pennsylvania	237130	Power and communication line and related structures construction	23	159.4	12158.6	731214.2
+33347	42	42	0	Pennsylvania	237210	Land subdivision	23	167.0	757.6	47872.2
+33348	42	42	0	Pennsylvania	237310	Highway, street, and bridge construction	23	396.2	12661.6	1036714.8
+33349	42	42	0	Pennsylvania	237990	Other heavy and civil engineering construction	23	94.2	1403.4	82430.0
+33350	42	42	0	Pennsylvania	238110	Poured concrete foundation and structure contractors	23	719.0	5357.6	308624.0
+33351	42	42	0	Pennsylvania	238120	Structural steel and precast concrete contractors	23	93.4	1489.4	84850.4
+33352	42	42	0	Pennsylvania	238130	Framing contractors	23	341.0	1370.8	52010.6
+33353	42	42	0	Pennsylvania	238140	Masonry contractors	23	1128.2	6159.6	314731.6
+33354	42	42	0	Pennsylvania	238150	Glass and glazing contractors	23	147.2	1695.4	99600.2
+33355	42	42	0	Pennsylvania	238160	Roofing contractors	23	720.6	8751.4	431976.4
+33356	42	42	0	Pennsylvania	238170	Siding contractors	23	300.4	1358.0	60008.8
+33357	42	42	0	Pennsylvania	238190	Other foundation, structure, and building exterior contractors	23	156.8	1361.0	86820.6
+33358	42	42	0	Pennsylvania	238210	Electrical contractors and other wiring installation contractors	23	2488.4	24901.4	1527609.6
+33359	42	42	0	Pennsylvania	238220	Plumbing, heating, and air-conditioning contractors	23	3803.4	36930.6	2176719.4
+33360	42	42	0	Pennsylvania	238290	Other building equipment contractors	23	274.8	5459.4	322921.2
+33361	42	42	0	Pennsylvania	238310	Drywall and insulation contractors	23	494.6	5903.2	326357.4
+33362	42	42	0	Pennsylvania	238320	Painting and wall covering contractors	23	1097.4	4742.4	228996.0
+33363	42	42	0	Pennsylvania	238330	Flooring contractors	23	489.4	2199.0	99899.0
+33364	42	42	0	Pennsylvania	238340	Tile and terrazzo contractors	23	219.8	1477.0	68167.6
+33365	42	42	0	Pennsylvania	238350	Finish carpentry contractors	23	984.6	4075.8	174310.4
+33366	42	42	0	Pennsylvania	238390	Other building finishing contractors	23	255.0	1901.8	92784.0
+33367	42	42	0	Pennsylvania	238910	Site preparation contractors	23	1680.2	15759.0	877813.8
+33368	42	42	0	Pennsylvania	238990	All other specialty trade contractors	23	1241.4	8312.8	451841.8
+33369	42	42	0	Pennsylvania	311111	Dog and cat food manufacturing	31	17.0	1869.2	109331.8
+33370	42	42	0	Pennsylvania	311119	Other animal food manufacturing	31	80.2	1342.0	63580.0
+33371	42	42	0	Pennsylvania	311211	Flour milling	31	15.8	311.0	25082.6
+33372	42	42	0	Pennsylvania	311221	Wet corn milling	31	1.4	0.0	0.0
+33373	42	42	0	Pennsylvania	311224	Soybean and other oilseed processing	31	2.0	0.0	0.0
+33374	42	42	0	Pennsylvania	311225	Fats and oils refining and blending	31	3.0	0.0	0.0
+33375	42	42	0	Pennsylvania	311230	Breakfast cereal manufacturing	31	3.0	0.0	0.0
+33376	42	42	0	Pennsylvania	311314	Cane sugar manufacturing	31	1.0	0.0	0.0
+33377	42	42	0	Pennsylvania	311340	Nonchocolate confectionery manufacturing	31	26.4	1480.6	77292.0
+33378	42	42	0	Pennsylvania	311351	Chocolate and confectionery manufacturing from cacao beans	31	11.8	1740.6	99197.2
+33379	42	42	0	Pennsylvania	311352	Confectionery manufacturing from purchased chocolate	31	103.4	5579.8	244751.0
+33380	42	42	0	Pennsylvania	311411	Frozen fruit, juice, and vegetable manufacturing	31	5.2	228.8	9364.8
+33381	42	42	0	Pennsylvania	311412	Frozen specialty food manufacturing	31	23.4	1368.2	54211.2
+33382	42	42	0	Pennsylvania	311421	Fruit and vegetable canning	31	26.2	2225.4	93886.2
+33383	42	42	0	Pennsylvania	311422	Specialty canning	31	5.2	2034.0	99832.0
+33384	42	42	0	Pennsylvania	311423	Dried and dehydrated food manufacturing	31	2.8	152.0	6322.2
+33385	42	42	0	Pennsylvania	311511	Fluid milk manufacturing	31	31.6	3649.8	159206.8
+33386	42	42	0	Pennsylvania	311512	Creamery butter manufacturing	31	1.8	0.0	0.0
+33387	42	42	0	Pennsylvania	311513	Cheese manufacturing	31	24.0	1227.2	62905.2
+33388	42	42	0	Pennsylvania	311514	Dry, condensed, and evaporated dairy product manufacturing	31	5.6	168.8	11565.2
+33389	42	42	0	Pennsylvania	311520	Ice cream and frozen dessert manufacturing	31	17.8	536.6	25088.4
+33390	42	42	0	Pennsylvania	311611	Animal (except poultry) slaughtering	31	61.0	5662.2	217783.0
+33391	42	42	0	Pennsylvania	311612	Meat processed from carcasses	31	53.6	4697.4	203193.4
+33392	42	42	0	Pennsylvania	311613	Rendering and meat byproduct processing	31	8.2	439.8	22942.8
+33393	42	42	0	Pennsylvania	311615	Poultry processing	31	18.6	4354.4	141789.2
+33394	42	42	0	Pennsylvania	311710	Seafood product preparation and packaging	31	3.4	13.2	541.8
+33395	42	42	0	Pennsylvania	311811	Retail bakeries	31	311.6	2795.6	44985.4
+33396	42	42	0	Pennsylvania	311812	Commercial bakeries	31	131.0	5468.6	226207.0
+33397	42	42	0	Pennsylvania	311813	Frozen cakes, pies, and other pastries manufacturing	31	12.2	2139.8	84291.4
+33398	42	42	0	Pennsylvania	311821	Cookie and cracker manufacturing	31	21.8	2938.2	158603.6
+33399	42	42	0	Pennsylvania	311824	Dry pasta, dough, and flour mixes manufacturing from purchased flour	31	19.4	652.4	26269.4
+33400	42	42	0	Pennsylvania	311830	Tortilla manufacturing	31	2.6	0.0	0.0
+33401	42	42	0	Pennsylvania	311911	Roasted nuts and peanut butter manufacturing	31	5.6	90.6	4566.4
+33402	42	42	0	Pennsylvania	311919	Other snack food manufacturing	31	50.6	5334.4	247862.0
+33403	42	42	0	Pennsylvania	311920	Coffee and tea manufacturing	31	10.8	0.0	0.0
+33404	42	42	0	Pennsylvania	311930	Flavoring syrup and concentrate manufacturing	31	5.0	702.4	34182.4
+33405	42	42	0	Pennsylvania	311941	Mayonnaise, dressing, and other prepared sauce manufacturing	31	10.8	365.6	30609.8
+33406	42	42	0	Pennsylvania	311942	Spice and extract manufacturing	31	8.2	327.0	27802.0
+33407	42	42	0	Pennsylvania	311991	Perishable prepared food manufacturing	31	31.2	1554.8	50766.4
+33408	42	42	0	Pennsylvania	311999	All other miscellaneous food manufacturing	31	22.6	953.6	43629.4
+33409	42	42	0	Pennsylvania	312111	Soft drink manufacturing	31	22.2	1780.8	111892.6
+33410	42	42	0	Pennsylvania	312112	Bottled water manufacturing	31	14.6	1248.6	63317.2
+33411	42	42	0	Pennsylvania	312113	Ice manufacturing	31	18.4	233.8	8215.6
+33412	42	42	0	Pennsylvania	312120	Breweries	31	71.4	2613.2	130523.0
+33413	42	42	0	Pennsylvania	312130	Wineries	31	90.6	867.8	16498.8
+33414	42	42	0	Pennsylvania	312140	Distilleries	31	15.8	104.2	4626.8
+33415	42	42	0	Pennsylvania	312230	Tobacco manufacturing	31	11.0	808.8	39631.2
+33416	42	42	0	Pennsylvania	313110	Fiber, yarn, and thread mills	31	16.8	454.4	15171.0
+33417	42	42	0	Pennsylvania	313210	Broadwoven fabric mills	31	15.2	771.6	31634.2
+33418	42	42	0	Pennsylvania	313220	Narrow fabric mills and schiffli machine embroidery	31	19.4	770.4	32062.2
+33419	42	42	0	Pennsylvania	313230	Nonwoven fabric mills	31	11.6	1176.2	60752.4
+33420	42	42	0	Pennsylvania	313240	Knit fabric mills	31	10.0	286.2	26783.8
+33421	42	42	0	Pennsylvania	313310	Textile and fabric finishing mills	31	23.8	215.2	8584.0
+33422	42	42	0	Pennsylvania	313320	Fabric coating mills	31	9.4	270.0	15401.2
+33423	42	42	0	Pennsylvania	314110	Carpet and rug mills	31	6.2	0.0	7971.8
+33424	42	42	0	Pennsylvania	314120	Curtain and linen mills	31	62.6	928.8	34969.2
+33425	42	42	0	Pennsylvania	314910	Textile bag and canvas mills	31	58.4	527.8	19906.4
+33426	42	42	0	Pennsylvania	314994	Rope, cordage, twine, tire cord, and tire fabric mills	31	7.2	176.8	10380.4
+33427	42	42	0	Pennsylvania	314999	All other miscellaneous textile product mills	31	97.8	1091.6	31159.8
+33428	42	42	0	Pennsylvania	315110	Hosiery and sock mills	31	5.2	44.8	2103.4
+33429	42	42	0	Pennsylvania	315190	Other apparel knitting mills	31	4.4	43.8	753.0
+33430	42	42	0	Pennsylvania	315210	Cut and sew apparel contractors	31	75.4	1194.4	25529.8
+33431	42	42	0	Pennsylvania	315220	Men's and boys' cut and sew apparel manufacturing	31	24.0	665.2	19690.6
+33432	42	42	0	Pennsylvania	315240	Women's, girls', and infants' cut and sew apparel manufacturing	31	23.0	313.0	10170.4
+33433	42	42	0	Pennsylvania	315280	Other cut and sew apparel manufacturing	31	19.6	846.2	26734.4
+33434	42	42	0	Pennsylvania	315990	Apparel accessories and other apparel manufacturing	31	22.2	182.2	5831.8
+33435	42	42	0	Pennsylvania	316110	Leather and hide tanning and finishing	31	10.2	69.8	2408.6
+33436	42	42	0	Pennsylvania	316210	Footwear manufacturing	31	7.6	209.4	7931.0
+33437	42	42	0	Pennsylvania	316992	Women's handbag and purse manufacturing	31	4.0	16.8	744.6
+33438	42	42	0	Pennsylvania	316998	All other leather good and allied product manufacturing	31	23.2	212.2	6604.4
+33439	42	42	0	Pennsylvania	321113	Sawmills	32	241.4	3514.0	122460.0
+33440	42	42	0	Pennsylvania	321114	Wood preservation	32	13.8	365.0	17336.2
+33441	42	42	0	Pennsylvania	321211	Hardwood veneer and plywood manufacturing	32	15.0	471.8	15188.0
+33442	42	42	0	Pennsylvania	321212	Softwood veneer and plywood manufacturing	32	1.4	0.0	0.0
+33443	42	42	0	Pennsylvania	321213	Engineered wood member (except truss) manufacturing	32	3.6	0.0	0.0
+33444	42	42	0	Pennsylvania	321214	Truss manufacturing	32	23.8	787.8	30192.4
+33445	42	42	0	Pennsylvania	321219	Reconstituted wood product manufacturing	32	9.0	481.0	24955.0
+33446	42	42	0	Pennsylvania	321911	Wood window and door manufacturing	32	58.2	2709.4	107915.0
+33447	42	42	0	Pennsylvania	321912	Cut stock, resawing lumber, and planing	32	50.4	1308.8	44486.2
+33448	42	42	0	Pennsylvania	321918	Other millwork (including flooring)	32	91.8	997.2	35382.2
+33449	42	42	0	Pennsylvania	321920	Wood container and pallet manufacturing	32	183.8	3156.6	99518.0
+33450	42	42	0	Pennsylvania	321991	Manufactured home (mobile home) manufacturing	32	18.2	1484.0	60128.8
+33451	42	42	0	Pennsylvania	321992	Prefabricated wood building manufacturing	32	86.2	2567.0	97579.8
+33452	42	42	0	Pennsylvania	321999	All other miscellaneous wood product manufacturing	32	140.0	1603.6	58722.0
+33453	42	42	0	Pennsylvania	322110	Pulp mills	32	1.8	0.0	0.0
+33454	42	42	0	Pennsylvania	322121	Paper (except newsprint) mills	32	9.6	4941.2	334448.2
+33455	42	42	0	Pennsylvania	322130	Paperboard mills	32	7.8	632.8	46197.6
+33456	42	42	0	Pennsylvania	322211	Corrugated and solid fiber box manufacturing	32	70.0	5049.6	292018.6
+33457	42	42	0	Pennsylvania	322212	Folding paperboard box manufacturing	32	24.4	979.4	53332.6
+33458	42	42	0	Pennsylvania	322219	Other paperboard container manufacturing	32	16.0	1354.2	63435.8
+33459	42	42	0	Pennsylvania	322220	Paper bag and coated and treated paper manufacturing	32	42.6	3530.8	223466.6
+33460	42	42	0	Pennsylvania	322230	Stationery product manufacturing	32	31.0	2511.4	99623.2
+33461	42	42	0	Pennsylvania	322291	Sanitary paper product manufacturing	32	12.4	1053.4	55825.0
+33462	42	42	0	Pennsylvania	322299	All other converted paper product manufacturing	32	17.0	822.4	31679.8
+33463	42	42	0	Pennsylvania	323111	Commercial printing (except screen and books)	32	832.4	21523.6	1017024.6
+33464	42	42	0	Pennsylvania	323113	Commercial screen printing	32	209.2	2277.4	75286.6
+33465	42	42	0	Pennsylvania	323117	Books printing	32	21.6	2121.4	87982.8
+33466	42	42	0	Pennsylvania	323120	Support activities for printing	32	54.2	2376.6	109730.0
+33467	42	42	0	Pennsylvania	324110	Petroleum refineries	32	8.4	2490.0	263569.0
+33468	42	42	0	Pennsylvania	324121	Asphalt paving mixture and block manufacturing	32	108.4	1130.8	64925.8
+33469	42	42	0	Pennsylvania	324122	Asphalt shingle and coating materials manufacturing	32	9.4	394.6	19436.2
+33470	42	42	0	Pennsylvania	324191	Petroleum lubricating oil and grease manufacturing	32	15.0	559.0	33862.4
+33471	42	42	0	Pennsylvania	324199	All other petroleum and coal products manufacturing	32	12.8	586.6	33926.6
+33472	42	42	0	Pennsylvania	325110	Petrochemical manufacturing	32	1.8	0.0	0.0
+33473	42	42	0	Pennsylvania	325120	Industrial gas manufacturing	32	18.8	686.8	53639.0
+33474	42	42	0	Pennsylvania	325130	Synthetic dye and pigment manufacturing	32	17.8	932.4	66254.2
+33475	42	42	0	Pennsylvania	325180	Other basic inorganic chemical manufacturing	32	25.2	833.6	63200.6
+33476	42	42	0	Pennsylvania	325193	Ethyl alcohol manufacturing	32	1.2	0.0	0.0
+33477	42	42	0	Pennsylvania	325194	Cyclic crude, intermediate, and gum and wood chemical manufacturing	32	6.0	191.4	17485.0
+33478	42	42	0	Pennsylvania	325199	All other basic organic chemical manufacturing	32	33.4	1379.4	99294.4
+33479	42	42	0	Pennsylvania	325211	Plastics material and resin manufacturing	32	54.8	3030.0	191289.0
+33480	42	42	0	Pennsylvania	325212	Synthetic rubber manufacturing	32	2.0	0.0	0.0
+33481	42	42	0	Pennsylvania	325220	Artificial and synthetic fibers and filaments manufacturing	32	3.8	76.6	4588.8
+33482	42	42	0	Pennsylvania	325311	Nitrogenous fertilizer manufacturing	32	6.2	81.2	4272.6
+33483	42	42	0	Pennsylvania	325312	Phosphatic fertilizer manufacturing	32	3.6	71.2	4316.6
+33484	42	42	0	Pennsylvania	325314	Fertilizer (mixing only) manufacturing	32	19.8	358.0	19170.0
+33485	42	42	0	Pennsylvania	325320	Pesticide and other agricultural chemical manufacturing	32	5.2	76.6	9122.2
+33486	42	42	0	Pennsylvania	325411	Medicinal and botanical manufacturing	32	12.8	792.2	83547.8
+33487	42	42	0	Pennsylvania	325412	Pharmaceutical preparation manufacturing	32	51.4	4803.2	406093.6
+33488	42	42	0	Pennsylvania	325413	In-vitro diagnostic substance manufacturing	32	5.6	166.0	9680.4
+33489	42	42	0	Pennsylvania	325414	Biological product (except diagnostic) manufacturing	32	18.8	4972.6	544736.6
+33490	42	42	0	Pennsylvania	325510	Paint and coating manufacturing	32	61.0	2544.8	183395.4
+33491	42	42	0	Pennsylvania	325520	Adhesive manufacturing	32	22.8	964.0	65041.6
+33492	42	42	0	Pennsylvania	325611	Soap and other detergent manufacturing	32	26.8	464.2	28926.2
+33493	42	42	0	Pennsylvania	325612	Polish and other sanitation good manufacturing	32	22.2	596.0	33704.0
+33494	42	42	0	Pennsylvania	325613	Surface active agent manufacturing	32	6.0	42.0	2869.0
+33495	42	42	0	Pennsylvania	325620	Toilet preparation manufacturing	32	28.8	3178.0	106589.2
+33496	42	42	0	Pennsylvania	325910	Printing ink manufacturing	32	17.8	219.6	11968.6
+33497	42	42	0	Pennsylvania	325920	Explosives manufacturing	32	3.2	110.6	5849.2
+33498	42	42	0	Pennsylvania	325991	Custom compounding of purchased resins	32	27.0	891.6	42097.8
+33499	42	42	0	Pennsylvania	325992	Photographic film, paper, plate, and chemical manufacturing	32	18.6	169.4	10107.8
+33500	42	42	0	Pennsylvania	325998	All other miscellaneous chemical product and preparation manufacturing	32	59.0	1519.2	116228.8
+33501	42	42	0	Pennsylvania	326111	Plastics bag and pouch manufacturing	32	13.2	1508.0	61479.6
+33502	42	42	0	Pennsylvania	326112	Plastics packaging film and sheet (including laminated) manufacturing	32	18.8	2125.4	112975.4
+33503	42	42	0	Pennsylvania	326113	Unlaminated plastics film and sheet (except packaging) manufacturing	32	24.2	2147.8	123355.8
+33504	42	42	0	Pennsylvania	326121	Unlaminated plastics profile shape manufacturing	32	23.4	1687.8	84588.0
+33505	42	42	0	Pennsylvania	326122	Plastics pipe and pipe fitting manufacturing	32	17.0	1040.2	48568.6
+33506	42	42	0	Pennsylvania	326130	Laminated plastics plate, sheet (except packaging), and shape manufacturing	32	14.2	375.8	43391.8
+33507	42	42	0	Pennsylvania	326140	Polystyrene foam product manufacturing	32	18.0	2453.8	116371.8
+33508	42	42	0	Pennsylvania	326150	Urethane and other foam product (except polystyrene) manufacturing	32	23.6	1321.0	58333.0
+33509	42	42	0	Pennsylvania	326160	Plastics bottle manufacturing	32	31.4	934.8	67182.2
+33510	42	42	0	Pennsylvania	326191	Plastics plumbing fixture manufacturing	32	14.8	577.0	20512.6
+33511	42	42	0	Pennsylvania	326199	All other plastics product manufacturing	32	319.4	16214.2	689778.0
+33512	42	42	0	Pennsylvania	326211	Tire manufacturing (except retreading)	32	4.6	483.2	22653.8
+33513	42	42	0	Pennsylvania	326212	Tire retreading	32	24.4	601.4	24070.2
+33514	42	42	0	Pennsylvania	326220	Rubber and plastics hoses and belting manufacturing	32	10.4	611.4	32762.0
+33515	42	42	0	Pennsylvania	326291	Rubber product manufacturing for mechanical use	32	12.2	825.4	46568.0
+33516	42	42	0	Pennsylvania	326299	All other rubber product manufacturing	32	31.6	1614.2	87262.0
+33517	42	42	0	Pennsylvania	327110	Pottery, ceramics, and plumbing fixture manufacturing	32	29.0	676.4	28776.4
+33518	42	42	0	Pennsylvania	327120	Clay building material and refractories manufacturing	32	48.0	2097.4	116047.6
+33519	42	42	0	Pennsylvania	327211	Flat glass manufacturing	32	6.8	862.6	41176.0
+33520	42	42	0	Pennsylvania	327212	Other pressed and blown glass and glassware manufacturing	32	26.4	879.6	49595.2
+33521	42	42	0	Pennsylvania	327213	Glass container manufacturing	32	5.2	168.8	11359.4
+33522	42	42	0	Pennsylvania	327215	Glass product manufacturing made of purchased glass	32	64.6	2473.8	118313.4
+33523	42	42	0	Pennsylvania	327310	Cement manufacturing	32	18.2	875.2	58073.4
+33524	42	42	0	Pennsylvania	327320	Ready-mix concrete manufacturing	32	182.6	2095.0	103290.6
+33525	42	42	0	Pennsylvania	327331	Concrete block and brick manufacturing	32	48.0	867.6	41868.6
+33526	42	42	0	Pennsylvania	327332	Concrete pipe manufacturing	32	12.0	196.6	6982.4
+33527	42	42	0	Pennsylvania	327390	Other concrete product manufacturing	32	126.8	3321.2	147932.2
+33528	42	42	0	Pennsylvania	327410	Lime manufacturing	32	9.0	308.8	23882.2
+33529	42	42	0	Pennsylvania	327420	Gypsum product manufacturing	32	5.8	52.4	3301.0
+33530	42	42	0	Pennsylvania	327910	Abrasive product manufacturing	32	20.6	557.6	32682.2
+33531	42	42	0	Pennsylvania	327991	Cut stone and stone product manufacturing	32	86.6	1222.8	50005.0
+33532	42	42	0	Pennsylvania	327992	Ground or treated mineral and earth manufacturing	32	21.4	468.2	24377.8
+33533	42	42	0	Pennsylvania	327993	Mineral wool manufacturing	32	12.2	512.0	29554.6
+33534	42	42	0	Pennsylvania	327999	All other miscellaneous nonmetallic mineral product manufacturing	32	22.0	628.6	42623.2
+33535	42	42	0	Pennsylvania	331110	Iron and steel mills and ferroalloy manufacturing	33	61.0	16663.4	1255049.4
+33536	42	42	0	Pennsylvania	331210	Iron and steel pipe and tube manufacturing from purchased steel	33	16.6	1336.0	75082.6
+33537	42	42	0	Pennsylvania	331221	Rolled steel shape manufacturing	33	17.8	759.2	63061.4
+33538	42	42	0	Pennsylvania	331222	Steel wire drawing	33	22.4	1614.8	75046.8
+33539	42	42	0	Pennsylvania	331313	Alumina refining and primary aluminum production	33	2.2	0.0	0.0
+33540	42	42	0	Pennsylvania	331314	Secondary smelting and alloying of aluminum	33	3.0	130.8	6070.2
+33541	42	42	0	Pennsylvania	331315	Aluminum sheet, plate, and foil manufacturing	33	3.4	0.0	0.0
+33542	42	42	0	Pennsylvania	331318	Other aluminum rolling, drawing, and extruding	33	11.6	1140.2	99334.8
+33543	42	42	0	Pennsylvania	331410	Nonferrous metal (except aluminum) smelting and refining	33	15.0	290.4	18843.8
+33544	42	42	0	Pennsylvania	331420	Copper rolling, drawing, extruding, and alloying	33	15.0	1544.4	87677.6
+33545	42	42	0	Pennsylvania	331491	Nonferrous metal (except copper and aluminum) rolling, drawing, extruding, and alloying	33	29.2	1341.6	90226.4
+33546	42	42	0	Pennsylvania	331492	Secondary smelting, refining, and alloying of nonferrous metal (except copper and aluminum)	33	32.0	2228.8	148242.4
+33547	42	42	0	Pennsylvania	331511	Iron foundries	33	27.8	3005.6	139465.6
+33548	42	42	0	Pennsylvania	331512	Steel investment foundries	33	7.6	467.0	16670.2
+33549	42	42	0	Pennsylvania	331513	Steel foundries (except investment)	33	15.2	1099.6	57686.4
+33550	42	42	0	Pennsylvania	331523	Nonferrous metal die-casting foundries	33	25.0	1152.6	49208.4
+33551	42	42	0	Pennsylvania	331524	Aluminum foundries (except die-casting)	33	23.4	990.2	40193.6
+33552	42	42	0	Pennsylvania	331529	Other nonferrous metal foundries (except die-casting)	33	31.4	1481.6	89155.2
+33553	42	42	0	Pennsylvania	332111	Iron and steel forging	33	27.6	2455.0	139349.4
+33554	42	42	0	Pennsylvania	332112	Nonferrous forging	33	2.6	0.0	0.0
+33555	42	42	0	Pennsylvania	332114	Custom roll forming	33	34.0	1249.6	70606.4
+33556	42	42	0	Pennsylvania	332117	Powder metallurgy part manufacturing	33	47.6	4078.0	181410.0
+33557	42	42	0	Pennsylvania	332119	Metal crown, closure, and other metal stamping (except automotive)	33	60.6	3743.4	187594.0
+33558	42	42	0	Pennsylvania	332215	Metal kitchen cookware, utensil, cutlery, and flatware (except precious) manufacturing	33	8.8	637.6	24502.2
+33559	42	42	0	Pennsylvania	332216	Saw blade and handtool manufacturing	33	54.8	1562.6	79518.2
+33560	42	42	0	Pennsylvania	332311	Prefabricated metal building and component manufacturing	33	27.0	1171.4	56182.2
+33561	42	42	0	Pennsylvania	332312	Fabricated structural metal manufacturing	33	160.2	5174.2	258608.2
+33562	42	42	0	Pennsylvania	332313	Plate work manufacturing	33	101.4	3334.2	160000.8
+33563	42	42	0	Pennsylvania	332321	Metal window and door manufacturing	33	45.4	3405.6	153823.8
+33564	42	42	0	Pennsylvania	332322	Sheet metal work manufacturing	33	185.0	4928.2	237596.0
+33565	42	42	0	Pennsylvania	332323	Ornamental and architectural metal work manufacturing	33	98.6	1485.0	76760.0
+33566	42	42	0	Pennsylvania	332410	Power boiler and heat exchanger manufacturing	33	13.0	894.4	45601.6
+33567	42	42	0	Pennsylvania	332420	Metal tank (heavy gauge) manufacturing	33	43.8	1842.8	108895.8
+33568	42	42	0	Pennsylvania	332431	Metal can manufacturing	33	11.6	1164.8	65678.6
+33569	42	42	0	Pennsylvania	332439	Other metal container manufacturing	33	16.2	646.6	29318.2
+33570	42	42	0	Pennsylvania	332510	Hardware manufacturing	33	29.2	1018.6	53020.6
+33571	42	42	0	Pennsylvania	332613	Spring manufacturing	33	23.2	901.8	49689.8
+33572	42	42	0	Pennsylvania	332618	Other fabricated wire product manufacturing	33	50.8	1913.2	78536.6
+33573	42	42	0	Pennsylvania	332710	Machine shops	33	990.8	13981.0	665521.0
+33574	42	42	0	Pennsylvania	332721	Precision turned product manufacturing	33	166.8	4729.0	224186.6
+33575	42	42	0	Pennsylvania	332722	Bolt, nut, screw, rivet, and washer manufacturing	33	41.6	2261.4	154714.0
+33576	42	42	0	Pennsylvania	332811	Metal heat treating	33	43.8	931.2	49986.6
+33577	42	42	0	Pennsylvania	332812	Metal coating, engraving (except jewelry and silverware), and allied services to manufacturers	33	123.6	2663.2	134992.6
+33578	42	42	0	Pennsylvania	332813	Electroplating, plating, polishing, anodizing, and coloring	33	94.0	1736.8	73483.6
+33579	42	42	0	Pennsylvania	332911	Industrial valve manufacturing	33	40.0	1902.0	108642.0
+33580	42	42	0	Pennsylvania	332912	Fluid power valve and hose fitting manufacturing	33	15.4	565.2	29682.6
+33581	42	42	0	Pennsylvania	332913	Plumbing fixture fitting and trim manufacturing	33	5.0	54.4	4391.2
+33582	42	42	0	Pennsylvania	332919	Other metal valve and pipe fitting manufacturing	33	19.4	1939.6	95640.6
+33583	42	42	0	Pennsylvania	332991	Ball and roller bearing manufacturing	33	9.2	178.4	11929.0
+33584	42	42	0	Pennsylvania	332992	Small arms ammunition manufacturing	33	5.2	18.8	982.4
+33585	42	42	0	Pennsylvania	332993	Ammunition (except small arms) manufacturing	33	4.6	177.2	15576.0
+33586	42	42	0	Pennsylvania	332994	Small arms, ordnance, and ordnance accessories manufacturing	33	21.6	374.8	17063.8
+33587	42	42	0	Pennsylvania	332996	Fabricated pipe and pipe fitting manufacturing	33	44.8	1627.2	78692.6
+33588	42	42	0	Pennsylvania	332999	All other miscellaneous fabricated metal product manufacturing	33	215.8	3353.2	156145.4
+33589	42	42	0	Pennsylvania	333111	Farm machinery and equipment manufacturing	33	47.2	1144.0	64030.8
+33590	42	42	0	Pennsylvania	333112	Lawn and garden tractor and home lawn and garden equipment manufacturing	33	7.8	180.6	8596.8
+33591	42	42	0	Pennsylvania	333120	Construction machinery manufacturing	33	23.0	3184.8	176459.2
+33592	42	42	0	Pennsylvania	333131	Mining machinery and equipment manufacturing	33	20.2	2687.2	163613.8
+33593	42	42	0	Pennsylvania	333132	Oil and gas field machinery and equipment manufacturing	33	14.0	487.0	29196.6
+33594	42	42	0	Pennsylvania	333241	Food product machinery manufacturing	33	17.4	456.4	28350.2
+33595	42	42	0	Pennsylvania	333242	Semiconductor machinery manufacturing	33	4.4	181.8	13461.4
+33596	42	42	0	Pennsylvania	333243	Sawmill, woodworking, and paper machinery manufacturing	33	17.0	270.8	22776.8
+33597	42	42	0	Pennsylvania	333244	Printing machinery and equipment manufacturing	33	14.8	237.8	13455.0
+33598	42	42	0	Pennsylvania	333249	Other industrial machinery manufacturing	33	96.2	3662.6	241229.6
+33599	42	42	0	Pennsylvania	333314	Optical instrument and lens manufacturing	33	18.4	946.0	61278.0
+33600	42	42	0	Pennsylvania	333316	Photographic and photocopying equipment manufacturing	33	4.4	0.0	0.0
+33601	42	42	0	Pennsylvania	333318	Other commercial and service industry machinery manufacturing	33	64.4	2443.0	163463.2
+33602	42	42	0	Pennsylvania	333413	Industrial and commercial fan and blower and air purification equipment manufacturing	33	20.8	271.4	14472.8
+33603	42	42	0	Pennsylvania	333414	Heating equipment (except warm air furnaces) manufacturing	33	30.6	1126.4	68577.4
+33604	42	42	0	Pennsylvania	333415	Air-conditioning and warm air heating equipment and commercial and industrial refrigeration equipment manufacturing	33	50.2	3233.4	185364.8
+33605	42	42	0	Pennsylvania	333511	Industrial mold manufacturing	33	97.6	2054.8	103181.6
+33606	42	42	0	Pennsylvania	333514	Special die and tool, die set, jig, and fixture manufacturing	33	151.8	2322.0	118980.6
+33607	42	42	0	Pennsylvania	333515	Cutting tool and machine tool accessory manufacturing	33	68.6	2037.6	100626.6
+33608	42	42	0	Pennsylvania	333517	Machine tool manufacturing	33	46.2	1265.2	70282.6
+33609	42	42	0	Pennsylvania	333519	Rolling mill and other metalworking machinery manufacturing	33	25.0	809.6	47620.2
+33610	42	42	0	Pennsylvania	333611	Turbine and turbine generator set units manufacturing	33	14.8	1525.2	94961.8
+33611	42	42	0	Pennsylvania	333612	Speed changer, industrial high-speed drive, and gear manufacturing	33	10.2	189.2	10889.4
+33612	42	42	0	Pennsylvania	333613	Mechanical power transmission equipment manufacturing	33	9.0	639.2	32773.6
+33613	42	42	0	Pennsylvania	333618	Other engine equipment manufacturing	33	7.2	333.4	19365.0
+33614	42	42	0	Pennsylvania	333911	Pump and pumping equipment manufacturing	33	21.4	1731.8	129475.8
+33615	42	42	0	Pennsylvania	333912	Air and gas compressor manufacturing	33	13.6	1439.8	98332.4
+33616	42	42	0	Pennsylvania	333913	Measuring and dispensing pump manufacturing	33	1.2	0.0	0.0
+33617	42	42	0	Pennsylvania	333921	Elevator and moving stairway manufacturing	33	8.8	204.4	12354.6
+33618	42	42	0	Pennsylvania	333922	Conveyor and conveying equipment manufacturing	33	40.0	1363.8	76388.0
+33619	42	42	0	Pennsylvania	333923	Overhead traveling crane, hoist, and monorail system manufacturing	33	19.4	1489.2	84097.4
+33620	42	42	0	Pennsylvania	333924	Industrial truck, trailer, and stacker machinery manufacturing	33	11.0	580.0	33290.6
+33621	42	42	0	Pennsylvania	333991	Power-driven handtool manufacturing	33	6.8	242.2	15959.2
+33622	42	42	0	Pennsylvania	333992	Welding and soldering equipment manufacturing	33	14.0	696.2	40145.0
+33623	42	42	0	Pennsylvania	333993	Packaging machinery manufacturing	33	42.2	1041.8	61769.8
+33624	42	42	0	Pennsylvania	333994	Industrial process furnace and oven manufacturing	33	29.4	1158.2	61404.4
+33625	42	42	0	Pennsylvania	333995	Fluid power cylinder and actuator manufacturing	33	8.8	471.0	30359.8
+33626	42	42	0	Pennsylvania	333996	Fluid power pump and motor manufacturing	33	4.6	20.0	1318.4
+33627	42	42	0	Pennsylvania	333997	Scale and balance manufacturing	33	4.4	14.8	613.6
+33628	42	42	0	Pennsylvania	333999	All other miscellaneous general purpose machinery manufacturing	33	85.2	2148.2	133952.8
+33629	42	42	0	Pennsylvania	334111	Electronic computer manufacturing	33	12.6	330.2	22425.4
+33630	42	42	0	Pennsylvania	334112	Computer storage device manufacturing	33	1.0	0.0	0.0
+33631	42	42	0	Pennsylvania	334118	Computer terminal and other computer peripheral equipment manufacturing	33	28.2	1006.4	84565.4
+33632	42	42	0	Pennsylvania	334210	Telephone apparatus manufacturing	33	10.2	882.0	67456.8
+33633	42	42	0	Pennsylvania	334220	Radio and television broadcasting and wireless communications equipment manufacturing	33	26.0	2245.8	208367.8
+33634	42	42	0	Pennsylvania	334290	Other communications equipment manufacturing	33	9.8	426.8	23144.6
+33635	42	42	0	Pennsylvania	334310	Audio and video equipment manufacturing	33	8.6	133.8	6863.2
+33636	42	42	0	Pennsylvania	334412	Bare printed circuit board manufacturing	33	21.0	644.8	27140.4
+33637	42	42	0	Pennsylvania	334413	Semiconductor and related device manufacturing	33	21.4	929.6	62949.0
+33638	42	42	0	Pennsylvania	334416	Capacitor, resistor, coil, transformer, and other inductor manufacturing	33	25.6	1133.8	51018.6
+33639	42	42	0	Pennsylvania	334417	Electronic connector manufacturing	33	16.0	1135.4	63459.0
+33640	42	42	0	Pennsylvania	334418	Printed circuit assembly (electronic assembly) manufacturing	33	49.6	2474.0	112984.2
+33641	42	42	0	Pennsylvania	334419	Other electronic component manufacturing	33	61.8	2517.4	139121.4
+33642	42	42	0	Pennsylvania	334510	Electromedical and electrotherapeutic apparatus manufacturing	33	36.8	5440.8	463979.4
+33643	42	42	0	Pennsylvania	334511	Search, detection, navigation, guidance, aeronautical, and nautical system and instrument manufacturing	33	18.8	1077.6	89859.8
+33644	42	42	0	Pennsylvania	334512	Automatic environmental control manufacturing for residential, commercial, and appliance use	33	18.4	373.0	24416.2
+33645	42	42	0	Pennsylvania	334513	Instruments and related products manufacturing for measuring, displaying, and controlling industrial process variables	33	47.4	2759.0	201903.4
+33646	42	42	0	Pennsylvania	334514	Totalizing fluid meter and counting device manufacturing	33	14.6	1660.8	114026.8
+33647	42	42	0	Pennsylvania	334515	Instrument manufacturing for measuring and testing electricity and electrical systems	33	30.2	1157.2	93405.0
+33648	42	42	0	Pennsylvania	334516	Analytical laboratory instrument manufacturing	33	41.0	2168.8	147955.6
+33649	42	42	0	Pennsylvania	334517	Irradiation apparatus manufacturing	33	6.6	83.4	8256.0
+33650	42	42	0	Pennsylvania	334519	Other measuring and controlling device manufacturing	33	46.0	1525.6	110273.6
+33651	42	42	0	Pennsylvania	334613	Blank magnetic and optical recording media manufacturing	33	3.6	8.0	541.4
+33652	42	42	0	Pennsylvania	334614	Software and other prerecorded compact disc, tape, and record reproducing	33	13.8	157.4	6564.6
+33653	42	42	0	Pennsylvania	335110	Electric lamp bulb and part manufacturing	33	6.2	199.0	9694.8
+33654	42	42	0	Pennsylvania	335121	Residential electric lighting fixture manufacturing	33	14.8	216.8	10527.6
+33655	42	42	0	Pennsylvania	335122	Commercial, industrial, and institutional electric lighting fixture manufacturing	33	18.0	704.4	28625.2
+33656	42	42	0	Pennsylvania	335129	Other lighting equipment manufacturing	33	15.0	960.8	59783.0
+33657	42	42	0	Pennsylvania	335210	Small electrical appliance manufacturing	33	4.6	349.4	14199.0
+33658	42	42	0	Pennsylvania	335221	Household cooking appliance manufacturing	33	2.0	0.0	0.0
+33659	42	42	0	Pennsylvania	335224	Household laundry equipment manufacturing	33	1.0	0.0	0.0
+33660	42	42	0	Pennsylvania	335228	Other major household appliance manufacturing	33	1.0	0.0	0.0
+33661	42	42	0	Pennsylvania	335311	Power, distribution, and specialty transformer manufacturing	33	9.4	159.2	8256.8
+33662	42	42	0	Pennsylvania	335312	Motor and generator manufacturing	33	17.0	518.4	27047.2
+33663	42	42	0	Pennsylvania	335313	Switchgear and switchboard apparatus manufacturing	33	30.6	1655.6	99187.2
+33664	42	42	0	Pennsylvania	335314	Relay and industrial control manufacturing	33	56.4	2128.4	126614.0
+33665	42	42	0	Pennsylvania	335911	Storage battery manufacturing	33	5.8	0.0	0.0
+33666	42	42	0	Pennsylvania	335921	Fiber optic cable manufacturing	33	3.2	24.0	760.4
+33667	42	42	0	Pennsylvania	335929	Other communication and energy wire manufacturing	33	14.8	1511.6	85598.6
+33668	42	42	0	Pennsylvania	335931	Current-carrying wiring device manufacturing	33	24.0	3231.2	207387.0
+33669	42	42	0	Pennsylvania	335932	Noncurrent-carrying wiring device manufacturing	33	8.4	795.8	44715.4
+33670	42	42	0	Pennsylvania	335991	Carbon and graphite product manufacturing	33	14.8	1606.6	87437.2
+33671	42	42	0	Pennsylvania	335999	All other miscellaneous electrical equipment and component manufacturing	33	38.4	893.0	51272.8
+33672	42	42	0	Pennsylvania	336111	Automobile manufacturing	33	2.4	0.0	0.0
+33673	42	42	0	Pennsylvania	336112	Light truck and utility vehicle manufacturing	33	1.0	0.0	0.0
+33674	42	42	0	Pennsylvania	336120	Heavy duty truck manufacturing	33	3.0	0.0	0.0
+33675	42	42	0	Pennsylvania	336211	Motor vehicle body manufacturing	33	52.0	3480.4	152433.8
+33676	42	42	0	Pennsylvania	336212	Truck trailer manufacturing	33	20.4	1380.2	53678.8
+33677	42	42	0	Pennsylvania	336213	Motor home manufacturing	33	1.0	0.0	0.0
+33678	42	42	0	Pennsylvania	336214	Travel trailer and camper manufacturing	33	23.0	950.8	35665.6
+33679	42	42	0	Pennsylvania	336310	Motor vehicle gasoline engine and engine parts manufacturing	33	25.8	275.4	12021.0
+33680	42	42	0	Pennsylvania	336320	Motor vehicle electrical and electronic equipment manufacturing	33	28.6	1305.2	54420.2
+33681	42	42	0	Pennsylvania	336330	Motor vehicle steering and suspension components (except spring) manufacturing	33	7.0	412.4	17168.2
+33682	42	42	0	Pennsylvania	336340	Motor vehicle brake system manufacturing	33	3.0	144.0	4897.6
+33683	42	42	0	Pennsylvania	336350	Motor vehicle transmission and power train parts manufacturing	33	14.8	579.6	32542.6
+33684	42	42	0	Pennsylvania	336360	Motor vehicle seating and interior trim manufacturing	33	5.8	86.8	3875.6
+33685	42	42	0	Pennsylvania	336370	Motor vehicle metal stamping	33	15.4	619.6	26017.6
+33686	42	42	0	Pennsylvania	336390	Other motor vehicle parts manufacturing	33	33.4	801.2	50505.6
+33687	42	42	0	Pennsylvania	336411	Aircraft manufacturing	33	7.2	0.0	0.0
+33688	42	42	0	Pennsylvania	336412	Aircraft engine and engine parts manufacturing	33	7.6	1008.8	67872.4
+33689	42	42	0	Pennsylvania	336413	Other aircraft parts and auxiliary equipment manufacturing	33	16.4	873.4	60800.0
+33690	42	42	0	Pennsylvania	336414	Guided missile and space vehicle manufacturing	33	1.0	0.0	0.0
+33691	42	42	0	Pennsylvania	336415	Guided missile and space vehicle propulsion unit and propulsion unit parts manufacturing	33	1.0	0.0	0.0
+33692	42	42	0	Pennsylvania	336419	Other guided missile and space vehicle parts and auxiliary equipment manufacturing	33	3.0	0.0	0.0
+33693	42	42	0	Pennsylvania	336510	Railroad rolling stock manufacturing	33	39.2	7237.8	602619.6
+33694	42	42	0	Pennsylvania	336611	Ship building and repairing	33	7.2	1250.6	67729.0
+33695	42	42	0	Pennsylvania	336612	Boat building	33	3.0	0.6	59.4
+33696	42	42	0	Pennsylvania	336991	Motorcycle, bicycle, and parts manufacturing	33	6.8	0.0	0.0
+33697	42	42	0	Pennsylvania	336992	Military armored vehicle, tank, and tank component manufacturing	33	4.0	607.8	95370.4
+33698	42	42	0	Pennsylvania	336999	All other transportation equipment manufacturing	33	20.2	167.2	5207.2
+33699	42	42	0	Pennsylvania	337110	Wood kitchen cabinet and countertop manufacturing	33	261.8	5072.6	202888.2
+33700	42	42	0	Pennsylvania	337121	Upholstered household furniture manufacturing	33	31.8	1194.6	37474.2
+33701	42	42	0	Pennsylvania	337122	Nonupholstered wood household furniture manufacturing	33	122.0	1060.0	31843.0
+33702	42	42	0	Pennsylvania	337124	Metal household furniture manufacturing	33	11.4	322.2	14238.6
+33703	42	42	0	Pennsylvania	337125	Household furniture (except wood and metal) manufacturing	33	14.8	251.8	9675.6
+33704	42	42	0	Pennsylvania	337127	Institutional furniture manufacturing	33	27.0	774.4	31686.8
+33705	42	42	0	Pennsylvania	337211	Wood office furniture manufacturing	33	6.2	99.4	3616.0
+33706	42	42	0	Pennsylvania	337212	Custom architectural woodwork and millwork manufacturing	33	112.0	2223.8	114317.8
+33707	42	42	0	Pennsylvania	337214	Office furniture (except wood) manufacturing	33	12.6	1396.6	116149.4
+33708	42	42	0	Pennsylvania	337215	Showcase, partition, shelving, and locker manufacturing	33	49.0	1368.4	70280.4
+33709	42	42	0	Pennsylvania	337910	Mattress manufacturing	33	13.8	763.0	29105.2
+33710	42	42	0	Pennsylvania	337920	Blind and shade manufacturing	33	7.8	277.6	9054.0
+33711	42	42	0	Pennsylvania	339112	Surgical and medical instrument manufacturing	33	67.8	4943.2	306350.8
+33712	42	42	0	Pennsylvania	339113	Surgical appliance and supplies manufacturing	33	104.6	4586.6	229361.0
+33713	42	42	0	Pennsylvania	339114	Dental equipment and supplies manufacturing	33	24.2	632.0	34490.6
+33714	42	42	0	Pennsylvania	339115	Ophthalmic goods manufacturing	33	26.4	540.6	20621.6
+33715	42	42	0	Pennsylvania	339116	Dental laboratories	33	184.0	1570.8	63453.6
+33716	42	42	0	Pennsylvania	339910	Jewelry and silverware manufacturing	33	61.6	259.0	10232.0
+33717	42	42	0	Pennsylvania	339920	Sporting and athletic goods manufacturing	33	60.8	1218.6	54564.0
+33718	42	42	0	Pennsylvania	339930	Doll, toy, and game manufacturing	33	26.0	209.4	5967.0
+33719	42	42	0	Pennsylvania	339940	Office supplies (except paper) manufacturing	33	23.4	1056.6	51670.0
+33720	42	42	0	Pennsylvania	339950	Sign manufacturing	33	208.0	3252.0	160654.8
+33721	42	42	0	Pennsylvania	339991	Gasket, packing, and sealing device manufacturing	33	28.8	500.2	30443.8
+33722	42	42	0	Pennsylvania	339992	Musical instrument manufacturing	33	21.0	736.8	41215.4
+33723	42	42	0	Pennsylvania	339993	Fastener, button, needle, and pin manufacturing	33	5.0	36.4	1491.0
+33724	42	42	0	Pennsylvania	339994	Broom, brush, and mop manufacturing	33	7.0	0.0	0.0
+33725	42	42	0	Pennsylvania	339995	Burial casket manufacturing	33	6.0	133.4	5340.8
+33726	42	42	0	Pennsylvania	339999	All other miscellaneous manufacturing	33	195.4	1728.8	67675.0
+33727	42	42	0	Pennsylvania	423110	Automobile and other motor vehicle merchant wholesalers	42	247.8	5717.8	270057.8
+33728	42	42	0	Pennsylvania	423120	Motor vehicle supplies and new parts merchant wholesalers	42	571.4	11124.6	460511.4
+33729	42	42	0	Pennsylvania	423130	Tire and tube merchant wholesalers	42	121.2	1945.8	79205.8
+33730	42	42	0	Pennsylvania	423140	Motor vehicle parts (used) merchant wholesalers	42	97.0	814.8	29083.8
+33731	42	42	0	Pennsylvania	423210	Furniture merchant wholesalers	42	176.4	1797.4	103073.0
+33732	42	42	0	Pennsylvania	423220	Home furnishing merchant wholesalers	42	191.6	3067.8	166281.0
+33733	42	42	0	Pennsylvania	423310	Lumber, plywood, millwork, and wood panel merchant wholesalers	42	269.6	4439.2	217194.6
+33734	42	42	0	Pennsylvania	423320	Brick, stone, and related construction material merchant wholesalers	42	124.2	1271.0	68450.0
+33735	42	42	0	Pennsylvania	423330	Roofing, siding, and insulation material merchant wholesalers	42	156.8	1723.6	105315.0
+33736	42	42	0	Pennsylvania	423390	Other construction material merchant wholesalers	42	131.8	2116.2	129480.0
+33737	42	42	0	Pennsylvania	423410	Photographic equipment and supplies merchant wholesalers	42	23.0	496.2	27042.2
+33738	42	42	0	Pennsylvania	423420	Office equipment merchant wholesalers	42	413.8	5107.0	289407.4
+33739	42	42	0	Pennsylvania	423430	Computer and computer peripheral equipment and software merchant wholesalers	42	290.0	4231.4	341302.0
+33740	42	42	0	Pennsylvania	423440	Other commercial equipment merchant wholesalers	42	157.2	1931.0	108360.0
+33741	42	42	0	Pennsylvania	423450	Medical, dental, and hospital equipment and supplies merchant wholesalers	42	359.0	13299.6	1422322.6
+33742	42	42	0	Pennsylvania	423460	Ophthalmic goods merchant wholesalers	42	41.8	533.0	26543.6
+33743	42	42	0	Pennsylvania	423490	Other professional equipment and supplies merchant wholesalers	42	102.0	1286.4	114781.2
+33744	42	42	0	Pennsylvania	423510	Metal service centers and other metal merchant wholesalers	42	465.0	6717.6	433358.4
+33745	42	42	0	Pennsylvania	423520	Coal and other mineral and ore merchant wholesalers	42	48.4	275.8	26682.4
+33746	42	42	0	Pennsylvania	423610	Electrical apparatus and equipment, wiring supplies, and related equipment merchant wholesalers	42	500.0	7602.6	547270.6
+33747	42	42	0	Pennsylvania	423620	Household appliances, electric housewares, and consumer electronics merchant wholesalers 	42	60.4	877.0	60742.8
+33748	42	42	0	Pennsylvania	423690	Other electronic parts and equipment merchant wholesalers	42	364.2	6741.0	720685.2
+33749	42	42	0	Pennsylvania	423710	Hardware merchant wholesalers	42	233.2	3201.8	187127.0
+33750	42	42	0	Pennsylvania	423720	Plumbing and heating equipment and supplies (hydronics) merchant wholesalers	42	268.8	2782.0	169912.0
+33751	42	42	0	Pennsylvania	423730	Warm air heating and air-conditioning equipment and supplies merchant wholesalers	42	226.6	2850.0	196060.6
+33752	42	42	0	Pennsylvania	423740	Refrigeration equipment and supplies merchant wholesalers	42	55.6	591.4	31951.2
+33753	42	42	0	Pennsylvania	423810	Construction and mining (except oil well) machinery and equipment merchant wholesalers	42	229.4	5329.0	369039.8
+33754	42	42	0	Pennsylvania	423820	Farm and garden machinery and equipment merchant wholesalers	42	188.8	2658.2	125536.0
+33755	42	42	0	Pennsylvania	423830	Industrial machinery and equipment merchant wholesalers	42	1278.2	16936.6	1121825.0
+33756	42	42	0	Pennsylvania	423840	Industrial supplies merchant wholesalers	42	388.6	5311.2	376864.4
+33757	42	42	0	Pennsylvania	423850	Service establishment equipment and supplies merchant wholesalers	42	181.0	2108.4	105822.4
+33758	42	42	0	Pennsylvania	423860	Transportation equipment and supplies (except motor vehicle) merchant wholesalers	42	51.0	1018.2	71254.2
+33759	42	42	0	Pennsylvania	423910	Sporting and recreational goods and supplies merchant wholesalers	42	152.6	1741.6	81529.6
+33760	42	42	0	Pennsylvania	423920	Toy and hobby goods and supplies merchant wholesalers	42	56.4	520.6	29892.6
+33761	42	42	0	Pennsylvania	423930	Recyclable material merchant wholesalers	42	380.4	5021.6	225071.6
+33762	42	42	0	Pennsylvania	423940	Jewelry, watch, precious stone, and precious metal merchant wholesalers	42	154.6	684.2	32098.6
+33763	42	42	0	Pennsylvania	423990	Other miscellaneous durable goods merchant wholesalers	42	326.0	3907.6	201944.6
+33764	42	42	0	Pennsylvania	424110	Printing and writing paper merchant wholesalers	42	48.2	622.6	42668.8
+33765	42	42	0	Pennsylvania	424120	Stationery and office supplies merchant wholesalers	42	172.2	2587.0	131240.6
+33766	42	42	0	Pennsylvania	424130	Industrial and personal service paper merchant wholesalers	42	179.2	2546.2	170758.2
+33767	42	42	0	Pennsylvania	424210	Drugs and druggists' sundries merchant wholesalers	42	324.8	20888.0	2967316.6
+33768	42	42	0	Pennsylvania	424310	Piece goods, notions, and other dry goods merchant wholesalers	42	60.8	400.6	20738.4
+33769	42	42	0	Pennsylvania	424320	Men's and boys' clothing and furnishings merchant wholesalers	42	97.0	1766.2	98332.0
+33770	42	42	0	Pennsylvania	424330	Women's, children's, and infants' clothing and accessories merchant wholesalers	42	102.6	1727.8	87492.6
+33771	42	42	0	Pennsylvania	424340	Footwear merchant wholesalers	42	49.8	579.4	30526.6
+33772	42	42	0	Pennsylvania	424410	General line grocery merchant wholesalers	42	108.8	7090.2	378757.2
+33773	42	42	0	Pennsylvania	424420	Packaged frozen food merchant wholesalers	42	95.2	2853.8	133403.2
+33774	42	42	0	Pennsylvania	424430	Dairy product (except dried or canned) merchant wholesalers	42	79.0	1191.2	62766.0
+33775	42	42	0	Pennsylvania	424440	Poultry and poultry product merchant wholesalers	42	30.0	779.8	40231.6
+33776	42	42	0	Pennsylvania	424450	Confectionery merchant wholesalers	42	156.8	3715.0	195573.2
+33777	42	42	0	Pennsylvania	424460	Fish and seafood merchant wholesalers	42	32.6	346.2	15217.2
+33778	42	42	0	Pennsylvania	424470	Meat and meat product merchant wholesalers	42	83.6	1900.2	96919.4
+33779	42	42	0	Pennsylvania	424480	Fresh fruit and vegetable merchant wholesalers	42	171.2	4128.4	188922.0
+33780	42	42	0	Pennsylvania	424490	Other grocery and related products merchant wholesalers	42	450.2	13306.6	622150.0
+33781	42	42	0	Pennsylvania	424510	Grain and field bean merchant wholesalers	42	29.4	105.6	11762.8
+33782	42	42	0	Pennsylvania	424520	Livestock merchant wholesalers	42	19.4	92.0	2555.0
+33783	42	42	0	Pennsylvania	424590	Other farm product raw material merchant wholesalers	42	18.4	155.2	7820.4
+33784	42	42	0	Pennsylvania	424610	Plastics materials and basic forms and shapes merchant wholesalers	42	112.6	1832.0	129131.6
+33785	42	42	0	Pennsylvania	424690	Other chemical and allied products merchant wholesalers	42	384.8	5792.4	461355.0
+33786	42	42	0	Pennsylvania	424710	Petroleum bulk stations and terminals 	42	138.0	2261.6	133380.8
+33787	42	42	0	Pennsylvania	424720	Petroleum and petroleum products merchant wholesalers (except bulk stations and terminals) 	42	71.4	996.8	81524.2
+33788	42	42	0	Pennsylvania	424810	Beer and ale merchant wholesalers	42	99.8	2981.0	153647.4
+33789	42	42	0	Pennsylvania	424820	Wine and distilled alcoholic beverage merchant wholesalers	42	46.0	826.4	70393.0
+33790	42	42	0	Pennsylvania	424910	Farm supplies merchant wholesalers	42	194.2	2888.0	146322.2
+33791	42	42	0	Pennsylvania	424920	Book, periodical, and newspaper merchant wholesalers	42	91.2	2400.6	88932.0
+33792	42	42	0	Pennsylvania	424930	Flower, nursery stock, and florists' supplies merchant wholesalers	42	90.8	1848.6	55078.4
+33793	42	42	0	Pennsylvania	424940	Tobacco and tobacco product merchant wholesalers	42	96.2	2702.6	129998.6
+33794	42	42	0	Pennsylvania	424950	Paint, varnish, and supplies merchant wholesalers	42	90.6	1149.6	79991.8
+33795	42	42	0	Pennsylvania	424990	Other miscellaneous nondurable goods merchant wholesalers	42	316.8	2171.4	106158.2
+33796	42	42	0	Pennsylvania	425110	Business to business electronic markets	42	16.0	82.8	4603.6
+33797	42	42	0	Pennsylvania	425120	Wholesale trade agents and brokers	42	1657.8	13157.2	739233.8
+33798	42	42	0	Pennsylvania	441110	New car dealers	44	1074.4	48994.0	2280764.6
+33799	42	42	0	Pennsylvania	441120	Used car dealers	44	1157.8	6373.0	236966.6
+33800	42	42	0	Pennsylvania	441210	Recreational vehicle dealers	44	95.4	1084.4	48738.2
+33801	42	42	0	Pennsylvania	441222	Boat dealers	44	87.4	430.4	15946.8
+33802	42	42	0	Pennsylvania	441228	Motorcycle, ATV, and all other motor vehicle dealers	44	281.6	2560.2	90622.2
+33803	42	42	0	Pennsylvania	441310	Automotive parts and accessories stores	44	1417.0	13138.6	309976.4
+33804	42	42	0	Pennsylvania	441320	Tire dealers	44	725.6	6091.8	208606.4
+33805	42	42	0	Pennsylvania	442110	Furniture stores	44	968.0	7372.6	241899.2
+33806	42	42	0	Pennsylvania	442210	Floor covering stores	44	448.6	2606.6	100459.0
+33807	42	42	0	Pennsylvania	442291	Window treatment stores	44	65.0	200.8	6798.6
+33808	42	42	0	Pennsylvania	442299	All other home furnishings stores	44	517.0	5969.4	99219.4
+33809	42	42	0	Pennsylvania	443141	Household appliance stores	44	346.8	2796.2	84908.2
+33810	42	42	0	Pennsylvania	443142	Electronics stores	44	1468.8	11981.8	310137.4
+33811	42	42	0	Pennsylvania	444110	Home centers	44	280.2	10798.8	279952.0
+33812	42	42	0	Pennsylvania	444120	Paint and wallpaper stores	44	276.0	412.2	38585.2
+33813	42	42	0	Pennsylvania	444130	Hardware stores	44	661.6	6255.0	142900.8
+33814	42	42	0	Pennsylvania	444190	Other building material dealers	44	1264.4	10926.2	479845.2
+33815	42	42	0	Pennsylvania	444210	Outdoor power equipment stores	44	254.2	1624.2	54525.2
+33816	42	42	0	Pennsylvania	444220	Nursery, garden center, and farm supply stores	44	587.0	4810.0	136620.6
+33817	42	42	0	Pennsylvania	445110	Supermarkets and other grocery (except convenience) stores	44	2681.4	126081.6	2427717.8
+33818	42	42	0	Pennsylvania	445120	Convenience stores	44	1062.6	7019.2	123990.6
+33819	42	42	0	Pennsylvania	445210	Meat markets	44	340.8	2434.6	48990.2
+33820	42	42	0	Pennsylvania	445220	Fish and seafood markets	44	86.6	379.8	7895.8
+33821	42	42	0	Pennsylvania	445230	Fruit and vegetable markets	44	159.8	1490.8	30025.4
+33822	42	42	0	Pennsylvania	445291	Baked goods stores	44	131.8	959.6	23025.6
+33823	42	42	0	Pennsylvania	445292	Confectionery and nut stores	44	177.4	1065.0	12991.8
+33824	42	42	0	Pennsylvania	445299	All other specialty food stores	44	238.8	1471.6	19638.2
+33825	42	42	0	Pennsylvania	445310	Beer, wine, and liquor stores	44	1800.8	8685.2	284939.2
+33826	42	42	0	Pennsylvania	446110	Pharmacies and drug stores	44	2212.2	33967.8	1121157.4
+33827	42	42	0	Pennsylvania	446120	Cosmetics, beauty supplies, and perfume stores	44	533.8	4516.8	74432.8
+33828	42	42	0	Pennsylvania	446130	Optical goods stores	44	640.0	3895.2	110674.8
+33829	42	42	0	Pennsylvania	446191	Food (health) supplement stores	44	379.2	1301.4	34043.8
+33830	42	42	0	Pennsylvania	446199	All other health and personal care stores	44	412.8	2793.6	125790.6
+33831	42	42	0	Pennsylvania	447110	Gasoline stations with convenience stores	44	3178.4	34177.6	638566.6
+33832	42	42	0	Pennsylvania	447190	Other gasoline stations	44	682.8	6383.2	155167.6
+33833	42	42	0	Pennsylvania	448110	Men's clothing stores	44	302.6	2310.4	59789.4
+33834	42	42	0	Pennsylvania	448120	Women's clothing stores	44	1309.0	12743.0	173942.8
+33835	42	42	0	Pennsylvania	448130	Children's and infants' clothing stores	44	292.8	3677.6	43565.0
+33836	42	42	0	Pennsylvania	448140	Family clothing stores	44	978.2	25016.2	343779.4
+33837	42	42	0	Pennsylvania	448150	Clothing accessories stores	44	274.0	1939.2	30777.4
+33838	42	42	0	Pennsylvania	448190	Other clothing stores	44	464.6	4739.0	74269.0
+33839	42	42	0	Pennsylvania	448210	Shoe stores	44	1028.2	8672.0	140825.6
+33840	42	42	0	Pennsylvania	448310	Jewelry stores	44	948.0	5319.0	155427.0
+33841	42	42	0	Pennsylvania	448320	Luggage and leather goods stores	44	22.8	55.0	2006.2
+33842	42	42	0	Pennsylvania	451110	Sporting goods stores	45	821.6	9643.0	172319.8
+33843	42	42	0	Pennsylvania	451120	Hobby, toy, and game stores	45	351.0	5880.2	78943.0
+33844	42	42	0	Pennsylvania	451130	Sewing, needlework, and piece goods stores	45	171.2	1637.4	19969.4
+33845	42	42	0	Pennsylvania	451140	Musical instrument and supplies stores	45	160.2	1103.6	28033.4
+33846	42	42	0	Pennsylvania	451211	Book stores	45	291.2	1517.8	54602.8
+33847	42	42	0	Pennsylvania	451212	News dealers and newsstands	45	77.8	452.0	8382.2
+33848	42	42	0	Pennsylvania	452111	Department stores (except discount department stores)	45	176.8	20855.4	373766.6
+33849	42	42	0	Pennsylvania	452112	Discount department stores	45	237.4	31072.2	557534.4
+33850	42	42	0	Pennsylvania	452910	Warehouse clubs and supercenters	45	157.2	0.0	0.0
+33851	42	42	0	Pennsylvania	452990	All other general merchandise stores	45	1641.6	14221.6	219605.2
+33852	42	42	0	Pennsylvania	453110	Florists	45	656.8	3405.8	57778.6
+33853	42	42	0	Pennsylvania	453210	Office supplies and stationery stores	45	230.4	2619.8	68452.2
+33854	42	42	0	Pennsylvania	453220	Gift, novelty, and souvenir stores	45	970.2	7053.0	97428.4
+33855	42	42	0	Pennsylvania	453310	Used merchandise stores	45	728.0	7172.6	114233.8
+33856	42	42	0	Pennsylvania	453910	Pet and pet supplies stores	45	404.4	5149.8	90604.0
+33857	42	42	0	Pennsylvania	453920	Art dealers	45	125.2	337.0	10428.0
+33858	42	42	0	Pennsylvania	453930	Manufactured (mobile) home dealers	45	80.0	402.8	15069.2
+33859	42	42	0	Pennsylvania	453991	Tobacco stores	45	511.8	2425.8	44627.6
+33860	42	42	0	Pennsylvania	453998	All other miscellaneous store retailers (except tobacco stores)	45	791.6	3666.4	105182.2
+33861	42	42	0	Pennsylvania	454111	Electronic shopping	45	849.0	7762.4	331173.4
+33862	42	42	0	Pennsylvania	454112	Electronic auctions	45	11.0	44.8	2065.2
+33863	42	42	0	Pennsylvania	454113	Mail-order houses	45	248.2	11805.2	730121.4
+33864	42	42	0	Pennsylvania	454210	Vending machine operators	45	194.4	2149.0	65787.8
+33865	42	42	0	Pennsylvania	454310	Fuel dealers	45	659.6	6165.0	275884.6
+33866	42	42	0	Pennsylvania	454390	Other direct selling establishments	45	769.0	3741.0	127822.6
+33867	42	42	0	Pennsylvania	481111	Scheduled passenger air transportation	48	53.6	4597.8	312106.8
+33868	42	42	0	Pennsylvania	481112	Scheduled freight air transportation	48	8.8	77.6	3360.2
+33869	42	42	0	Pennsylvania	481211	Nonscheduled chartered passenger air transportation	48	49.0	577.4	32948.8
+33870	42	42	0	Pennsylvania	481212	Nonscheduled chartered freight air transportation	48	2.4	3.0	63.6
+33871	42	42	0	Pennsylvania	481219	Other nonscheduled air transportation	48	13.6	32.2	2225.6
+33872	42	42	0	Pennsylvania	483111	Deep sea freight transportation	48	7.8	29.4	2875.0
+33873	42	42	0	Pennsylvania	483113	Coastal and great lakes freight transportation	48	6.8	70.8	7348.2
+33874	42	42	0	Pennsylvania	483114	Coastal and great lakes passenger transportation	48	1.5	0.0	0.0
+33875	42	42	0	Pennsylvania	483211	Inland water freight transportation	48	16.8	442.8	31135.6
+33876	42	42	0	Pennsylvania	483212	Inland water passenger transportation	48	2.6	0.0	0.0
+33877	42	42	0	Pennsylvania	484110	General freight trucking, local	48	1222.6	9337.6	401961.4
+33878	42	42	0	Pennsylvania	484121	General freight trucking, long-distance, truckload	48	1204.2	18427.6	853561.0
+33879	42	42	0	Pennsylvania	484122	General freight trucking, long-distance, less than truckload	48	249.8	13789.8	755679.2
+33880	42	42	0	Pennsylvania	484210	Used household and office goods moving	48	215.2	2930.0	97372.0
+33881	42	42	0	Pennsylvania	484220	Specialized freight (except used goods) trucking, local	48	1395.2	12323.2	551765.0
+33882	42	42	0	Pennsylvania	484230	Specialized freight (except used goods) trucking, long-distance	48	318.2	5625.0	284896.2
+33883	42	42	0	Pennsylvania	485111	Mixed mode transit systems	48	4.0	0.0	1602.0
+33884	42	42	0	Pennsylvania	485113	Bus and other motor vehicle transit systems	48	29.8	1033.2	24928.4
+33885	42	42	0	Pennsylvania	485119	Other urban transit systems	48	1.2	0.0	0.0
+33886	42	42	0	Pennsylvania	485210	Interurban and rural bus transportation	48	20.4	864.6	24689.4
+33887	42	42	0	Pennsylvania	485310	Taxi service	48	89.4	944.0	28426.4
+33888	42	42	0	Pennsylvania	485320	Limousine service	48	143.4	1358.2	31824.0
+33889	42	42	0	Pennsylvania	485410	School and employee bus transportation	48	629.0	25154.0	416774.8
+33890	42	42	0	Pennsylvania	485510	Charter bus industry	48	67.2	2298.6	60405.6
+33891	42	42	0	Pennsylvania	485991	Special needs transportation	48	109.4	3695.0	87888.0
+33892	42	42	0	Pennsylvania	485999	All other transit and ground passenger transportation	48	39.4	410.2	8554.0
+33893	42	42	0	Pennsylvania	486110	Pipeline transportation of crude oil	48	1.8	0.0	0.0
+33894	42	42	0	Pennsylvania	486210	Pipeline transportation of natural gas	48	118.6	814.6	95913.4
+33895	42	42	0	Pennsylvania	486910	Pipeline transportation of refined petroleum products	48	22.2	461.2	59809.2
+33896	42	42	0	Pennsylvania	486990	All other pipeline transportation	48	6.6	0.0	0.0
+33897	42	42	0	Pennsylvania	487110	Scenic and sightseeing transportation, land	48	28.8	343.8	8893.2
+33898	42	42	0	Pennsylvania	487210	Scenic and sightseeing transportation, water	48	12.4	196.0	5887.2
+33899	42	42	0	Pennsylvania	487990	Scenic and sightseeing transportation, other	48	1.8	0.0	0.0
+33900	42	42	0	Pennsylvania	488111	Air traffic control	48	5.0	0.0	0.0
+33901	42	42	0	Pennsylvania	488119	Other airport operations	48	41.4	1696.8	38851.4
+33902	42	42	0	Pennsylvania	488190	Other support activities for air transportation	48	69.4	1324.2	58713.8
+33903	42	42	0	Pennsylvania	488210	Support activities for rail transportation	48	50.6	2063.8	121549.6
+33904	42	42	0	Pennsylvania	488310	Port and harbor operations	48	7.4	52.8	3024.2
+33905	42	42	0	Pennsylvania	488320	Marine cargo handling	48	10.4	1156.0	54314.8
+33906	42	42	0	Pennsylvania	488330	Navigational services to shipping	48	13.6	94.0	6085.8
+33907	42	42	0	Pennsylvania	488390	Other support activities for water transportation	48	6.0	53.2	2558.2
+33908	42	42	0	Pennsylvania	488410	Motor vehicle towing	48	329.2	2109.2	65566.8
+33909	42	42	0	Pennsylvania	488490	Other support activities for road transportation	48	97.2	1403.8	50203.6
+33910	42	42	0	Pennsylvania	488510	Freight transportation arrangement	48	510.0	7710.0	448888.0
+33911	42	42	0	Pennsylvania	488991	Packing and crating	48	36.4	597.4	25231.6
+33912	42	42	0	Pennsylvania	488999	All other support activities for transportation	48	10.2	27.4	983.4
+33913	42	42	0	Pennsylvania	492110	Couriers and express delivery services	49	353.0	23486.2	999409.4
+33914	42	42	0	Pennsylvania	492210	Local messengers and local delivery	49	185.0	1071.4	36123.2
+33915	42	42	0	Pennsylvania	493110	General warehousing and storage	49	472.0	49376.8	1876131.8
+33916	42	42	0	Pennsylvania	493120	Refrigerated warehousing and storage	49	42.2	2682.8	106734.6
+33917	42	42	0	Pennsylvania	493130	Farm product warehousing and storage	49	8.6	65.6	4885.2
+33918	42	42	0	Pennsylvania	493190	Other warehousing and storage	49	108.0	3950.4	209561.6
+33919	42	42	0	Pennsylvania	511110	Newspaper publishers	51	230.8	10991.0	435181.6
+33920	42	42	0	Pennsylvania	511120	Periodical publishers	51	217.4	4813.0	359193.4
+33921	42	42	0	Pennsylvania	511130	Book publishers	51	87.8	1793.8	117441.6
+33922	42	42	0	Pennsylvania	511140	Directory and mailing list publishers	51	34.4	1868.0	128732.6
+33923	42	42	0	Pennsylvania	511191	Greeting card publishers	51	3.2	37.4	2010.2
+33924	42	42	0	Pennsylvania	511199	All other publishers	51	21.0	287.6	13092.6
+33925	42	42	0	Pennsylvania	511210	Software publishers	51	268.2	16787.0	2504821.8
+33926	42	42	0	Pennsylvania	512110	Motion picture and video production	51	251.2	1560.4	100858.2
+33927	42	42	0	Pennsylvania	512120	Motion picture and video distribution	51	9.6	59.8	3415.8
+33928	42	42	0	Pennsylvania	512131	Motion picture theaters (except drive-ins)	51	152.8	4095.6	46280.2
+33929	42	42	0	Pennsylvania	512132	Drive-in motion picture theaters	51	19.8	12.2	854.4
+33930	42	42	0	Pennsylvania	512191	Teleproduction and other postproduction services	51	27.8	63.6	7664.8
+33931	42	42	0	Pennsylvania	512199	Other motion picture and video industries	51	3.0	0.0	0.0
+33932	42	42	0	Pennsylvania	512210	Record production	51	6.0	7.0	694.6
+33933	42	42	0	Pennsylvania	512220	Integrated record production/distribution	51	7.0	16.0	386.8
+33934	42	42	0	Pennsylvania	512230	Music publishers	51	6.8	3.8	445.0
+33935	42	42	0	Pennsylvania	512240	Sound recording studios	51	26.8	47.6	3514.2
+33936	42	42	0	Pennsylvania	512290	Other sound recording industries	51	12.8	61.2	2615.8
+33937	42	42	0	Pennsylvania	515111	Radio networks	51	27.0	172.8	10063.4
+33938	42	42	0	Pennsylvania	515112	Radio stations	51	192.0	3349.6	160239.8
+33939	42	42	0	Pennsylvania	515120	Television broadcasting	51	75.2	4285.8	323289.2
+33940	42	42	0	Pennsylvania	515210	Cable and other subscription programming	51	14.4	474.2	35537.2
+33941	42	42	0	Pennsylvania	517110	Wired telecommunications carriers	51	1652.6	31232.6	2724836.6
+33942	42	42	0	Pennsylvania	517210	Wireless telecommunications carriers (except satellite)	51	436.8	2740.6	300958.4
+33943	42	42	0	Pennsylvania	517410	Satellite telecommunications	51	5.4	49.0	3527.4
+33944	42	42	0	Pennsylvania	517911	Telecommunications resellers	51	65.2	295.6	15663.0
+33945	42	42	0	Pennsylvania	517919	All other telecommunications	51	69.8	723.8	55333.6
+33946	42	42	0	Pennsylvania	518210	Data processing, hosting, and related services	51	478.6	17078.8	1375513.6
+33947	42	42	0	Pennsylvania	519110	News syndicates	51	12.6	162.2	11414.2
+33948	42	42	0	Pennsylvania	519120	Libraries and archives	51	457.6	4792.8	93505.4
+33949	42	42	0	Pennsylvania	519130	Internet publishing and broadcasting and web search portals	51	184.0	2702.0	322785.4
+33950	42	42	0	Pennsylvania	519190	All other information services	51	34.6	177.2	9446.6
+33951	42	42	0	Pennsylvania	521110	Monetary authorities - central bank	52	3.0	0.0	0.0
+33952	42	42	0	Pennsylvania	522110	Commercial banking	52	3716.2	53959.4	3512795.8
+33953	42	42	0	Pennsylvania	522120	Savings institutions	52	1113.0	6975.0	627486.6
+33954	42	42	0	Pennsylvania	522130	Credit unions	52	828.0	9902.8	425333.8
+33955	42	42	0	Pennsylvania	522190	Other depository credit intermediation	52	2.0	0.0	0.0
+33956	42	42	0	Pennsylvania	522210	Credit card issuing	52	27.8	276.8	16025.4
+33957	42	42	0	Pennsylvania	522220	Sales financing	52	151.4	2385.4	225946.0
+33958	42	42	0	Pennsylvania	522291	Consumer lending	52	202.2	1688.4	82890.2
+33959	42	42	0	Pennsylvania	522292	Real estate credit	52	352.2	5109.0	490591.4
+33960	42	42	0	Pennsylvania	522293	International trade financing	52	5.2	3.2	237.8
+33961	42	42	0	Pennsylvania	522294	Secondary market financing	52	3.8	0.0	0.0
+33962	42	42	0	Pennsylvania	522298	All other nondepository credit intermediation	52	78.4	544.2	67816.2
+33963	42	42	0	Pennsylvania	522310	Mortgage and nonmortgage loan brokers	52	213.4	796.2	52786.4
+33964	42	42	0	Pennsylvania	522320	Financial transactions processing, reserve, and clearinghouse activities	52	95.8	1060.6	68485.4
+33965	42	42	0	Pennsylvania	522390	Other activities related to credit intermediation	52	244.6	1390.0	97455.6
+33966	42	42	0	Pennsylvania	523110	Investment banking and securities dealing	52	152.8	978.8	199730.6
+33967	42	42	0	Pennsylvania	523120	Securities brokerage	52	1435.0	9924.6	1327729.0
+33968	42	42	0	Pennsylvania	523130	Commodity contracts dealing	52	10.8	49.6	3597.4
+33969	42	42	0	Pennsylvania	523140	Commodity contracts brokerage	52	14.4	13.6	1917.4
+33970	42	42	0	Pennsylvania	523210	Securities and commodity exchanges	52	1.3333333333333333	0.0	0.0
+33971	42	42	0	Pennsylvania	523910	Miscellaneous intermediation	52	138.6	1596.8	294302.4
+33972	42	42	0	Pennsylvania	523920	Portfolio management	52	894.6	24089.8	3235323.0
+33973	42	42	0	Pennsylvania	523930	Investment advice	52	711.2	5713.0	591073.4
+33974	42	42	0	Pennsylvania	523991	Trust, fiduciary, and custody activities	52	112.0	3479.8	482252.6
+33975	42	42	0	Pennsylvania	523999	Miscellaneous financial investment activities	52	56.8	749.0	62511.2
+33976	42	42	0	Pennsylvania	524113	Direct life insurance carriers	52	425.6	20310.6	1850993.6
+33977	42	42	0	Pennsylvania	524114	Direct health and medical insurance carriers	52	322.6	39365.8	2958954.4
+33978	42	42	0	Pennsylvania	524126	Direct property and casualty insurance carriers	52	589.0	20510.2	1843530.6
+33979	42	42	0	Pennsylvania	524127	Direct title insurance carriers	52	82.2	1443.8	80024.8
+33980	42	42	0	Pennsylvania	524128	Other direct insurance (except life, health, and medical) carriers	52	29.8	782.0	43468.6
+33981	42	42	0	Pennsylvania	524130	Reinsurance carriers	52	16.2	349.0	45562.4
+33982	42	42	0	Pennsylvania	524210	Insurance agencies and brokerages	52	5056.2	29882.0	2011588.2
+33983	42	42	0	Pennsylvania	524291	Claims adjusting	52	189.6	1188.0	66513.6
+33984	42	42	0	Pennsylvania	524292	Third party administration of insurance and pension funds	52	233.0	8680.2	555838.2
+33985	42	42	0	Pennsylvania	524298	All other insurance related activities	52	129.0	1245.6	89979.0
+33986	42	42	0	Pennsylvania	525910	Open-end investment funds	52	7.0	14.4	1979.2
+33987	42	42	0	Pennsylvania	525990	Other financial vehicles	52	16.4	74.6	8612.4
+33988	42	42	0	Pennsylvania	531110	Lessors of residential buildings and dwellings	53	1764.2	9503.8	334031.6
+33989	42	42	0	Pennsylvania	531120	Lessors of nonresidential buildings (except miniwarehouses)	53	1017.4	5276.0	327133.0
+33990	42	42	0	Pennsylvania	531130	Lessors of miniwarehouses and self-storage units	53	330.0	751.0	21034.6
+33991	42	42	0	Pennsylvania	531190	Lessors of other real estate property	53	262.6	689.6	28468.4
+33992	42	42	0	Pennsylvania	531210	Offices of real estate agents and brokers	53	1933.8	7821.4	478272.0
+33993	42	42	0	Pennsylvania	531311	Residential property managers	53	1011.4	10005.4	454034.4
+33994	42	42	0	Pennsylvania	531312	Nonresidential property managers	53	519.2	5141.6	327872.2
+33995	42	42	0	Pennsylvania	531320	Offices of real estate appraisers	53	402.6	1316.4	61999.4
+33996	42	42	0	Pennsylvania	531390	Other activities related to real estate	53	381.2	1771.4	117368.6
+33997	42	42	0	Pennsylvania	532111	Passenger car rental	53	387.8	1322.6	43785.2
+33998	42	42	0	Pennsylvania	532112	Passenger car leasing	53	25.2	285.8	14477.8
+33999	42	42	0	Pennsylvania	532120	Truck, utility trailer, and RV (recreational vehicle) rental and leasing	53	260.0	3709.4	201822.2
+34000	42	42	0	Pennsylvania	532210	Consumer electronics and appliances rental	53	220.4	554.4	16557.8
+34001	42	42	0	Pennsylvania	532220	Formal wear and costume rental	53	44.6	150.4	2976.4
+34002	42	42	0	Pennsylvania	532230	Video tape and disc rental	53	90.0	569.2	6291.4
+34003	42	42	0	Pennsylvania	532291	Home health equipment rental	53	157.0	2070.8	84271.0
+34004	42	42	0	Pennsylvania	532292	Recreational goods rental	53	46.4	150.2	7627.6
+34005	42	42	0	Pennsylvania	532299	All other consumer goods rental	53	160.8	978.0	48444.6
+34006	42	42	0	Pennsylvania	532310	General rental centers	53	125.6	929.0	42401.4
+34007	42	42	0	Pennsylvania	532411	Commercial air, rail, and water transportation equipment rental and leasing	53	14.2	24.8	3038.4
+34008	42	42	0	Pennsylvania	532412	Construction, mining, and forestry machinery and equipment rental and leasing	53	131.8	2025.8	143198.4
+34009	42	42	0	Pennsylvania	532420	Office machinery and equipment rental and leasing	53	15.6	155.6	11683.6
+34010	42	42	0	Pennsylvania	532490	Other commercial and industrial machinery and equipment rental and leasing	53	266.6	3306.2	182492.4
+34011	42	42	0	Pennsylvania	533110	Lessors of nonfinancial intangible assets (except copyrighted works)	53	61.8	949.8	89818.6
+34012	42	42	0	Pennsylvania	541110	Offices of lawyers	54	5912.4	45880.4	4140303.4
+34013	42	42	0	Pennsylvania	541191	Title abstract and settlement offices	54	491.6	3476.8	155077.0
+34014	42	42	0	Pennsylvania	541199	All other legal services	54	178.0	1063.8	48189.8
+34015	42	42	0	Pennsylvania	541211	Offices of certified public accountants	54	1977.0	20620.4	1437348.0
+34016	42	42	0	Pennsylvania	541213	Tax preparation services	54	1009.4	7776.0	77029.8
+34017	42	42	0	Pennsylvania	541214	Payroll services	54	212.0	12497.4	586409.2
+34018	42	42	0	Pennsylvania	541219	Other accounting services	54	1053.4	9246.4	395960.4
+34019	42	42	0	Pennsylvania	541310	Architectural services	54	671.6	5762.8	422192.4
+34020	42	42	0	Pennsylvania	541320	Landscape architectural services	54	170.0	906.6	52612.4
+34021	42	42	0	Pennsylvania	541330	Engineering services	54	2185.0	42164.4	3462939.6
+34022	42	42	0	Pennsylvania	541340	Drafting services	54	78.0	286.6	25009.4
+34023	42	42	0	Pennsylvania	541350	Building inspection services	54	257.0	1171.0	57364.2
+34024	42	42	0	Pennsylvania	541360	Geophysical surveying and mapping services	54	18.2	145.6	9678.6
+34025	42	42	0	Pennsylvania	541370	Surveying and mapping (except geophysical) services	54	254.6	1327.2	68258.8
+34026	42	42	0	Pennsylvania	541380	Testing laboratories	54	295.8	7045.8	390081.2
+34027	42	42	0	Pennsylvania	541410	Interior design services	54	280.2	1022.0	57961.6
+34028	42	42	0	Pennsylvania	541420	Industrial design services	54	59.0	333.8	19926.0
+34029	42	42	0	Pennsylvania	541430	Graphic design services	54	444.2	1665.6	83050.4
+34030	42	42	0	Pennsylvania	541490	Other specialized design services	54	48.2	143.0	7760.6
+34031	42	42	0	Pennsylvania	541511	Custom computer programming services	54	2188.6	24099.2	1999344.6
+34032	42	42	0	Pennsylvania	541512	Computer systems design services	54	1610.8	17448.8	1591482.4
+34033	42	42	0	Pennsylvania	541513	Computer facilities management services	54	250.6	4080.4	377349.2
+34034	42	42	0	Pennsylvania	541519	Other computer related services	54	400.0	3669.0	305492.6
+34035	42	42	0	Pennsylvania	541611	Administrative management and general management consulting services	54	2286.2	20478.6	1979659.8
+34036	42	42	0	Pennsylvania	541612	Human resources consulting services	54	334.2	4983.6	467073.8
+34037	42	42	0	Pennsylvania	541613	Marketing consulting services	54	904.4	5324.8	379148.8
+34038	42	42	0	Pennsylvania	541614	Process, physical distribution, and logistics consulting services	54	292.8	2993.0	154206.0
+34039	42	42	0	Pennsylvania	541618	Other management consulting services	54	157.6	465.6	34637.2
+34040	42	42	0	Pennsylvania	541620	Environmental consulting services	54	437.8	3569.2	226785.8
+34041	42	42	0	Pennsylvania	541690	Other scientific and technical consulting services	54	637.2	3426.8	281714.2
+34042	42	42	0	Pennsylvania	541711	Research and development in biotechnology	54	143.0	2451.6	337177.6
+34043	42	42	0	Pennsylvania	541712	Research and development in the physical, engineering, and life sciences (except biotechnology)	54	476.4	24993.4	2554722.0
+34044	42	42	0	Pennsylvania	541720	Research and development in the social sciences and humanities	54	68.2	866.6	60437.2
+34045	42	42	0	Pennsylvania	541810	Advertising agencies	54	516.8	5696.2	396238.4
+34046	42	42	0	Pennsylvania	541820	Public relations agencies	54	196.0	1074.0	84082.6
+34047	42	42	0	Pennsylvania	541830	Media buying agencies	54	28.6	497.4	37213.2
+34048	42	42	0	Pennsylvania	541840	Media representatives	54	40.8	178.0	10754.6
+34049	42	42	0	Pennsylvania	541850	Outdoor advertising	54	92.6	1250.2	56892.4
+34050	42	42	0	Pennsylvania	541860	Direct mail advertising	54	111.6	3581.8	177303.2
+34051	42	42	0	Pennsylvania	541870	Advertising material distribution services	54	25.0	273.2	14617.0
+34052	42	42	0	Pennsylvania	541890	Other services related to advertising	54	290.6	3898.4	156543.6
+34053	42	42	0	Pennsylvania	541910	Marketing research and public opinion polling	54	220.2	3737.0	273020.4
+34054	42	42	0	Pennsylvania	541921	Photography studios, portrait	54	431.4	1927.4	42875.4
+34055	42	42	0	Pennsylvania	541922	Commercial photography	54	97.2	333.2	13468.8
+34056	42	42	0	Pennsylvania	541930	Translation and interpretation services	54	64.8	418.4	20569.0
+34057	42	42	0	Pennsylvania	541940	Veterinary services	54	1113.6	12970.4	486700.4
+34058	42	42	0	Pennsylvania	541990	All other professional, scientific, and technical services	54	578.8	3376.4	197297.6
+34059	42	42	0	Pennsylvania	551111	Offices of bank holding companies	55	14.0	1146.8	94647.4
+34060	42	42	0	Pennsylvania	551112	Offices of other holding companies	55	192.8	4428.4	372770.8
+34061	42	42	0	Pennsylvania	551114	Corporate, subsidiary, and regional managing offices	55	2148.8	170009.2	16960831.2
+34062	42	42	0	Pennsylvania	561110	Office administrative services	56	933.2	13726.6	858529.4
+34063	42	42	0	Pennsylvania	561210	Facilities support services	56	256.4	15734.4	511495.2
+34064	42	42	0	Pennsylvania	561311	Employment placement agencies	56	236.2	7031.4	245374.6
+34065	42	42	0	Pennsylvania	561312	Executive search services	56	243.2	1350.4	153405.4
+34066	42	42	0	Pennsylvania	561320	Temporary help services	56	1254.6	111258.2	3445747.4
+34067	42	42	0	Pennsylvania	561330	Professional employer organizations	56	91.8	6626.6	231953.6
+34068	42	42	0	Pennsylvania	561410	Document preparation services	56	155.6	1876.0	67637.4
+34069	42	42	0	Pennsylvania	561421	Telephone answering services	56	67.4	2038.8	50150.4
+34070	42	42	0	Pennsylvania	561422	Telemarketing bureaus and other contact centers	56	140.2	9771.0	257861.8
+34071	42	42	0	Pennsylvania	561431	Private mail centers	56	144.2	619.6	13821.8
+34072	42	42	0	Pennsylvania	561439	Other business service centers (including copy shops)	56	162.0	1669.6	68927.4
+34073	42	42	0	Pennsylvania	561440	Collection agencies	56	173.4	5503.6	203068.2
+34074	42	42	0	Pennsylvania	561450	Credit bureaus	56	19.0	1048.8	66532.0
+34075	42	42	0	Pennsylvania	561491	Repossession services	56	24.0	137.6	4130.8
+34076	42	42	0	Pennsylvania	561492	Court reporting and stenotype services	56	92.0	867.4	48624.4
+34077	42	42	0	Pennsylvania	561499	All other business support services	56	124.2	2377.2	102796.4
+34078	42	42	0	Pennsylvania	561510	Travel agencies	56	594.0	2277.8	139211.4
+34079	42	42	0	Pennsylvania	561520	Tour operators	56	89.0	1256.6	49779.2
+34080	42	42	0	Pennsylvania	561591	Convention and visitors bureaus	56	41.0	534.6	26305.0
+34081	42	42	0	Pennsylvania	561599	All other travel arrangement and reservation services	56	137.8	2178.0	87195.6
+34082	42	42	0	Pennsylvania	561611	Investigation services	56	137.6	2413.0	96818.0
+34083	42	42	0	Pennsylvania	561612	Security guards and patrol services	56	286.2	24834.0	538626.6
+34084	42	42	0	Pennsylvania	561613	Armored car services	56	24.0	845.4	26856.6
+34085	42	42	0	Pennsylvania	561621	Security systems services (except locksmiths)	56	255.0	4901.8	278742.4
+34086	42	42	0	Pennsylvania	561622	Locksmiths	56	115.4	479.4	16297.8
+34087	42	42	0	Pennsylvania	561710	Exterminating and pest control services	56	333.6	2384.8	114561.2
+34088	42	42	0	Pennsylvania	561720	Janitorial services	56	2241.4	38042.8	696743.0
+34089	42	42	0	Pennsylvania	561730	Landscaping services	56	4522.6	21920.4	894427.4
+34090	42	42	0	Pennsylvania	561740	Carpet and upholstery cleaning services	56	219.4	1082.6	28462.4
+34091	42	42	0	Pennsylvania	561790	Other services to buildings and dwellings	56	403.4	1948.8	73549.4
+34092	42	42	0	Pennsylvania	561910	Packaging and labeling services	56	66.4	3489.8	138561.6
+34093	42	42	0	Pennsylvania	561920	Convention and trade show organizers	56	108.2	1276.0	46262.2
+34094	42	42	0	Pennsylvania	561990	All other support services	56	579.2	7891.6	292219.0
+34095	42	42	0	Pennsylvania	562111	Solid waste collection	56	500.6	8642.8	415452.2
+34096	42	42	0	Pennsylvania	562112	Hazardous waste collection	56	17.8	241.0	12061.8
+34097	42	42	0	Pennsylvania	562119	Other waste collection	56	32.4	266.2	11827.0
+34098	42	42	0	Pennsylvania	562211	Hazardous waste treatment and disposal	56	34.6	600.6	40129.4
+34099	42	42	0	Pennsylvania	562212	Solid waste landfill	56	71.8	1530.4	58035.4
+34100	42	42	0	Pennsylvania	562213	Solid waste combustors and incinerators	56	12.2	397.8	32136.4
+34101	42	42	0	Pennsylvania	562219	Other nonhazardous waste treatment and disposal	56	15.8	144.2	7584.4
+34102	42	42	0	Pennsylvania	562910	Remediation services	56	210.6	3472.8	184960.0
+34103	42	42	0	Pennsylvania	562920	Materials recovery facilities	56	51.4	719.4	26554.0
+34104	42	42	0	Pennsylvania	562991	Septic tank and related services	56	153.2	1182.6	50722.2
+34105	42	42	0	Pennsylvania	562998	All other miscellaneous waste management services	56	35.2	443.8	23565.2
+34106	42	42	0	Pennsylvania	611110	Elementary and secondary schools	61	1096.4	51232.4	1821746.6
+34107	42	42	0	Pennsylvania	611210	Junior colleges	61	60.2	5115.4	156311.6
+34108	42	42	0	Pennsylvania	611310	Colleges, universities, and professional schools	61	190.0	181273.4	7572568.4
+34109	42	42	0	Pennsylvania	611410	Business and secretarial schools	61	15.4	440.8	15903.0
+34110	42	42	0	Pennsylvania	611420	Computer training	61	53.2	371.8	24129.6
+34111	42	42	0	Pennsylvania	611430	Professional and management development training	61	228.6	1873.0	118134.0
+34112	42	42	0	Pennsylvania	611511	Cosmetology and barber schools	61	61.6	607.6	18551.8
+34113	42	42	0	Pennsylvania	611512	Flight training	61	17.4	74.4	1807.2
+34114	42	42	0	Pennsylvania	611513	Apprenticeship training	61	58.2	547.4	21658.4
+34115	42	42	0	Pennsylvania	611519	Other technical and trade schools	61	158.0	3970.6	154933.2
+34116	42	42	0	Pennsylvania	611610	Fine arts schools	61	498.6	3875.8	65111.2
+34117	42	42	0	Pennsylvania	611620	Sports and recreation instruction	61	522.0	3347.6	53663.4
+34118	42	42	0	Pennsylvania	611630	Language schools	61	34.2	425.2	6778.2
+34119	42	42	0	Pennsylvania	611691	Exam preparation and tutoring	61	239.6	2918.8	49805.2
+34120	42	42	0	Pennsylvania	611692	Automobile driving schools	61	60.2	341.4	6250.2
+34121	42	42	0	Pennsylvania	611699	All other miscellaneous schools and instruction	61	163.6	874.8	26779.0
+34122	42	42	0	Pennsylvania	611710	Educational support services	61	312.0	4508.2	192005.6
+34123	42	42	0	Pennsylvania	621111	Offices of physicians (except mental health specialists)	62	8604.8	118014.4	10040892.4
+34124	42	42	0	Pennsylvania	621112	Offices of physicians, mental health specialists	62	385.4	2531.8	135041.8
+34125	42	42	0	Pennsylvania	621210	Offices of dentists	62	5134.2	34714.4	1524988.6
+34126	42	42	0	Pennsylvania	621310	Offices of chiropractors	62	1860.8	6527.4	180808.6
+34127	42	42	0	Pennsylvania	621320	Offices of optometrists	62	936.2	4798.4	162728.0
+34128	42	42	0	Pennsylvania	621330	Offices of mental health practitioners (except physicians)	62	704.4	8005.0	243830.2
+34129	42	42	0	Pennsylvania	621340	Offices of physical, occupational and speech therapists, and audiologists	62	1834.6	17823.4	772851.6
+34130	42	42	0	Pennsylvania	621391	Offices of podiatrists	62	568.2	2605.4	103903.2
+34131	42	42	0	Pennsylvania	621399	Offices of all other miscellaneous health practitioners	62	382.0	1775.8	73444.2
+34132	42	42	0	Pennsylvania	621410	Family planning centers	62	118.2	972.4	34219.6
+34133	42	42	0	Pennsylvania	621420	Outpatient mental health and substance abuse centers	62	575.0	18007.0	583146.0
+34134	42	42	0	Pennsylvania	621491	HMO medical centers	62	8.4	0.0	0.0
+34135	42	42	0	Pennsylvania	621492	Kidney dialysis centers	62	296.6	2632.6	137737.8
+34136	42	42	0	Pennsylvania	621493	Freestanding ambulatory surgical and emergency centers	62	277.0	6397.8	308259.6
+34137	42	42	0	Pennsylvania	621498	All other outpatient care centers	62	469.0	14198.6	973155.8
+34138	42	42	0	Pennsylvania	621511	Medical laboratories	62	346.6	8422.2	542012.4
+34139	42	42	0	Pennsylvania	621512	Diagnostic imaging centers	62	245.0	3315.8	188399.2
+34140	42	42	0	Pennsylvania	621610	Home health care services	62	1051.0	51092.8	1680163.4
+34141	42	42	0	Pennsylvania	621910	Ambulance services	62	536.6	12723.4	344527.4
+34142	42	42	0	Pennsylvania	621991	Blood and organ banks	62	46.4	3313.0	144116.2
+34143	42	42	0	Pennsylvania	621999	All other miscellaneous ambulatory health care services	62	182.2	6354.2	313977.6
+34144	42	42	0	Pennsylvania	622110	General medical and surgical hospitals	62	215.0	250433.0	13377481.0
+34145	42	42	0	Pennsylvania	622210	Psychiatric and substance abuse hospitals	62	34.4	14305.8	691121.6
+34146	42	42	0	Pennsylvania	622310	Specialty (except psychiatric and substance abuse) hospitals	62	59.4	15539.4	770329.8
+34147	42	42	0	Pennsylvania	623110	Nursing care facilities (skilled nursing facilities)	62	599.8	73874.4	2353879.8
+34148	42	42	0	Pennsylvania	623210	Residential intellectual and developmental disability facilities	62	1823.0	46962.4	1274340.0
+34149	42	42	0	Pennsylvania	623220	Residential mental health and substance abuse facilities	62	421.8	12626.8	396731.2
+34150	42	42	0	Pennsylvania	623311	Continuing care retirement communities	62	322.8	50097.4	1394777.6
+34151	42	42	0	Pennsylvania	623312	Assisted living facilities for the elderly	62	636.2	21351.6	458045.6
+34152	42	42	0	Pennsylvania	623990	Other residential care facilities	62	247.8	6808.4	207915.6
+34153	42	42	0	Pennsylvania	624110	Child and youth services	62	633.2	13954.0	398998.6
+34154	42	42	0	Pennsylvania	624120	Services for the elderly and persons with disabilities	62	1481.0	57489.8	1128887.6
+34155	42	42	0	Pennsylvania	624190	Other individual and family services	62	1265.4	22559.0	591965.4
+34156	42	42	0	Pennsylvania	624210	Community food services	62	151.2	1274.6	35791.6
+34157	42	42	0	Pennsylvania	624221	Temporary shelters	62	180.0	3048.4	81719.2
+34158	42	42	0	Pennsylvania	624229	Other community housing services	62	183.8	1854.6	59025.4
+34159	42	42	0	Pennsylvania	624230	Emergency and other relief services	62	65.4	757.8	29517.8
+34160	42	42	0	Pennsylvania	624310	Vocational rehabilitation services	62	342.2	16083.4	269683.4
+34161	42	42	0	Pennsylvania	624410	Child day care services	62	3657.8	41780.2	760927.6
+34162	42	42	0	Pennsylvania	711110	Theater companies and dinner theaters	71	129.0	2275.6	63517.2
+34163	42	42	0	Pennsylvania	711120	Dance companies	71	29.4	458.8	11307.0
+34164	42	42	0	Pennsylvania	711130	Musical groups and artists	71	120.2	1313.6	60515.2
+34165	42	42	0	Pennsylvania	711190	Other performing arts companies	71	18.4	25.8	1640.6
+34166	42	42	0	Pennsylvania	711211	Sports teams and clubs	71	45.8	4431.2	1023211.8
+34167	42	42	0	Pennsylvania	711212	Racetracks	71	25.8	5928.2	180450.2
+34168	42	42	0	Pennsylvania	711219	Other spectator sports	71	88.6	348.8	12735.6
+34169	42	42	0	Pennsylvania	711310	Promoters of performing arts, sports, and similar events with facilities	71	123.6	9066.8	228049.2
+34170	42	42	0	Pennsylvania	711320	Promoters of performing arts, sports, and similar events without facilities	71	132.6	706.4	35051.8
+34171	42	42	0	Pennsylvania	711410	Agents and managers for artists, athletes, entertainers, and other public figures	71	59.2	119.2	7274.2
+34172	42	42	0	Pennsylvania	711510	Independent artists, writers, and performers	71	347.4	1000.4	40553.4
+34173	42	42	0	Pennsylvania	712110	Museums	71	211.8	4461.2	128765.0
+34174	42	42	0	Pennsylvania	712120	Historical sites	71	84.6	561.0	12784.8
+34175	42	42	0	Pennsylvania	712130	Zoos and botanical gardens	71	29.6	1731.2	52496.8
+34176	42	42	0	Pennsylvania	712190	Nature parks and other similar institutions	71	51.2	383.2	13019.8
+34177	42	42	0	Pennsylvania	713110	Amusement and theme parks	71	23.2	4391.2	110604.6
+34178	42	42	0	Pennsylvania	713120	Amusement arcades	71	109.6	1401.0	13163.0
+34179	42	42	0	Pennsylvania	713210	Casinos (except casino hotels)	71	3.6	2156.4	119346.6
+34180	42	42	0	Pennsylvania	713290	Other gambling industries	71	26.0	382.6	13920.6
+34181	42	42	0	Pennsylvania	713910	Golf courses and country clubs	71	550.8	13467.4	400412.6
+34182	42	42	0	Pennsylvania	713920	Skiing facilities	71	16.4	5640.8	35110.6
+34183	42	42	0	Pennsylvania	713930	Marinas	71	42.4	242.2	8301.2
+34184	42	42	0	Pennsylvania	713940	Fitness and recreational sports centers	71	1386.6	27898.6	333850.4
+34185	42	42	0	Pennsylvania	713950	Bowling centers	71	202.2	2785.0	37401.2
+34186	42	42	0	Pennsylvania	713990	All other amusement and recreation industries	71	721.8	4201.0	94153.0
+34187	42	42	0	Pennsylvania	721110	Hotels (except casino hotels) and motels	72	1373.4	45447.2	1001351.2
+34188	42	42	0	Pennsylvania	721120	Casino hotels	72	3.0	4084.8	156456.2
+34189	42	42	0	Pennsylvania	721191	Bed-and-breakfast inns	72	118.0	871.8	13766.4
+34190	42	42	0	Pennsylvania	721199	All other traveler accommodation	72	23.0	172.0	4780.0
+34191	42	42	0	Pennsylvania	721211	RV (recreational vehicle) parks and campgrounds	72	191.6	673.8	21717.0
+34192	42	42	0	Pennsylvania	721214	Recreational and vacation camps (except campgrounds)	72	159.6	1078.6	53502.8
+34193	42	42	0	Pennsylvania	721310	Rooming and boarding houses	72	81.8	222.0	7759.0
+34194	42	42	0	Pennsylvania	722310	Food service contractors	72	1909.0	23021.0	648211.0
+34195	42	42	0	Pennsylvania	722320	Caterers	72	557.8	6417.8	116779.0
+34196	42	42	0	Pennsylvania	722330	Mobile food services	72	170.0	359.8	5947.2
+34197	42	42	0	Pennsylvania	722410	Drinking places (alcoholic beverages)	72	2702.6	16217.4	220227.6
+34198	42	42	0	Pennsylvania	722511	Full-service restaurants	72	9358.2	193405.4	2997730.4
+34199	42	42	0	Pennsylvania	722513	Limited-service restaurants	72	8960.0	118847.2	1446862.0
+34200	42	42	0	Pennsylvania	722514	Cafeterias, grill buffets, and buffets	72	190.4	3182.8	43827.2
+34201	42	42	0	Pennsylvania	722515	Snack and nonalcoholic beverage bars	72	2401.8	25199.2	322871.8
+34202	42	42	0	Pennsylvania	811111	General automotive repair	81	4536.4	17061.4	579607.4
+34203	42	42	0	Pennsylvania	811112	Automotive exhaust system repair	81	34.2	158.0	5085.6
+34204	42	42	0	Pennsylvania	811113	Automotive transmission repair	81	196.0	708.2	25453.6
+34205	42	42	0	Pennsylvania	811118	Other automotive mechanical and electrical repair and maintenance	81	140.6	725.4	26624.6
+34206	42	42	0	Pennsylvania	811121	Automotive body, paint, and interior repair and maintenance	81	1561.2	9587.8	393121.8
+34207	42	42	0	Pennsylvania	811122	Automotive glass replacement shops	81	191.0	1073.0	37359.6
+34208	42	42	0	Pennsylvania	811191	Automotive oil change and lubrication shops	81	196.0	1570.2	32539.0
+34209	42	42	0	Pennsylvania	811192	Car washes	81	560.2	4383.0	78998.4
+34210	42	42	0	Pennsylvania	811198	All other automotive repair and maintenance	81	125.8	411.2	13801.8
+34211	42	42	0	Pennsylvania	811211	Consumer electronics repair and maintenance	81	58.0	295.4	12503.4
+34212	42	42	0	Pennsylvania	811212	Computer and office machine repair and maintenance	81	141.8	1297.0	59207.6
+34213	42	42	0	Pennsylvania	811213	Communication equipment repair and maintenance	81	62.4	2237.8	119528.2
+34214	42	42	0	Pennsylvania	811219	Other electronic and precision equipment repair and maintenance	81	161.2	1520.6	87389.4
+34215	42	42	0	Pennsylvania	811310	Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance	81	924.0	9144.6	457824.2
+34216	42	42	0	Pennsylvania	811411	Home and garden equipment repair and maintenance	81	66.4	161.2	4453.8
+34217	42	42	0	Pennsylvania	811412	Appliance repair and maintenance	81	114.0	463.0	13725.4
+34218	42	42	0	Pennsylvania	811420	Reupholstery and furniture repair	81	131.0	448.2	13914.8
+34219	42	42	0	Pennsylvania	811430	Footwear and leather goods repair	81	29.6	41.0	1005.8
+34220	42	42	0	Pennsylvania	811490	Other personal and household goods repair and maintenance	81	225.6	783.6	20386.6
+34221	42	42	0	Pennsylvania	812111	Barber shops	81	223.0	714.4	14060.2
+34222	42	42	0	Pennsylvania	812112	Beauty salons	81	4832.8	28248.4	555714.0
+34223	42	42	0	Pennsylvania	812113	Nail salons	81	1117.4	3669.0	61115.0
+34224	42	42	0	Pennsylvania	812191	Diet and weight reducing centers	81	170.2	1060.6	11826.4
+34225	42	42	0	Pennsylvania	812199	Other personal care services	81	676.0	3899.2	62864.6
+34226	42	42	0	Pennsylvania	812210	Funeral homes and funeral services	81	1017.2	5033.8	173801.8
+34227	42	42	0	Pennsylvania	812220	Cemeteries and crematories	81	537.0	2449.0	81612.8
+34228	42	42	0	Pennsylvania	812310	Coin-operated laundries and drycleaners	81	323.6	1207.0	21955.2
+34229	42	42	0	Pennsylvania	812320	Drycleaning and laundry services (except coin-operated)	81	716.4	3661.8	64860.6
+34230	42	42	0	Pennsylvania	812331	Linen supply	81	44.0	958.6	33002.2
+34231	42	42	0	Pennsylvania	812332	Industrial launderers	81	63.0	2639.6	109403.0
+34232	42	42	0	Pennsylvania	812910	Pet care (except veterinary) services	81	660.2	3297.2	56420.0
+34233	42	42	0	Pennsylvania	812921	Photofinishing laboratories (except one-hour)	81	14.8	56.4	1673.8
+34234	42	42	0	Pennsylvania	812922	One-hour photofinishing	81	4.2	6.0	147.4
+34235	42	42	0	Pennsylvania	812930	Parking lots and garages	81	433.0	5470.6	100706.4
+34236	42	42	0	Pennsylvania	812990	All other personal services	81	321.2	1216.8	35249.2
+34237	42	42	0	Pennsylvania	813110	Religious organizations	81	9489.2	74140.0	1405704.8
+34238	42	42	0	Pennsylvania	813211	Grantmaking foundations	81	462.6	2853.2	162509.2
+34239	42	42	0	Pennsylvania	813212	Voluntary health organizations	81	171.4	2010.2	100976.8
+34240	42	42	0	Pennsylvania	813219	Other grantmaking and giving services	81	159.4	1459.2	63427.0
+34241	42	42	0	Pennsylvania	813311	Human rights organizations	81	110.0	851.6	34484.6
+34242	42	42	0	Pennsylvania	813312	Environment, conservation and wildlife organizations	81	285.2	2729.2	81751.4
+34243	42	42	0	Pennsylvania	813319	Other social advocacy organizations	81	248.2	1980.0	76746.6
+34244	42	42	0	Pennsylvania	813410	Civic and social organizations	81	2341.6	17629.4	260791.6
+34245	42	42	0	Pennsylvania	813910	Business associations	81	492.0	2822.4	156795.8
+34246	42	42	0	Pennsylvania	813920	Professional organizations	81	282.2	4672.8	350052.6
+34247	42	42	0	Pennsylvania	813930	Labor unions and similar labor organizations	81	777.6	8775.8	229208.4
+34248	42	42	0	Pennsylvania	813940	Political organizations	81	111.4	447.6	17134.8
+34249	42	42	0	Pennsylvania	813990	Other similar organizations (except business, professional, labor, and political organizations)	81	422.8	3679.4	108662.2
