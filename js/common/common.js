@@ -78,6 +78,12 @@ function getHash() {
         return b;
       })(window.location.hash.substr(1).split('&'));
   }
+
+function updateHashAndWidgets(addToHash) {
+  updateHash(addToHash);
+  hashChangeforWidgets();
+}
+
 function updateHash(addToHash) {
 
     let hash = getHash(); // Include all existing
@@ -117,11 +123,10 @@ function updateHash(addToHash) {
     let searchTitle = 'Page ' + hashString;
     window.history.pushState("", searchTitle, pathname + queryString);
     //refreshMain();
-    hashChanged();
 }
 // updateHash in common.js triggers this `hashChangeEvent` event in multiple widgets.
 // Exception, React widgets use a different process.
-var hashChanged = function () {
+var hashChangeforWidgets = function () {
     // Create a new event
     var event = new CustomEvent('hashChangeEvent');
     // Dispatch the event
