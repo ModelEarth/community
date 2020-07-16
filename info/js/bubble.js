@@ -1,16 +1,4 @@
 
-//window.onhashchange = function() {
-//    alert("changed")
-//}
-// Triggered by user editing the URL hash
-$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
-    alert("changed by user")
-})
-
-window.addEventListener('hashchange', function() {
-  alert('The hash has changed!')
-}, false);
-
 //getting the listof indicators and populating the x and y dropdown options
 let dropdown = $('#graph-picklist-x');
 dropdown.empty();
