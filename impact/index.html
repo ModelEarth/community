@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../css/display.css" />
 <link rel="stylesheet" href="../css/hexagons.css">
 
-<script type="text/javascript" src="../localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/showdown.min.js"></script>
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../js/common/common.js"></script>
 
@@ -26,6 +26,7 @@
 
 <!-- after d3 -->
 <script type="text/javascript" src="../js/common/search-filters.js"></script>
+<script type="text/javascript" src="../js/common/stupidtable.js"></script>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="../css/leaflet/leaflet.icon-material.css" rel="stylesheet">
@@ -413,7 +414,6 @@
 
               <!-- showAll showAllResults searchHeight -->
               <div id="clearButton" class="detailbutton" style="float:left;margin:0px 6px 0px 0px">Clear</div>
-                
               
             </div>
             <!-- /Submit Button -->
@@ -1322,7 +1322,7 @@ loadMap1();
 
 window.onhashchange = function() {
   //param = loadParam(location.search,location.hash);
-  console.log("user changed hash")
+  console.log("user changed hash");
   loadMap1();
 }
 
