@@ -1,5 +1,18 @@
 //default is state13 for GA, change that number to get data for other states
 //the number after naics is the number of digits in the naics code
+
+// To do:
+// This is commented out below, call heatmap widget instead.
+// updateHash({"naics":naicshash});
+
+// `hashChangeEvent` event reside in multiple widgets. 
+// Called by updateHash within common.js
+document.addEventListener('hashChangeEvent', function (elem) {
+  console.log("hash changed")
+  let params = loadParams(location.search,location.hash);
+  //updateChart(params.x,params.y,params.z);
+}, false);
+
 let dataObject={};
 dataObject.stateshown=13;
 let params = loadParams(location.search,location.hash);
@@ -183,7 +196,7 @@ function ready(values) {
                                 addGeoChangeDetectToDOM(count+1)
                             }, 10 );
                         } else {
-                            console.log("ERROR: addGeoChangeDetectToDOM exceeded 100 attempts.");
+                            console.log("Geo location filter probably not in page. addGeoChangeDetectToDOM exceeded 100 attempts.");
                         }
                     }
 
@@ -329,6 +342,8 @@ function renderIndustryChart(dataObject,values,params) {
         fips = dataObject.stateshown;
     }
     //geoChanged(dataObject,params);
+    //catsort = params.catsort;
+    let catsort = "payann";
     topRatesInFips(dataObject, dataObject.industryNames, fips, 20, catsort, params);
 }
 
@@ -960,7 +975,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                         
                         } // End naics rows
 
-                        updateHash({"naics":naicshash});
+                        //updateHash({"naics":naicshash});
                     })
                 })
                 d3.csv(root + "data/county_ID_list.csv").then( function(consdata) {
