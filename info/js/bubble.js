@@ -217,7 +217,7 @@ $( document ).ready(function() {
       $("#graph-picklist-x").val(params.x);
       $("#graph-picklist-y").val(params.y);
       $("#graph-picklist-z").val(params.z);
-    } else {
+    } else { // Same as below
       $("#graph-picklist-x").val('ENRG');
       $("#graph-picklist-y").val('WATR');
       $("#graph-picklist-z").val('LAND');
@@ -247,7 +247,11 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
 
 function updateChart(x,y,z){
   console.log("ebteda"+x)
-  
+  if (!(x&y&z)) { // Same as above
+    x = 'ENRG';
+    y = 'WATR';
+    z = 'LAND';
+  }
   //Fetch data
   var records = getDimensions(x,y,z);
   updateTitle(x,y,z);
