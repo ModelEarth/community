@@ -117,7 +117,16 @@ function updateHash(addToHash) {
     let searchTitle = 'Page ' + hashString;
     window.history.pushState("", searchTitle, pathname + queryString);
     //refreshMain();
+    hashChanged();
 }
+// updateHash in common.js triggers this `hashChangeEvent` event in multiple widgets.
+// Exception, React widgets use a different process.
+var hashChanged = function () {
+    // Create a new event
+    var event = new CustomEvent('hashChangeEvent');
+    // Dispatch the event
+    document.dispatchEvent(event);
+};
 function clearHash(toClear) {
   let hash = getHash(); // Include all existing
   let clearArray = toClear.split(/\s*,\s*/);

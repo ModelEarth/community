@@ -1,4 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 
 <script>
 //alert("test");
@@ -6,13 +7,14 @@
 // To do: detect any click and compare new hash with the prior hash value after current execution ends.
 
 window.addEventListener('hashchange', function() {
-  // Only works when loading, backing up or changing manually.
-  alert('The hash has changed!')
-}, true);
+  // Only works on loading, backing up or changing manually.
+  //alert('The hash has changed!')
+}, false);
 
-if ("onhashchange" in window) { // Fires on initial load
-	alert("onhashchange in window")
+if ("onhashchange" in window) { // Fires only on initial load
+	//alert("onhashchange in window")
 }
+
 
 function updateHash(addToHash) {
 
@@ -59,6 +61,29 @@ function updateHash(addToHash) {
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../js/common/common.js"></script><!-- for UpdateHash -->
 
+<div class="not-blue"></div>
+<script>
+
+// Trigger each widget to run a function with it's hashChangeEvent listener
+// Exception, React widgets use a different process.
+var hashChanged = function () {
+    // Create a new event
+    var event = new CustomEvent('hashChangeEvent');
+    // Dispatch the event
+    document.dispatchEvent(event);
+};
+
+// common.js function updateHash function triggers `hashChangeEvent` event in widgets.
+document.addEventListener('hashChangeEvent', function (elem) {
+    alert('blue')
+}, false);
+
+document.addEventListener('hashChangeEvent', function (elem) {
+    alert('green')
+}, false);
+
+hashChanged();
+</script>
 
 <a href="#x=test">test</a><br><br>
 
