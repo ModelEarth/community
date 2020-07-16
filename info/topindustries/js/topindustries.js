@@ -161,10 +161,8 @@ function ready(values) {
                 $(document).ready(function() {
                     //code for what happens when you choose the state and county from drop down
                     d3.selectAll(".picklist").on("change",function(){
-                        
-                        renderIndustryChart(dataObject,values,params);
-                        
-                        
+                        // Using hash instead
+                        //renderIndustryChart(dataObject,values,params);
                     });
                     
                     if (document.getElementById("clearButton")) {
@@ -202,10 +200,10 @@ function ready(values) {
 
 }
 
-
+// Triggered by user editing the URL hash
 $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
-        // Note that params differs from param in common.js in case this script runs without refreshWidgets().
-    lastParams = params;
+    alert("changed by user")
+    lastParams = params; // Note that params differs from singular "param" in common.js in case this script runs without refreshWidgets().
     params = loadParams(location.search,location.hash);
     //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
 
@@ -330,7 +328,8 @@ function renderIndustryChart(dataObject,values,params) {
     }else{
         fips = dataObject.stateshown;
     }
-    geoChanged(dataObject,params);
+    //geoChanged(dataObject,params);
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, catsort, params);
 }
 
 
@@ -427,7 +426,6 @@ function keyFound(this_key, cat_filter) {
 
 //the code to give you the top n rows of data for a specific fips
 function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
-
     d3.csv(root + "data/data_raw/BEA_Industry_Factors/state_fips.csv").then( function(consdata) {
         var filteredData = consdata.filter(function(d) {
             if(d["FIPS"]==String(dataObject.stateshown)) {
