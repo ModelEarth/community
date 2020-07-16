@@ -1,8 +1,5 @@
-
-$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds  
-  hashChanged();
-});
-// updateHash in common.js triggers this `hashChangeEvent` event in multiple widgets.
+// `hashChangeEvent` event reside in multiple widgets. 
+// Called by updateHash within common.js
 document.addEventListener('hashChangeEvent', function (elem) {
   console.log("hash changed")
   let params = loadParams(location.search,location.hash);

@@ -127,6 +127,9 @@ var hashChanged = function () {
     // Dispatch the event
     document.dispatchEvent(event);
 };
+$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds  
+  hashChanged();
+});
 function clearHash(toClear) {
   let hash = getHash(); // Include all existing
   let clearArray = toClear.split(/\s*,\s*/);
