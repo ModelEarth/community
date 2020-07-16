@@ -3,6 +3,7 @@
 
 // To do:
 // This is commented out below, call heatmap widget instead.
+// Updating the hash with updateHash triggers reloading page, which trigger a NaN loop.
 // updateHash({"naics":naicshash});
 
 // `hashChangeEvent` event reside in multiple widgets. 
