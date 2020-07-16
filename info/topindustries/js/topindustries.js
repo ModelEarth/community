@@ -3,11 +3,10 @@
 
 // To do:
 // This is commented out below, call heatmap widget instead.
-// Updating the hash with updateHash triggers reloading page, which trigger a NaN loop.
-// updateHash({"naics":naicshash});
+// updateHashAndWidgets({"naics":naicshash});
 
 // `hashChangeEvent` event reside in multiple widgets. 
-// Called by updateHash within common.js
+// Called by updateHashAndWidgets within common.js
 document.addEventListener('hashChangeEvent', function (elem) {
   console.log("hash changed")
   let params = loadParams(location.search,location.hash);
@@ -976,7 +975,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                         
                         } // End naics rows
 
-                        //updateHash({"naics":naicshash});
+                        //updateHashAndWidgets({"naics":naicshash});
                     })
                 })
                 d3.csv(root + "data/county_ID_list.csv").then( function(consdata) {
