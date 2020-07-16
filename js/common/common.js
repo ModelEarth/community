@@ -124,7 +124,7 @@ function updateHash(addToHash) {
     window.history.pushState("", searchTitle, pathname + queryString);
     //refreshMain();
 }
-// updateHash in common.js triggers this `hashChangeEvent` event in multiple widgets.
+// Triggers custom hashChangeEvent in multiple widgets.
 // Exception, React widgets use a different process.
 var hashChangeforWidgets = function () {
     // Create a new event
@@ -133,7 +133,7 @@ var hashChangeforWidgets = function () {
     document.dispatchEvent(event);
 };
 $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds  
-  hashChanged();
+  hashChangeforWidgets();
 });
 function clearHash(toClear) {
   let hash = getHash(); // Include all existing
