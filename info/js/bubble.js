@@ -1,3 +1,16 @@
+
+//window.onhashchange = function() {
+//    alert("changed")
+//}
+// Triggered by user editing the URL hash
+$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
+    alert("changed by user")
+})
+
+window.addEventListener('hashchange', function() {
+  alert('The hash has changed!')
+}, false);
+
 //getting the listof indicators and populating the x and y dropdown options
 let dropdown = $('#graph-picklist-x');
 dropdown.empty();
@@ -214,6 +227,9 @@ $( document ).ready(function() {
 
 
       d3.selectAll(".graph-picklist").on("change",function(){
+        updateHash({"x":$("#graph-picklist-x").val(),"y":$("#graph-picklist-y").val(),"z":$("#graph-picklist-z").val()});
+        
+        // To be moved into hash trigger:
         updateChart(d3.select("#graph-picklist-x").node().value,
           d3.select("#graph-picklist-y").node().value,
           d3.select("#graph-picklist-z").node().value);
