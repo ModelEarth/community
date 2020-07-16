@@ -5,14 +5,15 @@
 //  $("#info").html(output);
 //}
 
+let root = "/community/info/";
 var promises = [
-    d3.csv("data/industry_ID_list.csv"),
-    d3.tsv("data/c2.tsv"),
+    d3.csv(root + "data/industry_ID_list.csv"),
+    d3.tsv(root + "data/c2.tsv"),
     
     //d3.tsv("data/c3.tsv"),
-    d3.tsv("data/c4.tsv"),
+    d3.tsv(root + "data/c4.tsv"),
     //d3.tsv("data/c5.tsv"),
-    d3.tsv("data/c6.tsv"),
+    d3.tsv(root + "data/c6.tsv"),
  
 ]
 

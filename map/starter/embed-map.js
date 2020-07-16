@@ -1318,7 +1318,8 @@ function mix(incoming, target) { // Combine two objects, priority to incoming. D
 // END COMMON
 
 // UNIQUE TO PAGE
-function jsLoaded(root) {	
+function jsLoaded(root) {
+	loadScript(root + '/community/js/common/stupidtable.js', function(results) {});
 	if (location.host.indexOf('localhost') >= 0) {
 		// Causing map points to shift right, maybe due to later loading.
 		//loadScript(root + '/community/js/common/navigation.js');
@@ -1399,7 +1400,7 @@ function lazyLoadFiles() {
 		} else if (count<100) { // Wait a milisecond and try again
 			setTimeout( function() {
 	   			console.log("try loadSearchFilters again")
-				loadSearchFilters(count++);
+				loadSearchFilters(count+1);
 	   		}, 10 );
 		} else {
 			console.log("ERROR: loadSearchFilters exceeded 100 attempts.");

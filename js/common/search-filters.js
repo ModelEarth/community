@@ -617,7 +617,7 @@ function showCounties() {
 		});
 		//console.log(allDifferences);
 
-		var table = d3.select(".output_table").append("table");
+		var table = d3.select(".output_table").append("table").attr("id", "county-table");
 
 		var header = table.append("thead").append("tr");
 
@@ -689,12 +689,12 @@ function showCounties() {
 			})			
 			;
 
-
 		// load the function file you need before you call it...
 		// Not available here
-		//loadScript('/community/start/dataset/stupidtable.js', function(results) { 
+		
+		// loadScript is not available here, only in calling page.
+		//loadScript('/community/js/common/stupidtable.js', function(results) { 
 			// jquery sorting applied to it - could be done with d3 and events.
-
 			applyStupidTable(1); 
 		//});
 
@@ -707,12 +707,16 @@ function showCounties() {
 	});
 }
 function applyStupidTable(count) {
-	if (typeof stupidtable === "function") { // Prevents TypeError: $(...).stupidtable is not a function
-		$("table").stupidtable();
-		$("table2").stupidtable();
+	console.log("applyStupidTable attempt " + count);
+
+	if ($.fn.stupidtable) { // Prevents TypeError: $(...).stupidtable is not a function
+		console.log("Table function available. Count " + count);
+		//$("table").stupidtable();
+		$("#county-table").stupidtable();
+		//$("table2").stupidtable();
 	} else if (count <= 100) {
 		setTimeout( function() {
-			applyStupidTable(count++);
+			applyStupidTable(count+1);
 		}, 10 );
 	} else {
 		console.log("applyStupidTable attepts exceeded 100.");
