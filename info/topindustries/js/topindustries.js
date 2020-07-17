@@ -219,7 +219,7 @@ function ready(values) {
 //$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
 function displayTopIndustries() { // Not currently called
     console.log("params.catsort " + params.catsort)
-    lastParams = params; // Note that params differs from singular "param" in localsite.js in case this script runs without refreshWidgets().
+    lastParams = params;
     params = loadParams(location.search,location.hash);
     //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
 
@@ -1000,7 +1000,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
                         }
                         for(var i=0; i<fipslen; i++){
                             var filteredData = consdata.filter(function(d) {
-                                if(d["id"]==fips[i]){
+                                if(d["id"]==fips[i] && params.regiontitle == ""){
                                     $(".regiontitle").text("Industries within "+fipslen+" counties");
                                     /*
                                     if(i==fipslen-1){
