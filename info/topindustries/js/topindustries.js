@@ -178,6 +178,7 @@ function ready(values) {
                     // Called by goHash within localsite.js
                     document.addEventListener('hashChangeEvent', function (elem) {
                         let params = loadParams(location.search,location.hash);
+                        displayTopIndustries();
                         renderIndustryChart(dataObject,values,params);
                     }, false);
                                         
