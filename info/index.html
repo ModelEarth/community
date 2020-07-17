@@ -10,13 +10,8 @@
 <script type="text/javascript" src="../../localsite/js/localsite.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 
-
 <!--
-1900 Coast St, Brunswick GA 31502
-31.1891,-81.4979
-
-
-<link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
+To activate: addCountyBoundaries
 -->
 
 <script src="../js/d3/d3.v5.min.js"></script>
@@ -212,23 +207,21 @@ function refreshWidgets() {
 	if (hash.view != priorHash.view) {
 		applyView(hash.view);
 	}
-	if (hash.geo != priorHash.geo) { // Not usable, already changed at this point.
-		//hash.region = "";
-		//goHash({"region",""});
-		$(".regiontitle").text(""); //Clear
-		$(".regionsubtitle").text(""); //Clear
-		updateLoc(hash.geo); // Check counties. (search-filters.js)
-	}
+
+
+	//alert(hash.regiontitle)
 	if (hash.regiontitle != priorHash.regiontitle) {
 		$(".regiontitle").text(hash.regiontitle);
 	}
 	if (hash.indicators != priorHash.indicators) {
-		//alert('hashchange: ' + hash.indicators + " " + param.indicators);
-		//goHash({"view":"mosaic"}); // Temp, until view=io ready.
-		//hash.view = "mosaic"; // Temp, until view=io ready.
 		loadIOWidgets(hash);
 	}
 
+	if (hash.geo != priorHash.geo) { // Not usable, already changed at this point.
+		$(".regiontitle").text(""); //Clear
+		$(".regionsubtitle").text(""); //Clear
+		updateLoc(hash.geo); // Check counties. (search-filters.js)
+	}
 	if(hash.geo){
         if (hash.geo.length > 4) {
             $("#infoColumn").hide();
@@ -251,10 +244,7 @@ function refreshWidgets() {
 	if (param.indicators) {
 		$("#indicators").val(param.indicators);
 	}
-	
-}
-function go(go) { // From link click
-	goHash(go);    
+
 }
 </script>
 
@@ -270,17 +260,17 @@ function go(go) { // From link click
 <!-- two columns -->
 <div class="pageColumns">
 <div class="mainColumn mainColumn1" style="font-size: 15px; padding-right: 30px">
-	<a onClick="go({'go':'', 'view':'mosaic', 'count':'10', 'regiontitle':'', 'geo':''}); return false;" href="./#view=mosaic">Overview</a> | 
-	<a onClick="go({'go':'bioeconomy', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
+	<a onClick="goHash({'go':'', 'view':'mosaic', 'count':'10', 'regiontitle':'', 'geo':''}); return false;" href="./#view=mosaic">Overview</a> | 
+	<a onClick="goHash({'go':'bioeconomy', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
 	<a href="../../io/charts/">About Widgets</a> |
-	<a onClick="go({'go':'dataprep', 'view':'mosaic', 'geo':'', 'regiontitle':'', 'count':'10', 'catsort':'estab'}); return false;" href="./#go=bioeconomy&view=mosaic">Data Prep</a>
+	<a onClick="goHash({'go':'dataprep', 'view':'mosaic', 'geo':'', 'regiontitle':'', 'count':'10', 'catsort':'estab'}); return false;" href="./#go=bioeconomy&view=mosaic">Data Prep</a>
 	
 	<br>
 </div>
 <div class="mainColumn mainColumn2" style="font-size: 15px;">
 	<a href="#view=mosaic">Statewide</a> | 
 
-	<a onClick="go({
+	<a onClick="goHash({
 	'regiontitle':'Southeast+Coastal+Georgia',
 	'geo':'US13001,US13005,US13127,US13161,US13229,US13305', 
 	'view':'mosaic', 
@@ -289,7 +279,7 @@ function go(go) { // From link click
 	'lon':'-81.4979'
 	}); return false;" href="#regiontitle=Southeast+Coastal+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10&lat=31.1891&lon=-81.4980">Southeast Coastal</a> |  
 
-	<a onClick="go({
+	<a onClick="goHash({
 	'regiontitle':'West+Central+Georgia',
 	'geo':'US13077,US13145,US13149,US13199,US13263,US13285', 
 	'view':'mosaic', 
@@ -337,12 +327,12 @@ function go(go) { // From link click
 				settings
 				</span>
 			</div>
-			<select id="catsort" class="picklist" onchange="goHash({'catsort':this.value});refreshWidgets();">
+			<select id="catsort" class="picklist" onchange="goHash({'catsort':this.value});">
 	          <option value="payann" selected>By Annual Payroll</option>
 	          <option value="emp" >By Employee Count</option>
 	          <option value="estab">By Establishments</option>
 	        </select>
-	        <select id="catsize" class="picklist" onchange="goHash({'catsize':this.value});refreshWidgets();">
+	        <select id="catsize" class="picklist" onchange="goHash({'catsize':this.value});">
 	          <option value="2">Sectors - 2 digits</option>
 	          <!--option value="2">Subsectors - 3 digits</option-->
 	          <option value="4">Industry Group - 4 digits</option>
@@ -356,7 +346,7 @@ function go(go) { // From link click
 		        	Choose a county or region above to view filter settings.
 		        </div>
 		        <div class="county-view" style="display:none">
-			        <select id="catmethod" class="picklist" onchange="goHash({'catmethod':this.value});refreshWidgets();">
+			        <select id="catmethod" class="picklist" onchange="goHash({'catmethod':this.value});">
 			          <option value="1" selected>Estimate using unpublished payrolls</option>
 			          <option value="2" >Estimate using total state payroll</option>
 			          <option value="0" >Leave unpublished values blank</option>
@@ -389,7 +379,7 @@ function go(go) { // From link click
 
 	<div class="io" style="float:right;">
 
-	<select id="indicators" class="filterClickX form-selectX picklist" onchange="goHash({'indicators':this.value});refreshWidgets();" style="width: 450px;">
+	<select id="indicators" class="filterClickX form-selectX picklist" onchange="goHash({'indicators':this.value});" style="width: 450px;">
 
 	<option value="">Industries with top impacts...</option>
 
