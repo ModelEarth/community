@@ -222,15 +222,36 @@ function refreshWidgets() {
 	if (hash.regiontitle != priorHash.regiontitle) {
 		$(".regiontitle").text(hash.regiontitle);
 	}
-	if (hash.directory != priorHash.directory) {
-		
-	}
 	if (hash.indicators != priorHash.indicators) {
 		//alert('hashchange: ' + hash.indicators + " " + param.indicators);
 		//goHash({"view":"mosaic"}); // Temp, until view=io ready.
 		//hash.view = "mosaic"; // Temp, until view=io ready.
 		loadIOWidgets(hash);
 	}
+
+	if(hash.geo){
+        if (hash.geo.length > 4) {
+            $("#infoColumn").hide();
+        } else {
+            $("#infoColumn").show();
+        }
+    }else{
+        $(".mainColumn1").show();
+    }
+
+    if (param.catsort) {
+		$("#catsort").val(param.catsort);
+	}
+	if (param.catsize) {
+		$("#catsize").val(param.catsize);
+	}
+	if (param.catmethod) {
+		$("#catmethod").val(param.catmethod);
+	}
+	if (param.indicators) {
+		$("#indicators").val(param.indicators);
+	}
+	
 }
 function go(go) { // From link click
 	goHash(go);    
@@ -1010,25 +1031,6 @@ function loadIOWidgets(param) {
 	applyView(param["view"]);
 }
 loadIOWidgets(param);
-
-
-// Move into topindustries.js
-$(document).ready(function () {
-	if (param.catsort) {
-		$("#catsort").val(param.catsort);
-	}
-	if (param.catsize) {
-		$("#catsize").val(param.catsize);
-	}
-	if (param.catmethod) {
-		$("#catmethod").val(param.catmethod);
-	}
-	if (param.indicators) {
-		$("#indicators").val(param.indicators);
-	}
-});
-
-
 
 function applyView(view) {
 	// CENTER - SECTORS
