@@ -232,11 +232,6 @@ function displayTopIndustries() { // Not currently called
         geoChanged(dataObject);
     }else if (params.census_scope != lastParams.census_scope) {
         geoChanged(dataObject);
-    }else if (params.catsort != lastParams.catsort) {
-        geoChanged(dataObject);
-    }
-    else if (params.catsize != lastParams.catsize) {
-        geoChanged(dataObject);
     }
 
     if(params["geo"]){
