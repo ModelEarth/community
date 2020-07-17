@@ -119,7 +119,8 @@ function updateHash(addToHash) {
     //refreshMain();
 }
 function goHash(addToHash) {
-  console.log("goHash " + addToHash)
+  console.log("goHash ")
+  console.log(addToHash)
   updateHash(addToHash);
   triggerHashChangeEvent();
 }
