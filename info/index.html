@@ -189,6 +189,11 @@ h2 {
   
 
 <script>
+document.addEventListener('hashChangeEvent', function (elem) {
+  //let params = loadParams(location.search,location.hash);
+  refreshWidgets();
+}, false);
+
 // INIT
 var hash = getHash(); // Include all existing
 $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
@@ -209,7 +214,7 @@ function refreshWidgets() {
 	}
 	if (hash.geo != priorHash.geo) { // Not usable, already changed at this point.
 		//hash.region = "";
-		//updateHashAndWidgets({"region",""});
+		//goHash({"region",""});
 		$(".regiontitle").text(""); //Clear
 		$(".regionsubtitle").text(""); //Clear
 		updateLoc(hash.geo); // Check counties. (search-filters.js)
@@ -222,13 +227,13 @@ function refreshWidgets() {
 	}
 	if (hash.indicators != priorHash.indicators) {
 		//alert('hashchange: ' + hash.indicators + " " + param.indicators);
-		//updateHashAndWidgets({"view":"mosaic"}); // Temp, until view=io ready.
+		//goHash({"view":"mosaic"}); // Temp, until view=io ready.
 		//hash.view = "mosaic"; // Temp, until view=io ready.
 		loadIOWidgets(hash);
 	}
 }
 function go(go) { // From link click
-	updateHashAndWidgets(go);    
+	goHash(go);    
 }
 </script>
 
@@ -311,12 +316,12 @@ function go(go) { // From link click
 				settings
 				</span>
 			</div>
-			<select id="catsort" class="picklist" onchange="updateHashAndWidgets({'catsort':this.value});refreshWidgets();">
+			<select id="catsort" class="picklist" onchange="goHash({'catsort':this.value});refreshWidgets();">
 	          <option value="payann" selected>By Annual Payroll</option>
 	          <option value="emp" >By Employee Count</option>
 	          <option value="estab">By Establishments</option>
 	        </select>
-	        <select id="catsize" class="picklist" onchange="updateHashAndWidgets({'catsize':this.value});refreshWidgets();">
+	        <select id="catsize" class="picklist" onchange="goHash({'catsize':this.value});refreshWidgets();">
 	          <option value="2">Sectors - 2 digits</option>
 	          <!--option value="2">Subsectors - 3 digits</option-->
 	          <option value="4">Industry Group - 4 digits</option>
@@ -330,7 +335,7 @@ function go(go) { // From link click
 		        	Choose a county or region above to view filter settings.
 		        </div>
 		        <div class="county-view" style="display:none">
-			        <select id="catmethod" class="picklist" onchange="updateHashAndWidgets({'catmethod':this.value});refreshWidgets();">
+			        <select id="catmethod" class="picklist" onchange="goHash({'catmethod':this.value});refreshWidgets();">
 			          <option value="1" selected>Estimate using unpublished payrolls</option>
 			          <option value="2" >Estimate using total state payroll</option>
 			          <option value="0" >Leave unpublished values blank</option>
@@ -363,7 +368,7 @@ function go(go) { // From link click
 
 	<div class="io" style="float:right;">
 
-	<select id="indicators" class="filterClickX form-selectX picklist" onchange="updateHashAndWidgets({'indicators':this.value});refreshWidgets();" style="width: 450px;">
+	<select id="indicators" class="filterClickX form-selectX picklist" onchange="goHash({'indicators':this.value});refreshWidgets();" style="width: 450px;">
 
 	<option value="">Industries with top impacts...</option>
 
@@ -674,7 +679,7 @@ function locClick(which) {
 
 	$(".regiontitle").text(""); //Clear
 	let regiontitle = ""; // Remove from hash. Later associate existing regions.
-	updateHashAndWidgets({"geo":hash.geo,"regiontitle":regiontitle});
+	goHash({"geo":hash.geo,"regiontitle":regiontitle});
 }
 /*
 document.getElementById('showValues').onclick = function() {

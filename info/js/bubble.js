@@ -1,5 +1,5 @@
 // `hashChangeEvent` event reside in multiple widgets. 
-// Called by updateHashAndWidgets within common.js
+// Called by goHash within common.js
 document.addEventListener('hashChangeEvent', function (elem) {
   console.log("hash changed")
   let params = loadParams(location.search,location.hash);
@@ -228,7 +228,7 @@ $( document ).ready(function() {
 
 
       d3.selectAll(".graph-picklist").on("change",function(){
-        updateHashAndWidgets({"x":$("#graph-picklist-x").val(),"y":$("#graph-picklist-y").val(),"z":$("#graph-picklist-z").val()});
+        goHash({"x":$("#graph-picklist-x").val(),"y":$("#graph-picklist-y").val(),"z":$("#graph-picklist-z").val()});
         //updateChart(d3.select("#graph-picklist-x").node().value,
         ///  d3.select("#graph-picklist-y").node().value,
         //  d3.select("#graph-picklist-z").node().value);

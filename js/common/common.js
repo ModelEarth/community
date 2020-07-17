@@ -67,23 +67,17 @@ function mix(incoming, target) { // Combine two objects, priority to incoming. D
    return target;
 }
 function getHash() {
-      return (function (a) {
-        if (a == "") return {};
-        var b = {};
-        for (var i = 0; i < a.length; ++i) {
-            var p = a[i].split('=');
-            if (p.length != 2) continue;
-            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
-        }
-        return b;
-      })(window.location.hash.substr(1).split('&'));
-  }
-
-function updateHashAndWidgets(addToHash) {
-  updateHash(addToHash);
-  hashChangeforWidgets();
+    return (function (a) {
+      if (a == "") return {};
+      var b = {};
+      for (var i = 0; i < a.length; ++i) {
+          var p = a[i].split('=');
+          if (p.length != 2) continue;
+          b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+      }
+      return b;
+    })(window.location.hash.substr(1).split('&'));
 }
-
 function updateHash(addToHash) {
 
     let hash = getHash(); // Include all existing
@@ -124,16 +118,21 @@ function updateHash(addToHash) {
     window.history.pushState("", searchTitle, pathname + queryString);
     //refreshMain();
 }
+function goHash(addToHash) {
+  console.log("goHash " + addToHash)
+  updateHash(addToHash);
+  triggerHashChangeEvent();
+}
 // Triggers custom hashChangeEvent in multiple widgets.
 // Exception, React widgets use a different process.
-var hashChangeforWidgets = function () {
+var triggerHashChangeEvent = function () {
     // Create a new event
     var event = new CustomEvent('hashChangeEvent');
     // Dispatch the event
     document.dispatchEvent(event);
 };
 $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds  
-  hashChangeforWidgets();
+  triggerHashChangeEvent();
 });
 function clearHash(toClear) {
   let hash = getHash(); // Include all existing

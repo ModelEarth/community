@@ -3,14 +3,13 @@
 
 // To do:
 // This is commented out below, call heatmap widget instead.
-// updateHashAndWidgets({"naics":naicshash});
+// goHash({"naics":naicshash});
 
 // `hashChangeEvent` event reside in multiple widgets. 
-// Called by updateHashAndWidgets within common.js
+// Called by goHash within common.js
 document.addEventListener('hashChangeEvent', function (elem) {
-  console.log("hash changed")
   let params = loadParams(location.search,location.hash);
-  //updateChart(params.x,params.y,params.z);
+
 }, false);
 
 let dataObject={};
@@ -215,7 +214,6 @@ function ready(values) {
 
 // Triggered by user editing the URL hash
 $(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
-    alert("changed by user")
     lastParams = params; // Note that params differs from singular "param" in common.js in case this script runs without refreshWidgets().
     params = loadParams(location.search,location.hash);
     //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
@@ -975,7 +973,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                         
                         } // End naics rows
 
-                        //updateHashAndWidgets({"naics":naicshash});
+                        //goHash({"naics":naicshash});
                     })
                 })
                 d3.csv(root + "data/county_ID_list.csv").then( function(consdata) {
