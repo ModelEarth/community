@@ -164,7 +164,7 @@ function ready(values) {
                 }
 
 
-                //topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#catsort"), params)
+                //topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#params.catsort"), params)
                 renderIndustryChart(dataObject,values,params);
 
                 $(document).ready(function() {
@@ -178,7 +178,12 @@ function ready(values) {
                     // Called by goHash within localsite.js
                     document.addEventListener('hashChangeEvent', function (elem) {
                         let params = loadParams(location.search,location.hash);
-                        displayTopIndustries();
+                        if(!params.catsort){
+                            if (d3.select("#catsort").node()) {
+                                params.catsort = d3.select("#catsort").node().value;
+                            }
+                        }
+                        //displayTopIndustries();
                         renderIndustryChart(dataObject,values,params);
                     }, false);
                                         
@@ -220,19 +225,13 @@ function ready(values) {
 // We might call this when hash changes.
 //$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
 function displayTopIndustries() { // Not currently called
+    console.log("xxxxx"+params.catsort)
     lastParams = params; // Note that params differs from singular "param" in localsite.js in case this script runs without refreshWidgets().
     params = loadParams(location.search,location.hash);
     //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
 
     // Both call topRatesInFips(). Might be good to move geoChanged processing into renderIndustryChart()
-    if (params.geo != lastParams.geo) { // Not usable, already changed at this point.
-        geoChanged(dataObject); // Apply county filter to industry list (topindustries.js)
-    } 
-    else if (params.go != lastParams.go) {
-        geoChanged(dataObject);
-    }else if (params.census_scope != lastParams.census_scope) {
-        geoChanged(dataObject);
-    }
+    
 
     if(params["geo"]){
         geo=params["geo"]
@@ -286,6 +285,7 @@ function displayTopIndustries() { // Not currently called
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function renderIndustryChart(dataObject,values,params) {
+
     console.log("renderIndustryChart")
     subsetKeys = ['emp_reported','emp_est1','emp_est3', 'payann_reported','payann_est1','payann_est3', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics','estimate_est1','estimate_est3']
     subsetKeys_state = ['emp_agg', 'payann_agg', 'estab_agg', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
@@ -348,10 +348,10 @@ function renderIndustryChart(dataObject,values,params) {
         fips = dataObject.stateshown;
     }
     //geoChanged(dataObject,params);
-    catsort = params.catsort;
-    //let catsort = "payann";
-    console.log('catsort ' + catsort);
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, catsort, params);
+    //params.catsort = params.catsort;
+    //let params.catsort = "payann";
+    //console.log('params.catsort ' + params.catsort);
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20,  params);
 }
 
 
@@ -387,12 +387,34 @@ function geoChanged(dataObject,params){
         $(".county-view").show();
         $(".industry_filter_settings").show(); // temp
     }
-    let catsort = "payann";
-    if (d3.select("#catsort").node()) {
-        catsort = d3.select("#catsort").node().value;
+    
+
+    if(dataObject.stateshown!=dataObject.laststateshown){
+        d3.csv(root + "data/data_raw/BEA_Industry_Factors/state_fips.csv").then( function(consdata) {
+            var filteredData = consdata.filter(function(d) {
+                if(d["FIPS"]==String(dataObject.stateshown)) {
+                    var promises = [
+                    d3.csv(root + "data/industry_ID_list.csv"),
+                    d3.tsv(root + "data/usa/"+d['Postal Code']+"/industries_state"+dataObject.stateshown+"_naics2_all.tsv"),
+                    //d3.tsv(root + "data/c3.tsv"),
+                    d3.tsv(root + "data/usa/"+d['Postal Code']+"/industries_state"+dataObject.stateshown+"_naics4_all.tsv"),
+                    //d3.tsv(root + "data/c5.tsv"),
+                    d3.tsv(root + "data/usa/"+d['Postal Code']+"/industries_state"+dataObject.stateshown+"_naics6_all.tsv"),
+                    d3.csv(root + "data/county_ID_list.csv"),
+                    d3.tsv(root + "data/usa/"+d['Postal Code']+"/industries_state"+dataObject.stateshown+"_naics2_state_all.tsv"),
+                    d3.tsv(root + "data/usa/"+d['Postal Code']+"/industries_state"+dataObject.stateshown+"_naics4_state_all.tsv"),
+                    d3.tsv(root + "data/usa/"+d['Postal Code']+"/industries_state"+dataObject.stateshown+"_naics6_state_all.tsv"),
+                    d3.tsv(root + "data/usa/"+d['Postal Code']+"/"+d['Postal Code']+"counties.csv")
+                    ]
+                    Promise.all(promises).then(ready);
+                }
+            })
+
+        })
     }
+
     //alert("params.catsize " + params.catsize)
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, catsort, params)
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20,  params)
     console.log('fips: '+fips)
 }
 
@@ -447,30 +469,30 @@ function keyFound(this_key, cat_filter) {
 }
 
 //the code to give you the top n rows of data for a specific fips
-function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
+function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
     d3.csv(root + "data/data_raw/BEA_Industry_Factors/state_fips.csv").then( function(consdata) {
         var filteredData = consdata.filter(function(d) {
             if(d["FIPS"]==String(dataObject.stateshown)) {
-                if(catsort=='estab'){
-                    which=catsort;
+                if(params.catsort=='estab'){
+                    which=params.catsort;
                 }else{
                     if(params.catmethod==0){
-                        which=catsort+'_reported'
+                        which=params.catsort+'_reported'
                         //console.log("jjjjjjjjjjjjjjjjj"+which)
                     }else if(params.catmethod==2){
-                        which=catsort+'_est3'
+                        which=params.catsort+'_est3'
                         estimed='estimate_est3'
                     }else{ // params.catmethod==1 or null
-                        which= catsort+'_est1'
+                        which= params.catsort+'_est1'
                         estimed='estimate_est1'
                     }
                 }
 
 
                 if(params['census_scope']=="state"){
-                    which_state_api=catsort+'_api'
+                    which_state_api=params.catsort+'_api'
                 }else{
-                    which_state=catsort+'_agg'
+                    which_state=params.catsort+'_agg'
                     
                 }
                 
@@ -598,7 +620,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                                     rateInFips = rateInFips+parseFloat(dataSet.industryData.ActualRate[id][fips[j]][which])
                                     rateArray[j]=parseFloat(dataSet.industryData.ActualRate[id][fips[j]][which]);
                                     naicscode = dataSet.industryData.ActualRate[id][fips[j]]['relevant_naics']
-                                    if(params.catmethod!=0 & catsort!='estab'){
+                                    if(params.catmethod!=0 & params.catsort!='estab'){
                                         estim[j]=parseFloat(dataSet.industryData.ActualRate[id][fips[j]][estimed])
                                     }else{
                                         estim[j]=parseFloat(0)
@@ -693,7 +715,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                             if (dataSet.industryData.ActualRate[id].hasOwnProperty(fips)) {
                                 rateInFips = dataSet.industryData.ActualRate[id][fips][which]
                                 naicscode = dataSet.industryData.ActualRate[id][fips]['relevant_naics']
-                                if(params.catmethod!=0 & catsort != 'estab'){
+                                if(params.catmethod!=0 & params.catsort != 'estab'){
                                     estim = dataSet.industryData.ActualRate[id][fips][estimed]
                                 }else{
                                     estim=0
@@ -729,7 +751,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                 let text = "";
                 let dollar = ""; // optionally: $
                 let totalLabel = "Total";
-                if(catsort=="payann"){
+                if(params.catsort=="payann"){
                     totalLabel = "Total Payroll ($)";
                 }
                 if(Array.isArray(fips)){
@@ -815,7 +837,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                                 //let mapLink = "https://www.google.com/maps/search/" + top_data_list[i]['data_id'].replace(/ /g,"+") + "/@" + latitude + "," + longitude + ",11z";
 
 
-                            if(catsort=="payann"){
+                            if(params.catsort=="payann"){
                                 //text += top_data_list[i]['NAICScode'] + ": <b>" +top_data_list[i]['data_id']+"</b>, "+String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": $"+String((top_data_list[i][whichVal.node().value]/1000).toFixed(2))+" million <br>";
                                 if(Array.isArray(fips)){
 
@@ -896,7 +918,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                                     for (var j = 0; j<fips.length; j++){
                                         if(top_data_list[i]['ratearray'][j]){
 
-                                            if(catsort=="estab"){
+                                            if(params.catsort=="estab"){
                                                 midCol += "<div class='cell-right'><a href='" + mapLink[j] + "' target='_blank'>" + String(Math.round(top_data_list[i]['ratearray'][j])) + "</a></div>";
                                                 
                                             }else{
@@ -924,7 +946,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
 
                                     //rightCol = String(Math.round(top_data_list[i][whichVal.node().value]));
                                 }else{
-                                    if(catsort=="estab"){
+                                    if(params.catsort=="estab"){
                                         if(fips==dataObject.stateshown){
                                             if(params['census_scope']=="state"){
                                                 rightCol = "<div class='cell-right'><a href='" + mapLink + "' target='_blank'>" + String(Math.round(top_data_list[i][which_state_api])) + "</a></div>";
