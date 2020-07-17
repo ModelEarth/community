@@ -4,7 +4,7 @@ if (window.location.protocol != 'https:' && location.host.indexOf('localhost') <
 var imageUrl, imageUrlSide;
 $(document).ready(function(){
 
-	// Might move back to common.js after removing use of jquery
+	// Might move back to localsite.js after removing use of jquery
 	  if(location.host.indexOf('localhost') >= 0 || param["view"] == "local") {
 	    var div = $("<div />", {
 	        html: '<style>.local{display:inline-block !important}.localonly{display:block !important}</style>'

@@ -1366,7 +1366,7 @@ function lazyLoadFiles() {
   loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
   	loadScript(root + '/community/js/common/dual-map.js', function(results) {});
   });
-  loadScript(root + '/community/js/common/common.js', function(results) {
+  loadScript(root + '/localsite/js/localsite.js', function(results) {
 
   	var strVarCss = "<style>";
 	if (param["show"] == "suppliers") {

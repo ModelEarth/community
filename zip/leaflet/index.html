@@ -118,7 +118,7 @@ body { position:relative; }
 <script type="text/javascript" src="../../js/common/navigation.js"></script>
 <link rel="stylesheet" href="../../css/community.css" />
 <link rel="stylesheet" href="../../../localsite/css/base.css" />
-<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
 <!--
 
     https://datascape.github.io/community/map/zcta/states/Georgia.topo.json
@@ -256,7 +256,7 @@ body { position:relative; }
                   
 
         $(document).ready(function () {
-            // param init resides in common.js
+            // param init resides in localsite.js
             $(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
                 param = loadParams(location.search,location.hash); // Refresh param values when user changes URL after #.
                 if (param["columns"]) {
@@ -702,7 +702,7 @@ function clusterBuckets() {
                             addHtml += formatRow(c,cluster_stats[a][b][c],1,a);
                         }
                     } else {
-                        addHtml += formatRow(b,cluster_stats[a][b],1,a); // Resides in common.js
+                        addHtml += formatRow(b,cluster_stats[a][b],1,a); // Resides in localsite.js
                     }
                 }
             }
