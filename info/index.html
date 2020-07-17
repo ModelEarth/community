@@ -7,7 +7,7 @@
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="../js/common/common.js"></script>
+<script type="text/javascript" src="../../localsite/js/localsite.js"></script>
 <script type="text/javascript" src="../js/common/navigation.js"></script>
 
 
@@ -200,7 +200,7 @@ $(window).on('hashchange', function() { // Avoid window.onhashchange since overr
 	refreshWidgets();
 });
 function refreshWidgets() {
-	param = loadParams(location.search,location.hash); // param is declared in common.js
+	param = loadParams(location.search,location.hash); // param is declared in localsite.js
 	let priorHash = hash;
 	hash = getHash();
 	//alert("refreshWidgets from prior go: " + priorHash.go + " to " + hash.go);

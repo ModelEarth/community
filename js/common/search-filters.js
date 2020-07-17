@@ -35,7 +35,7 @@ function populateFieldsFromHash() {
 		$(".regiontitle").val(param["region"]);
 	}
 }
-// var param = loadParams(location.search,location.hash); // This occurs in common.js
+// var param = loadParams(location.search,location.hash); // This occurs in localsite.js
 
 
 $(document).ready(function () {

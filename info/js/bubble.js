@@ -1,5 +1,5 @@
 // `hashChangeEvent` event reside in multiple widgets. 
-// Called by goHash within common.js
+// Called by goHash within localsite.js
 document.addEventListener('hashChangeEvent', function (elem) {
   console.log("bubble chart detects hash changed")
   let params = loadParams(location.search,location.hash);
