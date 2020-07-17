@@ -163,8 +163,6 @@ function ready(values) {
                     fips = dataObject.stateshown;
                 }
 
-
-                //topRatesInFips(dataObject, dataObject.industryNames, fips, 20, d3.select("#params.catsort"), params)
                 renderIndustryChart(dataObject,values,params);
 
                 $(document).ready(function() {
@@ -178,11 +176,6 @@ function ready(values) {
                     // Called by goHash within localsite.js
                     document.addEventListener('hashChangeEvent', function (elem) {
                         let params = loadParams(location.search,location.hash);
-                        if(!params.catsort){
-                            if (d3.select("#catsort").node()) {
-                                params.catsort = d3.select("#catsort").node().value;
-                            }
-                        }
                         //displayTopIndustries();
                         renderIndustryChart(dataObject,values,params);
                     }, false);
@@ -225,7 +218,7 @@ function ready(values) {
 // We might call this when hash changes.
 //$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
 function displayTopIndustries() { // Not currently called
-    console.log("xxxxx"+params.catsort)
+    console.log("params.catsort " + params.catsort)
     lastParams = params; // Note that params differs from singular "param" in localsite.js in case this script runs without refreshWidgets().
     params = loadParams(location.search,location.hash);
     //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
@@ -286,6 +279,9 @@ function displayTopIndustries() { // Not currently called
 
 function renderIndustryChart(dataObject,values,params) {
 
+    if(!params.catsort){
+        params.catsort = "payann";
+    }
     console.log("renderIndustryChart")
     subsetKeys = ['emp_reported','emp_est1','emp_est3', 'payann_reported','payann_est1','payann_est3', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics','estimate_est1','estimate_est3']
     subsetKeys_state = ['emp_agg', 'payann_agg', 'estab_agg', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
@@ -293,7 +289,6 @@ function renderIndustryChart(dataObject,values,params) {
     dataObject.subsetKeys=subsetKeys
     dataObject.subsetKeys_state=subsetKeys_state
     dataObject.subsetKeys_state_api=subsetKeys_state_api
-    catsize =params.catsize;
     industryData = {
         'ActualRate': formatIndustryData(values[params.catsize/2],dataObject.subsetKeys),
     }
@@ -412,9 +407,7 @@ function geoChanged(dataObject,params){
 
         })
     }
-
-    //alert("params.catsize " + params.catsize)
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20,  params)
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, params)
     console.log('fips: '+fips)
 }
 
@@ -754,16 +747,6 @@ function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
                 if(params.catsort=="payann"){
                     totalLabel = "Total Payroll ($)";
                 }
-                if(Array.isArray(fips)){
-                    
-                    if (fips.length > 2) {
-                        $("#infoColumn").hide();
-                    } else {
-                        $("#infoColumn").show();
-                    }
-                }else{
-                    $(".mainColumn1").show();
-                }
                 d3.csv(root + "data/county_ID_list.csv").then( function(consdata) {
                     d3.csv(root + "data/usa/"+d['Postal Code']+"/"+d['Postal Code']+"counties.csv").then( function(latdata) {
                          // TABLE HEADER ROW
@@ -905,11 +888,6 @@ function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
                                 }
                      
                             } else {
-                                
-                                
-                                
-
-                                //console.log("xxxxxxxxxx"+county)
 
                                 //rightCol = String(whichVal.node().options[whichVal.node().selectedIndex].text).slice(3, )+": "+Math.round(top_data_list[i][whichVal.node().value]);
                                 if(Array.isArray(fips)){
