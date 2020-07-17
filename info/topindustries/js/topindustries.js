@@ -88,25 +88,26 @@ function ready(values) {
                 dataObject.subsetKeys_state=subsetKeys_state
                 dataObject.subsetKeys_state_api=subsetKeys_state_api
                 
-                let catsize = 6;
-                if (d3.select("#catsize").node()) {
-                    catsize = d3.select("#catsize").node().value;
+                if (!params.catsort) {
+                    params.catsort = "payann";
                 }
-                params.catsize = catsize;
+                if (!params.catsize) {
+                   params.catsize = 6;
+                }
                 industryData = {
-                    'ActualRate': formatIndustryData(values[catsize/2],dataObject.subsetKeys),
+                    'ActualRate': formatIndustryData(values[params.catsize/2],dataObject.subsetKeys),
                 }
                 dataObject.industryData = industryData;
                 //console.log(dataObject.industryData)
-                if (catsize==2){
+                if (params.catsize==2){
                     industryDataState = {
                         'ActualRate': formatIndustryData(values[5],dataObject.subsetKeys_state)
                     }
-                }else if(catsize==4){
+                }else if(params.catsize==4){
                     industryDataState = {
                         'ActualRate': formatIndustryData(values[6],dataObject.subsetKeys_state)
                     }
-                }else if(catsize==6){
+                }else if(params.catsize==6){
                     industryDataState = {
                         'ActualRate': formatIndustryData(values[7],dataObject.subsetKeys_state)
                     }
@@ -115,15 +116,15 @@ function ready(values) {
                 dataObject.industryDataState=industryDataState;
 
                 console.log(dataObject.industryDataState)
-                if (catsize==2){
+                if (params.catsize==2){
                     industryDataStateApi = {
                         'ActualRate': formatIndustryData(values[5],dataObject.subsetKeys_state_api)
                     }
-                }else if(catsize==4){
+                }else if(params.catsize==4){
                     industryDataStateApi = {
                         'ActualRate': formatIndustryData(values[6],dataObject.subsetKeys_state_api)
                     }
-                }else if(catsize==6){
+                }else if(params.catsize==6){
                     industryDataStateApi = {
                         'ActualRate': formatIndustryData(values[7],dataObject.subsetKeys_state_api)
                     }
@@ -174,7 +175,7 @@ function ready(values) {
                     });
 
                     // `hashChangeEvent` event reside in multiple widgets. 
-                    // Called by goHash within common.js
+                    // Called by goHash within localsite.js
                     document.addEventListener('hashChangeEvent', function (elem) {
                         let params = loadParams(location.search,location.hash);
                         renderIndustryChart(dataObject,values,params);
@@ -218,7 +219,7 @@ function ready(values) {
 // We might call this when hash changes.
 //$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
 function displayTopIndustries() { // Not currently called
-    lastParams = params; // Note that params differs from singular "param" in common.js in case this script runs without refreshWidgets().
+    lastParams = params; // Note that params differs from singular "param" in localsite.js in case this script runs without refreshWidgets().
     params = loadParams(location.search,location.hash);
     //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
 
@@ -660,7 +661,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                                 id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                                 delete rates_dict[id]
 
-                                if (dataSet.industryDataState.ActualRate[id].hasOwnProperty(fips)) {
+                                if (dataSet.industryDataState.ActualRate[id] && dataSet.industryDataState.ActualRate[id].hasOwnProperty(fips)) {
                                     rateInFips = dataSet.industryDataState.ActualRate[id][fips][which_state]
                                     naicscode = dataSet.industryDataState.ActualRate[id][fips]['relevant_naics']
                                 } else {
