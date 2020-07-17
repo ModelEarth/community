@@ -232,6 +232,11 @@ function displayTopIndustries() { // Not currently called
         geoChanged(dataObject);
     }else if (params.census_scope != lastParams.census_scope) {
         geoChanged(dataObject);
+    }else if (params.catsort != lastParams.catsort) {
+        geoChanged(dataObject);
+    }
+    else if (params.catsize != lastParams.catsize) {
+        geoChanged(dataObject);
     }
 
     if(params["geo"]){
@@ -662,7 +667,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, catsort, params){
                                 id = parseInt(getKeyByValue(rates_dict, rates_list[i]))
                                 delete rates_dict[id]
 
-                                if (dataSet.industryDataState.ActualRate[id] && dataSet.industryDataState.ActualRate[id].hasOwnProperty(fips)) {
+                                if (dataSet.industryDataState.ActualRate[id].hasOwnProperty(fips)) {
                                     rateInFips = dataSet.industryDataState.ActualRate[id][fips][which_state]
                                     naicscode = dataSet.industryDataState.ActualRate[id][fips]['relevant_naics']
                                 } else {
