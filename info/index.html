@@ -990,15 +990,11 @@ function loadIOWidgets(param) {
 	    $("#io-output").show();
 	//}
 
-	/*
-	// Reactivate this once fixed
+	/* Michael may have new parameter names for these. */
 	config.updateIfAbsent({
 	  count: 20,
 	  view: "mosaic"
 	});
-	*/
-
-	/*
 	config.updateIfAbsent({
 	  count: 20,
 	  scopes: {
@@ -1007,7 +1003,8 @@ function loadIOWidgets(param) {
 	     },
 	  },
 	});
-	*/
+	
+	
 	applyView(param["view"]);
 }
 loadIOWidgets(param);
