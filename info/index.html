@@ -930,8 +930,8 @@ function loadIOWidgets(param) {
     const modelID = config.get().model || 'GAUSEEIO';
 
     const model = useeio.model({
-        //endpoint: '/io/charts/useeio/api',
-        endpoint: 'https://useeiowidgets.imfast.io/api',
+        endpoint: '/io/charts/useeio/api',
+        //endpoint: 'https://useeiowidgets.imfast.io/api',
         model: modelID,
         asJsonFiles: true,
     });
