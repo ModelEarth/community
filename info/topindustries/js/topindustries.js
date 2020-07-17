@@ -5,12 +5,7 @@
 // This is commented out below, call heatmap widget instead.
 // goHash({"naics":naicshash});
 
-// `hashChangeEvent` event reside in multiple widgets. 
-// Called by goHash within common.js
-document.addEventListener('hashChangeEvent', function (elem) {
-  let params = loadParams(location.search,location.hash);
 
-}, false);
 
 let dataObject={};
 dataObject.stateshown=13;
@@ -78,6 +73,7 @@ d3.csv(root + "data/data_raw/BEA_Industry_Factors/state_fips.csv").then( functio
 
 
 function ready(values) {
+    console.log("ready - promises loaded")
     d3.csv(root + "data/data_raw/BEA_Industry_Factors/state_fips.csv").then( function(consdata) {
         var filteredData = consdata.filter(function(d) {
             if(d["FIPS"]==String(dataObject.stateshown)) {
@@ -173,10 +169,17 @@ function ready(values) {
                 $(document).ready(function() {
                     //code for what happens when you choose the state and county from drop down
                     d3.selectAll(".picklist").on("change",function(){
-                        // Using hash instead
+                        // Using hashChangeEvent listener below instead.
                         //renderIndustryChart(dataObject,values,params);
                     });
-                    
+
+                    // `hashChangeEvent` event reside in multiple widgets. 
+                    // Called by goHash within common.js
+                    document.addEventListener('hashChangeEvent', function (elem) {
+                        let params = loadParams(location.search,location.hash);
+                        renderIndustryChart(dataObject,values,params);
+                    }, false);
+                                        
                     if (document.getElementById("clearButton")) {
                         document.getElementById("clearButton").addEventListener("click", function(){
                             clearHash("geo,regiontitle");
@@ -212,8 +215,9 @@ function ready(values) {
 
 }
 
-// Triggered by user editing the URL hash
-$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
+// We might call this when hash changes.
+//$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
+function displayTopIndustries() { // Not currently called
     lastParams = params; // Note that params differs from singular "param" in common.js in case this script runs without refreshWidgets().
     params = loadParams(location.search,location.hash);
     //alert("topindustries.js hashchange from lastParams.go: " + lastParams.go + " to " + params.go);
@@ -273,12 +277,14 @@ $(window).on('hashchange', function() { // Avoid window.onhashchange since overr
 
         })
     }
-})
+//})
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Functions
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function renderIndustryChart(dataObject,values,params) {
+    console.log("renderIndustryChart")
     subsetKeys = ['emp_reported','emp_est1','emp_est3', 'payann_reported','payann_est1','payann_est3', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics','estimate_est1','estimate_est3']
     subsetKeys_state = ['emp_agg', 'payann_agg', 'estab_agg', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
     subsetKeys_state_api = ['emp_api', 'payann_api', 'estab_api', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
@@ -340,8 +346,9 @@ function renderIndustryChart(dataObject,values,params) {
         fips = dataObject.stateshown;
     }
     //geoChanged(dataObject,params);
-    //catsort = params.catsort;
-    let catsort = "payann";
+    catsort = params.catsort;
+    //let catsort = "payann";
+    console.log('catsort ' + catsort);
     topRatesInFips(dataObject, dataObject.industryNames, fips, 20, catsort, params);
 }
 
