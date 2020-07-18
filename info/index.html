@@ -185,15 +185,13 @@ h2 {
 
 <script>
 document.addEventListener('hashChangeEvent', function (elem) {
+	console.log("info/index.html detects hashChangeEvent");
   //let params = loadParams(location.search,location.hash);
   refreshWidgets();
 }, false);
 
 // INIT
 var hash = getHash(); // Include all existing
-$(window).on('hashchange', function() { // Avoid window.onhashchange since overridden by map and widget embeds
-	refreshWidgets();
-});
 function refreshWidgets() {
 	param = loadParams(location.search,location.hash); // param is declared in localsite.js
 	let priorHash = hash;
@@ -204,6 +202,16 @@ function refreshWidgets() {
 	if (hash.go != priorHash.go) {
 		updateText(hash.go);
 	}
+	
+	if (hash.geo && hash.geo.split(",").length > 4) {
+        $("#infoColumn").hide();
+    } else if (hash.go) {
+		$("#infoColumn").show();
+	} else {
+        $("#infoColumn").show();
+        $(".mainColumn1").show();
+    }
+
 	if (hash.view != priorHash.view) {
 		applyView(hash.view);
 	}
@@ -213,24 +221,13 @@ function refreshWidgets() {
 	if (hash.regiontitle != priorHash.regiontitle) {
 		$(".regiontitle").text(hash.regiontitle);
 	}
-	if (hash.indicators != priorHash.indicators) {
-		loadIOWidgets(hash);
-	}
 
-	if (hash.geo != priorHash.geo) { // Not usable, already changed at this point.
-		$(".regiontitle").text(""); //Clear
-		$(".regionsubtitle").text(""); //Clear
-		updateLoc(hash.geo); // Check counties. (search-filters.js)
+	if (hash.geo != priorHash.geo) {
+		//$(".regiontitle").text(""); //Clear
+		//$(".regionsubtitle").text(""); //Clear
+		//updateLoc(hash.geo); // Check counties. (search-filters.js)
 	}
-	if(hash.geo){
-        if (hash.geo.length > 4) {
-            $("#infoColumn").hide();
-        } else {
-            $("#infoColumn").show();
-        }
-    }else{
-        $(".mainColumn1").show();
-    }
+	
 
     if (param.catsort) {
 		$("#catsort").val(param.catsort);
@@ -379,7 +376,7 @@ function refreshWidgets() {
 
 	<div class="io" style="float:right;">
 
-	<select id="indicators" class="filterClickX form-selectX picklist" onchange="goHash({'indicators':this.value});" style="width: 450px;">
+	<select id="indicators" class="filterClickX form-selectX picklist" onchange="goHash({'indicators':this.value});loadIOWidgets(hash);" style="width: 450px;margin-bottom:0px">
 
 	<option value="">Industries with top impacts...</option>
 
@@ -457,11 +454,13 @@ function refreshWidgets() {
 	</div>
 
 
-	<h2 id="infoHeaderX">Industry Impact</h2>
+	<h2 style="border:0px" id="infoHeaderX">Industry Impact</h2>
+	<hr>
+
 	<div style="margin-bottom:16px">
 		<span id="infoHeaderNote"></span> 
-		<a href="#view=mosaic&count=20">Georgia USEEIO Mosaic</a> | 
-		<a href="#view=io&count=10">IO Flow Mockup</a> | 
+		<a href="#view=mosaic&count=20">Impact Mosaic</a> | 
+		<a href="#view=io&count=10">Input-Output Mockup</a> | 
 		<a href="../../io/charts/useeio/">More Widget Samples</a>
 	</div>
 </div>
@@ -1021,6 +1020,7 @@ function loadIOWidgets(param) {
 	applyView(param["view"]);
 }
 loadIOWidgets(param);
+refreshWidgets();
 
 function applyView(view) {
 	// CENTER - SECTORS

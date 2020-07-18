@@ -1446,11 +1446,11 @@ function dualmapLoaded(param, root, count) {
 		loadScript(root + '/community/js/common/search-filters.js', function(results) {
 
 			loadMap1();
-			window.onhashchange = function() {
+			document.addEventListener('hashChangeEvent', function (elem) {
 				//param = loadParam(location.search,location.hash);
-				console.log("embed-map reports user changed hash")
+				console.log("embed-map.js detects hashChangeEvent")
 				loadMap1();
-			}
+			}, false);
 		});
 	} else if (count<100) { // Wait a 100th of a second and try again
 		setTimeout( function() {
