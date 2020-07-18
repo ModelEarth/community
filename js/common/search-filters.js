@@ -205,7 +205,8 @@ $(document).ready(function () {
 		//alert($(this).data('id'));
         consoleLog("Call locationFilterChange from .filterUL li click: " + $(this).data('id'));
         locationFilterChange($(this).data('id'));
-		updateHash({"loc":$(this).data('id')});
+		updateHash({"geo":"","loc":$(this).data('id')});
+		// TO DO: set state
 
 		e.stopPropagation(); // Prevents click on containing #filterClickLocation.
 	 });
