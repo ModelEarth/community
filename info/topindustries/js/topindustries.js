@@ -5,8 +5,6 @@
 // This is commented out below, call heatmap widget instead.
 // goHash({"naics":naicshash});
 
-
-
 let dataObject={};
 dataObject.stateshown=13;
 let params = loadParams(location.search,location.hash);
@@ -166,17 +164,13 @@ function ready(values) {
                 renderIndustryChart(dataObject,values,params);
 
                 $(document).ready(function() {
-                    //code for what happens when you choose the state and county from drop down
-                    d3.selectAll(".picklist").on("change",function(){
-                        // Using hashChangeEvent listener below instead.
-                        //renderIndustryChart(dataObject,values,params);
-                    });
 
                     // `hashChangeEvent` event reside in multiple widgets. 
                     // Called by goHash within localsite.js
                     document.addEventListener('hashChangeEvent', function (elem) {
                         let params = loadParams(location.search,location.hash);
                         //displayTopIndustries();
+                        console.log("topindustries.js detects hashChangeEvent")
                         renderIndustryChart(dataObject,values,params);
                     }, false);
                                         
@@ -186,7 +180,7 @@ function ready(values) {
                             geoChanged(dataObject)
                         }); 
                     }
-                    addGeoChangeDetectToDOM(1);
+                    //addGeoChangeDetectToDOM(1);
                     function addGeoChangeDetectToDOM(count) { // Wait for county checkboxes to be added to DOM by search-filters.js
                         if($(".geo").length) {
                             //d3.selectAll(".geo").on("change",function() {
@@ -277,7 +271,6 @@ function renderIndustryChart(dataObject,values,params) {
     if(!params.catsort){
         params.catsort = "payann";
     }
-    console.log("renderIndustryChart")
     subsetKeys = ['emp_reported','emp_est1','emp_est3', 'payann_reported','payann_est1','payann_est3', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics','estimate_est1','estimate_est3']
     subsetKeys_state = ['emp_agg', 'payann_agg', 'estab_agg', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
     subsetKeys_state_api = ['emp_api', 'payann_api', 'estab_api', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
@@ -335,7 +328,8 @@ function renderIndustryChart(dataObject,values,params) {
     }else{
         fips = dataObject.stateshown;
     }
-    topRatesInFips(dataObject, dataObject.industryNames, fips, 20,  params);
+    console.log("renderIndustryChart calls topRatesInFips with fips: " + fips)
+    topRatesInFips(dataObject, dataObject.industryNames, fips, 20, params);
 }
 
 
@@ -449,8 +443,9 @@ function keyFound(this_key, cat_filter) {
     }
 }
 
-//the code to give you the top n rows of data for a specific fips
-function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
+// Top rows of for a specific set of fips (states and counties)
+function topRatesInFips(dataSet, dataNames, fips, howMany, params){
+    console.log("topRatesInFips")
     d3.csv(root + "data/data_raw/BEA_Industry_Factors/state_fips.csv").then( function(consdata) {
         var filteredData = consdata.filter(function(d) {
             if(d["FIPS"]==String(dataObject.stateshown)) {
@@ -484,7 +479,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
                 var fossil_energy = "221112,324110";
                 var cat_filter = [];
                 if (params.go){
-                    if (params['go'] == "bioeconomy") {
+                    if (params.go == "bioeconomy") {
                         cat_filter = (bio_input + bio_output + green_energy + fossil_energy).split(',');
                         cat_filt=[]
                         for(i=0;i<cat_filter.length;i++){
@@ -738,6 +733,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
                 d3.csv(root + "data/county_ID_list.csv").then( function(consdata) {
                     d3.csv(root + "data/usa/"+d['Postal Code']+"/"+d['Postal Code']+"counties.csv").then( function(latdata) {
                          // TABLE HEADER ROW
+
                         if(Array.isArray(fips) && statelength != fips.length){
 
                             fipslen=fips.length
@@ -970,7 +966,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
                         
                         } // End naics rows
 
-                        //goHash({"naics":naicshash});
+                        //updateHash({"naics":naicshash});
                     })
                 })
                 d3.csv(root + "data/county_ID_list.csv").then( function(consdata) {
@@ -984,7 +980,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany,  params){
                         if (params.regiontitle == "") {
                             $(".regiontitle").text("Industries within "+fipslen+" counties");
                         } else {
-                            $(".regiontitle").text(hash.regiontitle);
+                            $(".regiontitle").text(params.regiontitle);
                         }
                         for(var i=0; i<fipslen; i++){
                             var filteredData = consdata.filter(function(d) {

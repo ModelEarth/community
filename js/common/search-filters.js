@@ -451,19 +451,16 @@ $(document).ready(function () {
 	// From Export Directory - Remove this function below
 	//loadHtmlTable(true);
 
-	$(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
-		console.log('hashchange');
+	document.addEventListener('hashChangeEvent', function (elem) {
+	//$(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
 		clearFields();
 		param = loadParams(location.search,location.hash); // Refresh with new hash values
+		console.log("search-filters detects hashChangeEvent. param: ")
+		console.log(param)
 		populateFieldsFromHash();
 		productList("01","99","All Harmonized System Categories"); // Sets title for new HS hash.
-		refreshMain();
-	});
-	function refreshMain() { // refresh search results
-		console.log("refreshMain deactivated");
-		//loadHtmlTable(true);
-	}
-
+	//});
+	}, false);
 });
 
 
