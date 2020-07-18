@@ -453,7 +453,7 @@ $(document).ready(function () {
 
 	document.addEventListener('hashChangeEvent', function (elem) {
 	//$(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
-		clearFields();
+		//clearFields();
 		param = loadParams(location.search,location.hash); // Refresh with new hash values
 		console.log("search-filters detects hashChangeEvent. param: ")
 		console.log(param)
@@ -570,6 +570,13 @@ function locationFilterChange(selectedValue) {
            Cookies.set('searchParams', { 'useCurrent': '0', 'centerlat': $("#lat").val(), 'centerlon': $("#lon").val(), 'locationDD': 'city' });
         }
     }
+}
+function locClick(which) {
+	let geo = $('.geo:checked').map(function() {return this.id;}).get().join(',');
+
+	$(".regiontitle").text(""); //Clear
+	let regiontitle = ""; // Remove from hash. Later associate existing regions.
+	goHash({"geo":geo,"regiontitle":regiontitle});
 }
 function showCounties() {
 	if ($(".output_table > table").length) {
