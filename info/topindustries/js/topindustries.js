@@ -325,27 +325,21 @@ function renderIndustryChart(dataObject,values,params) {
     }
         
     dataObject.industryDataStateApi=industryDataStateApi;
-
-    if (params["geo"]){
-        geo=params["geo"]
-        if (geo.includes(",")){
-            geos=geo.split(",")
+    if (params.geo){
+        if (params.geo.includes(",")){
+            let geos=params.geo.split(",")
             fips=[]
             for (var i = 0; i<geos.length; i++){
                 fips.push(geos[i].split("US")[1])
             }
             dataObject.stateshown=(geos[0].split("US")[1]).slice(0,2)
         }else{
-            fips = geo.split("US")[1]
-            dataObject.stateshown=(geo.split("US")[1]).slice(0,2)
+            fips = params.geo.split("US")[1]
+            dataObject.stateshown=(params.geo.split("US")[1]).slice(0,2)
         }
     }else{
         fips = dataObject.stateshown;
     }
-    //geoChanged(dataObject,params);
-    //params.catsort = params.catsort;
-    //let params.catsort = "payann";
-    //console.log('params.catsort ' + params.catsort);
     topRatesInFips(dataObject, dataObject.industryNames, fips, 20,  params);
 }
 
