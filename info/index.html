@@ -713,6 +713,8 @@ document.getElementById('showValues').onclick = function() {
 };
 */
 
+// These is missing var promises = [] and ready.
+// Let's look at Industry Mix first: http://localhost:8887/community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50
 function addCountyBoundaries() {
 	var req = new XMLHttpRequest();
 
@@ -725,7 +727,7 @@ function addCountyBoundaries() {
     req.send();
 
     var topoob = {};
-    topodata = {};
+    var topodata = {};
     function handler(){
 
     if(req.readyState === XMLHttpRequest.DONE) {
@@ -923,6 +925,7 @@ function addCountyBoundaries() {
      }
   }
 }
+//addCountyBoundaries();
 </script>
 
 
