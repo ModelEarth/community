@@ -247,7 +247,7 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
 
 function updateChart(x,y,z){
   console.log("updateChart - x:"+ x + " y:" + y + " z:" + z);
-  if (!(x&y&z)) { // Same as above
+  if (!(x && y && z)) { // Same as above
     x = 'ENRG';
     y = 'WATR';
     z = 'LAND';
