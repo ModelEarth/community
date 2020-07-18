@@ -225,26 +225,21 @@ function displayTopIndustries() { // Not currently called
 
     // Both call topRatesInFips(). Might be good to move geoChanged processing into renderIndustryChart()
     
-
-    if(params["geo"]){
-        geo=params["geo"]
-        if (geo.includes(",")){
-            geos=geo.split(",")
+    if(params.geo){
+        if (params.geo.includes(",")){
+            geos=params.geo.split(",")
             dataObject.stateshown=(geos[0].split("US")[1]).slice(0,2)
         }else{
-            dataObject.stateshown=(geo.split("US")[1]).slice(0,2)
+            dataObject.stateshown=(params.geo.split("US")[1]).slice(0,2)
         }
-    }//else{
-    //    fips = dataObject.stateshown;
-    //}
+    }
 
-    if(lastParams["geo"]){
-        geo=lastParams["geo"]
-        if (geo.includes(",")){
-            geos=geo.split(",")
+    if(lastParams.geo){
+        if (lastParams.geo.includes(",")){
+            geos=lastParams.geo.split(",")
             dataObject.laststateshown=(geos[0].split("US")[1]).slice(0,2)
         }else{
-            dataObject.laststateshown=(geo.split("US")[1]).slice(0,2)
+            dataObject.laststateshown=(lastParams.geo.split("US")[1]).slice(0,2)
         }
     }
     
@@ -352,17 +347,16 @@ function geoChanged(dataObject,params){
         params = loadParams(location.search,location.hash); // Pull from updated hash
     }
     if (params.geo) {
-        geo=params.geo
-        if (geo.includes(",")) {
-            geos=geo.split(",")
+        if (params.geo.includes(",")) {
+            geos=params.geo.split(",")
             fips=[]
             for (var i = 0; i<geos.length; i++){
                 fips.push(geos[i].split("US")[1])
             }
             dataObject.stateshown=(geos[0].split("US")[1]).slice(0,2)
         } else {
-            fips = geo.split("US")[1]
-            dataObject.stateshown=(geo.split("US")[1]).slice(0,2)
+            fips = params.geo.split("US")[1]
+            dataObject.stateshown=(params.geo.split("US")[1]).slice(0,2)
         }
     } else {
         fips = dataObject.stateshown;
