@@ -683,14 +683,7 @@ function updateText(go) {
 }
 updateText(param["go"])
 
-function locClick(which) {
-	//console.log(which.id);
-	hash.geo = $('.geo:checked').map(function() {return this.id;}).get().join(',');
 
-	$(".regiontitle").text(""); //Clear
-	let regiontitle = ""; // Remove from hash. Later associate existing regions.
-	goHash({"geo":hash.geo,"regiontitle":regiontitle});
-}
 /*
 document.getElementById('showValues').onclick = function() {
     // access properties using this keyword
