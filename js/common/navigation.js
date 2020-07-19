@@ -41,8 +41,9 @@ $(document).ready(function(){
 	 		$("body").prepend( "<div id='sidecolumn' class='hideprint'></div>\r" );
 	 	}
 	 	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
-		let headerFile = "../community/header.html";
-	 	$("#header").load( climbpath + headerFile, function( response, status, xhr ) {
+		let headerFile = climbpath + "../community/header.html";
+		if (param.header) headerFile = param.header;
+	 	$("#header").load(headerFile, function( response, status, xhr ) {
 
 	 		// Make paths relative to current page
 	 		$("#header a[href]").each(function() {
