@@ -2,107 +2,120 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../../community/img/logo/favicon.png" />
+
 <title>The New Countryside - Industrial Architecture Designed for Communities</title>
-<link rel="icon" type="image/x-icon" href="../../../../community/img/logo/favicon.png" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" />
 <script type="text/javascript" src="../../community/js/d3/d3.v5.min.js"></script>
-<script type="text/javascript" src="../../localsite/js/showdown.min.js"></script>
-<script type="text/javascript" src="../../community/js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../localsite/js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../localsite/js/localsite.js"></script>
+<script type="text/javascript" src="../../localsite/js/showdown.min.js"></script>
 <script type="text/javascript" src="../../community/js/common/navigation.js"></script>
-<link rel="stylesheet" href="../../localsite/css/base.css" />
-
+<script>
+	//param.titleArray = ["local","site"]
+	//param.footer = "/localsite/footer.html"
+</script>
 <style>
-.break {
-	clear:both;
-	padding: 30px 0 30px 0;
-}
-@media (max-width: 800px) {
-	.narrowscreen {
-		width:100% !important;
-		max-width: 100% !important;
-		float:none !important;
-		padding:0 !important;
-		margin:0 0 30px 0;
-	}
-}
+	.upperIcons {display: none;}
 </style>
 </head>
 
-<body style="font-family: Lato, sans-serif;">
+<body>
 
-<div class="content contentpadding" style="padding-top:50px;">
 
-	<div class="lead">
+<div class="content contentpadding" style="padding-top:35px;">
+
+	<div class="two pageColumns">
+	    <div class="pageColumn">
+	      <div class="pageColumnInside">
+	          <div id="readmeDiv"></div>
+	      </div>
+	    </div>
+	    <div class="pageColumn">
+	      <div class="pageColumnInside">
+	        <div id="featuresDiv"></div>
+	      </div>
+	    </div>
+	</div>
+
+</div>
+<div style="clear:both"></div>
+<br>
+
+<script>
+    loadMarkdown("README.md", "readmeDiv", "_parent");
+    loadMarkdown("features.md", "featuresDiv", "_parent");
+</script>
+
+
+<img src="img/masstimber/ceiling.jpg" style="opacity:0.6;width:100%"><br>
+	  
+
+
+<div class="content contentpadding" style="padding-top:10px;">
+
  	<div id="readmeDiv"></div>
-
-	<h2>Mass Timber Warehouse with Stacked Container Front</h2>
-
-	<img src="img/countryside/mass-timber.jpg" style="width:100%"> 
-	<br><br>
 	
-	<a href="https://www.woodsolutions.com.au/inspiration-case-study/be-surprised-large-timber-warehouse-structure">Structural Mass Timber</a> - Laminated Veneer Lumber (LVL) is no more costly than steel, while providing ease of construction, improved performance, and longterm carbon capture while expanding markets for Georgia forestry&nbsp;products. "Mass timber gains its Flash Flame Resistance (FFR) rating [which exceeds steel] by charring slightly during exposure to fire. This charring insulates the interior sections from further damage for a considerably long period of time." - <a href="https://canada.constructconnect.com/dcn/news/technology/2019/09/inside-innovation-the-burning-issue-about-mass-timber-fire-resistance">JB</a>
-	<br><br>
+	<div class="caption" style="float:right">
+		<a href="https://www.woodsolutions.com.au/inspiration-case-study/be-surprised-large-timber-warehouse-structure">
+		Nail-Laminated Timber (NTL)</a>
+	</div>
 
-	<b>Design Considerations</b><br>
-	Could structures be located in corners of property to create density clusters with adjacent property owners?<br>
-	Are there advantages to using smaller gasifiers that are transferable in shipping containers?<br>
-	Should portions of the interior use nanowood shielding to protect timber from chemicals, moisture and heat?<br>
-	<br>
 
-	<b>Roof and Water Retention</b><br>
-	Can the angle of the south facing roof be 30° to optimize for solar? (Better yet, 31.1° matching the latitude.)<br>
-	Can the roof's weather seal use the body of the solar panels to avoid additional weight and roofing expense?<br>
-	In addtion to water collected from the roof, will surrounding surace water be retained and put to use?<br>
-	<br>
+	<div style="clear:both; width:50%; float:left; padding-right:30px" class="narrowscreen">
 
-	
-	<div style="width:50%; float:left; padding-right:30px" class="narrowscreen">
+		<a href="https://www.woodsolutions.com.au/inspiration-case-study/be-surprised-large-timber-warehouse-structure">Structural Mass Timber</a> - 
+		Mass Timber costs are comparible to steel construction. Building with Georgia forestry&nbsp;products has the added advantage of easier modifications, improved performance and net positive carbon capture. Mass Timber also has a higher Flash Flame Resistance (FFR) score than steel. 
 
+		Mass timber achieves its high rating by charring slightly during exposure to fire. This charring insulates the interior sections from further damage for a considerably long period of time. - <a href="https://canada.constructconnect.com/dcn/news/technology/2019/09/inside-innovation-the-burning-issue-about-mass-timber-fire-resistance">JB</a>
+		<br><br>
+
+		
+
+		<b>Solar Roof and Water Retention</b><br>
+		The angle of the south facing roof could be 30° to optimize for solar. (Better yet, 31.1° matching the latitude.)<br>
+		Can the roof's weather seal use the body of the solar panels to avoid additional weight and roofing expense?<br>
+		In addtion to water collected from the roof, will surrounding surace water be retained and put to use?<br>
+		<br>
+	</div>
+	<div style="width:50%; float:left;" class="narrowscreen">
+
+		<img src="img/countryside/container-warehouse.jpg" style="width:100%"><br><br>
+
+	</div>
+
+
+	<div style="clear:both; width:50%; float:left; padding-right:30px" class="narrowscreen">
 		Along the exterior of the south side of the building, a row of stacked high-cube containers (each with 9.5' tall interiors) could provide portable production space and growing areas. Sets of containers could be connected to create open workareas. 
 		A flat roof couild extend over the containers as a buttress for the angled solar roof. The area where the angled roof meets the side roof could direct rainwater to tanks at either end of the facility.<br><br>
 
 		Shipping containers could be built onsite from superwood produced at&nbsp;the site. 
 		Production of superwood requires compression while boiling the wood in hydrogen peroxide at 100º celsius to form new hydrogen bonds. Heat could be used from the waste gasification process. <a href="https://www.smithsonianmag.com/smart-news/chemical-bath-and-strong-squeeze-makes-super-dense-and-strong-wood-180968117/">About superwood</a><br><br>
 
-		<div style="width:55%; float:left; padding-right:25px" class="narrowscreen">
-
-			<a href="img/countryside/containers-tall.jpg"><img src="img/countryside/containers-tall.jpg" style="width:100%; max-width:600px"></a><br><br>
-
-		</div>
-		<div style="width:45%; float:left;" class="narrowscreen">
-
-			<a href="img/countryside/container-warehouse-side.jpg"><img src="img/countryside/container-warehouse-side.jpg" style="width:100%"></a><br><br>
-			
-		</div>
-
-
 	</div>
 	<div style="width:50%; float:left;" class="narrowscreen">
 
-		<img src="img/countryside/container-warehouse.jpg" style="width:100%"><br>
+		<a href="img/countryside/container-warehouse-side.jpg"><img src="img/countryside/container-warehouse-side.jpg" style="width:100%; max-width: 500px"></a><br><br>
 
-		
 	</div>
 
+	<div style="clear:both"></div><br>
 
-	<div style="clear:both"></div>
+	<h2 style="clear:both">Lightweight Superwood Containers and Controlled Environment Agriculture (CEA)</h2>
+
+	<p>
+		Someday. freight containers produced from heat-treated superwood could provide lignin as a byproduct for the production of high value Activated Carbon (AC). &nbsp;<a href="https://research.usu.edu/techtransfer/biosynthetic-conversion-lignin-waste-bioproducts/">More high-value bioproducts from lignin</a>.
+	</p>
+
+	<a href="img/countryside/containers-tall.jpg"><img src="img/countryside/containers-tall.jpg" style="width:100%; max-width:2000px"></a><br>
+	Stacked containers for residential apace amid controlled environment agriculture.<br><br>
 
 
-	<h2 style="clear:both">Proposed Superwood Production Facility</h2>
-
+	
 	<div style="width:50%; float:left; padding-right:30px" class="narrowscreen">
-		<p>
 		
-		Integration with partners that generate biomass feed stock as a by-product.
-		<br><br>
-
-
-		<b>Superwood Products and Controlled Environment Agriculture (CEA)</b><br>
-		Freight containers produced from heat-treated superwood generate lignin for use in the production of activated carbon and other <a href="https://research.usu.edu/techtransfer/biosynthetic-conversion-lignin-waste-bioproducts/">bioproducts</a>.
-		</p>
 
 		<p>Carbon-enriched soil and nutrient fluids can be used to grow plants during shipment in superwood freight containers built onsite.</p>
 
@@ -183,11 +196,6 @@
 	<br><br><br>
 
 </div>
-
-
-<script>
-    loadMarkdown("README.md", "readmeDiv", "_parent");
-</script>
 
 </body>
 </html>
