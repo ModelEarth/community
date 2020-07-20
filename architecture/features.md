@@ -1,6 +1,6 @@
 
 ## Mass Timber Construction 
 
-<img src="img/countryside/mass-timber.jpg" style="width:100%"> 
+<a href="img/countryside/mass-timber.jpg"><img class="opaqueOnHover" src="img/countryside/mass-timber.jpg" style="width:100%"></a>
 <br><br>
 	
