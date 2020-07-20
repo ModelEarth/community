@@ -43,7 +43,7 @@ $.getJSON(url, function (data) {
 
 var parentId = "#graph-wrapper";
 var animDuration = 1000;
-var margin = {top: 20, right: 150, bottom: 40, left: 50};
+var margin = {top: 20, right: 150, bottom: 55, left: 50};
 var width = 1300- margin.left - margin.right,    
     height = 350  - margin.top - margin.bottom;
 
