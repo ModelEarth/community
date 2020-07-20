@@ -1,2 +1,0 @@
-
-## Mass Timber Construction 
