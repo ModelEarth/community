@@ -982,8 +982,8 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, params){
                         fipslen=fips.length
                         if (params.regiontitle == "") {
                             $(".regiontitle").text("Industries within "+fipslen+" counties");
-                        } else {
-                            $(".regiontitle").text(params.regiontitle);
+                        } else if (params.regiontitle) {
+                            $(".regiontitle").text(params.regiontitle.replace(/\+/g," "));
                         }
                         for(var i=0; i<fipslen; i++){
                             var filteredData = consdata.filter(function(d) {
