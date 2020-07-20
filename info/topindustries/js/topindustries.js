@@ -271,6 +271,9 @@ function renderIndustryChart(dataObject,values,params) {
     if(!params.catsort){
         params.catsort = "payann";
     }
+    if(!params.catsize){
+        params.catsize = 6;
+    }
     subsetKeys = ['emp_reported','emp_est1','emp_est3', 'payann_reported','payann_est1','payann_est3', 'estab', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics','estimate_est1','estimate_est3']
     subsetKeys_state = ['emp_agg', 'payann_agg', 'estab_agg', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
     subsetKeys_state_api = ['emp_api', 'payann_api', 'estab_api', 'NAICS2012_TTL','GEO_TTL','state','COUNTY','relevant_naics']
@@ -980,7 +983,7 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, params){
                         if (params.regiontitle == "") {
                             $(".regiontitle").text("Industries within "+fipslen+" counties");
                         } else {
-                            $(".regiontitle").text(params.regiontitle.replace(/\+/g," "));
+                            $(".regiontitle").text(params.regiontitle);
                         }
                         for(var i=0; i<fipslen; i++){
                             var filteredData = consdata.filter(function(d) {
