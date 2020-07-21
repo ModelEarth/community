@@ -251,25 +251,25 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
   .range(["blue","#7479BC","#BDE7AE","#ECF809","orange","magenta"]); // Not in use here, from wind/js/regression.js
 
 function midFunc(x,y,z,params){
-  console.log("qqqqqqq",params.naics)
-  naicsList=params.naics.split(",")
-  useeioList=[]
-  useeiodetail=[]
-  d3.csv("data/data_raw/BEA_Industry_Factors/Crosswalk_MasterCrosswalk.csv").then( function(consdata) {
-    var filteredData = consdata.filter(function(d) {
-      for(i=0;i<naicsList.length;i++){
-          if(d["2012_NAICS_Code"]==naicsList[i]) {
-            useeioList.push(d["USEEIO1_Code"])
-            useeiodetail.push(d["USEEIO1_Commodity"])
+  if(params.naics){
+    naicsList=params.naics.split(",")
+    useeioList=[]
+    useeiodetail=[]
+    d3.csv("data/data_raw/BEA_Industry_Factors/Crosswalk_MasterCrosswalk.csv").then( function(consdata) {
+      var filteredData = consdata.filter(function(d) {
+        for(i=0;i<naicsList.length;i++){
+            if(d["2012_NAICS_Code"]==naicsList[i]) {
+              useeioList.push(d["USEEIO1_Code"])
+              useeiodetail.push(d["USEEIO1_Commodity"])
+            }
           }
-        }
-      })
-    console.log("ddddddd"+useeioList)
-    console.log("ddddddd"+useeiodetail)
-    updateChart(x,y,z,useeioList)
-  })
+        })
+      console.log("ddddddd"+useeioList)
+      console.log("ddddddd"+useeiodetail)
+      updateChart(x,y,z,useeioList)
+    })
   
-  
+  }
 
 }
 
@@ -328,38 +328,14 @@ function updateChart(x,y,z,useeioList){
             if (useeioList.includes( d.industry_code) ) {
               return "red";
             } else {
-              return "black";
+              return "#303030";
             }
 
           })
-    .attr("stroke-width", function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 3;
-            } else {
-              return 1;
-            }
-
-          })
+    .attr("stroke-width", 1)
     .style("stroke","black")
-    .attr("stroke-opacity", function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.9;
-            } else {
-              return 0.7;
-            }
-
-          })
-    .style("fill-opacity" , function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.7;
-            } else {
-              return 0.5;
-            }
-
-          })
+    .attr("stroke-opacity", 0.7)
+    .style("fill-opacity" , 0.5)
     //.attr("stroke-width", 20)
     //console.log("plaaaa"+x)
     
@@ -371,41 +347,19 @@ function updateChart(x,y,z,useeioList){
             if (useeioList.includes( d.industry_code) ) {
               return "red";
             } else {
-              return "black";
+              return "#303030";
             }
 
           })
-        .attr("stroke-width", function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 3;
-            } else {
-              return 1;
-            }
-
-          })
-        .attr("stroke-opacity", function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.9;
-            } else {
-              return 0.7;
-            }
-
-          })
-        .style("fill-opacity" , function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.7;
-            } else {
-              return 0.5;
-            }
-
-          })
+        .attr("stroke-width", 1)
+        .attr("stroke-opacity", 0.7)
+        .style("fill-opacity" , 0.5)
       .on("mouseover", function(d) {
         d3.select(this)
         .transition()
-        .style('fill', '#FFD700')
+        .style("fill-opacity",1)
+        .attr('stroke-width', 4)
+        .attr("stroke-opacity", 1)
         
         div.transition()
           .duration(200)
@@ -425,41 +379,9 @@ function updateChart(x,y,z,useeioList){
       .on("mouseout", function(d) {
         d3.select(this)
         .transition()
-        .style('fill', function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return "red";
-            } else {
-              return "black";
-            }
-
-          })
-        .attr("stroke-width", function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 3;
-            } else {
-              return 1;
-            }
-
-          }).attr("stroke-opacity", function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.9;
-            } else {
-              return 0.7;
-            }
-
-          })
-    .style("fill-opacity" , function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.7;
-            } else {
-              return 0.5;
-            }
-
-          })
+        .attr("stroke-width", 1)
+        .attr("stroke-opacity", 0.7)
+        .style("fill-opacity" , 0.5)
         div.transition()
           .duration(500)
           .style("opacity", 0);
@@ -476,24 +398,8 @@ function updateChart(x,y,z,useeioList){
                     
       
       .style("stroke","black")
-      .attr("stroke-opacity", function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.9;
-            } else {
-              return 0.7;
-            }
-
-          })
-    .style("fill-opacity" , function (d) { 
-
-            if (useeioList.includes( d.industry_code) ) {
-              return 0.7;
-            } else {
-              return 0.5;
-            }
-
-          })
+      .attr("stroke-opacity", 0.7)
+    .style("fill-opacity" , 0.5)
       .transition().duration(animDuration)
       .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";});
 
