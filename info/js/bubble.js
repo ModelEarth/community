@@ -7,7 +7,8 @@ document.addEventListener('hashChangeEvent', function (elem) {
   console.log("gggggggggggggg"+params.naics)
 }, false);
 
-
+params = loadParams(location.search,location.hash);
+    console.log("lllllll"+params.naics)
 
 //getting the listof indicators and populating the x and y dropdown options
 let dropdown = $('#graph-picklist-x');
@@ -325,9 +326,9 @@ function updateChart(x,y,z,useeioList){
     .style('fill', function (d) { 
 
             if (useeioList.includes( d.industry_code) ) {
-              return "blue";
-            } else {
               return "red";
+            } else {
+              return "black";
             }
 
           })
@@ -352,9 +353,9 @@ function updateChart(x,y,z,useeioList){
       .style('fill', function (d) { 
 
             if (useeioList.includes( d.industry_code) ) {
-              return "blue";
-            } else {
               return "red";
+            } else {
+              return "black";
             }
 
           })
@@ -393,9 +394,9 @@ function updateChart(x,y,z,useeioList){
         .style('fill', function (d) { 
 
             if (useeioList.includes( d.industry_code) ) {
-              return "blue";
-            } else {
               return "red";
+            } else {
+              return "black";
             }
 
           })
