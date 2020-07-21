@@ -970,7 +970,12 @@ function topRatesInFips(dataSet, dataNames, fips, howMany, params){
                         } // End naics rows
 
                         updateHash({"naics":naicshash});
-                    })
+                        params = loadParams(location.search,location.hash);
+                        midFunc(d3.select("#graph-picklist-x").node().value,
+                            d3.select("#graph-picklist-y").node().value,
+                            d3.select("#graph-picklist-z").node().value,
+                            params);
+                        })
                 })
                 d3.csv(root + "data/county_ID_list.csv").then( function(consdata) {
                     //document.getElementById("industryheader").text = ""; // Clear initial.
