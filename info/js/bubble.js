@@ -2,9 +2,13 @@
 // Called by goHash within localsite.js
 document.addEventListener('hashChangeEvent', function (elem) {
   console.log("bubble chart detects hash changed")
-  let params = loadParams(location.search,location.hash);
-  updateChart(params.x,params.y,params.z);
+  params = loadParams(location.search,location.hash);
+  midFunc(params.x,params.y,params.z,params);
+  console.log("gggggggggggggg"+params.naics)
 }, false);
+
+params = loadParams(location.search,location.hash);
+    console.log("lllllll"+params.naics)
 
 //getting the listof indicators and populating the x and y dropdown options
 let dropdown = $('#graph-picklist-x');
@@ -103,6 +107,7 @@ svg.append("path")
 var div = d3.select(parentId).append("div")
   .attr("class", "tooltip")
   .style("opacity", 0);
+
 
 
 function getDimensions(x,y,z){
@@ -213,6 +218,7 @@ $( document ).ready(function() {
     allData = data;
 
     let params = loadParams(location.search,location.hash);
+    console.log("lllllll"+params.naics)
     if (params.x && params.y && params.z) {
       $("#graph-picklist-x").val(params.x);
       $("#graph-picklist-y").val(params.y);
@@ -222,9 +228,10 @@ $( document ).ready(function() {
       $("#graph-picklist-y").val('WATR');
       $("#graph-picklist-z").val('LAND');
     }
-      updateChart(d3.select("#graph-picklist-x").node().value,
+      midFunc(d3.select("#graph-picklist-x").node().value,
         d3.select("#graph-picklist-y").node().value,
-        d3.select("#graph-picklist-z").node().value);
+        d3.select("#graph-picklist-z").node().value,
+        params);
 
 
       d3.selectAll(".graph-picklist").on("change",function(){
@@ -243,15 +250,40 @@ var ordinal = d3.scaleOrdinal() // Becomes scaleOrdinal in v4
   .domain(ordinalDomain)
   .range(["blue","#7479BC","#BDE7AE","#ECF809","orange","magenta"]); // Not in use here, from wind/js/regression.js
 
+function midFunc(x,y,z,params){
+  console.log("qqqqqqq",params.naics)
+  naicsList=params.naics.split(",")
+  useeioList=[]
+  useeiodetail=[]
+  d3.csv("data/data_raw/BEA_Industry_Factors/Crosswalk_MasterCrosswalk.csv").then( function(consdata) {
+    var filteredData = consdata.filter(function(d) {
+      for(i=0;i<naicsList.length;i++){
+          if(d["2012_NAICS_Code"]==naicsList[i]) {
+            useeioList.push(d["USEEIO1_Code"])
+            useeiodetail.push(d["USEEIO1_Commodity"])
+          }
+        }
+      })
+    console.log("ddddddd"+useeioList)
+    console.log("ddddddd"+useeiodetail)
+    updateChart(x,y,z,useeioList)
+  })
+  
+  
 
+}
 
-function updateChart(x,y,z){
+function updateChart(x,y,z,useeioList){
+  console.log("bbbbbbb",useeioList)
+  console.log("mmmmmmmmmmmmmmm"+useeioList.length)
   console.log("updateChart - x:"+ x + " y:" + y + " z:" + z);
   if (!(x && y && z)) { // Same as above
     x = 'ENRG';
     y = 'WATR';
     z = 'LAND';
   }
+
+  
   //Fetch data
   var records = getDimensions(x,y,z);
   updateTitle(x,y,z);
@@ -291,20 +323,90 @@ function updateChart(x,y,z){
     .attr("r",function(d){
       return zScale(d.z)+2
     })
+    .style('fill', function (d) { 
 
+            if (useeioList.includes( d.industry_code) ) {
+              return "red";
+            } else {
+              return "black";
+            }
+
+          })
+    .attr("stroke-width", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 3;
+            } else {
+              return 1;
+            }
+
+          })
     .style("stroke","black")
-    .attr("stroke-opacity", 0.7)
-    .style("fill-opacity", .5)
-    console.log("plaaaa"+x)
+    .attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+    .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
+            }
+
+          })
+    //.attr("stroke-width", 20)
+    //console.log("plaaaa"+x)
     
     //Append any new elements and transition them as well
     selectedCircles.enter()
       .append("circle")
+      .style('fill', function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return "red";
+            } else {
+              return "black";
+            }
+
+          })
+        .attr("stroke-width", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 3;
+            } else {
+              return 1;
+            }
+
+          })
+        .attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+        .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
+            }
+
+          })
       .on("mouseover", function(d) {
         d3.select(this)
         .transition()
-        .attr('fill', '#FFD700');
-
+        .style('fill', '#FFD700')
+        
         div.transition()
           .duration(200)
           .style("opacity", .9);               
@@ -312,6 +414,10 @@ function updateChart(x,y,z){
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");                     
       })
+
+
+
+
                      
 
 
@@ -319,8 +425,41 @@ function updateChart(x,y,z){
       .on("mouseout", function(d) {
         d3.select(this)
         .transition()
-        .attr('fill', 'black');
+        .style('fill', function (d) { 
 
+            if (useeioList.includes( d.industry_code) ) {
+              return "red";
+            } else {
+              return "black";
+            }
+
+          })
+        .attr("stroke-width", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 3;
+            } else {
+              return 1;
+            }
+
+          }).attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+    .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
+            }
+
+          })
         div.transition()
           .duration(500)
           .style("opacity", 0);
@@ -335,9 +474,26 @@ function updateChart(x,y,z){
         return zScale(d.z)+2
       })
                     
-      .style("fill-opacity", .5)
+      
       .style("stroke","black")
-      .attr("stroke-opacity", 0.7)
+      .attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+    .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
+            }
+
+          })
       .transition().duration(animDuration)
       .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";});
 
