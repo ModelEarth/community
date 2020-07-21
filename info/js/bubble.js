@@ -342,8 +342,24 @@ function updateChart(x,y,z,useeioList){
 
           })
     .style("stroke","black")
-    .attr("stroke-opacity", 0.7)
-    .style("fill-opacity", .5)
+    .attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+    .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
+            }
+
+          })
     //.attr("stroke-width", 20)
     //console.log("plaaaa"+x)
     
@@ -365,6 +381,24 @@ function updateChart(x,y,z,useeioList){
               return 3;
             } else {
               return 1;
+            }
+
+          })
+        .attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+        .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
             }
 
           })
@@ -408,6 +442,23 @@ function updateChart(x,y,z,useeioList){
               return 1;
             }
 
+          }).attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+    .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
+            }
+
           })
         div.transition()
           .duration(500)
@@ -423,9 +474,26 @@ function updateChart(x,y,z,useeioList){
         return zScale(d.z)+2
       })
                     
-      .style("fill-opacity", .5)
+      
       .style("stroke","black")
-      .attr("stroke-opacity", 0.7)
+      .attr("stroke-opacity", function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.9;
+            } else {
+              return 0.7;
+            }
+
+          })
+    .style("fill-opacity" , function (d) { 
+
+            if (useeioList.includes( d.industry_code) ) {
+              return 0.7;
+            } else {
+              return 0.5;
+            }
+
+          })
       .transition().duration(animDuration)
       .attr("transform",function(d){return "translate("+xScale(d.x)+","+yScale(d.y)+")";});
 
