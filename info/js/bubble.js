@@ -3,9 +3,9 @@
 document.addEventListener('hashChangeEvent', function (elem) {
   console.log("bubble chart detects hash changed")
   params = loadParams(location.search,location.hash);
-  dropdown.val(params.x)
-  dropdown2.val(params.y)
-  dropdown3.val(params.z)
+  if(params.x){dropdown.val(params.x)}
+  if(params.y){dropdown2.val(params.y)}
+  if(params.z){dropdown3.val(params.z)}
   midFunc(params.x,params.y,params.z,params);
   console.log("gggggggggggggg"+params.naics)
   
