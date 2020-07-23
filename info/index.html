@@ -27,8 +27,8 @@ To activate: addCountyBoundaries
 <script src="../../useeio-widgets/build/lib/useeio_widgets.js"></script>
 -->
 
-<script type="text/javascript" src="topindustries/js/topindustries.js"></script>
-<link type="text/css" href="topindustries/css/topindustries.css" rel="stylesheet" />
+<script type="text/javascript" src="../../localsite/js/naics.js"></script>
+<link type="text/css" href="../../localsite/css/naics.css" rel="stylesheet" />
 
 <!-- After USEEIO to alter css -->
 <!--
@@ -576,7 +576,7 @@ To do: Multicolumn sort (but allow for fixed first column)
 https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
 -->
 
-<link rel="stylesheet" type="text/css" href="../start/charts/bubble/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../../useeio-widgets/bubble/css/bubble.css"/>
 <div class="includedContent">
 	<h2>Industry Comparison</h2>
 	<div id="title1"></div>
@@ -605,7 +605,7 @@ https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort
 	    <br>
 	  </body>
   </div>
-  <script type="text/javascript" src="js/bubble.js"></script>
+  <script type="text/javascript" src="../../useeio-widgets/bubble/js/bubble.js"></script>
 
 <br><br><br>
 <br><br><br>
@@ -947,7 +947,7 @@ function loadIOWidgets(param) {
     // LEFT - INPUT
  	//if (param["view"] == "io") {
 
-	    const heatmap_input = useeio.impactHeatmap({
+	    const heatmap_input = useeio.industryList({
 	        model: model,
 	        selector: '#impact-heatmap-input',
 	        scope: 'input'
@@ -964,7 +964,7 @@ function loadIOWidgets(param) {
 	//}
 
 	// CENTER - MAIN SECTORS
-    const heatmap = useeio.impactHeatmap({
+    const heatmap = useeio.industryList({
         model: model,
         selector: '#impact-heatmap-main',
         scope: 'main'
@@ -980,7 +980,7 @@ function loadIOWidgets(param) {
    
     // RIGHT - OUTPUT
     //if (param["view"] == "io") {
-	 	const heatmap_output = useeio.impactHeatmap({
+	 	const heatmap_output = useeio.industryList({
 	        model: model,
 	        selector: '#impact-heatmap-output',
 	        scope: 'output'
