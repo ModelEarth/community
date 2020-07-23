@@ -40,6 +40,7 @@ $(document).ready(function(){
 	 	if(document.getElementById("sidecolumn") == null) {
 	 		$("body").prepend( "<div id='sidecolumn' class='hideprint'></div>\r" );
 	 	}
+	 	$("body").wrapInner( "<main></main>"); // To align footer to bottom
 	 	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
 		let headerFile = climbpath + "../community/header.html";
 		if (param.header) headerFile = param.header;
