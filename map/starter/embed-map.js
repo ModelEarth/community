@@ -625,7 +625,7 @@ strVar += "        }";
 strVar += "      <\/style>";
 strVar += "";
 strVar += "";
-strVar += "      <div class=\"content contentpadding\" style=\"padding-top:0px\">";
+strVar += "      <div class=\"content contentpadding\" style=\"padding-top:0px;padding-bottom:0px\">";
 strVar += "        <div style=\"overflow: visible;\">";
 strVar += "";
 strVar += "          <div class=\"pagebuttonHolder\" style=\"min-height:45px;\">";
