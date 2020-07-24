@@ -87,7 +87,41 @@ body { position:relative; }
     border-top: 1px solid #ccc;
     z-index: 99999;
 }
-
+.titlecell {
+  border-top: 1px solid #ddd;
+  margin-top:5px;
+  float:left;
+  clear:both;
+  min-width: 200px;
+}
+.rightcell {
+  border-top: 1px solid #ddd;
+  margin-top:5px;
+  overflow: auto;
+}
+.rightlogo {
+  width:100%;
+  max-width:300px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.level1 {
+  color: #fff;
+  background: #777;
+  font-size: 11pt;
+  padding:6px;
+  margin-top:14px; /* margin-bottom breaks alignment of clear:both on titlecell div */
+  cursor: pointer;
+}
+.bucketDesc {
+  white-space: nowrap;
+}
+#clusterBuckets {
+    font-size: 14px;
+}
+#footer {
+    display: none;
+}
 </style>
 <!--
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
@@ -116,7 +150,6 @@ body { position:relative; }
 <script type="text/javascript" src="DBSCAN/compute_stat.js"></script>
 <script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../js/common/navigation.js"></script>
-<link rel="stylesheet" href="../../css/community.css" />
 <link rel="stylesheet" href="../../../localsite/css/base.css" />
 <script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
 <!--
@@ -248,9 +281,11 @@ body { position:relative; }
 
         map = new L.Map('map',
         {
-            scrollWheelZoom: true,
+            scrollWheelZoom: false,
             center: new L.LatLng(lat,lon),
             zoom: zoom,
+            dragging: !L.Browser.mobile, 
+            tap: !L.Browser.mobile,
             layers: [grayscale]
         });
                   
