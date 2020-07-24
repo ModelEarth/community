@@ -751,7 +751,7 @@ function loadMap1(dp) { // Also called by search-filters.js
     if (param.lat) {
       dp1.latitude = param.lat;
       dp1.longitude = param.lon;
-      dp1.zoom = 14;
+      dp1.zoom = 12; // 14;
     }
     dp1.markerType = "google";
      
