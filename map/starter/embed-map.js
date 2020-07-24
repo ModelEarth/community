@@ -1448,14 +1448,14 @@ function dualmapLoaded(param, root, count) {
 			loadMap1();
 			document.addEventListener('hashChangeEvent', function (elem) {
 				//param = loadParam(location.search,location.hash);
-				console.log("embed-map.js detects hashChangeEvent")
+				console.log("embed-map.js detects hashChangeEvent");
 				loadMap1();
 			}, false);
 		});
 	} else if (count<100) { // Wait a 100th of a second and try again
 		setTimeout( function() {
    			console.log("try dualmapLoaded again")
-			dualmapLoaded(param, root, count++);
+			dualmapLoaded(param, root, count+1);
    		}, 10 );
 	} else {
 		console.log("ERROR: dualmapLoaded exceeded 100 attempts.");

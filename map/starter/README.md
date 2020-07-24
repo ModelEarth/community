@@ -23,8 +23,6 @@ Can it lookup a city, zip or county lat/lon?
 
 <b>Python Project - Getting Started</b>
 
-[Steps for viewing this repo locally](../../start/markdown/)  
-
 Here's our script to [Generate Farm Fresh CSV files](../../farmfresh) for all US states.  
 
 Change from:  
@@ -33,7 +31,8 @@ Change from:
 To:  
 /community/farmfresh/usa
 
-Try preprocessing zips using [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  We have a Python example of outputing a folder for each US zip code.  
+Try preprocessing zips using [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project).  
+We have a Python example of outputing a folder for each US zip code.  
 
 <br>
 
@@ -46,11 +45,11 @@ Editable link is in our Slack #epa group.
 
 1. Our local [MapsforUS HTML Map](../mapsforus/sample.html) - Uses the Google ID of the Google Sheet above. 
 
-1. [Modifications to MapsForUs](../mapsforus) we are currently working on - including automatic geocoding.  
+1. [Modifications to MapsForUs](../mapsforus) needs automatic geocoding.  
 
 
 
-[Crowdsouce Editor Setup](../../../crowdsource) - Under development  
+[Crowdsouce Editor Setup](../../../editor) - Under development  
 
 <!--
 1. [Embed version](embed.html)<br>- Add D3 circles when map points exceed 1,000.<br>- Add Leaflet marker clusters when map points exceed 2,000 records.<br>-Trigger lower map to zoom to the location of the map point clicked on upper map.  

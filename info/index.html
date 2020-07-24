@@ -15,6 +15,7 @@ To activate: addCountyBoundaries
 -->
 
 <script src="../js/d3/d3.v5.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
 <script type="text/javascript" src="../../localsite/js/showdown.min.js"></script>
 
 <!-- PRODUCTION -->
@@ -725,6 +726,7 @@ function addCountyBoundaries() {
 
     var topoob = {};
     var topodata = {};
+    var neighbors = {};
     function handler(){
 
     if(req.readyState === XMLHttpRequest.DONE) {
@@ -753,7 +755,12 @@ function addCountyBoundaries() {
             //topodata = topojson.feature(topoob, topoob.transform)
             topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
 
-            mergeInDetailData(topodata, dp.data);
+
+            // ADD 
+            // For region colors
+            //mergeInDetailData(topodata, dp.data); // See start/maps/counties/counties.html
+
+
 
             // IS THIS BEING USED?
             //topodata.features = topodata.features.map(function(fm,i){
@@ -778,7 +785,7 @@ function addCountyBoundaries() {
 
             console.log('topodata: ', topodata)
 
-            geojsonLayer = L.geoJson(topodata, {style:style, onEachFeature: onEachFeature}); // Called within addTo(map)
+            let geojsonLayer = L.geoJson(topodata, {style:style, onEachFeature: onEachFeature}); // Called within addTo(map)
 
             //console.log('neigh', neighbors)
          //}
@@ -820,13 +827,18 @@ function addCountyBoundaries() {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       });
 
-      var map = new L.Map('mapcon',
+      let whichmap = "map1";
+      let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
+      /*
+      let map = new L.Map('mapcon',
       {
           scrollWheelZoom: false,
           center: new L.LatLng(lat,lon),
           zoom: zoom,
           layers: [streets, dataParameters[0].group] // Indicates default layer
       });
+	  */
+
       var baseLayers = {
         "Open Street Map": OpenStreetMap_BlackAndWhite,
         "Grayscale Mapbox": grayscale,
@@ -879,7 +891,7 @@ function addCountyBoundaries() {
             //map.fitBounds(e.target.getBounds()); // Zoom to boundary area clicked
             var fips = "US13" + layer.feature.properties.COUNTYFP;
             //location.window = 
-            window.top.location.href="../../../info/#geo=" + fips;
+            window.top.location.href="#geo=" + fips;
         }
 
         function onEachFeature(feature, layer){
@@ -922,7 +934,53 @@ function addCountyBoundaries() {
      }
   }
 }
-//addCountyBoundaries();
+function mergeInDetailData(topodata,detail_data) {
+  var data_by_id = d3.nest() // where id is a zipcode or countyID
+    .key(function(d){return d.zcta;})
+    .entries(detail_data);
+
+  topodata.features.forEach(function(d) {
+        // d.properties.zip becomes d.properties.COUNTYFP
+        var topoID = data_by_id.find(x=>x.key === d.properties.COUNTYFP.replace(/^0+/, ''));
+        if(topoID) {
+            columns.forEach(function(c){
+                d[c] = parseFloat(topoID.values[0][c]);
+            });
+            cluster_data.push(d); // Topo shape data now has census attributes added, including zcta
+        }
+  });
+  return cluster_data;
+}
+function style(feature) {
+
+	return; // Temp deactivate, dp in start/maps/counties/counties.html
+
+    // Called for each topojson row
+    // console.log("feature.properties.COUNTYFP: " + feature.properties.COUNTYFP);
+    var fillColor = '#ff0000';
+    
+    // Hack - because region1 did not work like in did in maps/poverty
+    dp.data.forEach(function(datarow) { // For each county row from the region lookup table
+      if (datarow.county_num == feature.properties.COUNTYFP) {
+        fillColor = color(datarow.io_region);
+      }
+    })
+    return {
+        weight: 1,
+        opacity: .5,
+        color: fillColor, // '#ccc', // 'white'
+        //dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: fillColor
+    };
+    
+}
+loadScript('/community/js/leaflet/leaflet.js', function(results) {
+	setTimeout( function() {
+		addCountyBoundaries();
+		//alert("done");
+	}, 3000 );
+});
 </script>
 
 

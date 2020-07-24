@@ -1095,7 +1095,6 @@ function showList(dp,map) {
           if (keyword.length > 0) {
 
             //console.log("Search for " + keyword);
-
             
             if (typeof dp.search != "undefined") { // An object containing interface labels and names of columns to search.
               //var selected_col = {};
@@ -1104,22 +1103,6 @@ function showList(dp,map) {
                 //selected_columns_object[key] = 0;
                 if (elementRaw[value]) {
                   if (elementRaw[value].toString().toLowerCase().indexOf(keyword) >= 0) {
-                    //console.log("FoundMatch for " + value);
-
-                    // Write this tighter
-                    /*
-                    if (selected_columns_object[key]) {
-                     selected_columns_object[key] = selected_columns_object[key]+1;
-                     selected_col[key].count = selected_col[key].count+1;
-                    } else {
-                      selected_columns_object[key] = 1;
-                      selected_columns_object[key]["value"] = value;
-
-                      selected_col[key].count = 1;
-                      selected_col[key].value = value;
-                    }
-                    */
-
                     foundMatch++;
                   }
                 }
