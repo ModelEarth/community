@@ -40,8 +40,9 @@ $(document).ready(function(){
 	 	if(document.getElementById("sidecolumn") == null) {
 	 		$("body").prepend( "<div id='sidecolumn' class='hideprint'></div>\r" );
 	 	}
-	 	$("body").wrapInner( "<main></main>"); // To align footer to bottom
-	 	$("body").prepend( "<div id='header' class='hideprint'></div>\r" );
+	 	$("body").addClass("flexbody"); // For footer to stick at bottom on short pages
+	 	$("body").wrapInner( "<main class='flexmain'></main>"); // To stick footer to bottom
+	 	$("body").prepend( "<div id='header' class='flexheader hideprint'></div>\r" );
 		let headerFile = climbpath + "../community/header.html";
 		if (param.header) headerFile = param.header;
 	 	$("#header").load(headerFile, function( response, status, xhr ) {
@@ -160,8 +161,11 @@ $(document).ready(function(){
 			});
 
 		});
+	
 		if(document.getElementById("footer") == null) {
-			$("body").append( "<div id='footer' class='hideprint'></div>\r" );
+			$("body").append( "<div id='footer' class='flexfooter hideprint'></div>\r" );
+		} else {
+			//$("#footer").addClass("flexfooter");
 		}
 		let footerFile = climbpath + "../community/footer.html";
 		if (param.footer) footerFile = param.footer;
