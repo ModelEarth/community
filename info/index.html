@@ -975,12 +975,13 @@ function style(feature) {
     };
     
 }
-loadScript('/community/js/leaflet/leaflet.js', function(results) {
-	setTimeout( function() {
-		addCountyBoundaries();
-		//alert("done");
-	}, 10000 );
-});
+if(location.host.indexOf('localhost') >= 0) { // Temp
+	loadScript('/community/js/leaflet/leaflet.js', function(results) {
+		setTimeout( function() {
+			addCountyBoundaries();
+		}, 10000 );
+	});
+}
 </script>
 
 
