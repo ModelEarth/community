@@ -40,11 +40,6 @@ To activate: addCountyBoundaries
 
 <style>
 /* Temp overrides */
-
-.includedContent {
-  max-width: 1300px;
-  margin:0 auto;
-}
 .mock-up {
 	displayX: inline-block !important;
 }
@@ -110,6 +105,7 @@ h2 {
 }
 .mainColumn {
 	display:table-cell;
+	vertical-align: top;
 }
 .mainColumn1 {
 	min-width: 500px;
@@ -192,19 +188,39 @@ document.addEventListener('hashChangeEvent', function (elem) {
 }, false);
 
 // INIT
-var hash = getHash(); // Include all existing
+//var hash = getHash(); // Include all existing
+var priorHash = {};
 function refreshWidgets() {
 	param = loadParams(location.search,location.hash); // param is declared in localsite.js
-	let priorHash = hash;
-	hash = getHash();
+	//let priorHash = hash;
+	let hash = getHash();
 	//alert("refreshWidgets from prior go: " + priorHash.go + " to " + hash.go);
 	
 	// NOTE: params after ? are not included, just the hash.
 	if (hash.go != priorHash.go) {
 		updateText(hash.go);
+		if (hash.go == "geomap") {
+			//alert("geomap")
+			$("#aboutToolsDiv").hide();
+			$("#infoColumn").show();
+			$("#geomap").show();
+			if(location.host.indexOf('localhost') >= 0) { // Temp
+				loadScript('/community/js/leaflet/leaflet.js', function(results) {
+					setTimeout( function() {
+						addCountyBoundaries("geomap");
+					}, 3000 );
+				});
+			}
+		} else {
+			$("#aboutToolsDiv").show();
+		}
 	}
 	
-	if (hash.geo && hash.geo.split(",").length > 4) {
+	if (hash.go && hash.go == "geomap") {
+		$("#infoColumn").show();
+        $(".mainColumn1").show();
+        //alert("showed?")
+	} if (hash.geo && hash.geo.split(",").length > 4) {
         $("#infoColumn").hide();
     } else if (hash.go) {
 		$("#infoColumn").show();
@@ -242,7 +258,7 @@ function refreshWidgets() {
 	if (param.indicators) {
 		$("#indicators").val(param.indicators);
 	}
-
+	priorHash = getHash();
 }
 </script>
 
@@ -252,120 +268,125 @@ function refreshWidgets() {
 
 <script type="text/javascript" src="../map/starter/embed-map.js?show=smart"></script>
 
-
 <div class="content contentpadding" style="padding-top:20px">
 
 <!-- two columns -->
 <div class="pageColumns">
-<div class="mainColumn mainColumn1" style="font-size: 15px; padding-right: 30px">
-	<a onClick="goHash({'go':'', 'view':'mosaic', 'count':'10', 'regiontitle':'', 'geo':''}); return false;" href="./#view=mosaic">Overview</a> | 
-	<a onClick="goHash({'go':'bioeconomy', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
-	<a href="../../io/charts/">About Widgets</a> |
-	<a onClick="goHash({'go':'dataprep', 'view':'mosaic', 'geo':'', 'regiontitle':'', 'count':'10', 'catsort':'estab'}); return false;" href="./#go=bioeconomy&view=mosaic">Data Prep</a>
+	<div style="display:table-row;">
+		<div class="mainColumn mainColumn1" style="font-size: 15px; padding-bottom:10px; padding-right: 30px">
+			<a onClick="goHash({'go':'', 'view':'mosaic', 'count':'10', 'regiontitle':'', 'geo':''}); return false;" href="./#view=mosaic">Overview</a> | 
+			<a onClick="goHash({'go':'bioeconomy', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
+			<a href="../../io/charts/">About Widgets</a> |
+			<a onClick="goHash({'go':'dataprep', 'view':'mosaic', 'geo':'', 'regiontitle':'', 'count':'10', 'catsort':'estab'}); return false;" href="./#go=bioeconomy&view=mosaic">Data Prep</a> | 
+			<a onClick="goHash({'go':'geomap', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">County Map</a>
+			<br>
+		</div>
+		<div class="mainColumn mainColumn2" style="font-size: 15px;">
+			<a href="#view=mosaic">Statewide</a> | 
+
+			<a onClick="goHash({
+			'regiontitle':'Southeast+Coastal+Georgia',
+			'geo':'US13001,US13005,US13127,US13161,US13229,US13305', 
+			'view':'mosaic', 
+			'count':'10',
+			'lat':'31.1891',
+			'lon':'-81.4979'
+			}); return false;" href="#regiontitle=Southeast+Coastal+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10&lat=31.1891&lon=-81.4980">Southeast Coastal</a> |  
+
+			<a onClick="goHash({
+			'regiontitle':'West+Central+Georgia',
+			'geo':'US13077,US13145,US13149,US13199,US13263,US13285', 
+			'view':'mosaic', 
+			'count':'10',
+			'lat':'33.0362',
+			'lon':'-85.0322'
+			}); return false;" href="#regiontitle=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
+		</div>
+	</div>
+</div>
+
+<div class="pageColumns">
+	<div style="display:table-row">
+		<div id="infoColumn" class="mainColumn mainColumn1" style="font-size: 15px;">
+
+			<!--
+
+			<h1 class="module_h1">The Impact Game</h1>
+
+			<div style="max-width:400px; margin-bottom:10px">
+			Adjust your local industry mix to maximize job quality, 
+			value added revenue and positive environmental&nbsp;impacts.
+			</div>
+			-->
+			<div id="geomap" style="height:500px; border:1px solid blue; display:none"></div>
+
+			
+			<div id="aboutToolsDiv" style="position: relative;"></div>
+			
+		</div>
+
+		<div class="mainColumn mainColumn2">
+		
+			<div>
+				<h2 class="regiontitle">Loading Industries...</h2>
+				<h4 class="regionsubtitle" style="font-size:16px;color:#555;"></h4>
+			</div>
+
+			<!--
+			<div style="max-width:700px">
+				<b>Adjust Industry Levels</b> to reflect technology initiatives that generate new revenue streams, create jobs and increase your community's positive environmental impact.
+			</div>
+			<br><br>
+			-->
+
+			<div id="detail_selection">
+				<div id="show_industry_settings" style="float:right;cursor:pointer" onclick="$('.industry_filter_settings').toggle();">
+					<span class="material-icons" style="font-size:24px;color:#777">
+					settings
+					</span>
+				</div>
+				<select id="catsort" class="picklist" onchange="goHash({'catsort':this.value});">
+		          <option value="payann" selected>By Annual Payroll</option>
+		          <option value="emp" >By Employee Count</option>
+		          <option value="estab">By Establishments</option>
+		        </select>
+		        <select id="catsize" class="picklist" onchange="goHash({'catsize':this.value});">
+		          <option value="2">Sectors - 2 digits</option>
+		          <!--option value="2">Subsectors - 3 digits</option-->
+		          <option value="4">Industry Group - 4 digits</option>
+		          <!--option value="4">NAICS Industry - 5 digits</option-->
+		          <option value="6" selected>National Code - 6 digits</option>
+		        </select>
+		        <div style="clear:both;margin-bottom:2px"></div>
+
+		        <div class="industry_filter_settings">
+			        <div class="state-view">
+			        	Choose a county or region above to view filter settings.
+			        </div>
+			        <div class="county-view" style="display:none">
+				        <select id="catmethod" class="picklist" onchange="goHash({'catmethod':this.value});">
+				          <option value="1" selected>Estimate using unpublished payrolls</option>
+				          <option value="2" >Estimate using total state payroll</option>
+				          <option value="0" >Leave unpublished values blank</option>
+				        </select>
+				    </div>
+				</div>
+			</div>
+
+			
+			
+			<div id="p1"></div>
+			<br>
+			<div class="mock-up" style="display:none">
+				Change scales to view the impact of different industry mixes. (Not yet activated)<br>
+			</div>
+			<!-- /Sector List Format -->
+
+			
+
+		</div>
 	
-	<br>
-</div>
-<div class="mainColumn mainColumn2" style="font-size: 15px;">
-	<a href="#view=mosaic">Statewide</a> | 
-
-	<a onClick="goHash({
-	'regiontitle':'Southeast+Coastal+Georgia',
-	'geo':'US13001,US13005,US13127,US13161,US13229,US13305', 
-	'view':'mosaic', 
-	'count':'10',
-	'lat':'31.1891',
-	'lon':'-81.4979'
-	}); return false;" href="#regiontitle=Southeast+Coastal+Georgia&geo=US13001,US13005,US13127,US13161,US13229,US13305&view=mosaic&count=10&lat=31.1891&lon=-81.4980">Southeast Coastal</a> |  
-
-	<a onClick="goHash({
-	'regiontitle':'West+Central+Georgia',
-	'geo':'US13077,US13145,US13149,US13199,US13263,US13285', 
-	'view':'mosaic', 
-	'count':'10',
-	'lat':'33.0362',
-	'lon':'-85.0322'
-	}); return false;" href="#regiontitle=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
-</div>
-</div>
-
-<div class="pageColumns" style="margin-top:20px">
-<div id="infoColumn" class="mainColumn mainColumn1" style="font-size: 15px;">
-
-	<!--
-
-	<h1 class="module_h1">The Impact Game</h1>
-
-	<div style="max-width:400px; margin-bottom:10px">
-	Adjust your local industry mix to maximize job quality, 
-	value added revenue and positive environmental&nbsp;impacts.
 	</div>
-	-->
-
-	<div id="aboutToolsDiv" style="position: relative;"></div>
-
-</div>
-
-<div class="mainColumn mainColumn2">
-	<div class="io">
-		<div>
-			<h2 class="regiontitle">Loading Industries...</h2>
-			<h4 class="regionsubtitle" style="font-size:16px;color:#555;"></h4>
-		</div>
-
-		<!--
-		<div style="max-width:700px">
-			<b>Adjust Industry Levels</b> to reflect technology initiatives that generate new revenue streams, create jobs and increase your community's positive environmental impact.
-		</div>
-		<br><br>
-		-->
-
-		<div id="detail_selection">
-			<div id="show_industry_settings" style="float:right;cursor:pointer" onclick="$('.industry_filter_settings').toggle();">
-				<span class="material-icons" style="font-size:24px;color:#777">
-				settings
-				</span>
-			</div>
-			<select id="catsort" class="picklist" onchange="goHash({'catsort':this.value});">
-	          <option value="payann" selected>By Annual Payroll</option>
-	          <option value="emp" >By Employee Count</option>
-	          <option value="estab">By Establishments</option>
-	        </select>
-	        <select id="catsize" class="picklist" onchange="goHash({'catsize':this.value});">
-	          <option value="2">Sectors - 2 digits</option>
-	          <!--option value="2">Subsectors - 3 digits</option-->
-	          <option value="4">Industry Group - 4 digits</option>
-	          <!--option value="4">NAICS Industry - 5 digits</option-->
-	          <option value="6" selected>National Code - 6 digits</option>
-	        </select>
-	        <div style="clear:both;margin-bottom:2px"></div>
-
-	        <div class="industry_filter_settings">
-		        <div class="state-view">
-		        	Choose a county or region above to view filter settings.
-		        </div>
-		        <div class="county-view" style="display:none">
-			        <select id="catmethod" class="picklist" onchange="goHash({'catmethod':this.value});">
-			          <option value="1" selected>Estimate using unpublished payrolls</option>
-			          <option value="2" >Estimate using total state payroll</option>
-			          <option value="0" >Leave unpublished values blank</option>
-			        </select>
-			    </div>
-			</div>
-		</div>
-
-		
-		
-		<div id="p1"></div>
-		<br>
-		<div class="mock-up" style="display:none">
-			Change scales to view the impact of different industry mixes. (Not yet activated)<br>
-		</div>
-		<!-- /Sector List Format -->
-
-		
-
-	</div>
-</div>
 </div>
 <!-- /two columns -->
 </div>
@@ -544,10 +565,6 @@ https://www.epa.gov/enviroatlas
 -->
 
 
-
-
-
-
 <div style="margin:0 30px 0 30px; max-width: 2000px;">
 	
 	<!--
@@ -571,41 +588,46 @@ https://www.epa.gov/enviroatlas
 </div>
 
 
-<!--
-Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
-To do: Multicolumn sort (but allow for fixed first column)
-https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
--->
+<div class="contentX contentpadding" style="margin-left:30px">
+<!-- Warning: adding content class causes popups to disappear because the absoulte top is using the top of page. -->
 
-<link rel="stylesheet" type="text/css" href="../../useeio-widgets/bubble/css/bubble.css"/>
-<div class="includedContent">
-	<h2>Industry Comparison</h2>
-	<div id="title1"></div>
+	<!--
+	Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
+	To do: Multicolumn sort (but allow for fixed first column)
+	https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
+	-->
+
+	<link rel="stylesheet" type="text/css" href="../../useeio-widgets/bubble/css/bubble.css"/>
+	<div class="bubble-graph">
+		<h2>Industry Impact Comparison</h2>
+		<div id="title1"></div>
 	    <div id="subtitle"></div>
 	    <text id="equation"></text>
 	    <div id="graph-wrapper">
 
-	      <div id="graph-wrapper-x">
-	        <text>X-Axis</text>
-	        <select id="graph-picklist-x" class="graph-picklist">
+	      <div id="graph-wrapper-z">
+	        <text>Bubble-Size</text>
+	        <select id="graph-picklist-z" class="graph-picklist">
 	        </select>
 	      </div>
 	      <div id="graph-wrapper-y">
 	        <text>Y-Axis</text>
 	        <select id="graph-picklist-y" class="graph-picklist">
 	        </select>
-	      </div>
-	      <div id="graph-wrapper-z">
-	        <text>Bubble-Size</text>
-	        <select id="graph-picklist-z" class="graph-picklist">
-	        </select>
-	      </div>
-	    </div>
-	    <br>
-	  </body>
-  </div>
-  <script type="text/javascript" src="../../useeio-widgets/bubble/js/bubble.js"></script>
+	      </div> 
 
+	    </div>
+	    <div id="graph-wrapper-x">
+	        <text>X-Axis</text>
+	        <select id="graph-picklist-x" class="graph-picklist">
+	        </select>
+	     </div> 
+
+	</div>
+	<script type="text/javascript" src="../../useeio-widgets/bubble/js/bubble.js"></script>
+	<br>
+
+</div>
 
 
 <div class="content contentpadding" style="display:none">
@@ -669,6 +691,7 @@ function loadScriptXXXXXX(url, callback)
 
 function updateText(go) {
 	$("#aboutToolsDiv").text("");
+	$("#geomap").hide();
 	if (go == "bioeconomy") {
 		loadMarkdown("../../io/tools/bioeconomy-planner/about.md", "aboutToolsDiv", "_parent");
 		//loadMarkdown("../../io/tools/bioeconomy-planner/bioenergy/README.md", "bioenergySummaryDiv", "_parent");
@@ -713,7 +736,7 @@ document.getElementById('showValues').onclick = function() {
 
 // These is missing var promises = [] and ready.
 // Let's look at Industry Mix first: http://localhost:8887/community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50
-function addCountyBoundaries() {
+function addCountyBoundaries(whichmap) {
 	var req = new XMLHttpRequest();
 
     // Topo data source
@@ -805,8 +828,8 @@ function addCountyBoundaries() {
       //var lon = -96.5;
       //var zoom = 5;
 
-      // Georgia
-      var lat = 32.7;
+      // Georgia 32.1656° N, 82.9001° W
+      var lat = 32.16;
       var lonX = -82.90;
       var lon = -81.8;
       var zoom = 7;
@@ -827,17 +850,17 @@ function addCountyBoundaries() {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       });
 
-      let whichmap = "map1";
-      let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
-      /*
-      let map = new L.Map('mapcon',
+      let dataParameters = {}; // Temp
+      //let map = document.querySelector('#' + whichmap)._leaflet_map; // Recall existing map
+      //alert("init map")
+      let map = new L.Map(whichmap,
       {
           scrollWheelZoom: false,
           center: new L.LatLng(lat,lon),
           zoom: zoom,
-          layers: [streets, dataParameters[0].group] // Indicates default layer
+          //layers: [streets, dataParameters[0].group] // Indicates default layer
       });
-	  */
+	  
 
       var baseLayers = {
         "Open Street Map": OpenStreetMap_BlackAndWhite,
@@ -850,10 +873,10 @@ function addCountyBoundaries() {
       };
 
 
-      dataParameters.forEach(function(ele) {
+      //dataParameters.forEach(function(ele) {
         //overlays[ele.name] = ele.group; // Allows for use of dp.name with removeLayer and addLayer
         //console.log("Layer added: " + ele.name);
-      })
+      //})
       if(layerControl === false) {
         // Add the layers control to the map
         layerControl = L.control.layers(baseLayers, overlays).addTo(map);
@@ -890,8 +913,9 @@ function addCountyBoundaries() {
             var layer = e.target;
             //map.fitBounds(e.target.getBounds()); // Zoom to boundary area clicked
             var fips = "US13" + layer.feature.properties.COUNTYFP;
-            //location.window = 
-            window.top.location.href="#geo=" + fips;
+            goHash({'geo':fips});
+            //window.top.location.href = "#" + newHash;
+            //window.top.location.href="#geo=" + fips;
         }
 
         function onEachFeature(feature, layer){
@@ -974,13 +998,6 @@ function style(feature) {
         fillColor: fillColor
     };
     
-}
-if(location.host.indexOf('localhost') >= 0) { // Temp
-	loadScript('/community/js/leaflet/leaflet.js', function(results) {
-		setTimeout( function() {
-			addCountyBoundaries();
-		}, 10000 );
-	});
 }
 </script>
 
