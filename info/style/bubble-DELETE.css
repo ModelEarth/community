@@ -1,0 +1,80 @@
+body {
+  font-family: Helvetica;
+  font-size: 13px;
+  margin: 10px auto;
+}
+
+#title{
+  font-size: 20px;
+  text-align: left;
+  width: 40%;
+  margin-left: 2%;
+  border-bottomX: 2px solid black;
+  margin-bottom: 25px;
+}
+
+.graph-picklist{
+  margin-left: 5px;
+}
+/*
+#graph-wrapper{
+  width: 90%;
+  height: 400px;
+}*/
+
+h4{
+  text-align: center;
+  font-weight: normal;
+}
+
+.axis text {
+  font-size: 12px;
+  fill: #777;
+}
+
+.axis path {
+  display: none;
+}
+
+.axis line {
+  stroke-width:.3px;
+  stroke: #dedede;
+}
+/*
+#graph-wrapper-x{
+  position: absolute;
+  top:450px;
+  left:40%;
+  text-align: center;
+}
+
+#graph-wrapper-y{
+  position: absolute;
+  top:250px;
+  left:100px;
+  text-align: center;
+  transform:rotate(-90deg);
+}
+*/
+#equation{
+  position: absolute;
+  top:20px;
+  left:60%;
+  text-align: center;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 170px;
+  heightX: 106px;
+  overflow: auto;
+  padding: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
