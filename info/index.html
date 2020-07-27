@@ -8,7 +8,7 @@
 
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../localsite/js/localsite.js"></script>
-<script type="text/javascript" src="../js/common/navigation.js"></script>
+<script type="text/javascript" src="../../localsite/js/navigation.js"></script>
 
 <!--
 To activate: addCountyBoundaries
@@ -19,7 +19,9 @@ To activate: addCountyBoundaries
 <script type="text/javascript" src="../../localsite/js/showdown.min.js"></script>
 
 <!-- PRODUCTION -->
+<!--
 <link rel="stylesheet" type="text/css" href="../../localsite/css/bootstrap.darkly.min.css"/>
+-->
 <link rel="stylesheet" type="text/css" href="../../io/charts/useeio/widgets.css">
 <script src="../../io/charts/useeio/lib/useeio_widgets.js"></script>
 
@@ -277,8 +279,8 @@ function refreshWidgets() {
 		<div class="mainColumn mainColumn1" style="font-size: 15px; padding-bottom:10px; padding-right: 30px">
 			<a onClick="goHash({'go':'', 'view':'mosaic', 'count':'10', 'regiontitle':'', 'geo':''}); return false;" href="./#view=mosaic">Overview</a> | 
 			<a onClick="goHash({'go':'bioeconomy', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
-			<a href="../../io/charts/">About Widgets</a> |
-			<a onClick="goHash({'go':'dataprep', 'view':'mosaic', 'geo':'', 'regiontitle':'', 'count':'10', 'catsort':'estab'}); return false;" href="./#go=bioeconomy&view=mosaic">Data Prep</a> | 
+			<a onClick="goHash({'go':'parts', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Auto Parts</a> | 
+			<a href="../../io/charts/">About Widgets</a> | 
 			<a onClick="goHash({'go':'geomap', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">County Map</a>
 			<br>
 		</div>
@@ -600,31 +602,45 @@ https://www.epa.gov/enviroatlas
 
 	<link rel="stylesheet" type="text/css" href="../../input-output/bubbles/css/bubble.css"/>
 	<div class="bubble-graph">
-		<h2>Industry Impact Comparison</h2>
-		<div id="title1"></div>
-	    <div id="subtitle"></div>
-	    <text id="equation"></text>
-	    <div id="graph-wrapper">
 
-	      <div id="graph-wrapper-z">
-	        <text>Bubble-Size</text>
-	        <select id="graph-picklist-z" class="graph-picklist">
-	        </select>
-	      </div>
-	      <div id="graph-wrapper-y">
-	        <text>Y-Axis</text>
-	        <select id="graph-picklist-y" class="graph-picklist">
-	        </select>
-	      </div> 
+      <div style="float:left">
+        <h2>Environmental Impact</h2>
+        <div id="bubble-graph-title"></div>
+        <text id="bubble-graph-equation"></text>
+      </div>
+      <div style="float:right">
+        <div id="impactText"></div>
+      </div>
 
-	    </div>
-	    <div id="graph-wrapper-x">
-	        <text>X-Axis</text>
-	        <select id="graph-picklist-x" class="graph-picklist">
-	        </select>
-	     </div> 
+      <div style="clear:both; border-top:1px solid #999; border-bottom:1px solid #999; padding:10px; margin-bottom:10px; overflow: scroll">
 
-	</div>
+        <div id="graph-wrapper-z">
+            <text class="text-space-horz">Bubble-Size</text>
+            <select id="graph-picklist-z" class="graph-picklist">
+            </select>
+          </div>
+
+        <div id="graph-wrapper">
+
+          
+          <div id="graph-wrapper-y">
+            <text class="text-space-vert">Y-Axis</text>
+            <select id="graph-picklist-y" class="graph-picklist">
+            </select>
+          </div> 
+
+        </div>
+        <div id="graph-wrapper-x">
+            <text class="text-space-horz">X-Axis</text>
+            <select id="graph-picklist-x" class="graph-picklist">
+            </select>
+         </div> 
+         
+
+      </div>
+
+  	</div>
+
 	<script type="text/javascript" src="../../input-output/bubbles/js/bubble.js"></script>
 	<br>
 
