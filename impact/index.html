@@ -546,28 +546,6 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div class="headerOffset2" style="height:56px">&nbsp;</div>
 
 
-
-<!-- APP MENU -->
-<!-- From search-filters.js displayBigThumbnails function -->
-<!-- Currently search-filters.js limits loading to localhost -->
-<div id="honeycombPanelHolder" style="display:none">
-  <div id="honeycombPanel">
-
-    <a name="sections"></a>
-    
-      <div class="bigThumbMenu widthColumns"></div>
-    
-
-    <div id="honeyMenuHolder" style="display:none">
-      <div id="honeycombMenu"></div>
-    </div>
-
-      <br><br>
-      
-  </div>
-</div>
-<!-- /APP MENU -->
-
 <!-- Settings Panel -->
 <div class="settingsPanel topMenuOffset floater" style="display:none; position:fixed">
 
@@ -753,8 +731,6 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
 <div style="clear:both"></div>
 
 
-
-
 <div id="tableSide" class="hideMobile">
 <div id='sidecolumn' class='hideprint' style="display: none">
 </div>
@@ -892,10 +868,14 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       </style>
 
 
-      <div class="content contentpadding" style="padding-top:0px;padding-bottom:0px">
+      <div style="padding-top:0px;padding-bottom:0px">
         <div style="overflow: visible;">
 
           <div class="pagebuttonHolder" style="min-height:45px;">
+
+            <div class="showApps local" style="displayX:none; float:left;">
+              <i class="material-icons" style="font-size:30px; color:#ccc; padding:5px 4px 4px 0px">&#xE5C3;</i>
+            </div>
 
             <h1 class="shortTitle" style="displayX:none; margin-bottom:0px; padding:4px 15px 4px 0; white-space: nowrap; float:left; font-size:28px; color:#999; margin-top;"></h1>
 
@@ -998,6 +978,28 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
       </div>
 <!-- /buttons -->
 
+
+<!-- APP MENU -->
+<!-- From search-filters.js displayBigThumbnails function -->
+<!-- Currently search-filters.js limits loading to localhost -->
+<div id="honeycombPanelHolder" style="display:none; margin-top:30px; margin-bottom:50px;">
+  
+  <!--div id="honeycombPanel"-->
+  <div id="honeycombPanel" style="display: block;">
+    <a name="sections"></a>
+    
+    <div class="bigThumbMenu widthColumns" style="margin:0 auto; "></div>
+
+    <div id="honeyMenuHolder" style="display:none">
+      <div id="honeycombMenu"></div>
+    </div>
+
+      <br><br>
+      
+  </div>
+</div>
+<div style="clear:both"></div>
+<!-- /APP MENU -->
 
 
 <section class="data-section" id="data" style="overflow:auto">

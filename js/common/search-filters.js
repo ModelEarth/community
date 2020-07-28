@@ -1119,7 +1119,8 @@ function access(minlevel,alevel) {
     }
 }
 function removeFrontFolder(path) {
-    return("../.." + path);
+    //return("../.." + path);
+    return(path);
 }
 function displayHexagonMenu(layerName,siteObject) {
 
@@ -1167,7 +1168,7 @@ function displayHexagonMenu(layerName,siteObject) {
 function displayBigThumbnails(layerName,siteObject) {
 	if (!$('.bigThumbUl').length) {
 
-  		$("#filterFieldsHolder").hide();
+  		//$("#filterFieldsHolder").hide();
 
 	    var currentAccess = 0;
 	    $(".bigThumbMenu").html("");
@@ -1217,9 +1218,9 @@ function displayBigThumbnails(layerName,siteObject) {
 	                                    //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
 	                                }
 	                                if (menuaccess==0) { // Quick hack until user-0 displays for currentAccess 1. In progress...
-	                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='displayX:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+	                                    sectionMenu += "<div class='bigThumbMenuContent'><div class='widthPercent user-" + menuaccess + "' style='displayX:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></div></div>";
 	                                } else {
-	                                    sectionMenu += "<li class='widthPercent user-" + menuaccess + "' style='display:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+	                                    sectionMenu += "<div class='bigThumbMenuContent'><div class='widthPercent user-" + menuaccess + "' style='display:none'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></div></div>";
 	                                }
 	                            }
 	                    //}
@@ -1246,7 +1247,7 @@ function displayBigThumbnails(layerName,siteObject) {
 	                            if (thelayers[layer].directlink) {
 	                                //hrefLink = "href='" + removeFrontFolder(thelayers[layer].directlink) + "'";
 	                            }
-	                            sectionMenu += "<li class='widthPercent user-" + menuaccess + "'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></li>";
+	                            sectionMenu += "<div class='bigThumbMenuContent'><div class='widthPercent user-" + menuaccess + "'><div class='bigThumbHolder'><div class='bigThumb' style='background-image:url(" + bkgdUrl + ");'><a href='" + directlink + "'><div class='bigThumbText'>" + thumbTitle + "<div class='bigThumbSecondary'>" + thumbTitleSecondary + "</div></div></a></div></div></div></div>";
 	                        }
 	                    }
 	                }
@@ -1254,7 +1255,7 @@ function displayBigThumbnails(layerName,siteObject) {
 	        }
 	    }
 	    //alert(sectionMenu);
-	    $(".bigThumbMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
+	    $(".bigThumbMenu").append(sectionMenu);
 	    //$("#honeycombMenu").append("<ul class='bigThumbUl'>" + sectionMenu + "</ul>");
 	    
 	    $("#iconMenu").append(iconMenu);
@@ -1308,7 +1309,15 @@ function initSiteObject(layerName) {
 	          			showSearchClick();
 	          		});
 	          		$('.showApps').click(function(event) {
-						displayBigThumbnails("main",siteObject);
+	          			if ($("#honeycombPanelHolder").is(':visible')) {
+	          				$("#honeycombPanelHolder").hide();
+	          			} else {
+	          				$("#honeycombPanelHolder").show();
+	          				if (!$(".bigThumbMenuContent").length) {
+	          					displayBigThumbnails("main",siteObject);
+							}
+	          			}
+	          			
 					  	event.stopPropagation();
 					});
 	          		// These should be lazy loaded when clicking menu
