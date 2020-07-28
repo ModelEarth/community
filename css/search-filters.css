@@ -123,7 +123,7 @@
 
 
 .bigThumbUl {
-    margin-left: -30px;
+    margin: 0px;
     list-style-type: none;
     /*
     padding-right: -30px;
@@ -131,30 +131,37 @@
     */
 }
 .widthPercent { /* allows margin to reside within percent */
-    width:50%;
     float:left;
+    position: relative;
     /* padding-right:30px; */
 }
+.widthPercent:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 .bigThumbHolder {
-    background-color: #333;
-    width:100%;
-    position:relative;
-    float:left;
-    max-height: 140px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
 
-    overflow: hidden;
+    overflowX: hidden;
     border:1px solid #fff;
-    margin: 0 0px 30px 0;
+    marginX: 0 0px 30px 0;
     /* padding-right: 30px; */
 }
 .bigThumb {
+    background-color: #fff;
     background-size: cover;
-    opacity: 0.80;
-    filter: alpha(opacity=70);
+    opacity: 0.7;
     cursor: pointer;
+    height: 100%;
 }
 .widthPercent {
     padding:0 20px 0 20px;
+    padding:0px !important;
+    margin:0px !important;
 }
 .bigThumb:hover {
     opacity: 1;
@@ -162,10 +169,10 @@
 }
 .bigThumb a {
     position: absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     text-align: center; /* no effect */
     cursor: pointer;
 }
@@ -204,8 +211,7 @@
 }
 .bigThumbMenu {
     clear:both; /* clear close X */
-    margin:0 auto;
-    margin-top: 34px;
+    display: block;
 }
 
 @media (min-width: 300px) {
@@ -213,24 +219,8 @@
         font-size: 40px;
     }
 }
-.bigThumb {
-    min-height: 300px;
-}
-@media (max-width: 500px) {
-    .bigThumb {
-        min-height: 200px;
-    }
-}
-@media (max-width: 300px) {
-    .bigThumb {
-        min-height: 100px;
-    }
-    .bigThumbHolder {
-        min-height: 142px;
-    }
-}
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .widthPercent {
         width:100%;
     }
@@ -248,68 +238,22 @@
         position: relative;
     }
 }
-@media (min-width: 501px) {
-    .widthPercent:nth-child(2n+2) {
-        padding: 0 20px 0 10px; /* left */
-    }
-    .widthPercent:nth-child(2n+1) {
-        padding: 0 10px 0 20px; /* right */
-    }
-}
 @media (min-width: 801px) {
     .primaryTitle {
         font-size: 50px;
     }
     .widthPercent {
-        width:50%;
-    }
-    .bigThumb {
-        min-height: 200px;
-    }
-
-    .bigThumb {
-        min-height: 240px;
-        max-height: 240px;
-    }
-    /*
-    .widthColumns li:nth-child(2n) {  
-      padding-right:0px;
-    }
-    .widthColumns li:nth-child(3n) {  
-      padding-right:30px;
-    }
-    */
-    .bigThumbHolder {
-        max-height: 250px;
+        width:33.3%;
     }
 }
+/* Full Screen */
 @media (min-width: 1000px) {
     .primaryTitle {
         font-size: 58px;
     }
     .widthPercent {
-        width: 33%;
+        width: 25%;
     }
-    .widthPercent:nth-child(3n+1) {
-        padding: 0 10px 0 25px;
-    }
-    .widthPercent:nth-child(3n+2) {
-        padding: 0 15px 0 15px;
-    }
-    .widthPercent:nth-child(3n+3) {
-        padding: 0 20px 0 10px;
-    }
-    .bigThumb {
-        min-height: 200px;
-    }
-    /*
-    .widthColumns li:nth-child(2n) {  
-      padding-right:30px;
-    }
-    .widthColumns li:nth-child(3n) {  
-      padding-right:0px;
-    }
-    */
     .widthColumns{
         max-width:1200px;
     }

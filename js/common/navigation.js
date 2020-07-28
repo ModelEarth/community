@@ -1,3 +1,4 @@
+// Maintained in localsite/js/navigation.js
 if (window.location.protocol != 'https:' && location.host.indexOf('localhost') < 0) {
 	location.href = location.href.replace("http://", "https://");
 }
