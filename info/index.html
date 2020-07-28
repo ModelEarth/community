@@ -239,7 +239,11 @@ function refreshWidgets() {
 
 	//alert(hash.regiontitle)
 	if (hash.regiontitle != priorHash.regiontitle) {
-		$(".regiontitle").text(hash.regiontitle);
+		if (hash.go) {
+			$(".regiontitle").text(hash.regiontitle + " - " + hash.go.toTitleCase());
+		} else {
+			$(".regiontitle").text(hash.regiontitle);
+		}
 	}
 
 	if (hash.geo != priorHash.geo) {
@@ -279,7 +283,8 @@ function refreshWidgets() {
 		<div class="mainColumn mainColumn1" style="font-size: 15px; padding-bottom:10px; padding-right: 30px">
 			<a onClick="goHash({'go':'', 'view':'mosaic', 'count':'10', 'regiontitle':'', 'geo':''}); return false;" href="./#view=mosaic">Overview</a> | 
 			<a onClick="goHash({'go':'bioeconomy', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
-			<a onClick="goHash({'go':'parts', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Parts Manufacturing</a> | 
+			<a onClick="goHash({'go':'parts', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=parts&view=mosaic">Parts</a> | 
+			<a onClick="goHash({'go':'manufacturing', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=manufacturing&view=mosaic">Manufacturing</a> | 
 			<a onClick="goHash({'go':'geomap', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">County Map</a>
 			<br>
 		</div>
