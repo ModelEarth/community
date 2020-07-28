@@ -278,9 +278,8 @@ function refreshWidgets() {
 	<div style="display:table-row;">
 		<div class="mainColumn mainColumn1" style="font-size: 15px; padding-bottom:10px; padding-right: 30px">
 			<a onClick="goHash({'go':'', 'view':'mosaic', 'count':'10', 'regiontitle':'', 'geo':''}); return false;" href="./#view=mosaic">Overview</a> | 
-			<a onClick="goHash({'go':'bioeconomy', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
-			<a onClick="goHash({'go':'parts', 'catsort':'estab', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Auto Parts</a> | 
-			<a href="../../io/charts/">About Widgets</a> | 
+			<a onClick="goHash({'go':'bioeconomy', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Bioeconomy</a> | 
+			<a onClick="goHash({'go':'parts', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">Parts Manufacturing</a> | 
 			<a onClick="goHash({'go':'geomap', 'view':'mosaic', 'count':'10'}); return false;" href="./#go=bioeconomy&view=mosaic">County Map</a>
 			<br>
 		</div>
@@ -303,7 +302,8 @@ function refreshWidgets() {
 			'count':'10',
 			'lat':'33.0362',
 			'lon':'-85.0322'
-			}); return false;" href="#regiontitle=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a>
+			}); return false;" href="#regiontitle=West+Central+Georgia&geo=US13077,US13145,US13149,US13199,US13263,US13285&view=mosaic&count=10">West&nbsp;Central&nbsp;Georgia</a> | 
+			<a href="../../io/charts/">About Widgets</a>
 		</div>
 	</div>
 </div>
@@ -738,8 +738,9 @@ function updateText(go) {
 	}
 
 }
-//updateText(param["go"])
-
+if (!param["go"]) {
+	updateText("")
+}
 
 /*
 document.getElementById('showValues').onclick = function() {
