@@ -20,6 +20,14 @@ var dual_map = dual_map || (function(){
             }
             return (root);
         },
+        localsite_root : function() {
+            // or sendfeedback
+            let root = location.protocol + '//' + location.host + '/localsite/';
+            if (location.host.indexOf('localhost') < 0) {
+              root = "https://neighborhood.org/localsite/";
+            }
+            return (root);
+        },
         absolute_root : function() {
           // Curently only used for feedback form
           let root = "https://map.georgia.org/community/"

@@ -1,4 +1,4 @@
-
+<!-- MOVED TO LOCALSITE -->
 <style>
 /*
 Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
@@ -66,8 +66,13 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 	padding:20px;
 }
 .headerbar {
-  /* box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1); */
-  border-bottom: 1px solid #eee;
+	height:100px;
+	background:#fff;
+	border-bottom: 1px solid #eee;
+	width:100%;
+	position:fixed;
+	overflow:visible;
+	z-index:1002;
 }
 .headerbar-margin {
 	marginX: 0 auto;
@@ -275,7 +280,7 @@ Could use these state shapes: https://github.com/coryetzkorn/state-svg-defs
 	</div>
 </div>
 
-<div class="headerbar headerbarheight" style="height:100px;background:#fff;width:100%;position:fixed;overflow:visible;z-index:1002;">
+<div class="headerbar headerbarheight">
 
 	<div class="upperIcons" style="float:right;">
 		<div class="showSearch local" style="display:none;float:left">

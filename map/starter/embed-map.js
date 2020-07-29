@@ -1409,15 +1409,15 @@ function lazyLoadFiles() {
 	}  	
 	//includeCSS(root + '/community/css/community.css',root);
 	includeCSS(root + '/localsite/css/base.css',root);
-	includeCSS(root + '/community/css/search-filters.css',root);
-	includeCSS(root + '/community/css/display.css',root);
-	includeCSS(root + '/community/css/hexagons.css',root);
+	includeCSS(root + '/localsite/css/search-filters.css',root);
+	includeCSS(root + '/localsite/css/map-display.css',root);
+	//includeCSS(root + '/community/css/hexagons.css',root);
 
 
-	includeCSS(root + '/community/css/leaflet/leaflet.css',root);
+	includeCSS(root + '/localsite/css/leaflet.css',root);
 	includeCSS('https://fonts.googleapis.com/icon?family=Material+Icons',root);
-	includeCSS(root + '/community/css/leaflet/leaflet.icon-material.css',root);
-	includeCSS(root + '/community/css/map.css',root);
+	includeCSS(root + '/localsite/css/leaflet.icon-material.css',root);
+	includeCSS(root + '/localsite/css/map.css',root);
 	
 
 	// Required by leafletLoaded that follows

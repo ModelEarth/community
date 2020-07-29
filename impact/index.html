@@ -7,20 +7,21 @@
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 
 <link rel="stylesheet" href="../css/community.css" />
-<link type="text/css" href="../../../localsite/css/base.css" rel="stylesheet" />
-<link rel="stylesheet" href="../css/search-filters.css" />
-<link rel="stylesheet" href="../css/display.css" />
+<link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../localsite/css/search-filters.css" />
+<link rel="stylesheet" href="../../localsite/css/map-display.css" />
+<!--
 <link rel="stylesheet" href="../css/hexagons.css">
-
+-->
 <script type="text/javascript" src="../../../localsite/js/showdown.min.js"></script>
 <script type="text/javascript" src="../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../localsite/js/localsite.js"></script>
 
 <!-- Activate to include site navigation-->
 <script type="text/javascript" src="../js/common/navigation.js"></script>
-<link rel="stylesheet" href="../css/leaflet/leaflet.css" />
+<link rel="stylesheet" href="../../localsite/css/leaflet.css" />
  <!-- Resides AFTER Leaflet's CSS -->
-<script src="../js/leaflet/leaflet.js"></script>
+<script src="../../localsite/js/leaflet.js"></script>
 
 <script src="../js/d3/d3.v5.min.js"></script>
 
@@ -29,13 +30,13 @@
 <script type="text/javascript" src="../js/common/stupidtable.js"></script>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="../css/leaflet/leaflet.icon-material.css" rel="stylesheet">
-<script src="../js/leaflet/leaflet.icon-material.js"></script>
+<link href="../../localsite/css/leaflet.icon-material.css" rel="stylesheet">
+<script src="../../localsite/js/leaflet.icon-material.js"></script>
 <!--
 <script src="../js/d3/d3-legend.js"></script>
 -->
 <script type="text/javascript" src="../js/common/dual-map.js?show=suppliers"></script>
-<link rel="stylesheet" href="../css/map.css" />
+<link rel="stylesheet" href="../../localsite/css/map.css" />
 
 
 <!-- For Facebook -->
@@ -122,7 +123,7 @@
 
             <div style="position:relative; float:left;">
 
-                <div style="position:absolute; right:5px; top:5px; pointer-events:none;">
+                <div class="select-menu-arrow-holder">
                   <i class="material-icons" style="font-size:24px;cursor:pointer;">&#xE409;</i>
                   <i class="material-icons" style="font-size:24px;cursor:pointer;display:none;">&#xE313;</i>
                 </div>
@@ -523,7 +524,7 @@
 <!-- END FILTERS -->
 
 
-
+<div style="display:none">
 <aside class="Intermodal_Ports">
 group,lat,lon,value,address,city,state,zip
 Inman Rail Yard,33.795735,-84.439278,NS,1600 Marietta Rd NW,Atlanta,GA,30318
@@ -541,6 +542,7 @@ Port of Brunswick Mayor's Point Terminal,31.143373,-81.494753,Breakbulk,1100 Bay
 Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Columbus,GA,31901
 Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817
 </aside>
+</div>
 
 <!-- Matches filterFields and headerFixed height -->
 <div class="headerOffset2" style="height:56px">&nbsp;</div>
@@ -1322,11 +1324,10 @@ loadMap1();
 //layerControl['map1'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
 //layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
 
-window.onhashchange = function() {
-  //param = loadParam(location.search,location.hash);
-  console.log("user changed hash");
+document.addEventListener('hashChangeEvent', function (elem) {
+  console.log("impact/index.html detects hashChangeEvent");
   loadMap1();
-}
+}, false);
 
 
 // WORK IN PROGRESS

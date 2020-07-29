@@ -1,6 +1,7 @@
 function populateFieldsFromHash() {
 	$("#keywordsTB").val(param["q"]);
 
+	$('.catList > div').removeClass('catListSelected');
 	if (param["cat"]) {
 		var catString = param["cat"].replace(/_/g, ' ');;
 		$("#catSearch").val(catString);
@@ -50,7 +51,7 @@ $(document).ready(function () {
 		$(".si-btn").hide();
 	}
 	catArray = [];
-	$.get(dual_map.community_root() + 'impact/harmonized-system/hs.txt', function(data) {
+	$.get(dual_map.localsite_root() + 'info/data/harmonized-system.txt', function(data) {
 		var catLines = data.split("\n");
 		
 		catLines.forEach(function(element) {
