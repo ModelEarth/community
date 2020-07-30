@@ -21,10 +21,16 @@ var dual_map = dual_map || (function(){
             return (root);
         },
         localsite_root : function() {
-            // or sendfeedback
             let root = location.protocol + '//' + location.host + '/localsite/';
             if (location.host.indexOf('localhost') < 0) {
               root = "https://neighborhood.org/localsite/";
+            }
+            return (root);
+        },
+        location_data_root : function() {
+            let root = location.protocol + '//' + location.host + '/georgia-data/';
+            if (location.host.indexOf('localhost') < 0) {
+              root = "https://neighborhood.org/georgia-data/";
             }
             return (root);
         },
@@ -873,7 +879,7 @@ function loadMap1(dp) { // Also called by search-filters.js
   //} else if (param["show"] == "produce" || param["design"]) {
   } else { // || param["show"] == "mockup"
     dp1.listTitle = "USDA Farm Produce (mockup)";
-    dp1.dataset = community_root + "map/starter/farmersmarkets-ga.csv";
+    dp1.dataset = dual_map.location_data_root() + "farmfresh/farmersmarkets-ga.csv";
     dp1.name = "Local Farms"; // To remove
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";
