@@ -1339,7 +1339,7 @@ function jsLoaded(root) {
 
 		} 
 	  	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
-	    	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
+	    	loadScript(root + '/localsite/js/map.js', function(results) { 
 	  			loadSearchFilters(1); // Uses dual_map library for community_root
 	  		});
 	    });	
@@ -1359,7 +1359,7 @@ function leafletLoaded(root, count) {
 		loadScript(root + '/community/js/leaflet/leaflet.icon-material.js');
 		loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
 			loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
-				loadScript(root + '/community/js/common/dual-map.js', function(results) { // BUG - change so dual-map does not require this on it's load
+				loadScript(root + '/localsite/js/map.js', function(results) { // BUG - change so dual-map does not require this on it's load
 					//loadScript(root + '/community/js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
 			  		dualmapLoaded(param, root, 1);
 			  	});
@@ -1390,7 +1390,9 @@ function lazyLoadFiles() {
 
   // Load early so available later
   loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
-  	loadScript(root + '/community/js/common/dual-map.js', function(results) {});
+  	loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
+  		loadScript(root + '/localsite/js/map.js', function(results) {});
+  	});
   });
 
  	
