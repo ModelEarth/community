@@ -16,6 +16,14 @@ https://www.ams.usda.gov/local-food-directories/onfarm
 
 ### Georgia Produce (UGA Extension)
 
+[The UGA Extension Local Produce Directory](https://extension.uga.edu/ag-products-connection.html) lists farms that are keeping regular hours, providing curbside pickup, home delivery or e-commerce sales during the COVID-19 pandemic.  
+
+Yamini Kagal - merged spreadsheets prior to our USDA Automation 
+
+Mario Cambardella - AgLanta, ServeScape
+
+### Georgia Produce (UGA Extension)
+
 [The UGA Extension Local Produce Directory](https://extension.uga.edu/ag-products-connection.html) lists farms that are keeping regular hours, providing curbside pickup, home delivery or e-commerce sales during the COVID-19 pandemic.
 
 ### Aglanta
