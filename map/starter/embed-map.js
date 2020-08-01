@@ -1302,6 +1302,47 @@ function mix(incoming, target) { // Combine two objects, priority to incoming. D
 
 // UNIQUE TO PAGE
 function jsLoaded(root) {
+	  loadScript(root + '/localsite/js/localsite.js', function(results) {
+
+	  	var strVarCss = "<style>";
+		if (param["show"] == "suppliers") {
+
+			console.log("location.host: " + location.host);
+			//if(location.host.indexOf('georgia.org') >= 0) { 
+	 			//$('.headerOffsetOne').css('height', '75px'); // Instead of 100px, for space above title.
+	 			strVarCss += ".headerOffsetOne {height:75px}"; 
+	 		//}
+			strVarCss += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
+			//strVarCss += ".headerOffsetOne{display:none !important}";
+			strVarCss += ".component--main_content{margin-top:70px}";
+
+			// Limit where this occurs
+			strVarCss += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
+		}
+		strVarCss += "<\/style>";
+		//document.write(strVarCss);
+		document.head.insertAdjacentHTML("beforeend", strVarCss);
+
+		function loadSearchFilters(count) {
+			if (typeof customD3loaded !== 'undefined' && typeof dual_map !== 'undefined') {
+				loadScript(root + '/community/js/common/search-filters.js', function(results) {});
+			} else if (count<100) { // Wait a milisecond and try again
+				setTimeout( function() {
+		   			console.log("try loadSearchFilters again")
+					loadSearchFilters(count+1);
+		   		}, 10 );
+			} else {
+				console.log("ERROR: loadSearchFilters exceeded 100 attempts.");
+			}
+
+		} 
+	  	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
+	    	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
+	  			loadSearchFilters(1); // Uses dual_map library for community_root
+	  		});
+	    });	
+	 });
+
 	loadScript(root + '/community/js/common/stupidtable.js', function(results) {});
 	if (location.host.indexOf('localhost') >= 0) {
 		// Causing map points to shift right, maybe due to later loading.
@@ -1349,47 +1390,8 @@ function lazyLoadFiles() {
   loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
   	loadScript(root + '/community/js/common/dual-map.js', function(results) {});
   });
-  loadScript(root + '/localsite/js/localsite.js', function(results) {
 
-  	var strVarCss = "<style>";
-	if (param["show"] == "suppliers") {
-
-		console.log("location.host: " + location.host);
-		//if(location.host.indexOf('georgia.org') >= 0) { 
- 			//$('.headerOffsetOne').css('height', '75px'); // Instead of 100px, for space above title.
- 			strVarCss += ".headerOffsetOne {height:75px}"; 
- 		//}
-		strVarCss += "h1 {font-size:38px;margin-top:20px}"; // Larger header for Drupal
-		//strVarCss += ".headerOffsetOne{display:none !important}";
-		strVarCss += ".component--main_content{margin-top:70px}";
-
-		// Limit where this occurs
-		strVarCss += "p {margin: 0 0 2.2rem;}"; // Overrides Drupal 3.4rem bottom
-	}
-	strVarCss += "<\/style>";
-	//document.write(strVarCss);
-	document.head.insertAdjacentHTML("beforeend", strVarCss);
-
-  	loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so search-filters.js does not require this on it's load
-    	loadScript(root + '/community/js/common/dual-map.js', function(results) { 
-  			loadSearchFilters(1); // Uses dual_map library for community_root
-  		});
-    });	
-  });
-
-	function loadSearchFilters(count) {
-		if (typeof customD3loaded !== 'undefined' && typeof dual_map !== 'undefined') {
-			loadScript(root + '/community/js/common/search-filters.js', function(results) {});
-		} else if (count<100) { // Wait a milisecond and try again
-			setTimeout( function() {
-	   			console.log("try loadSearchFilters again")
-				loadSearchFilters(count+1);
-	   		}, 10 );
-		} else {
-			console.log("ERROR: loadSearchFilters exceeded 100 attempts.");
-		}
-
-	}  	
+ 	
 	//includeCSS(root + '/community/css/community.css',root);
 	includeCSS(root + '/localsite/css/base.css',root);
 	includeCSS(root + '/localsite/css/search-filters.css',root);
@@ -1408,7 +1410,7 @@ function lazyLoadFiles() {
     	d3Loaded(root);
 	});
 
-	// Resides AFTER css/leaflet/leaflet.css
+	// Resides AFTER css/leaflet.css
 	loadScript(root + '/community/js/leaflet/leaflet.js', function(results) {
 		leafletLoaded(root,1);
 	});

@@ -730,7 +730,7 @@ function loadMap1(dp) { // Also called by search-filters.js
     this.getContainer()._leaflet_map = this;
   });
 
-  let community_root = dual_map.community_root();
+  let community_root = dual_map.community_data_root();
 
   let dp1 = {}
   // Might use when height it 280px
@@ -755,7 +755,8 @@ function loadMap1(dp) { // Also called by search-filters.js
     //alert(community_root + "tools/map.csv");
 
     dp1.shortTitle = "Communities";
-    dp1.dataset =  community_root + "tools/map.csv";
+    //dp1.dataset = dual_map.custom_data_root + "communities/map-georgia-smart.csv";
+    dp1.dataset = "/georgia-data/communities/map-georgia-smart.csv";
     dp1.listInfo = "Includes Georgia Smart Community Projects";
     dp1.search = {"In Title": "title", "In Description": "description", "In Website URL": "website", "In Address": "address", "In City Name": "city", "In Zip Code" : "zip"};
 
@@ -879,7 +880,7 @@ function loadMap1(dp) { // Also called by search-filters.js
   //} else if (param["show"] == "produce" || param["design"]) {
   } else { // || param["show"] == "mockup"
     dp1.listTitle = "USDA Farm Produce (mockup)";
-    dp1.dataset = dual_map.location_data_root() + "farmfresh/farmersmarkets-ga.csv";
+    dp1.dataset = dual_map.custom_data_root() + "farmfresh/farmersmarkets-ga.csv";
     dp1.name = "Local Farms"; // To remove
     dp1.dataTitle = "Farm Fresh Produce";
     dp1.markerType = "google";
