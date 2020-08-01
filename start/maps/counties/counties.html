@@ -180,7 +180,8 @@ Promise.all(promises).then(ready)
 
 function ready([us]) {
 
-    console.log("region1 test: " + region1);
+    console.log("region1: ");
+    console.log(region1);
     console.log("region1 outpu: " + region1.get(114))
     console.dir(region1);
 
@@ -191,7 +192,7 @@ function ready([us]) {
         var neighbors
         var cluster_data = [];
 
-        function style(feature) {
+        function styleShape(feature) {
             // Called for each topojson row
             // console.log("feature.properties.COUNTYFP: " + feature.properties.COUNTYFP);
             var fillColor = '#ff0000';
@@ -318,7 +319,7 @@ function ready([us]) {
 
                 console.log('topodata: ', topodata)
 
-                geojsonLayer = L.geoJson(topodata, {style:style, onEachFeature: onEachFeature}); // Called within addTo(map)
+                geojsonLayer = L.geoJson(topodata, {style:styleShape, onEachFeature: onEachFeature}); // Called within addTo(map)
 
                 //console.log('neigh', neighbors)
              //}

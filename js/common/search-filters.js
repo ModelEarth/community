@@ -51,7 +51,7 @@ $(document).ready(function () {
 		$(".si-btn").hide();
 	}
 	catArray = [];
-	$.get(dual_map.localsite_root() + 'info/data/harmonized-system.txt', function(data) {
+	$.get(dual_map.community_data_root() + 'global/hs/harmonized-system.txt', function(data) {
 		var catLines = data.split("\n");
 		
 		catLines.forEach(function(element) {
@@ -592,7 +592,7 @@ function showCounties() {
 	//Load in contents of CSV file
 	//d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
 
-	//d3.csv(dual_map.community_root() + "info/data/usa/GA/GAcounties.csv").then(function(myData,error) {
+	//d3.csv(dual_map.community_data_root() + "info/data/usa/GA/GAcounties.csv").then(function(myData,error) {
 	d3.csv("https://modelearth.github.io/community/info/data/usa/GA/GAcounties.csv").then(function(myData,error) {
 	//d3.csv("https://modelearth.github.io/georgia-data/counties/GAcounties.csv").then(function(myData,error) {
 	//d3.csv("https://neighborhood.org/georgia-data/counties/GAcounties.csv").then(function(myData,error) {
@@ -1294,7 +1294,7 @@ function initSiteObject(layerName) {
 	    // https://github.com/codeforgreenville/leaflet-google-sheets-template
 	    // https://data.openupstate.org/map-layers
 
-	    var layerJson = dual_map.community_root() + "impact/menu.json";
+	    var layerJson = dual_map.localsite_root() + "map/menu.json";
 
 	    var siteObject = (function() {
 	        var json = null;
