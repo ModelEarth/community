@@ -1325,7 +1325,8 @@ function jsLoaded(root) {
 
 		function loadSearchFilters(count) {
 			if (typeof customD3loaded !== 'undefined' && typeof dual_map !== 'undefined') {
-				loadScript(root + '/community/js/common/search-filters.js', function(results) {});
+				//loadScript(root + '/community/js/common/search-filters.js', function(results) {});
+				loadScript(root + '/localsite/js/map-filters.js', function(results) {});
 			} else if (count<100) { // Wait a milisecond and try again
 				setTimeout( function() {
 		   			console.log("try loadSearchFilters again")
@@ -1428,8 +1429,8 @@ function dualmapLoaded(param, root, count) {
 			  }
 		})
 
-		loadScript(root + '/community/js/common/search-filters.js', function(results) {
-
+		//loadScript(root + '/community/js/common/search-filters.js', function(results) {
+		loadScript(root + '/localsite/js/map-filters.js', function(results) {
 			loadMap1();
 			document.addEventListener('hashChangeEvent', function (elem) {
 				//param = loadParam(location.search,location.hash);
