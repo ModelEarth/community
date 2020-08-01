@@ -1324,7 +1324,7 @@ function jsLoaded(root) {
 		document.head.insertAdjacentHTML("beforeend", strVarCss);
 
 		function loadSearchFilters(count) {
-			if (typeof customD3loaded !== 'undefined' && typeof dual_map !== 'undefined') {
+			if (typeof customD3loaded !== 'undefined' && typeof localsite_map !== 'undefined') {
 				loadScript(root + '/localsite/js/localsite.js', function(results) { // For roots
 					loadScript(root + '/localsite/js/map-filters.js', function(results) {});
 				});
@@ -1423,8 +1423,8 @@ function lazyLoadFiles() {
 lazyLoadFiles();
 
 function dualmapLoaded(param, root, count) {
-	if (typeof dual_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
-		dual_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
+	if (typeof localsite_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
+		localsite_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 
 		$("#filterEmbedHolder img[src]").each(function() {
 			  if($(this).attr("src").toLowerCase().indexOf("http") < 0){
