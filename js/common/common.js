@@ -1,7 +1,46 @@
 // Updates originate in localsite/js/localsite.js
 // To do: dynamically add target _parent to external link when in an iFrame, and no existing target
 
-// localsite.js does NOT use jquery, so it can be used before jquery loads.
+var dual_map = dual_map || (function(){
+    var _args = {}; // private
+
+    return {
+        init : function(Args) {
+            _args = Args;
+            // some other initialising
+        },
+        helloWorld : function() {
+            alert('Hello World! -' + _args[0]);
+        },
+        community_root : function() {
+            // or sendfeedback
+            let root = location.protocol + '//' + location.host + '/community/';
+            if (location.host.indexOf('localhost') < 0) {
+              root = "https://modelearth.github.io/community/";
+            }
+            return (root);
+        },
+        localsite_root : function() {
+            let root = location.protocol + '//' + location.host + '/localsite/';
+            if (location.host.indexOf('localhost') < 0) {
+              root = "https://neighborhood.org/localsite/";
+            }
+            return (root);
+        },
+        custom_data_root : function() {
+            let root = location.protocol + '//' + location.host + '/georgia-data/';
+            if (location.host.indexOf('localhost') < 0) {
+              root = "https://neighborhood.org/georgia-data/";
+            }
+            return (root);
+        },
+        absolute_root : function() {
+          // Curently only used for feedback form
+          let root = "https://map.georgia.org/community/"
+          return (root);
+        }
+    };
+}());
 
 // USE params (plural) to isolate within functions when creating embedable widgets.
 // USE param for any html page using localsite.js.
