@@ -52,31 +52,30 @@ def USEEIO_GET_MATRIX(model, matrix, sector, axis):
     '''
     Mat = pd.DataFrame(data = None, index = sector_names)
 
-    '''query all sectors, no sectoral specification needed
-    '''
     if sector == 'all':
+        '''query all sectors, no sectoral specification needed
+        '''
         i = 0
         for col in sector_names:
             Mat_resp = requests.get(base_url + '{0}/matrix/{1}?col={2}'.format(model, matrix, i), headers = api_headers)
             Mat[col] = Mat_resp.json()
             i += 1
 
-    '''querying specified sectors, search for the index of specified industries
-    '''
-    index, \
-    index_colname = USEEIO_FIND_COLUMN_INDEX(model, sector)
+    else:
+        '''querying specified sectors, search for the index of specified industries
+        '''
+        index, \
+        index_colname = USEEIO_FIND_COLUMN_INDEX(model, sector)
 
-    if axis == 0:
-        for i in np.arange(np.array(index).shape[0]):
-            Mat_resp = requests.get(base_url + '{0}/matrix/{1}?col={2}'.format(model, matrix, index[i]), headers = api_headers)
-            Mat[index_colname[i]] = Mat_resp.json()
-    elif axis == 1:
-        for i in np.arange(np.array(index).shape[0]):
-            Mat_resp = requests.get(base_url + '{0}/matrix/{1}?row={2}'.format(model, matrix, index[i]), headers = api_headers)
-            Mat[index_colname[i]] = Mat_resp.json()
+        for j in np.arange(np.array(index).shape[0]):
+            if axis == 0:  # column query
+                url = base_url + '{0}/matrix/{1}?col={2}'.format(model, matrix, index[j])
+            elif axis == 1:  # row query
+                url = base_url + '{0}/matrix/{1}?row={2}'.format(model, matrix, index[j])
+            Mat_resp = requests.get(url.format(model, matrix, index[j]), headers = api_headers)
+            Mat[index_colname[j]] = Mat_resp.json()
 
     return(Mat)
-
 
 
 ''' LaGrange Automotive Industry Input-Output Sankey '''
@@ -154,8 +153,8 @@ def BUILD_JSON_FOR_IO_SANKEY(input_mat,  output_mat, topn = 10):
             link_list.append(input_link)
             link_list.append(output_link)
 
-    js = {'nodes':node_list,
-            'links':link_list}
+
+    js = {'nodes':node_list, 'links':link_list}
 
     with open('data/IO.js', 'w') as f:
         json.dump(js, f)
