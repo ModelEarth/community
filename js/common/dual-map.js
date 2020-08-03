@@ -1,47 +1,6 @@
 
 // Dual Map Library - A global namespace singleton
 // If dual_map library exists then use it, else define a new object.
-var dual_map = dual_map || (function(){
-    var _args = {}; // private
-
-    return {
-        init : function(Args) {
-            _args = Args;
-            // some other initialising
-        },
-        helloWorld : function() {
-            alert('Hello World! -' + _args[0]);
-        },
-        community_root : function() {
-            // or sendfeedback
-            let root = location.protocol + '//' + location.host + '/community/';
-            if (location.host.indexOf('localhost') < 0) {
-              root = "https://modelearth.github.io/community/";
-            }
-            return (root);
-        },
-        localsite_root : function() {
-            let root = location.protocol + '//' + location.host + '/localsite/';
-            if (location.host.indexOf('localhost') < 0) {
-              root = "https://neighborhood.org/localsite/";
-            }
-            return (root);
-        },
-        location_data_root : function() {
-            let root = location.protocol + '//' + location.host + '/georgia-data/';
-            if (location.host.indexOf('localhost') < 0) {
-              root = "https://neighborhood.org/georgia-data/";
-            }
-            return (root);
-        },
-        absolute_root : function() {
-          // Curently only used for feedback form
-          let root = "https://map.georgia.org/community/"
-          return (root);
-        }
-    };
-}());
-
 
 var dataParameters = [];
 var dp = {};
@@ -719,7 +678,7 @@ function loadMap1(dp) { // Also called by search-filters.js
     }),
   */
 
-  // This was outside of functions, but caused error because L was not available when dual-map.js loaded before leaflet.
+  // This was outside of functions, but caused error because L was not available when localsite/js/map.js loaded before leaflet.
   // Not sure if it was working, or if it will contine to work here.
   // Recall existing map https://github.com/Leaflet/Leaflet/issues/6298
   // https://plnkr.co/edit/iCgbRjW4aymAjoVoicZQ?p=preview&preview

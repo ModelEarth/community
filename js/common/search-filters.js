@@ -898,7 +898,7 @@ function clickClearButton(){
   	$("#clearButton").click();
 }
 function displayResults() {
-	console.log("displayResults disabled - use showList in Dual-Map.js instead");
+	console.log("displayResults disabled - use showList in localsite/js/map.js instead");
 	return;
 
 	// SEE search-filters-removed.js - See if anything for HS Codes is usable
@@ -1039,7 +1039,7 @@ $(document).ready(function () {
 
     catString = catString.replace(/ /g, '_');
     updateHash({"cat":catString});
-    console.log("catList clicked, call loadMap1 which calls loadFromCSV > showList in dual-map.js");
+    console.log("catList clicked, call loadMap1 which calls loadFromCSV > showList in localsite/js/map.js");
     loadMap1();
     //hideNonListPanels();
     event.stopPropagation();

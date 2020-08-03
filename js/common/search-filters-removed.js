@@ -1,5 +1,5 @@
 function displayResults() {
-			console.log("displayResults disabled - use showList in Dual-Map.js instead");
+			console.log("displayResults disabled - use showList in localsite/js/map.js instead");
 			return;
 
 			// SEE search-filters-removed.js - See if anything for HS Codes is usable
