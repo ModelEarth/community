@@ -34,7 +34,7 @@ var mbAttr = '<a href="https://www.mapbox.com/">Mapbox</a>',
 
 // INTERMODAL PORTS - was here
 
-function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,callback) {
+function loadFromCSV(whichmap,whichmap2,dp,basemaps1,basemaps2,attempts,callback) {
 
   console.log('loadFromCSV into #' + whichmap + '._leaflet_map');
   let defaults = {};
@@ -861,11 +861,11 @@ function loadMap1(dp) { // Also called by search-filters.js
   }
 
   // Load the map using settings above
-  loadFromCSV('map1','map2', dp1, basemaps1, basemaps2, function(results) {
+  loadFromCSV('map1','map2', dp1, basemaps1, basemaps2, 0, function(results) {
       
       // CALLED WHENEVER FILTERS CHANGE
 
-      //loadFromCSV('map1', 'map2', "/community/tools/map.csv", basemaps1, basemaps2, function(results) {
+      //loadFromCSV('map1', 'map2', "/community/tools/map.csv", basemaps1, basemaps2, 0, function(results) {
       // This function gets called by the geocode function on success
       //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
 
@@ -921,7 +921,7 @@ function loadMap1(dp) { // Also called by search-filters.js
         dp2 = {}
         dp2.name = "Communities";
         dp2.dataset = "/community/tools/map.csv";
-        loadFromCSV('map1', 'map2', dp2, basemaps1, basemaps2, function(results) {
+        loadFromCSV('map1', 'map2', dp2, basemaps1, basemaps2, 0, function(results) {
           // Add Railroad layer
           layerControl['map2'].addOverlay(baselayers["Rail"], "Railroads"); // Appends to existing layers
         });
