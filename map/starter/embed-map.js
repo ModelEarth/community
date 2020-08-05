@@ -1455,7 +1455,7 @@ function dualmapLoaded(param, root, count) {
 
 
 /*
-loadFromCSV('map1', 'map2', "/community/tools/map.csv", function(results) {
+loadFromCSV('map1', 'map2', "/community/tools/map.csv", 0, function(results) {
     // This function gets called by the geocode function on success
     //makeMap(results[0].geometry.location.lat(), results[0].geometry.location.lng());
 

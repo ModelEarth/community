@@ -1334,7 +1334,7 @@ document.addEventListener('hashChangeEvent', function (elem) {
 /*
   $("#detaillist").text(""); // Clear prior results
   // map1 = 
-  loadFromCSV('map1','map2', dp1, basemaps1, basemaps2, function(dp) { // Called on success
+  loadFromCSV('map1','map2', dp1, basemaps1, basemaps2, 0, function(dp) { // Called on success
       
       if (!overlays2["Railroads"]) {
         overlays2["Railroads"] = dp.group; // Allows us to check if layer already added. Setting to db.group not currently user.
