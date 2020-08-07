@@ -3,6 +3,12 @@
 Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-widgets) which use [D3.js](https://github.com/d3/d3/wiki/Gallery) as their only dependency. [View&nbsp;examples](http://modelearth.github.io/io/charts/). 
 
 
+<b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
+<a href="input-output-sk/"><img src="../../../io/overview/img/hero/sankey.png" style="width:100%; bottom:0px;"></a>
+<br>
+View <a href="input-output-sk/">Interactive Version</a><br><br>
+
+
 ### Sankey Charts
 
 [4 Interactive Sankey diagrams made in Python with Plotly.js](https://medium.com/plotly/4-interactive-sankey-diagram-made-in-python-3057b9ee8616)
