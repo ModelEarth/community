@@ -715,6 +715,8 @@ function loadMap1(dp) { // Also called by search-filters.js
 
     dp1.shortTitle = "Communities";
     //dp1.dataset = dual_map.custom_data_root + "communities/map-georgia-smart.csv";
+
+    console.log("dual-map.js loading /georgia-data/communities/map-georgia-smart.csv");
     dp1.dataset = "/georgia-data/communities/map-georgia-smart.csv";
     dp1.listInfo = "Includes Georgia Smart Community Projects";
     dp1.search = {"In Title": "title", "In Description": "description", "In Website URL": "website", "In Address": "address", "In City Name": "city", "In Zip Code" : "zip"};
