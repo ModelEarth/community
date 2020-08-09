@@ -56,7 +56,7 @@ Teams will collaborate using one or more of the following:
 
 
 <b>Data Backends (optional alternative to widgets)</b>
-- Census API (see our [sample Python](../info/#go=dataprep&view=mosaic&count=10)) and USEEIO API  
+- Census API (see our [sample Python](../info/#go=dataprep)) and USEEIO API  
 - [Google Sheets REST](https://neighborhood.org/editor)  
 - [Wazimap CensusReporter - DJango Python3](../../community/resources/censusreporter)  
 - Other collaboration platforms - Please review with judges in advance  
