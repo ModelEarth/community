@@ -1,11 +1,11 @@
 #### Join our Fall 2020 Hackathon
 <h1 class="h1-home">Sustainable Communities Web Challenge</h1>
 
-Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators for close to 400 industries. [Learn More and Register](challenge/)   
+Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries. [Learn&nbsp;More&nbsp;and&nbsp;Register](challenge/)   
 
 ##Web Challenge Project Areas
 
-### HTML and JavaScript/JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
+### HTML and JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
 1. Embed and customize chart displays using the [EE Input-Output widgets](https://modelearth.github.io/io/charts)  
 
@@ -22,10 +22,15 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 1. Update CSV files on employment and industries for D3 charts using [Census industry data](industries) and [income by zipcode (zcta)](prep/all)<!--[projections](prep/regression/)-->.  
 
-1. Display demographic data using [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) API or Census API or USEEIO API.
+1. Work with our data team to choose a [JAMstack Editor](https://headlesscms.org/) to edit CSV files directly on GitHub using social logins. 
 
-1. Use a [JAMstack Editor](https://headlesscms.org/) to edit content on GitHub. 
-And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than<!--the point-to-point nature of--> REST endpoints.  
+<!--
+And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
+-->
+
+<!--
+1. Display demographic data using [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) API or Census API or USEEIO API.
+-->
 
 ### D3 Visualizations and Leaflet Maps
 
@@ -34,12 +39,14 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 1. [Map starters](start) and [Leaflet route maps](start/routing/) for driving tours and deliveries.
 
 
-### API and Python
+### Python and R-Language
+
+1. Create and update scripts that pull data and pre-process into csv and json files.  
 
 1. Work with the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) and update [Input-Output charts](https://github.com/USEPA/useeio-widgets). Widgets are loaded from JSON files generated from 
 our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) on AWS <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
 
-1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies
+1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/)
 
 ### Google REST App
 
