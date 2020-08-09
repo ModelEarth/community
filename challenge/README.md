@@ -13,7 +13,10 @@ View [Industry Evaluator](../info/) and [Embeddable IO Charts](https://modeleart
 
 <h3>Join our Community Web Challenge - August&nbsp;to&nbsp;October&nbsp;25,&nbsp;2020</h3> 
 
-Form a team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world!  Possible projects include updates to Wazimap Census Reporter which is used in Africa and India.  
+Form a team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world!  
+<!--
+Possible projects include updates to Wazimap Census Reporter which is used in Africa and India.  
+-->
 <a href="../" style="white-space: nowrap;">Learn more about projects</a>.  
 
 <h3>$10,000 in Challenge Awards</h3> 

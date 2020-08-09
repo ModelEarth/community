@@ -45,6 +45,7 @@ We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=f
 Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
 -->
 
+<!--
 Teams will collaborate using one or more of the following:  
 
 <b>Detached Frontends</b>
@@ -53,15 +54,16 @@ Teams will collaborate using one or more of the following:
 
 - Extensions of [datausa.io](https://datausa.io) - Python, React and D3
 - Other detached frontends  
+-->
 
-
+<!--
 <b>Data Backends (optional alternative to widgets)</b>
 - Census API (see our [sample Python](../info/#go=dataprep)) and USEEIO API  
 - [Google Sheets REST](https://neighborhood.org/editor)  
 - [Wazimap CensusReporter - DJango Python3](../../community/resources/censusreporter)  
-- Other collaboration platforms - Please review with judges in advance  
+- Other collaboration platforms - Please review with judges in advance 
 
-<!--
+
 - [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
 -->
 
@@ -87,7 +89,7 @@ Teams will collaborate using one or more of the following:
 - Utilizes USEEIO Widgets and/or USEEIO APIs effectively  
 - Installs easily using documented steps       
 - Static frontend may be hosted for free using GitHub    
-- Cost analysis accurately provides affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->    
+- Free or very affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->    
 <br>
 
 <a href="challenge/registration/">Register to Participate</a> | 
