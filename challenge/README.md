@@ -52,9 +52,9 @@ Get a head start by integrating your team's project in the National Day of Civic
 [Contact Us](../resources/input/) to brainstorm ideas for your team project.  
 
 
-<b>Saturday, October 17 - 11 AM to Noon</b> - Virtual Progress Updates on Zoom   
+<b>Saturday, October 17 - 11 AM to noon</b> - Virtual Progress Updates on Zoom   
 
-<b>Saturday, October 24 - 11 AM to Noon</b> - Final Round, Integrations 
+<b>Saturday, October 24 - 11 AM to noon</b> - Final Round, Integrations 
 
 <b>Sunday, October 25 - 2 PM to 4 PM</b> - Zoom Presentations and Awards  
 
