@@ -1,15 +1,15 @@
-#### Join our Fall 2020 Hackathon
-<h1 class="h1-home">Sustainable Communities Web Challenge</h1>
+#### [Join our Fall 2020 Web Challenge](challenge)
+<h1 class="h1-home">Volunteer Projects</h1>
 
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries. [Learn&nbsp;More&nbsp;and&nbsp;Register](challenge/)   
 
-##Web Challenge Project Areas
+##Coding Areas
 
 ### HTML and JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
 1. Embed and customize chart displays using the [EE Input-Output widgets](https://modelearth.github.io/io/charts)  
 
-1. Build location profiles using the [Industry Impact Evaluator](info/#view=mosaic&count=20).<!-- Goods & Services Reports - communities with environmental impacts of new technologies -->  
+1. Build location profiles using the [Industry Impact Evaluator](info).<!-- Goods & Services Reports - communities with environmental impacts of new technologies -->  
 
 1. Add to [map search filters](impact/), apply [industry icons](start/dataset/icons/) to charts, or integrate [map samples](start/maps).   
 
@@ -51,6 +51,53 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 ### Google REST App
 
 1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories, like these [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/) maps. This was a popular approach during the initial Covid19 response, however a process allowing businesses to return and update specific Google rows associated to their social login through a webpage is sorely lacking.  
+
+<br>
+
+
+# Specific Project Tasks
+
+Maintain a list your time contribution to increase your award potential!  
+[Let us know](resources/input/) what you're working on to avoid overlaps.  
+
+## Bubble Chart
+
+D3 - [View Widget](../input-output/bubbles/) 
+
+- Modify so popups still appear when containing div to be relative. 
+- Scale to size of containing div during browser resize.
+
+## Industry-List plus Mosaic Widget
+
+React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
+
+- Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
+- Show list of selected sectors under "X selected" tab
+- As default, turn-off movement of selected checkbox. Duplicate in X selected tab instead.
+- Display parent categories that open to reveal subcategories
+- Display the quantity selected after each parent category title in parenthesis
+- Custom sets could use the same csv/json format.
+
+- Toggle matrices using a dropdown menu to select a matrix
+- Show all sector rows without pagination - DONE
+- List by parent category.
+- Include a 3-dot menu with the options: Sort alphabetical, Change matrix, Show values 
+- Show values like [sortable example](https://model.earth/community/start/dataset/sortable.html)
+- Include verticle column name like [dataset example](https://model.earth/community/start/dataset/)
+- Highlight an "Action" menu when checkboxes are clicked
+- Actions could include: Display on map, Display bar chart, Generate Report
+- Drive industry map with hash values from heatmap.
+
+
+## Impact Bar Chart:
+
+React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
+
+- Update for use with Darkly bootstrap, similar to [bubble chart](../input-output/bubbles) - click bubble to view impact chart.  
+- Display sector name over each bar.  
+- Display description of each indicator
+
+
 
 
 
@@ -97,48 +144,4 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 -->
 
 <br><br>
-
-
-# Choose Updates to Tackle
-
-Maintain a list your time contribution to increase your award potential!  
-[Let us know](resources/input/) what you're working on to avoid overlaps.  
-
-## Bubble Chart
-
-D3 - [View Widget](../input-output/bubbles/) 
-
-- Modify so popups still appear when containing div to be relative. 
-- Scale to size of containing div during browser resize.
-
-## Industry-List plus Mosaic Widget
-
-React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
-
-- Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
-- Show list of selected sectors under "X selected" tab
-- As default, turn-off movement of selected checkbox. Duplicate in X selected tab instead.
-- Display parent categories that open to reveal subcategories
-- Display the quantity selected after each parent category title in parenthesis
-- Custom sets could use the same csv/json format.
-
-- Toggle matrices using a dropdown menu to select a matrix
-- Show all sector rows without pagination - DONE
-- List by parent category.
-- Include a 3-dot menu with the options: Sort alphabetical, Change matrix, Show values 
-- Show values like [sortable example](https://model.earth/community/start/dataset/sortable.html)
-- Include verticle column name like [dataset example](https://model.earth/community/start/dataset/)
-- Highlight an "Action" menu when checkboxes are clicked
-- Actions could include: Display on map, Display bar chart, Generate Report
-- Drive industry map with hash values from heatmap.
-
-
-## Impact Bar Chart:
-
-React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
-
-- Update for use with Darkly bootstrap, similar to [bubble chart](../input-output/bubbles) - click bubble to view impact chart.  
-- Display sector name over each bar.  
-- Display description of each indicator
-
 

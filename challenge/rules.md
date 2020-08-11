@@ -26,7 +26,7 @@ Slack #epa
 -->
  
 
-[Community Profiles - Industry Evaluator](info/#view=mosaic&count=30)  
+[Community Profiles - Industry Evaluator](info/)  
 [Starter samples](start/) <!--and [datasets](https://github.com/modelearth/community) -->and 
 [Embeddable IO Charts](../io/charts) which use static JSON files generated from the [USEEIO&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
 

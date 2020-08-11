@@ -136,7 +136,7 @@ $(document).ready(function(){
 	 		$('#logoholder').css('background-position', 'center');
 
 	 		$('#state_select').on('change', function() {
-			    window.location = "/community/info/?state=" + this.value + "#show=mockup";
+			    window.location = "/localsite/info/?state=" + this.value + "#show=mockup";
 			});
 	 		$('.showMenu').click(function () {
 				//$(".showMenu").hide();
