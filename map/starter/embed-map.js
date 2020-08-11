@@ -1348,7 +1348,7 @@ function jsLoaded(root) {
 	loadScript(root + '/community/js/common/stupidtable.js', function(results) {});
 	if (location.host.indexOf('localhost') >= 0) {
 		// Causing map points to shift right, maybe due to later loading.
-		//loadScript(root + '/community/js/common/navigation.js');
+		//loadScript(root + '/localsite/js/navigation.js');
 	}
 }
 function leafletLoaded(root, count) {

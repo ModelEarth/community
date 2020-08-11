@@ -1,6 +1,6 @@
 # Complete ZIP Code Industry Detail Files 
 
-Additional data download work resides in [community/info/](../info/#go=dataprep), [modelearth/industries](https://github.com/modelearth/industries) and [community/info/RStudio](../info/RStudio)  
+Additional data download work resides in [localsite/info/](../info/#go=dataprep), [modelearth/industries](https://github.com/modelearth/industries) and [community/info/RStudio](../info/RStudio)  
 <br>
 
 <b>Industry Employment Levels</b><br>
