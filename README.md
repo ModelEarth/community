@@ -97,3 +97,48 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 -->
 
 <br><br>
+
+
+# Choose Updates to Tackle
+
+Maintain a list your time contribution to increase your award potential!  
+[Let us know](resources/input/) what you're working on to avoid overlaps.  
+
+## Bubble Chart
+
+D3 - [View Widget](../input-output/bubbles/) 
+
+- Modify so popups still appear when containing div to be relative. 
+- Scale to size of containing div during browser resize.
+
+## Industry-List plus Mosaic Widget
+
+React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
+
+- Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
+- Show list of selected sectors under "X selected" tab
+- As default, turn-off movement of selected checkbox. Duplicate in X selected tab instead.
+- Display parent categories that open to reveal subcategories
+- Display the quantity selected after each parent category title in parenthesis
+- Custom sets could use the same csv/json format.
+
+- Toggle matrices using a dropdown menu to select a matrix
+- Show all sector rows without pagination - DONE
+- List by parent category.
+- Include a 3-dot menu with the options: Sort alphabetical, Change matrix, Show values 
+- Show values like [sortable example](https://model.earth/community/start/dataset/sortable.html)
+- Include verticle column name like [dataset example](https://model.earth/community/start/dataset/)
+- Highlight an "Action" menu when checkboxes are clicked
+- Actions could include: Display on map, Display bar chart, Generate Report
+- Drive industry map with hash values from heatmap.
+
+
+## Impact Bar Chart:
+
+React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
+
+- Update for use with Darkly bootstrap, similar to [bubble chart](../input-output/bubbles) - click bubble to view impact chart.  
+- Display sector name over each bar.  
+- Display description of each indicator
+
+
