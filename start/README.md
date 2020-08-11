@@ -10,7 +10,7 @@ Stand-alone examples of formatting and displaying community data.
 ## [3. Display a dataset](dataset)
 ## [4. Chart starter ideas](charts)  
 ## [5. Map Samples](maps)  
-## [6. API - R Language and Python](../resources/useeio) 
+## [6. USEEIO API](https://github.com/usepa/useeio_api/) - [Python and R](../resources/useeio) 
 
 <br>
 

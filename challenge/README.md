@@ -2,22 +2,24 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-We're looking for communities, companies and coders to participate in implementing innovative sustainability apps created in partnership with the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
-<!--
+Form a team or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world!  
+
+We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.<br><br>
+
 We'll be using the new environmentally-extended input-output model called 
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
+
+<!--
+	We're looking for communities, companies and coders to participate in implementing innovative sustainability apps created in partnership with the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
 -->
-We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.<br>
-View [Industry Evaluator](../../localsite/info/) and [Embeddable IO Widgets](../../io/charts/) being developed.  
 
-
-<h3>Join our Sustainable Communities Web Challenge</h3> 
-
-Form a team with your organization or join an existing team for our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world!  
 <!--
 Possible projects include updates to Wazimap Census Reporter which is used in Africa and India.  
 -->
-<a href="../" style="white-space: nowrap;">Learn more about projects</a>.  
+<a href="../" style="white-space: nowrap;">Learn about Project Areas</a>  
+[View Community Profiles](../../localsite/info/)  
+[Embeddable IO Widgets](../../io/charts/)  
+
 
 ## $10,000 in Challenge Awards
 
@@ -64,11 +66,10 @@ During the National Day of Civic Hacking on Sept 21, teams will focus on integra
 
 
 <b>Project participants will explore</b>
-1. Goods and services each community produces (by county and zip)  
+1. Goods and services each community produces    
 2. The environmental impact of each community's top industries  
-3. Opportunities to conserve and reinvest under the impacts of Covid19
-4. How new technologies can change a community's impact  
-5. Ways communities are using and reusing materials to fuel net zero initiatives  
+3. How new technologies can change a community's impact  
+4. Ways communities are using and reusing materials to fuel net zero initiatives  
 
 <a href="registration/">Share your ideas</a> 
 for ways communities can use data and planning to be more resilient as they work toward becoming net zero. <!-- One to three page idea-sheets will be judged in May of 2020. Your input -->Your idea-sheets will help shape our Sustainable Community projects.   
@@ -87,4 +88,4 @@ https://databricks.com/blog/2020/04/22/announcing-spark-ai-summit-hackathon-for-
 
 ---
 <a href="registration/">Register to participate</a> | 
-<a href="../">Project details</a>  
+<a href="../">Project Areas</a>  
