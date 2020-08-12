@@ -57,7 +57,7 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 # Specific Project Tasks
 
-Maintain a list your time contribution to increase your award potential!  
+Maintain a list of your time contributions to increase your award potential!  
 [Let us know](resources/input/) what you're working on to avoid overlaps.  
 
 ## Bubble Chart

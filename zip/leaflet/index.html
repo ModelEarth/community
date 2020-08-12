@@ -149,7 +149,7 @@ body { position:relative; }
 <script type="text/javascript" src="DBSCAN/DBSCAN.js"></script>
 <script type="text/javascript" src="DBSCAN/compute_stat.js"></script>
 <script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="../../js/common/navigation.js"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js"></script>
 <link rel="stylesheet" href="../../../localsite/css/base.css" />
 <script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
 <!--
@@ -242,7 +242,7 @@ body { position:relative; }
                 </div>
                 <div style="font-size:12px; display:none" class='showOutputResponse'>
                     For recent work on industry levels,<br> 
-                    view the <a href="../../info/#view=mosaic&count=10">Industry Impact Evaluator</a>
+                    view the <a href="../../info/">Industry Impact Evaluator</a>
                 </div>
             </div>
           </div>
@@ -295,6 +295,7 @@ body { position:relative; }
             $(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
                 param = loadParams(location.search,location.hash); // Refresh param values when user changes URL after #.
                 if (param["columns"]) {
+                    console.log("Remove the prior topo layer");
                     map.removeLayer(geojsonLayer); // Remove the prior topo layer
                     loadDatasets(param["columns"]);
                 }
@@ -556,6 +557,7 @@ body { position:relative; }
                         }
 
                         //map.removeLayer(geojsonLayer); // Remove the prior topo layer
+                        console.log("assign geojsonLayer");
 
                         geojsonLayer = L.geoJson(cluster_data, {style:style, onEachFeature: onEachFeature}).addTo(map);
                         
