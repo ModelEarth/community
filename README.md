@@ -104,6 +104,12 @@ The Airbender categories have been added as Primary and Secondary columns in [LC
 
 Here’s an [Airbender API](https://last-airbender-api.herokuapp.com/) for relating the four “nation” categories to characters.  
 
+## Use of BEA commodities to estimate null industries
+
+Some industries have only establishment counts at both their state and county level (like Automobile Manufacturing).  The estimates for these missing industry values could be generated using the BEA commodity data with the crosswalk file.  
+
+As an example, there are 89 Georgia industries without any values documented in the industries_state13_naics6_0s.tsv file.  
+
 
 ##Data Integration
 
