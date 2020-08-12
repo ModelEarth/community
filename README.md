@@ -79,17 +79,15 @@ React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=5
 - Custom sets could use the same csv/json format.
 
 - Toggle matrices using a dropdown menu to select a matrix
-- Show all sector rows without pagination - DONE
 - List by parent category.
 - Include a 3-dot menu with the options: Sort alphabetical, Change matrix, Show values 
 - Show values like [sortable example](https://model.earth/community/start/dataset/sortable.html)
 - Include verticle column name like [dataset example](https://model.earth/community/start/dataset/)
 - Highlight an "Action" menu when checkboxes are clicked
 - Actions could include: Display on map, Display bar chart, Generate Report
-- Drive industry map with hash values from heatmap.
 
 
-## Impact Bar Chart:
+## Impact Bar Chart
 
 React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
@@ -98,7 +96,13 @@ React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=33411
 - Display description of each indicator
 
 
+## Last Airbender
 
+For potential use in an elementary school education interface, the EPA indicators could be organized by Air, Water, Land, and Fire (Energy), plus two additional categories: Prosperity (Economy) and Wellness (Health).  
+
+The Airbender categories have been added as Primary and Secondary columns in [LCIA_Indicator_sets.csv](../community-data/us/indicators/LCIA_Indicator_sets.csv) and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
+
+Here’s an [Airbender API](https://last-airbender-api.herokuapp.com/) for relating the four “nation” categories to characters.  
 
 
 ##Data Integration
