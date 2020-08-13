@@ -106,10 +106,9 @@ Here’s an [Airbender API](https://last-airbender-api.herokuapp.com/) for relat
 
 ## Use of BEA commodities to estimate null industries
 
-Some industries have only establishment counts at both their state and county level (like Automobile Manufacturing).  The estimates for these missing industry values could be generated using the BEA commodity data with the crosswalk file.  
+To protect the privacy of individual firms, the census omits payroll and empolyee count data for some industries at both the state and county level (like Automobile Manufacturing).  For Georgia, there are [89 industries](../community-data/us/state/ga/industries_state13_naics6_0s.tsv) with only the number of establishments available at both the county and state lever. 
 
-As an example, there are 89 Georgia industries without any values documented in the industries_state13_naics6_0s.tsv file.  
-
+The estimates for these omitted industry values could be generated using the state BEA commodity data with the crosswalk file, or an average from other states could be used (as long as each industry has at least one payroll value in another state).  
 
 ##Data Integration
 
