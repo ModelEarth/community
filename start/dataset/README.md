@@ -26,5 +26,5 @@ Final demand is in US dollars for each of the goods and services for the US in 2
 
 
 <div class="showGit">
-<a href="https://modelearth.github.io/community/start/dataset">View as webpage</a>
+<a href="https://model.earth/community/start/dataset">View as webpage</a>
 </div>

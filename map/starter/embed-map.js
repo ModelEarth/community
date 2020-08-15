@@ -1072,7 +1072,7 @@ strVar += "          <div>";
 strVar += "";
 strVar += "            <div style=\"margin-bottom:14px\">";
 strVar += "              <b style=\"font-size:16px\">About<\/b><br>";
-strVar += "              <a href=\"https:\/\/modelearth.github.io\/io\/charts\">Embeddable  charts<\/a> - ";
+strVar += "              <a href=\"https:\/\/model.earth\/io\/charts\">Embeddable  charts<\/a> - ";
 strVar += "              <a href=\".\/?show=pickup&design=1\">Design Ideas<\/a> - ";
 strVar += "              <a href=\".\/?show=suppliers\">C19 Logistics<\/a>";
 strVar += "            <\/div>";
@@ -1382,7 +1382,7 @@ function d3Loaded(root) {
 function lazyLoadFiles() {
 	let root = location.protocol + '//' + location.host;
 	if (location.host.indexOf('localhost') < 0) {
-		root = "https://modelearth.github.io";
+		root = "https://model.earth";
 	}
   loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
     jsLoaded(root);

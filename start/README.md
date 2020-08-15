@@ -2,7 +2,7 @@
 
 Stand-alone examples of formatting and displaying community data.  
 <div class="showGit">
-<a href="https://modelearth.github.io/community/start/">View as website</a>
+<a href="https://model.earth/community/start/">View as website</a>
 </div>
 
 ## [1. Start a local website](../../localsite/start)  

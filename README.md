@@ -7,7 +7,7 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 ### HTML and JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
-1. Embed and customize chart displays using the [EE Input-Output widgets](https://modelearth.github.io/io/charts)  
+1. Embed and customize chart displays using the [EE Input-Output widgets](https://model.earth/io/charts)  
 
 1. Build location profiles using the [Industry Impact Evaluator](info).<!-- Goods & Services Reports - communities with environmental impacts of new technologies -->  
 

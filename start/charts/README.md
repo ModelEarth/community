@@ -1,6 +1,6 @@
 # Chart Starters
 
-Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-widgets) which use [D3.js](https://github.com/d3/d3/wiki/Gallery) as their only dependency. [View&nbsp;examples](http://modelearth.github.io/io/charts/). 
+Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-widgets) which use [D3.js](https://github.com/d3/d3/wiki/Gallery) as their only dependency. [View&nbsp;examples](https://model.earth/io/charts/). 
 
 
 <b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>

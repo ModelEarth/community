@@ -593,8 +593,8 @@ function showCounties() {
 	//d3.csv("data/usa/GA/GAcounties.csv", function(error, myData) {
 
 	//d3.csv(dual_map.community_data_root() + "info/data/usa/GA/GAcounties.csv").then(function(myData,error) {
-	d3.csv("https://modelearth.github.io/community/info/data/usa/GA/GAcounties.csv").then(function(myData,error) {
-	//d3.csv("https://modelearth.github.io/georgia-data/counties/GAcounties.csv").then(function(myData,error) {
+	d3.csv("https://model.earth/community/info/data/usa/GA/GAcounties.csv").then(function(myData,error) {
+	//d3.csv("https://model.earth/georgia-data/counties/GAcounties.csv").then(function(myData,error) {
 	//d3.csv("https://neighborhood.org/georgia-data/counties/GAcounties.csv").then(function(myData,error) {
 		if (error) {
 			alert("error")

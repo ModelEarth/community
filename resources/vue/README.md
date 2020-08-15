@@ -1,6 +1,6 @@
 # Vue  
 
-<!-- https://modelearth.github.io/community/resources/vue/ -->
+<!-- https://model.earth/community/resources/vue/ -->
 
 Try this next: [Build a Vue App with Firebase Authentication and Database](https://blog.bitsrc.io/build-a-vue-app-with-firebase-authentication-and-database-e7d6816f79af)
 
