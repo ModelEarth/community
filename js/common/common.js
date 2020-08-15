@@ -16,7 +16,7 @@ var dual_map = dual_map || (function(){
             // or sendfeedback
             let root = location.protocol + '//' + location.host + '/community/';
             if (location.host.indexOf('localhost') < 0) {
-              root = "https://modelearth.github.io/community/";
+              root = "https://model.earth/community/";
             }
             return (root);
         },
