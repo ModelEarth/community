@@ -94,38 +94,7 @@
 }
 </style>
 
-<div class="earth" style="display:none;position:relative; background:#aaa"><!-- #dae8eb -->
-
-    <div class="local" style="float:right; padding:20px; clear:both; display:none">
-
-        <div id="greatestNeedsHolder" class="resultsHolder">
-          <div style="margin-bottom:10px;padding-top:0px">
-
-            <div style="margin-bottom:8px">Projections...</div>
-
-            <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
-            <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
-            <div style="clear:both"></div>
-          </div>
-        </div>
-        <br><br>
-
-      <script>
-        $('#zip').on("keypress", function(e) {
-          if (e.keyCode == 13) { // Enter hit
-            goZip();
-          }
-        });
-        function goZip() {
-          zip = $('#zip').val();
-          if (zip.length == 5) {
-            window.location='../zip/#zip=' + zip;
-          } else {
-            alert('Please enter a 5 digit zip.');
-          }
-        }
-      </script>
-    </div>
+<div class="georgia-hide" style="position:relative; background:#aaa"><!-- #dae8eb -->
 
     <!-- psd resides in smartdata -->
     <div style="background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; border:0px">

@@ -36,7 +36,7 @@ var dual_map = dual_map || (function(){
         },
         absolute_root : function() {
           // Curently only used for feedback form
-          let root = "https://map.georgia.org/community/"
+          let root = "https://model.earth/community/"
           return (root);
         }
     };
