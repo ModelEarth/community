@@ -10,7 +10,6 @@ body {
     padding-right: 10px;
     background-color: rgb(253, 253, 253);
     position: relative;
-    overflow: scroll;
 }
 #sidecolumnContent {
     padding: 24px;
@@ -18,8 +17,27 @@ body {
     line-height: 24px;
     width: 178px;
     font-size: 14px;
+    bottom:0;
+    top:100px;
+    z-index:1; /* allows border highlight to overlap adjacent content area. */
+}
 
-}  
+#sidecolumnContentScroll {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    right:24px;
+    left:24px;
+
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#sidecolumnContentScroll::-webkit-scrollbar {
+  display: none;
+}
+
 #sidecolumnContent a {
     display:block;
     color: #112e51;
@@ -45,10 +63,11 @@ body {
 }
 </style>
 
+<div id="logoholderside" class="logoholder" style="display:none; z-index:2"></div>
 
-<div id="sidecolumnContent" style="z-index:1"><!-- z-index:1 allows boarder highlight to overlap adjacent content area -->
+<div id="sidecolumnContent">
 
-<div id="logoholderside" class="logoholder" style="margin:-79px 0 20px -4px;"></div>
+<div id="sidecolumnContentScroll">
 
 <br>
 <b>About</b><br>
@@ -79,7 +98,10 @@ body {
 <a href="../community/start/">Get Started</a>
 <a href="../community/tools/#places">All the Places</a>
 <a href="../community/tools/#partners">Partners</a>
+<!--
 <a href="../community/interns/">Internships</a>
-
+-->
+<br><br>
+</div>
 </div>
 <!-- /nav.html -->
