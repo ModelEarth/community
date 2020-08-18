@@ -1,6 +1,15 @@
-# Complete ZIP Code Industry Detail Files 
+# Zip Code Project
 
-Additional data download work resides in [localsite/info/](../info/#go=dataprep), [modelearth/industries](https://github.com/modelearth/industries) and [community/info/RStudio](../info/RStudio)  
+1. Confirm that the the census county API for industries does not provide zipcode data.
+2. Pull zipcode data using the following:  
+
+
+## Complete ZIP Code Industry Detail Files 
+
+Additional data download work resides in:  
+[localsite/info/](../info/#go=dataprep)  
+[modelearth/industries](https://github.com/modelearth/industries)  
+[community/info/RStudio](../info/RStudio)  
 <br>
 
 <b>Industry Employment Levels</b><br>
