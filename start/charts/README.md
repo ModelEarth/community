@@ -4,9 +4,9 @@ Fork and modify the [embeddable USEEIO widgets](https://github.com/USEPA/useeio-
 
 
 <b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
-<a href="input-output-sk/"><img src="../../../io/overview/img/hero/sankey.png" style="width:100%; bottom:0px;"></a>
+<a href="sankey/"><img src="../../../io/overview/img/hero/sankey.png" style="width:100%; bottom:0px;"></a>
 <br>
-View <a href="input-output-sk/">Interactive Version</a><br><br>
+View <a href="sankey/">Interactive Version</a><br><br>
 
 
 ### Sankey Charts

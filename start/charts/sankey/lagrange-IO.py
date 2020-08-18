@@ -2,7 +2,7 @@ import json, os, requests
 import pandas as pd
 import numpy as np
 
-os.chdir('/Users/eloncha/Documents/GitHub/community/start/charts/input-output-sk')
+os.chdir('/Users/eloncha/Documents/GitHub/community/start/charts/sankey')
 '''api set-up
 '''
 base_url = 'https://smmtool.app.cloud.gov/api/'
