@@ -3,7 +3,22 @@
 
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries. [Learn&nbsp;More&nbsp;and&nbsp;Register](challenge/)   
 
-##Coding Areas
+## Broad Areas
+
+Teams that put a lot of effort into completing one of these areas in the months prior to the awards ceremony stands a very good chance of receiving a top award of $2,500, $1,500 or $1,000.
+
+A. Expand upon county-based results to provide zipcode-based results. Add zipcode demographics. (Python and D3)  
+B. Supply Chain using Sankey Charts (Python and D3, optionally React) - [Details](start/charts/sankey/)  
+C. Filling in gaps when only the number of establishments is provided at state level (Python)  
+D. Updates to D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info)  
+E. Updates for bioecomony and local economy inputs and new technology additions to USEEIO
+
+[Contact us](resources/input/) for additional details.  Document your team's work and time to help the judges award your contributions.  
+
+Compliment your work with specific coding area updates:  
+
+
+## Specific Coding Areas
 
 ### HTML and JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
