@@ -7,13 +7,13 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 Teams that put a lot of effort into completing one of these areas in the months prior to the awards ceremony stands a very good chance of receiving a top award of $2,500, $1,500 or $1,000.
 
-A. Expand upon county-based results to provide zipcode-based results. Add zipcode demographics. (Python and D3)  
+A. Expand upon [county-based results](../localsite/info/) to provide zipcode-based results. Add zipcode demographics. (Python and D3) - [Details](industries)  
 B. Supply Chain using Sankey Charts (Python and D3, optionally React) - [Details](start/charts/sankey/)  
-C. Filling in gaps when only the number of establishments is provided at state level (Python)  
-D. Updates to D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info)  
-E. Updates for bioecomony and local economy inputs and new technology additions to USEEIO
+C. Filling in gaps when only the number of establishments is provided at the state level (Python) - [Details](../localsite/info/data/)  
+D. Updates to D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
+E. Updates for bioecomony and local economy inputs and new technology additions to USEEIO - [Details](../io/naics/)
 
-[Contact us](resources/input/) for additional details.  Document your team's work and time to help the judges award your contributions.  
+[Contact us](resources/input/) for additional details and to avoid overlaps.  Document your team's times to help the judges award your contributions and as a basis for you to reward the team members who contribute the most.  
 
 Compliment your work with specific coding area updates:  
 
