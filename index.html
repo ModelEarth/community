@@ -25,6 +25,7 @@
 <script>
   loadMarkdown("README.md", "readmeDiv", "_parent");
   consoleLog("test")
+  // param.startTitle = "Model Earth"; // Trigger header
 </script>
 
 <style>
@@ -94,6 +95,12 @@
 <style>
   #sidecolumnContent {
     position: static !important;
+    float:left;
+  }
+  #sidecolumnContentScroll {
+    position: relative;
+    bottom:auto !important;
+    right:0 !important;
   }
 </style>
 <div id="sidecolumn"></div>
