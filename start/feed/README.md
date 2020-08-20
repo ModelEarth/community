@@ -1,6 +1,6 @@
-#Publish Your Data - Post Products and Reusable Items
+#Publish Your Inventory
 
-###Share your Inventory and Publish a Materials Wishlist
+###Share your Product Availability and Publish a Materials Wishlist
 
 [Send Us Links](add) to include your inventory of reusable, shared and recycled items and your wishlist of needed items.  
 If you don't have an existing server to host your files, we'll help you post your listings for free using GitHub.  
