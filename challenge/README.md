@@ -55,7 +55,7 @@ Get a head start by enrolling your team in the National Day of Civic Hacking and
 
 ### Sustainable Communities Challenge
 
-<b>Monday, September 21 - 11 AM to noon</b> - Virtual Kickoff on Zoom   
+<b>Monday, September 21 - 7 PM</b> - Virtual Kickoff on Zoom   
 
 <b>Saturday, October 24 - 11 AM to noon</b> - Final Round, Integrations 
 
