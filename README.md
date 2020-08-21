@@ -84,7 +84,7 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 ### Google REST App
 
-1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories, like these [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/) maps. A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to activate the row data of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or another time-intensive approach.
+1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories, like these [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/) maps. A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to activate the row data of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
 
 <br>
 
@@ -98,7 +98,7 @@ Maintain a list of your time contributions to increase your award potential!
 
 D3 - [View Widget](../input-output/bubbles/) 
 
-- Modify so popups still appear when containing div to be relative. 
+- Modify so popups still appear when the containing div is set to position:relative. 
 - Scale to size of containing div during browser resize.
 
 ## Industry-List plus Mosaic Widget
