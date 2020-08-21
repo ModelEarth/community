@@ -1076,7 +1076,7 @@ $(document).ready(function () {
   }
 
 	$('.sendfeedback').click(function(event) {
-	  window.open(dual_map.absolute_root() + "resources/input/",'_blank');
+	  window.open("/localsite/info/input/",'_blank');
 	  event.stopPropagation();
 	});
 
