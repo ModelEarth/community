@@ -7,22 +7,23 @@ Join our Slack Channel: [favorhood.slack.com](https://favorhood.slack.com/)
 
 ## Broad Areas
 
-Teams that develop one of these areas in the months prior to the awards have a good chance of earning a top award of $2,500, $1,500 or $1,000.
+Teams that contribute to these broad areas have a good chance of earning an award of 
+<span style="white-space: nowrap">$1,000, $1,500 or $2,500.</span>
 
 
 **A. Zipcode Demographics and Machine Learning**  
 - Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
-- Add zipcode demographics using . (Python and D3) 
+- Add zipcode demographics using [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html). (Python and D3) 
 
 
 **B. Supply Chain Inflow-Outflow Charts**  
 - Updates to Sankey D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
-- (Python and D3, optionally React) - [Details](start/charts/sankey/)  
+- Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](start/charts/sankey/)  
 
 
 **C. Industry Level Estimates for Counties and Zipcodes**  
-- Fill in gaps when only the number of establishments is provided at the state level  
-- (Python) - [Details](../localsite/info/data/)  
+- Fill in gaps when only the number of establishments is provided at the state level - [Details](../localsite/info/data/)  
+- Update Data Processing Script, work with Team A on zipcode industry data prep. (Python) 
  
 **D. USEEIO Updates for bioecomony and bioproducts**  
 - Local economy inputs and new technology additions to USEEIO - [Details](../io/naics/)
