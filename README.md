@@ -3,22 +3,37 @@
 
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries. [Learn&nbsp;More&nbsp;and&nbsp;Register](challenge/)   
 
+Join our Slack Channel: [favorhood.slack.com](https://favorhood.slack.com/)  
+
 ## Broad Areas
 
-Teams that put a lot of effort into completing one of these areas in the months prior to the awards ceremony stands a very good chance of receiving a top award of $2,500, $1,500 or $1,000.
+Teams that develop one of these areas in the months prior to the awards have a good chance of earning a top award of $2,500, $1,500 or $1,000.
 
-A. Expand upon [county-based results](../localsite/info/) to provide zipcode-based results. Add zipcode demographics. (Python and D3) - [Details](industries)  
-B. Supply Chain using Sankey Charts (Python and D3, optionally React) - [Details](start/charts/sankey/)  
-C. Filling in gaps when only the number of establishments is provided at the state level (Python) - [Details](../localsite/info/data/)  
-D. Updates to D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
-E. Updates for bioecomony and local economy inputs and new technology additions to USEEIO - [Details](../io/naics/)
+
+**A. Zipcode Demographics and Machine Learning**  
+- Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
+- Add zipcode demographics using . (Python and D3) 
+
+
+**B. Supply Chain Inflow-Outflow Charts**  
+- Updates to Sankey D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
+- (Python and D3, optionally React) - [Details](start/charts/sankey/)  
+
+
+**C. Industry Level Estimates for Counties and Zipcodes**  
+- Fill in gaps when only the number of establishments is provided at the state level  
+- (Python) - [Details](../localsite/info/data/)  
+ 
+**D. USEEIO Updates for bioecomony and bioproducts**  
+- Local economy inputs and new technology additions to USEEIO - [Details](../io/naics/)
 
 [Contact us](resources/input/) for additional details and to avoid overlaps.  Document your team's times to help the judges award your contributions and as a basis for you to reward the team members who contribute the most.  
 
-Compliment your work with specific coding area updates:  
 
 
 ## Specific Coding Areas
+
+Compliment broad areas above with specific coding area updates.  
 
 ### HTML and JQuery - <a href="https://jamstack.org">JAM Stack Development</a>
 
