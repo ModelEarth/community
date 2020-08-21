@@ -46,7 +46,7 @@ The implementation portion will be alocated based on pitches by all teams and wi
 Form your team in late summer and early fall. 
 Participate in an upcoming [Code for Atlanta zoom&nbsp;meetup](https://www.meetup.com/codeforatlanta/) to narrow in on your team's project area.  
 
-<b>Monday, September 21</b> - <a href="https://www.codeforamerica.org/events/national-day-of-civic-hacking" target="national">National Day of Civic Hacking</a>   
+<b>Saturday, September 12</b> - <a href="https://www.codeforamerica.org/events/national-day-of-civic-hacking" target="national">National Day of Civic Hacking</a>   
 
 Get a head start by integrating your team's project in the National Day of Civic Hacking.  
 [Contact Us](../resources/input/) to brainstorm ideas for your team project.  
