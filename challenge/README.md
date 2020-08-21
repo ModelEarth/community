@@ -48,11 +48,14 @@ Participate in an upcoming [Code for Atlanta zoom&nbsp;meetup](https://www.meetu
 
 <b>Saturday, September 12</b> - <a href="https://www.codeforamerica.org/events/national-day-of-civic-hacking" target="national">National Day of Civic Hacking</a>   
 
-Get a head start by integrating your team's project in the National Day of Civic Hacking.  
+Get a head start by enrolling your team in the National Day of Civic Hacking and help us [bring Social Safety Net Programs online](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
+<!--
 [Contact Us](../resources/input/) to brainstorm ideas for your team project.  
+-->
 
+### Sustainable Communities Challenge
 
-<b>Saturday, October 17 - 11 AM to noon</b> - Virtual Progress Updates on Zoom   
+<b>Monday, September 21 - 11 AM to noon</b> - Virtual Kickoff on Zoom   
 
 <b>Saturday, October 24 - 11 AM to noon</b> - Final Round, Integrations 
 
