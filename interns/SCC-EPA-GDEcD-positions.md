@@ -4,7 +4,7 @@
 
 ## Summer Internships - Programming and Data Science
 
-We've filled our intern positions at Georgia Tech and would like to hear from PhD students working at other Georgia universities who are interested in helping to develop the USEEIO model using R-Language, Python and JavaScript.  <a href="../resources/input/">Send Your Input</a> and <a href="../challenge" target="gaother">Register for Web Challenge</a>. 
+We've filled our intern positions at Georgia Tech and would like to hear from PhD students working at other Georgia universities who are interested in helping to develop the USEEIO model using R-Language, Python and JavaScript.  <a href="../../localsite/info/input/">Send Your Input</a> and <a href="../challenge" target="gaother">Register for Web Challenge</a>. 
 
 Project interns will develop sustainability tools with the US Environmental Protection Agency, the Georgia Dept of Economic Development (GDEcD), and Georgia communities
 as part of the [Regional Sustainability and Environmental Sciences Research Program](https://www.epa.gov/research/regional-sustainability-and-environmental-sciences-research-program-reses)
