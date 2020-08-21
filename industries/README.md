@@ -1,7 +1,7 @@
 # Zip Code Project
 
 1. Confirm that the the census county API for industries does not provide zipcode data.
-2. Pull zipcode data using BEA spreadsheet files (or API if available).  
+2. Pull zipcode data using BEA spreadsheet files as documented below (or use an API if available).  
 3. Combine with [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html) demographics data using Python.    
 
 To do: Integrate with older [prep all](../prep/all/) to prepare estimates for industries by zip code.  
