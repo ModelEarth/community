@@ -28,6 +28,9 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 **D. USEEIO Updates for bioecomony and bioproducts**  
 - Local economy inputs and new technology additions to USEEIO - [Details](../io/naics/)
 
+**E. Google Sheet Crowdsource Editor**
+- A REST process allowing editors to return and update their own row contributions. (see below)  
+
 [Contact us](resources/input/) for additional details and to avoid overlaps.  Document your team's times to help the judges award your contributions and as a basis for you to reward the team members who contribute the most.  
 
 
@@ -81,7 +84,7 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 ### Google REST App
 
-1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories, like these [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/) maps. This was a popular approach during the initial Covid19 response, however a process allowing businesses to return and update specific Google rows associated to their social login through a webpage is sorely lacking.  
+1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories, like these [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/) maps. A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to activate the row data of other contributors. The set-up needs to take only a minute, without requiring the use of Zapier or other approaches requiring a lot of configuration steps to activate a Google Sheet for collaborative editing based on social logins.
 
 <br>
 
