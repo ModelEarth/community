@@ -10,9 +10,9 @@ Work in our [Wazimap Fork of Census Reporter]( https://github.com/modelearth/waz
 Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
 **Future Projects:**  
-2. Add ability to select country to toggle to the [US API](https://github.com/censusreporter/census-api) from [Census Report repo](https://github.com/censusreporter/censusreporter).  
-3. Add [Environmentally-Enabled IO Charts](../../../io/charts/)  
-4. Merge work into original Census Reporter repo   
+1. Add ability to select country to toggle to the [US API](https://github.com/censusreporter/census-api) from [Census Report repo](https://github.com/censusreporter/censusreporter).  
+2. Add [Environmentally-Enabled IO Charts](../../../io/charts/)  
+3. Create a unified Census Reporter repo that moves US version to Python 3.*   
 
 
 ## Virtual Environment
