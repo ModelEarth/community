@@ -3,7 +3,7 @@
 
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries. [Learn&nbsp;More&nbsp;and&nbsp;Register](challenge/)   
 
-Join our Slack Channel: [favorhood.slack.com](https://favorhood.slack.com/)  
+Join our Slack Channel: [favorhood.slack.com](https://favorhood.com/)  
 
 ## Broad Areas
 
@@ -62,9 +62,6 @@ Compliment broad areas above with specific coding area updates.
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
 -->
 
-<!--
-1. Display demographic data using [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) API or Census API or USEEIO API.
--->
 
 ### D3 Visualizations and Leaflet Maps
 
@@ -81,6 +78,8 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) on AWS <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
 
 1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/)
+
+1. Modernize [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) by staring with Python 3.* Wazimap fork used in Africa and India. Populate database using most recent US Census API. [Our notes](resources/censusreporter)
 
 ### Google REST App
 
@@ -100,6 +99,8 @@ D3 - [View Widget](../input-output/bubbles/)
 
 - Modify so popups still appear when the containing div is set to position:relative. 
 - Scale to size of containing div during browser resize.
+- Set the default bubble color to red for more pop.
+- Omit red from the scale when other [bubbles are highlighted](../localsite/info/)
 
 ## Industry-List plus Mosaic Widget
 

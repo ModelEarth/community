@@ -4,7 +4,7 @@
 
 Form a team, join an existing team or compete individually in our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world!  
 
-Join our Slack Channel: [favorhood.slack.com](https://favorhood.slack.com/)  
+Join our Slack Channel: [favorhood.slack.com](https://favorhood.com/)  
 
 We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.  
 
@@ -37,7 +37,7 @@ Honorable mention 2: $500
 Implementation project 1: $2,000  
 Implementation project 2: $2,000  
 
-The implementation portion will be alocated based on pitches by all teams and will be awarded upon project completion after the initial challenge.  
+The implementation portion will be allocated based on pitches from teams after the award recipients are named.  Implementation projects will be distributed upon project completion within 3 months after the challenge.  
 
 
 <a href="registration/">Register to participate</a>  
