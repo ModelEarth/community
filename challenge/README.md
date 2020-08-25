@@ -1,6 +1,6 @@
 <!-- MOVED TO Community/Challenge/README.md -->
 
-<h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
+<h1 style="font-weight:300"><span style="white-space:nowrap">2020 Web Challenge</span></h1>
 
 Form a team, join an existing team or compete individually in our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world!  
 
