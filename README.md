@@ -11,7 +11,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 <span style="white-space: nowrap">$1,000, $1,500 or $2,500.</span>
 
 
-**A. Zipcode Demographics and Machine Learning**  
+**A. Zipcode Demographics, Industries, Impacts and Machine Learning**  
 - Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
 - Add zipcode demographics using [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html). (Python and D3) 
 

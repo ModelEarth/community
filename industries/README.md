@@ -1,22 +1,24 @@
-# Zip Code Project
+# Industries by Zip Code (ZCTA)
 
-1. Confirm that the the census county API for industries does not provide zipcode data.
-2. Pull zipcode data using BEA spreadsheet files as documented below (or use an API if available).  
-3. Combine with [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html) demographics data using Python.    
+Use the [ZIP Codes Business Patterns (ZBP) API](https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html) and create a new Python script similar to our [BEA County API script](../../localsite/info/data/) that pre-processes county industry levels while filling in gaps using state totals. Both counties and zip codes will be displayed in the [info page](../info/).  Here's an [industry map clustering sample](../../community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50).  
 
-To do: Integrate with older [prep all](../prep/all/) to prepare estimates for industries by zip code.  
+Using Python, combine with [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html) demographics data, or pull from another source.    
 
-## Complete ZIP Code Industry Detail Files 
+Here's an older [prep all](../prep/all/) script with industries by zip code from spreadsheets with a random forest applied. 
 
 Additional data download work resides in:  
-[localsite/info/](../info/#go=dataprep)  
-[modelearth/industries](https://github.com/modelearth/industries)  
 [community/info/RStudio](../info/RStudio)  
 <br>
 
+
+
+## Older - ZIP Code Industries from BEA Spreadsheets
+
+
+
 <b>Industry Employment Levels</b><br>
 
-The most recent script resides in prep/industries/source
+Script resides in prep/industries/source
 
 To run:  
 sqlite3 industry.db < industry.SQL.txt > industry.OUT.txt  
@@ -83,22 +85,4 @@ Example of data format:
 
 
 
-A good resource to make use of later. This is not by gdp by sector, just total per county, but still this can help us reconciling Census CBP data with the BEA IO data
-
-﻿
-# BEA GDP by county
-
-https://www.bea.gov/system/files/2019-12/One_Page_Methodology_v6.pdf
-
-https://apps.bea.gov/scb/2020/03-march/0320-county-level-gdp.htm Detailed methodology
-
-https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas Main page
-
- 
-
- 
-
-This county-level data may be of interest as well.
-
-https://www.bea.gov/data/income-saving/personal-income-county-metro-and-other-areas
 
