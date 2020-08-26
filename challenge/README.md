@@ -2,9 +2,10 @@
 
 <h1 style="font-weight:300"><span style="white-space:nowrap">2020 Web Challenge</span></h1>
 
-Form a team, join an existing team or compete individually in our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent">Code for America</a> You can compete from anywhere in the world!  
+Form a team, join an existing team or compete individually in our 2020 virtual event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a> You can compete from anywhere in the world!  
 
-Join our Slack Channel: [favorhood.slack.com](https://favorhood.com/)  
+<b>Slack Workspace:</b> model-earth.slack.com - 
+<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)  
 
 We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.  
 
