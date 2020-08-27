@@ -4,7 +4,7 @@
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries. [Learn&nbsp;More&nbsp;and&nbsp;Register](challenge/)   
 
 <b>Slack Workspace:</b> model-earth.slack.com - 
-<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)  
+<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Slack App</a> / [Open in Browser](https://model-earth.slack.com/)  
 
 ## Broad Areas
 
