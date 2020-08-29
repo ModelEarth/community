@@ -1,0 +1,49 @@
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/helix/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/helix/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/helix/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/helix/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# load bash_profile when opening terminal, now that zsh is default for colors, etc.
+if [ -f ~/.bash_profile ]; then 
+    . ~/.bash_profile;
+fi
+
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# pipx
+export PATH="~/.local/bin:$PATH"
+
+# poetry
+export PATH="$HOME/.poetry/bin:$PATH"
+
+
+### Add these next lines to protect your system python from
+### polution from 3rd-party packages
+
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+ 
+# commands to override pip restriction above.
+# use `gpip` or `gpip3` to force installation of
+# a package in the global python environment
+# Never do this! It is just an escape hatch.
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
+gpip3(){
+   PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
+}

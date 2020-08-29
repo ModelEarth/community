@@ -22,11 +22,14 @@ Venv and Django with Postgres
 
 ### Mac Users
 
+
+<!--
 [You may need to make Python3 the default for Mac](virtualenv-troubleshooting.html) - Install a user copy of Python3 using bash, then change your default from Python2 to Python3.   
 
 
 You may want to use [virtualenv](virtualenv.html) - option for use with Python 2 virtual environment.     
 
+-->
 
 To see the full range of options, run the following command:  
 
@@ -34,6 +37,67 @@ To see the full range of options, run the following command:
 
 More here: [Venv command (pythonise.com)](https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command)
 
+
+
+Source for following: [Definitive guide to python on Mac OSX](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0)  
+
+
+ ### Let's add:  
+
+ **pyenv** for python version management and  
+ **poetry** for python package/venv management  
+
+
+<!-- I'm using xcode, but included this to note the need to change .bash_profile to .zshrc -->
+
+If you chose not to install Xcode, you’ll need to add the SDKROOT environment variable to your shell:
+
+	echo "export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk" >> ~/.bash_profile
+
+If using zsh, change the end of that last command from ~/.bash_profile to ~/.zshrc .
+
+	echo "export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk" >> ~/.zshrc
+
+
+Install pyenv:
+
+	brew install pyenv
+
+Add pyenv to your shell:
+
+	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+
+If using zsh, change the end of that last command from ~/.bash_profile to ~/.zshrc
+
+	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+
+(Optional) You can also <code>brew install pyenv-virtualenv</code> to add virtualenv support to pyenv, but it’s not required since most of the virtualenv work you’ll do with poetry after we install it later. Some people like the pyenv-virtualenv support anyway.  
+
+For the next step, see the [definitive guide](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0) script for installing Python as a safety net. <!-- skipped because I'd already done this -->  Include python 2.7 <!-- might need this -->
+
+	python -V
+
+Pick a version, then set it as the global python version:
+
+	pyenv global 3.7.6
+
+### Install poetry
+
+Why you should use poetry:  
+Obsoletes virtualenv, virtualenvwrapper, pipenv, setup.py, requirements.txt, and more.
+
+
+\~/ translates to your user’s home directory
+
+
+
+My .bash_profile contains:
+
+	# aliases
+	alias cd..="cd .."
+	alias l="ls -al"
+	alias lp="ls -p"
+	alias h=history
 
 ## Wazimap Census Reporter (Setup)
 
