@@ -41,9 +41,6 @@ Implementation project 2: $2,000
 The implementation portion will be allocated based on pitches from teams after the award recipients are named.  Implementation projects will be distributed upon project completion within 3 months after the challenge.  
 
 
-<a href="registration/">Register to participate</a>  
-
-
 ## Schedule
 
 Form your team in late summer and early fall. 
@@ -89,6 +86,9 @@ Get an early start by competing in the DataBricks Hackathon
 https://databricks.com/blog/2020/04/22/announcing-spark-ai-summit-hackathon-for-social-good.html?utm_source=databricks&utm_medium=home&utm_campaign=undefined&utm_content=undefined&utm_offer=undefined&utm_keyword=undefined&
 -->
 
----
-<a href="registration/">Register to participate</a> | 
-<a href="../">Project Areas</a>  
+
+<div style="margin-top:20px">
+<a href="registration/" class="btn btn-success">Register to participate</a>
+<a href="../" class="btn btn-warning">View Project Areas</a>
+</div>
+
