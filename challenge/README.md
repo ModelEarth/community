@@ -25,7 +25,7 @@ Possible projects include updates to Wazimap Census Reporter which is used in Af
 <a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop App</a>
 </div>
 
-<div style="margin-top:12px"></div>
+<div style="margin-top:16px"></div>
 <b>Slack Workspace:</b> model-earth.slack.com - 
 <a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)  
 
