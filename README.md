@@ -1,12 +1,21 @@
-#### [Join our Fall 2020 Web Challenge](challenge)
-<h1 class="h1-home">Project Areas</h1>
+<h1 class="h1-home">Join our Fall 2020 Web Challenge</h1>
 
-Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries. [Learn&nbsp;More&nbsp;and&nbsp;Register](challenge/)   
+Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries.  
 
-<b>Slack Workspace:</b> model-earth.slack.com - 
-<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Slack App</a> / [Open in Browser](https://model-earth.slack.com/)  
+<b>Slack Workspace:</b> [model-earth.slack.com](https://model-earth.slack.com/) - Register Online first to be added to Slack.   
 
-## Broad Areas
+
+<div>
+
+<a href="challenge/" class="btn btn-primary">Learn More</a>
+
+<a href="challenge/registration/" class="btn btn-success">Register Online</a>
+
+<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop</a>
+
+</div>
+
+## Project Areas
 
 Teams that contribute to these broad areas have a good chance of earning an award of 
 <span style="white-space: nowrap">$1,000, $1,500 or $2,500.</span>
@@ -83,9 +92,15 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 1. Modernize [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) by staring with Python 3.* Wazimap fork used in Africa and India. Populate database using most recent US Census API. [Our notes](resources/censusreporter)
 
+### Microsoft .NET
+
+Add USEEIO widgets to [.NET Environmental Education tools](../setup/) for GEEP partner states and countries.  
+
 ### Google REST App
 
 1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourced updated - needs a lot of help. Code for Atlanta Brigades often use Google Sheets to maintain directories, like these [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/) maps. A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to activate the row data of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
+
+
 
 <br>
 
@@ -191,3 +206,14 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 <br><br>
 
+<div>
+
+<a href="challenge/" class="btn btn-primary">Learn More</a>
+
+<a href="challenge/registration/" class="btn btn-success">Register Online</a>
+
+<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop</a>
+
+</div>
+
+<br><br>
