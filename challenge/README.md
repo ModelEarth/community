@@ -23,7 +23,9 @@ Possible projects include updates to Wazimap Census Reporter which is used in Af
 <a href="registration/" class="btn btn-success">Register to participate</a>
 <a href="../" class="btn btn-warning">View Project Areas</a>
 <a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop App</a>
-</div>
+</div><!-- CSE 6242
+https://app.slack.com/client/T8L2KN1AP/C8L4VC44A/thread/C8L4VC44A-1598213938.153700
+-->
 
 <div style="margin-top:16px"></div>
 <b>Slack Workspace:</b> model-earth.slack.com <!--- 
