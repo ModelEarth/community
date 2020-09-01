@@ -9,7 +9,7 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 <div>
 
-<a href="challenge/" class="btn btn-primary">Learn More</a>
+<a href="challenge/" class="btn btn-primary">Schedule & Rules</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
@@ -207,7 +207,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 <div>
 
-<a href="challenge/" class="btn btn-primary">Learn More</a>
+<a href="challenge/" class="btn btn-primary">Schedule & Rules</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
