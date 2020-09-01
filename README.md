@@ -1,4 +1,6 @@
-<h1 class="h1-home">Join our Fall 2020 Web Challenge</h1>
+<h1 class="h1-home">Sustainable Communities Web Challenge</h1>
+
+<h3 style="font-weight:400">Monday, Sept. 21, 2020 to Sunday, Oct. 25, 2020</h3>
 
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries.  
 
