@@ -1,3 +1,5 @@
+
+<a href="../../challenge/" target="_parent"><img src="../../img/overview/code-for-america-square.jpg" style="float:right;margin-left:30px; width:100%; max-width:350px"></a>
 # Georgia Recycling
 
 <div id="boldlinks">
