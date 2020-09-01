@@ -7,7 +7,7 @@ Form a team, join an existing team or compete individually in our 2020 virtual e
 We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. International trade components using Harmonized System (HS) codes are also encouraged.  
 
 We'll be using the new environmentally-extended input-output model called 
-<a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
+<a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency&nbsp;(EPA)</a>. 
 
 <!--
 	We're looking for communities, companies and coders to participate in implementing innovative sustainability apps created in partnership with the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
@@ -26,8 +26,8 @@ Possible projects include updates to Wazimap Census Reporter which is used in Af
 </div>
 
 <div style="margin-top:16px"></div>
-<b>Slack Workspace:</b> model-earth.slack.com - 
-<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)  
+<b>Slack Workspace:</b> model-earth.slack.com <!--- 
+<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)-->  
 
 
 
@@ -52,7 +52,7 @@ The implementation portion will be allocated based on pitches from teams after t
 
 ### National Day of Civic Hacking
 
-Get a head start by enrolling your team in the National Day of Civic Hacking and help Code for America [bring Social Safety Net Programs online](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
+Get a head start by enrolling your team in the National Day of Civic Hacking and help Code for America [bring Social Safety Net Programs&nbsp;online](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
 
 <b>Saturday, September 12</b> - <a href="https://www.codeforamerica.org/events/national-day-of-civic-hacking" target="national">National Day of Civic Hacking</a>   
 
