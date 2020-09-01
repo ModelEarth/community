@@ -109,7 +109,7 @@ callback(
 		"icon": "<i class='material-icons'>&#xE87A;</i>",
 		"hideOverlaysButton": "true",
 		"sectionTitle": "leftNav",
-		"directlink": "https://data.georgia.org/info/",
+		"directlink": "https://data.georgia.org/explore/info/",
 		"caption": "Find lodging, check traffic conditions, view gas prices, search maps and follow weather forecasts.",
 		"menuaccess": "10"
 	},
@@ -153,7 +153,7 @@ callback(
 		"where": "name != ''",
 		"exportaccess": "6",
 		"menuaccess": "0",
-		"directlink": "https://data.georgia.org/#lodging",
+		"directlink": "https://data.georgia.org/explore/#lodging",
 		"overlaylevel": "2"
 	},
 	{
@@ -1397,7 +1397,7 @@ callback(
 		"css": ".cartodb-legend:before {content: 'Active and NonActive Duty';display: block;}",
 		"googlesheet": "https://docs.google.com/spreadsheets/d/11vAcolhTW1ZJ7qbQtIg6w2cEwfTuYxOBUg5sjoXaupk/edit?usp=sharing",
 		"intro1": "If a military installation has a value in the ActiveDuty population column, the ActiveAndNon population column will be blank, and vice versa.  Same for ActivePay and ActiveAndNonPay.",
-		"intro": "Search contractors, contract history and opportunites in the <a href='https://data.georgia.org/defense' target='defense'>Georgia Defense Exchange</a>"
+		"intro": "Search contractors, contract history and opportunites in the <a href='https://data.georgia.org/explore/defense' target='defense'>Georgia Defense Exchange</a>"
 	},
 	{
 		"item": "defense-exchange-link",
@@ -1685,9 +1685,9 @@ callback(
 		"directoryframeX": "/gdx-v2/guard_contractors.html",
 		"directorylinkaccess": "0",
 
-		"intro": "<b>Georgia Defense Contractors</b><br>Connect with other Georgia defense contractors in our <a style='white-space:nowrap' href='https://data.georgia.org/defense'>Georgia Defense Exchange</a>.<br>Search <a style='white-space:nowrap' href='https://data.georgia.org/defense/contract-history'>DOD Contract History</a> and explore current <a style='white-space:nowrap' href='https://data.georgia.org/defense/opportunities'>Contract Opportunities</a>.",
+		"intro": "<b>Georgia Defense Contractors</b><br>Connect with other Georgia defense contractors in our <a style='white-space:nowrap' href='https://data.georgia.org/explore/defense'>Georgia Defense Exchange</a>.<br>Search <a style='white-space:nowrap' href='https://data.georgia.org/explore/defense/contract-history'>DOD Contract History</a> and explore current <a style='white-space:nowrap' href='https://data.georgia.org/explore/defense/opportunities'>Contract Opportunities</a>.",
 		
-		"noteX": "<a class='topButton' style='float:left; color: #fff !important;background-color: #4586f6 !important;text-decoration:none; padding-left:10px; padding-right:10px' href='/defense'>Defense Exchange</a> <a class='topButton' style='float:left; color: #fff !important;background-color: #4586f6 !important;text-decoration:none; padding-left:10px; padding-right:10px; white-space:nowrap' href='https://data.georgia.org/directory/add/' target='_blank' class='hidePrint'>Add Listing</a>",
+		"noteX": "<a class='topButton' style='float:left; color: #fff !important;background-color: #4586f6 !important;text-decoration:none; padding-left:10px; padding-right:10px' href='/defense'>Defense Exchange</a> <a class='topButton' style='float:left; color: #fff !important;background-color: #4586f6 !important;text-decoration:none; padding-left:10px; padding-right:10px; white-space:nowrap' href='https://data.georgia.org/explore/directory/add/' target='_blank' class='hidePrint'>Add Listing</a>",
 		"menuaccess": "10"
 	},
 	{
@@ -1714,7 +1714,7 @@ callback(
 		"css": ".cartodb-legend:before {content: 'DoD-Related Awards (millions)';display: block;}.cartodb-legend li:nth-child(odd):before {content: '$';margin-right:-2px;}",
 		"googlesheet": "https://docs.google.com/spreadsheets/d/1mVH-jQd5_Nvov6EJygQw4Uxi8V0zxmkElsSPaflYGpU/edit?usp=sharing",
 		"intro1": "<a href='https://docs.google.com/spreadsheets/d/1mVH-jQd5_Nvov6EJygQw4Uxi8V0zxmkElsSPaflYGpU/edit?usp=sharing' target='defense'>Google Sheet</a>",
-		"intro": "View all Georgia defense contractors, contract histories and opportunites in the <a href='https://data.georgia.org/defense' target='defense' style='white-space:nowrap'>Georgia Defense Exchange</a>.",
+		"intro": "View all Georgia defense contractors, contract histories and opportunites in the <a href='https://data.georgia.org/explore/defense' target='defense' style='white-space:nowrap'>Georgia Defense Exchange</a>.",
 		"menuaccessmax": "0"
 	},
 	{
@@ -2230,7 +2230,7 @@ callback(
 		"layerset": "georgia",
 		"icon": "<i class='material-icons'>&#xE869;</i>",
 		"menuaccess": "8",
-		"intro": "Work in Progress. View <a href='https://data.georgia.org/documentation/region/regions.html' target='County-Region'>County-Region filter</a>"
+		"intro": "Work in Progress. View <a href='/community/start/maps/counties/counties.html' target='County-Region'>County-Region filter</a>"
 	},
 	{
 		"item": "counties",
