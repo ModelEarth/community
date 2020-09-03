@@ -154,14 +154,13 @@ and (max-device-width : 480px) {
 <script type="text/javascript">
 
 $(document).ready(function () {
-	var zip = param["zip"] || "30318";
+	//var zip = param["zip"] || "30318";
+	var zip = param.zip;
 	var quantity = 20; // Bug, 30318 is not loading.
 	$('.ziptext').text(zip);
 	//if(param["zip"]){
 	//  	zip = param["zip"]
 	//}
-
-	var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
 
 	// Returns: blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource
 	//var url = "https://kg.diffbot.com/search/?query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+&from=0&size=5&token=31c80e03058e4f5b86585fb9e97640a6&active_tab=visual)"
@@ -169,26 +168,48 @@ $(document).ready(function () {
 	// General Mills - Returns 3
 	//var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=3&from=0&query=type%3AOrganization%20name%3A%22General%20Mills%22";
 	
+	var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
 
 	// Currently commented out in localsite.js
 	// Adjust map page too if adding.
 	selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
+	
+	if (!param.zip) {
+		$('#pageTitle').html("NASA Image Feed");
+		// NASA images and videos
+		url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&hd=True&count=2"; // &count=1
+		selected_array = ["date","explanation","url","hdurl"]; // "title"
+	}
+	//console.log(url)
+	
 
     d3.json(url).then(function(json,error) {
     	var fullHtml = '';
-		for (a in json.data) {//a key is 0,1,2,3,..
+    	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
+    		for (a in json) {
+    			fullHtml += "<div class='level1'>" + json[a].title + "</div>\n";
+    			for (b in json[a]) {
+    				fullHtml += formatRow(b,json[a][b],1); // Resides in localsite.js
+    			}
+    		}
+    	} else {
+    		if (!json.data) {
+    			json.data = json; // For NASA
+    		}
+			for (a in json.data) { // An object. a key is 0,1,2,3,..
 
-          fullHtml += "<div class='level1'>" + json.data[a].name + "</div>\n";
-          for (b in json.data[a]) {//b is value like allNames: ["AirWatch"], so b is key for  ["AirWatch"]
+	          fullHtml += "<div class='level1'>" + json.data[a].name + "</div>\n";
+	          for (b in json.data[a]) {//b is value like allNames: ["AirWatch"], so b is key for  ["AirWatch"]
 
-          	addHtml = "";
-          	
-          	addHtml += formatRow(b,json.data[a][b],1); // Resides in localsite.js
-         
-      		//resultFull.innerHTML = resultFull.innerHTML + addHtml;
-      		fullHtml += addHtml;
-          }
-      	}
+	          	addHtml = "";
+	          	
+	          	addHtml += formatRow(b,json.data[a][b],1); // Resides in localsite.js
+	         
+	      		//resultFull.innerHTML = resultFull.innerHTML + addHtml;
+	      		fullHtml += addHtml;
+	          }
+	      	}
+	    }
       	resultFull.innerHTML = fullHtml;
       	result.innerHTML = '';
 
@@ -241,7 +262,7 @@ $(document).ready(function () {
 
 <div id="page-wrap">
 
-	<h1>DiffBot JSON API - ZIP CODE <span class="ziptext"></span></h1>
+	<h1 id="pageTitle">DiffBot JSON API - ZIP CODE <span class="ziptext"></span></h1>
 	<!--
 	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
 	-->

@@ -7,7 +7,7 @@ Using Python, combine with [uszipcode.readthedocs.io](https://uszipcode.readthed
 Here's an older [prep all](../prep/all/) script with industries by zip code from spreadsheets with a random forest applied. 
 
 Additional data download work resides in:  
-[community/info/RStudio](../info/RStudio)  
+[community/info/rstudio](../info/rstudio)  
 <br>
 
 

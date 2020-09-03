@@ -10,7 +10,7 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/heatmap.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script type="text/javascript" src="https://datascape.github.io/community/js/d3/d3.v3.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 
 <style>
     body {
@@ -78,7 +78,7 @@
     }
 </style>
 <script type="text/javascript" charset="utf-8">
-    var projectedZip = "https://datascape.github.io/community-usa/data/zip/" + zippath + "_projected.csv";
+    var projectedZip = "https://planet.live/community-usa/data/zip/" + zippath + "_projected.csv";
     d3.text(projectedZip, function (data) {
         var parsedCSV = d3.csv.parseRows(data);
 
@@ -109,7 +109,7 @@
 <div id="population" style="height: 700px; min-width: 900px; max-width: 1300px; margin: 0 auto"></div>
 
 <script>
-    fileName = 'https://datascape.github.io/community-usa/data/zip/' + zippath + '_projected.csv';
+    fileName = 'https://planet.live/community-usa/data/zip/' + zippath + '_projected.csv';
     d3.csv(fileName, function (data) {
         console.log(data);
         years = [];
