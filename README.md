@@ -1,15 +1,17 @@
 <h1 class="h1-home">Sustainable Communities Web Challenge</h1>
 
+<div style="display:none" class="challenge-details">
 <h3 style="font-weight:400">Monday, Sept. 21, 2020 to Sunday, Oct. 25, 2020</h3>
 
 Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries.  
 
 <b>Slack Workspace:</b> [model-earth.slack.com](https://model-earth.slack.com/) - Register Online first to be added to Slack.   
-
+</div>
 
 <div>
 
-<a href="challenge/" class="btn btn-primary">Schedule & Rules</a>
+<!-- Schedule & Rules -->
+<a href="challenge/" class="btn btn-primary">Challenge Rules</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
@@ -19,9 +21,10 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 
 ## Project Areas
 
+<div style="display:none" class="challenge-details">
 Teams that contribute to these broad areas have a good chance of earning an award of 
 <span style="white-space: nowrap">$1,000, $1,500 or $2,500.</span>
-
+</div>
 
 **A. Zipcode Demographics, Industries, Impacts and Machine Learning**  
 - Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
@@ -101,7 +104,7 @@ Add USEEIO widgets to [.NET Environmental Education tools](../setup/) for GEEP p
 ### Google REST App
 
 1. [Google Sheet Editor](https://neighborhood.org/editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to edit rows of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
-<br>
+<br><br>
 
 
 # Specific Project Tasks
@@ -207,7 +210,8 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 <div>
 
-<a href="challenge/" class="btn btn-primary">Schedule & Rules</a>
+<!-- Schedule & Rules -->
+<a href="challenge/" class="btn btn-primary">Challenge Rules</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
