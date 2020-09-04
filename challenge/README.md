@@ -1,13 +1,15 @@
 <!-- MOVED TO Community/Challenge/README.md -->
 
-<h1 style="font-weight:300"><span style="white-space:nowrap">2020 Web Challenge</span></h1>
+<h1 style="font-weight:300"><span style="white-space:nowrap">Sustainable Communities Web Challenge</span></h1>
 
-Form a team, join an existing team or compete individually in our 2020 virtual events presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
+Form a team, join an existing team or compete individually in our upcoming virtual events presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
 We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. International trade components using Harmonized System (HS) codes are also encouraged.  
 
-We'll be using the new environmentally-extended input-output model called 
+We're using the new environmentally-extended input-output model called 
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency&nbsp;(EPA)</a>. 
+
+
 
 <!--
 	We're looking for communities, companies and coders to participate in implementing innovative sustainability apps created in partnership with the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
@@ -18,6 +20,8 @@ Possible projects include updates to Wazimap Census Reporter which is used in Af
 -->
 
 [Opportunities for Communities](../../io/communities/) - [Embeddable IO Widgets](../../io/charts/)  
+
+Register now and join our Slack Channel. We'll be announcing dates soon!  
 
 <div style="margin-top:20px">
 <a href="registration/" class="btn btn-success">Register to participate</a>
@@ -32,7 +36,7 @@ https://app.slack.com/client/T8L2KN1AP/C8L4VC44A/thread/C8L4VC44A-1598213938.153
 <a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)-->  
 
 
-
+<!--
 ## $10,000 in Challenge Awards
 
 Tentative breakdown - Judges may adjust these levels based on team size and levels of commitment.  
@@ -66,6 +70,8 @@ Get a head start by enrolling your team in the National Day of Civic Hacking and
 <b>Saturday, October 24 - 11 AM to noon</b> - Final Round, Integrations 
 
 <b>Sunday, October 25 - 2 PM to 4 PM</b> - Zoom Presentations and Awards  
+-->
+
 
 <!--
 During the National Day of Civic Hacking on Sept 21, teams will focus on integration with <span style="white-space: nowrap;"><a href="https://discourse.codeforamerica.org/t/index-of-covid-19-projects-in-the-network/715">COVID-19 project frameworks</a>.</span> 
@@ -80,7 +86,9 @@ During the National Day of Civic Hacking on Sept 21, teams will focus on integra
 3. How new technologies can change a community's impact  
 4. Ways communities are using and reusing materials to fuel net zero initiatives  
 
+<div style="display:none" class="challenge">
 <a href="registration/">Register to participate</a> - Contribute your coding and data skills to help communities and businesses work toward becoming net zero.  
+</div>
 
 <!--
 A panel of judges will use Slack video to deliberate while using a Google Form for calculating scores for the Oct 25 awards.<br><br>
