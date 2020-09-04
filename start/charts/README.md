@@ -8,7 +8,7 @@ The [Environmental Impact Bubble Chart](../../../input-output/bubbles/) also use
 <b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
 <a href="sankey/"><img src="../../../io/overview/img/hero/sankey.png" style="width:100%; bottom:0px;"></a>
 <br>
-View <a href="sankey/">Interactive Version</a><br><br>
+View <a href="../../../input-output/sankey/">Interactive Version</a> - moved into fork of USEEIO-widgets repo<br><br>
 
 
 ### Sankey Charts
