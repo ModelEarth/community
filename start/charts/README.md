@@ -2,7 +2,7 @@
 
 [The embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts and use [D3.js](https://github.com/d3/d3/wiki/Gallery).  
 
-The [Environmental Impact Bubble Chart](../../../input-output/bubbles/) also use the USEEIO API JSON files.  
+The [Environmental Impact Bubble Chart](../../../io/charts/bubble/) also use the USEEIO API JSON files.  
 
 
 <b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
