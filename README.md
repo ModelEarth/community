@@ -34,7 +34,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 **B. Supply Chain Inflow-Outflow Charts**  
 - Updates to Sankey D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
-- Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](start/charts/sankey/)  
+- Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](../io/charts/sankey/)  
 
 
 **C. Industry Level Estimates for Counties and Zipcodes**  
@@ -114,7 +114,7 @@ Maintain a list of your time contributions to increase your award potential!
 
 ## Bubble Chart
 
-D3 - [View Widget](../input-output/bubbles/) 
+D3 - [View Widget](../io/charts/bubble/) 
 
 - Modify so popups still appear when the containing div is set to position:relative. 
 - Scale to size of containing div during browser resize.
@@ -145,7 +145,7 @@ React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=5
 
 React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
-- Update for use with Darkly bootstrap, similar to [bubble chart](../input-output/bubbles) - click bubble to view impact chart.  
+- Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
 - Display sector name over each bar.  
 - Display description of each indicator
 
