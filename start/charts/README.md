@@ -8,7 +8,7 @@ The [Environmental Impact Bubble Chart](../../../io/charts/bubble/) uses JSON fi
 <b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
 <a href="../../../io/charts/sankey/"><img src="../../../io/charts/sankey/img/sankey.png" style="width:100%; bottom:0px;"></a>
 <br>
-View <a href="../../../io/charts/sankey/">Interactive Version</a> - moved into fork of USEEIO-widgets repo<br><br>
+View <a href="../../../io/charts/sankey/">Interactive Version</a><br><br>
 
 
 [4 Interactive Sankey diagrams made in Python with Plotly.js](https://medium.com/plotly/4-interactive-sankey-diagram-made-in-python-3057b9ee8616)

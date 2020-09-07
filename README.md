@@ -11,7 +11,7 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">Challenge Rules</a>
+<a href="challenge/" class="btn btn-primary">About Events</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
@@ -95,7 +95,7 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/)
 
-1. Modernize [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) by staring with Python 3.* Wazimap fork used in Africa and India. Populate database using most recent US Census API. [Our notes](resources/censusreporter)
+1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3.* Wazimap fork used in Africa and India. Populate database using most recent US Census API.  
 
 ### Microsoft .NET
 
@@ -211,7 +211,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">Challenge Rules</a>
+<a href="challenge/" class="btn btn-primary">About Events</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
