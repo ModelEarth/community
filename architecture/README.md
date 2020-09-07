@@ -5,6 +5,6 @@
 
 ## The New Countryside
 
-New clean energy technologies are allowing communities to form mutually beneficial relationships between local manufacturers, forestry and farmers for waste reuse, carbon capture and biotech job creation.  
+New clean energy technologies are leading communities to create mutually beneficial relationships for waste reuse and clean energy production using output from local forestry, agriculture and manufacturing to increase carbon capture and biotech job creation.  
 
-<b>Objective</b> - Document new approaches for integrating industrial waste-to-energy clusters with production spaces, nearby residential, walkable pastures and fast-growth foresty.  Explore sustainable industrial facility designs that touch the human soul through connections to nature, comfort and inclusiveness. 
+<b>Objective</b> - Document new construction methods and clean energy technologies that allow energy resource centers to be integrated with nearby residential neighborhoods, walkable pastures and robust foresty.  Explore sustainable industrial designs that touch the human soul through connections to nature, comfort and inclusion.
