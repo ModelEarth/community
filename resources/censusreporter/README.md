@@ -77,7 +77,7 @@ More here: [Venv command (pythonise.com)](https://pythonise.com/categories/pytho
 
 ### Let's add Pyenv:  
 
-Source for following: [Definitive guide to python on Mac OSX](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0)  
+Source: [Definitive guide to python on Mac OSX](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0) and [pyenv](https://gist.github.com/wronk/a902185f5f8ed018263d828e1027009b)  
 
  **pyenv** for python version management and  
  **poetry** for python package/venv management  
