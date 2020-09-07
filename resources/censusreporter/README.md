@@ -32,7 +32,7 @@ Sortable tables and lists below maps
 
 **React Interface**  
 Add our [Google Auto Complete Sample](../../../localsite/map/auto/) to the USEEIO-widgets [React Build](../../../io/charts/).  
-Expand upon the [Environmentally-Enabled IO Charts](../../../io/charts/) on the same page.  
+Expand upon the [EPA's Environmentally-Enabled IO Charts](../../../io/charts/) and integrate with community data portals.  
 
 
 ## Virtual Environment
