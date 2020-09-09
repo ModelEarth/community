@@ -121,10 +121,11 @@ D3 - [View Widget](../io/charts/bubble/)
 - Set the default bubble color to red for more pop.
 - Omit red from the scale when other [bubbles are highlighted](../localsite/info/)
 
-## Industry-List plus Mosaic Widget
+## Industry-List and Mosaic
 
 React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
 
+- When column selected, avoid dimming other columns.  
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
 - Show list of selected sectors under "X selected" tab
 - As default, turn-off movement of selected checkbox. Duplicate in X selected tab instead.
