@@ -1,8 +1,8 @@
 <!-- MOVED TO Community/Challenge/README.md -->
 
-<h1 style="font-weight:300"><span style="white-space:nowrap">Sustainable Communities Web Challenge</span></h1>
+<h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-<h3>Spring 2021 - Event dates to be announced soon</h3>
+<h3>Spring 2021 - Dates to be <span style="white-space:nowrap">announced soon</span></h3>
 
 Form a team, join an existing team or compete individually in our upcoming virtual events presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
