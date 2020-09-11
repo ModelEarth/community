@@ -119,16 +119,19 @@ D3 - [View Widget](../io/charts/bubble/)
 - Modify so popups still appear when the containing div is set to position:relative. 
 - Scale to size of containing div during browser resize.
 - Set the default bubble color to red for more pop.
-- Omit red from the scale when other [bubbles are highlighted](../localsite/info/)
+- Omit red from the scale when other [bubbles are highlighted](../localsite/info/).  
+- Create React version.  
 
 ## Industry-List and Mosaic
 
-React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
+React - [View Widget](../io/build/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
 
 - When column selected, avoid dimming other columns.  
+<img style="display:inline; float:right; width:60px" src="img/overview/slider-mockup.png">  
+- Add [sliders](https://material-ui.com/components/slider/) to right of rows to adjust levels for multiplier effect.  
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
 - Show list of selected sectors under "X selected" tab
-- As default, turn-off movement of selected checkbox. Duplicate in X selected tab instead.
+- As default, turn-off movement of selected checkbox. Show duplicates in X selected tab instead.
 - Display parent categories that open to reveal subcategories
 - Display the quantity selected after each parent category title in parenthesis
 - Custom sets could use the same csv/json format.
@@ -144,7 +147,7 @@ React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=5
 
 ## Impact Bar Chart
 
-React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
+React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
 - Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
 - Display sector name over each bar.  
