@@ -145,14 +145,33 @@ React - [View Widget](../io/build/industry_list.html?view=mosaic&count=50) - [De
 - Actions could include: Display on map, Display bar chart, Generate Report
 
 
+## Slider Details  
+
+The editable number could appear when clicking the slider.  
+The editable number could disappear after a few seconds of inactivity.  
+
+The slide bar could replace the bar currently to the right of the rows.  
+The dot could be relative to the other rows, matching how you have the bar length.  
+
+The bar could turn green when a commodity has been increased from its default.  
+The bar could turn red when a commodity has been decreased from its default.  
+
+The sliders will be used to show multiplier effects.  
+
+The hash syntax for a 99% and 300% adjustment could be:  
+sectors=311615:99,550000:300  
+
+
 ## Impact Bar Chart
 
 React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
-- Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
+
+- Create an example with three coluns and one impact area per colums.  
+- Display sector titles to the left of the first column.
 - Display sector name over each bar.  
 - Display description of each indicator
-
+- Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
 
 ## Last Airbender
 
