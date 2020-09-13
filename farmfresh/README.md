@@ -7,6 +7,9 @@ Data is displayed in our [Map of Fresh Produce](../map/starter).  Here are [Geor
 TO DO: Update the following scripts to send the state data to:
 [/community-data/us/state](https://github.com/modelearth/community-data/)
 
+Then remove from:  
+/community/farmfresh/scraped/usa/states  
+
 ### About USDA Source
 
 [National USDA map of farmer's markets](https://www.ams.usda.gov/local-food-directories/farmersmarkets)  
