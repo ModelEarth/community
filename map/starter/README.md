@@ -16,16 +16,13 @@ Census.gov provides an address lookup service at no charge. ([sample](https://ge
 Can it lookup a city, zip or county lat/lon?  
 -->
 
-[Google Maps API](https://developers.google.com/maps/documentation/geocoding/start) allows 40,000 calls per month at no charge ([sample](https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY), needs API key).
-
-
-<b>Python Project - Getting Started</b>
+[Google Maps API](https://developers.google.com/maps/documentation/geocoding/start) allows 40,000 calls per month at no charge ([sample](https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY), needs API key).  
 
 Here's our script to [Generate Farm Fresh CSV files](../../farmfresh) for all US states.  
 
-We have a Python example of outputing a folder for each US zip code.  
+Here's a Python example of outputing zip code data to nested folders: /community/prep/all/zipgraph.py  
+Creates a [folder for each digit](https://github.com/datascape/community-usa/tree/master/data/zip)  
 
-<br>
 
 <b>Related Links</b> 
 
@@ -43,6 +40,8 @@ Editable link is in our Slack #epa group.
 Sample script used to pull [Atlanta food pantries](https://github.com/localsite/georgia-data/tree/master/foodpantries)  
 
 ## R Code to get place links from eatery article and write to CSV
+
+Script to [insert into Google Sheet](https://github.com/modelearth/community/blob/master/farmfresh/curbside/toGoogleSheets.py)
 
 	library(tidyverse)
 	library(rvest)
