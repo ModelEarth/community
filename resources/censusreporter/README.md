@@ -35,15 +35,18 @@ Add our [Google Auto Complete Sample](../../../localsite/map/auto/) to the USEEI
 Expand upon the [EPA's Environmentally-Enabled IO Charts](../../../io/charts/) and integrate with community data portals.  
 
 
-## Virtual Environment
+## Virtual Environment - with Poetry
 
 Venv and Django with Postgres
 
 
-### Mac Users
+Use [Python Poetry Setup](../poetry/) for virtual environment  
 
-[Set up pyenv](https://gist.github.com/wronk/a902185f5f8ed018263d828e1027009b) - includes virtualenv and virtualenvwrapper  
-See details under "Let's add Pyenv" after the following.  
+
+### Older Notes: Mac Users
+
+[Set up pyenv](https://gist.github.com/wronk/a902185f5f8ed018263d828e1027009b) - includes virtualenv and virtualenvwrapper (this guy does not use poetry)  
+Instead, see details under "Let's add Pyenv" after the following.  
 
 
 Where's my Python running from?
@@ -74,73 +77,6 @@ To see the full range of options, run the following command:
 
 More here: [Venv command (pythonise.com)](https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command)
 
-
-### Let's add Pyenv:  
-
-Source: [Definitive guide to python on Mac OSX](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0) and [pyenv](https://gist.github.com/wronk/a902185f5f8ed018263d828e1027009b)  
-
- **pyenv** for python version management and  
- **poetry** for python package/venv management  
-
-
-<!-- I'm using xcode, but included this to note the need to change .bash_profile to .zshrc -->
-
-If you chose not to install Xcode, you’ll need to add the SDKROOT environment variable to your shell:
-
-	echo "export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk" >> ~/.bash_profile
-
-If using zsh, change the end of that last command from ~/.bash_profile to ~/.zshrc .
-
-	echo "export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk" >> ~/.zshrc
-
-
-Install pyenv:
-
-	brew install pyenv
-
-Add pyenv to your shell:
-
-	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
-
-If using zsh, change the end of that last command from ~/.bash_profile to ~/.zshrc
-
-	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
-
-(Optional) You can also <code>brew install pyenv-virtualenv</code> to add virtualenv support to pyenv, but it’s not required since most of the virtualenv work you’ll do with poetry after we install it later. Some people like the pyenv-virtualenv support anyway.  
-
-For the next step, see the [definitive guide](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0) script for installing Python as a safety net. <!-- skipped because I'd already done this -->  Include python 2.7 <!-- might need this -->
-
-	python -V
-
-See a list of available python versions with pyenv:  
-
-	pyenv install --list
-
-Install a new version
-
-	pyenv install 3.8.5
-
-Pick a version, then set it as the global python version: <!-- was 3.7.6 -->
-
-	pyenv global 3.8.5
-
-### Install poetry
-
-Why you should use poetry:  
-Obsoletes virtualenv, virtualenvwrapper, pipenv, setup.py, requirements.txt, and more.
-
-
-\~/ translates to your user’s home directory
-
-
-
-My .bash_profile contains:
-
-	# aliases
-	alias cd..="cd .."
-	alias l="ls -al"
-	alias lp="ls -p"
-	alias h=history
 
 ## Wazimap Census Reporter (Setup)
 
