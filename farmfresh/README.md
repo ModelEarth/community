@@ -27,8 +27,19 @@ Scrapes and merges the USDA's lists of [farmer's markets](https://search.ams.usd
 
 The follow resides in the scrapper subfolder.  
 Please ensure that you have installed all the above dependencies.
+Run the following in the scrapper folder:  
 
 - `source bin/activate` : Activate python3 virtual environment.
+
+Or:
+
+	source .env/usr/local/bin/activate
+
+Or maybe one of these (need to test)
+
+	poetry new myproject
+	poetry init
+
 - `yarn install` : Install dependencies.
 - `make all`: Scrape, process, and merge.
 - The results are placed into the folder `out/merged/`.
