@@ -3151,20 +3151,6 @@
   },
   {
     "type": "farm",
-    "street": "3501 S Weinbach Ave",
-    "city": "Evansville",
-    "state": "in",
-    "zip": "47714",
-    "x": "-87.531956",
-    "y": "37.935357",
-    "name": "Bud's Farm Market",
-    "website": "Facebook.com/budsfarmmarket",
-    "facebook": "Facebook.com/budsfarmmarket",
-    "twitter": "",
-    "tags": "fresh-fruits fresh-vegetables"
-  },
-  {
-    "type": "farm",
     "street": "3301 S Weinbach Ave",
     "city": "Evansville",
     "state": "in",
@@ -3173,6 +3159,20 @@
     "y": "37.936180",
     "name": "Bud's Farm Market",
     "website": "budsfarm.com",
+    "facebook": "Facebook.com/budsfarmmarket",
+    "twitter": "",
+    "tags": "fresh-fruits fresh-vegetables"
+  },
+  {
+    "type": "farm",
+    "street": "3501 S Weinbach Ave",
+    "city": "Evansville",
+    "state": "in",
+    "zip": "47714",
+    "x": "-87.531956",
+    "y": "37.935357",
+    "name": "Bud's Farm Market",
+    "website": "Facebook.com/budsfarmmarket",
     "facebook": "Facebook.com/budsfarmmarket",
     "twitter": "",
     "tags": "fresh-fruits fresh-vegetables"
@@ -23423,6 +23423,20 @@
   },
   {
     "type": "market",
+    "name": "Bloomfield Saturday Market",
+    "website": "http://www.bloomfieldpgh.org",
+    "facebook": "https://www.facebook.com/bloomfieldmarket/",
+    "twitter": "",
+    "street": "5050 Liberty Ave",
+    "city": "Pittsburgh",
+    "state": "pa",
+    "zip": "15224",
+    "x": "-79.944435",
+    "y": "40.459005",
+    "tags": "organic baked goods cheese flowers eggs seafood herbs vegetables honey jams maple meat poultry prepared-foods soap coffee fruits juices mushrooms wild"
+  },
+  {
+    "type": "market",
     "name": "Bloomington Community Farmers' Market",
     "website": "http://bloomington.in.gov/farmersmarket",
     "facebook": "https://www.facebook.com/pages/Bloomington-Community-Farmers-Market/130635957114110",
@@ -27634,6 +27648,20 @@
     "x": "-111.893119",
     "y": "33.697831",
     "tags": "baked goods crafts eggs seafood vegetables honey jams prepared-foods soap coffee beans fruits juices pet food"
+  },
+  {
+    "type": "market",
+    "name": "Farmers Market of Bluffton",
+    "website": "http://www.farmersmarketbluffton.org",
+    "facebook": "farmersmarketbluffton",
+    "twitter": "",
+    "street": "40 Calhoun Street",
+    "city": "Bluffton",
+    "state": "sc",
+    "zip": "29910",
+    "x": "-80.862568",
+    "y": "32.234811",
+    "tags": "organic baked goods cheese flowers eggs seafood herbs vegetables honey jams meat nuts plants poultry prepared-foods trees coffee beans fruits grains mushrooms pet food"
   },
   {
     "type": "market",
@@ -34385,6 +34413,20 @@
   },
   {
     "type": "market",
+    "name": "Overbrook Farmers Market",
+    "website": "https://www.fromthelandofkansas.com/market/overbrook-farmers-market",
+    "facebook": "Overbrook Farmers Market",
+    "twitter": "",
+    "street": "Maple & Market St",
+    "city": "Overbrook",
+    "state": "ks",
+    "zip": "66524",
+    "x": "-95.556782",
+    "y": "38.777419",
+    "tags": "organic baked goods eggs vegetables honey coffee fruits"
+  },
+  {
+    "type": "market",
     "name": "Ovid Farmers Market",
     "website": "",
     "facebook": "https://www.facebook.com/ovidfarmersmarket",
@@ -36933,6 +36975,20 @@
   },
   {
     "type": "market",
+    "name": "Sioux City Farmers Market",
+    "website": "http://www.farmersmarketsiouxcity.com",
+    "facebook": "Sioux City Farmers Market",
+    "twitter": "@SiouxCityFarmersMarket",
+    "street": "100 Pearl Street",
+    "city": "Sioux City",
+    "state": "ia",
+    "zip": "51101",
+    "x": "-96.408445",
+    "y": "42.490552",
+    "tags": "organic baked goods cheese crafts flowers eggs herbs vegetables honey jams meat plants poultry prepared-foods soap wine coffee fruits juices mushrooms pet food"
+  },
+  {
+    "type": "market",
     "name": "Sitka Farmers Market",
     "website": "http://www.sitkalocalfoodsnetwork.org/",
     "facebook": "www.facebook.com/SitkaLocalFoodsNetwork",
@@ -37201,15 +37257,15 @@
     "type": "market",
     "name": "South End Market at Atherton",
     "website": "https://southendmkt.com/",
-    "facebook": "https://www.facebook.com/southendmarketclt/",
-    "twitter": "https://twitter.com/SouthEndMktCLT",
-    "street": "2000 South Boulevard",
+    "facebook": "https://www.facebook.com/southendmarketclt",
+    "twitter": "",
+    "street": "2000 South Blvd.",
     "city": "Charlotte",
     "state": "nc",
     "zip": "28203",
-    "x": "-80.830739",
-    "y": "35.208707",
-    "tags": "baked goods cheese flowers eggs seafood herbs vegetables honey jams meat poultry prepared-foods soap coffee fruits grains mushrooms pet food"
+    "x": "-80.860801",
+    "y": "35.209110",
+    "tags": "organic baked goods cheese crafts flowers eggs seafood herbs vegetables honey jams meat poultry prepared-foods soap coffee fruits grains mushrooms pet food"
   },
   {
     "type": "market",
@@ -39604,6 +39660,20 @@
     "x": "-103.271392",
     "y": "47.797315",
     "tags": "baked goods crafts flowers eggs vegetables honey jams prepared-foods fruits"
+  },
+  {
+    "type": "market",
+    "name": "Waukon Farmers Market",
+    "website": "",
+    "facebook": "https://www.facebook.com/WaukonFM",
+    "twitter": "",
+    "street": "850 Rossville Road",
+    "city": "Waukon",
+    "state": "ia",
+    "zip": "52172",
+    "x": "-91.472878",
+    "y": "43.260191",
+    "tags": "baked goods flowers eggs herbs vegetables jams wine fruits"
   },
   {
     "type": "market",
