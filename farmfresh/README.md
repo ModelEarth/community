@@ -7,12 +7,6 @@ We're using a Python scraper to pull and merge locations from the national USDA 
 Note that USDA now also provides an [API](https://www.ams.usda.gov/local-food-directories/farmersmarkets).  
 
 
-TO DO: Update the following scripts to send the state data to:
-[/community-data/us/state](https://github.com/modelearth/community-data/)
-
-Then remove from:  
-/community/farmfresh/scraped/usa/states  
-
 ### About USDA Source
 
 [National USDA map of farmer's markets](https://www.ams.usda.gov/local-food-directories/farmersmarkets) - [Google Map for full data download](https://search.ams.usda.gov/farmersmarkets/googleMapFull.aspx)  
@@ -28,6 +22,16 @@ Scrapes and merges the USDA's lists of [farmer's markets](https://search.ams.usd
 ## Dependencies
 
 [jq](https://stedolan.github.io/jq/), [yarn](https://yarnpkg.com/), [python3](https://www.python.org/downloads/), [curl](https://curl.haxx.se/), and [make](https://www.gnu.org/software/make/).
+
+
+## TO DO: 
+
+Update the following scripts to send the state data to:
+[/community-data/us/state](https://github.com/modelearth/community-data/)
+
+Then remove from:  
+/community/farmfresh/scraped/usa/states  
+
 
 ## Run
 
