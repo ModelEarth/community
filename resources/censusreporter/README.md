@@ -1,14 +1,13 @@
 
-# Neighborhood Map  
+# Census Reporter  
 
-We're integrating [zipcode maps](https://censusreporter.org/profiles/86000US30318-30318/) with audio-based [social safety net](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) assitance.  
+We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30318-30318/) to include [environmentally-enabled input-output](../../../io/charts/) widgets 
+and audio-based [social safety net](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) assitance.  
 
 ### CensusReporter - Django - PostgreSQL
 
 **Project**  
-Place Wazimap fork of CensusReporter into a [Python Docker container](https://hub.docker.com/_/python) for easier install.  
-Place Census Reporter database into [PostgreSQL Docker container](https://hub.docker.com/_/postgres) with files for Docker secrets.
-
+Use the Python 3 fork of CensusReporter to upgrade the US version and create an easy starting point for any country or state to integrate their demographic, industry and environmental data for analysis by machine learning algorithms.  
 
 The Wazimap fork provides a Python 3 version of Census Reporter with international usage.  
 We're aiming to bring it in sync with the Python 2 version used by [CensusReporter.org](https://CensusReporter.org).  
@@ -16,8 +15,12 @@ We're aiming to bring it in sync with the Python 2 version used by [CensusReport
 Start from our [github.com/modelearth/map](https://github.com/modelearth/map) fork of Wazimap Census Reporter.  
 Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
+Place Wazimap fork of CensusReporter into a [Python Docker container](https://hub.docker.com/_/python) for easier install.  
+Place Census Reporter database into [PostgreSQL Docker container](https://hub.docker.com/_/postgres) with files for Docker secrets.
+
 **Questions**  
-How can we improve on the UI and performance of [data.census.gov](https://data.census.gov)  
+During the process, how can we improve on the UI and performance of [data.census.gov](https://data.census.gov).  CensusReporter has the advantage of generting static files. Let's create shorter URLs.  
+
 How can demographics data, maps and machine learning be integrated around [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/)?
  
 **Pages to Compare**  
@@ -35,12 +38,8 @@ Add our [Google Auto Complete Sample](../../../localsite/map/auto/) to the USEEI
 Expand upon the [EPA's Environmentally-Enabled IO Charts](../../../io/charts/) and integrate with community data portals.  
 
 
-## Virtual Environment 
 
-Venv and Django with Postgres
-
-
-## Wazimap Census Reporter (Setup)
+## Wazimap Census Reporter Setup
 
 
 Based on the [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)  
@@ -56,18 +55,45 @@ Optional, if you need postgresql to be launched on login:
 	Or, if you don't want/need a background service you can just run:
 	  pg_ctl -D /usr/local/var/postgres start
 
-## Using venv
+
+
+## Virtual Environment Setup
+
+Venv and Django with Postgres
+
+These steps have not yet been tried here. Copied from PyAtl. These were successful with farmfresh scrapper.  
+
+### Setup
+
+Setup the environment:
+
+`python3 -m venv .venv`
+
+OSX / Linux:
+
+`source .venv/bin/activate`
+
+Windows:
+
+`\.venv\Scripts\activate.bat`
+
+
+### Using venv
+
+These are the original instrucions:  
+
 
 This will install Python 3.7.3 (or latest) and create a subfolder called "env"   
 --prompt is optional for showing a name before your terminal prompt.  
 If your default is still python 2, then start commands with python3.  
+<!-- Loren added 3 to python 3 below, just in case -->
 
-	python -m venv ~/Documents/env1 --prompt MYTEST
+	python3 -m venv ~/Documents/env1 --prompt MYTEST
 
 Or if your are already in the folder where you're creating your environment...  
 (Default directory on a mac is Users/[username].)  
 
-	python -m venv env1
+	python3 -m venv env1
 
 Exclude your virtual environment directory from your version control system by adding "env1" to .gitignore
 
@@ -157,7 +183,7 @@ https://docs.djangoproject.com/en/3.0/intro/tutorial01/
 
 	django-admin startproject mysite
 	cd mysite
-	python manage.py runserver
+	python3 manage.py runserver
 
 Stop dejango site
 
