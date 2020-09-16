@@ -1,4 +1,7 @@
-## with Poetry
+## Venv
+
+This was removed from Census Reporter notes.  Some may still be useful.  
+
 
 Use [Python Poetry Setup](../poetry/) for virtual environment  
 
