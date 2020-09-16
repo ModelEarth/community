@@ -39,7 +39,7 @@ Expand upon the [EPA's Environmentally-Enabled IO Charts](../../../io/charts/) a
 
 
 
-## Wazimap Census Reporter Setup
+## Postgres Setup
 
 
 Based on the [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)  
