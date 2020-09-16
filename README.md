@@ -95,7 +95,7 @@ our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index
 
 1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/)
 
-1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3.* Wazimap fork used in Africa and India. Populate database using most recent US Census API.  
+1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3.* Wazimap fork used in Africa and India.  
 
 ### Microsoft .NET
 
