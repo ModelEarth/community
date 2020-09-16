@@ -176,10 +176,10 @@ DBeaver shortcuts
 	You can generate SQL statements (SELECT/INSERT/UPDATE/DELETE) based on selected rows. To generate SQL, right-click the selected rows, then click Generate SQL and select one of the SQL commands you see.
 
 
-## django
+## Django Troubleshooting
 
-Trying to get site to appear at: http://localhost:8000/admin
-https://docs.djangoproject.com/en/3.0/intro/tutorial01/
+Trying to get site to appear at: http://localhost:8000/admin  
+[Django Tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
 	django-admin startproject mysite
 	cd mysite
