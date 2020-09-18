@@ -3,9 +3,9 @@
 
 We're working toward comparing data from multiple sources in real-time: UGA, Aglanta and the USDA.  
 
-Our [farmersmarkets-ga](https://github.com/modelearth/georgia-data/tree/master/farmfresh) dataset contains 169 records. It includes columns for Cheese, Eggs, Seafood and FMID matching the current [USDA farmers market export](https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx) of 31 records.  
+Our original [farmersmarkets-ga](https://github.com/modelearth/georgia-data/tree/master/farmfresh) dataset contains 169 records. It includes columns for Cheese, Eggs, Seafood and FMID matching the current [USDA farmers market export](https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx) of 31 records.  
 
-Our automated merge is only producing 52 (as of Sept 2020) and it omits columns for Cheese, Eggs, Seafood and FMID.  The USDA appears to have purged more than half the records during clean-up, or part of the merge stopped working when run Sept 15, 2020.    
+Our automated merge is only producing 52 (as of Sept 2020). It combines categories for Cheese, Eggs, Seafood into one column. The USDA appears to have purged more than half the records during clean-up, or part of the merge stopped working when run Sept 15, 2020.    
 
 
 ### Georgia Produce (UGA Extension)
