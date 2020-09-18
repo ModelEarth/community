@@ -12,6 +12,12 @@
 <script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/showdown.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
+
+<script>
+  // Redirect from older page
+  window.location = "../../../localsite/map/";
+</script>
+
 <!--
 Activate to include site navigation
 <script type="text/javascript" src="../../../localsite/js/navigation.js"></script>
@@ -199,7 +205,11 @@ Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,B
     //dp2.showLayer = false;
 
     //dp2.dataset = "/community/farmfresh/scraper/out/raw/farmersmarkets-ga.csv";
-    dp2.dataset = dual_map.custom_data_root() + "/farmfresh/farmersmarkets-ga.csv";
+    if (location.host.indexOf('localhost') >= 0) {
+      dp2.dataset = "../../farmfresh/scraper/out/states/ga/markets.csv";
+    } else {
+      dp2.dataset = dual_map.custom_data_root() + "/farmfresh/farmersmarkets-ga.csv";
+    }
     //dp2.dataset = "/community/farmfresh/usa/georgia/markets.csv";
     dp2.dataTitle = "Farm Fresh Produce";
     //dp2.markerType = "circle";

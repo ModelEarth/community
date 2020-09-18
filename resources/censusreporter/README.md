@@ -1,105 +1,45 @@
 
-# CensusReporter
+# Census Reporter  
 
-Project 1: Document steps for deploying static portion of Wazimap to a website. Host on Github or another server.   
+We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30318-30318/) to include [environmentally-enabled input-output](../../../io/charts/) widgets 
+and audio-based [social safety net](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) assitance.  
 
+### CensusReporter - Django - PostgreSQL
 
-Since the Wazimap fork provides a Python 3 version of Census Reporter with international usage, we'll use it as a starting point for updating the US version of Census Reporter.  
+**Project**  
+Use the Python 3 fork of CensusReporter to upgrade the US version and create an easy starting point for any country or state to integrate their demographic, industry and environmental data for analysis by machine learning algorithms.  
 
-Work in our [Wazimap Fork of Census Reporter]( https://github.com/modelearth/wazimap) - a Python 3.0 version of [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/).  
+The Wazimap fork provides a Python 3 version of Census Reporter with international usage.  
+We're aiming to bring it in sync with the Python 2 version used by [CensusReporter.org](https://CensusReporter.org).  
+
+Start from our [github.com/modelearth/map](https://github.com/modelearth/map) fork of Wazimap Census Reporter.  
 Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
-**Future Projects:**  
-1. Add ability to select country to toggle to the [US API](https://github.com/censusreporter/census-api) from [Census Report repo](https://github.com/censusreporter/censusreporter).  
-2. Add [Environmentally-Enabled IO Charts](../../../io/charts/)  
-3. Create a unified Census Reporter repo that moves US version to Python 3.*   
+Place Wazimap fork of CensusReporter into a [Python Docker container](https://hub.docker.com/_/python) for easier install.  
+Place Census Reporter database into [PostgreSQL Docker container](https://hub.docker.com/_/postgres) with files for Docker secrets.
 
+**Questions**  
+During the process, how can we improve on the UI and performance of [data.census.gov](https://data.census.gov).  CensusReporter has the advantage of generting static files. Let's create shorter URLs.  
 
-## Virtual Environment
+How can demographics data, maps and machine learning be integrated around [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/)?
+ 
+**Pages to Compare**  
+[CensusReporter.com Atlanta](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) - [GitHub repo](https://github.com/censusreporter/censusreporter) - [Python 3 Fork](https://github.com/modelearth/map)  
+[Data.Census.gov Atlanta](https://data.census.gov/cedsci/profile?g=1600000US1304000)  
 
-Venv and Django with Postgres
+**Areas for improvements**  
+Zip and county maps  
+Fast loading from pre-processed static files  
+International contributions  
+Sortable tables and lists below maps  
 
-
-### Mac Users
-
-
-<!--
-[You may need to make Python3 the default for Mac](virtualenv-troubleshooting.html) - Install a user copy of Python3 using bash, then change your default from Python2 to Python3.   
-
-
-You may want to use [virtualenv](virtualenv.html) - option for use with Python 2 virtual environment.     
-
--->
-
-To see the full range of options, run the following command:  
-
-	python -m venv -h
-
-More here: [Venv command (pythonise.com)](https://pythonise.com/categories/python/python-virtual-environments-with-the-venv-command)
+**React Interface**  
+Add our [Google Auto Complete Sample](../../../localsite/map/auto/) to the USEEIO-widgets [React Build](../../../io/charts/).  
+Expand upon the [EPA's Environmentally-Enabled IO Charts](../../../io/charts/) and integrate with community data portals.  
 
 
 
-Source for following: [Definitive guide to python on Mac OSX](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0)  
-
-
- ### Let's add:  
-
- **pyenv** for python version management and  
- **poetry** for python package/venv management  
-
-
-<!-- I'm using xcode, but included this to note the need to change .bash_profile to .zshrc -->
-
-If you chose not to install Xcode, you’ll need to add the SDKROOT environment variable to your shell:
-
-	echo "export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk" >> ~/.bash_profile
-
-If using zsh, change the end of that last command from ~/.bash_profile to ~/.zshrc .
-
-	echo "export SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk" >> ~/.zshrc
-
-
-Install pyenv:
-
-	brew install pyenv
-
-Add pyenv to your shell:
-
-	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
-
-If using zsh, change the end of that last command from ~/.bash_profile to ~/.zshrc
-
-	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
-
-(Optional) You can also <code>brew install pyenv-virtualenv</code> to add virtualenv support to pyenv, but it’s not required since most of the virtualenv work you’ll do with poetry after we install it later. Some people like the pyenv-virtualenv support anyway.  
-
-For the next step, see the [definitive guide](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0) script for installing Python as a safety net. <!-- skipped because I'd already done this -->  Include python 2.7 <!-- might need this -->
-
-	python -V
-
-Pick a version, then set it as the global python version:
-
-	pyenv global 3.7.6
-
-### Install poetry
-
-Why you should use poetry:  
-Obsoletes virtualenv, virtualenvwrapper, pipenv, setup.py, requirements.txt, and more.
-
-
-\~/ translates to your user’s home directory
-
-
-
-My .bash_profile contains:
-
-	# aliases
-	alias cd..="cd .."
-	alias l="ls -al"
-	alias lp="ls -p"
-	alias h=history
-
-## Wazimap Census Reporter (Setup)
+## Postgres Setup
 
 
 Based on the [Wazimap Setup](https://wazimap.readthedocs.io/en/latest/started.html)  
@@ -115,18 +55,45 @@ Optional, if you need postgresql to be launched on login:
 	Or, if you don't want/need a background service you can just run:
 	  pg_ctl -D /usr/local/var/postgres start
 
-## Using venv
+
+
+## Virtual Environment Setup
+
+Venv and Django with Postgres
+
+These steps have not yet been tried here. Copied from PyAtl. These were successful with farmfresh scrapper.  
+
+### Setup
+
+Setup the environment:
+
+`python3 -m venv .venv`
+
+OSX / Linux:
+
+`source .venv/bin/activate`
+
+Windows:
+
+`\.venv\Scripts\activate.bat`
+
+
+### Using venv
+
+These are the original instrucions:  
+
 
 This will install Python 3.7.3 (or latest) and create a subfolder called "env"   
 --prompt is optional for showing a name before your terminal prompt.  
 If your default is still python 2, then start commands with python3.  
+<!-- Loren added 3 to python 3 below, just in case -->
 
-	python -m venv ~/Documents/env1 --prompt MYTEST
+	python3 -m venv ~/Documents/env1 --prompt MYTEST
 
 Or if your are already in the folder where you're creating your environment...  
 (Default directory on a mac is Users/[username].)  
 
-	python -m venv env1
+	python3 -m venv env1
 
 Exclude your virtual environment directory from your version control system by adding "env1" to .gitignore
 
@@ -209,14 +176,14 @@ DBeaver shortcuts
 	You can generate SQL statements (SELECT/INSERT/UPDATE/DELETE) based on selected rows. To generate SQL, right-click the selected rows, then click Generate SQL and select one of the SQL commands you see.
 
 
-## django
+## Django Troubleshooting
 
-Trying to get site to appear at: http://localhost:8000/admin
-https://docs.djangoproject.com/en/3.0/intro/tutorial01/
+Trying to get site to appear at: http://localhost:8000/admin  
+[Django Tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
 	django-admin startproject mysite
 	cd mysite
-	python manage.py runserver
+	python3 manage.py runserver
 
 Stop dejango site
 

@@ -11,7 +11,7 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">Challenge Rules</a>
+<a href="challenge/" class="btn btn-primary">About Event</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
@@ -34,7 +34,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 **B. Supply Chain Inflow-Outflow Charts**  
 - Updates to Sankey D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
-- Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](start/charts/sankey/)  
+- Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](../io/charts/sankey/)  
 
 
 **C. Industry Level Estimates for Counties and Zipcodes**  
@@ -88,14 +88,14 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 ### Python and R-Language
 
-1. Create and update scripts that pull data and pre-process into csv and json files.  
+1. Create and [update](industries/) scripts that pull data and pre-process into csv and json files.  
 
 1. Work with the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) and update [Input-Output charts](https://github.com/USEPA/useeio-widgets). Widgets are loaded from JSON files generated from 
 our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) on AWS <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
 
 1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/)
 
-1. Modernize [Census Reporter](https://censusreporter.org/profiles/86000US30313-30313/) by staring with Python 3.* Wazimap fork used in Africa and India. Populate database using most recent US Census API. [Our notes](resources/censusreporter)
+1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3.* Wazimap fork used in Africa and India.  
 
 ### Microsoft .NET
 
@@ -114,20 +114,24 @@ Maintain a list of your time contributions to increase your award potential!
 
 ## Bubble Chart
 
-D3 - [View Widget](../input-output/bubbles/) 
+D3 - [View Widget](../io/charts/bubble/) 
 
 - Modify so popups still appear when the containing div is set to position:relative. 
 - Scale to size of containing div during browser resize.
 - Set the default bubble color to red for more pop.
-- Omit red from the scale when other [bubbles are highlighted](../localsite/info/)
+- Omit red from the scale when other [bubbles are highlighted](../localsite/info/).  
+- Create React version.  
 
-## Industry-List plus Mosaic Widget
+## Industry-List and Mosaic
 
-React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
+React - [View Widget](../io/build/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
 
+- When column selected, avoid dimming other columns.  
+<img style="display:inline; float:right; width:60px" src="img/overview/slider-mockup.png">  
+- Add [sliders](https://material-ui.com/components/slider/) to right of rows to adjust levels for multiplier effect.  
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
 - Show list of selected sectors under "X selected" tab
-- As default, turn-off movement of selected checkbox. Duplicate in X selected tab instead.
+- As default, turn-off movement of selected checkbox. Show duplicates in X selected tab instead.
 - Display parent categories that open to reveal subcategories
 - Display the quantity selected after each parent category title in parenthesis
 - Custom sets could use the same csv/json format.
@@ -141,14 +145,33 @@ React - [View Widget](../io/charts/useeio/industry_list.html?view=mosaic&count=5
 - Actions could include: Display on map, Display bar chart, Generate Report
 
 
+## Slider Details  
+
+The editable number could appear when clicking the slider.  
+The editable number could disappear after a few seconds of inactivity.  
+
+The slide bar could replace the bar currently to the right of the rows.  
+The dot could be relative to the other rows, matching how you have the bar length.  
+
+The bar could turn green when a commodity has been increased from its default.  
+The bar could turn red when a commodity has been decreased from its default.  
+
+The sliders will be used to show multiplier effects.  
+
+The hash syntax for a 99% and 300% adjustment could be:  
+sectors=311615:99,550000:300  
+
+
 ## Impact Bar Chart
 
-React - [View Widget](../io/charts/useeio/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
+React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
-- Update for use with Darkly bootstrap, similar to [bubble chart](../input-output/bubbles) - click bubble to view impact chart.  
+
+- Create an example with three coluns and one impact area per colums.  
+- Display sector titles to the left of the first column.
 - Display sector name over each bar.  
 - Display description of each indicator
-
+- Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
 
 ## Last Airbender
 
@@ -211,7 +234,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">Challenge Rules</a>
+<a href="challenge/" class="btn btn-primary">About Event</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 

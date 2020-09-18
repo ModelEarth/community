@@ -1,15 +1,15 @@
 <!-- MOVED TO Community/Challenge/README.md -->
 
-<h1 style="font-weight:300"><span style="white-space:nowrap">Sustainable Communities Web Challenge</span></h1>
+<h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-Form a team, join an existing team or compete individually in our upcoming virtual events presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
+<h3>We're aiming for: <span style="white-space:nowrap">Saturday and Sunday, January 23 & 24, 2021</span></h3>
+
+Form a team, join an existing team or compete individually in our spring weekend event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
 We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. International trade components using Harmonized System (HS) codes are also encouraged.  
 
-We're using the new environmentally-extended input-output model called 
+We're using the new US Environmentally-Extended Input-Output model called 
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency&nbsp;(EPA)</a>. 
-
-
 
 <!--
 	We're looking for communities, companies and coders to participate in implementing innovative sustainability apps created in partnership with the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
@@ -21,7 +21,9 @@ Possible projects include updates to Wazimap Census Reporter which is used in Af
 
 [Opportunities for Communities](../../io/communities/) - [Embeddable IO Widgets](../../io/charts/)  
 
-Register now and join our Slack Channel. We'll be announcing dates soon!  
+<a href="https://www.challenge.gov/">View more US Gov web challenges at Challenge.gov</a>  
+
+Register now and join our Slack Channel.  
 
 <div style="margin-top:20px">
 <a href="registration/" class="btn btn-success">Register to participate</a>
