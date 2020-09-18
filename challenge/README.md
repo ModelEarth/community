@@ -22,6 +22,9 @@ Possible projects include updates to Wazimap Census Reporter which is used in Af
 [Opportunities for Communities](../../io/communities/) - [Embeddable IO Widgets](../../io/charts/)  
 
 <a href="https://www.challenge.gov/">View more US Gov web challenges at Challenge.gov</a>  
+<!--
+	https://www.challenge.gov/toolkit/
+-->
 
 Register now and join our Slack Channel.  
 
