@@ -1,12 +1,11 @@
-<h1 class="h1-home">Sustainable Communities Web Challenge</h1>
+<h1 class="h1-home">Sustainable Communities Web&nbsp;Challenge</h1>
 
 
-<h3 style="font-weight:400">Monday, Sept. 21, 2020 to Sunday, Oct. 25, 2020</h3>
+<h3 style="font-weight:400">Saturday and Sunday, January 23 and 24, 2021</h3>
 
 
 <div class="challenge-details">
-We're combining economic data, community resources and planning input to create new environmental indicator models. 
-Choose an area below to compete for $10,000 in awards.  Use the US EPA's new input-output widgets to create tools for communities with 24 environmental indicators and almost 400&nbsp;industries.<br><br> 
+We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards using new input-output widgets to create interfaces for communities with 24 environmental indicators across 388&nbsp;industries.<br><br> 
  
 </div>
 
