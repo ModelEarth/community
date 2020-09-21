@@ -1,11 +1,12 @@
-<h1 class="h1-home">Sustainable Communities Web Challenge</h1>
+<h1 class="h1-home">Sustainable Communities Web&nbsp;Challenge</h1>
 
-<div style="display:none" class="challenge-details">
-<h3 style="font-weight:400">Monday, Sept. 21, 2020 to Sunday, Oct. 25, 2020</h3>
 
-Choose an area below to compete for $10,000 in awards.  Winning entries will use the US EPA's Input-Output Widgets to create tools for communities using 24 environmental indicators applied to close to 400 industries.  
+<h3 style="font-weight:400">Saturday and Sunday, January 23 and 24, 2021</h3>
 
-<b>Slack Workspace:</b> [model-earth.slack.com](https://model-earth.slack.com/) - Register Online first to be added to Slack.   
+
+<div class="challenge-details">
+We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards using new input-output widgets to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br> 
+ 
 </div>
 
 <div>
@@ -16,20 +17,28 @@ Choose an area below to compete for $10,000 in awards.  Winning entries will use
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
 <a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop</a>
+<br><br>
+
+<b>Slack Workspace:</b> <a href="https://model-earth.slack.com/">model-earth.slack.com</a>
 
 </div>
 
 ## Project Areas
 
 <div style="display:none" class="challenge-details">
+
+
+
+<!--
 Teams that contribute to these broad areas have a good chance of earning an award of 
 <span style="white-space: nowrap">$1,000, $1,500 or $2,500.</span>
+-->
 </div>
 
-**A. Zipcode Demographics, Industries, Impacts and Machine Learning**  
+**A. Demographics, Industry Analytics, Impacts and Machine Learning**  
 - Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
 - Add zipcode demographics using [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html). (Python and D3)  
-- Analyse and visualize relationships between demographics, industries and impacts.  
+- Create data visualizations of the interplay between demographics, industries and impacts.  
 
 
 **B. Supply Chain Inflow-Outflow Charts**  

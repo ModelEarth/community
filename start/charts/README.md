@@ -35,7 +35,7 @@ View <a href="../../../io/charts/sankey/">Interactive Version</a><br><br>
 
 ### Bubble
 
-[Bubble with Regression line](bubble/)  
+[Bubble with Regression line](../../../io/charts/bubble/)  
 
 ### ThreeJS Force Graph
 

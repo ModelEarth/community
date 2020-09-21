@@ -2,7 +2,8 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-<h3>We're aiming for: <span style="white-space:nowrap">Saturday and Sunday, January 23 & 24, 2021</span></h3>
+<!-- We're aiming for:  -->
+<h3><span style="white-space:nowrap">Saturday and Sunday, January 23 & 24, 2021</span></h3>
 
 Form a team, join an existing team or compete individually in our spring weekend event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
