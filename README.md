@@ -37,8 +37,8 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 **A. Demographics, Industry Analytics, Impacts and Machine Learning**  
 - Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
-- Add zipcode demographics using [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html). (Python and D3)  
-- Create data visualizations of the interplay between demographics, industries and impacts.  
+- Add zipcode demographics using [uszipcode.readthedocs.io](https://github.com/MacHu-GWU/uszipcode-project). (Python and D3)  
+- Create and update <a href="../io/charts/">data visualizations</a> of the interplay between demographics, industries and impacts.  
 
 
 **B. Supply Chain Inflow-Outflow Charts**  
