@@ -1,6 +1,6 @@
 # Industries by Zip Code (ZCTA)
 
-Use the [ZIP Codes Business Patterns (ZBP) API](https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html) and create a new Python script similar to our [BEA County API script](../../localsite/info/data/) that pre-processes county industry levels while filling in gaps using state totals. Both counties and zip codes will be displayed in the [info page](../info/).  Here's an [industry map clustering sample](../../community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50).  
+Using the [ZIP Codes Business Patterns (ZBP) API](https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html), a new Python script can be created similar to our [BEA County API script](../../localsite/info/data/) to pre-processes zipcode level industry data while filling in gaps using state totals. Both counties and zip codes can be displayed in the [info page](../info/).  Here's an [industry map clustering sample](../../community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50).  
 
 Using Python, combine with [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html) demographics data, or pull from another source.    
 
