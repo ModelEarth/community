@@ -1,10 +1,6 @@
 
 # Web Challenge Rules
 
-Environmentally-Enabled Input-Output Widgets
-
-  
-
 <!--
 Supply chain "License to Operate" with the support of the community.
 
@@ -76,12 +72,12 @@ Teams will collaborate using one or more of the following:
 
 **Rules for Entries** 
 
+- Entries should be maintained in one or more public github repositories 
 - Entries should be easy to integrate with other projects.  
 - Please avoid using CMS content systems like Wix and WordPress.  
 - Provide documentation of set-up steps in a markdown file.
 - Include an index.html file that loads your readme.md file into HTML 
-  (The "[localsite](../../localsite/)" repo provides a process for displaying readme files.).
-- Have judges try your install steps multiple times before the competition ends.  
+  (The "[localsite](../../localsite/)" repo provides a process for displaying readme files.). 
 - Detached frontends should have an index.html file in their root.
 - Detached frontends should work under any domain when hosted as a Github fork.  
 - Employees of EPA, GDED and GDIT are not eligible for awards.  
