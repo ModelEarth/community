@@ -352,9 +352,7 @@ function ready([us]) {
               'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
               mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
 
-          var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-              satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
-              streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+          var satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr})
 
           var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
               maxZoom: 18,
@@ -366,12 +364,10 @@ function ready([us]) {
               scrollWheelZoom: false,
               center: new L.LatLng(lat,lon),
               zoom: zoom,
-              layers: [streets, dataParameters[0].group] // Indicates default layer
+              layers: [OpenStreetMap_BlackAndWhite, dataParameters[0].group] // Indicates default layer
           });
           var baseLayers = {
             "Open Street Map": OpenStreetMap_BlackAndWhite,
-            "Grayscale Mapbox": grayscale,
-            "Streets Mapbox": streets,
             "Satellite Mapbox": satellite
           };
           var overlays = {
