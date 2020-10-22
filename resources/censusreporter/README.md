@@ -2,7 +2,7 @@
 # Census Reporter  
 
 We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-enabled input-output](../../../io/charts/) widgets 
-and audio-based [social safety net](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) assitance.  
+and [social safety net tools](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
 
 ### CensusReporter - Django - PostgreSQL
 
@@ -18,7 +18,12 @@ Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa 
 Place Wazimap fork of CensusReporter into a [Python Docker container](https://hub.docker.com/_/python) for easier install.  
 Place Census Reporter database into [PostgreSQL Docker container](https://hub.docker.com/_/postgres) with files for Docker secrets.
 
+Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
+
 **Questions**  
+
+CensusReporter simplifies the Census API. Is there a newer Census API's to integrate?  
+
 During the process, how can we improve on the UI and performance of [data.census.gov](https://data.census.gov).  CensusReporter has the advantage of generting static files. Let's create shorter URLs.  
 
 How can demographics data, maps and machine learning be integrated around [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/)?
