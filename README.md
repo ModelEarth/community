@@ -16,7 +16,7 @@ We're combining economic and envronmental data with planning input using the EPA
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop</a>
+<a href="challenge/slack/" class="btn btn-danger">Slack Groups</a>
 <br><br>
 
 <b>Slack Workspace:</b> <a href="https://model-earth.slack.com/">model-earth.slack.com</a>
@@ -246,7 +246,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop</a>
+<a href="slack/" class="btn btn-danger">Slack Groups</a>
 
 </div>
 
