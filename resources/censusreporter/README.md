@@ -1,7 +1,7 @@
 
 # Census Reporter  
 
-We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30318-30318/) to include [environmentally-enabled input-output](../../../io/charts/) widgets 
+We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-enabled input-output](../../../io/charts/) widgets 
 and audio-based [social safety net](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) assitance.  
 
 ### CensusReporter - Django - PostgreSQL
