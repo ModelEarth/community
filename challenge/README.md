@@ -3,7 +3,7 @@
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
 <!-- We're aiming for:  -->
-<h3><span style="white-space:nowrap">Saturday and Sunday, January 23 & 24, 2021</span></h3>
+<h3><span style="white-space:nowrap">Early 2021 - Sign up Today to be Notified of the Selected Dates!</span></h3>
 
 Form a team, join an existing team or compete individually in our weekend event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
@@ -12,20 +12,10 @@ We're combining national and state-level economic data, community resources and 
 We're using the new US Environmentally-Extended Input-Output model called 
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency&nbsp;(EPA)</a>. 
 
-<!--
-	We're looking for communities, companies and coders to participate in implementing innovative sustainability apps created in partnership with the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency (EPA)</a>. 
--->
-
-<!--
-Possible projects include updates to Wazimap Census Reporter which is used in Africa and India.  
--->
 
 [Opportunities for Communities](../../io/communities/) - [Embeddable IO Widgets](../../io/charts/)  
 
 <a href="https://www.challenge.gov/">View more US Gov web challenges at Challenge.gov</a>  
-<!--
-	https://www.challenge.gov/toolkit/
--->
 
 Register now and join our Slack Channel.  
 
