@@ -1,8 +1,10 @@
 
 # Census Reporter  
 
-We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30318-30318/) to include [environmentally-enabled input-output](../../../io/charts/) widgets 
-and audio-based [social safety net](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) assitance.  
+We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-enabled input-output](../../../io/charts/) widgets 
+and [social safety net tools](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
+
+[Our Python 3 Fork](https://github.com/modelearth/map)  
 
 ### CensusReporter - Django - PostgreSQL
 
@@ -18,13 +20,18 @@ Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa 
 Place Wazimap fork of CensusReporter into a [Python Docker container](https://hub.docker.com/_/python) for easier install.  
 Place Census Reporter database into [PostgreSQL Docker container](https://hub.docker.com/_/postgres) with files for Docker secrets.
 
+Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates) (includes Django and Gatsby). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
+
 **Questions**  
+
+CensusReporter simplifies the Census API. Is there a newer Census API's to integrate?  
+
 During the process, how can we improve on the UI and performance of [data.census.gov](https://data.census.gov).  CensusReporter has the advantage of generting static files. Let's create shorter URLs.  
 
 How can demographics data, maps and machine learning be integrated around [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/)?
  
 **Pages to Compare**  
-[CensusReporter.com Atlanta](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) - [GitHub repo](https://github.com/censusreporter/censusreporter) - [Python 3 Fork](https://github.com/modelearth/map)  
+[CensusReporter.com Atlanta](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) - [GitHub repo](https://github.com/censusreporter/censusreporter) - [Our Python 3 Fork](https://github.com/modelearth/map)  
 [Data.Census.gov Atlanta](https://data.census.gov/cedsci/profile?g=1600000US1304000)  
 
 **Areas for improvements**  
@@ -34,7 +41,6 @@ International contributions
 Sortable tables and lists below maps  
 
 **React Interface**  
-Add our [Google Auto Complete Sample](../../../localsite/map/auto/) to the USEEIO-widgets [React Build](../../../io/charts/).  
 Expand upon the [EPA's Environmentally-Enabled IO Charts](../../../io/charts/) and integrate with community data portals.  
 
 

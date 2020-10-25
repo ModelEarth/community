@@ -16,7 +16,7 @@ We're combining economic and envronmental data with planning input using the EPA
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop</a>
+<a href="challenge/slack/" class="btn btn-danger">Slack Groups</a>
 <br><br>
 
 <b>Slack Workspace:</b> <a href="https://model-earth.slack.com/">model-earth.slack.com</a>
@@ -37,8 +37,8 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 **A. Demographics, Industry Analytics, Impacts and Machine Learning**  
 - Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
-- Add zipcode demographics using [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html). (Python and D3)  
-- Create data visualizations of the interplay between demographics, industries and impacts.  
+- Add zipcode demographics using [uszipcode.readthedocs.io](https://github.com/MacHu-GWU/uszipcode-project). (Python and D3)  
+- Create and update <a href="../io/charts/">data visualizations</a> of the interplay between demographics, industries and impacts.  
 
 
 **B. Supply Chain Inflow-Outflow Charts**  
@@ -97,14 +97,14 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 ### Python and R-Language
 
-1. Create and [update](industries/) scripts that pull data and pre-process into csv and json files.  
+1. Create and update scripts that pull data and pre-process into csv and json files for [industry zip code searches](industries/) and [local commodity searchs](/localsite/info/data/).  
 
 1. Work with the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) and update [Input-Output charts](https://github.com/USEPA/useeio-widgets). Widgets are loaded from JSON files generated from 
 our [API endpoints](https://s3.amazonaws.com/useeio-api-go-swagger-staging/index.html) on AWS <!-- also https://smmtool.app.cloud.gov/ -->for Goods & Services demand vectors (Food System and Full System).  
 
-1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/)
+1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3 Wazimap [fork](resources/censusreporter) used in Africa and India. Integrate US demographic data from Python 2 version. Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
 
-1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3.* Wazimap fork used in Africa and India.  
+1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/)  
 
 ### Microsoft .NET
 
@@ -137,11 +137,10 @@ React - [View Widget](../io/build/industry_list.html?view=mosaic&count=50) - [De
 
 - When column selected, avoid dimming other columns.  
 <img style="display:inline; float:right; width:60px" src="img/overview/slider-mockup.png">  
-- Add [sliders](https://material-ui.com/components/slider/) to right of rows to adjust levels for multiplier effect.  
+- Add [sliders](https://material-ui.com/components/slider/) to right of rows to adjust levels for multiplier effect - DONE.  
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
-- Show list of selected sectors under "X selected" tab
-- As default, turn-off movement of selected checkbox. Show duplicates in X selected tab instead.
-- Display parent categories that open to reveal subcategories
+- Show list of selected sectors under "X selected" tab. Include duplicate checkboxes in "X selected" tab.  
+- Display parent NAICS industry categories that open to reveal subcategories
 - Display the quantity selected after each parent category title in parenthesis
 - Custom sets could use the same csv/json format.
 
@@ -247,7 +246,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="slack://channel?id=C018UHD088P&team=T0199FVNEGK" class="btn btn-danger">Slack Desktop</a>
+<a href="slack/" class="btn btn-danger">Slack Groups</a>
 
 </div>
 
