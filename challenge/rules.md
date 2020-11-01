@@ -76,7 +76,7 @@ Teams will collaborate using one or more of the following:
 - Entries should be easy to integrate with other projects.  
 - Please avoid using CMS content systems like Wix and WordPress.  
 - Provide documentation of set-up steps in a markdown file.
-- Include an index.html file that loads your readme.md file into HTML 
+- Include an index.html file that loads your readme.md file into HTML  
   (The "[localsite](../../localsite/)" repo provides a process for displaying readme files.). 
 - Detached frontends should have an index.html file in their root.
 - Detached frontends should work under any domain when hosted as a Github fork.  
@@ -87,8 +87,10 @@ Teams will collaborate using one or more of the following:
 - Utilizes USEEIO Widgets and/or USEEIO APIs effectively  
 - Installs easily using documented steps       
 - Static frontend may be hosted for free using GitHub    
-- Free or very affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->    
-<br>
+- Free or very affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
+
+During judging you may receive requests to update install steps.  
+We&nbsp;recommend having judges try your install in advance.  
 
 <a href="registration/">Register to participate</a> | 
 Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues)  
