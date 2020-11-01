@@ -90,6 +90,6 @@ Teams will collaborate using one or more of the following:
 - Free or very affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->    
 <br>
 
-<a href="challenge/registration/">Register to Participate</a> | 
+<a href="registration/">Register to participate</a> | 
 Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues)  
 <br>
