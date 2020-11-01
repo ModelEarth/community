@@ -89,7 +89,7 @@ Teams will collaborate using one or more of the following:
 - Static frontend may be hosted for free using GitHub    
 - Free or very affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
 
-During judging you may receive requests to update install steps.  
+During judging you may receive requests to update your install steps.  
 We&nbsp;recommend having judges try your install in advance.  
 
 <a href="registration/">Register to participate</a> | 
