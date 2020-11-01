@@ -2,8 +2,8 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-<!-- We're aiming for:  -->
-<h3><span style="white-space:nowrap">Early 2021 - Sign up Today to be Notified of the Selected Dates!</span></h3>
+<!-- We're aiming for: Saturday and Sunday, January 23 & 24, 2021 -->
+<h3><span style="white-space:nowrap">Early 2021 - Sign up to be notified of the selected dates!</span></h3>
 
 Form a team, join an existing team or compete individually in our weekend event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
@@ -23,16 +23,13 @@ Register now and join our Slack Channel.
 <a href="registration/" class="btn btn-success">Register to participate</a>
 <a href="../" class="btn btn-warning">View Project Areas</a>
 <a href="slack" class="btn btn-danger">Slack Groups</a>
-</div><!-- CSE 6242
-https://app.slack.com/client/T8L2KN1AP/C8L4VC44A/thread/C8L4VC44A-1598213938.153700
--->
-
-<div style="margin-top:16px"></div>
-<b>Slack Workspace:</b> model-earth.slack.com <!--- 
-<a href="slack/">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)-->  
+</div>
 
 
-<!--
+<!-- 
+<a href="slack/">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)
+<b>Slack Workspace:</b> model-earth.slack.com 
+
 ## $10,000 in Challenge Awards
 
 Tentative breakdown - Judges may adjust these levels based on team size and levels of commitment.  
@@ -50,27 +47,23 @@ Implementation project 2: $2,000
 The implementation portion will be allocated based on pitches from teams after the award recipients are named.  Implementation projects will be distributed upon project completion within 3 months after the challenge.  
 
 
-## Tenative Schedule
+### Sustainable Communities Web Challenge
+
+<b>Saturday, January - </b> - Virtual Kickoff on Zoom    
+  
+<b>Saturday, January</b> - Final Round, Integrations 
+
+<b>Sunday, January - 2 PM to 4 PM</b> - Zoom Presentations and Awards  
 
 
-<b>Day 0 - 7 PM</b> - Virtual Kickoff on Zoom    
+<b>Project participants will explore</b>
+1. Goods and services each community produces    
+2. The environmental impact of each community's top industries  
+3. How new technologies can change a community's impact  
+4. Ways communities are using and reusing materials to fuel net zero initiatives  
 
-<b>Day 1 - 11 AM to noon</b> - Final Round, Integrations 
-
-<b>Day 2 - 2 to 4 PM</b> - Zoom Presentations and Awards  
+Judges will use Slack video to deliberate while using a Google Form for calculating scores for the Oct 25 awards.<br><br>
 -->
-
-
-<div style="display:none" class="challenge">
-<a href="registration/">Register to participate</a> - Contribute your coding and data skills to help communities and businesses work toward becoming net zero.  
-</div>
-
-<!--
-A panel of judges will use Slack video to deliberate while using a Google Form for calculating scores for the Oct 25 awards.<br><br>
--->
-
-
-
 
 
 
