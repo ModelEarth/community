@@ -16,10 +16,8 @@ We're combining economic and envronmental data with planning input using the EPA
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="challenge/slack/" class="btn btn-danger">Slack Groups</a>
-<br><br>
+<a href="challenge/slack/" class="btn btn-danger">Slack Clubs</a>
 
-<b>Slack Workspace:</b> <a href="https://model-earth.slack.com/">model-earth.slack.com</a>
 
 </div>
 
