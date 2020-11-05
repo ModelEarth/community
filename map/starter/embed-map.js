@@ -543,6 +543,7 @@ strVar += "<div style=\"display:none;margin:20px 10px 20px 17px; min-width:195px
 strVar += "  <div class=\"catList\" id=\"industryCatList\">";
 strVar += "    <div>All Categories<\/div>";
 strVar += "    <div>Air Purifying Machines<\/div>";
+strVar += "    <div>Barrier/Sneeze Guards<\/div>";
 strVar += "    <div>Face Shields<\/div>";
 strVar += "    <div>Gloves<\/div>";
 strVar += "    <div>Hair Covers<\/div>";
