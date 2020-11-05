@@ -80,14 +80,19 @@ Teams will collaborate using one or more of the following:
   (The "[localsite](../../localsite/)" repo provides a process for displaying readme files.). 
 - Detached frontends should have an index.html file in their root.
 - Detached frontends should work under any domain when hosted as a Github fork.  
-- Employees of EPA, GDED and GDIT are not eligible for awards.  
+- Static frontend may be hosted for free using GitHub
+- Free or very affordable options for hosting for associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
 
-**Judging Rubric**  
+_Employees of EPA, GDED and GDIT are not eligible for awards.  _
 
-- Utilizes USEEIO Widgets and/or USEEIO APIs effectively  
-- Installs easily using documented steps       
-- Static frontend may be hosted for free using GitHub    
-- Free or very affordable options for hosting<!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
+**Judging Criteria**  
+(relative weight of criteria in parentheses)
+
+- Conforms with Rules for Entry (20%) 
+- Utilizes USEEIO Widgets and/or USEEIO APIs effectively (20%)
+- Installs easily using documented steps (20%)
+- Visually appealing and supports clear interpretation (20%)
+- Integrates with other location-based data sources or pulls in other community-oriented tools to make the results from widgets more community-relevant (20%)
 
 During judging you may receive requests to update your install steps.  
 We&nbsp;recommend having judges try your install in advance.  
