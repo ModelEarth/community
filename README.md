@@ -40,7 +40,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 
 **B. Supply Chain Inflow-Outflow Charts**  
-- Updates to Sankey D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
+- Updates to Sankey D3 Charts, Leaflet Maps with [Maps for Us](../../localsite/map/mapsforus/) and Filters for [Industry Impact Evaluator](../localsite/info/)  
 - Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](../io/charts/sankey/)  
 
 
