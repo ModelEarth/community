@@ -1,7 +1,7 @@
 # Map Samples
 
 <!-- ## [Widget Mockup for EPA (layout)](../../resources/layout/)-->
-## [Data Projects (map starter)](../../map/starter/) - [embeddable widget](../../map/starter/embed.html)
+## [Data Projects (map starter)](../../../localsite/map/) - [embeddable widget](../../map/starter/embed.html)
 <!--## [Map Points (hubs)](../../hubs/#route=us.ga_to_bs)-->
 ## [Regions & Counties (counties)](counties/counties.html)
 ## [US Income (income)](../../map/income)
