@@ -1,9 +1,14 @@
-# MapsForUs - Updates
+# MapsForUs
 
-We're working on updates for [Maps For Us](https://mapsfor.us/) - a map display process for Google Sheets.    
+We're integrating [Maps For Us](https://mapsfor.us/) - a map display process using Google Sheets.    
 
-Add to our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml). 
+View our [Google Sheet](https://docs.google.com/spreadsheets/d/1JDD36dOvy5TWsmfg0g4r8x9MMyuidRgpJAdDFD9HiTQ/edit#gid=1284085090) and resulting [sample map](sample.html).
+
+<!--
+[Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml). 
 Editable link is in our Slack #epa group.
+-->
+
 
 ---
 
@@ -24,7 +29,7 @@ The geocoding maximum execution time allows for about 180 rows to be coded each 
 
 It works by having a separate sheet for form submissions and doing the work there then copying the line into the main Points sheet. There's a separate Errors sheet where rows are added if there was a problem with the geocoding process for manual cleanup.  
 
-MapsForUs feeds the calendar at [folkmusic.com](https://www.folkmusic.com/shows.html). Site admins add shows with a Google Form and manually update the spreadsheet if things need to be changed after that.
+MapsForUs feeds the calendar at [folkmusic.com](https://www.folkmusic.com/shows.html). Site admins add folk music shows with a Google Form and manually update the spreadsheet if things need to be changed after that.
 
 ```
 function geocodeAndMove() {
@@ -171,5 +176,3 @@ function myFunction() {
   .setValues(longitudes);
 }
 -->
-<hr>
-[Dev Areas](../../)

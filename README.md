@@ -213,10 +213,7 @@ Fix JSON reader in [zip search](zip/#zip=30315)
 
 1. Use [PWA Starter](resources/pwa) to add an index.html page and thumbnails to the pwa folder.
 
-1. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
-
-
-1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
+1. Deploy Leaflet in Widget. See [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
 
 1. Cross-relate Goods & Services NAICS industries with Harmonized System (HS Codes) for [International Trade](https://georgiadata.github.io/display/products/)
