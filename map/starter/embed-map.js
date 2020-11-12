@@ -543,6 +543,7 @@ strVar += "<div style=\"display:none;margin:20px 10px 20px 17px; min-width:195px
 strVar += "  <div class=\"catList\" id=\"industryCatList\">";
 strVar += "    <div>All Categories<\/div>";
 strVar += "    <div>Air Purifying Machines<\/div>";
+strVar += "    <div>Barriers<\/div>";
 strVar += "    <div>Face Shields<\/div>";
 strVar += "    <div>Gloves<\/div>";
 strVar += "    <div>Hair Covers<\/div>";
@@ -1356,7 +1357,7 @@ function leafletLoaded(root, count) {
 	if (typeof L !== 'undefined') {
 		console.log(L);
 	  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
-		loadScript(root + '/community/js/leaflet/leaflet.icon-material.js');
+		loadScript(root + '/localsite/js/leaflet.icon-material.js');
 		loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
 			loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
 				loadScript(root + '/localsite/js/map.js', function(results) { // BUG - change so dual-map does not require this on it's load

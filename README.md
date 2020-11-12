@@ -16,10 +16,8 @@ We're combining economic and envronmental data with planning input using the EPA
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="challenge/slack/" class="btn btn-danger">Slack Groups</a>
-<br><br>
+<a href="challenge/slack/" class="btn btn-danger">Slack Clubs</a>
 
-<b>Slack Workspace:</b> <a href="https://model-earth.slack.com/">model-earth.slack.com</a>
 
 </div>
 
@@ -42,7 +40,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 
 **B. Supply Chain Inflow-Outflow Charts**  
-- Updates to Sankey D3 Charts, Leaflet Maps and Filters for [Industry Impact Evaluator](../localsite/info/)  
+- Updates to Sankey D3 Charts, Leaflet Maps with [Maps for Us](../../localsite/map/mapsforus/) and Filters for [Industry Impact Evaluator](../localsite/info/)  
 - Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](../io/charts/sankey/)  
 
 
@@ -215,10 +213,7 @@ Fix JSON reader in [zip search](zip/#zip=30315)
 
 1. Use [PWA Starter](resources/pwa) to add an index.html page and thumbnails to the pwa folder.
 
-1. Display [Georgia Recycling data](recycling/ga/) in Leaflet map layers.
-
-
-1. Deploy Leaflet in Widget. Include [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
+1. Deploy Leaflet in Widget. See [windy.com](https://windy.com) weather layer using their [API for Leaflet](https://github.com/windycom/API).
 
 
 1. Cross-relate Goods & Services NAICS industries with Harmonized System (HS Codes) for [International Trade](https://georgiadata.github.io/display/products/)
