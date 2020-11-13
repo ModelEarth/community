@@ -173,7 +173,7 @@ sectors=311615:99,550000:300
 React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
 
-- Create an example with three coluns and one impact area per colums.  
+- Create an example with three columns and one impact area per colums.  
 - Display sector titles to the left of the first column.
 - Display sector name over each bar.  
 - Display description of each indicator
