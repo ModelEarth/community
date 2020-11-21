@@ -91,11 +91,13 @@ Arts, entertainment, recreation <br>
 <img id="ARicon" src="art.svg" width = '10%' height = '10%'> <span class="material-icons">color_lens</span>
 
 Accommodation and Food Services <br>
-<img id="ACicon" src="food.svg" width = '10%' height = '10%'> <span class="material-icons">restaurant</span>
+<img id="ACicon" src="food.svg" width = '10%' height = '10%'> <span class="material-icons">restaurant</span>  
 
 Public Administration <br>
-<img id="GOicon" src="government.svg" width = '10%' height = '10%'>  <span class="material-icons">account_balance</span>
+<img id="GOicon" src="government.svg" width = '10%' height = '10%'>  <span class="material-icons">account_balance</span>  
 
+More icons: <a href="https://www.flaticon.com/" target="_blank">flaticon.com</a>
+<br>
 
 <h2>Font Awesome Icons</h2>
 

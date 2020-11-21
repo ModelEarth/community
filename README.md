@@ -134,50 +134,48 @@ D3 - [View Widget](../io/charts/bubble/)
 React - [View Widget](../io/build/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
 
 - When column selected, avoid dimming other columns.  
-<img style="display:inline; float:right; width:60px" src="img/overview/slider-mockup.png">  
-- Add [sliders](https://material-ui.com/components/slider/) to right of rows to adjust levels for multiplier effect - DONE.  
+- React javascript is too big (2MB and growing). Split out widgets.     
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
 - Show list of selected sectors under "X selected" tab. Include duplicate checkboxes in "X selected" tab.  
 - Display parent NAICS industry categories that open to reveal subcategories
 - Display the quantity selected after each parent category title in parenthesis
-- Custom sets could use the same csv/json format.
 
 - Toggle matrices using a dropdown menu to select a matrix
 - List by parent category.
-- Include a 3-dot menu with the options: Sort alphabetical, Change matrix, Show values 
+- Include menu with options: Alphabetical, Show values 
 - Show values like [sortable example](https://model.earth/community/start/dataset/sortable.html)
 - Include verticle column name like [dataset example](https://model.earth/community/start/dataset/)
 - Highlight an "Action" menu when checkboxes are clicked
 - Actions could include: Display on map, Display bar chart, Generate Report
 
 
-## Slider Details  
+## Inflow-Outflow Chart
 
-The editable number could appear when clicking the slider.  
-The editable number could disappear after a few seconds of inactivity.  
+[Inflow-Outflow Chart](../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - 
+<a href="../io/build/slider.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - 
+<a href="../io/charts/">All Widgets</a>
 
-The slide bar could replace the bar currently to the right of the rows.  
-The dot could be relative to the other rows, matching how you have the bar length.  
+Add Airbender visuals.  
 
+Prevent multiple stepping backing-up by avoiding saving history with each hash change.  
+
+<!--
 The bar could turn green when a commodity has been increased from its default.  
 The bar could turn red when a commodity has been decreased from its default.  
+-->
 
-The sliders will be used to show multiplier effects.  
-
-The hash syntax for a 99% and 300% adjustment could be:  
-sectors=311615:99,550000:300  
-
-
+<!--
 ## Impact Bar Chart
 
 React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
 
-- Create an example with three coluns and one impact area per colums.  
+- Create an example with three columns and one impact area per colums.  
 - Display sector titles to the left of the first column.
 - Display sector name over each bar.  
 - Display description of each indicator
 - Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
+-->
 
 ## Last Airbender
 
