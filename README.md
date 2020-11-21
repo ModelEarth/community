@@ -129,9 +129,9 @@ D3 - [View Widget](../io/charts/bubble/)
 - Omit red from the scale when other [bubbles are highlighted](../localsite/info/).  
 - Create React version.  
 
-## Industry-List and Mosaic
+## Industry-List and Heatmap Mosaic
 
-React - [View Widget](../io/build/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
+React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../io/charts/) 
 
 - When column selected, avoid dimming other columns.  
 - React javascript is too big (2MB and growing). Split out widgets.     
