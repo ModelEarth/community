@@ -13,7 +13,9 @@ We're using the new US Environmentally-Extended Input-Output model called
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency&nbsp;(EPA)</a>. 
 
 
-[Opportunities for Communities](../../io/communities/) - [Embeddable IO Widgets](../../io/charts/)  
+[Embeddable IO Widgets](../../io/charts/)  
+
+[Opportunities for Communities](../../io/communities/)  
 
 <a href="https://www.challenge.gov/">View more US Gov web challenges at Challenge.gov</a>  
 
