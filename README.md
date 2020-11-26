@@ -119,6 +119,10 @@ Add USEEIO widgets to [.NET Environmental Education tools](../setup/) for GEEP p
 Maintain a list of your time contributions to increase your award potential!  
 [Let us know](../localsite/info/input/) what you're working on to avoid overlaps.  
 
+## Community Map
+
+- [Update R-Language script](https://model.earth/community-data/us/) to output dropdown list attributes for map zoom.
+
 ## Bubble Chart
 
 D3 - [View Widget](../io/charts/bubble/) 
@@ -194,7 +198,7 @@ The estimates for these omitted industry values could be generated using the sta
 ##Data Integration
 
 
-1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](info/).  
+1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](../localsite/info/).  
 
 1. Updates for [Farm Fresh - Federal USDA location data](farmfresh/ga) on maps - initially merged for Aglanta.  
 
