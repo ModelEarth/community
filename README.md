@@ -179,7 +179,7 @@ React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210
 
 ## Last Airbender
 
-For potential use in an elementary school education interface, the EPA indicators could be organized by Air, Water, Land, and Fire (Energy), plus two additional categories: Prosperity (Economy) and Wellness (Health).  
+For use as an [elementary school education interface](../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10), the EPA indicators are being organized by Air, Water, Land, and Fire (Energy), Prosperity (Economy) and Health.  
 
 The Airbender categories have been added as Primary and Secondary columns in [LCIA_Indicator_sets.csv](../community-data/us/indicators/LCIA_Indicator_sets.csv) and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 
