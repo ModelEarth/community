@@ -121,7 +121,7 @@ Maintain a list of your time contributions to increase your award potential!
 
 ## Community Map
 
-- [Update R-Language script](https://model.earth/community-data/us/) to output dropdown list attributes for map zoom.
+- [Update R-Language script](../community-data/us/) to output dropdown list attributes for map zoom.
 
 ## Bubble Chart
 
