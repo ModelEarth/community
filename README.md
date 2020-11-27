@@ -1,11 +1,13 @@
 <h1 class="h1-home">Sustainable Communities Web&nbsp;Challenge</h1>
 
 
-<h3 style="font-weight:400">Saturday and Sunday, January 23 and 24, 2021</h3>
+<h3 style="font-weight:400">Virtual Programming Weekend:<br>
+Saturday and Sunday, January 23 and 24, 2021<br>
+Stay tuned for additional 2021 dates</h3>
 
 
 <div class="challenge-details">
-We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards using new input-output widgets to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br> 
+We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using new input-output widgets to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br> 
  
 </div>
 

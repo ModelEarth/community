@@ -83,7 +83,7 @@ Teams will collaborate using one or more of the following:
 - Static frontend may be hosted for free using GitHub
 - Free or very affordable options for hosting for associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
 
-_Employees of EPA, GDED and GDIT are not eligible for awards.  _
+_Employees of EPA, GDEcD and GDIT are not eligible for awards.  _
 
 **Judging Criteria**  
 (relative weight of criteria in parentheses)
