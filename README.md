@@ -1,7 +1,8 @@
 <h1 class="h1-home">Sustainable Communities Web&nbsp;Challenge</h1>
 
 
-<h3 style="font-weight:400">Virtual Programming Weekend:<br>
+<h3 style="font-weight:400">
+<div style="font-size: 14px">Virtual Programming Weekend:</div>
 Saturday and Sunday, January 23 and 24, 2021<br>
 Stay tuned for additional 2021 dates</h3>
 
