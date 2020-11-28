@@ -7,7 +7,8 @@ Using Python, combine with [uszipcode.readthedocs.io](https://uszipcode.readthed
 Here's an older [prep all](../prep/all/) script with industries by zip code from spreadsheets with a random forest applied. 
 
 Script for generating state centroids from TIGER data resides in:  
-[community/info/rstudio](../info/rstudio)  
+[model.earth/community-data/us/](https://model.earth/community-data/us/) and 
+[community/info/rstudio](../info/rstudio)(older)  
 <br>
 
 
