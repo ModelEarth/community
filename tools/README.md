@@ -5,4 +5,4 @@ Learn more at [Georgia Smart Communities Projects](http://smartcities.ipat.gatec
 -->
 
 Join us in designing <a href="../../localsite/info" style="white-space: nowrap">Industry Evaluators</a> and 
-<a href="../../localsite/info/#go=bioeconomy" style="white-space: nowrap">Bioeconomy Planners</a> during our [Fall&nbsp;Web&nbsp;Challenge](../challenge/).
+<a href="../../localsite/info/#go=bioeconomy" style="white-space: nowrap">Bioeconomy Planners</a> during our [2021 Web Challenge](../challenge/).
