@@ -3,7 +3,9 @@
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
 <!-- We're aiming for: Saturday and Sunday, January 23 & 24, 2021 -->
-<h3><span style="white-space:nowrap">Early 2021 - Sign up to be notified of the selected dates!</span></h3>
+<h3><span style="white-space:nowrap">Sign up to be notified of our 2021 schedule</span></h3>
+
+Join us at an upcoming <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta Meetup</a><br>
 
 Form a team, join an existing team or compete individually in our weekend event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
@@ -13,7 +15,9 @@ We're using the new US Environmentally-Extended Input-Output model called
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency&nbsp;(EPA)</a>. 
 
 
-[Opportunities for Communities](../../io/communities/) - [Embeddable IO Widgets](../../io/charts/)  
+[Embeddable IO Widgets](../../io/charts/)  
+
+[Opportunities for Communities](../../io/communities/)  
 
 <a href="https://www.challenge.gov/">View more US Gov web challenges at Challenge.gov</a>  
 

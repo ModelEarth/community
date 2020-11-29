@@ -1,11 +1,14 @@
 <h1 class="h1-home">Sustainable Communities Web&nbsp;Challenge</h1>
 
 
-<h3 style="font-weight:400">Saturday and Sunday, January 23 and 24, 2021</h3>
+<h3 style="font-weight:400">
+<div style="font-size: 14px">Virtual Programming Weekend:</div>
+Saturday and Sunday, January 23 and 24, 2021<br>
+Stay tuned for additional 2021 dates</h3>
 
 
 <div class="challenge-details">
-We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards using new input-output widgets to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br> 
+We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using new input-output widgets to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br> 
  
 </div>
 
@@ -119,6 +122,10 @@ Add USEEIO widgets to [.NET Environmental Education tools](../setup/) for GEEP p
 Maintain a list of your time contributions to increase your award potential!  
 [Let us know](../localsite/info/input/) what you're working on to avoid overlaps.  
 
+## Community Map
+
+- [Update R-Language script](../community-data/us/) to output dropdown list attributes for map zoom.
+
 ## Bubble Chart
 
 D3 - [View Widget](../io/charts/bubble/) 
@@ -129,9 +136,9 @@ D3 - [View Widget](../io/charts/bubble/)
 - Omit red from the scale when other [bubbles are highlighted](../localsite/info/).  
 - Create React version.  
 
-## Industry-List and Mosaic
+## Industry-List and Heatmap Mosaic
 
-React - [View Widget](../io/build/industry_list.html?view=mosaic&count=50) - [Details](../io/charts/) 
+React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../io/charts/) 
 
 - When column selected, avoid dimming other columns.  
 - React javascript is too big (2MB and growing). Split out widgets.     
@@ -179,7 +186,7 @@ React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210
 
 ## Last Airbender
 
-For potential use in an elementary school education interface, the EPA indicators could be organized by Air, Water, Land, and Fire (Energy), plus two additional categories: Prosperity (Economy) and Wellness (Health).  
+For use as an [elementary school education interface](../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10), the EPA indicators are being organized by Air, Water, Land, and Fire (Energy), Prosperity (Economy) and Health.  
 
 The Airbender categories have been added as Primary and Secondary columns in [LCIA_Indicator_sets.csv](../community-data/us/indicators/LCIA_Indicator_sets.csv) and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 
@@ -194,7 +201,7 @@ The estimates for these omitted industry values could be generated using the sta
 ##Data Integration
 
 
-1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](info/).  
+1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](../localsite/info/).  
 
 1. Updates for [Farm Fresh - Federal USDA location data](farmfresh/ga) on maps - initially merged for Aglanta.  
 
