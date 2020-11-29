@@ -1,7 +1,7 @@
 
 # Interface Design Ideas
 
-### Design ideas for our summer intern projects and fall web challenge
+### Design ideas for our summer intern projects and web challenge
 
 Have a small "tips" area on the intro page with a link to the tutorial.
 Combine Tutorial and FAQ in an Overview section.  
