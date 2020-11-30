@@ -203,7 +203,7 @@ The estimates for these omitted industry values could be generated using the sta
 
 1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](../localsite/info/).  
 
-1. Updates for [Farm Fresh - Federal USDA location data](farmfresh/ga) on maps - initially merged for Aglanta.  
+1. Updates for [Farm Fresh - Federal USDA location data](farmfresh) on maps - initially merged for Aglanta.  
 
 
 1. Preprocess the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) with [zip map](zip/leaflet/).  
