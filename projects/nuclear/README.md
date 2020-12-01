@@ -1,4 +1,4 @@
-# Nuclear
+# Nuclear Power
 
 From: <a href="https://walker-foundation.org">The Walker Foundation</a><br>
 
@@ -15,7 +15,7 @@ Like the majority of the public, the trustees originally assumed that nuclear wa
 <br />
 In 2010 the Foundation provided the initial seed funding for a feature-length documentary about the history and development of nuclear power and the current debate surrounding its revival as a means of averting a climate catastrophe. Robert Stone, the producer, had previously produced a film critical of nuclear weapons testing, and was regarded as being anti-nuclear. He went on to raise $1.2 million from Silicon Valley donors and in 2013 produced the film titled &ldquo;Pandora&rsquo;s Promise&rdquo;.<br />
 <br />
-The film featured leading environmentalists and energy experts who, faced with the risks of climate change, reversed their opposition to nuclear power and became proponents. The film addressed the heated debate surrounding nuclear power as a vehicle for taking a realistic and comprehensive look at the worlds energy dilemma. The movie examined the true costs of our current addiction to fossil fuels, and relative merits of the alternatives from an economic, technological and environmental perspective. (In 2018 the film was available for viewing via Amazon and iTunes.)&nbsp;<br />
+The film featured leading environmentalists and energy experts who, faced with the risks of climate change, reversed their opposition to nuclear power and became proponents. The film addressed the heated debate surrounding nuclear power as a vehicle for taking a realistic and comprehensive look at the world's energy dilemma. The movie examined the true costs of our current addiction to fossil fuels, and relative merits of the alternatives from an economic, technological and environmental perspective. (In 2018 the film was available for viewing via Amazon and iTunes.)&nbsp;<br />
 <br />
 <br />
 <img alt="" src="https://walker-foundation.org/walker/images/position/pandoras-promise.jpg" style="width: 600px; height: 227px;" /><br />
@@ -33,7 +33,7 @@ Germany provides a real-world case study of why massive investment in renewables
 <span style="font-size:14px;" class="pagecaption">Germany&rsquo;s push to replace nuclear with renewables fails to meet climate goals. France generates 75% of its electricity from nuclear power and has one of the lowest electricity prices in Europe. Neighboring Germany is aggressively investing in solar and wind power while closing existing nuclear plants. On average Germany&rsquo;s electricity was 11 times dirtier than France&rsquo;s in 2018 because dirty coal and natural gas plants were brought online during periods when the sun didn&rsquo;t shine and the wind didn&rsquo;t blow. See the following article for more information: <a href="https://www.bloomberg.com/">https://www.bloomberg.com/</a></span><br />
 <br />
 <br />
-Furthermore, a Foundation site visit revealed that so-called sustainable biofuel exported from the U.S. to Germany is actually unsustainably produced wood pellets. Forests in the Southeast U.S. are being clear-cut, the wood ground into pellets, and then shipped to Germany for burning in power plants. Another Foundation-supported project showed that although natural forests absorb and store carbon, industrial forests are massive carbon emitters. <sup><a href="#footnotes">5</a></sup><br />
+Furthermore, a Foundation site visit revealed that so-called sustainable biofuel exported from the U.S. to Germany is actually unsustainably produced wood pellets. Forests in the Southeast U.S. are being clear-cut, the wood ground into pellets, and then shipped to Germany and England for burning in power plants. Another Foundation-supported project showed that although natural forests absorb and store carbon, industrial forests are massive carbon emitters. <sup><a href="#footnotes">5</a></sup><br />
 <br />
 <br />
 <img alt="" src="https://walker-foundation.org/walker/images/position/uses-of-wood-compared.jpg" style="width: 600px; height: 225px;" /><br />

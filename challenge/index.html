@@ -40,6 +40,7 @@
 -->
 <body>
 <script>
+  loadMarkdown("ev.md", "evDiv", "_parent");
   loadMarkdown("README.md", "readmeDiv", "_parent");
   loadMarkdown("rules.md", "rulesDiv", "_parent");
 
@@ -136,6 +137,17 @@
 <div class="content contentpadding" style="overflow:auto;">
 
     <div style="margin-bottom:20px">
+    </div>
+
+    <div class="pagecard">
+        <div class="cardstyle">
+            <div class="leftLogo">
+                <img src="../img/logo/georgia.png" style="width:100%; max-width:200px">
+            </div>
+            <div style="overflow:auto">
+                <div id="evDiv"></div>
+            </div>
+        </div>
     </div>
 
     <div class="pagecard">

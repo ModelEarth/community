@@ -1,10 +1,13 @@
-<h1 class="h1-home">Sustainable Communities Web&nbsp;Challenge</h1>
+<h1 class="h1-home">2021 Programming Events</h1>
 
 
 <h3 style="font-weight:400">
-<div style="font-size: 14px">Virtual Programming Weekend:</div>
-Saturday and Sunday, January 23 and 24, 2021<br>
-Stay tuned for additional 2021 dates</h3>
+<div style="font-size: 14px">Saturday, January 23, 2021</div>
+Electric Vehicle Ecosystem Hackathon<br><br>
+
+<div style="font-size: 14px">Fall 2021</div>
+Sustainable Communities Web Challenge
+</h3>
 
 
 <div class="challenge-details">
@@ -15,7 +18,7 @@ We're combining economic and envronmental data with planning input using the EPA
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">About Event</a>
+<a href="challenge/" class="btn btn-primary">About Events</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
@@ -203,7 +206,7 @@ The estimates for these omitted industry values could be generated using the sta
 
 1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](../localsite/info/).  
 
-1. Updates for [Farm Fresh - Federal USDA location data](farmfresh/ga) on maps - initially merged for Aglanta.  
+1. Updates for [Farm Fresh - Federal USDA location data](farmfresh) on maps - initially merged for Aglanta.  
 
 
 1. Preprocess the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) with [zip map](zip/leaflet/).  
@@ -242,7 +245,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">About Event</a>
+<a href="challenge/" class="btn btn-primary">About Events</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
