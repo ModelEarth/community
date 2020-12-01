@@ -10,56 +10,80 @@
 <meta name="keywords" content="Bioproducts, Energy, Plants">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../localsite/css/base.css" />
 <script type="text/javascript" src="../../js/d3/d3.v5.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/showdown.min.js"></script>
-<script type="text/javascript" src="../../js/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
 <script type="text/javascript" src="../../../localsite/js/navigation.js"></script>
-<link rel="stylesheet" href="../../../localsite/css/base.css" />
+
+<style>
+.img-boarder {
+	border:1px solid #ccc;
+}
+</style>
+
 </head>
 
 <body>
 
-<div class="content contentpadding" id="rail" style="padding-top:50px;">
+<div class="content contentpadding">
 
-<div class="topLinks">
-  <a href="../../about/">Overview</a> | 
-  <a href="../../about/useeio/">About Tool</a> | 
-  <a href="../../../io/team/">Our Team</a> | 
-  <a href="../../projects/">Projects</a>
+	<div class="topLinks">
+	  <a href="../../about/">Overview</a> | 
+	  <a href="../../about/useeio/">About Tool</a> | 
+	  <a href="../../../io/team/">Our Team</a> | 
+	  <a href="../../projects/">Projects</a>
+	</div>
+	<br>
+
+	<div id="readmeDiv"></div>
+
+	<script>
+	    loadMarkdown("README.md", "readmeDiv", "_parent");
+	</script>
+
+
+	The following industries were provided by economic developers in southwest Georgia as areas involved in auto manufacturing.<br>
+
+	<h3>Auto Parts Manufacturing</h3>
+
+	336111 - Automotive Manufacturing<br>
+	336330 - Motor Vehicle steering and suspension manufacturing<br>
+	336340 - Motor Vehicle braking and component systems manufacturing<br>
+	336360 - Motor Vehicle seating and interior trim manufacturing<br>
+	336370 - Motor Vehicle metal stamping manufacturing<br>
+	336390 - Other Motor Vehicle Parts Manufacturing<br>
+	333613 - Mechanical power transmissions equipment manufacturing<br>
+	336412 - Aircraft engines and engine parts manufacturing<br>
+	336413 - Other aircraft parts and auxiliary equipment manufacturing<br>
+	335910 - Battery Manufacturing<br>
+	335912 - Primary battery manufacturing<br>
+	339110 - Medical equipment and supplies manufacturing<br>
+	333111 - Farm machinery and equipment manufacturing<br>
+	313110 - Fiber, yarn and thread mill manufacturing<br>
+	313210 - Broadwoven Fabric Mills<br>
+	314110 - Carpet and rug mill manufacturing<br>
+	325211 - Plastics material and resin manufacturing<br>
+	325520 - Adhesives manufacturing<br>
+	326112 - Plastics packaging film manufacturing<br>
+	326220 - Rubber and plastics hoses and belt manufacturing<br>
+	331221 - Rolled steel shape manufacturing<br>
+	332211 - Forging and stamping<br>
+	<br>
+
+	<a href="../../../localsite/info/#go=parts&show=counties">Parts manufacturing industries by county</a>
+
 </div>
-<br>
 
+<div class="contentpadding" style="padding-top:0px">
 
-<h1>Mobility Sector - Transition to Electric and Hydrogen Vehicles</h1>
+	<h2>Internal Supply Chain Data</h2>
 
-<h3>Auto Parts Manufacturing</h3>
+	If your organization subscribes to a service for economic developers, check if you can export a CSV file contaiing supply chain details by NAICS.<br><br>
 
-336111 - Automotive Manufacturing<br>
-336330 - Motor Vehicle steering and suspension manufacturing<br>
-336340 - Motor Vehicle braking and component systems manufacturing<br>
-336360 - Motor Vehicle seating and interior trim manufacturing<br>
-336370 - Motor Vehicle metal stamping manufacturing<br>
-336390 - Other Motor Vehicle Parts Manufacturing<br>
-333613 - Mechanical power transmissions equipment manufacturing<br>
-336412 - Aircraft engines and engine parts manufacturing<br>
-336413 - Other aircraft parts and auxiliary equipment manufacturing<br>
-335910 - Battery Manufacturing<br>
-335912 - Primary battery manufacturing<br>
-339110 - Medical equipment and supplies manufacturing<br>
-333111 - Farm machinery and equipment manufacturing<br>
-313110 - Fiber, yarn and thread mill manufacturing<br>
-313210 - Broadwoven Fabric Mills<br>
-314110 - Carpet and rug mill manufacturing<br>
-325211 - Plastics material and resin manufacturing<br>
-325520 - Adhesives manufacturing<br>
-326112 - Plastics packaging film manufacturing<br>
-326220 - Rubber and plastics hoses and belt manufacturing<br>
-331221 - Rolled steel shape manufacturing<br>
-332211 - Forging and stamping<br>
-<br>
-
-<a href="../../info/#go=parts">Parts Manufacturing Industries by County</a>
+	<img src="img/internal-supply-chain-list.png" style="width:100%" class="img-boarder"><br>
+	Source: <a href="http://www.chmuraecon.com/jobseq/">Chmura JobsEQ</a> - 2020 Labor Market Data - Also available without JobsEQ addon<br>
 
 </div>
 
