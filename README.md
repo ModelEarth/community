@@ -1,10 +1,13 @@
-<h1 class="h1-home">Sustainable Communities Web&nbsp;Challenge</h1>
+<h1 class="h1-home">2021 Programming Events</h1>
 
 
 <h3 style="font-weight:400">
-<div style="font-size: 14px">Virtual Programming Weekend:</div>
-Saturday and Sunday, January 23 and 24, 2021<br>
-Stay tuned for additional 2021 dates</h3>
+<div style="font-size: 14px">Saturday, January 23, 2021</div>
+Electric Vehicle Ecosystem Hackathon<br><br>
+
+<div style="font-size: 14px">Fall 2021</div>
+Sustainable Communities Web Challenge
+</h3>
 
 
 <div class="challenge-details">
@@ -15,7 +18,7 @@ We're combining economic and envronmental data with planning input using the EPA
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">About Event</a>
+<a href="challenge/" class="btn btn-primary">About Events</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
@@ -242,7 +245,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">About Event</a>
+<a href="challenge/" class="btn btn-primary">About Events</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
