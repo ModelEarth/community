@@ -24,7 +24,7 @@ Stand-alone examples of formatting and displaying community data.
 **React**  
 [Start with the USSEIO-widget React Repo](../../io/charts/)  
 [Netlify Gatsby Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) - [Gatsby](https://www.gatsbyjs.org/)    
-
+<!--
 **VueJS**  
 [Element Table](https://element.bootstrap-table.com/examples/)  
 [Build a Vue App with Google Firebase Authentication and Firestore Database](https://blog.bitsrc.io/build-a-vue-app-with-firebase-authentication-and-database-e7d6816f79af)  
@@ -36,7 +36,7 @@ Stand-alone examples of formatting and displaying community data.
 **Google Flutter**  
 [Flutter - apps for mobile, web and desktop](https://flutter.dev/)  
 [Flutter/Dart samples in HTML](https://gallery.flutter.dev/)
-
+-->
 
 
 
