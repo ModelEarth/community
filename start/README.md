@@ -65,7 +65,7 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 <!-- https://simapro.com/products/exiobase-database/-->
 [EXIOBASE database](https://www.exiobase.eu/) - Registration is free for downloading files  
 
-[ImPlan Impact Analysis](https://implanhelp.zendesk.com/hc/en-us/articles/360039284273-Environmental-Data) - 8 broad categories using USEEIO model data  
+[IMPLAN Impact Analysis](https://implanhelp.zendesk.com/hc/en-us/articles/360039284273-Environmental-Data) - 8 broad categories using USEEIO model data  
 
 
 [Challenge.gov/toolkit](https://www.challenge.gov/toolkit/) - for Government Agencies creating Web Challenges  
