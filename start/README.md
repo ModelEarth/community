@@ -24,7 +24,7 @@ Stand-alone examples of formatting and displaying community data.
 **React**  
 [Start with the USSEIO-widget React Repo](../../io/charts/)  
 [Netlify Gatsby Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) - [Gatsby](https://www.gatsbyjs.org/)    
-
+<!--
 **VueJS**  
 [Element Table](https://element.bootstrap-table.com/examples/)  
 [Build a Vue App with Google Firebase Authentication and Firestore Database](https://blog.bitsrc.io/build-a-vue-app-with-firebase-authentication-and-database-e7d6816f79af)  
@@ -36,7 +36,7 @@ Stand-alone examples of formatting and displaying community data.
 **Google Flutter**  
 [Flutter - apps for mobile, web and desktop](https://flutter.dev/)  
 [Flutter/Dart samples in HTML](https://gallery.flutter.dev/)
-
+-->
 
 
 
@@ -65,7 +65,7 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 <!-- https://simapro.com/products/exiobase-database/-->
 [EXIOBASE database](https://www.exiobase.eu/) - Registration is free for downloading files  
 
-[ImPlan Impact Analysis](https://implanhelp.zendesk.com/hc/en-us/articles/360039284273-Environmental-Data) - 8 broad categories using USEEIO model data  
+[IMPLAN Impact Analysis](https://implanhelp.zendesk.com/hc/en-us/articles/360039284273-Environmental-Data) - 8 broad categories using USEEIO model data  
 
 
 [Challenge.gov/toolkit](https://www.challenge.gov/toolkit/) - for Government Agencies creating Web Challenges  

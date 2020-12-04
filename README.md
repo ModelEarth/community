@@ -40,9 +40,10 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 </div>
 
 **A. Demographics, Industry Analytics, Impacts and Machine Learning**  
+- [R-Language Update](https://model.earth/community-data/us/) - Generate a list with lat/lon values for map zoom.  
+- Output [All the Places](/community/tools/#places) into zip folders - Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json files reside.
 - Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
-- Add zipcode demographics using [uszipcode.readthedocs.io](https://github.com/MacHu-GWU/uszipcode-project). (Python and D3)  
-- Create and update <a href="../io/charts/">data visualizations</a> of the interplay between demographics, industries and impacts.  
+- Update <a href="../io/charts/">Embeddable IO Charts and Maps</a> to include demographics, local places, industries and impacts.  
 
 
 **B. Supply Chain Inflow-Outflow Charts**  

@@ -22,5 +22,8 @@ Lyft Partnership - Pilot program to add 50 EVs
 <a href="../../../localsite/info/#go=parts&show=counties">Parts manufacturing industries by county</a>
 
 
-
+<!--
+Georgia Labor Market Explorer
+https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E
+-->
 
