@@ -20,7 +20,12 @@ Hartsfield–Jackson Atlanta International Airport - [GreeningATL](https://www.1
 Lyft Partnership - Pilot program to add 50 EVs  
 
 <a href="../../../localsite/info/#go=parts&show=counties">Parts manufacturing industries by county</a>  
-<a href="../projects/mobility/">Industries impacted by transition to EV</a>
+
+<h3>Priorities</h3>
+
+Choropleth map of 
+<a href="../projects/mobility/">Industries impacted by transition to EV</a><br>
+Development of Added Value and Jobs Created <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">simple filters</a> for EV Prodction.
 
 <!--
 Georgia Labor Market Explorer
