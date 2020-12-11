@@ -3,6 +3,7 @@
 <!-- ## [Widget Mockup for EPA (layout)](../../resources/layout/)-->
 ## [Map Layers](../../../localsite/map/) - [Map Widget](../../map/starter/embed.html)
 <!--## [Map Points (hubs)](../../hubs/#route=us.ga_to_bs)-->
+## [Geocoding (mapsforus)](../../../localsite/map/mapsforus)
 ## [US Income (income)](../../map/income)
 ## [Industry Mix (zip)](../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)
 ## [Sets of Counties (counties)](counties/counties.html)

@@ -37,7 +37,7 @@ curl -o farmersmarket.csv https://search.ams.usda.gov/farmersmarkets/ExcelExport
 Here's a different link for "On Farm Markets." The parameter is not correct. Filter after downloading.  
 This contains 21 records for Georgia, along with different columns. In Sept 2020, none had been updated since 2018.  
 https://search.ams.usda.gov/onfarmmarkets/ExcelExport.aspx?State=Georgia  
-Source: https://www.ams.usda.gov/local-food-directories/onfarm
+Source: [https://www.ams.usda.gov/local-food-directories/onfarm](https://www.ams.usda.gov/local-food-directories/onfarm)
 
 ----
 
