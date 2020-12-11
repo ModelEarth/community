@@ -14,7 +14,7 @@ Sustainable Communities Web Challenge
 
 
 <div class="challenge-details">
-We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using new input-output widgets to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br> 
+We're combining economic and envronmental data with planning input using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br> 
  
 </div>
 
@@ -50,13 +50,13 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 
 **B. Supply Chain Inflow-Outflow Charts**  
-- Updates to Sankey D3 Charts, Leaflet Maps with [Maps for Us](../../localsite/map/mapsforus/) and Filters for [Industry Impact Evaluator](../localsite/info/)  
-- Create embeddable charts that use hash parameters (Python and D3, optionally React) - [Details](../io/charts/sankey/)  
+- Updates to [Sankey](../io/charts/sankey/) D3 Charts, [Leaflet Maps](start/maps/) with [Maps for Us](../../localsite/map/mapsforus/) and filters for [Industry Impact Evaluator](../localsite/info/)  
+- [Contribute to embeddable charts](../io/charts/) that use hash parameters (Python and D3, optionally React)    
 
 
 **C. Industry Level Estimates for Counties and Zipcodes**  
 - Fill in gaps when only the number of establishments is provided at the state level - [Details](../localsite/info/data/)  
-- Update Data Processing Script, work with Team A on zipcode industry data prep. (Python) 
+- Update Data Processing Script. Zipcode industry data prep. (Python) 
  
 **D. USEEIO Updates for bioecomony and bioproducts**  
 - Local economy inputs and new technology additions to USEEIO - [Details](../io/naics/)
