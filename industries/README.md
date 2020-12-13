@@ -2,7 +2,7 @@
 
 We're pulling [zip demographic data](../../zip/io/) into a json file for each zip code from [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html).  
 
-Using the [ZIP Codes Business Patterns (ZBP) API](https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html), a new Python script can be created similar to our [BEA County API script](../../localsite/info/data/) to pre-processes zipcode level industry data while filling in gaps using state totals. Both counties and zip codes can be displayed in the [info page](../info/).  
+Using the [ZIP Codes Business Patterns (ZBP) API](https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html), a new Python script can be created similar to our [BEA County API script](../../localsite/info/data/) to pre-processes zipcode level industry data while filling in gaps using state totals. Both counties and zip codes can then be displayed in the [info page](../info/).  
 
 Here's an [industry map clustering sample](../../community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50).   
 
