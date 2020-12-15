@@ -39,11 +39,12 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 ### React and Material UI
 
-1. Contribute to our [AWS Amplify React](../amplify/AWS/) repo.  
+1. Contribute to our [AWS Amplify React](../amplify/AWS/) repo to include [Last Airbender indicator sets](../io/charts/inflow-outflow/).  
 
-1. Update our <a href="../io/charts/">Embeddable Inflow-Outflow Charts</a> - React and D3
+1. Update our [Sankey D3 Chart](../io/charts/sankey/)  to display on [Inflow-Outflow](../io/charts/inflow-outflow/) page.  
 
-1. Update our [Sankey D3 Chart](../io/charts/sankey/)  to display on [Inflow-Outflow](../io/charts/inflow-outflow/) page.
+1. Update EPA's <a href="../io/charts/">Embeddable Inflow-Outflow Charts</a>.  
+<!--Auto-select all categories in center column when populated from naics values.-->  
 
 
 ### Leaflet Maps
