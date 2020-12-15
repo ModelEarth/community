@@ -19,8 +19,13 @@ Georgia Power - half of its system fleet vehicles will be electric by 2030
 Hartsfield–Jackson Atlanta International Airport - [GreeningATL](https://www.17sustainabledevelopmentgoals.org/greeningatl-the-most-resilient-airport-globally/)  
 Lyft Partnership - Pilot program to add 50 EVs  
 
-<a href="../../../localsite/info/#go=parts&show=counties">Parts manufacturing industries by county</a>
+<a href="../../../localsite/info/#go=parts&show=counties">Parts manufacturing industries by county</a>  
 
+<h3>Priorities</h3>
+
+Choropleth map of 
+<a href="../projects/mobility/">Industries impacted by transition to EV</a><br>
+Development of Added Value and Jobs Created <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">simple filters</a> for EV Prodction.
 
 <!--
 Georgia Labor Market Explorer
