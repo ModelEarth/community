@@ -6,7 +6,7 @@
 Join us to create tools and industry maps for Georgia's electric vehicle industry  
 
 <a href="https://codeforatlanta.slack.com/">Get started today on Slack</a> and join us  
-Tuesday, <b>January 12 and 19, 2021</b> at our 7pm  
+Tuesday, <b>January 12 and 19, 2021</b> at 7pm  
 in our <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta Meetups</a><br>
 
 
