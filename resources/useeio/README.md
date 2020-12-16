@@ -108,23 +108,19 @@ result2_df.to_csv(file_name, sep=',', encoding='utf-8')
 Enhancements have been made to the export above.  [View new script](python/produceUSEEIOimpactcsv.txt) and [resulting CSV file](../../start/dataset/USEEIOv1.2_result_2007_impacts_final.csv).  
 
 
-Additional updates requested:  
 
-1. Place "id" and "title" columns first. (Split "Sectors" column and remove.)
-2. Omit decimal places from dollar values.
-3. Parse ID to add a "main\_category\_id" column. Use a 2 digit number to keep CSV file small.
-4. Why are there 382 sector rows instead of 389?  
-5. Retain capital letters at start of words in section titles.
-6. Add Input-Output total dollar values.  
 
 See [Goods and Services example](../../start/dataset/) which loads a formatted CSV file.
 
+[View Embeddable Widgets](../../../io/charts/) that use the USEEIO API
+
 <br>
 
-<!--
+
 ## Deeper Dive
 
-Using <a href="python">Python</a> and <a href="https://github.com/USEPA/USEEIO_API/tree/master/go">GO</a> to extend and compile the USEEIO API.
+Using <a href="python">Python CSV export from USEEIO</a>  
 
-<br>
--->
+<a href="https://github.com/USEPA/USEEIO_API/tree/master/go">GO</a> to extend and compile the USEEIO API.
+
+
