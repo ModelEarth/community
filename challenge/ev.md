@@ -5,7 +5,9 @@
 
 Join us to create tools and industry maps for Georgia's electric vehicle industry  
 
-Get started Tuesday, <b>December 15, 2020</b> at our 7pm <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta Meetup</a><br>
+<a href="https://codeforatlanta.slack.com/">Get started today on Slack</a> and join us  
+Tuesday, <b>January 12 and 19, 2021</b> at 7pm  
+in our <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta Meetups</a><br>
 
 
 <b>Georgia's Growing EV Ecosystem</b>  
@@ -25,7 +27,7 @@ Lyft Partnership - Pilot program to add 50 EVs
 
 Choropleth map of 
 <a href="../projects/mobility/">Industries impacted by transition to EV</a><br>
-Development of Added Value and Jobs Created <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">simple filters</a> for EV Prodction.
+Development of Added Value and Jobs Created <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">simple filters</a> for EV Production.
 
 <!--
 Georgia Labor Market Explorer

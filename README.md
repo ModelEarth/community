@@ -83,6 +83,8 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 ### Python  
 
+1. Test output normalization for [Sankey chart](../io/charts/sankey/) using the [USEEIO API Examples](/community/resources/useeio/)
+
 1. Output [All the Places](/community/tools/#places) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
 
 1. Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
@@ -172,6 +174,13 @@ React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All 
 - Highlight an "Action" menu when checkboxes are clicked
 - Actions could include: Display on map, Display bar chart, Generate Report
 
+Additional updates:  
+
+1. Place "id" and "title" columns first. (Split "Sectors" column and remove.)
+2. Omit decimal places from dollar values.
+3. Parse ID to add a "main\_category\_id" column. Use a 2 digit number to keep CSV file small.  
+4. Retain capital letters at start of words in section titles.
+5. Add Input-Output total dollar values.  
 
 ## Inflow-Outflow Chart
 
