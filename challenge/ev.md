@@ -27,7 +27,7 @@ Lyft Partnership - Pilot program to add 50 EVs
 
 Choropleth map of 
 <a href="../projects/mobility/">Industries impacted by transition to EV</a><br>
-Development of Added Value and Jobs Created <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">simple filters</a> for EV Prodction.
+Development of Added Value and Jobs Created <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">simple filters</a> for EV Production.
 
 <!--
 Georgia Labor Market Explorer

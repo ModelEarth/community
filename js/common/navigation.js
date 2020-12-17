@@ -34,7 +34,7 @@ $(document).ready(function(){
  	if (param["showheader"] != "false") {
  		if (param["showhero"] != "false") {
 	 		if(location.host.indexOf('model.georgia') >= 0) { 
-		 		$("body").prepend( "<div class='headerImage'><img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'></div>");
+		 		//$("body").prepend( "<div class='headerImage'><img src='" + climbpath + "../io/img/hero/sustainable-communities.jpg' style='width:100%'></div>");
 		 	}
 		 }
 	 	$("body").wrapInner( "<div id='fullcolumn'></div>"); // Creates space for sidecolumn
