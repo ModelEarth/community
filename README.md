@@ -85,7 +85,7 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 1. Test output normalization for [Sankey chart](../io/charts/sankey/) using the [USEEIO API Examples](/community/resources/useeio/)
 
-1. Output [All the Places](/community/tools/#places) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
+1. Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
 
 1. Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
 
