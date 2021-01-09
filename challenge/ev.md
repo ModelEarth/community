@@ -34,7 +34,7 @@ in our <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta Meetups
 1. Hartsfield–Jackson Atlanta International Airport - [GreeningATL](https://www.17sustainabledevelopmentgoals.org/greeningatl-the-most-resilient-airport-globally/)  
 1. Lyft partnership pilot program to add 50 EVs  
 1. German GEDIA building $85 million [EV Parts Plant near Dalton, GA](https://www.bizjournals.com/atlanta/news/2020/07/29/gedia-automotive-group-plant-dalton-georgia.html)  
-1. SK Innovation's $1.6 billion plant adds $960 million [EV battery expansion in Commerce, GA](https://www.bizjournals.com/atlanta/news/2020/06/30/sk-innovation-georgia-electric-vehicle-plant.html)   
+1. Korean SK Innovation's $1.6 billion plant adds $960 million [EV battery expansion in Commerce, GA](https://www.bizjournals.com/atlanta/news/2020/06/30/sk-innovation-georgia-electric-vehicle-plant.html)   
 
 
 <h3>Areas of Focus</h3>
