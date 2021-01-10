@@ -141,9 +141,25 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 Maintain a list of your time contributions to increase your award potential!  
 [Let us know](../localsite/info/input/) what you're working on to avoid overlaps.  
 
-## Community Map
+## Bureau of Labor Statistics (BLS) API
 
+County automobile industry employment for 6-digit NAICS 336111.
+4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API. 
+
+## Choropleth map using multiple inputs
+
+We'll be creating a choropleth map of 
+<a href="../projects/mobility/">industries impacted by transition to EV</a><br>
+
+Starting points [impact map](/io/impact/) and [JS clustering](/community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)
+
+## State Map Zoom
+
+Kathryn Winglee is making this update. 
 - [Update R-Language script](../community-data/us/) to output dropdown list attributes for map zoom.
+
+
+
 
 ## Bubble Chart
 
