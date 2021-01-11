@@ -19,10 +19,10 @@ We're combing industry analytics, impacts, demographics and machine learning usi
 
 <!-- Schedule & Rules -->
 <a href="challenge/" class="btn btn-primary">About Events</a>
-
+<!--
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
-
-<a href="challenge/slack/" class="btn btn-danger">Slack Clubs</a>
+-->
+<a href="challenge/slack/" class="btn btn-danger">Join us on Slack</a>
 
 
 </div>
