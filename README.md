@@ -138,38 +138,70 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 # Specific Project Tasks
 
-Maintain a list of your time contributions to increase your award potential!  
-[Let us know](../localsite/info/input/) what you're working on to avoid overlaps.  
+Maintain a list of your time contributions to increase your award potential. 
 
-## Bureau of Labor Statistics (BLS) API
+## 1. Industry Levels from Bureau of Labor Statistics (BLS)
 
-County automobile industry employment for 6-digit NAICS 336111.
-4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API. 
+[Prepare csv or json using BLS data](/localsite/info/data/) from EPA Flowsa Python.  
 
-## Choropleth map using multiple inputs
+## 2. Comparisons using Choropleth Map
 
-We'll be creating a choropleth map of 
-<a href="../projects/mobility/">industries impacted by transition to EV</a><br>
+We'll be adding a choropleth map of <a href="../projects/mobility/">industries impacted by transition to EV</a><br>
 
-Starting points [impact map](/io/impact/) and [JS clustering](/community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)
+We'll add a color scale to [our industry map](/localsite/map/#go=smart) which is used to [embed with data](/localsite/info/#go=smart)  
 
-## State Map Zoom
+We could update and/or use code from these examples:  
+
+[Impact map (Machine Learning Websocket)](/io/impact/)  
+[JS clustering (Machine Learning Javascript)](/community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)  
+[Simple Choropleth](/community/map/income/) and [More maps](/community/map/)
+
+## 3. Last Airbender Interface
+
+For use as an [elementary school education interface](../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10), the EPA indicators are being organized by Air, Water, Land, and Fire (Energy), Prosperity (Economy) and Health.  
+
+The Airbender categories have been added as Primary and Secondary columns in [LCIA_Indicator_sets.csv](../community-data/us/indicators/LCIA_Indicator_sets.csv) and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
+
+Here’s an [Airbender API](https://last-airbender-api.herokuapp.com/) for relating the four “nation” categories to characters.  
+
+
+
+## 4. State Map Zoom
 
 Kathryn Winglee is making this update. 
 - [Update R-Language script](../community-data/us/) to output dropdown list attributes for map zoom.
 
+<br>
 
 
+# Additional Updates
 
-## Bubble Chart
+## Inflow-Outflow Chart
 
-D3 - [View Widget](../io/charts/bubble/) 
+[Inflow-Outflow Chart](../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - 
+<a href="../io/build/slider.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - 
+<a href="../io/charts/">All Widgets</a>   
 
-- Modify so popups still appear when the containing div is set to position:relative. 
-- Scale to size of containing div during browser resize.
-- Set the default bubble color to red for more pop.
-- Omit red from the scale when other [bubbles are highlighted](../localsite/info/).  
-- Create React version.  
+Prevent multiple stepping backing-up by avoiding saving history with each hash change.  
+
+<!--
+The bar could turn green when a commodity has been increased from its default.  
+The bar could turn red when a commodity has been decreased from its default.  
+-->
+
+<!--
+## Impact Bar Chart
+
+React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
+
+
+- Create an example with three columns and one impact area per colums.  
+- Display sector titles to the left of the first column.
+- Display sector name over each bar.  
+- Display description of each indicator
+- Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
+-->
+
 
 ## Industry-List and Heatmap Mosaic
 
@@ -198,47 +230,20 @@ Additional updates:
 4. Retain capital letters at start of words in section titles.
 5. Add Input-Output total dollar values.  
 
-## Inflow-Outflow Chart
-
-[Inflow-Outflow Chart](../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - 
-<a href="../io/build/slider.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - 
-<a href="../io/charts/">All Widgets</a>
-
-Add Airbender visuals.  
-
-Prevent multiple stepping backing-up by avoiding saving history with each hash change.  
-
-<!--
-The bar could turn green when a commodity has been increased from its default.  
-The bar could turn red when a commodity has been decreased from its default.  
--->
-
-<!--
-## Impact Bar Chart
-
-React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../io/charts/) 
 
 
-- Create an example with three columns and one impact area per colums.  
-- Display sector titles to the left of the first column.
-- Display sector name over each bar.  
-- Display description of each indicator
-- Update for use with Darkly bootstrap, similar to [bubble chart](../io/charts/bubble) - click bubble to view impact chart.  
--->
 
-## Last Airbender
+## Bubble Chart
 
-For use as an [elementary school education interface](../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10), the EPA indicators are being organized by Air, Water, Land, and Fire (Energy), Prosperity (Economy) and Health.  
+D3 - [View Widget](../io/charts/bubble/) 
 
-The Airbender categories have been added as Primary and Secondary columns in [LCIA_Indicator_sets.csv](../community-data/us/indicators/LCIA_Indicator_sets.csv) and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
+- Modify so popups still appear when the containing div is set to position:relative. 
+- Scale to size of containing div during browser resize.
+- Set the default bubble color to red for more pop.
+- Omit red from the scale when other [bubbles are highlighted](../localsite/info/).  
+- Create React version.  
 
-Here’s an [Airbender API](https://last-airbender-api.herokuapp.com/) for relating the four “nation” categories to characters.  
 
-## Use of BEA commodities to estimate null industries
-
-To protect the privacy of individual firms, the census omits payroll and empolyee count data for some industries at both the state and county level (like Automobile Manufacturing).  For Georgia, there are [89 industries](../community-data/us/state/ga/industries_state13_naics6_0s.tsv) with only the number of establishments available at both the county and state lever. 
-
-The estimates for these omitted industry values could be generated using the state BEA commodity data with the crosswalk file, or an average from other states could be used (as long as each industry has at least one payroll value in another state).  
 
 ##Data Integration
 
