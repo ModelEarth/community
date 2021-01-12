@@ -171,6 +171,16 @@ Here’s an [Airbender API](https://last-airbender-api.herokuapp.com/) for relat
 Kathryn Winglee is making this update. 
 - [Update R-Language script](../community-data/us/) to output dropdown list attributes for map zoom.
 
+## 5. Zip Demographic Data  
+
+Kathryn Winglee created files for zips. 
+
+She processed using the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) with [zip map](zip/leaflet/).  
+
+## 6. All the Places
+
+Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
+
 <br>
 
 
@@ -245,17 +255,23 @@ D3 - [View Widget](../io/charts/bubble/)
 
 
 
-##Data Integration
+##Data Integration 
 
+1. Some of the following may be available
 
-1. US Bureau of Economic Analysis - expand on the industry level data in our [Community Info Page](../localsite/info/).  
+- Vehicle charging station locations
+- Areas/chargers using green/clean energy
+- Shared mobility vehicle locations and charging stations
+- Organizations contributing clean energy to the grid
+- Organizations producing green hydrogen
+- Areas with mineral mining resources for batteries
+- Automotive industries by naics
 
 1. Updates for [Farm Fresh - Federal USDA location data](farmfresh) on maps - initially merged for Aglanta.  
 
-
-1. Preprocess the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) with [zip map](zip/leaflet/).  
-
 1. International [Harmonized System (HS)](impact/harmonized-system) code crosswalk  
+
+
 
 <!--
 
