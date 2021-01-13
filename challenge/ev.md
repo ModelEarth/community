@@ -1,19 +1,22 @@
 
 # EV Ecosystem Hackathon
-
-### Tuesday, January 12, 2021, 7PM
+<!--
 ### Saturday, January 23, 2021, 10AM to 5PM
+-->
+### January to June 2021
 
 Join us to create tools and industry maps for Georgia's electric vehicle industry 
 in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
 [Event Registion](https://www.meetup.com/codeforatlanta/events/275626801/)  
 
+<!--
 <b>Saturday, January 23, 2021 Schedule</b>  
 
 10:00am to 12:00pm - Introductions and Team Building  
 12:00pm to 4:00pm - Work Time  
 4:00pm to 5:00pm - Team Share Outs  
+-->
 
 <b>Challenge statements</b>  
 
