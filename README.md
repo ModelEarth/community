@@ -173,9 +173,8 @@ Kathryn Winglee is making this update.
 
 ## 5. Zip Demographic Data  
 
-Kathryn Winglee created files for zips. 
-
-She processed using the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) with [zip map](zip/leaflet/).  
+DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
+  
 
 ## 6. All the Places
 
