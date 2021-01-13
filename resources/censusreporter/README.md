@@ -67,7 +67,7 @@ Optional, if you need postgresql to be launched on login:
 
 Venv and Django with Postgres
 
-These steps have not yet been tried here. Copied from PyAtl. These were successful with farmfresh scrapper.  
+These steps have not yet been tried here. Copied from PyAtl. These were successful with our [farmfresh scrapper](../../farmfresh/).  
 
 ### Setup
 
