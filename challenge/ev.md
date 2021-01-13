@@ -8,7 +8,7 @@
 Join us to create tools and industry maps for Georgia's electric vehicle industry 
 in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
-[Event Registion](https://www.meetup.com/codeforatlanta/events/275626801/)  
+[Event Registration](https://www.meetup.com/codeforatlanta/events/275626801/)  
 
 <!--
 <b>Saturday, January 23, 2021 Schedule</b>  
