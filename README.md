@@ -119,7 +119,7 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 ### Google REST App
 
-1. Google Sheet Crowdsource Edito - A REST process allowing editors to return and update their own row contributions.
+1. Google Sheet Crowdsource Editor - A REST process allowing editors to return and update their own row contributions.
 
 1. Work with a [JAMstack Editor](https://headlesscms.org/) to edit CSV files directly on GitHub using social logins. 
 
