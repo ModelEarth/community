@@ -132,7 +132,7 @@ Find cool Material UI interfaces that could be applied to our category set menu.
 <p>
 The category set json resides in docs/static/json thanks to Alikah within our <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a> which is a great place to learn React.
 
-<a href="../amplify/AWS/">We've documented amplyfy set up steps</a>. The <a href="../io/charts/">EPA IO widgets</a> repo is another great starting point. 
+<a href="../amplify/AWS/">We've documented AWS Amplify set up steps</a>.
 
 <!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 -->
@@ -192,7 +192,7 @@ Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in
 1. Update USEEIO widgets to embed in <a href="https://naaee.github.io/core/" style="white-space: nowrap;">Resource and Event Calendars</a> for environmental educators.
 
 
-1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/).  Add updates for electric vehicles  and bioproducts, Local economy inputs and new technology additions to USEEIO - [Details](../io/naics/)  
+1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../io/bioeconomy/).  Add updates for electric vehicles  and bioproducts, Local economy inputs and new technology additions to USEEIO. [Details](../io/naics/)  
 
 
 
