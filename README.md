@@ -166,7 +166,7 @@ Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a
 
 DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
 
-State Dropdown - DONE  Kathryn Winglee has updated our [R-Language script](../community-data/us/) to output dropdown list attributes for map zoom. -  
+State Dropdown - DONE  Kathryn Winglee has updated our [R-Language script](../community-data/us/) to output dropdown list attributes for [map zoom](../localsite/info/).  
 
 To Do: Update R-Language script to sort states alphabetically. For non-state, add state="false" attribute.
 
