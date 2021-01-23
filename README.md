@@ -148,6 +148,12 @@ Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a
 
 1. Create a "Disposable Database" for editing crowdsourced lists using .csv files hosted in GitHub, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.
 <!--
+Strapi for Amazon AWS - EC2, RDS and S3
+https://strapi.io/documentation/developer-docs/latest/deployment/amazon-aws.html
+
+Azure Data Studio - for Mac to access AWS EC2
+https://github.com/Microsoft/azuredatastudio
+
 1. Add USEEIO widgets to [.NET Environmental Education tools](../setup/) for GEEP partner states and countries.  
 -->
 
