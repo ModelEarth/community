@@ -4,7 +4,7 @@
 
 <h3 style="font-weight:400; margin-bottom:0px">
 <div style="font-size: 14px">February to June 2021</div>
-Data Commons - Manufacturing Ecosystems</h3>
+Dive Into Data Commons</h3>
 <a href="challenge/">Learn more</a><br>
 
 <h3 style="font-weight:400">
