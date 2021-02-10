@@ -21,7 +21,7 @@ Join us to create tools and industry maps for sustainable communities and electr
 Akilah Littlejohn  
 
 #####Top Data Science Developer  
-Catherine Winglee  
+Kathryn Winglee  
 
 #####Top React Developer  
 Andrew Zimmer  
