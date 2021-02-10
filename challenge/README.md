@@ -2,7 +2,10 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-<!-- We're aiming for: Saturday and Sunday, January 23 & 24, 2021 -->
+<!-- 
+Wes may involve Jay in outreach and planning for our fall event.
+https://www.linkedin.com/in/jay-bassett-9a14616/
+-->
 <h3><span style="white-space:nowrap">Fall 2021 - Virtual AND in person in Atlanta, Georgia</span></h3>
 
 Join us at an upcoming <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta Meetup</a> to get involved!<br>

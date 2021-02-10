@@ -15,6 +15,18 @@ Join us to create tools and industry maps for sustainable communities and electr
 4:00pm to 5:00pm - Team Share Outs  
 -->
 
+<b>Our January Winners</b>
+
+#####1st Place - Top Web Developer  
+Akilah Littlejohn  
+
+#####Top Data Science Developer  
+Catherine Winglee  
+
+#####Top React Developer  
+Andrew Zimmer  
+<br>
+
 <b>Challenge statements</b>  
 
 1. Where are concentrations of electric and hydrogen vehicle parts manufacturers emerging?  
