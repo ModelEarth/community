@@ -976,7 +976,7 @@ strVar += "            ";
 strVar += "              <!--";
 strVar += "              <h2 style=\"margin-top:0px\">Mock-up<\/h2>";
 strVar += "              Farm fresh data is provided as a sample dataset pulled from the USDA website. ";
-strVar += "              If you need info related to a GEMA supplier, please contact the Georgia Centers of Innovation.";
+strVar += "              If you need info related to a GEMA supplier, please contact the Georgia Center of Innovation.";
 strVar += "              <br><br>";
 strVar += "              -->";
 strVar += "";
