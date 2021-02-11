@@ -5,7 +5,7 @@
 <h3 style="font-weight:400; margin-bottom:0px">
 <div style="font-size: 14px">February to June 2021</div>
 Dive Into Data Commons</h3>
-<a href="challenge/">Learn more</a><br>
+<a href="challenge/">Learn more</a> and expand on <a href="../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a><br>
 
 <h3 style="font-weight:400">
 <div style="font-size: 14px">Fall 2021</div>
