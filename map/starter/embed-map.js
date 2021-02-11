@@ -1045,7 +1045,7 @@ strVar += "        <div id=\"sidemapCard\" class=\"mapHolderCard card\">";
 strVar += "          <div id=\"sidemapbar\" class=\"widgetbar\">";
 strVar += "            <div id=\"sidemapName\" style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
 strVar += "            <\/div>";
-strVar += "            <div id=\"hideSideMap\" class=\"close-X\" style=\"position:absolute;right:0px;top:8px;padding-right:10px;color:#aaa\">&#10005;<\/div>";
+strVar += "            <div id=\"hideSideMap\" class=\"close-X\" style=\"position:absolute;right:0px;top:8px;padding-right:10px;font-size:16px;color:#aaa\">&#10005;<\/div>";
 strVar += "          <\/div>";
 strVar += "";
 strVar += "          <div style=\"clear:both\">  ";
