@@ -2,8 +2,7 @@
 
 ###Share your Product Availability and Publish a Materials Wishlist
 
-[Send Us Links](add) to include your inventory of reusable, shared and recycled items and your wishlist of needed items.  
-If you don't have an existing server to host your files, we'll help you post your listings for free using GitHub.  
+[Send Us Links](add) to include your inventory of vaccine availability or other items and your wishlist of needed items (including reusable, shared and recycled).  If you don't have an existing server to host your files, we'll help you post your listings for free using GitHub.  
 
 Post as CSV files using the following Google Merchant Center standard:  
 [entity1\_inventory.csv](entity1_inventory.csv) and [entity1\_wishlist.csv](entity1_wishlist.csv)  
@@ -14,6 +13,7 @@ Use underscores instead of spaces.
 We'll generate embeddable lists that you can also display in your own website.  
 
 <b>Examples of items to list:</b>  
+Vaccine Availability    
 Rocks, slate, bricks  
 Byproducts of farming  
 Byproducts of food and beer production  
