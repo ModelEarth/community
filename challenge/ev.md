@@ -7,6 +7,8 @@
 
 Join us to create tools and industry maps for sustainable communities and electric vehicle manufacturing using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
+We'll be combining Google Data Commons with <a href="../../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a>  
+
 <!--
 <b>Saturday, January 23, 2021 Schedule</b>  
 
