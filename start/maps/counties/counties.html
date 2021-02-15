@@ -169,12 +169,12 @@ var promises = [
     //region1.set(dp.county_num, +dp.economic_region); /* Including + converts to number */
     
   }),
-
+  /*
   d3.csv("topo/GA_county_regions.csv", function(d) { 
     region1.set(dp.county_num, +dp.io_region); 
 
   })
-
+  */
 ]
 Promise.all(promises).then(ready)
 
@@ -416,7 +416,7 @@ function ready([us]) {
                 //map.fitBounds(e.target.getBounds()); // Zoom to boundary area clicked
                 var fips = "US13" + layer.feature.properties.COUNTYFP;
                 //location.window = 
-                window.top.location.href="../../../info/#geo=" + fips;
+                window.top.location.href="../../../../localsite/info/#geo=" + fips;
             }
 
             function onEachFeature(feature, layer){
