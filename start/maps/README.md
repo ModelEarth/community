@@ -1,7 +1,7 @@
 # Map Samples
 
 <!-- ## [Widget Mockup for EPA (layout)](../../resources/layout/)-->
-## [Map Layers](../../../localsite/map/) - [Map Widget](../../map/starter/embed.html)
+## [Map Layers](../../../localsite/map/) - [Map Widget](../../../localsite/info/embed.html) - [Older](../../map/starter/embed.html)  
 <!--## [Map Points (hubs)](../../hubs/#route=us.ga_to_bs)-->
 ## [Geocoding (mapsforus)](../../../localsite/map/mapsforus)
 ## [US Income (income)](../../map/income)

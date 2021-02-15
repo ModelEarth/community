@@ -8,7 +8,7 @@ Post as CSV files using the following Google Merchant Center standard:
 [entity1\_inventory.csv](entity1_inventory.csv) and [entity1\_wishlist.csv](entity1_wishlist.csv)  
 
 Replace "entity1" with a short lowercase name (handle) for yourself or your organization.  
-Use underscores instead of spaces.  
+Use dashes or underscores instead of spaces.  
 
 We'll generate embeddable lists that you can also display in your own website.  
 

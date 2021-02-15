@@ -1425,7 +1425,7 @@ lazyLoadFiles();
 
 function dualmapLoaded(param, root, count) {
 	if (typeof localsite_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
-		localsite_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
+		//localsite_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 
 		$("#filterEmbedHolder img[src]").each(function() {
 			  if($(this).attr("src").toLowerCase().indexOf("http") < 0){
