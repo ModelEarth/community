@@ -3,9 +3,9 @@
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
 
 <h3 style="font-weight:400; margin-bottom:0px">
-<div style="font-size: 14px">January to June 2021</div>
-Electric Vehicle Ecosystem Hackathon</h3>
-<a href="challenge/">Learn more</a><br>
+<div style="font-size: 14px">February to June 2021</div>
+Dive Into Data Commons</h3>
+<a href="challenge/">Learn more</a> and expand on <a href="../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a><br>
 
 <h3 style="font-weight:400">
 <div style="font-size: 14px">Fall 2021</div>
@@ -148,6 +148,12 @@ Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a
 
 1. Create a "Disposable Database" for editing crowdsourced lists using .csv files hosted in GitHub, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.
 <!--
+Strapi for Amazon AWS - EC2, RDS and S3
+https://strapi.io/documentation/developer-docs/latest/deployment/amazon-aws.html
+
+Azure Data Studio - for Mac to access AWS EC2
+https://github.com/Microsoft/azuredatastudio
+
 1. Add USEEIO widgets to [.NET Environmental Education tools](../setup/) for GEEP partner states and countries.  
 -->
 
@@ -166,7 +172,7 @@ Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a
 
 DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
 
-State Dropdown - DONE  Kathryn Winglee has updated our [R-Language script](../community-data/us/) to output dropdown list attributes for map zoom. -  
+State Dropdown - DONE  Kathryn Winglee has updated our [R-Language script](../community-data/us/) to output dropdown list attributes for [map zoom](../localsite/info/).  
 
 To Do: Update R-Language script to sort states alphabetically. For non-state, add state="false" attribute.
 

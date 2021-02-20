@@ -976,7 +976,7 @@ strVar += "            ";
 strVar += "              <!--";
 strVar += "              <h2 style=\"margin-top:0px\">Mock-up<\/h2>";
 strVar += "              Farm fresh data is provided as a sample dataset pulled from the USDA website. ";
-strVar += "              If you need info related to a GEMA supplier, please contact the Georgia Centers of Innovation.";
+strVar += "              If you need info related to a GEMA supplier, please contact the Georgia Center of Innovation.";
 strVar += "              <br><br>";
 strVar += "              -->";
 strVar += "";
@@ -1045,7 +1045,7 @@ strVar += "        <div id=\"sidemapCard\" class=\"mapHolderCard card\">";
 strVar += "          <div id=\"sidemapbar\" class=\"widgetbar\">";
 strVar += "            <div id=\"sidemapName\" style=\"position:absolute; left:0; padding:4px 4px 4px 10px\">";
 strVar += "            <\/div>";
-strVar += "            <div id=\"hideSideMap\" class=\"close-X\" style=\"position:absolute;right:0px;top:8px;padding-right:10px;color:#aaa\">&#10005;<\/div>";
+strVar += "            <div id=\"hideSideMap\" class=\"close-X\" style=\"position:absolute;right:0px;top:8px;padding-right:10px;font-size:16px;color:#aaa\">&#10005;<\/div>";
 strVar += "          <\/div>";
 strVar += "";
 strVar += "          <div style=\"clear:both\">  ";
@@ -1425,7 +1425,7 @@ lazyLoadFiles();
 
 function dualmapLoaded(param, root, count) {
 	if (typeof localsite_map !== 'undefined' && typeof L.IconMaterial !== 'undefined') {
-		localsite_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
+		//localsite_map.init(["somevalue", 1, "controlId"]); // Used by link to feedback form
 
 		$("#filterEmbedHolder img[src]").each(function() {
 			  if($(this).attr("src").toLowerCase().indexOf("http") < 0){

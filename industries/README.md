@@ -3,6 +3,7 @@
 We're pulling [zip demographic data](../../zip/io/) into a json file for each zip code from [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html).  
 
 To do: Use [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) annual industry data by zip code.  
+[Add a FLOWSA FlowBySector dataset](https://github.com/USEPA/flowsa/wiki/GitHub-Contributors#creating-a-flowbysector-dataset) and the EPA will push to [Data Commons](https://docs.datacommons.org/2020/10/15/search_launch.html).
 Here's an [industry map clustering sample](../../community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50).  
 
 

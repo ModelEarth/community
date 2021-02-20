@@ -26,12 +26,6 @@ Creates a [folder for each digit](https://github.com/datascape/community-usa/tre
 
 1. [Georgia-Grown Local Product Locator - UGA Extension](https://extension.uga.edu/ag-products-connection.html) - Georgia producers who are keeping regular hours, providing curbside pickup, home delivery or e-commerce sales during the COVID-19 pandemic.  
 
-1. Here's our [Copy of the MapsforUS Google Sheet Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTnKsfPX1qpGjWlXLZEu-u_buC3Di-MRnUGxh7KrbR4Jo_6tSMZipnDbLNdD9S-UHReRO6Z0YbYxG1G/pubhtml). 
-Editable link is in our Slack #epa group.
-
-1. Our local [MapsforUS HTML Map](../mapsforus/sample.html) - Uses the Google ID of the Google Sheet above. 
-
-1. [Modifications to MapsForUs](../mapsforus) needs automatic geocoding.  
 
 ## Python with BeautifuSoup
 
