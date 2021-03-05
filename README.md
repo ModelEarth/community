@@ -59,7 +59,7 @@ Research sources of additional EV and hydrogen data listed at the bottom of this
 
 ### Python Web Sockets, Javascript, Leaflet Maps
 
-Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#go=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20)  
+Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#show=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20)  
 
 1. Finalize csv output for counties by state using [BLS data from EPA Flowsa](/localsite/info/data/).  Merge columns and save in state folders.  
 
@@ -288,7 +288,7 @@ D3 - [View Widget](../io/charts/bubble/)
 - Organizations contributing clean energy to the grid
 - Organizations producing green hydrogen
 - Areas with mineral mining resources for batteries
-- Automotive industries by naics
+- [Automotive industries by naics](../community/projects/mobility/)
 
 
 <!--
