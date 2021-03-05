@@ -3,7 +3,7 @@
 <!--
 ### Saturday, January 23, 2021, 10AM to 5PM
 -->
-### February to June 2021
+### March to July 2021
 
 Join us to create tools and industry maps for sustainable communities material management using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
