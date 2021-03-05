@@ -3,9 +3,9 @@
 <!--
 ### Saturday, January 23, 2021, 10AM to 5PM
 -->
-### February to June 2021
+### March to July 2021
 
-Join us to create tools and industry maps for sustainable communities and electric vehicle manufacturing using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
+Join us to create tools and industry maps for sustainable communities material management using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
 We'll be combining Google Data Commons with <a href="../../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a>  
 
@@ -29,6 +29,8 @@ Kathryn Winglee
 Andrew Zimmer  
 <br>
 
+We're using [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on electric vehicle ecosystems.  
+
 <b>Challenge statements</b>  
 
 1. Where are concentrations of electric and hydrogen vehicle parts manufacturers emerging?  
@@ -50,7 +52,7 @@ Andrew Zimmer
 
 <h3>Areas of Focus</h3>
 
-<a href="../../../localsite/info/#go=vehicles&show=counties">Parts manufacturing industries by county</a>  
+<a href="../../../localsite/info/#show=vehicles">Parts manufacturing industries by county</a>  
 <!--
 County automobile industry employment for 6-digit NAICS 336111.
 4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API.  
@@ -60,6 +62,8 @@ We'll be creating a choropleth map of
 <a href="../projects/mobility/">industries impacted by transition to EV</a><br>
 
 We'll be displaying Added Value and Jobs using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">filters</a> for EV Production.
+
+Tie-ins to [Recycling Facility Datasets](../../localsite/map/recycling/ga/)
 
 <!--
 Georgia Labor Market Explorer

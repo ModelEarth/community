@@ -3,7 +3,7 @@
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
 
 <h3 style="font-weight:400; margin-bottom:0px">
-<div style="font-size: 14px">February to June 2021</div>
+<div style="font-size: 14px">March to July 2021</div>
 Dive Into Data Commons</h3>
 <a href="challenge/">Learn more</a> and expand on <a href="../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a><br>
 
