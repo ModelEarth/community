@@ -40,7 +40,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://model.earth/io/charts)  
 
-NAICS for <a href="../projects/mobility/">industries impacted by transition to EV</a><br>
+NAICS for <a href="projects/mobility/">industries impacted by transition to EV</a><br>
 
 [Our county boundary map](/localsite/map/#go=smart) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../io/charts/).  
 
@@ -57,7 +57,9 @@ Research sources of additional EV and hydrogen data listed at the bottom of this
 
 ## II. Python Machine Learning Team
 
-### Python Web Sockets, Javascript, Leaflet Maps
+### Python Flask, Javascript, Leaflet Maps
+
+Predicting outcomes from changes to collections of industries and transitions within industry groups.  
 
 Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#show=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20)  
 
