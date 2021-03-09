@@ -42,16 +42,22 @@ Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://mo
 
 NAICS for <a href="projects/mobility/">industries impacted by transition to EV</a><br>
 
-[Our county boundary map](/localsite/map/#go=smart) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../io/charts/).  
+Recent updates: Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).
+
+Investigating: [Datausa.io API](https://github.com/DataUSA/datausa-site) which uses [Mondrian REST](https://github.com/ojbc/mondrian-rest#api-usage). Let's also try using [D3Plus](https://d3plus.org/examples/).
 
 
 ## I. EV Research Team
 
-Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC)
+We're adding to an [Automobile Manufacturing Map](../localsite/info/#show=vehicles) pulled from Google Sheet to provide county-level EV job totals.  
 
+Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
+
+<!--
 The Apple Electric Car might be produced by Kia in LaGrange, Georgia! How can we interface with their efforts?
 
 Find locations scraped by All The Places that list the number and types of charging stations at each location and oversee adding to the scraper. Save as [zip code](https://model.earth/zip/io/#zip=30310) files.
+-->
 
 Research sources of additional EV and hydrogen data listed at the bottom of this page.  
 
@@ -187,7 +193,8 @@ Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in
 
 
 ## More
-  
+
+1. [Our county boundary map](/localsite/map/#go=smart) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../io/charts/).  
 
 1. [Map starters](start) and [Leaflet route maps](start/routing/) for driving tours and deliveries.
 
