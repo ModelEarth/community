@@ -124,7 +124,7 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 ### React and Material UI
 
-1. Contribute to our [AWS Amplify React](../amplify/AWS/) repo by activating [Last Airbender indicator sets](../io/charts/inflow-outflow/).  
+1. Contribute to our [AWS Amplify React](../aws/amplify/) repo by activating [Last Airbender indicator sets](../io/charts/inflow-outflow/).  
 
 
 1. Update EPA's <a href="../io/charts/">Embeddable IO Widgets</a> generated from [USEEIO API](https://github.com/USEPA/USEEIO_API) local .json data.  
@@ -140,7 +140,7 @@ Find cool Material UI interfaces that could be applied to our category set menu.
 <p>
 The category set json resides in docs/static/json thanks to Alikah within our <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a> which is a great place to learn React.
 
-<a href="../amplify/AWS/">We've documented AWS Amplify set up steps</a>.
+<a href="../aws/amplify/">We've documented AWS Amplify set up steps</a>.
 
 <!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 -->
