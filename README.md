@@ -49,7 +49,7 @@ Investigating: [Datausa.io API](https://github.com/DataUSA/datausa-site) which u
 
 NAICS for <a href="projects/mobility/">industries impacted by transition to EV</a><br>
 
-We're adding to an [Motor Vehicle Manufacturing Map](../localsite/info/#show=vehicles) pulled from Google Sheet to provide county-level EV job totals.  
+We're adding to a [Motor Vehicle Manufacturing Map](../localsite/info/#show=vehicles) pulled from a [Google Sheet](https://docs.google.com/spreadsheets/d/1OX8TsLby-Ddn8WHa7yLKNpEERYN_RlScMrC0sbnT1Zs/edit#gid=0) to provide county-level EV vs Transmission job totals.  
 
 <!--
 Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
