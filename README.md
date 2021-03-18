@@ -5,7 +5,7 @@
 <h3 style="font-weight:400; margin-bottom:0px">
 <div style="font-size: 14px">March to July 2021</div>
 Dive Into Data Commons</h3>
-<a href="challenge/">Learn more</a> and expand on <a href="../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a><br>
+<a href="challenge/">Learn more</a> and expand on <a href="../localsite/map/#show=vax">Vaccine Availability Crowdsourcing</a><br>
 
 <h3 style="font-weight:400">
 <div style="font-size: 14px">Fall 2021</div>
@@ -40,26 +40,30 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 
 Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://model.earth/io/charts)  
 
-NAICS for <a href="../projects/mobility/">industries impacted by transition to EV</a><br>
+Recent updates: Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).
 
-[Our county boundary map](/localsite/map/#go=smart) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../io/charts/).  
+Investigating: [Datausa.io API](https://github.com/DataUSA/datausa-site) which uses [Mondrian REST](https://github.com/ojbc/mondrian-rest#api-usage). Let's also try using [D3Plus](https://d3plus.org/examples/).
 
 
 ## I. EV Research Team
 
-Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC)
+NAICS for <a href="projects/mobility/">industries impacted by transition to EV</a><br>
 
-The Apple Electric Car might be produced by Kia in LaGrange, Georgia! How can we interface with their efforts?
+We're adding to an [Motor Vehicle Manufacturing Map](../localsite/info/#show=vehicles) pulled from Google Sheet to provide county-level EV job totals.  
 
-Find locations scraped by All The Places that list the number and types of charging stations at each location and oversee adding to the scraper. Save as [zip code](https://model.earth/zip/io/#zip=30310) files.
+<!--
+Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
+-->
 
 Research sources of additional EV and hydrogen data listed at the bottom of this page.  
 
 ## II. Python Machine Learning Team
 
-### Python Web Sockets, Javascript, Leaflet Maps
+### Python Flask, Javascript, Leaflet Maps
 
-Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#go=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20)  
+Predicting outcomes from changes to collections of industries and transitions within industry groups.  
+
+Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#show=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20)  
 
 1. Finalize csv output for counties by state using [BLS data from EPA Flowsa](/localsite/info/data/).  Merge columns and save in state folders.  
 
@@ -116,7 +120,7 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 ### React and Material UI
 
-1. Contribute to our [AWS Amplify React](../amplify/AWS/) repo by activating [Last Airbender indicator sets](../io/charts/inflow-outflow/).  
+1. Contribute to our [AWS Amplify React](../aws/amplify/) repo by activating [Last Airbender indicator sets](../io/charts/inflow-outflow/).  
 
 
 1. Update EPA's <a href="../io/charts/">Embeddable IO Widgets</a> generated from [USEEIO API](https://github.com/USEPA/USEEIO_API) local .json data.  
@@ -132,7 +136,7 @@ Find cool Material UI interfaces that could be applied to our category set menu.
 <p>
 The category set json resides in docs/static/json thanks to Alikah within our <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a> which is a great place to learn React.
 
-<a href="../amplify/AWS/">We've documented AWS Amplify set up steps</a>.
+<a href="../aws/amplify/">We've documented AWS Amplify set up steps</a>.
 
 <!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 -->
@@ -185,7 +189,8 @@ Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in
 
 
 ## More
-  
+
+1. [Our county boundary map](/localsite/map/#go=smart) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../io/charts/).  
 
 1. [Map starters](start) and [Leaflet route maps](start/routing/) for driving tours and deliveries.
 
@@ -288,7 +293,7 @@ D3 - [View Widget](../io/charts/bubble/)
 - Organizations contributing clean energy to the grid
 - Organizations producing green hydrogen
 - Areas with mineral mining resources for batteries
-- Automotive industries by naics
+- [Automotive industries by naics](../community/projects/mobility/)
 
 
 <!--
