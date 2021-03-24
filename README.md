@@ -66,9 +66,11 @@ Research sources of additional EV and hydrogen data listed at the bottom of this
 
 Predicting outcomes from changes to collections of industries and transitions within industry groups.  
 
-Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#show=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20)  
-
+Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#show=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20) using DataUSA.io widget displaying American Community Survey (ACS) Public Use Microdata Sample [PUMS](https://www.census.gov/programs-surveys/acs/microdata/mdat.html) data.  
+<!--
 1. Finalize csv output for counties by state using [BLS data from EPA Flowsa](/localsite/info/data/) - scroll down in page.  Merge columns and save in state folders.  
+-->
+1. [Set-up Flask server](/localsite/info/data/) using DataCommon.org "tools" repo sample.  
 
 1. Document setting up a public website using the Machine Learning Websocket in the first project sample below.
 
