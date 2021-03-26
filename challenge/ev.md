@@ -35,7 +35,7 @@ We're using [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data t
 - [Commute Time and Walkability](../../localsite/info/data/)  
 <br>
 
-<b>EV Challenge statements</b>  
+<b>EV Challenge Statements</b>  
 
 1. Where are concentrations of electric and hydrogen vehicle parts manufacturers emerging?  
 
@@ -63,7 +63,7 @@ County automobile industry employment for 6-digit NAICS 336111.
 -->
 
 We'll be creating a choropleth map of 
-<a href="../projects/mobility/">industries impacted by transition to EV</a><br>
+<a href="../projects/mobility/">industries impacted by the transition to EV</a><br>
 
 We'll be displaying Added Value and Jobs using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">filters</a> for EV Production.
 
