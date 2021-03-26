@@ -7,8 +7,6 @@
 
 Join us to create tools and industry maps for sustainable communities material management using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
-We'll be combining Google Data Commons with <a href="../../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a>  
-
 <!--
 <b>Saturday, January 23, 2021 Schedule</b>  
 
@@ -29,9 +27,15 @@ Kathryn Winglee
 Andrew Zimmer  
 <br>
 
-We're using [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on electric vehicle ecosystems.  
+We're using [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
 
-<b>Challenge statements</b>  
+- [Solar Companies](../../localsite/map/#show=solar)  
+- [Manufacturing Recyclers](../../localsite/map/#show=recycling)   
+- [Electric Vehicle Ecosystems](../../localsite/map/#show=vehicles)  
+- [Commute Time and Walkability](../../localsite/info/data/)  
+<br>
+
+<b>EV Challenge Statements</b>  
 
 1. Where are concentrations of electric and hydrogen vehicle parts manufacturers emerging?  
 
@@ -59,7 +63,7 @@ County automobile industry employment for 6-digit NAICS 336111.
 -->
 
 We'll be creating a choropleth map of 
-<a href="../projects/mobility/">industries impacted by transition to EV</a><br>
+<a href="../projects/mobility/">industries impacted by the transition to EV</a><br>
 
 We'll be displaying Added Value and Jobs using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">filters</a> for EV Production.
 
