@@ -7,8 +7,6 @@
 
 Join us to create tools and industry maps for sustainable communities material management using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
-We'll be combining Google Data Commons with <a href="../../localsite/map/neighborhood/vaccines/">Vaccine Availability Crowdsourcing</a>  
-
 <!--
 <b>Saturday, January 23, 2021 Schedule</b>  
 
@@ -29,9 +27,15 @@ Kathryn Winglee
 Andrew Zimmer  
 <br>
 
-We're using [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on electric vehicle ecosystems.  
+We're using [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
 
-<b>Challenge statements</b>  
+- [Solar Companies](../../localsite/map/#show=solar)  
+- [Manufacturing Recyclers](../../localsite/map/#show=recycling)   
+- [Electric Vehicle Ecosystems](../../localsite/map/#show=vehicles)  
+- [Commute Time and Walkability](../../localsite/info/data/)  
+<br>
+
+<b>EV Challenge statements</b>  
 
 1. Where are concentrations of electric and hydrogen vehicle parts manufacturers emerging?  
 
