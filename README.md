@@ -101,10 +101,6 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 
 Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo.  
 
-Pull over demographics reporting interface from CensusReporter. Retain ability to point at existing PostGreSQL backend while adding ability to pull from Google Data Commons.   
-
-All the Places - Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.  
-
 DONE - State Dropdown. Kathryn Winglee has updated our [R-Language script](../community-data/us/) to output dropdown list attributes for [map zoom](../localsite/info/).  
 
 DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
@@ -112,6 +108,11 @@ DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipc
 DONE - Kathryn Winglee updated R-Language script to sort states alphabetically. For non-state, add state="false" attribute.
 
 DONE - Pull Data to GitHub. Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).  
+
+All the Places - Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.  
+
+Pull over demographics reporting interface from [CensusReporter](resources/censusreporter). Retain ability to point at existing PostGreSQL backend while adding ability to pull from Google Data Commons.   
+
 
 ## IV. Crowdsource Editor Team - Google REST App
 

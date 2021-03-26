@@ -6,10 +6,13 @@ and [social safety net tools](https://www.codeforamerica.org/features/bringing-s
 
 [Our Python 3 Fork](https://github.com/modelearth/map)  
 
-### CensusReporter - Django - PostgreSQL
+### CensusReporter Frontend with Google Data Commons API
+ 
+Using the [frontend](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) from the Python 3 fork of CensusReporter, we'll point demographics charts at the Google Data Commons API (retain support for PostgreSQL).  
 
-**Project**  
-Use the Python 3 fork of CensusReporter to upgrade the US version and create an easy starting point for any country or state to integrate their demographic, industry and environmental data for analysis by machine learning algorithms.  
+**Goal**
+
+Allow any country to integrate their demographic, industry and environmental data for analysis by machine learning algorithms using a common Schema within the Google Data Commons API.  
 
 The Wazimap fork provides a Python 3 version of Census Reporter with international usage.  
 We're aiming to bring it in sync with the Python 2 version used by [CensusReporter.org](https://CensusReporter.org).  
@@ -17,18 +20,16 @@ We're aiming to bring it in sync with the Python 2 version used by [CensusReport
 Start from our [github.com/modelearth/map](https://github.com/modelearth/map) fork of Wazimap Census Reporter.  
 Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
+<!--
 Place Wazimap fork of CensusReporter into a [Python Docker container](https://hub.docker.com/_/python) for easier install.  
 Place Census Reporter database into [PostgreSQL Docker container](https://hub.docker.com/_/postgres) with files for Docker secrets.
+-->
 
 Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates) (includes Django and Gatsby). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
 
-**Questions**  
+**Challenge**  
 
-CensusReporter simplifies the Census API. Is there a newer Census API's to integrate?  
-
-During the process, how can we improve on the UI and performance of [data.census.gov](https://data.census.gov).  CensusReporter has the advantage of generting static files. Let's create shorter URLs.  
-
-How can demographics data, maps and machine learning be integrated around [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/)?
+How can demographics data, maps and machine learning be integrated with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/)?
  
 **Pages to Compare**  
 [CensusReporter.com Atlanta](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) - [GitHub repo](https://github.com/censusreporter/censusreporter) - [Our Python 3 Fork](https://github.com/modelearth/map)  
