@@ -44,7 +44,7 @@ Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://mo
 
 [Install DataCommons.org Tools and Website](../localsite/info/data/) on your local computer.  
 
-Get creative and work toward adding an "Environmental > Impact" section with EPA data.  
+Get creative and work toward adding an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section with EPA data.  
 
 Investigate using [D3Plus](https://d3plus.org/examples/) charts in tandom with [Datausa.io API](https://github.com/DataUSA/datausa-site) which uses [Mondrian REST](https://github.com/ojbc/mondrian-rest#api-usage).  
 
