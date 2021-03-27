@@ -7,6 +7,8 @@
 
 Join us to create tools and industry maps for sustainable communities material management using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
 
+Get started with our [Data Commons Tools setup steps](../../localsite/info/data/) 
+
 <!--
 <b>Saturday, January 23, 2021 Schedule</b>  
 
@@ -27,7 +29,7 @@ Kathryn Winglee
 Andrew Zimmer  
 <br>
 
-We're using [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
+We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
 
 - [Solar Companies](../../localsite/map/#show=solar)  
 - [Manufacturing Recyclers](../../localsite/map/#show=recycling)   

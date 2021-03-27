@@ -42,7 +42,7 @@ Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://mo
 
 ## I. Google Data Commons API Team
 
-[Install DataCommons.org Tools and Website](../localsite/info/data/) on your local computer.  
+[Install DataCommons.org Tools](../localsite/info/data/) on your local computer.  
 
 Get creative and work toward adding an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section with EPA data.  
 
@@ -59,6 +59,8 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 ### Python Flask, Javascript, Leaflet Maps
 
 Predicting outcomes from changes to collections of industries and transitions within industry groups.  
+
+COLAB-orating with San Diego coders: [mcmorgan27/sd-business](https://github.com/mcmorgan27/sd-business/tree/1b22ef0e9231f0d2bcfafcff41e69c9adc9038fd)
 
 Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#show=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20) using DataUSA.io widget displaying American Community Survey (ACS) Public Use Microdata Sample [PUMS](https://www.census.gov/programs-surveys/acs/microdata/mdat.html) data.  
 <!--
