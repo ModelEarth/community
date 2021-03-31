@@ -32,7 +32,7 @@ Andrew Zimmer
 We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
 
 - [Solar Companies](../../localsite/map/#show=solar)  
-- [Manufacturing Recyclers](../../localsite/map/#show=recycling)   
+- [Recycling, Processors, Transfer Stations](../../localsite/map/recycling/ga/)   
 - [Electric Vehicle Ecosystems](../../localsite/map/#show=vehicles)  
 - [Commute Time and Walkability](../../localsite/info/data/)  
 <br>
