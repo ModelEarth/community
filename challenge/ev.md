@@ -17,26 +17,17 @@ Get started with our [Data Commons Tools setup steps](../../localsite/info/data/
 4:00pm to 5:00pm - Team Share Outs  
 -->
 
-<b>Our January Winners</b>
-
-#####1st Place - Top Web Developer  
-Akilah Littlejohn  
-
-#####Top Data Science Developer  
-Kathryn Winglee  
-
-#####Top React Developer  
-Andrew Zimmer  
-<br>
 
 We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
 
+- <a href="../../../localsite/info/">Industries and Impacts by county</a>  
 - [Solar Companies](../../localsite/map/#show=solar)  
 - [Recycling, Processors, Transfer Stations](../../localsite/map/recycling/ga/)   
 - [Electric Vehicle Ecosystems](../../localsite/map/#show=vehicles)  
 - [Commute Time and Walkability](../../localsite/info/data/)  
 <br>
 
+<!--
 <b>EV Challenge Statements</b>  
 
 1. Where are concentrations of electric and hydrogen vehicle parts manufacturers emerging?  
@@ -44,6 +35,7 @@ We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://w
 2. Where are combustion vehicle manufacturers likely to be impacted?  
 
 3. How can we improve the visualization of supply chain inflow and outflow for local impacts on jobs, value added and the environment?  
+-->
 
 <!--
 <b>Growing EV Ecosystems</b>  
@@ -58,21 +50,30 @@ We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://w
 
 <h3>Areas of Focus</h3>
 
-<a href="../../../localsite/info/#show=vehicles">Parts manufacturing industries by county</a>  
+
 <!--
 County automobile industry employment for 6-digit NAICS 336111.
 4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API.  
 -->
 
+We'll be displaying Added Value and Jobs using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">impact filters</a>  
+
 We'll be creating a choropleth map of 
-<a href="../projects/mobility/">industries impacted by the transition to EV</a><br>
+<a href="../projects/mobility/">industries impacted by the transition to EV</a>  
 
-We'll be displaying Added Value and Jobs using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">filters</a> for EV Production.
+We'll be dreaming of creating an integrated [Georgia Labor Market Explorer](https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E)  
 
-Tie-ins to [Recycling Facility Datasets](../../localsite/map/recycling/ga/)
+--- 
+<br>
 
-<!--
-Georgia Labor Market Explorer
-https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E
--->
+<b>Our January Winners</b>
 
+#####1st Place - Top Web Developer  
+Akilah Littlejohn  
+
+#####Top Data Science Developer  
+Kathryn Winglee  
+
+#####Top React Developer  
+Andrew Zimmer  
+<br>
