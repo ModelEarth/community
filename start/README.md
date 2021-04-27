@@ -20,6 +20,7 @@ Stand-alone examples of formatting and displaying community data.
 [Content Management Systems for JAMstack Sites](https://headlesscms.org/)  
 [StackBlitz.com](https://stackblitz.com/) - Like Code VS, but in a browser. React TS, Angular, Svelte, Javascript - Nice UI!  
 [AWS 10-Minutue Tutorials](https://aws.amazon.com/getting-started/tutorials/?awsf.getting-started-content=use-case-tmt%23websites-apps) - [Serverless with Cloud9](https://aws.amazon.com/getting-started/tutorials/build-serverless-app-codestar-cloud9/?trk=gs_card) - Collaborative integrated development environment (IDE)  
+[YAML is cool - alternative to json for config settings](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/)  
 
 **React**  
 [Start with the USSEIO-widget React Repo](../../io/charts/)  
