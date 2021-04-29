@@ -1,3 +1,4 @@
+### Project Areas
 <h1 class="h1-home">2021 Programming Events</h1>
 
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
@@ -12,7 +13,7 @@ Dive Into Data Commons</h3>
 
 <h3 style="font-weight:400">
 <div style="font-size: 14px">Fall 2021</div>
-Sustainable Communities Web Challenge
+Sustainable Communities "Beyond Carbon" Web Challenge
 </h3>
 
 We're combing industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br>
