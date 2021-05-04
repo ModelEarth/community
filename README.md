@@ -60,7 +60,7 @@ Add highlighted colors similar to BEA
 
 Investigate using [D3Plus](https://d3plus.org/examples/) charts in tandom with [Datausa.io API](https://github.com/DataUSA/datausa-site) which uses [Mondrian REST](https://github.com/ojbc/mondrian-rest#api-usage).  Example: [Automotive Parts](https://datausa.io/profile/naics/automotive-parts-accessories-tire-stores-)
 
-NAICS for <a href="projects/mobility/">industries impacted by transition to EV</a>.  We're adding to a [Motor Vehicle Manufacturing Map](../localsite/info/#show=vehicles) pulled from a [Google Sheet](https://docs.google.com/spreadsheets/d/1OX8TsLby-Ddn8WHa7yLKNpEERYN_RlScMrC0sbnT1Zs/edit#gid=0) to provide county-level EV vs Transmission job totals.  
+NAICS for <a href="projects/mobility/">industries impacted by transition to EV</a>.  We're adding to a [Motor Vehicle Manufacturing Map](../localsite/info/#show=vehicles) pulled from a [Google Sheet](https://docs.google.com/spreadsheets/d/1OX8TsLby-Ddn8WHa7yLKNpEERYN_RlScMrC0sbnT1Zs/edit#gid=0) to provide prospective job totals for Electric Vehicle prodution (including Hydrogen) and Internal Combustion Engine (ICE) production.    
 
 <!--
 Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
