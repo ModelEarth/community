@@ -46,9 +46,9 @@ Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://mo
 
 ## I. Google Data Commons API Team
 
-[Install DataCommons.org Tools](../localsite/info/data/) on your local computer.  
+[Install DataCommons.org Tools](../localsite/info/data/datacommons/) on your local computer.  
 
-Pull Commute Times from the Google Data Commons API and Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
+Pull commute times from the Google Data Commons API and Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
 
 Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
 
