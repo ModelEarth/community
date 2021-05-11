@@ -50,7 +50,7 @@ Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://mo
 
 [Install Data Commons Lite](../localsite/info/data/datacommons/) on your local computer.  
 
-Find and pull commute times from census data in the Google Data Commons API.  
+Find and pull US census data by state and county from the Google Data Commons API.  Look for commute times.  
 
 Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
 
