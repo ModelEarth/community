@@ -3,20 +3,22 @@
 
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
 
+We're creating a [Python pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline) using Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/) as an example.
+
 <h3 style="font-weight:400; margin-bottom:0px">
-<div style="font-size: 14px">March to July 2021</div>
+<div style="font-size: 14px">May to July 2021</div>
 Dive Into Data Commons</h3>
 <a href="challenge/">Learn more</a><br>
 
 <h3 style="margin-bottom:0px">Code for America - Nav and Map Integrations</h3>
-<a href="https://neighborhood.org/public-tree-map">Learn more</a><br>
+<a href="../localsite/info/#show=brigades">View Brigade Map with Impact Data</a><br>
 
 <h3 style="font-weight:400">
 <div style="font-size: 14px">Fall 2021</div>
 Sustainable Communities "Beyond Carbon" Web Challenge
 </h3>
 
-We're combing industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br>
+We're combining industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br>
 
 <div>
 
@@ -46,9 +48,11 @@ Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://mo
 
 ## I. Google Data Commons API Team
 
-[Install DataCommons.org Tools](../localsite/info/data/datacommons/) on your local computer.  
+[Install Data Commons Lite](../localsite/info/data/datacommons/) on your local computer.  
 
-Pull commute times from the Google Data Commons API and Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
+Find and pull commute times from census data in the Google Data Commons API.  
+
+Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
 
 Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
 
@@ -254,8 +258,7 @@ React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210
 
 React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../io/charts/) 
 
-- When column selected, avoid dimming other columns.  
-- React javascript is too big (2MB and growing). Split out widgets.     
+ <!--   
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
 - Show list of selected sectors under "X selected" tab. Include duplicate checkboxes in "X selected" tab.  
 - Display parent NAICS industry categories that open to reveal subcategories
@@ -263,20 +266,45 @@ React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All 
 
 - Toggle matrices using a dropdown menu to select a matrix
 - List by parent category.
-- Include menu with options: Alphabetical, Show values 
-- Show values like [sortable example](https://model.earth/community/start/dataset/sortable.html)
-- Include verticle column name like [dataset example](https://model.earth/community/start/dataset/)
-- Highlight an "Action" menu when checkboxes are clicked
-- Actions could include: Display on map, Display bar chart, Generate Report
 
-Additional updates:  
+-->
 
-1. Place "id" and "title" columns first. (Split "Sectors" column and remove.)
-2. Omit decimal places from dollar values.
-3. Parse ID to add a "main\_category\_id" column. Use a 2 digit number to keep CSV file small.  
-4. Retain capital letters at start of words in section titles.
-5. Add Input-Output total dollar values.  
+- Reduce top of popup by 50px. (It currently gets covered by page header).
+- Rename to "Show Selected Only" and "Show Selected First"
+- Place a line above "Alphabetical"
+- If easy, allow rest of page to still scroll when the popup is open.
+https://github.com/USEPA/useeio-widgets/issues/57
 
+
+- Display as: $0.877 per $1 spent
+https://github.com/USEPA/useeio-widgets/issues/58
+
+
+Updates to heatmap column sorting
+https://github.com/USEPA/useeio-widgets/issues/52  
+
+Action Menu
+
+1. When boxes are checked on the mosaic heatmap, show an action menu containing:
+
+Action...
+View Inflow-Outflow
+(Later we'll add "View Map", "View Charts" and "View Report")
+
+2. When choosing "View Inflow-Outflow" redirect to:
+https://thetisiboth.github.io/useeio-widget-builds/slider.html#sectors=333613,335912,336111
+
+3. Briefly highlight the "Action" menu with blue when checkboxes are clicked. 
+
+4. Hide the Action menu again when all boxes are unchecked.
+
+5. Add a "View Mosaic" option to the input-output sort menus
+
+
+
+Optimization for web - Decimal removal and restoration
+
+https://github.com/USEPA/useeio-widgets/issues/54
 
 
 
