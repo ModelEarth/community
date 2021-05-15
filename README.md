@@ -223,13 +223,19 @@ https://github.com/Microsoft/azuredatastudio
 
 # Additional Updates
 
+
 ## Inflow-Outflow Chart
+
 
 [Inflow-Outflow Chart](../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - 
 <a href="../io/build/slider.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - 
 <a href="../io/charts/">All Widgets</a>   
 
 Prevent multiple stepping backing-up by avoiding saving history with each hash change.  
+
+Related: [USEEIO-widget GitHub issue #41](https://github.com/USEPA/useeio-widgets/issues/41)  
+
+See additional [USEEIO-widget GitHub issues](https://github.com/USEPA/useeio-widgets/issues)  
 
 <!--
 The bar could turn green when a commodity has been increased from its default.  
@@ -254,6 +260,8 @@ React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210
 
 React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../io/charts/) 
 
+These are posted as [USEEIO-widget GitHub issues](https://github.com/USEPA/useeio-widgets/issues)  
+
  <!--   
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
 - Show list of selected sectors under "X selected" tab. Include duplicate checkboxes in "X selected" tab.  
@@ -268,16 +276,16 @@ React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All 
 - Reduce top of popup by 50px. (It currently gets covered by page header).
 - Rename to "Show Selected Only" and "Show Selected First"
 - Place a line above "Alphabetical"
-- If easy, allow rest of page to still scroll when the popup is open.
-https://github.com/USEPA/useeio-widgets/issues/57
+- If easy, allow rest of page to still scroll when the popup is open. 
+([Issue 57](https://github.com/USEPA/useeio-widgets/issues/57))
 
 
-- Display as: $0.877 per $1 spent
-https://github.com/USEPA/useeio-widgets/issues/58
+- Display as: $0.877 per $1 spent 
+([Issue 58](https://github.com/USEPA/useeio-widgets/issues/58))  
 
 
-Updates to heatmap column sorting
-https://github.com/USEPA/useeio-widgets/issues/52  
+Updates to heatmap column sorting 
+([Issue 52](https://github.com/USEPA/useeio-widgets/issues/52))  
 
 Action Menu
 
@@ -298,9 +306,7 @@ https://thetisiboth.github.io/useeio-widget-builds/slider.html#sectors=333613,33
 
 
 
-Optimization for web - Decimal removal and restoration
-
-https://github.com/USEPA/useeio-widgets/issues/54
+Optimization for web - Decimal removal and restoration ([Issue 54](https://github.com/USEPA/useeio-widgets/issues/54))
 
 
 
