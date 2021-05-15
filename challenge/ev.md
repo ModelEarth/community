@@ -56,7 +56,7 @@ County automobile industry employment for 6-digit NAICS 336111.
 4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API.  
 -->
 
-We'll be displaying Added Value and Jobs using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">impact filters</a>  
+We'll be displaying Jobs and Value Added using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">impact filters</a>  
 
 We'll be creating a choropleth map of 
 <a href="../projects/mobility/">industries impacted by the transition to EV</a>  
