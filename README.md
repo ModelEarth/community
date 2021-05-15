@@ -1,5 +1,4 @@
-### Project Areas
-<h1 class="h1-home">2021 Programming Events</h1>
+<h1 class="h1-home">2021 Project Areas</h1>
 
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
 
@@ -27,15 +26,12 @@ We're combining industry analytics, impacts, demographics and machine learning u
 <!--
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 -->
-<a href="challenge/slack/" class="btn btn-danger">Join us on Slack</a>
+<a href="challenge/meetups/" class="btn btn-danger">Join us on Slack</a>
 
 
 </div>
 
 <br>
-
-# Project Teams
-
 
 <!--
 Teams that contribute to these broad areas have a good chance of earning an award of 
@@ -46,7 +42,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://model.earth/io/charts)  
 
 
-## I. Google Data Commons API Team
+## I. Google Data Commons API
 
 [Install Data Commons Lite](../localsite/info/data/datacommons/) on your local computer.  
 
@@ -67,7 +63,7 @@ Analysis applied to <a href="projects/mobility/">industries impacted by the tran
 Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
 --> 
 
-## II. Python Machine Learning Team
+## II. Python Machine Learning
 
 ### Python Flask, Javascript, Leaflet Maps
 
@@ -112,7 +108,7 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3 Wazimap [fork](resources/censusreporter) used in Africa and India. Integrate US demographic data from Python 2 version. Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
 -->
 
-## III. GitHub Actions Demographics Team
+## III. GitHub Actions Automation
 
 Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo.  
 
@@ -129,7 +125,7 @@ All the Places - Output [All the Places](https://www.alltheplaces.xyz/) into zip
 Pull over demographics reporting interface from [CensusReporter](resources/censusreporter). Retain ability to point at existing PostGreSQL backend while adding ability to pull from Google Data Commons.   
 
 
-## IV. Crowdsource Editor Team - Google REST App
+## IV. Crowdsource Editor - Google REST App
 
 1. Google Sheet Crowdsource Editor - A REST process allowing editors to return and update their own row contributions.
 
@@ -138,7 +134,7 @@ Pull over demographics reporting interface from [CensusReporter](resources/censu
 1. [Google Sheet Editor](../editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to edit rows of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
 
 
-## V. React - Input-Output Sankey Chart Team
+## V. React - Input-Output Sankey Chart
 
 ### React and USEEIO JSON
 
@@ -154,7 +150,7 @@ Pull over demographics reporting interface from [CensusReporter](resources/censu
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
 -->
 
-## VI. React - Last Airbender Interface Team
+## VI. React - Last Airbender Interface
 
 ### React and Material UI
 
@@ -381,7 +377,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="slack/" class="btn btn-danger">Slack Groups</a>
+<a href="meetups/" class="btn btn-danger">Slack Groups</a>
 
 </div>
 

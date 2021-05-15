@@ -5,7 +5,7 @@
 -->
 ### May to July 2021
 
-Join us to create tools and industry maps for Sustainable Material Management (smm) using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
+Join us to create tools and industry maps for Sustainable Material Management (smm) using Google [Data Commons](https://datacommons.org) in our <a href="meetups/" style="white-space:nowrap;">Weekly Meetups</a>.  
 
 Get started with our [Data Commons Lite setup steps](../../localsite/info/data/datacommons/) 
 
@@ -23,8 +23,8 @@ We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://w
 - <a href="../../../localsite/info/#showloc">Industries and Impacts by county</a>  
 - [Solar Companies](../../localsite/map/#show=solar)  
 - [Recycling, Processors, Transfer Stations](../../localsite/map/recycling/ga/)   
-- [Electric Vehicle Ecosystems](../../localsite/map/#show=vehicles)  
-- [Commute Time and Walkability](../../localsite/info/data/)  
+- [Electric Vehicle Ecosystems](../../localsite/info/#state=GA&show=vehicles)  
+- [Commute Times and Walkability](../../localsite/info/data/)  
 <br>
 
 <!--
