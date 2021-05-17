@@ -47,15 +47,18 @@ $500 - Top Web Developer
 $500 - Top Data Science Developer  
 $500 - Top React Developer  
 $500 - Top Google Developer  
-$500  
+$500 - Top Overall Contributor 
 
 #### Community Data Collection Champions ($2,000)
-$500  
-$500  
-$500  
-$500  
+$500 - Widely Useful  
+$500 - Detailed Analysis  
+$500 - Collaborative Assembly  
+$500 - Perspective Changing  
 
 #### K-12 Teams ($3000)
+
+Focused on ideas and presentations  
+
 $1,000 - Coolest Concept  
 $1,000 - Boss Coding  
 $500 - Steller Design  
