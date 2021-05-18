@@ -88,7 +88,7 @@ K-12 teams may focus on presentations using Google Slides, Powerpoint, etc.
 - Static frontend may be hosted for free using GitHub
 - Free or very affordable options for hosting associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
 
-_Employees of EPA, GDEcD and GDIT are not eligible for awards.  _
+Employees of EPA, GDEcD and GDIT are not eligible for awards.  
 
 **Judging Criteria**  
 (relative weight of criteria in parentheses)
