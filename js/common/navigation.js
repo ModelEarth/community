@@ -78,8 +78,8 @@ $(document).ready(function(){
 		 		$('.georgia').css('display', 'inline');
 		 	} else if(1==2 && location.host.indexOf('neighborhood') >= 0) {
 		 		// Something here causes distorted logo live on neighborhood
-		 		$(".siteTitleShort").text("Model Building");
-		 		$('#logoholder').html("<a href='/'><img style='height: 25px;margin: 30px 10px 4px 10px;' src='" + climbpath + "../localsite/img/logo/favicon.png' style='width:140px;padding-top:4px'></a>");
+		 		$(".siteTitleShort").text("Neighborhood");
+		 		$('#logoholder').html("<a href='/'><img style='height: 25px;margin: 30px 10px 4px 10px;' src='" + climbpath + "../localsite/img/logo/partners/neighborhood-icon.png' style='width:140px;padding-top:4px'></a>");
 		 		$('.headerbar').css('height', '80px');
 		 		$('.headerOffsetOne').css('height', '80px');
 		 		$('.headerbarheight').css('height', '80px');
