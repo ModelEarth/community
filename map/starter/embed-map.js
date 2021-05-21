@@ -1245,6 +1245,7 @@ function includeCSS(url,root) {
 }
 var param = {};
 param = loadParam(location.search,location.hash);
+param.state = "GA"; // Hardcoded for old PPE link.
 window.onhashchange = function() { // Refresh params values when user changes URL hash after #.
 	//alert("window.onhashchange")
 	params = loadParams(location.search,location.hash);	

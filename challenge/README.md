@@ -6,13 +6,23 @@
 Wes may involve Jay in outreach and planning for our fall event.
 https://www.linkedin.com/in/jay-bassett-9a14616/
 -->
-<h3><span style="white-space:nowrap">Fall 2021 - Virtual AND in person in Atlanta, Georgia</span></h3>
+<h3><span style="white-space:nowrap">Summer and Fall of 2021<!-- Virtual AND in person in Atlanta, Georgia--></span></h3>
 
-Join us at an upcoming <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta Meetup</a> to get involved!<br>
+Join us at an upcoming <a href="meetups/">Meetup</a> to get involved!<br>
 
-Form a team, join an existing team or compete individually in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
+Form a team, join an existing team or compete individually in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development Centers of Innovation and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
-We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.   
+We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.  
+
+
+Register now and join our Slack Channel.  
+
+<div style="margin-top:20px">
+<a href="registration/" class="btn btn-success">Register to participate</a>
+<a href="../" class="btn btn-warning">View Project Areas</a>
+<a href="meetups" class="btn btn-danger">Slack Groups</a>
+</div>
+<br>
 
 We're using the new US Environmentally-Extended Input-Output model called 
 <a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> developed by the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency&nbsp;(EPA)</a>. 
@@ -24,22 +34,48 @@ We're using the new US Environmentally-Extended Input-Output model called
 
 <a href="https://www.challenge.gov/">View more US Gov web challenges at Challenge.gov</a>  
 
-Register now and join our Slack Channel.  
 
-<div style="margin-top:20px">
-<a href="registration/" class="btn btn-success">Register to participate</a>
-<a href="../" class="btn btn-warning">View Project Areas</a>
-<a href="slack" class="btn btn-danger">Slack Groups</a>
-</div>
 
+
+Awards - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  
+
+#### Coding Awards ($7,000+)  
+$2,000 - First place (team or individual)  
+$1,500 - Second place (team or individual)  
+$1,000 - Third place (team or individual)  
+$500 - Top Web Developer  
+$500 - Top Data Science Developer  
+$500 - Top React Developer  
+$500 - Top Google Developer  
+$500 - Top Overall Contributor 
+
+#### Community Data Collection Champions ($2,000)
+$500 - Widely Useful  
+$500 - Detailed Analysis  
+$500 - Collaborative Assembly  
+$500 - Perspective Changing  
+
+#### K-12 Teams ($3000)
+
+Focused on ideas and presentations  
+
+$1,000 - Coolest Concept  
+$1,000 - Boss Coding  
+$500 - Steller Design  
+$500 - Wildest Web Site  
+
+#### Bonus Areas
+Teaching Tools  
+Integration Tools  
+Editing Tools  
 
 <!-- 
-<a href="slack/">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)
+<a href="meetups/">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)
 <b>Slack Workspace:</b> model-earth.slack.com 
 
 ## $10,000 in Challenge Awards
 
-Tentative breakdown - Judges may adjust these levels based on team size and levels of commitment.  
+
 
 1st place: $2,500  
 2nd place: $1,500  

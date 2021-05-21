@@ -3,11 +3,11 @@
 <!--
 ### Saturday, January 23, 2021, 10AM to 5PM
 -->
-### March to July 2021
+### May to July 2021
 
-Join us to create tools and industry maps for sustainable communities material management using Google [Data Commons](https://datacommons.org) in our <a href="https://www.meetup.com/codeforatlanta/" style="white-space:nowrap;">Code for Atlanta Meetups</a>.  
+Join us to create tools and industry maps for Sustainable Material Management (smm) using Google [Data Commons](https://datacommons.org) in our <a href="meetups/" style="white-space:nowrap;">Weekly Meetups</a>.  
 
-Get started with our [Data Commons Tools setup steps](../../localsite/info/data/) 
+Get started with our [Data Commons Lite setup steps](../../localsite/info/data/datacommons/) 
 
 <!--
 <b>Saturday, January 23, 2021 Schedule</b>  
@@ -20,11 +20,11 @@ Get started with our [Data Commons Tools setup steps](../../localsite/info/data/
 
 We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
 
-- <a href="../../../localsite/info/">Industries and Impacts by county</a>  
+- <a href="../../../localsite/info/#showloc">Industries and Impacts by county</a>  
 - [Solar Companies](../../localsite/map/#show=solar)  
 - [Recycling, Processors, Transfer Stations](../../localsite/map/recycling/ga/)   
-- [Electric Vehicle Ecosystems](../../localsite/map/#show=vehicles)  
-- [Commute Time and Walkability](../../localsite/info/data/)  
+- [Electric Vehicle Ecosystems](../../localsite/info/#state=GA&show=vehicles)  
+- [Commute Times and Walkability](../../localsite/info/data/)  
 <br>
 
 <!--
@@ -56,7 +56,7 @@ County automobile industry employment for 6-digit NAICS 336111.
 4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API.  
 -->
 
-We'll be displaying Added Value and Jobs using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">impact filters</a>  
+We'll be displaying Jobs and Value Added using <a href="../../io/charts/inflow-outflow/#indicators=VADD,JOBS">impact filters</a>  
 
 We'll be creating a choropleth map of 
 <a href="../projects/mobility/">industries impacted by the transition to EV</a>  

@@ -1,22 +1,23 @@
-### Project Areas
-<h1 class="h1-home">2021 Programming Events</h1>
+<h1 class="h1-home">2021 Project Areas</h1>
 
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
 
+We're creating a [Python pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline) using Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/) as an example.
+
 <h3 style="font-weight:400; margin-bottom:0px">
-<div style="font-size: 14px">March to July 2021</div>
+<div style="font-size: 14px">May to July 2021</div>
 Dive Into Data Commons</h3>
 <a href="challenge/">Learn more</a><br>
 
 <h3 style="margin-bottom:0px">Code for America - Nav and Map Integrations</h3>
-<a href="https://neighborhood.org/public-tree-map">Learn more</a><br>
+<a href="../localsite/info/#show=brigades">View Brigade Map with Impact Data</a><br>
 
 <h3 style="font-weight:400">
 <div style="font-size: 14px">Fall 2021</div>
 Sustainable Communities "Beyond Carbon" Web Challenge
 </h3>
 
-We're combing industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br>
+We're combining industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br>
 
 <div>
 
@@ -25,15 +26,12 @@ We're combing industry analytics, impacts, demographics and machine learning usi
 <!--
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 -->
-<a href="challenge/slack/" class="btn btn-danger">Join us on Slack</a>
+<a href="challenge/meetups/" class="btn btn-danger">Join us on Slack</a>
 
 
 </div>
 
 <br>
-
-# Project Teams
-
 
 <!--
 Teams that contribute to these broad areas have a good chance of earning an award of 
@@ -44,11 +42,13 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://model.earth/io/charts)  
 
 
-## I. Google Data Commons API Team
+## I. Google Data Commons API
 
-[Install DataCommons.org Tools](../localsite/info/data/datacommons/) on your local computer.  
+[Install Data Commons Lite](../localsite/info/data/datacommons/) on your local computer.  
 
-Pull commute times from the Google Data Commons API and Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
+Find and pull US census data by state and county from the Google Data Commons API.  Look for commute times.  
+
+Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
 
 Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
 
@@ -63,7 +63,7 @@ Analysis applied to <a href="projects/mobility/">industries impacted by the tran
 Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
 --> 
 
-## II. Python Machine Learning Team
+## II. Python Machine Learning
 
 ### Python Flask, Javascript, Leaflet Maps
 
@@ -108,7 +108,7 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3 Wazimap [fork](resources/censusreporter) used in Africa and India. Integrate US demographic data from Python 2 version. Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
 -->
 
-## III. GitHub Actions Demographics Team
+## III. GitHub Actions Automation
 
 Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo.  
 
@@ -125,7 +125,7 @@ All the Places - Output [All the Places](https://www.alltheplaces.xyz/) into zip
 Pull over demographics reporting interface from [CensusReporter](resources/censusreporter). Retain ability to point at existing PostGreSQL backend while adding ability to pull from Google Data Commons.   
 
 
-## IV. Crowdsource Editor Team - Google REST App
+## IV. Crowdsource Editor - Google REST App
 
 1. Google Sheet Crowdsource Editor - A REST process allowing editors to return and update their own row contributions.
 
@@ -134,7 +134,7 @@ Pull over demographics reporting interface from [CensusReporter](resources/censu
 1. [Google Sheet Editor](../editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to edit rows of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
 
 
-## V. React - Input-Output Sankey Chart Team
+## V. React - Input-Output Sankey Chart
 
 ### React and USEEIO JSON
 
@@ -150,7 +150,7 @@ Pull over demographics reporting interface from [CensusReporter](resources/censu
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
 -->
 
-## VI. React - Last Airbender Interface Team
+## VI. React - Last Airbender Interface
 
 ### React and Material UI
 
@@ -223,13 +223,19 @@ https://github.com/Microsoft/azuredatastudio
 
 # Additional Updates
 
+
 ## Inflow-Outflow Chart
+
 
 [Inflow-Outflow Chart](../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - 
 <a href="../io/build/slider.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - 
 <a href="../io/charts/">All Widgets</a>   
 
 Prevent multiple stepping backing-up by avoiding saving history with each hash change.  
+
+Related: [USEEIO-widget GitHub issue #41](https://github.com/USEPA/useeio-widgets/issues/41)  
+
+See additional [USEEIO-widget GitHub issues](https://github.com/USEPA/useeio-widgets/issues)  
 
 <!--
 The bar could turn green when a commodity has been increased from its default.  
@@ -254,8 +260,9 @@ React - [View Widget](../io/build/impact_chart_config.html#sectors=334111,334210
 
 React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../io/charts/) 
 
-- When column selected, avoid dimming other columns.  
-- React javascript is too big (2MB and growing). Split out widgets.     
+These are posted as [USEEIO-widget GitHub issues](https://github.com/USEPA/useeio-widgets/issues)  
+
+ <!--   
 - Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
 - Show list of selected sectors under "X selected" tab. Include duplicate checkboxes in "X selected" tab.  
 - Display parent NAICS industry categories that open to reveal subcategories
@@ -263,20 +270,43 @@ React - [View Widget](../io/build/sector_list.html?view=mosaic&count=50) - [All 
 
 - Toggle matrices using a dropdown menu to select a matrix
 - List by parent category.
-- Include menu with options: Alphabetical, Show values 
-- Show values like [sortable example](https://model.earth/community/start/dataset/sortable.html)
-- Include verticle column name like [dataset example](https://model.earth/community/start/dataset/)
-- Highlight an "Action" menu when checkboxes are clicked
-- Actions could include: Display on map, Display bar chart, Generate Report
 
-Additional updates:  
+-->
 
-1. Place "id" and "title" columns first. (Split "Sectors" column and remove.)
-2. Omit decimal places from dollar values.
-3. Parse ID to add a "main\_category\_id" column. Use a 2 digit number to keep CSV file small.  
-4. Retain capital letters at start of words in section titles.
-5. Add Input-Output total dollar values.  
+- Reduce top of popup by 50px. (It currently gets covered by page header).
+- Rename to "Show Selected Only" and "Show Selected First"
+- Place a line above "Alphabetical"
+- If easy, allow rest of page to still scroll when the popup is open. 
+([Issue 57](https://github.com/USEPA/useeio-widgets/issues/57))
 
+
+- Display as: $0.877 per $1 spent 
+([Issue 58](https://github.com/USEPA/useeio-widgets/issues/58))  
+
+
+Updates to heatmap column sorting 
+([Issue 52](https://github.com/USEPA/useeio-widgets/issues/52))  
+
+Action Menu
+
+1. When boxes are checked on the mosaic heatmap, show an action menu containing:
+
+Action...
+View Inflow-Outflow
+(Later we'll add "View Map", "View Charts" and "View Report")
+
+2. When choosing "View Inflow-Outflow" redirect to:
+https://thetisiboth.github.io/useeio-widget-builds/slider.html#sectors=333613,335912,336111
+
+3. Briefly highlight the "Action" menu with blue when checkboxes are clicked. 
+
+4. Hide the Action menu again when all boxes are unchecked.
+
+5. Add a "View Mosaic" option to the input-output sort menus
+
+
+
+Optimization for web - Decimal removal and restoration ([Issue 54](https://github.com/USEPA/useeio-widgets/issues/54))
 
 
 
@@ -353,7 +383,7 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
-<a href="slack/" class="btn btn-danger">Slack Groups</a>
+<a href="meetups/" class="btn btn-danger">Slack Groups</a>
 
 </div>
 

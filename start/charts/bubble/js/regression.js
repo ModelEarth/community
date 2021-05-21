@@ -209,7 +209,7 @@ function calculateLineData(leastSquares,xRange,iterations){
 
 var allData
 $( document ).ready(function() {
-  // Was d3.csv("data/toy.csv",function(data){
+  // Initially uses data/toy.csv",function(data){ from wind study
     //data = d3.csvParse("data/indicators_sectors.csv", d3.autoType);
   d3.csv("data/indicators_sectors.csv").then(function(data){
 

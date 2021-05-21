@@ -69,6 +69,11 @@ Teams will collaborate using one or more of the following:
 - Other Auth services  
 -->
 
+Our developers are available to help guide participants through placing USEEIO widgets on any entry that has locations (states or counties) or sectors (commodities or naics codes).
+
+Some data collection entries and K-12 teams may opt not to use GitHub.  
+K-12 teams may focus on presentations using Google Slides, Powerpoint, etc.
+
 
 **Rules for Entries** 
 
@@ -81,9 +86,9 @@ Teams will collaborate using one or more of the following:
 - Detached frontends should have an index.html file in their root.
 - Detached frontends should work under any domain when hosted as a Github fork.  
 - Static frontend may be hosted for free using GitHub
-- Free or very affordable options for hosting for associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
+- Free or very affordable options for hosting associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
 
-_Employees of EPA, GDEcD and GDIT are not eligible for awards.  _
+Employees of EPA, GDEcD and GDIT are not eligible for awards.  
 
 **Judging Criteria**  
 (relative weight of criteria in parentheses)
