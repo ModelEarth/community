@@ -3,7 +3,7 @@
 <!--
 ### Saturday, January 23, 2021, 10AM to 5PM
 -->
-### May to July 2021
+### Summer 2021
 
 Join us to create tools and industry maps for Sustainable Material Management (smm) using Google [Data Commons](https://datacommons.org) in our <a href="meetups/" style="white-space:nowrap;">Weekly Meetups</a>.  
 

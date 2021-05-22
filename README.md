@@ -1,32 +1,24 @@
-<h1 class="h1-home">2021 Project Areas</h1>
+<h1 class="h1-home">Project Areas</h1>
 
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
 
-We're creating a [Python pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline) using Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/) as an example.
 
-<h3 style="font-weight:400; margin-bottom:0px">
-<div style="font-size: 14px">May to July 2021</div>
-Dive Into Data Commons</h3>
-<a href="challenge/">Learn more</a><br>
+<h3 style="margin-bottom:0px">
+<div style="font-size: 14px">Code for America 2021</div>
 
-<h3 style="margin-bottom:0px">Code for America - Nav and Map Integrations</h3>
-<a href="../localsite/info/#show=brigades">View Brigade Map with Impact Data</a><br>
 
-<h3 style="font-weight:400">
-<div style="font-size: 14px">Fall 2021</div>
-Sustainable Communities "Beyond Carbon" Web Challenge
-</h3>
+<h3 style="margin-top:0px">Beyond Carbon - Sustainable Communities Web Challenge</h3>
 
 We're combining industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br>
 
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">About Events</a>
+<a href="challenge/" class="btn btn-primary">About Challenge</a>
 <!--
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 -->
-<a href="challenge/meetups/" class="btn btn-danger">Join us on Slack</a>
+<a href="challenge/meetups/" class="btn btn-danger">Meetups and Slack Channels</a>
 
 
 </div>
@@ -39,35 +31,17 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 -->
 ### You can participate on multiple teams!
 
-Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://model.earth/io/charts)  
+Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://model.earth/io/charts) 
+to explore impacts at <a href="../localsite/info/#show=brigades">US Brigade Cities</a><br>
 
 
-## I. Google Data Commons API
+## I. Python Machine Learning
 
-[Install Data Commons Lite](../localsite/info/data/datacommons/) on your local computer.  
+### Python, Javascript, Leaflet Maps
 
-Find and pull US census data by state and county from the Google Data Commons API.  Look for commute times.  
+Predicting outcomes from changes to collections of industries and transitions within industry groups. 
 
-Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
-
-Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
-
-Use and improve the Google Data Common's checkbox heirarchy - [sample](https://datacommons.org/tools/timeline#place=zip%2F30318&statsVar=Count_Person_5To17Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C1%2C1%2C0__Count_Person_60To61Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C7%2C1%2C0%2CCount_Person__Count_Person_5To17Years_BornInStateOfResidence%2C0%2C6%2C1%2C1%2C1__WagesAnnual_Establishment%2C9%2C0__Count_Establishment%2C9%2C2&chart=%7B%22count%22%3A%7B%22pc%22%3Afalse%7D%7D)  
-
-Add highlighted colors similar to BEA  
-[View sample](https://apps.bea.gov/iTable/iTable.cfm?reqid=150&step=3&isuri=1&table_list=5013&categories=compbyind), click Table > Bar Chart and choose industries.  
-
-Analysis applied to <a href="projects/mobility/">industries impacted by the transition to EV</a>.  
-
-<!--
-Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
---> 
-
-## II. Python Machine Learning
-
-### Python Flask, Javascript, Leaflet Maps
-
-Predicting outcomes from changes to collections of industries and transitions within industry groups.  
+We're creating a [Python pipeline](https://github.com/modelearth/community-data/) and adding layers to support 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
 
 COLAB-orating with San Diego: [mcmorgan27/sd-business](https://github.com/mcmorgan27/sd-business/tree/1b22ef0e9231f0d2bcfafcff41e69c9adc9038fd)
 
@@ -108,7 +82,7 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3 Wazimap [fork](resources/censusreporter) used in Africa and India. Integrate US demographic data from Python 2 version. Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
 -->
 
-## III. GitHub Actions Automation
+## II. GitHub Actions Automation
 
 Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo.  
 
@@ -124,6 +98,26 @@ All the Places - Output [All the Places](https://www.alltheplaces.xyz/) into zip
 
 Pull over demographics reporting interface from [CensusReporter](resources/censusreporter). Retain ability to point at existing PostGreSQL backend while adding ability to pull from Google Data Commons.   
 
+## III. Dive into Google Data Commons API
+
+[Install Data Commons Lite](../localsite/info/data/datacommons/) on your local computer.  
+
+Find and pull US census data by state and county from the Google Data Commons API.  Look for commute times.  
+
+Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
+
+Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
+
+Use and improve the Google Data Common's checkbox heirarchy - [sample](https://datacommons.org/tools/timeline#place=zip%2F30318&statsVar=Count_Person_5To17Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C1%2C1%2C0__Count_Person_60To61Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C7%2C1%2C0%2CCount_Person__Count_Person_5To17Years_BornInStateOfResidence%2C0%2C6%2C1%2C1%2C1__WagesAnnual_Establishment%2C9%2C0__Count_Establishment%2C9%2C2&chart=%7B%22count%22%3A%7B%22pc%22%3Afalse%7D%7D)  
+
+Add highlighted colors similar to BEA  
+[View sample](https://apps.bea.gov/iTable/iTable.cfm?reqid=150&step=3&isuri=1&table_list=5013&categories=compbyind), click Table > Bar Chart and choose industries.  
+
+Analysis applied to <a href="projects/mobility/">industries impacted by the transition to EV</a>.  
+
+<!--
+Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
+--> 
 
 ## IV. Crowdsource Editor - Google REST App
 
@@ -376,10 +370,18 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
  <br>
 -->
 
+
+<b>Article by the creator of DataUSA.io</b> (So frustrating that they have not documented their new API):
+
+<a href="https://blogs.scientificamerican.com/guest-blog/what-s-wrong-with-open-data-sites-and-how-we-can-fix-them/">What's Wrong with Open-Data Sites - and How We Can Fix Them</a> - Scientific American Blog Network - Scientific American Blog Network - Scientific American Blog Network
+What's Wrong with Open-Data Sites--and How We Can Fix Them. Vast amounts of useful information can be found on government Web sites, but it's often impossible to make sense of it.
+
+
+
 <div>
 
 <!-- Schedule & Rules -->
-<a href="challenge/" class="btn btn-primary">About Events</a>
+<a href="challenge/" class="btn btn-primary">About Challenge</a>
 
 <a href="challenge/registration/" class="btn btn-success">Register Online</a>
 
