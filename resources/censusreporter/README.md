@@ -42,7 +42,7 @@ International contributions
 Sortable tables and lists below maps  
 
 **React Interface**  
-Expand upon the [EPA's Environmentally-Enabled IO Charts](../../../io/charts/) and integrate with community data portals.  
+Expand upon the [EPA's Environmentally-Extended IO Charts](../../../io/charts/) and integrate with community data portals.  
 
 
 
