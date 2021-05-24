@@ -31,7 +31,7 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 -->
 ### You can participate on multiple teams!
 
-Projects use the EPA's [Environmentally-Enabled Input-Output widgets](https://model.earth/io/charts) 
+Projects use the EPA's [Environmentally-Extended Input Output widgets](https://model.earth/io/charts) 
 to explore impacts at <a href="../localsite/info/#show=brigades">US Brigade Cities</a><br>
 
 
@@ -41,7 +41,7 @@ to explore impacts at <a href="../localsite/info/#show=brigades">US Brigade Citi
 
 Predicting outcomes from changes to collections of industries and transitions within industry groups. 
 
-We're creating a [Python pipeline](https://github.com/modelearth/community-data/) and adding layers to support 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
+We're creating a [Python pipeline](https://github.com/modelearth/community-data/) and adding support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
 
 COLAB-orating with San Diego: [mcmorgan27/sd-business](https://github.com/mcmorgan27/sd-business/tree/1b22ef0e9231f0d2bcfafcff41e69c9adc9038fd)
 
