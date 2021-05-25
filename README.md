@@ -49,7 +49,7 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 <!--
 1. Finalize csv output for counties by state using [BLS data from EPA Flowsa](/localsite/info/data/) - scroll down in page.  Merge columns and save in state folders.  
 -->
-1. [Set-up Flask server](/localsite/info/data/) using DataCommon.org "tools" repo sample.  
+1. [Set-up Flask server](/localsite/info/data/datacommons/) using DataCommon.org website repo sample. Deploy to Google hosting.  
 
 1. Document setting up a public website using the Machine Learning Websocket in the first project sample below.
 
