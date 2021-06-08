@@ -39,7 +39,7 @@ to explore impacts at <a href="../localsite/info/#show=brigades">US Brigade Citi
 
 ### Python, Javascript, Leaflet Maps
 
-Predicting outcomes from changes to collections of industries and transitions within industry groups. 
+Predicting outcomes from changes to collections of industries and transitions within industry groups.  [NAICS Data processing](../../localsite/info/data/flowsa/) / [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
 
 We're creating a [Python pipeline](https://github.com/modelearth/community-data/) and adding support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
 
@@ -85,6 +85,8 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 ## II. GitHub Actions Automation
 
 Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo.  
+
+Automation of our [Farm Fresh data pull](../../localsite/info/#state=TX&show=farmfresh).  
 
 DONE - State Dropdown. Kathryn Winglee has updated our [R-Language script](../community-data/us/) to output dropdown list attributes for [map zoom](../localsite/info/).  
 
@@ -217,6 +219,10 @@ https://github.com/Microsoft/azuredatastudio
 
 # Additional Updates
 
+## Address AutoComplete
+
+Add a US boundary to exclude Canada from [Google Places Autocomplete](https://developers.google.com/maps/documentation/javascript/places-autocomplete).  
+Add boundary filter to our [Autocomplete Sample](../../localsite/map/auto/)  
 
 ## Inflow-Outflow Chart
 
