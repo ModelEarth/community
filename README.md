@@ -160,7 +160,7 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 <div class="popout">
 <h3>Last Airbender Interface</h3>
 
-<p>We're developing a <a href="../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10">Friendly Inflow-Outflow Interface</a> for grouping EPA indicators by Air, Water, Land, Energy, Wealth and Health.  
+<p>We're developing a <a href="../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">Friendly Inflow-Outflow Interface</a> for grouping EPA indicators by Air, Water, Land, Energy, Wealth and Health.  
 Find cool Material UI interfaces that could be applied to our category set menu.</p>
 
 <p>
