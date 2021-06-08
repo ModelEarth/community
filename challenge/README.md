@@ -10,7 +10,7 @@ https://www.linkedin.com/in/jay-bassett-9a14616/
 -->
 
 
-Join us at an upcoming <a href="meetups/">meetup</a> to get involved!<br>
+Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be on or around Saturday, Sept 25, 2021. You can get started today!<br>
 
 Form a team, join an existing team or compete individually in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development Centers of Innovation and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
