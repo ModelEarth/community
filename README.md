@@ -64,7 +64,11 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 
 1. Test output normalization for [Sankey chart](../io/charts/sankey/) using the [USEEIO API Examples](/community/resources/useeio/)
 
-1. Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
+1. Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. 
+
+These could reside in our forked repo with the zip files Kathryn Winglee generated: 
+[zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
+(or save in community-data repo.)
 
 1. Expand upon [county-based results](../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
 
@@ -95,8 +99,6 @@ DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipc
 DONE - Kathryn Winglee updated R-Language script to sort states alphabetically. For non-state, add state="false" attribute.
 
 DONE - Pull Data to GitHub. Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).  
-
-All the Places - Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. Save in [zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.  
 
 Pull over demographics reporting interface from [CensusReporter](resources/censusreporter). Retain ability to point at existing PostGreSQL backend while adding ability to pull from Google Data Commons.   
 

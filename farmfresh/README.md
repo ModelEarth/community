@@ -24,13 +24,10 @@ Scrapes and merges the USDA's lists of [farmer's markets](https://search.ams.usd
 [jq](https://stedolan.github.io/jq/), [yarn](https://yarnpkg.com/), [python3](https://www.python.org/downloads/), [curl](https://curl.haxx.se/), and [make](https://www.gnu.org/software/make/).
 
 
-## TO DO: 
+## Python Scrapper Script
 
-Update the following scripts to send the state data to:
+Script in /community-data/process/python/farmfresh sends data to us/all and us/state at:
 [/community-data/us/state](https://github.com/modelearth/community-data/)
-
-Then remove from:  
-/community/farmfresh/scraped/usa/states  
 
 
 ## Run
