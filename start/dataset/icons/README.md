@@ -1,7 +1,7 @@
 
-## Sector Categories
+# NAICS Main Category Icons
 
-Organize sectors under [parent categories](../) and display icons for each of 20, plus the following: Recycling, Bioproducts, Clean Energy, and Local Products.  
+Organize sectors under [parent categories](../) and display icons for each of the <a href="https://www.cdc.gov/niosh/topics/coding/more.html">20 main categories</a>, plus the following: Recycling, Bioproducts, Clean Energy, and Local Products.  
 
 <!-- Font Awesome
 Add [Font Awesome Icons](https://fontawesome.com/). Example with Javascript tag:  
@@ -17,9 +17,6 @@ We might also use [Material Design Icons](https://materialdesignicons.com/) ([De
  <link id="fonts-googleapis-com-icon" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all">
 
 <i class="showAppsX material-icons appIconX" style="font-size:32px">&#xE5C3;</i>   -->
-
-These <a href="https://www.cdc.gov/niosh/topics/coding/more.html">20 main categories</a> and the additional categories reside in our
-<a href="icons.csv">icon CSV file</a><br><br>
 
 
 <h2>SVG Icons</h2>
