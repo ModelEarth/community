@@ -221,10 +221,6 @@ https://github.com/Microsoft/azuredatastudio
 
 # Additional Updates
 
-## Address AutoComplete
-
-Add a US boundary to exclude Canada from [Google Places Autocomplete](https://developers.google.com/maps/documentation/javascript/places-autocomplete).  
-Add boundary filter to our [Autocomplete Sample](../../localsite/map/auto/)  
 
 ## Inflow-Outflow Chart
 
