@@ -3,11 +3,8 @@
 <!--
 ### Saturday, January 23, 2021, 10AM to 5PM
 -->
-### Summer 2021
 
-Join us to create tools and industry maps for Sustainable Material Management (smm) using Google [Data Commons](https://datacommons.org) in our <a href="meetups/" style="white-space:nowrap;">Weekly Meetups</a>.  
-
-Get started with our [Data Commons Lite setup steps](../../localsite/info/data/datacommons/) 
+Join us to create new tools and industry maps for Sustainable Material Management (SMM) that integrate with Google [Data Commons](https://datacommons.org).  Get started with our [Data Commons Lite setup steps](../../localsite/info/data/datacommons/) 
 
 <!--
 <b>Saturday, January 23, 2021 Schedule</b>  
@@ -18,7 +15,7 @@ Get started with our [Data Commons Lite setup steps](../../localsite/info/data/d
 -->
 
 
-We're using Google Data Commons and [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) data to relate USEPA indicators to counties and regions, with a focus on:  
+We're exploring combining Google Data Commons and [Bureau of Labor Statistics (BLS)](https://www.bls.gov/data/) with USEPA indicators. Areas of focus include:  
 
 - <a href="../../../localsite/info/#showloc">Industries and Impacts by county</a>  
 - [Solar Companies](../../localsite/map/#show=solar)  
@@ -61,7 +58,7 @@ We'll be displaying Jobs and Value Added using <a href="../../io/charts/inflow-o
 We'll be creating a choropleth map of 
 <a href="../projects/mobility/">industries impacted by the transition to EV</a>  
 
-We'll be dreaming of creating an integrated [Georgia Labor Market Explorer](https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E)  
+Create new interfaces for Department of Labor tools like the [Georgia Labor Market Explorer](https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E)  
 
 --- 
 <br>
