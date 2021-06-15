@@ -23,13 +23,14 @@ Mario Cambardella - Formerly at AgLanta, Now ServeScape
 
 ### Federal USDA Data
 
-[View on map](../../map/starter/)
+[View on map](../../../localsite/map/#show=farmfresh)
 
-We're using a Python [scraper](../scraper) to pull and merge locations from the national USDA dataset.  
-
-From 8791 rows for US, includes 31 records for Georgia. 6 had been updated in 2020 as of Sept:  
+We're using a Python [scraper](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh/scraper) to pull and merge locations from the national USDA dataset.  
 
 <!--
+From 8791 rows for US, includes 31 records for Georgia. 6 had been updated in 2020 as of Sept:  
+
+
 Download with a command:  
 curl -o farmersmarket.csv https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx  
 -->
