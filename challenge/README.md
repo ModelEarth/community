@@ -4,17 +4,26 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-<!-- 
-Wes may involve Jay in outreach and planning for our fall event.
-https://www.linkedin.com/in/jay-bassett-9a14616/
--->
 
-
-Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be on or around Saturday, Sept 25, 2021. You can get started today!<br>
+Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be Saturday, October 2, 2021. You can get started today!<br>
 
 Form a team, join an existing team or compete individually in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development Centers of Innovation and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
-We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.  
+We're using the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency's&nbsp;(EPA)</a> model for states called 
+<a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models" target="_blank">USEEIO</a> along with local data to provide [Tools for Communities](../../io/communities/) using [Embeddable IO Widgets](../../io/charts/)
+
+ 
+<!-- with an eye toward providing location-based add-ons to [BeyondCarbon.org](https://www.beyondcarbon.org/look-up-your-state/) and [Google DataCommons.org](https://datacommons.org/place/country/USA?topic=Environment). -->  
+
+
+<!-- We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. -->  
+
+
+<b>Saturday, Octoberber 2, 2021 - Tentative Schedule</b>  
+
+10:00am to 12:00pm - Introductions, Team Building, Setup Walk-Throughs  
+12:00pm to 4:00pm - Work Time  
+4:00pm to 6:00pm - Team Share Outs and Awards  
 
 
 Register now and join our Slack Channel.  
@@ -27,26 +36,35 @@ Register now and join our Slack Channel.
 </div>
 <br>
 
-We're using the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency's&nbsp;(EPA)</a> new input-output model for states called 
-<a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> to provide [Tools for Communities](../../io/communities/) using [Embeddable IO Widgets](../../io/charts/) with an eye toward providing location-based add-ons to [BeyondCarbon.org](https://www.beyondcarbon.org/look-up-your-state/) and [Google DataCommons.org](https://datacommons.org/place/country/USA?topic=Environment).  
+<b>Our January 2021 Winners</b>
 
-Awards - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  
+#####1st Place - Top Web Developer  
+Akilah Littlejohn  
+
+#####Top Data Science Developer  
+Kathryn Winglee  
+
+#####Top React Developer  
+Andrew Zimmer  
+<br>
+
+**Upcoming Awards** - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  
 
 #### Coding Awards ($7,000+)  
 $2,000 - First place (team or individual)  
 $1,500 - Second place (team or individual)  
 $1,000 - Third place (team or individual)  
-$500 - Top Web Developer  
-$500 - Top Data Science Developer  
-$500 - Top React Developer  
-$500 - Top Google Developer  
-$500 - Top Overall Contributor 
+$300 - Top Web Developer  
+$300 - Top Data Science Developer  
+$300 - Top React Developer  
+$300 - Top Google Developer  
+$300 - Top Overall Contributor 
 
 #### Community Data Collection Champions ($2,000)
 $500 - Widely Useful  
 $500 - Detailed Analysis  
-$500 - Collaborative Assembly  
-$500 - Perspective Changing  
+$300 - Collaborative Assembly  
+$300 - Perspective Changing  
 
 #### K-12 Teams ($3000)
 
@@ -58,9 +76,9 @@ $500 - Steller Design
 $500 - Wildest Web Site  
 
 #### Bonus Areas
-Teaching Tools  
-Integration Tools  
-Editing Tools  
+$300 - Teaching Tools  
+$300 - Integration Tools  
+$300 - Editing Tools  
 
 <!-- 
 <a href="meetups/">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)

@@ -58,6 +58,16 @@ Generate static files to drive Data Commons navigation. Crosswalk zipcodes and c
 <!--Auto-select all categories in center column when populated from naics values.-->  
 
 
+<!--
+County automobile industry employment for 6-digit NAICS 336111.
+4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API.  
+--> 
+
+We'll be creating a choropleth map of <a href="mobility/">industries impacted by the transition to EV</a>.  
+
+We'll be proposing new interfaces for Department of Labor tools like the [Georgia Labor Market Explorer](https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E)  
+
+
 <h2>II. Last Airbender Interface</h2>
 
 Great for K-12:
