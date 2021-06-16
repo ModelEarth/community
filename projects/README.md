@@ -1,8 +1,5 @@
 <h1 class="h1-home">Project Areas</h1>
 
-<a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" target="_blank">Working to Improve Life-Cycle Assessment Capabilities for Communities</a><br>
-
-
 <h3 style="margin-bottom:0px">
 <div style="font-size: 14px">Code for America 2021</div>
 
@@ -32,10 +29,63 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 ### You can participate on multiple teams!
 
 Projects use the EPA's [Environmentally-Extended Input Output widgets](https://model.earth/io/charts) 
-to explore impacts at <a href="../localsite/info/#show=brigades">US Brigade Cities</a><br>
+to explore impacts at <a href="../../localsite/info/#show=brigades">US Brigade Cities</a><br>
 
 
-## I. Python Machine Learning
+## I. Tools for Static Site Generation / GitHub Actions Automation
+
+ 
+
+DONE - Automation of our [Farm Fresh data pull](../../localsite/info/#state=TX&show=farmfresh).  
+
+DONE - State Dropdown script generated from [R-Language script](../../community-data/us/) to include lat/lon attributes for [map zoom](../../localsite/info/).  
+
+DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
+
+DONE - Kathryn Winglee updated R-Language script to sort states alphabetically. For non-state, add state="false" attribute.
+
+DONE - Pull Data to GitHub. Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).  
+
+  
+<!--
+Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo. 
+
+1. Contribute to our [AWS Amplify React](../aws/amplify/) repo by activating [Last Airbender indicator sets](../io/charts/inflow-outflow/).  
+
+
+1. Update EPA's <a href="../io/charts/">Embeddable IO Widgets</a> generated from [USEEIO API](https://github.com/USEPA/USEEIO_API) local .json data.  
+-->
+<!--Auto-select all categories in center column when populated from naics values.-->  
+
+
+<h2>II. Last Airbender Interface</h2>
+
+Great for K-12:
+
+<div class="popout">
+
+
+<p>Help develop a <a href="../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">Friendly Inflow-Outflow Interface</a> for grouping EPA indicators by Air, Water, Land, Energy, Wealth and Health.  
+Find cool Material UI interfaces that could be applied to our category set menu.</p>
+
+<p>
+The category set json resides in docs/static/json thanks to Alikah within our <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a> which is a great place to learn React.
+
+<a href="../aws/amplify/">We've documented AWS Amplify set up steps</a>.
+
+<!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
+-->
+</p>
+
+
+Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a> for relating the four “nation” categories to characters.
+
+
+</div><br>
+
+## III. Python Machine Learning
+
+Great for Data Science Students  
 
 ### Python, Javascript, Leaflet Maps
 
@@ -86,23 +136,7 @@ These could reside in our forked repo with the zip files Kathryn Winglee generat
 1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3 Wazimap [fork](resources/censusreporter) used in Africa and India. Integrate US demographic data from Python 2 version. Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
 -->
 
-## II. GitHub Actions Automation
-
-Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo.  
-
-Automation of our [Farm Fresh data pull](../../localsite/info/#state=TX&show=farmfresh).  
-
-DONE - State Dropdown. Kathryn Winglee has updated our [R-Language script](../community-data/us/) to output dropdown list attributes for [map zoom](../localsite/info/).  
-
-DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
-
-DONE - Kathryn Winglee updated R-Language script to sort states alphabetically. For non-state, add state="false" attribute.
-
-DONE - Pull Data to GitHub. Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).  
-
-Pull over demographics reporting interface from [CensusReporter](resources/censusreporter). Retain ability to point at existing PostGreSQL backend while adding ability to pull from Google Data Commons.   
-
-## III. Dive into Google Data Commons API
+## IV. Dive into Google Data Commons API
 
 [Install Data Commons Lite](../localsite/info/data/datacommons/) on your local computer.  
 
@@ -123,7 +157,7 @@ Analysis applied to <a href="projects/mobility/">industries impacted by the tran
 Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
 --> 
 
-## IV. Crowdsource Editor - Google REST App
+## V. Crowdsource Editor - Google REST App
 
 1. Google Sheet Crowdsource Editor - A REST process allowing editors to return and update their own row contributions.
 
@@ -132,9 +166,7 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 1. [Google Sheet Editor](../editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to edit rows of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
 
 
-## V. React - Input-Output Sankey Chart
-
-### React and USEEIO JSON
+## VI. React - Input-Output Sankey Chart
 
 1. Update the [Sankey D3 Chart](../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../io/build/slider.html#sectors=333613,335912,336111&page=1&count=10).  
 
@@ -148,37 +180,7 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
 -->
 
-## VI. React - Last Airbender Interface
 
-### React and Material UI
-
-1. Contribute to our [AWS Amplify React](../aws/amplify/) repo by activating [Last Airbender indicator sets](../io/charts/inflow-outflow/).  
-
-
-1. Update EPA's <a href="../io/charts/">Embeddable IO Widgets</a> generated from [USEEIO API](https://github.com/USEPA/USEEIO_API) local .json data.  
-<!--Auto-select all categories in center column when populated from naics values.-->  
-
-
-<div class="popout">
-<h3>Last Airbender Interface</h3>
-
-<p>We're developing a <a href="../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">Friendly Inflow-Outflow Interface</a> for grouping EPA indicators by Air, Water, Land, Energy, Wealth and Health.  
-Find cool Material UI interfaces that could be applied to our category set menu.</p>
-
-<p>
-The category set json resides in docs/static/json thanks to Alikah within our <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a> which is a great place to learn React.
-
-<a href="../aws/amplify/">We've documented AWS Amplify set up steps</a>.
-
-<!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
--->
-</p>
-
-<p>
-Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a> for relating the four “nation” categories to characters.
-</p>
-
-</div>
 
 ## VII. .NET Core 5.0 Team
 
@@ -194,12 +196,18 @@ https://github.com/Microsoft/azuredatastudio
 -->
 
 
+## VIII. Challenging Python Project
+
+Pull over demographics reporting interface from [CensusReporter](../resources/censusreporter).  
+Point at static files hosted in GitHub.  
+Retain ability to pull from PostGreSQL.  
+Add ability to pull additional community data from [Google Data Commons](https://datacommons.org). 
 
 
 
-## More
+## Related Resources
 
-1. [Our county boundary map](/localsite/map/#go=smart) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../io/charts/).  
+1. [Our county boundary map](../start/maps/) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../io/charts/).  
 
 1. [Map starters](start) and [Leaflet route maps](start/routing/) for driving tours and deliveries.
 

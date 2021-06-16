@@ -22,7 +22,7 @@ Register now and join our Slack Channel.
 <!-- Also update in community index.html footer -->
 <div style="margin-top:20px">
 <a href="registration/" class="btn btn-success">Register to participate</a>
-<a href="../" class="btn btn-warning">View Project Areas</a>
+<a href="../projects/" class="btn btn-warning">View Project Areas</a>
 <a href="meetups" class="btn btn-danger">Meetups and Slack Channels</a>
 </div>
 <br>
