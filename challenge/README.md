@@ -4,17 +4,18 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-<!-- 
-Wes may involve Jay in outreach and planning for our fall event.
-https://www.linkedin.com/in/jay-bassett-9a14616/
--->
-
-
 Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be on or around Saturday, Sept 25, 2021. You can get started today!<br>
 
 Form a team, join an existing team or compete individually in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development Centers of Innovation and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
-We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs.  
+We're using the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency's&nbsp;(EPA)</a> model for states called 
+<a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models" target="_blank">USEEIO</a> along with local data to provide [Tools for Communities](../../io/communities/) using [Embeddable IO Widgets](../../io/charts/)
+
+ 
+<!-- with an eye toward providing location-based add-ons to [BeyondCarbon.org](https://www.beyondcarbon.org/look-up-your-state/) and [Google DataCommons.org](https://datacommons.org/place/country/USA?topic=Environment). -->  
+
+
+<!-- We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. -->  
 
 
 Register now and join our Slack Channel.  
@@ -27,8 +28,6 @@ Register now and join our Slack Channel.
 </div>
 <br>
 
-We're using the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency's&nbsp;(EPA)</a> new input-output model for states called 
-<a href="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332" target="_blank">USEEIO</a> to provide [Tools for Communities](../../io/communities/) using [Embeddable IO Widgets](../../io/charts/) with an eye toward providing location-based add-ons to [BeyondCarbon.org](https://www.beyondcarbon.org/look-up-your-state/) and [Google DataCommons.org](https://datacommons.org/place/country/USA?topic=Environment).  
 
 Awards - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  
 
