@@ -23,7 +23,7 @@ We're using the <a href="https://www.epa.gov" target="_parent">US Environmental 
 
 10:00am to 12:00pm - Introductions, Team Building, Setup Walk-Throughs  
 12:00pm to 4:00pm - Work Time  
-4:00pm to 5:00pm - Team Share Outs  
+4:00pm to 6:00pm - Team Share Outs and Awards  
 
 
 Register now and join our Slack Channel.  
