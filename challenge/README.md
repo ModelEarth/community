@@ -5,7 +5,7 @@
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
 
-Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be on or around Saturday, Sept 25, 2021. You can get started today!<br>
+Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be Saturday, October 2, 2021. You can get started today!<br>
 
 Form a team, join an existing team or compete individually in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development Centers of Innovation and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
 
@@ -19,7 +19,7 @@ We're using the <a href="https://www.epa.gov" target="_parent">US Environmental 
 <!-- We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. -->  
 
 
-<b>Saturday, September 25, 2021 - Tentative Schedule</b>  
+<b>Saturday, Octoberber 2, 2021 - Tentative Schedule</b>  
 
 10:00am to 12:00pm - Introductions, Team Building, Setup Walk-Throughs  
 12:00pm to 4:00pm - Work Time  
