@@ -63,10 +63,11 @@ County automobile industry employment for 6-digit NAICS 336111.
 4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API.  
 --> 
 
-We'll be creating a choropleth map of <a href="mobility/">industries impacted by the transition to EV</a>.  
+We'll be creating a choropleth map of <a href="mobility/">industries impacted by the transition to EV</a>. See [map samples](../start/maps/).   
 
 We'll be proposing new interfaces for Department of Labor tools like the [Georgia Labor Market Explorer](https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E)  
 
+Output [All the Places](https://www.alltheplaces.xyz/) into zip folders in our [zip/io/data repo](https://model.earth/zip/io/)<!-- Kathryn Winglee generated:-->.
 
 <h2>II. Last Airbender Interface</h2>
 
@@ -124,12 +125,6 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 1. Contribute a USSEIO Widget to the [DataUSA.io](https://datausa.io/) GitHub repos.
 
 1. Test output normalization for [Sankey chart](../../io/charts/sankey/) using the [USEEIO API Examples](/community/resources/useeio/)
-
-1. Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. 
-
-These could reside in our forked repo with the zip files Kathryn Winglee generated: 
-[zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
-(or save in community-data repo.)
 
 1. Expand upon [county-based results](../../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
 
