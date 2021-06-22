@@ -37,14 +37,14 @@ to explore impacts at <a href="../../localsite/info/#show=brigades">US Brigade C
 
 TO DO - Create a node script that pulls 3 repos (localsite, io and apps) into one "webroot" repo.  
 
-TO DO - Display the [Beyond Carbon] results as a table with state names.  
+TO DO - Display the [Beyond Carbon](../../apps/beyondcarbon/) state results as a table with state names.  
 
 TO DO - Add a GitHub Action that updates our [Farm Fresh data pull](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) nightly.  
 
 TO D0 - Move TO DO items into our [Beyond Carbon Project Board](https://github.com/localsite/localsite/projects/1). See [Hack for LA](https://github.com/hackforla/website/projects/7) examples.  
 <!-- Project created from Automated kanban with reviews template. -->
 
-DONE - State Dropdown script generated from [R-Language script](../../community-data/us/) to include lat/lon attributes for [map zoom](../../localsite/info/).  
+DONE - State Dropdown script generated from [R-Language script](../../community-data/us/) to include lat/lon attributes for [map zoom](../../localsite/info/#show=industries&layers=brigades).  
 
 DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
 
