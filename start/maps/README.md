@@ -1,8 +1,20 @@
 # Map Samples
 
+Challenge entries should make updates to the map.js file which displays our [leaflet map](../../../localsite/map/).
+
 <!-- ## [Widget Mockup for EPA (layout)](../../resources/layout/)-->
-## [Map Layers](../../../localsite/map/) - [Map Widget](../../../localsite/info/embed.html#show=360)<!-- [Older](../../map/starter/embed.html)-->  
-## [Geocoding (vaccine distributors)](../../../localsite/map/neighborhood/)
+## [Leaflet Map Layers](../../../localsite/map/)
+Click "Display..." to view app layers.  
+
+## [Our MapEngine as a Widget](../../../localsite/info/embed.html)<!-- [Older](../../map/starter/embed.html)-->  
+The localsite/map/index.html page is loaded as a template.  
+
+## [Column Names](../../../localsite/map/neighborhood/)
+[Brigade Project Network](https://projects.brigade.network/)
+<!-- 
+CfA Taxonomy: http://bluecompass.org/cfa/taxonomy2.html
+democracy lab index: https://www.democracylab.org/api/projects/?page=1 -->
+
 ## [US Income (choropleth map)](../../map/income)
 ## [Industry Mix (zip codes)](../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)
 ## [Sets of Counties (counties)](counties/counties.html)
