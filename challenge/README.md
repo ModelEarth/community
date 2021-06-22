@@ -27,6 +27,7 @@ We're using the <a href="https://www.epa.gov" target="_parent">US Environmental 
 
 
 Register now and join our Slack Channel.  
+You do not need to be able to attend the Oct 2 event for your entry to win an award.   
 
 <!-- Also update in community index.html footer -->
 <div style="margin-top:20px">
