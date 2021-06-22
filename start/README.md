@@ -5,6 +5,8 @@ Stand-alone examples of formatting and displaying community data.
 <a href="https://model.earth/community/start/">View as website</a>
 </div>
 
+Copy an existing front-end page within the [Apps Repo](../../apps/) to get started quickly.  
+
 ## [1. Start a local website](../../localsite/start)  
 ## [2. Input-Output Widgets](../../io/charts)  
 ## [3. Display a dataset](dataset)
