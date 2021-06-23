@@ -111,17 +111,27 @@ navigation.js has a conflict with reveal
     }
 
     .slides section {
-      min-height: 1100px;
       position: relative;
+      min-height: 700px;
     }
-    .slides h1 {
-      font-size: 64px;
+    @media (max-width: 800px) {
+      .logoImg {
+        max-width: 200px;
+      }
     }
-    .slides h2 {
-      font-size: 42px;
-    }
-    .slides h3 {
-      font-size: 36px;
+    @media (min-width: 801px) {
+      .slides section {
+        min-height: 1100px;
+      }
+      .slides h1 {
+        font-size: 64px;
+      }
+      .slides h2 {
+        font-size: 42px;
+      }
+      .slides h3 {
+        font-size: 36px;
+      }
     }
   </style>
 
@@ -137,8 +147,8 @@ navigation.js has a conflict with reveal
   <section>
     <div class="content contentpadding">
 
-      <img src="../img/logo/epa.png" style="width:400px">
-      <h1>COMMUNITY APPS INFO SESSION</h1>
+      <img class="logoImg" src="../img/logo/epa.png" style="width:400px">
+      <h1>COMMUNITY APPS INFO&nbsp;SESSION</h1>
       <h3>Wesley Ingwersen (EPA)<br>Loren Heyns (GDEcD)</h3>
 
       June 24, 2021 @ 2PM - 
