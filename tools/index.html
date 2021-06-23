@@ -132,13 +132,87 @@ navigation.js has a conflict with reveal
       .slides h3 {
         font-size: 36px;
       }
+      .slides h4 {
+        font-size: 22px;
+        font-weight: 400;
+      }
     }
+
+    .swiper-button-circle {
+      float: left;
+    }
+    .nav-circle {
+        content: "" !important;
+        positionXXXX: absolute !important;
+        topXXX: 50% !important;
+        leftXXX: 50% !important;
+        transformX: translate(-50%, -50%) !important;
+        width: 48px !important;
+        height: 48px !important;
+        border-radius: 50% !important;
+        background: rgb(255, 255, 255);
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: rgb(176, 176, 176) !important;
+        border-image: initial !important;
+        box-sizing: border-box !important;
+        position: absolute !important;
+        margin: 0px !important;
+        z-index: -1 !important;
+        padding-top:-16px !important;
+    }
+    .nav-circle:hover {
+        background: rgb(235, 235, 235);
+    }
+    .circle-text {
+      height:50px;
+      padding:18px;
+      width:50px;
+      text-align:center;
+      pointer-events: none;
+      font-size: 54px;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      background-image: none;
+    }
+    .swiper-button-prev {
+        left: 20px;
+    }
+    .swiper-button-next {
+        right: 30px;
+    }
+
   </style>
 
   <link rel="stylesheet" href="../../localsite/css/map.css" />
 
 </head>
 <body>
+
+<div style="display: none;position:fixed; right:0; bottom:0; margin:30px; z-index:100">
+  <!-- circle arrows -->
+  <div class="swiper-button-prev prev-buttonX swiper-button-circle">
+    <div class="nav-circle"></div>
+    <div class="circle-text">
+
+      <svg aria-hidden="true" role="presentation" focusable="false" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display: block; fill: none; height:32px; width:32px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;"><g fill="none"><path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path></g></svg>
+
+    </div>
+  </div>
+
+  <div class="swiper-button-next prev-buttonX swiper-button-circle">
+    <div class="nav-circle"></div>
+    <div class="circle-text">
+    
+       <svg aria-hidden="true" role="presentation" focusable="false" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="display: block;fill: none;height:32px;width:32px;stroke: currentcolor;stroke-width: 5.33333;overflow: visible;"><g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g></svg>
+
+    </div>
+  </div>
+
+</div>
+
+
 
 <div class="reveal">
 
@@ -147,9 +221,15 @@ navigation.js has a conflict with reveal
   <section>
     <div class="content contentpadding">
 
-      <img class="logoImg" src="../img/logo/epa.png" style="width:400px">
+      <img class="logoImg" src="../img/logo/epa.png" style="width:300px">
       <h1>COMMUNITY APPS INFO&nbsp;SESSION</h1>
-      <h3>Wesley Ingwersen (EPA)<br>Loren Heyns (GDEcD)</h3>
+      <h3>Wesley Ingwersen</h3>
+      <h4>US Enviromental Protection Agency</h4>
+
+      <h3>Loren Heyns</h3>
+      <h4>Georgia Center of Innovation for Energy Technology</h4>
+      </h3>
+      <br>
 
       June 24, 2021 @ 2PM - 
       <a href="../../community/challenge/meetups/">Join Teams Call</a>
@@ -319,7 +399,7 @@ navigation.js has a conflict with reveal
     <div class="content contentpadding">
 
       <h2>Start Today</h2>
-      <h1>FORM TEAMS, SHARE IDEAS</h1>
+      <h1>GET YOUR TEAM ROLLING</h1>
       <h3>
         <ul>
           <li>Choose a location/community of interest</li>
