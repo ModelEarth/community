@@ -139,6 +139,7 @@ navigation.js has a conflict with reveal
 
     .swiper-button-circle {
       float: left;
+      margin-left: 10px;
     }
     .nav-circle {
         content: "" !important;
@@ -157,11 +158,11 @@ navigation.js has a conflict with reveal
         box-sizing: border-box !important;
         position: absolute !important;
         margin: 0px !important;
-        z-index: -1 !important;
+        z-indexX: -1 !important;
         padding-top:-16px !important;
     }
     .nav-circle:hover {
-        background: rgb(235, 235, 235);
+        background: #eee;
     }
     .circle-text {
       height:50px;
@@ -170,6 +171,10 @@ navigation.js has a conflict with reveal
       text-align:center;
       pointer-events: none;
       font-size: 54px;
+      opacity: .3;
+    }
+    .circle-text:hover {
+      opacity: .8;
     }
 
     .swiper-button-prev, .swiper-button-next {
@@ -350,7 +355,7 @@ navigation.js has a conflict with reveal
 
         <ul>
           <li>Programmers (Professionals, Volunteers, Students)</li>
-          <li>Designers (UX/UI Pros, Students K-12 and College Level)</li>
+          <li>Designers (UX/UI Experts, Students K-12 and College Level)</li>
           <li>Data Collectors (Google Sheets and CSV Files)</li>
           <li>Data Scientists (Machine Learning and AI)</li>
         </ul>
@@ -395,8 +400,8 @@ navigation.js has a conflict with reveal
   <section style="background:#dae8eb">
     <div class="content contentpadding">
 
-      <h2>Environmental Data for Teaching</h2>
-      <h1>EDUCATORS</h1>
+      <h2 style="padding-top:0px">Environmental Data for Teaching</h2>
+      <h1 style="margin-bottom:10px">EDUCATORS</h1>
       <h3 style="margin:0px">
 
         <ul style="margin:0px">
@@ -419,12 +424,7 @@ navigation.js has a conflict with reveal
   <section>
     <div class="content contentpadding">
 
-      
-
       <h2>Broad Applications</h2>
-
-      
-
       <h1>GOVERNMENT, NONPROFITS, SPECIAL INITIATIVES</h1>
 
       <div class="boxshadow floatRight" style="margin-left:30px; border:1px solid #ccc; background-color: #fff; padding:15px">
@@ -455,10 +455,12 @@ navigation.js has a conflict with reveal
 
     <div class="content contentpadding">
 
+      <br><br><br><br><br><br>
       <h2>Start Today</h2>
+      <br>
       <h1>GET YOUR TEAM ROLLING</h1>
-      <h3>
-        <ul>
+      <h3 style="margin:0px">
+        <ul style="margin:0px">
           <li>Choose a location/community of interest</li>
           <li>Share ideas for your app front-end functionality</li>
           <li>Choose parameters to customize your data display</li>
