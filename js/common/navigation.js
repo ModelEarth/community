@@ -87,8 +87,8 @@ $(document).ready(function(){
 		 		$('.neighborhood').css('display', 'block');
 		 	} else {
 		 		$(".siteTitleShort").text("Model Earth");
-		 		imageUrl = climbpath + "../community/img/logo/favicon.png"; // model earth
-		 		imageUrlSide = climbpath + "../community/img/logo/favicon.png";
+		 		imageUrl = climbpath + "../community/img/logo/model-earth.png"; // model earth
+		 		imageUrlSide = climbpath + "../community/img/logo/model-earth.png";
 		 		$('#logoholderside').css('width', '24px');
 		 		$('#logoholderside').css('height', '24px');
 	 			//$('#logospace').css('margin-top','2px');
