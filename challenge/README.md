@@ -55,6 +55,7 @@ Andrew Zimmer
 $2,000 - First place (team or individual)  
 $1,500 - Second place (team or individual)  
 $1,000 - Third place (team or individual)  
+$500 - Brigade App Integration Tools  
 $300 - Top Web Developer  
 $300 - Top Data Science Developer  
 $300 - Top React Developer  
@@ -71,15 +72,16 @@ $300 - Perspective Changing
 
 Focused on ideas and presentations  
 
-$1,000 - Coolest Concept  
-$1,000 - Boss Coding  
+$800 - Coolest Concept  
+$800 - Boss Coding  
 $500 - Steller Design  
 $500 - Wildest Web Site  
 
 #### Bonus Areas
-$300 - Teaching Tools  
-$300 - Integration Tools  
+$300 - Teaching Tools   
 $300 - Editing Tools  
+
+Includes additional funds contributed by the Georgia Center for Innovation in Energy Technology.  
 
 <!-- 
 <a href="meetups/">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)
