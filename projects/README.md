@@ -126,7 +126,7 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 -->
 1. [Set-up Flask server](/localsite/info/data/datacommons/) using DataCommon.org website repo sample. Deploy to Google hosting.  
 
-1. Document setting up a public website using the Machine Learning Websocket in the first project sample below.
+1. Document setting up a public website using the Machine Learning Websocket in the [impact map](/io/impact/)  project sample.
 
 1. Create cool map output with code from our existing Machine Learning projects:  
 - [Impact map (Machine Learning Websocket)](/io/impact/) - We'd love to get this running on Google Cloud, Heroku or AWS. Or convert to a fully static site.  
