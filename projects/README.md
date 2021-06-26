@@ -37,7 +37,7 @@ to explore impacts at <a href="../../localsite/info/#show=brigades">US Brigade C
 
 TO DO - Create a node script that pulls 3 repos (localsite, io and apps) into one "webroot" repo.  
 
-TO DO - Display the [Beyond Carbon](../../apps/beyondcarbon/) state results as a table with state names.  
+ACTIVE - Akilah is displaying the [Beyond Carbon](../../apps/beyondcarbon/) state results as a table with state names.  
 
 TO DO - Add a GitHub Action that updates our [Farm Fresh data pull](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) nightly.  
 
@@ -60,7 +60,7 @@ TO DO - Output [All the Places](https://www.alltheplaces.xyz/) into zip folders 
 
 TO DO - Update county [data prep scripts](../../localsite/info/data/) to include zip codes. Get latest from summer intern John Taylor.  
 
-TO DO - Find a source of "regions within states" based on sets of counties. Apply to region_select dropdown.  
+TO DO - Find a source of "regions within states" based on sets of counties. Apply to [region_select dropdown](../../localsite/info/#state=GA).  
 
 <!--
 DONE - Pull Data to GitHub. Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).  
@@ -113,7 +113,7 @@ Great for Data Science and Computer Science Students
 
 ### Python, Javascript, Leaflet Maps
 
-We're creating a Python pipeline and adding support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  Start by triggering our [FarmFresh Python](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) data pull from the [community-data repo pipeline](https://github.com/modelearth/community-data/).    
+We're creating a Python pipeline and Github Actions to add support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  Start by triggering our [FarmFresh Python](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) data pull from the [community-data repo pipeline](https://github.com/modelearth/community-data/).    
 
 Predicting outcomes from changes to collections of industries and transitions within industry groups.  [NAICS Data processing](../../localsite/info/data/flowsa/) / [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
 
