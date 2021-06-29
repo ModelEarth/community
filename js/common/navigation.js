@@ -286,7 +286,6 @@ $(document).ready(function(){
 			// Get the id of the last item fetched from scrollItems
 			cur = cur[cur.length-1];
 			var id = cur && cur.length ? cur[0].id : "";
-			//console.log('currentSideID id: ' + id);
 			return id;
 		}
 		var lastID;

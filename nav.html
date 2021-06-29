@@ -3,6 +3,17 @@
 body {
     background-color: rgb(250, 250, 250); /* For side nav */
 }
+.sidecolumn-inpage #sidecolumnContent {
+    position: static !important;
+    float:left;
+    padding: 0px;
+}
+.sidecolumn-inpage #sidecolumnContentScroll {
+    position: relative;
+    bottom:auto !important;
+    right:0 !important;
+}
+
 #sidecolumn {
     float: left;
     width: 158px;
@@ -44,6 +55,9 @@ body {
     display:block;
     color: #112e51;
 }
+#sidecolumnContent a:hover {
+    border-right: 4px solid #f3f3f3;
+}
 #sidecolumnContent a.active {
     border-right: 4px solid #999;
     margin-left:-20px;
@@ -63,6 +77,16 @@ body {
       display: none;
     }
 }
+.sidecolumn-inpage {
+    position: static !important;
+}
+.sidecolumn-inpage > #sidecolumnContent {
+    position: static;
+}
+
+
+
+
 </style>
 
 <div id="logoholderside" class="logoholder" style="display:none; z-index:2"></div>
@@ -107,17 +131,16 @@ body {
 
 
 <b>Beyond Carbon</b><br>
-<a href="../community/carbon-capture/">Carbon Capture</a>
-<a href="../community/projects/biomass">Biotech Products</a>
-<a href="../io/bioeconomy/">Advanced Biofuels</a>
+<a href="../community/carbon-capture/" hashid="carbon-capture">Carbon Capture</a>
+<a href="../community/biotech/" hashid="biotech">Bioeconomy</a><!-- Biotech Products -->
 <a href="../community/carbon-capture/#forestry">Fast Forestry</a>
 <a href="../community/carbon-capture/#superwood">Superwood</a>
 <a href="../community/carbon-capture/#hydrogen">Hydrogen Fuel</a>
-<a href="../community/projects/nuclear">Nuclear Power</a>
-<a href="../community/projects/rail">Net Positive Rail</a>
-<a href="../community/projects/mobility">Electric Vehicles</a>
-<a href="../community/projects/wood/">Mass Timber</a>
-<a href="../community/architecture/">New&nbsp;Countryside</a>
+<a href="../community/projects/nuclear" hashid="nuclear">Nuclear Power</a>
+<a href="../community/projects/rail" hashid="rail">Net Positive Rail</a>
+<a href="../community/projects/mobility" hashid="mobility">Electric Vehicles</a>
+<a href="../community/projects/wood/" hashid="wood">Mass Timber</a>
+<a href="../community/architecture/" hashid="new-countryside">New&nbsp;Countryside</a>
 <br>
 
 
