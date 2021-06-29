@@ -33,7 +33,8 @@ By Cindy Azuero Pedraza, PhD student in the H. Milton School of Industrial and S
 
 
 
-<img src="img/waste-to-energy.jpg"><br>Source: - <a href="https://www.powermag.com/waste-to-energy-technology-options-increase-but-remain-underutilized/">Waste-to-Energy Technology Options Increase - Lee County, Florida Case Study</a>  
+<img src="img/waste-to-energy.jpg" style="width:100%; max-width:800px"><br>
+Source: - <a href="https://www.powermag.com/waste-to-energy-technology-options-increase-but-remain-underutilized/">Waste-to-Energy Technology Options Increase - Lee County, Florida Case Study</a>  
 
 ADTE = Anaerobic Digestion to Energy  
 LFG = Land Fill Gas / MSW = Municiple Solid Waste  
