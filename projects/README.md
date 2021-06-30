@@ -410,6 +410,23 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 What's Wrong with Open-Data Sites--and How We Can Fix Them. Vast amounts of useful information can be found on government Web sites, but it's often impossible to make sense of it.
 
 
+<!--
+  // To do: Mask State Outline - from embed.js
+  // cropMap = true requires the folllowing 3:
+  // http://leaflet-extras.github.io/leaflet-providers/leaflet-providers.js"></script>
+  // /documentation/region/js/boundary-canvas.js
+  // /documentation/region/js/georgia.js
+  // stickybits
+  // Also see: https://dollarshaveclub.github.io/stickybits/
+  // But will probably look at embed.js to detect when button of section reaches bottom of map.
+  Angshuman Guin
+  Senior Research Engineer
+  Transportation Systems Engineering
+  Smart Cities
+  https://ce.gatech.edu/people/faculty/1251/overview
+  Technology-Enabled Smarter Safer Routes to School for the City of Milton, GA
+  http://smartcities.ipat.gatech.edu/sites/default/files/CityOfMilton_SmarterSaferRoutesToSchool.pdf
+-->
 
 <div>
 
