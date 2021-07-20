@@ -12,9 +12,7 @@ We're combining industry analytics, impacts, demographics and machine learning u
 
 <!-- Schedule & Rules -->
 <a href="../challenge/" class="btn btn-primary">About Challenge</a>
-<!--
 <a href="../challenge/registration/" class="btn btn-success">Register Online</a>
--->
 <a href="../challenge/meetups/" class="btn btn-danger">Meetups and Slack Channels</a>
 
 
@@ -432,10 +430,8 @@ What's Wrong with Open-Data Sites--and How We Can Fix Them. Vast amounts of usef
 
 <!-- Schedule & Rules -->
 <a href="../challenge/" class="btn btn-primary">About Challenge</a>
-
 <a href="../challenge/registration/" class="btn btn-success">Register Online</a>
-
-<a href="../challenge/meetups/" class="btn btn-danger">Slack Groups</a>
+<a href="../challenge/meetups/" class="btn btn-danger">Meetups</a>
 
 </div>
 
