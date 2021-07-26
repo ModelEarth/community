@@ -19,7 +19,7 @@ We're using the <a href="https://www.epa.gov" target="_parent">US Environmental 
 <!-- We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. -->  
 
 
-<b>Saturday, Octoberber 2, 2021 - Tentative Schedule</b>  
+<b>Saturday, October 2, 2021 - Tentative Schedule</b>  
 
 10:00am to 12:00pm - Introductions, Team Building, Setup Walk-Throughs  
 12:00pm to 4:00pm - Work Time  
