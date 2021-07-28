@@ -33,8 +33,8 @@ to explore impacts at <a href="../../localsite/info/#show=brigades">US Brigade C
 
 Edit Code for America's [publiccode-pusher](https://github.com/codeforamerica/publiccode-pusher) to save selected Goods and Services to GitHub. Saved list will be used for Life Cycle Analysis (LCA) of company and individual carbon footprints.  
 
-[View Interface - Italy](https://publiccode-editor.developers.italia.it/)  
-[View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Initial login requirement to be modified  
+[View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently  
+[View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Initial login requirement to be removed  
 
 1. Add a Goods and Services section and include an "Add" button for choosing sectors.
 1. Pull the list of sectors from the [sectors.json file](https://github.com/modelearth/io/tree/master/build/api/USEEIOv2.0) in the built USEEIO-widgets repo used by the [io widgets](https://model.earth/io/charts/).
