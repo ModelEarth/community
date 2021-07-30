@@ -64,4 +64,6 @@ Concerned that the costs of transitioning to clean energy may be too high for th
 <li><a href="https://www.forbes.com/sites/michaelshellenberger/2018/09/11/had-they-bet-on-nuclear-not-renewables-germany-california-would-already-have-100-clean-power">Had They Bet On Nuclear, Not Renewables, Germany &amp; California Would Already Have 100% Clean Power</a>, Michael Shellenberger, Forbes, Sept. 11, 2018.</li>
 </ol>
 </div>
-<br />
+<br>
+<a href="../../../community/projects/mobility/">Electric Vehicles</a>
+<br>
