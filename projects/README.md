@@ -68,11 +68,9 @@ Move items above into our [Beyond Carbon Project Board](https://github.com/local
 
 DONE - Akilah assisted displaying the [Beyond Carbon](../../apps/beyondcarbon/) state results as a table with state names.  
 
-DONE - State dropdown script generated from [R-Language script](../../community-data/us/) to include lat/lon attributes for the [brigade map zoom](../../localsite/info/#show=industries&layers=brigades).  
+DONE - Kathryn generated state dropdown script from [R-Language script](../../community-data/us/) to include lat/lon attributes for the [brigade map zoom](../../localsite/info/#show=industries&layers=brigades).  
 
-DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
-
-DONE - Kathryn Winglee updated R-Language script to sort states alphabetically. For non-state, add state="false" attribute.  
+DONE - Kathryn created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
 
 
 
@@ -98,28 +96,34 @@ County automobile industry employment for 6-digit NAICS 336111.
 
 <h2>III. Last Airbender Interface</h2>
 
-Great for K-12:
+Great for K-12 students
 
 <div class="popout">
 
 
-<p>Help develop a <a href="../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">Friendly Inflow-Outflow Interface</a> for grouping EPA indicators by Air, Water, Land, Energy, Wealth and Health.  
-Find cool Material UI interfaces that could be applied to our category set menu.</p>
+<p>Help develop a friendly interface for students and educators using the grouped EPA indicator sets of Air, Water, Land, Energy, Wealth and Health.  
+	<a href="../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">View starter Inflow-Outflow Interface</a>
+</p>
 
 <p>
-The category set json resides in docs/static/json thanks to Alikah within our <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a> which is a great place to learn React.
-
-<a href="../aws/amplify/">We've documented AWS Amplify set up steps</a>.
+Optionally, start with our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.<!-- (The older category set json resides in docs/static/json thanks to Alikah )--> We've documented  <a href="../aws/amplify/">AWS Amplify set up steps</a>.
 
 <!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 -->
 </p>
 
 
-Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a> for relating the four “nation” categories to characters.
+Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a> you can use to relate the four “nation” categories to characters.<br><br>
+
+Get creative! Explore other movie/book themes and share how impact awareness could be an integral part of all forms of news and entertainment.
 
 
 </div><br>
+
+<div class="lazy bgimg bgimg-notfixed" data-src="img/bkgd.jpg" style="opacity:.85">
+    <a href="../../io/charts/inflow-outflow/#set=water&indicators=WATR,ACID,EUTR,ETOX"><img src="../../io/charts/inflow-outflow/img/bkgd.jpg" style="opacity:.95;width:100%"></a>
+</div>
+<br>
 
 ## IV. Python Projects
 
