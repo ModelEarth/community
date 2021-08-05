@@ -9,8 +9,8 @@ Click "Display..." to view app layers.
 ## [Our MapEngine as a Widget](../../../localsite/info/embed.html)<!-- [Older](../../map/starter/embed.html)-->  
 The localsite/map/index.html page is loaded as a template.  
 
-## [Column Names](../../../localsite/map/neighborhood/)
-[Brigade Project Network](https://projects.brigade.network/)
+## [Brigade Map](../../../apps/brigades/)
+[Brigade Project Network](https://projects.brigade.network/) and [Column Names](../../../localsite/map/neighborhood/)
 <!-- 
 CfA Taxonomy: http://bluecompass.org/cfa/taxonomy2.html
 democracy lab index: https://www.democracylab.org/api/projects/?page=1 -->
