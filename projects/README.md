@@ -250,7 +250,8 @@ https://github.com/Microsoft/azuredatastudio
 Pull over demographics reporting interface from [CensusReporter](../resources/censusreporter).  
 Point at static files hosted in GitHub.  
 Retain ability to pull from PostGreSQL.  
-Add ability to pull additional community data from [Google Data Commons](https://datacommons.org). 
+Add ability to pull additional community data from [Google Data Commons](https://datacommons.org).  
+Migrate existing CensusReporter forks in Africa and other countries to the new frontend.  
 
 
 
