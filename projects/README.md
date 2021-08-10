@@ -49,7 +49,7 @@ More about Code for America's [Public Code Pusher](https://brigade.cloud/project
 ## II. GitHub Actions Automation
 
 
-Add a GitHub Action that updates our [Farm Fresh data pull](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) nightly. 
+Add a [GitHub Action](https://docs.github.com/en/actions) that updates our [Farm Fresh data pull](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) nightly. 
 
 Create a node script that pulls 3 repos (localsite, io and apps) into one "webroot" repo.  
 
