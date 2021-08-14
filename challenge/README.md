@@ -1,15 +1,24 @@
 <!-- MOVED TO Community/Challenge/README.md -->
 
-<h3><span style="white-space:nowrap">Beyond Carbon - Code for America 2021<!-- Virtual AND in person in Atlanta, Georgia--></span></h3>
+<h3><span style="white-space:nowrap; font-size: 42px; line-height: 1em">Beyond Carbon</span></h3>
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
 
+<b>Saturday, October 2, 2021 - $10,000 in prizes</b>  
+
+10:00am to 11:00am EST - Introductions, Form Teams, Setup Walk-Through  
+11:00am to 4:00pm EST - Work Time (open mic from noon to 1pm)  
+4:00pm to 6:00pm EST - Team Share Outs and Awards  
+
+<!--
 Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be Saturday, October 2, 2021. You can get started today!<br>
 
-Form a team, join an existing team or compete individually in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development Centers of Innovation and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>. You can compete from anywhere in the world!   
+ in our fall event presented by the U.S. EPA in partnership with the Georgia Department of Economic Development Centers of Innovation and <a href="https://www.codeforamerica.org/" target="_parent" style="white-space: nowrap;">Code for America</a>.   
 
-We're using the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency's&nbsp;(EPA)</a> model for states called 
+-->
+
+You can compete from anywhere in the world. We're building additions to the <a href="https://www.epa.gov" target="_parent">US Environmental Protection Agency's&nbsp;(EPA)</a> model for states called 
 <a href="https://www.epa.gov/land-research/us-environmentally-extended-input-output-useeio-models" target="_blank">USEEIO</a> along with local data to provide [Tools for Communities](../../io/communities/) using [Embeddable IO Widgets](../../io/charts/)
 
  
@@ -19,11 +28,7 @@ We're using the <a href="https://www.epa.gov" target="_parent">US Environmental 
 <!-- We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. -->  
 
 
-<b>Saturday, October 2, 2021 - Tentative Schedule</b>  
 
-10:00am to 12:00pm - Introductions, Team Building, Setup Walk-Throughs  
-12:00pm to 4:00pm - Work Time  
-4:00pm to 6:00pm - Team Share Outs and Awards  
 
 
 Register now and join our Slack Channel.  
@@ -49,7 +54,7 @@ Kathryn Winglee
 Andrew Zimmer  
 <br>
 
-**Upcoming Awards** - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  
+**Awards** - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  Some awards may be granted for additional contributions made after Oct 2, 2021.
 
 #### Coding Awards<!-- ($7,000+)-->  
 $2,000 - First place (team or individual)  
