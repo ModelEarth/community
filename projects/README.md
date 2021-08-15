@@ -1,9 +1,3 @@
-<h1 class="h1-home">Project Teams</h1>
-
-<h3 style="margin-bottom:0px">
-<div style="font-size: 14px">Code for America 2021</div>
-
-
 <h3 style="margin-top:0px">Beyond Carbon - Sustainable Communities Web Challenge</h3>
 
 We're combining industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../../io/charts/">new input-output widgets</a> to create [app interfaces](../../apps/) for communities that combine local industry and commodity data with 22 environmental impact indicators.<br><br>
