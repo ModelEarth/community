@@ -10,7 +10,7 @@
 
 <b>Saturday, October 2, 2021 - $10,000 in prizes</b>  
 
-10AM to 11AM EST - Introductions, Form Teams, Setup Walk-Through  
+10AM to 11AM EST - Introductions, Expand Teams, Setup Walk-Through  
 11AM to 4PM EST - Work Time (open mic from noon to 1pm)  
 4PM to 6PM EST - Team Share Outs and Awards  
 
@@ -59,7 +59,7 @@ Andrew Zimmer
 <br>
 -->
 
-**Awards** - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  Some awards may be granted for additional contributions made after Oct 2, 2021.
+**Awards** - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  Includes additional funds contributed by the Georgia Center for Innovation in Energy Technology.  Some awards may be granted made after Oct 2, 2021 for additional contributions.
 
 #### Coding Awards<!-- ($7,000+)-->  
 $2,000 - First place (team or individual)  
@@ -93,26 +93,9 @@ $500 - Wildest Web Site
 $300 - Teaching Tools   
 $300 - Editing Tools  
 
-Includes additional funds contributed by the Georgia Center for Innovation in Energy Technology.  
+ 
 
 <!-- 
-<a href="meetups/">Open Slack Desktop App</a> / [Open in Browser](https://model-earth.slack.com/)
-<b>Slack Workspace:</b> model-earth.slack.com 
-
-## $10,000 in Challenge Awards
-
-
-
-1st place: $2,500  
-2nd place: $1,500  
-3rd place: $1,000  
-
-Honorable mention 1: $500  
-Honorable mention 2: $500  
-
-Implementation project 1: $2,000  
-Implementation project 2: $2,000  
-
 The implementation portion will be allocated based on pitches from teams after the award recipients are named.  Implementation projects will be distributed upon project completion within 3 months after the challenge.  
 
 
