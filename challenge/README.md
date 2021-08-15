@@ -4,12 +4,15 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
+<b>Work Sessions</b><br>
+<a href="../../community/challenge/meetups/">Saturday, September 25, 2021 from 10AM to 12PM EST</a><br>
+<a href="../../community/challenge/meetups/">Tuesday, September 28, 2021 from 10AM to 12PM EST</a><br>
 
 <b>Saturday, October 2, 2021 - $10,000 in prizes</b>  
 
-10:00am to 11:00am EST - Introductions, Form Teams, Setup Walk-Through  
-11:00am to 4:00pm EST - Work Time (open mic from noon to 1pm)  
-4:00pm to 6:00pm EST - Team Share Outs and Awards  
+10AM to 11AM EST - Introductions, Form Teams, Setup Walk-Through  
+11AM to 4PM EST - Work Time (open mic from noon to 1pm)  
+4PM to 6PM EST - Team Share Outs and Awards  
 
 <!--
 Join us at an upcoming <a href="meetups/">meetup</a> to get involved! Final presentations will be Saturday, October 2, 2021. You can get started today!<br>
@@ -42,6 +45,7 @@ You do not need to be able to attend the Oct 2 event for your entry to win an aw
 </div>
 <br>
 
+<!--
 <b>Our January 2021 Winners</b>
 
 #####1st Place - Top Web Developer  
@@ -53,6 +57,7 @@ Kathryn Winglee
 #####Top React Developer  
 Andrew Zimmer  
 <br>
+-->
 
 **Awards** - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  Some awards may be granted for additional contributions made after Oct 2, 2021.
 
@@ -73,7 +78,7 @@ $500 - Detailed Analysis
 $300 - Collaborative Assembly  
 $300 - Perspective Changing  
 
-#### K-12 Teams<!-- ($3000)-->
+#### High School Teams<!-- ($3000)-->
 <!--Awards for teachers to use for class supplies and equipment.  
 We are unable to provide cash awards directly to K-12 students.-->  
 
