@@ -55,12 +55,11 @@ You can compete from anywhere in the world. We're building additions to the <a h
 <!-- We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. -->  
 
 
-Register now and join our Slack Channel.  
-
+<h2>Register</h2>
 <!-- Also update in community index.html footer -->
 <div style="margin-top:20px">
-<a href="registration/" class="btn btn-success">Register to participate</a>
-<!-- <a href="../projects/" class="btn btn-warning">View Project Areas</a> -->
+<a href="registration/" class="btn btn-success">Register to participate</a><br>
+ <!-- <a href="../projects/" class="btn btn-warning">View Project Areas</a> -->
 <a href="meetups" class="btn btn-danger">Meetups and Slack Channels</a>
 </div>
 <br>
