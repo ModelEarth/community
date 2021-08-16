@@ -4,7 +4,7 @@
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 
-<i>A virtual coding challenge to customize our community apps for your community, offering a total of $10,000 in cash awards. This is an official US Federal Challenge event sponsored by the US Environmental Protection Agency.</i>
+<i>A virtual coding challenge to customize our community apps for your community, offering a total of $10,000 in cash awards. This is an official US Federal Challenge event sponsored by the US Environmental Protection Agency, in partnership with the Georgia Center of Innovation for Energy Technology, and in coordination with Code for America.</i>
 
 <h2>When</h2>
 Start anytime from now up until the final day, October 2, 2021.
