@@ -78,9 +78,11 @@ Andrew Zimmer
 <br>
 -->
 
+<!--
+
 **Awards** - Judges may adjust these levels based on team size and levels of commitment.  Some awards will be granted in advance of the event to prepare processes used by other participants.  Includes additional funds contributed by the Georgia Center for Innovation in Energy Technology.  Some awards may be granted made after Oct 2, 2021 for additional contributions.
 
-#### Coding Awards<!-- ($7,000+)-->  
+#### Coding Awards   ($7,000+)  
 $2,000 - First place (team or individual)  
 $1,500 - Second place (team or individual)  
 $1,000 - Third place (team or individual)  
@@ -91,15 +93,14 @@ $300 - Top React Developer
 $300 - Top Google Developer  
 $300 - Top Overall Contributor 
 
-#### Community Data Collection Champions<!-- ($2,000)-->
+#### Community Data Collection Champions ($2,000)
 $500 - Widely Useful  
 $500 - Detailed Analysis  
 $300 - Collaborative Assembly  
 $300 - Perspective Changing  
 
-#### High School Teams<!-- ($3000)-->
-<!--Awards for teachers to use for class supplies and equipment.  
-We are unable to provide cash awards directly to K-12 students.-->  
+#### High School Teams ($3000)
+
 
 Focused on ideas and presentations  
 
@@ -112,7 +113,10 @@ $500 - Wildest Web Site
 $300 - Teaching Tools   
 $300 - Editing Tools  
 
- 
+<!--Awards for teachers to use for class supplies and equipment.  
+We are unable to provide cash awards directly to K-12 students.
+
+-->
 
 <!-- 
 The implementation portion will be allocated based on pitches from teams after the award recipients are named.  Implementation projects will be distributed upon project completion within 3 months after the challenge.  
