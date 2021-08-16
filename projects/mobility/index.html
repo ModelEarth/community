@@ -12,7 +12,7 @@
 <script type="text/javascript" src="../../js/d3/d3.v5.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/showdown.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/jquery.min.js"></script>
-<script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js?sidecolumn=community/nav.html"></script>
 <script type="text/javascript" src="../../../localsite/js/navigation.js"></script>
 
 <style>
@@ -34,7 +34,8 @@
 </head>
 
 <body>
-
+<div id="allsections">
+<section id="mobility">
 <div class="content contentpadding">
 
 	<div id="readmeDiv"></div>
@@ -48,8 +49,8 @@
 	<!--
 	<a href="../../../localsite/info/#show=ev&show=counties">Electric Vehicle manufacturing industries by county</a> | 
 	-->
-	&bull; <a href="../../../localsite/info/#show=vehicles">All Georgia Motor Vehicle and Motor Vehicle Equipment Manufacturing</a><br>
-	&bull; <a href="../../../localsite/map/#show=ev&q=Yes&search=ev+industry">Georgia manufacturing directly related to Electric Vehicles</a><br>
+	&bull; <a href="../../../localsite/info/#show=vehicles&state=GA">Motor Vehicle and Motor Vehicle Equipment Manufacturing</a><br>
+	&bull; <a href="../../../localsite/info/#show=vehicles&state=GA&q=Yes&search=ev+industry">Electric Vehicle Related Manufacturing</a><br>
 	
 	<br>
 
@@ -59,11 +60,22 @@
 		<h3>Parts Manufacturing</h3>
 	
 		336111 - Automotive Manufacturing<br>
+		336211 - Motor Vehicle Body Manufacturing<br>
+		<span class="red">336310 - Motor Vehicle Gasoline Engine and Engine Parts Manufacturing</span><br>
+		<span class="green">336320 - Motor Vehicle Electrical and Electronic Equipment Manufacturing</span><br>
 		336330 - Motor Vehicle steering and suspension manufacturing<br>
 		336340 - Motor Vehicle braking and component systems manufacturing<br>
 		336360 - Motor Vehicle seating and interior trim manufacturing<br>
-		336370 - Motor Vehicle metal stamping manufacturing<br>
+
+
+		336370 - Motor Vehicle Metal Stamping<br>
 		336390 - Other Motor Vehicle Parts Manufacturing<br>
+		<span class="red">336350 - Motor Vehicle Transmission and Power Train Parts Manufacturing</span><br>
+		336360 - Motor Vehicle Steering and Interior Trim Manufacturing<br>
+		
+		
+		331110 - Iron and Steel Mills and Ferroalloy Manufacturing<br>
+		<span class="red">333618 - Other Engine Equipment Manufacturing</span><br>
 		<span class="red">333613 - Mechanical power transmissions equipment manufacturing</span><br>
 		336412 - Aircraft engines and engine parts manufacturing<br>
 		336413 - Other aircraft parts and auxiliary equipment manufacturing<br>
@@ -78,20 +90,12 @@
 		325211 - Plastics material and resin manufacturing<br>
 		325520 - Adhesives manufacturing<br>
 		326112 - Plastics packaging film manufacturing<br>
+		326199 - All Other Plastic Product Manufacturing<br>
 		<span class="red">326220 - Rubber and plastics hoses and belt manufacturing</span><br>
 		331221 - Rolled steel shape manufacturing<br>
 		332211 - Forging and stamping<br>
 
-		336370 - Motor Vehicle Metal Stamping<br>
-		336390 - Other Motor Vehicle Parts Manufacturing<br>
-		<span class="red">336350 - Motor Vehicle Transmission and Power Train Parts Manufacturing</span><br>
-		336360 - Motor Vehicle Steering and Interior Trim Manufacturing<br>
-		<span class="red">336310 - Motor Vehicle Gasoline Engine and Engine Parts Manufacturing</span><br>
-		326199 - All Other Plastic Product Manufacturing<br>
-		331110 - Iron and Steel Mills and Ferroalloy Manufacturing<br>
-		<span class="red">333618 - Other Engine Equipment Manufacturing</span><br>
-		336211 - Motor Vehicle Body Manufacturing<br>
-		<span class="green">336320 - Motor Vehicle Electrical and Electronic Equipment Manufacturing</span><br>
+		
 
 		<h3>Broader than manufacturing</h3>
 
@@ -101,7 +105,7 @@
 		<span class="red">811111 - General automotive repair shops</span><br>
 		<br>
 
-		Dealerships typically generate over 40% of their gross profit pool in service and maintenance, which will drop at least 60% with since EVs require fewer fluid changes and parts replacements.<br>
+		Dealerships typically generate over 40% of their gross profit in service and maintenance, which is predicted to drop at least 60% since EVs require fewer fluid changes and parts replacements.<br>
 
 
 	</div>
@@ -111,6 +115,8 @@
 
 	
 	<h3>Data Sources</h3>
+
+	Create a copy of the vehicle manufacturer <a href="https://docs.google.com/spreadsheets/d/1OX8TsLby-Ddn8WHa7yLKNpEERYN_RlScMrC0sbnT1Zs/edit#gid=0">Google Sheet</a> to activate additional states.<br><br>
 
 	1. <a href='https://explorer.gdol.ga.gov/vosnet/drills/employer/empdrill.aspx?session=jobseek'>Georgia Labor Market Explorer</a><br><br>
 
@@ -145,9 +151,17 @@
 	2017 - 1% of car sales<br>  
 	2020 - 4% of car sales<br>  
 	2025 - 22% of car sales (Deutsche Bank projection)<br>  
+	<br>
+
+	<a href="https://www2.deloitte.com/global/en/pages/energy-and-resources/articles/accelerating-smart-manufacturing-the-value-of-an-ecosystem-approach.html?id=gx:2em:3ext:4Ecos_region:5awa:6er:20210218">Using ecosystems to accelerate smart manufacturing - A regional analysis</a><br>
+	Ecosystems form when a collaborative network of stakeholders—enabled by digital technology—come together in meaningful ways to solve shared challenges and meet shared objectives.
+	<br><br>
+	
+	<a href="../../../community/architecture/">New Countryside</a>
 
 </div>
-
+</section>
+</div>
 
 
 </body>

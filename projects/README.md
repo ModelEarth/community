@@ -1,26 +1,20 @@
-<h1 class="h1-home">Project Areas</h1>
-
-<h3 style="margin-bottom:0px">
-<div style="font-size: 14px">Code for America 2021</div>
-
-
 <h3 style="margin-top:0px">Beyond Carbon - Sustainable Communities Web Challenge</h3>
 
-We're combining industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../../io/charts/">new input-output widgets</a> to create interfaces for communities using 24 environmental indicators across 388&nbsp;industries.<br><br>
+We're combining industry analytics, impacts, demographics and machine learning using the EPA's new environmental indicator models. Choose an area below to compete for $10,000 in awards in 2021 using <a href="../../io/charts/">new input-output widgets</a> to create [app interfaces](../../apps/) for communities that combine local industry and commodity data with 22 environmental impact indicators.<br><br>
 
 <div>
 
 <!-- Schedule & Rules -->
 <a href="../challenge/" class="btn btn-primary">About Challenge</a>
-<!--
 <a href="../challenge/registration/" class="btn btn-success">Register Online</a>
--->
 <a href="../challenge/meetups/" class="btn btn-danger">Meetups and Slack Channels</a>
 
 
 </div>
 
 <br>
+
+Join a Community of Interest: React, JQuery, Python/R, UX/UI or Leaflet  
 
 <!--
 Teams that contribute to these broad areas have a good chance of earning an award of 
@@ -31,23 +25,72 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 Projects use the EPA's [Environmentally-Extended Input Output widgets](https://model.earth/io/charts) 
 to explore impacts at <a href="../../localsite/info/#show=brigades">US Brigade Cities</a><br>
 
+## I. React - Environmental Profile Editor Team
 
-## I. Tools for Static Site Generation / GitHub Actions Automation
+Edit entity profiles for emergency response, environmental impacts, goods and services - product environmental declations (), including individual carbon footprints. [View templates](../../io/template/)  
 
- 
+Edit our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor to save selected Goods and Services in a file called sectors.yml. Saved list will be used for Life Cycle Analysis (LCA) of company and individual carbon footprints. (Our fork will be available shortly, you can create your own fork while we wait for activation.)  
 
-DONE - Automation of our [Farm Fresh data pull](../../localsite/info/#state=TX&show=farmfresh).  
+[View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently, [view schema](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/schema.core.html#top-level-keys-and-sections)  
+[View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Initial login requirement to be [removed](https://github.com/codeforamerica/publiccode-pusher/issues/13)  
 
-DONE - State Dropdown script generated from [R-Language script](../../community-data/us/) to include lat/lon attributes for [map zoom](../../localsite/info/).  
+1. Add a Goods and Services section stored in sectors.yml and include an "Add" button for choosing sectors.
+1. Pull the list of sectors from the [sectors.json file](https://github.com/modelearth/io/tree/master/build/api/USEEIOv2.0) in the built USEEIO-widgets repo used by the [io widgets](https://model.earth/io/charts/).
+1. Include a field beside each selected sector for the dollar/euro amounts per year.  
+1. Save the Goods and Services (skillbank) to the GitHub Repo in the sectors.yml file.  
+1. Provide fields for indicating if each of entity's Goods and Services are more sustainable than the average provider.  
+1. Include a field for setting the year and save prior years as: sectors-2020.yml, etc.  
+1. Store additional entiy info for organizations and individuals in a file called profile.yml.  
 
-DONE - Kathryn Winglee created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
+More about Code for America's [Public Code Pusher](https://brigade.cloud/projects/publiccode-helper/).  
 
-DONE - Kathryn Winglee updated R-Language script to sort states alphabetically. For non-state, add state="false" attribute.
+Possible EDP form sample: [ClimateEarth.com demo](https://www.climateearth.com/command-qc-demo-sign-up/)  
+Also, [GreenDelta Java EPD editor](https://github.com/GreenDelta/epd-editor)  
+[Amazon employee's "Communicating EDP's" article with "Nutrition" Label](https://www.linkedin.com/pulse/amazon-has-unparalleled-opportunity-drive-low-carbon-products-guest/)  
 
+## II. GitHub Actions Automation
+
+Add a [GitHub Action](https://docs.github.com/en/actions) that updates our [Farm Fresh data pull](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) nightly. 
+
+Create a node script that pulls 3 repos (localsite, io and apps) into one "webroot" repo.  
+
+Output [All the Places](https://www.alltheplaces.xyz/) into zip folders in our [zip/io/data repo](https://model.earth/zip/io/)<!-- generated by Kathryn Winglee. -->.  
+
+**Our prior GitHub Actions samples**  
+[Scrape city site and save json file using Python](https://github.com/abrie/atl-council-scraper) - Abrie  
+[Pull from PDF to a CSV file using R script](https://github.com/bbrewington/ga.dph.data) - Brant and Abrie  
+
+## III. Map Projects
+
+
+Update map.js to include a choropleth map layer with industry density for [show=vehicles](../../localsite/info/#show=vehicles) to represent <a href="mobility/">locations potentially impacted by the transition to EV</a>. See [choropleth map samples](../start/maps/).   
+
+Activate a clickable legend in the map.js file. Place checkboxes before legend items to filter the map points and list below the map.  
+
+Add mockups of integrated interfaces for Department of Labor tools like the [Georgia Labor Market Explorer](https://explorer.gdol.ga.gov/vosnet/Logoff.aspx?Displayonly=1&utype=L&plang=E)  
+
+
+<!--
+Update county [data prep scripts](../../localsite/info/data/) to include zip codes. Get latest from summer intern John Taylor.  
+-->
+
+Find a source of "regions within states" based on sets of counties. Apply to [region_select dropdown](../../localsite/info/#state=GA).  
+
+Move items above into our [Beyond Carbon Project Board](https://github.com/localsite/localsite/projects/1). See [Hack for LA](https://github.com/hackforla/website/projects/7) examples.  
+<!-- Project created from Automated kanban with reviews template. -->
+
+DONE - Akilah assisted displaying the [Beyond Carbon](../../apps/beyondcarbon/) state results as a table with state names.  
+
+DONE - Kathryn generated state dropdown script from [R-Language script](../../community-data/us/) to include lat/lon attributes for the [brigade map zoom](../../localsite/info/#show=industries&layers=brigades).  
+
+DONE - Kathryn created files for all US zip codes.  She used the [uszipcode programmable database (Python)](https://uszipcode.readthedocs.io/01-Tutorial/index.html) - [Github](https://github.com/MacHu-GWU/uszipcode-project) to generate [a data file for each zip code](https://model.earth/zip/io/#zip=30310). Here's the [processing script](https://github.com/modelearth/zip/tree/master/io).
+
+
+
+<!--
 DONE - Pull Data to GitHub. Abrie fixed the [Vaccine dosage pull to GitHub](https://github.com/bbrewington/ga.dph.data/pull/1), now we need to [push into a Google Sheet](https://www.google.com/search?q=Github+Actions+send+data+to+Google+Sheet&oq=Github+A[…]et&aqs=chrome..69i57j69i64.20842j0j1&sourceid=chrome&ie=UTF-8).  
 
-  
-<!--
+
 Generate static files to drive Data Commons navigation. Crosswalk zipcodes and counties to PUMA regions. This crosswalk resides in DataUSA.io Github repo. 
 
 1. Contribute to our [AWS Amplify React](../aws/amplify/) repo by activating [Last Airbender indicator sets](../../io/charts/inflow-outflow/).  
@@ -58,38 +101,59 @@ Generate static files to drive Data Commons navigation. Crosswalk zipcodes and c
 <!--Auto-select all categories in center column when populated from naics values.-->  
 
 
-<h2>II. Last Airbender Interface</h2>
+<!--
+County automobile industry employment for 6-digit NAICS 336111.
+4-digit NAICS resides in "By-Industry" link [here](https://www.bls.gov/cew/downloadable-data-files.htm), but we will be pulling from the Bureau of Labor Statistics (BLS)&nbsp;API.  
+--> 
 
-Great for K-12:
+
+<h2>IV. Design Projects (UX/UI Teams)</h2>
+
+
+###1. Community Hotspot Environmental Report (CHER)
+
+Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data for local chloroform maps driving USEEIO widgets.
+
+
+###2. Last Airbender Interface
+
+
+Great for students
 
 <div class="popout">
 
 
-<p>Help develop a <a href="../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">Friendly Inflow-Outflow Interface</a> for grouping EPA indicators by Air, Water, Land, Energy, Wealth and Health.  
-Find cool Material UI interfaces that could be applied to our category set menu.</p>
+<p>Help develop a friendly interface for students and educators using the grouped EPA indicator sets of Air, Water, Land, Energy, Wealth and Health.  
+	<a href="../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">View starter Inflow-Outflow Interface</a>
+</p>
 
 <p>
-The category set json resides in docs/static/json thanks to Alikah within our <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a> which is a great place to learn React.
-
-<a href="../aws/amplify/">We've documented AWS Amplify set up steps</a>.
+Optionally, start with our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.<!-- (The older category set json resides in docs/static/json thanks to Alikah )--> We've documented  <a href="../aws/amplify/">AWS Amplify set up steps</a>.
 
 <!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 -->
 </p>
 
 
-Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a> for relating the four “nation” categories to characters.
+Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a> you can use to relate the four “nation” categories to characters.<br><br>
+
+Get creative! Explore other movie/book themes and share how impact awareness could be an integral part of all forms of news and entertainment.
 
 
 </div><br>
 
-## III. Python Projects
+<div class="lazy bgimg bgimg-notfixed" data-src="img/bkgd.jpg" style="opacity:.85">
+    <a href="../../io/charts/inflow-outflow/#set=water&indicators=WATR,ACID,EUTR,ETOX"><img src="../../io/charts/inflow-outflow/img/bkgd.jpg" style="opacity:.95;width:100%"></a>
+</div>
+<br>
+
+## V. Python Projects
 
 Great for Data Science and Computer Science Students  
 
 ### Python, Javascript, Leaflet Maps
 
-We're creating a Python pipeline and adding support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  Start by triggering our [FarmFresh Python](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) data pull from the [community-data repo pipeline](https://github.com/modelearth/community-data/).    
+We're creating a Python pipeline and Github Actions to add support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  Start by triggering our [FarmFresh Python](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) data pull from the [community-data repo pipeline](https://github.com/modelearth/community-data/).    
 
 Predicting outcomes from changes to collections of industries and transitions within industry groups.  [NAICS Data processing](../../localsite/info/data/flowsa/) / [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
 
@@ -102,7 +166,7 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 -->
 1. [Set-up Flask server](/localsite/info/data/datacommons/) using DataCommon.org website repo sample. Deploy to Google hosting.  
 
-1. Document setting up a public website using the Machine Learning Websocket in the first project sample below.
+1. Document setting up a public website using the Machine Learning Websocket in the [impact map](/io/impact/)  project sample.
 
 1. Create cool map output with code from our existing Machine Learning projects:  
 - [Impact map (Machine Learning Websocket)](/io/impact/) - We'd love to get this running on Google Cloud, Heroku or AWS. Or convert to a fully static site.  
@@ -114,12 +178,6 @@ Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model
 1. Contribute a USSEIO Widget to the [DataUSA.io](https://datausa.io/) GitHub repos.
 
 1. Test output normalization for [Sankey chart](../../io/charts/sankey/) using the [USEEIO API Examples](/community/resources/useeio/)
-
-1. Output [All the Places](https://www.alltheplaces.xyz/) into zip folders. 
-
-These could reside in our forked repo with the zip files Kathryn Winglee generated: 
-[zip/io/data](https://model.earth/zip/io/) folders where demographics .json and .md files reside.
-(or save in community-data repo.)
 
 1. Expand upon [county-based results](../../localsite/info/) to provide zipcode-based industry lists. - [Details](industries) 
 
@@ -136,74 +194,6 @@ These could reside in our forked repo with the zip files Kathryn Winglee generat
 
 1. Update [Django Census Reporter](resources/censusreporter) by staring with the Python 3 Wazimap [fork](resources/censusreporter) used in Africa and India. Integrate US demographic data from Python 2 version. Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/master/heroku/deploy-a-django-app.md) using a [containerization template](https://github.com/datamade/how-to/tree/master/docker/templates). Learn more [about using Heroku or AWS](https://datamade.us/blog/why-were-switching-to-heroku/).  
 -->
-
-## IV. Dive into Google Data Commons API
-
-[Install Data Commons Lite](../../localsite/info/data/datacommons/) on your local computer.  
-
-Find and pull US census data by state and county from the Google Data Commons API.  Look for commute times.  
-
-Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
-
-Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
-
-Use and improve the Google Data Common's checkbox heirarchy - [sample](https://datacommons.org/tools/timeline#place=zip%2F30318&statsVar=Count_Person_5To17Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C1%2C1%2C0__Count_Person_60To61Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C7%2C1%2C0%2CCount_Person__Count_Person_5To17Years_BornInStateOfResidence%2C0%2C6%2C1%2C1%2C1__WagesAnnual_Establishment%2C9%2C0__Count_Establishment%2C9%2C2&chart=%7B%22count%22%3A%7B%22pc%22%3Afalse%7D%7D)  
-
-Add highlighted colors similar to BEA  
-[View sample](https://apps.bea.gov/iTable/iTable.cfm?reqid=150&step=3&isuri=1&table_list=5013&categories=compbyind), click Table > Bar Chart and choose industries.  
-
-Analysis applied to <a href="projects/mobility/">industries impacted by the transition to EV</a>.  
-
-<!--
-Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
---> 
-
-## V. Crowdsource Editor - Google REST App
-
-1. Google Sheet Crowdsource Editor - A REST process allowing editors to return and update their own row contributions.
-
-1. Work with a [JAMstack Editor](https://headlesscms.org/) to edit CSV files directly on GitHub using social logins. 
-
-1. [Google Sheet Editor](https://model.earth/editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to edit rows of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
-
-
-## VI. React - Input-Output Sankey Chart
-
-1. Update the [Sankey D3 Chart](../../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../../io/build/slider.html#sectors=333613,335912,336111&page=1&count=10).  
-
-1. View info on [editing EPA IO widgets](/io/charts/).
-
-1. See sample [visualizations](../start/charts/) of material flow charts.
-
-1. Normalization input and output so sides of Sankey are even.
-
-<!--
-And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
--->
-
-
-
-## VII. .NET Core 5.0 Team
-
-1. Create a "Disposable Database" for editing crowdsourced lists using .csv files hosted in GitHub, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.  
-
-1. Add USEEIO widgets to [.NET Environmental Education tools](https://model.earth/setup/) for GEEP partner states and countries.  
-<!--
-Strapi for Amazon AWS - EC2, RDS and S3
-https://strapi.io/documentation/developer-docs/latest/deployment/amazon-aws.html
-
-Azure Data Studio - for Mac to access AWS EC2
-https://github.com/Microsoft/azuredatastudio
--->
-
-
-## VIII. Challenging Python Project
-
-Pull over demographics reporting interface from [CensusReporter](../resources/censusreporter).  
-Point at static files hosted in GitHub.  
-Retain ability to pull from PostGreSQL.  
-Add ability to pull additional community data from [Google Data Commons](https://datacommons.org). 
-
 
 
 ## Related Resources
@@ -392,15 +382,30 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 What's Wrong with Open-Data Sites--and How We Can Fix Them. Vast amounts of useful information can be found on government Web sites, but it's often impossible to make sense of it.
 
 
+<!--
+  // To do: Mask State Outline - from embed.js
+  // cropMap = true requires the folllowing 3:
+  // http://leaflet-extras.github.io/leaflet-providers/leaflet-providers.js"></script>
+  // /documentation/region/js/boundary-canvas.js
+  // /documentation/region/js/georgia.js
+  // stickybits
+  // Also see: https://dollarshaveclub.github.io/stickybits/
+  // But will probably look at embed.js to detect when button of section reaches bottom of map.
+  Angshuman Guin
+  Senior Research Engineer
+  Transportation Systems Engineering
+  Smart Cities
+  https://ce.gatech.edu/people/faculty/1251/overview
+  Technology-Enabled Smarter Safer Routes to School for the City of Milton, GA
+  http://smartcities.ipat.gatech.edu/sites/default/files/CityOfMilton_SmarterSaferRoutesToSchool.pdf
+-->
 
 <div>
 
 <!-- Schedule & Rules -->
 <a href="../challenge/" class="btn btn-primary">About Challenge</a>
-
 <a href="../challenge/registration/" class="btn btn-success">Register Online</a>
-
-<a href="../challenge/meetups/" class="btn btn-danger">Slack Groups</a>
+<a href="../challenge/meetups/" class="btn btn-danger">Meetups</a>
 
 </div>
 

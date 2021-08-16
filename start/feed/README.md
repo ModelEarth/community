@@ -1,8 +1,8 @@
-#Publish Your Inventory
+#Add your Data Feeds
 
-###Share your Product Availability and Publish a Materials Wishlist
+###Publish Your Inventory and Wishlist
 
-[Send Us Links](add) to include your inventory of items and your wishlist of needed items (including reusable, shared and recycled).  If you don't have an existing server to host your files, we'll help you post your listings for free using GitHub.  
+[Send Links](add) to include your inventory of items (including reusable, shared and recycled) and needed items.  If you don't have an existing server to host your files, use GitHub for CSV files or send a link to a Google Sheet.  
 
 Post as CSV files using the following Google Merchant Center standard:  
 [entity1\_inventory.csv](entity1_inventory.csv) and [entity1\_wishlist.csv](entity1_wishlist.csv)  
