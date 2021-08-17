@@ -1,5 +1,5 @@
 
-# Web Challenge Rules
+# Rules for Entries
 
 <!--
 Supply chain "License to Operate" with the support of the community.
@@ -19,12 +19,13 @@ Slack #epa
 
 <!--
 	https://www.wrld3d.com/wrld.js/latest/docs/leaflet/L.DivIcon/
--->
+
  
 
 [Community Profiles: Industry Evaluator](../../localsite/info/)  
-[Starter samples](../../community/start/) <!--and [datasets](https://github.com/modelearth/community) -->and 
+[Starter samples](../../community/start/) <!--and [datasets](https://github.com/modelearth/community) and 
 [Embeddable IO Charts](../../io/charts) using the [USEEIO&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
+-->
 
 ---
 <!--
@@ -35,7 +36,7 @@ We need assistance pre-processing lat/lon centers for zip codes, cities and coun
 We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=farmfresh&design=1) which are also used for Covid-19 supply maps.
 -->
 
-### Form a team or compete as an individual
+<!--### Form a team or compete as an individual-->
 
 <!--
 Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
@@ -69,14 +70,15 @@ Teams will collaborate using one or more of the following:
 - Other Auth services  
 -->
 
+<!--
 Our developers are available to help guide participants through placing USEEIO widgets on any entry that has locations (states or counties) or sectors (commodities or naics codes).
 
+
 Some data collection entries and K-12 teams may opt not to use GitHub.  
-K-12 teams may focus on presentations using Google Slides, Powerpoint, etc.
+K-12 teams may focus on presentations using Google Slides, Powerpoint, etc. -->
 
 
-**Rules for Entries** 
-
+- Entries must be a community site/page based on modelearth    
 - Entries should be maintained in one or more public github repositories 
 - Entries should be easy to integrate with other projects.  
 - Please avoid using CMS content systems like Wix and WordPress.  
@@ -86,11 +88,9 @@ K-12 teams may focus on presentations using Google Slides, Powerpoint, etc.
 - Detached frontends should have an index.html file in their root.
 - Detached frontends should work under any domain when hosted as a Github fork.  
 - Static frontend may be hosted for free using GitHub
-- Free or very affordable options for hosting associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
+- If your entry is associated with additional data, provide free or very affordable options for hosting associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
 
-Employees of EPA, GDEcD and GDIT are not eligible for awards.  
-
-**Judging Criteria**  
+# Judging Criteria  
 (relative weight of criteria in parentheses)
 
 - Conforms with Rules for Entry (20%) 
@@ -99,9 +99,10 @@ Employees of EPA, GDEcD and GDIT are not eligible for awards.
 - Visually appealing and supports clear interpretation (20%)
 - Integrates with other location-based data sources or pulls in other community-oriented tools to make the results from widgets more community-relevant (20%)
 
-During judging you may receive requests to update your install steps.  
-We&nbsp;recommend having judges try your install in advance.  
+<!--During judging you may receive requests to update your install steps.  
+We&nbsp;recommend having judges try your install in advance.  -->
 
-<a href="registration/">Register to participate</a> | 
+<!-- <a href="registration/">Register to participate</a> | -->
+
 Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues)  
 <br>
