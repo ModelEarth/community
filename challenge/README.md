@@ -22,19 +22,9 @@ Start anytime from now up until the final day, October 2, 2021.
 <a href="../../community/challenge/meetups/">Tuesday, September 28, 2021 from 10AM to 12PM EST</a><br>
 
 <h2>How to Participate</h2>
-
-Follow these steps<br>
-<h3>1. Identify your location of interest</h3>
-A local community, county, region of the state, or multiple states<br>
-
-<h3>2. Explore environmental impacts for the location</h3>
-Use the EPA tools to <a href="../apps/beyondcarbon/#state=GA">explore industry impacts</a> for your location of interest<br>
-
-<h3>3. Form a group to activate a cool page for your topic</h3>
-Involve community reps, designers, HTML editors, coders and data contributors. <a href="start">Starter Samples</a><br>
-
-<h3>4. Create beautiful functionality - We'll guide you through implementation</h3>
-Show before-and-after scenarios, create comparisons, and <a href="../apps/">share apps</a> within your favorite websites<br><br>
+1. Register
+2. Follow the <a href="#Steps for creating your entry">steps to create an entry</a> or work with an existing team to prepare one.
+3. Present your entry at the October 2 event at 4PM ET.
 
 <h2>Eligibility</h2>
 You must register to be eligible for awards. To register, your must be 18 years or older. Persons under 18 may participate on a team with a registered adult, but are not eligible to receive awards directly. You must present your work in real time at 4PM-6PM EST on October 2, 2021, or pre-record and share the recording before 4PM that day to be eligible for an award. 
@@ -112,11 +102,10 @@ $500 - Wildest Web Site
 #### Bonus Areas
 $300 - Teaching Tools   
 $300 - Editing Tools  
+-->
 
 <!--Awards for teachers to use for class supplies and equipment.  
-We are unable to provide cash awards directly to K-12 students.
-
--->
+We are unable to provide cash awards directly to K-12 students. -->
 
 <!-- 
 The implementation portion will be allocated based on pitches from teams after the award recipients are named.  Implementation projects will be distributed upon project completion within 3 months after the challenge.  
@@ -140,7 +129,8 @@ The implementation portion will be allocated based on pitches from teams after t
 Judges will use Slack video to deliberate while using a Google Form for calculating scores for the Oct 25 awards.<br><br>
 -->
 
-<a href="https://www.challenge.gov/">View more US web challenges at Challenge.gov</a>  
+<!--
+<a href="https://www.challenge.gov/">View more US web challenges at Challenge.gov</a>  -->
 
 
 
