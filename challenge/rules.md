@@ -78,8 +78,8 @@ Some data collection entries and K-12 teams may opt not to use GitHub.
 K-12 teams may focus on presentations using Google Slides, Powerpoint, etc. -->
 
 
-- Entries must be a community site/page based on modelearth    
-- Entries should be maintained in one or more public github repositories 
+- Entries must be a community site/page based on modelearth's localsite framework. See the Getting Started Steps for details.    
+- Entries should be maintained in one or more public github repositories. 
 - Entries should be easy to integrate with other projects.  
 - Please avoid using CMS content systems like Wix and WordPress.  
 - Provide documentation of set-up steps in a markdown file.
@@ -93,11 +93,10 @@ K-12 teams may focus on presentations using Google Slides, Powerpoint, etc. -->
 # Judging Criteria  
 (relative weight of criteria in parentheses)
 
-- Conforms with Rules for Entry (20%) 
-- Utilizes USEEIO Widgets and/or USEEIO APIs effectively (20%)
-- Installs easily using documented steps (20%)
-- Visually appealing and supports clear interpretation (20%)
-- Integrates with other location-based data sources or pulls in other community-oriented tools to make the results from widgets more community-relevant (20%)
+- Conforms with Rules for Entries (25%) 
+- Installs easily using documented steps (25%)
+- Visually appealing and supports clear interpretation (25%)
+- Integrates with other location-based data sources or pulls in other community-oriented tools to make the results from widgets more community-relevant (25%)
 
 <!--During judging you may receive requests to update your install steps.  
 We&nbsp;recommend having judges try your install in advance.  -->
