@@ -23,7 +23,7 @@ Start anytime from now up until the final day, October 2, 2021.
 
 <h2>How to Participate</h2>
 1. Register
-2. Follow the <a href="#Steps">steps to create an entry</a> or work with an existing team to prepare an entry.
+2. Follow the <a href="#introlist">steps to create an entry</a> or work with an existing team to prepare an entry.
 3. Present your entry at the October 2 event at 4PM ET.
 
 <h2>Eligibility</h2>
