@@ -103,5 +103,5 @@ We&nbsp;recommend having judges try your install in advance.  -->
 
 <!-- <a href="registration/">Register to participate</a> | -->
 
-Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues)  
+Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues) or [Contact Us Online](../../localsite/info/input/) 
 <br>
