@@ -23,11 +23,22 @@ Teams that contribute to these broad areas have a good chance of earning an awar
 ### You can participate on multiple teams!
 
 Projects use the EPA's [Environmentally-Extended Input Output widgets](https://model.earth/io/charts) 
-to explore impacts at <a href="../../localsite/info/#show=brigades">US Brigade Cities</a><br>
+to explore impacts.<br>
+
+We're integrating Life Cycle Analysis (LCA) tools for local communities.<br>
+Our software development areas include:
+
+<a href="../../community/projects/#react">React</a> - Environmental Profile Editor Team<br>
+<a href="../../community/projects/#python">Python/R</a> - GitHub Actions Data Team<br>
+<a href="../../community/projects/#ux">UX/UI</a> - Community Hotspots Team<br>
+<a href="../../community/projects/#visualization">Data Science</a> - Visualizations Team<br>
+<a href="../../community/projects/#jquery">JQuery</a> - Shared search filters<br>
+<a href="../../community/projects/#impacts">High School</a> - Environmental Impacts Team<br>
+
 
 ## I. React - Environmental Profile Editor Team
 
-Edit entity profiles for emergency response, environmental impacts, goods and services - product environmental declations (), including individual carbon footprints. [View templates](../../io/template/)  
+Edit entity profiles for emergency response, environmental impacts, goods and services - product environmental declations (), including individual carbon footprints. [Learn more, view templates and impact summeries inspired by "nutritional labels"](../../io/template/)  
 
 Edit our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor to save selected Goods and Services in a file called sectors.yml. Saved list will be used for Life Cycle Analysis (LCA) of company and individual carbon footprints. (Our fork will be available shortly, you can create your own fork while we wait for activation.)  
 
