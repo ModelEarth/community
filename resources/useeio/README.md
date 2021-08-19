@@ -1,6 +1,12 @@
 # USEEIO API
 
-View [R Language](../../../io/projects) starter steps in the Industrial Ecology section.  
+We recommend forking the [USEEIO-WIDGETS](https://github.com/USEPA/useeio-widgets) repo to interact with static JSON files generated from the API.  
+Here's our [detailed install notes](../../../io/charts/) for expanding the IO Widgets.  
+
+## R Language
+
+Check out [USEEIOR](https://github.com/USEPA/useeior)  
+And our [Bioeconomy branch of USEEIOR](../../../io/projects) in the Industrial Ecology section.  
 
 ## Python Example
 
