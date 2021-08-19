@@ -1,28 +1,32 @@
 <!-- MOVED TO Community/Challenge/README.md -->
 
-<h3><span style="white-space:nowrap; font-size: 42px; line-height: 1em">Beyond Carbon</span></h3>
+<!-- Was 42px; -->
+<!--
+<h3><span style="white-space:nowrap; font-size: 22px; line-height: 1em">Beyond Carbon</span></h3>
 
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
+-->
 
-<i>A virtual coding challenge to customize our community apps for your community, offering a total of $10,000 in cash awards. This is an official US Federal Challenge event sponsored by the US Environmental Protection Agency, in partnership with the Georgia Center of Innovation for Energy Technology, and in coordination with Code for America.</i>
+<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to customize our <a href="../../io/">Tools for Communities</a>. Presented with Code for America, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Start anytime from now up until <span style="white-space: nowrap;">October 2, 2021.</span></i>
 
-<h2>When</h2>
-Start anytime from now up until the final day, October 2, 2021.
 
-<h3>Event Schedule</h3>
+<h2><b>Work Sessions</b></h2>
 
-<b>Saturday, October 2, 2021</b>  
-10AM to 11AM EST - Introductions, Expand Teams, Setup Walk-Through  
+<b>Saturday, September 25, 2021</b> from 10AM to 12PM EST<br>
+<b>Tuesday, September 28, 2021</b> from 10AM to 12PM EST  
+
+Work sessions are optional, but we encourage you to participate to get a jump on the competition.<br>
+<a href="../../community/challenge/meetups/">View schedule and meeting links</a><br>
+
+<h2><b>Event Schedule</b><br>Saturday, October 2, 2021</h2> 
+10AM to 11AM EST - Introductions, Expand Teams, Walk-Through Entry Creation Steps  
 11AM to 4PM EST - Work Time (open mic from noon to 1pm)  
-4PM to 5:30PM EST - Team Presentations
-6:00PM EST - Awards
+4PM to 6PM EST - Team Presentations followed by Awards
 
-<b>Optional Work Sessions</b><br>
-<a href="../../community/challenge/meetups/">Saturday, September 25, 2021 from 10AM to 12PM EST</a><br>
-<a href="../../community/challenge/meetups/">Tuesday, September 28, 2021 from 10AM to 12PM EST</a><br>
+<a href="registration/" class="btn btn-success">Register to participate</a><br>
 
 <h2>How to Participate</h2>
-1. Register
+1. <a href="registration/">Register Online</a>
 2. Follow the <a href="#introlist">steps to create an entry</a> or work with an existing team to prepare an entry.
 3. Present your entry at the October 2 event at 4PM ET.
 
@@ -44,15 +48,6 @@ You can compete from anywhere in the world. We're building additions to the <a h
 
 <!-- We're combining national and state-level economic data, community resources and planning input from local communities to customize new environmental indicator models to meet&nbsp;community&nbsp;needs. -->  
 
-
-<h2>Register</h2>
-<!-- Also update in community index.html footer -->
-<div style="margin-top:20px">
-<a href="registration/" class="btn btn-success">Register to participate</a><br>
- <!-- <a href="../projects/" class="btn btn-warning">View Project Areas</a> -->
-<a href="meetups" class="btn btn-danger">Meetups and Slack Channels</a>
-</div>
-<br>
 
 <!--
 <b>Our January 2021 Winners</b>
