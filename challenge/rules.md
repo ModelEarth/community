@@ -93,10 +93,18 @@ K-12 teams may focus on presentations using Google Slides, Powerpoint, etc. -->
 # Judging Criteria  
 (relative weight of criteria in parentheses)
 
-- Conforms with Rules for Entries (25%) 
-- Installs easily using documented steps (25%)
-- Visually appealing and supports clear interpretation (25%)
-- Integrates with other location-based data sources or pulls in other community-oriented tools to make the results from widgets more community-relevant (25%)
+- Impact: Does the solution have a real impact for addressing the challenge? (100)
+- Innovation​: Is the solution innovative and creative, with a novel approach? (100)
+- Feasibility​: Is the solution realistic and practical? (100)
+- Implementation: How much progress was made on a real working solution? (100)
+- Conforms with Rules for Entries (100) 
+- Installs easily using documented steps (100)
+- Visually appealing and supports clear interpretation (100)
+- Integrates with other location-based data sources or pulls in other community-oriented tools to make the results from widgets more community-relevant (100)
+
+
+
+
 
 <!--During judging you may receive requests to update your install steps.  
 We&nbsp;recommend having judges try your install in advance.  -->
