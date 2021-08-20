@@ -1,5 +1,5 @@
 
-## I. React - Environmental Profile Editor Team
+## React - Environmental Profile Editor
 
 [Create impact summeries inspired by "nutritional labels"](../../io/template/)  
 Edit entity profiles to include goods and services and individual carbon footprints using OpenEPD YAML.  
