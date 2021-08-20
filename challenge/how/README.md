@@ -7,20 +7,20 @@ Encourage team members to register by providing them with the following link:
 
 ##Fork the "apps" repo and copy one of the community page examples
 
-Change variables in your copied page to match your local communtiy.  
+Change variables in your copied page to match your local community.  
 [Get started with forking GitHub repos](../../../localsite/start/)  
 
-##Identify a location and explore adverse impacts effecting your area
+##Identify a location and explore adverse impacts affecting your area
 
 Use the USEEIO [industry comparison page](https://model.earth/localsite/info/) to identify an issue that relates to your location.  
 
 Choose a state, then choose one or more counties to narrow your search.  
 
-Example: When exploring our city's impact, we saw that the airport was a chief offender. We recognized that our neighborhood's local wastewater was processed near the airport, so we decided to investigate converting "Shit to Fuel" to eliminate the dependency on fossile fuels.  We are looking at Austrailia for inspiration since their experimental wasterwater plant also generates graphene to capture additional carbon.
+Example: When exploring our city's impact, we saw that the airport was a chief offender. We recognized that our neighborhood's local wastewater was processed near the airport, so we decided to investigate converting "Shit to Fuel" to eliminate the dependency on fossil fuels.  We are looking at Australia for inspiration since their experimental wastewater plant also generates graphene to capture additional carbon.
 
 ##Recruit local reps who are directly involved with your issue
 
-Create a page within your app folder the prime local movers for your issue. Reach out to them in advance of the event to get addtional insights for your documentation. If you can't contact because it is the weekend of the event, find other links to document the process to make your vision a reality.    
+Include documentation in your app regarding the prime local movers (influencers) for your issue - including government reps and nonprofit organizers. Reach out to them in advance of the event to get additional insights for your documentation. If you can't contact them because it is the weekend of the event, find other links to document the local steps needed to make your vision a reality.  
 
 ##Select top indicators from the EPA's 20 environmental indicators
 
@@ -35,7 +35,7 @@ Paste the values from the URL hash directly into your [Community App](../../../a
 
 Consider including the positive indicators JOBS and VADD (value-added) to identify which industries contribute the most to prosperity.  
 
-##Prepare code and data processes that contributes to the tools used by other teams.
+##Prepare code and data processes that contribute to the tools used by other teams.
 
 Contributing new sharable code and data processes will help set your team apart and qualify for the larger awards.  
 Check out the [Project Areas](../../../community/challenge/meetups/) for ideas, or create your own custom additions to the [USEEIO widgets code base](../../../io/charts/).  
