@@ -7,7 +7,7 @@
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 -->
 
-<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to customize our <a href="../../io/">Web Apps for Communities</a>. Presented with Code for America, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Start anytime from now up until <span style="white-space: nowrap;">October 2, 2021.</span></i>
+<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to customize our <a href="../../io/">Web Apps for Communities</a>. Presented with Code for America, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.  Start anytime from now up until <span style="white-space: nowrap;">October 2, 2021.</span></i>
 
 
 <h2><b>Work Sessions</b></h2>
