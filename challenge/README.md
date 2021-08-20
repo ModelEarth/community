@@ -7,7 +7,7 @@
 <h1 style="font-weight:300">Sustainable Communities <span style="white-space:nowrap">Web Challenge</span></h1>
 -->
 
-<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to customize our <a href="../../io/">Web Apps for Communities</a>. Presented with <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.  Start anytime from now up until <span style="white-space: nowrap;">October 2, 2021.</span></i>
+<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to customize our <a href="../../io/">Web Apps for Communities</a>. Presented with <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.  Start anytime from <b>now up until <span style="white-space: nowrap;">October 2, 2021.</span></b></i>
 
 
 <h2><b>Work Sessions</b></h2>
@@ -25,7 +25,7 @@ Work sessions are optional, but we encourage you to participate to get a jump on
 
 <a href="registration/" class="btn btn-success">Register to participate</a><br>
 
-<h2>How to Participate</h2>
+<h2><b>How to Participate</b></h2>
 1. <a href="registration/">Register Online</a>
 2. Follow the <a href="#introlist">steps to create an entry</a> or work with an existing team to prepare an entry.
 3. Present your entry at the October 2 event at 4PM ET.
