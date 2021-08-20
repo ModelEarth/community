@@ -5,9 +5,16 @@
 Encourage team members to register by providing them with the following link:  
 [https://model.earth/community/challenge](https://model.earth/community/challenge)  
 
+##Fork the "apps" repo and copy one of the community page examples
+
+Change variables in your copied page to match your local communtiy.  
+[Get started with forking GitHub repos](../../../localsite/start/)  
+
 ##Identify a location and explore adverse impacts effecting your area
 
-Use the USEEIO [industry comparison page](https://model.earth/localsite/info/) to identify an issue that relates to your location.  Choose a state then one or more counties to narrow your search.  
+Use the USEEIO [industry comparison page](https://model.earth/localsite/info/) to identify an issue that relates to your location.  
+
+Choose a state, then choose one or more counties to narrow your search.  
 
 Example: When exploring our city's impact, we saw that the airport was a chief offender. We recognized that our neighborhood's local wastewater was processed near the airport, so we decided to investigate converting "Shit to Fuel" to eliminate the dependency on fossile fuels.  We are looking at Austrailia for inspiration since their experimental wasterwater plant also generates graphene to capture additional carbon.
 
@@ -26,10 +33,18 @@ Paste the values from the URL hash directly into your [Community App](../../../a
 
 ##Weigh the pros and cons of new innovation for your community
 
-Consider including the positive indicators JOBS and VADD (value-added) to identify which industries contribute the most to prosperity.
+Consider including the positive indicators JOBS and VADD (value-added) to identify which industries contribute the most to prosperity.  
+
+##Prepare code and data processes that contributes to the tools used by other teams.
+
+Contributing new sharable code and data processes will help set your team apart and qualify for the larger awards.  
+Check out the [Project Areas](../../../community/challenge/meetups/) for ideas, or create your own custom additions to the [USEEIO widgets code base](../../../io/charts/).  
+Integrate existing code from other open source projects in ways that can be reused by other communities.  
 
 ##Get started early and attend a meetup if you have any questions.
 
 [Upcoming Dates](../../../community/challenge/meetups/)  
 
-[Get started with forking GitHub repos](../../../localsite/start/)  
+Thanks for getting involved, and good luck winning the big prizes!  
+
+
