@@ -38,7 +38,10 @@
 -->
 <body>
 <script>
-  loadMarkdown("README.md", "readmeDiv", "_parent");
+  //loadMarkdown("README.md", "readmeDiv", "_parent");
+  loadMarkdown("profile-editor/README.md", "profileDiv", "_parent");
+  loadMarkdown("github-actions/README.md", "githubDiv", "_parent");
+  loadMarkdown("ux/README.md", "uxDiv", "_parent");
   consoleLog("test")
   // param.startTitle = "Model Earth"; // Trigger header
 </script>
@@ -110,26 +113,64 @@
 <div style="background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; border:0px">
     <div style="max-width:1400px; max-height:300px">
         <div style="display: inline-block;">
-        <a href="https://codeforamerica.org"><img src="../img/logo/code-for-america-and-earth.png" style="float:left; max-height:120px; margin:50px 100px 20px 0"></a>
+
+        <div style="float:left; text-align:left; padding-left:40px">
+            <a href="https://codeforamerica.org"><img src="../img/logo/code-for-america-and-earth.png" style="max-height:120px; margin:50px 100px 0px 0"></a>
+            <h5 style="margin-bottom:0px">Beyond Carbon 2021</h5>
+            <h1 style="margin-top:0px"class="h1-home">Project Areas</h1>
+        </div>
+
         <a href="challenge/"><img src="../img/overview/banner-2.png" class="hideMobile" style="float:left; max-height:300px;"></a>
         </div>
     </div>
 </div>
 
-<div id="sidecolumn"></div>
+<div class="flexmain" style="position:relative;">
 
 <div id="rightcolumn" style="float:right; max-width: 400px;">
     <a class="twitter-timeline" data-tweet-limit="2" href="https://twitter.com/EPA"></a> 
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
+
+
 <div class="content contentpadding litePanel" style="overflow:auto;">
 
-    
-      
+    <h2>Ideas for Web Challenge Entries</h2>
+
+    <a href="../challenge/">Participate</a> individually or with a team.<br><br>
+
     <div style="clear:both; overflow: auto;">
       <div id="readmeDiv"></div>
     </div>
+
+    <a href="../../community/projects/#profile-editor">React</a> - Environmental Profile Editor<br>
+    <a href="../../community/projects/#github-actions">Python/R</a> - GitHub Actions Data Pipeline<br>
+    <a href="../../community/projects/#ux">UX/UI</a> - Community Hotspots Environmental Report (CHER) Design<br>
+    <a href="../../community/projects/#visualization">Data Science</a> - Data Visualizations and Leaflet Maps<br>
+    <a href="../../community/projects/#jquery">JQuery</a> - Shared Search Filters<br>
+    <a href="../../community/projects/#impacts">High School</a> - Environmental Impact Apps<br>
+    <br>
+
+
+    <section id="profile-editor" class="pagecard">
+        <div class="cardstyle">
+          <div id="profileDiv"></div>
+        </div>
+    </section>
+
+    <section id="github-actions" class="pagecard">
+        <div class="cardstyle">
+          <div id="githubDiv"></div>
+        </div>
+    </section>
+
+    <section id="ux" class="pagecard">
+        <div class="cardstyle">
+          <div id="uxDiv"></div>
+        </div>
+    </section>
+
 
     <div class="local" style="float:left; padding-top:0px; clear:both; display:none">
 
@@ -161,11 +202,14 @@
         }
       </script>
 
+      <div id="disqus_thread"></div>
 
     </div>
 
-<div id="disqus_thread"></div>
 </div>
+
+
+</div><!-- /flexmain -->
 
 
 <link rel="stylesheet" href="../css/material_icons.css" />
