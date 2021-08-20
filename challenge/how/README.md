@@ -38,7 +38,7 @@ Consider including the positive indicators JOBS and VADD (value-added) to identi
 ##Prepare code and data processes that contribute to the tools used by other teams.
 
 Contributing new sharable code and data processes will help set your team apart and qualify for the larger awards.  
-Check out the [Project Areas](../../../community/challenge/meetups/) for ideas, or create your own custom additions to the [USEEIO widgets code base](../../../io/charts/).  
+Check out the [Project Areas](../../../community/projects/) list for ideas, or create your own custom additions to the [USEEIO widgets code base](../../../io/charts/).  
 Integrate existing code from other open source projects in ways that can be reused by other communities.  
 
 ##Get started early and attend a meetup if you have any questions.
