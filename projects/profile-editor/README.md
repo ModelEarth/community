@@ -1,7 +1,7 @@
 
 ## React - Environmental Profile Editor
 
-[Create impact summeries inspired by "nutritional labels"](../../io/template/)  
+[Create impact summaries inspired by "nutritional labels"](../../io/template/)  
 Edit entity profiles to include goods and services and individual carbon footprints using OpenEPD YAML.  
 
 Edit our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor to save selected Goods and Services in a file called sectors.yml.  See Code for America version for sample of saving file directly on GitHub, but allow form to be viewed before logging into GitHub.  
@@ -17,7 +17,7 @@ Saved list will be used for Life Cycle Analysis (LCA) of company and individual 
 1. Save the Goods and Services (skillbank) to the GitHub Repo in the sectors.yml file.  
 1. Provide fields for indicating when an entity's Goods and Services are more sustainable than the average provider.  
 1. Include a field for setting the year and save prior years as: sectors-2020.yml, etc.  
-1. Store additional entiy info for organizations and individuals in a file called profile.yml.  
+1. Store additional entity info for organizations and individuals in a file called profile.yml.  
 
 More about Code for America's [Public Code Pusher](https://brigade.cloud/projects/publiccode-helper/).  
 
