@@ -1,10 +1,10 @@
 
 ## React - Environmental Profile Editor
 
-[Create impact summaries inspired by "nutritional labels"](../../io/template/)  
-Edit entity profiles to include goods and services and individual carbon footprints using OpenEPD YAML.  
+We'll be updating a metadata editing process created by Italy to edit [impact summaries inspired by "nutritional labels."](../../io/template/)  
+The existing YAML editing interface will be updated to edit impact profiles for communities, companies and individuals.  
 
-Edit our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor to save selected Goods and Services in a file called sectors.yml.  See Code for America version for sample of saving file directly on GitHub, but allow form to be viewed before logging into GitHub.  
+Our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor will save settings in a file residing on GitHub using Code for America's version for an example. Our update will allow the form to be viewed before logging into GitHub.  
 
 Saved list will be used for Life Cycle Analysis (LCA) of company and individual footprints.
 
