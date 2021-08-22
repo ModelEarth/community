@@ -6,7 +6,7 @@ The existing YAML editing interface will be updated to edit impact profiles for 
 
 Our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor will save settings in a file residing on GitHub using Code for America's version for an example. Our update will allow the form to be viewed before logging into GitHub.  
 
-Saved list will be used for Life Cycle Analysis (LCA) of company and individual footprints.
+Saved list will be used for Life Cycle Analysis (LCA) of company, community and individual footprints.
 
 [View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently, [view schema](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/schema.core.html#top-level-keys-and-sections)  
 [View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Initial login requirement to be [removed](https://github.com/codeforamerica/publiccode-pusher/issues/13)  
