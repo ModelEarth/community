@@ -27,7 +27,7 @@ Work sessions are optional, but we encourage you to participate to get a jump on
 
 <h2><b>How to Participate</b></h2>
 1. <a href="registration/">Register Online</a>
-2. Follow the <a href="#introlist">steps to create an entry</a> or work with an existing team to prepare an entry.
+2. Follow the <a href="#introlist">steps to create an entry</a>. Work as an individual, join a team, or form a new local team.
 3. Present your entry at the October 2 event at 4PM ET.
 
 <h2>Eligibility</h2>
