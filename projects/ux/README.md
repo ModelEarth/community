@@ -3,7 +3,7 @@
 
 ###1. Community Hotspot Environmental Report (CHER)
 
-Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data for local chloroform maps driving USEEIO widgets. Incorporate [Impact Profiles](../../io/template/).
+Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data with [chloroform&nbsp;maps](../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50) to drive USEEIO impact widgets. Incorporate [Impact Profiles](../../io/template/).
 
 
 ###2. Last Airbender Interface
