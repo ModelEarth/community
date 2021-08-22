@@ -40,7 +40,9 @@
 <script>
   //loadMarkdown("README.md", "readmeDiv", "_parent");
   loadMarkdown("profile-editor/README.md", "profileDiv", "_parent");
+  loadMarkdown("io/README.md", "ioDiv", "_parent");
   loadMarkdown("github-actions/README.md", "githubDiv", "_parent");
+  loadMarkdown("python/README.md", "pythonDiv", "_parent");
   loadMarkdown("ux/README.md", "uxDiv", "_parent");
   loadMarkdown("maps/README.md", "mapsDiv", "_parent");
   consoleLog("test")
@@ -148,43 +150,73 @@
     </div>
 
     <a href="../../community/projects/#profile-editor">React</a> - Environmental Profile Editor<br>
+    <a href="../../community/projects/#io">React</a> - Inflow-Outflow Charts<br>
     <a href="../../community/projects/#github-actions">Python/R</a> - GitHub Actions Data Pipeline<br>
+    <a href="../../community/projects/#python">Python</a> - Machine Learning<br>
     <a href="../../community/projects/#ux">UX/UI</a> - Community Hotspots Environmental Report (CHER) Design<br>
-    <a href="../../community/projects/#visualization">Data Science</a> - Data Visualizations and Leaflet Maps<br>
-    <a href="../../community/projects/#jquery">JQuery</a> - Shared Search Filters<br>
-    <a href="../../community/projects/#maps">Maps</a> - Data Visualization<br>
+    <a href="../../community/projects/#maps">Maps</a> - Data Visualizations<br>
     <a href="../../community/projects/#ux">High School</a> - Environmental Impact Apps<br>
     <br>
 
     Challenge entries may integrate custom updates to shared processes.<br>
-    All entries should add custom settings to their <a href="../../apps/">community portal</a> to display <a href="../../io/charts/">USEEIO widgets</a>.<br>
+    All entries should add configurations to their <a href="../../apps/">community portal</a> to display <a href="../../io/charts/">USEEIO widgets</a>.<br>
 
     <h4>Immediate Project Need</h4>
-    Create a node script that pulls three <a href="">ModelEarth repos</a> (localsite, io and apps) into one local "webroot".<br><br>
+    Create a node script that pulls three <a href="../../localsite/start/">ModelEarth repos</a> (localsite, io and apps) into one local "webroot".<br><br>
 
-    <section id="profile-editor" class="pagecard">
+
+    <section id="profile-editor">
+    <div id="profile-editor" >
+    <div class="pagecard">
         <div class="cardstyle">
           <div id="profileDiv"></div>
         </div>
+    </div>
     </section>
 
-    <section id="github-actions" class="pagecard">
+    <section id="io">
+    <div id="profile-editor" >
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="ioDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="github-actions">
+    <div class="pagecard">
         <div class="cardstyle">
           <div id="githubDiv"></div>
         </div>
+    </div>
     </section>
 
-    <section id="ux" class="pagecard">
+    <section id="python">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="pythonDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="ux">
+    <div class="pagecard">
         <div class="cardstyle">
           <div id="uxDiv"></div>
         </div>
+    </div>
     </section>
 
-    <section id="maps" class="pagecard">
+    <section id="maps">
+    <div class="pagecard">
         <div class="cardstyle">
           <div id="mapsDiv"></div>
         </div>
+    </div>
     </section>
+
+
+
 
     <div class="local" style="float:left; padding-top:0px; clear:both; display:none">
 
@@ -219,6 +251,16 @@
       <div id="disqus_thread"></div>
 
     </div>
+
+    <div style="clear:both"></div>
+
+    <a href="../../localsite/info/input/">Contact us</a> for additional details and to avoid overlaps. 
+    <br><br>
+
+    <!-- Schedule & Rules -->
+    <a href="../challenge/" class="btn btn-primary">About Challenge</a>
+    <a href="../challenge/registration/" class="btn btn-success">Register Online</a>
+    <a href="../challenge/meetups/" class="btn btn-danger">Meetups</a>
 
 </div>
 
