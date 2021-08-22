@@ -296,5 +296,3 @@ What's Wrong with Open-Data Sites--and How We Can Fix Them. Vast amounts of usef
 <a href="../challenge/meetups/" class="btn btn-danger">Meetups</a>
 
 </div>
-
-<br><br>

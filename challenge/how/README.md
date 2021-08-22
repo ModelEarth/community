@@ -18,18 +18,20 @@ Choose a state, then choose one or more counties to narrow your search.
 
 Example: When exploring our city's impact, we saw that the airport was a chief offender. We recognized that our neighborhood's local wastewater was processed near the airport, so we decided to investigate converting "Shit to Fuel" to eliminate the dependency on fossil fuels.  We are looking at Australia for inspiration since their experimental wastewater plant also generates graphene to capture additional carbon.
 
-##Recruit local reps who are directly involved with your issue
+##Contact local reps who are involved with your issue
 
-Include documentation in your app regarding the prime local movers (influencers) for your issue - including government reps and nonprofit organizers. Reach out to them in advance of the event to get additional insights for your documentation. If you can't contact them because it is the weekend of the event, find other links to document the local steps needed to make your vision a reality.  
+Include documentation in your app regarding the prime local movers (influencers) for your issue. Include government reps and nonprofit organizers. Reach out to them in advance of the event to get additional insights for your documentation. If you can't contact them because it is the weekend of the event, find other links to document the local steps needed to make your vision a reality.  
 
-##Select top indicators from the EPA's 20 environmental indicators
+##Select top indicators from the EPA's 20 environmental areas
 
-Choose environmental impact indicators that match your theme.  
+Choose 1 to 10 environmental impact indicators that match your theme.  
 
 For example, clicking the "Air" button on the industry comparison page returns:  
 [set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS](../../../localsite/info/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS)
 
-Paste the values from the URL hash directly into your [Community App](../../../apps/) portal page.  
+Paste the values from the URL hash into your [Community App](../../../apps/) portal page.  
+
+Your indicators you pre-select will determine the order of the commodity sectors listed on your portal page.  
 
 ##Weigh the pros and cons of new innovation for your community
 
