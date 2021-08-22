@@ -3,7 +3,7 @@
 
 ###1. Community Hotspot Environmental Report (CHER)
 
-Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data with [chloroform&nbsp;maps](../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50) to drive USEEIO impact widgets. Incorporate [Impact Profiles](../../io/template/).
+Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data with [chloroform&nbsp;maps](../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50) to drive USEEIO impact widgets. Incorporate [Impact Profiles](../../io/template/) and add more html rows by combing layout from [2 sample labels](../../io/template/img/2-labels.png).
 
 
 ###2. Last Airbender Interface
@@ -19,7 +19,7 @@ Great for students
 </p>
 
 <p>
-Optionally, start with our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.<!-- (The older category set json resides in docs/static/json thanks to Alikah )--> We've documented  <a href="../aws/amplify/">AWS Amplify set up steps</a>.
+Optionally, start with our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.<!-- (The older category set json resides in docs/static/json thanks to Alikah )--> We've documented  <a href="../../aws/amplify/">AWS Amplify set up steps</a>.
 
 <!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 -->
@@ -28,7 +28,7 @@ Optionally, start with our blank React <a href="https://github.com/modelearth//a
 
 Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a> you can use to relate the four “nation” categories to characters.<br><br>
 
-Get creative! Explore other movie/book themes and share how impact awareness could be an integral part of all forms of news and entertainment.
+Get creative! Explore other movie/book themes and share how impact awareness could be an integral part of multiple forms of  entertainment.
 
 
 </div><br>

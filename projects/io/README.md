@@ -50,16 +50,13 @@ These are posted as [USEEIO-widget GitHub issues](https://github.com/USEPA/useei
 - Reduce top of popup by 50px. (It currently gets covered by page header).
 - Rename to "Show Selected Only" and "Show Selected First"
 - Place a line above "Alphabetical"
-- If easy, allow rest of page to still scroll when the popup is open. 
-([Issue 57](https://github.com/USEPA/useeio-widgets/issues/57))
+- Figure out how to allow rest of page to still scroll when the indicator popup is open on the center inflow-outflow column. 
+<!-- ([Issue 57](https://github.com/USEPA/useeio-widgets/issues/57)) closed -->
 
-
-- Display as: $0.877 per $1 spent 
-([Issue 58](https://github.com/USEPA/useeio-widgets/issues/58))  
-
-
+<!--
 Updates to heatmap column sorting 
 ([Issue 52](https://github.com/USEPA/useeio-widgets/issues/52))  
+-->
 
 Action Menu
 
