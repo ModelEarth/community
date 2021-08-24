@@ -14,7 +14,7 @@
 
 # Judging Criteria  
 
-All entries must conform with rules stated above, and must include well-document setup steps.
+All entries must conform with rules stated above, and must include well-documented setup steps.
 
 Judges will evaluate your entry based on four main criteria:
 
