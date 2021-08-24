@@ -1,6 +1,6 @@
 **How will your community move beyond carbon and into a net zero future?**
 
-<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to contribute to our <a href="../../io/">Web Portals for Communities</a>. Presented with <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.  <b>Start anytime from now up until <span style="white-space: nowrap;">October 2, 2021.</span></b></i>
+<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to contribute to our <a href="../../io/">Web Portals for Communities</a>. Presented with <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.  <b>Start anytime from now up until the finale on <span style="white-space: nowrap;">October 2, 2021.</span></b></i>
 
 **The challenge:** Create a community portal (consisting of one or more web pages) that visualizes your community's path to a sustainable, net zero future. A community can be your neighborhood, town, city, county, or state. Use data and widgets from the EPA and other sources to share your vision for a sustainable community.
 
