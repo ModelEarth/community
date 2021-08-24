@@ -1,84 +1,6 @@
-
 # Rules for Entries
 
-<!--
-Supply chain "License to Operate" with the support of the community.
-
-### Code for Atlanta Projects  
-
-Slack #epa
-
-<b>1. Teams</b>: Brainstorm Projects - [Review maps and charts](tools/), [Review inventory exchange](tools/#places)   
-
-<b>2. GitHub</b>: Experiment with [GitHub Packages](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages#supported-clients-and-formats)  
-  Is it possible to pull just the [community](https://github.com/datascape/community) "tools" folder into [model.georgia](https://github.com/datascape/model.georgia) repo?   
-
-<b>3. Leaflet</b>: [Place a round image](https://github.com/ilyankou/Leaflet.IconMaterial/issues/3) over a [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) map point, which allows for color assignment. [Test here](/community/hubs).   
--->
-
-
-<!--
-	https://www.wrld3d.com/wrld.js/latest/docs/leaflet/L.DivIcon/
-
- 
-
-[Community Profiles: Industry Evaluator](../../localsite/info/)  
-[Starter samples](../../community/start/) <!--and [datasets](https://github.com/modelearth/community) and 
-[Embeddable IO Charts](../../io/charts) using the [USEEIO&nbsp;API](https://github.com/usepa/useeio_api/wiki/Use-the-API).  
--->
-
----
-<!--
-### Volunteer Projects
-
-We need assistance pre-processing lat/lon centers for zip codes, cities and counties - for all states (and countries).  
-
-We'll use these for the [Farm Fresh Produce Map location filters](impact/?show=farmfresh&design=1) which are also used for Covid-19 supply maps.
--->
-
-<!--### Form a team or compete as an individual-->
-
-<!--
-Join a project at <a href="https://www.meetup.com/codeforatlanta/">Code for Atlanta</a> with [Code for America](https://www.codeforamerica.org/) 
--->
-
-<!--
-Teams will collaborate using one or more of the following:  
-
-<b>Detached Frontends</b>
-- Vanilla JS and JQuery within the current [community repo](start)
-- [RealWorld](https://neighborhood.org/realworld) - React, Vue, More  
-
-- Extensions of [datausa.io](https://datausa.io) - Python, React and D3
-- Other detached frontends  
--->
-
-<!--
-<b>Data Backends (optional alternative to widgets)</b>
-- Census API (see our [sample Python](../info/#go=dataprep)) and USEEIO API  
-- [Google Sheets REST](https://neighborhood.org/editor)  
-- [Wazimap CensusReporter - DJango Python3](../../community/resources/censusreporter)  
-- Other collaboration platforms - Please review with judges in advance 
-
-
-- [Umbraco - .NET used by Chapel Hill and San Francisco](https://umbraco.com/products/umbraco-heartcore/)  
--->
-
-<!--
-<b>Trust Level Services</b>
-- Google Cloud websockets
-- Other Auth services  
--->
-
-<!--
-Our developers are available to help guide participants through placing USEEIO widgets on any entry that has locations (states or counties) or sectors (commodities or naics codes).
-
-
-Some data collection entries and K-12 teams may opt not to use GitHub.  
-K-12 teams may focus on presentations using Google Slides, Powerpoint, etc. -->
-
-
-- Entries must be a community site/page based on modelearth's localsite framework. See the Getting Started Steps for details.    
+- Entries must be a community portal based on modelearth's localsite framework. See the [Getting Started steps](../../localsite/start/) for details.    
 - Entries should be maintained in one or more public github repositories. 
 - Entries should be easy to integrate with other projects.  
 - Please avoid using CMS content systems like Wix and WordPress.  
@@ -87,29 +9,23 @@ K-12 teams may focus on presentations using Google Slides, Powerpoint, etc. -->
   (The "[localsite](../../localsite/)" repo provides a process for displaying readme files.). 
 - Detached frontends should have an index.html file in their root.
 - Detached frontends should work under any domain when hosted as a Github fork.  
-- Static frontend may be hosted for free using GitHub
-- If your entry is associated with additional data, provide free or very affordable options for hosting associated data <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
+- Static frontend may be hosted for free using GitHub.
+- If your entry is associated with additional data, provide free or very affordable options for hosting associated data. <!--API's and Websockets (Over $20/month, Under $20/month, Free!)-->  
 
 # Judging Criteria  
-(relative weight of criteria in parentheses)
 
-- Impact: Does the solution have a real impact for addressing the challenge? (100)
-- Innovation​: Is the solution innovative and creative, with a novel approach? (100)
-- Feasibility​: Is the solution realistic and practical? (100)
-- Implementation: How much progress was made on a real working solution? (100)
-- Conforms with Rules for Entries (100) 
-- Installs easily using documented steps (100)
-- Visually appealing and supports clear interpretation (100)
-- Integrates with other location-based data sources or pulls in other community-oriented tools to make the results from widgets more community-relevant (100)
+All entries must conform with rules stated above, and must include well-document setup steps.
 
+Judges will evaluate your entry based on four main criteria:
 
+- **Impact**: Does the entry have a real-world impact for addressing the challenge?
+- **Innovation**: Is the entry innovative and creative, taking a novel approach?
+- **Clarity**: Is the entry easy to understand and accessible? Does it present information clearly?
+- **Implementation**: How much progress was made on a working solution?
 
+A bonus will be given for:
 
-
-<!--During judging you may receive requests to update your install steps.  
-We&nbsp;recommend having judges try your install in advance.  -->
-
-<!-- <a href="registration/">Register to participate</a> | -->
+- **Integration**: Does the entry integrate with other data sources in a community-relevant way?
 
 Send questions by [posting an issue on GitHub](https://github.com/modelearth/community/issues) or [Contact Us Online](../../localsite/info/input/) 
 <br>
