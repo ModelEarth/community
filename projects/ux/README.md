@@ -3,7 +3,10 @@
 
 ###1. Community Hotspot Environmental Report (CHER)
 
-Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data with [chloroform&nbsp;maps](../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50) to drive USEEIO impact widgets. Update our [Impact Profile Label Samples](../../io/template/) and add additional rows that draw from [two sample labels](../../io/template/img/2-labels.png). Collaborate with coders to drive label display using client-side Javascript.
+Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data with [chloroform&nbsp;maps](../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50) to drive USEEIO impact widgets. Update our [Impact Profile Label Samples](../../io/template/) to expand full page with graphic images that convey impacts. (Ideas: 5 stars, faces, green or burning earth, Last Airbender symbols, etc. The more options the better.)  
+
+Collaborate with coders to drive label display using client-side Javascript.  
+Design an expanded label interface that would work well as a video overlay for use in entertainment.  
 
 
 ###2. Last Airbender Interface
