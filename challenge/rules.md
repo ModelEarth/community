@@ -1,6 +1,6 @@
 # Rules for Entries
 
-- Entries must be a community portal based on modelearth's localsite framework. See the [Getting Started steps](../../localsite/start/) for details.    
+- Entries must include a community page using the modelearth localsite framework and IO widgets. See the [Getting Started steps](../../localsite/start/) for details.    
 - Entries should be maintained in one or more public github repositories. 
 - Entries should be easy to integrate with other projects.  
 - Please avoid using CMS content systems like Wix and WordPress.  
