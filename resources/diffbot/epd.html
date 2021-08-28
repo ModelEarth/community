@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
+<meta name="robots" content="noindex, nofollow">
+<title>DiffBot JSON API</title>
+
+<!-- CSV reader sample by Mingsong Hu
+	http://bl.ocks.org/AMDS/4a61497182b8fcb05906
+
+	Info about reading files and COMBINING multiple sources
+	http://learnjsdata.com/read_data.html
+-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if !IE]><!-->
+<style>
+* { 
+  margin: 0; 
+  padding: 0; 
+ }
+ body { 
+   font: 14px/1.4 Georgia, Serif; 
+ }
+#page-wrap {
+  margin: 50px;
+}
+p {
+ margin: 20px 0; 
+}
+
+
+.level2 {
+	
+}
+.level3 {
+	paddingX:20px;
+	borderX:1px solid #ccc;
+}
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+}
+th { 
+	background: #333; 
+	color: white; 
+	font-weight: bold; 
+	cursor: s-resize;
+	background-repeat: no-repeat;
+    background-position: 3% center;
+}
+td, th { 
+	padding: 6px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+}
+
+th.des:after {
+  content: "\21E9";
+}
+
+th.aes:after {
+  content: "\21E7";
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:before {
+	  content: attr(data-th) ": ";
+      font-weight: bold;
+      width: 6.5em;
+      display: inline-block;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	body { 
+		padding: 0; 
+		margin: 0; 
+		width: 320px; }
+	}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	body { 
+		width: 495px; 
+	}
+}
+
+</style>
+<!--<![endif]-->
+
+<script type="text/javascript" src="../../js/d3/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
+<link rel="stylesheet" href="../../css/community.css" />
+<link rel="stylesheet" href="../../../localsite/css/base.css" />
+<script type="text/javascript">
+
+$(document).ready(function () {
+	//var zip = param["zip"] || "30318";
+	var zip = param.zip;
+	var quantity = 20; // Bug, 30318 is not loading.
+	$('.ziptext').text(zip);
+	//if(param["zip"]){
+	//  	zip = param["zip"]
+	//}
+
+	// Returns: blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource
+	//var url = "https://kg.diffbot.com/search/?query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+&from=0&size=5&token=31c80e03058e4f5b86585fb9e97640a6&active_tab=visual)"
+	
+	// General Mills - Returns 3
+	//var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=3&from=0&query=type%3AOrganization%20name%3A%22General%20Mills%22";
+	
+	var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
+
+	// Currently commented out in localsite.js
+	// Adjust map page too if adding.
+	selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
+	
+	if (!param.zip) {
+		$('#pageTitle').html("Environmental Product Declaration (EPD)");
+		// NASA images and videos
+		url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&hd=True&count=2"; // &count=1
+		selected_array = ["date","explanation","url","hdurl"]; // "title"
+	}
+
+	// Building Transparency - CORS error
+	url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=25&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-FL&epd__date_validity_ends__gt=2021-08-24";
+
+	//console.log(url)
+
+    d3.json(url).then(function(json,error) {
+    	var fullHtml = '';
+    	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
+    		for (a in json) {
+    			fullHtml += "<div class='level1'>" + json[a].title + "</div>\n";
+    			for (b in json[a]) {
+    				fullHtml += formatRow(b,json[a][b],1); // Resides in localsite.js
+    			}
+    		}
+    	} else {
+    		if (!json.data) {
+    			json.data = json; // For NASA
+    		}
+			for (a in json.data) { // An object. a key is 0,1,2,3,..
+
+	          fullHtml += "<div class='level1'>" + json.data[a].name + "</div>\n";
+	          for (b in json.data[a]) {//b is value like allNames: ["AirWatch"], so b is key for  ["AirWatch"]
+
+	          	addHtml = "";
+	          	
+	          	addHtml += formatRow(b,json.data[a][b],1); // Resides in localsite.js
+	         
+	      		//resultFull.innerHTML = resultFull.innerHTML + addHtml;
+	      		fullHtml += addHtml;
+	          }
+	      	}
+	    }
+      	resultFull.innerHTML = fullHtml;
+      	result.innerHTML = '';
+
+      	// After results added to innerHTML
+	  	var anchors = document.getElementsByClassName('level1');
+        for(var i = 0; i < anchors.length; i++) {
+            var anchor = anchors[i];
+            //if((/\blevel1\b/).match(anchor.className)) {
+                anchor.onclick = function() {
+
+                	//alert("clicked")
+                    // These need to be revised to open current section
+
+                    var arrayOfElements=document.getElementsByClassName('level2');
+					var lengthOfArray=arrayOfElements.length;
+
+					for (var i=0; i<lengthOfArray;i++){
+					    arrayOfElements[i].classList.remove('hidden');
+					}
+
+					var arrayOfElements3=document.getElementsByClassName('level3');
+					var lengthOfArray3=arrayOfElements3.length;
+
+					for (var i=0; i<lengthOfArray3;i++){
+					    arrayOfElements3[i].classList.remove('hidden');
+					}
+
+					// At time of development there was not a level4 in DiffBot - A precaution
+					var arrayOfElements4=document.getElementsByClassName('level4');
+					var lengthOfArray4=arrayOfElements4.length;
+
+					for (var i=0; i<lengthOfArray4;i++){
+					    arrayOfElements4[i].classList.remove('hidden');
+					}
+
+                }
+            //}
+        }
+
+        if (error) throw error;
+        console.log(json);
+    });
+});
+</script>
+
+</head>
+
+
+<body>
+
+<div id="page-wrap">
+
+	<h1 id="pageTitle"><span class="ziptext"></span></h1>
+	<!--
+	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
+	-->
+	<div id="result">Loading...<br></div>
+	<div id="resultFull"></div>
+
+</div>
+
+
+</body>
+
+</html>
