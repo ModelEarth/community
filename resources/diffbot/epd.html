@@ -165,32 +165,27 @@ $(document).ready(function () {
 	// Returns: blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource
 	//var url = "https://kg.diffbot.com/search/?query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+&from=0&size=5&token=31c80e03058e4f5b86585fb9e97640a6&active_tab=visual)"
 	
-	// General Mills - Returns 3
-	//var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=3&from=0&query=type%3AOrganization%20name%3A%22General%20Mills%22";
-	
-	var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
 
-	// Currently commented out in localsite.js
-	// Adjust map page too if adding.
-	selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
-	
-	if (!param.zip) {
-		$('#pageTitle').html("Environmental Product Declaration (EPD)");
-		// NASA images and videos
-		url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&hd=True&count=2"; // &count=1
-		selected_array = ["date","explanation","url","hdurl"]; // "title"
-	}
 
 	// Building Transparency - CORS error
 	url = "https://buildingtransparency.org/api/materials?page_number=1&page_size=25&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-FL&epd__date_validity_ends__gt=2021-08-24";
 
+	selected_array = ["created_on","updated_on","description","image","concrete_compressive_strength_28d","cementitious","concrete_air_entrain","concrete_co2_entrain","concrete_self_consolidating","white_cement","plc","lightweight density declared_unit","mass_per_declared_unit","gwp","gwp_z","gwp_confirmed","gwp_per_category_declared_unit","pct80_gwp_per_category_declared_unit","gwp_per_kg","conservative_estimate","best_practice","biogenic_embodied_carbon","biogenic_embodied_carbon_z","use_stored_carbon","stored_carbon","stored_carbon_z","industry_standards","manufacturer","plant_or_group","epd_id","open_xpd_uuid","category"];
+
 	//console.log(url)
 
-    d3.json(url).then(function(json,error) {
+	// You can also use d3 fetch 
+	// https://stackoverflow.com/questions/59307256/fetch-json-data-using-authorization-header-in-d3-v5
+
+    d3.json(url, {
+	  headers: new Headers({
+	    'Authorization' : 'Bearer 204ad15687571d9c62bdfa780526b1514c090f68'
+	  }),
+	}).then(function(json,error) {
     	var fullHtml = '';
     	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
     		for (a in json) {
-    			fullHtml += "<div class='level1'>" + json[a].title + "</div>\n";
+    			fullHtml += "<div class='level1'><b>Product ID:</b> " + json[a].id + "</div>\n";
     			for (b in json[a]) {
     				fullHtml += formatRow(b,json[a][b],1); // Resides in localsite.js
     			}
