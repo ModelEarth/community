@@ -31,6 +31,13 @@
 <script>
     $(document).ready(function () {
         // 401 error on localhost, was a CORS error before Phil added model.earth
+
+        $.ajaxSetup({
+          headers : {
+            'Authorization' : 'Bearer 204ad15687571d9c62bdfa780526b1514c090f68'
+          }
+        });
+
         $.getJSON("https://buildingtransparency.org/api/materials?page_number=1&page_size=25&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-FL&epd__date_validity_ends__gt=2021-08-24", function (data) {
             var arrItems = [];      // THE ARRAY TO STORE JSON ITEMS.
             $.each(data, function (index, value) {
