@@ -516,17 +516,25 @@ iframe {
 }
 
 /* json to html display */
+.json_to_html_table {
+  margin-bottom: 30px; /* not working */
+}
 .titlecell {
   border-top: 1px solid #ddd;
   margin-top:5px;
   float:left;
   clear:both;
   min-width: 200px;
+  font-weight: 500;
+  padding-left: 6px;
+  background-colorX: #bbb;
 }
 .rightcell {
   border-top: 1px solid #ddd;
   margin-top:5px;
   overflow: auto;
+  font-weight: 350;
+  color: #000;
 }
 .rightlogo {
   width:100%;
@@ -547,6 +555,13 @@ iframe {
 }
 .bucketDesc {
   white-space: nowrap;
+}
+
+.json_to_html_table .titlecell:first-of-type {
+  border-top: 0px #fff solid;
+}
+.json_to_html_table .rightcell:first-of-type {
+  border-top: 0px #fff solid;
 }
 
 @media (max-width: 800px) {
