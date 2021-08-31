@@ -1,6 +1,8 @@
 **How will your community move beyond carbon and into a net zero future?**
 
-<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to create <a href="../../io/">Web Pages for Communities</a> to explore local environmental impacts and innovations. Presented with <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.  <b>Start anytime from now up until the finale on <span style="white-space: nowrap;">October 2, 2021.</span></b></i>
+<i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to create <a href="../../io/">Web Pages for Communities</a> to explore local environmental impacts and innovations. Presented with <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.
+
+<b>Start anytime from now up until the finale on <span style="white-space: nowrap;">October 2, 2021.</span></b></i>
 
 **The challenge:** Create a community page that visualizes your community's path to a sustainable, net zero future. A community can be your neighborhood, town, city, county, region or state. Use data and widgets from the EPA and other sources to share your vision for a sustainable community.
 
@@ -14,14 +16,14 @@
 
 <h2><b>Work Sessions</b></h2>
 
-<b>Saturday, September 25, 2021</b> from 10AM to 12PM ET<br>
+<b>Saturday, September 25, 2021</b> from 10AM to 12PM ET
 <b>Tuesday, September 28, 2021</b> from 10AM to 12PM ET  
 
 Work sessions are optional, but we encourage you to participate to get a jump on the competition.
 
 <a href="../../community/challenge/meetups/">View full schedule and meeting links.</a><br>
 
-<h2><b>Finale Event Schedule</b><br>Saturday, October 2, 2021</h2> 
+<h2><b>Finale Event Schedule</b><br>Saturday, October 2, 2021</h2>
 10AM to 11AM ET - Introductions, Expand Teams, Walk-Through Entry Creation Steps  
 11AM to 4PM ET - Work Time (open mic from noon to 1pm)  
 4PM to 6PM ET - Team Presentations followed by Awards
