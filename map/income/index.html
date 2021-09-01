@@ -242,7 +242,8 @@ var promises = [
   Promise.all(promises).then(ready)
 
   function ready([us]) {
-
+    console.log("unemployment.get 01001: " + unemployment.get("01001"))
+    console.log("unemployment object length: " + Object.keys(unemployment).length);
     // County shapes
     svg.append("g")
       .attr("class", "counties")

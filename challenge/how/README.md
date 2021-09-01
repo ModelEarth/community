@@ -1,4 +1,4 @@
-#How to Prepare a Winning Entry
+#How to Create a Winning Entry
 
 ##Start early and recruit talent for your team
 
