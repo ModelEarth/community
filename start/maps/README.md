@@ -15,7 +15,7 @@ The localsite/map/index.html page is loaded as a template.
 CfA Taxonomy: http://bluecompass.org/cfa/taxonomy2.html
 democracy lab index: https://www.democracylab.org/api/projects/?page=1 -->
 
-## [US Income (choropleth map)](../../map/income)
+## [US Income by County (choropleth map)](../../map/income)
 ## [Industry Mix (zip codes)](../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)
 ## [Sets of Counties (counties)](counties/counties.html)
 ## [Driving Tour (routing)](../routing)
