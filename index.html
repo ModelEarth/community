@@ -112,6 +112,21 @@ local environmental issues and innovations." />
         display: none;
     }
 }
+@media (max-width: 600px) {
+    .narrowGrey {
+        background-color: #ddd;
+    }
+    .topcolumns > .pageColumn {
+      padding-left:30px;
+      padding-right:30px;
+    }
+    .content {
+      padding: 0px;
+    }
+    .contentpadding {
+      padding: 0px;
+    }
+}
 </style>
 <div id="log_display" style="display:none"></div><!-- a work in progress -->
 
@@ -130,7 +145,7 @@ local environmental issues and innovations." />
               <div style="float:left">
                   <div class="hero-text" style="padding:30px 45px 18px 0; text-align: right;">
 
-                      <img src="img/logo/epa-circle.png" style="width:100%;max-width:145px"><br>                     
+                      <img src="img/logo/epa-circle.png" class="hideMobile" style="width:100%;max-width:145px; margin-bottom:15px">                     
 
                   </div>
 
@@ -147,15 +162,15 @@ local environmental issues and innovations." />
             <div style="font-size:15px;line-height: 20px; clear:both">
 
               <div style="font-size:24px; line-height: 1.2em; font-weight:600">
-                Sustainable Communities Web Challenge
+                Sustainable Communities Web&nbsp;Challenge
               </div><br>
 
-              <div style="font-size:20px; line-height: .5em;">Saturday, Oct 2, 2021 &ndash; 10AM to 6PM ET</div>
+              <div style="font-size:20px; line-height: 1.2em;">Saturday, Oct 2, 2021 &ndash; 10AM&nbsp;to&nbsp;6PM&nbsp;ET</div>
               <br>
 
-              <div >
-                Join us in creating online tools for communities focused on<br>
-                local environmental issues and innovations. <a href="challenge/">Work sessions Sept 25 and 28</a>
+              <div style="padding-bottom:20px">
+                Join us in creating online tools for communities focused on<br class="hideMobile">
+                local environmental issues and innovations. <a href="challenge/">Work sessions Sept&nbsp;25&nbsp;and&nbsp;28</a>
               </div>
 
             </div>
@@ -171,7 +186,7 @@ local environmental issues and innovations." />
 
 <div style="clear:both; background-color:#fff; min-height:250px">
 
-  <div class="content contentpadding" style="padding-top:30px; max-width: 1230px">
+  <div class="topcolumns content contentpadding" style="padding-top:30px; max-width: 1230px">
 
 
     <div class="pageColumn">
@@ -190,7 +205,7 @@ local environmental issues and innovations." />
       </div>
     </div>
 
-    <div class="pageColumn">
+    <div class="pageColumn narrowGrey">
       <div class="pageColumnInside">
 
       <h2>$10,000 in Awards</h2>
