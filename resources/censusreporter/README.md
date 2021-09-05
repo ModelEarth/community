@@ -1,7 +1,7 @@
 
 # Census Reporter  
 
-We'll be upgrading [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-extended input-output](../../../io/charts/) widgets 
+We could upgrade [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-extended input-output](../../../io/charts/) widgets 
 and [social safety net tools](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
 
 [Our Python 3 Fork](https://github.com/modelearth/map)  

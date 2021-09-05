@@ -1,6 +1,8 @@
 
 ## GitHub Actions Data Pipeline
 
+[Learn about our Data Setup](../../localsite/info/data) and view a sample dataset display using Tabular.
+
 We'll be developing a Python pipeline using [GitHub Actions](https://docs.github.com/en/actions) to add support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
 
 Updates for [Farm Fresh - Federal USDA location data](../farmfresh) on maps - initially merged for Aglanta. 
