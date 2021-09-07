@@ -10,9 +10,9 @@ Stand-alone examples of formatting and displaying community data.
 <b>Quick start:</b> To create a locat site portal, [fork the Apps repo](../../apps/) and copy the [base starter folder](../../apps/base/).  
 
 ## [1. Start a local website](../../localsite/start)  
-## [2. Input-Output Widgets](../../io/charts)  
-## [3. Display a dataset](dataset)
-## [4. Chart starter ideas](charts)  
+## [2. Display Datasets](../../localsite/info/data)
+## [3. Input-Output Widgets](../../io/charts)  
+## [4. Chart Starter Ideas - Sankey](charts)  
 ## [5. Map Samples](maps)  
 ## [6. USEEIO API](https://github.com/usepa/useeio_api/) - [Python and R](../resources/useeio) 
 
