@@ -1359,7 +1359,7 @@ function leafletLoaded(root, count) {
 		console.log(L);
 	  // The large d3-legend.js script is flawed because it throws errors due to dependencies on leaflet script, so we can not load early.
 		loadScript(root + '/localsite/js/leaflet.icon-material.js');
-		loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
+		loadScript(root + '/localsite/js/jquery.min.js', function(results) {
 			loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) {
 				loadScript(root + '/localsite/js/map.js', function(results) { // BUG - change so dual-map does not require this on it's load
 					//loadScript(root + '/community/js/d3/d3-legend.js', function(results) { // This checks that load above is completed.
@@ -1386,13 +1386,13 @@ function lazyLoadFiles() {
 	if (location.host.indexOf('localhost') < 0) {
 		root = "https://model.earth";
 	}
-  loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
+  loadScript(root + '/localsite/js/jquery.min.js', function(results) {
     jsLoaded(root);
   });
 
   // Load early so available later
   loadScript(root + '/community/js/d3/d3.v5.min.js', function(results) { // BUG - change so dual-map does not require this on it's load
-  	loadScript(root + '/community/js/jquery/jquery-1.12.4.min.js', function(results) {
+  	loadScript(root + '/localsite/js/jquery.min.js', function(results) {
   		loadScript(root + '/localsite/js/map.js', function(results) {});
   	});
   });
