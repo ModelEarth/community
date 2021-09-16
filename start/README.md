@@ -11,7 +11,7 @@ Stand-alone examples of formatting and displaying community data.
 &bullet; <a href="../challenge/how/">How to prepare a winning entry!</a><br>
 </span>
 
-<b>Quick start:</b> [Fork the Apps repo](../../apps/) and copy the [base starter folder](../../apps/base/).  
+<b>Quick start:</b> [Fork Localsite and Apps repos](../../apps/) and copy the [base starter folder](../../apps/base/).  
 
 ## [1. Start a local website](../../localsite/start)  
 ## [2. Display Datasets](../../localsite/info/data)
