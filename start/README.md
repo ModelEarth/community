@@ -5,9 +5,13 @@ Stand-alone examples of formatting and displaying community data.
 <a href="https://model.earth/community/start/">View as website</a>
 </div>
 
-<a href="../challenge/">Sustainable Communities Web Challenge</a><br>
-<a href="../challenge/how/">How to prepare a winning entry!</a><br><br>
-<b>Quick start:</b> To create a locat site portal, [fork the Apps repo](../../apps/) and copy the [base starter folder](../../apps/base/).  
+<span style="font-size:18px">
+&bullet; <a href="../../apps/">Community App Starter Samples</a><br>
+&bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
+&bullet; <a href="../challenge/how/">How to prepare a winning entry!</a><br>
+</span>
+
+<b>Quick start:</b> [Fork the Apps repo](../../apps/) and copy the [base starter folder](../../apps/base/).  
 
 ## [1. Start a local website](../../localsite/start)  
 ## [2. Display Datasets](../../localsite/info/data)
@@ -53,6 +57,9 @@ Responsible sourcing allows manufacturers to...
 -->
 
 [Sustainable Materials Management](https://www.epa.gov/smm) - US EPA  
+
+[OpenLCA](https://www.openlca.org/) - Downloadable app for Life Cycle Assessment
+
 <!--
 [Recycling and Resource Recovery as a Tool for Regional Economic Development](https://www.epa.gov/smm/sustainable-materials-management-smm-web-academy-webinar-recycling-and-resource-recovery-tool) - Webinar: Nov 20, 2019, 1PM  
 -->
