@@ -166,9 +166,12 @@
     All entries should include local settings in their community portal to filter <a href="../../io/charts/">USEEIO widget IO charts</a>.<br>
 
     <h4>Immediate Project Need</h4>
-    Create a node script that pulls three <a href="../../localsite/start/">ModelEarth repos</a> (localsite, io and apps) into one local "webroot".<br><br>
+    1. Create a node script in the "apps" repo that pulls three <a href="../../localsite/start/">ModelEarth repos</a> (localsite, io and apps) into one local "webroot".<br><br>
 
+    2. For our Environmental Product Declarations (EPD) map, optimize the openEPD API call to fetch fewer fields. Search in our localhost/js/map.js file for "openEPD". Modify the API URL to select fields to display on our <a href="../../io/template/">EPD map</a>.<br><br>
 
+    3. Create a label generator in React:<br><br>
+    
     <section id="profile-editor">
     <div class="pagecard">
         <div class="cardstyle" style="padding-bottom: 0px">

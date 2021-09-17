@@ -33,4 +33,4 @@ Also, [GreenDelta Java EPD editor](https://github.com/GreenDelta/epd-editor)
 [Amazon employee's "Communicating EDP's" article with "Nutrition" Label](https://www.linkedin.com/pulse/amazon-has-unparalleled-opportunity-drive-low-carbon-products-guest/)  
 
 ---
-[Impact Profiles](../../io/template/)
+[Impact Profiles](../../../io/template/) and [3.0 Mockup](../../../apps/smm/)
