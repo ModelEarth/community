@@ -4,7 +4,7 @@ Challenge entries should make updates to the map.js file which displays our [lea
 
 <!-- ## [Widget Mockup for EPA (layout)](../../resources/layout/)-->
 ## [Leaflet Map Layers](../../../localsite/map/)
-Click "Display..." to view app layers.  
+Map script resides in localsite/js/map.js and localsite/js/map-filters.js.  
 
 ## [Our MapEngine as a Widget](../../../localsite/info/embed.html)<!-- [Older](../../map/starter/embed.html)-->  
 The localsite/map/index.html page is loaded as a template.  
