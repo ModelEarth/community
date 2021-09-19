@@ -45,6 +45,7 @@
   loadMarkdown("python/README.md", "pythonDiv", "_parent");
   loadMarkdown("ux/README.md", "uxDiv", "_parent");
   loadMarkdown("maps/README.md", "mapsDiv", "_parent");
+  loadMarkdown("more.md", "moreDiv", "_parent");
   consoleLog("test")
   // param.startTitle = "Model Earth"; // Trigger header
 </script>
@@ -139,7 +140,7 @@
 
 <div class="content contentpadding litePanel" style="overflow:auto;">
 
-    <h2>Project Ideas for Web Challenge Entries</h2>
+    <h2 style="font-size:32px">Collaborative Project Areas</h2>
 
     <a href="../challenge/">Participate</a> individually or with a team in the <a href="../challenge/">Sustainable Communities Web Challenge</a><br><br>
 
@@ -165,12 +166,12 @@
     Challenge participants are encouraged to contribute updates to the shared <a href="../../apps/">community page</a> processes.<br>
     All entries should include local settings in their community portal to filter <a href="../../io/charts/">USEEIO widget IO charts</a>.<br>
 
-    <h4>Immediate Project Need</h4>
+    <h4>Immediate Project Needs</h4>
     1. Create a node script in the "apps" repo that pulls three <a href="../../localsite/start/">ModelEarth repos</a> (localsite, io and apps) into one local "webroot".<br><br>
 
-    2. For our Environmental Product Declarations (EPD) map, optimize the <a href="../../io/template/feed/">openEPD API</a> call to fetch fewer fields. Search in our localhost/js/map.js file for "openEPD". Modify the API URL to select fields to display on our <a href="../../io/template/">EPD map</a>.<br><br>
+    2. For our Environmental Product Declarations (EPD) map, optimize our call to the <a href="../../io/template/feed/">openEPD API</a> to fetch fewer fields. Search in our localhost/js/map.js file for "openEPD". Modify the API URL to select fields to display on our <a href="../../io/template/">EPD map and labels</a>.<br><br>
 
-    3. Create a label generator in React:<br><br>
+    3. Create a label generator in React or JQuery:<br><br>
     
     <section id="profile-editor">
     <div class="pagecard">
@@ -220,7 +221,13 @@
     </div>
     </section>
 
-
+    <section id="more">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="moreDiv"></div>
+        </div>
+    </div>
+    </section>
 
 
     <div class="local" style="float:left; padding-top:0px; clear:both; display:none">
