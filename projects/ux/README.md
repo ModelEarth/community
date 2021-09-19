@@ -1,7 +1,9 @@
 <h2>UX/UI Report Design Projects</h2>
 
 
-###1. Community Hotspot Environmental Report (CHER)
+###1. Environmental Profile Labels
+
+Populate labels for products, communities, families and individuals based on the Environmental Product Declaration (OpenEPD) standard. [View&nbsp;USEEIO&nbsp;3.0&nbsp;Mockup](../../../apps/smm/).
 
 Mockup a "Community Hotspot Environmental Report" (CHER) which uses zip code level industry data with [chloroform&nbsp;maps](../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50) to drive USEEIO impact widgets. Update our [Impact Profile Label Samples](../../io/template/) to expand full page with graphic images that convey impacts. (Ideas: 5 stars, faces, green or burning earth, Last Airbender symbols, etc. The more options the better.)  
 
