@@ -1,11 +1,9 @@
 
-## VI. Dive into Google Data Commons API
+## Dive into Google Data Commons API
 
 [Install Data Commons Lite](../../localsite/info/data/datacommons/) on your local computer.  
 
-Find and pull US census data by state and county from the Google Data Commons API.  Look for commute times.  
-
-Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details) or [WalkScore.com](https://www.walkscore.com/professional/api.php)  
+Find and pull US census data by state and county from the Google Data Commons API. 
 
 Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
 
@@ -20,7 +18,7 @@ Analysis applied to <a href="projects/mobility/">industries impacted by the tran
 Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
 --> 
 
-## VII. Crowdsource Editor - Google REST App
+## Crowdsource Editor - Google REST App
 
 1. Google Sheet Crowdsource Editor - A REST process allowing editors to return and update their own row contributions.
 
@@ -29,7 +27,7 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 1. [Google Sheet Editor](https://model.earth/editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to edit rows of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
 
 
-## VIII. React - Input-Output Sankey Chart
+## React - Input-Output Sankey Chart
 
 1. Update the [Sankey D3 Chart](../../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../../io/build/slider.html#sectors=333613,335912,336111&page=1&count=10).  
 
@@ -45,7 +43,7 @@ And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> Gr
 
 
 
-## IX. .NET Core 5.0 Team
+## .NET Core 5.0 Projects
 
 1. Create a "Disposable Database" for editing crowdsourced lists using .csv files hosted in GitHub, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.  
 
@@ -59,11 +57,18 @@ https://github.com/Microsoft/azuredatastudio
 -->
 
 
-## X. Challenging Python Project
+## CensusReporter Python Project
 
-Pull over demographics reporting interface from [CensusReporter](../resources/censusreporter).  
-Point at static files hosted in GitHub.  
-Retain ability to pull from PostGreSQL.  
+Pull over demographics reporting interface from [CensusReporter](../resources/censusreporter).  View [Example](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/).
+Point at static files hosted in GitHub.  Retain ability to pull from PostGreSQL.  
 Add ability to pull additional community data from [Google Data Commons](https://datacommons.org).  
-Migrate existing CensusReporter forks in Africa and other countries to the new frontend.  
+Start with a Python 3 CensusReporter fork used in Africa and other countries.  
+
+
+
+## Community Walkability Scores
+
+Pull Walkability data from one of the free API's services that provide Walk Scores, Transit Scores and Bike Scores: [RapidAPI.com](https://rapidapi.com/theapiguy/api/walk-score/details)&nbsp;or&nbsp;[WalkScore.com](https://www.walkscore.com/professional/api.php)  
+
+
 

@@ -1,5 +1,9 @@
 #Add your Data Feeds
 
+###Feature your Environmental Product Declaration (EPD)
+
+Let us know if you have certified EPD profiles to highlight in our [EPD Template Design Project](../../../io/template/).
+
 ###Publish Your Inventory and Wishlist
 
 [Send Links](add) to include your inventory of items (including reusable, shared and recycled) and needed items.  If you don't have an existing server to host your files, use GitHub for CSV files or send a link to a Google Sheet.  
