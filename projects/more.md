@@ -27,22 +27,6 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 1. Work with a [JAMstack Editor](https://headlesscms.org/) to edit CSV files directly on GitHub using social logins.
 
 
-## React - Input-Output Sankey Chart
-
-1. Update the [Sankey D3 Chart](../../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
-
-1. View info on [editing EPA IO widgets](/io/charts/).
-
-1. See sample [visualizations](../start/charts/) of material flow charts.
-
-1. Normalization input and output so sides of Sankey are even.
-
-<!--
-And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
--->
-
-
-
 ## .NET Core 5.0 Projects
 
 1. Create a "Disposable Database" for editing crowdsourced lists using .csv files hosted in GitHub, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.  
