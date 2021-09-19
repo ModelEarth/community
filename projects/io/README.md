@@ -1,9 +1,7 @@
 ## React - Inflow-Outflow Charts
 
 
-[Inflow-Outflow Chart](../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - 
-<a href="../../io/build/slider.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - 
-<a href="../../io/charts/">All Widgets</a>   
+[Inflow-Outflow Chart](../../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - <a href="../../../io/build/iochart.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - <a href="../../../io/charts/">All Widgets</a>   
 
 Prevent multiple stepping backing-up by avoiding saving history with each hash change.  
 
@@ -32,7 +30,7 @@ React - [View Widget](../../io/build/impact_chart_config.html#sectors=334111,334
 
 ## React - Industry-List and Heatmap Mosaic
 
-React - [View Widget](../../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../../io/charts/) 
+React - [View Widget](../../../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../../../io/charts/) 
 
 These are posted as [USEEIO-widget GitHub issues](https://github.com/USEPA/useeio-widgets/issues)  
 
@@ -69,7 +67,7 @@ Action Menu
     View Report  
 
 2. When choosing "View Inflow-Outflow" redirect to:
-https://thetisiboth.github.io/useeio-widget-builds/slider.html#sectors=333613,335912,336111
+https://thetisiboth.github.io/useeio-widget-builds/iochart.html#sectors=333613,335912,336111
 
 3. Briefly highlight the "Action" menu with blue when checkboxes are clicked. 
 
@@ -85,13 +83,11 @@ Optimization for web - Decimal removal and restoration ([Issue 54](https://githu
 
 ## Bubble Chart
 
-D3 - [View Widget](../../io/charts/bubble/) 
+D3 - [View below widgets (active)](../../../localsite/info/#state=GA) - [View Widget (inactive)](../../../io/charts/bubble/) 
 
+- Adjust intial darkness - seems to be overlapping itself
 - Modify so popups still appear when the containing div is set to position:relative. 
-- Scale to size of containing div during browser resize.
-- Set the default bubble color to red for more pop.
-- Omit red from the scale when other [bubbles are highlighted](../../localsite/info/).  
-- Create React version.  
+- Scale to size of containing div during browser resize. 
 
 
 ##Data Integration

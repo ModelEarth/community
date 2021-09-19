@@ -1,11 +1,11 @@
 
 ## GitHub Actions Data Pipeline
 
-[Learn about our Data Setup](../../localsite/info/data) and view a sample Display Datasets using Tabular.
+[Learn about our Data Setup](../../../localsite/info/data) and view a sample Display Datasets using Tabular.
 
 We'll be developing a Python pipeline using [GitHub Actions](https://docs.github.com/en/actions) to add support for map layers with 30,000+ records, similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
 
-Updates for [Farm Fresh - Federal USDA location data](../farmfresh) on maps - initially merged for Aglanta. 
+Updates for [Farm Fresh - Federal USDA location data](../../farmfresh) on maps - initially merged for Aglanta. 
 
 Trigger our [FarmFresh Python](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) data pull nightly from the [community-data repo pipeline](https://github.com/modelearth/community-data/).  
 

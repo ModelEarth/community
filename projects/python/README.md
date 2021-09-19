@@ -2,7 +2,7 @@
 
 For Data Science and Computer Science Students  
 
-Predicting outcomes from changes to collections of industries and transitions within industry groups.  [NAICS Data processing](../../localsite/info/data/flowsa/) / [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
+Predicting outcomes from changes to collections of industries and transitions within industry groups.  [NAICS Data processing](../../../localsite/info/data/flowsa/) / [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
 
 
 COLAB-orating with San Diego: [mcmorgan27/sd-business](https://github.com/mcmorgan27/sd-business/tree/1b22ef0e9231f0d2bcfafcff41e69c9adc9038fd)

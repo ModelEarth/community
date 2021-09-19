@@ -20,16 +20,16 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 
 ## Crowdsource Editor - Google REST App
 
-1. Google Sheet Crowdsource Editor - A REST process allowing editors to return and update their own row contributions.
+1. Create a [Google Sheet Editor](https://model.earth/editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). Use a REST process allowing editors to return and update their own row contributions using a social login process with an online form, without having access to edit rows of other contributors. Avoid Zapier or other time-intensive setup approaches.
 
-1. Work with a [JAMstack Editor](https://headlesscms.org/) to edit CSV files directly on GitHub using social logins. 
+1. See our 
 
-1. [Google Sheet Editor](https://model.earth/editor) for crowdsourcing updates. Code for America Brigades often use Google Sheets to maintain directories, like these maps: [Georgia](https://www.georgia.org/covid19suppliersmap) and [North Carolina](https://nccovidsupport.org/). A social login process is needed to allow contributors to return and update their own Google sheet row data through an online form, without having access to edit rows of other contributors. The set-up needs to take only a minute per sheet, so avoid Zapier or other time-intensive approaches.
+1. Work with a [JAMstack Editor](https://headlesscms.org/) to edit CSV files directly on GitHub using social logins.
 
 
 ## React - Input-Output Sankey Chart
 
-1. Update the [Sankey D3 Chart](../../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../../io/build/slider.html#sectors=333613,335912,336111&page=1&count=10).  
+1. Update the [Sankey D3 Chart](../../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
 
 1. View info on [editing EPA IO widgets](/io/charts/).
 
