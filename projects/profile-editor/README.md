@@ -5,17 +5,17 @@ We'll be updating a metadata editing process created by Italy to edit any entity
 We're combining the best of these two lable styles by placing only the number on the right side.
 
 <div style="border:1px solid #ccc; padding:15px; display: inline-block; margin-bottom:10px">
-<a href="../../../io/template/"><img src="../../io/template/img/2-labels.png" style="width:100%; max-width:600px"></a>
+<a href="../../../io/template/"><img src="../../../io/template/img/2-labels.png" style="width:100%; max-width:600px"></a>
 </div>
 
-View our resulting [impact profile summaries inspired by "nutritional labels."](../../io/template/) for communities, companies, products and individuals.  
+View our resulting [impact profile summaries inspired by "nutritional labels."](../../../io/template/) for communities, companies, products and individuals.  
 
 Our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor will save settings in a file residing on GitHub using Code for America's version for an example. Our update will allow the form to be viewed before logging into GitHub.  
 
 [View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently, [view schema](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/schema.core.html#top-level-keys-and-sections)  
 [View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Initial login requirement to be [removed](https://github.com/codeforamerica/publiccode-pusher/issues/13)  
 
-View our paser for displaying [YAML and JSON as HTML](../../io/template/parser/)
+View our paser for displaying [YAML and JSON as HTML](../../../io/template/parser/)
 
 TO DO:  
 1. Add a Goods and Services section stored in sectors.yml and include an "Add" button for choosing sectors.
