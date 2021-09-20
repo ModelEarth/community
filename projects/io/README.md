@@ -84,9 +84,9 @@ https://thetisiboth.github.io/useeio-widget-builds/iochart.html#sectors=333613,3
 
 5. Add a "View Mosaic" option to the input-output sort menus
 
-
-
+<!--
 Optimization for web - Decimal removal and restoration ([Issue 54](https://github.com/USEPA/useeio-widgets/issues/54))
+-->
 
 ## React - Heatmap Mosaic
 
@@ -94,7 +94,7 @@ Optimization for web - Decimal removal and restoration ([Issue 54](https://githu
 
 ## JQuery/D3 - Bubble Chart
 
-D3 - [View below widgets (active)](../../../localsite/info/#state=GA) - [View Widget (inactive)](../../../io/charts/bubble/) 
+[On Industry Page (at bottom)](../../../localsite/info/#state=GA) - [Stand-Alone Widget (inactive)](../../../io/charts/bubble/) 
 
 - Adjust intial darkness - seems to be overlapping itself
 - Modify so popups still appear when the containing div is set to position:relative. 
