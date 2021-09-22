@@ -1,6 +1,6 @@
 ## Map Projects
 
-Update map.js to include a choropleth map layer with industry density for [show=vehicles](../../localsite/info/#show=vehicles) to represent <a href="mobility/">locations potentially impacted by the transition to EV</a>. See [choropleth map samples](../start/maps/).   
+Update map.js to include a choropleth map layer with industry density for [show=vehicles](../../../localsite/info/#show=vehicles) to represent <a href="../mobility/">locations potentially impacted by the transition to EV</a>. See [choropleth map samples](../../start/maps/).   
 
 Activate a clickable legend in the map.js file. Place checkboxes before legend items to filter the map points and list below the map.  
 
@@ -11,12 +11,14 @@ Add mockups of integrated interfaces for Department of Labor tools like the [Geo
 Update county [data prep scripts](../../localsite/info/data/) to include zip codes. Get latest from summer intern John Taylor.  
 -->
 
-Find a source of "regions within states" based on sets of counties. Apply to [region_select dropdown](../../localsite/info/#state=GA).  
+Find a source of "regions within states" based on sets of counties. Apply to [region_select dropdown](../../../localsite/info/#state=GA).  
 
 Move items above into our [Beyond Carbon Project Board](https://github.com/localsite/localsite/projects/1). See [Hack for LA](https://github.com/hackforla/website/projects/7) examples.  
 <!-- Project created from Automated kanban with reviews template. -->
 
-DONE - Akilah assisted displaying the [Beyond Carbon](../../apps/beyondcarbon/) state results as a table with state names.  
+DONE - Pull state data from wiki and merge with Beyond Carbon using Github Actions. We've forked Abrie's repo.
+
+DONE - Akilah assisted displaying the [Beyond Carbon](../../../apps/beyondcarbon/) state results as a table with state names.  
 
 DONE - Kathryn generated state dropdown script from [R-Language script](../../community-data/us/) to include lat/lon attributes for the [brigade map zoom](../../localsite/info/#show=industries&layers=brigades).  
 
