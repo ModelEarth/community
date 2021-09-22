@@ -18,6 +18,8 @@ Move items above into our [Beyond Carbon Project Board](https://github.com/local
 
 DONE - Pull state data from wiki and merge with Beyond Carbon using Github Actions. We've forked Abrie's repo.
 
+DONE - Chad R helped us figure out how to connect to the OpenEPD API.  
+
 DONE - Akilah assisted displaying the [Beyond Carbon](../../../apps/beyondcarbon/) state results as a table with state names.  
 
 DONE - Kathryn generated state dropdown script from [R-Language script](../../community-data/us/) to include lat/lon attributes for the [brigade map zoom](../../localsite/info/#show=industries&layers=brigades).  
