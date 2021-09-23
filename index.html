@@ -236,6 +236,9 @@ local environmental issues and innovations." />
       </div>
     </div>
 
+    <div style="clear:both"></div>
+    <br><br>
+
   </div>
 
 </div>
@@ -244,8 +247,78 @@ local environmental issues and innovations." />
 <div id="readmeDiv"></div>
 
 
-
+<!--
 <a href="../localsite/info/"><img src="img/overview/slides/perfect-storm-heatmap.jpg" class="hideMobile" style="float:left; width: 100%; margin-top:0px; margin-bottom:20px"></a><br>
+-->
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../io/build/widgets.css">
+
+    <style>
+    .MuiGrid-root .MuiGrid-container, .MuiTabs-root, .matrix-title {
+      display: none !important;
+    }
+    table {
+      border-spacing: 2px !important;
+    }
+    table a {
+      color: #fff;
+    }
+    table input {
+      display: none;
+    }
+    .noborder {
+      border-left: 0px;
+    }
+    .sector-list-body a {
+      font-size: 14px !important;
+    }
+    .jss7, .jss9 {
+      margin-left: 6px;
+    }
+    </style>
+
+    <div style="background-color: #aaa; color:#fff">
+    <div class="content contentpadding" style="max-width: 1430px;">
+      <div class="ioXX">
+          <div style="marginXX: 0 auto;">
+              <div class="matrix-title">Goods & Services</div><br><br>
+              <div class="sector-list">
+              </div>
+          </div>
+
+          <div style="float:right"><a href="../io/charts" style="color:#fff">Embed Charts</a></div>
+      </div>
+    </div>
+    </div>
+
+    <script src="../io/build/lib/useeio_widgets.js"></script>
+    <script>
+
+        var config = useeio.urlConfig();
+        var modelID = config.get().model || 'USEEIOv2.0';
+
+        var model = useeio.model({
+            endpoint: '../io/build/api',
+
+            model: modelID,
+            asJsonFiles: true,
+        });
+
+        var sectorList = useeio.sectorList({
+            model: model,
+            selector: '.sector-list',
+        });
+        config.withDefaults({
+            view: ["mosaic"],
+            count: 10,
+        })
+        config.join(sectorList);
+
+    </script>
+
 
 
 
@@ -295,7 +368,7 @@ local environmental issues and innovations." />
 -->
 
 
-<div class="content contentpadding" style="clear:both; padding-top:30px; max-width: 1230px">
+<div class="content contentpadding" style="clear:both; padding-top:50px; max-width: 1230px">
 
 <div class="floatRight" style="border:1px solid #ccc; max-width:400px; float:right; margin-bottom:20px">
   <div>
@@ -318,6 +391,8 @@ local environmental issues and innovations." />
 
   </div>
 </div>
+
+<div style="overflow:auto; padding-right:20px">
 
 <h1>Community Apps for Life&nbsp;Cycle&nbsp;Assessment&nbsp;(LCA)</h1>
 <!--
@@ -355,6 +430,8 @@ Learn more about USEEIO.
 
 </div>
 
+</div>
+
 <style>
 #hero-landscape-image {
   background-image: url(../localsite/img/hero/stars.jpg);
@@ -385,8 +462,9 @@ Learn more about USEEIO.
               <a href="../../community/projects/#ux">UX/UI</a> - Nutrition Labels / Scenario Reporting<br>
               <a href="../../community/projects/#maps">Maps</a> - Data Visualizations<br>
               <a href="../../community/projects/#cinematic">Cinematic</a> - Environmental Impact Apps<br>
+              <a href="../../apps/smm/">3.0 Mockup</a> - Lifecycle Tools<br>
 
-              <a href="../../community/projects/" style="display:block;margin-top:10px">Project Idea List</a>
+              <a href="../../community/projects/" style="display:block;margin-top:10px">Ongoing Project Areas</a>
             </div>
           </div>
       </div>
