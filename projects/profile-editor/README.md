@@ -8,14 +8,14 @@ We're combining the best of these two lable styles by placing only the number on
 <a href="../../../io/template/"><img src="../../../io/template/img/2-labels.png" style="width:100%; max-width:600px"></a>
 </div>
 
-View our resulting [impact profile summaries inspired by "nutritional labels."](../../../io/template/) for communities, companies, products and individuals.  
+View our [impact profile summaries inspired by "nutritional labels"](../../../io/template/) for communities, companies, products and individuals.  
 
-Our [profile-editor](https://github.com/modelearth/profile-editor) fork of Italy's publiccode-editor will save settings in a file residing on GitHub using Code for America's version for an example. Our update will allow the form to be viewed before logging into GitHub.  
+[Our upcoming profile-editor](https://modelearth.github.io/profile-editor) is a fork of Italy's publiccode-editor which saves Metadata settings in a file residing on GitHub. [Clone our Fork](https://github.com/modelearth/profile-editor). Code for America's version saves directly to GitHub. Our update will allow the form to be viewed before logging into GitHub.  
 
 [View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently, [view schema](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/schema.core.html#top-level-keys-and-sections)  
-[View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Initial login requirement to be [removed](https://github.com/codeforamerica/publiccode-pusher/issues/13)  
+[View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Would be best to remove initial login requirement so fields can be viewed - [Issue](https://github.com/codeforamerica/publiccode-pusher/issues/13)  
 
-View our paser for displaying [YAML and JSON as HTML](../../../io/template/parser/)
+View our paser for displaying [YAML and JSON as HTML](../../../io/template/parser/) (Might require hitting reload.)
 
 TO DO:  
 1. Add a Goods and Services section stored in sectors.yml and include an "Add" button for choosing sectors.
