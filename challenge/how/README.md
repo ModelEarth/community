@@ -5,10 +5,11 @@
 Encourage team members to register by providing them with the following link:  
 [https://model.earth/community/challenge](https://model.earth/community/challenge)  
 
-##Fork the "apps" repo and copy one of the community page examples
+##Fork repos and copy one of the community page examples
 
+Get started by forking 3 repos (localsite, io, apps) into one site webroot. [How to fork repos](../../../localsite/start/)  
 Copy the [base folder](../../../apps/base/) within the [apps repo](../../../apps/) and change variables to match your local community.  
-[Get started with forking GitHub repos](../../../localsite/start/)  
+ 
 
 ##Identify a location and explore adverse impacts affecting your area
 
