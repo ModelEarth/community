@@ -280,18 +280,18 @@ local environmental issues and innovations." />
     }
     </style>
 
-    <div style="background-color: #aaa; color:#fff">
-    <div class="content contentpadding" style="max-width: 1430px;">
-      <div class="ioXX">
-          <div style="marginXX: 0 auto;">
-              <div class="matrix-title">Goods & Services</div><br><br>
-              <div class="sector-list">
-              </div>
-          </div>
+    <div class="hideMobile" style="background-color: #aaa; color:#fff">
+      <div class="content contentpadding" style="max-width: 1430px;">
+        <div class="ioXX">
+            <div style="marginXX: 0 auto;">
+                <div class="matrix-title">Goods & Services</div><br><br>
+                <div class="sector-list">
+                </div>
+            </div>
 
-          <div style="float:right"><a href="../io/charts" style="color:#fff">Embed Charts</a></div>
+            <div style="float:right"><a href="../io/charts" style="color:#fff">Embed Charts</a></div>
+        </div>
       </div>
-    </div>
     </div>
 
     <script src="../io/build/lib/useeio_widgets.js"></script>
@@ -367,12 +367,37 @@ local environmental issues and innovations." />
 <link rel="stylesheet" href="css/material_icons.css" />
 -->
 
-
+<style>
+.floatRight {
+  max-width:400px;
+}
+.right-image {
+  width:100%;
+  max-width:400px;
+}
+@media (max-width: 600px) {
+  .pageColumnInside {
+    padding-top: 15px;
+  }
+  .floatRight {
+    max-width:100%;
+  }
+  .right-image {
+    max-width:100%;
+  }
+  .main_column {
+    padding-left:40px;
+  }
+  #hero-rect-new {
+    margin-left: 40px !important;
+  }
+}
+</style>
 <div class="content contentpadding" style="clear:both; padding-top:50px; max-width: 1230px">
 
-<div class="floatRight" style="border:1px solid #ccc; max-width:400px; float:right; margin-bottom:20px">
+<div class="floatRight" style="border:1px solid #ccc; margin-bottom:20px">
   <div>
-    <a href="challenge/" target="_parent" ><img src="img/overview/code-for-america-square.jpg" style="width:100%; max-width:400px;"></a>
+    <a href="challenge/" target="_parent" ><img id="right-image" src="img/overview/code-for-america-square.jpg" style=""></a>
   </div>
   <div style="padding:30px; padding-top:10px; padding-bottom:20px">
 
@@ -392,7 +417,7 @@ local environmental issues and innovations." />
   </div>
 </div>
 
-<div style="overflow:auto; padding-right:20px">
+<div class="main_column" style="overflow:auto; padding-right:20px">
 
 <h1>Community Apps for Life&nbsp;Cycle&nbsp;Assessment&nbsp;(LCA)</h1>
 <!--
@@ -437,7 +462,7 @@ Learn more about USEEIO.
   background-image: url(../localsite/img/hero/stars.jpg);
 }
 #hero-rect-new {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
   margin: 0 auto; /* We'll center instead */
   max-width: 600px;
