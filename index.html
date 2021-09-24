@@ -145,14 +145,14 @@ local environmental issues and innovations." />
     <!-- psd resides in smartdata -->
     <div style="background-color: #dae8eb; margin: 0 auto; overflow: auto; padding:0px; border:0px">
 
-        <div style="max-width:1230px; padding-left:40px; padding-right:40px; text-align:left; position:relative; min-height:350px; margin: 0 auto">
+        <div style="max-width:1230px; padding-left:40px; padding-right:40px; text-align:left; position:relative; min-height:380px; margin: 0 auto">
 
             <img src="img/overview/banner-2.png" class="hideMobile" style="opacity:0.3; width:100%; max-width:600px; padding-top:20px; padding-right:20px; position:absolute; right:20px; bottom:0px">
 
 
             <div>
               <div class="hideMobile" style="float:left">
-                  <div class="hero-text" style="padding:30px 45px 18px 0; text-align: right;">
+                  <div class="hero-text" style="padding:30px 45px 6px 0; text-align: right;">
 
                       <img src="img/logo/epa-circle.png" class="hideMobile" style="width:100%;max-width:145px; margin-bottom:15px">                     
 
@@ -280,7 +280,7 @@ local environmental issues and innovations." />
     }
     </style>
 
-    <div class="hideMobile" style="background-color: #aaa; color:#fff">
+    <div class="hideMobile" style="background-color: #a0a0a0; color:#fff">
       <div class="content contentpadding" style="max-width: 1430px;">
         <div class="ioXX">
             <div style="marginXX: 0 auto;">
@@ -371,7 +371,7 @@ local environmental issues and innovations." />
 .floatRight {
   max-width:400px;
 }
-.right-image {
+#right-image {
   width:100%;
   max-width:400px;
 }
@@ -379,21 +379,29 @@ local environmental issues and innovations." />
   .pageColumnInside {
     padding-top: 15px;
   }
-  .floatRight {
-    max-width:100%;
-  }
-  .right-image {
-    max-width:100%;
-  }
-  .main_column {
-    padding-left:40px;
-  }
   #hero-rect-new {
     margin-left: 40px !important;
   }
 }
+@media (max-width:800px) {
+  .main_column {
+    padding-left:40px;
+  }
+  .floatRight {
+    max-width:100%;
+    margin-left: 0px;
+  }
+  #right-image {
+    max-width:100%;
+  }
+  #main-info-content {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
 </style>
-<div class="content contentpadding" style="clear:both; padding-top:50px; max-width: 1230px">
+<div id="main-info-content" class="content contentpadding" style="clear:both; padding-top:50px; max-width: 1230px">
 
 <div class="floatRight" style="border:1px solid #ccc; margin-bottom:20px">
   <div>
@@ -480,7 +488,7 @@ Learn more about USEEIO.
             <div id="hero-rect-new">
               <h3>Project Areas</h3>
 
-              <a href="../../community/projects/" style="display:block;margin-top:10px">View List</a>
+              <a href="../../community/projects/" style="display:block;margin-top:10px">View Project List</a>
 
               <a href="../../apps/">Starter Pages</a> - Copy and add parameters<br>
               <a href="../../community/projects/#profile-editor">JQuery/React</a> - Environmental Profile Editor<br>
