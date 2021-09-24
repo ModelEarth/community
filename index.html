@@ -136,6 +136,22 @@ local environmental issues and innovations." />
       padding: 0px;
     }
 }
+
+/* Add to widget.css */
+thead th:nth-child(2) {
+  width: 300px !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+}
+tbody tr td:nth-child(2) {
+  width: 300px !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+  overflow: hidden;
+}
+.jss1 > div {
+  max-width: 350px;
+}
 </style>
 <div id="log_display" style="display:none"></div><!-- a work in progress -->
 
@@ -280,7 +296,8 @@ local environmental issues and innovations." />
     }
     </style>
 
-    <div class="hideMobile" style="background-color: #a0a0a0; color:#fff">
+    <div style="background-color: #a0a0a0; color:#fff">
+    <div class="hideMobile">
       <div class="content contentpadding" style="max-width: 1430px;">
         <div class="ioXX">
             <div style="marginXX: 0 auto;">
@@ -292,6 +309,7 @@ local environmental issues and innovations." />
             <div style="float:right"><a href="../io/charts" style="color:#fff">Embed Charts</a></div>
         </div>
       </div>
+    </div>
     </div>
 
     <script src="../io/build/lib/useeio_widgets.js"></script>
