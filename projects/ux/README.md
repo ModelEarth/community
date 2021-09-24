@@ -10,22 +10,4 @@ Mockup a "Community Hotspot Environmental Report" (CHER) with [Environmental Pro
 Collaborate with coders to render labels using client-side Javascript with the OpenEPD API.  
 Design an expanded label interface that works well as a video overlay for use in entertainment.  
 
-Collaborate with coders to update the [impact widgets US map](../../../localsite/info/#mapview=country) with [chloroform&nbsp;map features](../../start/maps/) to show population density, state issues and industry levels. 
-
-
-## Related Resources
-
-1. [Our county boundary map](../../start/maps/) is embedded into [our industry tool](/localsite/info/#go=smart) along with [EPA IO widgets](../../../io/charts/).  
-
-1. [Map starters](../../start) and [Leaflet route maps](../../start/routing/) for driving tours and deliveries.
-
-1. <a href="https://jamstack.org">JAM Stack Development</a>
-
-1. Build location profiles using the [Industry Impact Evaluator](../../../localsite/info).<!-- Goods & Services Reports - communities with environmental impacts of new technologies -->  
-
-1. Add to [map search filters](../../localsite/map/), apply [industry icons](start/dataset/icons/) to charts, or integrate [map samples](start/maps).   
-
-1. Update USEEIO widgets to embed in <a href="https://naaee.github.io/core/" style="white-space: nowrap;">Resource and Event Calendars</a> for environmental educators.
-
-
-1. [RStudio and USEEIOR](../../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../../community/biotech/).  Add updates for electric vehicles  and bioproducts, Local economy inputs and new technology additions to USEEIO. [Details](../../io/naics/)  
+Collaborate with coders to update the [impact widgets US map](../../../localsite/info/#mapview=country) with [chloroform&nbsp;map features](../../start/maps/) to show population density, state issues and industry levels.
