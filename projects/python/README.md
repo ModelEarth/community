@@ -21,9 +21,9 @@ Our existing Machine Learning projects:
 We could [set-up a Flask server](/localsite/info/data/datacommons/) using the DataCommon.org website repo sample and deploy to Google hosting. 
 
 
-<b>Article by the creator of DataUSA.io</b> (So frustrating that they have not documented their new API):  
-<a href="https://blogs.scientificamerican.com/guest-blog/what-s-wrong-with-open-data-sites-and-how-we-can-fix-them/">What's Wrong with Open-Data Sites - and How We Can Fix Them</a> - Scientific American Blog Network - Scientific American Blog Network - Scientific American Blog Network
-What's Wrong with Open-Data Sites--and How We Can Fix Them. Vast amounts of useful information can be found on government Web sites, but it's often impossible to make sense of it.
+<b>Article by the creator of DataUSA.io</b>
+(Frustrating that they have not documented their new API - Can we see what's available using Postman?):  
+<a href="https://blogs.scientificamerican.com/guest-blog/what-s-wrong-with-open-data-sites-and-how-we-can-fix-them/">What's Wrong with Open-Data Sites - and How We Can Fix Them</a> - Vast amounts of useful information can be found on government Web sites, but it's often impossible to make sense of&nbsp;it.
 
 
 
