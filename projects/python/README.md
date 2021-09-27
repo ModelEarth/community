@@ -1,22 +1,38 @@
 ## Python - Machine Learning
 
-For Data Science and Computer Science Students  
+For Data Science and Computer Science 
 
-Predicting outcomes from changes to collections of industries and transitions within industry groups.  [NAICS Data processing](../../../localsite/info/data/flowsa/) / [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
+
+[Local Industry Lists - Data Prep](../../../localsite/info/data/flowsa/)  
+[About API](../../../io/about/api/) - County and Zip Code data sources  
+[Display Datasets](../../../localsite/info/data/) - Tabulator Sample  
+[Industries by Zip Code (ZCTA)](../../../community/industries/)   
+[Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
+
+
+Predicting outcomes from changes to collections of industries and transitions within industry groups.
 
 
 COLAB-orating with San Diego: [mcmorgan27/sd-business](https://github.com/mcmorgan27/sd-business/tree/1b22ef0e9231f0d2bcfafcff41e69c9adc9038fd)
 
+<!--
 Sample of embedded [Choropleth Map for Entire Automotive Industry](https://model.earth/localsite/info/#show=vehicles&indicators=VADD&naics=326199,336390,325211,326112,336412,333111,336211,336340,336370,336413,336320,335911,336360,331110,335912,331221,336111,336330&count=20) using DataUSA.io widget displaying American Community Survey (ACS) Public Use Microdata Sample [PUMS](https://www.census.gov/programs-surveys/acs/microdata/mdat.html) data.  
+-->
+
 <!--
 1. Finalize csv output for counties by state using [BLS data from EPA Flowsa](/localsite/info/data/) - scroll down in page.  Merge columns and save in state folders.  
 -->
  
 
 Our existing Machine Learning projects:  
-- [Impact map (Machine Learning Websocket)](/io/impact/) - We'd love to get this running on Google Cloud, Heroku or AWS. Or convert to a fully static site.  
-- [JS clustering (Machine Learning Javascript)](/community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50) - To add to our localsite/js/map.js file
-- [Simple Choropleth](/community/map/income/) and [More Map Samples](/community/start/maps/)
+- [Industry Estimates - Imputation Using Machine Learning](https://github.com/modelearth/machine-learning)
+<!-- Find this:
+- [Impact map (Machine Learning Websocket)](../../../io/impact/) - We'd love to get this running on Google Cloud, Heroku or AWS. Or convert to a fully static site.-->
+- [JS clustering (Machine Learning Javascript)](../../../community/zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)  
+
+- [Community Forecasting](https://model.earth/community-forecasting) - Includes legend with scale, click "Choose Area of Focus"
+
+- [Simple Choropleth](../../../community/map/income/) and [More Map Samples](../../../community/start/maps/)
 
 We could [set-up a Flask server](/localsite/info/data/datacommons/) using the DataCommon.org website repo sample and deploy to Google hosting. 
 
