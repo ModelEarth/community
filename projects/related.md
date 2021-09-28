@@ -4,6 +4,8 @@
 
 1. [Map starters](../start) and [Leaflet route maps](../start/routing/) for driving tours and deliveries.
 
+1. [Lifecycleinitiative.org](http://scp-hat.lifecycleinitiative.org/) - United Nations Sustainable Consumption and Production Hotspots Analysis Tool (SCP-HAT) - Wes says we can probably use their charts since they were developed with an [open initiative](http://scp-hat.lifecycleinitiative.org/wp-content/uploads/2019/02/SCP-HAT_Technical-documentation_final-20181220_v2.pdf)  
+
 1. <a href="https://jamstack.org">JAM Stack Development</a>
 
 1. Build location profiles using the [Industry Impact Evaluator](../../localsite/info).<!-- Goods & Services Reports - communities with environmental impacts of new technologies -->  
