@@ -13,17 +13,18 @@
 1. <a href="registration/">Register online</a> now. Work as an individual, join an existing team, or form a new local team.
 2. Follow the <a href="#introlist">steps to create an entry</a>. 
 3. Present your entry at the October 2 finale event at 4:00 PM ET.
-
+<!--
 <h2><b>Work Sessions</b></h2>
 
 <b>Saturday, September 25, 2021</b> from 10AM to 12PM ET
 <b>Tuesday, September 28, 2021</b> from 10AM to 12PM ET  
 
 Work sessions are optional, but we encourage you to participate to get a jump on the competition.
+-->
 
 <a href="../../community/challenge/meetups/">View full schedule and meeting links.</a><br>
 
-<h2><b>Finale Event Schedule</b><br>Saturday, October 2, 2021</h2>
+<h2><b><!--Finale -->Event Schedule</b><br>Saturday, October 2, 2021</h2>
 10AM to 11AM ET - Introductions, Expand Teams, Walk-Through Entry Creation Steps  
 11AM to 4PM ET - Work Time (open mic from noon to 1pm)  
 4PM to 6PM ET - Team Presentations followed by Awards
