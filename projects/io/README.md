@@ -1,4 +1,4 @@
-## React/D3 - Sankey Chart
+## React and D3 - Sankey IO Chart
 
 1. Update the [Sankey D3 Chart](../../../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
 
@@ -8,87 +8,17 @@
 
 1. Normalization input and output so sides of Sankey are even.
 
-<!--
-And/or <a href="https://www.apollographql.com/docs/apollo-server/">Apollo</a> GraphQL for faster dev than the point-to-point nature of REST endpoints.  
--->
+<!-- See file useeio-updates.md for text previously here -->
 
 
-## React - IO Chart
 
-[Inflow-Outflow Chart](../../../io/charts/inflow-outflow/#sectors=326210&page=1&count=10) - <a href="../../../io/build/iochart.html#sectors=322130,327910,541200&page=1&count=10">Widget only</a> - <a href="../../../io/charts/">All Widgets</a>   
+## React and Leaflet - Chlorpleth Map
 
-Prevent multiple stepping backing-up by avoiding saving history with each hash change.  
-
-Related: [USEEIO-widget GitHub issue #41](https://github.com/USEPA/useeio-widgets/issues/41)  
-
-See additional [USEEIO-widget GitHub issues](https://github.com/USEPA/useeio-widgets/issues)  
-
-<!--
-The bar could turn green when a commodity has been increased from its default.  
-The bar could turn red when a commodity has been decreased from its default.  
--->
-
-<!--
-## Impact Bar Chart
-
-React - [View Widget](../../io/build/impact_chart_config.html#sectors=334111,334210,334220&perspective=direct&analysis=Consumption) - [Details](../../io/charts/) 
-
-
-- Create an example with three columns and one impact area per colums.  
-- Display sector titles to the left of the first column.
-- Display sector name over each bar.  
-- Display description of each indicator
-- Update for use with Darkly bootstrap, similar to [bubble chart](../../io/charts/bubble) - click bubble to view impact chart.  
--->
-
-These are posted as [USEEIO-widget GitHub issues](https://github.com/USEPA/useeio-widgets/issues)  
-
- <!--   
-- Include tabs at top: 20 categories, 388 industry sectors, X selected - [mock up](start/dataset/)
-- Show list of selected sectors under "X selected" tab. Include duplicate checkboxes in "X selected" tab.  
-- Display parent NAICS industry categories that open to reveal subcategories
-- Display the quantity selected after each parent category title in parenthesis
-
-- Toggle matrices using a dropdown menu to select a matrix
-- List by parent category.
-
--->
-
-- Reduce top of popup by 50px. (It currently gets covered by page header).
-- Rename to "Show Selected Only" and "Show Selected First"
-- Place a line above "Alphabetical"
-- Figure out how to allow rest of page to still scroll when the indicator popup is open on the center inflow-outflow column. 
-<!-- ([Issue 57](https://github.com/USEPA/useeio-widgets/issues/57)) closed -->
-
-<!--
-Updates to heatmap column sorting 
-([Issue 52](https://github.com/USEPA/useeio-widgets/issues/52))  
--->
-
-Action Menu
-
-1. When boxes are checked on the mosaic heatmap, show an action menu containing:
-
-    Action...  
-    View Inflow-Outflow  
-    View Map  
-    View Charts  
-    View Report  
-
-2. When choosing "View Inflow-Outflow" redirect to:
-https://thetisiboth.github.io/useeio-widget-builds/iochart.html#sectors=333613,335912,336111
-
-3. Briefly highlight the "Action" menu with blue when checkboxes are clicked. 
-
-4. Hide the Action menu again when all boxes are unchecked.
-
-5. Add a "View Mosaic" option to the input-output sort menus
-
-<!--
-Optimization for web - Decimal removal and restoration ([Issue 54](https://github.com/USEPA/useeio-widgets/issues/54))
--->
+Find and implement a React Leaflet Chlorpleth Map with a clickable legend. See our Loren's [Community Forecasting Map](https://model.earth/community-forecasting). Click "Choose Area of Focus". This example was created during a team project in Polo's Data Visualization course at Georgia Tech. The Leaflet maps includes a legend with the color scale. This sample legend is not clickable, but the color scale is based on the data range.  
 
 ## React - Heatmap Mosaic
+
+Reach out to Leo regarding updates you'd like to make in the useeio-widgets repo.  
 
 [View Widget](../../../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../../../io/charts/) 
 

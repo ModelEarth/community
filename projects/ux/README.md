@@ -1,7 +1,7 @@
 <h2>UX/UI Report Design Projects</h2>
 
 
-###Environmental Profile Labels / OpenLCA Tabulator / Scenario Reporting
+###Environmental Profile Declaration (EPD) Labels / OpenLCA Tabulator / Scenario Reporting
 
 Populate labels for products, communities, families and individuals based on the Environmental Product Declaration (OpenEPD) standard. [View&nbsp;USEEIO&nbsp;3.0&nbsp;Mockup](../../../apps/smm/) of labels and tabulator.
 
