@@ -1,14 +1,4 @@
-
-## JQuery/React - Environmental Profile Directory - YAML Editor
-
-We'll be updating a metadata editing process created by Italy to edit any entity profile stored on GitHub.  
-We're combining the best of these two lable styles by placing only the number on the right side.
-
-<div style="border:1px solid #ccc; padding:15px; display: inline-block; margin-bottom:10px">
-<a href="../../../io/template/"><img src="../../../io/template/img/2-labels.png" style="width:100%; max-width:600px"></a>
-</div>
-
-View our [impact profile summaries inspired by "nutritional labels"](../../../io/template/) for communities, companies, products and individuals.  
+## YAML Profile Editor
 
 [Our upcoming profile-editor](https://modelearth.github.io/profile-editor) is a fork of Italy's publiccode-editor which saves Metadata settings in a file residing on GitHub. [Clone our Fork](https://github.com/modelearth/profile-editor). Code for America's version saves directly to GitHub. Our update will allow the form to be viewed before logging into GitHub.  
 

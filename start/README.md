@@ -9,6 +9,7 @@ Stand-alone examples of formatting and displaying community data.
 &bullet; <a href="../../apps/">Community App Starter Samples</a><br>
 &bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
 &bullet; <a href="../challenge/how/">How to prepare a winning entry!</a><br>
+&bullet; <a href="../../localsite/#parameters">Edit Parameters</a><br>
 </span>
 
 <b>Quick start:</b> [Fork Localsite and Apps repos](../../apps/) and copy the [base starter folder](../../apps/base/).  
