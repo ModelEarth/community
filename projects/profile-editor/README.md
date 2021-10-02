@@ -1,5 +1,9 @@
 ## React - YAML Profile Editor
 
+We're building profiles based on Environmental Product Declarations (EPD). 
+
+
+
 [Our upcoming profile-editor](https://modelearth.github.io/profile-editor) is a fork of Italy's publiccode-editor which saves Metadata settings in a file residing on GitHub. [Clone our Fork](https://github.com/modelearth/profile-editor). Code for America's version saves directly to GitHub. Our update will allow the form to be viewed before logging into GitHub.  
 
 [View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently, [view schema](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/schema.core.html#top-level-keys-and-sections)  
@@ -17,6 +21,8 @@ TO DO:
 1. Store additional entity info for organizations and individuals in a file called profile.yml.  
 
 More about Code for America's [Public Code Pusher](https://brigade.cloud/projects/publiccode-helper/).  
+
+We'll optimize our <a href="../../io/template/feed/">our call to the openEPD API</a> for the <a href="../../../localsite/info/?show=openepd&mapview=state&state=GA">OpenEPD map display</a> to load faster by fetching fewer fields. You'll find the "openEPD" settings in our <a href="../../../localsite/js/map.js">localsite/js/map.js</a> file.<br><br>
 
 Possible EDP form sample: [ClimateEarth.com demo](https://www.climateearth.com/command-qc-demo-sign-up/)  
 Also, [GreenDelta Java EPD editor](https://github.com/GreenDelta/epd-editor)  
