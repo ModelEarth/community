@@ -1,3 +1,18 @@
+<div style="font-size:25px;">Our 2021 Winners!</div>
+
+**Best in Show:** Loyola Chicago - Composting and Biodiesel -  Konstantin, Federico and Shriya
+**Best Technical Tool:** Environmental Impact Labels, Abrie, Code for Atlanta
+**Most Community Love:** Code for Hawai'i,  - Jess, Joel, Ben, Chris, Heather
+**Most Activating:** Get Involved, Ryan in Los Angeles
+**Best Integration:** Clean Power, Akilah and Kathryn, Code for Atlanta
+**Best Pictures:** Colorado, Don and Julie
+
+
+<br>
+
+<b>Previous Event</b><br>
+<div style="font-size:25px;">Saturday, Oct 2, 2021: 10AM to 6PM ET</div>
+
 **How will your community move beyond carbon and into a net zero future?**
 
 <i>The US Environmental Protection Agency (EPA) presents a virtual coding challenge to create <a href="../../io/">Web Pages for Communities</a> to explore local environmental impacts and innovations. Presented with <a href="https://www.codeforamerica.org/" target="_blank">Code for America</a>, this official US Federal Challenge event is offering a total of $10,000 in cash awards. Additional project support provided by the Georgia Center of Innovation.
