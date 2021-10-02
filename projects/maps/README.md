@@ -11,9 +11,11 @@ Add mockups of integrated interfaces for Department of Labor tools like the [Geo
 Update county [data prep scripts](../../localsite/info/data/) to include zip codes. Get latest from summer intern John Taylor.  
 -->
 
-Find a source of "regions within states" based on sets of counties. Apply to [region_select dropdown](../../../localsite/info/#state=GA).  
+Find a source of "regions within states" based on sets of counties. Apply to [region_select dropdown](../../../localsite/info/#mapview=counties&state=GA).  
 
+<!--
 Move items above into our [Beyond Carbon Project Board](https://github.com/localsite/localsite/projects/1). See [Hack for LA](https://github.com/hackforla/website/projects/7) examples.  
+-->
 <!-- Project created from Automated kanban with reviews template. -->
 
 DONE - Pull state data from wiki and merge with Beyond Carbon using Github Actions. We've forked Abrie's repo.
