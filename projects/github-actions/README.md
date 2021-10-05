@@ -3,7 +3,7 @@
 
 Cooridinate with Abrie on your pipeline work using Github Actions.  See his 4 sample Github Action projects below.    
 
-We are now pull CSV files froom Google Sheets every 5 minutes in the [Python Pipeline](https://github.com/modelearth/python-pipeline) set up by Dan van Kley.  
+We are now pulling CSV files froom Google Sheets every 5 minutes in the [Python Pipeline](https://github.com/modelearth/python-pipeline) set up by Dan van Kley.  
 
 [Learn about our Data Setup](../../../localsite/info/data) and view a sample Display Datasets using Tabular.
 
