@@ -24,7 +24,7 @@ https://docs.google.com/spreadsheets/d/1hnRbFDasf6rx3VS8xJ_oziF6_7laluNfZmgo6-ZD
 
 <h4>Immediate Needs</h4>
 
-Optimize the <a href="https://model.earth/io/template/feed/">Building Transparency feed display</a> so <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">map loads faster</a>.
+Optimize the <a href="../../io/template/feed/">Building Transparency feed display</a> so <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">map loads faster</a>.
 
 Pull list of local project/repair needs from <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a>.
 
