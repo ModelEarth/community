@@ -1,5 +1,5 @@
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
-<a href="../../community/projects/#widgets">UX/UI</a> - Mini & Super Widgets
+<a href="../../community/projects/#widgets">UX/UI</a> - Environmental Profile Labels, Mini & Super Widgets
 <a href="../../community/projects/#profile-editor">JQuery/React</a> - Environmental Profile Editor
 <a href="../../community/projects/#io">React/JS</a> - Inflow-Outflow and Sankey Charts
 <a href="../../community/projects/#github-actions">Python/R</a> - GitHub Actions Data Pipeline
