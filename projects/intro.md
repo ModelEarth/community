@@ -30,7 +30,7 @@ Pull list of local project/repair needs from <a href="http://dev.seeclickfix.com
 
 Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a>
 
-Our <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/edit">Democracy Lab Scope of Work</a>
+Our <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Democracy Lab Scope of Work</a>
 
 <!--
 1. Create a node script in the "apps" repo that pulls three <a href="../../localsite/start/">ModelEarth repos</a> (localsite, io and apps) into one local "webroot".<br><br>
