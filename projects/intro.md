@@ -1,6 +1,6 @@
 We're demonstrating Better Civic Site implementations that combine the talents of multiple Code for America city brigades using Drupal, Django and ERPNext. The goal is to provide rapidly deployable, disposable backends that allow for easy contributions by civic minded micro-contractors and volunteers.  <!--For volunteer onboarding, we's like to partner with Hack for LA to include LA’s new [volunteer skill-base system](https://github.com/hackforla/VRMS). -->
 
-The Better Civic Site demos will provide “imaginary towns” using themes like Marvel Comics and the Last Airbender. 
+The Better Civic Site demos could provide “imaginary towns” using themes like Marvel Comics and the Last Airbender. 
 For the Django portion, we're planning to extend the [DemocracyLab](https://democracylab.org) project tools to add [voting tools](https://github.com/kevmoo/vote.dart).
 <!--
 We could integrate the project index tools that Code for America is creating from Italy’s meta-tag editor, and include both login.gov and BrightID login’s for unique user validation. 
@@ -38,7 +38,10 @@ Pull list of local project/repair needs from <a href="http://dev.seeclickfix.com
 
 DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=state).
 
-Our <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Democracy Lab Scope of Work</a>
+<h4>Democracy Lab</h4>
+
+Our <a href="https://www.democracylab.org/projects/834">Democracy Lab profile</a> and <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a>
+<!-- https://spatial.chat/s/QiqoChat2 -->
 
 <!--
 1. Create a node script in the "apps" repo that pulls three <a href="../../localsite/start/">ModelEarth repos</a> (localsite, io and apps) into one local "webroot".<br><br>
