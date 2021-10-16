@@ -1,3 +1,11 @@
+We're demonstrating Better Civic Site implementations that combine the talents of multiple Code for America city brigades using Drupal, Django and ERPNext. The goal is to provide rapidly deployable, disposable backends that allow for easy contributions by civic minded micro-contractors and volunteers.  <!--For volunteer onboarding, we's like to partner with Hack for LA to include LA’s new [volunteer skill-base system](https://github.com/hackforla/VRMS). -->
+
+The Better Civic Site demos will provide “imaginary towns” using themes like Marvel Comics and the Last Airbender. 
+For the Django portion, we're planning to extend the [DemocracyLab](https://democracylab.org) project tools to add [voting tools](https://github.com/kevmoo/vote.dart).
+<!--
+We could integrate the project index tools that Code for America is creating from Italy’s meta-tag editor, and include both login.gov and BrightID login’s for unique user validation. 
+-->
+
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
 <a href="../../community/projects/#widgets">UX/UI</a> - Environmental Profile Labels, Mini & Super Widgets
 <a href="../../community/projects/#profile-editor">JQuery/React</a> - Environmental Profile Editor
@@ -24,11 +32,11 @@ https://docs.google.com/spreadsheets/d/1hnRbFDasf6rx3VS8xJ_oziF6_7laluNfZmgo6-ZD
 
 <h4>Immediate Needs</h4>
 
-Optimize the <a href="../../io/template/feed/">Building Transparency feed display</a> so <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">map loads faster</a>.
+Optimize the <a href="../../io/template/feed/">Building Transparency feed display</a> to <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">load the map in under 0.5 seconds</a>.
 
 Pull list of local project/repair needs from <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a>.
 
-Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a>
+DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=state).
 
 Our <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Democracy Lab Scope of Work</a>
 
