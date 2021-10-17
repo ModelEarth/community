@@ -40,7 +40,7 @@ DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json 
 
 <h4>Democracy Lab</h4>
 
-Our <a href="https://www.democracylab.org/projects/834">Democracy Lab profile</a> and <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a>
+Our <a href="https://www.democracylab.org/projects/834">Democracy Lab profile</a> and <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a> and <a href="https://www.ewg.org/">EWG</a>
 <!-- https://spatial.chat/s/QiqoChat2 -->
 
 <!--
