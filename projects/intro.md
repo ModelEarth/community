@@ -52,7 +52,9 @@ and <a href="https://www.ewg.org/">EWG</a>
 
 Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboardseminars) focused on local sources and sinks for greenhouse gas emissions. Drawdown Georgia uses the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html) along with the US Energy Information Administration (EIA) open API and other federal datasets - some of which are also included in the USEEIO/Flowsa data pipeline. 
 
-Our site also uses the EIA energy data and other [io flow data](../../io/about/api) via the [USEEIO widgets](../../io/charts/).
+<h4>Environmentally-Extended Input Output Data</h4>
+
+[The EPA's USEEIO widgets](../../io/charts/) use the EIA energy data and other input-output flow data compiled by flowsa. [View list of data sources](../../io/about/api).
 
 <!-- https://spatial.chat/s/QiqoChat2 -->
 
