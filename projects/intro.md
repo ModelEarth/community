@@ -47,10 +47,11 @@ DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json 
 and <a href="https://www.ewg.org/">EWG</a>
 -->
 
-<h4>Drawdown Data</h4>
+<h4>Emissions Dashboard</h4>
 
-Georgia Tech is developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboard) focused on local sources and sinks for greenhouse gas emissions. 
-It uses the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html). Here are the [data sources](../../io/about/api) behind the USEEIO widgets in our site.
+Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboardseminars) focused on local sources and sinks for greenhouse gas emissions. Drawdown Georgia uses the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html) along with the US Energy Information Administration (EIA) open API and [other datasets](https://cepl.gatech.edu/dashboardseminars) - some of which are also included in the USEEIO/Flowsa data pipeline. 
+
+EIA energy data and other [io data](../../io/about/api) are managed as flows for the USEEIO widgets in our site.
 
 <!-- https://spatial.chat/s/QiqoChat2 -->
 
