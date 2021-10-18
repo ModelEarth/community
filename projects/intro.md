@@ -50,7 +50,7 @@ and <a href="https://www.ewg.org/">EWG</a>
 <h4>Drawdown Data</h4>
 
 Georgia Tech is developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboard) focused on local sources and sinks for greenhouse gas emissions. 
-It uses the [](). Here are the [data sources](../../io/data/api) behind the USEEIO widgets in our site.
+It uses the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html). Here are the [data sources](../../io/about/api) behind the USEEIO widgets in our site.
 
 <!-- https://spatial.chat/s/QiqoChat2 -->
 

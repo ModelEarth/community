@@ -14,7 +14,7 @@
 
 ## React and Leaflet - Chlorpleth Map
 
-Find and implement a React Leaflet Chlorpleth Map with a clickable legend. See our Loren's [Community Forecasting Map](https://model.earth/community-forecasting). Click "Choose Area of Focus". This example was created during a team project in Polo's Data Visualization course at Georgia Tech. The Leaflet maps includes a legend with the color scale. This sample legend is not clickable, but the color scale is based on the data range.  
+Find and implement a React Leaflet Chlorpleth Map with a clickable legend like in [EWG](https://www.ewg.org/). Also see the [Community Forecasting Map](https://model.earth/community-forecasting). Click "Choose Area of Focus". This example was created during a team project in Polo's Data Visualization course at Georgia Tech. The Leaflet maps includes a legend with the color scale. This sample legend is not clickable, but the color scale is based on the data range.  
 
 ## React - Heatmap Mosaic
 
