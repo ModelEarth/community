@@ -12,7 +12,7 @@ Here's a example of [clustering zip code data for multiple parameters](../../com
 ## State Centroids
 
 Script for generating state centroids from TIGER data resides in:  
-[model.earth/community-data/us/](https://model.earth/community-data/us/) and [community/info/rstudio](../info/rstudio)(older)  
+[model.earth/community-data/us/](https://model.earth/community-data/us/) and [community/info/rstudio](../info/rstudio) (older)  
 <br>
 
 
