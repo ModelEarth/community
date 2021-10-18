@@ -40,7 +40,8 @@ DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json 
 
 <h4>Democracy Lab</h4>
 
-<a href="https://www.democracylab.org/projects/834">Neighborhood.org Democracy Lab profile</a> and <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a> and our new [Project API Pull](../../io/template/feed/demolab.html)
+<a href="https://www.democracylab.org/projects/834">Neighborhood.org Democracy Lab profile</a> and <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a>.
+Our [DemLab Project API Pull test](../../io/template/feed/demolab.html) and the [DemLab Contributor Guide](https://docs.google.com/document/d/1OLQPFFJ8oz_BxpuxRxKKdZ2brmlUkVN3ICTdbA_axxY/edit#).
 
 <!--
 <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI
@@ -49,9 +50,9 @@ and <a href="https://www.ewg.org/">EWG</a>
 
 <h4>Emissions Dashboard</h4>
 
-Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboardseminars) focused on local sources and sinks for greenhouse gas emissions. Drawdown Georgia uses the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html) along with the US Energy Information Administration (EIA) open API and [other datasets](https://cepl.gatech.edu/dashboardseminars) - some of which are also included in the USEEIO/Flowsa data pipeline. 
+Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboardseminars) focused on local sources and sinks for greenhouse gas emissions. Drawdown Georgia uses the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html) along with the US Energy Information Administration (EIA) open API and other federal datasets - some of which are also included in the USEEIO/Flowsa data pipeline. 
 
-EIA energy data and other [io data](../../io/about/api) are managed as flows for the USEEIO widgets in our site.
+Our site also uses the EIA energy data and other [io flow data](../../io/about/api) via the [USEEIO widgets](../../io/charts/).
 
 <!-- https://spatial.chat/s/QiqoChat2 -->
 

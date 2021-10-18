@@ -38,8 +38,7 @@ We could [set-up a Flask server](/localsite/info/data/datacommons/) using the Da
 
 
 <b>Article by the creator of DataUSA.io</b>
-(Frustrating that they have not documented their new API - Can we see what's available using Postman?):  
-<a href="https://blogs.scientificamerican.com/guest-blog/what-s-wrong-with-open-data-sites-and-how-we-can-fix-them/">What's Wrong with Open-Data Sites - and How We Can Fix Them</a> - Vast amounts of useful information can be found on government Web sites, but it's often impossible to make sense of&nbsp;it.
+<a href="https://blogs.scientificamerican.com/guest-blog/what-s-wrong-with-open-data-sites-and-how-we-can-fix-them/">What's Wrong with Open-Data Sites - and How We Can Fix Them</a> - Vast amounts of useful information can be found on government Web sites, but it's often impossible to make sense of&nbsp;it. - View our [attempts to use the DataUSA API](../../../localsite/info/data/datausa/)
 
 
 
