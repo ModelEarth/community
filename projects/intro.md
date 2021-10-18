@@ -1,11 +1,3 @@
-We're demonstrating Better Civic Site implementations that combine the talents of multiple Code for America city brigades using Drupal, Django and ERPNext. The goal is to provide rapidly deployable, disposable backends that allow for easy contributions by civic minded micro-contractors and volunteers.  <!--For volunteer onboarding, we's like to partner with Hack for LA to include LA’s new [volunteer skill-base system](https://github.com/hackforla/VRMS). -->
-
-The Better Civic Site demos could provide “imaginary towns” using themes like Marvel Comics and the Last Airbender. 
-For the Django portion, we're planning to extend the [DemocracyLab](https://democracylab.org) project tools to add [voting tools](https://github.com/kevmoo/vote.dart).
-<!--
-We could integrate the project index tools that Code for America is creating from Italy’s meta-tag editor, and include both login.gov and BrightID login’s for unique user validation. 
--->
-
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
 <a href="../../community/projects/#widgets">UX/UI</a> - Environmental Profile Labels, Mini & Super Widgets
 <a href="../../community/projects/#profile-editor">JQuery/React</a> - Environmental Profile Editor
@@ -30,6 +22,14 @@ Fall 2021 Teams and Participants
 https://docs.google.com/spreadsheets/d/1hnRbFDasf6rx3VS8xJ_oziF6_7laluNfZmgo6-ZDrqU/edit#gid=0
 -->
 
+<!--
+The Better Civic Site implementation uses Drupal, Django and ERPNext to provide rapidly deployable, disposable backends that allow for easy contributions by volunteers and contractors.
+
+Neighborhood.org themes include Marvel Comics and the Last Airbender. We're extending the [DemocracyLab](https://democracylab.org) project tools to add [voting tools](https://github.com/kevmoo/vote.dart).
+
+We're integrating the project index tools that Code for America is creating from Italy’s meta-tag editor, and include both login.gov and BrightID login’s for unique user validation.
+-->
+
 <h4>Immediate Needs</h4>
 
 Optimize the <a href="../../io/template/feed/">Building Transparency feed display</a> to <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">load the map in under 0.5 seconds</a>.
@@ -40,7 +40,18 @@ DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json 
 
 <h4>Democracy Lab</h4>
 
-Our <a href="https://www.democracylab.org/projects/834">Democracy Lab profile</a> and <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a> and <a href="https://www.ewg.org/">EWG</a>
+<a href="https://www.democracylab.org/projects/834">Neighborhood.org Democracy Lab profile</a> and <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a> and our new [Project API Pull](../../io/template/feed/demolab.html)
+
+<!--
+<a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI
+and <a href="https://www.ewg.org/">EWG</a>
+-->
+
+<h4>Drawdown Data</h4>
+
+Georgia Tech is developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboard) focused on local sources and sinks for greenhouse gas emissions. 
+It uses the [](). Here are the [data sources](../../io/data/api) behind the USEEIO widgets in our site.
+
 <!-- https://spatial.chat/s/QiqoChat2 -->
 
 <!--
