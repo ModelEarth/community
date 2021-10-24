@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<!-- https://www.ewg.org/interactive-maps/pfas_contamination/map/ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://www.ewg.org/cdn-cgi/apps/head/bLMY4IbeO5Zdzi60Vrh0H1RYRxE.js"></script><link href="https://static.ewg.org/reports/interactive-maps/apple-touch-icon-144x144.png" sizes="144x144" rel="apple-touch-icon">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="author" content="EWG">
+<meta name="Copyright" content="EWG &copy; 2021" />
+<meta name="keywords" content="EWG, Environmental Working Group, Interactive Map, Map, PFAS" />
+<title>Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States</title>
+<meta name="description" content="The known extent of contamination of American communities with the highly toxic fluorinated compounds known as PFAS continues to grow at an alarming rate." />
+<meta name="title" content="Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States" />
+<meta property="og:url" content="http://www.ewg.org/interactive-maps/pfas_contamination/map/" />
+<meta property="og:title" content="Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States" />
+<meta property="og:description" content="The known extent of contamination of American communities with the highly toxic fluorinated compounds known as PFAS continues to grow at an alarming rate." />
+<meta property="og:image" content="https://static.ewg.org/reports/2019/pfas-contamination/img/EWG_Social_Share_PFAS_01.21_C01.jpg" />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="EWG">
+<meta name="twitter:creator" content="EWG">
+<meta name="twitter:title" c ontent="Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States | @ewg | ">
+<meta name="twitter:description" content="Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States | @ewg | ">
+<meta name="twitter:image:src" content="https://static.ewg.org/reports/2019/pfas-contamination/img/EWG_Social_Share_PFAS_01.21_C01.jpg">
+<link rel="image_src" href="https://static.ewg.org/reports/2019/pfas-contamination/img/EWG_Social_Share_PFAS_01.21_C01.jpg" />
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.css' type='text/css' />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://static.ewg.org/reports/interactive-maps/main.js"></script>
+<link rel="shortcut icon" href="https://static.ewg.org/reports/interactive-maps/favicon.png" />
+
+<link rel="stylesheet" type="text/css" media="all" href="https://static.ewg.org/reports/interactive-maps/magnific-popup.css">
+<link rel="stylesheet" href="https://static.ewg.org/reports/interactive-maps/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.ewg.org/interactive-maps/pfas_contamination/css/style.css?v=4">
+<script type="text/javascript" src="https://static.ewg.org/reports/interactive-maps/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $('.popup-with-form').magnificPopup({
+							type: 'inline',
+							preloader: false,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in',
+							closeMarkup: '<img src="../img/btn-close.svg" class="mfp-close">'
+						});						
+        });
+    </script>
+<script type="text/javascript">
+        $(document).ready(function() {
+				// toggle
+				$('#close_long_map_title').on('click', function(event){
+					event.preventDefault();
+					$("#long_map_title").toggleClass("closed");
+					$("#close_long_map_title").toggleClass("closed");
+				});
+
+				// close
+				$('#zoom_message').on('click', function(event){
+					event.preventDefault();
+					$("#zoom_message").fadeOut();
+				});
+
+				// close
+				$('#fa-close').on('click', function(event){
+					event.preventDefault();
+					$("#zoom_message").fadeOut("slow");
+				});
+        });
+    </script>
+<script async src='https://www.ewg.org/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PPNMZJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'https://www.ewg.org/interactive-maps/pfas_contamination/map/gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PPNMZJ');</script>
+
+<header role="banner">
+<div id="cd-logo"><a href="https://www.ewg.org" target="blank"><img src="https://static.ewg.org/reports/interactive-maps/fullewglogo.png" alt="EWG Logo" class="fleft" style="margin-right:20px !important;"></a><div class="clear"></div></div>
+<h1><b>PFAS Contamination in the U.S. (October 4, 2021)</b></h1>
+<nav class="main-nav">
+<ul>
+
+<li><a class="popup-with-form nounderlineahref nav-share" href="#share_popup" id="share-btn"><span class="hide_on_mobile"><img src="https://www.ewg.org/interactive-maps/img/btn-share.svg" alt="Share this content"></a></li>
+<li>
+<img src="https://www.ewg.org/interactive-maps/img/btn-hamburger.svg" class="other-maps" alt="Other Maps">
+<img src="https://www.ewg.org/interactive-maps/img/close-x.svg" class="other-maps-close noshow" alt="Other Maps">
+</li>
+</ul>
+</nav>
+</header>
+<div id="mywidthdiv" class="noshow"></div> 
+
+<div id='map'>
+<nav id="menu"></nav>
+<a class="cd-signin popup-with-form nounderlineahref" href="#mapinfo_popup">
+<div class="btn-map-info">
+<span class="hide_on_mobile">info</span>
+</div>
+</a>
+
+
+</div>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.js'></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZXdnIiwiYSI6IlYxUUpUTlUifQ.87Ean7pyT-H6eapPSES_pA';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/ewg/ciyc44b4j00752snpbt41c033',
+    zoom: 4,
+    center: [-100, 40]
+});
+
+map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    placeholder: "Type an address here."
+}));
+
+//Load the vector tile source from our Mapbox
+
+map.on('load', function() {
+
+    map.addSource('Military Sites', {
+        type: 'geojson',
+        data: 'Military_2021AUG23.geojson'
+    });
+    map.addSource('Other Known Sites', {
+        type: 'geojson',
+        data: 'Others_2020JULY14.geojson'
+    });
+    map.addLayer({
+        'id': 'Other Known Sites',
+        'type': 'circle',
+        'source': 'Other Known Sites',
+        'layout': {
+            'visibility': 'visible'
+        },
+        'paint': {
+            'circle-radius': 4,
+            'circle-color': "#ff5c35",
+            'circle-opacity': 1,
+
+        },
+
+    });
+    
+    map.addLayer({
+        'id': 'Military Sites',
+        'type': 'circle',
+        'source': 'Military Sites',
+        'layout': {
+            'visibility': 'visible'
+        },
+        'paint': {
+            'circle-radius': 4,
+            'circle-color': "#691f74",
+            'circle-opacity': 1,
+
+        },
+
+    });
+        map.addSource('Drinking Water', {
+        type: 'geojson',
+        data: 'sdwis08232021.geojson'
+    });
+    map.addLayer({
+        'id': 'Drinking Water',
+        'type': 'circle',
+        'source': 'Drinking Water',
+        'layout': {
+            'visibility': 'visible'
+        },
+        'paint': {
+            'circle-radius': 4,
+            'circle-color': "#007298",
+            'circle-opacity': 1,
+
+        },
+
+    });
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
+
+    var toggleableLayerIds = ['Military Sites'];
+
+    for (var i = 0; i < toggleableLayerIds.length; i++) {
+        var id = toggleableLayerIds[i];
+
+        var link = document.createElement('div');
+        link.className = 'menu-item flex';
+        var button = '<div id="military-sites" class="military-sites menu-btn active">On</div>';
+        var span = '<span>Military Sites</span>';
+        link.innerHTML = button + span;
+
+        $('#menu').on('click', '#military-sites', function (e) {
+            var clickedLayer = 'Military Sites';
+            e.preventDefault();
+            e.stopPropagation();
+
+            var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+            if (visibility === 'visible') {
+                map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                this.className = 'military-sites menu-btn';
+                this.textContent = 'Off';
+            } else {
+                this.className = 'military-sites menu-btn active';
+                map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                this.textContent = 'On';
+            }
+        });
+
+        var layers = document.getElementById('menu');
+        layers.appendChild(link);
+    }
+    var toggleableLayerIds = ['Drinking Water'];
+
+    for (var i = 0; i < toggleableLayerIds.length; i++) {
+        var id = toggleableLayerIds[i];
+
+        var link = document.createElement('div');
+        link.className = 'menu-item flex';
+        var button = '<div id="drinking-water" class="drinking-water menu-btn active">On</div>';
+        var span = '<span>Drinking Water</span>';
+        link.innerHTML = button + span;
+
+        $('#menu').on('click', '#drinking-water', function (e) {
+            var clickedLayer = 'Drinking Water';
+            e.preventDefault();
+            e.stopPropagation();
+
+            var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+            if (visibility === 'visible') {
+                map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                this.className = 'drinking-water menu-btn';
+                this.textContent = 'Off';
+            } else {
+                this.className = 'drinking-water menu-btn active';
+                map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                this.textContent = 'On';
+            }
+        });
+
+        var layers = document.getElementById('menu');
+        layers.appendChild(link);
+    }
+    var toggleableLayerIds = ['Other Known Sites'];
+
+    for (var i = 0; i < toggleableLayerIds.length; i++) {
+        var id = toggleableLayerIds[i];
+
+        var link = document.createElement('div');
+        link.className = 'menu-item flex';
+        var button = '<div id="other-sites" class="other-sites menu-btn active">On</div>';
+        var span = '<span>Other Known Sites</span>';
+        link.innerHTML = button + span;
+
+        $('#menu').on('click', '#other-sites', function (e) {
+            var clickedLayer = 'Other Known Sites';
+            e.preventDefault();
+            e.stopPropagation();
+
+            var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+            if (visibility === 'visible') {
+                map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                this.className = 'other-sites menu-btn';
+                this.textContent = 'Off';
+            } else {
+                this.className = 'other-sites menu-btn active';
+                map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                this.textContent = 'On';
+            }
+        });
+
+        var layers = document.getElementById('menu');
+        layers.appendChild(link);
+    }
+
+
+    map.on('click', function(e) {
+        var features = map.queryRenderedFeatures(e.point, {
+            layers: ['Drinking Water']
+        });
+        if (!features.length) {
+            return;
+        }
+
+        var feature = features[0];
+		$.ajax({
+	      url : "popup_pfas_drinking_water.php?pws_id="+feature.properties["PWS_ID"],
+	      success : function(result){
+			var popup = new mapboxgl.Popup({maxWidth: ''})
+	          .setLngLat(feature.geometry.coordinates)
+	          .setHTML(result)
+	          .addTo(map);
+
+	          }
+			});
+
+		});
+
+    map.on('click', function(e) {
+        var features = map.queryRenderedFeatures(e.point, {
+            layers: ['Other Known Sites']
+        });
+        if (!features.length) {
+            return;
+        }
+
+        var feature = features[0];
+		$.ajax({
+	      url : "popup_northeastern.php?ewg_id="+feature.properties["EWG_ID"],
+	      success : function(result){
+			var popup = new mapboxgl.Popup({maxWidth: ''})
+	          .setLngLat(feature.geometry.coordinates)
+	          .setHTML(result)
+	          .addTo(map);
+
+	          }
+			});
+
+		});
+
+
+    map.on('click', function(e) {
+        var features = map.queryRenderedFeatures(e.point, {
+            layers: ['Military Sites']
+        });
+        if (!features.length) {
+            return;
+        }
+
+        var feature = features[0];
+		$.ajax({
+	      url : "popup_military.php?ewg_id="+feature.properties["EWG_ID"],
+	      success : function(result){
+			var popup = new mapboxgl.Popup({maxWidth: ''})
+	          .setLngLat(feature.geometry.coordinates)
+	          .setHTML(result)
+	          .addTo(map);
+
+	          }
+			});
+
+		});
+
+    // Use the same approach as above to indicate that the symbols are clickable
+    // by changing the cursor style to 'pointer'.
+    map.on('mousemove', function(e) {
+        var features = map.queryRenderedFeatures(e.point, {
+            layers: ['Military Sites','Drinking Water','Other Known Sites']
+        });
+        map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+    });
+});
+</script>
+
+
+<div class="related-work">
+<ul>
+<li class="related-work-header"><b>Related Work</b></li>
+<li><a href="https://www.ewg.org/key-issues/toxics/nonstick-chemicals">EWG PFAS Information</a></li>
+<li><a href="https://www.ewg.org/tapwater/">EWG Tap Water Database</a></li>
+<li><a href="https://static.ewg.org/ewg-tip-sheets/EWG-AvoidingPFCs.pdf">How Can I Avoid PFAS?</a></li>
+<li><a href="https://www.ewg.org/take-action/support-key-legislation/stop-spread-pfas-contamination">What is the Government Doing?</a></li>
+</ul>
+</div>
+<script src="https://www.ewg.org/interactive-maps/pfas_contamination/js/app.js?v=3"></script>
+<script type="text/javascript">
+		$('#map').on('click', '.mapboxgl-popup-close-button', function() {
+			
+			$('.mapboxgl-popup').remove();
+		})
+	</script>
+<script type="text/javascript">
+	$(function() {
+		// Splash elements
+		var cookiename = '2017-pfa-map';
+		var cookiesettings = {expires: 90, path: '/interactive-maps', domain: '.ewg.org', secure: false };
+
+		// Form Elements
+		var formemail = '#splash-email';
+		var formzip = '#splash-zip';
+		var formid = '#email-signup-form';
+		var formurl = '';
+
+		// jQuery .getparam plugin.
+		/**
+		* Returns get parameters.
+		*
+		* If the desired param does not exist, null will be returned
+		*
+		* To get the document params:
+		* @example value = $(document).getUrlParam("paramName");
+		*
+		* To get the params of a html-attribut (uses src attribute)
+		* @example value = $('#imgLink').getUrlParam("paramName");
+		*/
+		jQuery.fn.extend({getUrlParam:function(strParamName){strParamName=escape(unescape(strParamName));var returnVal=new Array();var qString=null;if($(this).attr("nodeName")=="#document"){if(window.location.search.search(strParamName)>-1){qString=window.location.search.substr(1,window.location.search.length).split("&")}}else if($(this).attr("src")!="undefined"){var strHref=$(this).attr("src");if(strHref.indexOf("?")>-1){var strQueryString=strHref.substr(strHref.indexOf("?")+1);qString=strQueryString.split("&")}}else if($(this).attr("href")!="undefined"){var strHref=$(this).attr("href");if(strHref.indexOf("?")>-1){var strQueryString=strHref.substr(strHref.indexOf("?")+1);qString=strQueryString.split("&")}}else{return null}if(qString==null)return null;for(var i=0;i<qString.length;i++){if(escape(unescape(qString[i].split("=")[0]))==strParamName){returnVal.push(qString[i].split("=")[1])}}if(returnVal.length==0)return null;else if(returnVal.length==1)return returnVal[0];else return returnVal}});
+
+
+		// jQuery .cookie plugin.
+		jQuery.cookie=function(name,value,options){if(typeof value!='undefined'){options=options||{};if(value===null){value='';options.expires=-1}var expires='';if(options.expires&&(typeof options.expires=='number'||options.expires.toUTCString)){var date;if(typeof options.expires=='number'){date=new Date();date.setTime(date.getTime()+(options.expires*24*60*60*1000))}else{date=options.expires}expires='; expires='+date.toUTCString()}var path=options.path?'; path='+(options.path):'';var domain=options.domain?'; domain='+(options.domain):'';var secure=options.secure?'; secure':'';document.cookie=[name,'=',encodeURIComponent(value),expires,path,domain,secure].join('')}else{var cookieValue=null;if(document.cookie&&document.cookie!=''){var cookies=document.cookie.split(';');for(var i=0;i<cookies.length;i++){var cookie=jQuery.trim(cookies[i]);if(cookie.substring(0,name.length+1)==(name+'=')){cookieValue=decodeURIComponent(cookie.substring(name.length+1));break}}}return cookieValue}};
+
+		// Check e-mail address validity.
+		function echeck(str){var at="@";var dot=".";var lat=str.indexOf(at);var lstr=str.length;var ldot=str.indexOf(dot);if(str.indexOf(at)==-1){return false}if(str.indexOf(at)==-1||str.indexOf(at)==0||str.indexOf(at)==lstr){alert("Invalid email address");return false}if(str.indexOf(dot)==-1||str.indexOf(dot)==0||str.indexOf(dot)==lstr){alert("Invalid email address");return false}if(str.indexOf(at,(lat+1))!=-1){alert("Invalid email address");return false}if(str.substring(lat-1,lat)==dot||str.substring(lat+1,lat+2)==dot){alert("Invalid email address");return false}if(str.indexOf(dot,(lat+2))==-1){alert("Invalid email address");return false}if(str.indexOf(" ")!=-1){alert("Invalid email address");return false}return true}
+
+
+		// Checks to see if the "inlist=Y" parameter is set so that the splash does not show to people already in the page.
+		// Checks to see if mobile browser detected and then sets cookie so splash does not appear.
+		// Also sets cookie if detected person is in the admin interface and sets the cookie for the splash does not appear.
+		var $listmember = $(document).getUrlParam("inlist");
+		if ($listmember == "Y") {
+		  $.cookie(cookiename, 'Y', cookiesettings);
+		}
+
+		// Check to make sure browser accepts cookies before actually putting the overlay up. Don't want to annoy those weird people will cookie off and JS on.
+		splashcookie = $.cookie(cookiename);
+		if (splashcookie != "Y") {
+		$.cookie('testcookie', 'Y', {expires: 0, path: '/', domain: '.ewg.org', secure: false });
+		testcookie = $.cookie('testcookie');
+		if (testcookie == "Y") {
+
+			setTimeout(function() {
+				$('#email-signup-wrapper').show();
+				$.cookie(cookiename, 'Y', cookiesettings);
+			}, 15000);
+
+		  $(document).on('submit', formid, function(e) {
+				$('#email-signup-wrapper').hide();
+		  });
+
+		}} // End testcookie and splashcookie testing
+
+		$('#close-email-signup-form').click(function(e) {
+			$('#email-signup-wrapper').hide();
+		})
+	});
+	</script>
+<div id="share_popup" class="mfp-hide white-popup-block3 zoom-anim-dialog">
+<h1 class="noshow">Share this page</h1>
+<div class="addthis_toolbox" addthis:title="Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States" addthis:description="The known extent of contamination of American communities with the highly toxic fluorinated compounds known as PFAS continues to grow at an alarming rate." addthis:url="http://www.ewg.org/interactive-maps/pfas_contamination/map/">
+<a class="addthis_button_facebook noborder nounderlineahref" title="Share on Social Media"><img src="https://static.ewg.org/reports/interactive-maps/share_facebook.png" title="Share" alt="Share" /></a>
+<a class="addthis_button_twitter  noborder nounderlineahref" title="Share on Social Media" addthis:title="Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States | @ewg | "><img src="https://static.ewg.org/reports/interactive-maps/share_twitter.png" title="Share" alt="Share" /></a>
+<a class="addthis_button_google_plusone_share  noborder nounderlineahref" title="Share on Social Media"><img src="https://static.ewg.org/reports/interactive-maps/share_googleplus.png" title="Share" alt="Share" /></a>
+<a class="addthis_button_email  noborder nounderlineahref" title="Share on Social Media"><img src="https://static.ewg.org/reports/interactive-maps/share_email.png" title="Share" alt="Share" /></a>
+<a class="addthis_button_more  noborder nounderlineahref" title="Share on Social Media"><img src="https://static.ewg.org/reports/interactive-maps/share_addthis.png" title="Share on Social Media" alt="Share on Social Media" class=" noborder nounderlineahref " /></a>
+<div class="clear"></div> 
+</div> 
+
+</div> 
+<div id="mapinfo_popup" class="mfp-hide white-popup-block4 zoom-anim-dialog">
+<h1 class=''>About the Map</h1>
+<h2><b>PFAS Contamination in the U.S. (October 4, 2021)</b></h2>
+<p>For all water systems with a detection of PFOS, PFOA or another PFAS, a maximum concentration for each PFAS and a maximum total PFAS concentration is displayed. The maximum levels listed are from a single point in time and do not reflect whether a water system has changed sources or is treating the water to reduce PFAS levels.</p>
+<p>All locations represented on the map are approximate and intended to portray the general area of a contamination site or a community water system. Locations were mapped using the best data available from official records, including data provided by tests of public drinking water systems, the <a href="https://www.epa.gov/ground-water-and-drinking-water/safe-drinking-water-information-system-sdwis-federal-reporting" target="_blank" rel="noopener">Safe Drinking Water Information System</a>, the Department of Defense report “<a href="https://partner-mco-archive.s3.amazonaws.com/client_files/1524589484.pdf" target="_blank" rel="noopener">Addressing Perfluorooctane Sulfonate (PFOS) and Perfluorooctanoic Acid (PFOA)</a>,” among others.</p>
+<p>Levels listed are for the range of the total of all PFAS detected at the time of the tests and do not reflect whether a water system is treating the water to reduce levels.</p>
+<p class="source">Data on contaminated water system, industrial and military sites was current as of October 2021.</p>
+<p class="source">The Environmental Working Group welcomes requests to reproduce EWG PFAS data for peer-reviewed articles in scientific journals. To request permission, please email a completed <a href="https://cdn3.ewg.org/sites/default/files/u352/ewg_reprint_permission.pdf" target="_blank">EWG Materials Request Form</a> to <a href="/cdn-cgi/l/email-protection#55253027383c26263c3a3b2730242030262126153022327b3a2732"><span class="__cf_email__" data-cfemail="89f9ecfbe4e0fafae0e6e7fbecf8fcecfafdfac9ecfeeea7e6fbee">[email&#160;protected]</span></a>. EWG reviews requests on a case-by-case basis and reserves the right to deny permission for any reason, at its sole discretion.</p>
+<p class="source"><b>Disclaimer:</b> EWG has worked to ensure the accuracy of the information provided in this map. The map is dynamic. This contaminant site, results, suspected sources and other information in the database may change based on evolving science, new information or other factors. Please be advised that this information frequently relies on data obtained from many sources, and accordingly, EWG cannot guarantee the accuracy of the information provided or any analysis based thereon.</p>
+<br>
+<div class='map-key'>
+<hr>
+<div class='flex-wrapper'>
+<h2 class='legend-header'><b>MAP KEY</b></h2>
+<div class='key-items-wrapper flex'>
+<div class='key-item'>
+<div class='military-sites-legend menu-btn'></div>
+<span>Military Sites</span>
+</div>
+<div class='key-item'>
+<div class='drinking-water-legend menu-btn'></div>
+<span>Drinking Water</span>
+</div>
+<div class='key-item'>
+<div class='other-sites-legend menu-btn'></div>
+<span>Other Known Sites</span>
+</div>
+</div>
+</div>
+<hr>
+</div>
+<div class='clear'></div>
+</div>
+<div id="search_popup" class="mfp-hide white-popup-block4 zoom-anim-dialog">
+<h1 class=""><i class="fa fa-search fa-fw"></i> Search by Zip Code</h1>
+<div class="report-title"><span>Please type below a 5-digit Zip Code, then click on "SEARCH"</div>
+<div class="my-legend">
+<form name="formzip" id="formzip" method="get" action="2016-chromium6-search.php">
+<input type="text" placeholder="Zip" name="zipcode" id="zipcode" required maxlength="5">
+<input type="submit" name="submit" id="submit" value="Search">
+<div class="clear"></div> 
+</form>
+</div> <!-- -->
+</div> 
+
+
+<script data-cfasync="false" src="https://www.ewg.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+	var addthis_share = addthis_share || {}
+		addthis_share = {
+			passthrough : { twitter: {	  text: "Interactive Map: PFAS Contamination Crisis: New Data Show 2,854 Sites in 50 States | @ewg |  via @EWG"  }}
+			/*,
+			url: "#/",
+			*/
+	};
+
+	var addthis_config = {
+		data_ga_property: 'UA-296149-22',
+		data_track_addressbar: false,
+		data_ga_social: true,
+		data_track_clickback: false,
+		data_track_textcopy: true,
+		ui_click: false,
+		url_transforms: {
+			clean: true
+		}
+	};
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e31767a3587c42e" async></script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    _gaq.push(
+      ['_setAccount', 'UA-296149-1'],
+      ['_setDomainName', '.ewg.org'],
+      ['_trackPageview'],
+      ['rollup._setAccount', 'UA-296149-22'],
+      ['rollup._setDomainName', '.ewg.org'],
+      ['rollup._trackPageview']
+    );
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+	</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6a244f00e2b11014","token":"46b4951c6a244ba58ebd60d09508ed3f","version":"2021.10.0","si":100}'></script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6a244f00aa7a1014',m:'lS7ugNjrJrjGqzIeu7WPQqErbZT8PfQVP_5Ghtzj1UU-1634922306-0-Ad0GoJgoUzZuickgpSfysLYylqVLKLQKgB5zkIaA3vmfphOGDyThnms/3WjbXygw/Ok70ENQHsz76oOuHgHM8yfZi8EONwFE7CCQffeBiDGD03MgKw7mzl10NMzmtJTAji17gX++fa8MFvQd8IHX7dRRAdM2LbnO1ICPGUThV4dC',s:[0x9748c51d20,0x2eddf93992],}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6a244f00aa7a1014","token":"46b4951c6a244ba58ebd60d09508ed3f","version":"2021.10.0","si":100}'></script>
+</body>
+</html>

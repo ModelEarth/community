@@ -15,7 +15,7 @@ The localsite/map/index.html page is loaded as a template.
 [Brigade Project Network](https://projects.brigade.network/) and [Column Names](../../../localsite/map/neighborhood/)
 <!-- 
 CfA Taxonomy: http://bluecompass.org/cfa/taxonomy2.html
-democracy lab index: https://www.democracylab.org/api/projects/?page=1 -->
+Democracy lab index: https://www.democracylab.org/api/projects/?page=1 -->
 
 ## [US Income by County (choropleth map)](../../map/income)
 ## [Industry Mix (zip codes)](../../zip/leaflet/#columns=JobsAgriculture:50;JobsManufacturing:50)

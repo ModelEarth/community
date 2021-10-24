@@ -515,55 +515,6 @@ iframe {
   text-decoration: none;
 }
 
-/* json to html display */
-.json_to_html_table {
-  margin-bottom: 30px; /* not working */
-}
-.titlecell {
-  border-top: 1px solid #ddd;
-  margin-top:5px;
-  float:left;
-  clear:both;
-  min-width: 200px;
-  font-weight: 500;
-  padding-left: 6px;
-  background-colorX: #bbb;
-}
-.rightcell {
-  border-top: 1px solid #ddd;
-  margin-top:5px;
-  overflow: auto;
-  font-weight: 350;
-  color: #000;
-}
-.rightlogo {
-  width:100%;
-  max-width:300px;
-  margin-top:5px;
-  margin-bottom:5px;
-}
-.hidden {
-  displayX:none;
-}
-.level1 {
-  color: #fff;
-  background: #777;
-  font-size: 11pt;
-  padding:6px;
-  margin-top:14px; /* margin-bottom breaks alignment of clear:both on titlecell div */
-  cursor: pointer;
-}
-.bucketDesc {
-  white-space: nowrap;
-}
-
-.json_to_html_table .titlecell:first-of-type {
-  border-top: 0px #fff solid;
-}
-.json_to_html_table .rightcell:first-of-type {
-  border-top: 0px #fff solid;
-}
-
 @media (max-width: 800px) {
   .headerRect {
     display:none;

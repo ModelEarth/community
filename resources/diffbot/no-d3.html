@@ -25,12 +25,19 @@
     </style>
 </head>
 <body>
-    <div id="showData"></div>
+    <div style="margin-top:30px; margin-left:40px">
+        <div id="showData"></div>
+    </div>
 </body>
 
 <script>
     $(document).ready(function () {
-        $.getJSON("https://neighborhood.org/brigade-information/organizations.json", function (data) {
+        
+        // Brigades
+        //$.getJSON("https://neighborhood.org/brigade-information/organizations.json", function (data) {
+
+        // Project Repos
+        $.getJSON("https://model.earth/apps/brigades/json/brigade-projects.json", function (data) {
 
         // CORS error
         //("https://buildingtransparency.org/api/materials?page_number=1&page_size=25&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-FL&epd__date_validity_ends__gt=2021-08-24", function (data) {
