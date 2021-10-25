@@ -161,6 +161,7 @@ $(document).ready(function () {
 	// General Mills - Returns 3
 	//var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=3&from=0&query=type%3AOrganization%20name%3A%22General%20Mills%22";
 	
+	quantity = 1;
 	var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
 
 	// selected_array[] Declared in /localsite/js/localsite.js
@@ -169,6 +170,10 @@ $(document).ready(function () {
 	selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
 	
 	if (!param.zip) {
+
+		
+		barName = "name"
+
 		$('#pageTitle').html("NASA Image Feed");
 		// NASA images and videos
 		url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&hd=True&count=2"; // &count=1
@@ -178,11 +183,18 @@ $(document).ready(function () {
 		// Taxonomy
 		// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Priority-Action-Areas
 		$('#pageTitle').html("Brigades");
+		//$('#pageTitleText').html("Clicking to expand is slow because of html display.<br><br>");
 		url = "/apps/brigades/json/brigade-projects.json";
 		//url = "https://statusboard.brigade.cloud/api/data.json";
-
 		selected_array = [];
-		barName = "name"
+
+		$('#pageTitle').html("Civic Tech Categories");
+		$('#pageTitleText').html("Pulled from <a href='https://codeforamerica.github.io/civic-tech-taxonomy/editor-ui/swagger.html#' target='_blank'>Civic Tech Taxonomy Swagger</a><br><br>");
+		url = "https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy";
+		selected_array = [];
+		barName = "text"
+
+		
 	}
 	//console.log(url)
 
@@ -190,13 +202,17 @@ $(document).ready(function () {
 	let maxcount = 10;
     d3.json(url).then(function(json,error) {
     	var fullHtml = '';
-    	if (Array.isArray(json)) { // Other than DifBot - NASA when count included
+    	if (Array.isArray(json)) { // Other than DiffBot - NASA when count included
     		for (a in json) {
     			count++;
     			if (count <= maxcount) {
-	    			fullHtml += "<div class='level1'>" + count + ". " + json[a][barName] + "</div>\n";
+    				if (json[a][barName]) {
+		    			fullHtml += "<div class='level1'>" + count + ". " + json[a][barName] + "</div>\n";
+		    		} else {
+		    			fullHtml += "<div class='level1'>" + count + ".</div>\n";
+		    		}
 	    			for (b in json[a]) {
-	    				fullHtml += "<div class='level1children' style='display:none'>"
+	    				fullHtml += "<div class='level1children' style='displayX:none'>"
 	    				fullHtml += formatRow(b,json[a][b],1); // Resides in localsite.js
 	    				fullHtml += "</div>"
 	    			}
@@ -286,7 +302,7 @@ $(document).ready(function () {
 	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
 	-->
 
-	Clicking to expand is slow because of html display.<br><br>
+	<div id="pageTitleText"></div>
 
 	<div id="result">Loading local organizations...<br></div>
 	<div id="resultFull"></div>
