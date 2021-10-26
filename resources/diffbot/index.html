@@ -180,8 +180,9 @@ $(document).ready(function () {
 		selected_array = ["date","explanation","url","hdurl"]; // "title"
 		barName = "title"
 
-		// Taxonomy
+		// Taxonomy -  Also use: category=Priority-Action-Areas
 		// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Priority-Action-Areas
+		// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Issues
 		$('#pageTitle').html("Brigades");
 		//$('#pageTitleText').html("Clicking to expand is slow because of html display.<br><br>");
 		url = "/apps/brigades/json/brigade-projects.json";

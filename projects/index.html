@@ -9,7 +9,7 @@
 <script type="text/javascript" src="../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/d3/d3.v5.min.js"></script>
 <script type="text/javascript" src="../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
-<script type="text/javascript" src="../../localsite/js/localsite.js?sidecolumn=community/nav.html"></script>
+<script type="text/javascript" src="../../localsite/js/localsite.js?display=locfilters&sidecolumn=community/nav.html"></script>
 <script type="text/javascript" src="../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
 <link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
 
@@ -30,13 +30,6 @@
 <meta name="twitter:description" content="Economic data, community resources and planning input combined with the EPA's new environmental indicator model." />
 <meta name="twitter:image" content="https://model.earth/community/img/overview/code-for-america-rect.jpg" />
 
-</head>
-
-<!--
-    12-digit FIPS Code - state, county, tract, block group
-    https://www.policymap.com/2012/08/tips-on-fips-a-quick-guide-to-geographic-place-codes-part-iii/
--->
-<body>
 <script>
   //loadMarkdown("README.md", "readmeDiv", "_parent");
   loadMarkdown("intro.md", "introDiv", "_parent");
@@ -115,6 +108,16 @@
     margin-top:0px;
 }
 </style>
+
+</head>
+
+<!--
+    12-digit FIPS Code - state, county, tract, block group
+    https://www.policymap.com/2012/08/tips-on-fips-a-quick-guide-to-geographic-place-codes-part-iii/
+-->
+<body>
+<div id="bodyFile"></div>
+
 <div id="log_display" style="display:none"></div><!-- a work in progress -->
 
 <div style="background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; border:0px">
