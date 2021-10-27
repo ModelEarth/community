@@ -146,6 +146,7 @@ and (max-device-width : 480px) {
 <script type="text/javascript">
 
 $(document).ready(function () {
+	let hash = getHash();
 	//var zip = param["zip"] || "30318";
 	var zip = param.zip;
 	var barName = "title"
@@ -162,39 +163,44 @@ $(document).ready(function () {
 	//var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=3&from=0&query=type%3AOrganization%20name%3A%22General%20Mills%22";
 	
 	quantity = 1;
-	var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
+	let url = "";
+	selected_array = [];
 
-	// selected_array[] Declared in /localsite/js/localsite.js
-	// Currently commented out in localsite.js
-	// Adjust map page too if adding.
-	selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
-	
 	if (!param.zip) {
 
-		
-		barName = "name"
+		if (hash.feed == "diffbot") {
+			quantity = 1;
+			$('#pageTitle').html("DiffBot JSON API - ZIP CODE " + ziptext);
+			url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
 
-		$('#pageTitle').html("NASA Image Feed");
-		// NASA images and videos
-		url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&hd=True&count=2"; // &count=1
-		selected_array = ["date","explanation","url","hdurl"]; // "title"
-		barName = "title"
+			// selected_array[] Declared in /localsite/js/localsite.js
+			// Currently commented out in localsite.js
+			// Adjust map page too if adding.
+			selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
+			
+		} else if (hash.feed == "nasa") {
+			$('#pageTitle').html("NASA Image Feed");
+			// NASA images and videos
+			url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&hd=True&count=2"; // &count=1
+			selected_array = ["date","explanation","url","hdurl"]; // "title"
+			barName = "title"
+		} else if (hash.feed == "brigades") {
+			// Taxonomy -  Also use: category=Priority-Action-Areas
+			// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Priority-Action-Areas
+			// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Issues
+			$('#pageTitle').html("Brigades");
+			//$('#pageTitleText').html("Clicking to expand is slow because of html display.<br><br>");
+			url = "/apps/brigades/json/brigade-projects.json";
+			//url = "https://statusboard.brigade.cloud/api/data.json";
 
-		// Taxonomy -  Also use: category=Priority-Action-Areas
-		// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Priority-Action-Areas
-		// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Issues
-		$('#pageTitle').html("Brigades");
-		//$('#pageTitleText').html("Clicking to expand is slow because of html display.<br><br>");
-		url = "/apps/brigades/json/brigade-projects.json";
-		//url = "https://statusboard.brigade.cloud/api/data.json";
-		selected_array = [];
-
-		$('#pageTitle').html("Civic Tech Categories");
-		$('#pageTitleText').html("Pulled from <a href='https://codeforamerica.github.io/civic-tech-taxonomy/editor-ui/swagger.html#' target='_blank'>Civic Tech Taxonomy Swagger</a><br><br>");
-		url = "https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy";
-		selected_array = [];
-		barName = "text"
-
+			barName = "name"
+		} else if (!hash.feed || hash.feed == "civictech") {
+			$('#pageTitle').html("Civic Tech Categories");
+			$('#pageTitleText').html("Pulled from <a href='https://codeforamerica.github.io/civic-tech-taxonomy/editor-ui/swagger.html#' target='_blank'>Civic Tech Taxonomy Swagger</a><br><br>");
+			url = "https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy";
+			selected_array = [];
+			barName = "text"
+		}
 		
 	}
 	//console.log(url)
@@ -298,14 +304,14 @@ $(document).ready(function () {
 	Also see <a href="no-d3.html">$.getJSON</a>
 	-->
 	
-	<h1 id="pageTitle">DiffBot JSON API - ZIP CODE <span class="ziptext"></span></h1>
+	<h1 id="pageTitle"></h1>
 	<!--
 	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
 	-->
 
 	<div id="pageTitleText"></div>
 
-	<div id="result">Loading local organizations...<br></div>
+	<div id="result">Loading..<br></div>
 	<div id="resultFull"></div>
 
 </div>
