@@ -174,10 +174,10 @@ $(document).ready(function () {
 
 function displayFeed() {
 
+	let hash = getHash();
 	$("#resultFull").css("opacity","0");
 	$("#resultLoading").show(); // .text("Loading...");
 	$('#pageTitleText').html(""); // Stiil adds padding
-	let hash = getHash();
 	$("#apiFeeds option[value='" + hash.feed + "']").prop("selected", true);
 
 	//var zip = param["zip"] || "30318";
