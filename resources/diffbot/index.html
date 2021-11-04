@@ -149,8 +149,10 @@ and (max-device-width : 480px) {
 		{"value":"diffbot","name":"Diffbot"},
     {"value":"nasa","name":"NASA Image Feed"},
     {"value":"brigades","name":"Brigades"},
-    {"value":"civictech","name":"Civic Tech Categories"},
-    //{"value":"civictechindex","name":"Civic Tech Index"}
+    {"value":"civictech","name":"Civic Tech Taxonomy"},
+    {"value":"civictechcats","name":"Civic Tech Categories"},
+    {"value":"civictechindex","name":"Civic Tech Index - Organizations"},
+    {"value":"civictechlinks","name":"Civic Tech Index - Links"},
   ]}
 
 document.addEventListener('hashChangeEvent', function (elem) {
@@ -166,12 +168,18 @@ $(document).ready(function () {
   }
   $("#apiFeeds").html(listItems);
 
+
   displayFeed();
 });
 
 function displayFeed() {
 
+	$("#resultFull").css("opacity","0");
+	$("#resultLoading").show(); // .text("Loading...");
+	$('#pageTitleText').html(""); // Stiil adds padding
 	let hash = getHash();
+	$("#apiFeeds option[value='" + hash.feed + "']").prop("selected", true);
+
 	//var zip = param["zip"] || "30318";
 	hash.zip = hash.zip || "30318";
 	//var zip = param.zip;
@@ -233,8 +241,17 @@ function displayFeed() {
 			url = "https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy";
 			selected_array = [];
 			barName = "text"
+		} else if (hash.feed == "civictechcats") {
+			url = "https://api.taxonomy.sandbox.k8s.brigade.cloud/categories/";
+			barName = "category"
 		} else if (hash.feed == "civictechindex") {
-			url = "https://api-stage.civictechindex.org/swagger/?format=openapi"
+			//url = "https://api-stage.civictechindex.org/swagger/?format=openapi"
+			url = "https://api-stage.civictechindex.org/api/organizations/";
+			barName = "name"
+		} else if (hash.feed == "civictechlinks") {
+			//url = "https://api-stage.civictechindex.org/swagger/?format=openapi"
+			url = "https://api-stage.civictechindex.org/api/links/";
+			barName = "link_type"
 		}
 		
 	//}
@@ -280,8 +297,10 @@ function displayFeed() {
 	        }
 		    }
 		  }
+		  $("#resultFull").css("opacity","100");
       resultFull.innerHTML = fullHtml;
-      result.innerHTML = '';
+      //resultLading.innerHTML = '';
+      $("#resultLoading").hide();
 
       // After results added to innerHTML
 	  	var anchors = document.getElementsByClassName('level1');
@@ -341,14 +360,18 @@ function displayFeed() {
 	Also see <a href="no-d3.html">$.getJSON</a>
 	-->
 	
+	<!--
 	<h1 id="pageTitle"></h1>
+	-->
+
 	<!--
 	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
 	-->
 
-	<div id="pageTitleText"></div>
 
-	<div id="result">Loading..<br></div>
+	<div id="pageTitleText" style="padding-top: 10px;"></div>
+
+	<div id="resultLoading" style="padding-top: 10px;">Loading..<br></div>
 	<div id="resultFull"></div>
 
 </div>
