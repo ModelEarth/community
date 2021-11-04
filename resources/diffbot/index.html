@@ -140,18 +140,47 @@ and (max-device-width : 480px) {
 <script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 
-<script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true"></script>
 <link rel="stylesheet" href="../../css/community.css" />
 <link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
 <script type="text/javascript">
 
+	var jsonList = {"Table" : [
+		{"value":"diffbot","name":"Diffbot"},
+    {"value":"nasa","name":"NASA Image Feed"},
+    {"value":"brigades","name":"Brigades"},
+    {"value":"civictech","name":"Civic Tech Categories"},
+    //{"value":"civictechindex","name":"Civic Tech Index"}
+  ]}
+
+document.addEventListener('hashChangeEvent', function (elem) {
+	console.log("diffbot detects URL hashChangeEvent");
+ 	displayFeed();
+}, false);
+
 $(document).ready(function () {
+
+  var listItems= "";
+  for (var i = 0; i < jsonList.Table.length; i++){
+    listItems+= "<option value='" + jsonList.Table[i].value + "'>" + jsonList.Table[i].name + "</option>";
+  }
+  $("#apiFeeds").html(listItems);
+
+  displayFeed();
+});
+
+function displayFeed() {
+
 	let hash = getHash();
 	//var zip = param["zip"] || "30318";
-	var zip = param.zip;
+	hash.zip = hash.zip || "30318";
+	//var zip = param.zip;
+	//if (!param.zip) {
+	//	param.zip = "30318"
+	//}
 	var barName = "title"
 	var quantity = 1;
-	$('.ziptext').text(zip);
+	$('.ziptext').text(hash.zip);
 	//if(param["zip"]){
 	//  	zip = param["zip"]
 	//}
@@ -166,18 +195,22 @@ $(document).ready(function () {
 	let url = "";
 	selected_array = [];
 
-	if (!param.zip) {
+	//if (!param.zip) {
 
 		if (hash.feed == "diffbot") {
-			quantity = 1;
-			$('#pageTitle').html("DiffBot JSON API - ZIP CODE " + ziptext);
-			url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation+locations.postalCode%3A%22" + zip + "%22+";
+			quantity = 2;
+			$('#pageTitle').html("DiffBot JSON API - ZIP CODE " + hash.zip);
+			url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation";
+				if (hash.zip) {
+					url += "+locations.postalCode%3A%22" + hash.zip + "%22+";
+				}
+				//alert(url)
 
 			// selected_array[] Declared in /localsite/js/localsite.js
 			// Currently commented out in localsite.js
 			// Adjust map page too if adding.
-			selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
-			
+			//selected_array=["founders","foundingDate","images","location","locations","yearlyRevenues","categories"];
+			barName = "name"
 		} else if (hash.feed == "nasa") {
 			$('#pageTitle').html("NASA Image Feed");
 			// NASA images and videos
@@ -200,9 +233,11 @@ $(document).ready(function () {
 			url = "https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy";
 			selected_array = [];
 			barName = "text"
+		} else if (hash.feed == "civictechindex") {
+			url = "https://api-stage.civictechindex.org/swagger/?format=openapi"
 		}
 		
-	}
+	//}
 	//console.log(url)
 
 	let count = 0;
@@ -290,7 +325,7 @@ $(document).ready(function () {
         if (error) throw error;
         console.log(json);
     });
-});
+}
 </script>
 
 </head>
@@ -299,6 +334,8 @@ $(document).ready(function () {
 <body>
 
 <div id="page-wrap">
+
+	<select id="apiFeeds" onchange="goHash({'feed':this.value})"></select>
 
 	<!--
 	Also see <a href="no-d3.html">$.getJSON</a>
