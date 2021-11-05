@@ -47,7 +47,7 @@ Integrate existing code from other open source projects in ways that can be reus
 
 ##Attend a meetup to collaborate with others
 
-[Upcoming Dates](../../../community/challenge/meetups/)  
+[Upcoming Dates](../../../io/coders/)  
 
 Thanks for getting involved!  
 

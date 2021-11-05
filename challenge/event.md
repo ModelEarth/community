@@ -25,7 +25,7 @@
 Work sessions are optional, but we encourage you to participate to get a jump on the competition.
 -->
 
-<a href="../../community/challenge/meetups/">View full schedule and meeting links.</a><br>
+<a href="../../io/coders/">View full schedule and meeting links.</a><br>
 
 <h2><b><!--Finale -->Event Schedule</b><br>Saturday, October 2, 2021</h2>
 10AM to 11AM ET - Introductions, Expand Teams, Walk-Through Entry Creation Steps  

@@ -146,8 +146,10 @@ and (max-device-width : 480px) {
 <script type="text/javascript">
 
 	var jsonList = {"Table" : [
+		{"value":"none","name":"Select a feed..."},
 		{"value":"diffbot","name":"Diffbot"},
     {"value":"nasa","name":"NASA Image Feed"},
+    {"value":"311","name":"See Click Fix (Open 311)"},
     {"value":"brigades","name":"Brigades"},
     {"value":"civictech","name":"Civic Tech Taxonomy"},
     {"value":"civictechcats","name":"Civic Tech Categories"},
@@ -225,6 +227,9 @@ function displayFeed() {
 			url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&hd=True&count=2"; // &count=1
 			selected_array = ["date","explanation","url","hdurl"]; // "title"
 			barName = "title"
+		} else if (hash.feed == "311") {
+			url = "https://seeclickfix.com/open311/v2/requests.json?lat=41.307153&long=-72.925791";
+			$('#pageTitleText').html("<a href='https://seeclickfix.com/open311/v2/docs' target='_blank'>About Open311 API</a><br><br>");
 		} else if (hash.feed == "brigades") {
 			// Taxonomy -  Also use: category=Priority-Action-Areas
 			// https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy?category=Priority-Action-Areas
@@ -235,9 +240,9 @@ function displayFeed() {
 			//url = "https://statusboard.brigade.cloud/api/data.json";
 
 			barName = "name"
-		} else if (!hash.feed || hash.feed == "civictech") {
+		} else if (hash.feed == "civictech") {
 			$('#pageTitle').html("Civic Tech Categories");
-			$('#pageTitleText').html("Pulled from <a href='https://codeforamerica.github.io/civic-tech-taxonomy/editor-ui/swagger.html#' target='_blank'>Civic Tech Taxonomy Swagger</a><br><br>");
+			$('#pageTitleText').html("Pulled from <a href='https://codeforamerica.github.io/civic-tech-taxonomy/editor-ui/swagger.html' target='_blank'>Civic Tech Taxonomy Swagger</a><br><br>");
 			url = "https://api.taxonomy.sandbox.k8s.brigade.cloud/taxonomy";
 			selected_array = [];
 			barName = "text"
@@ -252,6 +257,8 @@ function displayFeed() {
 			//url = "https://api-stage.civictechindex.org/swagger/?format=openapi"
 			url = "https://api-stage.civictechindex.org/api/links/";
 			barName = "link_type"
+		} else if (hash.feed) {
+			$("#resultLoading").text("Unidentified feed request: " + hash.feed)
 		}
 		
 	//}
