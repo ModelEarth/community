@@ -266,91 +266,96 @@ function displayFeed() {
 
 	let count = 0;
 	let maxcount = 10;
-    d3.json(url).then(function(json,error) {
-    	var fullHtml = '';
-    	if (Array.isArray(json)) { // Other than DiffBot - NASA when count included
-    		for (a in json) {
-    			count++;
-    			if (count <= maxcount) {
-    				if (json[a][barName]) {
-		    			fullHtml += "<div class='level1'>" + count + ". " + json[a][barName] + "</div>\n";
-		    		} else {
-		    			fullHtml += "<div class='level1'>" + count + ".</div>\n";
-		    		}
-	    			for (b in json[a]) {
-	    				fullHtml += "<div class='level1children' style='displayX:none'>"
-	    				fullHtml += formatRow(b,json[a][b],1); // Resides in localsite.js
-	    				fullHtml += "</div>"
-	    			}
+	const start = Date.now();
+
+  d3.json(url).then(function(json,error) {
+  	const millis = Date.now() - start;
+		console.log("seconds elapsed = ${Math.floor(millis / 1000)}");
+
+  	var fullHtml = '';
+  	if (Array.isArray(json)) { // Other than DiffBot - NASA when count included
+  		for (a in json) {
+  			count++;
+  			if (count <= maxcount) {
+  				if (json[a][barName]) {
+	    			fullHtml += "<div class='level1'>" + count + ". " + json[a][barName] + "</div>\n";
+	    		} else {
+	    			fullHtml += "<div class='level1'>" + count + ".</div>\n";
 	    		}
+    			for (b in json[a]) {
+    				fullHtml += "<div class='level1children' style='displayX:none'>"
+    				fullHtml += formatRow(b,json[a][b],1); // Resides in localsite.js
+    				fullHtml += "</div>"
+    			}
     		}
-    	} else {
-    		if (!json.data) {
-    			json.data = json; // For NASA
-    		}
-				for (a in json.data) { // An object. a key is 0,1,2,3,..
-					count++;
-					if (count <= maxcount) {
-	          fullHtml += "<div class='level1'>" + count + ". " + json.data[a][barName] + "</div>\n";
-	          for (b in json.data[a]) { //b is value like allNames: ["AirWatch"], so b is key for  ["AirWatch"]
+  		}
+  	} else {
+  		if (!json.data) {
+  			json.data = json; // For NASA
+  		}
+			for (a in json.data) { // An object. a key is 0,1,2,3,..
+				count++;
+				if (count <= maxcount) {
+          fullHtml += "<div class='level1'>" + count + ". " + json.data[a][barName] + "</div>\n";
+          for (b in json.data[a]) { //b is value like allNames: ["AirWatch"], so b is key for  ["AirWatch"]
 
-	          	addHtml = "";
-	          	
-	          	addHtml += formatRow(b,json.data[a][b],1); // Resides in localsite.js
-	         
-	      			//resultFull.innerHTML = resultFull.innerHTML + addHtml;
-	      			fullHtml += addHtml;
-	          }
-	        }
-		    }
-		  }
-		  $("#resultFull").css("opacity","100");
-      resultFull.innerHTML = fullHtml;
-      //resultLading.innerHTML = '';
-      $("#resultLoading").hide();
-
-      // After results added to innerHTML
-	  	var anchors = document.getElementsByClassName('level1');
-        for(var i = 0; i < anchors.length; i++) {
-            var anchor = anchors[i];
-            //if((/\blevel1\b/).match(anchor.className)) {
-                anchor.onclick = function() {
-
-                //alert("clicked")
-                $(".level1children").show();
-                //$(".level2").attr('style', 'display:block');
-
-                // These need to be revised to open current section
-
-			          var arrayOfElements=document.getElementsByClassName('level2');
-								var lengthOfArray=arrayOfElements.length;
-
-								for (var i=0; i<lengthOfArray;i++){
-								    arrayOfElements[i].classList.remove('hidden');
-								}
-
-								var arrayOfElements3=document.getElementsByClassName('level3');
-								var lengthOfArray3=arrayOfElements3.length;
-
-								for (var i=0; i<lengthOfArray3;i++){
-								    arrayOfElements3[i].classList.remove('hidden');
-								}
-
-								// At time of development there was not a level4 in DiffBot - A precaution
-								var arrayOfElements4=document.getElementsByClassName('level4');
-								var lengthOfArray4=arrayOfElements4.length;
-
-								for (var i=0; i<lengthOfArray4;i++){
-								    arrayOfElements4[i].classList.remove('hidden');
-								}
-
-                }
-            //}
+          	addHtml = "";
+          	
+          	addHtml += formatRow(b,json.data[a][b],1); // Resides in localsite.js
+         
+      			//resultFull.innerHTML = resultFull.innerHTML + addHtml;
+      			fullHtml += addHtml;
+          }
         }
+	    }
+	  }
+	  $("#resultFull").css("opacity","100");
+    resultFull.innerHTML = fullHtml;
+    //resultLading.innerHTML = '';
+    $("#resultLoading").hide();
 
-        if (error) throw error;
-        console.log(json);
-    });
+    // After results added to innerHTML
+  	var anchors = document.getElementsByClassName('level1');
+      for(var i = 0; i < anchors.length; i++) {
+          var anchor = anchors[i];
+          //if((/\blevel1\b/).match(anchor.className)) {
+              anchor.onclick = function() {
+
+              //alert("clicked")
+              $(".level1children").show();
+              //$(".level2").attr('style', 'display:block');
+
+              // These need to be revised to open current section
+
+		          var arrayOfElements=document.getElementsByClassName('level2');
+							var lengthOfArray=arrayOfElements.length;
+
+							for (var i=0; i<lengthOfArray;i++){
+							    arrayOfElements[i].classList.remove('hidden');
+							}
+
+							var arrayOfElements3=document.getElementsByClassName('level3');
+							var lengthOfArray3=arrayOfElements3.length;
+
+							for (var i=0; i<lengthOfArray3;i++){
+							    arrayOfElements3[i].classList.remove('hidden');
+							}
+
+							// At time of development there was not a level4 in DiffBot - A precaution
+							var arrayOfElements4=document.getElementsByClassName('level4');
+							var lengthOfArray4=arrayOfElements4.length;
+
+							for (var i=0; i<lengthOfArray4;i++){
+							    arrayOfElements4[i].classList.remove('hidden');
+							}
+
+              }
+          //}
+      }
+
+      if (error) throw error;
+      console.log(json);
+  });
 }
 </script>
 
