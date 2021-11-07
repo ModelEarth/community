@@ -38,7 +38,7 @@ In "profile-editor" branch, renamed to: Profile Editor, added custom.scss contai
 
 More about Code for America's [Public Code Pusher](https://brigade.cloud/projects/publiccode-helper/).  
 
-We'll optimize our <a href="../../../io/template/feed/">our call to the openEPD API</a> for the <a href="../../../localsite/info/#show=openepd&mapview=state&state=GA">OpenEPD map display</a> to load faster by fetching fewer fields. You'll find the "openEPD" settings in our <a href="../../../localsite/js/map.js">localsite/js/map.js</a> file.<br><br>
+We'll optimize <a href="../../../io/template/feed/">our call to the openEPD API</a> for the <a href="../../../localsite/info/#show=openepd&mapview=state&state=GA">OpenEPD map display</a> to load faster by fetching fewer fields. You'll find the "openEPD" settings in our <a href="../../../localsite/js/map.js">localsite/js/map.js</a> file.<br><br>
 
 This page contains [just the maps](https://model.earth/localsite/map/#show=openepd&mapview=state&state=GA) (note how slow the marker point (map1) is.  
 
