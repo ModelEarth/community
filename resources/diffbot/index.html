@@ -149,7 +149,8 @@ and (max-device-width : 480px) {
 		{"value":"none","name":"Select a feed..."},
 		{"value":"diffbot","name":"Diffbot"},
     {"value":"nasa","name":"NASA Image Feed"},
-    {"value":"311","name":"See Click Fix (Open 311)"},
+    {"value":"epd","name":"Environmental Product Declarations (EPD) - Example"},
+    //{"value":"311","name":"See Click Fix (Open 311)"},
     {"value":"brigades","name":"Brigades"},
     {"value":"civictech","name":"Civic Tech Taxonomy"},
     {"value":"civictechcats","name":"Civic Tech Categories"},
@@ -177,6 +178,9 @@ $(document).ready(function () {
 function displayFeed() {
 
 	let hash = getHash();
+	if (!hash.feed) {
+		hash.feed = "epd"
+	}
 	$("#resultFull").css("opacity","0");
 	$("#resultLoading").show(); // .text("Loading...");
 	$('#pageTitleText').html(""); // Stiil adds padding
@@ -257,9 +261,12 @@ function displayFeed() {
 			//url = "https://api-stage.civictechindex.org/swagger/?format=openapi"
 			url = "https://api-stage.civictechindex.org/api/links/";
 			barName = "link_type"
+		} else if (hash.feed == "epd") {
+			url = "../../../io/template/feed/toy100.json";
+			$('#pageTitleText').html("100 pulled from static JSON for comparison with <a href='../../../io/template/feed/'>SLOW API Pull</a>.<br><br>");
 		} else if (hash.feed) {
 			$("#resultLoading").text("Unidentified feed request: " + hash.feed)
-		}
+		} 
 		
 	//}
 	//console.log(url)
@@ -368,23 +375,25 @@ function displayFeed() {
 
 	<select id="apiFeeds" onchange="goHash({'feed':this.value})"></select>
 
-	<!--
-	Also see <a href="no-d3.html">$.getJSON</a>
-	-->
-	
-	<!--
-	<h1 id="pageTitle"></h1>
-	-->
+	<div style="margin-left:10px">
+		<!--
+		Also see <a href="no-d3.html">$.getJSON</a>
+		-->
+		
+		<!--
+		<h1 id="pageTitle"></h1>
+		-->
 
-	<!--
-	Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
-	-->
+		<!--
+		Displays json hierarchy containing arrays and objects. &nbsp;Click to expand.<br><br>
+		-->
 
 
-	<div id="pageTitleText" style="padding-top: 10px;"></div>
+		<div id="pageTitleText" style="padding-top: 10px;"></div>
 
-	<div id="resultLoading" style="padding-top: 10px;">Loading..<br></div>
-	<div id="resultFull"></div>
+		<div id="resultLoading" style="padding-top: 10px;">Loading..<br></div>
+		<div id="resultFull"></div>
+	</div>
 
 </div>
 
