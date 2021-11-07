@@ -277,7 +277,7 @@ function displayFeed() {
 
   d3.json(url).then(function(json,error) {
   	const millis = Date.now() - start;
-		console.log("seconds elapsed = ${Math.floor(millis / 1000)}");
+		console.log("API fetch - seconds elapsed " + millis / 1000);
 
   	var fullHtml = '';
   	if (Array.isArray(json)) { // Other than DiffBot - NASA when count included
