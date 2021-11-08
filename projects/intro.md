@@ -32,15 +32,18 @@ We're integrating the project index tools that Code for America is creating from
 
 <h4>Immediate Needs</h4>
 
-Integrating and updating <a href="https://www.cloudcarbonfootprint.org">CloudCarbonFootprint.org widgets</a>
+DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=state).
 
-Adding clickable legends to Leaflet Maps - from <a href="../../../community/map/ewg/">EWG legend sample</a> to [a layer sample starter map](../../community/start/maps/aside/) or [other map](../../community/start/maps/)
+Add clickable legends to Leaflet Maps - apply <a href="../../../community/map/ewg/">EWG legend sample</a> to our [neighborhood map](../../localsite/map/). Display the same layers that reside under upper right icon.
 
 Optimize the <a href="../../io/template/feed/">Building Transparency feed display</a> to <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">load the map in under 0.5 seconds</a>.
 
-Pull list of local project/repair needs from <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a> - Inquire with See-Click-Fix regarding permissions to avoid [CORS error](../../community/resources/diffbot/#feed=open311).
+Inquire with See-Click-Fix regarding adding domains so we can avoid [CORS error](../../community/resources/diffbot/#feed=open311) when pulling from the <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a>. Have them add model.earth, neighborhood.org and lifecycle.tools.
 
-DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=state).
+Integrate and update <a href="https://www.cloudcarbonfootprint.org">CloudCarbonFootprint.org widgets</a>. Investigate if these can be applied to a site hosted on GitHub with Cloudflare.
+
+[Join us](../../io/coders/) in creating a mobile survey tool for local governments with Open Seattle and Code for Atlanta.
+
 
 <h4>Democracy Lab</h4>
 
