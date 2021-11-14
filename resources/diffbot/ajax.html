@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
+<link type="text/css" href="../../../localsite/css/base.css" rel="stylesheet" />
+    <style>
+        table 
+        {
+            width: 100%;
+            font-size: 14px;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-left: 0px;
+            border-right: 0px;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: left;
+            vertical-align: top;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        
+    </div>
+    <div id="showData"></div>
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        // No luck getting this working for CamerReady, Nor others that work with D3 in index.html
+        // https://stackoverflow.com/questions/11432834/how-to-display-error-returned-by-ajax-call/11432977
+
+        let url = "/apps/brigades/json/brigade-projects.json"; // First line displays in ResponseText
+        $.ajax({
+          method: 'GET',
+          url: url,
+          dataType: 'jsonp', //change the datatype to 'jsonp' works in most cases
+          success: (res) => {
+            alert("test");
+            console.log(res);
+          },
+            error: function(error){
+                console.log("Error");
+                console.log(error);
+            }
+
+        })
+        
+    });
+</script>
+</html>

@@ -3,19 +3,23 @@
 <head>
 <meta charset="utf-8">
 <link rel="icon" type="image/x-icon" href="../../img/logo/favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>DiffBot JSON API</title>
+<script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 
-<!-- CSV reader sample by Mingsong Hu
-	http://bl.ocks.org/AMDS/4a61497182b8fcb05906
-
-	Info about reading files and COMBINING multiple sources
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true"></script>
+<link rel="stylesheet" href="../../css/community.css" />
+<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+<!-- 
+	How to use Promise.all to wait for multiple sources (csv, json) 
 	http://learnjsdata.com/read_data.html
+
+	Tabulator is recommended, but there is also CSV reader with HTML table sort by Mingsong Hu
+	http://bl.ocks.org/AMDS/4a61497182b8fcb05906
 -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--[if !IE]><!-->
 <style>
 * { 
   margin: 0; 
@@ -135,14 +139,8 @@ and (max-device-width : 480px) {
 	}
 }
 </style>
-<!--<![endif]-->
 
-<script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
-<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 
-<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true"></script>
-<link rel="stylesheet" href="../../css/community.css" />
-<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
 <script type="text/javascript">
 
 	var jsonList = {"Table" : [
@@ -275,7 +273,8 @@ function displayFeed() {
 	let maxcount = 10;
 	const start = Date.now();
 
-  d3.json(url).then(function(json,error) {
+  d3.json(url)
+  .then(function(json) {
   	const millis = Date.now() - start;
 		console.log("API fetch - seconds elapsed " + millis / 1000);
 
@@ -359,10 +358,13 @@ function displayFeed() {
               }
           //}
       }
-
-      if (error) throw error;
-      console.log(json);
-  });
+      //console.log(json);
+  })
+  .catch(function(error) {
+	    //alert(error);
+	    $("#resultLoading").text(error);
+	    //$("#resultLoading").text("Error: " + error.message);
+	});
 }
 </script>
 

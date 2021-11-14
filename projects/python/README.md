@@ -8,7 +8,7 @@ For Data Science and Computer Science
 [Display Datasets](../../../localsite/info/data/) - Tabulator Sample  
 [Industries by Zip Code (ZCTA)](../../../community/industries/)   
 [Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
-
+[Python Unit Conversion](https://pint.readthedocs.io) - PInt
 
 Predicting outcomes from changes to collections of industries and transitions within industry groups.
 
