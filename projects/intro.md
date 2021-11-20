@@ -32,6 +32,17 @@ We're integrating the project index tools that Code for America is creating from
 
 <h4>Immediate Needs</h4>
 
+During today's Give Thanks hackathon:
+
+- Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://github.com/localsite/planning) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial).
+
+- Compare our Tabulator and Material UI display of static JSON files.
+
+- Investigate loading into TypeScript UI from static JSON using Blitz, [NextJS](https://nextjs.org) and/or [Prisma](https://www.prisma.io).
+
+- Start an Open AI Codex example that interacts with the static JSON.
+
+
 DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=state).
 
 Add clickable legends to Leaflet Maps - apply <a href="../../../community/map/ewg/">EWG legend sample</a> to our [neighborhood map](../../localsite/map/). Display the same layers that reside under upper right icon.
