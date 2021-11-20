@@ -34,11 +34,12 @@ We're integrating the project index tools that Code for America is creating from
 
 During today's Give Thanks hackathon:
 
-- Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://github.com/localsite/planning) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial).
+- Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning)) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial).
 
 - Compare our Tabulator and Material UI display of static JSON files for [output and local jobs](../../localsite/info/data/).
 
-- Investigate loading into TypeScript UI from static JSON using Blitz, [NextJS](https://nextjs.org) and/or [Prisma](https://www.prisma.io).
+- Format [impact labels](../../community/projects/#widgets) with TypeScript from static JSON using [Tailwind CSS](https://tailwindcss.com), Blitz, [NextJS](https://nextjs.org) and/or [Prisma](https://www.prisma.io). Experiment with Tailwind CSS in our [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning))
+
 
 - Start an Open AI Codex example that interacts with the static JSON.
 
