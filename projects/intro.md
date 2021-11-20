@@ -36,7 +36,7 @@ During today's Give Thanks hackathon:
 
 - Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://github.com/localsite/planning) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial).
 
-- Compare our Tabulator and Material UI display of static JSON files.
+- Compare our Tabulator and Material UI display of static JSON files for [output and local jobs](../../localsite/info/data/).
 
 - Investigate loading into TypeScript UI from static JSON using Blitz, [NextJS](https://nextjs.org) and/or [Prisma](https://www.prisma.io).
 
