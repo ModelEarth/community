@@ -32,7 +32,7 @@ We're integrating the project index tools that Code for America is creating from
 
 <h4>Immediate Needs</h4>
 
-During today's Give Thanks hackathon:
+<!-- Figma -->
 
 - Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning)) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial).
 
