@@ -44,7 +44,7 @@ We're integrating the project index tools that Code for America is creating from
 - Start an Open AI Codex example that interacts with the static JSON.
 
 
-DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=state).
+DONE: Update the <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=country).
 
 Add clickable legends to Leaflet Maps - apply <a href="../../../community/map/ewg/">EWG legend sample</a> to our [neighborhood map](../../localsite/map/). Display the same layers that reside under upper right icon.
 
