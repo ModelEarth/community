@@ -36,7 +36,7 @@ We're integrating the project index tools that Code for America is creating from
 
 - [Attend a meetup](../../io/coders/) and help setup [Citizen Lab Engagement Tools](https://www.citizenlab.co) to provide mobile survey apps with Open Seattle and Code for Atlanta.
 
-- Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning)) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial).
+- Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning)) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial) and [voting app](https://dev.to/anubra266/full-stack-react-in-blitzjs-and-chakra-ui-part-2-38n4).
 
 - Compare our Tabulator and Material UI display of static JSON files for manufacturing [input-output and local job](../../localsite/info/data/) widgets.
 
@@ -49,7 +49,7 @@ We're integrating the project index tools that Code for America is creating from
 
 - Optimize the <a href="../../io/template/feed/">Building Transparency feed display</a> to <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">load the map in under 0.5 seconds</a>.
 
-- Add to our <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=country).
+- Add to our <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=country). Activate updates already pulled in from [Jenna's fork](https://github.com/JennaFlan2426/beyond-carbon-scraper) so more integers are included in the merged file.
 
 - Inquire with See-Click-Fix regarding adding domains so we can avoid [CORS error](../../community/resources/diffbot/#feed=open311) when pulling from the <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a>.<!--Have them add model.earth, neighborhood.org and lifecycle.tools.-->
 
