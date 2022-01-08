@@ -34,26 +34,34 @@ We're integrating the project index tools that Code for America is creating from
 
 <!-- Figma -->
 
-- [Attend a meetup](../../io/coders/) and help setup [Citizen Lab Engagement Tools](https://www.citizenlab.co) to provide mobile survey apps with Open Seattle and Code for Atlanta.
+- Format [impact labels](../../community/projects/#widgets) with TypeScript from static JSON using [Tailwind CSS](https://tailwindcss.com), [NextJS](https://nextjs.org) and [Prisma](https://www.prisma.io). 
+See [NextJS with Prisma example](https://github.com/prisma/prisma-examples/tree/latest/javascript/rest-nextjs).  Point the REST example at the [BuildingTransparency.org Open EPD API](https://openepd.buildingtransparency.org/#/epds/get_epds_id)
 
-- Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning)) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial) and [voting app](https://dev.to/anubra266/full-stack-react-in-blitzjs-and-chakra-ui-part-2-38n4).
+- Also see our <a href="../../io/template/feed/">Building Transparency feed display test</a> and <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">map test</a> (currently slow).
 
 - Compare our Tabulator and Material UI display of static JSON files for manufacturing [input-output and local job](../../localsite/info/data/) widgets.
 
-- Format [impact labels](../../community/projects/#widgets) with TypeScript from static JSON using [Tailwind CSS](https://tailwindcss.com), Blitz, [NextJS](https://nextjs.org) and/or [Prisma](https://www.prisma.io). Experiment with Tailwind CSS in our [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning))
 
+<!--
+- [Attend a meetup](../../io/coders/) and help setup [Citizen Lab Engagement Tools](https://www.citizenlab.co) to provide mobile survey apps with Open Seattle and Code for Atlanta.
 
-- Start an Open AI Codex example that interacts with the static JSON.
+Blitz is undergoing updates to independently extend NextJS and other.  Reactivate in a few months.
+Experiment with Tailwind CSS in our [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning))
+
+- Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning)) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial) and [voting app](https://dev.to/anubra266/full-stack-react-in-blitzjs-and-chakra-ui-part-2-38n4).
+-->
 
 - Add clickable topics based on the <a href="../../../community/map/ewg/">EWG legend sample</a> to our [Leaflet map](../../localsite/map/). Display the same layers that reside under the upper right icon.
 
-- Optimize the <a href="../../io/template/feed/">Building Transparency feed display</a> to <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">load the map in under 0.5 seconds</a>.
+
 
 - Add to our <a href="../../apps/beyondcarbon/#state=NC">Beyond Carbon json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Beyond Carbon Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=country). Activate updates already pulled in from [Jenna's fork](https://github.com/JennaFlan2426/beyond-carbon-scraper) so more integers are included in the merged file.
 
-- Inquire with See-Click-Fix regarding adding domains so we can avoid [CORS error](../../community/resources/diffbot/#feed=open311) when pulling from the <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a>.<!--Have them add model.earth, neighborhood.org and lifecycle.tools.-->
+<!--
+- Inquire with See-Click-Fix regarding adding domains so we can avoid [CORS error](../../community/resources/diffbot/#feed=open311) when pulling from the <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a>.
+-->
 
-- Integrate and update <a href="https://www.cloudcarbonfootprint.org">CloudCarbonFootprint.org widgets</a>. Investigate if these can be applied to sites hosted using GitHub Pages with Cloudflare caching.
+- Integrate and update <a href="https://www.cloudcarbonfootprint.org">CloudCarbonFootprint.org widgets</a>. Apply to sites hosted using GitHub Pages and CDN caching.
 
 
 
