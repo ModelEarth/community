@@ -82,7 +82,7 @@ Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emis
 
 <h4>Environmentally-Extended Input Output Data</h4>
 
-[The EPA's USEEIO widgets](../../io/charts/) use the EIA energy data and other input-output flow data compiled by flowsa. [View list of data sources](../../io/about/api).
+[The EPA's USEEIO widgets](../../io/charts/) use EIA energy data and other input-output flow data compiled by flowsa. [View list of data sources](../../io/about/api).
 
 <!-- https://spatial.chat/s/QiqoChat2 -->
 
