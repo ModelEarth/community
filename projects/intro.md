@@ -1,5 +1,5 @@
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
-<a href="../../community/projects/#widgets">UX/UI</a> - Impact Label Widgets
+<a href="../../community/projects/#widgets">Impact UX/UI</a> - Impact Label Widgets
 <a href="../../community/projects/#cinematic">Cinematic</a> - Environmental Impact Menu
 <a href="../../community/projects/#profile-editor">JQuery/React</a> - Environmental Profile Editor
 <a href="../../community/projects/#io">React/JS</a> - Inflow-Outflow and Sankey Charts

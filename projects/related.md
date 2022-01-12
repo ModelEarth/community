@@ -22,7 +22,13 @@
 
 <!-- Figma -->
 
-.  Point the REST example at the [BuildingTransparency.org Open EPD API](https://openepd.buildingtransparency.org/#/epds/get_epds_id)
+#### Environmentally-Extended Input Output Data
+
+[The EPA's USEEIO widgets](../../io/charts/) use EIA energy data and other input-output flow data compiled by flowsa. [View list of data sources](../../io/about/api).
+
+#### BuildingTransparency.org
+
+REST example at the [BuildingTransparency.org Open EPD API](https://openepd.buildingtransparency.org/#/epds/get_epds_id)
 
 - Also see our <a href="../../io/template/feed/">Building Transparency feed display test</a> and <a href="https://model.earth/localsite/info/?show=openepd&mapview=state#state=GA">map test</a> (currently slow).
 
@@ -67,9 +73,7 @@ and <a href="https://www.ewg.org/">EWG</a>
 
 Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboardseminars) focused on local sources and sinks for greenhouse gas emissions. The new tools use the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html) along with the US Energy Information Administration (EIA) open API and other federal datasets - some of which are also included in the USEEIO/Flowsa [data pipeline](../../localsite/info/data) used in our [site widgets](../../io/charts).
 
-<h4>Environmentally-Extended Input Output Data</h4>
 
-[The EPA's USEEIO widgets](../../io/charts/) use EIA energy data and other input-output flow data compiled by flowsa. [View list of data sources](../../io/about/api).
 
 <!-- https://spatial.chat/s/QiqoChat2 -->
 
