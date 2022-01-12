@@ -13,9 +13,18 @@ We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/acti
 
 ---
 
-**Our GitHub Actions samples**  
+#### Our GitHub Actions samples
+
 [Generate Environmental Impact Profile Labels](../../../apps/impact) - Abrie  
 [Scrape Wikipedia state carbon footprints](https://github.com/abrie/beyond-carbon-scraper) - Abrie  
 [Scrape city website and save JSON file using Python](https://github.com/abrie/atl-council-scraper) - Abrie  
 [Pull from PDF to a CSV file using R script](https://github.com/bbrewington/ga.dph.data) - Brant and Abrie  
 [Python Pipeline - Google Sheets to CSV](https://github.com/modelearth/python-pipeline) - Dan van Kley
+
+
+We generate CSV files froom Google Sheets every 5 minutes in the [Python Pipeline](https://github.com/modelearth/python-pipeline) set up by Dan van Kley.  
+
+[Learn about our Data Setup](../../../localsite/info/data) and view a sample Display Datasets using Tabular.
+
+To Do: Trigger our [FarmFresh Python](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) data pull nightly from a Github Action.  
+Updates for [Farm Fresh - Federal USDA location data](../../farmfresh) on maps. Initially merged for Aglanta. 
