@@ -8,9 +8,12 @@ Informative and Entertaining - Design the interface to float over background ima
 
 Create a friendly interface for students and educators using the EPA indicator sets of Air, Water, Land, Energy, Wealth and Health.  <a href="../../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">View inflow-outflow catgories</a>
 
-Work in the same [impact-scoreboard](https://github.com/modelearth/impact-scoreboard) repo as the [Impact Label Widgets](../../community/projects/#widgets).
+Work in the [ModelEarth Engine](https://github.com/modelearth/engine) repo, which includes a typescript branch.
 
-Optionally, start with our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.<!-- (The older category set json resides in docs/static/json thanks to Alikah )--> We've documented  <a href="https://model.earth/aws/amplify/">AWS Amplify set up steps</a>.
+<!--
+Or use our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.--><!-- (The older category set json resides in docs/static/json thanks to Alikah )-->
+<!--We've documented  <a href="https://model.earth/aws/amplify/">AWS Amplify set up steps</a>.-->
+
 
 <!--as Primary and Secondary columns in <a href="../community-data/us/indicators/LCIA_Indicator_sets.csv">LCIA_Indicator_sets.csv</a> and in the [Bio-Modeling Branch](https://github.com/modelearth/useeior/blob/Bio-Modeling/inst/extdata/USEEIO_LCIA_Indicators.csv).  
 -->
