@@ -1,7 +1,7 @@
 
 ## GitHub Actions Data Pipeline - Python/R
 
-We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide sttic data for fast loading diagrams and map layers containing 30,000+ records similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/). 
+We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide static data for fast loading diagrams and map layers containing 30,000+ records similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/). 
 
 
 
