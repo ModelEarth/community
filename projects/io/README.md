@@ -1,6 +1,6 @@
 ## React and D3 - Sankey IO Chart
 
-1. Update the [Sankey D3 Chart](../../../io/charts/sankey/) data formatting to use the same process as the [USEEIO inflow-outflow widget](../../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
+1. Work with the federal gov's new Sankey repo, update the [Sankey D3 Chart](../../../io/charts/sankey/) data formatting to use the same process to include the [USEEIO inflow-outflow widget](../../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
 
 1. Info on [How to edit IO widgets](../../../io/charts/).
 

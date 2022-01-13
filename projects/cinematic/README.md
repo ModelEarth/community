@@ -8,7 +8,7 @@ Informative and Entertaining - Design the interface to float over background ima
 
 Create a friendly interface for students and educators using the EPA indicator sets of Air, Water, Land, Energy, Wealth and Health.  <a href="../../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">View inflow-outflow catgories</a>
 
-Work in the same [nextjs-typescript-tailwind](https://github.com/modelearth/nextjs-typescript-tailwind) repo as the [Impact Label Widgets](../../community/projects/#widgets).
+Work in the same [impact-scoreboard](https://github.com/modelearth/impact-scoreboard) repo as the [Impact Label Widgets](../../community/projects/#widgets).
 
 Optionally, start with our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.<!-- (The older category set json resides in docs/static/json thanks to Alikah )--> We've documented  <a href="https://model.earth/aws/amplify/">AWS Amplify set up steps</a>.
 
