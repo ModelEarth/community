@@ -19,7 +19,7 @@ Here’s an <a href="https://last-airbender-api.herokuapp.com/">Airbender API</a
 
 Pull dynamically from the <a href="https://developer.marvel.com/documentation/images">Marvel Character API</a> and use D3 to add interactivity - <a href="https://planet.live/marvel/">Planet.live&nbsp;Marvel&nbsp;sample</a>  
 
-Get creative! Explore other movie/book themes and explore how environmental indicators could be an integral part of multiple forms of entertainment. Here's a potential background image:  
+Get creative! Explore other movie/book themes and brainstorm how environmental indicators could be an integral part of multiple forms of entertainment. Here's a potential background image. Try some [Glassmorphism](https://davidlevai.com/tailwind-glassmorphism)!  
 
 <div class="lazy bgimg bgimg-notfixed" data-src="img/bkgd.jpg" style="opacity:.85">
     <a href="../../../io/charts/inflow-outflow/#set=water&indicators=WATR,ACID,EUTR,ETOX"><img src="../../../io/charts/inflow-outflow/img/bkgd.jpg" style="opacity:.95;width:100%"></a>
