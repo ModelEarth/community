@@ -11,6 +11,8 @@ We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/acti
 
 3. Prepare BuildingTransparency.org API data for [label templates](../../../io/template/) and integrate with EPA USEEIO static json files. Steps for [getting started with impact labels](../../../community/projects/#widgets).
 
+4. Investigate NAICS file format pulled into [federal Sankey](https://federalist-c3fa68f6-ee2f-4053-9a71-252d9abebb5f.app.cloud.gov/site/18f/federal-carbon-footprint/) and prepare an industry list with areas of opperation similar to the [Amazon Carbon Footprint report].
+
 ---
 
 #### Our GitHub Actions samples

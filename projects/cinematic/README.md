@@ -8,7 +8,7 @@ Informative and Entertaining - Design the interface to float over background ima
 
 Create a friendly interface for students and educators using the EPA indicator sets of Air, Water, Land, Energy, Wealth and Health.  <a href="../../../io/charts/inflow-outflow/#set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS">View inflow-outflow catgories</a>
 
-Work in the [ModelEarth Engine](https://github.com/modelearth/engine) repo, which includes a typescript branch.
+Work in the [Engine-Storybook](https://github.com/localsite/engine-storybook) repo, which includes a typescript branch.
 
 <!--
 Or use our blank React <a href="https://github.com/modelearth//amplifyapp">AmplifyApp</a>.--><!-- (The older category set json resides in docs/static/json thanks to Alikah )-->
