@@ -1,6 +1,6 @@
 ## React - YAML Profile Editor for GitHub MetaData
 
-We're building profiles based on Environmental Product Declarations (EPD). 
+We're building profiles based on Environmental Product Declarations (EPD) and [CoolCarbon footprints](https://coolclimate.berkeley.edu/calculator). 
 <!-- created a seetings-layout branch, 
 
 	then switched to githubpages branch -->
