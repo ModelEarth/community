@@ -1,3 +1,5 @@
+About our secret sauce: [We're using Figma, Storybook, NextJS, Tailwind and TypeScript](https://news.shardlabs.io/storybook-tailwind-next-js-with-typescript-5a2486f905ec)
+
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
 <a href="../../community/projects/#widgets">Impact UX/UI</a> - Impact Label Widgets
 <a href="../../community/projects/#cinematic">Cinematic</a> - Environmental Impact Menu
