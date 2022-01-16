@@ -20,7 +20,7 @@ We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/acti
 [Generate Environmental Impact Profile Labels](../../../apps/impact) - Abrie  
 [Scrape Wikipedia state carbon footprints](https://github.com/abrie/beyond-carbon-scraper) - Abrie  
 [Scrape city website and save JSON file using Python](https://github.com/abrie/atl-council-scraper) - Abrie  
-[Pull from PDF to a CSV file using R script](https://github.com/bbrewington/ga.dph.data) - Brant and Abrie  
+[Pull from PDF to a CSV file using R script](https://github.com/bbrewington/ga.dph.data) - Brent and Abrie  
 [Python Pipeline - Google Sheets to CSV](https://github.com/modelearth/python-pipeline) - Dan van Kley
 
 
