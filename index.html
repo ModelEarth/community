@@ -16,8 +16,6 @@
 <link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
 
 <!--
-
-
 Code for America and the US Environmental Protection Agency (EPA) are awarding high school educators and their students who help create inspiring tools during the annual Sustainable Communities Web Challenge. We encourage you to also invite programmers, community reps and designers. $10,000 in prizes will be awarded to participants on Oct 2nd.
 
 Educators and their high school students are invited to join us virtually to create a community page that visualizes your community's path to a sustainable, net zero future. A community can be your neighborhood, town, city, county, region or state. You'll use data and widgets from the US EPA and other sources to share your vision for a sustainable community.
@@ -166,10 +164,72 @@ tbody tr td:nth-child(2) {
 </style>
 <div id="log_display" style="display:none"></div><!-- a work in progress -->
 
+<style>
+  #mainarea iframe {
+      background: #efefef;
+  }
 
-<div class="georgia-hideX" style="position:relative; background:#aaa"><!-- #dae8eb -->
+  #mainarea iframe {
+      background: #efefef;
+      border: 1px solid #ddd;
+  }
+  iframe {
+      display: block;
+      border: none;
+      /* min-height: 94vh; */
+      width: 100%;
+  }
+  iframe {
+      display: block;
+      backgroundX: #000;
+      border: none;
+      min-height: 65vh;
+      width: 100%;
+  }
+  #mainbucket {
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    background: rgba(33,33,33,0.5);
+    color: #ddd;
+    border-radius: 30px;
+    max-width: 550px;
+  }
+  .linkondark {
+    color: #fff !important;
+    text-decoration: underline;
+  }
+</style>
 
-    <!-- psd resides in smartdata -->
+
+<div style="position:relative">
+
+  <div id="mainbucket">
+    <img src="img/logo/epa-circle.png" style="width:100px;float:left;margin-right:16px"> 
+
+    Join us in building Lifecycle Tools with US EPA widgets to help reduce 
+    negative impacts through&nbsp;local innovation. <a href="../apps/beyondcarbon/" class="linkondark">Explore Impacts</a> 
+
+    <!--
+    <a href="projects/">Current Projects</a> and <a href="/localsite/info/">Data Visualizations</a><br>
+    -->
+
+  </div>
+
+  <!-- https://earth.nullschool.net/#current/wind/surface/level/orthographic=-67.66,31.71,913 -->
+  <iframe src="https://earth.nullschool.net/#current/wind/surface/currents/overlay=wind/orthographic=-73.52,34.52,1101" class="iframe" name="mainframe" id="mainframe"></iframe><br>
+
+</div>
+
+
+<!-- psd resides in smartdata -->
+<!-- #dae8eb -->
+<!--
+<div class="georgia-hideX" style="position:relative; background:#aaa">
+
     <div style="background-color: #dae8eb; margin: 0 auto; overflow: auto; padding:0px; border:0px">
 
         <div style="max-width:1230px; padding-left:40px; padding-right:40px; text-align:left; position:relative; min-height:380px; margin: 0 auto">
@@ -188,33 +248,18 @@ tbody tr td:nth-child(2) {
               </div>
 
               <div style="font-size:20px; line-height: 1.2em; float:left">
-                      
                       <img src="img/logo/code-for-america-and-earth.png" style="width:100%;max-width:280px;padding:40px 0 0 0"><br><br>
-                      
               </div>
             </div>
 
-
             <div style="font-size:15px;line-height: 20px; clear:both">
-
-              <!--
-              <div style="font-size:24px; line-height: 1.2em; font-weight:600">
-                Websites for Sustainable Communities
-              </div><br>
-              -->
-
-              <!--
-              Second annual web challenge<br>
-              <div style="font-size:20px; line-height: 1.2em;">Fall 2022 &ndash; 10AM&nbsp;to&nbsp;6PM&nbsp;ET</div>
-              <br>
-              -->
 
               <div style="padding-bottom:20px; font-size: 18px; line-height: 28px;">
                 Join us in building Lifecycle Tools that reduce<br>
                 environmental impacts using local innovations.<br>
                 <a href="projects/">Current Projects</a> and <a href="/localsite/info/">Data Visualizations</a><br><br>
 
-                Get started: <a href="../localsite/start/">Fork Repos</a> and join in <a href="../io/coders">Upcoming Coding Meetups</a><!--for today's <a href="https://www.democracylab.org/projects/834" target="Tech-a-thon">Better Tech-a-thon</a>-->
+                Get started: <a href="../localsite/start/">Fork Repos</a> and join in <a href="../io/coders">Upcoming Coding Meetups</a>
               </div>
 
             </div>
@@ -225,10 +270,14 @@ tbody tr td:nth-child(2) {
         </div>
     </div>
 </div>
-
 <div style="clear:both"></div>
+-->
 
-
+<!--
+Second annual web challenge<br>
+<div style="font-size:20px; line-height: 1.2em;">Fall 2022 &ndash; 10AM&nbsp;to&nbsp;6PM&nbsp;ET</div>
+<br>
+-->
 
 <div style="clear:both; background-color:#fff; min-height:250px">
 
@@ -242,7 +291,7 @@ tbody tr td:nth-child(2) {
 
       Choose your location to see which industries are active in your community, which create the most jobs and which have the biggest environmental impacts.<br><br>
 
-      <a href="../apps/" class="btn btn-white">Explore Impacts</a>
+      <a href="../localsite/info/" class="btn btn-white">Local Industries</a>
       <!--
       <a href="../../community/challenge/">Join our Newsletter</a>
       -->
@@ -254,8 +303,8 @@ tbody tr td:nth-child(2) {
     <div class="pageColumn narrowGrey">
       <div class="pageColumnInside">
 
-      <h2>Integration Opportunities</h2>
-      Code for America and the US EPA are collaborating with programmers, community reps and designers to create inspiring tools. Get involved adding APIs and updating widgets.<br><br>
+      <h2>Collaboration Opportunities</h2>
+      The US EPA is collaborating with programmers, students, community reps and designers to create inspiring tools. Get involved adding APIs and updating widgets.<br><br>
 
       <a href="projects/" class="btn btn-white">View Project Areas</a>
 
@@ -285,11 +334,13 @@ tbody tr td:nth-child(2) {
 
 <div id="logoRow">
   <div class="content contentpadding" target="_blank" style="padding-top:40px; padding-bottom:30px; max-width: 1230px">
+
     <a href="https://www.democracylab.org/projects/834" target="_blank"><img src="../localsite/img/logo/partners/democracy-lab.png"></a>
     <!-- Reduce this logo: -->
     <a href="https://model.georgia.org" target="_blank" style="margin-top:-4px"><img src="img/logo/georgia_usa_gray.png" style="width:140px;"></a>
     <a href="https://www.codeforatlanta.org" target="_blank" style="margin-top:-4px"><img src="../localsite/img/logo/partners/code-for-atlanta.png" style="width:145px;"></a>
     <a href="https://openseattle.org" target="_blank" style="margin-top:-10px"><img src="../localsite/img/logo/partners/open-seattle.png" style="width:140px;"></a>
+    <a href="https://codeforamerica.org" target="_blank"><img src="img/logo/code-for-america-and-earth.png" style="width:150px"></a>
 
     <!--
     <a href="https://data.world" target="_blank" style="margin-top:-10px"><img src="../localsite/img/logo/partners/dataworld.png" style="width:140px;"></a>
@@ -306,8 +357,8 @@ tbody tr td:nth-child(2) {
 <a href="../localsite/info/"><img src="img/overview/slides/perfect-storm-heatmap.jpg" class="hideMobile" style="float:left; width: 100%; margin-top:0px; margin-bottom:20px"></a><br>
 -->
 
-    
-
+<!-- HEATMAP MOSAIC move to a standalone page -->
+<!--
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../io/build/widgets.css">
 
@@ -379,7 +430,7 @@ tbody tr td:nth-child(2) {
         config.join(sectorList);
 
     </script>
-
+-->
 
 
 
@@ -421,7 +472,6 @@ tbody tr td:nth-child(2) {
 
     </div>
 
-
 </div>
 
 <!--
@@ -462,29 +512,32 @@ tbody tr td:nth-child(2) {
   }
 }
 </style>
-<div id="main-info-content" class="content contentpadding" style="clear:both; padding-top:50px; max-width: 1230px">
 
-<div class="floatRight" style="border:1px solid #ccc; margin-bottom:20px">
-  <div>
-    <a href="challenge/" target="_parent" ><img id="right-image" src="img/overview/code-for-america-square.jpg" style=""></a>
-  </div>
-  <div style="padding:30px; padding-top:10px; padding-bottom:20px">
+<div style="background-color: #ddd;">
+<div id="main-info-contentX" class="content contentpadding" style="clear:both; padding-top:50px;">
 
-    <div style="display:none" class="challenge">
-      Web Challenge Kickoff:<br>
-      <!--<h2 style="margin-top:0px;padding-top:0px;border:0px">Monday, Sept. 21, 2020</h2>-->
-      <h2 style="margin-top:0px;padding-top:0px;border:0px">[TBD]</h2>
-
-      Web Challenge Awards:<br>
-      <h2 style="margin-top:0px;padding-top:0px;border:0px">[TBD]<!--Sunday, Oct. 25, 2020--></h2>
+  <div class="floatRight" style="border:1px solid #ccc; margin-bottom:20px; background-color:#eee">
+    <div>
+      <a href="challenge/" target="_parent" ><img id="right-image" src="img/overview/code-for-america-square.jpg" style=""></a>
     </div>
+    <div style="padding:30px; padding-top:10px; padding-bottom:20px">
 
-    Collaborate on projects with the US Environmental Protection Agency (EPA) in areas like international impact footprint labels, waste-to-energy, the transition to electric vehicle manufacturing, local environmental indicators and mapping, advanced biofuels, and reduced greenhouse gas emissions.
+      <div style="display:none" class="challenge">
+        Web Challenge Kickoff:<br>
+        <!--<h2 style="margin-top:0px;padding-top:0px;border:0px">Monday, Sept. 21, 2020</h2>-->
+        <h2 style="margin-top:0px;padding-top:0px;border:0px">[TBD]</h2>
 
-    <a href="../io/coders/" target="_parent" style="white-space: nowrap;">Learn More and Get Involved</a>
+        Web Challenge Awards:<br>
+        <h2 style="margin-top:0px;padding-top:0px;border:0px">[TBD]<!--Sunday, Oct. 25, 2020--></h2>
+      </div>
 
+      Collaborate on projects with the US Environmental Protection Agency (EPA) in areas like international impact footprint labels, waste-to-energy, the transition to electric vehicle manufacturing, local environmental indicators and mapping, advanced biofuels, and reduced greenhouse gas emissions.
+
+      <a href="../io/coders/" target="_parent" style="white-space: nowrap;">Learn More and Get Involved</a>
+
+    </div>
   </div>
-</div>
+
 
 <div class="main_column" style="overflow:auto; padding-right:20px">
 
@@ -533,6 +586,7 @@ Learn more about USEEIO.
 </div>
 
 </div>
+</div>
 
 <div style="clear:both"></div>
 
@@ -553,14 +607,12 @@ Learn more about USEEIO.
 </style>
 
 <div style="position:relative;height:550px">
-  <div id="hero-landscape-image" class="bgimg" style="min-height:850px; background-position: 0 54px; position: absolute; left:0; right:0; opacity: 0.8; background-color:#888">
+  <div id="hero-landscape-image" class="bgimg" style="min-height:550px; background-position: 0 54px; position: absolute; left:0; right:0; opacity: 0.8; background-color:#888">
 
       <div class="content contentpadding" style="padding-top:60px">
         <div>
             <div id="hero-rect-new">
               <h3>Project Areas</h3>
-
-              <a href="../../community/projects/" style="display:block;margin-top:10px">View Project List</a>
 
               <a href="../../apps/">Starter Pages</a> - Copy and add parameters<br>
               <a href="../../community/projects/#label">JQuery/React</a> - Environmental Profile Editor<br>
@@ -571,7 +623,7 @@ Learn more about USEEIO.
               <a href="../../community/projects/#maps">Maps</a> - Data Visualizations<br>
               <a href="../../community/projects/#cinematic">Cinematic</a> - Environmental Impact Apps<br>
               <a href="../../apps/smm/">3.0 Mockup</a> - Lifecycle Tools<br>
-
+              <a href="../../community/projects/" style="display:block;margin-top:10px">View Project List</a>
               
             </div>
           </div>
