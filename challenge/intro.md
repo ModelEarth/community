@@ -1,4 +1,4 @@
-#Our 2021 Winners!
+#Sustainable Communities Challenge Winners
 
 **Best in Show:** Loyola Chicago - Composting and Biodiesel -  Konstantin, Federico and Shriya
 **Best Technical Tool:** Environmental Impact Labels, Abrie, Code for Atlanta
@@ -15,5 +15,6 @@ Atlanta - [Clean Power from Dirty Diapers](/apps/cleanpower)
 Colorado - [Parks and Recreation - Nature's Lifecycle](/apps/land)
 San Diego - [Building Energy Benchmarks (post-event map dev)](/apps/benchmarks)
 
-
+<!--
 [Register for the 2022 Challenge](registration/)
+-->
