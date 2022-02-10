@@ -3,7 +3,7 @@
 For Data Science and Computer Science 
 
 
-[Local Industry Lists - Data Prep](../../../localsite/info/data/flowsa/)  
+[Local Industry Lists - Data Prep](../../../localsite/info/data/)  
 [About API](../../../io/about/api/) - County and Zip Code data sources  
 [Display Datasets](../../../localsite/info/data/) - Tabulator Sample  
 [Industries by Zip Code (ZCTA)](../../../community/industries/)   
