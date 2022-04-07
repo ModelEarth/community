@@ -16,6 +16,7 @@
 
 1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../../community/biotech/).  Add updates for electric vehicles  and bioproducts, Local economy inputs and new technology additions to USEEIO. [Details](../io/naics/)  
 
+1. The Mission: Ending Poverty, Sustainable Energy, Making Humanity a Multiplanetary Species, and the Preservation of Consciousness.
 
 
 ## Integrations
