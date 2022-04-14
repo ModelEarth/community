@@ -1,5 +1,9 @@
 # Industries by Zip Code (ZCTA)
 
+
+Benjamin Liu has processed [naics zip data](https://github.com/modelearth/community-data/tree/master/process/naics) into folders by zipcode.  
+We're updating our [upcoming industry filter](../../localsite/info/naics/) to include zip codes.  
+
 We're using [Machine Learning](https://github.com/modelearth/machine-learning) to estimate payroll gaps in county data using Bureau of Labor Statistics (BLS) Quarterly Census. The same estimating process can be applied to zip code areas.
 
 We're also pulling [zip demographic data](../../zip/io/) into a json file for each zip code from [uszipcode.readthedocs.io](https://uszipcode.readthedocs.io/01-Tutorial/index.html).  
