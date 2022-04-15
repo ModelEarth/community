@@ -29,9 +29,9 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 
 ## .NET Core 5.0 Projects
 
-1. Create a "Disposable Database" for editing crowdsourced lists using .csv files hosted in GitHub, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.  
+1. Create a "Disposable Database" for editing crowdsourced lists using data hosted in GitHub .csv files, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.  
 
-1. Add USEEIO widgets to [.NET Environmental Education tools](https://model.earth/setup/) for GEEP partner states and countries.  
+1. Add USEEIO widgets and interactive impact labels to [.NET Environmental Education tools](https://model.earth/setup/) for GEEP partner states and countries.  
 <!--
 Strapi for Amazon AWS - EC2, RDS and S3
 https://strapi.io/documentation/developer-docs/latest/deployment/amazon-aws.html
