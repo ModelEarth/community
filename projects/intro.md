@@ -1,6 +1,6 @@
 About our secret sauce: [We're using Figma, Storybook, NextJS, Tailwind and TypeScript](https://news.shardlabs.io/storybook-tailwind-next-js-with-typescript-5a2486f905ec)
 
-Our focus for today's Earth Day [Democracy Lab](https://DemocracyLab.org) hackathon is [NextJS with AWS Amplify and GitHub Copilot](https://model.earth/setup/next/)  
+Our focus for [Democracy Lab](https://DemocracyLab.org) Earth Day coding event was [NextJS with AWS Amplify and GitHub Copilot](https://model.earth/setup/next/)  
 
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
 <a href="../../community/projects/#widgets">Impact UX/UI</a> - Impact Label Widgets
