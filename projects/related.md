@@ -70,6 +70,15 @@ Our [DemLab Project API Pull test](../../io/template/feed/demolab.html) and the 
 and <a href="https://www.ewg.org/">EWG</a>
 -->
 
+<h4>Citizens Foundation</h4>
+
+Connecting governments & citizens through constructive ideas and debate that minimizes personal arguments and trolling.
+
+[Your Priorities](https://www.yrpri.org/)  
+[The Gov Lab - NYU](https://thegovlab.org/)  
+[Horiozn Europe](https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en)  
+[Citizen Lab](https://www.citizenlab.co/)  
+
 <h4>Emissions Dashboard</h4>
 
 Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emissions Dashboard](https://cepl.gatech.edu/dashboardseminars) focused on local sources and sinks for greenhouse gas emissions. The new tools use the [Quarterly Workforce Indicators (QWI)](https://www.census.gov/data/developers/data-sets/qwi.html) along with the US Energy Information Administration (EIA) open API and other federal datasets - some of which are also included in the USEEIO/Flowsa [data pipeline](../../localsite/info/data) used in our [site widgets](../../io/charts).

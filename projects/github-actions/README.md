@@ -1,7 +1,7 @@
 
 ## GitHub Actions Data Pipeline - Python/R
 
-[Learn about our Data Setup](../../../localsite/info/data) and view a sample Display Datasets using Tabular.  
+[Learn about our Data Setup](../../../localsite/info/data) and view a sample of displaying a data grid using Tabular.  
 
 We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide static data for fast loading diagrams and map layers containing 30,000+ records similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
 
