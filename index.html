@@ -440,47 +440,6 @@ Second annual web challenge<br>
 -->
 
 
-
-<div class="content contentpadding litePanel" style="overflow:auto; display:none">
-
-    <div class="localX" style="float:left; padding-top:0px; clear:both; display:none">
-
-        <div id="greatestNeedsHolder" class="resultsHolder" style="margin-right:30px; ">
-          <div style="margin-bottom:10px;padding-top:0px">
-
-            <div style="margin-bottom:8px">Employment projections...</div>
-
-            <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
-            <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
-            <div style="clear:both"></div>
-
-            <br><br>
-            
-          </div>
-        </div>
-        <br><br>
-
-      <script>
-        $('#zip').on("keypress", function(e) {
-          if (e.keyCode == 13) { // Enter hit
-            goZip();
-          }
-        });
-        function goZip() {
-          zip = $('#zip').val();
-          if (zip.length == 5) {
-            window.location='../../community/zip/#zip=' + zip;
-          } else {
-            alert('Please enter a 5 digit zip.');
-          }
-        }
-      </script>
-
-
-    </div>
-
-</div>
-
 <!--
 <link rel="stylesheet" href="css/material_icons.css" />
 -->
@@ -523,13 +482,13 @@ Second annual web challenge<br>
 <div style="background-color: #ddd;">
 <div id="main-info-contentX" class="content contentpadding" style="clear:both; padding-top:50px;">
 
-  <div class="floatRight" style="border:1px solid #ccc; margin-bottom:20px; background-color:#eee">
+  <div class="floatRight" style="border:1px solid #ccc; margin-bottom:0px; background-color:#eee">
     <div>
-      <a href="challenge/" target="_parent" ><img id="right-image" src="img/overview/code-for-america-square.jpg" style=""></a>
+      <a href="../io/coders/" target="_parent" ><img id="right-image" src="img/overview/code-for-america-square.jpg" style=""></a>
     </div>
     <div style="padding:30px; padding-top:10px; padding-bottom:20px">
 
-      <div style="display:none" class="challenge">
+      <div style="display:none" class="../challenge/">
         Web Challenge Kickoff:<br>
         <!--<h2 style="margin-top:0px;padding-top:0px;border:0px">Monday, Sept. 21, 2020</h2>-->
         <h2 style="margin-top:0px;padding-top:0px;border:0px">[TBD]</h2>
@@ -540,7 +499,9 @@ Second annual web challenge<br>
 
       Collaborate on projects with the US Environmental Protection Agency (EPA) in areas like international impact footprint labels, waste-to-energy, the transition to electric vehicle manufacturing, local environmental indicators and mapping, advanced biofuels, and reduced greenhouse gas emissions.
 
+      <!--
       <a href="../io/coders/" target="_parent" style="white-space: nowrap;">Learn More and Get Involved</a>
+      -->
 
     </div>
   </div>
@@ -548,11 +509,12 @@ Second annual web challenge<br>
 
 <div class="main_column" style="overflow:auto; padding-right:20px">
 
+<!--
 <h1 style="margin-bottom:0px;">48 Hours of Earth Day!</h1>
 <h3 style="margin-top:4px;">Friday, April 22, 2022</h3>
 
 Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22nd. The event will begin when Earth Day starts in New Zealand (UTC+12), and conclude 48 hours later when the day ends on Howland Island (UTC-12). Project teams will participate from all around the world!&nbsp; <a href="https://www.democracylab.org/projects/834">Join our project team</a><br><br>
-
+-->
 
 <h2>Community Apps for Life&nbsp;Cycle&nbsp;Assessment&nbsp;(LCA)</h2>
 
@@ -597,6 +559,7 @@ Learn more about USEEIO.
 -->
 
 </div>
+<div style="clear:both"></div>
 
 </div>
 </div>
@@ -623,7 +586,7 @@ Learn more about USEEIO.
   <div id="hero-landscape-image" class="bgimg" style="min-height:550px; background-position: 0 54px; position: absolute; left:0; right:0; opacity: 0.8; background-color:#888">
 
       <div class="content contentpadding" style="padding-top:60px">
-        <div>
+        <div style="float:left; margin-right:30px">
             <div id="hero-rect-new">
               <h3>Project Areas</h3>
 
@@ -639,7 +602,41 @@ Learn more about USEEIO.
               <a href="../../community/projects/" style="display:block;margin-top:10px">View Project List</a>
               
             </div>
+        </div>
+        <div style="float:left">
+
+          <script>
+            $('#zip').on("keypress", function(e) {
+              if (e.keyCode == 13) { // Enter hit
+                goZip();
+              }
+            });
+            function goZip() {
+              zip = $('#zip').val();
+              if (zip.length == 5) {
+                window.location='../../community/zip/#zip=' + zip; // Projections - coursework
+                window.location='../../zip/io/#zip=' + zip; 
+              } else {
+                alert('Please enter a 5 digit zip.');
+              }
+            }
+          </script>
+          <div class="local content contentpadding litePanel" style="overflow:auto; display:none">
+
+            <div id="greatestNeedsHolder" class="resultsHolder" style="margin-right:30px;">
+
+              <div style="margin-bottom:8px">Zip output...</div>
+
+              <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
+              <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
+              <div style="clear:both"></div>
+              
+            </div>
+
           </div>
+
+
+        </div>
       </div>
 
   </div>

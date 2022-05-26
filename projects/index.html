@@ -308,40 +308,6 @@ ol > li {
         <div id="relatedDiv"></div>
     </section>
 
-    <div class="local" style="float:left; padding-top:0px; clear:both; display:none">
-
-        <div id="greatestNeedsHolder" class="resultsHolder" style="margin-right:30px; ">
-          <div style="margin-bottom:10px;padding-top:0px">
-
-            <div style="margin-bottom:8px">Employment projections...</div>
-
-            <input type="text" class="txtbox frst_location" id="zip" placeholder="Zip Code">
-            <div class="gobutton" style="float:left" onclick="goZip()">GO</div>
-            <div style="clear:both"></div>
-          </div>
-        </div>
-        <br><br>
-
-      <script>
-        $('#zip').on("keypress", function(e) {
-          if (e.keyCode == 13) { // Enter hit
-            goZip();
-          }
-        });
-        function goZip() {
-          zip = $('#zip').val();
-          if (zip.length == 5) {
-            window.location='../../community/zip/#zip=' + zip;
-          } else {
-            alert('Please enter a 5 digit zip.');
-          }
-        }
-      </script>
-
-      <div id="disqus_thread"></div>
-
-    </div>
-
     <div style="clear:both"></div>
 
     <a href="../../localsite/info/input/">Contact us</a> for additional details and to avoid overlaps. 
