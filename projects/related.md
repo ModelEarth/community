@@ -16,7 +16,9 @@
 
 1. [RStudio and USEEIOR](../io/naics) - Use LCA methodology to evaluate new technologies [including advanced biofuels](../../community/biotech/).  Add updates for electric vehicles  and bioproducts, Local economy inputs and new technology additions to USEEIO. [Details](../io/naics/)  
 
-1. The Mission: Ending Poverty, Sustainable Energy, Making Humanity a Multiplanetary Species, and the Preservation of Consciousness.
+1. Create your next project using: [Figma, Storybook, NextJS, Tailwind and TypeScript](https://news.shardlabs.io/storybook-tailwind-next-js-with-typescript-5a2486f905ec) and [Notion for Project Management](https://www.notion.so/projects)
+
+1. The Mission: [Ending Poverty, Zero Hunger, Good Health](/data-pipeline/international/), Sustainable Energy, Making Humanity a Multiplanetary Species, and the Preservation of Consciousness.
 
 
 ## Integrations

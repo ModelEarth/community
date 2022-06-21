@@ -222,9 +222,50 @@ tbody tr td:nth-child(2) {
   <!-- https://earth.nullschool.net/#current/wind/surface/level/orthographic=-67.66,31.71,913 -->
   <!-- Cool if we need solid continental for overlaying topjson:
   https://earth.nullschool.net/#2018/10/10/0000Z/ocean/surface/currents/overlay=significant_wave_height/orthographic=-72.95,33.34,1269/loc=-82.457,27.951
-  -->
-  <iframe src="https://earth.nullschool.net/#current/wind/surface/currents/overlay=wind/orthographic=-73.52,34.52,1101" class="iframe" name="mainframe" id="mainframe"></iframe><br>
 
+ https://earth.nullschool.net/#current/wind/surface/currents/overlay=wind/orthographic=-73.52,34.52,1101
+  -->
+  <iframe src="" class="iframe" name="mainframe" id="mainframe"></iframe>
+  <div id="mapText" style="padding-left:20px"></div>
+
+  <script>
+  function loadIframe(iframeName, url) {
+      var $iframe = $('#' + iframeName);
+      if ($iframe.length) {
+          $iframe.attr('src',url);
+          return false;
+      }
+      return true;
+  }
+  function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
+  async function loopMap() {
+    await delay(200);
+    let theMonth = 6;
+    let theDay = 1;
+    let theHour = 0;
+    while (theDay <= 20) {
+      let monthStr = String(theMonth).padStart(2, '0');
+      let dayStr = String(theDay).padStart(2, '0');
+      let hourStr = String(theHour).padStart(2, '0');
+      $("#mapText").html("NO<sub>2</sub> - " + monthStr  + "/" + dayStr + "/2022 " + " " + theHour + ":00 GMT (7 PM EST)");
+
+      loadIframe("mainframe","https://earth.nullschool.net/#2022/" + monthStr + "/" + dayStr + "/" + hourStr + "00Z/chem/surface/currents/overlay=no2/orthographic=-115.84,31.09,1037");  
+      await delay(1000);
+
+      $("#mapText").html("NO<sub>2</sub> - " + monthStr  + "/" + dayStr + "/2022 " + " 12:00 GMT (7 AM EST)");
+      loadIframe("mainframe","https://earth.nullschool.net/#2022/" + monthStr + "/" + dayStr + "/1200Z/chem/surface/currents/overlay=no2/orthographic=-115.84,31.09,1037");  
+      await delay(1000);
+
+      theDay += 1;
+      //theHour += 2;   
+    }
+  }
+  $(document).ready(function () {
+    loopMap();
+  });
+  </script>
 </div>
 
 
