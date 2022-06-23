@@ -11,8 +11,8 @@
 <script type="text/javascript" src="../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="js/d3/d3.v5.min.js"></script>
 <script type="text/javascript" src="../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
-<script type="text/javascript" src="../localsite/js/localsite.js?navcolumnX=community/nav.html"></script>
-<script type="text/javascript" src="../localsite/js/navigation.js"></script>
+<script type="text/javascript" src="../localsite/js/localsite.js?shownav=true&navcolumnX=community/nav.html"></script>
+<script type="text/javascript" src="../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
 <link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
 
 <!--
@@ -47,6 +47,15 @@ Economic data, community resources and planning input combined with the EPA's ne
 -->
 <body>
 <script>
+  
+  $(document).ready(function () {
+      showSearchFilter();
+
+      setTimeout(() => {
+        showGlobalMap();
+      },1000);
+      
+  });
   //loadMarkdown("README.md", "readmeDiv", "_parent");
   //// param.startTitle = "Model Earth"; // Trigger header
 </script>
@@ -55,6 +64,10 @@ Economic data, community resources and planning input combined with the EPA's ne
 .headerImage{
     display: none;
 }
+#nullschoolHeader {
+  display: block;
+}
+
 #fullcolumn {
     background: #fafafa;
 }
@@ -162,111 +175,7 @@ tbody tr td:nth-child(2) {
   max-width: 350px;
 }
 </style>
-<div id="log_display" style="display:none"></div><!-- a work in progress -->
 
-<style>
-  #mainarea iframe {
-      background: #efefef;
-  }
-
-  #mainarea iframe {
-      background: #efefef;
-      border: 1px solid #ddd;
-  }
-  iframe {
-      display: block;
-      border: none;
-      /* min-height: 94vh; */
-      width: 100%;
-  }
-  iframe {
-      display: block;
-      backgroundX: #000;
-      border: none;
-      min-height: 65vh;
-      width: 100%;
-  }
-  #mainbucket {
-    position: absolute;
-    right: 40px;
-    bottom: 60px;
-    padding: 20px;
-    font-size: 18px;
-    line-height: 28px;
-    background: rgba(33,33,33,0.5);
-    color: #ddd;
-    border-radius: 30px;
-    max-width: 550px;
-  }
-  .linkondark {
-    color: #fff !important;
-    text-decoration: underline;
-  }
-</style>
-
-
-<div style="position:relative">
-
-  <div id="mainbucket">
-    <a href="../io/charts/"><img src="img/logo/epa-circle.png" style="width:100px;float:left;margin-right:16px"></a>
-
-    Join us in building Lifecycle Tools with US EPA widgets to help reduce 
-    negative impacts through&nbsp;local innovation. <a href="../apps/beyondcarbon/" class="linkondark">Explore Impacts</a> 
-
-    <!--
-    <a href="projects/">Current Projects</a> and <a href="/localsite/info/">Data Visualizations</a><br>
-    -->
-
-  </div>
-
-  <!-- https://earth.nullschool.net/#current/wind/surface/level/orthographic=-67.66,31.71,913 -->
-  <!-- Cool if we need solid continental for overlaying topjson:
-  https://earth.nullschool.net/#2018/10/10/0000Z/ocean/surface/currents/overlay=significant_wave_height/orthographic=-72.95,33.34,1269/loc=-82.457,27.951
-
- https://earth.nullschool.net/#current/wind/surface/currents/overlay=wind/orthographic=-73.52,34.52,1101
-  -->
-  <iframe src="" class="iframe" name="mainframe" id="mainframe"></iframe>
-  <div id="mapText" style="padding-left:20px"></div>
-
-  <script>
-  function loadIframe(iframeName, url) {
-      var $iframe = $('#' + iframeName);
-      if ($iframe.length) {
-          $iframe.attr('src',url);
-          return false;
-      }
-      return true;
-  }
-  function delay(time) {
-    return new Promise(resolve => setTimeout(resolve, time));
-  }
-  async function loopMap() {
-    await delay(200);
-    let theMonth = 6;
-    let theDay = 1;
-    let theHour = 0;
-    while (theDay <= 20) {
-      let monthStr = String(theMonth).padStart(2, '0');
-      let dayStr = String(theDay).padStart(2, '0');
-      let hourStr = String(theHour).padStart(2, '0');
-      $("#mapText").html("NO<sub>2</sub> - " + monthStr  + "/" + dayStr + "/2022 " + " " + theHour + ":00 GMT (7 PM EST)");
-
-      loadIframe("mainframe","https://earth.nullschool.net/#2022/" + monthStr + "/" + dayStr + "/" + hourStr + "00Z/chem/surface/currents/overlay=no2/orthographic=-115.84,31.09,1037");  
-      await delay(1000);
-
-      $("#mapText").html("NO<sub>2</sub> - " + monthStr  + "/" + dayStr + "/2022 " + " 12:00 GMT (7 AM EST)");
-      loadIframe("mainframe","https://earth.nullschool.net/#2022/" + monthStr + "/" + dayStr + "/1200Z/chem/surface/currents/overlay=no2/orthographic=-115.84,31.09,1037");  
-      await delay(1000);
-
-      theDay += 1;
-      //theHour += 2;   
-    }
-  }
-  $(document).ready(function () {
-    loopMap();
-  });
-  </script>
-</div>
 
 
 <!-- psd resides in smartdata -->

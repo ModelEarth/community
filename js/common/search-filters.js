@@ -476,7 +476,7 @@ function locationFilterChange(selectedValue) {
     consoleLog("locationFilterChange: " + selectedValue);
     $(".geoListHolder > div").hide();
     $(".geoListCounties").show();
-    //showSearchClick(); // Display filters
+    //showSearchClickOld(); // Display filters
     hideLocationFilters();
 
     //$(".hideLocationsMenu").trigger("click");
@@ -764,8 +764,7 @@ $("#filterClickLocation .filterSelected").html("Counties");
 $(".filterUL li").removeClass("selected");
 $(".filterUL li").find("[data-id='counties']").addClass("selected"); // Not working
 
-function showSearchClick() {
-	
+function showSearchClickOld() {
 	$(".filterFields").hide();
 	$(".headerOffset2").hide();
     
@@ -1311,7 +1310,7 @@ function initSiteObject(layerName) {
 	                // siteObjectFunctions(siteObject); // could add to keep simple here
 	          
 	          		$('.showSearch').click(function(event) {
-	          			showSearchClick();
+	          			showSearchClickOld();
 	          		});
 	          		$('.showApps').click(function(event) {
 	          			if ($("#honeycombPanelHolder").is(':visible')) {
