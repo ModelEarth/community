@@ -145,6 +145,7 @@ and (max-device-width : 480px) {
 
 	var jsonList = {"Table" : [
 		{"value":"none","name":"Select a feed..."},
+		//{"value":"localsite","name":"localSite object"},
 		{"value":"diffbot","name":"Diffbot"},
     {"value":"nasa","name":"NASA Image Feed"},
     {"value":"epd","name":"Environmental Product Declarations (EPD) - Example"},
@@ -203,13 +204,14 @@ function displayFeed() {
 	// General Mills - Returns 3
 	//var url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=3&from=0&query=type%3AOrganization%20name%3A%22General%20Mills%22";
 	
-	quantity = 1;
 	let url = "";
 	selected_array = [];
 
 	//if (!param.zip) {
 
-		if (hash.feed == "diffbot") {
+		if (hash.feed == "localsite") {
+
+		} else if (hash.feed == "diffbot") {
 			quantity = 2;
 			$('#pageTitle').html("DiffBot JSON API - ZIP CODE " + hash.zip);
 			url = "https://kg.diffbot.com/kg/dql_endpoint?type=query&token=31c80e03058e4f5b86585fb9e97640a6&size=" + quantity + "&from=0&query=type%3ACorporation";
@@ -272,6 +274,8 @@ function displayFeed() {
 	let count = 0;
 	let maxcount = 10;
 	const start = Date.now();
+
+
 
   d3.json(url)
   .then(function(json) {
