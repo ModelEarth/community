@@ -38,16 +38,13 @@ Run the following in the scrapper folder.
 
 ### Setup
 
-Setup the environment:
-
+Create a virtual environment (OSX / Linux / Windows):
 `python3 -m venv .venv`
 
 OSX / Linux:
-
 `source .venv/bin/activate`
 
 Windows:
-
 `\.venv\Scripts\activate.bat`
 
 

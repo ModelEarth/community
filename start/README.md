@@ -8,7 +8,9 @@ Stand-alone examples of formatting and displaying community data.
 <span style="font-size:18px">
 &bullet; <a href="../../apps/">Community App Starter Samples</a><br>
 &bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
-&bullet; <a href="../challenge/how/">Hot to Create a Local Site Page!</a><br>
+<!--
+&bullet; <a href="../challenge/how/">How to Create a Local Site Page</a><br>
+-->
 &bullet; <a href="../../localsite/#parameters">Edit Parameters</a><br>
 </span>
 

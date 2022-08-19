@@ -3,7 +3,7 @@
 
 [Learn about our Data Setup](../../../localsite/info/data) and view a sample of displaying a data grid using Tabular.  
 
-We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide static data for fast loading diagrams and map layers containing 30,000+ records similar to Hack for LA's [Public Tree Map](https://neighborhood.org/public-tree-map/).  
+We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide static data for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/).  
 
 1. Generate static data using [Python for filling in gaps in NAICS industry data](../../../localsite/info/data/). We're publishing [articles](../../../io/template/) in Applied Sciences,  Lifecycle Analysis (LCA) 2022 coordinated by US EPA Engineer Wes Ingwersen.
 
@@ -12,6 +12,22 @@ We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/acti
 3. Prepare BuildingTransparency.org API data for [label templates](../../../io/template/) and integrate with EPA USEEIO static json files. Steps for [getting started with impact labels](../../../community/projects/#widgets).
 
 4. Investigate NAICS file format pulled into [federal Sankey](https://federalist-c3fa68f6-ee2f-4053-9a71-252d9abebb5f.app.cloud.gov/site/18f/federal-carbon-footprint/) and prepare an industry list with areas of operation similar to the [Amazon's Carbon Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint).
+
+---
+
+<!--
+
+https://www.freecodecamp.org/news/build-your-first-javascript-github-action/
+
+Includes gitignore gen link to toptal, which has a developer job listing marketplace
+https://www.toptal.com/developers
+
+Started here instead:
+https://github.com/JamesIves/fetch-api-data-action
+
+-->
+
+A. The repo containing the Action has to be public, otherwise we won't be able to use it in our workflows.
 
 ---
 
