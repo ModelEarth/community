@@ -1,20 +1,16 @@
 # Starter Samples
 
-Stand-alone examples of formatting and displaying community data.  
-<div class="showGit">
+Stand-alone examples of formatting and displaying community data.<div class="showGit">
 <a href="https://model.earth/community/start/">View as website</a>
-</div>
-
-<span style="font-size:18px">
-&bullet; <a href="../../apps/">Community App Starter Samples</a><br>
-&bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
+</div><span style="font-size:18px">&bullet; <a href="../../apps/">Website starter samples</a>  
+&bullet;  [Copy the apps base folder](../../apps/base/)  
+&bullet; <a href="../../localsite/#parameters">Edit your page parameters</a>  
 <!--
+&bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
 &bullet; <a href="../challenge/how/">How to Create a Local Site Page</a><br>
 -->
-&bullet; <a href="../../localsite/#parameters">Edit Parameters</a><br>
-</span>
+</span>  
 
-<b>Quick start:</b> [Fork Localsite and Apps repos](../../apps/) and copy the [base starter folder](../../apps/base/).  
 
 ## [1. Start a local website](../../localsite/start)  
 ## [2. Display Datasets](../../localsite/info/data)
