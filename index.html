@@ -51,11 +51,9 @@ Economic data, community resources and planning input combined with the EPA's ne
   
   $(document).ready(function () {
       showSearchFilter();
-
       setTimeout(() => {
-        showGlobalMap();
+        showGlobalMap("https://earth.nullschool.net/#current/wind/surface/level/orthographic=-73.52,34.52,532");
       },1000);
-      
   });
   //loadMarkdown("README.md", "readmeDiv", "_parent");
   //// param.startTitle = "Model Earth"; // Trigger header
@@ -176,7 +174,6 @@ tbody tr td:nth-child(2) {
 <div style="clear:both; background-color:#fff; min-height:250px">
 
   <div class="topcolumns content contentpadding" style="padding-top:30px; padding-bottom:0px; max-width: 1230px">
-
 
     <div class="pageColumn">
       <div class="pageColumnInside">
