@@ -1,7 +1,7 @@
 ###Cinematic Interfaces - Last Airbender and Marvel Comics APIs
 
 
-Informative and Entertaining - Design the interface to float over background images, video and AR/VR.
+Informative and Entertaining - Interfaces designed to float over hero images and video.
 
 
 <img src="https://i.annihil.us/u/prod/marvel/i/mg/3/40/4bb4680432f73/standard_fantastic.jpg" style="float:right; margin:0 0 20px 20px">

@@ -1,3 +1,5 @@
+<b>New:</b> <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a> - Dev for Open Street Map<br>
+
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
 <a href="../../community/projects/#widgets">Impact UX/UI</a> - Impact Label Widgets
 <a href="../../community/projects/#cinematic">Cinematic</a> - Environmental Impact Menu
