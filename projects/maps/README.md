@@ -1,6 +1,6 @@
 ## Map Projects - Leaflet and D3 Data Visualizations
 
-Update the map.js [US Map](../../../localsite/info/#mapview=US&show=vehicles) to include a choropleth map layer and/or show the industry density [above our new NAICS Tabulator](../../../localsite/info/naics/#mapview=US&show=vehicles) to represent <a href="../mobility/">locations potentially impacted by the transition to EV</a>. See [choropleth map samples](../../start/maps/).   
+Update the map.js [US Map](../../../localsite/info/#mapview=US&show=vehicles) to include a choropleth map layer and/or show the industry density [above our upcoming NAICS Tabulator](../../../localsite/info/naics/#mapview=US&show=vehicles) to represent <a href="../mobility/">locations potentially impacted by the transition to EV</a>. See [choropleth map samples](../../start/maps/).   
 
 Activate a clickable legend in the map.js file. Place checkboxes before legend items to filter the map points and list below the map. Possibly use [legend sample from EWG](../../../community/map/ewg/). We will initial work on a stand-alone map component for [Court.bot](https://court.bot).
 
