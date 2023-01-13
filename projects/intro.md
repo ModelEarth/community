@@ -1,5 +1,3 @@
-<b>New:</b> <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a> - Dev for OpenStreetMap<br>
-
 <a href="../../apps/">Starter Pages</a> - Copy and add parameters
 <a href="../../community/projects/#widgets">Impact UX/UI</a> - Impact Label Widgets
 <a href="../../community/projects/#cinematic">Cinematic</a> - Environmental Impact Menu
@@ -9,9 +7,15 @@
 <a href="../../community/projects/#python">Python</a> - Machine Learning
 <a href="../../community/projects/#ux">UX/UI</a> - Community Hotspots Environmental Report (CHER)
 <a href="../../community/projects/#maps">Map Projects</a> - Data Visualizations
-<a href="../../community/projects/#google">Google and More</a> - Google Data Commons, Sheet Editor, .NET Core, Census Reporter, Walkability
+<a href="../../community/projects/#google">Google and More</a> - Google Sheet Editor, Census Reporter
 
 <a href="../../apps/smm/">3.0 Mockup</a> - Lifecycle Tools
+
+Learn about the [7 top footprint tools](https://footprinthero.com/best-carbon-footprint-calculators) including the [CoolCarbon Calculator](https://coolclimate.berkeley.edu/calculator) and the [US EPA Carbon Footprint Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
+
+View Environmental [impact templates](https://model.earth/community/projects/#widgets) for [Product EPDs](https://buildingtransparency.org/ec3/epds) and the [BuildingTransparency.org API](../../io/template/feed/)
+
+
 
 <!--<br>
 Challenge participants are creating pages in the shared <a href="../../apps/">community pages</a> apps repo.<br>

@@ -112,29 +112,56 @@ https://model.earth/community/challenge/
 }
 </style>
 
-<div style="position:relative; background:#aaa; max-height:200px"><!-- #dae8eb -->
 
-    <!-- psd resides in smartdata -->
+
+<style>
+#heroHolder {
+    min-height:350px
+}
+#heroImage {
+    width: 100%;
+}
+@media (max-width: 800px) {
+    #heroImage {
+        min-height:200px;
+        max-width:800px;
+        width:800px;
+    }
+}
+@media (min-width:800px) {
+    #heroHolder {
+        min-height:400px;
+    }
+}
+@media (min-width:1400px) {
+    #heroHolder {
+        min-height:580px;
+    }
+}
+</style>
+
+<div style="position:relative; background:#aaa; max-height:550px">
+
+
     <div style="background-color: #dae8eb; margin: 0 auto; overflow: auto; padding:0px; border:0px">
-        <div style="max-width:1400px; text-align:left; position:relative; min-height:350px">
+        <div id="heroHolder" style="max-width:5000px; text-align:left; position:relative;">
 
-            <img src="../img/overview/banner-2.png" class="hideMobile" style="opacity:0.3; width:100%; max-width:600px; padding-top:20px; padding-right:20px; position:absolute; left:300px; bottom:0px">
+            <img id="heroImage" src="../img/hero/earth-artemus-2022.png" style="max-width:5000px;position: absolute;">
+            
+            <div style="position:absolute;z-index:2;width:100%">
+                <div style="float:left">
+                    <div class="hero-text" style="padding:35px 40px 0 40px; background-color:rgba(35, 35, 35, .6);">
 
-            <!--
-            <img src="img/overview/banner-1.png">
-            -->
-            <div style="float:left">
-                <div class="hero-text" style="padding:30px 0px 0 40px">
+                        <img src="../img/logo/code-for-america-and-earth.png" style="width:100%;max-width:220px;padding:10px 0 15px 0"><br>
+                        <br>
+                    </div>
 
-                    <img src="../img/logo/code-for-america-and-earth.png" style="width:100%;max-width:220px;padding:10px 0 15px 0"><br>
-                    <br>
                 </div>
-
-            </div>
-            <div style="float:right; padding:20px 50px 0 0; text-align: center">
-                
-                <img src="../img/logo/epa-circle.png" style="width:100%;max-width:160px"><br>
-                
+                <div style="float:right; padding:40px 50px 0 0; text-align: center">
+                    
+                    <img src="../img/logo/epa-circle.png" style="width:100%;max-width:160px"><br>
+                    
+                </div>
             </div>
         </div>
     </div>
