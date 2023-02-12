@@ -1,5 +1,7 @@
 # Chart Starters
 
+We recommend [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, 3D Globes and a lot more.
+
 [The embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts and use [D3.js](https://github.com/d3/d3/wiki/Gallery).  
 The [Environmental Impact Bubble Chart](../../../io/charts/bubble/) uses JSON files generated from the USEEIO API.  
 
