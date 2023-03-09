@@ -34,7 +34,7 @@ Our existing Machine Learning projects:
 
 - [Simple Choropleth](../../../community/map/income/) and [More Map Samples](../../../community/start/maps/)
 
-We could [set-up a Flask server](/localsite/info/data/datacommons/) using the DataCommon.org website repo sample and deploy to Google hosting. 
+We could set-up a Flask server using [Google's DataCommons.org website repo](../../../localsite/info/data/datacommons/) sample and deploy to Google hosting. 
 
 
 <b>Article by the creator of DataUSA.io</b>
