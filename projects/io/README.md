@@ -1,4 +1,4 @@
-## React and D3 - Sankey IO Chart
+## Sankey IO Chart
 
 1. Work with the federal gov's new Sankey repo, update the [Sankey D3 Chart](../../../io/charts/sankey/) data formatting to use the same process to include the [USEEIO inflow-outflow widget](../../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
 
@@ -6,23 +6,23 @@
 
 1. See sample [visualizations](../../start/charts/) of material flow charts.
 
-1. Normalization input and output so sides of Sankey are even.
+1. Normalization input and output so sides of Sankey are even.<!-- See file useeio-updates.md for text previously here -->
 
-<!-- See file useeio-updates.md for text previously here -->
+<!--
+## Chlorpleth Map
 
+Implement a Chlorpleth Map with a clickable legend like in [EWG](https://www.ewg.org/). Also see the [Community Forecasting Map](https://model.earth/community-forecasting). Click "Choose Area of Focus". This example was created during a team project in Polo's Data Visualization course at Georgia Tech. The Leaflet maps includes a legend with the color scale. This sample legend is not clickable, but the color scale is based on the data range.  
+-->
 
+## Input-Output Chart
 
-## React and Leaflet - Chlorpleth Map
+### Impact of Goods and Services - React
 
-Find and implement a React Leaflet Chlorpleth Map with a clickable legend like in [EWG](https://www.ewg.org/). Also see the [Community Forecasting Map](https://model.earth/community-forecasting). Click "Choose Area of Focus". This example was created during a team project in Polo's Data Visualization course at Georgia Tech. The Leaflet maps includes a legend with the color scale. This sample legend is not clickable, but the color scale is based on the data range.  
+Update input-output chart widget to [show total dollars](../../../localsite/info/data/totals/), rather than just cents per dollar.
 
-## React - Heatmap Mosaic
+[EPA Chart Widgets](../../../io/charts/) 
 
-Reach out to Leo regarding updates you'd like to make in the useeio-widgets repo.  
-
-[View Widget](../../../io/build/sector_list.html?view=mosaic&count=50) - [All Widgets](../../../io/charts/) 
-
-## JQuery/D3 - Bubble Chart
+## Bubble Chart - D3
 
 [On Industry Page (at bottom)](../../../localsite/info/#state=GA) - [Stand-Alone Widget for testing](../../../io/charts/bubble/) 
 

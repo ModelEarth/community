@@ -1,5 +1,7 @@
 ## Data Visualization and Maps
 
+Our <a href="../../../apps/smm/">3.0 Mockup</a>
+
 DONE - Activate a clickable legend in the map.js file. Examples in [recycling maps](../../../localsite/map/recycling/ga/).
 
 TODO - Place checkboxes before legend items to filter the map points and list below the map. Possibly use [legend sample from EWG](../../../community/map/ewg/). We will initial work on a stand-alone map component for [Court.bot](https://court.bot). 
