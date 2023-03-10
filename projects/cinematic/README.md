@@ -6,20 +6,15 @@
 For hero images, input-output visualizations and training resources.  
 Themes examples: Last Airbender and Marvel Comics APIs
 
+Project areas:  
 
-Get started beforehand.  We need help in the following areas:  
+1. Save generated images using GitHub Actions (or a CoLab script) with the Stability API Platform and/or <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a> with OpenJourney and [Dreamlike](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0) or the [Midjourney API](https://tokenizedhq.com/midjourney-api/).
 
-1. Create a Stable Diffusion image-generating app using <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a> with OpenJourney and [Dreamlike](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0)<!-- or the [Midjourney API](https://tokenizedhq.com/midjourney-api/)-->.
+2. Automate pulling UN Comtrade input-output data using GitHub Actions to create static files to use with our global search filters. Our <a href="/data-pipeline/international/">International data prep</a> page  
 
-2. Save images on GitHub using Github Actions and/or a CoLab script.
+3. Find and embed/fork existing [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
 
-3. Automate pulling UN Comtrade input-output data using GitHub Actions to create static files to use with our global search filters. Our <a href="/data-pipeline/international/">International data prep</a> page  
-
-4. Find and embed/fork existing [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
-
-5. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Could also update timeline slider in OpenStreetMaps so earthquakes change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
-
-6. Integrate environmental impact scoring tools like [CoolClimate at Berkeley](https://coolclimate.berkeley.edu/calculator) with [Impact Labels](/community/projects/#widgets) and [international trade data](/data-pipeline/).  Also see [NYT article (paywall)](https://www.nytimes.com/interactive/2022/12/13/climate/climate-footprint-map-neighborhood.html) about CoolClimate spinoff.
+4. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Could also update timeline slider in OpenStreetMaps so earthquakes change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
 
 
 ## International Input-Output Visualization using AI
