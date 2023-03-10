@@ -19,7 +19,7 @@ Environmental Impact Widget UX/UI<br><br>
 <div class='pnum'>2.</div>
 <div class='ptxt'>
 <a href="../../localsite/">Localsite Framework</a><br>
-Modify parameters to customize website and profiles<br><br>
+Modify parameters to customize websites and profiles<br><br>
 </div>
 
 <div class='pnum'>3.</div>
