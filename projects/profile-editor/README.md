@@ -1,11 +1,11 @@
-## React - YAML Profile Editor for GitHub MetaData
+## Environmental Profile Editor
+### Impact Footprints stored on GitHub (Developed in React)
+
+[The profile-editor](https://modelearth.github.io/profile-editor) is a fork of Italy's publiccode-editor which saves Metadata settings in a file residing on GitHub. [Clone our Fork](https://github.com/modelearth/profile-editor). Code for America's version saves directly to GitHub. Our update will allow the form to be viewed before logging into GitHub.  
 
 We're building profiles based on Environmental Product Declarations (EPD) and [CoolCarbon footprints](https://coolclimate.berkeley.edu/calculator). 
 <!-- created a seetings-layout branch, 
-
 	then switched to githubpages branch -->
-
-[Our profile-editor](https://modelearth.github.io/profile-editor) is a fork of Italy's publiccode-editor which saves Metadata settings in a file residing on GitHub. [Clone our Fork](https://github.com/modelearth/profile-editor). Code for America's version saves directly to GitHub. Our update will allow the form to be viewed before logging into GitHub.  
 
 [View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently, [view schema](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/schema.core.html#top-level-keys-and-sections)  
 [View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Would be best to remove initial login requirement so fields can be viewed - [Issue](https://github.com/codeforamerica/publiccode-pusher/issues/13)  

@@ -1,21 +1,56 @@
-<a href="../../apps/">Starter Pages</a> - Copy and add parameters
-<a href="../../community/projects/#widgets">Impact UX/UI</a> - Impact Label Widgets
-<a href="../../community/projects/#cinematic">Cinematic</a> - Environmental Impact Menu
-<a href="../../community/projects/#profile-editor">JQuery/React</a> - Environmental Profile Editor
-<a href="../../community/projects/#io">React/JS</a> - Inflow-Outflow and Sankey Charts
-<a href="../../community/projects/#github-actions">Python/R</a> - GitHub Actions Data Pipeline
-<a href="../../community/projects/#python">Python</a> - Machine Learning
-<a href="../../community/projects/#ux">UX/UI</a> - Community Hotspots Environmental Report (CHER)
-<a href="../../community/projects/#maps">Map Projects</a> - Data Visualizations
-<a href="../../community/projects/#google">Google and More</a> - Google Sheet Editor, Census Reporter
+<style>
+.pnum {
+	float:left;
+	font-size: 32px;
+	padding-right: 20px;
+}
+.ptxt {
+	overflow: auto;
+	font-size: 16px;
+}
+</style>
 
-<a href="../../apps/smm/">3.0 Mockup</a> - Lifecycle Tools
+<div class='pnum'>1.</div>
+<div class='ptxt'>
+<a href="../../community/projects/#widgets">Open Footprint</a><br>
+Environmental Impact Widget UX/UI<br><br>
+</div>
 
-Learn about the [7 top footprint tools](https://footprinthero.com/best-carbon-footprint-calculators) including the [CoolCarbon Calculator](https://coolclimate.berkeley.edu/calculator) and the [US EPA Carbon Footprint Calculator](https://www3.epa.gov/carbon-footprint-calculator/)
+<div class='pnum'>2.</div>
+<div class='ptxt'>
+<a href="../../localsite/">Localsite Framework</a><br>
+Modify parameters to customize website and profiles<br><br>
+</div>
 
-View Environmental [impact templates](https://model.earth/community/projects/#widgets) for [Product EPDs](https://buildingtransparency.org/ec3/epds) and the [BuildingTransparency.org API](../../io/template/feed/)
+<div class='pnum'>3.</div>
+<div class='ptxt'>
+<a href="../../community/projects/#ai">Stability AI Image Generation</a><br>
+Creating immersive, entertaining, cinematic experiences<br><br>
+</div>
 
+<div class='pnum'>4.</div>
+<div class='ptxt'>
+<a href="../../community/projects/#pipeline">Model.Earth Data Pipeline</a><br>
+GitHub Actions for static file generation<br><br>
+</div>
 
+<div class='pnum'>5.</div>
+<div class='ptxt'>
+<a href="../../community/projects/#explore">Data Visualization and Maps</a><br>
+Apache ECharts and 3D Maps, Linux Overture Maps<br><br>
+</div>
+
+<div class='pnum'>6.</div>
+<div class='ptxt'>
+<a href="../../community/projects/#profile-editor">Environmental Profile Editor</a><br>
+React App for editing profile files directly on GitHub<br><br>
+</div>
+
+<div class='pnum'>7.</div>
+<div class='ptxt'>
+<a href="../../community/projects/#google">Google Sheet Editor</a><br>
+Tools for editing data in Google Sheets using a social login<br><br>
+</div>
 
 <!--<br>
 Challenge participants are creating pages in the shared <a href="../../apps/">community pages</a> apps repo.<br>

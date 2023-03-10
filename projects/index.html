@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Model.earth - Innovation through Generative A.I.</title>
+<title>Model.earth - Innovation through Generative AI</title>
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
@@ -17,7 +17,7 @@
 -->
 
 <!-- For Facebook -->
-<meta property="og:title" content="Model.earth - Innovation through Generative A.I." />
+<meta property="og:title" content="Model.earth - Innovation through Generative AI" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="https://model.earth/community/img/overview/code-for-america-rect.jpg" />
 <meta property="og:url" content="https://model.earth/community/" />
@@ -25,7 +25,7 @@
 
 <!-- For Twitter -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Model.earth - Innovation through Generative A.I." />
+<meta name="twitter:title" content="Model.earth - Innovation through Generative AI" />
 <meta name="twitter:description" content="Economic data, community resources and planning input combined with the EPA's new environmental indicator model." />
 <meta name="twitter:image" content="https://model.earth/community/img/overview/code-for-america-rect.jpg" />
 
@@ -34,7 +34,6 @@
   loadMarkdown("intro.md", "introDiv", "_parent");
   loadMarkdown("../../io/coders/dev.md", "devDiv", "_parent");
   loadMarkdown("../../io/template/label.md", "widgetsDiv", "_parent");
-  loadMarkdown("../../community/projects/cinematic/impact-score.md", "scoreDiv", "_parent");
   loadMarkdown("profile-editor/README.md", "profileDiv", "_parent");
   loadMarkdown("io/README.md", "ioDiv", "_parent");
   loadMarkdown("github-actions/README.md", "githubDiv", "_parent");
@@ -48,6 +47,12 @@
 </script>
 
 <style>
+h2 {
+    font-size: 32px;
+    padding-top: 20px;
+    font-weight: 300;
+    font-family: "Amaze", "Helvetica Neue", Helvetica, "Lato", sans-serif;
+}
 .headerImage{
     display: none;
 }
@@ -139,17 +144,12 @@ ol > li {
 
 <div class="content contentpadding" style="overflow:auto;">
 
-    <div class="floatRight" style="max-width:400px;">
+    <div class="floatRight hideMobile" style="max-width:400px;">
         <a href="../img/hero/moondog.jpg"><img src="../img/hero/moondog.jpg" style="width:100%" class="roundedCorners"></a><br>
         Moondog
     </div>
 
     <h1 style="font-size:32px">Coding Projects</h1>
-
-    <!--
-    <b>Next Coding Event:</b> <a href="/io/coders/">February 11, 2023</a><br>
-    -->
-    We're innovating using <a href="https://Stability.ai">StabilityAI</a>, <a href="https://echarts.apache.org/">Apache ECharts</a> and <a href="https://overturemaps.org/">Linux Overture Maps</a>.<br><br>
 
     <div id="readmeDiv"></div>
 
@@ -162,31 +162,7 @@ ol > li {
     <div id="devDiv"></div>
     <br>
 
-<div class="two-wide">
-<div><a href="../img/ui/app-ui-1.png"><img src="../img/ui/app-ui-1.png"></a></div>
-<div><a href="../img/ui/app-ui-2.png"><img src="../img/ui/app-ui-2.png"></a></div>
-<div><a href="../img/ui/app-ui-3.png"><img src="../img/ui/app-ui-3.png"></a></div>
-<div><a href="../img/ui/app-ui-4.png"><img src="../img/ui/app-ui-4.png"></a></div>
-<div><a href="../img/ui/app-ui-5.png"><img src="../img/ui/app-ui-5.png"></a></div>
-<div><a href="../img/ui/app-ui-6.png"><img src="../img/ui/app-ui-6.png"></a></div>
-</div>
-<br>
 
-
-    <div style="float:left; margin-right:20px">
-        <a href="https://coolclimate.berkeley.edu/calculator" target="berk"><img src="cinematic/img/coolclimate.png" style="width:100%;max-width:450px; border:1px solid #ccc"></a><br><a href="https://coolclimate.berkeley.edu/calculator">CoolClimate.Berkeley.edu</a> Carbon Footprint Calculator - <a href="cinematic/img/coolclimate.png">Expand</a><br><br>
-    </div>
-
-        <a href="cinematic/img/figma-sample.jpg"><img src="cinematic/img/figma-sample.jpg" style="width:100%;max-width:450px; border:1px solid #ccc"></a><br><a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Figma Mockup</a> for <a href="/apps/">6 impact areas that expand to 24</a>
-
-    <div style="clear:both"></div>
-    <br>
-
-    <div style="font-size:18px; margin-bottom:10px">Prototype (side navigation is not yet active)
-        &nbsp; Here's a <a href="/localsite/info/page/">stand-alone version</a> for developers.
-    </div>
-
-    
 
     <section id="widgets">
     <div class="pagecard">
@@ -226,15 +202,27 @@ ol > li {
     </div>
     </section>
 
-    <section id="miniwidget">
-    <div class="pagecard">
-        <div class="cardstyle" style="padding-bottom: 0px">
-          <div id="scoreDiv"></div>
-        </div>
+    <div class="two-wide">
+    <div><a href="../img/ui/app-ui-1.png"><img src="../img/ui/app-ui-1.png"></a></div>
+    <div><a href="../img/ui/app-ui-2.png"><img src="../img/ui/app-ui-2.png"></a></div>
+    <div><a href="../img/ui/app-ui-3.png"><img src="../img/ui/app-ui-3.png"></a></div>
+    <div><a href="../img/ui/app-ui-4.png"><img src="../img/ui/app-ui-4.png"></a></div>
+    <div><a href="../img/ui/app-ui-5.png"><img src="../img/ui/app-ui-5.png"></a></div>
+    <div><a href="../img/ui/app-ui-6.png"><img src="../img/ui/app-ui-6.png"></a></div>
     </div>
-    </section>
+    <br>
 
-    <section id="cinematic">
+    <div style="float:left; margin-right:20px">
+        <a href="https://coolclimate.berkeley.edu/calculator" target="berk"><img src="cinematic/img/coolclimate.png" style="width:100%;max-width:450px; border:1px solid #ccc"></a><br><a href="https://coolclimate.berkeley.edu/calculator">CoolClimate.Berkeley.edu</a> Carbon Footprint Calculator - <a href="cinematic/img/coolclimate.png">Expand</a><br><br>
+    </div>
+
+        <a href="cinematic/img/figma-sample.jpg"><img src="cinematic/img/figma-sample.jpg" style="width:100%;max-width:450px; border:1px solid #ccc"></a><br><a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Figma Mockup</a> for <a href="/apps/">6 impact areas that expand to 24</a>
+
+    <div style="clear:both"></div>
+    <br>
+
+    <div id="cinematic"></div>
+    <section id="ai">
     <div class="pagecard">
         <div class="cardstyle">
           <div id="cinematicDiv"></div>
@@ -250,15 +238,7 @@ ol > li {
     </div>
     </section>
 
-    <section id="io">
-    <div class="pagecard">
-        <div class="cardstyle">
-          <div id="ioDiv"></div>
-        </div>
-    </div>
-    </section>
-
-    <section id="github-actions">
+    <section id="pipeline">
     <div class="pagecard">
         <div class="cardstyle">
           <div id="githubDiv"></div>
@@ -282,10 +262,11 @@ ol > li {
     </div>
     </section>
 
-    <section id="maps">
+    <section id="explore">
     <div class="pagecard">
         <div class="cardstyle">
           <div id="mapsDiv"></div>
+          <div id="ioDiv"></div>
         </div>
     </div>
     </section>

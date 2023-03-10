@@ -1,5 +1,5 @@
 
-## GitHub Actions Data Pipeline - Python/R
+## Model.Earth Data Pipeline
 
 [Learn about our Data Pipeline Setup](../../../localsite/info/data) and view a sample of displaying a data grid using Tabular.  
 
