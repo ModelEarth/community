@@ -40,7 +40,7 @@ A. The repo containing the Action has to be public, otherwise we won't be able t
 [Python Pipeline - Google Sheets to CSV](https://github.com/modelearth/python-pipeline) - Dan van Kley
 
 
-We generate CSV files froom Google Sheets every 5 minutes in the [Python Pipeline](https://github.com/modelearth/python-pipeline) set up by Dan van Kley.  
+We generate CSV files from Google Sheets every 5 minutes in the [Python Pipeline](https://github.com/modelearth/python-pipeline) set up by Dan van Kley.  
 
 To Do: Trigger our [FarmFresh Python](https://github.com/modelearth/community-data/tree/master/process/python/farmfresh) data pull nightly from a Github Action.  
 Updates for [Farm Fresh - Federal USDA location data](../../farmfresh) on maps. Initially merged for Aglanta. 
