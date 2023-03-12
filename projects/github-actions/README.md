@@ -13,7 +13,6 @@ We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/acti
 
 4. Investigate NAICS file format pulled into [federal Sankey](https://federalist-c3fa68f6-ee2f-4053-9a71-252d9abebb5f.app.cloud.gov/site/18f/federal-carbon-footprint/) and prepare an industry list with areas of operation similar to the [Amazon's Carbon Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint).
 
----
 
 <!--
 
@@ -25,11 +24,10 @@ https://www.toptal.com/developers
 Started here instead:
 https://github.com/JamesIves/fetch-api-data-action
 
+The repo containing the Action has to be public, otherwise we won't be able to use it in our workflows.
+
 -->
 
-A. The repo containing the Action has to be public, otherwise we won't be able to use it in our workflows.
-
----
 
 #### Our GitHub Actions samples
 
