@@ -18,15 +18,15 @@ TO DO - Find a source of "regions within states" based on sets of counties. Appl
 TO DO - Update the map.js [US Map](../../../localsite/info/#mapview=US&show=vehicles) to include a choropleth map layer and/or show the industry density [above our upcoming NAICS Tabulator](../../../localsite/info/naics/#mapview=US&show=vehicles) to represent <a href="../mobility/">locations potentially impacted by the transition to EV</a>. See [choropleth map samples](../../start/maps/).   
 
 <!--
-Move items above into our [Beyond Carbon Project Board](https://github.com/localsite/localsite/projects/1). See [Hack for LA](https://github.com/hackforla/website/projects/7) examples.  
+Move items above into our [Carbon Cycle Project Board](https://github.com/localsite/localsite/projects/1). See [Hack for LA](https://github.com/hackforla/website/projects/7) examples.  
 -->
 <!-- Project created from Automated kanban with reviews template. -->
 
-DONE - Pull state data from wiki and merge with Beyond Carbon using Github Actions. We've forked Abrie's repo.
+DONE - Pull state data from wiki and merge with Carbon Cycle using Github Actions. We've forked Abrie's repo.
 
 DONE - Chad R helped us figure out how to connect to the OpenEPD API.  
 
-DONE - Akilah assisted displaying the [Beyond Carbon](../../../apps/beyondcarbon/) state results as a table with state names.  
+DONE - Akilah assisted displaying the [Carbon Cycle](../../../apps/beyondcarbon/) state results as a table with state names.  
 
 DONE - Kathryn generated state dropdown script from [R-Language script](../../community-data/us/) to include lat/lon attributes for the [brigade map zoom](../../localsite/info/#show=industries&layers=brigades).  
 

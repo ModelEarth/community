@@ -9,4 +9,4 @@ New energy technologies are providing opportunities for communities to create mu
 
 <b>Objective</b> - Document new construction methods and clean energy technologies that allow energy resource centers to be integrated with nearby residential neighborhoods, walkable pastures, regenerative farming and robust foresty.  Explore sustainable industrial designs that emphasize a connection to nature, comfort and inclusion.  
 
-<span style="font-size:16px"><b>Contributors</b> [Georgia Tech Architecture Grads, Summer 2020](../../io/team/)</span>
+<span style="font-size:16px"><b>Contributors</b> [Georgia Tech Architecture Grads, Summer&nbsp;2020](../../io/team/)</span>

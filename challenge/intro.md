@@ -1,4 +1,4 @@
-#Sustainable Communities Challenge Winners
+#Web Challenge Winners
 
 **Best in Show:** Loyola Chicago - Composting and Biodiesel -  Konstantin, Federico and Shriya
 **Best Technical Tool:** Environmental Impact Labels, Abrie, Code for Atlanta
