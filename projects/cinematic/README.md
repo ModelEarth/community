@@ -1,7 +1,7 @@
 ## Stability AI Image Generative
 
 
-[Stability AI Platform API](https://platform.stability.ai) - [DreamStudio Story Vaults](https://dreamstudio.com)
+[Stability AI Platform API](https://dreamstudio.com/api/) - [StableStudio Open Source UX](https://dreamstudio.com/studio/) - [DreamStudio AI Image Generator](https://dreamstudio.ai/generate)
 
 For hero images, input-output visualizations and training resources.  
 Themes examples: Last Airbender and Marvel Comics APIs
