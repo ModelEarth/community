@@ -1,4 +1,4 @@
-#How to Create a Location Model Page
+#How to create a Location Model Page
 
 <!--
 ##Recruit talent for your team.
