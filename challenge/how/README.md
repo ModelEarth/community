@@ -1,4 +1,4 @@
-#How to Create a Local Site Page
+#How to Create a Location Model Page
 
 <!--
 ##Recruit talent for your team.
@@ -9,18 +9,18 @@ Provide contributors with [the registration link](https://model.earth/community/
 ##Fork repos and copy one of the starter examples
 
 Get started by forking 3 repos (localsite, io, apps) into one site webroot. [How to fork repos](../../../localsite/start/)  
-Copy the [base starter folder](../../../apps/base/) within the [apps repo](../../../apps/) and change variables to match your local community.  
+Copy the [base starter folder](../../../apps/base/) within the [apps repo](../../../apps/) and change variables to match a location.  
  
 
-##Identify a location and explore adverse impacts affecting your area
+## Identify a location and model impacts using input-output data
 
-Use the USEEIO [industry comparison page](https://model.earth/localsite/info/) to identify an issue that relates to your location.  
+Use the [industry comparison page](https://model.earth/localsite/info/) to identify issues that relate to your location.  
 
-Choose a state, then choose one or more counties to narrow your search.  
+Choose a state, then choose one or more counties for your location model.  
 
-Example: When exploring our city's impact, we saw that the airport was a chief offender. We recognized that our neighborhood's local wastewater was processed near the airport, so we decided to investigate converting "Shit to Fuel" to eliminate the dependency on fossil fuels.  We are looking at Australia for inspiration since their experimental wastewater plant also generates graphene to capture additional carbon.
+Example: When exploring our city's impact, we saw that the airport had a big impact on the environment and job creation. We recognized that our neighborhood's local wastewater was being processed near the airport, so we investigated converting "Shit to Fuel" to eliminate the airport's dependency on fossil fuels.  We're looking at Australia for inspiration since their experimental wastewater plants generate graphene to capture additional carbon.
 
-##Contact local reps who are involved with your issue
+## Contact local reps who are involved with your issue
 
 Include documentation in your app regarding the prime local movers (influencers) for your issue. Include government reps and nonprofit organizers. Reach out to them in advance of the event to get additional insights for your documentation. If you can't contact them because it is the weekend of the event, find other links to document the local steps needed to make your vision a reality.  
 
