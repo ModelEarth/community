@@ -1,7 +1,7 @@
-## Stability AI Image Generative
+## Generated Images
 
 
-[Stability AI Platform API](https://dreamstudio.com/api/) - [StableStudio Open Source UX](https://dreamstudio.com/studio/) - [DreamStudio AI Image Generator](https://dreamstudio.ai/generate)
+[Stability AI API](https://dreamstudio.com/api/) - [StableStudio UX](https://dreamstudio.com/studio/) - [Image Generator](https://dreamstudio.ai/generate)
 
 For hero images, input-output visualizations and training resources.  
 Themes examples: Last Airbender and Marvel Comics APIs
@@ -17,9 +17,9 @@ Project areas:
 4. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Could also update timeline slider in OpenStreetMaps so earthquakes change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
 
 
-## International Input-Output Visualization using AI
+## Input-Output Visualization
 
-Our modeled images approximate reality as a tool for understanding international commerce. By combining UN import-export data with datasets trained using millions of international photos and illustrations. Midjourney prompts used are below images.
+Our modeled images approximate reality as a tool for understanding international commerce. By combining UN import-export data with Large Language Models (LLM) trained using location photos, prompts driven by NAICS data are used to approximate locations.
 
 <img src="/io/coders/img/DreamStudio_NAICS_111339_-_Other_Noncitrus_Fruit_Farming_closeu_2d1ab81d-6281-44bf-8fb5-efd584f0461a.png" style="width:100%">
 NAICS 111339 - Other Noncitrus Fruit Farming closeup, Ecuador landscape
@@ -28,7 +28,6 @@ NAICS 111339 - Other Noncitrus Fruit Farming closeup, Ecuador landscape
 <img src="/io/coders/img/DreamStudio_NAICS_111339_Other_Noncitrus_Fruit_Farming_closeup__4bb46868-c345-423c-b291-34f636f9c9d9.png" style="width:100%">
 NAICS 111339 "Other Noncitrus Fruit Farming" closeup in Ecuador
 
-Transending language barriers, A.I. video is being integrated with real-time job training to create instant employment without markup by middlemen.
 
 <!--
 3. Add to our [interface in Figma](https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Neighborhood-Impact-Footprint?node-id=18%3A6) for showing everyone's real-time score for 24 impact areas. Install [Figma Unify](https://www.figma.com/community/plugin/1009866256233241860/Unify%3A-Figma-to-React%2C-React-Native-and-HTML%2FCSS) to convert Figma components into clean React.  
