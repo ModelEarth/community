@@ -13,7 +13,7 @@
 <div class='pnum'>1.</div>
 <div class='ptxt'>
 <a href="../../localsite/">Localsite Navigation Framework</a><br>
-Modify parameters to customize websites and profiles<br><br>
+Integrate navigation and maps across domains<br><br>
 </div>
 
 <div class='pnum'>2.</div>
@@ -24,7 +24,7 @@ Creating immersive, entertaining, cinematic experiences<br><br>
 
 <div class='pnum'>3.</div>
 <div class='ptxt'>
-<a href="../../community/projects/#pipeline">Model.Earth Data Pipeline</a><br>
+<a href="../../community/projects/#pipeline">Model.earth Data Pipeline</a><br>
 GitHub Actions for static file generation<br><br>
 </div>
 
