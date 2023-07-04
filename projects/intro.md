@@ -12,44 +12,44 @@
 
 <div class='pnum'>1.</div>
 <div class='ptxt'>
-<a href="../../community/projects/#widgets">Open Footprint</a><br>
-Environmental Impact Widget UX/UI<br><br>
+<a href="../../localsite/">Localsite Navigation Framework</a><br>
+Modify parameters to customize websites and profiles<br><br>
 </div>
 
 <div class='pnum'>2.</div>
 <div class='ptxt'>
-<a href="../../localsite/">Localsite Framework</a><br>
-Modify parameters to customize websites and profiles<br><br>
-</div>
-
-<div class='pnum'>3.</div>
-<div class='ptxt'>
-<a href="../../community/projects/#ai">Stability AI Image Generation</a><br>
+<a href="../../community/projects/#ai">Image/Video Generation</a><br>
 Creating immersive, entertaining, cinematic experiences<br><br>
 </div>
 
-<div class='pnum'>4.</div>
+<div class='pnum'>3.</div>
 <div class='ptxt'>
 <a href="../../community/projects/#pipeline">Model.Earth Data Pipeline</a><br>
 GitHub Actions for static file generation<br><br>
 </div>
 
-<div class='pnum'>5.</div>
+<div class='pnum'>4.</div>
 <div class='ptxt'>
 <a href="../../community/projects/#explore">Data Visualization and Maps</a><br>
 Apache ECharts and 3D Maps, Linux Overture Maps<br><br>
 </div>
 
-<div class='pnum'>6.</div>
+<div class='pnum'>5.</div>
 <div class='ptxt'>
 <a href="../../community/projects/#profile-editor">Environmental Profile Editor</a><br>
 React App for editing profile files directly on GitHub<br><br>
 </div>
 
-<div class='pnum'>7.</div>
+<div class='pnum'>6.</div>
 <div class='ptxt'>
 <a href="../../community/projects/#google">Google Sheet Editor</a><br>
 Tools for editing data in Google Sheets using a social login<br><br>
+</div>
+
+<div class='pnum'>7.</div>
+<div class='ptxt'>
+<a href="../../community/projects/#widgets">Open Footprint - Impact Widgets</a><br>
+Environmental Impact Widget UX/UI<br><br>
 </div>
 
 <!--<br>

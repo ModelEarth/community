@@ -1,5 +1,4 @@
-## Generated Images
-
+## Image/Video Generation
 
 [Stability AI API](https://dreamstudio.com/api/) - [StableStudio UX](https://dreamstudio.com/studio/) - [Image Generator](https://dreamstudio.ai/generate)
 
