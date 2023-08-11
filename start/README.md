@@ -31,9 +31,7 @@ Leaflet Map Layers
 ## [<span class="num">6</span> USEEIO API](https://github.com/usepa/useeio_api/)
 [Python and R](../resources/useeio) 
 
-<br>
----
-<br>
+<br><br>
 
 # Resources
 
