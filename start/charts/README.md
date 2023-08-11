@@ -1,9 +1,17 @@
 # Chart Starters
 
-We recommend [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, 3D Globes and a lot more.
+We recommend [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, [Chord](https://youtu.be/UdKoggg7E3g?t=99), 3D Globes and a lot more.
 
 [The embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts and use [D3.js](https://github.com/d3/d3/wiki/Gallery).  
 The [Environmental Impact Bubble Chart](../../../io/charts/bubble/) uses JSON files generated from the USEEIO API.  
+
+### Chord Charts
+
+[Chord Chart examples](https://www.streetlightdata.com/chord-diagrams-visualization-data/)
+
+The following are built with <a href="https://d3js.org/">D3.js</a>, but the Apache eCharts may be easier
+<a href="https://bost.ocks.org/mike/uberdata/">Uber Sample</a> / <a href="http://www.visualcinnamon.com/2015/08/stretched-chord.html">Stretched Cord</a> - <a href="http://bl.ocks.org/nbremer/f9dacd23eece9d23669c">Demo (Education)</a> / <a href="https://github.com/sghall/react-d3-transitions">React D3 Transitions</a> now [Resonance](https://github.com/sghall/resonance)<br><br>
+
 
 ### Sankey Charts
 
