@@ -4,31 +4,31 @@
 <a href="https://model.earth/community/start/">View current GitHub page as a web page</a>
 </div>
 
-## [<span class="num">1</span> Start a local website](../../localsite/start)
+## [<span class="num">1</span><span class="txt">Start a local website</span>](../../localsite/start)
 Examples for displaying your datascapes.
 
 &bullet; <a href="../../localsite/start/">Page Starter</a>
 &bullet; <a href="../../apps/">Location Modeling</a><!--
 &bullet;  [Copy the apps base folder](../../apps/base/)  -->
-&bullet; <a href="../../localsite/#parameters">Localsite Gallery and Parameters</a>  
+&bullet; <a href="../../localsite/#parameters">Localsite Parameters</a>  
 <!--
 &bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
 &bullet; <a href="../challenge/how/">How to Create a Local Site Page</a><br>
 --> 
 
-## [<span class="num">2</span> Display Datasets](../../localsite/info/data)
+## [<span class="num">2</span><span class="txt">Display datasets</span>](../../localsite/info/data)
 Model.Earth Data Pipeline
 
-## [<span class="num">3</span> Input-Output Widgets](../../io/charts)
+## [<span class="num">3</span><span class="txt">Input-output widgets</span>](../../io/charts)
 US Environmental Protection Agency (EPA)
 
-## [<span class="num">4</span> Chart Starter Ideas](charts)
+## [<span class="num">4</span><span class="txt">Chart starter ideas</span>](charts)
 Chord, Sankey, USEEIO Heatmap Mosaic and Input-Output Flow
 
-## [<span class="num">5</span> Map Samples](maps)
+## [<span class="num">5</span><span class="txt">Map samples</span>](maps)
 Leaflet Map Layers
 
-## [<span class="num">6</span> USEEIO API](https://github.com/usepa/useeio_api/)
+## [<span class="num">6</span><span class="txt">Modeling framework (USEEIO)</span>](https://github.com/usepa/useeio_api/)
 [Python and R](../resources/useeio) 
 
 <br><br>
