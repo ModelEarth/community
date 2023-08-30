@@ -4,7 +4,7 @@
 <a href="https://model.earth/community/start/">View current GitHub page as a web page</a>
 </div>
 
-## [<span class="num">1</span><span class="txt">Start a local website</span>](../../localsite/start)
+## [<span class="num">1</span><span class="txt">Start a Local Website</span>](../../localsite/start)
 Examples for displaying your datascapes.
 
 &bullet; <a href="../../localsite/start/">Page Starter</a>
@@ -16,19 +16,19 @@ Examples for displaying your datascapes.
 &bullet; <a href="../challenge/how/">How to Create a Local Site Page</a><br>
 --> 
 
-## [<span class="num">2</span><span class="txt">Display datasets</span>](../../localsite/info/data)
-Model.Earth Data Pipeline
+## [<span class="num">2</span><span class="txt">Display Datasets</span>](../../localsite/info/data)
+Model.earth Data Pipeline
 
-## [<span class="num">3</span><span class="txt">Input-output widgets</span>](../../io/charts)
+## [<span class="num">3</span><span class="txt">Input-Output Widgets</span>](../../io/charts)
 US Environmental Protection Agency (EPA)
 
-## [<span class="num">4</span><span class="txt">Chart starter ideas</span>](charts)
+## [<span class="num">4</span><span class="txt">Chart Starter Ideas</span>](charts)
 Chord, Sankey, USEEIO Heatmap Mosaic and Input-Output Flow
 
-## [<span class="num">5</span><span class="txt">Map samples</span>](maps)
+## [<span class="num">5</span><span class="txt">Map Samples</span>](maps)
 Leaflet Map Layers
 
-## [<span class="num">6</span><span class="txt">Modeling framework (USEEIO)</span>](https://github.com/usepa/useeio_api/)
+## [<span class="num">6</span><span class="txt">Modeling Framework (USEEIO)</span>](https://github.com/usepa/useeio_api/)
 [Python and R](../resources/useeio) 
 
 <br><br>
