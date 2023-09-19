@@ -7,13 +7,13 @@ Themes examples: Last Airbender and Marvel Comics APIs
 
 Project areas:  
 
-1. Save generated images using GitHub Actions (or a CoLab script) with the [Stability API Platform](https://platform.stability.ai/) and/or <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a> with OpenJourney and [Dreamlike](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0) or the [Midjourney API](https://tokenizedhq.com/midjourney-api/).
+1. Save generated images using GitHub Actions (or a CoLab script) with the [Stability.AI API Platform](https://platform.stability.ai/), the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the upcoming [Midjourney API](https://tokenizedhq.com/midjourney-api/), and/or <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a>.
 
 2. Automate pulling UN Comtrade input-output data using GitHub Actions to create static files to use with our global search filters. Our <a href="/data-pipeline/international/">International data prep</a> page  
 
 3. Find and embed/fork existing [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
 
-4. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Could also update timeline slider in OpenStreetMaps so earthquakes change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
+4. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Could also update timeline slider in OpenStreetMaps so earthquake locations change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
 
 
 ## Input-Output Visualization
