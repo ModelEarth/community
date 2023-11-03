@@ -7,7 +7,7 @@ Themes examples: Last Airbender and Marvel Comics APIs
 
 Project areas:  
 
-1. Save generated images using GitHub Actions (or a CoLab script) with the [Stability.AI API Platform](https://platform.stability.ai/), the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the upcoming [Midjourney API](https://tokenizedhq.com/midjourney-api/), and/or <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a>.
+1. Save generated images using GitHub Actions (or a CoLab script) with the [Stability.AI API Platform](https://platform.stability.ai/), the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the upcoming [Midjourney API](https://tokenizedhq.com/midjourney-api/), and/or <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a>. Steps for installing [Stable Diffusion on Windows](https://stable-diffusion-art.com/install-windows/).
 
 2. Automate pulling UN Comtrade input-output data using GitHub Actions to create static files to use with our global search filters. Our <a href="/data-pipeline/international/">International data prep</a> page  
 

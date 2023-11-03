@@ -1,11 +1,22 @@
 ## Environmental Profile Editor
+
+We're aiming to find and combine profile modules based on [Environmental Product Declarations (EPD)](../../../io/template/) and UI tool's like UC Berkeley's [CoolCarbon footprints](https://coolclimate.berkeley.edu/calculator). 
+<!-- created a seetings-layout branch, 
+	then switched to githubpages branch -->
+
+<div style="float:left; margin-right:20px">
+<a href="https://coolclimate.berkeley.edu/calculator" target="berk"><img src="cinematic/img/coolclimate.png" style="width:100%;max-width:450px; border:1px solid #ccc"></a><br><a href="https://coolclimate.berkeley.edu/calculator">CoolClimate.Berkeley.edu</a> Carbon Footprint Calculator - <a href="cinematic/img/coolclimate.png">Expand</a><br><br>
+</div>
+
+<a href="cinematic/img/figma-sample.jpg"><img src="cinematic/img/figma-sample.jpg" style="width:100%;max-width:450px; border:1px solid #ccc"></a><br><a href="https://www.figma.com/file/mVZUSQCMBsIMu9bp7Y8qsS/Impact-Footprint?node-id=0%3A1" target="fig">Figma Mockup</a> for <a href="/apps/">6 impact areas that expand to 24</a>
+
+<div style="clear:both"></div>
+
 ### Impact Footprints stored on GitHub (Developed in React)
 
 [The profile-editor](https://modelearth.github.io/profile-editor) is a fork of Italy's publiccode-editor which saves Metadata settings in a file residing on GitHub. [Clone our Fork](https://github.com/modelearth/profile-editor). Code for America's version saves directly to GitHub. Our update will allow the form to be viewed before logging into GitHub.  
 
-We're building profiles based on Environmental Product Declarations (EPD) and [CoolCarbon footprints](https://coolclimate.berkeley.edu/calculator). 
-<!-- created a seetings-layout branch, 
-	then switched to githubpages branch -->
+
 
 [View Interface - Italy](https://publiccode-editor.developers.italia.it/) - Best interface example currently, [view schema](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/schema.core.html#top-level-keys-and-sections)  
 [View Interface - America](https://codeforamerica.github.io/publiccode-pusher/) - Would be best to remove initial login requirement so fields can be viewed - [Issue](https://github.com/codeforamerica/publiccode-pusher/issues/13)  
@@ -40,7 +51,7 @@ More about Code for America's [Public Code Pusher](https://brigade.cloud/project
 
 We'll optimize <a href="../../../io/template/feed/">our call to the openEPD API</a> for the <a href="../../../localsite/info/#show=openepd&mapview=state&state=GA">OpenEPD map display</a> to load faster by fetching fewer fields. You'll find the "openEPD" settings in our <a href="../../../localsite/js/map.js">localsite/js/map.js</a> file.<br><br>
 
-This page contains [just the maps](https://model.earth/localsite/map/#show=openepd&mapview=state&state=GA) (note how slow the marker point (map1) is.  
+This page contains [just the maps](../../localsite/map/#show=openepd&mapview=state&state=GA) (note how slow the marker point (map1) is.  
 
 Possible EDP form sample: [ClimateEarth.com demo](https://www.climateearth.com/command-qc-demo-sign-up/)  
 Also, [GreenDelta Java EPD editor](https://github.com/GreenDelta/epd-editor)  
