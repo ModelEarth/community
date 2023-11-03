@@ -25,7 +25,7 @@ Find existing widgets and repos that use the [Charging Station API](https://afdc
 --> 
 
 
-## .NET Core 5.0 Projects
+## .NET Core Projects
 
 1. Create a "Disposable Database" for editing crowdsourced lists using data hosted in GitHub .csv files, Google Sheets, AirTables and/or Azure.  Document your REST process using a [RealWorld example page](https://neighborhood.org/realworld) to integrate frontend and backend tools.  
 
