@@ -3,9 +3,9 @@
 
 [Learn about our Data Pipeline Setup](../../../localsite/info/data) and view a sample of displaying a data grid using Tabular.  
 
-We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide static data for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/).  
+We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide static data for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/) - [Pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline).
 
-1. Generate static data using [Python for filling in gaps in NAICS industry data](../../../localsite/info/data/). We're publishing [articles](../../../io/template/) in Applied Sciences,  Lifecycle Analysis (LCA) 2022 coordinated by US EPA Engineer Wes Ingwersen.
+1. Generate static data using [Python for filling in gaps in NAICS industry data](../../../localsite/info/data/). - [Article Draft](../../../io/template/).
 
 2. Generate industry output from [Ecker County Business Patters (CBP) data](https://github.com/modelearth/community-data/tree/master/process/cbp) with gaps filled.
 
