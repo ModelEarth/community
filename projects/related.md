@@ -89,7 +89,7 @@ Georgia Tech, UGA, Emory and the Ray Anderson Foundation are developing an [Emis
 #### All The Places - Location Data
 
 Process [All the Places](https://www.alltheplaces.xyz/) into zip folders in our [zip/io/data repo](https://model.earth/zip/io/) <!-- Contributor: Kathryn -->
-Here's our example of [pulling and uncompressing the places file](https://github.com/modelearth/alltheplaces_curl) into a repo.
+Here's our example of [pulling and uncompressing the places file](https://github.com/modelearth/places-data) into a repo.
 
 
 <!-- https://spatial.chat/s/QiqoChat2 -->
