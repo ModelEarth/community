@@ -26,7 +26,7 @@ Scrapes and merges the USDA's lists of [farmer's markets](https://search.ams.usd
 
 ## Python Scrapper Script
 
-Script in /community-data/process/python/farmfresh sends data to us/all and us/state at:
+Script in [/community-data/process/python/farmfresh](/community-data/process/python/farmfresh) sends data to us/all and us/state at:
 [/community-data/us/state](https://github.com/modelearth/community-data/)
 
 

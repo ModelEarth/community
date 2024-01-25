@@ -10,6 +10,18 @@
 }
 </style>
 
+<h3>Current Focus</h3>
+
+&bullet; Job Levels by County with Average Pay and changes in hiring
+&bullet; Farm Fresh Maps - API integration with local job data
+&bullet; Generative API pulls saved as static files
+
+<b>AI API Projects</b>
+&bullet; Locations Reimagined by Ai
+&bullet; Local industry innovation renderings
+&bullet; Finding Jobs and Featuring Local Artisans
+<br>
+
 <div class='pnum'>1.</div>
 <div class='ptxt'>
 <a href="../../localsite/">Localsite Navigation Framework</a><br>
