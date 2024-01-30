@@ -22,14 +22,6 @@
 &bullet; Finding Jobs and Featuring Local Artisans
 <br>
 
-<!--
-Hackathons
-https://devpost.com/hackathons
-
-DLT Climate Hackathon
-https://dlt-climate-hackathon.devpost.com/details/dates
--->
-
 <div class='pnum'>1.</div>
 <div class='ptxt'>
 <a href="../../localsite/">Localsite Navigation Framework</a><br>

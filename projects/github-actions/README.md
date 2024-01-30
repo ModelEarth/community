@@ -1,11 +1,11 @@
 
 ## Model.Earth Data Pipeline
 
-[Learn about our Data Pipeline Setup](../../../localsite/info/data) and view a sample of displaying a data grid using Tabular.  
+Reuse our [Community Data Python](../../../community-data) from our [Data Pipeline](../../../localsite/info/data) and view a Tabular data grid sample.  
 
-We're creating a pipeline using [GitHub Actions](https://docs.github.com/en/actions) to provide static data for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/) - [Pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline).
+We use [GitHub Actions](https://docs.github.com/en/actions) to generate static data files (.csv and .json) for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/) - [Pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline).
 
-1. Generate static data using [Python for filling in gaps in NAICS industry data](../../../localsite/info/data/). - [Article Draft](../../../io/template/).
+1. Generate static data using [Python for filling in gaps in NAICS industry data](../../../machine-learning/)..
 
 2. Generate industry output from [Ecker County Business Patters (CBP) data](https://github.com/modelearth/community-data/tree/master/process/cbp) with gaps filled.
 
