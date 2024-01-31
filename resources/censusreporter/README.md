@@ -1,25 +1,33 @@
-[Display Datasets](../../../localsite/info/data) 
+[Community Data](/community-data/)
 
 # Census Reporter  
 
-We could upgrade [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-extended input-output](../../../io/charts/) widgets 
+Project: Updating [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-extended input-output](../../../io/charts/) local job data  
 and [social safety net tools](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
 
-[Our Python 3 Fork](https://github.com/modelearth/map)  
+[Our Python 3 Fork](https://github.com/modelearth/map) - Forked from wazimap.
+Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
-### CensusReporter Frontend with Google Data Commons API
+Are there other Python 3 forks of [CensusReport Source](https://github.com/censusreporter/censusreporter)? 
+Which fork is focused on fast load times?
+
+### CensusReporter frontend integration with USEEIO Industry Impact Charts and Google Data Commons API
  
-Using the [frontend](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) from the Python 3 fork of CensusReporter, we'll point demographics charts at the Google Data Commons API (retain support for PostgreSQL).  
+[Atlanta CensusReporter Detail Pages](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) load very slowly.  We'll improve speeds by using static data with CDN caching. 
+
+Compare with [data.Census.gov Atlanta](https://data.census.gov/cedsci/profile?g=1600000US1304000)  
 
 **Goal**
+
+Integration with [Google Data Commons](https://www.datacommons.org/explore/sustainability)
+Add USEEIO data to [Data Commons Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 Allow any country to integrate their demographic, industry and environmental data for analysis by machine learning algorithms using a common Schema within the Google Data Commons API.  
 
 The Wazimap fork provides a Python 3 version of Census Reporter with international usage.  
 We're aiming to bring it in sync with the Python 2 version used by [CensusReporter.org](https://CensusReporter.org).  
+ 
 
-Start from our [github.com/modelearth/map](https://github.com/modelearth/map) fork of Wazimap Census Reporter.  
-Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
 <!--
 Place Wazimap fork of CensusReporter into a [Python Docker container](https://hub.docker.com/_/python) for easier install.  
@@ -30,11 +38,8 @@ Set up Docker to [deploy to Heroku](https://github.com/datamade/how-to/blob/mast
 
 **Challenge**  
 
-How can demographics data, maps and machine learning be integrated with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/)?
- 
-**Pages to Compare**  
-[CensusReporter.com Atlanta](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/) - [GitHub repo](https://github.com/censusreporter/censusreporter) - [Our Python 3 Fork](https://github.com/modelearth/map)  
-[Data.Census.gov Atlanta](https://data.census.gov/cedsci/profile?g=1600000US1304000)  
+How can demographics data, maps and machine learning be integrated with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) and our [job/industry impact data](/localsite/info/)?
+
 
 **Areas for improvements**  
 Zip and county maps  

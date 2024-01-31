@@ -13,10 +13,12 @@
 <h3>Current Focus</h3>
 
 &bullet; Job Levels by County with Average Pay and changes in hiring
+&bullet; [All the Places](../../places/)
+&bullet; [Census Reporter](../../community/resources/censusreporter/)
 &bullet; Farm Fresh Maps - API integration with local job data
-&bullet; Generative API pulls saved as static files
 
 <b>AI API Projects</b>
+&bullet; Generative API pulls saved as static files
 &bullet; Locations Reimagined by Ai
 &bullet; Local industry innovation renderings
 &bullet; Finding Jobs and Featuring Local Artisans
