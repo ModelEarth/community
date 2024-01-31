@@ -12,16 +12,16 @@
 
 <h3>Current Focus</h3>
 
-&bullet; Job Levels by County with Average Pay and changes in hiring
-&bullet; [All the Places](../../places/)
-&bullet; [Census Reporter](../../community/resources/censusreporter/)
-&bullet; Farm Fresh Maps - API integration with local job data
+&bullet; [Job Levels by County](../../community-data/) with Average Pay and changes in hiring
+&bullet; [All the Places](../../places/) - Generation of state and zip code files
+&bullet; [Census Reporter and Google Data Commons](../../community/resources/censusreporter/)
+&bullet; [Farm Fresh Maps](../../localsite/info/#show=farmfresh) - API integration with local job data
 
 <b>AI API Projects</b>
-&bullet; Generative API pulls saved as static files
-&bullet; Locations Reimagined by Ai
-&bullet; Local industry innovation renderings
-&bullet; Finding Jobs and Featuring Local Artisans
+&bullet; [ChatGPT Setup](https://www.toolify.ai/ai-news/create-your-own-gpt-ai-from-games-to-stories-751819) - For Jobs Levels by County 
+&bullet; [ChatGPT with Github Actions](https://github.com/marketplace/actions/chatgpt-action) - Saved as static files
+&bullet; Locations reimagined by Ai - Gemini and Google Places
+&bullet; [Local industry innovation renderings](../../io/template/feed/) - BuildingTransparency.org
 <br>
 
 <div class='pnum'>1.</div>
