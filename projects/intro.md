@@ -18,7 +18,7 @@
 &bullet; [Farm Fresh Maps](../../localsite/info/#show=farmfresh) - API integration with local job data
 
 <b>AI API Projects</b>
-&bullet; [Stability.AI SDK - Github Action Workflows](https://github.com/Stability-AI/stability-sdk/actions)
+&bullet; [Stability.AI SDK](https://github.com/Stability-AI/stability-sdk) - [Github Action Workflows](https://github.com/Stability-AI/stability-sdk/actions)
 &bullet; [ChatGPT Setup](https://www.toolify.ai/ai-news/create-your-own-gpt-ai-from-games-to-stories-751819) - For Jobs Levels by County 
 &bullet; [ChatGPT with Github Actions](https://github.com/marketplace/actions/chatgpt-action) - Saved as static files
 &bullet; Locations reimagined by Ai - Gemini and Google Places
