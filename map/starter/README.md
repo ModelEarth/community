@@ -18,7 +18,7 @@ Can it lookup a city, zip or county lat/lon?
 
 Here's our script to [Generate Farm Fresh CSV files](../../farmfresh) for all US states.  
 
-Here's a Python example of outputing zip code data to nested folders: /community/prep/all/zipgraph.py  
+Here's a Python example of outputing zip code data to nested folders: /data-pipeline/prep/all/zipgraph.py  
 Creates a [folder for each digit](https://github.com/datascape/community-usa/tree/master/data/zip)  
 
 
