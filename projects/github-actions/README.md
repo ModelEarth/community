@@ -3,16 +3,10 @@
 
 Reuse our [Community Data Python](../../../community-data) from our [Data Pipeline](../../../localsite/info/data) and view a Tabular data grid sample.  
 
-We use [GitHub Actions](https://docs.github.com/en/actions) to generate static data files (.csv and .json) for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/) - [Pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline).
+We use [GitHub Actions](https://docs.github.com/en/actions) to generate static data files (.csv, .json and SQLite) for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/) - [Pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline).
 
-1. Generate static data using [Python for filling in gaps in NAICS industry data](../../../machine-learning/)..
 
-2. Generate industry output from [Ecker County Business Patters (CBP) data](https://github.com/modelearth/community-data/tree/master/process/cbp) with gaps filled.
-
-3. Prepare BuildingTransparency.org API data for [label templates](../../../io/template/) and integrate with EPA USEEIO static json files. Steps for [getting started with impact labels](../../../community/projects/#widgets).
-
-4. Investigate NAICS file format pulled into [federal Sankey](https://federalist-c3fa68f6-ee2f-4053-9a71-252d9abebb5f.app.cloud.gov/site/18f/federal-carbon-footprint/) and prepare an industry list with areas of operation similar to the [Amazon's Carbon Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint).
-
+View our Coder page for [current projects](../../../io/coders/).
 
 <!--
 

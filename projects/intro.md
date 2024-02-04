@@ -10,10 +10,17 @@
 }
 </style>
 
+<h3>Where we need help...</h3>
+
+&bullet; [Blog Install Debug](../../places/) - Node install wiz needed
+&bullet; [View Actual Dollar Total](../../places/) - Boss level React and Matrix skills needed
+&bullet; Prepare BuildingTransparency.org API data for [label templates](../../../io/template/) and integrate with EPA USEEIO static json files. Steps for [getting started with impact labels](../../../community/projects/#widgets).
+&bullet; [Govenment Carbon Footprints](https://federalist-c3fa68f6-ee2f-4053-9a71-252d9abebb5f.app.cloud.gov/site/18f/federal-carbon-footprint/) - Investigate NAICS and prepare an industry list with areas of operation similar to the [Amazon's Carbon Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint). Our initial work with [Sankey Charts](../../community/start/charts/).
+
 <h3>Current Focus</h3>
 
-&bullet; [Job Levels by County](../../community-data/) with Average Pay and changes in hiring
-&bullet; [All the Places](../../places/) - Generation of state and zip code files
+&bullet; [Job Levels by County](../../community-data/) with Average Pay and changes in hiring ([Gaurav](/io/team/))
+&bullet; [All the Places Zips](../../places/) - Generation of state and zip code files (Greg)
 &bullet; [Census Reporter and Google Data Commons](../../community/resources/censusreporter/)
 &bullet; [Farm Fresh Maps](../../localsite/info/#show=farmfresh) - API integration with local job data
 
