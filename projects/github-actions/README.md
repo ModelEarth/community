@@ -1,7 +1,7 @@
 
 ## Model.Earth Data Pipeline
 
-Reuse our [Community Data Python](../../../community-data) from our [Data Pipeline](../../../localsite/info/data) and view a Tabular data grid sample.  
+Reuse our [Community Datasets Python](../../../community-data) from our [Data Pipeline](../../../localsite/info/data) and view a Tabular data grid sample.  
 
 We use [GitHub Actions](https://docs.github.com/en/actions) to generate static data files (.csv, .json and SQLite) for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/) - [Pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline).
 
