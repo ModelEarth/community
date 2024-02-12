@@ -1,7 +1,7 @@
 
 # About Model.Earth
 
-## What Makes our Interface Unique and Exciting
+## What makes our Interface Unique and Exciting
 
 The model.earth interface makes picking locations and topics quick-and-easy for viewing local industries and census attributes. Our maps, tables and charts load faster than most websites thanks to our use of static files and Tabulator sortable grids.
 
@@ -47,7 +47,7 @@ Columns could be: Total, Male, Female, Under 18, 18 to 65, Over 65
 Instead of showing the census grid on the initial load, we'll provide a small snapshot about the location with interesting census attributes. We'll link the snapshot to CensusReporter.com for their great chart details (NY zip 10001).
 -->
 
-We're focused on providing a tight layout using snapshot boxes for census highlights, places and environmental impacts beside timelines for changing job levels and industry product lifecycle details.
+We're focused on providing a tight layout using census highlights, All the Places location summaries, and environmental impact labels for communities, with timelines for job level projections and industry product lifecycle details.
 
 
 [Community Data](/community-data) and [Code Meetups](/io/coders)
