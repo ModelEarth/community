@@ -2,8 +2,9 @@
 
 For Data Science and Computer Science 
 
+[Community Datasets](../../../community-data/)  
 [Local Industry Lists - Data Prep](../../../localsite/info/data/)  
-[About API](../../../io/about/api/) - County and Zip Code data sources  
+[USEEIO Source Diagram](../../../io/about/api/) - County and Zip Code data sources  
 [Display Datasets](../../../localsite/info/data/) - Tabulator Sample  
 [Industries by Zip Code (ZCTA)](../../../community-data/process/naics/)   
 [Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
