@@ -20,7 +20,7 @@ Our universal filters make exploring data fun, and great for Ai prompt generatio
 - Industry Impact - AIr, Water, Energy, Land, Health, Prosperity (Jobs and Value Added)
 
 For comparison, here's Data USA's [Payroll by Industry Sector](https://datausa.io/profile/geo/new-york#payroll).  
-Limitations: The Data USA payroll chart only supports state level. It's also difficult to see which industry each bar represents.
+Limitations: The Data USA chart only supports state level. It's also difficult to see which industry the bars represent.
 
 <!--
 In our setup, the colored countries will instead be the location's top 10 industries. The lines will move when indicators are selected for the number of employees, establishments, payroll.

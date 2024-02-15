@@ -22,7 +22,7 @@ Example: When exploring our city's impact, we saw that the airport had a big imp
 
 ## Contact local reps who are involved with your issue
 
-Include documentation in your app regarding the prime local movers (influencers) for your issue. Include government reps and nonprofit organizers. Reach out to them in advance of the event to get additional insights for your documentation. If you can't contact them because it is the weekend of the event, find other links to document the local steps needed to make your vision a reality.  
+Include documentation in your app regarding the prime local movers (influencers) for your issue. Include government reps and nonprofit organizers. Reach out to them in advance of coding events to get additional insights for your documentation. Organize links in a readme.md page and document the steps needed to make your vision a reality.  
 
 ##Select top indicators from environmental impact areas
 
