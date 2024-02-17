@@ -53,13 +53,9 @@ County automobile industry employment for 6-digit NAICS 336111.
 
 ### Sankey IO Chart
 
-1. Work with the federal gov's new Sankey repo, update the [Sankey D3 Chart](../../../io/charts/sankey/) data formatting to use the same process to include the [USEEIO inflow-outflow widget](../../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
+TO DO - Normalization input and output so sides of Sankey are even in [our Sankey chart](/io/charts/sankey/). Sample [visualizations](../../start/charts/) of material flow charts.
 
-1. Info on [How to edit IO widgets](../../../io/charts/).
-
-1. See sample [visualizations](../../start/charts/) of material flow charts.
-
-1. Normalization input and output so sides of Sankey are even.<!-- See file useeio-updates.md for text previously here -->
+TO DO - Work with the federal gov's new Sankey repo, update the [Sankey D3 Chart](../../../io/charts/sankey/) data formatting to use the same process to include the [USEEIO inflow-outflow widget](../../../io/build/iochart.html#sectors=333613,335912,336111&page=1&count=10).  
 
 <!--
 ## Chlorpleth Map
@@ -70,14 +66,16 @@ Implement a Chlorpleth Map with a clickable legend like in [EWG](https://www.ewg
 
 ### Bubble Chart - D3
 
-[On Industry Page (at bottom)](../../../localsite/info/#state=GA) - [Stand-Alone Widget for testing](../../../io/charts/bubble/) 
+[On Industry Page (at bottom)](../../../localsite/info/#state=NY) - [Stand-Alone Widget for testing](../../../io/charts/bubble/) 
 
-- Adjust initial darkness - seems to be overlapping itself.
-- Rollover does not work unless loading twice. It works after toggling the red highlight. Also works on stand-alone.
-- When toggling the red highlight, show the red again after toggling back. This worked until recently.
+
+TO DO - When toggling the red highlight, show the red again after toggling back. This worked initially.
+
+TO DO - Update to display 72 sectors. Retain option to show 389 NAICS industries from initial USEEIO model version.
+<!--
 - Optional: Modify so popups still appear when the containing div is set to position:relative. 
 - Optional: Scale to size of containing div during browser resize. 
-
+-->
 
 <!--
 
@@ -133,3 +131,6 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
   http://smartcities.ipat.gatech.edu/sites/default/files/CityOfMilton_SmarterSaferRoutesToSchool.pdf
 -->
 
+### Data Pipeline
+
+[Our Community Datasets page](../../../community-data/) has work in progress

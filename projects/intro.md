@@ -21,7 +21,7 @@
 <h3>Current Focus</h3>
 
 &bullet; [Job Levels by County](../../community-data/) with Average Pay and changes in hiring ([Gaurav](/io/team/))
-&bullet; [All the Places Zips](../../places/) - Generation of state and zip code files (Greg)
+&bullet; [All the Places Zips](../../places/) - Generation of state and zip code files (Carolyn)
 &bullet; [Census Reporter and Google Data Commons](../../community/resources/censusreporter/)
 &bullet; [Farm Fresh Maps](../../localsite/info/#show=farmfresh) - API integration with local job data
 
