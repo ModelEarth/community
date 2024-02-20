@@ -65,8 +65,11 @@ React App for editing profile files directly on GitHub<br><br>
 
 <div class='pnum'>6.</div>
 <div class='ptxt'>
-<a href="../../community/projects/#google">Google Sheet Editor</a><br>
+<a href="../../community/projects/#google">Google Data Commons</a><br>
+International data lookups and integration with EPA impact data<br><br>
+<!--
 Tools for editing data in Google Sheets using a social login<br><br>
+-->
 </div>
 
 <div class='pnum'>7.</div>

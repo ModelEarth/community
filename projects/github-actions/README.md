@@ -1,12 +1,11 @@
 
 ## Model.Earth Data Pipeline
 
-Reuse our [Community Datasets Python](../../../community-data) from our [Data Pipeline](../../../localsite/info/data) and view a Tabular data grid sample.  
+[Our Data Pipeline](../../../localsite/info/data) generates [Community Datasets](../../../community-data) for map layers and Tabular data grids.  
 
-We use [GitHub Actions](https://docs.github.com/en/actions) to generate static data files (.csv, .json and SQLite) for fast loading diagrams and map layers containing 30,000+ records similar to [LA's Public Tree Map](https://neighborhood.org/public-tree-map/) - [Pipeline](https://github.com/Public-Tree-Map/public-tree-map-data-pipeline).
+We use [GitHub Actions](https://docs.github.com/en/actions) to generate static data files for fast loading diagrams and map layers.
 
-
-View our Coder page for [current projects](../../../io/coders/).
+View our Coder page for [meetup times](../../../io/coders/).
 
 <!--
 

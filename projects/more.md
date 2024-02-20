@@ -1,10 +1,10 @@
-
+<!--
 ## Google Sheet Editor
 
 1. Develop a [Google Sheet Editor](https://model.earth/editor) for updating Google Sheet rows without opening the sheet directly. Use a REST process that allows editors to return and update rows containing their email address after using a social login process which validates their email. Avoid Zapier and processes that have extra costs.
 
 1. Work with a [JAMstack Editor](https://headlesscms.org/) to edit CSV files directly on GitHub using social logins.
-
+-->
 ## Google Data Commons API
 
 [Install Data Commons Lite](../../localsite/info/data/datacommons/) on your local computer.  
