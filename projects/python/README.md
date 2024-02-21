@@ -2,6 +2,7 @@
 
 For Data Science and Computer Science 
 
+[Active Projects](../../../io/)  
 [Community Datasets](../../../community-data/)  
 [Local Industry Lists - Data Prep](../../../localsite/info/data/)  
 [USEEIO Source Diagram](../../../io/about/api/) - County and Zip Code data sources  

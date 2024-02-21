@@ -10,6 +10,8 @@
 }
 </style>
 
+View our [Active Projects](../../io/) in the io repo.
+
 <h3>Where we need help...</h3>
 
 &bullet; [Pandoc blog install steps for SQLite chart](../../places/) - NPM skills needed
