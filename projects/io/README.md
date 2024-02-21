@@ -69,7 +69,7 @@ Implement a Chlorpleth Map with a clickable legend like in [EWG](https://www.ewg
 [On Industry Page (at bottom)](../../../localsite/info/#state=NY) - [Stand-Alone Widget for testing](../../../io/charts/bubble/) 
 
 
-TO DO - When toggling the red highlight, show the red again after toggling back. This worked initially.
+DONE - When toggling the red highlight, show the red again after toggling back. This worked initially.
 
 TO DO - Update to display 72 sectors. Retain option to show 389 NAICS industries from initial USEEIO model version.
 <!--
