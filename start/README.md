@@ -7,7 +7,8 @@
 ## [<span class="num">1</span><span class="txt">Start a Local Website</span>](../../localsite/start)
 Examples for displaying your datascapes.
 
-&bullet; <a href="../../localsite/start/">Page Starter</a>
+&bullet; <a href="../../localsite/start/">Web Page Starter</a>
+&bullet; <a href="../../localsite/start/steps/">Website Setup Steps</a>
 &bullet; <a href="../../apps/">Location Modeling</a><!--
 &bullet;  [Copy the apps base folder](../../apps/base/)  -->
 &bullet; <a href="../../localsite/#parameters">Localsite Parameters</a>  
