@@ -32,180 +32,156 @@ BUG: Have to call - not sure if this is still occuring
 <meta name="twitter:description" content="Environmentally-extended analysis of supplier and production data across 389 industries." />
 <meta name="twitter:image" content="https://model.georgia.org/community/img/logo/model-earth-globe.png" />
 
-
-<!--
-  // To do: Mask Georgia Outline - from embed.js
-  // cropMap = true requires the folllowing 3:
-  // http://leaflet-extras.github.io/leaflet-providers/leaflet-providers.js"></script>
-  // /documentation/region/js/boundary-canvas.js
-  // /documentation/region/js/georgia.js
-  // stickybits
-  // Also see: https://dollarshaveclub.github.io/stickybits/
-  // But will probably look at embed.js to detect when button of section reaches bottom of map.
-  Angshuman Guin
-  Senior Research Engineer
-  Transportation Systems Engineering
-  Smart Cities
-  https://ce.gatech.edu/people/faculty/1251/overview
-  Technology-Enabled Smarter Safer Routes to School for the City of Milton, GA
-  http://smartcities.ipat.gatech.edu/sites/default/files/CityOfMilton_SmarterSaferRoutesToSchool.pdf
-
-
-  Our app will allow editors to update rows in Google sheets for COVID-19 supply lists and recycling centers. We are partnering with the US Environmental Protection Agency and Georgia Tech to develop environmentally-enable input-output models with three Georgia Smart summer interns to prepare for a virtual fall hackathon with Code For America volunteers.
--->
 <link rel="stylesheet" href="../../localsite/css/leaflet.css" />
  <!-- Resides AFTER Leaflet's CSS -->
 <script src="../../localsite/js/leaflet.js" id="/localsite/js/leaflet.js"></script>
 <script src="../js/d3/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
--->
 
-  <!-- https://github.com/ilyankou/Leaflet.IconMaterial -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../../localsite/css/leaflet.icon-material.css" rel="stylesheet">
-  <script src="../../localsite/js/leaflet.icon-material.js" id="/localsite/js/leaflet.icon-material.js"></script>
+<!-- https://github.com/ilyankou/Leaflet.IconMaterial -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="../../localsite/css/leaflet.icon-material.css" rel="stylesheet">
+<script src="../../localsite/js/leaflet.icon-material.js" id="/localsite/js/leaflet.icon-material.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      //showSearchFilter();
-    });
-  </script>
-  <style>
-    h2 { font-size: 18px; }
+<script>
+  $(document).ready(function () {
+    //showSearchFilter();
+  });
+</script>
+<style>
+  h2 { font-size: 18px; }
 
+  .padding-left {
+    padding-left:70px;
+  }
+  .headerLogo {
+    height:40px;
+    margin:28px 10px 4px 50px
+  }
+  .headerImage {
+    display:none;
+  }
+  #hublist-padding {
+    padding-right: 30px; /* Avoid including in map.css. Only used when fixed map resides to right of list. */
+  }
+  @media (max-width: 800px) {
     .padding-left {
-      padding-left:70px;
+      padding-left:0px;
     }
-    .headerLogo {
-      height:40px;
-      margin:28px 10px 4px 50px
-    }
-    .headerImage {
-      display:none;
-    }
-    #hublist-padding {
-      padding-right: 30px; /* Avoid including in map.css. Only used when fixed map resides to right of list. */
-    }
-    @media (max-width: 800px) {
-      .padding-left {
-        padding-left:0px;
-      }
-    }
-    .my-div-icon {
-      width: 24px !important;
-      height: 20px !important;
-      background-color: red;
-      position:relative;
-    }
-    .my-div-icon:after {
-      position: absolute;
-      /* content: " (" attr(href) ")"; */
-      content: "1";
-      color: #fff;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 20px;
-      text-align: center;
-      left: 0;
-      right: 0;
-    }
+  }
+  .my-div-icon {
+    width: 24px !important;
+    height: 20px !important;
+    background-color: red;
+    position:relative;
+  }
+  .my-div-icon:after {
+    position: absolute;
+    /* content: " (" attr(href) ")"; */
+    content: "1";
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
 
-    .slides section {
-      position: relative;
-      min-height: 600px;
-      border: 1px solid white; /* prevents hidden overflow */
+  .slides section {
+    position: relative;
+    min-height: 600px;
+    border: 1px solid white; /* prevents hidden overflow */
+  }
+  @media (max-width: 1000px) {
+    .logoImg {
+      max-width: 200px;
     }
-    @media (max-width: 1000px) {
-      .logoImg {
-        max-width: 200px;
-      }
+  }
+  .slides h4 {
+      font-weight: 400;
+    }
+  @media (min-width: 1001px) {
+    .slides section {
+      padding-top: 100px;
+      min-height: 1000px;
+    }
+    .slides h1 {
+      font-size: 58px;
+    }
+    .slides h2 {
+      font-size: 38px;
+    }
+    .slides h3 {
+      font-size: 28px;
+      line-height: 40px;
     }
     .slides h4 {
-        font-weight: 400;
-      }
-    @media (min-width: 1001px) {
-      .slides section {
-        padding-top: 100px;
-        min-height: 1000px;
-      }
-      .slides h1 {
-        font-size: 58px;
-      }
-      .slides h2 {
-        font-size: 38px;
-      }
-      .slides h3 {
-        font-size: 28px;
-        line-height: 40px;
-      }
-      .slides h4 {
-        font-size: 22px;
-        font-weight: 400;
-      }
-      .slides h5 {
-        font-size: 20px;
-        font-weight: 400;
-        padding-top: 0px;
-        margin-top: 0px;
-      }
+      font-size: 22px;
+      font-weight: 400;
     }
+    .slides h5 {
+      font-size: 20px;
+      font-weight: 400;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+  }
 
-    .swiper-button-circle {
-      float: left;
-      margin-left: 10px;
-    }
-    .nav-circle {
-        content: "" !important;
-        positionXXXX: absolute !important;
-        topXXX: 50% !important;
-        leftXXX: 50% !important;
-        transformX: translate(-50%, -50%) !important;
-        width: 48px !important;
-        height: 48px !important;
-        border-radius: 50% !important;
-        background: rgb(255, 255, 255);
-        border-width: 1px !important;
-        border-style: solid !important;
-        border-color: rgb(176, 176, 176) !important;
-        border-image: initial !important;
-        box-sizing: border-box !important;
-        position: absolute !important;
-        margin: 0px !important;
-        z-indexX: -1 !important;
-        padding-top:-16px !important;
-    }
-    .nav-circle:hover {
-        background: #eee;
-    }
-    .circle-text {
-      height:50px;
-      padding:8px;
-      width:50px;
-      text-align:center;
-      pointer-events: none;
-      font-size: 54px;
-      opacity: .3;
-    }
-    .circle-text:hover {
-      opacity: .8;
-    }
+  .swiper-button-circle {
+    float: left;
+    margin-left: 10px;
+  }
+  .nav-circle {
+      content: "" !important;
+      positionXXXX: absolute !important;
+      topXXX: 50% !important;
+      leftXXX: 50% !important;
+      transformX: translate(-50%, -50%) !important;
+      width: 48px !important;
+      height: 48px !important;
+      border-radius: 50% !important;
+      background: rgb(255, 255, 255);
+      border-width: 1px !important;
+      border-style: solid !important;
+      border-color: rgb(176, 176, 176) !important;
+      border-image: initial !important;
+      box-sizing: border-box !important;
+      position: absolute !important;
+      margin: 0px !important;
+      z-indexX: -1 !important;
+      padding-top:-16px !important;
+  }
+  .nav-circle:hover {
+      background: #eee;
+  }
+  .circle-text {
+    height:50px;
+    padding:8px;
+    width:50px;
+    text-align:center;
+    pointer-events: none;
+    font-size: 54px;
+    opacity: .3;
+  }
+  .circle-text:hover {
+    opacity: .8;
+  }
 
-    .swiper-button-prev, .swiper-button-next {
-      background-image: none;
-    }
-    .swiper-button-prev {
-        left: 20px;
-    }
-    .swiper-button-next {
-        right: 30px;
-    }
+  .swiper-button-prev, .swiper-button-next {
+    background-image: none;
+  }
+  .swiper-button-prev {
+      left: 20px;
+  }
+  .swiper-button-next {
+      right: 30px;
+  }
 
-    .boxshadow {
-      -webkit-box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.71); 
-      box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.71);
-    }
-  </style>
+  .boxshadow {
+    -webkit-box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.71); 
+    box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.71);
+  }
+</style>
 
 </head>
 <body>

@@ -5,13 +5,7 @@ We're working toward comparing data from multiple sources in real-time: UGA, Agl
 
 Our original [farmersmarkets-ga](https://github.com/modelearth/georgia-data/tree/master/farmfresh) dataset contains 169 records. It includes columns for Cheese, Eggs, Seafood and FMID matching the current [USDA farmers market export](https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx) of 31 records.  
 
-Our automated merge is only producing 52 (as of Sept 2020). It combines categories for Cheese, Eggs, Seafood into one column. The USDA appears to have purged more than half the records during clean-up, or part of the merge stopped working when run Sept 15, 2020.    
-
-
-### Georgia Produce (UGA Extension)
-
-[The UGA Extension Local Produce Directory](https://extension.uga.edu/ag-products-connection.html) lists farms that are keeping regular hours, providing curbside pickup, home delivery or e-commerce sales during the COVID-19 pandemic.  
-
+Our automated merge is only producing 52 (as of Sept 2020). It combines categories for Cheese, Eggs, Seafood into one column. The USDA appears to have purged more than half the records during clean-up, or part of the merge stopped working when run Sept 15, 2020.
 
 ### Aglanta
 
