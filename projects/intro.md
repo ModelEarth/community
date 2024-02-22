@@ -10,8 +10,9 @@
 }
 </style>
 
-View our [Active Projects](../../io/) in the io repo.
+View our [Active Projects](../../io/) in the io repo and read our [Lifecycle Tools Overview](../../community/tools/).
 
+<!--
 <h3>Where we need help...</h3>
 
 &bullet; [Pandoc blog install steps for SQLite chart](../../places/) - NPM skills needed
@@ -34,6 +35,7 @@ View our [Active Projects](../../io/) in the io repo.
 &bullet; Locations reimagined by Ai - Gemini and Google Places
 &bullet; [Local industry innovation renderings](../../io/template/feed/) - BuildingTransparency.org
 <br>
+-->
 
 <div class='pnum'>1.</div>
 <div class='ptxt'>
