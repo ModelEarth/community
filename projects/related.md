@@ -51,7 +51,7 @@ Experiment with Tailwind CSS in our [planning repo](https://neighborhood.org/pla
 
 
 
-- Add to our <a href="../../apps/beyondcarbon/#state=NC">Carbon Cycle json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Carbon Cycle Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#mapview=country). Activate updates already pulled in from [Jenna's fork](https://github.com/JennaFlan2426/beyond-carbon-scraper) so more integers are included in the merged file.
+- Add to our <a href="../../apps/beyondcarbon/#state=NC">Carbon Cycle json display</a> to use the new <a href="https://github.com/modelearth/beyond-carbon-scraper">Carbon Cycle Scraper and Fuser</a> for [state CO<sub>2</sub> colors](../../apps/beyondcarbon/#geoview=country). Activate updates already pulled in from [Jenna's fork](https://github.com/JennaFlan2426/beyond-carbon-scraper) so more integers are included in the merged file.
 
 <!--
 - Inquire with See-Click-Fix regarding adding domains so we can avoid [CORS error](../../community/resources/diffbot/#feed=open311) when pulling from the <a href="http://dev.seeclickfix.com/">See-Click-Fix open311 API</a>.

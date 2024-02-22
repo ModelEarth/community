@@ -4,7 +4,7 @@
 Copy the Base Starter Folder to reuse the existing state and county filters.  
 This will apply the universal filters to the top of your page.
 
-## [Leaflet Map Layers](../../../localsite/map/#mapview=country)
+## [Leaflet Map Layers](../../../localsite/map/#geoview=country)
 Map script resides in localsite/js/map.js and localsite/js/map-filters.js.  
 This is a good page for making updates to the three maps.
 

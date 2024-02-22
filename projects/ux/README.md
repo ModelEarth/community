@@ -10,6 +10,6 @@ Design an expandable [impact label interface](../../../io/template/) that works 
 
 Mockup a "Community Hotspot Environmental Report" (CHER) that expands impact reporting labels to full page size and include graphics and colors that convey impact levels. Impacts could be conveyed by 5-stars, faces, green-orange-red colors, burning earth images, Last Airbender symbols, etc. The more options the better.  
 
-Update the [impact widgets US map](../../../localsite/info/#mapview=country) with [chloroform&nbsp;map features](../../map/income/) including population density, income and industry levels.
+Update the [impact widgets US map](../../../localsite/info/#geoview=country) with [chloroform&nbsp;map features](../../map/income/) including population density, income and industry levels.
 
 [View 3.0 Mockup](../../../apps/smm/) of labels and tabulator. (OpenLCA Tabulator) 
