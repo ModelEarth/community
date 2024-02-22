@@ -1,9 +1,9 @@
 
 # About Model.Earth
 
-## What makes our Interface Unique and Exciting
+## What makes our UX Unique and Exciting
 
-The model.earth interface makes picking locations and topics quick-and-easy for viewing local industries and census attributes. Our maps, tables and charts load faster than most websites thanks to our use of static files and Tabulator sortable grids.
+The model.earth interface makes [selecting locations](#geoview=country) and [topics](#appview=topics) quick-and-easy for viewing local industries and census attributes. Our maps, tables and charts load faster than most websites thanks to our use of static files and Tabulator sortable grids.
 
 <!--
 The industry timeline we're working on will have a short Tabulator grid below it with the top 10 local industries and columns for employees, establishments, payroll.
@@ -11,16 +11,22 @@ The industry timeline we're working on will have a short Tabulator grid below it
 We've integrated timeline charts with the top hero area of the home page, so site visitors will immediately see what the tool provides and will be motivated to enter their own zip code, county or state to explore.
 -->
 
-Our universal filters make exploring data fun, and great for Ai prompt generation. The universal filters we use are Where (location), What (topic), When (year), How (number of people and types of establishments), and Why it matters (the impact):
+[Our localsite gallery parameters](/localsite) make creating pages and exploring data fun, and great for Ai prompt generation. The universal filters we use are:
 
 - Location (country, state, county or zip)
 - Topic (Sets of Industries<!--, Census Attributes-->)
-- Across time (2019, 2021, 2022, 2023)
-- How Indicator: number of employees, establishments, payroll
-- Industry Impact - AIr, Water, Energy, Land, Health, Prosperity (Jobs and Value Added)
+- Across time (2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024)
+- How it's Occuring - Number of employees, establishments and payroll
+- Industry Impact - Air, Water, Energy, Land, Health, Prosperity - Jobs and Value Added!
+
+<!--
+Where (location), What (topic), When (year), How (number of people and types of establishments), and Why it matters (the impact)
+-->
+
+View our [Industry Comparisons](/localsite/info/) and [Lifecycle Tools Overview](/community/tools/).
 
 For comparison, here's Data USA's [Payroll by Industry Sector](https://datausa.io/profile/geo/new-york#payroll).  
-Limitations: The Data USA chart only supports state level. It's also difficult to see which industry the bars represent.
+The Data USA chart only supports state level. It's also difficult to see which industry the bars represent.
 
 <!--
 In our setup, the colored countries will instead be the location's top 10 industries. The lines will move when indicators are selected for the number of employees, establishments, payroll.
@@ -47,7 +53,6 @@ Columns could be: Total, Male, Female, Under 18, 18 to 65, Over 65
 Instead of showing the census grid on the initial load, we'll provide a small snapshot about the location with interesting census attributes. We'll link the snapshot to CensusReporter.com for their great chart details (NY zip 10001).
 -->
 
-We're focused on providing a tight layout using census highlights, All the Places location summaries, and environmental impact labels for communities, with timelines for job level projections and industry product lifecycle details.
-
+We're focused on providing a tight layout using census highlights, combined with All the Places location summaries, environmental impact labels for products, individuals and communities, along with timelines for job level projections and industry input-output details using the US EPA's extended industry data.
 
 [Community Data](/community-data) and [Code Meetups](/io/coders)
