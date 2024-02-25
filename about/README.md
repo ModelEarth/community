@@ -1,6 +1,8 @@
 
 # About Model.Earth
 
+<span style="font-size: 18px;">We're combining data visualization, analysis and ML with IO impact data to integrate the best open tools for interaction, storytelling and job creation to increase human benfits from local biodiversity while rapidly paying off national debt.</span>
+
 ## What makes our UX Unique and Exciting
 
 The model.earth interface makes [selecting locations](#geoview=country) and [topics](#appview=topics) quick-and-easy for viewing local industries and census attributes. Our maps, tables and charts load faster than most websites thanks to our use of static files and Tabulator sortable grids.
