@@ -1,7 +1,7 @@
 
 # About Model.Earth
 
-<span style="font-size: 18px;">We're combining data visualization, analysis and ML with IO impact data to integrate the best open tools for interaction, storytelling and job creation to increase human benfits from local biodiversity while rapidly paying off national debt.</span>
+<span style="font-size: 18px;">We're combining data visualization, analysis and ML with IO impact data to integrate the best open tools for interaction, storytelling and job creation to increase human benfits from local biodiversity projects while rapidly paying off national debts.</span>
 
 ## What makes our UX Unique and Exciting
 
