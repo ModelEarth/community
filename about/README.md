@@ -4,7 +4,7 @@
 
 ## What makes our UX Unique and Exciting
 
-The model.earth interface makes [selecting locations](#geoview=country) and [topics](#appview=topics) quick-and-easy for viewing local industries and census attributes. Our maps, tables and charts load faster than most websites thanks to our use of static files and Tabulator sortable grids.
+The model.earth interface makes [selecting locations](#geoview=country) and [topics](#appview=topics) quick-and-easy for viewing local industries and census attributes. Our maps, tables and charts load faster than most websites thanks to our use of static files and Tabulator&nbsp;grids.
 
 <!--
 The industry timeline we're working on will have a short Tabulator grid below it with the top 10 local industries and columns for employees, establishments, payroll.
@@ -12,17 +12,21 @@ The industry timeline we're working on will have a short Tabulator grid below it
 We've integrated timeline charts with the top hero area of the home page, so site visitors will immediately see what the tool provides and will be motivated to enter their own zip code, county or state to explore.
 -->
 
-[Our localsite gallery parameters](/localsite) make creating pages and exploring data fun, and great for Ai prompt generation. The universal filters we use are:
+[Our localsite gallery parameters](/localsite) make creating pages and exploring data fun, and great for Ai prompt generation.
+
+The universal filters we use are:
 
 - Location (country, state, county or zip)
-- Topic (Sets of Industries<!--, Census Attributes-->)
-- Across time (2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024)
-- How it's Occuring - Number of employees, establishments and payroll
-- Industry Impact - Air, Water, Energy, Land, Health, Prosperity - Jobs and Value Added!
+- Topics (Sets of Industries, Map Datasets, Census Attributes)
+- Across Time (2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024)
+- Attributes - Number of employees, establishments and payroll
+- Industry Indicators - [Jobs Created](../../localsite/info/#indicators=JOBS), Value Added, Impacts on Air, Water, Energy, Land and Health.
 
 <!--
 Where (location), What (topic), When (year), How (number of people and types of establishments), and Why it matters (the impact)
 -->
+
+[Value Added](../../localsite/info/#indicators=VADD) is the difference between the cost of inputs (materials, supplies, transportation) and the sales price of the product produced. 
 
 View our [Industry Comparisons](/localsite/info/) and [Lifecycle Tools Overview](/community/tools/).
 
