@@ -15,6 +15,8 @@ View our [Active Projects](../../io/) in the io repo and read our [Lifecycle Too
 <!--
 <h3>Where we need help...</h3>
 
+Heatmap needs to show vibrant colors when viewing states.
+
 &bullet; [Pandoc blog install steps for SQLite chart](../../places/) - NPM skills needed
 &bullet; [Display actual dollar totals](../../localsite/info/data/totals/) - React skills needed
 &bullet; [BuildingTransparency.org API display](../../io/template/feed/) - Pull static files for [label templates](../../../io/template/) and integration with EPA [impact widgets](../../io/charts/).

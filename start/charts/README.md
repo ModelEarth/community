@@ -1,24 +1,23 @@
 # Chart Starters
 
-We recommend [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, [Chord](https://youtu.be/UdKoggg7E3g?t=99), 3D Globes and a lot more.
+### GOALS: Eliminating Government Debt, Biodiversity, Clean Energy
 
-[The embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts and use [D3.js](https://github.com/d3/d3/wiki/Gallery).  
-The [Environmental Impact Bubble Chart](../../../io/charts/bubble/) uses JSON files generated from the USEEIO API.  
+We recommend [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, Chord, 3D Globes and more.
 
-### Chord Charts
+[Our embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts and using REACT
+[Our Environmental Impact Bubble Chart](../../../io/charts/bubble/) uses JSON files generated from the USEEIO API using JQuery.  
 
-[Chord Chart examples](https://www.streetlightdata.com/chord-diagrams-visualization-data/)
-
-The following are built with <a href="https://d3js.org/">D3.js</a>, but the Apache eCharts may be easier
-<a href="https://bost.ocks.org/mike/uberdata/">Uber Sample</a> / <a href="http://www.visualcinnamon.com/2015/08/stretched-chord.html">Stretched Cord</a> - <a href="http://bl.ocks.org/nbremer/f9dacd23eece9d23669c">Demo (Education)</a> / <a href="https://github.com/sghall/react-d3-transitions">React D3 Transitions</a> now [Resonance](https://github.com/sghall/resonance)<br><br>
+TO DO: We need React programming help displaying [Total Dollar Values](../../../localsite/info/data/totals/) from [The IO Matrix](../../../io/about/matrix/).
 
 
 ### Sankey Charts
 
 <b>Automotive Industry input-output</b> - Sankey chart starter example using USEEIO API data from static json files:<br>
+View <a href="../../../io/charts/sankey/">Our Interactive Version</a> of the following industry Sankey Chart - Needs help!<br>
+
 <a href="../../../io/charts/sankey/"><img src="../../../io/charts/sankey/img/sankey.png" style="width:100%; bottom:0px;"></a>
 <br>
-View <a href="../../../io/charts/sankey/">Interactive Version</a><br><br>
+
 
 
 [4 Interactive Sankey diagrams made in Python with Plotly.js](https://medium.com/plotly/4-interactive-sankey-diagram-made-in-python-3057b9ee8616)
@@ -62,6 +61,16 @@ View <a href="../../../io/charts/sankey/">Interactive Version</a><br><br>
 [Oregon State Cartography (temporarily unavailable)](http://www.cartography.oregonstate.edu/cartography.html)  
 
 <br>
+
+### Chord Charts
+
+[Chord Chart examples](https://www.streetlightdata.com/chord-diagrams-visualization-data/)
+[Chord Apache YouTube Video](https://youtu.be/UdKoggg7E3g?t=99)
+
+The following are built with <a href="https://d3js.org/">D3.js</a>, but the Apache eCharts may be easier
+<a href="https://bost.ocks.org/mike/uberdata/">Uber Sample</a> / <a href="http://www.visualcinnamon.com/2015/08/stretched-chord.html">Stretched Cord</a> - <a href="http://bl.ocks.org/nbremer/f9dacd23eece9d23669c">Demo (Education)</a> / <a href="https://github.com/sghall/react-d3-transitions">React D3 Transitions</a> now [Resonance](https://github.com/sghall/resonance)<br><br>
+
+
 
 ### More about D3
 
