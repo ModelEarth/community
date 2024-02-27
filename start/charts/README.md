@@ -1,3 +1,5 @@
+[Starters](../)
+
 # Chart Starters
 
 ### GOALS: Eliminating Government Debt, Biodiversity, Clean Energy
@@ -9,6 +11,14 @@ We recommend [Observable D3](https://observablehq.com/@d3/gallery) and [Apache e
 
 TO DO: We need React programming help displaying [Total Dollar Values](../../../localsite/info/data/totals/) from [The IO Matrix](../../../io/about/matrix/).
 
+<!--
+Where does this reside now?
+[Government Carbon Footprints Sankey](https://federalist-c3fa68f6-ee2f-4053-9a71-252d9abebb5f.app.cloud.gov/site/18f/federal-carbon-footprint/)
+-->
+
+[TheShiftProject.org](https://sankey.theshiftproject.org/) - Sankey of emissions per capita for countries
+[Amazon's Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint)
+
 
 ### Sankey Charts
 
@@ -19,24 +29,23 @@ View <a href="../../../io/charts/sankey/">Our Interactive Version</a> of the fol
 <br>
 
 
+[Interactive Energy Example](skd3) - D3.js Sankey Diagram in our repo
+<!--[D3.js Sankey Diagram - Flow-o-matic, easy list editing](https://observablehq.com/@mbostock/flow-o-matic)  -->
+
+[Another Sankey Diagram](https://observablehq.com/@dralla666/d3-sankey-diagram) - D3.js [In our repo](d3-sankey-diagram/)  
+
 
 [4 Interactive Sankey diagrams made in Python with Plotly.js](https://medium.com/plotly/4-interactive-sankey-diagram-made-in-python-3057b9ee8616)
 
 [sankey-diagrams.com](http://www.sankey-diagrams.com/)  
 
-[D3.js Material Flow Sample](../../tools/#charts)    
-[D3.js Sankey Diagram](https://observablehq.com/@dralla666/d3-sankey-diagram) - 
-[In Repo](d3-sankey-diagram/)  
-
 [Hybrid Sankey diagrams with return flows (Nice to duplicate)](https://www.researchgate.net/figure/A-more-complex-Sankey-diagram-1-The-structure-of-the-diagram-can-be-simplified-by_fig2_317156053)
 
-[D3.js Sankey Diagram - Interactive (Energy)](skd3)  
 
-<!--[D3.js Sankey Diagram - Flow-o-matic, easy list editing](https://observablehq.com/@mbostock/flow-o-matic)  -->
-
-[e!Sankey (Also very nice, but too pricy)](https://www.ifu.com/en/e-sankey/)
+[e!Sankey](https://www.ifu.com/en/e-sankey/) - Also very nice, but too pricy
 
 [Sankey Diagram from csv file](https://stackoverflow.com/questions/20476471/getting-sankey-diagram-in-d3-from-csv-file)
+
 
 ### D3 Heatmap
 
