@@ -26,7 +26,7 @@ The universal filters we use are:
 Where (location), What (topic), When (year), How (number of people and types of establishments), and Why it matters (the impact)
 -->
 
-[Value Added](../../localsite/info/#indicators=VADD) is the difference between the cost of inputs (materials, supplies, transportation) and the sales price of the product produced. 
+[Value Added](../../localsite/info/#indicators=VADD) is the difference between the cost of inputs (materials, supplies, transportation) and the sales price of the final product produced. 
 
 View our [Industry Comparisons](/localsite/info/) and [Lifecycle Tools Overview](/community/tools/).
 
@@ -58,6 +58,6 @@ Columns could be: Total, Male, Female, Under 18, 18 to 65, Over 65
 Instead of showing the census grid on the initial load, we'll provide a small snapshot about the location with interesting census attributes. We'll link the snapshot to CensusReporter.com for their great chart details (NY zip 10001).
 -->
 
-We're focused on providing a tight layout using census highlights, combined with All the Places location summaries, environmental impact labels for products, individuals and communities, along with timelines for job level projections and industry input-output details using the US EPA's extended industry data.
+We're focused on providing a tight layout using census highlights, combined with All the Places location summaries, environmental [footprint labels](/io/template/) for products, individuals and communities, along with [timelines](/data-pipeline/timelines/) for job level projections and industry input-output details using the US EPA's [extended industry data](../../io/charts/).
 
 [Community Data](/community-data) and [Code Meetups](/io/coders)
