@@ -2,7 +2,7 @@
 
 # Chart Starters
 
-### GOALS: Eliminating Government Debt, Biodiversity, Clean Energy
+### GOALS: Eliminating Government Debt, Increasing Biodiversity and Clean Energy
 
 We recommend [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, Chord, 3D Globes and more.
 
