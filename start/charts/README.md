@@ -19,6 +19,20 @@ Where does this reside now?
 [TheShiftProject.org](https://sankey.theshiftproject.org/) - Sankey of emissions per capita for countries
 [Amazon's Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint)
 
+### Network Graphs
+
+TO DO: Create an interactive network graph that shows the 24 impact areas and the top 20 industries related to each.  The 6 impact sets can determine the colors:
+
+Air Yellow, Water Blue, Land Green, Energy Red, Health Orange, Prosperity Purple
+
+To use:
+[3D Force Graph](https://vasturiano.github.io/3d-force-graph/example/click-to-focus/) - click nodes to focus
+[3D Force Graph settings on GitHub](https://github.com/vasturiano/3d-force-graph)
+
+[3D clusters using 3d-force-graph - Desktop](https://ghviniashvili.com/project/force-graphs) - [Giorgi's GitHub](https://github.com/giorgi-ghviniashvili)
+
+[eChart Network Graphs](https://echarts.apache.org/examples/en/index.html#chart-type-graph)
+
 
 ### Sankey Charts
 
@@ -55,11 +69,6 @@ View <a href="../../../io/charts/sankey/">Our Interactive Version</a> of the fol
 
 [Bubble with Regression line](../../../io/charts/bubble/)  
 
-### ThreeJS Force Graph
-
-[3D Force Graph (click-to-focus)](https://vasturiano.github.io/3d-force-graph/example/click-to-focus/) - 
-[Settings on GitHub](https://github.com/vasturiano/3d-force-graph)
-
 
 ### D3 Flow Mapper
 
@@ -67,9 +76,6 @@ View <a href="../../../io/charts/sankey/">Our Interactive Version</a> of the fol
 
 [MigrationFlowMapper GitHub](https://github.com/stephdan/MigrationFlowMapper-US)  
 
-[Oregon State Cartography (temporarily unavailable)](http://www.cartography.oregonstate.edu/cartography.html)  
-
-<br>
 
 ### Chord Charts
 
