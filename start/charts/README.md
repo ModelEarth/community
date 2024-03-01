@@ -2,14 +2,14 @@
 
 # Chart Starters
 
-### GOALS: Eliminating Government Debt, Increasing Biodiversity and Clean Energy
+### ML for Eliminating Government Debt, Increasing Biodiversity and Transitioning to Clean Energy
 
 We recommend [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, Chord, 3D Globes and more.
 
-[Our embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts and using REACT
-[Our Environmental Impact Bubble Chart](../../../io/charts/bubble/) uses JSON files generated from the USEEIO API using JQuery.  
+[Our embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts
+[Our Impact Bubble Chart](../../../io/charts/bubble/) uses JSON from the USEEIO API.  
 
-TO DO: We need React programming help displaying [Total Dollar Values](../../../localsite/info/data/totals/) from [The IO Matrix](../../../io/about/matrix/).
+React Project - Display [Total Dollar Values](../../../localsite/info/data/totals/) from [The IO Matrix](../../../io/about/matrix/).
 
 <!--
 Where does this reside now?
@@ -19,9 +19,18 @@ Where does this reside now?
 [TheShiftProject.org](https://sankey.theshiftproject.org/) - Sankey of emissions per capita for countries
 [Amazon's Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint)
 
+### Deep Learning Model Frameworks
+
+[PyTorch](https://pytorch.org/docs/stable/index.html) for K-Means clustering projects
+[Tensorflow ML in Javascript](https://www.tensorflow.org/js/demos) with Google's international [REST API data](https://docs.datacommons.org/api/rest/v2)
+<!--
+Optional Data from CensusReporter.org
+https://www.censusreporter.org/data/map/?table=B06011&geo_ids=040|01000US
+-->
+
 ### Network Graphs
 
-TO DO: Create an interactive network graph that shows the 24 impact areas and the top 20 industries related to each.  The 6 impact sets can determine the colors:
+Interactive network graphs for 24 impact areas and the top industries related to each.  The 6 impact sets can determine the colors:
 
 Air Yellow, Water Blue, Land Green, Energy Red, Health Orange, Prosperity Purple
 
