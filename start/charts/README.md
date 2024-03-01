@@ -26,10 +26,10 @@ TO DO: Create an interactive network graph that shows the 24 impact areas and th
 Air Yellow, Water Blue, Land Green, Energy Red, Health Orange, Prosperity Purple
 
 To use:
-[3D Force Graph](https://vasturiano.github.io/3d-force-graph/example/click-to-focus/) - click nodes to focus
+[3D Force Graph Click Node](https://vasturiano.github.io/3d-force-graph/example/click-to-focus/) - [Directional curved arrows](https://vasturiano.github.io/3d-force-graph/example/directional-links-arrows/) - [Self links](https://vasturiano.github.io/3d-force-graph/example/curved-links/)
 [3D Force Graph settings on GitHub](https://github.com/vasturiano/3d-force-graph)
 
-[3D clusters using 3d-force-graph - Desktop](https://ghviniashvili.com/project/force-graphs) - [Giorgi's GitHub](https://github.com/giorgi-ghviniashvili)
+[3D clusters using 3d-force-graph (Desktop App)](https://ghviniashvili.com/project/force-graphs) - [Giorgi's GitHub](https://github.com/giorgi-ghviniashvili)
 
 [eChart Network Graphs](https://echarts.apache.org/examples/en/index.html#chart-type-graph)
 
