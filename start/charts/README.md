@@ -4,7 +4,7 @@
 
 ### ML for Eliminating Government Debt, Increasing Biodiversity and Transitioning to Clean Energy
 
-We recommend [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, Chord, 3D Globes and more.
+We recommend [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, [Chord](/io/charts/chord/), 3D Globes and more.
 
 [Our embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts
 [Our Impact Bubble Chart](../../../io/charts/bubble/) uses JSON from the USEEIO API.  
@@ -84,16 +84,6 @@ View <a href="../../../io/charts/sankey/">Our Interactive Version</a> of the fol
 [US Migration Flow Mapper](http://usmigrationflowmapper.com) - [Journal Article (tandfonline.com)](https://www.tandfonline.com/doi/pdf/10.1080/17445647.2017.1313788)  
 
 [MigrationFlowMapper GitHub](https://github.com/stephdan/MigrationFlowMapper-US)  
-
-
-### Chord Charts
-
-[Chord Chart examples](https://www.streetlightdata.com/chord-diagrams-visualization-data/)
-[Chord Apache YouTube Video](https://youtu.be/UdKoggg7E3g?t=99)
-
-The following are built with <a href="https://d3js.org/">D3.js</a>, but the Apache eCharts may be easier
-<a href="https://bost.ocks.org/mike/uberdata/">Uber Sample</a> / <a href="http://www.visualcinnamon.com/2015/08/stretched-chord.html">Stretched Cord</a> - <a href="http://bl.ocks.org/nbremer/f9dacd23eece9d23669c">Demo (Education)</a> / <a href="https://github.com/sghall/react-d3-transitions">React D3 Transitions</a> now [Resonance](https://github.com/sghall/resonance)<br><br>
-
 
 
 ### More about D3
