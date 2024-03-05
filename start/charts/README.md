@@ -34,14 +34,15 @@ Interactive network graphs for 24 impact areas and the top industries related to
 
 Air Yellow, Water Blue, Land Green, Energy Red, Health Orange, Prosperity Purple
 
+12 industry hubs and 72 nodes (NAICS levels 2 and 4)
+
 To use:
 [3D Force Graph Click Node](https://vasturiano.github.io/3d-force-graph/example/click-to-focus/) - [Directional curved arrows](https://vasturiano.github.io/3d-force-graph/example/directional-links-arrows/) - [Self links](https://vasturiano.github.io/3d-force-graph/example/curved-links/)
 [3D Force Graph settings on GitHub](https://github.com/vasturiano/3d-force-graph)
 
 [3D clusters using 3d-force-graph (Desktop App)](https://ghviniashvili.com/project/force-graphs) - [Giorgi's GitHub](https://github.com/giorgi-ghviniashvili)
-
 [eChart Network Graphs](https://echarts.apache.org/examples/en/index.html#chart-type-graph)
-
+[Title sample - RAG network](https://towardsdatascience.com/how-to-convert-any-text-into-a-graph-of-concepts-110844f22a1a)
 
 ### Sankey Charts
 

@@ -2,14 +2,12 @@
 
 # Census Reporter  
 
-Project: Updating [Census Reporter zipcode demographic maps](https://censusreporter.org/profiles/86000US30308-30308/) to include [environmentally-extended input-output](../../../io/charts/) local job data  
-and [social safety net tools](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/).  
+[CensusReport Repo](https://github.com/censusreporter/censusreporter)
 
 [Our Python 3 Fork](https://github.com/modelearth/map) - Forked from wazimap.
 Wazimap is maintained by [OpenUp](https://openup.org.za/) and in used in Africa and India.  
 
-Are there other Python 3 forks of [CensusReport Source](https://github.com/censusreporter/censusreporter)? 
-Which fork is focused on fast load times?
+
 
 ### CensusReporter frontend integration with USEEIO Industry Impact Charts and Google Data Commons API
  

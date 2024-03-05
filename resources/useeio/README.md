@@ -1,7 +1,7 @@
 # USEEIO API
 
-We recommend forking the [USEEIO-WIDGETS](https://github.com/USEPA/useeio-widgets) repo to interact with static JSON files generated from the API.  
-Here's our [detailed install notes](../../../io/charts/) for expanding the IO Widgets.  
+The [useeio-widgets](https://github.com/USEPA/useeio-widgets) use static JSON files generated from the API.  
+Here's our [install notes](../../../io/charts/) for contributing to the React IO Widgets.  
 
 ## R Language
 

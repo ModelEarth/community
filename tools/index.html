@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sustainable Communities - Input-Output Model</title>
+<title>Lifecycle Tools - Input-Output Model</title>
 <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png" />
 <link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
 
@@ -13,16 +13,11 @@
 
 <!-- ?sidecolumn=community/nav.html ?display=locfilters&sidecolumn=community/nav.html&material_icons=true-->
 <script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
-<!--
-navigation.js has a conflict with reveal - not sure if this is still occuring, went ahead and added nav using params on localsite.js above
-
-BUG: Have to call - not sure if this is still occuring
--->
 
 <!-- For Facebook -->
 <meta property="og:title" content="Sustainable Communities Input-Output Modeling Tools" />
 <meta property="og:type" content="article" />
-<meta property="og:image" content="https://model.georgia.org/community/img/logo/model-earth-globe.png" />
+<meta property="og:image" content="https://model.earth/community/img/overview/model-earth-impacts.jpg" />
 <meta property="og:url" content="https://model.earth/community/tools/" />
 <meta property="og:description" content="Environmentally-extended analysis of supplier and production data across 389 industries." />
 
@@ -30,7 +25,7 @@ BUG: Have to call - not sure if this is still occuring
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Sustainable Communities Input-Output Modeling Tools" />
 <meta name="twitter:description" content="Environmentally-extended analysis of supplier and production data across 389 industries." />
-<meta name="twitter:image" content="https://model.georgia.org/community/img/logo/model-earth-globe.png" />
+<meta name="twitter:image" content="https://model.earth/community/img/overview/model-earth-impacts.jpg" />
 
 <link rel="stylesheet" href="../../localsite/css/leaflet.css" />
  <!-- Resides AFTER Leaflet's CSS -->
@@ -102,7 +97,7 @@ BUG: Have to call - not sure if this is still occuring
     }
   @media (min-width: 1001px) {
     .slides section {
-      padding-top: 100px;
+      padding-top: 80px;
       min-height: 1000px;
     }
     .slides h1 {
@@ -216,18 +211,16 @@ BUG: Have to call - not sure if this is still occuring
 <!-- id="allsectionsX" class="slides" -->
 <div>
 
-  <!-- z-index:-1 allows search filters to overlap -->
-  <section style="margin-top:-80px; z-index:-1">
+  <!-- style z-index:-1 allows search filters to overlap -->
+  <section>
 
-    <div style="position:absolute;z-index:-1; width: 100%; top:1px; bottom:1px; opacity:.1; background:#dae8eb">
-        
+    <!--
+    <div style="position:absolute;z-index:-1; width: 100%; top:1px; bottom:1px; opacity:.1;">
             <img src="../../apps/ev/img/hero/andrew-roberts-charging.jpg" style="width:100%">
-        
     </div>
+    -->
 
     <div class="content contentpadding">
-
-      
 
       <br>
       <img class="logoImg" src="../img/logo/epa.png" style="width:180px; float:left; margin-right:40px">
@@ -327,77 +320,9 @@ BUG: Have to call - not sure if this is still occuring
     </div>
   </section>
 
-
-<!-- #dae8eb -->
-        <!-- psd resides in smartdata -->
-
-  <!--
-  <section class="mockup" style="display:none">
-    <div style="position:absolute;z-index:-1; width: 100%; top:1px; bottom:1px; opacity:.2; background:#dae8eb">
-        <div style="position:absolute; bottom:0px; right:0px; width:65%; background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; border:0px">
-                
-                <img src="../img/overview/banner-2.png" class="hideMobile" style="width:100%">
-            
-        </div>
-    </div>
-
-    <div class="content contentpadding">
-      <img src="../img/logo/code-for-america-and-earth.png" style="width:300px;"><br><br><br>
-
-      <h2>BEYOND CARBON</h2>
-      <h1>SUSTAINABLE COMMUNITIES<br>WEB CHALLENGE 2021</h1>
-      <h3>Our virtual Federal Challenge event culminates on Saturday, Oct&nbsp;2, 2021 with  community reps, web developers, designers, students and data scientists working together to expand open-source tools for $10,000+ in prizes.</h3>
-      <br>
-
-      <a href="../../community/challenge/">Challenge Details</a>
-    </div>
-  </section>
-
-
-  <section class="mockup" style="display:none">
-    <div class="content contentpadding">
-
-      
-      <h1>WELCOME!</h1>
-      <h3>
-        <ul>
-        <li>Tell us your name and background</li>
-        <li>How you heard about event</li>
-        <li>Your city and state/province</li>
-        <li>Any specific topics of interest</li>
-        </ul>
-      </h3>
-
-
-      
-
-      <div style="display:block; width:100%">
-        <br><br><br>
-        <img src="../img/logo/epa.png" style="width:120px; float:left; margin-right:55px; margin-bottom:30px">
-        <img src="../img/logo/georgia.png" style="width:145px; float:left; margin-top: -4px; margin-left:3px; margin-right:50px; margin-bottom:30px">
-        <img src="../img/logo/code-for-america-and-earth.png" style="width:250px; float:left; margin-left:3px; margin-right:60px">
-      </div>
-      
-
-    </div>
-  </section>
-  -->
-
-
-<!--
-      <h1>CHALLENGE PARTNERS</h1>
-      <h3>
-        <ul>
-        <li>US Enviromental Protection Agency<br>Southeast Region #4 (ORD/R4)</li>
-        <li>Georgia Center of Innovation for Energy Technology</li>
-        <li>Code for America - Code for Atlanta and other city affiliates</li>
-        <li>General Dynamics Information Technology (GDIT)</li>
-        </ul>
-      </h3>
-      -->
-
-  <section style="background:#dae8eb">
-    <div class="content contentpadding">
+  <!-- Note: avoid putting background on the section because it extends behind the prior. -->
+  <section>
+    <div class="content contentpadding" style="background:#dae8eb;">
 
       <h1 style="margin-bottom:0px">ABOUT THE MODEL</h1>
       <h4>US Environmentally Extended Input-Output (USEEIO) Model</h4>
@@ -434,7 +359,7 @@ BUG: Have to call - not sure if this is still occuring
       <br>
 
       <div style="margin-left: -10px; background-color:#fff;margin-bottom:10px;text-align:center">
-        <a href="../../apps/coastal/"><img src="../img/overview/inflow-outflow.png" style="width:100%; max-width:1200px"></a>
+        <a href="../../localsite/info/"><img src="../img/overview/inflow-outflow.png" style="width:100%; max-width:1200px"></a>
       </div>
     </div>
   </section>
@@ -457,7 +382,9 @@ BUG: Have to call - not sure if this is still occuring
   </div>
 </section>
 
-<section style="background:#dae8eb">
+<section>
+
+    <div style="background:#dae8eb">
     <div class="content contentpadding">
 
       <h2>Lifecycle Tool Contributors</h2>
@@ -479,6 +406,8 @@ BUG: Have to call - not sure if this is still occuring
       <a href="../../io/coders/">For Coders & Designers</a>
 
     </div>
+    </div>
+    
   </section>
 
 
@@ -515,6 +444,8 @@ BUG: Have to call - not sure if this is still occuring
   <section style="background:#dae8eb">
     <div class="content contentpadding">
 
+      <img src="../../community/img/logo/github.png" style="float:right;width:100%; max-width:200px">
+
       <h2 style="padding-top:12px">Environmental Data for Teaching</h2>
       <h1 style="margin-bottom:10px">EDUCATORS</h1>
       <h3 style="margin:0px">
@@ -529,7 +460,7 @@ BUG: Have to call - not sure if this is still occuring
 
       <a href="../../io/learn/">For Educators</a> - <a href="../../localsite/start/">Start a free website</a><br><br>
 
-      <img src="../../community/img/logo/github.png" style="width:100%; max-width:200px">
+      
 
     </div>
   </section>
@@ -562,10 +493,6 @@ BUG: Have to call - not sure if this is still occuring
    <section style="height: 800px !important; min-height: 800px !important; max-height: 800px !important;">
 
     <div style="position:absolute; z-index:-1; width: 100%; top:1px; bottom:1px; opacity:.2; background:#dae8eb"><!-- #dae8eb -->
-        <!-- psd resides in smartdata -->
-        <div style="position:absolute; bottom:0px; right:0px; width:65%; background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; border:0px">
-                <img src="../img/overview/banner-2.png" class="hideMobile" style="width:100%">
-        </div>
     </div>
 
     <div class="content contentpadding">
@@ -636,5 +563,72 @@ $(".swiper-button-prev").click(function () {
 </script>
 
 <link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
+
+
+<!-- #dae8eb -->
+<!-- psd resides in smartdata -->
+
+  <!--
+  <section class="mockup" style="display:none">
+    <div style="position:absolute;z-index:-1; width: 100%; top:1px; bottom:1px; opacity:.2; background:#dae8eb">
+        <div style="position:absolute; bottom:0px; right:0px; width:65%; background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; border:0px">
+                
+                <img src="../img/overview/banner-2.png" class="hideMobile" style="width:100%">
+            
+        </div>
+    </div>
+
+    <div class="content contentpadding">
+      <img src="../img/logo/code-for-america-and-earth.png" style="width:300px;"><br><br><br>
+
+      <h2>BEYOND CARBON</h2>
+      <h1>SUSTAINABLE COMMUNITIES<br>WEB CHALLENGE 2021</h1>
+      <h3>Our virtual Federal Challenge event culminates on Saturday, Oct&nbsp;2, 2021 with  community reps, web developers, designers, students and data scientists working together to expand open-source tools for $10,000+ in prizes.</h3>
+      <br>
+
+      <a href="../../community/challenge/">Challenge Details</a>
+    </div>
+  </section>
+
+
+  <section class="mockup" style="display:none">
+    <div class="content contentpadding">
+
+      
+      <h1>WELCOME!</h1>
+      <h3>
+        <ul>
+        <li>Tell us your name and background</li>
+        <li>How you heard about event</li>
+        <li>Your city and state/province</li>
+        <li>Any specific topics of interest</li>
+        </ul>
+      </h3>
+
+
+      
+
+      <div style="display:block; width:100%">
+        <br><br><br>
+        <img src="../img/logo/epa.png" style="width:120px; float:left; margin-right:55px; margin-bottom:30px">
+        <img src="../img/logo/georgia.png" style="width:145px; float:left; margin-top: -4px; margin-left:3px; margin-right:50px; margin-bottom:30px">
+        <img src="../img/logo/code-for-america-and-earth.png" style="width:250px; float:left; margin-left:3px; margin-right:60px">
+      </div>
+      
+
+    </div>
+  </section>
+
+  <h1>CHALLENGE PARTNERS</h1>
+  <h3>
+    <ul>
+    <li>US Enviromental Protection Agency<br>Southeast Region #4 (ORD/R4)</li>
+    <li>Georgia Center of Innovation for Energy Technology</li>
+    <li>Code for America - Code for Atlanta and other city affiliates</li>
+    <li>General Dynamics Information Technology (GDIT)</li>
+    </ul>
+  </h3>
+  -->
+
 </body>
 </html>
