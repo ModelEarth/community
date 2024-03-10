@@ -12,6 +12,8 @@ Examples for displaying your datascapes.
 &bullet; <a href="../../apps/">Location Modeling</a><!--
 &bullet;  [Copy the apps base folder](../../apps/base/)  -->
 &bullet; <a href="../../localsite/#parameters">Localsite Parameters</a>  
+&bullet; <a href="../../localsite/start/earthscape/">Earthscape Chatbot</a>  
+&bullet; <a href="https://github.com/ModelEarth/data-commons">Observable DataCommons</a>  
 <!--
 &bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
 &bullet; <a href="../challenge/how/">How to Create a Local Site Page</a><br>
@@ -30,7 +32,8 @@ Chord, Sankey, USEEIO Heatmap Mosaic and Input-Output Flow
 Leaflet Map Layers
 
 ## [<span class="num">6</span><span class="txt">Modeling Framework (USEEIO)</span>](https://github.com/usepa/useeio_api/)
-[Python and R](../resources/useeio) 
+[USEEIO Python and R](../resources/useeio) 
+[ModelEarth ML NAICS Training](../../data-pipeline/timelines/training/naics/) 
 
 <br><br>
 
