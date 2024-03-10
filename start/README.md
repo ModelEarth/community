@@ -13,7 +13,7 @@ Examples for displaying your datascapes.
 &bullet;  [Copy the apps base folder](../../apps/base/)  -->
 &bullet; <a href="../../localsite/#parameters">Localsite Parameters</a>  
 &bullet; <a href="../../localsite/start/earthscape/">Earthscape Chatbot</a>  
-&bullet; <a href="https://github.com/ModelEarth/data-commons">Observable DataCommons</a>  
+&bullet; <a href="../../data-pipeline/timelines/observable">Observable DataCommons</a>  
 <!--
 &bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
 &bullet; <a href="../challenge/how/">How to Create a Local Site Page</a><br>
