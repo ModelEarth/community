@@ -1,5 +1,7 @@
 # Map Samples
 
+[County Shapes](/community/start/maps/#geoview=state&state=CA)
+
 ## [Map Filters](../../../apps/#show=farmfresh)
 Copy the Base Starter Folder to reuse the existing state and county filters.  
 This will apply the universal filters to the top of your page.
