@@ -1,6 +1,6 @@
 ## Image/Video Generation
 
-[Stability AI API](https://dreamstudio.com/api/) - [StableStudio UX](https://dreamstudio.com/studio/) - [Image Generator](https://dreamstudio.ai/generate)
+[AI Community Visualizations](../../../data-pipeline/research) - [Stability AI API](https://dreamstudio.com/api/) - [StableStudio UX](https://dreamstudio.com/studio/) - [Image Generator](https://dreamstudio.ai/generate)
 
 For hero images, input-output visualizations and training resources.  
 Themes examples: Last Airbender and Marvel Comics APIs

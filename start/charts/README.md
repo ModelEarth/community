@@ -4,7 +4,7 @@
 
 ### ML for Eliminating Government Debt, Increasing Biodiversity and Transitioning to Clean Energy
 
-We recommend [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, [Chord](/io/charts/chord/), 3D Globes and more.
+We recommend [3D Force-Directed Graphs](https://github.com/vasturiano/3d-force-graph), [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, [Chord](/io/charts/chord/), 3D Globes and more.
 
 [Our embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts
 [Our Impact Bubble Chart](../../../io/charts/bubble/) uses JSON from the USEEIO API.  
