@@ -41,8 +41,11 @@ REST example at the [BuildingTransparency.org Open EPD API](https://openepd.buil
 <!--
 - [Attend a meetup](../../io/coders/) and help setup [Citizen Lab Engagement Tools](https://www.citizenlab.co) to provide mobile survey apps with Open Seattle and Code for Atlanta.
 
-Blitz is undergoing updates to independently extend NextJS and other.  Reactivate in a few months.
+Blitz is undergoing updates to independently extend NextJS (React).  
+Reactivate in a few months.
 Experiment with Tailwind CSS in our [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning))
+
+flightcontrol.dev for AWS hosting
 
 - Apply the Blitz survey fields (Question and Choice) to our Real World 2.0 [planning repo](https://neighborhood.org/planning/#display=planning.md) ([GitHub](https://github.com/localsite/planning)) from the [Blitz survey builder tutorial](https://blitzjs.com/docs/tutorial) and [voting app](https://dev.to/anubra266/full-stack-react-in-blitzjs-and-chakra-ui-part-2-38n4).
 -->

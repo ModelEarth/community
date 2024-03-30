@@ -7,22 +7,18 @@
 -->
 ## Google Data Commons API
 
-[Install Data Commons Lite](../../localsite/info/data/datacommons/) on your local computer.  
+Choose a [Data Commons topic of interest](/data-commons/dist/) from the UN Goals.
 
-Find and pull US census data by state and county from the Google Data Commons API. 
+Register in [DemocracyLab](https://www.democracylab.org/projects/834) and join us in our [coding meetups](/io/coders/).
 
-Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).  
+Projects:
 
-Use and improve the Google Data Common's checkbox heirarchy - [sample](https://datacommons.org/tools/timeline#place=zip%2F30318&statsVar=Count_Person_5To17Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C1%2C1%2C0__Count_Person_60To61Years_BornInOtherStateInTheUnitedStates%2C0%2C6%2C7%2C1%2C0%2CCount_Person__Count_Person_5To17Years_BornInStateOfResidence%2C0%2C6%2C1%2C1%2C1__WagesAnnual_Establishment%2C9%2C0__Count_Establishment%2C9%2C2&chart=%7B%22count%22%3A%7B%22pc%22%3Afalse%7D%7D)  
+[Install the Data Commons website](../../localsite/info/data/datacommons/) on your local computer and integrate Google's LLM visualization prompt into [Earthscape](/earthscape/app).  
+
+Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).   
 
 Add highlighted colors similar to BEA  
-[View sample](https://apps.bea.gov/iTable/iTable.cfm?reqid=150&step=3&isuri=1&table_list=5013&categories=compbyind), click Table > Bar Chart and choose industries.  
-
-Analysis applied to <a href="projects/mobility/">industries impacted by the transition to EV</a>.  
-
-<!--
-Find existing widgets and repos that use the [Charging Station API](https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest?fuel=ELEC). Perhaps the [Open Charge Map API](https://openchargemap.org/site/develop/api) and/or [TomTom](https://developer.tomtom.com/search-api/search-api-documentation/ev-charging-stations-availability).
---> 
+[View sample](https://apps.bea.gov/iTable/iTable.cfm?reqid=150&step=3&isuri=1&table_list=5013&categories=compbyind), click "Chart" and choose industries.
 
 
 ## .NET Core Projects

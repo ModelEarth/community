@@ -214,7 +214,7 @@ function ready([us]) {
             var fillColor = '#ff0000';
             
             // Hack - because region1 did not work like in did in maps/poverty
-            dp.data.forEach(function(datarow) { // For each county row from the region lookup table
+            dp.data.forEach(function(datarow) { // county rows from the region lookup table
               if (datarow.county_num == feature.properties.COUNTYFP) {
                 fillColor = color(datarow.io_region);
               }
