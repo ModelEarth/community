@@ -9,11 +9,11 @@ Examples for displaying your datascapes.
 
 &bullet; <a href="../../localsite/start/">Web Page Starter</a>
 &bullet; <a href="../../localsite/start/steps/">Local Site Install</a>
-&bullet; <a href="../../apps/">Location Modeling</a><!--
+&bullet; <a href="../../apps/">Location Modeling</a> - <a href="/data-pipeline/research/economy/">Commodities</a><!--
 &bullet;  [Copy the apps base folder](../../apps/base/)  -->
 &bullet; <a href="../../localsite/#parameters">Localsite Parameters</a>  
-&bullet; <a href="../../localsite/start/earthscape/">Earthscape Chatbot</a>  
-&bullet; <a href="../../data-pipeline/timelines/observable">Observable DataCommons</a>  
+&bullet; <a href="/earthscape/app/">Earthscape Chatbot</a>  
+&bullet; <a href="/data-commons/dist/">Observable DataCommons</a>  
 <!--
 &bullet; <a href="../challenge/">Sustainable Communities Web Challenge</a><br>
 &bullet; <a href="../challenge/how/">How to Create a Local Site Page</a><br>
@@ -73,6 +73,9 @@ Responsible sourcing allows manufacturers to...
 
 [Sustainable Materials Management](https://www.epa.gov/smm) - US EPA  
 
+<!-- https://simapro.com/products/exiobase-database/-->
+[EXIOBASE database](https://www.exiobase.eu/) - Registration is free for downloading files  
+
 [OpenLCA](https://www.openlca.org/) - Downloadable app for Life Cycle Assessment
 
 <!--
@@ -88,9 +91,6 @@ Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-va
 [Knoema Infographics](https://knoema.com/infographics) - [Data Coverage Matrix](https://knoema.com/atlas/matrix) - Global models which could be reproduced locally.  
 
 [World Input-Output Database (WOID)](http://www.wiod.org/otherdb)  
-
-<!-- https://simapro.com/products/exiobase-database/-->
-[EXIOBASE database](https://www.exiobase.eu/) - Registration is free for downloading files  
 
 [IMPLAN Impact Analysis](https://implanhelp.zendesk.com/hc/en-us/articles/360039284273-Environmental-Data) - 8 broad categories using USEEIO model data  
 
