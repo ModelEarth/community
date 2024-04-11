@@ -1,6 +1,6 @@
 # About Model.Earth
 
-<span style="font-size: 18px;">We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open environmental [impact&nbsp;profiles](../../io/template/) to integrate collaborative interactive tools for [industry&nbsp;comparisons](../../localsite/info/), [video&nbsp;production](../../data-pipeline/research/stream/) and [job&nbsp;creation](../../io/) to increase human benefits from [community biodiversity projects](../../data-pipeline/research/) aimed at [eliminating government debt](../start/charts/).</span>
+<span style="font-size: 18px;">We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open environmental [impact&nbsp;profiles](../../io/template/) to integrate collaborative tools for [industry&nbsp;comparisons](../../localsite/info/), [content&nbsp;storyboarding](../../data-pipeline/research/stream/) and [job&nbsp;creation](../../io/) to increase human benefits from [community biodiversity projects](../../data-pipeline/research/) aimed at [eliminating government debt](../start/charts/).</span>
 
 ## What makes our UX Unique and Exciting
 
