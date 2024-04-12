@@ -67,8 +67,7 @@ flightcontrol.dev for AWS hosting
 
 <h4>Democracy Lab</h4>
 
-<a href="https://www.democracylab.org/projects/834">Neighborhood.org Democracy Lab profile</a> and <a href="https://www.figma.com/file/Zk29COFG5bEQoISUBLPdpE/Neighborhood.org?node-id=0%3A1">Figma Boards</a>.
-Our [DemLab Project API Pull test](../../io/template/feed/demolab.html) and the [DemLab Contributor Guide](https://docs.google.com/document/d/1OLQPFFJ8oz_BxpuxRxKKdZ2brmlUkVN3ICTdbA_axxY/edit#).
+<a href="https://www.democracylab.org">Democracy Lab</a>, [DemLab Project API Pull test](../../io/template/feed/demolab.html), and [Contributor Guide](https://docs.google.com/document/d/1OLQPFFJ8oz_BxpuxRxKKdZ2brmlUkVN3ICTdbA_axxY/edit#).
 
 <!--
 <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI
