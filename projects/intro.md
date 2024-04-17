@@ -48,7 +48,7 @@ Build LLM from Google Data Commons locally [notes](/localsite/info/data/datacomm
 Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
 [Mike Bostock provided an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
 
-**[Enhance API Key Storage in Earthscape](/earthscape) and [Open WebUI](/projects/src/)**
+**[Enhance API Key Storage in Earthscape](/earthscape/app/) and [Open WebUI](/projects/src/)**
 [API Key Local Storage mockup](/localsite/tools/storage/api/) - Javascript repeater with localStorage
 
 **[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
@@ -58,11 +58,10 @@ Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder in
 Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
 
 **[Create a See-Click-Fix-Pay Rewards Program](https://seeclickfix.com)**
-Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using 
-[Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) integrating [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com).
+Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for job creation and training<!-- that integrates [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->.
 
-**[AI Training Repos: Lunar Olympics and LunarSphere Supply Lander](/replicate/)**
-Join us [Monday evenings at 10pm EDT](/io/coders/) as we create future-forward interfaces.
+**[Storyboards for Training: Earthathon and Lunar Olympics Events](/io/coders/)**
+Join us [Thursday at noon and 10pm EDT on Sunday, Monday and Wednesday](/io/coders/) as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/).
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) -->
 
