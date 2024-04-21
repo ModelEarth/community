@@ -41,6 +41,9 @@ Heatmap needs to show vibrant colors when viewing states.
 
 Not your average data modeling tasks, but worth the effort.
 
+**[UN Goal Storyboards and Lunar Olympics Celebration](/io/coders/)**
+[Join us](/io/coders/) Thursdays at noon EDT and evenings on Sundays, Mondays and Wednesdays at 10pm EDT as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) for [UN Goal timelines and forecasting](/data-commons/).
+
 **[Install LLM from Google Data Commons](github.com/datacommonsorg/website)**
 Build LLM from Google Data Commons locally [notes](/localsite/info/data/datacommons/), Integrate within [Open WebUI](/projects/src/)
 
@@ -57,11 +60,10 @@ Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder in
 **[Integrate with Census Reporting Sites](/community/resources/censusreporter/)**
 Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
 
-**[Create a See-Click-Fix-Pay Rewards Program](https://seeclickfix.com)**
+**[Create See-Click-Fix Open311 Projects](https://seeclickfix.com)**
 Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for job creation and training<!-- that integrates [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->.
 
-**[Storyboards for Training: Earthathon and Lunar Olympics Events](/io/coders/)**
-Join us [Thursday at noon and 10pm EDT on Sunday, Monday and Wednesday](/io/coders/) as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/).
+
 
 <!-- [ML - NAICS Imputation Using Machine Learning](https://github.com/ModelEarth/machine-learning) -->
 
