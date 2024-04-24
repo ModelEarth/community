@@ -41,11 +41,17 @@ Heatmap needs to show vibrant colors when viewing states.
 
 Not your average data modeling tasks, but worth the effort.
 
-**[UN Goal Storyboards and Lunar Olympics Celebration](/io/coders/)**
+**[Requests using the See-Click-Fix API](https://normansj.github.io/local-view-request/src/location/mylocation.html) with [Open WebUI](/projects/src)**
+Integrating data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for requests and training with funding managed through [OC's GraphQL API](https://graphql-docs-v2.opencollective.com/access) and promoted via [BlueSky RSS Feeds](https://openrss.org/blog/bluesky-has-launched-rss-feeds). [React Zip Code Input](https://normansj.github.io/local-view-request/dist/#zip=06511).
+
+<!-- that integrates with https://www.greenjobsboard.us, [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->
+
+**[UN Goal Storyboards and Data Prep for Lunar Olympics Celebration](/io/coders/)**
 [Join us](/io/coders/) Thursdays at noon EDT and evenings on Sundays, Mondays and Wednesdays at 10pm EDT as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) for [UN Goal timelines and forecasting](/data-commons/).
 
 **[Install LLM from Google Data Commons](github.com/datacommonsorg/website)**
-Build LLM from Google Data Commons locally [notes](/localsite/info/data/datacommons/), Integrate within [Open WebUI](/projects/src/)
+Build Google Data Commons locally to reuse visualization LLM.  
+Integrate within [Open WebUI](/projects/src/) and update our [GDC install notes](/localsite/info/data/datacommons/).
 
 **[Integrate ObservableHQ's Interface for selecting charts](https://github.com/observablehq)**  
 Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
@@ -59,9 +65,6 @@ Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder in
 
 **[Integrate with Census Reporting Sites](/community/resources/censusreporter/)**
 Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
-
-**[Create See-Click-Fix Open311 Projects](https://seeclickfix.com)**
-Integrate data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for job creation and training<!-- that integrates [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->.
 
 
 
