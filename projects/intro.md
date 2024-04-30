@@ -42,7 +42,11 @@ Heatmap needs to show vibrant colors when viewing states.
 Not your average data modeling tasks, but worth the effort.
 
 **[Requests using the See-Click-Fix API](https://normansj.github.io/local-view-request/src/location/mylocation.html) with [Open WebUI](/projects/src)**
-Integrating data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for requests and training with funding managed through [OC's GraphQL API](https://graphql-docs-v2.opencollective.com/access) and promoted via [BlueSky RSS Feeds](https://openrss.org/blog/bluesky-has-launched-rss-feeds). [React Zip Code Input](https://normansj.github.io/local-view-request/dist/#zip=06511).
+Integrating data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for requests and training with funding managed through [OC's GraphQL API](https://graphql-docs-v2.opencollective.com/access) and promoted via [BlueSky RSS Feeds](https://openrss.org/blog/bluesky-has-launched-rss-feeds) and [Location-based Requests](https://normansj.github.io/local-view-request/src/location/mylocation.html) integrated with [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8).
+<!--
+[React Zip Code Input](https://normansj.github.io/local-view-request/dist/#zip=06511).
+-->
+
 
 <!-- that integrates with https://www.greenjobsboard.us, [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->
 
