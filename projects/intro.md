@@ -39,10 +39,13 @@ Heatmap needs to show vibrant colors when viewing states.
 
 ## MoonShot Challenges
 
-Not your average data modeling tasks, but worth the effort.
+Not your average data modeling projects, but worth the effort.
+
+**[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
+Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder into Google Data Commons. Add USEEIO data to [Data Commons Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[Requests using the See-Click-Fix API](https://normansj.github.io/local-view-request/src/location/mylocation.html) with [Open WebUI](/projects/src)**
-Integrating data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for requests and training with funding managed through [OC's GraphQL API](https://graphql-docs-v2.opencollective.com/access) and promoted via [BlueSky RSS Feeds](https://openrss.org/blog/bluesky-has-launched-rss-feeds) and [Location-based Requests](https://normansj.github.io/local-view-request/src/location/mylocation.html) integrated with [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8).
+Integrating data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for requests and training with funding managed through [OC's GraphQL API](https://graphql-docs-v2.opencollective.com/access) and promoted via [BlueSky RSS Feeds](https://openrss.org/blog/bluesky-has-launched-rss-feeds). [Location-based&nbsp;Requests](https://normansj.github.io/local-view-request/src/location/mylocation.html) integrated with [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8).
 <!--
 [React Zip Code Input](https://normansj.github.io/local-view-request/dist/#zip=06511).
 -->
@@ -63,9 +66,6 @@ Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
 
 **[Enhance API Key Storage in Earthscape](/earthscape/app/) and [Open WebUI](/projects/src/)**
 [API Key Local Storage mockup](/localsite/tools/storage/api/) - Javascript repeater with localStorage
-
-**[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
-Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder into Google Data Commons. Add USEEIO data to [Data Commons Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[Integrate with Census Reporting Sites](/community/resources/censusreporter/)**
 Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
