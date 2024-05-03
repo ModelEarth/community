@@ -152,9 +152,8 @@ body { position:relative; }
 <script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
 <link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
-<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearch=true"></script>
 <!--
-
     https://datascape.github.io/community/map/zcta/states/Georgia.topo.json
 -->
 
@@ -194,71 +193,68 @@ body { position:relative; }
     -->
     <div id="allLegends"></div>
 
-    <div class="mapHolder">
-        <div id="map"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
-    </div>
-
-    <div id="clusterBucketsFooterHolder" style="min-height: 95px;">
-        <div class="closeClusterBucketsDiv" style="top:3px">&#9447;</div>
-
-        <style>
-            #categoryHolder {
-                font-size:16px;
-                padding: 15px;
-                background-color: #fff;
-                border-bottom: 1px solid #ccc;
-            }
-        </style>
-
-         
-
-        <div id="clusterBucketsHolder">
-
-            <div id="categoryHolder" style="overflow: auto">
-
-                <div style="float:left; width:50%">
-                    <a href="#columns=JobsAgriculture:100">Agriculture</a><br>
-                    <a href="#columns=JobsEntertainment:100">Entertainment</a><br>
-                    <a href="#columns=JobsConstruction:100">Construction</a><br>
-                    <a href="#columns=JobsHealthcare:100">Healthcare</a><br>
-                    <a href="#columns=JobsManufacturing:100">Manufacturing</a><br>
-                </div>
-
-                <div style="float:left; width:50%">
-                    <a href="#columns=JobsProfessional:100">Professional</a><br>
-                    <a href="#columns=JobsRealestate:100">Real Estate</a><br>
-                    <a href="#columns=JobsTrade:100">Trade</a><br>
-                    <a href="#columns=JobsTotal:100">Jobs Total</a><br>
-                    <a href="#show=points" style="localonly" target="_blank">Poverty</a>
-                </div>
-            </div>
-
-            <div id="clusterBuckets" class="json_to_html_table" style="clear:both">G E N E R A T I N G &nbsp; C L U S T E R S</div>
+    <div style="position:relative;">
+        <div class="mapHolder">
+            <div id="map"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
         </div>
-        <div id="clusterStep3">
-          <div class="showOutput">
-            <div id="ds_chat_title" style="margin: 0 auto; float:none; font-size: 18px">
-                <div class='showOutputText' style="cursor:pointer">
-                    &#10515; Output Filtered Locations
+        <div id="clusterBucketsFooterHolder" style="min-height:95px;">
+            <div class="closeClusterBucketsDiv" style="position:absolute;top:3px;right:5px;cursor:pointer">&#9447;</div>
+
+            <style>
+                #categoryHolder {
+                    font-size:16px;
+                    padding: 15px;
+                    background-color: #fff;
+                    border-bottom: 1px solid #ccc;
+                }
+            </style>
+
+             
+
+            <div id="clusterBucketsHolder">
+
+                <div id="categoryHolder" style="overflow: auto">
+
+                    <div style="float:left; width:50%">
+                        <a href="#columns=JobsAgriculture:100">Agriculture</a><br>
+                        <a href="#columns=JobsEntertainment:100">Entertainment</a><br>
+                        <a href="#columns=JobsConstruction:100">Construction</a><br>
+                        <a href="#columns=JobsHealthcare:100">Healthcare</a><br>
+                        <a href="#columns=JobsManufacturing:100">Manufacturing</a><br>
+                    </div>
+
+                    <div style="float:left; width:50%">
+                        <a href="#columns=JobsProfessional:100">Professional</a><br>
+                        <a href="#columns=JobsRealestate:100">Real Estate</a><br>
+                        <a href="#columns=JobsTrade:100">Trade</a><br>
+                        <a href="#columns=JobsTotal:100">Jobs Total</a><br>
+                        <a href="#show=points" style="localonly" target="_blank">Poverty</a>
+                    </div>
                 </div>
-                <div style="font-size:12px; display:none" class='showOutputResponse'>
-                    For recent work on industry levels,<br> 
-                    view the <a href="../../../localsite/info/">Industry Impact Evaluator</a>
-                </div>
+
+                <div id="clusterBuckets" class="json_to_html_table" style="clear:both">G E N E R A T I N G &nbsp; C L U S T E R S</div>
             </div>
-          </div>
+            <div id="clusterStep3">
+              <div class="showOutput">
+                <div id="ds_chat_title" style="margin: 0 auto; float:none; font-size: 18px">
+                    <div class='showOutputText' style="cursor:pointer">
+                        &#10515; Output Filtered Locations
+                    </div>
+                    <div style="font-size:12px; display:none" class='showOutputResponse'>
+                        For recent work on industry levels,<br> 
+                        view the <a href="../../../localsite/info/">Industry Impact Evaluator</a>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
-
 
     <script type="text/javascript">
-        
         var lat = 32.7;
         var lonX = -82.90;
         var lon = -81.8;
         var zoom = 7;
-
-
         var mbAttr = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a> | <a href="https://www.mapbox.com/">Mapbox</a>',
               mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
 
