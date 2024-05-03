@@ -137,8 +137,10 @@ and (max-device-width : 480px) {
 // {"value":"diffbot","name":"Diffbot"},
 
 document.addEventListener('hashChangeEvent', function (elem) {
-	console.log("diffbot detects URL hashChangeEvent");
- 	displayFeed();
+	let hash = getHash();
+	if (hash.feed != priorHash.feed) {
+ 		displayFeed();
+ 	}
 }, false);
 
 $(document).ready(function () {
