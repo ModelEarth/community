@@ -727,6 +727,7 @@ function clusterBuckets() {
     var addHtml = '';
     for (a in cluster_stats) {//a key is 0,1,2,3
         if (isArray(cluster_stats[a])) {
+            // background-color css occurs after
             addHtml += "<div class='level1 item" + a + "'><input type='checkbox' name='cluster' value='" + a + "'> <span style='font-size:11pt'>Cluster " + (parseInt(a) + 1) + ":</span><br> " + cluster_stats[a].desc + "</div>\n"; //ADD CHECKBOX
             for (b in cluster_stats[a]) {
                 if (b != "undefined_stats") { // Bug. Hide until blank fixed

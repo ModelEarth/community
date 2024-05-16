@@ -12,7 +12,7 @@ The industry timeline we're working on will have a short Tabulator grid below it
 We've integrated timeline charts with the top hero area of the home page, so site visitors will immediately see what the tool provides and will be motivated to enter their own zip code, county or state to explore.
 -->
 
-[Our localsite gallery parameters](/localsite) make creating pages and exploring data fun, and great for [Ai prompt generation](/earthscape/app/).
+[Our localsite gallery parameters](/localsite) make creating pages and exploring data fun, and great for [Ai prompt generation](/requests/).
 
 The universal filters we use are:
 

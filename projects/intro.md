@@ -41,6 +41,8 @@ Heatmap needs to show vibrant colors when viewing states.
 
 Not your average data modeling projects, but worth the effort.
 
+**[Pulling International EEIO data into Supabase and DuckDB](/useeio.js/footprint/)** - Sahil, Himanshu
+
 **[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
 Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder into Google Data Commons. Add USEEIO data to [Data Commons Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
@@ -56,7 +58,7 @@ Integrating data, maps and machine learning with [social safety net programs](ht
 **[UN Goal Storyboards and Data Prep for Lunar Olympics Celebration](/io/coders/)**
 [Join us](/io/coders/) Thursdays at noon EDT and evenings on Sundays, Mondays and Wednesdays at 10pm EDT as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) for [UN Goal timelines and forecasting](/data-commons/).
 
-**[Install LLM from Google Data Commons](github.com/datacommonsorg/website)**
+**[Install LLM API pull from Google Data Commons](github.com/datacommonsorg/website)**
 Build Google Data Commons locally to reuse visualization LLM.  
 Integrate within [Open WebUI](/projects/src/) and update our [GDC install notes](/localsite/info/data/datacommons/).
 

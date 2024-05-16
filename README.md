@@ -1,4 +1,3 @@
-
 # Sustainable Commmunities - Industry Input-Output Tools
 
 Community Pages for Life Cycle Analysis (LCA) and Environmental Product Declarations (EPDs).
