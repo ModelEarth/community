@@ -1,6 +1,10 @@
 # About Model.Earth
 
-<span style="font-size: 18px;">We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open environmental [impact&nbsp;profiles](../../io/template/) to integrate collaborative tools for [industry&nbsp;comparisons](../../localsite/info/), [content&nbsp;storyboarding](../../data-pipeline/research/stream/) and [job&nbsp;creation](../../io/) to increase human benefits from [community biodiversity projects](../../data-pipeline/research/) aimed at [eliminating government debt](../start/charts/).</span>
+<span style="font-size: 18px;">We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open [US EPA environmental impact&nbsp;data](../../io/about/) to create collaborative tools for [industry&nbsp;comparisons](../../localsite/info/), [content&nbsp;storyboarding](../../data-pipeline/research/stream/) and [programming experience](/projects/). 
+
+<!--
+to increase benefits from [biodiversity projects](../../data-pipeline/research/) aimed at [eliminating government debt](../start/charts/).</span>
+-->
 
 ## What makes our UX Unique and Exciting
 
@@ -30,8 +34,10 @@ Where (location), What (topic), When (year), How (number of people and types of 
 
 View our [Industry Comparisons](/localsite/info/) and [Lifecycle Tools Overview](/community/tools/).
 
+<span class="local" style="display:none">
 For comparison, here's Data USA's [Payroll by Industry Sector](https://datausa.io/profile/geo/new-york#payroll).  
 The Data USA chart only supports state level. It's also difficult to see which industry the bars represent.
+</span>
 
 <!--
 In our setup, the colored countries will instead be the location's top 10 industries. The lines will move when indicators are selected for the number of employees, establishments, payroll.
