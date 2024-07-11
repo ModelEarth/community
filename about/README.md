@@ -1,6 +1,6 @@
 # About Model.Earth
 
-<span style="font-size: 18px;">We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open [US EPA environmental impact&nbsp;data](../../io/about/) to create collaborative tools for [industry&nbsp;comparisons](../../localsite/info/), [content&nbsp;storyboarding](../../data-pipeline/research/stream/) and [programming experience](/projects/). 
+<span style="font-size: 18px;">We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open [US EPA environmental impact&nbsp;data](../../io/about/) to create collaborative tools for [industry&nbsp;comparisons](../../localsite/info/) and [content&nbsp;storyboarding](../../data-pipeline/research/stream/) while gaining [programming experience](/projects/). 
 
 <!--
 to increase benefits from [biodiversity projects](../../data-pipeline/research/) aimed at [eliminating government debt](../start/charts/).</span>

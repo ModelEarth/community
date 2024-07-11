@@ -59,7 +59,7 @@ https://normansj.github.io/local-view-request/src/location/mylocation.html
 <!-- that integrates with https://www.greenjobsboard.us, [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->
 
 **[UN Goal Storyboards and Data Prep for Lunar Olympics Celebration](/io/coders/)**
-[Join us](/io/coders/) Thursdays at noon EDT and evenings on Sundays, Mondays and Wednesdays at 10pm EDT as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) for [UN Goal timelines and forecasting](/data-commons/).
+[Join us](/io/coders/) Wednesdays at noon EDT and evenings on Sundays at 10pm EDT as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) for [UN Goal timelines and forecasting](/data-commons/).
 
 **[Install LLM API pull from Google Data Commons](github.com/datacommonsorg/website)**
 Build Google Data Commons locally to reuse visualization LLM.  

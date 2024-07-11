@@ -135,6 +135,19 @@ Judges will use Slack video to deliberate while using a Google Form for calculat
 -->
 
 <!--
+<div style="font-size:18px; line-height: 1.2em;">
+
+
+  <a href="../../community/challenge/" class="btn btn-success" style="text-shadow: none; border:2px solid #ddd">Join the Web Challenge</a><br> 
+
+  <a href="../../community/challenge/how/" class="btn btn-primary" style="text-shadow: none; border:2px solid #ddd">How to Create a Winning Entry</a><br>
+
+  <a href="../../community/projects/" class="btn btn-warning" style="text-shadow: none; border:2px solid #ddd">Project Coding and Design Areas</a><br>
+  
+</div>
+-->
+
+<!--
 <a href="https://www.challenge.gov/">View more US web challenges at Challenge.gov</a>  
 -->
 
