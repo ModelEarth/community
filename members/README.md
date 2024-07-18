@@ -1,4 +1,4 @@
-# Community Members
+# Active Community Members
 
 Our active community of developers and our alumni members.
 
