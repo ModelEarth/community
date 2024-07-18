@@ -43,7 +43,7 @@ Not your average data modeling projects, but worth the effort.
 
 **[Pulling International EEIO data into Supabase and DuckDB](/useeio.js/footprint/)** - Sahil, Himanshu
 
-**[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
+**[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)** - Bhavna
 Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder into Google Data Commons. Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[Requests using the See-Click-Fix API](https://normansj.github.io/local-view-request/src/location/mylocation.html) with [Open WebUI](/projects/src)**
