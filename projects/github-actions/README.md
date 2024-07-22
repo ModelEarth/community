@@ -1,7 +1,7 @@
 
 ## Model.Earth Data Pipeline
 
-[Our Data Pipeline](../../../localsite/info/data) generates [Community Datasets](../../../community-data) and [timeline data](../../../community-timelines) for map layers and Tabular data grids.  
+[Our Data Pipeline](../../../localsite/info/data) generates [Community Datasets](../../../community-data) and [timeline data](../../../data-pipeline/timelines) for map layers and Tabulator data grids.  
 
 We use [GitHub Actions](https://docs.github.com/en/actions) to generate static data files for fast loading diagrams and map layers.
 
