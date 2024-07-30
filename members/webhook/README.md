@@ -2,7 +2,7 @@
 
 # Webhook
 
-The webhook app runs in Google App Engine and sends emails using MailTrap's free plan for up to 200 emails per day. 
+[For our membership page](../) welcome letter, a webhook app runs in Google App Engine and sends emails using MailTrap's free plan for up to 200 emails per day. 
 
 Coming soon: We securely storing the secrets to the email service and import them into our Flask application through GCP.
 
