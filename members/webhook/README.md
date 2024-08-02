@@ -4,7 +4,7 @@
 
 **Coming Soon**
 
-[For our membership page](../) welcome letter uses a [webhook app](https://github.com/modelEarth/webhook) that runs in Google App Engine and sends emails using MailTrap's free plan, which provides up to 200 outbound emails per day. 
+[Our membership page](../) welcome letter uses a [webhook app](https://github.com/modelEarth/webhook) that runs in Google App Engine and sends emails using MailTrap's free plan, which provides up to 200 outbound emails per day. 
 
 Our SMTP secrets reside in Google Cloud Secret Manager. We securely store the secrets for the email service and import them into our Flask application through Cloud Computing Services (GCP).
 
