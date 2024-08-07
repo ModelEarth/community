@@ -1,5 +1,6 @@
 # Farm Fresh Data
 
+[New Version](/community-data/locations/farmfresh) - Pulls from API with Python, nightly Github Action refreshes.
 
 Fetch data for our [Map of Fresh Produce](../../localsite/info/#show=farmfresh).  Here are [Georgia Data Specifics](ga)  
 
