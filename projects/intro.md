@@ -41,10 +41,11 @@ Heatmap needs to show vibrant colors when viewing states.
 
 Not your average data modeling projects, but worth the effort.
 
-**[Pulling International EEIO data into Supabase and DuckDB](/useeio.js/footprint/)** - Sahil, Himanshu
+**[Pulling International trade flow into Supabase and DuckDB](/OpenFootprint/trade/)**
+Exiobase data converted to SQL for maps, Sankey and Chord charts
 
-**[Push EPA Data to Google Data Commons](/localsite/info/data/datacommons/)** - Bhavna
-Push EPA data assempled in our [OpenFootprint](/OpenFootprint) impacts folder into Google Data Commons. Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
+**[Push US EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
+Push data assempled for our [Open Data Panels](/OpenFootprint) into Google Data Commons. Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[Requests using the See-Click-Fix API](https://normansj.github.io/local-view-request/src/location/mylocation.html) with [Open WebUI](/projects/src)**
 Integrating data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for requests and training with funding managed through [OC's GraphQL API](https://graphql-docs-v2.opencollective.com/access) and promoted via [BlueSky RSS Feeds](https://openrss.org/blog/bluesky-has-launched-rss-feeds). [Location-based&nbsp;Requests](/feed/view/#feed=311) integrated with [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8).
