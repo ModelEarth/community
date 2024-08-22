@@ -1,6 +1,6 @@
 <a style="float:right" href="https://docs.google.com/forms/d/e/1FAIpQLScXSX0_myDcB4_Z32hpGC71PXVsMmgy_dyZPY0aPEWamyzV-w/viewform" class="btn btn-success">New Member Signup</a>
 
-# Active Community Members
+# Active Members
 
 <a style="float:right; margin-right:10px" href="webhook">Webhook</a>Our active community of developers and our alumni members.
 
