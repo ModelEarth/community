@@ -1,8 +1,8 @@
 <a style="float:right" href="https://docs.google.com/forms/d/e/1FAIpQLScXSX0_myDcB4_Z32hpGC71PXVsMmgy_dyZPY0aPEWamyzV-w/viewform" class="btn btn-success">New Member Signup</a>
 
-# Active Members
+# Member List
 
-<a style="float:right; margin-right:10px" href="webhook">Webhook</a>Our active community of developers and our alumni members.
+<a style="float:right; margin-right:10px" href="webhook">Webhook</a>Our community of developers, followed by our alumni members.
 
 <iframe width="100%" height="600px" style="margin-bottom:10px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRh5-bIR4hC1f9H3NtDCNT19hZXnqz8WRrBwTuLGnZiA5PWhFILUv2nS2FKE2TZ4dZ-RnJkZwHx1t2Y/pubhtml?gid=1054734503&single=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

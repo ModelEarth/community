@@ -33,7 +33,7 @@ We're creating embeddable tools for visualizing and comparing impacts using Supa
 
 
 Software Development: Back-End Developer
-Hosting Open WebUI Python with Cloudflare.
+Python and webhok setup for Open WebUI integration with Discord API with Google Cloud and/or Cloudflare
 https://model.earth/projects
 
 Software Development: Full Stack Developer

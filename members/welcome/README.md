@@ -2,7 +2,7 @@
 
 Thanks for your interest in joining our DreamStudio Model.earth data science team!
 
-Here's our [Members List](https://model.earth/community/members). Please click "New Member Signup" and add yourself to our Google Sheet.
+Here's our [Members List](../). Please click "New Member Signup" and add yourself to our Google Sheet.
 
 **Here are some areas to consider including in your member signup**
 OpenWebUI python backend and Docker, Javascript with eCharts visualizations, D3 chart javascript, Leaflet map colors, International Exiobase trade data, Discord API pull, Python pipelines, ML Forecasting, API Feed Player React, LLMs with python, AI Image generation python, Video generation python, Supabase International trade python, DuckDB US State impacts javascript
@@ -24,4 +24,4 @@ Our Supabase SQL team also meets at 6 PM EDT on Fridays.
 [Our Google Meet link](model.earth/io/coders) is always the same. The times are here too: [model.earth/io/coders](https://model.earth/io/coders)
 
 
-Looking forward to working with you!
+Looking forward to working with you! - [Join our team](../)
