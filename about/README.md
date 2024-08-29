@@ -66,4 +66,6 @@ Instead of showing the census grid on the initial load, we'll provide a small sn
 
 We're focused on providing a tight layout using census highlights, combined with All the Places location summaries, along with environmental [footprint labels](/io/template/) for products, individuals and communities, and [timelines](/data-pipeline/timelines/) for job level projections and industry input-output details using the US EPA's [extended industry data](../../io/charts/).
 
+One of the great UX features of our design is that content is never obstructed by popup dialog boxes. You can continue to interact while changing [filter settings](#sidetab=settings) and [map locations](#geoview=countries).
+
 [Community Data](/community-data) and [Code Meetups](/io/coders)
