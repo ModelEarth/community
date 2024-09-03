@@ -1,15 +1,15 @@
 
 # Farm Fresh Georgia
 
-We're working toward comparing data from multiple sources in real-time: UGA, Aglanta and the USDA.  
+Prior to the USDA farmers market API, we combined data from multiple sources: UGA, Aglanta and the USDA.  
 
-Our original [farmersmarkets-ga](https://github.com/modelearth/georgia-data/tree/master/farmfresh) dataset contains 169 records. It includes columns for Cheese, Eggs, Seafood and FMID matching the current [USDA farmers market export](https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx) of 31 records.  
+Our original [farmersmarkets-ga](https://github.com/modelearth/georgia-data/tree/master/farmfresh) dataset contained 169 records. It included columns for Cheese, Eggs, Seafood and FMID matching the prior [USDA farmers market export](https://search.ams.usda.gov/farmersmarkets/ExcelExport.aspx) of 31 records.  The prior automated merge produced 52 as of Sept 2020.
 
-Our automated merge is only producing 52 (as of Sept 2020). It combines categories for Cheese, Eggs, Seafood into one column. The USDA appears to have purged more than half the records during clean-up, or part of the merge stopped working when run Sept 15, 2020.
+With the move to the new USDA API, our [Georgia Farm Fresh map](https://model.georgia.org/localsite/info/#show=farmfresh&state=GA) now lists 248 locations as of Sept 2024.
 
 ### Aglanta
 
-Data/farmfresh.csx is a backup made Aug 9, 2019 from the [Google Sheet Aglanta-Data - Combined](https://docs.google.com/spreadsheets/d/1GptBaQgTj1eHvy2xDbZLMSL9_T1f0JRSRPXvCCiP29c/edit#gid=2091880345) which was merged from Fed data in 2018 and contains 362 records.  
+Data/farmfresh.csx was a backup made Aug 9, 2019 from the [Google Sheet Aglanta-Data - Combined](https://docs.google.com/spreadsheets/d/1GptBaQgTj1eHvy2xDbZLMSL9_T1f0JRSRPXvCCiP29c/edit#gid=2091880345) which was merged from Fed data in 2018 and contains 362 records.  
 
 Yamini Kagal - merged spreadsheets prior to our USDA Automation  
 Mario Cambardella - Formerly at AgLanta, Now ServeScape

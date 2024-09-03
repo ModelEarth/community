@@ -16,7 +16,7 @@ Let me (Loren) know if you'd like to be added to a specific project.
 **Here are steps for pulling down our repos**
 [model.earth/localsite/start/steps](https://model.earth/localsite/start/steps)
 
-If you're an OPT student, complete our [OPT Welcome Letter Word doc](YourName-ModelEarth-WelcomeLetter.docx) and send back to Loren to sign.
+If you're an OPT student, complete our [OPT Welcome Letter Word doc](/webhook/files/YourName-ModelEarth-WelcomeLetter.docx) and send back to Loren to sign.
 
 We meet Wednesdays at 11 AM EDT and Sunday evenings at 11 PM EDT.
 Our Supabase SQL team also meets at 6 PM EDT on Fridays.
