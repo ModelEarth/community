@@ -1,9 +1,9 @@
 # About Model.Earth
 
-<span style="font-size: 18px;">We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open [US EPA environmental impact&nbsp;data](../../io/about/) to create collaborative tools for [industry&nbsp;comparisons](../../localsite/info/) and [content&nbsp;storyboarding](../../data-pipeline/research/stream/) while gaining [programming experience](/projects/). 
+We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using open [US EPA environmental impact&nbsp;data](../../io/about/) to create collaborative tools for [industry&nbsp;comparisons](../../localsite/info/) and [content&nbsp;storyboarding](../../data-pipeline/research/stream/) while gaining [programming experience](/projects/). 
 
 <!--
-to increase benefits from [biodiversity projects](../../data-pipeline/research/) aimed at [eliminating government debt](../start/charts/).</span>
+to increase benefits from [biodiversity projects](../../data-pipeline/research/) aimed at [eliminating government debt](../start/charts/).
 -->
 
 ## What makes our UX unique and exciting
@@ -69,3 +69,5 @@ We're focused on providing a tight layout using census highlights, combined with
 One of the great UX features of our design is that content is never obstructed by popup dialog boxes. You can continue to interact while changing [filter settings](#sidetab=settings) and [map locations](#geoview=countries).
 
 [Community Data](/community-data) and [Code Meetups](/io/coders)
+
+Model.earth is an open source project of [DreamStudio](https://dreamstudio.com) coordinated by Loren Heyns and [Democracy Lab](https://www.democracylab.org/projects/834) volunteers.
