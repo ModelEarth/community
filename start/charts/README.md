@@ -2,25 +2,29 @@
 
 # Chart Starters
 
-### ML for Eliminating Government Debt, Increasing Biodiversity and Transitioning to Clean Energy
+We're setting up [timeline charts for UN Goal progress tracking](/data-commons/docs/data/)
 
-We recommend [3D Force-Directed Graphs](https://github.com/vasturiano/3d-force-graph), [Observable D3](https://observablehq.com/@d3/gallery) and [Apache eCharts](https://echarts.apache.org/examples/) - for Sankey, [Chord](/io/charts/chord/), 3D Globes and more.
+[The embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts.
 
-[Our embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts
 [Our Impact Bubble Chart](../../../io/charts/bubble/) uses JSON from the USEEIO API.  
 
-React Project - Display [Total Dollar Values](../../../localsite/info/data/totals/) from [The IO Matrix](../../../io/about/matrix/).
+React Project: Display [Total Dollar Values](../../../localsite/info/data/totals/) from [The IO Matrix](../../../io/about/matrix/).
+
+We recommend [ChartJS.org](https://chartjs.org), [Observable D3](https://observablehq.com/@d3/gallery), and [Apache eCharts](https://echarts.apache.org/examples/) for Sankey, [Chord](/io/charts/chord/), 3D Globes and more.
 
 <!--
 Where does this reside now?
 [Government Carbon Footprints Sankey](https://federalist-c3fa68f6-ee2f-4053-9a71-252d9abebb5f.app.cloud.gov/site/18f/federal-carbon-footprint/)
 -->
 
-[TheShiftProject.org](https://sankey.theshiftproject.org/) - Sankey of emissions per capita for countries
-[Amazon's Footprint report](https://sustainability.aboutamazon.com/environment/sustainable-operations/carbon-footprint)
+### Exploring Impacts
+
+[Model.Earth Industry Comparisons](/localsite/info)  
+[Amazon - Water Positive by 2030](https://www.aboutamazon.com/news/aws/aws-water-positive-by-2030) and [Footprint Report](https://sustainability.aboutamazon.com)
 
 ### Deep Learning Model Frameworks
 
+[Model.Earth RealityStream](/RealityStream/)
 [PyTorch](https://pytorch.org/docs/stable/index.html) for K-Means clustering projects
 [Tensorflow ML in Javascript](https://www.tensorflow.org/js/demos) with Google's international [REST API data](https://docs.datacommons.org/api/rest/v2)
 <!--
@@ -29,6 +33,8 @@ https://www.censusreporter.org/data/map/?table=B06011&geo_ids=040|01000US
 -->
 
 ### Network Graphs
+
+We connect with [3D Force-Directed Graphs](https://github.com/vasturiano/3d-force-graph)
 
 Interactive network graphs for 24 impact areas and the top industries related to each.  The 6 impact sets can determine the colors:
 
@@ -52,6 +58,7 @@ View <a href="../../../io/charts/sankey/">Our Interactive Version</a> of the fol
 <a href="../../../io/charts/sankey/"><img src="../../../io/charts/sankey/img/sankey.png" style="width:100%; bottom:0px;"></a>
 <br>
 
+[TheShiftProject.org](https://sankey.theshiftproject.org/) - Exiobase sankey of emissions per capita for countries
 
 [Interactive Energy Example](skd3) - D3.js Sankey Diagram in our repo
 <!--[D3.js Sankey Diagram - Flow-o-matic, easy list editing](https://observablehq.com/@mbostock/flow-o-matic)  -->
