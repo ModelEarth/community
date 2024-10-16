@@ -67,21 +67,12 @@ flightcontrol.dev for AWS hosting
 
 <h4>Democracy Lab</h4>
 
-<a href="https://www.democracylab.org">Democracy Lab</a>, [DemLab Project API Pull test](../../io/template/feed/demolab.html), and [Contributor Guide](https://docs.google.com/document/d/1OLQPFFJ8oz_BxpuxRxKKdZ2brmlUkVN3ICTdbA_axxY/edit#).
-
+<a href="https://www.democracylab.org">Democracy Lab</a> - [DemLab Project API Pull (inspect)](https://model.earth/io/template/feed/demolab.html)<!--Contributor Guide](https://docs.google.com/document/d/1OLQPFFJ8oz_BxpuxRxKKdZ2brmlUkVN3ICTdbA_axxY/edit#).-->  
+[The Gov Lab - NYU](https://thegovlab.org/)  
 <!--
 <a href="https://docs.google.com/document/d/1uqPZ_9hPP7q3_Pc2JugjQKTB94ePRG0vwshqfyqm4R0/">Scope of Work</a>. UX/UI
 and <a href="https://www.ewg.org/">EWG</a>
 -->
-
-<h4>Citizens Foundation</h4>
-
-Connecting governments & citizens through constructive ideas and debate that minimizes personal arguments and trolling.
-
-[Your Priorities](https://www.yrpri.org/)  
-[The Gov Lab - NYU](https://thegovlab.org/)  
-[Horizon Europe](https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en)  
-[Citizen Lab](https://www.citizenlab.co/)  
 
 <h4>Emissions Dashboard</h4>
 
