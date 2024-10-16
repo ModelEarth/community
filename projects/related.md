@@ -80,7 +80,7 @@ Connecting governments & citizens through constructive ideas and debate that min
 
 [Your Priorities](https://www.yrpri.org/)  
 [The Gov Lab - NYU](https://thegovlab.org/)  
-[Horiozn Europe](https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en)  
+[Horizon Europe](https://ec.europa.eu/info/research-and-innovation/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en)  
 [Citizen Lab](https://www.citizenlab.co/)  
 
 <h4>Emissions Dashboard</h4>
