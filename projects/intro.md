@@ -63,18 +63,17 @@ https://normansj.github.io/local-view-request/src/location/mylocation.html
 <!-- that integrates with https://www.greenjobsboard.us, [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->
 
 **[UN Goal Storyboards and Data Prep](/io/coders/)**
-[Requests Visualization](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) with [UN Goal timelines](/data-commons/).
+[Requests Visualization](/requests/) with [UN Goal timelines](/data-commons/).
 
-**[Install LLM API pull from Google Data Commons](github.com/datacommonsorg/website)**
-Build Google Data Commons locally to reuse visualization LLM.  
-Integrate within [Open WebUI](/projects/src/) and update our [GDC install notes](/localsite/info/data/datacommons/).
+**[Install LLM API pull from Google Data Commons](https://github.com/datacommonsorg/website)**
+Build Google Data Commons locally to reuse visualization LLM. Update our [GDC install notes](/localsite/info/data/datacommons/).
 
 **[Integrate ObservableHQ's Interface for selecting charts](https://github.com/observablehq)**  
 Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
 [Mike Bostock provided an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
 
-**[Enhance API Key Storage in Earthscape](/earthscape/app/) and [Open WebUI](/projects/src/)**
-[API Key Local Storage mockup](/localsite/tools/storage/api/) - Javascript repeater with localStorage
+**[API Key Storage in Browser](/localsite/tools/storage/api/)**
+Javascript repeater with localStorage
 
 **[Integrate with Census Reporting Sites](/community/resources/censusreporter/)**
 Integrate with [CensusReporter.com](https://CensusReporter.com) and [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/)
