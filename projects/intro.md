@@ -47,9 +47,12 @@ Exiobase data converted to SQL for maps, Sankey and Chord charts
 **[Push US EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
 Push data assempled for our [Open Data Panels](/OpenFootprint) into Google Data Commons. Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
-**[Requests using the See-Click-Fix API](https://normansj.github.io/local-view-request/src/location/mylocation.html) with [Open WebUI](/projects/src)**
-Integrating data, maps and machine learning with [social safety net programs](https://www.codeforamerica.org/features/bringing-social-safety-net-benefits-online/) using [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprints](/OpenFootprint/) for requests and training with funding managed through [OC's GraphQL API](https://graphql-docs-v2.opencollective.com/access) and promoted via [BlueSky RSS Feeds](https://openrss.org/blog/bluesky-has-launched-rss-feeds). [Location-based&nbsp;Requests](/feed/view/#feed=311) integrated with [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8).
+**[See-Click-Fix API](/feed/view/#feed=311) within [FeebPlayer](/feed)**
+Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprint impact panels](/OpenFootprint/). 
+
 <!--
+[group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8)
+
 Location-based Requests
 https://normansj.github.io/local-view-request/src/location/mylocation.html
 
@@ -59,8 +62,8 @@ https://normansj.github.io/local-view-request/src/location/mylocation.html
 
 <!-- that integrates with https://www.greenjobsboard.us, [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->
 
-**[UN Goal Storyboards and Data Prep for Lunar Olympics Celebration](/io/coders/)**
-[Join us](/io/coders/) Wednesdays at 11 AM EDT, Fridays at 6 PM EDT and Sunday evenings at 11 PM EDT as we create [future-forward interfaces](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) with [UN Goal timelines and forecasting](/data-commons/).
+**[UN Goal Storyboards and Data Prep](/io/coders/)**
+[Requests Visualization](/requests/) using [Earthscape](/earthscape/app/) and [Open&nbsp;WebUI](/projects/src/) with [UN Goal timelines](/data-commons/).
 
 **[Install LLM API pull from Google Data Commons](github.com/datacommonsorg/website)**
 Build Google Data Commons locally to reuse visualization LLM.  
