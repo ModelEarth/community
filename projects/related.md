@@ -63,8 +63,6 @@ flightcontrol.dev for AWS hosting
 - Integrate and update <a href="https://www.cloudcarbonfootprint.org">CloudCarbonFootprint.org widgets</a>. Apply to sites hosted using GitHub Pages and CDN caching.
 
 
-
-
 <h4>Democracy Lab</h4>
 
 <a href="https://www.democracylab.org">Democracy Lab</a> - [DemLab Project API Pull (inspect)](https://model.earth/io/template/feed/demolab.html)<!--Contributor Guide](https://docs.google.com/document/d/1OLQPFFJ8oz_BxpuxRxKKdZ2brmlUkVN3ICTdbA_axxY/edit#).-->  
