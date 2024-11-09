@@ -1,6 +1,6 @@
-# Welcome to our Model.earth Team!
+# Welcome to our ModelEarth Team!
 
-Thanks for your interest in joining our DreamStudio Model.earth data science team!
+Thanks for your interest in joining our ModelEarth data science team!
 
 Here's our [Member List and New Member Signup](../)  
 In the upper right of the member list, please click the signup link and add yourself to our Google Sheet.
