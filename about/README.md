@@ -31,7 +31,7 @@ Where (location), What (topic), When (year), How (number of people and types of 
 View our [Industry Comparisons](/localsite/info/) and [Lifecycle Tools Overview](/community/tools/).
 
 <span class="local" style="display:none">
-For comparison, here's Data USA's [Payroll by Industry Sector](https://datausa.io/profile/geo/new-york#payroll).  
+Localhost note: For comparison, here's Data USA's [Payroll by Industry Sector](https://datausa.io/profile/geo/new-york#payroll).  
 The Data USA chart only supports state level. It's also difficult to see which industry the bars represent.
 </span>
 
