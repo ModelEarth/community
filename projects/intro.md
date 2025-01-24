@@ -44,8 +44,9 @@ Not your average data modeling projects, but worth the effort.
 **[Pulling International trade flow into Supabase and DuckDB](/OpenFootprint/trade/)**
 Exiobase data converted to SQL for maps, Sankey and Chord charts
 
-**[Push US EPA Data to Google Data Commons](/localsite/info/data/datacommons/)**
-Push data assempled for our [Open Data Panels](/OpenFootprint) into Google Data Commons. Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
+**[Push US EPA Data to Google Data Commons](/data-commons/docs/)**
+Push data from [US State Models (RStudio)](/io/about/) into Google Data Commons.  
+Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[See-Click-Fix API](/feed/view/#feed=311) within [FeebPlayer](/feed)**
 Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprint impact panels](/OpenFootprint/). 
