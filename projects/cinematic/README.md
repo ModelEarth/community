@@ -1,19 +1,19 @@
 ## Image/Video Generation
 
-[AI Community Visualizations](../../../data-pipeline/research) - [Stability AI API](https://dreamstudio.com/api/) - [StableStudio UX](https://dreamstudio.com/studio/) - [Image Generator](https://dreamstudio.ai/generate)
+[Our Storyboard Generator](../../../data-pipeline/research) - Location image prompts based on area industries and local impact data.
 
 For hero images, input-output visualizations and training resources.  
 Themes examples: Last Airbender and Marvel Comics APIs
 
 Project areas:  
 
-1. Save generated images using GitHub Actions (or a CoLab script) with the [Stability.AI API Platform](https://platform.stability.ai/), the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the upcoming [Midjourney API](https://tokenizedhq.com/midjourney-api/), and/or <a href="https://replicate.com/docs/get-started/nextjs">Replicate.com NextJS</a>. Steps for installing [Stable Diffusion on Windows](https://stable-diffusion-art.com/install-windows/).
+1. Save generated images using GitHub Actions (or a CoLab script) with the [Stability.AI API Platform](https://platform.stability.ai/), the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the upcoming [Midjourney API](https://tokenizedhq.com/midjourney-api/), and/or <a href="https://replicate.com/docs/guides/nextjs">Replicate.com NextJS</a>. Steps for installing [Stable Diffusion on Windows (Automatic1111)](https://stable-diffusion-art.com/install-windows/).
 
-2. Automate pulling UN Comtrade input-output data using GitHub Actions to create static files to use with our global search filters. Our <a href="/data-pipeline/international/">International data prep</a> page  
+2. Pull UN goal data using to create static files to using Google Data Commons with our <a href="../../../data-commons/">UN Goal Timelines</a>.  
 
 3. Find and embed/fork existing [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
 
-4. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Could also update timeline slider in OpenStreetMaps so earthquake locations change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](/mbgl-timeslider/demo/).
+4. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Update timeline slider in OpenStreetMaps so earthquake locations change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](../../../mbgl-timeslider/demo/).
 
 
 ## Input-Output Visualization
