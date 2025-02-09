@@ -64,6 +64,8 @@ We're focused on providing a tight layout using census highlights, combined with
 
 One of the great UX features of our design is that content is never obstructed by popup dialog boxes. You can continue to interact while changing [filter settings](#sidetab=settings) and [map locations](#geoview=countries).
 
-[Community Data](/community-data) and [Code Meetups](/io/coders)
+ModelEarth LLC dba DreamStudio is located in Atlanta, Georgia.
 
-Model.earth is an open source project of [DreamStudio](https://dreamstudio.com) coordinated by Loren Heyns and [Democracy Lab](https://www.democracylab.org/projects/834) volunteers.
+Model.earth is an open source project coordinated by [Loren Heyns](https://dreamstudio.com/resume) and [Democracy Lab](https://www.democracylab.org/projects/834) volunteers.  
+
+[Active Projects](/projects) - [Community Data](/community-data) - [Code Meetups](/io/coders)
