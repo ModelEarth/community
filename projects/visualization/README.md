@@ -133,4 +133,4 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 ### Data Pipeline
 
-[Our Community Datasets page](../../../community-data/) has work in progress
+[Our Community Datasets page](../../../community-data/) lists datasources we've preprocessed using python in our [data-pipeline](../../../data-pipeline/) repo.
