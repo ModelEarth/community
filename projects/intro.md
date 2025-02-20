@@ -41,7 +41,7 @@ Heatmap needs to show vibrant colors when viewing states.
 
 Not your average data modeling projects, but worth the effort.
 
-**[Pulling International trade flow into Supabase and DuckDB](/OpenFootprint/trade/)**
+**[Pulling International trade flow into Supabase and DuckDB](/profile/trade/)**
 Exiobase data converted to SQL for maps, Sankey and Chord charts
 
 **[Push US EPA Data to Google Data Commons](/data-commons/docs/)**
@@ -49,7 +49,7 @@ Push data from [US State Models (RStudio)](/io/about/) into Google Data Commons.
 Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[See-Click-Fix API](/feed/view/#feed=311) within [FeebPlayer](/feed)**
-Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprint impact panels](/OpenFootprint/). 
+Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprint impact panels](/profile/). 
 
 <!--
 [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8)
@@ -126,7 +126,7 @@ Tools for editing data in Google Sheets using a social login<br><br>
 
 <div class='pnum'>7.</div>
 <div class='ptxt'>
-<a href="../../community/projects/#widgets">Open Footprint - Impact Widgets</a><br>
+<a href="../../community/projects/#widgets">Impact Widgets</a><br>
 Environmental Impact Widget UX/UI<br><br>
 </div>
 

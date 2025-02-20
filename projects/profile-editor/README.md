@@ -1,6 +1,6 @@
 ## Environmental Profile Editor
 
-[OpenFootprint Panels](../../../OpenFootprint/) aim to make footprint data sharable using yaml.  Inspired by UC Berkeley's [CoolCarbon footprints](https://coolclimate.berkeley.edu/calculator). We're creating and combine profile modules based on [Exiobase Trade flow data](../../../OpenFootprint/trade), [US EPA State Impacts](../../../io/about/) and [Environmental Product Declarations (EPD)](../../../io/template/) 
+[Profile Panels](../../../profile/) aim to make footprint data sharable using yaml.  Inspired by UC Berkeley's [CoolCarbon footprints](https://coolclimate.berkeley.edu/calculator). We're creating and combine profile modules based on [Exiobase Trade flow data](../../../profile/trade), [US EPA State Impacts](../../../io/about/) and [Environmental Product Declarations (EPD)](../../../io/template/) 
 <!-- created a seetings-layout branch, 
 	then switched to githubpages branch -->
 

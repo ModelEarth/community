@@ -1,6 +1,6 @@
 # About Model.Earth
 
-We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using [International Trade](../../OpenFootprint/trade/) and [US environmental&nbsp;data](../../io/about/) to create tools for [industry&nbsp;comparisons](../../localsite/info/), [content&nbsp;storyboarding](../../data-pipeline/research/stream/) and [collaborative programming](/projects/). 
+We're combining [data&nbsp;visualization](../../io/charts/), [lifecycle&nbsp;analysis](../../community/tools/) and [machine&nbsp;learning](../../data-pipeline/) using [International Trade](../../profile/trade/) and [US environmental&nbsp;data](../../io/about/) to create tools for [industry&nbsp;comparisons](../../localsite/info/), [content&nbsp;storyboarding](../../data-pipeline/research/stream/) and [collaborative programming](/projects/). 
 
 ## What makes our UX unique and exciting
 
