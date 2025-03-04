@@ -15,6 +15,8 @@ D3 chart javascript, Leaflet map colors, International Exiobase trade data,
 Discord API pull, Python pipelines, ML Forecasting, API Feed Player React, LLMs with python, AI Image generation python, Video generation python, Supabase International trade python, DuckDB US State impacts Javascript
 -->
 
+To maintain a high quality reputation, we ask that participants not list us on their resume or LinkedIn until they've been coding for a few weeks. Then we have a basis for assessment when recruiters call to check on details.
+
 **Active Projects** 
 Add your name after a TO DO you're interested in in our [Active Projects](https://model.earth/projects) and related pages and CoLabs.   
 Send a PR to add yourself to a project and add notes in our README files as you contribute code.

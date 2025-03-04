@@ -49,7 +49,13 @@ Push data from [US State Models (RStudio)](/io/about/) into Google Data Commons.
 Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[See-Click-Fix API](/feed/view/#feed=311) within [FeebPlayer](/feed)**
-Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Open Footprint impact panels](/profile/). 
+Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Profile panels](/profile/). 
+
+<!--
+**[Pay.gov web service API](https://www.milcorp.com/blog/cloud-feed/selecting-the-pay-gov-interface-thats-best-for-you/)** - Add an open source payment process to fund local improvements while [paying down federal debt](https://www.pay.gov/public/form/start/23779454). Send contributions to the investment pool of your choice to fund See Click Fix improvements and other projects through participating municipalities, states and countries.
+-->
+
+**Easy to Integrate Auth Frontend** - Integrate embeddable Stytch, Cognito and/or Auth0 identity platform frontends in the [cloud repo](https://github.com/modelearth/cloud/).
 
 <!--
 [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8)
@@ -64,7 +70,7 @@ https://normansj.github.io/local-view-request/src/location/mylocation.html
 <!-- that integrates with https://www.greenjobsboard.us, [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->
 
 **[UN Goal Storyboards and Data Prep](/io/coders/)**
-[Requests Visualization](/requests/) with [UN Goal timelines](/data-commons/).
+[Requests Visualization](/requests/) with [UN Goal timelines](/data-commons/docs/data/).
 
 **[Install LLM API pull from Google Data Commons](https://github.com/datacommonsorg/website)**
 Build Google Data Commons locally to reuse visualization LLM. Update our [GDC install notes](/localsite/info/data/datacommons/).
