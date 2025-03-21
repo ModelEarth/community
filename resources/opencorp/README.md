@@ -12,19 +12,12 @@ Your reference is OCESD-32651.
 
 
 
-NO VOLUNTEER OPPORTUNITIES AT THIS TIME
-We are not taking on any new voluneteers until we find an NGO or non-profit partner with access to the OpenCorporates.com API so we can validate organizations in the BuildingTransparency.org environmental product listings.
+Are you an NGO or non-profit partner with access to the OpenCorporates.com API to validate organizations in the BuildingTransparency.org environmental product listings?
 
-
-
-Problem
-WE HAVE NO BASIC VOLUNTEER POSITIONS AT THIS TIME
-Please do not register unless you feel you can be proficient with webhooks, Google Cloud hosting of OpenWebUI and the Discord API. Or you are able to work with the complexities of the Exiobase API.
-
+Seeking participants proficient with webhooks, Google Cloud hosting of OpenWebUI and/or the Discord API. Interested in working with the complexities of the Exiobase API and the BuildingTransparency.org API.
 
 We're creating Open Footprint tools that are easy to integrate with websites using map filters, timeline visualizations, and AI storyboards based on locations and commodities. Our data sources include Google Data Commons, BuildingTransparency.org, All The Places and the US EPA environmentally extended input-output model.
 
-Solution
 We're integrating eCharts and ObservableHQ D3 data visualizations with comparison tools that connect people to jobs and innovations focused on improving air quality, green energy, clean water, local farming & healthy environments.
 
 Action
