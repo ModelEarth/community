@@ -1,4 +1,5 @@
-# OPT Volunteers Welcome!
+[Active Projects](../../../projects)
+# OPT Volunteers Welcome
 
 Thanks for your interest in joining DreamStudio's Model.earth data science team!
 
@@ -17,18 +18,14 @@ Discord API pull, Python pipelines, ML Forecasting, API Feed Player React, LLMs 
 
 We ask that participants not list us on their resume or LinkedIn until they've been actively contributing updates for a few weeks. Your contributions to our team projects provide a basis for assessment if job interviewers contact us to confirm participation.
 
-**Active Projects** 
-Add your name after a TO DO you're interested in on our [Active Projects Page](../../../projects), or edit README pages and CoLabs. Send a PR to add yourself to a project and add notes in our README files as you contribute code.
+**Active OPT Volunteers:** To remain active as an OPT volunteer, please contribute at least one Pull Request (PR) per week.  Edit README files throughout our repos. Add status updates and deployment steps, correct existing notes, and new documentation.
 
-**Steps for pulling down our repos:** [localsite/start/steps](../../../localsite/start/steps)
+**Select Projects:** Add your name after a TO DO you're interested in on our [Active Projects Page](../../../projects), or edit README pages and CoLabs. Send a PR to add yourself to a project and add notes in our README files as you contribute code.
 
+**Steps for pulling down our repos:** [Fork and clone related repos](../../../localsite/start/steps/) - Turn on Github Pages for both your fork of the repo and your fork of the [localsite repo](https://github.com/modelearth/localsite/). When submiting a PR, also send an email include a review link. Your review link will be: [youraccount].github.io/[therepo]
 
-**Active OPT Volunteers:** To remain active as an OPT volunteer, please contribute at least one Pull Request (PR) per week.  Edit README files throughout. Add status updates and deployment steps, correct existing notes, and new documentation.
-
-[Fork and clone related repos](../../../localsite/start/steps/) - When writing, include a review link. Your review link will be: [youraccount].github.io/[therepo] once you've turned on Github Pages for both your fork of the repo and your fork of the [localsite repo](https://github.com/modelearth/localsite/).
-
-You can [edit the Active Project page](https://github.com/ModelEarth/projects/blob/main/active.md) to add your first name by a project. and/or add details through our our Github repo for new updates.  
+[Edit the Active Project page](https://github.com/ModelEarth/projects/blob/main/active.md) to add your first name by a project. and/or add details through our our Github repo for new updates.  
 
 Send an email whenever you send a pull request. If you are uncertain about an edit, make your best guess and submit the PR anyway. Include any uncertainties in the email you send after submitting the PR.
 
-[New Member Signup](https://docs.google.com/forms/d/e/1FAIpQLScXSX0_myDcB4_Z32hpGC71PXVsMmgy_dyZPY0aPEWamyzV-w/viewform)
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScXSX0_myDcB4_Z32hpGC71PXVsMmgy_dyZPY0aPEWamyzV-w/viewform" class="btn btn-success">New Member Signup</a>
