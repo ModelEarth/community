@@ -1,6 +1,6 @@
 ## Related Resources
 
-1. [Our map page html](../../localsite/map/) is pulled into the [our industry evaluator tool](/localsite/info/#show=smart&state=GA) along with [EPA IO widgets](../../io/charts/).  
+1. [Our map page html](../../localsite/map/) is pulled into [our industry evaluator tool](/localsite/info/#show=smart&state=GA) along with [EPA IO widgets](../../io/charts/).  
 
 1. [Map starters](../start) and [Leaflet route maps](../start/routing/) for driving tours and deliveries.
 
