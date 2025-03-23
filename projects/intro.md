@@ -55,7 +55,7 @@ Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,
 **[Pay.gov web service API](https://www.milcorp.com/blog/cloud-feed/selecting-the-pay-gov-interface-thats-best-for-you/)** - Add an open source payment process to fund local improvements while [paying down federal debt](https://www.pay.gov/public/form/start/23779454). Send contributions to the investment pool of your choice to fund See Click Fix improvements and other projects through participating municipalities, states and countries.
 -->
 
-**[Easy to Integrate Auth Frontend](/cloud/)** - Integrate embeddable Google Firebase, Stytch, Cognito and/or Auth0 identity platform frontends in the [cloud repo](https://github.com/modelearth/cloud/).
+**[Easy to Integrate Auth Frontend](https://model.earth/cloud/)** - Integrate embeddable Google Firebase, Stytch, Cognito and/or Auth0 identity platform frontends in the [cloud repo](https://github.com/modelearth/cloud/).
 
 <!--
 [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8)
