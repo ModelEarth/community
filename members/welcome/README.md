@@ -24,6 +24,8 @@ We ask that participants not list us on their resume or LinkedIn until they've b
 
 **Active OPT Volunteers:** To remain active as an OPT volunteer, please contribute at least one Pull Request (PR) per week.  The time commitment is significant as the OPT program requires 20+ hours per week.  As you update code, also edit README files throughout our repos. Add status updates and deployment steps for others, correct existing notes and add new documentation.
 
+We use email threads to track involvement.  Some contributors also like to enter [weekly logs in a speadsheet](https://docs.google.com/spreadsheets/d/1wvw_xsFWnYE9z8nDQqmu1m2LB5TJEfy5VLkaFuEaCfk/edit?usp=sharing).  
+
 **Steps for pulling down our repos:** [Fork and clone related repos](../../../localsite/start/steps/) - Turn on Github Pages for both your fork of the repo and your fork of the [localsite repo](https://github.com/modelearth/localsite/). When submiting a PR, also send an email including a review link. Your review link will be: [youraccount].github.io/[therepo] 
 
 Send an email whenever you send a pull request. If you are uncertain about an edit, make your best guess and submit the PR anyway. Include any uncertainties in the email you send after submitting the PR.
