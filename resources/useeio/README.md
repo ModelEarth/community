@@ -13,7 +13,7 @@ And our [Bioeconomy branch of USEEIOR](../../../io/projects) in the Industrial E
 You can query the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) from within an [Anaconda Jupyter Notebook](https://www.anaconda.com/distribution/).
 Samples include exporting to a CSV file from the [US Environmentally-Extended Input-Output (USEEIO)](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332) API.
 However, we recommend simply working with the [static json files](../../../io/charts/) that we've already exported from the API.
-[Our example of using python](/data-pipeline/research/economy/) to pull commodities from matrix json files.
+[Our example of using python](https://model.earth/data-pipeline/research/economy/) to pull commodities from matrix json files.
 
 Bureau of Economic Analysis (BEA) data is organized in 12, 71 and 400 industry sectors.  
 Data for 71 sectors is provided annually. Data for 400 sectors is provided every 5 years.  

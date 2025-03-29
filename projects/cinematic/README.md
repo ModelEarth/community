@@ -1,13 +1,13 @@
 ## Image/Video Generation
 
-[Our Storyboard Generator](../../../data-pipeline/research) - Location image prompts based on area industries and local impact data.
+[Our Storyboard Generator](../../../requests/) - Location image prompts based on area industries and local impact data.
 
 For hero images, input-output visualizations and training resources.  
 Themes examples: Last Airbender and Marvel Comics APIs
 
 Project areas:  
 
-1. Save generated images using GitHub Actions (or a CoLab script) with the [Stability.AI API Platform](https://platform.stability.ai/), the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the upcoming [Midjourney API](https://tokenizedhq.com/midjourney-api/), and/or <a href="https://replicate.com/docs/guides/nextjs">Replicate.com NextJS</a>. Steps for installing [Stable Diffusion on Windows (Automatic1111)](https://stable-diffusion-art.com/install-windows/).
+1. Save generated images using GitHub Actions (or a CoLab script) with the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the [Midjourney API](https://piapi.ai/midjourney-api), or <a href="https://replicate.com/docs/guides/nextjs">Replicate.com NextJS</a>. Steps for installing [Stable Diffusion on Windows (Automatic1111)](https://stable-diffusion-art.com/install-windows/).
 
 2. Pull UN goal data using to create static files to using Google Data Commons with our <a href="../../../data-commons/">UN Goal Timelines</a>.  
 
