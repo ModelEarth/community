@@ -9,12 +9,11 @@ Project areas:
 
 1. Save generated images using GitHub Actions (or a CoLab script) with the [GetImg Stable Diffusion API](https://getimg.ai/tools/api), the [Midjourney API](https://piapi.ai/midjourney-api), or <a href="https://replicate.com/docs/guides/nextjs">Replicate.com NextJS</a>. Steps for installing [Stable Diffusion on Windows (Automatic1111)](https://stable-diffusion-art.com/install-windows/).
 
-2. Pull UN goal data using to create static files to using Google Data Commons with our <a href="../../../data-commons/">UN Goal Timelines</a>.  
+2. Pull UN goal data using to create static files to using Google Data Commons with our <a href="../../../data-commons/docs/data/">UN Goal Timelines</a>.  Integrate additional [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
 
-3. Find and embed/fork existing [United Nations Comtrade data visualizations](https://comtradeplus.un.org/Visualization/Labs). 
-
-4. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Update timeline slider in OpenStreetMaps so earthquake locations change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](../../../mbgl-timeslider/demo/).
-
+<!--
+3. [Apache ECharts 3D Globe](https://echarts.apache.org/examples/en/editor.html?c=globe-layers&gl=1). Update timeline slider in OpenStreetMaps so earthquake locations change as slider moves on <a href="https://model.earth/country-data/map/">3D Globe with Timeline</a>. Here's a version with [changing country boundaries](https://model.earth/mbgl-timeslider/demo/).
+-->
 
 ## Input-Output Visualization
 
