@@ -48,7 +48,7 @@ Exiobase data converted to SQL for maps, Sankey and Chord charts
 Push data from [US State Models (RStudio)](/io/about/) into Google Data Commons.  
 Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
-**[See-Click-Fix API](/feed/view/#feed=311) within [FeebPlayer](/feed)**
+**[See-Click-Fix API](/feed/view/#feed=311) within [FeedPlayer](/feed)**
 Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Profile panels](/profile/). 
 
 <!--
