@@ -1,16 +1,17 @@
-# USEEIO API
+# USEEIO Methodology
 
-The [useeio-widgets](https://github.com/USEPA/useeio-widgets) use static JSON files generated from the API.  
+The [useeio-widgets](https://github.com/USEPA/useeio-widgets) use static JSON files generated from R-Studio (See [USEEIOR](https://github.com/USEPA/useeior))
 Here's our [install notes](../../../io/charts/) for contributing to the React IO Widgets.  
 
-## R Language
-
-Check out [USEEIOR](https://github.com/USEPA/useeior)  
+<!--
 And our [Bioeconomy branch of USEEIOR](../../../io/projects) in the Industrial Ecology section.  
+-->
 
-## Python Example
+## Python
 
-You can query the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) from within an [Anaconda Jupyter Notebook](https://www.anaconda.com/distribution/).
+Since the API is bring phased out. We're creating [javascript reports](/useeio.js/footprint/) instead.
+
+Initially you could query the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) from within an [Anaconda Jupyter Notebook](https://www.anaconda.com/distribution/).
 Samples include exporting to a CSV file from the [US Environmentally-Extended Input-Output (USEEIO)](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332) API.
 However, we recommend simply working with the [static json files](../../../io/charts/) that we've already exported from the API.
 [Our example of using python](https://model.earth/data-pipeline/research/economy/) to pull commodities from matrix json files.
