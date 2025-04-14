@@ -24,7 +24,7 @@ Where does this reside now?
 
 ### Deep Learning Model Frameworks
 
-[Model.Earth RealityStream](/RealityStream/)
+[Model.Earth RealityStream](/realitystream/)
 [PyTorch](https://pytorch.org/docs/stable/index.html) for K-Means clustering projects
 [Tensorflow ML in Javascript](https://www.tensorflow.org/js/demos) with Google's international [REST API data](https://docs.datacommons.org/api/rest/v2)
 <!--
