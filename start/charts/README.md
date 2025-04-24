@@ -10,7 +10,7 @@ We're setting up [timeline charts for UN Goal progress tracking](/data-commons/d
 
 React Project: Display [Total Dollar Values](../../../localsite/info/data/totals/) from [The IO Matrix](../../../io/about/matrix/).
 
-We recommend [ChartJS.org](https://chartjs.org), [Observable D3](https://observablehq.com/@d3/gallery), and [Apache eCharts](https://echarts.apache.org/examples/) for Sankey, [Chord](/io/charts/chord/), 3D Globes and more.
+We recommend [ChartJS.org](https://chartjs.org), [Observable D3](https://observablehq.com/@d3/gallery), and [Apache eCharts](https://echarts.apache.org/examples/) for [Sankey](../../../io/charts/sankey/), [Chord](/io/charts/chord/) and [trade flow](../../../profile/trade/).
 
 <!--
 Where does this reside now?

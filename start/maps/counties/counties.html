@@ -437,7 +437,7 @@ function ready([us]) {
               //map.fitBounds(e.target.getBounds()); // Zoom to boundary area clicked
               var fips = "US13" + layer.feature.properties.COUNTYFP;
               //location.window = 
-              window.top.location.href="../../../../localsite/info/#geo=" + fips;
+              window.top.location.href="../../../../localsite/info/#geo=" + fips + "&geoview=state&state=GA";
           }
 
           function onEachFeature(feature, layer){
