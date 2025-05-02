@@ -42,7 +42,7 @@ Heatmap needs to show vibrant colors when viewing states.
 Not your average data modeling and visualization projects, but worth the effort.
 
 **[Pulling International trade flow into Azure, SQL Express, JSON, Supabase&nbsp;and&nbsp;DuckDB](/profile/trade/)**
-Exiobase data converted to SQL and JSON for trade flow maps, Sankey and Chord charts
+Exiobase data converted to SQL and JSON for trade flow maps, Sankey and Chord&nbsp;charts
 
 **[Pushing US EPA Data to Google Data Commons](/data-commons/docs/)**
 Push data from [US State Models (RStudio)](/io/about/) into Google Data Commons.  
