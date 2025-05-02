@@ -39,17 +39,17 @@ Heatmap needs to show vibrant colors when viewing states.
 
 ## MoonShots
 
-Not your average data modeling projects, but worth the effort.
+Not your average data modeling and visualization projects, but worth the effort.
 
-**[Pulling International trade flow into Supabase and DuckDB](/profile/trade/)**
-Exiobase data converted to SQL for maps, Sankey and Chord charts
+**[Pulling International trade flow into Azure, SQL Express, JSON, Supabase and DuckDB](/profile/trade/)**
+Exiobase data converted to SQL and JSON for trade flow maps, Sankey and Chord charts
 
-**[Push US EPA Data to Google Data Commons](/data-commons/docs/)**
+**[Pushing US EPA Data to Google Data Commons](/data-commons/docs/)**
 Push data from [US State Models (RStudio)](/io/about/) into Google Data Commons.  
 Add USEEIO data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
 
 **[See-Click-Fix API](/feed/view/#feed=311) within [FeedPlayer](/feed)**
-Integrating maps and ML with [Job impact data](/localsite/info/#indicators=VADD,JOBS) and [Profile panels](/profile/). 
+Integrating maps and Machine Learning with [Job&nbsp;impact&nbsp;data](/localsite/info/#indicators=VADD,JOBS) and manufacturing [Profile Tools](/profile/). 
 
 <!--
 **[Pay.gov web service API](https://www.milcorp.com/blog/cloud-feed/selecting-the-pay-gov-interface-thats-best-for-you/)** - Add an open source payment process to fund local improvements while [paying down federal debt](https://www.pay.gov/public/form/start/23779454). Send contributions to the investment pool of your choice to fund See Click Fix improvements and other projects through participating municipalities, states and countries.
