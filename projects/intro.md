@@ -39,7 +39,7 @@ Heatmap needs to show vibrant colors when viewing states.
 
 ## MoonShots
 
-Not your average data modeling and visualization projects, but worth the effort.
+Not your average data modeling projects, but worth the effort.
 
 **[Pulling International trade flow into Azure, SQL Express, JSON, Supabase&nbsp;and&nbsp;DuckDB](/profile/trade/)**
 Exiobase data converted to SQL and JSON for trade flow maps, Sankey and Chord&nbsp;charts
