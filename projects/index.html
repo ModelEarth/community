@@ -9,7 +9,7 @@
 <script type="text/javascript" src="../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/d3/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
 <link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
-<script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true"></script>
 <!--
 <link rel="stylesheet" id="ivan-fonts-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CRaleway%3A300%2C400%2C700&amp;subset=latin" type="text/css" media="all">
 -->
@@ -127,8 +127,8 @@ ol > li {
 <body>
 <div id="bodyFile"></div>
 
-<div id="hero_holder" style="position:relative;">
-    <img src="../img/hero/earth-artemus-2022.png" style="width:100%;max-width:2200px"  title="View from NASA's unmanned Orion spacecraft before traveling behind the Moon during Artemis I mission in 2022.">
+<div id="hero_holder" style="position:relative;max-width:100vw">
+    <img src="../img/hero/earth-artemus-2022.png" style="width:100%;max-width:100%"  title="View from NASA's unmanned Orion spacecraft before traveling behind the Moon during Artemis I mission in 2022.">
 
     <div id="mainbucket" style="display:none" class="displayOnload darkDivText">
 
@@ -144,17 +144,8 @@ ol > li {
 
           <a href="" onclick='return false;' class="showEarth btn btn-primary" style="margin-top:10px;">Return to Earth</a>
         </div>
-
-
     </div>
-
-
 </div>
-
-<div id="log_display" style="display:none"></div><!-- a work in progress -->
-
-
-<div class="flexmain" style="position:relative;">
 
 <div class="content contentpadding" style="overflow:auto;">
 
@@ -294,9 +285,6 @@ ol > li {
     <a href="../challenge/meetups/" class="btn btn-danger">Meetups</a>
     -->
 </div>
-
-
-</div><!-- /flexmain -->
 
 <!-- Might not be necessary to place at bottom, as lomng as showdown.min.js is NOT loaded in page Head above. -->
 <script>
