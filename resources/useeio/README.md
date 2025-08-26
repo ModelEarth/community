@@ -9,7 +9,7 @@ And our [Bioeconomy branch of USEEIOR](../../../io/projects) in the Industrial E
 
 ## Python
 
-Since the API is bring phased out. We're creating [javascript reports](/useeio.js/footprint/) instead.
+The API has phased out. You can generate files with python instead. Output is available at [model.earth/trade](https://model.earth/trade/).
 
 Initially you could query the [USEEIO API](https://github.com/usepa/useeio_api/wiki/Use-the-API) from within an [Anaconda Jupyter Notebook](https://www.anaconda.com/distribution/).
 Samples include exporting to a CSV file from the [US Environmentally-Extended Input-Output (USEEIO)](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=336332) API.
