@@ -20,7 +20,7 @@ Discord API pull, Python pipelines, ML Forecasting, API Feed Player React, LLMs 
 
 We ask that participants not list us on their resume or LinkedIn until they've been actively contributing updates for a few weeks. Your contributions to our team projects provide a basis for assessment if job interviewers contact us to confirm ongoing participation.
 
-**Select Projects:** Find projects you're interest in our [Project Hub](https://github.com/modelearth/projects/issues) and [Active Projects page](../../../projects). Associate your GitHub account to the issue(s) you're contributing to and send Loren an email with a link to the issue. Loren will update the issue's intro with your focus and progress. Add notes for others in our README files as you contribute code.
+**Select Projects:** Find projects that interest you within our [Project Hub](https://github.com/modelearth/projects/issues) and [Active Projects page](../../../projects). Associate your GitHub account to the issue(s) you're contributing to and send Loren an email with a link to the issue. Loren will update the issue's intro with your focus and progress. Add notes for others in our README files as you contribute code.
 
 **Active OPT Volunteers:** To remain active as an OPT volunteer, please contribute at least one Pull Request (PR) per week.  The time commitment is significant as the OPT program requires 20+ hours per week.  As you update code, also edit README files throughout our repos. Add status updates and deployment steps for others, correct existing notes and add new documentation.
 
