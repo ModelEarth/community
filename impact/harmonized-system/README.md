@@ -14,7 +14,7 @@ Here's a sample of [links that filter by HS Category](https://www.georgia.org/in
 #### International Input-Output Datasets   
 
 <!-- https://simapro.com/products/exiobase-database/-->
-1. [EXIOBASE database](https://www.exiobase.eu/) - Registration is free for downloading files.  
+1. [ModelEarth Industry Database](https://www.exiobase.eu/) - Registration is free for downloading files.  
 
 1. [OECD - Organization for Economic
 Co-Operation and Development](https://www.oecd.org/sti/ind/measuring-trade-in-value-added.htm) - France  
