@@ -810,6 +810,7 @@ function showSearchClickOld() {
     // Could be adjusted to reside left of search filters.
     //$(".quickMenu").hide();
 }
+aler("loaded")
 function hideLocationFilters() {
     $("#distanceField").hide();
     //$(".currentCities").hide(); // Avoid hiding when clicking addCity
