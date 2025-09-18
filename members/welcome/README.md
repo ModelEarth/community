@@ -20,6 +20,8 @@ Discord API pull, Python pipelines, ML Forecasting, API Feed Player React, LLMs 
 
 We ask that participants not list us on their resume or LinkedIn until they've been actively contributing updates for a few weeks. Your contributions to our team projects provide a basis for assessment if job interviewers contact us to confirm ongoing participation.
 
+**IMPORTANT:** We don't provide letters of experience or closure unless there are specific contributions made using Github Pull Requests. Email is the main way we plan and track progress.
+
 **Select Projects:** Find projects that interest you within our [Project Hub](https://github.com/modelearth/projects/issues) and [Active Projects page](../../../projects). Associate your GitHub account to the issue(s) you're contributing to and send Loren an email with a link to the issue. Loren will update the issue's intro with your focus and progress. Add notes for others in our README files as you contribute code.
 
 **Active OPT Volunteers:** To remain active as an OPT volunteer, please contribute at least one Pull Request (PR) per week.  The time commitment is significant as the OPT program requires 20+ hours per week.  As you update code, also edit README files throughout our repos. Add status updates and deployment steps for others, correct existing notes and add new documentation.
@@ -31,3 +33,5 @@ We use email threads to track involvement.  Some contributors also like to enter
 Send an email whenever you send a pull request. If you are uncertain about an edit, make your best guess and submit the PR anyway. Include any uncertainties in the email you send after submitting the PR.
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLScXSX0_myDcB4_Z32hpGC71PXVsMmgy_dyZPY0aPEWamyzV-w/viewform" class="btn btn-success">New Member Signup</a>
+
+PS: Everyone is welcome to participate as we build great things! If you're not an OPT grad, please still use the New Member Signup so you're in the Google Sheet we use to display our team interest areas.
