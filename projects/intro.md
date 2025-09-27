@@ -70,7 +70,7 @@ https://normansj.github.io/local-view-request/src/location/mylocation.html
 <!-- that integrates with https://www.greenjobsboard.us, [X](https://x.com) with [Facebook](https://facebook.com/) with [Wechat mini programs](https://sekkeidigitalgroup.com/wechat-mini-program/) and [Weibo.com](https://weibo.com)-->
 
 **[UN Goal Storyboards and Data Prep](/io/coders/)**
-[Requests Visualization](/requests/) with [UN Goal timelines](/data-commons/docs/data/).
+[Requests Visualization](/requests/) with [UN Goal timelines](/localsite/timeline/).
 
 **[Install LLM API pull from Google Data Commons](https://github.com/datacommonsorg/website)**
 Build Google Data Commons locally to reuse visualization LLM. Update our [GDC install notes](/localsite/info/data/datacommons/).

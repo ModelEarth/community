@@ -2,7 +2,7 @@
 
 # Chart Starters
 
-We're setting up [timeline charts for UN Goal progress tracking](/data-commons/docs/data/)
+We're setting up [timeline charts for UN Goal progress tracking](/localsite/timeline/)
 
 [The embeddable USEEIO widgets](../../../io/charts/) provide mosaic heatmap and bar charts.
 
