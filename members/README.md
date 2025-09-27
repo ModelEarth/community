@@ -3,7 +3,7 @@
 # Member List
 
 Our community of developers, followed by our alumni members.<br>
-We are not currently accepting new [OPT Volunteers](welcome).<br><br>
+We are not currently accepting new OPT Volunteers.
 
 <iframe width="100%" height="600px" style="margin-bottom:10px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRh5-bIR4hC1f9H3NtDCNT19hZXnqz8WRrBwTuLGnZiA5PWhFILUv2nS2FKE2TZ4dZ-RnJkZwHx1t2Y/pubhtml?gid=1054734503&single=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
