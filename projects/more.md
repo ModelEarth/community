@@ -7,18 +7,20 @@
 -->
 ## Google Data Commons API
 
-Choose a [Data Commons topic of interest](/data-commons/dist/) from the UN Goals.
+
 
 Register in [DemocracyLab](https://www.democracylab.org/projects/834) and join us in our [coding meetups](/io/coders/).
 
-Projects:
+Contribute to our  [Data Commons timeline charts](../../localsite/timeline/) using UN Goal targets.
 
-[Install the Data Commons website](../../localsite/info/data/datacommons/) on your local computer and integrate Google's LLM visualization prompt into [Earthscape](/earthscape/app).  
+Move our [Data Commons topic pages](https://model.earth/data-commons/docs/) into a JAM Stack single page app.
 
-Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using the [EPA IO Widgets](../../io/charts/).   
+Add an "[Environment > Impact](https://datacommons.org/place/country/USA?topic=Environment)" section to Google Data commons using [Inflow-Outflow chart data](../../io/charts/).   
 
+<!--
 Add highlighted colors similar to BEA  
 [View sample](https://apps.bea.gov/iTable/iTable.cfm?reqid=150&step=3&isuri=1&table_list=5013&categories=compbyind), click "Chart" and choose industries.
+-->
 
 
 ## .NET Core Projects
