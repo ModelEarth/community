@@ -42,20 +42,22 @@ Heatmap needs to show vibrant colors when viewing states.
 
 Not your average data modeling projects, but worth the effort.
 
-**[Pulling International trade flow into Azure, SQL Express, JSON, Supabase&nbsp;and&nbsp;DuckDB](/profile/trade/)**
-Exiobase data converted to SQL and JSON for trade flow maps, Sankey and Chord&nbsp;charts
-
-**[Syncing Multi-Region IO Data to Google Data Commons](/data-commons/docs/)**
-Push [Exiobase Tradeflow](../../exiobase/tradeflow/) and [US State Models (RStudio)](/io/about/) into Google Data Commons. Add US trade, impact and jobs data to Google's [Sustainability Section](https://www.datacommons.org/explore/sustainability)
+**[Pulling International trade flow into CSV files and Azure PostgreSQL](/profile/trade/)**
+Exiobase data converted for fast trade flow maps, Sankey and Chord&nbsp;charts
 
 **[See-Click-Fix API](/feed/view/#feed=311) within [FeedPlayer](/feed)**
-Integrating maps and Machine Learning with [Job&nbsp;impact&nbsp;data](/localsite/info/#indicators=VADD,JOBS) and manufacturing [Profile Tools](/profile/). 
+Integrating maps and ML with [job data](/localsite/info/#indicators=VADD,JOBS) and [community profiles](/profile/). 
+
+**[Syncing Multi-Region IO Data to Google Data Commons](/data-commons/docs/)**
+[Exiobase Tradeflow](../../exiobase/tradeflow/) and [US State Models](/io/about/) with [Google Data Commons](https://www.datacommons.org/explore/sustainability)
+
+
 
 <!--
 **[Pay.gov web service API](https://www.milcorp.com/blog/cloud-feed/selecting-the-pay-gov-interface-thats-best-for-you/)** - Add an open source payment process to fund local improvements while [paying down federal debt](https://www.pay.gov/public/form/start/23779454). Send contributions to the investment pool of your choice to fund See Click Fix improvements and other projects through participating municipalities, states and countries.
 -->
 
-**[Easy to Integrate Auth Frontend](https://model.earth/cloud/)** - Integrate embeddable [auth.js javascript](https://authjs.dev/) identity platform into [Our Cloud Repo](https://github.com/modelearth/cloud/) and [Partner Tools Admin](../../team/admin/).
+**[Easy to Integrate Auth Frontend](https://model.earth/cloud/)** with embeddable [auth.js javascript](https://authjs.dev/) identity platform in [Our Cloud Repo](https://github.com/modelearth/cloud/) and [Partner Tools Admin](../../team/admin/).
 
 <!--
 [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8)
@@ -73,7 +75,7 @@ https://normansj.github.io/local-view-request/src/location/mylocation.html
 [Requests Visualization](/requests/) with [UN Goal timelines](/localsite/timeline/).
 
 **[Install LLM API pull from Google Data Commons](https://github.com/datacommonsorg/website)**
-Build Google Data Commons locally to reuse visualization LLM. Update our [GDC install notes](/localsite/info/data/datacommons/).
+Update our [GDC install notes](/localsite/info/data/datacommons/) and create data visualization tools for LLMs. 
 
 <!--
 **[Integrate ObservableHQ's Interface for selecting charts](https://github.com/observablehq)**  
