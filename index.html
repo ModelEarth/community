@@ -121,6 +121,18 @@ $(document).on("change"
   float: left;
 }
 @media (max-width: 800px) {
+  #dsround {
+    display: none !important;
+  }
+  #dslogo {
+    width:190px;
+  }
+  #logotoprow {
+    margin-bottom: -35px !important;
+  }
+  #exiobaselogo {
+    margin-bottom: 30px !important;
+  }
   #logoRow {
     margin-left: 30px;
   }
@@ -269,14 +281,27 @@ tbody tr td:nth-child(2) {
 <!-- Reduce georgia_usa_gray.png logo below. -->
 
 <div id="logoRowHolder"><hr>
-<div class="content contentpadding" styleX="padding-top:40px; padding-bottom:0px; max-width:1230px" id="logoRow">
+<div class="content contentpadding" styleX="padding-top:40px; padding-bottom:0px; max-width:1500px" id="logoRow">
 
 <div style="margin-bottom:0px">
-  <a href="https://www.democracylab.org/projects/834" target="_blank"><img id="dllogo" src="../community/img/logo/orgs/democracy-lab.png"></a>
-  <a href="https://model.georgia.org" target="_blank" style="margin-top:-4px;margin-right:64px !important;"><img id="galogo" src="img/logo/georgia_usa_gray.png" style="width:140px;"></a>
-  <a href="https://datacommons.org" target="_blank" style="margin-top:11px;margin-right:51px !important;"><img src="../community/img/logo/orgs/GoogleDataCommons.png" style="width:190px;"></a>
-  <a href="https://exiobase.eu" target="_blank" style="margin-top:8px;margin-right:51px !important;"><img src="../community/img/logo/orgs/exiobase.png" style="width:190px;"></a>
+  <a href="https://dreamstudio.com" style="margin-top:13px;" id="dsround"><img src="../localsite/img/logo/dreamstudio/favicon.png" style="width:130px"></a>
+
+  <div style="float:left">
+    <div style="margin-top:20px;margin-bottom:20px" id="logotoprow">
+      <a href="https://dreamstudio.com" id="dslogo" style="margin-top:12px;"><img src="../localsite/img/logo/dreamstudio/text.png" style="width:170px"></a>
+      <a href="https://model.georgia.org" style="margin-top:-4px;margin-right:64px !important;"><img id="galogo" src="../localsite/img/logo/states/GA.png" style="width:155px;"></a>
+      <a href="https://www.democracylab.org/projects/834" target="_blank" style="margin-top:13px;"><img id="dllogo" src="../community/img/logo/orgs/democracy-lab.png" style="width:175px"></a>
+      <br>
+    </div>
+
+    <div>
+      <a href="https://exiobase.eu" target="_blank" style="margin-top:8px;margin-right:51px !important;" id="exiobaselogo"><img src="../community/img/logo/orgs/exiobase.png" style="width:190px;"></a>
+      <a href="https://datacommons.org" target="_blank" style="margin-top:11px;margin-right:51px !important;"><img src="../community/img/logo/orgs/GoogleDataCommons.png" style="width:190px;"></a>
+    </div>
+  </div>
+
   <div style="clear:both;"></div>
+
 </div>
 </div>
 
