@@ -2,7 +2,7 @@
 
 ## Closed-Loop Nuclear Site Design: <span style='color:#999'>Deep-Containment Architecture (DCA)</span>
 
-Underground Small Modular Reactors (SMRs) represent a transformative approach to clean, distributed, and secure nuclear power. By locating reactors below the surface, nations can achieve **enhanced safety, long-term waste containment**, and **minimal surface disruption**, while leveraging **modular scalability** for off-grid or high-altitude applications such as water generation in the Himalayas without surface waste. - [PDF](underground-smr.pdf)
+Underground Small Modular Reactors (SMRs) represent a transformative approach to clean, distributed, and secure nuclear power. By locating reactors below the surface, nations can achieve **enhanced safety, long-term waste containment**, and **minimal surface disruption**, while leveraging **modular scalability** for off-grid and high-altitude applications without surface waste or water contamination. - [PDF](underground-smr.pdf)
 
 This overview explores **zero-surface-waste designs** with **deployment in stable highland deserts** away from seismic and groundwater risks.  It also integrates **Metal-Organic Framework (MOF) water harvesting**, **salt brine construction reuse**, and **EarthGrid plasma boring** technologies to create a closed-loop system for power, water, and infrastructure.
 
@@ -13,7 +13,7 @@ Underground SMRs represent a new frontier in **clean, distributed nuclear power*
 - **Resilience:** Immune to extreme weather and external threats.  
 - **Synergy:** Ideal power source for water generation and desalination systems.
 
-Underground SMRs are particularly well suited for powering **ice-from-air** or **atmospheric water harvesting** installations in remote, high-altitude regions such as the Himalayas and Sierra Nevada in Central California.
+Underground SMRs are particularly well suited for powering **ice-from-air** using **atmospheric water harvesting** installations in remote, high-altitude regions such as the Himalayas and Sierra Nevada in Central California.
 
 
 ## Low-Waste SMR Technologies
