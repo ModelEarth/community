@@ -90,7 +90,11 @@ Underground SMRs are particularly well suited for powering **ice-from-air** usin
 ## Conclusion & Next Steps
 
 Deploying **low-waste underground SMRs** in **stable highland deserts** offers the best path toward sustainable, resilient nuclear infrastructure.  
-Combining **sealed-core reactors**, **dry geological environments**, and **resource reuse systems** (MOFs + brine + plasma boring) forms a closed-loop ecosystem for **power, water, and construction**.
+Combining **sealed-core reactors**, **dry geological environments**, and **resource reuse systems** (MOFs + brine + plasma boring) potentially forms a closed-loop ecosystem for **power, water, and construction**.
+
+EarthGrid Boring...
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KATf6GB6qpU?si=J3l_9EOGByRiLw5O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
 
 ## References
 
