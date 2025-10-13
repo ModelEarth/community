@@ -6,9 +6,6 @@ Underground Small Modular Reactors (SMRs) represent a transformative approach to
 
 This overview explores **zero-surface-waste designs** with **deployment in stable highland deserts** away from seismic and groundwater risks.  It also integrates **Metal-Organic Framework (MOF) water harvesting**, **salt brine construction reuse**, and **EarthGrid plasma boring** technologies to create a closed-loop system for power, water, and infrastructure.
 
-
-## Overview & Rationale
-
 Underground SMRs represent a new frontier in **clean, distributed nuclear power**:
 - **Safety:** Geological containment and passive cooling drastically reduce meltdown risks.  
 - **Waste isolation:** Reactors and fuel remain sealed in geological repositories at end-of-life.  
@@ -16,7 +13,7 @@ Underground SMRs represent a new frontier in **clean, distributed nuclear power*
 - **Resilience:** Immune to extreme weather and external threats.  
 - **Synergy:** Ideal power source for water generation and desalination systems.
 
-Underground SMRs are particularly suited for powering **ice-from-air** or **atmospheric water harvesting** installations in remote, high-altitude regions such as the Himalayas and Sierra Nevada of Central California.
+Underground SMRs are particularly well suited for powering **ice-from-air** or **atmospheric water harvesting** installations in remote, high-altitude regions such as the Himalayas and Sierra Nevada in Central California.
 
 
 ## Low-Waste SMR Technologies
@@ -28,7 +25,9 @@ Underground SMRs are particularly suited for powering **ice-from-air** or **atmo
 | **Natrium (TerraPower)** | 345 MWe | Fast spectrum, sodium-cooled | ~60% less | Reuses actinide waste, includes molten salt heat storage |
 | **Molten Salt Reactor** | 150–300 MWe | Thorium/uranium salts | 50–70% less | Shorter half-lives (~300 years), no high-pressure coolant |
 
-📖 **References:**  
+<br>
+
+**SMR References:**  
 - [Deep Fission](https://deepfission.com/technology/)  
 - [Holtec International – SMR-300](https://holtecinternational.com/products-and-services/smr/)  
 - [TerraPower Natrium Reactor](https://www.terrapower.com/technologies/natrium-reactor/)  
@@ -39,7 +38,7 @@ Underground SMRs are particularly suited for powering **ice-from-air** or **atmo
 
 # Highland Deployment for Aquifer Replenishment
 
-## Siting & Environmental Risk Mitigation
+## Environmental Risk Mitigation
 
 ### **Seismic & Hydrological Safety**
 - Avoid **central Himalayan** or other tectonically active belts (Mw 6–8).  
@@ -47,7 +46,7 @@ Underground SMRs are particularly suited for powering **ice-from-air** or **atmo
 - Isolate from aquifers using **multi-layer containment** and **hydraulic grouting**.  
 - Continuous **isotopic groundwater monitoring** for early detection.
 
-### **Recommended Siting Regions**
+### **Recommended Regions**
 | Region | Country | Benefits |
 |---------|----------|-----------|
 | **Ladakh Cold Desert** | India | Arid, stable crystalline rock, minimal groundwater |
@@ -105,6 +104,6 @@ Combining **sealed-core reactors**, **dry geological environments**, and **resou
 11. New Atlas – Plasma Boring Robot: https://newatlas.com/energy/earthgrid-tunnel-boring-robot/  
 12. World Nuclear News – Deep Fission Sites: https://www.world-nuclear-news.org/articles/deep-fission-identifies-three-sites-identified-for-underground-smrs  
 13. IAEA – SMR Overview: http://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs  
-14. [Pandora's Promise](pandora)
+14. [Pandora's Promise](pandora) - Nuclear vs Renewables
 
 
