@@ -53,8 +53,11 @@ Underground SMRs are particularly well suited for powering **ice-from-air** usin
 | **Western Tibetan Plateau** | China | Low seismicity, synergy with solar generation |
 | **Iranian Plateau** | Iran | Stable crust, potential hybrid energy corridor |
 | **Atacama Highlands** | Chile | Driest region on Earth, extremely stable geology |
+| **Sierra Nevada** | US | Eastern side of range, Central California |
 
-📖 **References:**  
+<br>
+
+**Region References:**  
 - [Earth.org – Nuclear Waste Disposal](https://earth.org/nuclear-waste-disposal/)  
 - [World Nuclear News – Deep Fission Sites](https://www.world-nuclear-news.org/articles/deep-fission-identifies-three-sites-identified-for-underground-smrs)
 
