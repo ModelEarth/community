@@ -96,6 +96,8 @@ EarthGrid Boring...
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KATf6GB6qpU?si=J3l_9EOGByRiLw5O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
+Prepared by Amoghvarsh Kulkarni and Loren Heyns
+
 ## References
 
 1. Holtec International – SMR-300: https://holtecinternational.com/products-and-services/smr/  
