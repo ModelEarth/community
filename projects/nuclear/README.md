@@ -96,6 +96,58 @@ EarthGrid Boring...
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KATf6GB6qpU?si=J3l_9EOGByRiLw5O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
+# Locations for Underground SMRs
+
+## Key Requirements for Underground SMR Sites
+
+- **Low Seismic Activity:** Far from active fault zones and earthquake epicenters; stable bedrock.
+- **Minimal Groundwater Flow:** Deep water table, arid conditions, or crystalline rock limit groundwater and contamination risk.
+- **Dry Climate:** Reduces corrosion, groundwater ingress, and complexity.
+- **Strong, Stable Geology:** Continuous bedrock (granite, gneiss, tuff), low landslide or collapse risk.
+- **Nearby Fuel Resources (Preferred):** Uranium or thorium deposits within reasonable distance.
+- **Accessible Infrastructure:** Sufficient for construction, operation, and long-term monitoring.
+
+## Top U.S. and International Candidate Locations
+
+### 1. Yucca Mountain Area, Nevada, USA
+
+- **Seismic:** Moderate to low. Away from major faults, historic earthquakes rare.
+- **Groundwater:** Sits ~300 meters above the deep water table in dense volcanic tuff. Very slow recharge—limits hydrology risk.
+- **Climate:** True desert; less than 10 inches of rain a year.
+- **Geology:** Volcanic bedrock, highly studied for nuclear safety.
+- **Fuel Nearby:** Uranium and thorium deposits in Nevada (Majuba Hill, Green Monster) and nearby California (Mountain Pass).
+- **Infrastructure:** Historic repository site—access roads, surveys, and waste-handling readiness already exist.
+
+### 2. North Georgia Mountains (Blue Ridge, Piedmont), USA
+
+- **Seismic:** Generally low risk; region is stable and away from major North American faults.
+- **Groundwater:** Crystalline basement rocks with low permeability. Less water movement or aquifer recharge.
+- **Climate:** Cooler elevation zones; drier “ridge” microclimates.
+- **Geology:** Granite/gneiss core; excellent for shaft/tunnel stability.
+- **Fuel Nearby:** Some thorium detected; minor uranium in region. (See southern Appalachians maps for detail.)
+- **Infrastructure:** Accessible by road; permitted construction possible.
+
+### 3. Central/Western Ukrainian Plateaus (Kirovohrad Region, Ukraine)
+
+- **Seismic:** Very low to moderate; far from Ukraine’s seismic zones.
+- **Groundwater:** Deep, slow-moving aquifers; dry steppe conditions.
+- **Climate:** Low annual rainfall, semi-arid.
+- **Geology:** Stable sedimentary and granitic bedrock—favorable for underground construction.
+- **Fuel Nearby:** Major uranium reserves (Kirovohrad has Europe’s largest), with mapped rare earths and thorium.
+- **Infrastructure:** Strong nuclear history, established mining and engineering workforce.
+
+## Maps for Site and Fuel Visualization
+
+- Nevada/California: USGS uranium-thorium overlays.
+- Georgia Mountains: USGS/Georgia EPD thorium/uranium maps.
+- Ukraine: Kirovohrad/Ukraine national georesources maps.
+
+---
+
+## Summary
+
+The best locations for underground SMRs combine stable, dry bedrock, deeply buried or minimal groundwater, and low earthquake risk. Yucca Mountain (NV), the North Georgia mountains, and Ukraine’s Kirovohrad plateau all fit these criteria—and each has uranium/thorium sources within practical distance. These sites promise long-term safety and easier regulatory approval for advanced nuclear projects.
+
 Prepared by Amoghvarsh Kulkarni and Loren Heyns
 
 ## References
