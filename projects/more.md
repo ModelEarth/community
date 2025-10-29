@@ -39,11 +39,9 @@ https://github.com/Microsoft/azuredatastudio
 
 ## CensusReporter Python Project
 
-Pull over demographics reporting interface from [CensusReporter](../resources/censusreporter).  View [Example](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/).
-Point at static files hosted in GitHub.  Retain ability to pull from PostGreSQL.  
+Combining impact data with demographics reporting interface from [CensusReporter](../resources/censusreporter).  View [Example](https://censusreporter.org/profiles/16000US1304000-atlanta-ga/).
+Creating merged pages in [US](https://github.com/modelearth/US/) repo with short paths like US/GA/Atlanta    
 Add ability to pull additional community data from [Google Data Commons](https://datacommons.org).  
-Start with a Python 3 CensusReporter fork used in Africa and other countries.  
-
 
 
 ## Community Walkability Scores

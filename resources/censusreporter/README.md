@@ -4,9 +4,11 @@
 
 [CensusReport Django Repo](https://github.com/censusreporter/censusreporter)
 
-TO DO: Determine if CensusReport repo above has been upgraded to Python 3
+DONE: Updates for running CensusReporter [locally with Python 3](https://github.com/censusreporter/censusreporter/pull/326) - Fixes by Soham D.
 
-TO DO: Create example of hosting frontend charts using the API rather than hosting Django or Postgres directly. Optionally pull from Google Data Commons and generate international pages.
+TO DO: Create example of hosting frontend charts using the API rather than hosting Django or Postgres directly.
+
+TO DO: Integrated [county timeline](../../../localsite/timeline/) pulled from Google Data Commons API with location data.
 
 <!--
 Deleted [Our Python 3 Fork](https://github.com/modelearth/map) - Forked from wazimap (which was archived Aug 2023).
