@@ -68,10 +68,9 @@ Implement a Chlorpleth Map with a clickable legend like in [EWG](https://www.ewg
 
 [On Industry Page (at bottom)](../../../localsite/info/#state=NY) - [Stand-Alone Widget for testing](../../../io/charts/bubble/) 
 
-
 DONE - When toggling the red highlight, show the red again after toggling back. This worked initially.
 
-TO DO - Update to display 72 sectors. Retain option to show 389 NAICS industries from initial USEEIO model version.
+DONE - Update to display 72 sectors for new 50 state output. - Saalim
 <!--
 - Optional: Modify so popups still appear when the containing div is set to position:relative. 
 - Optional: Scale to size of containing div during browser resize. 
@@ -133,4 +132,4 @@ National Renewable Energy Laboratory (NREL) - alternative fuel stations
 
 ### Data Pipeline
 
-[Our Community Datasets page](../../../community-data/) lists datasources we've preprocessed using python in our [data-pipeline](../../../data-pipeline/) repo.
+[Our Community Datasets page](../../../community-data/) lists datasources we've preprocessed using python in our [model.earth data-pipeline](https://model.earth/data-pipeline/) repo.
