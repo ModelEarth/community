@@ -16,11 +16,11 @@ We ask that participants not list us on their resume or LinkedIn until they've b
 Find projects that fit your goals on our [Active Projects page](../../../projects) and [Github List](https://github.com/modelearth/projects/issues). 
 
 
-1. [Register in Democracy Lab](https://www.democracylab.org/projects/834) as your first step.
+1. [Register in Democracy Lab](https://www.democracylab.org/projects/834) as your first step. Loren will email you a link to our Discord channel where you can share updates and help others.
 
 2. Send Loren an email with a link to the [Model.Earth projects on GitHub](https://github.com/modelearth/projects/issues) you're interested in. Loren will add you to the issue's description. 
 
-3. Please immediately post your deployment date objectives on the issue page, and return to edit your existing post with frequent progress update. Also share updates in our Discord. Add add helpful notes and documenation in README files in the code you contribute to.
+3. Please immediately post your deployment date objectives on the issue page, and return to edit your existing post with frequent progress updates. Also share updates in our Discord. Add add helpful notes and documenation in README files in the code you contribute to.
 
 4. Once you've contributed your first awesome addition, remind Loren to send you our official Welcome letter.
 
