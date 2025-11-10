@@ -1,4 +1,4 @@
-<a style="float:right" href="https://docs.google.com/forms/d/e/1FAIpQLScXSX0_myDcB4_Z32hpGC71PXVsMmgy_dyZPY0aPEWamyzV-w/viewform" class="btn btn-success">New Member Signup</a>
+<a style="float:right" href="welcome" class="btn btn-success">OPT Volunteer Opportunities</a>
 
 # Active Contributors
 
