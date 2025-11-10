@@ -1,4 +1,7 @@
-<a style="float:right" href="welcome" class="btn btn-success">OPT Volunteer Opportunities</a>
+<div style="float:right">
+<a href="https://www.democracylab.org/projects/834" class="btn btn-primary" style="margin-right:1px">DemocracyLab</a>
+<a href="welcome" class="btn btn-success">OPT Volunteer Opportunities</a>
+</div>
 
 # Active Contributors
 
