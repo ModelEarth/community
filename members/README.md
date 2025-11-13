@@ -23,8 +23,11 @@ The awesome alumni who've made our progress possible.
 <br>
 <div style="margin-bottom:20px"></div>
 
-# Incubating
+<!--
+# Incubating (Currently shows New)
 
 Not everyone is an active contributor yet. Some are attending meetings while gaining insights. Our current work can be challenging since it moves beyond python ML colabs into cloud hosted javascript interface, API and SQL.
 
 <iframe width="100%" height="200px" style="height:300px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRh5-bIR4hC1f9H3NtDCNT19hZXnqz8WRrBwTuLGnZiA5PWhFILUv2nS2FKE2TZ4dZ-RnJkZwHx1t2Y/pubhtml?gid=1471219393&single=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-->
