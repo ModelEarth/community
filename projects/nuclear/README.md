@@ -2,7 +2,7 @@
 
 ## Closed-Loop Nuclear Site Design: <span style='color:#999'>Deep-Containment Architecture (DCA)</span>
 
-Underground Small Modular Reactors (SMRs) represent a transformative approach to clean, distributed, and secure nuclear power. By locating reactors below the surface, nations can achieve **enhanced safety, long-term waste containment**, and **minimal surface disruption**, while leveraging **modular scalability** for off-grid and high-altitude applications without surface waste or water contamination.  
+Underground Small Modular Reactors (SMRs) represent a transformative approach to clean, distributed, and secure nuclear power. By locating reactors below the surface, nations can achieve **enhanced safety, long-term waste containment**, and **minimal surface disruption**, while leveraging **modular scalability** for off-grid and high-altitude [water-capture](../../../grid/water-capture/) applications without surface waste or water contamination.  
 View Map of [43 Prospective Deep-Containment sites](/team/projects/map/#map=dca) and [Request AI Insights on sites](/team/projects/#list=dca).<!-- [PDF](underground-smr.pdf)-->
 
 This overview explores **zero-surface-waste designs** with **deployment in stable highland deserts** away from seismic and groundwater risks.  It also integrates **Metal-Organic Framework (MOF) water harvesting**, **salt brine construction reuse**, and **EarthGrid plasma boring** technologies to create a closed-loop system for power, water, and infrastructure.
@@ -144,6 +144,11 @@ Combining **sealed-core reactors**, **dry geological environments**, and **resou
 - Georgia Mountains: USGS/Georgia EPD thorium/uranium maps
 - Ukraine: [Kirovohrad/Ukraine national georesources maps](https://www.visualcapitalist.com/mapped-ukraines-mineral-resources/)
 
+## Regions to Investigate Further
+
+  - Mexico: Insufficient publicly available data on specific deposits with coordinates.
+  - New Zealand: No economically viable uranium deposits found; very small occurrences only.
+  - Southeast Asia: Limited data on Myanmar deposits; no precise coordinates available.
 
 ## Strategic Insights
 
