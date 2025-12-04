@@ -2,6 +2,10 @@
 
 ## Closed-Loop Nuclear Site Design: <span style='color:#999'>Deep-Containment Architecture (DCA)</span>
 
+<span class="floatright">
+During monsoon season, the radiation storage ponds regularly overflowed into streams and groundwater that feeds into the Subarnarekha [River of Death](https://publicintegrity.org/national-security/indias-nuclear-industry-pours-its-wastes-into-a-river-of-death-and-disease/)
+</span>
+
 Underground Small Modular Reactors (SMRs) represent a transformative approach to clean, distributed, and secure nuclear power. By locating reactors below the surface, nations can achieve **enhanced safety, long-term waste containment**, and **minimal surface disruption**, while leveraging **modular scalability** for off-grid and high-altitude [water-capture](../../../grid/water-capture/) applications without surface waste or water contamination.  
 View Map of [43 Prospective Deep-Containment sites](/team/projects/map/#map=dca) and [Generate AI Insights on sites](/team/projects/#list=dca).<!-- [PDF](underground-smr.pdf)-->
 
@@ -15,6 +19,8 @@ Underground SMRs represent a new frontier in **clean, distributed nuclear power*
 - **Synergy:** Ideal power source for water generation and desalination systems.
 
 Underground SMRs are particularly well suited for powering **ice-from-air** using **atmospheric water harvesting** installations in remote, high-altitude regions such as the Himalayas and Sierra Nevada in Central California.
+
+[Earthgrid plasma boring](https://earthgrid.io) fractures rock into small pieces using spallation (thermal shock) rather than fully gasifying. This clears tunnels without the need to remove material, and a lining can be applied. [Details](https://grok.com/share/bGVnYWN5LWNvcHk_24d1117b-9032-474f-a14f-f83b2f801c97)
 
 
 ## Low-Waste SMR Technologies
