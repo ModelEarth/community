@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
+<link type="text/css" href="../../../localsite/css/base.css" rel="stylesheet" />
+    <style>
+        table 
+        {
+            width: 100%;
+            font-size: 14px;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-left: 0px;
+            border-right: 0px;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: left;
+            vertical-align: top;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        Vertical version reside at <a href="../../../io/template/feed/">io/template/feed</a>
+    </div>
+    <div id="showData"></div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        // 401 error on localhost, was a CORS error before Phil added model.earth
+
+        $.ajaxSetup({
+          headers : {
+            'Authorization' : 'Bearer 204ad15687571d9c62bdfa780526b1514c090f68'
+          }
+        });
+
+        $.getJSON("https://buildingtransparency.org/api/materials?page_number=1&page_size=25&soft_search_terms=true&category=b03dba1dca5b49acb1a5aa4daab546b4&jurisdiction=US-FL&epd__date_validity_ends__gt=2021-08-24", function (data) {
+            var arrItems = [];      // THE ARRAY TO STORE JSON ITEMS.
+            $.each(data, function (index, value) {
+                arrItems.push(value);       // PUSH THE VALUES INSIDE THE ARRAY.
+            });
+
+            // EXTRACT VALUE FOR TABLE HEADER.
+            var col = [];
+            for (var i = 0; i < arrItems.length; i++) {
+                for (var key in arrItems[i]) {
+                    if (col.indexOf(key) === -1) {
+                        col.push(key);
+                    }
+                }
+            }
+
+            // CREATE DYNAMIC TABLE.
+            var table = document.createElement("table");
+
+            // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+            var tr = table.insertRow(-1);                   // TABLE ROW.
+
+            for (var i = 0; i < col.length; i++) {
+                var th = document.createElement("th");      // TABLE HEADER.
+                th.innerHTML = col[i];
+                tr.appendChild(th);
+            }
+
+            // ADD JSON DATA TO THE TABLE AS ROWS.
+            for (var i = 0; i < arrItems.length; i++) {
+
+                tr = table.insertRow(-1);
+
+                for (var j = 0; j < col.length; j++) {
+                    var tabCell = tr.insertCell(-1);
+                    let addHtml = "";
+                    if (isObject(arrItems[i][col[j]]) || isArray(arrItems[i][col[j]])) {
+                        
+                        for (d in arrItems[i][col[j]] ) {
+                          if (isArray(arrItems[i][col[j]])) {
+                            // Avoid appending key for array. It's 0, 1, 2, etc
+                                addHtml += "<div>" + arrItems[i][col[j]][d] + "</div>";
+                          } else if (isObject(arrItems[i][col[j]][d])) {
+                              //addHtml += "<b>Add something else here</b>\n";
+                              for (e in arrItems[i][col[j]][d]){
+                                addHtml += "<div>" + e + ": " + arrItems[i][col[j]][d][e] + "</div>";
+                              }
+                           } else {
+                              addHtml += "<div>" + d + ": " + arrItems[i][col[j]][d] + "</div>";
+                           }
+
+                        }
+                        tabCell.innerHTML = addHtml;
+
+                    } else if (isArray(arrItems[i][col[j]])) {
+
+                        for (c in value) {
+                        }
+
+                    } else {
+                        tabCell.innerHTML = arrItems[i][col[j]];
+                    }
+                    
+                }
+            }
+
+            // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+            var divContainer = document.getElementById("showData");
+            divContainer.innerHTML = "";
+            divContainer.appendChild(table);
+        });
+    });
+</script>
+</html>

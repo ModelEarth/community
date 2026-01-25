@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Leaflet Routing Machine</title>
+
+<script src="https://www.liedman.net/leaflet-routing-machine/public/lib/highlight.pack.js"></script>
+
+<!-- CSS -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.css">
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.css">
+<![endif]-->
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/normalize.css">
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/skeleton.css">
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/lib/prism.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/site.css" />
+<script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+<script src="https://unpkg.com/leaflet.icon.glyph@0.2.0/Leaflet.Icon.Glyph.js"></script>
+<script src="https://www.liedman.net/leaflet-routing-machine/lib/Control.Geocoder.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+</head>
+<body>
+    <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/perliedman/leaflet-routing-machine">Fork me on GitHub</a>
+        </div>
+    </div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <header class="hero-header">
+          <h1 class="hero-heading"><a href="https://www.liedman.net/leaflet-routing-machine/">Leaflet Routing Machine</a></h1>
+          <div><img src="https://www.liedman.net/leaflet-routing-machine/public/logo.svg"/></div>
+          <p>Easy, flexible routing for Leaflet</p>
+          <a class="button button-primary" href="https://www.liedman.net/leaflet-routing-machine/#about">About</a>
+          <a class="button button-primary" href="https://www.liedman.net/leaflet-routing-machine/#getting-started">Getting Started</a>
+          <a class="button button-primary" href="https://www.liedman.net/leaflet-routing-machine/tutorials">Tutorials</a>
+          <a class="button button-primary" href="https://www.liedman.net/leaflet-routing-machine/api">API</a>
+          <a class="button button-primary" href="https://github.com/perliedman/leaflet-routing-machine/releases">Download</a>
+        </header>
+      </div>
+    </div>
+    <hr>
+
+        <div class="row">
+      <div class="twelve columns">
+        <a name="example"></a>
+        <div id="map" class="map"></div>
+      </div>
+      <div class="one-half column">
+      </div>
+    </div>
+    <hr>
+    <h2><a name="about"></a>About</h2>
+    <p>
+      <em>Leaflet Routing Machine</em> is an easy, flexible and extensible way to add routing
+      to a <a href="http://leafletjs.com/">Leaflet</a> map. Using the default is just a few lines of
+      code to add fully functional routing, but you can still customize almost every aspect of the
+      user interface and interactions.
+    </p>
+    <h3>Features</h3>
+    <ul>
+      <li>Standard Leaflet control, with Leaflet look and feel</li>
+      <li>Routing from start to destination, with possibility of via points</li>
+      <li>Add, edit and remove waypoints through both address input and using the map</li>
+      <li>Multiple language support</li>
+      <li>
+        Support for several routing engines:
+        <ul>
+          <li><a href="http://project-osrm.org/">OSRM</a> - builtin default</li>
+          <li><a href="https://www.mapbox.com/developers/api/directions/">Mapbox Directions API</a> - builtin in the class <code>L.Routing.Mapbox</code>; see the <a href="https://www.liedman.net/leaflet-routing-machine/tutorials/alternative-routers/">alternative routers tutorial</a></li>
+          <li><a href="https://graphhopper.com/">GraphHopper</a> - through plugin <a href="https://github.com/perliedman/lrm-graphhopper">lrm-graphhopper</a></li>
+          <li><a href="https://mapzen.com/projects/valhalla/">Mapzen Valhalla</a> - through plugin <a href="https://github.com/valhalla/lrm-valhalla">lrm-valhalla</a></li>
+          <li><a href="http://developer.tomtom.com/io-docs">TomTom Online Routing API</a> - through plugin <a href="https://github.com/mrohnstock/lrm-tomtom">lrm-tomtom</a> by <a href="https://github.com/mrohnstock">Mathias Rohnstock</a></li>
+          <li><a href="https://github.com/jgravois/lrm-esri">Esri</a> - through plugin <a href="https://github.com/jgravois/lrm-esri">lrm-esri</a></li>
+          </ul>
+      </li>
+      <li>Highly customizable for advanced use</li>
+      <li>Customizable look (theming / skins)</li>
+      <li>Open Source released under <a href="http://en.wikipedia.org/wiki/ISC_license">ISC License</a> (more or less equivalent with the MIT license)</li>
+      <li><a href="https://www.npmjs.com/package/@types/leaflet-routing-machine">TypeScript definitions</a> provided by 
+          Chanaka Rathnayaka</li>
+    </ul>
+    <h2><a name="getting-started"></a>Getting started</h2>
+    <p>
+      <small>
+        <em>Note:</em> Leaflet Routing Machine v3.1.2 and later are compatible with Leaflet 1.0.0 (and release candidates), as well as Leaflet 0.7.
+      </small>
+    </p>
+    <p>
+      Getting started with Leaflet Routing Machine is easy. Include 
+      <code>leaflet-routing-machine.css</code> and <code>leaflet-routing-machine.js</code> in a Leaflet page:
+    </p>
+    <pre><code class="language-markup">[...]
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.2.0/dist/leaflet.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css&quot; /&gt;
+&lt;script src=&quot;https://unpkg.com/leaflet@1.2.0/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js&quot;&gt;&lt;/script&gt;
+[...]</code></pre>
+    <p>
+      (For production use, you might want to <a href="https://github.com/perliedman/leaflet-routing-machine/releases">Download</a> the files
+      instead of using <code>unpkg.com</code>
+    </p>
+    <p>If you prefer, you can also install using NPM:<p>
+    <pre><code class="bash">npm install --save leaflet-routing-machine</code></pre>
+    <p>
+      To add the basic routing control to your <code>map</code> instance, use this Javascript code:
+    </p>
+    <pre><code class="language-javascript">L.Routing.control({
+  waypoints: [
+    L.latLng(57.74, 11.94),
+    L.latLng(57.6792, 11.949)
+  ]
+}).addTo(map);</code></pre>
+    <p>
+      Note that in the most basic version, the control will not be able to do address lookups (geocoding), so you
+      will have to provide the latitude and longitude of the waypoints. See the
+      <a href="https://www.liedman.net/leaflet-routing-machine/tutorials">tutorials page</a> for information about adding address lookup and much
+      more. You might also want to dive into the <a href="https://www.liedman.net/leaflet-routing-machine/api/">API docs</a> for details.
+    </p>
+
+    <h2>Help, problems and contributing</h2>
+    <p>
+      The plugin is free and open source.
+      <a href="https://github.com/perliedman/leaflet-routing-machine">Leaflet Routing Machine is hosted on GitHub</a>,
+      where you can <a href="https://github.com/perliedman/leaflet-routing-machine/issues">report issues or bugs</a>.
+    </p>
+    <p>
+      Feedback and help is always welcome in any form: documentation, tutorials or code. Feel free to add a pull request.
+      You can also try our community chat, the <a href="https://gitter.im/leaflet-routing-machine/Lobby">Leaflet Routing Machine gitter</a>.
+      If you have a more substantial request, or need consulting around Leaflet Routing Machine, contact me at <a href="mailto:per@liedman.net">per@liedman.net</a>.
+    </p>
+
+<script>
+  window.LRM = {
+    // IMPORTANT: SET YOUR OWN MAPBOX KEY, THIS ONE IS FROM liedman.net main sample
+    apiToken: 'pk.eyJ1IjoiZGF0YXBvcnRhbCIsImEiOiJjam1tOXhpeGUwZ3IyM3BtbGIwbWV1NjIxIn0.K07Nah9ZjewCR0iV4pYw_Q'
+  };
+</script>
+<script src="index.js"></script>
+
+
+    <hr>
+    Copyright &copy; 2015 Per Liedman, released under <a href="https://raw.githubusercontent.com/perliedman/leaflet-routing-machine/master/LICENSE">ISC License</a>. Logo by <a href="http://thenounproject.com/alexeyivanov">Alexey Ivanov</a>, released under Creative Commons CC-BY 3.0.
+  </div>
+
+  <div id="osrm-error">
+    <a href="#" id="osrm-error-close">&times;</a>
+    <h4><strong>Sorry!</strong> The OSRM demo server appears down, or a network error occured.</h4>
+    <p>This prevents Leaflet Routing Machine from displaying a route. The demo server will hopefully be
+    back up soon. Please <em>do not</em> report this as an issue, Leaflet Routing Machine has no control
+    over the demo server.</p>
+    <p>In production, set up your own OSRM instance, or pay a service provider.</p>
+  </div>
+</div>
+
+    <script src="https://www.liedman.net/leaflet-routing-machine/lib/prism.js"></script>
+    <script type="text/javascript">
+      function handleError(e) {
+        if (e.error.status === -1) {
+          // HTTP error, show our error banner
+          document.querySelector('#osrm-error').style.display = 'block';
+          L.DomEvent.on(document.querySelector('#osrm-error-close'), 'click', function(e) {
+            document.querySelector('#osrm-error').style.display = 'none';
+            L.DomEvent.preventDefault(e);
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

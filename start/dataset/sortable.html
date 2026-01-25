@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Goods & Services - Impact</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script src="../../js/d3/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+
+<!-- load the function file you need before you call it... -->
+<script type="text/javascript" src="../../js/common/stupidtable.js"></script>
+
+<link rel="stylesheet" href="../../css/community.css" />
+<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+
+<style>
+h1 {
+	margin-bottom: 1px;
+	padding-bottom: 1px;
+}
+#table {
+	margin:20px;
+	margin-right:45px;
+    border-collapse: collapse;
+}
+#th,tr,td{
+    paddingX: 15px;
+}
+th {
+    padding: 5px;
+    cursor:pointer;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+
+/* Wide screen width */
+.rotateHeader {
+  display: block;
+  
+}
+th {
+	text-align: left; 
+}
+th.rotate {
+  heightX: 320px;
+  height: 240px;
+  height: 118px;
+
+  white-space: nowrap;
+  vertical-align: bottom;
+  text-align: left; 
+  padding: 0px;
+}
+th.rotate > div {
+  transform: 
+    translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+    rotate(315deg); /* 45 is really 360 - 45 */
+  width: 22px;
+  padding: 4px;
+  padding-top: 5px;
+}
+th.rotate > div > span {
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 13.5px;
+  display:block;
+  width:130px;
+  border-bottomX: 1px solid #dfdfdf;
+}
+th.rotate > div > span:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.impactTitle {
+    padding-top: 34px;
+}
+.th_title {
+    width: 50px;
+}
+.th_title > div {
+  float:right; /* Allows for space bewteen sections */
+}
+.th_title > div > span, .th_title > div > span:hover {
+  border-bottomX: 1px solid #777 !important;
+  border-top: 1px solid #333;
+  backgroundXXXX: #ddd !important;
+  margin-bottomX: 4px;
+  cursor: default;
+}
+th.rotate > div > span > span {
+    display:none; /* Hide extra after the title */
+}
+td {
+	padding:10px;
+}
+
+
+td:nth-child(n+3) {
+    padding: 2px;
+}
+td:first-child {
+	min-width: 200px;
+}
+td:first-child > div {
+	max-height: 20px;
+	overflow: hidden;
+}
+td:nth-child(n+3) > div {
+	border-left-style: solid;
+	border-left-width: 18px;
+	padding-left: 0px;
+    max-width:0px;
+}
+
+td:nth-child(n+3) > div > div {
+    visibility: hidden;
+}
+
+/* Wide Screen Width */
+@media (min-width: 1400px) {
+  .rotateHeaderHolder {
+    margin-rightX:80px;
+  }
+}
+/* Standard Screen Width */
+@media (max-width: 1399px) {
+  #table {
+  	margin-right:25px;
+  }
+  .rotate {
+  	margin-right:20px;
+  }
+  .rotateHeader {
+    overflowX: auto;
+  }
+  th.rotate {
+    height: 160px;
+  }
+  th.rotate > div {
+    transform: 
+      translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+      rotate(270deg); /* 45 is really 360 - 45 */
+    width: 15px;
+    padding: 0px;
+  }
+  th.rotate > div > span {
+    padding: 5px 10px;
+  }
+  .th_title {
+      width: 30px;
+  }
+  .th_title > div > span {
+    
+    font-size: 14px !important;
+    backgroundXXX: #eee;
+  }
+  .th_title > div > span, .th_title > div > span:hover {
+    margin-bottomX: 0px;
+  }
+}
+
+#logoholder {
+	height: 50px;
+	width: 70px;
+    background-size: 100% 100%;
+    float: left;
+}
+<style>
+.logoholder-state {
+    background: url(img/logo/georgia-icon-on-gray.png) no-repeat;
+    margin-top: 5px;
+    height: 50px;
+    width: 70px;
+}
+</style>
+  
+
+</head>
+
+<body>
+
+<!--
+Source: https://bl.ocks.org/luluwuluying/ace3699c70a2e3e7a2bb
+
+To do: Multicolumn sort (but allow for fixed first column)
+https://rawgit.com/joequery/Stupid-Table-Plugin/master/examples/multicolumn-sort.html
+-->
+
+<div id="headerFixed">
+	<div style="float:right; margin:20px">
+		<input id="showValues" type="checkbox"> Show values
+	</div>
+	
+
+	<div style="margin: 12px 10px 10px 30px">
+		<h1 style="line-height: 1; white-space: nowrap;">Goods and Services (mockup)</h1>
+		<a href="../../../io/charts/">View our new embeddable US EEIO charts - Get Involved!</a>
+	</div>
+</div>
+<div style="height:60px">
+</div>
+
+<div id="fixedFooter">
+	Click columns to sort. CSV Data: 
+	USEEIOv1.2_result_2007_impacts_final.csv
+</div>
+
+<div id="table" class="rotateHeader"></div>
+
+</body>
+
+
+<script type="text/javascript">
+
+	//Load in contents of CSV file
+
+	//d3.csv("USEEIOv1.2_result_2007_impacts_final.csv", function(error, myData) {
+	d3.csv("USEEIOv1.2_result_2007_impacts_final.csv").then(function(myData,error) {
+		if (error) {
+			console.log("Error loading file. " + error);
+		}
+
+		// Data as values, not objects.
+		var myArray = [];
+
+		// Add a new variable, to make it easier to do a color scale.
+		// Alternately, you could extract these values with a map function.
+		var allDifferences = [];
+
+		myData.forEach(function(d, i) {
+
+			d.difference =  d.US_2007_Demand_$;
+
+		 	// Add an array to the empty array with the values of each:
+	 	 	myArray.push([d.Sectors, d.difference, d.ACID, d.CCDD, d.CMSW, d.CRHW, d.ENRG, d.ETOX, d.EUTR, d.GHG, d.HAPS, d.HCAN, d.HNCN, d.HRSP, d.HTOX, d.JOBS, d.LAND, d.METL, d.MNRL, d.NNRG, d.OZON, d.PEST, d.RNRG, d.SMOG, d.VADD, d.WATR]);
+
+ 			// this is just a convenience, another way would be to use a function to get the values in the d3 scale.
+	 	 	allDifferences.push(d.difference);
+
+		});
+		//console.log(allDifferences);
+
+		var table = d3.select("#table").append("table");
+
+		var header = table.append("thead").append("tr");
+
+		// Objects to construct the header in code:
+		// The sort_type is for the Jquery sorting function.
+
+		// Minerals and Metals (MINE)
+		// Municipal Solid Waste (MSW)
+		// Hazardous Waste (HZW)
+		// Food Waste (FOOD)
+
+		// RCRA - Solid Wast Act
+		var headerObjs = [
+			{ class: "", column: "Sectors", label: "382 Industry Sectors", sort_type: "string" },
+			{ column: "US_2007_Demand_$", label: "US Demand $ (2007)", sort_type: "int" },
+			{ class: "rotate", column: "ACID", label: "Acid Rain", sort_type: "int" },
+			{ class: "rotate", column: "CCDD", label: "Construction Debris", labelfull: "Commercial Construction & Demolition Debris", sort_type: "int" },
+			{ class: "rotate", column: "CMSW", label: "Municipal Solid Waste", labelfull: "Commercial Municipal Solid Waste", sort_type: "int" },
+			{ class: "rotate", column: "CRHW", label: "Hazardous Waste", labelfull: "Commercial RCRA Hazardous Waste", sort_type: "int" },
+			{ class: "rotate", column: "ENRG", label: "Energy Use", sort_type: "int" },
+			{ class: "rotate", column: "ETOX", label: "Freshwater Ecotoxicity", sort_type: "int" },
+			{ class: "rotate", column: "EUTR", label: "Water Eutrophication", sort_type: "int" },
+			{ class: "rotate", column: "GHG",  label: "Global Climate Change", sort_type: "int" },
+			{ class: "rotate", column: "HAPS", label: "Hazardous Air Pollution", labelfull: "Hazardous Air Pollutants", sort_type: "int" },
+			{ class: "rotate", column: "HCAN", label: "Unhealthy - Cancer", labelfull: "Human Health Cancer", sort_type: "int" },
+			{ class: "rotate", column: "HNCN", label: "Unhealthy - Noncancer", labelfull: "Human Health Noncancer", sort_type: "int" },
+			{ class: "rotate", column: "HRSP", label: "Respiratory Effects", sort_type: "int" },
+			{ class: "rotate", column: "HTOX", label: "Toxic to Humans", sort_type: "int" },
+			{ class: "rotate", column: "JOBS", label: "Jobs", sort_type: "int" },
+			{ class: "rotate", column: "LAND", label: "Land Use", sort_type: "int" },
+			{ class: "rotate", column: "METL", label: "Metals", sort_type: "int" },
+			{ class: "rotate", column: "MNRL", label: "Mineral Use", sort_type: "int" },
+			{ class: "rotate", column: "NNRG", label: "Non Renewable Energy", labelfull: "Non Renewable Energy Use",sort_type: "int" },
+			{ class: "rotate", column: "OZON", label: "Ozone Depletion", sort_type: "int" },
+			{ class: "rotate", column: "PEST", label: "Pesticides", sort_type: "int" },
+			{ class: "rotate", column: "RNRG", label: "Renewable Energy Use", sort_type: "int" },
+			{ class: "rotate", column: "SMOG", label: "Smog Formation", sort_type: "int" },
+			{ class: "rotate", column: "VADD", label: "Value Added", sort_type: "int" },
+			{ class: "rotate", column: "WATR", label: "Water Use", sort_type: "int" },
+		];
+
+		header
+			.selectAll("th")
+			.data(headerObjs)
+			.enter()
+			.append("th")
+
+			.attr("data-sort", function (d) { return d.sort_type; })
+			.attr("class", function (d) { return d.class; })
+			.append("div")
+			.append("span")
+  			.text(function(d) { return d.label; });
+
+		var tablebody = table.append("tbody");
+
+		rows = tablebody
+			.selectAll("tr")
+			.data(myArray)
+			.enter()
+			.append("tr");
+
+		// We built the rows using the nested array - now each row has its own array.
+
+		// The scale - start at 0 or at lowest number
+		console.log('Extent is ', d3.extent(allDifferences));
+
+		var colorScale = d3.scaleLinear()
+			.domain(d3.extent(allDifferences)) // To Do: Limit color scale to each column
+			.range(["#bcdbf7","#c00"]);
+
+		cells = rows.selectAll("td")
+			// each row has data associated; we get it and enter it for the cells.
+			.data(function(d) {
+				return d;
+			})
+			.enter()
+			.append("td")
+			.append("div")
+			.style("border-left-color", function(d,i) { // Was background-color
+				// for the last elements in the row, we color the background:
+				if (i >= 2) { // All the columns with colored boxes
+					return colorScale(d);
+				}
+			})
+	
+			.append("div")
+			//.text(function(d,i) { // All columns have a div with a value from CSV data
+			//		return d;
+			//})
+			.html(function(d,i) {
+				if (i == 0) {
+					return "<input type='checkbox' id='" + d.split('-')[0] + "' class='sector' onclick='sectorClick(this)'/><span>" + d + "</span>";
+				} else {
+					return d;
+				}
+			})			
+			;
+
+		// jquery sorting applied to it - could be done with d3 and events.
+		$("table").stupidtable();
+
+		// INIT
+		// Set checkboxes based on param (which may be a hash, query or include parameter)
+		updateSector(param.sector);
+	});
+	function updateSector(sector) {
+		$(".sector").prop('checked', false);
+		if (sector) {
+			let sectors = sector.split(",");
+            for(var i = 0 ; i < sectors.length ; i++) {
+                $("#" + sectors[i]).prop('checked', true);
+            }
+        }
+	}
+	function resetForm() {
+		updateSector(param.sector);
+	}
+	function sectorClick(which) {
+		//console.log(which.id);
+		hash.sector = $('.sector:checked').map(function() {return this.id;}).get().join(','); 
+		updateHash();
+	}
+	document.getElementById('showValues').onclick = function() {
+	    // access properties using this keyword
+	    if ( this.checked ) {
+	        // if checked ...
+	        $("th.rotate > div > span").css("font-weight","600");
+	        $("td:nth-child(n+3) > div > div").css("visibility","visible");
+	        $("td:nth-child(n+3) > div > div").css("overflow","none");
+	        $("td:nth-child(n+3) > div").css("max-width","none");
+	        $("td:nth-child(n+3) > div").css("padding-left","5px");
+	    } else {
+	        $("th.rotate > div > span").css("font-weight","400");
+	        $("td:nth-child(n+3) > div > div").css("visibility","hidden");
+	        $("td:nth-child(n+3) > div > div").css("overflow","auto");
+	        $("td:nth-child(n+3) > div").css("max-width","0px");
+	        $("td:nth-child(n+3) > div").css("padding-left","0px");
+	    }
+	};
+	function getHash() {
+    	return (function (a) {
+        if (a == "") return {};
+        var b = {};
+        for (var i = 0; i < a.length; ++i) {
+            var p = a[i].split('=');
+            if (p.length != 2) continue;
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+	    })(window.location.hash.substr(1).split('&'));
+	}
+	
+	function updateHash() {
+		// Remove blank attributes
+        for (var i in hash) {
+          if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
+            delete hash[i];
+          }
+        }
+
+        var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+
+        // Update if hash has occurred
+        if (window.location.hash != hashString) {
+        	let searchTitle = 'Page ' + hashString;
+            let queryString = '#' + hashString;
+
+            //console.log("Update URL to: " + window.location.pathname + window.location.search + queryString);
+            window.history.pushState("", searchTitle, window.location.pathname + window.location.search + queryString);
+        }
+    }
+
+// COMMON
+var param = {};
+var hash = getHash(); // Include all existing
+param = loadParam(location.search,location.hash);
+window.onhashchange = function() {
+	param = loadParam(location.search,location.hash);
+	resetForm();
+}
+// Loads params with priority given to:
+// 1. Hash values on URL.
+// 2. Parameters on URL.
+// 3. Parameters on javascript include file.
+function loadParam(paramStr,hashStr) {
+  let scripts = document.getElementsByTagName('script');
+  let myScript = scripts[ scripts.length - 1 ];
+  //let params = getParams(myScript.src); // Object
+
+  let params = {};
+  let includepairs = myScript.src.substring(myScript.src.indexOf('?') + 1).split('&');
+  for (let i = 0; i < includepairs.length; i++) {
+    let pair = includepairs[i].split('=');
+    params[pair[0].toLowerCase()] = decodeURIComponent(pair[1]);
+  }
+
+  let pairs = paramStr.substring(paramStr.indexOf('?') + 1).split('&');
+  for (let i = 0; i < pairs.length; i++) {
+      if(!pairs[i])
+          continue;
+      let pair = pairs[i].split('=');
+      params[decodeURIComponent(pair[0]).toLowerCase()] = decodeURIComponent(pair[1]);
+   }
+
+  let hashPairs = hashStr.substring(hashStr.indexOf('#') + 1).split('&');
+  for (let i = 0; i < hashPairs.length; i++) {
+      if(!hashPairs[i])
+          continue;
+      if (i==0 && hashPairs[i].indexOf("=") == -1) {
+        params[""] = hashPairs[i];  // Allows for initial # params without =.
+        continue;
+      }
+      let hashPair = hashPairs[i].split('=');
+      params[decodeURIComponent(hashPair[0]).toLowerCase()] = decodeURIComponent(hashPair[1]);
+   }
+   return params;
+}
+// END COMMON
+</script>
+
+</html>

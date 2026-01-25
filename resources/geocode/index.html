@@ -1,0 +1,80 @@
+
+// Avoid this first function
+// It reformats all the rows, which will exhaust your free daily gecoding.
+
+function myFunction() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+ 
+  var range = sheet.getDataRange();
+  var cells = range.getValues();
+ 
+  var latitudes = [];
+  var longitudes = [];
+  var formatted_addresses = [];
+ 
+  for (var i = 0; i < cells.length; i++) {
+    var address = cells[i][2] + ' ' + cells[i][4] + ' ' + cells[i][5] + ' ' + cells[i][6];
+    var geocoder = Maps.newGeocoder().geocode(address);
+    var res = geocoder.results[0];
+ 
+    var lat = lng = 0;
+    var formatted_address = '';
+    if (res) {
+      lat = res.geometry.location.lat;
+      lng = res.geometry.location.lng;
+      formatted_address = res.formatted_address;
+    }
+     
+    latitudes.push([lat]);
+    longitudes.push([lng]);
+    formatted_addresses.push([formatted_address]);
+  }
+ 
+  sheet.getRange('AH1')
+  .offset(0, 0, latitudes.length)
+  .setValues(latitudes);
+  sheet.getRange('AI1')
+  .offset(0, 0, longitudes.length)
+  .setValues(longitudes);
+  sheet.getRange('AJ1')
+  .offset(0, 0, formatted_addresses.length)
+  .setValues(formatted_addresses);
+}
+
+
+// Working toward only geocoding blank cells
+// Try isblank again with "if" as lowercase
+
+function myFunction() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+ 
+  var range = sheet.getDataRange();
+  var cells = range.getValues();
+ 
+  var latitudes = [];
+  var longitudes = [];
+  var formatted_addresses = [];
+ 
+  for (var i = 0; i < cells.length; i++) {
+    // BUGBUG - use column name instead
+    //if(ISBLANK(cells[i][35])) { // 35 is currently the "formatted" address cell.
+    if(cells[i][35] != '') { // 35 is currently the "formatted" address cell.
+      var address = cells[i][2] + ' ' + cells[i][4] + ' ' + cells[i][5] + ' ' + cells[i][6];
+      var geocoder = Maps.newGeocoder().geocode(address);
+      var res = geocoder.results[0];
+   
+      var lat = lng = 0;
+      var formatted_address = '';
+      if (res) {
+        lat = res.geometry.location.lat;
+        lng = res.geometry.location.lng;
+        formatted_address = res.formatted_address;
+      }
+      // BUGBUG
+      cells[i][33] = lat;
+      cells[i][34] = lng;
+      cells[i][35] = formatted_address;
+    }
+  }
+ 
+}

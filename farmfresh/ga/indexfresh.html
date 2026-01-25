@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Sheetsee Maps Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic|Source+Code+Pro:400' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script type='text/javascript' src='js/sheetsee.js'></script>
+<link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+
+<style>
+#map {width: 800px; height: 500px; background: #CCF4FF;}
+.leaflet-popup-content {width: 102px;}
+.leaflet-popup-content img {width: 100px;}
+</style>
+  <body>
+    <div class="container">
+      <h1>All Pennies  Map</h1>
+      <p><em><a href="https://docs.google.com/a/github.com/spreadsheet/ccc?key=1GptBaQgTj1eHvy2xDbZLMSL9_T1f0JRSRPXvCCiP29c&usp=drive_web#gid=0" target="_blank">spreadsheet</a></em><p>
+      <div id="map">Loading...</div>
+      <p><em><a onClick='window.location="view-source:" + window.location.href'>View Source</a> // <a href="../docs/sheetsee-maps.html">View Documentation</a></em></p>
+
+      <footer>
+        <h4 id="getting-started">Getting Started</h4>
+        <ul>
+          <li><a href="../docs/about.html">About Sheetsee</a></li>
+          <li><a href="../docs/building.html">Building Sheetsee</a></li>
+          <li><a href="../docs/basics.html">Basics</a></li>
+        </ul>
+        <h4 id="ideas">Ideas</h4>
+        <ul>
+          <li><a href="../docs/templates.html">Templates</a></li>
+          <li><a href="../docs/tips.html">Tips!</a></li>
+        </ul>
+        <h4>Demos</h4>
+        <ul>
+          <li><a href="./demo-table.html">Table Demo</a></li>
+          <li><a href="./demo-map.html">Map Demo</a></li>
+        </ul>
+        <h4 id="use">Use</h4>
+        <ul>
+          <li><a href="../docs/sheetsee-core.html">Sheetsee-core</a></li>
+          <li><a href="../docs/sheetsee-tables.html">Sheetsee-tables</a></li>
+          <li><a href="../docs/sheetsee-maps.html">Sheetsee-maps</a></li>
+        </ul>
+        <h4 id="use">Contact</h4>
+        <ul>
+          <li><a href="http://www.twitter.com/jllord">@jllord</a></li>
+          <li><a href="https://github.com/jlord/sheetsee.js/issues/new">File an issue</a></li>
+        </ul>
+        <h4><a class="home-link" href="../index.html">Home</a></h4>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var URL = '1GptBaQgTj1eHvy2xDbZLMSL9_T1f0JRSRPXvCCiP29c'
+        Tabletop.init({key: URL, callback: showInfo, simpleSheet: true})
+      })
+
+      // BUG: Bounds are not valid. Maybe see if new sheetsee code posted since Oct 2018.
+      function showInfo (data) {
+        console.log(data)
+        var popup = "<h4>{{Name}} {{Website}}</h4>"
+        var mapOptions = {
+          data: data,
+          mapDiv: 'map',
+          geoJSONincludes: ['Name', 'Website'],
+          template: popup
+        }
+        Sheetsee.loadMap(mapOptions)
+      }
+    </script>
+
+    
+
+  </body>
+</html>

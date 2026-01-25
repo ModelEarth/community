@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Collaborative Repos For Research & Teaching Projects and Dissertations - Mars IO</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/d3/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
+<script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true"></script>
+<!--
+<link rel="stylesheet" id="ivan-fonts-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CRaleway%3A300%2C400%2C700&amp;subset=latin" type="text/css" media="all">
+-->
+
+<!-- For Facebook -->
+<meta property="og:title" content="Model.earth - Innovation through Generative AI" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://model.earth/community/img/overview/model-earth-impacts.jpg" />
+<meta property="og:url" content="https://model.earth/community/" />
+<meta property="og:description" content="Economic data, community resources and planning input combined with the EPA's new environmental indicator model." />
+
+<!-- For Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Model.earth - Innovation through Generative AI" />
+<meta name="twitter:description" content="Economic data, community resources and planning input combined with the EPA's new environmental indicator model." />
+<meta name="twitter:image" content="https://model.earth/community/img/overview/model-earth-impacts.jpg" />
+
+<style>
+.navlink-moonshots {
+  font: 600 16px/1.8 "Lato", sans-serif !important;
+  color: #222 !important;
+}
+.dark .navlink-moonshots {
+    color: #fff !important;
+}
+h2 {
+    font-size: 32px;
+    padding-top: 20px;
+    font-weight: 300;
+    font-family: "Amaze", "Helvetica Neue", Helvetica, "Lato", sans-serif;
+}
+.headerImage{
+    display: none;
+}
+#fullcolumn {
+    backgroundX: #fafafa;
+}
+.gobutton {
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 14px 12px 15px 12px;
+    min-height: 38px;
+    color: #fff;
+    box-sizing: border-box;
+    background: #555;
+    height: 48px;
+    text-decoration: none;
+}
+.resultsHolder {
+    background: rgba(33,33,33,0.95);
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    line-height: 26px;
+}
+.txtbox {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    width: 100%;
+    max-width: 190px;
+    padding: 0 20px;
+    height: 48px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #777;
+    border: solid 1px #b7b7b7;
+    border-radius: 5px;
+    margin-right: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+@media (max-width: 1200px) {
+    #rightcolumn {
+        display:none;
+    }
+}
+.popout {
+    border: 1px solid #ccc;
+    padding: 30px;
+    width:100%;
+    background:#eee;
+}
+.popout > h3 {
+    margin-top:0px;
+}
+
+/* not yet working in widget bucket */
+ol > li:before {
+    border-radius:20px;
+    background: red;
+}
+ol > li {
+    colorX: blue;
+}
+.hideOnProjectsPage {
+    display: none;
+}
+.projectsPage {
+    display: block !important;
+}
+</style>
+
+</head>
+
+<!--
+    12-digit FIPS Code - state, county, tract, block group
+    https://www.policymap.com/2012/08/tips-on-fips-a-quick-guide-to-geographic-place-codes-part-iii/
+-->
+<body>
+<div id="bodyFile"></div>
+
+<div id="hero_holder" style="position:relative;max-width:100vw">
+    <img src="../img/hero/earth-artemus-2022.png" style="width:100%;max-width:100%"  title="View from NASA's unmanned Orion spacecraft before traveling behind the Moon during Artemis I mission in 2022.">
+
+    <div id="mainbucket" style="display:none" class="displayOnload darkDivText">
+
+        <div style="padding-top:5px;overflow:auto" class="hideOnProjectsPage">
+          <!-- Transforming earth's biomes through collaborative modeling and gamification. -->
+          Visualizing Earth's systems<br>through collaborative data science.<br>
+          <a href="/community/projects/" class="btn btn-warning" style="margin-top:10px;">Coding Projects</a>
+        </div>
+        <div style="display:none" class="projectsPage">
+          Build research projects and<br>
+          dissertations using <a href="/io/learn/">MRIO</a><br>
+          environmentally-extended data.<br>
+
+          <a href="" onclick='return false;' class="showEarth btn btn-primary" style="margin-top:10px;">Return to Earth</a>
+        </div>
+    </div>
+</div>
+
+<div class="content contentpadding" style="overflow:auto;">
+
+    <div class="floatRight hideMobile" style="max-width:400px;">
+        <a href="../img/hero/moondog.jpg"><img src="../img/hero/moondog.jpg" style="width:100%" class="roundedCorners"></a><br>
+    </div>
+
+    <!--
+    <h1 style="font-size:32px">Coding Projects</h1>
+    -->
+
+    <div id="readmeDiv"></div>
+
+    <!--
+        Software Engineering Community of Practice
+        https://github.com/hackforla/engineering
+    -->
+
+    <div id="introDiv"></div>
+    <div id="devDiv"></div>
+    <br>
+
+    <!-- profile -->
+    <section id="widgets">
+    <div class="pagecard">
+        <div class="cardstyle rowX" style="padding:0px">
+          <!-- background-color:#eee; background-color:#f5fafb; -->
+          <div class="table-cell sideMenuColumn" style="padding-top:30px;">
+                <!-- style="width:150px" -->
+                <div id="scopeMenu"></div>
+
+                <!--
+                <link type="text/css" rel="stylesheet" href="/localsite/css/menu.css" id="/localsite/css/menu.css" />
+                -->
+                <script type="text/javascript" src="/localsite/js/menu.js" id="/localsite/js/menu.js"></script>
+
+                <script>
+                scopeMenu={};
+                scopeMenu.current = "Special"
+                scopeMenu.layerJson = "/localsite/info/data/scope-menu.json";
+                scopeMenu.revealButton = "#showScope"
+                scopeMenu.menuDiv = "#scopeMenu";
+                initMenu(scopeMenu);
+                </script>
+    
+          </div>
+          <div class="table-cell menuBuddy">
+              <div id="widgetsDiv" style="padding:0 40px"></div>
+          </div>
+          <div class="table-cell menuBuddyRight" style="padding:20px; padding-top:30px; min-width:350px;">
+                <div style="text-align: center;">
+                    <div style="display:inline-block; background-color:#ddd; border-radius:100px; width:200px; height:200px">&nbsp;</div>
+                    <h1 style="margin:0px; padding:0px">ReadyMix Concrete</h1>
+                    <h5 style="margin:0px; padding:0px">Environmental Product Declaration</h5>
+                    <br>
+                    <a href="../../../io/template/"><img src="../../../io/template/img/label-sample.png" style="width:100%; max-width:300px; margin-bottom:30px"></a><br>
+                </div>
+                <div style="padding:0 20px;">
+                The label above is formated in HTML on our <a href="../../io/template/">Environmental Impact Profiles page</a>.
+                </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!-- /profile -->
+
+    <div id="cinematic"></div>
+    <section id="ai">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="cinematicDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="profile-editor">
+    <div class="pagecard">
+        <div class="cardstyle" style="padding-bottom: 0px">
+          <div id="profileDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="pipeline">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="githubDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="python">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="pythonDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="ux">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="uxDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="explore">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="ioDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="google">
+    <div class="pagecard">
+        <div class="cardstyle">
+          <div id="moreDiv"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="google">
+        <div id="relatedDiv"></div>
+    </section>
+
+    <div style="clear:both"></div>
+
+    <a href="../../localsite/info/input/">Contact us</a> for additional details and to avoid overlaps. 
+    <br><br>
+
+    <!-- Schedule & Rules -->
+    <!--
+    <a href="../challenge/" class="btn btn-primary">About Challenge</a>
+    <a href="../challenge/registration/" class="btn btn-success">Register Online</a>
+    <a href="../challenge/meetups/" class="btn btn-danger">Meetups</a>
+    -->
+</div>
+
+<!-- Might not be necessary to place at bottom, as lomng as showdown.min.js is NOT loaded in page Head above. -->
+<script>
+$(document).ready(function () { // Might be needed for backing up. Not sure.
+  //loadMarkdown("README.md", "readmeDiv", "_parent");
+  loadMarkdown("intro.md", "introDiv", "_parent");
+  //loadMarkdown("../../io/coders/README.md", "devDiv", "_parent");
+  loadMarkdown("../../io/template/label.md", "widgetsDiv", "_parent");
+  loadMarkdown("profile-editor/README.md", "profileDiv", "_parent");
+  loadMarkdown("github-actions/README.md", "githubDiv", "_parent");
+  loadMarkdown("python/README.md", "pythonDiv", "_parent");
+  loadMarkdown("ux/README.md", "uxDiv", "_parent");
+  loadMarkdown("cinematic/README.md", "cinematicDiv", "_parent");
+  loadMarkdown("visualization/README.md", "ioDiv", "_parent"); // Data Visualization
+  loadMarkdown("more.md", "moreDiv", "_parent"); // Google Data Commons API
+  loadMarkdown("related.md", "relatedDiv", "_parent");
+  // param.startTitle = "Model Earth"; // Trigger header
+});
+</script>
+
+<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
+</body>
+</html>

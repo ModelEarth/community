@@ -1,0 +1,339 @@
+#filterEmbedHolder {
+    display: block !important;
+}
+#selectProduct {
+    cursor: pointer;
+    background-color: #fff;
+}
+.selectMenu {
+    font-size: 14px;
+    height: 34px;
+    margin-right: 6px;
+    min-height: 34px;
+}
+
+.fieldSelector {
+	display: none;
+}
+.filterField {
+	margin-right: 6px;
+	float: left;
+}
+.textInput {
+	font-size: 16px;
+	box-sizing: border-box;
+	height: 34px;
+	min-height: 34px;
+}
+.filterClick {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #d9d9de;
+    line-heightX: 22px;
+    padding: 0px 9px 0px 10px;
+    min-height: 34px !important;
+    vertical-align: baseline;
+    background-color: #fff;
+    color: #121a0d;
+    text-shadow: none;
+    float: left;
+}
+.filterSelected {
+    font-size: 13pt;
+    line-height: 13pt;
+    white-space: nowrap;
+    padding-top:9px;
+}
+.detailbutton {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 9px 10px 0px 10px;
+    
+    color: #555;
+    background-color: #fff;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 6px;
+    min-height: 34px;
+}
+#keywordsTB {
+    width:100%;
+    max-width:400px;
+}
+@media (max-width: 500px) {
+    #keywordsTB {
+        max-width:130px;
+    }
+}
+#goSearch {
+    padding-top:8px;
+}
+.filterLabel {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.filterLabelMain {
+    display: none;
+}
+.filterBubble {
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transition-property: width;
+    -moz-transition-property: width;
+    -o-transition-property: width;
+    transition-property: width;
+    display: block;
+    -webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    border: 1px solid #d0d5cb;
+    position: absolute;
+    z-index: 1001; /* to cover map zoom */
+    font-size: 15px;
+    line-height: 1.5;
+    background: #fff;
+    padding: 15px;
+    vertical-align: baseline;
+}
+.si-wrapper div {
+    position: absolute;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0;
+    width: 18px;
+    margin: 0;
+    border: 0;
+    padding: 3px;
+    background: none;
+    /* font: 0/0 a; */
+}
+.si-btn {
+    display: block;
+    background-color: #fff;
+}
+
+
+
+.bigThumbUl {
+    margin: 0px;
+    list-style-type: none;
+    /*
+    padding-right: -30px;
+    border:1px solid #fff;
+    */
+}
+.widthPercent { /* allows margin to reside within percent */
+    float:left;
+    position: relative;
+    /* padding-right:30px; */
+}
+.widthPercent:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.bigThumbHolder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+
+    overflowX: hidden;
+    border:1px solid #fff;
+    marginX: 0 0px 30px 0;
+    /* padding-right: 30px; */
+}
+.bigThumb {
+    background-color: #fff;
+    background-size: cover;
+    opacity: 0.7;
+    cursor: pointer;
+    height: 100%;
+}
+.widthPercent {
+    padding:0 20px 0 20px;
+    padding:0px !important;
+    margin:0px !important;
+}
+.bigThumb:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.bigThumb a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center; /* no effect */
+    cursor: pointer;
+}
+.bigThumbText {
+    /*
+    top:30%;
+    margin:25px;
+    text-align: center;
+    */
+    overflow: visible;
+    position: absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    color:#fff;
+    font-size:20px;
+    background-color: rgba(33, 33, 33, 0.5);
+    min-height: 36px;
+    padding: 8px 8px 5px 14px;
+    font-size: 22px;
+    color: #5fab1b;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.bigThumb:hover .bigThumbText{
+    background-color: rgba(33, 33, 33, 0.95);
+}
+.bigThumbSecondary {
+    color: #fff;
+    font-size: 14px;
+    /* font-style: italic; */
+    font-weight: 400;
+}
+.bigThumbMenu {
+    clear:both; /* clear close X */
+    display: block;
+}
+
+@media (min-width: 300px) {
+    .primaryTitle {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .widthPercent {
+        width:100%;
+    }
+    .bigThumbHolder {
+        max-height: 50px;
+        min-height: 50px;
+        margin-bottom: 10px;
+    }
+    .moduleBackground {
+        background-color:#000;
+    }
+    .bigThumbText {
+        font-size: 24px;
+        text-transform:none;
+        position: relative;
+    }
+}
+@media (min-width: 801px) {
+    .primaryTitle {
+        font-size: 50px;
+    }
+    .widthPercent {
+        width:33.3%;
+    }
+}
+/* Full Screen */
+@media (min-width: 1000px) {
+    .primaryTitle {
+        font-size: 58px;
+    }
+    .widthPercent {
+        width: 25%;
+    }
+    .widthColumns{
+        max-width:1200px;
+    }
+}
+
+
+.output_table {
+    border-collapse: collapse;
+}
+.output_table table {
+    width:100%;
+}
+.output_table th {
+    white-space: nowrap;
+    padding: 5px;
+    cursor:pointer;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+}
+.output_table td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding:10px;
+}
+
+.height100 {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    height:400px;
+    border:10px solid blue;
+}
+
+/* For embedded location filters */
+.headerOffset {
+    height: 100px;
+}
+#headerFixed {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  background-color: #fff;
+  z-index: 1001;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  min-height: 56px;
+}
+#fixedFooter {
+  position: fixed;
+  bottom:0;
+  background-color: #595959;
+  color:#fff;
+  left:0;
+  right:0;
+  width:100%;
+  z-index: 9999999;
+  text-align: center;
+  padding: 5px;
+}
+#fixedFooter > div {
+  display: inline-block;
+}
+#fixedFooter > div > div {
+  float:left;
+  padding-left:20px;
+  padding-right:20px;
+  font-weight:400;
+  font-size:16px;
+  line-height:38px;
+  height:38px;
+  cursor: pointer;
+}
+#fixedFooter > div > div:hover {
+  background-color: #333;
+}
+#fixedFooter a {
+  color: #fff;
+}
+
+

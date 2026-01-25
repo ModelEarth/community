@@ -1,0 +1,468 @@
+-- To run: ./run.sh
+-- Or: sqlite3 zcta.db < zcta.SQL.txt > zcta.OUT.txt
+-- Combines income and industry data
+-- Outputs to data/[year]/zcta_out.csv
+
+-- Replace "2012" industries.  Also replace 2-digit year. (Avoid replacing 2018 in 2 locations)
+-- Only 2@17 income is downloaded, not used. Poverty file income levels fit our study better.
+
+-- Setup
+.headers on
+.separator ','
+
+drop table if exists income;
+drop table if exists zcta;
+drop table if exists zipcw;
+drop table if exists zcta_output;
+drop table if exists zc;
+drop table if exists industries;
+drop view if exists zcta_industries;
+drop view if exists zcta_all;
+drop view if exists zcta_agriculture;
+drop view if exists zcta_automotive;
+drop view if exists zcta_entertainment;
+drop view if exists zcta_construction;
+drop view if exists zcta_healthcare;
+drop view if exists zcta_manufacturing;
+drop view if exists zcta_professional;
+drop view if exists zcta_realestate;
+drop view if exists zcta_trade;
+drop view if exists zcta_transport;
+
+-- ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** --
+
+-- (a.i) Create tables
+
+-- Resides in income and income/nonprofits
+CREATE table income
+(
+	id int,
+	zcta int,
+	geography varchar(255), 
+	housecount int,
+	E varchar(255),
+	familycount int,
+	G varchar(255),
+	marriedcount int,
+	I varchar(255),
+	nonfamilycount int,
+	K varchar(255),
+	House0to10K int,
+	M varchar(255),
+	Families0to10K varchar(255),
+	O varchar(255),
+	P varchar(255),
+	Q varchar(255),
+	R varchar(255),
+	S varchar(255),
+	House10to15K int,
+	U varchar(255),
+	V varchar(255),
+	W varchar(255),
+	X varchar(255),
+	Y varchar(255),
+	Z varchar(255),
+
+	AA varchar(255),
+	House15to25K int,
+	AC varchar(255),
+	AD varchar(255),
+	AE varchar(255),
+	AF varchar(255),
+	AG varchar(255),
+	AH varchar(255),
+	AI varchar(255),
+	House25to35K int,
+	AK varchar(255),
+	AL varchar(255),
+	AM varchar(255),
+	AN varchar(255),
+	AO varchar(255),
+	AP varchar(255),
+	AQ varchar(255),
+	House35to50K int,
+	'AS' varchar(255),
+	AT varchar(255),
+	AU varchar(255),
+	AV varchar(255),
+	AW varchar(255),
+	AX varchar(255),
+	AY varchar(255),
+	House50to75K int,
+
+	BA varchar(255),
+	BB varchar(255),
+	BC varchar(255),
+	BD varchar(255),
+	BE varchar(255),
+	BF varchar(255),
+	BG varchar(255),
+	House75to100K int,
+	BI varchar(255),
+	BJ varchar(255),
+	BK varchar(255),
+	BL varchar(255),
+	BM varchar(255),
+	BN varchar(255),
+	BO varchar(255),
+	House100to150K int,
+	BQ varchar(255),
+	BR varchar(255),
+	BS varchar(255),
+	BT varchar(255),
+	BU varchar(255),
+	BV varchar(255),
+	BW varchar(255),
+	House150to200K int,
+	BY varchar(255),
+	BZ varchar(255),
+
+	CA varchar(255),
+	CB varchar(255),
+	CC varchar(255),
+	CD varchar(255),
+	CE varchar(255),
+	CF varchar(255),
+	House200Kup int,
+	CH varchar(255),
+	CI varchar(255),
+	CJ varchar(255),
+	CK varchar(255),
+	CL varchar(255),
+	CM varchar(255),
+	HouseMedianIncome varchar(255),
+	CO varchar(255),
+	FamilyMedianIncome varchar(255),
+	CQ varchar(255),
+	MarriedMedianIncome varchar(255),
+	CS varchar(255),
+	NonfamilyMedianIncome varchar(255),
+	CU varchar(255),
+	HouseMeanIncome varchar(255),
+	CW varchar(255),
+	FamilyMeanIncome varchar(255),
+	CY varchar(255),
+	CZ varchar(255),
+
+	DA varchar(255),
+	NonfamilyMeanIncome varchar(255), -- Might omit zips on south side of Atlanta
+	DC varchar(255),
+	DD varchar(255),
+	DE varchar(255),
+	DF varchar(255),
+	DG varchar(255),
+	DH varchar(255),
+	DI varchar(255),
+	DJ varchar(255),
+	DK varchar(255),
+	DL varchar(255),
+	DM varchar(255),
+	DN varchar(255),
+	DO varchar(255),
+	DP varchar(255),
+	DQ varchar(255),
+	DR varchar(255),
+	DS varchar(255),
+	DT varchar(255),
+	DU varchar(255),
+	DV varchar(255),
+	DW varchar(255),
+	DX varchar(255),
+	DY varchar(255),
+	DZ varchar(255),
+	EA varchar(255)
+);
+-- zcta gets populated with int parsed from the ZCTA5 "geography" column.
+
+CREATE table industries
+(
+	zip int,
+	naics varchar(255),
+	est int,
+	n1_4 varchar(255),
+	n5_9 varchar(255),
+	n10_19 varchar(255),
+	n20_49 varchar(255),
+	n50_99 varchar(255),
+	n100_249 varchar(255),
+	n250_499 varchar(255),
+	n500_999 varchar(255),
+	n1000 varchar(255)
+);
+.mode csv
+-- Change in 2 places in this line, and 2 in output line at bottom:
+.import ../source/2012/zbp12detail.txt industries
+
+CREATE table zcta
+(
+	 zcta int, -- the GEOID
+	 ALAND	int,
+	 AWATER int,
+	 ALAND_SQMI	int,
+	 AWATER_SQMI int,
+	 latitude int,
+	 longitude int  
+);
+
+
+-- Zip crosswalk to relate zcta census blocks
+CREATE table zipcw
+(
+	 zip int,
+	 PO_NAME varchar(255),
+	 STATE varchar(255),
+	 ZIP_TYPE varchar(255),
+	 zcta int,
+	 zip_join_type varchar(255)
+);
+
+
+-- This is tab deliminited.
+.mode csv
+.import ../../zipcodes/2018_Gaz_zcta_national.csv zcta
+
+.mode csv
+.import ../../zipcodes/zcta/zip_to_zcta_2018.csv zipcw
+
+/*
+-- Removed first row in csv file, pasted at the bottom of this script.
+.mode csv
+.import ../income/2017/aff_download/ACS_17_5YR_S1901_with_ann.csv income
+
+
+-- Display table info
+.tables
+.print '~~~~~'
+
+UPDATE income SET zcta = CAST(substr(geography,7,5) as decimal);
+
+.headers off
+SELECT COUNT(*) as totalRows FROM income;
+.headers on
+.print '~~~~~'
+*/
+
+
+--CREATE INDEX zip_index on income (zip);
+create index GEOID_index on zcta(zcta); -- The zip code
+create index zipcw_zip_index on zipcw(zip);
+create index industries_zip_index on industries(zip);
+create index industries_naics_index on industries(naics);
+
+
+create view zcta_industries
+as 
+select zcta, SUM(est) est, naics 
+from industries join zipcw on industries.zip = zipcw.zip 
+group by zcta, naics
+;
+
+
+
+--combine zipcode
+-- Additional income columns, omitted to reduce file size
+-- income.HouseMeanIncome, income.House25to35K, income.House35to50K, income.House50to75K, income.House75to100K, income.House100to150K, income.House150to200K, income.House200Kup
+
+/*
+Create table zc
+as 
+select zipcw.zcta, 
+
+-- Can be reactivated once multiple years are adding to prep
+--income.housecount HouseCount, 
+--income.HouseMedianIncome, income.House0to10K, income.House10to15K, income.House15to25K,
+--income.House100to150K, income.House150to200K, income.House200Kup,
+
+zctazip.latitude, zctazip.longitude
+
+from zipcw
+
+inner join zcta on zipcw.zcta = zcta.zcta -- Get one lat/lon for the zcta
+
+-- Can be reactivated once multiple years are adding to prep
+--inner join income on zipcw.zcta = income.zcta -- Inner join omits Virgin Island locations (801-851) which have no income rows (HouseCount, HouseMedianIncome, IncomeUnder25K, IncomeOver100K) and not industry rows. Reduces from 41,814 to 41,780.
+
+-- DELETE these, for testing
+--and income.housecount < 1200
+--and income.FamilyMeanIncome < 25000 -- 7155 results, but why just north side of Atlanta?
+--and income.Families0to10K > 30 -- 9354 results
+--and income.zcta >= 30000 and income.zcta < 31000
+
+;
+*/
+
+--reduce decimal places from 4 to 2 on latitude and longitude
+update zcta set latitude=round(latitude,2);
+update zcta set longitude=round(longitude,2);
+
+-- IMPORTANT - Add group by if view can return more than one value per zcta.
+create view zcta_all as 
+select zcta, est
+from zcta_industries  
+where zcta_industries.naics = "------"
+;
+create view zcta_agriculture as 
+select zcta, est
+from zcta_industries  
+where zcta_industries.naics = "11----"
+;
+create view zcta_automotive as 
+select zcta, sum(est) est
+from zcta_industries  
+where (zcta_industries.naics >= "336100" AND zcta_industries.naics < "336200")
+group by zcta
+;
+create view zcta_entertainment as 
+select zcta, sum(est) est
+from zcta_industries  
+where (zcta_industries.naics = "51----" OR zcta_industries.naics = "71----")
+group by zcta
+;
+create view zcta_construction as 
+select zcta, est
+from zcta_industries  
+where zcta_industries.naics = "23----"
+;
+create view zcta_healthcare as 
+select zcta, est
+from zcta_industries  
+where zcta_industries.naics = "62----"
+;
+create view zcta_manufacturing as 
+select zcta, sum(est) est
+from zcta_industries  
+where (zcta_industries.naics = "31----" OR zcta_industries.naics = "32----" OR zcta_industries.naics = "33----")
+group by zcta
+;
+create view zcta_professional as 
+select zcta, sum(est) est
+from zcta_industries  
+where (zcta_industries.naics = "54----" OR zcta_industries.naics = "52----") -- Professional and Technical, includes Finance
+group by zcta
+;
+create view zcta_realestate as 
+select zcta, est
+from zcta_industries  
+where zcta_industries.naics = "53----" 
+;
+create view zcta_trade as 
+select zcta, est
+from zcta_industries  
+where zcta_industries.naics = "42----"
+;
+create view zcta_transport as 
+select zcta, sum(est) est
+from zcta_industries  
+where (zcta_industries.naics = "48----" OR zcta_industries.naics = "49----")
+group by zcta
+;
+
+
+create table zcta_output as
+select zcta.zcta, zcta.latitude, zcta.longitude,
+zcta_all.est JobsTotal,
+zcta_agriculture.est JobsAgriculture,
+zcta_automotive.est JobsAutomotive,
+zcta_entertainment.est JobsEntertainment,
+zcta_construction.est JobsConstruction,
+zcta_healthcare.est JobsHealthcare,
+zcta_manufacturing.est JobsManufacturing,
+zcta_professional.est JobsProfessional,
+zcta_realestate.est JobsRealestate,
+zcta_trade.est JobsTrade,
+zcta_transport.est JobsTransport
+
+from zcta
+-- The string format in this first join might be excluding zips below 1000, but there is only one in 2012.
+inner join zcta_all on zcta.zcta = zcta_all.zcta 
+left join zcta_agriculture on zcta.zcta = zcta_agriculture.zcta
+left join zcta_automotive on zcta.zcta = zcta_automotive.zcta
+left join zcta_entertainment on zcta.zcta = zcta_entertainment.zcta
+left join zcta_construction on zcta.zcta = zcta_construction.zcta
+left join zcta_healthcare on zcta.zcta = zcta_healthcare.zcta
+left join zcta_manufacturing on zcta.zcta = zcta_manufacturing.zcta
+left join zcta_professional on zcta.zcta = zcta_professional.zcta
+left join zcta_realestate on zcta.zcta = zcta_realestate.zcta
+left join zcta_trade on zcta.zcta = zcta_trade.zcta
+left join zcta_transport on zcta.zcta = zcta_transport.zcta
+;
+
+-- Flatten to distinct ztca's by summing mulitple zips from industries
+
+/*
+Create table zcta_outputX
+as 
+select zcta.zcta, 
+--zc.HouseCount, zc.HouseMedianIncome, 
+--(zc.House0to10K + zc.House10to15K + zc.House15to25K) IncomeUnder25K, 
+--(zc.House100to150K + zc.House150to200K + zc.House200Kup) IncomeOver100K,
+all_industries.JobCount JobsTotal,
+agriculture.JobCount JobsAgriculture,
+entertainment.JobCount JobsEntertainment,
+automotive.JobCount JobsAutomotive,
+construction.JobCount JobsConstruction,
+healthcare.JobCount JobsHealthcare,
+manufacturing.JobCount JobsManufacturing,
+professional.JobCount JobsProfessional,
+realestate.JobCount JobsRealestate,
+--retail.JobCount JobsRetail,
+trade.JobCount JobsTrade,
+transport.JobCount JobsTransport,
+zcta.latitude, zcta.longitude
+
+from zcta
+-- Use inner to limit to zips with industries
+inner join zcta_industries all_industries on zcta.zcta = all_industries.zcta and all_industries.naics = "------"
+left join zcta_industries agriculture on zcta.zcta = agriculture.zcta and agriculture.naics = "11----"
+left join zcta_industries entertainment on zcta.zcta = entertainment.zcta and (entertainment.naics = "51----" OR entertainment.naics = "71----")
+left join zcta_industries automotive on zcta.zcta = automotive.zcta and (automotive.naics >= "336100" AND automotive.naics < "336200")
+left join zcta_industries construction on zcta.zcta = construction.zcta and construction.naics = "23----"
+left join zcta_industries healthcare on zcta.zcta = healthcare.zcta and healthcare.naics = "62----"
+left join zcta_industries manufacturing on zcta.zcta = manufacturing.zcta and (manufacturing.naics = "31----" OR manufacturing.naics = "32----" OR manufacturing.naics = "33----")
+left join zcta_industries professional on zcta.zcta = professional.zcta and (professional.naics = "54----" OR professional.naics = "52----") -- Professional and Technical, includes Finance
+left join zcta_industries realestate on zcta.zcta = realestate.zcta and realestate.naics = "53----" 
+--Retail is not included in census data
+--left join zcta_industries retail on zcta.zcta = retail.zcta and (retail.naics = "45----" OR retail.naics = "46----")
+left join zcta_industries trade on zcta.zcta = trade.zcta and trade.naics = "42----" 
+left join zcta_industries transport on zcta.zcta = transport.zcta and (transport.naics = "48----" OR transport.naics = "49----") -- Transportation and Warehousing
+;
+*/
+
+--convert to csv
+--.mode csv
+--.output ../../docs/data/2017/zcta_industries.csv
+--select * from zcta_industries;
+--.output stdout
+
+--convert to csv
+.mode csv
+.output ../../../../community/data/2012/2012_zcta_industries_sm.csv
+select * from zcta_output;
+.output stdout
+
+
+/*
+Removed from first row:
+GEO.id,GEO.id2,GEO.display-label,HC01_EST_VC01,HC01_MOE_VC01,HC02_EST_VC01,HC02_MOE_VC01,HC03_EST_VC01,HC03_MOE_VC01,HC04_EST_VC01,HC04_MOE_VC01,HC01_EST_VC02,HC01_MOE_VC02,HC02_EST_VC02,HC02_MOE_VC02,HC03_EST_VC02,HC03_MOE_VC02,HC04_EST_VC02,HC04_MOE_VC02,HC01_EST_VC03,HC01_MOE_VC03,HC02_EST_VC03,HC02_MOE_VC03,HC03_EST_VC03,HC03_MOE_VC03,HC04_EST_VC03,HC04_MOE_VC03,HC01_EST_VC04,HC01_MOE_VC04,HC02_EST_VC04,HC02_MOE_VC04,HC03_EST_VC04,HC03_MOE_VC04,HC04_EST_VC04,HC04_MOE_VC04,HC01_EST_VC05,HC01_MOE_VC05,HC02_EST_VC05,HC02_MOE_VC05,HC03_EST_VC05,HC03_MOE_VC05,HC04_EST_VC05,HC04_MOE_VC05,HC01_EST_VC06,HC01_MOE_VC06,HC02_EST_VC06,HC02_MOE_VC06,HC03_EST_VC06,HC03_MOE_VC06,HC04_EST_VC06,HC04_MOE_VC06,HC01_EST_VC07,HC01_MOE_VC07,HC02_EST_VC07,HC02_MOE_VC07,HC03_EST_VC07,HC03_MOE_VC07,HC04_EST_VC07,HC04_MOE_VC07,HC01_EST_VC08,HC01_MOE_VC08,HC02_EST_VC08,HC02_MOE_VC08,HC03_EST_VC08,HC03_MOE_VC08,HC04_EST_VC08,HC04_MOE_VC08,HC01_EST_VC09,HC01_MOE_VC09,HC02_EST_VC09,HC02_MOE_VC09,HC03_EST_VC09,HC03_MOE_VC09,HC04_EST_VC09,HC04_MOE_VC09,HC01_EST_VC10,HC01_MOE_VC10,HC02_EST_VC10,HC02_MOE_VC10,HC03_EST_VC10,HC03_MOE_VC10,HC04_EST_VC10,HC04_MOE_VC10,HC01_EST_VC11,HC01_MOE_VC11,HC02_EST_VC11,HC02_MOE_VC11,HC03_EST_VC11,HC03_MOE_VC11,HC04_EST_VC11,HC04_MOE_VC11,HC01_EST_VC13,HC01_MOE_VC13,HC02_EST_VC13,HC02_MOE_VC13,HC03_EST_VC13,HC03_MOE_VC13,HC04_EST_VC13,HC04_MOE_VC13,HC01_EST_VC15,HC01_MOE_VC15,HC02_EST_VC15,HC02_MOE_VC15,HC03_EST_VC15,HC03_MOE_VC15,HC04_EST_VC15,HC04_MOE_VC15,HC01_EST_VC18,HC01_MOE_VC18,HC02_EST_VC18,HC02_MOE_VC18,HC03_EST_VC18,HC03_MOE_VC18,HC04_EST_VC18,HC04_MOE_VC18,HC01_EST_VC19,HC01_MOE_VC19,HC02_EST_VC19,HC02_MOE_VC19,HC03_EST_VC19,HC03_MOE_VC19,HC04_EST_VC19,HC04_MOE_VC19,HC01_EST_VC20,HC01_MOE_VC20,HC02_EST_VC20,HC02_MOE_VC20,HC03_EST_VC20,HC03_MOE_VC20,HC04_EST_VC20,HC04_MOE_VC20
+*/
+
+
+drop table if exists income;
+drop table if exists zcta;
+drop table if exists zipcw;
+drop table if exists zc;
+drop table if exists zcta_output;
+drop table if exists industries;
+drop view if exists zcta_industries;
+drop view if exists zcta_all;
+drop view if exists zcta_agriculture;
+drop view if exists zcta_automotive;
+drop view if exists zcta_entertainment;
+drop view if exists zcta_construction;
+drop view if exists zcta_healthcare;
+drop view if exists zcta_manufacturing;
+drop view if exists zcta_professional;
+drop view if exists zcta_realestate;
+drop view if exists zcta_trade;
+drop view if exists zcta_transport;
+

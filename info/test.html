@@ -1,0 +1,90 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+<script>
+//alert("test");
+
+// To do: detect any click and compare new hash with the prior hash value after current execution ends.
+
+window.addEventListener('hashchange', function() {
+  // Only works on loading, backing up or changing manually.
+  //alert('The hash has changed!')
+}, false);
+
+if ("onhashchange" in window) { // Fires only on initial load
+	//alert("onhashchange in window")
+}
+
+
+function updateHash(addToHash) {
+
+    let hash = getHash(); // Include all existing
+    hash = mix(addToHash,hash); // Gives priority to addToHash
+
+    // Reside in mix. DELETE
+        //for (var i in hash) { // Remove blank attributes
+        //  if (hash[i] === null || hash[i] === undefined || hash[i] === '') {
+        //    delete hash[i];
+        //  }
+        //}
+
+    var hashString = decodeURIComponent($.param(hash)); // decode to display commas in URL
+
+        // findCompany
+
+    
+
+    var pathname = window.location.pathname;
+    var queryString = "";
+    if (window.location.search) { // Existing, for parameters that are retained as hash changes.
+      queryString += window.location.search; // Contains question mark (?)
+    }
+
+    //var hsHash = '';
+    //hsHash = $('[name="hs"]:checked').map(function() {return this.value;}).get().join(',');
+    //if (hsHash) { // Remove the hash here if adding to other 
+    //  queryString += "#hs=" + hsHash;
+    //}
+    //$("#productCodes").val(hsHash);
+    //$("#productCodes").width("200px");
+
+    if (hashString) { // Remove the hash here if adding to other 
+      queryString += "#" + hashString;
+    }
+    
+    let searchTitle = 'Page ' + hashString;
+    window.history.pushState("", searchTitle, pathname + queryString);
+    //refreshMain();
+}
+
+</script>
+<script type="text/javascript" src="../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script><!-- for UpdateHash -->
+
+<div class="not-blue"></div>
+<script>
+
+// Trigger each widget to run a function with it's hashChangeEvent listener
+// Exception, React widgets use a different process.
+var hashChanged = function () {
+    // Create a new event
+    var event = new CustomEvent('hashChangeEvent');
+    // Dispatch the event
+    document.dispatchEvent(event);
+};
+
+// localsite.js function updateHash function triggers `hashChangeEvent` event in widgets.
+document.addEventListener('hashChangeEvent', function (elem) {
+    alert('blue')
+}, false);
+
+document.addEventListener('hashChangeEvent', function (elem) {
+    alert('green')
+}, false);
+
+hashChanged();
+</script>
+
+<a href="#x=test">test</a><br><br>
+
+<div onClick="updateHash({'indicators':'try'});alert('no event detected');" style="cursor: pointer">try me</div><br><br>

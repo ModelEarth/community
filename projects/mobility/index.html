@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<title>Automotove NAICS Data - Mobility Sector - EV Ecosystem</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+<script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
+
+<style>
+.img-boarder {
+	border:2px solid #555;
+}
+.red {
+	background-color: #fbadaf;
+	width:100%;
+	display: inline-block;
+}
+.green {
+	background-color: #c0fd8d;
+	width:100%;
+	display: inline-block;
+}
+</style>
+
+</head>
+
+<body>
+<div id="allsections">
+<section id="mobility">
+<div class="content contentpadding">
+
+	<h1>Electric Vehicles - NAICS Data</h1>
+
+	<div id="readmeDiv"></div>
+
+	<script>
+	    //loadMarkdown("README.md", "readmeDiv", "_parent");
+	</script>
+
+	Data collection for comparing Electric Vehicle and Internal Combustion Engine (ICE) production.<br><br>
+
+	<!--
+	<a href="../../../localsite/info/#show=ev&show=counties">Electric Vehicle manufacturing industries by county</a> | 
+	-->
+	&bull; <a href="../../../localsite/info/#show=vehicles">Automotive and Aircraft Manufacturing</a><br>
+	&bull; <a href="../../../apps/ev/">Community App: West Central Georgia Vehicle Manufacturing</a><br>
+	<!-- stopped working, could be switch from Google Sheet to CSV -->
+	<!--
+	&bull; <a href="../../../localsite/info/#show=vehicles&state=GA&q=Yes&search=ev+industry">Electric Vehicle Related Manufacturing</a><br>
+	-->
+	<br>
+
+	Industry areas adversely and positively impacted by the transition to electric vehicles.
+
+	<div style="color:#333">
+		<h3>Automotive/Parts Manufacturing by NAICS</h3>
+	
+		336111 - Automotive Manufacturing<br>
+		336211 - Motor Vehicle Body Manufacturing<br>
+		<span class="red">336310 - Motor Vehicle Gasoline Engine and Engine Parts Manufacturing</span><br>
+		<span class="green">336320 - Motor Vehicle Electrical and Electronic Equipment Manufacturing</span><br>
+		336330 - Motor Vehicle steering and suspension manufacturing<br>
+		336340 - Motor Vehicle braking and component systems manufacturing<br>
+		336360 - Motor Vehicle seating and interior trim manufacturing<br>
+
+
+		336370 - Motor Vehicle Metal Stamping<br>
+		336390 - Other Motor Vehicle Parts Manufacturing<br>
+		<span class="red">336350 - Motor Vehicle Transmission and Power Train Parts Manufacturing</span><br>
+		336360 - Motor Vehicle Steering and Interior Trim Manufacturing<br>
+		
+		
+		331110 - Iron and Steel Mills and Ferroalloy Manufacturing<br>
+		<span class="red">333618 - Other Engine Equipment Manufacturing</span><br>
+		<span class="red">333613 - Mechanical power transmissions equipment manufacturing</span><br>
+		336412 - Aircraft engines and engine parts manufacturing<br>
+		336413 - Other aircraft parts and auxiliary equipment manufacturing<br>
+		<span class="green">335910 - Battery Manufacturing</span><br>
+		<span class="green">335911 - Storage Battery Manufacturing</span><br>
+		<span class="green">335912 - Primary battery manufacturing</span><br>
+		<!-- 339110 - Medical equipment and supplies manufacturing<br>-->
+		333111 - Farm machinery and equipment manufacturing<br>
+		313110 - Fiber, yarn and thread mill manufacturing<br>
+		313210 - Broadwoven Fabric Mills<br>
+		314110 - Carpet and rug mill manufacturing<br>
+		325211 - Plastics material and resin manufacturing<br>
+		325520 - Adhesives manufacturing<br>
+		326112 - Plastics packaging film manufacturing<br>
+		326199 - All Other Plastic Product Manufacturing<br>
+		<span class="red">326220 - Rubber and plastics hoses and belt manufacturing</span><br>
+		331221 - Rolled steel shape manufacturing<br>
+		332211 - Forging and stamping<br>
+
+		
+
+		<h3>Broader than manufacturing</h3>
+
+		551114 - Corporate, Subsidiary, and Regional Managing Offices<br>
+		425120 - Wholesale Trade Agents and Brokers<br>
+		<span class="red">441110 - New Car Dealers</span><br>
+		<span class="red">811111 - General automotive repair shops</span><br>
+		<br>
+
+		Dealerships typically generate over 40% of their gross profit in service and maintenance, which is predicted to drop at least 60% since EVs require fewer fluid changes and parts replacements.<br>
+
+
+	</div>
+	<br><br>
+
+
+
+	
+	<h3>Data Sources</h3>
+
+	Create a copy of the vehicle manufacturer <a href="https://docs.google.com/spreadsheets/d/1OX8TsLby-Ddn8WHa7yLKNpEERYN_RlScMrC0sbnT1Zs/edit#gid=0">Google Sheet</a> to activate additional states.<br><br>
+
+	See our [recycling export steps](/localsite/map/recycling/ga/).
+
+	Filtered by naics 3361, 3362, 3363 (only allows one NAICS at a time)<br>
+	(Or "Search Local Employers > Advanced")<br>
+	<!-- Note: Title was NOT included with address when gecoding 2021-GaLaborExplorer-3361. Was included for 3361 and 3362 
+	-->
+	- Delete Ignition Interlock Devices (car breathalyzer) manufacturers. (59)<br>
+	- Move Auto Repair Shops to a separate tab. (77)<br><br>
+
+	Also include:<br>
+	333613 - Mechanical power transmissions equipment manufacturing (4 firms in 2018)<br>
+	335910 - Battery Manufacturing (0 firms in 2018, 0 in LaborExplorer in 2021)<br>
+	335911 - Storage Battery Manufacturing (19 firms in 2018, 5 in LaborExplorer in 2021)<br>
+	335912 - Primary battery manufacturing (4 firms in 2018)<br>
+	<!-- Cheyenne Grille is one of 2 listed for 333613 - Mechanical power transmissions equipment manufacturing (4 firms in 2018) -->
+	<br>
+
+	2. <a href="https://www.selectgeorgia.com/resources/publications/automotive-in-georgia/">Select Georgia Automotive</a> - <a href="https://www.selectgeorgia.com/documents/636/Automotive_Industry_Publication_2020.pdf">2020 PDF</a> - Use Adobe Acrobat, Copy with Formatting, and then Paste Special XML in Excel.<br> 
+
+	3. <a href="https://www.georgia.org/industries/automotive">Georgia.org Automotive PDF</a> - Manually add addresses and employee accounts.<br>
+	<br>
+	<br>
+
+	For largest EV markets (U.S., Europe and China)<br><br>  
+
+	2017 - 1% of car sales<br>  
+	2020 - 4% of car sales<br>  
+	2025 - 22% of car sales (Deutsche Bank projection)<br>  
+	<br>
+
+	<a href="https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Energy-and-Resources/using-ecosystems-to-accelerate-smart-manufacturing-regional.pdf">Using ecosystems to accelerate smart manufacturing - A regional analysis</a><br>
+	Ecosystems form when a collaborative network of stakeholders—enabled by digital technology—come together in meaningful ways to solve shared challenges and meet shared objectives.
+	<br><br>
+	
+	<a href="/localsite/info/#show=ev&state=GA">EV Map</a>
+
+</div>
+</section>
+</div>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Sample Map</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+crossorigin=""/>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+crossorigin=""></script>
+
+<script src="https://d3js.org/d3.v5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+<link rel="stylesheet" href="https://datascape.github.io/community/css/community.css" />
+    
+  <style>
+    #map { height: 400px; }
+    aside, pre { display: none; }
+    div#allLegends { position: relative; }
+    div.legend { position: relative; width: 200px; float: left; }
+  </style>
+</head>
+<body>
+<div class="testLinks">
+  One layer is loaded from CSV, the rest are defined in the html page.
+</div>
+
+<!-- 1. + 2. insert aside block + data -->
+<aside class="myDataset">
+group,lat,lon,index,address
+BK,48.157630,11.648014,1800,lothringer
+BK,48.141579,11.604729,100,sdakjh
+BK,48.143640,11.603463,1800,dsfasfslk 3.
+BK,48.157630,11.648014,1800,loithringer
+BK,48.141579,11.604729,100,sdakjh
+BK,48.143640,11.603463,1800,dsfasfslk 3.
+BK,48.143827,11.602895,500, sadkfjalsfj
+BK,48.143640,11.603463,,dsfasfslk 3.
+BK,48.143827,11.602895,, sadkfjalsfj
+BK,48.144099,11.602444,120, hansenstrasse 4A
+</aside>
+
+<aside class="d2">
+group,lat,lon,value
+KK,48.157630,11.648014,30
+KK,48.141579,11.604729,1800
+KK,48.143640,11.603463,200
+</aside>
+
+<aside class="Intermodal_Ports">
+group,lat,lon,value,address,city,state,zip
+Hulsey Rail Yard,33.749503,-84.370082,CSX,173 Boulevard SE,Atlanta,GA,30312
+Inman Rail Yard,33.795735,-84.439278,NS,1600 Marietta Rd NW,Atlanta,GA,30318
+Savannah Yard,32.069578,-81.142174,CSX,3000 Tremont Ave,Savannah,GA,31405
+James D. Mason ICTF,32.123934,-81.150914,NS,3 North Main St,Garden City,GA,31408
+Fairburn Industry Yard,33.554907,-84.595026,CSX,6700 McLarin Rd,Fairburn,GA,30213
+Whitaker Rail Yard,33.80944,-84.655451,NS,6000 Westside Rd,Austell,GA,30106
+Chatham ICTF,32.125311,-81.151331,CSX,2 Main St,Garden City,GA,31408
+Savannah,32.10035,-81.169963,NS,1 Charlie Gay Drive,Savannah,GA,31408
+Cordele Intermodal Center,31.966779,-83.755101,Heart GA,2902 East 13th Ave.,Cordele,GA,31010
+Port of Savannah Ocean Terminal,32.093702,-81.111692,"Ro/Ro, Breakbulk",55 N Lathrop Ave,Savannah,GA,31415
+Port of Brunswick,31.125887,-81.541194,"Ro/Ro, Agri-Bulk",157 Penniman Cir,Brunswick,GA,31523
+Port of Savannah,32.125311,-81.151331,Container,2 Main St,Savannah,GA,31407
+Port of Brunswick Mayor's Point Terminal,31.143373,-81.494753,Breakbulk,1100 Bay Street,Brunswick,GA,31520
+Port of Columbus,32.448734,-84.984038,Liquid Bulk,800 Lumpkin Blvd,Columbus,GA,31901
+Port of Bainbridge,30.902867,-84.606259,Liquid/Dry Bulk,1321 Spring Creek Road,Bainbridge,GA,39817
+</aside>
+
+<!--
+group,lat,lon,value
+KI,48.157630,11.648014,Sepp
+KI,48.141579,11.604729,Schorsch
+KI,48.143640,11.603463,Hans
+-->
+
+    <div id="map"></div>
+    <div id="allLegends"></div>
+    <script>
+      var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+
+      var grayscale = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+          satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
+          streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+
+      //var layerGroups = {};
+      var dataParameters = []; 
+      var dp = {};
+      var layerControl = false;
+
+      //////////////////////////////////////////////////////////////////
+      // Usage:
+      //
+      // data: csv file with 
+      //  lon, lat for position
+      //  one numerical or categorical attribute to be visualized
+      //  + (optional) one attribute calles "address" to be shown in tooltip
+      // 
+      // 1. set class of aside element above to match the name of the data
+      // 2. insert data into aside element
+      // 3. specify the following dp (data parameters) 
+      // 4. initialize map center with [lat, lon]
+      // 5. Load Layers Asynchronously
+      //
+      // options for scales:
+      // "scaleThreshold", "scaleOrdinal", "scaleOrdinal" or "scaleQuantile"
+      //////////////////////////////////////////////////////////////////
+
+      /////////// LOAD FROM HTML ///////////
+
+      // ------> for more html datasets, copy FROM here
+      // dataset 1
+      
+      dp = {
+        selector: "aside.myDataset",
+        delimiter: ",",
+        numColumns: ["lat","lon","index","address"], // Wait, address is not a number. Is this okay?
+        valueColumn: "index",
+        scaleType: "scaleThreshold",
+      }
+      dp.name = dp.selector.split(".").pop(); // name: myDataset
+      // specify end
+      dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+      dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+      dp.group = L.layerGroup();
+      dataParameters.push(dp);
+      addCircles(dp);
+      addLegend(dp.scale, dp.scaleType, dp.name);
+      
+      // ------> for more html datasets, copy TO here
+
+      // dataset 2 - Example of scaled with color-code for 7 ranges
+      /*
+      dp = {
+        selector: "aside.d2",
+        delimiter: ",",
+        numColumns: ["lat","lon","value"],
+        valueColumn: "value",
+        scaleType: "scaleQuantize",
+      }
+      dp.name = dp.selector.split(".").pop(); // name: d2
+      dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+      dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+      dp.group = L.layerGroup();
+      dataParameters.push(dp);
+      addCircles(dp);
+      addLegend(dp.scale, dp.scaleType, dp.name);
+      */
+
+      // 3. dataset 3
+      dp = {
+        selector: "aside.Intermodal_Ports",
+        delimiter: ",",
+        numColumns: ["lat","lon"],
+        valueColumn: "value",
+        scaleType: "scaleOrdinal",
+      }
+      //dp.name = dp.selector.split(".").pop(); // name: Intermodal_Ports
+      dp.name = "Intermodal Ports"
+      dp.data = readData(dp.selector, dp.delimiter, dp.numColumns, dp.valueColumn);
+      dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+      dp.group = L.layerGroup();
+      dataParameters.push(dp);
+      addCircles(dp);
+      addLegend(dp.scale, dp.scaleType, dp.name);
+
+
+
+      function loadFromCSV() {
+        // 5. Load Layers Asynchronously
+        //var dataset = "../../community/map/zip/basic/places.csv";
+
+        // Change below
+        // latColumn: "lat",
+        //      lonColumn: "lon",
+        //var dataset = "https://datascape.github.io/community/map/zip/basic/places.csv";
+
+        var dataset = "LogisticsEcosystems_Merge1.csv";
+
+        d3.csv(dataset).then(function(d) {
+            dp = {
+              numColumns: ["name","description","COI_Sector","lat","lon"],
+              valueColumn: "coi_sector",
+              latColumn: "lat",
+              lonColumn: "lon",
+              //scaleType: "scaleQuantile",
+              scaleType: "scaleOrdinal",
+            }
+            dp.name = "From CSV"; // Must match "map.addLayer(overlays" below.
+            dp.data = readCsvData(d, dp.numColumns, dp.valueColumn);
+            dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn);
+            dp.group = L.layerGroup();
+            dataParameters.push(dp);
+            overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer
+
+            if(layerControl === false) {
+              layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+            }
+            layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
+            addCircles(dp);
+            addLegend(dp.scale, dp.scaleType, dp.name);
+
+            // All layers reside in this object:
+            console.log("dataParameters:");
+            console.log(dataParameters);
+
+            // Remove from control and background.
+            //layerControl.removeLayer(grayscale);
+            //map.removeLayer(grayscale);
+
+            
+            //layerControl.removeLayer(overlays["myDataset"]); // Remove from control 
+            //map.removeLayer(overlays["myDataset"]); // Remove from map
+
+            map.addLayer(overlays[dp.name]);
+        })
+        .catch(function(error){ 
+             alert("Data loading error: " + error)
+        })
+      }
+      loadFromCSV();
+
+
+      /////////// MAP SETTINGS ///////////
+      
+      var mapCenter = [32.1656, -82.9001]; // [latitude, longitude]
+
+      var map = L.map('map', {
+        center: mapCenter,
+        scrollWheelZoom: false,
+        zoom: 6,
+        layers: [grayscale, dataParameters[0].group]
+      });
+
+      var baseLayers = {
+        "Grayscale": grayscale,
+        "Streets": streets,
+        "Satellite": satellite
+      };
+
+      var overlays = {};
+      dataParameters.forEach(function(ele) {
+        overlays[ele.name] = ele.group;
+      })
+      if(layerControl === false) {
+        layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+      }
+
+
+      /////////////////////////////////////////
+      // helper functions
+      /////////////////////////////////////////
+      function addLegend(scale, scaleType, title) {
+        var svg = d3.select("#allLegends")
+          .append("div")
+            .attr("class", "legend "  + title)
+          .append("svg")
+            .style("width", 200)
+            .style("height", 300);
+
+        svg.append("g")
+            .attr("class", "legend")
+            .attr("transform", "translate(20,20)");
+
+        var legend = d3.legendColor()
+          .labelFormat(d3.format(".2f"))
+          .title(title);
+      
+        if (scaleType === "scaleThreshold") {
+          legend = legend.labels(d3.legendHelpers.thresholdLabels);
+        }
+
+        legend.scale(scale);  
+
+        svg.select("g.legend")
+          .call(legend);
+      }
+      
+      function addCircles(dp) {
+        var circle;
+        var colorScale = dp.scale;
+        dp.data.forEach(function(element) {
+          if (typeof dp.latColumn == "undefined") {
+            dp.latColumn = "lat";
+          }
+          if (typeof dp.lonColumn == "undefined") {
+            dp.lonColumn = "lon";
+          }
+          circle = L.circle([element[dp.latColumn], element[dp.lonColumn]], {
+              color: colorScale(element[dp.valueColumn]),
+              fillColor: colorScale(element[dp.valueColumn]),
+              fillOpacity: 1,
+              radius: 5000 // was 50
+          }).addTo(dp.group);
+          circle.bindPopup("ID: " + element[dp.valueColumn] + "<br>Latitude: " + element[dp.latColumn] + "<br>Address: " + element.address);
+        });
+      }
+
+      // see also: http://d3indepth.com/scales/
+      function getScale(data, scaleType, valueCol) {
+        var scale;
+        if (scaleType === "scaleThreshold") {
+          var min = d3.min(data, function(d) { return d[valueCol]; });
+          var max = d3.max(data, function(d) { return d[valueCol]; });
+          var d = (max-min)/7;
+          scale = d3.scaleThreshold()
+            .domain([min+1*d,min+2*d,min+3*d,min+4*d,min+5*d,min+6*d])
+            .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+        } else if (scaleType === "scaleQuantize") {
+          scale = d3.scaleQuantize()
+            .domain(d3.extent(data, function(d) { return d[valueCol]; }))
+            .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+        } else if (scaleType === "scaleQuantile") {
+          scale = d3.scaleQuantile()
+            .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
+            .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);            
+        } else if (scaleType === "scaleOrdinal") {
+          scale = d3.scaleOrdinal()
+            .domain(data.map(function(d) { return d[valueCol]; }))
+            .range(d3.schemePaired);
+        }
+        return scale;
+      }
+
+      function readData(selector, delimiter, columnsNum, valueCol) {
+        var psv = d3.dsvFormat(delimiter);
+        var initialData = psv.parse(removeWhiteSpaces(d3.select(selector).text())); 
+        _data = initialData.filter(function(e) { return e[valueCol].length !== 0; });
+        console.log("Skipped: " + (initialData.length - _data.length) + " rows.");
+        
+        if (typeof columnsNum !== "undefined") {
+          _data.forEach( function (row) {
+            convertToNumber(row, columnsNum);
+          });
+        }
+        //console.log(_data);
+        return _data;
+      }
+      function readCsvData(_data, columnsNum, valueCol) {
+        //console.log(_data);
+        
+        if (typeof columnsNum !== "undefined") {
+          _data.forEach( function (row) {
+            //row = removeWhiteSpaces(row);
+            convertToNumber(row, columnsNum);
+          });
+        }
+        console.log(_data);
+        return _data;
+      }
+      function convertToNumber(d, _columnsNum) {
+        for (var perm in d) {
+          if (_columnsNum.indexOf(perm) > -1)
+            if (Object.prototype.hasOwnProperty.call(d, perm)) {
+              d[perm] = +d[perm];
+            }
+          }  
+        return d;
+      } 
+	  
+	  function removeWhiteSpaces (str) {
+		  return str.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
+	  }
+    </script>
+  </body>
+</html>

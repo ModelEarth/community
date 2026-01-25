@@ -1,0 +1,17 @@
+.DS_Store
+*.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+yarn.lock
+.venv
+dist/
+build/
+start/dataset/icons/agriculture.png
+start/dataset/icons/art-01.png
+start/dataset/icons/biomass-01.png
+start/dataset/icons/localproduct-01.png
+farmfresh/scraped
+out1
+.idea/

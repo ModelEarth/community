@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Google One Tap Sample</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<script>
+if (window.location.protocol != 'https:' && location.host.indexOf('localhost') < 0) {
+    location.href = location.href.replace("http://", "https://");
+}
+</script>
+
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
+<link rel="stylesheet" href="../../css/community.css" />
+<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+
+
+<!--
+    data-login_uri post causes:
+    405 - HTTP verb used to access this page is not allowed.
+-->
+<style>
+button {
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    letter-spacing: .25px;
+    padding-left:10px;
+    padding-right:10px;
+    min-width: 100px;
+    color: #fff;
+    border: 1px solid #7dcc22;
+    background-color: #7dcc22;
+}
+button:hover {
+    border: 1px solid #67cc36 !important;
+    background-color: #67cc36 !important;
+}
+.orangebutton {
+    border: 1px solid #f47d22;
+    background-color: #f47d22;
+}
+.orangebutton:hover {
+    border: 1px solid #f36736 !important;
+    background-color: #f36736 !important;
+}
+</style>
+</head>
+
+<body>
+<div id="header" style="display:none"></div>
+<div style="height:60px"></div>
+
+<div class="content contentpadding" style="padding-top: 0px">
+
+<div style="float:left; border:1px solid #ccc; padding:20px; margin-right:40px; max-width:400px">
+    <p><b>Quickstart Output</b> - After authorizong, loads user name and image before One-Tap when hitting reload.</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" class="orangebutton" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+
+
+
+
+
+    <h2 style="clear:both; padding-top:20px">Copied from Quickstart</h2>
+
+    <a href="../../../crowdsource/gsample">View Quickstart</a>
+    <br><br>
+
+    <div style="font-size:12px">
+        Valid domains:<br>
+        https://model.earth/community/resources/google-onetap/<br>
+        https://model.georgia.org/community/resources/google-onetap/<br>
+        http://localhost:8887/community/resources/google-onetap/<br><br>
+    </div>
+
+    <script type="text/javascript">
+      // Client ID and API key from the Developer Console
+      // https://developers.google.com/identity/one-tap/web/guides/get-google-api-clientid
+      // Using Safari Browser for Georgia maps Georgia Directory account.
+      var CLIENT_ID = '573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com';
+      var API_KEY = 'AIzaSyBMKgvChZs_lMzw65sRAJGDHSl-T3J0uvY'; // Browser Key
+
+      // Array of API discovery doc URLs for APIs used by the quickstart
+      // ,"https://www.googleapis.com/calendar/v3/users/me/calendarList"
+      var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4","https://people.googleapis.com/$discovery/rest?version=v1"];
+
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      // Additional calendar scopes here: https://developers.google.com/calendar/auth could add  https://www.googleapis.com/auth/calendar.readonly
+      var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
+
+      var authorizeButton = document.getElementById('authorize_button');
+      var signoutButton = document.getElementById('signout_button');
+
+      /**
+       *  On load, called to load the auth2 library and API client library.
+       */
+      function handleClientLoad() {
+        gapi.load('client:auth2', initClient);
+        //gapi.load('client:auth2', initClientWorks);
+      }
+
+      /**
+       *  Initializes the API client library and sets up sign-in state
+       *  listeners.
+       */
+      function initClientWorks() {
+        gapi.client.init({DISCOVERY_DOCS})
+      }
+
+      function initClient() {
+        gapi.client.init({
+          apiKey: API_KEY,
+          clientId: CLIENT_ID,
+          discoveryDocs: DISCOVERY_DOCS,
+          scope: SCOPES
+        }).then(function () {
+          // Listen for sign-in state changes.
+          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+          // Listen for changes to current user.
+          //gapi.auth2.currentUser.listen(userChanged);
+
+          // Handle the initial sign-in state.
+          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+          authorizeButton.onclick = handleAuthClick;
+          signoutButton.onclick = handleSignoutClick;
+        }, function(error) {
+          appendPre(JSON.stringify(error, null, 2));
+        });
+      }
+
+      var userChanged = function (user) {
+        console.log('User now: ', user);
+        googleUser = user;
+        updateGoogleUser();
+        document.getElementById('curr-user-cell').innerText =
+          JSON.stringify(user, undefined, 2);
+      };
+
+      /**
+       *  Called when the signed in status changes, to update the UI
+       *  appropriately. After a sign-in, the API is called.
+       */
+      function updateSigninStatus(isSignedIn) {
+        if (isSignedIn) {
+          authorizeButton.style.display = 'none';
+          signoutButton.style.display = 'block';
+
+          //if (auth2.isSignedIn.get()) {
+          /*
+            var profile = auth2.currentUser.get().getBasicProfile();
+            console.log('ID: ' + profile.getId());
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail());
+          */
+          //}
+          listMajors();
+
+          // BUGBUG - This will cause an error if the user has not already authorized Quickstart Output
+          // and they then approve One-Tap
+          // makeApiCall();
+        } else {
+          authorizeButton.style.display = 'block';
+          signoutButton.style.display = 'none';
+        }
+      }
+
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick(event) {
+        gapi.auth2.getAuthInstance().signIn();
+      }
+
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick(event) {
+        gapi.auth2.getAuthInstance().signOut();
+      }
+
+      /**
+       * Append a pre element to the body containing the given message
+       * as its text node. Used to display the results of the API call.
+       *
+       * @param {string} message Text to be placed in pre element.
+       */
+      function appendPre(message) {
+        var pre = document.getElementById('content');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
+
+      /**
+       * Print the names and majors of students in a sample spreadsheet:
+       * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+
+        Copy of above
+        https://docs.google.com/spreadsheets/d/1N8nVvIXhVeiWuxOph8Xrd-3gJTvTf2PX1n0-AAwAtpQ/edit?usp=sharing
+
+        mapsforus
+        1JDD36dOvy5TWsmfg0g4r8x9MMyuidRgpJAdDFD9HiTQ
+       * 
+       */
+      function listMajors() {
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: '1N8nVvIXhVeiWuxOph8Xrd-3gJTvTf2PX1n0-AAwAtpQ',
+          range: 'Class Data!A2:E',
+        }).then(function(response) {
+          var range = response.result;
+          if (range.values.length > 0) {
+            appendPre('Name, Major:');
+            for (i = 0; i < range.values.length; i++) {
+              var row = range.values[i];
+              // Print columns A and E, which correspond to indices 0 and 4.
+              appendPre(row[0] + ', ' + row[4]);
+            }
+          } else {
+            appendPre('No data found.');
+          }
+        }, function(response) {
+          appendPre('Error: ' + response.result.error.message);
+        });
+      }
+
+      // Load the API and make an API call.  Display the results on the screen.
+      function makeApiCall() {
+        gapi.client.people.people.get({
+          'resourceName': 'people/me',
+          'requestMask.includeField': 'person.names,person.photos'
+        }).then(function(resp) {
+          var p = document.createElement('p');
+          var name = resp.result.names[0].givenName;
+          var photo = 
+
+          p.appendChild(document.createTextNode('Hello, '+name+'!'));
+
+          var DOM_img = document.createElement("img");
+          DOM_img.src = resp.result.photos[0].url;
+          p.appendChild(DOM_img);
+          
+          document.getElementById('content').appendChild(p);
+        });
+      }
+
+    </script>
+
+
+</div>
+
+<div style="overflow:auto">
+
+  <h1>
+    <b style="font-size:16px">Project</b><br>
+    Combine Google API<br>
+    Client for Javascript<br>
+    with One-Tap</h1>
+
+  <div id="g_id_onload"
+       data-client_id="573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"
+       data-auto_select="true"
+       
+       data-context="use"
+       data-your_own_param_1_to_login="any_value"
+       data-your_own_param_2_to_login="any_value2"
+       data-callback="handleCredentialResponse"
+       data-moment_callback="continueWithNextIdp"
+
+       data-prompt_parent_idX="g_id_onload"
+       styleX="margin-bottom:400px;"
+       >
+  </div>
+
+  Newer version resides at <a href="http://model.earth/editor/onetap/">http://model.earth/editor/onetap</a> - <a href="https://github.com/localsite/editor">GitHub</a><br><br>
+
+  <a href="https://developers.google.com/identity/one-tap/web/guides/handle-credential-responses-js-functions" target="ontap-docs">One-Tap</a> is included in the current page with a <a href="../../../crowdsource/gsample/">Google API Client sample</a>. 
+  This <a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a> post describes some of the timing issues. 
+
+  <!--
+  Here's an <a href="../google-yolo">older example of One-Tap</a> by Zapier that uses an iFrame 
+  to position within a page.
+  <br><br>
+  -->
+
+  We're working toward allowing users to edit existing rows in a Google Sheet using REST/CRUD with a single-page-app. Also see our progress with server-side Google Auth using <a href="https://model.earth/crowdsource/">Python with Flask</a>.<br><br>
+
+
+  You'll need to be logged into the Google gmail account in another browser window 
+  for the One-Tap popup to appear on this page.<br>
+
+  If you click X in the popup, you'll need to clear your cookies and log into your gmail account again for the popup to appear.
+  <br><br>
+
+  <!--
+  DONE: Assign the "credential" object in the handleCredentialResponse function. 
+  This could have additional insight: 
+  <a href="https://codelabs.developers.google.com/codelabs/credential-management-api/index.html?index=..%2F..index#3">Store credential on registration</a><br><br>
+  -->
+
+  1. TO DO: Uncomment the second makeApiCall() function so the user name and image appears when the user has clicked the "Authorize" button without 
+  using One-Tap. Modify the script to prevent the error. 
+  See <a href="https://stackoverflow.com/questions/48953745/how-to-use-the-google-api-client-for-javascript-with-a-one-tap-sign-in-flow/49023255#49023255">Stack Overflow</a> post describing the timing issue.
+  <br><br>
+
+  2. TO DO: Currently the user name and image only appear 
+  if the user has authorized via Quickstart (displayed to the left).<br>
+  Hit reload after authorizing to see user name and image appear on the left.
+  Try to display the user name and image following auto-login only by One-Tap, without authoizing on the left. 
+  Use the notification.clientId returned by One-Tap.
+  <!--(This may not be possible since One-Tap provides auth and the other client apporoval.)-->
+  <br><br>
+
+
+
+  3. TO DO: Hide the "Sign Out" button below if the user is not signed in via One-Tap.<br><br>
+
+  The sign out button works if you have already been auto-logged in.<br><br>
+  <button class="orangebutton g_id_signout">Sign Out</button>
+  <br><br>
+
+  4. TO DO: The "Sign In" button below is not yet activated.
+  Have this display the One-Tap popup after the user has clicked the X in the One-Tap popup.  
+  The message "suppressed_by_user" is triggered in an alert within this page after clicking the X and hitting reload. 
+  You can clear recent cookies to restore the One-Tap popup. Log back in to GMail after clearing recent cookies.<br><br>
+
+  <!--
+  <button class="g_id_signin" style="margin-right:5px">Sign In 2</button> - Oddly, the content of this button gets replaced with an iFrame. This was not occuring initially. The button has never worked.<br><br>
+  -->
+
+  <button style="margin-right:5px">Sign In</button>
+
+
+</div>
+
+
+<!-- Google API Client 
+<script defer src="https://smartlock.google.com/client"></script>
+-->
+
+<script src="https://accounts.google.com/gsi/client"></script>
+<script>
+
+// How do we get credential.id for the following?
+/*
+const clientId = "573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"; // Also below
+const config =  {
+  response_type: 'permission',
+  scope: 'CALENDAR_SCOPE',
+  client_id: clientId,
+  login_hint: credential.id,
+  promt: 'none',
+}
+gapi.auth2.authorize(config, function(response) {
+  // No need to `setToken`, it's done for you by auth2.
+  let calConfig = {discoveryDocs} // only of google calendar
+  window.gapi.client.init(calConfig).then(function() {
+    // then execute a calendar call:
+    window.gapi.client.calendar.events.list({'calendarId': 'primary'})
+  })
+})
+*/
+
+
+
+// From Yolo - not yet working - delete unless second iFrame is added.
+window.addEventListener('message', (event) => {
+console.log('addEventListener message');
+const iframeElt = document.getElementById('google-iframe');
+
+switch(event.data.type) {
+  case 'verifyPing':
+    // This part handles the initial handshake by the Google Yolo iframe.
+    // It is sent by OpenYOLO https://github.com/openid/OpenYOLO-Web/blob/dc841704619d7801da0b860c91953ff730fca07f/ts/protocol/post_messages.ts#L27
+    event.source.postMessage({
+      type: 'verifyAck',
+      data: event.data.data
+    }, '*');
+    break;
+  case 'credential':
+    // The user selected a credential.
+    console.log('Received credential!', event.data.credential);
+    break;
+  case 'error':
+    // An error happened.
+    console.log('Error:', event.data.error);
+    break;
+  case 'height':
+    // Update the parent <iframe> height to match GoogleYolo <iframe> height
+    iframeElt.style.height = event.data.height + 'px';
+    break;
+  default:
+    // Do nothing.
+}
+});
+
+
+// ONE TAP
+function handleCredentialResponse(notification) {
+    console.log("notification.credential():");
+    console.log(notification.credential);
+    //alert("handleCredentialResponse");
+    // Also  select_by: "auto"
+    // How do we get the credential here?
+
+    const clientId = "573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com"; // Also below
+    const config =  {
+      response_type: 'permission',
+      scope: 'CALENDAR_SCOPE',
+      client_id: notification.clientId,
+      login_hint: notification.credential,
+      promt: 'none',
+    }
+    /*
+    gapi.auth2.authorize(config, function(response) {
+      // No need to `setToken`, it's done for you by auth2.
+      let calConfig = {DISCOVERY_DOCS} // only of google calendar
+      window.gapi.client.init(calConfig).then(function() {
+        // then execute a calendar call:  causes error  Cannot read property 'events' of undefined
+        //window.gapi.client.calendar.events.list({'calendarId': 'primary'})
+      })
+    })
+    */
+
+    document.getElementById('content').innerHTML = ""; // Clear existing
+    listMajors();
+    makeApiCall();
+}
+function continueWithNextIdp(notification) {
+
+  if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
+      console.log("Try Next provider if One Tap is not displayed or skipped. You may need to log into your Google account.")
+      console.log("Not displayed reason: " + notification.getNotDisplayedReason());
+  }
+}
+// Set either the data-login_uri attribute or the data-callback attribute. 
+// data-login_uri requires server page accepting posts.
+</script>
+
+</div>
+
+
+
+
+<!-- For gapi -->
+<script async defer src="https://apis.google.com/js/api.js"
+  onload="this.onload=function(){};handleClientLoad()"
+  onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+
+</body>
+</html>

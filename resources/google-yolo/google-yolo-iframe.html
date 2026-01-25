@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      /* Overrides for Google Yolo <iframe> */
+      .google-inserted-frame {
+        position: static !important; /* Override Google's absolute positioning */
+        width: calc(100% + 18px) !important; /* Override Google's fixed width to support responsive behavior */
+        margin: -18px 0 0 0; /* Inside the <iframe>, Google sets some padding. This negative margin attempts to undo it. If their styles change, this number must also change */
+      }
+    </style>
+    <script defer src="https://smartlock.google.com/client"></script>
+    <script>
+      // Consent setup:
+      // https://developers.google.com/identity/one-tap/web/guides/get-google-api-clientid
+      
+      // Shows additional text:
+      // 412842310182-nnsbnt2ropvf4ujenj9ueib2vupdd5sj.apps.googleusercontent.com
+      const PUBLIC_CLIENT_ID =
+          '573354869595-has3f2m227unctafuftod793j5t9oia1.apps.googleusercontent.com';
+      const CONFIG = {
+        supportedAuthMethods: [
+          'https://accounts.google.com'
+        ],
+        supportedIdTokenProviders: [{
+          uri: 'https://accounts.google.com',
+          clientId: PUBLIC_CLIENT_ID
+        }]
+      };
+
+      const messageParent = data => {
+        window.parent.postMessage(data, '*' /* REPLACE BY TOP LEVEL DOMAIN! */);
+      };
+
+      window.onGoogleYoloLoad = (googleyolo) => {
+        // Set the rendering mode of the IFrame. By default, Google Yolo iframe will decide
+        // by itself where to position (based on the userAgent). bottomSheet is at the bottom
+        // of the screen on mobile, navPopout is the top right card on desktop. Forcing the
+        // rendering mode here to a single value makes sure that we have consistent behavior
+        // when positioning this iframe.
+        //
+        // openyolo is a global reference to https://github.com/openid/OpenYOLO-Web, which is
+        // what Google Yolo uses under the hood. Hopefully we can call setRenderMode on the
+        // googleyolo object itself soon.
+        openyolo.setRenderMode('navPopout');
+
+        googleyolo.hint(CONFIG).then((credential) => {
+          messageParent({ type: 'credential', credential });
+        }, (error) => {
+          messageParent({ type: 'error', error });
+        
+          if (error.type === 'noCredentialsAvailable') {
+            window.document.body.innerHTML = '<p>Make sure you are signed in to your Google account in this browser. Alternatively, you could fall back to <a href="https://support.google.com/a/answer/60224">Google SSO</a> in this case.</p>';
+          }
+        });
+
+        // GoogleYolo doesn't insert their iframe immediately. This mutation
+        // observer watches the <body> to tell when they insert the <iframe> so
+        // we can style as needed.
+        const bodyObserver = new MutationObserver(mutationsList => {
+          mutationsList.forEach(mutation => {
+            mutation.addedNodes.forEach(node => {
+              if (node.nodeName === 'IFRAME' && node.src.includes('smartlock.google.com/iframe/')) {
+                bodyObserver.disconnect();
+
+                node.classList.add('google-inserted-frame');
+
+                // We need one more observer to watch the <iframe> that Google Yolo
+                // inserted. Its style attribute will be updated with a height that
+                // needs to be passed back up to the parent iframe, to avoid any
+                // clipping. The height can change if the user is signed in with
+                // many Google accounts, and clicks the 'X more accounts' button.
+                const attributeObserver = new MutationObserver(iframeMutationsList => {
+                  let height = parseInt(iframeMutationsList[0].target.style.height);
+                  
+                  if (height === 341) {
+                    // One account is shown
+                    height = 228 - 18;
+                  }
+                  else if (height === 261) {
+                    // Two accounts shown
+                    height = 177;
+                  }
+                  else if (height === 298) {
+                    // Three or more accounts shown
+                    height = 215;
+                  }
+                  else {
+                    // Likely the expanded state, let true height through, minus top padding
+                    height -= 18;
+                  }
+                  
+                  messageParent({type: 'height', height});
+                });
+
+                attributeObserver.observe(node, { attributes: true });
+              }
+            });
+          });
+        });
+
+        bodyObserver.observe(window.document.body, { childList: true });
+      };
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Counties</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+
+<!--
+TO DO: Move leaflet and topo .js files locallly.
+-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="../../../js/d3/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<!-- Stopped working
+<script src="https://unpkg.com/topojson-client@3"></script>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+
+<script type="text/javascript" src="../../../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="../../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<!--
+Reactivate once redundant side nav is hidden when in iFrame.
+<script type="text/javascript" src="../../../../localsite/js/navigation.js"></script>
+-->
+<script type="text/javascript" src="../../../../localsite/js/localsite.js?showheader=false"></script>
+<link rel="stylesheet" href="../../../../localsite/css/base.css" id="/localsite/css/base.css" />
+
+
+<!--
+Simple example of layers and legends:
+http://bl.ocks.org/EE2dev/75be7efe3faacedbeddfc384a0c4dabc
+
+smooth-color-legend for heatmaps
+https://www.visualcinnamon.com/2016/05/smooth-color-legend-d3-svg-gradient.html
+-->
+
+<!--
+Check if this note is needed...
+Topo source: https://github.com/deldersveld/topojson/tree/master/countries/us-states
+Includes countries and provinces
+data/topo/GA-13-georgia-counties.json
+-->
+<style>
+  html,body { /* both are needed for map height in iframe */
+      height: 100%;
+  }
+  body {
+    margin: 0px;
+  }
+  .mapHolder {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  .map {
+    width:100%;
+    heightX: 100%;
+    flex: 1 1 auto;
+    }
+  #fullcolumn {
+      height:100%; /* Required for pages with maps that don't have a set height */
+  }
+  .info {
+      padding: 6px 8px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: white;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+  }
+  .info h4 {
+      margin: 0 0 5px;
+      color: #777;
+  }
+  #allLegends {
+    position: absolute;
+    bottom:30px;
+    left:15px;
+    z-index:1000;
+    background-color: #fff;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+  .info.leaflet-control {
+    min-width: 150px;
+    displayX: none;
+    bottom: 0 !important;
+  }
+  #show_county_colors {
+    position: absolute;
+    right:50px;
+    bottom:50px;
+    background-color: #fff;
+    border-radius: 18px;
+    font-size: 14px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index:2000;
+  }
+  #show_county_colors:hover {
+    background-color: #999;
+    color:#fff;
+  }
+</style>
+
+</head>
+
+<body>
+
+<!--
+BEA Arts Data
+https://nasaa-arts.org/nasaa_research/creative-economy-state-profiles/
+-->
+
+<!--
+ Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
+ -->
+<div class="mapHolder">
+<div class="map" id="mapcon"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
+</div>
+
+<div id="allLegends"></div>
+
+<div id="show_county_colors">Change Colors</div>
+
+<script type="text/javascript">
+console.time("Processing time: ");
+                        
+var neighbors;
+var topodata = {};
+var geojsonLayer;
+//var co = d3.scaleOrdinal(d3.schemeCategory20b); // Stopped working when switching from v4 to v5.
+
+//var co = d3.scaleOrdinal(); // Nice blue, but no rainbow
+
+var co = d3.scaleOrdinal(d3.schemeCategory10); // More muted blue
+
+var dataParameters = []; 
+var dp = {};
+var layerControl = false;
+
+var cluster_data = {};
+
+// Incoming domain, outgoing range. 
+// More about scales: https://www.d3indepth.com/scales/
+var color = d3.scaleOrdinal() // scaleLinear, scaleThreshold()
+    .domain([1,13]) // .domain(d3.range(0, 3))
+    .range(d3.schemePaired); // d3.schemeBlues[9]
+
+// Similar to maps/poverty
+// Get colors for map regions
+var region1 = d3.map();
+var promises = [
+
+  // CSV file contains: name,county_num,economic_region,io_region
+  //d3.csv("topo/GA_county_regions.csv", function(d) { 
+
+  // TODO: Add topo/GA-13-georgia-counties.json topo load as a promise also, so both load simultaneous.
+
+  d3.csv("topo/GA_county_regions.csv").then(function(detail_data) {
+
+    // Similar to aside
+    dp = {
+      numColumns: ["county_num","economic_region","wia_region","io_region"], // Omit "name" since not number.
+      valueColumn: "io_region",
+      //scaleType: "scaleQuantile",
+      scaleType: "scaleOrdinal",
+    }
+    dp.name = "Regions"; // For top of legend. Differs from name column.
+    dp.data = readCsvData(detail_data, dp.numColumns, dp.valueColumn); // This automatically includes all columns, even those not listed in numColumns.
+    dp.scale = getScale(dp.data, dp.scaleType, dp.valueColumn); // Used by addLegend. Returns a domain and range
+    console.log("dp.scale");
+    console.log(dp.scale);
+    dp.group = L.layerGroup(); // Places dp.name in default Leaflet layer menu
+    dataParameters.push(dp);
+    //overlays[dp.name] = dp.group; // Allows for use of dp.name with removeLayer and addLayer // Applied below instead.
+
+    console.log("dp.data: " + dp.data)
+    addLegend(dp.scale, dp.scaleType, dp.name);
+
+    // Region Output NOT WORKING
+    // Similar to maps/poverty
+    // Should name or county_num be related?
+    //region1.set(dp.county_num, +dp.economic_region); /* Including + converts to number */
+    
+  }),
+  /*
+  d3.csv("topo/GA_county_regions.csv", function(d) { 
+    region1.set(dp.county_num, +dp.io_region); 
+
+  })
+  */
+]
+Promise.all(promises).then(ready)
+
+function ready([us]) {
+  loadScript(local_app.topojson_root() + '/localsite/js/topojson-client.min.js', function(results) {
+  });
+
+    console.log("region1: ");
+    console.log(region1);
+    console.log("region1 outpu: " + region1.get(114))
+    console.dir(region1);
+
+
+    
+
+  /// moved here from window.onload below
+      var neighbors
+      var cluster_data = [];
+
+      function styleShape(feature) {
+          // Called for each topojson row
+          // console.log("feature.properties.COUNTYFP: " + feature.properties.COUNTYFP);
+          var fillColor = '#ff0000';
+          
+          // Hack - because region1 did not work like in did in maps/poverty
+          dp.data.forEach(function(datarow) { // county rows from the region lookup table
+            if (datarow.county_num == feature.properties.COUNTYFP) {
+              fillColor = color(datarow.io_region);
+            }
+          })
+          return {
+              weight: 1,
+              opacity: .5,
+              color: fillColor, // '#ccc', // 'white'
+              //dashArray: '3',
+              fillOpacity: 0.7,
+              fillColor: fillColor
+          };
+          
+      }
+
+      function styleX(feat, i){
+          var i = feat.indie;
+
+          /*
+          var coco1 = co(feat.color = d3.max(neighbors[i], function(n) {
+            console.log("n: " + n)
+            console.log(topodata.features[n])
+            return topodata.features[n].color; 
+          }) + 1 | 0);
+          */
+
+          //d.Region = region1.get(feat.properties.COUNTYFP);
+
+          // STATEFP":"13","COUNTYFP":
+
+          //console.log("feat: " + feat.indie); // 0 to 158
+
+
+          console.log("feat.properties.COUNTYFP " + +feat.properties.COUNTYFP); // Works, including + removes 00 zeros.
+
+          //console.log("region: " + region1.get(+feat.properties.COUNTYFP)); // Doesn't work
+
+          //console.log("region: " + region1.get(feat.indie)) // NaN
+
+          //console.log("region2: " + dp.economic_region1.get(feat.properties.COUNTYFP)) // Cannot read property 'get' of undefined.
+
+          // TO DO: Use feat.properties.COUNTYFP to fetch the datarow.economic_region
+
+          // applyStyle is called for each topojson row
+          var coco = co(feat.color = region1.get(+feat.properties.COUNTYFP));
+          //var coco = co(feat.color = region1.get(114));
+          //var coco = co(feat.indie);
+
+          return {
+              fillColor: coco,
+              fillOpacity: .3,
+              weight: .3
+          }
+       }
+
+      var req = new XMLHttpRequest();
+
+      // Topo data source
+      //https://github.com/deldersveld/topojson/tree/master/countries/us-states
+      var url = 'topo/GA-13-georgia-counties.json'
+
+      req.open('GET', url, true);
+      req.onreadystatechange = handler;
+      req.send();
+
+      var topoob = {};
+      topodata = {};
+      function handler(){
+
+      if(req.readyState === XMLHttpRequest.DONE) {
+
+        //map.addLayer(OpenStreetMap_BlackAndWhite)
+
+        // try and catch json parsing of the responseText
+        //try {
+              topoob = JSON.parse(req.responseText)
+
+              // Originated in community/map/leaflet/zips-sm.html
+              // zips_us_topo.json
+              // {"type":"Topology","objects":{"data":{"type":"GeometryCollection","geometries":[{"type":"Polygon
+
+              // {"type":"Topology","transform":{"scale":[0.00176728378633945,0.0012459509163533049],"translate":
+
+              //"arcs":[[38,39,40,41,42]],"type":"Polygon","properties":{"STATEFP":"13","COUNTYFP":"003","COUNTYNS":"00345784","AFFGEOID":"0500000US13003","GEOID":"13003","NAME":"Atkinson","LSAD":"06","ALAND":879043416,"AWATER":13294218}}
+
+              // Was used by applyStyle
+              ////neighbors = topojson.neighbors(topoob.objects.data.geometries);
+              neighbors = topojson.neighbors(topoob.arcs); // .properties
+
+              // ADD geometries  see https://observablehq.com/@d3/choropleth/2?intent=fork
+              //topodata = topojson.feature(topoob, topoob.objects.data)
+
+              //topodata = topojson.feature(topoob, topoob.transform)
+              topodata = topojson.feature(topoob, topoob.objects.cb_2015_georgia_county_20m)
+
+              mergeInDetailData(topodata, dp.data);
+
+              // IS THIS BEING USED?
+              //topodata.features = topodata.features.map(function(fm,i){
+              /*
+              topodata.features = topodata.features.map(function(fm,i){
+                  var ret = fm;
+                  //console.log("fm: " + fm.COUNTYFP);
+                  console.log("fm: " + fm.properties.countyfp);
+                  ret.indie = i;
+                  return ret
+                });
+              */
+
+              //dp.data.forEach(function(datarow) { // For each county row from the region lookup table
+                
+                // All these work:
+                //console.log("name:: " + datarow.name);
+                //console.log("county_num:: " + datarow.county_num);
+                //console.log("economic_region:: " + datarow.economic_region);
+
+              //})
+
+              console.log('topodata: ', topodata)
+
+              geojsonLayer = L.geoJson(topodata, {style:styleShape, onEachFeature: onEachFeature}); // Called within addTo(map)
+
+              //console.log('neigh', neighbors)
+           //}
+          //catch(e){
+          //  geojson = {};
+          //   console.log(e)
+          //}
+
+
+          //console.log(topodata)
+
+
+
+
+        //// USA
+        //var lat = 38.3;
+        //var lon = -96.5;
+        //var zoom = 5;
+
+        // Georgia
+        var lat = 32.7;
+        var lonX = -82.90;
+        var lon = -81.8;
+        var zoom = 7;
+
+        //var layer = "terrain";
+
+        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+
+        var satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr})
+
+        var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        });
+
+        var map = new L.Map('mapcon',
+        {
+            scrollWheelZoom: false,
+            center: new L.LatLng(lat,lon),
+            zoom: zoom,
+            layers: [OpenStreetMap_BlackAndWhite, dataParameters[0].group] // Indicates default layer
+        });
+        var baseLayers = {
+          "Open Street Map": OpenStreetMap_BlackAndWhite,
+          "Satellite Mapbox": satellite
+        };
+        var overlays = {
+          "Counties": geojsonLayer
+        };
+
+
+        dataParameters.forEach(function(ele) {
+          //overlays[ele.name] = ele.group; // Allows for use of dp.name with removeLayer and addLayer
+          //console.log("Layer added: " + ele.name);
+        })
+        if(layerControl === false) {
+          // Add the layers control to the map
+          layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+        }
+
+        // Make a layer active. 
+        geojsonLayer.addTo(map);
+
+        // To add additional layers:
+        //layerControl.addOverlay(dp.group, dp.name); // Appends to existing layers
+
+
+          /* Rollover effect */
+          function highlightFeature(e){
+            var layer = e.target;
+            layer.setStyle({
+              weight: 3,
+                color: '#665',
+              dashArray: '',
+              fillOpacity: .7})
+              if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                layer.bringToFront();
+              }
+            // Send text to side box
+            info.update(layer.feature.properties);
+          }
+
+          function resetHighlight(e){
+            geojsonLayer.resetStyle(e.target);
+            info.update();
+          }
+
+          function mapFeatureClick(e) {
+              var layer = e.target;
+              //map.fitBounds(e.target.getBounds()); // Zoom to boundary area clicked
+              var fips = "US13" + layer.feature.properties.COUNTYFP;
+              //location.window = 
+              window.top.location.href="../../../../localsite/info/#geo=" + fips + "&geoview=state&state=GA";
+          }
+
+          function onEachFeature(feature, layer){
+            layer.on({
+                  mouseover: highlightFeature,
+                  mouseout: resetHighlight, 
+                  click: mapFeatureClick
+            })
+          }
+
+
+          var info = L.control();
+          info.onAdd = function(map) {
+              this._div = L.DomUtil.create('div', 'info');
+              this.update();
+              return this._div;
+          }
+
+          info.update = function(props){
+              if (props) {
+                $(".info.leaflet-control").show();
+              } else {
+                $(".info.leaflet-control").hide();
+              }
+              // National
+              //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
+              
+              this._div.innerHTML = "" 
+              + (props ? "<h4>" + props.NAME + " County</h4>" : "Hover over map<br>") 
+              + (props ? "FIPS 13" + props.COUNTYFP : "")
+              
+
+              // To fix if using state - id is not defined
+              // Also, other state files may need to have primary node renamed to "data"
+              //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
+          }
+
+          info.addTo(map);
+
+
+      }
+
+
+
+   } // end ready
+
+  /// end moved
+
+}
+
+
+
+
+window.onload = function () {
+
+  // Moved to function ready so regions are availble.
+
+  // TO DO: Try moving tile loading portion back here for fast initial display.
+    
+}
+
+function mergeInDetailData(topodata,detail_data) {
+  var data_by_id = d3.nest() // where id is a zipcode or countyID
+    .key(function(d){return d.zcta;})
+    .entries(detail_data);
+
+  topodata.features.forEach(function(d) {
+        // d.properties.zip becomes d.properties.COUNTYFP
+        var topoID = data_by_id.find(x=>x.key === d.properties.COUNTYFP.replace(/^0+/, ''));
+        if(topoID) {
+            columns.forEach(function(c){
+                d[c] = parseFloat(topoID.values[0][c]);
+            });
+            cluster_data.push(d); // Topo shape data now has census attributes added, including zcta
+        }
+  });
+  return cluster_data;
+}
+
+/////////////////////////////////////////
+// helper functions
+/////////////////////////////////////////
+function addLegend(scale, scaleType, title) {
+  var svg = d3.select("#allLegends")
+    .append("div")
+      .attr("class", "legend "  + title)
+    .append("svg")
+      .attr("id", "legendSVG1")
+      //.style("width", 120)
+      //.style("height", 270);
+      //.style("overflow","visible");
+
+  svg.append("g") // Inner div
+      .attr("id", "legend1")
+      .attr("class", "legend")
+      .attr("transform", "translate(20,20)");
+
+  var legend = d3.legendColor()
+    .labelFormat(d3.format(".2f"))
+    .title(title);
+
+  if (scaleType === "scaleThreshold") {
+    legend = legend.labels(d3.legendHelpers.thresholdLabels);
+  }
+
+  legend.scale(scale);  
+
+  svg.select("g.legend")
+    .call(legend);
+
+  // Fit legend SCG box height and width to it's internal content.
+  var legendSVG = document.getElementById("legendSVG1");
+  var gElement = document.getElementById("legend1");
+  var bbox = gElement.getBBox();
+  legendSVG.setAttribute("height", bbox.height + 32);
+  legendSVG.setAttribute("width", bbox.width + 40);
+}
+
+function readCsvData(_data, columnsNum, valueCol) {
+  if (typeof columnsNum !== "undefined") {
+    _data.forEach( function (row) {
+      //row = removeWhiteSpaces(row);
+      convertToNumber(row, columnsNum);
+    });
+  }
+  console.log(_data);
+  return _data;
+}
+function convertToNumber(d, _columnsNum) {
+  for (var perm in d) {
+    if (_columnsNum.indexOf(perm) > -1)
+      if (Object.prototype.hasOwnProperty.call(d, perm)) {
+        d[perm] = +d[perm];
+      }
+    }  
+  return d;
+} 
+
+function getScale(data, scaleType, valueCol) {
+  // Also see: http://d3indepth.com/scales/
+  var scale;
+  if (scaleType === "scaleThreshold") {
+    var min = d3.min(data, function(d) { return d[valueCol]; });
+    var max = d3.max(data, function(d) { return d[valueCol]; });
+    var d = (max-min)/7;
+    scale = d3.scaleThreshold()
+      .domain([min+1*d,min+2*d,min+3*d,min+4*d,min+5*d,min+6*d])
+      .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+  } else if (scaleType === "scaleQuantize") {
+    scale = d3.scaleQuantize()
+      .domain(d3.extent(data, function(d) { return d[valueCol]; }))
+      .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);
+  } else if (scaleType === "scaleQuantile") {
+    scale = d3.scaleQuantile()
+      .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
+      .range(['#ffffe0','#ffd59b','#ffa474','#f47461','#db4551','#b81b34','#8b0000']);            
+  } else if (scaleType === "scaleOrdinal") {
+    scale = d3.scaleOrdinal()
+      //.domain(data.map(function(d) { return d[valueCol]; }))
+      .domain(data.map(function(d) { return d[valueCol]; }).sort(function(a, b){return a-b}))
+      .range(d3.schemePaired);
+  }
+  return scale;
+}
+
+$(document).on("click", "#show_county_colors", function(event) {
+  geojsonLayer.eachLayer(function (layer) {  
+    if(layer.feature.properties.COUNTYFP == '121') { // Fulton County
+      layer.setStyle({fillColor :'blue'})
+      // Or call a function:
+      // layer.setStyle(function...)
+
+      // https://gis.stackexchange.com/questions/75590/setstyle-function-for-geojson-features-leaflet
+    }
+  });
+  //alert("done"); // Occurs before layers above appear.
+});
+console.timeEnd("Processing time: ");
+</script>
+
+<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
+</body>
+</html>

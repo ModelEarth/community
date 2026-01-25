@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Routing Sample</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
+<link rel="stylesheet" href="../../css/community.css" />
+<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+
+<!--
+TO DO:
+Update the following .js includes to local links.  
+-->
+
+<!-- Might be able to remove some of these lines.  At least copy files locally.  -->
+<script src="https://www.liedman.net/leaflet-routing-machine/public/lib/highlight.pack.js"></script>
+
+<!-- CSS -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.css">
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.css">
+<![endif]-->
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/normalize.css">
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/skeleton.css">
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/lib/prism.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<link rel="stylesheet" href="https://www.liedman.net/leaflet-routing-machine/public/css/site.css" />
+<script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
+<script src="https://unpkg.com/leaflet.icon.glyph@0.2.0/Leaflet.Icon.Glyph.js"></script>
+<script src="https://www.liedman.net/leaflet-routing-machine/lib/Control.Geocoder.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+
+
+
+<!--
+Worked with these, but address fields did not appear.
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+crossorigin=""></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+<script src="https://unpkg.com/leaflet.icon.glyph@0.2.0/Leaflet.Icon.Glyph.js"></script>
+-->
+
+
+
+<!--script src="config.js"></script-->
+
+
+  <style>
+	body {
+    	margin: 0px;
+		font-family: Lato, sans-serif;
+		color: #555;
+	}
+	h1, h2 {
+		font-weight:100;
+		color: #444;
+	}
+	.sectionContent {
+		font-family: 'Lato', sans-serif;
+		font-family: Lato, sans-serif; /* not installed: NunitoSans-Regular */
+		font-size: 14px;
+		position: relative;
+		max-width: 1100px;
+		margin: 0 auto !important;
+		float: none !important;
+	    font-size: 15px;
+	    height: auto;
+	    padding-left: 20px;
+	    padding-right: 25px;
+		font-weight: 400;
+	}
+
+	</style>
+  
+</head>
+
+<body>
+
+
+
+	<!-- https://github.com/perliedman/leaflet-routing-machine -->
+	<div id="map"></div><br>
+	<style>
+	#map { height: 600px; }
+	</style>
+	<script>
+
+
+window.LRM = {
+	// IMPORTANT: SET YOUR OWN MAPBOX KEY, THIS ONE IS FROM liedman.net main sample
+	apiToken: 'pk.eyJ1IjoiZGF0YXBvcnRhbCIsImEiOiJjam1tOXhpeGUwZ3IyM3BtbGIwbWV1NjIxIn0.K07Nah9ZjewCR0iV4pYw_Q'
+};
+
+var map = L.map('map', { scrollWheelZoom: false }),
+	waypoints = [
+		// Remove the center point to see 2 alternative routes.
+
+		
+		L.latLng(32.8771, -85.1505), // "The Ray" 85 Freeway by West Point
+		L.latLng(33.0026, -85.0550), // Interface Flor Showroom
+		L.latLng(33.0362, -85.0322), // City of LaGrange
+
+		L.latLng(33.7669, -84.3569), // Carter Center
+		L.latLng(33.7682, -84.3646), // Old Fourth Ward Park
+		L.latLng(33.7713, -84.3658), // North Ave Smart Corridor, Ponce City Market
+
+		
+		L.latLng(33.7784, -84.3999), // Kendeda Living Building
+		L.latLng(33.7773, -84.3895), // Tech Square
+	    L.latLng(33.7838, -84.3837), // 
+	    L.latLng(33.8882, -84.3035), // Chamblee MARTA Station
+	    L.latLng(33.9191, -84.0167) // Gwinnett - http://smartcities.ipat.gatech.edu/gwinnett-county
+	    
+	];
+
+L.tileLayer('https://a.tiles.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}{r}.png?access_token=' + LRM.apiToken, {
+	maxZoom: 15,
+	attribution: 'Maps by <a href="https://www.mapbox.com/about/maps/">MapBox</a>. ' +
+		'Routes from <a href="http://project-osrm.org/">OSRM</a>, ' +
+		'data uses <a href="http://opendatacommons.org/licenses/odbl/">ODbL</a> license'
+}).addTo(map);
+
+var control = L.Routing.control({
+		router: L.routing.mapbox(LRM.apiToken),
+		plan: L.Routing.plan(waypoints, {
+			createMarker: function(i, wp) {
+				return L.marker(wp.latLng, {
+					draggable: true,
+					icon: L.icon.glyph({ glyph: String.fromCharCode(65 + i) })
+				});
+			},
+			geocoder: L.Control.Geocoder.nominatim(),
+			routeWhileDragging: true
+		}),
+		routeWhileDragging: true,
+		routeDragTimeout: 250,
+		showAlternatives: true,
+		altLineOptions: {
+			styles: [
+				{color: 'black', opacity: 0.15, weight: 9},
+				{color: 'white', opacity: 0.8, weight: 6},
+				{color: 'blue', opacity: 0.5, weight: 2}
+			]
+		}
+	})
+	.addTo(map)
+	.on('routingerror', function(e) {
+		try {
+			map.getCenter();
+		} catch (e) {
+			map.fitBounds(L.latLngBounds(waypoints));
+		}
+
+		handleError(e);
+	});
+
+L.Routing.errorControl(control).addTo(map);
+
+
+	</script>
+
+<!-- Optional - prism.js supposedly puts a dark edge around text. -->
+<!--script src="https://www.liedman.net/leaflet-routing-machine/lib/prism.js"></script-->
+
+
+    <script type="text/javascript">
+      function handleError(e) {
+        if (e.error.status === -1) {
+          // HTTP error, show our error banner
+          document.querySelector('#osrm-error').style.display = 'block';
+          L.DomEvent.on(document.querySelector('#osrm-error-close'), 'click', function(e) {
+            document.querySelector('#osrm-error').style.display = 'none';
+            L.DomEvent.preventDefault(e);
+          });
+        }
+      }
+    </script>
+
+<!--
+&nbsp; IMPORTANT: SET YOUR OWN MAPBOX KEY PRIOR TO PUBLISHING IN A PRODUCTION SITE.
+-->
+
+<div class="content contentpadding">
+	<div id="introDiv"></div>
+</div>
+
+<script>
+  loadMarkdown("intro.md", "introDiv", "_parent");
+</script>
+<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
+</body>
+</html>

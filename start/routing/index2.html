@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Routing Sample</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+crossorigin=""></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+<script src="https://unpkg.com/leaflet.icon.glyph@0.2.0/Leaflet.Icon.Glyph.js"></script>
+<!--script src="config.js"></script-->
+
+
+  <style>
+	body {
+    	margin: 0px;
+		font-family: Lato, sans-serif;
+		color: #555;
+	}
+	h1, h2 {
+		font-weight:100;
+		color: #444;
+	}
+	.localonly {
+		display:none;
+	}
+	.sectionContent {
+		font-family: 'Lato', sans-serif;
+		font-family: Lato, sans-serif; /* not installed: NunitoSans-Regular */
+		font-size: 14px;
+		position: relative;
+		max-width: 1100px;
+		margin: 0 auto !important;
+		float: none !important;
+	    font-size: 15px;
+	    height: auto;
+	    padding-left: 20px;
+	    padding-right: 25px;
+		font-weight: 400;
+	}
+
+	</style>
+  
+</head>
+<body>
+	<!-- https://github.com/perliedman/leaflet-routing-machine -->
+	<div id="map"></div><br>
+	<style>
+	#map { height: 600px; }
+	</style>
+	<script>
+
+
+window.LRM = {
+	// IMPORTANT: SET YOUR OWN MAPBOX KEY, THIS ONE IS FROM liedman.net set
+	apiToken: 'pk.eyJ1IjoibGllZG1hbiIsImEiOiJjamR3dW5zODgwNXN3MndqcmFiODdraTlvIn0.g_YeCZxrdh3vkzrsNN-Diw'
+};
+
+var map = L.map('map', { scrollWheelZoom: false }),
+	waypoints = [
+		L.latLng(48.8588,2.3469),
+		L.latLng(52.3546,4.9039)
+	];
+
+L.tileLayer('https://a.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}{r}.png?access_token=' + LRM.apiToken, {
+	attribution: 'Maps by <a href="https://www.mapbox.com/about/maps/">MapBox</a>. ' +
+		'Routes from <a href="http://project-osrm.org/">OSRM</a>, ' +
+		'data uses <a href="http://opendatacommons.org/licenses/odbl/">ODbL</a> license'
+}).addTo(map);
+
+var control = L.Routing.control({
+		router: L.routing.mapbox(LRM.apiToken),
+		plan: L.Routing.plan(waypoints, {
+			createMarker: function(i, wp) {
+				return L.marker(wp.latLng, {
+					draggable: true,
+					icon: L.icon.glyph({ glyph: String.fromCharCode(65 + i) })
+				});
+			},
+			//geocoder: L.Control.Geocoder.nominatim(),
+			routeWhileDragging: true
+		}),
+		routeWhileDragging: true,
+		routeDragTimeout: 250,
+		showAlternatives: true,
+		altLineOptions: {
+			styles: [
+				{color: 'black', opacity: 0.15, weight: 9},
+				{color: 'white', opacity: 0.8, weight: 6},
+				{color: 'blue', opacity: 0.5, weight: 2}
+			]
+		}
+	})
+	.addTo(map)
+	.on('routingerror', function(e) {
+		try {
+			map.getCenter();
+		} catch (e) {
+			map.fitBounds(L.latLngBounds(waypoints));
+		}
+
+		handleError(e);
+	});
+
+L.Routing.errorControl(control).addTo(map);
+
+
+	</script>
+
+
+<script src="https://www.liedman.net/leaflet-routing-machine/lib/prism.js"></script>
+    <script type="text/javascript">
+      function handleError(e) {
+        if (e.error.status === -1) {
+          // HTTP error, show our error banner
+          document.querySelector('#osrm-error').style.display = 'block';
+          L.DomEvent.on(document.querySelector('#osrm-error-close'), 'click', function(e) {
+            document.querySelector('#osrm-error').style.display = 'none';
+            L.DomEvent.preventDefault(e);
+          });
+        }
+      }
+    </script>
+
+&nbsp; DO NOT USE THE MAPBOX KEY IN THIS PAGE<br><br>
+
+index.html and letters.html nclude address of points at top of legend since .js includes differ.<br><br>
+
+
+</body>
+</html>

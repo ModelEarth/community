@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Community Forecasting by Zipcode</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+
+<style>
+    body {
+        padding: 50px;
+    }
+    .highcharts-title {
+        font-size: 18pt !important;
+    }
+</style>
+
+<!--
+<script type="text/javascript" src="//d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+-->
+
+<script type="text/javascript" src="../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<link rel="stylesheet" href="../css/community.css"/>
+
+<script type="text/javascript">
+    var zip = param["zip"] || "30318";
+    var zippath = zip.split('').join('/') + '/' + zip;
+    $(document).ready(function () {
+        $('.ziptext').text(zip);
+        $('.DiffBotLink').attr("href",'../resources/diffbot/#zip=' + zip);
+        $('.CorrelationLink').attr("href",'correlation.html#zip=' + zip);
+    });
+</script>
+
+</head>
+<body>
+
+<div style="margin-left:30px;margin-right:30px;">
+    <div style="float:right; padding-top:16px">
+    <a href="" class="DiffBotLink" style='font-size:14pt'>Local Companies (DiffBot)</a>
+    </div>
+
+    <h1 style="float:left">Zip Code <span class="ziptext"></span></h1>
+</div>
+
+<div style="clear:both"></div>
+
+<!-- For D3 Embedded CSV Sheet -->
+<div style="margin-left:30px;margin-right:30px;">
+    <div style="overflow:scroll; max-width:100%;border-right:solid 2px #555">
+        <div class="eTable" id="d3div"></div>
+    </div>
+    <div style="font-size: 10px; margin-top:4px">
+        Values are per 1,000 individuals.
+        Disclaimer: Years after 2016 are based on projections which are prone to error.
+    </div>
+    <br><br>
+</div>
+<style>
+    table {
+        border-collapse: collapse;
+        border: 2px black solid;
+        font: 12px sans-serif;
+        min-height: 10px;
+    }
+
+    td {
+        border: 1px black solid;
+        padding: 5px;
+    }
+</style>
+<script type="text/javascript" charset="utf-8">
+    var projectedZip = "https://planet.live/community-usa/data/zip/" + zippath + "_projected.csv";
+    d3.text(projectedZip, function (data) {
+        var parsedCSV = d3.csv.parseRows(data);
+
+        var container = d3.select("#d3div")
+            .append("table")
+
+            .selectAll("tr")
+            .data(parsedCSV).enter()
+            .append("tr")
+
+            .selectAll("td")
+            .data(function (d) {
+                return d;
+            }).enter()
+            .append("td")
+            .text(function (d) {
+                return d;
+            });
+    });
+</script>
+<!-- End D3 Embedded CSV Sheet -->
+<br>
+
+
+<div id="prediction" style="height: 700px; min-width: 900px; max-width: 1300px; margin: 0 auto"></div>
+<br><br><br><br>
+
+<div id="population" style="height: 700px; min-width: 900px; max-width: 1300px; margin: 0 auto"></div>
+
+<script>
+    fileName = 'https://planet.live/community-usa/data/zip/' + zippath + '_projected.csv';
+    d3.csv(fileName, function (data) {
+        console.log(data);
+        years = [];
+        chartName = '';
+        mapData = {};
+        population = [];
+        for (let i = 0; i < data.length; i++) {
+            for (key in data[i]) {
+                if (key === 'Year') {
+                    years.push(data[i][key]);
+                } else if (key === 'JobsTotal') {
+                    // Omiting JobTotal so other lines are spread out.
+                } else if (key === ' Population') {
+                    population.push(
+                        parseInt(data[i][key])
+                    );
+                } else {
+                    if (!(key in mapData)) {
+                        mapData[key] = []
+                    }
+                    mapData[key].push(
+                        [
+                            data[i]['Year'],
+                            parseInt(data[i][key])
+                        ]
+                    );
+                }
+            }
+        }
+        console.log(years);
+        series = []
+        pop_series = [{
+            name: 'Population',
+            data: population
+        }];
+
+        for (key in mapData) {
+            series.push({
+                name: key,
+                data: mapData[key]
+            })
+        }
+        console.log(series);
+        console.log(pop_series);
+
+        Highcharts.chart('population', {
+            chart: {
+                zoomType: 'xy'
+            },
+
+            title: {
+                text: 'Zip ' + zip + ' Lasso Population Change Projection'
+            },
+
+            xAxis: {
+                type: "category",
+                categories: years
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Population'
+                },
+                min: 0
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    pointStart: 2010
+                }
+            },
+            credits: false,
+
+            series: pop_series,
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
+                        }
+                    }
+                }]
+            }
+
+        });
+
+
+
+        Highcharts.chart('prediction', {
+            chart: {
+                zoomType: 'xy'
+            },
+
+            title: {
+                text: 'Zip ' + zip + ' Lasso Timeplot Projection to 2021 - based on 2012 to 2016'
+            },
+
+            xAxis: {
+                type: "category",
+                categories: years
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Total per 1000 individuals'
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    pointStart: 2010
+                }
+            },
+            credits: false,
+
+            series: series,
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
+                        }
+                    }
+                }]
+            }
+
+        });
+    });
+</script>
+
+
+</body>
+</html>

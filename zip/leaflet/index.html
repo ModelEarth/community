@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Industry Mix</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* Temporary */
+.info {
+    display: none;
+}
+
+html, body {margin:0;padding:0;height:100%;}
+body { position:relative; }
+.headerImage {
+    display: none;
+}
+.mapHolder {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+#map {
+  width: 100%;
+  heightX: 100%;
+  min-height: 650px;
+}
+#allLegends {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+    z-index: 99999;
+}
+.legend {
+    position: relative;
+    widthX: 180px;
+    float: left;
+    z-index: 999999;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+#clusterBucketsFooterHolder {
+    position: absolute;
+    top:20px;
+    right:40px;
+    border:1px solid #aaa;
+    max-height:85%;
+    min-width: 340px;
+    z-index: 400;/* since .leaflet-pane z-index is 400 */
+    overflow: hidden;
+}
+#clusterBucketsHolder {
+    /* 100 100 did not work */
+    max-height:94vh;  /* 94% Viewport-relative units */
+    overflow: scroll;
+}
+#clusterBuckets {
+    padding: 20px;
+    padding-top: 3px;
+    min-width: 120px;
+    background: rgba(255,255,255,0.95);
+}
+.leaflet-top.leaflet-right {
+    displayXXX:none !important; /* temp */
+}
+.leaflet-top.leaflet-left {
+    top: 32px;
+}
+#clusterStep3 {
+    position: absolute;
+    bottom:0;left:0;right:0;
+    margin-top:10px;
+    padding:6px 0px 6px 15px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    z-index: 99999;
+}
+.titlecell {
+  margin-top:5px;
+  float:left;
+  clear:both;
+  min-width: 200px;
+}
+.rightcell {
+  margin-top:5px;
+  overflow: auto;
+}
+.rightlogo {
+  width:100%;
+  max-width:300px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.level1 {
+  color: #fff;
+  background: #777;
+  font-size: 11pt;
+  padding:6px;
+  margin-top:14px; /* margin-bottom breaks alignment of clear:both on titlecell div */
+  cursor: pointer;
+}
+.bucketDesc {
+  white-space: nowrap;
+}
+#clusterBuckets {
+    font-size: 14px;
+}
+#footer {
+    display: none;
+}
+</style>
+<!--
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+-->
+<!--
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+-->
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+   <!--
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+  integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+  crossorigin=""></script>
+-->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+
+<script src="https://d3js.org/d3.v5.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+
+<script type="text/javascript" src="DBSCAN/DBSCAN.js"></script>
+<script type="text/javascript" src="DBSCAN/compute_stat.js"></script>
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
+<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearch=true"></script>
+<!--
+    https://datascape.github.io/community/map/zcta/states/Georgia.topo.json
+-->
+
+<style>
+#fullcolumn {
+    height:100%; /* Required for pages with maps that don't have a set height */
+}
+</style>
+
+</head>
+<body>
+
+    <script>
+    $(document).ready(function () {
+      $('.showOutput').on('click', function () {
+        $('.showOutputText').hide();
+        //$('.showOutputResponse').attr('display:block');
+        $('.showOutputResponse').show();
+      });
+      $('.closeClusterBucketsDiv').click(function(event) {
+          $('#clusterBucketsFooterHolder').hide();
+          event.stopPropagation();
+      });
+    });
+    </script>
+
+    <a href="index.html" id="iframeInTab" style="display:none" target="_parent"><span class="expandDiv" style="color:#333">&neArr;</span></a>
+
+    <!--
+     Topojson on a Leaflet Map
+     Source: http://bl.ocks.org/mpmckenna8/af23032b41f0ea1212563b523e859228
+    -->
+    <div id="allLegends"></div>
+
+    <div style="position:relative;">
+        <div class="mapHolder">
+            <div id="map"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; L O A D I N G &nbsp; M A P</div>
+        </div>
+        <div id="clusterBucketsFooterHolder" style="min-height:95px;">
+            <div class="closeClusterBucketsDiv" style="position:absolute;top:3px;right:5px;cursor:pointer">&#9447;</div>
+
+            <style>
+                #categoryHolder {
+                    font-size:16px;
+                    padding: 15px;
+                    background-color: #fff;
+                    border-bottom: 1px solid #ccc;
+                }
+            </style>
+
+             
+
+            <div id="clusterBucketsHolder">
+
+                <div id="categoryHolder" style="overflow: auto">
+
+                    <div style="float:left; width:50%">
+                        <a href="#columns=JobsAgriculture:100">Agriculture</a><br>
+                        <a href="#columns=JobsEntertainment:100">Entertainment</a><br>
+                        <a href="#columns=JobsConstruction:100">Construction</a><br>
+                        <a href="#columns=JobsHealthcare:100">Healthcare</a><br>
+                        <a href="#columns=JobsManufacturing:100">Manufacturing</a><br>
+                    </div>
+
+                    <div style="float:left; width:50%">
+                        <a href="#columns=JobsProfessional:100">Professional</a><br>
+                        <a href="#columns=JobsRealestate:100">Real Estate</a><br>
+                        <a href="#columns=JobsTrade:100">Trade</a><br>
+                        <a href="#columns=JobsTotal:100">Jobs Total</a><br>
+                        <a href="#show=points" style="localonly" target="_blank">Poverty</a>
+                    </div>
+                </div>
+
+                <div id="clusterBuckets" class="json_to_html_table" style="clear:both">G E N E R A T I N G &nbsp; C L U S T E R S</div>
+            </div>
+            <div id="clusterStep3">
+              <div class="showOutput">
+                <div id="ds_chat_title" style="margin: 0 auto; float:none; font-size: 18px">
+                    <div class='showOutputText' style="cursor:pointer">
+                        &#10515; Output Filtered Locations
+                    </div>
+                    <div style="font-size:12px; display:none" class='showOutputResponse'>
+                        For recent work on industry levels,<br> 
+                        view the <a href="../../../localsite/info/">Industry Impact Evaluator</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var lat = 32.7;
+        var lonX = -82.90;
+        var lon = -81.8;
+        var zoom = 7;
+        var mbAttr = '<a href="https://www.openstreetmap.org/">OpenStreetMap</a> | <a href="https://www.mapbox.com/">Mapbox</a>',
+              mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+
+              /*
+              Shorter credits, lighter greyscale
+              var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                          maxZoom: 18,
+                          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    });
+                */
+            var grayscaleX = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
+
+            grayscale = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                maxZoom: 18, 
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+                }),
+              satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr}),
+              streets = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr});
+            var baseLayers = {
+                "Grayscale": grayscale,
+                "Streets": streets,
+                "Satellite": satellite
+              };
+              
+
+
+        map = new L.Map('map',
+        {
+            scrollWheelZoom: false,
+            center: new L.LatLng(lat,lon),
+            zoom: zoom,
+            dragging: !L.Browser.mobile, 
+            tap: !L.Browser.mobile,
+            layers: [grayscale]
+        });
+                  
+
+        $(document).ready(function () {
+            // param init resides in localsite.js
+            $(window).on('hashchange', function() { // Refresh param values when user changes the URL after #.
+                param = loadParams(location.search,location.hash); // Refresh param values when user changes URL after #.
+                if (param["columns"]) {
+                    console.log("Remove the prior topo layer");
+                    map.removeLayer(geojsonLayer); // Remove the prior topo layer
+                    loadDatasets(param["columns"]);
+                }
+                if (param["dataset"]) {
+                }
+            });
+        });
+
+    var neighbors;
+    var topodata = {};
+    var geojsonLayer;
+
+    var cluster_data = [];
+    var cluster_color;
+    var cluster_stats;
+
+    var place_data_with_clusterID = [];
+    // var co = d3.scaleOrdinal(d3.schemeCategory20b); // Stopped working when switching from v4 to v5.
+
+    var map; // Universal so map remove can be applied
+    window.onload = function () {
+        //alert("window.onload and call loadDatasets")
+        loadDatasets(param["columns"]);
+    };
+
+    function loadDatasets(columnsParam) { // Called whenever hash refreshes
+        console.log('loadDatasets');
+        var dataset = "2016/2016_zcta_sm.csv";
+        var topo = "Georgia";
+
+        var neighbors;
+
+        var xInput;
+        var yInput;
+        var zInput;
+        var xWeight;
+        var yWeight;
+        var zWeight;
+        cluster_data = []; // Clear previous
+
+        if (typeof columnsParam !== 'undefined' && columnsParam.length) {
+            // TO DO: Replace this with a loop to allow for more columns
+            xInput = columnsParam.split(";")[0].split(":")[0];
+            xWeight = columnsParam.split(";")[0].split(":")[1];
+            if (columnsParam.split(";")[1]) {
+                yInput = columnsParam.split(";")[1].split(":")[0];
+                yWeight = columnsParam.split(";")[1].split(":")[1];
+            }
+            if (columnsParam.split(";")[2]) {
+                zInput = columnsParam.split(";")[2].split(":")[0]; 
+                zWeight = columnsParam.split(";")[2].split(":")[1];
+            }     
+        } else { // Defaults
+            yInput = "Poverty_Over65";
+            xInput = "Poverty_Under18";
+            //zInput = "Work_Experience";
+            xWeight = 50;
+            yWeight = 50;
+            //zWeight = 30;
+        }
+        var req = new XMLHttpRequest();
+                var url = '../zcta/states/Georgia.topo.json';
+                var lat = 32.16;
+                  var lon = -82.90;
+                  var zoom = 7;
+
+                if (param["topo"] == "usa") {
+                    url = '../zip/topo/zips_us_topo.json';
+                    lat = 38.3;
+                    lon = -96.5;
+                    zoom = 5;
+                }
+                req.open('GET', url, true);
+                req.onreadystatechange = handler;
+                req.send();
+
+                var topoob = {};
+                topodata = {};
+                function handler(){
+
+                if(req.readyState === XMLHttpRequest.DONE) {
+
+                  //var layer = "terrain";
+
+
+                  try { // Temp
+                        
+                  map = new L.Map('map',
+                        {
+                        scrollWheelZoom:false,
+                        center: new L.LatLng(lat,lon),
+                        zoom: zoom
+                        });
+                  } catch(e){
+                  }
+
+
+                    
+
+              //map.addLayer( OpenStreetMap_BlackAndWhite);//new L.StamenTileLayer(layer));
+              // try and catch json parsing of the responseText
+              //try {
+                    topoob = JSON.parse(req.responseText);
+                    neighbors = topojson.neighbors(topoob.objects.data.geometries);
+                    topodata = topojson.feature(topoob, topoob.objects.data);
+
+                    topodata.features = topodata.features.map(function(fm,i){
+                        var ret = fm;
+                        ret.indie = i;
+                        return ret
+                      });
+
+                    if (param["topo"] != "usa") {
+                        // For Georgia data
+                        topodata.features.forEach(function(d){
+                           d.properties.name = "zip";
+                           d.properties.state = "GA";
+                           d.properties.zip = d.id; // d.zip in usa topo.
+                        });
+                    }
+                    // console.log(topodata)
+
+                    // Find row in the zcta dataset matching the zipcode in topodata
+
+                    // var columns = ["poverty_under18", "JobsTotal1000"];
+                    var columns = [xInput, yInput, zInput];
+                    
+                    // var weights = [100, 100];
+                    var weights = [xWeight, yWeight, zWeight];
+
+                    //var cluster_data = []; // Loren moved to top
+
+                    //d3.csv("../../data/" + dataset).then(function (detail_data) { // For each row in census data
+
+                    // From community/data/2016/2016_zcta_sm.csv
+                    d3.csv("../zcta/2016_zcta_sm.csv").then(function (detail_data) { // For each row in census data
+                        var data_by_id = d3.nest() // id is a zipcode
+                            .key(function(d){return d.zcta;})
+                            .entries(detail_data);
+
+                        var limitToState = true;
+                        if (limitToState) {
+                            topodata.features.forEach(function(d) {
+                                var topoID = data_by_id.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                                if(topoID) {
+                                    columns.forEach(function(c){
+                                        d[c] = parseFloat(topoID.values[0][c]);
+                                    });
+                                    cluster_data.push(d); // Topo shape data now has census attributes added, including zcta
+                                }
+                            });
+                        } else {
+                            // Processes 31,911 zipcodes. Then exceeds maximum call stack size.
+                            // The following could be used to avoid max error:
+                            // https://www.hhutzler.de/blog/avoid-maximum-call-stack-size-exceeded-in-javascript/
+                            detail_data.forEach(function(d) { // All zips, not just topo shapes of state
+
+                                // Change this, it matches itself
+                                var topoID = data_by_id.find(x=>x.key === d.zcta.replace(/^0+/, ''));
+                                if(topoID) {
+                                    columns.forEach(function(c) {
+                                        d[c] = parseFloat(topoID.values[0][c]);
+                                    });
+                                    cluster_data.push(d);
+                                }
+                            });
+
+                        }
+                        // normalize chosen columns of data for weighted clustering
+                        columns.forEach(function(c){
+                            if (typeof c !== 'undefined') {
+                                var column_min = d3.min(cluster_data, function(d){return d[c];});
+                                var column_max = d3.max(cluster_data, function(d){return d[c];});
+                                var range = column_max - column_min;
+
+                                cluster_data.forEach(function(d){
+                                    d[c+"_normalized"] = (d[c] - column_min) / range;
+                                });
+                            }
+                        });
+                        console.log("Set cluster_data");
+                        console.log(cluster_data);
+
+                        // Initialize the clustering algorithm
+                        // cluster_columns refers to given columns after normalizing
+                        var cluster_columns = [];
+                        columns.forEach(function(c){
+                            if (typeof c !== 'undefined') {
+                                cluster_columns.push(c+"_normalized")
+                            }
+                        });
+                        // eps = 0.5, minPts = 50 works fine for Georgia data but there are always two clusters while tuning the parameters around
+                        // eps = 0.01, minPts = <1000 may work for national data
+                        var dbscanner = jDBSCAN()
+                            .eps(0.2)
+                            .minPts(10)
+                            .distance('EUCLIDEAN')
+                            .data(cluster_data)
+                            .columns(cluster_columns)
+                            .weights(weights);
+
+                        if (param["topo"] == "usa") {
+                            // .1 and 10 returns: Number of clusters 227, then [Violation] 'readystatechange' handler took 541ms
+                            // .1 and 999 returns: Number of clusters 1, then [Violation] 'readystatechange' handler took 372ms
+                            // .1 and 800 'readystatechange' handler took 280ms
+                            // .1 and 500 'readystatechange' handler
+
+                            // Zip shapes seem to appear after waiting longer than the usual long time.  About 5 minutes.
+                            // 0.01 and 500 showed one cluster! still had error: [Violation] 'readystatechange' handler took 394ms.  Also said places.csv 404.  Maybe interruption by the 404 error why the map shapes remained visible. File places.csv is there, so not sure why 404 occured.
+                            // 0.01 and 500 - 1 cluster. Appeared after over 5 minutes.  No 404 errow
+
+                            // 0.01 and 400
+                            // Browser debugger: Paused at this line "before potential out-of-memory crash."
+                            // var topoID = data_by_id.find(x=>x.key === d.properties.zip.replace(/^0+/, ''));
+                            dbscanner = jDBSCAN()
+                            .eps(0.01)
+                            .minPts(400)
+                            .distance('EUCLIDEAN')
+                            .data(cluster_data)
+                            .columns(cluster_columns)
+                            .weights(weights);
+                        }
+                        // Record DBSCAN running time
+                        console.time("DBSCAN processing time: ");
+                        var cluster_result = dbscanner();
+                        console.timeEnd("DBSCAN processing time: ");
+                        // Combined cluster assignments with places data
+                        cluster_result.forEach(function (d, i) {
+                            cluster_data[i].cluster = d;
+                        });
+                        // console.log(cluster_result);
+                        // compute the statistics for each cluster: use columns for computing stats instead of normalized columns
+                        // Loren declaired at top, removed "var" here
+                        cluster_stats = compute_stat(cluster_data, columns);
+                        // console.log(cluster_stats);
+                        console.log("Number of clusters: ", cluster_stats.num_cluster);
+                        // color scale for the map
+                        console.log(cluster_stats);
+                        cluster_color = d3.scaleOrdinal(d3.schemeCategory10).domain([0,d3.max(cluster_data, function(d){
+                            return d.cluster; // 0, 1, 2, etc. for each cluster bucket.
+                        })]);
+                        cluster_stats.forEach(function(d){ // Loop through clusters.
+                            d.color = cluster_color(parseInt(d.id)); // Get color for bucket bars.
+                            console.log("d.color " + d.color);
+                        });
+                        //console.log(cluster_stats);
+                        function style(feat, i){
+                            // var i = feat.indie;
+                            // var coco = co(feat.color = d3.max(neighbors[i], function(n) {
+                            //   return topodata.features[n].color; }) + 1 | 0);
+
+                            // return {fillColor: coco,
+                            //         fillOpacity: .3,
+                            //         weight: .3}
+
+                            return {fillColor: cluster_color(feat.cluster),
+                                fillOpacity: .3,
+                                weight: .3}
+                        }
+
+                        //map.removeLayer(geojsonLayer); // Remove the prior topo layer
+                        console.log("assign geojsonLayer");
+
+                        geojsonLayer = L.geoJson(cluster_data, {style:style, onEachFeature: onEachFeature}).addTo(map);
+                        
+                        clusterBuckets(); // Stats under colored bar for each cluster
+
+
+                        // FETCH MAP POINTS
+                        if (param["show"] == "points") {
+                            d3.csv("https://datascape.github.io/community/map/zip/basic/places.csv").then(function(d) {
+                              // with v5, data is whole data set
+                              points = d;
+
+                        
+                                // DELETE
+                                /*
+                                var temp = d3.nest()
+                                .key(function(d){
+                                    return d.properties.zip;
+                                })
+                                .entries(cluster_data);
+
+                                places = [];
+                                d.forEach(function(d2){
+                                    var topoID = temp.find(x=>x.key === d2.zip);
+                                    if(topoID) {
+                                        places.push(d2);
+                                        //places.cluster = d2.cluster;
+                                        places.color = d2.color;
+                                        console.log('places push d2.color: ' + d2.color);
+
+                                        console.log("places:");
+                                        console.log(places);
+                                    }
+                                });
+                                */
+                                
+                                var temp = d3.nest()
+                                        .key(function(d){return d.id;}) // id is the zip
+                                        .entries(cluster_data); // TODO: Change this to entire country.
+
+                                d.forEach(function(place_data) {
+                                    //console.log("place_data:");
+                                    //console.log(place_data);
+
+                                    var topoID = temp.find(x=>x.key === place_data.zip.replace(/^0+/, ''));
+                                    if(topoID) {
+                                        console.log("found zip: " + topoID); // Not all zips will have a match
+                                        columns.forEach(function(c){
+                                            place_data[c] = parseFloat(topoID.values[0][c]);
+                                        });
+
+                                        // Places within the current state:
+                                        place_data_with_clusterID.push(place_data); // Not yet: Topo shapes and census attributes added, including zcta.
+                                    }
+                                });
+
+                                place_data_with_clusterID.forEach(function (d, i) {
+                                    // Needs work, not all 
+                                    // Should d value reside in the following line?
+                                    place_data_with_clusterID[i].cluster = cluster_data[i].cluster;
+                                });
+
+                                // Number is lower than 6,000 when cluster is only one state.
+                                console.log("place_data_with_clusterID:");
+                                console.log(place_data_with_clusterID);
+
+
+                              draw();
+                              map.on('viewreset moveend', draw);
+                            })
+                            .catch(function(error){
+                             // handle error   
+                             alert("error: " + error)
+                            })
+
+                            /*
+                            DELETE
+                            d3.csv("../zip/basic/places.csv").then(function(supported_places,error) {
+                                    var temp = d3.nest()
+                                        .key(function(d){return d.properties.zip;})
+                                        .entries(cluster_data);
+
+                                    places = [];
+
+                                    supported_places.forEach(function(d){
+                                        var topoID = temp.find(x=>x.key === d.zip);
+                                        if(topoID) {
+                                            places.push(d);
+                                        }
+                                    });
+                                    console.log(places);
+                             })
+                             */
+                        }
+                         
+                    }); // end d3.csv load of zipcode census data
+                    console.log('neigh', neighbors);
+
+                // LH commented out try-catch to watch for point errors. When do we need this?
+                //}
+                //catch(e){
+                //  geojsonLayer = {};
+                //  console.log(e)
+                //}
+                console.log(topodata);
+
+                function highlightFeature(e){
+                    var layer = e.target;
+                    layer.setStyle({
+                        weight: 1,
+                        color: '#888988',
+                        dashArray: '',
+                        fillOpacity: .7});
+                       if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                          layer.bringToFront();
+                         }
+                    info.update(layer.feature.properties);
+                }
+
+                function resetHighlight(e){
+                    geojsonLayer.resetStyle(e.target);
+                    info.update();
+                }
+
+                function zoomToFeature(e) {
+                    map.fitBounds(e.target.getBounds());
+                }
+
+                function onEachFeature(feature, layer){
+                    layer.on({
+                                mouseover: highlightFeature,
+                                mouseout: resetHighlight, click: zoomToFeature})
+                }
+
+
+        var info = L.control();
+        info.onAdd = function(map) {
+            this._div = L.DomUtil.create('div', 'info');
+            this.update();
+            return this._div;
+        };
+
+        info.update = function(props){
+            // National
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.zip + '</br>' + props.name + ' ' + props.state + '</br>' : "Hover over map")
+            
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (props ? props.data.geometry.id : "Hover over map")
+            
+
+            // TO fix if using state - id is not defined
+            // Also, other state files may need to have primary node renamed to "data"
+            //this._div.innerHTML = "<h4>Zip code</h4>" + (1==1 ? id + '</br>' : "Hover over map")
+        };
+
+        info.addTo(map);
+        }
+        }
+    }
+    $(document).ready(function () {
+        if (inIframe()) {
+            //$("#iframeInTab").show();
+        }
+    });
+
+
+function clusterBuckets() {
+
+    //cluster stats buckets
+    omit_array=["id","color","desc"]; // Later, include variance in advanced view.
+    var addHtml = '';
+    for (a in cluster_stats) {//a key is 0,1,2,3
+        if (isArray(cluster_stats[a])) {
+            // background-color css occurs after
+            addHtml += "<div class='level1 item" + a + "'><input type='checkbox' name='cluster' value='" + a + "'> <span style='font-size:11pt'>Cluster " + (parseInt(a) + 1) + ":</span><br> " + cluster_stats[a].desc + "</div>\n"; //ADD CHECKBOX
+            for (b in cluster_stats[a]) {
+                if (b != "undefined_stats") { // Bug. Hide until blank fixed
+                    if (isArray(cluster_stats[a][b])) {
+                        addHtml += "<div style='background:#eee;margin-top:5px;padding:3px'>" + b + "</div>";
+                        for (c in cluster_stats[a][b]) {
+                            addHtml += formatRow(c,cluster_stats[a][b][c],1,a);
+                        }
+                    } else {
+                        addHtml += formatRow(b,cluster_stats[a][b],1,a); // Resides in localsite.js
+                    }
+                }
+            }
+        }
+    }
+    addHtml += "<div style='height:130px'>&nbsp;</div>"; // Space for "Output Filtered Locations"  button
+    $("#clusterBuckets").html(addHtml);
+    $('.hidden').show(); // Temp
+    $('#clusterBuckets').click(function(event) {
+        $('.hidden').show();
+        event.stopPropagation();
+    });
+    // console.log(cluster_stats);
+    //ADD COLORS
+    $(document).ready(function () {
+        $('.colorHolder').each(function() {
+            var currentElement = $(this);
+            var currentlevel = currentElement.attr("currentlevel");
+            var currentitem = currentElement.attr("currentitem");
+            $(".level" + currentlevel + ".item" + currentitem).css('background-color', currentElement.attr("color"));
+        });
+    });
+}
+
+/// DRAW MAP POINTS
+
+var width = document.getElementById('map')
+    .clientWidth;
+var height = document.getElementById('map')
+    .clientHeight;
+
+var draw = function() {
+    d3.select('#overlay')
+        .remove();
+    var bounds = map.getBounds();
+    var topLeft = map.latLngToLayerPoint(bounds.getNorthWest());
+    var bottomRight = map.latLngToLayerPoint(bounds.getSouthEast());
+    var existing = d3.set();
+    var drawLimit = bounds.pad(0.4);
+
+    var filteredPoints = points.filter(function(d) {
+        var latlng = new L.LatLng(d.lat, d.lon);
+        if (!drawLimit.contains(latlng)) {
+            return false;
+        }
+        var point = map.latLngToLayerPoint(latlng);
+
+        key = point.toString();
+        if (existing.has(key)) {
+            return false;
+        }
+        existing.add(key);
+
+        d.x = point.x;
+        d.y = point.y;
+        return true;
+    });
+
+    // TODO: Add color here or above.
+    //var cluster_color = function(){return "green"};
+    console.log("Apply cluster_data to points");
+    console.log("Number of clusters for points: ", cluster_stats.num_cluster);
+    //alert("Number of clusters for points: " + cluster_stats.num_cluster);
+    //var cluster_color = d3.scaleOrdinal(d3.schemeCategory10).domain([0,d3.max(cluster_data, function(d){
+    //    return d.cluster;
+    //})]);
+
+    //cluster_stats.forEach(function(d){
+    //    d.color = cluster_color(parseInt(d.id));
+    //});
+
+    cluster_color2 = d3.scaleOrdinal(d3.schemeCategory10).domain([0,d3.max(cluster_data, function(d){
+        return d.cluster;
+    })]);
+                        
+
+    var svg = d3.select(map.getPanes()
+            .overlayPane)
+        .append("svg")
+        .attr('id', 'overlay')
+        .attr("class", "leaflet-zoom-hide")
+        .style("width", map.getSize()
+            .x + 'px')
+        .style("height", map.getSize()
+            .y + 'px')
+        .style("margin-left", topLeft.x + "px")
+        .style("margin-top", topLeft.y + "px");
+
+    var g = svg.append("g")
+        .attr("transform", "translate(" + (-topLeft.x) + "," + (-topLeft.y) + ")");
+
+    var svgPoints = g.attr("class", "points")
+        .selectAll("g")
+        .data(filteredPoints)
+        .enter()
+        .append("g")
+        .attr("class", "point");
+
+    svgPoints.append("circle")
+        /*
+        .attr("class", function(d) {
+            return "point-cell c" + d.count;
+        })
+        */
+        .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        })
+        .style("fill", function (d) {
+            //return cluster_color(d.cluster);
+            //return cluster_color(parseInt(d.cluster));
+
+            //return cluster_color(d.cluster);
+            //return cluster_color(d.zip);
+            //return cluster_color(d.color);
+            console.log("Get cluster: " + d.cluster)
+            return cluster_color2(parseInt(d.cluster));
+        })
+        .attr("r", function(d) {
+            //return d.count;
+            return d.sum_of_tickets_earned/5;
+        });
+
+    
+}
+
+
+
+/// NEW
+var dataParameters = []; 
+var dp = {}; // Try without
+var layerControl = false;
+var overlays = {};
+
+
+function readCsvData(_data, columnsNum, valueCol) {
+    //console.log(_data);
+    
+    if (typeof columnsNum !== "undefined") {
+      _data.forEach( function (row) {
+        //row = removeWhiteSpaces(row);
+        convertToNumber(row, columnsNum);
+      });
+    }
+    console.log(_data);
+    return _data;
+}
+function convertToNumber(d, _columnsNum) {
+    for (var perm in d) {
+      if (_columnsNum.indexOf(perm) > -1)
+        if (Object.prototype.hasOwnProperty.call(d, perm)) {
+          d[perm] = +d[perm];
+        }
+      }  
+    return d;
+}
+
+
+/* works
+d3.csv("../zip/basic/places.csv").then(function(d) {
+  // with v5 data is whole data set
+  points = d;
+  console.log("Places 2nd: " + d)
+  draw();
+  map.on('viewreset moveend', draw);
+})
+.catch(function(error){
+ // handle error   
+ alert("error: " + error)
+})
+*/
+
+
+/*
+d3.csv('../../../state/leaflet/postcode_data.csv', function(d) {
+    return {
+        postcode: d.postcode,
+        lat: +d.lat,
+        lon: +d.lon,
+        count: +d.count
+    };
+}, function(error, rows) {
+    points = rows;
+    draw();
+    map.on('viewreset moveend', draw);
+});
+*/
+
+</script>
+
+<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
+</body>
+</html>

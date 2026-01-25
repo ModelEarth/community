@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2022 Web Challenge</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<link type="text/css" href="../../localsite/css/base.css" rel="stylesheet" id="/localsite/css/base.css" />
+
+<!-- For Facebook -->
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://model.earth/community/img/overview/model-earth-impacts.jpg" />
+<meta property="og:url" content="https://model.earth/community/challenge/" />
+<meta property="og:title" content="2021 Sustainable Communities Web Challenge" />
+<meta property="og:description" content="Georgia Centers for Innovation, the US EPA and Code for America have teamed up to offer over $10,000 in awards to coders in our 2021 Web Challenges." />
+
+<!-- For Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="2021 Sustainable Communities Web Challenge" />
+<meta name="twitter:description" content="Georgia Centers for Innovation, the US EPA and Code for America have teamed up to offer over $10,000 in awards to coders in our 2021 Web Challenges." />
+<meta name="twitter:image" content="https://model.earth/community/img/overview/model-earth-impacts.jpg" />
+
+</head>
+
+<body>
+<script>
+  //loadMarkdown("event.md", "eventDiv", "_parent");
+  loadMarkdown("../projects/intro.md", "projectListDiv", "_parent");
+  loadMarkdown("intro.md", "introDiv", "_parent");
+  //loadMarkdown("README.md", "readmeDiv", "_parent"); // Also uncomment readmeDiv below
+  //loadMarkdown("rules.md", "rulesDiv", "_parent");
+
+  //loadMarkdown("https://raw.githubusercontent.com/wiki/USEPA/useeio-widgets/Home.md", "useDiv", "_parent");
+  ////loadMarkdown("https://raw.githubusercontent.com/wiki/USEPA/useeio-widgets/Use.md", "useDiv", "_parent");
+
+  //loadMarkdown("../../io/Overview.md", "georgiaDiv", "_parent");
+</script>
+
+<style>
+
+#fullcolumn {
+    background: #fafafa;
+}
+.gobutton {
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 14px 12px 15px 12px;
+    min-height: 38px;
+    color: #fff;
+    box-sizing: border-box;
+    background: #555;
+    height: 48px;
+    text-decoration: none;
+}
+.resultsHolder {
+    background: rgba(33,33,33,0.95);
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    line-height: 26px;
+}
+.txtbox {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    width: 100%;
+    max-width: 190px;
+    padding: 0 20px;
+    height: 48px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #777;
+    border: solid 1px #b7b7b7;
+    border-radius: 5px;
+    margin-right: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+@media (max-width: 1200px) {
+    #rightcolumn {
+        display:none;
+    }
+}
+#logoholderside {
+    display: none !important;
+}
+</style>
+
+
+
+<style>
+#heroHolder {
+    min-height:350px
+}
+#heroImage {
+    width: 100%;
+}
+@media (max-width: 800px) {
+    #heroImage {
+        min-height:200px;
+        max-width:800px;
+        width:800px;
+    }
+}
+@media (min-width:800px) {
+    #heroHolder {
+        min-height:400px;
+    }
+}
+@media (min-width:1400px) {
+    #heroHolder {
+        min-height:580px;
+    }
+}
+</style>
+
+<div id="hero_holder" style="position:relative; background:#aaa; max-height:550px">
+
+
+    <div style="background-color: #dae8eb; margin: 0 auto; overflow: auto; padding:0px; border:0px">
+        <div id="heroHolder" style="max-width:5000px; text-align:left; position:relative;">
+
+            <img id="heroImage" src="../img/hero/earth-artemus-2022.png" style="max-width:5000px;position: absolute;" title="View from NASA's unmanned Orion spacecraft before traveling behind the Moon during Artemis I mission in 2022.">
+            
+            <div style="position:absolute;z-index:2;width:100%">
+                <div style="float:left">
+                    <div class="hero-text" style="padding:35px 40px 0 40px; background-colorX:rgba(35, 35, 35, .6);">
+                        <!--
+                        <img src="../img/logo/code-for-america-and-earth.png" style="width:100%;max-width:240px;padding:10px 0 15px 0"><br>
+                        <br>
+                        -->
+                    </div>
+
+                </div>
+                <div style="float:right; padding:60px 50px 0 0; text-align: center">
+                    
+                    <img src="../img/logo/epa-circle.png" style="width:100%;max-width:200px"><br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="clear:both"></div>
+
+
+
+<div class="content contentpadding" style="overflow:auto;">
+
+    <!--
+    <div style="margin-bottom:20px">
+        <h1 >US Environmentally-Extended Input Output Modeling (USEEIO)</h1>
+    </div>
+    -->
+
+    <div class="pagecard">
+        <div class="cardstyle">
+            <div class="leftLogo">
+                <img src="../img/logo/github.png" style="width:100%; max-width:200px"><br><br>
+
+                <b>Create a Community Site</b><br>
+                <a href="https://github.com/modelearth/localsite">Fork Localsite GitHub Repo</a>
+
+                <!--
+                <br><br><br>
+                <img src="../img/logo/python.png" style="width:100%; max-width:200px"><br><br><br>
+                <img src="../img/logo/react.jpg" style="width:100%; max-width:200px"><br>
+                -->
+            </div>
+            <div style="overflow:auto">
+                <h1>Web Challenge - Project Areas</h1>
+
+                <h3>Contact <a href="https://democracylab.org/" target="_blank">Democracy Lab</a> to sponsor an upcoming web challenge.</h3><br>
+
+                <div id="eventDiv"></div>
+                <div id="projectListDiv"></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="winners" class="pagecard">
+
+        <div class="cardstyle">
+            <!--
+            <div class="leftLogo">
+                <img src="../img/logo/epa.png" style="width:100%; max-width:200px">
+            </div>
+            -->
+            <div style="overflow:auto">
+                <div id="introDiv"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--
+    <div class="pagecard">
+
+        <div class="cardstyle">
+            <div style="overflow:auto">
+                <div id="readmeDiv"></div>
+            </div>
+        </div>
+
+    </div>
+    -->
+
+    <div class="pagecard">
+    <div style="background-color: #dae8eb; text-align: center; overflow: auto; padding:0px; padding-left:40px; border:0px">
+        <div style="max-width:1400px">
+            <div style="display: inline-block;">
+            
+                <div id="navcolumn" style="position:relative; float:left; text-align:left; margin-right: 30px">
+                </div>
+            
+                <style>
+                #introlist h3 {
+                    margin-bottom: 4px;
+                }
+                </style>
+
+                <div id="introlist" style="float:left; text-align:left;">
+                    <br>
+
+                    <h2 style="margin-bottom:10px; font-size: 28px;">Steps for creating a Community Website</h2>
+
+                    <h3>1. Identify your community of interest and register</h3>
+                    Your community can be a neighborhood, city, county, region of a state, or multiple states. 
+                    <!--
+                    Indicate your community when you <a href="registration/">register online</a>.
+                    -->
+                    <br>
+                    
+                    <h3>2. Discover important local issues based on the industries in your community</h3>
+                    Use our <a href="../../localsite/info/">lifecycle comparison tool</a> to identify local issues.<br>
+
+                    <h3>3. Join or form a new team</h3>
+
+                    Create or join a team for your city or community.  You may also form a coding/design team focused on specific <a href="../../community/projects/">project areas</a>. You can return to your registration page later to add team and project info. Use the link in the email you receive during registration.<br>
+
+                    <h3>4. Create a community page</h3>
+                    Check out our existing <a href="../../io/">community pages</a> and learn how to make your own. The easiest way is to fork the <a href="../../apps">apps</a> directory, then copy and edit an existing app folder. Also, clone the <a href="https://github.com/modelearth/localsite">localsite repo</a> into the same webroot as the apps folder to provide support files. Read more about <a href="../../localsite/start/">how to create your own local site</a>.<br>
+                    
+                    <h3>5. Add content and new functionality</h3>
+                    Create new visuals and content for your community page. Embed new or existing <a href="../../io/charts/">USEEIO widgets</a> in your page. We encourage page designs that can be reused by multiple communities.<br>
+                    
+                    <!--Show before-and-after scenarios, create comparisons, and <a href="../../apps/">share apps</a> within your favorite websites<br><br>-->
+                    <!--<a href="../io/team/">Contact Us for Pointers</a> | -->
+                    <!-- <a href="meetups/">Join us on Slack</a> | <a href="/projects/">View Project Areas</a><br><br> -->
+                    <br>
+
+                    <b>Learn more:</b> <a href="how">Hot to Create a Local Site Page</a><br><br>
+
+                    <!-- Also update in community index.html footer -->
+                    <div style="margin-top:20px">
+                    <a href="/projects" class="btn btn-warning">Project Areas</a>
+                    <!--
+                    <a href="registration/" class="btn btn-success">Register to participate</a> &nbsp;
+                    -->
+                     
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--
+    <div class="pagecard">
+        <div class="cardstyle">
+            <div class="leftLogo">
+                <img src="../img/logo/github.png" style="width:100%; max-width:200px">
+            </div>
+            <div style="overflow:auto">
+                <div id="rulesDiv"></div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!--
+    <div class="pagecard">
+        <div class="cardstyle">
+            <div class="leftLogo">
+                <img src="../img/logo/georgia.png" style="width:100%; max-width:200px">
+            </div>
+            <div style="overflow:auto">
+                <div id="georgiaDiv"></div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!--
+    <div style="margin-top:20px">
+    <a href="registration/" class="btn btn-success">Register to participate</a>
+    <a href="../projects/" class="btn btn-warning">View Project Areas</a>
+    <a href="meetups" class="btn btn-danger">Meetups and Slack Channels</a>
+    </div>
+    <br>
+    -->
+
+    <!--
+    <div style="margin-top:30px">
+        <a href="../../community/challenge/registration/" class="btn btn-success">Register Online</a>
+        <a href="../../community/projects" class="btn btn-warning">Project Areas</a>
+        <a href="../../io/coders/" class="btn btn-danger">Meetups</a>
+    </div>
+    <br><br>
+    -->
+</div>
+
+</body>
+</html>

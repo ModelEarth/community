@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Routing Sample</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+crossorigin=""></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+
+  <style>
+	body {
+    	margin: 0px;
+		font-family: Lato, sans-serif;
+		color: #555;
+	}
+	h1, h2 {
+		font-weight:100;
+		color: #444;
+	}
+	.localonly {
+		display:none;
+	}
+	.sectionContent {
+		font-family: 'Lato', sans-serif;
+		font-family: Lato, sans-serif; /* not installed: NunitoSans-Regular */
+		font-size: 14px;
+		position: relative;
+		max-width: 1100px;
+		margin: 0 auto !important;
+		float: none !important;
+	    font-size: 15px;
+	    height: auto;
+	    padding-left: 20px;
+	    padding-right: 25px;
+		font-weight: 400;
+	}
+
+	</style>
+  
+</head>
+<body>
+	<!-- https://github.com/perliedman/leaflet-routing-machine -->
+	<div id="mapid10"></div><br>
+	<style>
+	#mapid10 { height: 380px; }
+	</style>
+	<script>
+	var mymap = L.map('mapid10').setView([33.78, -84.3890], 18);
+	// You can replace mapbox.streets with: mapbox.satellite
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+	    maxZoom: 15,
+	    id: 'mapbox.streets',
+	    accessToken: 'pk.eyJ1IjoiZGF0YXBvcnRhbCIsImEiOiJjam1tOXhpeGUwZ3IyM3BtbGIwbWV1NjIxIn0.K07Nah9ZjewCR0iV4pYw_Q'
+	}).addTo(mymap);
+	mymap.scrollWheelZoom.disable();
+
+	var circle = L.circle([33.7775, -84.3890], {
+	    color: 'red',
+	    fillColor: '#f03',
+	    fillOpacity: 0.5,
+	    radius: 6 /* initially 6000 */
+	}).addTo(mymap);
+
+	L.Routing.control({
+	  waypoints: [
+	  	L.latLng(33.7778, -84.402125),
+	    L.latLng(33.7773, -84.3895),
+	    L.latLng(33.7838, -84.3837)
+	  ]
+	}).addTo(mymap);
+
+	</script>
+
+
+
+</body>
+</html>

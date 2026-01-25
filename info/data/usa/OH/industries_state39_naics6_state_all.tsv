@@ -1,0 +1,961 @@
+	id	COUNTY	GEO_TTL	NAICS_Sector	NAICS2012_TTL	state	relevant_naics	estab_agg	emp_agg	payann_agg	emp_api	payann_api	estab_api
+0	39	999	Statewide	11	Crop harvesting, primarily by machine	39	115113	8.0	0.0	0.0	5.6	687.2	5.4
+1	39	999	Statewide	11	Farm labor contractors and crew leaders	39	115115	8.0	0.0	0.0	15.6	535.0	3.8
+2	39	999	Statewide	11	Farm management services	39	115116	9.2	0.0	0.0	12.6	499.2	6.2
+3	39	999	Statewide	11	Finfish fishing	39	114111	6.4	0.0	0.0	4.6	335.0	5.2
+4	39	999	Statewide	11	Forest nurseries and gathering of forest products	39	113210	6.0	0.0	0.0	10.4	410.4	4.0
+5	39	999	Statewide	11	Hunting and trapping	39	114210	7.6	0.0	0.0	9.2	335.6	5.6
+6	39	999	Statewide	11	Logging	39	113310	87.65000000000003	193.0	6427.800000000001	367.2	11055.0	76.8
+7	39	999	Statewide	11	Postharvest crop activities (except cotton ginning)	39	115114	13.2	0.0	0.0	191.8	9270.6	10.0
+8	39	999	Statewide	11	Shellfish fishing	39	114112	3.0	0.0	0.0	0.0	0.0	1.6666666666666667
+9	39	999	Statewide	11	Soil preparation, planting, and cultivating	39	115112	39.8	0.0	0.0	145.0	5577.4	30.8
+10	39	999	Statewide	11	Support activities for animal production	39	115210	123.33333333333336	124.4	3277.600000000001	406.8	10001.6	112.8
+11	39	999	Statewide	11	Support activities for forestry	39	115310	13.8	0.0	0.0	13.8	773.4	9.0
+12	39	999	Statewide	11	Timber tract operations	39	113110	3.0	0.0	0.0	0.0	0.0	2.0
+13	39	999	Statewide	21	All other nonmetallic mineral mining	39	212399	6.0	0.0	0.0	18.2	1393.8	4.8
+14	39	999	Statewide	21	Anthracite mining	39	212113	1.0	0.0	0.0	0.0	0.0	1.0
+15	39	999	Statewide	21	Bituminous coal and lignite surface mining	39	212111	57.2	366.8	21884.6	757.2	37973.4	53.8
+16	39	999	Statewide	21	Bituminous coal underground mining	39	212112	13.85	0.0	317.2	1839.2	159367.4	12.4
+17	39	999	Statewide	21	Clay and ceramic and refractory minerals mining	39	212325	3.0	0.0	0.0	5.6	589.0	3.0
+18	39	999	Statewide	21	Construction sand and gravel mining	39	212321	104.41666666666669	449.0	26699.6	953.8	51323.4	99.8
+19	39	999	Statewide	21	Crude petroleum and natural gas extraction	39	211111	186.7	995.2	61968.0	1547.4	93716.2	186.8
+20	39	999	Statewide	21	Crushed and broken granite mining and quarrying	39	212313	4.0	0.0	0.0	11.4	403.0	3.8
+21	39	999	Statewide	21	Crushed and broken limestone mining and quarrying	39	212312	81.94999999999997	207.4	12860.2	1354.0	78142.2	80.0
+22	39	999	Statewide	21	Dimension stone mining and quarrying	39	212311	6.0	0.0	0.0	0.0	0.0	3.4
+23	39	999	Statewide	21	Drilling oil and gas wells	39	213111	67.43333333333334	184.85	13324.3	642.0	42100.0	66.6
+24	39	999	Statewide	21	Gold ore mining	39	212221	1.0	0.0	0.0	0.0	0.0	1.0
+25	39	999	Statewide	21	Industrial sand mining	39	212322	8.0	0.0	0.0	90.4	5622.0	6.4
+26	39	999	Statewide	21	Iron ore mining	39	212210	1.0	0.0	0.0	0.0	0.0	1.0
+27	39	999	Statewide	21	Kaolin and ball clay mining	39	212324	1.0	0.0	0.0	0.0	0.0	1.0
+28	39	999	Statewide	21	Natural gas liquid extraction	39	211112	15.5	0.0	0.0	90.6	13076.6	10.6
+29	39	999	Statewide	21	Other chemical and fertilizer mineral mining	39	212393	3.0	0.0	0.0	0.0	0.0	3.0
+30	39	999	Statewide	21	Other crushed and broken stone mining and quarrying	39	212319	8.0	0.0	0.0	11.4	578.8	5.6
+31	39	999	Statewide	21	Support activities for coal mining	39	213113	16.6	27.8	871.4	257.4	12379.4	13.4
+32	39	999	Statewide	21	Support activities for metal mining	39	213114	1.0	0.0	0.0	0.0	0.0	2.2
+33	39	999	Statewide	21	Support activities for nonmetallic minerals (except fuels) mining	39	213115	10.0	0.0	0.0	41.8	2376.4	7.6
+34	39	999	Statewide	21	Support activities for oil and gas operations	39	213112	172.08333333333337	1596.9333333333334	118810.53333333333	2263.2	149965.0	169.2
+35	39	999	Statewide	22	Biomass electric power generation	39	221117	5.0	0.0	0.0	8.6	585.4	2.8
+36	39	999	Statewide	22	Electric bulk power transmission and control	39	221121	26.0	0.0	0.0	0.0	0.0	23.2
+37	39	999	Statewide	22	Electric power distribution	39	221122	306.3999999999998	870.2	77515.0	4786.0	513790.8	305.6
+38	39	999	Statewide	22	Fossil fuel electric power generation	39	221112	70.19999999999999	0.0	0.0	3254.8	392767.4	67.4
+39	39	999	Statewide	22	Hydroelectric power generation	39	221111	3.0	0.0	0.0	0.0	0.0	2.0
+40	39	999	Statewide	22	Natural gas distribution	39	221210	139.93333333333334	513.8	40648.8	3850.8	300702.0	131.2
+41	39	999	Statewide	22	Nuclear electric power generation	39	221113	6.6	0.0	0.0	0.0	0.0	6.6
+42	39	999	Statewide	22	Other electric power generation	39	221118	7.0	0.0	0.0	0.0	0.0	5.2
+43	39	999	Statewide	22	Sewage treatment facilities	39	221320	18.0	0.0	0.0	99.0	5513.4	13.6
+44	39	999	Statewide	22	Solar electric power generation	39	221114	2.2	0.0	0.0	0.0	0.0	1.6
+45	39	999	Statewide	22	Steam and air-conditioning supply	39	221330	8.0	0.0	0.0	125.4	8123.8	6.6
+46	39	999	Statewide	22	Water supply and irrigation systems	39	221310	83.44999999999997	78.0	3484.2	780.0	38943.4	77.0
+47	39	999	Statewide	22	Wind electric power generation	39	221115	3.5	0.0	0.0	0.0	0.0	3.4
+48	39	999	Statewide	23	All other specialty trade contractors	39	238990	906.9333333333336	3936.400000000001	293101.86666666664	4591.2	309888.4	901.6
+49	39	999	Statewide	23	Commercial and institutional building construction	39	236220	1260.7499999999993	16577.2	1059720.2000000002	18351.4	1147658.2	1259.8
+50	39	999	Statewide	23	Drywall and insulation contractors	39	238310	454.75000000000006	4496.3499999999985	209027.31666666668	5297.2	238940.4	443.8
+51	39	999	Statewide	23	Electrical contractors and other wiring installation contractors	39	238210	1878.6	22022.599999999995	1201995.0	23924.4	1317726.4	1878.8
+52	39	999	Statewide	23	Finish carpentry contractors	39	238350	759.1166666666667	3012.800000000001	137295.00000000006	3585.6	149935.2	752.4
+53	39	999	Statewide	23	Flooring contractors	39	238330	321.0333333333333	1326.6	64643.40000000001	1719.0	75317.8	314.2
+54	39	999	Statewide	23	Framing contractors	39	238130	289.64999999999986	702.0000000000001	31646.00000000001	1091.0	39391.8	280.6
+55	39	999	Statewide	23	Glass and glazing contractors	39	238150	159.86666666666667	740.0	42616.6	1383.8	66880.8	154.6
+56	39	999	Statewide	23	Highway, street, and bridge construction	39	237310	340.0	4963.000000000002	535159.2000000001	7942.2	826203.8	336.4
+57	39	999	Statewide	23	Industrial building construction	39	236210	114.10000000000002	1698.4	116484.8	3133.2	204212.6	111.4
+58	39	999	Statewide	23	Land subdivision	39	237210	135.48333333333335	375.6	30567.266666666674	730.2	44766.4	129.6
+59	39	999	Statewide	23	Masonry contractors	39	238140	733.65	3191.600000000001	165696.2	3828.6	186273.6	729.8
+60	39	999	Statewide	23	New housing for-sale builders	39	236117	284.4	1478.6	101823.19999999998	1986.2	120254.4	273.2
+61	39	999	Statewide	23	New multifamily housing construction (except for-sale builders)	39	236116	78.6	103.8	7363.8	292.6	23908.4	67.6
+62	39	999	Statewide	23	New single-family housing construction (except for-sale builders)	39	236115	1080.9500000000003	2882.8	135219.80000000002	3512.2	140639.6	1080.0
+63	39	999	Statewide	23	Oil and gas pipeline and related structures construction	39	237120	85.1	1079.55	73008.34999999999	4052.6	303820.0	81.0
+64	39	999	Statewide	23	Other building equipment contractors	39	238290	254.3	2970.8	212677.0000000001	4276.6	263093.6	249.4
+65	39	999	Statewide	23	Other building finishing contractors	39	238390	250.1	1546.2000000000005	70829.59999999999	2084.0	85297.8	241.0
+66	39	999	Statewide	23	Other foundation, structure, and building exterior contractors	39	238190	118.64999999999998	315.4	17404.8	708.6	36361.8	103.8
+67	39	999	Statewide	23	Other heavy and civil engineering construction	39	237990	121.9	557.0	37007.8	2909.0	157877.8	113.6
+68	39	999	Statewide	23	Painting and wall covering contractors	39	238320	939.2333333333336	3566.800000000001	200703.5	4281.8	221139.0	934.8
+69	39	999	Statewide	23	Plumbing, heating, and air-conditioning contractors	39	238220	2923.9999999999986	29861.199999999993	1622713.2000000004	30814.6	1652876.8	2924.4
+70	39	999	Statewide	23	Poured concrete foundation and structure contractors	39	238110	770.0000000000001	4052.6	238779.00000000003	7449.4	399316.0	768.4
+71	39	999	Statewide	23	Power and communication line and related structures construction	39	237130	156.76666666666662	1554.4	119241.0	4352.8	311092.6	149.8
+72	39	999	Statewide	23	Residential remodelers	39	236118	2592.2500000000005	8310.999999999998	326865.59999999986	8841.8	328197.0	2592.0
+73	39	999	Statewide	23	Roofing contractors	39	238160	717.2	5707.799999999998	288657.6000000001	6306.8	309017.6	713.0
+74	39	999	Statewide	23	Siding contractors	39	238170	255.25	629.7999999999997	41442.39999999998	1008.6	47763.4	250.2
+75	39	999	Statewide	23	Site preparation contractors	39	238910	1267.3333333333333	8409.599999999999	500908.4000000001	9026.2	510546.2	1266.4
+76	39	999	Statewide	23	Structural steel and precast concrete contractors	39	238120	126.48333333333332	1097.0500000000004	62061.95	1963.0	109166.4	113.2
+77	39	999	Statewide	23	Tile and terrazzo contractors	39	238340	151.29999999999995	483.0	26038.8	915.4	45874.6	142.2
+78	39	999	Statewide	23	Water and sewer line and related structures construction	39	237110	312.78333333333325	2428.800000000001	163815.2	3581.4	233503.2	308.8
+79	39	999	Statewide	31	All other leather good and allied product manufacturing	39	316998	31.2	132.4	4320.0	441.6	12620.6	24.8
+80	39	999	Statewide	31	All other miscellaneous food manufacturing	39	311999	18.2	4.4	194.2	1291.8	60062.2	15.2
+81	39	999	Statewide	31	All other miscellaneous textile product mills	39	314999	98.6	160.20000000000005	5792.5999999999985	1398.8	45891.2	91.0
+82	39	999	Statewide	31	Animal (except poultry) slaughtering	39	311611	68.53333333333335	152.8	5957.0	1269.2	42655.8	60.6
+83	39	999	Statewide	31	Apparel accessories and other apparel manufacturing	39	315990	20.0	0.0	0.0	50.4	1395.6	16.0
+84	39	999	Statewide	31	Beet sugar manufacturing	39	311313	1.0	0.0	0.0	0.0	0.0	1.0
+85	39	999	Statewide	31	Bottled water manufacturing	39	312112	8.4	0.0	0.0	47.8	1362.6	7.0
+86	39	999	Statewide	31	Breakfast cereal manufacturing	39	311230	5.0	0.0	0.0	0.0	0.0	3.4
+87	39	999	Statewide	31	Breweries	39	312120	63.63333333333333	371.00000000000006	20055.0	1663.0	111231.0	45.6
+88	39	999	Statewide	31	Broadwoven fabric mills	39	313210	17.0	0.0	0.0	104.2	2970.6	10.6
+89	39	999	Statewide	31	Cane sugar manufacturing	39	311314	2.0	0.0	0.0	0.0	0.0	1.2
+90	39	999	Statewide	31	Carpet and rug mills	39	314110	3.0	0.0	0.0	0.0	0.0	1.6
+91	39	999	Statewide	31	Cheese manufacturing	39	311513	22.6	229.8	7266.4	1904.8	94621.2	21.8
+92	39	999	Statewide	31	Chocolate and confectionery manufacturing from cacao beans	39	311351	11.6	8.2	769.8	162.8	5065.4	8.6
+93	39	999	Statewide	31	Coffee and tea manufacturing	39	311920	16.200000000000006	34.8	732.0	61.2	3417.2	13.8
+94	39	999	Statewide	31	Commercial bakeries	39	311812	120.61666666666667	1787.0	65103.59999999999	4764.6	176850.2	111.6
+95	39	999	Statewide	31	Confectionery manufacturing from purchased chocolate	39	311352	46.66666666666666	236.2	4389.2	1898.2	34055.2	44.2
+96	39	999	Statewide	31	Cookie and cracker manufacturing	39	311821	20.4	0.0	59.6	5817.2	222524.6	18.2
+97	39	999	Statewide	31	Creamery butter manufacturing	39	311512	2.0	0.0	0.0	0.0	0.0	1.6
+98	39	999	Statewide	31	Curtain and linen mills	39	314120	41.11666666666665	265.20000000000005	14282.800000000005	852.8	32318.8	37.4
+99	39	999	Statewide	31	Cut and sew apparel contractors	39	315210	39.6	1.6	38.8	209.8	6828.2	27.6
+100	39	999	Statewide	31	Distilleries	39	312140	13.2	41.0	1295.6	75.6	3160.2	8.2
+101	39	999	Statewide	31	Dog and cat food manufacturing	39	311111	14.8	0.0	0.0	973.2	65474.6	11.4
+102	39	999	Statewide	31	Dried and dehydrated food manufacturing	39	311423	3.0	0.0	0.0	0.0	0.0	2.2
+103	39	999	Statewide	31	Dry pasta, dough, and flour mixes manufacturing from purchased flour	39	311824	20.2	43.2	1650.6	974.6	48607.8	18.6
+104	39	999	Statewide	31	Dry, condensed, and evaporated dairy product manufacturing	39	311514	5.0	0.0	0.0	272.6	11906.2	4.2
+105	39	999	Statewide	31	Fabric coating mills	39	313320	19.8	0.0	210.2	403.4	22988.4	13.4
+106	39	999	Statewide	31	Fats and oils refining and blending	39	311225	7.0	0.0	0.0	298.2	16793.0	6.6
+107	39	999	Statewide	31	Fiber, yarn, and thread mills	39	313110	5.2	0.0	0.0	3.0	180.8	4.0
+108	39	999	Statewide	31	Flavoring syrup and concentrate manufacturing	39	311930	9.0	398.0	26813.8	788.0	52502.8	7.6
+109	39	999	Statewide	31	Flour milling	39	311211	21.2	0.0	0.0	405.8	23036.4	18.4
+110	39	999	Statewide	31	Fluid milk manufacturing	39	311511	17.2	0.0	0.0	2487.0	120028.6	17.0
+111	39	999	Statewide	31	Footwear manufacturing	39	316210	5.0	0.0	0.0	1.4	46.2	2.6
+112	39	999	Statewide	31	Frozen cakes, pies, and other pastries manufacturing	39	311813	4.8	0.0	0.0	293.4	15764.2	4.8
+113	39	999	Statewide	31	Frozen fruit, juice, and vegetable manufacturing	39	311411	5.0	25.4	670.2	72.2	2328.6	4.2
+114	39	999	Statewide	31	Frozen specialty food manufacturing	39	311412	21.4	0.0	0.0	6638.6	270526.8	19.4
+115	39	999	Statewide	31	Fruit and vegetable canning	39	311421	34.266666666666666	289.2	12883.0	2012.8	106068.0	32.2
+116	39	999	Statewide	31	Hosiery and sock mills	39	315110	1.0	0.0	0.0	0.0	0.0	1.0
+117	39	999	Statewide	31	Ice cream and frozen dessert manufacturing	39	311520	12.2	0.0	0.0	588.6	23071.6	9.8
+118	39	999	Statewide	31	Ice manufacturing	39	312113	14.8	0.0	0.0	65.8	6957.2	14.6
+119	39	999	Statewide	31	Knit fabric mills	39	313240	2.0	0.0	0.0	0.0	0.0	2.0
+120	39	999	Statewide	31	Leather and hide tanning and finishing	39	316110	6.2	0.0	0.0	44.4	2396.2	4.4
+121	39	999	Statewide	31	Mayonnaise, dressing, and other prepared sauce manufacturing	39	311941	13.05	0.0	0.0	424.2	55904.0	11.2
+122	39	999	Statewide	31	Meat processed from carcasses	39	311612	67.2	990.0	45594.8	5381.6	203664.0	59.4
+123	39	999	Statewide	31	Men's and boys' cut and sew apparel manufacturing	39	315220	10.666666666666666	4.8	640.8	57.2	2065.2	9.2
+124	39	999	Statewide	31	Narrow fabric mills and schiffli machine embroidery	39	313220	7.0	0.0	0.0	0.0	0.0	4.2
+125	39	999	Statewide	31	Nonchocolate confectionery manufacturing	39	311340	22.8	25.6	777.9999999999999	263.2	10188.4	21.8
+126	39	999	Statewide	31	Nonwoven fabric mills	39	313230	4.6	0.0	0.0	10.2	286.0	3.2
+127	39	999	Statewide	31	Other animal food manufacturing	39	311119	56.8	267.4	13617.6	1157.0	62514.8	52.8
+128	39	999	Statewide	31	Other cut and sew apparel manufacturing	39	315280	8.200000000000001	0.0	0.0	81.2	2425.6	7.6
+129	39	999	Statewide	31	Other snack food manufacturing	39	311919	19.0	0.0	0.0	2695.4	114284.2	18.4
+130	39	999	Statewide	31	Perishable prepared food manufacturing	39	311991	22.0	123.8	3432.2	1684.8	67387.0	19.4
+131	39	999	Statewide	31	Poultry processing	39	311615	18.2	0.0	0.0	3225.0	106070.0	16.4
+132	39	999	Statewide	31	Rendering and meat byproduct processing	39	311613	10.45	0.0	0.0	211.2	11824.0	8.8
+133	39	999	Statewide	31	Retail bakeries	39	311811	198.4	1171.2	19703.200000000004	1724.4	26802.6	191.6
+134	39	999	Statewide	31	Roasted nuts and peanut butter manufacturing	39	311911	9.2	7.2	348.0	170.4	6912.6	8.2
+135	39	999	Statewide	31	Rope, cordage, twine, tire cord, and tire fabric mills	39	314994	3.0	0.0	0.0	0.0	0.0	2.2
+136	39	999	Statewide	31	Seafood product preparation and packaging	39	311710	2.0	0.0	0.0	0.0	0.0	1.6
+137	39	999	Statewide	31	Soft drink manufacturing	39	312111	16.6	498.2	26879.800000000007	2330.4	108926.4	16.2
+138	39	999	Statewide	31	Soybean and other oilseed processing	39	311224	6.2	0.0	0.0	113.6	14632.6	5.4
+139	39	999	Statewide	31	Specialty canning	39	311422	6.6	14.2	537.8	0.0	0.0	5.6
+140	39	999	Statewide	31	Spice and extract manufacturing	39	311942	15.933333333333332	28.0	1005.8	651.8	41483.8	13.8
+141	39	999	Statewide	31	Textile and fabric finishing mills	39	313310	15.4	8.4	449.2	176.4	6532.4	14.6
+142	39	999	Statewide	31	Textile bag and canvas mills	39	314910	69.4	385.0	17196.6	669.4	25843.8	66.4
+143	39	999	Statewide	31	Tobacco manufacturing	39	312230	1.0	0.0	0.0	0.0	0.0	1.0
+144	39	999	Statewide	31	Tortilla manufacturing	39	311830	4.0	0.0	0.0	24.0	480.6	3.2
+145	39	999	Statewide	31	Wet corn milling	39	311221	1.0	0.0	0.0	0.0	0.0	1.0
+146	39	999	Statewide	31	Wineries	39	312130	78.39999999999998	258.0	5343.399999999999	586.0	13257.6	67.0
+147	39	999	Statewide	31	Women's handbag and purse manufacturing	39	316992	5.5	0.0	0.0	0.0	0.0	2.0
+148	39	999	Statewide	31	Women's, girls', and infants' cut and sew apparel manufacturing	39	315240	18.6	3.6	106.0	78.4	1737.0	10.6
+149	39	999	Statewide	32	Abrasive product manufacturing	39	327910	29.2	132.0	5526.4	1245.4	67323.4	29.2
+150	39	999	Statewide	32	Adhesive manufacturing	39	325520	46.2	1269.8	88437.2	2449.6	159777.4	43.6
+151	39	999	Statewide	32	All other basic organic chemical manufacturing	39	325199	54.4	2475.8	207874.4	3701.6	310797.6	51.8
+152	39	999	Statewide	32	All other converted paper product manufacturing	39	322299	26.733333333333334	107.2	4601.0	625.6	27774.6	23.0
+153	39	999	Statewide	32	All other miscellaneous chemical product and preparation manufacturing	39	325998	80.0	1295.4	88968.20000000003	2258.6	151914.4	74.8
+154	39	999	Statewide	32	All other miscellaneous nonmetallic mineral product manufacturing	39	327999	23.0	108.2	4461.6	786.4	28235.2	21.8
+155	39	999	Statewide	32	All other miscellaneous wood product manufacturing	39	321999	94.46666666666668	503.8	15559.0	1384.0	49467.2	89.6
+156	39	999	Statewide	32	All other petroleum and coal products manufacturing	39	324199	5.0	0.0	0.0	54.6	4490.6	3.2
+157	39	999	Statewide	32	All other plastics product manufacturing	39	326199	422.6	23654.000000000004	1021532.8000000002	32675.4	1354446.8	421.0
+158	39	999	Statewide	32	All other rubber product manufacturing	39	326299	73.0	1499.2	77683.2	3735.2	178349.2	69.8
+159	39	999	Statewide	32	Artificial and synthetic fibers and filaments manufacturing	39	325220	8.0	0.0	0.0	81.6	5601.2	5.4
+160	39	999	Statewide	32	Asphalt paving mixture and block manufacturing	39	324121	93.4	156.8	18317.2	773.6	56419.6	89.0
+161	39	999	Statewide	32	Asphalt shingle and coating materials manufacturing	39	324122	19.4	31.4	2135.2	938.8	62288.4	18.2
+162	39	999	Statewide	32	Biological product (except diagnostic) manufacturing	39	325414	5.4	0.0	0.0	115.0	6076.6	4.6
+163	39	999	Statewide	32	Books printing	39	323117	19.05	110.8	5445.8	1356.8	53412.6	16.4
+164	39	999	Statewide	32	Cement manufacturing	39	327310	9.45	0.0	0.0	205.4	13656.6	9.0
+165	39	999	Statewide	32	Clay building material and refractories manufacturing	39	327120	66.8	601.0	27786.4	2980.6	144019.0	64.6
+166	39	999	Statewide	32	Commercial printing (except screen and books)	39	323111	821.3999999999997	14543.2	664560.6000000001	16714.8	743672.6	820.8
+167	39	999	Statewide	32	Commercial screen printing	39	323113	211.5	1896.0	68189.60000000003	3202.4	116803.4	204.0
+168	39	999	Statewide	32	Concrete block and brick manufacturing	39	327331	30.65	9.8	499.2	629.6	29589.6	27.6
+169	39	999	Statewide	32	Concrete pipe manufacturing	39	327332	21.0	0.0	0.0	486.8	18833.6	18.0
+170	39	999	Statewide	32	Corrugated and solid fiber box manufacturing	39	322211	98.2	2481.4	135696.6	5275.0	288063.0	94.6
+171	39	999	Statewide	32	Custom compounding of purchased resins	39	325991	35.80000000000001	476.8	21533.4	1580.0	87152.4	33.8
+172	39	999	Statewide	32	Cut stock, resawing lumber, and planing	39	321912	33.4	221.0	7161.5999999999985	745.6	25058.4	28.6
+173	39	999	Statewide	32	Cut stone and stone product manufacturing	39	327991	76.19999999999997	430.40000000000015	20698.599999999995	1170.4	48751.6	69.0
+174	39	999	Statewide	32	Cyclic crude, intermediate, and gum and wood chemical manufacturing	39	325194	7.0	0.0	0.0	230.2	15830.0	6.0
+175	39	999	Statewide	32	Engineered wood member (except truss) manufacturing	39	321213	4.0	0.0	0.0	0.0	0.0	2.4
+176	39	999	Statewide	32	Ethyl alcohol manufacturing	39	325193	9.0	0.0	0.0	300.4	17449.0	7.2
+177	39	999	Statewide	32	Explosives manufacturing	39	325920	3.0	0.0	0.0	0.0	0.0	2.2
+178	39	999	Statewide	32	Fertilizer (mixing only) manufacturing	39	325314	24.6	0.0	0.0	845.0	44461.0	22.6
+179	39	999	Statewide	32	Flat glass manufacturing	39	327211	3.0	0.0	0.0	0.0	0.0	2.6
+180	39	999	Statewide	32	Folding paperboard box manufacturing	39	322212	33.0	620.4	31935.0	1982.0	96253.4	28.2
+181	39	999	Statewide	32	Glass container manufacturing	39	327213	5.0	0.0	0.0	0.0	0.0	3.6
+182	39	999	Statewide	32	Glass product manufacturing made of purchased glass	39	327215	52.85	88.6	3637.2	2762.2	124100.8	50.0
+183	39	999	Statewide	32	Ground or treated mineral and earth manufacturing	39	327992	14.0	47.0	2093.8	302.8	16832.6	13.4
+184	39	999	Statewide	32	Gypsum product manufacturing	39	327420	8.2	0.0	0.0	74.2	14350.6	6.2
+185	39	999	Statewide	32	Hardwood veneer and plywood manufacturing	39	321211	8.8	0.0	0.0	190.6	6926.6	7.2
+186	39	999	Statewide	32	In-vitro diagnostic substance manufacturing	39	325413	5.2	0.0	0.0	18.6	1172.6	3.2
+187	39	999	Statewide	32	Industrial gas manufacturing	39	325120	25.0	5.2	358.2	208.6	15192.2	23.6
+188	39	999	Statewide	32	Laminated plastics plate, sheet (except packaging), and shape manufacturing	39	326130	27.2	58.0	2796.8	1404.6	80196.2	25.6
+189	39	999	Statewide	32	Lime manufacturing	39	327410	8.8	0.0	0.0	156.2	14399.4	8.2
+190	39	999	Statewide	32	Manufactured home (mobile home) manufacturing	39	321991	6.0	0.0	0.0	97.8	4169.0	5.4
+191	39	999	Statewide	32	Medicinal and botanical manufacturing	39	325411	10.133333333333333	0.0	0.0	60.6	4566.0	7.8
+192	39	999	Statewide	32	Mineral wool manufacturing	39	327993	21.2	25.4	1621.6	1829.2	109941.4	18.8
+193	39	999	Statewide	32	Nitrogenous fertilizer manufacturing	39	325311	10.0	0.0	0.0	300.4	24476.0	8.0
+194	39	999	Statewide	32	Other basic inorganic chemical manufacturing	39	325180	36.93333333333333	247.4	25373.4	2174.4	166255.2	34.2
+195	39	999	Statewide	32	Other concrete product manufacturing	39	327390	73.8	197.4	10949.6	1399.4	62221.0	70.4
+196	39	999	Statewide	32	Other millwork (including flooring)	39	321918	59.40000000000001	404.0	11950.2	885.2	31612.0	55.0
+197	39	999	Statewide	32	Other paperboard container manufacturing	39	322219	29.2	229.4	12882.0	1632.2	73107.2	28.8
+198	39	999	Statewide	32	Other pressed and blown glass and glassware manufacturing	39	327212	35.6	72.6	4178.4	3169.6	166963.2	32.8
+199	39	999	Statewide	32	Paint and coating manufacturing	39	325510	83.59999999999998	2437.2	194206.8	4859.2	350129.2	80.8
+200	39	999	Statewide	32	Paper (except newsprint) mills	39	322121	9.4	0.0	0.0	1717.2	129553.2	7.4
+201	39	999	Statewide	32	Paper bag and coated and treated paper manufacturing	39	322220	67.05	1298.4	74005.40000000001	3944.4	243944.6	62.2
+202	39	999	Statewide	32	Paperboard mills	39	322130	11.2	35.4	1987.6	866.6	51944.6	9.8
+203	39	999	Statewide	32	Pesticide and other agricultural chemical manufacturing	39	325320	4.0	0.0	0.0	0.0	0.0	1.75
+204	39	999	Statewide	32	Petrochemical manufacturing	39	325110	2.0	0.0	0.0	0.0	0.0	1.5
+205	39	999	Statewide	32	Petroleum lubricating oil and grease manufacturing	39	324191	34.8	361.0	23135.4	1079.2	82096.4	33.4
+206	39	999	Statewide	32	Petroleum refineries	39	324110	5.800000000000002	0.0	0.0	2020.2	236935.2	5.0
+207	39	999	Statewide	32	Pharmaceutical preparation manufacturing	39	325412	30.6	396.6	42207.4	2937.2	268826.4	27.4
+208	39	999	Statewide	32	Phosphatic fertilizer manufacturing	39	325312	2.6	0.0	0.0	0.0	0.0	2.6
+209	39	999	Statewide	32	Photographic film, paper, plate, and chemical manufacturing	39	325992	11.0	61.6	4877.2	131.8	8950.6	10.0
+210	39	999	Statewide	32	Plastics bag and pouch manufacturing	39	326111	19.8	75.80000000000003	2842.8	846.0	38656.4	17.2
+211	39	999	Statewide	32	Plastics bottle manufacturing	39	326160	29.0	95.4	4428.6	3104.8	152338.4	28.2
+212	39	999	Statewide	32	Plastics material and resin manufacturing	39	325211	91.0	1807.4	134214.19999999998	5151.2	334640.8	84.6
+213	39	999	Statewide	32	Plastics packaging film and sheet (including laminated) manufacturing	39	326112	27.4	28.4	1270.2	1883.2	91268.0	26.2
+214	39	999	Statewide	32	Plastics pipe and pipe fitting manufacturing	39	326122	29.4	29.6	1281.6	1065.6	50065.0	28.6
+215	39	999	Statewide	32	Plastics plumbing fixture manufacturing	39	326191	19.4	0.0	0.0	367.0	13084.6	17.6
+216	39	999	Statewide	32	Polish and other sanitation good manufacturing	39	325612	28.6	324.6	25320.4	1313.6	90308.8	26.6
+217	39	999	Statewide	32	Polystyrene foam product manufacturing	39	326140	23.85	0.0	0.0	627.8	34084.0	22.2
+218	39	999	Statewide	32	Pottery, ceramics, and plumbing fixture manufacturing	39	327110	40.6	221.6	6308.6	673.4	28724.8	39.2
+219	39	999	Statewide	32	Prefabricated wood building manufacturing	39	321992	19.8	128.8	6089.8	298.6	13042.6	17.4
+220	39	999	Statewide	32	Printing ink manufacturing	39	325910	31.8	640.4	38155.0	888.2	51580.4	29.6
+221	39	999	Statewide	32	Pulp mills	39	322110	3.0	0.0	0.0	0.0	0.0	2.2
+222	39	999	Statewide	32	Ready-mix concrete manufacturing	39	327320	171.99999999999997	847.1999999999998	51781.4	2280.4	125792.8	169.6
+223	39	999	Statewide	32	Reconstituted wood product manufacturing	39	321219	6.0	0.0	0.0	110.0	5452.0	4.0
+224	39	999	Statewide	32	Rubber and plastics hoses and belting manufacturing	39	326220	20.0	0.0	0.0	1441.4	78140.4	19.2
+225	39	999	Statewide	32	Rubber product manufacturing for mechanical use	39	326291	80.60000000000002	2268.6	103502.4	6659.0	286502.2	79.4
+226	39	999	Statewide	32	Sanitary paper product manufacturing	39	322291	8.2	83.2	4391.4	625.0	30661.0	7.4
+227	39	999	Statewide	32	Sawmills	39	321113	105.7	779.0000000000001	25361.4	1345.2	44589.6	93.0
+228	39	999	Statewide	32	Soap and other detergent manufacturing	39	325611	35.1	699.2	47722.8	3303.6	226225.2	33.4
+229	39	999	Statewide	32	Softwood veneer and plywood manufacturing	39	321212	4.0	0.0	0.0	4.2	133.4	2.6
+230	39	999	Statewide	32	Stationery product manufacturing	39	322230	35.0	315.6	10367.4	1903.6	72099.8	33.0
+231	39	999	Statewide	32	Support activities for printing	39	323120	84.05000000000003	721.6	35929.60000000001	1569.6	83679.2	78.8
+232	39	999	Statewide	32	Surface active agent manufacturing	39	325613	5.8	0.0	0.0	89.8	6925.0	5.0
+233	39	999	Statewide	32	Synthetic dye and pigment manufacturing	39	325130	25.73333333333333	196.2	11406.0	1585.2	130254.6	23.2
+234	39	999	Statewide	32	Synthetic rubber manufacturing	39	325212	15.0	494.8	35048.2	633.4	42666.0	12.8
+235	39	999	Statewide	32	Tire manufacturing (except retreading)	39	326211	10.4	0.0	0.0	2440.8	152827.8	8.6
+236	39	999	Statewide	32	Tire retreading	39	326212	22.6	13.4	654.4	116.4	4696.0	20.0
+237	39	999	Statewide	32	Toilet preparation manufacturing	39	325620	25.73333333333333	1305.0	100948.0	2266.8	159033.8	21.2
+238	39	999	Statewide	32	Truss manufacturing	39	321214	29.6	0.0	0.0	652.6	26200.8	26.8
+239	39	999	Statewide	32	Unlaminated plastics film and sheet (except packaging) manufacturing	39	326113	46.06666666666666	100.2	5922.0	2381.2	154341.0	44.4
+240	39	999	Statewide	32	Unlaminated plastics profile shape manufacturing	39	326121	34.2	283.4	17482.2	1514.0	73562.6	33.4
+241	39	999	Statewide	32	Urethane and other foam product (except polystyrene) manufacturing	39	326150	39.4	264.8	13471.4	1763.8	77722.6	36.4
+242	39	999	Statewide	32	Wood container and pallet manufacturing	39	321920	177.49999999999997	1845.4000000000005	60181.59999999999	3037.0	94490.6	168.6
+243	39	999	Statewide	32	Wood preservation	39	321114	13.55	0.0	0.0	37.6	1668.0	10.8
+244	39	999	Statewide	32	Wood window and door manufacturing	39	321911	34.6	99.4	3200.8	960.8	36613.8	32.2
+245	39	999	Statewide	33	Air and gas compressor manufacturing	39	333912	22.0	79.4	5190.4	1724.6	133684.2	19.0
+246	39	999	Statewide	33	Air-conditioning and warm air heating equipment and commercial and industrial refrigeration equipment manufacturing	39	333415	42.45	504.4	29785.2	4587.8	283612.2	38.4
+247	39	999	Statewide	33	Aircraft engine and engine parts manufacturing	39	336412	38.73333333333333	1275.6	77509.40000000001	5366.6	410917.4	37.4
+248	39	999	Statewide	33	Aircraft manufacturing	39	336411	6.6	108.6	6731.2	419.8	26258.2	5.2
+249	39	999	Statewide	33	All other miscellaneous electrical equipment and component manufacturing	39	335999	41.4	11.4	689.6	1353.8	75005.6	36.4
+250	39	999	Statewide	33	All other miscellaneous fabricated metal product manufacturing	39	332999	232.0	4129.2	196453.0	5451.0	245765.8	226.6
+251	39	999	Statewide	33	All other miscellaneous general purpose machinery manufacturing	39	333999	87.83333333333334	945.2	62900.0	2549.2	155394.2	85.2
+252	39	999	Statewide	33	All other miscellaneous manufacturing	39	339999	170.04999999999995	1288.9999999999998	54585.6	2267.0	98434.8	154.4
+253	39	999	Statewide	33	All other transportation equipment manufacturing	39	336999	15.8	0.0	0.0	96.0	4812.2	12.0
+254	39	999	Statewide	33	Alumina refining and primary aluminum production	39	331313	6.8	67.0	4869.8	761.6	42948.6	6.0
+255	39	999	Statewide	33	Aluminum foundries (except die-casting)	39	331524	48.20000000000001	996.8	41365.8	2339.0	95391.2	45.2
+256	39	999	Statewide	33	Aluminum sheet, plate, and foil manufacturing	39	331315	6.0	0.0	0.0	561.6	43389.4	5.4
+257	39	999	Statewide	33	Ammunition (except small arms) manufacturing	39	332993	5.0	0.0	0.0	0.0	0.0	2.0
+258	39	999	Statewide	33	Analytical laboratory instrument manufacturing	39	334516	19.6	138.8	7774.4000000000015	581.4	34654.6	19.6
+259	39	999	Statewide	33	Audio and video equipment manufacturing	39	334310	13.599999999999998	4.2	220.4	61.6	2996.8	11.4
+260	39	999	Statewide	33	Automatic environmental control manufacturing for residential, commercial, and appliance use	39	334512	22.65	92.6	3722.8	1021.4	54375.2	17.4
+261	39	999	Statewide	33	Automobile manufacturing	39	336111	12.933333333333332	0.0	0.0	4187.6	354422.2	10.8
+262	39	999	Statewide	33	Ball and roller bearing manufacturing	39	332991	8.8	0.0	0.0	727.4	36585.0	7.4
+263	39	999	Statewide	33	Bare printed circuit board manufacturing	39	334412	21.3	74.8	3362.4	419.8	21498.6	18.6
+264	39	999	Statewide	33	Blank magnetic and optical recording media manufacturing	39	334613	1.0	0.0	0.0	0.0	0.0	1.0
+265	39	999	Statewide	33	Blind and shade manufacturing	39	337920	6.0	0.0	0.0	106.6	3895.6	5.6
+266	39	999	Statewide	33	Boat building	39	336612	10.2	0.0	0.0	85.4	2617.6	7.6
+267	39	999	Statewide	33	Bolt, nut, screw, rivet, and washer manufacturing	39	332722	65.8	1083.8	58937.2	2870.4	151165.2	62.0
+268	39	999	Statewide	33	Broom, brush, and mop manufacturing	39	339994	22.0	318.4000000000001	14276.0	1091.4	46981.2	19.2
+269	39	999	Statewide	33	Burial casket manufacturing	39	339995	7.0	0.0	0.0	169.0	7603.2	6.4
+270	39	999	Statewide	33	Capacitor, resistor, coil, transformer, and other inductor manufacturing	39	334416	10.533333333333333	26.4	1010.2	380.2	17051.6	9.8
+271	39	999	Statewide	33	Carbon and graphite product manufacturing	39	335991	16.1	3.8	1506.0	396.6	22485.4	13.0
+272	39	999	Statewide	33	Commercial, industrial, and institutional electric lighting fixture manufacturing	39	335122	11.0	51.6	1712.8	118.8	6775.2	8.6
+273	39	999	Statewide	33	Computer storage device manufacturing	39	334112	3.0	0.0	0.0	20.2	1285.6	2.4
+274	39	999	Statewide	33	Computer terminal and other computer peripheral equipment manufacturing	39	334118	18.2	0.0	0.0	629.0	33522.0	16.8
+275	39	999	Statewide	33	Construction machinery manufacturing	39	333120	44.65	266.6	13505.8	2280.8	113600.2	42.8
+276	39	999	Statewide	33	Conveyor and conveying equipment manufacturing	39	333922	59.8	831.8000000000002	44901.6	2689.2	142028.2	57.8
+277	39	999	Statewide	33	Copper rolling, drawing, extruding, and alloying	39	331420	15.733333333333334	0.0	0.0	1012.4	59978.6	12.8
+278	39	999	Statewide	33	Current-carrying wiring device manufacturing	39	335931	27.9	351.0	15714.4	1654.6	86936.4	24.8
+279	39	999	Statewide	33	Custom architectural woodwork and millwork manufacturing	39	337212	91.2	1108.0	56445.00000000001	1873.6	91520.2	88.8
+280	39	999	Statewide	33	Custom roll forming	39	332114	36.6	694.2	42438.0	2618.4	155470.0	35.2
+281	39	999	Statewide	33	Cutting tool and machine tool accessory manufacturing	39	333515	129.0	1342.6	69313.60000000003	3011.6	153292.2	123.6
+282	39	999	Statewide	33	Dental equipment and supplies manufacturing	39	339114	21.8	28.8	1260.4	290.4	23208.8	19.4
+283	39	999	Statewide	33	Dental laboratories	39	339116	176.8	946.4	39374.4	1138.4	42238.0	174.8
+284	39	999	Statewide	33	Doll, toy, and game manufacturing	39	339930	26.93333333333333	39.0	1418.6	741.2	28874.6	22.4
+285	39	999	Statewide	33	Electric lamp bulb and part manufacturing	39	335110	11.4	0.0	3091.2	354.6	23619.4	8.6
+286	39	999	Statewide	33	Electromedical and electrotherapeutic apparatus manufacturing	39	334510	33.0	283.6	34116.8	1716.0	146994.2	27.6
+287	39	999	Statewide	33	Electronic computer manufacturing	39	334111	9.4	0.0	149.4	79.6	3913.2	7.4
+288	39	999	Statewide	33	Electronic connector manufacturing	39	334417	8.65	0.0	0.0	299.0	12030.2	6.8
+289	39	999	Statewide	33	Electroplating, plating, polishing, anodizing, and coloring	39	332813	179.20000000000005	2829.9999999999995	126096.0	4394.8	177650.4	177.2
+290	39	999	Statewide	33	Elevator and moving stairway manufacturing	39	333921	6.8	0.0	0.0	110.8	8032.8	5.4
+291	39	999	Statewide	33	Fabricated pipe and pipe fitting manufacturing	39	332996	43.40000000000001	181.6	12783.4	1094.4	48911.6	39.2
+292	39	999	Statewide	33	Fabricated structural metal manufacturing	39	332312	163.13333333333333	1551.6	80577.59999999999	2944.6	147061.2	150.0
+293	39	999	Statewide	33	Farm machinery and equipment manufacturing	39	333111	29.4	206.2	11868.4	1492.2	85371.0	25.6
+294	39	999	Statewide	33	Fastener, button, needle, and pin manufacturing	39	339993	7.0	72.4	3595.8	167.4	8181.4	7.0
+295	39	999	Statewide	33	Fiber optic cable manufacturing	39	335921	1.0	0.0	0.0	0.0	0.0	1.0
+296	39	999	Statewide	33	Fluid power cylinder and actuator manufacturing	39	333995	29.5	50.8	2905.6	1666.6	85123.2	28.0
+297	39	999	Statewide	33	Fluid power pump and motor manufacturing	39	333996	15.4	0.0	0.0	520.0	43858.8	15.0
+298	39	999	Statewide	33	Fluid power valve and hose fitting manufacturing	39	332912	40.6	398.0	19088.0	6701.0	384620.0	37.8
+299	39	999	Statewide	33	Food product machinery manufacturing	39	333241	26.8	269.8	16482.4	1848.8	122854.0	26.2
+300	39	999	Statewide	33	Gasket, packing, and sealing device manufacturing	39	339991	43.8	386.6	20508.2	1916.8	84333.0	43.0
+301	39	999	Statewide	33	Guided missile and space vehicle propulsion unit and propulsion unit parts manufacturing	39	336415	1.0	0.0	0.0	0.0	0.0	1.0
+302	39	999	Statewide	33	Hardware manufacturing	39	332510	35.2	1064.2	69861.40000000001	1705.6	97670.6	31.0
+303	39	999	Statewide	33	Heating equipment (except warm air furnaces) manufacturing	39	333414	19.65	61.4	4046.0	642.4	31316.4	17.2
+304	39	999	Statewide	33	Heavy duty truck manufacturing	39	336120	10.0	0.0	0.0	3483.2	225702.2	8.8
+305	39	999	Statewide	33	Household cooking appliance manufacturing	39	335221	4.0	0.0	0.0	0.0	0.0	1.6
+306	39	999	Statewide	33	Household furniture (except wood and metal) manufacturing	39	337125	4.6	5.0	128.4	0.0	0.0	4.2
+307	39	999	Statewide	33	Household laundry equipment manufacturing	39	335224	2.8	0.0	0.0	0.0	0.0	2.8
+308	39	999	Statewide	33	Household refrigerator and home freezer manufacturing	39	335222	3.0	0.0	0.0	0.0	0.0	3.0
+309	39	999	Statewide	33	Industrial and commercial fan and blower and air purification equipment manufacturing	39	333413	31.8	413.8	22464.4	1541.0	75334.0	29.6
+310	39	999	Statewide	33	Industrial mold manufacturing	39	333511	176.20000000000005	2570.8	130404.2	3790.0	192750.8	173.2
+311	39	999	Statewide	33	Industrial process furnace and oven manufacturing	39	333994	37.2	535.4000000000002	41472.2	1666.2	116904.6	37.0
+312	39	999	Statewide	33	Industrial truck, trailer, and stacker machinery manufacturing	39	333924	22.2	0.0	0.0	4470.0	249295.4	20.4
+313	39	999	Statewide	33	Industrial valve manufacturing	39	332911	28.4	625.2	43292.8	1394.0	83913.0	24.6
+314	39	999	Statewide	33	Institutional furniture manufacturing	39	337127	25.2	0.0	0.0	997.6	56777.4	23.6
+315	39	999	Statewide	33	Instrument manufacturing for measuring and testing electricity and electrical systems	39	334515	33.599999999999994	780.4	48248.0	1249.8	74860.0	31.8
+316	39	999	Statewide	33	Instruments and related products manufacturing for measuring, displaying, and controlling industrial process variables	39	334513	51.0	1134.8	69832.40000000001	3174.2	184722.0	50.0
+317	39	999	Statewide	33	Iron and steel forging	39	332111	34.45	985.2	61871.4	2806.6	156876.2	30.6
+318	39	999	Statewide	33	Iron and steel mills and ferroalloy manufacturing	39	331110	69.6	3450.2	265808.80000000005	12607.6	901950.4	59.4
+319	39	999	Statewide	33	Iron and steel pipe and tube manufacturing from purchased steel	39	331210	27.2	311.8	20072.8	3469.4	232050.6	21.2
+320	39	999	Statewide	33	Iron foundries	39	331511	43.0	27.8	1059.4	3724.2	233719.0	39.4
+321	39	999	Statewide	33	Irradiation apparatus manufacturing	39	334517	6.0	0.0	0.0	0.0	0.0	6.0
+322	39	999	Statewide	33	Jewelry and silverware manufacturing	39	339910	48.4	106.0	9534.200000000004	239.0	13819.2	44.8
+323	39	999	Statewide	33	Lawn and garden tractor and home lawn and garden equipment manufacturing	39	333112	10.6	0.0	0.0	371.0	16595.4	7.4
+324	39	999	Statewide	33	Light truck and utility vehicle manufacturing	39	336112	4.8	0.0	0.0	0.0	0.0	4.2
+325	39	999	Statewide	33	Machine shops	39	332710	1265.8	15848.200000000004	773342.7999999998	16918.8	817063.6	1265.0
+326	39	999	Statewide	33	Machine tool manufacturing	39	333517	97.93333333333332	1449.8666666666666	91689.86666666664	4902.2	295175.0	92.0
+327	39	999	Statewide	33	Mattress manufacturing	39	337910	13.6	3.6	65.8	714.0	29004.0	12.6
+328	39	999	Statewide	33	Measuring and dispensing pump manufacturing	39	333913	5.2	0.0	0.0	472.6	23876.0	3.8
+329	39	999	Statewide	33	Mechanical power transmission equipment manufacturing	39	333613	20.6	98.8	4631.2	1065.2	54832.0	19.4
+330	39	999	Statewide	33	Metal can manufacturing	39	332431	14.8	43.8	2774.0	2108.6	136596.2	14.0
+331	39	999	Statewide	33	Metal coating, engraving (except jewelry and silverware), and allied services to manufacturers	39	332812	157.25	2233.0	97984.2	4036.6	198692.2	152.2
+332	39	999	Statewide	33	Metal crown, closure, and other metal stamping (except automotive)	39	332119	139.4	2590.0	123351.20000000006	4942.6	230595.4	137.2
+333	39	999	Statewide	33	Metal heat treating	39	332811	101.4	1486.0	72405.79999999999	2408.4	120120.4	100.0
+334	39	999	Statewide	33	Metal household furniture manufacturing	39	337124	8.2	0.0	0.0	118.4	6372.2	6.4
+335	39	999	Statewide	33	Metal kitchen cookware, utensil, cutlery, and flatware (except precious) manufacturing	39	332215	15.8	0.0	0.0	210.2	7736.6	13.0
+336	39	999	Statewide	33	Metal tank (heavy gauge) manufacturing	39	332420	48.73333333333333	77.4	6675.2	2182.0	116464.8	41.2
+337	39	999	Statewide	33	Metal window and door manufacturing	39	332321	47.83333333333333	757.8	35758.8	4000.6	188964.0	43.2
+338	39	999	Statewide	33	Military armored vehicle, tank, and tank component manufacturing	39	336992	4.0	0.0	0.0	226.0	15854.6	3.2
+339	39	999	Statewide	33	Mining machinery and equipment manufacturing	39	333131	12.4	0.0	0.0	651.0	40322.0	10.8
+340	39	999	Statewide	33	Motor and generator manufacturing	39	335312	33.2	610.6	38596.2	2064.2	112136.4	29.6
+341	39	999	Statewide	33	Motor home manufacturing	39	336213	2.0	0.0	0.0	0.0	0.0	2.0
+342	39	999	Statewide	33	Motor vehicle body manufacturing	39	336211	44.45	394.4	19330.2	2383.4	125371.8	39.6
+343	39	999	Statewide	33	Motor vehicle brake system manufacturing	39	336340	29.6	0.0	0.0	2409.8	113987.8	24.4
+344	39	999	Statewide	33	Motor vehicle electrical and electronic equipment manufacturing	39	336320	31.73333333333333	49.6	1405.4	8619.0	592762.2	25.2
+345	39	999	Statewide	33	Motor vehicle gasoline engine and engine parts manufacturing	39	336310	54.95	580.8	24344.4	4332.0	300705.2	51.4
+346	39	999	Statewide	33	Motor vehicle metal stamping	39	336370	141.05	9312.0	522029.6	15437.2	822486.4	139.8
+347	39	999	Statewide	33	Motor vehicle seating and interior trim manufacturing	39	336360	35.59999999999999	565.5999999999998	22793.6	8136.6	335915.8	33.2
+348	39	999	Statewide	33	Motor vehicle steering and suspension components (except spring) manufacturing	39	336330	22.4	0.0	0.0	3309.0	169316.6	20.0
+349	39	999	Statewide	33	Motor vehicle transmission and power train parts manufacturing	39	336350	34.0	21.6	784.4	9788.8	698907.0	30.2
+350	39	999	Statewide	33	Motorcycle, bicycle, and parts manufacturing	39	336991	15.9	2.8	86.6	247.4	9144.4	14.2
+351	39	999	Statewide	33	Musical instrument manufacturing	39	339992	26.200000000000006	58.4	2710.8	504.6	21609.2	22.2
+352	39	999	Statewide	33	Noncurrent-carrying wiring device manufacturing	39	335932	11.0	0.0	0.0	927.4	48523.2	10.6
+353	39	999	Statewide	33	Nonferrous forging	39	332112	6.0	0.0	0.0	1136.4	83328.0	5.2
+354	39	999	Statewide	33	Nonferrous metal (except aluminum) smelting and refining	39	331410	11.0	90.0	4366.8	834.0	58434.2	10.6
+355	39	999	Statewide	33	Nonferrous metal (except copper and aluminum) rolling, drawing, extruding, and alloying	39	331491	27.0	141.0	7998.2	2211.4	143976.6	25.0
+356	39	999	Statewide	33	Nonferrous metal die-casting foundries	39	331523	35.13333333333333	359.4	17194.4	1637.8	78240.2	33.6
+357	39	999	Statewide	33	Nonupholstered wood household furniture manufacturing	39	337122	162.75	966.8	27460.0	1535.4	56701.2	157.2
+358	39	999	Statewide	33	Office furniture (except wood) manufacturing	39	337214	5.0	0.0	0.0	108.8	6244.2	4.4
+359	39	999	Statewide	33	Office supplies (except paper) manufacturing	39	339940	23.2	0.0	0.0	491.8	21263.0	20.8
+360	39	999	Statewide	33	Oil and gas field machinery and equipment manufacturing	39	333132	11.0	47.4	1965.2	403.6	19976.8	8.0
+361	39	999	Statewide	33	Ophthalmic goods manufacturing	39	339115	25.000000000000004	725.1999999999998	25271.4	1297.4	43150.6	24.8
+362	39	999	Statewide	33	Optical instrument and lens manufacturing	39	333314	9.0	0.0	0.0	70.2	5075.6	8.0
+363	39	999	Statewide	33	Ornamental and architectural metal work manufacturing	39	332323	64.93333333333334	390.6	25585.400000000005	1572.0	77991.6	62.4
+364	39	999	Statewide	33	Other aircraft parts and auxiliary equipment manufacturing	39	336413	29.2	259.20000000000005	19696.8	2898.2	244749.6	27.0
+365	39	999	Statewide	33	Other aluminum rolling, drawing, and extruding	39	331318	19.200000000000006	830.2	32980.8	1523.2	66639.0	16.2
+366	39	999	Statewide	33	Other commercial and service industry machinery manufacturing	39	333318	79.7333333333333	975.8	51924.2	3618.8	186684.0	76.4
+367	39	999	Statewide	33	Other communication and energy wire manufacturing	39	335929	13.2	0.0	0.0	442.6	19372.6	12.2
+368	39	999	Statewide	33	Other communications equipment manufacturing	39	334290	7.8	0.0	0.0	66.2	4047.0	6.4
+369	39	999	Statewide	33	Other electronic component manufacturing	39	334419	40.4	465.0	24400.4	1522.2	74499.0	37.8
+370	39	999	Statewide	33	Other engine equipment manufacturing	39	333618	12.0	120.4	12267.8	1433.8	80731.2	11.4
+371	39	999	Statewide	33	Other fabricated wire product manufacturing	39	332618	55.0	602.5999999999998	28206.6	1497.4	65128.0	53.6
+372	39	999	Statewide	33	Other guided missile and space vehicle parts and auxiliary equipment manufacturing	39	336419	2.0	0.0	0.0	0.0	0.0	2.0
+373	39	999	Statewide	33	Other industrial machinery manufacturing	39	333249	153.20000000000005	2819.6	170193.8	5107.6	311054.8	151.2
+374	39	999	Statewide	33	Other lighting equipment manufacturing	39	335129	15.6	0.0	0.0	645.4	42285.6	12.4
+375	39	999	Statewide	33	Other major household appliance manufacturing	39	335228	2.0	0.0	0.0	0.0	0.0	1.8
+376	39	999	Statewide	33	Other measuring and controlling device manufacturing	39	334519	51.53333333333334	865.5999999999998	64396.2	3710.4	348925.4	45.4
+377	39	999	Statewide	33	Other metal container manufacturing	39	332439	27.8	172.39999999999995	10610.4	921.2	46817.2	25.4
+378	39	999	Statewide	33	Other metal valve and pipe fitting manufacturing	39	332919	16.6	628.4	32991.4	1096.4	55251.6	15.6
+379	39	999	Statewide	33	Other motor vehicle parts manufacturing	39	336390	109.95	4494.200000000002	223124.0	11526.6	561093.6	104.4
+380	39	999	Statewide	33	Other nonferrous metal foundries (except die-casting)	39	331529	27.4	59.4	2518.2	1060.2	49494.4	26.2
+381	39	999	Statewide	33	Overhead traveling crane, hoist, and monorail system manufacturing	39	333923	23.8	348.6	21351.4	894.8	50169.8	22.0
+382	39	999	Statewide	33	Packaging machinery manufacturing	39	333993	33.599999999999994	130.2	5549.6	1530.6	99570.4	30.4
+383	39	999	Statewide	33	Photographic and photocopying equipment manufacturing	39	333316	7.6	0.0	0.0	100.4	7682.0	6.2
+384	39	999	Statewide	33	Plate work manufacturing	39	332313	114.46666666666668	1302.2	62537.2	2345.4	107461.2	111.0
+385	39	999	Statewide	33	Plumbing fixture fitting and trim manufacturing	39	332913	6.0	173.0	7756.0	193.8	8267.6	5.2
+386	39	999	Statewide	33	Powder metallurgy part manufacturing	39	332117	6.0	0.0	0.0	246.2	12065.6	4.4
+387	39	999	Statewide	33	Power boiler and heat exchanger manufacturing	39	332410	19.6	0.0	0.0	872.8	81989.2	18.0
+388	39	999	Statewide	33	Power, distribution, and specialty transformer manufacturing	39	335311	12.2	0.0	0.0	394.0	22283.0	10.2
+389	39	999	Statewide	33	Power-driven handtool manufacturing	39	333991	18.8	60.4	3998.4	399.0	26600.2	16.6
+390	39	999	Statewide	33	Precision turned product manufacturing	39	332721	292.45	7950.0	415056.5999999999	10004.2	506038.2	288.4
+391	39	999	Statewide	33	Prefabricated metal building and component manufacturing	39	332311	33.599999999999994	28.2	1040.2	571.6	27504.2	26.4
+392	39	999	Statewide	33	Primary battery manufacturing	39	335912	2.4	0.0	0.0	0.0	0.0	1.8
+393	39	999	Statewide	33	Printed circuit assembly (electronic assembly) manufacturing	39	334418	32.4	1080.8	41478.6	1756.4	67525.6	31.0
+394	39	999	Statewide	33	Printing machinery and equipment manufacturing	39	333244	13.8	0.0	0.0	344.4	18742.0	13.6
+395	39	999	Statewide	33	Pump and pumping equipment manufacturing	39	333911	23.8	70.0	8148.4	1526.8	109197.0	21.0
+396	39	999	Statewide	33	Radio and television broadcasting and wireless communications equipment manufacturing	39	334220	12.2	118.0	7644.0	362.4	32291.2	11.2
+397	39	999	Statewide	33	Railroad rolling stock manufacturing	39	336510	9.0	0.0	0.0	622.2	34766.8	8.4
+398	39	999	Statewide	33	Relay and industrial control manufacturing	39	335314	55.0	458.4	23872.0	1734.0	91150.0	52.8
+399	39	999	Statewide	33	Residential electric lighting fixture manufacturing	39	335121	14.0	3.6	105.4	137.8	5728.8	10.8
+400	39	999	Statewide	33	Rolled steel shape manufacturing	39	331221	19.033333333333328	0.0	0.0	1096.4	66638.6	15.6
+401	39	999	Statewide	33	Rolling mill and other metalworking machinery manufacturing	39	333519	43.8	263.6	16468.0	1495.0	94317.0	42.4
+402	39	999	Statewide	33	Saw blade and handtool manufacturing	39	332216	67.8	1161.0	61302.0	3264.6	173376.2	65.8
+403	39	999	Statewide	33	Sawmill, woodworking, and paper machinery manufacturing	39	333243	20.8	97.8	5101.4	277.6	13527.0	17.4
+404	39	999	Statewide	33	Scale and balance manufacturing	39	333997	6.2	0.0	0.0	407.0	25499.4	5.4
+405	39	999	Statewide	33	Search, detection, navigation, guidance, aeronautical, and nautical system and instrument manufacturing	39	334511	19.8	15.4	905.8	1382.4	108024.6	18.6
+406	39	999	Statewide	33	Secondary smelting and alloying of aluminum	39	331314	12.0	0.0	0.0	432.0	21203.8	10.0
+407	39	999	Statewide	33	Secondary smelting, refining, and alloying of nonferrous metal (except copper and aluminum)	39	331492	20.0	13.2	785.0	390.4	23088.8	15.2
+408	39	999	Statewide	33	Semiconductor and related device manufacturing	39	334413	24.3	9.6	806.5999999999998	0.0	0.0	16.4
+409	39	999	Statewide	33	Semiconductor machinery manufacturing	39	333242	3.0	0.0	0.0	0.0	0.0	3.0
+410	39	999	Statewide	33	Sheet metal work manufacturing	39	332322	184.30000000000004	2264.4	115316.0	3990.4	190549.8	179.6
+411	39	999	Statewide	33	Ship building and repairing	39	336611	7.5	0.0	0.0	63.6	3934.0	5.0
+412	39	999	Statewide	33	Showcase, partition, shelving, and locker manufacturing	39	337215	62.2	739.8	30759.000000000004	1185.8	47133.4	59.6
+413	39	999	Statewide	33	Sign manufacturing	39	339950	237.9833333333333	2670.4	123350.4	3607.6	157932.6	232.4
+414	39	999	Statewide	33	Small arms ammunition manufacturing	39	332992	6.333333333333332	0.0	0.0	35.6	1281.0	3.4
+415	39	999	Statewide	33	Small arms, ordnance, and ordnance accessories manufacturing	39	332994	26.88333333333333	0.0	0.0	493.6	38655.0	21.0
+416	39	999	Statewide	33	Small electrical appliance manufacturing	39	335210	10.8	460.2	29232.4	1221.6	62852.4	8.0
+417	39	999	Statewide	33	Software and other prerecorded compact disc, tape, and record reproducing	39	334614	13.0	114.6	7661.6	206.6	10937.4	12.0
+418	39	999	Statewide	33	Special die and tool, die set, jig, and fixture manufacturing	39	333514	244.2	2986.0	162871.8	4192.6	244310.0	242.2
+419	39	999	Statewide	33	Speed changer, industrial high-speed drive, and gear manufacturing	39	333612	24.8	443.80000000000007	29191.8	737.8	42851.6	23.2
+420	39	999	Statewide	33	Sporting and athletic goods manufacturing	39	339920	42.55	16.0	816.0	622.6	26379.2	39.0
+421	39	999	Statewide	33	Spring manufacturing	39	332613	29.200000000000006	125.2	4770.0	819.6	40745.8	28.2
+422	39	999	Statewide	33	Steel foundries (except investment)	39	331513	16.6	11.0	582.6	1528.4	73282.4	15.8
+423	39	999	Statewide	33	Steel investment foundries	39	331512	15.8	25.8	1224.2	1634.2	81333.2	13.8
+424	39	999	Statewide	33	Steel wire drawing	39	331222	22.4	25.0	1776.6	890.2	43941.2	18.4
+425	39	999	Statewide	33	Storage battery manufacturing	39	335911	6.0	0.0	0.0	1113.8	66433.4	4.2
+426	39	999	Statewide	33	Surgical and medical instrument manufacturing	39	339112	42.8	514.0	41144.8	3059.6	205456.8	41.4
+427	39	999	Statewide	33	Surgical appliance and supplies manufacturing	39	339113	80.83333333333333	2076.8	90138.0	3770.4	172934.2	77.2
+428	39	999	Statewide	33	Switchgear and switchboard apparatus manufacturing	39	335313	40.816666666666656	293.2	12566.2	1164.6	54252.2	38.2
+429	39	999	Statewide	33	Telephone apparatus manufacturing	39	334210	6.0	0.0	0.0	57.0	3229.0	4.6
+430	39	999	Statewide	33	Totalizing fluid meter and counting device manufacturing	39	334514	16.8	3.2	222.6	876.4	52475.2	14.8
+431	39	999	Statewide	33	Travel trailer and camper manufacturing	39	336214	27.9	0.0	0.0	656.4	34221.6	22.2
+432	39	999	Statewide	33	Truck trailer manufacturing	39	336212	27.2	0.0	0.0	1342.2	61032.2	25.2
+433	39	999	Statewide	33	Turbine and turbine generator set units manufacturing	39	333611	12.8	66.0	3341.2	843.2	59594.2	11.2
+434	39	999	Statewide	33	Upholstered household furniture manufacturing	39	337121	36.0	57.4	1787.8000000000004	389.6	11858.4	29.8
+435	39	999	Statewide	33	Welding and soldering equipment manufacturing	39	333992	34.00000000000001	1.0	60.2	4326.4	332474.4	32.2
+436	39	999	Statewide	33	Wood kitchen cabinet and countertop manufacturing	39	337110	208.3333333333333	953.6	36195.8	3100.2	116151.6	204.8
+437	39	999	Statewide	33	Wood office furniture manufacturing	39	337211	19.4	15.6	693.4000000000002	120.2	8618.2	15.8
+438	39	999	Statewide	42	Automobile and other motor vehicle merchant wholesalers	39	423110	209.2	3593.2	188825.4	4687.0	235731.6	207.2
+439	39	999	Statewide	42	Beer and ale merchant wholesalers	39	424810	59.60000000000001	2131.0	102735.4	4091.2	206773.2	54.8
+440	39	999	Statewide	42	Book, periodical, and newspaper merchant wholesalers	39	424920	60.99999999999999	260.6	15094.2	1090.0	40423.0	58.6
+441	39	999	Statewide	42	Brick, stone, and related construction material merchant wholesalers	39	423320	123.75	465.6	26830.80000000001	1035.4	57724.2	111.4
+442	39	999	Statewide	42	Business to business electronic markets	39	425110	26.333333333333336	6.0	118.4	102.6	6825.0	16.6
+443	39	999	Statewide	42	Coal and other mineral and ore merchant wholesalers	39	423520	26.2	54.2	6993.4	197.6	19167.8	23.0
+444	39	999	Statewide	42	Computer and computer peripheral equipment and software merchant wholesalers	39	423430	329.5333333333333	5087.0	460793.6	5936.2	523970.2	334.0
+445	39	999	Statewide	42	Confectionery merchant wholesalers	39	424450	90.38333333333333	739.4000000000002	35870.4	1551.6	75363.4	85.4
+446	39	999	Statewide	42	Construction and mining (except oil well) machinery and equipment merchant wholesalers	39	423810	170.20000000000005	2257.8	159411.80000000002	3523.0	228461.0	167.6
+447	39	999	Statewide	42	Dairy product (except dried or canned) merchant wholesalers	39	424430	60.0	487.4	22355.0	1466.8	118345.2	57.2
+448	39	999	Statewide	42	Drugs and druggists' sundries merchant wholesalers	39	424210	233.99999999999991	4143.200000000002	280145.8	6916.6	476124.6	245.0
+449	39	999	Statewide	42	Electrical apparatus and equipment, wiring supplies, and related equipment merchant wholesalers	39	423610	477.6999999999999	7447.799999999998	518361.8000000001	9251.6	642840.4	482.6
+450	39	999	Statewide	42	Farm and garden machinery and equipment merchant wholesalers	39	423820	256.6	2771.8	136345.19999999995	4431.4	214003.4	254.8
+451	39	999	Statewide	42	Farm supplies merchant wholesalers	39	424910	301.6	1745.2000000000005	89263.59999999998	3264.4	172684.6	300.6
+452	39	999	Statewide	42	Fish and seafood merchant wholesalers	39	424460	15.85	32.8	2089.15	132.0	8574.4	14.0
+453	39	999	Statewide	42	Flower, nursery stock, and florists' supplies merchant wholesalers	39	424930	93.13333333333334	516.6	19030.6	1079.8	38601.0	88.0
+454	39	999	Statewide	42	Footwear merchant wholesalers	39	424340	17.2	2.8	872.4	808.8	58765.4	15.6
+455	39	999	Statewide	42	Fresh fruit and vegetable merchant wholesalers	39	424480	91.2	1092.6	49633.0	2550.6	96629.6	87.2
+456	39	999	Statewide	42	Furniture merchant wholesalers	39	423210	150.95	1205.8000000000004	83329.40000000001	2053.4	114391.2	151.0
+457	39	999	Statewide	42	General line grocery merchant wholesalers	39	424410	87.4	2808.1999999999994	171118.4	4566.6	277118.6	82.2
+458	39	999	Statewide	42	Grain and field bean merchant wholesalers	39	424510	206.0	825.4	47105.80000000001	2087.4	96179.8	205.0
+459	39	999	Statewide	42	Hardware merchant wholesalers	39	423710	271.7999999999999	3678.0000000000014	213689.0	5400.4	294485.2	267.6
+460	39	999	Statewide	42	Home furnishing merchant wholesalers	39	423220	144.29999999999995	2132.0	133943.0	3379.6	209429.4	139.6
+461	39	999	Statewide	42	Household appliances, electric housewares, and consumer electronics merchant wholesalers 	39	423620	64.35	268.0	15116.8	1088.2	60907.8	60.6
+462	39	999	Statewide	42	Industrial and personal service paper merchant wholesalers	39	424130	164.6	1736.0	116053.40000000002	2964.2	216432.0	162.0
+463	39	999	Statewide	42	Industrial machinery and equipment merchant wholesalers	39	423830	1499.2000000000005	18552.000000000004	1301525.5999999996	19617.6	1356956.4	1503.2
+464	39	999	Statewide	42	Industrial supplies merchant wholesalers	39	423840	370.4666666666666	3775.6	239594.20000000004	5488.8	340126.4	369.4
+465	39	999	Statewide	42	Jewelry, watch, precious stone, and precious metal merchant wholesalers	39	423940	113.03333333333336	599.8000000000002	26772.8	1124.0	40815.2	109.8
+466	39	999	Statewide	42	Livestock merchant wholesalers	39	424520	23.8	51.4	2268.8	142.8	3838.8	17.8
+467	39	999	Statewide	42	Lumber, plywood, millwork, and wood panel merchant wholesalers	39	423310	227.78333333333336	2002.8	123987.8	3112.6	167201.0	221.8
+468	39	999	Statewide	42	Meat and meat product merchant wholesalers	39	424470	53.00000000000001	617.2	36234.0	1190.2	60518.8	46.2
+469	39	999	Statewide	42	Medical, dental, and hospital equipment and supplies merchant wholesalers	39	423450	324.0	4955.8	404496.0	7075.0	610639.0	330.2
+470	39	999	Statewide	42	Men's and boys' clothing and furnishings merchant wholesalers	39	424320	63.2	412.8	15045.000000000002	1851.4	69041.0	60.6
+471	39	999	Statewide	42	Metal service centers and other metal merchant wholesalers	39	423510	583.4000000000002	8861.800000000001	532783.6000000001	9755.4	576563.4	582.6
+472	39	999	Statewide	42	Motor vehicle parts (used) merchant wholesalers	39	423140	96.2	586.7999999999997	22010.0	1389.2	51717.0	94.0
+473	39	999	Statewide	42	Motor vehicle supplies and new parts merchant wholesalers	39	423120	556.6500000000002	8097.399999999999	398244.2	11009.0	522673.6	553.0
+474	39	999	Statewide	42	Office equipment merchant wholesalers	39	423420	320.63333333333344	3932.6	236010.6	5168.4	295996.6	313.2
+475	39	999	Statewide	42	Ophthalmic goods merchant wholesalers	39	423460	26.0	70.6	2842.4	764.6	28534.8	25.6
+476	39	999	Statewide	42	Other chemical and allied products merchant wholesalers	39	424690	420.4	5244.0	368592.4000000001	6430.8	440665.0	425.0
+477	39	999	Statewide	42	Other commercial equipment merchant wholesalers	39	423440	144.59999999999997	2490.4	141799.6	2904.6	165640.8	141.8
+478	39	999	Statewide	42	Other construction material merchant wholesalers	39	423390	112.8	890.0	50032.4	1325.8	72638.0	110.2
+479	39	999	Statewide	42	Other electronic parts and equipment merchant wholesalers	39	423690	316.86666666666656	3832.2	295340.2	5016.4	389467.6	326.6
+480	39	999	Statewide	42	Other farm product raw material merchant wholesalers	39	424590	9.0	0.0	0.0	6.8	258.4	6.4
+481	39	999	Statewide	42	Other grocery and related products merchant wholesalers	39	424490	372.69999999999993	7591.800000000001	379376.0	10084.2	509484.0	376.6
+482	39	999	Statewide	42	Other miscellaneous durable goods merchant wholesalers	39	423990	236.65	2272.2000000000007	125787.6	3406.2	172004.8	234.2
+483	39	999	Statewide	42	Other miscellaneous nondurable goods merchant wholesalers	39	424990	246.26666666666668	1778.8000000000004	78425.4	2888.0	123028.8	237.6
+484	39	999	Statewide	42	Other professional equipment and supplies merchant wholesalers	39	423490	65.80000000000001	216.2	14536.2	1090.2	64746.6	65.8
+485	39	999	Statewide	42	Packaged frozen food merchant wholesalers	39	424420	63.1	873.2	51547.4	1904.6	97740.0	60.8
+486	39	999	Statewide	42	Paint, varnish, and supplies merchant wholesalers	39	424950	85.2	715.8000000000002	42495.60000000001	1516.0	92631.0	83.6
+487	39	999	Statewide	42	Petroleum and petroleum products merchant wholesalers (except bulk stations and terminals) 	39	424720	67.05000000000001	159.60000000000005	10884.4	688.6	39767.4	65.6
+488	39	999	Statewide	42	Petroleum bulk stations and terminals 	39	424710	160.75	946.6	69783.00000000001	2181.0	125410.0	152.4
+489	39	999	Statewide	42	Photographic equipment and supplies merchant wholesalers	39	423410	26.2	68.39999999999999	3255.6	630.8	34698.4	23.0
+490	39	999	Statewide	42	Piece goods, notions, and other dry goods merchant wholesalers	39	424310	42.40000000000001	97.0	7233.999999999999	440.0	24855.8	41.4
+491	39	999	Statewide	42	Plastics materials and basic forms and shapes merchant wholesalers	39	424610	162.16666666666666	1241.0	81123.6	2378.8	185292.2	161.2
+492	39	999	Statewide	42	Plumbing and heating equipment and supplies (hydronics) merchant wholesalers	39	423720	227.8	1937.6000000000006	120928.6	2538.8	142903.2	224.4
+493	39	999	Statewide	42	Poultry and poultry product merchant wholesalers	39	424440	16.4	177.8	6022.0	469.4	15344.4	14.8
+494	39	999	Statewide	42	Printing and writing paper merchant wholesalers	39	424110	47.99999999999999	443.0	27681.0	881.8	58177.8	47.4
+495	39	999	Statewide	42	Recyclable material merchant wholesalers	39	423930	441.00000000000017	4572.0	217659.8	6368.0	288256.8	438.6
+496	39	999	Statewide	42	Refrigeration equipment and supplies merchant wholesalers	39	423740	35.2	165.20000000000005	10497.6	279.0	16682.0	34.6
+497	39	999	Statewide	42	Roofing, siding, and insulation material merchant wholesalers	39	423330	142.2	1419.4	116327.4	2197.8	193086.8	144.2
+498	39	999	Statewide	42	Service establishment equipment and supplies merchant wholesalers	39	423850	163.59999999999997	1152.9999999999998	60406.2	1628.2	78371.6	159.8
+499	39	999	Statewide	42	Sporting and recreational goods and supplies merchant wholesalers	39	423910	173.9333333333333	962.2	53817.2	1955.2	104304.6	168.8
+500	39	999	Statewide	42	Stationery and office supplies merchant wholesalers	39	424120	188.6	1620.2	77154.40000000001	2589.2	125753.0	187.8
+501	39	999	Statewide	42	Tire and tube merchant wholesalers	39	423130	108.8	786.0	49753.59999999999	1437.4	86526.2	104.4
+502	39	999	Statewide	42	Tobacco and tobacco product merchant wholesalers	39	424940	46.4	306.7999999999999	12442.2	1425.6	57185.0	42.6
+503	39	999	Statewide	42	Toy and hobby goods and supplies merchant wholesalers	39	423920	63.45000000000001	879.8	41608.999999999985	1282.2	62299.2	59.8
+504	39	999	Statewide	42	Transportation equipment and supplies (except motor vehicle) merchant wholesalers	39	423860	50.2	200.4	15271.2	487.2	30255.0	47.6
+505	39	999	Statewide	42	Warm air heating and air-conditioning equipment and supplies merchant wholesalers	39	423730	205.6	2030.2	130913.19999999998	2566.8	150032.0	201.8
+506	39	999	Statewide	42	Wholesale trade agents and brokers	39	425120	1733.1500000000005	10720.599999999997	568262.8	12455.2	617837.4	1732.8
+507	39	999	Statewide	42	Wine and distilled alcoholic beverage merchant wholesalers	39	424820	46.0	1224.6	72068.8	1865.2	103380.2	45.2
+508	39	999	Statewide	42	Women's, children's, and infants' clothing and accessories merchant wholesalers	39	424330	66.8	307.4	33609.6	928.2	79304.6	58.6
+509	39	999	Statewide	44	All other health and personal care stores	39	446199	466.4	2099.4	93768.8	2805.2	111564.2	462.6
+510	39	999	Statewide	44	All other home furnishings stores	39	442299	375.83333333333314	3933.8	70610.4	4367.0	75390.4	370.8
+511	39	999	Statewide	44	All other specialty food stores	39	445299	164.35	442.6	7206.200000000002	924.8	11731.4	156.8
+512	39	999	Statewide	44	Automotive parts and accessories stores	39	441310	1506.599999999999	13166.000000000002	310884.0000000001	13587.2	313736.4	1506.6
+513	39	999	Statewide	44	Baked goods stores	39	445291	97.85	242.0	4658.999999999999	423.6	7912.6	89.2
+514	39	999	Statewide	44	Beer, wine, and liquor stores	39	445310	807.4	3333.3999999999987	59485.2	3814.8	62321.0	803.4
+515	39	999	Statewide	44	Boat dealers	39	441222	101.7	454.40000000000015	19442.2	711.6	27215.0	99.2
+516	39	999	Statewide	44	Children's and infants' clothing stores	39	448130	220.80000000000004	2472.4	27515.39999999999	2646.2	29211.8	215.8
+517	39	999	Statewide	44	Clothing accessories stores	39	448150	278.40000000000003	1487.4000000000005	23457.2	1887.0	29071.6	272.4
+518	39	999	Statewide	44	Confectionery and nut stores	39	445292	129.95000000000002	390.45	5943.199999999999	764.4	9488.0	123.4
+519	39	999	Statewide	44	Convenience stores	39	445120	1301.5	4762.799999999998	74517.40000000001	5402.6	79368.6	1299.2
+520	39	999	Statewide	44	Cosmetics, beauty supplies, and perfume stores	39	446120	512.6999999999998	3869.200000000001	71873.8	4533.2	78302.8	509.6
+521	39	999	Statewide	44	Electronics stores	39	443142	1387.6666666666665	8551.599999999999	243369.59999999995	11030.8	258677.2	1385.4
+522	39	999	Statewide	44	Family clothing stores	39	448140	699.95	16396.899999999998	223246.3	17250.2	233941.8	696.0
+523	39	999	Statewide	44	Fish and seafood markets	39	445220	21.8	66.4	1587.1999999999996	131.4	3391.0	19.2
+524	39	999	Statewide	44	Floor covering stores	39	442210	401.25000000000006	1604.0000000000007	77751.40000000001	2109.4	86003.4	400.4
+525	39	999	Statewide	44	Food (health) supplement stores	39	446191	299.6	826.8	20021.999999999996	1076.4	25357.6	297.2
+526	39	999	Statewide	44	Fruit and vegetable markets	39	445230	81.58333333333334	394.4	7140.6	712.2	13336.0	73.4
+527	39	999	Statewide	44	Furniture stores	39	442110	765.5	6093.6	206273.4	7081.6	228338.6	762.2
+528	39	999	Statewide	44	Gasoline stations with convenience stores	39	447110	3381.6000000000013	28604.599999999995	516763.99999999994	29595.0	520187.8	3381.6
+529	39	999	Statewide	44	Hardware stores	39	444130	647.8	4576.600000000001	106236.0	5541.8	119666.6	647.8
+530	39	999	Statewide	44	Home centers	39	444110	228.6	9156.2	230317.2	16339.0	642004.4	227.6
+531	39	999	Statewide	44	Household appliance stores	39	443141	289.6500000000001	1766.8000000000004	53184.79999999999	2424.0	67997.4	283.6
+532	39	999	Statewide	44	Jewelry stores	39	448310	691.0000000000001	3752.6	115581.0	4278.8	122450.8	686.8
+533	39	999	Statewide	44	Luggage and leather goods stores	39	448320	16.6	22.6	976.6	50.8	2157.8	15.4
+534	39	999	Statewide	44	Meat markets	39	445210	236.9	1360.6	28535.0	2055.2	42143.8	231.2
+535	39	999	Statewide	44	Men's clothing stores	39	448110	226.8	1256.4	34006.999999999985	1685.8	39998.4	223.6
+536	39	999	Statewide	44	Motorcycle, ATV, and all other motor vehicle dealers	39	441228	231.0	1648.0	63283.99999999999	2734.2	104315.8	229.4
+537	39	999	Statewide	44	New car dealers	39	441110	875.1999999999997	41264.80000000002	1985606.6000000003	42254.4	2019990.8	874.6
+538	39	999	Statewide	44	Nursery, garden center, and farm supply stores	39	444220	520.4500000000002	3314.1999999999994	110270.80000000003	4707.6	131664.4	518.4
+539	39	999	Statewide	44	Optical goods stores	39	446130	433.0	1968.0	63848.19999999999	2542.4	72749.6	426.8
+540	39	999	Statewide	44	Other building material dealers	39	444190	1022.1999999999997	8512.199999999999	379529.6	9201.4	391276.8	1019.0
+541	39	999	Statewide	44	Other clothing stores	39	448190	353.0166666666669	2724.2	59002.2	3865.6	82124.6	344.6
+542	39	999	Statewide	44	Other gasoline stations	39	447190	496.25000000000006	3658.2	90127.40000000002	5320.0	120311.8	494.4
+543	39	999	Statewide	44	Outdoor power equipment stores	39	444210	210.8	703.4000000000002	24569.599999999995	1445.6	48299.6	207.0
+544	39	999	Statewide	44	Paint and wallpaper stores	39	444120	281.7999999999999	574.3999999999999	22036.8	513.2	39802.2	281.6
+545	39	999	Statewide	44	Pharmacies and drug stores	39	446110	1485.8000000000004	28109.200000000008	851856.2000000002	32158.0	1003310.8	1486.8
+546	39	999	Statewide	44	Recreational vehicle dealers	39	441210	77.4	341.6	16651.2	1035.6	47000.8	75.6
+547	39	999	Statewide	44	Shoe stores	39	448210	763.3999999999997	5766.199999999999	95283.4	6284.0	101497.4	761.6
+548	39	999	Statewide	44	Supermarkets and other grocery (except convenience) stores	39	445110	2059.000000000001	74019.99999999997	1591838.799999999	84736.4	1781529.4	2058.4
+549	39	999	Statewide	44	Tire dealers	39	441320	824.6	5924.800000000001	217247.60000000006	6609.4	227413.6	821.4
+550	39	999	Statewide	44	Used car dealers	39	441120	976.9999999999997	4862.999999999999	191183.99999999997	5387.0	203455.8	976.0
+551	39	999	Statewide	44	Window treatment stores	39	442291	37.15000000000001	6.8	124.2	88.2	2034.2	28.2
+552	39	999	Statewide	44	Women's clothing stores	39	448120	1004.2	8904.500000000002	120923.89999999994	9984.0	134237.8	997.6
+553	39	999	Statewide	45	All other general merchandise stores	39	452990	1671.6	14587.4	247405.20000000013	15717.6	256517.4	1671.6
+554	39	999	Statewide	45	All other miscellaneous store retailers (except tobacco stores)	39	453998	621.9999999999999	2442.4000000000005	81347.79999999999	3001.0	85690.2	616.8
+555	39	999	Statewide	45	Art dealers	39	453920	85.39999999999998	135.6	4166.0	279.4	6499.8	82.6
+556	39	999	Statewide	45	Book stores	39	451211	210.2	1103.4	17722.2	1021.6	35061.0	205.8
+557	39	999	Statewide	45	Department stores (except discount department stores)	39	452111	149.3	13796.8	241830.2	15428.0	265461.8	146.6
+558	39	999	Statewide	45	Discount department stores	39	452112	188.8	17307.600000000002	301752.19999999995	22270.2	380533.6	188.0
+559	39	999	Statewide	45	Electronic auctions	39	454112	31.25	10.4	372.6	155.4	4890.8	26.4
+560	39	999	Statewide	45	Electronic shopping	39	454111	699.9000000000003	9164.800000000003	353502.2	10274.4	382019.8	693.8
+561	39	999	Statewide	45	Florists	39	453110	569.8500000000003	2366.700000000002	41289.599999999984	2895.8	45193.2	568.0
+562	39	999	Statewide	45	Fuel dealers	39	454310	232.0	633.0000000000001	31059.200000000004	1674.4	68994.8	232.0
+563	39	999	Statewide	45	Gift, novelty, and souvenir stores	39	453220	763.4833333333331	4860.799999999998	70087.73333333332	5357.4	74662.8	757.8
+564	39	999	Statewide	45	Hobby, toy, and game stores	39	451120	317.19999999999993	3707.0	56572.4	4838.0	72242.2	311.0
+565	39	999	Statewide	45	Mail-order houses	39	454113	222.8	7565.000000000001	407517.2	12672.0	631034.2	217.6
+566	39	999	Statewide	45	Manufactured (mobile) home dealers	39	453930	54.0	50.2	2058.2	206.8	8629.2	47.2
+567	39	999	Statewide	45	Musical instrument and supplies stores	39	451140	151.70000000000005	630.9999999999999	15747.2	979.0	22578.0	146.8
+568	39	999	Statewide	45	News dealers and newsstands	39	451212	27.8	7.8	552.6	82.2	1889.0	24.6
+569	39	999	Statewide	45	Office supplies and stationery stores	39	453210	231.0	1893.2	43687.2	2270.0	58403.4	229.2
+570	39	999	Statewide	45	Other direct selling establishments	39	454390	568.2999999999997	2326.2	97759.80000000003	3347.8	128520.2	560.0
+571	39	999	Statewide	45	Pet and pet supplies stores	39	453910	344.6	2673.6000000000017	52343.799999999974	4123.6	70895.0	341.0
+572	39	999	Statewide	45	Sewing, needlework, and piece goods stores	39	451130	175.93333333333337	965.4	12100.4	1823.6	22351.6	174.2
+573	39	999	Statewide	45	Sporting goods stores	39	451110	695.7999999999997	7137.0	140789.8	8251.0	154257.6	691.0
+574	39	999	Statewide	45	Tobacco stores	39	453991	424.20000000000016	1126.0	24284.400000000005	1643.8	29102.8	419.0
+575	39	999	Statewide	45	Used merchandise stores	39	453310	735.2	6701.5999999999985	121453.39999999998	7969.6	135449.2	734.8
+576	39	999	Statewide	45	Vending machine operators	39	454210	190.80000000000004	1031.0	28950.0	2195.0	80602.2	184.4
+577	39	999	Statewide	45	Warehouse clubs and supercenters	39	452910	227.0	16260.6	434430.4	58238.0	1382332.0	226.2
+578	39	999	Statewide	48	Air traffic control	39	488111	6.8	0.0	0.0	0.0	0.0	6.4
+579	39	999	Statewide	48	All other pipeline transportation	39	486990	3.0	0.0	0.0	0.0	0.0	1.75
+580	39	999	Statewide	48	All other support activities for transportation	39	488999	16.516666666666666	18.75	1070.25	57.4	3620.2	9.0
+581	39	999	Statewide	48	All other transit and ground passenger transportation	39	485999	36.4	50.6	904.2	384.6	6344.8	30.8
+582	39	999	Statewide	48	Bus and other motor vehicle transit systems	39	485113	20.1	0.0	0.0	221.4	4474.2	12.6
+583	39	999	Statewide	48	Charter bus industry	39	485510	36.8	27.4	1549.0	1055.4	21914.4	32.0
+584	39	999	Statewide	48	Coastal and great lakes freight transportation	39	483113	8.2	0.0	0.0	101.0	14578.8	5.2
+585	39	999	Statewide	48	Coastal and great lakes passenger transportation	39	483114	5.0	39.0	4638.0	39.0	4649.8	4.2
+586	39	999	Statewide	48	Deep sea freight transportation	39	483111	4.7	0.0	0.0	2.0	148.8	2.8
+587	39	999	Statewide	48	Freight transportation arrangement	39	488510	589.6	7279.4000000000015	371742.4	10034.6	504122.6	584.0
+588	39	999	Statewide	48	General freight trucking, local	39	484110	1043.9500000000003	7631.600000000002	331726.19999999995	9110.6	384023.0	1040.2
+589	39	999	Statewide	48	General freight trucking, long-distance, less than truckload	39	484122	301.7666666666668	11761.799999999996	645840.9999999999	15374.2	821787.0	292.4
+590	39	999	Statewide	48	General freight trucking, long-distance, truckload	39	484121	1237.7833333333333	18096.8	791587.5999999999	20135.8	862948.8	1235.8
+591	39	999	Statewide	48	Inland water freight transportation	39	483211	8.6	0.0	0.0	38.4	2533.0	7.6
+592	39	999	Statewide	48	Inland water passenger transportation	39	483212	3.0	0.0	0.0	0.0	0.0	1.5
+593	39	999	Statewide	48	Interurban and rural bus transportation	39	485210	10.0	28.2	661.2	50.6	1407.8	6.4
+594	39	999	Statewide	48	Limousine service	39	485320	72.5	459.8	10483.199999999997	639.2	13792.2	64.8
+595	39	999	Statewide	48	Marine cargo handling	39	488320	12.75	0.0	0.0	134.0	10194.8	11.2
+596	39	999	Statewide	48	Mixed mode transit systems	39	485111	2.0	0.0	0.0	0.0	0.0	2.0
+597	39	999	Statewide	48	Motor vehicle towing	39	488410	311.8499999999998	1987.4	70992.80000000003	2619.4	93590.8	305.6
+598	39	999	Statewide	48	Navigational services to shipping	39	488330	10.0	0.0	0.0	375.2	19590.8	9.8
+599	39	999	Statewide	48	Nonscheduled chartered freight air transportation	39	481212	3.0	0.0	0.0	28.2	1533.6	2.4
+600	39	999	Statewide	48	Nonscheduled chartered passenger air transportation	39	481211	51.0	261.40000000000003	18721.2	2133.8	284919.0	47.0
+601	39	999	Statewide	48	Other airport operations	39	488119	49.73333333333333	649.4	13439.8	939.2	22494.6	42.6
+602	39	999	Statewide	48	Other nonscheduled air transportation	39	481219	16.9	22.95	1996.5	26.4	2672.8	11.8
+603	39	999	Statewide	48	Other support activities for air transportation	39	488190	98.79999999999998	652.45	29278.85	2121.2	99911.0	94.8
+604	39	999	Statewide	48	Other support activities for road transportation	39	488490	68.30000000000001	191.2	6685.2	835.0	24093.0	61.0
+605	39	999	Statewide	48	Other support activities for water transportation	39	488390	13.0	0.0	0.0	51.8	2237.6	11.8
+606	39	999	Statewide	48	Other urban transit systems	39	485119	4.0	0.0	0.0	0.0	0.0	4.0
+607	39	999	Statewide	48	Packing and crating	39	488991	67.44999999999999	362.99999999999983	12265.4	947.8	26058.2	60.4
+608	39	999	Statewide	48	Pipeline transportation of crude oil	39	486110	17.700000000000006	0.0	0.0	90.8	9608.0	13.6
+609	39	999	Statewide	48	Pipeline transportation of natural gas	39	486210	67.66666666666667	65.0	6752.4	231.2	27800.8	60.8
+610	39	999	Statewide	48	Pipeline transportation of refined petroleum products	39	486910	21.0	0.0	0.0	225.4	20963.0	19.4
+611	39	999	Statewide	48	Port and harbor operations	39	488310	13.25	28.25	1728.5	107.2	6937.2	10.2
+612	39	999	Statewide	48	Scenic and sightseeing transportation, land	39	487110	14.2	0.0	0.0	123.2	3401.4	12.4
+613	39	999	Statewide	48	Scenic and sightseeing transportation, other	39	487990	3.0	0.0	0.0	0.0	0.0	1.6
+614	39	999	Statewide	48	Scenic and sightseeing transportation, water	39	487210	12.6	21.0	811.0	26.6	1626.2	11.8
+615	39	999	Statewide	48	Scheduled freight air transportation	39	481112	10.4	4.0	179.4	87.8	4068.2	8.6
+616	39	999	Statewide	48	Scheduled passenger air transportation	39	481111	38.15	3071.8	178515.80000000005	1812.4	148653.0	36.4
+617	39	999	Statewide	48	School and employee bus transportation	39	485410	80.0	1850.6	36591.0	4645.4	87292.0	78.4
+618	39	999	Statewide	48	Special needs transportation	39	485991	143.89999999999995	1515.2	34321.8	2566.4	54298.2	131.2
+619	39	999	Statewide	48	Specialized freight (except used goods) trucking, local	39	484220	1090.1999999999996	7049.6	342319.40000000014	7851.4	361249.4	1089.8
+620	39	999	Statewide	48	Specialized freight (except used goods) trucking, long-distance	39	484230	345.66666666666674	4030.8	220686.0	6055.2	319178.2	340.4
+621	39	999	Statewide	48	Support activities for rail transportation	39	488210	78.85000000000002	853.3000000000002	43440.1	1937.4	93004.2	74.4
+622	39	999	Statewide	48	Taxi service	39	485310	67.45	191.6	5356.6	478.0	9884.0	59.6
+623	39	999	Statewide	48	Used household and office goods moving	39	484210	240.81666666666658	2135.9999999999995	79113.00000000001	2693.4	99452.0	226.2
+624	39	999	Statewide	49	Couriers and express delivery services	39	492110	287.99999999999994	9793.6	380909.4	20668.6	857578.2	293.0
+625	39	999	Statewide	49	Farm product warehousing and storage	39	493130	14.0	0.0	0.0	107.0	3269.8	9.8
+626	39	999	Statewide	49	General warehousing and storage	39	493110	479.6333333333334	25217.59999999999	999647.7999999998	33642.8	1298602.6	478.2
+627	39	999	Statewide	49	Local messengers and local delivery	39	492210	134.2	574.6	23160.8	1029.6	37127.4	127.0
+628	39	999	Statewide	49	Other warehousing and storage	39	493190	103.3	1364.0	58593.59999999999	3586.4	134944.4	94.8
+629	39	999	Statewide	49	Refrigerated warehousing and storage	39	493120	30.6	195.8	7211.0	994.0	34285.0	29.8
+630	39	999	Statewide	51	All other information services	39	519190	13.9	6.6	257.0	29.4	1161.4	9.4
+631	39	999	Statewide	51	All other publishers	39	511199	15.999999999999998	0.0	0.0	95.4	3197.4	15.2
+632	39	999	Statewide	51	All other telecommunications	39	517919	85.18333333333334	232.6	16732.6	709.6	41420.6	77.0
+633	39	999	Statewide	51	Book publishers	39	511130	69.4	993.8	89347.40000000002	2335.2	222642.0	65.8
+634	39	999	Statewide	51	Cable and other subscription programming	39	515210	11.0	11.4	1234.2	173.0	16535.4	10.2
+635	39	999	Statewide	51	Data processing, hosting, and related services	39	518210	393.13333333333327	10862.2	845024.7999999998	11644.8	880635.4	396.6
+636	39	999	Statewide	51	Directory and mailing list publishers	39	511140	45.0	409.19999999999993	32228.4	2682.8	192654.2	42.6
+637	39	999	Statewide	51	Drive-in motion picture theaters	39	512132	22.85	0.0	0.0	25.8	1101.8	20.6
+638	39	999	Statewide	51	Greeting card publishers	39	511191	2.0	0.0	0.0	0.0	0.0	2.0
+639	39	999	Statewide	51	Integrated record production/distribution	39	512220	2.85	0.0	0.0	0.8	28.0	2.6
+640	39	999	Statewide	51	Internet publishing and broadcasting and web search portals	39	519130	143.05	1796.4999999999998	96190.13333333332	5272.0	489588.4	132.4
+641	39	999	Statewide	51	Libraries and archives	39	519120	26.2	5.0	341.0	170.8	4361.6	24.4
+642	39	999	Statewide	51	Motion picture and video distribution	39	512120	4.0	0.0	0.0	16.0	190.8	3.0
+643	39	999	Statewide	51	Motion picture and video production	39	512110	195.15	795.4	42140.6	889.6	46013.0	187.4
+644	39	999	Statewide	51	Motion picture theaters (except drive-ins)	39	512131	147.54999999999995	2067.0	24091.000000000004	3894.0	39358.6	144.0
+645	39	999	Statewide	51	Music publishers	39	512230	6.6	11.6	380.8	58.4	2521.2	5.8
+646	39	999	Statewide	51	News syndicates	39	519110	11.4	82.2	4656.6	244.8	14294.8	11.4
+647	39	999	Statewide	51	Newspaper publishers	39	511110	239.88333333333333	1644.7999999999995	69494.0	8596.8	331316.0	233.6
+648	39	999	Statewide	51	Other motion picture and video industries	39	512199	5.0	0.0	0.0	18.6	1651.6	4.2
+649	39	999	Statewide	51	Other sound recording industries	39	512290	12.1	1.6	20.8	12.2	187.8	8.4
+650	39	999	Statewide	51	Periodical publishers	39	511120	176.19999999999996	1554.6	97786.2	2669.2	163552.2	172.6
+651	39	999	Statewide	51	Radio networks	39	515111	27.0	23.0	823.0	100.4	4643.6	23.4
+652	39	999	Statewide	51	Radio stations	39	515112	197.6	1824.0	97967.0	2842.8	128662.0	195.2
+653	39	999	Statewide	51	Record production	39	512210	5.6	0.0	0.0	0.0	58.4	4.0
+654	39	999	Statewide	51	Satellite telecommunications	39	517410	14.1	0.0	0.0	44.4	3259.2	10.2
+655	39	999	Statewide	51	Software publishers	39	511210	209.0	5810.000000000003	553650.2999999999	7641.2	741339.8	217.0
+656	39	999	Statewide	51	Sound recording studios	39	512240	25.75	18.6	1053.6	40.0	1703.6	24.0
+657	39	999	Statewide	51	Telecommunications resellers	39	517911	54.73333333333334	170.39999999999995	9525.6	618.6	33389.0	48.4
+658	39	999	Statewide	51	Teleproduction and other postproduction services	39	512191	30.83333333333333	62.0	3595.2	89.0	5472.8	26.4
+659	39	999	Statewide	51	Television broadcasting	39	515120	55.05	2577.2000000000007	179639.8	3334.8	209954.6	54.2
+660	39	999	Statewide	51	Wired telecommunications carriers	39	517110	1170.8	16829.8	1150009.6	22741.8	1523513.8	1179.4
+661	39	999	Statewide	51	Wireless telecommunications carriers (except satellite)	39	517210	480.00000000000006	3185.4999999999995	216007.0	2442.2	245386.2	466.4
+662	39	999	Statewide	52	All other insurance related activities	39	524298	60.00000000000001	977.0	54051.33333333334	1258.8	68903.6	54.6
+663	39	999	Statewide	52	All other nondepository credit intermediation	39	522298	190.26666666666668	736.5333333333334	45275.86666666666	1165.6	65909.2	184.6
+664	39	999	Statewide	52	Claims adjusting	39	524291	91.0	248.8	19176.8	455.4	27147.6	85.6
+665	39	999	Statewide	52	Commercial banking	39	522110	3781.599999999999	49219.799999999974	3382413.600000001	72507.6	5023923.0	3793.0
+666	39	999	Statewide	52	Commodity contracts brokerage	39	523140	18.6	1.8	152.2	42.4	3244.8	14.0
+667	39	999	Statewide	52	Commodity contracts dealing	39	523130	13.15	0.0	92.2	16.0	1282.8	7.8
+668	39	999	Statewide	52	Consumer lending	39	522291	272.3999999999999	906.5999999999997	49760.79999999999	1567.0	71634.2	272.6
+669	39	999	Statewide	52	Credit card issuing	39	522210	32.66666666666667	1263.6	74028.4	7980.8	410186.4	30.6
+670	39	999	Statewide	52	Credit unions	39	522130	710.1999999999998	5337.199999999998	224369.99999999997	7770.4	339515.8	710.0
+671	39	999	Statewide	52	Direct health and medical insurance carriers	39	524114	163.33333333333334	9056.2	635829.8000000003	18264.2	1308877.2	173.4
+672	39	999	Statewide	52	Direct life insurance carriers	39	524113	347.56666666666666	10747.399999999998	812933.2	13670.2	1009432.8	362.0
+673	39	999	Statewide	52	Direct property and casualty insurance carriers	39	524126	1221.2333333333333	22271.2	1916022.8000000003	44433.2	3492319.0	1237.0
+674	39	999	Statewide	52	Direct title insurance carriers	39	524127	119.3	531.0	31210.4	437.0	44472.2	115.0
+675	39	999	Statewide	52	Financial transactions processing, reserve, and clearinghouse activities	39	522320	93.2666666666667	1368.1999999999996	69381.4	5578.6	402330.4	97.8
+676	39	999	Statewide	52	Insurance agencies and brokerages	39	524210	4898.4	23208.80000000001	1335405.200000001	24242.0	1362797.0	4915.0
+677	39	999	Statewide	52	International trade financing	39	522293	5.4	0.0	0.0	0.0	301.6	2.4
+678	39	999	Statewide	52	Investment advice	39	523930	650.9000000000002	2512.1999999999994	295524.6	2929.8	332509.8	644.6
+679	39	999	Statewide	52	Investment banking and securities dealing	39	523110	120.75	434.00000000000006	90570.4	606.4	108171.8	118.4
+680	39	999	Statewide	52	Miscellaneous financial investment activities	39	523999	14.2	0.0	0.0	15.0	1856.2	10.6
+681	39	999	Statewide	52	Miscellaneous intermediation	39	523910	120.53333333333332	205.6	35708.999999999985	449.2	42737.6	112.6
+682	39	999	Statewide	52	Monetary authorities - central bank	39	521110	3.0	0.0	0.0	0.0	0.0	3.0
+683	39	999	Statewide	52	Mortgage and nonmortgage loan brokers	39	522310	132.38333333333335	977.6	88586.4	1417.8	102451.0	129.0
+684	39	999	Statewide	52	Open-end investment funds	39	525910	6.8	1.5	68.5	2.8	235.6	4.2
+685	39	999	Statewide	52	Other activities related to credit intermediation	39	522390	721.3999999999999	1872.0	79799.4	2108.6	87171.6	725.6
+686	39	999	Statewide	52	Other depository credit intermediation	39	522190	5.25	0.0	0.0	0.0	0.0	2.25
+687	39	999	Statewide	52	Other direct insurance (except life, health, and medical) carriers	39	524128	20.8	234.6	16905.6	242.2	16469.2	16.4
+688	39	999	Statewide	52	Other financial vehicles	39	525990	20.83333333333333	1.4	242.8	9.6	1106.6	11.8
+689	39	999	Statewide	52	Portfolio management	39	523920	718.8000000000002	3540.600000000001	504284.20000000007	4124.6	597904.6	714.0
+690	39	999	Statewide	52	Real estate credit	39	522292	341.73333333333335	4187.0	343516.9999999999	6894.0	525714.0	338.6
+691	39	999	Statewide	52	Reinsurance carriers	39	524130	14.2	38.8	8614.6	64.4	14335.4	14.2
+692	39	999	Statewide	52	Sales financing	39	522220	147.9	1300.8	116568.0	2984.6	230551.8	148.4
+693	39	999	Statewide	52	Savings institutions	39	522120	491.5	4412.999999999999	295771.6	7498.0	444446.0	492.0
+694	39	999	Statewide	52	Secondary market financing	39	522294	5.2	0.0	0.0	0.0	0.0	3.4
+695	39	999	Statewide	52	Securities brokerage	39	523120	1547.2000000000005	6866.000000000003	1064329.6	8794.0	1171080.8	1554.4
+696	39	999	Statewide	52	Third party administration of insurance and pension funds	39	524292	192.00000000000003	6782.399999999999	339920.4	8191.4	416935.6	191.4
+697	39	999	Statewide	52	Trust, fiduciary, and custody activities	39	523991	54.2	166.2	13148.6	374.0	26348.0	46.4
+698	39	999	Statewide	53	All other consumer goods rental	39	532299	189.35	649.8	27215.400000000005	705.8	35656.8	156.4
+699	39	999	Statewide	53	Commercial air, rail, and water transportation equipment rental and leasing	39	532411	20.7	0.0	0.0	204.6	29088.0	13.2
+700	39	999	Statewide	53	Construction, mining, and forestry machinery and equipment rental and leasing	39	532412	106.13333333333335	319.80000000000007	24974.2	895.2	55165.4	98.8
+701	39	999	Statewide	53	Consumer electronics and appliances rental	39	532210	339.25000000000017	568.6000000000001	20190.0	868.8	26116.2	336.0
+702	39	999	Statewide	53	Formal wear and costume rental	39	532220	54.9	36.4	661.6	101.0	3704.6	52.8
+703	39	999	Statewide	53	General rental centers	39	532310	129.20000000000002	336.8	16728.6	795.4	30319.4	121.2
+704	39	999	Statewide	53	Home health equipment rental	39	532291	119.13333333333333	522.6	26553.6	1094.6	42524.8	114.4
+705	39	999	Statewide	53	Lessors of miniwarehouses and self-storage units	39	531130	424.40000000000015	570.1999999999998	19605.4	915.4	22111.2	414.2
+706	39	999	Statewide	53	Lessors of nonfinancial intangible assets (except copyrighted works)	39	533110	89.46666666666668	518.9999999999999	37928.0	940.2	65737.8	83.6
+707	39	999	Statewide	53	Lessors of nonresidential buildings (except miniwarehouses)	39	531120	894.0666666666671	5379.600000000003	349829.0	6908.0	400721.4	888.4
+708	39	999	Statewide	53	Lessors of other real estate property	39	531190	262.85	419.59999999999985	17695.0	728.2	25672.8	257.6
+709	39	999	Statewide	53	Lessors of residential buildings and dwellings	39	531110	2152.600000000001	11349.8	471471.79999999993	12265.8	519448.2	2151.4
+710	39	999	Statewide	53	Nonresidential property managers	39	531312	492.33333333333337	3500.9999999999995	204861.8	3998.8	217721.8	486.8
+711	39	999	Statewide	53	Office machinery and equipment rental and leasing	39	532420	27.3	65.6	5550.4	218.2	12974.2	23.2
+712	39	999	Statewide	53	Offices of real estate agents and brokers	39	531210	1965.2500000000007	5064.4	300118.2000000001	5641.8	307517.8	1964.0
+713	39	999	Statewide	53	Offices of real estate appraisers	39	531320	387.4	1215.1999999999996	63791.0	1677.0	77227.4	383.2
+714	39	999	Statewide	53	Other activities related to real estate	39	531390	231.53333333333336	814.65	67464.40000000001	1291.2	83234.0	220.0
+715	39	999	Statewide	53	Other commercial and industrial machinery and equipment rental and leasing	39	532490	262.71666666666664	2062.6	117158.59999999998	2573.6	141441.6	255.2
+716	39	999	Statewide	53	Passenger car leasing	39	532112	32.6	34.0	4371.8	306.8	24461.2	26.6
+717	39	999	Statewide	53	Passenger car rental	39	532111	281.7999999999999	1208.0	38745.999999999985	931.0	42243.0	276.4
+718	39	999	Statewide	53	Recreational goods rental	39	532292	46.56666666666666	18.8	2200.8	64.4	4835.4	40.2
+719	39	999	Statewide	53	Residential property managers	39	531311	1207.75	11952.349999999995	465886.00000000023	12742.0	476468.2	1200.6
+720	39	999	Statewide	53	Truck, utility trailer, and RV (recreational vehicle) rental and leasing	39	532120	261.6	1740.0000000000002	86258.6	2989.6	138598.4	256.2
+721	39	999	Statewide	53	Video tape and disc rental	39	532230	171.96666666666667	145.2	2426.0	447.0	5148.8	160.4
+722	39	999	Statewide	54	Administrative management and general management consulting services	39	541611	1733.1500000000005	10773.333333333338	997083.3333333336	11842.4	1038985.4	1726.0
+723	39	999	Statewide	54	Advertising agencies	39	541810	424.6999999999999	3920.799999999999	278745.2	4277.0	287543.0	418.6
+724	39	999	Statewide	54	Advertising material distribution services	39	541870	33.8	166.0	14442.2	686.6	73428.0	30.6
+725	39	999	Statewide	54	All other legal services	39	541199	59.6	381.80000000000007	14704.2	563.2	22408.0	51.0
+726	39	999	Statewide	54	All other professional, scientific, and technical services	39	541990	243.11666666666667	509.8	38909.6	1821.2	82175.0	232.2
+727	39	999	Statewide	54	Architectural services	39	541310	548.3999999999999	4368.8	306120.40000000014	4664.6	319273.4	544.8
+728	39	999	Statewide	54	Building inspection services	39	541350	155.1	209.15	9536.45	470.6	18039.6	147.4
+729	39	999	Statewide	54	Commercial photography	39	541922	105.0	316.00000000000006	17983.4	398.4	19194.2	100.0
+730	39	999	Statewide	54	Computer facilities management services	39	541513	220.8	2735.1999999999994	245470.0	3514.2	298855.4	219.0
+731	39	999	Statewide	54	Computer systems design services	39	541512	1212.6	13072.200000000004	1037798.7999999996	15969.8	1319660.8	1222.4
+732	39	999	Statewide	54	Custom computer programming services	39	541511	1785.0666666666666	18309.05	1509712.016666666	21004.0	1691678.6	1785.0
+733	39	999	Statewide	54	Direct mail advertising	39	541860	110.20000000000002	1074.4	42777.80000000002	1490.6	55105.0	106.0
+734	39	999	Statewide	54	Drafting services	39	541340	73.66666666666666	80.59999999999998	5189.799999999998	255.6	10972.8	66.8
+735	39	999	Statewide	54	Engineering services	39	541330	1718.2666666666662	26922.399999999994	2146158.2	29073.2	2301299.4	1726.4
+736	39	999	Statewide	54	Environmental consulting services	39	541620	254.18333333333337	1774.2	103556.0	2048.4	114373.8	245.0
+737	39	999	Statewide	54	Geophysical surveying and mapping services	39	541360	20.866666666666667	0.0	0.0	72.2	4000.8	14.2
+738	39	999	Statewide	54	Graphic design services	39	541430	482.5	1936.9999999999993	114440.4	2315.4	127255.0	477.4
+739	39	999	Statewide	54	Human resources consulting services	39	541612	280.8	2092.0	190781.8	3549.8	222411.2	272.8
+740	39	999	Statewide	54	Industrial design services	39	541420	70.41666666666667	371.8	26198.2	538.8	37029.6	63.6
+741	39	999	Statewide	54	Interior design services	39	541410	226.2	719.4000000000002	41728.000000000015	982.0	52531.6	222.4
+742	39	999	Statewide	54	Landscape architectural services	39	541320	95.8	228.4	14171.4	347.6	17358.6	91.4
+743	39	999	Statewide	54	Marketing consulting services	39	541613	774.85	3657.083333333334	241675.75000000003	5043.2	269762.0	764.0
+744	39	999	Statewide	54	Marketing research and public opinion polling	39	541910	157.20000000000005	5994.4	322661.99999999994	6796.4	349411.8	154.8
+745	39	999	Statewide	54	Media buying agencies	39	541830	27.6	64.2	4696.4	191.4	20385.2	25.2
+746	39	999	Statewide	54	Media representatives	39	541840	46.7	132.2	10879.999999999998	484.0	29055.4	39.4
+747	39	999	Statewide	54	Offices of certified public accountants	39	541211	1856.2	15392.599999999995	1005752.4	15974.4	1018137.4	1856.0
+748	39	999	Statewide	54	Offices of lawyers	39	541110	4764.6	29802.199999999993	2070315.0	30782.8	2070902.4	4764.6
+749	39	999	Statewide	54	Other accounting services	39	541219	872.4999999999999	4789.2	235601.2	6794.6	283375.8	869.2
+750	39	999	Statewide	54	Other computer related services	39	541519	203.38333333333333	1391.6000000000006	113988.2	1952.2	148080.2	203.0
+751	39	999	Statewide	54	Other management consulting services	39	541618	100.85	262.8	22579.60000000001	539.6	38268.6	97.2
+752	39	999	Statewide	54	Other scientific and technical consulting services	39	541690	383.0500000000001	1348.0000000000002	112487.60000000002	2066.8	152916.2	378.2
+753	39	999	Statewide	54	Other services related to advertising	39	541890	238.0	1732.5999999999995	57651.99999999999	2062.6	67397.2	234.4
+754	39	999	Statewide	54	Other specialized design services	39	541490	27.38333333333333	29.6	1081.4	88.4	3356.4	22.8
+755	39	999	Statewide	54	Outdoor advertising	39	541850	87.24999999999999	503.6	23927.4	852.8	38751.2	81.8
+756	39	999	Statewide	54	Payroll services	39	541214	190.5	4042.8	239837.2	7335.6	356860.8	193.8
+757	39	999	Statewide	54	Photography studios, portrait	39	541921	423.84999999999985	1129.1999999999996	25284.050000000007	1942.8	40241.0	413.6
+758	39	999	Statewide	54	Process, physical distribution, and logistics consulting services	39	541614	308.00000000000006	1705.4	70883.0	2601.0	104090.6	300.0
+759	39	999	Statewide	54	Public relations agencies	39	541820	160.7833333333334	549.8	44540.4	683.4	49401.6	155.0
+760	39	999	Statewide	54	Research and development in biotechnology	39	541711	67.80000000000001	386.8	35380.8	1482.6	110167.8	56.6
+761	39	999	Statewide	54	Research and development in the physical, engineering, and life sciences (except biotechnology)	39	541712	378.65	9712.8	820394.6000000002	15607.2	1395166.2	376.8
+762	39	999	Statewide	54	Research and development in the social sciences and humanities	39	541720	40.46666666666668	107.4	6137.0	201.6	11715.2	37.4
+763	39	999	Statewide	54	Surveying and mapping (except geophysical) services	39	541370	208.21666666666667	719.4000000000002	37377.4	1154.6	53343.0	200.2
+764	39	999	Statewide	54	Tax preparation services	39	541213	1166.6	5497.4000000000015	58743.60000000001	7703.8	66946.2	1167.0
+765	39	999	Statewide	54	Testing laboratories	39	541380	270.75	4055.6	222756.8	6009.4	319502.4	264.0
+766	39	999	Statewide	54	Title abstract and settlement offices	39	541191	440.6	2343.8	123726.19999999998	2740.4	133814.0	436.4
+767	39	999	Statewide	54	Translation and interpretation services	39	541930	46.26666666666666	734.4000000000002	42235.0	839.6	45446.0	43.2
+768	39	999	Statewide	54	Veterinary services	39	541940	1110.0000000000002	12014.000000000002	411083.00000000023	12588.4	422438.4	1110.0
+769	39	999	Statewide	55	Corporate, subsidiary, and regional managing offices	39	551114	1933.333333333334	135469.00000000006	12967193.2	147489.8	13867046.4	1944.4
+770	39	999	Statewide	55	Offices of bank holding companies	39	551111	25.33333333333333	0.0	0.0	60.0	4909.4	15.6
+771	39	999	Statewide	55	Offices of other holding companies	39	551112	209.50000000000003	2875.2	224766.2	4516.8	349215.4	198.4
+772	39	999	Statewide	56	All other business support services	39	561499	96.6	495.60000000000014	18879.6	1264.6	47164.2	90.8
+773	39	999	Statewide	56	All other miscellaneous waste management services	39	562998	58.6	192.2	9717.2	510.0	23601.2	53.4
+774	39	999	Statewide	56	All other support services	39	561990	525.4999999999999	6009.199999999998	247409.4	7717.4	306866.2	527.2
+775	39	999	Statewide	56	All other travel arrangement and reservation services	39	561599	109.0	446.93333333333334	25485.199999999993	1300.4	46493.0	106.0
+776	39	999	Statewide	56	Armored car services	39	561613	33.6	575.1999999999998	21383.6	884.8	28225.0	33.6
+777	39	999	Statewide	56	Carpet and upholstery cleaning services	39	561740	296.83333333333326	1405.2	47340.6	1772.4	54610.4	288.8
+778	39	999	Statewide	56	Collection agencies	39	561440	136.20000000000002	5091.0	195670.0	5938.0	225325.4	134.0
+779	39	999	Statewide	56	Convention and trade show organizers	39	561920	91.2	1063.6	38019.8	1627.0	56229.6	90.0
+780	39	999	Statewide	56	Convention and visitors bureaus	39	561591	60.00000000000001	73.8	3828.8	524.8	20547.6	56.0
+781	39	999	Statewide	56	Court reporting and stenotype services	39	561492	71.2	306.6	14588.4	345.4	15794.0	68.4
+782	39	999	Statewide	56	Credit bureaus	39	561450	18.6	29.6	3447.8	295.2	22787.8	16.6
+783	39	999	Statewide	56	Document preparation services	39	561410	132.4666666666667	621.8000000000002	23972.6	1371.0	43615.2	125.0
+784	39	999	Statewide	56	Employment placement agencies	39	561311	224.2	6662.4000000000015	233826.6	11587.2	344988.6	225.2
+785	39	999	Statewide	56	Executive search services	39	561312	217.15	1017.2	66746.59999999999	1388.0	73788.0	212.4
+786	39	999	Statewide	56	Exterminating and pest control services	39	561710	302.3	1681.3000000000004	74568.0	2027.0	81982.2	291.8
+787	39	999	Statewide	56	Facilities support services	39	561210	185.3	2663.600000000001	131759.40000000002	6306.2	291593.8	178.4
+788	39	999	Statewide	56	Hazardous waste collection	39	562112	33.90000000000001	133.2	6597.8	405.8	20416.6	32.0
+789	39	999	Statewide	56	Hazardous waste treatment and disposal	39	562211	48.15	215.2	11489.4	1319.6	75851.4	42.6
+790	39	999	Statewide	56	Investigation services	39	561611	126.05	838.2	39870.80000000002	1177.2	52821.2	121.8
+791	39	999	Statewide	56	Janitorial services	39	561720	1879.6500000000005	36475.04999999998	635640.3500000002	48765.8	800756.2	1880.2
+792	39	999	Statewide	56	Landscaping services	39	561730	3664.6	17301.4	668393.2000000001	19308.4	735494.2	3664.6
+793	39	999	Statewide	56	Locksmiths	39	561622	90.8	138.6	7302.200000000002	414.6	16308.0	89.4
+794	39	999	Statewide	56	Materials recovery facilities	39	562920	54.06666666666666	145.20000000000005	6267.6	757.4	25254.0	50.8
+795	39	999	Statewide	56	Office administrative services	39	561110	986.4000000000003	14427.999999999998	954860.2	15951.6	1050293.4	982.2
+796	39	999	Statewide	56	Other business service centers (including copy shops)	39	561439	163.45	1131.7999999999995	44282.2	1354.2	49817.4	155.2
+797	39	999	Statewide	56	Other nonhazardous waste treatment and disposal	39	562219	19.8	0.0	0.0	42.2	2111.0	10.2
+798	39	999	Statewide	56	Other services to buildings and dwellings	39	561790	317.2333333333335	1365.3999999999996	56349.8	1790.6	67783.4	306.6
+799	39	999	Statewide	56	Other waste collection	39	562119	36.55	55.8	2372.4	231.0	9790.4	32.2
+800	39	999	Statewide	56	Packaging and labeling services	39	561910	93.2	849.0000000000001	28586.0	1606.6	105086.2	90.4
+801	39	999	Statewide	56	Private mail centers	39	561431	121.8	269.2	5708.4000000000015	468.6	8359.4	118.8
+802	39	999	Statewide	56	Professional employer organizations	39	561330	160.78333333333333	3670.400000000001	147694.6	56817.4	2120313.4	170.6
+803	39	999	Statewide	56	Remediation services	39	562910	137.0666666666667	1425.2	75937.4	2685.8	137045.4	131.4
+804	39	999	Statewide	56	Repossession services	39	561491	35.15000000000001	119.4	3839.4	297.6	9648.2	30.2
+805	39	999	Statewide	56	Security guards and patrol services	39	561612	279.65	14812.8	315643.80000000005	16739.0	357293.2	278.0
+806	39	999	Statewide	56	Security systems services (except locksmiths)	39	561621	238.20000000000005	2258.4	109715.79999999996	2877.2	136398.4	230.6
+807	39	999	Statewide	56	Septic tank and related services	39	562991	119.40000000000002	210.2	10343.999999999998	700.8	25882.8	117.8
+808	39	999	Statewide	56	Solid waste collection	39	562111	383.0	4541.2	224884.20000000004	6649.2	319624.0	379.8
+809	39	999	Statewide	56	Solid waste combustors and incinerators	39	562213	5.2	0.0	0.0	5.6	302.8	2.4
+810	39	999	Statewide	56	Solid waste landfill	39	562212	80.40000000000003	312.4	17212.0	1029.2	54955.6	74.8
+811	39	999	Statewide	56	Telemarketing bureaus and other contact centers	39	561422	162.3	9417.3	330111.05	17781.6	518287.0	159.0
+812	39	999	Statewide	56	Telephone answering services	39	561421	51.39999999999999	492.4	12366.4	1848.0	39062.4	47.8
+813	39	999	Statewide	56	Temporary help services	39	561320	1215.4333333333334	95362.79999999996	2497735.4	132136.0	3172151.4	1296.2
+814	39	999	Statewide	56	Tour operators	39	561520	38.65000000000001	42.6	2243.4	268.6	9865.4	36.4
+815	39	999	Statewide	56	Travel agencies	39	561510	337.0999999999999	1488.0	64952.40000000001	1880.4	79419.2	336.6
+816	39	999	Statewide	61	All other miscellaneous schools and instruction	39	611699	117.04999999999998	310.7999999999999	8478.599999999999	511.8	15668.4	106.2
+817	39	999	Statewide	61	Apprenticeship training	39	611513	70.80000000000003	348.4	12427.6	624.4	18533.8	67.4
+818	39	999	Statewide	61	Automobile driving schools	39	611692	152.00000000000003	415.4	6960.999999999999	796.8	10301.2	148.6
+819	39	999	Statewide	61	Business and secretarial schools	39	611410	12.0	0.0	1913.5	101.2	3711.2	5.2
+820	39	999	Statewide	61	Colleges, universities, and professional schools	39	611310	157.9	36868.60000000001	931529.2	62900.6	1621163.0	156.8
+821	39	999	Statewide	61	Computer training	39	611420	46.6	174.0	9139.0	328.4	16182.6	42.0
+822	39	999	Statewide	61	Cosmetology and barber schools	39	611511	75.00000000000001	382.6	11973.4	692.0	19129.2	73.0
+823	39	999	Statewide	61	Educational support services	39	611710	206.05	1403.8000000000006	43424.400000000016	2168.0	60990.4	197.8
+824	39	999	Statewide	61	Elementary and secondary schools	39	611110	859.6000000000003	33186.399999999994	1074116.8000000005	35453.6	1124959.4	858.8
+825	39	999	Statewide	61	Exam preparation and tutoring	39	611691	237.98333333333335	1682.2000000000005	25864.399999999994	2639.6	59526.0	234.8
+826	39	999	Statewide	61	Fine arts schools	39	611610	398.83333333333337	2321.4000000000005	31399.800000000007	2749.2	34729.0	393.6
+827	39	999	Statewide	61	Flight training	39	611512	21.8	18.6	158.4	349.0	28386.6	19.0
+828	39	999	Statewide	61	Junior colleges	39	611210	62.0	2633.4	84295.8	3497.6	110721.0	59.2
+829	39	999	Statewide	61	Language schools	39	611630	25.8	249.2	4127.4	357.0	6275.8	23.2
+830	39	999	Statewide	61	Other technical and trade schools	39	611519	135.40000000000003	1713.7999999999995	55228.4	2155.2	67833.4	132.0
+831	39	999	Statewide	61	Professional and management development training	39	611430	186.40000000000003	673.0000000000002	41658.8	1020.6	56178.2	178.4
+832	39	999	Statewide	61	Sports and recreation instruction	39	611620	367.6	2488.8	37388.8	2869.2	41037.4	362.4
+833	39	999	Statewide	62	All other miscellaneous ambulatory health care services	39	621999	121.04999999999998	1574.0	83805.40000000002	2368.4	113244.2	114.4
+834	39	999	Statewide	62	All other outpatient care centers	39	621498	346.0666666666668	5033.6	240704.0	7218.2	357687.4	342.4
+835	39	999	Statewide	62	Ambulance services	39	621910	194.45	4198.5	125745.3	6386.2	191653.2	183.4
+836	39	999	Statewide	62	Assisted living facilities for the elderly	39	623312	378.44999999999993	12129.600000000002	260751.60000000012	14202.4	300565.2	373.6
+837	39	999	Statewide	62	Blood and organ banks	39	621991	49.20000000000001	1453.6	57763.4	1350.4	77550.2	46.8
+838	39	999	Statewide	62	Child and youth services	39	624110	377.9500000000001	5483.649999999997	157366.19999999998	6745.6	181921.0	373.0
+839	39	999	Statewide	62	Child day care services	39	624410	2593.6999999999994	31872.60000000001	572086.4	32594.8	579936.2	2592.8
+840	39	999	Statewide	62	Community food services	39	624210	169.99999999999997	1230.0	36833.2	1708.8	44649.4	165.8
+841	39	999	Statewide	62	Continuing care retirement communities	39	623311	249.7	21334.85	543053.3500000001	28378.2	688195.8	246.4
+842	39	999	Statewide	62	Diagnostic imaging centers	39	621512	159.75000000000006	1398.8000000000004	91100.80000000003	2431.8	129977.4	154.0
+843	39	999	Statewide	62	Emergency and other relief services	39	624230	70.60000000000005	313.8	10650.000000000002	655.2	24263.2	62.0
+844	39	999	Statewide	62	Family planning centers	39	621410	93.0	349.6	13818.600000000002	817.6	23764.8	90.0
+845	39	999	Statewide	62	Freestanding ambulatory surgical and emergency centers	39	621493	249.71666666666664	3473.2500000000005	209059.05000000005	4843.6	267995.6	244.0
+846	39	999	Statewide	62	General medical and surgical hospitals	39	622110	188.8	144783.19999999998	8208841.8	252037.4	13841831.8	188.2
+847	39	999	Statewide	62	HMO medical centers	39	621491	25.0	1.4	260.2	12.0	1084.8	19.0
+848	39	999	Statewide	62	Home health care services	39	621610	1381.5666666666666	63276.60000000001	1485126.1999999997	65757.6	1551318.8	1380.8
+849	39	999	Statewide	62	Kidney dialysis centers	39	621492	285.9	2242.600000000001	102665.8	4075.8	166708.8	279.6
+850	39	999	Statewide	62	Medical laboratories	39	621511	286.9666666666667	2713.8	200626.2	4665.8	265906.6	275.0
+851	39	999	Statewide	62	Nursing care facilities (skilled nursing facilities)	39	623110	950.0	86484.59999999999	2247998.9999999995	92344.4	2368274.4	950.0
+852	39	999	Statewide	62	Offices of all other miscellaneous health practitioners	39	621399	351.83333333333337	1418.4499999999996	72354.85	2115.0	88128.0	345.4
+853	39	999	Statewide	62	Offices of chiropractors	39	621310	1293.4666666666667	4849.0	153677.0	5328.6	156890.2	1292.8
+854	39	999	Statewide	62	Offices of dentists	39	621210	4252.000000000001	31547.000000000015	1471154.2	31817.6	1474762.4	4251.2
+855	39	999	Statewide	62	Offices of mental health practitioners (except physicians)	39	621330	558.1499999999999	3011.6	105297.39999999997	3675.0	122545.8	553.4
+856	39	999	Statewide	62	Offices of optometrists	39	621320	914.4	4318.800000000001	154757.80000000002	4948.6	167376.0	914.2
+857	39	999	Statewide	62	Offices of physical, occupational and speech therapists, and audiologists	39	621340	965.6666666666665	11237.4	441147.8	13342.6	509213.2	965.8
+858	39	999	Statewide	62	Offices of physicians (except mental health specialists)	39	621111	6676.400000000002	89038.8	7872104.999999999	91498.4	8016630.8	6674.6
+859	39	999	Statewide	62	Offices of physicians, mental health specialists	39	621112	320.2000000000001	1289.2	75271.60000000003	2002.8	97380.6	310.6
+860	39	999	Statewide	62	Offices of podiatrists	39	621391	434.0	1337.6	61044.6	1927.2	70603.4	432.4
+861	39	999	Statewide	62	Other community housing services	39	624229	169.93333333333334	1608.9999999999998	61827.00000000002	2074.6	69974.8	162.6
+862	39	999	Statewide	62	Other individual and family services	39	624190	928.8500000000003	11779.6	363684.8	14710.4	423949.6	927.4
+863	39	999	Statewide	62	Other residential care facilities	39	623990	151.6	2392.8	75863.2	3530.4	105725.0	144.6
+864	39	999	Statewide	62	Outpatient mental health and substance abuse centers	39	621420	390.4666666666666	7947.2	291229.40000000014	11311.8	396417.6	386.8
+865	39	999	Statewide	62	Psychiatric and substance abuse hospitals	39	622210	22.2	846.2	52012.6	5812.4	443787.2	20.2
+866	39	999	Statewide	62	Residential intellectual and developmental disability facilities	39	623210	1463.0000000000007	18343.8	402378.6	24224.2	502547.4	1461.8
+867	39	999	Statewide	62	Residential mental health and substance abuse facilities	39	623220	218.13333333333333	4624.200000000002	148924.40000000002	6184.2	179300.6	212.4
+868	39	999	Statewide	62	Services for the elderly and persons with disabilities	39	624120	1061.2499999999998	31286.999999999996	566892.4	33974.2	595357.6	1060.6
+869	39	999	Statewide	62	Specialty (except psychiatric and substance abuse) hospitals	39	622310	48.6	4636.0	218634.2	8992.6	426358.6	42.8
+870	39	999	Statewide	62	Temporary shelters	39	624221	163.8	1517.6	41109.60000000001	2459.0	59134.4	160.6
+871	39	999	Statewide	62	Vocational rehabilitation services	39	624310	330.3499999999999	12655.600000000004	162689.00000000006	20693.2	210907.8	329.6
+872	39	999	Statewide	71	Agents and managers for artists, athletes, entertainers, and other public figures	39	711410	53.33333333333333	120.6	18149.4	104.4	17647.8	46.2
+873	39	999	Statewide	71	All other amusement and recreation industries	39	713990	498.3666666666666	2645.600000000001	60768.4	3042.2	65213.0	491.8
+874	39	999	Statewide	71	Amusement and theme parks	39	713110	17.466666666666665	0.0	0.0	0.0	0.0	14.8
+875	39	999	Statewide	71	Amusement arcades	39	713120	125.0	996.0666666666667	12186.666666666664	1641.6	19162.2	115.8
+876	39	999	Statewide	71	Bowling centers	39	713950	242.65	2409.4	31927.000000000004	3471.8	42533.8	239.4
+877	39	999	Statewide	71	Casinos (except casino hotels)	39	713210	5.533333333333332	0.0	0.0	0.0	0.0	3.6
+878	39	999	Statewide	71	Dance companies	39	711120	14.0	8.0	195.6	98.2	2595.2	12.4
+879	39	999	Statewide	71	Fitness and recreational sports centers	39	713940	1116.6500000000003	18449.0	235178.4000000001	20830.8	250033.2	1114.2
+880	39	999	Statewide	71	Golf courses and country clubs	39	713910	562.6499999999999	9088.4	269867.4	9620.8	278188.6	561.8
+881	39	999	Statewide	71	Historical sites	39	712120	41.266666666666666	0.0	17.4	472.4	9291.0	38.2
+882	39	999	Statewide	71	Independent artists, writers, and performers	39	711510	219.45	394.19999999999993	16986.800000000007	626.2	20701.0	212.6
+883	39	999	Statewide	71	Marinas	39	713930	121.65	623.5999999999998	24285.4	707.8	26027.8	118.2
+884	39	999	Statewide	71	Museums	39	712110	181.3	2919.9999999999995	91173.0	3738.2	111080.0	175.8
+885	39	999	Statewide	71	Musical groups and artists	39	711130	74.13333333333334	342.6	7404.4	1518.2	61370.2	69.8
+886	39	999	Statewide	71	Nature parks and other similar institutions	39	712190	25.6	0.0	0.0	193.6	5470.8	22.0
+887	39	999	Statewide	71	Other gambling industries	39	713290	44.6	89.10000000000002	2639.0	252.4	6580.2	34.2
+888	39	999	Statewide	71	Other performing arts companies	39	711190	10.6	0.0	0.0	4.2	187.6	7.4
+889	39	999	Statewide	71	Other spectator sports	39	711219	83.40000000000002	98.8	18249.700000000004	273.8	26272.6	72.2
+890	39	999	Statewide	71	Promoters of performing arts, sports, and similar events with facilities	39	711310	146.9333333333333	1310.2	35213.999999999985	3086.4	56229.8	143.4
+891	39	999	Statewide	71	Promoters of performing arts, sports, and similar events without facilities	39	711320	144.2	231.8	15603.4	484.6	22298.4	139.0
+892	39	999	Statewide	71	Racetracks	39	711212	32.0	166.20000000000005	3733.4	2653.0	69941.2	29.2
+893	39	999	Statewide	71	Skiing facilities	39	713920	8.4	0.0	0.0	910.8	5933.6	6.8
+894	39	999	Statewide	71	Sports teams and clubs	39	711211	32.1	2933.8	544660.4	4033.8	883488.8	27.4
+895	39	999	Statewide	71	Theater companies and dinner theaters	39	711110	77.8	1017.8	22934.6	1274.8	28598.6	74.2
+896	39	999	Statewide	71	Zoos and botanical gardens	39	712130	23.6	113.4	3177.0	1839.6	57729.0	20.4
+897	39	999	Statewide	72	All other traveler accommodation	39	721199	22.6	71.2	1413.6	91.0	1688.2	18.8
+898	39	999	Statewide	72	Bed-and-breakfast inns	39	721191	61.25000000000001	49.2	628.6	457.8	7190.4	53.2
+899	39	999	Statewide	72	Cafeterias, grill buffets, and buffets	39	722514	236.5	2018.2	25981.4	3379.4	42879.6	230.2
+900	39	999	Statewide	72	Casino hotels	39	721120	4.25	0.0	0.0	0.0	0.0	2.75
+901	39	999	Statewide	72	Caterers	39	722320	445.35	4520.949999999999	73713.85	5230.6	82505.0	438.4
+902	39	999	Statewide	72	Drinking places (alcoholic beverages)	39	722410	2038.75	12460.2	163941.00000000006	12861.4	165388.6	2037.2
+903	39	999	Statewide	72	Food service contractors	39	722310	811.1833333333334	6894.0	163001.39999999994	5898.6	123239.8	807.8
+904	39	999	Statewide	72	Full-service restaurants	39	722511	7401.650000000002	189254.6	2885058.2	190012.8	2894612.2	7401.4
+905	39	999	Statewide	72	Hotels (except casino hotels) and motels	39	721110	1326.6500000000005	30643.4	595316.8	31532.0	603951.8	1324.4
+906	39	999	Statewide	72	Limited-service restaurants	39	722513	9099.2	169809.40000000005	2077418.0	170252.0	2081952.4	9099.6
+907	39	999	Statewide	72	Mobile food services	39	722330	153.80000000000004	124.45000000000002	3646.05	224.8	6267.0	138.6
+908	39	999	Statewide	72	RV (recreational vehicle) parks and campgrounds	39	721211	161.63333333333333	132.0	6633.200000000002	319.0	11639.0	154.6
+909	39	999	Statewide	72	Recreational and vacation camps (except campgrounds)	39	721214	75.65	76.2	2495.2	415.2	12096.0	74.2
+910	39	999	Statewide	72	Rooming and boarding houses	39	721310	61.51666666666668	96.4	1954.0	375.4	4732.4	55.8
+911	39	999	Statewide	72	Snack and nonalcoholic beverage bars	39	722515	1901.716666666667	21859.6	278397.3	22347.8	279933.4	1900.2
+912	39	999	Statewide	81	All other automotive repair and maintenance	39	811198	91.53333333333336	52.0	1710.4	523.8	25546.4	82.6
+913	39	999	Statewide	81	All other personal services	39	812990	252.2333333333333	772.3999999999999	19074.450000000004	922.2	21190.0	239.4
+914	39	999	Statewide	81	Appliance repair and maintenance	39	811412	121.70000000000002	328.8	12789.2	597.2	20536.0	111.6
+915	39	999	Statewide	81	Automotive body, paint, and interior repair and maintenance	39	811121	1112.0500000000004	6749.600000000001	286011.80000000005	7409.0	299782.0	1111.8
+916	39	999	Statewide	81	Automotive exhaust system repair	39	811112	99.60000000000002	124.2	5076.5999999999985	309.4	9257.2	94.2
+917	39	999	Statewide	81	Automotive glass replacement shops	39	811122	132.73333333333332	471.4	18838.6	945.4	33541.6	127.4
+918	39	999	Statewide	81	Automotive oil change and lubrication shops	39	811191	336.99999999999994	957.2000000000003	31743.400000000016	957.0	45264.2	333.8
+919	39	999	Statewide	81	Automotive transmission repair	39	811113	168.11666666666667	436.59999999999985	17772.0	684.8	24709.4	162.8
+920	39	999	Statewide	81	Barber shops	39	812111	102.66666666666666	142.99999999999997	4842.399999999999	309.4	6684.0	97.6
+921	39	999	Statewide	81	Beauty salons	39	812112	2958.1999999999994	21440.8	420512.8000000001	21754.4	422645.2	2957.0
+922	39	999	Statewide	81	Business associations	39	813910	568.6	2996.5999999999995	190272.8	3533.0	203204.8	568.2
+923	39	999	Statewide	81	Car washes	39	811192	590.5	3973.800000000001	68415.20000000003	4403.4	73213.2	586.8
+924	39	999	Statewide	81	Cemeteries and crematories	39	812220	271.6	1181.4	52108.4	1784.2	59157.0	270.2
+925	39	999	Statewide	81	Civic and social organizations	39	813410	1490.0	11592.399999999998	183825.80000000005	12515.6	192015.0	1490.4
+926	39	999	Statewide	81	Coin-operated laundries and drycleaners	39	812310	285.3999999999998	722.9999999999999	16232.8	1307.2	20850.0	282.2
+927	39	999	Statewide	81	Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance	39	811310	853.4999999999997	6917.2	368473.6	9747.8	564407.6	852.2
+928	39	999	Statewide	81	Communication equipment repair and maintenance	39	811213	40.05	9.0	757.6	168.4	6909.0	33.2
+929	39	999	Statewide	81	Computer and office machine repair and maintenance	39	811212	174.39999999999995	911.6	34687.1	1181.2	43646.2	165.0
+930	39	999	Statewide	81	Consumer electronics repair and maintenance	39	811211	72.6	233.8	9078.2	411.2	14371.6	67.6
+931	39	999	Statewide	81	Diet and weight reducing centers	39	812191	100.66666666666664	285.8	3801.4	312.6	5137.8	96.2
+932	39	999	Statewide	81	Drycleaning and laundry services (except coin-operated)	39	812320	555.4500000000002	3508.1999999999994	68620.2	4194.0	74058.8	552.6
+933	39	999	Statewide	81	Environment, conservation and wildlife organizations	39	813312	175.96666666666673	1037.4	30441.8	1655.8	44232.8	173.2
+934	39	999	Statewide	81	Footwear and leather goods repair	39	811430	33.0	26.2	864.6	64.0	1181.0	31.2
+935	39	999	Statewide	81	Funeral homes and funeral services	39	812210	873.8000000000002	4780.4000000000015	163213.6	5626.4	174785.4	873.8
+936	39	999	Statewide	81	General automotive repair	39	811111	2901.0	12416.600000000002	451758.3999999999	12793.6	452746.2	2900.2
+937	39	999	Statewide	81	Grantmaking foundations	39	813211	370.20000000000016	1860.8	122905.20000000006	2166.8	130519.4	368.4
+938	39	999	Statewide	81	Home and garden equipment repair and maintenance	39	811411	75.39999999999998	30.8	875.2	170.8	4173.0	62.8
+939	39	999	Statewide	81	Human rights organizations	39	813311	109.20000000000002	532.4	20552.6	693.6	24030.0	105.0
+940	39	999	Statewide	81	Industrial launderers	39	812332	88.55000000000003	1489.4	64360.0	3071.4	124469.6	84.0
+941	39	999	Statewide	81	Labor unions and similar labor organizations	39	813930	880.2	8314.800000000001	203843.4	9024.8	207199.4	878.0
+942	39	999	Statewide	81	Linen supply	39	812331	40.0	710.8	20849.0	1824.6	53189.4	38.6
+943	39	999	Statewide	81	Nail salons	39	812113	542.4	1735.1999999999994	38662.2	2018.4	41204.4	535.6
+944	39	999	Statewide	81	One-hour photofinishing	39	812922	4.0	0.0	0.0	0.0	0.0	2.4
+945	39	999	Statewide	81	Other automotive mechanical and electrical repair and maintenance	39	811118	104.2	259.8	10397.2	429.6	15762.0	100.6
+946	39	999	Statewide	81	Other electronic and precision equipment repair and maintenance	39	811219	133.10000000000002	636.2	34922.399999999994	1579.6	85447.8	130.6
+947	39	999	Statewide	81	Other grantmaking and giving services	39	813219	155.40000000000003	1196.6	61122.8	1728.4	75786.2	153.4
+948	39	999	Statewide	81	Other personal and household goods repair and maintenance	39	811490	237.75000000000009	635.4	20665.6	833.0	23284.0	225.6
+949	39	999	Statewide	81	Other personal care services	39	812199	575.9	3086.8	46952.400000000016	3529.8	49886.0	570.6
+950	39	999	Statewide	81	Other similar organizations (except business, professional, labor, and political organizations)	39	813990	299.13333333333327	994.6	34025.200000000004	1533.4	46927.2	296.8
+951	39	999	Statewide	81	Other social advocacy organizations	39	813319	208.1	1133.0	36811.2	1377.4	42394.8	200.2
+952	39	999	Statewide	81	Parking lots and garages	39	812930	503.06666666666666	4006.0	62587.39999999999	4353.8	65980.2	499.8
+953	39	999	Statewide	81	Pet care (except veterinary) services	39	812910	538.3166666666667	2604.9999999999995	47493.20000000001	3019.6	50591.4	529.2
+954	39	999	Statewide	81	Photofinishing laboratories (except one-hour)	39	812921	24.000000000000004	36.2	1317.6	170.8	6248.2	20.2
+955	39	999	Statewide	81	Political organizations	39	813940	67.01666666666668	131.0	11958.05	218.0	12990.4	55.0
+956	39	999	Statewide	81	Professional organizations	39	813920	227.49999999999997	1275.2	77705.0	1609.2	92301.8	226.4
+957	39	999	Statewide	81	Religious organizations	39	813110	7968.4	64605.80000000001	1206781.2	64840.8	1206781.2	7968.4
+958	39	999	Statewide	81	Reupholstery and furniture repair	39	811420	102.5	173.0	6183.199999999999	327.2	8840.6	97.0
+959	39	999	Statewide	81	Voluntary health organizations	39	813212	181.7	1204.8	63644.19999999999	1663.6	88561.4	176.4

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Goods & Services - Sample Starter Chart for Heatmap</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/localsite.js?showheader=true&showsearchXX=true"></script>
+<script type="text/javascript" src="../../../localsite/js/navigation.js" id="/localsite/js/navigation.js"></script>
+<link rel="stylesheet" href="../../css/community.css" />
+<link rel="stylesheet" href="../../../localsite/css/base.css" id="/localsite/css/base.css" />
+
+
+<!--
+
+  InnerHtml error
+
+  https://smmtool.app.cloud.gov/api/GAUSEEIO/matrix/U
+  https://smmtool.app.cloud.gov/api/GAUSEEIO/matrix/D
+
+  Gatsby with Firebase
+  https://www.google.com/search?ei=9gJnXerUHsSHggfp9IhQ&q=gatsby+firebase&oq=Gatsby+fire&gs_l=psy-ab.1.0.0j0i20i263j0l6j0i20i263j0.10976.12439..15522...1.2..0.72.327.5......0....1..gws-wiz.......0i71j0i131i20i263j0i22i30.V01miZzoUSQ
+
+
+https://gta.georgia.gov/about-gta/technology-innovation-showcase
+-->
+
+  <style>
+
+    /*
+    .hideMobile {display:inline-block;}
+    .showMobile {display:none;}
+    @media (max-width: 800px) {
+      .hideMobile {display:none;}
+      .showMobile {display:inline-block;}
+    }
+    .hideMidsize {display:inline-block;}
+    .showMidsize {display:none;}
+    @media (max-width: 1200px) {
+      .hideMidsize {display:none;}
+      .showMidsize {display:inline-block;}
+    }
+    */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    trX {
+      border-bottom: 1px solid #ccc;
+    }
+    td, th {
+
+      text-align: left;
+    }
+    td {
+      vertical-align: top;
+    }
+    /* Wide screen width */
+    .rotateHeader {
+      margin-right:200px; /* Allows for angle to exceed columns on left. */
+      display: block;
+    }
+    th.rotate {
+      heightX: 320px;
+      height: 240px;
+
+      white-space: nowrap;
+      vertical-align: bottom;
+      text-align: left;
+      padding: 2px;
+      padding-top:10px;
+    }
+    th.rotate > div {
+      transform:
+        translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+        rotate(315deg); /* 45 is really 360 - 45 */
+      width: 22px;
+      padding: 4px;
+      padding-top: 5px;
+    }
+    th.rotate > div > span {
+      padding: 5px 10px;
+      font-weight: 400;
+      font-size: 13.5px;
+      display:block;
+      width:230px;
+      border-bottomX: 1px solid #dfdfdf;
+    }
+    th.rotate > div > span:hover {
+      background: #eee;
+      cursor: pointer;
+    }
+    .impactTitle {
+        padding-top: 34px;
+    }
+    .th_title {
+        width: 50px;
+    }
+    .th_title > div {
+      float:right; /* Allows for space bewteen sections */
+    }
+    .th_title > div > span, .th_title > div > span:hover {
+      border-bottomX: 1px solid #777 !important;
+      border-top: 1px solid #333;
+      backgroundXXXX: #ddd !important;
+      margin-bottomX: 4px;
+      cursor: default;
+    }
+    th.rotate > div > span > span {
+        display:none; /* Hide extra after the title */
+    }
+
+    /* Wide Screen Width */
+    @media (min-width: 1400px) {
+      .rotateHeaderHolder {
+        margin-right:80px;
+      }
+    }
+    /* Standard Screen Width */
+    @media (max-width: 1399px) {
+
+      .rotateHeader {
+        display:inline;
+        overflow: auto;
+      }
+      th.rotate {
+        height: 220px;
+      }
+      th.rotate > div {
+        transform:
+          translate(0px, 0px) /* 25px, 51px - To shift right and up. */
+          rotate(270deg); /* 45 is really 360 - 45 */
+        width: 20px;
+        padding: 0px;
+      }
+      th.rotate > div > span {
+        padding: 5px 10px;
+        font-size: 12px;
+        width: 200px;
+        margin-bottom: 2px;
+      }
+      .th_title {
+          width: 30px;
+      }
+      .th_title > div > span {
+
+        font-size: 14px !important;
+        backgroundXXX: #eee;
+      }
+      .th_title > div > span, .th_title > div > span:hover {
+        margin-bottomX: 0px;
+      }
+    }
+
+
+    /* Not used */
+    #dataList > table > tbody > tr > td:first-child {
+      width:300px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .heat {
+      border: 1px solid #ccc;
+      border-rightX: 1px solid #ccc;
+      height:20px;
+      width:20px;
+    }
+    .noborderXXX {
+      border-left: 1px solid #777 !important;
+      border: 0px;
+    }
+    .noborder spanXXX {
+      margin: 0px;
+      margin-left: 6px;
+      border-left: 1px solid #ddd;
+      height: 2px;
+    }
+    iframe {
+      display: block;       /* iframes are inline by default */
+      border: none;         /* Reset default border */
+      min-height: 85vh;        /* Viewport-relative units */
+      width: 100%;
+    }
+    .oneline {
+      overflow:auto;
+      height:20px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div style="margin:40px; margin-top:0px; clear:both;">
+
+  <div class="rotateHeaderHolder" style="vertical-align: bottom;">
+
+    <table class="rotateHeader" style="padding-bottom:25px;border-bottom:1px solid #ccc">
+      <tr id="dataHeader">
+      <th colspan="3">
+        <!-- since th is bold -->
+        <div style="font-weight:400">
+          <h1>Goods & Services (mockup)</h1>
+          <h3>Sustainable Materials Management</h3>
+          <div style="display:none;margin-bottom:10px" class="local">
+              Place "Consumption" and "Production" toggle above heatmap.<br><br>
+              <!--
+              Consumption excludes goods that are imported. (Double check)<br>
+              Production excludes goods that are exported.<br>
+              Sounds like National might include imports/exports. (Double check)<br>
+              -->
+
+          </div>
+
+
+          <div style="clear: both;"></div>
+
+          <a href="https://model.earth/io/charts/">Embeddable US EEIO charts</a> |
+          <a href="../../../io/build/sector_list.html?view=mosaic&count=50">Mosaic Heatmap</a><br>
+          <a href="#notes">About this sample</a> |
+          <a href="sortable.html">Sortable (old)</a> |
+          <span style="display:none">
+          <a href="../../../io/heatmap.html?model=GAUSEEIO">EPA Dev</a> |
+          </span>
+          <a href="../../about/useeio">About&nbsp;the&nbsp;Tool</a><br>
+          <br><br>
+
+          <style>
+            #sectorset-tabs {
+              border-bottom: 1px solid #ddd;
+              height:26px;
+              padding-bottom: -10px;
+            }
+            .sector-tab {
+              border:1px solid #ccc;
+              border-bottom:0px solid #ccc;
+              padding:4px 8px 4px 8px;
+              border-top-left-radius: 6px;
+              border-top-right-radius: 6px;
+              float:left;
+              margin-right:5px;
+              background-color: #ddd;
+              z-index: 2;
+            }
+            #sectorset-tabs div.active {
+              background-color: #fff;
+            }
+            .add-sector-set {
+              font-size: 24px;
+              line-height: 21px;
+              padding-left: 6px;
+              font-weight: bold;
+              border: 1px solid #ccc;
+              border-bottom: 0px;
+              border-radius: 4px;
+              float:left;
+              height:26px;
+              width:27px;
+            }
+          </style>
+          <div id="sectorset-tabs">
+            <div class="sector-tab">20 main categories</div>
+            <div class="sector-tab active">388 industry sectors</div>
+            <div class="sector-tab"><a href="../../../localsite/info/#show=bioeconomy">Bioproducts</a></div>
+            <div class="sector-tab">0 selected</div>
+            <div class="add-sector-set">+</div>
+          </div>
+
+
+        </div>
+      </th>
+
+      <th class="rotate th_title"><div><span><b>Economic & Social</b></span></div></th>
+      <th class="rotate"><div><span>Jobs (JOBS)</span></div></th>
+      <th class="rotate"><div><span>Value Added (VADD)</span></div></th>
+
+      <th class="rotate th_title"><div><span><b>Environmental Impact</b></span></div></th>
+      <th class="rotate"><div><span>Acid Rain (ACID)</span></div></th>
+      <th class="rotate"><div><span>Freshwater Ecotoxicity (ETOX)<span> - Chemicals and Natural Materials</span></span></div></th>
+
+      <th class="rotate"><div><span>Water Eutrophication (EUTR)<span> - Excess Nutrients, Oxygen Depletion</span></span></div></th>
+      <th class="rotate"><div><span>Global Climate Change (GCC)</span></div></th>
+
+      <th class="rotate"><div><span>Respiratory Effects (HRSP)</span></div></th>
+      <th class="rotate"><div><span>Toxic to Humans (HTOX)<span> - Both Cancer and Noncancer</span></span></div></th>
+
+      <th class="rotate"><div><span>Ozone Depletion (OZON)</span></div></th>
+      <th class="rotate"><div><span>Smog Formation (SMOG)</span></div></th>
+
+      <th class="rotate th_title"><div><span><b>Resource Use</b></span></div></th>
+
+      <th class="rotate"><div><span>Energy Use (ENRG)</span></div></th>
+      <th class="rotate"><div><span>Land Use (LAND)</span></div></th>
+      <th class="rotate"><div><span>Minerals and Metals (MINE)</span></div></th>
+      <th class="rotate"><div><span>Water Use (WATR)</span></div></th>
+
+      <th class="rotate th_title"><div><span><b>Waste Generated</b></span></div></th>
+      <th class="rotate"><div><span>Food Waste (FOOD)</span></div></th>
+      <th class="rotate"><div><span>Hazardous Waste (HAZW)</span></div></th>
+      <th class="rotate"><div><span>Municipal Solid Waste (MSW)</span></div></th>
+
+    </tr>
+
+  </table>
+
+  </div>
+
+
+</div>
+
+<script>
+  var dataSet = [];
+  function loadHtmlTable(applyFilter) {
+    d3.text("USEEIOv1_1_FinalDemand.csv").then(function(data) {
+        dataSet = d3.csvParseRows(data);
+        console.log("loadHtmlTable - dataSet row count: " + dataSet.length);
+        //console.log(dataSet);
+        displayResults();
+    });
+  }
+  loadHtmlTable(true); // New list
+
+  function numberWithCommas(x) {
+      //return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+      if (!isNaN(x)) { // Is number
+          return Math.round(x/1000000);
+      } else {
+        return x;
+      }
+  }
+
+  function displayResults() {
+    var rowcount = 0;
+    var dataRow = ""; // "<table>"
+    //dataRow += "<tr><th>BEA Code</th><th>US Consumption</th><th>US Production</th><th>Trade Balance</th></tr>";
+    for(var i = 0; i < dataSet.length; i++) {
+      rowcount++;
+      var diff = numberWithCommas(dataSet[i][4] - dataSet[i][3]);
+      if (rowcount > 1) {
+          if (dataSet[i][3]) {
+          dataRow += "<tr><td style='min-width:21px;'><input name='sector' type='checkbox' value=''></td><td><div class='oneline'>" + dataSet[i][0] + " - " + dataSet[i][1] + "</div></td>";
+            //dataRow += "<td class='icon'><img src='icons/noun_entertainment.svg' width = '20%' height = '20%'></td>";
+            //dataRow += "<div><b>Location:</b> " + dataSet[i][2] + "</div>";
+
+            dataRow += "<td class='hideMobile'><!--0.2%--></td>";
+
+            //dataRow += "<td>" + numberWithCommas(dataSet[i][3]) + "</td><td>" + numberWithCommas(dataSet[i][4]) + "</td><td>" + diff + "</td>";
+
+            dataRow += "<td class='noborder'><span></span></td>";
+
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+
+            dataRow += "<td class='noborder'></td>";
+
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+
+            dataRow += "<td class='noborder'></td>";
+
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+
+            dataRow += "<td class='noborder'></td>";
+
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+            dataRow += "<td><div class='heat'></div></td>";
+
+          dataRow += "</tr>";
+          }
+          else {
+            dataRow += "<tr><td colspan='24'><div style='background-color:#ddd; padding:8px 8px 8px 10px; margin:12px 0 10px 0;overflow:auto'><div style='padding-right:7px;margin-bottom:-4px;float:left'><img src='../../../io/img/icon/sector/agriculture.svg' width='18px' style='display:none' /></div><b style='font-size:14px;'>" + dataSet[i][0] + "</b></div></td>";
+            dataRow += "</tr>";
+        }
+      }
+    };
+    //dataRow += "</table>";
+    if (rowcount > 0) {
+      //$("#dataList").append(dataRow);
+
+      //$( "h2" ).insertAfter( $("#dataHeader") );
+      $(dataRow).insertAfter($("#dataHeader"));
+    }
+  }
+</script>
+
+<a name="notes"></a>
+<section id="intro" class="darkPanel">
+  <div class="content contentpadding" style="padding-top:50px">
+
+    <div id="readmeDiv" style="float:left; margin:0 30px 30px 30px; display: block !important"></div>
+    <script>
+      loadMarkdown("README.md", "readmeDiv", "_parent");
+    </script>
+
+  </div>
+</section>
+
+</body>
+</html>

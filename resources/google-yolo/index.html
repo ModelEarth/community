@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Yolo Inline Demo by Zapier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        display: none;
+        margin: 0;
+        background-color: #F1F4F5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    <div>
+    You Only Login Once (YOLO)
+    </div><br>
+    <div style="clear:both"></div>
+    -->
+
+    <div style="position:absolute;top:0px;padding-top: 10px">
+    No longer necessary thanks to <a href="https://developers.google.com/identity/one-tap/web/guides/change-position">change-position</a><br><br>
+  </div>
+
+    <div class="sign-up">
+      <h1 class="sign-up__title">Sign Up for Localhost</h1>
+      <iframe id="google-iframe" class="sign-up__google" src="google-yolo-iframe.html"></iframe>
+      <p class="sign-up__divider">or</p>
+      <div class="sign-up__field">Email</div>
+      <div class="sign-up__field">Password</div>
+      <div class="sign-up__button"></div>
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener('message', (event) => {
+        const iframeElt = document.getElementById('google-iframe');
+
+        switch(event.data.type) {
+          case 'verifyPing':
+            // This part handles the initial handshake by the Google Yolo iframe.
+            // It is sent by OpenYOLO https://github.com/openid/OpenYOLO-Web/blob/dc841704619d7801da0b860c91953ff730fca07f/ts/protocol/post_messages.ts#L27
+            event.source.postMessage({
+              type: 'verifyAck',
+              data: event.data.data
+            }, '*');
+            break;
+          case 'credential':
+            // The user selected a credential.
+            console.log('Received credential!', event.data.credential);
+            break;
+          case 'error':
+            // An error happened.
+            console.log('Error:', event.data.error);
+            break;
+          case 'height':
+            // Update the parent <iframe> height to match GoogleYolo <iframe> height
+            iframeElt.style.height = event.data.height + 'px';
+            break;
+          default:
+            // Do nothing.
+        }
+      });
+    </script>
+  </body>
+</html>
