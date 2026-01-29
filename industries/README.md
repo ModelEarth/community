@@ -1,4 +1,4 @@
 
-[Moved to Community Data](/community-data/process/naics/)
+[Moved to Community Data](/data-pipeline-garage/community-data/process/naics/)
 
 
