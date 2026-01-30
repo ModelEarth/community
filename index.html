@@ -112,14 +112,6 @@ $(document).on("change"
   right: 20px;
   bottom: 20px;
 }
-#logoRowXXX {
-  border-top: 1px solid #ccc;
-}
-#logoRow a {
-  margin-right: 64px;
-  display:block;
-  float: left;
-}
 @media (max-width: 800px) {
   #dsround {
     display: none !important;
@@ -133,31 +125,15 @@ $(document).on("change"
   #exiobaselogo {
     margin-bottom: 30px !important;
   }
-  #logoRow {
-    margin-left: 30px;
-  }
-  #logoRow a {
-    float: none;
-    clear: both;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-  }
-  #logoRow a > img {
-    width: 100% !important;
-    max-width: 250px;
-  }
   #dllogo {
     max-width: 200px !important;
-
   }
   #galogo {
     max-width: 200px !important;
   }
 }
 .dark #logoRowHolder {
-  background: #bbb;
-  min-height: 100px;
+  background: #444;
 }
 .popout {
     border: 1px solid #ccc;
@@ -278,39 +254,15 @@ tbody tr td:nth-child(2) {
   </div>
 </div>
 
-<!-- Reduce georgia_usa_gray.png logo below. -->
 
-<div id="logoRowHolder"><hr>
-<div class="content contentpadding" styleX="padding-top:40px; padding-bottom:0px; max-width:1500px" id="logoRow">
+<div style="background-color: rgb(246, 246, 246); border-top: 1px solid #bbb;">
 
-<div style="margin-bottom:0px">
-  <a href="https://dreamstudio.com" style="margin-top:13px;" id="dsround"><img src="../localsite/img/logo/dreamstudio/favicon.png" style="width:122px"></a>
+<div class="content contentpadding" style="padding-top: 0px; padding-bottom: 0px;">
 
-  <div style="float:left">
-    <div style="margin-top:10px;margin-bottom:20px" id="logotoprow">
-      <a href="https://dreamstudio.com" id="dslogo" style="margin-top:12px;"><img src="../localsite/img/logo/dreamstudio/text.png" style="width:170px"></a>
-      <a href="https://model.georgia.org" style="margin-top:-4px;margin-right:64px !important;"><img id="galogo" src="../localsite/img/logo/states/GA.png" style="width:155px;"></a>
-      <a href="https://www.democracylab.org/projects/834" target="_blank" style="margin-top:13px;"><img id="dllogo" src="../community/img/logo/orgs/democracy-lab.png" style="width:175px"></a>
-      <br>
-    </div>
-
-    <div>
-      <a href="https://exiobase.eu" target="_blank" style="margin-top:8px;margin-right:51px !important;" id="exiobaselogo"><img src="../community/img/logo/orgs/exiobase.png" style="width:190px;"></a>
-      <a href="https://datacommons.org" target="_blank" style="margin-top:11px;margin-right:51px !important;"><img src="../community/img/logo/orgs/GoogleDataCommons.png" style="width:190px;"></a>
-    </div>
-  </div>
-
-  <div style="clear:both;"></div>
+  <!-- viz=false to show adjacent text is showing N/A -->
+  <iframe width="100%" height="100%" src="https://datausa.io/profile/geo/georgia/economy/employment_by_industries?viz=true" frameborder="0" ></iframe>
 
 </div>
-</div>
-
-<!--
-<div style="float:left; margin-bottom:20px">
-  <a href="https://openseattle.org" target="_blank" style="margin-top:-10px"><img src="../community/img/logo/orgs/open-seattle.png" style="width:140px;"></a>
-  <a href="https://codeforamerica.org" target="_blank" style="margin-top:-5px;margin-right:0px !important;"><img src="img/logo/code-for-america-and-earth.png" style="width:160px"></a>
-</div>
--->
 
 </div>
 <div style="clear:both"></div>
@@ -480,8 +432,6 @@ Join us for 5 or more hours during Democracy Lab's 48 HOUR EARTH DAY on April 22
 
 <h2>Community Apps for Life&nbsp;Cycle&nbsp;Assessment&nbsp;(LCA)</h2>
 
-
-
 <!-- copied from /io -->
 <a href="https://www.epa.gov/sciencematters/epa-researchers-working-improve-life-cycle-assessment-capabilities-communities" style="font-size:18px" target="_blank">Working to Improve Life-Cycle Assessment for Communities</a><br>
 
@@ -529,6 +479,31 @@ Learn more about USEEIO.
 </div>
 
 <div style="clear:both"></div>
+
+  <!-- logos -->
+  <div id="logoRowHolder">
+    <div id="logoRow" class="content contentpadding">
+      <div style="margin-top:10px;margin-bottom:20px" id="logotoprow">
+        <div style="float:left; margin-right:40px">
+          <a href="https://dreamstudio.com" style="margin-top:13px;margin-right:13px;" id="dsround"><img src="../localsite/img/logo/dreamstudio/favicon.png" style="width:42px"></a>
+          <a href="https://dreamstudio.com" id="dslogo" style="margin-top:12px;"><img src="../localsite/img/logo/dreamstudio/text.png" style="width:160px"></a>
+        </div>
+        <div style="float:left">
+          <a href="https://model.georgia.org" style="margin-top:-4px;margin-right:64px !important;"><img id="galogo" src="../localsite/img/logo/states/GA.png" style="width:155px;"></a>
+          <a href="https://www.democracylab.org/projects/834" target="_blank" style="margin-top:13px;"><img id="dllogo" src="../community/img/logo/orgs/democracy-lab.png" style="width:175px"></a>
+        </div>
+        <br>
+      </div>
+      <div style="clear:both;"></div>
+
+      <div style="margin-top:15px">
+        <a href="https://exiobase.eu" target="_blank" style="margin-top:8px;margin-right:68px !important;" id="exiobaselogo"><img src="../community/img/logo/orgs/exiobase.png" style="width:190px;"></a>
+        <a href="https://datacommons.org" target="_blank" style="margin-top:11px;margin-right:51px !important;"><img src="../community/img/logo/orgs/GoogleDataCommons.png" style="width:195px;"></a>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+  <!-- /logos -->
 
 
 <style>
