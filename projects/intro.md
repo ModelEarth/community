@@ -10,8 +10,6 @@
 }
 </style>
 
-View our [Active Projects](../../projects/) and read our [Lifecycle Tools Overview](../../community/tools/).
-
 <!--
 <h3>Where we need help...</h3>
 
