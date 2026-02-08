@@ -68,86 +68,234 @@ $(document).on("change"
           };
         }
       });
-      console.log('State cache loaded with', Object.keys(window.stateCacheUS).length, 'states');
 
       // Call initial iframe update after cache is loaded
-      waitForElm('#iframedata').then(() => {
+      waitForElm('#iframe-container').then(() => {
         updateDataUSAIframe(true);
       });
     });
   });
 
+  // Generate state select options HTML (50 states + DC)
+  function generateStateOptions(selectedStateCode) {
+    const validStates = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'];
+
+    let optionsHtml = '';
+    validStates.forEach(stateCode => {
+      if (window.stateCacheUS && window.stateCacheUS[stateCode]) {
+        const state = window.stateCacheUS[stateCode];
+        const selected = stateCode === selectedStateCode ? ' selected' : '';
+        optionsHtml += `<option value="${stateCode}"${selected}>${state.name}</option>`;
+      }
+    });
+    return optionsHtml;
+  }
+
   // Update DataUSA iframe when state changes or on initial load
   // DataUSA seems to throttle the secondary load time.
   function updateDataUSAIframe(forceUpdate) {
-    // alert('updateDataUSAIframe called, forceUpdate: ' + forceUpdate);
     const hash = getHash();
     const priorHashValue = window.priorHash?.state;
-    // alert('hash.state: ' + hash.state + ', priorHash.state: ' + priorHashValue);
 
     // Default to Georgia if no state in hash
-    const stateCode = hash.state || 'GA';
+    const stateString = hash.state || 'GA';
+    const stateCodes = stateString.split(',').filter(s => s.trim());
+
+    const conditionPassed = forceUpdate || (stateString && stateString !== priorHashValue);
+    // alert('updateDataUSAIframe - forceUpdate: ' + forceUpdate + ' - stateString: ' + stateString + ' - priorHashValue: ' + (priorHashValue || 'undefined') + ' - Condition passed: ' + conditionPassed);
 
     // Process if state changed or initial load
-    if (forceUpdate || (stateCode && stateCode !== priorHashValue)) {
-      // alert('Updating iframe - state: ' + stateCode);
+    if (conditionPassed) {
+      const container = $('#iframe-container');
 
-      // Set #state_select to the state code
-      waitForElm('#state_select').then(() => {
-        $("#state_select").val(stateCode);
-      });
+      // Update/create iframes for each state
+      stateCodes.forEach((stateCode, index) => {
+        stateCode = stateCode.trim();
 
-      // Get state name from cache instead of reading from #state_select
-      let stateName;
-      if (window.stateCacheUS && window.stateCacheUS[stateCode]) {
-        stateName = window.stateCacheUS[stateCode].name;
-        // alert('State name from cache: ' + stateName);
-      } else {
-        // Fallback: read from #state_select if cache not ready
-        waitForElm('#state_select').then(() => {
-          stateName = $("#state_select option[value='" + stateCode + "']").text();
-          // alert('State name from DOM (cache not ready): ' + stateName);
-        });
-      }
+        // Get state name from cache
+        let stateName;
+        if (window.stateCacheUS && window.stateCacheUS[stateCode]) {
+          stateName = window.stateCacheUS[stateCode].name;
+        } else {
+          return; // Skip this state if cache not ready
+        }
 
-      if (stateName && stateName !== "States and Territories...") {
+        if (stateName && stateName !== "States and Territories...") {
           const stateNameLower = stateName.toLowerCase().replace(/\s+/g, '-');
-          const oldIframe = $('#iframedata');
-          // alert('Found iframe: ' + (oldIframe.length > 0) + ', will use state: ' + stateNameLower);
-          if (oldIframe.length) {
-            const newSrc = `https://datausa.io/profile/geo/${stateNameLower}/economy/employment_by_industries?viz=true`;
-            //alert('Creating new iframe with src: ' + newSrc);
+          const iframeId = `datastate-${index}`;
+          const loadingId = `loading-state-${index}`;
+          let iframe = $(`#${iframeId}`);
 
-            // Show loading indicator with state name
-            $('#iframe-loading').text(stateName + ' Loading').show();
+          // Create iframe wrapper if it doesn't exist
+          if (!iframe.length) {
+            const wrapperId = `wrapper-state-${index}`;
+            const stateOptions = generateStateOptions(stateCode);
+            const wrapperHtml = `
+              <div id="${wrapperId}" class="state-iframe-wrapper" style="position:relative; margin-bottom:30px; border:1px solid #ddd; border-radius:4px; overflow:hidden;">
+                <div style="position:relative; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:10px 15px; background:#f5f5f5; border-bottom:1px solid #ddd;">
+                  <select class="datastate-select" data-iframe-id="${iframeId}" data-index="${index}" style="font-size:16px; font-weight:600; padding:4px 8px; border:1px solid #ccc; border-radius:4px; background:transparent; cursor:pointer;">${stateOptions}</select>
+                  <div class="remove-state-btn" data-state="${stateCode}" data-index="${index}" style="cursor:pointer; width:24px; height:24px; border-radius:50%; background:#fff; border:1px solid #ccc; display:flex; align-items:center; justify-content:center; font-size:14px; color:#666; transition:all 0.2s;" onmouseover="this.style.background='#f44336'; this.style.color='#fff'; this.style.borderColor='#f44336'" onmouseout="this.style.background='#fff'; this.style.color='#666'; this.style.borderColor='#ccc'">&times;</div>
+                </div>
+                <div style="position:relative;">
+                  <div id="${loadingId}" style="display:none; position:absolute; top:10px; right:10px; padding:8px 12px; background:rgba(255,255,255,0.95); border:1px solid #ddd; border-radius:4px; z-index:10; font-size:14px; color:#666; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+                    Loading...
+                  </div>
+                  <iframe id="${iframeId}" width="100%" height="100%" style="margin-top:-20px; margin-left:-20px; min-height:600px" src="" frameborder="0"></iframe>
+                </div>
+              </div>
+            `;
+            container.append(wrapperHtml);
+            iframe = $(`#${iframeId}`);
+          }
 
-            // Update old iframe's src
-            oldIframe.attr('src', newSrc);
+          const newSrc = `https://datausa.io/profile/geo/${stateNameLower}/economy/employment_by_industries?viz=true`;
 
-            // Hide loading indicator when iframe loads
-            oldIframe.off('load').on('load', function() {
-              $('#iframe-loading').hide();
+          // Update state select and close button in header
+          const wrapper = iframe.closest('.state-iframe-wrapper');
+          wrapper.find('.datastate-select').val(stateCode);
+          wrapper.find('.remove-state-btn').attr('data-state', stateCode);
+
+          // Only update if src changed
+          if (iframe.attr('src') !== newSrc) {
+            $(`#${loadingId}`).text(stateName + ' Loading').show();
+            iframe.attr('src', newSrc);
+            iframe.off('load').on('load', function() {
+              $(`#${loadingId}`).hide();
             });
-
-            // Commented out: Create new iframe approach since this was not any faster than updating the src
-            // const newIframe = oldIframe.clone();
-            // newIframe.attr('src', newSrc);
-            // newIframe.attr('id', 'iframedata');
-            // oldIframe.after(newIframe);
-            // alert('New iframe inserted after old one');
-            // newIframe.on('load', function() {
-            //   oldIframe.remove();
-            //   $('#iframe-loading').hide();
-            // });
           }
         }
+      });
+
+      // Remove extra iframes if we have more than needed
+      container.find('.state-iframe-wrapper').each(function(index) {
+        if (index >= stateCodes.length) {
+          $(this).remove();
+        }
+      });
     }
   }
 
   // Call when state changes
   document.addEventListener('hashChangeEvent', function() {
-    // alert('hashChangeEvent fired');
-    updateDataUSAIframe(false);
+    const hash = getHash();
+    const currentState = hash.state || '';
+    const priorState = window.priorHash?.state || '';
+
+    // Only update if state actually changed
+    if (currentState !== priorState) {
+      // alert('hashChangeEvent fired - Current hash.state: ' + hash.state + ' - Prior hash.state: ' + (window.priorHash?.state || 'undefined'));
+      updateDataUSAIframe(false);
+    }
+  });
+
+  // Popup handling for state selection
+  waitForElm('#add-state-btn').then(() => {
+    $('#add-state-btn').on('click', function() {
+      // Generate #iframeState select from cache if it doesn't exist
+      if (!$('#iframeState').length && window.stateCacheUS) {
+        // 50 states + DC (exclude territories)
+        const validStates = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'];
+
+        let optionsHtml = '<option value="">Select a state...</option>';
+        Object.keys(window.stateCacheUS)
+          .filter(stateCode => validStates.includes(stateCode))
+          .sort((a, b) => {
+            return window.stateCacheUS[a].name.localeCompare(window.stateCacheUS[b].name);
+          })
+          .forEach(stateCode => {
+            const state = window.stateCacheUS[stateCode];
+            optionsHtml += `<option value="${stateCode}">${state.name}</option>`;
+          });
+        const selectHtml = `<select id="iframeState" style="width:100%; padding:8px; font-size:14px;">${optionsHtml}</select>`;
+        $('#state-select-popup-holder').html(selectHtml);
+      }
+      $('#state-popup').show();
+    });
+  });
+
+  waitForElm('#close-popup-btn').then(() => {
+    $('#close-popup-btn').on('click', function() {
+      $('#state-popup').hide();
+    });
+  });
+
+  // When state is selected in popup, add to hash
+  $(document).on('change', '#iframeState', function(event) {
+    const selectedState = $(this).val();
+    if (selectedState) {
+      const hash = getHash();
+      let currentStates = [];
+
+      // If no hash.state, get states from existing iframes in DOM
+      if (!hash.state || hash.state === '') {
+        $('#iframe-container .state-iframe-wrapper').each(function() {
+          const removeBtn = $(this).find('.remove-state-btn');
+          const stateCode = removeBtn.data('state');
+          if (stateCode) {
+            currentStates.push(stateCode);
+          }
+        });
+      } else {
+        currentStates = hash.state.split(',');
+      }
+
+      // Add new state if not already in list
+      if (!currentStates.includes(selectedState)) {
+        currentStates.push(selectedState);
+        goHash({'state': currentStates.join(',')});
+      }
+
+      // Clear the selection
+      $(this).val('');
+
+      // Close popup
+      $('#close-popup-btn').click();
+    }
+  });
+
+  // Handle state selection change in iframe header
+  $(document).on('change', '.datastate-select', function() {
+    const newStateCode = $(this).val();
+    const iframeIndex = $(this).data('index');
+
+    if (newStateCode) {
+      const hash = getHash();
+      const currentStates = hash.state ? hash.state.split(',') : ['GA'];
+
+      // Update the state at this index
+      currentStates[iframeIndex] = newStateCode;
+
+      // Update hash
+      goHash({'state': currentStates.join(',')});
+    }
+
+    // Deselect/blur the menu
+    $(this).blur();
+  });
+
+  // Remove state when close button is clicked
+  $(document).on('click', '.remove-state-btn', function() {
+    // Remove the parent's parent (the wrapper div)
+    $(this).parent().parent().remove();
+
+    // Update hash to reflect remaining states
+    const remainingStates = [];
+    $('#iframe-container .state-iframe-wrapper').each(function() {
+      const iframe = $(this).find('iframe');
+      const stateCode = iframe.attr('id').replace('datastate-', '');
+      const hash = getHash();
+      const allStates = hash.state ? hash.state.split(',') : [];
+      if (allStates[stateCode]) {
+        remainingStates.push(allStates[stateCode]);
+      }
+    });
+
+    // Update hash - leave empty if no states remain
+    if (remainingStates.length > 0) {
+      goHash({'state': remainingStates.join(',')});
+    } else {
+      goHash({'state': ''});
+    }
   });
 </script>
 
@@ -356,16 +504,29 @@ tbody tr td:nth-child(2) {
 
 <div class="content contentpadding" style="padding-bottom: 0px;">
 
-  <div id="relocatedStateMenu" style="position:relative;z-index:2;"></div>
-
   <!-- viz=false to show adjacent text is showing N/A -->
   <div style="position:relative;">
     <div id="iframe-loading" style="display:none; position:absolute; top:10px; right:10px; padding:8px 12px; background:rgba(255,255,255,0.95); border:1px solid #ddd; border-radius:4px; z-index:10; font-size:14px; color:#666; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
       Loading...
     </div>
-    <iframe id="iframedata" width="100%" height="100%" style="margin-top:-20px; margin-left:-20px; min-height:600px" src="" frameborder="0" ></iframe>
+    <div id="iframe-container"></div>
   </div>
 
+  <div style="padding:20px 0;">
+    <button id="add-state-btn" class="btn" style="margin-top:-34px;padding-bottom:10px;">Add State</button>
+  </div>
+
+</div>
+
+<!-- State Selection Popup -->
+<div id="state-popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:30px; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.3); min-width:300px;">
+    <h3 style="margin-top:0;">Select State</h3>
+    <div id="state-select-popup-holder"></div>
+    <div style="margin-top:20px;">
+      <button id="close-popup-btn" class="btn" style="padding:8px 16px;">Close</button>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -625,6 +786,29 @@ Learn more about USEEIO.
 }
 .dark #hero-rect-new {
   background-color: rgba(33, 33, 33, 0.9);
+}
+.datastate-select {
+  appearance: auto;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  border: none !important;
+  margin-bottom: 0px;
+  margin-left: -20px;
+  font-size: 20px !important;
+}
+.state-iframe-wrapper {
+  border: none !important;
+  overflow: visible !important;
+}
+@media (min-width: 801px) and (max-width: 1000px) {
+  #hero-landscape-image {
+    min-height: 650px !important;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px) {
+  #hero-landscape-image {
+    min-height: 750px !important;
+  }
 }
 </style>
 
