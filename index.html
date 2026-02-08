@@ -49,10 +49,98 @@ $(document).on("change"
         showGlobalMap(`https://earth.nullschool.net/#current/wind/surface/level/orthographic=${latLonZoom}`);
       },1000);
   });
-  
 
-  //loadMarkdown("README.md", "readmeDiv", "_parent");
-  //// param.startTitle = "Model Earth"; // Trigger header
+  // Cache state list properties on initial load
+  // Stores state names and attributes so we don't need to read from #state_select as it moves between DOM positions
+  window.stateCacheUS = {};
+
+  $(document).ready(function() {
+    waitForElm('#state_select').then(() => {
+      $("#state_select option").each(function() {
+        const stateCode = $(this).val();
+        if (stateCode) { // Skip empty option
+          window.stateCacheUS[stateCode] = {
+            name: $(this).text(),
+            stateid: $(this).attr('stateid'),
+            lat: $(this).attr('lat'),
+            lon: $(this).attr('lon'),
+            km: $(this).attr('km')
+          };
+        }
+      });
+      console.log('State cache loaded with', Object.keys(window.stateCacheUS).length, 'states');
+
+      // Call initial iframe update after cache is loaded
+      waitForElm('#iframedata').then(() => {
+        updateDataUSAIframe(true);
+      });
+    });
+  });
+
+  // Update DataUSA iframe when state changes or on initial load
+  // DataUSA seems to throttle the secondary load time.
+  function updateDataUSAIframe(forceUpdate) {
+    // alert('updateDataUSAIframe called, forceUpdate: ' + forceUpdate);
+    const hash = getHash();
+    const priorHashValue = window.priorHash?.state;
+    // alert('hash.state: ' + hash.state + ', priorHash.state: ' + priorHashValue);
+
+    // Process if state changed or initial load
+    if (forceUpdate || (hash.state && hash.state !== priorHashValue)) {
+      // alert('Updating iframe - state: ' + hash.state);
+
+      // Get state name from cache instead of reading from #state_select
+      let stateName;
+      if (hash.state && window.stateCacheUS && window.stateCacheUS[hash.state]) {
+        stateName = window.stateCacheUS[hash.state].name;
+        // alert('State name from cache: ' + stateName);
+      } else if (hash.state) {
+        // Fallback: read from #state_select if cache not ready
+        waitForElm('#state_select').then(() => {
+          stateName = $("#state_select option[value='" + hash.state + "']").text();
+          // alert('State name from DOM (cache not ready): ' + stateName);
+        });
+      }
+
+      if (stateName && stateName !== "States and Territories...") {
+          const stateNameLower = stateName.toLowerCase().replace(/\s+/g, '-');
+          const oldIframe = $('#iframedata');
+          // alert('Found iframe: ' + (oldIframe.length > 0) + ', will use state: ' + stateNameLower);
+          if (oldIframe.length) {
+            const newSrc = `https://datausa.io/profile/geo/${stateNameLower}/economy/employment_by_industries?viz=true`;
+            //alert('Creating new iframe with src: ' + newSrc);
+
+            // Show loading indicator with state name
+            $('#iframe-loading').text(stateName + ' Loading').show();
+
+            // Update old iframe's src
+            oldIframe.attr('src', newSrc);
+
+            // Hide loading indicator when iframe loads
+            oldIframe.off('load').on('load', function() {
+              $('#iframe-loading').hide();
+            });
+
+            // Commented out: Create new iframe approach since this was not any faster than updating the src
+            // const newIframe = oldIframe.clone();
+            // newIframe.attr('src', newSrc);
+            // newIframe.attr('id', 'iframedata');
+            // oldIframe.after(newIframe);
+            // alert('New iframe inserted after old one');
+            // newIframe.on('load', function() {
+            //   oldIframe.remove();
+            //   $('#iframe-loading').hide();
+            // });
+          }
+        }
+    }
+  }
+
+  // Call when state changes
+  document.addEventListener('hashChangeEvent', function() {
+    // alert('hashChangeEvent fired');
+    updateDataUSAIframe(false);
+  });
 </script>
 
 <style>
@@ -181,6 +269,7 @@ tbody tr td:nth-child(2) {
 </head>
 
 <body>
+
 <div style="clear:both; min-height:250px; display:none" class="displayOnload">
 
   <div class="topcolumns content contentpadding" style="padding-top:0px; padding-bottom:0px; width:100%; max-width:1230px">
@@ -257,10 +346,17 @@ tbody tr td:nth-child(2) {
 
 <div style="background-color: rgb(246, 246, 246); border-top: 1px solid #bbb;">
 
-<div class="content contentpadding" style="padding-top: 0px; padding-bottom: 0px;">
+<div class="content contentpadding" style="padding-bottom: 0px;">
+
+  <div id="relocatedStateMenu" style="position:relative;z-index:2;"></div>
 
   <!-- viz=false to show adjacent text is showing N/A -->
-  <iframe width="100%" height="100%" style="min-height:600px" src="https://datausa.io/profile/geo/georgia/economy/employment_by_industries?viz=true" frameborder="0" ></iframe>
+  <div style="position:relative;">
+    <div id="iframe-loading" style="display:none; position:absolute; top:10px; right:10px; padding:8px 12px; background:rgba(255,255,255,0.95); border:1px solid #ddd; border-radius:4px; z-index:10; font-size:14px; color:#666; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+      Loading...
+    </div>
+    <iframe id="iframedata" width="100%" height="100%" style="margin-top:-20px; margin-left:-20px; min-height:600px" src="" frameborder="0" ></iframe>
+  </div>
 
 </div>
 
