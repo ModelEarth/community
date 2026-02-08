@@ -85,19 +85,27 @@ $(document).on("change"
     const priorHashValue = window.priorHash?.state;
     // alert('hash.state: ' + hash.state + ', priorHash.state: ' + priorHashValue);
 
+    // Default to Georgia if no state in hash
+    const stateCode = hash.state || 'GA';
+
     // Process if state changed or initial load
-    if (forceUpdate || (hash.state && hash.state !== priorHashValue)) {
-      // alert('Updating iframe - state: ' + hash.state);
+    if (forceUpdate || (stateCode && stateCode !== priorHashValue)) {
+      // alert('Updating iframe - state: ' + stateCode);
+
+      // Set #state_select to the state code
+      waitForElm('#state_select').then(() => {
+        $("#state_select").val(stateCode);
+      });
 
       // Get state name from cache instead of reading from #state_select
       let stateName;
-      if (hash.state && window.stateCacheUS && window.stateCacheUS[hash.state]) {
-        stateName = window.stateCacheUS[hash.state].name;
+      if (window.stateCacheUS && window.stateCacheUS[stateCode]) {
+        stateName = window.stateCacheUS[stateCode].name;
         // alert('State name from cache: ' + stateName);
-      } else if (hash.state) {
+      } else {
         // Fallback: read from #state_select if cache not ready
         waitForElm('#state_select').then(() => {
-          stateName = $("#state_select option[value='" + hash.state + "']").text();
+          stateName = $("#state_select option[value='" + stateCode + "']").text();
           // alert('State name from DOM (cache not ready): ' + stateName);
         });
       }
