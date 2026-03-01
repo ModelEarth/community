@@ -55,7 +55,7 @@ Integrating maps and ML with [job data](/localsite/info/#indicators=VADD,JOBS) a
 **[Pay.gov web service API](https://www.milcorp.com/blog/cloud-feed/selecting-the-pay-gov-interface-thats-best-for-you/)** - Add an open source payment process to fund local improvements while [paying down federal debt](https://www.pay.gov/public/form/start/23779454). Send contributions to the investment pool of your choice to fund See Click Fix improvements and other projects through participating municipalities, states and countries.
 -->
 
-**[Easy to Integrate Auth Frontend](https://model.earth/cloud/)** with embeddable [auth.js javascript](https://authjs.dev/) identity platform in [Our Cloud Repo](https://github.com/modelearth/cloud/) and [Partner Tools Admin](../../team/admin/).
+**[Easy to Integrate Auth Frontend](https://model.earth/cloud/)** with embeddable [Better Auth NextJS javascript](https://better-auth.com) identity platform in [Our Cloud Repo](https://github.com/modelearth/cloud/) via our [better-auth submodule](../../better-auth/).
 
 <!--
 [group review of bounty payments](https://github.com/orgs/ModelEarthTeam/discussions/8)
