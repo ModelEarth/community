@@ -381,7 +381,10 @@ $(document).on("change"
     max-width: 200px !important;
   }
 }
-.dark #logoRowHolder {
+.backgroundStyle {
+  background-color: rgb(246, 246, 246);
+}
+.dark .backgroundStyle {
   background: #444;
 }
 .popout {
@@ -457,7 +460,7 @@ tbody tr td:nth-child(2) {
       <h2>Collaborative Data Science</h2>
       We're collaborating with programmers, students, community reps and designers to create inspiring tools. Get involved adding datasets and updating widgets.<br><br>
 
-      <a href="../projects/" class="btn btn-success" style="background-color:rgb(152, 139, 252);border-color:rgb(152, 139, 252)">View Project Areas</a>
+      <a href="../projects/" class="btn btn-success" style="background-color:rgb(152, 139, 252);border-color:rgb(152, 139, 252)">Project Areas</a>
 
       </div>
     </div>
@@ -466,7 +469,7 @@ tbody tr td:nth-child(2) {
       <div class="pageColumnInside">
         <h2>Product Lifecycle Tools</h2>
 
-        Join us in creating Open Footprint profiles for locations that convey a wide range of data on product lifecycles, individual impacts, state input-output and global supply chains.
+        Join creating product and location profiles that convey a wide range of data on product lifecycles, individual impacts, multi-region IO, and global supply chains.
 
         <!--
          We've teamed up with data scientists and educators around the world to integrate data and visualizations in environmental-focused product lifecycle&nbsp;tools.
@@ -505,7 +508,7 @@ tbody tr td:nth-child(2) {
 </div>
 
 
-<div style="background-color: rgb(246, 246, 246); border-top: 1px solid #bbb;">
+<div class="backgroundStyle">
 
 <div class="content contentpadding" style="padding-bottom: 0px;">
 
@@ -751,34 +754,44 @@ Learn more about USEEIO.
 <div style="clear:both"></div>
 
   <!-- logos -->
-  <div id="logoRowHolder">
+  <div class="backgroundStyle">
     <div id="logoRow" class="content contentpadding">
+
       <div style="margin-top:10px;margin-bottom:20px" id="logotoprow">
         <div style="float:left; margin-right:40px">
-          <a href="https://dreamstudio.com" style="margin-top:13px;margin-right:13px;" id="dsround"><img src="../localsite/img/logo/dreamstudio/favicon.png" style="width:42px"></a>
-          <a href="https://dreamstudio.com" id="dslogo" style="margin-top:12px;"><img src="../localsite/img/logo/dreamstudio/text.png" style="width:160px"></a>
+          <div style="display:flex; align-items:center; gap:13px;">
+            <a href="https://dreamstudio.com" style="margin-top:0px;" id="dsround"><img src="../localsite/img/logo/dreamstudio/favicon.png" style="width:42px"></a>
+            <a href="https://dreamstudio.com" id="dslogo" style="margin-top:0px;"><img src="../localsite/img/logo/dreamstudio/text.png" style="width:160px"></a>
+          </div>
         </div>
-        <div style="float:left">
-          <a href="https://model.georgia.org" style="margin-top:-4px;margin-right:64px !important;"><img id="galogo" src="../localsite/img/logo/states/GA.png" style="width:155px;"></a>
-          <a href="https://www.democracylab.org/projects/834" target="_blank" style="margin-top:13px;"><img id="dllogo" src="../community/img/logo/orgs/democracy-lab.png" style="width:175px"></a>
-        </div>
-        <br>
       </div>
-      <div style="clear:both;"></div>
 
-      <div style="margin-top:15px">
-        <a href="https://exiobase.eu" target="_blank" style="margin-top:8px;margin-right:68px !important;" id="exiobaselogo"><img src="../community/img/logo/orgs/exiobase.png" style="width:190px;"></a>
-        <a href="https://datacommons.org" target="_blank" style="margin-top:11px;margin-right:51px !important;"><img src="../community/img/logo/orgs/GoogleDataCommons.png" style="width:195px;"></a>
+      <div style="margin-top:-6px; display:flex; align-items:center; gap:40px;">
+        <a href="https://exiobase.eu" target="_blank" id="exiobaselogo"><img src="../community/img/logo/orgs/exiobase.png" style="width:190px;"></a>
+
+        <a href="https://datacommons.org" target="_blank"><img src="../community/img/logo/orgs/GoogleDataCommons.png" style="width:200px;"></a>
       </div>
+
     </div>
   </div>
   <div style="clear:both;"></div>
   <!-- /logos -->
 
+<!--
+<div style="float:left">
+  <a href="https://model.georgia.org" style="margin-top:-4px;margin-right:64px !important;"><img id="galogo" src="../localsite/img/logo/states/GA.png" style="width:155px;"></a>
+  <a href="https://www.democracylab.org/projects/834" target="_blank" style="margin-top:13px;"><img id="dllogo" src="../community/img/logo/orgs/democracy-lab.png" style="width:175px"></a>
+</div>
+<br>
+-->
 
 <style>
 #hero-landscape-image {
   background-image: url(../localsite/img/hero/stars.jpg);
+  background-size: cover;
+  background-position: center top;
+  min-height: 0 !important;
+  height: 550px;
 }
 #hero-rect-new {
   background-color: rgba(255, 255, 255, 0.9);
@@ -805,26 +818,16 @@ Learn more about USEEIO.
   border: none !important;
   overflow: visible !important;
 }
-@media (min-width: 801px) and (max-width: 1000px) {
-  #hero-landscape-image {
-    min-height: 650px !important;
-  }
-}
-@media (min-width: 801px) and (max-width: 900px) {
-  #hero-landscape-image {
-    min-height: 750px !important;
-  }
-}
 </style>
 
-<div class="hideMobile" style="position:relative;height:550px">
-  <div id="hero-landscape-image" class="bgimg" style="min-height:550px; background-position: 0 54px; position: absolute; left:0; right:0; opacity: 0.8; background-color:#888">
+<div style="position:relative; height:550px">
+  <div id="hero-landscape-image" class="bgimg" style="position: absolute; left:0; right:0; opacity: 0.8; background-color:#888">
 
       <div class="content contentpadding" style="padding-top:60px">
         <div style="float:left; margin-right:30px">
             <div id="hero-rect-new">
               <h3>Project Areas</h3>
-              <a href="../../projects/">Active Projects</a> - Volunteer Team<br>
+              <a href="../../projects/">Active Projects</a> - Code Integrations<br>
               <!--
               <a href="../../apps/">Starter App Pages</a> - Copy and add parameters<br>
               

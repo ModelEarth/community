@@ -43,7 +43,7 @@ Not your average data modeling projects, but worth the effort.
 **[Pulling International trade flow into CSV files and Azure PostgreSQL](/profile/trade/)**
 Exiobase data converted for fast trade flow maps, Sankey and Chord&nbsp;charts
 
-**[See-Click-Fix API](/feed/view/#feed=311) within [FeedPlayer](/feed)**
+**[See-Click-Fix API](/team/projects/#list=311)**<!-- feed/view/#feed=311 --> as a Job Creation Engine
 Integrating maps and ML with [job data](/localsite/info/#indicators=VADD,JOBS) and [community profiles](/profile/). 
 
 **[Syncing Multi-Region IO Data to Google Data Commons](/data-commons/docs/)**
