@@ -96,18 +96,23 @@ $(document).on("change"
   function updateDataUSAIframe(forceUpdate) {
     const hash = getHash();
     const priorHashValue = window.priorHash?.state;
+    const stateString = hash.state || '';
+    const stateCodes = stateString.split(',').map(s => s.trim()).filter(Boolean);
+    const container = $('#iframe-container');
 
-    // Default to Georgia if no state in hash
-    const stateString = hash.state || 'GA';
-    const stateCodes = stateString.split(',').filter(s => s.trim());
+    if (!stateCodes.length) {
+      container.find('.state-iframe-wrapper').remove();
+      container.hide();
+      return;
+    }
+
+    container.show();
 
     const conditionPassed = forceUpdate || (stateString && stateString !== priorHashValue);
     // alert('updateDataUSAIframe - forceUpdate: ' + forceUpdate + ' - stateString: ' + stateString + ' - priorHashValue: ' + (priorHashValue || 'undefined') + ' - Condition passed: ' + conditionPassed);
 
     // Process if state changed or initial load
     if (conditionPassed) {
-      const container = $('#iframe-container');
-
       // Update/create iframes for each state
       stateCodes.forEach((stateCode, index) => {
         stateCode = stateCode.trim();
@@ -260,7 +265,7 @@ $(document).on("change"
 
     if (newStateCode) {
       const hash = getHash();
-      const currentStates = hash.state ? hash.state.split(',') : ['GA'];
+      const currentStates = hash.state ? hash.state.split(',').map(state => state.trim()).filter(Boolean) : [];
 
       // Update the state at this index
       currentStates[iframeIndex] = newStateCode;
@@ -509,7 +514,7 @@ tbody tr td:nth-child(2) {
     <div id="iframe-loading" style="display:none; position:absolute; top:10px; right:10px; padding:8px 12px; background:rgba(255,255,255,0.95); border:1px solid #ddd; border-radius:4px; z-index:10; font-size:14px; color:#666; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
       Loading...
     </div>
-    <div id="iframe-container"></div>
+    <div id="iframe-container" style="display:none;"></div>
   </div>
 
   <div style="padding:20px 0;">
