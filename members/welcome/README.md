@@ -7,7 +7,8 @@ We require that volunteers contribute to code development for a couple weeks bef
 
 Our weekly Google Meet link is always the same: [model.earth/io/coders](https://model.earth/io/coders)
 
-We encourage OPT volunteers to also focus on their search for paid positions. We're creating automated portfolio pages for our active members.
+We encourage OPT volunteers to remain focused on their search for paid positions.  
+We're gradually creating automated [CV pages](../../../cv/) to highlight contributors.
 
 We ask that participants not list us on their resume or LinkedIn until they've been actively contributing updates for a few weeks. Your contributions to our team projects provide a basis for assessment if job interviewers contact us to confirm ongoing participation.
 
