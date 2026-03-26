@@ -36,7 +36,7 @@ Heatmap needs to show vibrant colors when viewing states.
 -->
 
 
-## <span style="float:right; font-size:.8em; margin-top:6px">(Mars IO)</span>MoonShots
+## <span style="float:right; font-size:.75em; margin-top:6px">(Catapult IO)</span>MoonShots
 
 Not your average data modeling projects, but worth the effort.
 

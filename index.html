@@ -21,6 +21,8 @@ $(document).on("change"
 <script type="text/javascript" src="../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
 <script type="text/javascript" src="../localsite/js/localsite.js?showheader=true&showsearch=true"></script>
+<script type="text/javascript" src="../localsite/js/nouislider.min.js"></script>
+<link rel="stylesheet" href="../localsite/css/nouislider.min.css" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -33,21 +35,16 @@ $(document).on("change"
 
 
 <script>
-  //waitForElm('#nullschoolHeader').then((elm) => {
-    //$("#nullschoolHeader").show();
-  //});
-  
-  // Temporary
-  $(document).ready(function () {
-      setTimeout(() => {
-        let latLonZoom = "-73.52,34.52,532";
-        if ($("#globeLatitude").val() && $("#globeLongitude").val()) {
-          latLonZoom = $("#globeLongitude").val() + "," + $("#globeLatitude").val() + ",532";
-        } else if (localStorage.latitude && localStorage.longitude) {
-          latLonZoom = localStorage.longitude + "," + localStorage.latitude + ",532";
-        }
-        showGlobalMap(`https://earth.nullschool.net/#current/wind/surface/level/orthographic=${latLonZoom}`);
-      },1000);
+  waitForElm('#mainEarthDisplay').then(() => {
+    let latLonZoom = "-73.52,34.52,532";
+    if ($("#globeLatitude").val() && $("#globeLongitude").val()) {
+      latLonZoom = $("#globeLongitude").val() + "," + $("#globeLatitude").val() + ",532";
+    } else if (localStorage.latitude && localStorage.longitude) {
+      latLonZoom = localStorage.longitude + "," + localStorage.latitude + ",532";
+    }
+    const hash = getHash();
+    if (hash.orthographic) latLonZoom = hash.orthographic;
+    showGlobalMap(`https://earth.nullschool.net/#current/wind/surface/level/orthographic=${latLonZoom}`);
   });
 
   // Cache state list properties on initial load
