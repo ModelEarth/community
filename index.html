@@ -44,7 +44,8 @@ $(document).on("change"
     }
     const hash = getHash();
     if (hash.orthographic) latLonZoom = hash.orthographic;
-    showGlobalMap(`https://earth.nullschool.net/#current/wind/surface/level/orthographic=${latLonZoom}`);
+    const earthDate = hash.when || 'current';
+    showGlobalMap(`https://earth.nullschool.net/#${earthDate}/wind/surface/level/orthographic=${latLonZoom}`);
   });
 
   // Cache state list properties on initial load
