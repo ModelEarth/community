@@ -3,16 +3,18 @@
 
 Thanks for your interest in joining DreamStudio's Model.Earth data science team!  
 
-We require that volunteers contribute to code development for a couple weeks before providing an OPT volunteer welcome letter. Ongoing code contributions are required each month to remain active on our [Member List](../).
+We require that volunteers contribute to code development for a few weeks before providing an OPT volunteer welcome letter. Ongoing code contributions are required each month to remain active on our [Member List](../).
 
+### Weekly Meetups 7pm EST
 Our weekly Google Meet link is always the same: [model.earth/io/coders](https://model.earth/io/coders)
+Meeting attendance is not a substitute for sending solid PRs.
 
 We encourage OPT volunteers to remain focused on their search for paid positions.  
 We're gradually creating automated [CV pages](../../../cv/) to highlight contributors.
 
 We ask that participants not list us on their resume or LinkedIn until they've been actively contributing updates for a few weeks. Your contributions to our team projects provide a basis for assessment if job interviewers contact us to confirm ongoing participation.
 
-**IMPORTANT:** We only provide letters of experience to participants who make coding contributions made using Github Pull Requests and Colabs. Email is the main way we plan and track progress. After contributing to our Run Models Colab, submit a RealityStream repo PR containing a backup of the colab or send details in an email.
+**IMPORTANT:** We only provide letters of experience to participants who make coding contributions made using Github Pull Requests (in main branches). Email is how we confirm plans and track progress. After contributing to our Run Models Colab, submit a RealityStream repo PR containing a backup of the colab or send details in an email.
 
 Find projects that fit your goals on our [Active Projects page](../../../projects) and [Github List](https://github.com/modelearth/projects/issues). 
 
