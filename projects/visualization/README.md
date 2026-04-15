@@ -11,7 +11,7 @@ Our map javascipt resides in localsite/js/map.js
 
 DONE - Activate a clickable legend in the map.js file. Examples in [Georgia Recycling Maps](../../../localsite/map/#show=recyclers&state=GA). <!-- Converted colored legend bullets into checkboxes and update filtering process to show the map points for all selected categories. Similar to  EWG ../../../community/map/ewg/ --> 
 
-TO DO - [Process region file with Python](../../../community-data/us/edd/) and populate "regions within states" menu to filter by sets of counties. Apply to [region_select dropdown](../../../localsite/info/#mapview=counties&state=GA).  
+TO DO - [Process region file with Python](https://model.earth/community-data/us/edd/) and populate "regions within states" menu to filter by sets of counties. Apply to [region_select dropdown](../../../localsite/info/#mapview=counties&state=GA).  
 
 TO DO - Update the map.js [US Map](../../../localsite/info/#geoview=country) to include a choropleth map layer and/or show the industry density [above our upcoming NAICS Tabulator](../../../localsite/info/naics/#mapview=US&show=vehicles) to represent <a href="../mobility/">locations potentially impacted by the transition to EV</a>. See [choropleth map samples](../../start/maps/).   
 
