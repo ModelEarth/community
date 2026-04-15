@@ -1,7 +1,7 @@
 [Active Projects](../../../projects)
 # Welcome!
 
-Thanks for your interest in joining DreamStudio's Model.Earth data science team!  
+Thanks for your interest in joining DreamStudio Earth's data science team!  
 
 We require that volunteers contribute to code development for a few weeks before providing an OPT volunteer welcome letter. Ongoing code contributions are required each month to remain active on our [Member List](../).
 
