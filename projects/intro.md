@@ -40,6 +40,8 @@ Heatmap needs to show vibrant colors when viewing states.
 
 Not your average data modeling projects, but worth the effort.
 
+**[Abundance Engine](/project)** - Energy/Water Capital Funding, Corporate Benefits and Scorecard..
+
 **[Pulling International trade flow into CSV files and Azure PostgreSQL](/profile/trade/)**
 Exiobase data converted for fast trade flow maps, Sankey and Chord&nbsp;charts
 
