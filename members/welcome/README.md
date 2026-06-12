@@ -14,7 +14,7 @@ We're gradually creating automated [CV pages](../../../cv/) to highlight contrib
 
 We ask that participants not list us on their resume or LinkedIn until they've been actively contributing updates for a few weeks. Your contributions to our team projects provide a basis for assessment if job interviewers contact us to confirm ongoing participation.
 
-**IMPORTANT:** We only provide letters of experience to participants who make coding contributions made using Github Pull Requests (in main branches). Email is how we confirm plans and track progress. After contributing to our Run Models Colab, submit a RealityStream repo PR containing a backup of the colab or send details in an email.
+**IMPORTANT:** We only provide letters of experience to participants who make coding contributions using Github Pull Requests (in main branches). Email is how we confirm plans and track progress. After contributing to our Run Models Colab, submit a RealityStream repo PR containing a backup of the colab or send details in an email.
 
 Find projects that fit your goals on our [Active Projects page](../../../projects) and [Github List](https://github.com/modelearth/projects/issues). 
 
