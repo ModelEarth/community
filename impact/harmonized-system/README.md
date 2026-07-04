@@ -8,7 +8,7 @@ Categories are visible when clicking "Lookup" in the upper left only when viewin
 
 Project: Add a crosswalk from NAICS to HS to activate selection by HS Code.  
 
-Here's a sample of [links that filter by HS Category](https://www.georgia.org/international-trade-export).
+Here's a sample of [links that filter by HS Category](https://georgia.org/international-trade-export).
 
 
 #### International Input-Output Datasets   

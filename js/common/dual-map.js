@@ -6,11 +6,11 @@ var dataParameters = [];
 var dp = {};
 var layerControl = {}; // Object containing one control for each map on page.
 
-  // Set your own Mapbox access token below.
   // Restrict which domains your token is loaded through.
   // https://blog.mapbox.com/url-restrictions-for-access-tokens-5f7f7eb90092
-var mbAttr = '<a href="https://www.mapbox.com/">Mapbox</a>',
-    mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+var mbAttr = '<a href="https://www.mapbox.com/">Mapbox</a>';
+var mapboxToken = (typeof window !== "undefined" && typeof window.mapboxAccessToken === "string") ? window.mapboxAccessToken : "";
+var mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png' + (mapboxToken ? ('?access_token=' + mapboxToken) : '');
 
 //////////////////////////////////////////////////////////////////
 // Usage:
@@ -414,7 +414,7 @@ function addIcons(dp,map,map2) {
     //L.marker([element[dp.latColumn], element[dp.lonColumn]], {icon: busIcon}).addTo(map)
 
     if (dp.markerType == "google") {
-        if (1==2 && param["show"] != "suppliers" && (location.host == 'georgia.org' || location.host == 'www.georgia.org')) {
+        if (1==2 && param["show"] != "suppliers" && (location.host == 'georgia.org' || location.host == 'georgia.org')) {
           // Show an old-style marker when Google Material Icon version not supported
           circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
           circle2 = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group2);
@@ -758,14 +758,14 @@ function loadMap1(dp) { // Also called by search-filters.js
     dp1.showLegend = false;
 
     dp1.listLocation = false;
-    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
+    dp1.addLink = "https://georgia.org/covid19response"; // Not yet used
   } else if (param["show"] == "suppliers") { // "http://" + param["domain"]
 
     dp1.listTitle = "Georgia COVID-19 Response";
     dp1.listTitle = "Georgia Suppliers of&nbsp;Critical Items <span style='white-space:nowrap'>to Fight COVID-19</span>"; // For iFrame site
 
     // Also update ls map.js
-    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://www.georgia.org/sites/default/files/2020-07/ga_suppliers_list_7-29-2020.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
+    dp1.listInfo = "Select a category to the left to filter results. View&nbsp;<a href='https://georgia.org/sites/default/files/2020-07/ga_suppliers_list_7-29-2020.pdf' target='_parent'>PDF&nbsp;version</a>&nbsp;of&nbsp;the&nbsp;complete&nbsp;list.";
     dp1.dataset = "https://georgiadata.github.io/display/products/suppliers/us_ga_suppliers_ppe_2020_07_29.csv";
     //dp1.dataset = "/display/products/suppliers/us_ga_suppliers_ppe_2020_06_17.csv";
 
@@ -789,7 +789,6 @@ function loadMap1(dp) { // Also called by search-filters.js
     }
 
     dp1.listLocation = false;
-    dp1.addLink = "https://www.georgia.org/covid19response"; // Not yet used
 
   } else if (param["show"] == "restaurants") {
     // Fulton County 5631 restaurants
@@ -1451,7 +1450,7 @@ function popMapPoint(dp, map, latitude, longitude, name) {
   // Didn't work here
   /*
   if (dp.markerType == "google") {
-      if (location.host == 'georgia.org' || location.host == 'www.georgia.org') {
+      if (location.host == 'georgia.org' || location.host == 'georgia.org') {
         circle = L.marker([element[dp.latColumn], element[dp.lonColumn]]).addTo(dp.group);
       } else {
         // If this line returns an error, try setting dp1.latColumn and dp1.latColumn to the names of your latitude and longitude columns.
