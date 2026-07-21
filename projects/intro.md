@@ -84,8 +84,8 @@ Deploy to GitHub pages to create an easy-to-use alternative to Tableau.
 [Mike Bostock provided an assist](https://github.com/observablehq/framework/discussions/1030) - deploy.yml files
 -->
 
-**[Anything LLM / API Key Storage in Browser](/localsite/tools/storage/api/)**
-Integrate [Anything LLM](https://anythingllm.com) and Javascript API storage.
+**[API Key Storage in Browser](/chat/keys/)**
+Integrate [Anything LLM](https://anythingllm.com) with our [EarthScape chat](https://modelearth.vercel.app).
 
 **[Census Data Visualization Reports](/community/resources/censusreporter/)**
 Supercharge [CensusReporter.com](https://CensusReporter.com) and [Microsoft's Planetary Computer](https://planetarycomputer.microsoft.com/).
