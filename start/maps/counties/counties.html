@@ -371,14 +371,12 @@ function ready([us]) {
         var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
             '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
             'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWUyZGV2IiwiYSI6ImNqaWdsMXJvdTE4azIzcXFscTB1Nmcwcm4ifQ.hECfwyQtM7RtkBtydKpc5g';
+            mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png' + (typeof window.mapboxAccessToken === 'string' && window.mapboxAccessToken ? '?access_token=' + window.mapboxAccessToken : ''); // Token not hardcoded, as in localsite/js/map.js
 
         var satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr})
 
-        var OpenStreetMap_BlackAndWhite = L.tileLayer('//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        });
+        // CARTO light_all when window.cartoApiKey works, otherwise Esri Light Gray Canvas plus its labels. See cartoOrEsri in localsite/js/localsite.js.
+        var OpenStreetMap_BlackAndWhite = cartoOrEsri('light_all', ['World_Light_Gray_Base', 'World_Light_Gray_Reference']);
 
         var map = new L.Map('mapcon',
         {
