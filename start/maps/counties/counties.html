@@ -368,12 +368,10 @@ function ready([us]) {
 
         //var layer = "terrain";
 
-        var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png' + (typeof window.mapboxAccessToken === 'string' && window.mapboxAccessToken ? '?access_token=' + window.mapboxAccessToken : ''); // Token not hardcoded, as in localsite/js/map.js
-
-        var satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr})
+        // Mapbox satellite needs window.mapboxAccessToken (not hardcoded, since GitHub push protection blocks tokens), so Esri World Imagery is used (no key).
+        var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            maxZoom: 18, attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
+        })
 
         // CARTO light_all when window.cartoApiKey works, otherwise Esri Light Gray Canvas plus its labels. See cartoOrEsri in localsite/js/localsite.js.
         var OpenStreetMap_BlackAndWhite = cartoOrEsri('light_all', ['World_Light_Gray_Base', 'World_Light_Gray_Reference']);
@@ -386,8 +384,8 @@ function ready([us]) {
             layers: [OpenStreetMap_BlackAndWhite, dataParameters[0].group] // Indicates default layer
         });
         var baseLayers = {
-          "Open Street Map": OpenStreetMap_BlackAndWhite,
-          "Satellite Mapbox": satellite
+          "Grayscale": OpenStreetMap_BlackAndWhite,
+          "Satellite": satellite
         };
         var overlays = {
           "Counties": geojsonLayer
